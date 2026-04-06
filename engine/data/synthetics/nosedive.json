@@ -1,0 +1,31 @@
+{
+  "id": "019d6143aa12748da1b9370ac211e36a",
+  "name": "Nosedive",
+  "type": "elf",
+  "aliases": [
+    "The Drop"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "chrome_dweller",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits flight-assist and balance augments. Causes sudden brief vertigo — the sensation of falling — in stable conditions.",
+  "observed_behavior": "Feeds false vestibular data suggesting downward acceleration. Lasts 0.5-1 second. Occurs 2-5 times per day at unpredictable intervals.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 15,
+  "location": "High-rise districts, elevated walkways",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A construction worker on a high beam gets hit with vertigo and survives — then realizes the vertigo hit 2 seconds before the beam gave way, giving them time to grab a cable"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment"
+  ]
+}

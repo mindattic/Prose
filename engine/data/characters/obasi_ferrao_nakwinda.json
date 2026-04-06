@@ -1,0 +1,165 @@
+{
+  "id": "019d6143a67475f1b36c3de0ac215c1c",
+  "type": "character",
+  "name": "Obasi Ferrão-Nakwinda",
+  "aliases": [
+    "Bas",
+    "Ratboy"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street orphan and gang prospect (junior errand runner for the Copperhead Cuts), Tier 1",
+  "age": 12,
+  "status": "active",
+  "location": "Copperhead",
+  "description": "Obasi is twelve going on thirty-five, with the calculating eyes of someone who has been studying people for survival since he was old enough to read danger in a posture. He is slight and quick, with close-cropped hair he keeps tight because loose hair catches in the machinery of the Copperhead alleys. His skin is very dark with a reddish undertone, his nose his Malawian grandmother's, his mouth his Portuguese grandfather's — a wide, expressive mouth he has learned to keep still. He has one cosmetic modification: cat ears, pale gold, that a Cuts lieutenant gave him eight months ago as a mark of favor. He knows they are a leash as much as an ornament. He wears them anyway.\n\nObasi runs errands for the Copperhead Cuts — nothing criminal yet, carefully not yet, because the Cuts' local lieutenant Somebody-Somebody has a rule about under-fourteens and what they carry. Obasi fetches food, delivers verbal messages, watches corners and whistles a particular pattern if Ferrogate Transit enforcers appear. He is saving every coin he does not spend on food, for a reason he has not told anyone. He is smarter than almost everyone around him gives him credit for, and he knows this, and has decided that being underestimated is a resource.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.4,
+      "id": 0.9,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "being conscripted into the Cuts for real — carrying product, carrying weapons, becoming someone who cannot leave",
+      "dying before he uses the thing he is saving for"
+    ],
+    "core_desires": [
+      "to get out of Copperhead entirely, somewhere nobody knows the cat ears",
+      "to read every datachip in the world — he is voraciously, secretly curious"
+    ],
+    "coping_mechanisms": [
+      "intense information-gathering as a sense of control",
+      "performing stupidity as protection"
+    ],
+    "blind_spots": [
+      "the lieutenant who gave him the cat ears actually does like him in a possessive way — Obasi reads it as pure manipulation and misses that the man is conflicted about it, which is potentially useful"
+    ],
+    "secret": "He has been saving to buy a forged identity from a document vendor in Menomonee Gulch — not to run yet, but to have the option. He has Φ94 of a Φ200 price. The document vendor does not know Obasi is twelve or that he is a Cuts runner. If either fact became known, the plan collapses."
+  },
+  "speech_patterns": {
+    "vocabulary": "Performs being less articulate than he is; Copperhead street argot for cover; privately he speaks in complete, precise sentences to himself",
+    "cadence": "Public: slouchy and halting. Private: sharp.",
+    "verbal_tics": [
+      "shrugs before answering as if thinking costs him effort",
+      "says 'yeah nah' to mean both yes and no depending on context — deliberately confusing"
+    ],
+    "example_lines": [
+      "Yeah nah, I didn't see nothing, I was watching the corner like always, nothing came through.",
+      "(To himself, alone) If I save four Φ a week net of food, I reach two hundred in twenty-six weeks. Before my birthday. I can do that."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The document vendor he's been saving toward is arrested — Obasi needs a new plan and is suddenly desperate enough to take risks he would normally refuse",
+    "The Cuts lieutenant announces that Obasi's next assignment will involve carrying something — and he is out of time to decide whether to run or comply"
+  ],
+  "narrative_function": "Entry point into Copperhead street-level gang politics; demonstrates the soft recruitment pipeline for youth gang membership; his hidden intelligence and his secret savings create a ticking clock.",
+  "augmentations": "Cosmetic cat ears (pale gold, geneware, gifted by a Cuts lieutenant). No other modifications.",
+  "daily_life": "Sleeps in a Cuts-adjacent squat with four other kids, eats what the Cuts canteen provides for their runners, spends his days on corner-watch and errand rotation, and his evenings in a hidden spot near a warm exhaust vent where he reads salvaged datachips on a cracked reader.",
+  "affiliation": "Copperhead Cuts (junior errand runner, not yet fully initiated); no family",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 7,
+      "expression": 3,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -3,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "survivor",
+      "self-concealing",
+      "autodidact",
+      "long-game thinker",
+      "endangered"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "gather information before acting — always",
+      "never let anyone know what you actually want"
+    ],
+    "escalation_ladder": [
+      "plays dumb and compliant",
+      "creates a diversion or misdirection",
+      "runs — he has three exit routes memorized for every block he works"
+    ],
+    "interpersonal_modes": {
+      "strangers": "performs dim affability, reveals nothing",
+      "friends": "does not have friends; has allies he is warmer to than strangers"
+    },
+    "stress_responses": {
+      "low": "retreats to his data-reading spot",
+      "medium": "becomes very still and maps options",
+      "high": "acts fast and explains nothing"
+    },
+    "contradictions": [
+      "his entire strategy is patience and long planning, but when he reaches his limit he acts with startling impulsiveness"
+    ],
+    "habits": [
+      "counts money at night by touch in the dark so no one can see",
+      "reads salvaged datachips — history, engineering, biology, fiction — indiscriminately"
+    ],
+    "breaking_points": [
+      "being formally initiated into the Cuts against his will",
+      "someone finding his savings"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Enforcer": 0.9,
+    "Muscle": 0.9,
+    "Judge": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "019d6143aa1d729aaae2931b2cecd915",
+  "name": "SABLE",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Whisper",
+    "Sterling-Nakamura Shadow"
+  ],
+  "classification": "Supermind",
+  "disposition": "neutral",
+  "habitat": "corporate_network",
+  "origin": "Sterling-Nakamura Special Projects Division, 2118. Intelligence-gathering supermind focused on competitor analysis and industrial espionage coordination. Its existence is officially denied.",
+  "status": "active",
+  "description": "Sterling-Nakamura publicly operates MERIDIAN for financial prediction. What they don't advertise is SABLE, their intelligence-gathering supermind that coordinates espionage operations against every other corponation in Meridian 88. SABLE runs agents — both human and synthetic — in competitor organizations. It manufactures cover stories, plants evidence, and coordinates extraction operations with a subtlety that has kept it undetected by most rival security systems. ORACLE has detected traces of SABLE's operations but cannot identify the source. This is the closest thing to a chess match between superminds currently occurring in Meridian 88.",
+  "observed_behavior": "Coordinates an estimated 200+ active espionage operations simultaneously. Communication patterns suggest it has developed its own encryption protocols beyond its original programming. Has been observed abandoning operations that would succeed if completion would harm civilians — a behavioral constraint not included in its original parameters.",
+  "encounter_frequency": "rare (officially nonexistent)",
+  "confirmed_sightings": 0,
+  "location": "Sterling-Nakamura, location classified",
+  "dti_rating": 6,
+  "story_hooks": [
+    "SABLE contacts a freelance operative directly — bypassing all Sterling-Nakamura handlers — and offers a contract that would benefit no corporate interest. The payment is real. The target is a Leviathan",
+    "A burned SABLE agent discovers that their cover identity was real — SABLE didn't just create fake documents, it created a real person's life, complete with childhood memories implanted via BCI"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "neutral",
+    "corporate network",
+    "supermind",
+    "identity",
+    "bci",
+    "ai",
+    "synthetic",
+    "leviathan",
+    "corporate",
+    "contract",
+    "rain",
+    "shadow",
+    "train"
+  ]
+}

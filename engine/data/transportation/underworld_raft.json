@@ -1,0 +1,40 @@
+{
+  "id": "019d6143aa757dfaa94d5d1021854603",
+  "name": "Underworld Raft",
+  "type": "transportation",
+  "aliases": [
+    "Styx Boat",
+    "Dark Float",
+    "The Charon"
+  ],
+  "category": "underground",
+  "manufacturer": "Improvised — Underworld community builds",
+  "description": "A flat raft or canoe used to navigate the flooded tunnels and underground rivers beneath Meridian 88. Some are simple wooden platforms with poles. Others are sealed inflatables with battery-powered outboards. The Underworld's water systems form a navigable network that connects areas the Deep Rail can't reach. Raft operators are guides, smugglers, and explorers who have memorized the currents and tides of an underground water system that shouldn't have tides but does. The water is cold, dark, and occasionally wrong in ways that experienced operators refuse to describe.",
+  "propulsion": "Pole, paddle, or electric outboard",
+  "speed": "5-10 km/h depending on current",
+  "capacity": "2-6 passengers + cargo",
+  "range": "Limited by battery or human endurance",
+  "tier_availability": "Underworld access only",
+  "cost": "Φ10-30 per trip, or barter",
+  "autonomy": "Human-operated. Nothing electronic works reliably near the deep water.",
+  "armament": "Whatever the operator carries. A good pole serves multiple purposes.",
+  "common_usage": "Deep tunnel transit, exploration of flooded sections, smuggling, reaching isolated Underworld communities.",
+  "story_hooks": [
+    "A raft operator claims they've found an underground lake so large their light can't reach the far shore — and something blinked back at them",
+    "The underground water levels are rising, and the raft operators are the first to know because they're the first to lose their routes"
+  ],
+  "tags": [
+    "underground",
+    "transportation",
+    "smuggle",
+    "ai",
+    "power",
+    "underworld",
+    "tunnel",
+    "bar",
+    "dark",
+    "cold",
+    "water",
+    "lake"
+  ]
+}

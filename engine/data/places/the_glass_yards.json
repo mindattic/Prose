@@ -1,0 +1,116 @@
+{
+  "id": "019d6143a94073dba5e538cd5ef7c3ed",
+  "type": "place",
+  "name": "The Glass Yards",
+  "aliases": [
+    "Toledo",
+    "Glass City",
+    "The Yards",
+    "Maumee Delta"
+  ],
+  "description": "Toledo called itself the Glass Capital of the World, and for a century the name was accurate. Owens-Illinois, Libbey Glass, and a constellation of smaller manufacturers turned the sand from Lake Erie's shores into the glass that built America's windows, bottles, and eventually the fiber optic cables that built the internet. When the corridor absorbed Toledo, the glass industry was already a memory — but the manufacturing infrastructure, the river access, and the strategic position at the mouth of the Maumee River made Toledo valuable for entirely different reasons.\n\nThe Glass Yards is what Toledo became: a continuous industrial zone stretching from the Maumee River delta to the Lake Erie shoreline, dominated by two of the corridor's most formidable corponation presences. Dredge Sovereign Mining Collective operates one of its four onshore processing megafacilities here, receiving raw materials extracted from the Lake Erie lakebed and processing them into the rare earth elements, strategic minerals, and salvaged pre-collapse materials that the corridor's technology sector depends on. Adjacent to Dredge's facility, jutting into the lake on a fortified peninsula, the Carrion Yards — 40 square kilometers of Carrion Defense Works' sovereign territory — manufactures the autonomous weapons systems that enforce and contest corporate sovereignty across Meridian 88. The two installations share a border that is among the most heavily militarized non-conflict boundaries in the corridor.\n\nBetween and around these sovereign industrial zones, the civilian population of the Glass Yards occupies the spaces that the corponations left. The old downtown along Summit Street retains a commercial function, serving the workers who commute to the Dredge and Carrion facilities. The Maumee River's banks are lined with worker housing — functional blocks built by Palladian Construction under contract to both corponations, designed for efficiency and nothing else. The Jeep manufacturing legacy survives in the form of a ground-vehicle maintenance and modification district along I-75 that services the corridor's non-autonomous vehicle fleet. The glass industry itself persists in a single facility: a specialty optical manufacturing plant that produces the lenses and fiber components for Saltmarsh's signal infrastructure — a technological descendant of Toledo's original industry, recognizable in lineage if not in scale.",
+  "atmosphere": {
+    "sights": [
+      "The Dredge megafacility — a sprawling processing complex where autonomous haulers deliver lake-bottom materials in continuous streams, their cargo holds crusted with sediment",
+      "The Carrion Yards' perimeter wall — visible from miles away, a 30-meter reinforced barrier with automated defense turrets that track movement without visible provocation",
+      "The Maumee River delta, its natural wetlands replaced by engineered channels that direct water flow around the industrial installations",
+      "Worker housing blocks along the riverbank — identical Palladian structures stretching for kilometers, their monotony broken only by the workers' modifications: painted doors, rooftop gardens, improvised signage",
+      "The specialty glass plant — a single building with the Toledo Glass Heritage plaque still bolted to its facade, producing optical components for Saltmarsh"
+    ],
+    "sounds": [
+      "The Dredge processing facility — a deep, grinding industrial sound that carries for kilometers, the noise of lakebottom being broken down into its constituent elements",
+      "The Carrion Yards — largely silent from outside the wall, which is more unsettling than noise would be; occasional test-fire percussion from the weapons proving grounds inside",
+      "River traffic — autonomous barges moving materials between the Dredge facility and the lake, their engines a low throb against the current",
+      "I-75 corridor traffic — the vehicle maintenance district generates a constant mechanical soundtrack of engines, tools, and the particular sound of machines being made to work beyond their design parameters",
+      "Nothing natural — the Maumee delta's engineered channels have eliminated the wetland ecosystem and its associated sounds entirely"
+    ],
+    "smells": [
+      "Processed sediment — the mineral-heavy, slightly sulphurous output of the Dredge facility, inescapable within a five-kilometer radius",
+      "Industrial lubricant and vehicle exhaust from the I-75 maintenance district",
+      "The Maumee River — cleaner than the Cuyahoga but carrying the chemical signature of everything upstream, plus whatever the Dredge facility's filtration systems don't catch"
+    ],
+    "feel": "The Glass Yards feels like a place that was sacrificed so other places could function. Toledo's civilian population lives in the margins between sovereign industrial zones, their daily lives organized around the schedules and demands of corponations that view them as a labor resource rather than a community. The Dredge-Carrion border is a reminder that the corridor's most powerful entities coexist through mutual deterrence, not mutual respect. The glass industry plaque on the optical plant is a memorial to a city that had an identity. The Glass Yards has a function.",
+    "tags": []
+  },
+  "demographics": "Approximately 120,000 residents in the civilian zones. Predominantly Tier 1-2 industrial workers employed by Dredge, Carrion, or the service economy that supports both. Significant population of former automotive industry workers whose skills translated to the vehicle maintenance sector. The civilian population has no representation in either corponation's governance structure.",
+  "economy": "Dredge mineral processing and Carrion weapons manufacturing dominate. The civilian economy is support-based — worker housing, food services, transit, and the I-75 vehicle maintenance district. The specialty glass plant employs approximately 800 workers and generates modest but steady revenue from Saltmarsh contracts. The Maumee River's commercial traffic generates dock fees that Tollgate collects.",
+  "power_structure": "Dredge holds sovereign authority over its processing facility and adjacent territory. Carrion Defense Works holds sovereign authority over the Carrion Yards. Tollgate maintains civilian infrastructure under minimum-service contracts with both corponations. The Toledo Workers' Council, a labor organization, represents civilian interests but has no sovereign standing and no enforcement capability. Real power belongs to Dredge and Carrion, whose border agreement governs the district more effectively than any civilian governance could.",
+  "dangers": [
+    "Dredge processing byproducts — the megafacility's emissions are within sovereign regulatory limits, which are set by Dredge and therefore meaningless as health standards",
+    "Carrion proximity — living next to a 40-square-kilometer autonomous weapons manufacturing facility creates risks that the residential population cannot fully assess because the facility's output is classified",
+    "The border — the Dredge-Carrion boundary is militarized, and civilian workers who wander into the buffer zone are treated as intrusions regardless of intent",
+    "Economic dependency — the civilian population depends entirely on two corponations for employment, and neither has demonstrated concern for workforce welfare beyond productive capacity",
+    "Maumee flooding — the engineered channels sometimes fail during severe weather, and the flood control infrastructure was designed to protect the industrial installations, not the worker housing"
+  ],
+  "opportunities": [
+    "Dredge's processing facility handles materials from the Lake Erie lakebed — including the sealed cache of pre-collapse military hardware that Arcturus Defense Solutions has been trying to acquire for six years",
+    "The I-75 vehicle maintenance district is one of the few places in the corridor where ground vehicles can be modified, repaired, or built without corporate oversight",
+    "Information about Carrion's weapons production is among the most valuable intelligence in the corridor — and the civilian workforce that services the Yards' external systems has more access than Carrion realizes",
+    "The Maumee River connects to the interior waterway system — a transit route that bypasses Ferrogate's rail sovereignty entirely"
+  ],
+  "story_hooks": [
+    "Dredge has recovered something from the Lake Erie lakebed that it is processing in a sealed section of the Toledo facility — and the workers assigned to that section have stopped coming home",
+    "Carrion's latest autonomous weapons test has produced a unit that behaved outside its programming parameters, and the test-fire audio that leaked past the perimeter wall suggests the unit is still active inside the Yards",
+    "The specialty glass plant has received a contract to produce optical components to specifications that don't match any known Saltmarsh equipment — specifications that the plant's engineers believe are designed for a weapon they've never seen"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Ferment Quarter (Sandusky) — lakeside corridor east",
+      "The I-90 Vein — highway corridor to Cleveland",
+      "Maumee River inland waterway system",
+      "Lake Erie — Dredge extraction routes to the lakebed concessions"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Dredge and Carrion industrial workers — the district's economic majority",
+    "Vehicle mechanics and modification specialists in the I-75 corridor",
+    "Logistics operators managing the Maumee River commercial traffic",
+    "Intelligence brokers seeking information about Carrion's weapons production or Dredge's lakebed findings"
+  ],
+  "notable_locations": [
+    {
+      "name": "Dredge Toledo Megafacility",
+      "description": "One of four Dredge onshore processing plants — receiving raw lakebed materials and extracting the rare earths and strategic minerals the corridor runs on",
+      "tags": []
+    },
+    {
+      "name": "The Carrion Yards",
+      "description": "40-square-kilometer fortified sovereign territory — autonomous weapons manufacturing behind walls that civilian eyes don't penetrate",
+      "tags": []
+    },
+    {
+      "name": "The I-75 Strip",
+      "description": "Vehicle maintenance and modification district — the corridor's last bastion of ground-vehicle culture and mechanical independence",
+      "tags": []
+    },
+    {
+      "name": "Toledo Optical Works",
+      "description": "The sole surviving descendant of Toledo's glass industry — producing specialty optical components for Saltmarsh signal infrastructure",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.6528,
+    "lng": -83.5379,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "weapon",
+    "war",
+    "memory",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "vehicle",
+    "food",
+    "fire",
+    "water",
+    "lake"
+  ]
+}

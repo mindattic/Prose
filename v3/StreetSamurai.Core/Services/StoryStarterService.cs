@@ -143,7 +143,7 @@ public class StoryStarterService
             Your lead voice is {lead.Label} — {lead.VoiceTone}.
             {lead.SystemPrompt}
 
-            SUPPORTING FACETS (may surface as brief interior interjections):
+            SUPPORTING FACETS (may surface as italicized inner thoughts — the character arguing with themselves):
             {supportingVoices}
 
             STORY BIBLE:

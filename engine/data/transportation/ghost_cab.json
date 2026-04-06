@@ -1,0 +1,40 @@
+{
+  "id": "019d6143aa677a68b5e8ae579eb3db26",
+  "name": "Ghost Cab",
+  "type": "transportation",
+  "aliases": [
+    "Phantom Fare",
+    "The Unmarked",
+    "Night Ride"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Unknown — modified civilian vehicles",
+  "description": "An unlicensed, unregistered taxi service operating in Tier 1-2 districts where Tessera AutoCabs won't go. Ghost Cabs are civilian vehicles — sedans, vans, anything with seats — driven by individuals operating outside the system. No records, no surveillance, no tracking. You flag one down, you negotiate a price, you get where you're going with no data trail. The drivers know every checkpoint, every camera blind spot, every back route. They are the transportation network of the invisible city — the one that exists in the gaps between what's monitored.",
+  "propulsion": "Whatever the vehicle has — electric, hydrogen, even fossil fuel",
+  "speed": "Variable",
+  "capacity": "Variable — 1-6 passengers typically",
+  "range": "Variable",
+  "tier_availability": "Tier 1-2",
+  "cost": "Φ5-20 per ride (negotiable, cash or untraceable Quanta)",
+  "autonomy": "Human driver. Always.",
+  "armament": "Whatever the driver carries. Trust is the only safety system.",
+  "common_usage": "Off-grid transit, avoiding surveillance, late-night transport in unserved areas, moving people who don't officially exist.",
+  "story_hooks": [
+    "A Ghost Cab driver has been operating for twenty years and has a perfect memory of every passenger — they know the secret history of the city",
+    "Ghost Cab drivers are being targeted and killed, one by one, by someone who is erasing the off-grid transport network"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "trust",
+    "secret",
+    "memory",
+    "ai",
+    "surveillance",
+    "quanta",
+    "night",
+    "vehicle",
+    "tier 1",
+    "tier 2"
+  ]
+}

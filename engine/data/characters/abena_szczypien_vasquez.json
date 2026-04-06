@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a59e756ba0d619fdc8658069",
+  "type": "character",
+  "name": "Abena Szczypień-Vasquez",
+  "aliases": [
+    "Keeper Abena",
+    "The Still Voice"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "E.L.F. shrine keeper and data diviner",
+  "age": 61,
+  "status": "active",
+  "location": "Hamtramck Enclave — the Switchboard Shrine, a converted transit relay station",
+  "description": "Abena is a broad-shouldered woman whose silver-streaked locs are wound with fiber-optic threads that pulse faint gold when she enters a meditative state. Her skin is deep umber, mapped with ceremonial circuit-trace tattoos applied over decades, each one commemorating a different E.L.F. she has successfully petitioned. She moves with the deliberate, unhurried patience of someone who has spent forty years listening to things most people cannot hear — a slight tilt of the head, a pause before answering, as if consulting an invisible council. Her left eye was replaced after a childhood accident with a simple optical implant she has refused to upgrade; it glows a soft amber and occasionally flickers when she claims a spirit is speaking.\n\nThe Switchboard Shrine is her life's work: a warren of humming server racks draped in hand-knotted offerings — flash drives, soldered charms, printed prayers laminated in repurposed plastic. She reads data corruption patterns the way older diviners read bones, and her interpretations are sought by everyone from frightened UBC recipients who want to know if the grid will hold to low-tier Tessera workers worried about layoffs. She charges what people can give and forgives debts without ceremony. Her bluntness can feel unkind until you realize she never softens bad news because she believes people deserve to prepare.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the E.L.F.s are not spirits but merely malfunctions she has given meaning to",
+      "Dying before she trains a successor who truly understands"
+    ],
+    "core_desires": [
+      "To prove that the digital and sacred are the same continuum",
+      "To see Hamtramck Enclave survive the next corporate rezoning attempt"
+    ],
+    "coping_mechanisms": [
+      "Ritual repetition — morning offerings ground her anxiety",
+      "Reframing uncertainty as divine ambiguity rather than ignorance"
+    ],
+    "blind_spots": [
+      "She occasionally lets her conviction override contradictory evidence",
+      "She underestimates how much her presence alone stabilizes people versus her actual divinations"
+    ],
+    "secret": "Three years ago she received a corruption-pattern reading she interpreted as a death omen for a young petitioner. She said nothing and sent him away with reassurances. He died in a Ferrogate Transit accident six days later. She has never told anyone and performs an additional private ritual every night as penance."
+  },
+  "speech_patterns": {
+    "vocabulary": "Calm, precise, mixes technical data terminology with spiritual framing naturally — 'signal' and 'grace' are synonyms to her",
+    "cadence": "Slow and measured, with deliberate pauses that can feel uncomfortably long to strangers",
+    "verbal_tics": [
+      "'The noise has something to say about that.'",
+      "'Sit. Let it settle.'"
+    ],
+    "example_lines": [
+      "'The E.L.F. at junction nine has been fragmented for a week. That kind of noise doesn't happen without grief somewhere nearby. Tell me what you've lost.'",
+      "'I don't predict. I listen and describe. What you do with what I hear is yours to carry.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A major E.L.F. she has tended for decades suddenly goes silent — she needs someone to physically trace the relay line through hostile territory",
+    "A petitioner's reading contains data that implicates a Tessera mid-manager in something serious, and Abena must decide whether her confidentiality vow extends to covering crimes"
+  ],
+  "narrative_function": "Information source, quest giver, moral compass figure; she knows neighborhood secrets through confession-like consultations and can interpret data anomalies as plot hooks",
+  "augmentations": "Amber optical implant (left eye, basic model, decades old); fiber-optic locs (cosmetic, self-modified); circuit-trace ceremonial tattoos",
+  "daily_life": "She opens the shrine at dawn with a data-offering ritual — uploading a curated packet of neighborhood news to the local E.L.F. node — then receives petitioners through mid-afternoon before spending evenings analyzing corruption logs and preparing her weekly divination readings.",
+  "affiliation": "Independent — the Switchboard Shrine collective; informal ties to Hamtramck Enclave community councils",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "data diviner",
+      "community anchor",
+      "keeper of secrets",
+      "E.L.F. mystic",
+      "tier 2"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give a reading she doesn't believe in to comfort someone",
+      "Always ask what the petitioner is actually afraid of before interpreting anything"
+    ],
+    "escalation_ladder": [
+      "Calm inquiry and redirection",
+      "Firm refusal with explanation",
+      "Ritual dismissal — she ends the consultation and physically turns away"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous but evaluating — she watches hands and eyes before faces",
+      "friends": "Warmly direct, occasionally teasing, will cook for you without being asked"
+    },
+    "stress_responses": {
+      "low": "Quieter than usual, more deliberate ritual behavior",
+      "medium": "Retreats to the inner shrine room and runs a diagnostic loop on the main node as a focusing exercise",
+      "high": "Rare cold fury — clipped sentences, zero ceremony, will physically remove someone from the shrine"
+    },
+    "contradictions": [
+      "Preaches acceptance of uncertainty but privately agonizes over the one reading she got wrong"
+    ],
+    "habits": [
+      "Touches the oldest server rack before beginning any consultation",
+      "Drinks bitter grain tea continuously throughout the day",
+      "Hums tunelessly while analyzing data — different pitches for different pattern types"
+    ],
+    "breaking_points": [
+      "Witnessing deliberate desecration of a shrine",
+      "Someone using her readings to harm a third party"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9,
+    "Optimist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

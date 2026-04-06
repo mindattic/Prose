@@ -1,0 +1,57 @@
+{
+  "id": "019d6143ab5c7102bb8ff965367ad84a",
+  "name": "Vibronic Shear Blade VSB-4 'Splitbone'",
+  "type": "weapon",
+  "aliases": [
+    "Splitbone",
+    "The Dentist",
+    "Shiver-knife"
+  ],
+  "category": "melee",
+  "description": "The VSB-4 is a single-edged blade approximately 38cm in length, constructed from layered titanium-carbide composite and threaded internally with a dense lattice of piezoelectric actuator filaments. When activated, the blade oscillates at frequencies between 28,000 and 54,000 Hz, cycling through resonance harmonics that allow the cutting edge to part most commercial-grade armor plating with minimal applied force. The oscillation cycle is managed by a thumb-toggle on the ergonomic polymer grip, with three preset frequency profiles selectable mid-engagement.\n\nWhat distinguishes the VSB-4 from earlier vibronic blades is its harmonic stepping algorithm, which prevents the blade from settling into a single resonance frequency long enough to be countered by adaptive dampening systems embedded in high-end armor. Older vibronic weapons were rendered largely ineffective against Tier 4 and above protective gear by the mid-2070s; the VSB-4's frequency cycling reestablished melee relevance in close-quarters engagements against hardened targets.\n\nThe blade produces a faint, tooth-aching hum audible within roughly two meters of the wielder, which experienced operators consider a psychological asset. The sound has become culturally associated with professional violence in Meridian 88's lower districts, and the mere activation click of a VSB-4 in a confined space has been documented as sufficient to de-escalate confrontations without further action.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Piezoelectric disruption",
+    "Harmonic frequency cycling"
+  ],
+  "specifications": "blade length: 38cm\ntotal length: 52cm\nweight: 680g\nfrequency range: 28,000–54,000 Hz\nfrequency profiles: 3\npower source: Integrated graphene microcell, 4-hour continuous operation\nblade material: Titanium-carbide composite with piezoelectric filament lattice\ngrip material: Shock-dampening polymer with tactile frequency indicator",
+  "tactical_use": "Operators typically keep the blade deactivated until the moment of commitment to avoid audio detection. In tight corridors and vehicle interiors, the VSB-4 is favored over firearms due to its penetration of light-to-medium armor without ricochet risk. Enforcers use it in interrogation-adjacent contexts where the activation sound alone communicates intent. Frequency profile 3 is reserved for hardened exosuit seams and joint gaps.",
+  "cultural_context": "The VSB-4 occupies an uncomfortable middle space in Meridian 88's weapon culture — too sophisticated for common street carry, too visceral for corporate operatives who prefer cleaner tools. It is strongly associated with mid-tier fixers, debt collectors working for biotech creditors, and the personal security details of black-market surgeons. Owning one signals a professional who works close and expects resistance. In the Underbelly districts, the nickname 'The Dentist' reflects a dark humor about the kind of precision pain it implies.",
+  "known_users": [
+    "Debt enforcement agents",
+    "Mid-tier fixers",
+    "Black market surgical security",
+    "ARCTURUS field evaluators",
+    "Former military close-quarters specialists operating privately"
+  ],
+  "story_hooks": [
+    "A VSB-4 is recovered from a crime scene with its frequency log intact — the harmonic stepping pattern has been custom-programmed to match a specific proprietary armor system, suggesting the murder was highly premeditated and technically sophisticated.",
+    "ARCTURUS Defense Solutions is quietly recalling a batch of VSB-4 units due to a firmware flaw that causes the harmonic stepper to lock into a frequency that resonates destructively with certain neural implant housings — but they haven't gone public, and the affected units are still in circulation.",
+    "A street medic in the Underbelly trades information for protection, and her sole protector carries a VSB-4 whose activation sound has become a local warning signal — when people hear it, they clear the street. Someone wants to silence both of them."
+  ],
+  "ammunition_type": [
+    "none"
+  ],
+  "tags": [
+    "melee",
+    "weapon",
+    "violence",
+    "blade",
+    "war",
+    "crime",
+    "neural",
+    "ai",
+    "corporate",
+    "power",
+    "debt",
+    "pain",
+    "market",
+    "dark",
+    "vehicle",
+    "armor",
+    "fire",
+    "tier 3"
+  ]
+}

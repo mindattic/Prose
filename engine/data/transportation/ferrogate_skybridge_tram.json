@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa67724ba1bb798c08a789ad",
+  "name": "Ferrogate Skybridge Tram",
+  "type": "transportation",
+  "aliases": [
+    "Sky Tram",
+    "Bridge Car",
+    "The Web"
+  ],
+  "category": "public_transit",
+  "manufacturer": "Ferrogate Transit",
+  "description": "An enclosed cable car system running on cables strung between the mega-structures and tower blocks of Tier 3-4 districts. Where the L-train runs at street level and the monorail at mid-height, the Skybridge Tram operates between buildings at the 40th-80th floor level. Small cars holding 8 passengers glide silently along cables, offering vertiginous views of the city below. It's efficient, quiet, and the only public transit that makes you acutely aware of what happens if something goes wrong.",
+  "propulsion": "Cable-drawn, electric motor at terminal stations",
+  "speed": "25 km/h",
+  "capacity": "8 passengers per car",
+  "range": "Individual spans: 200m-1.5 km between buildings",
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ5 per ride",
+  "autonomy": "Automated cable system, station-controlled dispatch",
+  "armament": "None. Emergency descent harnesses in each car.",
+  "common_usage": "Inter-building transit in the upper tiers, avoiding ground-level congestion entirely.",
+  "story_hooks": [
+    "A Skybridge Tram stops mid-span and the passengers see something moving between the buildings that isn't another car",
+    "The cables are vibrating at frequencies that shouldn't be possible given their tension — something is using the cable network to transmit data"
+  ],
+  "tags": [
+    "publictransit",
+    "transportation",
+    "war",
+    "ai",
+    "control",
+    "rain",
+    "train",
+    "tier 3",
+    "tier 4"
+  ]
+}

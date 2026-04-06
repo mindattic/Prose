@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -7,8 +8,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// Strongly-typed character model matching the actual YAML structure.
 /// Serialized/deserialized as JSON — no regex, no guessing.
 /// </summary>
-public class CharacterData
+public class CharacterData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("type")] public string Type { get; set; } = "character";
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];

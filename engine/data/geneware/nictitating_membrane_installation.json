@@ -1,0 +1,44 @@
+{
+  "id": "019d6143a8ac7086ae2f41875e90ea55",
+  "name": "Nictitating Membrane Installation",
+  "brand_name": "Nictitating",
+  "product_name": "Nictitating Membrane Installation",
+  "type": "geneware",
+  "aliases": [
+    "Third Eyelid",
+    "Shark Blink",
+    "Clear Lid"
+  ],
+  "category": "sensory",
+  "target_system": "ocular (nictitating membrane growth)",
+  "description": "Introduces a functional nictitating membrane — a translucent third eyelid that sweeps horizontally across the eye from the inner corner. The membrane protects the eye from debris, water, wind, and bright light while allowing continued vision through its semi-transparent surface. Sharks, birds, and reptiles possess this structure naturally; humans lost it millions of years ago. The reinstalled membrane is voluntarily controlled — the user can deploy it instantly as an eye shield. It provides underwater vision without goggles (the membrane acts as a natural goggle lens), protects against flash blindness, and keeps the eyes moist in dry environments. Zheng-Dao Bioelectric's version includes UV-filtering proteins in the membrane, combining eye protection with glare reduction.",
+  "source_organism": "Galeocerdo cuvier (tiger shark), Accipiter gentilis (northern goshawk)",
+  "manufacturer": "Zheng-Dao Bioelectric",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "procedure": "Ocular microsurgery with retroviral membrane growth induction, 1 session",
+  "expression_time": "3–5 weeks",
+  "reversibility": "Surgically removable; regrowth must be gene-suppressed",
+  "side_effects": [
+    "Membrane deployment is visible — a translucent film sweeps across the eye, unsettling to observers",
+    "Involuntary deployment during sneezing, bright flashes, or submersion",
+    "Vision through the membrane is slightly hazy — fine detail is reduced",
+    "Membrane can become inflamed or infected if hygiene is poor"
+  ],
+  "social_perception": "Practical and mildly unsettling. The visible membrane sweep is disconcerting to people who haven't seen it before. Among swimmers, divers, and outdoor workers, it's considered smart and practical. The involuntary deployment during bright light gives users a distinctive 'shark blink' that becomes recognizable.",
+  "story_hooks": [
+    "A Clear Lid user's membrane deploys involuntarily in response to a frequency of light that shouldn't trigger it — something in the room is emitting radiation outside normal parameters",
+    "A street clinic's nictitating membrane installation produces a membrane that's not translucent but opaque, leaving the user periodically blind when it deploys — a manufacturing defect that the clinic is covering up"
+  ],
+  "tags": [
+    "sensory",
+    "geneware",
+    "war",
+    "ai",
+    "control",
+    "surgery",
+    "clinic",
+    "water",
+    "tier 2"
+  ]
+}

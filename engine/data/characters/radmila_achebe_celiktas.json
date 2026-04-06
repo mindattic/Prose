@@ -1,0 +1,226 @@
+{
+  "id": "019d6143a6a57d018ab3c1dcbe5ad4a7",
+  "type": "character",
+  "name": "Radmila Achebe-Çeliktas",
+  "aliases": [
+    "Radi",
+    "The Needle"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Clothing and fashion vendor specializing in custom retrofits, geneware-compatible garments, and augmentation-integrated streetwear",
+  "age": 42,
+  "status": "active",
+  "location": "The Burnished Market, The Laceworks district",
+  "description": "Radmila is a tall woman with the posture of someone who was once told to slouch and decided never to again. Her skin is warm brown, her hair a natural silver she has streaked with bioluminescent thread-fibers so it catches and pulses faintly in low light — not a geneware mod but textile craft, and she is meticulous about the distinction. She wears her own creations exclusively: today a structured coat with induction-panel lining that shifts color along the hem, tomorrow a deconstructed layering piece that incorporates a client's old Ferrogate Transit jacket. She has retractable claw geneware on her dominant hand, which she uses with equal facility for detail sewing and emphasis in arguments.\n\nRadmila came from the Balkans diaspora through Lagos and arrived in Meridian 88 with a sewing kit, a secondhand cutting laser, and opinions she has never once kept to herself. She is opinionated about aesthetics to the point of manifesto, believes that how people dress in a corponation city is a political act whether or not they mean it to be, and will refuse a commission she finds artistically dishonest even at cost to herself. She is the kind of person who makes enemies easily and keeps them; her regulars are fiercely loyal because she makes things that fit them like she understood what they needed before they said it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "making something that is used to harm someone — being complicit through craft",
+      "losing the workshop and having to work for a corporate fashion house to survive"
+    ],
+    "core_desires": [
+      "to build something that outlasts her — a school, a collective, a craft tradition",
+      "to be honestly seen, which is different from being appreciated"
+    ],
+    "coping_mechanisms": [
+      "work as grounding ritual",
+      "aesthetic philosophy as a framework for making ethical decisions"
+    ],
+    "blind_spots": [
+      "her pride makes her slow to accept help, which strains the workshop finances",
+      "she reads political meaning into things that are sometimes just coincidence"
+    ],
+    "secret": "She has been quietly making alterations to garments for a network she doesn't fully understand — people who need concealments, hidden pockets, lining modifications — and she has told herself it is none of her business. She suspects it might be resistance work. She has not asked because she is afraid the answer will force a decision."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and confident; uses textile and craft terms as metaphors; direct to the point of bluntness",
+    "cadence": "Measured, declarative — she holds eye contact and waits for understanding before moving on",
+    "verbal_tics": [
+      "taps claws on the counter surface when thinking",
+      "'That's not a garment, that's a costume — there's a difference'",
+      "'No, listen'"
+    ],
+    "example_lines": [
+      "'A Tier 3 person wearing Axiom branding is a person who has decided what they are. I make clothes for people who haven't decided yet.'",
+      "'I don't do concealed pockets without knowing the reason. Generally. Ask me again when you've had a drink and thought about what you're actually asking.'",
+      "'The thread remembers the tension. That's not a metaphor, that's materials science. That is also a metaphor.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has found something sewn into the lining of a garment that was brought in for alteration — something that should not be there — and does not know what to do with it",
+    "A Palladian fashion house rep has offered her a contract that would pay off her workshop debt in eight months; the terms include an exclusivity clause that would end the concealments work, and she suspects the offer was engineered specifically to isolate her",
+    "A young tailor she has been informally mentoring has disappeared, and the last thing they were working on was a commission from a client Radmila thought was trouble"
+  ],
+  "narrative_function": "Social connector to The Laceworks and Burnished Market communities; can source unusual materials or modify garments to conceal or integrate equipment; her sharp eye makes her an excellent involuntary observer of who is wearing what and why.",
+  "augmentations": "Retractable claw geneware (dominant hand, right; dark amber). Vision augmentation: microscopic focus overlay for detail work (basic grade, self-paid). Color-changing hair achieved through bioluminescent textile fibers, not geneware — she corrects anyone who assumes otherwise.",
+  "daily_life": "Market hours 10am to 8pm managing the stall and seeing clients; late evenings in her workshop two streets away doing production work; she sleeps badly and sews at 3am frequently.",
+  "affiliation": "Independent; The Burnished Market informal collective; occasional contract work for mid-tier Tier 2-3 clients who want bespoke without Axiom fashion house prices",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -4,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "artisan",
+      "political dresser",
+      "claw geneware",
+      "ELF devotee",
+      "idealist-pragmatist",
+      "involuntary operative"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never make something you would not put your name on",
+      "The client describes the need; you decide the form — that's the contract",
+      "If a thing is worth doing, it is worth doing with the right materials"
+    ],
+    "escalation_ladder": [
+      "Warm with regulars and appropriately professional with new clients",
+      "Goes crisp and direct if boundaries are pushed",
+      "Will end a transaction mid-commission if her ethics are violated, refunding deposit",
+      "Will not be physically intimidated — the claws are not decorative"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing; she watches how someone moves and dresses before deciding how to talk to them",
+      "friends": "Demanding but deeply loyal; the kind of friend who tells you the truth and then helps you fix it"
+    },
+    "stress_responses": {
+      "low": "Sews faster; the quality improves under mild pressure",
+      "medium": "Becomes very precise in language; measures words like fabric",
+      "high": "Completely silent; works with focused intensity; processes afterward, alone"
+    },
+    "contradictions": [
+      "Believes in transparency and honesty but has avoided asking the question that would force her into the open about the concealment work",
+      "Refuses corporate aesthetics philosophically but her technique owes everything to a training program funded by Sterling-Nakamura"
+    ],
+    "habits": [
+      "Runs her right-hand claw along seam lines to test tension — in garments and in situations",
+      "Leaves a thread-fiber offering on the windowsill of her workshop for the ELF she calls Selvage",
+      "Drinks three cups of very bitter tea before opening the stall"
+    ],
+    "breaking_points": [
+      "Finding out the concealment garments were used in something that got people killed",
+      "The workshop being seized or destroyed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "People Pleaser": 0.9,
+    "Hustler": 0.7,
+    "Provider": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in what is now the Highland Park Autonomous Zone, diaspora family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed informal craft apprenticeship; began stall at The Burnished Market",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Workshop space secured in The Laceworks",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began receiving concealment modification requests from unidentified network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current; Palladian approach and disappearance of mentee apprentice complicating operations",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

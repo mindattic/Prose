@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab2d715cb4314a7f61742bd1",
+  "name": "Hemolytic Vapor Induction Carbine",
+  "type": "weapon",
+  "aliases": [
+    "HVIC-3",
+    "Redmist",
+    "The Blush"
+  ],
+  "category": "exotic",
+  "description": "The HVIC-3 operates by projecting a tuned aerosol of catalytic nanoparticles into the breathing zone of a target, where they are subsequently activated by a focused near-infrared trigger pulse from the carbine's secondary emitter. Once inhaled or absorbed transdermally, the particles bind to hemoglobin iron sites and initiate a controlled oxidative cascade, forcing red blood cells into a premature lysis cycle. The effect begins within ninety seconds of exposure and manifests as rapidly progressing hypoxia, subcutaneous hemorrhaging, and systemic pressure collapse. Range is limited to approximately eighteen meters in open air, though enclosed spaces dramatically amplify dispersal efficiency.\n\nWhat separates the HVIC-3 from cruder aerosol weapons is its selectivity system. Operators can pre-load a biometric exclusion profile — a genetic or proteomic signature — allowing the carbine to suppress activation in targeted individuals while the cloud remains lethal to everyone else in the zone. Zheng-Dao Bioelectric markets this as a 'precision population management tool,' which has done little to soften the weapon's reputation. The carbine itself resembles an oversized pump-action shotgun with a bulbous canister housing beneath the barrel, and emits a faint copper smell during discharge that veteran operators have learned to treat as a serious warning sign.\n\nThe nickname 'Redmist' comes not from the aerosol itself, which is invisible, but from the subcutaneous hemorrhaging that gives affected skin a mottled crimson flush in the final stages of exposure. 'The Blush' is used more sardonically, typically by the corporate security contractors who deploy it for crowd suppression in sealed transit hubs and processing centers.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Military only",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Catalytic nanoparticle suspension",
+    "Near-infrared photochemical activation",
+    "Biometric exclusion profiling"
+  ],
+  "specifications": "effective range: 18m open air / 40m enclosed\ncanister capacity: 6 discharge cycles per canister\nactivation delay: 90 seconds post-exposure\nexclusion profiles: Up to 4 simultaneous biometric exemptions\nweight: 4.2 kg loaded\ndimensions: 74cm length\npower source: Integrated DAT cell, 30 trigger pulses per charge",
+  "tactical_use": "Deployed almost exclusively in enclosed or semi-enclosed environments where aerosol dispersal is predictable. Operators typically seed a space, withdraw, and trigger activation remotely after establishing a perimeter. The exclusion profile system makes it viable for extractions where a target must survive while everyone else in the room does not. Counter-use involves positive-pressure respirators and full dermal sealing, though the near-infrared trigger can sometimes be blocked by certain optical coatings.",
+  "cultural_context": "The HVIC-3 exists in a strange public silence — it is widely known among intelligence communities and black-site operators but almost never discussed openly, partly because Zheng-Dao Bioelectric aggressively suppresses documentation of its use. Among corporate fixers, possession of one is considered a statement of institutional backing rather than personal capability. Street operators who come across one typically sell it immediately; the legal exposure is catastrophic and the weapon's use leaves forensic evidence that is difficult to misattribute.",
+  "known_users": [
+    "Zheng-Dao corporate extraction teams",
+    "Black-site interrogation contractors",
+    "Rogue biosecurity officers",
+    "The fixer known as 'Madame Coloratura'",
+    "Meridian 88 Sanitation Authority internal affairs division (unconfirmed)"
+  ],
+  "story_hooks": [
+    "A transit hub massacre leaves 40 dead with no visible wounds and no weapon recovered — only a faint copper smell in the ventilation system and one survivor with an inexplicable genetic exemption.",
+    "A stolen exclusion profile cartridge is being auctioned on the black market, pre-loaded with a biometric signature that nobody can identify but everyone wants.",
+    "Zheng-Dao Bioelectric is recalling all HVIC-3 units through a shell contractor — but the recall notices are only going to operators who used the weapon in a specific six-month window, and those operators are going missing.",
+    "An operator is hired to protect a VIP, only to discover mid-mission that the client's biometric profile is not in the exclusion cartridge they were issued."
+  ],
+  "ammunition_type": [
+    "Aerosol Chemical Payload Canister ACP-35",
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "war",
+    "genetic",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "ubc",
+    "market",
+    "bar",
+    "energy"
+  ]
+}

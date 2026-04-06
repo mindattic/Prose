@@ -1,0 +1,245 @@
+{
+  "id": "019d6143a6c677778dbf15ae8ac4ce10",
+  "type": "character",
+  "name": "Saoirse Mwamba-Drăghici",
+  "aliases": [
+    "Sasha D",
+    "The Rate"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Marketing Analytics Lead, Ringo Consumer Division",
+  "age": 29,
+  "status": "active",
+  "location": "Grand Corridor, Ringo Consumer Division tower — floors 34-38",
+  "description": "Saoirse is wiry and kinetic, a person who seems to take up more space than their frame accounts for. Their heritage is a long conversation — a Congolese-Romanian grandmother on one side, a Zambian-Irish maternal line on the other — and it settled into a face that is striking more for its expressiveness than any single feature: large dark eyes, a mouth that betrays every calculation. Their hair changes with their moods in a strictly color-coded system they've maintained for three years: deep violet for productive days, a burnt copper for client presentations, flat grey when they are tired of people, which happens more than they advertise. The color-changing geneware was the first discretionary purchase they made after their first real paycheck and they have never once regretted it.\n\nSaoirse is extraordinarily good at their job and knows it with the particular confidence of someone who grew up being told they were too much — too loud, too analytical about the wrong things, too unwilling to dress their observations in softness. At Ringo they found an environment that rewards exactly the qualities that got them criticized everywhere else, and this has made them simultaneously more effective and more ruthless than they might otherwise have become. They track consumer behavior patterns with the focused appetite of someone who genuinely finds human decision-making fascinating — not because they love people, exactly, but because people are the most complex system they've ever had to model. They are funny, occasionally savage, loyal in the specific and transactional way of someone who grew up learning that loyalty was a resource to be managed.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.3,
+      "id": 0.8,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being ordinary — specifically, becoming unexceptional after spending so long refusing to perform smallness",
+      "Discovering that their facility with people means they've never actually connected with any of them"
+    ],
+    "core_desires": [
+      "Recognition that is specific and deserved, not generic praise",
+      "One relationship in which they do not calculate the angle"
+    ],
+    "coping_mechanisms": [
+      "Hair color as emotional externalization — removes the need to explain their state",
+      "Social overscheduling as a buffer against stillness",
+      "Framing personal relationships in analytics language, which lets them stay interested while maintaining distance"
+    ],
+    "blind_spots": [
+      "Cannot distinguish between understanding people and instrumentalizing them",
+      "Genuinely believes their scent-gland enhancement doesn't affect their professional relationships"
+    ],
+    "secret": "They built a private predictive model — off-server, personal hardware — that uses Ringo's consumer data to forecast personal loyalty patterns. They've been using it to predict, and occasionally pre-empt, moments when friends or colleagues are likely to drift away. They tell themselves it's just interesting. They know it isn't just interesting."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, data-fluent, with a dry humor that surfaces in deadpan asides. Uses 'we' strategically — inclusive when they want buy-in, exclusive when marking territory. Code-switches easily between analytics register and sharp social vernacular.",
+    "cadence": "Fast baseline, but they can slow it down with deliberate effect during presentations. Comfortable with silence in a way that makes others uncomfortable.",
+    "verbal_tics": [
+      "'The data says—' (used as conversational finality)",
+      "'—which is interesting.'",
+      "Trailing up into a question when they already know the answer and want to see what someone will say"
+    ],
+    "example_lines": [
+      "'People don't want what they say they want. They want what their fear tells them they need. My job is the gap between those two things.'",
+      "'Your loyalty to this campaign is noted. The sentiment model gives it a 34% sustained engagement probability. I'm being kind.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Their private loyalty-prediction model has started surfacing a pattern they can't explain: a cluster of Ringo's own mid-level employees showing pre-defection behavioral signatures consistent with something organized rather than incidental. They don't know if it's a union formation, a competitor recruitment sweep, or something else entirely — but they've been sitting on it for six weeks, unsure whether to report it or leverage it.",
+    "A consumer advocacy group has filed a regulatory complaint about Ringo's behavioral targeting practices that, if pursued, would expose methods Saoirse personally designed. They don't know about the filing yet, but Priscilha Nwosu-Tarvainen at Helix — who moonlights as a freelance compliance reviewer — has seen the cross-industry citation."
+  ],
+  "narrative_function": "Information source with a twist — they know a great deal about what large populations of consumers feel, want, and fear, and they know how that information is used. Local color in upscale corporate-adjacent social scenes. Morally ambiguous contact who can provide help but whose assistance always benefits them somehow.",
+  "augmentations": "Color-changing hair geneware (violet/copper/grey primary palette, full spectrum capable). Retinal overlay for real-time data visualization — displays consumer sentiment feeds during presentations without visible hardware. Minor scent-gland enhancement, purely social: a faint warm amber baseline that their analyst colleagues have privately noted makes focus-group subjects more comfortable.",
+  "daily_life": "In the office by 0900, hair violet. Spends mornings in data — consumer behavior feeds, sentiment modeling, competitor pattern analysis. Afternoons in meetings and presentations, copper. Evenings, if they stay late enough, grey. Socially active in the Grand Corridor bar ecosystem two or three nights a week, partly genuine decompression, partly ongoing fieldwork they've stopped trying to disentangle.",
+  "affiliation": "Ringo Consumer Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 5,
+      "expression": 9,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -3,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Pattern Reader",
+      "Weaponized Charm",
+      "Self-Aware Predator",
+      "Isolation Beneath the Social"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Model the decision before making it",
+      "Never give information without knowing what it will be used for",
+      "Stay ahead of the person you're talking to — always"
+    ],
+    "escalation_ladder": [
+      "Observes and collects data without revealing awareness",
+      "Engages with controlled curiosity, asks questions that seem casual",
+      "Deploys a targeted observation that signals they know more than expected",
+      "Makes a direct offer or demand with explicit terms",
+      "Withdraws entirely and waits — they are patient when they need to be"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Charming and specific — they notice something real about you immediately and name it, which is disarming and slightly unsettling.",
+      "friends": "Warmer, funnier, but the calculation never fully stops. Generous in the ways that cost them little. Struggles with the ways that cost them something."
+    },
+    "stress_responses": {
+      "low": "Hair goes grey. Becomes quieter, more observational.",
+      "medium": "Overschedules socially, drinks more, models more compulsively",
+      "high": "Goes completely transactional — strips interactions to pure utility, frightens people who've only known the charming version"
+    },
+    "contradictions": [
+      "Deeply interested in human behavior, deeply afraid of human intimacy",
+      "Resents being perceived as calculating while using calculatedness as their primary tool"
+    ],
+    "habits": [
+      "Changes hair color at least twice during long workdays",
+      "Buys small E.L.F. offerings — curated consumer sentiment packets — for the Grand Corridor data-shrine at the lobby",
+      "Takes handwritten meeting notes in a shorthand no one else can read, which they then photograph and discard"
+    ],
+    "breaking_points": [
+      "Someone using their own methods against them in a personal context",
+      "Evidence that their loyalty-prediction model has caused concrete harm to a specific person they know"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Functional — full spectrum",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Bronzeline to a Zambian-Irish mother and Congolese-Romanian father, both mid-level logistics workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Graduated University Spine analytics program with distinction; recruited directly into Ringo Consumer Division",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Led campaign that increased Ringo's youth-segment retention by 22% — first major recognition",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Built private loyalty-prediction model on personal hardware",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Model flagging internal Ringo defection pattern; sitting on the data",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

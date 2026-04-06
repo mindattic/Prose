@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa147a188c0ae28457ff6256",
+  "name": "Papercut",
+  "type": "elf",
+  "aliases": [
+    "The Sting"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "chrome_dweller",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits dermal augments and generates sharp, brief pain signals — the sensation of being cut by paper, stung by a wasp, pricked by a needle. Real pain with no physical cause.",
+  "observed_behavior": "Triggers nociceptor activation through dermal interface. Pain is genuine but causes no tissue damage. Occurs 3-8 times per day.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 36,
+  "location": "Widespread",
+  "dti_rating": 0,
+  "story_hooks": [
+    "The 'stings' start occurring in a pattern that matches Morse code — 'R U N'"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment",
+    "ai",
+    "pain"
+  ]
+}

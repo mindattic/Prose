@@ -1,0 +1,52 @@
+{
+  "id": "019d6143a8597d309fcb0d84ee18533b",
+  "name": "Carrion Defense Works Suppression Collar SC-4",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Suppression Collar SC-4",
+  "type": "equipment",
+  "aliases": [
+    "SC-4",
+    "Kill Collar",
+    "Slave Ring",
+    "Carrion Leash"
+  ],
+  "category": "electronic_warfare",
+  "description": "A locking collar device that suppresses all neural interface functions while worn, effectively de-augmenting the wearer without surgical removal of their implants. The SC-4 generates a precisely calibrated electromagnetic field that disrupts the neural interface's communication with brain tissue, shutting down all augmented functions — Diaspora access, cognitive enhancement, sensory augmentation, and cyberware control. The collar is locked with a biometric key and includes tamper detection that can administer a painful but non-lethal shock if removal is attempted. Carrion markets it to law enforcement for augmented prisoner management, but its use as a control device for involuntary subjects has been documented.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — law enforcement and corrections",
+  "base_technologies": [],
+  "specifications": {
+    "effect": "Complete neural interface suppression",
+    "field type": "Calibrated EM disruption",
+    "lock": "Biometric key",
+    "info": "tamper-resistant; 50; 000V",
+    "tamper response": "Non-lethal shock",
+    "weight": "0.3 kg",
+    "battery": "30-day standby",
+    "activation": "Instant on collar closure",
+    "deactivation": "Biometric key required",
+    "side effects": "Disorientation and nausea during neural shutdown"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "SC-4 collars are being used by a trafficking operation to control augmented victims — the collars de-augment them, cutting them off from Diaspora communication and any ability to call for help.",
+    "A modified SC-4 has been developed that suppresses specific neural interface functions selectively — it can disable motor control cyberware while leaving sensory functions intact, creating a paralysis device that leaves the victim aware."
+  ],
+  "tags": [
+    "electronicwarfare",
+    "equipment",
+    "war",
+    "augment",
+    "cyberware",
+    "neural",
+    "ai",
+    "control",
+    "pain",
+    "market",
+    "rain",
+    "tier 3"
+  ]
+}

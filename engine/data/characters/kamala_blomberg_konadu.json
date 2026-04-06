@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a63d7936bd590bc55b15bfa3",
+  "type": "character",
+  "name": "Kamala Blomberg-Konadu",
+  "aliases": [
+    "Cortex",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Structural breach and explosive ordnance specialist — demolitions expert",
+  "age": 23,
+  "status": "active",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling",
+  "description": "Kamala Blomberg-Konadu are average height but with a presence that fills more space than the body accounts for. At 23, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a demolitions expert out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Kamala Blomberg-Konadu describe them as a precision instrument — point them at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.91,
+      "ideal": 0.68,
+      "id": 0.16,
+      "shadow": 0.89,
+      "mask": 0.7,
+      "ghost": 0.26
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "That the work they do makes the city worse, not better",
+      "Losing their edge to age — the body slows before the mind accepts it"
+    ],
+    "core_desires": [
+      "The perfect run — one job so clean it becomes legend",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "To find the person who burned them and make it educational"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+    ],
+    "blind_spots": [
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Trusts technology more than people — machines don't betray",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
+    ],
+    "secret": "Kamala Blomberg-Konadu can't read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
+      "Whispers when angry — the quieter the voice, the worse the situation"
+    ],
+    "example_lines": [
+      "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
+      "\"I don't blow things up. I perform structural rearrangement.\"",
+      "\"The blast radius is your problem. My problem is making sure there's a blast.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corporate black site Kamala Blomberg-Konadu once infiltrated is being reopened, and the people inside know their face",
+    "A dead drop Kamala Blomberg-Konadu maintains is found and cleaned out — whoever did it now has leverage",
+    "Someone is impersonating Kamala Blomberg-Konadu on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "Kamala Blomberg-Konadu is a pressure point — the kind of character whose choices ripple outward. When they make a decision, other people's lives change. That weight is the engine of their stories.",
+  "augmentations": "Neural dampener — blocks external hacking attempts, passive ICE in the brain. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — works solo contracts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 4
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.72,
+      "caution": 0.6,
+      "loyalty": 0.55,
+      "greed": 0.79,
+      "empathy": 0.62
+    },
+    "drives": [
+      "freedom",
+      "reputation",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 6,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "strategic thinking under pressure",
+      "intimidating physical presence",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "overconfidence in specialty areas leading to blind spots",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "demolitions expert",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never discusses active contracts with anyone not directly involved",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always verifies target identity independently before lethal contracts",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Being publicly exposed — name, face, address, all of it blown"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural dampener",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "replaces": ""
+    },
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "019d6143a9ff73fca89f0399919059db",
+  "name": "Foxfire",
+  "type": "elf",
+  "aliases": [
+    "Swamp Light"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "wisp",
+  "habitat": "void_swimmer",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Manifests as anomalous bioluminescence in Old Harbor's algae — patterns of light that don't match the algae's programmed behavior. The harbor glows differently when Foxfire is active.",
+  "observed_behavior": "Modulates the engineered bioluminescent algae's light output through the water treatment system's chemical feeds. Creates light patterns that may be communication or may be noise.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 9,
+  "location": "Old Harbor",
+  "dti_rating": 0,
+  "story_hooks": [
+    "The light patterns match a binary encoding — someone translates and discovers a message: coordinates to something underwater that Foxfire wants found"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "wisp",
+    "void swimmer",
+    "e.l.f.",
+    "war",
+    "harbor",
+    "fire",
+    "water",
+    "old harbor"
+  ]
+}

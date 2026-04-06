@@ -1,0 +1,37 @@
+{
+  "id": "019d6143ab1c7598881b6c9c5b4fa0d0",
+  "name": "Carrion Defense Works Miasma Projector MP-5 'Plague Bearer'",
+  "type": "weapon",
+  "aliases": [
+    "Plague Bearer",
+    "MP-5",
+    "Gas Gun",
+    "Stink Cannon"
+  ],
+  "category": "chemical",
+  "description": "A pressurized chemical dispersal weapon that launches canisters of Carrion's proprietary incapacitant compound — a viscous aerosol that adheres to surfaces and continues to off-gas for up to six hours. The compound causes severe mucous membrane irritation, temporary blindness, and uncontrollable retching in unprotected targets. It is technically classified as non-lethal, though confined-space deployment has resulted in documented fatalities from asphyxiation. The persistent nature of the compound makes it particularly effective for area denial.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — riot control and area denial; Restricted — civilian",
+  "base_technologies": [
+    "Persistent chemical aerosol formulation",
+    "Pressurized canister projection",
+    "Surface-adhesion off-gassing compounds"
+  ],
+  "specifications": "canister range: 40-80 meters (launched)\narea of effect: 15 meter radius per canister\npersistence: 4-6 hours on surfaces\nmagazine: 6 canisters\nweight: 4.1 kg loaded\ncompound: Carrion CDW-Incap7 viscous aerosol\ncountermeasure: Filtered rebreather with ocular seal required",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Someone deployed Miasma canisters in a sealed residential ventilation system in Tier 2 — forty people hospitalized, three dead, and the canisters had their serial numbers chemically erased.",
+    "A Carrion chemist has developed a variant that selectively affects people based on their blood chemistry — it only incapacitates targets with specific pharmaceutical markers."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "chemical",
+    "weapon",
+    "gun",
+    "control",
+    "tier 2"
+  ]
+}

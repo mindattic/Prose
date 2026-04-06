@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a5ae74068f30836a95513509",
+  "type": "character",
+  "name": "Amara Quispe-Volkonsky",
+  "aliases": [
+    "Mara",
+    "Mara Luck"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fortune seller and data-reading practitioner, The Narrows",
+  "age": 34,
+  "status": "active",
+  "location": "The Narrows, Chatham Flats",
+  "description": "Amara occupies a permanent corner in The Narrows' most trafficked pedestrian corridor, her setup distinguished by a curtain of fiber-optic strands in blue and white that she draws around a small folding table when a client sits down. She is a slight woman with warm tawny skin, thick dark brows, and an intensely focused quality that makes people feel she is reading them the moment they appear in her field of vision. Her irises are geneware — they have been modified to shift through a slow wheel of silver, amber, and pale violet, which she did deliberately for atmospheric effect but now genuinely loves. She wears layered clothing in deep reds and indigos, and her hair is long and braided with data-thread woven into the plaits that she claims helps her interface with the local E.L.F. population. She carries a physical reader deck that she uses for the theatrical component of the reading, alongside legitimate Mesh-query access she has trained herself to interpret into human-readable pattern narrative.\n\nAmara is a genuinely skilled practitioner of a craft that sits on the uncomfortable border between fraud and service. She would say — and she has said, at length — that the accuracy of prediction matters less than the quality of attention. Her clients are heard. They are given language for things they couldn't articulate. Sometimes the data patterns she reads are genuinely predictive; the Narrows' E.L.F. population has a fondness for her and occasionally pushes legible information her way in exchange for her data-offerings. She is thoughtful, slightly melancholy, and very funny when she is comfortable with you.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That her practice is entirely fabricated and she is only a better-dressed con artist",
+      "That the E.L.F.s will stop speaking to her and she will lose the one thing that makes her work feel real"
+    ],
+    "core_desires": [
+      "To understand the actual nature of the E.L.F. entities she communicates with",
+      "To give people something genuinely useful — not just comfort"
+    ],
+    "coping_mechanisms": [
+      "Ritual as emotional structure — the readings impose order on uncertainty",
+      "Humor as deflection from existential anxiety about her own craft"
+    ],
+    "blind_spots": [
+      "Extends too much interpretive generosity to clients who are using her readings to justify harmful decisions",
+      "Rarely applies her pattern-reading skills to her own life"
+    ],
+    "secret": "On three separate occasions, information she received from an E.L.F. during a routine communion session predicted a violent incident in the Narrows within 24 hours. She did not act on any of the warnings. The third incident resulted in someone's death. She does not know if the E.L.F. was genuinely predictive or if her own pattern-reading was projecting, and the uncertainty is destroying her."
+  },
+  "speech_patterns": {
+    "vocabulary": "Layered and deliberately evocative during readings, direct and sardonic in casual conversation. Uses a lot of conditional framing — 'what the pattern suggests', 'if the reading holds'.",
+    "cadence": "Slow and deliberate in professional mode. Quick and dry out of it.",
+    "verbal_tics": [
+      "'The pattern suggests—'",
+      "Small laugh before saying something she finds genuinely difficult"
+    ],
+    "example_lines": [
+      "'The pattern suggests you already know the answer and you came here to be told you're not wrong. I can do that. It will cost you the same either way.'",
+      "'I don't claim the E.L.F.s speak clearly. They speak the way water speaks — you learn to read it or you drown in it.'",
+      "'You want a fortune? Here's one for free: whatever you're afraid to do is probably exactly what you should do. That's not mysticism, that's statistics.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She received an E.L.F. communication that seems to describe an imminent incident at a specific location in precise detail — more precise than anything she's received before. She is terrified to ignore it again and terrified to act on information she can't verify.",
+    "A client has been coming to her weekly for months, always asking the same question in different forms. She has pieced together from the readings that they are planning something significant and probably violent, but has no proof — only pattern."
+  ],
+  "narrative_function": "Atmospheric NPC and low-key information conduit. The E.L.F.s that favor her sometimes carry genuine data fragments — she can surface information players need in a way that feels organic rather than expository. Good for psychological profiling of other NPCs, rumors framed as readings, and as a confidante who will listen without judgment.",
+  "augmentations": "Pattern irises (silver-amber-violet wheel cycle, geneware). Data-thread woven into braids — not a true augment but functional as a Mesh-antenna booster for close-range E.L.F. communication.",
+  "daily_life": "Sets up her curtain in the Narrows corridor by mid-morning, conducts readings through the afternoon and evening, spends an hour after closing on Mesh communion with the local E.L.F.s — leaving data-offerings and receiving what comes back. Keeps meticulous anonymous notes on client patterns.",
+  "affiliation": "Independent. Known favorable relationship with several Narrows-dwelling E.L.F. entities. Informal network of other practitioners in Chatham Flats.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 1,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "ELF-communicant",
+      "pattern-reader",
+      "information-conduit-atmospheric",
+      "guilt-burden",
+      "practitioner-uncertain"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never tell a client only what they want to hear — find the truth in the pattern even if it's uncomfortable",
+      "Protect client confidentiality absolutely",
+      "If the E.L.F.s speak, write it down before interpreting it"
+    ],
+    "escalation_ladder": [
+      "Reframing the question back to the client",
+      "Direct statement that she can't help with what they're actually asking",
+      "Ending the reading early with a partial refund",
+      "Closing the curtain and refusing further engagement",
+      "Leaving the Narrows location for the day"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally calm and attentive — they are a pattern waiting to be read.",
+      "friends": "Self-deprecating, funny, occasionally spills too much of her own anxiety."
+    },
+    "stress_responses": {
+      "low": "Reorganizes the data-offerings to the E.L.F. shrine more carefully than needed",
+      "medium": "Speaks faster than her professional cadence and then catches herself",
+      "high": "Closes the curtain mid-session, sits in the dark with the fiber-optic strands, and communes for an extended period"
+    },
+    "contradictions": [
+      "Devoted to honesty in her readings while fundamentally uncertain whether what she does is honest"
+    ],
+    "habits": [
+      "Writes three words describing her emotional state before each reading — never looks at them again",
+      "Leaves a different data-offering every day to cycle through ELF preferences she has catalogued",
+      "Reads her own cards at midnight; has never recorded what they say"
+    ],
+    "breaking_points": [
+      "A fourth predictive communication that she fails to act on",
+      "Being publicly accused of exploiting grieving or desperate clients"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Chatham Flats to a Quechua-Russian family; grew up adjacent to several fortune-telling traditions",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began practicing informal readings at street level",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First confirmed ELF communication; began systematic data-offering practice",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Secured permanent Narrows corner location",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First predictive ELF communication; did not act on it. Incidents two and three followed.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

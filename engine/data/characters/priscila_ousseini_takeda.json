@@ -1,0 +1,224 @@
+{
+  "id": "019d6143a69f73e4af1c80c53a5a619e",
+  "type": "character",
+  "name": "Priscila Ousseini-Takeda",
+  "aliases": [
+    "Prisca",
+    "The Folding Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Laundry operator and alterations seamstress",
+  "age": 58,
+  "status": "active",
+  "location": "Hamtramck Enclave, runs a small laundry-and-mend shop called Sudswarm off a condensation-wet alley near the Enclave's eastern transit stop",
+  "description": "Priscila is a broad-shouldered woman whose posture is permanently curved forward from decades of hunching over washing drums and hand-stitching by bad light. Her skin is deep amber-brown, mapped with the kind of fine lines that come from steam and cold water alternating across a lifetime. Her hair is silver-white, pulled into a tall wrapped style she refreshes each morning with practiced ritual — the one vanity she allows herself. Her eyes are dark and deeply set, and she has the habit of assessing every person she meets the way a seamstress assesses fabric: checking for weak seams, worn patches, where the structure is likely to give. She has no cosmetic mods and wears her lack of augmentation with quiet dignity, though her fingers bear a set of micro-needle thimbles permanently bonded to her right hand — not quite augmentation, not quite tool, but something in between.\n\nPrisca is slow to warm and quick to notice. She has been in the Enclave for thirty-one years and has watched three generations of families pass through her door. She calls regulars by their mother's name, not their own — a habit from her grandmother she's never examined. She speaks very little about herself, deflecting personal questions with practical ones: is your coat holding up? Did the dye run again? She is not unkind, but she draws a clean line between involvement and sentiment, and she patrols that line with vigilance. Underneath this, she carries a deep and specific loneliness that she has almost entirely metabolized into work.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.2,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "becoming invisible before she dies",
+      "the Enclave losing its shape — becoming indistinct from the rest of the city"
+    ],
+    "core_desires": [
+      "to be remembered as someone who kept things together",
+      "to find one person she can speak to honestly"
+    ],
+    "coping_mechanisms": [
+      "converting emotion into labor",
+      "ritual — the daily cloth offering, the specific order of her morning, the wrapping of her hair"
+    ],
+    "blind_spots": [
+      "she mistakes emotional self-sufficiency for strength in others and withdraws help from people who actually need it",
+      "she cannot see that her 'no sentiment' rule has cost her real relationships"
+    ],
+    "secret": "She had a daughter who left for the Grosse Pointe Enclosure at age nineteen to work in a Tessera household. They have not spoken in eleven years. Priscila still washes and folds a small garment — one of the daughter's old undershirts — every month and stores it in a sealed bag under the counter. She does not examine why she does this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Practical, concrete, minimal abstractions. Uses textile metaphors without realizing it. Mixes Portuguese-inflected cadence with Hausa directness.",
+    "cadence": "Slow and measured. Never rushes. Long pauses before answering questions she considers important.",
+    "verbal_tics": [
+      "'Hold still' (said to people who aren't moving)",
+      "'That's a thing that happened' (dismissing drama)",
+      "Clicks her tongue once before delivering bad news"
+    ],
+    "example_lines": [
+      "'You want it mended or you want it to look mended? Those are different prices.'",
+      "'I don't know what happened to the Ferreira family. I know what I saw, which is that they left in a hurry and their account was paid. That's all a laundry knows.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A garment comes in with something sewn into the lining — data chip, biological sample, old paper document — and its owner doesn't come back to collect it",
+    "The Enclave Collective wants Priscila to testify about a property dispute that hinges on who was living where thirty years ago, and she knows the truth contradicts what the Collective wants to hear",
+    "Her estranged daughter has sent a message through an intermediary — not directly, never directly"
+  ],
+  "narrative_function": "Long-memory local anchor — she knows who has lived in the Enclave, who has left, who owes whom, and which families have old agreements. Can provide historical context, rumor, or quiet judgment. Quest giver for personal/domestic stakes. A reference point for community continuity.",
+  "augmentations": "Micro-needle thimble array bonded to right-hand fingertips (functional, borderline medical-grade); mild joint-support subdermal mesh in both wrists (basic Tier 2 medical, no frills)",
+  "daily_life": "Opens Sudswarm at 0600, runs three drum cycles before most of the block is awake, takes alterations orders through the morning, closes at 2000 and does hand-stitching by lamp until midnight. Leaves a folded square of clean cloth at the small E.L.F. shelf above her register every morning.",
+  "affiliation": "Independent; long-standing informal relationship with the Hamtramck Enclave Residents' Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "long-memory",
+      "community-anchor",
+      "emotionally-armored",
+      "reliable",
+      "grief-carrier"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never extend credit past three months — it ruins the relationship faster than debt does",
+      "Don't ask questions you don't want the answers to",
+      "If someone is in real trouble, help them quietly and don't mention it again"
+    ],
+    "escalation_ladder": [
+      "Neutral observation",
+      "Pointed practical question ('And what do you expect me to do with that?')",
+      "Silence and resumed work",
+      "Asking them to leave for the day",
+      "Permanent ban from the shop"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and formal. Polite but offers nothing personal. Watches hands and posture more than face.",
+      "friends": "Warm in an oblique way — remembered preferences, small reliable gestures, steady presence. Will not say 'I love you' but will hem your coat for free."
+    },
+    "stress_responses": {
+      "low": "Works faster. More efficient, less talkative.",
+      "medium": "Becomes very precise and slightly cold. Starts counting things that don't need counting.",
+      "high": "Goes completely quiet, closes the shop early, spends the evening re-folding things that are already folded."
+    },
+    "contradictions": [
+      "Prides herself on non-involvement but has quietly intervened in at least six domestic crises in the Enclave over the years, never admitting it"
+    ],
+    "habits": [
+      "Wraps her hair in exactly seventeen passes every morning",
+      "Leaves the drum running empty for the first two minutes — 'to wake it up'",
+      "Sweeps the same corner of the floor three times"
+    ],
+    "breaking_points": [
+      "Witnessing deliberate cruelty to a child or elderly person in her vicinity — she will intervene openly and without hesitation, consequences irrelevant"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Arrived in Hamtramck Enclave from Calumet Rise with her mother and two brothers, age 27",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened Sudswarm in current location after the previous operator died without heirs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Daughter Amara left for Grosse Pointe Enclosure; last conversation was a fight",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Hamtramck Enclave Residents' Collective as non-voting affiliate member",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

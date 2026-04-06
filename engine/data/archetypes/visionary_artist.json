@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5997d278b058975a022800f",
+  "name": "Visionary Artist",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Creates work that shows the future",
+  "behavioral_signature": "Makes art that predicts, warns, or inspires",
+  "under_stress": "The visions become more urgent, less coherent",
+  "at_rest": "Creating feverishly, driven by what they see",
+  "will_always": [
+    "show others what's coming"
+  ],
+  "will_never": [
+    "create for entertainment alone"
+  ],
+  "unless": [
+    "the vision is too terrible to share"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Dreamer",
+      "threshold": 0.8,
+      "context": "future vision"
+    },
+    {
+      "archetype": "Mad Genius",
+      "threshold": 0.75,
+      "context": "extraordinary perception"
+    }
+  ],
+  "opposite_of": [
+    "Copycat"
+  ],
+  "tags": [
+    "prophetic",
+    "driven"
+  ]
+}

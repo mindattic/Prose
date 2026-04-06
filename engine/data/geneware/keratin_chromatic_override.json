@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8a9749bad52b94c17f4dc09",
+  "name": "Keratin Chromatic Override",
+  "brand_name": "Keratin",
+  "product_name": "Keratin Chromatic Override",
+  "type": "geneware",
+  "aliases": [
+    "Living Color",
+    "Chameleon Mane"
+  ],
+  "category": "cosmetic",
+  "target_system": "integumentary (hair follicle pigmentation)",
+  "description": "Rewrites the melanocyte stem cells in hair follicles to produce chromatophore-like pigment cells that shift color in response to electrical signals from a subdermal control node behind the ear. The user can set their hair to any color or combination of colors, change it on a whim, or set it to cycle. The most popular mode in the Shelf is 'mood drift' — the hair shifts color slowly based on emotional state, similar to chameleon skin but slower and more gradient. Helix Biosystems' premium version allows per-strand control for complex patterns. Street versions typically offer a rotating palette of 8–12 colors with visible transition artifacts. Approximately forty percent of Meridian 88's population under age 40 has some form of hair chromatophore modification. It is the city's most popular geneware installation after iris resequencing.",
+  "source_organism": "Chamaeleo calyptratus (veiled chameleon), synthetic keratin modifiers",
+  "manufacturer": "Helix Biosystems (premium), ubiquitous street availability",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "procedure": "Scalp injection series, 2 sessions over 1 week",
+  "expression_time": "3–5 weeks (follows natural hair growth cycle)",
+  "reversibility": "Fully reversible; hair returns to natural color as treated follicles cycle out",
+  "side_effects": [
+    "Hair becomes brittle if color-shifted too frequently",
+    "Budget versions may produce patchy or streaked results",
+    "Mood-drift mode cannot be fully suppressed during extreme emotion"
+  ],
+  "social_perception": "So common it's barely remarked upon. Natural hair color is sometimes called 'default' and is its own fashion statement. Some traditionalist corporate cultures require natural-color grooming policies, which are widely resented.",
+  "story_hooks": [
+    "A runner's hair shifts to a color they didn't choose — the control node has been hacked to broadcast their emotional state to a remote observer",
+    "A gene clinic discovers their color-shift package contains dormant sequences that activate after 6 months, turning all treated hair stark white permanently"
+  ],
+  "tags": [
+    "cosmetic",
+    "geneware",
+    "war",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "control",
+    "clinic",
+    "bar",
+    "fashion",
+    "shelf",
+    "tier 1"
+  ]
+}

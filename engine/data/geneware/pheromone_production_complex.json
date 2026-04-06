@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a8ae714aae9ae2066218bef0",
+  "name": "Pheromone Production Complex",
+  "brand_name": "Pheromone",
+  "product_name": "Pheromone Production Complex",
+  "type": "geneware",
+  "aliases": [
+    "Love Scent",
+    "Charm Glands",
+    "Musk Mod"
+  ],
+  "category": "performance",
+  "target_system": "glandular (synthetic pheromone production)",
+  "description": "Installs modified apocrine glands that produce synthetic human-compatible pheromones — biochemical signals that influence mood, attraction, trust, and social bonding in nearby people. The pheromones are real neurochemical triggers: oxytocin-promoting compounds that generate feelings of warmth and trust, dopamine-adjacent molecules that enhance perceived attractiveness, and stress-reducing signals that make the user's presence calming. The production can be consciously modulated — increased for social situations, suppressed for privacy. Lacuna Genomics markets it as a 'social enhancement' for corporate networking. Critics call it chemical manipulation of consent. The ethical debate around pheromone modification is one of the most contentious in Meridian 88 — is biochemically enhanced charisma fundamentally different from wearing nice clothes or having good posture? Most people believe it is. Pheromone users are required to disclose their modification in many social and professional contexts.",
+  "source_organism": "Synthetic human-pheromone analogs (no natural organism source; designed from human biochemical research)",
+  "manufacturer": "Lacuna Genomics",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted (mandatory disclosure in professional and romantic contexts)",
+  "procedure": "Apocrine gland modification with pheromone production retroviral carrier, 2 sessions",
+  "expression_time": "3–5 weeks",
+  "reversibility": "Reversible with gland deactivation",
+  "side_effects": [
+    "Constant low-level pheromone production even when suppressed — impossible to fully turn off",
+    "Pets and animals react strongly to the user — attraction or aggression depending on species",
+    "Other pheromone users can detect each other — mutual manipulation creates uncomfortable social dynamics",
+    "Rare: pheromone production overwhelms suppression during emotional states, creating unwanted social effects"
+  ],
+  "social_perception": "Deeply controversial. Pheromone users are viewed with suspicion — every social interaction is questioned. 'Are they genuinely charming or is it the musk?' Disclosure requirements create awkward social situations. Some people refuse to interact with pheromone users at all.",
+  "story_hooks": [
+    "A pheromone user discovers that their compound has been subtly altered during a booster session — instead of trust, their pheromones now trigger unease and suspicion, destroying their career and relationships",
+    "A politician's pheromone modification is exposed during a campaign — their popularity evaporates overnight as supporters question whether their loyalty was chemically induced"
+  ],
+  "tags": [
+    "performance",
+    "geneware",
+    "war",
+    "trust",
+    "loyalty",
+    "love",
+    "ai",
+    "synthetic",
+    "corporate",
+    "market",
+    "night",
+    "tier 4"
+  ]
+}

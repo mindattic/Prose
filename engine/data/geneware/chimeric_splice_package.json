@@ -1,0 +1,49 @@
+{
+  "id": "019d6143a8a170989025bc2c46c6883d",
+  "name": "Chimeric Splice Package",
+  "brand_name": "Chimeric",
+  "product_name": "Chimeric Splice Package",
+  "type": "geneware",
+  "aliases": [
+    "Junkgene",
+    "Mixblood",
+    "Street Splice"
+  ],
+  "category": "radical body modification",
+  "target_system": "systemic (multi-species gene integration, uncontrolled)",
+  "description": "Not a specific product but a category: the accumulated result of multiple cheap, poorly sequenced gene modifications from black-market clinics layered on top of each other without compatibility testing. Chimeric splice users display a patchwork of partially expressed traits — a patch of scales here, a tuft of fur there, one eye with a tapetum and one without, a partial tail that never finished growing, teeth that can't decide if they're fangs or molars. The black-market gene clinics of the Shelf use bulk gene stock purchased from corponation waste streams, expired retroviral batches, and outright counterfeits. The results are unpredictable. Some chimeric individuals develop functional modifications; most develop a cosmetic chaos of half-expressed traits. A few develop dangerous incompatibilities — organs that fight each other, immune systems that attack their own modifications, or runaway gene expression that doesn't stop. Chimeric splice is the geneware of the desperate — people who can't afford Tier 2+ installations but want modification badly enough to accept the risk.",
+  "source_organism": "Multiple, uncontrolled, and often unidentified",
+  "manufacturer": "Black-market gene clinics (no consistent manufacturer)",
+  "tier_availability": "Tier 1 (this IS the Tier 1 option for complex modifications)",
+  "legality": "Unregulated (clinics operate outside regulatory framework)",
+  "procedure": "Varies wildly — retroviral injection, ingested gene capsules, dermal patches, or methods that no legitimate clinic would recognize",
+  "expression_time": "Unpredictable — days to months, sometimes ongoing for years",
+  "reversibility": "Theoretically reversible on a trait-by-trait basis; practically, the layered modifications are too entangled to separate cleanly",
+  "side_effects": [
+    "Unpredictable trait expression — modifications may manifest differently than intended",
+    "Immune system conflicts between incompatible gene packages",
+    "Chronic inflammation at sites of competing modifications",
+    "Psychological stress from uncontrolled body changes",
+    "Rare but terrifying: runaway gene expression causing continuous, uncontrolled morphological change"
+  ],
+  "social_perception": "The visible face of genetic inequality. Chimeric individuals are immediately recognizable and heavily stigmatized outside Tier 1 communities. Within the Shelf, chimeric modification is accepted as a fact of life — everyone knows someone who took the risk. Some chimeric individuals develop a unique aesthetic that becomes celebrated in Shelf culture.",
+  "story_hooks": [
+    "A chimeric individual's patchwork modifications spontaneously integrate into something coherent and functional — their body has solved the compatibility problem that legitimate genomics couldn't, and every corponation wants to know how",
+    "A black-market clinic's gene stock is traced to a deliberate corponation dump — they're feeding expired and experimental gene packages to the street to use Tier 1 populations as unpaid test subjects"
+  ],
+  "tags": [
+    "radical body modification",
+    "geneware",
+    "war",
+    "genetic",
+    "ai",
+    "elf",
+    "control",
+    "clinic",
+    "market",
+    "chase",
+    "desperate",
+    "shelf",
+    "tier 1"
+  ]
+}

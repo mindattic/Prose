@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a86c7c798dcfb482a414cf71",
+  "name": "Sterling-Nakamura Emergency Transponder ET-5",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Emergency Transponder ET-5",
+  "type": "equipment",
+  "aliases": [
+    "ET-5",
+    "Panic Button",
+    "SOS Beacon",
+    "Sterling Alarm"
+  ],
+  "category": "communications",
+  "description": "A concealed emergency beacon that, when activated, broadcasts an encrypted distress signal containing the user's identity, location, biometric status, and a 10-second audio recording to Sterling-Nakamura's security response network. The ET-5 is designed to be activated covertly — a specific gesture, a pressure pattern, or a neural interface command — without alerting nearby threats. The beacon transmits through multiple redundant channels including satellite, cellular, and mesh network, ensuring the signal gets out even in jammed environments. Sterling-Nakamura guarantees a response within 15 minutes in covered areas.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — personal security",
+  "base_technologies": [],
+  "specifications": {
+    "activation": "Gesture",
+    "info": "pressure pattern; or neural command; pendant; or subdermal implant",
+    "transmission": "Satellite + cellular + mesh network redundancy",
+    "data": "Identity + location + biometrics + 10-sec audio",
+    "encryption": "Quantum-key rolling",
+    "response time": "15 minutes guaranteed in coverage",
+    "weight": "0.02 kg",
+    "concealment": "Ring",
+    "battery": "2-year standby"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An ET-5 activated inside a sealed underground chamber where no signal should have escaped — the beacon's mesh network redundancy found a path through building wiring, and the response team arrived within 20 minutes.",
+    "An ET-5 signal was received from a user who was confirmed dead 6 hours prior — either the beacon malfunctioned, or someone is wearing a dead person's emergency transponder."
+  ],
+  "tags": [
+    "communications",
+    "equipment",
+    "identity",
+    "neural",
+    "ai",
+    "escape",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a6a471c99a02a4b5331c12ea",
+  "type": "character",
+  "name": "Ptolemy Achebe-Magnússon",
+  "aliases": [
+    "Tolly",
+    "The Architect of Nothing"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Underground filmmaker and VR experience designer",
+  "age": 44,
+  "status": "active",
+  "location": "The Loft, Lockhaven North — operates a pirate screening venue called the Sediment",
+  "description": "Ptolemy is a heavyset man in his mid-forties with dark brown skin, a close-cropped beard going silver at the jaw, and the slightly unfocused look of someone who is always composing shots in their peripheral vision. He has a prosthetic left eye — not an elegant chrome implant but a visually obvious thing, matte black with a ring of amber light around the iris, which he has never had cosmetically upgraded because he likes that it makes people aware they may be recorded. He wears the same rotating set of worn high-collared coats regardless of season. He carries a battered intake recorder everywhere and the habit of pulling it out in the middle of conversations has ended several relationships.\n\nHis films are long, structurally experimental, and deeply uncomfortable — documentary and fiction entangled in ways the viewer cannot always disentangle. He is most famous for a six-hour VR experience called 'Debt Architecture' that maps a single Meridian 88 family's financial obligations across four generations as a navigable spatial environment, placing the viewer inside the abstract structure of inherited poverty. It has been downloaded illegally over 400,000 times and banned by three corponations. He funds himself through occasional commercial VR work he takes under a pseudonym and despises himself for.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.5,
+      "shadow": 0.7,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That observation is just another form of extraction and his entire practice is predatory",
+      "That the films change nothing and the suffering he documents continues undisturbed"
+    ],
+    "core_desires": [
+      "To make something so undeniably true that it cannot be ignored or reframed",
+      "To be told, once, by someone whose life he filmed that it was worth it"
+    ],
+    "coping_mechanisms": [
+      "Framing everything as material — distance through the lens",
+      "Intellectual argument as a substitute for emotional processing"
+    ],
+    "blind_spots": [
+      "Treats the subjects of his films as having implicitly consented to his interpretation of them",
+      "Does not recognize his own hunger for recognition as the primary fuel for much of his political righteousness"
+    ],
+    "secret": "The family documented in 'Debt Architecture' — his most celebrated work — never gave full informed consent. His cousin helped arrange access under false pretenses. The family has since fragmented and one member, who recognized herself in the piece, has spent years trying to identify the filmmaker."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense theoretical vocabulary that he switches off entirely when charming strangers into being filmed; can sound like two different people",
+    "cadence": "Discursive and circling when theorizing; abrupt and direct when asking something he actually wants",
+    "verbal_tics": [
+      "'Can I ask you something?' as preamble to something he will ask regardless of the answer",
+      "Long humming pauses before sentences that turn out to be important"
+    ],
+    "example_lines": [
+      "'I don't tell stories. I excavate weight. There's a difference — stories have shapes. Weight just sits there.'",
+      "'I'll ask you one question and I'll never tell anyone who answered it. You can lie if you need to. I just need to hear the shape of the answer.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Somewhere in his archive is footage of an event that multiple powerful parties would pay or threaten to suppress — he does not know it yet but people who do are already looking for him",
+    "The family member from 'Debt Architecture' has finally tracked him down, and their first contact is either a lawsuit, a threat, or something more complex"
+  ],
+  "narrative_function": "Archive and witness — Ptolemy has been filming Meridian 88's civilian underbelly for twenty years and his raw footage is a trove of faces, places, and events; he can provide documentary evidence, historical context, or connections to anyone he has ever pointed a lens at",
+  "augmentations": "Prosthetic left eye (matte black, amber-ring, recording-capable); nicotine-metabolizer implant (occupational stress management)",
+  "daily_life": "Mornings spent reviewing footage and editing in a cramped Lockhaven North apartment, afternoons at the Sediment managing screenings or arguing with collaborators, evenings often spent in Pilsen Veil or Mexicantown Libre gathering material.",
+  "affiliation": "Independent; Sediment underground screening collective; occasional grey-market distribution through Depth Markers network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Filmmaker",
+      "VR Designer",
+      "Living Archive",
+      "Ethically Compromised",
+      "Intellectually Formidable"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always keep a copy of everything in at least three locations",
+      "Never agree to destroy footage — you can agree to not release it, but never agree to destroy it"
+    ],
+    "escalation_ladder": [
+      "Deflection through intellectual engagement",
+      "Transparent acknowledgment that he is deflecting, as a disarming tactic",
+      "Genuine retreat — he is not physically brave and knows it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Curious, warm, visibly interested in their specific life — this is genuine and also always partly professional",
+      "friends": "Demanding in the way only people with high standards can be; shows affection through blunt honesty"
+    },
+    "stress_responses": {
+      "low": "Throws himself into editing, emerges with new material",
+      "medium": "Becomes verbosely theoretical in conversation, a sign he is avoiding something specific",
+      "high": "Takes the recorder out and starts filming as a dissociative response to crisis"
+    },
+    "contradictions": [
+      "Believes deeply in the right to privacy while spending his career systematically breaching it"
+    ],
+    "habits": [
+      "Never eats during screenings",
+      "Introduces himself by his full name to everyone, always"
+    ],
+    "breaking_points": [
+      "Being told his work is exploitative by someone he respects",
+      "Footage being destroyed or seized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Lockhaven North to a Nigerian-Icelandic father and a Ghanaian-Mongolian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost left eye in a Ferrogate Transit station incident during a protest he was filming; chose a functional prosthetic over cosmetic replacement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "'Debt Architecture' released through grey-market distribution; immediate ban by Axiom, Sterling-Nakamura, and Zheng-Dao",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Founded the Sediment screening collective in Lockhaven North",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

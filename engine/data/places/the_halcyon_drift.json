@@ -1,0 +1,87 @@
+{
+  "id": "019d6143a94176079c8ad45fa7e4de54",
+  "type": "place",
+  "name": "The Halcyon Drift",
+  "aliases": [
+    "The Drift",
+    "Dead Marina",
+    "Floatside"
+  ],
+  "description": "A semi-permanent floating settlement anchored to the collapsed infrastructure of a pre-Meridian 88 marina complex roughly two kilometers off the former Evanston shoreline, the Halcyon Drift is a congregation of sealed barges, decommissioned Carrion Logistics shipping platforms, and residential pontoon clusters that have accreted over forty years into an irregular aquatic neighborhood. The original marina's concrete piers still break the waterline in places, serving as mooring anchors and structural references for the newer construction above. Lakewater visibility is low here due to industrial particulate drift from the Slagshore, giving the surrounding water a pewter opacity that locals find comforting and newcomers find unsettling.\n\nThe Drift occupies a regulatory gray zone — it sits outside the formal municipal boundary of the megacity corridor, beyond the jurisdiction of most corponation security contracts, but close enough to shore infrastructure to pull illegal power and Diaspora signal from the grid. This ambiguity has made it a preferred residence for people who need to exist at a deliberate distance from Spire oversight: journalists running sensitive investigations, synthetics with disputed personhood status, and a significant population of former Arcturus Defense Solutions contractors whose knowledge of classified systems makes them inconvenient to the corponation's current leadership. Vespid Dynamics maintains a drone monitoring perimeter but does not intervene.",
+  "atmosphere": {
+    "sights": [
+      "Barge rooftops stacked with wind-capture arrays, salvaged solar film, and hand-painted territorial markers in a dozen languages",
+      "The original marina's fractured concrete piers rising from pewter-colored water at low swell, strung with low-voltage guide lights in amber and green",
+      "Carrion Logistics container units repurposed as permanent residences, their corporate livery half-sanded and overlaid with murals, antenna clusters, and drying laundry"
+    ],
+    "sounds": [
+      "The deep elastic knock of pontoon platforms shifting against each other in lake swell, a constant low percussion",
+      "Outboard maintenance cycles from the small-craft operators who run the only reliable transit between the Drift and the shoreline",
+      "Diaspora audio bleed from the settlement's shared signal tap, audible as a fractured ambient texture near the central platform cluster"
+    ],
+    "smells": [
+      "Lake water carrying an industrial mineral undertone — not quite chemical, not quite natural, specific to the Slagshore drift zone",
+      "Cooking smells layered through enclosed walkways: fish protein, fermented grain staples, and the sweet-synthetic scent of printed food supplements",
+      "Machine lubricant and salt corrosion from the constant hull maintenance that keeps the Drift habitable"
+    ],
+    "feel": "Living on the Drift requires a continuous low-level physical negotiation with the water beneath — nothing is fully still, nothing is permanent, and residents develop an unconscious compensatory balance that marks them on land. The isolation from the megacity grid creates a social density inside the settlement that is simultaneously claustrophobic and fiercely communal. The Vespid drone perimeter visible at the edges of the swell horizon is a reminder that the Drift's autonomy is tolerated rather than guaranteed.",
+    "tags": []
+  },
+  "demographics": "Roughly 2,000 permanent residents with a rotating transient population of several hundred at any time; mix of Tier 2 displaced shoreline residents, off-registry synthetics, investigative journalists, whistleblowers, and former corponation technical staff in varying degrees of voluntary exile. Linguistically diverse, with Mandarin, Tagalog, English, and Hausa commonly spoken.",
+  "economy": "The Drift runs on a mixed economy of shoreline service work (residents commute by small craft), in-settlement craft production, Diaspora-based remote contract labor, and a significant information brokerage trade that leverages the settlement's population of people with corponation knowledge they can no longer use officially but haven't stopped selling.",
+  "power_structure": "A rotating Harbor Committee of seven elected platform representatives manages shared infrastructure, transit scheduling, and external negotiation. Real influence is held informally by the oldest barge-owners — called the Anchors — whose physical control over mooring points gives them structural leverage over the entire settlement's layout.",
+  "dangers": [
+    "Structural integrity of older barge platforms is deteriorating faster than the Harbor Committee's maintenance budget can address; hull failures during winter storm surges are a recurring emergency",
+    "Arcturus Defense Solutions has twice attempted to extract former contractors from the Drift by force; both operations were repelled, but the third attempt is widely considered a matter of when, not if",
+    "ELF entities have been detected using the Drift's illegal Diaspora signal tap as a relay node, occasionally corrupting BCI feeds for residents within range of their transmission bursts"
+  ],
+  "opportunities": [
+    "The Drift's population of former corponation technical staff represents an extraordinary concentration of off-books institutional knowledge — the right introduction to the right Anchor could yield intelligence on Arcturus, Helix, or Vespid that no legitimate channel would provide",
+    "The Harbor Committee is quietly seeking a legal advocate to file a formal jurisdictional claim that would give the Drift recognized municipal status — a case that would set precedent for synthetic personhood recognition as a secondary effect",
+    "The ELF relay node in the signal tap has been transmitting structured data packets that one Drift resident — a former Zheng-Dao Bioelectric network architect — believes contains coordinates for a submerged pre-Meridian 88 data cache in the lake bed"
+  ],
+  "story_hooks": [
+    "A Sterling-Nakamura investigative journalist living on the Drift under a protected identity sends a Diaspora-encrypted message to the players: she has documented evidence of a Palladian Group operation that would make the Ferrous Nave acquisition look minor, but her BCI has been compromised and she has forty-eight hours before whoever is hunting her traces the signal tap back to her barge. She needs extraction, evidence duplication, or both.",
+    "One of the Drift's Anchors — an elderly synthetic woman named Constance-7 who has lived on the settlement for twenty years — has vanished without logging a departure through the Harbor Committee transit manifest. Her barge shows signs of a rapid departure rather than a struggle, but three residents report seeing Vespid drone activity directly over her platform the night before she disappeared, which the Committee's monitoring logs don't reflect."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Steel Shore",
+      "The Sullen Reach",
+      "Walker's Landing"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Former corponation technical contractors living in deliberate semi-exile, trading institutional knowledge for off-grid security",
+    "Small-craft transit operators running irregular shoreline routes who use the Drift as a mid-lake waypoint and information exchange",
+    "Off-registry synthetic persons seeking the Drift's jurisdictional ambiguity as a buffer against Ferrogate and Palladian Group personhood enforcement operations",
+    "Diaspora journalists and data brokers who need access to sources that cannot safely enter the megacity corridor"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.06,
+    "lng": -87.59,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "identity",
+    "bci",
+    "ai",
+    "synthetic",
+    "elf",
+    "contract",
+    "control",
+    "power",
+    "harbor",
+    "bar",
+    "night",
+    "storm",
+    "drone",
+    "water",
+    "lake",
+    "spire"
+  ]
+}

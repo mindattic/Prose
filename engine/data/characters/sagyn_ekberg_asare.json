@@ -1,0 +1,275 @@
+{
+  "id": "019d6143a6c178e8b83c43edc743d932",
+  "type": "character",
+  "name": "Sagyn Ekberg-Asare",
+  "aliases": [
+    "Iridium",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
+  "age": 45,
+  "status": "active",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "description": "Sagyn Ekberg-Asare is slight and easy to overlook, which is exactly the point. At 45, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented counterintelligence specialist in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.77,
+      "ideal": 0.68,
+      "id": 0.56,
+      "shadow": 0.99,
+      "mask": 0.51,
+      "ghost": 0.64
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Losing control of their own body to a hacker or malfunctioning cyberware"
+    ],
+    "core_desires": [
+      "A crew worth trusting — people who stay when the shooting starts",
+      "To find the person who burned them and make it educational",
+      "To build something that outlasts the next contract cycle"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+    ],
+    "blind_spots": [
+      "Cannot accept help without interpreting it as leverage",
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+      "Assumes their skill set is more transferable than it actually is"
+    ],
+    "secret": "Sagyn Ekberg-Asare maintains a second identity — a completely clean civilian persona with a lease, a job history, and a social profile. It's their exit strategy."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Uses technical jargon for everything, including emotions"
+    ],
+    "example_lines": [
+      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
+      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
+      "\"I find the leak. What happens to the leak after that isn't my department.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Sagyn Ekberg-Asare is offered a contract that would clear all their debts — the target is someone they respect",
+    "The fixer who handles Sagyn Ekberg-Asare's contracts goes silent — dead, disappeared, or turned",
+    "A high-paying contract turns out to target someone Sagyn Ekberg-Asare owes a personal debt to"
+  ],
+  "narrative_function": "As a counterintelligence specialist, Sagyn Ekberg-Asare embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes. Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 7
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 6
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.94,
+      "caution": 0.89,
+      "loyalty": 0.27,
+      "greed": 0.5,
+      "empathy": 0.85
+    },
+    "drives": [
+      "freedom",
+      "power",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 3,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "expert marksman",
+      "encyclopedic knowledge of Meridian 88 infrastructure"
+    ],
+    "weaknesses": [
+      "emotional volatility under extreme stress",
+      "old injury that flares under specific conditions",
+      "risk-averse to the point of missed opportunities"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "counterintelligence specialist",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always verifies target identity independently before lethal contracts",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
+    ],
+    "habits": [
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    },
+    {
+      "name": "Cyberears with directional microphones and sound dampening",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Analyst": 0.9,
+    "Pattern Reader": 0.9,
+    "Sentinel": 0.9,
+    "Crowd Reader": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

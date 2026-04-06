@@ -1,0 +1,88 @@
+{
+  "id": "019d6143a94e7e09ae0ffd9b95cb2e73",
+  "type": "place",
+  "name": "The Sluiceway",
+  "aliases": [
+    "Hegewisch",
+    "The Edge",
+    "Border Country",
+    "Last Stop"
+  ],
+  "description": "The Sluiceway is where Meridian 88 ends and something else begins. Pressed against the far southeastern boundary of the megacity, bordered by contaminated wetlands to the east and the Indiana Exclusion Zone to the south, this district has the character of a frontier town that happens to be inside a metropolis of 40 million people. The isolation is physical -- one transit line connects the Sluiceway to the rest of Meridian, a rattling surface tram that runs every forty minutes when it runs at all -- and psychological. People here live with their backs to the city, facing outward toward the marshes and the state line, and that orientation shapes everything about the place.\n\nOld Hegewisch was a small-town industrial pocket, and the Sluiceway still feels that way. The streets are quieter than anywhere else in Meridian. The buildings are lower, rarely above four stories. The wetlands that border the district have been transformed by decades of industrial runoff into something between an ecosystem and a chemical experiment -- bioluminescent in patches, toxic in others, home to mutated wildlife that the Meridian Department of Environmental Management officially classifies as 'emergent fauna' and unofficially avoids. Locals call the wetlands the Glow Marsh, and they've learned which paths are safe and which will dissolve your boots. That knowledge is currency here.\n\nThe Indiana border makes the Sluiceway strategically valuable in ways its residents would prefer it wasn't. The Exclusion Zone -- Indiana's corporate sovereignty framework is different from Illinois's, creating a jurisdictional gap that smugglers, data runners, and anyone fleeing Meridian warrants have exploited for decades. The Sluiceway is the last stop before the crossing, and every third building has a back room where someone is preparing for the trip or recovering from it. Border running is the district's unofficial second economy, after the legitimate wetland harvesting operations that strip useful compounds from the contaminated marsh. The Sluiceway doesn't advertise either industry. It just watches the marsh, minds its business, and keeps one eye on the tram schedule.",
+  "atmosphere": {
+    "sights": [
+      "Low industrial buildings giving way to contaminated wetlands at the district's edge",
+      "The Glow Marsh -- patches of bioluminescent runoff creating an eerie green-blue twilight",
+      "The Indiana border fence, half-collapsed and overgrown, more symbolic than functional",
+      "Wetland harvester rigs moving through the marsh on stilted platforms, scraping compounds",
+      "A single tram line stretching back toward the city like an umbilical cord"
+    ],
+    "sounds": [
+      "Marsh sounds -- frogs, insects, and things that might be either, amplified by the chemical ecosystem",
+      "The tram arriving and departing -- the rhythmic heartbeat of the district's connection to everything else",
+      "Wind through the wetland reeds, carrying chemical harmonics that locals swear they can read",
+      "The distant hum of Indiana's industrial zone across the border -- a different frequency than Meridian's"
+    ],
+    "smells": [
+      "Wetland chemistry -- sulfur, ozone, and something sweet that doesn't have a name yet",
+      "Marsh harvester processing -- concentrated botanical extract, astringent and sharp",
+      "Clean air, relatively speaking -- the wind off the marshes pushes the city's pollution back"
+    ],
+    "feel": "Liminal. The Sluiceway feels like standing in a doorway -- not fully inside, not fully outside, belonging to neither side completely. There's a calm here that's unsettling to city people, the quiet of a place that has made peace with being forgotten. It's the kind of neighborhood where people nod instead of talk and know better than to ask where you're headed.",
+    "tags": []
+  },
+  "demographics": "Small population of approximately 12,000, making it one of Meridian's least dense districts. Legacy Eastern European families from old Hegewisch mix with border-running transients, wetland harvesting crews, and people who came to the edge of the city and decided the edge was far enough.",
+  "economy": "Wetland compound harvesting -- extracting useful chemicals and biologicals from the contaminated marsh. Border facilitation services, ranging from legitimate cross-jurisdiction logistics to smuggling. The tram station has a small commercial strip serving transit passengers.",
+  "power_structure": "No single authority dominates. The wetland harvesting co-ops have the most organized economic presence. Border running operations are fragmented and competitive. Meridian governance is nominal -- the district is too remote and too small to warrant dedicated enforcement.",
+  "dangers": [
+    "The Glow Marsh -- toxic in unpredictable patches, with contamination levels that shift with weather and water table",
+    "Emergent fauna -- mutated wildlife that ranges from nuisance to genuinely dangerous",
+    "Border crossing gone wrong -- the Indiana Exclusion Zone has its own enforcement, and they shoot",
+    "Isolation -- medical emergencies here wait for the tram, and the tram waits for nothing",
+    "Smuggling operations that don't welcome witnesses"
+  ],
+  "opportunities": [
+    "Border crossing expertise -- knowing the safe routes across the Indiana line is valuable and rare",
+    "Wetland compounds include bioactive materials with black market pharmaceutical value",
+    "The jurisdictional gap makes the Sluiceway ideal for meetings that can't happen inside Meridian proper",
+    "The Glow Marsh is unexplored territory -- what's in there could be worth finding"
+  ],
+  "story_hooks": [
+    "Something in the Glow Marsh is emitting a regular signal -- not biological, not any known Meridian tech, and it started three weeks ago",
+    "A border runner who crossed into Indiana six months ago just came back carrying data that three different corponations are bidding to suppress",
+    "The wetland harvesters have found a new compound in the marsh that appears to be a neural interface accelerant -- untested, unregulated, and potentially revolutionary"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Riverbottom",
+      "West Pulldown",
+      "The Gulch"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Wetland harvesters working the Glow Marsh on rotating shifts",
+    "Border runners and their clients, passing through on the way to Indiana",
+    "Biologists and amateur naturalists studying emergent fauna",
+    "People who need to be at the edge of something",
+    "Tram commuters passing through without stopping -- most of Meridian only sees the Sluiceway through a window"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.677,
+    "lng": -87.615,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "smuggle",
+    "neural",
+    "ai",
+    "corporate",
+    "medical",
+    "market",
+    "water"
+  ]
+}

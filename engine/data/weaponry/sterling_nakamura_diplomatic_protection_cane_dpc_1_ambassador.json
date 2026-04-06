@@ -1,0 +1,39 @@
+{
+  "id": "019d6143ab427378959600be0ef65bb5",
+  "name": "Sterling-Nakamura Diplomatic Protection Cane DPC-1 'Ambassador'",
+  "type": "weapon",
+  "aliases": [
+    "Ambassador",
+    "DPC-1",
+    "Sword Cane",
+    "The Walking Stick"
+  ],
+  "category": "melee",
+  "description": "An elegant walking cane concealing three weapon systems: a 50cm monocrystalline steel blade hidden within the shaft, a single-shot 10mm derringer built into the handle, and a contact taser in the ferrule capable of delivering a 100,000V discharge. Sterling-Nakamura issues the DPC-1 to senior diplomatic staff as a personal defense weapon that maintains the appearance of civilian propriety while providing lethal capability. The cane is constructed from carbon fiber with brass fittings and weighs slightly more than a standard walking cane — not enough to draw suspicion. The blade deploys with a twist-pull of the handle, the derringer fires with a concealed trigger in the grip, and the taser activates by pressing the ferrule firmly against a target.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 4+",
+  "legality": "Issued — Sterling-Nakamura diplomatic staff",
+  "base_technologies": [
+    "Multi-weapon concealment integration",
+    "Monocrystalline blade fabrication",
+    "Miniaturized derringer engineering"
+  ],
+  "specifications": "blade: 50 cm monocrystalline steel, concealed in shaft\nderringer: Single-shot 10mm, handle-mounted, 5-meter range\ntaser: 100,000V contact discharge in ferrule\ncane length: 95 cm\ncane weight: 0.9 kg\nconstruction: Carbon fiber shaft, brass fittings\nblade deployment: Twist-pull handle, 0.5 seconds\nderringer reload: Breech-load single round",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A diplomat killed an assailant with a DPC-1 blade at a state function — the self-defense was legally justified, but the weapon's existence is now public knowledge and every diplomatic meeting has become a security concern.",
+    "Counterfeit DPC-1 canes are being manufactured with lower quality materials — the blades snap during use and the derringers misfire, turning a reliable weapon into a liability."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "melee",
+    "weapon",
+    "blade",
+    "ai",
+    "elf",
+    "fire",
+    "tier 4"
+  ]
+}

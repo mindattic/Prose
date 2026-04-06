@@ -1,0 +1,62 @@
+{
+  "id": "019d6143a7ba7b9f861c7597f7b0b6a4",
+  "name": "Arcturus Defense Solutions Trauma Suppression Kit Mk. II",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Trauma Suppression Kit Mk. II",
+  "type": "cyberware",
+  "aliases": [
+    "TSK",
+    "Suppressor Kit",
+    "Arcturus Black Kit",
+    "The Shutdown"
+  ],
+  "category": "medical",
+  "body_location": "",
+  "description": "The Trauma Suppression Kit Mk. II is a compact, militarized field medical package designed by Arcturus Defense Solutions for one specific operational requirement: keeping a critically injured combatant functional long enough to complete an objective, regardless of the physiological cost. The kit contains three components — a bronchial dilation autoinjector, a cortisol-analog combat stimulant cartridge, and a neuro-block applicator strip — that are used in sequence to override the body's trauma response and suppress pain, shock, and fatigue signals at the neurological level. The result is an operator who can continue fighting through injuries that would otherwise cause immediate incapacitation, with all natural protective pain responses chemically disabled.\n\nThe Mk. II iteration introduced Arcturus's Cascade Management Protocol, a firmware-controlled dosing regulator embedded in the injector handles that monitors delivery intervals and prevents the most immediately life-threatening overdose scenarios from the stimulant cartridge. It does not, however, prevent the fundamental danger of the kit's use philosophy: the body is not healed, merely silenced. Injuries suppressed by the TSK continue to worsen during use, and the biochemical crash that follows kit depletion — when all three compounds wear off simultaneously — is severe enough to cause secondary cardiac events in a significant percentage of users. Arcturus's own field documentation acknowledges a 'post-suppression mortality window' of two to six hours post-use during which the patient requires immediate medical intervention.\n\nThe Trauma Suppression Kit is classified as military-grade medical equipment and is officially available only to licensed armed forces and contracted security entities. In practice, it circulates widely through Arcturus's own gray-channel distribution networks and is a known commodity on the black market. Its reputation in Meridian 88 is a specific kind of grim: the TSK is what you use when you need someone to keep moving more than you need them to survive. Field medics who carry it are sometimes called 'Arcturus Docs' — a title that carries admiration and unease in equal measure.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited (civilian); Licensed (military/contracted security)",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"components\":\"1x bronchial dilation autoinjector, 1x stimulant cartridge injector, 1x neuro-block applicator strip (30cm)\",\"total_weight\":\"185g complete kit\",\"packaging\":\"Matte black polymer case, magnetic seal, 9cm x 14cm x 3cm\",\"activation_sequence\":\"Bronchial injector first, stimulant second, neuro-block strip applied to spine base or neck\",\"onset_time\":\"Full suppression achieved in 90–120 seconds\",\"functional_window\":\"45–90 minutes of suppressed trauma response\",\"post_suppression_crash\":\"Severe; post-suppression mortality window 2–6 hours without intervention\",\"cascade_management\":\"Firmware prevents re-dose within 4 hours; single-use components\",\"contraindications\":\"Existing cardiac irregularity, Neural implant users without compatibility check, Prior TSK use within 72 hours\"}",
+  "side_effects": [],
+  "cultural_context": "The Trauma Suppression Kit carries heavy moral weight in Meridian 88's military and mercenary communities. Veterans who have used one often describe it as a line crossed — a moment where the mission became more important than the person. Some wear the empty kit case as a memento; others refuse to discuss it. Corporate security divisions that issue TSKs to contractors rarely discuss liability for post-suppression casualties. In the black market, the kit is sold with a grim pragmatism: dealers don't suggest it will save you, only that it will let you finish what you started.",
+  "known_users": [
+    "Arcturus Defense Solutions contracted security units",
+    "Military special operations personnel",
+    "High-tier mercenary solo operators",
+    "Corporate black-site enforcement teams",
+    "Desperate runners on terminal operations",
+    "Commander Elise Farrow (Arcturus contracted unit leader, documented TSK protocol violations)",
+    "The Continuance (mercenary outfit known for TSK-heavy doctrine)"
+  ],
+  "story_hooks": [
+    "A player character finds an empty Trauma Suppression Kit at an ambush site — but no body. Someone took catastrophic damage, activated the kit, and walked away. They have a 2–6 hour window to find that person before the crash kills them.",
+    "Arcturus Defense Solutions is quietly buying back all Mk. II units through back-channel dealers — the Cascade Management Protocol firmware has a documented flaw that causes the stimulant cartridge to deliver a fatal overdose under a specific physiological condition. They'd rather the kits disappear than face a liability ruling.",
+    "A gang enforcer has been using TSKs as a coercion tool, forcing members to self-administer before high-risk jobs as insurance against retreat. A faction within the gang wants it stopped and is looking for outside help — but the enforcer has Arcturus connections that make direct confrontation very dangerous."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "medical",
+    "cyberware",
+    "combat",
+    "war",
+    "gang",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "pain",
+    "market",
+    "rain",
+    "moral",
+    "train",
+    "desperate",
+    "stimulant",
+    "tier 3"
+  ]
+}

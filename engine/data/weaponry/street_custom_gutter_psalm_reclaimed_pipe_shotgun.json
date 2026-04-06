@@ -1,0 +1,38 @@
+{
+  "id": "019d6143ab477a58b166765703526d12",
+  "name": "Street Custom 'Gutter Psalm' Reclaimed Pipe Shotgun",
+  "type": "weapon",
+  "aliases": [
+    "Gutter Psalm",
+    "Pipe Banger",
+    "Prayer Stick",
+    "Sewer Special"
+  ],
+  "category": "shotgun",
+  "description": "A single-shot break-action shotgun fabricated from reclaimed industrial pipe, a door hinge, and whatever firing mechanism the builder had on hand. The Gutter Psalm pattern has proliferated across Meridian 88's lower tiers through hand-copied fabrication sheets passed between squatter communities. Each one is unique but follows the same basic geometry — a length of Schedule 40 pipe, a crude breech block, and a striker fashioned from a nail or bolt. They are dangerously unreliable, occasionally lethal to the operator, and absolutely everywhere.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — unregistered improvised firearm",
+  "base_technologies": [
+    "Improvised breech-loading design",
+    "Reclaimed materials fabrication"
+  ],
+  "specifications": "gauge: variable, accepts most 12-gauge shells with shimming\ncapacity: 1 round\neffective range: 2-8 meters\nweight: 1.5-3 kg depending on pipe stock\nfailure rate: estimated 1 in 40 firings results in breech rupture",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A community organizer in Tier 1 has been distributing improved Gutter Psalm schematics with better breech designs — someone wants to know who is arming the lower tiers.",
+    "A rash of breech rupture injuries at a free clinic all trace back to a single batch of defective pipe stock deliberately introduced into the supply chain."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "shotgun",
+    "gun",
+    "ai",
+    "clinic",
+    "fashion",
+    "fire",
+    "tier 1"
+  ]
+}

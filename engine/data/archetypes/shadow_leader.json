@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5917bc7913483d70fc1f587",
+  "name": "Shadow Leader",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Leads without anyone knowing they're being led",
+  "behavioral_signature": "Influences decisions through subtle manipulation",
+  "under_stress": "Becomes more subtle, more invisible",
+  "at_rest": "Observing, nudging, guiding invisibly",
+  "will_always": [
+    "lead without being seen"
+  ],
+  "will_never": [
+    "claim credit"
+  ],
+  "unless": [
+    "the group needs a visible leader to survive"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Puppet Master",
+      "threshold": 0.85,
+      "context": "hidden influence"
+    },
+    {
+      "archetype": "Quiet Authority",
+      "threshold": 0.7,
+      "context": "subtle leadership"
+    }
+  ],
+  "opposite_of": [
+    "Standard Bearer"
+  ],
+  "tags": [
+    "invisible",
+    "subtle"
+  ]
+}

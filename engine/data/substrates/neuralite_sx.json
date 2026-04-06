@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a9de741ab9637b26f9847951",
+  "name": "Neuralite-SX",
+  "brand_name": "Neuralite",
+  "product_name": "Neuralite-SX",
+  "type": "substrate",
+  "aliases": [
+    "signal alloy",
+    "SX-nerve",
+    "wiresmetal"
+  ],
+  "category": "bio_hybrid",
+  "description": "Neuralite-SX is an aluminum-magnesium alloy matrix in which living SNT-derived axonal fibers are grown in place during a slow-cure nano-assembly process, forming continuous signal-carrying pathways through the bulk material itself. The embedded neural threads can transmit both digital and bioelectric signals at near-nerve conduction speeds, eliminating the need for separate wiring harnesses in augment assemblies. Crucially, the axonal network interfaces directly with host nervous tissue at implant boundaries, enabling seamless sensory and motor feedback without additional neural bridges.",
+  "properties": [
+    "neural signal transmission",
+    "lightweight",
+    "moderate tensile strength",
+    "biocompatible at interface zones",
+    "SNT-dependent",
+    "EMI sensitive",
+    "low thermal resistance"
+  ],
+  "developers": [
+    "BioForge Labs",
+    "Apex Nanofabrication",
+    "Tessera Materials (structural matrix)"
+  ],
+  "applications": [
+    "augment limb structural framing with integrated nerve pathways",
+    "neural interface housings",
+    "sensory feedback panels in prosthetics",
+    "SNT-bridged exoskeleton control systems"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ18,000 per kg; custom neural-mapped variants Φ40,000–Φ90,000 per implant assembly",
+  "story_hooks": [
+    "A black-market surgeon is offering Neuralite-SX implants at a fraction of market cost — the SNT axonal cultures are sourced from harvested tissue of unknown donors, and recipients are beginning to experience intrusive sensory echoes that feel like someone else's memories.",
+    "A corporate spy has Neuralite-SX structural components in their augmented arm — intelligence analysts realize the alloy's neural network has been secretly logging proprietary bioelectric signal patterns and transmitting them to a remote receiver.",
+    "After a catastrophic EMP event, a district full of Neuralite-SX augment users experiences simultaneous neural disruption — some recover, but others are left with permanent signal artifacts, phantom limb sensations in working limbs, and involuntary motor firing."
+  ],
+  "tags": [
+    "biohybrid",
+    "substrate",
+    "secret",
+    "augment",
+    "prosthetic",
+    "neural",
+    "elf",
+    "corporate",
+    "control",
+    "market",
+    "tier 4",
+    "tier 5"
+  ]
+}

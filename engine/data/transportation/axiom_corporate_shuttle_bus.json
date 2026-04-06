@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa60787f9e2a0e40acf4dbba",
+  "name": "Axiom Corporate Shuttle Bus",
+  "type": "transportation",
+  "aliases": [
+    "Corp Bus",
+    "The Cocoon",
+    "Axiom Express"
+  ],
+  "category": "public_transit",
+  "manufacturer": "Axiom",
+  "description": "A climate-controlled, Wi-Fi equipped shuttle bus that transports Axiom employees between residential zones and corporate campus. Clean seats, working air conditioning, security at every stop. It is a Ferrogate Metro Bus from an alternate reality where someone gave a damn. Axiom runs its own transit system because it can and because it makes the point that working for Axiom has perks that the rest of the city doesn't enjoy. The Corporate Shuttle passes through Tier 1 districts without stopping, its tinted windows a barrier between two worlds.",
+  "propulsion": "Electric, autonomous drive",
+  "speed": "60 km/h",
+  "capacity": "50 passengers in comfort",
+  "range": "300 km",
+  "tier_availability": "Axiom employees only (Tier 3-5)",
+  "cost": "Free to employees (it's a perk, not a service)",
+  "autonomy": "Fully autonomous, Axiom dispatch",
+  "armament": "Exterior deterrent systems, interior monitoring, anti-boarding measures.",
+  "common_usage": "Employee commuting, corporate campus transit, demonstrating corporate superiority.",
+  "story_hooks": [
+    "An Axiom Corporate Shuttle breaks down in a Tier 1 district and the employees inside discover that the anti-boarding measures work both ways — they can't get out",
+    "A non-employee boards a Corporate Shuttle by spoofing credentials and rides it into the heart of Axiom's campus"
+  ],
+  "tags": [
+    "publictransit",
+    "transportation",
+    "ai",
+    "corporate",
+    "control",
+    "bar",
+    "tier 3",
+    "tier 5"
+  ]
+}

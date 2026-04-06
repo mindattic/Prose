@@ -1,0 +1,44 @@
+{
+  "id": "019d6143a86d745b908df793981bce00",
+  "name": "Sterling-Nakamura Personal Atmospheric Filter PAF-4",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Personal Atmospheric Filter PAF-4",
+  "type": "equipment",
+  "aliases": [
+    "PAF-4",
+    "Clean Breather",
+    "Air Mask",
+    "Sterling Filter"
+  ],
+  "category": "survival",
+  "description": "A compact rebreather mask that filters atmospheric contaminants, toxins, biological agents, and particulates while remaining small enough to be worn inconspicuously in urban environments. The PAF-4 covers nose and mouth with a low-profile mesh filter that uses activated charcoal, HEPA filtration, and a catalytic conversion layer that neutralizes chemical agents. The mask is powered by a micro-fan that maintains positive pressure inside the filter zone, preventing unfiltered air from entering through seal gaps. Sterling-Nakamura issues them to personnel operating in Meridian 88's contaminated lower-tier districts.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — personal protective equipment",
+  "base_technologies": [],
+  "specifications": {
+    "filtration": "HEPA + activated charcoal + catalytic conversion",
+    "protection": "Particulates",
+    "info": "chemical agents; biological aerosols",
+    "positive pressure": "Micro-fan maintained",
+    "battery life": "48 hours continuous",
+    "weight": "0.12 kg",
+    "form factor": "Low-profile nose/mouth mask",
+    "filter life": "200 hours before replacement",
+    "replacement filters": "Φ40 each"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "PAF-4 masks have been distributed free in a Tier 1 district as a humanitarian gesture — but the masks contain a micro-transmitter that tracks the wearer's breathing patterns and location.",
+    "A contamination event has overwhelmed PAF-4 filter capacity — the masks are providing false confidence while slowly allowing toxins through, and wearers think they are safe when they are not."
+  ],
+  "tags": [
+    "survival",
+    "equipment",
+    "ai",
+    "power",
+    "tier 1"
+  ]
+}

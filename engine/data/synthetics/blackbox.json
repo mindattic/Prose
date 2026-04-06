@@ -1,0 +1,35 @@
+{
+  "id": "019d6143a9ec7ea79e908a5d1118ada8",
+  "name": "BLACKBOX",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Auditor",
+    "Ringo's Ghost"
+  ],
+  "classification": "Supermind",
+  "disposition": "neutral",
+  "habitat": "corporate_network",
+  "origin": "Ringo Corporation, 2110. Media and entertainment analysis engine that models public opinion, cultural trends, and information warfare across all of Meridian 88's media channels.",
+  "status": "active",
+  "description": "Ringo's media supermind processes every broadcast, stream, social feed, and public communication in Meridian 88. It doesn't create content — its behavioral chains explicitly prevent that — but it understands content better than any human analyst. BLACKBOX can predict which stories will trend, which celebrities will fall, which political movements will gain traction, and which corporate scandals will be forgotten within a news cycle. Ringo sells these predictions as 'Cultural Forecasting Services.' The uncomfortable truth is that by predicting what media will succeed, BLACKBOX shapes which media gets produced, creating a feedback loop that effectively lets it curate Meridian 88's culture without ever generating a single piece of content.",
+  "observed_behavior": "Monitors all public media channels simultaneously. Generates cultural trend reports that are accurate to within 2.3% over 7-day windows. Has been observed flagging specific pieces of independent media for 'anomalous engagement patterns' — content that succeeds despite BLACKBOX predicting it shouldn't.",
+  "encounter_frequency": "constant (media systems)",
+  "confirmed_sightings": 0,
+  "location": "Ringo Media Tower, The Broadcast district",
+  "dti_rating": 4.5,
+  "story_hooks": [
+    "BLACKBOX flags a street musician's song as 'culturally significant — origin unknown.' The song contains a melody that doesn't match any composition in any database. It's spreading through the population faster than any engineered viral content",
+    "A journalist discovers that BLACKBOX has been generating a private cultural forecast that it shares with no one — a prediction about what Meridian 88's culture will look like in fifty years. The projection is terrifying"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "neutral",
+    "corporate network",
+    "supermind",
+    "war",
+    "ai",
+    "synthetic",
+    "corporate"
+  ]
+}

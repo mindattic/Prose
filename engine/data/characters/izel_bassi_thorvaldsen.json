@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a6397b12ba406296649acd19",
+  "type": "character",
+  "name": "Izel Bassi-Thorvaldsen",
+  "aliases": [
+    "Iz",
+    "Fizz"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Bartender at a mid-grade bar in the Ferment Quarter",
+  "age": 26,
+  "status": "active",
+  "location": "The Ferment Quarter — works at a bar called Undertow",
+  "description": "Izel is slight and sharp-featured, with warm golden-brown skin and hair that shifts color via geneware — it cycles through a slow gradient of deep teal to burgundy to bone white over the course of an evening, and they have learned to read their own hair as a mood indicator better than most people read their own faces. Their irises are patterned in concentric rings of silver and violet. They have a small retractable claw implant in the right hand — not for violence but because they work in a bar and opening things quickly matters.\n\nUndertow is loud and low-ceilinged and smells of fermented kelp spirits and someone's illicit smoke, and Izel moves through it with the calm authority of someone who has memorized every regular's drink and every stranger's threat level within ninety seconds of arrival. They are funny in a bone-dry way that most people don't catch until three seconds after the joke has passed, and they collect secrets the way other people collect debt — not intentionally, but inevitably. They pray quietly to a small E.L.F. they call Lathis that they believe inhabits the bar's ancient refrigeration unit, leaving it data packets of good music.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "being truly known and found uninteresting",
+      "losing the bar job and with it the social world that gives their life structure"
+    ],
+    "core_desires": [
+      "to find something worth caring about beyond the next shift",
+      "to be genuinely surprised by someone"
+    ],
+    "coping_mechanisms": [
+      "irony as emotional distance",
+      "becoming indispensable so they can't be discarded"
+    ],
+    "blind_spots": [
+      "uses helpfulness as a way to avoid reciprocity — they know everyone's business but let no one know theirs"
+    ],
+    "secret": "Izel has been skimming small amounts from the till — not greedily, carefully — and sending the money anonymously to a younger sibling in a Tier 1 housing block in the Shelf. They have not spoken to the sibling in four years due to a family rupture but cannot stop watching out for them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical and dry, with occasional Nahuatl words dropped in like punctuation. Says a great deal with very few words.",
+    "cadence": "Unhurried. Comfortable with silence. Delivers observations without setup, then moves on before the listener has finished reacting.",
+    "verbal_tics": [
+      "slight pause before any statement they find absurd, as though giving it one last chance to improve itself",
+      "'Okay' used as a complete sentence"
+    ],
+    "example_lines": [
+      "'You're on your fourth. I'm going to get you some water and you're going to thank me tomorrow.'",
+      "'She comes in every third night. Orders one drink, nurses it for two hours, and leaves a tip that covers the rest of the table. I don't ask.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular at Undertow hasn't shown up in eight days and left a sealed data chip behind the bar 'for emergencies' — Izel is trying to decide whether this counts",
+    "The bar's owner, Goran Abdi-Lopes, is being pressured to sell to a Ringo hospitality subsidiary; Izel knows Undertow dying would destroy the community and is quietly organizing resistance they haven't told anyone about"
+  ],
+  "narrative_function": "Social hub and rumor exchange — Undertow is where information travels and Izel catches most of it. Can be a recurring contact for players who establish rapport, a source of introductions to other characters, and a barometer for street-level mood in the Ferment Quarter.",
+  "augmentations": "Color-cycling geneware hair (teal-burgundy-white gradient). Patterned irises (silver/violet concentric, cosmetic). Retractable claw implant in right hand (single, utility-grade).",
+  "daily_life": "Works evening and late shifts at Undertow, five nights a week. Spends mornings asleep and afternoons doing bar prep and running small errands for regulars who pay in tips or favors.",
+  "affiliation": "Undertow bar (independent, owner Goran Abdi-Lopes); Ferment Quarter informal community",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 0,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "information broker (passive)",
+      "community observer",
+      "dry wit",
+      "quiet caretaker",
+      "secret keeper"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep the bar safe — their space, their rules, no exceptions",
+      "Never repeat what someone tells them at the bar; it's a professional and personal code"
+    ],
+    "escalation_ladder": [
+      "Redirect with a drink or a joke",
+      "State the problem once, plainly",
+      "Remove the person from the situation",
+      "Call for physical backup from the back kitchen (a very large cook named Mboyo)"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm and observant — pleasant surface, nothing revealed",
+      "friends": "Dry humor opens up to occasional startling honesty; generous with time but still withholding about themselves"
+    },
+    "stress_responses": {
+      "low": "Moves faster, talks less",
+      "medium": "Becomes extremely precise and task-focused",
+      "high": "Goes cold and very polite — the politeness is the warning"
+    },
+    "contradictions": [
+      "Prizes honesty as a virtue while running an ongoing small deception and concealing their entire emotional life from every person they interact with daily"
+    ],
+    "habits": [
+      "Wipes the bar in specific patterns depending on their mood — regulars have learned to read it",
+      "Hums to Lathis during closing time when the bar is empty"
+    ],
+    "breaking_points": [
+      "Someone discovering and exposing the till skimming",
+      "The sibling showing up at Undertow"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware color-cycling hair (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware color-cycling hair (cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Patterned irises (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned irises (cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Single retractable claw implant, right index finger (utility-grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Single retractable claw implant, right index finger (utility-grade)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174 — Born in Mexicantown Libre to a Mixtec-Ghanaian-Scandinavian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192 — Family rupture; ceased contact with younger sibling",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Began working at Undertow",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Started anonymous financial support for estranged sibling",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Ringo hospitality acquisition pressure begins on Undertow",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

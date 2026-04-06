@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a57172479819e1bbd28794e7",
+  "name": "Generous Fool",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Gives freely even when they can't afford to",
+  "behavioral_signature": "Shares their last meal without hesitation",
+  "under_stress": "Gives faster, less wisely",
+  "at_rest": "Happy when giving, empty pockets, full heart",
+  "will_always": [
+    "share what they have"
+  ],
+  "will_never": [
+    "keep the best for themselves"
+  ],
+  "unless": [
+    "their generosity feeds someone who will kill them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Provider",
+      "threshold": 0.7,
+      "context": "giving"
+    },
+    {
+      "archetype": "Bleeding Heart",
+      "threshold": 0.7,
+      "context": "compassion"
+    }
+  ],
+  "opposite_of": [
+    "Miser",
+    "Hoarder"
+  ],
+  "tags": [
+    "generous",
+    "naive"
+  ]
+}

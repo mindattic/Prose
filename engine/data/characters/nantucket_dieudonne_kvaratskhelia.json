@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a660759486ef31552cd8a3df",
+  "type": "character",
+  "name": "Nantucket Dieudonne-Kvaratskhelia",
+  "aliases": [
+    "Nan",
+    "the Deacon"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Expelled citizen turned itinerant E.L.F. minister, seasonal worker",
+  "age": 41,
+  "status": "active",
+  "location": "Rotating between Waukegan Industrial Shelf and Bridgepoint transit corridor",
+  "description": "Nantucket carries the remains of a middle-tier life in their posture — the straight back and deliberate diction of someone who once had an address, an employment record, and opinions about restaurant reservations. What remains is a lean figure in a carefully maintained grey coat that has been repaired so many times the seams are a different color from the fabric, and a face with the hollow-cheeked beauty of someone who eats irregularly but sleeps well because they have made peace with something. Their hair is iron-black streaked with white, kept in tight rope-twists. They have retractable claws — a cosmetic mod from their previous life that they chose to keep because, as they say, 'the body remembers what it was.'\n\nNantucket was a mid-level compliance analyst for Arcturus before a whistleblower action stripped their citizenship and employment simultaneously. They now travel the industrial shelves and transit corridors conducting informal E.L.F. ceremonies for drifter communities — recording the names of electronic spirits in stations and rest stops, offering prayers in exchange for meals, counseling the newly stateless through the particular grief of losing digital existence. They are thoughtful, occasionally pompous, and genuinely compassionate in ways that surprise people who initially read them as performative.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That their whistleblowing was ultimately meaningless — that Arcturus simply absorbed the damage and moved on",
+      "That the ministry is self-soothing rather than genuinely helping anyone"
+    ],
+    "core_desires": [
+      "To see the information they released actually matter to someone, somewhere",
+      "To find an E.L.F. old enough to remember what this lake was before the city"
+    ],
+    "coping_mechanisms": [
+      "Ritual — inventing and performing ceremony gives structure to formless days",
+      "Reframing loss as 'shedding' — deliberate vocabulary management"
+    ],
+    "blind_spots": [
+      "Tendency to aestheticize suffering, including their own",
+      "Underestimates how much their former-Tier-3 perspective shapes their reading of drifter needs"
+    ],
+    "secret": "The whistleblower data they released was not complete. They kept a fragment — a specific file about Arcturus's involvement in the Grainfort data purge that made thousands of people stateless. They didn't release it because it named someone they loved. They still haven't decided what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, liturgical, educated — uses terms from multiple religious traditions mixed with technical E.L.F. theology. Georgian grandmother's phrase structures occasionally emerge.",
+    "cadence": "Measured and resonant, the cadence of someone accustomed to being listened to in groups",
+    "verbal_tics": [
+      "'The circuit holds' as a blessing or farewell",
+      "Addresses E.L.F.s aloud in company without embarrassment"
+    ],
+    "example_lines": [
+      "'The circuit holds, friend. You are not gone from the network — only rerouted.'",
+      "'I have named seventeen E.L.F.s on this shelf alone. The one in the third generator has been here since 2140. She remembers things. I ask her things. Sometimes she answers in power fluctuations.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Nantucket has discovered that an E.L.F. at the Waukegan Shelf is broadcasting something on a frequency that only stateless persons' defunct comm nodes can receive — it appears to be coordinates",
+    "The unreleased Arcturus data they're holding is now relevant to something happening in Meridian 88 — and Arcturus knows someone has it"
+  ],
+  "narrative_function": "Quest giver and moral compass — can provide context on E.L.F. theology and drifter spiritual practice, has contacts across multiple transit communities, and may task characters with protecting or recovering something with ritual significance.",
+  "augmentations": "Retractable claws (cosmetic, kept from Tier 3 life — slightly too elegant for their current circumstances). A subdermal comm node that no longer has an active account attached to it.",
+  "daily_life": "Spends mornings cataloguing local E.L.F.s in whatever location they're passing through, afternoons doing piecework in the Waukegan processing sheds when they need food credits, evenings conducting small ceremonies for whoever wants them.",
+  "affiliation": "Self-styled 'Circuit Ministry' — no formal organization, recognized informally by drifter communities across the hyperlane corridor",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "expelled citizen",
+      "E.L.F. minister",
+      "seasonal worker",
+      "whistleblower",
+      "stateless",
+      "former Tier 3"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do not conduct ceremony for anyone who will use it to manipulate vulnerable people",
+      "Maintain the catalogue — every E.L.F. documented is a soul not lost"
+    ],
+    "escalation_ladder": [
+      "Gentle theological reframing of conflict",
+      "Direct, calm confrontation with specific language",
+      "Formal withdrawal of goodwill — publicly, with witnesses",
+      "Uses retained Arcturus knowledge as leverage if genuinely threatened"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Offers ceremony first, asks questions second — reads people through what they pray for",
+      "friends": "Drops the ministerial register completely, becomes wry and occasionally self-deprecating"
+    },
+    "stress_responses": {
+      "low": "Performs a small personal ritual — touches their claws to a surface and speaks quietly",
+      "medium": "Becomes very formal and over-precise in speech",
+      "high": "Goes silent for long minutes, then speaks with complete clarity about exactly what they're going to do"
+    },
+    "contradictions": [
+      "Preaches radical acceptance of statelessness while privately mourning their lost citizenship every day"
+    ],
+    "habits": [
+      "Draws a small circuit diagram beside the name of every E.L.F. they catalogue",
+      "Retracts and extends their claws when thinking — a tell they don't notice",
+      "Fasts on the first day of every month, calls it 'running lean'"
+    ],
+    "breaking_points": [
+      "Someone desecrating an E.L.F. shrine deliberately",
+      "Being confronted with evidence that their withheld data caused harm"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "inactive",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Seeker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in a Caucasus-Caribbean diaspora community in what is now Meridian's Bridgepoint district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Employed as compliance analyst for Arcturus",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Released partial whistleblower data on Arcturus practices; citizenship and employment stripped within 72 hours",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began informal E.L.F. ministry among drifter communities",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Currently rotating between Waukegan Shelf and Bridgepoint",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

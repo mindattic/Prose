@@ -1,0 +1,37 @@
+{
+  "id": "019d6143ab517bc384fb9326bbb04347",
+  "name": "Tessera Industries Metamaterial Cloak Rounds MCR-1 'Vanishing Act'",
+  "type": "weapon",
+  "aliases": [
+    "Vanishing Act",
+    "MCR-1",
+    "Cloak Bullets",
+    "Ghost Shots"
+  ],
+  "category": "exotic",
+  "description": "Rifle ammunition coated with a metamaterial shell that renders the projectile effectively invisible in flight. The MCR-1 round is a standard 7.62mm projectile encased in a metamaterial jacket that bends visible light around the round as it travels, making it undetectable by optical tracking systems and the human eye. The round is still detectable by radar and thermal sensors, but in practical terms, targets cannot see the bullet coming and optical-based defense systems cannot track it. The metamaterial jacket ablates on impact, leaving a standard wound channel with no exotic trace evidence. Tessera developed it for sniper applications where muzzle flash and bullet trace are the primary indicators of shooter position.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Prohibited — stealth munition",
+  "base_technologies": [
+    "Metamaterial light-bending projectile jackets",
+    "In-flight optical stealth engineering",
+    "Impact-ablative coating technology"
+  ],
+  "specifications": "caliber: 7.62mm metamaterial-jacketed\noptical invisibility: Visible light bending jacket, effective in flight\nradar detectability: Standard — metamaterial does not affect radar signature\nthermal detectability: Standard — metamaterial does not affect thermal\neffective range: 100-800 meters\nmetamaterial ablation: Complete on impact\nweight per round: 12g\ncompatibility: Standard 7.62mm rifle platforms",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A target was killed by a 7.62mm round that no witness saw and no optical security system detected in flight — only the impact was recorded, making the shooter's position untraceable.",
+    "Tessera's metamaterial jacket technology has been reverse-engineered and someone is applying it to larger munitions — RPG warheads that cannot be seen until they hit."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "sniper",
+    "war",
+    "stealth",
+    "tier 5"
+  ]
+}

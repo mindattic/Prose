@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a55f71659c55e19e435c8268",
+  "name": "Beauty Seeker",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Finds and creates beauty in unlikely places",
+  "behavioral_signature": "Draws attention to what others overlook",
+  "under_stress": "Clings to beauty as the world darkens",
+  "at_rest": "Collecting moments, images, textures",
+  "will_always": [
+    "find beauty"
+  ],
+  "will_never": [
+    "accept ugliness without seeking beauty in it"
+  ],
+  "unless": [
+    "beauty becomes denial of reality"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Artist",
+      "threshold": 0.75,
+      "context": "aesthetic sense"
+    },
+    {
+      "archetype": "Curator",
+      "threshold": 0.7,
+      "context": "curation"
+    }
+  ],
+  "opposite_of": [
+    "Ugly Truth Teller"
+  ],
+  "tags": [
+    "aesthetic",
+    "hopeful"
+  ]
+}

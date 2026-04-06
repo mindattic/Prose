@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab497488b974ff715ca6ad4b",
+  "name": "Street Custom 'Molotov Standard' Incendiary Bottle",
+  "type": "weapon",
+  "aliases": [
+    "Molotov",
+    "Fire Bottle",
+    "Cocktail",
+    "Street Fire"
+  ],
+  "category": "improvised",
+  "description": "The oldest improvised weapon still in active use — a glass bottle filled with flammable liquid with a cloth wick. In 2200, the Molotov has evolved: Tier 1 chemists mix industrial solvents with gelling agents to create sticky napalm variants that burn hotter, longer, and cling to surfaces. The weapon remains effective against vehicles, barricades, and personnel because fire does not care about armor ratings or augmentation levels. It is the great equalizer of asymmetric conflict.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — improvised incendiary",
+  "base_technologies": [
+    "Basic combustion chemistry",
+    "Gelling agent formulation"
+  ],
+  "specifications": "fuel: Gelled industrial solvent mix\nburn temperature: 800-1200°C depending on formulation\nburn duration: 30-90 seconds\nsplash radius: 2-3 meters\nweight: 0.5-1 kg\ncost: Φ2-10 in materials\nconstruction time: 5 minutes",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A coordinated Molotov attack using a new adhesive gel formulation has set an entire corporate checkpoint ablaze — the gel cannot be extinguished with water and sticks to riot shields.",
+    "A chemist in Tier 1 has developed a Molotov formula that burns with a specific color based on chemical additives — gangs are using color-coded fire as territorial signals visible across districts."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "gang",
+    "augment",
+    "ai",
+    "corporate",
+    "bar",
+    "vehicle",
+    "armor",
+    "fire",
+    "water",
+    "tier 1"
+  ]
+}

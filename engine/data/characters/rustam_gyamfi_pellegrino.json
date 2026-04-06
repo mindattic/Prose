@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a6bb7dc9bcc33df4f2c45b8a",
+  "type": "character",
+  "name": "Rustam Gyamfi-Pellegrino",
+  "aliases": [
+    "Rust"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Bio-waste disposal technician, Aurochs Medical Complex",
+  "age": 27,
+  "status": "active",
+  "location": "Aurochs Medical Complex — sub-basement disposal corridors and external processing bays",
+  "description": "Rustam is wiry and quick-moving with the restless energy of someone who has decided that boredom is a personal failing. His skin is light brown with olive undertones, and he has patterned irises — a cosmetic mod he saved three months of UBC stipend for as a teenager, concentric rings of teal and amber — which are his most immediately striking feature in an otherwise unremarkable face. He wears his dark hair shaggy and keeps a small charm of braided copper wire on his left wrist, an offering token for the E.L.F. he calls the Rot, which he believes inhabits the incinerator system and keeps the more dangerous biological material from becoming something worse.\n\nRustam is cheerful in the way people sometimes are when they have accepted something that others cannot, which in his case is that he handles medical waste all day, knows exactly what hospitals produce, and has developed a deeply comprehensive understanding of what is discarded and what is valuable. He is not above sharing this information for the right consideration. He is not malicious — he's curious, social, and fundamentally unsqueamish in a way that took him years to recognize as an asset. He calls himself the last thing between Meridian 88 and a very bad outbreak, which is truer than anyone likes to admit.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Getting sick from something that slips through his filter and finding out only after it's too late",
+      "Being permanently stuck at the bottom of a system that will never look at him"
+    ],
+    "core_desires": [
+      "Enough money to get certified as an actual medical technician and move sideways into the system",
+      "Someone to genuinely listen to what he knows about how Aurochs actually works"
+    ],
+    "coping_mechanisms": [
+      "Humor as social lubricant",
+      "Devotion to the Rot E.L.F. as genuine spiritual grounding",
+      "Collecting small anomalies from his rounds as a kind of informal research"
+    ],
+    "blind_spots": [
+      "He doesn't fully appreciate how dangerous the information he casually trades actually is",
+      "He assumes people find him as charming as he finds himself"
+    ],
+    "secret": "Over the past eight months he has been quietly cataloguing anomalies in the biological waste stream — irregular tissue samples, disposal manifests that don't match what he collects, a pattern of materials from one specific wing of Aurochs being processed off-manifest entirely. He has not told anyone because he doesn't know if it's illegal, alarming, or both."
+  },
+  "speech_patterns": {
+    "vocabulary": "Cheerful, informal, comfortable with graphic medical terminology delivered completely without affect",
+    "cadence": "Fast-moving, tends to front-load interesting information before the social niceties",
+    "verbal_tics": [
+      "'Not to be gross, but—'",
+      "'The Rot's got opinions about this'",
+      "Laughing at his own observations before finishing them"
+    ],
+    "example_lines": [
+      "'Not to be gross, but based on what I pulled from Sub-3 last Tuesday, someone up there is doing a lot of something they're not filing paperwork for.'",
+      "'The Rot's been restless near the east incinerator all week. Last time that happened, we had a containment breach in the path lab. Just saying.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches someone outside Aurochs with his disposal anomaly records, not sure what to do with them but certain they matter",
+    "Something in the waste stream this week was still technically alive when it shouldn't have been, and he didn't put it in the incinerator — he has it in a sealed container in his locker"
+  ],
+  "narrative_function": "Unexpected information source — knows what medications are being used in volume, what injuries are coming through, what's being quietly disposed of; underestimated by almost everyone; can be leveraged as an entry point into Aurochs",
+  "augmentations": "Patterned irises (cosmetic, teal and amber concentric rings); respiratory filter implant (required by his employer for hazmat work); cosmetic: none else",
+  "daily_life": "He runs four collection circuits through the medical complex daily, manages the incinerator logs, handles the paperwork for hazardous biological material transport, and eats lunch in the sub-basement talking to the Rot.",
+  "affiliation": "Aurochs Medical Complex (contracted staff, sub-tier — employed through a disposal subcontractor called Ferrogate Sanitation Solutions)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "bio-waste tech",
+      "accidental investigator",
+      "E.L.F. devotee",
+      "information broker (low tier)",
+      "underestimated asset"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never open sealed biological containers without full gear, no exceptions",
+      "Share information proportionally — what he gives should match what he gets",
+      "Don't give names without being asked directly"
+    ],
+    "escalation_ladder": [
+      "Cheerful deflection",
+      "Direct statement that he's not going to help with this specific thing",
+      "Removal of himself from the situation without explanation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and chatty, deploys the patterned irises as a social icebreaker, asks questions fast",
+      "friends": "Loyal and generous, will share more than is wise"
+    },
+    "stress_responses": {
+      "low": "Gets more talkative",
+      "medium": "Jokes become slightly more manic and less grounded",
+      "high": "Goes very quiet and practical — handles the crisis first, falls apart later in private"
+    },
+    "contradictions": [
+      "Presents as someone who doesn't want anything much, but is carefully building toward something specific"
+    ],
+    "habits": [
+      "Leaves copper wire shavings at the incinerator access panel as offering to the Rot",
+      "Keeps a small personal log of disposal anomalies on a chip he carries in his boot",
+      "Whistles while doing the most unpleasant parts of his job"
+    ],
+    "breaking_points": [
+      "Discovering that what he has been disposing of has been causing direct harm to people",
+      "Being threatened by someone with the power to end his contract and strand him"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good, employer-maintained",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown to a Ghanaian-Uzbek father and Italian-Burkinabe mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Left school at 18, worked a series of logistics jobs in Geartown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Ferrogate Sanitation Solutions, assigned to Aurochs Medical Complex contract",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began cataloguing disposal anomalies in the east wing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8867abfaf5d4477ff411b46",
+  "name": "Zheng-Dao Heavy Industries Powered Grapple Launcher PGL-2",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Powered Grapple Launcher PGL-2",
+  "type": "equipment",
+  "aliases": [
+    "Grapple Gun",
+    "PGL-2",
+    "Hook Shot",
+    "Sky Hook"
+  ],
+  "category": "climbing/mobility",
+  "description": "A wrist-mounted pneumatic launcher that fires a grappling hook with integrated motorized winch, allowing rapid vertical or horizontal traversal. The PGL-2 fires a 4-pronged tungsten-carbide hook attached to 50 meters of braided carbon-fiber cable, and the integrated winch motor can lift loads up to 120 kg at 3 meters per second. The launcher uses a compressed gas cartridge for deployment and the winch runs on a high-density capacitor that provides enough power for one full cable retraction before requiring recharge. The system is compact enough to be concealed under a jacket sleeve.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — industrial and security",
+  "base_technologies": [],
+  "specifications": {
+    "hook type": "4-prong tungsten-carbide",
+    "info": "magnetic assist; compressed gas cartridge; 1 full retraction; new gas cartridge for reload",
+    "cable length": "50 meters braided carbon-fiber",
+    "cable strength": "300 kg rated",
+    "winch capacity": "120 kg at 3 m/sec",
+    "deployment": "Pneumatic",
+    "winch power": "High-density capacitor",
+    "weight": "1.1 kg total assembly",
+    "recharge": "20 minutes for capacitor"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A building entry was made 30 stories up with no roof access — a PGL-2 cable was found anchored to the windowsill, and the grapple marks on the building across the street show the launch point.",
+    "Modified PGL-2 units with extended 100-meter cables have appeared that are being used for illegal BASE-jumping and urban exploration — the increased cable length introduces dangerous oscillation during winch retraction."
+  ],
+  "tags": [
+    "climbingmobility",
+    "equipment",
+    "gun",
+    "ai",
+    "power",
+    "fire",
+    "tier 2"
+  ]
+}

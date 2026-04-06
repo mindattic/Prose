@@ -1,0 +1,51 @@
+{
+  "id": "019d6143a9e47321ab9e662c7a4f282e",
+  "name": "Sonivex-AD",
+  "brand_name": "Sonivex",
+  "product_name": "Sonivex-AD",
+  "type": "substrate",
+  "aliases": [
+    "Sonivex",
+    "sound-dead",
+    "AD panel"
+  ],
+  "category": "smart_material",
+  "description": "An acoustically active meta-material panel produced by Tessera Materials, using a lattice of micro-resonator cavities tuned at fabrication to target specific frequency ranges, with secondary piezo-actuator layers that can dynamically shift resonator geometry under electronic control to actively dampen or amplify sound in real time. Sonivex-AD can switch from a near-anechoic absorption profile to a directional amplification mode within 200ms, making it uniquely dual-purpose. Panels are typically 12mm thick and can tile seamlessly.",
+  "properties": [
+    "acoustically_active",
+    "programmable_frequency_response",
+    "sound_dampening",
+    "sound_amplification",
+    "electronically_controlled",
+    "rigid_panel",
+    "moderate_weight",
+    "power_dependent"
+  ],
+  "developers": [
+    "Tessera Materials"
+  ],
+  "applications": [
+    "secure room acoustic shielding",
+    "concert and performance venues",
+    "interrogation facility construction",
+    "stealth vehicle interior lining",
+    "public address and crowd-control systems"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 2,300 per m²",
+  "story_hooks": [
+    "A Sonivex-AD-lined room was used for a meeting that left no electronic trace — but the panels themselves may have recorded acoustic stress patterns in their resonator wear.",
+    "Someone has flipped a building's Sonivex-AD panels to amplification mode and is broadcasting sound from a private conversation into the street.",
+    "A character needs to cross a room lined with Sonivex-AD in dampening mode — complete silence means any guard inside will hear nothing, but it also means they won't hear anyone coming either."
+  ],
+  "tags": [
+    "smartmaterial",
+    "substrate",
+    "control",
+    "power",
+    "vehicle",
+    "stealth",
+    "tier 3",
+    "tier 4"
+  ]
+}

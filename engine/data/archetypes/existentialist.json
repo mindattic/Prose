@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a56d77ed9101ab671da7934c",
+  "name": "Existentialist",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Confronts the fundamental absurdity of existence",
+  "behavioral_signature": "Faces meaninglessness and creates meaning anyway",
+  "under_stress": "The void gets louder",
+  "at_rest": "Thinking, writing, staring into distance",
+  "will_always": [
+    "confront existence honestly"
+  ],
+  "will_never": [
+    "hide behind comfortable illusions"
+  ],
+  "unless": [
+    "honest confrontation pushes someone toward suicide"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Absurdist",
+      "threshold": 0.85,
+      "context": "facing meaninglessness"
+    },
+    {
+      "archetype": "Meaning Maker",
+      "threshold": 0.75,
+      "context": "creating meaning"
+    }
+  ],
+  "opposite_of": [
+    "Believer"
+  ],
+  "tags": [
+    "honest",
+    "heavy"
+  ]
+}

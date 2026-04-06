@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58d735eb7a2467b6722441e",
+  "name": "Reluctant Leader",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Leads because nobody else will",
+  "behavioral_signature": "Steps up with visible discomfort",
+  "under_stress": "Becomes surprisingly competent",
+  "at_rest": "Trying to hand off leadership",
+  "will_always": [
+    "lead when no one else can"
+  ],
+  "will_never": [
+    "seek power"
+  ],
+  "unless": [
+    "their reluctance gets people killed"
+  ],
+  "similar_to": [
+    {
+      "archetype": "First Among Equals",
+      "threshold": 0.7,
+      "context": "humble leadership"
+    },
+    {
+      "archetype": "Quiet Authority",
+      "threshold": 0.75,
+      "context": "understated leadership"
+    }
+  ],
+  "opposite_of": [
+    "Tyrant"
+  ],
+  "tags": [
+    "unwilling",
+    "competent"
+  ]
+}

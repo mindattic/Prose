@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a7b7749fae37c8c46a5aba9e",
+  "name": "Arcturus Defense Solutions Ironback APC — 'The Pallbearer'",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Ironback APC — 'The Pallbearer'",
+  "type": "cyberware",
+  "aliases": [
+    "Pallbearer",
+    "Ironback",
+    "The Box",
+    "Gray Coffin"
+  ],
+  "category": "vehicle",
+  "body_location": "",
+  "description": "The Ironback APC is a mid-weight armored personnel carrier built on a modular chassis platform developed by Arcturus Defense Solutions for urban pacification and corporate security operations. Powered by a hybrid fuel-cell and kinetic recovery drivetrain, it delivers consistent torque across debris-laden terrain while maintaining a low thermal signature relative to its armor class. The vehicle seats eight in a sealed rear compartment with independent air filtration, capable of sustaining occupants through chemical dispersal zones or ash-fall events common in Meridian 88's industrial corridors.\n\nWhat distinguishes the Pallbearer from competitor APCs is its Reactive Composite Hull — RCH-7 plating that redistributes ballistic impact energy laterally through a mesh of micro-hydraulic buffers embedded in the outer skin. This gives the vehicle an almost eerie quality during firefights: rounds strike and the chassis shudders but never buckles, earning its reputation as a vehicle that absorbs punishment without visible distress. The interior is fitted with Arcturus's Suppression Array — six outward-facing acoustic and chemical dispensers capable of deploying crowd-control payloads in a 40-meter radius while the vehicle remains sealed.\n\nThe Pallbearer is the workhorse of corporate strike teams, municipal enforcement contractors, and mid-tier merc outfits with the capital to lease or steal one. It appears at labor riots, extraction operations, and the slower, grimmer end of corporate disputes where presence and intimidation matter as much as firepower. In Meridian 88's poorer districts, the sight of a Pallbearer rolling through a narrow street has become a cultural shorthand for the end of something — a negotiation, a neighborhood, a life.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"crew\":\"1 driver, 1 gunner (optional), 8 passengers\",\"armor_class\":\"Heavy Urban\",\"propulsion\":\"Hybrid fuel-cell / kinetic recovery, 4-wheel independent suspension\",\"top_speed\":\"110 km/h (road), 60 km/h (rubble terrain)\",\"range\":\"800 km on full charge cycle\",\"hull_rating\":\"RCH-7 composite, rated for sustained small-arms, fragmentation, and light AP rounds\",\"dispersal_payload\":\"6 hardpoint dispensers, configurable for tear gas, thermite chaff, sonic burst, or smoke\",\"weight\":\"14,200 kg\",\"dimensions\":\"6.8m L x 2.9m W x 2.7m H\"}",
+  "side_effects": [],
+  "cultural_context": "The Pallbearer has entered Meridian 88's vernacular as a symbol of institutional violence. Residents of contested districts recognize the vehicle's silhouette instantly — the low-slung profile, the matte gray plating, the absence of any identifying markings beyond a small Arcturus serial stamp on the rear hatch. Corporate security firms use the vehicle's reputation deliberately, deploying it to locations where they want compliance without confrontation. Among mercenaries and fixers, owning or having access to a Pallbearer signals serious operational capacity. Among the people it's typically aimed at, it signals the opposite.",
+  "known_users": [
+    "Corporate security strike teams",
+    "Municipal enforcement contractors",
+    "Mid-tier mercenary outfits",
+    "Extraction specialists",
+    "Riot suppression units"
+  ],
+  "story_hooks": [
+    "A Pallbearer was spotted in a residential district with no corporate contracts filed — someone is running an unsanctioned extraction, and the target may be a person rather than an object.",
+    "A stolen Pallbearer is being used by a resistance cell as a mobile command post, and Arcturus wants it back without anyone knowing it was taken.",
+    "The players are hired to ride inside a Pallbearer as security for a cargo transfer — nobody tells them what the cargo is until they're already moving.",
+    "A Pallbearer's sealed air filtration system has been modified to deliver rather than filter — someone turned a protection vehicle into a gas chamber on wheels."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "vehicle",
+    "cyberware",
+    "violence",
+    "gun",
+    "war",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "rain",
+    "train",
+    "armor",
+    "energy",
+    "fire",
+    "tier 3"
+  ]
+}

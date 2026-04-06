@@ -1,0 +1,44 @@
+{
+  "id": "019d6143a86e778983a1ff4130e03807",
+  "name": "Street Custom 'Coffin Nail' Lock Bypass Kit",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Coffin Nail' Lock Bypass Kit",
+  "type": "equipment",
+  "aliases": [
+    "Coffin Nail",
+    "Pick Set",
+    "Skeleton Key",
+    "Door Opener"
+  ],
+  "category": "tools",
+  "description": "A lockpicking and access bypass toolkit assembled from commercially available and custom-fabricated components, contained in a leather roll the size of a pencil case. The kit includes traditional mechanical picks and tension wrenches for pin tumbler locks, an electronic bypass module for keycard systems, a RFID cloner for proximity access, and a compact decoder for electronic combination locks. The electronic components are built on open-source hardware platforms available from any electronics supplier, and the mechanical picks are ground from spring steel by hand. The Coffin Nail is the most common professional lockpicking kit in the lower tiers, and its presence at a scene is considered strong evidence of premeditated unauthorized entry.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal to own in most jurisdictions — illegal to use for unauthorized entry",
+  "base_technologies": [],
+  "specifications": {
+    "mechanical picks": "15-piece spring steel set",
+    "tension wrenches": "6 varieties",
+    "electronic bypass": "Keycard system override module",
+    "RFID cloner": "Copies and replays proximity cards within 5 cm",
+    "decoder": "Electronic combination lock analysis",
+    "weight": "0.3 kg",
+    "form factor": "Leather roll",
+    "info": "pencil case sized",
+    "learning curve": "Basic mechanical picking requires 20+ hours practice"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A locked room mystery — the door was locked from the inside with no sign of picking, but a Coffin Nail kit was found in the room with the victim, suggesting the killer locked themselves in with the target.",
+    "A master lockpick who manufactures custom Coffin Nail kits has been selling kits with a hidden tracking device in the leather roll — every kit they sell tells them exactly where unauthorized entries are happening."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "war",
+    "ai",
+    "tier 1"
+  ]
+}

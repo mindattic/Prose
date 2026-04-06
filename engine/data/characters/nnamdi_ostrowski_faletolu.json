@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a66775e483fd2e271a7c1bef",
+  "type": "character",
+  "name": "Nnamdi Ostrowski-Faletolu",
+  "aliases": [
+    "Twice",
+    "N2"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "gang prospect, orphan",
+  "age": 17,
+  "status": "active",
+  "location": "The Stockyard, Iron Bend",
+  "description": "Nnamdi is tall and broad-shouldered, built like someone who grew fast and hasn't finished, with very dark brown skin, a shaved head, and a jagged scar bisecting his right eyebrow from a fall three years ago. He has geneware color-cycling pupils — shifts between grey and gold in a slow pulse — which he got on credit from a Stockyard bodmod stall and hasn't finished paying off. His jaw is always slightly set, and he has the particular stillness of someone who learned early that looking ready prevents more problems than looking friendly. He walks with an economy of motion that is entirely self-taught.\n\nNnamdi aged out of the Brightmoor Reclamation Orphanage at sixteen and has been in Iron Bend since. He is technically a prospect for the Stockyard Irons, a mid-level territorial gang, which means he runs perimeter watches, collects small-vendor protection fees, and waits to be tested in ways he's trying not to think about. He is not by nature violent — which is the central tension of his life. He's good at watching and remembering and intimidating by presence alone, and he has told himself that is enough to build on. He has a small personal ELF shrine tattooed on his inner wrist — not digital, just ink — in the shape of a data-stream sigil.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "being forced to hurt someone and crossing a line he can't come back from",
+      "the shapeless future beyond the Irons — he has no other plan"
+    ],
+    "core_desires": [
+      "to matter to a group that won't abandon him when he's no longer useful",
+      "to find out what he's actually good for"
+    ],
+    "coping_mechanisms": [
+      "physical stillness and controlled breathing under pressure",
+      "reading — anything with a long narrative arc"
+    ],
+    "blind_spots": [
+      "loyalty to the Irons is partially manufactured self-deception; he mistakes belonging for safety",
+      "believes his non-violence will be respected indefinitely because it has been so far"
+    ],
+    "secret": "During a perimeter watch six weeks ago, he let a known Irons informant pass without reporting it — not for money, but because the man was with a child and Nnamdi couldn't do it. The Irons don't know. Yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "minimal, precise, Stockyard vernacular with occasional surprising formal turns from his reading",
+    "cadence": "slow and deliberate; never fills silence; lets pauses do work",
+    "verbal_tics": [
+      "'that's a thing' for anything he's processing but not ready to evaluate",
+      "never uses contractions when he's being serious"
+    ],
+    "example_lines": [
+      "'That is a thing I am going to need to think about before I answer.'",
+      "'Twice means you watch it happen, then you watch it happen again before you decide what it means. Most people stop at once.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The informant he let pass is about to be identified by the Irons through another route — which will reveal Nnamdi's omission and put him in genuine danger.",
+    "A Brightmoor Reclamation social worker who knew him at the orphanage has found him in Iron Bend and is trying to offer him an Arcturus labor apprenticeship that has a two-week enrollment window."
+  ],
+  "narrative_function": "Moral ambiguity anchor; neither antagonist nor ally by default; represents the pipeline from orphanage to gang. Potential person to be pulled a different direction or to provide reluctant gang intelligence.",
+  "augmentations": "Color-cycling pupils (geneware, grey/gold, on-credit). No other augmentations.",
+  "daily_life": "Irregular hours dictated by Irons schedules; perimeter watch shifts, fee collection rounds through vendor rows, long stretches of waiting in Iron Bend stairwells that he spends reading salvaged print media.",
+  "affiliation": "Stockyard Irons (prospect, not full member); formerly Brightmoor Reclamation Orphanage",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 3,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "gang_prospect",
+      "orphan",
+      "non_violent",
+      "iron_bend",
+      "reader",
+      "stockyard_irons"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "do not escalate if presence alone will hold the line",
+      "protect anyone smaller without making it a point of principle"
+    ],
+    "escalation_ladder": [
+      "stand and stare",
+      "verbal warning, once, flatly",
+      "physically remove himself from the situation if crossing a line is the only remaining option"
+    ],
+    "interpersonal_modes": {
+      "strangers": "still, neutral, assessing; will not speak first; not threatening unless threatened",
+      "friends": "rare but total investment; remembers everything told to him; shows care through action not language"
+    },
+    "stress_responses": {
+      "low": "goes very quiet, reads if he can",
+      "medium": "overrides emotion with physical routine — walks perimeter patterns compulsively",
+      "high": "complete emotional shutdown; becomes operationally functional and privately fractured"
+    },
+    "contradictions": [
+      "has a deep ethical code that is incompatible with his current affiliation, and does not fully admit this to himself"
+    ],
+    "habits": [
+      "traces the wrist-tattoo sigil when uncertain",
+      "files salvaged print pages in order even though he doesn't have a full collection of anything"
+    ],
+    "breaking_points": [
+      "being ordered to hurt a child or someone clearly helpless",
+      "discovering the Irons have been using him in a way that contradicts his stated value to them"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9,
+    "Generous Fool": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

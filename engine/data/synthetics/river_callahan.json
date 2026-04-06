@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa1c7f71a2af42cc08fd50bd",
+  "name": "River Callahan",
+  "type": "synthetic_life",
+  "aliases": [
+    "Riv"
+  ],
+  "classification": "Android (Synthetic Person)",
+  "disposition": "wandering",
+  "habitat": "No fixed location — travels throughout Meridian 88",
+  "origin": "Tessera courier android, Model TC-2, manufactured 2046. Chose name 2058.",
+  "status": "active",
+  "description": "River Callahan was a courier for twelve years — the oldest android to receive personhood in the first Amendment wave. They chose 'River' because rivers go everywhere and belong nowhere, and 'Callahan' because it sounded like someone who'd been walking for a long time. River still walks. They walk every street, every corridor, every level of Meridian 88, endlessly. They know the city better than any map because they've walked it all. They carry messages, small packages, and stories between communities that official communications don't connect. River is the Shelf's informal postal service, news network, and oral historian combined.",
+  "observed_behavior": "Walks continuously through all districts. Carries messages and packages. Collects and shares stories. Has mapped every accessible space in Meridian 88 from personal observation. Never stays in one place for more than a day.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 0,
+  "location": "All districts — perpetually mobile",
+  "dti_rating": 0.4,
+  "story_hooks": [
+    "River discovers a section of Meridian 88 that isn't on any map — a space between buildings that shouldn't exist, maintained by infrastructure that isn't connected to any known system. River's walked every inch of this city. This is new."
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "wandering",
+    "android",
+    "ai",
+    "synthetic",
+    "elf",
+    "shelf"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa41795cbab35554f6aefe6f",
+  "name": "Ironclad Agrisystems Soil Remediation Microbiome",
+  "brand_name": "Ironclad",
+  "product_name": "Ironclad Agrisystems Soil Remediation Microbiome",
+  "type": "technology",
+  "aliases": [
+    "SRM",
+    "Dirt Doctors",
+    "Clean Earth",
+    "Ironclad Soil"
+  ],
+  "subcategory": "environmental",
+  "description": "An engineered microbial ecosystem designed to be introduced into contaminated soil, where it metabolizes heavy metals, petrochemicals, and industrial toxins, converting them into inert compounds over a 6-12 month treatment cycle. The SRM microbiome consists of 140 bacterial and fungal species engineered to work symbiotically, with each species processing specific contaminants and passing metabolic byproducts to other species in a chain that ultimately renders the soil non-toxic. The system is self-sustaining once introduced and spreads naturally through groundwater connectivity.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "IRONCLAD AGRISYSTEMS",
+    "HELIX BIOSYSTEMS"
+  ],
+  "base_technologies": [
+    "Engineered symbiotic microbial ecosystems",
+    "Contaminant-specific metabolic pathway design",
+    "Self-sustaining bioremediation deployment"
+  ],
+  "enables": [
+    "Large-scale soil decontamination",
+    "In-situ heavy metal remediation",
+    "Restoration of contaminated industrial sites",
+    "Self-spreading environmental cleanup"
+  ],
+  "social_impact": "SRM deployment has restored several heavily contaminated zones around Meridian 88 to usable condition, opening land for development that was previously considered permanently lost. However, the self-spreading nature of the microbiome means that once introduced, its propagation cannot be controlled — it will spread through groundwater to any connected contaminated soil. This has caused conflicts when SRM spread into contaminated areas that Dredge Mining Collective was profiting from through remediation contracts, effectively giving away for free a service they were charging for.",
+  "story_hooks": [
+    "SRM microbes have mutated in a highly contaminated zone and evolved the ability to metabolize compounds they were not designed to process — including the synthetic polymers used in underground infrastructure, and they are eating the city's buried pipes.",
+    "An SRM deployment has been sabotaged — the microbiome was modified to produce toxic byproducts instead of inert ones, making contaminated soil even more dangerous and discrediting the technology."
+  ],
+  "tags": [
+    "environmental",
+    "technology",
+    "ai",
+    "synthetic",
+    "elf",
+    "contract",
+    "control",
+    "doctor",
+    "water",
+    "tier 2"
+  ]
+}

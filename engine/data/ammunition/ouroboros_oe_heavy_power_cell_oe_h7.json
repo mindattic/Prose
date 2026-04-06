@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a55a74c69656ef6545df482d",
+  "name": "Ouroboros OE-Heavy Power Cell OE-H7",
+  "type": "ammunition",
+  "aliases": [
+    "OE cell",
+    "Heavy cell",
+    "Ouroboros pack",
+    "Gold cap"
+  ],
+  "category": "energy_cell",
+  "caliber": "N/A — energy cell",
+  "description": "The OE-H7 is a heavy-duty power cell manufactured by Ouroboros Energy, the corponation whose primary business is energy infrastructure rather than weapons manufacturing. The cell leverages Ouroboros's expertise in industrial power systems to deliver energy densities that exceed purpose-built weapons cells by a significant margin, at the cost of size, weight, and the engineering compromises inherent in adapting industrial technology for tactical use.\n\nThe OE-H7 uses a proprietary solid-state lithium-ceramic matrix that was originally developed for orbital construction equipment. Each cell stores roughly twice the energy of an equivalently-sized Arcturus HC9, but the discharge profile is optimized for sustained draw rather than burst output, making it ideal for weapons that maintain continuous beams or fields rather than firing discrete shots. The cell's gold anodized aluminum housing is immediately recognizable and has become synonymous with high-energy exotic weapons.\n\nOuroboros Energy entered the weapons power cell market reluctantly, driven by the reality that their industrial cells were already being adapted for weapons use by third-party integrators. Rather than cede the market, Ouroboros developed the OE-H7 as a purpose-built weapons variant with proper safety systems — thermal runaway protection, output current limiting, and an inertial cutoff that disconnects the cell if it detects ballistic impact. The result is the safest high-energy cell on the market, which matters more than operators typically realize until the day they take a round to their weapon's power system.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — industrial energy classification, weapons use unregulated",
+  "specifications": "weight_per_cell: 480g\ncapacity: Platform-dependent (6-20 high-energy discharges)\noutput_voltage: 24-400V sustained\nrecharge_time: 90 minutes (industrial charger) / 6 hours (portable)\nshelf_life: 8 years (solid-state)\ncycle_life: 800 charge-discharge cycles\noperating_temperature: -30C to 80C\nsafety: Thermal runaway protection, inertial cutoff, current limiting",
+  "compatible_weapons": [
+    "Thermobaric Pressure Injection Rifle TPIR-1 'Hollowpoint'",
+    "Graviton Compression Emitter GCE-3 'Flatline'",
+    "Liquefaction Resonance Cannon LRC-3 'Mudmaker'",
+    "Gravitic Shear Pistol GSP-7 'Tidal'",
+    "Gravimetric Induction Pistol GIP-4 'Undertow'"
+  ],
+  "variants": [
+    "OE-H7 Standard (sustained output, 800-cycle life)",
+    "OE-H7 Burst (modified discharge profile for pulse weapons, 400-cycle life, higher peak output)",
+    "OE-H7 Compact (60% capacity, 60% weight, for portable platforms)",
+    "OE-H7 Industrial (unmodified industrial cell, no weapons safety systems, higher capacity but dangerous under impact)"
+  ],
+  "cultural_context": "The OE-H7 occupies a unique position in Meridian 88's weapons economy: it is the only major weapons power cell manufactured by a company whose primary business is civilian energy infrastructure. This gives the OE-H7 a legitimacy that pure weapons manufacturers' products lack — an operator carrying OE-H7 cells can plausibly claim they are for industrial equipment, a cover story that does not work with cells from Arcturus or Zheng-Dao. Ouroboros Energy maintains this ambiguity deliberately, never marketing the OE-H7 for weapons use despite knowing exactly what it powers. The cell's gold housing has made 'gold cap' the slang for any high-energy power cell, and among operators, 'running gold' means operating weapons with sustained-fire energy requirements.",
+  "story_hooks": [
+    "Ouroboros Energy's quality control has flagged a batch of OE-H7 cells where the inertial cutoff safety system was not installed — the cells were shipped and sold before the defect was caught, and any operator who takes fire while carrying one is carrying an unshielded high-energy power source.",
+    "An industrial equipment rental company is fronting as a source for OE-H7 cells at industrial pricing — the cells are genuine, but the company is logging the identity of every buyer and selling the data to corporate intelligence services."
+  ],
+  "tags": [
+    "energycell",
+    "ammunition",
+    "weapon",
+    "identity",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "power",
+    "market",
+    "bar",
+    "energy",
+    "fire",
+    "shelf",
+    "tier 3"
+  ]
+}

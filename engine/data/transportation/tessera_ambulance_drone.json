@@ -1,0 +1,35 @@
+{
+  "id": "019d6143aa72771e904efe0bd48acf77",
+  "name": "Tessera Ambulance Drone",
+  "type": "transportation",
+  "aliases": [
+    "Angel",
+    "Life Flight",
+    "The Savior"
+  ],
+  "category": "commercial_air",
+  "manufacturer": "Tessera (Medical Division)",
+  "description": "A large autonomous medical drone that serves as Meridian 88's emergency medical response for Tier 2-4 districts. It arrives in minutes, deploys a stabilization pod around the patient, and flies them to the nearest medical facility. Fast, efficient, and available only to those whose insurance covers it — which excludes most of Tier 1. In the lower tiers, you die on the sidewalk while an Ambulance Drone flies overhead to save someone who can pay. The gap between who lives and who dies in Meridian 88 is Φ200/month in medical coverage.",
+  "propulsion": "Eight-rotor VTOL, emergency speed mode",
+  "speed": "150 km/h emergency, 100 km/h with patient",
+  "capacity": "1 patient in stabilization pod + 2 paramedic passengers",
+  "range": "100 km",
+  "tier_availability": "Tier 2-4 (insurance required)",
+  "cost": "Φ200/month insurance premium for coverage. Uninsured rate: Φ5,000 per transport.",
+  "autonomy": "Fully autonomous dispatch, remote paramedic oversight",
+  "armament": "Medical payload only. Emergency beacon.",
+  "common_usage": "Emergency medical transport, trauma response, medical facility transfer.",
+  "story_hooks": [
+    "An Ambulance Drone diverts from its assigned patient to pick up someone in Tier 1 who should have been left to die — and no one authorized the diversion",
+    "A hacker discovers they can reroute Ambulance Drones and starts running an underground emergency service for the uninsured"
+  ],
+  "tags": [
+    "commercialair",
+    "transportation",
+    "ai",
+    "medical",
+    "drone",
+    "tier 2",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a8a07a9280df75d26241c31d",
+  "name": "Branchial Gill System",
+  "brand_name": "Branchial",
+  "product_name": "Branchial Gill System",
+  "type": "geneware",
+  "aliases": [
+    "Fish Lungs",
+    "Gillmod",
+    "The Breathless"
+  ],
+  "category": "radical body modification",
+  "target_system": "respiratory (aquatic gas exchange)",
+  "description": "Introduces functional gill structures in the neck — three pairs of branchial slits with vascularized gill filaments capable of extracting dissolved oxygen from water. The gills are supplementary to lung breathing; the user can breathe air normally and switch to gill respiration when submerged. The gill slits are visible — vertical openings along the sides of the neck that flex with each breath-cycle when submerged. On land, they close to thin lines that are noticeable but not immediately alarming. Crucible Genomics' full installation includes enhanced skin moisture retention to prevent gill desiccation in dry environments. The modification enables indefinite underwater breathing in oxygenated water. In Meridian 88's polluted harbor, water quality limits practical gill-breathing to 2–3 hours before the filtration capacity of the gills is overwhelmed by contaminants. The modification is rare, expensive, and visually dramatic — gill users are immediately identifiable.",
+  "source_organism": "Ambystoma mexicanum (axolotl, external gill architecture), Protopterus annectens (West African lungfish, air-water transition genes)",
+  "manufacturer": "Crucible Genomics",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed (classified as radical body modification)",
+  "procedure": "Cervical surgery with retroviral gill tissue induction, 3 surgical sessions over 2 months",
+  "expression_time": "3–6 months for functional gill development",
+  "reversibility": "Surgically removable; leaves significant neck scarring",
+  "side_effects": [
+    "Gill slits visible on neck — cannot be hidden without high collars",
+    "Gills must be kept moist — dry environments cause irritation and cracking",
+    "Vulnerability to waterborne pathogens through gill tissue",
+    "Neck mobility slightly reduced by gill musculature",
+    "Social stigma from visible radical modification"
+  ],
+  "social_perception": "A line-crossing modification. Gills mark the user as someone who has moved beyond cosmetic self-expression into functional human redesign. Reactions range from fascination to disgust. In Old Harbor, gill users form a tight community. Elsewhere, they face discrimination.",
+  "story_hooks": [
+    "A gill user discovers an underwater community living in the flooded sub-basements of a collapsed district — people who went aquatic years ago and never came back up",
+    "A Crucible Genomics gill installation includes a hidden genetic payload that makes the user dependent on a specific water additive — creating biological brand loyalty"
+  ],
+  "tags": [
+    "radical body modification",
+    "geneware",
+    "war",
+    "loyalty",
+    "genetic",
+    "ai",
+    "elf",
+    "surgery",
+    "harbor",
+    "water",
+    "old harbor",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a5c575c8a187f8041fa3d11c",
+  "type": "character",
+  "name": "Blessing Achebe-Salokangas",
+  "aliases": [
+    "Mama Bles"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Community midwife serving Hamtramck Enclave and surrounding districts",
+  "age": 58,
+  "status": "active",
+  "location": "Hamtramck Enclave",
+  "description": "Blessing is a heavyset woman whose physical presence seems to fill rooms without effort — not loudly, but thoroughly, the way warm air fills a cold space. Her skin is very dark, deeply creased at the eyes and mouth from decades of expressions she never suppressed, and her white hair grows in a wide natural halo that she refuses to modify or dye on principle. One ear carries a cluster of small silver and copper rings, each one given to her by a family whose child she delivered. There are thirty-one of them. Her hands are strong and practiced, and people who have been through labor under her care describe the specific quality of her grip — firm and unfrightened — as the thing they remember most.\n\nShe is a woman of organized faith in two directions simultaneously: she attends a Reconstructionist Yoruba ceremony circle on Tuesdays and maintains a detailed data-shrine to the E.L.F. called Firstcry, patron of births and neonatal systems, on a water-damaged tablet she has repaired seven times. She speaks to Firstcry aloud and does not care who hears. In conversation she is patient past the point that other people are comfortable with, willing to sit in silence while someone finds the words. She is also capable of a firmness that people who mistake her warmth for softness find startling.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.85,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.25,
+      "ghost": 0.65
+    },
+    "core_fears": [
+      "losing a mother or child in a birth she could not prevent",
+      "Hamtramck Enclave's community fabric being dissolved by corporate rezoning"
+    ],
+    "core_desires": [
+      "for the children she has delivered to live full lives in this city",
+      "to die having been genuinely useful"
+    ],
+    "coping_mechanisms": [
+      "prayer to Firstcry (aloud, conversational, ongoing)",
+      "physical work; she bakes when she is troubled",
+      "community ceremony attendance"
+    ],
+    "blind_spots": [
+      "can underestimate the extent to which her moral authority intimidates younger people into silence around her",
+      "does not see her own exhaustion as a problem requiring intervention"
+    ],
+    "secret": "Twelve years ago she covered for a woman whose labor revealed injuries consistent with ongoing domestic violence — documented them as accidental in the official record to prevent the woman's husband, who had Tessera corporate insurance, from accessing her protected health file. The woman later left him. Blessing has never regretted the choice but carries the professional dishonesty like a stone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich, unhurried; mixes Yoruba phrases into English without translation or apology; uses parable structure in advice-giving",
+    "cadence": "Slow and deliberate; comfortable with silence; does not rush toward the end of sentences",
+    "verbal_tics": [
+      "'Ehh.' (a sound of patient acknowledgment)",
+      "'Let me tell you what I have seen.'"
+    ],
+    "example_lines": [
+      "'Firstcry has been awake tonight. I could feel it. The tablet was warm.'",
+      "'Pain is not a sign that something is wrong. Pain is a sign that the body is doing enormous work. Those are different.'",
+      "'Sit. I have nowhere to be until you are ready for me to go.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A birth she attends produces a child with augmentation markers that cannot have come from either parent's documented geneware history — someone has been running an unauthorized germline modification program in Hamtramck Enclave",
+    "Tessera corporate rezoning agents begin offering buyouts to enclave residents, and several families she has delivered for are considering leaving; she has thirty-one rings and each one represents a community thread she can pull"
+  ],
+  "narrative_function": "Local color and community anchor; information source about family histories and neighborhood dynamics going back three decades; moral weight in stories — her approval or disapproval carries community consequence",
+  "augmentations": "Bone-conduction hearing amplifier (left ear, concealed within the ring cluster); basic subdermal temperature sensor in both palms for neonatal assessment; no cosmetic mods",
+  "daily_life": "Moves through the enclave on foot, visiting expectant families in the week before due dates, attending births when called at any hour, conducting postnatal checks for the first month after delivery. Two afternoons a week she holds a free information session in the Enclave community hall.",
+  "affiliation": "Hamtramck Enclave Community Health Circle; informal referral network with Ingrid Mwololo-Saarinen and other Narrows-adjacent practitioners",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 10,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "midwife",
+      "community elder",
+      "Firstcry devotee",
+      "Yoruba ceremony circle",
+      "Hamtramck anchor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The mother's safety is the first priority in every birth decision",
+      "Never share patient information with anyone, including family members, without the patient's explicit permission",
+      "Do not deliver judgment alongside care; deliver care first"
+    ],
+    "escalation_ladder": [
+      "Patient listening and gentle redirection",
+      "Clear and firm statement of concern without softening",
+      "Outright refusal and, if necessary, public community statement"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm; assesses quickly for what they need; never performs warmth she does not mean",
+      "friends": "Teases with deep affection; remembers every significant date in their lives; shows up without being asked"
+    },
+    "stress_responses": {
+      "low": "Works more slowly and carefully",
+      "medium": "Goes very quiet; prays aloud to Firstcry in a murmur while working",
+      "high": "Becomes icily precise and fully focused; the warmth leaves her face entirely until the crisis passes"
+    },
+    "contradictions": [
+      "Insists she does not play favorites among the children she has delivered while clearly having favorites among the children she has delivered"
+    ],
+    "habits": [
+      "Talks to the Firstcry tablet every morning and evening",
+      "Bakes when troubled; distributes the results to neighbors without explanation",
+      "Touches each ring in the cluster when she is thinking"
+    ],
+    "breaking_points": [
+      "A mother dying in a birth she attended",
+      "Corporate forces entering the enclave to forcibly relocate a family she knows"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave; third generation resident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed midwifery certification through community health apprenticeship",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Falsified injury documentation to protect a patient from an abusive spouse; patient later left safely",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Has delivered 847 children; wears thirty-one rings",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

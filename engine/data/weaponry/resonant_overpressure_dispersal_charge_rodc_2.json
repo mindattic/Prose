@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab4075989232082feaa49d2e",
+  "name": "Resonant Overpressure Dispersal Charge RODC-2",
+  "type": "weapon",
+  "aliases": [
+    "Lungcrusher",
+    "The Handshake",
+    "Wavebreaker"
+  ],
+  "category": "explosive",
+  "description": "The RODC-2 does not explode in any conventional sense. Rather than producing a single detonation shockwave, it generates a rapid sequence of precisely tuned pressure pulses — typically seven to twelve waves fired in 80-millisecond intervals — using a piezoelectric lattice core that converts stored charge into mechanical compression events. The result is a sustained overpressure envelope that interacts destructively with biological tissue while leaving hard structures comparatively intact. Glass survives. Lungs do not.\n\nThe weapon was developed by TESSERA CORPONATION's defense subsidiary as a 'precision crowd suppression tool' intended for use in enclosed corporate facilities where conventional explosives would compromise structural integrity. The frequency tuning is calibrated to resonate with pulmonary air columns and middle-ear structures, causing hemorrhagic trauma at ranges where blast-wave weapons would be non-lethal. At close range, the overpressure pulses are sufficient to cause cardiac arrhythmia and cerebral contusion in unshielded targets.\n\nField operators have noted that the RODC-2 produces an eerie, almost subsonic thudding sensation before casualties begin to manifest — victims often describe feeling 'punched from everywhere at once' before losing consciousness. This perceptual lag has given the weapon a reputation for psychological horror among survivors. The Wavebreaker designation emerged from its use in breaking up fortified positions where combatants had entrenched behind cover — the pressure pulses curve around obstacles with limited but meaningful effectiveness.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Military only / Corporate security licensed",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Piezoelectric lattice detonation",
+    "Resonant overpressure sequencing",
+    "Frequency-tuned compression waves"
+  ],
+  "specifications": "pulse count: 7–12 waves per detonation\npulse interval: 80ms\npeak overpressure: 4.2 bar at 2m\nlethal radius: 4m unshielded\nincapacitation radius: 9m\nfrequency range: 18–140 Hz tunable\nweight: 1.4 kg\nactivation: Proximity fuse, command detonation, or impact\ncasing: Shock-isolated polymer shell",
+  "tactical_use": "Deployed in enclosed spaces — subway tunnels, corporate lobby suppressions, server room raids — where conventional fragmentation would cause collateral structural damage. Used by breach teams as a 'soft clear' before entry, incapacitating occupants without triggering fire suppression systems or structural alarms. Counter-insurgency units use it to clear barricaded positions by exploiting the pressure-curve effect around cover. Targets wearing full respiratory armor retain some protection but are not immune to cardiac and auditory effects.",
+  "cultural_context": "TESSERA's marketing materials describe the RODC-2 as 'humane crowd management technology,' a framing that has made it deeply controversial in civil liberties circles within Meridian 88. Labor organizers in the industrial sectors know it as the 'Handshake' — the weapon corporation security teams deploy when they want to end a strike without the optics of visible wounds. The lack of shrapnel and fire damage makes it easy to deny, and TESSERA has aggressively litigated any attempt to classify overpressure trauma as an attributable cause of death.",
+  "known_users": [
+    "TESSERA CORPONATION internal security divisions",
+    "Corporate anti-labor suppression contractors",
+    "Special operations breach teams",
+    "Underground resistance cells who have acquired captured units",
+    "Mercenary firms operating in structure-sensitive environments"
+  ],
+  "story_hooks": [
+    "A union organizer dies of 'sudden cardiac arrest' during a strike action — the party is hired by her family to prove corporate security used a RODC-2 in the crowd.",
+    "TESSERA is quietly recalling all RODC-2 units for a firmware update — a contact inside the company suggests the update includes a remote kill-switch that can be triggered from corporate headquarters.",
+    "The party recovers a RODC-2 from a crime scene where the victims show no visible wounds. The local coroner has never seen the trauma pattern before and is asking uncomfortable questions.",
+    "A black market vendor is selling RODC-2 units with the frequency lock removed — someone has modified them to target the resonance frequencies of specific cybernetic implants."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "combat",
+    "war",
+    "crime",
+    "death",
+    "consciousness",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "tunnel",
+    "subway",
+    "market",
+    "bar",
+    "armor",
+    "fire"
+  ]
+}

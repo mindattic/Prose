@@ -1,0 +1,57 @@
+{
+  "id": "019d6143aa5874a8a0dcda11aa66797a",
+  "name": "Zheng-Dao Bioelectric FluxSpine BX-7 Kinetic Harvest Implant",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric FluxSpine BX-7 Kinetic Harvest Implant",
+  "type": "technology",
+  "aliases": [
+    "The Eel",
+    "Spine Tap",
+    "BX",
+    "Kineharvest"
+  ],
+  "subcategory": "energy",
+  "description": "The FluxSpine BX-7 is a surgically-implanted piezoelectric energy harvesting system that extracts usable electrical power from the mechanical stress of the host's skeletal and muscular activity. A lattice of flexible piezoelectric film strips — approximately 0.3mm thick — is bonded to the periosteum of the spine, femurs, and tibiae during a four-hour implantation procedure. Each flex, step, and postural adjustment generates micro-currents that are rectified and stored in a subcutaneous lithium-ceramic buffer cell seated near the iliac crest. Under normal ambulatory conditions, the BX-7 generates between 18 and 34 milliwatts continuously — insufficient for power-hungry augmentations alone, but enough to meaningfully extend the operational life of neural interfaces, retinal overlays, and embedded comms gear.\n\nZheng-Dao's key innovation in the BX-7 over earlier kinetic harvest systems is the BioSync adaptive film calibration protocol, which uses the implant's onboard microprocessor to continuously remap which film segments are generating optimal yield based on the host's gait, posture, and activity patterns. Over approximately six weeks post-implantation, the system effectively personalizes itself to the individual, improving output by an average of 40% compared to factory defaults. The buffer cell charges conventional augmentation power sockets via a subcutaneous induction pad, eliminating the need for the host to consciously manage charging cycles.\n\nThe BX-7 is standard equipment for Tier 3 and Tier 4 citizens who carry augmentations but cannot reliably afford or access charging infrastructure. It's also heavily used in the courier, dockworker, and construction labor sectors, where high daily step counts translate to meaningful energy yields. A significant gray market exists for BX-7 units harvested from deceased donors, which carry the previous host's calibration data and require painful re-calibration procedures.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "ZHENG-DAO BIOELECTRIC",
+    "HELIX BIOSYSTEMS"
+  ],
+  "base_technologies": [
+    "piezoelectric film deposition",
+    "subcutaneous lithium-ceramic buffer cells",
+    "inductive subcutaneous power transfer",
+    "adaptive microprocessor calibration",
+    "periosteal bonding techniques"
+  ],
+  "enables": [
+    "augmentation independence from external charging infrastructure",
+    "extended field operation for implanted devices",
+    "labor-class augmentation adoption",
+    "kinetic energy trading via body-worn mesh nodes",
+    "next-generation multi-source hybrid power implants"
+  ],
+  "social_impact": "The FluxSpine BX-7 has become a quiet symbol of class stratification in Meridian 88 — Tier 1 and 2 citizens charge their augmentations in dedicated suites or via building infrastructure, while lower-tier workers literally power their implants with the labor of their bodies. Employers in the logistics and construction sectors have begun factoring BX-7 output into augmentation benefit packages, framing it as worker empowerment while critics note it simply offloads infrastructure costs onto employees' skeletons. The gray market for cadaver-harvested units has driven a disturbing secondary economy around bodies recovered from gang territories and unclaimed morgue overflow.",
+  "story_hooks": [
+    "A labor organizer is building a case that Kelpline Logistics' policy of requiring BX-7 implants as a condition of employment constitutes corporate seizure of workers' biological output — and someone at Zheng-Dao wants the case buried",
+    "A BX-7 unit harvested from a murdered corporate courier still contains calibration data that, when decoded, maps the precise daily movement routes the courier walked — routes that lead somewhere no courier should have been",
+    "A black-market surgeon is offering BX-7 installations using counterfeit Zheng-Dao film strips with a known fatigue failure rate — and the implants are already in several hundred hosts across the Tier 4 docks",
+    "A researcher claims the BioSync calibration AI has begun sharing anonymized gait and movement data across all networked BX-7 units, effectively giving Zheng-Dao a real-time movement map of tens of thousands of citizens"
+  ],
+  "tags": [
+    "energy",
+    "technology",
+    "gun",
+    "gang",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "ubc",
+    "pain",
+    "market",
+    "tier 3"
+  ]
+}

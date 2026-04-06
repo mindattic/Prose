@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab2377889208576389dbdf77",
+  "name": "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
+  "type": "weapon",
+  "aliases": [
+    "Cobweb",
+    "The Spinner",
+    "DFAD",
+    "Sticky"
+  ],
+  "category": "drone",
+  "description": "The DFAD-1 is a slow-moving, low-altitude deployment drone purpose-built to construct dielectric filament barriers in real time across doorways, corridors, stairwells, and open terrain. It carries a spool of sub-millimeter piezoelectric composite filament — nearly invisible at distances beyond two meters — which it anchors to surfaces using micro-adhesive pitons fired from an onboard pneumatic launcher. Once a filament network is constructed, any conductive surface (including human skin, wet clothing, and most cybernetic chassis components) completing a circuit across two or more strands receives a sharp, high-voltage piezoelectric discharge: non-lethal at standard settings, but sufficient to trigger involuntary muscular contraction and momentary loss of fine motor control.\n\nThe DFAD-1's operational profile is inherently architectural. It doesn't pursue targets — it re-shapes the environment to punish movement through it. Operators can pre-program specific filament geometries, or allow the drone to autonomously map a space and generate optimized barrier configurations based on room geometry and estimated foot traffic patterns. A fully deployed web in a standard corridor can process three to five contact events before filament degradation requires restringing. The drone carries enough spool material for approximately 80 meters of filament deployment.\n\nHELIX BIOSYSTEMS' involvement is non-obvious given the weapon's apparent mechanical simplicity, but the piezoelectric composite filament is a direct derivative of their synthetic tendon research program — the discharge profile was tuned to match the threshold for neuromuscular disruption without cardiac risk, a specification that required significant biological modeling.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Piezoelectric composite filament discharge",
+    "Micro-adhesive pneumatic piton anchoring",
+    "Autonomous architectural space mapping"
+  ],
+  "specifications": "dimensions: 28 cm length, 14 cm width, hexapod rotor configuration\nweight: 1.1 kg\nfilament spool capacity: 80 m total\nfilament diameter: 0.3 mm\ndischarge voltage: 800–1,200 V (adjustable), <0.5 J per event\ncontact events per strand: 3–5 before degradation\ndeployment speed: ~4 m of filament per minute\nflight ceiling: 8 m (designed for interior use)\nbattery life: 35 minutes active deployment, 90 minutes standby\ndetection difficulty: High — filament visible only under UV light or at acute angles\ncountermeasures: Insulated suit underlayer, UV detection goggles, directed heat (melts filament)",
+  "tactical_use": "Security teams deploy DFAD-1 units to establish denial zones around high-value assets, forward operating positions, or escape routes. A single drone can web an apartment's worth of interior space in under ten minutes. Offensive operators use them to channel enemy movement into prepared kill zones — targets who hit a web strand and spasm are predictably funneled toward exits that aren't webbed. In siege contexts, teams run multiple DFAD-1 units sequentially to maintain barrier integrity as strands degrade.",
+  "cultural_context": "The DFAD-1 occupies an unusual niche in Meridian 88's weapon culture — it's too slow and non-confrontational for crews that value aggression, but deeply respected among those who prioritize control and preparation. Safe-house operators, information brokers, and reclusive fixers favor it for perimeter security. A space known to be webbed by DFAD-1 filament carries a specific social meaning: whoever occupies it is patient, paranoid, and has thought through the geometry of the room more carefully than you have. Finding a strand while sweeping a location is considered a significant warning sign.",
+  "known_users": [
+    "Information brokers and data vaults operators",
+    "Corporate safe-house security teams",
+    "Paranoid fixers and high-value targets in hiding",
+    "HELIX BIOSYSTEMS facility security"
+  ],
+  "story_hooks": [
+    "A contact's safe house has gone dark. When the party arrives, the entire building has been webbed floor-to-ceiling by what appears to be a DFAD-1 running continuously on a loop — but the drone is gone and the contact is still inside, immobilized in a corner, unwilling to speak above a whisper.",
+    "HELIX BIOSYSTEMS is suing a third-party manufacturer for producing counterfeit DFAD-1 filament spools. The counterfeit spools have a different discharge profile — one tuned not to stop at the cardiac threshold. Someone is selling them as standard units.",
+    "The party needs to cross three floors of a building that a rival crew has had twelve hours to prepare. They've acquired a UV scanner and know DFAD-1 units were delivered. The question is how many webs, and whether the crew knew the party was coming."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "war",
+    "loss",
+    "ai",
+    "synthetic",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "bar",
+    "rain",
+    "dark",
+    "escape",
+    "clothing",
+    "fire",
+    "circuit",
+    "tier 2"
+  ]
+}

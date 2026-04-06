@@ -1,0 +1,57 @@
+{
+  "id": "019d6143ab337410bd94153f02529d16",
+  "name": "Monofilament Whip MFW-1 'Threadkill'",
+  "type": "weapon",
+  "aliases": [
+    "Threadkill",
+    "Ghost Lash",
+    "The Seamstress"
+  ],
+  "category": "melee",
+  "description": "The MFW-1 is a compact handle unit approximately 18cm long, housing a motorized spool of single-molecule carbon filament 2.4 meters in length. The filament itself is invisible to the naked eye under most lighting conditions, with a weighted ceramic tip that provides gyroscopic stability during movement. When deployed, the filament is capable of passing through soft tissue, most unarmored materials, and commercial-grade polymers without perceptible resistance. The handle includes a tension-feedback system that transmits tactile information about filament contact to the operator's grip, allowing experienced users to feel what the weapon is cutting without visual confirmation.\n\nThe MFW-1's primary engineering challenge — and its principal distinction — is filament retrieval. Early monofilament weapons were single-use, as retrieving a molecule-thin cutting edge without severing the operator's fingers required solving a complex tension management problem. The MFW-1 uses a variable-resistance electromagnetic spool with micro-brake segments that progressively decelerate the filament during retraction, guiding it back along a fixed geometric path rather than free-coiling. This allows reliable retrieval in approximately 1.8 seconds, making follow-up strikes viable within the same engagement.\n\nThe weapon is extraordinarily dangerous to untrained users and bystanders alike — the filament is effectively invisible in low light and produces no sound during flight. Several documented incidents involve operators accidentally severing their own fingers or limbs during botched retrieval sequences. TESSERA CORPONATION includes a mandatory certification requirement in the purchase contract, though enforcement of this requirement is understood to be nominal.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Monofilament edge technology",
+    "Electromagnetic tension management",
+    "Tactile feedback transmission"
+  ],
+  "specifications": "handle length: 18cm\nfilament length: 2.4m\nfilament material: Single-molecule carbon composite\ntip material: Weighted ceramic stabilizer\nretrieval time: 1.8 seconds\nspool type: Variable-resistance electromagnetic with micro-brake segmentation\npower source: Integrated microcell, 6-hour operational life\nweight: 310g (handle unit)",
+  "tactical_use": "Experienced operators use the MFW-1 in low-light environments where the filament's invisibility is maximized. Standard engagement sequences involve two to three targeted strikes before retrieval, exploiting the fact that targets often cannot identify the weapon responsible for initial injuries. The whip is particularly effective against unarmored targets and for cutting restraints, cables, and equipment. Some operators coat the ceramic tip in bioluminescent paint to track filament position — a modification that partially defeats the invisibility advantage but significantly reduces self-injury incidents.",
+  "cultural_context": "The MFW-1 occupies a position of near-mythological fear in Meridian 88's underground. Its prohibition is absolute across all districts, and the few confirmed operators are treated with a mixture of professional respect and personal dread even among hardened criminals. The nickname 'The Seamstress' reflects a dark appreciation for the weapon's precision — it is associated with individuals who kill not out of desperation but out of craft. Possession alone is sufficient for a maximum-security detention order in most of Meridian 88's administered zones.",
+  "known_users": [
+    "High-tier assassins",
+    "TESSERA CORPONATION black operations personnel",
+    "Collectors and weapon fetishists (non-operational)",
+    "Runners with extensive close-quarters training",
+    "Former corporate intelligence officers operating outside institutional oversight"
+  ],
+  "story_hooks": [
+    "A series of deaths in the financial district share a characteristic the coroner cannot explain — clean, straight incisions on bodies that show no other signs of violence. Someone is using a MFW-1 in broad daylight, and the victims have no obvious connection to each other.",
+    "A TESSERA CORPONATION executive is trying to quietly acquire back all MFW-1 units currently in circulation — not for legal reasons, but because the filament in this production batch has a hidden manufacturing defect that makes it traceable to a specific facility the company wants to disavow.",
+    "A player character is given a MFW-1 as payment for a job, with no training and no manual. The previous owner is dead. The weapon's tension-feedback system seems to be transmitting something that feels less like cutting resistance and more like deliberate patterns."
+  ],
+  "ammunition_type": [
+    "none"
+  ],
+  "tags": [
+    "melee",
+    "weapon",
+    "violence",
+    "death",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "injury",
+    "pain",
+    "market",
+    "rain",
+    "dark",
+    "train",
+    "chase",
+    "armor"
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "id": "019d6143a5ff74b29824d6402e181172",
+  "type": "character",
+  "name": "Ekundayo Halvorsen-Mansour",
+  "aliases": [
+    "Dayo",
+    "The Night Wrench"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Independent vehicle mechanic specializing in Ferrogate maintenance overflow and civilian groundcars",
+  "age": 46,
+  "status": "active",
+  "location": "Geartown, operates from a licensed bay at the Kessler Interchange motor court",
+  "description": "Ekundayo is a big man going soft at the middle, with his Nigerian father's broad forehead and his Norwegian mother's pale blue eyes that have always startled people in a face as dark and richly toned as his. He has retractable claw mods on his right hand — not for fighting, but because forty years ago his grandfather lost two fingers to a torque wrench and Dayo decided the human hand was simply not engineered for engine work. The claws give him precision grip on components that would take a standard hand twice as long. He smells perpetually of synthetic lubricant and a particular cedar-note cologne he has worn since he was twenty, and which he applies over the grease rather than instead of it.\n\nHis bay is controlled chaos — towers of salvaged parts catalogued in a system only he understands, three different radios playing simultaneously (one for news, one for music, one permanently tuned to a Geartown E.L.F. frequency that outputs as static but which Dayo insists contains diagnostic information), and a small shrine to the Wrench E.L.F. on the tool chest consisting of a disassembled carburetor arranged like a mandala. He is not a warm man in the Blessing sense — he does not offer food or ask about your feelings. But he is deeply, uncomplicatedly fair, charges exactly what the work costs, and has an allergic reaction to being lied to that is nearly physical in its intensity.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.6,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Losing the use of his hands — through injury, confiscation of his mods, or simply age",
+      "That his son, who he has not spoken to in four years, believes Dayo chose the bay over him — because it is true"
+    ],
+    "core_desires": [
+      "To be left alone to do honest work without interference from corponations or city licensing",
+      "Some version of reconciliation with his son, which he cannot initiate because he does not know how to be wrong out loud"
+    ],
+    "coping_mechanisms": [
+      "Staying in motion — idleness is where the grief lives",
+      "The E.L.F. radio tuned to static — he finds it genuinely calming",
+      "Sleeping in the bay to avoid the apartment where his son's old room is"
+    ],
+    "blind_spots": [
+      "Equates emotional unavailability with stability — cannot see that his son needed the father, not just the mechanic's values",
+      "Assumes everyone who comes to him in distress needs a practical solution"
+    ],
+    "secret": "He has been quietly reassembling a groundcar in the back of bay three for six years — it was his son's project, started together, abandoned when they stopped speaking. He does not know if he is finishing it as a gift or an apology or just because he cannot leave a thing incomplete."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse, technical, precise — he uses the correct name for every component and expects you to keep up or ask",
+    "cadence": "Short sentences, long silences, never repeats himself",
+    "verbal_tics": [
+      "'Right.' as full agreement",
+      "Long exhale through the nose when something is wrong",
+      "Refers to vehicles in the feminine"
+    ],
+    "example_lines": [
+      "'She's burning rich on the secondary injector. Not the primary — people always say primary. It's never the primary.'",
+      "'You lied to me about the mileage. Don't do it again. I'm not charging you more, but I'm telling you: I know now, and I will always know.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The groundcar in bay three has finally been completed, and Dayo does not know whether to deliver it or dismantle it — he needs someone to help him make the decision without making it for him",
+    "A Ferrogate subcontract brought him access to a transit maintenance log with a dangerous anomaly that the company has buried — and he cannot unknow it"
+  ],
+  "narrative_function": "Practical resource and equipment connection; honest broker in a district full of grift; moral anchor who functions through fairness rather than warmth; can provide access to vehicle systems, transit infrastructure knowledge, and Geartown social network",
+  "augmentations": "Retractable precision claw mods, right hand (functional, five fingers replaced with articulated tool-grip claws); optical zoom implant, left eye (civilian grade, for close component inspection)",
+  "daily_life": "In the bay by 08:00, works until the job is done or his body gives out, usually around 22:00; eats two meals standing up; sleeps in a cot in the back office four nights a week rather than commuting to his apartment in McKinley Flats",
+  "affiliation": "Independent; occasional subcontract overflow work for Ferrogate Transit maintenance division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 4,
+      "expression": 3,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "master craftsman",
+      "emotionally closed",
+      "irreproachably fair",
+      "estranged father",
+      "static listener"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Charge fair. Do the work right. Do not lie. These are the only rules.",
+      "Do not work on anything that will get someone killed — he will ask, and if the answer feels wrong, he refuses",
+      "Never subcontract to someone he has not personally vouched for"
+    ],
+    "escalation_ladder": [
+      "Flat refusal with no explanation",
+      "The long exhale and a direct statement of what he knows",
+      "Physically leaves the space — goes to the back office, closes the door",
+      "Terminating the relationship with a single invoice and no further contact"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional, neutral, will answer exactly the question asked and no more",
+      "friends": "Exactly the same, but he makes you coffee and asks once, quietly, if you are alright"
+    },
+    "stress_responses": {
+      "low": "Works faster, more precisely",
+      "medium": "Goes silent for hours, works through it",
+      "high": "Sits on the floor of the bay in the dark with the static radio on until something in him settles"
+    },
+    "contradictions": [
+      "Deeply values honesty but has been lying to himself about his son for four years"
+    ],
+    "habits": [
+      "Arranges the carburetor mandala on the Wrench E.L.F. shrine every Sunday morning",
+      "Wipes his claw mods clean with a specific cloth before sleeping",
+      "Keeps his son's old transit pass in his breast pocket — worn smooth"
+    ],
+    "breaking_points": [
+      "Someone damaging the groundcar in bay three",
+      "Being asked to sign off on maintenance he knows is unsafe"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Retractable precision claw mods, right hand (5-finger articulated tool-grip, civilian functional grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retractable precision claw mods, right hand (5-finger articulated tool-grip, civilian functional grade)",
+      "replaces": ""
+    },
+    {
+      "name": "Optical zoom implant, left eye (civilian medical grade, 8x magnification for component inspection)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Optical zoom implant, left eye (civilian medical grade, 8x magnification for component inspection)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Problem Solver": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

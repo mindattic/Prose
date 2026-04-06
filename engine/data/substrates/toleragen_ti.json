@@ -1,0 +1,57 @@
+{
+  "id": "019d6143a9e67f22801c0309b88ae64f",
+  "name": "Toleragen-Ti",
+  "brand_name": "Toleragen",
+  "product_name": "Toleragen-Ti",
+  "type": "substrate",
+  "aliases": [
+    "ghost-ti",
+    "cleantitanium",
+    "tol-ti"
+  ],
+  "category": "bio_hybrid",
+  "description": "Toleragen-Ti is a grade-5 titanium alloy whose surface is functionalized at the nanoscale with a continuously renewed membrane of autologous immune-signaling proteins, grown from the recipient's own regulatory T-cell lines and replenished by a thin embedded bioreactor layer within the material itself. The result is a titanium substrate that the host immune system perceives not as foreign material but as an extension of self, eliminating the chronic inflammatory response and capsular fibrosis that limits the lifespan of conventional titanium implants. Originally developed by BioForge Labs as a solution to the implant rejection crisis of the 2160s, Toleragen-Ti is now the foundational substrate underlying most high-end augment systems.",
+  "properties": [
+    "immune_transparent",
+    "high_biocompatibility",
+    "high_tensile_strength",
+    "low_weight",
+    "corrosion_resistant",
+    "bioreactor_dependent",
+    "long_term_stable",
+    "non_signal_transmitting"
+  ],
+  "developers": [
+    "BioForge Labs",
+    "Apex Nanofabrication"
+  ],
+  "applications": [
+    "primary structural chassis for premium augment limbs and organs",
+    "long-duration implant housings requiring decade-plus service life",
+    "cardiac and pulmonary assist device enclosures",
+    "neural interface mounting plates",
+    "pediatric augments designed to remain in place through growth phases"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 6,700 per kg (requires recipient-matched bioreactor calibration: Φ 2,100 additional per implant)",
+  "story_hooks": [
+    "BioForge Labs requires a blood sample for bioreactor calibration — a records leak reveals they have been quietly building the largest genetic database in Meridian 88, and every Toleragen-Ti recipient is in it",
+    "A character discovers their Toleragen-Ti implant's bioreactor has been subtly miscalibrated — not enough to cause rejection, but enough to make the immune suppression localized, leaving a precise vulnerability that someone with the right bioweapon could exploit",
+    "On the Shelf, a bootleg version called 'bare-ti' is being implanted without the bioreactor layer — recipients feel fine for eighteen months, then the rejection hits all at once, and the clinics performing the procedures have already moved on"
+  ],
+  "tags": [
+    "biohybrid",
+    "substrate",
+    "weapon",
+    "augment",
+    "neural",
+    "genetic",
+    "ai",
+    "elf",
+    "clinic",
+    "bar",
+    "shelf",
+    "tier 3",
+    "tier 4"
+  ]
+}

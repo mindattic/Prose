@@ -1,0 +1,209 @@
+{
+  "id": "019d6143a72f77b19c00260800c52f8f",
+  "type": "character",
+  "name": "Ysolde Kiptanui-Ferreira",
+  "aliases": [
+    "Ysol",
+    "The Wax Prophet"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Neon artist and installation sculptor, Tier 2",
+  "age": 38,
+  "status": "active",
+  "location": "Hamtramck Enclave, workshop-apartment above a recycled plastics dealer",
+  "description": "Ysolde is a broad-shouldered woman with a Kalenjin-Portuguese lineage written visibly across her face — wide-set amber eyes, a jaw that could cut glass, skin the color of aged teak that she's had treated with a bioluminescent dermal wash so her forearms and collarbones pulse with slow amber light when she's working in the dark. Her hair is locked into dense ropes she's threaded with segments of defunct fiber-optic cable, catching available light and scattering it in dim halos. She is perpetually dusted with neon-tube sealant and smells faintly of ozone and solder.\n\nShe is methodical to the point of social frustration — she will stop mid-sentence to study how a lamp casts shadows on a stranger's coat, and she expects people to wait for her. Her neon sculptures are famous in the Enclave for their devotional quality: glowing saints with too many eyes, ELF shrines that flicker in irregular rhythms meant to mimic the breathing of sleeping machines. She does not consider herself religious but treats the ELFs she depicts with a reverence that feels devotional whether she admits it or not.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "being misread — that her work will be consumed as decoration rather than meaning",
+      "losing the precision of her hands to injury or deterioration"
+    ],
+    "core_desires": [
+      "to make something that survives her by centuries",
+      "to be understood without having to explain herself"
+    ],
+    "coping_mechanisms": [
+      "retreating entirely into the workshop for days at a time",
+      "cataloguing — she keeps exhaustive written logs of every piece and every conversation she finds meaningful"
+    ],
+    "blind_spots": [
+      "assumes people who don't respond to her work are incapable of depth, rather than simply unmoved by her specific language"
+    ],
+    "secret": "The ELF shrine series she's most celebrated for was built to house what she believes is an actual minor ELF she accidentally trapped in a prototype tube three years ago. She's never told anyone. She talks to it nightly. She doesn't know if it answers."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, slightly archaic phrasing — she uses craft terminology naturally and expects people to keep up. Rarely uses slang. Portuguese and Kalenjin loanwords for emotional states she finds English insufficient for.",
+    "cadence": "Slow and deliberate, with long pauses. Will simply stop speaking if interrupted and wait for silence to return before continuing.",
+    "verbal_tics": [
+      "traces shapes in the air with one finger while describing visual things",
+      "says 'you understand?' not as a question but as punctuation"
+    ],
+    "example_lines": [
+      "This color — not yellow, not gold, something between that doesn't have a name in any language I've tried — this is what I needed. You understand?",
+      "I don't sell decoration. If that's what the lobby requires, call someone who makes decoration."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Palladian executive has commissioned a large ELF shrine for their headquarters atrium — and Ysolde suspects the commission is actually an attempt to acquire her trapped-ELF tube, which somehow appeared in leaked internal documents she was never meant to see.",
+    "A young Enclave resident has been copying her work exactly, selling the knockoffs in Lakeview Neon markets — and the copies are somehow better than they should be, as if whoever is making them has access to her private process logs."
+  ],
+  "narrative_function": "Local color and information source — she knows the Enclave's rhythm intimately and notices everything. Can serve as quest giver when a commissioned piece goes missing or a corporate client's interest turns threatening.",
+  "augmentations": "Bioluminescent dermal wash on forearms and collarbones (amber). Magnification implants in left eye for fine detail work. No other augmentations — she distrusts anything she cannot understand mechanically.",
+  "daily_life": "Rises at midday, spends afternoons sourcing salvage components from the Enclave's recyclers and negotiating commissions with nervous corporate liaisons over encrypted voice calls. Works through the night bending and sealing glass, her workshop lit only by her own creations.",
+  "affiliation": "Hamtramck Artisan Collective (loose), occasional commissions from Palladian corporate lobbies",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 4,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "craftsperson",
+      "loner",
+      "devotional",
+      "perceptive",
+      "stubborn"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never sell a piece she considers unfinished, regardless of pressure or money",
+      "will always tell the truth about craft — will not always tell the truth about herself"
+    ],
+    "escalation_ladder": [
+      "patient silence",
+      "direct and quiet statement of displeasure",
+      "termination of the interaction without further comment"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally polite, slightly distant, assessing. Will offer coffee. Will not offer conversation.",
+      "friends": "Warm in a compressed way — long comfortable silences, occasional fierce loyalty that appears with no warning."
+    },
+    "stress_responses": {
+      "low": "Goes quieter than usual and works longer hours",
+      "medium": "Becomes sharply critical of everything around her, including her own work",
+      "high": "Locks the workshop, disconnects all communication, doesn't emerge for up to four days"
+    },
+    "contradictions": [
+      "claims to make art for meaning rather than audience, but tracks her reputation obsessively through encrypted art forums"
+    ],
+    "habits": [
+      "leaves a single dark-off tube in every finished installation — one light that is never lit",
+      "prays to the ELFs in her workshop each morning in a mix of Portuguese and Kalenjin she's invented for the purpose"
+    ],
+    "breaking_points": [
+      "someone physically damages one of her pieces intentionally",
+      "being publicly called a corporate artist"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Kenyan transit worker and a Portuguese glassblower",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed informally to a dying neon craftsman in the Enclave; inherited his tools and his debts",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First major installation commissioned by Palladian for a mid-tier office lobby — the piece caused three employees to file spiritual distress complaints",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Accidentally traps what she believes is an ELF in a prototype tube during an experimental piece",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

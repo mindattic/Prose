@@ -1,0 +1,49 @@
+{
+  "id": "019d6143a5537ac9b0f39df5269a7bd2",
+  "name": "12.7mm Helical-Sleeve Penetrator HSP-127",
+  "type": "ammunition",
+  "aliases": [
+    "Corkscrew round",
+    "HSP-127",
+    "Helix slug",
+    "Drillbit"
+  ],
+  "category": "ballistic",
+  "caliber": "12.7mm",
+  "description": "The HSP-127 is a magnetically accelerated anti-materiel penetrator designed for the HVP-4 'Corkscrew' railgun platform, featuring a unique helical sleeve that imparts extreme rotational spin to the projectile during electromagnetic acceleration. The penetrator is a tungsten-ceramic composite rod housed in a discarding helical sleeve — as the weapon's 14-stage coil array accelerates the round to 4,200 m/s, the sleeve's helical grooves interact with the electromagnetic field to spin the penetrator at up to 220,000 RPM. The sleeve discards at the muzzle, and the penetrator continues to its target as a hyper-velocity spinning rod.\n\nThe extreme spin rate is the HSP-127's defining characteristic. At 220,000 RPM, the penetrator functions less like a bullet and more like a drill bit striking at four times the speed of sound. Against conventional armor, the rotational energy compounds the kinetic penetration — the round does not simply punch through, it bores through, with the spin dispersing material laterally as it advances. This makes the HSP-127 effective against reactive armor systems that are designed to deflect or shatter conventional kinetic penetrators, because the sustained rotational contact defeats the reactive element's ability to redirect the projectile.\n\nThe rounds are loaded in 12-round ceramic-sleeve cassettes that protect the delicate helical sleeves from handling damage. Each sleeve must be precisely aligned with the weapon's coil array for proper spin induction, which means the cassette loading mechanism is the weapon's most mechanically complex and failure-prone component. Field reports indicate a 2-3% feed failure rate under combat conditions, typically manifesting as a sleeve misalignment that produces a tumbling, unpredictable shot rather than a clean penetrator release. The weapon's coolant system must also be maintained — 8 rounds of rapid fire saturate the heat sink, requiring a mandatory coolant purge before continued operation.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — anti-materiel classification, requires ADS-issued operator license",
+  "specifications": "weight_per_round: 42g (penetrator + sleeve)\nmuzzle_velocity: 4,200 m/s\npenetration_rating: Defeats all personal armor classifications, effective against light vehicle armor and reinforced structural elements\neffective_against: Armored vehicles, fortified positions, heavy synthetic combatants, hardened infrastructure\ncountermeasures: Heavy reactive armor (partially effective), active defense systems, extreme distance (energy dissipation)",
+  "compatible_weapons": [
+    "Helical Vortex Penetrator HVP-4 'Corkscrew'"
+  ],
+  "variants": [
+    "HSP-127 Standard (maximum penetration, full spin)",
+    "HSP-127 Tumble (reduced spin, designed to destabilize post-penetration for maximum behind-armor effect)",
+    "HSP-127 Sabot-Extended (longer sleeve for enhanced spin at reduced velocity, 3,800 m/s, improved accuracy at extreme range)",
+    "HSP-127 Practice (reduced mass, inert penetrator, training use)"
+  ],
+  "cultural_context": "The HSP-127 is anti-materiel ammunition in the truest sense — it is designed to destroy things that are not people, though it will destroy people incidentally and with extreme prejudice. In Meridian 88, the round's reputation is almost mythological: stories circulate about Corkscrew operators punching through engine blocks, bridge supports, and reinforced bunker walls with single shots. The reality is more nuanced — the weapon system is expensive, maintenance-intensive, and demands a skilled operator — but the psychological impact of knowing an HSP-127 can reach through any cover is significant. Corporate security planners factor Corkscrew capability into facility hardening assessments, and buildings rated as 'HSP-resistant' command premium security pricing.",
+  "story_hooks": [
+    "An HSP-127 penetrator was recovered from the wreckage of an armored executive transport — the round passed through both the vehicle's reactive armor and the armored partition behind the driver, a trajectory that suggests the shooter knew the vehicle's internal layout.",
+    "Arcturus Defense Solutions is recalling a batch of HSP-127 cassettes due to a manufacturing defect in the helical sleeves — the defective sleeves don't discard cleanly, producing erratic shots that have caused collateral damage in two confirmed incidents, but someone is buying up the recalled stock at discount prices."
+  ],
+  "tags": [
+    "ballistic",
+    "ammunition",
+    "combat",
+    "weapon",
+    "gun",
+    "ai",
+    "synthetic",
+    "corporate",
+    "rain",
+    "vehicle",
+    "train",
+    "armor",
+    "energy",
+    "fire",
+    "tier 4"
+  ]
+}

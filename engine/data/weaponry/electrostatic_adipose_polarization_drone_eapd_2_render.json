@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab267094935468a48ebdb06b",
+  "name": "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
+  "type": "weapon",
+  "aliases": [
+    "Render",
+    "The Fat Burner",
+    "Polarizer",
+    "Candle Drone"
+  ],
+  "category": "drone",
+  "description": "The EAPD-2 is a hovering medium-range directed-effect drone designed to induce rapid and deeply uncomfortable electrostatic polarization within subcutaneous adipose tissue. Operating on a principle adapted from industrial fat-separation processes used in IRONCLAD AGRISYSTEMS food refinement divisions, the drone projects a focused alternating electrostatic field at frequencies between 18–42 kHz, causing lipid molecules in fatty tissue to oscillate, generate internal friction heat, and produce a sensation described by test subjects as 'burning from the inside without any surface heat.' The effect is localized, penetrative, and extremely difficult to shield against with standard ballistic protection.\n\nThe EAPD-2 achieves its distinctive targeting precision through a passive thermal differencing system that maps subcutaneous fat distribution in real time, allowing it to concentrate energy on the highest-density adipose regions of a target's body. This makes the weapon non-uniformly effective — individuals with lower body fat percentages experience less acute effects, a fact that has led to significant ethical controversy and several documented cases of operators deliberately targeting individuals based on body composition profiles obtained from medical data leaks.\n\nBeyond pain compliance, sustained exposure causes localized edema, superficial tissue inflammation, and in high-power settings, minor lipid necrosis that resolves over several weeks. The drone itself is deceptively quiet, using magnetic levitation stabilizers rather than rotors, and its electrostatic emission is invisible to the naked eye, making identification of the weapon mid-engagement genuinely difficult.",
+  "manufacturer": "IRONCLAD AGRISYSTEMS",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Alternating electrostatic field projection",
+    "Passive subcutaneous thermal mapping",
+    "Magnetic levitation stabilization"
+  ],
+  "specifications": "dimensions: 22cm x 18cm x 9cm\noperational altitude: 0.5m–6m\neffective range: 3m–15m focused beam\nfrequency range: 18–42 kHz alternating electrostatic\ntargeting system: Passive thermal differencing array\npower source: High-density polymer capacitor bank, field-rechargeable\nbattery life: 22 minutes continuous operation\nweight: 1.1kg\nnoise signature: Near-silent (magnetic levitation, <18dB operational)",
+  "tactical_use": "The EAPD-2 is most commonly used in interrogation-adjacent scenarios where operators need compliance without leaving visible external marks. It is deployed in enclosed spaces — small rooms, vehicle interiors, elevator shafts — where its 15m maximum range is more than sufficient and where the target has limited ability to increase distance from the effect. Field operatives have used it for area denial in corridors, setting the drone to autonomous patrol mode and relying on the extreme discomfort of exposure to prevent passage without a fight. High-tier assassins have used it in conjunction with other weapons to degrade a target's physical capacity before engaging directly.",
+  "cultural_context": "The EAPD-2's origins in agricultural fat-rendering technology are not lost on Meridian 88's activist communities, who have used the connection as a rallying point against IRONCLAD AGRISYSTEMS' expansion into defense contracting. 'Rendering' someone has become a politically charged phrase in certain circles, used to describe the corporatization of violence against lower-income citizens who statistically present with higher body fat percentages due to food access disparities — making them more vulnerable to this specific weapon. IRONCLAD officially denies any connection between their agri-processing patents and the EAPD-2's design.",
+  "known_users": [
+    "Black market interrogation specialists",
+    "Rogue IRONCLAD AGRISYSTEMS security contractors (off-books)",
+    "High-end fixers with access to prohibited hardware",
+    "Underground enforcement arms of food district cartels"
+  ],
+  "story_hooks": [
+    "A whistleblower from IRONCLAD AGRISYSTEMS is trying to leak documents proving the EAPD-2 was designed using classified food-processing patents — and someone very corporate wants them silenced before the story breaks.",
+    "The players are hired to retrieve an EAPD-2 from a black market auction, only to discover it's already been used in a high-profile disappearance with no external injuries on the body.",
+    "A contact offers the players a 'clean' EAPD-2 with its serial numbers burned — but the drone's targeting logs are still intact, and what they contain is worth more than the weapon itself."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "violence",
+    "war",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "contract",
+    "power",
+    "ubc",
+    "medical",
+    "pain",
+    "market",
+    "vehicle",
+    "hover",
+    "food",
+    "energy"
+  ]
+}

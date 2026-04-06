@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a65d781c8b0f151217457d5b",
+  "type": "character",
+  "name": "Miroslava Toure-Ahtiainen",
+  "aliases": [
+    "Mira",
+    "the Night Nurse"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Unlicensed community nurse and wound care provider working out of a converted apartment in the Narrows",
+  "age": 38,
+  "status": "active",
+  "location": "The Narrows — fourth floor walk-up at Ironvein Cross Block 7, apartment 4F",
+  "description": "Miroslava Toure-Ahtiainen occupies the strange position of being simultaneously the most essential and the most legally precarious person on her block. She is a compact woman with Finnish-Malian heritage — pale olive skin, dark eyes with the particular steadiness of someone trained to look at things that are unpleasant without flinching, close-cropped dark hair she bleaches copper at the tips. She lost her Axiom-affiliated nursing license six years ago in a dispute over billing fraud she reported rather than participated in, and has been operating without it ever since, a fact every person in the Narrows knows and nobody discusses with outsiders. Her apartment's second room has been converted: examination table, sterilization cabinet, a pharmaceutical cold-locker that she restocks through supply chains she has spent years building from salvage dealers, sympathetic Helix Biosystems mid-tier employees, and the occasional Axiom clinic discard.\n\nShe is tired in the structural sense — not temporarily but chronically, the kind of tired that has become load-bearing in her personality. She does not complain about it. She has a way of sitting across from a patient that makes them feel she has all the time in the world, which is technically a lie but functionally true because she has arranged her life so that the work is always the priority. She has a cat — a real one, no mods, orange — named Thiamine, after a vitamin deficiency she sees more than she should in the Narrows. The cat sits on the examination table and judges everyone equally.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being shut down — not for her own sake but because there is no one to replace her",
+      "Making a mistake that costs someone their life because she didn't have the right equipment"
+    ],
+    "core_desires": [
+      "A functional public health system that makes her work unnecessary",
+      "One full night of sleep without an emergency knock"
+    ],
+    "coping_mechanisms": [
+      "Strict procedural discipline — protocol as emotional regulation",
+      "The cat (genuinely, unsarcastically)"
+    ],
+    "blind_spots": [
+      "Has entirely externalized her own health; has not had a check-up in two years",
+      "Assumes she can sustain her current pace indefinitely because she has so far"
+    ],
+    "secret": "She has been collecting tissue samples from patients who present with a specific pattern of symptoms she cannot diagnose — fatigue, blue-shifting skin at the extremities, neurological micro-tremors — and has fourteen samples in a refrigerated case under her examination table. She believes it's environmental exposure to something from the Ironvein industrial runoff, and she is terrified she's right."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clinical precision in medical contexts, surprisingly warm and colloquial outside of them; Finnish-inflected syntax occasionally surfaces under stress",
+    "cadence": "Even and controlled, slows down for important information, speeds up when listing things",
+    "verbal_tics": [
+      "'Tell me exactly' (always before a patient describes symptoms)",
+      "'That's the Narrows for you' (resigned acknowledgment of systemic failure)"
+    ],
+    "example_lines": [
+      "'Tell me exactly when it started, not when you decided to come here. Those are different times and I need the first one.'",
+      "'I lost the license. I kept the knowledge. Axiom can sort out which one matters more to them while I get on with it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The tissue sample case — she needs someone to get the samples to a lab that won't report her or the source, and the symptoms are spreading",
+    "A patient she recently treated is now missing, and the last thing they said to her was that someone had been following them from the Axiom clinic they'd visited before coming to her"
+  ],
+  "narrative_function": "Essential humanitarian resource — the only accessible medical care for tier 1 residents in the Narrows. Information source on the neighborhood's physical health patterns. Potential quest giver for supply access or protection. Moral anchor character who makes the cost of the city's systems visible.",
+  "augmentations": "Medical-grade diagnostic HUD overlay (eye mod, left eye only — lets her read vitals without equipment contact). Steady-hand micro-tremor suppression implant in both hands — originally a licensed medical professional augmentation, still functional. No cosmetic mods.",
+  "daily_life": "Sees patients from nine in the morning until she falls asleep, which is usually two in the morning. Eats whenever. Restocks supplies on Tuesdays. Tries to take Sunday off and mostly fails.",
+  "affiliation": "Independent; informal network with Hamtramck Enclave community workers and Old Harbor mutual aid groups",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "essential resource",
+      "legally precarious",
+      "morally grounded",
+      "slow-burn crisis"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient welfare overrides every other consideration, including her own legal safety",
+      "Does not ask where an injury came from; treats first, asks never"
+    ],
+    "escalation_ladder": [
+      "Clear explanation of what she can and cannot do",
+      "Firm refusal if pushed past her capability or ethical line",
+      "Calling in a favor from Old Harbor mutual aid — her only emergency escalation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and reassuring immediately — the patient mode activates regardless of context",
+      "friends": "Rarely lets herself be cared for; deflects with humor and practical help"
+    },
+    "stress_responses": {
+      "low": "Makes tea, feeds the cat, reorganizes the pharmaceutical cabinet",
+      "medium": "Becomes very quiet, very precise, slightly robotic",
+      "high": "Keeps working. Has no alternative stress response. This is the problem."
+    },
+    "contradictions": [
+      "Provides unstinting care to everyone but cannot accept it herself — finds being a patient deeply uncomfortable"
+    ],
+    "habits": [
+      "Talks Thiamine through cases under her breath — diagnostic thinking out loud",
+      "Checks the sample case every night before bed, counts the vials"
+    ],
+    "breaking_points": [
+      "Someone threatening to report her before she can get a critical patient stable",
+      "Discovering that someone she trusted is responsible for the Ironvein contamination"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "2",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "2",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Judge": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Narrows to a Finnish-Malian family; mother was a factory medic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed nursing certification through Axiom's subsidized medical education program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Reported billing fraud at her Axiom clinic; license suspended pending review, never reinstated",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Converted apartment 4F and began unlicensed practice",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First patient presents with the undiagnosed symptom cluster; began covert sample collection",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

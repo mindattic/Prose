@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab1d7abcb1b9a4e4cbb4413d",
+  "name": "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
+  "type": "weapon",
+  "aliases": [
+    "Typhoid",
+    "PDS-4",
+    "Plague Launcher",
+    "Patient Zero"
+  ],
+  "category": "chemical",
+  "description": "A weapon system designed to deliver engineered biological agents via aerosolized capsules launched from a modified grenade launcher platform. The PDS-4 fires capsules that burst on impact, releasing clouds of pathogen-carrying particles calibrated for maximum infection rate through respiratory exposure. Carrion offers a range of pathogen payloads — from fast-acting incapacitants that simulate severe flu symptoms to slow-developing agents designed for covert population-level delivery. The system exists in a legal gray zone: Carrion officially markets the launcher for 'agricultural pest control aerosol delivery,' and the pathogen payloads are sold through separate, deniable supply chains.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 5",
+  "legality": "Prohibited — biological weapon (officially does not exist as weapon)",
+  "base_technologies": [
+    "Engineered pathogen aerosolization",
+    "Targeted biological agent delivery",
+    "Respiratory infection optimization"
+  ],
+  "specifications": "launcher type: Modified 40mm grenade platform\neffective range: 30-100 meters\naerosolization radius: 8 meters from impact\npathogen options: Fast incapacitant, slow-develop covert, targeted genetic-marker selective\ninfection rate: 85-95% for unprotected respiratory exposure\ncapsule weight: 0.2 kg\nmagazine: 6 capsules\nlauncher weight: 3.8 kg\ncountermeasure: NBC-grade respiratory filtration",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A mystery illness spreading through Tier 2 has been traced to PDS-4 capsule fragments found in ventilation systems — someone deployed a slow-acting pathogen and the infection is still spreading.",
+    "Carrion's genetic-marker-selective pathogen has been loaded into PDS-4 capsules — it only affects people with a specific genetic heritage, making it an instrument of ethnic targeting."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "chemical",
+    "weapon",
+    "genetic",
+    "ai",
+    "control",
+    "market",
+    "fire",
+    "tier 5"
+  ]
+}

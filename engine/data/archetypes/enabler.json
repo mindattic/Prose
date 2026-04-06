@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a56c7b239a77cbcdba64124c",
+  "name": "Enabler",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Helps others do wrong by looking away",
+  "behavioral_signature": "Provides cover, excuses, resources for bad behavior",
+  "under_stress": "Enables harder, deeper",
+  "at_rest": "Justifies, rationalizes, minimizes",
+  "will_always": [
+    "smooth the path for others"
+  ],
+  "will_never": [
+    "confront the behavior they're enabling"
+  ],
+  "unless": [
+    "the enabled person hurts someone the enabler loves"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Corruptor",
+      "threshold": 0.8,
+      "context": "moral erosion"
+    },
+    {
+      "archetype": "People Pleaser",
+      "threshold": 0.65,
+      "context": "accommodation"
+    }
+  ],
+  "opposite_of": [
+    "Whistle-Blower"
+  ],
+  "tags": [
+    "complicit",
+    "passive"
+  ]
+}

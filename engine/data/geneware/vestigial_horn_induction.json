@@ -1,0 +1,51 @@
+{
+  "id": "019d6143a8b5798087efb911cb578e70",
+  "name": "Vestigial Horn Induction",
+  "brand_name": "Vestigial",
+  "product_name": "Vestigial Horn Induction",
+  "type": "geneware",
+  "aliases": [
+    "Crowns",
+    "The Rack"
+  ],
+  "category": "cosmetic",
+  "target_system": "skeletal/integumentary (cranial keratin growth)",
+  "description": "Activates dormant horn-growth genetic pathways — remnants of humanity's distant evolutionary ancestry — and combines them with bovid and cervid keratin sequences to produce controlled cranial horn growth. Results range from small, subtle ridges above the temples to full curved ram-style horns or branching antler formations. The modification is structural: the horns are real bone and keratin rooted in the skull. They grow slowly, can be shaped during growth by wearing molds, and must be trimmed if the user doesn't want them to keep growing. Helix Biosystems offers a seasonal-shed variant based on deer genetics where the horns drop off yearly and regrow, allowing the user to change styles. Horn culture in Meridian 88 is rich and varied — there are salons that specialize in horn shaping, lacquering, and decoration. In the Shelf, horns signal community identity; in the corporate towers, they signal controlled rebellion.",
+  "source_organism": "Ovis aries (domestic sheep), Cervus elaphus (red deer), synthetic growth modulators",
+  "manufacturer": "Helix Biosystems, Crucible Genomics",
+  "tier_availability": "Tier 2+ (basic nubs Tier 1, branching antlers Tier 3+)",
+  "legality": "Unrestricted",
+  "procedure": "Cranial periosteum injection with retroviral bone-growth factor, 1 session",
+  "expression_time": "3–8 months depending on desired size",
+  "reversibility": "Surgically removable; regrowth must be gene-suppressed or horns return",
+  "side_effects": [
+    "Headaches during initial bone growth",
+    "Horns may grow asymmetrically without corrective molds",
+    "Shedding variants produce intense itching during regrowth",
+    "Rare: uncontrolled growth requiring emergency surgical intervention"
+  ],
+  "social_perception": "Fashionable and widespread. Horn style communicates subcultural allegiance — curved horns read differently from antlers, which read differently from ridges. Corporate security sometimes requires horn-tip caps in high-security zones.",
+  "story_hooks": [
+    "A horn-shaping salon is secretly encoding data in the keratin growth patterns of unwitting clients — readable only with the right scanner",
+    "A Crucible Genomics horn package induces uncontrolled growth that doesn't stop, and the recall notice hasn't reached the street clinics that bought the batch"
+  ],
+  "tags": [
+    "cosmetic",
+    "geneware",
+    "war",
+    "secret",
+    "identity",
+    "genetic",
+    "synthetic",
+    "elf",
+    "corporate",
+    "control",
+    "ubc",
+    "clinic",
+    "fashion",
+    "shelf",
+    "tier 1",
+    "tier 2",
+    "tier 3"
+  ]
+}

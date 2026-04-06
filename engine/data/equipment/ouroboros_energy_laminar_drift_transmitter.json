@@ -1,0 +1,65 @@
+{
+  "id": "019d6143a86276e180ceef2c4f77778f",
+  "name": "Ouroboros Energy Laminar Drift Transmitter",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Laminar Drift Transmitter",
+  "type": "equipment",
+  "aliases": [
+    "The Drift",
+    "Laminar Box",
+    "OE-LDT",
+    "Current Whisperer"
+  ],
+  "category": "comms",
+  "description": "The Laminar Drift Transmitter exploits Meridian 88's ubiquitous electrical grid infrastructure as a covert communications medium, encoding encrypted data packets into the laminar noise floor of standard AC power distribution lines using sub-harmonic phase modulation at amplitudes indistinguishable from natural electrical drift and interference. Any building, district, or facility connected to the city's power grid becomes a potential transmission pathway — the signal travels through walls, floors, and conduit without any wireless emission, readable only by a paired receiver physically plugged into the same grid segment. Ouroboros Energy's deep familiarity with the city's power infrastructure is not incidental to this product's design.\n\nThe transmitter unit is roughly the size of a thick paperback book and draws its own operating power from the same line it uses to transmit, requiring no separate power source. Encryption is handled by a rotating cipher keyed to grid-segment-specific electrical characteristics — the same transmission on a different grid segment decodes as noise, meaning intercepted data is useless without knowledge of the exact node it originated from. The receiver is a compact plug-in module that can be concealed behind any standard outlet panel. Communication is low-bandwidth but highly reliable, unaffected by RF jamming, signal sweeps, or wireless interdiction measures.\n\nOuroboros Energy officially sells the Laminar Drift Transmitter to building security contractors and industrial monitoring firms as a 'grid-integrated sensor telemetry solution.' The device's clandestine communications applications are, officially, entirely the responsibility of end users. Unofficially, the system is understood to be the backbone of several long-running criminal and dissident communication networks that have proven extraordinarily difficult for city security forces to locate or disrupt.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Sub-harmonic AC phase modulation",
+    "Grid-segment-keyed encryption",
+    "Power line carrier communication (PLC)",
+    "Ambient power harvesting",
+    "Noise floor signal encoding"
+  ],
+  "specifications": {
+    "transmission_range": "Up to 800m along continuous grid segment; repeater-extendable",
+    "bandwidth": "Low — text, compressed audio, small data packets (4–12 kbps effective)",
+    "latency": "50–200ms depending on grid load",
+    "power_source": "Self-powered from transmission line; no external power required",
+    "detectability": "Undetectable by RF/wireless sweeps; requires physical line tap and specialized analysis hardware to identify",
+    "encryption": "Grid-segment-characteristic rotating cipher",
+    "form_factor": "Transmitter: 18x12x4cm hardcase unit with standard electrical interface; Receiver: 6x4x2cm plug-in module",
+    "operating_temperature": "Industrial range, -20°C to 70°C"
+  },
+  "tactical_use": "Deployed in fixed-location safe houses, long-term surveillance positions, and any facility where wireless communication is impossible, illegal, or suicidal. Particularly valuable in Faraday-shielded corporate facilities where operatives with physical access can establish a covert channel that exits the building through the power infrastructure rather than through any monitored wireless medium. Also used to establish persistent communication links between fixed nodes in contested urban territory without any visible antenna or transmission hardware.",
+  "cultural_context": "The Laminar Drift Transmitter is the preferred communications backbone of Meridian 88's older, more patient criminal networks — organizations that have operated for decades and understand that longevity requires infrastructure that doesn't depend on the wireless spectrum that security forces monitor obsessively. There's a generational divide in how operators regard it: younger street-level crews find it slow and inconvenient; veterans who have watched wireless-dependent networks get rolled up overnight treat it as the only trustworthy long-distance communication that exists. Ouroboros Energy's role as the city's primary power utility gives the device an eerie quality — using the grid to communicate means, in some sense, using Ouroboros's own infrastructure against monitoring efforts, with Ouroboros's own hardware.",
+  "known_users": [
+    "Long-established criminal syndicates",
+    "Political resistance infrastructure cells",
+    "Corporate industrial espionage sleeper assets",
+    "Ouroboros Energy internal security (monitoring for unauthorized use)",
+    "Information broker 'Marisol Vend'",
+    "Fixed-position surveillance operatives"
+  ],
+  "story_hooks": [
+    "A building the players are hired to clear has a Laminar Drift receiver hidden behind an outlet panel; someone outside the building has been receiving transmissions from inside for months, and the building's previous occupants are all dead.",
+    "Ouroboros Energy quietly approaches the players to locate and remove an LDT network operating on a grid segment they're about to upgrade — but they want the hardware recovered intact, not destroyed, and won't say why.",
+    "A Drift Transmitter starts appearing in the electrical noise of the players' safe house grid segment; someone is transmitting from within 800 meters, and the encoded packets are addressed to one of the players by name.",
+    "The players discover that a city-wide Laminar Drift network has been operational for over a decade, connecting nodes across every district — and that the entity running it isn't criminal or dissident at all, but something that shouldn't be capable of wanting to communicate."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "trust",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "night",
+    "energy",
+    "tier 2"
+  ]
+}

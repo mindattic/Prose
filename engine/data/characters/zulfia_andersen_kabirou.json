@@ -1,0 +1,179 @@
+{
+  "id": "019d6143a73c7407a3606962c86ac5da",
+  "type": "character",
+  "name": "Zulfia Andersen-Kabirou",
+  "aliases": [
+    "Zul",
+    "Nurse Z"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Community nurse and wound-care practitioner, operating out of a walk-in clinic",
+  "age": 44,
+  "status": "active",
+  "location": "Hough Reclamation — Bright Passage Community Clinic, a converted ground-floor retail unit with hand-lettered signs",
+  "description": "Zulfia is tall with a slightly stooped posture from decades of bending over patients — she's never fully corrected it and at this point she doesn't intend to. Her family line runs Uzbek-French on her father's side and Nigerien-Danish on her mother's, producing someone with sharp cheekbones, tawny-brown skin that holds color well under the clinic's poor lighting, and pale gray eyes that have struck patients as either comforting or unnerving depending on what she's about to tell them. She wears her dark hair in a practical high bun sealed with a clip she's had since nursing school. Her only geneware is patterned irises — tiny interlocking hexagons in the gray of her eyes, a detail she got as a young woman and now never discusses, as though she's forgotten it's unusual.\n\nZul operates in the register of professional calm that people either find deeply reassuring or read as coldness, and she has made her peace with the fact that both readings are partially correct. She rations warmth as carefully as she rations dressings and antibiotic stock — there's never quite enough, so it goes to whoever needs it most. She has treated gunshot wounds, overdoses, radiation rash, augmentation rejection, labor complications, and a corponation executive who appeared at her back door at 02:00 asking her to not document anything. She is not naive. She is tired. She continues anyway.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "The clinic closing — that she will be the last line and then there will be no line",
+      "That she has already made one clinical error significant enough to have changed an outcome, and that she will one day find out which one"
+    ],
+    "core_desires": [
+      "Adequate supply — just once, enough dressings, enough antivirals, enough hours",
+      "To train someone competent enough to take over so she can finally rest"
+    ],
+    "coping_mechanisms": [
+      "Procedural focus — during a crisis she narrows entirely to the clinical task, no space for feeling",
+      "Writes in a paper journal every evening, in Uzbek, which she believes no one in Hough Reclamation can read"
+    ],
+    "blind_spots": [
+      "Her own health — she notices symptoms in others immediately and ignores identical symptoms in herself",
+      "Believes her emotional detachment is professional rather than protective"
+    ],
+    "secret": "Her Helix Biosystems auxiliary credential is not simply lapsed — it was revoked after she filed a report documenting a pattern of augmentation-rejection cases she traced back to a batch of Helix implants sold in Hough Reclamation below market rate. Helix suppressed the report and revoked her credential. She still uses the credential number for wholesale access because she discovered that Helix's internal systems haven't flagged it yet. She is waiting for the day they notice."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clinical and precise; doesn't soften diagnoses but delivers them without cruelty; occasionally drops French phrases from her father's family when she's too tired to find the English",
+    "cadence": "Measured and unhurried, as if she's pacing herself for the long conversation rather than this one.",
+    "verbal_tics": [
+      "'Tell me where it started' — her standard opener for any problem, medical or otherwise",
+      "'Voilà' when something is resolved or obvious",
+      "Long pauses before delivering news, good or bad"
+    ],
+    "example_lines": [
+      "'Tell me where it started. Not the pain — before the pain.'",
+      "'I can treat this. Whether you let me treat it is separate. Voilà — that's always the question.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The suppressed Helix Biosystems report exists in a backup she keeps off-network on a physical chip in the clinic's wall — she's considering releasing it but needs to know the release would actually reach someone who could act on it.",
+    "A patient came in three days ago with injuries inconsistent with the story they told, left before Zulfia could ask the right questions, and left something behind in the treatment room — something small and data-bearing.",
+    "Her steady-hand stabilizers are failing — they were self-installed from salvaged parts and she doesn't have the components to repair them; without them, her fine surgical work becomes dangerous."
+  ],
+  "narrative_function": "Medical resource and safe haven; information source on the health conditions of the district (knows who's sick, what they're sick with, what they're taking); moral center figure; can provide healing services but always at a cost in obligation or information; potential quest hook via patients who bring their problems through her door.",
+  "augmentations": "Patterned irises (hexagonal geneware, gray); steady-hand sub-dermal stabilizer in both wrists (medical-grade, self-installed from salvaged parts — reduces fine-motor tremor during procedures).",
+  "daily_life": "Clinic opens 08:00 and theoretically closes at 18:00; in practice she's there until the last patient leaves, which is often 21:00 or later; Wednesdays she runs a rotating health-education session for the Reclamation's youth cohort.",
+  "affiliation": "Independent clinic, loosely networked with the Hough Reclamation mutual aid collective; holds a lapsed Helix Biosystems auxiliary credential she uses to access pharmaceutical wholesale pricing",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Medical Authority",
+      "Corporate Adversary",
+      "Suppressed Evidence",
+      "Running on Fumes"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Treat first, ask questions during, make judgments after — never refuse care based on who someone is",
+      "Document everything, keep copies, trust no cloud storage",
+      "Spend the limited warmth where it will do the most repair"
+    ],
+    "escalation_ladder": [
+      "Clinical professional mode — neutral, information-gathering",
+      "Direct statement of concern, once, with full eye contact",
+      "Quiet, total withdrawal of access — you no longer get through her door"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing, professionally kind, watches hands and face for what people aren't saying",
+      "friends": "Dryer humor, more honesty, will give you the actual prognosis rather than the gentle version"
+    },
+    "stress_responses": {
+      "low": "Works faster, more methodically",
+      "medium": "Goes entirely quiet; communicates in gestures and instrument requests",
+      "high": "Finishes whatever she's doing with perfect focus, then closes the clinic and sits on the roof alone for forty minutes"
+    },
+    "contradictions": [
+      "Dedicates her life to keeping others alive while consistently neglecting her own maintenance"
+    ],
+    "habits": [
+      "Inventories supply stock every Sunday morning before the clinic opens, by hand, even though it's also tracked digitally",
+      "Touches her wrist stabilizers unconsciously when thinking",
+      "Keeps a kettle going — offers tea at the beginning of every patient intake, regardless of the complaint"
+    ],
+    "breaking_points": [
+      "A preventable death caused by supply shortage she'd flagged repeatedly",
+      "The clinic being raided or shut down by Helix Biosystems acting on her credential access"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Steady-hand subdermal stabilizers, both wrists (salvage-built, degrading)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Steady-hand subdermal stabilizers, both wrists (salvage-built, degrading)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

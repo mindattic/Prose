@@ -1,0 +1,66 @@
+{
+  "id": "019d6143ab11707c80474db614106a33",
+  "name": "Ablative Charge Disruption Rifle ACDR-2 'Sandpaper'",
+  "type": "weapon",
+  "aliases": [
+    "Sandpaper",
+    "The Stripper",
+    "Flense Rifle",
+    "Ablator"
+  ],
+  "category": "cyber",
+  "description": "The Ablative Charge Disruption Rifle ACDR-2 fires a coherent stream of triboelectrically charged microparticles — each grain roughly 40 microns in diameter — accelerated to moderate velocity through a segmented linear barrel. On contact with a target surface, the particles discharge accumulated static potential simultaneously, creating a combined ablative and electrostatic effect that strips insulating coatings, disrupts surface-mounted electronics, and causes intense localized irritation to exposed biological tissue. It is, in the bluntest terms, a gun that sandpapers things until they stop working.\n\nArctures Defense Solutions developed the ACDR-2 primarily as an anti-materiel platform for defeating hardened drone carapaces and armored cyberware without requiring explosive munitions in confined spaces. The triboelectric charge buildup during barrel transit is self-generating — the particles charge themselves against the barrel lining, meaning the weapon requires no external charge source beyond the kinetic energy of the propellant. This passive charging mechanism keeps the design mechanically simple and brutally reliable, with fewer failure points than comparable electromagnetic weapons.\n\nThe weapon's unpleasant reputation among its users comes from its secondary biological effect. While not designed as an anti-personnel weapon, the microparticle stream causes severe dermabrasion and mucosal irritation at close range, and the electrostatic discharge against cybernetic implants can trigger involuntary motor responses and sensory feedback spikes. Users have described the experience of being hit as feeling like being scrubbed with broken glass that also bites. Field operators have given it the nickname 'Sandpaper' with no affection.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — registered operators and contracted security; Restricted — civilian",
+  "base_technologies": [
+    "Triboelectric charge accumulation",
+    "Linear magnetic acceleration",
+    "Electrostatic surface disruption"
+  ],
+  "specifications": "effective range: 3–25 meters optimal, degraded beyond 40 meters\nparticle size: 35–50 microns, variable by canister load\nmuzzle velocity: 320 m/s particle stream\npower source: Kinetic self-charging barrel lining, standard propellant cell\nweight: 3.8 kg with standard canister\ncanister capacity: 80 bursts per canister\nanti-materiel effectiveness: Rated for hardened polymer carapace and Grade 2 cyberware coating\nform factor: Bullpup carbine configuration with swappable canister breech",
+  "tactical_use": "Used in drone interdiction, anti-cyberware engagements, and close-quarters breaching where explosive munitions create unacceptable collateral risk. Operators typically sweep exposed drone joints and sensor clusters before engaging with primary weapons. In anti-personnel roles, targeting cybernetic limbs and implant housings forces opponents to manage involuntary feedback responses, creating openings for secondary engagement. Requires operators to wear particle filtration masks, as backscatter in enclosed spaces can irritate users' own respiratory systems.",
+  "cultural_context": "Among cyberware-heavy communities in Meridian 88, the ACDR-2 is regarded with particular contempt — it targets the augmentations people have sacrificed to obtain, treating expensive bodily investment as a vulnerability. Getting 'sandpapered' is used as slang for having your identity systematically eroded by institutional forces. Ironically, the weapon is also used by anti-augmentation extremist groups who have obtained black market units, giving it an uncomfortable political double meaning. Legitimate security contractors who use it often face hostility from aug-positive communities even when deployment is legally sanctioned.",
+  "known_users": [
+    "ARCTURUS DEFENSE SOLUTIONS field demonstration teams",
+    "Corporate drone interdiction specialists",
+    "Anti-augmentation extremist cells (black market units)",
+    "Meridian 88 Tactical Response Units (licensed)",
+    "'Grit' — a freelance wrecker known for disabling cyberware before negotiations"
+  ],
+  "story_hooks": [
+    "A series of attacks on aug-clinic workers have been carried out with ACDR-2s traced back to a legitimate security contractor — someone is using licensed weapons for ideologically motivated violence and covering it with paperwork.",
+    "A new canister load has appeared on the black market with particles sized to penetrate cybernetic housing seals rather than just strip coatings — essentially turning the weapon into a cyberware killer.",
+    "An ARCTURUS whistleblower claims the 'self-charging' barrel mechanism has a secondary function that records electrostatic signatures of every cyberware system it hits, feeding a biometric database.",
+    "A player character's expensive new cyberlimb has been flagged as having a coating composition that makes it uniquely vulnerable to ACDR-2 fire — and someone knows it."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "violence",
+    "gun",
+    "war",
+    "identity",
+    "augment",
+    "cyberware",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "clinic",
+    "market",
+    "bar",
+    "rain",
+    "sacrifice",
+    "armor",
+    "drone",
+    "explosive",
+    "energy",
+    "fire",
+    "tier 3"
+  ]
+}

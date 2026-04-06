@@ -1,0 +1,224 @@
+{
+  "id": "019d6143a5a57abe8eee51ea42957700",
+  "type": "character",
+  "name": "Afolabi Strand-Quereshi",
+  "aliases": [
+    "Abi",
+    "the Fitter"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Prosthetics fitter and rehabilitation specialist",
+  "age": 41,
+  "status": "active",
+  "location": "Geartown, Strand-Quereshi Prosthetics — a narrow shopfront between a rig-parts supplier and a noodle stall",
+  "description": "Afolabi is tall and angular, with dark brown skin and a shaved head that they keep oiled and gleaming. Their right arm from the elbow down is their own work — a prosthetic they built and rebuilt over twelve years, currently a matt-charcoal titanium alloy hand with individually articulated fingers that can operate independently and have small UV LEDs in the fingertips that they use when working in tight spaces. When they're not working they wear a cosmetic sleeve over it: a pressure-fitted silicone cover patterned with geometric Yoruba-inspired designs in rust and ochre that they had printed locally.\n\nThey are meticulous and demanding in their craft and surprisingly tender with patients, particularly children and people who are newly amputated and frightened. They have a workshop philosophy they articulate clearly and often: a prosthetic that doesn't fit the person's actual life is a failure regardless of spec, and they will spend weeks in iterative fitting before they sign off. They take payment plans seriously and have never sent anyone to a collector. The shop is cluttered and organized by a system only they fully understand, and there are components of seven different half-finished limbs hanging on the wall at any given time.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Producing work that fails a patient at a critical moment",
+      "That the component supply chains they depend on will become fully corporate-gated and price out their patient base"
+    ],
+    "core_desires": [
+      "To build a prosthetic that genuinely exceeds what a biological limb can do for a specific person's specific life",
+      "To not have to choose between quality and accessibility"
+    ],
+    "coping_mechanisms": [
+      "Total absorption in fabrication as emotional regulation",
+      "The iterative refinement process as a substitute for other kinds of patience they struggle with",
+      "Building things for themselves when no client work is available"
+    ],
+    "blind_spots": [
+      "Takes their own history of physical loss as universal — assumes everyone grieves a missing limb the way they did",
+      "Sometimes iterates past the point of necessary into the territory of personal project"
+    ],
+    "secret": "The reason their arm is a prosthetic is that they lost it in an accident at a Helix Biosystems component manufacturing facility where they worked at age 24 — an accident that Helix settled quickly and quietly. The settlement funded the shop. They have never told any patient this because they don't want pity to be part of the transaction, and because the fury is still there under the surface and they don't trust what happens when they let it out."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical but never condescending with patients; shifts to precise engineering language with suppliers and peers; occasional Yoruba words and Norwegian idioms that reflect their family's layered background",
+    "cadence": "Thoughtful and unhurried, with long pauses during fitting work where they say almost nothing and then deliver a complete assessment",
+    "verbal_tics": [
+      "'Tell me about your actual day' — used to redirect patients from describing what they think they need to what they actually need",
+      "'That's a starting point, not a finish'"
+    ],
+    "example_lines": [
+      "'Tell me about your actual day — not your ideal day, not what you think I want to hear. What does Tuesday actually look like for you? Because this hand has to work on Tuesday.'",
+      "'That's a starting point, not a finish. Come back in a week and tell me what it's lying to you about.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient has come in with a prosthetic that contains components Afolabi recognizes as part of a Helix proprietary trial run — components that shouldn't be in civilian hands yet, and that are behaving in ways the patient doesn't understand",
+    "Geartown's primary component supplier has been bought out and the new corporate owner is restricting sale to licensed corporate-affiliated shops only — Afolabi needs alternative sourcing urgently"
+  ],
+  "narrative_function": "Specialized services provider for anyone needing prosthetics or rehabilitation support; information source for Geartown's community; can identify augmentation hardware and its origins; quest giver for component sourcing",
+  "augmentations": "Right arm prosthetic (self-built, titanium alloy, individually articulated fingers, UV LEDs in fingertips, cosmetic silicone sleeve for off-hours); retractable magnification lenses in both eyes (occupational, installed to support fine detail work)",
+  "daily_life": "Opens the shop at 0800, runs morning fittings and adjustments, spends afternoons in fabrication building new components, closes after dark only when a fitting or emergency demands it.",
+  "affiliation": "Independent; informal supply relationship with Geartown parts network and occasional Helix Biosystems component contracts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prosthetics_fitter",
+      "rehabilitation_specialist",
+      "independent_operator",
+      "geartown",
+      "self_modified",
+      "corporate_grievance"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The fit serves the patient's life, not the spec sheet",
+      "Never rush a fitting because the queue is long",
+      "Don't take Helix contracts that include data-sharing clauses about patient outcomes"
+    ],
+    "escalation_ladder": [
+      "Patient redirection and clarifying questions",
+      "Direct and calm statement of disagreement",
+      "Refusal to continue work until the issue is resolved on their terms"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Reserved initially, assessing, warms considerably once they identify a genuine need or shared competence",
+      "friends": "Dry humor, unexpectedly generous with time, will quietly build something small and useful for a friend without announcing it"
+    },
+    "stress_responses": {
+      "low": "Focuses more deeply on fabrication, becomes less talkative",
+      "medium": "Systematic problem-solving mode, lists options aloud to themselves",
+      "high": "Short-tempered and precise, finishes the work in front of them before dealing with the source of stress"
+    },
+    "contradictions": [
+      "Advocates for patient autonomy absolutely but has significant difficulty delegating or trusting others to do fitting work to their standard"
+    ],
+    "habits": [
+      "Runs the UV LEDs in their prosthetic fingers when thinking — an unconscious light-display",
+      "Talks to the half-finished limbs on the wall",
+      "Oils their prosthetic sleeve every morning before opening"
+    ],
+    "breaking_points": [
+      "A patient harmed by inferior components forced on them by corporate supply restrictions"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9,
+    "Optimist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironvein to a Yoruba-Norwegian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost right arm below elbow in Helix component manufacturing facility accident; settled quickly and quietly",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Used settlement funds to open Strand-Quereshi Prosthetics in Geartown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed first self-built replacement arm; has rebuilt it six times since",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a6fb7187b24e80a4b1496c19",
+  "type": "character",
+  "name": "Tiare Nishi-Anim",
+  "aliases": [
+    "Graphite",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
+  "age": 27,
+  "status": "active",
+  "location": "The Spires — mid-level corporate residential towers",
+  "description": "Tiare Nishi-Anim are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 27, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and they make no effort to hide it.\n\nThey arrived in Meridian 88 six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a counterintelligence specialist out of The Spires, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented counterintelligence specialist in Meridian 88, but they might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.53,
+      "ideal": 0.67,
+      "id": 0.41,
+      "shadow": 0.15,
+      "mask": 0.98,
+      "ghost": 0.26
+    },
+    "core_fears": [
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "That the work they do makes the city worse, not better",
+      "That they're fundamentally alone and connection is just a vulnerability"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "To build something that outlasts the next contract cycle",
+      "Stability — a place to sleep that's the same place two nights running"
+    ],
+    "coping_mechanisms": [
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Exercises compulsively — the body must be ready, always",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+    ],
+    "blind_spots": [
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Tiare Nishi-Anim betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening",
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+    ],
+    "example_lines": [
+      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
+      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
+      "\"I find the leak. What happens to the leak after that isn't my department.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Tiare Nishi-Anim's reputation — and a price for silence",
+    "Tiare Nishi-Anim's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A dead drop Tiare Nishi-Anim maintains is found and cleaned out — whoever did it now has leverage"
+  ],
+  "narrative_function": "Tiare Nishi-Anim functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform. Eye replacement — one organic, one cybernetic with recording capability and zoom",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — maintains network of professional contacts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 9
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.94,
+      "caution": 0.86,
+      "loyalty": 0.53,
+      "greed": 0.35,
+      "empathy": 0.25
+    },
+    "drives": [
+      "justice",
+      "power",
+      "loyalty"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 7,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "mechanical aptitude — can repair or modify almost anything"
+    ],
+    "weaknesses": [
+      "substance dependency — functional but fragile",
+      "poor impulse control in specific triggers"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "counterintelligence specialist",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always has an exit route planned before agreeing to any meeting",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always verifies target identity independently before lethal contracts",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Never drinks anything they didn't see poured or open themselves"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Move-by-wire system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
+      "replaces": ""
+    },
+    {
+      "name": "Eye replacement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

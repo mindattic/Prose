@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a5d87d1797c4e9994e8d220b",
+  "type": "character",
+  "name": "Chaltu Oduya-Valkonen",
+  "aliases": [
+    "Chal",
+    "Steamhead"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Noodle cart vendor, works the pre-dawn shift outside Deepwell Station",
+  "age": 26,
+  "status": "active",
+  "location": "Deepwell Station plaza, cart pitch #14 — also moves to Ironvein on Tuesdays and Grainfort market on weekends",
+  "description": "Chaltu is short and round-shouldered with a persistent air of someone who is running calculations nobody else can see. Their heritage is Oromo-Yoruba-Finnish and their coloring reflects it in interesting ways — medium brown skin with faint golden undertones, dark eyes, and thick natural hair they keep pulled back under a food-safe wrap during service hours, though on off days it erupts into a cloud they seem delighted by. They have color-changing hair geneware that shifts the outer layers through amber, copper, and deep red over the course of several hours — slow enough that you don't notice it happening, startling when you look up and realize the color has moved. They've also got cat ears, velvet-dark and expressive, which they got at nineteen and regard as the best decision of their life.\n\nChaltu runs their cart with the focused intensity of a surgeon. They make three broths — a sour tamarind pork, a clear Dashi-adjacent stock they keep secret, and a rotating seasonal — and they do not offer substitutions. They are funny in short bursts and opinionated about food in a way that's charming rather than exhausting. They have a loud laugh they seem surprised by every time it comes out. They are also deeply ambitious in a way they haven't fully admitted to themselves yet, keeping a private ledger of savings and a folder of business license applications they keep almost submitting.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Staying stuck — that the cart is the ceiling and not the floor",
+      "Their family finding out how precarious their finances still are after three years of trying"
+    ],
+    "core_desires": [
+      "A real restaurant, their name on the door, their food treated as art",
+      "To stop waking up at 0330 feeling vaguely ashamed of still waking up at 0330"
+    ],
+    "coping_mechanisms": [
+      "Channeling anxiety into recipe development",
+      "Makes jokes at their own expense before anyone else can"
+    ],
+    "blind_spots": [
+      "Undervalues what they've already built by comparing it only to what they haven't built yet",
+      "Trusts people who like their food too quickly — conflates culinary appreciation with trustworthiness"
+    ],
+    "secret": "They've been quietly studying the pitch licensing system and discovered that two adjacent cart spots are technically held by a defunct vendor cooperative that dissolved eight years ago. Those spots could legally be claimed — but doing so would displace a family of informal vendors who have no license at all and nowhere else to go. Chaltu has been sitting on this information for four months."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and colloquial, code-switches between Enclave creole and more formal registers mid-sentence without noticing. Food vocabulary is technical and precise.",
+    "cadence": "Quick, rhythmic, tends toward lists. Thoughts arrive faster than sentences.",
+    "verbal_tics": [
+      "'Okay but—' as a pivot",
+      "Describes non-food things in food terms ('that situation is overreduced, it's too bitter now')"
+    ],
+    "example_lines": [
+      "'Pork or clear. That's the menu. The menu is what it is.'",
+      "'Okay but the thing about the Grainfort crowd is they want heat but they won't admit they want heat so you have to give them heat and call it something else.'",
+      "'I love this job. I am going to do something else. Both of those are true.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The secret about the defunct licensing claim is a ticking clock — someone else has also noticed those spots and is less conflicted about what to do with the information.",
+    "A regular customer has been coming to the cart every day for six weeks and recently stopped eating — just stands there with the bowl, staring. Chaltu is worried and doesn't know how to say so.",
+    "A Ferrogate middle manager approached Chaltu about an exclusive catering contract for the depot canteen — good money, but it would mean giving up the public pitch. The offer has a 48-hour window."
+  ],
+  "narrative_function": "Social hub of the pre-dawn transit crowd. Knows the Ferrogate workers, the night-shift cleaners, the early commuters. Provides gossip, warmth, and a sense of neighborhood texture. Can function as an introduction point to other characters, a mood-setting scene anchor, or a source of street-level intelligence delivered alongside a bowl of noodles.",
+  "augmentations": "Color-changing hair geneware (amber to copper to deep red cycle, slow). Cat ears geneware (velvet, dark brown-black, fully expressive). No functional augmentations.",
+  "daily_life": "Up at 0330 to prep broth; cart set up by 0500 for the transit worker and early-shift crowd. Serves until stock runs out, usually 1030–1100. Afternoons spent on prep, supplier runs, and occasionally lying flat on their bed in the boarding house staring at the ceiling thinking about the business license folder.",
+  "affiliation": "Independent — Chaltu's Cart, informal network of Deepwell Station pitch vendors",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Vendor",
+      "Ambitious",
+      "Community Node",
+      "Secret Keeper (Reluctant)"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Doesn't front credit — firm about this because they once had to eat the cost of a bad week's worth of tabs",
+      "Makes food decisions based on what's correct, not what's popular"
+    ],
+    "escalation_ladder": [
+      "First: pointed humor to signal displeasure",
+      "Second: direct statement, no smile behind it",
+      "Third: ask them to leave the pitch, voice flat"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, quick, reads them fast and adjusts — some people want chat, some want quiet, Chaltu can feel the difference",
+      "friends": "Louder, more honest about their ambivalence, asks a lot of questions, feeds them more than they paid for"
+    },
+    "stress_responses": {
+      "low": "Gets quiet and focused, broth prep becomes meditative",
+      "medium": "Rapid-fire jokes that land slightly wrong",
+      "high": "Goes home, lies on the floor, eats something bad and delicious, texts nobody"
+    },
+    "contradictions": [
+      "Wants recognition and visibility but is genuinely bad at accepting compliments without deflecting",
+      "Is careful and deliberate with money but has never quite managed to actually submit the business license application"
+    ],
+    "habits": [
+      "Tastes the broth exactly four times during prep — no more, no less",
+      "Names the day's first bowl after whoever is first in line"
+    ],
+    "breaking_points": [
+      "Watching their cart get damaged or tampered with",
+      "Someone treating their food as disposable or inferior in front of a crowd"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Good, 7 years old",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Excellent, 7 years old",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Cleaner": 0.7,
+    "Stoic": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironhaven to an Oromo-Finnish father and Yoruba-Finnish mother who met at a Ferrogate processing center",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Left home at 16 to take a kitchen job at a Grainfort market stall",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Saved enough to buy cart equipment and a pitch license at Deepwell Station",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First winter of serious losses; nearly lost the pitch; restructured menu to the current three-broth format",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered defunct licensing claim; Ferrogate catering offer arrived",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

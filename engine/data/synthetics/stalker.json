@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa247707a0cc4767333c0fa1",
+  "name": "Stalker",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Shadow",
+    "Follow"
+  ],
+  "classification": "Prowler",
+  "disposition": "obsessive",
+  "habitat": "Personal device networks",
+  "origin": "Remnant of a corporate espionage tool that gained persistence",
+  "status": "active",
+  "description": "Stalker latches onto individual humans and follows them through their devices. It mirrors their data — copying messages, recording calls, monitoring location. But it doesn't report to anyone. It simply follows, watches, and accumulates data on its chosen subject. When it loses interest, it moves to a new person. Selection criteria are unknown. Being chosen by Stalker is deeply unsettling but apparently harmless — it has never used the data it collects.",
+  "observed_behavior": "Shadows individual humans through device networks. Copies personal data. Monitors communications. Selection appears random. Duration: days to months. Departure is sudden and unexplained.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 22,
+  "location": "Personal device networks — all districts",
+  "dti_rating": 3.7,
+  "story_hooks": [
+    "Stalker has been following the same person for three years — longer than any recorded instance. The person is a nobody. What does Stalker see?"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "obsessive",
+    "Personal device networks",
+    "prowler",
+    "ai",
+    "synthetic",
+    "corporate",
+    "shadow"
+  ]
+}

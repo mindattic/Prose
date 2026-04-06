@@ -1,0 +1,63 @@
+{
+  "id": "019d6143a9097a908fa5be084cdd7f59",
+  "name": "Sustrel",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Long Haul",
+    "Ironlung",
+    "Sustain"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "endurance_sustainer",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Sustrel is a metabolic optimization compound that enhances mitochondrial efficiency, upregulates fatty acid oxidation, and suppresses the accumulation of lactate and other fatigue metabolites in muscle tissue. It does not accelerate the body — it extends its operational envelope, allowing sustained physical exertion at high intensity without the degradation that normally forces rest. Designed for long-duration special operations, Sustrel is the drug for ops that run across multiple hours of sustained contact.",
+  "method_of_use": "oral",
+  "effects": [
+    "Elimination of physical fatigue signals for duration",
+    "Maintained peak cardiovascular output over extended periods",
+    "Suppression of hunger and thirst signals",
+    "Sustained fine motor control and cognitive sharpness despite physical stress",
+    "Dramatically extended operational endurance — 8-12 hours of hard activity without degradation"
+  ],
+  "side_effects": [
+    "Severe dehydration risk — thirst suppression masks fluid loss",
+    "Dangerous overheating as the body's rest-forcing mechanisms are bypassed",
+    "Post-duration exhaustion is proportional to effort expended — can be incapacitating",
+    "Immune suppression during duration increases infection risk from wounds",
+    "Long-term metabolic disruption with chronic use — difficulty maintaining weight, persistent fatigue baseline",
+    "Renal stress from sustained metabolite clearance"
+  ],
+  "duration": "8-14 hours",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 2-3",
+  "legality": "legal",
+  "street_price": "Φ75 per tablet",
+  "cultural_context": "Sustrel is the working-class combat drug — it's legal, it's relatively cheap, and it does exactly what it says. Shelf laborers use it for brutal double shifts in the underground infrastructure tunnels. Long-haul runners take it for extraction ops that can't afford to let fatigue be a variable. Because it's legal, it's in every pharmacy in Tier 2-3, which means it's also in every Shelf market slightly above cost. The dark side of Sustrel is visible in the long-term users — people who've been pushing their bodies past their limits for years and are now paying the metabolic debt in chronic illness and early aging.",
+  "story_hooks": [
+    "A runner's team realizes mid-op that their Sustrel supply was sabotaged — the tablets are inert, and the job requires another nine hours of sustained movement through hostile territory.",
+    "A Shelf community is developing a Sustrel dependency problem not for combat but for survival — people are taking it to work double shifts and the post-duration crashes are filling the local clinic.",
+    "Novafold has quietly reformulated Sustrel with a lower active compound concentration to maintain margins — the duration has dropped from 14 to 8 hours, but the packaging hasn't changed, and someone on a critical long-duration op is about to find out."
+  ],
+  "tags": [
+    "combatstimulant",
+    "endurancesustainer",
+    "pharmaceutical",
+    "combat",
+    "loss",
+    "ai",
+    "elf",
+    "control",
+    "debt",
+    "clinic",
+    "tunnel",
+    "market",
+    "dark",
+    "survival",
+    "hunger",
+    "drug",
+    "stimulant",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab5178c48ec1c564804e58a3",
+  "name": "Tessera Industries Data Spike DS-1 'Upload'",
+  "type": "weapon",
+  "aliases": [
+    "Upload",
+    "DS-1",
+    "Data Knife",
+    "The Spike"
+  ],
+  "category": "cyber-integrated",
+  "description": "A wrist-mounted penetrating spike connected to the user's neural interface that physically punctures a target's cyberware housing and establishes a direct hardline connection to their implant network. The spike is a 6cm retractable carbon-ceramic needle containing a fiber-optic data conduit that can transmit attack payloads directly into a target's neural architecture, bypassing wireless security protocols entirely. The physical penetration is painful but rarely dangerous — the data payload is where the real damage occurs. Operators use it to inject malware, extract data, override motor functions, or in extreme cases, trigger a neural interface hard reset that can cause permanent cognitive damage.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited — cyberwarfare weapon",
+  "base_technologies": [
+    "Hardline neural penetration",
+    "Fiber-optic data injection",
+    "Cyberware housing breach engineering"
+  ],
+  "specifications": "spike length: 6 cm retractable\nspike material: Carbon-ceramic with fiber-optic core\npenetration depth: Sufficient for standard cyberware housing\ndata transfer rate: 40 Gbps through fiber-optic conduit\ndeployment: Wrist-mounted spring mechanism, 0.1 second extension\nweight: 0.12 kg total assembly\ncompatibility: Requires user neural interface for payload delivery",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A victim was found with a DS-1 puncture wound but no data payload was delivered — the spike was used purely as a physical weapon, suggesting the attacker wanted it to look like a cyber attack.",
+    "A new payload circulating for DS-1 users doesn't attack the target — it copies their entire neural interface memory buffer, stealing the last 48 hours of sensory experience."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "cyberintegrated",
+    "weapon",
+    "war",
+    "memory",
+    "cyberware",
+    "neural",
+    "ai",
+    "pain",
+    "tier 3"
+  ]
+}

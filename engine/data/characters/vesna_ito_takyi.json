@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a71375a4977c1b4685971ab1",
+  "type": "character",
+  "name": "Vesna Ito-Takyi",
+  "aliases": [
+    "Fulcrum",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Structural breach and explosive ordnance specialist — demolitions expert",
+  "age": 25,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "description": "Vesna Ito-Takyi is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 25, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Vesna Ito-Takyi is one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.93,
+      "id": 0.73,
+      "shadow": 0.5,
+      "mask": 0.76,
+      "ghost": 0.33
+    },
+    "core_fears": [
+      "Betrayal by someone they trust — the only currency that matters",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "Stability — a place to sleep that's the same place two nights running",
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+    ],
+    "blind_spots": [
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Cannot see that their independence is actually isolation wearing a better outfit"
+    ],
+    "secret": "Vesna Ito-Takyi is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
+      "\"I don't blow things up. I perform structural rearrangement.\"",
+      "\"The blast radius is your problem. My problem is making sure there's a blast.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Vesna Ito-Takyi's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "Vesna Ito-Takyi's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A dead drop Vesna Ito-Takyi maintains is found and cleaned out — whoever did it now has leverage"
+  ],
+  "narrative_function": "Vesna Ito-Takyi represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 5
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.12,
+      "caution": 0.7,
+      "loyalty": 0.38,
+      "greed": 0.65,
+      "empathy": 0.84
+    },
+    "drives": [
+      "freedom",
+      "protection",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 6,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "network of reliable contacts",
+      "strategic thinking under pressure"
+    ],
+    "weaknesses": [
+      "physical limitation from incomplete augmentation",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "demolitions expert",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always verifies target identity independently before lethal contracts",
+      "Never discusses active contracts with anyone not directly involved"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Counts ammunition obsessively — knows the exact round count at all times"
+    ],
+    "breaking_points": [
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    },
+    {
+      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Arsonist": 0.9,
+    "Risk Taker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

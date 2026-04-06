@@ -1,0 +1,201 @@
+{
+  "id": "019d6143a6a8762e9510f3806f7396b2",
+  "type": "character",
+  "name": "Rafaelo Dlamini-Papadakis",
+  "aliases": [
+    "Rafe",
+    "The Accountant"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Private investigator, licensed bounty compliance and debt recovery, operates out of Edgewater Prism",
+  "age": 51,
+  "status": "active",
+  "location": "Edgewater Prism — office above a bioluminescent algae bar called Photikar",
+  "description": "Rafaelo is a big man going soft in the middle, with dark olive-bronze skin, heavy grey-salted hair he keeps pulled back with a rubber band, and the kind of face that has been patient for so long it has settled permanently into patience. He dresses in the same rotation of rumpled linen jackets in muted terracotta and grey, never quite formal and never quite casual, and he has a geneware tail — a long, unhurried thing in rust-brown fur — that he got in his thirties when tails were newly fashionable and has kept because he grew fond of it. It curls around chair legs when he's thinking and goes very still when he's alarmed.\n\nHe has been a licensed PI for nineteen years. He started as Metro Police, left without drama, and built his solo practice from debt-recovery cases so dull that most investigators wouldn't touch them. He is extraordinarily good at finding people who do not want to be found, not because he is relentless but because he is patient and because he understands that almost everyone leaves one thread they don't notice. He charges fairly, keeps meticulous case notes, and has a long-standing rule against working cases that involve children. His office has a dedicated E.L.F. shrine — a small mahogany cabinet, always open — that he calls Ledger and which he believes keeps running tallies of debts, moral and financial, across the city. He consults it before taking unusual cases.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.45,
+      "ideal": 0.55,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.35,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "being responsible for an outcome he couldn't have prevented but should have",
+      "losing the distinction between recovery work and something uglier"
+    ],
+    "core_desires": [
+      "cases that are actually interesting",
+      "to believe that the work he does balances out more than it exploits"
+    ],
+    "coping_mechanisms": [
+      "rigid personal ethics as a substitute for the institutional ones he no longer trusts",
+      "consulting Ledger before decisions as a way of externalizing moral deliberation"
+    ],
+    "blind_spots": [
+      "believes his own ethical framework is more consistent than it actually is",
+      "has developed a comfortable cynicism that sometimes stops him from seeing genuine hope"
+    ],
+    "secret": "Eight years ago he found a man he was contracted to locate for a debt recovery firm. He found him and called in the location and the man was dead within seventy-two hours. The official verdict was unrelated — an accident. Rafaelo doesn't believe it. He kept the case file. He still checks on the debt firm occasionally, not knowing what he's looking for or what he'd do if he found it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical and dry, with occasional unexpected precision — he will use a very exact word where most people would approximate",
+    "cadence": "Unhurried, slightly formal without being stiff",
+    "verbal_tics": [
+      "Refers to Ledger as 'she' — 'she says this one's worth looking at'",
+      "'Hm' as a complete sentence when processing",
+      "Ends negotiations with 'so we're clear, then' even when things are not entirely clear"
+    ],
+    "example_lines": [
+      "'I find people. Occasionally I find things. I don't do anything with what I find except report it — what happens after is your business, not mine, and I need to believe that.'",
+      "'Ledger says this one's interesting. I've learned to trust her on interesting.'",
+      "'You'd be surprised how many people leave a thread. Usually it's something they love. People stop hiding when they miss something enough.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has been hired to locate someone whose description matches a character's contact — he approaches them, not to threaten, but because he thinks something is wrong with the case he's been handed",
+    "He shows up at the scene of something that wasn't supposed to be a crime and starts asking questions that are too specific to be casual",
+    "He offers a character a job: he has identified the thread in an eight-year-old case but following it requires someone who doesn't exist in any database he can access"
+  ],
+  "narrative_function": "Quest giver, information broker for hire, guide to the city's grey-zone legal mechanics, morally grounded private sector alternative to Metro",
+  "augmentations": "Geneware tail (rust-brown, expressive), memory-assist implant (searchable recall of case notes and conversations — passive, no recording), low-grade stress-response suppressor (keeps him calm in confrontational situations)",
+  "daily_life": "Opens the office at 0900, reviews any overnight messages, spends the middle of the day in the field or running database searches, returns to write up notes by evening; has dinner at Photikar downstairs three nights a week and knows the bartender well enough that she refills his water without being asked.",
+  "affiliation": "Self-employed, licensed through Meridian 88 Metro PI registration; occasional contracted work for Tessera Compliance Bureau",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "patient",
+      "principled",
+      "haunted",
+      "experienced",
+      "ethically anchored"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never take a case you can't afford to finish honestly",
+      "No children, no exceptions",
+      "If Ledger says don't, sleep on it"
+    ],
+    "escalation_ladder": [
+      "Patient observation and documentation",
+      "Direct, quiet confrontation with documented evidence",
+      "Formal report to relevant authority (Metro or licensing board)",
+      "Walk away from the case and refund the client — this is the nuclear option"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally measured — assesses before committing to any register",
+      "friends": "Drily warm, remembers everything, shows care through small reliable consistencies rather than demonstrative acts"
+    },
+    "stress_responses": {
+      "low": "Tail curls tighter, he gets quieter",
+      "medium": "Becomes very precise and methodical, strips emotion from speech entirely",
+      "high": "Goes absolutely still, makes one decision, and executes it"
+    },
+    "contradictions": [
+      "Professes that what clients do with his findings is their business, but has walked away from two paying cases because he didn't like what the findings would enable"
+    ],
+    "habits": [
+      "Opens the Ledger cabinet at the start and end of every workday",
+      "Never takes case calls before his first coffee",
+      "Writes case notes longhand first, digitalizes second"
+    ],
+    "breaking_points": [
+      "Evidence that a recovery case is actually a murder-location contract — he will burn the case file, refund the advance, and make sure someone appropriate knows"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Memory-assist implant — searchable passive recall, 15-year indexed archive of case conversations and notes",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Memory-assist implant — searchable passive recall, 15-year indexed archive of case conversations and notes",
+      "replaces": ""
+    },
+    {
+      "name": "Stress-response suppressor (low-grade) — blunts acute adrenaline spike in confrontational situations",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Stress-response suppressor (low-grade) — blunts acute adrenaline spike in confrontational situations",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware tail — rust-brown, full motor control, expressive",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware tail — rust-brown, full motor control, expressive",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

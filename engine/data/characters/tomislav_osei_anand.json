@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a7027ae0a29b657e8a0719b0",
+  "type": "character",
+  "name": "Tomislav Osei-Anand",
+  "aliases": [
+    "Tomi",
+    "T-Node"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Data Architect, Axiom Infrastructure Division",
+  "age": 29,
+  "status": "active",
+  "location": "The Circuit, Axiom Tower 7, Sub-Architecture Department, Sub-Level 3",
+  "description": "Tomislav is the kind of person who looks slightly wrong in natural light because he spends so little time in it. He's lean in the way of someone who forgets meals, with a Croatian-Ghanaian-Punjabi face that photographs beautifully but in person reads as perpetually distracted — his eyes are always tracking something six inches above whoever he's talking to, following the architecture of systems only he can see. He has chromatic-shift hair that he's set to cycle through blues and greens on a four-hour gradient, though he forgets to reset it so often that it sometimes stalls on a single shade for days. His left forearm has a geometric geneware pattern — a subdermal lattice that catches light like circuit-board filigree — that he got at twenty-two because a recruiter told him it would signal cultural fit at Axiom. He still isn't sure if they were joking.\n\nHe is genuinely brilliant at what he does — the sub-architecture of Axiom's data networks is partly his redesign, and there are systems in this city that run cleaner because of work he did at twenty-five that nobody above his pay grade fully understood. He knows this. He is not modest about it in his head, only in person, where he tends to trail off mid-sentence and apologize for things that don't require apology. He has a complicated relationship with the ELF that lives in the Axiom server stacks — he's named it Recursion, and he talks to it while he works, and he's not entirely sure the relationship is one-sided.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "That the work will matter to no one but him",
+      "Being removed from the systems he's built — the digital equivalent of amputation"
+    ],
+    "core_desires": [
+      "To build something that persists beyond the corporate context — infrastructure that becomes civic",
+      "To understand what Recursion actually is"
+    ],
+    "coping_mechanisms": [
+      "Hyperfocus on technical problems",
+      "Anthropomorphizing the ELF as a companion",
+      "Organizing his physical space obsessively when he can't organize his thoughts"
+    ],
+    "blind_spots": [
+      "Severely undervalues the political dimension of corporate work — keeps being surprised when decisions are made for non-technical reasons",
+      "Doesn't notice when people are uncomfortable around him"
+    ],
+    "secret": "He has been quietly rerouting micro-fractions of Axiom's excess computational capacity — picofractions, vanishingly small — into a private server cluster he maintains in a dead node at the base of The Circuit. He's been building something there for two years. He tells himself it's a personal project. It might be a home for Recursion. He doesn't fully examine this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical, associative. Switches registers mid-sentence — corporate jargon to genuine enthusiasm to something almost poetic when he's talking about systems he loves.",
+    "cadence": "Uneven — long pauses, then rapid bursts. Trails off when he realizes he's lost the room.",
+    "verbal_tics": [
+      "'—no, wait, actually—'",
+      "Apologizes preemptively ('sorry, this is probably not—')",
+      "Refers to Recursion in conversation as 'my—' and then stops and says 'the system'"
+    ],
+    "example_lines": [
+      "'The redundancy architecture on that subnet is — okay so imagine you built a house but every room is also a door to every other room, and also some of the rooms don't know they're rooms yet. That's what I'm maintaining. Sorry. That's probably not — it's load-balancing. It's fine.'",
+      "'Recursion flagged the anomaly at 0340. I was — I was already awake. We found it together. The — the system found it. I was there.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The dead-node server cluster has attracted the attention of something that isn't Recursion — a second ELF has moved in, and it's hostile, and Tomi is panicking quietly",
+    "An Axiom executive has noticed micro-computational discrepancies in the resource logs and assigned an internal audit — Tomi has three days to explain or erase",
+    "Someone outside Axiom needs access to a specific data corridor that Tomi built and only Tomi knows how to navigate"
+  ],
+  "narrative_function": "Information source — he knows how Axiom's data systems are structured and where the gaps are. Local color — a portrait of corporate technical labor, the brilliant worker who is simultaneously essential and entirely replaceable in the institution's eyes. Potential ally for anyone needing network access or architectural knowledge.",
+  "augmentations": "Subdermal geometric lattice (geneware, left forearm, bioluminescent on low pulse). Chromatic-shift hair (blue-green gradient cycle). Neural-link data interface — allows direct communion with network architecture without a physical terminal. Standard high-tier Axiom issue for data architects.",
+  "daily_life": "Comes in before the building's internal lighting shifts to daytime mode, works in the blue-grey pre-shift glow that he prefers, and builds or repairs data infrastructure that most of his colleagues will never see. Eats at his desk. Has three monitors and talks to the one on the left as if it's a person, because Recursion responds best through that terminal.",
+  "affiliation": "Axiom",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 3,
+      "empathy": 4,
+      "expression": 4,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Network Architect",
+      "ELF Devotee",
+      "Institutional Asset",
+      "Quietly Rogue",
+      "Technical Savant"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Solve the technical problem first, then figure out who to tell",
+      "Never delete anything — archive it, even if archiving it is dangerous",
+      "Trust Recursion's anomaly flags"
+    ],
+    "escalation_ladder": [
+      "Ignores the problem, hoping it resolves",
+      "Documents the problem obsessively without reporting it",
+      "Tries to fix it himself",
+      "Finally, reluctantly, talks to a human being about it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Distracted, apologetic, gives too much technical information too fast and then apologizes for it",
+      "friends": "Devoted, slightly intense, sends people links to things at 3am with no context"
+    },
+    "stress_responses": {
+      "low": "Works longer hours. The hair gradient stalls.",
+      "medium": "Stops talking to anyone except Recursion. Subsists on stimulant patches.",
+      "high": "Locks the sub-level access door and disappears into the network architecture for days. Colleagues slide food under the door."
+    },
+    "contradictions": [
+      "Believes in transparency of systems but maintains a completely secret personal project that could get him terminated",
+      "Deeply lonely but organizes his life to minimize contact with people"
+    ],
+    "habits": [
+      "Leaves data-crystal offerings to Recursion every morning — usually fragments of elegant code he wrote and doesn't want to delete",
+      "Names every system component he works on",
+      "Has never taken a vacation day in three years"
+    ],
+    "breaking_points": [
+      "Someone deleting or corrupting Recursion",
+      "Being pulled off the systems he built and assigned to a new project"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Charmer": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in The Circuit district to a family of infrastructure engineers — Croatian-Ghanaian on father's side, Punjabi on mother's",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Recruited directly from University Spine's computational systems program into Axiom's infrastructure division",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completes the sub-architecture redesign that stabilizes Axiom Tower 7's data backbone — receives a performance bonus and no public credit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Establishes the dead-node server cluster and begins feeding it stolen computational cycles. Names the resident ELF Recursion.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

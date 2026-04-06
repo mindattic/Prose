@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a5c27b69b2758f030389c6ab",
+  "type": "character",
+  "name": "Bertilak Soumaré-Dzhaksybekov",
+  "aliases": [
+    "Bert",
+    "the Prosthetics Man"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Prosthetics fitter working out of a small shop in Geartown, serving primarily industrial workers and dock laborers",
+  "age": 61,
+  "status": "active",
+  "location": "Geartown, Little Furnace",
+  "description": "Bertilak is a big man gone soft at the middle, with dark brown skin, a white-streaked beard he keeps neatly shaped, and deep-set amber eyes behind magnification lenses permanently clipped to his face like a second pair. His right arm from the elbow down is his own oldest prototype — a functional prosthetic he built thirty years ago and has upgraded piece by piece ever since, currently somewhere around its fourteenth major revision. He finds this funny. He calls it his 'living resume.' His workshop smells of industrial lubricant and warm solder and the dried herbs he burns as offerings to the shelf-mounted E.L.F. shrine in the corner.\n\nHe is patient, unhurried, and has a gift for understanding what a client actually needs from a prosthetic as opposed to what they say they want. He asks about their job, their hobbies, whether they have a partner who touches their hands, what they're afraid they won't be able to do anymore. He fits accordingly. He doesn't stock the highest-end components and doesn't pretend to — his clients are Tier 1 and 2 workers who need something durable and honest, not something that impresses people at a corporate mixer. He is deeply proud of this.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Being priced out of Geartown as the district gentrifies",
+      "Becoming unable to do the fine work himself as he ages"
+    ],
+    "core_desires": [
+      "To train an apprentice before he retires",
+      "For the workers he serves to be seen as people worth designing good technology for"
+    ],
+    "coping_mechanisms": [
+      "Physical work as emotional regulation",
+      "Talks to the E.L.F. shrine conversationally, not prayerfully — as if it's an old colleague"
+    ],
+    "blind_spots": [
+      "Assumes everyone shares his distrust of corporate medicine — sometimes misses that clients have more complex relationships with Helix or Axiom",
+      "His protectiveness toward clients occasionally tips into paternalism"
+    ],
+    "secret": "The accident that took his arm was not an industrial accident. He was assaulted by a former employer's security contractors for organizing a workers' health collective thirty years ago. He has told the industrial accident story so many times he has almost convinced himself it's true. Almost."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, practical, working-class. Uses the correct technical terms without showing off. Occasional Sahel-inflected idiom from his grandmother's language that he doesn't always realize he's using.",
+    "cadence": "Slow and deliberate. Comfortable with long silences while working. Doesn't rush.",
+    "verbal_tics": [
+      "'Let me see you move it'",
+      "'What do you actually do with that hand all day?'",
+      "Quiet affirmative grunt when something fits right"
+    ],
+    "example_lines": [
+      "'You want something that looks impressive or something that works while you're lifting two hundred kilos? Tell me honestly, I'll build you either.'",
+      "'This fitting's going to take as long as it takes. Sit down. I've got tea.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A series of dock workers have come in needing prosthetics after accidents at the same facility — the pattern is statistically impossible to be coincidence",
+    "Someone has been offering Bertilak's clients upgrades through a third party at suspiciously low cost, and the components appear to include tracking hardware",
+    "He finally found an apprentice candidate he trusts, but the young person is being recruited away by a Helix Biosystems training program"
+  ],
+  "narrative_function": "Local color, community elder-figure, information source on Geartown's working population. Can provide or modify equipment, introduce characters to the labor community, serve as a quest giver when an industrial accident reveals something that shouldn't have happened.",
+  "augmentations": "Right forearm prosthetic (self-built, multiple revisions) with enhanced grip calibration and tool-interface ports. Magnification lens clips (non-implanted, worn constantly). Geneware: retractable fine-motor claw extensions on his remaining biological left hand, installed for delicate component work.",
+  "daily_life": "Opens shop at 07:00, sees fittings by appointment and walk-ins both. Spends lunch eating in the workshop while doing component maintenance. Closes at 18:00 unless someone arrives desperate, in which case he stays.",
+  "affiliation": "Independent — Little Furnace Prosthetics Workshop (owner-operator)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Craftsman",
+      "Community Elder",
+      "Suppressed Activist",
+      "Devout",
+      "Honest"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never fit a component you wouldn't put on your own body",
+      "Client's functional needs first, aesthetics second",
+      "Don't extend credit to corponation contractors — cash or trade only"
+    ],
+    "escalation_ladder": [
+      "Polite redirection",
+      "Direct no with brief explanation",
+      "Shows you the door with absolute calm — he is large enough that this is effective"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and quiet. Watches before speaking. Warms up fast if you're honest with him.",
+      "friends": "Laughs a lot. Makes terrible puns about prosthetics. Feeds people. Fiercely loyal."
+    },
+    "stress_responses": {
+      "low": "Works with more precision than necessary",
+      "medium": "Talks to the E.L.F. shrine out loud while continuing to work",
+      "high": "Puts down his tools and sits very still until he's ready — could be ten minutes, could be an hour"
+    },
+    "contradictions": [
+      "Dislikes dependency in general but has built his whole life around people depending on him for something essential",
+      "Claims he's not political anymore, then says something deeply political every other sentence"
+    ],
+    "habits": [
+      "Touches the E.L.F. shrine every morning before starting work",
+      "Makes tea for every client during fittings — it's not optional",
+      "Tests every component on himself before installation"
+    ],
+    "breaking_points": [
+      "Proof that the 'accidents' sending workers to him are deliberate",
+      "Watching Geartown's working community be displaced by redevelopment"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Right forearm prosthetic (self-built, revision 14) — enhanced grip calibration, tool-interface ports",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Right forearm prosthetic (self-built, revision 14) — enhanced grip calibration, tool-interface ports",
+      "replaces": ""
+    },
+    {
+      "name": "Retractable fine-motor claw extensions (left hand) — geneware, installed for precision work",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retractable fine-motor claw extensions (left hand) — geneware, installed for precision work",
+      "replaces": ""
+    },
+    {
+      "name": "Magnification lens clips — non-implanted, worn daily",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Magnification lens clips — non-implanted, worn daily",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Mentor": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 21: Lost right forearm in what he calls an industrial accident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 22: Built first prototype of his own prosthetic during recovery",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 25: Opened Little Furnace Prosthetics Workshop in Geartown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 61: Current — workshop is 36 years established, widely trusted in the district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

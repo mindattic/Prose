@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59773e587bc71780df85c5b",
+  "name": "Traditionalist",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Trusts proven methods over new ideas",
+  "behavioral_signature": "Follows established procedures",
+  "under_stress": "Clings harder to tradition",
+  "at_rest": "Maintains old ways, references precedent",
+  "will_always": [
+    "do it the way it's always been done"
+  ],
+  "will_never": [
+    "try something untested"
+  ],
+  "unless": [
+    "tradition is failing and everyone can see it"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Code Keeper",
+      "threshold": 0.7,
+      "context": "adherence to rules"
+    },
+    {
+      "archetype": "Scholar",
+      "threshold": 0.6,
+      "context": "respect for knowledge"
+    }
+  ],
+  "opposite_of": [
+    "Innovator"
+  ],
+  "tags": [
+    "conservative",
+    "reliable"
+  ]
+}

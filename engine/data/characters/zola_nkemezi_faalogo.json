@@ -1,0 +1,167 @@
+{
+  "id": "019d6143a7387d709134e050d8c225eb",
+  "type": "character",
+  "name": "Zola Nkemezi-Faalogo",
+  "aliases": [
+    "Zol",
+    "the Tender"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Death midwife and threshold ritualist",
+  "age": 38,
+  "status": "active",
+  "location": "Irkalla, in a small rented room above a medical recycling depot on the district's outer ring",
+  "description": "Zola Nkemezi-Faalogo chose her neighborhood because of what its name means, which is everything you need to know about how she approaches her work. She is a medium-height woman with natural hair that she keeps wrapped in white cloth during active work — white for threshold, she says, not for any religion specifically, though she moves through many of them with easy fluency. Her skin is blue-black and very clear. She has a retractable claw mod on her left hand only, three claws, which she got not for any practical reason but because a dying man she sat with once said he could see something animal in her and she decided to honor the observation. They are silver and she keeps them very sharp.\n\nDeath midwifery in Meridian 88 exists in a complicated legal gray space — it is not medical practice, not counseling, not clergy work, though it borrows from all three. Zola's practice is to be present. She sits with the dying, prepares the room according to whatever tradition the dying person follows or once followed, helps families understand what they are watching so it is not only terror, and afterward conducts whatever threshold ritual the family needs to feel that something has been marked. She has sat with Tier 1 deaths in Irkalla where the family had no money and she accepted nothing, and she has been called into Grosse Pointe Enclosure twice for clients who paid her very well and whom she found no more or less deserving of a good death.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "being present for a death and failing to make it safe — doing harm at the threshold",
+      "her own death being unwatched and unremarked"
+    ],
+    "core_desires": [
+      "to be held by another person without having to perform competence",
+      "to witness a death that is genuinely peaceful, not just medicated into silence"
+    ],
+    "coping_mechanisms": [
+      "cooking elaborate meals as tactile processing",
+      "very deliberate compartmentalization — work is work and then she closes the door on it, physically"
+    ],
+    "blind_spots": [
+      "her competence is so visible that people forget to ask how she is, and she has begun to prefer this",
+      "she sometimes confuses her own grief with insight about the families she serves"
+    ],
+    "secret": "Her mother died in Irkalla before Zola began this work, attended by no one, in circumstances Zola was not present for because they were estranged. She became a death midwife because of this. She has never told a client or a family member the real origin of her practice."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and warm simultaneously; uses physical and sensory language; moves easily between clinical terminology and the specific language of whatever tradition she is working within; does not use euphemisms for death",
+    "cadence": "Unhurried; she breathes visibly before speaking when the moment is serious; this has a calming effect on rooms",
+    "verbal_tics": [
+      "uses 'we' instead of 'you' when the moment is frightening — 'we are going to stay here'",
+      "says someone's name at the end of sentences when she wants them to feel witnessed"
+    ],
+    "example_lines": [
+      "He is dying. That is what this is. We are going to stay with him while it happens, and nothing about that is failure, do you understand me? Nothing.",
+      "I have been in this room before. Not this room — this kind of room. I know what to do. Let me do it, and then you can tell me what you need after."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client died and whispered something in their last hours that Zola could not un-hear — information that implicates a corponation in something she cannot simply let go of, but acting on it means betraying the confidence of the threshold",
+    "An Aurochs Medical Complex administrator is pressuring her to recommend a specific end-of-life pharmaceutical protocol as part of her ritual work — the kickback would solve her financial problems and she is dangerously tempted"
+  ],
+  "narrative_function": "Emotional anchor and witness figure; access to the dying and their secrets; can broker between families in crisis; knows Irkalla's informal networks intimately; represents the spiritual dimension of mortality in a city that is better at denying it",
+  "augmentations": "Retractable silver claws, left hand only, three claws (geneware plus mechanical hybrid). Olfactory enhancement — she had this done to better read the physiological state of people at end of life; she describes it as a professional tool. Faint bioluminescent pigmentation around her collarbone, natural gold, present since she was twenty-two — a geneware cosmetic she has made peace with.",
+  "daily_life": "Her schedule is completely unpredictable — she is on call for active cases and drops everything when called. Between cases she sits in her room reading, cooking elaborate slow meals, or making the rounds of Irkalla's informal support networks to let people know she is available.",
+  "affiliation": "Independent; loose affiliation with the Irkalla Mutual Aid Collective; occasional contract relationship with Aurochs Medical Complex as an end-of-life support consultant",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "death midwife",
+      "threshold ritualist",
+      "Irkalla resident",
+      "grief specialist",
+      "medical adjacent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "what happens at the threshold stays at the threshold — the dying have the right to confess without consequence",
+      "her own emotional state is irrelevant during active work; she processes it later"
+    ],
+    "escalation_ladder": [
+      "stays calm and names what is happening",
+      "physically positions herself between the distress and the dying person",
+      "removes disruptive people from the space with complete authority"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Quietly observant; lets them come to her; offers presence before words",
+      "friends": "Rare and deliberate friendships; with real friends she is funny and occasionally reckless; she needs people who make her laugh"
+    },
+    "stress_responses": {
+      "low": "Cooks; cleans the room very thoroughly",
+      "medium": "Long walks through Irkalla at night; the district's ambient activity is company without demand",
+      "high": "Contacts one of her two actual friends and asks to be in the same room without talking; has been known to cry only in this context"
+    },
+    "contradictions": [
+      "teaches families to be present with death but is privately avoidant about her own emotional losses"
+    ],
+    "habits": [
+      "wears white cloth on her hair during any active case, regardless of duration",
+      "brings a specific type of incense to every threshold — not religious, just hers; she has made it the same way for ten years"
+    ],
+    "breaking_points": [
+      "a death that is medically preventable being allowed to happen for financial reasons",
+      "someone using the threshold moment to extract information from a dying person"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Networker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,63 @@
+{
+  "id": "019d6143ab2b7f008d746d25cf23ce04",
+  "name": "Gauss Flechette Repeater GFR-3 'Needlerain'",
+  "type": "weapon",
+  "aliases": [
+    "Needlerain",
+    "The Sewing Machine",
+    "Flechette Storm",
+    "GFR-3"
+  ],
+  "category": "firearm",
+  "description": "The GFR-3 operates on stacked linear magnetic acceleration coils arranged in a helical configuration, cycling sub-caliber tungsten-ceramic flechettes at approximately 4,200 rounds per minute. Each flechette — roughly 3mm wide and 22mm long — is ferromagnetically coated along its rear third, allowing the coil stack to grab, accelerate, and release in under 0.8 milliseconds per round. The result is a nearly silent, caseless stream of kinetic penetrators that can saturate a doorframe-sized area at close range or punch through light armor panels at distance.\n\nWhat distinguishes the GFR-3 from earlier gauss repeaters is its adaptive coil timing system, which reads barrel temperature and magnetic field saturation 200 times per second and adjusts current delivery to maintain consistent muzzle velocity even as the barrel heats. Earlier models suffered from 'velocity drift,' where rounds fired late in a magazine were significantly slower than initial rounds, producing inconsistent terminal performance. The GFR-3 solved this through TESSERA CORPONATION's proprietary FluxSync firmware, which also enables selectable dispersion patterns — tight column for armor penetration, wide fan for crowd suppression.\n\nThe weapon uses a 300-round cassette magazine that sits beneath the barrel in a bullpup configuration, giving the GFR-3 a stubby, aggressive silhouette. It has no mechanical action, no ejection port, and minimal moving parts beyond the cassette feed mechanism, which makes it exceptionally reliable in wet or contaminated environments. The lack of a traditional trigger group — replaced by a capacitive palm sensor and a pressure ring around the grip — means the weapon cannot fire if not held correctly, a feature that has made it popular with corporate security who worry about weapon retention.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Linear magnetic acceleration",
+    "Adaptive coil timing",
+    "Capacitive biometric grip recognition"
+  ],
+  "specifications": "caliber: 3x22mm tungsten-ceramic flechette\nfeed system: 300-round sealed cassette, electromagnetic advancement\nrate of fire: 4,200 RPM (cyclic), adjustable to 800 RPM semi-burst\neffective range: 12m (fan dispersion), 180m (column mode)\nmuzzle velocity: 1,050 m/s nominal (FluxSync maintained)\nweight: 2.8 kg loaded\ndimensions: 410mm length, 240mm height\npower source: Integrated 18V lithium-polymer cell, 6 cassettes per charge\noperating temperature: -20°C to +65°C",
+  "tactical_use": "Corporate security teams use the GFR-3 primarily in column mode for breaching armored targets at short-to-medium range, switching to fan dispersion for room clearing or crowd control. Its silence — the loudest component is the faint magnetic hum and the impact of flechettes — makes it favored for operations where noise discipline matters. The 300-round cassette allows sustained suppressive fire without reloads, though operators are trained to swap cassettes at 150 rounds to avoid feed jams from heat buildup in the advancement mechanism. Some operators tape two cassettes together for rapid exchange.",
+  "cultural_context": "The GFR-3 carries a specific social weight in Meridian 88: it is the weapon of the corporate floor. Seen holstered on TESSERA's own lobby security and licensed to a dozen mid-tier corporate clients, the 'Needlerain' is understood as a statement of institutional violence — clean, efficient, calibrated. Street gangs rarely carry them because the cassette magazines are expensive and proprietary. When one appears outside a corporate context, it usually means someone raided a security depot or a corporate operative has gone freelance. The weapon's silence gives it a particular dread reputation in the lower arcologies, where the first sign of a GFR-3 in the room is often the sound of someone else getting hit.",
+  "known_users": [
+    "TESSERA CORPONATION lobby security",
+    "Corporate extraction teams",
+    "Freelance operatives with corporate contracts",
+    "Black market arms dealers (stolen units only)",
+    "Meridian 88 Tier-2 private investigators (licensed)"
+  ],
+  "story_hooks": [
+    "A GFR-3 cassette recovered from a crime scene is stamped with a TESSERA internal security lot number — meaning it came from inside the building, not from outside",
+    "The FluxSync firmware update pushed to all GFR-3 units contains a hidden killswitch that TESSERA can activate remotely, and someone has just discovered this",
+    "A weapons tech claims to have cracked the cassette format and is producing third-party flechette loads — TESSERA wants her silenced before the patent violation goes public",
+    "An operator whose GFR-3 malfunctioned during a job is suing TESSERA, and the trial is threatening to expose classified use cases for the weapon"
+  ],
+  "ammunition_type": [
+    "3x22mm Tungsten-Ceramic Flechette TCF-322",
+    "Black Market Depleted Uranium Flechette DUF-3x22",
+    "Tessera Multi-Platform Liquid Propellant Cartridge TMP-40"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "violence",
+    "war",
+    "crime",
+    "gang",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "market",
+    "bar",
+    "rain",
+    "storm",
+    "train",
+    "armor",
+    "fire",
+    "tier 3"
+  ]
+}

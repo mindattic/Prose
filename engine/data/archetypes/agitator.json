@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a55d7f659c6a513e7d0d98ef",
+  "name": "Agitator",
+  "type": "archetype",
+  "category": "social",
+  "description": "Stirs unrest, challenges power, provokes change",
+  "behavioral_signature": "Identifies grievances and amplifies them",
+  "under_stress": "Becomes reckless, inflammatory",
+  "at_rest": "Never satisfied with the status quo",
+  "will_always": [
+    "challenge authority"
+  ],
+  "will_never": [
+    "accept the current order"
+  ],
+  "unless": [
+    "the revolution would kill more than it saves"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Provocateur",
+      "threshold": 0.85,
+      "context": "disruption"
+    },
+    {
+      "archetype": "Contrarian",
+      "threshold": 0.7,
+      "context": "opposition"
+    }
+  ],
+  "opposite_of": [
+    "Diplomat",
+    "Mediator"
+  ],
+  "tags": [
+    "disruptive",
+    "revolutionary"
+  ]
+}

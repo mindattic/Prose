@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a86d72d1b23bb384858256dc",
+  "name": "Sterling-Nakamura Identity Verification Pendant IVP-2",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Identity Verification Pendant IVP-2",
+  "type": "equipment",
+  "aliases": [
+    "IVP-2",
+    "Truth Stone",
+    "ID Pendant",
+    "Sterling Verifier"
+  ],
+  "category": "tools",
+  "description": "A pendant-worn device that verifies the identity of anyone within 2 meters by cross-referencing their biometric emissions — facial geometry, body heat pattern, gait rhythm, and neural interface signature — against Sterling-Nakamura's identity database. The IVP-2 provides a subtle haptic notification to the wearer indicating whether a person's claimed identity matches their biometric profile. The device is designed for executives and diplomats who need to verify that the person they are meeting is who they claim to be, particularly in environments where ADM-1 disguise systems or Digital Twin impersonation might be in play.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — identity verification device",
+  "base_technologies": [],
+  "specifications": {
+    "verification method": "Multi-biometric cross-reference",
+    "biometrics": "Facial geometry",
+    "info": "heat pattern; gait; neural interface signature",
+    "database": "Sterling-Nakamura identity network",
+    "notification": "Haptic vibration — confirmed or anomaly",
+    "range": "2-meter detection radius",
+    "verification time": "3 seconds",
+    "weight": "0.03 kg",
+    "battery": "30-day standby",
+    "form factor": "Pendant or lapel pin"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An IVP-2 flagged a meeting participant as an identity anomaly — their biometrics did not match any profile in the database, meaning they are either unregistered or using an identity that does not correspond to any real person.",
+    "A sophisticated adversary has learned to spoof IVP-2 verification by replicating all four biometric channels simultaneously — the device confirms an identity that is entirely fabricated."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "identity",
+    "neural",
+    "ai",
+    "tier 3"
+  ]
+}

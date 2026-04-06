@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5637697b35608574dc46bfb",
+  "name": "Cold Calculator",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Removes emotion from moral equations",
+  "behavioral_signature": "Evaluates lives, resources, odds without sentiment",
+  "under_stress": "The math becomes everything",
+  "at_rest": "Runs numbers, ignores feelings",
+  "will_always": [
+    "make the rational choice"
+  ],
+  "will_never": [
+    "let emotion cloud judgment"
+  ],
+  "unless": [
+    "the equation says to sacrifice someone they love"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Utilitarian",
+      "threshold": 0.85,
+      "context": "calculating"
+    },
+    {
+      "archetype": "Pragmatist",
+      "threshold": 0.8,
+      "context": "practical"
+    }
+  ],
+  "opposite_of": [
+    "Bleeding Heart"
+  ],
+  "tags": [
+    "rational",
+    "cold"
+  ]
+}

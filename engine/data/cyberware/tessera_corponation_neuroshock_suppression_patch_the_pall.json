@@ -1,0 +1,60 @@
+{
+  "id": "019d6143a7c7764eb6f16a5524188e84",
+  "name": "Tessera Corponation Neuroshock Suppression Patch — 'The Pall'",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Neuroshock Suppression Patch — 'The Pall'",
+  "type": "cyberware",
+  "aliases": [
+    "The Pall",
+    "Shock Patch",
+    "The Shroud",
+    "Flatline Sticker"
+  ],
+  "category": "medical",
+  "body_location": "",
+  "description": "The Neuroshock Suppression Patch is a transdermal medical device developed by Tessera Corponation's medical subsidiary as a countermeasure to neurogenic shock — the systemic cardiovascular collapse that follows severe trauma to the central nervous system, particularly spinal injury, catastrophic head trauma, or neural implant cascade failure. The patch is a flexible 8cm x 6cm adhesive film containing a micro-printed neuroactive compound delivery lattice, a passive biosensor array, and a thin-film battery layer. When applied to the neck, inner forearm, or sternum, the biosensor array reads vascular resistance, skin galvanic response, and pulse pressure to detect neurogenic shock onset, at which point the patch begins staged transdermal delivery of a proprietary Tessera compound designated TC-Neuro-2: a vasopressor and autonomic stabilizer combination that counteracts the peripheral vasodilation characteristic of neurogenic shock.\n\nWhat distinguishes the Pall from generic shock treatments is its passive activation: the user does not need to trigger it. Once applied, it monitors and responds autonomously, adjusting delivery rate based on biosensor readings across a thirty-minute window. It is designed explicitly for the scenario in which a casualty is conscious but deteriorating, or unconscious with no one available to manage ongoing treatment. Tessera markets it as 'the medic that stays when the medic has to leave,' a line that field personnel find either reassuring or deeply unsettling depending on the context in which they first encountered it.\n\nThe patch is colloquially called 'The Pall' — a reference to the cloth draped over a coffin, which medics interpret in two directions: it covers you, and it marks you. Applied patches are visible on the skin, a clear signal to any medical personnel that arrives later that the casualty is in active neurogenic management. This visibility has made the Pall a grim cultural signifier in Meridian 88's combat and high-risk labor environments.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"compound\":\"TC-Neuro-2 (vasopressor + autonomic stabilizer)\",\"activation\":\"Passive — biosensor-triggered, no manual input required\",\"monitoring_parameters\":\"Vascular resistance, galvanic skin response, pulse pressure\",\"treatment_window\":\"30 minutes active delivery\",\"application_sites\":\"Neck, inner forearm, sternum\",\"patch_dimensions\":\"8cm x 6cm flexible film\",\"weight\":\"12g\",\"battery_life\":\"36 hours standby, 30 minutes active\",\"uses_per_unit\":\"Single-use\",\"compatibility_warning\":\"Contraindicated with active Tessera Mnemonic Anchor Suite due to shared autonomic pathway interference\",\"restriction_basis\":\"Controlled vasopressor compound — TC-Neuro-2 classified as restricted pharmaceutical\"}",
+  "side_effects": [],
+  "cultural_context": "The Pall's restricted status means it is significantly more expensive and harder to obtain than basic field medical supplies, creating a sharp divide between casualties who receive one and those who do not. In corporate environments, Palls are issued as standard equipment to personnel in high-risk assignments — a concrete measure of how much a corporation values a given worker's survival. In the outer districts, a black market Pall can cost more than most residents earn in a week, and applying one to a stranger is considered an act of extraordinary generosity or, alternatively, a debt that will need to be repaid. The phrase 'someone put a Pall on me' is used in Meridian 88 slang to mean that someone has invested in your survival for reasons that may not be entirely altruistic.",
+  "known_users": [
+    "Tessera Corponation field operatives and security",
+    "Arcturus Defense Solutions combat medics (licensed procurement)",
+    "High-tier corporate personnel in hazardous assignments",
+    "Black market medical suppliers",
+    "Specialist extraction and recovery teams",
+    "Medics operating in environments with high neural implant density"
+  ],
+  "story_hooks": [
+    "A character wakes up with a used Pall on their arm and no memory of the past six hours — someone saved their life, and the patch's biosensor log contains data about what happened to them.",
+    "Tessera Corponation has quietly updated TC-Neuro-2 in recent production batches, and the new compound has an undisclosed secondary effect: it makes subjects briefly highly susceptible to suggestion. The change was not disclosed in the restriction filing.",
+    "A Tessera logistics manifest has gone missing — it lists a shipment of Palls destined for a corporate facility that officially has no personnel assigned to it.",
+    "An outer-district clinic has been using counterfeit Palls, and three patients have died from compound toxicity. Someone is manufacturing fake patches and undercutting the black market price."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "medical",
+    "cyberware",
+    "combat",
+    "war",
+    "memory",
+    "neural",
+    "ai",
+    "corporate",
+    "control",
+    "debt",
+    "clinic",
+    "injury",
+    "market",
+    "rain",
+    "train",
+    "survival",
+    "tier 2"
+  ]
+}

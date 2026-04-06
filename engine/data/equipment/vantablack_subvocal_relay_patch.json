@@ -1,0 +1,66 @@
+{
+  "id": "019d6143a87c736b90b21a96f7d02617",
+  "name": "Vantablack Subvocal Relay Patch",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack Subvocal Relay Patch",
+  "type": "equipment",
+  "aliases": [
+    "The Mutepiece",
+    "Throat Ghost",
+    "Skinwhisper",
+    "Black Patch"
+  ],
+  "category": "comms",
+  "description": "The Vantablack Subvocal Relay Patch is a skin-adhered communications device roughly the size of a large bandage, worn over the throat or along the jaw. It intercepts the micro-vibrations produced by subvocal speech — the subtle muscular and laryngeal movements that occur when a person 'thinks' words without vocalizing them aloud — translates them into coherent audio through a proprietary neuromuscular signal processing algorithm, and transmits the result as an encrypted voice signal indistinguishable in quality from normal spoken communication. To an outside observer, the wearer appears completely silent, with no visible earpiece or microphone. The receiving end of the transmission is delivered through bone conduction via a secondary micro-patch worn behind the ear or along the jaw's ramus.\n\nThe Patch was developed by Vantablack Media's covert communications subsidiary — a division whose existence the corporation officially neither confirms nor denies — and represents a significant advancement over older subvocal technology, which required extensive individual calibration and produced low-fidelity output. The current generation of Patches uses a self-calibrating algorithm that maps each user's unique subvocal signature within approximately ninety seconds of first wear, achieving voice accuracy exceeding 97% without prior setup. The device is single-use by design: the biosignature calibration is locked to the first wearer's neuromuscular profile, and the adhesive substrate degrades after 72 hours of wear, after which the Patch must be discarded.\n\nThe Vantablack Subvocal Relay Patch is the communications tool of choice for operators who need to maintain team contact in environments where any visible communications hardware would be immediately suspicious — undercover infiltrations, social engineering operations, high-security social environments. It is also widely used by Meridian 88's security and protection details, where the ability to communicate without visible earpieces is a significant professional advantage. The single-use nature and premium pricing make it a marker of well-funded operations.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Subvocal Neuromuscular Signal Interception",
+    "Self-Calibrating Biosignature Mapping Algorithm",
+    "Bone Conduction Audio Delivery",
+    "Encrypted Short-Range Voice Transmission",
+    "Biodegradable Adhesive Substrate",
+    "Single-Use Biosignature Lock"
+  ],
+  "specifications": {
+    "subvocal_accuracy": "> 97% after 90-second self-calibration",
+    "calibration_time": "90 seconds (first wear)",
+    "transmission_range": "Up to 800 meters direct, 3 km with relay",
+    "encryption_standard": "VBM-proprietary rolling cipher, 256-bit equivalent",
+    "transmission_profile": "Indistinguishable from encrypted voice comms",
+    "bone_conduction_patch": "Secondary micro-patch, 4 cm x 1.5 cm",
+    "operational_lifespan": "72 hours continuous wear",
+    "biosignature_lock": "Single wearer, non-transferable after calibration",
+    "dimensions": "Main patch: 7 cm x 4 cm x 0.2 cm",
+    "weight": "12 grams (main patch), 4 grams (bone conduction patch)",
+    "power_source": "Biogalvanic cell, powered by wearer's skin conductivity"
+  },
+  "tactical_use": "Applied before entry into a target environment. The wearer conducts the 90-second calibration during preparation or transit, ensuring the Patch is fully tuned before they go silent. In the field, communications are conducted entirely through subvocalization — mouthing words without sound, or in practiced operators, purely through the muscular intention to speak. The receiving bone conduction patch delivers incoming audio as vibration through the skull, inaudible to anyone else in the environment. Operators appear, to all external observation, to be simply standing or moving silently.",
+  "cultural_context": "The Vantablack Subvocal Relay Patch occupies an interesting cultural position because it was originally marketed — through discreet corporate channels — as a premium professional communications tool for legitimate security personnel. This gives it a veneer of respectability that most covert comms equipment lacks, and licensed versions are used openly by executive protection teams, high-end event security, and corporate negotiation specialists. The same technology, acquired through gray-market channels without a license, is a staple of infiltration operators and undercover criminals. The identical appearance of licensed and unlicensed units makes them difficult for law enforcement to distinguish without documentation checks. Among operators, the Patch is sometimes called 'thinking out loud' — a quiet joke about speaking without speaking.",
+  "known_users": [
+    "Undercover infiltration specialists",
+    "Corporate executive protection details",
+    "Social engineering operatives",
+    "High-security event staff",
+    "Sable Voss — a social infiltration specialist known for penetrating corporate inner circles",
+    "Vantablack Media's own internal crisis communications team"
+  ],
+  "story_hooks": [
+    "A Vantablack Patch recovered from an operative at a crime scene has an anomalous biosignature lock — the calibration profile doesn't match any human neuromuscular signature on record, suggesting either a heavily modified user or that someone has found a way to fake the calibration process and transfer Patches between users.",
+    "The players are hired to work security at a high-profile event, equipped with licensed Vantablack Patches. Midway through the event, they begin receiving subvocal transmissions on their channel from an unknown source — someone else in the room is wearing an unlicensed Patch on the same encrypted channel, and they're feeding real-time intelligence to an unknown receiver.",
+    "Vantablack Media's covert communications subsidiary has quietly pushed a firmware update to all Patches in circulation — but the update contains an undisclosed feature that logs and transmits a compressed copy of all communications to a Vantablack server. Someone inside the company is trying to get this information out before the update rolls out to the entire installed base.",
+    "A deep-cover operative has been out of contact for three weeks. Their handler knows they were wearing a Vantablack Patch — which, if still on their body, is now well past its 72-hour lifespan. But someone has been sending transmissions on the operative's encrypted channel, in the operative's voice, for the past week."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "crime",
+    "ai",
+    "elf",
+    "corporate",
+    "market",
+    "tier 3"
+  ]
+}

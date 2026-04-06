@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab59717c883c941928e7d427",
+  "name": "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
+  "type": "weapon",
+  "aliases": [
+    "Pincushion",
+    "Needle Gun",
+    "NS-4",
+    "Wasp Spit"
+  ],
+  "category": "pistol",
+  "description": "A compact flechette pistol that fires salvos of micro-darts from a rotating drum magazine. Each dart carries a piezoelectric charge that discharges on penetration, causing involuntary muscle contraction around the wound channel. Vespid markets it as a 'compliance sidearm' but field reports document fatalities from cardiac disruption when dart clusters strike the thorax.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — security contractors; Prohibited — civilian",
+  "base_technologies": [
+    "Micro-flechette acceleration",
+    "Piezoelectric discharge payloads",
+    "Rotary drum miniaturization"
+  ],
+  "specifications": "caliber: 1.2mm tungsten-carbide flechette\nmagazine: 120-dart rotary drum\nrate of fire: 15-dart burst per trigger pull\neffective range: 8-30 meters\nweight: 0.9 kg loaded\npower source: Integrated piezo-charge, no external battery",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A batch of NS-4 darts has surfaced with a neurotoxin coating not listed in any Vespid catalog — someone is weaponizing the platform beyond spec.",
+    "A clinic in the lower tiers is overwhelmed with patients showing identical flechette wound patterns — someone is using Pincushions for systematic intimidation."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "pistol",
+    "weapon",
+    "gun",
+    "contract",
+    "power",
+    "clinic",
+    "market",
+    "storm",
+    "fire",
+    "tier 2"
+  ]
+}

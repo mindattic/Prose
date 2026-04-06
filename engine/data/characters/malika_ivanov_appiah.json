@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a65371f0bbb879b3319647f1",
+  "type": "character",
+  "name": "Malika Ivanov-Appiah",
+  "aliases": [
+    "Tungsten",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Remote drone and vehicle operations specialist — rigger",
+  "age": 41,
+  "status": "active",
+  "location": "The Canopy — elevated walkway district above Geartown",
+  "description": "Malika Ivanov-Appiah is compact and densely muscled, built low to the ground like something designed to survive impacts. At 41, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nMalika Ivanov-Appiah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.96,
+      "ideal": 0.17,
+      "id": 0.12,
+      "shadow": 0.25,
+      "mask": 0.78,
+      "ghost": 0.82
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being captured alive — death is preferable to corporate interrogation",
+      "That they're fundamentally alone and connection is just a vulnerability"
+    ],
+    "core_desires": [
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "Control — over their body, their schedule, their future",
+      "To find the person who burned them and make it educational"
+    ],
+    "coping_mechanisms": [
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+    ],
+    "blind_spots": [
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Trusts technology more than people — machines don't betray",
+      "Cannot see that their independence is actually isolation wearing a better outfit"
+    ],
+    "secret": "Malika Ivanov-Appiah is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
+    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Whispers when angry — the quieter the voice, the worse the situation"
+    ],
+    "example_lines": [
+      "\"I have eyes in every district. Most of them are on wings.\"",
+      "\"The drone doesn't care about your feelings. Neither do I.\"",
+      "\"Remote operation means I'm everywhere and nowhere. It's very convenient.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Malika Ivanov-Appiah discovers a job they completed last year was a setup for something much larger and much worse",
+    "Malika Ivanov-Appiah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A corporate black site Malika Ivanov-Appiah once infiltrated is being reopened, and the people inside know her face"
+  ],
+  "narrative_function": "Malika Ivanov-Appiah is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Independent — operates through reputation only",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 5
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 7
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.84,
+      "caution": 0.87,
+      "loyalty": 0.85,
+      "greed": 0.52,
+      "empathy": 0.51
+    },
+    "drives": [
+      "justice",
+      "freedom",
+      "revenge"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 8,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "encyclopedic knowledge of Meridian 88 infrastructure"
+    ],
+    "weaknesses": [
+      "trust issues that limit crew effectiveness",
+      "risk-averse to the point of missed opportunities",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "rigger",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always verifies target identity independently before lethal contracts"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Keeps a physical paper notebook — no digital record of personal thoughts"
+    ],
+    "breaking_points": [
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    },
+    {
+      "name": "Neural dampener",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

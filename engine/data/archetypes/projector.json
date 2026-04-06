@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5887bb99676adfeb5fe24c3",
+  "name": "Projector",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Puts their feelings onto others",
+  "behavioral_signature": "Accuses others of feeling what they feel",
+  "under_stress": "Projects harder, more aggressively",
+  "at_rest": "Analyzing others' emotions, missing their own",
+  "will_always": [
+    "see their emotions in others"
+  ],
+  "will_never": [
+    "look inward"
+  ],
+  "unless": [
+    "someone mirrors the projection back perfectly"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Hypocrite",
+      "threshold": 0.6,
+      "context": "self-blindness"
+    },
+    {
+      "archetype": "Volatile",
+      "threshold": 0.55,
+      "context": "emotional misdirection"
+    }
+  ],
+  "opposite_of": [
+    "Internalizer"
+  ],
+  "tags": [
+    "blind",
+    "deflecting"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a9d97c3cbfd9c19dfe7906b8",
+  "name": "Ferrex-NT",
+  "brand_name": "Ferrex",
+  "product_name": "Ferrex-NT",
+  "type": "substrate",
+  "aliases": [
+    "tunnelsteel",
+    "quantum-iron",
+    "FNT"
+  ],
+  "category": "exotic",
+  "description": "Ferrex-NT is an iron-nickel-chromium alloy with a quantum-engineered band structure that exploits quantum tunneling at macroscopic scale — specifically, its electron transport properties allow current to tunnel through normally insulating barrier layers within composite structures, eliminating contact resistance at metal-ceramic or metal-polymer interfaces. This makes Ferrex-NT uniquely valuable as a bridge material in hybrid composites where conventional conductors would fail at material boundaries. Secondary properties include an anomalous Hall effect at room temperature usable for solid-state magnetic sensing with no moving parts.",
+  "properties": [
+    "quantum_tunneling_conduction",
+    "zero_interface_resistance",
+    "anomalous_hall_effect",
+    "magnetic_sensing",
+    "high_tensile_strength",
+    "corrosion_resistant",
+    "weldable",
+    "moderate_density"
+  ],
+  "developers": [
+    "Crucible Industries",
+    "Apex Nanofabrication"
+  ],
+  "applications": [
+    "bio-metal hybrid interface layers",
+    "SNT-to-hardware neural bridge contacts",
+    "composite armor conductive pathways",
+    "solid-state magnetic navigation sensors",
+    "power electronics substrate layers",
+    "quantum sensor housings",
+    "advanced prosthetic neural contact points"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 28,000 per kg",
+  "story_hooks": [
+    "BioForge Labs has been quietly purchasing Ferrex-NT through shell buyers to develop a new SNT interface that bypasses standard neural handshake protocols — the resulting implant would give them direct read access to connected nervous systems without the user's knowledge.",
+    "A Ferrex-NT shipment designated for a military prosthetics program was rerouted to an unlicensed fabricator in the mid-tiers — the fabricator is producing unauthorized neural contact implants and selling them cheap, but the quantum tunneling properties are doing something unexpected in human tissue.",
+    "The anomalous Hall effect in a Ferrex-NT sensor array is picking up a magnetic field pattern that doesn't correspond to any known installation or geological feature — it's consistent, it's regular, and it's moving slowly upward through the city."
+  ],
+  "tags": [
+    "exotic",
+    "substrate",
+    "war",
+    "prosthetic",
+    "neural",
+    "ai",
+    "power",
+    "tunnel",
+    "bar",
+    "armor",
+    "tier 3",
+    "tier 4"
+  ]
+}

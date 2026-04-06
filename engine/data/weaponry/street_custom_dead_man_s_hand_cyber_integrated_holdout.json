@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab467c9997d6342fae37b6fe",
+  "name": "Street Custom 'Dead Man's Hand' Cyber-Integrated Holdout",
+  "type": "weapon",
+  "aliases": [
+    "Dead Man's Hand",
+    "Palm Gun",
+    "Handshake Special",
+    "Last Word"
+  ],
+  "category": "cyber-integrated",
+  "description": "A single-shot firearm integrated into a prosthetic hand or cybernetic forearm, typically chambered for a heavy-caliber round and fired by a neural trigger linked to the user's interface. The barrel is concealed within the forearm or palm cavity, and the round exits through a disguised port in the palm or between the knuckles. Dead Man's Hand builds are the ultimate concealed weapon — they pass physical pat-downs because they are part of the user's body, and they pass weapons scans because the components are distributed throughout the prosthetic's existing structure. The trade-off is single-shot capacity and the risk of catastrophic damage to the user's own cyberlimb on firing.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 2+",
+  "legality": "Prohibited — concealed integrated weapon",
+  "base_technologies": [
+    "Cyberlimb weapon integration",
+    "Neural trigger interface",
+    "Concealed barrel fabrication"
+  ],
+  "specifications": "caliber: Variable — typically .45 ACP or 12-gauge slug equivalent\ncapacity: 1 round\nfiring mechanism: Neural interface trigger\nconcealment: Integrated into prosthetic hand/forearm structure\nbarrel length: 8-15 cm depending on integration\nreload: Manual, requires opening maintenance panel\ncyberlimb damage risk: 15-30% chance of structural damage per firing\nweight: Added 0.3-0.5 kg to prosthetic mass",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A handshake killed a man — the Dead Man's Hand fired during what appeared to be a greeting, and the neural trigger log shows it was deliberate, not accidental.",
+    "A cyberlimb clinic is offering Dead Man's Hand integration as an unadvertised service — someone needs to find out who is buying and what they are planning."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "cyberintegrated",
+    "weapon",
+    "gun",
+    "prosthetic",
+    "neural",
+    "ai",
+    "clinic",
+    "bar",
+    "fire",
+    "tier 2"
+  ]
+}

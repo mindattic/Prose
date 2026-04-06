@@ -1,0 +1,107 @@
+{
+  "id": "019d6143a952710eb842edd3010b5aca",
+  "type": "place",
+  "name": "The Trans-Canada Corridor",
+  "aliases": [
+    "The TCC",
+    "The Ribbon",
+    "Highway 17/401",
+    "The Canadian Spine"
+  ],
+  "description": "The Trans-Canada Highway was built to connect a nation. In 2200, it connects a series of corporate sovereign enclaves that happen to share a national flag. The Trans-Canada Corridor runs 1,900 kilometers from New Windsor to Grainfort, following the Lake Huron and Lake Superior shorelines through some of the most sparsely populated territory in the GLM. The highway has been upgraded — widened, automated, and partially enclosed against the climate — but the distance remains. The distance is the point. The TCC is not a highway so much as a logistical argument against Canadian geography, a continuous assertion that these cities are connected despite every natural feature suggesting they shouldn't be.\n\nFerrogate Transit and Stonepath Logistics share the corridor's operating charter, dividing the route at Lockhaven North — Ferrogate handles Windsor to the Soo, Stonepath handles the Soo to Thunder Bay. The arrangement is competitive rather than cooperative, and the service quality varies accordingly. The Ferrogate section — running through the populated southern corridor past London, Kitchener, and The Lattice — is twelve lanes, fully automated, and maintained to GLM infrastructure standards. The Stonepath section — running along the Superior shore through towns that are barely towns — is six lanes, partially automated, and maintained to whatever standard Stonepath's quarterly budget allows. The gap between the two sections is visible from a vehicle window and legible as a statement about economic priorities.\n\nThe corridor's most critical function is not passenger transport but data. Fiber-optic trunk lines run beneath the highway surface, carrying 40% of the GLM's Canadian data traffic. Bathysphere Networks maintains the fiber infrastructure under a separate sovereignty charter, and their relay stations — positioned every 50 kilometers along the corridor — are the physical backbone of the Canadian net. Severing the TCC doesn't just stop traffic. It partitions the Canadian internet. This fact makes the corridor critical infrastructure in the military sense, and the security presence reflects it — Canadian military checkpoints at key positions, automated surveillance along the entire route, and the understood reality that attacking the TCC is an act of war against the data it carries, not just the vehicles.",
+  "atmosphere": {
+    "sights": [
+      "The southern section — twelve automated lanes cutting through the Ontario corridor, waystation complexes glowing at intervals",
+      "The northern section — six lanes narrowing through boreal forest along the Superior shore, service gaps measured in hours",
+      "Fiber-optic relay stations every 50 kilometers — Bathysphere Networks installations, small and heavily secured",
+      "The landscape transition from southern Ontario agriculture to northern Shield bedrock — visible geology telling the story of the corridor",
+      "Canadian military checkpoints at strategic positions — the nation's data infrastructure defended in physical space"
+    ],
+    "sounds": [
+      "Automated traffic on the southern section — continuous, efficient, and unremarkable",
+      "Wind and silence on the northern section — long stretches where the only sound is weather and vehicle",
+      "Relay station equipment hum — the sound of 40% of Canada's data passing through a box by the roadside",
+      "Superior weather on the northern shore sections — storms that close the highway and make the distance feel infinite"
+    ],
+    "smells": [
+      "Southern section: waystation services, vehicle discharge, Ontario agriculture on cross-winds",
+      "Northern section: boreal forest, Superior air, and the mineral scent of Shield bedrock cuts",
+      "Relay station ozone — the smell of data having a physical presence"
+    ],
+    "feel": "A corridor that performs connection. The TCC insists that Windsor and Thunder Bay are part of the same country, the same economy, the same network. The insistence is heroic, expensive, and not entirely convincing. The distance between the two ends is not just geographic — it is economic, cultural, and temporal. The southern section lives in 2200. The northern section lives in whatever year the maintenance budget allows.",
+    "tags": []
+  },
+  "demographics": "Corridor population approximately 2.5 million, concentrated heavily in the southern section between Windsor and Toronto. The northern section's population is sparse — small communities at waystation intervals, military checkpoint personnel, and Bathysphere relay technicians. The corridor connects 18 million people in The Lattice to 150,000 in Grainfort, and the infrastructure gradient reflects the population gradient.",
+  "economy": "Transit tolls (Ferrogate/Stonepath), data transmission (Bathysphere Networks), and waystation commerce. The corridor's economic value is primarily as a conduit — it generates revenue by moving things between the cities it connects, not from the territory it occupies. The fiber-optic infrastructure's revenue exceeds the highway's, which tells you what the corridor actually carries.",
+  "power_structure": "Ferrogate Transit (southern section), Stonepath Logistics (northern section), and Bathysphere Networks (fiber infrastructure) hold overlapping sovereignty charters. Canadian military authority applies at checkpoints and to the fiber-optic trunk lines. The arrangement works because each party needs the others — Ferrogate needs the highway, Stonepath needs the highway, Bathysphere needs the conduit, and the military needs the data to flow.",
+  "dangers": [
+    "Northern section weather closures — Superior storms can seal the corridor for days, isolating everything north of the Soo",
+    "Fiber-optic sabotage — cutting the trunk line partitions the Canadian internet, making it the highest-consequence infrastructure target in the corridor",
+    "Service gaps on the northern section — mechanical failure between waystations means hours of waiting in conditions that can kill",
+    "Military checkpoint escalation — the corridor's critical infrastructure status means security incidents are treated as national security events",
+    "The quality differential between the Ferrogate and Stonepath sections — a vehicle maintained for southern conditions may not survive northern ones"
+  ],
+  "opportunities": [
+    "Data infrastructure access — the relay stations carry 40% of Canadian data traffic, and proximity to that traffic has intelligence value",
+    "Northern section isolation — the long gaps between waystations provide unmonitored space",
+    "Cross-corridor commerce — the waystation economy provides cover for operations that prefer to remain mobile",
+    "The Ferrogate-Stonepath rivalry — competing operators on the same corridor create jurisdictional gaps at the handover point"
+  ],
+  "story_hooks": [
+    "A Bathysphere relay station on the northern section has been modified to duplicate specific data streams — someone is copying 40% of Canada's internet traffic and nobody knows where it's going",
+    "The Ferrogate-Stonepath handover point at Lockhaven North has become a jurisdictional dead zone — the two operators blame each other for a series of disappearances along the corridor",
+    "A northern section weather closure has sealed 200 kilometers of highway with 3,000 travelers trapped inside — and the military checkpoint that should be coordinating rescue has gone silent"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "New Windsor / Novaya Windsorka (southern terminus)",
+      "Blackpipe Corridor (Sarnia, southern section)",
+      "The Lattice (Toronto, southern section midpoint)",
+      "Lockhaven North (Sault Ste. Marie, Ferrogate-Stonepath handover)",
+      "Grainfort (Thunder Bay, northern terminus)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Automated cargo convoys moving between Canadian cities",
+    "Passenger traffic on the southern section — heavy, constant, predictable",
+    "Bathysphere Networks relay technicians on the maintenance circuit",
+    "Canadian military personnel at checkpoint installations"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Handover",
+      "description": "The point at Lockhaven North where Ferrogate's southern section meets Stonepath's northern section — a jurisdictional seam in the corridor's fabric",
+      "tags": []
+    },
+    {
+      "name": "Relay Station 17",
+      "description": "A Bathysphere fiber-optic node on the Superior shore, 200 kilometers from the nearest town — the loneliest piece of critical infrastructure in Canada",
+      "tags": []
+    },
+    {
+      "name": "Wawa Waystation",
+      "description": "The northern section's largest service complex — the last reliable stop before the long run to Grainfort, and the social hub of the Superior shore",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 46.5,
+    "lng": -81,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "corporate",
+    "surveillance",
+    "bar",
+    "rain",
+    "storm",
+    "vehicle",
+    "lake",
+    "circuit"
+  ]
+}

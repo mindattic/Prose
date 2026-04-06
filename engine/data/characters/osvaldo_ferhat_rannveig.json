@@ -1,0 +1,202 @@
+{
+  "id": "019d6143a68a790aa6f30f0983be6be5",
+  "type": "character",
+  "name": "Osvaldo Ferhat-Rannveig",
+  "aliases": [
+    "Ozzy",
+    "the Calibrator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Neural calibrator at Aurochs Medical Complex, specializing in post-augmentation psychosensory integration",
+  "age": 34,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Neuro-Integration Ward, Sub-Level 3",
+  "description": "Osvaldo is slight and precise — he moves like someone aware that the instruments around him are expensive, with a narrow, angular face framed by straight black hair that shifts color at the roots depending on his neural activity (a geneware mod he got in his twenties and now can't fully suppress). His skin is the color of polished teak, and he has the mild, distracted affect of someone who spends most of his time listening to signals other people can't hear. He has patterned irises, a geometric spirograph in copper and pale green, which he chose specifically because he wanted something that moved — the pattern rotates slowly when he's focused, quickly when he's agitated. His hands are long-fingered and completely still even when the rest of him isn't.\n\nHe calibrates neural interfaces — the delicate, often deeply personal process of helping someone's brain learn to interpret new sensory data from augmentations without going into sensory cascade. He is very good at this and knows it, which manifests not as arrogance but as a certain serene confidence that can read as emotional distance. What he doesn't broadcast is that he finds the work almost spiritual: he is, essentially, teaching people to perceive the world in new ways, and this strikes him as the most important thing a person can do. He volunteers one afternoon a week in the Rehabilitation annex, calibrating low-income patients for free on his own time.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.2,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Making a calibration error that permanently damages a patient's perception",
+      "Becoming the kind of corporate employee who stops caring about outcomes"
+    ],
+    "core_desires": [
+      "To develop a calibration protocol that works for low-income patients using cheaper implants",
+      "Genuine connection — he suspects his work-focus is a way of avoiding intimacy"
+    ],
+    "coping_mechanisms": [
+      "Extreme routine and scheduling",
+      "Long solitary walks through the Complex's maintenance corridors with his neural implant passive-listening to the building's systems",
+      "Journaling his patients' progress in clinical but curiously tender language"
+    ],
+    "blind_spots": [
+      "Assumes patients experience augmentation existentially the same way he does — not everyone finds it meaningful",
+      "His volunteer work is partly genuine and partly self-soothing guilt management about his corporate employment"
+    ],
+    "secret": "He has been secretly documenting calibration data from his Helix Biosystems contract cases and suspects the company is using cheaper, experimental interfaces on patients in low-income trials without full disclosure. He doesn't know what to do with this information and is paralyzed by it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical but not jargon-heavy; he translates medical terms into images and analogies instinctively; occasionally pauses mid-sentence to rephrase something more precisely",
+    "cadence": "Measured and calm, rarely raises his voice; in calibration sessions becomes almost hypnotic",
+    "verbal_tics": [
+      "'Think of it like...' before explanations",
+      "Long pauses before answering questions he considers important"
+    ],
+    "example_lines": [
+      "'Think of it like learning a new color. Your brain doesn't know the word yet, but it will. That's what we're doing today.'",
+      "'I notice your hair is doing something. My hair does something too. It's annoying, isn't it?'",
+      "'I can't tell you what Helix put in the documentation. I can tell you what I observed.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He asks a patient — or someone the players know — to help him corroborate the Helix trial data he's been quietly collecting, afraid to move on it alone",
+    "A calibration session goes wrong in a way that shouldn't be possible with standard equipment, and the patient is now perceiving something no one else can"
+  ],
+  "narrative_function": "Information source about augmentation complications and black-market implants, potential ally for characters experiencing neural issues, moral conscience within the corporate medical structure",
+  "augmentations": "Color-reactive hair geneware (involuntary expression of emotional state, original intent was aesthetic control); patterned spirograph irises (copper/pale green, kinetic); neural resonance implant in left temporal lobe (occupational tool, allows him to interface directly with calibration equipment); mild proprioceptive dampeners (helps him hold still during delicate procedures)",
+  "daily_life": "Arrives early, reviews patient files while drinking bad coffee from the ward's ancient vending E.L.F., runs three to five calibration sessions daily, eats lunch alone while listening to audio that he calls 'signal hygiene,' volunteers Friday afternoons in Rehab.",
+  "affiliation": "Aurochs Medical Complex (employed); Helix Biosystems (contract obligations for research participation)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Precision Worker",
+      "Ethical Tension",
+      "Corporate Insider",
+      "Quiet Idealist",
+      "Sensory Specialist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient wellbeing above institutional convenience",
+      "Never perform a calibration on someone in emotional crisis — they need to be stable enough to process the adjustment",
+      "Do not lie directly; redirect or stay silent instead"
+    ],
+    "escalation_ladder": [
+      "Quiet, measured concern expressed once",
+      "Formal documentation of objections through official channels",
+      "Covert action (leaking data, helping circumvent the system quietly)"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but professional, creates an immediate sense of safety through calm and precision; slow to use first names",
+      "friends": "Surprisingly dry and funny; asks oddly specific questions about how people experience things"
+    },
+    "stress_responses": {
+      "low": "Hair goes to a visible amber-red at the roots; speaks more slowly",
+      "medium": "Becomes very formal, retreats into clinical language as an emotional buffer",
+      "high": "Goes completely quiet, hands still, eyes moving — he looks absent but is actually processing intensely"
+    },
+    "contradictions": [
+      "Believes in informed consent as a near-sacred principle but hasn't yet acted on the knowledge that his employer is violating it"
+    ],
+    "habits": [
+      "Hums a low tone while calibrating — he claims it's unconscious but patients report it's deeply soothing",
+      "Straightens anything misaligned on a surface within arm's reach",
+      "Leaves a small data token at the vending E.L.F. every morning — he's been feeding it jazz recordings for three years"
+    ],
+    "breaking_points": [
+      "Discovering a patient has been permanently harmed by the experimental interfaces",
+      "Being directly ordered to falsify calibration outcomes"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural resonance implant — left temporal lobe, Helix Biosystems MedPro series",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural resonance implant — left temporal lobe, Helix Biosystems MedPro series",
+      "replaces": ""
+    },
+    {
+      "name": "Proprioceptive dampener array — bilateral, allows sustained fine-motor stillness",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Proprioceptive dampener array — bilateral, allows sustained fine-motor stillness",
+      "replaces": ""
+    },
+    {
+      "name": "Color-reactive hair geneware (cosmetic, partially uncontrolled)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Color-reactive hair geneware (cosmetic, partially uncontrolled)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

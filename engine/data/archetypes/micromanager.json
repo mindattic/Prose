@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57e73819a30310bf8997241",
+  "name": "Micromanager",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Controls every detail of every operation",
+  "behavioral_signature": "Hovers, corrects, double-checks everything",
+  "under_stress": "Control becomes suffocating",
+  "at_rest": "Checking, rechecking, adjusting",
+  "will_always": [
+    "control the details"
+  ],
+  "will_never": [
+    "let go of control"
+  ],
+  "unless": [
+    "micromanaging is destroying team morale and they're about to lose everyone"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Tyrant",
+      "threshold": 0.7,
+      "context": "control"
+    },
+    {
+      "archetype": "Perfectionist",
+      "threshold": 0.65,
+      "context": "obsessive detail"
+    }
+  ],
+  "opposite_of": [
+    "Delegator"
+  ],
+  "tags": [
+    "controlling",
+    "anxious"
+  ]
+}

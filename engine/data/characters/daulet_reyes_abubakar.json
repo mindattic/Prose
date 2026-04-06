@@ -1,0 +1,268 @@
+{
+  "id": "019d6143a5e8794eb2521b635381fe18",
+  "type": "character",
+  "name": "Daulet Reyes-Abubakar",
+  "aliases": [
+    "Murmur",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Freelance combat specialist — street samurai",
+  "age": 45,
+  "status": "active",
+  "location": "Geartown — industrial district of chop shops and fabricators",
+  "description": "Daulet Reyes-Abubakar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 45, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a street samurai out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Reyes-Abubakar is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.99,
+      "ideal": 0.45,
+      "id": 0.84,
+      "shadow": 0.85,
+      "mask": 0.43,
+      "ghost": 0.76
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "Dying alone in some alley and nobody noticing for weeks"
+    ],
+    "core_desires": [
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+    ],
+    "blind_spots": [
+      "Assumes their skill set is more transferable than it actually is",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Daulet Reyes-Abubakar has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
+    "verbal_tics": [
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
+      "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
+      "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Daulet Reyes-Abubakar's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A high-paying contract turns out to target someone Daulet Reyes-Abubakar owes a personal debt to",
+    "Daulet Reyes-Abubakar intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "As a street samurai, Daulet Reyes-Abubakar embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Geneware muscle density treatment — looks natural, hits like chrome. Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 10
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.69,
+      "caution": 0.89,
+      "loyalty": 0.35,
+      "greed": 0.68,
+      "empathy": 0.51
+    },
+    "drives": [
+      "loyalty",
+      "power",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 8,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "technical expertise with augmentation systems",
+      "natural leadership presence"
+    ],
+    "weaknesses": [
+      "physical limitation from incomplete augmentation",
+      "substance dependency — functional but fragile"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "street samurai",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always verifies target identity independently before lethal contracts",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware muscle density treatment",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal armor plating across torso and forearms",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Protector": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

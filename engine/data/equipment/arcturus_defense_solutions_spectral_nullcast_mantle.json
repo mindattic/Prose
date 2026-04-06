@@ -1,0 +1,64 @@
+{
+  "id": "019d6143a85274d5ab6db220bfda8d41",
+  "name": "Arcturus Defense Solutions Spectral Nullcast Mantle",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Spectral Nullcast Mantle",
+  "type": "equipment",
+  "aliases": [
+    "Null Mantle",
+    "The Blanket",
+    "ADS-SNC",
+    "Whiteout Cloak"
+  ],
+  "category": "comms",
+  "description": "The Spectral Nullcast Mantle is a wearable, full-spectrum communications suppression garment — a heavy tactical overcoat lined with a metamaterial mesh that absorbs, scatters, and re-emits incoming and outgoing RF, microwave, millimeter-wave, and infrared communication signals across a configurable suppression envelope extending up to six meters from the wearer. Unlike point-source jammers that broadcast detectable counter-signals, the Mantle operates through passive absorption and chaotic re-emission, creating a zone of signal degradation that registers to external monitoring as environmental noise rather than active interference. Within the envelope, no reliable digital communication can be established or maintained.\n\nThe garment's metamaterial lining is woven from Arcturus's proprietary Nullweave filament, a frequency-agnostic absorptive medium that requires no power to maintain baseline suppression. An optional active-mode module draws from an integrated power cell to extend the suppression envelope and add targeted frequency-specific nulling for high-priority bands. The Mantle's outer surface is designed to pass visual and casual tactile inspection as a standard heavy weather coat — seams, buttons, and collar are all functionally realistic.\n\nThe Spectral Nullcast Mantle was originally developed for military VIP protection details, where preventing remote detonation signals, covert surveillance transmission, and enemy coordination comms in close proximity to a principal is operationally critical. It has since proliferated into the private security sector and, inevitably, into the hands of well-funded criminal organizations conducting operations where communication blackouts serve as both security measures and psychological tools.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Metamaterial RF absorption (Nullweave filament)",
+    "Chaotic re-emission diffusion",
+    "Passive frequency-agnostic suppression",
+    "Active-mode targeted nulling",
+    "Full-spectrum coverage (RF through mmWave)"
+  ],
+  "specifications": {
+    "passive_suppression_envelope": "Up to 3m radius",
+    "active_suppression_envelope": "Up to 6m radius",
+    "frequency_coverage": "300MHz – 300GHz (full RF/microwave/mmWave); partial IR suppression",
+    "active_mode_power": "Integrated 8-hour cell",
+    "detectability": "Passive mode undetectable; active mode detectable as signal anomaly at 15m+",
+    "form_factor": "Heavy tactical overcoat, 2.4kg, multiple sizes",
+    "visual_profile": "Civilian weather coat (passes casual inspection)"
+  },
+  "tactical_use": "Worn by the team member closest to a sensitive meeting or transaction to prevent remote surveillance, signal interception, and remote detonation of any concealed devices. Also deployed offensively to deny enemy coordination comms during close-quarters operations. The Mantle creates a 'dead zone' that forces adversaries into face-to-face communication or physical runners, dramatically slowing their response cycles.",
+  "cultural_context": "Licensed Mantles are nominally restricted to certified private security contractors and military units, but Arcturus's notoriously permissive licensing review process means they circulate widely among corporate protection details and high-end criminal organizations alike. Wearing one in public is a statement — it announces that whoever you're meeting is important enough, or dangerous enough, to warrant a communications blackout. In certain circles, the sight of a Nullcast Mantle is understood as a signal to put all devices away.",
+  "known_users": [
+    "Corporate executive protection details",
+    "High-value criminal negotiators",
+    "Arcturus Defense Solutions field demonstration teams",
+    "Counter-surveillance specialists",
+    "Extortion crews conducting sensitive collections"
+  ],
+  "story_hooks": [
+    "A city councilor's security detail has begun wearing Mantles to every public appearance, suggesting they're either receiving death threats involving remote detonation or conducting meetings they don't want anyone to monitor — or both.",
+    "The players are hired to extract information from a meeting happening inside a Mantle's suppression envelope; their usual remote surveillance and overwatch comms will be useless.",
+    "A black-market Mantle is circulating that has been modified to also suppress emergency distress frequencies — whoever modified it wanted to ensure no one inside the envelope could call for help.",
+    "An Arcturus licensing record leak reveals that a Nullcast Mantle was purchased by an entity that shouldn't exist — a corporate shell with no employees, no address, and a single transaction history."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "gun",
+    "war",
+    "death",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "market",
+    "chase",
+    "tier 3"
+  ]
+}

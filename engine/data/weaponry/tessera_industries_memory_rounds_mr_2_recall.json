@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab517b56aa9070612229a6ed",
+  "name": "Tessera Industries Memory Rounds MR-2 'Recall'",
+  "type": "weapon",
+  "aliases": [
+    "Recall",
+    "MR-2",
+    "Smart Bullets",
+    "Thinking Rounds"
+  ],
+  "category": "exotic",
+  "description": "Self-guided ammunition compatible with standard 9mm pistol platforms that uses embedded micro-processing and control surfaces to adjust trajectory in flight. Each round contains a thumbnail-sized guidance package with a micro-camera, processing chip, and four piezoelectric fin actuators that can steer the round toward a designated target up to 15 degrees off the original firing axis. The rounds are 'trained' by designating a target through a linked optic — the round's guidance package memorizes the target's visual signature and homes on it after firing. The name comes from the round's ability to 'remember' its target. Accuracy degrades rapidly beyond 30 meters as the control surfaces lack the authority to compensate for ballistic drop at range.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — guided munition",
+  "base_technologies": [
+    "Micro-guided projectile engineering",
+    "In-flight trajectory correction",
+    "Visual signature target locking"
+  ],
+  "specifications": "caliber: 9mm compatible with standard platforms\nguidance: Embedded micro-camera + piezoelectric fin steering\ncourse correction: Up to 15 degrees off-axis\neffective guided range: 5-30 meters\ntarget designation: Visual signature lock via linked optic\nweight per round: 12g (2g heavier than standard 9mm)\nprocessing: Onboard micro-chip, single-use\nfin actuators: 4 piezoelectric surfaces",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A target was killed by a 9mm round that forensic analysis shows changed direction mid-flight — the entry angle is physically impossible from any firing position in the room without guidance.",
+    "A shipment of Memory Rounds has been intercepted with their guidance packages pre-locked to specific individuals — someone manufactured assassination rounds targeted at a specific hit list."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "war",
+    "memory",
+    "ai",
+    "elf",
+    "control",
+    "rain",
+    "train",
+    "tier 4"
+  ]
+}

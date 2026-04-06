@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a8577f56859ac0f14056c5a5",
+  "name": "Carrion Defense Works Ballistic Face Shield BFS-2",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Ballistic Face Shield BFS-2",
+  "type": "equipment",
+  "aliases": [
+    "BFS-2",
+    "Face Plate",
+    "Carrion Mask",
+    "Iron Face"
+  ],
+  "category": "armor",
+  "description": "A transparent ballistic visor that provides NIJ Level IIIA facial protection while maintaining full visual clarity. The BFS-2 is constructed from layered polycarbonate and ceramic nano-fiber composite, capable of stopping handgun rounds and fragmentary projectiles while being optically clear enough for precision shooting. The visor mounts to standard helmet rails and features an integrated HUD projection layer compatible with most tactical display systems. Anti-fog, anti-scratch, and anti-glare coatings are standard. The visor's lower edge extends to the chin, providing protection that conventional eyewear helmets miss.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — security and military",
+  "base_technologies": [],
+  "specifications": {
+    "ballistic rating": "NIJ Level IIIA — stops handgun rounds",
+    "material": "Polycarbonate + ceramic nano-fiber composite",
+    "optical clarity": "97% light transmission",
+    "HUD compatibility": "Standard projection layer",
+    "coatings": "Anti-fog",
+    "info": "anti-scratch; anti-glare",
+    "coverage": "Full face including chin",
+    "mount": "Standard helmet rail interface",
+    "weight": "0.8 kg"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A BFS-2 stopped a round that would have been fatal, but the visor's HUD layer recorded the muzzle flash position and the shooter's location was transmitted to response teams before they could relocate.",
+    "Modified BFS-2 visors with built-in facial recognition overlay have appeared — the wearer sees real-time identity information for every face they look at, sourced from hacked databases."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "gun",
+    "identity",
+    "ai",
+    "tier 2"
+  ]
+}

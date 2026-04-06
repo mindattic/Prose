@@ -1,0 +1,275 @@
+{
+  "id": "019d6143a6d8724dbd9f41b7c0536fdb",
+  "type": "character",
+  "name": "Somadina Karlsen-Sow",
+  "aliases": [
+    "Turbine",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Field trauma surgeon and combat support — combat medic",
+  "age": 33,
+  "status": "active",
+  "location": "Geartown — industrial district of chop shops and fabricators",
+  "description": "Somadina Karlsen-Sow are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a combat medic out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Somadina Karlsen-Sow are known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.13,
+      "ideal": 0.97,
+      "id": 0.9,
+      "shadow": 0.65,
+      "mask": 0.2,
+      "ghost": 0.59
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being captured alive — death is preferable to corporate interrogation",
+      "Going cyberpsycho — losing the boundary between human and machine"
+    ],
+    "core_desires": [
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Stability — a place to sleep that's the same place two nights running",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+    ],
+    "coping_mechanisms": [
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Overwork — takes every contract offered because idleness invites thinking",
+      "Ritual — follows the same pre-job routine every time, superstition as structure"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Cannot distinguish between caution and cowardice in themselves or others"
+    ],
+    "secret": "Somadina Karlsen-Sow has a child in another city, being raised by someone else. Sends Φ2,000 monthly under an alias. Has never visited."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Uses old pre-collapse slang that nobody else remembers",
+      "Whispers when angry — the quieter the voice, the worse the situation"
+    ],
+    "example_lines": [
+      "\"Hold still. This is going to hurt and I don't care.\"",
+      "\"I can keep you alive through almost anything. What I can't do is make you grateful.\"",
+      "\"Blood type? No, I don't need your blood type. I need you to stop moving.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Somadina Karlsen-Sow's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A high-paying contract turns out to target someone Somadina Karlsen-Sow owes a personal debt to",
+    "A former associate resurfaces with evidence that could destroy Somadina Karlsen-Sow's reputation — and a price for silence"
+  ],
+  "narrative_function": "Somadina Karlsen-Sow functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome. Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 4
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 9
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 5
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 6
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.58,
+      "caution": 0.96,
+      "loyalty": 0.86,
+      "greed": 0.83,
+      "empathy": 0.18
+    },
+    "drives": [
+      "knowledge",
+      "revenge",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 7,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "expert marksman",
+      "multilingual — speaks 4+ languages fluently",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "inability to delegate — must control everything personally",
+      "trust issues that limit crew effectiveness"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "combat medic",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always verifies target identity independently before lethal contracts",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Never discusses active contracts with anyone not directly involved",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Preaches independence but is desperate for approval from people they respect",
+      "Insists they work alone but performs noticeably better in a team"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Checks exits within 10 seconds of entering any room"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Being forced to choose between a crew member and the mission — and choosing wrong"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cybernetic arm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+      "replaces": ""
+    },
+    {
+      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Brawler": 0.9,
+    "Berserker": 0.9,
+    "Tactician": 0.9,
+    "Risk Taker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

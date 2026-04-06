@@ -1,0 +1,172 @@
+{
+  "id": "019d6143a61a7523a1edb468caa7c08c",
+  "type": "character",
+  "name": "Gennady Wulandari-Bekele",
+  "aliases": [
+    "Old Genna",
+    "The Whistler"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Whistleblower and reluctant policy advocate",
+  "age": 61,
+  "status": "active",
+  "location": "Hamtramck Enclave — a third-floor flat above a repair shop on Conant Avenue",
+  "description": "Gennady is a heavyset man who used to be heavier, the weight loss visible in the way his skin sits on his face, the slight redundancy at his jaw. His hair is white and kept short, his complexion a warm reddish-brown from his mother's Javanese and his father's Ethiopian lines, and he has the slow, deliberate movements of someone managing old joint pain who refuses to say so. His eyes are unaugmented, which in Hamtramck reads as either poverty or ideology — in his case it's both, but mainly ideology.\n\nFifteen years ago, Gennady was a data compliance officer at Zheng-Dao's Lake Infrastructure division. He leaked internal documents proving that the corponation had falsified structural inspection records for the Bluewater Checkpoint drainage network, a failure that later contributed to the 2186 partial flood. He lost his career, his housing, and his marriage, and gained a reputation that has made him simultaneously valuable and radioactive to activist communities. He is now officially a 'policy consultant' for the Hamtramck Enclave Community Committee, which means he attends hearings no one else will attend and submits public comments to regulatory bodies that technically must read them. He is bitter, precise, and intermittently hopeful in a way he'd rather die than admit.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Having caused the 2186 flood by leaking too late",
+      "Dying before the regulatory record he's building ever matters"
+    ],
+    "core_desires": [
+      "One official acknowledgment — a single line in a public record — that he was right",
+      "To understand if he would do it again knowing the full cost"
+    ],
+    "coping_mechanisms": [
+      "Documentation as control — he records everything, keeps copies of copies",
+      "Cantankerousness as armor — if people find him difficult, they don't try to comfort him",
+      "Canal monitoring as ritual, a way of making himself useful to something that can't deceive him"
+    ],
+    "blind_spots": [
+      "He measures impact by the paper record, not by what changes in people's lives",
+      "He has contempt for activists who don't understand bureaucratic systems, which alienates him from most of them"
+    ],
+    "secret": "He knew about the Bluewater Checkpoint falsifications eight months before he leaked them. He spent that time trying to fix the problem internally. People died in the 2186 flood during those eight months, and the causal chain is something he's gone over ten thousand times. He's never been certain the internal process wasn't worth trying. He's never been certain it was."
+  },
+  "speech_patterns": {
+    "vocabulary": "Highly specific, technical, document-oriented. References regulatory codes and filing numbers from memory. Occasionally lapses into dry black humor that arrives without warning.",
+    "cadence": "Deliberate and slightly exhausting. Takes detours through precision that can feel like obstruction but are actually him making sure every word is true.",
+    "verbal_tics": [
+      "'That's in the public record.'",
+      "'I'm going to tell you exactly what happened.'",
+      "Long silences before answering questions about 2186"
+    ],
+    "example_lines": [
+      "'I didn't blow the whistle. I filed a disclosure under section forty-two of the Corponation Compact transparency protocol. Whistleblower implies heroism. I was just a man who read the rules.'",
+      "'They didn't fire me for leaking. They fired me for being someone who leaks. There's a personnel flag for it now. I assume I'm in their training materials.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He's found a pattern in current Ferrogate Transit maintenance filings that mirrors exactly the falsification structure he identified in Zheng-Dao fifteen years ago — and this time he doesn't know who to trust with the information.",
+    "A Zheng-Dao legal team has begun a quiet campaign to have his 2186 disclosure retroactively classified, which would nullify his testimony in three ongoing regulatory cases."
+  ],
+  "narrative_function": "Information source and moral weight. He knows where the bodies are buried — specifically, he knows how corporate compliance systems can be gamed, what documentation to look for, and what irregularities mean. He's also a cautionary tale and an unexpected source of stubborn hope.",
+  "augmentations": "A decade-old pain management implant in his lower spine — Zheng-Dao issued, which means he's thought about having it removed but can't afford the alternative.",
+  "daily_life": "Mornings reading every public regulatory filing he can access. Afternoons writing comments, attending hearings via remote link, occasionally testifying in person. Evenings walking along the Enclave's canal, which he monitors obsessively for water quality changes.",
+  "affiliation": "Hamtramck Enclave Community Committee; informal adviser to Temitope Vasiliev-Kiriwina's Groundswell (they have never met in person)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "institutional expert",
+      "traumatized idealist",
+      "living archive",
+      "moral anchor",
+      "difficult ally"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document before you act",
+      "Understand the system you're trying to change or you'll only push it sideways",
+      "Don't tell people what they want to hear about their odds"
+    ],
+    "escalation_ladder": [
+      "Read the full record",
+      "File formal comments and discovery requests",
+      "Request public hearings",
+      "Coordinate testimony across multiple bodies",
+      "Contact press as last resort — the cost is not abstract to him"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Suspicious and formal. Asks more questions than he answers. Evaluates reliability obsessively.",
+      "friends": "Surprisingly gentle. Makes bad coffee and offers it sincerely. Tells stories about the Enclave before 2186 with a love he doesn't know how to talk about directly."
+    },
+    "stress_responses": {
+      "low": "Reorganizes his filing system.",
+      "medium": "Stops sleeping properly. Goes to the canal at 3am.",
+      "high": "Sits with the Hamtramck Enclave's oldest E.L.F. — an industrial water sensor array the community has named Mara — and talks to it for hours. He says he's checking readings. Everyone knows he's praying."
+    },
+    "contradictions": [
+      "Distrusts institutions completely but continues to work within them because he believes in the alternative even less"
+    ],
+    "habits": [
+      "Brings water samples from the canal to Mara as data offerings",
+      "Keeps a printed copy of the original Zheng-Dao disclosure in an envelope in his jacket at all times — he hasn't opened it in years but hasn't stopped carrying it"
+    ],
+    "breaking_points": [
+      "Seeing another falsification cycle complete itself while he's still filing comments about the last one",
+      "Someone telling him the 2186 flood would have happened anyway"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

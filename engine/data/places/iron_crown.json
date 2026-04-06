@@ -1,0 +1,110 @@
+{
+  "id": "019d6143a92175348caa86478a662de1",
+  "type": "place",
+  "name": "Iron Crown",
+  "aliases": [
+    "Marquette MI",
+    "The Crown",
+    "UP Capital",
+    "Iron City"
+  ],
+  "description": "Marquette was always the Upper Peninsula's capital in spirit. In 2200, it's the capital in fact — the seat of Michigan's UP Administrative Authority, the largest population center in the contested peninsula, and the symbolic heart of whatever the Upper Peninsula is becoming. The iron mines that built the city in the nineteenth century are still operating, though they've evolved from open-pit extraction to deep-bore automated mining systems that pull iron, copper, and rare earth minerals from deposits that human miners couldn't have reached. Dredge Mining Collective holds sovereign extraction rights, and their operations extend in a 50-kilometer radius around the city, honeycombing the bedrock with automated tunnels that the surface population tries not to think about.\n\nNorthern Michigan University — one of the few surviving public universities in the GLM — anchors the city's other identity. The university is the UP's intellectual infrastructure, producing the engineers, technicians, and administrators who keep the peninsula functioning. Its research programs in cold-weather augmentation, mining automation, and Superior ecology draw funding from corporate and governmental sources alike, making the campus a rare neutral ground in the Michigan-Wisconsin territorial dispute. Both sides want the university's output. Neither side wants to be the one that militarizes a campus.\n\nThe lakefront is Marquette's window onto Superior, and it remains genuinely beautiful in a way that most of the GLM's waterfronts have surrendered to infrastructure. The ore docks still load ships — massive automated structures extending into the lake — but between them, the sandstone cliffs and beaches persist, maintained by a municipal government that understands the psychological value of having something worth looking at. Iron Crown is the UP's proof of concept — the argument that a contested, isolated, resource-dependent community can sustain itself through extraction, education, and the stubborn refusal to be absorbed by any of the larger powers that want what it has.",
+  "atmosphere": {
+    "sights": [
+      "The ore docks extending into Lake Superior like industrial fingers — automated loading systems running day and night",
+      "Northern Michigan University campus, its buildings a mix of pre-corporate stone and modern research facilities",
+      "Sandstone cliffs along the lakefront, red-brown against Superior's grey-blue — beauty that nobody has managed to monetize",
+      "Mining transport vehicles moving through the city center — the underground economy surfacing for resupply",
+      "Michigan state flags flying from government buildings alongside UP independence banners — a political identity still forming"
+    ],
+    "sounds": [
+      "Ore loading operations on the docks — the deep metallic groan of tonnage moving from land to ship",
+      "University activity — the sounds of a campus that hasn't given up on public education",
+      "Lake Superior weather — wind off the lake that carries cold and context",
+      "Mining transport convoys — heavy vehicles on roads not designed for them, a grinding complaint from the infrastructure"
+    ],
+    "smells": [
+      "Iron ore dust — the city's signature scent, red-brown and metallic, coating every surface",
+      "Lake Superior air — the cleanest air in the GLM, when the wind comes off the water",
+      "Pine forests north of the city, carried on north winds",
+      "University cafeteria food — bad, but the smell of an institution that still feeds people rather than charging for nutrient optimization"
+    ],
+    "feel": "A city that is trying to be something more than a mine with addresses. Iron Crown has ambition beyond extraction — the university, the lakefront, the administrative infrastructure — but the iron is what pays for it, and everyone knows it. The tension between resource colony and actual community defines the place.",
+    "tags": []
+  },
+  "demographics": "Population 95,000, plus 12,000 university students. The most stable population in the UP — families with multi-generational roots, mining workers who stayed, academics who came for a position and discovered they couldn't leave. Tier 2 majority, with a Tier 3 professional class centered on the university and administration. Wisconsin partisans make up an estimated 15% — a minority, but a vocal one.",
+  "economy": "Iron and rare earth mining (Dredge Mining Collective), higher education (Northern Michigan University), and UP administrative services. The mining revenue funds the administration. The university produces the workforce. The arrangement is circular, self-sustaining, and entirely dependent on mineral prices remaining high enough to justify the extraction.",
+  "power_structure": "Michigan's UP Administrative Authority governs from Iron Crown, with actual jurisdiction over the city and nominal jurisdiction over the peninsula. Dredge Mining Collective holds sovereign extraction rights but has limited authority within the city itself — an arrangement that both sides maintain because renegotiation would be worse. The university president has informal influence disproportionate to the position, because everyone needs what the university produces.",
+  "dangers": [
+    "Mining subsidence — the automated tunnels beneath the city are extensive, and the ground settles occasionally and catastrophically",
+    "Wisconsin-aligned sabotage of Michigan administrative facilities — rare but escalating",
+    "Dredge Mining's extraction operations encroaching on municipal territory as surface deposits deplete",
+    "Winter isolation — Iron Crown is reachable by one major highway, one rail line, and lake shipping, all of which close in severe weather",
+    "The rare earth minerals beneath the city making it too valuable for larger powers to leave alone indefinitely"
+  ],
+  "opportunities": [
+    "University connections — NMU's research programs provide access to cutting-edge cold-weather and mining technology",
+    "Administrative access — Iron Crown is where UP governance happens, and governance requires operators",
+    "Mining expertise — Dredge-trained technicians and automated systems specialists are in demand across the GLM",
+    "The UP independence movement — nascent, controversial, and in need of people who can navigate between Michigan and Wisconsin interests"
+  ],
+  "story_hooks": [
+    "Dredge Mining's automated tunnel network has intersected with something beneath the city that predates human habitation — the mining AI flagged it, and Dredge corporate sealed the data",
+    "A university researcher has developed a cold-weather augmentation that would transform UP habitability — and both Michigan and Wisconsin want exclusive access",
+    "The UP Administrative Authority is quietly preparing for a sovereignty declaration independent of both Michigan and Wisconsin — and they need external support to survive the aftermath"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Lockhaven South (Sault Ste. Marie, east along the UP corridor)",
+      "Copperhead (Houghton/Hancock, northwest along the Keweenaw)",
+      "Ironvein (Iron Mountain, southwest toward the Wisconsin border)",
+      "Escanaba Gateway (south, Lake Michigan shore)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Dredge Mining personnel and automated systems technicians",
+    "NMU students, researchers, and faculty",
+    "UP Administrative Authority officials and staff",
+    "Michigan loyalists and UP independence advocates"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Ore Docks",
+      "description": "Automated loading structures extending into Lake Superior — the physical connection between what's underground and the ships that carry it away",
+      "tags": []
+    },
+    {
+      "name": "Northern Michigan University",
+      "description": "The UP's intellectual anchor — public education surviving in the age of corporate knowledge monopolies",
+      "tags": []
+    },
+    {
+      "name": "UP Administrative Center",
+      "description": "Michigan's governing facility for the Upper Peninsula — the bureaucratic heart of a contested territory",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 46.5436,
+    "lng": -87.3954,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "identity",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "tunnel",
+    "rain",
+    "cold",
+    "rights",
+    "train",
+    "water",
+    "lake"
+  ]
+}

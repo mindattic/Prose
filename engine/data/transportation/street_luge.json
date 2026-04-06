@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa7277dfbb762166bb6eda8c",
+  "name": "Street Luge",
+  "type": "transportation",
+  "aliases": [
+    "Coffin Board",
+    "Belly Slider",
+    "Ground Zero"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "DIY / underground racing community",
+  "description": "A low-profile, motorized sled ridden in a supine position, inches from the ground surface. Originally a gravity-only downhill racing vehicle, Meridian 88's version adds electric thrust and magnetic ground-effect stabilization. Riders lie flat on their backs at speeds exceeding 100 km/h with nothing but a helmet and the sled's low profile protecting them. It is the most dangerous personal transport in the city, and the racing community treats its fatality rate as a feature, not a bug. You haven't lived until you've ridden a luge through the industrial district at 3 AM.",
+  "propulsion": "Electric thrust, magnetic ground-effect, gravity on hills",
+  "speed": "100+ km/h on straightaways",
+  "capacity": "1 rider",
+  "range": "15 km powered, gravity extends range on slopes",
+  "tier_availability": "Tier 1-3 (underground racing community)",
+  "cost": "Φ500-2,000 depending on build quality",
+  "autonomy": "Manual only. You feel every crack in the road surface.",
+  "armament": "None. The ground is close enough to be a weapon.",
+  "common_usage": "Underground racing, extreme courier work, proving you're insane.",
+  "story_hooks": [
+    "A street luge racer discovers that at certain speeds, their magnetic ground-effect system interacts with something buried under the road surface",
+    "The street luge racing circuit is a recruitment pipeline — but for what organization, nobody knows"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "weapon",
+    "ai",
+    "power",
+    "vehicle",
+    "circuit",
+    "tier 1",
+    "tier 3"
+  ]
+}

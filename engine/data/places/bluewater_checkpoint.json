@@ -1,0 +1,109 @@
+{
+  "id": "019d6143a9107ae18d875c1261085c49",
+  "type": "place",
+  "name": "Bluewater Checkpoint",
+  "aliases": [
+    "Port Huron MI",
+    "The Crossing",
+    "Blue Bridge",
+    "Checkpoint Charlie"
+  ],
+  "description": "Port Huron sits where Lake Huron becomes the St. Clair River, and where the Blue Water Bridge connects Michigan to Ontario. In the old world, it was a border crossing. In the GLM, it is the border crossing — the primary point of jurisdictional transfer between American corporate territory and Canadian sovereign space on the Lake Huron corridor. Every person, cargo container, and data packet crossing between the Blackpipe Corridor on the Canadian side and the Michigan interior passes through Bluewater Checkpoint, and the infrastructure required to process that traffic has consumed the city.\n\nThe bridge itself has been widened, reinforced, and augmented with a scanning array so dense that crossing it takes a minimum of 45 minutes even with clean documentation. The scanning isn't just customs — it's jurisdictional assessment. Your legal status, your augmentation registry, your corporate affiliations, your tier rating — all of it is evaluated in real-time as you cross, and your rights on the other side are calculated accordingly. The process is automated, which means it is fast, impersonal, and essentially impossible to appeal. The checkpoint authority — a joint operation between Tessera Corponation (American side) and the Canadian Border Authority — has more practical power over individual lives than any court in the region.\n\nThe city behind the checkpoint is a border economy amplified to industrial scale. Legal services, document preparation, identity verification, augmentation compliance adjustment — an entire industry built around helping people survive the crossing. The south side of town, away from the bridge, retains some of the old Port Huron character — lakefront parks, residential neighborhoods, the remnants of a beach town that existed before the border became an industry. These neighborhoods are where the checkpoint workers live, and they carry the particular weariness of people whose daily work involves watching a machine decide other people's futures.",
+  "atmosphere": {
+    "sights": [
+      "The Blue Water Bridge draped in scanning arrays — a lattice of sensors that makes the structure glow blue-white at night",
+      "Processing queues extending kilometers from the bridge approach — vehicles, pedestrians, and cargo in parallel lines",
+      "Document preparation shops lining Michigan Boulevard — neon signs advertising 'Tier Adjustment' and 'Augment Compliance'",
+      "The St. Clair River below the bridge, carrying chemical-industry traffic from the Blackpipe Corridor",
+      "Lake Huron opening up to the north, visible from the bridge apex — the moment of transition between jurisdictions"
+    ],
+    "sounds": [
+      "Scanning array frequencies — a high-pitched whine that bridge workers claim to hear in their sleep",
+      "Processing announcements in automated voices — 'Step forward. Present documentation. Stand still for neural scan.'",
+      "The hum of the bridge's structural systems — reinforced against everything including the traffic it carries",
+      "Arguments at the document preparation shops — desperation has a consistent tone across languages"
+    ],
+    "smells": [
+      "Ozone from the scanning arrays — sharp, persistent, and the smell of being assessed",
+      "St. Clair River carrying the Blackpipe Corridor's chemical signature southward",
+      "Lake Huron on north winds — clean, cold, a reminder that something beyond the checkpoint exists"
+    ],
+    "feel": "Bureaucratic violence made architectural. Bluewater Checkpoint is the place where abstract jurisdictional systems become physical experiences — where the difference between Tier 2 and Tier 3 is measured in hours of waiting, and the difference between documented and undocumented is measured in whether you cross at all. The city functions. The city is exhausting.",
+    "tags": []
+  },
+  "demographics": "Population 55,000 permanent residents. The workforce is predominantly checkpoint-adjacent — processing, legal services, compliance adjustment, and the support economy for all of the above. Transient population of 15,000-30,000 at any time, depending on crossing volume. The permanent residents are pragmatic, desensitized, and very good at paperwork.",
+  "economy": "Border processing and crossing services. The checkpoint generates revenue through processing fees, legal services, and the compliance industry that has grown around it. Tessera Corponation's American-side operations and the Canadian Border Authority's northern-side operations are the primary employers. The secondary economy exists to feed, house, and serve the transient crossing population.",
+  "power_structure": "Joint checkpoint authority (Tessera Corponation / Canadian Border Authority) controls the bridge and processing infrastructure. Michigan municipal government handles the residential city. The practical power lies with whoever controls the scanning arrays — they determine who crosses and who doesn't, which is the only power that matters at a border.",
+  "dangers": [
+    "Crossing denial — the scanning system's decisions are automated and effectively unappealable",
+    "Identity fraud complications — the compliance industry includes operators who will 'adjust' your documentation, and some of those adjustments trigger worse outcomes",
+    "Checkpoint security operating under dual authority — accountability gaps between Tessera and the Canadian Border Authority",
+    "Chemical drift from the Blackpipe Corridor, carried south by the St. Clair River",
+    "Getting stuck — the checkpoint can hold individuals for 'extended processing' indefinitely, and the legal framework for release is deliberately complex"
+  ],
+  "opportunities": [
+    "Compliance consulting — helping people navigate the crossing is lucrative and always in demand",
+    "Intelligence gathering — the crossing traffic is a real-time readout of who's moving where and why",
+    "Document services of varying legality — the market exists because the need is constant",
+    "Cross-border smuggling routes that bypass the bridge entirely — the river has other crossing points, for those who know them"
+  ],
+  "story_hooks": [
+    "The scanning array has been flagging individuals for 'secondary processing' based on criteria that don't match any official protocol — someone has added unauthorized parameters",
+    "A compliance consultant has discovered that Tessera's crossing data is being sold to third parties, including parties on the Canadian side — the checkpoint is monetizing the people it processes",
+    "An underwater crossing tunnel has been discovered beneath the St. Clair River — pre-corporate construction, unregistered, and currently in use"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Blackpipe Corridor (Sarnia, across the bridge)",
+      "The I-75 Spine (south toward Detroit and Meridian 88)",
+      "Saginaw Barrens (Bay City/Saginaw, northwest along the Huron coast)",
+      "Lake Huron coast (north toward Alpena)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Cross-border commuters and commercial traffic",
+    "Compliance consultants and document preparation specialists",
+    "Checkpoint security personnel from both Tessera and the Canadian Border Authority",
+    "Smugglers, fixers, and intelligence operatives working the border"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Blue Water Bridge Scanning Array",
+      "description": "The crossing's jurisdictional assessment infrastructure — the machine that decides who you are on the other side",
+      "tags": []
+    },
+    {
+      "name": "Compliance Row",
+      "description": "Michigan Boulevard's document preparation district — where border anxiety is monetized and hope is sold by the page",
+      "tags": []
+    },
+    {
+      "name": "South Beach",
+      "description": "The old lakefront neighborhood — where checkpoint workers live and try to remember that the lake is more than a jurisdictional boundary",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.9709,
+    "lng": -82.4249,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "smuggle",
+    "identity",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "power",
+    "tunnel",
+    "market",
+    "rights",
+    "water",
+    "lake"
+  ]
+}

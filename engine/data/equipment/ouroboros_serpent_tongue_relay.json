@@ -1,0 +1,66 @@
+{
+  "id": "019d6143a8657affa387c700a79aeb0b",
+  "name": "Ouroboros Serpent Tongue Relay",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Serpent Tongue Relay",
+  "type": "equipment",
+  "aliases": [
+    "Serpent Tongue",
+    "The Ouroboros Box",
+    "Shedder",
+    "Loop Relay"
+  ],
+  "category": "comms",
+  "description": "The Ouroboros Serpent Tongue Relay is a secure channel device built around a single conceptual innovation: it routes all transmissions through Ouroboros Energy's proprietary smart-grid infrastructure, embedding communications data within the load-balancing telemetry that the corporation's power distribution network broadcasts continuously across Meridian 88. Because the city's power grid is the most heavily trafficked and least-scrutinized data channel in existence — monitored obsessively for energy metrics but almost never for embedded payloads — the Serpent Tongue achieves a form of steganographic invisibility that no dedicated communications channel can match. A transmission sent through a Serpent Tongue relay is, to any external observer, a routine fluctuation in district power consumption data.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Corporate only",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Power-grid steganographic encoding",
+    "Load-variance data embedding",
+    "Hardwired grid interface",
+    "Air-gap wireless isolation",
+    "Ouroboros smart-grid telemetry integration"
+  ],
+  "specifications": {
+    "dimensions": "28cm x 18cm x 7cm",
+    "weight": "1.4kg",
+    "transmission_method": "Steganographic embedding in smart-grid load-balancing telemetry",
+    "wireless_emissions": "None — fully air-gapped from RF spectrum",
+    "connection_requirements": "Physical hardwire to live Ouroboros smart-grid connection point",
+    "range": "Any location connected to the Ouroboros grid citywide",
+    "encryption": "Ouroboros proprietary OES-Steg encoding; 8192-bit session keys",
+    "bandwidth": "Low — text and compressed audio only; no video transmission",
+    "detectability": "Undetectable by RF sweep; requires physical inspection of grid telemetry data or knowledge of OES-Steg encoding to identify",
+    "availability": "Private client sales only through Ouroboros Client Relations division"
+  },
+  "tactical_use": "The Serpent Tongue is used to establish a permanent secure channel between fixed locations — a safe house and a handler's office, two corporate black sites, a laundering front and its financial coordinator. Because it requires hardwired grid access, it is not a field communication tool; it is infrastructure. Operators use it to send operational orders, financial transfers, and intelligence packages through a channel that survives even aggressive electronic warfare environments, since suppressing smart-grid telemetry would require shutting down city power. The device's low bandwidth is a tactical constraint — complex data packages must be compressed or transmitted in segments over time.",
+  "cultural_context": "Ownership of a Serpent Tongue relay is a statement of institutional seriousness. It is not a device for individuals — it is a device for organizations with fixed infrastructure and the kind of long-term operational horizon that warrants investment in permanent secure communication channels. In Meridian 88's power landscape, the fact that the device runs through Ouroboros Energy's grid means that Ouroboros theoretically has access to all traffic — a fact that every sophisticated user understands and accepts as the cost of using the channel. This creates a peculiar dynamic: the Serpent Tongue is trusted precisely because the only entity capable of monitoring it is also the entity selling it, and Ouroboros's business model depends on that trust remaining intact.",
+  "known_users": [
+    "Senior corporate executives maintaining off-record communication channels",
+    "Long-established criminal organizations with fixed safe house infrastructure",
+    "Political factions operating within Meridian 88's governance structure",
+    "Ouroboros Energy's own internal black operations division",
+    "Certain high-tier fixers who have maintained the same safe house for years"
+  ],
+  "story_hooks": [
+    "The party discovers a Serpent Tongue relay hardwired into the basement of a building they've been using as a safe house — it was there before they arrived, and it's been transmitting.",
+    "Ouroboros Energy's client relations division keeps meticulous records of every Serpent Tongue sale; someone has stolen that list, and the buyers on it are beginning to be targeted.",
+    "A Serpent Tongue channel goes suddenly silent mid-transmission — not because the device was destroyed, but because Ouroboros shut down power to an entire district as leverage in a contract dispute, and the communication it was carrying was time-critical.",
+    "The party is offered a Serpent Tongue relay as payment for a job; the device's installation port still has fragments of the previous owner's grid connection point attached — cross-referencing the grid node address reveals a location that several powerful entities would very much like to find."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "trust",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "rain",
+    "train",
+    "energy"
+  ]
+}

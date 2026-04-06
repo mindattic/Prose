@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8557b11986bd2e12da13e94",
+  "name": "Axiom Systems Distributed Identity Cloak DIC-2",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems Distributed Identity Cloak DIC-2",
+  "type": "equipment",
+  "aliases": [
+    "DIC-2",
+    "ID Fog",
+    "Identity Cloud",
+    "Axiom Scatter"
+  ],
+  "category": "counter-surveillance",
+  "description": "A device that floods local surveillance systems with dozens of false identity signals, making it impossible to determine the wearer's true identity among a crowd of spoofed personas. The DIC-2 broadcasts multiple simultaneous false biometric, neural interface, and Diaspora identity signatures within a 10-meter radius, creating a cloud of phantom identities that overwhelms facial recognition, biometric tracking, and identity correlation systems. Within the cloud, every person appears to be everyone else — faces do not match IDs, neural signatures do not match bodies, and tracking systems lose the ability to associate any specific identity with a specific physical person.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — identity obfuscation device",
+  "base_technologies": [],
+  "specifications": {
+    "false identity generation": "30 simultaneous phantom signatures",
+    "effect radius": "10 meters",
+    "affected systems": "Facial recognition",
+    "info": "biometric tracking; neural interface correlation; Diaspora identity; instant effect",
+    "result": "Complete identity confusion within radius",
+    "battery": "4-hour active broadcast",
+    "weight": "0.25 kg",
+    "form factor": "Belt-worn or pocket module",
+    "activation": "Single button"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A DIC-2 was activated in a crowded transit hub, causing every surveillance system in the area to simultaneously flag 300 identity mismatches — in the confusion, someone walked through security with a weapon that would normally have been detected through identity correlation.",
+    "A permanent DIC-2 installation has been discovered in a Tier 3 building, creating an always-on identity fog that makes the building's occupants effectively untrackable — the building has become a haven for anyone who needs to disappear."
+  ],
+  "tags": [
+    "countersurveillance",
+    "equipment",
+    "weapon",
+    "identity",
+    "neural",
+    "surveillance",
+    "tier 4"
+  ]
+}

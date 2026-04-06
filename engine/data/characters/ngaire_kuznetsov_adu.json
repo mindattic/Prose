@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a6617f3ba4d7e4831916bf06",
+  "type": "character",
+  "name": "Ngaire Kuznetsov-Adu",
+  "aliases": [
+    "Cipher",
+    "The Machine"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Freelance combat specialist — street samurai",
+  "age": 52,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "description": "Ngaire Kuznetsov-Adu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 52, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a street samurai out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNgaire Kuznetsov-Adu is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.29,
+      "ideal": 0.98,
+      "id": 0.72,
+      "shadow": 0.44,
+      "mask": 0.71,
+      "ghost": 0.29
+    },
+    "core_fears": [
+      "Dying alone in some alley and nobody noticing for weeks",
+      "That the work they do makes the city worse, not better",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "To build something that outlasts the next contract cycle"
+    ],
+    "coping_mechanisms": [
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Assumes their skill set is more transferable than it actually is",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Ngaire Kuznetsov-Adu sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
+      "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
+      "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Ngaire Kuznetsov-Adu a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Ngaire Kuznetsov-Adu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "Ngaire Kuznetsov-Adu discovers a job they completed last year was a setup for something much larger and much worse"
+  ],
+  "narrative_function": "As a street samurai, Ngaire Kuznetsov-Adu embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Subdermal weapon mount — pop-out blade in each forearm",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 4
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 5
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.33,
+      "caution": 0.93,
+      "loyalty": 0.3,
+      "greed": 0.2,
+      "empathy": 0.94
+    },
+    "drives": [
+      "survival",
+      "reputation",
+      "freedom"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 7,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "exceptional close-quarters combat",
+      "mechanical aptitude — can repair or modify almost anything"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "street samurai",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Never discusses active contracts with anyone not directly involved",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Claims not to care about reputation but monitors what people say about them obsessively"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Keeps a physical paper notebook — no digital record of personal thoughts"
+    ],
+    "breaking_points": [
+      "Being forced to choose between a crew member and the mission — and choosing wrong",
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal weapon mount",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Protector": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

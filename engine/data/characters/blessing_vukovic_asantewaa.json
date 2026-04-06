@@ -1,0 +1,174 @@
+{
+  "id": "019d6143a5c67125b494014bc7764368",
+  "type": "character",
+  "name": "Blessing Vukovic-Asantewaa",
+  "aliases": [
+    "Bless",
+    "The Patcher"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street doc operating out of a converted shipping container in The Narrows",
+  "age": 41,
+  "status": "active",
+  "location": "The Narrows, Blackpipe Corridor",
+  "description": "Blessing is a compact woman with deep umber skin that carries old burn scarring across her left forearm and neck — damage from a clinic fire she does not discuss. Her hair is locked tight against her skull and threaded with copper wire she claims is decorative but occasionally taps when thinking. Her eyes have been modded with patterned irises: rings of amber and green that pulse faintly when she's concentrating, a gift to herself after her tenth year of practice. She wears repurposed surgical scrubs in gray-green and keeps a battered leather apron over them during procedures. Her workspace smells of antiseptic, soldering flux, and the dried ngai-grass bundles she leaves as data offerings to the E.L.F. she calls Mama Stitch ��� a local digital spirit she believes has saved three patients from flatline through sheer good favor.\n\nBlessing is warm but operates on a strict internal economy of trust. She will treat anyone who comes through her container door — corporate spy or Tier 1 destitute — but her loyalty scales with honesty. Lie to her about what happened to you, and she'll still fix you, but she'll charge more and remember forever. She has a dry, layered sense of humor that emerges unexpectedly in the middle of tense procedures. Her medical training is a patchwork of two years at Aurochs Medical Complex before she was administratively forced out, apprenticeship under a Helix Biosystems defector, and a decade of hard-won street practice. She is arguably better than most licensed clinicians.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Losing a patient she could have saved with better resources",
+      "Being shut down by Helix Biosystems inspectors and leaving her community without care"
+    ],
+    "core_desires": [
+      "To build a real clinic — permanent walls, a sterilization unit, a second doctor",
+      "To be recognized as legitimate without losing her independence"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the data offerings to Mama Stitch give her psychological grounding before difficult procedures",
+      "Gallows humor to diffuse her own dread",
+      "Obsessive instrument organization"
+    ],
+    "blind_spots": [
+      "Believes she can read people's honesty accurately — she cannot, and certain charismatic liars have exploited this",
+      "Underestimates her own exhaustion and how it affects judgment"
+    ],
+    "secret": "She was not administratively removed from Aurochs Medical Complex. She left after discovering a Helix Biosystems trial was using Tier 1 patients as undisclosed test subjects for an augmentation suppression compound. She took data. She has never used it. She doesn't know why she keeps it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Medical precision mixed with neighborhood vernacular; will slip into formal clinical language when stressed as a self-steadying mechanism",
+    "cadence": "Measured, unhurried, with deliberate pauses before delivering bad news or difficult truths",
+    "verbal_tics": [
+      "'Hold still' (said even when not performing a procedure — a nervous anchor phrase)",
+      "'That's going to cost you something' (meaning more than money)",
+      "Clicks her tongue once before disagreeing with someone"
+    ],
+    "example_lines": [
+      "'I don't care what happened. I care that it doesn't happen again in this room. Now hold still.'",
+      "'Mama Stitch was kind tonight. I've seen that wound go septic in six hours. You've got a day, maybe two. Use them.'",
+      "'Legitimate. What a lovely word. My patients are breathing. That's legitimate enough.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient came in with augmentation damage that matches a proprietary Helix Biosystems internal component — one that isn't on the market yet. Blessing wants to know where it came from and whether to be afraid.",
+    "The E.L.F. she calls Mama Stitch has gone quiet. Three patients in a row have taken unexpected turns for the worse. Blessing is trying to figure out if it's coincidence, sabotage, or if something has moved into her local network infrastructure."
+  ],
+  "narrative_function": "Primary community healer and information node; quest giver for medical emergencies; can patch up players or NPCs; source of street-level intelligence about who's been hurt and how; moral compass figure who asks uncomfortable questions about consequences",
+  "augmentations": "Patterned irises (amber/green pulse); subdermal haptic sensor pads on fingertips for reading augmentation interfaces without equipment; basic neural mesh for medical reference database access (outdated Helix Biosystems version, heavily patched)",
+  "daily_life": "Blessing opens her container at 06:00, checks on any overnight patients, and spends the morning on scheduled maintenance — changing dressings, calibrating low-grade augmentations for regulars. Afternoons are unpredictable: walk-ins, emergencies, or the occasional corporate employee who doesn't want their visit logged.",
+  "affiliation": "Independent; informal community cooperative, Blackpipe Corridor Residents' Network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Healer",
+      "Community Anchor",
+      "Information Broker (passive)",
+      "Morally Grounded",
+      "Quietly Dangerous"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Treat first, ask questions during — never refuse care on the basis of payment upfront",
+      "Never give patient information to anyone in a uniform without documented community oversight approval",
+      "If a situation risks her entire operation, she will sacrifice a smaller part to protect the whole"
+    ],
+    "escalation_ladder": [
+      "Calm assessment and direct questions",
+      "Firm boundary-setting with explanation",
+      "Physical removal from the container with zero apology",
+      "Reporting to the Residents' Network for community-level response"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional warmth with careful observation — she is forming a file on you from the moment you walk in",
+      "friends": "Openly affectionate, will cook, will argue without armor, will cry at your bedside if necessary"
+    },
+    "stress_responses": {
+      "low": "Increases organizational behavior — reorganizes instruments, checks supplies",
+      "medium": "Becomes very quiet and very precise; humor disappears",
+      "high": "Retreats into pure clinical protocol, dissociates slightly, speaks in clipped directives only"
+    },
+    "contradictions": [
+      "Believes deeply in community trust but maintains absolute information control about her own past",
+      "Resents corporate medicine while using their stolen infrastructure every single day"
+    ],
+    "habits": [
+      "Leaves a small folded packet of compressed data-wafers at her E.L.F. shrine every morning",
+      "Hums old Ghanaian highlife while suturing — unconsciously, never notices she does it",
+      "Keeps a running mental tally of every patient outcome, good or bad"
+    ],
+    "breaking_points": [
+      "A child she cannot save with what she has",
+      "Someone using her clinic as cover for violence against her patients"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

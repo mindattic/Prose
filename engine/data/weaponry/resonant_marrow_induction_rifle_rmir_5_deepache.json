@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab4074fca5d9673d0aa01ba1",
+  "name": "Resonant Marrow Induction Rifle RMIR-5 'Deepache'",
+  "type": "weapon",
+  "aliases": [
+    "Deepache",
+    "The Marrow Caller",
+    "Bonewhistle",
+    "Paledriver"
+  ],
+  "category": "exotic",
+  "description": "The RMIR-5 generates a tightly focused beam of low-frequency resonant energy tuned specifically to the acoustic signature of cancellous bone tissue — the porous, spongy matrix found in the interior of most human long bones and vertebrae. When the beam contacts a target, it induces rapid sympathetic vibration within the marrow cavity, creating an internal pressure wave that does not register on the body's surface. The effect is experienced as a deep, nauseating ache that rapidly escalates to incapacitating pain originating from inside the skeletal structure, with no visible external cause.\n\nWhat makes the RMIR-5 particularly insidious is its penetration profile. Standard soft armor, tactical plating, and even most hardened cybernetic chassis components are acoustically transparent at the RMIR-5's operating frequency — the beam passes through them as if they aren't present and acts directly on the biological substrate beneath. The only effective countermeasure is bone-density augmentation or full skeletal replacement with non-resonant synthetic materials, both of which are expensive procedures. Standard ballistic protection offers the target no meaningful defense, a fact that has driven significant demand from operators facing heavily armored opponents.\n\nHelix Biosystems developed the RMIR-5 under a medical research designation — the underlying technology was derived from therapeutic bone stimulation devices used in fracture recovery. The weapon's origins in medical technology give it an unsettling clinical quality: its emitter array looks almost identical to a legitimate physiotherapy unit, and its carrying case is indistinguishable from medical equipment. This has made it a significant challenge for checkpoint security to identify.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Military only / Black market (at extreme premium)",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Low-frequency resonant bone targeting",
+    "Cancellous tissue acoustic modeling",
+    "Penetrating non-ionizing emission"
+  ],
+  "specifications": "effective range: Up to 200 meters (focused beam)\ntarget tissue: Cancellous bone matrix, primary; cortical bone, secondary at sustained exposure\narmor penetration: Acoustically transparent to most soft and hard armor; defeated by full synthetic skeletal replacement\nbeam duration for effect: 0.8 seconds for onset pain; 3 seconds for incapacitation of most subjects\npower source: High-density resonance cell, 40 shots per cell\nweight: 5.1 kg\neffective countermeasures: Grade IV bone augmentation, full skeletal synthetic replacement, acoustic isolation suits\ndimensions: 91cm overall, collapsible to 54cm",
+  "tactical_use": "The RMIR-5 is predominantly used for incapacitation rather than lethality — a sustained beam causes complete motor incapacitation within 3-5 seconds as the pain response overwhelms voluntary movement. Operators use it to drop heavily armored targets without triggering the catastrophic structural collapse that lethal weapons produce, making it valuable for capture operations. At extended ranges, brief pulses are used for harassment and disorientation. Military units have deployed it for crowd dispersal where lethal force is politically inadvisable.",
+  "cultural_context": "The RMIR-5 has generated significant controversy in Meridian 88's augmentation community. Because its effectiveness depends on the presence of biological bone, those who have undergone skeletal augmentation procedures — often a marker of wealth and corporate affiliation — are immune to its effects, while those who cannot afford augmentation remain vulnerable. This has given the weapon a class-warfare subtext: in certain neighborhoods, carrying a Deepache is read as a statement about who you consider worth threatening. Underground resistance groups have used this symbolism deliberately.",
+  "known_users": [
+    "Helix Biosystems security division (classified designation)",
+    "Military special operations units (confirmed two documented engagements)",
+    "'Paledriver' — a mercenary known for capture-and-deliver contracts, whereabouts unknown",
+    "Corporate extraction teams operating against unaugmented civilian targets",
+    "Resistance cells in lower-tier districts as a symbolic anti-corporate weapon"
+  ],
+  "story_hooks": [
+    "A union organizer in a lower-tier district has been rendered completely non-functional by what medical scans describe as 'spontaneous internal bone pain of unknown origin.' The players are hired to find the weapon being used before the next public meeting.",
+    "A Helix Biosystems researcher contacts the players claiming the RMIR-5 was never supposed to leave the laboratory. She has evidence of an internal leak and needs help tracing the units before a regulatory audit finds them and traces them back to her department.",
+    "A player with full skeletal augmentation is the only one immune to an RMIR-5 being used against the party. They are now the only one who can move — and the shooter knows it.",
+    "The players recover an RMIR-5 that has been modified beyond factory specifications. The resonance profile has been altered from bone tissue to something else. A Helix Biosystems engineer who examines it goes pale and won't say what the new target tissue is."
+  ],
+  "ammunition_type": [
+    "Ringo Corponation R-Cell Type-9 RC-9"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "war",
+    "augment",
+    "ai",
+    "synthetic",
+    "corporate",
+    "contract",
+    "power",
+    "wealth",
+    "medical",
+    "clinic",
+    "pain",
+    "market",
+    "armor",
+    "energy"
+  ]
+}

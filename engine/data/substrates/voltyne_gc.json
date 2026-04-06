@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a9e971d4abb34dbb72150ecc",
+  "name": "Voltyne-GC",
+  "brand_name": "Voltyne",
+  "product_name": "Voltyne-GC",
+  "type": "substrate",
+  "aliases": [
+    "GC supercap",
+    "Voltyne",
+    "graphcap stock"
+  ],
+  "category": "composite",
+  "description": "A graphene-based supercapacitor electrode material produced by Apex Nanofabrication using activated three-dimensional graphene foam structures with a functionally graded pore architecture that maximizes electroactive surface area. Voltyne-GC delivers energy densities approaching thin-film lithium systems while retaining the charge-discharge cycle life and power density characteristic of capacitive storage — millions of cycles with negligible degradation. It is supplied as a dry electrode sheet that fabricators laminate with electrolyte separators to build custom energy storage cells.",
+  "properties": [
+    "ultra-high energy density",
+    "ultra-high power density",
+    "multi-million cycle life",
+    "rapid charge and discharge",
+    "wide operating temperature range",
+    "low self-discharge",
+    "flexible sheet format"
+  ],
+  "developers": [
+    "Apex Nanofabrication",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "regenerative braking energy recovery in transit vehicles",
+    "pulse power supplies for directed energy weapons",
+    "grid-scale distributed energy buffer arrays",
+    "implantable medical device power cells",
+    "emergency backup power for critical infrastructure nodes"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ4,100 per kg",
+  "story_hooks": [
+    "Voltyne-GC cells are being harvested from decommissioned transit vehicles and repurposed into improvised high-power discharge weapons capable of delivering lethal electrical pulses — the technology is spreading faster than anyone anticipated.",
+    "A Tier 4 energy broker is quietly cornering the Voltyne-GC supply in the region, and districts dependent on graphene supercapacitor buffer arrays for power stability are starting to feel the squeeze.",
+    "An Apex Nanofabrication materials scientist approaches a fixer with stolen production data suggesting Voltyne-GC has an undisclosed failure mode under specific thermal cycling conditions — one that could cause catastrophic simultaneous discharge in grid-scale arrays."
+  ],
+  "tags": [
+    "composite",
+    "substrate",
+    "weapon",
+    "ai",
+    "elf",
+    "power",
+    "medical",
+    "vehicle",
+    "energy",
+    "tier 3",
+    "tier 4"
+  ]
+}

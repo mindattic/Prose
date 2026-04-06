@@ -1,0 +1,107 @@
+{
+  "id": "019d6143a9257fb19f7b83d452bcd981",
+  "type": "place",
+  "name": "Lockhaven North",
+  "aliases": [
+    "Sault Ste. Marie ON",
+    "The Canadian Soo",
+    "North Lock",
+    "Gatekeeper's Mirror"
+  ],
+  "description": "The Soo Locks are the most important infrastructure chokepoint in the Great Lakes, and Lockhaven North is the Canadian side of that chokepoint — which means it is simultaneously essential and secondary. The locks themselves sit on the American side, in Lockhaven South, controlled by a rotating consortium of corporate sovereigns who maintain the infrastructure in exchange for shipping tariff revenue. The Canadian side watches. The Canadian side monitors. The Canadian side maintains a parallel set of smaller locks that handle 15% of the traffic and serve as the backup system that everyone pretends isn't a backup system.\n\nThe city occupies the north bank of the St. Marys River, facing its American twin across 800 meters of water that carries every cargo vessel transiting between Lake Superior and Lake Huron. The International Bridge connects the two cities — a dual-sovereignty crossing that functions as one of the GLM's most surveilled border points. Canadian Border Authority and American corporate security maintain competing checkpoints, and crossing takes between 20 minutes and 4 hours depending on your tier, your documentation, and whether the sovereignty dispute of the week has escalated to the point of selective closures.\n\nLockhaven North's economy is parasitic on the locks — shipping services, barge maintenance, crew supply, and the intelligence-gathering operations that every interested party maintains here because the shipping traffic is a real-time readout of the GLM's economic health. Cormorant Naval Systems operates a sovereign vessel maintenance facility on the waterfront, and Kelpline Logistics manages the Canadian lock operations. The residential city behind the waterfront infrastructure is small, cold, and culturally distinct — a northern Ontario community that identifies more with Grainfort than with Toronto, and that views the locks as both their livelihood and their curse. The chokepoint brings money. The chokepoint also brings everyone who wants to control the chokepoint.",
+  "atmosphere": {
+    "sights": [
+      "Cargo vessels queuing in the river, waiting for lock access — a floating traffic jam of industrial tonnage",
+      "The International Bridge arcing over the river, scanning arrays visible as clusters of blue light",
+      "The Canadian locks operating — massive gates swinging open, water levels adjusting, ships rising and falling like slow-motion elevators",
+      "Lockhaven South visible across the river — the larger, American side, bristling with corporate infrastructure",
+      "Surveillance drones from both sides patrolling the river — a permanent aerial negotiation"
+    ],
+    "sounds": [
+      "Lock mechanisms — hydraulic groans and the thunder of water being moved by engineering",
+      "Ship horns in the river, announcing approach, departure, and impatience",
+      "The International Bridge checkpoint — automated announcements in English, French, and Shelf Cant",
+      "Ice forming on the river in winter — a crystalline cracking that means the shipping season is ending"
+    ],
+    "smells": [
+      "River water carrying the mineral signature of Lake Superior",
+      "Vessel fuel and maintenance chemicals from the Cormorant facility",
+      "Northern Ontario air — pine, cold, and the absence of industry that the waterfront briefly interrupts"
+    ],
+    "feel": "A border town in every sense. Lockhaven North exists at the boundary between Lake Superior and Lake Huron, between Canada and corporate America, between strategic importance and geographic irrelevance. Everyone here is watching something — the locks, the ships, the other side — and everyone is being watched in return.",
+    "tags": []
+  },
+  "demographics": "Population 85,000. Small-city demographics — families, long-term residents, a workforce that knows each other by name. Francophone community representing 25% of the population, a cultural presence that persists despite the dominance of English in cross-border commerce. Military and intelligence personnel rotate through on assignment, adding a transient layer.",
+  "economy": "Lock operations, vessel maintenance, shipping services, and intelligence gathering. Kelpline Logistics and Cormorant Naval Systems are the primary employers. The secondary economy revolves around cross-border trade and the supply needs of the transient military and intelligence population. It's enough to sustain the city. It's not enough to grow it.",
+  "power_structure": "Canadian federal authority maintains stronger presence here than in most GLM cities due to the strategic importance of the locks. Kelpline Logistics and Cormorant Naval Systems hold limited sovereign enclaves on the waterfront. The municipal government has genuine authority over the residential city — a rarity in the GLM, enabled by the federal government's interest in maintaining a non-corporate governance structure at this chokepoint.",
+  "dangers": [
+    "Shipping chokepoint conflicts — disrupting the locks affects the entire GLM economy, making them a permanent target",
+    "Cross-border intelligence operations — every major corponation and government agency has assets here, and they don't always play well together",
+    "Winter ice closures — when the locks freeze, the city's economy freezes with them",
+    "The sovereignty dispute between the Canadian and American lock operations — escalation is always one incident away",
+    "Espionage — in a city where everyone is watching, trust is the scarcest resource"
+  ],
+  "opportunities": [
+    "Shipping intelligence — knowing what's moving through the locks and when is valuable to every trader in the GLM",
+    "Cross-border mediation — someone has to keep the two Lockhavens talking",
+    "Vessel maintenance expertise — Cormorant-trained technicians are in demand across the lakes",
+    "The federal government's presence creates opportunities for people who can work within both corporate and governmental systems"
+  ],
+  "story_hooks": [
+    "A cargo vessel carrying a sealed container from Grainfort has been sitting in the lock queue for three weeks — both sides refuse to process it, and nobody will say what's inside",
+    "Cormorant Naval Systems is quietly militarizing their vessel maintenance facility — retrofitting civilian barges with systems that have no commercial application",
+    "The Canadian lock system's backup designation is being challenged — someone is positioning to make it the primary, which would shift the economic power balance between the two Lockhavens"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Lockhaven South (American side, across the river)",
+      "Grainfort (Thunder Bay, west via the Trans-Canada Corridor)",
+      "The Trans-Canada Corridor (east toward The Lattice)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Shipping crews transiting the locks",
+    "Kelpline and Cormorant employees",
+    "Intelligence operatives from every interested party",
+    "Canadian military personnel on border security rotation"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Canadian Locks",
+      "description": "The smaller, backup lock system — 15% of traffic, 100% of Canadian pride, and the infrastructure that keeps Canada relevant at the chokepoint",
+      "tags": []
+    },
+    {
+      "name": "Cormorant Yards",
+      "description": "Naval Systems' vessel maintenance sovereign enclave — where ships go in for repair and sometimes come out changed",
+      "tags": []
+    },
+    {
+      "name": "The International Bridge Checkpoint",
+      "description": "The crossing between the two Lockhavens — the most surveilled 800 meters in the northern GLM",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 46.5136,
+    "lng": -84.3358,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "trust",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "money",
+    "bar",
+    "rain",
+    "cold",
+    "train",
+    "water",
+    "lake"
+  ]
+}

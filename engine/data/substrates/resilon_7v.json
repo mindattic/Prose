@@ -1,0 +1,57 @@
+{
+  "id": "019d6143a9e377b18c9325a9a1a50481",
+  "name": "Resilon-7V",
+  "brand_name": "Resilon",
+  "product_name": "Resilon-7V",
+  "type": "substrate",
+  "aliases": [
+    "self-seal",
+    "vitropoly",
+    "7-veil"
+  ],
+  "category": "smart_material",
+  "description": "Resilon-7V is a vascular self-healing polymer composite developed by Tessera Materials, embedding a network of micro-capillaries filled with a two-part reactive resin that autonomously floods and bonds across cuts, punctures, and stress fractures within 90 seconds of damage. The outer matrix is a semi-rigid polyurethane-graphene blend, giving the material respectable impact resistance even before healing activates. Repeated damage to the same site is accommodated for up to eight full healing cycles before capillary networks in that zone are depleted, after which the material must be re-infused or replaced.",
+  "properties": [
+    "self_healing",
+    "impact_resistant",
+    "semi_rigid",
+    "water_resistant",
+    "UV_stable",
+    "limited_healing_cycles",
+    "moderate_flexibility",
+    "chemical_resistant"
+  ],
+  "developers": [
+    "Tessera Materials",
+    "BioForge Labs"
+  ],
+  "applications": [
+    "Protective outerwear and body armor panels",
+    "Habitat wall liners in hazardous environments",
+    "Pressurized container seals",
+    "Vehicle hull patches for field repair",
+    "Pipeline jacketing in corrosive zones"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ 95 per kg (re-infusion cartridges: Φ 40 per zone)",
+  "story_hooks": [
+    "A Shelf-level community has been patching a crumbling water reservoir with bootleg Resilon-7V — but the knockoff formula's healing resin is contaminating the water supply, and people are getting sick.",
+    "Someone is selling expired Resilon-7V armor panels to Tier 2 security contractors; the panels look fine but have exhausted their healing cycles, leaving wearers with false confidence in a firefight.",
+    "A forensic investigator realizes a crime scene's Resilon-7V wall liner has partially healed over what should be ballistic evidence — the material is destroying the proof."
+  ],
+  "tags": [
+    "smartmaterial",
+    "substrate",
+    "crime",
+    "ai",
+    "elf",
+    "contract",
+    "vehicle",
+    "armor",
+    "fire",
+    "water",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a55979a7940f3fb77be66685",
+  "name": "Magnetically Accelerated Synovial Crystallization Round MASCR-8",
+  "type": "ammunition",
+  "aliases": [
+    "Crystal round",
+    "MASCR-8",
+    "Joint breaker",
+    "Ice seed"
+  ],
+  "category": "exotic",
+  "caliber": "8mm aerosol round",
+  "description": "The MASCR-8 is a specialized aerosol delivery projectile for the Magnetically Accelerated Synovial Crystallization Rifle, containing a supersaturated ionic crystallization compound in a frangible polymer shell. The round is magnetically accelerated to moderate velocity and shatters on impact, releasing its payload as a fine aerosol that penetrates clothing and skin to reach the synovial fluid in the target's joints.\n\nThe crystallization compound is a proprietary Tessera Corponation formulation that remains in supersaturated solution until exposed to the specific chemical environment of human synovial fluid, at which point it rapidly precipitates into jagged crystalline structures within the joint capsule. The onset is delayed — 60-90 seconds — which means the target initially appears unaffected, a property that makes the weapon ideal for covert incapacitation in situations where immediate visible effects would compromise the operator.\n\nThe rifle carries 8 rounds in a linear magazine, with each round individually sealed against moisture contamination. The crystallization compound is extremely hygroscopic and will precipitate prematurely if exposed to atmospheric moisture, rendering the round useless. This sensitivity limits the weapon's operational viability in humid environments and requires operators to store ammunition in desiccated containers.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Black market / Military research",
+  "legality": "Prohibited — classified as chemical weapon under Meridian Bioweapons Convention",
+  "specifications": "weight_per_round: 3.8g\nmuzzle_velocity: 340 m/s (magnetically accelerated)\npenetration_rating: Frangible — shatters on contact, no penetration\neffective_against: Biological targets with synovial joints (ineffective against full synthetic)\ncountermeasures: Sealed environmental suit, synthetic joint replacements, prompt irrigation with chelation solution within 30 seconds of exposure",
+  "compatible_weapons": [
+    "Magnetically Accelerated Synovial Crystallization Rifle"
+  ],
+  "variants": [
+    "MASCR-8 Standard (synovial crystallization, 12-36 hour effect)",
+    "MASCR-8 Rapid (modified compound, 30-second onset, 6-hour duration)",
+    "MASCR-8 Persistent (slow-crystallization formulation, 72-hour effect, requires two hits for full onset)",
+    "MASCR-8 Reversible (chelation-responsive crystallization, effects fully reversed within 2 hours of treatment)"
+  ],
+  "cultural_context": "The MASCR-8 is among the most insidious ammunition types in Meridian 88's arsenal — a round that doesn't kill, doesn't visibly wound, and whose effects don't manifest until a minute after the hit. Targets who are struck often don't realize they've been shot, attributing the initial impact to a thrown object or accidental collision. By the time the crystallization begins and the joints seize, the operator is long gone. This delayed-effect profile has made the MASCR-8 a favored tool of operatives who need to incapacitate targets in public settings without creating an immediate scene.",
+  "story_hooks": [
+    "A corporate executive collapsed during a live broadcast, joints locking in sequence over 90 seconds — medical analysis revealed synovial crystallization consistent with MASCR-8 exposure, but security footage shows no one approaching the executive within the relevant time window.",
+    "A batch of MASCR-8 Reversible rounds has been modified to be irreversible — the chelation-responsive element was removed, and the rounds were resold as standard reversible to a security contractor who uses them for non-lethal crowd control."
+  ],
+  "tags": [
+    "exotic",
+    "ammunition",
+    "weapon",
+    "ai",
+    "synthetic",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "market",
+    "clothing"
+  ]
+}

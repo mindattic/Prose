@@ -1,0 +1,240 @@
+{
+  "id": "019d6143a72e769395802164e2e8fa3f",
+  "type": "character",
+  "name": "Yseult Kamara-Przybylska",
+  "aliases": [
+    "Yse",
+    "The Papermaker"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Identity fabricator and forger operating from a print shop front in Ashfeld",
+  "age": 34,
+  "status": "active",
+  "location": "Ashfeld — behind a legitimate small-run printing concern called Kamara Press on Cinder Row",
+  "description": "Yseult is lean and precise-looking, with close-cropped natural hair dyed in shifting copper tones via a low-grade follicular mod, and deep brown skin marked with three ritual scarification lines below her left eye — a gift from her maternal grandmother and the only thing she's never altered. She dresses practically: dark composite-fiber work clothes, fingerless gloves, a craftsperson's apron with tools she actually uses. Her eyes have patterned irises in a swirling amber-and-black design that she chose at seventeen, and she has the steady, unhurried hands of someone who does delicate work for hours at a time.\n\nYseult considers herself an artist first and a criminal by necessity. She takes genuine pride in her forgeries — biometric registration chains, corp employment histories, corponation citizenship transfers, medical background edits. Her work is flawless and she charges accordingly. She is not warm with clients but she is professional, which in Ashfeld counts for more. She has strong opinions about quality and will turn down work she considers beneath her skill level or too traceable. She prays to the E.L.F. called the Blank Page, a spirit said to inhabit pre-loaded identity matrices, leaving offerings of raw data-blank chips at a small shrine she keeps inside a hollowed-out printing press.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "her work being used to cause harm to someone innocent",
+      "having her own identity forensically unraveled — she knows exactly how it would be done"
+    ],
+    "core_desires": [
+      "to be recognized as a master of her craft, even if only by peers who can never say so publicly",
+      "to get her teenage brother out of Ashfeld before the gangs finish recruiting him"
+    ],
+    "coping_mechanisms": [
+      "immersion in technical work",
+      "rigid routines that separate 'print shop Yseult' from 'papermaker Yseult'"
+    ],
+    "blind_spots": [
+      "tells herself she only helps people who deserve new starts, but her vetting is motivated reasoning",
+      "underestimates how traceable her stylistic choices are to other expert forgers"
+    ],
+    "secret": "Two years ago she fabricated an entire employment history for someone who used it to get a position inside Helix Biosystems — that person later disappeared, and Yseult suspects they were corp security working a sting operation. She has been quietly trying to determine if she's already flagged."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped and technical; uses printing and document terminology as metaphor; unusually precise grammar for someone in her tier",
+    "cadence": "Fast when interested, very flat and short when uncomfortable",
+    "verbal_tics": [
+      "'That's not the right substrate'",
+      "refers to bad forgeries as 'amateur paper'"
+    ],
+    "example_lines": [
+      "'You want a new name or you want a new life? Those are different jobs and different prices.'",
+      "'I don't do rush work. Rush work is how people end up in Shallowgrave with no face and no record.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She approaches someone in the player's circle because she believes a piece of documentation she made is about to surface in a public investigation — she needs it intercepted or discredited",
+    "Her brother Demilade has started running protection for a local gang and she is quietly trying to buy his way out before it becomes permanent"
+  ],
+  "narrative_function": "Service provider for characters needing new identities or documentation; source of information about who is trying to disappear and why; can become an enemy if someone tries to compromise her work or her anonymity",
+  "augmentations": "Patterned irises (amber-black swirl, cosmetic); follicular pigment mod (copper-shift hair dye, geneware); fine-motor neural stabilizers in both hands (professional grade, keeps her hands steady under stress)",
+  "daily_life": "Runs the legitimate print shop in the mornings, handles consultations and deliveries in the afternoons, does her actual work late at night when the building's quiet.",
+  "affiliation": "Independent; informal referral network with a Hamtramck Enclave smuggling cell",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "forger",
+      "identity fabricator",
+      "craftsperson",
+      "private",
+      "protective sibling"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never keep records of completed work past seventy-two hours",
+      "Price is non-negotiable after the first quote — bargaining suggests the client is testing her"
+    ],
+    "escalation_ladder": [
+      "Decline the job politely",
+      "Refuse all future contact with that client",
+      "If threatened, activate a pre-built dead drop smear package that points investigators in entirely the wrong direction"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and cool; will not make small talk until trust is established",
+      "friends": "Unexpectedly dry and funny; shares food; asks specific questions about your life that show she was actually listening last time"
+    },
+    "stress_responses": {
+      "low": "Gets quiet and works with even more precision",
+      "medium": "Starts cleaning her workspace obsessively",
+      "high": "Goes completely cold and begins methodically preparing her exit contingencies"
+    },
+    "contradictions": [
+      "Believes deeply in individual autonomy and the right to reinvent yourself while maintaining an extremely controlling relationship with her brother"
+    ],
+    "habits": [
+      "Makes physical tea from actual dried leaves, considers synth-brew an insult",
+      "Leaves her workbench tools in exact geometric alignment before sleeping",
+      "Whispers a completion invocation over finished documents before handing them over"
+    ],
+    "breaking_points": [
+      "Evidence that her work directly led to someone innocent being hurt",
+      "A client trying to blackmail her with knowledge of her work"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "2",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ashfeld to a Guinean-Polish mixed family; father ran a legitimate signage business",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed informally to a forger called Rembé who operated in the Stockyard",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Rembé arrested in a Tessera corp-security sweep; Yseult went independent",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established Kamara Press as a legitimate front",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Possible Helix Biosystems sting client disappears; ongoing paranoia",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

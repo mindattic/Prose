@@ -2,7 +2,7 @@ namespace StreetSamurai.Core.Models;
 
 public record Story
 {
-    public string Id { get; init; } = Guid.NewGuid().ToString("N")[..8];
+    public string Id { get; init; } = Guid.CreateVersion7().ToString("N")[..8];
     public string Title { get; init; } = "Untitled";
     public string Status { get; init; } = "draft";
     public List<string> Characters { get; init; } = [];

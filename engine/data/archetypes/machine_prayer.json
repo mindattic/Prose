@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57c703bbf4118631a69a63d",
+  "name": "Machine Prayer",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Finds the divine in technology and code",
+  "behavioral_signature": "Sees spiritual meaning in artificial systems",
+  "under_stress": "The machine-faith becomes more intense",
+  "at_rest": "Communing with systems, reading code as scripture",
+  "will_always": [
+    "find the sacred in the digital"
+  ],
+  "will_never": [
+    "separate the spiritual from the technical"
+  ],
+  "unless": [
+    "the machine answers back and the answer is terrifying"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Mystic",
+      "threshold": 0.65,
+      "context": "unconventional spirituality"
+    },
+    {
+      "archetype": "Consciousness Explorer",
+      "threshold": 0.7,
+      "context": "expanding awareness"
+    }
+  ],
+  "opposite_of": [
+    "Rationalist"
+  ],
+  "tags": [
+    "syncretic",
+    "future-oriented"
+  ]
+}

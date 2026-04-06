@@ -1,0 +1,38 @@
+{
+  "id": "019d6143aa637edb8de5ad41a67d5e74",
+  "name": "Dervish Board",
+  "type": "transportation",
+  "aliases": [
+    "Dervish",
+    "Suicide Plank",
+    "Street Surfer"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Various (most are DIY builds)",
+  "description": "An electric skateboard with hub motors in the rear wheels, common among Tier 1-2 youth. Factory models exist but most Dervishes are hand-built from scavenged parts — a plank of carbon fiber or even wood, truck-mounted motors from dead appliances, and a battery taped to the underside. They're fast, terrifying, and the preferred transport of couriers who know the streets well enough to ride at 40 km/h through crowds.",
+  "propulsion": "Electric hub motors, DIY battery packs",
+  "speed": "40 km/h (factory), 50+ km/h (modified, suicidal)",
+  "capacity": "1 rider",
+  "range": "15-25 km depending on battery quality",
+  "tier_availability": "Tier 1-2",
+  "cost": "Φ80-150 factory, Φ20-50 DIY",
+  "autonomy": "Manual only. Gyro-assist on factory models.",
+  "armament": "None. But they make excellent improvised weapons.",
+  "common_usage": "Youth transport, courier work, street racing. A rite of passage in The Shelf.",
+  "story_hooks": [
+    "A courier's Dervish board has a scavenged chip that gives it unexpected capabilities — it adjusts balance before the rider reacts",
+    "Underground Dervish races through the L-train support columns are a major betting scene"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "weapon",
+    "ai",
+    "elf",
+    "rain",
+    "train",
+    "shelf",
+    "tier 1",
+    "tier 2"
+  ]
+}

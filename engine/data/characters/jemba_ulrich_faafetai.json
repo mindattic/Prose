@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a63a7518b561603f2a2c5f54",
+  "type": "character",
+  "name": "Jemba Ulrich-Faafetai",
+  "aliases": [
+    "Jem",
+    "The Boy"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Building cleaner and maintenance aide, residential tower",
+  "age": 23,
+  "status": "active",
+  "location": "Calumet Rise — employed in the Tidewatch Residential Stack, a mid-tier housing block of 340 units",
+  "description": "Jemba is young enough that people still call him 'the boy' without meaning anything cruel by it, and old enough that it has started to wear on him. He's got a Congolese-Samoan background through his father and a Kazakh-Swedish line through his mother, an inheritance that gave him a broad build he hasn't grown into yet and a face that oscillates between very young and very old depending on what shift he just came off. His hair is natural and high, kept carefully shaped on his days off; on shift he pins it under a grey cap. His bioluminescent skin modification is subtle — a faint bluish-silver glow along his temples and the backs of his hands that's visible mainly in low light, and that he's extremely proud of even though he got it done at a discount parlor in the Narrows and the fade will probably be uneven in a few years.\n\nJemba is sociable in the way that people are when they've grown up in small shared spaces — he knows how to read a room quickly, how to be unobtrusive or present as the situation requires, and how to carry gossip without it looking like he's carrying it. He's not ambitious in ways he's articulated to himself, but he is paying close attention to everything. He has a quality of watchfulness that most adults don't register in someone his age because they assume his job makes him invisible, and he lets them assume that.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being stuck — doing this specific job in this specific building forever while the city moves on above him",
+      "His mother's health deteriorating and him not being able to afford anything better than what he's currently providing"
+    ],
+    "core_desires": [
+      "To be taken seriously as someone with ideas rather than as someone with a mop",
+      "A way up that doesn't require becoming someone he doesn't like"
+    ],
+    "coping_mechanisms": [
+      "Building intricate things in the free hours between splits — origami, wiring projects, anything that produces a finished object",
+      "Humor as deflection; the self-deprecating joke before anyone else makes it"
+    ],
+    "blind_spots": [
+      "Doesn't realize how much ambient information he holds and how valuable it is — thinks of his knowledge as just 'noticing things'",
+      "Assumes everyone older than him is further along and more certain than they actually are"
+    ],
+    "secret": "Unit 1107's resident, a mid-level Tessera compliance manager, regularly has someone visit late at night who is not on the building's guest registry and doesn't match any of the resident's known contacts. Jemba has seen this person's face. He recognized the face because it belongs to someone on a wanted notice in the building's public security feed — wanted by Tessera itself, in fact. He doesn't know what it means and is afraid to find out, but he hasn't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Informal and current — the particular slang of Calumet Rise's youth cohort, mixed with phrases from his parents' households; reaches for precision when he's talking about something he cares about and often surprises people with the result.",
+    "cadence": "Quick, light, deflects into jokes when conversations get heavy; slows down and gets specific when he's serious.",
+    "verbal_tics": [
+      "'I'm just saying' as a hedge before honest observations",
+      "'Yeah, nah' to reject something politely",
+      "Whistles briefly under his breath when surprised or impressed"
+    ],
+    "example_lines": [
+      "'I'm just saying — if the people in 1107 wanted privacy, they should close the hallway camera feed when they leave the door ajar. I don't ask, I just see.'",
+      "'Yeah, nah, they don't clock me. I'm the mop. You'd be surprised what people say near the mop.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Tessera compliance manager in 1107 has begun watching Jemba in the elevator in a way that feels like awareness rather than gratitude — he thinks they know he's seen something.",
+    "One of the building's long-term elderly residents, a woman in unit 204, has not put out trash or activated her door in six days; building management says she's on vacation, but Jemba knows her routines.",
+    "A resident has offered him a significant amount of Φ to let them into a maintenance corridor that bypasses the building's security checkpoints — and he hasn't said no yet."
+  ],
+  "narrative_function": "Information source — knows everything happening in the building, including who comes and goes from which units at what hours; potential protagonist surrogate for players entering Calumet Rise; represents the economic pressure of Tier 1-2 life without the romanticization of crime or running; can provide access to areas of the building outsiders couldn't reach.",
+  "augmentations": "Bioluminescent subdermal pigment, temples and hands (blue-silver, cosmetic, discount parlor quality).",
+  "daily_life": "Split shift: 06:00–10:00 common-area cleaning, 18:00–22:00 trash processing and maintenance calls; spends the gap between shifts in the building's basement break room, eating, gaming, or listening to residents who mistake him for invisible.",
+  "affiliation": "Employed by Calumet Rise Residential Management (a Tessera-adjacent property company); UBC supplemented by his wages",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Overlooked Observer",
+      "Accidental Witness",
+      "Aspirant",
+      "Building Memory"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do the job right — it's the only leverage he has",
+      "Stay legible as harmless until he's decided whether a situation is actually dangerous",
+      "Don't get involved in things that will get him fired — the job is the floor everything else stands on"
+    ],
+    "escalation_ladder": [
+      "Neutral, helpful, doesn't register alarm",
+      "Starts asking questions that sound casual but aren't",
+      "Withdraws entirely — job becomes invisible minimum, no voluntary conversation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Friendly, self-effacing, gives people the version of himself they expect from someone in his role",
+      "friends": "Actual — shows the watchfulness and the wit, makes the honest observations he swallows on shift"
+    },
+    "stress_responses": {
+      "low": "Cleans faster; the mop moves with more force",
+      "medium": "Goes quiet, stops the humor, finishes tasks mechanically",
+      "high": "Calls his mother; talks about nothing for twenty minutes until it passes"
+    },
+    "contradictions": [
+      "Performs invisibility as strategy while having a strong need to be genuinely seen"
+    ],
+    "habits": [
+      "Memorizes which units have which routines — it started as efficiency and became something closer to care",
+      "Folds his uniform cap with the same three creases every day before putting it on",
+      "Leaves small folded paper figures — cranes, frogs, boxes — on the windowsills of floors he cleans; residents have started looking for them"
+    ],
+    "breaking_points": [
+      "His mother coming to serious harm from something he could have prevented by using what he knows",
+      "Being offered a choice that requires him to harm a resident or community member to protect himself"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Cleaner": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

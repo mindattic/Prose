@@ -1,0 +1,64 @@
+{
+  "id": "019d6143a87c7c1ebe5d26c71e3ef2b1",
+  "name": "Vantablack Media Somatic Noise Cloak",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack Media Somatic Noise Cloak",
+  "type": "equipment",
+  "aliases": [
+    "Body Blur",
+    "Soma Cloak",
+    "VB Noise Wrap",
+    "SNC"
+  ],
+  "category": "utility",
+  "description": "The Somatic Noise Cloak is a wearable signal disruption garment — a full-torso vest and sleeve assembly lined with Vantablack's proprietary Stochastic Emission Fabric, which generates a continuously randomized electromagnetic emission profile that mimics the ambient background noise of Meridian 88's densely saturated wireless environment. Rather than blocking or absorbing signals, the SNC actively broadcasts low-power noise across a broad spectrum, causing the wearer's electronic footprint to dissolve into the city's background chatter. Biometric sensors, passive RFID sweeps, and short-range identity interrogation systems read the wearer as environmental noise rather than a discrete target.\n\nThe garment's intelligence layer is a thin-film processor woven into the collar assembly that samples the local EM environment every 200 milliseconds and adjusts the emission profile to match. In high-traffic commercial zones, the SNC produces a denser, more complex noise signature; in quieter industrial or residential areas, it scales back to avoid the paradox of being the loudest silent thing in the room. Vantablack calls this the Ambient Calibration Loop, and it represents the company's most sophisticated application of their media-disruption research to a physical product. The vest is warm, slightly stiff, and has a faint electrical smell that users report fading after several wears.\n\nThe SNC was originally developed for Vantablack's own field journalists and embedded documentary crews operating in corporate-controlled zones where press credentials are selectively enforced. Its availability on the open market — at significant cost — reflects Vantablack's philosophy that information freedom is a consumer product. Corporate security contractors have lobbied unsuccessfully to have it classified as prohibited equipment; the current licensing requirement is enforced inconsistently at best.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Stochastic Emission Fabric",
+    "Ambient Calibration Loop",
+    "Thin-film spectrum processor",
+    "Broad-spectrum low-power noise emission",
+    "Passive EM environment sampling"
+  ],
+  "specifications": {
+    "coverage": "Full torso, shoulders, upper arms",
+    "emission_spectrum": "900MHz – 60GHz, continuously randomized",
+    "calibration_interval": "200ms",
+    "effective_against": "Passive RFID sweep, biometric sensor arrays, short-range identity interrogation, standard wireless tracking",
+    "limitations": "Does not defeat active millimeter-wave scanning or hardwired biometric systems",
+    "power_source": "Integrated flat-cell battery, 18-hour operational life",
+    "garment_weight": "1.1kg",
+    "charging_method": "Inductive pad, 2-hour full charge"
+  },
+  "tactical_use": "Worn during transit through surveilled public spaces, corporate campuses, or controlled-access zones where passive identity scanning is routine. Most effective when combined with physical disguise and behavioral discipline — the SNC defeats electronic identification but does nothing for visual recognition. Used by journalists, runners, and anyone who needs to move through a monitored environment without leaving a trackable electronic record.",
+  "cultural_context": "The Somatic Noise Cloak has become a minor status symbol in Meridian 88's civil liberties and anti-corporate activist communities, where wearing one is a political statement as much as a practical choice. Vantablack has leaned into this positioning, sponsoring events and embedding SNC imagery in their media content. Corporate security firms have responded by developing active scanning systems specifically designed to detect the Ambient Calibration Loop's characteristic emission signature — an arms race that Vantablack's engineers appear to relish. On the street, the garment's stiff profile and electrical smell make it recognizable to anyone who knows what to look for.",
+  "known_users": [
+    "Vantablack embedded journalists",
+    "Anti-corporate activists",
+    "Privacy-conscious executives",
+    "Infiltration operatives",
+    "High-value courier runners"
+  ],
+  "story_hooks": [
+    "A runner wearing an SNC discovers they are still being tracked — someone has developed a counter-detection system tuned specifically to the Ambient Calibration Loop's signature, and Vantablack hasn't issued a patch.",
+    "A dead activist is found with an SNC still active on her body — the garment's emission log contains a compressed record of every wireless environment she passed through in her final 18 hours.",
+    "Vantablack is quietly recalling a specific firmware version of the SNC after discovering the calibration processor was compromised during manufacturing — the affected units have been broadcasting a covert identifier to unknown receivers.",
+    "A corporate security director wants a runner to acquire an SNC from a Vantablack field journalist without alerting Vantablack — the journalist has been documenting something that hasn't been published yet."
+  ],
+  "tags": [
+    "utility",
+    "equipment",
+    "war",
+    "identity",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "market",
+    "freedom",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a7c6718e8e8646fc4e4b9d3d",
+  "name": "Tessera Corponation Linguistic Decomposition Engine",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Linguistic Decomposition Engine",
+  "type": "cyberware",
+  "aliases": [
+    "The Translator's Tooth",
+    "The Interpreter",
+    "Tessera Babel"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Linguistic Decomposition Engine is a neural co-processor implanted at the junction of Wernicke's and Broca's areas, interfacing directly with the brain's language processing centers to perform real-time phonemic decomposition, syntactic parsing, and semantic reconstruction across multiple languages simultaneously. Unlike software translation tools that operate on discrete inputs, the Engine integrates with the user's native language architecture — incoming speech in an unfamiliar language is not 'translated' so much as experienced as a parallel stream that the user perceives alongside the original, the meaning arriving slightly behind the sound in a perceptual layering that most users adapt to within weeks. The Engine supports 340 catalogued languages and 1,200 dialect variants at full parsing accuracy, with a continuous update feed from Tessera's linguistic database ensuring coverage of emerging creoles, corporate argots, and street dialects as they develop.\n\nTessera's implementation distinguishes itself through its handling of subtext and paralinguistic information. Where competitors focus on semantic accuracy, the Engine's secondary processing layer captures prosodic patterns — the rhythm, stress, and intonation of speech — and models them against language-specific emotional and social conventions, feeding a low-level interpretive signal to the user's social cognition centers. The result is not merely understanding what someone says but receiving a calibrated sense of how they mean it: the difference between a formal register and a deliberately performative one, between a question that expects an answer and one that issues a warning. Users describe this feature as making them feel fluent in a language's emotional grammar without having studied it.\n\nThe Engine is standard equipment for Tessera's own diplomatic liaison corps and contract negotiation teams, where the ability to engage in a counterpart's language — and to read the social texture of that language — is a direct commercial advantage. Beyond corporate use, it has become essential infrastructure for Meridian 88's translation brokers, fixers working multi-language districts, and journalists operating in communities where arriving with a visible translation device signals outsider status.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"language_coverage\":\"340 languages, 1,200 dialect variants at full accuracy; additional 800+ at reduced accuracy\",\"parsing_latency\":\"140–200ms perception lag (varies by linguistic distance from user's native language)\",\"prosodic_modeling_accuracy\":\"Validated at 84% correlation with native speaker emotional interpretation\",\"database_update_frequency\":\"Weekly push via encrypted Tessera network feed\",\"offline_capability\":\"Full function for 6 months on cached database before significant accuracy degradation\",\"installation_location\":\"Posterior superior temporal gyrus / inferior frontal gyrus junction\",\"installation_time\":\"16–20 hours surgical, 10–14 week full neural integration and perceptual calibration\",\"weight\":\"Approximately 22g\"}",
+  "side_effects": [],
+  "cultural_context": "The Restricted designation on the Engine reflects a coalition of lobbying interests: professional translation guilds who view it as an existential threat to their trade, several national-bloc diplomatic bodies who consider unaugmented translation services a sovereignty issue, and privacy advocates who note that the prosodic modeling layer constitutes an involuntary emotional read of anyone who speaks in the user's presence. In Meridian 88's polyglot districts, the Engine is simultaneously coveted and resented — the ability to move through communities in their own language without the years of cultural immersion that native speakers invested in that language is experienced by some as fluency and by others as a kind of trespass. 'Babel-head' is used as both a compliment and an insult depending entirely on who's saying it.",
+  "known_users": [
+    "Tessera Corponation diplomatic liaison corps",
+    "Corporate contract negotiators",
+    "Translation brokers and professional fixers",
+    "Investigative journalists working closed communities",
+    "Intelligence operatives in multi-language operational theaters",
+    "High-end criminal mediators working cross-faction negotiations"
+  ],
+  "story_hooks": [
+    "The Engine's database feed has been pushing a corrupted update that subtly mistranslates a specific phrase — a phrase that appears in the foundational legal language of several major contracts currently in negotiation. Someone at Tessera, or with access to Tessera's update servers, is engineering a very specific misunderstanding.",
+    "A user's prosodic modeling layer begins flagging a prominent Meridian 88 public figure's speech as consistently misaligned — the emotional register the Engine reads does not match the semantic content, across every public appearance over six months. Either the Engine is malfunctioning, or the figure is performing an affect they do not feel with a consistency that suggests augmentation of their own.",
+    "A community in Meridian 88's lower districts has developed a deliberate counter-dialect — grammatical structures and prosodic patterns specifically engineered to produce false positives in the Engine's paralinguistic modeling layer, making Engine users read hostility as warmth and deception as sincerity. The community is selling lessons in speaking it."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "war",
+    "deception",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "rain",
+    "tier 3"
+  ]
+}

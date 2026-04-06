@@ -1,0 +1,245 @@
+{
+  "id": "019d6143a6387b1cb829ca0327d685ac",
+  "type": "character",
+  "name": "Isolde Mwamba-Çetinkaya",
+  "aliases": [
+    "Iso",
+    "the Ice Queen (behind her back)"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Trauma surgeon at Aurochs Medical Complex, Tier 3 salaried position with Helix Biosystems oversight",
+  "age": 41,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Trauma Bay Seven",
+  "description": "Isolde is tall and angular, with light brown skin and the kind of posture that comes from years of standing over operating tables — slightly forward in the shoulders, weight balanced, always ready. She has gene-modded bioluminescent tracery along her collarbones and upper arms: a delicate pattern of cool blue that pulses faintly when her heart rate elevates. She got it years ago as an aesthetic choice and now she regrets it, because it functions as an involuntary stress indicator in high-stakes situations. She compensates by wearing high collars when she can. Her dark hair is cut in a precise bob that she maintains herself with surgical shears.\n\nShe is formidable in the OR and genuinely difficult outside of it. Her intelligence is not subtle — she does not soften assessments, she does not cushion bad news, and she has very limited patience for institutional inefficiency, which means she is in a state of near-constant low-grade conflict with Helix Biosystems administration. She is not cruel; she is exact. She saves lives with focused ferocity and then goes home to an apartment she has never bothered to furnish properly and eats takeout alone, which she insists she prefers. The gap between those two versions of herself is something she doesn't look at directly.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "losing a patient because Helix administration prioritized billing over care",
+      "being ordinary — mediocre, forgettable, replaceable"
+    ],
+    "core_desires": [
+      "a single day in which the system works the way it's supposed to",
+      "to be known by someone — not as the surgeon, but as herself, whatever that is"
+    ],
+    "coping_mechanisms": [
+      "radical professional investment as identity substitution",
+      "exacting control over her physical workspace and schedule",
+      "occasional anonymous data-offerings to a surgical E.L.F. she refuses to name out loud"
+    ],
+    "blind_spots": [
+      "she reads clinical detachment as professionalism in herself and emotional avoidance in others — the distinction is not as clear as she believes",
+      "she has no framework for asking for help that doesn't feel like failure"
+    ],
+    "secret": "Three years ago she falsified a post-operative report to protect a colleague who made a serious error — an error she partially caused by creating an environment in which he was afraid to flag his concerns. The patient recovered. Her colleague was quietly transferred. Isolde has never told anyone, and the guilt has calcified into something she carries in her chest that she has begun to mistake for the natural weight of her profession."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, clinical, unsentimental; she uses technical terms as a default even in casual conversation and does not notice when this creates distance",
+    "cadence": "Controlled and even — she speaks at one speed regardless of emotional state, which is its own tell",
+    "verbal_tics": [
+      "'To be precise—'",
+      "Repeating the last word of someone else's sentence back to them before answering, a habit from OR communication protocols that she cannot turn off"
+    ],
+    "example_lines": [
+      "The prognosis is unfavorable. I'm not going to tell you otherwise because I think you can handle the truth and I know you need the time to make decisions.",
+      "Helix wants us to discharge him at forty-eight hours. Helix can document that recommendation and I'll document my medical objection and we'll see whose paperwork survives a review.",
+      "I don't — I don't do this particularly well. Talking. About things that aren't the work. But I'm trying."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient arrived in her trauma bay with wounds that don't match any weapon she can identify — and someone from administration told her not to document the unusual characteristics",
+    "The colleague she covered for has resurfaced and is now in a position of power at Aurochs, and he knows what she did",
+    "She's been quietly investigating a pattern in the patient mortality data that suggests someone is making decisions about who gets priority treatment based on criteria that have nothing to do with medicine"
+  ],
+  "narrative_function": "Authority figure within the medical establishment; source of legitimate medical information and analysis; represents the cost of institutional excellence — competent, compromised, and lonely; can serve as an obstacle or an unexpected ally",
+  "augmentations": "Bioluminescent tracery (gene-mod, cosmetic, regretted); neural response accelerator in the motor cortex-hand pathway (professional grade, Helix-subsidized); ocular magnification implants (surgical precision model)",
+  "daily_life": "Twelve-hour shifts, three days on, one day off, which she spends on call anyway. She reviews case files on her commute, skips most social events, and has a complicated relationship with a very expensive coffee subscription that is the one luxury she permits herself.",
+  "affiliation": "Helix Biosystems (employed); Aurochs Medical Complex Trauma Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -4,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "trauma surgeon",
+      "Helix Biosystems employee",
+      "institutional insider",
+      "emotionally armored",
+      "excellent under pressure"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Clinical judgment supersedes administrative instruction in the OR — full stop",
+      "She does not discuss one patient's case with another patient's family under any circumstances",
+      "If she cannot do something correctly, she would rather not do it at all — which creates problems when 'correctly' is not an available option"
+    ],
+    "escalation_ladder": [
+      "Precise statement of the problem and her position",
+      "Documentation — she starts creating a paper trail immediately",
+      "Escalation to whoever is above the person obstructing her, with the documentation already prepared"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally courteous, impersonal; assesses them clinically before she assesses them socially, out of habit",
+      "friends": "She has very few. Those she has receive a version of her that is still intense and still exacting but occasionally allows cracks — a dry joke, an admission, a moment of genuine warmth that she immediately walks back"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and systematic",
+      "medium": "Jaw tightens, bioluminescent tracery pulses more visibly, communication becomes clipped",
+      "high": "Complete external calm that is entirely performed; she goes somewhere else behind the eyes and operates on procedure alone until the crisis resolves"
+    },
+    "contradictions": [
+      "She fights for her patients with an intensity that borders on personal — and refuses to let any interaction with them become personal"
+    ],
+    "habits": [
+      "Arrives at the hospital forty-five minutes before her shift to review the overnight cases",
+      "Adjusts equipment in the OR to exact specifications even when it was already correctly set",
+      "Drinks her expensive coffee cold because she always forgets it"
+    ],
+    "breaking_points": [
+      "A preventable death caused by administrative decisions she was overruled on",
+      "Someone using her documented cases against a patient"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in what is now the Aurochs district, daughter of a Helix Biosystems logistics manager",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed surgical residency at Aurochs Medical Complex",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Appointed to Trauma Bay Seven team",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The incident with her colleague; the falsified report",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began quietly investigating the mortality data anomalies",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

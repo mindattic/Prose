@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab2b7d7c8be8d00a93aad388",
+  "name": "Galvanic Vapor Diffusion Pistol GVDP-1 'Saltlick'",
+  "type": "weapon",
+  "aliases": [
+    "Saltlick",
+    "The Licker",
+    "Brine Gun",
+    "Galvanic Mist"
+  ],
+  "category": "exotic",
+  "description": "The GVDP-1 generates a cloud of electrostatically charged ionic vapor by flash-vaporizing a saline-metallic solution through a galvanic induction chamber. The resulting mist carries a sustained galvanic charge that, upon contact with biological tissue, drives ions through the skin's surface via electrophoretic pressure — bypassing the need for penetration or direct electrical contact. Once ionic particles have penetrated the skin barrier, they create a localized galvanic circuit within the tissue itself, generating heat and electrochemical disruption at the cellular level. The effect is experienced as a deep burning sensation beneath the skin with no visible external cause, accompanied by involuntary muscle fasciculation.\n\nThe GVDP-1's vapor cloud persists for approximately 8-12 seconds in still air before dispersing, during which time any target moving through it receives continuous ionic exposure. This area-denial quality distinguishes it from point-target electrical weapons — the cloud hangs in space and punishes movement through it rather than requiring the operator to track a specific target. In enclosed spaces with limited airflow, the persistence time extends significantly, making interior engagements particularly dangerous. The weapon is largely ineffective outdoors in strong wind, a limitation operators learn to account for.\n\nRingo Corponation produced the GVDP-1 as part of a broader non-lethal compliance tool line marketed to corporate security divisions and private detention facilities. Its civilian applications — crowd management, perimeter enforcement in enclosed facilities — gave it broad initial distribution before its more aggressive applications became apparent. The pistol form factor makes it concealable, and the vapor it produces is colorless in most lighting conditions, contributing to its reputation as a weapon that creates confusion about the source and nature of the attack.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+ (corporate security) / Gray market",
+  "legality": "Licensed (corporate security use); Restricted (civilian carry)",
+  "base_technologies": [
+    "Galvanic induction vaporization",
+    "Electrophoretic ionic skin penetration",
+    "Charged aerosol suspension"
+  ],
+  "specifications": "effective range: 2–10 meters (cloud projection)\ncloud persistence: 8–12 seconds still air; up to 30 seconds in enclosed spaces\nionic penetration depth: 2–4mm subcutaneous\nprimary effects: Subdermal burning, involuntary muscle fasciculation, disorientation\nsolution capacity: 18 discharges per reservoir\nweight: 1.1 kg loaded\nwind sensitivity: Highly susceptible to dispersal above 15 km/h wind\noperator protection: Recommended insulated gloves; vapor is self-dispersing at operator distance if fired directionally\ndimensions: 22cm overall",
+  "tactical_use": "Operators use the GVDP-1 primarily to control space rather than engage specific targets — firing into doorways, corridors, or stairwells to deny passage or flush entrenched opponents. In interrogation and detention contexts, it is used for compliance enforcement with plausible deniability, as the subdermal effects leave no visible marks. Multiple cloud discharges in a confined space can create an environment where sustained presence becomes untenable. Experienced operators combine it with visual obstructions — smoke, darkness — to maximize disorientation.",
+  "cultural_context": "The GVDP-1 has become deeply associated with corporate detention and private security excess in Meridian 88. Its origins as a 'non-lethal compliance tool' have made it a symbol of institutional coercion — the kind of violence that doesn't leave marks, that can be denied, that operates in the gap between formal policy and what actually happens in holding facilities. Anti-corporate activists who have experienced detention in Ringo-contracted facilities often describe the Saltlick as emblematic of a particular kind of systemic cruelty: technically legal, officially non-lethal, and quietly devastating. Some carry recovered units as evidence of what was done to them.",
+  "known_users": [
+    "Ringo Corponation private detention facility security",
+    "Corporate compliance enforcement units",
+    "Meridian 88 private residential security contractors",
+    "Anti-corporate resistance members who recovered units from facility raids",
+    "'Brine' — a former corporate detention guard turned freelance operator"
+  ],
+  "story_hooks": [
+    "A former detainee from a Ringo Corponation facility is documenting injuries consistent with extended GVDP-1 exposure — injuries that don't appear on any official incident report. She needs someone to get inside the facility and pull the usage logs before a scheduled audit wipes them.",
+    "The players are hired to recover a person being held in a corporate facility. The holding wing's ventilation system has been deliberately compromised to extend vapor persistence. The entire wing is effectively a continuous Saltlick environment.",
+    "A black-market dealer offers the players a crate of GVDP-1 units at near-cost. The lot numbers match a batch reported stolen from a Ringo Corponation facility during an incident that was officially classified as a maintenance accident.",
+    "A player character has been experiencing unexplained subdermal burning sensations for three days. A street medic confirms electrophoretic ionic residue in the tissue — consistent with GVDP-1 exposure. Someone dosed them without their knowledge. The question is when, and who was close enough."
+  ],
+  "ammunition_type": [
+    "Aerosol Chemical Payload Canister ACP-35",
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "violence",
+    "gun",
+    "love",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "ubc",
+    "market",
+    "bar",
+    "dark",
+    "energy",
+    "fire",
+    "circuit",
+    "tier 2"
+  ]
+}

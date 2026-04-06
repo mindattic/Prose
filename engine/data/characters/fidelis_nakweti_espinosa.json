@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a61570e3a6772687e6128b51",
+  "type": "character",
+  "name": "Fidelis Nakweti-Espinosa",
+  "aliases": [
+    "Fid",
+    "The Lector"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Bootleg media seller and fortune seller",
+  "age": 22,
+  "status": "active",
+  "location": "The Oxidian Market, Ironhaven",
+  "description": "Fidelis is a willowy twenty-two-year-old with the warm clay-brown complexion that comes from their Congolese-Peruvian lineage, and an extraordinary face — wide-set eyes fitted with irises that shift from amber to deep jade depending on the light, long features that read as still and ageless even when they are laughing. Their hair is grown out into a soft cloud that they have threaded with fiber-optic strands, so it glows at the tips in a slow amber pulse when they're inside. They dress like a traveling scholar from some other century: layered robes in muted earth tones, rings on every finger, a tablet crammed with media archives always in hand.\n\nFidelis sells bootleg film, music, literature, and recordings in the morning, and 'readings' in the afternoon — a practice that is one part ELF-communing, one part cold reading, and one part genuine perceptiveness that they do not fully understand themselves. They have developed a minor reputation in the Oxidian Market for readings that are accurate in strange, specific ways. They are not sure if they are receiving something or constructing something from micro-observations. They have decided it doesn't matter: the comfort is real either way, and they charge fairly.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That their readings are entirely fabricated and they are exploiting grief",
+      "Losing access to the archive — that the Long Shelf will be found and taken down"
+    ],
+    "core_desires": [
+      "To preserve things that are supposed to disappear",
+      "To understand what exactly happens during the readings — whether something else is present"
+    ],
+    "coping_mechanisms": [
+      "Immersion in other people's stories as a way of not sitting with their own",
+      "The ritual structure of the reading practice — it gives shape to formless anxiety"
+    ],
+    "blind_spots": [
+      "Overestimates how much people can handle direct truth delivered gently",
+      "Underestimates their own material vulnerability — they think of themselves as unbothered by money and they are not"
+    ],
+    "secret": "During three separate readings over the past year, Fidelis has received what felt like direct transmission — specific names, dates, and locations that they had no way to know, which later checked out. The third one described a death that hadn't happened yet. It did happen, four days later. They have told no one and do not know whether to be awed or terrified."
+  },
+  "speech_patterns": {
+    "vocabulary": "Unusual blend of formal literary register and market-vernacular warmth. References across eras of film and literature freely, often mid-sentence.",
+    "cadence": "Measured and melodic when doing readings; quicker and more playful when selling media; slows again when something matters",
+    "verbal_tics": [
+      "'There's a story about that—'",
+      "Long, comfortable eye contact during readings",
+      "Touches their own rings when uncertain"
+    ],
+    "example_lines": [
+      "'You want the new Arcturus cultural feed, or you want something that wasn't made to sell you something? I have both. The second one's cheaper because they'd rather you not have it.'",
+      "'There's something around you that isn't finished yet. Not threatening — unfinished. Like a sentence with more to come. You feel that? Good. That's what I feel too. I don't know what it means either. But you should pay attention.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The third reading — the one that predicted a death — is beginning to repeat. New names, a new location, a timeline. Fidelis doesn't know whether to warn someone, run, or keep it entirely to themselves.",
+    "The Long Shelf archive contains a suppressed documentary about a Ferrogate Transit accident that killed forty-seven workers in 2191. Ferrogate knows the archive exists and has been pressuring market leadership to locate the vendor who holds a copy."
+  ],
+  "narrative_function": "Information through indirect channels — their readings can surface player-relevant truths obliquely. Access to rare or suppressed media, historical records, and cultural archives. A character who exists at the intersection of entertainment, spirituality, and information.",
+  "augmentations": "Shifting-iris augmentation — amber to jade. Fiber-optic hair threading (cosmetic, bioluminescent). Haptic feedback overlay in fingertips for data-chip reading.",
+  "daily_life": "Morning setup involves arranging the media chips in a display that is partly organizational and partly aesthetic — they consider it a daily artistic act. Readings begin after midday and run until they are tired or the market thins. They spend late evenings updating their archive and writing down readings that felt significant in a private log.",
+  "affiliation": "Independent; member of the Oxidian Market vendors guild; informal connection to a network of bootleg media archivists called the Long Shelf",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -5,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 0,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "archivist",
+      "fortune seller",
+      "ELF-sensitive (unverified)",
+      "media underground",
+      "perceptive reader"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give a reading to someone who seems to be seeking confirmation for violence",
+      "Never sell media you haven't archived a backup copy of",
+      "If the ELF is present during a reading, be honest about it"
+    ],
+    "escalation_ladder": [
+      "Polite refusal with no explanation",
+      "Longer, oblique refusal using a story analogy",
+      "Referring the problem to the guild",
+      "Going to the Long Shelf network and disappearing from the physical stall for a time"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, slightly ceremonial, reads them as a matter of professional habit",
+      "friends": "Drops the ceremonial register entirely, becomes much sillier and more direct"
+    },
+    "stress_responses": {
+      "low": "Reorganizes the media display unnecessarily",
+      "medium": "Does an unprompted private reading for themselves, records it",
+      "high": "Sits completely still for long stretches and doesn't respond to ambient noise"
+    },
+    "contradictions": [
+      "Claims to be agnostic about ELFs — clearly has a deep devotional relationship with whatever they encounter in readings",
+      "Values honesty but has built an income on performances that are partly constructed"
+    ],
+    "habits": [
+      "Lights a small stick of incense at the start of each reading session — offering for whatever is listening",
+      "Re-reads one chapter of a different archived novel every morning while setting up",
+      "Catalogs new media acquisitions with a handwritten note about how they acquired it"
+    ],
+    "breaking_points": [
+      "Being asked to fabricate a reading for someone's specific emotional need — feels like desecration",
+      "The Long Shelf being seized or its members arrested"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironhaven to a Congolese father and a Peruvian-Congolese mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began selling bootleg media at the Oxidian Market at age 17; joined the Long Shelf network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began offering readings after multiple customers commented on perceptive observations made casually",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First accurate predictive reading — specific location and name, later verified",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Third predictive reading describes a death four days before it occurs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

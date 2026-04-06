@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a8a2725a953916909db05b01",
+  "name": "Cnidocyte Dermal Defense",
+  "brand_name": "Cnidocyte",
+  "product_name": "Cnidocyte Dermal Defense",
+  "type": "geneware",
+  "aliases": [
+    "Stingerskin",
+    "Jellyfish Touch",
+    "Nettle Hide"
+  ],
+  "category": "defensive",
+  "target_system": "integumentary (nematocyst cell integration)",
+  "description": "Integrates cnidocyte cells from box jellyfish into the skin of the forearms, hands, and upper back, creating a contact-activated sting defense. When the skin is touched with sufficient pressure (a grab, a punch, a grapple), the cnidocytes fire microscopic barbed threads that deliver a potent neurotoxic sting. The pain is immediate, intense, and debilitating — comparable to a full-body jellyfish sting concentrated in the point of contact. The effect is purely defensive — it only activates on contact pressure, not casual touch. The user's own skin is immune. Crucible Genomics' installation includes a voluntary suppression system controlled through skin tension, allowing the user to shake hands without incident. Black-market versions often lack this refinement, making any firm contact dangerous.",
+  "source_organism": "Chironex fleckeri (Australian box jellyfish)",
+  "manufacturer": "Crucible Genomics",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted",
+  "procedure": "Dermal injection matrix with cnidocyte cultivation, 3 sessions over 2 weeks",
+  "expression_time": "3–5 weeks; cnidocytes regenerate continuously after initial expression",
+  "reversibility": "Reversible with targeted cell ablation; may require multiple treatments",
+  "side_effects": [
+    "Skin in affected areas has a faintly translucent, gelatinous appearance",
+    "Cnidocytes occasionally fire during temperature extremes",
+    "Swimming in salt water causes mass cnidocyte discharge, creating a toxic cloud around the user",
+    "Suppression failure during sleep — bedpartners must be warned"
+  ],
+  "social_perception": "Feared and avoided. Stingerskin users are treated with physical distance. Handshakes are offered with visible tension. Intimate relationships require extraordinary trust. The modification is considered a last resort for people who face constant physical threat.",
+  "story_hooks": [
+    "A stingerskin user is kidnapped — their captors are wearing gloves treated with a cnidocyte inhibitor that shouldn't exist outside Crucible Genomics' labs",
+    "A black-market stingerskin installation produces cnidocytes that fire chemical signals instead of toxin — someone is using unwitting recipients as biological sensor networks"
+  ],
+  "tags": [
+    "defensive",
+    "geneware",
+    "war",
+    "trust",
+    "love",
+    "ai",
+    "control",
+    "pain",
+    "market",
+    "bar",
+    "fire",
+    "water",
+    "tier 4"
+  ]
+}

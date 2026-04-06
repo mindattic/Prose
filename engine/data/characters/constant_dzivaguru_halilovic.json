@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a5de7ff7b7a030dfb0cfa2a3",
+  "type": "character",
+  "name": "Constant Dzivaguru-Halilović",
+  "aliases": [
+    "Old Constant",
+    "Connie"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Pawn shop owner and junk merchant",
+  "age": 67,
+  "status": "active",
+  "location": "The Shelf, Copperhead",
+  "description": "Constant is a large man gone thick through the middle, with the dark complexion and broad frame of his Zimbabwean lineage and his Bosnian grandfather's deep-set, heavy-lidded eyes that make him look perpetually half-asleep and perpetually unimpressed. His hair went white at forty and he has kept it cropped close ever since. He moves slowly on purpose — he has a fused vertebra from a freight accident in his fifties that he refuses to have properly treated because the surgery quote was insultingly high — and uses a custom cane he made himself from a Ferrogate Transit handrail he salvaged years ago. His shop on The Shelf is three connected units brimming with fifty years of accumulated objects: broken augmentations, pre-city antiques, industrial salvage, personal effects pawned in crisis moments, and a back room of things he has decided are not for sale regardless of price.\n\nConstant is one of those rare people who have become part of the architecture of a place. The Shelf without Constant's shop is not fully The Shelf. He has seen everything come and go — corporations, gangs, floods, market booms, building collapses — and he has the calm of someone who has been surprised by nothing for a very long time. He is not sentimental in any visible way, but he keeps things — objects that belonged to people who are gone — with a quiet fidelity that functions as memorial. He is honest about prices, blunt about valuations, and legendarily difficult to scam because he has already been scammed by everyone.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.3,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "The shop being taken — not for financial reasons but because it is the only container he knows for grief",
+      "Being forgotten the way he has watched other people be forgotten"
+    ],
+    "core_desires": [
+      "For things to last — objects, places, people — against the city's tendency to erase",
+      "To find the provenance of one specific item in his back room he has been trying to trace for fifteen years"
+    ],
+    "coping_mechanisms": [
+      "Accumulation — the shop as externalized memory and emotional archive",
+      "Deliberate, slow movement as a form of calm insistence on his own pace"
+    ],
+    "blind_spots": [
+      "His attachment to the back-room items creates a vulnerability he doesn't fully acknowledge — someone who knew what he valued could use it",
+      "He reads the neighborhood so well historically that he sometimes misreads its present"
+    ],
+    "secret": "In the back room, behind forty years of inventory, is a locked case containing a Tessera data core from 2160. He found it in salvage and has never opened it. He doesn't know what's on it. Some part of him doesn't want to know. But he has never sold it either."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse and direct; Shona proverbs deployed unexpectedly; occasional Bosnian curses; never more words than necessary",
+    "cadence": "Very slow, very deliberate, with long pauses that he is entirely comfortable with",
+    "verbal_tics": [
+      "Sucking his teeth before declining something",
+      "'Mm.' (as complete sentence)",
+      "Referring to the city as 'this place' with specific tone"
+    ],
+    "example_lines": [
+      "'I'll give you forty Φ. You think it's worth more, you can go find somewhere that thinks so.' (pause) 'You'll come back.'",
+      "'Mm. Sit down. You look like you need to sit down more than you need to sell me anything right now.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Tessera data core in the back room has apparently developed an ELF — a small, confused spirit that occasionally makes the lock click on its own. Constant has started leaving data offerings for it without fully admitting to himself why.",
+    "A young woman has been coming into the shop for three weeks, each time asking about one specific category of old objects — items from the 2160 Lakefront Reclamation. Constant knows something about that period he hasn't shared."
+  ],
+  "narrative_function": "Repository of local history and lost objects, pawn and information exchange, long-term neighborhood memory, occasional quest giver when items of significance pass through his hands.",
+  "augmentations": "One cybernetic hand (right, mid-grade, replaced after the freight accident — he uses it mainly for grip strength when handling heavy inventory). Reading magnification implant in right eye, consumer grade. No geneware.",
+  "daily_life": "Opens the shop at 09:00, rarely closes before midnight; eats lunch and dinner at the shop; has not taken a day off in eleven years; sleeps in the back room most nights because the walk home bothers his back.",
+  "affiliation": "Independent; The Shelf vendors informal association; longtime on-and-off relationship with the Oxidian Market Vendors Guild (currently off)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "living landmark",
+      "keeper of lost things",
+      "slow and unshakeable",
+      "accidental archivist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Fair price, both ways — he won't be robbed and he won't rob",
+      "The back room is not for sale and not for entry without invitation",
+      "Help people in immediate crisis, no questions, settle accounts later or never"
+    ],
+    "escalation_ladder": [
+      "Silent non-response",
+      "One clear statement of his position, once",
+      "Standing up (this itself functions as escalation given his size and deliberateness)",
+      "Removing people from the shop physically with a calm that is more disturbing than anger"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and accurate — assesses quickly, gives what the transaction requires, no more",
+      "friends": "Remembered precisely and cared for through attention — he tracks people's needs and quietly addresses them without announcement"
+    },
+    "stress_responses": {
+      "low": "Moves even slower; handles objects",
+      "medium": "Goes completely silent; rearranges inventory",
+      "high": "Sits down, closes his eyes for thirty seconds, then acts with complete calm and no warning"
+    },
+    "contradictions": [
+      "Professes to be unsentimental while running what is essentially a municipal grief archive",
+      "Distances himself from institutions while being the most institutionally stable presence on The Shelf"
+    ],
+    "habits": [
+      "Burns a specific incense blend every morning that fills the whole block",
+      "Talks to items in the back room when alone — not to the ELF specifically, just to the objects",
+      "Keeps the Ferrogate handrail cane polished"
+    ],
+    "breaking_points": [
+      "Watching someone deliberately destroy something old and irreplaceable for no reason",
+      "Being lied to about an item's provenance — he takes this personally in a way nothing else quite reaches"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Copperhead to a family of salvage workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened first version of the shop in a single unit on The Shelf, age 20",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Freight accident; lost right hand; had it replaced with cybernetic prosthetic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Found the Tessera data core in a salvage lot; locked it in the back room",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The data core's ELF has been active for approximately six weeks",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

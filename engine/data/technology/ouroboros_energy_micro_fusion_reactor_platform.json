@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa497d23a5ef84c3b6e1309a",
+  "name": "Ouroboros Energy Micro-Fusion Reactor Platform",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Micro-Fusion Reactor Platform",
+  "type": "technology",
+  "aliases": [
+    "MFRP",
+    "Pocket Reactor",
+    "Ouroboros Core",
+    "Mini Fusion"
+  ],
+  "subcategory": "energy",
+  "description": "A compact nuclear fusion reactor the size of a shipping container that produces 50 megawatts of continuous power — enough to supply a district-sized area indefinitely. The MFRP uses deuterium-tritium fuel extracted from seawater and produces helium as its only waste product. Ouroboros has deployed over 200 units across Meridian 88, and the technology has fundamentally changed the energy economics of the city. The reactors are maintenance-light, with fuel cycles measured in years, and their modular design allows scaling by simply adding additional units. Energy scarcity in Meridian 88 is now a political problem, not a technical one.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "OUROBOROS ENERGY",
+    "ZHENG-DAO HEAVY INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Compact magnetic confinement fusion",
+    "Deuterium-tritium fuel processing",
+    "Modular reactor architecture"
+  ],
+  "enables": [
+    "Abundant clean energy production",
+    "Decentralized power infrastructure",
+    "Energy independence for district-level governance",
+    "Power supply for energy-intensive technologies"
+  ],
+  "social_impact": "The MFRP has made energy effectively unlimited for any entity that can afford or negotiate access to a reactor unit. This abundance has enabled every energy-intensive technology in Meridian 88 — from manufacturing to vertical farming to the power-hungry graviton weapons that would be impractical without fusion power. However, Ouroboros controls the reactor fleet and access to fuel processing, maintaining a monopoly on abundance. Districts that challenge Ouroboros have experienced 'maintenance scheduling conflicts' that reduce power availability at politically convenient moments.",
+  "story_hooks": [
+    "An MFRP unit has experienced a containment anomaly — it is not a meltdown risk (fusion reactors fail safe), but the containment field is producing unusual electromagnetic signatures that are interfering with neural interfaces in a 500-meter radius.",
+    "Someone has stolen a portable MFRP prototype small enough to fit in a vehicle — a mobile, unlimited power source that could power energy weapons indefinitely."
+  ],
+  "tags": [
+    "energy",
+    "technology",
+    "weapon",
+    "neural",
+    "ai",
+    "control",
+    "power",
+    "vehicle",
+    "water",
+    "tier 2"
+  ]
+}

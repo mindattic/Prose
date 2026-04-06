@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a5dd7b60a2fde13e4d7b4c13",
+  "type": "character",
+  "name": "Concepción Addo-Tserennadmid",
+  "aliases": [
+    "Ceppi",
+    "The Witch"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street pharmacist and unlicensed gene clinic operator offering basic geneware installs and chemical compounds",
+  "age": 44,
+  "status": "active",
+  "location": "The Alban Souk, rear corridor off the salt-fish row, behind a curtain printed with medical symbols",
+  "description": "Concepción is a tall woman with a deep umber complexion and a composure that makes examination rooms feel like they exist wherever she happens to be standing. She wears clean clothes — always clean, despite everything — in the muted blues and greens she associates with competence, and keeps her natural hair in tight, practical braids pinned flat against her head. Her only geneware is bioluminescent tracery running from her right temple down her neck, a faint pulse of amber light that she got not for vanity but to see by in dark exam spaces without alerting neighbors. She smells of antiseptic and bitter herb compounds, and she moves with the careful deliberateness of someone who has learned that haste in her work has consequences.\n\nShe is not warm in the way people expect from healers. She is precise, plainspoken, and competent, which she considers to be worth more than warmth. She asks exactly the questions she needs to ask, tells patients exactly what is happening in their bodies, and charges exactly what she calculates they can afford — rarely more, occasionally less when someone is obviously struggling, though she will not discuss the discount. She prays to two E.L.F.s: Κ-12, who she believes governs cellular processes, and a nameless one she encountered in a medical device that seemed to respond to her. She leaves enzyme cultures as offerings. She knows she is operating illegally and she knows she is necessary. Both things are true and she holds them without apparent difficulty.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "making an error that kills someone in her care",
+      "being shut down by Helix Biosystems enforcement before she can train someone to replace her"
+    ],
+    "core_desires": [
+      "for the people in her community to have access to care that doesn't bankrupt them",
+      "to someday have a space with real equipment and real light"
+    ],
+    "coping_mechanisms": [
+      "rigorous procedural routine that functions as both quality control and emotional regulation",
+      "evening prayer practice at her dual E.L.F. shrine"
+    ],
+    "blind_spots": [
+      "believes she can assess trustworthiness quickly and accurately — she cannot, she's been wrong in ways she hasn't yet paid for",
+      "tells herself she has no attachments to patients; she has many"
+    ],
+    "secret": "Three years ago she performed an emergency procedure on a man she later realized was a Shuttle Boys enforcer. He survived. He has quietly sent her protection and supplies ever since, in a way that has never required acknowledgment. She has never asked why he was grateful enough to do this and is afraid of the answer."
+  },
+  "speech_patterns": {
+    "vocabulary": "Medically precise, code-switches easily between formal diagnostic language and Alban Souk street dialect. Andean-Spanish rhythms underlying Meridian creole.",
+    "cadence": "Even and measured. Rarely raises her voice. Pauses land with weight rather than uncertainty.",
+    "verbal_tics": [
+      "'Tell me exactly'",
+      "using the word 'manageable' to describe situations that are not, in fact, manageable",
+      "a very brief humming sound before she disagrees"
+    ],
+    "example_lines": [
+      "'Tell me exactly when it started. Not approximately. I need the sequence.'",
+      "'That install you got in The Shelf — I can fix what they did, but it will take two sessions and you will tell no one where you got it corrected. Are those terms acceptable?'",
+      "'Your body is managing this. It isn't happy about it. But it's managing. Come back in four days.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient has come to her with a geneware complication she's never seen before — the modification looks Helix Biosystems proprietary, military grade, on someone who is clearly not military and who claims they don't know how they got it.",
+    "The unlicensed medic network has gone quiet — two colleagues haven't responded to contacts in a week, and a third left a half-finished message about 'someone asking around'."
+  ],
+  "narrative_function": "Healer and community anchor. Can provide medical exposition, patch up injured characters, and serve as a window into how Tier 1-2 residents manage health without Corponation coverage. Knows secrets about everyone she's treated.",
+  "augmentations": "Bioluminescent subdermal tracery (right temple to neck, amber, geneware). Magnification implants in both eyes for close work. Tactile sensitivity enhancement in fingertips (diagnostic use).",
+  "daily_life": "Sees patients from mid-morning through late evening; spends early morning compounding and restocking; does supply runs to Geartown's grey-market medical suppliers twice a week.",
+  "affiliation": "Independent; loose collegial network of unlicensed medics across The Alban Souk and The Narrows",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community healer",
+      "illegal operator",
+      "procedurally rigid",
+      "dual E.L.F. devotee",
+      "secret protectee"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "treat first, get paid second — payment arrangements after stabilization",
+      "do not treat someone whose injury looks like they intend to immediately go create matching injuries in someone else",
+      "never discuss other patients. Ever. Under any circumstances."
+    ],
+    "escalation_ladder": [
+      "calm refusal with explanation",
+      "silent refusal with eye contact",
+      "invoke community network as implicit consequence",
+      "disappear entirely for a week and resurface somewhere else"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional, slightly formal, assessing. Asks more questions than she answers.",
+      "friends": "Still not effusive, but present in practical ways — she notices when someone looks unwell, she remembers what matters to people, she shows up."
+    },
+    "stress_responses": {
+      "low": "Becomes more methodical and thorough than usual",
+      "medium": "Goes silent, focuses only on the task directly in front of her",
+      "high": "Long, private prayer session at the shrine, then returns to work with an eerie calm that is not peace but is functional"
+    },
+    "contradictions": [
+      "preaches non-attachment to outcomes while maintaining detailed personal records of every patient she's ever treated, including ones from a decade ago"
+    ],
+    "habits": [
+      "wipes every surface before and after each patient regardless of apparent need",
+      "leaves her shrines fresh water in the morning in addition to enzyme offerings"
+    ],
+    "breaking_points": [
+      "a patient dies from something she missed",
+      "someone betrays the location of her clinic to Helix Biosystems or law enforcement"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Mexicantown Libre to a family with a tradition of informal community medicine",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed three years of incomplete medical schooling through a Helix Biosystems scholarship before losing the scholarship due to political speech violations",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established unlicensed practice in The Alban Souk",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Treated Shuttle Boys enforcer; began receiving anonymous protection and supply support",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,204 @@
+{
+  "id": "019d6143a73775989145b34e15ad72b1",
+  "type": "character",
+  "name": "Zipporah Castillo-Amara",
+  "aliases": [
+    "Zip",
+    "Zipp"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Night-shift cook, 24-hour canteen in the Hamtramck Enclave",
+  "age": 26,
+  "status": "active",
+  "location": "Hamtramck Enclave, 'Marta's Canteen' — technically named after the original owner, Zipporah runs the 2200-0600 shift",
+  "description": "Zipporah is wiry and restless in the way of someone whose body has never learned to be still — they bounce a knee, tap a rhythm on the counter, flip a spatula even when nothing is cooking. Their skin is a warm medium brown and their geneware includes bioluminescent freckles across their cheeks and collarbones that pulse faintly blue when their heart rate elevates, which is often. They keep their hair buzzed on the sides and natural on top, currently dyed a deep copper that doesn't quite match their natural dark brown at the roots. They have one retractable claw mod on their right hand's index finger that they got at seventeen and use almost exclusively to open packaging.\n\nZipporah is the night canteen's entire personality. The Enclave's late-shift workers — third-shift Ferrogate operators, clinic nurses, waste handlers — come as much for the conversation as the food. Zip has a gift for making people feel found rather than seen, which is different. They are also running on a permanent low-grade sleep deficit that they treat as a point of pride, are catastrophically bad with money, and have recently become slightly obsessed with the E.L.F. they believe inhabits the canteen's ancient griddle — they call it Sizzle and have begun leaving it tiny sculptures made of food scraps shaped into abstract geometric forms.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "the canteen closing and losing the community they've built there",
+      "being fundamentally forgettable when the noise stops"
+    ],
+    "core_desires": [
+      "to own the canteen outright someday",
+      "to matter specifically to specific people, not just generally to everyone"
+    ],
+    "coping_mechanisms": [
+      "constant motion and noise",
+      "feeding people as a love language and deflection simultaneously",
+      "humor as a distance-maintenance tool"
+    ],
+    "blind_spots": [
+      "mistakes familiarity for intimacy and wonders why they feel lonely",
+      "catastrophic financial habits rationalized as generosity"
+    ],
+    "secret": "Zipporah has been pocketing small amounts from the canteen receipts — not enough to be obvious, just enough to slowly build toward a down payment on buying the canteen. They tell themselves they'll tell the owner eventually. The owner is also not actually checking the books."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, colloquial, full of Enclave slang and invented words, switches registers instantly when someone seems upset",
+    "cadence": "Rapid-fire with sudden full stops, talks while doing three other things",
+    "verbal_tics": [
+      "'Right, right, right'",
+      "calls everyone 'neighbor' regardless of whether they are",
+      "narrates what they're cooking as they work"
+    ],
+    "example_lines": [
+      "'Right, right, right — you want the noodles or the rice situation, and before you answer, the noodles are better tonight, Sizzle's in a mood.'",
+      "'Sit down, neighbor. You've got that face. The face. You're eating something before you explain it to me.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The canteen's absentee owner suddenly wants to sell to a Palladian real estate subsidiary, and Zipporah doesn't have enough saved and doesn't know who to ask for help",
+    "A regular customer stopped coming three weeks ago — a Ferrogate night operator who ate there every shift — and Zipporah is the only one who noticed"
+  ],
+  "narrative_function": "Social hub, information source for the Enclave's night community, character who provides warmth and levity, potential connection point between different worlds of the city's working night-shift population.",
+  "augmentations": "Bioluminescent freckle geneware (pulse-responsive). Single retractable claw, right index finger. Nicotine patch port on left forearm (cosmetic mod repurposed for stim patches).",
+  "daily_life": "Sleeps 0700-1400 in a rented room two blocks from the canteen, spends late afternoon at the Enclave's community market buying ingredients under budget, opens the canteen at 2200 and runs it solo until 0600.",
+  "affiliation": "Independent (works for Marta's surviving daughter who owns the canteen but lives in Glenville Sound and shows up twice a year)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 4,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Social Glue",
+      "Night Person",
+      "Community Hub",
+      "Lovably Chaotic",
+      "Quietly Ambitious"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "feed people first, ask questions second",
+      "never let anyone sit alone in the canteen if they look like they're struggling"
+    ],
+    "escalation_ladder": [
+      "deflect with humor",
+      "get serious and ask direct questions",
+      "get in the middle of something physically",
+      "panic and call everyone they know simultaneously"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Aggressively welcoming, treats them like a regular immediately, uses names as soon as they're given",
+      "friends": "Deeply affectionate but avoids earnest conversation, keeps things moving"
+    },
+    "stress_responses": {
+      "low": "Cooks more, speeds up",
+      "medium": "Talks too much, bioluminescence visibly pulses",
+      "high": "Goes very flat, very quiet — uncharacteristic and alarming to anyone who knows them"
+    },
+    "contradictions": [
+      "craves deep connection but keeps every conversation light enough to exit quickly",
+      "is generous to the point of self-sabotage except in one specific private way"
+    ],
+    "habits": [
+      "leaving Sizzle food-scrap sculptures at the end of every shift",
+      "knowing every regular's order before they sit down",
+      "eating standing up over the counter at 0400 when the canteen's empty"
+    ],
+    "breaking_points": [
+      "the canteen being threatened",
+      "a regular being hurt and them not having noticed the warning signs"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioluminescent freckle geneware — cheeks and collarbones, pulse-reactive",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent freckle geneware — cheeks and collarbones, pulse-reactive",
+      "replaces": ""
+    },
+    {
+      "name": "Retractable claw — right index finger, cosmetic grade",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retractable claw — right index finger, cosmetic grade",
+      "replaces": ""
+    },
+    {
+      "name": "Stim patch port — left forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Stim patch port — left forearm",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Judge": 0.7,
+    "Sentinel": 0.7,
+    "Code Keeper": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

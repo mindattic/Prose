@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa5f7ce485978f1bd75f96e6",
+  "name": "Axiom Bathyscaphe",
+  "type": "transportation",
+  "aliases": [
+    "Deep Diver",
+    "The Abyss Eye",
+    "Pressure Coffin"
+  ],
+  "category": "exotic",
+  "manufacturer": "Axiom",
+  "description": "A deep-submersion vessel rated for pressures that exceed anything the Great Lakes should contain. The fact that Axiom built a vehicle capable of diving to depths the lake doesn't officially have tells you everything. Crew of three, reinforced titanium pressure hull, external manipulators, and a sonar system that maps in three dimensions. Bathyscaphe missions are classified. The crews sign NDAs measured in decades. What they've seen down there stays down there.",
+  "propulsion": "Electric thruster array, ballast control, emergency ascent system",
+  "speed": "8 km/h submerged",
+  "capacity": "3 crew + sensor payload",
+  "range": "72 hours submerged endurance",
+  "tier_availability": "Axiom research only (classified)",
+  "cost": "Classified. Estimated Φ5,000,000+",
+  "autonomy": "Human-operated, AI-assisted navigation and hazard detection",
+  "armament": "None declared. The hull is rated for things that shouldn't exist at those depths.",
+  "common_usage": "Deep lake research, classified survey operations, things Axiom doesn't talk about.",
+  "story_hooks": [
+    "A Bathyscaphe surfaces after a mission with one crew member missing and the other two refusing to speak",
+    "The sonar data from a Bathyscaphe dive shows structures at the bottom of the lake that are too regular to be geological and too large to be human-made"
+  ],
+  "tags": [
+    "exotic",
+    "transportation",
+    "ai",
+    "control",
+    "vehicle",
+    "lake"
+  ]
+}

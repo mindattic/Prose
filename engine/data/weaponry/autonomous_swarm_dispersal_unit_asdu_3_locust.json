@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab1571d090e1940d1391e026",
+  "name": "Autonomous Swarm Dispersal Unit ASDU-3 'Locust'",
+  "type": "weapon",
+  "aliases": [
+    "Locust",
+    "The Cloud",
+    "Bugspray",
+    "Swarmbox"
+  ],
+  "category": "drone",
+  "description": "The ASDU-3 is a deployable canister roughly the size of a large thermos that fractures open on command or impact, releasing between 240 and 280 semi-autonomous micro-drones, each no larger than a housefly. Each drone carries a miniaturized piezoelectric charge capacitor and a rudimentary collision-guidance system slaved to a shared mesh network. On deployment, the swarm self-organizes within approximately 1.4 seconds, distributing targeting priority across all active units simultaneously. The collective operates on distributed logic rather than centralized AI, meaning the swarm cannot be disabled by neutralizing a single command node.\n\nWhat distinguishes the Locust from earlier swarm platforms is its use of inductive resonance homing — each micro-drone locks onto the bioelectric signature of warm-bodied targets, allowing it to distinguish humans from animals and, with the proper IFF token, from friendly personnel. On contact, each drone discharges its piezoelectric payload into the skin, triggering localized muscle spasm and surface-layer nerve disruption. A full swarm saturation of a single target delivers cumulative effects equivalent to repeated taser cycling. Multiple targets in an enclosed space can be simultaneously engaged.\n\nThe Locust has a significant cultural footprint in Meridian 88's underworld — its indiscriminate area coverage made it notorious after the Siltway Market Incident, in which a misdeployed canister hospitalized over sixty civilians. Arcturus Defense Solutions quietly pulled the civilian variant from licensed distribution but continues fulfilling military and PMC contracts. Black market canisters, often with degraded IFF systems, circulate widely in the outer districts.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+ / Black market",
+  "legality": "Prohibited (civilian) / Licensed (military/PMC)",
+  "base_technologies": [
+    "Piezoelectric disruption",
+    "Bioelectric signature homing",
+    "Distributed mesh autonomy"
+  ],
+  "specifications": "drone count: 240–280 units per canister\nindividual drone mass: 0.4g\nswarm organization time: 1.4 seconds post-deployment\neffective engagement radius: 12 meters\noperational duration: 8 minutes active flight / 22 minutes dormant ground mode\nIFF system: Bioelectric token recognition, 97.3% accuracy (degraded in black market units)\ncanister dimensions: 28cm x 9cm\ncanister mass: 1.1kg loaded\nrecharge cycle: Single-use canister, non-rechargeable",
+  "tactical_use": "Deployed into enclosed spaces ahead of entry teams to suppress or incapacitate occupants without lethal risk to operators. Frequently used in hostage extractions where shooter identification is uncertain. Experienced operators carry IFF tokens on wristbands or subdermal chips. In offensive operations, canisters are lobbed through doorways or vents approximately two seconds before breach. The swarm's ground-dormant mode allows pre-deployment hours in advance — canisters left in ventilation corridors or under furniture can be triggered remotely.",
+  "cultural_context": "The Locust is feared more than most lethal weapons in Meridian 88's street culture because of its perceived lack of dignity — being swarmed and convulsed by insects, even mechanical ones, carries a particular humiliation. Gang enforcers who use Locusts are often viewed with contempt even by rivals. Among corporate security contractors, however, the ASDU-3 is considered a clinical and professional tool, its reputation for precision celebrated in internal marketing materials. The disconnect between these two readings reflects broader class divisions in how 'clean' violence is perceived.",
+  "known_users": [
+    "Arcturus Defense Solutions rapid-response units",
+    "PMC close-quarters breach teams",
+    "Mid-tier gang enforcers seeking area denial without firearms charges",
+    "Corporate extraction specialists",
+    "Black market resellers operating in the Siltway district"
+  ],
+  "story_hooks": [
+    "A degraded black market canister with broken IFF was used in a crowded transit hub — investigators are tracing the supply chain back through three shell distributors to an Arcturus warehouse manager.",
+    "A fixer needs a specific IFF token frequency used by a corporate security team — possessing it would make the party invisible to deployed Locust swarms inside the target facility.",
+    "The party discovers a dormant canister hidden under the floorboards of a safehouse they've just rented — it's been there for weeks, and someone has a remote trigger.",
+    "A street medic in the outer districts is treating an unusual number of patients with identical micro-puncture scarring — someone is running live swarm tests on the population."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "violence",
+    "war",
+    "gang",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "clinic",
+    "underworld",
+    "market",
+    "warehouse",
+    "fire",
+    "tier 4"
+  ]
+}

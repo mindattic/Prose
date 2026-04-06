@@ -1,0 +1,38 @@
+{
+  "id": "019d6143ab457fa7a056b03813e39039",
+  "name": "Street Custom 'Brimstone' Thermite Grenade",
+  "type": "weapon",
+  "aliases": [
+    "Brimstone",
+    "Hell Egg",
+    "Thermite Bomb",
+    "The Melter"
+  ],
+  "category": "explosive",
+  "description": "An improvised thermite incendiary device constructed from commercially available iron oxide and aluminum powder packed into a metal container with a magnesium ribbon fuse. The Brimstone burns at approximately 2,500°C for 10-15 seconds, producing molten iron that will burn through virtually any material it contacts — steel plate, engine blocks, vault doors, and human tissue with equal indifference. The device cannot be extinguished once ignited and produces intense white light and acrid smoke. The components are available from industrial supply outlets without restriction, and the assembly requires no specialized knowledge — recipes circulate freely through Tier 1 fabrication networks.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — improvised incendiary device",
+  "base_technologies": [
+    "Thermite reaction chemistry",
+    "Improvised incendiary fabrication"
+  ],
+  "specifications": "burn temperature: approximately 2,500°C\nburn duration: 10-15 seconds\npenetration: Will burn through 15mm mild steel\nignition: Magnesium ribbon fuse, 3-second delay\nweight: 0.5-1.5 kg depending on container\ncomponents: Iron oxide powder, aluminum powder, metal container\ncountermeasure: Cannot be extinguished — must burn out\nconstruction time: 20 minutes with available materials",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A series of vault breaches across Tier 2 all used Brimstone devices to melt through the doors — the thermite composition analysis shows identical chemical ratios, indicating a single supplier.",
+    "Someone is dropping Brimstone devices through storm drains into the underground tunnel networks, targeting infrastructure — the fires are unreachable by emergency services."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "explosive",
+    "ai",
+    "tunnel",
+    "rain",
+    "storm",
+    "fire",
+    "tier 1"
+  ]
+}

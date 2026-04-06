@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab14792c818ba9d94365e74a",
+  "name": "Arcturus Defense Solutions Orbital Strike Designator OSD-1 'Finger of God'",
+  "type": "weapon",
+  "aliases": [
+    "Finger of God",
+    "OSD-1",
+    "Orbital Painter",
+    "Sky Call"
+  ],
+  "category": "heavy",
+  "description": "Not a weapon itself but a targeting device that designates coordinates for Arcturus's constellation of low-orbit kinetic bombardment satellites. The OSD-1 is a handheld laser designator that paints a target with a coded beam readable by orbital platforms, which then release a tungsten rod — colloquially called a 'telephone pole' — that impacts the designated point at terminal velocity after de-orbiting. The kinetic energy of the impact is equivalent to a tactical nuclear weapon without the radiation. The OSD-1 is the most closely controlled weapon in Arcturus's arsenal — each unit is individually tracked, requires biometric plus passcode activation, and the orbital strike requires secondary authorization from Arcturus command. Despite these controls, the existence of a handheld device that can call down orbital bombardment has reshaped the calculus of power in Meridian 88.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 5",
+  "legality": "Arcturus sovereign military asset — no external legal framework",
+  "base_technologies": [
+    "Orbital kinetic bombardment platform",
+    "Coded laser target designation",
+    "Tungsten rod de-orbit mechanics"
+  ],
+  "specifications": "designator weight: 1.2 kg handheld unit\ndesignation method: Coded laser target painting\norbital platform: Arcturus kinetic bombardment satellite constellation\nimpactor: Tungsten rod, 6.1m x 0.3m, 4,000 kg\nterminal velocity: approximately 11,000 m/s\nimpact yield: Equivalent to approximately 11.5 tons TNT\nstrike delay: 8-12 minutes from designation to impact\nauthorization: Dual — operator biometric + Arcturus command confirmation",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An OSD-1 unit has been reported missing from an Arcturus field team — the orbital platforms are still active and awaiting designation, and whoever has the device could level a city block with a button press and Arcturus authorization.",
+    "Someone used an OSD-1 to destroy a rival corporation's facility — the crater is 30 meters across and Arcturus claims the authorization was legitimate, raising the question of what justifies calling down orbital bombardment on a civilian target."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "heavy",
+    "weapon",
+    "ai",
+    "elf",
+    "control",
+    "power",
+    "pain",
+    "market",
+    "bar",
+    "energy",
+    "tier 5"
+  ]
+}

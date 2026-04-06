@@ -1,0 +1,62 @@
+{
+  "id": "019d6143ab1a74be89320874af6afbfb",
+  "name": "Capillary Disruption Pistol CDP-2 'Bruiser'",
+  "type": "weapon",
+  "aliases": [
+    "Bruiser",
+    "CDP-2",
+    "The Quiet Ugly",
+    "Bloodgun"
+  ],
+  "category": "firearm",
+  "description": "The CDP-2 fires a pressurized micro-bead of piezoelectric gel approximately 4mm in diameter. The bead does not penetrate tissue in any conventional sense — it deforms on impact and releases a precisely calibrated piezoelectric pulse that propagates through soft tissue along the path of least electrical resistance, which in the human body invariably means blood vessels and nerve clusters. The result is widespread capillary rupture throughout the impact zone and a radius of roughly 8–12 centimeters of internal hemorrhaging with no external wound beyond a small contusion. Against unaugmented targets, a single shot to the torso is incapacitating within seconds and fatal within minutes without medical intervention.\n\nHelix Biosystems designed the CDP-2 ostensibly as a 'non-lethal' crowd suppression tool, leaning on the absence of a penetrating wound to argue for a reduced lethality classification in regulatory submissions. This classification was accepted in three jurisdictions and rejected in eleven. In practice, the weapon is lethal at standard charge settings, and operators are trained accordingly. A 'reduced charge' mode exists and does produce genuinely non-lethal effects — severe bruising and disorientation — but the charge selector is small, unlabeled, and requires deliberate manual adjustment that most operators never bother with in the field.\n\nThe CDP-2 is physically unremarkable — it resembles a compact semi-automatic handgun with a slightly oversized barrel and a faint blue tint to the grip housing where the piezoelectric charge pack is seated. It produces almost no sound when fired, just a soft click and a faint static discharge smell that dissipates quickly. Bodies killed with it display no obvious cause of death to a casual observer, which has made it the preferred weapon of professional eliminators across Meridian 88.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Black market",
+  "legality": "Prohibited (licensed 'non-lethal' variant exists in 3 jurisdictions)",
+  "base_technologies": [
+    "Piezoelectric disruption",
+    "Capillary resonance propagation",
+    "Gel-phase projectile dispersion"
+  ],
+  "specifications": "projectile: 4mm piezoelectric gel micro-bead\neffective range: 15m standard / 25m with stabilizer grip\nrate of fire: Semi-automatic\nweight: 0.7 kg loaded\nmagazine capacity: 22 beads per charge pack\ncharge settings: Non-lethal (reduced) / Standard (lethal) / Overcharge (structural tissue failure)\nsound signature: Minimal — sub-60 dB at firing point\nexternal wound profile: Contusion only, no penetrating wound",
+  "tactical_use": "Favored by professional eliminators, corporate intelligence operatives, and anyone who needs a target to die without obvious cause. Standard doctrine is two shots to the torso — one to initiate capillary failure, one to ensure coverage of the hepatic region. In close-quarters environments it is nearly undetectable, and the absence of a penetrating wound means even a thorough pat-down of a corpse may not immediately identify the cause of death. Against cyberware-heavy targets, effectiveness is reduced proportionally to the percentage of organic tissue replaced.",
+  "cultural_context": "The Bruiser has a deeply sinister reputation that Helix Biosystems officially distances itself from while quietly maintaining supply chains to gray-market distributors. Among professional operators, it is considered a 'clean' weapon in the sense that it leaves no mess and no obvious story — but it carries a social stigma even in criminal circles, associated with assassination, betrayal, and deaths that look like accidents. Street-level enforcers who carry it are viewed with suspicion by peers who see it as a coward's weapon. High-end fixers and intelligence professionals have no such reservations.",
+  "known_users": [
+    "Corporate intelligence officers (deniable operations)",
+    "Professional eliminators and contract killers",
+    "Helix Biosystems internal security (unlicensed variant)",
+    "Political operatives in jurisdictions with active assassination cultures"
+  ],
+  "story_hooks": [
+    "A prominent city council member has died of what appears to be a sudden cardiac event. A street medic who examined the body noticed the characteristic capillary rupture pattern of a CDP-2 hit and is now being followed by people who do not want that information to surface.",
+    "A player's contact turns up dead — no wound, no obvious cause. A forensic scan reveals the piezoelectric signature. Someone used a Bruiser, which means someone with access to the black market wanted this person dead quietly. The question is whether it was a professional job or a desperate improvisation.",
+    "Helix Biosystems has lost track of a production run of 300 CDP-2 units that were supposed to be destroyed following a failed regulatory submission. Someone on the inside rerouted the shipment, and Helix is quietly offering significant payment to anyone who can recover the units — or at minimum, confirm they have been destroyed."
+  ],
+  "ammunition_type": [
+    "4mm Piezoelectric Gel Micro-Bead PGM-4",
+    "Street-Loaded Piezoelectric Overcharge Bead PZO-4",
+    "Helix Biosystems Compact Power Cell HB-3"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "gun",
+    "war",
+    "betrayal",
+    "death",
+    "augment",
+    "cyberware",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "medical",
+    "market",
+    "bar",
+    "rain",
+    "train",
+    "desperate",
+    "fire"
+  ]
+}

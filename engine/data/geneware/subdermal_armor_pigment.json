@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a8b17b98a24051058383a1c5",
+  "name": "Subdermal Armor Pigment",
+  "brand_name": "Subdermal",
+  "product_name": "Subdermal Armor Pigment",
+  "type": "geneware",
+  "aliases": [
+    "War Paint",
+    "Battle Skin",
+    "Melanin Shield"
+  ],
+  "category": "defensive",
+  "target_system": "integumentary (impact-resistant pigment layer)",
+  "description": "Introduces an ultra-dense melanin layer beneath the skin that functions as both UV shielding and mild impact resistance. The melanin is structured in layers similar to nacre (mother of pearl), creating a biological composite material that distributes impact force across a wider area. The protection is modest — it reduces bruising, prevents minor lacerations from blunt trauma, and provides SPF 200+ sun protection — but it's invisible and always on. The skin takes on a slightly deeper, richer tone from the additional melanin, which many users find attractive. Crucible Genomics offers the modification with optional patterning — the dense melanin areas can be shaped into designs visible only under specific lighting conditions, creating 'hidden' body art that reveals itself in UV light or under extreme sun exposure.",
+  "source_organism": "Synthetic structured melanin construct, Haliotis rufescens (red abalone, nacre structure genes)",
+  "manufacturer": "Crucible Genomics",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "procedure": "Dermal injection with melanin structuring retroviral carrier, 2 sessions",
+  "expression_time": "3–5 weeks",
+  "reversibility": "Partially reversible with melanin suppression; skin tone changes persist",
+  "side_effects": [
+    "Permanent skin tone darkening",
+    "Slightly reduced skin sensitivity from dense melanin layer",
+    "UV-reactive hidden patterns may reveal themselves at inconvenient times (tanning, certain lighting)",
+    "Rare: melanin overproduction creating visibly dark patches"
+  ],
+  "social_perception": "Subtle and well-regarded. The modification provides real protection without visible change. The richer skin tone is considered attractive by most. The hidden-pattern option is popular among people who want body art that's private until they choose to reveal it.",
+  "story_hooks": [
+    "A murder victim's subdermal armor pigment patterns contain a message visible only under forensic UV examination — they wrote something in their own skin knowing they might die",
+    "A batch of War Paint from a Shelf clinic contains melanin that resonates at a specific electromagnetic frequency, making every recipient detectable by a proprietary scanner"
+  ],
+  "tags": [
+    "defensive",
+    "geneware",
+    "war",
+    "ai",
+    "synthetic",
+    "elf",
+    "clinic",
+    "pain",
+    "dark",
+    "armor",
+    "shelf",
+    "tier 2"
+  ]
+}

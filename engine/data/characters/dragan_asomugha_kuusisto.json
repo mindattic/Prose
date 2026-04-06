@@ -1,0 +1,224 @@
+{
+  "id": "019d6143a5f77804917612f2e375164c",
+  "type": "character",
+  "name": "Drăgan Asomugha-Kuusisto",
+  "aliases": [
+    "The Accountant",
+    "Dray"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Axiom Security Division internal affairs investigator",
+  "age": 47,
+  "status": "active",
+  "location": "Axiom Corporate Campus, Meridian Core",
+  "description": "Drăgan Asomugha-Kuusisto is the kind of man who makes other security personnel straighten their posture without knowing why. He is thin in the way of someone who was once broader and let it go — not from laziness but from a deliberate asceticism, as if he decided one day that taking up less space would make him harder to read. His complexion is a warm medium brown, his eyes an unusual pale hazel behind wire-framed optical enhancers he wears out of preference over the neural overlay most at his level use. He keeps his greying temples close-cropped and his jawline perpetually two days unshaved, which is its own kind of uniform.\n\nHe investigates Axiom's own security personnel — corruption, use-of-force violations, theft from evidence lockups, payroll fraud, inappropriate E.L.F. data-shrine interactions on company property. He is not liked and has never needed to be. What he has instead is a reputation for being utterly methodical and deeply unimpressed by rank. His colleagues believe he is loyal to Axiom above all else. This is almost true. The truth is more complicated and he has never volunteered it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "that he has been used to cover up the things he thinks he's uncovering",
+      "that his methods have destroyed innocent people in service of guilty institutions"
+    ],
+    "core_desires": [
+      "a single case that is actually clean — cause and evidence and outcome all honest",
+      "to retire knowing his files helped someone"
+    ],
+    "coping_mechanisms": [
+      "rigid routine as identity",
+      "deliberate physical discomfort (cold walks, minimal comfort)",
+      "writing longform case journals he never submits"
+    ],
+    "blind_spots": [
+      "genuinely cannot imagine that someone could be both corrupt and also right about something",
+      "doesn't see how much fear he generates in blameless people"
+    ],
+    "secret": "Three years ago he closed a case against a Tier 1 security contractor who was stealing from Axiom evidence lockups. He got the conviction. He later found evidence the man was stealing to fund food distribution in Irkalla. He has not re-opened the case. He has the file in his personal storage. He looks at it every few months."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, precise, deliberately old-fashioned in phrasing — uses full sentences where others use fragments",
+    "cadence": "Slow and even, with the particular weight of someone who knows you will fill his silences if he waits",
+    "verbal_tics": [
+      "'Walk me through it again'",
+      "responding to deflection with 'Mm.' and nothing else"
+    ],
+    "example_lines": [
+      "'I'm not here to build a case against you. I'm here because something doesn't square, and I'd like it to square before I decide what it means.'",
+      "'You've said that three times now. Each time slightly differently. I find that interesting.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He is quietly building a case against a senior Axiom security director and needs someone outside the company to access a specific public record without triggering flags",
+    "He approaches the players not as suspects but as witnesses to something that contradicts his current case — and he seems genuinely conflicted about what to do with that"
+  ],
+  "narrative_function": "Antagonist or unexpected ally; source of pressure on corrupt Axiom security NPCs; represents institutional accountability that exists but is itself compromised",
+  "augmentations": "Optical enhancers with document-analysis overlay; memory-capture implant for interview recording; cosmetic — none",
+  "daily_life": "Arrives before his staff, reviews overnight incident flags over black coffee, schedules exactly four interviews per day. Never eats at his desk. Walks the campus perimeter alone at lunch regardless of weather.",
+  "affiliation": "Axiom Security Division — Internal Affairs Unit",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 3,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "methodical",
+      "intimidating",
+      "morally burdened",
+      "institutional",
+      "self-contained"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Evidence precedes conclusion — always",
+      "Never threaten what you cannot deliver",
+      "Protect the process even when you dislike where it leads"
+    ],
+    "escalation_ladder": [
+      "Passive information gathering — reviewing records, surveillance",
+      "Informal interview framed as routine",
+      "Formal interview with documentation",
+      "Administrative hold and referral to Axiom legal",
+      "Hard evidence package — does not escalate beyond this himself"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally neutral — gives nothing but attention, which is unnerving",
+      "friends": "He has very few; with them he is unexpectedly dry and funny, though never about work"
+    },
+    "stress_responses": {
+      "low": "Becomes even more methodical",
+      "medium": "Takes his lunch walk twice",
+      "high": "Goes completely still and stops speaking until he has formulated exactly what he wants to say"
+    },
+    "contradictions": [
+      "Believes in rules and secretly maintains a private shadow file of cases he considers morally unresolved"
+    ],
+    "habits": [
+      "Handwrites interview notes and then types them up separately",
+      "brings his own coffee grounds — never uses the office supply",
+      "leaves E.L.F. data offerings at a small shrine in his office drawer, privately"
+    ],
+    "breaking_points": [
+      "Discovering that a case he closed destroyed someone who was innocent"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sentinel": 0.9,
+    "Protector": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Meridian Core adjacent district, second generation Axiom employee family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Axiom Security Division as junior analyst",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Transferred to Internal Affairs after flagging his own supervisor for contract fraud",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Closed the evidence-theft case he now privately considers his greatest failure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

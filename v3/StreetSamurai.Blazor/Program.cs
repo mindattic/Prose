@@ -6,10 +6,10 @@ using StreetSamurai.Core.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Serilog — daily rolling log files in engine_data/logs/
+// Configure Serilog — daily rolling log files in engine/logs/
 var settings = new SettingsService();
 var pathProvider = new FileSystemPathProvider(settings);
-var logDir = Path.Combine(pathProvider.DataRoot, "logs");
+var logDir = pathProvider.LogDir;
 Directory.CreateDirectory(logDir);
 
 Log.Logger = new LoggerConfiguration()

@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a55a7f598c561e4a0837764d",
+  "name": "Ringo Corponation R-Cell Type-9 RC-9",
+  "type": "ammunition",
+  "aliases": [
+    "R-Cell",
+    "RC-9",
+    "Ringo cell",
+    "Black cap"
+  ],
+  "category": "energy_cell",
+  "caliber": "N/A — energy cell",
+  "description": "The RC-9 is a modular power cell manufactured by Ringo Corponation, distinguished by its adaptive output management system that automatically configures voltage, amperage, and discharge profile to match whatever weapon platform it is inserted into. Where other manufacturers produce cells optimized for specific weapon types, Ringo designed the RC-9 as a universal cell that negotiates its output parameters with the weapon's power management system upon insertion.\n\nThe adaptive system uses a short handshake protocol — approximately 0.8 seconds after insertion — during which the cell's onboard processor reads the weapon's power requirements and configures its internal switching matrix accordingly. This means an operator can carry RC-9 cells as universal spares across a mixed weapon loadout, eliminating the need to track multiple cell types. The trade-off is that the RC-9's output in any given configuration is approximately 85% as efficient as a purpose-built cell, meaning slightly fewer shots per cell and marginally higher waste heat.\n\nRingo Corponation markets the RC-9 as a logistics solution rather than a performance product, targeting military procurement officers and mercenary outfitters who value supply chain simplification over individual weapon optimization. The strategy has been remarkably successful — the RC-9 is the standard-issue power cell for several national military forces and the default procurement choice for mid-tier mercenary companies that operate diverse weapon inventories.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — unrestricted civilian purchase",
+  "specifications": "weight_per_cell: 220g\ncapacity: 15-50 discharges (platform dependent, ~85% efficiency vs dedicated cells)\noutput_voltage: Auto-configured 6-200V\nadaptive_handshake: 0.8 seconds\nshelf_life: 24 months (solid-state hybrid)\nrecharge: Rechargeable, 300-cycle life, 60-minute standard recharge\noperating_temperature: -15C to 60C",
+  "compatible_weapons": [
+    "Electrostatic Needle Array Rifle ENAR-3 'Porcupine'",
+    "Neural Disruption Pistol NDP-4 'Stutter'",
+    "Subsonic Caseless Bolt Rifle SCBR-1 'Quiet Ledger'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Subharmonic Flechette Launcher SFL-4 'Hornet'"
+  ],
+  "variants": [
+    "RC-9 Standard (universal adaptive, 300-cycle rechargeable)",
+    "RC-9 Field (ruggedized housing, operating range -30C to 75C, 200-cycle life)",
+    "RC-9 High-Density (1.5x capacity, 1.4x weight, 200-cycle life)",
+    "RC-9 Disposable (non-rechargeable, half weight, single discharge cycle, emergency use)"
+  ],
+  "cultural_context": "The RC-9 is the pragmatist's cell — it does nothing exceptionally well but everything adequately, which makes it the most commonly encountered power cell in Meridian 88's weapon ecosystem. Its universal compatibility means it circulates freely across legitimate, gray, and black markets without attracting attention, and its unrestricted civilian purchase status makes it the default power source for operators who want to avoid procurement trails. The cell's black ceramic housing has made 'black cap' the generic slang for any universal power cell, even those from other manufacturers. Among equipment purists, using RC-9 cells instead of dedicated platform cells is seen as a mark of logistical pragmatism over operational excellence — a trade-off that most working operators make without hesitation.",
+  "story_hooks": [
+    "Ringo Corponation has pushed a firmware update to the RC-9's adaptive processor that reportedly improves handshake speed — but operators are reporting that the updated cells refuse to configure for certain weapons platforms, specifically those manufactured by Tessera Corponation, and the timing coincides with a contract dispute between the two corporations.",
+    "A crate of RC-9 cells with unusual serial number prefixes has appeared on the black market — the cells perform normally but their adaptive processor logs every weapon they connect to, creating a usage history that someone is clearly intended to retrieve."
+  ],
+  "tags": [
+    "energycell",
+    "ammunition",
+    "weapon",
+    "gun",
+    "war",
+    "neural",
+    "ai",
+    "elf",
+    "contract",
+    "power",
+    "market",
+    "chase",
+    "energy",
+    "shelf",
+    "tier 2"
+  ]
+}

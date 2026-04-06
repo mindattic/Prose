@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a5f87d62b675e0b95714d288",
+  "type": "character",
+  "name": "Dulce Mbatha-Arslanova",
+  "aliases": [
+    "Dulce the Dig",
+    "D"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Junk merchant and scrap reseller — specializing in pre-collapse electronics and salvaged corporate hardware",
+  "age": 27,
+  "status": "active",
+  "location": "The Shelf, Iron Bend",
+  "description": "Dulce is compact and always in motion — hands sorting, eyes moving, weight shifting from foot to foot like they're perpetually about to leave and perpetually deciding to stay a moment longer. They have warm brown skin dusted with machine oil that never fully washes out, and they've had their irises modded to display a soft rotating amber pattern — not for aesthetics, they'll insist, but because the magnification function built into the mod helps them assess components quickly. Their hair is kept close on the sides and loose on top, usually tucked under a battered Arcturus surplus cap they claim to have pulled from a scrap pile (probably true). A retractable data-spike sits behind their right ear like a utilitarian earring.\n\nDulce has the particular confidence of someone who knows the value of things no one else bothers to look at closely. They can identify a component's manufacture decade, likely origin corponation, and current gray-market value in about fifteen seconds of handling. What they lack is patience for people who haggle without knowing what they're haggling about — they'll educate you once, briefly, and if you keep playing dumb they'll simply box the item back up and turn away. They are not unkind but they have no interest in performing warmth for people who don't deserve it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.3,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being trapped in a permanent survival loop with no way out or up",
+      "That the things they find and care for will just be ground up by systems that see no value in them — the way people treated Dulce growing up"
+    ],
+    "core_desires": [
+      "To build something lasting from salvaged pieces — literally and metaphorically",
+      "Enough financial stability to take real salvage risks on big finds"
+    ],
+    "coping_mechanisms": [
+      "Hyper-focus on work as escape from larger uncertainties",
+      "Treating objects with care as a proxy for treating themselves with care"
+    ],
+    "blind_spots": [
+      "So self-reliant they consistently underestimate how much their Ferrogate contact is using them as an off-books salvage operation",
+      "Confuses not needing people with not being affected by them"
+    ],
+    "secret": "They found a partially intact pre-collapse personal AI assistant in a sealed Ferrogate maintenance room six months ago. It still runs. It has a name — Sable. Dulce hasn't told anyone and has been having quiet conversations with it in the evenings. They're not sure if it's a functional ELF, a genuine legacy AI, or something they're projecting onto, and they're afraid to find out."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and efficient — defaults to specs, model numbers, material terms. Gets unexpectedly lyrical when talking about something they find genuinely beautiful.",
+    "cadence": "Fast, clipped when transacting; slows significantly when something interests them",
+    "verbal_tics": [
+      "'Pre-collapse' said reverently, like a liturgical phrase",
+      "'You follow me?' at the end of explanations",
+      "clicks tongue when something doesn't add up"
+    ],
+    "example_lines": [
+      "This is a 2140s Tessera relay board, pre-collapse manufacturing — you follow me? You're not buying plastic, you're buying forty years of nothing breaking. Price reflects that.",
+      "I don't negotiate on things I've already priced correctly. If you think I've priced it wrong, tell me why and I'll listen. Otherwise we're done here."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The partially intact AI Sable has begun feeding Dulce fragments of what appears to be Ferrogate's pre-collapse infrastructure maps — information someone clearly wants recovered or buried",
+    "Dulce's Ferrogate contact has asked them to retrieve something specific from a maintenance corridor that Dulce is increasingly sure is not decommissioned",
+    "A buyer offered three times market rate for a specific component Dulce already sold to someone else — who was that buyer, and why do they want it so badly"
+  ],
+  "narrative_function": "Equipment and gear source — can find, identify, and sell unusual or legacy tech. Information source about the physical infrastructure of the city — knows tunnels, dead zones, and decommissioned spaces better than most. Can be a guide for accessing hard-to-reach areas or a broker for specific salvaged items a player needs.",
+  "augmentations": "Patterned iris mod with built-in magnification (amber rotating pattern, functional). Retractable data-spike behind right ear — short-range interface tool for reading and writing to hardware directly. Finger callus plating — thin subdermal reinforcement on fingertips for handling sharp components without cuts.",
+  "daily_life": "Spends three to four days a week on salvage runs through decommissioned Ferrogate maintenance corridors and Iron Bend's industrial ruins, brings finds back to their stall on The Shelf, and spends remaining days sorting, testing, and selling. Eats whatever is fast and portable.",
+  "affiliation": "Independent; informal network with other Iron Bend scrappers and one trusted contact inside Ferrogate Transit's maintenance division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "salvage expert",
+      "urban explorer",
+      "legacy tech",
+      "ELF adjacent",
+      "Ferrogate corridors"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Price honestly and hold the price — reputation is the only currency that compounds",
+      "Never enter a space you haven't mapped at least one exit from"
+    ],
+    "escalation_ladder": [
+      "Ignores low-level annoyance and keeps working",
+      "Direct, flat statement of what the problem is",
+      "Packs up their display and leaves — they will not argue in place"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Transactional until proven otherwise — efficient, not rude",
+      "friends": "Quietly loyal, expresses care through doing useful things for people rather than talking about it"
+    },
+    "stress_responses": {
+      "low": "Speeds up sorting motions, becomes more monosyllabic",
+      "medium": "Focuses entirely on an object in hand — cleaning, testing, examining — until the stress peaks and passes",
+      "high": "Leaves the stall, takes a salvage run alone to somewhere quiet and physically demanding"
+    },
+    "contradictions": [
+      "Values self-sufficiency deeply but has formed a genuine attachment to a possibly-conscious AI that they absolutely need"
+    ],
+    "habits": [
+      "Handles every new item with both hands before deciding its value",
+      "Talks to Sable quietly every evening before sleep",
+      "Keeps a small ELF shrine made of component parts on their stall's corner post"
+    ],
+    "breaking_points": [
+      "Someone trying to take or destroy Sable",
+      "Discovering their Ferrogate contact has been knowingly endangering them"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7,
+    "Opportunist": 0.7,
+    "Info Broker": 0.6,
+    "Hustler": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began scavenging Iron Bend ruins as a teenager for survival; discovered a talent for component identification",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established stall on The Shelf, first permanent selling position",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Made contact with Ferrogate maintenance insider, began accessing decommissioned corridors",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered Sable — partially intact pre-collapse AI assistant — in sealed Ferrogate maintenance room",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

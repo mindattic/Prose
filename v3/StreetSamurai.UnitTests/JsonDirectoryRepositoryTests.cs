@@ -6,21 +6,24 @@ namespace StreetSamurai.UnitTests;
 [TestFixture]
 public class JsonDirectoryRepositoryTests
 {
-    private string testDir = "";
+    private string rootDir = "";
+    private string repoDir = "";
     private JsonDirectoryRepository<TestEntity> repo = null!;
 
     [SetUp]
     public void Setup()
     {
-        testDir = Path.Combine(Path.GetTempPath(), $"ss_test_{Guid.NewGuid():N}");
-        Directory.CreateDirectory(testDir);
-        repo = new JsonDirectoryRepository<TestEntity>(testDir, e => e.Name);
+        // Create root/canon/entities structure so archive goes to root/archives/entities
+        rootDir = Path.Combine(Path.GetTempPath(), $"ss_test_{Guid.NewGuid():N}");
+        repoDir = Path.Combine(rootDir, "canon", "entities");
+        Directory.CreateDirectory(repoDir);
+        repo = new JsonDirectoryRepository<TestEntity>(repoDir, e => e.Name);
     }
 
     [TearDown]
     public void Cleanup()
     {
-        if (Directory.Exists(testDir)) Directory.Delete(testDir, true);
+        if (Directory.Exists(rootDir)) Directory.Delete(rootDir, true);
     }
 
     [Test]
@@ -43,14 +46,14 @@ public class JsonDirectoryRepositoryTests
     public void Save_CreatesFileWithSlugifiedName()
     {
         repo.Save(new TestEntity { Name = "Hello World" });
-        Assert.That(File.Exists(Path.Combine(testDir, "hello_world.json")));
+        Assert.That(File.Exists(Path.Combine(repoDir, "hello_world.json")));
     }
 
     [Test]
     public void Save_SpecialChars_CreatesValidSlug()
     {
         repo.Save(new TestEntity { Name = "Dae-jung Seo (The Old Man)" });
-        Assert.That(File.Exists(Path.Combine(testDir, "dae_jung_seo_the_old_man.json")));
+        Assert.That(File.Exists(Path.Combine(repoDir, "dae_jung_seo_the_old_man.json")));
     }
 
     [Test]
@@ -90,20 +93,94 @@ public class JsonDirectoryRepositoryTests
     }
 
     [Test]
-    public void Delete_RemovesFile()
+    public void Delete_ArchivesFile()
     {
         repo.Save(new TestEntity { Name = "Kyle" });
         Assert.That(repo.GetAll(), Has.Count.EqualTo(1));
 
         repo.Delete("Kyle");
         repo.Reload();
+
+        // File is gone from active repo
         Assert.That(repo.GetAll(), Is.Empty);
+        Assert.That(File.Exists(Path.Combine(repoDir, "kyle.json")), Is.False);
+
+        // File exists in archives
+        var archivePath = Path.Combine(rootDir, "canon", "archives", "entities", "kyle.json");
+        Assert.That(File.Exists(archivePath), Is.True);
+    }
+
+    [Test]
+    public void Delete_ArchivePreservesContent()
+    {
+        repo.Save(new TestEntity { Name = "Sable", Value = 77 });
+        repo.Delete("Sable");
+
+        var archivePath = Path.Combine(rootDir, "canon", "archives", "entities", "sable.json");
+        var json = File.ReadAllText(archivePath);
+        Assert.That(json, Does.Contain("\"name\": \"Sable\""));
+        Assert.That(json, Does.Contain("\"value\": 77"));
     }
 
     [Test]
     public void Delete_NonExistent_DoesNotThrow()
     {
         Assert.DoesNotThrow(() => repo.Delete("nobody"));
+    }
+
+    [Test]
+    public void Archive_And_Restore_RoundTrip()
+    {
+        // Save, archive, then manually restore by moving file back
+        repo.Save(new TestEntity { Name = "Kyle", Value = 42 });
+        repo.Delete("Kyle");
+        repo.Reload();
+        Assert.That(repo.GetAll(), Is.Empty);
+
+        // Restore: move from archives back to canon
+        var archivePath = Path.Combine(rootDir, "canon", "archives", "entities", "kyle.json");
+        var canonPath = Path.Combine(repoDir, "kyle.json");
+        File.Move(archivePath, canonPath);
+        repo.Reload();
+
+        var all = repo.GetAll();
+        Assert.That(all, Has.Count.EqualTo(1));
+        Assert.That(all[0].Name, Is.EqualTo("Kyle"));
+        Assert.That(all[0].Value, Is.EqualTo(42));
+    }
+
+    [Test]
+    public void Delete_MultipleItems_ArchivesSeparately()
+    {
+        repo.Save(new TestEntity { Name = "A", Value = 1 });
+        repo.Save(new TestEntity { Name = "B", Value = 2 });
+        repo.Save(new TestEntity { Name = "C", Value = 3 });
+
+        repo.Delete("B");
+        repo.Reload();
+
+        Assert.That(repo.GetAll(), Has.Count.EqualTo(2));
+        Assert.That(File.Exists(Path.Combine(rootDir, "canon", "archives", "entities", "b.json")), Is.True);
+    }
+
+    [Test]
+    public void Delete_OverwritesPreviousArchive()
+    {
+        // Archive, restore, modify, archive again — should overwrite
+        repo.Save(new TestEntity { Name = "Kyle", Value = 1 });
+        repo.Delete("Kyle");
+
+        // Restore
+        var archivePath = Path.Combine(rootDir, "canon", "archives", "entities", "kyle.json");
+        File.Move(archivePath, Path.Combine(repoDir, "kyle.json"));
+        repo.Reload();
+
+        // Modify and archive again
+        repo.Save(new TestEntity { Name = "Kyle", Value = 99 });
+        repo.Delete("Kyle");
+
+        var json = File.ReadAllText(archivePath);
+        Assert.That(json, Does.Contain("\"value\": 99"));
     }
 
     [Test]
@@ -130,7 +207,7 @@ public class JsonDirectoryRepositoryTests
     [Test]
     public void MigrateFromArrayFile_SplitsIntoIndividualFiles()
     {
-        var arrayFile = Path.Combine(testDir, "legacy.json");
+        var arrayFile = Path.Combine(repoDir, "legacy.json");
         File.WriteAllText(arrayFile, """[{"name":"A","value":1},{"name":"B","value":2}]""");
 
         var count = repo.MigrateFromArrayFile(arrayFile);
@@ -160,7 +237,7 @@ public class JsonDirectoryRepositoryTests
         Assert.That(first, Has.Count.EqualTo(1));
 
         // Externally add a file
-        File.WriteAllText(Path.Combine(testDir, "b.json"), """{"name":"B","value":0}""");
+        File.WriteAllText(Path.Combine(repoDir, "b.json"), """{"name":"B","value":0}""");
         // Cache still has 1
         Assert.That(repo.GetAll(), Has.Count.EqualTo(1));
 

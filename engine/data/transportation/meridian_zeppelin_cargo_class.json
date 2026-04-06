@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa6a75068bc4132a021fc30c",
+  "name": "Meridian Zeppelin — Cargo Class",
+  "type": "transportation",
+  "aliases": [
+    "Cargo Zep",
+    "Sky Barge",
+    "The Whale"
+  ],
+  "category": "commercial_air",
+  "manufacturer": "Ferrogate Transit (Aerostat Division)",
+  "description": "The return of the airship. Ferrogate's cargo zeppelins cruise above the city at 60 km/h, carrying containers that would take a convoy of trucks to move on the ground. They're slow, majestic, and economical — helium lift does most of the work, and the electric propulsion just provides direction. Watching a cargo zeppelin drift through the industrial district skyline at sunset is one of the genuinely beautiful sights in Meridian 88. The crews who work them are a breed apart — sky sailors in a city of ground-crawlers.",
+  "propulsion": "Helium lift, electric vectored propulsion",
+  "speed": "60 km/h cruising",
+  "capacity": "50,000 kg payload",
+  "range": "2,000 km",
+  "tier_availability": "Commercial airspace",
+  "cost": "Φ2,000,000 per vessel. Cargo rates: Φ5-15 per kg.",
+  "autonomy": "Human crew (8-12) with AI navigation assist",
+  "armament": "None standard. Point defense systems on high-value routes.",
+  "common_usage": "Bulk cargo transport, heavy equipment delivery, inter-city logistics.",
+  "story_hooks": [
+    "A cargo zeppelin crew discovers a stowaway who has been living in the cargo bay for weeks — they came from somewhere the zeppelin has never been",
+    "A zeppelin goes dark over the lake and drifts for three hours before the crew comes back online with no memory of what happened"
+  ],
+  "tags": [
+    "commercialair",
+    "transportation",
+    "memory",
+    "ai",
+    "bar",
+    "dark",
+    "airship",
+    "zeppelin",
+    "lake"
+  ]
+}

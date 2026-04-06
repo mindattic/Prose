@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a62077d2b6918e90d0cf57c7",
+  "type": "character",
+  "name": "Hadiya Akerlund-Mensah-Bonsu",
+  "aliases": [
+    "Lockjaw",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "High-speed vehicle operations specialist — wheelman",
+  "age": 45,
+  "status": "active",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "description": "Hadiya Akerlund-Mensah-Bonsu is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a wheelman out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Hadiya Akerlund-Mensah-Bonsu describe him as a precision instrument — point him at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.89,
+      "ideal": 1,
+      "id": 0.9,
+      "shadow": 0.89,
+      "mask": 0.11,
+      "ghost": 0.68
+    },
+    "core_fears": [
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "That they're fundamentally alone and connection is just a vulnerability"
+    ],
+    "core_desires": [
+      "Control — over their body, their schedule, their future",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Stability — a place to sleep that's the same place two nights running"
+    ],
+    "coping_mechanisms": [
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
+    ],
+    "secret": "Hadiya Akerlund-Mensah-Bonsu has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Swears in three languages, often in the same sentence",
+      "Uses old pre-collapse slang that nobody else remembers"
+    ],
+    "example_lines": [
+      "\"Get in, sit down, hold on. Questions can wait until we're not being shot at.\"",
+      "\"This vehicle has been modified for speed, armor, and my personal comfort. Two of those help you.\"",
+      "\"I know every street in this district the way you know your own face.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Hadiya Akerlund-Mensah-Bonsu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A high-paying contract turns out to target someone Hadiya Akerlund-Mensah-Bonsu owes a personal debt to",
+    "Someone is impersonating Hadiya Akerlund-Mensah-Bonsu on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "Hadiya Akerlund-Mensah-Bonsu functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters. Subdermal weapon mount — pop-out blade in each forearm",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Freelance — multi-district operator",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 8
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 9
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 5
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.13,
+      "caution": 0.2,
+      "loyalty": 0.93,
+      "greed": 0.81,
+      "empathy": 0.95
+    },
+    "drives": [
+      "reputation",
+      "survival",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 6,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "strategic thinking under pressure"
+    ],
+    "weaknesses": [
+      "chronic insomnia affecting long-term performance",
+      "trust issues that limit crew effectiveness"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "wheelman",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always verifies target identity independently before lethal contracts",
+      "Never discusses active contracts with anyone not directly involved",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+    ],
+    "breaking_points": [
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Retractable monofilament whip in left forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal weapon mount",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7,
+    "Opportunist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

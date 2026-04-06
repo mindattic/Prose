@@ -1,0 +1,112 @@
+{
+  "id": "019d6143a93b7be7931cd88632d629f5",
+  "type": "place",
+  "name": "The Delray Sacrifice Zone",
+  "aliases": [
+    "Delray",
+    "The Sacrifice",
+    "Dead Zone",
+    "Marathon Country"
+  ],
+  "description": "Delray has been dying for a century and nobody has had the decency to let it finish. The neighborhood sits at the confluence of the Detroit River and the River Rouge, wedged between the Marathon petroleum refinery (now Ouroboros Energy's Great Lakes Processing Hub), the Rouge industrial complex, and the international freight crossing to Canada. In the 20th century, Delray was a working-class immigrant neighborhood — Hungarian, then Mexican, then whoever was willing to live next to a refinery. In the 22nd century, the human population has dwindled to approximately 1,100 residents who are too rooted, too poor, or too sick to leave, occupying a landscape so contaminated that the soil itself is classified as industrial waste.\n\nOuroboros Energy's Great Lakes Processing Hub dominates the district — a chemical refinery and energy processing complex that no longer refines petroleum but converts industrial waste streams, biomass, and recycled materials into the synthetic fuel and chemical feedstocks that the GLM's manufacturing sector requires. The process is cleaner than oil refining was. The residual contamination from a century of petroleum processing is not clean. The ground is saturated with heavy metals, volatile organic compounds, and substances that environmental scientists identify by number rather than name because naming them would require acknowledging what they do to human tissue. Ouroboros maintains an air quality monitoring station in the district. The station's readings are technically within legal limits. The legal limits were set by a panel that included three Ouroboros consultants.\n\nThe 1,100 remaining residents live in what environmental justice researchers call a sacrifice zone — a geographic area where the cost of industrial activity is borne by the people who can least afford to leave. They are predominantly elderly. They are predominantly sick. The cancer cluster data is robust enough for an epidemiological study but not for a lawsuit, because Ouroboros's sovereign industrial charter exempts the Processing Hub from external environmental litigation. The residents have a community center, a volunteer health clinic, and a priest who holds services in a building where the paint peels in patterns that trace the groundwater contamination plume. They also have something the corponations didn't expect: a comprehensive archive of environmental monitoring data going back to the 1970s, maintained by three generations of residents who understood that the only defense against institutional denial is institutional documentation.",
+  "atmosphere": {
+    "sights": [
+      "The Ouroboros Processing Hub — pipes, tanks, stacks, and vapor plumes dominating the skyline like a mechanical forest",
+      "Residential blocks where half the houses are occupied and the other half are slowly returning to the contaminated earth",
+      "Soil discoloration visible from ground level — patches of ground that are wrong colors for reasons that require chemistry to explain",
+      "The international freight crossing — autonomous cargo vehicles passing through the district without stopping, their routing algorithms having long since deprioritized Delray's existence",
+      "The community center's environmental monitoring station — a resident-maintained sensor array that contradicts the official readings"
+    ],
+    "sounds": [
+      "The Processing Hub — a continuous industrial roar that the residents have absorbed into their definition of background noise",
+      "Freight crossing traffic — heavy autonomous vehicles shaking the remaining houses as they pass",
+      "The health clinic — coughing, medical equipment, the sounds of chronic illness managed with inadequate resources",
+      "Wind through empty houses — the particular sound of structures decomposing at the pace of residential abandonment",
+      "The river — audible from anywhere in Delray, carrying the chemical signature of everything upstream"
+    ],
+    "smells": [
+      "Chemical processing — the Hub's output is filtered but the smell permeates, a petroleum-derivative scent that coats the tongue",
+      "Contaminated soil — a metallic, organic wrongness that is strongest after rain when the ground releases stored compounds",
+      "The river at Delray — industrial, biological, and chemical notes combining into an olfactory experience that environmental scientists call 'mixed-source anthropogenic'"
+    ],
+    "feel": "Poisoned and persistent. Delray feels like a place that has been told to die and refused, not out of hope but out of the particular stubbornness of people who know that leaving would mean admitting the thing that was done to them was acceptable. The contamination is real. The illness is real. The community's refusal to disappear is the most aggressive act of resistance in Detroit, and nobody frames it that way because the people doing it are old and sick and poor.",
+    "tags": []
+  },
+  "demographics": "Approximately 1,100 residents. Predominantly elderly (median age: 67), predominantly Hispanic and Black, predominantly affected by chronic respiratory, neurological, and oncological conditions linked to environmental contamination. The population decreases by approximately 60 people per year. No one is moving in.",
+  "economy": "Ouroboros Energy's Processing Hub: Φ180 billion annual output. The residential community's economy is effectively zero — the remaining residents survive on disability payments, community aid, and the stubborn math of owning homes that are worth nothing on the market but cost nothing to live in.",
+  "power_structure": "Ouroboros Energy holds sovereign industrial authority. The Delray Community Association, led by Father Miguel Santos and the three-member environmental archive committee, has no formal power but maintains the documentation that Ouroboros spends significant legal resources trying to discredit. The dynamic is David and Goliath, except David is 67 years old and has stage 3 lymphoma.",
+  "dangers": [
+    "Environmental contamination — the soil, water, and air carry toxic loads that affect anyone who spends time in the district",
+    "The Processing Hub — industrial accidents are infrequent but catastrophic when they occur, and the blast radius includes the residential blocks",
+    "Health deterioration — extended exposure to Delray's environment causes cumulative biological damage",
+    "Corporate legal aggression — Ouroboros's legal team actively works to discredit the community archive and its maintainers",
+    "Psychological toll — living in a sacrifice zone requires a particular kind of endurance that has consequences"
+  ],
+  "opportunities": [
+    "The environmental archive — 50 years of monitoring data that documents corporate contamination across Detroit's entire industrial corridor",
+    "Father Santos's network — the priest has connections to environmental justice organizations, legal advocates, and media contacts across the GLM",
+    "The Processing Hub's proximity — the industrial complex's perimeter security is designed for corporate espionage, not for the elderly neighbors who have been watching its operations for decades",
+    "Moral leverage — Delray's story is powerful enough to damage any corponation associated with it, if the story reaches the right audience"
+  ],
+  "story_hooks": [
+    "The environmental archive contains data from the 2050s that shows Ouroboros deliberately routed contaminated groundwater toward the residential blocks to avoid processing costs. The data is authentic. Father Santos is dying. The archive needs a custodian who can use it before it becomes a historical curiosity.",
+    "Ouroboros is planning to expand the Processing Hub into the residential blocks. The relocation offer is generous. The residents are split. Father Santos believes the expansion would also destroy the archive, which is stored in the community center's basement — and he believes that's the point.",
+    "A Delray resident's grandchild — who left the district twenty years ago and now works in corporate pharmaceuticals — returns with a treatment protocol that could help the community's health conditions. The treatment is Ouroboros-patented. Using it would require accepting Ouroboros's medical sovereignty."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Rouge Furnace",
+      "Mexicantown Libre",
+      "Geartown"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "The 1,100 remaining residents",
+    "Ouroboros Energy industrial workers who commute in",
+    "Environmental justice researchers who study the archive",
+    "Nobody else — Delray is not a destination, it's a consequence"
+  ],
+  "notable_locations": [
+    {
+      "name": "Ouroboros Great Lakes Processing Hub",
+      "description": "The chemical refinery that defines the district — Φ180 billion in annual output, decades of contamination in the ground beneath it",
+      "tags": []
+    },
+    {
+      "name": "The Community Archive",
+      "description": "Three generations of environmental monitoring data stored in the community center's basement — the most dangerous collection of documents in Detroit",
+      "tags": []
+    },
+    {
+      "name": "Saint Andrew's Church",
+      "description": "Father Santos's church — where services are held, community meetings convene, and the paint peels in patterns that trace the contamination plume",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.2866,
+    "lng": -83.1072,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "power",
+    "medical",
+    "clinic",
+    "pain",
+    "market",
+    "moral",
+    "justice",
+    "sacrifice",
+    "energy",
+    "water",
+    "lake"
+  ]
+}

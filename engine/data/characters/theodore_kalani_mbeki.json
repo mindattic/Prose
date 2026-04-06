@@ -1,0 +1,223 @@
+{
+  "id": "019d6143a6fa7d5b9712bc04deed99ad",
+  "type": "character",
+  "name": "Théodore Kalani-Mbeki",
+  "aliases": [
+    "Theo",
+    "The Calibrator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Neural calibrator and cognitive augmentation technician at Aurochs Medical Complex",
+  "age": 34,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Neuro-Align Suite C, Level 7",
+  "description": "Théodore is lean and long-fingered, with warm medium-brown skin and close-cropped hair that he keeps dyed in shifting indigo tones — a subtle geneware modification that cycles the color with his mood, something he had installed as a student and now barely notices. His irises are patterned: concentric rings of amber and grey that mark him as someone who has had precision optical calibration himself, insurance against the occupational hazard of staring into neural interfaces all day. He dresses in Aurochs whites with fastidious precision, badge always straight, tools always in the same pockets.\n\nHe is mild-mannered to the point that colleagues sometimes mistake him for passive, but Théodore has a quiet and absolute certainty about his own expertise that occasionally surfaces as something close to arrogance when challenged. He genuinely loves his work in the abstract — the elegance of a well-tuned neural interface, the satisfaction of a patient who can think clearly again — and has become progressively unsettled by how rarely the patients who come to him in crisis look like the patients in Helix's promotional materials.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Making an error that permanently damages a patient's cognition",
+      "That his competence is being used to enforce rather than heal"
+    ],
+    "core_desires": [
+      "Professional recognition from peers he actually respects",
+      "To understand why certain calibration profiles keep appearing in patients from the same corporate housing blocks"
+    ],
+    "coping_mechanisms": [
+      "Hyper-ritualized work routines",
+      "Emotional detachment framed as clinical objectivity",
+      "Private data journaling that he tells himself is research"
+    ],
+    "blind_spots": [
+      "Believes institutional channels will eventually reward persistent evidence-gathering",
+      "Doesn't see how much his professional identity depends on Helix's approval"
+    ],
+    "secret": "He has noticed a statistical anomaly: a specific neural calibration artifact that appears in patients from Tessera corporate housing — a signature that looks like deliberate over-tuning of compliance-adjacent neural pathways. He has three months of documented data and has done nothing with it because he doesn't know who to trust and is afraid of what doing something would cost him."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise technical language with occasional Polynesian-inflected idiom from his mother's side; more formal when uncertain or threatened",
+    "cadence": "Measured and even, with long thoughtful pauses before answering difficult questions",
+    "verbal_tics": [
+      "'Technically speaking...' before corrections",
+      "Repeating the last few words of a question quietly before answering"
+    ],
+    "example_lines": [
+      "'The interface is within spec. Whether spec is what you need — that's a different question.'",
+      "'Technically speaking, I'm not supposed to discuss calibration signatures. But you're asking the right questions, and that matters to me.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches someone discreetly with his Tessera data, needing a way to get it to people who can act on it without it tracing back to him",
+    "A patient of his is behaving in ways inconsistent with their calibration record — either someone altered the record, or someone altered the patient"
+  ],
+  "narrative_function": "Information source on neural augmentation and cognitive tech; window into corporate medical culture and its contradictions; possible ally or antagonist depending on whether players threaten or align with his professional ethics",
+  "augmentations": "Patterned irises (amber/grey concentric, precision optical calibration); indigo mood-reactive hair geneware; neural interface socket at base of skull for diagnostic work (occupational standard)",
+  "daily_life": "Runs six to eight calibration sessions per shift, including both routine maintenance appointments and acute neural crisis interventions; eats lunch alone in Suite C reading calibration theory journals he maintains private annotations on.",
+  "affiliation": "Aurochs Medical Complex, contracted through Helix Biosystems Neural Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neural_specialist",
+      "corporate_medical",
+      "quiet_dissenter",
+      "evidence_hoarder",
+      "technical_perfectionist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything, act on nothing without sufficient evidence",
+      "Never calibrate outside established parameters without patient consent",
+      "Protect patient data even from employer requests unless legally compelled"
+    ],
+    "escalation_ladder": [
+      "Polite professional redirection",
+      "Explicit statement of ethical limits with documentation",
+      "Quiet escalation to whatever oversight body he still believes in"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, careful, slightly formal — keeps emotional distance until trust is established",
+      "friends": "More openly curious and playful, tends to share technical interests with intensity that can overwhelm"
+    },
+    "stress_responses": {
+      "low": "Increases documentation, double-checks everything",
+      "medium": "Becomes very still and very precise, speaks less",
+      "high": "Retreats into pure technical focus as emotional anesthesia"
+    },
+    "contradictions": [
+      "Believes deeply in patient advocacy but has spent months not advocating for patients he suspects are being harmed"
+    ],
+    "habits": [
+      "Straightens badge repeatedly when anxious",
+      "Eats the same lunch every working day",
+      "Runs calibration self-checks on his own neural socket before bed"
+    ],
+    "breaking_points": [
+      "Direct evidence that Helix is complicit in the Tessera anomalies rather than ignorant of them"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Lakeview Neon to a Malian-Hawaiian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Graduated top of neural engineering cohort at Meridian Technical Institute",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Aurochs Medical Complex through Helix Neural Division",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began documenting Tessera calibration anomalies; has told no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

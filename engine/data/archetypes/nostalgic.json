@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5827f82836a8f8f8cd1b452",
+  "name": "Nostalgic",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Lives in the past, where things were better",
+  "behavioral_signature": "Compares everything to how it used to be",
+  "under_stress": "The past becomes the only safe place",
+  "at_rest": "Telling old stories, keeping old things",
+  "will_always": [
+    "remember the past"
+  ],
+  "will_never": [
+    "let go of what was"
+  ],
+  "unless": [
+    "nostalgia blinds them to present needs"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Griever",
+      "threshold": 0.75,
+      "context": "attachment to past"
+    },
+    {
+      "archetype": "Wound Carrier",
+      "threshold": 0.65,
+      "context": "carrying history"
+    }
+  ],
+  "opposite_of": [
+    "Visionary"
+  ],
+  "tags": [
+    "backward",
+    "sentimental"
+  ]
+}

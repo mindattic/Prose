@@ -1,0 +1,44 @@
+{
+  "id": "019d6143ab167931b2190ebf3ab5476d",
+  "name": "Axiom Systems Cognitive Grenade CG-1 'Brainstorm'",
+  "type": "weapon",
+  "aliases": [
+    "Brainstorm",
+    "CG-1",
+    "Think Bomb",
+    "Mind Wipe"
+  ],
+  "category": "electromagnetic",
+  "description": "A throwable EMP grenade specifically calibrated to disrupt neural interface frequencies within a 10-meter radius. Unlike conventional EMP grenades that affect all electronics indiscriminately, the CG-1 uses a tuned resonance frequency that primarily affects neural implant architectures, causing a cascade of sensory hallucinations, memory buffer corruption, and temporary loss of executive function in augmented targets. Unaugmented individuals experience only mild disorientation. Axiom developed it for counter-intrusion scenarios where augmented attackers need to be neutralized without damaging facility electronics.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — authorized facility defense only",
+  "base_technologies": [
+    "Tuned neural resonance EMP",
+    "Selective electronic disruption calibration",
+    "Neural interface cascade induction"
+  ],
+  "specifications": "effect radius: 10 meters\nfrequency: Tuned neural interface resonance\neffect on augmented targets: Hallucination, memory corruption, executive dysfunction for 30-90 seconds\neffect on unaugmented targets: Mild disorientation for 5-10 seconds\nweight: 0.25 kg\nfuse: 2-second delay after pin pull\npower source: Single-use capacitor discharge",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "CG-1 grenades are being used in muggings targeting augmented individuals — victims wake up with corrupted memories and missing cyberware, unable to identify their attackers.",
+    "A modified CG-1 has been developed that permanently corrupts a specific memory address in Axiom neural interfaces — it erases the target's ability to recognize a particular face."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "electromagnetic",
+    "war",
+    "loss",
+    "memory",
+    "augment",
+    "cyberware",
+    "neural",
+    "ai",
+    "power",
+    "rain",
+    "storm",
+    "tier 4"
+  ]
+}

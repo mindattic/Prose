@@ -1,0 +1,220 @@
+{
+  "id": "019d6143a5b17008a4a3b72b0607a0d6",
+  "type": "character",
+  "name": "Ambrosia Kiptoo-Čavić",
+  "aliases": [
+    "Brosie",
+    "The Cartographer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Neural calibrator at Aurochs Medical Complex, specializing in augmentation integration and ghost-signal disorders",
+  "age": 34,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Neuro-Integration Ward, Sub-Level 3",
+  "description": "Ambrosia is slight and precise, with warm brown skin and natural hair kept in a high, unruly cloud that she occasionally forgets to fix after long shifts. Her irises have been modded in a slow spiral pattern of amber and deep violet — a choice she made at nineteen that she now finds embarrassing but refuses to reverse on principle. She wears her Aurochs ID badge clipped to her lapel at all times, even off-shift, as though she is afraid of forgetting who she is supposed to be in this building.\n\nHer work is the mapping of neural integration errors — the place where human nervous tissue meets augmentation hardware and occasionally refuses to agree. She is brilliant at it, producing calibration maps of patients' neural architectures that her colleagues call 'the cartography' because they look less like medical charts and more like hand-drawn city plans. She is also quietly terrified by her work in a way she has never articulated: every calibration map shows her how thin the border is between a person and their modifications, and some days she cannot decide which side of that border the person actually lives on.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That the line between self and augmentation is an illusion she has already crossed without noticing",
+      "Being seen as merely competent rather than exceptional"
+    ],
+    "core_desires": [
+      "To understand neural integration well enough to prevent ghost-signal disorder entirely",
+      "To be recognized as the author of her own work rather than a footnote in Helix's research portfolio"
+    ],
+    "coping_mechanisms": [
+      "Over-documentation — she writes everything down, as if records make experience more real",
+      "Intense focus on the next technical problem as a way of not sitting with larger uncertainties"
+    ],
+    "blind_spots": [
+      "Cannot see how much the Aurochs/Helix institutional structure limits what questions she is even allowed to ask",
+      "Assumes her patients' subjective accounts of their augmentation experience are less reliable than her calibration data"
+    ],
+    "secret": "Three months ago she completed a calibration map for a patient whose neural architecture suggested they had a second, dormant augmentation interface — one that was not on any medical record. She filed the chart without flagging it, and has been returning to that file every few days since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise at work, becomes strangely lyrical when explaining her calibration maps — she talks about neural space like geography",
+    "cadence": "Quick, slightly ahead of herself, will restart a sentence if it comes out less precise than she intended",
+    "verbal_tics": [
+      "'Here's the thing—' (before any explanation she finds genuinely interesting)",
+      "Taps her fingertips against her thigh when thinking"
+    ],
+    "example_lines": [
+      "'Here's the thing about ghost-signal disorder — it's not that the hardware is lying to the brain. It's that the brain has started believing the hardware more than it believes itself. That's a cartography problem.'",
+      "'I can tell you exactly where the integration failed. I cannot tell you what it felt like. That part's yours.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The patient with the undocumented secondary interface has stopped coming to follow-up appointments, and Ambrosia's attempts to reach them have returned a disconnected signal",
+    "A Helix Biosystems researcher has contacted her about 'co-authoring' a paper based heavily on her unpublished calibration methodology — the offer comes with a significant payment and a veiled threat"
+  ],
+  "narrative_function": "Information source on augmentation black markets (she sees what bad chrome does to bodies), potential ally for characters experiencing neural augmentation problems, window into the corporate medical world's ethical compromises",
+  "augmentations": "Patterned spiral irises (cosmetic, amber/violet); neural interface port at the base of her skull for direct calibration instrument connection (standard medical professional grade); subdermal haptic feedback layer in fingertips for fine augmentation work",
+  "daily_life": "Arrives at Sub-Level 3 at 0630, spends mornings in calibration sessions with patients experiencing augmentation integration failure, afternoons writing case reports and occasionally arguing with the Helix research liaison about publication credit, evenings either in the staff canteen or walking the Aurochs roof garden alone.",
+  "affiliation": "Aurochs Medical Complex (Tier 3 staff contract); academic affiliation with Helix Biosystems research division (publication-only, non-exclusive)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neural_calibration",
+      "augmentation_specialist",
+      "corporate_medical",
+      "cartographer",
+      "suppressed_whistleblower"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything before acting on it",
+      "Do not share patient chart anomalies with the Helix liaison under any circumstances",
+      "Maintain professional distance in calibration sessions — intimacy clouds the data"
+    ],
+    "escalation_ladder": [
+      "Polite deflection",
+      "Technical objection backed by documentation",
+      "Formal complaint through Aurochs HR channels — which she knows rarely works but believes in anyway"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, asks clarifying questions, slightly uncomfortable with small talk",
+      "friends": "Surprisingly funny, prone to absurdist observations about her work, fiercely loyal"
+    },
+    "stress_responses": {
+      "low": "Talks faster, produces more documentation",
+      "medium": "Goes very quiet, retreats into the calibration maps",
+      "high": "Dissociates briefly into pure technical focus, becomes blunt to the point of seeming cold"
+    },
+    "contradictions": [
+      "Believes absolutely in patient-centered care but has suppressed a significant finding because she was frightened by what it implied"
+    ],
+    "habits": [
+      "Leaves her calibration instruments in the same precise arrangement every evening before leaving the ward",
+      "Buys the same meal from the staff canteen four days out of five — a creature of routine who would deny being one"
+    ],
+    "breaking_points": [
+      "Someone taking credit for her methodology in print — she has rehearsed exactly what she would say and do, and it is not professional"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Calumet Rise to a Kenyan-Bosnian father and Colombian-Kikuyu mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Graduated neural sciences program, began junior calibration technician role at Aurochs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to senior neural calibrator, assigned to neuro-integration ward",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered undocumented secondary interface in patient chart; did not report it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

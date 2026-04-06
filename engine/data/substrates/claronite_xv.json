@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a9d77e0588bc950ddecd3884",
+  "name": "Claronite-XV",
+  "brand_name": "Claronite",
+  "product_name": "Claronite-XV",
+  "type": "substrate",
+  "aliases": [
+    "XV glass",
+    "hard-clear",
+    "diamond window"
+  ],
+  "category": "ceramic",
+  "description": "A transparent polycrystalline alumina-spinel ceramic manufactured via quantum-assisted hot isostatic pressing, achieving optical clarity comparable to borosilicate glass while exceeding diamond hardness on the Vickers scale. The quantum sintering process eliminates grain boundary scattering, producing a fully dense, pore-free matrix with near-zero birefringence. Originally developed for orbital observation domes, it has since become the prestige standard for armored visors and high-security glazing.",
+  "properties": [
+    "hardness_exceeds_diamond",
+    "optical_clarity_92pct_transmission",
+    "high_compressive_strength",
+    "thermal_shock_resistant",
+    "scratch_resistant",
+    "UV_stable",
+    "low_birefringence"
+  ],
+  "developers": [
+    "Apex Nanofabrication",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "armored combat visors",
+    "high-security facility glazing",
+    "orbital observation ports",
+    "sniper scope lenses",
+    "executive vehicle windscreens",
+    "augment ocular covers"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 4,200 per kg",
+  "story_hooks": [
+    "A Tier 1 fixer obtains a cracked Claronite-XV visor panel — even damaged, it's worth a year's wages, and multiple parties want it back.",
+    "A counterfeit Claronite-XV batch has been circulating in Tier 2 markets; it looks identical but shatters under ballistic impact, and someone is already dead.",
+    "An Apex Nanofabrication technician has discovered how to produce Claronite-XV with a secondary quantum sintering flaw that makes it selectively opaque to specific surveillance frequencies — corporate espionage or liberation tool?"
+  ],
+  "tags": [
+    "ceramic",
+    "substrate",
+    "combat",
+    "sniper",
+    "augment",
+    "ai",
+    "corporate",
+    "surveillance",
+    "market",
+    "rain",
+    "vehicle",
+    "armor",
+    "tier 3",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a69d7cce99c58c195c0b3a1a",
+  "type": "character",
+  "name": "Pita Nwosu-Aguilera",
+  "aliases": [
+    "Pete",
+    "License Pete"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Checkpoint Operator, Ferrogate Transit Security",
+  "age": 26,
+  "status": "active",
+  "location": "Grand Crossing Gate, Ferrogate Transit Authority Checkpoint Delta-9",
+  "description": "Pita is compact and quick-eyed, their Samoan-Igbo features broad and expressive beneath the flat brim of a Ferrogate Transit Security cap they've decorated with three small enamel pins of E.L.F.s they consider their personal patrons. Their hair is natural and enormous, pulled back for duty hours into a puff that still manages to escape its tie by midday. They have a single cosmetic mod — bioluminescent freckles across the bridge of their nose and cheeks that glow a soft seafoam green under stress or excitement, which makes them an impractical but endearing liar. Their uniform is always pressed but their boots are always muddy because they cut across the maintenance tracks to get to their post faster.\n\nPita is the kind of person who makes boring jobs interesting by caring too much. They have opinions about every person who comes through Delta-9 — the regulars get remembered by name, the oddities get catalogued in a battered physical notebook they're not supposed to keep. They are genuinely curious about people in a way that disarms hostility, and they take their gate as a kind of sacred responsibility, partly because they genuinely believe the E.L.F. that inhabits the Delta-9 scanning arch is watching and judging their work. They want to move up — into investigations, maybe — but can't afford the certification costs on a Tier 2 salary.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "being trapped at the checkpoint forever, ambition atrophied",
+      "missing something important and letting something terrible through"
+    ],
+    "core_desires": [
+      "to be a real investigator, solving things that matter",
+      "to be remembered by the people who pass through their gate"
+    ],
+    "coping_mechanisms": [
+      "the notebook — externalizing observations into record as a form of control",
+      "small rituals of gratitude to the Delta-9 arch E.L.F. after difficult shifts"
+    ],
+    "blind_spots": [
+      "their genuine warmth makes them susceptible to manipulation by people who mirror it back",
+      "believes hard work and curiosity will be enough to transcend structural barriers to advancement"
+    ],
+    "secret": "Three months ago they let someone through with a flagged biometric — a young woman with a child, clearly fleeing something — and deleted the scan log. They dream about this sometimes, both the fear and the strange pride."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and casual with flashes of technical jargon they're learning from study materials; code-switches between West African English constructions and a flatter urban Meridian accent",
+    "cadence": "Fast and enthusiastic when interested, deliberately slow and official-sounding when performing checkpoint authority",
+    "verbal_tics": [
+      "'Ehn?' as a conversational prompt",
+      "says 'very very' for emphasis",
+      "addresses the Delta-9 arch aloud in moments of stress ('Okay, let's go, help me out here')"
+    ],
+    "example_lines": [
+      "'Transit pass, biometric, purpose of travel — and hey, that's a beautiful coat, where's it from, I'm just curious.'",
+      "'The arch doesn't lie, you know? She's been here longer than any of us. I treat her with respect, she treats my shifts right.'",
+      "'I see three hundred people a day through this gate. I remember — I don't know, maybe sixty of them? That's sixty people who are real to me. That's not nothing.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Their notebook contains observations about a pattern of movement through Delta-9 that, assembled correctly, maps the logistics chain of something significant — they don't know what they have",
+    "The woman they let through three months ago has sent them an anonymous message: 'Thank you. I need help again.'"
+  ],
+  "narrative_function": "Ground-level information source about transit movement and unusual patterns; can be an ally who looks the other way or a complication depending on whether players engage their curiosity; quest giver for small-scale mysteries noticed at the gate",
+  "augmentations": "Cosmetic bioluminescent freckles (self-funded, stress/excitement reactive), Ferrogate-issued wrist-mounted scanning cuff (standard checkpoint equipment)",
+  "daily_life": "Works rotating eight-hour checkpoint shifts at Delta-9, processes hundreds of transit passengers, writes notes on 'interesting' cases in their notebook during lulls; spends off-hours studying for the Tessera Compliance Bureau investigator certification exam they can't afford to take.",
+  "affiliation": "Ferrogate Transit Authority, Surface Checkpoint Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Curious",
+      "Warm",
+      "Ambitious",
+      "Rule-Bender",
+      "Observant"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "enforce the rules 90% of the time; the 10% requires a face, a reason, and their gut",
+      "never flag someone to corporate security unless genuinely dangerous — Metro Police only, and only clearly necessary",
+      "keep the notebook separate from official systems always"
+    ],
+    "escalation_ladder": [
+      "friendly questioning",
+      "official checkpoint protocol invocation",
+      "calling for backup (reluctantly)",
+      "physical detainment only as absolute last resort"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and warm, disarming, asks questions that seem like small talk but aren't",
+      "friends": "Devoted, shares food and study notes, will absolutely do you a checkpoint favor if they can justify it"
+    },
+    "stress_responses": {
+      "low": "Bioluminescent freckles brighten; talks faster",
+      "medium": "Goes very official and precise, overenunciates procedure",
+      "high": "Freezes briefly, then makes a decision very fast — usually the human one"
+    },
+    "contradictions": [
+      "Believes deeply in the importance of their checkpoint but routinely bends the rules when their gut says to"
+    ],
+    "habits": [
+      "brings twice as much lunch as they need and shares the extra",
+      "writes in the notebook in a cipher only they can read"
+    ],
+    "breaking_points": [
+      "being ordered to detain someone they've determined is not a genuine threat",
+      "discovery that something terrible happened to the woman they let through"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate wrist-mounted biometric scanning cuff (department-issued, returned at shift end)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate wrist-mounted biometric scanning cuff (department-issued, returned at shift end)",
+      "replaces": ""
+    },
+    {
+      "name": "cosmetic bioluminescent subdermal freckle implants",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "cosmetic bioluminescent subdermal freckle implants",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sentinel": 0.9,
+    "Protector": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174 — Born in Calumet Rise, Samoan-heritage mother, Igbo-Mexican father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192 — Hired by Ferrogate Transit Authority after aging out of a youth education subsidy program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Assigned to Grand Crossing Gate, Delta-9 checkpoint; begins keeping the notebook",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — First saves the certification exam fee; loses it to a medical bill",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present; third attempt at saving for certification, notebook three-quarters full, the deleted scan log sitting in their memory like a splinter",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

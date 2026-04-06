@@ -1,0 +1,63 @@
+{
+  "id": "019d6143ab2072ffa3781d00323bb6e6",
+  "name": "Coherent Radiation Scalpel CRS-7 'Suture'",
+  "type": "weapon",
+  "aliases": [
+    "Suture",
+    "The Blade",
+    "Hardlight",
+    "CRS-7"
+  ],
+  "category": "energy",
+  "description": "The CRS-7 generates an extremely narrow coherent radiation beam — a focused column of X-ray band energy approximately 0.3 millimetres in diameter that maintains coherence over short distances before diffraction limits its effectiveness. At this scale and intensity, the beam does not burn or cauterise in the manner of conventional laser weapons; instead, it severs material at the molecular level with near-zero thermal spread. The cut is so precise that biological tissue on either side of the beam path is essentially undamaged — the wound is a clean incision, not a burn channel. This characteristic gives the weapon its name and its disturbing dual-use reputation.\n\nThe weapon's operating principle derives directly from surgical radiation technology — specifically, the coherent X-ray scalpels used in precision neurosurgery and microsurgical robotics. LAZARUS PHARMACEUTICALS developed the CRS-7 as a licensed derivative of their surgical suite technology, initially marketed to corporate medical teams for field surgical applications. The tactical application was noted almost immediately: a weapon that could sever tendons, nerves, or blood vessels with surgical precision, leaving no visible external wound until the target moved and the incision opened, represented a unique capability profile.\n\nThe CRS-7's practical limitations are significant: effective range is 3–8 metres, the beam width requires precise targeting (the weapon integrates a targeting assist system, but moving targets at range are challenging), and the power draw limits sustained operation. It is not a weapon for firefights. It is a weapon for situations where a firefight has already been decided and the question is only how much damage to do and where. Its presence in Meridian 88's underworld is small but consistent — it surfaces wherever someone needs work done that looks like an accident or a medical complication.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Black market / Tier 5 (medical licensing only)",
+  "legality": "Licensed (medical use only); Prohibited (tactical application)",
+  "base_technologies": [
+    "Coherent X-ray beam generation",
+    "Molecular-level precision severance",
+    "Targeting-assisted narrow-beam projection"
+  ],
+  "specifications": "effective range: 0.5–8 metres\nbeam diameter: 0.3mm (fixed)\nthermal spread: Less than 0.1mm from beam centreline\ntargeting assist: Integrated optical and depth sensor array, 0.1mm targeting resolution\npower source: High-density CRS cell (40 seconds continuous emission; field non-replaceable, requires factory recharge)\nweight: 0.9 kg\nform factor: Resembles a medical instrument — narrow, handheld, with a focusing aperture\nradiation exposure: Operator shielding required for prolonged use; single-shot exposure within safe limits",
+  "tactical_use": "The CRS-7 is not used in conventional combat. Operators use it in controlled environments — targets who are restrained, unconscious, or unaware. The weapon's most common tactical application is delayed incapacitation: severing a critical tendon or blood vessel in a way that produces no immediate visible effect, allowing the operator to be elsewhere when the target collapses. It is also used for precision sabotage — severing specific components inside sealed devices by passing the beam through thin housing material. The 8-metre effective range and the requirement for a stable firing platform make it impractical in dynamic situations. Operators who carry a CRS-7 are not expecting a fight.",
+  "cultural_context": "The Suture exists in a category of weapons that Meridian 88's criminal ecosystem finds genuinely unsettling — not because of raw destructive capacity, but because of what its use implies about the operator. Someone who uses a CRS-7 is patient, technically skilled, and has access to either a LAZARUS medical licence or a black market supply chain sophisticated enough to move medical-grade equipment. The weapon is associated with a specific class of operator: the kind hired to make deaths look like medical events. In the corporate world, the CRS-7 is whispered about in the context of executive suites and boardroom power struggles. Among street operators, its reputation is largely mythological — few have seen one, but everyone knows what it means when the cause of death is listed as 'vascular anomaly.'",
+  "known_users": [
+    "LAZARUS PHARMACEUTICALS internal security (deniable)",
+    "High-end corporate assassins specialising in natural-cause deaths",
+    "Rogue surgeons working outside licensed facilities",
+    "Intelligence operatives requiring untraceable incapacitation capability",
+    "\"The Physician\" — an urban legend in Meridian 88's corporate assassination community, believed to be a former LAZARUS surgical researcher"
+  ],
+  "story_hooks": [
+    "A senior executive has died of what appears to be a spontaneous vascular rupture. The players — hired by the family — discover the death was caused by a CRS-7 incision made twelve hours before collapse. The medical examiner who would have caught it has also died, of the same apparent cause.",
+    "A stolen CRS-7 has surfaced in a street market, misidentified as a medical tool. The seller doesn't know what they have. LAZARUS wants it back quietly. The players are in the middle.",
+    "A player character with a medical background recognises a wound pattern in a crime scene photograph as consistent with CRS-7 use — but the official investigation has closed the case as natural causes. Reopening it means challenging a verdict that someone powerful has invested in.",
+    "LAZARUS PHARMACEUTICALS is running a black programme to track every CRS-7 that has left their licensed medical supply chain. They've identified seven units in Meridian 88 that are unaccounted for. They want them retrieved or destroyed, and they don't want law enforcement involved. The players discover why when they find the first unit."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "combat",
+    "blade",
+    "war",
+    "crime",
+    "death",
+    "ai",
+    "robot",
+    "rogue",
+    "corporate",
+    "control",
+    "power",
+    "medical",
+    "surgery",
+    "underworld",
+    "market",
+    "rain",
+    "train",
+    "fire",
+    "tier 5"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "019d6143a86a72fc92978acebac4b219",
+  "name": "Ringo Corponation Skinline Codec — 'The Thread'",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Skinline Codec — 'The Thread'",
+  "type": "equipment",
+  "aliases": [
+    "The Thread",
+    "Skinline",
+    "Ringo Wire",
+    "Flesh Carrier"
+  ],
+  "category": "comms",
+  "description": "The Skinline Codec is Ringo Corponation's answer to the problem of communication in fully jammed or surveilled environments: if radio signals can be intercepted and blocked, transmit through something that isn't radio. The Thread uses the body's own bioelectric field as a carrier medium, encoding encrypted data as micro-variations in the skin-surface electrical potential of a user and transmitting it to another Thread user through direct physical contact — a handshake, a touch on the shoulder, a brush of hands. The contact window required is as brief as 0.3 seconds, enough for a full compressed message packet to transfer completely undetected by any external monitoring system.\n\nThe hardware consists of two components: a dermal patch worn on the inside of the wrist or palm, and a thumbnail-sized processing unit that clips to the inside of a sleeve or collar. The patch handles signal encoding and skin-coupling; the processing unit handles encryption, message composition, and the haptic feedback pulse that confirms successful transmission. Messages are composed via subvocal input or a paired micro-interface and delivered to the recipient as text or compressed audio on their own interface. Because the transmission medium is the body itself, no signal leaves the participants — it is, in the most literal sense, a communication that exists only between two people touching.\n\nThe Thread emerged from Ringo Corponation's courier and logistics division, originally intended for secure package authentication between bonded couriers who needed to confirm handoff without any electronic record. Its adoption by intelligence operatives and underground networks was immediate and predictable. The device has one significant limitation: it only transmits between two users who both carry active units, meaning it requires prior arrangement and cannot be used to reach anyone outside the immediate physical environment. In practice, this limitation has become a feature — a Thread network is inherently small, trust-based, and geographically bounded.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Bioelectric field carrier encoding",
+    "Dermal signal coupling",
+    "Contact-transfer packet transmission",
+    "Subvocal message composition",
+    "Haptic confirmation feedback"
+  ],
+  "specifications": {
+    "components": "Dermal wrist/palm patch + sleeve-clip processing unit",
+    "dimensions": "Patch: 4cm x 2cm; Processor: 1.8cm x 1.2cm x 0.4cm",
+    "weight": "Combined 18g",
+    "transmission_medium": "Skin-surface bioelectric field (no external EM emission)",
+    "contact_window_required": "0.3 seconds minimum for full packet transfer",
+    "message_formats": "Compressed text, compressed audio (up to 90 seconds), pre-coded signal bursts",
+    "encryption": "Per-pair asymmetric key, hardware-bound",
+    "network_size": "Point-to-point only; relay chains possible through sequential contact",
+    "power_source": "Body heat thermoelectric, indefinite passive operation",
+    "detection_resistance": "Absolute during transmission — no EM emission detectable"
+  },
+  "tactical_use": "Thread users pre-load messages or use subvocal input to compose in real time. Transmission occurs on any physical contact between patch-wearing surfaces. In practice, operators develop natural-seeming contact protocols — a greeting handshake, an adjustment of a colleague's collar, a hand on the arm during conversation. The Thread is the only known communication method that remains functional inside a fully active Fallow or equivalent jamming field. Relay chains can be constructed: User A contacts User B, User B contacts User C, allowing message propagation through a room without any single transmission being detectable. The limitation is that all users must be present and the chain must be physically arranged.",
+  "cultural_context": "The Thread has developed an almost ritualistic significance among the close-knit cells that use it. In a city saturated with surveillance and signals intelligence, communication that exists only in the moment of physical contact carries genuine intimacy. Some Thread users describe a psychological shift — the knowledge that a conversation truly cannot be intercepted changes how honestly people speak. Among underground networks, a Thread handshake has become a trust ritual that goes beyond its function; you don't give someone your Thread contact unless you're willing to be in the same room with them. The device is also used in a more theatrical context by Meridian 88's high-end social elite, for whom unrecorded conversation at parties has become a status performance.",
+  "known_users": [
+    "Intelligence operatives requiring zero-emission comms",
+    "Underground cell networks and resistance organizers",
+    "Ringo Corponation bonded courier corps (original use)",
+    "High-society figures performing privacy as luxury",
+    "Operators working inside active jamming zones"
+  ],
+  "story_hooks": [
+    "A Thread unit has been recovered from a dead operative — its paired unit is still active and worn by someone currently in the city, meaning whoever killed the operative now has an open contact channel to an unknown Thread partner.",
+    "The players need to pass a message through a Thread relay chain across a crowded corporate gala without any member of the chain appearing to communicate — requiring them to engineer 'natural' physical contact between seven people over the course of an evening.",
+    "Someone is selling Thread pairs pre-keyed to each other on the black market, but the encryption keys were registered to Ringo Corponation's logistics division — meaning the corporation can read every message passed through them.",
+    "A Thread chain is the only record of a conversation that took place before a political assassination. Reconstructing what was said requires finding every person in the chain and getting them to admit they were there."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "trust",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "market",
+    "tier 2"
+  ]
+}

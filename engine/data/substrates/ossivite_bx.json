@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a9e17483a065c7c09de2c100",
+  "name": "Ossivite-BX",
+  "brand_name": "Ossivite",
+  "product_name": "Ossivite-BX",
+  "type": "substrate",
+  "aliases": [
+    "bio-ceram",
+    "BX shell",
+    "bone china"
+  ],
+  "category": "ceramic",
+  "description": "A hydroxyapatite-zirconia composite ceramic engineered at the nano-scale to present a surface chemistry nearly indistinguishable from natural cortical bone, enabling deep tissue augment housings to integrate with the body's immune and skeletal systems rather than triggering rejection cascades. BioForge Labs developed the proprietary sintering process that produces a functionally graded interface — dense and hard at the surface, progressively more porous toward the tissue boundary where osteoblasts can colonize the scaffold. Ossivite-BX has become the standard housing material for high-end neural and skeletal augments.",
+  "properties": [
+    "biocompatible",
+    "osseointegration",
+    "high_compressive_strength",
+    "moderate_hardness",
+    "functionally_graded_porosity",
+    "immune_neutral",
+    "radio_translucent"
+  ],
+  "developers": [
+    "BioForge Labs",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "subdermal augment housings",
+    "neural interface skull mounts",
+    "prosthetic limb skeletal cores",
+    "cochlear and ocular implant shells",
+    "spinal augment vertebral interfaces",
+    "dental replacement structures"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ 1,800 per kg",
+  "story_hooks": [
+    "A batch of Ossivite-BX from an unlicensed fabricator is causing accelerated bone resorption in recipients — tracking down every implant made from that batch before patients start losing structural integrity.",
+    "A patient's Ossivite-BX housing has begun osseointegrating in an uncontrolled manner, fusing with surrounding bone in ways that are encasing a concealed data chip nobody knew was there.",
+    "BioForge Labs is quietly buying back older Ossivite-BX implants, claiming a voluntary upgrade program — the real reason involves a proprietary SNT incompatibility that is far more dangerous than they're admitting."
+  ],
+  "tags": [
+    "ceramic",
+    "substrate",
+    "gun",
+    "war",
+    "augment",
+    "prosthetic",
+    "neural",
+    "ai",
+    "control",
+    "tier 2",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "019d6143aa657c5887d362c95caed58b",
+  "name": "Ferrogate Enforcer Cruiser",
+  "type": "transportation",
+  "aliases": [
+    "Enforcer",
+    "Black-and-Gray",
+    "Prowler"
+  ],
+  "category": "military_security",
+  "manufacturer": "Ferrogate Transit (Security Division)",
+  "description": "The standard security patrol vehicle for Ferrogate's private police force. A fast, armored ground car with light bars, siren, and pursuit capability. Enforcers are a common sight in Tier 2-3 districts where Ferrogate holds transit security contracts. In Tier 1, they appear only when something has gone very wrong. In Tier 4-5, corporate security handles their own problems. The Enforcer occupies the uncomfortable middle ground of Meridian 88 law enforcement — not powerful enough to challenge the corponations, not trusted enough to protect the people.",
+  "propulsion": "Electric all-wheel drive, pursuit-rated motor",
+  "speed": "200 km/h pursuit speed",
+  "capacity": "2 officers + 2 detained persons",
+  "range": "350 km",
+  "tier_availability": "Ferrogate Security deployment",
+  "cost": "Φ35,000 per unit (fleet purchase)",
+  "autonomy": "Human-driven, AI-assisted pursuit and navigation",
+  "armament": "Roof-mounted spotlight/stun projector, integrated comm suite, bumper ram plate.",
+  "common_usage": "Patrol, pursuit, detention transport, traffic enforcement in Ferrogate-contracted districts.",
+  "story_hooks": [
+    "An Enforcer officer discovers their patrol AI has been routing them away from a specific block for months — something doesn't want them there",
+    "Decommissioned Enforcers are being bought by Tier 1 communities as improvised ambulances — they're the only armored vehicles the poor can afford"
+  ],
+  "tags": [
+    "militarysecurity",
+    "transportation",
+    "trust",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "bar",
+    "vehicle",
+    "chase",
+    "armor"
+  ]
+}

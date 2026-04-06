@@ -1,0 +1,50 @@
+{
+  "id": "019d6143a8a67e1683ab77ea7419a89a",
+  "name": "Enhanced Liver Detox Pathway",
+  "brand_name": "Enhanced",
+  "product_name": "Enhanced Liver Detox Pathway",
+  "type": "geneware",
+  "aliases": [
+    "Iron Liver",
+    "Party Mod",
+    "Toxin Eater"
+  ],
+  "category": "medical",
+  "target_system": "hepatic (accelerated phase I and phase II detoxification)",
+  "description": "A streamlined version of the Prometheus Mod focused purely on toxin processing speed without the regeneration component. Enhances the liver's cytochrome P450 enzyme system and phase II conjugation pathways to process alcohol, recreational substances, and environmental toxins at 3–5 times the normal rate. The user can drink heavily with minimal intoxication, process pharmaceutical compounds rapidly, and resist environmental poisoning that would hospitalize an unmodified person. The modification is deliberately positioned as the affordable version of the Prometheus Mod — it lacks the dramatic regeneration capability but provides the detoxification enhancement that most users actually want. In Meridian 88's nightlife district, Iron Liver is so common that bartenders dose drinks stronger by default in venues that cater to the modified crowd.",
+  "source_organism": "Rattus norvegicus (brown rat, enhanced P450 expression), synthetic phase II enzyme amplification factors",
+  "manufacturer": "Lacuna Genomics, widespread street availability",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "procedure": "Hepatic retroviral injection, single session",
+  "expression_time": "2–3 weeks",
+  "reversibility": "Reversible with enzyme suppression therapy",
+  "side_effects": [
+    "Dramatically increased alcohol tolerance — social drinking becomes expensive",
+    "Medications require higher doses, complicating medical treatment",
+    "Liver enzyme levels permanently elevated on blood tests",
+    "Encourages substance overconsumption — the body can handle more, but 'more' still causes cumulative damage",
+    "Rare: enhanced processing of beneficial compounds like vitamins, requiring supplementation"
+  ],
+  "social_perception": "Ubiquitous in nightlife culture. Iron Liver is the party-scene default. Not having it in a drinking environment marks you as a lightweight. The modification has normalized heavier substance consumption across all tiers, which public health advocates consider a catastrophe.",
+  "story_hooks": [
+    "An Iron Liver user is poisoned with something their enhanced detox pathway can't process — the poison was designed specifically to exploit the gap in P450 enzyme coverage, suggesting the attacker knew exactly what modifications they had",
+    "A street clinic's Iron Liver installation uses a gene sequence that secretly enhances addiction susceptibility while improving detoxification — the user processes substances faster but craves them more intensely"
+  ],
+  "tags": [
+    "medical",
+    "geneware",
+    "war",
+    "secret",
+    "tender",
+    "ai",
+    "synthetic",
+    "clinic",
+    "bar",
+    "night",
+    "drink",
+    "alcohol",
+    "poison",
+    "tier 1"
+  ]
+}

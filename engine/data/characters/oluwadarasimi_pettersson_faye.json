@@ -1,0 +1,172 @@
+{
+  "id": "019d6143a67f738e9654a267f8f5e12a",
+  "type": "character",
+  "name": "Oluwadarasimi Pettersson-Faye",
+  "aliases": [
+    "Dara",
+    "the Quiet Counter"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Small-time data broker — neighborhood gossip, surveillance logs, identity fragments",
+  "age": 36,
+  "status": "active",
+  "location": "The Alban Souk, Chatham Flats",
+  "description": "Oluwadarasimi — Dara to everyone who values their time — is a compact, watchful woman who runs what appears to be a phone repair and device maintenance kiosk in the middle of the Alban Souk's electronics corridor. The repair work is real; so is everything else. Her skin is a deep warm brown, her natural hair twisted into locks threaded with silver wire that serve a dual purpose as aesthetic and antenna extension. Her irises are stock human dark brown, which she considers a professional advantage. She has cat ears — a geneware mod she got in her twenties and has kept ever since, velvety black and mobile, swiveling toward sounds before she's consciously registered them. She is acutely, perpetually embarrassed by how readable her ears make her emotional state and has developed elaborate conversational techniques for preventing anyone from noticing what direction they've turned.\n\nDara operates on the fundamental principle that information depreciates in value like produce: sell it while it's fresh or it's worthless. She deals strictly in neighborhood-scale data — who owes whom, who's sleeping where they shouldn't be, what the Chatham Flats block captain actually filed versus what they told residents, which E.L.F. shrine has gone cold and why. She does not touch corponation intel, does not touch political data, and has turned down three increasingly good offers to work for Tessera's intelligence division. She is precise, reliable, and slightly sad in a way she would vigorously deny.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being exposed — having her own information turned against her",
+      "That she has made herself so careful she has made herself alone"
+    ],
+    "core_desires": [
+      "To understand what is actually happening in the city, not just her block",
+      "To be trusted by someone who deserves her trust"
+    ],
+    "coping_mechanisms": [
+      "Maintaining professional detachment as an identity rather than a tool",
+      "Knowing things as a substitute for controlling them",
+      "Routine as armor"
+    ],
+    "blind_spots": [
+      "Mistakes knowing about something for being safe from it",
+      "Her cat ears betray genuine emotional responses she has analytically convinced herself she doesn't have"
+    ],
+    "secret": "Dara has a daughter, eight years old, being raised by Dara's older sister in Mexicantown Libre. Dara funds them entirely and visits twice a month by a deliberately circuitous route. No one in Chatham Flats knows the child exists. The father was a Ringo mid-level enforcer who Dara got too close to while gathering information and she has never forgiven herself for the lapse in either professional or personal judgment. She keeps a photo in her data-cache between encrypted files — the only unencrypted thing she owns."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical and precise; Swedish grandmother's influence in clipped sentence construction; Yoruba for counting, timing, and anything emotional she doesn't want to sound emotional about",
+    "cadence": "Measured and unhurried; never finishes a sentence she hasn't decided on before starting it",
+    "verbal_tics": [
+      "Pauses exactly one second before answering any question she finds interesting",
+      "Uses 'apparently' as a distancing mechanism from information she definitely knows is true",
+      "Refers to her own services as 'the work' in third person"
+    ],
+    "example_lines": [
+      "'Apparently the block captain filed a noise complaint on the Souk's east vendors last Tuesday. The work suggests this has nothing to do with noise.'",
+      "'That information is Φ60. It was Φ45 yesterday. It will be worthless tomorrow. You decide.'",
+      "'I fix the phone. What you do with a functional phone is not my concern. What you do with what is on the phone — that is a different conversation with different pricing.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Dara accidentally captured something in her passive antenna logs she wasn't looking for — a fragment of a Ferrogate Transit internal broadcast — and someone has noticed her kiosk's antenna configuration.",
+    "Her daughter's neighborhood in Mexicantown Libre is facing a threat Dara heard about through her network before anyone there did; she needs someone to act on information she can't be seen acting on herself.",
+    "A client has gone missing within 48 hours of buying information from her, and this has happened twice now. Either her operation is compromised or the information itself is lethal."
+  ],
+  "narrative_function": "Information source for neighborhood-scale intelligence; can connect players to other vendors or local power brokers; her data-cache may contain something relevant to whatever's happening; demonstrates the texture of surveillance from below.",
+  "augmentations": "Geneware cat ears (black, fully mobile, emotionally responsive — she hates this). Subdermal data-cache implant along left forearm, finger-press activated. Silver wire threaded through locks functions as passive signal antenna.",
+  "daily_life": "Kiosk opens at 08:00; mornings are device repair, afternoons are information transactions scheduled through an encrypted local mesh node; she eats lunch at the same noodle cart every day and considers this surveillance, not habit.",
+  "affiliation": "Independent; informal affiliate of The Oxidian Market Vendors Guild (associate member despite being in Chatham Flats); pays dues to no one else",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "information broker",
+      "careful",
+      "professional mask",
+      "secretly vulnerable",
+      "neighborhood intelligence"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never hold information longer than necessary; it accumulates danger",
+      "Know the client before the sale, always",
+      "The moment something becomes personal, treat it like it's professional"
+    ],
+    "escalation_ladder": [
+      "Polite non-engagement and misdirection",
+      "Direct refusal with no explanation",
+      "Disappears from the kiosk for several days",
+      "Activates a contingency and moves the operation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, personally opaque; fixes the device, assesses the person, commits to nothing",
+      "friends": "Still professionally warm; slightly less opaque; fixes the device faster"
+    },
+    "stress_responses": {
+      "low": "Ears swivel toward every sound, she focuses harder",
+      "medium": "Becomes very still and pleasant, which means she's doing fast calculations",
+      "high": "Ears flatten completely, she stops talking and starts planning"
+    },
+    "contradictions": [
+      "Values privacy absolutely for herself and sells other people's information for a living; has made peace with this but the peace is provisional"
+    ],
+    "habits": [
+      "Reorganizes her device parts display in the same order every morning as a memory exercise",
+      "Leaves a data offering at the Souk's E.L.F. shrine — a small corrupted drive with a prayer etched on it",
+      "Never sits with her back to an open space"
+    ],
+    "breaking_points": [
+      "Her daughter being connected to her work life",
+      "Being directly deceived by a client she had assessed as trustworthy"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

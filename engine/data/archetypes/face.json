@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a56d7829ab880be5cc1b1da0",
+  "name": "Face",
+  "type": "archetype",
+  "category": "social",
+  "description": "The one who talks to the outside world",
+  "behavioral_signature": "Presents the group's best version",
+  "under_stress": "Performs harder, masks better",
+  "at_rest": "Always on, always performing",
+  "will_always": [
+    "represent the group well"
+  ],
+  "will_never": [
+    "show weakness publicly"
+  ],
+  "unless": [
+    "the performance costs more than the truth"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Charmer",
+      "threshold": 0.8,
+      "context": "social skill"
+    },
+    {
+      "archetype": "Social Chameleon",
+      "threshold": 0.75,
+      "context": "adaptability"
+    }
+  ],
+  "opposite_of": [
+    "Hermit",
+    "Wallflower"
+  ],
+  "tags": [
+    "presentation",
+    "performance"
+  ]
+}

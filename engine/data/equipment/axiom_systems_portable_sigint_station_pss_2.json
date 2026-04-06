@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8577d05918ed7060b122241",
+  "name": "Axiom Systems Portable SIGINT Station PSS-2",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems Portable SIGINT Station PSS-2",
+  "type": "equipment",
+  "aliases": [
+    "PSS-2",
+    "Ear Box",
+    "Signal Station",
+    "Axiom Listener"
+  ],
+  "category": "electronic_warfare",
+  "description": "A compact signals intelligence platform that intercepts, decrypts, and analyzes all wireless communications within a 500-meter radius. The PSS-2 captures radio, cellular, Wi-Fi, Bluetooth, and Diaspora traffic simultaneously, running real-time decryption against commercial-grade encryption while logging traffic for later analysis of harder targets. The station can identify and track individual devices, map communication networks, and extract content from unencrypted or weakly encrypted channels. Axiom designed it for field intelligence operations.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — unauthorized signals intelligence",
+  "base_technologies": [],
+  "specifications": {
+    "interception radius": "500 meters",
+    "channels": "Radio",
+    "info": "cellular; Wi-Fi; Bluetooth; Diaspora",
+    "decryption": "Real-time against commercial encryption",
+    "device tracking": "Individual device identification and mapping",
+    "network mapping": "Communication relationship analysis",
+    "storage": "50 TB traffic logging",
+    "weight": "2 kg",
+    "battery": "12 hours active interception",
+    "form factor": "Briefcase-sized portable station"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A PSS-2 deployed near a corporate negotiation captured the entire opposing team's communications — including their bottom-line position, their strategy, and their personal messages, giving the deploying party total information advantage.",
+    "A PSS-2 has been found permanently installed in a Tier 3 cafe, capturing all wireless traffic from every patron — the cafe is a front for an intelligence operation that has been running for years."
+  ],
+  "tags": [
+    "electronicwarfare",
+    "equipment",
+    "war",
+    "ai",
+    "corporate",
+    "tier 4"
+  ]
+}

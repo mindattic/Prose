@@ -1,0 +1,43 @@
+{
+  "id": "019d6143aa4475c5998f5793384f789e",
+  "name": "Lazarus Pharmaceuticals Longevity Monitoring Implant",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Longevity Monitoring Implant",
+  "type": "technology",
+  "aliases": [
+    "LMI",
+    "Life Clock",
+    "Age Watch",
+    "Lazarus Timer"
+  ],
+  "subcategory": "medical",
+  "description": "A subcutaneous implant that continuously monitors biomarkers of aging — telomere length, mitochondrial function, protein aggregation, DNA methylation patterns, and cellular senescence markers — providing a real-time assessment of the user's biological age and rate of aging. The LMI provides daily updates on how fast the user is aging relative to baseline, identifying lifestyle factors, environmental exposures, and medical conditions that accelerate or decelerate the aging process. Lazarus pairs the implant with their Telomere Regeneration Therapy, using LMI data to optimize treatment timing and dosage.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "Biomarker aging assessment",
+    "Continuous biological age monitoring",
+    "Aging rate environmental correlation"
+  ],
+  "enables": [
+    "Real-time biological age tracking",
+    "Aging acceleration factor identification",
+    "Optimized anti-aging treatment timing",
+    "Lifestyle impact on aging quantification"
+  ],
+  "social_impact": "The LMI has given people a number — their biological age and aging rate — that becomes an obsession. Users check their aging rate like others check the weather, and lifestyle decisions are increasingly driven by their impact on the aging score. The technology has also created a new form of discrimination: employers and insurers who access LMI data can make decisions based on an individual's biological age rather than their chronological age, favoring those who age slowly and penalizing those who age fast.",
+  "story_hooks": [
+    "An LMI user's aging rate has suddenly accelerated to 5x normal — something in their environment is aging them at catastrophic speed, and they have days to identify the cause before the damage becomes irreversible.",
+    "LMI data from a deceased person shows their biological age decreased rapidly in the weeks before death — they were getting younger, not older, and the reversal appears connected to an unauthorized medical treatment."
+  ],
+  "tags": [
+    "medical",
+    "technology",
+    "death",
+    "ai",
+    "ubc",
+    "tier 2"
+  ]
+}

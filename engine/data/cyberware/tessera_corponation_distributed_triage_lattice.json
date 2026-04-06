@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a7c67ad58683638258899fd9",
+  "name": "Tessera Corponation Distributed Triage Lattice",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Distributed Triage Lattice",
+  "type": "cyberware",
+  "aliases": [
+    "Triage Net",
+    "The Lattice",
+    "Tessera Weave",
+    "Smart Bandage Array"
+  ],
+  "category": "medical",
+  "body_location": "",
+  "description": "The Distributed Triage Lattice is a deployable diagnostic and stabilization system consisting of twelve interconnected biosensor patches linked by a flexible conductive mesh to a central processing hub roughly the size of a deck of cards. When applied across a patient's body, the mesh network continuously samples blood oxygen, pressure at wound sites, core temperature, neural activity, and the bioelectric signatures of internal organ function, feeding all data to the hub which generates a real-time triage priority map displayed on an integrated micro-display or transmitted to a connected medic's HUD. The system diagnoses what the naked eye cannot see — internal hemorrhage, organ perfusion failure, shock onset, and spinal instability — and flags each condition with a color-coded severity rating and suggested intervention.\n\nTessera Corponation's background in ambient inference systems is evident in the Lattice's design philosophy: it is built not to replace medical expertise but to extend it across distance and sensory limitation. A single medic can deploy multiple Lattice kits on separate patients and monitor all of them simultaneously through a networked display, triaging mass casualty situations with a clarity that would otherwise require a full medical team. The mesh patches communicate through the patient's own bioelectric field, eliminating the need for wired connections and allowing the system to function through clothing, body armor, and even some cyberware casings.\n\nThe Distributed Triage Lattice is primarily issued to corporate mass-casualty response units, military medical contractors, and Tessera Corponation's own security medical staff, but has found significant uptake among organized criminal operations that run enough personnel to justify its cost. It is not a treatment device — it diagnoses and monitors, but the actual intervention must come from a human medic or supplementary equipment. Street-level operators often find its cost prohibitive, but those who do acquire one tend to build small informal triage networks around it, becoming indispensable to their crews.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"components\":\"12 biosensor patches, 1 central processing hub, conductive mesh connectors\",\"hub_dimensions\":\"11cm x 7cm x 2cm\",\"patch_dimensions\":\"5cm x 5cm each\",\"total_weight\":\"420g complete kit\",\"monitored_parameters\":\"Blood oxygen saturation, Wound-site pressure, Core temperature, Neural activity index, Organ perfusion signatures, Shock onset indicators, Spinal instability markers\",\"simultaneous_patients\":\"Up to 4 patients with full kits; hub can network with up to 3 additional hubs\",\"display\":\"Integrated 4cm micro-display on hub; HUD transmission via standard medical uplink\",\"power_source\":\"Integrated cell, 18-hour continuous operation\",\"mesh_penetration\":\"Functional through up to 3cm of soft body armor or standard clothing\"}",
+  "side_effects": [],
+  "cultural_context": "Ownership of a Distributed Triage Lattice in the Underbelly is a significant status marker — it signals that an operator or crew is organized enough, and well-funded enough, to invest in systematic casualty care rather than reactive patch-and-pray. Tessera Corponation maintains restrictive licensing requirements that officially limit the device to registered medical contractors, but enforcement is spotty. The device has become associated with a class of professional street medics who have essentially become small-business operators, selling triage services to gangs and runner crews on retainer.",
+  "known_users": [
+    "Corporate mass-casualty response units",
+    "Military medical contractors",
+    "Organized crime medical staff",
+    "High-tier mercenary medical personnel",
+    "Tessera Corponation internal security medical teams",
+    "Medic Retainer Operators ('Lattice Docs') serving gang networks",
+    "Provisional Voss Medical Collective (Sector 12 gray-market medical cooperative)"
+  ],
+  "story_hooks": [
+    "A Distributed Triage Lattice recovered from a crime scene is still transmitting patient data — someone with a gunshot wound is alive somewhere in the city, being monitored by whoever holds the linked hub. The data trail could lead to a survivor, a captor, or both.",
+    "Tessera Corponation's latest firmware update added a hidden logging function that transmits anonymized patient biometrics back to a Tessera server — a street medic collective has discovered this and is threatening to go public unless Tessera buys their silence or kills the feature.",
+    "A player character's crew is offered a Distributed Triage Lattice as payment for a job, but the device's previous owner is still listed in the system's user registry — and that person has been officially declared dead by a corporation that would very much like to keep it that way."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "medical",
+    "cyberware",
+    "gun",
+    "war",
+    "crime",
+    "gang",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "clothing",
+    "armor",
+    "tier 3"
+  ]
+}

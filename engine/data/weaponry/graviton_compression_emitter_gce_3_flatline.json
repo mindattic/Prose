@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab2d7f8e9d28967ed383d918",
+  "name": "Graviton Compression Emitter GCE-3 'Flatline'",
+  "type": "weapon",
+  "aliases": [
+    "Flatline",
+    "The Press",
+    "Gravity Gun",
+    "GCE"
+  ],
+  "category": "energy",
+  "description": "The GCE-3 generates a focused graviton field projection that temporarily increases the effective gravitational force acting on a target volume by a factor of between 8 and 22 times standard gravity, depending on output setting. The effect is not a beam in the electromagnetic sense — it is a localized distortion of spacetime curvature within a defined area approximately 1.5 meters in diameter at standard operating range. Targets within the field experience sudden, catastrophic increases in effective body weight: at 8G, an unaugmented human experiences immediate skeletal stress fractures and cardiovascular collapse; at 22G, soft tissue rupture is near-instantaneous. The weapon was developed by Ouroboros Energy as a theoretical physics demonstration platform before its military applications became apparent and Arcturus Defense Solutions acquired exclusive licensing rights.\n\nThe GCE-3's technological foundation draws on the same graviton manipulation research that underlies Meridian 88's commercial anti-gravity transit infrastructure, miniaturized and weaponized in a form that remains deeply controversial among the scientific community. The emitter core contains a crystalline graviton lens array that focuses the field projection with high spatial precision — the 1.5-meter effect radius means trained operators can affect a single target in a crowd without impacting bystanders, though field edge effects at the periphery of the compression zone cause significant discomfort and disorientation in adjacent individuals. The weapon's power requirements are enormous by handheld standards, necessitating a dedicated backpack power unit connected by a reinforced umbilical.\n\nThe GCE-3 is one of the most legally contentious weapons in Meridian 88. Its use at a labor suppression event in the Palladian Construction sector in 2197 — where seventeen workers were killed and the incident was initially classified as a 'structural collapse' — remains an open wound in the city's political landscape. Ouroboros Energy has faced ongoing regulatory pressure over its foundational research, and the weapon's existence is technically classified at the municipal government level, though this classification is widely understood to be a legal fiction.",
+  "manufacturer": "OUROBOROS ENERGY (research); ARCTURUS DEFENSE SOLUTIONS (military adaptation)",
+  "tier_availability": "Military only",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Graviton field projection",
+    "Crystalline graviton lens focusing",
+    "Spacetime curvature localization"
+  ],
+  "specifications": "emitter length: 88cm\nemitter weight: 6.1kg\npower unit weight: 14.3kg (backpack)\numbilical length: 1.2m\npower source: Ouroboros OE-Heavy cell pack, 9 full-power discharges\neffect radius at range: 1.5m diameter at 40m\neffective range: 12–65m (optimal 20–45m)\ncompression range: 8G (incapacitation) to 22G (lethal)\nfield edge effect: Disorientation, nausea, minor skeletal stress in adjacent subjects within 0.5m of field boundary\ncharge time: 3.8 seconds between discharges at full power",
+  "tactical_use": "GCE-3 deployment is handled by two-person teams: one operator carrying the emitter, one managing the power unit and maintaining umbilical clearance during movement. In military applications, it is used for rapid elimination of high-value hardened targets — individuals in powered armor or with heavy augmentation who are resistant to conventional weapons but whose augments provide no protection against gravitational compression. The weapon's 3.8-second recharge cycle makes it unsuitable for sustained engagements; operators typically fire once per target and reposition. The psychological effect on witnesses is severe and has been deliberately exploited in pacification operations — watching a target collapse under invisible force with no audible discharge is profoundly disorienting.",
+  "cultural_context": "The GCE-3 is a ghost weapon in Meridian 88's cultural consciousness — officially it does not exist, but its effects are known and documented by street communities, labor organizers, and underground journalists who have been tracking its use since 2197. The Palladian Construction massacre has become a reference point for discussions of corporate violence, and the GCE-3 is the weapon that killed those workers, even if no official record admits it. Among military and elite corporate circles, it is spoken of with the particular reverence reserved for weapons that represent genuine technological dominance. Among everyone else, it is a symbol of how far the powerful are willing to go when they believe there will be no consequences.",
+  "known_users": [
+    "Arcturus Defense Solutions special operations units",
+    "Corporate paramilitary forces (undocumented)",
+    "Ouroboros Energy internal security (alleged)",
+    "One confirmed black market unit, current location unknown"
+  ],
+  "story_hooks": [
+    "The players stumble onto evidence linking the Palladian Construction massacre to a specific GCE-3 serial number — and that unit is currently in the hands of someone who has no idea what they possess or what it connects them to.",
+    "Ouroboros Energy's graviton research division has developed a GCE-4 prototype with a 6-meter effect radius and extended range. Someone inside the company wants it destroyed before it can be weaponized. Someone outside the company wants to acquire it for exactly that purpose.",
+    "A municipal investigator has been quietly building a case against Arcturus Defense Solutions for the 2197 massacre. She needs a technical expert who can identify GCE-3 wound patterns in autopsy records — and the players are the only people she can trust who have the relevant knowledge and aren't already compromised."
+  ],
+  "ammunition_type": [
+    "Ouroboros OE-Heavy Power Cell OE-H7"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "violence",
+    "gun",
+    "trust",
+    "consciousness",
+    "augment",
+    "ai",
+    "corporate",
+    "power",
+    "market",
+    "rain",
+    "rights",
+    "train",
+    "armor",
+    "fire"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab1371368204380e4c2ae69f",
+  "name": "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
+  "type": "weapon",
+  "aliases": [
+    "Hammerfall",
+    "KIR-10",
+    "Heavy Round",
+    "Thor Shot"
+  ],
+  "category": "rifle",
+  "description": "A heavy-caliber anti-materiel round designed for the Arcturus AM-10 platform that uses a two-stage propulsion system — conventional propellant for initial acceleration followed by a secondary rocket motor that ignites after 50 meters, boosting the 20mm tungsten penetrator to a terminal velocity that exceeds any conventional rifle round. The KIR-10 was designed to defeat next-generation reactive armor systems that use explosive countermeasures to deflect standard anti-materiel rounds — the rocket-boosted second stage arrives too fast for reactive systems to respond. Against personnel, the round is grotesquely excessive, but its use against augmented targets with military-grade armor implants has been documented.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 5",
+  "legality": "Military restricted — anti-materiel authorization",
+  "base_technologies": [
+    "Dual-stage propulsion projectile engineering",
+    "Rocket-boosted anti-materiel design",
+    "Reactive armor defeat ballistics"
+  ],
+  "specifications": "caliber: 20mm tungsten penetrator\nstage 1: Conventional propellant, 600 m/s\nstage 2: Rocket motor ignition at 50m, terminal velocity 1,800 m/s\neffective range: 100-1,500 meters\nreactive armor defeat: Arrives before countermeasure activation\nmagazine: 5 rounds in AM-10 platform\nround weight: 180g\nrifle weight: 14 kg\npropellant: Dual-stage — chemical + solid rocket",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A KIR-10 round was fired through the engine block of an armored convoy vehicle, punching through both sides — the shooter was over a kilometer away and the reactive armor never triggered.",
+    "Arcturus is field testing KIR-10 rounds with a third stage — a terminal guidance package that allows the round to adjust course in the final 100 meters of flight."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "rifle",
+    "augment",
+    "ai",
+    "vehicle",
+    "armor",
+    "explosive",
+    "fire",
+    "tier 5"
+  ]
+}

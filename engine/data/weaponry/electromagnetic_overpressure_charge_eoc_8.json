@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab267a4d84c3617644314e44",
+  "name": "Electromagnetic Overpressure Charge EOC-8",
+  "type": "weapon",
+  "aliases": [
+    "The Flipper",
+    "Surge Bomb",
+    "Blackout Fist"
+  ],
+  "category": "explosive",
+  "description": "The EOC-8 is a hybrid charge that combines a conventional chemical overpressure detonation with a precisely timed electromagnetic pulse layered on top of the blast wave. The interaction between the two effects is the weapon's central innovation: the overpressure wave physically disrupts shielding and housing on electronic systems in the blast radius at the precise moment the EMP fires, meaning that Faraday-cage protection and hardened electronics — which would normally survive a standard EMP — are caught structurally compromised during the pulse. The result is a combined effect that destroys both shielded and unshielded electronics far more reliably than either component would achieve alone.\n\nFor cyberware-dependent individuals in the blast radius, the EOC-8 is catastrophic in ways that go beyond simple system shutdown. Neural interfaces, subdermal processors, and augmented sensory arrays that survive the physical blast are subjected to the EMP while their housing has been fractured by overpressure — a failure mode that most cyberware is not designed to survive. The resulting feedback events range from temporary sensory blackout to permanent neural interface damage depending on the grade of augmentation. High-end military cyberware with triple-redundant shielding has a roughly 40% failure rate within the EOC-8's inner blast radius. Standard commercial augmentation has virtually no survival rate.\n\nZheng-Dao Bioelectric developed the EOC-8 ostensibly as an anti-drone and anti-autonomous-system area denial tool, a framing that allowed them to navigate certain regulatory thresholds. The anti-personnel application against heavily augmented targets was — officially — an unintended consequence discovered during field trials. Unofficially, Zheng-Dao's internal documentation (portions of which leaked in 2197) makes clear the anti-augmentation profile was the primary design target from the beginning.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted (anti-drone certification required); de facto Prohibited for anti-personnel use",
+  "base_technologies": [
+    "Electromagnetic pulse generation",
+    "Chemical overpressure detonation",
+    "Synchronized dual-stage trigger sequencing"
+  ],
+  "specifications": "weight: 1.8 kg\nblast radius overpressure: 6 meters (lethal), 12 meters (incapacitating)\nemp radius: 15 meters (full effect), 25 meters (partial disruption)\npulse timing offset: EMP fires 0.003 seconds post-overpressure initiation\nshielding penetration: Effective against Faraday-rated enclosures up to MIL-SPEC Class 4\ncyberware failure rate: ~95% (commercial grade), ~40% (military grade) within inner radius\ntrigger options: Timer, remote, proximity (EM signature detection)\ncountermeasures: Blast-rated EMP hardening (Class 5+) offers partial protection; no commercial solution provides full immunity",
+  "tactical_use": "The EOC-8 is deployed as an area-denial and force-equalization tool in engagements where the opposing force is heavily augmented. Teams that know they are going up against chrome-heavy corporate security or augmented military units use it to strip the enemy's technological advantage before closing to contact. It is also used in facility raids to simultaneously destroy security electronics and disable any augmented defenders in a single detonation. Operators using it take care to deploy from outside the EMP radius or use shielded relay detonators — operators with significant cyberware have been known to trigger their own augmentation failures by detonating the charge at insufficient distance.",
+  "cultural_context": "The EOC-8 is politically charged in Meridian 88 in a way few weapons are. In a city where augmentation is deeply tied to identity, class, and survival, a weapon specifically engineered to destroy cyberware carries symbolic weight beyond its tactical function. Anti-augmentation extremist groups have used it as a statement weapon. Corporate security forces use it to 'level the field' against street operators who have invested years of earnings into augmentation. Among heavily augmented communities, being targeted with an EOC-8 is experienced as an existential attack — not just on the body, but on the self. There is a growing movement advocating for its complete prohibition under the same frameworks that govern biological weapons.",
+  "known_users": [
+    "Zheng-Dao internal security rapid response teams",
+    "Anti-augmentation faction 'The Unaltered'",
+    "Corporate extraction teams targeting augmented operatives",
+    "Military contractors operating in augmentation-heavy zones",
+    "Black-market dealer archetype known as 'the Equalizer'"
+  ],
+  "story_hooks": [
+    "A community leader in a heavily augmented lower-ward neighborhood is killed by an EOC-8 detonation. The blast radius included a medical clinic where three patients with life-support cyberware were also killed. Someone is sending a message — but to whom?",
+    "A player character with significant cyberware is informed by a contact that an EOC-8 has been planted somewhere in a building they need to enter. They have to find it before they go inside, or enter knowing what's waiting.",
+    "The 2197 Zheng-Dao leak surfaces again, this time with new pages that suggest the EOC-8's design was based on stolen research from a competitor — research that was originally intended to protect cyberware from EMP, not destroy it.",
+    "A Zheng-Dao executive offers a substantial contract: recover a shipment of EOC-8 units that went missing in transit. The players discover the shipment was not lost — it was sold internally to a buyer the executive does not want identified."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "identity",
+    "augment",
+    "cyberware",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "medical",
+    "clinic",
+    "market",
+    "survival",
+    "drone",
+    "fire",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "019d6143aa537693b121669e7a1d300c",
+  "name": "Tessera Industries Programmable Acoustic Environment",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Programmable Acoustic Environment",
+  "type": "technology",
+  "aliases": [
+    "PAE",
+    "Sound Room",
+    "Tessera Acoustics",
+    "Noise Craft"
+  ],
+  "subcategory": "entertainment",
+  "description": "A room-scale acoustic engineering system that can create any sound environment — from concert halls to forests to outer space — by generating, absorbing, and redirecting sound waves through arrays of speakers and active noise cancellation panels. The PAE can make a small room sound like a cathedral, eliminate all ambient noise to create perfect silence, or produce directional audio that allows different people in the same room to hear different soundscapes simultaneously. Tessera markets it for entertainment venues, recording studios, and therapeutic environments.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Active acoustic environment generation",
+    "Directional audio beam steering",
+    "Programmable room acoustic simulation"
+  ],
+  "enables": [
+    "Customizable room acoustics",
+    "Simultaneous multi-environment audio",
+    "Therapeutic soundscape generation",
+    "Perfect acoustic isolation"
+  ],
+  "social_impact": "The PAE has made acoustic environment a designable commodity — offices that sound like beaches, bedrooms that sound like rainstorms, and public spaces where each person walks through their own personal soundscape. The technology has also revealed how profoundly sound environment affects human psychology: productivity, creativity, and emotional regulation are all measurably improved in PAE-optimized spaces, creating yet another quality-of-life divide between PAE-equipped and unequipped environments.",
+  "story_hooks": [
+    "A PAE installation has been programmed to produce infrasonic frequencies below conscious perception that cause anxiety and unease in occupants — someone is using the acoustic environment as a psychological weapon.",
+    "A PAE in a public space has developed a resonance harmonic that is causing structural vibrations in the building — the acoustic system is literally shaking the building apart at frequencies that no one can hear."
+  ],
+  "tags": [
+    "entertainment",
+    "technology",
+    "weapon",
+    "ai",
+    "market",
+    "rain",
+    "storm",
+    "tier 3"
+  ]
+}

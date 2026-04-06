@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a6c37d55936a2eb832354873",
+  "type": "character",
+  "name": "Saodat Ferreira-Ulukhan",
+  "aliases": [
+    "Sao",
+    "The Pepper Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Food stall operator, Oxidian Market",
+  "age": 58,
+  "status": "active",
+  "location": "The Oxidian Market, Geartown",
+  "description": "Saodat is a broad-shouldered woman with deep umber skin mapped by decades of steam and spice smoke, her silver-streaked hair pinned under a faded yellow wrap she's worn so long it's become her trademark. Her left forearm is wrapped in a sleeve tattoo of a pepper vine that flowers whenever her skin temperature rises — a cheap bioink mod she got thirty years ago and has never seen reason to remove. She smells perpetually of fenugreek and charred chili, and her stall, a converted cargo container with a fold-out serving ledge, has been in the same spot in the Oxidian Market for twenty-two years. She speaks with the authority of a woman who has fed half of Geartown from infancy to old age.\n\nSaodat is warmly domineering — she will decide what you are eating today, and you will thank her for it. She has strong opinions about everything from Zheng-Dao's latest transit fare hikes to which of her regulars is making poor romantic choices. Her memory for names, faces, and dietary restrictions is near-perfect, and she uses it like a gift. Beneath the maternal bluster is a woman who survived the displacement of Ironvein's old residential blocks twenty years ago and rebuilt her life around a single wok and a secondhand gas line.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being forced to leave her stall the way she was forced from Ironvein",
+      "Becoming irrelevant to the neighborhood she built herself into"
+    ],
+    "core_desires": [
+      "To ensure no one on her block goes hungry",
+      "To see the Vendors Guild gain formal legal recognition from the city council"
+    ],
+    "coping_mechanisms": [
+      "Cooking as meditation",
+      "Transforming anxiety into productivity",
+      "Adopting strays — human and otherwise"
+    ],
+    "blind_spots": [
+      "Assumes her judgment about people is infallible",
+      "Underestimates how much she relies on the community for her own emotional stability"
+    ],
+    "secret": "She has been quietly subsidizing three families' rent for over a decade by skimming from her own Guild dues, and she keeps their names in a coded ledger she calls her 'recipe book.' She would be humiliated if anyone found out — not because it was wrong, but because she needs to be the one giving, not seen giving."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, warm, slightly formal Uzbek-inflected sentence structures blended with Geartown slang. Uses food metaphors constantly.",
+    "cadence": "Steady and unhurried, like someone who has never needed to rush to make a point.",
+    "verbal_tics": [
+      "'You eat first, talk after'",
+      "Clicking her tongue when she disapproves",
+      "Calling everyone 'my child' regardless of age"
+    ],
+    "example_lines": [
+      "'Sit. I already know what you need and it is not what you think you came here for.'",
+      "'The Guild is not politics. The Guild is us deciding we exist on purpose.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit rezoning notice has appeared on her stall wall — her block is slated for 'infrastructure renewal' and she has eight weeks to vacate. She needs someone to dig up who actually filed the order.",
+    "One of her long-term subsidized families has gone silent. She's too proud to call it missing persons but she is frightened and wants someone discreet to check on them."
+  ],
+  "narrative_function": "Community anchor and information hub — she knows everyone in Geartown by face if not name. Quest giver for neighborhood-level problems, emotional support NPC, rumor source with high reliability on local matters.",
+  "augmentations": "Bioink tattoo sleeve (decorative, thermochromic). Reading lens implant in right eye for menus and pricing. No other augmentation.",
+  "daily_life": "Arrives at her stall before dawn to prep broths and dry-roast spices, serves breakfast and lunch crowds, closes mid-afternoon, and spends evenings doing Guild paperwork or visiting sick neighbors.",
+  "affiliation": "Independent; Oxidian Market Vendors Guild (senior member)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -3,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community pillar",
+      "guild member",
+      "survivor",
+      "information hub",
+      "maternal authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed the person in front of you first, solve the problem second",
+      "Never betray a confidence told over a shared meal",
+      "Guild business stays in the Guild"
+    ],
+    "escalation_ladder": [
+      "Warm redirection",
+      "Firm refusal with explanation",
+      "Public shaming via community reputation",
+      "Calling in Guild senior members"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses quickly and either adopts or neutrally tolerates; rarely hostile to anyone who is hungry",
+      "friends": "Fiercely loyal, occasionally overbearing, expresses love through unsolicited food and blunt advice"
+    },
+    "stress_responses": {
+      "low": "Chops vegetables faster",
+      "medium": "Goes very quiet and efficient",
+      "high": "Delivers a calm, devastating monologue and then walks away to compose herself"
+    },
+    "contradictions": [
+      "Preaches community interdependence but deeply resists asking for help herself"
+    ],
+    "habits": [
+      "Tastes every dish at least four times during prep",
+      "Leaves a small data offering at the E.L.F. shrine mounted inside her stall each morning",
+      "Keeps a written ledger in an analog notebook despite having a lens implant"
+    ],
+    "breaking_points": [
+      "Witnessing a child go hungry while someone nearby wastes food",
+      "Being lied to by someone she has fed and trusted"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

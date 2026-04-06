@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a6537d2284c1e44e642fd817",
+  "type": "character",
+  "name": "Malika Akerblom-Manu",
+  "aliases": [
+    "Keystone",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Covert entry and social penetration specialist — infiltrator",
+  "age": 32,
+  "status": "active",
+  "location": "The Spires — mid-level corporate residential towers",
+  "description": "Malika Akerblom-Manu are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 32, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a infiltrator out of The Spires, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Malika Akerblom-Manu describe them as a precision instrument — point them at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.41,
+      "ideal": 0.53,
+      "id": 0.96,
+      "shadow": 0.59,
+      "mask": 0.97,
+      "ghost": 0.63
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "The quiet — silence means something is about to go very wrong",
+      "Becoming obsolete as augmentation technology outpaces their chrome"
+    ],
+    "core_desires": [
+      "Control — over their body, their schedule, their future",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Power — enough leverage that nobody ever threatens them again"
+    ],
+    "coping_mechanisms": [
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Planning — responds to chaos by making detailed contingency plans for everything"
+    ],
+    "blind_spots": [
+      "Cannot accept help without interpreting it as leverage",
+      "Trusts technology more than people — machines don't betray",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Malika Akerblom-Manu murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
+    "verbal_tics": [
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"The best disguise is being exactly who they expect to see.\"",
+      "\"I was in the building for six hours before anyone realized I didn't work there.\"",
+      "\"Security is a story people tell themselves. I'm the plot twist.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Malika Akerblom-Manu intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "Someone is impersonating Malika Akerblom-Manu on jobs, and the impersonator is better at the work than the original",
+    "A Tier 4 executive offers Malika Akerblom-Manu a permanent position — the pay is obscene and the strings are invisible until they tighten"
+  ],
+  "narrative_function": "Malika Akerblom-Manu functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Thermal masking system — body heat signature can be suppressed or spoofed. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Independent — maintains network of professional contacts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 6
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 8
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 8
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.46,
+      "caution": 0.32,
+      "loyalty": 0.65,
+      "greed": 0.59,
+      "empathy": 0.11
+    },
+    "drives": [
+      "revenge",
+      "reputation",
+      "loyalty"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 8,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "technical expertise with augmentation systems",
+      "pain tolerance beyond normal limits",
+      "ability to remain calm under fire"
+    ],
+    "weaknesses": [
+      "overconfidence in specialty areas leading to blind spots",
+      "substance dependency — functional but fragile",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "infiltrator",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Carries a specific caliber round as a lucky charm — has never fired it"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Thermal masking system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Thermal masking system — body heat signature can be suppressed or spoofed",
+      "replaces": ""
+    },
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Social Chameleon": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

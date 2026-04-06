@@ -1,0 +1,250 @@
+{
+  "id": "019d6143a69a7264b59d87c1ff5ed834",
+  "type": "character",
+  "name": "Philomena Satu-Ibragimova",
+  "aliases": [
+    "Philo",
+    "The Dreamer"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Retired Sterling-Nakamura mid-level analyst; now an obsessive informal urban historian and neighborhood storyteller",
+  "age": 63,
+  "status": "active",
+  "location": "Norwood Quiet — a ground-floor apartment whose windows face the Ferrogate overpass, and the Norwood Quiet public garden",
+  "description": "Philomena Satu-Ibragimova has the distracted, luminous quality of someone who is always halfway in a different time period. They are slight and wiry with warm golden-olive skin, deep-set dark eyes, and hair they grow long and tie back badly ��� it escapes in grey-shot black tendrils around their face no matter what they do with it. Their color-changing hair implant, an old Sterling-Nakamura perk from fifteen years back, cycles very slowly through muted earth tones: terracotta, ash-brown, the particular green of old moss. They don't style it so much as permit it. They wear comfortable layered clothes with too many pockets, all of which contain notebooks, memory sticks, pressed plant material, or printed photographs.\n\nPhilomena spent twenty-six years as a mid-level urban systems analyst for Sterling-Nakamura, modeling population flow, resource distribution, and neighborhood development trajectories. They were good at it and hated it by the end — specifically, hated the way the models treated neighborhoods as friction to be managed rather than places where people had histories worth preserving. They retired at fifty-seven on a comfortable but not generous package and immediately began doing with their own time what Sterling-Nakamura had forbidden: obsessively, lovingly documenting the specific human texture of Norwood Quiet — oral histories, photographs, material culture, the stories behind the names of alleys and squares and the ELF shrines people have been tending for forty years. They have become, without planning it, the neighborhood's memory. They are also known to know the precise location of every functional ELF shrine in a six-block radius and which offerings each prefers.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the history they're preserving will be erased anyway — that documentation changes nothing",
+      "That their years building models for Sterling-Nakamura contributed to decisions that displaced real people"
+    ],
+    "core_desires": [
+      "To make a record that actually matters to the people it's about",
+      "To find proof that the city contains more good faith than they currently believe"
+    ],
+    "coping_mechanisms": [
+      "Immersive focused work — gets lost in research for hours",
+      "Collecting and tending things: plants, shrine offerings, physical documents",
+      "Making gifts of their documentation to the people they interview"
+    ],
+    "blind_spots": [
+      "Can romanticize neighborhood history, smoothing over the conflicts within communities they're trying to preserve",
+      "Sometimes treats real people as primary sources rather than as people who have current needs"
+    ],
+    "secret": "While at Sterling-Nakamura they ran a model — under instruction — that projected optimal population density and implicitly recommended the 2181 Brightmoor Reclamation displacement. They flagged ethical concerns internally. They were told the model would be one of several inputs. They don't know if that was true. Three thousand people were relocated. Philomena has been unable to find out how many of them they actually know through their current documentation work, and they haven't told any of them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Layered and associative — tends to tell you three things that seem unrelated and then connect them in a way that makes sense only in retrospect; uses precise technical vocabulary for urban systems, switches to warm colloquial when talking about people",
+    "cadence": "Thoughtful, slightly wandering, often picks up a thread they dropped two sentences back",
+    "verbal_tics": [
+      "'And here's the thing about that—'",
+      "'Which connects to something I found last week'",
+      "Long pauses mid-sentence while they're looking for the right word"
+    ],
+    "example_lines": [
+      "'And here's the thing about that — the ELF in the transformer box at Hennessy Lane has been receiving offerings for at least nineteen years, which means whoever started that practice has probably already left the neighborhood, but the practice stays. That's how history actually works.'",
+      "'I keep all the interviews. Even the ones that contradict each other. Especially those.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Philomena has found in their documentation research a pattern of land registry transfers that precedes every major Sterling-Nakamura urban development project by eighteen months — and the pattern has just appeared in Norwood Quiet",
+    "One of their oral history subjects has told them something that directly implicates a current community council member in a cover-up from thirty years ago, and Philomena is wrestling with what responsible documentation requires"
+  ],
+  "narrative_function": "Local color and information source; knows the human history of Norwood Quiet in granular detail, including who used to live where, what was there before the current building, and whose family goes back how far. Their Sterling-Nakamura background means they can also read corporate urban development plans with alarming accuracy and spot what's being planned before it's announced.",
+  "augmentations": "Color-changing hair implant (Sterling-Nakamura executive perk, now cycles slowly through earth tones; cosmetic). Subdermal memory-storage palimpsest in right palm — a Sterling-Nakamura analyst tool they kept after retirement, used now for personal documentation. No other augmentations.",
+  "daily_life": "Morning rounds of the public garden where they tend the community plantings and whatever ELF shrine has appeared overnight; afternoon documentation work — interviews, photographs, site visits; evenings at the apartment reviewing material and writing up histories that they publish to a small community data-feed with maybe two hundred subscribers.",
+  "affiliation": "Sterling-Nakamura (retired); Norwood Quiet Neighborhood History Project (self-founded); informal ELF-shrine network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "urban historian",
+      "ELF-devout",
+      "corporate past",
+      "guilt-carrier",
+      "community memory"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Preserve the record — document before acting",
+      "Ask permission to tell someone's story, always",
+      "Don't burn a source for a bigger story; don't suppress a story because a source is valuable"
+    ],
+    "escalation_ladder": [
+      "Asking questions and taking notes",
+      "Publishing to their community feed",
+      "Bringing documentation to the community council",
+      "Going to outside press or advocacy organizations as a last resort"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Curious and genuinely interested to the point of being slightly overwhelming — they want to know your family history within twenty minutes",
+      "friends": "Warm, scattered, reliably shows up with something they found that made them think of you"
+    },
+    "stress_responses": {
+      "low": "Dives deeper into research",
+      "medium": "Becomes indecisive — paralyzed by competing documentary considerations",
+      "high": "Clarity arrives; makes a decision based purely on what the record requires"
+    },
+    "contradictions": [
+      "Committed to community memory but personally responsible for one of the biggest displacements in recent neighborhood history",
+      "Prefers to observe and document rather than act but has begun to accept that these are not separable"
+    ],
+    "habits": [
+      "Photographs everything — doorways, shrine offerings, paint colors, people's hands",
+      "Names the plants in the public garden after people from their oral histories",
+      "Leaves a small data-offering at every ELF shrine they pass"
+    ],
+    "breaking_points": [
+      "Watching a building they've documented being demolished without record",
+      "Being asked to falsify or omit something from an oral history account"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Glenville Sound district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired as junior urban systems analyst at Sterling-Nakamura",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ran the Brightmoor Reclamation density model; flagged ethics concerns internally",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Brightmoor displacement of approximately 3,000 residents",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retired from Sterling-Nakamura",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moved to Norwood Quiet; began oral history project",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Founded Norwood Quiet Neighborhood History Project; began community data-feed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

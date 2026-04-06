@@ -1,0 +1,102 @@
+{
+  "id": "019d6143a9227d238483c2c972acb9a3",
+  "type": "place",
+  "name": "Kamm's Landing",
+  "aliases": [
+    "Kamm's Corners",
+    "The Landing",
+    "West Side Quiet"
+  ],
+  "description": "Kamm's Corners was always the quiet part of Cleveland's west side. Irish and German families settled here because it was far enough from downtown to feel suburban and close enough to commute. The neighborhood's defining feature was its ordinariness — residential streets, small commercial strips, taverns, churches, and the particular predictability of a place where people came to raise families and not much else. That ordinariness has become, in the context of the corridor, a form of luxury.\n\nKamm's Landing is what happens when a corponation decides that normalcy is a product. Palladian Construction — the corridor's dominant construction and real estate corponation — acquired development rights to the Kamm's Corners residential zone in 2167 and invested Φ8 billion in what it called the Residential Stability Initiative. The streets were resurfaced. The houses were retrofitted with modern infrastructure while preserving their mid-century aesthetics. Surveillance was installed but calibrated to be invisible. The result is a neighborhood that looks, feels, and functions like a suburb from 2120 — deliberately, expensively, artificially. The trees are real. The lawns are maintained by autonomous systems. The streets are safe because Palladian security patrols them with a light touch that is no less total for being gentle.\n\nThe population is predominantly Tier 2-3 — corporate middle managers, technical specialists, skilled tradespeople who can afford Palladian's residential contracts but not the Core's premium housing. The Irish and German cultural identity persists in the pub names, the church schedules, and the neighborhood's general attitude toward outsiders, which is polite, cautious, and not entirely welcoming. Kamm's Landing is comfortable. It is also a controlled environment masquerading as a community, where Palladian's residential contracts include behavioral clauses that govern everything from noise levels to lawn maintenance to the number of guests a household may host. The residents accept these terms because the alternative — the lower tiers, the ungoverned zones, the places where safety is not a product — is worse. Kamm's Landing sells the feeling of a life that used to be free.",
+  "atmosphere": {
+    "sights": [
+      "Tree-lined residential streets that look like they were designed by someone who studied photographs of 2120 suburbs — because they were",
+      "Mid-century houses retrofitted with invisible modern infrastructure, their aesthetics preserved with museum-quality precision",
+      "Palladian Construction logos on utility covers and street signs — small, tasteful, inescapable",
+      "Neighborhood pubs with Irish and German names, their interiors updated but their atmosphere carefully maintained",
+      "The absence of visible drones, exposed infrastructure, or any evidence of the century that actually produced this place"
+    ],
+    "sounds": [
+      "Quiet — engineered quiet, maintained by sound-dampening infrastructure embedded in the road surface and building facades",
+      "Lawn maintenance drones operating in the pre-dawn hours, their work completed before residents wake",
+      "Church bells from Saint Joseph's and the German Lutheran — real bells, on schedules that predate the corridor",
+      "Children — Kamm's Landing has one of the highest family-with-children rates in the Cleveland sprawl, and the sound of children playing is both genuine and commercially promoted in Palladian's marketing materials",
+      "The absence of advertisement audio — Palladian's residential contracts prohibit corporate sonic advertising within the zone"
+    ],
+    "smells": [
+      "Cut grass and clean air — the baseline scent of a residential zone where atmospheric quality is part of the product",
+      "Pub cooking — corned beef, sauerkraut, shepherd's pie, recipes maintained as cultural artifacts",
+      "Nothing chemical, nothing industrial, nothing that reminds you that you live in a megacity corridor"
+    ],
+    "feel": "Kamm's Landing feels like nostalgia made solid — a neighborhood that has been engineered to evoke a past that most of its residents never experienced. It is comfortable in the way that a well-designed simulation is comfortable: you know it isn't real, but the alternative to not knowing is worse. The behavioral contracts in the residential agreements are the price of the illusion, and most residents have decided the price is worth paying.",
+    "tags": []
+  },
+  "demographics": "Approximately 20,000 residents, predominantly Tier 2-3 families. Strong Irish and German cultural identification maintained through community organizations and commercial establishments. One of the lowest augmentation-complication rates in the Cleveland sprawl, due to the population's access to Tier 2-3 healthcare. Minimal excluded population — Palladian's security screens for residency eligibility.",
+  "economy": "Residential services — Palladian Construction is both landlord and infrastructure provider. The commercial strips along Lorain and Rocky River Drive serve the residential population with curated retail that matches the neighborhood's aesthetic mandate. Employment is primarily remote corporate work, conducted from home offices that Palladian's infrastructure supports with dedicated bandwidth and neural-interface optimization.",
+  "power_structure": "Palladian Construction holds development sovereignty. Tollgate provides infrastructure backbone under contract to Palladian. The West Side Community Council, a neighborhood governance body, operates within parameters defined by Palladian's community charter — it has authority over social programming, cultural events, and minor dispute resolution, but no power to countermand Palladian's development or behavioral policies.",
+  "dangers": [
+    "Behavioral contract enforcement — violations of Palladian's residential terms can result in eviction, which in the corridor means losing your tier-appropriate housing with no guarantee of finding equivalent elsewhere",
+    "Surveillance totality — the absence of visible monitoring does not mean the absence of monitoring; Palladian's systems are embedded, comprehensive, and shared with an undisclosed list of third parties",
+    "Social conformity pressure — the community's emphasis on 'stability' creates an environment hostile to deviation, dissent, or anything that disrupts the curated normalcy",
+    "Isolation — Kamm's Landing's comfortable bubble leaves its residents poorly prepared for encounters with the world outside the bubble"
+  ],
+  "opportunities": [
+    "Palladian's residential infrastructure is top-tier and accessible to Tier 2 residents — a genuine quality-of-life advantage",
+    "The neighborhood's perceived normalcy makes it an unlikely location for operations, which is exactly what makes it useful for staging",
+    "The commercial strips are meeting-friendly environments where mid-tier corporate workers congregate — a source of information and contacts",
+    "Palladian's behavioral contracts create resentment that can be leveraged — not everyone who lives here is happy about the terms they've accepted"
+  ],
+  "story_hooks": [
+    "A Kamm's Landing resident has been evicted after Palladian's monitoring systems detected 'anomalous social patterns' — but the resident claims the anomaly was hosting a meeting of people planning to challenge Palladian's community charter",
+    "The engineered quiet is hiding something — residents on the neighborhood's eastern edge report hearing low-frequency vibrations at night that match no known infrastructure signature",
+    "A Palladian security officer has approached a fixer with evidence that the company's 'residential stability' data is being sold to Tessera's Behavioral Exchange — and is being used to model cognitive manipulation strategies targeting suburban populations"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Burnished Market (Ohio City)",
+      "Lakewood Ledge (Lakewood)",
+      "Iron Bend (The Flats)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tier 2-3 families living the curated suburban experience",
+    "Palladian Construction employees and security personnel",
+    "West side workers commuting to The Gate or the industrial zones",
+    "Operators who appreciate a neighborhood where no one expects anything to happen"
+  ],
+  "notable_locations": [
+    {
+      "name": "Rocky River Strip",
+      "description": "The commercial corridor along Rocky River Drive — curated retail, pubs, and services that maintain the mid-century suburban aesthetic",
+      "tags": []
+    },
+    {
+      "name": "Saint Joseph's and the German Lutheran",
+      "description": "The neighborhood's two anchor churches — still functioning congregations, their schedules and traditions preserved as community infrastructure",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.4477,
+    "lng": -81.7398,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "rain",
+    "night",
+    "rights"
+  ]
+}

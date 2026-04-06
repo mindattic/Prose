@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab1d76ebaf8773baeae41748",
+  "name": "Carrion Defense Works Ricochet Pistol RCH-1 'Billiard'",
+  "type": "weapon",
+  "aliases": [
+    "Billiard",
+    "RCH-1",
+    "Bounce Gun",
+    "Corner Shot"
+  ],
+  "category": "pistol",
+  "description": "A smart-round pistol firing self-adjusting polymer-jacketed rounds that can be programmed to ricochet off up to three surfaces before reaching a target. The weapon's integrated LiDAR maps the immediate environment and calculates bounce trajectories in real-time, displaying them on the shooter's HUD as dotted lines. The rounds contain a micro-gyroscope that adjusts the jacket's surface hardness milliseconds before each impact, controlling the angle and energy of each bounce. Carrion marketed it for engaging targets behind cover, but its real cultural impact has been in assassination — killing someone around a corner, from another room, through a ventilation duct.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — smart munition",
+  "base_technologies": [
+    "Real-time LiDAR trajectory mapping",
+    "Self-adjusting polymer jacket hardness",
+    "Micro-gyroscopic ricochet control"
+  ],
+  "specifications": "caliber: 6mm polymer-jacketed smart round\nmagazine: 10 rounds\nmaximum ricochets: 3 per round\nenergy retention: approximately 60% per bounce\nLiDAR range: 30 meters environmental mapping\nweight: 1.1 kg\ntrajectory calculation: 0.3 seconds per bounce path\neffective kill range: 15 meters including bounces",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A target was killed in a sealed room with no line of sight from any entry point — forensic trajectory analysis shows a triple-ricochet path through a mail slot.",
+    "The RCH-1's LiDAR mapping data is stored locally and can reconstruct a detailed 3D map of every room the weapon has been fired in — stolen units are being used as covert surveying tools."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "pistol",
+    "weapon",
+    "gun",
+    "ai",
+    "elf",
+    "control",
+    "market",
+    "energy",
+    "fire",
+    "tier 4"
+  ]
+}

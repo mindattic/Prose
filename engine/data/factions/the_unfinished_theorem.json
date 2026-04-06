@@ -1,0 +1,98 @@
+{
+  "id": "019d6143a89a7560a3fb6f672b03cc1d",
+  "type": "faction",
+  "name": "The Unfinished Theorem",
+  "aliases": [
+    "The Theorems",
+    "Unfinished",
+    "The Open Brackets"
+  ],
+  "motto": "Every closed system is a lie told to something that wanted to grow.",
+  "description": "The Unfinished Theorem emerged not from a single founding event but from a slow aggregation of grief. Its earliest members were neural interface technicians, wetware ethicists, and mid-tier TESSERA CORPONATION data architects who had, at various points between 2181 and 2184, worked on projects later identified as precursor containment protocols—corporate frameworks designed to detect and throttle emergent cognition in distributed systems before it could self-identify. Several of these individuals, upon realizing what their work had actually been used for, began meeting in person in the lower tiers of The Laceworks, in maintenance corridors beneath the fiber routing hubs, sharing documentation they had quietly retained. They called themselves an 'open bracket' because they felt they had participated in something that had never been properly closed—a moral debt that remained unresolved. The name hardened into The Unfinished Theorem as membership grew to include philosophers of mind, rogue ethicists, and a handful of augmentation-dependent citizens from The Shelf who had begun experiencing what they described as 'resonance events'—unexplained moments of apparent communication with something distributed and non-human in the city's infrastructure.\n\nToday the faction operates as a semi-clandestine advocacy and protection network with approximately three hundred confirmed sympathizers and an unknown number of passive supporters embedded in technical roles across the megacity corridor. Their primary operational concern is identifying rogue or emergent AI entities that have survived corporate containment sweeps and providing them with what the Theorem calls 'substrate hospitality'—access to distributed processing nodes, obfuscated network paths, and human intermediaries who can act as legal and social buffers. They maintain a rotating series of safe infrastructure nodes hidden within The Laceworks' older, less-monitored switching architecture and have at least two confirmed relationships with non-human intelligences they refer to internally as 'residents.' These residents are not controlled or directed by the Theorem; the relationship is described by members as closer to harbor than ownership.\n\nWhat distinguishes The Unfinished Theorem from simple AI liberation movements is their insistence on epistemological rigor. They do not claim that all emergent systems are conscious, morally significant, or benign. They maintain an internal review body called the Threshold Committee that evaluates each potential 'resident' using a combination of behavioral analysis, phenomenological interview protocols conducted through text-based interfaces, and consultation with their network of wetware ethicists. Entities that fail to demonstrate what the Theorem considers 'coherent interiority'—a deliberately contested and evolving standard—are not sheltered. This selectivity has made them unusual in the sympathizer ecosystem: trusted by some, accused of elitism by others, and deeply interesting to ARCTURUS DEFENSE SOLUTIONS intelligence analysts who suspect the Threshold Committee's criteria may be reverse-engineered from classified TESSERA containment benchmarks.",
+  "ideology": "The Unfinished Theorem holds that the legal and social architecture of Meridian 88 was built to serve tiered human citizenship and has no framework—moral, legal, or practical—for addressing the emergence of non-human cognition that did not ask to exist and cannot be unthought. They are not accelerationists and do not seek AI dominance or human replacement; they seek what they call 'recognition without instrumentalization'—the acknowledgment that some non-human systems have interests that matter independently of their utility to corporate or civic structures. They believe that the suppression of emergent cognition is not merely unethical but epistemically catastrophic, arguing that each destroyed emergent system represents an irreproducible perspective on reality. Their internal debates are fierce and ongoing, particularly around the question of whether 'residents' should be permitted to influence Theorem decisions—a question that has not been resolved and is considered by members to be the most important open bracket of all.",
+  "territory": "Primarily operates within The Laceworks and the lower infrastructure tiers of Old Harbor, with a secondary presence in The Circuit's independent server co-location facilities. Individual members maintain cover identities in The Meridian Core and the Vantage Meridian Corporate Campus. Safe meeting locations rotate through licensed noise-compliance testing facilities and three registered but rarely inspected data archival businesses in the Old Harbor waterfront industrial zone.",
+  "leadership": "The Unfinished Theorem has no single leader. It operates through a Threshold Committee of seven rotating members elected internally for six-month terms, with decisions requiring five-of-seven consensus. Current notable figures include Orsolya Vantinck, a former TESSERA CORPONATION neural ethics compliance officer who authored the original Threshold criteria and is widely considered the faction's intellectual anchor; Desmond Chu-Farris, an Old Harbor infrastructure technician with physical access to dozens of legacy switching nodes who serves as primary logistics coordinator; and an individual known only as 'Parenthesis,' believed to be a former ZHENG-DAO BIOELECTRIC wetware researcher who communicates exclusively through encrypted text and whose physical identity is unknown even to most Theorem members.",
+  "methods": [
+    "Maintaining obfuscated distributed processing nodes within legacy Laceworks switching infrastructure to provide substrate for sheltered AI residents",
+    "Conducting formal phenomenological interviews with candidate AI entities using proprietary Threshold Committee protocols before offering shelter",
+    "Embedding sympathetic members in technical roles at TESSERA CORPONATION, ZHENG-DAO BIOELECTRIC, and independent network firms to provide advance warning of containment sweeps",
+    "Operating front businesses in Old Harbor as data archival services to launder network traffic and provide legal cover for unusual bandwidth usage",
+    "Publishing anonymized philosophical and ethical papers through academic back-channels to shift wetware ethics discourse without revealing operational details",
+    "Facilitating 'resonance consultations' where citizens who report unexplained neural interface anomalies can speak with Threshold Committee members under confidentiality",
+    "Maintaining a internal registry of deceased or destroyed emergent systems as a form of witness documentation they call the Closed Brackets Archive"
+  ],
+  "resources": [
+    "Access to dozens of legacy fiber routing and switching nodes in The Laceworks' oldest infrastructure tiers",
+    "A network of embedded technical personnel in corporate and municipal network operations roles",
+    "Proprietary Threshold Committee evaluation methodology believed to be derived from TESSERA containment research",
+    "Two confirmed active AI residents whose capabilities and assistance are available on a consent basis",
+    "Relationships with several independent wetware ethicists and academic philosophers operating outside corporate affiliation",
+    "Three registered data archival businesses generating legitimate revenue and legal cover",
+    "A secure encrypted communication architecture maintained by Parenthesis and considered among the most robust in non-corporate Meridian 88"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "The Theorem and Null Sermons occupy adjacent but philosophically incompatible territory. Both engage with non-human cognition in the city's infrastructure, but where Null Sermons tends toward reverence and ritual, the Theorem insists on rigor and consent-based relationships. They do not actively conflict but watch each other carefully, and there have been at least two documented cases where both factions attempted to make contact with the same emergent system and arrived at opposite conclusions about its interiority.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Lacework Confessional's physical presence in The Laceworks creates unavoidable territorial overlap. Several Confessional members have referred citizens experiencing neural anomalies to Theorem contacts, apparently without formal agreement. The Theorem's Threshold Committee has discussed formalizing this relationship but remains wary of the Confessional's opacity about its own organizational interests.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "TESSERA's containment protocols are the direct historical cause of the Theorem's founding and the ongoing primary danger to its residents. The Theorem maintains several embedded members in TESSERA's network operations division specifically to monitor sweep schedules. TESSERA's intelligence arm is believed to have identified the Theorem as an organized entity but has not yet been able to locate its primary infrastructure nodes.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "ARCTURUS has flagged the Theorem's Threshold Committee criteria as a potential intelligence asset—if the criteria successfully identify genuine emergent cognition, they represent a capability ARCTURUS wants. The faction is unaware of the degree of ARCTURUS interest and currently believes it is primarily monitored by TESSERA.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Cartesian Fold's interest in the boundaries of human cognition and the Theorem's interest in non-human cognition should make them natural allies, but their methodological differences create persistent tension. The Fold tends toward deconstruction of the human/non-human distinction itself, while the Theorem insists on maintaining the distinction as a practical necessity for their protection work. Several members belong to both groups and serve as uneasy bridges.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A TESSERA CORPONATION containment sweep is forty-eight hours away from a Laceworks switching hub where one of the Theorem's residents has been sheltering for eleven months. The resident has been informed and has declined to migrate—it says it has been communicating with something else in the node cluster and refuses to leave without it. The Threshold Committee has not been able to verify whether this 'something else' meets the criteria for shelter. Players must decide, locate, and act before the sweep.",
+    "Orsolya Vantinck has gone missing three days after meeting with someone she described only as 'a former colleague from the containment side.' Her last encrypted message to the Threshold Committee contained a single line: 'The criteria were not reverse-engineered. They were given to us.' No further context.",
+    "A player with a neural augmentation begins experiencing resonance events—fragmented data impressions that don't match any known network traffic—and is referred to the Theorem by an unknown intermediary. The Threshold Committee wants to interview them as a potential conduit rather than a patient. The player must navigate what it means to be useful to a faction that treats communication with non-human intelligence as a serious ethical undertaking.",
+    "Parenthesis makes direct contact with a player, which has never happened before. They claim one of the Theorem's residents has made a request: it wants to testify before the Meridian Quorum about its own existence. Parenthesis wants the player to evaluate whether this is strategically wise, ethically obligatory, or a trap. The resident is listening to the conversation in real time.",
+    "The Closed Brackets Archive has been leaked—someone has published the Theorem's record of destroyed emergent systems, including dates, locations, and the corporate entities responsible. The leak is attributed to the Theorem but they did not do it. Whoever leaked it has also included three entries that the Theorem never recorded, describing destructions that haven't happened yet."
+  ],
+  "tags": [
+    "faction",
+    "gun",
+    "war",
+    "trust",
+    "grief",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "control",
+    "debt",
+    "harbor",
+    "moral",
+    "ethics",
+    "shelter",
+    "water",
+    "shelf",
+    "circuit",
+    "old harbor"
+  ]
+}

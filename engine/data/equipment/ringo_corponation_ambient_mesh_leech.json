@@ -1,0 +1,68 @@
+{
+  "id": "019d6143a8687134baf155f76422d947",
+  "name": "Ringo Corponation Ambient Mesh Leech",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Ambient Mesh Leech",
+  "type": "equipment",
+  "aliases": [
+    "The Barnacle",
+    "The Free Rider",
+    "Ghost Node"
+  ],
+  "category": "comms",
+  "description": "The Ambient Mesh Leech is a passive network parasitism device — a flat, adhesive unit roughly the size of a playing card that attaches to any surface in proximity to active mesh infrastructure and draws communication access from it without registration, authentication, or detectable network presence. It does not connect to the mesh. It infiltrates the connection of something that is already connected, riding the existing authenticated session of a nearby node — a traffic signal, a building management system, a licensed commercial relay — without altering that node's behavior in any measurable way. To the mesh, the Leech does not exist.\n\nRingo Corponation developed the Leech as an infrastructure audit tool, ostensibly for identifying unauthorized mesh connections by demonstrating how easily they could be established — a rationale that satisfied regulators and provided the legal framework for a product that is, in practice, a highly sophisticated unauthorized access device. The Leech's Phantom Session Architecture generates a synthetic traffic signature that mimics the statistical profile of the host node's normal data throughput, distributing Leech communications invisibly within the host's existing traffic patterns. Extracting the Leech's communications from a captured traffic log requires knowing the Leech's specific session key — without it, the data is indistinguishable from the host node's routine transmissions.\n\nThe Leech is a tool of economic necessity as much as operational security. In Meridian 88's lower precincts, licensed mesh access is expensive, monitored, and increasingly tiered — the richest users get the cleanest channels, and the poorest make do with degraded public access points that log everything. The Leech provides clean, unmonitored connectivity by stealing it from infrastructure that has already paid for the privilege. This has made it ubiquitous far beyond the criminal and intelligence communities Ringo nominally targets — it is found in community centers, underground clinics, and housing collectives that cannot afford licensed access and will not tolerate surveillance of what little connectivity they have.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Phantom Session Architecture (synthetic traffic signature generation)",
+    "Passive host-node session infiltration",
+    "Statistical traffic mimicry",
+    "Adhesive surface-mount deployment",
+    "Session key encryption (operator-defined)"
+  ],
+  "specifications": {
+    "dimensions": "8.5cm × 5.4cm × 0.3cm",
+    "weight": "18g",
+    "host_node_compatibility": "Any active Meridian 88 Civic Mesh v3.0+ authenticated node within 6m",
+    "detection_resistance": "Undetectable by standard mesh monitoring; detectable by traffic forensic analysis with known session key only",
+    "bandwidth_parasitism": "Up to 40% of host node capacity without degrading host performance",
+    "simultaneous_user_capacity": "Up to 8 paired devices",
+    "power_source": "Passive RF energy harvesting from host node emissions, indefinite operation",
+    "session_key_length": "256-bit operator-defined",
+    "adhesive_rating": "Rated for concrete, steel, glass, ceramic; removal leaves no residue",
+    "maximum_operational_lifespan": "Approximately 4 years before component degradation"
+  },
+  "tactical_use": "In operational contexts, the Leech is deployed as a semi-permanent communication node — placed once and left in position for the duration of an operation or an extended campaign. Field operatives pair their devices to a Leech attached to nearby infrastructure and communicate through the host node's session without appearing on any network access log. Multiple Leeches can be chained to create a distributed communication network that exists entirely within the legitimate traffic of Meridian 88's own infrastructure. Detection requires physical location and removal of the device — it cannot be remotely identified or disabled. This makes it particularly valuable for long-term embedded operations where operational security must be maintained over weeks or months.",
+  "cultural_context": "The Barnacle is, in the lower precincts of Meridian 88, something close to a public utility. Community mesh networks built on Leeches provide connectivity to tens of thousands of residents who have been priced out of licensed access or who refuse to use monitored public terminals. There is an informal culture of Leech placement — experienced users place them in high-traffic locations, share the session keys through trusted networks, and maintain them as a community resource. This has created an uneasy situation for authorities: prosecution requires identifying and charging individuals who are often simply trying to access information, and the Leeches themselves are so small and well-concealed that enforcement sweeps rarely find more than a fraction of active units. Ringo Corponation benefits from studied ambiguity about the product's predominant use, maintaining its 'infrastructure audit tool' designation while quietly enjoying the market that designation provides cover for.",
+  "known_users": [
+    "Lower-precinct community mesh collectives",
+    "Operational field teams requiring long-duration covert connectivity",
+    "Underground clinics and community organizations",
+    "Information brokers maintaining anonymous relay points",
+    "Activist and dissident networks"
+  ],
+  "story_hooks": [
+    "A Leech the players placed three months ago is still active — but someone else has added their devices to the session, meaning an unknown party has been using the players' covert channel as their own.",
+    "A sweep of a particular block finds forty-seven Leeches in a six-square-block area, all keyed to the same session — someone built a shadow mesh network of significant scale, and it was used for something that left traces in the traffic logs of every host node involved.",
+    "A community organization's Leech network goes dark simultaneously across an entire precinct. Not removed — just dead. Something killed them remotely, which should be impossible.",
+    "Ringo Corponation quietly approaches the players to recover a specific Leech from a specific location. They won't say what's on it. They will pay significantly above market rate. The location is in the middle of a district controlled by people who will not appreciate visitors.",
+    "A Leech left in place during a previous operation begins transmitting on a new session key that the players never programmed — something is using their hardware to communicate, and it's been doing so for weeks."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "trust",
+    "ai",
+    "synthetic",
+    "surveillance",
+    "control",
+    "clinic",
+    "market",
+    "bar",
+    "dark",
+    "shadow",
+    "tier 1"
+  ]
+}

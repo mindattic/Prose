@@ -1,0 +1,63 @@
+{
+  "id": "019d6143ab3f76f582fb82c3b9fb06fb",
+  "name": "Pyrolytic Fascial Plane Separator PFPS-2 'Peeler'",
+  "type": "weapon",
+  "aliases": [
+    "Peeler",
+    "The Unwrapper",
+    "Fascinator",
+    "PFPS"
+  ],
+  "category": "cyber",
+  "description": "The PFPS-2 uses a dual-wavelength pyrolytic beam tuned to the specific thermal absorption coefficient of fascial connective tissue — the dense fibrous sheaths that encase every muscle group in the human body. When the beam contacts a target, it selectively superheats the fascial layer without significantly affecting the muscle tissue beneath or the skin above, causing rapid pyrolytic separation: the fascia tears, contracts, and in severe cases vaporizes in localized strips. The result is acute compartment syndrome onset in the affected limb within seconds, accompanied by searing pain as the released pressure differential crushes adjacent nerves and vasculature.\n\nWhat makes the Peeler distinctively horrifying is its visible effect at high power settings: the skin over the targeted area develops a characteristic rippling, as though something beneath is trying to escape. Operators refer to this as 'the show,' and its psychological impact on bystanders has been documented as a significant secondary effect — witnesses to a Peeler discharge frequently suffer acute stress responses severe enough to require medical intervention. The weapon was originally developed for surgical field applications, intended to replace manual fasciotomy in trauma scenarios, before ARCTURUS DEFENSE SOLUTIONS acquired the underlying patent and adapted it.\n\nThe weapon platform is compact and pistol-form, fitted with a twin-emitter head that projects the two wavelengths in precise interference pattern. It has a notoriously short effective range — rarely useful beyond 25 meters — but within that envelope it is considered one of the most reliably incapacitating weapons available. Targets struck in the thigh or forearm are typically unable to use the affected limb for days to weeks even with prompt medical care.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+ / Black market (unlicensed variants)",
+  "legality": "Prohibited — classified as a torture instrument under Meridian 88 Municipal Code 7.4.12",
+  "base_technologies": [
+    "Dual-wavelength pyrolytic tissue targeting",
+    "Fascial thermal absorption calibration",
+    "Interference-pattern beam projection"
+  ],
+  "specifications": "effective range: 2–25 meters\nbeam wavelengths: 3.4 μm and 6.1 μm (tuned to collagen absorption peaks)\ntime to fascial separation: 1.8–6 seconds depending on tissue depth\nincapacitation profile: Acute compartment syndrome, 72+ hour recovery minimum\npower source: Pyrolytic induction cell, 14 discharges\nweight: 1.4 kg\nlength: 28 cm\nemitter head: Twin-aperture interference projector\ntargeting assist: Thermal contrast overlay (optional heads-up display sync)",
+  "tactical_use": "Used in close-quarters scenarios where the operator needs to permanently remove a target's combat capability without killing them — debt enforcement, interrogation preamble, or message-sending contracts. Its short range makes it a contact-to-midrange weapon, typically deployed after a target has been pinned or cornered. Some operators use it in combination with a conventional firearm: the Peeler drops the target's defensive capability in a limb, the firearm handles the follow-through. Organized crime uses it heavily for 'marking' — a single Peeler strike to the dominant hand is a recognizable permanent warning.",
+  "cultural_context": "The Peeler is associated almost exclusively with the debt-collection and enforcement ecosystem of Meridian 88's lower corporate tiers. Carrying one is a statement: the bearer doesn't just want you stopped, they want you to remember it. In certain criminal organizations it is carried exclusively by enforcers who have been granted the explicit authority to maim — a status symbol indicating trust from leadership. Victims of Peeler strikes are identifiable to street medics by their scarring pattern, and within survivor communities the weapon has become a rallying symbol of corporate brutality. There is an underground medical collective called 'The Fascial' that provides free reconstructive care to Peeler victims.",
+  "known_users": [
+    "Debt enforcement arm of the Tsurikov-Maris credit syndicate",
+    "ARCTURUS DEFENSE SOLUTIONS field-test contractors",
+    "Fixer 'Sable Orin' — known for non-lethal but memorable contract resolutions",
+    "Underworld enforcer 'Grit' Vasquez",
+    "Black clinic surgeon Dr. Emeka Eze (modified for legitimate fasciotomy use)"
+  ],
+  "story_hooks": [
+    "A Peeler with a custom serial number is found at a crime scene where the victim — a Helix Biosystems researcher — died of conventional gunshot. Why bring a Peeler if you were going to shoot them anyway? What were they trying to get first?",
+    "The Fascial medical collective is being systematically targeted — someone is eliminating the people who document and treat Peeler victims. The party must protect the collective's lead surgeon before a crucial testimony.",
+    "A character receives a Peeler strike as a warning from a creditor. The clock is now ticking on both their debt and their limb function — they need a solution to both.",
+    "ARCTURUS DEFENSE SOLUTIONS is lobbying to have the Peeler reclassified from 'torture instrument' to 'less-lethal compliance tool.' Someone is paying the party to make sure that reclassification fails — or succeeds."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "combat",
+    "gun",
+    "war",
+    "crime",
+    "trust",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "debt",
+    "medical",
+    "clinic",
+    "pain",
+    "underworld",
+    "market",
+    "escape",
+    "energy",
+    "fire",
+    "tier 3"
+  ]
+}

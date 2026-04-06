@@ -1,0 +1,86 @@
+{
+  "id": "019d6143a9387b6fb88b1b5a847b5ba8",
+  "type": "place",
+  "name": "The Cinnabar Exchange",
+  "aliases": [
+    "The Red Floor",
+    "Cinnabar Station",
+    "The Exchange Pit"
+  ],
+  "description": "Buried three levels below the mid-tier transit interchange at Old Harbor's northern edge, The Cinnabar Exchange occupies the gutted chassis of a pre-Meridian commodities trading floor—a vast octagonal room with a tiered gallery and a central pit where brokers once shouted futures contracts into existence. The Palladian Group used it as a data clearinghouse until 2183, then sealed it following a catastrophic BCI network breach that killed eleven analysts and left the building's local mesh permanently scarred with ghost-signal artifacts. Now it operates as the megacity corridor's most significant underground information market, its blood-orange emergency lighting never replaced, its walls still crawling with corrupted Diaspora echoes that experienced BCI users find deeply disorienting.\n\nDealers at the Exchange trade in data exclusively—corporate intelligence, personal records, blackmail material, and, most lucratively, identity packages that allow Tier 5 residents or undocumented synthetics to pass as higher-tier citizens. Palladian Group security makes periodic attempts to reclaim or destroy the space; so far, the Exchange's operators have anticipated every raid, a fact that suggests significant intelligence penetration of Palladian itself.",
+  "atmosphere": {
+    "sights": [
+      "Tiered gallery seating filled with hooded figures interfacing via BCI, their eyes uniformly rolled back and flickering",
+      "The central pit's floor inlaid with a corroded brass commodity-price display that still cycles random numbers in the dark",
+      "Corrupted Diaspora ghost-signals manifesting as faint geometric light artifacts that drift across walls like slow, silent fireworks"
+    ],
+    "sounds": [
+      "A subsonic hum from the damaged mesh infrastructure that sits just below conscious hearing and accumulates into headache over hours",
+      "Clipped, low-voiced negotiations in a dozen languages, never rising above a murmur in the acoustically dead room",
+      "The occasional sharp crack of a BCI user hitting a ghost-signal artifact and disconnecting hard, followed by controlled breathing"
+    ],
+    "smells": [
+      "Ozone from overworked signal boosters and jury-rigged mesh amplifiers",
+      "Stale recycled air underlaid with the faint chemical sweetness of BCI interface fluid",
+      "Old metal and concrete dust, dry and mineral, unchanged since the Palladian era"
+    ],
+    "feel": "The Cinnabar Exchange demands a specific kind of calm. The ghost-signals in the mesh press against active BCI users like a crowd at the edge of vision, and the orange light makes everyone look either feverish or dead. Trust here is purely transactional, enforced not by loyalty but by mutual knowledge of what everyone else has on everyone else.",
+    "tags": []
+  },
+  "demographics": "A deliberately anonymous clientele spanning all tiers, with identity obfuscation strongly enforced by house rules. Operators and permanent staff are almost exclusively Tier 3-4 former corporate data analysts, several of whom survived the 2183 Palladian breach.",
+  "economy": "Pure information brokerage denominated in Φ and occasionally in data-for-data exchange. Identity package sales represent the highest-margin business; corporate intelligence on Axiom, Sterling-Nakamura, and Palladian itself moves in the highest volume.",
+  "power_structure": "Run by a collective of seven brokers who survived the 2183 breach and refer to themselves only as the Remainder. Decisions are made by consensus with disputes resolved by a rotating arbitration role; the current arbitrator is believed to be a synthetic who has been running a human identity package for eleven years.",
+  "dangers": [
+    "The residual ghost-signals in the local mesh can trigger BCI feedback cascades in users with older or poorly maintained implants—medical emergencies are handled in-house and quietly",
+    "Palladian Group infiltration is an ongoing reality; at least one active Palladian asset is believed to be operating among the regular clientele",
+    "Identity package buyers who attract too much scrutiny outside the Exchange are sometimes traced back to their source, creating violent blowback against brokers and sellers"
+  ],
+  "opportunities": [
+    "The Remainder is offering a significant finder's fee for anyone who can identify the Palladian asset currently operating in the Exchange without tipping the target",
+    "A complete Axiom Industries executive BCI-log archive from 2197-2199 is available for auction—the contents are unknown but the provenance is verified, and three parties are already competing",
+    "A Tier 5 synthetic needs a Tier 2 identity package and is offering something unusual in exchange: direct access to an E.L.F. communications channel it has been quietly monitoring for eight months"
+  ],
+  "story_hooks": [
+    "A Sterling-Nakamura mid-level manager approaches the party outside the Exchange, terrified—she purchased an identity package here for a family member and has since learned the package belonged to someone who did not sell it willingly. The original identity's owners are looking for it, and they are not interested in negotiation.",
+    "The ghost-signal artifacts drifting through the Exchange's corrupted mesh have begun forming patterns that BCI-sensitive users recognize as structured language—not random corruption but something that survived the 2183 breach and has been slowly reconstituting itself in the dark for seventeen years. The Remainder wants it contained; someone else wants to talk to it."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Old Harbor",
+      "The Threshold",
+      "The Portico"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Corporate intelligence operatives maintaining deniable procurement channels",
+    "Undocumented synthetics and Tier 5 residents seeking identity elevation packages",
+    "Freelance data brokers and fixers sourcing product for outside clients",
+    "Palladian Group analysts, at least one of whom is there professionally rather than personally"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.89,
+    "lng": -87.61,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "gun",
+    "identity",
+    "bci",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "medical",
+    "harbor",
+    "market",
+    "bar",
+    "dark",
+    "chase",
+    "old harbor"
+  ]
+}

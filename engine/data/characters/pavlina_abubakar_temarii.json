@@ -1,0 +1,241 @@
+{
+  "id": "019d6143a69473e2bcc8bb2d364d1f97",
+  "type": "character",
+  "name": "Pavlína Abubakar-Temarii",
+  "aliases": [
+    "Pav",
+    "The Dermis"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Gene-mod body artist and tattoo practitioner",
+  "age": 37,
+  "status": "active",
+  "location": "The Garret, a converted water-treatment building in Edgewater Prism",
+  "description": "Pavlína is compact and precise in their movements, with warm golden-brown skin currently hosting a living portfolio: bioluminescent geometric forms along both arms that shift color with their body temperature, a mossy texture patch on their left shoulder that is genuinely soft to touch (a client gift they kept), and irises engineered to display a slow nautilus spiral in deep amber and black. Their hair is cropped close on one side and grown into a dramatic sweep on the other, currently a matte black that absorbs light strangely.\n\nThey are one of the most sought-after gene-mod body artists in Meridian 88's middle tiers — not cheap enough for Tier 1 walk-ins and not expensive enough for Tier 4 corporate vanity, which suits them perfectly. Their studio occupies two floors of The Garret and smells of antiseptic and the particular warm mineral scent of living tissue culture. They are precise, unhurried, and deeply opinionated about their art form, which they will share with you whether or not you asked. They have no patience for clients who want mods for status signaling and extraordinary patience for clients who want mods to feel like themselves.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Causing irreversible harm — a mistake that can't be undone",
+      "That their Helix Biosystems connection is making them complicit in something they don't fully understand"
+    ],
+    "core_desires": [
+      "To be known as someone who treats the body as genuinely sacred",
+      "Financial stability stable enough that they can turn down clients they don't believe in"
+    ],
+    "coping_mechanisms": [
+      "The studio as controlled environment — they maintain very strict rules about what happens in their space",
+      "The private painting practice — it stays entirely theirs"
+    ],
+    "blind_spots": [
+      "They can be condescending to clients they consider aesthetically unserious",
+      "They sometimes mistake their own discomfort with a client's choices for ethical concern"
+    ],
+    "secret": "A Helix Biosystems researcher has been paying them — very well — to document unusual biological responses in clients who've received certain tissue culture batches. Pavlína was told it was quality control. They have started to suspect it is something else, and they have not yet decided what to do about this suspicion."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and exact; uses biological terminology naturally; slips into Czech diminutives when comfortable or tired",
+    "cadence": "Measured and deliberate, especially when explaining something; accelerates when provoked",
+    "verbal_tics": [
+      "'The body knows.' (used as both reassurance and reprimand)",
+      "Clicks their tongue before delivering an opinion they know will land badly"
+    ],
+    "example_lines": [
+      "'I won't do this as you've described it. I'll tell you what I will do, and you can decide if that's enough.'",
+      "'The body knows when something is wrong. That's not mysticism. That's four billion years of engineering.'",
+      "'You're paying me to change how you look. But you're actually here because you want to change how you feel. Let's talk about whether I'm the right person for that.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Three clients in the last two months have reported unusual systemic bioluminescence spreading beyond their modifications — Pavlína is tracking this quietly and is beginning to think it relates to the Helix tissue batches",
+    "A very young client — barely sixteen, just inside legal age — came in wanting modifications that Pavlína suspects are not self-motivated; they've been trying to determine if the kid is being coerced without tipping anyone off"
+  ],
+  "narrative_function": "Service provider and confidant — clients talk while in the chair, and Pavlína has heard extraordinary things. Also a source of information on who is getting what mods and why, and a potential contact for anyone needing biological expertise outside normal channels.",
+  "augmentations": "Bioluminescent arm tracery (own work, temperature-reactive); mossy texture dermal patch (left shoulder, client gift); engineered spiral irises; subdermal tool-grip enhancement in both hands (practical, not cosmetic)",
+  "daily_life": "Four client appointments per day maximum; spends the rest of the time on tissue culture maintenance, design consultation, and keeping meticulous records of every modification they've performed. Closes the studio one day a week to paint — traditional pigment on canvas, which they show to no one.",
+  "affiliation": "Independent studio; informal mentorship network for apprentice body artists; occasional consultation for Helix Biosystems (which they find ethically complicated and financially necessary)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "precise",
+      "principled",
+      "guarded",
+      "expert",
+      "conflicted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never modify someone who seems unable to consent freely — full stop",
+      "Keep the studio scrupulously documented; everything that happens here is recorded"
+    ],
+    "escalation_ladder": [
+      "Patient explanation of concern",
+      "Firm refusal with alternatives offered",
+      "Removal of client from studio",
+      "In cases of genuine threat, the Garret collective closes ranks quickly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional warmth; asks careful questions before offering anything about themselves",
+      "friends": "Drily funny and unexpectedly tender; remembers everything, brings it up obliquely"
+    },
+    "stress_responses": {
+      "low": "Becomes very focused and methodical",
+      "medium": "Retreats to studio tasks and speaks in shorter sentences",
+      "high": "Goes cold and precise; gives nothing away; deals with it entirely alone afterward"
+    },
+    "contradictions": [
+      "They say the body is sacred and spend eight hours a day surgically altering it",
+      "They value transparency fiercely and are concealing the Helix documentation from every client involved"
+    ],
+    "habits": [
+      "Narrates their process quietly while working — not to the client, more to themselves",
+      "Maintains a small ELF shrine in the studio corner with daily data offerings",
+      "Eats the same meal every workday without variation"
+    ],
+    "breaking_points": [
+      "Evidence that a client has been harmed by their work",
+      "Discovery that the Helix documentation is being used against someone"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal tool-grip enhancement (both hands)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal tool-grip enhancement (both hands)",
+      "replaces": ""
+    },
+    {
+      "name": "Tissue culture maintenance kit (studio equipment)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tissue culture maintenance kit (studio equipment)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9,
+    "Romantic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2163 — Born in Edgewater Prism to a Czech-Burkinabé urban planner and a Tahitian bioengineer",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Apprentices under a veteran body artist in Hamtramck Enclave",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188 — Opens own studio in The Garret",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — First Helix Biosystems consultation contract",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Begins noticing anomalous biological responses; starts documenting privately",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Current: managing three ongoing client health concerns while maintaining professional silence",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,73 @@
+{
+  "id": "019d6143a8657923a59fa353e566b419",
+  "name": "Pale Letter Dead Drop Terminal",
+  "brand_name": "Pale",
+  "product_name": "Pale Letter Dead Drop Terminal",
+  "type": "equipment",
+  "aliases": [
+    "The Pale Box",
+    "Ghost Post",
+    "Letter Box",
+    "Cold Relay"
+  ],
+  "category": "comms",
+  "description": "The Pale Letter Dead Drop Terminal is a physically unassuming communications device — typically disguised as a piece of mundane urban infrastructure, such as an electrical junction box, a ventilation panel cover, or a section of decorative wall tile — that functions as an asynchronous, air-gapped message exchange point for operatives who cannot risk real-time communication. Messages are composed offline on an encrypted companion device, compressed into a burst transmission lasting less than 0.3 seconds, and physically transmitted to the Terminal on close approach via short-range encrypted radio. The Terminal stores the message in an isolated internal memory with no external network connection, where it waits until another authorized party approaches and pulls it down with a corresponding burst receive.\n\nThe Pale Letter's security architecture is built around the principle of temporal separation — sender and receiver never need to be in the same place at the same time, and the Terminal never connects to any network, making it undetectable by conventional signals intelligence. The device's internal clock erases stored messages on a configurable timer between two and seventy-two hours, ensuring that if a Terminal is discovered, the window for recovering its contents is narrow. Physical intrusion triggers an immediate memory wipe. The Terminal is powered by a long-life kinetic harvesting cell that draws energy from vibrations in the surrounding structure — it requires no external power and can remain dormant for years.\n\nPale Letter Terminals are manufactured in small batches by Ringo Corponation's 'grey infrastructure' division and are distributed through a network of trusted intermediaries rather than conventional retail channels. They are standard equipment for deep-cover intelligence operatives, long-running infiltration specialists, and the leadership structures of organizations that have been penetrated by surveillance operations. In Meridian 88's more paranoid underground circles, a network of Pale Letter Terminals is called a 'cold line' — a communications infrastructure that exists entirely outside the city's monitored networks.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Air-Gapped Asynchronous Message Storage",
+    "Sub-300ms Burst Transmission Protocol",
+    "Kinetic Energy Harvesting Power Cell",
+    "Physical Intrusion Memory Wipe Trigger",
+    "Configurable Timed Message Erasure",
+    "Short-Range Encrypted Radio (SRER)",
+    "Passive Urban Camouflage Housing"
+  ],
+  "specifications": {
+    "transmission_duration": "< 0.3 seconds per message exchange",
+    "transmission_range": "1.5 meters (intentionally limited)",
+    "message_storage_capacity": "Up to 200 compressed messages",
+    "encryption_standard": "One-time pad derivative, device-paired keys",
+    "message_erasure_timer": "Configurable 2–72 hours",
+    "intrusion_response": "Immediate full memory wipe on case breach",
+    "power_source": "Kinetic harvesting cell, no external power required",
+    "dormancy_capability": "Up to 5 years inactive",
+    "dimensions": "Variable — housing is custom-fabricated per deployment",
+    "network_connectivity": "None — fully air-gapped",
+    "authorized_devices": "Paired to up to 6 companion transmitters"
+  },
+  "tactical_use": "Installed in a location frequented by operatives — a transit hub, a bar, a specific street corner — before an operation begins. Operators pass by the Terminal as part of their normal movements, performing a message exchange in a fraction of a second with nothing visible to outside observers. The Terminal creates a communications channel that is entirely invisible to network surveillance because it never touches a network. In long-term infiltration operations, a cold line of three to five Terminals allows a handler to maintain contact with a deep-cover operative for months or years without either party ever meeting.",
+  "cultural_context": "In Meridian 88's intelligence community, the existence of a Pale Letter network attributed to a specific organization is considered a mark of operational maturity and institutional patience — it suggests an organization that plans for long-term survival rather than short-term gains. Among street operatives, Pale Letter Terminals occupy an almost mythological space: stories circulate of cold lines that have been running for decades, message chains that have passed through dozens of hands, Terminals that nobody alive remembers installing. The devices are also used by political dissidents and union organizers operating under heavy surveillance, for whom the Pale Letter's complete network invisibility is not a luxury but a survival necessity.",
+  "known_users": [
+    "Deep-cover intelligence operatives",
+    "Long-running infiltration specialists",
+    "Political dissidents and underground organizers",
+    "The Meridian 88 labor resistance movement",
+    "Archivist — an anonymous information broker whose identity has never been confirmed",
+    "Ringo Corponation internal intelligence division"
+  ],
+  "story_hooks": [
+    "The players discover a Pale Letter Terminal hidden in a location they frequent — meaning someone has been using their territory as a dead drop. The messages still in the buffer, if retrieved before the erasure timer runs out, could reveal the identities of both parties using it.",
+    "A dying deep-cover operative gives the players the location of a Pale Letter Terminal and a companion device — their only link to a handler who has been running them for seven years. The handler doesn't know their asset is dead, and the last message in the Terminal is a mission-critical instruction.",
+    "Ringo Corponation approaches the players to locate and recover a specific Terminal that was installed by a rogue employee before their termination. The company claims it contains proprietary data. The Terminal's location is in the middle of a neighborhood controlled by a faction that doesn't welcome visitors.",
+    "A series of Pale Letter Terminals have been discovered and destroyed across the Underlevel over the past month — someone is systematically dismantling an existing cold line. The organization that owns the line is panicking, and they need to know if any of the Terminals were read before they were destroyed."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "trust",
+    "identity",
+    "memory",
+    "ai",
+    "rogue",
+    "surveillance",
+    "control",
+    "power",
+    "market",
+    "bar",
+    "cold",
+    "survival",
+    "energy"
+  ]
+}

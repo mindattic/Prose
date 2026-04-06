@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a5cc7281a2e2b86958430913",
+  "type": "character",
+  "name": "Brennus Ofori-Čavajda",
+  "aliases": [
+    "Bren",
+    "Two-Stop"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Transit Police Officer, Ferrogate Transit Security",
+  "age": 28,
+  "status": "active",
+  "location": "Kessler Interchange, Meridian 88",
+  "description": "Brennus is a broad-shouldered young man, Ghanaian-Croatian in the specific way that produced his particular amber skin tone, tight dark curls, and a jaw that looks like it was designed to take a punch and was then tested extensively. He wears the Ferrogate Transit Security uniform with the particular posture of someone who chose this job over something better and has spent two years finding peace with that choice. His cosmetic geneware is subtle: bioluminescent freckles across his cheekbones that pulse a faint amber when he's calm and edge toward orange-red when his heart rate climbs — a mod he got at eighteen that he now considers a professional liability and is saving to have adjusted. His colleagues call him Two-Stop because he has never, in two years of duty at Kessler Interchange, needed more than two stops on the escalating force protocol before a situation resolved.\n\nKessler is a brutal posting — five rail lines converging in a subterranean cavern full of vending shrines, checkpoint queues, and the particular desperation of people who missed the last platform-credit subsidy. Brennus has developed a talent for the moment just before things escalate, which he deploys through an almost theatrical calm and a habit of learning names. He knows the regulars by face, knows which unhoused people shelter in which alcoves, knows which Ferrogate checkpoint operators skim scanning fees. He has not reported the last thing. He is thinking about reporting it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "becoming the kind of officer he tells himself he isn't",
+      "that his calm is just numbness accumulating"
+    ],
+    "core_desires": [
+      "to be genuinely useful to people who have no other options",
+      "to eventually afford a posting that doesn't smell like coolant and desperation"
+    ],
+    "coping_mechanisms": [
+      "memorizing details about his regulars as a form of caring that requires no emotional vulnerability",
+      "cooking elaborate meals on days off"
+    ],
+    "blind_spots": [
+      "tells himself his tolerance for checkpoint skimming is pragmatism rather than complicity",
+      "underestimates how much the regulars depend on him personally"
+    ],
+    "secret": "He let a woman through a checkpoint two months ago — no transit credits, outstanding low-level warrant, visibly eight months pregnant — and deleted the scan log. He checks the Ferrogate birth notices sometimes. He doesn't know what he's looking for."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, warm, working-class Meridian patois mixed with transit-specific jargon; uses people's names constantly and deliberately",
+    "cadence": "Unhurried, rhythmic, tends to pause before delivering anything important — a habit developed to give people time to choose non-escalation",
+    "verbal_tics": [
+      "'Hey, listen—'",
+      "using first names even with strangers once he's learned them"
+    ],
+    "example_lines": [
+      "'Mwenda. Mwenda. I know you're having a bad shift. I'm having a bad shift. Let's both not make it worse, yeah?'",
+      "'I'm not going to pretend I didn't see that. I'm going to ask you nicely to put it back and then we're going to forget this whole stop happened.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The woman he let through the checkpoint has reappeared — now she's involved in something complicated and she told her associates there's a transit cop at Kessler who can be trusted",
+    "He's finally ready to report the checkpoint skimming but needs someone to take his account who won't bury it — and he's heard there's an IA investigator worth approaching",
+    "A body was found in a maintenance alcove he patrols; officially ruled a transit accident; unofficially, three of his regulars have disappeared from that section in two months"
+  ],
+  "narrative_function": "Street-level contact who knows the transit system's unofficial geography; can grant access or look the other way; moral decision point about reporting corruption; local color and scene-setter for transit hub scenes",
+  "augmentations": "Bioluminescent freckles (cosmetic geneware, amber-to-red affect-linked); department-standard subvocal comms implant; reinforced knuckle plating (standard FTS issue)",
+  "daily_life": "Works a split shift at Kessler Interchange — morning platform patrol and evening checkpoint observation; eats his lunch at the same noodle kiosk every workday and has informal intelligence conversations he doesn't call intelligence conversations with the vendor.",
+  "affiliation": "Ferrogate Transit Security",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 0,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "peacekeeper",
+      "community anchor",
+      "complicit by omission",
+      "de-escalation specialist",
+      "transit system insider"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Learn the name first, decide everything else after",
+      "Escalate only when de-escalation has been genuinely attempted, not just performed",
+      "Protect his regulars from institutional consequences whenever he can do so without directly lying"
+    ],
+    "escalation_ladder": [
+      "Name-using, calm conversation with offered exits",
+      "Physical positioning and presence without contact",
+      "Warning of consequences with genuine pause for compliance",
+      "Controlled physical intervention, minimum necessary force"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm, makes eye contact, introduces himself by first name — disarming by design",
+      "friends": "Teasing, fond, shows up with food, carries grudges that he pretends he doesn't carry"
+    },
+    "stress_responses": {
+      "low": "Gets quieter, more deliberate with words",
+      "medium": "Bioluminescent freckles redden noticeably — he becomes hyper-focused and stops small talk entirely",
+      "high": "Goes into a functional action-mode that looks like calm from outside but leaves him shaking slightly for twenty minutes after"
+    },
+    "contradictions": [
+      "Enforces regulations while selectively ignoring the ones he finds unjust, with no consistent framework for which is which",
+      "Values community while keeping everyone at a precise emotional arm's length"
+    ],
+    "habits": [
+      "Greets the Kessler E.L.F. shrine (a small cluster of cable-wound icons near platform 3) every shift start with a quiet nod",
+      "Keeps a handwritten list of regulars' names in his breast pocket"
+    ],
+    "breaking_points": [
+      "Watching someone he knows get processed through a system he knows is broken and being given a direct order not to intervene",
+      "Being asked to falsify a transit incident report"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

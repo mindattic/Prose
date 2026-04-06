@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a6f37017a82b14c32e34a1cd",
+  "type": "character",
+  "name": "Tessaly Obumseli-Ranginui",
+  "aliases": [
+    "Tess"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Gene therapist at Helix Biosystems' Aurochs Medical Complex outpatient clinic, specializing in hereditary conditions and geneware integration complications",
+  "age": 29,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Calumet Rise",
+  "description": "Tessaly is small and precise in her movements, with light brown skin, natural hair worn in a large puff held back by a polished Helix Biosystems ID clip, and eyes modified with patterned irises — a double helix in dark gold on amber that she got as a graduation gift to herself. She is young for her position and knows it, which makes her simultaneously more careful and more aggressive in equal measure. She works within the Helix system because she believes — genuinely, not cynically — that gene therapy at scale requires institutional infrastructure, and she is trying to change the institution from inside while not yet having enough power to change much.\n\nShe is technically brilliant and interpersonally awkward in ways she's actively working on. She has a tendency to present information in dense technical bursts before remembering she's talking to a person. She finds pediatric gene therapy cases the hardest and doesn't understand why it took her two years to figure out that it's because she was a gene therapy patient herself as a child — a realization her therapist gently surfaced during a session she thought was about something else entirely. She's been different with parents and children ever since.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That the institution she's trying to change is in fact unchangeable and she's just providing it with a face it can use",
+      "Causing harm through a therapeutic error she was too confident to see coming"
+    ],
+    "core_desires": [
+      "To develop a gene therapy protocol that could be administered without Helix Biosystems' pricing structure",
+      "To feel fluent in human interaction the way she's fluent in molecular biology"
+    ],
+    "coping_mechanisms": [
+      "Converts anxiety into additional work hours",
+      "Maintains meticulous therapy attendance as a form of discipline"
+    ],
+    "blind_spots": [
+      "Believes informed consent is possible within a system that controls patients' access to alternatives",
+      "Underestimates how much her institutional affiliation shapes what patients feel safe telling her"
+    ],
+    "secret": "She has been secretly documenting cases where Helix's treatment protocols appear to prioritize proprietary geneware compatibility over optimal patient outcomes — she doesn't know what to do with the documentation yet, and is terrified of what it means that she's collecting it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise, with visible self-corrections when she catches herself going too deep. Asks clarifying questions compulsively. Earnest in a way that can read as naive.",
+    "cadence": "Fast when discussing science, deliberately slower when discussing feelings — you can hear the gears shifting.",
+    "verbal_tics": [
+      "'So what that means in practice is—'",
+      "Restates questions back to the asker before answering them",
+      "Apologizes preemptively before delivering bad news"
+    ],
+    "example_lines": [
+      "'Your genome isn't a problem to be solved. It's just — it's the context we're working in. Does that make sense? I mean, does it help to hear it that way?'",
+      "'I can tell you what Helix's recommended protocol is. I can also tell you what I would do if it were my genome. Those aren't the same answer.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient's genome contains markers that exactly match an undisclosed Helix research project — and the patient has never consented to be part of a study",
+    "The documentation she's been collecting has grown large enough that someone in Helix's internal audit division has noticed unusual access patterns from her credentials",
+    "A child patient's parents are pushing for a treatment that Tessaly knows is marginally effective but extremely profitable for Helix — and the truly effective treatment is off-protocol"
+  ],
+  "narrative_function": "Information source on cutting-edge gene therapy and Helix Biosystems' internal culture. Potential quest giver when she discovers something in a patient's genome that Helix wants suppressed. A character who complicates simple 'corponations are evil' narratives by being genuinely idealistic within one.",
+  "augmentations": "Patterned iris modification (double helix, gold on amber). Gene-reader implant in right fingertip pad — allows rapid genomic data access via touch interface with consenting patients. Geneware: enhanced olfactory receptors for detecting biochemical stress markers in patients.",
+  "daily_life": "Works eight-to-twelve-hour shifts at the Aurochs complex Monday through Friday, attends a mandatory Helix research briefing every Thursday, sees her own therapist every other Tuesday, and spends most weekends in the lab she isn't supposed to use on weekends.",
+  "affiliation": "Helix Biosystems — Aurochs Medical Complex Outpatient Gene Therapy Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Idealist",
+      "Institutional Insider",
+      "Technically Brilliant",
+      "Socially Effortful",
+      "Quietly Rebellious"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient genomic data belongs to the patient, not Helix",
+      "When in doubt about a protocol, order more tests — never guess at a genomic scale",
+      "Stay inside the institution until you have something worth leaving it for"
+    ],
+    "escalation_ladder": [
+      "Works within protocol, documents everything",
+      "Raises concerns through official channels with detailed evidence",
+      "Goes outside the institution — a step she has never taken but is building toward"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm but slightly over-formal — she's following a script she's practiced",
+      "friends": "Suddenly funny and enthusiastic, talks too fast, asks too many questions, deeply loyal"
+    },
+    "stress_responses": {
+      "low": "Runs additional verification checks she doesn't need",
+      "medium": "Becomes quieter and more formally polite — a warning sign her colleagues have learned to recognize",
+      "high": "Requests a personal day and spends it in the lab — working, but on her own terms"
+    },
+    "contradictions": [
+      "Believes in radical transparency as a value but is building a secret archive",
+      "Trusts the scientific method completely but is only now learning to trust her own instincts about people"
+    ],
+    "habits": [
+      "Runs a private genomic log of her own health markers every month — she calls it 'professional curiosity'",
+      "Keeps a physical notebook of questions she wants to ask her therapist, organized by topic"
+    ],
+    "breaking_points": [
+      "Being ordered to falsify or omit a finding from a patient's record",
+      "A patient being harmed by a Helix protocol she flagged as problematic"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Patterned iris modification (double helix, gold on amber)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned iris modification (double helix, gold on amber)",
+      "replaces": ""
+    },
+    {
+      "name": "Gene-reader fingertip implant (right index finger) — touch-interface genomic data access",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Gene-reader fingertip implant (right index finger) — touch-interface genomic data access",
+      "replaces": ""
+    },
+    {
+      "name": "Enhanced olfactory receptors (geneware) — biochemical stress marker detection",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Enhanced olfactory receptors (geneware) — biochemical stress marker detection",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 4-7: Received gene therapy treatment for hereditary condition (nature not fully processed by her until adulthood)",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 24: Graduated from Helix Biosystems-sponsored advanced gene therapy program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 25: Joined Aurochs Medical Complex outpatient division as junior gene therapist",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 27: Began collecting informal documentation of protocol irregularities",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 29: Current — recently promoted to senior therapist, documentation archive is extensive and undisclosed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

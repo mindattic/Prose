@@ -1,0 +1,64 @@
+{
+  "id": "019d6143a85b717fb06996438caabdd8",
+  "name": "Helix Biosystems Metabolic Flux Monitor",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Metabolic Flux Monitor",
+  "type": "equipment",
+  "aliases": [
+    "Flux Band",
+    "The Ticker",
+    "Helix Cuff"
+  ],
+  "category": "utility",
+  "description": "The Metabolic Flux Monitor is a wearable biosensing platform developed by Helix Biosystems for field personnel operating under extended physiological stress. Worn as a cuff on the forearm, the device continuously samples transdermal biomarker gradients — including cortisol, lactate, glucose, inflammatory cytokines, and hydration status — and synthesizes these into a real-time physiological load score displayed on a flexible e-ink surface along the outer face of the cuff. An alert system, configurable for audible, haptic, or hardwired output to connected kit, triggers when monitored values cross user-defined thresholds, flagging impending performance degradation before it becomes incapacitation.\n\nHelix designed the Flux Monitor for a dual market: elite athletic performance optimization and corporate field medicine for personnel working in hazardous environments. The underlying sensor array is derived from Helix's clinical diagnostic hardware, miniaturized and ruggedized for continuous wear. What the device does that clinical equipment cannot is contextualize — its onboard inference module correlates biomarker combinations rather than individual values, distinguishing between dehydration-induced lactate elevation and genuine muscle damage, or between acute stress response and the early signature of pharmaceutical interaction. This contextual layer makes it meaningfully more useful than simple threshold monitors.\n\nThe Flux Monitor has found a third market that Helix neither advertises nor discourages: operators who need to monitor the physiological state of personnel who cannot or will not self-report. A cuff worn by a team member under duress, in a hostage situation, or operating in conditions that preclude verbal communication provides the team lead with a continuous passive readout of that individual's status.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Transdermal biomarker gradient sampling",
+    "Contextual inference biomarker correlation",
+    "Flexible e-ink display integration",
+    "Hardwire and short-range wireless telemetry output",
+    "Helix clinical sensor array miniaturization"
+  ],
+  "specifications": {
+    "weight": "68g",
+    "monitored_biomarkers": "Cortisol, lactate, glucose, hydration index, IL-6 cytokine proxy, epinephrine proxy",
+    "sample_rate": "Continuous, primary analysis cycle every 4 seconds",
+    "display": "Flexible e-ink, 40mm x 12mm active area, visible in direct sunlight",
+    "alert_modes": "Audible (configurable volume), haptic (vibration), hardwire signal output to connected devices",
+    "telemetry_range_wireless": "Up to 80m line-of-sight, encrypted short-range band",
+    "battery_life": "72 hours continuous operation",
+    "water_resistance": "IP68",
+    "cuff_size_range": "Adjustable 140mm to 230mm circumference"
+  },
+  "tactical_use": "Team leads use the Flux Monitor's wireless telemetry to maintain passive physiological awareness of team members during operations where verbal check-ins are impossible. The cortisol and epinephrine proxy values provide early warning of acute stress events — a sudden spike on a team member operating in a separate location can indicate discovery, confrontation, or injury before any communication is possible. Medical personnel use it to triage personnel after extraction, identifying those with masked injuries or pharmaceutical load that self-reporting would not reveal. Solo operators use the threshold alert system as a fatigue management tool during extended operations.",
+  "cultural_context": "The Restricted designation stems from privacy advocacy pressure following documented cases of employers using the Flux Monitor to conduct continuous physiological surveillance of workers without disclosure. In Meridian 88's corporate enclave districts, wearing one is a condition of employment for certain high-value technical personnel — framed as a safety measure, enforced as policy. Outside those enclaves, the cuff is read as either a serious medical tool or a signal that the wearer is operating under someone else's oversight, neither of which is casual. Among freelance operators, wearing one voluntarily signals professionalism; being made to wear one signals something else entirely.",
+  "known_users": [
+    "Helix Biosystems field medical personnel",
+    "Corporate close-protection and hostage recovery teams",
+    "Elite endurance athletes and competitive operators",
+    "High-value technical employees under corporate health monitoring mandates",
+    "Freelance operators managing personal performance on extended contracts"
+  ],
+  "story_hooks": [
+    "A Flux Monitor recovered from an abandoned safehouse shows 11 days of continuous logged data on an unknown wearer — the physiological profile documents what appears to be prolonged captivity, with stress spikes correlating precisely to times that match a known interrogation protocol.",
+    "A corporate wellness program has been quietly issuing Flux Monitors to all mid-tier employees under a 'voluntary' health initiative; a data analyst has noticed that the telemetry is being routed not to medical staff but to the behavioral risk assessment division.",
+    "A solo operator's Flux Monitor data is the only record of their final hours — the biomarker sequence documents a pharmaceutical exposure event that the official incident report attributes to unrelated causes."
+  ],
+  "tags": [
+    "utility",
+    "equipment",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "medical",
+    "clinic",
+    "injury",
+    "market",
+    "tier 2"
+  ]
+}

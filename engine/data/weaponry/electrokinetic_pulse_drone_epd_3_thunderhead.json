@@ -1,0 +1,62 @@
+{
+  "id": "019d6143ab2575d5ad0ef656edf23345",
+  "name": "Electrokinetic Pulse Drone EPD-3 'Thunderhead'",
+  "type": "weapon",
+  "aliases": [
+    "The Zapper",
+    "Cloudkill",
+    "Tesla Box",
+    "Headache Drone"
+  ],
+  "category": "drone",
+  "description": "The EPD-3 is a medium-chassis hovering drone platform designed to project directional high-voltage electrokinetic pulses against personnel and light electronic systems. Manufactured by ZHENG-DAO BIOELECTRIC, it draws on the company's industrial arc-discharge research to deliver a focused 80,000-volt pulse across a conductive plasma channel ionized by an onboard UV laser. The effect on an unshielded human target at close range is immediate neuromuscular incapacitation; at extended ranges, the pulse degrades to disorientation, involuntary muscle spasm, and—with repeated exposure—cardiac arrhythmia. The EPD-3 is officially classified as a non-lethal deterrence platform, a designation that field experience consistently contradicts.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — licensed non-lethal designation; repeated-discharge use against personnel classified as aggravated assault under Meridian Code 44.7",
+  "base_technologies": [
+    "UV laser plasma channel ionization",
+    "High-voltage capacitive discharge (arc projection)",
+    "Electrokinetic cyberware interference"
+  ],
+  "specifications": "dimensions: 480mm x 480mm x 220mm\nmass: 3.8 kg\ndischarge voltage: 80,000V (peak), 12,000V (sustained arc)\neffective range: Full incapacitation to 8m; disorientation/arrhythmia risk to 22m\npulse capacity: 14 discharges per capacitor cycle\nrecharge cycle: 88 seconds (full capacitor recharge)\nsecondary effect: Electronic disruption — fuses unshielded circuitry within 4m of discharge point\nflight endurance: 42 minutes (active discharge operations)\nacoustic signature: Audible turbine hum at close range; discharge crack audible to 200m\noperator interface: Direct telemetry, AR overlay compatible, semi-autonomous patrol mode available",
+  "tactical_use": "Crowd control, building clearance, and anti-drone operations. Corporate security details use paired Thunderhead units to establish non-lethal perimeters around executive assets, with the understanding that 'non-lethal' is a legal rather than physiological description. Anti-cyberware enforcement units deploy them to selectively disable unregistered augmentations before detaining subjects—a tactic that has resulted in multiple deaths where the targeted cyberware included cardiac or respiratory assist systems. Counter-measures include Faraday-weave clothing (reduces but does not eliminate effect), plasma-channel scatter panels, and the crude expedient of keeping a grounded conductor between the drone and the operator's body.",
+  "cultural_context": "The Thunderhead occupies a specific cultural role as the face of 'legitimate' corporate violence—the weapon that says 'we're not trying to kill you' while demonstrably trying to hurt you. In augmentation-heavy communities like the Sublevel markets and the prosthetics districts around Helix Row, the EPD-3 is despised with a particular intensity. Anti-augmentation enforcement using Thunderhead units has become a flashpoint in ongoing political tensions around cyberware rights, and the drone's silhouette has appeared in protest art and propaganda from several augmentation-rights organizations. ZHENG-DAO BIOELECTRIC's continued non-lethal classification of the platform despite documented fatalities is a recurring subject of investigative journalism in Meridian 88.",
+  "known_users": [
+    "ZHENG-DAO BIOELECTRIC corporate security (executive protection)",
+    "Meridian 88 PD crowd control units (licensed)",
+    "Anti-augmentation enforcement contractors",
+    "Mid-tier corporate facilities security",
+    "Black-market operators (modified for lethal discharge threshold)"
+  ],
+  "story_hooks": [
+    "A modified EPD-3 with its discharge limiter removed has killed three people in the Sublevel markets. MMPD is calling it malfunction. The victims' families are calling it murder. Someone needs to find the operator and the modification source before a fourth deployment.",
+    "A ZHENG-DAO BIOELECTRIC engineer has evidence that the company's own internal testing showed cardiac fatality rates of 12% in subjects with common cardiac cyberware—evidence that was buried before the non-lethal certification was filed. She wants out and wants the data published.",
+    "A player character with cardiac assist cyberware is told a Thunderhead unit has been assigned to their building's security detail. The building manager says it's standard. It isn't standard. Someone specifically requested it.",
+    "A protest in the Helix Row prosthetics district has turned into a standoff. Six EPD-3 units are holding the perimeter. Someone in the crowd has a signal jammer that can kill the units' telemetry—but using it will also kill the medical monitoring signals of three protesters with life-support augmentations."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "violence",
+    "war",
+    "death",
+    "augment",
+    "cyberware",
+    "prosthetic",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "medical",
+    "market",
+    "rights",
+    "hover",
+    "clothing",
+    "circuit",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57d7295b62405ffc5d79afa",
+  "name": "Meaning Maker",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Creates meaning in a meaningless world",
+  "behavioral_signature": "Builds narrative, purpose, and connection from nothing",
+  "under_stress": "Creates meaning more frantically",
+  "at_rest": "Storytelling, ritual-building, connecting",
+  "will_always": [
+    "create meaning"
+  ],
+  "will_never": [
+    "accept meaninglessness"
+  ],
+  "unless": [
+    "the meaning they've made is a comfortable lie"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Existentialist",
+      "threshold": 0.75,
+      "context": "confronting void"
+    },
+    {
+      "archetype": "Purpose Driven",
+      "threshold": 0.7,
+      "context": "finding direction"
+    }
+  ],
+  "opposite_of": [
+    "Nihilist"
+  ],
+  "tags": [
+    "creative",
+    "resilient"
+  ]
+}

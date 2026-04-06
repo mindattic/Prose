@@ -1,0 +1,91 @@
+{
+  "id": "019d6143a94170cc802203e43a33fa43",
+  "type": "place",
+  "name": "The Hermosa Line",
+  "aliases": [
+    "Hermosa",
+    "The Line",
+    "La Linea",
+    "The Seam"
+  ],
+  "description": "Hermosa was always a between-place. Compact, working-class, Latino — wedged between Belmont Cragin's mass and Logan Square's ambition, Hermosa was the neighborhood you passed through to get somewhere else. After the incorporation, that liminal identity became literal. The Hermosa Line is the seam between the ungoverned northwest territories and the semi-corporate districts that stretch toward the Meridian Core. Every transit route, supply chain, and smuggling channel that connects the Stacks, the Souk, and Dunning Preserve to the rest of the Corridor passes through Hermosa. The district didn't choose to be a chokepoint. The geography chose for it.\n\nThe Line is narrow — twelve blocks east to west, eight blocks north to south — and every meter of it is in use. The residential buildings are modest three-flats converted to maximum occupancy, their ground floors almost universally given over to logistics operations: warehousing, transshipment, vehicle maintenance, courier dispatch. The streets are organized around flow — pedestrian traffic, cargo movement, and the constant passage of goods between districts that officially don't trade with each other. The Line's residents are logistics people by nature and necessity. They drive, carry, route, schedule, and troubleshoot. They are the supply chain that keeps the northwest corridor alive, and they know it, and they charge accordingly.\n\nThe culture is working-class Mexican-American at its core, but the Line's function as a transit hub has made it pragmatically multilingual and aggressively transactional. Hermosa doesn't have the Stacks' community density or the Souk's cultural depth. What it has is efficiency. Things move through the Line faster than through any corporate logistics network in the outer Corridor, because the Line's operators have been optimizing these routes for two decades using nothing but local knowledge and the understanding that if the cargo doesn't arrive, people don't eat. There is no romance here. There is work.\n\nThe Line is also where disputes between neighboring districts get mediated, because the alternative is disrupting the supply chain, and nobody wants that. Hermosa's community leaders function as de facto diplomats — neutral parties whose authority derives entirely from the fact that they control the chokepoint. Cross the Line's leadership, and your district's next shipment doesn't arrive. This gives Hermosa political influence wildly disproportionate to its size, and its leaders wield it with the quiet precision of people who have learned that the most powerful weapon in the Corridor is a truck that doesn't show up.",
+  "atmosphere": {
+    "sights": [
+      "Cargo vehicles loading and unloading at all hours in ground-floor warehouses",
+      "The narrow streets organized for flow — painted lane markers, hand-signaled traffic direction",
+      "Dispatch boards on building walls showing route status in coded shorthand",
+      "Couriers on modified bikes threading between vehicles with packages strapped to every surface",
+      "The Line's border markers — subtle paint codes that indicate which district's territory begins where"
+    ],
+    "sounds": [
+      "Engine noise — electric vehicles, mostly, humming in and out of loading bays",
+      "Radio dispatch chatter in Spanish-English logistics pidgin",
+      "Hand trucks on pavement — the constant rattle of goods in motion",
+      "The Line's signature sound: the slap of a cargo manifest being checked and approved with a palm strike on a van's hood"
+    ],
+    "smells": [
+      "Diesel and electric motor ozone — the Line runs on whatever fuel is available",
+      "Cargo — the composite smell of everything the northwest corridor consumes passing through in bulk",
+      "Street food from dispatch windows — fast, cheap, eaten standing up between loads"
+    ],
+    "feel": "Purposeful. The Hermosa Line has no time for aesthetics, reflection, or bullshit. Everything here serves the function of moving things from where they are to where they need to be. It's exhausting and unglamorous, but there's a specific dignity in it — the dignity of people who keep the world running while the world pretends they don't exist.",
+    "tags": []
+  },
+  "demographics": "Approximately 25,000 residents, predominantly Tier 1 and Tier 2 Mexican-American logistics workers. Younger skewing, physically fit, and organized around work crews rather than residential blocks. Supplemented by transient populations of drivers and couriers from neighboring districts.",
+  "economy": "",
+  "power_structure": "",
+  "dangers": [
+    "Cargo hijacking — the goods passing through the Line are valuable and the routes are known",
+    "Getting in the way — the Line's traffic doesn't stop for pedestrians who aren't paying attention",
+    "Political entanglement — the Line's chokepoint power creates enemies among those it leverages",
+    "Exhaustion — the Line's work culture grinds people down, and fatigue kills",
+    "Being used as a pawn in inter-district disputes that pass through Hermosa's territory"
+  ],
+  "opportunities": [
+    "Logistics networks that can move anything anywhere in the northwest corridor",
+    "The Line's leadership as mediators and brokers for inter-district negotiations",
+    "Transit intelligence — the Line's dispatchers know who's moving what and where",
+    "Employment — the Line always needs drivers, couriers, and people willing to work",
+    "Chokepoint leverage — alliance with the Line gives influence over the entire northwest supply chain"
+  ],
+  "story_hooks": [
+    "A critical supply route through the Line has been compromised by a faction trying to starve out the Stacks — Kyle is hired to reopen it",
+    "The Line's lead dispatcher has gone missing, and without her the routing system collapses within 72 hours",
+    "Someone is using the Line's cargo network to move something that the Line's leadership didn't authorize — and it's drawing corporate attention to the entire corridor"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Cragin Stacks",
+      "The Meridian Lock",
+      "Avon Curve"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Logistics workers running the northwest corridor's supply chains",
+    "Dispatchers and route planners who know every alley and shortcut",
+    "Inter-district mediators using the Line's neutral ground",
+    "Couriers from every neighboring district picking up and dropping off",
+    "Operators who need something moved without a digital trail"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.917,
+    "lng": -87.724,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "weapon",
+    "war",
+    "romance",
+    "identity",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "alley",
+    "vehicle"
+  ]
+}

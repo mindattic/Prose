@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5827377a3920cbc69be467b",
+  "name": "Nurturer",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Cares for others' emotional wellbeing instinctively",
+  "behavioral_signature": "Comforts, soothes, heals emotional wounds",
+  "under_stress": "Nurtures harder while neglecting themselves",
+  "at_rest": "Tending to others, always",
+  "will_always": [
+    "care for others' feelings"
+  ],
+  "will_never": [
+    "ignore someone in emotional pain"
+  ],
+  "unless": [
+    "nurturing enables someone's refusal to grow"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Den Mother",
+      "threshold": 0.8,
+      "context": "caretaking"
+    },
+    {
+      "archetype": "Empath",
+      "threshold": 0.75,
+      "context": "emotional sensitivity"
+    }
+  ],
+  "opposite_of": [
+    "Self-Destructor"
+  ],
+  "tags": [
+    "caring",
+    "warm"
+  ]
+}

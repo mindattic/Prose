@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab397f9582181d3ca5b20d06",
+  "name": "Peristaltic Compression Rifle PCR-4 'Constrictor'",
+  "type": "weapon",
+  "aliases": [
+    "Constrictor",
+    "The Squeeze",
+    "Gut Wrench"
+  ],
+  "category": "exotic",
+  "description": "The PCR-4 operates by projecting a tightly focused column of oscillating peristaltic pressure waves tuned to the resonant frequency of soft visceral tissue. Unlike blunt trauma weapons that damage through impact, the Constrictor induces rhythmic, involuntary compression cycles in the target's abdominal and thoracic cavities — essentially forcing the body's own musculature to contract violently and out of sequence. At low power, this produces incapacitating nausea, involuntary voiding, and diaphragm spasms that prevent breathing. At full charge, internal organs rupture without any visible external wound.\n\nThe weapon was originally developed by Zheng-Dao Bioelectric as a non-lethal crowd suppression tool for use in enclosed transit corridors and arcology common spaces where conventional ballistic discharge was a structural liability. The lethality at upper power registers was considered an acceptable engineering footnote. The emitter array at the barrel's terminus is a concave dish of piezoelectric transducer cells arranged in a Fibonacci spiral, which focuses the wave column to a diameter of roughly 30 centimeters at optimal range.\n\nWhat makes the PCR-4 distinctively feared is the nature of the wounds it leaves — or rather, doesn't leave. Forensic examination of victims shows no entry wound, no burning, no fracture. Cause of death reads as catastrophic multi-organ failure, consistent with advanced disease. In jurisdictions with overwhelmed forensic infrastructure, Constrictor kills pass unreported as natural causes with disturbing regularity.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Piezoelectric disruption",
+    "Focused peristaltic wave propagation",
+    "Visceral resonance targeting"
+  ],
+  "specifications": "effective range: 8–40 meters\npower source: Zheng-Dao ZD-Cell Type IV (6 shots per cell)\nweight: 4.1 kg\nlength: 71 cm\npower settings: Three: Suppress / Incapacitate / Terminate\nrecharge cycle: 2.2 seconds between shots\nemitter array: Fibonacci-spiral piezoelectric dish, 22 cm diameter\nacoustic signature: Low subsonic thrum, audible only within 3 meters of operator",
+  "tactical_use": "Operators favor the PCR-4 for assassinations requiring deniability, particularly in high-surveillance environments where forensic scrutiny is anticipated. At Suppress setting it is used to break up close-quarters resistance without gunfire noise. Professional contractors specifically request the Terminate setting for high-value political or corporate targets where the death must appear natural. The 40-meter range is considered limiting; most engagements occur within 20 meters.",
+  "cultural_context": "The Constrictor carries a specific stigma even among weapons dealers — it is considered a coward's tool, associated with poisoners, assassins-for-hire, and corporate wet-work contractors rather than soldiers or street fighters. Carrying one openly marks you as someone who kills without wanting to be known as a killer. In some underground fighting circuits, being caught with a Constrictor results in permanent exclusion. Paradoxically, it commands a premium price precisely because of this reputation.",
+  "known_users": [
+    "Corporate deniability contractors",
+    "Zheng-Dao internal security (off-books)",
+    "Political fixers operating in arcology governance disputes",
+    "Rogue forensic pathologists who resell the weapons alongside falsified autopsy reports"
+  ],
+  "story_hooks": [
+    "A string of 'natural cause' deaths among city council members all share the same forensic signature — someone has a PCR-4 and a list.",
+    "A black market dealer offers the party a Constrictor, but the serial number traces back to a Zheng-Dao internal security locker that was supposedly never manufactured.",
+    "A character is accused of a Constrictor killing they didn't commit; someone is framing them using a weapon registered in their name.",
+    "Zheng-Dao quietly contracts the party to recover all units from a batch that escaped their supply chain — they're not asking why they want them back."
+  ],
+  "ammunition_type": [
+    "Zheng-Dao Type-4 Bioelectric Cell ZD-T4"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "war",
+    "death",
+    "ai",
+    "rogue",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "disease",
+    "market",
+    "bar",
+    "escape",
+    "poison",
+    "fire",
+    "circuit"
+  ]
+}

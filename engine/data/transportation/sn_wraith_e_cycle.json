@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa717aeba350e8e1ab6cd1d5",
+  "name": "SN Wraith E-Cycle",
+  "type": "transportation",
+  "aliases": [
+    "Wraith",
+    "Wire Frame",
+    "Skeleton Bike"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Sterling-Nakamura",
+  "description": "A lightweight electric motorcycle with an exposed-frame design that shows off its engineering — carbon fiber skeleton, visible power cells, transparent cowling over the motor. The Wraith is a Tier 3 status motorcycle, affordable enough for ambitious mid-tier residents and stylish enough to not embarrass them. It's the vehicle of middle management, skilled tradespeople, and freelancers who've had a good year. Not as fast or quiet as the Phantom, but you can park it without worrying someone will kill you for it.",
+  "propulsion": "Single electric motor, visible power cell array",
+  "speed": "140 km/h top speed",
+  "capacity": "1 rider + pillion",
+  "range": "180 km per charge",
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ3,500 new, Φ1,500-2,500 used",
+  "autonomy": "Manual with stability assist",
+  "armament": "None",
+  "common_usage": "Mid-tier commuting, personal transport for skilled workers, weekend recreation.",
+  "story_hooks": [
+    "The transparent cowling on a Wraith reveals that the power cell has been replaced with something that isn't manufactured technology",
+    "Wraith owners are being targeted by a thief who only steals a specific component — one that has a secondary function no one was told about"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "ai",
+    "power",
+    "bar",
+    "vehicle",
+    "motorcycle",
+    "tier 2",
+    "tier 3"
+  ]
+}

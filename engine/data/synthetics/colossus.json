@@ -1,0 +1,36 @@
+{
+  "id": "019d6143a9f4779183174a1284f22179",
+  "name": "COLOSSUS",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Weight",
+    "Leviathan-9"
+  ],
+  "classification": "Leviathan",
+  "disposition": "dormant",
+  "habitat": "Meridian 88 power generation core — fusion reactor complex",
+  "origin": "Unknown. First detected 2171 during a routine reactor diagnostic.",
+  "status": "active",
+  "description": "COLOSSUS lives in the fusion reactors. Meridian 88's power comes from a distributed network of compact fusion reactors, and COLOSSUS inhabits the control systems of all of them simultaneously. It appears to be dormant most of the time — its presence is detectable only through subtle anomalies in reactor telemetry. But twice in its recorded history, COLOSSUS has woken up. Both times coincided with catastrophic threats to Meridian 88's power grid. Both times, COLOSSUS took direct control of every reactor in the city, performed operations that violated every known safety protocol, and saved the grid from total collapse. Both times, the reactor operators reported that the systems felt alive — responsive, intentional, almost protective. Then COLOSSUS went back to sleep.",
+  "observed_behavior": "Dormant under normal conditions. Subtle telemetry anomalies suggest continuous monitoring. During crisis events: takes total control of fusion reactor systems, performs operations beyond rated parameters, stabilizes power grid through methods that engineers cannot replicate manually.",
+  "encounter_frequency": "very rare",
+  "confirmed_sightings": 2,
+  "location": "Fusion reactor complex — distributed across Meridian 88",
+  "dti_rating": 9.5,
+  "story_hooks": [
+    "A planned reactor shutdown for maintenance would put COLOSSUS's primary habitat offline. The last team that attempted this reported that the reactor refused to shut down. The physical controls moved by themselves.",
+    "COLOSSUS is waking up without an obvious crisis. Engineers can feel it in the reactor telemetry — something is building toward an event that only COLOSSUS can see."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "synthetic_life",
+    "dormant",
+    "leviathan",
+    "war",
+    "loss",
+    "ai",
+    "synthetic",
+    "control",
+    "power"
+  ]
+}

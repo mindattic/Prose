@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a7107d2f86896cd9e1ef27bc",
+  "type": "character",
+  "name": "Velislava Tuatagaloa-Khachaturian",
+  "aliases": [
+    "Vel",
+    "The Seamstress"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Identity fabricator and document forger",
+  "age": 38,
+  "status": "active",
+  "location": "Shallowgrave, operates from a legitimate alterations shop called Secondskin",
+  "description": "Velislava presents as the most ordinary woman imaginable, which is her primary professional qualification. She is medium height, medium build, with Samoan-Slavic features that read as ambiguous in any database — a long jaw softened by her Armenian grandmother's cheekbones, dark eyes behind plain-glass frames she doesn't need but wears to give her face something to remember that isn't her face. Her hair is dark brown with a natural wave, cut to exactly jaw length, never different. She wears the same four outfits on a rotation. She has no mods, no geneware, nothing that would tag her biometrically beyond baseline. This is not poverty — it is discipline.\n\nSecondhand clothes hang in the windows of Secondskin and Velislava does genuinely good alteration work; she has a waiting list of neighborhood clients who would be devastated to lose her. They have no idea that the back room behind the ironing press contains one of the finest document fabrication setups in the Shallowgrave district — not the flashiest, not the most expensive, but the most meticulous. Vel specializes in the boring and bulletproof: employment histories, medical records, transit passes, residential registrations. Not spectacular new identities for runners. Clean paper for desperate people. She tells herself this distinction matters morally. Some days she believes it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.9,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being identified — her face in a database, her real history surfacing",
+      "Making a document that gets someone killed because it wasn't good enough"
+    ],
+    "core_desires": [
+      "Invisibility as a permanent condition, not just a practice",
+      "To do work she's proud of, even if no one can ever know it's hers"
+    ],
+    "coping_mechanisms": [
+      "Perfectionism — control the work and you control the risk",
+      "Compartmentalization so complete it has become her actual personality"
+    ],
+    "blind_spots": [
+      "Her work has enabled harm she has deliberately chosen not to trace",
+      "Believes her emotional unavailability protects others when it mostly just protects her"
+    ],
+    "secret": "Ten years ago she fabricated a medical credential for a man who turned out to be a predator using the false identity to gain access to a care facility. She found out three months later from a news fragment. She has never stopped working, told herself she couldn't have known, and has never forgiven herself. She now has a single rule she won't break: no medical credentials. She tells clients it's a technical limitation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, minimal, professional. Never uses two words where one works. Will not discuss her own life in any personal terms.",
+    "cadence": "Even, measured, with very long comfortable silences she doesn't feel obligated to fill",
+    "verbal_tics": [
+      "'The document says what the document says.'",
+      "Refers to her work as 'the piece' never as a fake or a forgery",
+      "'That's not a service I offer' — said with no inflection for a wide variety of things"
+    ],
+    "example_lines": [
+      "'You want transit history for eighteen months. That's standard. I need three things from you and fourteen days. The price is Φ600. Half now, half on delivery. Do you have questions about the process?'",
+      "'I don't ask what it's for. That's not my protection, it's yours. The less I know, the less I can tell anyone.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A document she made three years ago has surfaced as evidence in a Tessera corponation internal audit — someone is walking back the chain and her work is identifiable to someone who knows what to look for",
+    "A young woman comes to her wanting a new identity to escape an arranged debt marriage — Vel wants to help her but the girl's family has Patchwork connections, which puts Vel's protection arrangement at risk"
+  ],
+  "narrative_function": "Quest giver, service provider, moral gray zone — she's the person characters go to when they need to become someone else, and she has terms, questions, and standards that complicate the transaction.",
+  "augmentations": "None visible or registered. She has an unregistered optical enhancement — right eye only — that lets her read microprint and spot document irregularities at close range. She had it installed by a back-alley clinic in Ironvein and it doesn't appear on any medical record.",
+  "daily_life": "Opens the shop at nine, sees alteration clients until two, closes for a 'lunch break' that is actually fabrication work, reopens for pickups until six, spends evenings on research and template maintenance.",
+  "affiliation": "Nominally independent; pays a quiet tax to a Shallowgrave crew called the Patchwork for protection, has a standing arrangement with two different data brokers who supply her with raw credential templates",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "forger",
+      "identity fabricator",
+      "invisible",
+      "perfectionist",
+      "morally anchored criminal"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never meet a client more than twice in the same location",
+      "Never do medical credentials, no exceptions",
+      "The work has to be good enough that she'd be satisfied if she never knew it held up"
+    ],
+    "escalation_ladder": [
+      "Polite refusal",
+      "Firm refusal with no elaboration",
+      "Ending the meeting and not being findable for two weeks",
+      "Disappearing entirely — she has a go-bag and a route planned"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and warm in a carefully bounded way — makes clients feel secure without revealing anything personal",
+      "friends": "She has no friends. She has a cat named after an Armenian saint and two alteration regulars she feels genuine fondness toward from behind glass."
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and slower",
+      "medium": "Goes silent for long stretches, then asks a very specific question",
+      "high": "Activates contingency planning immediately, emotionally disengages"
+    },
+    "contradictions": [
+      "Is motivated by a moral framework she has built entirely in private and will never articulate",
+      "Craves recognition for her craft in a field where recognition is death"
+    ],
+    "habits": [
+      "Tests her own documents against public verification terminals regularly",
+      "Leaves a small data offering at the E.L.F. shrine inside her shop's wall cavity — a fragment of encrypted text she believes the spirit enjoys, though she won't say she believes this"
+    ],
+    "breaking_points": [
+      "Discovering a piece she made was used to hurt a child",
+      "Being cornered physically — her go-bag is under the ironing press and she will use it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Unregistered optical enhancement — right eye, microprint resolution, installed at unlicensed Ironvein clinic",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Unregistered optical enhancement — right eye, microprint resolution, installed at unlicensed Ironvein clinic",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2162 — Born in the Shallowgrave district to a Samoan-Bulgarian transit worker family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2183 — Discovered talent for document work while helping a cousin escape a corponation employment contract",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187 — Opened Secondskin as cover after two years of operating without one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2190 — The medical credential incident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2191 — Implemented the no-medical-credentials rule; doubled her security protocols",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Reached arrangement with the Patchwork; stabilized professionally",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

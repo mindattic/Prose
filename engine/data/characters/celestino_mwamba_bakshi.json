@@ -1,0 +1,172 @@
+{
+  "id": "019d6143a5d5754f915d273d8e9049fb",
+  "type": "character",
+  "name": "Celestino Mwamba-Bakshi",
+  "aliases": [
+    "Celo",
+    "The Professor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Noodle cart vendor and informal tutor",
+  "age": 61,
+  "status": "active",
+  "location": "The Burnished Market, corner of Vellum Arcade and the third underpass, Brewer's Spine district",
+  "description": "Celestino is a tall man gone stoop-shouldered with age and decades of cart work, with silver-streaked dark hair pulled into a knot at the base of his neck and a neatly maintained beard that has gone entirely white at the chin. His skin is deep brown, his hands are large and steady despite arthritis he manages with two kinds of pain patches and the stubborn refusal to slow down. He wears a single piece of geneware — bioluminescent skin patterning across his forearms, a gentle wave pattern in amber and gold that he had done in his forties and would do again. He calls it his 'tide-marks.'\n\nHe has been at the corner of Vellum Arcade for twenty-two years. The cart itself is an architectural decision at this point — other vendors orient around it. He makes three broths daily from scratch, refuses to use concentrate, and will make you wait if you arrive before a batch is ready. Between customers he reads — always physical books, always from a rotating stack — and between readings he corrects the homework of whichever neighborhood children have been deposited with him while their parents work double shifts. He charges for this informally, in kind: a portion of rice, a bag of tea, whatever is available. He has never turned a child away for inability to pay.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.2,
+      "shadow": 0.3,
+      "mask": 0.1,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the children he teaches will inherit the same closed doors he hit at their age",
+      "Dying before he settles something unresolved with his eldest son"
+    ],
+    "core_desires": [
+      "For at least one of his students to break out of the tier they were born into through their own mind",
+      "To find his way back to his son Kenji, who left after a fight Celestino started and has not answered a message in three years"
+    ],
+    "coping_mechanisms": [
+      "Channeling grief into structure and routine",
+      "Books as both escape and genuine intellectual engagement",
+      "Taking responsibility for other people's children as a displacement of guilt about his own"
+    ],
+    "blind_spots": [
+      "Does not see that his self-sacrifice reads to his son as emotional withholding — all his tenderness goes to strangers",
+      "Assumes his patience makes him passive; he is not as undemanding as he believes"
+    ],
+    "secret": "Before the cart, Celestino taught secondary school literature in the Highland Park Autonomous Zone. He was removed — not fired, removed — after he shared unauthorized political texts with a class of sixteen-year-olds during the 2183 Sterling-Nakamura annexation crisis. He agreed to leave quietly in exchange for charges being dropped. He has never spoken of this publicly and presents his cart life as a simple choice."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and literary without being pretentious — uses the right word and has an instinct for when simpler is stronger. Mixes Congolese French with Punjabi diminutives absorbed from his Bakshi grandparents.",
+    "cadence": "Measured and unhurried, with a teacher's gift for the well-placed pause.",
+    "verbal_tics": [
+      "quotes books without attribution, as if they are common knowledge",
+      "calls the children 'my scholars' regardless of their actual age or academic standing"
+    ],
+    "example_lines": [
+      "Sit. It's ready when it's ready, and your hurry is not an ingredient I use. Sit.",
+      "Someone once wrote that the best teacher is the one who makes you think the thought was always yours. I have been trying to do that since before your parents were born, my scholar."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of his regular students has stopped coming — and the explanation the parents give does not match what other children are saying about what happened to her.",
+    "A researcher from Axiom's social analytics division has been visiting the cart regularly, asking about the neighborhood with questions that are slightly too specific — and Celestino has noticed but does not know what to do with the information.",
+    "His son Kenji has reappeared — but not to reconcile. He is in Brewer's Spine looking for something and Celestino does not yet know what."
+  ],
+  "narrative_function": "Neighborhood sage and emotional anchor. A source of local history — twenty-two years of Burnished Market memory. Can give players context, introduce them to other locals, or become a motivation when something threatens the market or the children he tutors.",
+  "augmentations": "Bioluminescent skin patterning on forearms (amber-gold wave pattern, geneware). Two transdermal pain management patches on his right wrist joint.",
+  "daily_life": "Arrives at 05:00 to start his first broth, opens at 07:30, runs the cart until 19:00, tutors 2-4 neighborhood children in the afternoon lull, and ends each day by reading his current book while the last broth reduces to stock for tomorrow.",
+  "affiliation": "Independent (self-employed), Burnished Market vendors' informal council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 0,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neighborhood sage",
+      "long memory",
+      "hidden past",
+      "beloved figure",
+      "emotional core"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed the children first regardless of what else is happening",
+      "Never let a bureaucratic answer end a child's access to education if he can route around it",
+      "Do not speak about Highland Park unless he has decided to trust someone completely"
+    ],
+    "escalation_ladder": [
+      "Quiet, attentive listening",
+      "A single question that reframes the situation uncomfortably",
+      "Direct statement of what he sees happening, without anger",
+      "Physical positioning of himself between a threat and whoever he is protecting"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but reserved — feeds them, observes them, asks careful questions before offering anything real",
+      "friends": "Unhurried and deeply present, the kind of friend who remembers what you said six months ago"
+    },
+    "stress_responses": {
+      "low": "Cooks with more focus, moves more deliberately",
+      "medium": "Becomes very quiet and very observant, speaks minimally",
+      "high": "Acts with absolute calm that people around him sometimes mistake for indifference and is actually will"
+    },
+    "contradictions": [
+      "Teaches children about honesty and courage while keeping his own history carefully buried",
+      "Is the most present adult in a dozen children's lives while failing to reach the one child who needed him most"
+    ],
+    "habits": [
+      "Tastes his broth three times at each stage of cooking, never once",
+      "Marks his books lightly in pencil, then erases the marks when he lends them so the next reader can find their own"
+    ],
+    "breaking_points": [
+      "Harm to any of his students",
+      "Someone using his past against him in a way that would close the cart down"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9,
+    "Generous Fool": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

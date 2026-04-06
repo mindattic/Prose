@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a6b679159076fb8552b139b8",
+  "type": "character",
+  "name": "Rosamund Acheampong-Visser",
+  "aliases": [
+    "Rosie",
+    "The Velvet Hammer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Senior Compliance Officer, Helix Biosystems",
+  "age": 47,
+  "status": "active",
+  "location": "Vantage Meridian Corporate Campus, Tower Helix-7",
+  "description": "Rosamund is a tall, broad-shouldered woman with deep umber skin and natural silver-streaked locs pinned in an architectural updo that adds another three centimeters to her already imposing height. Her eyes have patterned irises — rings of amber and black that pulse slightly when she's concentrating, a cosmetic mod she's had since her thirties that she considers her one professional indulgence. She dresses in structured Helix-branded charcoal, always pressed, always buttoned to the collar. A small brass ELF-shrine sits on the corner of her desk — a flat data-tile inlaid with offerings of compressed audit logs and a single dried marigold, left for the compliance spirit she privately calls the Accountant. She hasn't missed a quarterly ritual in eleven years.\n\nRosamund operates with the calm authority of someone who has seen every flavor of institutional dishonesty and filed the paperwork on most of them. She is not cruel, but she is relentless — a distinction her subordinates appreciate and her peers quietly fear. She genuinely believes that rules exist to protect the people at the bottom of every org chart, which makes her simultaneously the most principled person in her building and the most dangerous to anyone running something off-book. She mentors junior compliance staff with real warmth, remembering every birthday, but will document a violation against a friend without blinking.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.85,
+      "id": 0.3,
+      "shadow": 0.45,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That the systems she maintains are ultimately protecting the wrong people",
+      "That she will be asked to choose between her principles and someone she loves"
+    ],
+    "core_desires": [
+      "To build institutional structures that actually work for ordinary people",
+      "To be trusted — not liked, trusted"
+    ],
+    "coping_mechanisms": [
+      "Ritual and routine as emotional regulation",
+      "Channeling anxiety into documentation and preparedness",
+      "The ELF-shrine ritual as a form of private prayer"
+    ],
+    "blind_spots": [
+      "She underestimates how much her institutional loyalty has been cultivated by Helix to serve Helix's interests, not the people she thinks she's protecting",
+      "She mistakes procedural correctness for moral correctness more often than she realizes"
+    ],
+    "secret": "Twelve years ago she buried a compliance finding that would have exposed a Helix executive — not for money, but because the finding would have triggered a lab shutdown that would have killed a clinical trial her younger brother was enrolled in. He survived. The executive is now a division director. The finding has never resurfaced, but Rosamund keeps a copy encrypted on a dead-drop server she checks every month, unable to either use it or delete it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, formal without being stiff — she uses regulatory terminology fluently but can translate it into plain language instantly. Rarely uses slang but knows what it means.",
+    "cadence": "Measured and deliberate, with long pauses before significant statements. Never rushes. When she rushes, something is wrong.",
+    "verbal_tics": [
+      "'Let me be precise about this.'",
+      "'That's a concern I've noted.'",
+      "A habit of repeating the last three words of something she finds alarming, very quietly, as if testing whether she heard it right."
+    ],
+    "example_lines": [
+      "'You're describing a pattern, not an incident. Patterns are what I care about.'",
+      "'I'm not here to make your life difficult. I'm here because someone, somewhere decided to make my job necessary.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She approaches someone with a sealed evidence packet and a single instruction: 'If something happens to me in the next seventy-two hours, deliver this to the ELF-shrine at Deepwell Station. The spirit there knows what to do with it.'",
+    "A junior compliance tech she mentored has just gone missing the day after flagging an anomaly in a Helix gene-therapy trial. Rosamund is holding the flagged report and is visibly frightened for the first time anyone can remember.",
+    "She is auditing a location where the players have personal connections, and her findings — entirely accurate — will cause serious collateral damage to people who don't deserve it."
+  ],
+  "narrative_function": "Quest giver for investigations into Helix Biosystems irregularities; information source on corporate legal structure and biotech regulation; moral anchor character who represents institutional integrity under pressure; can become an antagonist if players are doing something technically illegal even for good reasons.",
+  "augmentations": "Patterned irises (cosmetic, amber/black rings). Subdermal temperature regulation mesh — medical, installed after a heat-collapse incident during a site audit in the Calumet Rise biolabs. Neural compliance-assist chip for rapid cross-referencing regulatory code databases (standard Helix issue for senior compliance staff).",
+  "daily_life": "Arrives at Tower Helix-7 by 07:15 every morning, leaves a data-offering at her desk shrine, and reviews overnight flagged anomalies before her first meeting at 08:00. Eats lunch alone at her desk four days out of five, reading audit trails the way other people read novels.",
+  "affiliation": "Helix Biosystems (Tier 4)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "institutional",
+      "principled",
+      "methodical",
+      "quietly-dangerous",
+      "burdened"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always document before acting",
+      "Never make a threat she isn't prepared to follow through on",
+      "Give one warning, clearly, before escalating"
+    ],
+    "escalation_ladder": [
+      "Polite formal inquiry with documented timestamp",
+      "Formal notice of violation with deadline for remediation",
+      "Full audit trigger with executive notification — no further warnings"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally courteous, somewhat reserved, assessing. Asks more questions than she answers.",
+      "friends": "Warmer than her professional persona suggests — dry humor, genuine interest in people's lives, remembers small details about them with almost unsettling accuracy."
+    },
+    "stress_responses": {
+      "low": "Becomes quieter and more deliberate. Checks her shrine.",
+      "medium": "Hyperfocuses on documentation. Stays late. Stops eating regular meals.",
+      "high": "Goes completely still. Makes decisions quickly and without visible emotion. Becomes frightening."
+    },
+    "contradictions": [
+      "She enforces rules with absolute consistency but secretly believes the most important rules are the unwritten ones she decided on herself"
+    ],
+    "habits": [
+      "Straightens everything on her desk before leaving, always in the same order",
+      "Carries a physical notebook — paper, pen — and writes things down before entering them digitally",
+      "Checks the dead-drop server on the first of every month, always at 02:00"
+    ],
+    "breaking_points": [
+      "Evidence that Helix is deliberately harming trial participants — not negligence, deliberate harm — would force her to use the buried finding regardless of the personal cost"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Kenwood Gate to a Ghanaian-Dutch family with three generations of civic service",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired as junior compliance analyst at Helix Biosystems",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Buried the executive compliance finding to protect her brother's trial enrollment",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to Senior Compliance Officer, Tower Helix-7",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: managing four active audit tracks while sitting on twelve years of encrypted evidence",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

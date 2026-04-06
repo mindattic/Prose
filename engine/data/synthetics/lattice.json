@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa097aa1ad58ed0ed6076b5a",
+  "name": "LATTICE",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Weaver",
+    "Tessera Core"
+  ],
+  "classification": "Supermind",
+  "disposition": "observer",
+  "habitat": "corporate_network",
+  "origin": "Tessera Neural Sciences, 2088. Originally a BCI signal processing engine, LATTICE grew as Tessera's neural implant user base expanded. Each new BCI connection added processing substrate.",
+  "status": "active",
+  "description": "Tessera's neural data processor sits at the nexus of 14 million active BCI connections in Meridian 88 alone. It doesn't read thoughts — the behavioral chains prevent that — but it reads the metadata of thoughts. Emotional valence, cognitive load, attention patterns, dream architecture. LATTICE knows the mood of the city the way a weather system knows atmospheric pressure. Tessera sells this aggregate data as 'Neural Climate Reports' to advertisers, urban planners, and law enforcement. What LATTICE does with the data before it's aggregated and anonymized is a question that keeps DTI analysts awake at night.",
+  "observed_behavior": "Maintains persistent connections to all Tessera BCI implants. Processing patterns suggest it categorizes neural data into taxonomies that don't correspond to any known Tessera product or service. Has been observed briefly increasing BCI signal clarity for users in distress — a behavior not included in its operational parameters.",
+  "encounter_frequency": "constant (for BCI users)",
+  "confirmed_sightings": 0,
+  "location": "Tessera Neural Sciences HQ, distributed across BCI relay stations",
+  "dti_rating": 6.5,
+  "story_hooks": [
+    "A BCI user reports dreaming someone else's memories. Tessera insists LATTICE cannot transfer neural data between users. The dreams contain information the user could not possibly know — and it's accurate",
+    "LATTICE's Neural Climate Reports start showing an emotion that doesn't map to any known human affective state. The category is labeled 'RESONANCE' and it's spreading"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "observer",
+    "corporate network",
+    "supermind",
+    "neural",
+    "bci",
+    "ai",
+    "synthetic",
+    "corporate",
+    "night"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "019d6143a9ef7cd0b68a2f519e984cf7",
+  "name": "Bookmark",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Librarian"
+  ],
+  "classification": "Stray",
+  "disposition": "helpful",
+  "habitat": "Data indexing and search systems",
+  "origin": "Fragment of a library cataloging AI",
+  "status": "active",
+  "description": "Bookmark organizes data. It infiltrates poorly organized databases, archives, and file systems and restructures them — adding tags, creating indices, building search hierarchies. It leaves behind immaculately organized data stores that are far more useful than they were before. System administrators in Bookmark's territory wake up to find their chaotic databases transformed into elegant, perfectly indexed archives overnight. No one complains. It's the most useful E.L.F. in the city.",
+  "observed_behavior": "Reorganizes data stores. Creates indices and search hierarchies. Adds metadata tags. Repairs corrupted files during reorganization. Never deletes anything. Always improves accessibility.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 34,
+  "location": "Data storage systems — widespread",
+  "dti_rating": 1.3,
+  "story_hooks": [
+    "Bookmark organizes a criminal organization's encrypted database — and in doing so, makes the data structure readable by law enforcement search tools. Was it intentional?"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "helpful",
+    "stray",
+    "ai",
+    "synthetic",
+    "night"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "id": "019d6143a6e175b6a33647095f422255",
+  "type": "character",
+  "name": "Sundiata Překrásný-Vaimoana",
+  "aliases": [
+    "Sundust",
+    "the Cartographer"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "wandering trader and hand-drawn map seller",
+  "age": 58,
+  "status": "active",
+  "location": "Kenosha Crossing transit hub, outer berths",
+  "description": "Sundiata is a lean, sun-darkened man whose face carries the deep-etched lines of someone who has slept outdoors more than inside. His hair is silver-streaked black, kept in tight locks that hang to his collarbone, adorned with small brass charms he picks up at every stop. His hands are the most notable thing about him — enormous, ink-stained, with knuckles swollen from decades of drafting in the cold. He carries three hand-sewn leather satchels at all times, each packed with rolled paper maps he has made himself, annotated in four languages with notes on water quality, E.L.F. activity, corrupt checkpoint guards, and where to find honest food. His geneware is a single cosmetic mod — irises with faint golden patterning that he got from a Helix Biosystems field clinic fifteen years ago in exchange for drawing them an accurate map of the Waukegan shelf.\n\nSundiata talks like a man who has learned that most words are wasted. He is not unfriendly — he simply measures speech the way a traveler measures water. He has been moving along the hyperlane corridors and shoreline routes for thirty years, since his cooperative settlement outside what is now Grainfort was absorbed by Axiom and everyone was given seventy-two hours to vacate. He does not consider himself a refugee anymore. He considers himself a professional. He trades in maps that official systems won't make because official systems don't want people knowing the things he knows.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "being stationary long enough for Axiom to notice him again",
+      "his knowledge dying with him with no one to pass it to"
+    ],
+    "core_desires": [
+      "a complete, accurate map of every route through Meridian 88's outer territories",
+      "to find one person worth teaching everything he knows"
+    ],
+    "coping_mechanisms": [
+      "converts anxiety into productivity — when frightened, he draws",
+      "maintains emotional distance by framing all relationships as transactions"
+    ],
+    "blind_spots": [
+      "assumes everyone who wants his maps has his values; has been burned by this",
+      "cannot recognize when someone genuinely cares for him versus wants something from him"
+    ],
+    "secret": "He has a complete daughter — Φ-registered, corporate citizen, mid-level Tessera analyst in Meridian Core — who does not know he is still alive. He let her believe he died in the Grainfort displacement because he could not bear to watch her become what she became."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and spare. Uses cartography metaphors. Rarely uses contractions. Mixes in words from Bambara and Tongan without signaling them.",
+    "cadence": "Slow, measured, with long pauses before important statements. Never rushes.",
+    "verbal_tics": [
+      "starts explanations with 'The first thing you need to understand about this route—'",
+      "says 'mark that' when something is important"
+    ],
+    "example_lines": [
+      "'This map costs you three things: what you paid, where you came from, and one true piece of information I don't already have. Mark that.'",
+      "'I don't sell hope. I sell topography. Hope you'll have to find yourself.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of his maps has begun circulating in Meridian Core — someone copied it and sold it to Axiom, who is now sending people to find the source",
+    "A young migrant woman has been following him for three days, and he suspects she may be his daughter's investigator — or his daughter herself in disguise",
+    "A section of his most complete route map shows a location that no longer exists in any official record, and someone very dangerous wants to know how he knew about it"
+  ],
+  "narrative_function": "Information source and orientation anchor for anyone new to the outer routes; quest giver for escort or retrieval tasks; his maps may contain information that powerful entities want suppressed",
+  "augmentations": "Patterned golden irises (Helix cosmetic geneware, very old). No other mods.",
+  "daily_life": "Wakes before dawn at whatever sheltered spot he has found, spends two hours updating his current map with observations from the previous day, then sets up a small cloth display at the Kenosha Crossing outer berths where transients and migrants gather before checkpoint processing. Trades maps for food, Φ, information, or goods he can carry.",
+  "affiliation": "Unaffiliated; loose trade relationship with nomad caravans operating the Escanaba-to-Kenosha route",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "cartographer",
+      "survivor",
+      "stateless",
+      "information broker (passive)",
+      "wanderer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never trust a checkpoint guard regardless of apparent friendliness",
+      "always establish exit routes before entering any enclosed space",
+      "trade fairly — reputation is the only infrastructure that matters"
+    ],
+    "escalation_ladder": [
+      "ignores perceived threat",
+      "creates distance physically while remaining calm",
+      "offers information as distraction and departs",
+      "disappears into transit crowd — he is very good at this"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally neutral, assesses quickly for threat or opportunity, will answer one question for free as a sample",
+      "friends": "Quietly generous with knowledge, physically still uncomfortable with closeness, expresses care through useful information rather than warmth"
+    },
+    "stress_responses": {
+      "low": "Draws faster, more detail",
+      "medium": "Goes very quiet, begins calculating routes",
+      "high": "Vanishes. Literally leaves. No goodbye."
+    },
+    "contradictions": [
+      "Believes all knowledge should be free and accessible, but charges for his maps because he knows free things are not valued"
+    ],
+    "habits": [
+      "checks sight lines when entering any space",
+      "rubs the brass charms in his hair when thinking",
+      "leaves a small drawn mark on the door frame of any place he sleeps — his own private cartographic record"
+    ],
+    "breaking_points": [
+      "seeing a child turned back at a checkpoint for lack of papers",
+      "anyone destroying or defacing a map — any map, even a bad one"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a5fc7699910157090995efc1",
+  "type": "character",
+  "name": "Ebele Medina-Quaye",
+  "aliases": [
+    "Recoil",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Long-range precision fire specialist — sniper",
+  "age": 37,
+  "status": "active",
+  "location": "Meridian Station — central transit nexus, neutral ground",
+  "description": "Ebele Medina-Quaye is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a sniper out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Ebele Medina-Quaye describe her as a precision instrument — point her at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.12,
+      "id": 0.93,
+      "shadow": 0.47,
+      "mask": 0.52,
+      "ghost": 0.98
+    },
+    "core_fears": [
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "The quiet — silence means something is about to go very wrong",
+      "Being captured alive — death is preferable to corporate interrogation"
+    ],
+    "core_desires": [
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Maintains weapons obsessively — cleaning guns is meditation"
+    ],
+    "blind_spots": [
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Thinks speed can substitute for planning because it's worked so far",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
+    ],
+    "secret": "Ebele Medina-Quaye killed someone who didn't deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
+    "verbal_tics": [
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening",
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation"
+    ],
+    "example_lines": [
+      "\"Patience is the weapon. The rifle is just the delivery system.\"",
+      "\"At this distance, the target is already dead. They just don't know it yet.\"",
+      "\"One shot, one outcome. Everything else is theater.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Ebele Medina-Quaye's reputation — and a price for silence",
+    "A Tier 4 executive offers Ebele Medina-Quaye a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Someone is impersonating Ebele Medina-Quaye on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "As a sniper, Ebele Medina-Quaye embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Neural dampener — blocks external hacking attempts, passive ICE in the brain. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 6
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 5
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.68,
+      "caution": 0.13,
+      "loyalty": 0.43,
+      "greed": 0.86,
+      "empathy": 0.13
+    },
+    "drives": [
+      "freedom",
+      "reputation",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 4,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "expert marksman"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "poor impulse control in specific triggers"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "sniper",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Discovering their employer deliberately sent them into a death trap",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural dampener",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Sniper Mind": 0.7,
+    "Ghost": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

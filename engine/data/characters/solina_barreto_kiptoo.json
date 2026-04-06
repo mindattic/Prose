@@ -1,0 +1,224 @@
+{
+  "id": "019d6143a6d37cceaa9e0691009005d6",
+  "type": "character",
+  "name": "Solina Barreto-Kiptoo",
+  "aliases": [
+    "Soli",
+    "Pins"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Clothing and fashion vendor — custom streetwear, geneware-adaptive textiles, and secondhand curated fashion",
+  "age": 23,
+  "status": "active",
+  "location": "The Alban Souk, Calumet Rise",
+  "description": "Solina is a small, bright-eyed young woman with color-changing hair — a geneware mod she got as a gift from her older sister that cycles through her moods in deep jewel tones, though she has learned to override it manually for professional situations and keeps it a steady ochre during business hours. She has dark skin and the compact, efficient movements of someone who grew up in a small space, and her personal style is a rotating argument: today structured and architectural, tomorrow soft and layered, always intentional. Her stall is hung with pieces she has made, altered, sourced, and curated — everything labeled with a hand-written tag in her small careful script explaining its origin, its material, and what she thinks it's for.\n\nSolina is ambitious in the specific way of someone young enough to still believe in the direct line between work and outcome. She is making things. She believes in what she is making. She has not yet been defeated by the market in any permanent way, and this gives her an energy that is simultaneously infectious and occasionally exhausting to people who have been at it longer. She is genuinely talented — the pieces she designs herself have started drawing buyers from Beverlynn Heights who come slumming in Calumet Rise specifically for her work — and she is beginning to understand, with some anxiety, what that attention might mean.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being absorbed and flattened by a larger brand or corponation — having her aesthetic extracted and her credit erased",
+      "Peaking now, at 23, and finding that the ambition was bigger than the talent"
+    ],
+    "core_desires": [
+      "To build a label that is genuinely hers and lasts",
+      "To make things that reach people who look like her and come from where she comes from"
+    ],
+    "coping_mechanisms": [
+      "Making things — when anxious she sews, sketches, pins",
+      "The Threaded collective as genuine community and reality check"
+    ],
+    "blind_spots": [
+      "Her excitement about the Beverlynn Heights buyers makes her less critical of what those buyers actually represent",
+      "Underestimates how quickly the informal market can turn hostile to someone with visible upward momentum"
+    ],
+    "secret": "She has been approached by a Sterling-Nakamura talent scout who wants her to design a capsule collection for their street aesthetic sub-brand. She hasn't told anyone because she knows the collective would see it as a betrayal — and because part of her wants to say yes and she can't fully forgive herself for that."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, associative, pivots between technical textile vocabulary and enthusiastic vernacular. Uses fashion as metaphor for everything.",
+    "cadence": "Quick and overlapping, like she is finishing her thought before she forgets it",
+    "verbal_tics": [
+      "'right?' seeking agreement mid-thought",
+      "names the garment she's working on in conversation as if it's a third party present"
+    ],
+    "example_lines": [
+      "Okay but look at the shoulder seam — see how it catches? That's not an accident, that's three hours. That's what you're paying for when you pay me, right?",
+      "I dressed Malkia Osinde-something from up in Beverlynn last month, she wore it to some Tessera event — I saw the photo and I thought, yeah, okay. Okay. That's mine."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A garment she made and sold appeared on a body in the Alban Souk — the buyer, who she knew by face if not by name, was killed wearing it, and she is shaken and trying to understand what happened to them",
+    "The Sterling-Nakamura scout is pushing for an answer and has made the offer larger; Solina needs someone to think through the implications with her",
+    "A design she is developing incorporates a traditional textile pattern that another vendor in the Souk has begun claiming ownership of publicly — a conflict that is becoming heated within the Threaded collective"
+  ],
+  "narrative_function": "Social connector and street-level trend barometer — knows who is wearing what and what that signals, which factions are up and which are down by fashion alone. Can craft, alter, or source specific garments. Potential quest giver if a design she made ends up somewhere it shouldn't, or if a wealthy buyer's attention turns threatening.",
+  "augmentations": "Color-changing hair (geneware, mood-responsive with manual override, jewel tones). Micro-filament fingertip sensitivity enhancement — a cheap prosumer mod that increases fine-touch sensitivity, used for detailed handwork in textiles. She has also experimented with temporary bioluminescent skin paint — not permanent, applied and removed seasonally.",
+  "daily_life": "Sews from 0500 to opening, runs her stall through the day, attends two Threaded collective meetups a week in the evenings, and stays up too late researching historical textiles from her heritage regions on whatever data she can access for free.",
+  "affiliation": "Independent; loosely affiliated with the Alban Souk fashion collective, Threaded (informal mutual aid and skills-sharing network for clothing vendors)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fashion designer",
+      "Alban Souk",
+      "collective member",
+      "geneware hair",
+      "ambition tension",
+      "Sterling-Nakamura contact"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Make things you would wear yourself or don't make them",
+      "Don't undercut other Threaded vendors — lift or leave the price where it is"
+    ],
+    "escalation_ladder": [
+      "Engages conflict with transparency — names the problem directly",
+      "Gets louder and more emphatic, hair shifts out of ochre into deep red despite her efforts",
+      "Breaks down and then gets very quiet and productive — channels it into work"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and enthusiastic — will immediately tell you about what she's working on if you seem interested",
+      "friends": "Intense and loyal, expects reciprocal enthusiasm, can smother occasionally"
+    },
+    "stress_responses": {
+      "low": "Sews faster and talks more",
+      "medium": "Hair override fails, mood becomes visible; withdraws into headphones and handiwork",
+      "high": "Cries briefly, then makes something. The making is always the recovery."
+    },
+    "contradictions": [
+      "Deeply communitarian and cooperative in the collective but harboring a very personal, individualist ambition she has not reconciled with those values"
+    ],
+    "habits": [
+      "Keeps a small ELF shrine of thread spools and needle packets at the back of her stall, leaves first and last stitches of the day as offerings",
+      "Photographs every piece before it leaves the stall",
+      "Hums while she sews, always"
+    ],
+    "breaking_points": [
+      "Watching her work credited to someone else �� especially a corponation brand",
+      "A friend in the collective being seriously hurt while she was distracted by the Sterling-Nakamura situation"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9,
+    "Generous Fool": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Calumet Rise",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Set up first stall in the Alban Souk at 17, initially reselling secondhand pieces",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined the Threaded collective; began selling original designs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First Beverlynn Heights buyers discovered her work; Sterling-Nakamura scout made initial contact",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

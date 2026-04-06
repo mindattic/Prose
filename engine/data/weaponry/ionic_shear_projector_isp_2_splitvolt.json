@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab2f7333b4326eacd81568b5",
+  "name": "Ionic Shear Projector ISP-2 'Splitvolt'",
+  "type": "weapon",
+  "aliases": [
+    "Splitvolt",
+    "The Divider",
+    "Arc Blade",
+    "ISP"
+  ],
+  "category": "energy",
+  "description": "The ISP-2 generates a narrow planar sheet of ionized plasma approximately 1.4 meters long and 2 centimeters wide, sustained at close range by a pair of electromagnetic field guides mounted at the weapon's emitter fork. The plasma sheet is not a beam in the conventional sense — it does not project across distance. Instead, it functions as an extended melee cutting surface, maintained at temperatures exceeding 8,000 Kelvin along its active edge. The weapon is, in practical terms, an energy blade: wielded in close quarters, it cuts through most materials that conventional blades cannot, including hardened ceramic plating and lower-grade ballistic weaves.\n\nZheng-Dao Bioelectric developed the ISP-2 as a response to the increasing prevalence of subdermal armor implants in high-value targets — human tissue reinforced with ceramic mesh or carbon-fiber laminate that defeats conventional blades entirely. The plasma edge interacts with these materials through a combination of thermal ablation and ionic disruption, effectively 'unzipping' the molecular bonds of the implant matrix rather than cutting through it mechanically. Against unaugmented targets, wounds are cauterized on contact, producing less blood evidence and complicating forensic analysis.\n\nThe ISP-2 is notoriously difficult to use effectively. The plasma sheet requires the operator to maintain field guide alignment within tight tolerances — any impact to the emitter fork risks field collapse, which releases a brief but violent ionic discharge that can injure the user. Training programs for the weapon are extensive and proprietary to Zheng-Dao's licensed operator network. On the street, self-taught users are identifiable by the characteristic burn scarring on their dominant forearm.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Sustained plasma field generation",
+    "Electromagnetic field guidance",
+    "Ionic molecular disruption"
+  ],
+  "specifications": "length: 61cm (handle and emitter fork)\nweight: 1.8kg\nplasma edge length: 1.4m\nplasma edge temperature: ~8,200 Kelvin sustained\npower source: ZD Compact Ionic Cell, 14 minutes continuous activation\nfield collapse risk: High under lateral impact to emitter fork\neffective use range: Melee only (0–2m)\ncutting capacity: Ceramic plate up to 18mm, carbon-fiber laminate, most biological implant matrices",
+  "tactical_use": "The ISP-2 is a close-quarters assassination tool. Operators trained in its use approach targets under cover, activate the blade at the last moment to minimize detection window, and execute precise anatomical cuts — typically targeting the neck, femoral region, or spine where subdermal armor coverage is thinnest. Against heavily augmented targets, the ionic disruption effect means the blade can be used to disable cybernetic limbs by cutting through the interface points between implant and organic tissue. The weapon is largely useless in open combat, as it requires proximity and a trained user to avoid self-injury. Its primary tactical advantage is the cauterizing wound profile, which significantly delays victim response and reduces scene evidence.",
+  "cultural_context": "The Splitvolt is deeply embedded in Meridian 88's assassination culture. Zheng-Dao Bioelectric officially denies the weapon exists in its current form, attributing ISP units in circulation to 'prototype leakage' from a discontinued project. Among the city's elite fixers and wetwork contractors, carrying a Splitvolt signals a specific professional identity — someone who works close, works clean, and has the training to back it up. There is a small but visible subculture of underground duelists who use ISP-2s in sanctioned matches, which has given the weapon an unexpected secondary reputation as a status symbol in certain nightlife circles.",
+  "known_users": [
+    "Zheng-Dao internal security operatives",
+    "High-tier wetwork contractors",
+    "Underground plasma duelists",
+    "Anti-augmentation extremist cells (repurposed for implant destruction)"
+  ],
+  "story_hooks": [
+    "A series of deaths in the corporate tier show the distinctive cauterized wound pattern of an ISP-2. The victims have no obvious connection — except they all had the same subdermal implant manufacturer, and the cuts are always through the implant interface point specifically.",
+    "A Zheng-Dao executive wants to recover a prototype ISP-2 variant before it can be reverse-engineered. The problem is it's currently in the hands of an underground duelist who won it in a match and has no idea what they have.",
+    "A player character's contact shows up dead with an ISP-2 wound. The weapon was used by someone who clearly had professional training — which narrows the suspect list considerably."
+  ],
+  "ammunition_type": [
+    "Zheng-Dao Type-4 Bioelectric Cell ZD-T4"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "combat",
+    "blade",
+    "death",
+    "identity",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "ubc",
+    "injury",
+    "market",
+    "rain",
+    "night",
+    "moral",
+    "train",
+    "armor",
+    "narrows"
+  ]
+}

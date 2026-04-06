@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab147d46b6a4db5620154651",
+  "name": "Arcturus Defense Solutions Magnetic Accelerator Rifle MAR-8 'Longbow'",
+  "type": "weapon",
+  "aliases": [
+    "Longbow",
+    "MAR-8",
+    "Mag Rifle",
+    "The Reach"
+  ],
+  "category": "rifle",
+  "description": "A precision electromagnetic rifle that uses a 16-stage magnetic accelerator to launch a 2mm tungsten penetrator at velocities exceeding 3,000 m/s. The MAR-8 is Arcturus's answer to the increasing prevalence of heavy composite armor — at hypervelocity, the tungsten penetrator defeats virtually any personal armor system through sheer kinetic energy transfer. The rifle is semi-automatic with a 6-round magazine and requires a backpack-mounted supercapacitor for its power supply. The electromagnetic launch produces no chemical propellant signature, minimal muzzle flash, and a distinctive sharp crack from the hypersonic shockwave that makes the shot direction difficult to identify.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 5",
+  "legality": "Military restricted — active combat authorization only",
+  "base_technologies": [
+    "Multi-stage magnetic projectile acceleration",
+    "Hypervelocity tungsten penetrator ballistics",
+    "Compact supercapacitor power systems"
+  ],
+  "specifications": "caliber: 2mm tungsten penetrator\nmuzzle velocity: 3,200 m/s\nmagazine: 6 rounds\neffective range: 200-2,000 meters\npower source: Backpack supercapacitor, 24 shots per charge\nrecharge between shots: 2 seconds\nweight: 5.8 kg rifle, 4.5 kg power pack\npenetration: Rated for all known personal armor systems\nbarrel: 16-stage magnetic accelerator, 80 cm",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A corporate executive was killed by a 2mm penetrator that passed through their armored vehicle, their body armor, and the seat behind them — the shot came from over a kilometer away and only a MAR-8 has that capability at that range.",
+    "Arcturus is field-testing a MAR-8 variant with programmable penetrators that fragment after passing through armor — turning a precision weapon into an anti-personnel system."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "rifle",
+    "combat",
+    "weapon",
+    "corporate",
+    "power",
+    "bar",
+    "vehicle",
+    "armor",
+    "energy",
+    "tier 5"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "id": "019d6143a683780583fbab3c2f304200",
+  "type": "character",
+  "name": "Oluwatokunbo Skrzypiec-Faamatau",
+  "aliases": [
+    "Tobi",
+    "The Archivist"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Data archaeologist and extinct-language reconstructionist, University Spine",
+  "age": 54,
+  "status": "active",
+  "location": "University Spine, Brewer's Spine sublevel archive stacks",
+  "description": "Oluwatokunbo is a broad-shouldered woman with deep umber skin mapped by decades of fluorescent archival light — her eyes carry the particular fatigue of someone who has spent a career reading things that no longer want to be read. She keeps her silver-streaked hair in tight wrapped cords pinned with antique data-spike styluses, and her fingers are perpetually ink-stained despite no physical ink being involved; a psychosomatic habit she developed after thirty years of interfacing with degraded data substrates. A small bioluminescent glyph — an old Polynesian voyaging star chart commissioned from a gene-artist — pulses faintly along her left forearm when she's excited, which colleagues use as a more reliable indicator of her enthusiasm than her carefully measured words.\n\nShe speaks with the precise, unhurried authority of someone who has outlasted three department chairs and four curriculum overhauls and considers herself accountable only to the dead languages she serves. Students find her terrifying; junior colleagues find her generous in ways they don't expect. She has no patience for academic posturing but extraordinary patience for a corrupted file, and she treats both the E.L.F. that haunts her archive terminal — she calls it Grandmother — and a first-year graduate student with the same respectful directness. Her secret grief is that she has reconstructed seventeen languages that no living person will ever speak again.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That her reconstructions are wrong and she has been preserving fictions",
+      "That the languages she saves will be absorbed by Axiom's linguistic standardization program and die a second death"
+    ],
+    "core_desires": [
+      "To hear a reconstructed language spoken aloud by someone who genuinely means it",
+      "To be remembered as honest rather than brilliant"
+    ],
+    "coping_mechanisms": [
+      "Meticulous routine",
+      "Treating the archive E.L.F. as a confidant",
+      "Focusing on granular technical problems when existential ones become overwhelming"
+    ],
+    "blind_spots": [
+      "Underestimates how much her approval means to students — she withholds it thinking she's being rigorous when she's being cruel",
+      "Assumes corporate contracts are neutral transactions and doesn't notice Zheng-Dao's interest in what she's finding"
+    ],
+    "secret": "Seventeen years ago she deliberately misfiled the location coordinates of a pre-Meridian Anishinaabe ceremonial archive she discovered in the Brightmoor Reclamation strata — not in her official records, not in Zheng-Dao's database. The location exists only in her personal encrypted notation. She tells herself she is protecting it; she has never decided from whom."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal but not stiff — precise technical terminology mixed with occasional Yoruba and Samoan phrases she has absorbed from languages she's studied; refuses academic jargon she considers performative",
+    "cadence": "Measured, deliberate, long pauses before important points as if she is checking the sentence for accuracy before releasing it",
+    "verbal_tics": [
+      "'That's not quite right' (her opening to corrections, always gentle)",
+      "'Let me be precise about this'",
+      "Clicking her tongue once before disagreeing"
+    ],
+    "example_lines": [
+      "'The file is corrupted, yes. But corruption is information. What it cannot say tells us as much as what it can.'",
+      "'I don't teach students how to find answers. I teach them how to respect the question. There is a difference, and it is not small.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has discovered a phrase repeating in seventeen separate corrupted datasets from different eras and districts — the same phrase, in a language she cannot identify, which should be impossible given her expertise",
+    "Zheng-Dao's Heritage Compliance division has begun sending a new liaison who asks very specific questions about pre-Meridian land use records — questions that would only matter if they were planning something in the Brightmoor strata",
+    "A student brings her a physical object — a clay tablet fragment — recovered from a demolition site, and the inscription matches a symbol set she has only ever seen in one other place: her misfiled archive coordinates"
+  ],
+  "narrative_function": "Information source for extinct pre-Meridian cultures, city history, and data buried in legacy formats; quest giver for retrieval of specific corrupted files or physical data artifacts; local color in the archive district; can authenticate or translate anything players find in old ruins.",
+  "augmentations": "Subdermal haptic readers in both palms for interfacing directly with degraded physical media; low-grade ocular enhancement (archival-grade magnification, no combat function); the bioluminescent forearm glyph (cosmetic geneware, over 20 years old and slightly faded).",
+  "daily_life": "Arrives at the archive stacks before the building officially opens using a key she has held for nineteen years, works through breakfast, teaches one graduate seminar on Tuesdays and Thursdays, and eats the same flatbread-and-protein-paste lunch at her desk while arguing with her terminal E.L.F. about file permissions.",
+  "affiliation": "University Spine — Dept. of Computational Linguistics and Material Memory; occasional contract work for Zheng-Dao Heritage Compliance division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "scholar",
+      "institutional",
+      "guardian",
+      "meticulous",
+      "morally-anchored"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Verify before asserting — she will not speak until she is confident",
+      "Protect primary sources above all else, including her own career",
+      "Give people one honest chance before writing them off"
+    ],
+    "escalation_ladder": [
+      "Patient explanation",
+      "Pointed clarifying question that makes the other person realize they are wrong",
+      "Silence and withdrawal of cooperation",
+      "Formal written complaint through proper channels",
+      "In extremis: going public with what she knows"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally polite, assessing, reveals nothing personal until trust is established",
+      "friends": "Drily funny, surprisingly warm, the kind of friend who remembers what you said six months ago and follows up"
+    },
+    "stress_responses": {
+      "low": "Becomes more methodical, double-checks everything",
+      "medium": "Goes quiet, retreats to tactile tasks — physically organizing files, handling objects",
+      "high": "Controlled but visible anger expressed in very precise, very quiet sentences"
+    },
+    "contradictions": [
+      "Believes languages must be preserved for living communities but has devoted her life to languages no community can claim",
+      "Deeply skeptical of corporate motives but keeps taking their contracts because the funding is real"
+    ],
+    "habits": [
+      "Runs her thumb over the bioluminescent glyph when thinking",
+      "Always asks the archive E.L.F. for permission before opening a file, as a ritual",
+      "Keeps a physical handwritten index of everything she considers truly important"
+    ],
+    "breaking_points": [
+      "Discovering that her reconstructions have been used for corporate brand mythology or appropriative marketing",
+      "A student being punished for following her methodological guidance"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Artist": 0.7,
+    "Beauty Seeker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

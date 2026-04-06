@@ -1,0 +1,62 @@
+{
+  "id": "019d6143a7bf7bafb691d1e3067400eb",
+  "name": "Lazarus Pharmaceuticals Adrenal Phantom Graft — 'The Surge'",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Adrenal Phantom Graft — 'The Surge'",
+  "type": "cyberware",
+  "aliases": [
+    "The Surge",
+    "Phantom Gland",
+    "Ghost Adrenaline",
+    "Lazarus APG-2"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Surge is a bioengineered adrenal augmentation developed by Lazarus Pharmaceuticals that replaces or supplements the natural adrenal gland with a synthetic tissue graft capable of producing a precisely calibrated chemical cascade on demand. Unlike crude stimulant injectors or external epinephrine delivery systems, the Phantom Graft is a living implant — vascularized, integrated into the endocrine system, and capable of producing not just adrenaline but a proprietary Lazarus-formulated cocktail that includes synthetic cortisol analogues, a selective norepinephrine amplifier, and a compound Lazarus designates LP-7 that temporarily suppresses pain signal transmission at the spinal level without affecting motor function. The graft is surgically positioned adjacent to the native adrenal tissue or in a prepared retroperitoneal space in subjects who have had the native gland removed.\n\nThe activation experience is described by users as a clean, controlled version of what natural adrenaline provides — the heightened perception, elevated strength output, and narrowed attentional focus of a fight-or-flight response, but without the shaking hands, tunnel vision failures, or post-surge crash that characterizes natural adrenaline dumps. The LP-7 component in particular produces a combat effectiveness window that operators describe as 'paying the bill later' — pain is not absent, but it is deferred, queued for delivery after the chemical window closes. Users who push through serious injuries during a Surge activation sometimes don't realize the extent of the damage until the graft cycles down, at which point the deferred pain signal arrives in full.\n\nLazarus Pharmaceuticals designed the Phantom Graft with a deliberate dependency architecture — the synthetic graft gradually suppresses the body's native adrenal response over 18–24 months of use, making the user increasingly reliant on the implant for any high-stress physiological response. Lazarus frames this as 'integration maturity' and offers a subscription-based proprietary maintenance compound that sustains graft viability. Users who cannot afford or access the maintenance compound experience graft degradation and, eventually, adrenal insufficiency — a chronic and potentially life-threatening condition. This has made Lazarus's maintenance subscription a point of significant controversy and the subject of ongoing regulatory disputes across Meridian 88's corporate governance bodies.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"implant_type\":\"Living bioengineered tissue graft\",\"implant_site\":\"Adjacent to native adrenal tissue or retroperitoneal space\",\"activation_method\":\"Subvocal trigger or automatic stress-threshold detection\",\"surge_duration\":\"4–7 minutes peak chemical window\",\"recovery_period\":\"40 minutes minimum before reactivation\",\"pain_deferral_scope\":\"Spinal-level suppression of acute pain signals; does not affect proprioception or motor function\",\"native_adrenal_suppression\":\"Clinically significant suppression of natural response within 18–24 months\",\"maintenance_compound\":\"Lazarus LP-Sustain, proprietary formula, required monthly\",\"graft_lifespan_without_maintenance\":\"6–10 months before significant degradation onset\",\"surgical_grade\":\"Tier II Bioengineered Tissue Implantation\"}",
+  "side_effects": [],
+  "cultural_context": "The Surge has a divided reputation in Meridian 88. Among professional operators, it's considered highly effective and the performance benefits are well-understood and respected. The dependency architecture and maintenance subscription, however, have generated significant resentment — particularly among lower-tier operators who accepted the implant at a subsidized rate through a corporate employer and then found themselves unable to afford maintenance after leaving that employer. Lazarus Pharmaceuticals has faced several organized protests and at least one documented sabotage of a maintenance compound distribution facility. The phrase 'Lazarus hook' has entered street slang as a term for any product or service designed to create dependency, not just Lazarus's own offerings. Among wealthy users, the maintenance subscription is a minor inconvenience; for everyone else, it's a permanent financial obligation or a ticking clock.",
+  "known_users": [
+    "Corporate close-protection operatives",
+    "Lazarus Pharmaceuticals-contracted field testers",
+    "High-tier mercenary combat specialists",
+    "Emergency medical responders in conflict zones",
+    "Underground pit-fighting circuit competitors",
+    "'Rourke' — independent operator known for surviving engagements that should have been fatal, attributed to extreme Surge utilization and deferred damage tolerance"
+  ],
+  "story_hooks": [
+    "The Lazarus maintenance compound supply chain has been deliberately disrupted in a specific district — thousands of Surge users are approaching graft degradation simultaneously, and whoever controls the remaining supply controls them.",
+    "A party member's contact collapses after an operation, deferred pain from Surge-masked injuries arriving all at once — they need immediate medical attention, but the nature of the injuries will raise questions about what they were doing.",
+    "Lazarus Pharmaceuticals is offering a new 'lifetime maintenance' upgrade for a significant one-time fee — but the upgrade involves a hardware modification that several independent technicians believe includes additional proprietary lock-in mechanisms.",
+    "A whistleblower inside Lazarus has evidence that the 18-month native adrenal suppression timeline was known before the product launched and was considered a feature, not a side effect — they need help getting the documentation out.",
+    "An operator has been running Surge activations far beyond the recommended frequency, and their graft is producing the chemical cascade continuously — they're living inside a permanent Surge window, and the LP-7 deferred pain is accumulating to a level that will be catastrophic when it finally breaks through."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "combat",
+    "war",
+    "augment",
+    "ai",
+    "synthetic",
+    "corporate",
+    "contract",
+    "control",
+    "wealth",
+    "medical",
+    "clinic",
+    "pain",
+    "tunnel",
+    "stimulant",
+    "circuit",
+    "tier 2"
+  ]
+}

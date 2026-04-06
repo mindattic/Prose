@@ -1,0 +1,59 @@
+{
+  "id": "019d6143a90272b38cf1d02d5798e304",
+  "name": "Celerix",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Quicksilver",
+    "Sil",
+    "Fast Glass"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "reflex_accelerator",
+  "manufacturer": "Helix Biosystems",
+  "description": "Celerix is a SNT-compatible neurosynaptic accelerant that temporarily increases signal propagation velocity across motor and sensory neural pathways by upregulating myelin-analogue synthetic sheaths in the peripheral nervous system. The result is a measurable reduction in reaction time of 80-120 milliseconds — enough to matter significantly when facing augmented opponents. Helix designed it specifically to give unaugmented or lightly augmented users a competitive edge against chrome-heavy targets.",
+  "method_of_use": "neural_direct",
+  "effects": [
+    "Reaction time reduced 80-120ms",
+    "Improved threat-tracking and predictive motor response",
+    "Heightened sensory acuity",
+    "Smoother fine motor control under stress",
+    "Compatible with most standard BCI loadouts"
+  ],
+  "side_effects": [
+    "Sensory overload in high-stimulus environments",
+    "Tremor during comedown",
+    "Incompatibility crashes with certain military-grade BCIs",
+    "Persistent tinnitus with repeated use",
+    "Risk of synaptic fatigue — degraded reaction times post-use for 24-48 hours",
+    "Seizure risk in users with neural scar tissue"
+  ],
+  "duration": "25-35 minutes",
+  "addiction_risk": "moderate",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ420",
+  "cultural_context": "Celerix is the drug of choice for the technically minded runner who understands pharmacokinetics — people who talk about 'stacking windows' and 'optimal timing.' In Tier 3 combat circles it has an almost aspirational quality, associated with precision and skill rather than brute force. The neural_direct delivery means you need a BCI port, which prices out the lower Shelf. Knockoffs exist but the delivery mechanism is hard to replicate safely.",
+  "story_hooks": [
+    "A street-level knockoff of Celerix is moving through the Shelf — it produces the reflex boost but causes catastrophic BCI port corrosion after three uses; someone is selling it knowingly",
+    "A runner discovers their Celerix prescription is being used by Helix as longitudinal neural data collection without consent — the drug is also a study",
+    "Two runners both dosed with Celerix face each other in a closed space; the fight comes down to who times their peak correctly"
+  ],
+  "tags": [
+    "combatstimulant",
+    "reflexaccelerator",
+    "pharmaceutical",
+    "combat",
+    "augment",
+    "neural",
+    "bci",
+    "ai",
+    "synthetic",
+    "elf",
+    "control",
+    "drug",
+    "stimulant",
+    "shelf",
+    "tier 3",
+    "tier 4"
+  ]
+}

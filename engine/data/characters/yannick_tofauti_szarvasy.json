@@ -1,0 +1,202 @@
+{
+  "id": "019d6143a7217109a42df99efe77c258",
+  "type": "character",
+  "name": "Yannick Tofauti-Szarvásy",
+  "aliases": [
+    "Yanny",
+    "Eleven"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Numbers runner and bookmaker's legman for a sports and events gambling operation in Shallowgrave",
+  "age": 19,
+  "status": "active",
+  "location": "Shallowgrave — covers a circuit from Copperhead Market to the Brewer's Spine canal walkway",
+  "description": "Yannick is a compact, quick-moving young man with warm dark brown skin, a gap-toothed smile he deploys constantly, and hair grown out into a high puff that he dyes a different color every two weeks — currently a deep auburn. His ears have cat-ear geneware tips that he got on his seventeenth birthday as a rite of passage in his friend group, and he has a small luminescent dot above his left eyebrow like a permanent beauty mark. He dresses in layers of cheap, colorful synthetics and always has at least four devices in different pockets, each running a different channel.\n\nYannick is relentlessly cheerful in the way that only very fast people can afford to be — he knows he can get out of most situations before they turn bad, and that confidence reads as ease. He's sharper than anyone gives him credit for, can hold several hundred bets in active mental accounting at any given moment, and has an intuitive read on crowd psychology that his bosses haven't fully noticed yet. He thinks he's working toward something, building toward running his own book, but he hasn't articulated to himself that the organization he works for rarely promotes from his position.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "being still — that if he stops moving, something will catch up with him that he can't outrun",
+      "that the people he works for see him as permanently disposable"
+    ],
+    "core_desires": [
+      "respect from people he respects — to be seen as smart, not just fast",
+      "his own book, his own operation, something that's his"
+    ],
+    "coping_mechanisms": [
+      "constant motion and social engagement that keeps him from thinking too hard",
+      "humor as deflection for anything that genuinely worries him"
+    ],
+    "blind_spots": [
+      "doesn't recognize exploitative structures when they feel comfortable",
+      "overestimates how much his bosses like him"
+    ],
+    "secret": "He's been quietly skimming — not money, but information. He keeps a private log of patterns he's noticed in the bets: who bets big before certain outcomes, who seems to know things before they happen. He doesn't know what to do with it yet but he knows it's worth something."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shallowgrave slang heavy, numerical shorthand, sports metaphors, moves faster than his grammar",
+    "cadence": "Rapid-fire with sudden full stops when something actually interests him",
+    "verbal_tics": [
+      "'Yeah, yeah, yeah—'",
+      "gives everyone a number-based nickname without explaining why",
+      "'That's an easy three-to-one, trust'"
+    ],
+    "example_lines": [
+      "Yeah yeah yeah, Eleven Houses pays clean, you know that — when's the last time Adaugo shorted someone? Don't answer that, it's rhetorical, she hasn't, she won't.",
+      "You want to put Φ40 on the Ferrogate Cup semifinal? Bold. Very bold. I respect the boldness. I don't respect the odds you're working with but I respect the boldness."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Yannick's private betting log has recorded a clear pattern of insider manipulation — someone is fixing events and he needs help understanding what he has before bringing it to anyone",
+    "He witnessed something on his circuit that he passed off as nothing but players quickly realize was significant — getting him to recall the details requires earning his trust",
+    "He comes to players because a client on his circuit has stopped paying and is making threats, and Yannick is not authorized to escalate to his bosses without losing face"
+  ],
+  "narrative_function": "Street-level information conduit — knows everyone on his circuit and their business; introduces players to the Shallowgrave social fabric; potential vulnerability in a larger criminal operation; could be a witness to something he doesn't realize he saw.",
+  "augmentations": "Cat-ear geneware (cosmetic, tips only). Bioluminescent beauty-mark dot above left eyebrow. Standard cheap retinal display — second-hand Tessera model, consumer grade.",
+  "daily_life": "Wakes late, picks up the day's numbers from a deadrop near Brewer's Spine at noon, runs his circuit through Shallowgrave and Copperhead Market for six hours collecting slips and settling wins, spends evenings at the social club watching whatever sporting event the bets are riding on.",
+  "affiliation": "Legman for a bookmaking operation called the Eleven Houses, run by an older fixer named Adaugo Ferraro-Tchamba who operates out of a private room at the Copperhead Market social club",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 4,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "numbers runner",
+      "street informant",
+      "community familiar",
+      "upwardly mobile",
+      "untapped potential"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep moving — standing still is how you get cornered",
+      "Never extend credit without authorization — that's above his pay grade and he knows it",
+      "Laugh first at anything that might be a threat — disarms most situations"
+    ],
+    "escalation_ladder": [
+      "Laugh it off and sidestep",
+      "Promise to check with his boss, then doesn't come back alone",
+      "Call in a favor from someone bigger on his circuit",
+      "Run and report up the chain",
+      "Only as absolute last resort, the knife he keeps in his left jacket pocket — he's never used it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately friendly and very slightly performing — charm as default setting",
+      "friends": "Genuinely warm, extremely loyal, will share food and money without thinking about it"
+    },
+    "stress_responses": {
+      "low": "Jokes increase in frequency and quality",
+      "medium": "Starts physically moving around the space, can't be still",
+      "high": "Goes quiet and small — the energy collapses inward"
+    },
+    "contradictions": [
+      "Reads people with startling precision but refuses to apply that skill to understanding his own situation",
+      "Values loyalty deeply while working in a field where loyalty is transactional"
+    ],
+    "habits": [
+      "Counts things constantly — steps, tiles, people in a room",
+      "Leaves an E.L.F. offering at the Brewer's Spine canal shrine every morning — a single bet slip, win or lose"
+    ],
+    "breaking_points": [
+      "Discovering Adaugo Ferraro-Tchamba has been setting him up as a fall guy",
+      "Someone on his circuit being hurt because of a bet he ran"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Tessera consumer retinal display (second-hand)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tessera consumer retinal display (second-hand)",
+      "replaces": ""
+    },
+    {
+      "name": "Cat-ear geneware tips (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cat-ear geneware tips (cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent beauty mark — left eyebrow (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent beauty mark — left eyebrow (cosmetic)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

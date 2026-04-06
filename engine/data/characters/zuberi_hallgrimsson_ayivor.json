@@ -1,0 +1,172 @@
+{
+  "id": "019d6143a73b7b2a97fef13ddc79fbde",
+  "type": "character",
+  "name": "Zuberi Hallgrímsson-Ayivor",
+  "aliases": [
+    "Zu",
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Loan shark and debt enforcer operating in Gravesend Basin",
+  "age": 47,
+  "status": "active",
+  "location": "Gravesend Basin, specifically The Anchor Float — a cluster of semi-permanent houseboats lashed to a derelict Ferrogate Transit barge",
+  "description": "Zuberi is a broad-shouldered man going soft at the middle, with dark brown skin mapped by old scar tissue along his jaw and left forearm — souvenirs from a younger, stupider career. He keeps his head shaved and wears a neat goatee shot through with grey. His geneware is conservative: subdermal pressure sensors in his fingertips that let him detect a person's pulse through a handshake — a tool he uses to read nervousness during negotiations. He dresses in muted, practical layers, always with a good coat, because he believes clothing communicates seriousness. He smells faintly of cedar oil.\n\nZuberi runs his loan operation the way a spider runs a web: with patient geometry. He is not cruel by nature — he will wait, restructure, negotiate. But he is utterly unsentimental when restructuring fails. He has two adult children in Beverlynn Heights who believe he runs a freight brokerage. He donates data offerings to the ELF known locally as Mamu-of-Still-Waters, leaving tide predictions and catch logs on waterproofed memory chips weighted with fishing sinkers. He is afraid of being forgotten more than he is afraid of dying.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.4,
+      "id": 0.3,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being exposed to his children as what he actually is",
+      "Dying in obscurity with no one to mourn him honestly"
+    ],
+    "core_desires": [
+      "To be respected rather than merely feared",
+      "To leave enough behind that his name means something"
+    ],
+    "coping_mechanisms": [
+      "Ritual — he has specific routines for every part of his day that he does not deviate from",
+      "Charitable acts performed in secret to balance his private moral ledger"
+    ],
+    "blind_spots": [
+      "Believes his restraint makes him fundamentally different from violent criminals",
+      "Cannot see that his children already suspect the truth"
+    ],
+    "secret": "Three years ago he forgave the entire debt of a widow in Shallowgrave whose husband had borrowed to buy medicine, then quietly paid her relocation costs to Calumet Rise. He has told no one. He keeps a single entry in a private ledger — 'Amara Diouf-Vásárhelyi, debt: discharged, reason: she reminded me of my mother.' He would be ruined professionally if it became known he was capable of this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, deliberate, uses financial metaphors for everything — relationships, time, trust are all described in terms of credit and debt",
+    "cadence": "Slow and measured, never raises his voice, long pauses before answering",
+    "verbal_tics": [
+      "'Let's be precise about this'",
+      "'That's an interesting accounting'",
+      "Refers to himself in the third person when discussing his professional reputation"
+    ],
+    "example_lines": [
+      "'I don't lend money, I lend time. Time is what has a price. The money is just how we measure it.'",
+      "'You're not late. You're early on a debt you didn't know you had yet.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A debtor has disappeared — not fled, but genuinely vanished — and Zuberi is quietly willing to pay for information rather than involve anyone official",
+    "He has discovered one of his runners has been skimming, but the runner is also one of his children's closest friends, creating an impossible personal and professional knot"
+  ],
+  "narrative_function": "Quest giver, moral complication, source of underworld financial intelligence, potential patron or antagonist depending on whether players owe him money",
+  "augmentations": "Subdermal pulse-readers in both hands (geneware-adjacent biotech). Cochlear filter that suppresses ambient noise in crowded spaces. No visible chrome.",
+  "daily_life": "Wakes before dawn, checks his ledger on a ruggedized tablet, makes collections or sends runners to do so, spends evenings on the barge receiving new borrowers by appointment only.",
+  "affiliation": "Independent operator with loose ties to the Gravesend Basin Compact, a territorial agreement between five criminal families",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "loan shark",
+      "patient",
+      "morally compartmentalized",
+      "tier 3",
+      "Gravesend Basin"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never conduct business when hungry or tired — schedule everything",
+      "Never make a threat you haven't already planned to carry out",
+      "Restructure before escalating; escalation is expensive"
+    ],
+    "escalation_ladder": [
+      "Patient reminder with tea and conversation",
+      "Formal notice delivered by a runner with a written accounting",
+      "Personal visit — calm, specific, deadline given",
+      "Assets seized or sent to collection via physical enforcers he contracts out"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formal and courteous, assessing — he treats every new person as a potential future borrower and files them mentally",
+      "friends": "Rare warmth, dry humor, genuinely attentive listener — he asks after people's lives and remembers the details"
+    },
+    "stress_responses": {
+      "low": "Becomes more deliberate and precise in speech",
+      "medium": "Goes very still — stops using gestures, stops filling silences",
+      "high": "Controlled, cold clarity — becomes almost gentle, which people who know him find terrifying"
+    },
+    "contradictions": [
+      "Believes in fair dealings but operates a system predicated on asymmetric power",
+      "Is capable of genuine mercy but has never built mercy into the structure of his business"
+    ],
+    "habits": [
+      "Counts coins or tokens while thinking",
+      "Always faces the door when seated",
+      "Trims his goatee to exactly the same length every third day"
+    ],
+    "breaking_points": [
+      "Direct threat to his children",
+      "Someone destroying his reputation through lies rather than truth"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Info Broker": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

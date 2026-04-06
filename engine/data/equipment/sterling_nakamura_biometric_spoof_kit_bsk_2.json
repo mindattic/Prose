@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a86b7ad2b417182fe691ce24",
+  "name": "Sterling-Nakamura Biometric Spoof Kit BSK-2",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Biometric Spoof Kit BSK-2",
+  "type": "equipment",
+  "aliases": [
+    "BSK-2",
+    "ID Faker",
+    "Bio Spoof",
+    "Sterling Mask Kit"
+  ],
+  "category": "disguise",
+  "description": "A compact kit containing tools for replicating and spoofing biometric authentication systems — fingerprint molds, retinal pattern contact lenses, voice modulation software, and gait adjustment insoles. The BSK-2 starts with a target's biometric data (obtained through surveillance, data breach, or physical collection) and produces physical devices that replicate those biometrics well enough to defeat standard commercial scanners. The fingerprint molds use silicone casting from lifted prints, the retinal lenses project a stored pattern over the wearer's own retina, and the voice software processes the user's speech in real-time to match the target's vocal characteristics.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited — identity fraud equipment",
+  "base_technologies": [],
+  "specifications": {
+    "fingerprint": "Silicone molds from lifted prints",
+    "retinal": "Pattern-projecting contact lenses",
+    "voice": "Real-time vocal characteristic modulation",
+    "gait": "Insoles that alter stride pattern and cadence",
+    "preparation time": "2-4 hours per biometric type",
+    "effectiveness": "Defeats standard commercial scanners",
+    "limitations": "Does not defeat live tissue verification",
+    "weight": "0.5 kg complete kit",
+    "shelf life": "Fingerprint molds 48 hours",
+    "info": "retinal lenses 72 hours"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A secured facility was accessed using perfect biometric replicas of an authorized employee — the employee was at home at the time, and the BSK-2 components found at the scene show the biometrics were captured from public surveillance footage.",
+    "A BSK-2 has been used to frame a specific individual for multiple crimes — their biometric signatures appear at crime scenes they never visited, and the evidence is convincing enough for arrest warrants."
+  ],
+  "tags": [
+    "disguise",
+    "equipment",
+    "war",
+    "crime",
+    "identity",
+    "ai",
+    "surveillance",
+    "tier 3"
+  ]
+}

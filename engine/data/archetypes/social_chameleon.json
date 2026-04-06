@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5947bcabeffe54554c2e08f",
+  "name": "Social Chameleon",
+  "type": "archetype",
+  "category": "social",
+  "description": "Becomes whoever the room needs them to be",
+  "behavioral_signature": "Shifts personality, accent, mannerisms to fit",
+  "under_stress": "The masks blur and they lose themselves",
+  "at_rest": "Mirrors whoever they're with",
+  "will_always": [
+    "adapt to the social environment"
+  ],
+  "will_never": [
+    "present a consistent self"
+  ],
+  "unless": [
+    "someone asks who they really are"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Face",
+      "threshold": 0.75,
+      "context": "performance"
+    },
+    {
+      "archetype": "Manipulator",
+      "threshold": 0.65,
+      "context": "social control"
+    }
+  ],
+  "opposite_of": [
+    "Truth-Teller"
+  ],
+  "tags": [
+    "adaptive",
+    "fluid"
+  ]
+}

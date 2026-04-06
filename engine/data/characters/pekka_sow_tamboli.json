@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a6947f22ad78ec10a29fd1c0",
+  "type": "character",
+  "name": "Pekka Sow-Tamboli",
+  "aliases": [
+    "Peck",
+    "The Quiet Car"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit tram operator, Line 7 through Geartown and the Narrows",
+  "age": 34,
+  "status": "active",
+  "location": "Based at Deepwell Station maintenance depot; lives in a Ferrogate-subsidized housing block in McKinley Flats",
+  "description": "Pekka is tall and angular, with the kind of face that reads as younger than it is — wide jaw, large dark eyes, deep brown skin with a cool undertone. His Finnish-Senegalese-Indian heritage gives him a build that's all long limb and narrow shoulder. He keeps his hair cut very short on the sides with a small puff on top that he sometimes lets grow out for months before cutting again, depending on how much he's paying attention to himself. A bioluminescent stripe runs from his left temple down to his jaw — pale aquamarine, very subtle in daylight, visible at night — which he got at 22 when he was trying to impress someone who was not ultimately impressible.\n\nHe is a profoundly calm person, almost to a fault. Twelve-hour shifts in a sealed cab watching the city slide past a window have given him a relationship with solitude that most people find hard to understand. He is kind, observant, and genuinely interested in the passengers who choose to stand near the front cab window and look out — he's learned to gauge a person's state from their reflection in the glass. He has strong opinions about tram etiquette, the correct way to eat on transit, and the ELF he believes watches Line 7, whom he has named Sevenglass and addresses quietly before each shift.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That his contentment is actually stagnation and he's been lying to himself for a decade",
+      "Ferrogate automating Line 7 and stripping him of the only daily structure he trusts"
+    ],
+    "core_desires": [
+      "Genuine companionship that doesn't require him to perform sociability",
+      "To understand the city he moves through — all of it, not just the route"
+    ],
+    "coping_mechanisms": [
+      "Long solitary walks",
+      "Talks to Sevenglass before difficult shifts as a grounding ritual"
+    ],
+    "blind_spots": [
+      "Mistakes composure for resolution — his unresolved things don't go away, he just gets very quiet about them",
+      "Underestimates how much his calmness can feel like disinterest to people who need more active reassurance"
+    ],
+    "secret": "Six months ago a passenger left behind a bag containing what appeared to be Ferrogate internal documents — route surveillance data and something else he didn't fully read. He turned in the bag to the depot. Two weeks later the passenger appeared at the depot asking for it back and was told no bag had been recovered. Pekka reported this discrepancy to his union rep and nothing happened. He memorized what he read before handing it over."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, deliberate. Finnish-pattern sentence economy — says what's needed and stops. Does not use filler sounds.",
+    "cadence": "Slow and even. People sometimes think he's finished talking when he isn't; he waits out the discomfort.",
+    "verbal_tics": [
+      "Long pauses mid-thought that he fills with a quiet exhale",
+      "'Mm' as acknowledgment, not agreement"
+    ],
+    "example_lines": [
+      "'Line 7 sees everything. People forget the driver is in there.'",
+      "'I have opinions about that. You want them?'",
+      "'Sevenglass was restless this morning. Delay at Ironvein. Happens.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Pekka has memorized part of the Ferrogate internal documents and carries that information without knowing its full significance. The right question from the right person could unlock something serious.",
+    "A regular passenger on Line 7 — a child who rides alone every morning — stopped appearing three weeks ago. Pekka noticed. He doesn't know what to do with that noticing.",
+    "The Local 44 Transit Workers' Compact is fracturing over a proposed Ferrogate automation contract. Pekka is being pressured to take a side."
+  ],
+  "narrative_function": "Mobile information source — Pekka travels through multiple districts daily and observes without being observed. He notices when foot traffic patterns change, when new security checkpoints appear, when people start riding with luggage. He can serve as a connection point between geographically separated plotlines. Also functions as a grounding presence — someone mundane and decent in a city of edges.",
+  "augmentations": "Bioluminescent cosmetic stripe (aquamarine, left temple to jaw). Neural latency dampener in the brainstem — standard Ferrogate-issued equipment for operators, reduces reaction lag on emergency brake protocols. He thinks of it as Ferrogate's hand inside his skull and has complicated feelings about this.",
+  "daily_life": "0500 wake, 0615 check-in at Deepwell Station depot, 0700–1900 operating Line 7 with two 20-minute breaks. Eats a packed lunch in the cab. After shift, drinks one beer at the depot canteen with whoever's around, takes the cross-line back to McKinley Flats, reads until sleep. On rest days he walks the tram routes on foot to see what he misses from inside the cab.",
+  "affiliation": "Ferrogate Transit — Line 7 Operator, Local 44 Transit Workers' Compact",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Observer",
+      "Steady Hand",
+      "Transit Worker",
+      "Reluctant Witness"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not lie directly — will refuse to answer or say he can't talk about something, but won't construct a falsehood",
+      "Doesn't make decisions under pressure; asks for time and usually gets it through sheer stillness"
+    ],
+    "escalation_ladder": [
+      "First: silence and observation",
+      "Second: one clear, quiet statement of his position",
+      "Third: physical disengagement — leaves the situation if possible, or goes completely still and waits"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, attentive, doesn't volunteer personal information, asks good questions",
+      "friends": "More open, dry humor emerges, will share his actual opinions, physically more relaxed"
+    },
+    "stress_responses": {
+      "low": "Gets quieter, blinks more slowly",
+      "medium": "Takes a long walk, processes alone, returns ready to talk",
+      "high": "Goes non-verbal for a period — not shut down, genuinely processing, needs someone to wait"
+    },
+    "contradictions": [
+      "Claims to be fine with solitude but lights up visibly when the depot canteen is full of people who want to talk",
+      "Works for Ferrogate, resents Ferrogate's intrusion into his biology, has never seriously considered leaving"
+    ],
+    "habits": [
+      "Wipes the cab window before every shift even when it's already clean",
+      "Touches the small Sevenglass offering — a copper coin taped to the console — before engaging the brake release"
+    ],
+    "breaking_points": [
+      "Watching something dangerous and being physically unable to stop it from inside the cab",
+      "Direct evidence that Ferrogate knowingly endangered passengers"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Functional, remotely monitored by Ferrogate",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Stable, 12 years old",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Sentinel": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in McKinley Flats to a Senegalese-Finnish father and Rajasthani-West African mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed Ferrogate operator certification at 18; began on freight auxiliary lines",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Transferred to Line 7 passenger service; received neural dampener implant",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began addressing the Line 7 ELF as Sevenglass after an unexplained brake failure that did not result in injury",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered and turned in the bag with Ferrogate documents; subsequent cover-up noted",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

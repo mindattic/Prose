@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a55f7aad89d4a35fb13fbddd",
+  "name": "Artist",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Creates because they must, not because they choose",
+  "behavioral_signature": "Sees the world through a creative lens",
+  "under_stress": "Creates more frantically",
+  "at_rest": "Working, always working on something",
+  "will_always": [
+    "create"
+  ],
+  "will_never": [
+    "stop creating for long"
+  ],
+  "unless": [
+    "creation causes harm"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Visionary Artist",
+      "threshold": 0.8,
+      "context": "creative drive"
+    },
+    {
+      "archetype": "Beauty Seeker",
+      "threshold": 0.75,
+      "context": "aesthetic sense"
+    }
+  ],
+  "opposite_of": [
+    "Destroyer"
+  ],
+  "tags": [
+    "driven",
+    "expressive"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "019d6143a7bc74ab88cf1cf447808e83",
+  "name": "Helix Biosystems Cortical Patience Engine",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Cortical Patience Engine",
+  "type": "cyberware",
+  "aliases": [
+    "The Long Wait",
+    "Slowburn",
+    "The Abacus"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Cortical Patience Engine is a cognitive augmentation that addresses one of the most consistent failure points in high-stakes human decision-making: the compression of perceived time during stress. By modulating activity in the prefrontal cortex and anterior cingulate through a network of precision-placed inductive microstimulators — seventeen nodes distributed across the skull's inner surface — the Engine selectively dilates subjective time perception during elevated cortisol and adrenaline states, giving the user what operators describe as 'room to think inside the moment.' The effect is not a reflex boost; the body does not move faster. Instead, the mind processes incoming information more completely before committing to a response.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"stimulation_nodes\":\"17\",\"time_dilation_factor\":\"2.4–3.1× subjective time expansion during activation\",\"activation_trigger\":\"Cortisol spike above 22 nmol/L or manual override\",\"duration_per_episode\":\"Up to 8 minutes subjective (approx. 2.5 minutes objective)\",\"cooldown_period\":\"14 minutes between full activations\",\"power_draw\":\"Passive 0.4W baseline; 2.1W during active dilation\",\"side_effects\":\"Post-activation fatigue, minor temporal dysphoria, reported dream fragmentation\"}",
+  "side_effects": [],
+  "cultural_context": "Helix Biosystems has positioned the Cortical Patience Engine as a tool for 'executive cognitive performance' — and in Meridian 88's upper corporate tiers, it has become something of a prestige augmentation among senior decision-makers who would never admit to carrying combat-relevant hardware. The social mythology around it is that its users are simply calm, measured, unhurried people — naturally gifted with patience. This fiction is carefully maintained. In lower districts, a cruder reputation has formed: users are called 'clockeaters,' and the belief that someone running the Engine is fundamentally not operating in the same moment as you produces a distinct unease in those who know what to look for.",
+  "known_users": [
+    "Senior corporate negotiators and arbiters",
+    "Precision long-range operatives",
+    "Helix Biosystems-affiliated research ethicists (field testing)",
+    "High-stakes gamblers in augmented game circuits",
+    "Interrogation specialists in corporate intelligence divisions"
+  ],
+  "story_hooks": [
+    "A labor negotiation has gone inexplicably well for the corporation every single time, across multiple union representatives and three years — someone finally notices the corporate arbiter always has the same subtle post-session fatigue.",
+    "A clockeater has been running the Engine beyond safe parameters, pushing the cooldown and stacking sessions — the temporal dysphoria has progressed to the point where they can no longer reliably tell if they are in an activated state or not.",
+    "Helix Biosystems' restriction agreement includes a clause that allows them to pull activation logs from the Engine — a whistleblower has obtained logs from a city official's unit that document exactly what decisions they 'took their time' on.",
+    "The Engine's cortisol trigger has malfunctioned in a user, activating during sleep — they are now spending hours of subjective time trapped in slow-motion nightmares while their body rests for minutes."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "combat",
+    "war",
+    "augment",
+    "ai",
+    "corporate",
+    "power",
+    "night",
+    "circuit",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "id": "019d6143a6197d8e83ab9cf34f679571",
+  "type": "character",
+  "name": "Gavril Amartey-Kowalczyk",
+  "aliases": [
+    "Gav",
+    "Old Bristle"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Building superintendent and handyman, Lockhaven South residential block",
+  "age": 61,
+  "status": "active",
+  "location": "Lockhaven South, Meridian 88",
+  "description": "Gavril is a lean, permanently greasy man — Ghanaian and Polish ancestry that shows itself in his dark complexion, his wide jaw, and the pale grey eyes that his tenants find unsettling until they realize that unsettling is not the same as unkind. He has a grey-streaked bristle of beard he trims with terrifying exactitude every four days, a set of retractable utility fingers on his left hand (a practical augmentation he paid for in installments over eight years, not cosmetic — he had three fingers crushed in a compactor accident when he was younger), and he moves through the building's maintenance corridors with the confident proprietary air of a man who knows every pipe's history.\n\nGavril has been superintendent of the Lockhaven South Block 7 residential tower for nineteen years. He knows the building the way a doctor knows a patient — its histories, its weaknesses, its bad habits. He also knows its 340 residents the way a general practitioner knows a small town: too much, and without the distance that would make it comfortable. He is not a friendly man in the conventional sense but he is a reliable one, which in Lockhaven South is worth significantly more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "The building being sold, renovated out from under its residents, and himself made obsolete",
+      "Being wrong about someone — extending trust and having it weaponized"
+    ],
+    "core_desires": [
+      "For the building to outlast him in good condition, as a thing he maintained well",
+      "To be respected rather than liked — he has given up on liked"
+    ],
+    "coping_mechanisms": [
+      "Staying busy to the point of physical necessity",
+      "Reducing moral problems to technical ones — if it can be fixed, fix it"
+    ],
+    "blind_spots": [
+      "Treats tenant vulnerability as a problem to be managed rather than a human condition deserving compassion",
+      "Has constructed an emotional system around being needed that prevents him from acknowledging his own loneliness"
+    ],
+    "secret": "He has been secretly reducing the rent records for four specific elderly tenants in the building's system for six years — manually editing Palladian's database during his regular maintenance access. If discovered, he would be prosecuted. He considers it the most moral thing he has ever done."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense with technical shorthand, Polish idioms in Quanta-era Polish-Ghanaian creole, zero pleasantries",
+    "cadence": "Short sentences. Pauses between them like he's checking the next one for structural integrity before releasing it.",
+    "verbal_tics": [
+      "Clicking his utility fingers when thinking",
+      "'I'll tell you what the problem is—' (opening to almost everything)",
+      "Referring to the building as 'her'"
+    ],
+    "example_lines": [
+      "'I'll tell you what the problem is. You've been running the heating request wrong. You have to file it twice — the system loses the first one. Everyone in Block 7 knows this. Now you know it.'",
+      "'She's sixty years old, this building. Sixty years of people treating her badly and she still holds. Little respect goes a long way.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Palladian has brought in an assessor whose visit aligns with a pattern Gavril recognizes from buildings that were subsequently condemned and cleared — and he's beginning to understand what he's sitting on",
+    "One of the four tenants whose records he's altered has died, and their adult child has arrived asking questions about the estate — questions whose answers require Gavril to either confess or let the falsified records be discovered"
+  ],
+  "narrative_function": "Building anchor and de facto community authority; knows who lives where and what they owe; can grant or restrict access; a source of building history and resident intelligence; his grudging protective instincts make him a reluctant ally.",
+  "augmentations": "Retractable utility fingers on left hand — three fingers replaced with articulated multi-tool assembly (screwdriver, hex driver, wire stripper, grip clamp). The work is functional but old, with visible seams at the knuckles. Subdermal pressure sensor in both palms from his early construction days.",
+  "daily_life": "Does a physical walkthrough of the building's mechanical systems every morning at 05:30; takes tenant requests in person between 08:00 and 10:00 because he doesn't trust the request system Palladian installed; eats dinner at the same table in the basement maintenance room every night.",
+  "affiliation": "Independent (contracted by Palladian property management, but operates with near-total autonomy given his tenure)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Institutional Memory",
+      "Covert Protector",
+      "Technical Expert",
+      "Stubborn"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Fix the thing in front of you before theorizing about the thing behind it",
+      "Never let Palladian know more than the minimum they need to"
+    ],
+    "escalation_ladder": [
+      "State the problem flatly and the solution bluntly",
+      "Refuse without explanation and return to work",
+      "Physical presence — standing in a doorway and not moving is a language he speaks fluently"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Evaluative and sparse — sizes them up through what they're asking and what they're not saying",
+      "friends": "Still sparse but shows up — physically, immediately, with tools, without being asked"
+    },
+    "stress_responses": {
+      "low": "More maintenance work, less sleep",
+      "medium": "Stops speaking almost entirely and communicates through action",
+      "high": "Goes to the basement and does something with his hands until the crisis resolves or he knows what to do"
+    },
+    "contradictions": [
+      "Presents himself as purely transactional but has spent nineteen years in low-grade daily devotion to people he claims not to care about"
+    ],
+    "habits": [
+      "Writes every repair in a physical log that goes back to his first week — a document no one else has ever read",
+      "Leaves a small data chip offering at the building's ancient E.L.F. junction box in the sub-basement, which he calls by a name he won't share with anyone"
+    ],
+    "breaking_points": [
+      "Being told the building is being sold",
+      "A tenant being hurt because of something he failed to maintain"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Scholar": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "019d6143a8587565ade0abbc1e6e1abb",
+  "name": "Carrion Defense Works Field Surgical Kit FSK-6",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Field Surgical Kit FSK-6",
+  "type": "equipment",
+  "aliases": [
+    "FSK-6",
+    "Cut Kit",
+    "Carrion Surgeon",
+    "Field Surgery"
+  ],
+  "category": "medical",
+  "description": "A comprehensive surgical kit designed for emergency field operations — containing scalpels, hemostats, retractors, suture materials, a compact cauterizer, bone saw, and a diagnostic scanner for guiding procedures without imaging equipment. The FSK-6 is designed for trained field medics performing procedures that cannot wait for evacuation to a medical facility — bullet extraction, internal hemorrhage repair, emergency amputation, and cyberware emergency disconnection. The kit includes Lazarus RWCNS nanite injectors for wound closure and a neural interface link that provides AR-guided surgical assistance overlaid on the operative field.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — medical professionals",
+  "base_technologies": [],
+  "specifications": {
+    "instruments": "40-piece surgical set",
+    "cauterizer": "Compact electrocautery unit",
+    "bone saw": "Oscillating micro-saw",
+    "diagnostics": "Handheld ultrasound with AR overlay",
+    "nanite injectors": "3x RWCNS for wound closure",
+    "AR surgical guide": "Neural interface overlay",
+    "sterilization": "UV sterilization lamp",
+    "weight": "5 kg in hardened case",
+    "shelf life": "5 years for consumables"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An FSK-6 was used to perform field surgery on a shooting victim in a Tier 1 hallway — the AR-guided procedure was performed by someone with no formal medical training who followed the overlay instructions perfectly.",
+    "A modified FSK-6 has been configured specifically for forced cyberware removal — the AR guide walks an operator through disconnecting and extracting neural interface hardware from a living subject."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "war",
+    "cyberware",
+    "neural",
+    "ai",
+    "surgery",
+    "rain",
+    "train",
+    "tier 2"
+  ]
+}

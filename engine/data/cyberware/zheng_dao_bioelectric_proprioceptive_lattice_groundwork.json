@@ -1,0 +1,63 @@
+{
+  "id": "019d6143a7ce79229ac810535cf2ff09",
+  "name": "Zheng-Dao Bioelectric Proprioceptive Lattice — 'Groundwork'",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Proprioceptive Lattice — 'Groundwork'",
+  "type": "cyberware",
+  "aliases": [
+    "Groundwork",
+    "The Lattice",
+    "Body Map",
+    "ZD-PL"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Zheng-Dao Proprioceptive Lattice is a whole-body augmentation system that replaces and vastly extends the organic proprioceptive nervous network — the system by which a body knows where its own limbs are in space — with a synthetic bioelectric mesh embedded subcutaneously across the major joints, muscle groups, and skeletal contact points. Where organic proprioception is passive and approximate, the Groundwork lattice provides precise, real-time positional and force data across the entire body, feeding into a central processing node implanted at the base of the skull that synthesizes this information into a continuous, high-resolution body map available to conscious awareness. The effect is a profound expansion of physical self-knowledge: operators with Groundwork can perform complex motor tasks in complete darkness, detect micro-tremors in the ground through foot contact, and maintain precise physical control even when injured, drugged, or disoriented.\n\nZheng-Dao Bioelectric developed the Groundwork lattice from research into occupational injury prevention in high-risk physical labor environments — the technology was originally intended to reduce workplace accidents in Palladian Construction's demolition teams and Ironclad Agrisystems' heavy machinery operators. The commercial and military applications became apparent quickly. The lattice's force-sensing capability allows operators to detect the weight and movement of other bodies through surfaces — floors, walls, vehicles — at ranges up to several meters, effectively providing a form of tactile environmental awareness that has obvious intelligence applications. The central processing node can also be configured to interface with external systems, allowing the body map data to be transmitted to a remote operator or recorded for analysis.\n\nGroundwork is less common than other augmentations because its benefits are subtle and require significant training to exploit. An unaugmented observer watching a Groundwork operator move will see nothing unusual — no chrome, no visible hardware, no dramatic capability demonstration. The advantages manifest in situations that test physical precision, spatial awareness, and environmental sensitivity, which means the augmentation self-selects for a specific type of operator: those whose work rewards mastery of physical space over raw power.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"mesh_coverage\":\"Full body — major joints, primary muscle groups, load-bearing skeletal contact points\",\"central_node_location\":\"Base of skull — C7/T1 junction\",\"positional_accuracy\":\"Sub-millimeter joint position awareness\",\"force_sensing_range\":\"Vibration and weight detection through contact surfaces up to 4 meters\",\"darkness_operation\":\"Full complex motor task capability without visual input\",\"injury_compensation\":\"Motor control maintained at 80% efficiency with limb injuries that would fully incapacitate unaugmented operators\",\"remote_telemetry\":\"Optional — body map data transmissible to paired device; requires Zheng-Dao interface hardware\",\"power_source\":\"Bioelectric harvest from muscular activity\",\"installation\":\"Multi-session mesh embedding over 3 weeks; central node 1 surgical session\",\"training_requirement\":\"6–12 weeks of structured proprioceptive training to fully exploit capability\",\"detectable_by\":\"Medical scanner (mesh visible as uniform subcutaneous pattern); standard inspection undetectable\",\"maintenance\":\"Node recalibration every 2 years; mesh self-maintains\"}",
+  "side_effects": [],
+  "cultural_context": "Groundwork is the augmentation of people who have thought carefully about what they need. It carries no visual prestige, no obvious capability display, and no street-level recognition — most people who encounter a Groundwork operator will not know they are augmented. Within professional circles that understand what it represents, however, it marks a specific kind of practitioner: patient, precise, and committed to physical mastery as a discipline rather than a shortcut. Zheng-Dao's industrial origins mean that Groundwork also has a significant non-combat user population in construction, precision manufacturing, and physical performance arts, which gives it an unusual breadth of social context.",
+  "known_users": [
+    "Professional infiltrators and building-entry specialists",
+    "Zheng-Dao Bioelectric industrial safety consultants",
+    "Palladian Construction high-risk demolition specialists",
+    "Close-quarters combat specialists favoring precision over power",
+    "Certain physical performance artists and competitive athletes in augmentation-legal circuits"
+  ],
+  "story_hooks": [
+    "A Groundwork operator has been hired by an unknown client to map the structural vibration signature of a specific building over 30 days — the body map telemetry is being used to build a complete model of the building's occupancy patterns, guard movements, and structural stress points.",
+    "The players are tracking a thief who left no physical evidence, no footage, no electronic signature. A Zheng-Dao technician tells them the thief had Groundwork — and the mesh records every surface contact made during an operation, stored in the node. If they can get to the node, they have the thief's entire route.",
+    "A Groundwork user begins experiencing phantom proprioceptive data — the body map shows limbs and contacts that aren't there. The experiences are consistent and spatially specific, always in the same location, suggesting the node is somehow replaying a previous owner's recorded session.",
+    "Zheng-Dao Bioelectric's remote telemetry function is being exploited by a third party to run a real-time physical surveillance network — hundreds of Groundwork users unknowingly broadcasting their body maps, their locations, and the vibration data of every surface they touch."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "combat",
+    "war",
+    "augment",
+    "ai",
+    "synthetic",
+    "elf",
+    "surveillance",
+    "control",
+    "power",
+    "ubc",
+    "medical",
+    "injury",
+    "rain",
+    "dark",
+    "vehicle",
+    "train",
+    "drug",
+    "circuit",
+    "tier 2"
+  ]
+}

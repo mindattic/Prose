@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a61c7b67b3daa0d23451a6de",
+  "type": "character",
+  "name": "Goran Ouédraogo-Pettersson",
+  "aliases": [
+    "Old Goran",
+    "The Shelf Man"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant and scrap reseller",
+  "age": 64,
+  "status": "active",
+  "location": "The Shelf, Geartown",
+  "description": "Goran is a big man gone soft at the edges, with the kind of weathered dark-brown face that has accumulated sixty-four years of Geartown grime into its creases. His Burkinabé father's cheekbones sit high and prominent beneath small, watchful eyes, and the Swedish side of the family gave him an improbable red-grey beard that he refuses to trim, which is now impressively large. His left arm from the elbow down is a heavy-duty industrial prosthetic in bare gunmetal — he has never decorated it, never chromed it, and finds the idea faintly obscene. He moves slowly, deliberately, like a man who has learned that things don't need to be rushed when you know what you have.\n\nGoran's stall on The Shelf is less a stall than an archaeology site — forty years of accumulated junk organized according to a system that exists only in his head, which he navigates with the certainty of a man walking through his own house in the dark. He is terse with strangers, generous to a fault with regulars, and holds strong opinions about the difference between junk worth keeping and junk that has given up. He prays loudly to the ELF he believes inhabits a broken micro-fabricator at the back of his stall, which he calls 'the Sleeper,' and leaves it oiling rags as offerings.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The stall being cleared out — either by death or by force",
+      "Geartown changing until nothing he knows is left"
+    ],
+    "core_desires": [
+      "To be remembered as someone who kept useful things alive",
+      "Quiet — just enough of it"
+    ],
+    "coping_mechanisms": [
+      "Physical work as emotional regulation",
+      "The daily prayer ritual with the Sleeper — it gives structure",
+      "Extreme consistency in routine"
+    ],
+    "blind_spots": [
+      "Mistrusts anything new or corporate by default, which occasionally means missing genuine value",
+      "Has not processed his wife's death five years ago — deflects any mention of her"
+    ],
+    "secret": "He found a Zheng-Dao proprietary fabrication schematic in a salvage haul two years ago — something significant enough that he knew immediately he should not have it. He has not sold it. He has not told anyone about it. It is folded inside an oiling rag that he moves to a new hiding spot in the stall every month. He doesn't know what to do with it but knows that throwing it away feels wrong."
+  },
+  "speech_patterns": {
+    "vocabulary": "Minimal. Short declarative sentences. Technical vocabulary for parts and salvage is precise and extensive; personal vocabulary is deliberately narrow.",
+    "cadence": "Slow, with long pauses that he is entirely comfortable with and other people are not",
+    "verbal_tics": [
+      "'Mm'",
+      "'That's not junk, that's a —' followed by a technical term",
+      "Refers to the Sleeper in conversation as if it is present and listening"
+    ],
+    "example_lines": [
+      "'You want that capacitor. You don't want that capacitor. You want what that capacitor can become. Different thing.'",
+      "'Sleeper's been restless. Means something's coming through the grid. You got anything electric on you that's been glitching? Thought so. Leave it here overnight.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Zheng-Dao schematic has been quietly searched for — someone knows a copy left a specific facility, and the search has reached Geartown. Goran hasn't connected the dots yet, but someone looking closely will.",
+    "The Sleeper has been emitting a low-frequency signal that three other vendors on The Shelf have independently noticed. Goran believes it's a message. He might be right."
+  ],
+  "narrative_function": "Equipment and parts source, local historian of Geartown, ELF lore through his relationship with the Sleeper. A character who has seen enough that he remembers things others have forgotten — corporate actions, neighborhood changes, people who disappeared.",
+  "augmentations": "Left forearm industrial prosthetic (functional, undecorated). Subretinal low-light enhancer — 'for reading part numbers in the dark, nothing fancy.'",
+  "daily_life": "Opens at dawn, when the salvage haulers come through with fresh loads. Spends mornings sorting and appraising, afternoons selling and trading, evenings doing minor repair work on salvageable items. Eats at the stall. Goes home to Geartown at dusk, walking the same route he has walked for forty years.",
+  "affiliation": "Independent; long-standing member of The Shelf informal vendor collective; deep roots in the Geartown community",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 3,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "junk savant",
+      "ELF devotee",
+      "Geartown elder",
+      "accidental intelligence asset",
+      "grief-avoidant"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell something you can't honestly describe",
+      "If something came from a corporate haul, price it double — they can afford it",
+      "Don't argue with the Sleeper"
+    ],
+    "escalation_ladder": [
+      "Silence and stillness",
+      "A single pointed question that reframes the problem as the other person's",
+      "Standing up from his stool — this alone usually resolves most situations",
+      "The prosthetic arm, which is very heavy, set deliberately on a surface"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally minimal — prices things, answers questions, doesn't volunteer",
+      "friends": "Suddenly and unexpectedly generous, remembered preferences, awkward warmth"
+    },
+    "stress_responses": {
+      "low": "Louder prayer to the Sleeper",
+      "medium": "Reorganizes a section of the stall with no apparent purpose",
+      "high": "Goes very still and very quiet, which his neighbors have learned to recognize as a warning"
+    },
+    "contradictions": [
+      "Believes things should be used, not hoarded — but has been sitting on the schematic for two years",
+      "Dismisses sentiment as weakness, has kept every tool his late wife ever touched"
+    ],
+    "habits": [
+      "Morning: tea, oiling the Sleeper's casing, price review",
+      "Evening: same walk home, stops at the same corner to look at the lake if the smog allows",
+      "Talks to the items in his stall while sorting them"
+    ],
+    "breaking_points": [
+      "Anyone interfering with the Sleeper",
+      "Learning that the schematic's existence has put someone he knows in danger"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown to a Burkinabé father and a Swedish-Burkinabé mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost left arm below the elbow in a Geartown salvage yard accident; received industrial prosthetic through a UBC medical program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened the stall on The Shelf",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Wife Marta died of a respiratory illness linked to Geartown industrial runoff — Goran has never pursued the corporate liability claim",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Found the Zheng-Dao schematic in a salvage haul; has told no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -7,8 +7,9 @@ using StreetSamurai.Core.Models;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Story repository — single JSON file per story, named by ID.
-/// The HTML body is the source of truth (rich text with embedded images, entity links, etc.).
+/// Story repository — one folder per story under stories/.
+/// Folder naming: {title_slug}.{guid}/
+/// Files inside: story.json, checkpoint.json, outline.json, events.json, knowledge.json
 /// </summary>
 public class JsonStoryBlockRepository : IStoryBlockRepository
 {
@@ -19,7 +20,8 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
     };
 
-    private string StoryDir => EnsureDir(Path.Combine(paths.DataRoot, "story_blocks"));
+    private string StoryDir => paths.StoriesDir;
+    private string ArchiveDir => paths.ArchiveDir;
 
     private readonly ILogger<JsonStoryBlockRepository> log;
 
@@ -27,6 +29,7 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
     {
         this.paths = paths;
         this.log = log;
+        MigrateFlatFiles();
     }
 
     public List<StoryProject> ListProjects()
@@ -34,9 +37,9 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
         var dir = StoryDir;
         if (!Directory.Exists(dir)) return [];
 
-        return Directory.GetFiles(dir, "*.json")
-            .Select(LoadFromFile)
-            .Where(p => p != null && !p.IsArchived)
+        return Directory.GetDirectories(dir)
+            .Select(d => LoadFromFile(Path.Combine(d, "story.json")))
+            .Where(p => p != null)
             .DistinctBy(p => p!.Id)
             .OrderByDescending(p => p!.Modified)
             .ToList()!;
@@ -44,45 +47,84 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
 
     public StoryProject? LoadProject(string id)
     {
-        // Try direct file by ID
-        var path = Path.Combine(StoryDir, $"{id}.json");
-        if (File.Exists(path)) return LoadFromFile(path);
-
-        // Fallback: scan all files (for legacy prefix-named files)
-        return Directory.GetFiles(StoryDir, "*.json")
-            .Select(LoadFromFile)
-            .FirstOrDefault(p => p?.Id == id);
+        var path = StoryFolderHelper.FindFile(StoryDir, id, "story.json");
+        return path != null ? LoadFromFile(path) : null;
     }
 
     public void SaveProject(StoryProject project)
     {
         project.Modified = DateTime.UtcNow;
-        var path = Path.Combine(StoryDir, $"{project.Id}.json");
-        log.LogDebug("Saving story project {Id} to {Path}", project.Id, path);
-        File.WriteAllText(path, JsonSerializer.Serialize(project, JsonOpts));
 
-        // Clean up any legacy files with the same ID but different filename
-        foreach (var file in Directory.GetFiles(StoryDir, "*.json"))
+        // Get or create folder, renaming if title changed
+        var desiredName = StoryFolderHelper.BuildFolderName(project.Id, project.Title);
+        var desiredPath = Path.Combine(StoryDir, desiredName);
+        var existing = StoryFolderHelper.FindFolder(StoryDir, project.Id);
+
+        if (existing != null && !string.Equals(existing, desiredPath, StringComparison.OrdinalIgnoreCase))
         {
-            if (string.Equals(file, path, StringComparison.OrdinalIgnoreCase)) continue;
-            var proj = LoadFromFile(file);
-            if (proj?.Id == project.Id)
-                File.Delete(file);
+            try { Directory.Move(existing, desiredPath); }
+            catch { desiredPath = existing; }
         }
+        else if (existing == null)
+        {
+            Directory.CreateDirectory(desiredPath);
+        }
+
+        var storyPath = Path.Combine(desiredPath, "story.json");
+        log.LogDebug("Saving story project {Id} to {Path}", project.Id, storyPath);
+        File.WriteAllText(storyPath, JsonSerializer.Serialize(project, JsonOpts));
     }
 
     public void DeleteProject(string id)
     {
-        var project = LoadProject(id);
-        if (project != null)
+        var folder = StoryFolderHelper.FindFolder(StoryDir, id);
+        if (folder == null) return;
+
+        var archiveFolder = Path.Combine(ArchiveDir, Path.GetFileName(folder));
+        if (Directory.Exists(archiveFolder))
+            Directory.Delete(archiveFolder, true);
+        Directory.Move(folder, archiveFolder);
+    }
+
+    /// <summary>Migrate legacy flat files into folder structure on first run.</summary>
+    private void MigrateFlatFiles()
+    {
+        var dir = StoryDir;
+        if (!Directory.Exists(dir)) return;
+
+        var storyFiles = Directory.GetFiles(dir, "*.story.json");
+        foreach (var storyFile in storyFiles)
         {
-            project.IsArchived = true;
-            SaveProject(project);
+            try
+            {
+                var project = LoadFromFile(storyFile);
+                if (project == null) continue;
+
+                var folderName = StoryFolderHelper.BuildFolderName(project.Id, project.Title);
+                var folderPath = Path.Combine(dir, folderName);
+                Directory.CreateDirectory(folderPath);
+
+                File.Move(storyFile, Path.Combine(folderPath, "story.json"), overwrite: true);
+
+                foreach (var suffix in new[] { "checkpoint", "outline", "events", "knowledge" })
+                {
+                    var candidates = Directory.GetFiles(dir, $"*{project.Id}.{suffix}.json");
+                    foreach (var f in candidates)
+                        File.Move(f, Path.Combine(folderPath, $"{suffix}.json"), overwrite: true);
+                }
+
+                log.LogInformation("Migrated story '{Title}' to folder {Folder}", project.Title, folderName);
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "Failed to migrate story file {File}", storyFile);
+            }
         }
     }
 
     private static StoryProject? LoadFromFile(string path)
     {
+        if (!File.Exists(path)) return null;
         try
         {
             var json = File.ReadAllText(path);

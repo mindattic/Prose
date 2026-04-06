@@ -1,0 +1,44 @@
+{
+  "id": "019d6143a88072319fd08e5250be6335",
+  "name": "Vespid Dynamics Wasp Eye Tactical Monocle WE-3",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Wasp Eye Tactical Monocle WE-3",
+  "type": "equipment",
+  "aliases": [
+    "Wasp Eye",
+    "WE-3",
+    "Tac Monocle",
+    "Smart Eye"
+  ],
+  "category": "sensors",
+  "description": "A multi-spectral optical device worn as a monocle or clip-on lens that overlays tactical information onto the wearer's visual field. The WE-3 combines visible light enhancement, thermal imaging, electromagnetic field visualization, and AR data overlays into a single eyepiece that can be switched between modes or display composite views. The device interfaces with neural implants for heads-up display integration and can share its feed with linked devices. Vespid designed it as a lightweight alternative to full tactical helmets for operators who need sensor capability without the bulk and visibility of military headgear.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — security and investigation",
+  "base_technologies": [],
+  "specifications": {
+    "modes": "Visual enhancement",
+    "info": "thermal; EM field; AR overlay; composite",
+    "resolution": "8K per mode",
+    "neural interface": "Direct HUD integration",
+    "feed sharing": "Encrypted to linked devices",
+    "weight": "0.03 kg",
+    "form factor": "Monocle or clip-on lens",
+    "battery": "24-hour",
+    "zoom": "1-8x digital with stabilization",
+    "EM field detection": "1 MHz to 300 GHz visualization"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A WE-3 in EM visualization mode detected an unknown signal emanating from inside a person's skull — the signal was not from any known neural interface model and its purpose is unidentifiable.",
+    "Modified WE-3 units with facial recognition and criminal database access have become standard equipment for vigilante groups in Tier 2 — they are scanning every face they see and acting on the results."
+  ],
+  "tags": [
+    "sensors",
+    "equipment",
+    "neural",
+    "tier 2"
+  ]
+}

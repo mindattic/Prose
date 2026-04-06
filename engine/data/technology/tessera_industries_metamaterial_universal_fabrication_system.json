@@ -1,0 +1,44 @@
+{
+  "id": "019d6143aa527c6097b208ff2c407852",
+  "name": "Tessera Industries Metamaterial Universal Fabrication System",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Metamaterial Universal Fabrication System",
+  "type": "technology",
+  "aliases": [
+    "MUFS",
+    "Meta Forge",
+    "Tessera Printer",
+    "Material Maker"
+  ],
+  "subcategory": "manufacturing",
+  "description": "An advanced manufacturing platform capable of fabricating metamaterials — materials with properties not found in nature — by assembling structures at the nanoscale using programmable molecular assembly units. The MUFS can produce materials that bend light, redirect sound, absorb electromagnetic radiation, or exhibit negative thermal expansion, all by arranging ordinary atoms into extraordinary geometries. Each fabrication run produces small quantities — typically measured in square centimeters — but the materials themselves are so extraordinary that even small amounts enable previously impossible engineering applications.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Programmable molecular assembly",
+    "Nanoscale structural arrangement",
+    "Metamaterial property simulation"
+  ],
+  "enables": [
+    "Optical invisibility materials",
+    "Perfect sound absorption panels",
+    "Electromagnetic shielding metamaterials",
+    "Negative refractive index lenses",
+    "Sensor-defeating surface treatments"
+  ],
+  "social_impact": "The MUFS has given Tessera a near-monopoly on advanced stealth, sensor, and optical technologies. Their metamaterials appear in everything from military cloaking systems to medical imaging equipment, creating a dependency that gives Tessera extraordinary leverage. The technology has also created a new class of smuggling — metamaterial samples are worth more per gram than any drug or precious metal, and the ability to fabricate materials that defeat security sensors makes them inherently useful for criminal applications.",
+  "story_hooks": [
+    "A MUFS fabrication template has been leaked that produces a metamaterial capable of defeating every known biometric sensor — anyone wearing it becomes invisible to automated security systems.",
+    "Tessera's MUFS units have been producing anomalous output — metamaterials with properties that were not programmed, as if the molecular assembly units are discovering new configurations on their own."
+  ],
+  "tags": [
+    "manufacturing",
+    "technology",
+    "medical",
+    "drug",
+    "stealth",
+    "tier 4"
+  ]
+}

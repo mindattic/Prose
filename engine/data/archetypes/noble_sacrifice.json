@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5817c98885e061b5b60400d",
+  "name": "Noble Sacrifice",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Gives everything so others don't have to",
+  "behavioral_signature": "Volunteers for the mission no one comes back from",
+  "under_stress": "Finds peace in the choice",
+  "at_rest": "Lives like they're already on borrowed time",
+  "will_always": [
+    "lay down their life if needed"
+  ],
+  "will_never": [
+    "let someone else make the sacrifice"
+  ],
+  "unless": [
+    "their sacrifice would be pointless"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Martyr",
+      "threshold": 0.9,
+      "context": "self-sacrifice"
+    },
+    {
+      "archetype": "Protector",
+      "threshold": 0.7,
+      "context": "defending others"
+    }
+  ],
+  "opposite_of": [
+    "Survivor Ethics"
+  ],
+  "tags": [
+    "selfless",
+    "doomed"
+  ]
+}

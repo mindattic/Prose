@@ -27,7 +27,7 @@
 
 @* ── Title + Save ─────────────────────────────────────── *@
 <div class="d-flex align-items-center gap-2 mb-2" style="height: 32px;">
-    <input type="text" class="form-control form-control-sm bg-dark text-danger border-secondary fw-bold fst-italic flex-grow-1"
+    <input type="text" class="form-control form-control-sm bg-dark text-danger border-secondary fw-bold flex-grow-1"
            style="font-family: Georgia, serif; font-size: 1rem; height: 32px;"
            placeholder="Untitled"
            @bind="project.Title"
@@ -266,7 +266,7 @@
          style="z-index: 1050; background: rgba(0,0,0,0.7);">
         <div class="card bg-dark text-light border-warning" style="width: 900px; max-height: 85vh; overflow-y: auto;">
             <div class="card-header d-flex justify-content-between align-items-center border-secondary">
-                <span class="text-warning fw-bold"><i class="bi bi-shield-check"></i> Validate (@validationResults.Count issues)</span>
+                <span class="text-warning fw-bold"><i class="bi bi-shield-check"></i> Validate @(validationResults.Count > 0 ? "(1 issue found)" : "")</span>
                 <button class="btn btn-sm btn-outline-secondary" @onclick="() => showValidateModal = false"><i class="bi bi-x-lg"></i></button>
             </div>
             <div class="card-body">
@@ -274,8 +274,14 @@
                 {
                     <div class="d-flex align-items-center gap-2">
                         <div class="spinner-border spinner-border-sm text-warning"></div>
-                        <small class="text-muted">Checking story against canon...</small>
+                        <small class="text-muted">@validateProgress</small>
                     </div>
+                    @if (validateTotal > 0)
+                    {
+                        <div class="progress mt-2" style="height: 4px;">
+                            <div class="progress-bar bg-warning" style="width: @(validateCompleted * 100 / validateTotal)%"></div>
+                        </div>
+                    }
                 }
                 else if (!validationResults.Any())
                 {
@@ -300,42 +306,129 @@
                             </div>
                             <div class="small text-muted mb-2">@issue.Description</div>
 
-                            @* Side-by-side: Story vs Canon *@
+                            @* Side-by-side: Canon (left) vs Story (right) *@
                             <div class="row g-2 mb-2">
-                                <div class="col-6">
-                                    <div class="field-label text-danger">In Story</div>
-                                    <div class="bg-black rounded p-2 small" style="min-height: 40px;">@issue.StoryText</div>
-                                </div>
                                 <div class="col-6">
                                     <div class="field-label text-success">Canon Truth</div>
                                     <div class="bg-black rounded p-2 small" style="min-height: 40px;">@issue.CanonTruth</div>
                                 </div>
+                                <div class="col-6">
+                                    <div class="field-label text-danger">In Story</div>
+                                    <div class="bg-black rounded p-2 small" style="min-height: 40px;">@issue.StoryText</div>
+                                </div>
                             </div>
 
-                            @* Resolution options *@
-                            <div class="field-label text-info mb-1">Resolve</div>
+                            @* Resolution: Sync Story → Canon *@
+                            <div class="field-label text-success mb-1">Sync Story to Canon</div>
                             <div class="d-flex flex-column gap-1 mb-2">
-                                <button class="btn btn-sm btn-outline-success text-start" @onclick="() => ResolveKeepCanon(i)">
-                                    <i class="bi bi-check-lg me-1"></i> Update story to match canon
-                                </button>
-                                @foreach (var alt in issue.Alternatives)
+                                @{ var storyFixes = issue.StoryFixes
+                                    .Select((fix, idx) => (fix, score: idx < issue.StoryFixScores.Count ? issue.StoryFixScores[idx] : 0))
+                                    .OrderByDescending(x => x.score)
+                                    .ToList(); }
+                                @foreach (var (fix, score) in storyFixes)
                                 {
-                                    var altText = alt;
-                                    <button class="btn btn-sm btn-outline-info text-start" @onclick="() => ResolveWithAlternative(i, altText)">
-                                        <i class="bi bi-arrow-right me-1"></i> @altText
+                                    var fixText = fix;
+                                    <button class="btn btn-sm btn-outline-info text-start" style="height:auto; white-space:normal;" @onclick="() => ResolveWithAlternative(i, fixText)">
+                                        @if (score > 0)
+                                        {
+                                            <span class="badge @(score >= 70 ? "bg-success" : score >= 40 ? "bg-warning text-dark" : "bg-secondary") me-1">@score%</span>
+                                        }
+                                        @fixText
                                     </button>
                                 }
-                                <button class="btn btn-sm btn-outline-secondary text-start" @onclick="() => GenerateMore(i)" disabled="@generatingMore">
+                            </div>
+
+                            @* Resolution: Sync Canon → Story *@
+                            @if (issue.CanonFixes.Count > 0)
+                            {
+                                <div class="field-label text-warning mb-1">Sync Canon to Story</div>
+                                <div class="d-flex flex-column gap-1 mb-2">
+                                    @{ var canonFixes = issue.CanonFixes
+                                        .Select((fix, idx) => (fix, score: idx < issue.CanonFixScores.Count ? issue.CanonFixScores[idx] : 0))
+                                        .OrderByDescending(x => x.score)
+                                        .ToList(); }
+                                    @foreach (var (fix, score) in canonFixes)
+                                    {
+                                        var fixText = fix;
+                                        <button class="btn btn-sm btn-outline-warning text-start" style="height:auto; white-space:normal;" @onclick="() => ResolveUpdateCanon(i, fixText)">
+                                            @if (score > 0)
+                                            {
+                                                <span class="badge @(score >= 70 ? "bg-success" : score >= 40 ? "bg-warning text-dark" : "bg-secondary") me-1">@score%</span>
+                                            }
+                                            @fixText
+                                        </button>
+                                    }
+                                </div>
+                            }
+
+                            <div class="d-flex gap-1 mb-2">
+                                <button class="btn btn-sm btn-outline-secondary text-start" style="height:auto; white-space:normal;" @onclick="() => GenerateMore(i)" disabled="@generatingMore">
                                     @if (generatingMore && activeIssueIdx == i) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                                    <i class="bi bi-arrow-repeat me-1"></i> Generate more alternatives
+                                    <i class="bi bi-arrow-repeat me-1"></i> More alternatives
                                 </button>
-                                <button class="btn btn-sm btn-outline-secondary text-start" @onclick="() => DismissIssue(i)">
-                                    <i class="bi bi-x me-1"></i> Ignore this issue
+                                <button class="btn btn-sm btn-outline-secondary text-start" style="height:auto; white-space:normal;" @onclick="() => DismissIssue(i)">
+                                    <i class="bi bi-x me-1"></i> Ignore
                                 </button>
                             </div>
                         </div>
                     }
                 }
+            </div>
+        </div>
+    </div>
+}
+
+@* ── Suggest Alternatives Modal ────────────────────────── *@
+@if (showAlternativesModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);">
+        <div class="card bg-dark text-light border-info" style="width: 800px; max-height: 85vh; overflow-y: auto;">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-info fw-bold"><i class="bi bi-lightbulb"></i> Suggest Alternatives</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showAlternativesModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                <div class="field-label text-muted mb-1">Original</div>
+                <div class="bg-black rounded p-2 small mb-3">@altOriginalText</div>
+
+                @if (generatingAlts)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-info"></div>
+                        <small class="text-muted">Generating alternatives...</small>
+                    </div>
+                }
+                else if (suggestedAlts.Count > 0)
+                {
+                    <div class="field-label text-info mb-1">Alternatives</div>
+                    <div class="d-flex flex-column gap-1 mb-2">
+                        @{ var sorted = suggestedAlts
+                            .Select((alt, idx) => (alt, score: idx < altScores.Count ? altScores[idx] : 0))
+                            .OrderByDescending(x => x.score)
+                            .ToList(); }
+                        @foreach (var (alt, score) in sorted)
+                        {
+                            var altText = alt;
+                            <button class="btn btn-sm btn-outline-info text-start" style="height:auto; white-space:normal;" @onclick="() => ApplyAlternative(altText)">
+                                @if (score > 0)
+                                {
+                                    <span class="badge @(score >= 70 ? "bg-success" : score >= 40 ? "bg-warning text-dark" : "bg-secondary") me-1">@score%</span>
+                                }
+                                @altText
+                            </button>
+                        }
+                    </div>
+                }
+
+                <div class="d-flex gap-1">
+                    <button class="btn btn-sm btn-outline-info" @onclick="GenerateMoreAlts" disabled="@generatingAlts">
+                        <i class="bi bi-arrow-repeat me-1"></i> Generate more
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => showAlternativesModal = false">
+                        Close
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -427,6 +520,9 @@
         {
             <div class="position-fixed bg-dark border border-secondary rounded shadow-lg py-1"
                  style="z-index: 1070; top: @(ctxMenuTop)px; left: @(ctxMenuLeft)px; min-width: 160px;">
+                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="OpenSuggestAlternatives" disabled="@(!hasSelection)">
+                    <i class="bi bi-lightbulb text-warning me-2"></i>Suggest Alternatives
+                </button>
                 <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadSelected" disabled="@(narrating || !hasSelection)">
                     <i class="bi bi-volume-up text-info me-2"></i>Read Selected
                 </button>
@@ -435,7 +531,8 @@
                 </button>
             </div>
         }
-        else if (viewMode == "preview")
+
+        @if (viewMode == "preview")
         {
             @if (string.IsNullOrWhiteSpace(printHtml))
             {
@@ -445,13 +542,28 @@
             }
             else
             {
-                <div class="bg-white text-dark p-4 rounded" style="min-height: 60vh; font-family: Georgia, serif; font-size: 16px; line-height: 2; max-width: 700px; margin: 0 auto;">
-                    @((MarkupString)printHtml)
+                <div class="border border-secondary rounded" style="height: calc(100vh - 300px); overflow-y: auto;">
+                    <div class="story-preview-print bg-white text-dark p-4" style="font-family: Georgia, serif; font-size: 16px; line-height: 2; max-width: 700px; margin: 0 auto;">
+                        @((MarkupString)printHtml)
+                    </div>
                 </div>
             }
         }
 
-        @* ── ElevenLabs Tag Bar (always visible) ───── *@
+        @* ── Audio Player ──────────────────────────── *@
+        <AudioPlayer @ref="audioPlayer"
+                     Visible="true"
+                     OnDismissed="() => {}"
+                     OnInsertTag="InsertTag"
+                     OnReadSelected="ReadSelected"
+                     OnReadAll="ReadAll"
+                     HasSelection="hasSelection"
+                     Engine="@ttsEngine"
+                     EngineChanged="e => ttsEngine = e"
+                     ShowTagInserter="false"
+                     CssClass="mt-1" />
+
+        @* ── ElevenLabs Tag Bar ────────────────────── *@
         <div class="bg-dark border border-secondary rounded mt-1 d-flex align-items-center gap-1 px-3 py-1 flex-wrap" style="font-size: 0.75rem;">
             <small class="text-muted fw-bold me-1">TTS Tags</small>
             <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[short pause]")'>short pause</button>
@@ -467,19 +579,6 @@
             <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales sharply]")'>sharp exhale</button>
             <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[inhales deeply]")'>deep inhale</button>
         </div>
-
-        @* ── Audio Player ──────────────────────────── *@
-        <AudioPlayer @ref="audioPlayer"
-                     Visible="true"
-                     OnDismissed="() => {}"
-                     OnInsertTag="InsertTag"
-                     OnReadSelected="ReadSelected"
-                     OnReadAll="ReadAll"
-                     HasSelection="hasSelection"
-                     Engine="@ttsEngine"
-                     EngineChanged="e => ttsEngine = e"
-                     ShowTagInserter="false"
-                     CssClass="mt-1 rounded border border-secondary" />
 
         @* ── Bottom bar: view toggle left, Ask/Write right ── *@
         <div class="d-flex align-items-center mt-1">
@@ -690,6 +789,14 @@
     private bool ttsAvailable;
     private bool narrating;
     private bool hasSelection;
+    private string currentSelection = "";
+
+    // ── Suggest Alternatives ──
+    private bool showAlternativesModal;
+    private bool generatingAlts;
+    private string altOriginalText = "";
+    private List<string> suggestedAlts = [];
+    private List<int> altScores = [];
     private AudioPlayer? audioPlayer;
     private string ttsEngine = "elevenlabs"; // "elevenlabs" or "windows"
 
@@ -740,6 +847,8 @@
     private bool validating;
     private bool generatingMore;
     private int activeIssueIdx;
+    private string validateProgress = "";
+    private int validateCompleted, validateTotal;
     private List<CanonIssue> validationResults = [];
 
     // ── Editor ──
@@ -783,6 +892,8 @@
         }
         richHtml = project.Html;
         storyText = project.PlainText;
+        validationResults = LoadValidation();
+        if (validationResults.Count > 0) showValidateModal = true;
         UpdateWordCount();
 
         // Auto-save new projects so they appear in the Stories list
@@ -851,6 +962,7 @@
     [JSInvokable]
     public async Task OnSelectionChanged(string selectedText)
     {
+        currentSelection = selectedText;
         var wordCount = string.IsNullOrWhiteSpace(selectedText) ? 0
             : selectedText.Split([' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
         var had = hasSelection;
@@ -960,7 +1072,7 @@
                     Premise = writeText, Characters = characters, Location = location,
                 });
                 writeResult = opening.Text;
-                if (project.Title is "Untitled" or "") project.Title = opening.Title;
+                if (project.Title is Constants.Defaults.UntitledStory or "") project.Title = opening.Title;
             }
             else
             {
@@ -1509,7 +1621,7 @@
             currentOutline = await OutlineSvc.GenerateOutlineAsync(
                 outlinePremise, characters, null, outlineTargetBeats);
             OutlineSvc.Save(project.Id, currentOutline);
-            if (project.Title is "Untitled" or "" && !string.IsNullOrEmpty(currentOutline.Title))
+            if (project.Title is Constants.Defaults.UntitledStory or "" && !string.IsNullOrEmpty(currentOutline.Title))
                 project.Title = currentOutline.Title;
         }
         catch (Exception ex) { error = $"Outline failed: {ex.Message}"; }
@@ -1527,21 +1639,59 @@
 
     // ── Validate ──
 
+    private void SaveValidationState()
+    {
+        var path = StoryFolderHelper.GetFilePath(Paths.StoriesDir, project.Id, "validation.json", project.Title);
+        var json = System.Text.Json.JsonSerializer.Serialize(validationResults,
+            new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+        System.IO.File.WriteAllText(path, json);
+    }
+
+    private List<CanonIssue> LoadValidation()
+    {
+        var path = StoryFolderHelper.FindFile(Paths.StoriesDir, project.Id, "validation.json");
+        if (path == null) return [];
+        try
+        {
+            var json = System.IO.File.ReadAllText(path);
+            return System.Text.Json.JsonSerializer.Deserialize<List<CanonIssue>>(json) ?? [];
+        }
+        catch { return []; }
+    }
+
     private async Task RunValidation()
     {
         showValidateModal = true;
         validating = true;
+        validateProgress = "Preparing...";
+        validateCompleted = 0;
+        validateTotal = 0;
         validationResults.Clear();
         StateHasChanged();
+
+        void OnProgress(string message, int completed, int total)
+        {
+            validateProgress = message;
+            validateCompleted = completed;
+            validateTotal = total;
+            InvokeAsync(StateHasChanged);
+        }
+
+        Validator.OnValidationProgress += OnProgress;
         try
         {
             var session = new NarrativeSessionContext(Graph);
             session.ScanText(storyText);
             var worldContext = session.BuildContext();
             validationResults = await Validator.ValidateDeepAsync(storyText, worldContext);
+            SaveValidationState();
         }
         catch (Exception ex) { error = $"Validation failed: {ex.Message}"; }
-        finally { validating = false; }
+        finally
+        {
+            Validator.OnValidationProgress -= OnProgress;
+            validating = false;
+        }
     }
 
     private async Task ResolveKeepCanon(int idx)
@@ -1556,6 +1706,34 @@
         await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
         Save();
         validationResults.RemoveAt(idx);
+        SaveValidationState();
+    }
+
+
+    private void ResolveUpdateCanon(int idx, string canonFix)
+    {
+        if (idx < 0 || idx >= validationResults.Count) return;
+        var issue = validationResults[idx];
+        if (string.IsNullOrEmpty(issue.EntityName)) return;
+
+        // Find the entity in the graph and update its canon truth
+        var node = Graph.AllNodes()
+            .FirstOrDefault(n => n.Name.Equals(issue.EntityName, StringComparison.OrdinalIgnoreCase));
+        if (node != null)
+        {
+            // Update the relevant property — canon_truth stores what was wrong, canon_fix stores the correction
+            node.Properties["canon_override"] = canonFix;
+            // Also update description if the canon truth was from the description
+            if (node.Properties.TryGetValue("description", out var desc) &&
+                desc.Contains(issue.CanonTruth, StringComparison.OrdinalIgnoreCase))
+            {
+                node.Properties["description"] = desc.Replace(issue.CanonTruth, canonFix);
+            }
+            Graph.Save();
+        }
+
+        validationResults.RemoveAt(idx);
+        SaveValidationState();
     }
 
     private async Task ResolveWithAlternative(int idx, string altText)
@@ -1570,6 +1748,7 @@
         await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
         Save();
         validationResults.RemoveAt(idx);
+        SaveValidationState();
     }
 
     private async Task GenerateMore(int idx)
@@ -1584,6 +1763,7 @@
             var moreAlts = await Validator.GenerateAlternativesAsync(
                 issue.StoryText, issue.CanonTruth, storyText);
             issue.Alternatives.AddRange(moreAlts);
+            SaveValidationState();
         }
         catch { }
         finally { generatingMore = false; }
@@ -1593,8 +1773,70 @@
     {
         if (idx >= 0 && idx < validationResults.Count)
             validationResults.RemoveAt(idx);
+        SaveValidationState();
         if (!validationResults.Any())
             showValidateModal = false;
+    }
+
+    // ── Suggest Alternatives ──
+
+    private async Task OpenSuggestAlternatives()
+    {
+        showContextMenu = false;
+        if (string.IsNullOrWhiteSpace(currentSelection)) return;
+        altOriginalText = currentSelection;
+        suggestedAlts.Clear();
+        altScores.Clear();
+        showAlternativesModal = true;
+        await GenerateMoreAlts();
+    }
+
+    private async Task GenerateMoreAlts()
+    {
+        generatingAlts = true;
+        StateHasChanged();
+        try
+        {
+            var system = $"""
+                You are rewriting a passage from a cyberpunk story. Generate 5 alternative
+                phrasings that preserve the meaning but offer different voice, rhythm, or angle.
+                Each should feel like a different author's take on the same moment.
+
+                Story context (surrounding text):
+                {storyText[..Math.Min(2000, storyText.Length)]}
+
+                Return ONLY a JSON array of 5 strings. Nothing else.
+                """;
+
+            var response = await Llm.GenerateAsync(system, $"Rewrite this: {altOriginalText}", 0.8, 1024);
+            try
+            {
+                var json = response.Trim();
+                if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
+                if (json.EndsWith("```")) json = json[..^3];
+                var newAlts = System.Text.Json.JsonSerializer.Deserialize<List<string>>(json.Trim()) ?? [];
+                suggestedAlts.AddRange(newAlts);
+            }
+            catch { }
+
+            // Vote on all alternatives
+            if (suggestedAlts.Count > 0)
+            {
+                altScores = await Validator.VoteOnFixesAsync(
+                    altOriginalText, "", suggestedAlts, "rewrite alternative");
+            }
+        }
+        catch { }
+        finally { generatingAlts = false; }
+    }
+
+    private async Task ApplyAlternative(string altText)
+    {
+        richHtml = richHtml.Replace(altOriginalText, altText);
+        storyText = storyText.Replace(altOriginalText, altText);
+        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
+        Save();
+        showAlternativesModal = false;
     }
 
     // ── Cleanup ──
@@ -1609,12 +1851,7 @@
 
     // ── Helpers ──
 
-    private static string GetTypeBadgeClass(string type) => type switch
-    {
-        "character" => "bg-info", "organization" => "bg-warning text-dark", "place" => "bg-success",
-        "faction" => "bg-purple", "weapon" => "bg-danger", "equipment" => "bg-primary",
-        "technology" => "bg-cyan", _ => "bg-secondary",
-    };
+    private static string GetTypeBadgeClass(string type) => Constants.TypeBadge.For(type);
 
     private static string GetTypeColor(string type) => type switch
     {

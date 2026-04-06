@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a84f7ca58cfd4d61611b3070",
+  "name": "Arcturus Defense Solutions Battlefield Communication Drone BCD-4",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Battlefield Communication Drone BCD-4",
+  "type": "equipment",
+  "aliases": [
+    "BCD-4",
+    "Sky Radio",
+    "Comm Drone",
+    "Signal Bird"
+  ],
+  "category": "communications",
+  "description": "A high-altitude communication relay drone that provides encrypted communications coverage over a 10 km radius when ground-based infrastructure is unavailable or compromised. The BCD-4 flies at 500 meters altitude and serves as an airborne cell tower, mesh network node, and satellite uplink, enabling full communications capability in areas where jamming, destruction, or simple absence of infrastructure has created communication blackouts. The drone operates for 8 hours and can be replaced by a fresh unit for continuous coverage.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — military communications",
+  "base_technologies": [],
+  "specifications": {
+    "altitude": "500 meters",
+    "coverage radius": "10 km",
+    "services": "Encrypted voice",
+    "info": "data; mesh network; satellite uplink; 000 simultaneous users",
+    "jamming resistance": "Frequency-hopping spread spectrum",
+    "flight time": "8 hours",
+    "weight": "5 kg",
+    "launch": "Hand-thrown with assisted takeoff",
+    "encryption": "Military-grade quantum-key",
+    "band capacity": "1"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A BCD-4 was deployed over a Tier 1 district during a communications blackout, providing the first reliable communication access the area had experienced in months — the question of who deployed it and why remains unanswered.",
+    "An enemy BCD-4 providing communications to hostile forces was shot down, and its communication logs contained the complete order of battle and operational plans of the opposing force."
+  ],
+  "tags": [
+    "communications",
+    "equipment",
+    "ai",
+    "drone",
+    "tier 3"
+  ]
+}

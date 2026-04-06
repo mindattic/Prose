@@ -1,0 +1,98 @@
+{
+  "id": "019d6143a917705eb04aa795beffc037",
+  "type": "place",
+  "name": "Deepwell Station",
+  "aliases": [
+    "The Fortress",
+    "Superior Free City",
+    "Iron Reef",
+    "The Cold Republic"
+  ],
+  "description": "Deepwell Station is what happens when you build a seacrete city on the most unforgiving freshwater body on Earth. Lake Superior is deep, cold, and violent — it doesn't give up its dead, as the saying goes, and it doesn't make life easy for the living. The people who founded Deepwell in 2167 knew this. They were miners, mostly — iron range workers from Minnesota's Mesabi Range who'd been automated out of existence, plus a contingent of Canadian resource engineers from Thunder Bay who'd watched their industry collapse when the corponations consolidated mineral extraction. They had no future on shore. So they took their engineering expertise, their tolerance for misery, and their complete lack of alternatives, and they dropped wire-mesh frameworks into Superior's mineral-saturated waters and started growing a city.\n\nSuperior's water chemistry is different from the lower lakes — colder, deeper, with a mineral profile heavy in iron, silica, and dissolved carbonates that produces seacrete with a distinctive reddish-black coloration and exceptional compressive strength. Deepwell's structures look like they were carved from volcanic rock — dark, dense, angular. The city sits lower in the water than Freestone, its upper surfaces barely cresting the wave line during storms, most of its mass submerged. This wasn't an aesthetic choice; it was survival engineering. Superior's storms would shred a surface-dominant structure. Deepwell hunkers, absorbs, and endures. The residents call this design philosophy 'The Crouch.'\n\nThe city's economy is built on what Superior provides: mineral extraction from the lakebed, processed through Deepwell's own refining platforms. The iron-rich sediment of Superior's floor yields high-grade ore that the city processes and trades to shore-based manufacturers. Deepwell also harvests rare earth elements from deep-water thermal vents — a resource that the corponations would kill for and have, in fact, tried to take by force twice. Both attempts were repelled by Deepwell's defense force, the Keel Guard, whose submersible fleet operates in water too deep and too cold for Cormorant Naval Systems' Lake Erie-optimized vessels to follow. Superior is Deepwell's moat, and the city has learned to use the lake's hostility as a weapon.\n\nGovernance is a workers' council system — practical, blunt, and merciless toward inefficiency. The founding miners brought their union culture with them, and Deepwell runs like a mine that votes: shift schedules, resource allocation, and defense priorities are decided by council, with foremen (elected, not appointed) managing execution. There is no pretension of utopian politics here. Deepwell is hard, cold, and functional. It works because the alternative is the lake, and the lake is worse. Population: 120,000, every one of them earning their oxygen.",
+  "atmosphere": {
+    "sights": [
+      "Dark reddish-black seacrete structures barely cresting the waterline — the city looks like a volcanic island that hasn't finished rising",
+      "Mining platforms with crane arrays extending into the lake, hauling sediment from the deep floor",
+      "The Keel Guard's submersible pens — armored docks built into the city's submerged lower levels",
+      "Ice — in winter, Deepwell's surfaces accumulate ice formations that the residents carve into functional windbreaks rather than remove",
+      "The aurora borealis reflected in Superior's black water on clear nights — the one beautiful thing the lake gives freely"
+    ],
+    "sounds": [
+      "Wind — Superior's wind is constant, aggressive, and personal. It finds every gap in every structure.",
+      "The grind of mining equipment hauling ore from the lakebed",
+      "The deep, resonant hum of the accretion current running through iron-heavy seacrete — lower-pitched than Freestone's, almost subsonic",
+      "Council debates echoing through the commons halls — Deepwell argues loudly about everything"
+    ],
+    "smells": [
+      "Iron — the seacrete, the ore, the water itself all carry the metallic bite of ferrous mineral",
+      "Cold air off the lake — clean, sharp, and hostile",
+      "Machine oil from the mining rigs and refinery platforms",
+      "The mineral-rich steam from the thermal vent processing stations"
+    ],
+    "feel": "Hard. Deepwell feels earned in a way that no place in Meridian does. Every surface was grown from hostile water by people who had nothing else. The cold gets into your bones. The wind never stops. The food is functional, the housing is tight, and the people look at you like they're deciding whether you're worth the oxygen. But there's a solidity here — physical and social — that the tier system can't replicate. These people chose the hardest lake on the continent and made it home. They're proud of that, in the quiet, stubborn way of people who don't need you to be impressed.",
+    "tags": []
+  },
+  "demographics": "120,000 permanent residents, predominantly descended from displaced iron range miners and Canadian resource workers. Ethnically mixed but culturally cohesive — Deepwell has developed its own identity built on labor solidarity and Superior endurance. Children are educated in both technical trades and democratic governance from age six.",
+  "economy": "Primary exports: refined iron ore, rare earth elements from deep-water thermal vents, high-density seacrete prefabrication components. Imports: electronics, medical supplies, agricultural products (Superior's cold limits food production). Internal economy runs on work-shares — a labor-hour currency tied to actual productive output. External trade volume: approximately Φ6.8 billion annually, heavily weighted toward mineral exports.",
+  "power_structure": "Workers' council system. The Shift Council — twenty elected foremen representing each major work sector — governs by majority vote. A General Assembly of all residents convenes quarterly for major decisions. The Keel Guard operates under Shift Council authority but maintains operational independence during active defense. No corporate entities permitted; the founding charter is explicit.",
+  "dangers": [
+    "Lake Superior itself — storms, cold, depth. The lake has killed people on Deepwell's outer platforms and will do so again.",
+    "Corponation mineral-rights challenges — Dredge Mining Collective and Arcturus Defense Solutions both want Deepwell's thermal vent resources",
+    "Isolation — Deepwell is far from shore and far from the other lake cities. Supply disruption is an existential threat.",
+    "Infrastructure age — the oldest seacrete sections are forty years old and require constant maintenance against Superior's erosive chemistry",
+    "The Keel Guard's independence — a military force with operational autonomy in a democracy is a structural tension that hasn't broken yet"
+  ],
+  "opportunities": [
+    "Rare earth elements — Deepwell controls resources that every corponation needs and cannot easily replicate",
+    "Submersible expertise — the Keel Guard operates in conditions no other naval force can match",
+    "A labor economy that actually values work — radical concept in a world of corporate extraction",
+    "Strategic alliance potential — Deepwell's resources make it a valuable partner for anyone opposing corponation mineral monopolies"
+  ],
+  "story_hooks": [
+    "Dredge Mining Collective hires a mercenary flotilla to 'survey' Superior's thermal vents. Deepwell's Keel Guard intercepts. The resulting standoff needs someone on shore to negotiate — or sabotage — before it becomes a shooting war.",
+    "A structural failure in Deepwell's oldest seacrete section threatens to flood the lower residential warrens. The repair requires materials only available from shore-based corponation suppliers, who see an opportunity to extract concessions.",
+    "A Deepwell miner discovers something in the lakebed sediment that isn't mineral — it's artificial, it's old, and it shouldn't be there."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Open Lake Superior (approximately 30 nautical miles from Minnesota shore)",
+      "Freestone (Lake Michigan — trade route via Straits of Mackinac)",
+      "Abyssal Threshold (Lake Superior deep-water research colony — direct submersible access)",
+      "The Vagrant (mobile platform — seasonal trade partner)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Miners, refinery workers, and deep-water engineers",
+    "Independent ore traders running mineral shipments to shore",
+    "Keel Guard submariners — the most capable freshwater naval force that isn't Cormorant",
+    "Researchers studying Superior's deep-water thermal vent ecosystems"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 47.5,
+    "lng": -87.5,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "weapon",
+    "war",
+    "identity",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "medical",
+    "bar",
+    "dark",
+    "storm",
+    "cold",
+    "rights",
+    "survival",
+    "food",
+    "water",
+    "lake"
+  ]
+}

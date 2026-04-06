@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab277ef3b782a6a35363b8b7",
+  "name": "Electrostatic Flensing Projector EFP-1 'Skinreader'",
+  "type": "weapon",
+  "aliases": [
+    "Skinreader",
+    "The Peeler",
+    "Static Flenser"
+  ],
+  "category": "energy",
+  "description": "The EFP-1 generates a shaped electrostatic discharge field projected through a parabolic dielectric emitter array, creating a zone of intense charge differential across a target's surface. Unlike simple stun weapons that induce muscle tetany through current passage, the EFP-1's field geometry creates lateral charge migration across the outermost dermal layers, producing a shearing electrostatic force that disrupts the adhesive protein bonds holding epithelial tissue in structural alignment. At low output, this causes intense surface pain and temporary paresthesia. At high output, the effect progresses to partial epidermal separation across exposed skin — a phenomenon the weapon's users describe with clinical understatement as 'flensing.'\n\nThe weapon's targeting system includes a passive bioelectric sensor that reads surface charge signatures to distinguish organic targets from synthetic materials, allowing the EFP-1 to selectively affect unarmored biological tissue while having reduced effect on conductive armor plating — which disperses rather than concentrates the field. This selectivity is a deliberate design feature that makes the weapon particularly effective against lightly clothed or partially armored targets while limiting its utility against fully suited opponents. The dielectric emitter array produces a characteristic crackling hiss during charge buildup, providing approximately 0.8 seconds of audible warning before discharge.\n\nZHENG-DAO BIOELECTRIC developed the EFP-1 under a crowd control contract for an unnamed municipal authority, and its design reflects an interrogation-adjacent philosophy: maximum pain compliance with survivable damage at standard settings. The high-output mode that causes epidermal separation was not in the original specification and emerged from field modifications. ZHENG-DAO officially disavows the modification but has not recalled or redesigned the units in circulation.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 2+ (crowd control variant); Black market (high-output modification)",
+  "legality": "Licensed (crowd control variant); Prohibited (high-output modification)",
+  "base_technologies": [
+    "Shaped electrostatic discharge projection",
+    "Bioelectric surface charge sensing",
+    "Dielectric field geometry control"
+  ],
+  "specifications": "emitter array: Parabolic dielectric array, 7-element\nfield modes: Compliance (pain induction) / Suppression (tetany + disorientation) / Flense (epidermal separation, modified)\ntarget discrimination: Passive bioelectric sensor, organic vs. conductive surface\neffective range: Up to 12 m (optimal field coherence)\ncone width at 12m: Approximately 1.4 m\ncharge buildup warning: ~0.8 seconds audible\npower source: High-density capacitor bank, 24 compliance / 12 suppression / 6 flense shots\nweight: 2.1 kg\nlength: 46 cm",
+  "tactical_use": "Enforcement operators use the EFP-1 in compliance mode for crowd dispersal and suspect restraint, exploiting the pain response to force submission without lasting injury at standard settings. Suppression mode is used for incapacitating targets who resist compliance. The flense modification is employed by black-market users for interrogation and targeted punishment — it is rarely used in open combat due to the charge buildup warning. Operators learn to angle the parabolic array to maximize field coherence against partially covered targets, directing the effect toward exposed skin.",
+  "cultural_context": "In Meridian 88, the EFP-1 is the weapon most closely associated with institutional violence — the kind wielded by enforcement bodies rather than street combatants. Its crowd-control origin means civilians recognize it as a symbol of authority being applied to bodies. The fact that ZHENG-DAO disavows the high-output modification while it proliferates freely has become a minor political flashpoint; activist groups in the lower districts call it 'plausible deniability with a charge buildup.' Carrying a modified EFP-1 signals affiliation with enforcement culture gone rogue — ex-officers, disgraced security contractors, or corporate interrogators working without oversight.",
+  "known_users": [
+    "Municipal enforcement units (crowd control variant)",
+    "ZHENG-DAO BIOELECTRIC corporate security",
+    "Ex-enforcement contractors operating off-books",
+    "Corporate interrogation specialists",
+    "Lower-district resistance groups who've captured and modified enforcement units"
+  ],
+  "story_hooks": [
+    "A ZHENG-DAO internal memo surfaces proving the corporation knew about the flense modification before it 'emerged' in the field — someone leaked it and is now being hunted.",
+    "A municipal enforcement unit is found using modified EFP-1s against a labor protest; the players are hired either to document the incident or to make the evidence disappear, depending on who's paying.",
+    "A series of bodies with EFP-1 flense damage appear in a district where no enforcement units operate — someone is using a modified weapon for targeted killings and framing institutional actors.",
+    "ZHENG-DAO offers the players a contract to recover all modified EFP-1 units from a specific black-market supply chain, but the players discover the corporation wants them back to reverse-engineer and legitimize the modification."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "violence",
+    "combat",
+    "war",
+    "ai",
+    "synthetic",
+    "rogue",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "clinic",
+    "injury",
+    "pain",
+    "market",
+    "rain",
+    "train",
+    "armor",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "019d6143a7b87e668d742751eb475367",
+  "name": "Arcturus Defense Solutions Kinetic Echo Harness — 'The Understudy'",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Kinetic Echo Harness — 'The Understudy'",
+  "type": "cyberware",
+  "aliases": [
+    "The Understudy",
+    "Echo Rig",
+    "Ghost Muscle",
+    "Kinetic Shadow"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Understudy is a subdermal musculoskeletal augmentation system consisting of a network of shape-memory alloy microfibers implanted in parallel with the body's major muscle groups, connected by a distributed processing harness anchored at the thoracic spine. The system does not replace natural muscle function — it mirrors and amplifies it. When the user initiates a movement, the Understudy reads the electrical signal from the motor cortex approximately 40 milliseconds before muscle contraction occurs, pre-loads the corresponding alloy fiber network, and releases in synchrony with the natural movement. The result is a force multiplication effect that feels, to the user, like their own body performing at a level beyond its biological ceiling.\n\nThe 'echo' in the product name refers to this mirroring architecture: the harness is always one beat behind intent and one beat ahead of execution, occupying the narrow window between decision and action. Arcturus engineers describe it as the system 'learning to be you.' The installation process is extensive — full-body fiber implantation across the deltoids, pectorals, latissimus, quadriceps, and forearm flexors takes approximately fourteen hours of surgical time and six weeks of recovery and calibration. The harness learns the user's movement signature during this period, building a kinetic profile that becomes increasingly precise over months of use. Early-stage users report a slight uncanny sensation, as though their body is being assisted by something that knows what they're about to do.\n\nThe Understudy was developed by Arcturus for heavy infantry and breaching specialists who needed sustained force output without the joint degradation of cruder exo-augmentation. It has since migrated into the private security market and, inevitably, into the fighting circuits. The street version, manufactured from inferior alloy stock by unlicensed fab shops, is prone to a failure mode operators call 'overclock echo' — the harness misreads a signal and pre-fires, causing an involuntary, full-force muscle contraction. Broken bones are the typical result.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"implant_coverage\":\"Deltoids, pectorals, latissimus dorsi, quadriceps, forearm flexor groups — approximately 340 individual microfiber implants\",\"force_multiplication\":\"Sustained 2.4x baseline output; burst capacity 3.8x for intervals under 4 seconds\",\"signal_read_latency\":\"38-42ms pre-motor cortex anticipation window\",\"calibration_period\":\"6 weeks standard; full kinetic profile maturation at 4-6 months\",\"power_source\":\"Kinetic energy harvesting supplemented by subcutaneous induction charging pad (dorsal thoracic)\",\"operating_temperature_range\":\"Functional 15°C–42°C; degraded performance outside range\",\"failure_modes\":\"Overclock echo (signal misread causing involuntary contraction); fiber fatigue fracture after approximately 7 years without maintenance\",\"weight\":\"Combined implant mass 890 grams\"}",
+  "side_effects": [],
+  "cultural_context": "The Understudy occupies a particular cultural niche in Meridian 88 because it is invisible. Unlike obvious augmentations — visible chrome, external rigs, glow-through-skin implants — a person running the Understudy looks entirely unmodified until they do something that isn't possible. This creates a social dynamic where the implant is simultaneously a tool of deception and a source of pride among users who know what they're carrying. In underground fighting circuits, Understudy users are regarded with a mixture of respect and suspicion; the harness is technically illegal in sanctioned bouts, but detection requires a scanner. Among Arcturus's own personnel, wearing the Understudy is considered a mark of serious field commitment — it is not a casual augmentation, and the recovery process alone filters out those not genuinely invested.",
+  "known_users": [
+    "Arcturus Defense Solutions field operatives",
+    "Corporate breaching and extraction teams",
+    "Underground fighting circuit competitors",
+    "High-security facility guards",
+    "Freelance enforcers working for mid-tier syndicates",
+    "Black-market body modification enthusiasts"
+  ],
+  "story_hooks": [
+    "A series of seemingly impossible physical feats at a crime scene — a vault door torn from its housing, a security bulkhead collapsed inward — point to an Understudy user. Arcturus's kinetic profile database could identify who, but accessing it requires leverage the players don't currently have.",
+    "A fighting circuit champion is about to be publicly exposed as an Understudy user. The person who found out is now missing, and the champion's syndicate backers want the information buried.",
+    "A batch of bootleg Understudy units with a corrupted pre-motor reading algorithm has hit the street market. Three users have suffered catastrophic overclock echo events. Someone sold the bad batch knowing what it was.",
+    "An Arcturus field operative's Understudy has developed a calibration drift after years of use — it no longer echoes their movements, it anticipates them in ways that don't match their intent. The harness is acting on its own kinetic profile, not theirs."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "war",
+    "crime",
+    "deception",
+    "memory",
+    "augment",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "ubc",
+    "market",
+    "shadow",
+    "energy",
+    "fire",
+    "circuit",
+    "tier 2"
+  ]
+}

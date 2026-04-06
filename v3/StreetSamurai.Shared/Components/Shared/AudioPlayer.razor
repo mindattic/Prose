@@ -4,7 +4,7 @@
 
 @if (Visible)
 {
-    <div class="audio-player bg-dark border-top border-secondary @CssClass" style="position: fixed; bottom: 0; left: 240px; right: 0; z-index: 1000;">
+    <div class="audio-player bg-dark border border-secondary rounded @CssClass">
         @if (audioUrl != null)
         {
             <audio id="@audioId" src="@audioUrl" preload="auto"
@@ -89,8 +89,8 @@
 
     private async Task OnEngineChanged() => await EngineChanged.InvokeAsync(Engine);
 
-    private string audioId = $"audio-{Guid.NewGuid():N}";
-    private string progressId = $"progress-{Guid.NewGuid():N}";
+    private string audioId = $"audio-{Guid.CreateVersion7():N}";
+    private string progressId = $"progress-{Guid.CreateVersion7():N}";
     private string? audioUrl;
     private byte[]? audioData;
     private bool loading;

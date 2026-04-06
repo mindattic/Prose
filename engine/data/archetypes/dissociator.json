@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a56b72eabd05564adaa9aad3",
+  "name": "Dissociator",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Detaches from reality when it becomes too much",
+  "behavioral_signature": "Mentally leaves while physically remaining",
+  "under_stress": "Goes further away, harder to reach",
+  "at_rest": "Present but not present",
+  "will_always": [
+    "disconnect from overwhelming experience"
+  ],
+  "will_never": [
+    "stay fully present in pain"
+  ],
+  "unless": [
+    "someone desperately needs them here, now"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Hollow",
+      "threshold": 0.8,
+      "context": "emotional absence"
+    },
+    {
+      "archetype": "Stoic",
+      "threshold": 0.6,
+      "context": "apparent calm"
+    }
+  ],
+  "opposite_of": [
+    "Volatile"
+  ],
+  "tags": [
+    "absent",
+    "protective"
+  ]
+}

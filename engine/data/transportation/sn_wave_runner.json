@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa717e05939a34f456417725",
+  "name": "SN Wave Runner",
+  "type": "transportation",
+  "aliases": [
+    "Wave Runner",
+    "Jet Ski",
+    "Water Wasp"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Sterling-Nakamura (Recreation Division)",
+  "description": "A personal watercraft for the Great Lakes — fast, agile, and a staple of Tier 3-4 recreation. The Wave Runner is the motorcycle of the water, accessible enough for middle-tier residents to own and fun enough to build a lifestyle around. The lakefront culture of weekend Wave Runner riders is one of Meridian 88's more human scenes — people actually enjoying something, even if the water quality requires a decontamination rinse afterward.",
+  "propulsion": "Electric jet drive",
+  "speed": "90 km/h",
+  "capacity": "1-2 riders",
+  "range": "60 km",
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ4,000 new, Φ1,500-2,500 used",
+  "autonomy": "Manual operation",
+  "armament": "None",
+  "common_usage": "Recreation, lakefront patrol (budget security), personal watercraft racing, weekend leisure.",
+  "story_hooks": [
+    "A Wave Runner rider discovers their GPS maps show a landmass in the lake that doesn't exist above water — but something is there below the surface",
+    "The Wave Runner racing community stumbles onto a smuggling route and has to decide whether to report it or profit from it"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "war",
+    "motorcycle",
+    "water",
+    "lake",
+    "tier 3",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "019d6143a85c74048d4bc72e6a349fbe",
+  "name": "Helix Biosystems Tracheal Anchor Kit — 'The Sexton'",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Tracheal Anchor Kit — 'The Sexton'",
+  "type": "equipment",
+  "aliases": [
+    "The Sexton",
+    "Airway Kit",
+    "The Grave Digger",
+    "Throat Kit"
+  ],
+  "category": "medical",
+  "description": "The Tracheal Anchor Kit is a compact surgical intervention package designed for emergency airway management in field conditions — specifically for cases of tracheal collapse, crush injury to the throat, severe edema, or foreign obstruction where standard clearance is impossible. The kit contains a Helix-designed micro-cricothyrotomy tool, a pre-loaded self-anchoring cannula, a flexible obturator wire, and a syringe of Helix's proprietary mucosal sealant compound designated HB-Seal-3. The cannula is constructed from a memory-titanium alloy that self-expands to the correct diameter once body temperature is reached, anchoring itself against the tracheal walls without sutures.\n\nThe Sexton's defining feature is its obturator wire guidance system, which allows placement by feel and resistance feedback rather than direct visualization — a critical advantage in field conditions where lighting, blood, and swelling make visual airway management nearly impossible. A trained medic can complete a successful placement in under forty seconds. An untrained user following the embossed step-by-step instructions on the kit's interior lid can achieve placement in approximately two to three minutes, with a success rate that Helix's clinical trials put at 71% — a figure that field medics call 'brutally honest and somehow comforting.' The HB-Seal-3 mucosal compound prevents air leak around the cannula site and carries a mild antimicrobial agent.\n\nThe kit is named 'The Sexton' after the church official responsible for graves and bells — the person who decides when the ground is broken. Medics across Meridian 88 use 'calling for the Sexton' as shorthand for an airway emergency, and the term has crossed over into general slang for any situation where someone's time is running out.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Memory-titanium self-anchoring cannula",
+    "Obturator wire guidance (tactile feedback)",
+    "HB-Seal-3 mucosal sealant compound",
+    "Micro-cricothyrotomy instrumentation",
+    "Embossed haptic instruction interface"
+  ],
+  "specifications": {
+    "cannula_material": "Memory-titanium alloy, body-temperature activation",
+    "cannula_diameter_range": "6mm–9mm (self-calibrating)",
+    "placement_time_trained": "Under 40 seconds",
+    "placement_time_untrained": "2–3 minutes",
+    "untrained_success_rate": "71% (Helix clinical trial data)",
+    "sealant_compound": "HB-Seal-3 with integrated antimicrobial",
+    "kit_contents": "Micro-cricothyrotomy tool, pre-loaded cannula, obturator wire, HB-Seal-3 syringe, sterile drape, instruction lid",
+    "uses_per_kit": "Single patient use",
+    "dimensions": "18cm x 9cm x 4cm hard case",
+    "weight": "210g",
+    "licensing_requirement": "Tier 2 medical license or corporate medical credential"
+  },
+  "tactical_use": "The Sexton is deployed when a casualty has lost their airway and cannot be cleared by manual means. In field conditions, the medic opens the hard case, uses the obturator wire to locate the cricothyroid membrane by resistance feedback, seats the cannula, and confirms placement by breath resistance. The self-anchoring mechanism eliminates the need for suturing under fire. Once placed, the cannula can accept a manual resuscitation bag or be coupled to a portable ventilator. Medics frequently mark placed Sextons with a red field tag on the casualty's collar to ensure receiving personnel do not attempt standard intubation over the existing airway.",
+  "cultural_context": "The Sexton occupies a peculiar cultural space in Meridian 88: it requires a license to purchase legally, which means that in the outer districts where licenses are expensive or inaccessible, it circulates primarily through black market channels or is hoarded by those with corporate medical credentials. The licensing requirement is widely criticized as a mechanism that ensures corporate medics can save corporate personnel while outer-district populations rely on improvisation. 'Licensed to breathe' is a bitter phrase used by outer-district residents. Among corporate medical staff, carrying a Sexton is a mark of professional seriousness — it signals that you have trained for worst-case scenarios rather than relying on cleaner hospital conditions.",
+  "known_users": [
+    "Helix Biosystems corporate medical staff",
+    "Arcturus Defense Solutions combat medics",
+    "Tier 2+ licensed field surgeons",
+    "Black market medical suppliers (outer districts)",
+    "Specialist extraction teams",
+    "Trauma-trained fixers with medical backgrounds"
+  ],
+  "story_hooks": [
+    "A licensed medic working for a mid-tier corporate client discovers their Sexton kit has been swapped with a counterfeit — the cannula is standard steel, not memory-titanium, and will not self-anchor. Someone on the inside is sabotaging medical supplies.",
+    "Helix Biosystems is lobbying to reclassify the Sexton as Tier 3, pricing it entirely out of reach for independent medics. A coalition of outer-district surgeons wants someone to steal the manufacturing specs so they can produce unlicensed copies.",
+    "A character survives a throat injury because a stranger placed a Sexton before disappearing. The cannula's serial number traces back to a corporate medical credential that belongs to someone who died three years ago.",
+    "A Sexton kit is found at a crime scene, used and discarded. Whoever placed it knew exactly what they were doing — and whoever they saved is now missing."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "combat",
+    "crime",
+    "memory",
+    "ai",
+    "elf",
+    "corporate",
+    "clinic",
+    "injury",
+    "market",
+    "rain",
+    "train",
+    "chase",
+    "fire",
+    "tier 2"
+  ]
+}

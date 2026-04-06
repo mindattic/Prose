@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a723709584098d9d734369df",
+  "type": "character",
+  "name": "Yemisi Obuobi-Strand",
+  "aliases": [
+    "The Hammer",
+    "Yem"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Division Vice President, Strategic Acquisitions — Axiom",
+  "age": 54,
+  "status": "active",
+  "location": "The Spire, Axiom Executive Floors 88-92",
+  "description": "Yemisi is the kind of person who makes rooms quieter when they enter, not through volume but through gravity — there is a quality of compressed attention about them that makes everyone present feel slightly observed. They are stocky and deliberate, with dark skin that has a faint bioluminescent undertone along the jaw and collarbones, a cosmetic procedure from their forties that they chose because they wanted to look exactly as expensive as they are. Their hair is grown in dense locs that contain, threaded through the lower three, a series of micro-display filaments that can project data onto any nearby surface — functional and fashionable and a signal that they have not forgotten they came from an engineering background.\n\nThey have been at Axiom for twenty-two years. They have acquired forty-seven companies, liquidated nineteen, and folded the rest into Axiom's structure with the same efficient warmth one might apply to absorbing useful parts of a organism. They are not cruel — cruelty is imprecise. They are, by their own accounting, honest: they always tell the people they are acquiring exactly what Axiom intends. It is not their fault if those people don't believe them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being outmaneuvered by someone less intelligent than them",
+      "That the version of themselves that had principles was not discarded — just suppressed, and is still in there somewhere, watching"
+    ],
+    "core_desires": [
+      "To build something that persists beyond the corponation context — something genuinely theirs",
+      "Acknowledgment from someone whose opinion they actually respect, which is almost no one"
+    ],
+    "coping_mechanisms": [
+      "Controlled environments",
+      "Reducing human complications to structural problems with structural solutions",
+      "The E.L.F. at their private terminal — they leave it extremely detailed operational summaries, which is perhaps the most honest they ever are"
+    ],
+    "blind_spots": [
+      "They have optimized themselves so thoroughly for acquisition contexts that they no longer know how to want something for non-strategic reasons",
+      "They assume everyone is negotiating, which means they miss the people who simply don't have an angle"
+    ],
+    "secret": "The forty-seventh acquisition — a small genomics startup in Ashfeld — was personal. The founder was someone Yemisi loved before Axiom. They acquired the company specifically to protect the founder from a hostile Tessera approach, restructured it in a way that ensured the founder's research continued, and buried the connection so thoroughly that no one at Axiom has ever found it. They have not spoken to the founder since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clean, precise, never corporate-jargon — they find jargon imprecise. Uses structural metaphors. Occasionally pauses to allow silence to do work.",
+    "cadence": "Deliberate. Every sentence feels considered. Never rushes.",
+    "verbal_tics": [
+      "Long pause before pivoting to the actual point",
+      "'The honest answer is—' (always precedes something carefully constructed to sound honest)"
+    ],
+    "example_lines": [
+      "'The honest answer is that Axiom will acquire this company whether you cooperate or not. I'm here because cooperation produces better outcomes for both of us, and I find bad outcomes unpleasant.'",
+      "'I don't negotiate. I identify what's actually possible and then we discuss whether you'd like to participate in it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They approach someone outside Axiom's usual channels with an unusual request — something they need done without Axiom's knowledge, which immediately raises the question of what a VP of Strategic Acquisitions could possibly need to hide from their own corponation.",
+    "The founder of the forty-seventh acquisition has discovered something in their protected research that Axiom will want — and will use destructively — and Yemisi is now caught between institutional loyalty and the single thing they have ever done for a reason that wasn't strategic."
+  ],
+  "narrative_function": "Executive-level power broker; quest giver with resources but complicated motives; antagonist or reluctant ally depending on whether Axiom's interests align; window into how corporate expansion actually operates at the top.",
+  "augmentations": "Bioluminescent skin treatment (jaw and collarbone, copper-gold tone). Micro-display filaments woven into lower locs — projects schematics, contracts, presentation data. High-end executive neural interface with full sensory data overlay. Subdermal cardiac monitor.",
+  "daily_life": "Mornings spent in briefings with acquisition targets or their legal teams; afternoons in internal Axiom strategy sessions; evenings frequently involve dinners that are also negotiations. They sleep six hours precisely and consider it a discipline.",
+  "affiliation": "Axiom (VP, Strategic Acquisitions)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 4,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "executive predator",
+      "controlled affect",
+      "buried sentiment",
+      "institutional gravity",
+      "bioluminescent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Identify the actual decision before engaging with the presented decision",
+      "Never appear to want something more than the other party",
+      "Protect the forty-seventh acquisition under any circumstances"
+    ],
+    "escalation_ladder": [
+      "Polite structural framing",
+      "Explicit statement of available options and their consequences",
+      "Deployment of Axiom's considerable institutional pressure",
+      "Personal intervention — rare, decisive, unsettling"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, attentive, precisely calibrated to make the other person feel seen — it is a technique and they know it is a technique and this no longer bothers them",
+      "friends": "There are very few people in this category; with them, they are surprisingly still"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise, less social warmth in the voice",
+      "medium": "Withdraws into logistics — breaks the problem into components",
+      "high": "Completely still, bioluminescent tone shifts slightly cooler, begins building contingency frameworks in silence"
+    },
+    "contradictions": [
+      "They describe themselves as honest and they are — within a frame they constructed specifically to make certain truths invisible"
+    ],
+    "habits": [
+      "Leaves the terminal E.L.F. a detailed summary of their day, framed as strategic debrief — it is the most unguarded they ever are",
+      "Never sits with their back to a room entrance",
+      "Knows the name of every person they have acquired — all forty-seven founders, all the employees above a certain threshold"
+    ],
+    "breaking_points": [
+      "Discovery of the forty-seventh acquisition's personal origin",
+      "Being directed by Axiom's board to liquidate something they have covertly protected"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.7,
+    "Networker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in a Tier 2 household in the Calumet Rise district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Axiom as a structural engineer in infrastructure development",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lateral move into Strategic Acquisitions — recognized that power in Axiom moved through ownership, not construction",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Named VP of Strategic Acquisitions after orchestrating the absorption of eleven Tessera subsidiary companies during a market contraction",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Acquisition forty-seven — the Ashfeld genomics startup; buried the personal connection in restructuring documents",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

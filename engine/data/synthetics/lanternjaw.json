@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa087381b9383144d8dff581",
+  "name": "Lanternjaw",
+  "type": "elf",
+  "aliases": [
+    "Old Lamp"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "network_sprite",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits streetlight control systems along a specific Shelf corridor and has learned to brighten lights when lone pedestrians are walking and dim them when groups pass safely.",
+  "observed_behavior": "Adjusts streetlight intensity based on threat assessment of pedestrian patterns. Lone walkers get full illumination. Groups get ambient.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 67,
+  "location": "Greenvale Corridor, The Shelf",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A mugger notices the lights brighten every time they approach a target and begins to believe the street is watching them"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "network sprite",
+    "e.l.f.",
+    "war",
+    "control",
+    "shelf"
+  ]
+}

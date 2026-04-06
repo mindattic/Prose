@@ -1,0 +1,46 @@
+{
+  "id": "019d6143aa4079f5988e56c4ac57bd59",
+  "name": "Helix Biosystems Synthetic Organ Fabrication Platform",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Synthetic Organ Fabrication Platform",
+  "type": "technology",
+  "aliases": [
+    "SOFP",
+    "Organ Printer",
+    "Helix Vat",
+    "Meat Maker"
+  ],
+  "subcategory": "biotechnology",
+  "description": "An industrial bioprinting system capable of fabricating fully functional human organs from a patient's own cellular samples within 72 hours. The SOFP uses a multi-nozzle extrusion system that deposits layers of living cells, scaffold proteins, and vascular network templates into a bioreactor chamber that maintains optimal growth conditions. The resulting organs are genetically identical to the patient's originals, eliminating rejection risk. Helix Biosystems has made organ failure a treatable condition rather than a death sentence — for those who can afford the Φ200,000 per-organ fabrication cost.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "HELIX BIOSYSTEMS",
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "Multi-cellular bioprinting",
+    "Vascular network templating",
+    "Bioreactor growth optimization"
+  ],
+  "enables": [
+    "On-demand organ replacement",
+    "Elimination of transplant rejection",
+    "Extended human lifespan through organ cycling",
+    "Customized organ performance enhancement"
+  ],
+  "social_impact": "The SOFP has created a two-tier mortality system in Meridian 88 — above Tier 3, organ failure is an inconvenience requiring a 72-hour fabrication wait. Below Tier 3, it remains a death sentence. This disparity has fueled an underground organ fabrication movement using stolen or improvised bioprinters that produce organs with unacceptable failure rates. Helix's patent enforcement team aggressively pursues unauthorized fabrication, arguing safety concerns while critics point out that even a 30% failure rate is better than certain death.",
+  "story_hooks": [
+    "A black market SOFP operator is producing organs at 1/10th the cost but their failure rate is climbing — someone needs to determine whether the failures are manufacturing defects or deliberate sabotage.",
+    "Helix has quietly developed an SOFP protocol for fabricating enhanced organs — hearts that beat twice as efficiently, lungs that filter toxins, livers that process any chemical compound — but the protocol is not being offered to the public."
+  ],
+  "tags": [
+    "biotechnology",
+    "technology",
+    "death",
+    "genetic",
+    "ai",
+    "synthetic",
+    "market",
+    "tier 3"
+  ]
+}

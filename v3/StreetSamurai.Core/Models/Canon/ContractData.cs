@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -8,8 +9,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// assessment that grades whether the assembled team has the right makeup
 /// for the job: combat, infiltration, tech, social, medical, transport.
 /// </summary>
-public class ContractData
+public class ContractData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("codename")] public string Codename { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "contract";
     [JsonPropertyName("client")] public string Client { get; set; } = "";

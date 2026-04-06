@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5807ee7bba437e9aa3463de",
+  "name": "Mystic",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Experiences the divine or transcendent directly",
+  "behavioral_signature": "Perceives reality through a spiritual lens",
+  "under_stress": "Visions become more intense, less coherent",
+  "at_rest": "Meditating, experiencing, interpreting",
+  "will_always": [
+    "seek direct experience"
+  ],
+  "will_never": [
+    "rely purely on reason"
+  ],
+  "unless": [
+    "mystical experience disconnects them from those who need them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Consciousness Explorer",
+      "threshold": 0.8,
+      "context": "altered states"
+    },
+    {
+      "archetype": "Bridge Between Worlds",
+      "threshold": 0.75,
+      "context": "liminal perception"
+    }
+  ],
+  "opposite_of": [
+    "Rationalist"
+  ],
+  "tags": [
+    "transcendent",
+    "experiential"
+  ]
+}

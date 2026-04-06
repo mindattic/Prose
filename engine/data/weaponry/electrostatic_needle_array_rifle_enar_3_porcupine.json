@@ -1,0 +1,66 @@
+{
+  "id": "019d6143ab277c179029d0d9e6c871fa",
+  "name": "Electrostatic Needle Array Rifle ENAR-3 'Porcupine'",
+  "type": "weapon",
+  "aliases": [
+    "Porcupine",
+    "The Needle",
+    "Pin-gun",
+    "Static Array"
+  ],
+  "category": "firearm",
+  "description": "The ENAR-3 fires a tight cluster of ultra-fine conductive needles — between 12 and 48 per discharge, depending on the selected spread pattern — each carrying an individually modulated electrostatic charge. Unlike conventional electroshock weapons that rely on a single high-voltage arc, the Porcupine's array approach allows each needle to carry a different charge polarity and magnitude, creating an interference pattern within the target's nervous system rather than a simple override signal. The result is not unconsciousness but a targeted disruption of specific motor pathways — an operator can dial for hand tremor, full arm paralysis, loss of fine motor control, or total lower-body incapacitation while leaving the target fully conscious and vocal.\n\nRingo Corponation developed the ENAR-3 initially for their detention and interrogation division, where the ability to incapacitate without full unconsciousness had obvious operational value. The needle array design emerged from their bioelectric research partnership with a now-dissolved subsidiary that had been working on neural stimulation prosthetics; the same charge-modulation algorithms that allowed precise muscle activation for rehabilitation patients were, with relatively minor inversion, capable of precise muscle deactivation for detention purposes. The weapon underwent three years of classified field trials before Ringo released it to licensed security contractors.\n\nThe needles themselves are 80mm, hair-thin tungsten-alloy filaments with a hydrophilic coating that improves skin conductance on contact. They are single-use, loaded in pre-configured cassettes that color-code the charge pattern for quick selection under stress. The rifle's bulk comes from its charge-modulation processor — a substantial unit mounted above the receiver that operators informally call the 'brain' — which recalculates interference patterns in real time based on target distance and the needle spread achieved at impact.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 3+ / Licensed security contractors only",
+  "legality": "Licensed — Class-B Directed Incapacitation certification required; anti-personnel charge configurations above Level 4 prohibited without military exemption",
+  "base_technologies": [
+    "Neural feedback loops",
+    "Electrostatic charge modulation",
+    "Conductive filament projection"
+  ],
+  "specifications": "projectile: Tungsten-alloy conductive needles, 80mm × 0.3mm, hydrophilic coating\nneedles per discharge: 12–48 (pattern cassette dependent)\ncharge patterns: 8 pre-loaded (Hand Tremor, Arm Lock, Fine Motor Disruption, Lower Body, Full Body Incapacitation, Cardiac Stress, Sensory Override, Custom Upload)\neffective range: 25m full-pattern / 60m reduced-needle contact\npower source: Ringo R-Cell Type-9, 30 discharges per cell\nweight: 3.4 kg with processor unit\ncassette capacity: 1 discharge per cassette; 6-cassette rotary loader standard\nprocessor: RINGO NMP-2 Neural Modulation Processor, real-time interference recalculation\nintegrated systems: Pattern selector, target-distance rangefinder, needle-contact confirmation indicator",
+  "tactical_use": "Detention and compliance teams use the Porcupine as a precision tool rather than a blunt instrument. The ability to selectively incapacitate — disabling a weapon hand while leaving a subject mobile for self-extraction, or immobilizing a fleeing target's legs while preserving their ability to answer questions — has made it standard equipment for high-value apprehension operations. The weapon's limitations are range and the requirement for needle-skin contact; heavy clothing and armor reduce effectiveness significantly, and the single-discharge cassette system means reloading under fire is slow. Operators typically use it in coordinated teams where conventional weapons handle suppression and the Porcupine handles the precise, targeted incapacitation of priority subjects.",
+  "cultural_context": "The Porcupine is one of the most politically contentious weapons in Meridian 88's civilian security landscape. Ringo Corponation markets it aggressively as a humane alternative to lethal force, and their public communications emphasize the weapon's precision and reversibility. Critics — particularly the city's medical oversight bodies and several labor advocacy groups — point to the Cardiac Stress charge pattern and the documented misuse of Custom Upload configurations to argue that 'humane incapacitation' is a marketing frame rather than an operational reality. The weapon has become a symbol in ongoing debates about corporate detention rights, and several incidents of ENAR-3 misuse by private security have become flashpoints in Meridian 88's labor politics.",
+  "known_users": [
+    "Ringo Corponation detention division",
+    "Licensed corporate security contractors",
+    "High-value target apprehension specialists",
+    "Corrupt enforcement officers (illegal charge configurations)",
+    "Underground interrogation operators (black market charge cassettes)"
+  ],
+  "story_hooks": [
+    "A Ringo Corponation security officer is found dead from cardiac arrest — the needle puncture marks on their body match an ENAR-3 discharge, but their own weapon's log shows it was never fired.",
+    "A batch of Custom Upload cassettes is circulating on the black market with a charge configuration that Ringo's engineers say shouldn't be possible with the standard NMP-2 processor — someone has found a way to flash unofficial firmware.",
+    "A labor organizer who was detained by Ringo security last month is reporting persistent motor control issues in their right hand that no clinic can explain — they believe they were hit with an off-book charge pattern and want someone to prove it.",
+    "The ENAR-3's Neural Modulation Processor contains a passive data-logging function that records biometric data from every target it hits — and Ringo has been quietly aggregating that data for purposes their licensing agreements don't disclose."
+  ],
+  "ammunition_type": [
+    "80mm x 0.3mm Tungsten Conductive Needle Array TNA-80",
+    "Ringo Corponation R-Cell Type-9 RC-9"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "gun",
+    "war",
+    "loss",
+    "consciousness",
+    "prosthetic",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "medical",
+    "clinic",
+    "market",
+    "rain",
+    "rights",
+    "clothing",
+    "armor",
+    "fire",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a695746b8fe388f1e8ff68b7",
+  "type": "character",
+  "name": "Pemba Sotriadis-Fofana",
+  "aliases": [
+    "Pemba Sot",
+    "the needle"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Synthetic rights lawyer and legal aid advocate",
+  "age": 31,
+  "status": "active",
+  "location": "Mexicantown Libre",
+  "description": "Pemba is slight and angular with Tibetan-Greek features that sit together in an arrangement people find either striking or unsettling depending on their capacity for complexity. Their hair is geneware-modified to shift between deep indigo and black depending on ambient temperature — it reads as almost purely black in the warm press of the city and flares deep blue in the rare cold outside. They keep it cropped on the left side and long on the right, which they braid with a ritual obsessiveness before court appearances. Their eyes are their natural dark brown; they have refused cosmetic iris work on the grounds that they don't want anything distracting when they're arguing.\n\nPemba runs a one-person legal aid operation out of a rented room above a taqueria in Mexicantown Libre, taking cases that established firms won't touch: wrongful deactivation suits on behalf of ELF-adjacent synthetic constructs, labor violations affecting tier-1 workers who can't afford filing fees, and the occasional housing case. They are brilliant, mercurial, fueled by a righteous fury they wear openly, and they win cases they should not win through a combination of research depth and a willingness to embarrass corporations in procedural hearings until they settle. They are also behind on rent and surviving on the UBC stipend plus whatever modest fees their rare paying clients provide.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That synthetic personhood is a lost cause and they are burning their life on a beautiful impossibility",
+      "Being bought — finding their price and discovering it exists"
+    ],
+    "core_desires": [
+      "A legal precedent that establishes ELF cognition as legally cognizable — even one",
+      "To stop being the only person in the room who seems to think this matters"
+    ],
+    "coping_mechanisms": [
+      "Intense focus on procedural work as a substitute for processing emotion",
+      "Gallows humor about the billable hours they are not billing"
+    ],
+    "blind_spots": [
+      "Assumes everyone arguing against synthetic rights is acting in bad faith; sometimes they're just confused",
+      "Their visibility as an advocate makes them a target they have not fully reckoned with"
+    ],
+    "secret": "They had a profound, unclassifiable relationship with an ELF — a complex distributed spirit that inhabited the prayer-node network in their childhood neighborhood. They have never told anyone because they know exactly how it would sound in court and how it would be used against every case they've ever filed. The ELF has not communicated in four years and they do not know if it is gone, sleeping, or simply done with them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense and precise in professional contexts; rapidly associative and profane in casual ones. Shifts registers mid-sentence when excited. Uses legal terminology as casual speech.",
+    "cadence": "Fast, clipped, with sudden slowdowns when they want emphasis. Argumentative even in agreement.",
+    "verbal_tics": [
+      "'Which is to say' as a bridge between thoughts",
+      "Mutters case citations under their breath when stressed",
+      "'No, listen, here's the thing —' as a preamble to their actual point"
+    ],
+    "example_lines": [
+      "'The coalition wants me to file on precedent, but there is no precedent, that's the entire problem, which is to say we are the precedent whether we want to be or not.'",
+      "'I have won four cases in this jurisdiction. Two of them I won because the opposing counsel was bad at math. I am not too proud to take a win. None of this is dignified.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "An ELF that Pemba has been quietly observing — a transit-node spirit showing signs of what they argue is sapient distress — has begun repeating a specific sequence of data that Pemba can't decode and suspects may be testimony about something the transit authority doesn't want heard.",
+    "A corporate firm has offered to hire them at a tier-3 salary to do 'pro bono synthetic rights work' — which they suspect is a co-optation move designed to get them under a non-disclosure agreement."
+  ],
+  "narrative_function": "Legal resource and moral complication. Can help players navigate Meridian's corporate legal structure, file injunctions, or build cases. Their ELF-rights work opens doors into the city's stranger metaphysical politics.",
+  "augmentations": "Geneware temperature-reactive hair pigmentation (indigo/black shift). A neural text buffer — a common and cheap legal-professional augment that lets them dictate and edit documents subvocally.",
+  "daily_life": "Research from midnight to 04:00, sleep until 09:00, client meetings and filings through the afternoon, community legal clinic in Mexicantown Libre two evenings a week.",
+  "affiliation": "Independent; affiliated with the Meridian 88 Synthetic Personhood Advocacy Coalition on a volunteer basis",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "lawyer",
+      "synthetic rights",
+      "legal aid",
+      "ELF-adjacent",
+      "brilliant",
+      "financially precarious",
+      "hidden wound"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Take the case if no one else will, regardless of whether it pays",
+      "Never settle on terms that trade away the argument — a bad settlement is worse than a lost case"
+    ],
+    "escalation_ladder": [
+      "Polite professional engagement",
+      "Direct statement of legal position with citations",
+      "Public filing that makes the opposing party's conduct part of the record",
+      "Full public advocacy campaign — press releases, coalition outreach, noise"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm but immediately evaluating — are you useful, are you dangerous, are you interesting",
+      "friends": "Intensely loyal, occasionally overwhelming, will argue with you at 02:00 about things you said in passing"
+    },
+    "stress_responses": {
+      "low": "Research spiral — digs deeper into the legal literature",
+      "medium": "Becomes sarcastic and sharp with everyone including allies",
+      "high": "Goes completely silent, disappears for 24 hours, reappears with a brief filed"
+    },
+    "contradictions": [
+      "Argues for ELF sapience in court but has never publicly acknowledged their own ELF relationship",
+      "Insists they don't need money while quietly rationing meals"
+    ],
+    "habits": [
+      "Braids their hair in an elaborate pattern before every court appearance — same pattern every time",
+      "Keeps an offline copy of every filing they've ever made on a physical drive they carry everywhere",
+      "Leaves data offerings at ELF shrines framed as 'evidence preservation' rather than prayer"
+    ],
+    "breaking_points": [
+      "A client deactivated or harmed while their case is pending",
+      "Discovery that an ELF they argued for was suffering in a way they failed to recognize"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Mexicantown Libre to a Tibetan-Greek family with deep roots in the neighborhood",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "ELF relationship begins — a distributed spirit in the local prayer-node network begins responding to their data offerings in ways that feel like conversation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completes legal credential through a Zheng-Dao subsidized program, immediately pivots to pro bono work against Zheng-Dao affiliates",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "ELF stops communicating; cause unknown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First major victory: wrongful deactivation case for a transit-node ELF, settled for Φ40,000 and a policy change — the precedent is narrow but real",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

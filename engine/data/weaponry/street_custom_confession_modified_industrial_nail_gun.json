@@ -1,0 +1,46 @@
+{
+  "id": "019d6143ab4675ffb76cee31a3e053ec",
+  "name": "Street Custom 'Confession' Modified Industrial Nail Gun",
+  "type": "weapon",
+  "aliases": [
+    "Confession",
+    "Nail Driver",
+    "Crucifier",
+    "The Carpenter"
+  ],
+  "category": "improvised",
+  "description": "A construction-grade pneumatic nail gun modified for anti-personnel use by removing the contact safety, extending the barrel with a rifled sleeve, and upgrading the pneumatic charge to industrial compressor levels. The result fires hardened steel framing nails with enough velocity to penetrate light body armor at close range. The weapon is cheap, ammunition is available at any construction supply outlet, and the modifications can be performed with basic tools in under an hour. It has become the signature weapon of Tier 1 enforcement gangs who need deniable armament that can be sourced without touching the weapons black market.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — modified industrial tool as weapon",
+  "base_technologies": [
+    "Pneumatic acceleration modification",
+    "Contact safety bypass",
+    "Improvised barrel rifling"
+  ],
+  "specifications": "ammunition: 90mm hardened steel framing nails\nmagazine: 30-nail strip\neffective range: 3-12 meters\npenetration: Light body armor at 5 meters\nrate of fire: Semi-automatic, 2 nails per second\nweight: 2.8 kg\npower source: Modified pneumatic charge canister, 60 shots per canister",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A series of crucifixion-style killings in Tier 1 — victims pinned to walls with framing nails — has the signature of a single modified nail gun based on the nail batch markings.",
+    "A hardware chain is quietly tracking bulk nail purchases and selling the data to corporate security — mapping the supply chain of improvised weapons from the retail end."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "gun",
+    "war",
+    "gang",
+    "ai",
+    "corporate",
+    "power",
+    "market",
+    "bar",
+    "chase",
+    "armor",
+    "fire",
+    "tier 1"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa687b65a5ad3118d925fcba",
+  "name": "Icecutter Supply Barge",
+  "type": "transportation",
+  "aliases": [
+    "Icecutter",
+    "Lake Barge",
+    "Winter Mule"
+  ],
+  "category": "commercial_ground",
+  "manufacturer": "Ferrogate Transit (Marine Division)",
+  "description": "A heavy, flat-bottomed barge with an icebreaking bow, used to maintain supply lines across the Great Lakes during winter when normal shipping freezes. Slow, loud, and essential — without the Icecutters, lakefront communities would be isolated for months. The crews are tough, the conditions are brutal, and the ice doesn't always break the way you want it to. Every winter has its stories of Icecutters that went out and didn't come back.",
+  "propulsion": "Diesel-electric (one of the few diesel vehicles still operating — electric can't handle the ice)",
+  "speed": "15 km/h in open water, 5 km/h through ice",
+  "capacity": "200,000 kg cargo",
+  "range": "800 km",
+  "tier_availability": "Commercial/municipal",
+  "cost": "Φ3,000,000 per vessel",
+  "autonomy": "Human crew (12-16), AI ice-analysis assist",
+  "armament": "None. The bow is sufficient.",
+  "common_usage": "Winter supply chain maintenance, ice channel clearing, emergency rescue on frozen lake.",
+  "story_hooks": [
+    "An Icecutter breaks through to a stretch of lake that should be frozen solid but finds open water — warm, still, and impossibly deep",
+    "The Icecutter crews have a tradition of radio silence during certain passages, inherited from crews who heard things in the static they couldn't explain"
+  ],
+  "tags": [
+    "commercialground",
+    "transportation",
+    "war",
+    "ai",
+    "bar",
+    "vehicle",
+    "water",
+    "lake"
+  ]
+}

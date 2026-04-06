@@ -1,0 +1,47 @@
+{
+  "id": "019d6143ab127e9f894a0e21de49cabf",
+  "name": "Arcturus Defense Solutions Directed EMP Rifle DER-5 'Blackout'",
+  "type": "weapon",
+  "aliases": [
+    "Blackout",
+    "DER-5",
+    "EMP Rifle",
+    "Kill Switch"
+  ],
+  "category": "electromagnetic",
+  "description": "A rifle-format directed electromagnetic pulse weapon that fires a focused EMP beam capable of permanently destroying unshielded electronics at ranges up to 100 meters. Unlike area-effect EMP devices, the DER-5 projects a tight beam that can selectively target individual devices, vehicles, or augmented individuals without affecting surrounding electronics. The beam induces a catastrophic current surge in the target's circuitry, burning out processors, memory storage, and power regulation systems. Against cyberware, the effect is particularly devastating — a direct hit can permanently destroy neural interface hardware, requiring full surgical replacement.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted",
+  "base_technologies": [
+    "Focused directional EMP beam generation",
+    "Selective electronic targeting",
+    "High-capacity rapid-discharge capacitor banks"
+  ],
+  "specifications": "beam type: Focused directional EMP\neffective range: 10-100 meters\nbeam width: 0.5 meter diameter at 50 meters\npower source: Backpack capacitor bank, 10 shots per charge\nrecharge: 5 seconds between shots\nweight: 4.8 kg rifle, 3.5 kg power pack\neffect: Permanent electronics destruction in unshielded targets\nshielded target effect: Temporary disruption, 10-30 seconds",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A DER-5 was used to destroy the neural interface of a corporate whistleblower, erasing their stored evidence along with their augmentation — the attack was surgical and left no physical wound.",
+    "Anti-augmentation militants have acquired DER-5 units and are conducting drive-by EMP attacks on aug clinics, destroying entire inventories of neural interface hardware."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "electromagnetic",
+    "weapon",
+    "war",
+    "memory",
+    "augment",
+    "cyberware",
+    "neural",
+    "ai",
+    "corporate",
+    "power",
+    "clinic",
+    "vehicle",
+    "fire",
+    "circuit",
+    "tier 4"
+  ]
+}

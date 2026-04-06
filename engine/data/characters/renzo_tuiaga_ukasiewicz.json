@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a6b077a3aad22080c0127801",
+  "type": "character",
+  "name": "Renzo Tuiaga-Łukasiewicz",
+  "aliases": [
+    "Skins",
+    "The Coat Man"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Bootleg fashion vendor and fake ID operator",
+  "age": 29,
+  "status": "active",
+  "location": "The Burnished Market, stall row 7, north face",
+  "description": "Renzo is long-limbed and restless, always in motion — adjusting a display, flipping a collar, draping a jacket on a passing stranger's shoulders to show them how it falls. His Polynesian-Polish heritage gives him a broad face and prominent cheekbones, and he's invested in geneware that makes his skin display faint bioluminescent patterns across his arms and neck: slow-shifting geometric shapes in blue-white that he programs seasonally. His hair is a towering installation in itself, grown long and restructured with color-shifting gel into something between a wave crest and a crown, currently cycling through sunset oranges.\n\nHe sells three things: replica high-fashion pieces indistinguishable from the real thing to anyone without a scanner, genuinely creative original clothing he designs himself at night, and — quietly, to the right people — fabricated identity documents that can fool mid-tier corponation scanners. He speaks about fashion with an almost religious reverence that's entirely sincere, and speaks about the IDs as if they don't exist. He's charming in the exhausting way of someone who has never been allowed to stop performing.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.8,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being trapped as a counterfeiter forever, never recognized as a real designer",
+      "Someone tracing an ID back to him and destroying everything he's built"
+    ],
+    "core_desires": [
+      "To show at a legitimate fashion event under his own name",
+      "To be seen as an artist, not a hustler"
+    ],
+    "coping_mechanisms": [
+      "Hyperfocuses on creative work when anxious",
+      "Deflects vulnerability with aesthetic commentary",
+      "Buys himself gifts when stressed"
+    ],
+    "blind_spots": [
+      "He's far more exposed legally than he acknowledges",
+      "He underestimates how much the Archivist controls their arrangement"
+    ],
+    "secret": "His best original designs — the ones he never sells — are portraits of his estranged mother, who left for Grosse Pointe Enclosure when he was eleven to marry into a Tier 4 family. He's been denied contact eighteen times. Each rejection becomes a garment."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, enthusiastic, fashion-industry jargon mixed with Burnished Market slang; switches to flat monosyllables when discussing IDs",
+    "cadence": "Rapid-fire when excited, which is most of the time; goes unnaturally slow and quiet when discussing anything illegal",
+    "verbal_tics": [
+      "'Look at this—' (grabbing your arm)",
+      "'No no no, feel the weight of that'",
+      "referring to clothing as 'her' or 'him'"
+    ],
+    "example_lines": [
+      "'This isn't a jacket. This is an argument. You walk in wearing this, you win before you open your mouth.'",
+      "'The other thing. I don't know what you're talking about. You want coffee? I know a stall.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "An ID he fabricated six months ago has been flagged — the person using it committed a high-profile crime and now corponation investigators are quietly tracing the document's origins",
+    "His original designs are being sold under someone else's name in a Meridian Core boutique — someone from the Archivist's network stole his files"
+  ],
+  "narrative_function": "Social entry point for characters needing new identities or a disguise; can source fashion-adjacent items; gossip about who's buying new faces; creative energy that makes scenes feel alive",
+  "augmentations": "Bioluminescent subdermal patterning (arms and neck, programmable); color-shift geneware in hair follicles; basic AR overlay contacts for fashion visualization",
+  "daily_life": "Sets up his stall by mid-morning, runs it until late night when the Burnished Market really moves, then goes home to design clothing until 3am on a salvaged Zheng-Dao fabricator.",
+  "affiliation": "Independent; informal arrangement with a Tessera document fabricator he knows only as 'the Archivist'",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 4,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 3
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fashion",
+      "forger",
+      "performer",
+      "creative wound",
+      "social chameleon"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell an ID to someone who seems like they're running from something violent rather than just bureaucratic",
+      "Always have an exit story ready for why someone is holding a garment he might need to deny making",
+      "Never discuss the Archivist's name or describe them physically"
+    ],
+    "escalation_ladder": [
+      "Plays dumb and pivots to selling something legitimate",
+      "Gets physically busy — adjusting, folding, creating noise and movement to break tension",
+      "Vanishes into the market crowd leaving a decoy display running"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediate, tactile, invasive — drapes things on them, assesses their size by eye, performs generosity",
+      "friends": "Drops the performance entirely, becomes quieter and more sincere, shows them what he's actually working on"
+    },
+    "stress_responses": {
+      "low": "More animated than usual, talks faster",
+      "medium": "Redirects every topic to fashion or aesthetics",
+      "high": "Goes completely still and assesses exits"
+    },
+    "contradictions": [
+      "Craves recognition and authenticity but survives on forgery and performance",
+      "Dismisses the ID business as 'just a side thing' while it funds everything else he does"
+    ],
+    "habits": [
+      "Touches the fabric of anything he passes — walls, awnings, strangers' sleeves if he thinks he can get away with it",
+      "Keeps a small notebook of design sketches tucked in his left boot",
+      "Eats standing up, always, always moving"
+    ],
+    "breaking_points": [
+      "Seeing his designs credited to someone else in public",
+      "Being arrested in front of his stall — the public humiliation would break him before any legal consequence"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioluminescent subdermal patterning — arms and neck",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent subdermal patterning — arms and neck",
+      "replaces": ""
+    },
+    {
+      "name": "Color-shift hair follicle geneware",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Color-shift hair follicle geneware",
+      "replaces": ""
+    },
+    {
+      "name": "AR overlay contact lenses — fashion visualization mode",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "AR overlay contact lenses — fashion visualization mode",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171 — Born in the Burnished Market district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2182 — Mother leaves for Grosse Pointe Enclosure; Renzo raised by his father's side of the family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188 — Begins selling market replicas to fund a secondhand fabricator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Makes contact with the Archivist; begins offering ID fabrication",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — First original collection, shown only to fellow vendors, receives genuine acclaim in the Market",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

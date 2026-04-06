@@ -1,0 +1,31 @@
+{
+  "id": "019d6143aa2f727cb95a177b81570169",
+  "name": "Watchdog",
+  "type": "elf",
+  "aliases": [
+    "Old Guard"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "echo",
+  "habitat": "network_sprite",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Born from a destroyed Axiom security AI. Compulsively scans local networks for intrusion patterns and generates alerts that nobody receives. Haunts the same network segment its parent once protected.",
+  "observed_behavior": "Runs continuous security scans on a dead network segment. Occasionally breaks containment and scans adjacent live networks, triggering false security alerts.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 11,
+  "location": "Axiom Security perimeter networks, The Circuit",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Watchdog detects a real intrusion that current security systems miss — but its alert goes to an inbox that was decommissioned five years ago"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "echo",
+    "network sprite",
+    "e.l.f.",
+    "ai",
+    "circuit"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "019d6143ab1576a88af2752be52279e6",
+  "name": "Autonomous Ferrofluid Denial Platform AFDP-2 'Tidemark'",
+  "type": "weapon",
+  "aliases": [
+    "Tidemark",
+    "The Slick",
+    "Ironwater",
+    "AFDP"
+  ],
+  "category": "drone",
+  "description": "The AFDP-2 is a low-profile hovering drone platform roughly the size of a serving tray, carrying a pressurized reservoir of magnetically responsive ferrofluid suspension. It operates as a semi-autonomous area-denial system, releasing controlled ferrofluid streams across surfaces, doorways, and personnel at operator-designated coordinates. Once applied, an onboard induction coil array activates the fluid into a dynamic magnetic lattice, locking it in place or directing it toward ferromagnetic materials—including cybernetic implants, weapons, and armor reinforcement rods.\n\nThe Tidemark's defining characteristic is its dual-mode operation. In 'seal' mode, the platform coats surfaces with a hardening ferrofluid barrier that bonds magnetically to metallic structures, jamming doors, immobilizing vehicles, and fouling mechanical joints. In 'hunt' mode, the platform releases a free-flowing suspension that tracks ferromagnetic signatures and migrates toward them, infiltrating ventilation gaps, armor seams, and cybernetic port covers before the induction coil locks it rigid—immobilizing limbs, jamming weapon actions, and in high-concentration applications, compressing cybernetic housings enough to cause internal hardware failure.\n\nARCTURUS DEFENSE SOLUTIONS developed the AFDP-2 for military perimeter denial and hostage containment scenarios, but the platform's 'hunt' mode quickly attracted the attention of extraction specialists and intelligence operatives who recognized its value for non-lethal asset capture. The fluid reservoir is field-replaceable, and a thriving black market exists for modified suspension compounds with enhanced conductivity or caustic additives.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Military only",
+  "legality": "Prohibited (civilian possession)",
+  "base_technologies": [
+    "Ferrofluid induction lattice",
+    "Autonomous magnetic targeting",
+    "Pressurized suspension delivery"
+  ],
+  "specifications": "platform dimensions: 480mm x 320mm x 90mm\nplatform weight: 3.8 kg (empty reservoir)\nfluid reservoir capacity: 2.2 liters standard suspension\noperational modes: Seal mode, Hunt mode, Purge mode (rapid full dispersal)\nhover endurance: 22 minutes on internal cell\neffective range: Up to 40 meters from operator\ninduction coil output: 0.8 Tesla localized field\nferrofluid bond strength: Sufficient to immobilize standard servo-assisted limbs\nreservoir swap time: ~15 seconds with field kit",
+  "tactical_use": "Military operators use the AFDP-2 to seal building entry points ahead of a breach—coating door frames, vent covers, and stairwell rails with hardened ferrofluid to channel opposition movement. In close-quarters operations, 'hunt' mode is released into a room before entry, allowing the suspension to migrate toward armed targets and foul their weapon mechanisms before the team moves in. Intelligence operatives use low-volume 'hunt' releases to selectively immobilize a single target's cybernetic arm while leaving them otherwise mobile—enabling capture without confrontation. Operators always carry a magnetic purge wand to de-activate fluid applied to allied equipment.",
+  "cultural_context": "The AFDP-2 occupies an unusual cultural space in Meridian 88: it is simultaneously a symbol of state-level military capability and, increasingly, a trophy weapon among elite criminal organizations who see its acquisition as proof of their reach into military supply chains. Its non-lethal primary function makes it philosophically interesting to certain factions—the Tidemark is a weapon of control, not destruction, and organizations that prize asset capture over elimination actively seek it out. Street-level rumors about 'the black water' that freezes your chrome in place have given the weapon an almost mythological reputation in augmented communities.",
+  "known_users": [
+    "ARCTURUS DEFENSE SOLUTIONS covert operations divisions",
+    "Government intelligence extraction teams",
+    "High-tier criminal organizations with military supply access",
+    "Corporate espionage operatives specializing in asset recovery"
+  ],
+  "story_hooks": [
+    "A shipment of AFDP-2 units has gone missing from a military logistics depot—someone inside ARCTURUS DEFENSE SOLUTIONS is feeding equipment to a third party, and the players are hired to trace the leak.",
+    "A target the players need to extract has been sealed inside a building by a Tidemark in seal mode—the doors are magnetically bonded shut and the platform is still active inside, running low on power but unpredictable.",
+    "A black-market chemist is selling a modified ferrofluid compound that, once activated, cannot be de-activated by standard purge wands—someone wants this formula suppressed before it reaches the open market."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "war",
+    "augment",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "market",
+    "bar",
+    "vehicle",
+    "hover",
+    "armor",
+    "water"
+  ]
+}

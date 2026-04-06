@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a6107bcab58a6a26142fe3b1",
+  "type": "character",
+  "name": "Fatoumata Belov-Ntim",
+  "aliases": [
+    "Ignite",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Structural breach and explosive ordnance specialist — demolitions expert",
+  "age": 29,
+  "status": "active",
+  "location": "The Spires — mid-level corporate residential towers",
+  "description": "Fatoumata Belov-Ntim is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a demolitions expert out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Fatoumata Belov-Ntim is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.33,
+      "id": 0.49,
+      "shadow": 0.55,
+      "mask": 0.89,
+      "ghost": 0.26
+    },
+    "core_fears": [
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "The perfect run — one job so clean it becomes legend",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Control — over their body, their schedule, their future"
+    ],
+    "coping_mechanisms": [
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Overwork — takes every contract offered because idleness invites thinking",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
+    ],
+    "secret": "Fatoumata Belov-Ntim is slowly going chrome-sick — rejection symptoms are manageable now but getting worse. Has maybe two years before it becomes visible."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Swears in three languages, often in the same sentence",
+      "Whispers when angry — the quieter the voice, the worse the situation"
+    ],
+    "example_lines": [
+      "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
+      "\"I don't blow things up. I perform structural rearrangement.\"",
+      "\"The blast radius is your problem. My problem is making sure there's a blast.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A high-paying contract turns out to target someone Fatoumata Belov-Ntim owes a personal debt to",
+    "A dead drop Fatoumata Belov-Ntim maintains is found and cleaned out — whoever did it now has leverage",
+    "Fatoumata Belov-Ntim's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "Fatoumata Belov-Ntim represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform. Vocal modulator — can replicate any voice after 30 seconds of sample audio",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Independent — works solo contracts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 9
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 10
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.47,
+      "caution": 0.72,
+      "loyalty": 0.84,
+      "greed": 0.19,
+      "empathy": 0.62
+    },
+    "drives": [
+      "survival",
+      "loyalty",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 7,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "mechanical aptitude — can repair or modify almost anything",
+      "strategic thinking under pressure",
+      "multilingual — speaks 4+ languages fluently"
+    ],
+    "weaknesses": [
+      "chronic insomnia affecting long-term performance",
+      "old injury that flares under specific conditions",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "demolitions expert",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Checks exits within 10 seconds of entering any room"
+    ],
+    "breaking_points": [
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
+      "Running out of options — no contacts, no money, no safe house, no way out"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Move-by-wire system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
+      "replaces": ""
+    },
+    {
+      "name": "Vocal modulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Vocal modulator — can replicate any voice after 30 seconds of sample audio",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Arsonist": 0.9,
+    "Risk Taker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

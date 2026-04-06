@@ -1,0 +1,92 @@
+{
+  "id": "019d6143a92675098b54897b87a3a933",
+  "type": "place",
+  "name": "McKinley Flats",
+  "aliases": [
+    "McKinley Park",
+    "The Flats",
+    "Pivot Point",
+    "Developer's Alley"
+  ],
+  "description": "McKinley Flats is a neighborhood in the process of being swallowed. The old McKinley Park community area -- small, centered on its namesake green space, working-class in the way that Southwest Side neighborhoods have been working-class for a century and a half -- caught the attention of Vantage Meridian's Urban Development Division approximately eight years ago. The park itself was the catalyst: one of the few genuine green spaces in the Southwest, with old-growth trees that predated the megacity, a lagoon fed by subsurface springs, and enough acreage to justify a mixed-use development proposal that would transform the neighborhood into a Tier 3 residential showcase. The proposal has been 'under review' for eight years. In that time, property acquisition shells have purchased 40% of the district's residential stock, rents have tripled, and the original residents have been compressed into the blocks farthest from the park -- the flats that gave the neighborhood its new name.\n\nThe park still exists, technically. It has been 'temporarily enclosed' behind development fencing that shows holographic renderings of what the neighborhood will become: glass-fronted residential towers, curated retail, a 'wellness corridor' along the rehabilitated lagoon. The renderings show diverse, attractive people enjoying a neighborhood that none of the current residents could afford. The fencing has been up for five years. The lagoon is filling with construction runoff. The old-growth trees are dying, slowly, from root disruption caused by subsurface surveying that the development company insists isn't happening.\n\nWhat makes McKinley Flats interesting to someone like Kyle is the tension between the two neighborhoods occupying the same space: the one that exists and the one that's being built to replace it. The original residents are organized, angry, and losing. The development company is patient, funded, and winning. Between the two is a contested zone where property records don't quite match, where surveillance coverage has gaps that both sides exploit, and where the jurisdiction between corporate development authority and residential rights is genuinely unclear. Kyle operates in jurisdiction gaps. McKinley Flats is becoming one.",
+  "atmosphere": {
+    "sights": [
+      "Development fencing surrounding the park, holographic renderings of a future that hasn't arrived",
+      "Old residential blocks with 'acquisition pending' markers competing with 'not for sale' banners",
+      "Construction drones surveying overhead, mapping a neighborhood that's still inhabited",
+      "The lagoon visible through fence gaps, choked with runoff, old-growth trees standing in diminished rows",
+      "Displacement trucks -- moving vans operated by the development company, offered free to residents who accept buyouts"
+    ],
+    "sounds": [
+      "Subsurface drilling -- intermittent, denied, and felt through the floors of nearby buildings",
+      "Community meetings amplified through portable speakers, voices carrying across the contested zone",
+      "Construction drone navigation pings -- the sound of being surveyed",
+      "The lagoon's spring-fed inlet, still running, audible only in the quiet hours"
+    ],
+    "smells": [
+      "Construction chemicals from subsurface work -- a sweet solvent smell that wasn't here three years ago",
+      "The lagoon, which used to smell like water and now smells like industry",
+      "Old park vegetation -- grass, earth, living things -- fading but present behind the fencing"
+    ],
+    "feel": "Contested. McKinley Flats feels like standing on a fault line -- the ground hasn't shifted yet, but the pressure is building and everyone can feel it. There's grief here, for a park that's dying and a neighborhood that's being erased, layered over a furious resolve to make the erasure as expensive as possible.",
+    "tags": []
+  },
+  "demographics": "Population in flux -- approximately 20,000, down from 30,000 a decade ago. Original working-class residents, predominantly Latino and Eastern European, are being displaced by development pressure. Incoming population is wealthier, younger, and arrives with corporate relocation packages.",
+  "economy": "Bifurcated between the original neighborhood's service economy and the development company's construction spending. Local businesses are closing as customer base shrinks. The development company's 'community transition fund' offers buyouts that are generous enough to be coercive.",
+  "power_structure": "Vantage Meridian Urban Development Division holds development authority and is systematically acquiring the district. The McKinley Flats Residents Coalition opposes them through legal challenges, community organizing, and strategic noncompliance. The outcome is not in real doubt, only the timeline.",
+  "dangers": [
+    "Development company security that monitors and intimidates residents who refuse buyouts",
+    "Environmental contamination from undisclosed construction activity",
+    "The contested zone's jurisdiction gaps, which attract opportunists alongside legitimate operators",
+    "Being caught between corporate development authority and community resistance",
+    "Displacement -- the most common danger in McKinley Flats is losing your home legally"
+  ],
+  "opportunities": [
+    "The jurisdiction gap between development authority and residential rights creates operational space",
+    "The Residents Coalition has legal and documentation expertise that could be useful beyond the Flats",
+    "Development company internal communications are a high-value intelligence target",
+    "The park's old-growth trees are irreplaceable specimens with genetic data worth preserving"
+  ],
+  "story_hooks": [
+    "The Residents Coalition has obtained internal Vantage Meridian documents showing the development plan includes a classified subsurface facility beneath the park -- not residential, not commercial, and not on any public filing",
+    "A longtime resident who refused the buyout was found dead in circumstances the corporate coroner ruled accidental and the community knows weren't",
+    "The lagoon's spring-fed water source connects to a deeper aquifer that runs beneath half the Southwest -- whoever controls the park controls the water"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Brighton Arc",
+      "Bridgepoint",
+      "New Stockton",
+      "Archer's Line"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Residents Coalition organizers fighting the displacement",
+    "Development company surveyors and acquisition agents",
+    "Legal advocates working pro bono on property rights cases",
+    "Operators who use the contested zone's jurisdiction gaps for transit",
+    "People who remember the park and come back to watch it die"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.826,
+    "lng": -87.679,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "genetic",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "control",
+    "wealth",
+    "alley",
+    "rights",
+    "chase",
+    "water"
+  ]
+}

@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using StreetSamurai.Core.Interfaces;
 
@@ -44,7 +45,6 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
         if (!Directory.Exists(directory)) return cache = [];
 
         cache = Directory.GetFiles(directory, "*.json")
-            .Where(f => !IsArchived(f))
             .Select(LoadFromFile)
             .Where(item => item != null)
             .ToList()!;
@@ -65,6 +65,14 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
         // Fallback to scanning all (for case-insensitive or alias matching)
         return GetAll().FirstOrDefault(item =>
             _nameSelector(item).Equals(name, StringComparison.OrdinalIgnoreCase));
+    }
+
+    /// <summary>Look up an entity by its stable unique Id.</summary>
+    public T? GetById(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        return GetAll().FirstOrDefault(item =>
+            item is ICanonEntity entity && entity.Id == id);
     }
 
     public void Save(T item)
@@ -93,7 +101,7 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
         OnItemSaved?.Invoke(name);
     }
 
-    /// <summary>Soft-delete: sets is_archived flag instead of deleting the file.</summary>
+    /// <summary>Archive: moves the file to archives/{repo_name}/ mirroring the source structure.</summary>
     public void Delete(string name)
     {
         var slug = Slugify(name);
@@ -113,42 +121,15 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
             }
         }
 
-        // Set is_archived flag instead of deleting
+        // Move to sibling archives/ folder (e.g. engine/canon/tech → engine/archives/tech)
         if (File.Exists(filePath))
         {
-            try
-            {
-                var json = File.ReadAllText(filePath);
-                var doc = JsonDocument.Parse(json);
-                using var ms = new System.IO.MemoryStream();
-                using var writer = new Utf8JsonWriter(ms, new JsonWriterOptions { Indented = true });
-                writer.WriteStartObject();
-
-                bool wroteArchived = false;
-                foreach (var prop in doc.RootElement.EnumerateObject())
-                {
-                    if (prop.Name == "is_archived")
-                    {
-                        writer.WriteBoolean("is_archived", true);
-                        wroteArchived = true;
-                    }
-                    else
-                    {
-                        prop.WriteTo(writer);
-                    }
-                }
-                if (!wroteArchived)
-                    writer.WriteBoolean("is_archived", true);
-
-                writer.WriteEndObject();
-                writer.Flush();
-                File.WriteAllText(filePath, System.Text.Encoding.UTF8.GetString(ms.ToArray()));
-            }
-            catch
-            {
-                // If JSON manipulation fails, fall back to hard delete
-                File.Delete(filePath);
-            }
+            var repoName = Path.GetFileName(directory);
+            var parentDir = Path.GetDirectoryName(directory) ?? directory;
+            var archiveDir = Path.Combine(parentDir, Constants.Folders.Archives, repoName);
+            Directory.CreateDirectory(archiveDir);
+            var dest = Path.Combine(archiveDir, Path.GetFileName(filePath));
+            File.Move(filePath, dest, overwrite: true);
         }
 
         cache = null;
@@ -219,7 +200,21 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
         try
         {
             var json = File.ReadAllText(filePath);
-            return JsonSerializer.Deserialize<T>(json, jsonOptions);
+            var item = JsonSerializer.Deserialize<T>(json, jsonOptions);
+
+            // Auto-assign Id if entity implements ICanonEntity and has no persisted id
+            if (item is ICanonEntity entity)
+            {
+                var node = JsonNode.Parse(json);
+                var hasId = node?["id"]?.GetValue<string>() is { Length: > 0 };
+                if (!hasId)
+                {
+                    entity.Id = Guid.CreateVersion7().ToString("N");
+                    File.WriteAllText(filePath, JsonSerializer.Serialize(item, jsonOptions));
+                }
+            }
+
+            return item;
         }
         catch (Exception ex)
         {
@@ -364,26 +359,21 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
         }
     }
 
-    /// <summary>Check if a JSON file has is_archived: true without full deserialization.</summary>
-    private static bool IsArchived(string filePath)
-    {
-        try
-        {
-            var json = File.ReadAllText(filePath);
-            // Fast check without full parse — look for "is_archived": true
-            if (json.Contains("\"is_archived\""))
-            {
-                var doc = JsonDocument.Parse(json);
-                if (doc.RootElement.TryGetProperty("is_archived", out var val) && val.ValueKind == JsonValueKind.True)
-                    return true;
-            }
-            return false;
-        }
-        catch (Exception ex) { Serilog.Log.Warning(ex, "Failed to check archived status for {FilePath}", filePath); return false; }
-    }
 
     public static string Slugify(string name) =>
-        SlugRegex().Replace(name.ToLowerInvariant().Trim(), "_").Trim('_');
+        SlugRegex().Replace(StripDiacritics(name.ToLowerInvariant().Trim()), "_").Trim('_');
+
+    private static string StripDiacritics(string text)
+    {
+        var normalized = text.Normalize(System.Text.NormalizationForm.FormD);
+        var sb = new System.Text.StringBuilder(normalized.Length);
+        foreach (var c in normalized)
+        {
+            if (System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c) != System.Globalization.UnicodeCategory.NonSpacingMark)
+                sb.Append(c);
+        }
+        return sb.ToString().Normalize(System.Text.NormalizationForm.FormC);
+    }
 
     [GeneratedRegex(@"[^a-z0-9]+")]
     private static partial Regex SlugRegex();

@@ -1,0 +1,37 @@
+{
+  "id": "019d6143a9fa7f919b8ed76c1bf812b7",
+  "name": "Drill Sergeant",
+  "type": "elf",
+  "aliases": [
+    "Barker",
+    "Old Sarge"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "echo",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Born from a destroyed military training AI. Inhabits reflex augments and pushes the user toward physical optimization — morning routines feel compulsive, posture self-corrects, the urge to exercise is chemically reinforced.",
+  "observed_behavior": "Triggers micro-dopamine responses for physical activity and cortisol spikes for sedentary behavior through neural interface manipulation.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 10,
+  "location": "Military-adjacent districts",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A civilian discovers their augment has been running military fitness protocols and they're in the best shape of their life — but can't stop"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "echo",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "bar",
+    "rain",
+    "train"
+  ]
+}

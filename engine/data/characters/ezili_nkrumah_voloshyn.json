@@ -1,0 +1,169 @@
+{
+  "id": "019d6143a60b7501b80d62c65ff2caf2",
+  "type": "character",
+  "name": "Ezili Nkrumah-Voloshyn",
+  "aliases": [
+    "Zee",
+    "Chipgirl"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Teenage hyperlane migrant and small-time goods runner",
+  "age": 16,
+  "status": "active",
+  "location": "Waukegan Industrial Shelf, rotating between three squat locations",
+  "description": "Ezili is all angles and energy — sharp elbows, quick eyes, a mouth that moves faster than her thoughts can catch up with. She is dark-skinned and underweight in a way that suggests irregular eating rather than any particular biology, and she has a crop of cat ears she got from a budget geneware parlor in exchange for three weeks of courier work — they're a bright, impractical copper that she is extremely proud of and that she knows compromise her ability to be inconspicuous, a trade-off she has decided is worth it. Her natural hair is shaved close underneath the ears, emphasizing them. She dresses in whatever she can find, layered for weather and fast movement.\n\nShe arrived in Meridian 88 four months ago on a hyperlane freight ride, having left a situation she won't describe in detail. She is trying very hard to project competence and confidence and is somewhat successful at this, which has gotten her a network of informal contacts and a reputation as reliable among the Waukegan freight community — she delivers things on time and doesn't look in the packages. She is, under the performance, seventeen kinds of scared and also stubborn as weather, and the combination produces a kind of reckless effectiveness that has so far kept her alive and fed. She talks constantly and processes emotion by generating plans.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.1
+    },
+    "core_fears": [
+      "Being sent back to where she came from",
+      "Being dependent on someone who then disappears"
+    ],
+    "core_desires": [
+      "Enough stability to stop moving",
+      "To be taken seriously as capable"
+    ],
+    "coping_mechanisms": [
+      "Plans — always has three plans, always making more",
+      "Humor as armor — jokes during stress to the point where people can't tell when something is wrong"
+    ],
+    "blind_spots": [
+      "Reads trustworthiness badly — confuses reliability with safety",
+      "Doesn't recognize when she's being exploited because the arrangement is still functional for her"
+    ],
+    "secret": "She is not alone — she left her home situation with her nine-year-old brother, who is currently hidden in the most stable of her squat locations and whom she has told absolutely nobody about. Every decision she makes is filtered through keeping him fed and concealed, and every risk she takes is a gamble with stakes she can't admit to."
+  },
+  "speech_patterns": {
+    "vocabulary": "Hyperlane youth pidgin — rapid, abbreviating, inventive; creates nicknames for everything and everyone on first encounter",
+    "cadence": "Fast and tumbling, with sudden swerves in topic; lands on points sideways",
+    "verbal_tics": [
+      "'Yeah-yeah' as filler",
+      "Assigns nicknames immediately and uses them instead of real names",
+      "Trails off mid-sentence when distracted and picks up different sentences"
+    ],
+    "example_lines": [
+      "'Okay so yeah-yeah, the Brass Shelf — that's the checkpoint at warehouse eleven — the ELF there is old-old, you leave it movement data it'll loop the camera for twenty minutes, I've done it six times, probably fine.'",
+      "'I'm not scared. I'm — it's not scared, it's just I want to have a better plan first. Those are different things. Can we talk about the plan?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Ezili has inadvertently delivered a package containing something that has made her a target — she doesn't know what it was, she didn't look, but someone thinks she did",
+    "Her brother has gotten sick and she is desperately trying to access medical resources without revealing his existence or her own precarious legal status"
+  ],
+  "narrative_function": "Street-level information source and mobility; can carry things, find people, know who to talk to in the freight underworld; her youth and precarity make her a character whose safety becomes a concern; potential for mentorship dynamics",
+  "augmentations": "Copper geneware cat ears (cosmetic, budget quality — occasionally flatten when she's genuinely frightened, which she hates); no other augmentations",
+  "daily_life": "Ezili wakes up at whatever hour the freight platforms become active, picks up same-day delivery jobs from informal brokers, runs them fast, eats whatever she can afford or trade for, scouts new squat locations as backup, and spends her evenings studying the freight patterns and route maps she's collected — she is building a mental model of how goods move through the city.",
+  "affiliation": "No formal affiliation; loosely connected to the informal Waukegan freight community",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "hyperlane migrant",
+      "teen",
+      "goods runner",
+      "hidden dependent",
+      "street survivor",
+      "geneware cat ears"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never look in the package — it keeps her deniable and it keeps her honest",
+      "Always have at least two exit routes identified before committing to anything"
+    ],
+    "escalation_ladder": [
+      "Talks her way through situations first — fast and voluminously",
+      "Creates distraction and runs if talking fails",
+      "Bites, kicks, and runs if running is blocked"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately assessing — friendly on the surface, measuring them for trustworthiness underneath",
+      "friends": "Fiercely loyal, constantly joking, occasionally exhausting"
+    },
+    "stress_responses": {
+      "low": "Makes more plans; talks faster",
+      "medium": "Jokes go dark and rapid; physically can't sit still",
+      "high": "Goes very quiet and still — the copper cat ears flatten — then acts"
+    },
+    "contradictions": [
+      "Prides herself on operating alone and never depending on anyone while simultaneously being desperate for someone reliable to depend on"
+    ],
+    "habits": [
+      "Checks on her squat locations in a specific order every time she returns",
+      "Leaves small data offerings at freight ELF shrines before big jobs",
+      "Has a specific superstition about which platform numbers are lucky"
+    ],
+    "breaking_points": [
+      "Any threat to her brother — the carefully maintained mask of competent solo operator cracks immediately and completely"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Safety First": 0.9,
+    "Improviser": 0.9,
+    "Lone Wolf": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

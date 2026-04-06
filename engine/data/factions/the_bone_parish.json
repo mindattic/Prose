@@ -1,0 +1,60 @@
+{
+  "id": "019d6143a88c7935a96629da7f1fecc3",
+  "type": "faction",
+  "name": "The Bone Parish",
+  "aliases": [
+    "The Parish",
+    "Boneheads",
+    "The Congregation"
+  ],
+  "motto": "We remember what you buried.",
+  "description": "The Bone Parish is a gang of about ten augment strippers who operate in Detroit with a disturbing specialty: they harvest augments from the dead. Graveyards, morgues, disaster sites, combat zones — anywhere bodies accumulate, the Bone Parish appears. They're not fighters or kidnappers like the Skinners in Cleveland. They're ghouls. They dig up the recently buried, bribe morgue attendants, and follow the sound of gunfire to collect the freshly killed before anyone else can claim the chrome.\n\nThe crew is tiny but efficient. Ten members with a clear division of labor: two scouts who track deaths and burials, three extraction technicians who remove augments, two logistics handlers who transport and store the harvest, and three salespeople who move the product through black-market channels. They operate out of a condemned funeral home in Detroit's East English Village — a location chosen for its macabre appropriateness and its ready access to embalming chemicals that help preserve extracted augments.\n\nThe Bone Parish occupies a unique ecological niche. Their supply is consistent — people with augments die every day — and their overhead is low because their donors don't fight back. The augments they recover are often in better condition than what the Skinners pull from living victims, because the Parish takes its time and doesn't have to work around a struggling patient. They've developed a reputation for quality product, which generates steady business from chop shops and gray-market clinics.\n\nEveryone despises them. Even criminals who deal in stolen augments find the Bone Parish distasteful. The crew doesn't care. They've embraced the revulsion as a form of protection — nobody wants to be associated with them, which means nobody pays close attention to their movements.",
+  "ideology": "The dead don't need chrome. The Bone Parish frames their work as recycling — returning valuable technology to circulation rather than letting it rot underground. This is self-serving rationalization and they know it, but it's enough to let them sleep at night. Barely.",
+  "territory": "Detroit's East English Village, centered on a condemned funeral home. Operational range covers all of Detroit and extends to Cleveland and Chicago for major recovery opportunities.",
+  "leadership": "",
+  "methods": [
+    "Grave recovery — exhuming recently buried augmented individuals to harvest their cyberware",
+    "Morgue access — bribing attendants and staff for access to augmented corpses before processing",
+    "Combat trailing — following the aftermath of violence to harvest augments from casualties",
+    "Technical extraction — careful removal of augments from deceased donors using proper surgical technique",
+    "Preservation — using embalming chemicals and specialized storage to maintain augment quality",
+    "Black-market sales — moving harvested augments through established underground channels"
+  ],
+  "resources": [
+    "Ten specialized members with clearly defined operational roles",
+    "A condemned funeral home with preservation equipment and surgical facilities",
+    "Relationships with morgue staff, cemetery workers, and disaster responders across Detroit",
+    "Embalming chemicals and preservation compounds for augment storage",
+    "Black-market distribution network for harvested cyberware",
+    "Social invisibility — nobody watches the people who deal with the dead"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "",
+  "story_hooks": [
+    "The Bone Parish harvested an augment from a corpse that wasn't quite dead — the donor survived and wants their chrome back",
+    "A funeral home recovery uncovered a body with augments that contain encrypted data — someone powerful wants that data and knows the Parish took it",
+    "The Parish is being hired to stage deaths so that specific augments can be 'recovered' from living people who want to disappear",
+    "A mass casualty event created a harvest opportunity so large that multiple factions are competing for the chrome — and the Parish was there first",
+    "One of the Parish's regular morgue contacts has been feeding them bodies that were murdered specifically for their augments — the Parish is now complicit in a killing operation"
+  ],
+  "tags": [
+    "faction",
+    "violence",
+    "combat",
+    "gun",
+    "war",
+    "gang",
+    "death",
+    "augment",
+    "cyberware",
+    "ai",
+    "elf",
+    "power",
+    "clinic",
+    "market",
+    "bar",
+    "night",
+    "fire"
+  ]
+}

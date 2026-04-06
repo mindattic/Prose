@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a6447a1aa5cab8c6fde20a47",
+  "type": "character",
+  "name": "Kgomotso Arriola-Engebretsen",
+  "aliases": [
+    "Kgomo",
+    "The Old Engine"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Independent mechanic specializing in legacy vehicle systems, Geartown",
+  "age": 61,
+  "status": "active",
+  "location": "Geartown — owns and operates Arriola's Bay, a three-bay garage on Ironvein Spur Street",
+  "description": "Kgomo is built like something that was designed to take a load and did. He's massive across the shoulders in the way of a man who has been lifting engines since before most people reading this were born, with a belly that has arrived in the last decade and which he regards with philosophical detachment. His Batswana-Norwegian heritage has given him dark brown skin sun-cured to near-black at the forearms, close-cropped white hair, and a beard he maintains with the same precision he applies to torque specifications. His right arm from the elbow down is industrial-grade chrome — a work accident at forty-three that he replaced with the best mechanical limb he could afford (not very, at the time) and has since upgraded three times. It is visibly mismatched: different grades of metal, a panel that's clearly from a different model year. He considers it charming.\n\nKgomo is not warm in the way of someone who performs warmth. He is warm in the way of a specific tool that has been exactly right for the job so many times that you trust it completely. He has opinions about everything, delivers them once, and does not repeat himself. He has been repairing vehicles in Geartown for thirty years and knows which machines can be saved and which are already gone — a judgment he applies, somewhat unsubtly, to people as well.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "The garage failing — being the last thing he built that couldn't be saved",
+      "His body failing before the work is done"
+    ],
+    "core_desires": [
+      "Mastery recognized on its own terms, without having to argue for it",
+      "His apprentice to be better than him — not as good, better"
+    ],
+    "coping_mechanisms": [
+      "Work as identity structure",
+      "Dark humor applied to everything including himself"
+    ],
+    "blind_spots": [
+      "Dismisses problems he can't solve mechanically as problems that probably deserve to exist",
+      "Cannot see when his bluntness shuts people down rather than cutting to the useful truth"
+    ],
+    "secret": "He was present — as a young mechanic doing contract work — when a Ferrogate Transit vehicle was modified illegally, and that modification contributed to a rail accident that killed nine people in 2176. He was not responsible for the modification. He knew about it. He said nothing. He has lived with this for twenty-four years. The Ferrogate grudge is not about money."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense with mechanical jargon, proverbs delivered deadpan, occasional Setswana when irritated",
+    "cadence": "Deliberate. Economy of words. Long silences that mean he is deciding whether something is worth saying.",
+    "verbal_tics": [
+      "'Mm.' as a full sentence",
+      "Refers to machines as 'she' regardless of what the machine is"
+    ],
+    "example_lines": [
+      "'She's not dying. She's telling you she's been ignored. Those are different problems and only one of them is yours.'",
+      "'I'll tell you once what I think. After that, you're on your own.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Something came into the bay for repair that he recognized — a vehicle modification he has not seen in twenty-four years. He needs to know who brought it in and where they got the parts.",
+    "His apprentice has gone missing. Kgomo has not reported it to anyone official. He is handling it himself, badly, because he does not trust official."
+  ],
+  "narrative_function": "Mechanical resource and Geartown local authority. Can repair, modify, or assess almost any vehicle or mechanical system. Source of Geartown neighborhood history and old grudges. May hire players for retrieval of parts or information. Has seen enough to be useful as a reluctant informant.",
+  "augmentations": "Right arm prosthetic from elbow down (industrial grade, visibly multi-generation, chrome-and-matte-black mismatched panels); joint reinforcement in both knees (budget medical, done at a clinic in The Narrows).",
+  "daily_life": "Opens the bay at 0600. Works until his knees require it to be otherwise, usually around 1900. Eats lunch at the same Bolivian-Thai cart on Ironvein Spur at 1200 every day. Has an apprentice — a nineteen-year-old he hasn't fired yet, which he considers a compliment.",
+  "affiliation": "Independent; Geartown mechanic's cooperative (informal); old grudge with Ferrogate Transit's maintenance contracting division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 4,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "skilled tradesperson",
+      "Geartown fixture",
+      "moral wound",
+      "reluctant witness",
+      "old-school"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If it can be fixed, fix it; if it can't, say so clearly and let people grieve",
+      "Never do work he doesn't stand behind — his name is on every repair"
+    ],
+    "escalation_ladder": [
+      "One clear statement of the problem",
+      "Refusing to continue the conversation",
+      "Physical intervention if someone is damaging his property or his people",
+      "Absolute nuclear option: tell someone something true that he has been holding for a long time"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and noncommittal — quotes a price, asks what's wrong, doesn't elaborate on himself",
+      "friends": "Blunt and reliable, shows up without being asked, never says 'I love you' but will drive three hours to bring you a part"
+    },
+    "stress_responses": {
+      "low": "Works more quietly than usual",
+      "medium": "Gets methodical to the point of rigidity — everything in its exact place",
+      "high": "Goes to the garage alone at 0300 and works until it's resolved or he collapses"
+    },
+    "contradictions": [
+      "Claims not to care what people think of him, has a shelf of handwritten notes from satisfied customers that he rereads when no one is watching"
+    ],
+    "habits": [
+      "Tests every tool at the start of a day — not because they need it, because it makes him feel that things are in order",
+      "Keeps a small iron figure of Ogun on the bay wall — old habit from a Geartown neighbor, not his tradition but he's kept it for twenty years"
+    ],
+    "breaking_points": [
+      "Someone hurting his apprentice",
+      "Someone using his garage for something that gets a person killed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown, Batswana-Norwegian heritage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began working as a mechanic's assistant in Geartown's contract yards",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witness to the illegal Ferrogate modification; says nothing. Nine people die in the subsequent rail accident.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Work accident costs him his right arm; opens Arriola's Bay the following year on insurance and debt",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Takes on his current apprentice",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

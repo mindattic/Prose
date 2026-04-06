@@ -1,0 +1,71 @@
+{
+  "id": "019d6143a85f7a21897e1521d1a4f95e",
+  "name": "Lazarus Pharmaceuticals Coagulant Surge Patch",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Coagulant Surge Patch",
+  "type": "equipment",
+  "aliases": [
+    "Surge Patch",
+    "Clot Pack",
+    "Red Stamp",
+    "The Lazarus Slap"
+  ],
+  "category": "medical",
+  "description": "The Coagulant Surge Patch is a single-use topical trauma device designed to halt catastrophic hemorrhage within seconds of application. Beneath its adhesive polymer backing lies a layered matrix of synthetic fibrinogen accelerators, vasoconstrictor microspheres, and a pressure-reactive foam substrate that expands on contact with blood to physically occlude wound channels. Once slapped onto a wound site, the patch reads ambient moisture and temperature to calibrate its release rate, delivering a cascade of clotting agents tuned to the severity of bleeding detected.\n\nWhat distinguishes the Surge Patch from cheaper field dressings is its dual-action chemistry: while the outer layer seals surface tissue, a secondary sublayer releases a mild nerve-dampening compound that reduces pain signaling at the wound site without impairing motor function. This allows a wounded operator to remain combat-capable for an additional window of roughly twenty to forty minutes before the analgesic wears off and true triage becomes unavoidable. The patch's bright crimson packaging — a Lazarus Pharmaceuticals trademark — is instantly recognizable in low-light environments.\n\nThe Surge Patch is a staple of street-level fixers, mercenary teams, and anyone who operates in environments where a trauma surgeon is not an option. Corporate security details carry them as standard-issue backup. In the undermarket, counterfeit versions circulate widely, often using degraded fibrinogen compounds that cause delayed clotting failure hours after application — a known hazard that has earned the fakes the nickname 'false stamps.'",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Synthetic fibrinogen acceleration",
+    "Pressure-reactive polymer foam",
+    "Vasoconstrictor microsphere delivery",
+    "Ambient biosensing chemistry",
+    "Topical nerve-dampening compounds"
+  ],
+  "specifications": {
+    "dimensions": "12cm x 9cm patch, 4mm compressed thickness",
+    "weight": "38g per unit",
+    "activation": "Peel-and-press, self-activating on contact with biological fluid",
+    "clotting_onset": "4–9 seconds under standard conditions",
+    "analgesic_window": "20–40 minutes post-application",
+    "wound_size_rating": "Effective on lacerations and punctures up to 6cm diameter",
+    "shelf_life": "36 months sealed, 6 hours once packaging is broken",
+    "single_use": "true"
+  },
+  "tactical_use": "Applied one-handed under fire to arrest bleeding on limbs, torso, or neck. Operators are trained to apply and immediately re-engage rather than stop for extended first aid. The analgesic layer is specifically valued for maintaining trigger discipline after injury. Not suitable for internal bleeding or crush injuries — field medics use it as a stabilizer before more comprehensive treatment.",
+  "cultural_context": "The Surge Patch has become something of a cultural shorthand in Meridian 88's underclass for self-reliance in the absence of institutional care. Wearing a used patch wrapper as a wristband is a minor street affectation among gang members and runners — a signal that you've taken damage and kept moving. Lazarus Pharmaceuticals leans into this image in their street-level marketing, using the tagline 'You don't stop.' Corporate HR departments quietly bulk-purchase them for 'off-the-books' security operations, keeping no medical records attached.",
+  "known_users": [
+    "Street-level fixers",
+    "Mercenary field operators",
+    "Corporate black-site security",
+    "Gang medics",
+    "Undermarket couriers",
+    "Aria Voss (independent contractor, Sector 7)",
+    "The Patchwork Boys (Meridian 88 gang, known for visible patch-wrapper jewelry)"
+  ],
+  "story_hooks": [
+    "A batch of counterfeit Surge Patches with delayed clotting failure has entered circulation in the Underbelly — someone is deliberately seeding them into medic supply chains, and bodies are turning up hours after apparently successful field treatment.",
+    "Lazarus Pharmaceuticals is quietly recalling a specific lot number after discovering a manufacturing error causes the nerve-dampening compound to persist for days rather than hours, leaving users with partial numbness — but the recall notice hasn't reached the street.",
+    "A player character finds a used Surge Patch at a crime scene with a rare chemical marker indicating it came from a corporate black-site medical locker — evidence that a 'civilian' incident was actually a sanctioned operation."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "combat",
+    "crime",
+    "gang",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "injury",
+    "pain",
+    "market",
+    "rain",
+    "train",
+    "chase",
+    "fire",
+    "tier 1"
+  ]
+}

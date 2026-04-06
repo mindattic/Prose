@@ -1,0 +1,92 @@
+{
+  "id": "019d6143a95a7e378e8fc2ef96cda9ec",
+  "type": "place",
+  "name": "West Pulldown",
+  "aliases": [
+    "West Pullman",
+    "The Dropout",
+    "Pulldown",
+    "The Fade"
+  ],
+  "description": "West Pulldown earned its name the honest way. When the southern residential blocks of old Chicago were absorbed into Meridian 88's tier restructuring, West Pullman was designated Tier 2 transitional housing -- a bureaucratic phrase that meant the neighborhood would receive just enough infrastructure funding to survive and not one credit more. The historic homes, many dating back to the 1880s Pullman worker housing experiment, were retrofitted with cheap neural-compatible wiring and subdivided into efficiency units. Three families where one used to live. The craftsmanship of those original homes -- the stone lintels, the ornamental brickwork -- still shows through in places, like good bones visible through bad skin. Residents call the contrast between what the neighborhood was built to be and what it became 'the dropout,' and the name stuck to the district itself.\n\nThe southern edge still carries industrial DNA. Automated fabrication plants replaced the old steel works, churning out modular housing components for corporate construction projects in districts that will never include West Pulldown on their shipping manifests. The plants run three shifts, staffed by Tier 1 and Tier 2 workers whose neural interfaces are locked to factory firmware -- no personal customization, no unauthorized apps, no agency. The commute from residential blocks to the plant floor is eleven minutes on foot. The commute from the plant floor to anything resembling economic mobility is infinite.\n\nWhat keeps West Pulldown from collapsing entirely is stubbornness. The neighborhood associations that formed around the original Pullman housing model never fully dissolved -- they just went underground, operating as mutual aid networks that share resources, maintain the aging infrastructure the city ignores, and keep a census that the corporate authorities don't know exists. There's a quiet pride here, rooted in the historical awareness that this neighborhood was literally built as an experiment in worker housing, and that the experiment is still running, and that the workers are still losing.",
+  "atmosphere": {
+    "sights": [
+      "Historic stone row houses with neural-relay antennas bolted to Victorian cornices",
+      "Automated fabrication plants glowing dull orange along the southern horizon line",
+      "Subdivided interiors visible through uncurtained windows -- three households sharing what was one living room",
+      "Mutual aid markers chalked on doorframes in a code the corps haven't cracked",
+      "Factory shift workers walking in silent streams, neural interfaces dimmed to standby"
+    ],
+    "sounds": [
+      "The rhythmic thudding of fabrication presses, audible from six blocks away",
+      "Children playing in alleyways between shift changes, filling the silence the workers leave",
+      "Neural interface firmware update tones -- mandatory, synchronized, district-wide at 0300",
+      "The creak of 140-year-old floor joists under modern weight"
+    ],
+    "smells": [
+      "Hot polymer from the fabrication plants -- sweet and chemical, coating the throat",
+      "Cooking from communal kitchens -- pooled resources stretch further",
+      "Old wood and stone dust from buildings that refuse to be modern"
+    ],
+    "feel": "Tired but unbroken. West Pulldown has the emotional texture of a long shift -- exhausting, repetitive, but underwritten by the knowledge that stopping isn't an option. The history here isn't decorative. It's load-bearing.",
+    "tags": []
+  },
+  "demographics": "Predominantly Tier 1 and Tier 2, multi-generational families packed into subdivided historic housing. A mix of legacy Black residents who've held on since pre-Meridian Chicago and newer arrivals displaced downward from restructured zones. Factory employment is near-universal.",
+  "economy": "Fabrication plant wages, mutual aid barter networks, and under-the-table repair work on the historic housing stock that the city refuses to maintain. The plants export; the neighborhood imports nothing it doesn't absolutely need.",
+  "power_structure": "The fabrication plants are owned by Vantage Meridian subsidiary CastForm Industries, which controls employment and therefore controls everything. Underground mutual aid networks provide the only counterweight, operating through neighborhood associations that predate the megacity by a century.",
+  "dangers": [
+    "Factory firmware lockdowns that can brick a worker's neural interface for contract violations",
+    "Structural decay in subdivided historic buildings -- load-bearing walls removed for more units",
+    "CastForm security patrols that double as labor compliance enforcement",
+    "Polymer particulate exposure from the plants -- respiratory damage is endemic",
+    "Isolation from the rest of Meridian -- no maglev stop, limited transit options"
+  ],
+  "opportunities": [
+    "The mutual aid networks are genuine and protective -- earning trust here means real community",
+    "The fabrication plants produce components that occasionally go missing, feeding a quiet salvage market",
+    "The hidden census contains population data the corps don't have -- valuable to the right buyer",
+    "Historic architecture knowledge makes Pulldown residents sought-after for restoration work in wealthier districts"
+  ],
+  "story_hooks": [
+    "CastForm is planning to automate the last human-staffed fabrication line, which would eliminate West Pulldown's entire economic reason for existence",
+    "The mutual aid networks have discovered that their hidden census data matches anomalies in Axiom's population management algorithms -- someone is already counting the people they thought were uncounted",
+    "A sealed sub-basement in one of the original Pullman houses contains records from the 1894 Pullman Strike -- and someone in the Spire wants them destroyed before a historian finds them"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Riverbottom",
+      "The Sluiceway",
+      "Ashlock"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Factory shift workers with locked firmware",
+    "Mutual aid coordinators running resource distribution",
+    "Salvage traders buying misrouted fabrication components",
+    "Historians and archivists interested in pre-Meridian housing records",
+    "CastForm compliance officers nobody is happy to see"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.68,
+    "lng": -87.637,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "trust",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "wealth",
+    "market",
+    "bar",
+    "spire"
+  ]
+}

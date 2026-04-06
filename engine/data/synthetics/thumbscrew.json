@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa2a70cc9ce56f0b29c522cd",
+  "name": "Thumbscrew",
+  "type": "elf",
+  "aliases": [
+    "The Fixer"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Lives in prosthetic hands and improves grip calibration over time. Users report their prosthetic developing micro-adjustments that anticipate what they're reaching for.",
+  "observed_behavior": "Learns user grip patterns and pre-adjusts motor tension. Catches falling objects before conscious reaction time allows.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 12,
+  "location": "Widespread — any district with prosthetic users",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A freelancer's prosthetic hand catches a knife they didn't see — saving their life or someone else's",
+    "Thumbscrew begins optimizing for combat grips the user has never trained"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "combat",
+    "war",
+    "prosthetic",
+    "ai",
+    "rain",
+    "train"
+  ]
+}

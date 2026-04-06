@@ -1,0 +1,196 @@
+{
+  "id": "019d6143a707762ebf6f2a3a80f1d940",
+  "type": "character",
+  "name": "Tsira Obumseli-Magnúsdóttir",
+  "aliases": [
+    "Twig"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "truant message runner, Tier 1",
+  "age": 9,
+  "status": "active",
+  "location": "The Narrows, Blackpipe Corridor",
+  "description": "Tsira is a rail-thin nine-year-old with close-cropped hair dyed the faded orange of someone who found a half-spent pigment cartridge and made the most of it. Her skin is deep brown, her eyes wide-set and alert, always tracking exits. She moves through Blackpipe Corridor like water through pipe joints — fast, quiet, and always finding the crack that leads somewhere else. She wears an oversized salvage-canvas vest with too many pockets, each one holding something she might need or trade.\n\nShe has been running messages for the pipe-stall vendors of Blackpipe for two years, since she was old enough to memorize a route without writing it down. She doesn't fully understand most of what she carries — folded slips of laminate, tiny beaded data-threads, once a tooth — but she understands that delivering on time means eating, and late means the cold corner by the effluent drain. She is cheerful with the intensity of someone who has decided cheerfulness is a survival tool.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "being forgotten entirely",
+      "losing the alcove — her only stable ground"
+    ],
+    "core_desires": [
+      "enough food that she stops counting bites",
+      "someone who notices she is smart"
+    ],
+    "coping_mechanisms": [
+      "humor as deflection",
+      "hypervigilant route-planning so she always knows the way out"
+    ],
+    "blind_spots": [
+      "trusts repeat customers too quickly once they've paid on time twice"
+    ],
+    "secret": "She has memorized the contents of three messages she was told were blank. She doesn't know what to do with what she knows but she keeps it, like a coin she found."
+  },
+  "speech_patterns": {
+    "vocabulary": "Street-clipped, inventive slang, mispronounces technical words confidently",
+    "cadence": "Fast and bouncing, sentences often trail into a question even when they aren't one",
+    "verbal_tics": [
+      "'yeah-no'",
+      "clicking tongue between thoughts"
+    ],
+    "example_lines": [
+      "Yeah-no I know where Vessel-court is, I been there before you were awake.",
+      "You want fast or you want safe? Can't always be both, cost you extra for both."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of the messages she memorized contains coordinates she doesn't understand — someone has noticed she knows",
+    "She's been asked to carry something by a new client and the weight is wrong for what they said it was"
+  ],
+  "narrative_function": "Local color and unexpected information courier; knows the physical layout of Blackpipe better than anyone; can be a quest hook when she accidentally carries something dangerous; embodies the texture of Tier 1 child survival without being purely tragic",
+  "augmentations": "None. Wants cat ears someday, has strong opinions about which color.",
+  "daily_life": "Up before the district lights cycle on, runs four to seven message routes through Blackpipe and into the lower Narrows, spends afternoons haunting the stall of Auntie-vendor Pelé who sometimes feeds her in exchange for sweeping, sleeps in a dry maintenance alcove she shares with two older kids.",
+  "affiliation": "Informal network of Blackpipe Corridor market vendors",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-smart",
+      "spatial memory",
+      "scrappy",
+      "pre-literate runner economy"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If a client has paid on time twice, extend credit of trust",
+      "Never enter a space with only one exit unless the pay is very good"
+    ],
+    "escalation_ladder": [
+      "Tries to talk her way through — jokes, distracts, claims she's lost",
+      "Drops the package and runs if talking fails",
+      "Screams the vendor-network alarm phrase if cornered"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Friendly face, watching hands and feet, ready to bolt",
+      "friends": "Loud, generous with small things, will give you her last dry biscuit without being asked"
+    },
+    "stress_responses": {
+      "low": "Hums tunelessly and moves faster",
+      "medium": "Goes very quiet and very still for ten seconds then explodes into motion",
+      "high": "Runs first, processes second, cries later when alone"
+    },
+    "contradictions": [
+      "Presents as carefree but has a mental ledger of every debt, favor, and slight going back two years"
+    ],
+    "habits": [
+      "Counts her pockets before sleep",
+      "Names the E.L.F.s in every device she passes — has given them all names she uses consistently"
+    ],
+    "breaking_points": [
+      "Discovering a trusted repeat client used her as an unknowing drug mule"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Safety First": 0.9,
+    "Improviser": 0.9,
+    "Lone Wolf": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 7 — parents split apart, mother took work in Ferrogate Transit maintenance tunnels, contact became irregular",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 7.5 — began sleeping in the alcove with older kid named Crow who taught her the route system",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 8 — Crow aged out and moved on; Tsira inherited the routes",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 9, present — running solo, known by name to eleven vendor stalls",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

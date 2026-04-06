@@ -1,0 +1,182 @@
+{
+  "id": "019d6143a6377d78a14438af63cae902",
+  "type": "character",
+  "name": "Iskander Mbeki-Ó'Treasaigh",
+  "aliases": [
+    "Skander",
+    "Blight"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street kid, gang prospect (junior), The Narrows",
+  "age": 13,
+  "status": "active",
+  "location": "The Narrows, Copperhead border",
+  "description": "Iskander is all sharp angles and nervous energy, a thin boy with dark olive skin, a shaved head that's grown out uneven, and a jaw that's set in a permanent expression somewhere between defiance and plea. His left eye has a cosmetic mod — a slit pupil in amber, gift from an older gang prospect who found it in a pawn bin and thought it was funny — that he wears with more pride than anything else he owns. He has a long scar across his right palm that he tells different stories about every time someone asks. He smells of the cheap rehydrated noodles sold from the Narrows carts, and his jacket has someone else's name stenciled on the inside lining.\n\nIskander is auditioning for membership in the Copperhead Lacunae — a street organization that controls mid-tier contraband flow through the Narrows — and he knows it's an audition. He's smart enough to know that being smart isn't enough here; he's trying to learn what enough looks like. He runs small errands, holds packages he's not allowed to look inside, laughs at the right moments. Underneath this performance he is a child who has not slept in a bed with clean sheets in two years and who is starting to forget that this isn't just how things are.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.3,
+      "id": 0.6,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being nobody — not dangerous, not useful, not remembered",
+      "That the life he's heading into is the only one available to him"
+    ],
+    "core_desires": [
+      "To belong somewhere that doesn't feel like waiting to be discarded",
+      "To stop being afraid without having to pretend he isn't"
+    ],
+    "coping_mechanisms": [
+      "Elaborate false bravado, performed constantly",
+      "Collecting small objects that feel like proof he exists — a transit chip, a broken watch, a label from a food he liked"
+    ],
+    "blind_spots": [
+      "Cannot see that the Lacunae senior members view him as disposable",
+      "Mistakes attention for affection"
+    ],
+    "secret": "He can read well — very well, better than most adults in his orbit — and he hides this. He found a cache of physical books in an abandoned space and visits it alone. He doesn't know why hiding it feels necessary, but he does."
+  },
+  "speech_patterns": {
+    "vocabulary": "Narrows street slang, lots of clipped aggressive shorthand, but occasionally drops into a different, more careful register when he forgets to perform",
+    "cadence": "Rapid and hard when performing toughness; slower and halting when he's caught off-guard into honesty",
+    "verbal_tics": [
+      "'You know' as filler, used aggressively like punctuation",
+      "Laughs before he agrees to things, as if it was his idea"
+    ],
+    "example_lines": [
+      "'Package? Yeah, you know, I held a package. That's nothing. I do that. That's just — you know — that's nothing.'",
+      "'There's a word for that. For what you're describing. I don't — I just heard it somewhere.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He overheard something during a package run that he absolutely was not supposed to hear — and the Lacunae senior who gave him the run knows he might have heard it",
+    "His cache of hidden books includes one that turns out to be a coded ledger from a previous generation of Narrows operators — and someone is now looking for it"
+  ],
+  "narrative_function": "Humanizes the street gang pipeline; shows how children get recruited not through ideology but through proximity and need. Potential rescue target, moral weight, or unexpected ally for characters navigating the Narrows.",
+  "augmentations": "One cosmetic slit-pupil mod in left eye (pawn-bin grade, occasionally glitches to fully dilated); no other mods",
+  "daily_life": "Wakes when he wakes in whatever squat the Lacunae prospects are using, does whatever task is assigned — usually package holding, lookout, or running small parcels — eats when there's food, spends evenings near the older prospects hoping to be noticed.",
+  "affiliation": "Copperhead Lacunae (prospect, unconfirmed), no formal affiliation",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Gang-Prospect",
+      "Street-Runner",
+      "Hidden-Reader",
+      "Bravado-Armored",
+      "Disposable-Asset"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always act like this was your plan",
+      "Don't let them see you don't know something",
+      "Stay close to the people who seem safest; back away slowly from everything else"
+    ],
+    "escalation_ladder": [
+      "Aggressive posturing and loud affiliation-dropping",
+      "Appealing to an older Lacunae member as a shield",
+      "Running — he is extremely fast and knows the Narrows better than anyone twice his age"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately performs toughness and affiliation; assesses whether they're a threat or a mark within thirty seconds",
+      "friends": "Drops the volume significantly; occasional odd gentleness that surprises people who've only seen the performance"
+    },
+    "stress_responses": {
+      "low": "Gets louder and more aggressive-talking",
+      "medium": "Goes quiet and watches carefully",
+      "high": "Runs"
+    },
+    "contradictions": [
+      "Performs not caring about anything while secretly and carefully maintaining his hidden book cache",
+      "Claims loyalty to the Lacunae while instinctively protecting strangers who remind him of himself"
+    ],
+    "habits": [
+      "Checks the slit-pupil eye in any reflective surface he passes",
+      "Adds to his small object collection when stressed",
+      "Leaves tiny offerings at Narrows E.L.F. shrines — not out of faith but because everyone does and he wants to fit in, and then started meaning it"
+    ],
+    "breaking_points": [
+      "Watching someone younger than him be treated the way he's treated",
+      "Being called stupid"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9,
+    "Pragmatist": 0.9,
+    "Enforcer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

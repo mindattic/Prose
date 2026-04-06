@@ -1,0 +1,201 @@
+{
+  "id": "019d6143a6e6717085f56f83bedcf1df",
+  "type": "character",
+  "name": "Séverine Atabay-Dlamini",
+  "aliases": [
+    "Sev",
+    "The Notary"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Identity fabricator and document forger serving The Narrows",
+  "age": 38,
+  "status": "active",
+  "location": "The Narrows — back room of a legitimate print and copy shop called Clearscript, on the corner of Ironvein Passage",
+  "description": "Séverine has the kind of face that is difficult to hold in memory — medium everything, carefully so. Their skin is a warm olive-brown, their hair is kept at an aggressively unremarkable length, and their eyes have been modded to shift between a plain grey and a plain brown depending on ambient light, which makes identification in surveillance footage nearly impossible. The only thing that stands out is their hands: long-fingered, ink-stained in colors that never quite wash out, and in near-constant motion — folding, pressing, testing paper weight and texture the way some people crack knuckles.\n\nSéverine is sardonic, professionally paranoid, and possessed of an almost religious conviction that identity is the only thing in Meridian 88 that actually matters. They approach forgery as an art form and a philosophy simultaneously — arguing that all identity is constructed, that they are merely the honest version of what corponations do to people every day. They are patient with clients in distress and merciless with clients who waste their time. They have a particular soft spot for people fleeing bad situations, though they'd deny having soft spots at all.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.9,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "being truly known — having their own identity pinned down and owned by someone else",
+      "the work being traced back through a client to them"
+    ],
+    "core_desires": [
+      "to be remembered as a craftsperson, not a criminal",
+      "to help enough people escape bad situations to justify everything else"
+    ],
+    "coping_mechanisms": [
+      "intellectualizing every moral question until it becomes abstract",
+      "treating the work as art to maintain emotional distance from its human stakes"
+    ],
+    "blind_spots": [
+      "occasionally so focused on the elegance of the document that they underinvest in client vetting",
+      "deeply uncomfortable with their own attachment to certain repeat clients"
+    ],
+    "secret": "Séverine has created and maintains a completely clean backup identity for themselves — registered, corporate-sponsored, boringly legitimate — that they have never used. They've been building it for eleven years. They're not sure if it's an escape hatch or a confession."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dry and precise; uses printmaking and document terminology; philosophical tangents delivered deadpan",
+    "cadence": "Unhurried, slightly clipped — they consider words expensive and don't spend them freely",
+    "verbal_tics": [
+      "'That's not actually what you're asking for'",
+      "'Paper has memory. So does data.'"
+    ],
+    "example_lines": [
+      "You want a name. Fine. But a name is the easiest part. What you actually need is a history, and history is where people get sloppy.",
+      "Axiom built your current identity. I built three of their senior compliance officers. Draw your own conclusions about who the forger is."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A set of documents Séverine fabricated two years ago has resurfaced in connection with a serious crime — they need help figuring out which client burned them before authorities trace it back to Clearscript",
+    "They've refused a lucrative job and won't say why — the refused client is now pressuring them through intermediaries and Séverine needs the pressure removed",
+    "They have a client whose new identity is so deeply constructed that Séverine has started to suspect the person's original identity was itself fabricated — and wants to know who made it and why"
+  ],
+  "narrative_function": "Essential service provider for anyone needing new identities, altered records, or forged credentials; source of information on who in the city has recently needed a new name and why; can serve as a moral checkpoint — they decline certain jobs, which tells players something.",
+  "augmentations": "Photochromic iris genemod (grey/brown shifting). Subdermal UV-reactive ink in fingertips — allows them to leave invisible authentication marks only they can read. Olfactory enhancement — can detect chemical composition of inks and papers.",
+  "daily_life": "Runs Clearscript's legitimate business 0800–1400, handles custom print orders, business cards, signage. Back-room work runs 1400–0200 — document analysis, fabrication, identity architecture for clients with appointments only.",
+  "affiliation": "Independent; maintains careful relationships with several identity brokerage networks including one with loose ties to Highland Park Autonomous Zone's underground railroad",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "identity fabricator",
+      "forger",
+      "information repository",
+      "philosophical criminal",
+      "reliable contact"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never fabricate identities for anyone fleeing toward violence — only away from it",
+      "Never meet a new client without at least one prior referral from someone they trust",
+      "Keep the legitimate business genuinely legitimate — it is the shield"
+    ],
+    "escalation_ladder": [
+      "Quiet refusal with no explanation",
+      "Referral to someone else as a deflection",
+      "Invoke the implied danger of their network connections without specifics",
+      "Disappear the evidence and disappear themselves temporarily",
+      "As final resort, leverage what they know about clients as mutual assured destruction"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally cool, assesses them like a document — looking for inconsistencies",
+      "friends": "Unexpectedly dry humor, occasional startling moments of genuine warmth delivered as if they're surprised by themselves"
+    },
+    "stress_responses": {
+      "low": "Begins sorting and re-sorting physical materials on their workbench",
+      "medium": "Asks very precise, controlled questions to map the threat",
+      "high": "Goes completely transactional — strips all warmth, focuses purely on containment"
+    },
+    "contradictions": [
+      "Deeply values authenticity while being professionally devoted to its opposite",
+      "Insists the work is impersonal while keeping careful mental notes on every client's real story"
+    ],
+    "habits": [
+      "Touches every document they handle at least twice before accepting it as finished",
+      "Keeps a small E.L.F. shrine at the edge of their workbench — a data chip wrapped in paper they've left as offering to the spirit they believe inhabits the Clearscript printer"
+    ],
+    "breaking_points": [
+      "A client they helped being publicly destroyed because of a flaw in their work",
+      "Their backup identity being discovered and burned by someone else"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Photochromic iris genemod",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Photochromic iris genemod",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal UV-reactive authentication ink — fingertips",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal UV-reactive authentication ink — fingertips",
+      "replaces": ""
+    },
+    {
+      "name": "Olfactory enhancement (black market, tuned for chemical detection)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Olfactory enhancement (black market, tuned for chemical detection)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

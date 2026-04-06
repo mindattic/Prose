@@ -1,0 +1,172 @@
+{
+  "id": "019d6143a6c77d1b891dfd45ed23e989",
+  "type": "character",
+  "name": "Saoirse Tambadou-Nystr��m",
+  "aliases": [
+    "Torch",
+    "Saor"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Union organizer and protest coordinator",
+  "age": 24,
+  "status": "active",
+  "location": "Mexicantown Libre",
+  "description": "Saoirse is twenty-four and looks like she has been awake for most of it. She is compact and fast-moving, with mixed Senegambian and Scandinavian features that catch people off guard — high cheekbones, cool-toned brown skin, pale green eyes she claims are natural and that nobody quite believes. Her hair is currently a defiant copper-orange, achieved through a cheap pigment mod that needs retreating every three weeks and which she ritually neglects until it starts going pink at the roots. She dresses for movement and disappearance. She has a voice that carries in a crowd without apparent effort and she knows exactly how to use it.\n\nSaoirse is an organizer with the Ferrogate Transit Workers' Solidarity Action Front — a name she argues with regularly — coordinating wildcat actions, slowdowns, and what she calls 'presence demonstrations' among transit maintenance workers across three depot lines. She is extraordinarily good at reading a crowd's emotional temperature and knows exactly when to push and when to hold. She is less good at the long game, at paperwork, at not making promises that exceed what the Front can deliver. She is young enough to still be surprised when the system fails people who trusted it, and old enough in organizing years to be afraid of what happens when she stops being surprised.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Burning out before she's old enough to be taken seriously",
+      "Causing a worker to lose their job because of an action she pushed for"
+    ],
+    "core_desires": [
+      "A successful contract win — something concrete she can point to",
+      "To be trusted with the difficult decisions, not just the visible ones"
+    ],
+    "coping_mechanisms": [
+      "Physical exhaustion as emotional regulation — running, movement",
+      "Collective ritual — pre-action group call-and-response with workers"
+    ],
+    "blind_spots": [
+      "Treats hesitation in others as fear rather than wisdom",
+      "Underestimates how much of her success depends on older organizers she dismisses"
+    ],
+    "secret": "During an action last year she gave the signal to disperse fifteen minutes early, saving thirty workers from a corporate security sweep. Nobody knows she got a tip-off from a Ferrogate middle manager she's been quietly cultivating as an inside contact. She knows this is an asset she should tell the Front about. She hasn't, because she's afraid they'll take control of the contact away from her."
+  },
+  "speech_patterns": {
+    "vocabulary": "High energy, punchy, labor movement cadences mixed with Libre street vernacular; code-switches fluidly",
+    "cadence": "Fast in conversation, deliberately slower and rhythmic when speaking to groups",
+    "verbal_tics": [
+      "'Real talk—'",
+      "Clicks her tongue when thinking",
+      "'We don't have time for that'"
+    ],
+    "example_lines": [
+      "'You want to wait for the right moment? The right moment is the moment they're not expecting you. That's it. That's the whole strategy.'",
+      "'Real talk — I've seen what happens when we ask nicely. I've also seen what happens when we don't. I know which version I like better.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "An action she's planned for a key depot junction is about to go ahead — she needs someone to run a distraction at the Ferrogate administrative hub two blocks away to keep security attention split",
+    "Her inside contact at Ferrogate has sent a message she doesn't understand and then gone dark — she needs to know if they're burned, scared, or playing her",
+    "Three workers who participated in a Front action have received termination notices that are legally constructed to look like performance issues — she needs someone who can help find the paper trail"
+  ],
+  "narrative_function": "Mobilization engine — can turn a situation into collective action faster than anyone; creates urgency and momentum in stories; represents the costs and energy of youth organizing; potential flashpoint character.",
+  "augmentations": "Cosmetic hair pigment mod (copper-orange, poorly maintained). Subvocal communication implant — union-issue, secondhand, allows silent throat-mic communication during actions.",
+  "daily_life": "Days vary wildly between quiet depot visits to check in with worker contacts, logistics planning sessions in the Libre community hall, and sudden pivots to coordinate unplanned actions when conditions align.",
+  "affiliation": "Ferrogate Transit Workers' Solidarity Action Front; informal ties to Mexicantown Libre neighborhood council youth bloc",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -4,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "crowd mover",
+      "labor organizer",
+      "high energy",
+      "young and dangerous",
+      "strategic blind spot"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the workers first, the action second",
+      "Move when the moment is right, not when the plan says to",
+      "Don't commit to a timeline you can't keep"
+    ],
+    "escalation_ladder": [
+      "Visible solidarity action — slowdown, work-to-rule",
+      "Coordinated walkout",
+      "Public demonstration with media notification",
+      "Full wildcat strike with Salvo press coverage"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing but not unfriendly; sizes up their usefulness quickly; becomes warm if they prove trustworthy",
+      "friends": "Fiercely loyal, occasionally overwhelming; will call at 2am about an action and expect engagement"
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative and plans-heavy",
+      "medium": "Snaps at people and apologizes quickly",
+      "high": "Goes very still and very quiet, which frightens people who know her"
+    },
+    "contradictions": [
+      "Insists on collective decision-making but often acts unilaterally when she thinks she knows better",
+      "Accuses older organizers of caution-as-cowardice while sitting on information that would help the collective"
+    ],
+    "habits": [
+      "Memorizes every worker's family situation as an organizing tool and genuine care habit",
+      "Leaves activist glyphs chalked on depot walls — her signature",
+      "Prays to an E.L.F. she calls Momentum before major actions"
+    ],
+    "breaking_points": [
+      "A worker being seriously injured in an action she coordinated",
+      "The Ferrogate contact being exposed because of her silence"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

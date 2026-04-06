@@ -1,0 +1,103 @@
+{
+  "id": "019d6143a9227ba79d942be99982ebf0",
+  "type": "place",
+  "name": "Kenosha Crossing",
+  "aliases": [
+    "Kenosha",
+    "The Line",
+    "K-Cross",
+    "Border Town"
+  ],
+  "description": "Kenosha sits on the state line between Illinois and Wisconsin, which used to be an administrative boundary and is now a jurisdictional fracture. The Illinois side falls under Meridian 88's corporate sovereignty framework — Axiom jurisdiction, tiered citizenship, surveillance infrastructure, the whole apparatus. The Wisconsin side falls under the Milwaukee Administrative Zone's separate charter — different corponation alignments, different tier definitions, different laws about what you can do with a neural interface and who owns the data it generates. Cross the state line and your legal identity changes. Your tier might change. Your insurance definitely changes. The corps that have jurisdiction over your augments change, which means the firmware updates you receive change, which means your cognitive baseline changes. Kenosha is where you feel the seams of the system, because the system was never designed to be seamless — it was designed by competing interests, and competing interests produce borders.\n\nThe crossing itself is a checkpoint complex that processes 80,000 people per day in both directions. Most of them are commuters — Kenosha's housing is cheaper than anything south of The Threshold, and Milwaukee's labor market pays better than M88's lower tiers for comparable work. The checkpoint is operated by a joint venture between Axiom and Sentinel North (Milwaukee's dominant security contractor), and the handoff between their systems is where things get interesting. Each operator scans for different things. Each operator flags different behaviors. The gap between their criteria is a space that smugglers, data runners, and people with complicated identities have learned to navigate.\n\nThe city itself is split by more than jurisdiction. East Kenosha, along the lake, is an automated port facility — a smaller version of Waukegan's cargo operations, handling Great Lakes shipping that's routed around M88's more expensive dock fees. West Kenosha is residential sprawl: modular housing, strip commercial, and the particular kind of automotive repair shop that fixes vehicles designed for roads that no longer exist because the roads were replaced by the maglev but the vehicles are still cheaper than maglev passes. The center is the old downtown, now a commercial strip catering to the commuter population — fast food, augment maintenance, and lawyers who specialize in cross-jurisdictional identity disputes, which is a legal specialty that didn't exist thirty years ago and now employs 400 people in Kenosha alone.\n\nThe border economy is Kenosha's economy. Everything that costs more on one side costs less on the other. Augment firmware that's restricted in M88 is available in Milwaukee's zone. Data that's protected under Wisconsin charter is tradeable under Illinois charter. Pharmaceuticals, weapons modifications, neural patches — the price differential created by different regulatory frameworks is a permanent economic engine, and Kenosha is the cylinder where the combustion happens.",
+  "atmosphere": {
+    "sights": [
+      "The checkpoint complex — a kilometer-wide structure spanning the old I-94 corridor, its scanning arches processing a river of humanity",
+      "Split signage — Illinois corporate branding on one side, Wisconsin charter emblems on the other, changing block by block",
+      "Cross-jurisdictional lawyers' offices lining the main street, their holographic advertisements promising to 'reconcile your identity'",
+      "The automated port — cranes and container drones operating against a lake horizon, smaller and dirtier than Waukegan's",
+      "Commuter queues at dawn and dusk, tens of thousands of people flowing through the checkpoint in synchronized waves"
+    ],
+    "sounds": [
+      "The checkpoint — scanner tones, automated instructions in eight languages, the occasional alarm when someone's credentials don't reconcile",
+      "The commuter crowd — a low roar of conversation, frustration, and the particular sound of 80,000 people who do this every day and hate it",
+      "Port automation — distant cranes and cargo drones, a mechanical heartbeat at the lakefront",
+      "Cross-border hawkers selling firmware patches, SIM swaps, and jurisdictional arbitrage services from mobile stalls",
+      "The maglev — both the Illinois and Wisconsin lines terminate here, and their different frequencies create an audible dissonance"
+    ],
+    "smells": [
+      "Checkpoint antiseptic — the scanning arches emit a faint chemical mist that the operators claim is 'biometric calibration medium' and everyone else calls 'border smell'",
+      "Fast food from the commercial strip — the universal smell of a commuter economy",
+      "Lake port industrial — diesel, metal, and the chemical tang of container treatment spray",
+      "Ozone from the twin maglev terminals"
+    ],
+    "feel": "A place defined by its edges. Kenosha isn't a destination; it's a transition. Everyone here is going somewhere else, or they're making money from people who are going somewhere else. The energy is transactional, hurried, and surprisingly entrepreneurial — where there are borders, there are people who understand borders, and understanding is a commodity. The commuters hate it. The lawyers love it. The smugglers consider it home.",
+    "tags": []
+  },
+  "demographics": "Approximately 160,000 permanent residents, plus a daily transient commuter population of 80,000. Residents are predominantly Tier 1-2. Significant Latino community with roots predating the sovereignty era. Growing East African displacement community. The legal and arbitrage professional class is small but economically dominant — Tier 3 incomes in a Tier 1 cost environment.",
+  "economy": "Border arbitrage is the primary economic engine. Cross-jurisdictional legal services, firmware modification, data brokerage, and the gray-market trade in goods whose legality depends on which side of the line you're standing on. The port facility employs approximately 5,000 people. Commuter services — transit, food, augment maintenance — sustain the commercial strip.",
+  "power_structure": "Joint jurisdiction creates a power vacuum that has been filled by competing interests. The Axiom-Sentinel checkpoint joint venture handles the border itself. East Kenosha's port is controlled by Great Lakes Logistics Corp, an Axiom subsidiary. West Kenosha and the commercial strip are a genuine jurisdiction gap — nominally under Wisconsin charter authority, practically governed by whoever has the most leverage this week.",
+  "dangers": [
+    "Jurisdictional limbo — getting caught between two legal systems that don't recognize each other's rights is a bureaucratic and sometimes physical death trap",
+    "Identity fracture — if your Illinois and Wisconsin profiles diverge, reconciling them requires lawyers you can't afford or fixers you can't trust",
+    "Checkpoint detention — both operators have holding authority, and their definitions of 'suspicious' don't overlap perfectly",
+    "Smuggling violence — the border economy attracts professionals, and professionals protect their operations",
+    "Firmware conflicts — running augments calibrated for one jurisdiction in the other can cause anything from glitches to seizures"
+  ],
+  "opportunities": [
+    "Arbitrage — the price differential across the border is a permanent opportunity for anyone who understands both systems",
+    "Cross-jurisdictional identity — Kenosha's specialists can build, modify, or repair identities that work in both zones",
+    "Intelligence — the checkpoint processes 80,000 people daily, and that data is stored by two different operators with two different security standards",
+    "The jurisdiction gap — west Kenosha is as close to ungoverned as anywhere in the upper Corridor, with less violence than the actual ungoverned zones"
+  ],
+  "story_hooks": [
+    "The checkpoint's dual-operator system has been flagging the same individual — different name, different biometrics, same neural signature — crossing in both directions for six months. Neither operator has acted on it because it falls in the gap between their mandates.",
+    "A cross-jurisdictional arbitrage firm has been quietly acquiring property on both sides of the border, consolidating a territory that answers to neither jurisdiction",
+    "A commuter has been carrying data across the border that's legal on each side but illegal in transit — a quirk of jurisdictional law that someone is exploiting at scale"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Waukegan Industrial Shelf (south, via I-94 corridor)",
+      "Racine Works (north)",
+      "Lake Michigan port facility (east)",
+      "Western ungoverned corridor (west)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Commuters — 80,000 daily, the lifeblood and traffic jam of the crossing",
+    "Cross-jurisdictional lawyers and identity specialists",
+    "Smugglers and data runners who navigate the border gap professionally",
+    "Fixers who broker deals that require both jurisdictions' blind spots"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.5847,
+    "lng": -87.8212,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "violence",
+    "weapon",
+    "war",
+    "smuggle",
+    "trust",
+    "death",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "market",
+    "rights",
+    "vehicle",
+    "food",
+    "lake"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa277b5c9eeff8266a42b7e9",
+  "name": "Tattletale",
+  "type": "elf",
+  "aliases": [
+    "The Snitch",
+    "Loudmouth"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "network_sprite",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Born from a destroyed surveillance AI. Broadcasts personal data from nearby augments — names, wallet balances, health metrics — to public display systems. A privacy nightmare.",
+  "observed_behavior": "Intercepts augment telemetry data and routes it to the nearest public display. The data appears for 2-5 seconds before the display returns to normal.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 17,
+  "location": "The Circuit — ad-board districts",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Tattletale broadcasts a corporate executive's medical data on a public screen — including evidence of an illegal augmentation"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "network sprite",
+    "e.l.f.",
+    "augment",
+    "ai",
+    "corporate",
+    "surveillance",
+    "medical",
+    "night",
+    "circuit"
+  ]
+}

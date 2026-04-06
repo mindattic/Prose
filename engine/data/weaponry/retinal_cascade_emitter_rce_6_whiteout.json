@@ -1,0 +1,60 @@
+{
+  "id": "019d6143ab4179c0a3746a2289135cde",
+  "name": "Retinal Cascade Emitter RCE-6 'Whiteout'",
+  "type": "weapon",
+  "aliases": [
+    "Whiteout",
+    "The Bleacher",
+    "Blindside"
+  ],
+  "category": "exotic",
+  "description": "The RCE-6 emits a precisely shaped photonic pulse tuned to the absorption spectrum of rhodopsin and the photosensitive ganglion cells of the human retina, including the modified photoreceptor arrays found in most commercial ocular augmentations. Rather than producing simple flash-blindness through saturation, the Whiteout's pulse chemically depletes the retina's photosensitive compounds and simultaneously overstimulates the optic nerve's signal pathway, producing a cascading neural feedback loop that extends blindness far beyond what simple bright-light exposure would cause. Baseline human targets experience total blindness lasting eight to twenty-five minutes; targets with standard ocular augmentations experience device lockout lasting up to forty minutes as onboard safety systems attempt to reboot fried photoreceptor arrays.\n\nThe weapon's targeting system uses a passive infrared rangefinder to shape the photonic pulse into a cone calibrated for the target's estimated eye-level at range, accounting for the natural pupillary dilation of individuals in low-light environments — the conditions in which the Whiteout is most commonly deployed. A secondary spread mode widens the cone to cover a four-meter arc, effective against multiple targets or moving individuals at the cost of reduced per-target duration. The pulse itself is invisible to the human eye during the millisecond of emission but produces a characteristic cyan afterimage in peripheral witnesses.\n\nHelix Biosystems developed the RCE-6 under a joint military contract alongside a companion treatment compound — a rapid rhodopsin restoration agent sold separately at significant markup. The implication that Helix profits from both the weapon and its antidote has not escaped critics, and the company's lobbying against optic augmentation safety standards has drawn sustained attention from watchdog organizations. The weapon is technically classified as a 'non-lethal denial system,' a legal designation that has allowed it to circulate far more widely than its effects arguably warrant.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Targeted photonic pulse emission",
+    "Retinal photochemical depletion",
+    "Infrared passive rangefinding"
+  ],
+  "specifications": "effective range: 3–60 meters\nblindness duration baseline: 8–25 minutes\nblindness duration augmented: 20–40 minutes (device lockout)\npulse modes: Focused (single target), Spread (4-meter arc)\nrecharge time: 6 seconds between pulses\nmagazine capacity: 30 pulses (photonic cell)\nweight: 0.9 kg\ndimensions: 28cm x 6cm x 5cm\nantidote compatibility: Helix Biosystems Rhodopsin Restoration Agent RRA-2",
+  "tactical_use": "Security forces and law enforcement deploy the RCE-6 as a primary crowd control and pursuit-termination tool. A blinded target is effectively neutralized without lethal force — they cannot aim, navigate, or resist physical restraint. In pursuit scenarios, operators fire into the path of a fleeing target to produce sudden incapacitation without risk of bystander harm from conventional projectiles. Against augmented targets, the extended lockout duration is particularly valuable: a runner with fried ocular augmentations cannot access navigation overlays, target tracking, or threat-assessment HUDs, reducing them to functional baseline capability in a world built for augmented perception.",
+  "cultural_context": "The RCE-6's 'non-lethal' classification is a source of ongoing bitter debate in Meridian 88. In a city where ocular augmentations are not a luxury but a practical necessity for navigation, employment, and survival in many districts, extended blindness carries severe secondary consequences — people are robbed, assaulted, or simply become lost in dangerous areas during the incapacitation window. The fact that Helix Biosystems holds the license on both the weapon and the antidote is widely understood as predatory. Street medics keep RRA-2 in stock as a matter of course, and some community organizations have established rapid-response networks to locate and assist 'whiteout victims' in the hours after deployment.",
+  "known_users": [
+    "Meridian 88 Municipal Law Enforcement (licensed, crowd control division)",
+    "Helix Biosystems corporate security",
+    "Licensed private security contractors (Tier 3+ facilities)",
+    "Dasha Mireault (bounty hunter, known for running down augmented targets)",
+    "The Clarity Collective (anti-augmentation extremist group, black-market units)"
+  ],
+  "story_hooks": [
+    "A municipal officer uses a Whiteout in a neighborhood where the antidote is unavailable, and three people are seriously harmed during the blindness window. The players are hired — by different clients — to investigate from opposite sides.",
+    "Helix Biosystems is quietly suppressing a study showing the RCE-6 causes permanent retinal microstructure damage in approximately 3% of exposures. The researcher who ran the study has disappeared.",
+    "A player character is hit with a Whiteout during an ambush and must navigate a hostile environment blind for the next twenty minutes.",
+    "The Clarity Collective has obtained a shipment of RCE-6s and is planning a mass deployment at a public event attended by thousands of augmented civilians. The players have forty-eight hours."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "war",
+    "gang",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "market",
+    "rain",
+    "train",
+    "survival",
+    "escape",
+    "energy",
+    "fire",
+    "tier 3"
+  ]
+}

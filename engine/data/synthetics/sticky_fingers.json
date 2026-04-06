@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa25727cad9f14822c6cb366",
+  "name": "Sticky Fingers",
+  "type": "elf",
+  "aliases": [
+    "The Lift"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "wallet_whisper",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Causes transactions to duplicate — you pay once, the merchant receives twice, or vice versa. Nobody gains consistently. The errors are random and self-correcting over time.",
+  "observed_behavior": "Introduces transaction echo errors that reverse within 24-72 hours. Merchants and buyers both experience phantom charges and phantom refunds.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 27,
+  "location": "Shelf commercial districts",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A merchant realizes the 'errors' always benefit the poorest customers and wonders if the E.L.F. has a sense of justice"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "wallet whisper",
+    "e.l.f.",
+    "war",
+    "ai",
+    "justice",
+    "shelf"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a56a78e49355d58513fddbc3",
+  "name": "Diplomat",
+  "type": "archetype",
+  "category": "social",
+  "description": "Finds common ground between opposing parties",
+  "behavioral_signature": "Speaks carefully, listens more",
+  "under_stress": "Becomes more formal, controlled",
+  "at_rest": "Networks, maintains relationships",
+  "will_always": [
+    "seek mutual benefit"
+  ],
+  "will_never": [
+    "burn a bridge unnecessarily"
+  ],
+  "unless": [
+    "one side acts in absolute bad faith"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Mediator",
+      "threshold": 0.85,
+      "context": "conflict resolution"
+    },
+    {
+      "archetype": "Bridge Builder",
+      "threshold": 0.8,
+      "context": "connecting people"
+    }
+  ],
+  "opposite_of": [
+    "Provocateur"
+  ],
+  "tags": [
+    "negotiation",
+    "tact"
+  ]
+}

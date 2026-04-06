@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a7cb79d3b7fcc5a5f919105e",
+  "name": "Zheng-Dao Bioelectric Fascia Conductor Mesh",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Fascia Conductor Mesh",
+  "type": "cyberware",
+  "aliases": [
+    "The Undertow",
+    "Skinwire",
+    "The Flex"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Fascia Conductor Mesh is a sub-dermal augmentation woven directly into the connective tissue layers between muscle and skin, threading bioelectric conduit filaments through the body's natural fascial planes. Each filament is a triaxial strand of piezoelectric polymer and biogel-suspended nanotransistor chains, capable of transmitting low-voltage proprioceptive signals faster than the peripheral nervous system's natural conduction rate. The mesh interfaces with the user's existing nerve architecture through inductive coupling nodes implanted at twelve anchor points across the torso and limbs, synchronizing with voluntary motor commands before they fully resolve in the spinal cord.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"signal_preemption_gain\":\"18–22ms ahead of natural motor resolve\",\"mesh_coverage\":\"Full torso, upper and lower limbs — 94% fascial plane saturation\",\"anchor_nodes\":\"12\",\"power_source\":\"Kinetic microgenerator array, body-motion harvested\",\"maintenance_cycle\":\"Calibration flush every 90 days via licensed clinic\",\"weight_addition\":\"Approx. 310g distributed\",\"biocompatibility\":\"Zheng-Dao BioGel Class III suspension required\"}",
+  "side_effects": [],
+  "cultural_context": "In the dense urban sprawl of Meridian 88, the Fascia Conductor Mesh occupies a curious social position — it is one of the few performance augmentations that carries no visible marker, no subdermal glow, no hardware bulk. Among corporate athletes and executive protection details, it is considered a 'clean' augmentation, something you can have without admitting you have it. In lower-tier districts, bootleg versions called 'Undertow patches' circulate — partial mesh segments with uneven coverage that cause painful muscle cramping when the signal sync drifts.",
+  "known_users": [
+    "Executive protection specialists",
+    "Competitive augmented-sports athletes seeking plausible deniability",
+    "Infiltration operatives",
+    "Black-market surgeons (for self-installation of clients)",
+    "Meridian 88 underground hand-to-hand circuit fighters"
+  ],
+  "story_hooks": [
+    "A licensed clinic's calibration records have been leaked, exposing which corporate executives are running the Mesh — someone is using that list for targeted assassination.",
+    "A black-market Undertow patch batch has been laced with a remote-shutdown payload; the distributor doesn't know, but someone is about to flip a switch on a few hundred unwitting users.",
+    "An underground fighter has been winning impossibly — no one can figure out how, because the Mesh reads clean on standard aug-scanners at the venue.",
+    "Zheng-Dao is quietly recalling a production run with a fascial anchor node defect that causes progressive muscle necrosis — and they'd rather the users disappear than file a claim."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "war",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "clinic",
+    "pain",
+    "market",
+    "circuit",
+    "tier 2"
+  ]
+}

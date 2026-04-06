@@ -1,0 +1,169 @@
+{
+  "id": "019d6143a65777a399fa80d3f455c8ef",
+  "type": "character",
+  "name": "Mbeki Filatov-Tuivaga",
+  "aliases": [
+    "Brick",
+    "Mbe"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Orphan, gang prospect (junior affiliate); Stockyard territory, does odd jobs for the Copperheads",
+  "age": 9,
+  "status": "active",
+  "location": "The Stockyard",
+  "description": "Mbeki is a small, round-faced nine-year-old with his South African grandfather's dark complexion and his Russian grandmother's light gray eyes, a combination that makes people look at him twice in a way he has not yet decided whether to be proud of. He has been at the Stockyard's communal housing block since he was six, when his mother didn't come back from a job and no one came to explain why. He has the characteristic roughness of a Stockyard kid — scuffed knees, hair grown out past caring, a jacket two sizes too large that he found and claimed as territory. He has no augmentations of any kind. The Copperheads, a junior street crew that operates in the Stockyard's eastern blocks, have noticed him the way they notice all the unattached kids — as resource or recruitment opportunity. So far he has run two lookout shifts for them, for which he was paid in food rather than Quanta, which tells you something about both the crew's resources and his bargaining position.\n\nHe is, underneath the hard-knock exterior, a nine-year-old who still sleeps with his knees pulled to his chest and who has attached himself to a specific E.L.F. he calls Glow that he believes lives in the light-strip above his communal bunk. He leaves it small paper offerings — drawings, mostly — folded under the fixture every night. He is fiercely protective of two things: a palm-sized carved wooden animal his mother left in the housing block storage, and a seven-year-old girl named Polu in the adjacent bunk who cannot defend herself the way he has learned to.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Polu getting hurt because of something he failed to do",
+      "the Copperheads making him do something that can't be undone"
+    ],
+    "core_desires": [
+      "for his mother to have a reason she didn't come back",
+      "a door that locks from the inside"
+    ],
+    "coping_mechanisms": [
+      "rituals around the Glow E.L.F. — nightly paper offerings, morning check that the strip is still on",
+      "protecting Polu as a displacement of all unprocessable grief"
+    ],
+    "blind_spots": [
+      "believes the Copperheads are separate from the forces that took his mother — does not see the structural continuity",
+      "thinks he can keep Polu safe through vigilance alone"
+    ],
+    "secret": "He overheard a Copperheads conversation three weeks ago that included a description of a job gone wrong in the Stockyard's sixth sector — the job his mother was last known to be near. He doesn't have enough context to understand it. He has been trying to get more context ever since, slowly, without anyone noticing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Short sentences. Stockyard patois, slightly blurred from communal housing mix of backgrounds. Asks practical questions rather than emotional ones.",
+    "cadence": "Quiet and direct. Speaks louder when he's pretending not to be scared.",
+    "verbal_tics": [
+      "'Yeah' as agreement but also as filler when he's processing",
+      "gets very still and precise when actually frightened"
+    ],
+    "example_lines": [
+      "'Glow was on this morning. That's good.'",
+      "'Polu stays here. She's not part of whatever this is.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Copperheads are moving toward asking him to do something that crosses a line — and he's been too hungry, too often, to have good options for refusing.",
+    "The fragment of conversation he overheard about the job near sector six could be the beginning of understanding what happened to his mother — but finding out more means going somewhere in the Stockyard he can't bring Polu."
+  ],
+  "narrative_function": "Emotional stakes and moral weight; his situation forces players to reckon with structural failure; can serve as an object of protection or a small information source about Stockyard street patterns; his trajectory is genuinely in play.",
+  "augmentations": "None.",
+  "daily_life": "Eats communal breakfast if there is one, spends the day ranging the Stockyard's blocks doing whatever earns food or Φ — carrying, watching, fetching. Is back at the housing block before dark because that is the rule he has made for himself.",
+  "affiliation": "Stockyard communal housing (ward of informal community); junior Copperheads affiliate (reluctant)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 8,
+      "expression": 3,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "orphan",
+      "gang-prospect",
+      "caretaker",
+      "E.L.F.-devotee",
+      "stockyard-survivor",
+      "searching"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Polu doesn't get involved in anything",
+      "don't take jobs that happen after dark",
+      "always know where the exit is"
+    ],
+    "escalation_ladder": [
+      "stay quiet and small",
+      "put himself physically between the problem and Polu",
+      "run, accepting whatever cost that has with the Copperheads later"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Wary and still; watches hands; doesn't speak first unless asked",
+      "friends": "Quietly devoted; expresses care through vigilance and small practical actions; will share food"
+    },
+    "stress_responses": {
+      "low": "Goes to check on Polu",
+      "medium": "Performs an extended Glow ritual — re-folds old paper offerings, makes a new one",
+      "high": "Becomes very, very calm in a way that is actually dissociation"
+    },
+    "contradictions": [
+      "Pretends not to care about his mother's wooden animal; sleeps with it in his jacket pocket every night"
+    ],
+    "habits": [
+      "morning light-check on Glow's fixture before getting up",
+      "always positions himself between Polu's bunk and the door",
+      "folds paper offerings with more care than anything else he does"
+    ],
+    "breaking_points": [
+      "Polu being threatened directly",
+      "learning definitive information about his mother that he isn't ready for"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

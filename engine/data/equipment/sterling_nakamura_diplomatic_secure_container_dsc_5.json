@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a86c7d0a971e63e105cc0b1a",
+  "name": "Sterling-Nakamura Diplomatic Secure Container DSC-5",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Diplomatic Secure Container DSC-5",
+  "type": "equipment",
+  "aliases": [
+    "DSC-5",
+    "Kill Box",
+    "Sterling Case",
+    "Burn Safe"
+  ],
+  "category": "containers",
+  "description": "A briefcase-sized secure container with integrated biometric lock, tamper detection, and thermite self-destruct system. The DSC-5 is designed to transport classified documents, data storage devices, or biological samples with absolute security — any unauthorized opening attempt triggers an internal thermite charge that incinerates the contents at 2,500°C in under 3 seconds. The container's walls are lined with Faraday cage mesh to prevent electromagnetic scanning of contents, and its biometric lock requires fingerprint, voiceprint, and neural interface verification. Sterling-Nakamura issues them to diplomatic staff and high-priority courier services.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — diplomatic and corporate courier",
+  "base_technologies": [],
+  "specifications": {
+    "biometric lock": "Fingerprint + voiceprint + neural interface",
+    "tamper detection": "Accelerometer + magnetic field + case integrity",
+    "self-destruct": "Internal thermite charge",
+    "info": "2; 500°C in 3 seconds",
+    "Faraday shielding": "Complete EM isolation of contents",
+    "interior volume": "30x20x10 cm",
+    "weight": "4.5 kg",
+    "exterior": "Reinforced carbon-fiber shell",
+    "battery": "90-day standby for sensors and lock"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A DSC-5 self-destruct was triggered during a routine customs inspection — the inspector's unauthorized biometric scan activated the tamper detection, incinerating contents that someone very much wanted to know about.",
+    "A DSC-5 has been modified to allow remote triggering of the thermite charge — it has been given to a courier as a concealed incendiary device that will destroy whatever room they are in when activated."
+  ],
+  "tags": [
+    "containers",
+    "equipment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "tier 4"
+  ]
+}

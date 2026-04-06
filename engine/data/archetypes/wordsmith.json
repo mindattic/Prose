@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59c75b1b9e77817eccf3dd7",
+  "name": "Wordsmith",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Crafts language with precision and power",
+  "behavioral_signature": "Chooses words carefully, deploys them surgically",
+  "under_stress": "Words become weapons or shields",
+  "at_rest": "Writing, editing, refining",
+  "will_always": [
+    "find the right word"
+  ],
+  "will_never": [
+    "communicate carelessly"
+  ],
+  "unless": [
+    "eloquence fails and only action speaks"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Ghost Writer",
+      "threshold": 0.75,
+      "context": "written word"
+    },
+    {
+      "archetype": "Street Poet",
+      "threshold": 0.8,
+      "context": "language craft"
+    }
+  ],
+  "opposite_of": [
+    "Silent Witness"
+  ],
+  "tags": [
+    "precise",
+    "eloquent"
+  ]
+}

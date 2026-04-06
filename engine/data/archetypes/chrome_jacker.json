@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a56274199d879465ff44282a",
+  "name": "Chrome Jacker",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Steals cybernetic implants from living hosts",
+  "behavioral_signature": "Extracts valuable chrome with surgical precision",
+  "under_stress": "Gets rougher, less surgical",
+  "at_rest": "Studying implant models, maintaining tools",
+  "will_always": [
+    "take the chrome"
+  ],
+  "will_never": [
+    "leave valuable implants untouched"
+  ],
+  "unless": [
+    "removal would kill or cripple the host"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Organ Broker",
+      "threshold": 0.8,
+      "context": "body-part trade"
+    },
+    {
+      "archetype": "Pickpocket",
+      "threshold": 0.6,
+      "context": "theft from persons"
+    }
+  ],
+  "opposite_of": [
+    "Protector"
+  ],
+  "tags": [
+    "brutal",
+    "technical"
+  ]
+}

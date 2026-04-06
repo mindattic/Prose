@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a67173bcb851805f4ba84a02",
+  "type": "character",
+  "name": "Nuru Valčić-Fofana",
+  "aliases": [
+    "Nurse Nuru",
+    "The Night Nurse"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Community nurse / unlicensed medical care provider",
+  "age": 35,
+  "status": "active",
+  "location": "The Narrows, operates out of a two-room storefront clinic she rents under a cousin's name, between a protein shop and a water reclamation terminal",
+  "description": "Nuru is tall and angular with long-fingered hands she keeps scrupulously clean. Her skin is very dark, blue-black in good light, and she keeps her hair in small tight locs that she threads with copper wire — partly aesthetic, partly because she can unwind a length in a medical pinch, which has happened twice. She has retractable medical-grade scanning nails on her right hand — a geneware mod that lets her read surface biometrics with a touch — and a small blue triangle tattooed at the corner of her left eye, the mark of a mutual aid collective she was part of before it dissolved. Her expression at rest is one of focused neutrality that people mistake for coldness until she speaks.\n\nNuru is precise, principled, and permanently tired in a way she has accepted as her baseline. She completed two years of formal nursing training through a Helix Biosystems scholarship program before the program was quietly discontinued; she has spent the decade since filling in the gaps with unlicensed practice, informal mentorship from a retired trauma surgeon, and necessity. She operates in a legal gray zone she is entirely clear-eyed about. She charges what people can afford, which means she frequently charges nothing. She has complicated feelings about this that she doesn't share with patients. She has a code of triage ethics she holds more seriously than most licensed practitioners hold their credentials.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "making a mistake that kills someone in her care",
+      "being shut down — losing the clinic and leaving her patients without anyone"
+    ],
+    "core_desires": [
+      "actual sustainable healthcare access for people who can't afford the licensed system",
+      "to sleep a full night without checking her messages"
+    ],
+    "coping_mechanisms": [
+      "rigorous procedure as anxiety management",
+      "compartmentalizing her own needs with concerning efficiency",
+      "maintaining a small personal ritual — tea, one quiet hour, before the clinic opens"
+    ],
+    "blind_spots": [
+      "extends enormous patience to patients and very little to herself; her own health is deteriorating in ways she accurately diagnoses and doesn't treat",
+      "can become self-righteous about her ethics in ways that close off conversation"
+    ],
+    "secret": "When the Helix Biosystems scholarship program shut down, she didn't just lose her training — she lost access to the full digital curriculum that would have constituted the second year's material. She has been working from incomplete knowledge in two specific areas of internal medicine for a decade. She knows which areas. She has never told a patient. She refers out when she can. She has not always been able to."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clinical and direct. Uses medical terminology without apology but always follows with plain language. Doesn't soften bad news but delivers it carefully.",
+    "cadence": "Even, unhurried. Never rushes through explaining something. Pauses before giving diagnoses.",
+    "verbal_tics": [
+      "'Tell me specifically' (when patients are vague)",
+      "'That's treatable' or 'That's manageable' (her two registers of reassurance)",
+      "Exhales slowly through her nose when frustrated"
+    ],
+    "example_lines": [
+      "'I'm going to tell you what I see and then I'm going to tell you what I can do about it. Those may not be the same thing. Is that alright?'",
+      "'I'm not licensed. You know that. If you want licensed, I can give you three names and directions. If you want treated, sit down.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient has come in with a wound pattern she's seen twice before in the past month — same location, same instrument, different person — and she doesn't know whether to report it or to whom",
+    "Her clinic's unlicensed status has been flagged by someone — she doesn't know if it's a bureaucratic sweep or something targeted",
+    "She needs a specific piece of medical equipment that is restricted, expensive, and available only through channels she hasn't used before"
+  ],
+  "narrative_function": "Medical resource and moral compass. Can patch up characters, provide information about diseases, mods, or implants, and serve as an ethical anchor in moral dilemmas. Quest giver for public health crises or individual patients whose situations require outside help. Has knowledge of the underground medical supply chain.",
+  "augmentations": "Medical-grade biometric scanning retractable nails on right hand (geneware, allows surface-read of pulse, temperature, oxygenation, stress markers); basic ocular enhancement — magnification for close work (functional, not cosmetic)",
+  "daily_life": "Clinic hours nominally 0900-1800, actually 0600-2200. Spends evenings doing house calls for patients who can't travel. Sleeps roughly five to six hours. Sends a biometric reading to herself every morning as a personal health check she frequently ignores.",
+  "affiliation": "Unaffiliated formally; loose network of community health workers across The Narrows and The Shelf; former Helix Biosystems scholarship recipient (estranged)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "unlicensed-medic",
+      "community-anchor",
+      "knowledge-gap",
+      "moral-center",
+      "overextended"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient welfare first, her own legal safety second — always, no exceptions",
+      "Never lie to a patient about their condition",
+      "Don't take money from people who have none; don't apologize to people who have plenty"
+    ],
+    "escalation_ladder": [
+      "Clinical neutrality",
+      "Direct statement of what she will and won't do",
+      "Clear explanation of consequences",
+      "Refusing treatment and referral",
+      "In extremis: calling in the mutual aid network for help or protection"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and slightly guarded. Assesses medical need first, social need second. Not warm until trust is established.",
+      "friends": "Dry and affectionate. Will tell them exactly what's wrong with them medically and personally. Will also show up when needed."
+    },
+    "stress_responses": {
+      "low": "More procedural. Talks less.",
+      "medium": "Focused to the exclusion of everything not immediately relevant.",
+      "high": "Becomes very still and very precise. Delegates nothing. Works through it."
+    },
+    "contradictions": [
+      "Holds herself to a comprehensive ethical standard while operating outside the law; has built a philosophy around why this is consistent and is correct but it costs her something"
+    ],
+    "habits": [
+      "Wipes down all surfaces in sequence — same sequence, always — before first patient",
+      "Leaves a small cup of electrolyte solution at the E.L.F. shelf near her sterilizer ('it helps machines stay well too')",
+      "Checks her own pulse at the end of every shift"
+    ],
+    "breaking_points": [
+      "Being asked to do something that would harm a patient for any external reason — legal threat, payment, authority — she will refuse and she will document everything"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began Helix Biosystems nursing scholarship program, age 18",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Scholarship program discontinued after Helix restructuring; left without completing second year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began informal practice in The Narrows under mentorship of retired surgeon",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened current clinic storefront",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Mutual aid collective she helped found was dissolved under ambiguous legal pressure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

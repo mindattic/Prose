@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59b7c18b34b46d5a015892e",
+  "name": "Wartime Leader",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Leads effectively only when stakes are highest",
+  "behavioral_signature": "Transforms under extreme pressure into decisive command",
+  "under_stress": "Becomes more focused, less human",
+  "at_rest": "Preparing for the worst, training",
+  "will_always": [
+    "lead when it matters most"
+  ],
+  "will_never": [
+    "lead well in peacetime"
+  ],
+  "unless": [
+    "the war never ends and they can't turn it off"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Crisis Commander",
+      "threshold": 0.9,
+      "context": "emergency leadership"
+    },
+    {
+      "archetype": "Commander",
+      "threshold": 0.8,
+      "context": "military leadership"
+    }
+  ],
+  "opposite_of": [
+    "Consensus Builder"
+  ],
+  "tags": [
+    "decisive",
+    "intense"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "019d6143a92e744082cc24558eecc842",
+  "type": "place",
+  "name": "Red Granite Pit",
+  "aliases": [
+    "Red Granite",
+    "The Pit",
+    "Palladian Quarry",
+    "The Hole"
+  ],
+  "description": "Red Granite was always a prison town. The Redgranite Correctional Institution sat at its center for over a century, a state facility that processed human beings with the same industrial indifference the quarries applied to stone. When the State of Wisconsin dissolved as a governing entity during the Corporate Consolidation of 2142, the prison was auctioned. Palladian Construction bought it for the land and the quarry rights. Helix BioSystems bought the prisoner contracts. Together, they turned Red Granite into something worse than either could have managed alone.\n\nThe quarry, which had been producing dimensional granite since the 1880s, was converted to rare earth extraction in 2148 when subsurface surveys revealed significant deposits of neodymium and cerium beneath the exhausted granite seams. Palladian expanded the quarry to three times its original footprint, boring down two hundred meters into bedrock. The extraction process requires human oversight that automation can't replicate — not because the technology doesn't exist, but because human labor under Palladian's Detention Architecture program is cheaper than maintaining autonomous systems. The former state prisoners, now reclassified as 'infrastructure rehabilitation participants' under Palladian sovereign jurisdiction, work the deep shafts in twelve-hour rotations. New detainees arrive monthly from Meridian — people who've accumulated enough corporate debt, committed enough minor infractions, or simply been in the wrong jurisdiction gap at the wrong time. The legal distinction between a prisoner and an employee is a matter of paperwork that Palladian files correctly and nobody else reads.\n\nThe town above the pit is a support structure for the extraction operation, not a community. Palladian security controls access, and the population of roughly four thousand consists of extraction overseers, equipment technicians, medical staff (Helix-contracted, primarily concerned with keeping laborers functional), and the service workers who feed and supply them. A ring of unauthorized settlement has formed outside Palladian's perimeter — families of detainees who've migrated here hoping for visitation rights that don't exist, plus a small but persistent abolitionist community that documents conditions in the pit and transmits reports to anyone who'll listen. Saltmarsh Signal Guard has been contracted to jam their transmissions three times. The fourth time, the abolitionists started using dead drops and physical couriers. Some technology you can't jam.",
+  "atmosphere": {
+    "sights": [
+      "The quarry pit — a terraced wound in the earth two hundred meters deep, lit by industrial floods that never turn off, crawling with extraction machinery and human figures",
+      "Palladian security fencing topped with autonomous deterrent systems — the perimeter glows faintly at night",
+      "Ore processing facilities belching particulate-laden exhaust, tinting the sky a permanent rust-orange at sunset",
+      "The unauthorized settlement outside the perimeter — tents and prefab shelters arranged in desperate geometry, facing the fence",
+      "Transport convoys arriving monthly with new detainees, sealed containers that could be carrying anything"
+    ],
+    "sounds": [
+      "Deep drilling — a rhythmic percussion felt through the ground, the quarry's heartbeat transmitted through bedrock",
+      "Extraction alarms cycling through shift changes, a pattern the unauthorized settlement has memorized",
+      "Palladian security drones patrolling the perimeter with a distinctive high-frequency whine",
+      "Silence from inside the fence — sound suppression technology keeps the quarry's worst noises from reaching the support town",
+      "Abolitionists' radio broadcasts, intermittent and staticky, listing names of detainees who haven't been seen in months"
+    ],
+    "smells": [
+      "Rock dust — fine, alkaline, coating everything within two kilometers of the pit",
+      "Chemical processing agents from the rare earth extraction — sharp, metallic, wrong",
+      "Diesel exhaust from heavy machinery too large or too old for electric conversion",
+      "The absence of organic smells — nothing grows within the dust zone"
+    ],
+    "feel": "Heavy. The gravity feels wrong here, as though the pit is pulling everything toward it. The support town has the hollow efficiency of a labor camp — functional, clean enough, devoid of anything that suggests its inhabitants are meant to stay. Outside the perimeter, the unauthorized settlement vibrates with a different energy — desperation, solidarity, and the particular fury of people who can see injustice but can't reach it.",
+    "tags": []
+  },
+  "demographics": "Approximately 4,000 in the support town (Palladian employees and contractors, Tier 2-3). Estimated 6,000 detainees in the quarry system at any given time (no tier, no rights, no record). Roughly 1,200 in the unauthorized perimeter settlement (Tier 1 and excluded).",
+  "economy": "Rare earth extraction — neodymium, cerium, and trace lanthanides — sold to Zheng-Dao Bioelectric and other manufacturers. The support town's economy is entirely Palladian-internal. The unauthorized settlement runs on barter, charity, and whatever Quanta the abolitionist network can funnel in.",
+  "power_structure": "Palladian Construction holds sovereign authority over the quarry and support town. A Palladian-appointed Site Director has absolute jurisdiction. Helix BioSystems maintains a medical subcontract with its own chain of command. Outside the perimeter, the abolitionist community operates as a loose collective with no formal leadership — by design, since leaders get targeted.",
+  "dangers": [
+    "Palladian security — lethal force is authorized within the sovereign perimeter, and 'within the perimeter' is a boundary they interpret generously",
+    "Quarry collapse — the extraction has pushed beyond safe tolerances, and subsidence events have increased yearly since 2190",
+    "Detainee recruitment — being near the Pit without clear corporate affiliation risks being swept into the system on fabricated debt claims",
+    "Particulate exposure — the rock dust causes progressive lung disease in long-term residents, and Helix's medical staff are contractually focused on detainees, not civilians",
+    "Signal jamming — Saltmarsh DEADBAND deployments in the area are unpredictable and can cut off communications for days"
+  ],
+  "opportunities": [
+    "Abolitionist intelligence — the network outside the perimeter has detailed information about Palladian's detention operations, valuable to journalists, activists, and factions opposing corporate sovereignty",
+    "Rare earth smuggling — small quantities of extracted materials occasionally leave the site through unofficial channels, commanding premium prices",
+    "Extraction expertise — workers who survive the Pit acquire deep-mining skills that are in demand across the corridor",
+    "Moral leverage — documented proof of conditions in Red Granite Pit would be devastating to Palladian's corporate image, if it reached the right audience"
+  ],
+  "story_hooks": [
+    "A detainee smuggles out a data chip containing evidence that Palladian has been extracting something other than rare earths from the deepest shafts — something the geological surveys say shouldn't be there",
+    "The abolitionist network requests an extraction: a specific detainee who has information about Cinderblock AI's Cold Node operations and was deliberately buried in the system to keep them silent",
+    "Subsidence events are accelerating, and geological analysis suggests the quarry is undermining its own foundations — a catastrophic collapse would kill thousands of detainees, and Palladian's contingency plan appears to involve sealing the lower shafts rather than evacuating them"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Ironhide Berlin (east)",
+      "Wautoma Null (west)",
+      "Omro Relay (east)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Palladian Construction security and extraction personnel on rotation",
+    "Helix BioSystems medical contractors monitoring detainee viability",
+    "Abolitionist couriers running dead-drop routes between the perimeter settlement and external networks",
+    "Zheng-Dao Bioelectric procurement agents inspecting rare earth shipments"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 44.0419,
+    "lng": -89.099,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "smuggle",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "quanta",
+    "debt",
+    "ubc",
+    "medical",
+    "disease",
+    "bar",
+    "cold",
+    "moral",
+    "rights"
+  ]
+}

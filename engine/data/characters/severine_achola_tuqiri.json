@@ -1,0 +1,252 @@
+{
+  "id": "019d6143a6e771218b448c39db144cce",
+  "type": "character",
+  "name": "Sévérine Achola-Tuqiri",
+  "aliases": [
+    "Patch",
+    "Saint Patch"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "organ harvester and back-alley medical fence",
+  "age": 34,
+  "status": "active",
+  "location": "Shallowgrave, operates from a converted cold-storage unit beneath the Midden Market",
+  "description": "Sévérine is built compact and efficient, dark-skinned with close-cropped hair she dyes a deep arterial red — not geneware, just dye, because she likes having a choice about it. She has bioluminescent capillary lines mapped faintly across both forearms, a cosmetic mod she got at nineteen that she now finds embarrassing but can't afford to remove, which she will tell you about if you ask and sometimes if you don't. Her surgical augments are serious: stabilizer rigs in both hands, haptic-magnification implants behind her eyes, a subdermal sterile field generator she refers to as 'the bubble.'\n\nShe was two years into a Helix Biosystems surgical residency when she was caught diverting a cadaver organ to a patient who couldn't pay the licensing fees. She does not think she did anything wrong. She thinks Helix Biosystems is wrong, the organ licensing system is wrong, and the entire apparatus that let that patient die six weeks after her termination is wrong. She has constructed an entire ethical framework around her current work — she harvests from the willing (paid donors, usually desperate Tier 1s), she maintains sterile conditions that would shame most licensed clinics, and she charges sliding scale. She genuinely saves lives. She also genuinely sells kidneys to Axiom black-market med-brokers for Φ4,000 a unit. Both things are true.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Becoming the thing she fought against — a system that prices lives",
+      "Losing surgical precision — her hands failing her"
+    ],
+    "core_desires": [
+      "To practice real medicine without gatekeeping",
+      "To be seen as a healer, not a criminal"
+    ],
+    "coping_mechanisms": [
+      "Rigorous ethical self-justification",
+      "Dark humor about the body as spare parts",
+      "Obsessive equipment maintenance as meditation"
+    ],
+    "blind_spots": [
+      "Cannot see that her sliding-scale pricing still advantages those with information access over those truly desperate",
+      "Underestimates how much the Axiom brokers are using her"
+    ],
+    "secret": "One of her regular donors — a young man named Oskar who has sold her two non-essential organs — is showing signs of a systemic rejection cascade she recognizes from her residency training. She knows he's dying. She has not told him because he's scheduled for a third procedure next week and she needs the inventory. She lies awake about this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clinical precision mixed with Shallowgrave slang. Uses medical terminology accurately and unselfconsciously. Swears with anatomical specificity.",
+    "cadence": "Fast, efficient, slightly impatient — gives information in ordered steps",
+    "verbal_tics": [
+      "'Alright, so.'",
+      "Clicks tongue when assessing a problem",
+      "'That's going to need—' followed by a list"
+    ],
+    "example_lines": [
+      "'I'm not a butcher. I'm a surgeon who stopped pretending the licensing board had anything to do with medicine.'",
+      "'Sit still. I've done this in worse light than this. Much worse. You don't want to know how much worse.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Oskar's deteriorating condition becomes a crisis — she needs someone to either source a specific rare organ through back channels or help her extract him from the situation entirely.",
+    "Helix Biosystems has identified her operation via a supply chain trace and sent a 'recovery team' — not law enforcement, just corporate — to reclaim their proprietary organ-printing patents they believe she copied."
+  ],
+  "narrative_function": "Medical resource for characters who can't access licensed care, quest giver for organ acquisition or protection, source of Helix Biosystems insider knowledge, moral complexity touchstone.",
+  "augmentations": "Surgical stabilizer rigs (both hands). Haptic-magnification implants (eyes). Subdermal sterile-field generator 'the bubble.' Cosmetic bioluminescent capillary tracery on forearms.",
+  "daily_life": "Maintains a legitimate-ish walk-in wound clinic mornings for Market residents, takes scheduled harvest procedures by appointment, spends evenings doing maintenance on her equipment and updating her own medical knowledge via pirated Helix Biosystems training streams.",
+  "affiliation": "Loose affiliation with Shallowgrave's Midden Market community; supply contracts with two unlicensed Axiom-adjacent med-brokers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Skilled",
+      "Ethically Compromised",
+      "Genuinely Caring",
+      "Idealist-Turned-Pragmatist",
+      "Sleep-Deprived"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Triage everything — most urgent need first",
+      "Never operate impaired — turns away patients if she hasn't slept",
+      "Don't let people into the cold-storage unit without a referral"
+    ],
+    "escalation_ladder": [
+      "Polite refusal with alternative referral",
+      "Firm boundary-setting, hand moves to the tray of instruments pointedly",
+      "Calls Midden Market security (owes her three favors)",
+      "Full lockdown — the bubble activates, she goes silent and cold"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and brisk — assesses threat level immediately, treats medical need as primary data",
+      "friends": "Unexpectedly warm, brings food, remembers everything, uses terrible jokes as affection"
+    },
+    "stress_responses": {
+      "low": "Works faster, narrates her actions to herself under her breath",
+      "medium": "Becomes curt, all social warmth drops, pure function",
+      "high": "Freezes briefly then overcompensates with hyper-competence — dangerous because she stops asking for help"
+    },
+    "contradictions": [
+      "Lectures about informed consent and bodily autonomy while knowing Oskar doesn't have full information"
+    ],
+    "habits": [
+      "Sterilizes her tools twice — once for function, once as ritual to the E.L.F. she believes inhabits her sterile-field generator",
+      "Eats standing up over the sink",
+      "Keeps a running tally of lives saved vs. lives compromised in a physical notebook"
+    ],
+    "breaking_points": [
+      "If Oskar dies and she knows she could have stopped it",
+      "If someone uses her facility to harm rather than heal"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Surgical stabilizer rigs — both hands (professional grade, black market Helix Biosystems hardware)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Surgical stabilizer rigs — both hands (professional grade, black market Helix Biosystems hardware)",
+      "replaces": ""
+    },
+    {
+      "name": "Haptic-magnification implants — both eyes",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic-magnification implants — both eyes",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal sterile-field generator 'the bubble' (20cm radius, toggle-activated)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal sterile-field generator 'the bubble' (20cm radius, toggle-activated)",
+      "replaces": ""
+    },
+    {
+      "name": "Cosmetic bioluminescent capillary tracery — both forearms",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cosmetic bioluminescent capillary tracery — both forearms",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2166 — Born in Shallowgrave to a Acholi-Fijian mother and father, third of four children",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2184 — Awarded partial Helix Biosystems scholarship to surgical residency program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Terminated from residency for unauthorized organ diversion",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Established Midden Market clinic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — First supply contract with Axiom-adjacent broker; Oskar becomes regular donor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

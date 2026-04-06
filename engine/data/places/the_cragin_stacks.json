@@ -1,0 +1,102 @@
+{
+  "id": "019d6143a93a700b96e34d6dd905b911",
+  "type": "place",
+  "name": "The Cragin Stacks",
+  "aliases": [
+    "Belmont Cragin",
+    "The Stacks",
+    "La Pila",
+    "The Hive"
+  ],
+  "description": "Belmont Cragin was dense before the incorporation. After it, the density became architectural. When the northwest corridor's population swelled with climate refugees and tier-displaced families, Belmont Cragin's already tight residential blocks were built upward — not by corporate developers with structural engineers, but by residents with salvage materials and desperation. The result is the Stacks: a vertical favela of improvised construction rising six, eight, sometimes twelve stories above the original two-story buildings, each addition bolted, welded, or simply balanced on the one below. From the air, the Stacks look like a circuit board designed by someone in the middle of a fever dream. From the ground, they look like a miracle of collective engineering that will definitely kill someone eventually and already has.\n\nThe commercial corridor along the old Fullerton Avenue — now called the Spine by everyone who lives here — is the densest small-business district in the outer Corridor. Carnicerias that sell vat-grown meat alongside actual goat from rooftop herds. Repair shops that fix everything from neural interfaces to pressure cookers. Legal services operated by paralegals who know more about corporate jurisdiction law than most licensed attorneys because their clients' survival depends on it. The Spine runs on cash, barter, and a local digital currency called the Cragin that is technically illegal and functionally universal within a twenty-block radius. Every storefront on the Spine represents a family that chose to build something instead of leaving, and the buildings lean together overhead as if the street itself is trying to hold them up.\n\nThe Stacks are predominantly Hispanic — Mexican, Guatemalan, Honduran, Salvadoran — and the culture is loud, present, and unapologetic. Murals cover every available surface, refreshed seasonally by community artists who treat the Stacks as a living canvas. Religious processions navigate the narrow streets on saints' days, the statues' halos made of repurposed LED strips that cast shifting color through the canyon-corridors between buildings. Spanish is the primary language, but a local pidgin called Stackspeak — Spanish-English-Cant with technical vocabulary borrowed from construction and neural interface jargon — has evolved as the Stacks' native tongue. Corporate translation AIs struggle with it. That is part of its purpose.\n\nThe structural risk is real. The Stacks have no building codes because they have no building authority. Collapses happen — two or three per year, usually in the older sections where the original buildings' foundations were never designed to bear the weight above them. The community responds with astonishing speed, pulling survivors from rubble with practiced efficiency and rebuilding within weeks. There is a fatalism here that outsiders find disturbing and residents find practical: the Stacks will fall and be rebuilt, like the neighborhood itself, like the people in it.",
+  "atmosphere": {
+    "sights": [
+      "Improvised high-rises stacked impossibly above original bungalows, leaning into each other across narrow streets",
+      "Murals covering every surface — saints, ancestors, political statements, and pure visual joy",
+      "The Spine commercial corridor dense with signage in Spanish, Stackspeak, and hand-painted advertisement",
+      "Rooftop goat herds silhouetted against the Meridian haze, twelve stories up",
+      "Religious processions with LED-halo saints navigating streets barely wide enough for the crowd",
+      "Laundry lines strung between buildings at every level, creating a textile canopy"
+    ],
+    "sounds": [
+      "Stackspeak — rapid, musical, incomprehensible to outsiders, carrying essential information",
+      "Corridos and cumbia playing from competing speakers at every elevation",
+      "Construction — always, somewhere, someone is building upward",
+      "Children's voices echoing down the canyon-corridors between buildings",
+      "The particular groan of structures under more weight than they were meant to bear",
+      "Church bells — actual bells, salvaged from a demolished cathedral, hung in a Stack's upper reaches"
+    ],
+    "smells": [
+      "Cooking at every level — carnitas, pupusas, tamales, the smell of a hundred kitchens in a vertical quarter-mile",
+      "Construction dust and fresh-cut salvage metal",
+      "Goat — the rooftop herds are not subtle",
+      "Incense from home altars and street-corner shrines, mixing with cooking smoke"
+    ],
+    "feel": "Overwhelming, claustrophobic, and profoundly alive. The Stacks press in from every direction — overhead, on all sides, underfoot. There is no personal space here, no solitude, no quiet. But there is community in a concentration that the corporate districts cannot imagine. Everyone knows everyone. Everyone owes everyone. The Stacks operate on a web of obligation and reciprocity so dense it constitutes a social immune system. It is simultaneously the most crowded and the most human place in Meridian 88.",
+    "tags": []
+  },
+  "demographics": "Approximately 140,000 residents in an area designed for 30,000. Predominantly Tier 1 and Tier 2, overwhelmingly Hispanic with deep roots in Mexican and Central American communities. The youngest average age of any district in the outer Corridor. Birth rates are high. Leaving rates are low. The Stacks keep their people.",
+  "economy": "",
+  "power_structure": "",
+  "dangers": [
+    "Structural collapse — the Stacks are an engineering miracle running on borrowed time",
+    "Fire — density and improvised construction make fires catastrophic and frequent",
+    "Getting lost — the vertical dimension makes navigation non-intuitive for outsiders",
+    "Territorial disputes between building-level community groups",
+    "Exploitation by outside factions who see the Stacks' population as recruitable labor",
+    "The Cragin currency's volatility — economic crises hit fast and hard in a closed system"
+  ],
+  "opportunities": [
+    "A labor force of improvised engineers who can build or fix anything with anything",
+    "The Spine's small-business corridor for supplies, services, and intelligence",
+    "Vertical territory that is effectively unsurveillable — drones can't navigate the canyon-corridors",
+    "Community loyalty that, once earned, is absolute and invaluable",
+    "Stackspeak as a natural encryption — conversations in public that outsiders cannot follow"
+  ],
+  "story_hooks": [
+    "A major structural collapse is imminent in the Stacks' oldest section, and the only engineer who can prevent it has been arrested by corporate security on fabricated charges",
+    "The Cragin currency is being counterfeited by an outside faction trying to destabilize the district's economy — the community needs someone to trace the source",
+    "A child from the Stacks has an unregistered neural interface of military origin, and someone powerful wants it back"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Hermosa Line",
+      "Montclare Quiet",
+      "The Portico",
+      "Avon Curve"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Residents who rarely leave and whose entire economy is internal",
+    "Construction crews hired out to other districts for their improvised engineering skills",
+    "Operators who need to disappear into a population dense enough to swallow them",
+    "Paralegals and community advocates working the Spine's legal corridor",
+    "Food tourists from the Circuit who come for the Spine and stay for the tamales"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.928,
+    "lng": -87.735,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "loyalty",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "rooftop",
+    "bar",
+    "survival",
+    "refugee",
+    "food",
+    "drone",
+    "fire",
+    "circuit"
+  ]
+}

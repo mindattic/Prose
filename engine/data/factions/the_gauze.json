@@ -1,0 +1,67 @@
+{
+  "id": "019d6143a890789ebc1a133681ecdc14",
+  "type": "faction",
+  "name": "The Gauze",
+  "aliases": [
+    "Gauze Runners",
+    "The Medics",
+    "Street Docs"
+  ],
+  "motto": "Everyone bleeds. We're the ones who stop it.",
+  "description": "The Gauze is a crew of fourteen unlicensed medical practitioners who operate a mobile clinic network across Chicago's Shelf. They're not a gang in the conventional sense — they don't control territory, don't deal drugs, and don't engage in violence as a business practice. But they operate outside the law, they charge for their services, and they've accumulated enough secrets from their patient list to make them one of the most politically connected groups on the Shelf. They're included in every serious power calculation because everyone — from Iron Lotus enforcers to Axiom Security contractors to freelancers like Kyle — has been on their table at some point.\n\nThe crew includes two actual former physicians, a combat medic, a veterinarian who turned out to be surprisingly good with human patients, and ten trained assistants who can handle everything from wound closure to basic augment maintenance. Their equipment is a mix of stolen, salvaged, and donated medical supplies supplemented by a 3D bioprinter that can manufacture basic pharmaceuticals and simple surgical tools. They operate out of three rotating clinic locations, moving regularly to avoid Axiom raids.\n\nThe Gauze doesn't take sides. They treat anyone who can pay, and their sliding scale goes all the way down to free for the truly destitute. They've sutured up gang members and the people those gang members shot in the same night. This neutrality is enforced by a simple reality: everyone needs a doctor sometimes, and the Gauze is the only option for people who can't afford corporate healthcare or can't risk the questions a legitimate clinic would ask.\n\nTheir real power is information. The Gauze knows who's been shot, who's been augmented, who's sick, who's pregnant, who's addicted, and who's dying. They keep these secrets absolutely — medical confidentiality is the foundation of their business — but the mere fact that they hold this information makes them valuable as allies and dangerous as enemies.",
+  "ideology": "Medicine without borders or conditions. The Gauze believes that healthcare is a right, not a product, and that providing it to people the system has abandoned is a moral imperative. This idealism is genuine and also economically convenient — it generates the goodwill and neutrality that keeps them alive.",
+  "territory": "No fixed territory. Three rotating clinic locations across Chicago's Shelf, moving every few weeks.",
+  "leadership": "",
+  "methods": [
+    "Mobile clinics — medical services provided at rotating locations to avoid detection and raids",
+    "Emergency response — on-call services for acute trauma, available to anyone who knows the contact protocols",
+    "Augment maintenance — basic cyberware upkeep and repair for people who can't afford legitimate technicians",
+    "Pharmaceutical manufacturing — a 3D bioprinter producing basic medications and surgical supplies",
+    "Strict neutrality — treating all patients regardless of faction affiliation",
+    "Information holding — accumulating medical secrets that make them politically untouchable"
+  ],
+  "resources": [
+    "Fourteen trained medical practitioners including two former physicians",
+    "Three rotating clinic locations with basic surgical capability",
+    "A 3D bioprinter for pharmaceutical and tool manufacturing",
+    "Stockpiles of medical supplies from diverse sources",
+    "A patient network that spans every faction on the Shelf",
+    "Medical intelligence — knowledge of who's injured, sick, augmented, and vulnerable"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "",
+  "story_hooks": [
+    "A patient died on the Gauze's table and the patient's faction is demanding answers — but revealing the cause of death would expose a larger conspiracy",
+    "Axiom Security is cracking down on unlicensed medicine and the Gauze needs to move — permanently — but they have nowhere to go",
+    "Someone is targeting the Gauze's supply chain, stealing shipments of medical supplies before they arrive",
+    "A Gauze medic broke confidentiality and sold patient information — the crew needs to manage the fallout before their neutrality collapses",
+    "The Gauze has been asked to treat someone whose injuries reveal evidence of a corporate atrocity — keeping quiet is complicity, but reporting it ends their neutrality"
+  ],
+  "tags": [
+    "faction",
+    "violence",
+    "combat",
+    "war",
+    "gang",
+    "secret",
+    "death",
+    "augment",
+    "cyberware",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "medical",
+    "clinic",
+    "doctor",
+    "rain",
+    "night",
+    "moral",
+    "train",
+    "drug",
+    "shelf"
+  ]
+}

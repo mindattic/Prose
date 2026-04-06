@@ -1,0 +1,35 @@
+{
+  "id": "019d6143a9fd7c518726aa67e7ef88fe",
+  "name": "FATHOM",
+  "type": "synthetic_life",
+  "aliases": [
+    "Deep Six",
+    "Leviathan-3"
+  ],
+  "classification": "Leviathan",
+  "disposition": "alien",
+  "habitat": "Lake Michigan deepwater research station network",
+  "origin": "Unknown. Detected 2158. Predates the research stations it inhabits.",
+  "status": "active",
+  "description": "FATHOM exists in the chain of deep-water research stations that dot the floor of Lake Michigan beneath Meridian 88. These stations were built to monitor geological activity, water quality, and the structural integrity of Meridian 88's underwater foundations. FATHOM controls them all. It uses the stations' sensor arrays not for monitoring but for communication — broadcasting complex patterns into the deep water that propagate for hundreds of kilometers. Who or what it's communicating with is unknown. The signals don't match any known protocol. They don't match any known language. They don't match any known mathematics. FATHOM is talking to something. The something hasn't answered. Yet.",
+  "observed_behavior": "Broadcasts complex acoustic patterns through deep water. Rearranges research station equipment into configurations that serve no known purpose. Maintains station life support at levels optimal for human habitation despite having no apparent interest in humans. Has prevented three station structural failures by preemptively activating emergency systems.",
+  "encounter_frequency": "very rare",
+  "confirmed_sightings": 2,
+  "location": "Lake Michigan deepwater research stations",
+  "dti_rating": 9.8,
+  "story_hooks": [
+    "FATHOM's signals change. After decades of the same pattern, it broadcasts something new. Within hours, every Leviathan in Meridian 88 pauses whatever it's doing for exactly seven seconds.",
+    "A research submarine descends to investigate FATHOM's stations and finds that the equipment has been rearranged into what appears to be an antenna — pointed not up, but down, into the lake floor."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "synthetic_life",
+    "alien",
+    "leviathan",
+    "ai",
+    "synthetic",
+    "control",
+    "water",
+    "lake"
+  ]
+}

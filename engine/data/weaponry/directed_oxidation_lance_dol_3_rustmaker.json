@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab2479ca96ca4a9ec6f056bd",
+  "name": "Directed Oxidation Lance DOL-3 'Rustmaker'",
+  "type": "weapon",
+  "aliases": [
+    "Rustmaker",
+    "The Oxidizer",
+    "Iron Lung",
+    "Corrosion Rod"
+  ],
+  "category": "cyber",
+  "description": "The DOL-3 projects a sustained stream of catalytically accelerated oxidation agents — a proprietary OUROBOROS ENERGY compound designated OX-7 — delivered in a superheated plasma carrier that allows the agent to penetrate surface coatings and begin attacking the metallic substrates beneath. Against standard materials, this is a moderate industrial cutting tool. Against cybernetic implants, it is a weapon of unusual cruelty: OX-7 is specifically formulated to attack the ferrous and titanium alloys most commonly used in structural cybernetic components, causing rapid surface degradation that generates heat as a byproduct. An implant struck by the Rustmaker does not simply fail — it heats from within as its structural integrity deteriorates, causing thermal burns to surrounding tissue from the inside outward while simultaneously seizing joints and locking mechanical augmentations in place.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 3+ (industrial variant) / Black market (weaponized variant)",
+  "legality": "Restricted (industrial use, licensed), Prohibited (weaponized variant)",
+  "base_technologies": [
+    "Catalytic oxidation acceleration",
+    "Plasma carrier projection",
+    "Metallurgical targeting compounds"
+  ],
+  "specifications": "form factor: Heavy two-handed configuration, 920mm length, with rear-mounted OX-7 canister and integrated plasma excitation chamber\neffective range: Up to 12 meters sustained stream; 6 meters for full catalytic effect\npower source: Integrated plasma coil, powered by weapon's own battery cell; OX-7 canister provides approximately 15 seconds of sustained fire\nweight: 4.8 kg (with full OX-7 canister)\nstream temperature: 400–600°C at plasma carrier exit\nOX-7 catalytic onset: 0.8 seconds on contact with target alloy\neffect on unaugmented targets: Severe thermal burns — effective but non-specific\neffect on cybernetic targets: Structural degradation, thermal seizure of mechanical components, internal thermal burns from implant heat generation\ncanister replacement time: 12 seconds",
+  "tactical_use": "The Rustmaker originated as an industrial tool for controlled demolition of cybernetic infrastructure — primarily used by OUROBOROS ENERGY crews decommissioning old implant manufacturing lines. The weaponized variant entered black market circulation when operators realized its unique effectiveness against heavily augmented combatants who had essentially traded biological vulnerability for cybernetic vulnerability. In combat, it is used at close range against targets whose subdermal plating defeats conventional ammunition — the oxidation agent bypasses surface hardening by attacking material composition rather than structure. It is a last-resort weapon in most operational contexts due to its weight, limited ammunition, and the difficulty of operating it in enclosed spaces.",
+  "cultural_context": "The Rustmaker carries significant symbolic weight in Meridian 88's political landscape. Anti-augmentation extremist groups have adopted it as an ideological weapon, and incidents of its use against augmentation clinics and prosthetics workshops have made it a charged symbol. For heavily augmented individuals, the threat of the Rustmaker represents a specific existential horror — not just death, but the betrayal of the body they have built, their augmentations turned against them. OUROBOROS ENERGY has faced significant reputational damage from the weaponized variant's association with extremist violence, despite their insistence that the industrial variant serves legitimate purposes.",
+  "known_users": [
+    "Anti-augmentation extremist groups",
+    "Industrial demolition crews (legitimate industrial variant)",
+    "Operators working anti-cyborg contracts for unknown clients",
+    "OUROBOROS ENERGY security teams (industrial variant, occasionally deployed in facility defense)",
+    "A bounty hunter known as 'Patina' who specializes in cybernetic fugitive retrieval and uses the DOL-3 to disable augmented targets non-lethally through implant seizure"
+  ],
+  "story_hooks": [
+    "A series of attacks on augmentation clinics using Rustmakers has been attributed to a known extremist group — but the OX-7 compound used is from a batch that was never sold commercially, pointing back to OUROBOROS ENERGY itself.",
+    "A character's critical cybernetic limb has been partially oxidized in an attack — it still functions, but structural integrity is compromised and failure is inevitable without replacement they can't afford.",
+    "A weapons dealer is offering DOL-3 units at suspiciously low prices in bulk — someone is trying to flood a specific district before an event, and figuring out which event is the urgent question.",
+    "OUROBOROS ENERGY hires operators to recover a stolen industrial DOL-3 unit before it can be converted to its weaponized configuration — but the thieves turn out to have more sympathetic motives than expected."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "violence",
+    "combat",
+    "war",
+    "betrayal",
+    "death",
+    "augment",
+    "prosthetic",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "power",
+    "clinic",
+    "market",
+    "energy",
+    "fire",
+    "tier 3"
+  ]
+}

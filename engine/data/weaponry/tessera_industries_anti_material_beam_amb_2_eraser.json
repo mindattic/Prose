@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab507bcba98284435dd0cd83",
+  "name": "Tessera Industries Anti-Material Beam AMB-2 'Eraser'",
+  "type": "weapon",
+  "aliases": [
+    "Eraser",
+    "AMB-2",
+    "Delete Gun",
+    "The Cleaner"
+  ],
+  "category": "energy",
+  "description": "A crew-served directed energy weapon that fires a sustained coherent particle beam capable of ablating solid matter at the molecular level. The AMB-2 does not burn, explode, or impact — it disassembles the target material one molecular layer at a time, converting solid matter into a fine dust that disperses on the wind. Against vehicle armor, the beam carves through plating like an invisible saw. Against structures, it cuts clean holes with mirror-smooth edges. Against biological targets, the effect is so rapid that the nervous system does not have time to register pain before the affected tissue simply ceases to exist. Tessera developed it for precision demolition of contaminated structures, and its military applications are a source of ongoing internal corporate debate.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Tessera internal — military testing only",
+  "base_technologies": [
+    "Coherent particle beam generation",
+    "Molecular ablation targeting",
+    "Fusion-powered directed energy delivery"
+  ],
+  "specifications": "beam type: Coherent particle beam\neffective range: 20-300 meters\nabalation rate: 2mm of hardened steel per second of sustained exposure\npower source: Vehicle-mounted fusion generator\nbeam diameter: 5 cm focused\nweight: 120 kg on tripod (plus generator)\ncrew: 2 operators\ncontinuous operation: 60 seconds before emitter cooling required\ncooling period: 90 seconds",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A building wall was cut open with mirror-smooth edges in a perfect rectangle — nothing in the conventional weapons catalog makes cuts like that, but a Tessera AMB-2 does.",
+    "A Tessera engineer has leaked that the AMB-2's particle beam has an unintended secondary effect — the molecular dust it produces is carcinogenic, and contamination zones around test sites are making people sick years later."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "energy",
+    "weapon",
+    "gun",
+    "ai",
+    "corporate",
+    "power",
+    "pain",
+    "vehicle",
+    "armor",
+    "fire",
+    "tier 5"
+  ]
+}

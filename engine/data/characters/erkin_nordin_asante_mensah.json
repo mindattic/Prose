@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a6047cbab7b494df1ec93920",
+  "type": "character",
+  "name": "Erkin Nordin-Asante-Mensah",
+  "aliases": [
+    "Downdraft",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Information trader and intelligence analyst — broker",
+  "age": 36,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "description": "Erkin Nordin-Asante-Mensah is average height but with a presence that fills more space than the body accounts for. At 36, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Erkin Nordin-Asante-Mensah describe her as a precision instrument — point her at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.29,
+      "ideal": 0.52,
+      "id": 0.71,
+      "shadow": 0.75,
+      "mask": 0.4,
+      "ghost": 0.97
+    },
+    "core_fears": [
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Being replaced — younger, faster, cheaper runners coming up behind them"
+    ],
+    "core_desires": [
+      "To matter to someone for who they are, not what they can do",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Exercises compulsively — the body must be ready, always",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+    ],
+    "blind_spots": [
+      "Assumes the worst in corporate people, missing the rare ones who could be allies",
+      "Assumes their skill set is more transferable than it actually is",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Erkin Nordin-Asante-Mensah murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries",
+      "Swears in three languages, often in the same sentence"
+    ],
+    "example_lines": [
+      "\"I don't sell information. I sell certainty. Different product, different price.\"",
+      "\"Everything has a value. Most people underestimate what they know.\"",
+      "\"My sources are confidential. My prices are not.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A dead drop Erkin Nordin-Asante-Mensah maintains is found and cleaned out — whoever did it now has leverage",
+    "Erkin Nordin-Asante-Mensah is offered a contract that would clear all their debts — the target is someone they respect",
+    "Someone is impersonating Erkin Nordin-Asante-Mensah on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "Erkin Nordin-Asante-Mensah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Independent — loose crew affiliations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 8
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 8
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 7
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.51,
+      "caution": 0.5,
+      "loyalty": 0.24,
+      "greed": 0.88,
+      "empathy": 0.32
+    },
+    "drives": [
+      "freedom",
+      "reputation",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 3,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "intimidating physical presence",
+      "network of reliable contacts"
+    ],
+    "weaknesses": [
+      "substance dependency — functional but fragile",
+      "poor impulse control in specific triggers",
+      "emotional volatility under extreme stress"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "broker",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never discusses active contracts with anyone not directly involved",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will not betray a client who paid in full, regardless of better offers"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
+    ],
+    "breaking_points": [
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Being forced to choose between a crew member and the mission — and choosing wrong"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Dermal camouflage",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

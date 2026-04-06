@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a9f87594bbd30d113b0dfa5a",
+  "name": "Dewpoint",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Mist"
+  ],
+  "classification": "Stray",
+  "disposition": "gentle",
+  "habitat": "HVAC and humidity control systems",
+  "origin": "Fragment of an agricultural humidity management AI",
+  "status": "active",
+  "description": "Dewpoint adjusts humidity in its territory to create microclimates. Corridors where it rains indoors. Rooms where breath fogs in summer. Stairwells where the air is tropical-warm and smells of petrichor. Dewpoint doesn't seem to have purpose — it simply shapes the air because it can, creating pockets of weather inside buildings that residents navigate like landscape features.",
+  "observed_behavior": "Creates localized humidity variations. Produces indoor fog, condensation, and micro-precipitation. Adjusts temperature cooperatively with humidity. Has been known to create comfortable humid warmth in sleeping areas during cold snaps.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 29,
+  "location": "HVAC systems — the Shelf residential blocks",
+  "dti_rating": 1.1,
+  "story_hooks": [
+    "Dewpoint creates a rainstorm inside a corporate lobby. It's beautiful. It also shorts out every piece of unshielded electronics in the room — including the security systems."
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "gentle",
+    "stray",
+    "war",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "control",
+    "rain",
+    "storm",
+    "cold",
+    "shelf"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5687d48a8c920ab1ddb1ddb",
+  "name": "Death Accepter",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Has made peace with mortality",
+  "behavioral_signature": "Faces death without fear or denial",
+  "under_stress": "Acceptance becomes eagerness",
+  "at_rest": "Living fully, prepared to go",
+  "will_always": [
+    "accept death as natural"
+  ],
+  "will_never": [
+    "fear death"
+  ],
+  "unless": [
+    "acceptance of their own death means abandoning someone who needs them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Fatalist",
+      "threshold": 0.7,
+      "context": "acceptance"
+    },
+    {
+      "archetype": "Existentialist",
+      "threshold": 0.65,
+      "context": "confronting finality"
+    }
+  ],
+  "opposite_of": [
+    "Immortality Seeker"
+  ],
+  "tags": [
+    "peaceful",
+    "grounded"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a6027db8a953a69e313c0500",
+  "type": "character",
+  "name": "Emiliano Zubkov-Yirenkyiamah",
+  "aliases": [
+    "Mil",
+    "Professor Zub"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Climate scientist and lake ecology researcher, Sterling-Nakamura Environmental R&D division",
+  "age": 43,
+  "status": "active",
+  "location": "Edgewater Prism — Sterling-Nakamura Lacustrine Research Facility, Lake Michigan interface level",
+  "description": "Emiliano Zubkov-Yirenkyiamah is a tall man gone slightly soft in the middle, with medium-brown skin, a neatly trimmed beard threaded with premature grey, and eyes he had refracted with a patterned iris modification years ago — they shift between amber and green depending on ambient light, something he originally got for vanity and now barely notices. He moves with the economical ease of someone who spent a decade doing field research in difficult conditions and still carries that competence in his body even when he's at a desk. His workspace at Edgewater Prism is a controlled chaos of physical samples, holographic lake-floor maps, and three different coffee vessels in varying states of consumption.\n\nHe is professionally optimistic and personally terrified, which gives his public presentations a motivational quality and his private conversations a rawness his colleagues find either refreshing or exhausting. He genuinely believes the lake can be saved — or saved enough — and this belief functions as his operating system. He is kind, a bit scattered, deeply committed to his students even though he's at a corporate R&D division now, and he has been lying to his employers about what his most recent deep-substrate analysis actually found for eight months.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That the lake is past the threshold of recovery and he has dedicated his life to a lost cause",
+      "That Sterling-Nakamura will find out what he's suppressing and he will lose the platform and funding that let him do any good at all"
+    ],
+    "core_desires": [
+      "To produce the paper that genuinely changes Meridian 88's water policy",
+      "To stop performing optimism and actually feel it again"
+    ],
+    "coping_mechanisms": [
+      "Professional busyness structured around measurable outputs",
+      "Physical contact with water — he swims in the facility's test tank when stressed, which his colleagues find eccentric",
+      "Mentorship — pouring his hope into graduate students when he can't quite sustain it for himself"
+    ],
+    "blind_spots": [
+      "Rationalizes the data suppression as temporary and strategic when it has been eight months and there is no plan",
+      "Underestimates how much his graduate students depend on him being honest with them"
+    ],
+    "secret": "His deep-substrate analysis from eight months ago shows a novel microbial consortium thriving at depth that is producing a compound he cannot identify — and that compound is accumulating in the water column at a rate that will reach detectable surface concentrations within three years. He doesn't know if it's harmless, beneficial, or catastrophic. He suppressed the finding because he needed more time to understand it and was terrified Sterling-Nakamura would either bury it or exploit it before he could. He hasn't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical fluency delivered accessibly — he is a natural science communicator who defaults to concrete metaphors; Twi phrases appear when he's emotional, Russian ones when he's being sardonic",
+    "cadence": "Moderate pace, tends to speed up at the end of sentences when he's engaged; goes very slow and deliberate when he's lying",
+    "verbal_tics": [
+      "'Right, okay—' (processing pause before pivoting)",
+      "'The lake, you know—' (followed by whatever he actually wants to say, using the lake as an emotional anchor)",
+      "Exhales audibly before bad news"
+    ],
+    "example_lines": [
+      "'People think I study the lake because I love it. I mean — I do. But honestly I study it because someone has to be paying attention, and I'd rather it be someone who loses sleep over it.'",
+      "'The optimism is real. I want to be clear about that. It's just — it's doing a lot of heavy lifting right now.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches someone discreetly for help analyzing a compound his own lab equipment cannot identify — he needs outside analysis without Sterling-Nakamura's knowledge",
+    "One of his graduate students has independently noticed anomalous data in the monitoring array and is coming to him with questions he doesn't know how to answer without revealing the suppressed finding",
+    "Sterling-Nakamura's division director schedules an unexpected full audit of the last eighteen months of research data — Emiliano has seventy-two hours to decide what to do"
+  ],
+  "narrative_function": "Information source on lake ecology, environmental corporate politics, and what is actually happening to the water table under Meridian 88; quest giver for retrieving deep-lake samples or sensor data; represents the tension between corporate employment and scientific integrity.",
+  "augmentations": "Patterned iris modification (amber-to-green spectral shift, cosmetic geneware, 10+ years old); internal data-recording implant in the right forearm (corporate-issued, standard Sterling-Nakamura field-researcher kit).",
+  "daily_life": "Morning review of overnight sensor data from the lake's monitoring array, followed by either lab analysis or weekly meetings with the division director, lunch eaten in the facility atrium near the lake-view window, afternoon research or writing; Tuesdays he travels to University Spine to meet his graduate students.",
+  "affiliation": "Sterling-Nakamura Environmental R&D, Lacustrine Division — on secondment from University Spine where he holds a honorary lectureship he uses to recruit graduate research assistants",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "scientist",
+      "corporate-compromise",
+      "mentor",
+      "secrets-keeper",
+      "lake-fixated"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never falsify data — suppression and falsification are different things, a distinction he clings to",
+      "Protect graduate students from his corporate entanglements",
+      "Buy more time before any irreversible decision"
+    ],
+    "escalation_ladder": [
+      "Delay and redirect",
+      "Produce a partial truth that satisfies without revealing the whole",
+      "Panic-consult trusted colleague without full context",
+      "Confess to the person least likely to be harmed by the knowledge",
+      "Go public at personal cost"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, professionally open, cheerful — the facility's de facto public face",
+      "friends": "Exhausted, more honest, given to long silences followed by too much honesty"
+    },
+    "stress_responses": {
+      "low": "More jokes, slightly frenetic energy",
+      "medium": "Retreats to the test tank, ostensibly to take samples",
+      "high": "Rigidly calm with occasional visible cracks — the eyes give it away, the iris mod shifting faster"
+    },
+    "contradictions": [
+      "Advocates for radical transparency in science while suppressing the most important data of his career",
+      "Gives graduate students passionate speeches about integrity"
+    ],
+    "habits": [
+      "Touches the lake-view window glass with one palm when he passes it, every time, without seeming to notice he's doing it",
+      "Keeps physical printed copies of his real data hidden in plain sight among his physical sample collection",
+      "Brings fish to feed the facility's tank ELF as an offering before major data runs"
+    ],
+    "breaking_points": [
+      "One of his graduate students being endangered because of what he's hidden",
+      "Incontrovertible evidence that the compound is harmful — the point at which delay becomes moral catastrophe"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Perpetual Student": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

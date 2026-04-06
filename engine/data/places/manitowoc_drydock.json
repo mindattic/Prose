@@ -1,0 +1,95 @@
+{
+  "id": "019d6143a926791ebaacb69f31f9bac2",
+  "type": "place",
+  "name": "Manitowoc Drydock",
+  "aliases": [
+    "Manitowoc",
+    "The Drydock",
+    "Ship Town",
+    "Hull City"
+  ],
+  "description": "Manitowoc built submarines during World War II. This is the fact that the city's tourism board led with for seventy years, and it is the fact that Ringo Defense Solutions led with when they acquired the Manitowoc shipyard in 2166. The original submarine pens have been expanded, modernized, and classified. What Ringo builds in them now is not publicly disclosed, but the electromagnetic signatures that leak from the facility on production days are consistent with large-scale drone submarine fabrication, and the cargo vessels that depart from Ringo's restricted dock do so on Lake Michigan's busiest shipping lanes without transmitting the legally required navigation identifiers. The old maritime museum still displays a World War II submarine. The schoolchildren who visit it are not told what the facility next door produces. The teachers who bring them know and have made their peace with it.\n\nManitowoc Drydock is the northernmost significant industrial facility on the western Lake Michigan shore, positioned at the geographic midpoint between Milwaukee and Green Bay. This position makes it a logistics hub for the upper Corridor — cargo that needs to move between the Milwaukee sprawl and the Fox Cities or Green Bay passes through Manitowoc's civilian port, which operates alongside but legally separate from Ringo's military facility. The civilian port is managed by Great Lakes Logistics Corp, an Axiom subsidiary, and handles the mundane cargo that keeps the northern Corridor fed, clothed, and supplied with the components its economy requires. The civilian port employs 3,000 people. Ringo employs an estimated 5,000, though the actual number is classified because the facility's personnel count is designated as 'operational security information,' which is the kind of classification that makes you wonder what they're building that requires that many people.\n\nThe city itself is small, cold, and defined by the lake. Manitowoc has always been a lake town — the water is visible from nearly every street, the wind comes off it twelve months a year, and the economy has been lake-dependent since before the city was incorporated. The residential neighborhoods are working-class, built to withstand Wisconsin winters that have become more extreme as climate patterns shifted, producing ice storms and lake-effect snow events that would have been considered catastrophic in the 20th century and are considered Tuesday in the 22nd. The houses are built heavy, insulated deep, and designed to withstand winds that periodically exceed the structural ratings of anything built before 2140. The people who live here are built similarly.",
+  "atmosphere": {
+    "sights": [
+      "The Ringo facility — a walled industrial compound on the lakefront, its buildings massive enough to house submarine-scale fabrication, topped with sensor arrays and comm equipment",
+      "The civilian port — cranes, container yards, and cargo vessels, smaller and older than Waukegan's but continuously active",
+      "Lake Michigan — vast and visible from everywhere, grey-green in summer, ice-sheeted in winter, always present",
+      "Residential neighborhoods huddled against the wind — heavy houses with reinforced construction, designed for survival, not aesthetics",
+      "The maritime museum — a small building with a submarine parked next to it, visited by schoolchildren who have no idea what's being built next door"
+    ],
+    "sounds": [
+      "Wind — constant, off the lake, carrying the sound of water and industry in equal measure",
+      "Ringo facility — audible as a deep, industrial vibration when production is active, felt more than heard in the surrounding blocks",
+      "Civilian port operations — cranes, container handling, ship engines, the working sounds of a lake port",
+      "Lake Michigan — waves against the breakwater, ice grinding against the shore in winter, the lake's sound changing with every season",
+      "The winter — ice storms, wind, and the particular sound of a community battening down, which it does with practiced efficiency"
+    ],
+    "smells": [
+      "Lake Michigan — the strongest lake smell on the western shore, clean when the wind is from the east, industrial when it's from the south",
+      "Port operations — marine diesel, container treatment, the salt-mineral smell of lake shipping",
+      "The Ringo facility — an electromagnetic ozone smell that carries on heavy production days, officially attributed to 'atmospheric calibration equipment'",
+      "Winter — cold, clean, and metallic, the smell of a Wisconsin winter that has been getting worse for fifty years"
+    ],
+    "feel": "Isolated, hardworking, and deliberately uninquisitive. Manitowoc's residents have learned that the less they ask about the Ringo facility, the more stable their economy remains. The town has the character of every military-adjacent community: practical, patriotic in a way that doesn't examine what the patriotism supports, and bound by the understanding that the facility's presence is both the reason the town exists and the reason the town can't grow beyond it. The lake dominates everything — the weather, the economy, the view, and the emotional landscape. You don't live in Manitowoc unless you've made your peace with water.",
+    "tags": []
+  },
+  "demographics": "Approximately 38,000 residents. Tier 2. Historically white, working-class, lake-dependent. The Ringo facility's workforce includes transferred personnel from other Ringo installations, creating a small but distinct military-contractor community. Multi-generational families predominate — Manitowoc's isolation limits in-migration, and the people who stay do so because they've chosen the lake and the work it provides.",
+  "economy": "Ringo Defense Solutions facility (estimated 5,000 employees, classified production). Great Lakes Logistics Corp civilian port (3,000 employees). Maritime service economy. The dual-facility economy makes Manitowoc more economically stable than comparably sized Corridor cities, at the cost of economic dependency on two employers whose interests don't always align with the community's.",
+  "power_structure": "Ringo holds de facto authority through economic dominance and the security classification that gives the facility's commander significant jurisdictional latitude. The civilian port operates under Axiom's Great Lakes Logistics subsidiary. The Milwaukee Administrative Zone's authority extends to Manitowoc in theory; in practice, the distance and the Ringo facility's classified status create an autonomy gap that the local government fills with the usual combination of pragmatism and resignation.",
+  "dangers": [
+    "Ringo security — the classified facility's security perimeter is enforced with the kind of intensity that suggests the contents are worth the enforcement",
+    "Lake conditions — ice storms, extreme winds, and lake-effect weather create genuine survival hazards six months of the year",
+    "Economic dependency — the Ringo facility and the civilian port employ 8,000 of the town's 38,000 residents, and a shutdown of either would be catastrophic",
+    "Information control — asking too many questions about the Ringo facility draws attention from Ringo's intelligence division, which operates in Manitowoc with the assumption that every resident is a potential leak",
+    "Isolation — the nearest significant medical, legal, or emergency resources are in Milwaukee, hours away by surface transit"
+  ],
+  "opportunities": [
+    "Ringo intelligence — the classified facility leaks information through its workforce, its supply chain, and the electromagnetic signatures that physics prevents it from concealing",
+    "Civilian port access — the logistics hub connects Milwaukee, the Fox Cities, and Green Bay, and access to that network has strategic value",
+    "Lake routes — Manitowoc's position provides water access to destinations across Lake Michigan, including the eastern shore",
+    "Military technology — whatever Ringo is building, the supply chain and waste stream contain information about capabilities the corponation hasn't disclosed"
+  ],
+  "story_hooks": [
+    "A Ringo facility worker has gone missing, and the facility's response — immediate lockdown, information blackout, and a security team deployment that exceeds what a missing person would justify — suggests the worker took something when they left",
+    "The civilian port has received a cargo manifest that lists the Ringo facility as the destination, but Ringo's logistics office says they didn't order anything. The cargo's point of origin is a Zheng-Dao facility in Singapore.",
+    "A winter storm has damaged the Ringo facility's perimeter, and for twelve hours before repair crews arrived, residents of the adjacent neighborhood could see inside the compound. What they saw is being discussed quietly and carefully."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Sheboygan Reef (south, along lakefront)",
+      "The Fox Cities Nexus (northwest, via inland corridor)",
+      "Lake Michigan shipping routes (east)",
+      "The northern agricultural zone (west)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Ringo facility personnel — a closed community within the community",
+    "Civilian port workers and shipping crews",
+    "Multi-generational Manitowoc families whose relationship with the lake predates every institution around them",
+    "Logistics operators moving cargo between Milwaukee and the northern Corridor"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 44.0886,
+    "lng": -87.6576,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "storm",
+    "cold",
+    "survival",
+    "drone",
+    "water",
+    "lake"
+  ]
+}

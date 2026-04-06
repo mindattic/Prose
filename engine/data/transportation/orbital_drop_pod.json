@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa6b73ed8767d36fde5774a4",
+  "name": "Orbital Drop Pod",
+  "type": "transportation",
+  "aliases": [
+    "Drop Pod",
+    "The Nail",
+    "Sky Coffin"
+  ],
+  "category": "exotic",
+  "manufacturer": "Arcturus Defense",
+  "description": "A single-use reentry vehicle designed to deliver personnel or cargo from orbit to surface in minutes. A ceramic heat shield, a retro-rocket package, and a prayer. Drop pods are deployed from orbital stations when something on the ground needs an immediate response that can't wait for a shuttle. The reentry is violent, the landing is harder, and the contents arrive hot, disoriented, and ready. Seeing a drop pod streak across the Meridian 88 sky means something significant is about to hit the ground.",
+  "propulsion": "Orbital deceleration rockets, parachute/retro-rocket terminal descent",
+  "speed": "Terminal velocity on descent, 0 on arrival (ideally)",
+  "capacity": "1 person or 500 kg cargo",
+  "range": "Orbit to surface (one way)",
+  "tier_availability": "Military/Arcturus Defense only",
+  "cost": "Φ100,000 per pod (single use)",
+  "autonomy": "Automated descent with manual override for occupant",
+  "armament": "None. The pod itself is a kinetic weapon if the retro-rockets fail.",
+  "common_usage": "Emergency personnel deployment, priority cargo delivery, orbital-to-surface insertion.",
+  "story_hooks": [
+    "A drop pod lands in a Tier 1 district and no one claims it — the occupant walks out and disappears into the crowd",
+    "Three drop pods land simultaneously in three different districts, each containing an identical sealed case"
+  ],
+  "tags": [
+    "exotic",
+    "transportation",
+    "weapon",
+    "ai",
+    "elf",
+    "vehicle"
+  ]
+}

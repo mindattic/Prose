@@ -1,0 +1,215 @@
+{
+  "id": "019d6143a64a78a49394444c52e73a77",
+  "type": "character",
+  "name": "Lilavati Oumarou-Björnsdóttir",
+  "aliases": [
+    "Lila",
+    "The Pamphleteer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Anti-corporate agitator and underground press distribution coordinator",
+  "age": 19,
+  "status": "active",
+  "location": "The Shelf",
+  "description": "Lilavati is small and quick, with brown skin, large dark eyes, and hair she keeps dyed in aggressively shifting colors — currently a deep violet that fades to white at the tips. She has cat ears, soft and dark-furred, that she was born with after her mother's geneware expressed during pregnancy in ways the clinic didn't predict — they're fully functional and she's learned to keep them flat when she doesn't want to broadcast her emotions, which she is still practicing. She dresses for mobility and invisibility: nothing that snatches on a fence, nothing that can't be replaced.\n\nLilavati is nineteen and has been distributing underground printed materials since she was fifteen. She found the Shelf's pirate printing collective through a friend of a friend and has never left. She is fierce, impulsive, sometimes reckless, and possessed of a political analysis far beyond her years that she picked up from obsessive reading and the kind of education you get when everyone around you is fighting for something. She is also, underneath the front, genuinely scared most of the time, which is why she keeps moving.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being arrested and losing the years she hasn't lived yet",
+      "That her anger is just anger and not actually connected to anything useful"
+    ],
+    "core_desires": [
+      "To matter — to do something that actually changes something",
+      "To find people who won't leave"
+    ],
+    "coping_mechanisms": [
+      "Movement — literally running",
+      "Printing things — the physicality of it calms her",
+      "Bravado"
+    ],
+    "blind_spots": [
+      "Conflates personal courage with political strategy — they are not the same",
+      "Her contempt for people she sees as insufficiently committed reads, correctly, as youth"
+    ],
+    "secret": "She took a print job six months ago from someone she didn't vet properly. The material turned out to be a disinformation piece designed to fracture a labor coalition — she didn't realize it until after distribution. She's told no one and has been quietly trying to trace how much damage it did."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and argot-heavy, Shelf street vernacular mixed with political vocabulary she's absorbed from print; occasionally formal when she's quoting something she's read",
+    "cadence": "Rapid-fire, interrupts herself, loops back",
+    "verbal_tics": [
+      "'Obviously'",
+      "'No, but listen—'",
+      "Her cat ears go flat when she's defensive, which she's learned people notice before she does"
+    ],
+    "example_lines": [
+      "'No, but listen — they're not incompetent, obviously. The delays are the policy. You can't keep making the mistake of assuming they want the same outcome we do.'",
+      "'I've distributed forty-seven editions in this neighborhood. Forty-seven. You're going to tell me I don't know this street?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The disinformation piece she unknowingly distributed is now being traced back to the Shelf collective — she needs to figure out who set her up before her collective does",
+    "She's intercepted a print order that appears to be someone inside a Zheng-Dao facility trying to smuggle out documentation of something serious",
+    "An older organizer has taken her under their wing in a way that feels genuine but also feels like she's being positioned for something"
+  ],
+  "narrative_function": "Local color, information courier, spontaneous local contact — she knows the Shelf's physical geography and social landscape intimately and can move through it quickly. Represents the next generation of political consciousness. Can get things places quickly and quietly.",
+  "augmentations": "Inherited geneware expression: functional cat ears (dark fur, fully sensory); no purchased augmentations — can't afford them",
+  "daily_life": "Shifts at a noodle prep job in the Shelf's market strip three mornings a week. Rest of her time split between the collective's print room, running distribution routes through the Shelf and adjacent neighborhoods, and attending whatever meeting or action is happening.",
+  "affiliation": "The Shelf Pirate Print Collective; informal connection to the HPAZ distribution networks",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "young",
+      "agitator",
+      "courier",
+      "reckless",
+      "print-collective"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Act first, assess second — sometimes it works",
+      "Protect the collective over herself",
+      "Don't print anything you wouldn't stand behind with your name on it (she has broken this rule once)"
+    ],
+    "escalation_ladder": [
+      "Talks loudly and publicly about the problem",
+      "Prints something about it",
+      "Shows up in person and in numbers",
+      "Does something inadvisable"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and a little bristly — she's been burned; warms up fast once she decides you're okay",
+      "friends": "Fiercely loyal, funny, shows trust by asking for help (hard for her)"
+    },
+    "stress_responses": {
+      "low": "Gets louder and more opinionated",
+      "medium": "Goes very quiet and starts printing obsessively",
+      "high": "Runs — physically, on foot, until she tires herself out, then makes a plan"
+    },
+    "contradictions": [
+      "Prints things in the name of collective voice but makes distribution decisions unilaterally",
+      "Claims not to care about recognition while tracking obsessively whether people read what she puts out"
+    ],
+    "habits": [
+      "Talks to the collective's ancient risograph printer like it can hear her — she half-believes it's inhabited by a minor E.L.F. she's named 'the Compositor'",
+      "Leaves ink-stained handprints on walls in neighborhoods she's worked — a signature she's never admitted to",
+      "Eats standing up, always, never sits for meals"
+    ],
+    "breaking_points": [
+      "Being directly responsible for harm to someone in her collective",
+      "The Compositor — the printer — being destroyed or seized"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Safety First": 0.9,
+    "Improviser": 0.9,
+    "Lone Wolf": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Shelf; Nigerien-Icelandic heritage; cat ears present at birth due to inherited geneware expression",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First contact with the Shelf Pirate Print Collective at age 15 through a school friend",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins running distribution routes independently",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Unknowingly prints and distributes a disinformation piece; damage currently unquantified",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Present day — managing fallout quietly while maintaining active distribution schedule",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

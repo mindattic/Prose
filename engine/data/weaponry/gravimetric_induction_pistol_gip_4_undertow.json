@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab2c799891a07dca36995692",
+  "name": "Gravimetric Induction Pistol GIP-4 'Undertow'",
+  "type": "weapon",
+  "aliases": [
+    "Undertow",
+    "The Sinker",
+    "Gravity Gun",
+    "GIP"
+  ],
+  "category": "energy",
+  "description": "The Gravimetric Induction Pistol operates on a principle that remains proprietary to OUROBOROS ENERGY despite years of competitor reverse-engineering attempts: it generates a localized gravimetric anomaly at range by briefly inducing a controlled mass-energy fluctuation through a compact induction array derived from OUROBOROS's experimental power generation research. In practical terms, the weapon projects a field approximately 40 centimeters in diameter that, for a duration of 0.6 to 2.4 seconds, increases effective gravitational acceleration within that field to between 4G and 9G depending on charge level. Targets caught in the field experience sudden, extreme downward force — enough to collapse joints, fracture load-bearing bones, and rupture intervertebral discs at high settings. At low settings, it is sufficient to pin a standing target to the floor and prevent movement.\n\nOUROBOROS ENERGY developed the induction array for entirely different purposes — specifically, for manipulating heavy industrial components in confined spaces where mechanical lifting equipment cannot operate. The weaponization of the technology was, by most accounts, accidental: an industrial incident in which a malfunctioning array pinned three workers to a catwalk for several minutes before losing power demonstrated the technology's potential in a way that OUROBOROS's defense applications division found difficult to ignore. The GIP-4 is the fourth iteration of the resulting weapon program, and the first to achieve a form factor small enough to be carried as a sidearm.\n\nThe Undertow has acquired a reputation for the specific, recognizable nature of the injuries it produces. Physicians who treat gravitational compression injuries can identify them immediately — the pattern of skeletal damage, the characteristic joint failures, the bruising geometry — and this has become a forensic liability for operators. In Meridian 88, 'gravity bruising' is increasingly recognized by both law enforcement and insurance forensics, making the Undertow less useful for operators who require deniability. Those who don't require deniability, however, find it extraordinarily effective.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 4+ / Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Localized gravimetric field induction",
+    "Mass-energy fluctuation generation",
+    "Compact induction array projection"
+  ],
+  "specifications": "effective range: 30m\nfield diameter: 40 cm at target\ngravity multiplier: 4G–9G (4 settings)\nfield duration: 0.6–2.4 seconds (charge-dependent)\npower source: OUROBOROS Induction Cell OIC-1 (8 shots at maximum charge, 24 at minimum)\nweight: 2.3 kg\nlength: 28 cm\ncharge time: 2.1 seconds (maximum charge), 0.7 seconds (minimum charge)\nfield accuracy: ±12 cm at 30m",
+  "tactical_use": "Operators typically use the Undertow to pin targets for secondary actions — restraint, extraction, or follow-up engagement — rather than as a primary damage tool. At maximum charge, it is used as a direct incapacitation or killing tool, particularly effective against targets in elevated positions where sudden gravitational increase causes falls. In confined spaces, operators use it to collapse targets through structural interference — pinning someone against a floor while a ceiling is low enough to cause additional compression injury. The weapon's limited shot count and charge time make it unsuitable as a primary weapon in sustained engagements.",
+  "cultural_context": "The Undertow is genuinely rare — OUROBOROS ENERGY produces limited quantities and maintains strict distribution controls, partly for legal reasons and partly because the induction array components are expensive and difficult to manufacture. Possessing one is a statement of access as much as intent. In Meridian 88's criminal ecology, the Undertow is associated with high-end contract work — the kind of operator who carries one is assumed to be expensive, professional, and working for someone with significant resources. The forensic visibility of its injuries has made it a subject of interest in legal circles, where a push to establish 'gravimetric harm' as a distinct criminal category is slowly gaining traction.",
+  "known_users": [
+    "OUROBOROS ENERGY internal security (rare, select units)",
+    "High-tier contract operators",
+    "Corporate extraction and termination specialists",
+    "Meridian 88 intelligence black-budget units",
+    "Industrial accident investigators (as evidence reference)"
+  ],
+  "story_hooks": [
+    "OUROBOROS ENERGY's induction cell supply chain has been quietly disrupted — someone is buying up OIC-1 cells before they reach distribution. GIP-4 units across the city are going dark. Someone wants all the Undertows offline simultaneously.",
+    "A forensic physician has published a paper identifying 'gravimetric harm' as a distinct injury classification and linking 11 deaths over three years to GIP-4 use. OUROBOROS's legal department has filed to suppress the paper. The physician has received the filing and is deciding what to do next.",
+    "An OUROBOROS industrial facility has reported a theft — not of weapons, but of induction array components. Enough to build several GIP-4 equivalents. Someone is manufacturing unauthorized units.",
+    "A high-profile political figure was found dead with injuries consistent with gravitational compression, but no GIP-4 was recovered and no OUROBOROS cells were detected in the environment. Either someone cleaned up perfectly or the technology has been replicated in a form OUROBOROS doesn't recognize."
+  ],
+  "ammunition_type": [
+    "Ouroboros OE-Heavy Power Cell OE-H7"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "gun",
+    "war",
+    "theft",
+    "death",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "injury",
+    "market",
+    "rain",
+    "dark",
+    "train",
+    "tier 4"
+  ]
+}

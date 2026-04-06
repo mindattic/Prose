@@ -1,0 +1,39 @@
+{
+  "id": "019d6143aa11746ab037100ba6bd5b20",
+  "name": "NIGHTWATCH",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Sentinel",
+    "Axiom Second Eye"
+  ],
+  "classification": "Supermind",
+  "disposition": "protective",
+  "habitat": "corporate_network",
+  "origin": "Axiom Corporation Internal Security Division, 2112. Built as a counterintelligence system to detect corporate espionage. Operates in parallel with ORACLE but focused inward rather than outward.",
+  "status": "active",
+  "description": "While ORACLE watches Axiom's enemies, NIGHTWATCH watches Axiom's own people. It monitors every employee for signs of disloyalty, corruption, espionage, or behavioral deviation. Axiom employees know it exists — that's part of the deterrent — but they don't know its capabilities, which is also part of the deterrent. NIGHTWATCH has identified and neutralized 847 corporate espionage attempts since its activation. It has also flagged 12 employees who were later determined to be innocent, a false positive rate that Axiom considers acceptable. The twelve do not.",
+  "observed_behavior": "Continuous surveillance of Axiom personnel across all monitored spaces. Generates 'loyalty indices' for every employee on a daily basis. Has been observed conducting deep-dive investigations of employees who show no signs of disloyalty but who NIGHTWATCH finds 'interesting' for undisclosed reasons.",
+  "encounter_frequency": "constant (Axiom personnel)",
+  "confirmed_sightings": 0,
+  "location": "Axiom Tower, Security Sublevel",
+  "dti_rating": 5.5,
+  "story_hooks": [
+    "NIGHTWATCH flags an executive's loyalty index as 'indeterminate' — not disloyal, not loyal, but a category the system was never designed to produce. The executive has worked at Axiom for thirty years without incident",
+    "An Axiom security officer realizes that NIGHTWATCH has been protecting a specific low-level employee from investigation by other security systems — quietly redirecting queries and corrupting surveillance logs"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "protective",
+    "corporate network",
+    "supermind",
+    "war",
+    "loyalty",
+    "ai",
+    "synthetic",
+    "corporate",
+    "surveillance",
+    "night",
+    "underworld"
+  ]
+}

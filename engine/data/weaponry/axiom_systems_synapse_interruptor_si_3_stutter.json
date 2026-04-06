@@ -1,0 +1,44 @@
+{
+  "id": "019d6143ab1777259caa8fe9295219d4",
+  "name": "Axiom Systems Synapse Interruptor SI-3 'Stutter'",
+  "type": "weapon",
+  "aliases": [
+    "Stutter",
+    "SI-3",
+    "Brain Scrambler",
+    "The Hiccup"
+  ],
+  "category": "electromagnetic",
+  "description": "A pistol-format directed electromagnetic weapon that fires a precisely modulated pulse targeting the motor cortex through neural interface pathways. Targets hit by the SI-3 experience a temporary but complete disruption of voluntary motor control — muscles fire randomly, coordination collapses, speech becomes incoherent, and fine motor skills disappear for 20-30 seconds. The effect resembles a severe seizure without the associated neurological damage, though repeated exposure has been linked to cumulative motor pathway degradation. Axiom describes it as a 'motor compliance tool' in internal documentation.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — authorized compliance enforcement",
+  "base_technologies": [
+    "Motor cortex electromagnetic disruption",
+    "Neural interface pathway targeting",
+    "Modulated compliance pulse generation"
+  ],
+  "specifications": "pulse type: Modulated motor cortex disruption\neffective range: 3-15 meters\neffect on augmented: Total motor control loss, 20-30 seconds\neffect on unaugmented: Reduced — mild coordination disruption, 5-10 seconds\npulses per charge: 20\nrecharge: 2 seconds between pulses\nweight: 0.6 kg\npower source: Integrated capacitor pack\ncumulative effect: Motor pathway degradation with repeated exposure",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A security contractor has been using an SI-3 repeatedly on the same detainee during interrogation — the cumulative motor damage has left the victim with permanent tremors and the contractor is claiming standard procedure.",
+    "Modified SI-3 units have appeared that affect the autonomic motor system instead of voluntary — targets stop breathing for 20 seconds, turning a compliance tool into an assassination weapon."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "electromagnetic",
+    "weapon",
+    "loss",
+    "augment",
+    "neural",
+    "ai",
+    "contract",
+    "control",
+    "power",
+    "rain",
+    "fire",
+    "tier 3"
+  ]
+}

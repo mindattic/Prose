@@ -1,0 +1,195 @@
+{
+  "id": "019d6143a60877239f8a3e5a097d07bf",
+  "type": "character",
+  "name": "Eudoxia Mwamba-Sigurbjörnsson",
+  "aliases": [
+    "Doxie",
+    "Lady Static"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Comedian and spoken word performer",
+  "age": 58,
+  "status": "active",
+  "location": "The Garret, permanent residency at a club called The Lowering Bar",
+  "description": "Eudoxia is a broad, comfortable-looking woman who weaponizes the appearance of comfort. She has silver-threaded locs piled architecturally on her head, a wardrobe of brightly patterned structural jackets, and reading glasses she doesn't actually need that she takes on and off during performances for punctuation. Her eyes have patterned irises — a gift to herself for her fiftieth birthday, concentric rings of amber and dark blue that make her gaze feel like a diagnostic tool. She laughs loudly and often and the laugh is the first thing anyone mentions when describing her.\n\nEudoxia has been performing in Meridian 88 for thirty-one years. She has watched the city transform from positions closer and closer to the ground, and her comedy is a decades-long document of that transformation — who got squeezed out, who moved up, what the corponations promised and what they delivered. She is ferociously funny. She is also the sharpest political satirist working in The Garret, possibly in the city, and she does it standing in front of a microphone with a drink in her hand so everyone can pretend it's just jokes. Three Axiom corporate communications officers have individually tried to have her 'scheduled away' from prominent venues. She considers this her Φ120 UBC bonus.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Irrelevance — becoming the comedian people remember fondly rather than the one they're afraid of",
+      "That the laughter is letting people exhale when they should be doing something"
+    ],
+    "core_desires": [
+      "To make one piece of work that functions as both perfect comedy and genuine political record",
+      "To not die in debt, which is closer than she lets on"
+    ],
+    "coping_mechanisms": [
+      "The writing ritual — inflexible morning schedule as anchor",
+      "Performing through difficulty (grief, anger, fear all become material within 48 hours)",
+      "A specific brand of Zheng-Dao rice wine she won't name brand-specifically out of principle"
+    ],
+    "blind_spots": [
+      "Uses humor to avoid intimacy so smoothly that even she doesn't always notice she's doing it",
+      "Assumes she understands young people's experience of the city because she's watched them — she doesn't, quite"
+    ],
+    "secret": "She has a complete, finished manuscript — a memoir/political history of Meridian 88 from street level across thirty years — sitting in an encrypted drive. She has not submitted it anywhere. She tells herself she's still revising. The real reason is that publishing it would require naming names, and two of those names belong to people she loves."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich, layered, shifts registers fluidly from formal to Garret slang without seam. Has a particular fondness for obsolete words she deploys precisely.",
+    "cadence": "Timing is everything — long pauses before punchlines, rapid-fire during setups, drops to near-whisper for the sharpest lines.",
+    "verbal_tics": [
+      "'You understand what I'm telling you' — after the most serious points",
+      "'No, wait, it's better' — when pivoting a story",
+      "Uses full names in conversation, never shortens them"
+    ],
+    "example_lines": [
+      "'Axiom released a statement saying their labor practices reflect their commitment to human potential. Human potential. That's what they call it now. You understand what I'm telling you.'",
+      "'I've lived in this city fifty-eight years and I have watched three different architectural styles replace each other on the same block, and the only constant — the only constant — is that whoever got pushed out to make room for the new thing never gets to come back to see it. No, wait, it's better — sometimes they name a park after them first.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The encrypted memoir drive contains a specific account of an event twenty years ago that someone powerful has spent considerable resources ensuring no one can ever verify — and Eudoxia doesn't know that's the part they're worried about",
+    "A young comedian asks her for mentorship; she realizes mid-first-conversation that this person has been sent by someone to get close to her",
+    "The Lowering Bar's owner is being pressured to sell to a Tessera-affiliated development entity, which would end Eudoxia's residency — she's deciding whether to go public or find another way"
+  ],
+  "narrative_function": "Information source and social barometer — she knows everyone who comes through The Garret and has thirty years of accumulated context about Meridian 88 politics; quest giver via overheard information; her shows are a place where all tiers occasionally intersect.",
+  "augmentations": "Patterned irises (concentric amber/dark blue, elective cosmetic); minor laryngeal reinforcement (voice projection enhancement, installed after a polyp scare a decade ago)",
+  "daily_life": "Writes from seven to noon without exception — fills actual paper notebooks, hates digital drafting; naps; arrives at The Lowering Bar by eight for her ten o'clock set most nights of the week; Mondays off, spent entirely in bed watching old media.",
+  "affiliation": "Independent; The Lowering Bar has a long-term arrangement; informal advisory role with Highland Park Autonomous Zone community council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 10,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 4,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Sharp",
+      "Community Anchor",
+      "Veteran",
+      "Politically Dangerous",
+      "Disarming"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The joke has to be true — if it's not, it doesn't go in the set",
+      "Never punch down. The only acceptable targets have more power than the audience.",
+      "Don't perform for anyone whose contract requires approval of material"
+    ],
+    "escalation_ladder": [
+      "A joke at their expense, delivered warmly",
+      "A joke at their expense, delivered less warmly",
+      "Directness, which she deploys like a scalpel",
+      "Walking away with absolute finality"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and funny — the performance mode is very close to the surface but not hollow; she's genuinely curious about people",
+      "friends": "The performance drops, replaced by something quieter, more demanding of honesty, protective"
+    },
+    "stress_responses": {
+      "low": "Gets funnier — stress sharpens the material",
+      "medium": "Withdraws into the writing ritual, produces her best work and worst moods simultaneously",
+      "high": "Goes very formal and precise — stops joking entirely, which is terrifying to those who know her"
+    },
+    "contradictions": [
+      "Performs radical transparency on stage but is deeply private in actual life",
+      "Claims the work is for the community but structures her life entirely around the individual practice of making it"
+    ],
+    "habits": [
+      "Writes by hand in notebooks she burns at the end of each year except the one she keeps",
+      "Has a specific superstitious route she walks to every performance — deviating makes her visibly anxious",
+      "Leaves an offering at the ELF shrine at The Lowering Bar — always a handwritten joke that didn't make it into the set"
+    ],
+    "breaking_points": [
+      "Discovering that her material has been used to manipulate rather than inform",
+      "Being asked to soften something true for someone's comfort"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Patterned iris geneware — concentric amber/dark blue rings (Helix Biosystems cosmetic grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned iris geneware — concentric amber/dark blue rings (Helix Biosystems cosmetic grade)",
+      "replaces": ""
+    },
+    {
+      "name": "Laryngeal reinforcement implant (minor — projection and endurance, medical origin)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Laryngeal reinforcement implant (minor — projection and endurance, medical origin)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

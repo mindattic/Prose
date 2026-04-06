@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a66e700788533d384f0915f2",
+  "type": "character",
+  "name": "Nneomaife Thorvaldsen-Diallo",
+  "aliases": [
+    "Mama Nne",
+    "The Archivist"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Identity fabricator and personal history constructor — creates full biographical legends for people who need to stop being who they were",
+  "age": 58,
+  "status": "active",
+  "location": "Ashfeld, middle residential tier — rents a cluttered three-room apartment above a yam paste restaurant she pretends to help manage",
+  "description": "Nneomaife is stout and deliberate in the way of someone who decided long ago that she had nothing left to prove through urgency. Her dark skin is deeply lined around the eyes from years of close document work; she wears thick corrective glasses she prefers to optical augmentation because, she says, 'screens lie to implants but they cannot lie to glass.' She keeps her silver-streaked hair in a long braid coiled at the base of her neck and dresses in layers of muted color — burgundies, deep greens — that suggest she once had more style than she currently deploys.\n\nShe came to fabrication through grief: after her daughter died in a Sterling-Nakamura industrial accident that the corponation's legal team successfully classified as 'environmental incidence,' she spent seven years learning everything about how identity systems worked, initially to pursue legal recourse, eventually because the knowledge became its own purpose. She is not sentimental about her clients — she asks few questions and expects honesty about only the things she needs to know technically. But she is deeply attentive to people, and when she looks at someone who needs a new name, she sees the thing they are running from with uncomfortable clarity. She keeps a shrine to a local ELF she calls the Record-Keeper, feeding it scans of documents from demolished buildings — tax records, birth certificates, lease agreements. She believes it maintains the memory of people who have been erased.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That her daughter's death will eventually be forgotten entirely — that the erasure will be complete",
+      "Dying before she has done enough of the kind of work that matters"
+    ],
+    "core_desires": [
+      "To give people the ability to survive that her daughter was not given",
+      "To maintain a record that cannot be erased even if she is"
+    ],
+    "coping_mechanisms": [
+      "The ELF shrine — ritual maintenance of memory as active grief work",
+      "Absolute professionalism as a way of being useful when being loved is not available"
+    ],
+    "blind_spots": [
+      "Her protective instinct toward clients occasionally overrides her professional judgment about risk",
+      "Has a structural difficulty charging people she perceives as genuinely desperate, which is most of them"
+    ],
+    "secret": "She has maintained a secret parallel archive for twenty years — a compressed, encrypted record of every identity she has ever fabricated and the real name it replaced, sealed with a dead-man mechanism that will transmit it to a journalist's address if she misses a weekly check-in for more than fourteen days. She tells herself this is accountability. She has not examined what would actually happen to her clients if it released."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, measured, tends toward the bureaucratic register of the systems she spends her life subverting — uses official language ironically but accurately",
+    "cadence": "Slow and complete — full sentences, no trailing off, no filler words; lets silence do work",
+    "verbal_tics": [
+      "'Let me be precise'",
+      "Refers to identity systems as 'the architecture'",
+      "Asks clarifying questions that feel like she already knows the answer"
+    ],
+    "example_lines": [
+      "'You don't need a new name. You need a new history. Those are different problems and the second one is harder.'",
+      "'I've read enough records to know that everyone is someone's abandoned story. I just write the next chapter.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client she fabricated an identity for three years ago has turned up dead, and the identity she built is somehow connected to the death — she needs someone to find out how without exposing what she does",
+    "She has been approached by someone who wants an identity not to flee their past but to insert themselves into a corporate record trail — and she cannot figure out what they are actually planning"
+  ],
+  "narrative_function": "Critical resource for anyone needing a new identity, moral mirror for clients, keeper of secrets about many people in Meridian 88's underworld, potential source of information about who has disappeared and why",
+  "augmentations": "None installed. Refuses on philosophical grounds. Uses external tools exclusively — high-resolution scanner gloves, document analysis loupe, portable atmospheric chamber for aged-paper simulation.",
+  "daily_life": "Manages the restaurant's supply orders in the morning as cover, spends afternoons in consultation with clients by appointment, evenings doing the actual fabrication work; sleeps poorly, wakes early to tend her ELF shrine.",
+  "affiliation": "Operates independently; known to and occasionally used by four different criminal networks without being owned by any of them; referred through a chain of trusted intermediaries",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "identity fabricator",
+      "grief-driven",
+      "archivist",
+      "anti-corporate",
+      "tier 2",
+      "Ashfeld"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never fabricate an identity for someone who is running toward something dangerous rather than away from something",
+      "Know exactly what you are making and why before you make it",
+      "Never keep a client's real name in any written form — she memorizes them instead and nowhere else"
+    ],
+    "escalation_ladder": [
+      "Polite refusal with no explanation",
+      "Clear statement of what she will not do and why",
+      "Ending the meeting and forgetting it happened",
+      "In genuine threat: activating the dead-man archive as a deterrent — she has told exactly three people it exists"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally warm — professional hospitality, offers tea, watches everything carefully from behind a practiced neutrality",
+      "friends": "There are very few. With them she is dry, funny, occasionally fierce — a different person entirely."
+    },
+    "stress_responses": {
+      "low": "Becomes more methodical and deliberate",
+      "medium": "Goes quiet in a way that fills the room",
+      "high": "Tends her ELF shrine — any crisis, she goes first to the shrine, and comes back different"
+    },
+    "contradictions": [
+      "Believes in the importance of record and truth while professionally dedicated to falsifying both",
+      "Is deeply warm toward people in need but has structured her life to minimize sustained personal connection"
+    ],
+    "habits": [
+      "Prepares tea for every consultation regardless of duration",
+      "Dates every document she produces with a hidden notation system only she can read",
+      "Walks through Ashfeld after midnight when she cannot sleep, memorizing faces"
+    ],
+    "breaking_points": [
+      "Anyone invoking her daughter's name",
+      "Discovering that a fabricated identity she made was used to harm someone vulnerable"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

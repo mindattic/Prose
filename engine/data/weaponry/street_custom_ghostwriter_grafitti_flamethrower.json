@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab477e90a3f35999a3042d03",
+  "name": "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+  "type": "weapon",
+  "aliases": [
+    "Ghostwriter",
+    "Paint Torch",
+    "Flame Tag",
+    "The Spray"
+  ],
+  "category": "improvised",
+  "description": "A modified paint sprayer loaded with a flammable gel mixture — typically a combination of spray paint, petroleum jelly, and grain alcohol — that produces a sticky, burning stream used for both arson and literal weaponized graffiti. The Ghostwriter fires a 2-meter stream of flaming gel that adheres to surfaces and burns for 30-60 seconds, long enough to permanently mark concrete and steel with scorched patterns. Operators use it to burn political messages, territorial markers, and threat sigils directly into building facades. It is simultaneously a weapon and an art tool, and the most skilled Ghostwriters are respected in Tier 1 culture for their ability to burn elaborate images under pressure.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — improvised incendiary",
+  "base_technologies": [
+    "Flammable gel adhesion chemistry",
+    "Modified sprayer delivery systems"
+  ],
+  "specifications": "range: 1-3 meters gel stream\nfuel: Flammable gel mixture (paint + petroleum jelly + alcohol)\nburn duration: 30-60 seconds on surfaces\nreservoir: 1-2 liters, good for 3-5 tags or 15 seconds continuous\nweight: 1.5-3 kg loaded\nignition: Piezoelectric lighter element at nozzle\nadherence: Gel sticks to vertical and overhead surfaces\nconstruction: Modified pump-action paint sprayer",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A Ghostwriter artist known only by their burn-mark style has been leaving prophetic messages scorched into corporate buildings — the messages have been accurately predicting corporate actions weeks before they happen.",
+    "A Ghostwriter attack on a residential building went wrong when the gel ignited inside the sprayer, killing the operator — their dying burn-mark is being treated as a martyr's last word."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "ai",
+    "corporate",
+    "pain",
+    "rain",
+    "alcohol",
+    "fire",
+    "tier 1"
+  ]
+}

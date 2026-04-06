@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a86f720ca42f2db5487e88fb",
+  "name": "Street Custom 'Iron Curtain' Improvised Ballistic Shield",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Iron Curtain' Improvised Ballistic Shield",
+  "type": "equipment",
+  "aliases": [
+    "Iron Curtain",
+    "Scrap Shield",
+    "Door Shield",
+    "Riot Board"
+  ],
+  "category": "armor",
+  "description": "A ballistic shield fabricated from vehicle door panels, steel plate salvage, or layered industrial materials mounted on improvised handles. The Iron Curtain provides mobile cover against handgun-caliber threats and fragmentary projectiles at a fraction of the cost of commercial ballistic shields. The most common pattern uses an automobile door panel — already designed to absorb impact energy — with welded handle brackets and a viewport cut at eye level. Quality and protection vary enormously, but the cheapest Iron Curtain still beats no cover at all.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — improvised protective equipment",
+  "base_technologies": [],
+  "specifications": {
+    "protection": "NIJ Level II to IIIA depending on materials",
+    "materials": "Vehicle door panels",
+    "info": "steel plate; layered industrial composites",
+    "weight": "8-20 kg depending on construction",
+    "coverage": "Torso and head from frontal threats",
+    "mobility": "Reduced — requires one arm to carry",
+    "viewport": "Cut opening or transparent panel insert",
+    "cost": "Φ20-100 in salvage materials",
+    "construction": "2-4 hours with basic tools"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A community defense group equipped with Iron Curtain shields held a checkpoint against an armed incursion for 6 hours — the shields stopped dozens of rounds and the footage has become a symbol of lower-tier resilience.",
+    "A variant Iron Curtain using layered ceramic tile has tested at NIJ Level IV equivalent — the design has been shared across Tier 1 fabrication networks and is being mass-produced from construction waste."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "gun",
+    "ai",
+    "vehicle",
+    "energy",
+    "tier 1"
+  ]
+}

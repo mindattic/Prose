@@ -1,0 +1,59 @@
+{
+  "id": "019d6143a9057dddbedfdf063a9aa84c",
+  "name": "Marathine",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Mara",
+    "the Long Burn",
+    "Ironleg"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "endurance_sustainer",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Marathine is a metabolic optimization compound that restructures cellular energy production during physical exertion, forcing mitochondrial efficiency into overdrive while suppressing the accumulation of lactic acid and fatigue neurotransmitters. It does not make users faster or stronger — it simply prevents them from getting tired. Users on Marathine can sustain peak physical output for hours, their bodies burning reserves they didn't know they had, with the biological debt paid entirely upon cessation.",
+  "method_of_use": "oral",
+  "effects": [
+    "Elimination of physical fatigue accumulation for duration",
+    "Sustained peak cardiovascular output",
+    "Suppression of lactic acid buildup",
+    "Maintained muscle coordination over extended exertion",
+    "Reduction in sleep pressure during operation",
+    "Consistent physical performance across long ops"
+  ],
+  "side_effects": [
+    "Catastrophic physical collapse at cessation — all accumulated fatigue hits simultaneously",
+    "Rhabdomyolysis risk from overexertion without fatigue feedback",
+    "Severe caloric deficit post-dose requiring immediate nutrition",
+    "Kidney stress from metabolic byproduct processing",
+    "Insomnia alternating with hypersomnia in regular users",
+    "Cardiac muscle fatigue risk invisible during operation"
+  ],
+  "duration": "4-8 hours",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 2-3",
+  "legality": "restricted",
+  "street_price": "Φ 145 per dose",
+  "cultural_context": "Marathine is the endurance drug of long operations — extractions, courier runs, multi-block firefights that stretch for hours. It is less glamorous than reflex boosters or berserker compounds but arguably more essential: a runner who can keep moving at hour six when everyone else is slowing down has a decisive advantage. It is also used outside combat contexts by Shelf workers in physically brutal jobs, which Novafold finds commercially useful but legally inconvenient. The phrase 'running on Mara' in M88 slang means pushing past any reasonable limit.",
+  "story_hooks": [
+    "A supply of Marathine has been contaminated with a substance that prevents the fatigue debt from ever clearing — users are still running days after their dose, their bodies consuming themselves.",
+    "A Tier 2 courier collective has been quietly using Marathine to undercut competitors on delivery times; when one of their members collapses from cardiac fatigue, the others need to decide whether to come forward.",
+    "A runner hired for a 'quick job' is handed Marathine at the start — which tells her the fixer knows this is going to run much longer than advertised."
+  ],
+  "tags": [
+    "combatstimulant",
+    "endurancesustainer",
+    "pharmaceutical",
+    "combat",
+    "war",
+    "ai",
+    "elf",
+    "debt",
+    "drug",
+    "stimulant",
+    "energy",
+    "fire",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

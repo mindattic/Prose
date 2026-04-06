@@ -1,0 +1,64 @@
+{
+  "id": "019d6143a85d7847ab50740d9df8230e",
+  "name": "Ironclad Agrisystems Acoustic Terrain Suppressor",
+  "brand_name": "Ironclad",
+  "product_name": "Ironclad Agrisystems Acoustic Terrain Suppressor",
+  "type": "equipment",
+  "aliases": [
+    "The Quiet Field",
+    "Dead Acre",
+    "The Silencer's Blanket"
+  ],
+  "category": "stealth",
+  "description": "The Acoustic Terrain Suppressor is a deployable field device originally engineered by Ironclad Agrisystems for use in large-scale agricultural operations — specifically, for suppressing the noise signatures of automated harvesting machinery to comply with noise ordinances in peri-urban farming zones and to prevent acoustic disruption of precision sensor arrays used in adjacent crop monitoring systems. The device consists of a set of six deployable emitter stakes and a central processing hub. Once positioned, the stakes generate a coordinated field of destructive acoustic interference — phase-inverted sound waves that cancel incoming noise within the bounded area — while the hub continuously samples the sound environment and adjusts phase output to maintain suppression across changing noise conditions.\n\nIn its agricultural application, the Suppressor is unglamorous infrastructure. In operational use, it is transformative. A team working within a properly deployed Suppressor field can conduct breaching, movement, conversation, and equipment operation with their acoustic signature reduced by an average of 74 decibels as measured at the field boundary — enough to render most activities inaudible beyond the perimeter even in otherwise quiet environments. The stakes create a clearly defined operational zone, and experienced operators learn to work with tight spatial discipline, staying within the field's active boundary. Crossing outside it while generating noise — or allowing a stake to lose power — creates an abrupt acoustic event that can be more alarming to trained sentries than continuous noise.\n\nIronclad has never publicly acknowledged operational use of the Suppressor and continues to market it exclusively through agricultural and industrial channels. This distribution strategy has resulted in a device that appears on inventory manifests as farming equipment, ships without the scrutiny applied to overt security technology, and is serviced through an agricultural supply network with minimal oversight. Black market units are often acquired by purchasing legitimate agricultural accounts and ordering through normal channels — a procurement strategy that leaves a paper trail pointing nowhere alarming.",
+  "manufacturer": "IRONCLAD AGRISYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Destructive Acoustic Interference Generation",
+    "Real-Time Phase Inversion Adjustment",
+    "Multi-Stake Coordinated Field Emission",
+    "Ambient Sound Sampling and Modeling",
+    "Agricultural Noise Compliance Architecture"
+  ],
+  "specifications": {
+    "operational_area": "Configurable; standard six-stake deployment covers approximately 200 square meters",
+    "noise_reduction": "Average 74dB reduction at field boundary; 91dB at field center",
+    "frequency_range": "Effective suppression from 20Hz–18kHz",
+    "adjustment_latency": "80ms phase recalibration in response to environmental change",
+    "stake_count": "6 per standard kit; expandable to 12 stakes for larger coverage",
+    "power_source": "Central hub: replaceable industrial cell, 14-hour operation; stakes: passive power draw from hub via low-emission inductive coupling",
+    "deployment_time": "Approximately 4 minutes for standard six-stake setup",
+    "weight": "3.8 kg (full kit, hub plus stakes plus carrying case)",
+    "agricultural_cover_documentation": "Registered as Ironclad Model 7 Machinery Noise Compliance Array"
+  },
+  "tactical_use": "Deployed to create a sound-suppressed operational zone for actions that generate significant noise — breaching, interrogation, equipment setup, or coordinated team movement through acoustically sensitive environments. The defined perimeter of the field requires teams to plan their operational area carefully before deployment; the Suppressor works best when combined with prior site reconnaissance that maps acoustic monitoring positions relative to the intended work area. Particularly valuable in outdoor operations where architectural barriers are unavailable. A common tactical error is deploying the field too small to account for all team movement, resulting in members stepping outside the boundary at critical moments.",
+  "cultural_context": "The Suppressor's agricultural cover story has given it an unlikely cultural identity — it is the operative's tool that doesn't look like one, acquired through feed supply companies and listed on customs documents as crop monitoring support equipment. In the community of people who know what it actually does, this mundane exterior is a source of dry humor. There is a tradition among teams that have used one successfully of referring to an operation that went cleanly and quietly as having been 'a good harvest.' The device's unrestricted legal status, an oversight that various regulatory bodies have periodically attempted to address and Ironclad's lobbying arm has consistently defeated, is considered one of the more useful accidents in the operational equipment landscape.",
+  "known_users": [
+    "Breaching teams conducting noise-sensitive extractions",
+    "Field interrogation specialists requiring acoustic privacy",
+    "Demolitions operatives working in proximity to sensitive monitoring",
+    "Actual agricultural operations (legitimate use)",
+    "Tam Vreeland — logistics specialist who maintains an agricultural import license as cover"
+  ],
+  "story_hooks": [
+    "A legitimate farmer reports that their Acoustic Terrain Suppressor kit was stolen from a supply shed — cross-referencing the theft date with local incident reports reveals it was used in an operation the same night that nobody has claimed responsibility for.",
+    "A team deploys a Suppressor for a quiet extraction only to discover the hub has been modified — instead of suppressing sound within the field, it's been reconfigured to record everything said within it and transmit on a delay.",
+    "Ironclad's agricultural distribution network is being used to move Suppressor kits to buyers who have no agricultural operations — someone is building up a significant stockpile, and the destination addresses all cluster around a specific district.",
+    "A regulatory body finally pushes through a restriction on the Suppressor, effective in 60 days — the scramble among operatives and criminal organizations to stockpile units before the deadline is creating an unusual and dangerous market spike."
+  ],
+  "tags": [
+    "stealth",
+    "equipment",
+    "theft",
+    "identity",
+    "ai",
+    "power",
+    "market",
+    "bar",
+    "rain",
+    "night",
+    "train",
+    "tier 2"
+  ]
+}

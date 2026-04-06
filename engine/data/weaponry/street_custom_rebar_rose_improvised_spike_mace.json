@@ -1,0 +1,38 @@
+{
+  "id": "019d6143ab4a797583f3690e593cbc96",
+  "name": "Street Custom 'Rebar Rose' Improvised Spike Mace",
+  "type": "weapon",
+  "aliases": [
+    "Rebar Rose",
+    "Spike Club",
+    "Iron Flower",
+    "The Bouquet"
+  ],
+  "category": "melee",
+  "description": "A length of concrete rebar bent into a handle shape with short sections of rebar welded perpendicular to the shaft, creating a crude spiked mace. The Rebar Rose is found throughout Tier 1 wherever construction salvage is available — it requires only a length of rebar, a welding arc, and the willingness to carry something that looks like a medieval weapon reimagined by an industrial accident. Despite its crude appearance, the weapon is brutally effective: the rebar spikes concentrate impact force into small areas, defeating soft armor through penetration rather than blunt force, and the heavy steel construction makes each swing potentially lethal.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — improvised weapon",
+  "base_technologies": [
+    "Basic welding fabrication"
+  ],
+  "specifications": "shaft length: 40-60 cm\nspike count: 4-8 welded perpendicular sections\nspike length: 5-10 cm\ntotal weight: 2-4 kg depending on rebar gauge\nmaterial: Mild steel construction rebar\nconstruction time: 30 minutes with welding equipment\nconcealment: Difficult — typically carried openly or in a duffel bag",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A community defense group in Tier 1 has standardized on Rebar Rose weapons and organized patrol schedules — they are providing security where none existed, but their methods are increasingly violent.",
+    "A distinctive Rebar Rose with a specific welding pattern has been found at multiple crime scenes — the welder's signature is as unique as a fingerprint to someone who knows what to look for."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "melee",
+    "weapon",
+    "crime",
+    "ai",
+    "club",
+    "bar",
+    "armor",
+    "tier 1"
+  ]
+}

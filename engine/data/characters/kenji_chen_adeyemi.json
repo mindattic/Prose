@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a641740f96aa8d309db35b56",
+  "type": "character",
+  "name": "Kenji Chen-Adeyemi",
+  "aliases": [
+    "Nebula",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Personal security and threat neutralization — bodyguard",
+  "age": 24,
+  "status": "active",
+  "location": "The Canopy — elevated walkway district above Geartown",
+  "description": "Kenji Chen-Adeyemi are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 24, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a bodyguard out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Kenji Chen-Adeyemi are one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.88,
+      "ideal": 0.88,
+      "id": 0.37,
+      "shadow": 0.92,
+      "mask": 0.54,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The quiet — silence means something is about to go very wrong",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "That they're fundamentally alone and connection is just a vulnerability"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "To build something that outlasts the next contract cycle",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage",
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
+    ],
+    "secret": "Kenji Chen-Adeyemi betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop"
+    ],
+    "example_lines": [
+      "\"You're paying me to be the thing between you and everything else. Stay behind me.\"",
+      "\"I don't protect people I don't respect. Lucky for you, I respect your money.\"",
+      "\"The threat you see isn't the one that kills you. Watch my eyes, not my hands.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Kenji Chen-Adeyemi's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A former associate resurfaces with evidence that could destroy Kenji Chen-Adeyemi's reputation — and a price for silence",
+    "Kenji Chen-Adeyemi is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Kenji Chen-Adeyemi represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Cortical bomb (employer installed, removed by street doc, scar tissue remains). Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — maintains network of professional contacts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 4
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 6
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 5
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.68,
+      "caution": 0.46,
+      "loyalty": 0.42,
+      "greed": 0.37,
+      "empathy": 0.85
+    },
+    "drives": [
+      "justice",
+      "reputation",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 6,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "multilingual — speaks 4+ languages fluently"
+    ],
+    "weaknesses": [
+      "chronic insomnia affecting long-term performance",
+      "substance dependency — functional but fragile",
+      "overconfidence in specialty areas leading to blind spots"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "bodyguard",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Always verifies target identity independently before lethal contracts"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+    ],
+    "breaking_points": [
+      "Being publicly exposed — name, face, address, all of it blown",
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "replaces": ""
+    },
+    {
+      "name": "Move-by-wire system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Protector": 0.9,
+    "Sentinel": 0.9,
+    "Charmer": 0.9,
+    "Shield": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

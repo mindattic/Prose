@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -7,8 +8,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// Covers the full spectrum: Superminds (corporate AIs), Rogue AIs (Fragments to Leviathans),
 /// and E.L.F.s (Electronic Life Forms — paratechnological digital spirits).
 /// </summary>
-public class SyntheticLifeData
+public class SyntheticLifeData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "elf";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];

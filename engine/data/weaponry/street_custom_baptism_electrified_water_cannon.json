@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab457ae7855256cd90ec9459",
+  "name": "Street Custom 'Baptism' Electrified Water Cannon",
+  "type": "weapon",
+  "aliases": [
+    "Baptism",
+    "Shock Hose",
+    "Holy Water",
+    "The Font"
+  ],
+  "category": "improvised",
+  "description": "A garden hose or pressure washer connected to a water supply that has been spiked with conductive salt solution, with a high-voltage electrode mounted at the nozzle. The result is a stream of electrified salt water that delivers a sustained electrical shock to anything it contacts. The Baptism is crude, dangerous to the operator, and effective only at close range — but it can incapacitate multiple targets simultaneously by spraying a conductive water stream across a group. The weapon has been adopted by defense-minded communities in Tier 1 who mount it at choke points and doorways as an area denial tool, powered by salvaged electrical panels.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — improvised electrical weapon",
+  "base_technologies": [
+    "Conductive fluid electrical delivery",
+    "Improvised high-voltage systems"
+  ],
+  "specifications": "range: 3-8 meters depending on water pressure\nvoltage: 500-2,000V depending on power source\nconductivity enhancement: Salt solution in water supply\npower source: Salvaged electrical panel or vehicle battery\nwater consumption: 5-15 liters per minute\nweight: Variable — typically fixed installation\noperator risk: Extreme if grounding is improper",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A Baptism system installed at a community entrance killed an intruder when the voltage source overloaded — the community faces prosecution while the intruder was carrying weapons intended for a raid.",
+    "Someone is setting up concealed Baptism systems in storm drains that activate when anyone steps in the water — the trap is indiscriminate and has injured several children."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "ai",
+    "power",
+    "rain",
+    "storm",
+    "vehicle",
+    "water",
+    "tier 1"
+  ]
+}

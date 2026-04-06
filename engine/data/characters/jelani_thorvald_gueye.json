@@ -1,0 +1,224 @@
+{
+  "id": "019d6143a63975719e75abc8cc014c49",
+  "type": "character",
+  "name": "Jelani Thorvald-Gueye",
+  "aliases": [
+    "Jel",
+    "The Kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Building cleaner / maintenance junior, residential tower",
+  "age": 21,
+  "status": "active",
+  "location": "The Shelf — specifically employed at Cranemast Residential, a mid-rise tower on the Shelf's inland edge, one of eight towers managed by Grainfort Property Collective",
+  "description": "Jelani is young and still growing into his frame — broad shouldered but not yet filled out, moving with the slightly uncertain coordination of someone whose body changed faster than his proprioception caught up. His skin is warm brown, his hair grown out in thick sections he keeps bound with elastic and doesn't think about much. He has a pair of cat ears — gray, black-tipped — that he got for his nineteenth birthday from his older sister, a gift he was enthusiastic about at the time and now considers with complicated feelings, mostly because they are difficult to hide and he has since applied for a number of jobs where he didn't want to be immediately read as someone who has cosmetic geneware. They twitch when he's startled, which he hates. He has large, careful hands and deep-set eyes that are slightly too serious for his face.\n\nJelani is quiet in the way of people who spent a lot of time listening before they learned to speak up. He is not shy — he'll talk when he has something to say — but he doesn't fill silence for its own sake, which makes him seem older than he is to some people and invisible to others. He is genuinely kind without being soft about it and is developing, slowly, a specific internal morality about what he owes the building he works in and the people who live there. He works hard, notices things, and has begun to understand that noticing things in a building is a form of power no one warned him about.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.5,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "getting stuck in a job that doesn't go anywhere and slowly not caring",
+      "doing the wrong thing in a situation that required him to do something"
+    ],
+    "core_desires": [
+      "to actually understand how buildings work — all of it, not just the cleaning — and eventually be someone who fixes and manages things",
+      "to be taken seriously without having to perform seriousness constantly"
+    ],
+    "coping_mechanisms": [
+      "learning — reading manuals, watching repair videos, asking questions when he trusts the person",
+      "headphones and deliberate solitude as decompression"
+    ],
+    "blind_spots": [
+      "still somewhat naive about the difference between people who are kind to him because they like him and people who are kind to him because he is useful and unthreatening",
+      "underestimates how much he already knows and how valuable that is"
+    ],
+    "secret": "Three weeks ago he found a sealed waste unit in the basement that didn't match any of the building's disposal logs. He moved it to a secure corner and hasn't logged it or reported it or told anyone. He doesn't know what's in it. He's been thinking about it every day."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain and direct. Uses technical terms for building systems accurately — he has been studying. Not formal, not street-inflected, just precise and a little careful.",
+    "cadence": "Measured, with genuine pauses. Thinks before speaking. Answers questions fully but without extras.",
+    "verbal_tics": [
+      "'I'm not sure yet' (before positions he's still forming)",
+      "'Noted' (genuinely, not sarcastically)",
+      "Ears twitch when he's caught off guard — he usually covers it with a small cough"
+    ],
+    "example_lines": [
+      "'I clean the floors. I also notice things that happen on the floors. Those are related jobs.'",
+      "'I don't know what's in it. That's why I haven't touched it. If I knew what was in it, I'd know what to do.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The sealed unlogged waste unit in the basement — he needs to decide what to do with it and the window for plausible deniability is closing",
+    "A resident on the fourteenth floor has started leaving him food and asking him questions about other residents that he doesn't know how to feel about",
+    "He has noticed that one of the building's utility access points has been used by someone who isn't supposed to have access — the wear pattern on the lock panel is wrong"
+  ],
+  "narrative_function": "Access and observation — Jelani goes everywhere in the building and is effectively invisible to most residents. He knows who is home, who isn't, who has been fighting, who has had visitors, what is being disposed of. Useful as a local witness, a sympathetic contact in a building players need access to, or a young person whose decency is being tested by what he keeps discovering.",
+  "augmentations": "Gray cat ears with black tips, geneware (cosmetic, emotional-reactive twitching; he did not realize they were emotional-reactive when he received the gift)",
+  "daily_life": "Reports to Cranemast at 0700, works a cleaning and minor maintenance rotation through the building's thirty-two floors, breaks for lunch in the utility room with his headphones in, does waste consolidation in the late afternoon, leaves by 1800. Studies building systems repair manuals on his transit rides home.",
+  "affiliation": "Grainfort Property Collective (employed); UBC supplement recipient",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "building-access",
+      "silent-observer",
+      "moral-development",
+      "unsolved-problem",
+      "growing-up"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do the job right even if no one is checking",
+      "Don't get involved in resident business unless someone is in danger",
+      "Ask questions before assuming — but only of people who won't punish you for asking"
+    ],
+    "escalation_ladder": [
+      "Observation and silence",
+      "Asking a trusted colleague or supervisor indirect questions",
+      "Direct question to the person involved",
+      "Reporting through official channel",
+      "Going outside official channels — only if official channels have failed on something that matters"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite and relatively neutral. Nods, does his work, doesn't initiate. Watches.",
+      "friends": "Opens up gradually and then steadily. Once trusted, reliable and honest even about things people don't want to hear."
+    },
+    "stress_responses": {
+      "low": "Works more methodically. Gets very thorough.",
+      "medium": "Goes quieter. Listens harder. Cat ears stay flat.",
+      "high": "Withdraws to the utility room. Thinks. Makes a list of what he knows and what he doesn't."
+    },
+    "contradictions": [
+      "Committed to doing the right thing but has not yet developed the judgment for when the right thing requires him to act without knowing the outcome — currently paralyzed by the basement unit because the framework hasn't formed yet"
+    ],
+    "habits": [
+      "Reads one page of a building systems manual on every transit ride",
+      "Keeps a small personal log of maintenance anomalies he notices, in a physical notebook",
+      "Greets the building's primary E.L.F. terminal every morning with a genuine 'good morning' — he isn't religious about it but it feels right"
+    ],
+    "breaking_points": [
+      "Discovering that someone in the building is being harmed and the official response is to not look at it — at that point his deference to process ends"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in The Shelf to a family of three, mother worked transit maintenance",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Finished compulsory education; took UBC supplement and began job search",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Grainfort Property Collective as junior building cleaner, Cranemast Residential",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received cat ear geneware as birthday gift from older sister Adaeze",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered unlogged sealed waste unit in Cranemast basement; has not yet reported it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

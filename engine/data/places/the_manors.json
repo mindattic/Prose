@@ -1,0 +1,109 @@
+{
+  "id": "019d6143a9457c9bb0c0154df989639e",
+  "type": "place",
+  "name": "The Manors",
+  "aliases": [
+    "Indian Village",
+    "Executive Row",
+    "The Gated Quarter"
+  ],
+  "description": "The Manors is what happens when corporate executives need to live somewhere that feels like old money while spending new money. Indian Village — Detroit's historic district of grand early-20th-century mansions — was purchased in its entirety by a consortium of corponation executives in the 2050s, restored to architectural perfection, and converted into the most exclusive residential district in the Detroit metro area. The mansions are genuine: Arts and Crafts, Tudor Revival, Colonial Revival, each one a masterwork of a architectural era when human craftspeople built things by hand for people who could afford to wait. The security systems are less genuine: military-grade perimeter fencing disguised as ornamental ironwork, autonomous patrol drones camouflaged as decorative garden fixtures, and a biometric screening system that begins evaluating you three blocks before you reach the gate.\n\nThe residents are the people who run Detroit without living in it. Cinderblock AI's Detroit Regional VP. Ford Meridian's board members. Arcturus Defense's GLM operations director. The top executives from twelve corponations who maintain Detroit residences because their companies require a local address for sovereign territory governance purposes. They commute to the Axis towers via private autonomous vehicles that travel in secure convoy formation through streets that have been cleared of other traffic by automated routing priority. They do not walk. They do not shop locally. They do not interact with Detroit. The Manors is not a neighborhood. It is a dormitory for the ruling class, furnished with architectural history.\n\nThe service staff — groundskeepers, household managers, private security, maintenance technicians — number approximately 800, serving a resident population of 340. They commute from the Shelf neighborhoods to the east, pass through biometric screening, perform their functions, and leave. The ratio tells you everything about the district's values. The mansions are beautiful. The gardens are immaculate. The Detroit River is visible from the back porches. And the entire district exists in a bubble of wealth so concentrated that it has its own microclimate — literally, the Manors operate an independent atmospheric system that filters, cools, and scents the air within the perimeter.",
+  "atmosphere": {
+    "sights": [
+      "Grand mansions from the 1910s-1930s, restored beyond their original glory — architecture as corporate asset preservation",
+      "Manicured gardens with autonomous maintenance systems disguised as garden ornaments",
+      "Private autonomous vehicle convoys moving in formation — chrome and silence and tinted glass",
+      "The security perimeter — ornamental ironwork that would stop a light armored vehicle",
+      "The Detroit River from the bluffs, viewed through atmospheric-processed air that makes the water look cleaner than it is"
+    ],
+    "sounds": [
+      "Almost nothing. The Manors are engineered for silence — sound-dampening surfaces, noise-canceling perimeter systems",
+      "Birdsong — engineered acoustic environments that play recorded bird calls timed to feel natural",
+      "The quiet hum of autonomous security patrols on their garden routes",
+      "Occasionally, a private aircraft landing on one of the three helipads that the mansions pretend not to have",
+      "Staff movement — purposeful, quiet, trained to be present without being perceived"
+    ],
+    "smells": [
+      "The atmospheric system's signature scent — clean air with notes of cedar and white tea, because even oxygen is branded",
+      "Garden flowers — real flowers, maintained by autonomous systems, blooming on algorithmically optimized schedules",
+      "Old wood and stone from the restored mansions — the smell of a century of craftsmanship, preserved"
+    ],
+    "feel": "Beautiful and obscene. The Manors are genuinely architecturally stunning — these are real masterworks of American residential design, preserved with care and expertise. They are also a gated community for the people whose decisions created the conditions that everyone outside the gate lives in. The cognitive dissonance is the point. If you can live here and not feel it, you belong here.",
+    "tags": []
+  },
+  "demographics": "340 residents, approximately 800 service staff. Residents are exclusively Tier 5 — corporate executives, board members, and their families. Average household net worth: Φ4.2 billion. The staff are Tier 1-2, sourced from adjacent districts.",
+  "economy": "Residential. The Manors generate no local economic output — residents' economic impact occurs at their corporate offices. The service economy is approximately Φ180 million annually in staff wages, security contracts, and maintenance. The property values total an estimated Φ12 billion for 52 mansions.",
+  "power_structure": "The Manors Association — a residents' body that operates as a miniature corporate board. Decisions are made by vote, weighted by property value. The Association retains private security through Arcturus Defense Solutions and operates independently of any municipal authority. In practice, a call from the Manors Association to any corponation's Detroit office is a call that gets answered immediately.",
+  "dangers": [
+    "Fortress mentality — the security is excellent, but the isolation creates blind spots in the residents' understanding of the city they govern",
+    "Staff recruitment — the 800-person service workforce knows the security patterns, the house layouts, and the personal habits of the most powerful people in Detroit",
+    "Internal politics — when Tier 5 executives disagree, the collateral damage is measured in policy changes that affect millions",
+    "The perimeter — beautiful, secure, and exactly the kind of target that makes a statement when breached",
+    "Kidnapping risk — the families are high-value targets, and the children attend a single school within the compound"
+  ],
+  "opportunities": [
+    "Intelligence — the service staff are invisible to the residents and present for every conversation",
+    "The Manors Association's internal disputes reveal corporate strategy before it becomes public",
+    "Security system access — the autonomous patrol patterns are sophisticated but knowable",
+    "Social engineering — the residents' isolation makes them vulnerable to manipulation by anyone who can get past the gate"
+  ],
+  "story_hooks": [
+    "A Manors household manager approaches a fixer with a recording of a dinner conversation between three corponation executives planning something that would affect every district in Detroit. The price for the recording is extraction — not money, escape.",
+    "An Arcturus security contractor assigned to the Manors discovers that the perimeter system has been subtly modified — not breached, modified. Someone with inside access is creating a vulnerability, and the pattern suggests they're building toward a specific date.",
+    "A Tier 5 executive's child has been sneaking out of the compound using a service staff access route. The child is 16, augmented, and has been visiting the HPAZ. The parents don't know. The HPAZ does."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Renaissance Axis",
+      "The Corridor of Mirrors",
+      "Grosse Pointe Enclosure"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tier 5 corporate executives and their families",
+    "Arcturus Defense security contractors",
+    "Service staff from adjacent districts",
+    "Nobody else — that's the entire point"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Berry Mansion",
+      "description": "The largest residence in the district — a 1909 Arts and Crafts masterpiece now owned by Cinderblock AI's Detroit VP, where corporate policy is discussed over dinner more often than in boardrooms",
+      "tags": []
+    },
+    {
+      "name": "The Manors Academy",
+      "description": "Private school for residents' children — 42 students, 28 faculty, and a per-pupil expenditure that exceeds most districts' annual budgets",
+      "tags": []
+    },
+    {
+      "name": "The River Terrace",
+      "description": "A shared outdoor space on the bluffs overlooking the Detroit River — where the residents take their atmosphere-filtered air and pretend the city beyond the gate doesn't exist",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.3564,
+    "lng": -83.0103,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "money",
+    "wealth",
+    "vehicle",
+    "escape",
+    "chase",
+    "drone",
+    "shelf"
+  ]
+}

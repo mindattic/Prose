@@ -1,0 +1,51 @@
+{
+  "id": "019d6143a55376dfac28bcff5813229d",
+  "name": "12.7x55mm Subsonic Caseless Round SCR-127",
+  "type": "ammunition",
+  "aliases": [
+    "Quiet Ledger round",
+    "SCR-127",
+    "Whisper slug",
+    "Caseless heavy"
+  ],
+  "category": "caseless",
+  "caliber": "12.7x55mm",
+  "description": "The SCR-127 is a heavy subsonic caseless cartridge designed for the SCBR-1 'Quiet Ledger' precision rifle, engineered to deliver maximum terminal effect at subsonic velocities while producing minimal acoustic and thermal signature. The round uses a caseless propellant block — a compressed solid propellant matrix that burns completely on firing, leaving no brass casing to eject. This eliminates the mechanical noise of case extraction and ejection, and removes the forensic evidence of spent casings at the firing position.\n\nThe projectile is a heavy tungsten-composite slug with a mass optimized for subsonic flight at 310 m/s. At this velocity, the round produces no supersonic crack, and when combined with the SCBR-1's integrated wet suppressor, the total acoustic signature is reduced to approximately 94 dB — quieter than a car door closing. The trade-off for this stealth is reduced range and a pronounced ballistic arc at distance, requiring skilled compensation from the operator. The round's weight partially compensates for its low velocity, delivering substantial kinetic energy on impact, but it will not defeat modern hard armor at any range.\n\nThe caseless design requires careful storage. The propellant block is hygroscopic and degrades when exposed to moisture, which means SCR-127 rounds must be kept in sealed containers until loaded into the weapon's stripper clips. Ringo Corponation sells them in vacuum-sealed packs of 20, and experienced operators treat opened packs as having a 72-hour field life before reliability degrades. The propellant block also makes the rounds thermally sensitive — storage above 45 degrees Celsius risks cook-off, which has produced at least three documented ammunition storage fires in Meridian 88's hotter districts.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "specifications": "weight_per_round: 34g\nmuzzle_velocity: 310 m/s (subsonic)\npenetration_rating: Soft armor and light barriers only, defeated by hard plate\neffective_against: Unarmored and soft-armored biological targets, precision soft-target elimination\ncountermeasures: Hard armor plate, distance beyond 300m (pronounced drop), awareness of firing position",
+  "compatible_weapons": [
+    "Subsonic Caseless Bolt Rifle SCBR-1 'Quiet Ledger'"
+  ],
+  "variants": [
+    "SCR-127 Standard (tungsten composite, maximum terminal effect)",
+    "SCR-127 Expanding (controlled deformation on impact, increased wound cavity, reduced penetration)",
+    "SCR-127 AP (hardened penetrator core, marginal hard-armor performance at close range)",
+    "SCR-127 Subsonic Tracer (IR-only visible trail, compatible with night optics)"
+  ],
+  "cultural_context": "The SCR-127 is the ammunition of professional killers who value silence over firepower. Its presence at a crime scene — or rather, the absence of spent casings and the difficulty of recovering the subsonic slug from a body — is itself a forensic signature that tells investigators they are dealing with a precision operator using expensive, specialized equipment. In Meridian 88's assassination economy, the SCR-127 is associated with contract work rather than crime of passion: no one buys a SCBR-1 and SCR-127 ammunition on impulse. The round's storage requirements also serve as a natural filter — operators who cannot maintain proper ammunition storage discipline don't last long with this platform.",
+  "story_hooks": [
+    "A forensic ballistics expert has developed a technique for identifying SCR-127 impacts by the unique residue pattern left by the caseless propellant — this capability threatens the round's primary advantage and has made the expert a target for operators who depend on that anonymity.",
+    "A vacuum-sealed case of SCR-127 rounds was found in a climate-controlled storage unit rented under a false name — the unit's been paid up for three years, and whoever stashed the ammunition hasn't come back for it."
+  ],
+  "tags": [
+    "caseless",
+    "ammunition",
+    "weapon",
+    "war",
+    "crime",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "power",
+    "market",
+    "bar",
+    "night",
+    "armor",
+    "stealth",
+    "energy",
+    "fire"
+  ]
+}

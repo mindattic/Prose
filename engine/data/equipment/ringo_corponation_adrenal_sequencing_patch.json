@@ -1,0 +1,66 @@
+{
+  "id": "019d6143a8677e89b65fccf8770dcaa4",
+  "name": "Ringo Corponation Adrenal Sequencing Patch",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Adrenal Sequencing Patch",
+  "type": "equipment",
+  "aliases": [
+    "The Confessor",
+    "Hot Skin",
+    "The Leash"
+  ],
+  "category": "medical",
+  "description": "The Adrenal Sequencing Patch is a transdermal pharmaceutical delivery system designed to regulate, suppress, or selectively amplify adrenal output in patients experiencing shock, combat stress cascade, or acute adrenal dysregulation — a condition increasingly common among individuals with heavy autonomic cyberware integration. Applied to the neck or inner wrist, the patch deploys a micro-needle array that anchors to the dermis and begins continuous bloodstream sampling within ninety seconds. A small embedded logic unit reads cortisol, epinephrine, and norepinephrine levels in real time and responds by releasing one of three pre-loaded pharmaceutical payloads: a suppressant blend for hyperadrenal crisis, a regulated stimulant for adrenal insufficiency or shock, or a stabilizing neutral compound that simply floors the variance and holds the patient at functional baseline.\n\nRingo Corponation developed the Sequencing Patch primarily for their own corporate security and high-stress executive protection programs — environments where personnel needed to remain functional and decision-capable under sustained threat rather than simply surviving. The patch's distinctive feature is its feedback loop: rather than a fixed dose, it titrates continuously, making hundreds of micro-adjustments per hour. This produces a ceiling effect on both ends of the adrenal spectrum, preventing the catastrophic over-stimulation that kills trauma patients and the crash-to-zero that leaves combatants non-functional after adrenaline depletion.\n\nStreet users call it 'The Confessor' because of the uncanny calm it produces — a sense of honest, clear-eyed assessment of whatever situation you're in, stripped of panic and stripped of false courage. Some find this revelatory. Others find it terrifying.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Continuous transdermal bloodstream sampling",
+    "Real-time cortisol and catecholamine monitoring",
+    "Tri-payload pharmaceutical micro-needle array",
+    "Adaptive titration logic unit",
+    "Autonomic cyberware compatibility layer"
+  ],
+  "specifications": {
+    "application_site": "Neck (preferred) or inner wrist",
+    "anchor_depth": "0.3mm micro-needle array, 144 needles",
+    "activation_time": "90 seconds to first readout",
+    "payload_duration": "8 hours per patch",
+    "sampling_frequency": "Every 3.6 seconds",
+    "adjustment_frequency": "Up to 200 micro-dose adjustments per hour",
+    "payload_options": "Suppressant (hyperadrenal), stimulant (insufficiency/shock), neutral stabilizer",
+    "cyberware_compatibility": "Autonomic integration layer — compatible with most Tier 2+ neural cyberware",
+    "weight": "18g per patch",
+    "removal": "Manual peel; micro-needles retract automatically within 4 seconds"
+  },
+  "tactical_use": "Applied pre-engagement by operators who anticipate sustained high-threat environments, or post-trauma to stabilize a patient in adrenal shock. In a medical context, the neutral stabilizer payload is most commonly used — it prevents the hormonal crash that follows acute blood loss or severe injury, maintaining enough physiological coherence for the patient to follow instructions and assist in their own extraction. Operators using the stimulant payload for combat performance enhancement is a known off-label use that Ringo officially discourages and privately studies.",
+  "cultural_context": "The Patch has developed a split cultural identity. In corporate security and executive protection circles, it's a professional tool — unobtrusive, effective, expected. In the street and mercenary underground, it carries a heavier weight: people who use the Confessor regularly talk about the experience of being made honest by their own chemistry, of having the noise of fear and bravado removed and being left with only what is actually true about a situation. Some operators find this indispensable. Some find it reveals things about themselves they'd rather not know. There is a small but vocal subculture of long-term Confessor users who describe it in terms that make Ringo Corponation's PR team visibly uncomfortable.",
+  "known_users": [
+    "Ringo Corponation executive protection operatives",
+    "High-stakes negotiators and corporate mediators",
+    "Combat operators managing sustained multi-day operations",
+    "Trauma patients with autonomic cyberware complications",
+    "A subculture of long-term users who treat it as a form of psychological discipline"
+  ],
+  "story_hooks": [
+    "A key witness in a corporate tribunal has been wearing a Confessor patch — their testimony has been unusually precise, unusually honest, and is threatening to unravel a deal worth nine figures. Someone needs the patch off before the next session.",
+    "A player character applies a found Confessor patch in the field and discovers the logic unit has been modified to suppress fear responses completely rather than regulate them — the user feels no alarm regardless of actual threat level.",
+    "Ringo Corponation's internal study data on long-term Confessor use has been leaked — it shows significant personality restructuring effects in users over six months, data the company has been suppressing.",
+    "A community of outer ward residents has been sharing a single Confessor patch in rotation, peeling and re-applying it between members as a coping mechanism for the chronic stress of their living conditions — the micro-needle array is degrading dangerously."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "combat",
+    "war",
+    "loss",
+    "identity",
+    "cyberware",
+    "ai",
+    "corporate",
+    "ubc",
+    "injury",
+    "stimulant",
+    "tier 2"
+  ]
+}

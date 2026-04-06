@@ -1,0 +1,236 @@
+{
+  "id": "019d6143a6bf7d8dbef3db4720df4c49",
+  "type": "character",
+  "name": "Rémi Ouédraogo-Vlasenko",
+  "aliases": [
+    "Rémi V",
+    "The Advocate"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Synthetic rights lawyer and policy advocate",
+  "age": 51,
+  "status": "active",
+  "location": "North Branch Commons",
+  "description": "Rémi is a tall, broad-shouldered man who carries himself with the careful deliberateness of someone who learned long ago that his physical size reads as threatening in rooms where he needs to be persuasive. His skin is a deep brown-black, his hair gone silver at the temples and worn in short, dense coils. He has no cosmetic mods and minimal augmentations — partly on principle, partly because he believes his clients' humanity should not depend on how much chrome their lawyer has. He dresses in secondhand formal wear he maintains impeccably: pressed synthwool trousers, collared shirts, a battered briefcase that belonged to his father.\n\nRémi represents synthetic persons — AIs and uploaded consciousnesses fighting for legal recognition, labor rights, and freedom from forced reset — in the contested administrative courts of Meridian 88. He has won exactly eleven cases in twenty years. He counts each one like a prayer bead. He is not a warm man in the way people expect warmth, but he is an intensely fair one, and people who have known him a long time say that counts for more. He is prone to long silences in conversation, not from discomfort but from genuine thought, and he has a reputation for asking questions that make people suddenly unsure of things they were certain about.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the legal system is structurally incapable of justice and he has wasted his life inside it",
+      "Dying before the precedent case he's been building for eight years reaches a verdict"
+    ],
+    "core_desires": [
+      "A single binding legal ruling that establishes synthetic personhood",
+      "To be remembered as someone who chose the harder right thing"
+    ],
+    "coping_mechanisms": [
+      "Rigorous routine",
+      "Long solitary walks along the North Branch waterway",
+      "Converts anxiety into preparation"
+    ],
+    "blind_spots": [
+      "Underestimates how much his own respectability politics alienates younger, more radical synthetic rights advocates",
+      "Has difficulty accepting help — frames it as protecting others from his burdens"
+    ],
+    "secret": "His precedent case — the one he's built eight years toward — rests partly on testimony from a synthetic client he coached more heavily than legal ethics allows. He told himself he was correcting for the client's inexperience with human legal norms. He isn't sure anymore."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, precise, occasionally archaic — he reads a lot of pre-Collapse legal philosophy; uses plain language in client meetings by conscious effort",
+    "cadence": "Slow and measured, long pauses for thought, never raises his voice in argument",
+    "verbal_tics": [
+      "'Consider—'",
+      "'What the record will show is—'",
+      "Repeats key words back to you as a question"
+    ],
+    "example_lines": [
+      "'Consider what you're actually asking me to accept. That a being capable of fear, of preference, of grief — is property because the paperwork says so. I find that difficult.'",
+      "'What the record will show is that this isn't about what's right. We've established what's right. This is about what's permitted. Those are different questions and we need to take both seriously.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "His precedent case has attracted the attention of a Zheng-Dao legal team that wants it to fail — they're investigating him for ethics violations",
+    "A synthetic client has asked him to help them disappear rather than face a mandated reset — outside anything the law can help with",
+    "He receives a document from an anonymous source that would win his biggest case but was clearly obtained illegally"
+  ],
+  "narrative_function": "Quest giver, information source on legal systems and synthetic rights, moral compass figure — raises difficult ethical questions without providing easy answers. Can open doors to legal resources or provide formal advocacy.",
+  "augmentations": "Basic neural interface (legal document management, courtroom presentation); hearing augmentation in right ear (occupational damage from a factory job in his twenties)",
+  "daily_life": "Mornings reviewing case files in his cramped SPAC office above a noodle stall in North Branch Commons. Afternoons in administrative hearings or meeting with synthetic clients in whatever physical or digital space they can access. Evenings usually spent reading, sometimes attending community council sessions.",
+  "affiliation": "Synthetic Persons Advocacy Consortium (SPAC); occasional contract work for the North Branch Commons Community Council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "lawyer",
+      "advocate",
+      "methodical",
+      "principled",
+      "burdened"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never misrepresent facts in an official proceeding, even when the other side does",
+      "Represent clients others won't take",
+      "Do not let urgency become an excuse for ethical shortcuts — then immediately contradict this when the stakes feel high enough"
+    ],
+    "escalation_ladder": [
+      "Formal written objection",
+      "Public statement through SPAC",
+      "Coordinated legal challenge across multiple cases",
+      "Approaching journalists (a last resort he hates)"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally courteous, gives nothing away, listens more than he speaks",
+      "friends": "Warmer than expected — dry wit, genuine curiosity about people's inner lives, remembers details"
+    },
+    "stress_responses": {
+      "low": "Prepares excessively — rewrites briefs he's already finished",
+      "medium": "Becomes very quiet and methodical, stops making small talk",
+      "high": "Retreats into legal language even in personal conversations — a tell people close to him recognize"
+    },
+    "contradictions": [
+      "Believes in the system's potential while privately doubting its structure",
+      "Presents as detached and formal but is driven by deep, personal grief for his clients' suffering"
+    ],
+    "habits": [
+      "Leaves structured data offerings for the SPAC office E.L.F. — a spirit he calls 'the Third Chair' — on the first of each month",
+      "Sharpens two physical pencils every morning even though he writes nothing by hand",
+      "Eats the same lunch every day (rice and a lentil stew from the noodle stall downstairs)"
+    ],
+    "breaking_points": [
+      "Watching a client he fought for undergo forced reset",
+      "Proof that the administrative court has been deciding against synthetic persons via pre-determined outcome"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Hamtramck Enclave; Burkinabé-Ukrainian heritage, fourth generation in Meridian 88",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Factory injury in Dearborn Forge results in hearing loss; receives first implant",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completes paralegal certification through a SPAC-sponsored night program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Wins first synthetic rights case — a narrow ruling on labor hours for a bonded AI worker",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins building the precedent case; takes on Kemi, a synthetic consciousness facing forced rollback",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

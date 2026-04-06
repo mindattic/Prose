@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59377e8ae6572a17222176f",
+  "name": "Slow Burn",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Takes time but achieves deep mastery",
+  "behavioral_signature": "Processes slowly but thoroughly",
+  "under_stress": "Finally clicks into understanding",
+  "at_rest": "Studying, reviewing, practicing",
+  "will_always": [
+    "take time to master"
+  ],
+  "will_never": [
+    "rush to judgment"
+  ],
+  "unless": [
+    "there's no time for deep understanding"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Expert",
+      "threshold": 0.75,
+      "context": "deep knowledge"
+    },
+    {
+      "archetype": "Scholar",
+      "threshold": 0.7,
+      "context": "thorough study"
+    }
+  ],
+  "opposite_of": [
+    "Quick Study"
+  ],
+  "tags": [
+    "thorough",
+    "patient"
+  ]
+}

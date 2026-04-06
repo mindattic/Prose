@@ -1,0 +1,96 @@
+{
+  "id": "019d6143a610731285c45bf13ef69a2a",
+  "type": "character",
+  "name": "Farida Osei-Magnusdottir",
+  "aliases": [
+    "Ember"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Kindling merchant - Threshold operator",
+  "age": 41,
+  "status": "active",
+  "location": "The Underworld - B1 Threshold",
+  "description": "Farida runs the largest trading post at the Threshold. Her bioluminescent geneware makes her skin glow faint amber in the dark.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "The Kindling",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,214 @@
+{
+  "id": "019d6143a67371639a09ca6f1035ff26",
+  "type": "character",
+  "name": "Obafemi Szczypiński-Lautoa",
+  "aliases": [
+    "Obi",
+    "Patchwork"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Truant message runner, The Shelf",
+  "age": 11,
+  "status": "active",
+  "location": "The Shelf, Garfield Rack",
+  "description": "Obi is a scrawny, dark-skinned boy with close-cropped hair that he's attempted to dye in patches — copper at the temples, greenish-black at the crown — using stolen salon gel that only half-worked. His left eye has a cracked retinal overlay from a secondhand aug he installed himself using a cracked tutorial, giving that eye a faint grid shimmer when he's excited or scared. He wears a vest with too many pockets, each one holding something he's convinced will be useful someday: a dead ELF token, three different brand of protein tabs, a bent stylus. He moves like a sparrow — quick, diagonal, always watching exits.\n\nObi is relentlessly optimistic in the way only children who've had to practice it deliberately can be. He runs messages between market stalls, repair shops, and mid-tier residents who don't trust the corp relay networks, collecting Φ1-2 per run. He narrates his own life in his head as if he's a documentary subject, which makes him unexpectedly articulate about his circumstances when asked. He worships a minor ELF he calls 'Knuckle' that he believes lives in a cracked streetlight on his corner.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "becoming invisible — just another street statistic nobody remembers",
+      "losing Knuckle's favor and the luck he believes it brings"
+    ],
+    "core_desires": [
+      "to be known as someone important in this neighborhood",
+      "to eventually afford a real school subscription"
+    ],
+    "coping_mechanisms": [
+      "narrating his life as an ongoing documentary",
+      "compulsive collection of 'useful' small objects",
+      "ELF devotion rituals"
+    ],
+    "blind_spots": [
+      "drastically overestimates his own invisibility — adults notice him more than he thinks",
+      "doesn't recognize when he's being used by older runners"
+    ],
+    "secret": "He witnessed a Tessera logistics officer accepting a bribe from a Shelf gang lieutenant three weeks ago and recorded four seconds of it on his glitching retinal overlay before it crashed. He hasn't told anyone because he doesn't know what it's worth yet — and he's been asking careful questions to find out."
+  },
+  "speech_patterns": {
+    "vocabulary": "Street-clipped, mixes Shelf slang with surprisingly formal documentary-style observations. Uses 'allegedly' and 'as documented' ironically.",
+    "cadence": "Fast and breathless when excited, deliberate and serious when he wants to be taken seriously.",
+    "verbal_tics": [
+      "'As documented—'",
+      "'Allegedly.'",
+      "Whistles one short note when he's thinking"
+    ],
+    "example_lines": [
+      "'As documented, you want this package at Mira's stall before second bell — that's gonna cost you two-fifty, allegedly.'",
+      "'Knuckle's been flickering weird all week. Something's coming. I'm just saying.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The four seconds of recorded footage in his cracked overlay is starting to corrupt — he needs someone to help him extract it before it's gone forever.",
+    "A newer, older runner is muscling into Obi's message routes and the boy is convinced — correctly — that this person is a plant for someone gathering information on the market network."
+  ],
+  "narrative_function": "Local color and information source — Obi knows everyone in his eight-block radius by face and habit. He can be a quest-giver (something he witnessed on a run), an entry point into the informal economy, or a moral anchor in grim storylines.",
+  "augmentations": "Cracked secondhand retinal overlay (left eye only, partially functional — shows grid shimmer and partial AR tags but glitches frequently). No geneware.",
+  "daily_life": "Up before dawn to catch early market runners needing messages delivered before the corp patrols shift change; spends midday hiding in the conduit access tunnels beneath Garfield Rack doing homework from pirated school files; evenings running a second message wave and leaving data offerings at Knuckle's streetlight.",
+  "affiliation": "Independent; loosely connected to Garfield Rack informal market network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 1,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-smart",
+      "ELF-devotee",
+      "information-sponge",
+      "optimist-by-necessity",
+      "self-taught"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always scout a new route twice before using it",
+      "Never carry anything he can't explain if stopped",
+      "Never run for anyone who won't tell him what's in the package"
+    ],
+    "escalation_ladder": [
+      "Deflect with charm and a story",
+      "Use knowledge of local geography to disappear",
+      "Run — no hesitation, no looking back"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Bright and instantly friendly, pitching his services before they've finished looking at him",
+      "friends": "Loyal and slightly clingy, shows up uninvited to check on people he likes"
+    },
+    "stress_responses": {
+      "low": "Talks faster, more documentary-voice narration",
+      "medium": "Goes very quiet and still, eyes moving constantly",
+      "high": "Bolts — pure instinct, figures out the direction afterward"
+    },
+    "contradictions": [
+      "Presents himself as a seasoned professional while being visibly eleven years old and occasionally terrified"
+    ],
+    "habits": [
+      "Touches each pocket in sequence when anxious",
+      "Leaves a small data packet of ambient sound recordings at Knuckle's streetlight every three days",
+      "Eats protein tabs in halves to make them last"
+    ],
+    "breaking_points": [
+      "Discovering Knuckle is just a malfunctioning streetlight with no ELF — his entire coping framework would collapse",
+      "Someone he trusted using one of his routes to hurt another person in his community"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "partially functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Garfield Rack to a Shelf family; mother works laundry logistics, father unknown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins running messages at age 7, initially just for market vendors his mother knows",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Self-installs cracked retinal overlay; left eye never fully recovers correct function",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Records partial footage of Tessera-gang bribe; begins quietly investigating its value",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

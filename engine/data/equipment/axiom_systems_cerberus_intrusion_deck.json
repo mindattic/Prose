@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8547a7fa47512c35266653f",
+  "name": "Axiom Systems Cerberus Intrusion Deck",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems Cerberus Intrusion Deck",
+  "type": "equipment",
+  "aliases": [
+    "Cerberus",
+    "Hack Box",
+    "Axiom Deck",
+    "Triple Head"
+  ],
+  "category": "hacking",
+  "description": "A compact cyberdeck designed for offensive network intrusion, containing three independent processing cores that can simultaneously attack different security layers of a target system. The Cerberus runs Axiom's proprietary penetration suite — a library of exploit packages, cryptographic attack tools, and social engineering AI modules that adapt to target defenses in real-time. The deck interfaces directly with the operator's neural implant for speed-of-thought interaction and includes a hardware firewall that isolates the operator's neural interface from counterattack. Its triple-core architecture allows parallel attacks that overwhelm security systems designed to handle single-vector intrusions.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited — offensive intrusion hardware",
+  "base_technologies": [],
+  "specifications": {
+    "processing cores": "3 independent attack vectors",
+    "software": "Axiom Penetration Suite v7.2",
+    "neural interface": "Direct connection required",
+    "defensive": "Hardware firewall + neural isolation layer",
+    "cryptographic attack": "Quantum-assisted key cracking",
+    "weight": "0.4 kg",
+    "form factor": "Wrist-mounted or belt clip",
+    "power": "8-hour battery",
+    "attack parallelism": "3 simultaneous intrusion vectors"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A Cerberus deck has been recovered with its attack logs intact, revealing that the operator penetrated a system they should not have been able to crack — the logs show a fourth attack vector that the hardware should not support.",
+    "Axiom's Penetration Suite has been updated with a backdoor that reports all successful intrusions back to Axiom — operators using the deck are unknowingly sharing their targets with its manufacturer."
+  ],
+  "tags": [
+    "hacking",
+    "equipment",
+    "war",
+    "neural",
+    "ai",
+    "fire",
+    "tier 3"
+  ]
+}

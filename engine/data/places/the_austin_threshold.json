@@ -1,0 +1,101 @@
+{
+  "id": "019d6143a9347c889285ad0fd43c5279",
+  "type": "place",
+  "name": "The Austin Threshold",
+  "aliases": [
+    "Austin",
+    "The Threshold",
+    "The West Wall",
+    "A-Town"
+  ],
+  "description": "Austin was once the most populous community area in Chicago — a historically significant Black neighborhood that bore the accumulated weight of a century of racist disinvestment, white flight, redlining, and every other tool the American machine used to break communities it didn't value. When the incorporation came, Austin didn't fall. It was already down. The corps simply stepped over it.\n\nThe Austin Threshold is the western edge of Meridian 88's governed territory — the place where corporate jurisdiction doesn't end so much as evaporate, thinning from token presence to complete absence over the space of about two miles. The eastern blocks still have functioning MeriRail stations, intermittent Axiom Security patrols, and the basic infrastructure that comes with being technically inside the city. The western blocks have none of this. The western blocks have themselves. And that, it turns out, is substantial.\n\nWhat corporate cartography calls the Threshold, residents call A-Town, and A-Town has been surviving on its own terms for longer than the corponations have existed. The community organizations that anchored Austin through the worst of the 20th and early 21st centuries — churches, mutual aid networks, neighborhood associations — evolved into something harder and more durable when the incorporation stripped away the last pretense of institutional support. The Austin Community Trust operates as a de facto government: managing water distribution, maintaining a community power grid running on solar arrays installed on every available rooftop, operating schools that teach practical skills alongside the academic curriculum, and running a community health system that is primitive by corporate standards and miraculous by Shelf standards. The Trust's leadership is elected, accountable, and ruthlessly practical. They do not waste time on ideology. They waste time on nothing.\n\nThe Threshold's population is predominantly Black, and the community's historical consciousness is razor-sharp. The Trust maintains an oral history project that traces Austin's trajectory from prosperous neighborhood to disinvested wasteland to abandoned zone to self-governing community — a narrative arc that the corporate version of history would prefer to forget. The elders who carry this history are treated with a reverence that has practical dimensions: they remember how the community survived before, and that knowledge is the Trust's most valuable asset.\n\nKyle respects A-Town in a way he respects few other places. Not because it's safe — it isn't — but because it is honest about what it costs to survive without permission. The Threshold doesn't pretend. It doesn't brand itself. It just continues, stubbornly, to exist, and to make that existence mean something.",
+  "atmosphere": {
+    "sights": [
+      "Rooftop solar arrays stretching block after block — the community's self-built power grid visible from above",
+      "The gradient from governed to ungoverned: streetlights thinning, corporate signage disappearing, community infrastructure replacing it",
+      "Austin Community Trust banners on public buildings — hand-painted, functional, unbranded",
+      "Community gardens occupying vacant lots — food production at a scale that suggests long-term planning",
+      "Churches that still function as churches, their steeples the tallest structures for blocks",
+      "Children walking to Trust-run schools in organized groups, watched by community monitors"
+    ],
+    "sounds": [
+      "Gospel music from Sunday services that haven't stopped for any apocalypse",
+      "Community Trust radio — low-power FM broadcasting weather, security updates, and cultural programming",
+      "The relative silence of the western blocks — no corporate ambient, no surveillance hum, just the city's actual voice",
+      "Construction — the Trust is always building, always repairing, always maintaining what it has"
+    ],
+    "smells": [
+      "Garden soil and growing food — the Trust's agricultural program is the most productive in the Corridor",
+      "Church cooking — community meals prepared in institutional kitchens that feed hundreds",
+      "The absence of corporate air treatment — A-Town breathes unfiltered, for better and worse"
+    ],
+    "feel": "Dignified. That's the word that fits, even though it shouldn't have to be remarkable that a community maintains its dignity. A-Town feels like a place that has been told it doesn't matter by every institution with the power to say so, and has responded by mattering harder. There is grief here — for what was taken, for what was never given, for the people who didn't make it — but the grief is load-bearing. It holds things up.",
+    "tags": []
+  },
+  "demographics": "Approximately 100,000 residents, predominantly Black with growing populations of climate refugees and tier-displaced families from across the Corridor. Self-governing through the Austin Community Trust. Tier status: technically Tier 1, functionally autonomous. The Trust keeps its own records and does not share population data with corporate census systems.",
+  "economy": "",
+  "power_structure": "",
+  "dangers": [
+    "The western blocks' complete absence of emergency services — everything is community-managed or nothing",
+    "Territorial boundaries enforced by community security patrols that don't answer to anyone you can complain to",
+    "Resource scarcity — the Trust manages carefully, but there isn't enough of anything",
+    "Corporate neglect weaponized — infrastructure failures that the city won't repair and the Trust can barely patch",
+    "Being mistaken for a corporate scout — the community's patience for outside interference is exhausted",
+    "The emotional weight of a place where survival requires constant effort and has for generations"
+  ],
+  "opportunities": [
+    "Alliance with the most resilient self-governing community in the Corridor",
+    "The Trust's agricultural surplus as a trade commodity",
+    "Community intelligence networks refined over decades of institutional abandonment",
+    "Historical knowledge that corporate archives have suppressed — the elders remember",
+    "The Threshold's position at the Corridor's western edge — the gateway to everything beyond"
+  ],
+  "story_hooks": [
+    "A corporate development firm has filed for rezoning rights to Austin's eastern blocks, and the Trust needs evidence of the community's pre-incorporation property claims — records that exist only in a sealed corporate archive",
+    "The Trust's solar grid is failing, and the only replacement components are in a Vantage Meridian warehouse — the Trust's leadership debates whether to buy, beg, or take",
+    "An elder carrying irreplaceable oral history is critically ill, and the only treatment exists in the Core — getting her there and back requires navigating every tier boundary in the Corridor"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Humboldt Cage",
+      "West Garfield Hollow",
+      "The Meridian Lock"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Austin Community Trust members maintaining their self-governing infrastructure",
+    "Community elders whose historical knowledge is the district's most protected asset",
+    "Farmers and food producers supplying the Trust's agricultural network",
+    "Outsiders who have earned the Trust's permission — a process that takes time and cannot be purchased",
+    "Operators who understand that A-Town's cooperation is earned, never bought"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.894,
+    "lng": -87.765,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "weapon",
+    "war",
+    "trust",
+    "consciousness",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "rooftop",
+    "bar",
+    "warehouse",
+    "rights",
+    "survival",
+    "refugee",
+    "chase",
+    "food",
+    "water",
+    "shelf"
+  ]
+}

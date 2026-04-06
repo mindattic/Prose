@@ -1,0 +1,214 @@
+{
+  "id": "019d6143a7237b80b00fb36088780a7b",
+  "type": "character",
+  "name": "Yemisi Drakulić-Tambadou",
+  "aliases": [
+    "Yemi",
+    "The Pepper Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Food stall operator, Oxidian Market",
+  "age": 58,
+  "status": "active",
+  "location": "The Oxidian Market, Geartown",
+  "description": "Yemisi is a broad-shouldered woman with deep brown skin mapped by decades of cook-steam and open-air weather, her face a geography of laugh lines and hard-earned furrows. She keeps her grey-streaked locs pinned up under a faded Ferrogate Transit bandana, and her forearms are permanently dusted with spice residue that no amount of scrubbing fully removes. Her left eye is a cheap-tier augment — milky white with a fixed amber pupil — replacing one lost to a grease fire twenty years ago; she never bothered upgrading it because the money always went elsewhere. She wears the same oil-darkened apron every day, patched four times over, and moves around her narrow stall with the efficiency of someone who has cooked in tight spaces her entire life.\n\nYemisi is the kind of woman who remembers everyone's order after hearing it once and forgets nothing that matters. She has opinions about everything and shares them freely, but never cruelly — her sharpness has warmth underneath it, like the pepper she puts in everything. She has worked the same two-meter stall for nineteen years, feeding shift workers, street kids, and the occasional lost corporate drone who wandered too far from the elevated walkways. She treats her regular customers like difficult extended family: loved, slightly exasperated with, fed regardless.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Losing the stall — her last connection to independence",
+      "Dying before her youngest daughter finishes her apprenticeship"
+    ],
+    "core_desires": [
+      "To be remembered as someone who fed people well",
+      "To see Geartown become livable again, the way it was when she first arrived"
+    ],
+    "coping_mechanisms": [
+      "Cooking elaborate new dishes when stressed",
+      "Reciting old Yoruba proverbs her grandmother taught her"
+    ],
+    "blind_spots": [
+      "Assumes everyone can be won over with enough warmth and food",
+      "Underestimates how much her stall is coveted by the Guild's newer power brokers"
+    ],
+    "secret": "She has been quietly skimming a small portion of her Guild dues each month for three years, feeding the money to a Geartown tenants' mutual aid fund. If the Guild found out, she'd be expelled and her stall license revoked."
+  },
+  "speech_patterns": {
+    "vocabulary": "Yoruba-inflected cadences mixed with Meridian street pidgin; calls everyone 'my friend' until they prove they aren't; uses food metaphors constantly",
+    "cadence": "Unhurried and declarative, like someone who has made peace with taking up space in conversation",
+    "verbal_tics": [
+      "'You hear me?'",
+      "'Ehh—'",
+      "Clicking her tongue before disagreeing"
+    ],
+    "example_lines": [
+      "'Ehh— you want the beef or the mushroom? Don't tell me you don't know, you knew before you walked up, you hear me?'",
+      "'This city is a pot that boils too hot and nobody wants to turn down the flame. Sit. Eat something.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Guild enforcer has been pressuring her to sell her stall location to a corporate food-chain front; she needs leverage or allies before the next rent cycle",
+    "She witnessed something she shouldn't have three weeks ago — a body moved through the market at 04:00 — and has been feeding the wrong people better than usual ever since, hoping they'll notice her anxiety and ask"
+  ],
+  "narrative_function": "Local color anchor, neighborhood oracle, quest giver for community-level problems, safe haven for people who need to disappear into a crowd.",
+  "augmentations": "Budget ocular implant (left eye, fixed amber iris, non-networked). No other augmentations. Cosmetic: none.",
+  "daily_life": "Up at 03:30 to prep broths and soak grains; stall open by 06:00, closed when the pots run empty, usually around 21:00. Walks home to a Geartown corridor flat, soaks her feet, asleep by midnight.",
+  "affiliation": "Independent; informal dues to the Oxidian Market Vendors Guild",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community pillar",
+      "neighborhood memory",
+      "stubborn idealist",
+      "quiet risk-taker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed first, ask questions second",
+      "Never turn away someone who looks hungry regardless of ability to pay",
+      "Protect the stall above personal safety"
+    ],
+    "escalation_ladder": [
+      "Cheerful deflection and subject change",
+      "Quiet firm refusal with a fixed stare",
+      "Loudly involving nearby vendors as witnesses",
+      "Picking up the nearest heavy implement without hesitation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but assessing — she reads people quickly and decides within a minute whether they get the full warmth or the polite-but-closed version",
+      "friends": "Aggressively nurturing, opinionated, will argue with you about your choices while pressing more food on you"
+    },
+    "stress_responses": {
+      "low": "Hums to herself and adjusts spice ratios unnecessarily",
+      "medium": "Goes very quiet and focused, moves faster, stops making eye contact",
+      "high": "Erupts in a short controlled burst of Yoruba and then goes completely calm in a way that unnerves people"
+    },
+    "contradictions": [
+      "Preaches community but keeps her real financial situation secret from everyone, including her daughters"
+    ],
+    "habits": [
+      "Tastes every dish exactly three times before service",
+      "Leaves a small plate of food at the ELF shrine bolted to the market wall every morning",
+      "Wipes down her counter compulsively between customers"
+    ],
+    "breaking_points": [
+      "Anyone threatening her daughters",
+      "Watching a child go hungry in her line of sight"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9,
+    "Social Chameleon": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Arrived in Meridian 88 from the Lagos-Adriatic migration corridor, age 23",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Grease fire accident destroyed left eye; could not afford quality replacement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Secured Oxidian Market stall license after seven years as a roving cart vendor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began skimming Guild dues to fund Geartown tenant mutual aid",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

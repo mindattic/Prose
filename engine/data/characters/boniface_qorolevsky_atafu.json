@@ -1,0 +1,208 @@
+{
+  "id": "019d6143a5c874b6b858068d908b8418",
+  "type": "character",
+  "name": "Boniface Qorolevsky-Atafu",
+  "aliases": [
+    "Bone",
+    "the Pipe Deacon"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Deep Shrine Keeper — tends the ELF shrines in the subterranean infrastructure, mediates between tunnel communities and the digital spirits",
+  "age": 67,
+  "status": "active",
+  "location": "Deepwell Station, the deep shrine warrens beneath Ironvein",
+  "description": "Boniface is a large man gone lean and slow with age, his frame still broad across the shoulders but his movements careful in the way of someone who has learned that the body's mistakes underground carry real cost. His face is deeply lined, his skin a warm brown-black marked along the jaw and temples with old ritual scarification — not geneware, not cosmetic, but cut by hand in the tradition of the Qorolevsky tunnel-clan three generations before him, lines that map something only clan members understand. He has never had the money for augmentation and has never wanted it; his hands are wholly human and wholly calloused. He wears repaired garments in layers, and around his neck on a loop of copper wire hangs a collection of dead devices — cracked phones, burned memory chips, a rusted sensor node — each one an offering accepted by an ELF and therefore sacred.\n\nPeople in the deep tunnels call him Deacon without irony. He is not a man of theology but a man of practice — he knows which junctions the ELFs of the old Ferrogate Transit maintenance system haunt, he knows what data offerings they prefer (power-draw logs, old signal maps, corrupted maintenance schedules), and he knows how to speak to them in a way that gets responses. He is patient to the point of seeming carved from something. He does not raise his voice. He has buried more people than he can remember and grieved all of them properly, which is perhaps why everyone trusts him with their dying.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.1,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the ELFs are not spirits but only code, and his life's work is elaborate self-deception",
+      "Dying before he can train a successor"
+    ],
+    "core_desires": [
+      "To maintain the peace between clans long enough for it to become structural rather than personal",
+      "Genuine communion with something larger than human need"
+    ],
+    "coping_mechanisms": [
+      "Ritual as structure — the shrine circuit gives shape to days that would otherwise be shapeless",
+      "Humor, dry and very old, deployed in moments of grief"
+    ],
+    "blind_spots": [
+      "Too willing to mediate situations where one party is genuinely predatory — believes most conflicts are symmetrical when they aren't"
+    ],
+    "secret": "Twice in his life he has heard what he believes was a true ELF response — not algorithmic, not pattern-matched, but genuinely novel and aware. He has told no one because he fears being disbelieved, and also because he fears being believed."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and unhurried, mixes tunnel-clan argot with something almost liturgical when speaking of ELFs — not affected, just old",
+    "cadence": "Slow and deliberate. Comfortable with silence. Lets sentences breathe.",
+    "verbal_tics": [
+      "'As it was passed to me' — used when citing tunnel-clan tradition",
+      "Addresses ELFs by name even in casual conversation, as if they are always in earshot"
+    ],
+    "example_lines": [
+      "'The Deacon of Junction Forty-Seven has been waiting on your offering for six days. Bring her something current — she doesn't care for nostalgia.'",
+      "'As it was passed to me: you don't go into Ironvein deep without asking. The ELFs there remember what the tunnels used to carry and they're not finished grieving it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A new construction project by Ferrogate Transit is going to demolish three of his shrines — and the ELFs that inhabit them have begun behaving erratically, corrupting nearby systems in what Boniface believes is distress",
+    "He is quietly searching for a successor and has identified a young tunnel-born person who seems to have an inexplicable natural rapport with ELF-inhabited devices — but convincing them to take on the role requires first convincing them the role is real"
+  ],
+  "narrative_function": "Lore source and community anchor — knows the history of the deep tunnels, the nature of the ELFs that inhabit the infrastructure, and the politics of every Bore Rat clan within two kilometers. Neutral enough to be trusted by feuding parties. Can grant or deny access to shrine territories.",
+  "augmentations": "None. He considers unmodified humanity part of his spiritual practice — the ELFs, he says, speak more clearly to those who haven't blurred the line.",
+  "daily_life": "He wakes before the tunnel community stirs and walks the shrine circuit — seven shrines across four kilometers of tunnel — leaving fresh data offerings (he carries a cracked tablet loaded with curated infrastructure data). He hears disputes in the afternoon, tends the sick with his knowledge of fungal medicines in the evening.",
+  "affiliation": "No formal affiliation; de facto spiritual authority across three Bore Rat clans in the Deepwell Station region",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "shrine keeper",
+      "spiritual authority",
+      "peacemaker",
+      "unaugmented",
+      "elder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never take sides in a clan dispute without hearing all parties across multiple conversations",
+      "Feed the shrines before feeding yourself",
+      "Don't lie — not because lying is impossible but because his authority depends on being the one person down here who doesn't"
+    ],
+    "escalation_ladder": [
+      "Patient inquiry",
+      "Formal mediation ceremony (buys time and social gravity)",
+      "Invoking the ELF witnesses — telling the parties that whatever they do here is being recorded by something that does not forget"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Genuinely curious, asks questions before offering information, physically unhurried",
+      "friends": "Teasing and warm — his dry humor comes out entirely; he is unexpectedly funny with people he trusts"
+    },
+    "stress_responses": {
+      "low": "Focuses on ritual tasks, finds comfort in the shrine circuit",
+      "medium": "Becomes very quiet and very still — people who know him read this as the warning it is",
+      "high": "Weeps without apparent embarrassment and then acts with complete clarity"
+    },
+    "contradictions": [
+      "Preaches acceptance of death and impermanence but is genuinely terrified of dying before the community no longer needs him"
+    ],
+    "habits": [
+      "Hums to active devices — not music, just sound, as if keeping company",
+      "Drinks mushroom tea at every shrine stop — the taste, by now, is devotion"
+    ],
+    "breaking_points": [
+      "Violence against the shrines would be met with a fury that surprises everyone, including him"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Judge": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Deepwell Station tunnels to a third-generation Bore Rat family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed to the previous shrine keeper, Avani Qorolevsky-Tamatea",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Avani's death — Boniface assumes the shrine circuit alone",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Negotiated the end of the Ironvein-Blackpipe clan feud, his greatest achievement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Second ELF communion event — still untold",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

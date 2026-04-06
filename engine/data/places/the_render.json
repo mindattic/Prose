@@ -1,0 +1,120 @@
+{
+  "id": "019d6143a94d7e8b98099357f44134d6",
+  "type": "place",
+  "name": "The Render",
+  "aliases": [
+    "Render District",
+    "The Burnside",
+    "Ashfields",
+    "The Dead Frequency"
+  ],
+  "description": "The Render is what Meridian 88 leaves behind when it's done with a place — a 40-block sector in the city's northwestern quadrant that was a thriving mid-tier residential and commercial district until a combination of corporate rezoning, infrastructure disinvestment, and a catastrophic chemical fire eighteen years ago made it genuinely uninhabitable by any legal standard. The city condemned it, the corporations walked away, and the remediation funding that was approved was quietly redirected over the following decade. What remains is a zone of burned-out structures, chemically contaminated soil, and collapsed infrastructure that official Meridian maps mark simply as 'non-residential remediation zone.'",
+  "atmosphere": {
+    "sights": [
+      "fire-blackened building facades stabilized by improvised scaffolding",
+      "dead trees preserved by the chemical contamination that killed them",
+      "new construction growing from ruins — improvised, raw, and defiant",
+      "chemical contamination visible as iridescent sheen on standing water",
+      "murals covering entire building faces with imagery too large to read from street level",
+      "the haze from the still-active chemical reaction in the soil at the district's western edge"
+    ],
+    "sounds": [
+      "wind through structural gaps in burned buildings",
+      "construction sounds — improvised, non-corporate, constant",
+      "music from multiple sources at competing volumes",
+      "the absence of corporate announcement systems and advertising audio",
+      "generators running on salvaged fuel",
+      "community radio broadcasts audible from speakers mounted on buildings"
+    ],
+    "smells": [
+      "petrochemical undertone that never fully dissipates",
+      "wood smoke from heating fires",
+      "fresh construction materials — concrete, metal, cut wood",
+      "communal cooking from the district's open kitchens",
+      "the particular smell of soil that has been chemically altered"
+    ],
+    "feel": "Simultaneously desolate and vital — a place that the city has written off and whose residents have responded by building something the city never designed and cannot easily control. The contamination is real and the dangers are real, but so is the sense that here, at least, something is being built for the people who live in it.",
+    "tags": []
+  },
+  "demographics": "Approximately 20,000 residents, all officially nonexistent from a city registration standpoint. Predominantly people for whom every other option was worse — those fleeing corporate debt, violence, or forced relocation — alongside a significant community of people who chose the Render deliberately for the freedom that comes with official nonexistence. A notable artist and activist community has built significant infrastructure here over the past decade.",
+  "economy": "Entirely informal — salvage and reclamation of materials from the ruins, artisan manufacturing, community agriculture in raised-bed systems that keep crops above the contaminated soil, and a robust service economy that includes medical care, education, and legal assistance provided collectively rather than commercially. Outside money flows in through the artist community's external sales and through the Render's role as a production site for goods that can't be made in monitored corporate space.",
+  "power_structure": "No formal governance. Decision-making occurs through a dense network of block assemblies, mutual aid collectives, and issue-specific working groups. Several informal militias maintain perimeter security and internal dispute resolution with varying degrees of community accountability. The artist collective known as Ashfall holds significant soft power through their control of the community radio network and the district's external communications.",
+  "dangers": [
+    "genuine chemical contamination causing long-term health effects for all residents",
+    "the western Burn Zone where active chemical reaction in the soil makes entire blocks inaccessible",
+    "corporate remediation contractors who periodically attempt to 'clear' the area using methods indistinguishable from violence",
+    "Meridian city enforcement sweeps that are technically legal given the condemnation status",
+    "militia factions whose accountability to the broader community has been eroding",
+    "structural instability in burned buildings that residents continue to inhabit",
+    "outside criminal operations attempting to use the off-grid status for their own purposes"
+  ],
+  "opportunities": [
+    "the only large-scale off-grid space in Meridian 88 where fabrication and organization can occur without corporate monitoring",
+    "genuine community infrastructure — medical, educational, legal — built outside corporate systems",
+    "Ashfall's community radio as a communications network that reaches all of Meridian",
+    "the ruins contain pre-Meridian infrastructure and data systems that were never recovered",
+    "a community with strong motivation and established networks for direct action",
+    "the contaminated soil has produced several unique chemical compounds that don't appear in any corporate catalog"
+  ],
+  "story_hooks": [
+    "The contamination in the western Burn Zone has changed — it's moving, slowly but measurably, and the direction it's moving will matter enormously in six months",
+    "Ashfall's community radio has been broadcasting a signal embedded beneath its audio that no one at Ashfall claims to have put there",
+    "A corporate remediation contractor has arrived with an injunction and a private security force larger than any previous sweep — and the Render's militias are fractured over how to respond",
+    "A resident has been producing art that incorporates the contaminated soil's chemical compounds — and a corporate research division has taken an interest that goes well beyond the art world",
+    "Someone has been systematically destroying the district's raised-bed agriculture infrastructure over the past month, and the community is fracturing over who is responsible"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Pale Mile",
+      "Harrowgate Industrial Plateau",
+      "Substation Null"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "permanent residents building outside corporate systems",
+    "artists and activists choosing deliberate off-grid existence",
+    "people in flight from corporate debt and legal exposure",
+    "journalists and documentarians — welcomed selectively",
+    "corporate remediation contractors and city enforcement — unwelcome",
+    "researchers studying both the contamination and the community",
+    "outside organizers connecting with the Render's activist networks"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Ashfall Tower",
+      "description": "A twelve-story burned-out residential tower that Ashfall collective has rebuilt from the inside out, leaving the scorched exterior intact while creating a fully functioning arts and communications center within. The antenna array on its roof broadcasts the Render's community radio to all of Meridian 88 and theoretically cannot be legally shut down due to the district's ambiguous condemnation status.",
+      "tags": []
+    },
+    {
+      "name": "The Burn Zone Perimeter",
+      "description": "The edge of the western contamination zone where active chemical reactions in the soil make the ground itself hostile — surfaces corrode, electronics fail, and exposure beyond thirty minutes begins producing measurable physiological effects. The perimeter is marked by a dense collection of warning structures, memorials to those who didn't heed them, and the research outpost of a scientist who has lived here for eleven years studying the reaction.",
+      "tags": []
+    },
+    {
+      "name": "The Commons Market",
+      "description": "The Render's central exchange, held in the open footprint of a collapsed shopping center whose foundations have been converted into permanent market infrastructure. Unlike Meridian's commercial spaces, nothing here is owned by entities outside the district — every stall, every service, every transaction exists within the community's own economy, and the Commons serves simultaneously as market, meeting ground, and the closest thing the Render has to a civic center.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.89,
+    "lng": -87.635,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "violence",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "money",
+    "debt",
+    "medical",
+    "freedom",
+    "fire"
+  ]
+}

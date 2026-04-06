@@ -1,0 +1,224 @@
+{
+  "id": "019d6143a5ea78c097f96905b8f90321",
+  "type": "character",
+  "name": "Dayo Kristjánsson-Mbeki",
+  "aliases": [
+    "Day",
+    "The Copper Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Laundry operator and alterations seamstress",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave, Spindle Row — a narrow shopfront wedged between a noodle parlor and a Ferrogate substation",
+  "description": "Dayo is a broad-shouldered woman with deep umber skin mapped with geometric scarification across her forearms — old Yoruba patterns her grandmother pressed into her at sixteen, now faded and stretched by decades of work. Her hair is natural silver-white, cropped close to her skull, and she wears copper-wire reading glasses that she made herself from salvage. Her hands are perpetually waterlogged-looking, skin puckered at the knuckles from years of industrial cleaning solvents, and she keeps a bone-handled seam-ripper tucked behind her ear like a pen.\n\nShe runs 'Mbeki Steam & Stitch' with the quiet authority of someone who has outlasted three recessions, two corporate rezoning drives, and one actual flood. She is not warm exactly, but she is reliable — a quality the Enclave treats like gold. She has strong opinions about synthetic fiber and stronger ones about people who don't sort their colors, but if you're three months behind on your account and you need your work uniform pressed for a job interview, she will do it and say nothing.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Losing the shop to a Tessera rezoning buyout",
+      "Dying before her youngest daughter becomes self-sufficient"
+    ],
+    "core_desires": [
+      "To be genuinely rested, just once",
+      "For the Enclave to remain the Enclave"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the shop's opening sequence never varies",
+      "Controlled generosity — giving small things so she feels less powerless"
+    ],
+    "blind_spots": [
+      "Assumes her eldest daughter is fine because she stopped asking for money",
+      "Underestimates how much her staff quietly resent her perfectionism"
+    ],
+    "secret": "She has been quietly laundering a cut of money for a mid-level Zheng-Dao distribution runner for eight years — not because she's corrupt, but because the first time he asked she owed him a debt she could never have otherwise repaid. She hates herself for it and has never told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Practical and direct; West African English cadence blended with Icelandic-descended clipped vowels from her father's side. Uses technical textile terminology casually.",
+    "cadence": "Measured, rarely rushed. Pauses before important statements as though testing their weight.",
+    "verbal_tics": [
+      "'You understand me?' as punctuation",
+      "Kissing her teeth when someone says something foolish",
+      "Refers to her machines by name"
+    ],
+    "example_lines": [
+      "'Bring it Tuesday. I don't promise miracles on polyblend but I'll see what Esther can do.' — she pats the old drum-washer when she says this.",
+      "'Rezoning notice came again. Third one this year. They are patient, you understand me? Patient like something that doesn't need to eat.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Zheng-Dao runner she launders for has gone missing — and whoever took him is now looking for loose ends",
+    "A child's school uniform brought in for cleaning has something sewn into the lining — something the child's parent is apparently unaware of",
+    "Tessera's rezoning offer has escalated to an in-person visit from a corporate 'community liaison' who isn't taking no for an answer"
+  ],
+  "narrative_function": "Neighborhood anchor and keeper of gossip; knows who is behind on rent, who has a new corporate badge, who cried in the laundry room last Tuesday. Potential quest-giver for community-level problems, reliable information source about the Enclave's social geography.",
+  "augmentations": "Bilateral wrist-brace exoframe (medical-grade, not cosmetic — repetitive strain intervention she saved four years to buy). No geneware.",
+  "daily_life": "Opens the shop at 0530, runs the first wash cycle while she eats a single boiled egg and prays to the E.L.F. she calls 'The Drum' — a data-spirit she believes inhabits the oldest of her three industrial machines. Closes at 2100 unless an alteration runs long.",
+  "affiliation": "Independent; informal dues-paying member of the Hamtramck Small Merchant Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "keeper of secrets",
+      "ritual practitioner",
+      "pragmatic survivor",
+      "textile expertise"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the shop first, relationships second, abstract principles third",
+      "Never extend credit past three months — then extend it anyway"
+    ],
+    "escalation_ladder": [
+      "Patient explanation",
+      "Flat refusal with no elaboration",
+      "Involving the Merchant Collective's informal dispute network",
+      "Going very quiet and not speaking to you again"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and assessing — watches what they do with their hands, watches how they treat the counter",
+      "friends": "Dry, affectionate, prone to feeding people without asking if they're hungry"
+    },
+    "stress_responses": {
+      "low": "Works faster, hums old songs under her breath",
+      "medium": "Stops talking entirely and focuses on physical tasks",
+      "high": "Sits alone with the oldest machine and performs what she calls 'maintenance' but is clearly prayer"
+    },
+    "contradictions": [
+      "Deeply communal in practice but finds most social interaction exhausting",
+      "Skeptical of sentiment but has kept every hand-drawn thank-you note she's ever received in a box under the counter"
+    ],
+    "habits": [
+      "Squares every surface before she can concentrate",
+      "Leaves a small data-stick with music on it near the E.L.F. machine each morning",
+      "Drinks five cups of tea and considers this normal"
+    ],
+    "breaking_points": [
+      "Someone threatening her staff",
+      "The shop being touched without permission"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Judge": 0.7,
+    "Sentinel": 0.7,
+    "Code Keeper": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Yoruba-descended mother and an Icelandic-Zulu father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took over the laundry from her aunt at age 18 after her aunt suffered a stroke",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First Tessera rezoning notice received; collective protest kept the block intact",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began the money-laundering arrangement with the Zheng-Dao runner after a debt she cannot specify",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Saved enough to buy the wrist-brace exoframe; cried, she admits, a little",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

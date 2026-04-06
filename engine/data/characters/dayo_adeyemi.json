@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a5ea7173a5976ef434daea68",
+  "type": "character",
+  "name": "Dayo Adeyemi",
+  "aliases": [
+    "Glitch",
+    "Twitchy",
+    "Day"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lower Dock Crew runner — Prologue survivor. Jaw shattered, rebuilt with chrome.",
+  "age": 22,
+  "status": "active",
+  "location": "The Shelf — lower loading docks",
+  "description": "Dayo Adeyemi came to the Shelf from the Lagos Resettlement Corridor when he was fourteen, one of four hundred thousand climate migrants processed through Meridian 88's intake system in a single year. He speaks four languages, none of them quietly. He is the youngest of the crew and the only one who tried to run from Kyle. Kyle caught him in three steps.\n\nThe chrome jaw replacement doesn't quite fit — it gives him a permanent underbite and makes a clicking sound when he talks. He compensates by talking constantly, as if the noise proves the jaw still works. Before the Prologue he was fast and cocky. Now he is fast and nervous. The cockiness is trying to grow back but keeps running into the memory of Kyle walking through the front door like death filling out a timesheet.\n\nDayo has a mother, Folake, who runs a food stall on Tier Four selling jollof rice that is genuinely the best thing in the lower Shelf. She knows Dayo is in the crew. She does not approve. Every Sunday she feeds him and tells him his father would be ashamed. His father died in the Lagos floods. Dayo was six. He does not remember his father well enough to know if she's right, and that is the thing that actually hurts.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.1,
+      "id": 0.4,
+      "shadow": 0.2,
+      "mask": 0.7,
+      "ghost": 0.1
+    },
+    "core_fears": [
+      "Kyle remembering his face",
+      "The clicking sound giving him away",
+      "His mother being right about his father"
+    ],
+    "core_desires": [
+      "To be fast enough next time",
+      "For the clicking to stop",
+      "To make his mother proud without leaving the only life he knows"
+    ],
+    "coping_mechanisms": [
+      "Talks nonstop",
+      "Runs everywhere — practicing",
+      "Sunday dinners with Folake"
+    ],
+    "blind_spots": [
+      "Speed won't save him. Kyle is faster.",
+      "His mother's jollof rice stall is the only thing keeping him human and he doesn't know it"
+    ],
+    "secret": "He saw Yuliya behind the ventilation unit during the fight. He didn't say anything. He doesn't know why. He thinks about it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Four languages worth of slang compressed into rapid English. Lagos inflections surface when he's scared or excited.",
+    "cadence": "Rapid-fire with involuntary pauses when the jaw catches. click mid-sentence.",
+    "verbal_tics": [
+      "*click* interrupts words",
+      "Says 'I'm just saying' after everything",
+      "Switches to Yoruba when startled"
+    ],
+    "example_lines": [
+      "I'm not scared of him, I'm just *click* strategically cautious, I'm just saying.",
+      "Mama's jollof would fix that man. Nobody fights after jollof. *click* That's science."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Folake Adeyemi",
+      "type": "mother",
+      "description": "Jollof rice stall, Tier Four. Feeds the Shelf. Disapproves of everything Dayo does Monday through Saturday.",
+      "emotional_core": "Love expressed as disappointment",
+      "story_tension": "Folake's stall is a Shelf institution. If the crew brings trouble to her door, Dayo breaks."
+    },
+    {
+      "name": "Yuliya Morozova",
+      "type": "unknown",
+      "description": "He saw her hiding. He said nothing. He doesn't understand the impulse and it bothers him.",
+      "emotional_core": "Unexamined mercy",
+      "story_tension": "If Yuliya and Dayo cross paths again, something happens that neither expects."
+    }
+  ],
+  "story_hooks": [
+    "The Yuliya connection — he protected her without knowing why",
+    "Folake's stall as a Shelf hub",
+    "The clicking jaw as audio signature",
+    "Four languages makes him useful to people who need translators"
+  ],
+  "narrative_function": "The mouth. Provides exposition and comic relief through nervous chatter. The clicking jaw is a sound effect that announces the crew's presence in any scene.",
+  "augmentations": "Chrome jaw replacement (poorly fitted, clicks). Speed-boosted leg tendons (pre-existing).",
+  "daily_life": "Running errands for Torque. Talking. Clicking. Running.",
+  "affiliation": "Lower Dock Crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 4,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 3
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [
+      "Be fast enough next time",
+      "Make Folake proud",
+      "Survive the crew life"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 4,
+        "response": "Talks faster, runs, fidgets — movement as anxiety management"
+      },
+      "moral": 5,
+      "trust": 5,
+      "desperation": 4
+    },
+    "strengths": [
+      "Zest",
+      "Social intelligence",
+      "Humor",
+      "Bravery",
+      "Curiosity"
+    ],
+    "weaknesses": [
+      "Self-regulation",
+      "Prudence",
+      "Perseverance",
+      "Integrity",
+      "Judgment"
+    ],
+    "tags": [
+      "runner",
+      "crew-member",
+      "chrome-jaw",
+      "multilingual",
+      "Lagos-migrant",
+      "comic-relief",
+      "fast",
+      "nervous"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always talk through fear — silence means the fear has won",
+      "Will never miss Sunday dinner with Folake regardless of crew obligations",
+      "Will always run rather than fight when given the option",
+      "Will never willingly enter the same room as Kyle",
+      "Will always protect his mother's stall from crew business",
+      "Will never admit the clicking jaw bothers him — 'it's a feature'"
+    ],
+    "escalation_ladder": [
+      "Talks faster and louder — nervous energy fills the space",
+      "Switches to Yoruba — instinctive retreat to mother tongue under pressure",
+      "Runs — speed-boosted leg tendons engage, flight over fight",
+      "Freezes — the clicking jaw locks, he goes silent for the first time",
+      "Acts on unexamined instinct — the same impulse that made him protect Yuliya"
+    ],
+    "interpersonal_modes": {
+      "Folake": "Absorbs her disappointment because her love is the only uncomplicated thing in his life",
+      "Yuliya Morozova": "Confused protective instinct he cannot explain or examine",
+      "Kyle": "Primal fear dressed up as 'strategic caution'"
+    },
+    "stress_responses": {
+      "low": "Talks nonstop, clicks increase, runs errands nobody asked him to run",
+      "medium": "Lagos inflections surface, humor becomes forced, keeps touching the jaw",
+      "high": "Speed-runs routes obsessively, stops eating, the clicking becomes constant",
+      "critical": "Goes silent — the absence of chatter is itself the alarm"
+    },
+    "contradictions": [
+      "Talks about not being scared of Kyle while physically unable to be in his presence",
+      "Wants to make his mother proud while being unable to leave the only life he knows",
+      "Protected Yuliya instinctively while serving the crew that hurt her father"
+    ],
+    "habits": [
+      "Talks constantly — the noise proves the jaw still works",
+      "Runs everywhere, always practicing, speed-boosted legs in constant use",
+      "Ends statements with 'I'm just saying'",
+      "Touches the chrome jaw self-consciously when nervous",
+      "Sunday dinners with Folake — the one sacred appointment"
+    ],
+    "breaking_points": [
+      "Crew business reaching Folake's stall on Tier Four",
+      "Kyle recognizing his face from the loading dock fight",
+      "Learning what his father would actually think of him",
+      "Yuliya confronting him about what he saw and did not report"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

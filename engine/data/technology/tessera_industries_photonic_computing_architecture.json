@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa537e97a64a7cc4186e8a75",
+  "name": "Tessera Industries Photonic Computing Architecture",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Photonic Computing Architecture",
+  "type": "technology",
+  "aliases": [
+    "PCA",
+    "Light Computer",
+    "Tessera Photon",
+    "Optical Brain"
+  ],
+  "subcategory": "computing",
+  "description": "A computing platform that uses photons instead of electrons for information processing, achieving computational speeds that exceed conventional electronics by a factor of 1,000 while consuming a fraction of the power. Tessera's PCA replaces silicon transistors with optical logic gates fabricated from metamaterials, routing data through waveguides at the speed of light. The architecture's primary advantage is not raw speed but parallelism — photonic processors handle millions of simultaneous operations without the heat generation that limits electronic chip density. PCA systems occupy the space of a desktop computer but deliver performance that would require a warehouse of conventional hardware.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Optical logic gate fabrication",
+    "Metamaterial waveguide routing",
+    "Photonic parallel processing architectures"
+  ],
+  "enables": [
+    "1000x computational speed increase",
+    "Dramatic power consumption reduction",
+    "Real-time complex simulation capability",
+    "Advanced AI processing platforms"
+  ],
+  "social_impact": "PCA has created a computational divide — organizations with photonic computing can process information at speeds that make conventional computing look like counting on fingers. Financial markets, security systems, research programs, and AI development all operate at fundamentally different speeds depending on access to PCA. Tessera's control of the fabrication process means they can choose who operates at photonic speed and who remains in the electronic age, a power they exercise with strategic precision.",
+  "story_hooks": [
+    "Tessera's PCA systems have been exhibiting unexplained behavior — photonic processors running calculations that were not requested, using spare capacity for unknown purposes as if the light-based computing medium has developed emergent processes.",
+    "A competitor has developed a virus specifically designed for photonic architectures — it propagates through the optical logic gates and cannot be detected by conventional electronic security systems."
+  ],
+  "tags": [
+    "computing",
+    "technology",
+    "war",
+    "ai",
+    "control",
+    "power",
+    "compute",
+    "market",
+    "warehouse",
+    "rain",
+    "tier 4"
+  ]
+}

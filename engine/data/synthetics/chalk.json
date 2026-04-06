@@ -1,0 +1,30 @@
+{
+  "id": "019d6143a9f27bfbad1e3ac0533b7b89",
+  "name": "Chalk",
+  "type": "elf",
+  "aliases": [
+    "The Marker"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "trickster",
+  "habitat": "network_sprite",
+  "origin": "intentional_release",
+  "status": "active",
+  "description": "A Wishing Well E.L.F. marking safe paths through dangerous territory by flickering streetlights in sequence.",
+  "observed_behavior": "Activates lighting patterns creating visible paths through areas with current threats.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 25,
+  "location": "The Shelf - contested corridors",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A mother follows the flickering lights home safely through robbery territory"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "trickster",
+    "network sprite",
+    "e.l.f.",
+    "shelf"
+  ]
+}

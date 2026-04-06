@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab5e7707884b88ec6e130a9c",
+  "name": "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+  "type": "weapon",
+  "aliases": [
+    "Amber",
+    "CFL-2",
+    "Foam Gun",
+    "The Encaser"
+  ],
+  "category": "heavy",
+  "description": "A pressurized launcher that deploys a binary chemical foam which expands on contact with air and hardens within 8 seconds into a rigid, heat-resistant polymer shell. A single burst can encase a human-sized target in a cocoon of hardened foam strong enough to resist small arms fire and capable of immobilizing even augmented individuals. The foam is porous enough to allow breathing through small air channels that form during expansion, though the experience of being rapidly encased in hardening chemical foam is described by test subjects as one of the most claustrophobic experiences imaginable. Zheng-Dao markets it as a non-lethal capture system, and it has become standard equipment for corporate extraction teams.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — law enforcement and corporate security",
+  "base_technologies": [
+    "Rapid-expansion binary polymer chemistry",
+    "Controlled hardening foam formulation",
+    "Pressurized binary dispersal systems"
+  ],
+  "specifications": "foam expansion: 40x volume in 3 seconds\nhardening time: 8 seconds to full rigidity\ncompressive strength: 15 MPa when hardened\nburst coverage: Sufficient to encase 1 human-sized target\ntank capacity: 6 bursts per pressurized tank\neffective range: 3-12 meters\nweight: 9 kg loaded\ndissolution: Proprietary solvent required, no natural degradation for 72+ hours",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A target was found dead inside hardened Amber foam — the air channels failed to form properly in a defective batch, and the victim suffocated inside a rigid shell.",
+    "Someone has been encasing surveillance cameras across Tier 3 in containment foam, blinding entire security networks one node at a time — the foam is too hard to remove without damaging the equipment."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "heavy",
+    "gun",
+    "augment",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "market",
+    "fire",
+    "tier 3"
+  ]
+}

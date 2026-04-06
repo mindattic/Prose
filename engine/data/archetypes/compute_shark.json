@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5647378a1efbf49fdd7651e",
+  "name": "Compute Shark",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Loans computing resources at predatory rates",
+  "behavioral_signature": "Provides essential tech access with crushing terms",
+  "under_stress": "Tightens terms, raises rates",
+  "at_rest": "Monitoring debtors, accumulating compute",
+  "will_always": [
+    "collect what's owed"
+  ],
+  "will_never": [
+    "offer fair terms"
+  ],
+  "unless": [
+    "the debtor literally cannot survive without the compute"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Blackmailer",
+      "threshold": 0.65,
+      "context": "leverage"
+    },
+    {
+      "archetype": "Miser",
+      "threshold": 0.6,
+      "context": "predatory economics"
+    }
+  ],
+  "opposite_of": [
+    "Generous Fool"
+  ],
+  "tags": [
+    "predatory",
+    "patient"
+  ]
+}

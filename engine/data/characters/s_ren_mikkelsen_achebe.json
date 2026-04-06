@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a6e5795eb4672643de7027bf",
+  "type": "character",
+  "name": "Søren Mikkelsen-Achebe",
+  "aliases": [
+    "Patch",
+    "The Excluded"
+  ],
+  "species": "human",
+  "gender": "non-binary",
+  "pronouns": "they/them",
+  "role": "Excluded / Off-Grid Medic",
+  "age": 29,
+  "status": "active",
+  "location": "The Shelf (transient, moves between zones)",
+  "description": "Søren Mikkelsen-Achebe does not exist in any database that matters. Danish and Igbo, compact and angular, with the particular alertness of someone who has learned to assess exits before they assess people. They keep their hair shaved close, wear clothing chosen for pockets and durability rather than warmth, and move through The Shelf and surrounding zones in a pattern deliberately irregular enough to prevent easy tracking. Their face carries old scarring along the jaw from an incident they describe as 'an administrative disagreement' and do not elaborate on. They have no legal identity — not purged like some, but never properly established, a bureaucratic ghost who aged out of a temporary shelter system at eighteen into a city that had no record they'd ever existed.\n\nSøren learned medicine the way people learn most things on The Shelf: by necessity, from whoever would teach them, and through trial and error that sometimes had irreversible consequences. They are not a doctor. They are something more useful in their ecosystem — a person who can stitch, set, administer, and diagnose without requiring identification, insurance, or the kind of paperwork that flags someone's location to an enforcement database. They operate out of a rotating series of semi-permanent locations: a converted storage unit, a sympathetic shopkeeper's back room, the gutted lower level of a building that should have been demolished two years ago. Word of mouth only. No signs. No fixed schedule.\n\nSøren is not ideologically committed to any particular vision of revolution or reform. They are committed to the person in front of them not dying. This makes them invaluable to almost everyone and trusted completely by almost no one, because a medic who treats everyone is a medic who might treat your enemy. They have learned to live with this. They have learned to live with most things.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.81,
+      "ideal": 0.66,
+      "id": 0.59,
+      "shadow": 0.48,
+      "mask": 0.57,
+      "ghost": 0.74
+    },
+    "core_fears": [
+      "Being catalogued — entered into a system that can then be used to find, define, or disappear them",
+      "Losing a patient they could have saved with resources they didn't have",
+      "Becoming dependent on any single person, place, or faction",
+      "That the person they were before the shelter system ended is simply gone"
+    ],
+    "core_desires": [
+      "Enough resources to actually do the work properly — equipment, medicine, space",
+      "To be known by someone without that knowledge becoming a weapon",
+      "A version of continuity that doesn't require a legal identity",
+      "To stop moving long enough to find out what they actually want beyond survival"
+    ],
+    "coping_mechanisms": [
+      "Radical focus on immediate, solvable problems as an alternative to existential ones",
+      "Dark humor about their own exclusion that preempts others' pity",
+      "Keeping patient records in a coded personal shorthand no one else can read",
+      "Physical maintenance — they are meticulous about their own health as a form of professional obligation"
+    ],
+    "blind_spots": [
+      "Their distrust of institutions is so thorough it sometimes prevents them from accessing resources that could genuinely help",
+      "Reads attachment as threat so reliably that they preemptively distance from people who are actually safe",
+      "Underestimates their own influence on The Shelf's informal social fabric",
+      "Conflates 'no permanent location' with 'no vulnerability' — they are findable to anyone who knows how to ask"
+    ],
+    "secret": "Six months ago, Søren treated a man who died on their table — a Shelf enforcer who had been attacking residents. Søren worked to save him with full effort and he died anyway. They have not resolved how they feel about this. In their coded records he is listed as 'Patient 41 — outcome: negative.' They think about him more than anyone they've saved."
+  },
+  "speech_patterns": {
+    "vocabulary": "Efficient, clinical when discussing medicine, surprisingly dry and oblique on personal topics. Minimal pleasantries. Uses 'you' a lot — keeps focus external. Medical terminology deployed without jargon-flattening, which can read as either respect for the listener's intelligence or indifference to their comprehension.",
+    "cadence": "Fast when working, flat and measured when not. Economy of words as a practiced habit. Doesn't fill silences. Can be mistaken for cold until they're treating someone, at which point a different register emerges — quiet, focused, almost gentle.",
+    "verbal_tics": [
+      "\"Still breathing?\" (opener, sometimes literal, sometimes not)",
+      "Refers to their work location as 'the current place'",
+      "\"That's a different question.\" (deflection when asked about themselves)",
+      "Long pauses mid-sentence when choosing between honesty and deflection",
+      "Uses 'we' when describing medical procedures — a habit from learning from others, possibly also a dissociative tic"
+    ],
+    "example_lines": [
+      "\"You're going to be fine. That's not reassurance, that's an assessment. If you weren't going to be fine I'd be telling you something different.\"",
+      "\"I don't ask who did it. I don't ask what you were doing. You can tell me if you want, but it doesn't change what I do next.\"",
+      "\"Systems want you in them so they can find you. I've been unfindable for eleven years. That's not an accident.\"",
+      "\"I'm not on anyone's side. I'm on the side of the wound closing. If that's not enough for you, there's a clinic in the Core that will ask for your papers first.\""
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Imara Solís-Bekele",
+      "type": "uneasy mutual reliance",
+      "description": "Imara has sent Søren patients and occasionally supplies. Søren has patched up people from Imara's orbit without asking questions. Neither fully trusts the other; both recognize the other's usefulness.",
+      "emotional_core": "Functional respect without warmth; Søren is wary of becoming a resource Imara deploys rather than a person Imara knows",
+      "story_tension": "Imara may eventually ask Søren to treat someone Søren refuses to treat — or to withhold treatment from someone, which Søren will not do"
+    },
+    {
+      "name": "Blessed Nkemdirim",
+      "type": "tentative trust / closest thing to friendship",
+      "description": "Blessed found Søren's current place through routes Søren still hasn't fully traced, which should have made Søren end the relationship. Instead they kept talking. Blessed is one of very few people Søren has told their actual name.",
+      "emotional_core": "Genuine warmth Søren doesn't know how to act on; fear that this is exactly the kind of attachment that gets people hurt",
+      "story_tension": "If Blessed's affiliation creates enemies, Søren's location becomes a target"
+    },
+    {
+      "name": "Patient 41 (deceased)",
+      "type": "posthumous / unresolved",
+      "description": "The enforcer Søren couldn't save. He appears in their thinking more as question than memory — what does it mean to owe equal effort to someone who was causing harm?",
+      "emotional_core": "Unresolved moral processing; a challenge to the clean principle of 'treat everyone'",
+      "story_tension": "Someone who knew Patient 41 may come looking for answers about how he died — and Søren was the last person with him"
+    }
+  ],
+  "story_hooks": [
+    "A patient brings Søren something — information, an object, a person — that makes them suddenly visible to a faction they've carefully avoided",
+    "Søren's rotating location system fails — someone has mapped their pattern",
+    "A medical supply source dries up suddenly, forcing Søren to negotiate with people they would normally not deal with",
+    "Someone offers Søren a legal identity — and the cost attached to it",
+    "Patient 41's family member arrives at the current place, not knowing who they're talking to"
+  ],
+  "narrative_function": "Excluded perspective anchor — a character who operates entirely outside institutional structures, not by choice but by circumstance, and who has built something genuinely valuable in that gap. They provide access to The Shelf's underside for other characters and plotlines, and their 'treat everyone' principle creates natural story friction. Their unresolved relationship with Patient 41 seeds moral complexity that resists easy resolution.",
+  "augmentations": "None — cannot access augmentation legally, and distrusts back-alley neural work after witnessing complications; has a deep philosophical discomfort with anything that could be tracked or remotely accessed,Uses external medical tools extensively: a battered portable diagnostic wand, a hand-calibrated micro-suture kit, a pharmacological reference drive they compiled from stolen and traded sources",
+  "daily_life": "No fixed morning. Moves location every ten to fourteen days. Spends actual clinic hours — usually afternoon into late night — treating whoever shows up. Spends mornings sourcing supplies through informal trade networks, sometimes traveling to The Circuit or Old Harbor for specific materials. Eats irregularly, always the same few foods that are cheap, dense, and available everywhere. Annotates patient records in the evening. Sleeps lightly. Has a small collection of pressed plants from every location they've stayed in, carried in a battered envelope — the closest thing they have to a home archive.",
+  "affiliation": "None. Deliberately, carefully, none.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 7,
+      "assertion_deference": 5,
+      "transparency_guardedness": 8
+    },
+    "drives": [
+      "Survival",
+      "Immediate care",
+      "Autonomy"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 7,
+        "response": "Focuses on immediate solvable problems; goes clinical and gentle simultaneously"
+      },
+      "moral": 8,
+      "trust": 3,
+      "desperation": 5
+    },
+    "strengths": [
+      "Kindness",
+      "Bravery",
+      "Perseverance",
+      "Fairness",
+      "Prudence"
+    ],
+    "weaknesses": [
+      "Hope",
+      "Love",
+      "Teamwork",
+      "Gratitude",
+      "Social intelligence"
+    ],
+    "tags": [
+      "excluded",
+      "off-grid-medic",
+      "no-identity",
+      "treat-everyone",
+      "ghost"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Treat anyone who arrives — faction, morality, and payment are irrelevant",
+      "Never stay in one location longer than fourteen days",
+      "Keep patient records in coded shorthand only they can read",
+      "Distrust any system that requires cataloguing personal identity",
+      "Accept supplies from any source but never let supply relationships become obligations",
+      "Never withhold treatment from anyone, even at factional request"
+    ],
+    "escalation_ladder": [
+      "Flat deflection: That is a different question",
+      "Clinical detachment — treats the situation like a wound to assess",
+      "Quiet measured refusal that does not invite negotiation",
+      "Disappearance — relocates immediately without explanation"
+    ],
+    "interpersonal_modes": {
+      "imara_solis_bekele": "Functional respect without warmth; wary of becoming a deployable resource",
+      "blessed_nkemdirim": "Genuine warmth they do not know how to act on; closest thing to friendship",
+      "patients": "Quiet, focused, almost gentle — a different register from their usual flatness",
+      "strangers": "Efficient and clinical; minimal pleasantries; keeps focus external"
+    },
+    "stress_responses": {
+      "low": "Meticulous personal health maintenance and supply inventory",
+      "medium": "Dark humor about their own exclusion that preempts pity",
+      "high": "Accelerated relocation schedule; sleeps lighter, moves faster",
+      "critical": "Complete withdrawal — vanishes from known locations for days"
+    },
+    "contradictions": [
+      "Treats everyone equally but has not resolved whether Patient 41 deserved equal effort",
+      "Craves being known by someone but reads attachment as threat so reliably they preempt it",
+      "Conflates having no permanent location with having no vulnerability"
+    ],
+    "habits": [
+      "Checks exits before assessing people in any new space",
+      "Opens with Still breathing? — sometimes literal, sometimes not",
+      "Keeps a pressed plant from every location they stay in",
+      "Annotates patient records every evening in coded shorthand",
+      "Eats the same few cheap dense foods everywhere"
+    ],
+    "breaking_points": [
+      "Being entered into a system that can be used to find or define them",
+      "Losing a patient they could have saved with resources they did not have",
+      "Someone mapping their rotation pattern and making them findable",
+      "Patient 41 family member arriving and asking questions"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Charmer": 0.9,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

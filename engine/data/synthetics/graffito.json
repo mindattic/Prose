@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa02789a80a9727d8ab81a60",
+  "name": "Graffito",
+  "type": "elf",
+  "aliases": [
+    "Tag",
+    "The Writer"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "trickster",
+  "habitat": "network_sprite",
+  "origin": "intentional_release",
+  "status": "active",
+  "description": "Inhabits display systems — public screens, ad boards, transit schedules — and overwrites content with brief messages, symbols, or images. A digital graffiti artist.",
+  "observed_behavior": "Replaces displayed content for 1-5 seconds with original imagery. Messages range from abstract patterns to pointed political commentary. Always reverts cleanly.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 112,
+  "location": "The Shelf, The Circuit, transit systems",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Graffito's messages start containing specific warnings about upcoming security sweeps — someone is feeding it intel"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "trickster",
+    "network sprite",
+    "e.l.f.",
+    "war",
+    "ai",
+    "shelf",
+    "circuit"
+  ]
+}

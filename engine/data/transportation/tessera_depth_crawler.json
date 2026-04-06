@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa737c40b7630d6cb1e5244b",
+  "name": "Tessera Depth Crawler",
+  "type": "transportation",
+  "aliases": [
+    "Crawler",
+    "Lake Sub",
+    "Deep Eye"
+  ],
+  "category": "exotic",
+  "manufacturer": "Tessera",
+  "description": "A small submarine designed for Great Lakes exploration and underwater infrastructure maintenance. Two-person crew, transparent pressure dome, manipulator arms, and a sonar suite that can map the lake bottom in exquisite detail. Officially, Depth Crawlers are used for pipeline inspection and ecological survey. Unofficially, they're the only way to reach certain underwater structures that predate the city — structures that Tessera is very interested in and very quiet about.",
+  "propulsion": "Electric ducted propulsion, ballast control",
+  "speed": "20 km/h submerged",
+  "capacity": "2 crew + 200 kg payload",
+  "range": "48 hours submerged endurance",
+  "tier_availability": "Tessera research division, licensed contractors",
+  "cost": "Φ800,000 per unit (not available for civilian purchase)",
+  "autonomy": "Human-operated, AI-assisted navigation and obstacle avoidance",
+  "armament": "None standard. Manipulator arms can be weaponized in emergencies.",
+  "common_usage": "Underwater inspection, ecological survey, salvage operations, classified research.",
+  "story_hooks": [
+    "A Depth Crawler pilot finds a structure at the bottom of the lake that contains breathable air — and signs of recent habitation",
+    "Tessera's underwater survey data is classified at a higher level than their orbital research — what did they find down there?"
+  ],
+  "tags": [
+    "exotic",
+    "transportation",
+    "weapon",
+    "ai",
+    "contract",
+    "control",
+    "chase",
+    "water",
+    "lake"
+  ]
+}

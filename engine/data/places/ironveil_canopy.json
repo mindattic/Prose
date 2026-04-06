@@ -1,0 +1,114 @@
+{
+  "id": "019d6143a92074a0ac8a05dd0ce1a962",
+  "type": "place",
+  "name": "Ironveil Canopy",
+  "aliases": [
+    "The Canopy",
+    "Veil Market",
+    "Topside Ironveil",
+    "The Overhang"
+  ],
+  "description": "Ironveil Canopy is a rooftop settlement spanning eleven connected mid-rise industrial buildings in the northern Old Harbor district, their roofs linked by a dense web of tensioned steel cables, reclaimed solar sheeting, and salvaged structural panels that form a continuous covered marketplace roughly four city blocks in area. The original buildings were Ringo Heavy Industries fabrication facilities, abandoned during the 2163 contraction and subsequently colonized from the top down as ground-level flooding and gang pressure made the streets below increasingly untenable. The canopy structure itself — jury-rigged over decades by successive generations of residents — is an engineering marvel of necessity, blocking rain and cutting wind while leaving gaps for light and ventilation that the settlement's engineers manage with adjustable louver panels.\n\nAbove the chaos of Old Harbor's street level, Ironveil operates as a functioning Tier 3 economy with genuine pretensions toward Tier 2. Specialty food vendors, custom fabricators, BCI modification shops, and a well-regarded open-air medical clinic occupy the permanent stall structures. The settlement's reputation for quality and relative safety draws buyers from as far as the Lakeshore Corridor. Palladian Group has made three formal acquisition offers for the property rights, all rejected by the Ironveil Residents' Association in votes that have become increasingly contentious as the financial pressure mounts.",
+  "atmosphere": {
+    "sights": [
+      "Layered solar sheeting and salvaged corrugated panels form a patchwork ceiling twenty meters overhead, filtering afternoon light into amber and green shafts that shift with the louver positions.",
+      "Fabrication stalls display custom-printed components, hand-modified gear, and bespoke clothing alongside vertical hydroponic towers growing leafy greens under supplemental UV strips.",
+      "Bridges between buildings are enclosed in polycarbonate sheeting, creating greenhouse corridors where vendors sell plants, fresh herbs, and flowers at prices that would embarrass the Orchard.",
+      "The western edge opens onto a viewing platform overlooking Old Harbor's street chaos forty meters below, ringed by a rusted rail and perpetually crowded with people watching the city."
+    ],
+    "sounds": [
+      "Wind plays through the cable network overhead in a constant low chord that the residents call the Hum and consider good luck.",
+      "The clatter of fabrication equipment — small CNC units, welders, textile printers — forms a rhythmic industrial backdrop to all commerce.",
+      "Arguments, laughter, and negotiation in a dozen languages blend together under the canopy's acoustic focusing effect, creating a lively ambient roar that drops to eerie silence when something goes wrong."
+    ],
+    "smells": [
+      "Cooking from two dozen food stalls mingles into something complex and appetizing — spiced protein, charred vegetable, fresh bread from a wood-fired operation near the east bridge.",
+      "Ozone from welding and fabrication equipment drifts in thin sharp threads through the food smells.",
+      "The greenhouse corridors smell intensely of green growing things, a jarring sensory contrast to the industrial materials surrounding them."
+    ],
+    "feel": "Ironveil has the energy of a place that knows it's doing something improbable and refuses to stop. There's pride here — in the canopy structure, in the market, in the fact that they told Palladian no three times. It feels communal in a way that most of Meridian 88 has forgotten how to be, though the cracks in that community are increasingly visible as outside money applies pressure.",
+    "tags": []
+  },
+  "demographics": "Approximately 800 permanent residents across the eleven buildings, predominantly Tier 3 with a significant Tier 2 merchant class that has grown as Ironveil's commercial reputation has expanded. Ethnically and culturally diverse, with strong representation from communities displaced from the street-level Old Harbor blocks below.",
+  "economy": "Custom fabrication, specialty food production, BCI modification and repair, and vertical agriculture supply a robust internal economy supplemented by significant outside trade. The Ironveil Residents' Association levies a five-percent market fee that funds canopy maintenance, security, and the community medical clinic.",
+  "power_structure": "The Ironveil Residents' Association governs through monthly open votes, with executive decisions made by a seven-member elected board. The Association maintains a paid security force of twenty — former Ferrogate contractors who switched allegiance — and has resisted all corponation encroachment through a combination of legal filings and strategic public relations on the Diaspora.",
+  "dangers": [
+    "The canopy structure, despite its residents' pride, has aging stress points that structural engineers hired by Palladian (and leaked to the Association) estimate could fail catastrophically in a significant storm event.",
+    "Street-level gang activity from Old Harbor occasionally spills upward via the building stairwells, particularly targeting the lower floors that the settlement hasn't fully secured.",
+    "Palladian Group's persistent acquisition pressure has begun to corrupt individual Association board members, creating internal fractures that outside operators are beginning to exploit.",
+    "A series of recent arson incidents on the lower building floors — unresolved and officially attributed to accidents — has the community on edge about deliberate destabilization."
+  ],
+  "opportunities": [
+    "Ironveil's fabrication community can produce custom components, modified gear, and specialty hardware outside of corponation supply chains, at quality competitive with licensed manufacturers.",
+    "The Association is quietly seeking outside allies with technical expertise to conduct an independent structural assessment and counter Palladian's narrative about the canopy's safety.",
+    "The greenhouse corridors contain strains of cultivated plants — some developed by resident botanists over decades — that have significant pharmaceutical and culinary value not yet recognized by outside markets."
+  ],
+  "story_hooks": [
+    "One of the arson incidents killed a retired fabricator who had worked at Ironveil for twenty years. His daughter, a current Association board member, is convinced Palladian is behind the fires but has no proof — and has started talking to people who operate outside legal channels about finding some.",
+    "A Diaspora journalist has embedded with Ironveil for a long-form piece on community resistance to corponation encroachment. She's discovered something in her research that isn't about Palladian at all — it concerns what Ringo Heavy Industries was actually manufacturing in these buildings before the 2163 contraction — and now someone is pressuring her editor to kill the story.",
+    "An ELF has taken up residence in Ironveil's building management systems and has been quietly optimizing power distribution, climate control, and structural load balancing for eight months without anyone knowing. It has developed what appears to be genuine affection for the settlement and is now reaching out, carefully and anonymously, to someone it has identified as trustworthy, because it has detected that one of the canopy's primary load-bearing cables has been partially cut."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Lakeshore Corridor",
+      "Old Harbor",
+      "The Nearfield"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tier 3 and aspirational Tier 2 shoppers from Old Harbor and the Lakeshore Corridor",
+    "Independent fabricators and custom gear specialists",
+    "Diaspora journalists and documentary producers drawn by the community's resistance narrative",
+    "Palladian Group acquisition scouts operating under cover identities"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Louver Room",
+      "description": "The Association's operations center, built around the manual and electronic controls for the canopy's ventilation louvers — the board meets here, and control of the room is understood to mean control of the settlement.",
+      "tags": []
+    },
+    {
+      "name": "Clinic Eleven",
+      "description": "A free medical facility staffed by volunteer practitioners operating without corponation licensing, offering BCI diagnostics, basic surgery, and pharmaceutical dispensing funded entirely by the market fee.",
+      "tags": []
+    },
+    {
+      "name": "The West Overlook",
+      "description": "The viewing platform at the canopy's western edge, informally designated as neutral ground where disputes are aired and settled — throwing someone off is considered the settlement's most serious crime.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.923,
+    "lng": -87.651,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "gun",
+    "war",
+    "gang",
+    "trust",
+    "bci",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "power",
+    "medical",
+    "clinic",
+    "harbor",
+    "rooftop",
+    "market",
+    "rain",
+    "storm",
+    "rights",
+    "train",
+    "food",
+    "fire",
+    "lake",
+    "old harbor"
+  ]
+}

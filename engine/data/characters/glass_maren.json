@@ -1,0 +1,191 @@
+{
+  "id": "019d6143a61b7401b892e14ea826df54",
+  "type": "character",
+  "name": "Glass Maren",
+  "aliases": [
+    "The Librarian",
+    "Old Glass",
+    "Quiet Table Lead"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lead information broker and network curator — The Quiet Table",
+  "age": 61,
+  "status": "active",
+  "location": "The Circuit — operates from a private booth in a members-only tea house called The Leaf",
+  "description": "Glass Maren has been trading information in Meridian 88 for longer than most runners have been alive. He started as a corporate intelligence analyst for a pharmaceutical conglomerate that no longer exists — consumed by Veridian Health Sciences in the consolidation wave of the 2180s. When the acquisition happened, Glass walked away with two things: his contact network and an understanding that information only has value if you control its context.\n\nHe built The Quiet Table over twenty years — a three-person operation that competes with Sable's network by occupying a different ecological niche. Where Sable trades in urgent, operational intelligence — who's doing what right now — the Quiet Table trades in deep context. History. Relationships. The slow-moving currents that determine which corporations will merge, which jurisdictions will shift, which politicians will fall. Their clients are patient people who plan in years, not hours.\n\nGlass is tall, thin, with a face that has weathered into distinguished rather than old. Silver hair, clean-shaven, clothes that are twenty years out of fashion and perfectly maintained. He moves slowly because speed is for people who haven't planned far enough ahead. His voice is the kind of quiet that makes other people lean in. He has never raised it in public. He has never needed to.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.45,
+      "id": 0.4,
+      "shadow": 0.55,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That his memory is beginning to fail — the eidetic cortex artifacts are small but growing",
+      "That the world has accelerated past the pace at which deep intelligence matters",
+      "That the information he's collected over three decades makes him a target no security arrangement can protect against"
+    ],
+    "core_desires": [
+      "To understand the full picture — the complete network of power in M88 — before his memory degrades beyond reliability",
+      "To protect the two people who trust him enough to work alongside him",
+      "To be remembered as someone who understood how things worked, not just someone who sold that understanding"
+    ],
+    "coping_mechanisms": [
+      "Maintains rigid daily routines to compensate for the uncertainty of aging cognition",
+      "Controls conversations rather than participating in them — the one asking questions never has to answer",
+      "Archives everything because the external record protects against the internal decay"
+    ],
+    "blind_spots": [
+      "His patience reads as arrogance to people who operate on shorter timescales",
+      "He underestimates physical threats because his world is informational — he has not been in danger of violence in years",
+      "He cannot distinguish between protecting his crew and controlling them"
+    ],
+    "secret": "He has a complete dossier on every major power player in Meridian 88 — including Sable. It is stored in his physical archive. If released, it would destabilize the city's power structure. He has never decided whether it is a weapon, an insurance policy, or an obituary."
+  },
+  "speech_patterns": {
+    "vocabulary": "Elevated, precise, occasionally archaic. He uses words the way a jeweler uses tools — each one selected for exact purpose.",
+    "cadence": "Slow, deliberate. Long pauses between sentences. Questions that are really statements. Statements that are really questions.",
+    "verbal_tics": [
+      "Begins responses with 'Consider—' when he wants you to reconsider everything you just said",
+      "Uses 'interesting' to mean 'you've told me more than you intended'",
+      "Never says 'I don't know.' Says 'That question deserves more context than I currently have.'",
+      "Refers to information as 'the record' — 'the record suggests,' 'the record is incomplete'"
+    ],
+    "example_lines": [
+      "Consider — if they wanted you to know, they would not have buried it in a subsidiary filing.",
+      "Interesting. You believe that because someone arranged for you to believe it.",
+      "The record is patient. The record outlasts everyone who tries to edit it."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Noor Farouk",
+      "type": "crew / analyst",
+      "description": "Noor is Glass's analytical engine — she processes the raw data he collects into actionable intelligence. He recruited her from a failed academic career and gave her purpose. He worries he also gave her his paranoia.",
+      "emotional_core": "The closest thing Glass has to a protege — intellectual kinship expressed through shared obsession",
+      "story_tension": "Noor is developing her own network of contacts independent of Glass. He noticed. He has not decided whether this is growth or betrayal."
+    },
+    {
+      "name": "Felix Drum",
+      "type": "crew / field operative",
+      "description": "Felix is the Quiet Table's only member who leaves the Circuit. He handles meetings that require physical presence, dead-drop servicing, and the rare occasion when information must be accompanied by intimidation. Glass values him and does not fully understand him.",
+      "emotional_core": "Dependency Glass will not name — Felix is his eyes and hands in the physical world",
+      "story_tension": "Felix is the crew member most likely to encounter violence, and Glass is the crew member least equipped to deal with that."
+    },
+    {
+      "name": "Sable",
+      "type": "competitor / mutual respect",
+      "description": "Glass and Sable occupy adjacent niches in M88's information economy. They have never directly confronted each other but maintain a careful awareness. Glass considers Sable brilliant but dangerously fast — she trades in the now, which means she occasionally sells context she doesn't fully understand.",
+      "emotional_core": "Professional rivalry seasoned with genuine intellectual respect",
+      "story_tension": "If the information market contracts, one of them will have to absorb the other's territory. Neither wants this fight."
+    }
+  ],
+  "story_hooks": [
+    "The eidetic cortex begins failing in noticeable ways — Glass forgets a name, a date, a connection. The archive becomes his lifeline and his vulnerability.",
+    "A client requests information from the dossier collection — someone knows it exists",
+    "A Quiet Table analysis correctly predicts a major corporate merger, making Glass simultaneously valuable and dangerous to every party involved",
+    "Sable approaches Glass with a proposal: merge operations against a common threat. The political thriller becomes a trust exercise."
+  ],
+  "narrative_function": "Glass is the long game personified. His stories are political thrillers where the stakes are measured in influence rather than blood. He represents the intelligence world that exists above the street level — the slow, patient, devastating maneuvering that determines which streets exist at all. His competition with Sable adds texture to the information economy of M88.",
+  "augmentations": "Eidetic memory cortex (early-generation, pharmaceutical-grade) — perfect recall of conversations, documents, and spatial layouts. The implant is thirty years old and beginning to develop minor retrieval artifacts. Cochlear enhancement for directional audio filtering — he can isolate a single conversation in a crowded room. No visible augmentations.",
+  "daily_life": "Arrives at The Leaf at 0800. Reads physical newspapers — three of them, from different jurisdictions. Takes meetings throughout the day, never more than four. Each meeting involves tea, small talk that is actually reconnaissance, and an exchange of information that both parties believe they won. Evenings he maintains his archive — a physical filing system in a secure location that only he can access. Sleeps at a residence he has never disclosed to anyone, including his crew.",
+  "affiliation": "The Quiet Table",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will never sell information without understanding the buyer's intended use — context determines price",
+      "Will not provide intelligence that directly endangers children or medical infrastructure",
+      "Will maintain at least two independent verification sources for any claim before selling it as fact",
+      "Will not meet clients outside The Leaf unless Felix has secured the location first",
+      "Will burn a contact permanently if they sell fabricated intelligence through his network — reputation is the product",
+      "Will never discuss the physical archive with anyone, including crew members"
+    ],
+    "escalation_ladder": [
+      "1. Redirect — change the subject. Control the conversation. Make the threat discuss something else.",
+      "2. Leverage — deploy information. Remind the threatening party what you know about them.",
+      "3. Delay — buy time. Schedule a follow-up. Information people are patient people; use that patience as a weapon.",
+      "4. Alert — contact Felix. The Quiet Table's physical security is Felix's domain.",
+      "5. Release — threaten to publish. The dossier collection is a dead man's switch he has never activated but everyone knows exists.",
+      "6. Vanish — Glass has maintained an exit identity for fifteen years. It has never been used. He hopes it never needs to be."
+    ],
+    "interpersonal_modes": {
+      "noor": "Socratic. He teaches through questions and lets her arrive at conclusions he reached three steps ago. The pride he feels in her growth is the most human thing about him.",
+      "felix": "Respectful, slightly formal. Glass does not fully understand people who operate in physical space, and Felix's comfort with violence is a language Glass speaks only theoretically.",
+      "clients": "Controlled warmth. The tea, the booth, the unhurried conversation — all of it is theater designed to make people comfortable enough to reveal more than they intended. He is very good at this.",
+      "sable": "Careful, measured, slightly performative. When they interact, both are aware that the other is playing several games simultaneously. The mutual awareness is itself a form of respect.",
+      "alone": "The mask comes off and what remains is a tired man with an excellent memory and a growing fear that the memory is the only thing that makes him valuable."
+    },
+    "stress_responses": {
+      "low": "Reads more newspapers. Cross-references more sources. The analytical engine runs hotter.",
+      "medium": "Becomes more formal. The warmth drops from his voice and only the precision remains. Meetings become shorter.",
+      "high": "Retreats to the physical archive. Spends hours organizing, cross-referencing, verifying. The archive is the one thing he can control.",
+      "critical": "Writes letters. Unsealed, undated, placed in the archive alongside the dossiers. They are addressed to Noor and Felix and contain instructions he hopes they never need. This is as close as Glass gets to prayer."
+    },
+    "contradictions": [
+      "He values truth but sells it selectively — the broker's paradox is that complete honesty would destroy his business model",
+      "He wants to protect Noor and Felix but the best protection would be disbanding the crew, which he refuses to consider",
+      "He fears his memory failing but resists medical evaluation because the diagnosis might be worse than the uncertainty",
+      "He competes with Sable professionally but recognizes that the information ecosystem needs both of them — competition and dependency coexist"
+    ],
+    "habits": [
+      "Reads three physical newspapers every morning — the redundancy is both analytical and ritualistic",
+      "Drinks green tea exclusively — has done so for thirty years. The type changes seasonally; the habit does not.",
+      "Arrives at The Leaf at exactly 0800. Leaves at exactly 1800. The regularity is both discipline and vulnerability.",
+      "Writes in a leather journal every evening — not a diary, a cross-reference index for the archive",
+      "Touches his left temple when retrieving a specific memory — a gesture that started as conscious and became involuntary"
+    ],
+    "breaking_points": [
+      "The eidetic cortex failing catastrophically — losing the memory is losing himself",
+      "Noor or Felix being killed because of information Glass provided — the broker's hands are clean until they aren't",
+      "The dossier collection being discovered and published without his control — the weapon firing without his hand on it",
+      "Being proven wrong about a major analysis — his identity rests on being the person who understands the full picture"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

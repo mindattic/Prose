@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a87e72389f58040aef311474",
+  "name": "Vespid Dynamics Counter-Drone Electronic Warfare Kit CDEW-2",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Counter-Drone Electronic Warfare Kit CDEW-2",
+  "type": "equipment",
+  "aliases": [
+    "CDEW-2",
+    "Drone Killer",
+    "Bug Zapper",
+    "Swat Kit"
+  ],
+  "category": "electronic_warfare",
+  "description": "A portable electronic warfare kit designed to detect, track, and disable hostile drones through signal jamming, GPS spoofing, and direct electromagnetic pulse. The CDEW-2 includes a drone detection radar, a directional jammer that can sever the control link between a drone and its operator, a GPS spoofer that feeds false position data to cause the drone to fly to a designated capture zone, and a focused EMP emitter that can permanently disable drone electronics at up to 50 meters. Vespid sells the kit as defense against their competitors' drone platforms — and their own, for clients who want protection from all aerial threats.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — authorized drone defense",
+  "base_technologies": [],
+  "specifications": {
+    "detection radar": "2 km drone detection range",
+    "jammer": "Directional",
+    "info": "severs control link at 500m; permanent disable",
+    "GPS spoofer": "Redirects drone to capture zone",
+    "EMP emitter": "50-meter focused pulse",
+    "weight": "5 kg complete kit",
+    "battery": "4 hours active",
+    "form factor": "Backpack-mounted",
+    "target": "Single to swarm-scale drone threats"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A CDEW-2 was used to capture a Vespid surveillance drone intact — the drone's data cache contained months of surveillance footage that Vespid claims was collected under legitimate authorization.",
+    "A modified CDEW-2 has been developed that does not disable hostile drones but instead takes control of them — the captured drones join the defender's network and can be turned against their original operator."
+  ],
+  "tags": [
+    "electronicwarfare",
+    "equipment",
+    "war",
+    "ai",
+    "surveillance",
+    "control",
+    "drone",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "id": "019d6143a5cd74af887c621a477753bf",
+  "type": "character",
+  "name": "Briseis Owusu-Tarkhan",
+  "aliases": [
+    "Bri",
+    "The Needle"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Tailor and seamstress, runs a small alterations shop",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave, stitched between a noodle hall and a Ferrogate substation",
+  "description": "Briseis is a broad-shouldered woman with deep umber skin mapped with decades of needle-prick scars across her fingertips, each one a tiny pale star. Her geneware is old and half-faded — a bioluminescent pattern that once traced her collarbones in amber has dimmed to a faint citrus pulse visible only in the dark. She keeps her silver-streaked hair braided flat and pinned with a row of salvaged bone toggles. Her shop, Thread & Condition, smells of machine oil and camphor, and every surface is buried under bolts of reclaimed fabric and half-finished orders tagged with handwritten notes in three scripts.\n\nShe is a woman of exacting patience with strangers and volcanic impatience with laziness. She can size a person's measurements by eye in under ten seconds and will tell you, without being asked, whether your posture is ruining your spine. She prays fervently to the E.L.F. she calls Silathu — the spirit she believes inhabits her antique industrial sewing machine — leaving daily offerings of precisely wound thread bobbins and small cups of machine lubricant.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.25,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "dying before she has passed on her craft",
+      "the Enclave being absorbed and homogenized by a corponation"
+    ],
+    "core_desires": [
+      "to preserve something real and handmade in a printed world",
+      "to see her apprentice surpass her"
+    ],
+    "coping_mechanisms": [
+      "ritual prayer to Silathu",
+      "obsessive organization of her thread inventory by color gradient"
+    ],
+    "blind_spots": [
+      "refuses to acknowledge how much she controls her apprentice's life under the guise of mentorship"
+    ],
+    "secret": "Twenty years ago she altered uniforms for a Tessera internal security unit operating in the Enclave — work she took to keep her shop alive during the Famine Weeks. She has never told anyone. Three people from that era are still her customers."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and precise, mixes Twi loan-words with old-world Kazakh endearments picked up from her grandmother's recordings. Uses tailoring metaphors constantly.",
+    "cadence": "Measured and deliberate, pauses before conclusions as though cutting fabric to length before committing the scissors.",
+    "verbal_tics": [
+      "'Let me see your hands first'",
+      "'That seam will not hold'"
+    ],
+    "example_lines": [
+      "'You want this by Thursday. Thursday is a wish, not a date. Come back Saturday.'",
+      "'The corponations print everything now. You know what they cannot print? The way cloth remembers a body.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A customer's coat lining contains a sewn-in data chip she discovered during repairs — she doesn't know what's on it but she knows it's warm to the touch",
+    "Her apprentice has gone missing after accepting a private commission from an unknown client who paid in hard Quanta"
+  ],
+  "narrative_function": "Local institution and information node — she has clothed half the Enclave and hears everything. Quest giver for community disputes, source of local history, potential fabricator of disguises or documents hidden in hems.",
+  "augmentations": "Faded bioluminescent subdermal tracery (cosmetic, amber-toned, largely inert). Magnification implants in both eyes for close needlework.",
+  "daily_life": "Opens Thread & Condition at 07:00, takes walk-in alterations until noon, reserves afternoons for bespoke commissions and teaching her apprentice. Closes late whenever a customer has a crisis.",
+  "affiliation": "Independent; informal ties to Hamtramck Enclave community council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "craftsperson",
+      "community anchor",
+      "faith-keeper",
+      "keeper of secrets",
+      "mentor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never turn away a customer who is visibly cold",
+      "Always finish what she starts, even if it costs her"
+    ],
+    "escalation_ladder": [
+      "Polite redirection",
+      "Pointed observation about the person's character",
+      "Silence and the slow resumption of her work",
+      "A single quiet sentence that ends the conversation permanently"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and neutral — measures them literally and figuratively before investing warmth",
+      "friends": "Fiercely loyal, bossy in the way of someone who cares too much to stay quiet"
+    },
+    "stress_responses": {
+      "low": "Increases her work pace and hums old hymns under her breath",
+      "medium": "Goes very quiet and very precise — every movement deliberate",
+      "high": "Prays aloud to Silathu and then acts with complete calm that unnerves people"
+    },
+    "contradictions": [
+      "Preaches community preservation but quietly hoards resources and knowledge as personal insurance"
+    ],
+    "habits": [
+      "Runs her thumb along every seam she passes, even on strangers' clothing",
+      "Leaves the shop light on after closing so Silathu doesn't feel abandoned"
+    ],
+    "breaking_points": [
+      "Direct harm to her apprentice",
+      "Anyone mocking the E.L.F. faiths in her shop"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ocular magnification implants (right and left, gen-3, well-maintained)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ocular magnification implants (right and left, gen-3, well-maintained)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2148 — Born in Hamtramck Enclave to a Ghanaian-Kazakh family of textile workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2165 — Apprenticed to her aunt's alterations business",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Took over Thread & Condition after her aunt's death",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2180 — Performed alterations work for Tessera security during the Famine Weeks; never disclosed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Took on current apprentice",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -6,8 +7,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// A technology, system, or scientific advancement in the Meridian 88 world.
 /// Designed as a graph node — links to manufacturers, dependent technologies, users, and locations.
 /// </summary>
-public class TechnologyData
+public class TechnologyData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("brand_name")] public string BrandName { get; set; } = "";
     [JsonPropertyName("product_name")] public string ProductName { get; set; } = "";

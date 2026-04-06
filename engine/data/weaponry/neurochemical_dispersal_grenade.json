@@ -1,0 +1,55 @@
+{
+  "id": "019d6143ab357ca39399685da6bfb437",
+  "name": "Neurochemical Dispersal Grenade",
+  "type": "weapon",
+  "aliases": [
+    "NDG-2",
+    "Mindfog",
+    "The Blank",
+    "Whiteroom Egg"
+  ],
+  "category": "explosive",
+  "description": "The NDG-2 is a non-lethal area-denial grenade that disperses a proprietary aerosolized neurochemical agent developed by LAZARUS PHARMACEUTICALS under contract for Meridian 88's crowd management divisions. On detonation, a binary chemical initiator mixes two stable precursor compounds within the grenade body during a 1.2-second reaction phase, generating the active agent — a synthetic GABAergic compound designated LZR-7 — immediately before aerosol dispersal. This binary approach means the grenade can be stored indefinitely without degradation, solving a persistent shelf-life problem in legacy chemical ordnance.\n\nLZR-7 acts on the central nervous system through inhalation and dermal absorption, inducing acute disorientation, short-term anterograde amnesia, and motor coordination failure within 8–15 seconds of exposure. Effects last 12–40 minutes depending on body mass and respiratory rate. The compound is theoretically non-lethal at standard doses, but LAZARUS PHARMACEUTICALS' internal trials — several of which were conducted without subject consent, according to leaked documents — showed a 3–7% fatality rate in subjects with compromised respiratory systems or certain genetic profiles. This data was suppressed.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Military only / Black market (rare)",
+  "legality": "Prohibited (civilian) / Restricted (licensed security forces)",
+  "base_technologies": [
+    "Binary chemical synthesis",
+    "Aerosol dispersal mechanisms",
+    "GABAergic neurochemical agents"
+  ],
+  "specifications": "weight: 280g\ndiameter: 58mm\nactive agent: LZR-7 synthetic GABAergic compound\nreaction phase: 1.2 seconds post-activation\ndispersal radius: 8m effective, 14m trace exposure\nonset time: 8–15 seconds post-exposure\neffect duration: 12–40 minutes\nshelf life: Indefinite (binary precursor design)\nantidote: LZR-Counteragent 3 (LAZARUS proprietary, restricted supply)",
+  "tactical_use": "Used for crowd dispersal, hostage extraction, and covert incapacitation. Security forces deploy NDG-2s into enclosed spaces — transit hubs, protest corridors, corporate lobbies — to incapacitate occupants without structural damage. In covert operations, a single NDG-2 through a ventilation intake can neutralize an entire floor before a team enters. Operators must wear sealed respiratory filtration; partial-filter masks provide insufficient protection. The amnesia effect makes the NDG-2 particularly valued in extraction operations where witnesses must not retain reliable memories.",
+  "cultural_context": "The NDG-2 is one of Meridian 88's most politically charged weapons. LAZARUS PHARMACEUTICALS markets it as a humane crowd-control solution, and licensed security forces use that framing publicly. But the suppressed fatality data has circulated in activist networks for years, and the grenade's association with the city's most violent protest crackdowns has made it a symbol of corporate-state violence. In lower-tier communities, the phrase 'getting blanked' refers to any situation where someone is rendered helpless by institutional power. The antidote is controlled supply, held exclusively by LAZARUS — a fact that critics call deliberate leverage.",
+  "known_users": [
+    "Meridian 88 crowd management divisions",
+    "LAZARUS PHARMACEUTICALS private security",
+    "Corporate extraction teams",
+    "Black-market operators specializing in abduction",
+    "Anti-protest enforcement units"
+  ],
+  "story_hooks": [
+    "A player wakes up with no memory of the last six hours. A spent NDG-2 casing is on the floor nearby. Something was taken — or done — during the blank.",
+    "The suppressed LAZARUS trial data surfaces in full, naming specific subjects and locations. Someone wants it buried again, and the journalist holding it is already missing.",
+    "The antidote supply for an NDG-2 mass deployment at a protest has been stolen before it could be administered to affected civilians. LAZARUS wants it recovered quietly — but the thief wants to expose why the antidote was needed at all."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "violence",
+    "memory",
+    "genetic",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "market",
+    "shelf"
+  ]
+}

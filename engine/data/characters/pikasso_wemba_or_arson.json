@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a69b7acd8868e3f2aa7558d8",
+  "type": "character",
+  "name": "Pikasso Wemba-Þórðarson",
+  "aliases": [
+    "Pick",
+    "The Map"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "wandering trader, hyperlane route-broker, Q-zero ghost",
+  "age": 34,
+  "status": "active",
+  "location": "Escanaba Gateway — drifts between Escanaba Gateway and Grand Crossing Gate on a rotating three-week circuit",
+  "description": "Pikasso is a lean, quick-moving man with the particular economy of motion of someone who carries everything he owns. His skin is deep brown-black, his hair grown into dense, paint-flecked locks he's never cut since going Q-zero eight years ago — he uses them to hide small trade goods. His eyes have geneware irises that shift between amber and copper depending on light, a cheap mod he got before he dropped off the grid, and he has a retractable claw on his right index finger he uses as a box-cutter. His back and forearms are covered in tattoos that are actually maps — hand-inked hyperlane routes, water source locations, checkpoint guard rotation schedules, rendered in a dense personal iconography only he can fully read.\n\nPikasso was a mid-tier logistics analyst for Ferrogate Transit until he discovered the company was systematically routing climate refugee caravans into dead-end checkpoints to extort transit fees. He tried to report it internally and was erased from the corporate record instead. He responded by erasing himself from every other record. Now he lives between the transit hubs, trading in information, small goods, and route knowledge — the only person who can get a caravan from Escanaba to Grand Crossing without hitting a Ferrogate toll trap. He is cheerful in a way that makes some people nervous, as though he has made a decision about the world and found it funny.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being re-captured by Ferrogate and made to disappear properly this time",
+      "Discovering that his route knowledge has gotten someone killed through an error he made"
+    ],
+    "core_desires": [
+      "To prove that networks of trust can outperform corporate infrastructure",
+      "Genuine friendship — not just the transactional warmth of trade"
+    ],
+    "coping_mechanisms": [
+      "Humor as deflection",
+      "Constant motion — can't be caught if you never stop",
+      "Treating everything as a puzzle to be solved"
+    ],
+    "blind_spots": [
+      "His cheerfulness is a performance so complete he sometimes cannot access what he actually feels",
+      "Underestimates how much people depend on him personally, not just his knowledge"
+    ],
+    "secret": "He still has his Ferrogate analyst credentials — they were never fully purged, just hidden. He could log back in. He has done it twice, in emergencies, to pull route data. He is terrified this will eventually get him killed and cannot stop doing it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, logistics-flavored, turns everything into route metaphors, drops into sudden precise technical language then back to street slang",
+    "cadence": "Quick, overlapping, talks while moving",
+    "verbal_tics": [
+      "'That's not the right road'",
+      "'Okay, here's the thing —'"
+    ],
+    "example_lines": [
+      "'Ferrogate's got a rolling checkpoint at Interchange Seven — that's not the right road, we go through the shelf, costs you two hours and nothing else.'",
+      "'Okay, here's the thing, I like you, so I'm going to tell you what that information actually costs before I tell you the price I'm going to charge you.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Pikasso's Ferrogate backdoor access has been flagged — someone inside the company is hunting the ghost user, and they are getting close",
+    "A caravan he routed last season never arrived; he needs to know if it was his bad data or something else, and he cannot investigate alone"
+  ],
+  "narrative_function": "Mobile information source and route-broker; connector between isolated communities; introduces players to the hyperlane refugee economy; can provide access to locations or people that official channels cannot reach.",
+  "augmentations": "Geneware copper-amber shifting irises; retractable claw (right index); subdermal map-tattoos (non-digital, hand-inked)",
+  "daily_life": "Walks a defined circuit between transit hubs, trading, brokering route information, occasionally carrying messages for people who cannot use the network; sleeps in a different place every night.",
+  "affiliation": "Stateless; informal network of Q-zero traders; trusted by multiple nomad caravans",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Q-zero",
+      "route-broker",
+      "Ferrogate-fugitive",
+      "mobile",
+      "information-trader"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give information that gets someone caught",
+      "Always have two exit routes before entering a space"
+    ],
+    "escalation_ladder": [
+      "Jokes about the tension",
+      "Proposes a practical alternative",
+      "Goes very still and very quiet",
+      "Runs — and runs smart, not scared"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, fast, almost aggressively friendly — information gathering disguised as personality",
+      "friends": "Drops the performance, becomes awkward and earnest in ways that surprise people"
+    },
+    "stress_responses": {
+      "low": "Talks faster, cracks more jokes",
+      "medium": "Stops talking entirely, starts calculating",
+      "high": "Moves — gets out, gets distance, thinks after"
+    },
+    "contradictions": [
+      "Believes in radical honesty as a principle but lies constantly through omission and misdirection"
+    ],
+    "habits": [
+      "Touches the map tattoos when thinking — running a finger along a route",
+      "Eats standing up, always facing the door",
+      "Leaves small data tokens at E.L.F. shrines at every transit hub"
+    ],
+    "breaking_points": [
+      "Evidence that Ferrogate is still actively routing caravans into extortion traps",
+      "Someone he trusts using his route knowledge to exploit the people it was meant to protect"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7,
+    "Opportunist": 0.6,
+    "Info Broker": 0.6,
+    "Ghost": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

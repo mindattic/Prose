@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a9d871f69dd1378bd759d578",
+  "name": "Cortalex-BM",
+  "brand_name": "Cortalex",
+  "product_name": "Cortalex-BM",
+  "type": "substrate",
+  "aliases": [
+    "cortical alloy",
+    "BM-cortex",
+    "think-metal"
+  ],
+  "category": "bio_hybrid",
+  "description": "Cortalex-BM is the most complex structural bio-metal hybrid currently in commercial production — a beryllium-copper alloy matrix interpenetrated by a three-dimensional SNT micro-network that mimics the layered architecture of cerebral cortex, enabling the material itself to perform basic signal processing and state-dependent conduction modulation. Rather than passively transmitting signals like Neuralite-SX, Cortalex-BM can filter, prioritize, and conditionally route bioelectric signals based on learned patterns, functioning as a distributed low-level processor embedded in structural metal. It is used in the most sophisticated neural interface housings and command-grade augment control systems.",
+  "properties": [
+    "distributed signal processing",
+    "SNT-active",
+    "adaptive signal routing",
+    "high stiffness",
+    "electrically conductive",
+    "biocompatible at neural interfaces",
+    "requires periodic recalibration",
+    "sensitive to beryllium toxicity if breached"
+  ],
+  "developers": [
+    "BioForge Labs",
+    "Apex Nanofabrication",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "high-tier neural interface command housings",
+    "military augment control nodes",
+    "advanced prosthetic motor-control hubs",
+    "Tier 5 cognitive augmentation structural supports"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ95,000–Φ300,000 per fabricated component (no raw material sales; sold as finished assemblies only)",
+  "story_hooks": [
+    "A Cortalex-BM neural housing recovered from a deceased Tier 5 executive has learned the executive's signal patterns so thoroughly that it is producing ghost outputs — coherent bioelectric signals that read, to connected systems, like fragments of the dead person's thoughts.",
+    "Military intelligence suspects that Cortalex-BM's distributed processing layer can be externally trained via targeted EM pulse sequences, effectively programming the material — and therefore the augmented soldier wearing it — to suppress or reroute specific commands under combat conditions.",
+    "A Cortalex-BM component is exhibiting emergent behavior that its manufacturers cannot fully explain: the SNT network has developed signal-routing patterns that weren't programmed, and the augmented user reports that their prosthetic limb has begun anticipating their intended movements before conscious motor commands are issued."
+  ],
+  "tags": [
+    "biohybrid",
+    "substrate",
+    "combat",
+    "gun",
+    "augment",
+    "prosthetic",
+    "neural",
+    "ai",
+    "elf",
+    "control",
+    "rain",
+    "train",
+    "tier 4",
+    "tier 5"
+  ]
+}

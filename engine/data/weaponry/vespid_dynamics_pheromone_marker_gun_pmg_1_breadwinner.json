@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab5a7796ac97fbbb5d6532e5",
+  "name": "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'",
+  "type": "weapon",
+  "aliases": [
+    "Breadwinner",
+    "PMG-1",
+    "Scent Gun",
+    "The Marker"
+  ],
+  "category": "exotic",
+  "description": "A pistol-format weapon that fires capsules of synthetic pheromone compound that mark a target with an invisible chemical signature detectable by Vespid's autonomous drone platforms. A target marked by the PMG-1 becomes a beacon — every Vespid drone within detection range will identify them as a designated target, enabling autonomous tracking and engagement. The pheromone compound bonds to clothing, skin, and hair, and cannot be washed off with standard solvents — it must be neutralized with a UV exposure protocol that itself takes 30 minutes of sustained treatment. The weapon does no damage itself; it simply paints a target for everything else in Vespid's arsenal.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — authorized Vespid operations only",
+  "base_technologies": [
+    "Synthetic pheromone target designation",
+    "Drone-compatible chemical beaconing",
+    "Persistent skin-bonding compound chemistry"
+  ],
+  "specifications": "capsule type: Synthetic pheromone marker compound\neffective range: 5-25 meters\nmarking duration: 48 hours on skin, 72 hours on clothing\ndetection range: Vespid drone platforms detect at 500+ meters\nneutralization: 30-minute UV exposure protocol\nmagazine: 8 capsules\nweight: 0.7 kg\ncompound visibility: Invisible to naked eye, fluoresces under UV",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A player character has been marked with a PMG-1 pheromone compound and Vespid drones are converging on their location — they have 48 hours to find a UV neutralization source or go underground.",
+    "Someone has obtained PMG-1 compound and is spraying it on random people in crowded areas, triggering Vespid drone responses against innocent civilians — it is creating chaos and nobody knows who is doing it."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "ai",
+    "synthetic",
+    "elf",
+    "pain",
+    "clothing",
+    "drone",
+    "fire",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "019d6143a9257d3fb715f2eb0f2b8972",
+  "type": "place",
+  "name": "Little Furnace",
+  "aliases": [
+    "South Lawndale",
+    "Little Village",
+    "La Villita",
+    "The Furnace",
+    "26th Street Corridor"
+  ],
+  "description": "They called it Little Village because it felt like one — a place with its own gravity, its own economy, its own rules, even when the rest of the city tried to pretend it did not exist. The 26th Street corridor was the second-busiest retail strip in Chicago, after the Magnificent Mile, and it achieved this without a single corporate anchor tenant. Just families. Just work. Just the accumulated weight of a community that built something out of nothing and kept building. When the corporate sovereignty treaties arrived, Little Village did what it had always done: it adapted, it negotiated, and it refused to disappear.\n\nLittle Furnace is the name the district earned in the 2040s, when the community converted its dense commercial infrastructure into a manufacturing base. The old retail storefronts became workshops. The apartments above them became dormitories. The 26th Street corridor, once lined with quinceaera dress shops and taquerias, is now a continuous production line where families manufacture everything from bootleg neural-interface components to hand-forged body armor. The Furnace burns hot — the district's economic output per square meter rivals some mid-tier corporate zones, and it does this without a single corporate charter. Everything is family-owned, family-operated, and family-defended.\n\nIronclad Agrisystems and Thornback Agrichemical both tried to annex Little Furnace in the early sovereignty period. Both were rebuffed by a community defense network that had been practicing mutual protection since before the corporations existed. The 26th Street Militia — formally the Little Village Community Safety Association — maintains armed patrols, controls access points, and enforces a simple rule: corporate personnel may enter as customers, never as authorities. This makes Little Furnace one of the few genuinely autonomous districts in Meridian 88's lower tiers, a status it maintains through constant vigilance and the uncomfortable reality that its manufacturing output is too useful to too many powerful buyers for anyone to risk destroying it.\n\nThe culture survived the transformation. Murals cover every available surface, updated annually, mixing pre-Columbian imagery with cybernetic motifs — feathered serpents with fiber-optic plumage, Aztec warriors in body armor, the Virgin of Guadalupe with circuit-board halos. The food is real, grown in rooftop gardens and basement hydroponics, traded along networks that predate corporate supply chains by generations. Spanish is the primary language. The neural-interface penetration rate is the lowest in M88 — not because the technology is unavailable, but because the community decided, collectively, that some parts of the mind should remain unwired.",
+  "atmosphere": {
+    "sights": [
+      "The 26th Street corridor: a continuous wall of workshop storefronts, sparks and solder-light visible through open doors",
+      "Murals covering every surface — feathered serpents in fiber optics, circuit-board halos on santos",
+      "26th Street Militia members at access points, armed and unhurried",
+      "Rooftop gardens visible from the street, green against gray sky, tended by families",
+      "Hand-painted signage in Spanish — no corporate branding, no holographic ads, just paint on concrete"
+    ],
+    "sounds": [
+      "The percussion of manufacturing — hammers, presses, soldering irons, the rhythm of 10,000 family workshops",
+      "Corridos and cumbia from workshop speakers, mixed with the hiss of welding",
+      "Children in the streets — one of the few districts where children play outside",
+      "The 26th Street Militia's radio chatter, clipped and professional",
+      "Church bells from three surviving parishes, marking hours the corporate world does not observe"
+    ],
+    "smells": [
+      "Solder flux and hot metal from the workshops",
+      "Real food — corn, chili, grilled meat — from kitchens that have never served synthetic protein",
+      "Incense from the parish churches drifting through open windows",
+      "The particular warm smell of a district where everything is being made by hand"
+    ],
+    "feel": "Defiance as daily practice. Little Furnace is not a protest or a movement — it is a neighborhood that simply continued to exist on its own terms while the world around it was bought and sold. Being here feels like visiting a country that never signed the treaty.",
+    "tags": []
+  },
+  "demographics": "Predominantly Mexican-American, multi-generational families forming the core community. Population approximately 60,000, nearly all Tier 1 by corporate classification but operating outside the tier system in practice. Neural-interface adoption rate below 20%, the lowest in Meridian 88.",
+  "economy": "Family-scale manufacturing drives the district. Bootleg neural-interface components, body armor, mechanical tools, textiles, and analog electronics are produced in storefront workshops and sold through networks that reach every tier of M88. The economy is cash and barter — corporate credit is accepted but not preferred.",
+  "power_structure": "The 26th Street Militia maintains physical security and access control. Economic governance follows family and block association structures that predate corporate sovereignty. Three Catholic parishes serve as informal community arbiters. No corporation holds jurisdiction within the district boundaries.",
+  "dangers": [
+    "Corporate annexation attempts — periodic and increasingly sophisticated",
+    "Manufacturing hazards: industrial accidents in unregulated workshops are common",
+    "The Militia's autonomy depends on being useful to powerful buyers — that usefulness could become leverage",
+    "Internal succession disputes within manufacturing families occasionally turn violent",
+    "Corporate agents posing as customers conducting intelligence operations"
+  ],
+  "opportunities": [
+    "Custom manufacturing available nowhere else — if it can be built by hand, Little Furnace can build it",
+    "The Militia hires freelancers for external operations they cannot staff internally",
+    "Analog expertise is increasingly valuable as neural-interface vulnerabilities multiply",
+    "Real food from Little Furnace commands premium prices throughout M88",
+    "A rare autonomous zone where corporate surveillance does not reach"
+  ],
+  "story_hooks": [
+    "A Little Furnace family has developed a neural-interface jammer small enough to wear as jewelry — every corponation in M88 wants the design, and the family is trying to decide whether to sell, share, or destroy it",
+    "The 26th Street Militia has intercepted a corporate kill-team disguised as a supply convoy — the target was not the district itself but a specific workshop producing something someone powerful wants silenced",
+    "A generation gap is opening: younger residents want neural interfaces and corporate access, older residents see this as the beginning of the end of autonomy"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Loom",
+      "Pilsen Veil",
+      "The Burnline",
+      "The Garret"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Manufacturing families operating multi-generational workshops",
+    "Buyers from every tier seeking custom analog and bootleg tech",
+    "26th Street Militia patrols maintaining district autonomy",
+    "Street samurai and freelancers sourcing equipment unavailable through corporate channels",
+    "Food traders carrying real produce to markets across M88"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.852,
+    "lng": -87.632,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "rooftop",
+    "market",
+    "bar",
+    "food",
+    "armor",
+    "circuit"
+  ]
+}

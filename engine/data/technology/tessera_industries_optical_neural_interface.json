@@ -1,0 +1,49 @@
+{
+  "id": "019d6143aa5371cfa39e96a5c43b0f02",
+  "name": "Tessera Industries Optical Neural Interface",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Optical Neural Interface",
+  "type": "technology",
+  "aliases": [
+    "ONI",
+    "Light Link",
+    "Tessera Bridge",
+    "Eye Wire"
+  ],
+  "subcategory": "neural_interface",
+  "description": "A neural interface that uses optogenetic technology — light-activated proteins expressed in neural tissue — instead of electrical signals to communicate with the brain. The ONI implants engineered opsins (light-sensitive proteins) into targeted neural populations, then uses arrays of microscale LEDs implanted along the brain surface to stimulate or read neural activity through light patterns. The optical approach offers dramatically higher spatial resolution than electrical interfaces, enabling communication with individual neurons rather than groups, and eliminates the electromagnetic interference issues that plague conventional implants.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "TESSERA INDUSTRIES",
+    "HELIX BIOSYSTEMS"
+  ],
+  "base_technologies": [
+    "Optogenetic protein engineering",
+    "Microscale LED neural array fabrication",
+    "Single-neuron optical communication"
+  ],
+  "enables": [
+    "Individual neuron-level interface resolution",
+    "Electromagnetic interference immunity",
+    "Higher bandwidth neural data transfer",
+    "Precision neural stimulation without electrical artifacts"
+  ],
+  "social_impact": "The ONI represents a generational leap in neural interface technology that threatens the market dominance of electrical interface manufacturers, particularly Axiom Systems. The precision of optical neural communication enables applications that electrical interfaces cannot match — perfect sensory reproduction, exact emotional control, and potentially direct neuron-to-neuron communication between ONI users. Early adopters report experiencing digital information not as abstract data but as genuine sensory experiences indistinguishable from reality.",
+  "story_hooks": [
+    "An ONI user has developed the ability to perceive wavelengths of light that the human eye cannot detect — the optogenetic modifications have altered their visual cortex in ways that extend beyond the interface's design parameters.",
+    "Tessera and Axiom are engaged in a shadow war over neural interface market share — Axiom operatives are sabotaging ONI installations while Tessera's agents are documenting electrical interface failures to undermine public confidence."
+  ],
+  "tags": [
+    "neuralinterface",
+    "technology",
+    "war",
+    "neural",
+    "genetic",
+    "ai",
+    "control",
+    "market",
+    "rain",
+    "shadow",
+    "tier 4"
+  ]
+}

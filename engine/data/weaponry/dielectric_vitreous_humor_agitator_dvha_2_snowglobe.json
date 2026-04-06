@@ -1,0 +1,65 @@
+{
+  "id": "019d6143ab24713083d34b23fcb7e185",
+  "name": "Dielectric Vitreous Humor Agitator DVHA-2 'Snowglobe'",
+  "type": "weapon",
+  "aliases": [
+    "Snowglobe",
+    "The Shaker",
+    "Floater Gun",
+    "DVHA"
+  ],
+  "category": "exotic",
+  "description": "The DVHA-2 exploits a specific vulnerability of the biological eye: the vitreous humor, the gel-like fluid filling the posterior chamber of the eyeball, is a dielectric medium with a distinct electrical permittivity that differs measurably from surrounding tissue. By projecting a rapid-cycling dielectric field tuned to this permittivity differential, the weapon induces micro-agitation within the vitreous humor — essentially causing the gel to vibrate at a frequency that generates internal pressure waves against the retina and the posterior lens. The immediate effect is severe visual disruption: targets experience a blizzard of phosphene flashes, cascading floaters, and a complete loss of coherent image formation for several minutes.\n\nAt higher power settings, the DVHA-2's agitation effect can cause partial vitreous detachment — the gel pulling away from the retinal surface — which produces longer-duration visual impairment and, in some cases, permanent retinal complications. Tessera Corponation's medical division originally developed the underlying dielectric targeting technology for ophthalmic surgery, specifically for non-contact manipulation of intraocular structures. The weapons application emerged from a defense contract that Tessera has since officially terminated, though production of the DVHA-2 continues through a subsidiary operating under a different name.\n\nThe weapon's street name 'Snowglobe' comes from how affected targets describe their visual experience: a chaotic swirl of bright specks and moving shapes, as if their vision had been shaken like a decorative snow globe. The name has also been applied metaphorically in Meridian 88 street slang — to 'snowglobe' someone means to thoroughly disorient them, whether through the weapon or through information overload and deception.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Dielectric permittivity differential targeting",
+    "Vitreous humor resonance agitation",
+    "Rapid-cycling field projection"
+  ],
+  "specifications": "effective range: 1–35 meters\npower source: Compact dielectric field generator cell, 25 shots per charge\neffect duration standard: 3–7 minutes complete visual disruption\neffect duration high power: Potential partial vitreous detachment; impairment up to 48 hours\nweight: 1.4 kg\nform factor: Compact sidearm profile with adjustable power dial\ntargeting requirement: Must achieve line-of-sight to target's eye region; effective through standard eyewear; blocked by opaque face shields\naugmentation note: Fully cybernetic ocular replacements are immune; biological eyes with implanted lenses retain partial vulnerability",
+  "tactical_use": "The DVHA-2 is a precision blinding tool, most effective in engagements where temporarily removing a target's vision creates a decisive advantage without generating a lethal outcome. Extraction teams use it to blind security personnel at key moments �� a three-minute vision blackout is enough to move a person through a checkpoint. Close-protection operatives carry it as a first-response tool to create distance from an attacker. In competitive underworld contexts, it is used to humiliate rather than harm — 'snowglobing' a rival in public, leaving them stumbling and helpless, is a specific form of social violence. High-power use as a permanent blinding tool is illegal even under its restricted license, a line that operators cross with increasing frequency.",
+  "cultural_context": "The DVHA-2 sits at an interesting intersection in Meridian 88's weapon culture. Its restricted-legal status means it appears in both sanctioned security contexts and criminal ones, and the same weapon model is carried by corporate bodyguards and street enforcers alike. The metaphorical use of 'snowglobe' in the city's slang has given the weapon a cultural presence beyond its physical use — media, information brokers, and con artists all use the term. Among the augmentation-reliant community, the weapon represents a specific anxiety about the value of unaugmented biological senses: your eyes are a vulnerability that money can solve, and those who haven't spent that money know it. Tessera Corponation's continued involvement through subsidiaries is an open secret that the city's investigative press has reported on repeatedly without legal consequence.",
+  "known_users": [
+    "Corporate extraction and infiltration teams",
+    "Close-protection specialists",
+    "Street-level enforcers specializing in non-lethal dominance",
+    "Intelligence operatives requiring temporary target incapacitation",
+    "Tessera Corponation subsidiary field testers"
+  ],
+  "story_hooks": [
+    "Someone has modified a batch of DVHA-2s to lock permanently on high-power mode with the safety override removed. The units are indistinguishable from standard models until fired. They're already in circulation.",
+    "A Tessera Corponation subsidiary has been quietly approached by a buyer wanting DVHA-2 units in quantities that suggest crowd deployment — not individual use. The subsidiary contact wants out and needs help disappearing.",
+    "Three witnesses to a major corporate crime have all independently reported sudden severe visual impairment that their doctors can't explain through any standard cause. The symptom profile matches high-power DVHA-2 exposure.",
+    "A black-market ophthalmologist is offering a vitreous humor replacement procedure that provides immunity to the DVHA-2 — the synthetic gel she's using is proprietary, and its origin traces back to Tessera's original ophthalmic surgery program in ways that shouldn't be possible."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "violence",
+    "gun",
+    "crime",
+    "deception",
+    "secret",
+    "loss",
+    "augment",
+    "ai",
+    "synthetic",
+    "corporate",
+    "contract",
+    "power",
+    "money",
+    "medical",
+    "surgery",
+    "doctor",
+    "underworld",
+    "market",
+    "energy",
+    "fire",
+    "tier 2"
+  ]
+}

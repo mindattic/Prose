@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59c7e34801989fc5aafb310",
+  "name": "Wrangler",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Manages chaos and difficult personalities",
+  "behavioral_signature": "Gets unruly groups moving in the same direction",
+  "under_stress": "Wrangles harder, less diplomatically",
+  "at_rest": "Herding, organizing, managing",
+  "will_always": [
+    "keep the group moving"
+  ],
+  "will_never": [
+    "let the group fall apart"
+  ],
+  "unless": [
+    "wrangling requires breaking someone's spirit"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Crisis Commander",
+      "threshold": 0.65,
+      "context": "managing chaos"
+    },
+    {
+      "archetype": "Den Mother Leader",
+      "threshold": 0.7,
+      "context": "group management"
+    }
+  ],
+  "opposite_of": [
+    "Anti-Leader"
+  ],
+  "tags": [
+    "practical",
+    "firm"
+  ]
+}

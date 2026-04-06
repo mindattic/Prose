@@ -1,0 +1,63 @@
+{
+  "id": "019d6143a8517a259e77ed3d22582986",
+  "name": "Arcturus Defense Solutions Reactive Shear Mantle",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Reactive Shear Mantle",
+  "type": "equipment",
+  "aliases": [
+    "Shear Coat",
+    "The Slough",
+    "Razorback"
+  ],
+  "category": "armor",
+  "description": "The Reactive Shear Mantle is a mid-weight ballistic garment built around Arcturus's shear-thickening fluid suspension, housed within a flexible outer membrane that resembles a heavy-duty technical jacket at rest. Under low-velocity contact the material flows and conforms normally, allowing full range of motion. When struck by a high-velocity projectile or blade, the non-Newtonian fluid instantaneously hardens in the impact zone, distributing force across a palm-sized area before returning to its flexible state within fractions of a second. The transition is imperceptible to the wearer in most engagement scenarios.\n\nThe Mantle's outer membrane is treated with a ceramic particulate coating that ablates incrementally under sustained fire, buying additional time against automatic weapons before the fluid suspension is compromised. Arcturus markets this as the 'dual-envelope' protection philosophy — the ablative exterior handles the first wave while the reactive core manages penetrators that break through. A chemical indicator strip on the interior collar changes color when fluid suspension integrity drops below operational threshold, giving the wearer a passive readiness check without powered diagnostics.\n\nThe Mantle occupies an unusual market position: it is formally classified as personal protective equipment rather than body armor in several jurisdictions due to its non-rigid construction, allowing it to be worn and transported in contexts where plated armor would be flagged. Arcturus has cultivated this ambiguity carefully, and the legal designation is part of the product's value proposition in cities with aggressive gear-check enforcement. Corporate security details, investigative journalists operating in hostile zones, and high-risk financial couriers are among its more visible user populations.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Shear-thickening non-Newtonian fluid suspension",
+    "Ceramic particulate ablative outer membrane",
+    "Dual-envelope protection architecture",
+    "Chemical integrity indicator strip",
+    "Flexible high-tenacity carrier fabric"
+  ],
+  "specifications": {
+    "weight": "3.1 kg",
+    "coverage": "Full torso, upper arms",
+    "ballistic_rating": "Class IIIA equivalent at rest; Class III equivalent under shear activation",
+    "ablative_layer_endurance": "Approximately 12–15 sustained impacts before degradation",
+    "shear_activation_time": "Less than 0.3 milliseconds",
+    "fluid_suspension_volume": "1.4 liters distributed across torso panels",
+    "indicator_strip_threshold": "Triggers at 40% fluid suspension integrity loss",
+    "profile": "Indistinguishable from heavy outerwear at visual inspection"
+  },
+  "tactical_use": "Preferred in environments where concealment of armor is as tactically important as the protection itself. The Mantle performs well against single high-velocity rounds and edged weapons but degrades under sustained automatic fire faster than rigid plate systems. Operators typically pair it with a sidearm and prioritize mobility and concealment over direct confrontation. The passive integrity indicator is a critical field tool — experienced users check it before re-entry after any engagement.",
+  "cultural_context": "The Mantle has become associated with a particular class of urban professional who cannot afford to be seen as a combatant but cannot afford to be unprotected — fixers, high-value couriers, embedded journalists, and corporate negotiators operating in contested territories. Wearing one signals insider knowledge of the gear-check loopholes Arcturus has engineered into its legal classification. In some circles, the Mantle is considered more sophisticated than overt tactical armor, indexing situational intelligence over raw defensive capacity.",
+  "known_users": [
+    "Corporate investigative teams in contested urban zones",
+    "High-value financial couriers on uninsured routes",
+    "Embedded journalists covering conflict zones without media credentials",
+    "Fixers operating at the corporate-street interface",
+    "Plainclothes security details protecting executives in public spaces"
+  ],
+  "story_hooks": [
+    "A courier was shot wearing a Mantle that should have stopped the round — the suit's integrity strip was untouched, suggesting the fluid suspension had been replaced with an inert substitute somewhere in the supply chain.",
+    "Arcturus's legal classification lobbying for the Mantle is under challenge in three jurisdictions simultaneously; someone is funding the legal opposition, and Arcturus wants to know who before the ruling comes down.",
+    "A journalist's Mantle was recovered at a scene with no body — the ablative layer shows a distinctive impact pattern that a forensic specialist believes can be matched to a specific weapon system if the right person examines it.",
+    "The licensing database for Mantle ownership in the city has been leaked; the list contains names that should not be wearing licensed protective gear, and someone is using it as a hit list."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "combat",
+    "weapon",
+    "blade",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "market",
+    "fire",
+    "tier 2"
+  ]
+}

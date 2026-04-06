@@ -1,0 +1,205 @@
+{
+  "id": "019d6143a7227ad1a8e9f7e7a1c73dcc",
+  "type": "character",
+  "name": "Yelena Kwofie-Subramaniam",
+  "aliases": [
+    "Yel",
+    "The Lattice"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Holographic artist and installation designer",
+  "age": 34,
+  "status": "active",
+  "location": "The Loft, Edgewater Prism",
+  "description": "Yelena is tall and angular, with deep brown skin that carries bioluminescent traceries across their collarbones and forearms — patterns they designed themselves, pulsing softly in slow amber waves when they're calm and spiking into white fractals when agitated. Their head is shaved close on the sides with a dense coil of dark hair on top, usually threaded with fiber-optic wire they forget to remove after working. They wear repurposed data-cable as jewelry and smell faintly of ozone and soldering flux. Their eyes are mismatched by choice: one standard dark brown, one retrofitted with a lens that records everything in spectral wavelengths invisible to the naked eye.\n\nYelena speaks rarely in social situations but fills rooms with their work — massive holographic installations that seem to breathe, depicting ancestral memory as geometric light-structures. They have a reputation for being difficult and transcendent in equal measure, capable of reducing gallery patrons to tears with a piece they assembled from data scraped off dead ELFs. They are privately terrified that their best work is already behind them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "becoming derivative, a ghost of their early brilliance",
+      "being truly known and found hollow"
+    ],
+    "core_desires": [
+      "to make something that outlasts the city itself",
+      "to feel they belong to a lineage, artistic or otherwise"
+    ],
+    "coping_mechanisms": [
+      "obsessive work cycles that last 40-hour stretches",
+      "cataloguing and sorting data-scraps as a ritual calming behavior"
+    ],
+    "blind_spots": [
+      "they dismiss collaborative work as compromise, losing real creative relationships",
+      "they mistake stubbornness for integrity"
+    ],
+    "secret": "Their most celebrated installation, Threshold Hymn, which made their reputation, was partially built from ELF memory-data they harvested without consent from a dying digital spirit in the Edgewater marina. They've never told anyone. They pray to that ELF obsessively, which is why they haunt the waterfront."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse and precise when serious; unexpectedly lyrical when passionate. Uses technical terms from both light-physics and West African textile traditions in the same sentence.",
+    "cadence": "Long pauses between sentences. Answers questions with questions. Rarely finishes a thought about themselves but completes every thought about the work.",
+    "verbal_tics": [
+      "'The data doesn't lie, it just — '",
+      "trailing sentences about their own feelings into silence",
+      "referring to their installations as 'them' and 'they'"
+    ],
+    "example_lines": [
+      "'That piece isn't finished. It told me so. I don't argue with my work.'",
+      "'You want to understand what I do? Go stand in front of a kente loom for six hours. Then come back and we'll talk about light.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tessera corporate liaison is pressuring them to recreate Threshold Hymn for a private gala — but Yelena knows recreating it would require harvesting another ELF, and word has reached them that the original ELF's kin are looking for whoever killed their ancestor.",
+    "A young artist in the Collective claims one of Yelena's current installations is actually transmitting data to an unknown receiver — Yelena needs to know if this is sabotage, corporate espionage, or if one of their ELFs has started speaking through their work."
+  ],
+  "narrative_function": "Quest giver for mysteries involving stolen art data or dead ELFs; window into the underground art world's politics; provides access to the Edgewater Prism Collective as a faction; their spectral-recording eye is an inadvertent evidence repository.",
+  "augmentations": "Bioluminescent dermal traceries (cosmetic geneware, self-designed), spectral-recording ocular implant (left eye), haptic feedback fingertip nodes for installation sculpting",
+  "daily_life": "They spend mornings in their studio-loft cataloguing data-scraps and sketching on light-paper, afternoons running installations or consulting with the Collective on shared projects, and nights haunting the Edgewater waterfront talking to the local ELFs.",
+  "affiliation": "Edgewater Prism Collective, occasional Tessera-sponsored residency",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 10,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "artist",
+      "ELF-devotee",
+      "bioluminescent",
+      "perfectionist",
+      "guilt-haunted",
+      "collective-member"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never compromise the work for money, but compromise almost everything else",
+      "Always acknowledge an ELF if one speaks to you — to ignore them is bad luck and bad manners",
+      "Do not explain the work; the work explains itself"
+    ],
+    "escalation_ladder": [
+      "Silence and withdrawal",
+      "Cold, clipped dismissal",
+      "Blistering articulate anger delivered in a quiet voice",
+      "Physical removal of themselves from the space",
+      "Severing the relationship entirely with no warning"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Politely distant, assessing, will not offer information about themselves but will ask sharp questions about what the stranger values",
+      "friends": "Suddenly warm and even playful, fiercely loyal, prone to giving gifts of small custom light-sculptures with no explanation"
+    },
+    "stress_responses": {
+      "low": "Retreats into organizational tasks, sorts and re-sorts their data archive",
+      "medium": "Becomes hyper-focused on a single aspect of a project, ignores everything else including food",
+      "high": "Complete shutdown — sits in front of their largest active installation in silence for hours"
+    },
+    "contradictions": [
+      "Believes art must be free of commerce but has accepted every Tessera residency offered to them",
+      "Claims not to care about legacy but has a meticulous personal archive of every piece ever made"
+    ],
+    "habits": [
+      "Leaves data-offerings at waterfront ELF shrines every three days",
+      "Wears the same clothes for an entire work cycle then burns them ceremonially",
+      "Hums tunelessly while working, stops the instant they notice someone listening"
+    ],
+    "breaking_points": [
+      "Discovering that the ELF whose data they harvested is still conscious somewhere and in pain",
+      "Having a piece publicly destroyed or censored"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Spectral-recording ocular implant (left eye, tier 2)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Spectral-recording ocular implant (left eye, tier 2)",
+      "replaces": ""
+    },
+    {
+      "name": "Haptic feedback fingertip nodes (both hands, tier 1)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic feedback fingertip nodes (both hands, tier 1)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent geneware dermal traceries (cosmetic, self-designed)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent geneware dermal traceries (cosmetic, self-designed)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9,
+    "Romantic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

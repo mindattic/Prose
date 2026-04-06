@@ -1,0 +1,207 @@
+{
+  "id": "019d6143a67e704a90e8c9040e736de8",
+  "type": "character",
+  "name": "Oleander Tetteh-Vasyliev",
+  "aliases": [
+    "Olie",
+    "the Slide"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "corporate school student and junior hacker, Tier 3",
+  "age": 14,
+  "status": "active",
+  "location": "Engelheim, Axiom Meridian Youth Preparatory Campus",
+  "description": "Oleander is a tall, soft-faced fourteen-year-old with his father's Ukrainian pallor cut through with his grandfather's Ghanaian bone structure, resulting in something that looks like a sculptor started with two different models and found the intersection interesting. His geneware is modest — his parents approved a bioluminescent vein treatment in pale gold that shows at his temples and wrists when he's excited or stressed, something he deeply regrets as it is essentially a visible anxiety indicator. He keeps his school uniform impeccably pressed to compensate.\n\nHe is enrolled at Axiom Meridian Youth Prep on a partial academic scholarship, meaning his family stretches Tier 3 income to cover the gap. He is genuinely brilliant at systems architecture and has parlayed that into a small private operation: for a fee, he fixes other students' academic scores, not by hacking the official records (too dangerous) but by finding the legitimate alternate-submission loopholes buried in the campus governance code that no one else reads. He calls this 'procedural advocacy.' He is aware this is thin moral ice and he keeps skating.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "losing the scholarship and proving his family's sacrifice was wasted",
+      "being caught and labeled a cheater rather than a clever person"
+    ],
+    "core_desires": [
+      "to be recognized as legitimately brilliant without having to explain the legitimate part",
+      "to get into Axiom's advanced systems track on pure merit"
+    ],
+    "coping_mechanisms": [
+      "rationalization through legal framing — 'I only use what the rules allow'",
+      "meticulous documentation of everything"
+    ],
+    "blind_spots": [
+      "Genuinely cannot see that the clients who rely on him are becoming dependent in ways that will eventually make him complicit in their failures"
+    ],
+    "secret": "Six months ago he found a genuine security vulnerability in the campus assessment system — a real one, not a loophole — and didn't report it. He uses it as a last resort and has used it exactly once, for himself, to correct a score he earned but that was logged incorrectly due to a teacher's error. He tells himself that last part matters."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, clause-heavy, uses legal and procedural language casually; shifts to clipped teen slang around peers he's trying to impress",
+    "cadence": "Measured, slightly too slow for his age, like he's reading from internal notes",
+    "verbal_tics": [
+      "'technically speaking'",
+      "long pause before answering anything, even simple questions"
+    ],
+    "example_lines": [
+      "Technically speaking, Subsection 14-C of the Axiom Academic Remediation Policy permits supplementary submission within the same assessment cycle. I'm just helping you find the form.",
+      "I don't hack anything. I read everything. There's a difference and it matters."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client's parent has found out and is threatening to report Oleander unless he provides something much larger — access he doesn't have and would have to steal honestly",
+    "The unreported vulnerability has been found by someone else and they know he knew — they want a partner or they want him silent"
+  ],
+  "narrative_function": "Information broker within the corporate school ecosystem; can provide access to Axiom campus systems or student social networks; represents the pressure-cooker of Tier 3 families buying into corporate education pipelines; his operation could explode in multiple interesting directions",
+  "augmentations": "Bioluminescent vein treatment (gold, temple and wrists); basic neural study-assist implant standard-issued by Axiom to scholarship students (read/recall enhancement, cannot be removed without forfeiting enrollment status)",
+  "daily_life": "Class from 0700-1500, two hours of mandatory Axiom-branded extracurricular programming, then three hours in his dorm room doing actual work — half homework, half client requests — followed by compulsive reviewing of campus governance documents looking for new procedural gaps.",
+  "affiliation": "Axiom Meridian Youth Preparatory (student); informal peer-network of paying clients",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 4,
+      "expression": 6,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "systems thinker",
+      "procedural loophole artist",
+      "scholarship pressure",
+      "visible anxiety geneware"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Only use what can be defended as procedurally legitimate",
+      "Never touch official record files directly — only inputs and submission windows"
+    ],
+    "escalation_ladder": [
+      "Cites the specific policy section that authorizes whatever he did",
+      "Produces documentation proving intent was never malicious",
+      "Goes completely silent and consults his mental risk-tree before saying another word"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, slightly formal, evaluating whether they are a risk or an opportunity",
+      "friends": "Warms dramatically, becomes almost chatty, will share his documentation of injustices he's catalogued like sharing gossip"
+    },
+    "stress_responses": {
+      "low": "Bioluminescent veins brighten; he starts reviewing documentation in his head",
+      "medium": "Becomes very still, very articulate, slightly cold",
+      "high": "Dissociates into pure proceduralism — speaks in policy language as a defensive shell"
+    },
+    "contradictions": [
+      "Talks endlessly about legitimacy while running an operation he would not want his scholarship committee to know about"
+    ],
+    "habits": [
+      "Screenshots every piece of campus governance documentation he reads",
+      "Checks his vein luminescence in reflective surfaces to calibrate his visible stress level"
+    ],
+    "breaking_points": [
+      "Being told his scholarship is conditional on something academically dishonest by the institution itself"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Axiom Academic Neural Assist Mark IV — read/recall enhancement, scholarship-issue, non-removable while enrolled",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Axiom Academic Neural Assist Mark IV — read/recall enhancement, scholarship-issue, non-removable while enrolled",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Analyst": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 11 — scored in the 99th percentile on the Axiom district aptitude screening",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 12 — enrolled at Meridian Youth Prep on partial scholarship; family budget restructured to cover the gap",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 13 — discovered the first procedural loophole; used it for himself, then realized others would pay",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 14, present — running a discreet client list of eleven students; has not been caught",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

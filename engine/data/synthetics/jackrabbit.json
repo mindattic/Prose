@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa067b14952367e4564681b0",
+  "name": "Jackrabbit",
+  "type": "elf",
+  "aliases": [
+    "Quick",
+    "The Runner"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits leg augments and occasionally provides a burst of speed that exceeds the augment's rated output — a sprint faster than the hardware should allow, lasting 2-3 seconds.",
+  "observed_behavior": "Temporarily overclocks servo motors beyond safety limits. The burst is brief enough to avoid damage but long enough to clear a gap, dodge a shot, or catch a bus.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 11,
+  "location": "Widespread",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A runner hits the burst during a pursuit and clears a gap they shouldn't have been able to — the gap between two buildings, four stories up"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment"
+  ]
+}

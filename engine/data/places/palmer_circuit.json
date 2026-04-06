@@ -1,0 +1,106 @@
+{
+  "id": "019d6143a92c7cd19c05d23c3b14d09f",
+  "type": "place",
+  "name": "Palmer Circuit",
+  "aliases": [
+    "Palmer Park",
+    "The Palmer",
+    "Wiretown"
+  ],
+  "description": "Palmer Circuit is what happens when a neighborhood of architects, engineers, and designers gets augmented and loses its zoning restrictions in the same decade. The historic Palmer Park area — once a neighborhood of distinguished Tudor homes and apartment buildings surrounding a 296-acre park — became Detroit's unofficial tech-creative district in the 2040s when the combination of affordable housing, architectural character, and proximity to both Wayne State and the Eight Mile corridor attracted a population of independent technology workers, interface designers, and the particular kind of engineer who considers corporate employment a moral compromise.\n\nThe neighborhood earned the name Palmer Circuit when its residents began physically networking their buildings. It started with a shared mesh network — an alternative to the corporate-controlled communications infrastructure. Then the mesh expanded to include distributed computing resources, shared fabrication equipment, and collaborative design platforms. Then someone connected the computing infrastructure to the buildings' environmental systems. Then someone else connected those to the park's irrigation and monitoring systems. Within a decade, Palmer Park and its surrounding blocks had become a single integrated technical organism — a neighborhood-scale circuit where the buildings, the park, the communications network, and the residents' neural interfaces were all nodes in a shared system.\n\nThe Palmer Circuit is not corporate. It is not anarchist like the HPAZ. It is a cooperative — a formal legal entity where residents buy membership shares, contribute to collective infrastructure, and vote on technical and community decisions through a neural-interface governance platform that processes a referendum in four seconds. The cooperative owns the mesh network, the fabrication equipment, and the collective computing resources. Individual members own their homes and businesses. The arrangement works because the population is small enough (approximately 14,000), technically literate enough, and economically stable enough to sustain collective governance without corporate funding. It is not a model that scales. The residents know this. They built it for themselves, not for export.",
+  "atmosphere": {
+    "sights": [
+      "Tudor and Art Deco buildings covered in technical infrastructure — mesh antennas, sensor arrays, and solar panels integrated with the architecture rather than bolted on",
+      "The park — 296 acres of green space monitored and maintained by the neighborhood circuit's environmental systems",
+      "Fabrication workshops visible through ground-floor windows — people making physical things with tools that blur the line between craft and engineering",
+      "Data visualization displays on building facades — the neighborhood's collective systems status, rendered as public art",
+      "Neural interface governance votes — visible as brief, synchronized pauses in the population's movement, four seconds of collective decision-making"
+    ],
+    "sounds": [
+      "The mesh network's physical layer — a faint electronic hum from the distributed antenna arrays, audible only at night when other sounds diminish",
+      "Fabrication equipment — 3D printers, laser cutters, and tools that don't have names yet, operating in ground-floor workshops",
+      "Technical conversation — the ambient dialogue of a neighborhood where everyone understands distributed systems and nobody agrees on implementation",
+      "The park's environmental systems — automated irrigation, soil monitoring probes, and wildlife tracking sensors creating a subtle mechanical underscore to natural sounds",
+      "Music — the Palmer Circuit's residents include enough musicians that there is always someone practicing, and the mesh network occasionally carries performances between buildings"
+    ],
+    "smells": [
+      "Fabrication materials — polymer, solder, composite resins, and the particular smell of laser-cut wood",
+      "The park — real trees, real grass, real soil, maintained by machines but allowed to be genuinely wild in sections",
+      "Coffee and food from the cooperative cafes — resident-owned, algorithmically priced, and better than corporate alternatives"
+    ],
+    "feel": "Alive and intentional. Palmer Circuit feels like a neighborhood that was designed by the people who live in it — which it was, iteratively, over decades, through thousands of cooperative votes and technical arguments. It's messy in the way real collaboration is messy, functional in the way that systems built by people who use them are functional, and deeply, specifically itself in a way that corporate districts can only imitate.",
+    "tags": []
+  },
+  "demographics": "Approximately 14,000 cooperative members. Predominantly Tier 2-3, technically educated, politically independent. Ethnically diverse but economically homogeneous — the membership share price (Φ45,000) creates a de facto economic floor. Average age: 38. The cooperative's demographics are a solved engineering problem: they recruit specifically to maintain skills balance across technical disciplines.",
+  "economy": "Cooperative-based. The Palmer Circuit Cooperative generates approximately Φ6.2 billion annually through contract technical work, fabrication services, and licensing revenue from collectively developed technologies. Individual members earn through personal contracts and cooperative profit-sharing. The economic model is stable but dependent on the members' collective technical competitiveness — if corporate R&D surpasses the cooperative's output, the model collapses.",
+  "power_structure": "Direct neural-interface democracy. All cooperative decisions are made by member vote, processed through the governance platform in four seconds. Executive functions are handled by rotating committees of three members, serving six-month terms. The current Technical Committee chair is Adaeze Nwosu, a neural interface architect who has served four non-consecutive terms because nobody else wants to chair the infrastructure budget meetings.",
+  "dangers": [
+    "Technical dependency — the cooperative's systems are deeply integrated, and a cascading failure would affect every building and resident simultaneously",
+    "Corporate acquisition pressure — the cooperative's collective intellectual property is worth Φ40+ billion, and multiple corponations have made offers",
+    "Neural interface vulnerability — the governance platform runs through members' neural interfaces, creating a potential vector for cognitive manipulation",
+    "Insularity — the cooperative's technical literacy requirement creates a monoculture that has blind spots",
+    "Park degradation — the 296 acres of green space require constant maintenance, and the environmental systems are aging"
+  ],
+  "opportunities": [
+    "Technical collaboration — the cooperative's members are some of the most skilled independent engineers in the GLM",
+    "The mesh network — an alternative communications infrastructure that bypasses corporate monitoring",
+    "Fabrication capabilities — the workshops can produce custom hardware, augments, and equipment that don't exist in any catalog",
+    "Intelligence value — the cooperative's contract work gives its members access to multiple corponations' technical problems"
+  ],
+  "story_hooks": [
+    "The cooperative's governance platform shows signs of external influence — votes are shifting in patterns that suggest someone has figured out how to manipulate the neural interface voting system without the members knowing",
+    "A cooperative member has been using the fabrication workshops after hours to build something that doesn't match any known technical specification. The power draw is significant. The member claims it's a personal project.",
+    "Tessera has offered the cooperative a partnership that would triple its revenue and provide access to NovaMind development tools. The vote is scheduled. The cooperative is split. The partnership terms include a data-sharing clause buried on page 847."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Catalytic Mile",
+      "The Eight Mile Divide",
+      "Highland Park Autonomous Zone",
+      "Brightmoor Reclamation"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Cooperative members — engineers, designers, fabricators",
+    "Contract clients from across the GLM",
+    "Corporate recruiters trying to poach members",
+    "Independent technologists who want to join and can't yet afford the share price"
+  ],
+  "notable_locations": [
+    {
+      "name": "Palmer Park",
+      "description": "296 acres of urban green space, maintained by the cooperative's environmental systems — the neighborhood's lungs and its most valuable non-technical asset",
+      "tags": []
+    },
+    {
+      "name": "The Fabrication Row",
+      "description": "Ground-floor workshops along Woodward — where cooperative members build things that corporate R&D labs wish they'd thought of first",
+      "tags": []
+    },
+    {
+      "name": "The Governance Hub",
+      "description": "A converted apartment building that houses the cooperative's central computing infrastructure — where four-second democracy runs on hardware maintained by volunteers",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.4187,
+    "lng": -83.1006,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "moral",
+    "circuit"
+  ]
+}

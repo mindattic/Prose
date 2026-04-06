@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab5f7dd981978dbf8cf163b1",
+  "name": "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'",
+  "type": "weapon",
+  "aliases": [
+    "Earthquake",
+    "RH-3",
+    "Ground Pounder",
+    "Bass Drop"
+  ],
+  "category": "sonic",
+  "description": "A crew-served sonic weapon that generates a focused infrasonic pulse capable of inducing structural resonance in buildings, vehicles, and human bone. The RH-3 projects sound waves between 7-12 Hz at extreme amplitude through a parabolic emitter dish, creating a cone of effect where targets experience violent nausea, loss of equilibrium, and at close range, micro-fractures in the skeletal system. The weapon leaves no visible damage on structures but can fatigue load-bearing elements to the point of collapse over repeated application.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted",
+  "base_technologies": [
+    "Focused infrasonic projection",
+    "Structural resonance targeting",
+    "Parabolic acoustic amplification"
+  ],
+  "specifications": "frequency range: 7-12 Hz variable\namplitude: 185 dB at source\neffective range: 10-80 meters cone\npower source: Vehicle-mounted generator or heavy capacitor bank\nweight: 62 kg (emitter assembly)\ncrew: 2 operators minimum\nstructural fatigue threshold: 4-6 sustained pulses on standard ferrocrete",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Buildings in a Tier 2 neighborhood are spontaneously collapsing — structural engineers suspect infrasonic fatigue but no weapon deployments have been reported in the area.",
+    "A black market dealer is offering a miniaturized version of the RH-3 emitter that fits in a backpack — if it works, it changes the calculus of urban warfare entirely."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "sonic",
+    "weapon",
+    "war",
+    "loss",
+    "ai",
+    "power",
+    "market",
+    "vehicle",
+    "tier 4"
+  ]
+}

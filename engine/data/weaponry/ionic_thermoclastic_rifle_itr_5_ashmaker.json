@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab2f7cdfb0a20846a0077454",
+  "name": "Ionic Thermoclastic Rifle ITR-5 'Ashmaker'",
+  "type": "weapon",
+  "aliases": [
+    "Ashmaker",
+    "The Kiln",
+    "Cinder Stick",
+    "ITR"
+  ],
+  "category": "energy",
+  "description": "The Ionic Thermoclastic Rifle functions by projecting a sustained stream of superheated ionized gas — technically a directed plasma jet — at ranges far exceeding conventional flamethrower technology. The key innovation is the magnetic confinement collar at the barrel's terminus, a toroidal field generator that compresses the plasma stream into a coherent column and prevents the lateral thermal bleed that makes conventional plasma projection impractical at range. The result is a weapon that delivers extreme thermal energy to a target at distances up to 60 meters with a column diameter of approximately 8 centimeters at point of impact.\n\nDeveloped by TESSERA CORPONATION under a military infrastructure contract, the ITR-5 was originally intended for demolition work — specifically for cutting through reinforced structural elements in contested urban environments. Its adoption as a direct combat weapon was, by TESSERA's own internal communications, 'an unanticipated market development.' The weapon's effect on unarmored biological targets is severe and rapid: the plasma column causes flash vaporization of surface tissue and ignition of underlying structures within 2 seconds of sustained contact. Armored targets experience accelerated surface ablation and heat transfer sufficient to cause incapacitation through cookoff of interior equipment.\n\nThe Ashmaker has a complex cultural footprint. Its association with demolition work gives it a certain blue-collar credibility in the construction and infrastructure sectors, where modified civilian variants are not uncommon for cutting operations. Its use as a weapon is associated primarily with large-scale violence — building clearances, punitive actions by corporate security against squatter communities — and it carries a stigma that most individual operators find professionally undesirable. Carrying one signals either professional demolition work or a willingness to engage in atrocity.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 4+ / Military only (combat configuration)",
+  "legality": "Licensed (industrial configuration) / Prohibited (combat configuration)",
+  "base_technologies": [
+    "Magnetic confinement plasma projection",
+    "Toroidal field compression",
+    "Superheated ionic gas generation"
+  ],
+  "specifications": "effective range: 60m (combat), 15m (industrial cutting)\nplasma temperature: 4,200°C at emitter, 2,800°C at 60m\ncolumn diameter: 8 cm at 60m\nfuel source: TESSERA T-Gas Canister TGC-4 (45-second continuous burn per canister)\nweight: 6.8 kg (empty), 9.2 kg (full canister)\nlength: 91 cm\nconfinement collar: Toroidal magnetic field generator, 0.3-second spool-up\ncooling: Forced-air radiative system, 40-second mandatory cooldown after 15-second sustained burn",
+  "tactical_use": "Military operators use the ITR-5 for bunker denial, fortification clearing, and area denial in enclosed spaces where the thermal environment becomes a weapon in itself. Combat engineers use it for rapid structural cutting under fire. Against personnel, operators typically use short bursts rather than sustained streams to manage fuel consumption and cooldown cycles. The weapon's size and fuel requirements make it a two-person system in sustained operations — one operator, one reload carrier.",
+  "cultural_context": "In Meridian 88's construction sector, the ITR-5's industrial variant is a common tool — TESSERA has successfully normalized it as a precision demolition instrument. Workers in the Palladian Construction sphere carry them as standard equipment. The combat variant exists in a different moral register entirely. Its use in the Colvert District clearance operations four years ago — where TESSERA corporate security used ITR-5s to evict and 'sanitize' squatter warrens — left a deep scar in collective memory. The weapon's nickname 'Ashmaker' originated from survivors of that event.",
+  "known_users": [
+    "TESSERA corporate security heavy units",
+    "Military combat engineering teams",
+    "PALLADIAN CONSTRUCTION demolition crews (industrial variant)",
+    "Survivors of the Colvert clearance (as symbol, not users)",
+    "High-tier black market demolition specialists"
+  ],
+  "story_hooks": [
+    "A TESSERA internal memo has surfaced describing the Colvert clearance operation as a 'field demonstration' of the ITR-5's combat capabilities. Someone leaked it. TESSERA wants it back. The leaker wants it published.",
+    "A series of infrastructure sabotage events shows the distinctive cutting pattern of an ITR-5. The targets are all TESSERA-affiliated construction sites. Someone is using their own tool against them.",
+    "An industrial variant ITR-5 has been modified for combat and used in three separate murders in the upper districts. The modification is sophisticated — not a field hack. Someone with engineering access is building weapons.",
+    "A community in the lower districts has acquired two ITR-5s as a deterrent against corporate clearance operations. They've announced their possession publicly. TESSERA is deciding how to respond."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "violence",
+    "combat",
+    "war",
+    "memory",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "market",
+    "bar",
+    "moral",
+    "armor",
+    "fire",
+    "tier 4"
+  ]
+}

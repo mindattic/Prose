@@ -1,0 +1,270 @@
+{
+  "id": "019d6143a63c759b9c3b089288bbec2f",
+  "type": "character",
+  "name": "Kadiatou Hallberg-Acheampong",
+  "aliases": [
+    "Carbon",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Electronic and physical observation expert — surveillance specialist",
+  "age": 65,
+  "status": "active",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "description": "Kadiatou Hallberg-Acheampong is lean and angular, all sharp edges and visible tension. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a surveillance specialist out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented surveillance specialist in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.86,
+      "ideal": 0.5,
+      "id": 0.62,
+      "shadow": 0.1,
+      "mask": 0.2,
+      "ghost": 0.84
+    },
+    "core_fears": [
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "Being captured alive — death is preferable to corporate interrogation"
+    ],
+    "core_desires": [
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "Stability — a place to sleep that's the same place two nights running",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Overwork — takes every contract offered because idleness invites thinking"
+    ],
+    "blind_spots": [
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Kadiatou Hallberg-Acheampong has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Uses technical jargon for everything, including emotions"
+    ],
+    "example_lines": [
+      "\"I've been watching you for three days. You should close your curtains.\"",
+      "\"Information is the only commodity that appreciates with age.\"",
+      "\"Everyone thinks they're careful. Nobody is careful enough.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Kadiatou Hallberg-Acheampong's reputation — and a price for silence",
+    "Kadiatou Hallberg-Acheampong is offered a contract that would clear all their debts — the target is someone they respect",
+    "A corporate black site Kadiatou Hallberg-Acheampong once infiltrated is being reopened, and the people inside know his face"
+  ],
+  "narrative_function": "Kadiatou Hallberg-Acheampong is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
+  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 5
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 9
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 6
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.38,
+      "caution": 0.98,
+      "loyalty": 0.23,
+      "greed": 0.95,
+      "empathy": 0.53
+    },
+    "drives": [
+      "survival",
+      "money",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 6,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "technical expertise with augmentation systems",
+      "social chameleon — adapts to any environment",
+      "pain tolerance beyond normal limits"
+    ],
+    "weaknesses": [
+      "physical limitation from incomplete augmentation",
+      "trust issues that limit crew effectiveness"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "surveillance specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never discusses active contracts with anyone not directly involved",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Refuses contracts that require operating inside The Spires — too much surveillance"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Practices a kata or fighting form every morning regardless of circumstances"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Analyst": 0.9,
+    "Pattern Reader": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

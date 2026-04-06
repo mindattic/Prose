@@ -1,0 +1,100 @@
+{
+  "id": "019d6143a94870fea5d4f638acfa4106",
+  "type": "place",
+  "name": "The Nearfield",
+  "aliases": [
+    "Near South Side",
+    "South Loop",
+    "Museum Row",
+    "The Field"
+  ],
+  "description": "The Near South Side was always transitional — a district caught between the Loop's gravity and the South Side's reality, accumulating institutions the way a river bend accumulates debris. The Museum Campus. Soldier Field. The convention center. These were the structures Chicago placed at its front door, the things it wanted visitors to see before they saw anything else. Meridian 88 inherited this instinct and amplified it. The Nearfield is the megacity's display window, the curated face it presents to the world, and like all display windows, it exists to prevent you from seeing what is behind it.\n\nSoldier Field was acquired by Arcturus Defense Solutions in the 2040s and converted into the Arcturus Demonstration Arena — a venue where military technology is showcased for corporate buyers in events that are technically exhibitions and functionally gladiatorial. The old stadium's neoclassical colonnades now frame holographic weapons demonstrations. The crowd cheers. The field has always been a place where violence was performed for an audience; the only thing that changed is the honesty of the marketing.\n\nThe Museum Campus became a Vellichor Institute showcase, its three institutions — the Field Museum, the Shedd Aquarium, the Adler Planetarium — consolidated into a single experiential complex called the Vellichor Nexus. The collections are genuine and extraordinary. The access is tiered. Tier 5 visitors experience the Nexus through full neural immersion — walking among dinosaur reconstructions that breathe, swimming alongside fish in augmented aquarium displays, floating through planetarium shows that feel indistinguishable from actual space. Lower tiers get progressively degraded experiences, down to Tier 1's text-on-screen summaries of what the collections contain. The knowledge is the same. The experience of that knowledge is stratified by wealth. This is, the Vellichor Institute argues, how it has always worked. They are not wrong, and that is the most damning thing about them.\n\nThe residential towers that sprouted south of the Loop in the pre-corporate era have been absorbed into a corporate housing district managed by Palladian Construction. The towers are clean, efficient, and stratified — Tier 3 and 4 residents stacked in climate-controlled units with lake views, their lives organized around commutes to the Core and weekend visits to the Nearfield's cultural attractions. It is comfortable. It is surveilled. It is the life that the corporate system offers its compliant middle, and from the upper floors you can see the lake, and if you look south you can see the districts where the compliant middle ends and something else begins.",
+  "atmosphere": {
+    "sights": [
+      "The Vellichor Nexus: three museums fused into a single campus of curated wonder, tiered access visible in the queue lines",
+      "Arcturus Demonstration Arena: Soldier Field's colonnades framing holographic weapons displays",
+      "Residential towers in Palladian corporate standard, lake-facing windows catching light",
+      "Lake Michigan stretching east, cargo platforms visible on the horizon",
+      "The visible boundary where Nearfield's maintained infrastructure ends and the South Side begins"
+    ],
+    "sounds": [
+      "Crowd noise from the Arcturus Arena during demonstration events — cheering for weapons",
+      "The Vellichor Nexus's ambient soundscape: engineered nature sounds bleeding through the campus",
+      "Residential tower climate systems humming in harmony",
+      "Lakefront wind — the Nearfield is exposed to weather in a way the enclosed Core is not",
+      "Ferrogate Transit announcements at the museum station, precise and pleasant"
+    ],
+    "smells": [
+      "Lake air — cleaner here than anywhere in M88, filtered by the Nearfield's atmospheric processing",
+      "The Vellichor Nexus's curated scent environments — forest, ocean, ozone — piped through exhibition spaces",
+      "Concrete and steel from the residential towers, the smell of new construction",
+      "Gunpowder and ozone from the Arcturus Arena on demonstration days"
+    ],
+    "feel": "A district designed to be admired from a distance. The Nearfield feels like a brochure — beautiful, informative, and fundamentally two-dimensional. Everything is on display. Nothing is for touching. The lake is the only thing here that was not designed by a committee.",
+    "tags": []
+  },
+  "demographics": "Tier 3-4 corporate residents in the housing towers. Tier 2-5 visitors at the Vellichor Nexus and Arcturus Arena. Service workers (Tier 1-2) commute in from adjacent districts. Official population 25,000 residents; daily population swells to 80,000 with visitors and workers.",
+  "economy": "Cultural tourism and defense exhibition revenue drive the formal economy. Palladian's residential management generates steady housing income. The Vellichor Nexus's tiered access model is one of the most profitable cultural enterprises in M88. The service economy — food, transport, maintenance — employs thousands from adjacent lower-tier districts.",
+  "power_structure": "Vellichor Institute and Arcturus Defense Solutions hold co-jurisdiction, with Palladian Construction managing residential infrastructure. The three entities cooperate through the Nearfield Administrative Compact, a rare example of smooth corporate co-governance driven by mutual profitability.",
+  "dangers": [
+    "Arcturus weapons demonstrations occasionally involve live-fire components — containment failures have occurred",
+    "Tier-gated access at the Nexus creates confrontations when lower-tier visitors attempt to access premium experiences",
+    "The residential towers' corporate housing agreements include behavioral monitoring clauses",
+    "Proximity to the Arcturus Arena makes the Nearfield a target during corporate conflicts",
+    "The visible inequality between the Nearfield's curated beauty and adjacent South Side districts generates tension"
+  ],
+  "opportunities": [
+    "The Vellichor Nexus's data archives contain research materials worth significant gray-market value",
+    "Arcturus demonstration events attract corporate buyers with large budgets and exploitable security lapses",
+    "Service worker commute routes create daily corridors between the Nearfield and lower-tier districts",
+    "The lakefront infrastructure includes maintenance access points that bypass standard surveillance",
+    "Corporate housing residents with access to sensitive Core operations live here and commute predictably"
+  ],
+  "story_hooks": [
+    "The Vellichor Nexus is preparing an exhibition of pre-corporate Chicago artifacts — among them, documents that Tessera Corponation's legal team has demanded be removed from public display, and the Nexus directors are refusing",
+    "An Arcturus live-fire demonstration went wrong — the weapon prototype is missing from the Arena, and Arcturus is conducting a silent manhunt through the residential towers rather than admit the loss publicly",
+    "A service worker commuting from the Shelf has discovered that the Nearfield's atmospheric processing system is extracting something from the lake air and storing it — not filtering it, collecting it"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Meridian Core",
+      "The Steelyard",
+      "Bronzeline",
+      "Ashfield"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tier 3-5 cultural tourists visiting the Vellichor Nexus",
+    "Defense industry buyers attending Arcturus Arena demonstrations",
+    "Corporate housing residents commuting to the Core",
+    "Service workers from adjacent lower-tier districts",
+    "Vellichor Institute researchers and archivists"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.856,
+    "lng": -87.62,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "violence",
+    "weapon",
+    "loss",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "control",
+    "wealth",
+    "market",
+    "food",
+    "fire",
+    "lake",
+    "shelf"
+  ]
+}

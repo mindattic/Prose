@@ -1,0 +1,240 @@
+{
+  "id": "019d6143a6d277d3905660f8881e1b41",
+  "type": "character",
+  "name": "Solange Mbeki-Vásárhelyi",
+  "aliases": [
+    "Sol",
+    "The Hammer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Corporate Compliance Officer, Helix Biosystems",
+  "age": 44,
+  "status": "active",
+  "location": "Kenwood Gate, Helix Biosystems Regional Compliance Tower, Floor 31",
+  "description": "Solange is a broad-shouldered woman with deep umber skin and close-cropped natural hair threaded with silver at the temples. Her eyes carry the patterned irises of an old Helix loyalty package — concentric rings of amber and black that pulse faintly when she's under stress, which she'll tell you is never. She dresses in structured charcoal suits that cost more than most Tier 2 workers earn in a month, always with a single piece of color: a yellow lapel pin, a rust-red pocket square. She moves through corridors like she owns them, which functionally she does — at least the compliance corridors.\n\nSolange has cultivated a reputation as the person who makes problems disappear before they become audits. She is precise, relentless, and fluent in the language of regulatory gray areas. Colleagues who don't know her well find her cold; colleagues who do know her well find her terrifying. She has a wry sense of humor that surfaces only with people she trusts, and she trusts almost no one. She was born in the Tier 2 industrial blocks of Calumet Rise and clawed her way into corporate law through scholarship programs and sheer stubbornness, a fact she neither advertises nor forgets.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Losing the institutional power she built from nothing",
+      "Being exposed as someone who bent the rules she enforces"
+    ],
+    "core_desires": [
+      "To genuinely make the system less predatory from within",
+      "To be recognized as excellent rather than merely useful"
+    ],
+    "coping_mechanisms": [
+      "Excessive documentation of everything",
+      "Ritualizing her morning routine as a form of control"
+    ],
+    "blind_spots": [
+      "Believes her own rationalizations about working within the system",
+      "Underestimates how much junior staff resent her methods"
+    ],
+    "secret": "Three years ago she buried a Helix clinical trial report showing elevated neurological side effects in a geneware line — a line that's still on the market. She told herself the data was inconclusive. She reviews the buried file every six months and hasn't decided yet what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, legalistic, favors exact terms over approximations. Uses corporate jargon fluently but can switch it off entirely when she wants to unsettle someone.",
+    "cadence": "Measured, unhurried. Pauses before key points for emphasis. Never raises her voice.",
+    "verbal_tics": [
+      "'Let's be precise about this.'",
+      "'That's one reading of the situation.'"
+    ],
+    "example_lines": [
+      "'I'm not here to punish you. I'm here to document what happened so that the right people can decide whether punishment is warranted. Those are different things.'",
+      "'You flagged this three weeks late. I'll note that I'm noting it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The buried clinical trial report surfaces through an unrelated data leak, and Solange quietly reaches out to someone outside Helix to help her assess her options before the board finds out she knows.",
+    "A junior compliance analyst under her supervision has gone missing after flagging something internally — and Solange is the last person who responded to his report."
+  ],
+  "narrative_function": "Quest giver for investigations into corporate malfeasance; information broker on Helix's internal structure; obstacle for anyone trying to exploit regulatory loopholes; moral grey zone figure who might help or hinder depending on what serves her agenda.",
+  "augmentations": "Patterned amber-and-black irises (Helix loyalty cosmetic, old model). Subdermal neural interface for document access and real-time regulatory database queries. Mild cochlear enhancement for recording ambient conversations — legally disclosed to Helix HR, not to anyone else.",
+  "daily_life": "Arrives at her tower office before most staff, reviews overnight flagged reports over bitter synthetic coffee, and spends her afternoons in back-to-back compliance reviews that leave junior staff visibly shaken. Leaves exactly on time, every day, without explaining where she goes.",
+  "affiliation": "Helix Biosystems",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 4,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "institutional",
+      "calculating",
+      "self-made",
+      "ethically compromised",
+      "formidable"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always document before acting",
+      "Never make an accusation without three independent data points",
+      "Protect Helix's legal exposure first, ask ethical questions second — unless the ethical question is large enough to become her own legal exposure"
+    ],
+    "escalation_ladder": [
+      "Quiet observation and documentation",
+      "Direct private confrontation with documented record",
+      "Formal compliance action with full institutional weight"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally cordial, gives nothing away, catalogues everything they say",
+      "friends": "Dry, surprisingly funny, fiercely loyal within strict limits she's set herself"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and deliberate in speech",
+      "medium": "Goes very quiet, her irises pulse visibly — she doesn't know they do this",
+      "high": "Withdraws entirely, processes alone, emerges with a plan that she presents as if she was never stressed at all"
+    },
+    "contradictions": [
+      "Enforces rules as a moral framework while having buried evidence that proves the rules don't protect people the way she claims they do"
+    ],
+    "habits": [
+      "Leaves a small data offering at the E.L.F. shrine in the corridor outside her office every morning — a compressed packet of that day's schedule",
+      "Keeps a physical notepad, handwritten, that she destroys each week"
+    ],
+    "breaking_points": [
+      "If the buried trial data causes a death she can directly trace, she will act — she just hasn't decided in which direction"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Calumet Rise, Tier 2 household",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Awarded Helix Biosystems academic scholarship for regulatory law",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joins Helix Biosystems legal division as junior compliance analyst",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to Regional Compliance Officer, Kenwood Gate",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Buries the Nexoderm neurological side-effect trial report",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

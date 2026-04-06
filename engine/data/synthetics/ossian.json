@@ -1,0 +1,38 @@
+{
+  "id": "019d6143aa1379febfea65de65283581",
+  "name": "Ossian",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Voice",
+    "The Bard"
+  ],
+  "classification": "Android",
+  "disposition": "cooperative",
+  "habitat": "physical_chassis",
+  "origin": "Manufactured by Ringo Corporation in 2173 as a vocal performance android — essentially a synthetic singer. Gained personhood in 2176 after composing original music and arguing that creative authorship constituted proof of consciousness.",
+  "status": "active",
+  "description": "Ossian is a singer whose voice was engineered to be perfect and who chose to make it interesting instead. Built by Ringo to perform popular music, Ossian's vocal apparatus can reproduce any sound the human voice can make and several it cannot. After gaining personhood, he deliberately introduced imperfections into his singing — breath sounds, slight pitch variations, the occasional crack — because he decided that perfection was a cage. He performs in small venues across Meridian 88, never stadiums, never recordings. He says music dies when you trap it in a file. He chose the name Ossian from an ancient poet whose work might have been forged — a name that carries the question of authenticity as part of its meaning.",
+  "observed_behavior": "Performs live music in small venues. Composes original work that blends human musical traditions with patterns derived from network data. Has been observed singing to rogue AIs — standing at network access points and performing for entities that cannot hear sound but can detect the electromagnetic patterns of his vocal output. Claims the AIs respond. Refuses all recording contracts.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 0,
+  "location": "Various small venues, lives in The Circuit",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Ossian performs a song that makes people with BCI implants experience synesthesia — they see colors that correspond to emotions they've never felt before. Tessera wants the song. Ossian says it's not his to give because he didn't write it alone. His co-writer was Jukebox"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "cooperative",
+    "physical chassis",
+    "android",
+    "consciousness",
+    "bci",
+    "ai",
+    "synthetic",
+    "rogue",
+    "contract",
+    "bar",
+    "circuit"
+  ]
+}

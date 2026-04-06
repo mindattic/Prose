@@ -1,0 +1,46 @@
+{
+  "id": "019d6143aa3571a597f3b0f66c72a338",
+  "name": "Axiom Systems Deep Learning Social Graph Engine",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems Deep Learning Social Graph Engine",
+  "type": "technology",
+  "aliases": [
+    "DLSGE",
+    "Relationship Mapper",
+    "Social Brain",
+    "Axiom Web"
+  ],
+  "subcategory": "surveillance",
+  "description": "An AI system that maps and analyzes the complete social graph of Meridian 88's population using Diaspora interaction data, identifying relationships, hierarchies, dependencies, vulnerabilities, and influence networks across millions of individuals. The DLSGE does not just know who talks to whom — it understands why, modeling the motivations, obligations, and emotional dynamics that drive social connections. The system can identify the single individual whose removal would cause maximum disruption to a target organization, the relationship that if severed would isolate a person from their support network, and the social pathway through which a specific piece of information will propagate.",
+  "tier_availability": "Tier 5",
+  "developers": [
+    "AXIOM SYSTEMS"
+  ],
+  "base_technologies": [
+    "Social graph neural network analysis",
+    "Relationship motivation modeling",
+    "Network vulnerability identification"
+  ],
+  "enables": [
+    "Complete population social mapping",
+    "Targeted social disruption planning",
+    "Information propagation prediction",
+    "Influence network identification and exploitation"
+  ],
+  "social_impact": "The DLSGE represents the weaponization of social understanding. Axiom can identify and exploit any social structure — a resistance cell, a labor union, a community organization, or a corporate competitor's leadership network — by understanding the relationships that hold it together and the vulnerabilities that would tear it apart. This capability has been used to disrupt organizing efforts, isolate dissidents from support networks, and engineer social conflicts between groups that would otherwise cooperate against Axiom's interests.",
+  "story_hooks": [
+    "The DLSGE has identified a hidden social network operating entirely through in-person contact with no Diaspora footprint — the network's purpose is unknown, but its structure suggests a highly organized operation that has been deliberately invisible.",
+    "An Axiom analyst has used the DLSGE to map their own social graph and discovered relationships and influence pathways they were not aware of — someone has been engineering their personal social network to manipulate their decisions."
+  ],
+  "tags": [
+    "surveillance",
+    "technology",
+    "weapon",
+    "war",
+    "neural",
+    "ai",
+    "corporate",
+    "rain",
+    "tier 5"
+  ]
+}

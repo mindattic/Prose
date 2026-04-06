@@ -1,0 +1,221 @@
+{
+  "id": "019d6143a62b7c6f825deef5375745d0",
+  "type": "character",
+  "name": "Ignác Fofana-Tursynbekov",
+  "aliases": [
+    "Iggy",
+    "the Flush"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Bio-waste disposal technician for Aurochs Medical Complex",
+  "age": 29,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Sub-Level 3 bio-waste processing facility",
+  "description": "Ignác is compact and wiry, with golden-brown skin and a face that is younger than his eyes. His hair is kept shaved close out of practical necessity — long hair and bio-waste processing are a bad combination — but he has an elaborate bioluminescent tattoo that runs from behind his left ear down his neck, pulsing a cool blue-green that he can modulate with concentration. He wears standard Aurochs disposal coveralls with his name stenciled in block letters on the chest pocket, and he smells faintly of industrial enzymatic cleaner no matter what else he does.\n\nHe has an unexpected gift for observation that he's never quite known what to do with. Twelve hours a day in the bowels of a major medical complex means Ignác sees what gets thrown away, and a remarkable amount can be understood about a hospital's actual business by paying attention to its waste stream. He's cheerful in the gallows-humor way of people who work deeply unglamorous jobs, freely self-deprecating, and genuinely curious about people in a way that disarms them before they realize he's been listening very carefully.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being overlooked his entire life and never mattering to anyone specific",
+      "That what he's been quietly logging will get him fired — or worse — before he figures out what to do with it"
+    ],
+    "core_desires": [
+      "To be genuinely seen by someone who isn't paid to notice him",
+      "To understand what he's actually been witnessing in the disposal manifests"
+    ],
+    "coping_mechanisms": [
+      "Humor as universal solvent",
+      "Collecting small objects from the approved non-hazardous waste stream (discarded patient magazines, broken tool casings)",
+      "Detailed personal logbook kept in analog notebook"
+    ],
+    "blind_spots": [
+      "Assumes people in authority have access to the same information he does and have simply decided it doesn't matter",
+      "Undervalues himself consistently"
+    ],
+    "secret": "Over the past year he has documented a pattern: certain bio-waste loads from specific wards are manifested as standard organic medical waste but contain trace quantities of an experimental compound he's cross-referenced in leaked pharmaceutical journals — a Helix-adjacent gene therapy substrate that has no approved application. Someone is running an undisclosed trial in Aurochs, and the waste stream is the only evidence. He has a notebook full of manifest numbers and compound codes. He has no idea what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Informal, quick, self-effacing; Hungarian-Kazakh idiom occasionally surfaces as unusual metaphors that take people a moment to parse",
+    "cadence": "Rapid when comfortable, slows down significantly when saying something he actually means",
+    "verbal_tics": [
+      "'Not my department, but...' before observations that are extremely much his department",
+      "'You know what they throw away up there?' as a conversational opener"
+    ],
+    "example_lines": [
+      "'You know what they throw away up there? Enough nutrition supplements to feed Grainfort. I'm not complaining, I'm just saying — someone's running the numbers funny.'",
+      "'Not my department, but whoever decided bio-waste manifests didn't need a second signature was either very trusting or very involved. I can't figure out which.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches someone he's decided he can trust, notebook in hand, wanting to know if the compound codes mean anything to someone who knows how to look",
+    "A body has turned up in the bio-waste stream that he has processed and re-manifested in a panic — he needs help before the next audit"
+  ],
+  "narrative_function": "Unexpected information source — knows what the hospital actually discards and in what quantities; can provide access to spaces others don't think about; comic relief that turns out to have real utility",
+  "augmentations": "Bioluminescent tattoo, neck and behind left ear (blue-green, modulated); industrial-grade mucous membrane filters (occupational, prevents pathogen inhalation); no other augmentation",
+  "daily_life": "Runs four waste-processing cycles per shift across Sub-Level 3, logging manifest discrepancies into a system he's largely decided doesn't function correctly; eats lunch on the loading dock watching Ferrogate barges.",
+  "affiliation": "Aurochs Medical Complex, contracted through Ferrogate Transit's waste logistics subsidiary",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": -3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "bio_waste_tech",
+      "accidental_witness",
+      "analog_record_keeper",
+      "corporate_adjacent",
+      "unlikely_informant"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep your head down until you know what you're looking at",
+      "Never falsify a manifest — log discrepancies as discrepancies",
+      "Don't tell people more than you have to about what you've seen"
+    ],
+    "escalation_ladder": [
+      "Deflect with humor",
+      "Become vague and change the subject",
+      "Flee the situation and write everything down in the notebook afterward"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediate and disarming, fills silence with easy chatter, quietly cataloguing them the whole time",
+      "friends": "Warmer and more honest, will share observations he usually keeps to himself, unexpectedly loyal"
+    },
+    "stress_responses": {
+      "low": "Talks more, faster, funnier",
+      "medium": "Becomes hypervigilant, notices exits and cameras",
+      "high": "Goes very quiet and still, looks younger than he is"
+    },
+    "contradictions": [
+      "Presents as someone with nothing to offer who has been carefully building one of the most significant evidentiary records in the hospital"
+    ],
+    "habits": [
+      "Picks up discarded small objects from approved waste and arranges them on his locker shelf",
+      "Eats lunch in the same spot on the dock every shift",
+      "Writes in his analog notebook during every break"
+    ],
+    "breaking_points": [
+      "Discovery that the compound he's been tracking has a name and a victim with a face"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Bronzeline to a Hungarian-Kazakh family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Failed to qualify for Aurochs medical technician training program, accepted bio-waste position as interim work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Stopped thinking of it as interim",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First noticed compound anomaly in waste manifests; began logging systematically",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

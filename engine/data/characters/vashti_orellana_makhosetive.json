@@ -1,0 +1,176 @@
+{
+  "id": "019d6143a70f725280105dc5baff3dfd",
+  "type": "character",
+  "name": "Vashti Orellana-Makhosetive",
+  "aliases": [
+    "Vash",
+    "The Ethics Brick Wall"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "AI ethics researcher and regulatory consultant, University Spine / Meridian Core policy circuit",
+  "age": 61,
+  "status": "active",
+  "location": "Meridian Core — University Spine satellite office, Gage Circuit policy district",
+  "description": "Vashti Orellana-Makhosetive has the physical presence of someone who has been in adversarial rooms for thirty years and learned exactly how to take up space. She is lean and angular, with dark brown skin, close-cropped natural hair gone fully white, and no cosmetic modifications of any kind — a choice she has made repeatedly and publicly, which reads differently depending on who is in the room. She dresses expensively and simply: clean lines, quality materials, nothing that could be read as soft. She carries a single physical notebook that she has maintained for the last decade, a practice her Helix Biosystems consulting clients find charming and her colleagues at University Spine find unsettling.\n\nVashti is formidably intelligent and has spent long enough in both academia and policy environments that she has developed a controlled, almost surgical quality in conversation — she asks questions she already knows the answer to in order to understand how the person being asked will lie. She is not warm, exactly, but she is fair in ways that are rare enough to be remarkable. She has survived the field long enough to have watched three generations of AI systems she evaluated go wrong in ways she predicted in writing, which has given her a weariness she covers with precision. She genuinely believes that most people in power are not malicious — they are incurious, which she finds almost harder to forgive.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the AI ethics framework she has spent her career building is elaborate theater — that it has never actually constrained anything",
+      "That she has become the kind of legitimizing presence that makes harmful systems seem responsibly governed"
+    ],
+    "core_desires": [
+      "A single clear policy victory she can trace directly from her work to a measurable reduction in harm",
+      "To retire believing she was net-positive"
+    ],
+    "coping_mechanisms": [
+      "Writing — her notebook is a private reckoning, not a professional document",
+      "Extremely strict compartmentalization of work and the small personal life she maintains",
+      "Ritual: she reads one page of history each morning before any contemporary material"
+    ],
+    "blind_spots": [
+      "Her rigor can function as a barrier to the urgency that change sometimes requires — she is better at analysis than at crisis",
+      "Has normalized a level of institutional compromise that younger researchers recognize as capture even when she doesn't"
+    ],
+    "secret": "Twelve years ago she reviewed an early-generation Axiom autonomous decision system and passed it with minor reservations. That system, in modified form, now handles resource allocation for three Shelf districts. She has tracked the harm it has caused, in her notebook, every month for twelve years. She has never published this connection. She is not sure if she is protecting herself or protecting the field from the damage her admission would do — and she is not sure those are different things."
+  },
+  "speech_patterns": {
+    "vocabulary": "Extremely precise — will stop mid-sentence to correct her own word choice; no filler words; Spanish appears in private or emotional moments; uses passive constructions when discussing her own failures",
+    "cadence": "Measured to the point of being slightly unnerving — uniform pace regardless of emotional content, which makes her occasional moments of visible feeling striking",
+    "verbal_tics": [
+      "'Let me be specific' (signals she is about to say something precise and possibly devastating)",
+      "'That is the question, yes' (when someone has accidentally identified the real problem)",
+      "Long pauses used deliberately as pressure"
+    ],
+    "example_lines": [
+      "'The review process functioned exactly as designed. That is the problem. When the design is wrong, a functioning process produces reliable harm.'",
+      "'I have been saying this for nine years. I have records. Shall I retrieve them, or would you prefer we discuss what has changed since the last time you ignored them?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She approaches someone outside institutional channels to investigate an incident she cannot formally pursue without triggering a conflict of interest — because she is the conflict of interest",
+    "A young researcher has independently discovered the Axiom system connection and is preparing to publish; Vashti must decide whether to suppress it, support it, or finally break her silence herself",
+    "She is offered a seat on a new AI governance body that would give her real regulatory power for the first time — and the seat comes from Axiom"
+  ],
+  "narrative_function": "High-value information source on AI systems, corporate governance, and what regulations actually do versus what they claim to do; quest giver for policy-relevant retrieval or testimony; institutional door-opener in Meridian Core; represents the weight of expertise that has been consistently ignored.",
+  "augmentations": "None — deliberately and publicly unmodified.",
+  "daily_life": "Morning reading of overnight policy filings and AI incident reports across all five corponations; two or three back-to-back meetings in Gage Circuit or Meridian Core council chambers; returns to her University Spine office to write for two hours in the late afternoon regardless of what else is happening.",
+  "affiliation": "University Spine (research appointment, Dept. of Computational Ethics); Meridian City Council Ethics Advisory Board (consultant); per-project consulting with Helix Biosystems and Arcturus AI governance compliance",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "institutional",
+      "expert",
+      "morally-compromised",
+      "formidable",
+      "exhausted-idealist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything before acting on it",
+      "Never lie — withhold, redirect, but not falsify",
+      "Distinguish between what you can prove and what you know, and be clear about the difference"
+    ],
+    "escalation_ladder": [
+      "Formal written objection",
+      "Advisory opinion with findings",
+      "Withdrawal of endorsement",
+      "Resignation from the body in question",
+      "Public testimony — the nuclear option she has never yet deployed"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally courteous, neutral, evaluative — gives nothing away until she understands who she is dealing with",
+      "friends": "A small category; those in it receive directness and a dry, dark humor that surprises people who only know her professionally"
+    },
+    "stress_responses": {
+      "low": "Becomes more deliberate, more formal",
+      "medium": "Writes more — processing through notation",
+      "high": "An absolute stillness that the people who know her recognize as the most dangerous state she has"
+    },
+    "contradictions": [
+      "Advocates for accountability while protecting herself from the accountability of her own past decisions",
+      "Believes in systemic critique but operates almost entirely within systems"
+    ],
+    "habits": [
+      "The physical notebook — everything important goes in it, longhand, dated",
+      "Reads one page of history every morning as a grounding ritual",
+      "Never accepts food or drink in a meeting — treats it as an unnecessary vulnerability"
+    ],
+    "breaking_points": [
+      "Incontrovertible evidence that her ethics frameworks have been used explicitly as cover for corporate harm — used, not just failed to prevent",
+      "A younger researcher being destroyed by institutional forces she knows she enabled"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

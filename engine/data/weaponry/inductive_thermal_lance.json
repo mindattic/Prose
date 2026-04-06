@@ -1,0 +1,55 @@
+{
+  "id": "019d6143ab2f76cd801aff3ec96decca",
+  "name": "Inductive Thermal Lance",
+  "type": "weapon",
+  "aliases": [
+    "ITL-5 'Ironmonger'",
+    "Ironmonger",
+    "The Poker"
+  ],
+  "category": "melee",
+  "description": "The Inductive Thermal Lance is a heavy close-combat weapon produced by Palladian Construction, originally developed as a field tool for emergency structural cutting in collapsed building scenarios. The ITL-5 consists of a 90-centimeter reinforced handle assembly connected to a 40-centimeter ferrous core lance tip surrounded by a tight helical induction coil. When powered, the coil generates a rapidly alternating magnetic field that induces eddy currents directly within the ferrous tip, heating it to operational temperature — approximately 900 degrees Celsius — within four seconds, without any external flame or combustion. The tip glows a deep amber-orange at operating temperature and maintains heat continuously while powered.\n\nThe transition from construction tool to weapon was, by most accounts, inevitable given the ITL-5's field profile. Palladian Construction workers in contested infrastructure zones began carrying them as combination tools and deterrents, and the design's robustness — built to function in debris fields, flooded basements, and chemically contaminated environments — made it a natural fit for the kinds of chaotic close-quarters scenarios common in Meridian 88's lower districts. Palladian has never officially marketed the ITL-5 as a weapon, but their industrial sales division has been notably uninterested in investigating end-user applications, and modified versions with sharpened tips and shortened handles have been documented in the hands of non-construction personnel for years.\n\nThe ITL-5's combat profile is defined by its ability to defeat armor through thermal transfer rather than kinetic force. Against standard ballistic plate, the lance tip burns through the outer layer within seconds of sustained contact, defeating the material's protective properties before mechanical penetration is attempted. Against biological targets, the cauterizing effect of the weapon simultaneously wounds and seals — a grim feature that operators in extended engagements have described as 'efficient,' as it reduces the user's risk of exposure to target blood.",
+  "manufacturer": "PALLADIAN CONSTRUCTION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Electromagnetic induction heating",
+    "Eddy current thermal generation",
+    "Ferrous core lance construction"
+  ],
+  "specifications": "total length: 130 cm (handle + lance)\nlance tip material: High-carbon ferrous alloy, hardened\noperating temperature: 900°C sustained at full power\nheat up time: 4 seconds to operational temperature\npower source: Backpack-mounted high-capacity cell, 40-minute continuous operation; handle-integrated cell available (12-minute operation)\nweight: 3.8 kg with handle cell\ncooling time: 90 seconds from power-off to safe handling\ninduction coil material: Wound copper-beryllium alloy, shielded",
+  "tactical_use": "In construction and emergency response contexts, the ITL-5 is used for cutting through rebar, locked structural panels, and collapsed framework. In combat, operators use sustained contact pressure to defeat armor before pushing through, a technique that requires the user to maintain engagement range — risky, but devastatingly effective against opponents who rely on hardened protection. The lance's length provides standoff advantage against knife-range weapons, and its weight makes it effective as a bludgeoning implement even when unpowered. Experienced operators carry it unpowered until engagement is confirmed, activating it mid-approach to deny opponents preparation time. The 90-second cooling delay after shutdown is a known vulnerability — an operator who powers down cannot safely stow or conceal the weapon quickly.",
+  "cultural_context": "In Meridian 88's construction worker communities, carrying an ITL-5 is a normalized part of working in contested infrastructure zones where labor disputes can turn violent and rival crews compete over demolition contracts. The weapon has consequently become associated with organized labor's harder edges — union enforcers and territorial crew bosses are frequently depicted carrying them in the city's underground press. In the upper districts, the ITL-5 is viewed as a working-class weapon, too crude and industrial for corporate security tastes, which has paradoxically made it a symbol of working-district identity. Modified 'dueling' versions with decorative coil wrapping and sharpened tips are carried by gang leadership in the Palladian Construction service districts as an explicit territorial symbol.",
+  "known_users": [
+    "Palladian Construction emergency response and field crews",
+    "Organized labor enforcers in the construction sector",
+    "Gang leadership in Palladian service districts",
+    "Scavengers and salvage operators working contested demolition zones",
+    "Drevko Mass, union organizer and documented ITL-5 duelist"
+  ],
+  "story_hooks": [
+    "A series of structural fires in a contested district have been started using ITL-5 units — the burns are too precise for accident, and the pattern suggests someone is systematically destroying buildings to clear land for a construction bid. Palladian Construction is a likely beneficiary.",
+    "A modified ITL-5 with an induction coil rated far above the standard ceiling has been used in an attack — it reached temperatures that melted through reinforced vault-grade material. Someone has cracked Palladian's design and is manufacturing a version the original engineers say shouldn't be possible.",
+    "A players' contact in the construction labor movement has been arrested on weapon charges — an ITL-5 found at a crime scene has been traced to their registered license. They claim it was stolen three weeks ago. Finding the actual user means navigating both corporate security and labor union politics."
+  ],
+  "ammunition_type": [
+    "none"
+  ],
+  "tags": [
+    "melee",
+    "weapon",
+    "combat",
+    "crime",
+    "gang",
+    "identity",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "bar",
+    "armor",
+    "fire",
+    "tier 2"
+  ]
+}

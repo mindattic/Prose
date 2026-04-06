@@ -1,0 +1,51 @@
+{
+  "id": "019d6143aa3f79c8895ea4b911d436c4",
+  "name": "Helix Biosystems Neural Tissue Regeneration Protocol",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Neural Tissue Regeneration Protocol",
+  "type": "technology",
+  "aliases": [
+    "NTRP",
+    "Brain Repair",
+    "Neuro Regrow",
+    "Helix Restore"
+  ],
+  "subcategory": "medical",
+  "description": "A medical procedure that stimulates the regeneration of damaged neural tissue in the brain and spinal cord, restoring function lost to injury, stroke, or degenerative disease. The NTRP uses a combination of growth factor infusions, scaffold protein injections, and electrical stimulation patterns to coax adult neural stem cells into differentiating and forming new connections. The protocol can restore motor function to paralyzed limbs, repair cognitive deficits from traumatic brain injury, and reverse early-stage neurodegenerative conditions. Treatment takes 3-6 months and requires careful monitoring to ensure new neural growth follows functional pathways.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "HELIX BIOSYSTEMS",
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "Neural stem cell differentiation control",
+    "Growth factor targeted delivery",
+    "Electrical stimulation patterning for neural guidance"
+  ],
+  "enables": [
+    "Regeneration of damaged brain tissue",
+    "Reversal of paralysis from spinal cord injury",
+    "Recovery from traumatic brain injury",
+    "Early-stage neurodegenerative disease treatment"
+  ],
+  "social_impact": "NTRP has made neural damage reversible for the first time, but the treatment's cost (Φ500,000+) and 3-6 month duration limit access to those with resources and time. The technology has also created uncomfortable questions about criminal rehabilitation — if brain damage contributed to violent behavior, and that damage is now repairable, is there an obligation to treat rather than punish? Courts have begun ordering NTRP evaluations for convicted violent offenders, opening a legal battleground between rehabilitation advocates and punitive justice proponents.",
+  "story_hooks": [
+    "An NTRP patient's regenerating neural tissue has formed connections that do not match normal human brain architecture — the new neural growth is functional but organized in a pattern that neuroscientists cannot explain, and the patient is exhibiting capabilities that no human brain should have.",
+    "A black market NTRP clinic is offering the treatment at 1/10th the cost using an accelerated protocol — patients recover faster but some are experiencing personality changes as the rapid neural growth forms connections that override existing personality patterns."
+  ],
+  "tags": [
+    "medical",
+    "technology",
+    "gun",
+    "neural",
+    "ai",
+    "control",
+    "clinic",
+    "disease",
+    "injury",
+    "market",
+    "rain",
+    "justice",
+    "tier 3"
+  ]
+}

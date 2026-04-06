@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab447a53a17dddba0dcb9086",
+  "name": "Sterling-Nakamura Subsonic Eliminator SE-9 'Hush'",
+  "type": "weapon",
+  "aliases": [
+    "Hush",
+    "SE-9",
+    "Quiet Pistol",
+    "The Whisper"
+  ],
+  "category": "pistol",
+  "description": "A purpose-built suppressed pistol designed from the ground up for silent operation rather than having a suppressor added as an afterthought. The SE-9 uses an integral suppressor barrel, subsonic ammunition with a specialized wipe system, and a locked-breech action that eliminates the mechanical noise of a cycling slide. The result is a pistol with an acoustic signature of 22 dB — quieter than a whispered conversation. Sterling-Nakamura designed it for executive protection details who need to neutralize threats in environments where gunfire would cause panic — corporate events, diplomatic functions, crowded transit hubs. The weapon's existence is an open secret in security circles.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 4+",
+  "legality": "Issued — Sterling-Nakamura security details",
+  "base_technologies": [
+    "Integral suppressor barrel design",
+    "Locked-breech silent action",
+    "Subsonic wipe-system sound elimination"
+  ],
+  "specifications": "caliber: 9mm subsonic, proprietary wipe-suppressed\nacoustic signature: 22 dB at 1 meter\nmagazine: 8 rounds\neffective range: 5-25 meters\naction: Locked-breech, no slide cycling noise\nweight: 0.95 kg\nsuppressor: Integral, non-removable\nwipe replacement: Every 50 rounds\nbarrel length: 22 cm including integral suppressor",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A man was shot dead at a crowded gala and nobody heard anything — the body was not discovered for twelve minutes despite hundreds of people in the room.",
+    "A forensic acoustic analyst has developed a method to detect the 22 dB signature of an SE-9 firing using ambient microphone arrays — Sterling-Nakamura wants the research buried."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "pistol",
+    "weapon",
+    "gun",
+    "secret",
+    "ai",
+    "corporate",
+    "bar",
+    "fire",
+    "tier 4"
+  ]
+}

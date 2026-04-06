@@ -1,0 +1,61 @@
+{
+  "id": "019d6143a90a7f9d8c6960a30522e42a",
+  "name": "Vantabloc",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Blackout",
+    "Bloc",
+    "The Void"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "fear_inhibitor",
+  "manufacturer": "Nightshade Pharmatech",
+  "description": "Vantabloc is Nightshade's street-facing fear inhibitor, a cheaper and considerably less precise alternative to Lazarus's Amytal-X. Where Amytal-X surgically suppresses the fear response while preserving cognition, Vantabloc achieves the same effect through broader GABAergic and serotonergic suppression that blankets the entire limbic system. Users aren't just fearless — they're emotionally simplified, operating in a state of flat, purposeful calm that veterans of the drug describe as 'being a hand holding a gun.' It works. It is not subtle.",
+  "method_of_use": "vapor",
+  "effects": [
+    "Complete elimination of fear, panic, and anxiety",
+    "Broad emotional flattening producing calm, purposeful affect",
+    "Reduced startle response and threat-induced hesitation",
+    "Mild analgesia from limbic suppression",
+    "Absence of performance degradation under extreme stress"
+  ],
+  "side_effects": [
+    "Emotional suppression broad enough to impair empathy, social judgment, and moral reasoning during duration",
+    "Decision-making becomes purely instrumental — ethical constraints do not function",
+    "Moderate cognitive slowing — reaction time and problem-solving slightly impaired despite fear suppression",
+    "Significant rebound anxiety and emotional volatility after drug clears",
+    "Chronic use accelerates permanent limbic dysregulation",
+    "Vantabloc vapor is detectable by olfactory sensors in high-security facilities"
+  ],
+  "duration": "1-2 hours",
+  "addiction_risk": "high",
+  "tier_availability": "Tier 1-2",
+  "legality": "illegal",
+  "street_price": "Φ45 per vapor cartridge",
+  "cultural_context": "Vantabloc has a specific reputation on the Shelf: it's what you take before you do something you couldn't do with your conscience intact. This is not entirely accurate — the drug doesn't compel violence, it just removes the friction that makes violence difficult — but the association is real enough that Shelf communities have a specific term for someone who has clearly just used it: 'voided.' Nightshade sells it legally as an 'acute stress response modulator' for industrial workers in high-danger environments, and the legal defense is thin enough that enforcement is inconsistent. The Shelf views Vantabloc with a complicated mix of utility and moral unease.",
+  "story_hooks": [
+    "A witness to a serious crime reports that the perpetrators all moved with the characteristic flat calm of Vantabloc users — which means someone organized them, dosed them, and sent them in, suggesting a level of coordination unusual for random Shelf violence.",
+    "A runner has been using Vantabloc for six months to manage the psychological toll of their work and has realized they haven't felt anything — fear or otherwise — in three weeks without the drug.",
+    "Nightshade has introduced a new Vantabloc formulation that extends duration to four hours — the Shelf is already seeing the consequences, including a notable increase in violence that extends well past the point where perpetrators would previously have come down and reconsidered."
+  ],
+  "tags": [
+    "combatstimulant",
+    "fearinhibitor",
+    "pharmaceutical",
+    "violence",
+    "combat",
+    "gun",
+    "crime",
+    "ai",
+    "elf",
+    "rain",
+    "night",
+    "moral",
+    "train",
+    "drug",
+    "stimulant",
+    "shelf",
+    "tier 1",
+    "tier 2"
+  ]
+}

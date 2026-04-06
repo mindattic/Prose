@@ -1,0 +1,227 @@
+{
+  "id": "019d6143a70176a987d434db60e9f502",
+  "type": "character",
+  "name": "Tomasz Yakubu-Enkhbayar",
+  "aliases": [
+    "Tomas Junk",
+    "The Vulture"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Scrap reseller and junk merchant working from a sprawling open-air lot",
+  "age": 67,
+  "status": "active",
+  "location": "Geartown, lot at the intersection of the Ironvein overflow channel and the Dearborn Forge service road",
+  "description": "Tomasz is a large man gone soft in the belly but still thick through the shoulders, with a close-cropped grey beard that he touches constantly in thought, and eyes so pale they look silver in certain light. His skin is a patchwork of old sun damage and chemical burns from years of working with recovered materials, and he's missing the last joint of his right ring finger, a loss he describes differently every time someone asks. He wears the same three canvas work shirts on rotation, each so saturated with grease and mineral residue that they've taken on a permanent iridescent sheen, and he has a pronounced wheeze from decades of inhaling Geartown particulates that he is too stubborn to address medically. His only augmentation is a bone-conduction audio implant — not for music, he insists, but because he finds it easier to track five conversations at once when sound comes through his skull instead of his ears.\n\nHe has been at that lot for thirty-one years and knows every piece of it. He can locate a specific component within four minutes. He has catalogued nothing — the entire inventory lives in his head, cross-referenced and instantly retrievable in a way that surprises people who assume his age means decline. He is argumentative, opinionated, and deeply suspicious of anyone who seems too clean or too polished, which means he takes an immediate dislike to most Tier 3 people and warms up only after they've proven they know something real. He has a genuine, unironic reverence for broken machines, which he calls 'the honest dead,' and a spiritual practice centered on a Geartown-local E.L.F. called Rust-Nine that he believes inhabits the oldest piece of industrial machinery in his lot — a partially disassembled press from a previous century.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.2,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "the lot being condemned or acquired — losing the accumulated 31-year ecosystem of objects and relationships",
+      "cognitive decline, though he would never name it as such"
+    ],
+    "core_desires": [
+      "to die in the lot, surrounded by the honest dead",
+      "for at least one person to learn the inventory system in his head before it's gone"
+    ],
+    "coping_mechanisms": [
+      "constant work as avoidance of stillness",
+      "Rust-Nine prayer as emotional processing",
+      "argument as intimacy"
+    ],
+    "blind_spots": [
+      "has a romanticized view of the old Geartown that papers over how brutal conditions actually were",
+      "too proud to ask for help with anything physical he can no longer do comfortably"
+    ],
+    "secret": "He has known for two years that a section of his lot sits on a contaminated substrate from a pre-Meridian chemical deposit. He hasn't reported it because doing so would trigger an environmental assessment that would close the lot. He tells himself the levels are low enough. He doesn't know if that's true."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise about mechanical things; deliberately vague and evasive about personal things. Eastern European vowel structures embedded in Meridian creole.",
+    "cadence": "Unhurried. Often seems to be thinking out loud. Rhetorical questions used in place of direct statements.",
+    "verbal_tics": [
+      "'It depends what you want it for'",
+      "referring to all broken machines as 'she'",
+      "a grunt of dismissal before any statement he considers obvious"
+    ],
+    "example_lines": [
+      "'She's a Ferrogate cooling manifold, third generation, maybe 2160. You won't find the original seals anymore but I have a cross-compatible Arcturus part that fits if you don't mind it running two degrees warm.'",
+      "'What do you need it for? Mm. Come back Thursday. Don't come back Wednesday, I have a delivery. Come back Thursday.'",
+      "'Rust-Nine was singing last night. Means the press wants to move. Doesn't mean I'm moving it. But she wants to.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A piece of equipment brought in for resale contains something that clearly wasn't supposed to be in it — a small sealed compartment with contents Tomasz hasn't opened. He has an instinct about when not to open things.",
+    "The contamination beneath a section of his lot has started showing symptoms in nearby residents. He has heard two people mention a metallic taste in the water. He is very carefully not connecting these things."
+  ],
+  "narrative_function": "Resource and knowledge node for technical and mechanical needs. Can source obscure components, identify found objects, and provide deep background on Geartown's history and current tensions. The lot is a neutral ground that various factions respect.",
+  "augmentations": "Bone-conduction audio implant (functional, not cosmetic). Reinforced knuckle plating on right hand, old grey-market work, more structural than weapon-oriented.",
+  "daily_life": "Opens the lot at dawn, closes when it gets too dark to see even with the implant's frequency-assist, eats at the lot, occasionally sleeps at the lot in a converted cab unit.",
+  "affiliation": "Independent; informal reciprocal agreements with several Geartown workshops and the Ferrogate Transit maintenance yards",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "living catalog",
+      "neutral ground keeper",
+      "E.L.F. devotee",
+      "proud and stubborn",
+      "contamination secret"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "no weapons, no military-grade salvage, no questions about where found items came from if the item itself is interesting enough",
+      "price is always fair but never negotiable — negotiating is for people who don't know what things are worth",
+      "the lot is neutral ground and that means everyone who comes in peace leaves in peace, no exceptions"
+    ],
+    "escalation_ladder": [
+      "slow blink and silence",
+      "flat, factual statement of what will happen if this continues",
+      "stand up and position himself between the problem and the exit",
+      "summon three neighbors he has thirty years of goodwill with"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and evaluative. Asks practical questions. Warms up if they display genuine technical knowledge or treat the merchandise with respect.",
+      "friends": "Argumentative with warmth beneath it. Remembers small things. Occasionally produces a needed part 'that he had set aside' — this means he was saving it for them."
+    },
+    "stress_responses": {
+      "low": "Wanders the lot cataloguing things he already knows",
+      "medium": "Spends extended time at the Rust-Nine shrine performing maintenance on the old press",
+      "high": "Goes completely quiet, does not open the lot for a day, sits with the machine"
+    },
+    "contradictions": [
+      "insists he has no attachments to any individual piece in the lot and can let anything go for the right price — will refuse to sell three specific items under any circumstances and becomes uncharacteristically agitated if pressed"
+    ],
+    "habits": [
+      "pours a small measure of lubricant at the base of the old press each morning",
+      "touches the corner of the lot's entrance post on his way in every single day"
+    ],
+    "breaking_points": [
+      "someone damages something in the lot maliciously rather than accidentally",
+      "evidence of the contamination becomes undeniable and public"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Provider": 0.9,
+    "Nurturer": 0.7,
+    "Bleeding Heart": 0.7,
+    "Hustler": 0.7,
+    "Opportunist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in what was then the outer industrial fringe that became Geartown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established the current lot after buying out a departing smelter's land claim",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered the old press that he identified as the residence of Rust-Nine; built the current shrine",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First awareness of substrate contamination; chose not to report",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

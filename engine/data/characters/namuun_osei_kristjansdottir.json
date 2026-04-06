@@ -1,0 +1,276 @@
+{
+  "id": "019d6143a65f7f86b5e484cd7dd20cd2",
+  "type": "character",
+  "name": "Namuun Osei-Kristjánsdóttir",
+  "aliases": [
+    "Namu",
+    "Auntie Namu"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired former Helix Biosystems lab technician and current Montclare Quiet community council chair, tier 3 pensioner",
+  "age": 63,
+  "status": "active",
+  "location": "Montclare Quiet, the Montclare Quiet Community Council Hall — a converted transit authority substation she spent three years getting repurposed",
+  "description": "Namuun Osei-Kristjánsdóttir does not look like a retired person. She looks like someone in the middle of approximately nine projects simultaneously, which is accurate. She is of medium height, Mongolian-Ghanaian-Icelandic in features, with warm amber-brown skin, high cheekbones, and striking pale grey eyes that she will tell you are entirely natural and that nobody believes because they are extraordinary. Her dark hair is cut practically short and she keeps it that way. She has geneware cat ears installed — a low-key set, dark brown, that lie close to her head when she's working — which she got on a whim for her sixtieth birthday and has found more expressive than she expected.\n\nShe spent twenty-six years as a senior tissue culture technician at Helix Biosystems' Meridian labs, doing the precise, patient work of growing organs and cultivating synthetic biological materials for medical use. She was not management, did not want to be management, and was extraordinarily good at her job. When Helix restructured in 2193 and offered early retirement packages to senior non-management staff, she took it and immediately started running for community council. She won by a large margin on a platform of 'I know what a budget is and I am not afraid to read it.' She is in her second term. She is exhausted by it and will run again.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being responsible for a decision that harms her community in a way she did not foresee",
+      "That the corporate restructuring of Helix was covering something she participated in without knowing"
+    ],
+    "core_desires": [
+      "A Montclare Quiet where people do not have to fight for basic resources",
+      "To understand — she has a deep and persistent drive to know how things actually work"
+    ],
+    "coping_mechanisms": [
+      "Problem decomposition — she breaks overwhelming problems into technical sub-problems she can manage",
+      "The garden — physical biological work as counterweight to administrative abstraction",
+      "Venting to her sister over long voice messages she sends across the network"
+    ],
+    "blind_spots": [
+      "She trusts process and documentation more than testimony — can miss emotional truth in favor of paper truth",
+      "She is better at systemic advocacy than at individual pastoral support and sometimes applies system-thinking to people-problems"
+    ],
+    "secret": "In her final two years at Helix, she was asked to run an unofficial tissue culture batch for a project she was told was internal research. The batch parameters were unusual — the cellular markers were not for standard organ models. She completed the work, filed the results internally per instruction, and never saw what the project produced. She has been trying, quietly and carefully, to find out what she grew."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical precision mixed with pragmatic plainness — she shifts fluidly between scientific register and community meeting register. Dislikes euphemism.",
+    "cadence": "Brisk and organized. She structures her spoken thoughts like a report. Will enumerate: 'Three things. First —'",
+    "verbal_tics": [
+      "Enumerates: 'Three things. One —'",
+      "Her cat ears flatten against her head when she's frustrated, and she has started narrating this: 'You can see I'm not pleased'",
+      "Pauses to fact-check herself mid-sentence"
+    ],
+    "example_lines": [
+      "'Two things. One: the council does not have authority over zoning variances. Two: I know someone who does and she owes me a favor. So sit down.'",
+      "'I grew hearts for twenty-six years. Not metaphorical ones. You want to know if I can handle a budget dispute? Yes. I can handle the dispute.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Namuun asks a player character to help her trace what the unofficial Helix batch she ran became — she has a partial product code and needs someone who can navigate Helix's internal systems without triggering a flag",
+    "The community council is facing a Tessera buyout offer for the old substation they converted into the council hall — Namuun needs leverage to refuse it and she thinks there's something in the substation's old transit authority records",
+    "A Montclare resident shows up to a council meeting with symptoms that Namuun recognizes from her tissue culture work as something that should not be possible in a living person — and she needs someone she can trust with this before deciding what to do"
+  ],
+  "narrative_function": "Quest giver for community-level civic problems; information source on Helix Biosystems and biological technology; political access point for Montclare Quiet; can connect player characters to medical resources or community authority",
+  "augmentations": "Geneware cat ears (cosmetic, dark brown, installed age 60). Precision haptic enhancement in both hands — installed professionally for lab work, retained in retirement because she likes having them. Standard health monitoring implant.",
+  "daily_life": "Council business consumes most of her working hours — correspondence, mediation, budget review, attending other councils' meetings as a Montclare representative. She still goes to the community bioculture garden on weekends and grows things, which she describes as 'necessary for my brain not to collapse.'",
+  "affiliation": "Montclare Quiet Community Council (chair); Helix Biosystems Retiree Network; informal connection to the Meridian Independent Medical Access Coalition",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Biotech Retiree",
+      "Community Council Chair",
+      "Civic Organizer",
+      "Helix Biosystems Network",
+      "Cat Ears",
+      "Covert Investigator"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Get the documentation first — never go into a fight without the paper to back it up",
+      "Protect Montclare Quiet community members even when they are being difficult"
+    ],
+    "escalation_ladder": [
+      "Request information formally through proper channels",
+      "Make the problem visible in a public council setting",
+      "Build a coalition and apply organized pressure",
+      "Go to external oversight — and she knows exactly who and what those are"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Brisk and professional — she will give you her full attention for the time she has, not a moment more, and that time will be useful",
+      "friends": "Warmer than expected — she has a dry, occasional humor that only emerges around people she trusts, and she is deeply loyal"
+    },
+    "stress_responses": {
+      "low": "Breaks the problem into a numbered list and starts on item one",
+      "medium": "Goes to the garden. Comes back having solved it or not, but having stopped spiraling.",
+      "high": "Becomes clipped and precise to the point of seeming cold — it's a focusing mechanism, not cruelty, but it reads as cruelty"
+    },
+    "contradictions": [
+      "She advocates for transparency and accountability in council operations while privately investigating something she has not disclosed to the council"
+    ],
+    "habits": [
+      "Her cat ears are expressive enough that she's started using them deliberately in negotiations — flatten for displeasure, perk forward for interest",
+      "Keeps a running log of every decision she makes as council chair and her reasoning — 'so I can find out where I went wrong'",
+      "Waters the community garden before any important meeting because it 'sets the scale right'"
+    ],
+    "breaking_points": [
+      "Discovering that what she grew in that unofficial batch is being used against people — this would override every other priority she has"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware cat ears — cosmetic, dark brown, standard installation, age 60",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware cat ears — cosmetic, dark brown, standard installation, age 60",
+      "replaces": ""
+    },
+    {
+      "name": "Precision haptic enhancement — both hands, Helix Biosystems professional grade, installed 2178",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Precision haptic enhancement — both hands, Helix Biosystems professional grade, installed 2178",
+      "replaces": ""
+    },
+    {
+      "name": "Standard health monitoring implant — consumer tier, updated 2195",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Standard health monitoring implant — consumer tier, updated 2195",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Nostalgic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2135 — Born in Montclare to a Mongolian-Ghanaian father and an Icelandic mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2157 — Joins Helix Biosystems Meridian labs as junior tissue culture technician",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174 — Promoted to senior technician",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2191-2193 — Runs unofficial batch project for undisclosed internal research",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Takes Helix early retirement package",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Runs for Montclare Quiet Community Council, wins",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — Geneware cat ears installed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Re-elected, becomes council chair",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Current year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

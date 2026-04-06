@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a87777bda0d8d25f2f4f3ce6",
+  "name": "Tessera Industries Holographic Distraction Projector HDP-5",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Holographic Distraction Projector HDP-5",
+  "type": "equipment",
+  "aliases": [
+    "HDP-5",
+    "Light Show",
+    "Holo Flash",
+    "Tessera Distraction"
+  ],
+  "category": "stealth",
+  "description": "A throwable device that projects a 3-meter holographic scene — an explosion, a running person, a vehicle crash, or other attention-grabbing event — that lasts for 15 seconds. The HDP-5 is a single-use distraction tool designed to draw attention and surveillance focus to one location while the operator moves through another. The holographic projection includes simulated sound and a thermal signature generator that fools infrared sensors, creating a multi-sensory deception that is convincing for the critical seconds needed to slip past security.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — tactical deception device",
+  "base_technologies": [],
+  "specifications": {
+    "projection": "3-meter holographic scene",
+    "duration": "15 seconds",
+    "sound": "Integrated speaker",
+    "info": "matched to scene",
+    "thermal": "IR signature generator",
+    "scenes": "10 pre-loaded scenarios",
+    "weight": "0.15 kg",
+    "activation": "Twist and throw",
+    "range": "Projects at point of landing",
+    "fidelity": "Convincing beyond 5 meters"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An HDP-5 projecting a fake explosion in a crowded area caused a stampede — the hologram was intended as a distraction for a nearby operation, but the panic resulted in injuries and deaths.",
+    "HDP-5 units have been modified to project realistic holographic people that walk, talk, and interact — creating phantom witnesses and suspects that complicate crime scene reconstruction."
+  ],
+  "tags": [
+    "stealth",
+    "equipment",
+    "crime",
+    "deception",
+    "death",
+    "surveillance",
+    "vehicle",
+    "tier 3"
+  ]
+}

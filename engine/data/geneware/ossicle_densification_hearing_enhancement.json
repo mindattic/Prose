@@ -1,0 +1,49 @@
+{
+  "id": "019d6143a8ac770ab83d4f08ab907b2a",
+  "name": "Ossicle Densification Hearing Enhancement",
+  "brand_name": "Ossicle",
+  "product_name": "Ossicle Densification Hearing Enhancement",
+  "type": "geneware",
+  "aliases": [
+    "Keen Ear",
+    "Owl Hearing",
+    "Sound Sharp"
+  ],
+  "category": "sensory",
+  "target_system": "auditory (middle ear ossicle and cochlear enhancement)",
+  "description": "Enhances the middle ear ossicles (hammer, anvil, stirrup) with denser bone and optimized geometry for sound transmission, combined with expanded cochlear hair cell density. The result is hearing approximately 4 times more sensitive than unmodified human baseline, with extended frequency range into near-ultrasonic (up to 40 kHz) and enhanced directional discrimination. The user can hear whispered conversations at 30 meters, detect heartbeats through skin contact, and localize sounds with precision that rivals owl directional hearing. The modification includes an involuntary sound-flinch reflex for loud noises to protect the sensitive inner ear — sudden loud sounds cause an autonomic protective response that dampens hearing for 1–2 seconds. The modification is invisible and does not require external ear changes, though it pairs well with cat-ear or elf-ear modifications for combined directional enhancement.",
+  "source_organism": "Tyto alba (barn owl, directional hearing geometry), Megaderma lyra (greater false vampire bat, frequency range genes)",
+  "manufacturer": "Helix Biosystems",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed (surveillance-adjacent capability in high-sensitivity versions)",
+  "procedure": "Middle ear microsurgery with cochlear retroviral enhancement, 2 sessions",
+  "expression_time": "3–5 weeks; full sensitivity development 2 months",
+  "reversibility": "Partially reversible; cochlear changes permanent, ossicle modification surgically reversible",
+  "side_effects": [
+    "Loud environments are physically painful — concerts, construction, gunfire",
+    "Sound-flinch reflex causes visible startle responses to sudden noise",
+    "Difficulty sleeping in anything but sound-isolated rooms",
+    "Can hear neighbors through walls — privacy is a constant issue",
+    "Tinnitus risk increased from chronic sensitivity"
+  ],
+  "social_perception": "Valued and sympathized with. Enhanced hearing is useful but comes at a clear quality-of-life cost. Keen Ear users are recognized by their tendency to flinch at sounds others barely notice and by the ever-present earplugs they carry. In investigation and security, the modification is standard.",
+  "story_hooks": [
+    "A Keen Ear user overhears a conversation through three walls that reveals a corporate assassination plot — but they can't explain how they heard it without revealing their modification to people who would use that information against them",
+    "An Owl Hearing user begins hearing a persistent subsonic tone that nobody else can detect — it's coming from beneath the city, it's getting louder, and it follows a rhythmic pattern"
+  ],
+  "tags": [
+    "sensory",
+    "geneware",
+    "gun",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "surgery",
+    "pain",
+    "bar",
+    "fire",
+    "tier 2"
+  ]
+}

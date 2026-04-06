@@ -1,0 +1,50 @@
+{
+  "id": "019d6143a8567f33a451610494e89226",
+  "name": "Axiom Systems Neural Interface Firewall NIF-3",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems Neural Interface Firewall NIF-3",
+  "type": "equipment",
+  "aliases": [
+    "NIF-3",
+    "Brain Wall",
+    "Axiom Shield",
+    "Mind Guard"
+  ],
+  "category": "electronic_warfare",
+  "description": "A hardware security module that installs between a user's neural interface and external data connections, providing real-time monitoring and filtering of all data entering or leaving the neural implant. The NIF-3 analyzes data packets for known attack signatures, anomalous patterns, and unauthorized access attempts, blocking threats before they reach the neural interface's processing core. The firewall includes anti-intrusion countermeasures that can trace and counterattack hostile connections, and a panic-disconnect that physically severs the neural interface from all external connections in an emergency.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted — personal security device",
+  "base_technologies": [],
+  "specifications": {
+    "monitoring": "All data in/out of neural interface",
+    "threat detection": "Known signatures + behavioral analysis",
+    "response time": "Sub-microsecond packet filtering",
+    "countermeasure": "Active trace and counterattack capability",
+    "panic disconnect": "Physical circuit breaker",
+    "info": "manual activation",
+    "weight": "0.02 kg",
+    "installation": "Inline with neural interface external port",
+    "power": "Parasitic from neural interface",
+    "update frequency": "Daily threat signature updates"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A NIF-3's counterattack capability traced a hostile intrusion attempt back to its source — the attack originated from inside the user's own employer's network, revealing internal surveillance of augmented employees.",
+    "A firmware update to the NIF-3 introduced a vulnerability that it was supposed to protect against — the update came from Axiom's official channels, raising questions about whether the company is deliberately weakening its own security products."
+  ],
+  "tags": [
+    "electronicwarfare",
+    "equipment",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "surveillance",
+    "rain",
+    "fire",
+    "tier 2"
+  ]
+}

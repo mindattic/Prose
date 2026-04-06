@@ -1,0 +1,68 @@
+{
+  "id": "019d6143a8507064807221aa4b4f56e0",
+  "name": "Arcturus Defense Solutions Laminar Shadow Bike",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Laminar Shadow Bike",
+  "type": "equipment",
+  "aliases": [
+    "Shadow Blade",
+    "ADS Slick",
+    "The Ghost Cycle"
+  ],
+  "category": "vehicle",
+  "description": "The Laminar Shadow Bike is a single-rider pursuit and infiltration motorcycle engineered by Arcturus Defense Solutions for rapid urban movement with minimal sensor footprint. Its frame is constructed from radar-absorbent composite laminate — a layered material that scatters both active sonar and millimeter-wave scanning — while the electric drive system runs through a vibration-damped motor housing that reduces acoustic signature to near-ambient levels at speeds below 80 km/h. The bike rides on self-sealing smart-rubber tires embedded with pressure-sensitive grip nodes that modulate traction in real time based on surface feedback.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Radar-Absorbent Composite Laminate",
+    "Vibration-Damped Silent Electric Drive",
+    "Laminar Flow Active Cowling",
+    "Smart-Rubber Adaptive Traction Tires",
+    "Integrated Short-Range ECM Pod"
+  ],
+  "specifications": {
+    "length": "2.1 meters",
+    "weight": "187 kg",
+    "top_speed": "240 km/h",
+    "range": "420 km (single charge)",
+    "acoustic_signature": "Near-ambient below 80 km/h",
+    "operator_capacity": "1 rider",
+    "power_source": "High-density lithium-ceramic battery stack",
+    "ECM_range": "15-meter transponder suppression bubble"
+  },
+  "tactical_use": "The Shadow Bike is purpose-built for infiltration runs, extraction operations, and counter-surveillance work. Operators use it to approach targets quietly, slip through automated traffic checkpoints, and execute rapid withdrawal after operations without triggering pursuit algorithms. The ECM pod is particularly valued in districts where Tessera Corponation traffic mesh systems are active — it creates a brief but reliable blind spot. Skilled riders have learned to use the Laminar Flow Cowling's micro-actuator adjustments as a subtle handling aid, allowing tight cornering at speeds that would ordinarily destabilize the chassis.",
+  "cultural_context": "Within Arcturus Defense Solutions' contractor ecosystem, the Shadow Bike is a status marker — it is issued only to Tier 3 field operatives and above, and being seen dismounting one in certain circles communicates professional standing without words. On the black market, stolen Shadow Bikes command extraordinary prices, and a thriving underground trade in Arcturus-sourced parts has emerged. Street racers covet the bike's performance profile, though the restricted legality means riding one openly in civilian zones is an invitation for serious scrutiny from enforcement.",
+  "known_users": [
+    "Arcturus Defense Solutions field operatives",
+    "Corporate extraction specialists",
+    "High-end freelance infiltrators",
+    "Black market parts traders",
+    "Underground racing circuit elites"
+  ],
+  "story_hooks": [
+    "An Arcturus field operative's Shadow Bike was found abandoned and still running in a mid-district alley — the rider has vanished, and the ECM pod is broadcasting a distress signal on a frequency only Arcturus should know.",
+    "A black market dealer is offering three Shadow Bikes with their serial numbers scrubbed, but the buyer suspects they were stolen from an active Arcturus operation rather than a depot — which means Arcturus is already looking.",
+    "A street racer has been winning every underground circuit event for months on a Shadow Bike, and someone very corporate wants to know how she got it and what else she might know.",
+    "The crew is tasked with delivering a Shadow Bike to a contact — but during transport, the onboard ECM pod activates and starts suppressing comms in a widening radius, as if someone remotely triggered it."
+  ],
+  "tags": [
+    "vehicle",
+    "equipment",
+    "blade",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "alley",
+    "market",
+    "rain",
+    "shadow",
+    "night",
+    "motorcycle",
+    "stealth",
+    "circuit",
+    "tier 3"
+  ]
+}

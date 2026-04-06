@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab2e75c68a43a90d1d75bcc5",
+  "name": "Hepatic Vapor Pressure Burst Charge",
+  "type": "weapon",
+  "aliases": [
+    "HVPBC-2",
+    "Liver Shot",
+    "The Silent Rupture",
+    "Yellow Charge"
+  ],
+  "category": "explosive",
+  "description": "The Hepatic Vapor Pressure Burst Charge is a contact explosive designed for placement on surfaces where targets are expected to rest, lean, or brace — vehicle seats, chair backs, wall panels, floor tiles. Its detonation sequence uses a ferroelectric compression initiator to generate a precisely shaped pressure wave tuned to maximize coupling with hepatic parenchymal tissue. The charge delivers its energy selectively to the liver's vascular architecture, triggering rapid vapor pressure buildup within sinusoidal spaces and causing catastrophic hepatic rupture with minimal blast damage to surrounding tissue or material.\n\nThe engineering basis for the HVPBC-2 emerged from IRONCLAD AGRISYSTEMS' agricultural research into livestock processing optimization — specifically, non-destructive pressure techniques for organ evaluation. The weaponized application was developed under a separate classified contract, though the technical lineage is visible to anyone who examines the ferroelectric compression profile. The charge is approximately the size of a playing card and 4mm thick, making it concealable within standard furnishings with no detectable profile under most security sweeps.\n\nTargets struck by the HVPBC-2 experience an immediate sensation described by survivors as 'a punch from inside' followed by progressive right upper quadrant pain and rapid hemodynamic collapse. Because the external blast signature is minimal — a sharp crack audible only within a few meters — the HVPBC-2 is the weapon of choice for assassinations where the cause of death must appear medical. Coroners unfamiliar with the charge's signature frequently log cause of death as spontaneous hepatic hemorrhage.",
+  "manufacturer": "IRONCLAD AGRISYSTEMS",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Ferroelectric compression initiation",
+    "Hepatic sinusoidal vapor pressure induction",
+    "Shaped tissue-selective pressure wave delivery"
+  ],
+  "specifications": "form factor: Flat adhesive charge, 85mm x 54mm x 4mm (playing card profile)\nweight: 38g\ntrigger modes: Pressure contact, remote signal, timer (1s–72h)\neffective range: Direct contact to 120mm through intervening material\nblast signature: Minimal — audible crack at under 3m, no structural damage\nprimary effect: Hepatic parenchymal rupture, sinusoidal vapor pressure cascade\ntime to incapacitation: 8–45 seconds depending on proximity\nforensic signature: Mimics spontaneous hepatic hemorrhage in standard autopsy without specialized testing",
+  "tactical_use": "Assassination contractors plant HVPBC-2 units in target environments hours or days before the operation, using the timer or pressure-contact trigger to ensure distance at time of detonation. They are embedded in vehicle seats, office chairs, mattresses, and floor panels along known movement routes. Corporate intelligence operatives use them for eliminating targets whose deaths must appear natural. The weapon's low forensic signature makes it particularly valuable in operations where investigation is anticipated.",
+  "cultural_context": "The HVPBC-2 has created a specific paranoia culture among Meridian 88's corporate executive class — the 'chair sweep' has become a standard security ritual, and a small industry of HVPBC-2 detection consultants has emerged to service wealthy clients. The irony that the weapon originated in agricultural research is not lost on activists who use it as a case study in dual-use technology corruption. IRONCLAD AGRISYSTEMS has never been prosecuted, and their agricultural division continues to operate the underlying ferroelectric research openly.",
+  "known_users": [
+    "Corporate assassination contractors",
+    "Intelligence operatives requiring medically deniable eliminations",
+    "Organized crime enforcement targeting rival leadership",
+    "Rogue IRONCLAD AGRISYSTEMS insiders with prototype access"
+  ],
+  "story_hooks": [
+    "A series of 'natural' executive deaths across competing corporations all share the hepatic rupture signature — someone is running a systematic elimination campaign.",
+    "A player character's chair is swept and a live HVPBC-2 is found — it was planted recently, meaning someone has access to their secure space.",
+    "An IRONCLAD AGRISYSTEMS researcher wants to defect and bring documentation linking the company's agricultural research directly to HVPBC-2 development.",
+    "A batch of HVPBC-2s with defective pressure triggers is circulating — they detonate on placement rather than on contact, killing the operators planting them."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "crime",
+    "death",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "contract",
+    "wealth",
+    "medical",
+    "pain",
+    "market",
+    "vehicle",
+    "energy"
+  ]
+}

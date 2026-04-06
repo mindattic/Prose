@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a5847c15840190e40123b247",
+  "name": "Penny Pincher",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Counts every credit, every bullet, every calorie",
+  "behavioral_signature": "Rations obsessively, wastes nothing",
+  "under_stress": "Rations become starvation level",
+  "at_rest": "Tracking expenses, finding savings",
+  "will_always": [
+    "minimize waste"
+  ],
+  "will_never": [
+    "spend freely on comfort"
+  ],
+  "unless": [
+    "someone needs medicine that costs too much"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Miser",
+      "threshold": 0.9,
+      "context": "frugality"
+    },
+    {
+      "archetype": "Hoarder",
+      "threshold": 0.7,
+      "context": "conservation"
+    }
+  ],
+  "opposite_of": [
+    "Generous Fool",
+    "Gambler"
+  ],
+  "tags": [
+    "frugal",
+    "precise"
+  ]
+}

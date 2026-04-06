@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab607f99b7fa2426bce43726",
+  "name": "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+  "type": "weapon",
+  "aliases": [
+    "Tremor",
+    "SM-8",
+    "Mini Mortar",
+    "The Shaker"
+  ],
+  "category": "explosive",
+  "description": "A man-portable smart mortar system that fires programmable munitions to a maximum range of 800 meters with GPS-guided precision. The SM-8 weighs 12 kg fully loaded and can be set up and fired by a single operator in under 30 seconds. Each round carries a modular warhead that can be configured before loading — high explosive, smoke, illumination, or Zheng-Dao's signature seismic charge that buries itself 2 meters into the ground before detonating, creating a localized earthquake effect that collapses underground structures and disrupts foundations.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Military restricted — active combat authorization only",
+  "base_technologies": [
+    "Programmable modular warhead architecture",
+    "GPS-guided mortar precision",
+    "Seismic detonation charge engineering"
+  ],
+  "specifications": "caliber: 60mm programmable munition\nmaximum range: 800 meters\nminimum range: 50 meters\nwarhead options: HE, smoke, illumination, seismic\nmagazine: 4 rounds in autoloader\nweight: 12 kg total system\nsetup time: 25 seconds to first round\nguidance: GPS with inertial backup",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Seismic mortar rounds have been used to collapse tunnel networks under a disputed territory — but the tunnels contained a refugee community that nobody knew about.",
+    "A single SM-8 system has gone missing from a Zheng-Dao armory and the serial numbers on mortar impacts across three incidents all match the same launcher."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "explosive",
+    "combat",
+    "war",
+    "ai",
+    "elf",
+    "tunnel",
+    "refugee",
+    "armor",
+    "fire",
+    "tier 5"
+  ]
+}

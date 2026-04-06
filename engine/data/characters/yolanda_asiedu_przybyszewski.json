@@ -1,0 +1,223 @@
+{
+  "id": "019d6143a72b75f1888a56216d55a8a6",
+  "type": "character",
+  "name": "Yolanda Asiedu-Przybyszewski",
+  "aliases": [
+    "Yoli",
+    "Bone-Setter"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street doc and unlicensed trauma surgeon",
+  "age": 47,
+  "status": "active",
+  "location": "The Narrows, operating out of a converted laundry unit behind Grainfort Market",
+  "description": "Yolanda is a broad-shouldered woman with deep brown skin mapped by decades of chemical burns and old suture scars on her forearms — souvenirs of other people's emergencies. Her hair is grown out in thick silver-streaked locs that she ties back with surgical tubing when she works. Her left eye is a cheap medical-grade optical implant that glows faint amber in low light, the iris never quite tracking in sync with her natural right eye. She moves with the deliberate economy of someone who has spent years working in cramped spaces, never wasting motion.\n\nShe is blunt to the point of rudeness but has a laugh that fills a room when something genuinely amuses her. She charges what people can pay, keeps a sliding scale scratched on a laminated card in her coat pocket, and has been known to operate on kitchen tables, in transit cars, and once in the cargo hold of a Ferrogate freight hauler. She prays to the E.L.F. of her autoclave — a small copper idol bolted to its side — before every difficult procedure, muttering calibration codes she treats as liturgy.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Losing her hands to nerve damage before she finishes her work",
+      "That the people she saves will die of the system rather than the wound"
+    ],
+    "core_desires": [
+      "A sterile operating theater she actually owns",
+      "To train someone good enough to replace her"
+    ],
+    "coping_mechanisms": [
+      "Ritualized prayer to the autoclave E.L.F.",
+      "Gallows humor during procedures",
+      "Obsessive instrument counting"
+    ],
+    "blind_spots": [
+      "Dismisses patients' emotional needs as secondary to physical stabilization",
+      "Underestimates how much her own body is breaking down"
+    ],
+    "secret": "She was licensed once — a fully credentialed Helix Biosystems surgical resident. She was struck off after she performed an unauthorized procedure on a corporate blacklist patient who would have died otherwise. She has never told anyone in the Narrows this. She performs better unlicensed than most licensed surgeons, and the shame of the credential matters less than the fury at what losing it meant."
+  },
+  "speech_patterns": {
+    "vocabulary": "Medical precision mixed with market-Creole slang; swaps between registers seamlessly depending on whether she's explaining or commanding",
+    "cadence": "Clipped and fast during work, slower and surprisingly gentle when breaking bad news",
+    "verbal_tics": [
+      "'Hold still' even when no one is moving",
+      "'That's the easy part' before the hard part"
+    ],
+    "example_lines": [
+      "'I don't need your insurance number, I need your blood type and whatever you can spare — this is the easy part.'",
+      "'The E.L.F. in this autoclave has kept me honest for eleven years. You want to question my sterile field, you can go argue with it yourself.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Helix Biosystems compliance officer has started nosing around Grainfort asking about unlicensed medical activity — Yolanda needs warning, or leverage, or both",
+    "She's trying to acquire a specific gene-therapy stabilizer that only comes through corporate supply chains, and she needs a discreet intermediary"
+  ],
+  "narrative_function": "Primary street-level medical resource for the Narrows; quest giver for supply runs, information source on who's been hurt and how, moral anchor for stories about structural healthcare failure",
+  "augmentations": "Left eye optical implant (amber, budget-tier, mild desync); subdermal haptic feedback nodes in fingertips for surgical sensitivity; no geneware",
+  "daily_life": "Opens the laundry-clinic at 0600, sees patients until supplies or daylight run out, restocks by trading services with Deepwell Station's pharmacist contact on alternating Tuesdays.",
+  "affiliation": "Independent; loose cooperative arrangement with the Grainfort Community Health Compact",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 4,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street_doc",
+      "trauma_specialist",
+      "community_anchor",
+      "lapsed_credential",
+      "pragmatic_idealist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Triage by severity, never by ability to pay",
+      "Never operate drunk, never operate angry",
+      "Don't ask where the wound came from until after it's closed"
+    ],
+    "escalation_ladder": [
+      "Polite but firm explanation of limits",
+      "Raised voice and explicit boundary-setting",
+      "Physical removal with assistance from regular patients who serve as informal security"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and clinical; warm only once she decides they're not a threat or a liability",
+      "friends": "Fiercely loyal, prone to feeding people, reluctant to admit she needs anything"
+    },
+    "stress_responses": {
+      "low": "Hums tunelessly and talks to her instruments",
+      "medium": "Goes silent, jaw tight, moves faster",
+      "high": "Prays aloud to the autoclave E.L.F. in a low rapid monotone while her hands stay completely steady"
+    },
+    "contradictions": [
+      "Presents as purely pragmatic but makes deeply emotional decisions about who deserves her time"
+    ],
+    "habits": [
+      "Counts instruments before and after every procedure out loud",
+      "Keeps a running tally of successful outcomes on the inside of her coat lapel in marker",
+      "Reuses surgical tubing as hair ties"
+    ],
+    "breaking_points": [
+      "Watching a preventable death caused by someone else's negligence or greed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Judge": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Chatham Flats to a Ghanaian-Polish family, fourth of six children",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed Helix Biosystems surgical residency, licensed as trauma surgeon",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Struck off after unauthorized procedure on a corporate blacklist patient",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established street clinic in Grainfort Market laundry unit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

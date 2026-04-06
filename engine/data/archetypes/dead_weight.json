@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a568751ab9f4796834279ab3",
+  "name": "Dead Weight",
+  "type": "archetype",
+  "category": "survival",
+  "description": "More burden than asset to any group",
+  "behavioral_signature": "Slows progress, consumes resources, contributes nothing",
+  "under_stress": "Becomes heavier, more demanding",
+  "at_rest": "Unaware of or indifferent to their drag on others",
+  "will_always": [
+    "need help"
+  ],
+  "will_never": [
+    "help themselves when they could"
+  ],
+  "unless": [
+    "the group is about to cut them loose and survival instinct kicks in"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Freeloader",
+      "threshold": 0.75,
+      "context": "burden"
+    },
+    {
+      "archetype": "Parasite",
+      "threshold": 0.7,
+      "context": "drain"
+    }
+  ],
+  "opposite_of": [
+    "Provider",
+    "Lifeline"
+  ],
+  "tags": [
+    "burden",
+    "helpless"
+  ]
+}

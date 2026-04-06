@@ -1,0 +1,38 @@
+{
+  "id": "019d6143aa757f38a7df378a2eb45dc3",
+  "name": "Underworld Fungal Raft",
+  "type": "transportation",
+  "aliases": [
+    "Mushroom Boat",
+    "Spore Float",
+    "The Growth"
+  ],
+  "category": "underground",
+  "manufacturer": "Grown — Underworld bioengineering",
+  "description": "In the deepest levels of the Underworld, where the water runs warm and bioluminescent fungi grow in sheets, some communities have cultivated massive fungal mats into living rafts. The fungal material is buoyant, self-repairing, and slowly grows in response to the rider's weight distribution — forming seats, rails, and cargo shelves over time. The rafts are alive. They respond to the water currents in ways that suggest awareness, drifting toward warmth and away from certain tunnels. The deep Underworld communities who use them say the rafts know the way. They say this without irony.",
+  "propulsion": "Water current, rider paddling, fungal response to thermal gradients",
+  "speed": "3-8 km/h depending on current",
+  "capacity": "2-4 passengers + light cargo",
+  "range": "Current-dependent. Some rafts have been in continuous use for years.",
+  "tier_availability": "Deep Underworld only",
+  "cost": "Cultivated, not purchased. Growing one takes months.",
+  "autonomy": "Semi-autonomous — the raft navigates thermal gradients independently",
+  "armament": "None. The bioluminescence can be suppressed for stealth.",
+  "common_usage": "Deep Underworld transit, navigating flooded tunnels, reaching communities beyond the deep rail, communion with whatever lives down there.",
+  "story_hooks": [
+    "A fungal raft carries a rider to a location they didn't choose — somewhere the raft wanted to go, and what they find there changes everything",
+    "The fungal rafts are all connected through the underground water system — a network of living vessels that share information through chemical signals"
+  ],
+  "tags": [
+    "underground",
+    "transportation",
+    "war",
+    "ai",
+    "elf",
+    "underworld",
+    "tunnel",
+    "chase",
+    "stealth",
+    "water"
+  ]
+}

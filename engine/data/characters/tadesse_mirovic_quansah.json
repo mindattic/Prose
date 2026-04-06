@@ -1,0 +1,215 @@
+{
+  "id": "019d6143a6e772b1914f4e8722cf8a7c",
+  "type": "character",
+  "name": "Tadesse Mirović-Quansah",
+  "aliases": [
+    "Tad",
+    "Tapeworm"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant and scrap reseller with a sideline in bootleg media and low-grade fake ID components",
+  "age": 24,
+  "status": "active",
+  "location": "The Shelf, Stall 14-B, Ironvein",
+  "description": "Tadesse is short and wiry with the restless energy of someone who has never fully slept — his dark eyes are always moving, cataloguing, pricing. He has a narrow face, chipped front tooth, and a bioluminescent geneware mod that makes the veins along his temples and forearms glow faint blue-green when his heart rate rises, which is frequently. He wears it like a tell in a card game and has learned to lean into it: people assume he is nervous when he is actually just excited, and that miscalculation has served him well. His stall is an organized chaos that only he can navigate — stacked crates of salvaged tech components, mismatched cables, cracked data wafers, three broken cleaning drones he keeps meaning to repair, and a small shrine to the ELF he calls Pickup, which inhabits a battered scanner unit he uses for component identification.\n\nHe is twenty-four and operates with the confidence of someone who has survived entirely on cleverness and the ability to find value in things others discard. He is funny in a fast, deflecting way that keeps people from asking questions, and generous with his time in ways that make him seem like a friend before you realize you have agreed to something. He grew up in the Stockyard, knows The Shelf like cartography, and has ambitions he rarely admits — he wants, genuinely, to own a real shop someday, with walls.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.8,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "ending up like his father, who died working salvage at the Ironvein foundry at fifty-one",
+      "being genuinely liked and then abandoned"
+    ],
+    "core_desires": [
+      "financial security and a permanent shop space",
+      "one person who knows who he actually is and stays anyway"
+    ],
+    "coping_mechanisms": [
+      "humor as deflection",
+      "keeping busy to the point of exhaustion",
+      "accumulating objects as a substitute for stability"
+    ],
+    "blind_spots": [
+      "genuinely cannot tell when someone is using him versus liking him",
+      "takes on too many small risks because individually they feel manageable"
+    ],
+    "secret": "The fake ID component sideline is more serious than he lets on — he has been supplying components to the Librarian that have ended up in documents used by people evading Axiom labor contracts. He doesn't know the full downstream, and he is starting to want to know less."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and colloquial; slang-heavy; tech jargon mixed with street vernacular; uses humor to change subjects",
+    "cadence": "Quick, overlapping ideas; finishes thoughts mid-sentence sometimes and jumps to the next",
+    "verbal_tics": [
+      "'Honestly, though'",
+      "'That's a—look, okay'",
+      "laughs before delivering bad news"
+    ],
+    "example_lines": [
+      "'Honestly though, that scanner module you're holding? That is a Tessera SV-7, which is technically discontinued, which means I am doing you a favor charging what I'm charging.'",
+      "'I don't know anything about documents. I sell components. What you build is your business. That's — that's just commerce.'",
+      "'Pickup says it's clean. I trust Pickup. Pickup has never lied to me, which is more than I can say for most people.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has come into possession of a data wafer that appears to contain encrypted corporate documents — he cannot read them but someone tried to buy it from him very insistently and then followed him home",
+    "The Librarian has gone silent and Tadesse has a delivery of ID components with nowhere to send them — and someone upstream is going to come looking",
+    "A Guild senior is pressuring him to give up his stall space for a better-connected vendor; Tadesse needs leverage or allies fast"
+  ],
+  "narrative_function": "Low-tier information and equipment source; can find or identify almost any piece of salvaged tech; fake ID components make him useful for players who need documents; his wide social net makes him a connector to other vendors and local characters.",
+  "augmentations": "Bioluminescent vein geneware (temple and forearms, blue-green). No cyberware.",
+  "daily_life": "Opens the stall by 9am, spends most of the day haggling, sourcing, and tinkering; stays two hours after the market officially closes doing inventory and running bootleg media duplication on a rig hidden in a false-bottom crate.",
+  "affiliation": "The Oxidian Market Vendors Guild (junior associate); informal arrangement with a document forger named someone he calls 'the Librarian'",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "scrapper",
+      "bootlegger",
+      "connector",
+      "bioluminescent geneware",
+      "ELF devotee",
+      "ambition hidden under humor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell something you can't replace",
+      "Always know two exits from any space",
+      "If someone makes you nervous, make them laugh — it changes the dynamic"
+    ],
+    "escalation_ladder": [
+      "Cheerful and pitching to all comers",
+      "Jokey deflection when a situation feels off",
+      "Goes quiet and starts calculating exits if actually threatened",
+      "Will run rather than fight; not proud about it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and performatively open — a sales persona he has worn so long it's partly real",
+      "friends": "Still deflects with humor but shows up; the kind of friend who fixes your broken things without being asked"
+    },
+    "stress_responses": {
+      "low": "Talks faster",
+      "medium": "Bioluminescent veins brighten noticeably; he makes a joke about it to redirect",
+      "high": "Goes quiet and still, which is so out of character it alarms people who know him"
+    },
+    "contradictions": [
+      "Wants permanence and stability but takes risks that undermine both",
+      "Presents as someone without sentimentality but has kept every object that belonged to his father"
+    ],
+    "habits": [
+      "Taps the Pickup scanner twice before any identification job",
+      "Reorganizes the stall when anxious — it looks chaotic but the system is real",
+      "Eats street food exclusively; has never cooked a meal in his adult life"
+    ],
+    "breaking_points": [
+      "Finding out the Librarian's documents got someone hurt",
+      "The stall being physically destroyed or confiscated"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Hustler": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in The Stockyard to a salvage family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Father died of occupational lung damage contracted at Ironvein",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Purchased bioluminescent geneware on installment; first major purchase",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Secured stall 14-B at The Shelf through Guild junior associate arrangement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began ID component supply line to the Librarian",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

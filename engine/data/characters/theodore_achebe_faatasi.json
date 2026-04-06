@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a6f9761082a5cc342d015b57",
+  "type": "character",
+  "name": "Théodore Achebe-Faatasi",
+  "aliases": [
+    "Theo",
+    "Ghostprint"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Underground press operator and anti-corporate agitator",
+  "age": 27,
+  "status": "active",
+  "location": "The Shelf, operating a mobile print node out of a converted food-stall chassis",
+  "description": "Théodore is wiry and perpetually in motion, with warm terracotta skin, loose natural curls he dyes in rotating colors — currently a deep arterial red — and bioluminescent tattoos along his collarbones that pulse faintly blue when his heart rate rises (an unlicensed geneware side effect he never had properly stabilized). He is almost always seen wearing multiple layers of breathable mesh, pockets stuffed with data chips, print cartridges, and folded broadsheets still warm from the press. His eyes are quick and rarely meet anyone's gaze for long — not from shyness, but from constant peripheral threat assessment.\n\nThéo runs Ghostprint, a one-person underground broadsheet that covers what no licensed outlet will: corporate safety violations, enclave demolition orders, disappeared activists, synthetic-person abuse by Axiom security contractors. He writes fast and loose and brilliant, trading some accuracy for urgency, a habit that has landed him in trouble more than once. He believes — genuinely, almost religiously — that information is the only weapon that cannot be confiscated if you distribute it fast enough.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "being disappeared — detained without record, the way his sources sometimes are",
+      "publishing something wrong and having it weaponized against the people he's trying to protect"
+    ],
+    "core_desires": [
+      "a single story that is so airtight, so viral, so undeniable that a corponation actually faces accountability",
+      "to build Ghostprint into something that survives him"
+    ],
+    "coping_mechanisms": [
+      "gallows humor and rapid topic changes when genuinely frightened",
+      "obsessive fact-checking rituals when he has time; reckless speed when he doesn't"
+    ],
+    "blind_spots": [
+      "romanticizes his own martyrdom risk in ways that make him careless with his own safety",
+      "has difficulty distinguishing between sources who trust him and sources who are using him"
+    ],
+    "secret": "Three months ago he received a data package from an anonymous Axiom insider containing evidence of a systematic illegal organ harvesting operation in Tier 1 zones. He hasn't published it because he cannot verify it — and because he's terrified it's a plant designed to discredit him. He's been sitting on it, and the weight is eating him alive."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rapid-fire, journalistic shorthand mixed with Shelf street slang and occasional formal French phrases inherited from his grandparents; loves compound sentences that go one clause too far",
+    "cadence": "Fast, enthusiastic, tends to talk over his own pauses — he edits in real time as he speaks",
+    "verbal_tics": [
+      "'Off the record or on?'",
+      "'Wait, say that again slower'",
+      "exhaling sharply through his nose when he hears something he doesn't believe"
+    ],
+    "example_lines": [
+      "'Axiom doesn't want you afraid of them. Fear makes people talk. They want you bored. Boredom makes people stop looking.'",
+      "'I've been wrong before. I'll be wrong again. But I've never lied, and there's a difference — though I understand if you don't see it yet.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches the players needing independent verification of the Axiom organ harvesting data — people who can move in spaces he can't without being flagged.",
+    "Ghostprint's encrypted distribution network has been compromised; someone is feeding Axiom the locations of his relay nodes one by one, and he needs to find the leak before the next drop."
+  ],
+  "narrative_function": "Information source and potential investigative ally; his archives contain explosive material that factions across the city would pay or threaten to access; represents the free press as a fragile, human-powered institution; can serve as a quest giver when a story requires legs he doesn't have.",
+  "augmentations": "Unstabilized bioluminescent tattoo geneware (collarbones, pulses blue under stress); basic neural text buffer implant for rapid transcription — cheap model, causes mild headaches after sustained use; no other chrome",
+  "daily_life": "Moves his print chassis to a new Shelf location every two to three days; spends mornings gathering tips and conducting brief street interviews, afternoons writing and typesetting, evenings distributing physical copies and pushing encrypted digital versions to darknet nodes.",
+  "affiliation": "Ghostprint Independent Press (self-operated); informal ties to the Shelf Residents' Assembly; receives tips from contacts across five zones",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "free press",
+      "information broker",
+      "urban survivor",
+      "idealist with edges",
+      "chronic insomniac"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Publish if you can verify it; if you can't, keep digging — but if people are dying, you publish what you have and note the uncertainty",
+      "Never give up a source, not for anything",
+      "Move the press before they can find it — information distributed is information free"
+    ],
+    "escalation_ladder": [
+      "Asks probing questions from a position of apparent casualness",
+      "Openly identifies himself as press and requests comment",
+      "Publishes what he has with a 'no comment' noted",
+      "Goes to allied networks and broadens the story",
+      "Relocates and goes dark until the heat passes"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and immediately curious — asks questions before giving any personal information, but does so in a way that feels like genuine interest rather than interrogation",
+      "friends": "Chaotic and generous; shows up unannounced with food and a story idea; catastrophically bad at asking for help when he needs it"
+    },
+    "stress_responses": {
+      "low": "Talks faster, makes more jokes",
+      "medium": "Goes very quiet and still, staring at middle distance while processing",
+      "high": "Moves — physically packs up and starts relocating, working hands calming his mind"
+    },
+    "contradictions": [
+      "Publishes under a pseudonym to protect himself but signs his editorials with increasing personal flourishes that make him identifiable",
+      "Believes in collective action but operates almost entirely alone"
+    ],
+    "habits": [
+      "Prints a physical copy of everything important — 'you can't remote-wipe paper'",
+      "Leaves small data chip offerings at E.L.F. shrines before major publications, asking for clear signal",
+      "Reads competitors' work aloud to himself to find the gaps"
+    ],
+    "breaking_points": [
+      "A source being harmed as a direct result of something he published",
+      "Being forced to destroy his archive to protect someone — losing the record"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional, causes headaches after 4+ hours continuous use",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "cosmetic but unreliable — activates involuntarily under stress",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Arsonist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Shelf to a logistics worker and a street medic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins writing for a licensed community news node; fired at 19 for publishing an uncleared story about Tessera waste dumping",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Launches Ghostprint from a salvaged print chassis with borrowed starter funds",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ghostprint's exposé on Sterling-Nakamura labor violations shared across six zones; Théo briefly detained and released",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Receives the anonymous Axiom data package; begins months of paralyzed deliberation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

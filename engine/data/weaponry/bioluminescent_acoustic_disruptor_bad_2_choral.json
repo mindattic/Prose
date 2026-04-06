@@ -1,0 +1,57 @@
+{
+  "id": "019d6143ab19787aae043c00c41c07b5",
+  "name": "Bioluminescent Acoustic Disruptor BAD-2 'Choral'",
+  "type": "weapon",
+  "aliases": [
+    "The Singer",
+    "Hymn Gun",
+    "Choirbox"
+  ],
+  "category": "exotic",
+  "description": "The BAD-2 'Choral' is a shoulder-mounted acoustic weapon that generates precisely tuned resonant frequencies through a series of bioluminescent fluid chambers derived from deep-sea cephalopod tissue cultures maintained under pressure within the weapon's central column. When triggered, the fluid chambers vibrate at cascading harmonic intervals, producing a layered acoustic beam that penetrates most soft body armor by exploiting the natural resonant frequencies of human bone and fluid-filled cavities. The weapon's distinctive blue-green glow pulses rhythmically during operation, a byproduct of the bioluminescent reaction that stabilizes the fluid medium between firing cycles.\n\nWhat distinguishes the 'Choral' from conventional acoustic weapons is its dual-mode operation. In its primary 'Cantata' mode, the weapon delivers a sustained directional beam capable of inducing progressive disorientation, nausea, and structural micro-fractures in bone tissue at ranges up to forty meters. Its secondary 'Fugue' mode releases a short omnidirectional pulse that overwhelms auditory processing in all targets within a twelve-meter radius, causing temporary neural cascade feedback that mimics the sensation of drowning. Operators describe the effect on victims as 'watching someone forget how to be a body.'\n\nHelix Biosystems engineered the living fluid chambers to self-replenish through a nutrient cartridge system, meaning the weapon never truly runs dry so long as the operator maintains the biological medium — a process that requires daily feeding and temperature regulation. This maintenance burden has made the 'Choral' beloved by dedicated specialists and loathed by everyone who has to share a safehouse with one.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Bioluminescent resonance stabilization",
+    "Harmonic bone-frequency targeting",
+    "Living fluid acoustic amplification"
+  ],
+  "specifications": "weight: 6.8 kg (loaded, fluid chambers full)\nlength: 94 cm\nrange primary: 40 m directional beam\nrange secondary: 12 m omnidirectional pulse\npower source: Nutrient cartridge (72-hour cycle) + capacitor cell\nchamber fluid volume: 340 mL bioluminescent cephalopod-derived medium\nfire modes: Cantata (sustained beam), Fugue (omnidirectional pulse)\nrecharge cycle: 8 seconds between Fugue pulses\noperating temperature: 12–28°C (fluid viability range)\narmor penetration: Bypasses Class III soft armor; ineffective against rigid plate",
+  "tactical_use": "The 'Choral' is predominantly used in close-to-medium engagements where operators need to incapacitate multiple targets without lethal collateral damage to infrastructure. Fugue mode is favored for crowd suppression in enclosed corridors, while Cantata mode is used to systematically degrade a single hardened target's capacity to fight. Operators almost always work in pairs — one running the 'Choral' while a partner manages the biological cartridge and handles close threats, since the weapon's operator is effectively committed to a fixed firing stance during sustained beam discharge.",
+  "cultural_context": "The 'Choral' has developed a deeply unsettling reputation in Meridian 88's underground medical community, where it is associated with a cluster of long-term neurological conditions collectively called 'Song Sickness' — a suite of chronic tinnitus, balance disorders, and auditory hallucinations documented in survivors of repeated exposure. This has made the weapon a subject of quiet horror among street-level communities who have seen its aftermath. Paradoxically, certain fringe collectors prize the weapon as an art object, drawn to its eerie bioluminescent glow and the almost musical quality of its discharge. Helix Biosystems officially denies any ongoing production.",
+  "known_users": [
+    "Helix Biosystems black-site extraction teams",
+    "Meridian 88 deep-cover interrogators",
+    "Collectors and weapons aesthetes in the Palladian Quarter",
+    "Rogue biomedical operatives",
+    "Underground pit-fight enforcers (modified for lethality)"
+  ],
+  "story_hooks": [
+    "A 'Choral' has gone missing from a Helix Biosystems research transport — along with the only technician who knew how to keep its fluid chambers alive past 96 hours.",
+    "A neighborhood in the Rust Margin is reporting a mass outbreak of Song Sickness symptoms, but no weapon discharge has been recorded. Someone is using a 'Choral' in a mode that doesn't appear in any known manual.",
+    "An underground musician has reverse-engineered the 'Choral's' fluid resonance into a performance instrument. Her concerts are drawing crowds — and corporate assassins.",
+    "The player characters are hired to retrieve a 'Choral' from a collector's estate, only to discover the weapon's biological medium has been contaminated with something that shouldn't be alive."
+  ],
+  "ammunition_type": [
+    "Nutrient Cartridge Biological Sustenance Pack BSP-72",
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "love",
+    "neural",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "power",
+    "medical",
+    "armor",
+    "energy",
+    "fire",
+    "tier 4"
+  ]
+}

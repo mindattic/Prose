@@ -1,0 +1,38 @@
+{
+  "id": "019d6143ab597d709b740924fb5389f4",
+  "name": "Vespid Dynamics Corrosive Launcher CL-3 'Acid Reign'",
+  "type": "weapon",
+  "aliases": [
+    "Acid Reign",
+    "CL-3",
+    "Spit Launcher",
+    "The Melter"
+  ],
+  "category": "chemical",
+  "description": "A grenade-launcher-format weapon that fires encapsulated payloads of binary corrosive compound. Each round contains two separated chemical chambers that mix upon impact, creating a highly exothermic acid reaction that dissolves most metals, polymers, and organic materials within a 2-meter splash radius. The binary design means the individual components are relatively safe to handle and store — the danger only manifests on impact mixing. Vespid developed it for rapid structural demolition, but its anti-vehicle and anti-personnel applications have dominated field use.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited — chemical weapon",
+  "base_technologies": [
+    "Binary corrosive compound engineering",
+    "Impact-activated chemical mixing",
+    "Encapsulated payload containment"
+  ],
+  "specifications": "launcher type: Break-action single shot\nround diameter: 40mm encapsulated binary\nsplash radius: 2 meters\ncorrosion rate: 3mm structural steel per minute\neffective range: 30-100 meters\nweight: 3.5 kg\nneutralization time: Compound becomes inert after 8 minutes",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A building's structural supports were pre-weakened with CL-3 acid rounds days before a scheduled demolition — someone ensured the building would collapse ahead of schedule, with people still inside.",
+    "A modified CL-3 round has been developed that produces a corrosive gas rather than liquid — turning it from a point weapon into an area denial tool."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "chemical",
+    "weapon",
+    "ai",
+    "vehicle",
+    "fire",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a86f70dd8d87d088450c0f20",
+  "name": "Street Custom 'Last Meal' Emergency Ration Fabricator",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Last Meal' Emergency Ration Fabricator",
+  "type": "equipment",
+  "aliases": [
+    "Last Meal",
+    "Food Maker",
+    "Ration Box",
+    "Survival Kitchen"
+  ],
+  "category": "survival",
+  "description": "A compact device that converts organic waste material — food scraps, plant matter, even paper — into edible nutrient bars through a process of sterilization, chemical breakdown, and reconstitution with added vitamins and binding agents. The Last Meal produces food that is nutritionally complete, bacterially safe, and texturally consistent regardless of input material. It does not taste good — operators describe the output as 'edible cardboard with a chemical aftertaste' — but it sustains life indefinitely from materials that would otherwise be garbage. The device has become essential equipment in Tier 1 where food security is not guaranteed.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — survival equipment",
+  "base_technologies": [],
+  "specifications": {
+    "input": "Any organic material — food waste",
+    "info": "plant matter; paper; approximately 400 calories per 100g input; kills all pathogens",
+    "output": "Nutrient bars",
+    "processing time": "20 minutes per batch",
+    "nutritional completeness": "Full with added vitamin supplement",
+    "sterilization": "UV + thermal",
+    "weight": "1.5 kg",
+    "battery": "20 batches per charge",
+    "taste": "Functionally terrible"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Last Meal fabricators have been distributed free in a Tier 1 district by an anonymous benefactor — the devices work perfectly, but the vitamin supplement capsules contain a tracking compound.",
+    "A modified Last Meal has been developed that produces nutrient bars with psychoactive compounds — the food itself is being used as a drug delivery mechanism in communities where people eat whatever is available."
+  ],
+  "tags": [
+    "survival",
+    "equipment",
+    "ai",
+    "elf",
+    "bar",
+    "food",
+    "drug",
+    "tier 1"
+  ]
+}

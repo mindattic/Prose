@@ -1,0 +1,97 @@
+{
+  "id": "019d6143a91f7402ba8d6b6fb4ca7b4c",
+  "type": "place",
+  "name": "Hydewood",
+  "aliases": [
+    "Hyde Park",
+    "The Ivory Circuit",
+    "The Campus",
+    "Hydewood Enclave"
+  ],
+  "description": "Hydewood is the last place in the southern corridor where knowledge is still treated as something other than a product — or at least, that's the story it tells itself. The University of Chicago survived the collapse the way old money always survives: by making itself indispensable to the people who came out on top. When the corponations carved up municipal territory, the University negotiated a unique status — a Tier 4 autonomous academic zone, self-governing within its campus boundaries, funded by a consortium of six corponations who discovered that basic research is cheaper to outsource than to staff. The result is a walled intellectual enclave in the middle of the South Side, where tenured researchers live in climate-controlled faculty housing and argue about neural interface ethics while the neighborhoods around them count their dead from infrastructure failure.\n\nThe campus itself is a strange time capsule. Gothic revival buildings — the original Cobb Hall, Rockefeller Chapel, the hulking mass of Harper Library — stand alongside corporate-funded research towers wrapped in adaptive glass that shifts opacity with the sun. The old Midway Plaisance, once an open green boulevard, is now a sealed atmospheric corridor connecting the campus to the Museum of Science and Industry, which Helix BioSystems converted into a corporate showcase and public-facing research exhibition. Students walk paths that Frederick Law Olmsted would still recognize, beneath trees maintained by university groundskeepers who are among the last people in the southern corridor with job security. The intellectual output is genuine and occasionally brilliant. The moral compromise required to produce it is the thing nobody discusses at faculty dinners.\n\nOutside the campus walls, Hydewood is a buffer zone — the neighborhood that exists to service the University without being part of it. Restaurants, housing for adjunct faculty and graduate students who can't afford campus quarters, repair shops for academic-grade neural interfaces, and a thriving market in secondhand research equipment that fell off the back of a university procurement order. The town-gown divide that existed in the original Hyde Park has been literalized: there is an actual wall, with actual gates, and your tier credential determines which side you wake up on. The cosmopolitan diversity that once defined the neighborhood survives in attenuated form — visiting scholars from global research institutions, displaced academics from collapsed universities, and a stubborn population of booksellers and café operators who insist on running analog businesses in a digital district.\n\nThe Museum of Science and Industry — now the Helix Discovery Center — sits at the eastern edge like a cathedral to corporate benevolence. Inside, interactive exhibits explain how neural interfaces will save humanity, how bioremediation will restore the planet, how the tier system ensures optimal resource allocation. School groups from Tier 2-3 districts are bused in for educational programming. The exhibits are polished, the science is real, and the omissions are surgical. What the museum doesn't mention could fill a library, and in Hydewood, some people are trying to build exactly that.",
+  "atmosphere": {
+    "sights": [
+      "Gothic spires of the original University buildings rising above modern research towers — stone and glass in uncomfortable partnership",
+      "The campus wall — elegant, vine-covered, and absolutely non-negotiable about who enters",
+      "Rockefeller Chapel's stained glass, still intact, lit from within during evening lectures",
+      "The Helix Discovery Center glowing at the district's eastern edge, its facade a single curved screen running educational content",
+      "Graduate students in augmented-reality study rigs, neural interfaces flickering, sitting in cafés that serve real coffee",
+      "Secondhand bookshops with actual paper volumes in the windows — a quiet defiance"
+    ],
+    "sounds": [
+      "Lecture audio bleeding through open campus windows — fragments of neuroscience, economics, philosophy",
+      "The chime of campus gate credentials being validated, a sound that sorts people",
+      "Café conversations in twelve languages, half of them academic jargon",
+      "Chapel bells — the University maintained them as a tradition, and the sound carries for blocks",
+      "The hum of research equipment running through the night in the corporate-funded towers"
+    ],
+    "smells": [
+      "Real coffee — Hydewood has three roasters and the aroma marks the district's borders better than any map",
+      "Old paper from the bookshops, a smell that is becoming extinct elsewhere",
+      "Ozone from high-end neural interface charging stations",
+      "The faintly antiseptic air inside the campus wall, filtered and controlled",
+      "Lake air from the eastern edge, carrying the metallic tang of the Helix Discovery Center's cooling systems"
+    ],
+    "feel": "Hydewood feels like a monastery that took corporate money to keep the lights on and is trying not to think about what that means. There is genuine brilliance here, genuine inquiry, genuine care about truth — and it all exists at the pleasure of six corponations who could pull funding tomorrow. The tension between intellectual freedom and financial dependence is the district's defining texture, and everyone who lives here has made their peace with it, or is pretending to.",
+    "tags": []
+  },
+  "demographics": "Approximately 30,000 residents. Campus population is Tier 4, predominantly academic professionals and researchers from global backgrounds. Off-campus population ranges from Tier 2-3, including adjuncts, service workers, graduate students, and a small but resilient community of independent intellectuals and booksellers.",
+  "economy": "University employment is the anchor. Off-campus economy runs on academic services, hospitality, and a gray market in research equipment and data. The Helix Discovery Center generates tourism revenue that flows to Helix, not the neighborhood.",
+  "power_structure": "The University of Chicago operates as an autonomous Tier 4 zone under consortium charter. Off-campus governance is nominal — technically Axiom jurisdiction, practically managed by university-adjacent neighborhood associations. Helix BioSystems controls the Discovery Center and surrounding blocks as sovereign corporate territory.",
+  "dangers": [
+    "Campus security treats unauthorized entry as corporate espionage — the response is disproportionate",
+    "Academic politics with corporate stakes — research disputes here have budgetary and sometimes physical consequences",
+    "The buffer zone between campus and surrounding districts is a jurisdiction gap where muggings and data theft are common",
+    "Helix monitors Discovery Center visitors and cross-references attendance with tier databases",
+    "Idealistic graduate students sometimes access research they shouldn't and need extraction before campus security finds them"
+  ],
+  "opportunities": [
+    "Academic researchers with ethical objections to their funders are a reliable source of leaked corporate data",
+    "The secondhand research equipment market is a goldmine for tech operators who know what they're looking at",
+    "The University library — one of the last comprehensive physical archives — contains pre-collapse records that have been digitally erased elsewhere",
+    "Visiting scholars from outside Meridian 88 bring external perspectives and external contacts",
+    "The Helix Discovery Center's back-end systems are connected to Helix's broader research network — a tempting attack surface"
+  ],
+  "story_hooks": [
+    "A tenured professor has discovered that one of the consortium's six funding corponations is using university research infrastructure to run classified military neural interface experiments. She needs the data verified and extracted before the next board meeting.",
+    "The University library's restricted collection contains the original municipal records from before the corporate sovereignty transition — records that could establish legal precedent for reclaiming public land. Someone has started systematically destroying them.",
+    "A graduate student has gone missing inside the campus wall, and campus security says she was never enrolled. Her roommate in the off-campus district has her research notes, which reference something called Protocol Minotaur."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Washburn Commons",
+      "The Woodline",
+      "South Shore Strand",
+      "Old Harbor"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Academics and researchers living inside the campus bubble",
+    "Graduate students and adjuncts navigating the gap between campus privilege and off-campus reality",
+    "Data brokers specializing in academic and research intelligence",
+    "Booksellers and café operators running the last analog businesses on the South Side",
+    "Helix corporate visitors touring the Discovery Center and never stepping off the guided path"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.802,
+    "lng": -87.587,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "theft",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "money",
+    "market",
+    "moral",
+    "ethics",
+    "circuit"
+  ]
+}

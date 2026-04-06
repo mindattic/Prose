@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -8,8 +9,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// political upheavals, and the events that shaped a world where citizens hire runners
 /// to solve problems the system won't.
 /// </summary>
-public class NewsData
+public class NewsData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("headline")] public string Headline { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "news";
     [JsonPropertyName("date")] public string Date { get; set; } = "";

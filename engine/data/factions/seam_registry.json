@@ -1,0 +1,103 @@
+{
+  "id": "019d6143a88a7f3faa02e3a156777028",
+  "type": "faction",
+  "name": "Seam Registry",
+  "aliases": [
+    "The Registry",
+    "Seamers",
+    "The Clerks"
+  ],
+  "motto": "The record is the resistance.",
+  "description": "Seam Registry did not begin as a hacker collective. It began as a mutual aid documentation project in 2178, when a cohort of Tier-3 and Tier-4 citizens in The Laceworks began maintaining handwritten ledgers of corponation service violations, illegal augmentation repossessions, and citizenship tier reclassifications — events that were technically illegal under Meridian 88's vestigial municipal code but which the Meridian Quorum systematically declined to pursue. The project was analog by necessity: its founders, a retired HELIX BIOSYSTEMS data entry technician named Oluwatoyin Adara and a Laceworks community liaison named Piotr Semczuk, had no meaningful network access. What they had was patience, precision, and the understanding that institutions fear accurate records more than they fear angry people.\n\nThe shift to digital operations came in 2181 when Adara's granddaughter, a self-taught network technician, found a way to mirror the ledgers into ZHENG-DAO BIOELECTRIC's publicly accessible (but deliberately obfuscated) municipal services portal — a system maintained for regulatory compliance but designed to be functionally unusable. The Seam, as it came to be called, was the gap between what the portal was legally required to contain and what corponations and the Quorum actually reported through it. Registry members learned to file accurate records of violations through the portal's own interface, creating an immutable paper trail inside a system its owners couldn't easily modify without triggering their own compliance flags. The tactic was not glamorous. It worked.\n\nSeam Registry today operates as a distributed network of roughly two hundred active members across The Laceworks, The Shelf, Old Harbor, and the Oxidian Market, with a smaller presence in The Circuit. They are not primarily infiltrators or saboteurs — they are, at their core, extremely aggressive clerks. Their operations involve filing, cross-referencing, verifying, and publicly surfacing documentation of corponation and Quorum violations using the legal infrastructure those institutions built to protect themselves. What makes them genuinely threatening is their recent expansion into what members call Seam Intrusion: targeted infiltration of corponation HR and compliance databases to extract and verify records that contradict official filings, which are then submitted through the same legitimate portal infrastructure. They have a legal defense fund. They have had it for two years. They have needed it.",
+  "ideology": "Seam Registry operates from a foundational belief that the tiered citizenship system is not primarily a political structure but an informational one — it functions by controlling who has access to accurate records of what is done to them. A Tier-4 citizen whose neural augmentation is repossessed for missed payments has no legal recourse not because no law protects them, but because the record of the repossession is filed by the corponation that performed it, in a format only the corponation can interpret, in a system the Meridian Quorum has no practical capacity to audit. Seam Registry's ideology holds that the most radical act available to people without power is meticulous, verifiable, unignorable documentation. They are not trying to destroy the system. They are trying to make the system legible to the people it is destroying, and to create a record that cannot be plausibly denied. Some members privately believe this is insufficient. The organization officially disagrees.",
+  "territory": "Primary operations center in The Laceworks, where the founding community relationships remain strongest and where Tier-3 and Tier-4 population density creates both the highest need and the largest volunteer base. Secondary nodes in Old Harbor's community housing blocks, The Shelf's sub-street market corridors, and the Oxidian Market's information vendor district. Registry members in The Circuit provide access to the legal infrastructure the fund depends on. Seam Registry has no presence in Vantage Meridian Corporate Campus, The Spire, or Substation Null, and considers The Meridian Core operationally hostile.",
+  "leadership": "Founding Council of three, called Registrars, with regional Nodes led by elected Clerks-of-Record. Registrars set operational policy and manage the legal defense fund. Clerks-of-Record manage local documentation networks and report verified violations upward. Membership is tiered by trust and operational involvement — most members are Document Witnesses who verify and co-sign records; a smaller group are Seam Technicians who handle the network intrusion components.\n\nundefined: \n\nundefined: \n\nundefined: ",
+  "methods": [
+    "Filing accurate violation records through corponation-controlled municipal compliance portals using those systems' own interfaces, creating legally valid documentation the portals were designed to obscure",
+    "Cross-referencing corponation public filings against community-sourced witness accounts to identify and document deliberate misreporting",
+    "Seam Intrusion — targeted infiltration of corponation HR and compliance databases to extract internal records that contradict official filings, for use as evidence in legal challenges",
+    "Maintaining a distributed physical archive of printed and signed records in multiple Laceworks locations as backup against digital suppression",
+    "Community documentation training — teaching Tier-3 and Tier-4 citizens how to document their own interactions with corponation services in formats that meet legal evidentiary standards",
+    "Strategic release of verified documentation packages to Tier-2 journalists and legal advocates, timed to coincide with Meridian Quorum regulatory review cycles",
+    "Maintaining a legal defense fund and relationships with a small number of Tier-2 citizen attorneys willing to take Registry-sourced cases on deferred fee arrangements"
+  ],
+  "resources": [
+    "Deep expertise in Meridian 88 municipal compliance portal infrastructure, particularly ZHENG-DAO BIOELECTRIC's publicly accessible systems",
+    "Two hundred active community members providing witness documentation, verification, and local distribution",
+    "The original analog ledgers — a continuous record of corponation violations in The Laceworks dating to 2178, legally witnessed and physically distributed across multiple locations",
+    "A legal defense fund with sufficient capital to sustain approximately eighteen months of active litigation",
+    "Relationships with three Tier-2 citizen attorneys and one retired Meridian Quorum compliance officer who provides informal regulatory guidance",
+    "A secure distributed archive system developed by Kessa Adara-Nwosu that mirrors Registry records across multiple encrypted nodes, including two outside Meridian 88's primary network jurisdiction",
+    "Community trust in The Laceworks and Old Harbor that provides physical safe harbor, early warning of enforcement actions, and ongoing recruitment"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "Seam Registry uses the Quorum's own regulatory infrastructure as its primary weapon, which the Quorum finds maddening and difficult to address through normal suppression channels. The Quorum has attempted to reclassify Registry's portal filings as fraudulent submissions three times; all three attempts were successfully contested using the same compliance documentation. Two Quorum officials have privately contacted Registry members. One was reported to the legal defense fund as a potential asset. One was reported to the Quorum's own ethics office.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "ZHENG-DAO's municipal services portal is Registry's primary operational environment, and ZHENG-DAO's augmentation repossession practices in Tier-3 and Tier-4 communities are among the most thoroughly documented violations in the Registry archive. ZHENG-DAO's legal team has attempted to restrict Registry's portal access twice; both attempts created additional compliance violations that Registry immediately filed. ZHENG-DAO is now in the position of being unable to modify their own portal without generating the documentation that would be used against them.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Oluwatoyin Adara's history as a HELIX data entry technician gives Registry unusual insight into HELIX's internal documentation practices. Registry has a significant archive of HELIX biosystem installation and maintenance violations but has not yet deployed it, pending legal review of the sourcing. Kessa Adara-Nwosu believes the archive is ready. The founding Registrars are not certain the legal defense fund can sustain a HELIX confrontation.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Both factions operate in The Laceworks and both serve Tier-3 and Tier-4 communities, but their approaches are nearly opposite. The Lacework Confessional trades in secrets and informal resolution; Seam Registry insists on public documentation and formal process. They disagree, sometimes bitterly, about whether making violation records public protects or endangers the communities they document. They have an unwritten agreement not to actively interfere with each other's operations.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Null Sermons' position that digital identity and documentation are themselves instruments of control places them in direct ideological opposition to Seam Registry, which believes in the liberatory potential of accurate records. The two factions have had public arguments, distributed through their respective community networks, about whether documentation empowers or entraps. Both factions are too pragmatically focused on their own work to let this become operational conflict, but the disagreement is genuine and deep.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Registry periodically releases documentation packages to VANTABLACK MEDIA journalists — specifically to individual journalists rather than to the organization, whose editorial practices Registry does not trust. VANTABLACK MEDIA has published four stories based on Registry documentation. Two were accurate and damaging to corponation targets. One was significantly distorted. One was killed by editorial and the journalist who sourced it subsequently lost their Tier-2 status. Registry has documented that incident as well.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A Seam Intrusion into HELIX BIOSYSTEMS' compliance database retrieves more than the targeted augmentation repossession records — it retrieves evidence of an ongoing clinical trial being conducted without Tier-4 participant consent in The Shelf. Kessa Adara-Nwosu wants to publish immediately. The legal defense fund attorney says publishing will expose the intrusion method and destroy the organization. The founding Registrars are divided.",
+    "ZHENG-DAO BIOELECTRIC has hired a third-party network security firm to audit their municipal services portal. If the audit is thorough, it will reveal the technical mechanism Registry uses to file records — and potentially expose the Seam Intrusion infrastructure. Registry has approximately three weeks. They need someone to find out how thorough the audit will actually be.",
+    "A Meridian Quorum compliance officer has reached out to Registry with a complete internal audit of Quorum violations — not corponation violations, Quorum violations. They want the Registry to file it through the portal. The document is either the most important thing Registry has ever received or an elaborate trap. The officer will not meet in person.",
+    "The physical archive in The Laceworks has been vandalized — not stolen, not destroyed, but selectively altered. Several entries have been changed in ways that would make them legally inadmissible. Registry needs to identify which entries were altered, restore them from other distributed copies, and determine how the vandal knew which specific records to target.",
+    "Piotr Semczuk has been approached by ARCTURUS DEFENSE SOLUTIONS with an unusual offer: they want to fund the legal defense fund, anonymously, in exchange for Registry 'deprioritizing' documentation of ARCTURUS contractors in The Laceworks. Semczuk has not told the other Registrars. He has been thinking about it for eleven days.",
+    "A community member brings Registry documentation of a citizenship tier reclassification that appears to have been performed by LAZARUS PHARMACEUTICALS without any legal authorization — the affected person was simply reclassified from Tier-2 to Tier-3 in what appears to be retaliation for refusing a pharmaceutical trial. If the documentation is accurate, it is the clearest case of illegal tier manipulation Registry has ever recorded. It is also almost certainly incomplete, and filing an incomplete record could give LAZARUS the evidence they need to discredit everything Registry has filed in the past three years."
+  ],
+  "tags": [
+    "faction",
+    "war",
+    "trust",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "clinic",
+    "harbor",
+    "market",
+    "rain",
+    "train",
+    "shelf",
+    "spire",
+    "circuit",
+    "old harbor"
+  ]
+}

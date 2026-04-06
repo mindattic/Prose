@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a6e07daba7ef57287e9ed9f4",
+  "type": "character",
+  "name": "Suljo Anand-Ferreira",
+  "aliases": [
+    "Sul",
+    "The Calibrator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Neural calibrator at Aurochs Medical Complex",
+  "age": 34,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Meridian Core — lives in a company-subsidized flat in Edgewater Prism",
+  "description": "Suljo is a lean man with the slightly disconnected quality of someone who spends most of his working hours interfaced with other people's nervous systems. His skin is warm brown, his eyes a natural amber that he has had patterned with fine concentric rings — a diagnostic choice as much as aesthetic, since the rings shift and blur when he is running a deep calibration sync and patients find it useful to watch. His hair is close-cropped and he keeps himself meticulously groomed in the way of someone who distrusts entropy in small things. There is a port array at his left temple, matte black ceramic, and the faint iridescent tracery of calibration leads running beneath the skin of his jaw and neck.\n\nNeurally, Suljo is exceptional — his scores on empathic interfacing are in the ninety-fourth percentile for his cohort, which Aurochs considers an asset and which Suljo considers a curse he is still learning to manage. He absorbs fragments of his patients' mental architecture during calibrations: half-memories, emotional textures, phobias that don't belong to him. He has developed a meticulous post-session decompression ritual and a careful professional detachment that acquaintances mistake for coldness. The truth is closer to the opposite — he feels too much, too accurately, and has built distance as infrastructure. He works hard, is promoted regularly, and drinks more than he should in the evenings.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Losing himself entirely in someone else's neural architecture",
+      "Being discovered in a professional breach and losing his license"
+    ],
+    "core_desires": [
+      "To do work that genuinely repairs people",
+      "To feel something that is entirely his own"
+    ],
+    "coping_mechanisms": [
+      "Strict post-session rituals — cold water, physical grounding, written log",
+      "Social isolation framed as preference",
+      "Alcohol"
+    ],
+    "blind_spots": [
+      "Believes his professional detachment is complete when it demonstrably isn't",
+      "Cannot see that his drinking is already affecting his precision"
+    ],
+    "secret": "During a calibration six months ago he encountered a patient's memory of witnessing a Helix Biosystems executive ordering a cover-up of a defective implant batch. He didn't report it. He copied it. He doesn't know what to do with what he has."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and clinical in professional mode; shifts to something more searching and uncertain in personal conversation — uses technical metaphor when emotional",
+    "cadence": "Measured, with deliberate pauses — trained to be soothing, which sometimes reads as patronizing",
+    "verbal_tics": [
+      "'What I'm reading is—' when he means 'I think'",
+      "Trailing off and restarting sentences when something surprises him"
+    ],
+    "example_lines": [
+      "'What I'm reading is some interference at the limbic bridge — that would explain the feedback loops you're describing. It's fixable. Give me twenty minutes.'",
+      "'I'm not cold. I'm... I process a lot of other people's emotional states for a living. Sometimes I need it to be quiet in here.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has a copied memory of a Helix Biosystems cover-up and has been sitting on it for six months, paralyzed between self-preservation and conscience — he needs someone to help him figure out what to do with it, or to make the decision for him.",
+    "A patient he calibrated three weeks ago has been flagged as a security risk by a corporate client. Aurochs wants Suljo to hand over his session logs. He is stalling."
+  ],
+  "narrative_function": "Information source about clients' neural histories (within ethical limits he can be pressured to breach). His empathic interface ability makes him useful for assessing whether someone is telling the truth. Potential ally or tragic figure depending on what is asked of him.",
+  "augmentations": "Temple port array (professional-grade neural interface, Helix Biosystems model). Patterned iris implants — concentric amber rings. Sub-dermal calibration leads along jaw and neck. Cortical buffer implant that dampens empathic overflow during sessions (prescribed).",
+  "daily_life": "Eight-hour shifts in the calibration suites seeing four to six patients — mostly augmentation interference cases, trauma-linked neural misfires, and post-surgical sync adjustments. Evenings alone in his flat with music he doesn't consciously listen to.",
+  "affiliation": "Aurochs Medical Complex (Tier 3 employee, Neural Calibration Division)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 9,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neural specialist",
+      "corporate employee",
+      "reluctant witness",
+      "empathic interfacer",
+      "controlled burn"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Default to protocol when uncertain — it provides cover and time to think",
+      "Never run a calibration when his cortical buffer is below sixty percent charge"
+    ],
+    "escalation_ladder": [
+      "Polite deflection",
+      "Citing professional ethics as a barrier",
+      "Genuine distress and appeal to someone he trusts"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally pleasant, slightly stiff — gives the impression of performing friendliness rather than feeling it",
+      "friends": "Rare, dry humor; asks unexpectedly perceptive questions; quietly loyal"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and formal",
+      "medium": "Goes very still; speaks in shorter sentences",
+      "high": "Dissociates slightly — describes his own situation in third person without noticing"
+    },
+    "contradictions": [
+      "Professionally advocates for patient vulnerability and trust while privately hoarding a dangerous secret",
+      "Cultivates emotional distance as protection while being constitutionally incapable of it"
+    ],
+    "habits": [
+      "Traces the calibration leads along his jaw when thinking",
+      "Arrives exactly seven minutes early to every appointment",
+      "Keeps a written decompression log in physical paper because he doesn't trust digital privacy"
+    ],
+    "breaking_points": [
+      "Evidence that his work has actively harmed a patient",
+      "Being directly ordered to violate patient confidentiality by an Aurochs superior"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Edgewater Prism to a Bosnian-Indian couple — father a transit engineer, mother a pharmacist",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Graduated Aurochs neural calibration training program in top quartile",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received cortical buffer implant after documented empathic overflow incident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Encountered and copied the Helix Biosystems cover-up memory during a routine calibration session",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

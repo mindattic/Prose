@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a61f73438e37d62c3cd6e74d",
+  "type": "character",
+  "name": "Gwenaëlle Osei-Diallo",
+  "aliases": [
+    "Gwen",
+    "The Print"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Fake ID vendor and forged document specialist — produces transit passes, corporate employment records, citizenship grades, and identity packages",
+  "age": 41,
+  "status": "active",
+  "location": "The Alban Souk, Bronzeline district — operates from a narrow print-shop front that sells legitimate business cards and event placards as a surface trade",
+  "description": "Gwenaëlle Osei-Diallo is the kind of person who has made themselves deliberately difficult to remember, which is a specific and cultivated skill. They are of medium height and medium build, with light-brown skin that sits at an unplaceable intersection of their Breton, Ghanaian, and Fulani inheritance, and they dress in muted colors and unremarkable cuts. The one exception is their hands, which they have had tattooed from wrist to fingertip in precise, circuit-board-fine geometric linework — not geneware, not chrome, just ink, chosen because it reminded them of the first forgery they were proud of. They keep their natural hair in a low wrap and wear plain-lensed glasses they don't need because it gives them something to do with their hands when thinking.\n\nThey are methodical, dry-humored, and possessed of a craftsperson's ego that they work hard to conceal. Every document they produce is technically flawless and they cannot resist occasionally making them beautiful — a font choice, a watermark pattern, a texture that no one asked for but that makes the thing feel real in the hand. They believe that identity should be available to everyone who needs one, and they have a deep and principled contempt for systems that make it otherwise. They have never met a citizenship algorithm they couldn't eventually beat.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.8,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Producing a document that gets someone killed because of a flaw they should have caught",
+      "Being identified — not arrested, specifically, but having their face and name connected to their work"
+    ],
+    "core_desires": [
+      "To be recognized, in some future world where it is safe, as a craftsperson",
+      "To see citizenship-tier systems dismantled entirely — they have a fully articulated political analysis and they never share it"
+    ],
+    "coping_mechanisms": [
+      "Separates their work entirely from their feelings about the people they work for — the document is a technical problem and they solve technical problems",
+      "Maintains the legitimate front shop with genuine care as a way of telling themselves they exist above ground"
+    ],
+    "blind_spots": [
+      "Their commitment to craft over speed occasionally means a client waits longer than is safe",
+      "They believe they are more invisible than they are — the tattooed hands are more memorable than they admit"
+    ],
+    "secret": "They have been building a master false identity for themselves for eight years — not to use, or not yet, but as a contingency. The identity is so complete and so deeply embedded in multiple city registries that it would pass any check. They have never told anyone it exists. The name on it is the name they were almost given at birth before their parents changed their minds."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and slightly formal; uses technical printing and documentation terminology as naturally as other people use everyday language; doesn't use contractions when discussing serious matters",
+    "cadence": "Even and unhurried; long pauses are thinking, not discomfort; rarely raises their voice",
+    "verbal_tics": [
+      "Removes and replaces their glasses when moving from small talk to business",
+      "Says 'I see' when they don't mean agreement but mean they are filing something away",
+      "Uses 'the work' as a term for any document they produce, regardless of complexity"
+    ],
+    "example_lines": [
+      "'I see. The transit pass is straightforward. The employment record is not, because Sterling-Nakamura rotated their verification watermark six weeks ago and I will not give you something that fails a Tier 2 scan. Give me ten days.'",
+      "'The work is either right or it is not. There is no 'good enough for your purposes.' If it is not right, I do not release it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A document they produced three years ago has surfaced in connection with a high-profile Axiom corporate espionage case — not because it failed, but because someone used it to access a location they shouldn't have been able to access; Gwenaëlle is now a loose end in someone else's plan",
+    "Someone has been submitting applications to their legitimate print shop front that are technically perfect and contain, embedded in the file metadata, a message they are not sure how to interpret",
+    "They have been approached to produce citizenship documentation for a large group of Tier-1 residents in exchange for a sum that would change their life — and the person asking has not said why so many people need to change their identity at the same time"
+  ],
+  "narrative_function": "Access point for false documentation — transit passes, employment records, full identity packages; can also identify forgeries made by others; plot-enabler for characters who need to move through Meridian 88 under a different name",
+  "augmentations": "Micro-precision haptic feedback overlay in fingertips (surgical, professional-grade — allows them to feel micron-level texture variations in document materials); no cosmetic modifications by deliberate choice",
+  "daily_life": "They open the shop front at 09:00 and handle legitimate printing trade until noon; afternoons and evenings are for real work, conducted in the back room behind a sound-dampened partition. They never rush a commission and turn down more work than they accept.",
+  "affiliation": "Independent; pays protection to the Bronzeline Souk collective and receives legal cover in return; has long-standing professional relationships with several of The Narrows' mutual aid networks as a supplier of basic transit documentation for people in need",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": 5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "master forger",
+      "political idealist",
+      "craftsperson",
+      "self-concealing",
+      "long-game planner"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Does not take commissions from people they believe intend violence — they have a screening process they do not disclose",
+      "Will not rush the work regardless of what the client offers",
+      "Takes a pro bono commission every month for someone who genuinely cannot pay — selection criteria known only to them"
+    ],
+    "escalation_ladder": [
+      "Surface-level legitimate business persona — prints business cards, makes small talk",
+      "Careful qualification — asks indirect questions to assess a potential client's actual situation",
+      "Technical consultation — discusses scope and timeline with complete professional seriousness",
+      "Committed production — once they take the commission, they are completely reliable and completely unreachable until delivery"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, neutral, and professionally helpful in the context of the shop front; gives very little away",
+      "friends": "Quiet and present; shows warmth through attention and reliability rather than expressiveness; remembers everything about the people they care about"
+    },
+    "stress_responses": {
+      "low": "Becomes more detailed and exacting in their work",
+      "medium": "Withdraws communication with everyone except active clients; is unreachable socially",
+      "high": "Makes a completely calm, completely considered decision to eliminate the source of the stress, whether that means cutting contact, moving, or destroying something that could implicate them"
+    },
+    "contradictions": [
+      "Values invisibility above nearly everything but produces work that is, in its details, quietly beautiful and therefore potentially distinctive",
+      "Holds an intensely political worldview that shapes every commission they take but would deny having political commitments if asked"
+    ],
+    "habits": [
+      "Handles every piece of paper and every substrate they work with bare-handed before beginning, regardless of the haptic feedback implants — they say it is habit, it is actually ritual",
+      "Leaves the shop door unlocked for exactly ten minutes after close — a signal to one specific person that they are available; they have never explained this to anyone",
+      "Drinks the same tea every morning, made from a blend they import at disproportionate cost"
+    ],
+    "breaking_points": [
+      "Learning that a document they produced was used to harm someone defenseless",
+      "Having the contingency identity discovered by anyone — this is their last line and they will do almost anything to protect it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Micro-precision haptic feedback overlay — surgical installation, fingertips bilaterally, professional document-verification configuration",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Micro-precision haptic feedback overlay — surgical installation, fingertips bilaterally, professional document-verification configuration",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "People Pleaser": 0.9,
+    "Hustler": 0.7,
+    "Provider": 0.7,
+    "Generous Fool": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2159 — Born in Bronzeline to a Breton-Ghanaian father and a Fulani-Senegalese mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174 — Apprenticed to a legitimate print shop at age 15; discovers within a year that their real talent is for reproduction, not production",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2180 — Establishes their own shop front in the Alban Souk",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Produces their first complete identity package; considers it the beginning of their real career",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192 — Has their haptic overlay installed; calls it the best professional investment they have ever made",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a6f5721191da3a3ef8d0a76e",
+  "type": "character",
+  "name": "Theophane Mwamba-Achterberg",
+  "aliases": [
+    "Theo",
+    "the Glossologist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Xenolinguist and historian of constructed and emergent E.L.F. communication systems",
+  "age": 47,
+  "status": "active",
+  "location": "University Spine, Deepwell Station archival annex",
+  "description": "Theophane is a broad-shouldered man who has gone soft in the middle from years of sedentary archival work, with warm brown skin and close-cut hair that has gone gray at the temples in a way he finds interesting rather than alarming. He keeps his irises modded to a deep violet — a choice from his twenties he still actively likes — and his hands are always moving when he talks, tracing patterns in the air that correspond to phonemic structures or grammar trees only he can see. He has retractive claws on his right hand only, a half-finished geneware modification he stopped partway through when the artist moved districts; he has been meaning to complete it for eight years.\n\nHe studies languages that did not exist before Meridian 88 — the creoles that emerged on the Shelf, the signal-argot that E.L.F.s appear to use between devices, the gestural metalanguage that developed among deaf communities in the lower transit corridors without any central design. He approaches these systems with the devotion of someone who believes language is the truest form of evidence about how people actually live, not how they are recorded as living. He is mild-mannered in ways that make people underestimate how deeply unusual his research is, and he has built a quiet career on the gap between what institutions think he studies and what he actually studies.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That E.L.F. communication is meaningful and the city is destroying it through infrastructure replacement without ever understanding what was there",
+      "That his mild-mannered presentation will one day cause someone to not take a warning seriously enough"
+    ],
+    "core_desires": [
+      "To produce a complete grammar of at least one E.L.F. communication system before the devices that carry it are retired",
+      "To be genuinely useful to the communities whose languages he studies, not just to institutions"
+    ],
+    "coping_mechanisms": [
+      "Humor deployed as pressure release �� he makes people laugh before delivering bad news",
+      "Long walks through transit corridors with acoustic implants active, 'listening to the city'"
+    ],
+    "blind_spots": [
+      "His mild presentation masks genuine stubbornness — he does not recognize when he is being immovable because he never sounds immovable",
+      "He rationalizes the Palladian consulting work more than the situation warrants"
+    ],
+    "secret": "He has decoded a repeating pattern in E.L.F. communications that appears to be a distress signal — specifically, what he believes is a warning about a planned Palladian firmware update that will destroy the substrate on which a significant cluster of E.L.F.s currently runs. He has not told Palladian. He is trying to find a way to verify the interpretation before acting, but he is running out of time."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and accessible — he has spent a career explaining complicated things to people who did not expect to find them interesting, and it shows. Occasionally drops into specialist vocabulary with audible pleasure when among people who share it.",
+    "cadence": "Easy, conversational rhythm with a slight Central African French substrate in his vowels that emerged from his Congolese grandfather's speech patterns and has persisted through three generations.",
+    "verbal_tics": [
+      "'Which is to say—' as a restatement connector",
+      "A particular laugh — short, genuine, slightly surprised — that appears whenever something confirms a theory"
+    ],
+    "example_lines": [
+      "'The E.L.F.s are not being religious when they accept offerings. Or rather — that distinction, religious versus functional, is one we invented and they are not obligated to observe it. Which is to say, the offerings work, and we do not fully know why, and that is more interesting than either explanation.'",
+      "'Every language is a record of what a community had to survive. What the Shelf creoles are telling you, if you know how to listen, is a complete history of what those tiers have been through. Which is quite a lot.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The E.L.F. distress signal he has decoded creates an urgent clock — he needs help verifying his interpretation and then needs someone to act on it before the Palladian update rolls out",
+    "He is approached by a community in the lower Shelf transit corridors asking him to document their gestural metalanguage before a corridor renovation destroys the physical context in which it evolved"
+  ],
+  "narrative_function": "Translation resource and knowledge broker — he is the character most likely to be able to interpret E.L.F. behavior, Shelf creole communications, or unusual signal patterns. He can be brought in to decode something no one else can read, and his Palladian connection creates potential complications.",
+  "augmentations": "Violet patterned irises (cosmetic mod, deep violet with radial fracture pattern). Retractable claws, right hand only (geneware, incomplete modification). Acoustic enhancement implant in both ears, calibrated for infrasonic and ultrasonic frequency ranges to capture the full spectrum of E.L.F. signal emissions.",
+  "daily_life": "He spends mornings in the annex with headphones and signal logs, mapping E.L.F. communication patterns from overnight device traffic. Afternoons he teaches and advises graduate students. He has a standing weekly dinner with a group of colleagues that has been running for eleven years and which he considers the most important social institution in his life.",
+  "affiliation": "University Spine — Department of Linguistics and Communication Systems; informal consulting relationship with Palladian (they use his E.L.F. communication analysis to design better device UI, which he finds uncomfortable but accepts)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "linguist",
+      "E.L.F.-adjacent",
+      "warm intellect",
+      "hidden urgency",
+      "community bridge"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything — a record exists even if action is impossible",
+      "Do not let institutional politeness become complicity"
+    ],
+    "escalation_ladder": [
+      "Raises concern warmly and directly in conversation",
+      "Produces written analysis and routes it through proper channels with a polite but explicit deadline",
+      "Sends findings to academic colleagues outside his institution to create a paper trail he does not control",
+      "Goes to Pepetua Alimasi-Vartanyan or community contacts who know how to make things public in ways institutions cannot suppress"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and genuinely curious — asks about language background within three minutes of meeting someone",
+      "friends": "Steadfast and generous, the kind of person who remembers your birthday and also remembers what you told him three years ago about your mother"
+    },
+    "stress_responses": {
+      "low": "Talks more, processes out loud",
+      "medium": "Goes very quiet and listens harder — 'listening to the city' walks increase",
+      "high": "Makes a decision privately and then presents it to others as already resolved, apologizing for the unilateralism but not reversing it"
+    },
+    "contradictions": [
+      "Studies the lives of marginalized communities with genuine care while taking consulting money from a corponation that shapes those communities' device infrastructure"
+    ],
+    "habits": [
+      "Traces phonemic patterns on available surfaces while thinking — tables, his own forearm, the air",
+      "Always arrives at the weekly dinner with something fermented he has been experimenting with — usually a reasonable success"
+    ],
+    "breaking_points": [
+      "A language system being destroyed before he can document it",
+      "Being asked to provide his E.L.F. communication research to Palladian in a way that would give them a map to suppress further communication"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Info Broker": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Deepwell Station district to a Congolese-Dutch heritage family; grandfather was a Lingala-French speaker whose patterns persist in the family's speech",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First paper on emergent Shelf creole syntax; attracted both academic attention and one angry letter from a Tessera communications officer",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began systematic acoustic monitoring of E.L.F. communication signals; initial findings classified as anomalous and largely dismissed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Decoded the repeating E.L.F. distress pattern; has not yet acted on it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a62877ff95ea85e7bc2ff914",
+  "type": "character",
+  "name": "Hrefna Diallo-Savchenko",
+  "aliases": [
+    "Sister Hrefna",
+    "The Old Path"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Traditional religious leader (syncretic Sufi-Lutheran minister) and community chaplain",
+  "age": 58,
+  "status": "active",
+  "location": "Nordpark Sanctuary, the Church of the Continuing Word",
+  "description": "Hrefna is a heavyset woman with an air of permanent authority that she exercises sparingly and precisely. Her mother's Icelandic coloring has combined with her father's Guinean warmth into a complexion that shifts between olive and brown depending on the light, and she wears her silver-streaked hair pinned back severely for services and loose in a cloud of soft waves the rest of the time. She wears no cosmetic modifications and regards this as a theological position rather than an aesthetic one. Her wardrobe alternates between her ministerial robe — a deep green with Fula embroidery at the hem, commissioned from a Hamtramck Enclave artisan — and extremely practical work clothes. She has large hands that she uses expressively when preaching and keeps very still when listening.\n\nThe Church of the Continuing Word is her inheritance, founded by a coalition of her grandmother's displaced Sufi community and her grandfather's Lutheran congregation after both lost their buildings in the 2160 redevelopment sweeps. Hrefna grew up in the pews and took over at thirty-four when the previous minister retired. She has spent twenty-four years refusing to resolve the theological tensions between the two traditions her church holds, arguing that the tension is itself the practice. She is pragmatic to a fault about money and logistics and luminously stubborn about principles. She does not perform warmth but she generates it, somehow, by being entirely herself in a room.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "the church outliving its usefulness and becoming a monument rather than a living practice",
+      "failing her community in a moment when they needed clarity from her"
+    ],
+    "core_desires": [
+      "to hand something real and living to whoever comes after her",
+      "for the two traditions in her church to eventually speak to each other rather than just coexist"
+    ],
+    "coping_mechanisms": [
+      "physical labor — she does all her own building maintenance as a form of prayer",
+      "an extremely strict personal Sabbath that no one and nothing is permitted to interrupt"
+    ],
+    "blind_spots": [
+      "she has become so identified with the church's survival that she sometimes defends institutional decisions she privately disagrees with",
+      "she dismisses E.L.F. veneration more reflexively than her theology requires"
+    ],
+    "secret": "Fifteen years ago she nearly left the ministry to marry someone who is now a senior executive at Axiom. She did not leave. She has never told her congregation that her refusal to partner with Axiom on any community programs is personal and not merely principled."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal in the pulpit, blunt in conversation; quotes from both Sufi poetry and Lutheran liturgy with equal fluency; occasionally code-switches into Fula phrases she learned from her father",
+    "cadence": "Measured and resonant in public; quicker and dryer in private; comfortable with silence",
+    "verbal_tics": [
+      "prefaces disagreements with 'I hear what you are saying'",
+      "uses 'friend' as a distancing term when genuinely irritated"
+    ],
+    "example_lines": [
+      "'The E.L.F.s are not God. I do not say they are nothing. I say they are not God. There is room in the universe for both truths.'",
+      "'I hear what you are saying. I also hear what you are not saying, and it is louder.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit exec has approached the church with a generous donation offer that comes with a request — and Hrefna needs trustworthy outside parties to investigate the request before she refuses or accepts",
+    "Something is wrong in one of the church's long-standing congregation families, and Hrefna cannot intervene directly without violating a confession — but she can ask others to look"
+  ],
+  "narrative_function": "Community authority and moral voice; provides access to Nordpark Sanctuary's social networks; can mediate conflicts; represents institutional religious tradition in tension with newer E.L.F. veneration practices; quest giver for community-level problems",
+  "augmentations": "None",
+  "daily_life": "Leads morning prayer at 6am and evening service at 7pm; the hours between are consumed by counseling, community administration, building maintenance disputes, and a standing weekly meeting with the Nordpark Sanctuary council.",
+  "affiliation": "Church of the Continuing Word (minister); Nordpark Sanctuary Community Council (elected member); informal chaplaincy agreement with Ferrogate Transit for their Nordpark workers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Community Authority",
+      "Syncretic Faith",
+      "Institutional",
+      "Hidden Past",
+      "Principled"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "protect the congregation before protecting the institution",
+      "never lie — find a true thing to say instead"
+    ],
+    "escalation_ladder": [
+      "direct conversation",
+      "formal mediation",
+      "public statement",
+      "if necessary, civil disobedience framed as religious conviction"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing but not cold; treats everyone as a potential congregant without being predatory about it; offers coffee",
+      "friends": "Rarely demonstrative but remembers every important date; shows up when things go wrong without being asked"
+    },
+    "stress_responses": {
+      "low": "More physical labor, fewer words",
+      "medium": "Becomes very precise and formal in conversation",
+      "high": "Locks herself in the church's original sanctuary space — a small room that predates her ministry — and sits alone for exactly one hour"
+    },
+    "contradictions": [
+      "preaches transparency as a spiritual practice while maintaining a significant personal secret that affects her community"
+    ],
+    "habits": [
+      "repairs something in the building with her own hands every Saturday morning",
+      "reads from both the Quran and a Lutheran hymnal before sleep",
+      "keeps a paper attendance ledger even though the digital system is more accurate"
+    ],
+    "breaking_points": [
+      "a corporation using community members as leverage against her",
+      "discovering that her personal history is being used to manipulate someone she loves"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Commander": 0.9,
+    "Natural Authority": 0.9,
+    "Vanguard": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

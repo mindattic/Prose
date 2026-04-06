@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a8a37d36841c7174e1f04050",
+  "name": "Deep Pressure Resistance",
+  "brand_name": "Deep",
+  "product_name": "Deep Pressure Resistance",
+  "type": "geneware",
+  "aliases": [
+    "Abyss Body",
+    "Crush Proof",
+    "Deep Mod"
+  ],
+  "category": "performance",
+  "target_system": "systemic (barotrauma resistance and pressure equalization)",
+  "description": "Combines sperm whale diving adaptations with hagfish pressure-resistance proteins to allow the user to withstand extreme hydrostatic pressure. The modification collapses the lungs safely during deep dives, reinforces the sinus cavities, adjusts nitrogen metabolism to prevent decompression sickness, and modifies cellular membranes to maintain function under pressure. The user can dive to depths of 500+ meters without equipment — far beyond what even the Freediver Mod allows. Combined with the gill modification, it enables genuine deep-sea capability. The modification is rare and expensive, designed for deep infrastructure maintenance in Meridian 88's underwater foundations and sunken predecessor structures. Zheng-Dao Bioelectric holds the patent and licenses it exclusively to industrial divers.",
+  "source_organism": "Physeter macrocephalus (sperm whale), Myxine glutinosa (Atlantic hagfish, pressure-resistant proteins)",
+  "manufacturer": "Zheng-Dao Bioelectric",
+  "tier_availability": "Tier 5",
+  "legality": "Licensed (industrial certification required)",
+  "procedure": "Systemic retroviral rewrite with cellular membrane modification, 10 sessions over 5 months",
+  "expression_time": "6–12 months for full adaptation",
+  "reversibility": "Irreversible",
+  "side_effects": [
+    "Chronic joint pain at surface pressure — the body is optimized for depth",
+    "Skin becomes slightly thicker and less sensitive",
+    "Ears constantly feel 'full' at surface pressure",
+    "Discomfort in low-pressure environments (high altitude, aircraft)",
+    "Rare: spontaneous lung collapse reflex triggered by tight clothing compressing the chest"
+  ],
+  "social_perception": "Elite and niche. Deep-modded individuals are respected as specialists doing dangerous, important work. The modification is rare enough to be noteworthy whenever encountered. Carries the prestige of extreme specialization.",
+  "story_hooks": [
+    "A deep-modded diver sent to inspect Meridian 88's underwater foundations discovers that someone has been building structures down there — habitable ones, recently occupied",
+    "A Deep Mod user's pressure adaptation begins extending beyond the original specification — they're becoming more comfortable at depth than at the surface, and they're not sure they want to come back up"
+  ],
+  "tags": [
+    "performance",
+    "geneware",
+    "war",
+    "ai",
+    "pain",
+    "bar",
+    "clothing",
+    "water",
+    "tier 5"
+  ]
+}

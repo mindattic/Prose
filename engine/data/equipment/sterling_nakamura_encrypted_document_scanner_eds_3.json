@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a86c70cbab5dd9896b584579",
+  "name": "Sterling-Nakamura Encrypted Document Scanner EDS-3",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Encrypted Document Scanner EDS-3",
+  "type": "equipment",
+  "aliases": [
+    "EDS-3",
+    "Secure Scan",
+    "Sterling Reader",
+    "Doc Eye"
+  ],
+  "category": "tools",
+  "description": "A handheld document scanner that photographs, OCRs, encrypts, and securely transmits paper documents to a designated secure server in a single operation. The EDS-3 is designed for intelligence gathering — an operator can scan a desk full of documents in under a minute, with each page automatically encrypted before leaving the device's memory. The scanner also detects and flags documents with embedded security features — watermarks, UV-reactive inks, tracking fibers — that could identify the source of a leak. Sterling-Nakamura's legal and intelligence teams use it for everything from corporate espionage to due diligence.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — corporate intelligence",
+  "base_technologies": [],
+  "specifications": {
+    "scan speed": "1 page per 2 seconds",
+    "resolution": "600 DPI with OCR",
+    "encryption": "256-bit AES on device",
+    "transmission": "Burst encrypted to designated server",
+    "security detection": "Watermark",
+    "info": "UV ink; tracking fiber identification; 000 pages internal encrypted",
+    "storage": "10",
+    "weight": "0.15 kg",
+    "battery": "4 hours continuous scanning"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An EDS-3 captured in a corporate raid contained scans of 4,000 pages of classified documents — the metadata shows they were scanned over six months from a single office, identifying the leak source.",
+    "A modified EDS-3 has been developed that replaces scanned documents with altered versions — the operator scans the original, the device prints a modified copy, and the switch is made in the same operation."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "memory",
+    "ai",
+    "corporate",
+    "water",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab5373cbb13f0a8fb756f6f3",
+  "name": "Tessera Industries Sensory Overload Grenade SOG-3 'Flashbang Plus'",
+  "type": "weapon",
+  "aliases": [
+    "Flashbang Plus",
+    "SOG-3",
+    "Sense Bomb",
+    "Full Spectrum"
+  ],
+  "category": "exotic",
+  "description": "An advanced flashbang variant that attacks all five senses simultaneously plus neural interface channels. The SOG-3 detonates with a synchronized package: blinding light across visible and IR spectra, 180 dB acoustic burst, aerosolized capsaicinoid irritant, a burst of electromagnetic interference targeting neural frequencies, and a surface coating on the casing that releases a nausea-inducing olfactory compound on detonation. The combined sensory assault overwhelms both biological and augmented processing capacity, causing a 30-60 second window of total incapacitation regardless of the target's augmentation level or training.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — tactical entry teams",
+  "base_technologies": [
+    "Multi-spectrum sensory overload engineering",
+    "Synchronized detonation timing",
+    "Neural interface electromagnetic disruption"
+  ],
+  "specifications": "light output: 20 million candela across visible + IR\nacoustic output: 180 dB at 1 meter\nchemical payload: Aerosolized capsaicinoid + olfactory irritant\nEM output: Broadband neural interface disruption\neffect radius: 8 meters\nincapacitation duration: 30-60 seconds\nweight: 0.35 kg\nfuse: 1.5-second delay",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An SOG-3 detonated in a crowded nightclub caused permanent sensory damage to twelve patrons — the grenade was thrown as a distraction for a theft, but the confined space amplified the effects beyond safe levels.",
+    "A modified SOG-3 has been developed that excludes the electromagnetic component, making it effective only against unaugmented targets — someone is designing weapons that discriminate based on augmentation status."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "weapon",
+    "theft",
+    "augment",
+    "neural",
+    "ai",
+    "club",
+    "rain",
+    "night",
+    "train",
+    "tier 3"
+  ]
+}

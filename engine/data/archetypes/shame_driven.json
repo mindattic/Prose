@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5917a5886b365b99fd5df64",
+  "name": "Shame-Driven",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Motivated by deep, identity-level shame",
+  "behavioral_signature": "Tries to prove they're not what they fear they are",
+  "under_stress": "Shame becomes self-destruction",
+  "at_rest": "Hiding, compensating, overachieving",
+  "will_always": [
+    "avoid exposure of their core shame"
+  ],
+  "will_never": [
+    "be vulnerable about who they really are"
+  ],
+  "unless": [
+    "someone loves the person they're ashamed of being"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Guilt Carrier",
+      "threshold": 0.8,
+      "context": "self-punishment"
+    },
+    {
+      "archetype": "Self-Destructor",
+      "threshold": 0.7,
+      "context": "self-harm"
+    }
+  ],
+  "opposite_of": [
+    "Pride-Driven"
+  ],
+  "tags": [
+    "hidden",
+    "driven"
+  ]
+}

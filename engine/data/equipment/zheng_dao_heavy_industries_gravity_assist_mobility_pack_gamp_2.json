@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a88579da93a66abe19cc1954",
+  "name": "Zheng-Dao Heavy Industries Gravity Assist Mobility Pack GAMP-2",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Gravity Assist Mobility Pack GAMP-2",
+  "type": "equipment",
+  "aliases": [
+    "GAMP-2",
+    "Float Pack",
+    "Gravity Pack",
+    "Zheng-Dao Wings"
+  ],
+  "category": "climbing/mobility",
+  "description": "A backpack-mounted graviton emitter that reduces the wearer's effective weight by up to 80%, enabling enormous leaps, controlled descent from heights, and movement speeds that appear superhuman. The GAMP-2 does not provide true flight — it reduces gravity's effect on the wearer rather than generating lift — but a person weighing effectively 20% of their normal mass can jump 5-story buildings, run along walls for short distances, and survive falls that would kill an unassisted person. The pack's graviton emitter draws enormous power and provides only 15 minutes of active weight reduction per charge cycle.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — experimental mobility equipment",
+  "base_technologies": [],
+  "specifications": {
+    "weight reduction": "Up to 80%",
+    "jump height": "approximately 15 meters at full reduction",
+    "wall running": "3-5 seconds at full speed",
+    "fall survival": "Terminal velocity reduced to non-lethal levels",
+    "battery": "15 minutes active use per charge",
+    "recharge": "2 hours from standard power",
+    "weight": "5.5 kg",
+    "form factor": "Compact backpack",
+    "control": "Neural interface or manual dial",
+    "cryogenic requirement": "None — uses room-temperature graviton emitter variant"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A suspect escaped pursuit by leaping from a 10-story building and surviving — witnesses describe them floating to the ground, and the graviton signature detected by building sensors confirms a GAMP-2 was used.",
+    "A GAMP-2 malfunctioned during a jump, switching from weight reduction to weight amplification — the user went from weighing 15 kg to 400 kg in mid-air."
+  ],
+  "tags": [
+    "climbingmobility",
+    "equipment",
+    "ai",
+    "control",
+    "power",
+    "escape",
+    "tier 4"
+  ]
+}

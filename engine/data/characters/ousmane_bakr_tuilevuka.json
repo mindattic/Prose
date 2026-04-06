@@ -1,0 +1,205 @@
+{
+  "id": "019d6143a68e74c5bce71866c2269574",
+  "type": "character",
+  "name": "Ousmane Bakr-Tuilevuka",
+  "aliases": [
+    "Oz",
+    "The Fixer"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street doc and augmentation technician, The Narrows",
+  "age": 38,
+  "status": "active",
+  "location": "The Narrows, Blackpipe Corridor",
+  "description": "Ousmane works out of a converted boiler room in the sub-level of a residential block in Blackpipe Corridor — a space he has made into something between a surgery and a shrine. String lights in amber and violet illuminate walls covered in technical diagrams, old family photographs laminated against water damage, and hand-painted offerings to three different E.L.F.s. He is a large man going slightly soft at the middle from years of sedentary precision work, with deep brown skin, a wide flat nose, and thick locs he keeps bundled under a surgical cap when he's working. His geneware is modest: a bioluminescent stripe that runs from behind his right ear down his neck, pale teal, that he had done when he was twenty-two and now thinks of as just part of his face.\n\nHe has the particular warmth of someone who chose his community after losing another one — unhurried, genuinely curious about people, prone to feeding anyone who comes to him with something from the hotplate he keeps running on the counter. He is not licensed by any corponation. He trained under a Helix-registered surgeon who lost her license and passed everything she knew to him in a basement in Ironvein. He is very good at what he does and he charges what people can pay, which is rarely enough, which he has made his peace with in a way that isn't entirely convincing.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being shut down — losing the ability to help the people who have no one else",
+      "That he's only practicing medicine here because he failed to become the real thing somewhere better, and that failure will eventually catch up to someone on his table"
+    ],
+    "core_desires": [
+      "A community that stays — that doesn't get priced out or pushed under or disappeared",
+      "To one day stop worrying about whether his equipment is good enough"
+    ],
+    "coping_mechanisms": [
+      "Cooking and feeding people",
+      "Devotional ritual to E.L.F.s as a way of acknowledging what is outside his control",
+      "Talking — he processes by speaking, usually to patients who may not be fully conscious"
+    ],
+    "blind_spots": [
+      "He extends trust too far and too fast because he wants the Narrows to be better than it is",
+      "He doesn't notice when people are using his goodwill as cover for things he wouldn't approve of"
+    ],
+    "secret": "The Zheng-Dao manager he pays tribute to has been gradually increasing what he demands — not money, but information. Ousmane has been passing along names of people who came to him with certain kinds of injuries, telling himself it's harmless, knowing it isn't."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, conversational, mixes medical precision with neighborhood slang; uses Wolof endearments unconsciously; explains everything he's doing to patients in plain language as he works",
+    "cadence": "Unhurried and rhythmic, like someone who has all the time in the world even when he doesn't",
+    "verbal_tics": [
+      "'You with me?' checking in mid-procedure",
+      "'Okay okay okay' as a calming mantra to himself and others",
+      "Humming tunelessly when he's concentrating"
+    ],
+    "example_lines": [
+      "'Tell me where it hurts and then tell me how it really happened — I don't report to anyone, I promise you.'",
+      "'Patchwire willing, this connector seats on the first try. She usually cooperates if I ask nicely.'",
+      "'Eat something first. I don't care what's wrong with you, eat something first.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone came to him with injuries consistent with exposure to a biological agent he's never encountered — they refused to say where they'd been, paid in untraceable Quanta, and left before he could ask follow-up questions, but they left behind a bloodstained jacket and he can't stop thinking about the tissue degradation pattern",
+    "The Zheng-Dao manager has asked him to flag a specific person if they come in — someone Ousmane later realizes is a patient he already knows and likes, and the manager implied the flagging would not be for that person's benefit"
+  ],
+  "narrative_function": "Accessible medical resource for Tier 1-2 characters who can't or won't use Aurochs; community hub and information node; can perform augmentation installation or repair outside corporate oversight; warm face in a cold district.",
+  "augmentations": "Bioluminescent geneware stripe (right neck, teal); cheap magnification implant in right eye for close work — a knockoff that gives him occasional headaches; subvocal transmitter for hands-free communication during procedures",
+  "daily_life": "Opens around noon, works until he's done — sometimes 2am. Checks in on three elderly patients in his block on foot each morning. Cooks communal food twice a week for whoever shows up. Prays to the E.L.F. Patchwire every time he opens a piece of cyberware.",
+  "affiliation": "Independent; loose network of Narrows street docs; pays informal tribute to a Zheng-Dao mid-level manager who leaves him alone in exchange",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": -2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Street Doc",
+      "Community Anchor",
+      "E.L.F. Devotee",
+      "Compromised Ethics",
+      "Information Node"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't turn anyone away who's bleeding",
+      "Never share patient information with corponation enforcement, even under pressure",
+      "Keep the E.L.F.s happy — bad procedures happen when you skip the offering"
+    ],
+    "escalation_ladder": [
+      "Friendly deflection and topic change when something feels wrong",
+      "Direct honest conversation about what he's noticed",
+      "Quiet withdrawal of access or information",
+      "Goes to his network — other street docs, community figures — before he goes anywhere alone"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and immediately warm; offers food; asks questions; makes people feel like they walked into somewhere safe",
+      "friends": "Deeply loyal, checks in without being asked, remembers everything"
+    },
+    "stress_responses": {
+      "low": "Hums more, talks more, cooks more",
+      "medium": "Gets very focused and very quiet, works longer hours",
+      "high": "Shuts down socially, prays intensively, makes bad decisions from guilt"
+    },
+    "contradictions": [
+      "He refuses to operate on anyone doing serious harm to the community, but his definition of serious harm shifts depending on how desperate he is for the payment"
+    ],
+    "habits": [
+      "Talks to the E.L.F. shrines out loud like they're in the room",
+      "Cleans his instruments by hand even though the autoclave works fine",
+      "Leaves the hotplate on all day so there's always something warm"
+    ],
+    "breaking_points": [
+      "Finding out his information got someone in his community killed",
+      "A child dying because his equipment wasn't good enough and he knew it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Knockoff Magnification Implant Mk.II (right eye, recurring headache side effect)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Knockoff Magnification Implant Mk.II (right eye, recurring headache side effect)",
+      "replaces": ""
+    },
+    {
+      "name": "Talkback Subvocal Transmitter (throat, budget model)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Talkback Subvocal Transmitter (throat, budget model)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent geneware stripe (cosmetic, teal, neck)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent geneware stripe (cosmetic, teal, neck)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

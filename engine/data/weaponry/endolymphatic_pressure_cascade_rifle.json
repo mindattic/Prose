@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab287513920fa6c7ffa46e89",
+  "name": "Endolymphatic Pressure Cascade Rifle",
+  "type": "weapon",
+  "aliases": [
+    "EPCR-3",
+    "Vertigo",
+    "The Spinner"
+  ],
+  "category": "exotic",
+  "description": "The EPCR-3 operates by projecting a tightly collimated beam of modulated infrasonic pressure waves tuned precisely to the resonant frequency of the endolymphatic fluid within the inner ear. Upon exposure, the fluid undergoes rapid oscillatory pressure cycling, overwhelming the vestibular system and triggering catastrophic spatial disorientation, nausea, and full postural collapse within seconds. The effect is entirely invisible — no projectile, no flash, no audible report above a low subsonic thrum.\n\nWhat distinguishes the EPCR-3 from cruder acoustic suppression tools is its adaptive targeting firmware, which samples ambient environmental acoustics and dynamically adjusts the emission envelope to compensate for hard surfaces, wind shear, and intervening crowd noise. At ranges under forty meters, it achieves near-total vestibular disruption even through standard hearing protection. At longer ranges, the effect degrades to sustained nausea and impaired balance — still tactically significant.\n\nZheng-Dao Bioelectric engineered the weapon initially as a crowd suppression platform for high-value transit corridor security, but the design escaped controlled licensing within eighteen months of its first deployment. Street copies exist, though they lack the adaptive firmware and frequently cause permanent vestibular damage at close range — an outcome the original design actively attempts to avoid, if only for liability purposes.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Infrasonic pressure modulation",
+    "Vestibular resonance targeting",
+    "Adaptive acoustic compensation"
+  ],
+  "specifications": "effective range: 8–42 meters\npower source: High-density capacitor cell, 28 discharge cycles per charge\nemission frequency: 0.4–18 Hz, dynamically modulated\nonset time: 1.8–4 seconds at full exposure\nweight: 3.1 kg\nform factor: Bullpup carbine, matte polymer housing\nacoustic signature: Sub-threshold for standard hearing; felt as pressure at close range",
+  "tactical_use": "Operators use the EPCR-3 as a breach-clearing tool, disabling room occupants before entry without triggering audible alarms or leaving ballistic evidence. It is particularly favored in situations where incapacitation without lethality is legally or contractually required. Security teams use it to collapse fleeing targets in open corridors. Paired with a suppressed sidearm, it constitutes a near-silent takedown platform. Operators are trained to fire in short bursts and reposition, as sustained emission in enclosed spaces can cause reflected pressure buildup affecting the operator.",
+  "cultural_context": "Among Meridian 88's corporate security culture, the EPCR-3 occupies a strange moral position — marketed as humane, frequently used brutally. Carrying one signals institutional backing; the weapon is too expensive and too legally encumbered for most freelancers to acquire legitimately. On the street, knockoff versions are called 'spinners' and are associated with a particularly cruel class of debt enforcer who prefers to leave targets helpless rather than dead. Medical examiners have begun flagging suspicious inner ear scarring in assault victims as a distinct forensic signature.",
+  "known_users": [
+    "Corporate transit security teams",
+    "High-end debt collection contractors",
+    "Counter-intrusion specialists",
+    "Underground pit-fight fixers who use it to neutralize opponents pre-match"
+  ],
+  "story_hooks": [
+    "A series of seemingly random collapses in a crowded market district turns out to be an operator testing range on civilians before a high-profile contract hit.",
+    "A knockoff EPCR-3 is sold to a freelancer with a factory defect that locks it at maximum intensity — the seller has already disappeared.",
+    "A corporate whistleblower claims Zheng-Dao's 'humane' firmware intentionally logs target biometric data during each discharge and sells it to third parties.",
+    "An investigator begins connecting multiple assault victims by their identical vestibular scarring — someone is using the same weapon across very different criminal contexts."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "war",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "debt",
+    "medical",
+    "market",
+    "rain",
+    "moral",
+    "train",
+    "escape",
+    "energy",
+    "fire",
+    "tier 3"
+  ]
+}

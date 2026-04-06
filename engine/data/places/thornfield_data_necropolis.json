@@ -1,0 +1,119 @@
+{
+  "id": "019d6143a9547507a430bbcb7c18f3a4",
+  "type": "place",
+  "name": "Thornfield Data Necropolis",
+  "aliases": [
+    "The Necropolis",
+    "The Dead Stack",
+    "Thornfield",
+    "The Tomb"
+  ],
+  "description": "A decommissioned hyperscale data center complex occupying twelve city blocks in the city's eastern industrial fringe, Thornfield was once the primary data infrastructure backbone for four merged corporate entities before a combination of technological obsolescence and a catastrophic cooling failure rendered it economically unviable in 2167. The buildings were sealed rather than demolished — the cost of safely removing the legacy hardware and the toxic materials used in its cooling systems exceeded the land's redevelopment value. What remained was 1.4 million square meters of sealed server halls, cooling infrastructure, subterranean cable runs, and administrative facilities, slowly being reclaimed by entropy.",
+  "atmosphere": {
+    "sights": [
+      "Brutalist concrete exteriors with sealed windows and rusted blast doors",
+      "Warning signage in corporate livery that no longer exists",
+      "Vegetation forcing through cracked exterior pavement",
+      "Thermal shimmer from still-active legacy systems in the deeper levels",
+      "Emergency lighting still cycling on decade-old backup power in some sections",
+      "Cable bundles as thick as tree trunks running along corridors and through walls",
+      "Server racks stretching to five-meter ceilings in rows that disappear into darkness"
+    ],
+    "sounds": [
+      "The distant hum of hardware that was never fully shut down",
+      "Cooling infrastructure groaning under thermal stress",
+      "Dripping water where the sealed roof has failed",
+      "Echoing footsteps across vast empty floors",
+      "Occasional electronic tones from systems completing unknown processes",
+      "Wind through cracked ventilation shafts",
+      "The absence of human sound — a specific, weighted silence"
+    ],
+    "smells": [
+      "Hot electronics and burning dust on old heating elements",
+      "Coolant chemical tang — mildly toxic with prolonged exposure",
+      "Concrete dust and mold in the flooded lower sections",
+      "Old plastic slowly outgassing in warm server halls",
+      "Clean, filtered air in sections where environmental systems still function",
+      "Something organic and unidentifiable in the deepest sublevels"
+    ],
+    "feel": "Cathedral-scale and deeply uncanny. The Necropolis was built for machines, and its proportions reflect that — spaces too large, corridors too long, silence where there should be the noise of human activity. Those who spend extended time inside report a persistent sense of being observed that rational analysis cannot dispel.",
+    "tags": []
+  },
+  "demographics": "Officially uninhabited and legally restricted. Actual population estimated at 300-500 individuals occupying the most stable and habitable sections — a mix of squatters, urban explorers who never left, a community of hardware salvagers, and at least two organized groups using the facility for purposes they have not disclosed. A small number of highly skilled netrunners have established semi-permanent installations to access whatever legacy data remains on still-active systems.",
+  "economy": "Hardware salvage is the primary legitimate activity — the Necropolis contains decades of obsolete but valuable components, rare materials, and infrastructure that can be repurposed. The data salvage economy is more lucrative and more dangerous: the still-active systems contain information that various parties are willing to pay significantly to retrieve or permanently destroy. The facility's isolation and lack of official oversight also makes it attractive for activities that require neither.",
+  "power_structure": "No formal authority. The salvager community has informal territorial agreements — certain sections belong to certain crews, and disputes are handled through negotiation or, occasionally, violence. A figure called the Archivist has claimed sole jurisdiction over the deepest server levels and enforces this claim with lethal competence and unknown resources. The original owning corporation's successor entity holds the legal title and periodically sends security teams that the facility's inhabitants have become expert at evading.",
+  "dangers": [
+    "Structural instability — floors, ceilings, and internal walls collapse without warning in degraded sections",
+    "Toxic coolant exposure from ruptured legacy systems",
+    "Getting lost — the facility's internal navigation systems are offline and the floor plans are not publicly available",
+    "The Archivist's response to unauthorized access to the deep levels",
+    "Corporate security teams on irregular sweep schedules",
+    "Legacy ICE — automated intrusion countermeasure systems that were never decommissioned and do not distinguish between cyberspace and physical threats",
+    "Other salvagers with territorial claims and few scruples",
+    "Psychological effects of extended isolation in the facility's deeper sections"
+  ],
+  "opportunities": [
+    "Hardware salvage with significant resale value",
+    "Data retrieval from legacy systems — corporate secrets decades old but potentially still actionable",
+    "A location where activities can be conducted without any official oversight",
+    "The facility's still-functional network infrastructure offers unusual cyberspace access points",
+    "Architectural and infrastructural features that cannot be built legally in the current city",
+    "The Archivist is rumored to trade access to deep-level data for specific services"
+  ],
+  "story_hooks": [
+    "A routine salvage run has found an active server cluster in a section of the facility that no map shows — and the data it's processing is current, not legacy, suggesting someone has been running operations through Thornfield's dead infrastructure without anyone knowing",
+    "The Archivist has sent an intermediary with a job offer: retrieve a specific hardware unit from a section of the facility they cannot safely enter themselves. The pay is extraordinary. The section in question is one the salvager community considers cursed, having lost four people there in the last year",
+    "The successor corporation to Thornfield's original owners has quietly sold the facility to a development company, and demolition is scheduled to begin in six weeks — the current inhabitants have that long to extract what they can, including data that several powerful parties would pay to have destroyed before a construction crew finds it",
+    "Something in the lowest sublevel of the Necropolis has begun broadcasting on a frequency that shouldn't exist — the signal contains what appears to be fragments of communications from inside Thornfield dated fifteen years in the future"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Harrowgate Industrial Plateau",
+      "The Vestige",
+      "The Render"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Hardware salvagers and their crew",
+    "Netrunners seeking legacy data or unusual access points",
+    "Urban explorers and documentarians",
+    "Corporate security on sweep operations",
+    "People who need to conduct business with no witnesses",
+    "Researchers studying legacy infrastructure and data archaeology",
+    "Those seeking the Archivist"
+  ],
+  "notable_locations": [
+    {
+      "name": "Hall Seven",
+      "description": "The largest single server hall in the complex, 400 meters long and still partially operational — roughly 15% of the original hardware continues to run on degraded backup power, cycling through processes nobody has been able to fully interpret. The heat differential between the active and inactive sections creates persistent fog at floor level. Hall Seven is considered the most navigable large space in the facility and serves as the informal gathering point for the salvager community.",
+      "tags": []
+    },
+    {
+      "name": "The Sublevel Threshold",
+      "description": "A heavy blast door at the bottom of a service stairwell that marks the boundary of the Archivist's claimed territory. The door is functional and locked, but more significantly it is surrounded by warning signs in the Archivist's own hand, several non-functional pieces of hardware that have been clearly shot multiple times, and a single dried flower that is replaced with a fresh one every few weeks. Nobody knows who replaces it.",
+      "tags": []
+    },
+    {
+      "name": "The Garden",
+      "description": "A former administrative courtyard where the roof has partially collapsed, allowing natural light and rain in. Over the years, vegetation has colonized the space aggressively — full-grown trees have forced through the floor, vines have covered the surrounding walls, and a small but surprisingly clear pool has formed in one corner. The facility's squatter community treats the Garden as neutral ground and a place of rest. It is inexplicably beautiful.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.848,
+    "lng": -87.645,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "violence",
+    "gun",
+    "war",
+    "secret",
+    "ai",
+    "corporate",
+    "power"
+  ]
+}

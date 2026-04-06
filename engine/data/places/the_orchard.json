@@ -1,0 +1,100 @@
+{
+  "id": "019d6143a9497a46a36176160e4d0499",
+  "type": "place",
+  "name": "The Orchard",
+  "aliases": [
+    "Traverse City",
+    "TC",
+    "Cherry Capital",
+    "The Splice"
+  ],
+  "description": "Traverse City was the Cherry Capital of the World. Millions of cherry trees on the hillsides around Grand Traverse Bay, producing fruit that was shipped across the country. The National Cherry Festival drew hundreds of thousands every July. That was before the growing seasons shifted, before the pollinators collapsed, before three consecutive years of unprecedented spring frost events killed 80% of the traditional cherry stock between 2158 and 2161.\n\nWhat grew back was not cherries. Or rather, it was cherries in the same way that a NovaMind is a hearing aid -- technically descended from the original, engineered beyond recognition. Verdana BioSystems and a consortium of agricultural biotech firms moved into the Traverse City region in 2163, acquiring the devastated orchards at distressed prices and converting them into the largest open-air agricultural biotech laboratory in North America. The Orchard -- as the region is now known -- produces genetically modified fruit trees that function as biological factories: cherry variants that synthesize pharmaceutical compounds in their fruit, apple cultivars that sequester atmospheric carbon at ten times the natural rate, plum hybrids whose root systems filter groundwater contaminants. The hillsides around Grand Traverse Bay are still covered in blossoming trees every spring. They are beautiful. They are also patented, sensor-monitored, and producing outputs that have more in common with a chemical plant than a farm.\n\nThe city itself has bifurcated along familiar lines. The bayfront and the old downtown -- Front Street, the marina, the beaches -- have been developed into a corporate research campus and executive residential zone. The biotech firms' employees live well, eat well, and have access to fresh air and clean water that most GLM residents would consider fictional. Inland from the bay, the communities that used to farm conventionally now work the engineered orchards under contract terms that make them tenants on land their families owned for generations. They are paid to maintain trees they cannot eat the fruit from, because the fruit is not food -- it is intellectual property. The Cherry Festival still happens. It is sponsored by Verdana BioSystems. The cherries served are from the legacy variety preservation greenhouse, the only unmodified trees left. There are eleven of them.",
+  "atmosphere": {
+    "sights": [
+      "Engineered orchards covering the hillsides around Grand Traverse Bay -- visually identical to traditional cherry groves until you notice the sensor nodes on every fourth tree",
+      "Grand Traverse Bay itself, still stunning, blue water against green hills, one of the few Great Lakes vistas that hasn't been visually ruined",
+      "The biotech campus on the bayfront -- glass and sustainable timber, designed to look like it grew from the landscape rather than replaced it",
+      "Harvest drones moving through the orchards in formation, collecting fruit with surgical precision",
+      "The legacy preservation greenhouse -- a climate-controlled dome containing the last eleven unmodified cherry trees, visited like a shrine"
+    ],
+    "sounds": [
+      "Harvest drones -- a soft buzzing that fills the orchards during collection cycles, audible for miles",
+      "Birdsong -- engineered pollinator species that sound almost right but not quite, a valley between natural and synthetic",
+      "Bay water on the downtown beach, waves on sand, timeless and indifferent to what's been done to the hillsides",
+      "The research campus's ambient sound design -- curated nature sounds played through hidden speakers, because the real nature sounds have been replaced",
+      "Wind through the orchards, carrying pollen that smells sweet and is worth more per gram than most pharmaceuticals"
+    ],
+    "smells": [
+      "Cherry blossom in spring -- overwhelming, engineered for maximum sensory impact, beautiful and artificial",
+      "The bay -- cold, clean, mineral, one of the last honest smells in the region",
+      "Pharmaceutical sweetness from the processing facilities where the engineered fruit is rendered into compounds",
+      "Soil -- the orchards' root systems have changed the soil chemistry, and it smells different now, richer and stranger"
+    ],
+    "feel": "Gorgeous and uneasy. The Orchard is one of the most visually beautiful places in the GLM, and the beauty is both genuine and deeply wrong. The hills bloom. The bay sparkles. The air is clean. And none of it is what it appears to be. The orchards are factories. The fruit is product. The beauty is a side effect of an industrial process that happens to be photogenic. For the contract farmers who maintain the trees, there is an additional layer of wrongness: the land looks like home and feels like someone else's property, because it is.",
+    "tags": []
+  },
+  "demographics": "Bayfront research zone: approximately 8,000 residents, Tier 3-5, highly educated biotech workforce. Inland farming communities: approximately 30,000, Tier 1-2, multi-generational agricultural families now working as contract orchard labor. Significant seasonal workforce during harvest cycles.",
+  "economy": "Biotech consortium generates Φ6.8 billion annually from pharmaceutical botanical output, carbon credit trading, and proprietary genetics licensing. Contract farming wages are adequate but structured to ensure permanent dependency -- housing, equipment, and seed stock are all provided by the consortium and all create debt obligations. The Cherry Festival generates Φ12 million in tourism revenue, which Verdana counts as marketing expense.",
+  "power_structure": "Verdana BioSystems leads a consortium of five agricultural biotech firms that collectively control the orchard zones. The bayfront campus operates under Verdana sovereign charter. Inland communities retain municipal governance but economic decisions are made by the consortium's regional office. A growing resistance movement called the Root Network -- composed of contract farmers, legacy landowners, and sympathetic biotech employees -- advocates for seed sovereignty and land rights reform.",
+  "dangers": [
+    "Engineered pollen exposure -- long-term health effects of living in a pharmaceutical orchard are unstudied and the consortium is not funding studies",
+    "Contract farming debt traps -- the terms are designed to make leaving impossible without forfeiting everything",
+    "Consortium security treats unauthorized fruit collection as intellectual property theft, which carries corporate jurisdiction penalties",
+    "The engineered ecosystems are fragile -- a pollinator malfunction or pathogen could collapse the orchards catastrophically",
+    "The Root Network is under active consortium surveillance, and participation carries career-ending risks"
+  ],
+  "opportunities": [
+    "Pharmaceutical botanical compounds from the orchards are enormously valuable on the gray market",
+    "The Root Network is actively seeking allies, resources, and technical expertise for their seed sovereignty campaign",
+    "The legacy preservation greenhouse's unmodified genetic material is irreplaceable and coveted by every agricultural entity on Earth",
+    "Carbon credit data from the sequestration orchards is worth significant money to entities challenging the consortium's environmental claims"
+  ],
+  "story_hooks": [
+    "The eleven legacy cherry trees are dying, one by one, and the consortium's explanations don't match the evidence -- someone inside is killing them, and the motive is connected to what unmodified genetics could prove about the engineered variants",
+    "A Root Network cell has successfully propagated unmodified cherry stock outside consortium control -- and they need someone to transport the seedlings to a secure location before the consortium's genetic surveillance drones find them",
+    "A biotech researcher discovers that the carbon-sequestration orchards are actually releasing a compound that affects human neural plasticity -- not enough to trigger medical alerts, but enough to make the surrounding population measurably more susceptible to neural advertising"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Crossing / Ludington (south along the coast)",
+      "Petoskey / The Perch (north along the coast)",
+      "Inland agricultural corridor (east and south)",
+      "Grand Traverse Bay and Lake Michigan (offshore)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Biotech researchers and consortium executives on the bayfront",
+    "Contract orchard workers maintaining engineered trees",
+    "Cherry Festival tourists during the annual event",
+    "Root Network members operating in the inland communities"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 44.7631,
+    "lng": -85.6206,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "theft",
+    "loss",
+    "neural",
+    "genetic",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "money",
+    "debt",
+    "medical",
+    "market",
+    "rights",
+    "food",
+    "drone",
+    "water"
+  ]
+}

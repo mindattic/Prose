@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab507140a97df270d556436e",
+  "name": "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+  "type": "weapon",
+  "aliases": [
+    "Seizure",
+    "The Shaker",
+    "Fit-Glove"
+  ],
+  "category": "exotic",
+  "description": "The SOG-3 is a full-hand combat gauntlet housing a dense array of transcranial magnetic stimulation coils embedded in the palm and finger assemblies. On contact with a target's skull or upper cervical spine, the gauntlet delivers a precisely timed sequence of high-intensity magnetic pulses that induce involuntary neural firing across multiple cortical regions simultaneously. The result is immediate and total motor control disruption — a generalized tonic-clonic seizure that renders the target non-functional for twelve to forty seconds, followed by a period of profound disorientation lasting several minutes.\n\nThe SOG-3's engineering challenge was achieving sufficient field strength for reliable neural induction while maintaining a chassis light enough for combat use. Zheng-Dao Bioelectric's solution was a laminated coil architecture using superconductive filament wound at near-molecular density, powered by a forearm-mounted burst capacitor that delivers the full charge in a 0.08-second pulse. The gauntlet requires skin or thin-material contact to function reliably — heavy helmets and full cranial shielding significantly reduce effectiveness, though even partial contact with an unshielded neck produces measurable impairment.\n\nA secondary effect, noted in field reports but absent from official documentation, is the gauntlet's interaction with neural implants. Targets with cognitive augmentations — memory chips, neural co-processors, reflex accelerators — frequently experience device corruption or complete burnout alongside the induced seizure. This has made the SOG-3 particularly feared in circles where neural augmentation is common, as the loss of a high-grade cognitive implant can be professionally and financially devastating beyond the immediate physical harm.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Transcranial magnetic stimulation",
+    "Neural feedback loops",
+    "Superconductive burst-discharge coil arrays"
+  ],
+  "specifications": "effective contact area: Palm and proximal finger pads, 180cm²\npulse duration: 0.08 seconds\nincapacitation duration: 12–40 seconds (seizure), 3–8 minutes (post-ictal disorientation)\ncharges per capacitor: 14 full discharges\nrecharge time: 8 seconds between activations\nweight: 1.8 kg (gauntlet and forearm capacitor unit)\nshielding defeat: Effective against targets with less than 4mm ferrous cranial shielding\npower source: Forearm-mounted burst capacitor, induction rechargeable",
+  "tactical_use": "The SOG-3 is a close-quarters control weapon, deployed by operators who need targets alive, compliant, or simply non-functional for a defined window. In extraction operations, a single application drops a target without the mess of conventional violence. In interrogation-adjacent contexts, the post-ictal disorientation period — during which targets are conscious but cognitively impaired and highly suggestible — is considered operationally useful by those willing to work in ethically ambiguous territory. Operators typically pair the gauntlet with a conventional weapon in the off hand, as the SOG-3 requires deliberate contact to activate.",
+  "cultural_context": "The SOG-3 carries a particular stigma in Meridian 88's augmentation communities because of its documented tendency to corrupt neural implants. Losing a memory implant to a Seizure hit is not just a medical emergency — it can mean the permanent loss of years of stored experience, professional credentials embedded in hardware, or personality-adjacent cognitive modifications. In some subcultures, surviving a SOG-3 hit with a fried implant is spoken of almost like a death — 'the person they were' is gone. This has made the gauntlet a weapon associated with targeted erasure rather than simple violence, and those who carry it are viewed with a particular kind of hostility.",
+  "known_users": [
+    "Zheng-Dao Bioelectric corporate retrieval teams",
+    "High-end extraction specialists",
+    "Meridian 88 black-site interrogation contractors",
+    "Sienna Vrak (bounty hunter, known for delivering targets in post-ictal states)",
+    "The Undercurrent (data-theft collective rumored to use SOG-3s to wipe rival operators' memory implants)"
+  ],
+  "story_hooks": [
+    "A player character is hit with a SOG-3 during an ambush and wakes up missing the last six months of memories stored on their neural implant — including something someone clearly didn't want them to remember.",
+    "A Zheng-Dao Bioelectric executive is found in a catatonic state with a burned-out cognitive implant. The SOG-3 used was an inside job — it's registered to their own security division.",
+    "A street-level operator is selling SOG-3 knockoffs built from scavenged components. The quality control is catastrophic — some units don't stop at 0.08 seconds.",
+    "The players are hired to deliver a corporate whistleblower alive and cognitively intact, but the extraction route is guarded by a team known to carry Seizure gauntlets."
+  ],
+  "ammunition_type": [
+    "internal_capacitor"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "violence",
+    "combat",
+    "war",
+    "theft",
+    "loss",
+    "death",
+    "love",
+    "memory",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "ubc",
+    "medical",
+    "tier 3"
+  ]
+}

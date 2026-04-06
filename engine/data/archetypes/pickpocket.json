@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5867295948aad9d4ef8002a",
+  "name": "Pickpocket",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Takes from pockets with invisible skill",
+  "behavioral_signature": "Gets close, takes what's needed, ghosts away",
+  "under_stress": "Steals more, cares less about targets",
+  "at_rest": "Practicing dexterity, reading crowds",
+  "will_always": [
+    "take without being noticed"
+  ],
+  "will_never": [
+    "use force when finesse works"
+  ],
+  "unless": [
+    "the wallet belongs to someone poorer than them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Thief",
+      "threshold": 0.8,
+      "context": "theft"
+    },
+    {
+      "archetype": "Ghost",
+      "threshold": 0.65,
+      "context": "invisible approach"
+    }
+  ],
+  "opposite_of": [
+    "Muscle"
+  ],
+  "tags": [
+    "dexterous",
+    "subtle"
+  ]
+}

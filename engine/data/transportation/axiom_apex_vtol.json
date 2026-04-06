@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa5f7a50be282c7a7bf9ecfa",
+  "name": "Axiom Apex VTOL",
+  "type": "transportation",
+  "aliases": [
+    "Apex",
+    "The Eagle",
+    "Corporate Chariot"
+  ],
+  "category": "luxury",
+  "manufacturer": "Axiom",
+  "description": "The private VTOL of choice for corporate executives who need to move between cities or between their penthouse and the office without touching the ground. Six seats, each with more computing power than a Tier 1 neighborhood. The Apex can cross the Great Lakes in forty minutes and land on any rooftop pad. It represents the ultimate expression of the Meridian 88 class divide — personal air travel, faster than commercial, answerable to no schedule but your own.",
+  "propulsion": "Tilt-rotor VTOL, hydrogen turbine, anti-grav assist",
+  "speed": "400 km/h cruise, 500 km/h maximum",
+  "capacity": "6 passengers + pilot",
+  "range": "1,200 km",
+  "tier_availability": "Tier 5",
+  "cost": "Φ2,000,000 purchase. Φ30,000/month maintenance.",
+  "autonomy": "Human pilot with full AI backup. Autonomous emergency return.",
+  "armament": "Classified countermeasure suite, chaff, flares, signal disruption.",
+  "common_usage": "Executive inter-city transport, emergency extraction, corporate retreat access.",
+  "story_hooks": [
+    "An Apex pilot is ordered to fly a route that takes them through restricted military airspace — and nothing intercepts them",
+    "Two Apex VTOLs from rival corponations nearly collide over the lakefront, triggering a corporate incident that escalates far beyond a traffic violation"
+  ],
+  "tags": [
+    "luxury",
+    "transportation",
+    "ai",
+    "corporate",
+    "power",
+    "rooftop",
+    "chase",
+    "lake",
+    "tier 5"
+  ]
+}

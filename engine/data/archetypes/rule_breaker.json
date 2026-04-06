@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a58e75cfba23940a9349f18f",
+  "name": "Rule Breaker",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Rules exist to be questioned and broken",
+  "behavioral_signature": "Ignores restrictions, finds ways around limitations",
+  "under_stress": "Breaks rules faster, more dangerously",
+  "at_rest": "Tests boundaries constantly",
+  "will_always": [
+    "challenge restrictions"
+  ],
+  "will_never": [
+    "follow a rule without questioning it"
+  ],
+  "unless": [
+    "the rule protects someone vulnerable"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Contrarian",
+      "threshold": 0.7,
+      "context": "opposition"
+    },
+    {
+      "archetype": "Gray Area",
+      "threshold": 0.65,
+      "context": "moral flexibility"
+    }
+  ],
+  "opposite_of": [
+    "Code Keeper",
+    "Absolutist"
+  ],
+  "tags": [
+    "rebellious",
+    "free"
+  ]
+}

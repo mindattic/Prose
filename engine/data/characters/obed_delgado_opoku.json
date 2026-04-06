@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a6757f52871cd3445d903242",
+  "type": "character",
+  "name": "Obed Delgado-Opoku",
+  "aliases": [
+    "Vanadium",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Social engineering and negotiation specialist — face",
+  "age": 45,
+  "status": "active",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance",
+  "description": "Obed Delgado-Opoku are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 45, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a face out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nObed Delgado-Opoku have survived long enough in the runner game to be either very good or very lucky, and they cultivate ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.85,
+      "ideal": 0.79,
+      "id": 0.19,
+      "shadow": 0.23,
+      "mask": 0.1,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Betrayal by someone they trust — the only currency that matters",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "Stability — a place to sleep that's the same place two nights running",
+      "To protect the people in their district who can't protect themselves",
+      "The perfect run — one job so clean it becomes legend"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Overestimates their own abilities in situations outside their specialty",
+      "Cannot accept help without interpreting it as leverage",
+      "Fails to notice when their own behavior mirrors the people they despise"
+    ],
+    "secret": "Obed Delgado-Opoku has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'",
+      "Refers to killing as 'solving' — clinical detachment as coping mechanism"
+    ],
+    "example_lines": [
+      "\"People want to trust someone. I just make sure that someone is me.\"",
+      "\"The hardest lock to pick is between someone's ears.\"",
+      "\"I don't lie. I tell a better version of the truth.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Obed Delgado-Opoku a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Obed Delgado-Opoku discovers a job they completed last year was a setup for something much larger and much worse",
+    "A former associate resurfaces with evidence that could destroy Obed Delgado-Opoku's reputation — and a price for silence"
+  ],
+  "narrative_function": "As a face, Obed Delgado-Opoku embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate. Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Freelance — multi-district operator",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 6
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 7
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 4
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.85,
+      "caution": 0.1,
+      "loyalty": 0.88,
+      "greed": 0.55,
+      "empathy": 0.23
+    },
+    "drives": [
+      "money",
+      "knowledge",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 7,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "natural leadership presence"
+    ],
+    "weaknesses": [
+      "difficulty with authority figures",
+      "risk-averse to the point of missed opportunities",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "face",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Refuses contracts that require operating inside The Spires — too much surveillance"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Checks exits within 10 seconds of entering any room",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+    ],
+    "breaking_points": [
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Pain editor",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+      "replaces": ""
+    },
+    {
+      "name": "Pain editor",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

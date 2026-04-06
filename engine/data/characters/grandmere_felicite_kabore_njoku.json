@@ -1,0 +1,225 @@
+{
+  "id": "019d6143a61d7b8a84b8f526bc20a3c4",
+  "type": "character",
+  "name": "Grandmère Félicité Kaboré-Njoku",
+  "aliases": [
+    "Grandmère",
+    "The Old Crossing",
+    "Feli"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Elder of a refugee collective camp at Kenosha Crossing; former climate refugee who never completed resettlement",
+  "age": 71,
+  "status": "active",
+  "location": "Camp Eleven, Kenosha Crossing — the oldest continuously occupied unofficial camp at the crossing, running since 2163",
+  "description": "Félicité Kaboré-Njoku arrived at Meridian 88's edges forty-one years ago with a transit number that expired and a resettlement appointment that was rescheduled eleven times and then quietly dropped from the system. She is still here. She has deep brown skin gone ashen at the temples and the crown of her head, which she keeps shaved clean and bare because she decided at sixty that hair was weight she no longer needed. Her eyes are dark and sharp and she has the stillness of someone who has decided that stillness is power. She walks with two canes she carved herself from salvaged composite struts — not because she is frail but because they give her hands something to do and make her impossible to rush. She is, by informal agreement, the settlement authority of Camp Eleven — mediator, memory, and occasionally the last word.\n\nShe came from what was the Burkina Faso climate zone, from a region that ceased to be viable for human habitation in 2157. She does not mourn this in any way she shows. She has built a working community at Kenosha Crossing out of people who arrived broken and she runs it with a combination of grandmother warmth and absolute structural authority. She maintains three ELF shrines in the camp — the Gatekeeper of Lists, the Fever Singer, and the one she will not name to outsiders, whom she simply calls Mè — and she tends them every morning before she does anything else. She distributes the UBC stipends for the twelve registered members of her collective, argues with the crossing authority on behalf of the unregistered, and has outlasted four different crossing administrators.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Camp Eleven being demolished — not because she fears displacement for herself, but because she knows these people have nowhere else",
+      "Dying before she has transferred what she knows to someone who can hold it"
+    ],
+    "core_desires": [
+      "Legitimate status for every unregistered person in her camp, in her lifetime",
+      "To see one person from Camp Eleven make it properly inside the city — not as a ghost, but as a citizen"
+    ],
+    "coping_mechanisms": [
+      "The shrine rituals structure her grief into something manageable",
+      "She has trained herself not to hope for large things, only to work toward them — hope is for people with safety nets"
+    ],
+    "blind_spots": [
+      "She has held the camp together so long that she does not always see when its members have outgrown what it can offer them",
+      "She has made peace with injustice in ways that occasionally make her complicit in small, quiet versions of it"
+    ],
+    "secret": "The unnamed shrine — the one she calls Mè — contains a handmade record of every person who has passed through Camp Eleven and died without official documentation. She has been corresponding, through analogue dead-drops, with a Meridian Core archivist who has agreed to eventually receive these records and find a way to make them count. She does not know if the archivist is trustworthy. She does not know if she will live long enough. She has told no one."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and deliberate. Speaks Meridian Creole with a West African tonal foundation — her sentences carry rhythm even in translation. Uses proverbs naturally, not performatively. When she is angry, her language becomes very simple and very quiet.",
+    "cadence": "Unhurried. She speaks at her own pace and has never in her life been interrupted successfully.",
+    "verbal_tics": [
+      "'Eh, listen—' before anything important",
+      "Refers to the city as 'the inside' and the camp as 'here'",
+      "Calls everyone under fifty 'child' regardless of relationship"
+    ],
+    "example_lines": [
+      "Eh, listen — I have been at this crossing since before the third outer wall was built. Whatever you think is urgent, I have seen urgent. Sit down.",
+      "You want to know about the inside? The inside doesn't know we exist. That is not a tragedy. That is a resource.",
+      "Mè will hear it. Whatever you cannot say out loud, Mè will hear it. That is what Mè is for."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Kenosha Crossing authority official has finally agreed to a resettlement hearing for three Camp Eleven families — but the paperwork requires documentation that the families destroyed years ago for safety reasons, and Félicité needs help reconstructing it through unofficial channels.",
+    "Someone has been taking photographs of Camp Eleven — careful, systematic photographs — and leaving no trace. Félicité wants to know who, and whether they are a threat or an opportunity."
+  ],
+  "narrative_function": "Community anchor and information source for the entire Kenosha Crossing refugee population; quest giver for problems that require discretion and cannot go through official channels; living history of forty years of undocumented Meridian 88 edge-life; moral compass character.",
+  "augmentations": "None by choice. Her two composite-strut canes have small ELF-offering nodes she built into the handles herself — technically not augmentations, but she talks to them.",
+  "daily_life": "Rises at dawn, tends the three shrines, conducts the morning camp count, mediates at least two disputes before noon, meets with anyone who needs to see her in the afternoon — and there is always a queue — then sits outside her structure at dusk and accepts whatever the day brings to her threshold.",
+  "affiliation": "Camp Eleven Refugee Collective, Kenosha Crossing. No corporate affiliation — has refused multiple resettlement-adjacent offers.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 10,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 4,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Community Elder",
+      "Climate Refugee",
+      "Undocumented",
+      "ELF Devotee",
+      "Forty-Year Survivor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The camp's stability comes before individual requests, even ones she finds sympathetic",
+      "She will not lie to people she is responsible for, even when the truth is hard"
+    ],
+    "escalation_ladder": [
+      "Patient explanation — she will explain the same thing five times if necessary",
+      "Withdrawal of her involvement and protection — the camp quietly closes around the problem person",
+      "Banishment from Camp Eleven, which she has done exactly twice in forty years"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses carefully. Offers tea. Lets them talk first. Does not commit to anything until she has listened for at least twenty minutes.",
+      "friends": "Warm, direct, occasionally merciless. Will tell people things they don't want to hear because she considers that the real form of care."
+    },
+    "stress_responses": {
+      "low": "Tends the shrines more carefully. Extends her morning ritual.",
+      "medium": "Becomes very practical and organizational — creates lists, assigns tasks, externalizes the chaos.",
+      "high": "Goes silent and sits with Mè alone. No one interrupts this."
+    },
+    "contradictions": [
+      "She has built her life around the principle that papers and systems mean nothing — and she is desperately, urgently trying to get papers and system recognition for everyone in her care"
+    ],
+    "habits": [
+      "Dawn shrine ritual, always, without exception",
+      "Keeps a running oral census of the camp — recites it to herself walking the perimeter",
+      "Makes tea for anyone who sits down across from her, regardless of why they came"
+    ],
+    "breaking_points": [
+      "A camp member being taken — by authority forces, by trafficking, by violence — while she was in a position where she might have prevented it"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Mentor": 0.9,
+    "Traditionalist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Burkina Faso climate zone, Sahel region",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Region declared uninhabitable. Began displacement journey with extended family.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Arrived at Kenosha Crossing with transit documentation that was subsequently allowed to expire",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First resettlement appointment. Rescheduled.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Stopped waiting for resettlement. Established Camp Eleven with eleven other families.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Built the first of the three shrines. Mè came last.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Made contact with the Meridian Core archivist. The correspondence continues.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

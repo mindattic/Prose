@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a57270839a0401a7709e9221",
+  "name": "Ghost",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Fights without being seen or remembered",
+  "behavioral_signature": "Engages only from total concealment",
+  "under_stress": "Vanishes entirely",
+  "at_rest": "Invisible even among allies",
+  "will_always": [
+    "remain unseen"
+  ],
+  "will_never": [
+    "announce their presence"
+  ],
+  "unless": [
+    "someone they care about needs to see them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Ambusher",
+      "threshold": 0.85,
+      "context": "stealth"
+    },
+    {
+      "archetype": "Flanker",
+      "threshold": 0.7,
+      "context": "indirect engagement"
+    }
+  ],
+  "opposite_of": [
+    "Brawler",
+    "Berserker"
+  ],
+  "tags": [
+    "stealth",
+    "invisible"
+  ]
+}

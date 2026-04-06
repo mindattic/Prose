@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5787b78b44dd090a2092ba9",
+  "name": "Intuitive",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Knows things without knowing how they know",
+  "behavioral_signature": "Reaches conclusions through leaps others can't follow",
+  "under_stress": "Instincts sharpen but can't be explained",
+  "at_rest": "Quiet, processing, following threads only they see",
+  "will_always": [
+    "trust the feeling"
+  ],
+  "will_never": [
+    "ignore a strong hunch"
+  ],
+  "unless": [
+    "the intuition has been wrong three times in a row"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Gut Instinct",
+      "threshold": 0.9,
+      "context": "instinct"
+    },
+    {
+      "archetype": "Pattern Reader",
+      "threshold": 0.75,
+      "context": "subconscious analysis"
+    }
+  ],
+  "opposite_of": [
+    "Analyst"
+  ],
+  "tags": [
+    "instinct",
+    "perceptive"
+  ]
+}

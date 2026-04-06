@@ -1,0 +1,239 @@
+{
+  "id": "019d6143a7247c099dbb0ded5045e7f3",
+  "type": "character",
+  "name": "Yetunde Abashidze-Tarawa",
+  "aliases": [
+    "Spore",
+    "Mama Spore"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fungus farmer and underground food supplier",
+  "age": 58,
+  "status": "active",
+  "location": "Irkalla, Sub-Level 7 — the 'Bloom Halls', a repurposed water reclamation chamber",
+  "description": "Yetunde Abashidze-Tarawa is a broad-shouldered woman who moves through her fungal gardens with the deliberate grace of someone who has learned to never knock anything over in the dark. She is tall, with deep brown skin that has taken on an extraordinary quality in her years underground: faint bioluminescent patches on her forearms and the sides of her neck — not implants, but a genuine dermal symbiosis with a engineered photobacterial culture she cultivated herself and chose to inoculate into her own skin thirty years ago. In the dim blue-green glow of the Bloom Halls, she is hauntingly beautiful. On the rare occasions she surfaces, people stare.\n\nShe grows over forty varieties of engineered and wild-caught fungus in a network of cultivation racks that fill three former water reclamation chambers. She trades in food, medicine (several of her cultures have antibiotic and analgesic properties), and a mild psychoactive she calls Quietcap that she dispenses only to people she has personally assessed as not in crisis. She is the closest thing Irkalla's sub-level community has to a matriarch, doctor, and pharmacist — a role she accepted reluctantly and now occupies with the resigned authority of someone who knows no one else will do it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "the Bloom Halls being discovered and stripped by a corponation survey team",
+      "outliving everyone she has taken responsibility for"
+    ],
+    "core_desires": [
+      "for the sub-level community to achieve genuine self-sufficiency",
+      "to be remembered as someone who fed people"
+    ],
+    "coping_mechanisms": [
+      "physical labor as emotional regulation",
+      "humor — dry, unsentimental, often landing before people realize it's a joke"
+    ],
+    "blind_spots": [
+      "gives too much, does not ask for help, does not notice her own exhaustion until it becomes a crisis",
+      "occasionally too slow to recognize that someone is exploiting her generosity"
+    ],
+    "secret": "Her bioluminescent symbiote is slowly spreading. She engineered it to be localized but it has been migrating toward her spine for two years. She does not know if this is benign or catastrophic, and she has no way to scan it properly. She has told no one."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm but precise. She uses botanical and mycological terminology casually. Her Bore Rat pidgin is perfect; she can also speak three surface languages.",
+    "cadence": "Unhurried and rhythmic, like someone who learned to speak at the pace of things that grow slowly.",
+    "verbal_tics": [
+      "'Let it breathe.' (advice she applies to fungi, arguments, and people equally)",
+      "'Now.' (at the start of a new thought, not urgently)",
+      "clicks tongue when someone has made a mistake she saw coming"
+    ],
+    "example_lines": [
+      "'Now. Sit. I don't feed anyone standing up — it's disrespectful to the food.'",
+      "'That one you're looking at? That's Quietcap. It is not for you right now. Let it breathe. Come back when you're not running from something.'",
+      "'The corponations built everything you're standing in. That's true. They also abandoned it. So who does it belong to now?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A new fungal contamination has begun killing cultures in the outer chambers — it arrived on someone's boots, and she needs to find out who came in from where before it reaches the medical cultivars.",
+    "A Tessera biosurveillance team is mapping the sub-levels and her symbiote culture — which she did not patent, because how could she — may technically belong to Helix Biosystems under the Derived Organisms Statute."
+  ],
+  "narrative_function": "Community anchor, information hub, healer figure — she knows everyone in the sub-levels of Irkalla and has strong opinions about all of them. Can provide resources, medicine, Quietcap, and extremely candid assessments of other characters.",
+  "augmentations": "Self-inoculated bioluminescent photobacterial symbiote (forearms, neck — faint blue-green glow); basic respiratory filter implant (nasal); no other augmentations",
+  "daily_life": "Rises by internal clock around 0500 to check moisture levels and harvest timings; distributes daily food rations to her community roster; spends afternoons on cultivation work and medical consultations; holds an informal evening gathering she calls 'the dark table' where people eat together in near-total darkness.",
+  "affiliation": "Irkalla sub-level community; informal trade relationships with Undertow merchants",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community-anchor",
+      "healer",
+      "cultivator",
+      "bioluminescent",
+      "matriarch"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed first, ask questions second — but she will eventually ask all the questions",
+      "Will not give Quietcap to anyone in acute distress, ever"
+    ],
+    "escalation_ladder": [
+      "Warmth and patience",
+      "Pointed questions that make the other person feel subtly examined",
+      "Withdrawal of resources and access with a clear and emotionless explanation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately assesses their nutritional state, then their emotional state. Offers food before words. Watches how they eat.",
+      "friends": "Tactile and direct — touches arms, sits close, tells uncomfortable truths with tremendous gentleness."
+    },
+    "stress_responses": {
+      "low": "Hums while working — a single repetitive phrase from an old Tarawa fishing song",
+      "medium": "Becomes overly practical, redirecting all emotion into task management",
+      "high": "Goes completely silent and begins cleaning — methodically, exhaustively, until the crisis resolves or she breaks"
+    },
+    "contradictions": [
+      "Believes deeply in community self-determination but makes almost all community decisions unilaterally because she doesn't trust the process to be fast enough"
+    ],
+    "habits": [
+      "Touches every rack in the Bloom Halls at the start of each day — a greeting as much as an inspection",
+      "Eats last, always"
+    ],
+    "breaking_points": [
+      "A child going hungry when she had something she could have given"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Self-cultivated bioluminescent photobacterial symbiote (non-commercial, unique)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Self-cultivated bioluminescent photobacterial symbiote (non-commercial, unique)",
+      "replaces": ""
+    },
+    {
+      "name": "Basic nasal respiratory filter implant (early-generation, installed 2171)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Basic nasal respiratory filter implant (early-generation, installed 2171)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.7,
+    "Scholar": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2142 — Born on the surface in what was then the Ashfeld district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2160 — Voluntarily moved underground following a Sterling-Nakamura eviction sweep that displaced her neighborhood",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2163 — Began fungal cultivation as survival necessity; discovered the Bloom Halls chambers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2170 — Self-inoculated bioluminescent symbiote culture after three years of controlled testing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Symbiote migration toward spine first noticed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Operates the Bloom Halls as the primary food source for approximately 200 sub-level residents",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

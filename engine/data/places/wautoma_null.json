@@ -1,0 +1,94 @@
+{
+  "id": "019d6143a9587570bf34f2fdcf2f99df",
+  "type": "place",
+  "name": "Wautoma Null",
+  "aliases": [
+    "Wautoma",
+    "The Null",
+    "Null Zone",
+    "The Last County Seat"
+  ],
+  "description": "Wautoma was a county seat. That sentence requires more unpacking than it should, because the concept of a county — a governmental subdivision with elected officials, tax authority, and public services — is as alien to the corridor generation as horse-drawn plows. Waushara County ceased to exist as a legal entity in 2143, dissolved along with every other Wisconsin county during the Corporate Consolidation. The courthouse wasn't demolished. Nobody bothered. It sits in the center of Wautoma like a fossil, its limestone facade still bearing the carved inscription 'WAUSHARA COUNTY COURTHOUSE — ERECTED 1913,' and inside its courtrooms the benches are still arranged for proceedings that will never occur. Rain comes through the roof. Ferns grow in the jury box. It is the most honest building in the corridor — a monument to the idea that governance was once a public function, left to rot by the entities that replaced it.\n\nWautoma Null is what happens to a place when nobody claims it. It sits west of Palladian's Red Granite operation, north of Ironclad's Berlin facility, and outside the signal footprint of the Fox Cities Nexus — a jurisdictional dead zone where no corponation has found sufficient economic incentive to assert sovereignty. The population of roughly three thousand exists in a state that corporate legal frameworks literally cannot describe: they are not citizens, not employees, not detainees, not refugees. They are simply present, in a place no one owns, doing what people do when the systems that defined their existence collapse — they improvise. Wautoma Null runs on barter, mutual aid, and a town council that meets in the old courthouse and makes decisions by consensus, in an unconscious echo of the democratic process the building was designed for.\n\nThe Null has become a waystation on the route between the corridor and the wild territories to the west and north. Runners — people who move goods, information, and occasionally human beings between corporate zones and ungoverned territory — pass through regularly, and the town's economy depends on provisioning them. It's also become a destination for people who are deliberately disappearing: corporate defectors, debt fugitives, witnesses who know too much, and the occasional operative who needs to be dead for a while. Wautoma's gift is invisibility. No surveillance grid, no signal infrastructure, no corporate census. If you reach the Null, you functionally cease to exist. For some people, that's the most valuable service the corridor can offer.",
+  "atmosphere": {
+    "sights": [
+      "The old courthouse, limestone and fern, its clock tower stopped at 3:47 — the moment the power grid was disconnected in 2143",
+      "Hand-painted signs replacing the holographic advertisements that exist everywhere else — directions, warnings, and community notices in actual paint on actual wood",
+      "Solar arrays and wind turbines cobbled together from salvaged components, the town's independent power grid visible on every rooftop",
+      "The darkness at night — real darkness, no light pollution, stars visible in a way that corridor residents have never experienced",
+      "Runners' vehicles parked at the provisioning depot, modified for off-grid travel with extra fuel cells and signal-dampening armor"
+    ],
+    "sounds": [
+      "Wind — unobstructed, unfiltered, carrying sounds from the surrounding wildlands that urban ears can't identify",
+      "The absence of machine hum — no server farms, no data conduits, no climate control. The silence is physical, a pressure on the eardrums",
+      "Town council debates echoing from the courthouse, audible through broken windows — democracy conducted at speaking volume",
+      "Generator startup sounds at dusk as the town's patchwork power grid comes online",
+      "Coyote packs in the surrounding territory, closer to town than they should be, recolonizing the spaces humans abandoned"
+    ],
+    "smells": [
+      "Wood smoke — Wautoma Null heats with actual fire, a smell that has become as exotic as perfume",
+      "Pine and earth from the encroaching forest, which has advanced three kilometers toward town since 2160",
+      "Cooking — real food, not synthetic, grown in community gardens and hunted from the wildlands",
+      "The particular clean emptiness of air that hasn't been processed, filtered, or scented by corporate AtmoSync systems"
+    ],
+    "feel": "Quiet in a way that frightens corridor visitors and soothes everyone else. Wautoma Null feels like the world used to feel, or at least like people imagine it did — slower, smaller, governed by weather and daylight instead of shift schedules and tier access. It is not a utopia. The winters are brutal, the medical resources are primitive, and the isolation is occasionally lethal. But it is free in a sense that the word has almost lost, and the people who live here carry themselves with the particular self-possession of those who've chosen difficulty over dependence.",
+    "tags": []
+  },
+  "demographics": "Approximately 3,000 permanent residents. No tier classification — the concept doesn't apply where no corponation holds sovereignty. A mix of original pre-Consolidation families who refused to leave, corridor refugees who chose disappearance over compliance, and a transient population of runners and travelers. Average age skews older than corridor norms — children are rare, and the ones who grow up here tend to leave for the Nexus or Meridian once they're old enough to want things the Null can't provide.",
+  "economy": "Barter-primary. The town provisions runners heading west and north, trading supplies for goods and information from both the corridor and the wild territories. Community gardens and hunting provide food. Salvaged technology is maintained and repaired rather than replaced. The most valuable commodity in Wautoma Null is information about safe routes through ungoverned territory — knowledge held by the oldest residents and traded carefully.",
+  "power_structure": "The town council — seven elected members who meet weekly in the courthouse. Decisions are made by consensus when possible, majority vote when necessary. The council has no enforcement mechanism beyond community pressure and the implicit threat of exile into territory that is increasingly wild and dangerous. It works because the alternative is not having it, and everyone here has seen what that looks like.",
+  "dangers": [
+    "Isolation — medical emergencies, equipment failures, and supply shortages can be fatal when the nearest corporate infrastructure is hostile and forty kilometers away",
+    "Rewilding pressure — the forest and its inhabitants are advancing, and the wildlife has had sixty years to lose its fear of humans and gain new characteristics from biotech contamination",
+    "Corporate annexation — the Null's value as a jurisdiction-free waystation makes it a target for any corponation that decides the strategic benefit of controlling the route west outweighs the cost of occupation",
+    "Runner conflicts — the provisioning economy attracts people moving illegal goods and people, and not all of them respect Wautoma's neutrality",
+    "Winter — without corporate climate infrastructure, winter in central Wisconsin is what it always was: a survival event that kills the unprepared"
+  ],
+  "opportunities": [
+    "Disappearance services — for the right reason or the right price, Wautoma Null can make someone cease to exist in every database that matters",
+    "Route intelligence — knowledge of safe passage through ungoverned territory is extraordinarily valuable to anyone operating outside corporate zones",
+    "Off-grid staging — the Null is an ideal base for operations that require complete signal darkness and zero corporate surveillance",
+    "Analog living — skills, knowledge, and social structures that predate corporate dependency, preserved here and increasingly rare everywhere else"
+  ],
+  "story_hooks": [
+    "A runner arrives in Wautoma Null carrying something that multiple corponations want badly enough to break the town's obscurity — and the town council must decide whether to hand it over, hide it, or use it",
+    "Saltmarsh Telecom announces plans to extend its signal grid through Wautoma Null, which would connect the town to the corridor's communications infrastructure and simultaneously end its invisibility — the council is split between those who want connection and those who understand that connection means control",
+    "Something is killing livestock and occasionally people in the wildlands north of town — not wildlife behavior, something deliberate, and the tracks suggest a biotech origin that points back toward one of the corporate zones to the east"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Red Granite Pit (east)",
+      "Neshkoro Verdant (south)",
+      "Wild territories (west and north)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Runners moving goods and people between the corridor and ungoverned western territories",
+    "Corporate defectors and debt fugitives seeking to disappear from surveillance networks",
+    "Provisioning traders bringing corridor goods to exchange for route intelligence and wildland resources",
+    "Occasional Collective operatives using the Null as a signal-dark meeting point"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 44.0744,
+    "lng": -89.2868,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "debt",
+    "medical",
+    "bar",
+    "rain",
+    "dark",
+    "survival",
+    "refugee",
+    "food"
+  ]
+}

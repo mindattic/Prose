@@ -1,0 +1,51 @@
+{
+  "id": "019d6143ab1e79129622deda8d44a8f0",
+  "name": "Catalytic Interstitial Desiccation Drone CIDD-3 'Husk'",
+  "type": "weapon",
+  "aliases": [
+    "Husk",
+    "The Dryer",
+    "Dust Drone",
+    "Saltmaker"
+  ],
+  "category": "drone",
+  "description": "The CIDD-3 is a slow-moving, high-endurance drone platform developed by HELIX BIOSYSTEMS as a derivative of their industrial tissue preservation research line. It operates by projecting a focused catalytic beam that accelerates osmotic pressure differentials across cell membranes in targeted tissue, rapidly drawing interstitial fluid outward through a process that mimics, at a greatly accelerated rate, the biochemical mechanisms of severe dehydration. Targets experience acute desiccation effects in exposed tissue — cracking skin, seizing muscles, intense thirst signals — without any actual systemic dehydration occurring, as the effect is surface-local and depth-limited to approximately 4cm of tissue penetration.\n\nThe drone's defining characteristic is its patience. The CIDD-3 is not designed for fast engagements. It moves slowly, hovers at a fixed standoff distance, and applies its catalytic beam in sustained, low-intensity pulses optimized for maximum discomfort over time rather than rapid incapacitation. Its autonomous target-lock system uses a proprietary HELIX BIOSYSTEMS moisture-differential sensor array to distinguish living targets from environmental objects with remarkable accuracy, and it will maintain lock on a moving target at walking pace indefinitely until its power cell is exhausted or it is physically destroyed.\n\nOperators have noted that the CIDD-3 produces a faint, distinctive smell — a dry, slightly saline odor — that experienced field personnel have learned to recognize as an early warning. In enclosed environments, this olfactory signature is often the only indication of deployment before effects begin.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Catalytic osmotic pressure acceleration",
+    "Moisture-differential sensor targeting",
+    "Sustained low-intensity beam projection"
+  ],
+  "specifications": "dimensions: 28cm x 14cm x 14cm\noperational speed: Max 4m/s (pursuit mode), 0.5m/s (sustained application mode)\ntissue penetration depth: Approximately 4cm\neffective range: 2m–10m\ntargeting system: HELIX proprietary moisture-differential array\npower source: Long-duration lithium-polymer cell\nbattery life: Up to 4 hours continuous operation\nweight: 1.8kg\nolfactory signature: Faint saline/dry atmosphere odor at close range",
+  "tactical_use": "The CIDD-3 excels in siege and containment scenarios where operators want to make a position untenable over time without committing to direct engagement. A single drone deployed into a room or corridor will, within ten to fifteen minutes, make that space miserable enough that most unprotected occupants will seek to leave. Security teams use them to drive targets toward choke points. Interrogators use them in sustained sessions as an alternative to more legally complex methods. Some operators use multiple units in relay — one active, one charging — to maintain indefinite area presence.",
+  "cultural_context": "Within Meridian 88's corporate detention system, the CIDD-3 occupies a strange legal grey zone — it is licensed for use in 'compliance facilitation' contexts, a euphemism that has been dissected at length by civil rights advocates. Because it leaves no lasting injury in standard operating parameters, it rarely triggers the medical documentation requirements associated with more overtly damaging weapons. Street communities near processing centers refer to people who've been held in CIDD-3 environments as 'Husks' — a term that has spread beyond its origin to describe anyone visibly worn down by institutional pressure.",
+  "known_users": [
+    "HELIX BIOSYSTEMS corporate detention staff",
+    "Licensed private security firms (containment division)",
+    "Meridian 88 Municipal Compliance Bureau",
+    "Freelance operators with corporate security licensing"
+  ],
+  "story_hooks": [
+    "Someone is deploying CIDD-3 units in the ventilation network of a residential block — residents are getting sick, the building management claims ignorance, and the drones keep disappearing before investigators arrive.",
+    "A HELIX BIOSYSTEMS licensing auditor has gone missing after flagging an anomalous pattern in CIDD-3 deployment logs across three different detention facilities run by the same shell company.",
+    "The players are trapped in a building with a malfunctioning CIDD-3 that has locked onto a target designation it cannot find — and its sensor array is broad enough that everyone in the building qualifies."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "war",
+    "ai",
+    "corporate",
+    "power",
+    "medical",
+    "injury",
+    "rights",
+    "hover",
+    "tier 3"
+  ]
+}

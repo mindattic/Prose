@@ -1,0 +1,236 @@
+{
+  "id": "019d6143a5df700ab383c517c2d3f03e",
+  "type": "character",
+  "name": "Crisanto Olu-Magnusson",
+  "aliases": [
+    "Cris",
+    "Nightcar"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit operator — drives a night-shift surface tram on the Geartown-Bronzeline circuit",
+  "age": 34,
+  "status": "active",
+  "location": "Lives in a capsule flat in Bronzeline; works the tram route between Geartown depot and the Bronzeline terminus",
+  "description": "Crisanto is lean and long-limbed, with the particular posture of someone who has spent years in a driver's seat — slightly forward, shoulders loose, hands always finding something to rest near. He has his mother's Yoruba complexion, deep and warm, and his father's Scandinavian bone structure, which gives his face an angular elegance he is utterly unaware of. His hair is cut close on the sides and left natural on top, and he has geneware-modified irises that cycle slowly through amber, gold, and pale yellow — a cosmetic mod he saved up for at twenty-two and has never regretted. A faded scar bisects his left eyebrow from a childhood fall.\n\nHe is a fundamentally decent man who chose a fundamentally anonymous job and has found, to his mild surprise, that this suits him. He talks to his passengers — not intrusively, but gently, in the way of a good host — notices who boards tired, who boards scared, who needs the fare scanner to 'malfunction' because they're clearly two days from eating. His tram is clean. He plays low-frequency ambient music through the cabin speakers after midnight and thinks of it as a public service. He carries a notebook — actual paper — in which he sketches the faces of interesting passengers, never with names, never to share.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being trapped in a life that was chosen for him rather than by him",
+      "Invisibility — that he will pass through the world and leave no impression"
+    ],
+    "core_desires": [
+      "To make small, reliable kindnesses that compound over time",
+      "To eventually do something with his drawings — he's never admitted this out loud"
+    ],
+    "coping_mechanisms": [
+      "Routine as armor — the tram schedule gives shape to anxiety",
+      "Sketching as a way of paying attention to things he can't speak about"
+    ],
+    "blind_spots": [
+      "He mistakes passivity for peace and has not yet learned the difference",
+      "He gives strangers enormous benefit of the doubt because he needs to believe people are mostly good"
+    ],
+    "secret": "Six months ago he witnessed two Axiom security contractors board his tram at 02:30, carry something in a cargo case that leaked a faint bioluminescent fluid, and disembark at a stop that has no registered destination on his route map. He sketched both of them. He hasn't decided what to do with the sketches."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and considered, uses more words than necessary when nervous, fewer when comfortable; peppers speech with Yoruba affirmations ('abi?' — right?, 'sha' — anyway) absorbed from his mother",
+    "cadence": "Even and low, like late-night radio; pauses mean he's actually thinking",
+    "verbal_tics": [
+      "'Abi?' at the end of observations seeking agreement",
+      "Quietly says 'okay, okay' to himself when processing something difficult"
+    ],
+    "example_lines": [
+      "'Last stop is Bronzeline terminus in about eight minutes, sha. You need somewhere warm before then, I can slow down a little at Ironvein corner, abi?'",
+      "'I see a lot from this seat. More than people think. The tram is like... furniture. Nobody performs for furniture.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The sketches of the Axiom contractors — someone on the tram recognized one of them and is now following Crisanto",
+    "A regular passenger — an elderly woman who boards at 03:00 every Thursday and rides to the terminus and back without getting off — has stopped appearing, and Crisanto is worried enough to ask questions",
+    "Ferrogate Transit is piloting an AI co-pilot program that will replace human operators on night routes; Crisanto's union chapter is fracturing over whether to strike"
+  ],
+  "narrative_function": "Mobile information source — has seen and heard things across a wide geography on his route. Provides a safe transit option for characters who need to move quietly. Can serve as a quiet quest giver or a witness to something he shouldn't have seen.",
+  "augmentations": "Geneware irises (amber-to-gold cycle); neural-link to tram control system (standard Ferrogate issue, non-removable per contract); a small subdermal clock on his inner wrist he can read by pressing",
+  "daily_life": "Picks up his tram at Geartown depot at 21:00, runs the circuit until 05:00, logs out, takes the crosstown back to Bronzeline, sleeps until early afternoon. He spends two or three waking hours sketching, eating cheap noodles from a cart near his building, and visiting the transit E.L.F. shrine at the depot.",
+  "affiliation": "Ferrogate Transit (Tier 2 union member, Surface Division)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 8,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Quiet Witness",
+      "Night Worker",
+      "Accidental Archivist",
+      "Union Member",
+      "Small Acts of Decency"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep the tram on schedule — everything else is negotiable around that",
+      "Protect passengers while they're aboard; what happens off the tram is not his jurisdiction, which he knows is a lie he tells himself",
+      "Never sketch someone who seems dangerous — he has not kept this rule"
+    ],
+    "escalation_ladder": [
+      "Redirect with calm, professional authority",
+      "Issue a formal verbal warning through the intercom system",
+      "Lock the afflicted car and call Ferrogate Transit security",
+      "Physically intervene only if a passenger is in immediate danger"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm — attentive without being intrusive, offers small kindnesses quietly",
+      "friends": "The nightcar drops away and he becomes animated, funny, and oddly philosophical; hard to get him out of a conversation he's enjoying"
+    },
+    "stress_responses": {
+      "low": "Goes very quiet, focuses on the controls even when there's nothing to focus on",
+      "medium": "Starts sketching on his break, eats nothing",
+      "high": "Drives the route anyway — routine is his anchor — but his hands shake until 04:00"
+    },
+    "contradictions": [
+      "Craves recognition but is terrified of being seen; the sketches are for him and for no one and he knows that doesn't make sense",
+      "Generous to strangers, neglectful of himself in ways he doesn't frame as neglect"
+    ],
+    "habits": [
+      "Checks the tram interior twice before every shift starts, regardless of whether the previous driver did",
+      "Offers a quiet 'ride well' to the tram's E.L.F. before engaging the drive system",
+      "Always has a pencil behind his ear"
+    ],
+    "breaking_points": [
+      "Witnessing direct violence against a passenger — he will stop the tram and act even without a plan",
+      "Being told his job doesn't matter because it's 'just transit'"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9,
+    "Social Chameleon": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Bronzeline to a Yoruba-Swedish family; father worked Ferrogate freight division",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Ferrogate Transit Surface Division after a brief failed attempt at community college",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Permanently assigned to the Geartown-Bronzeline night circuit after requesting it; most operators don't want nights",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witnessed the Axiom contractors; began keeping the sketchbook locked in his tram's equipment compartment",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

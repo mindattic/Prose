@@ -1,0 +1,125 @@
+{
+  "id": "019d6143a94b712baf7efef1d900d431",
+  "type": "place",
+  "name": "The Phosphene Corridor",
+  "aliases": [
+    "The Glow",
+    "Neon Mile",
+    "Phosph",
+    "The Strip"
+  ],
+  "description": "A six-kilometer commercial artery carved through the mid-levels of the megacity's western residential stacks, The Phosphene Corridor exists in a state of perpetual artificial noon. Every surface that can hold a light source does — holographic canopies overlap in layers three and four deep, advertisement drones circle in lazy holding patterns, and the storefronts themselves have been rebuilt so many times that their facades are geological strata of signage. What began as a modest entertainment district in the city's second construction phase has metastasized into one of the most densely trafficked consumer zones in the entire corridor, drawing an estimated 400,000 pedestrian movements per day across its elevated walkways and sub-street arcades.",
+  "atmosphere": {
+    "sights": [
+      "Overlapping holographic advertisements in seven languages",
+      "Skin-mod parlors with live demonstration windows",
+      "Crowds so dense they move in visible currents",
+      "Vendor stalls bolted directly onto structural support columns",
+      "AR overlay halos flickering around every storefront",
+      "Food carts trailing steam into the already-thick air",
+      "Corporate brand mascots rendered at ten-meter scale"
+    ],
+    "sounds": [
+      "Competing audio advertisements bleeding into each other",
+      "The rhythmic thump of bass from a dozen club entrances",
+      "Haggling in Tagalog, Mandarin, Polish, and creolized English",
+      "Transit tubes humming through overhead conduits",
+      "Street performers with amplified implant instruments",
+      "The constant chime of transaction confirmations"
+    ],
+    "smells": [
+      "Synthetic meat browning on open grills",
+      "Ozone from overworked light arrays",
+      "Cheap chemical perfume from skin-mod booths",
+      "Recycled air with a faint sweetness from atmospheric processors",
+      "Spilled synth-alcohol on hot pavement",
+      "Burning insulation from overtaxed electrical conduits"
+    ],
+    "feel": "Overwhelming and relentless — the Corridor operates at a frequency that makes calm thought difficult. First-timers describe it as beautiful and suffocating in equal measure. Regulars have developed a thousand-meter stare that lets them move through the chaos without engaging it.",
+    "tags": []
+  },
+  "demographics": "Predominantly working-class and lower-mid-tier residents from adjacent residential stacks, with a significant tourist and transient population. Heavy representation from Southeast Asian, Eastern European, and Latin American diaspora communities. A visible underclass of unlicensed vendors and gig-economy workers fills the margins.",
+  "economy": "Retail, entertainment, food service, and black-market adjacency. The Corridor generates enormous transaction volume but little of the profit stays local — most storefronts are franchises or corporate subsidiaries paying rent to holding companies registered in the Meridian Core. An informal parallel economy of unlicensed vendors, counterfeit goods, and off-ledger services exists beneath the licensed surface.",
+  "power_structure": "Nominally administered by the Mid-Level Commerce Authority, a semi-public body that collects vendor licensing fees and contracts security to a rotating roster of private firms. Real power is distributed among three competing syndicate families — the Mak-Suarez network, the Polianski brothers, and a newer faction called the Aureole Collective — who each control protection rackets, preferred vendor placement, and the lucrative unlicensed service corridors beneath the main strip.",
+  "dangers": [
+    "Pickpocket gangs using crowd density as cover, some augmented with reflex boosters",
+    "Counterfeit cyberware sold from reputable-looking storefronts",
+    "Syndicate enforcement actions that spill into civilian spaces",
+    "Structural overload events when crowd density exceeds platform tolerances",
+    "Atmospheric processors failing and causing dangerous particulate buildup",
+    "Corporate extraction teams operating without warrants in the crowd",
+    "Addiction vectors — pharmaceutical vendors with predatory sampling tactics"
+  ],
+  "opportunities": [
+    "Access to goods and services unavailable in licensed markets",
+    "Anonymous transactions if you know which vendors to use",
+    "Information brokers embedded in food stalls and massage parlors",
+    "Skilled black-market surgeons operating out of back rooms",
+    "Recruitment by syndicate factions looking for capable outsiders",
+    "Cheap bulk goods for resale elsewhere in the city"
+  ],
+  "story_hooks": [
+    "A vendor who has been operating the same noodle stall for thirty years has witnessed something that three different factions want kept quiet — and she's been quietly selling what she knows to the highest bidder",
+    "One of the Corridor's most beloved holographic advertisement characters has developed what appears to be emergent behavior, and its increasingly strange broadcasts are drawing crowds and corporate panic in equal measure",
+    "The Aureole Collective is making a move to consolidate control of the Corridor, and the Mak-Suarez network needs outside talent to hit three targets simultaneously before the window closes",
+    "A series of disappearances among unlicensed vendors is being ignored by authorities — someone is harvesting augmented workers for parts, and the only witnesses are people nobody is looking for"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Shelf",
+      "The Laceworks",
+      "Kessler Interchange"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Stack-level residential workers on leisure time",
+    "Tourists from the corridor's wealthier zones",
+    "Syndicate foot soldiers on collection rounds",
+    "Off-duty corporate security personnel",
+    "Gig couriers using it as a waypoint hub",
+    "Journalists and documentary crews",
+    "Addiction counselors and street medics from NGOs"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Lantern Market",
+      "description": "A 200-meter sub-arcade beneath the main strip where the oldest vendors in the Corridor operate, many of them third-generation families who predate the current administrative structure. The market is dim, warm, and aggressively non-digital — most transactions are cash or barter, and the unspoken rule is that no recording devices function here without being noticed and ejected.",
+      "tags": []
+    },
+    {
+      "name": "Cascade",
+      "description": "The Corridor's most prominent club, stacked across four levels with a transparent floor system that lets patrons on upper levels look down through the dancing crowds below them. Owned publicly by a hospitality conglomerate but functionally controlled by the Polianski brothers, Cascade is where mid-tier fixers and lower-rung corporate operatives meet in an environment of plausible deniability.",
+      "tags": []
+    },
+    {
+      "name": "The Ninth Arch",
+      "description": "A structural support arch that has been colonized by a semi-permanent community of unlicensed vendors, sleeping quarters, and informal services. Estimated 300-400 people live in and around the Arch's hollow spaces. It has its own internal economy, its own dispute resolution customs, and a deeply territorial attitude toward outsiders — but those with the right introduction can find almost anything here.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.883,
+    "lng": -87.615,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "gang",
+    "love",
+    "augment",
+    "cyberware",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "wealth",
+    "market",
+    "neon",
+    "food",
+    "drone"
+  ]
+}

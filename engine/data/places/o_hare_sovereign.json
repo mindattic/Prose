@@ -1,0 +1,100 @@
+{
+  "id": "019d6143a92b764c96d82ea3eea4b395",
+  "type": "place",
+  "name": "O'Hare Sovereign",
+  "aliases": [
+    "O'Hare",
+    "The Port",
+    "O'Hare Free Zone",
+    "The Runway"
+  ],
+  "description": "O'Hare Sovereign is the hole in the map. When corporate sovereignty claims carved Meridian 88 into jurisdictional territories, the airport was the first piece claimed and the most completely transformed. It is no longer an airport in any traditional sense — it is a sovereign logistics zone, a corporate free port, and the single most important physical node in Meridian 88's connection to the outside world. Three corponations share sovereignty over O'Hare's territory in a rare joint-governance arrangement: Helion controls passenger processing and data, Vantage Meridian controls cargo and logistics, and Axiom Industrial controls the aerospace infrastructure itself. The three-way governance creates jurisdictional complexity that would be bureaucratic nightmare if it were not, in fact, the point — the complexity is the product, because complexity creates gaps, and gaps create opportunities for the kind of commerce that thrives in the spaces between rules.\n\nThe physical footprint is immense — O'Hare Sovereign occupies more land area than any other single jurisdiction in Meridian 88. The original airport's footprint has expanded outward, consuming the surrounding neighborhoods and replacing residential blocks with logistics infrastructure: automated cargo handling systems, drone launch platforms, VTOL pads, fuel processing facilities, and the Runway — an eight-kilometer strip that can accommodate the suborbital freight carriers that connect Meridian 88 to the global supply chain. The scale is inhuman, designed for machines and cargo rather than people, and the human population that exists within the zone reflects this: workers are temporary, badged, tracked, and discarded when their contracts expire.\n\nThe Terminal is where humans interface with the machine. A vast, multi-level processing facility that handles the passengers, refugees, diplomats, corporate transfers, and undocumented travelers who move through O'Hare's gates daily. The upper levels are corporate transit — clean, efficient, surveilled, and expensive. The lower levels are general processing — crowded, slow, invasive, and designed to extract maximum data from every person who passes through. Below general processing, there are levels that do not appear on any public directory — the transit detention facilities where people whose documentation does not satisfy the three-way jurisdictional requirements are held in a legal limbo that can last days, weeks, or indefinitely.\n\nThe free-port economy is O'Hare Sovereign's true purpose. Cargo that enters the zone is subject to the governance of whichever corponation processes it, which means that by routing goods through the right jurisdictional channel, importers can subject their cargo to whichever regulatory framework is most permissive. Weapons that are prohibited in Helion territory can be processed through Axiom's jurisdiction. Data that Vantage restricts can be routed through Helion's processing. Biological materials that all three nominally prohibit somehow find their way through the gaps between their overlapping authorities. The free port is not lawless — it is over-lawed, with three competing legal systems creating a regulatory labyrinth that only specialists can navigate, and navigating it is one of the most lucrative professions in Meridian 88.",
+  "atmosphere": {
+    "sights": [
+      "The Runway — eight kilometers of landing strip lit by approach lighting that is visible from orbit",
+      "Automated cargo systems moving containers with inhuman precision, twenty-four hours without pause",
+      "The Terminal's layered architecture — corporate transit gleaming above, general processing grinding below",
+      "Suborbital freight carriers descending on approach — massive, loud, trailing heat signatures visible for kilometers",
+      "Badge-tracked workers moving in shift patterns, color-coded by corponation jurisdiction",
+      "VTOL pads launching in sequence, the staccato rhythm of logistics in motion"
+    ],
+    "sounds": [
+      "Engine noise — constant, layered, ranging from the deep rumble of freight carriers to the high whine of VTOL systems",
+      "The Terminal's public address system announcing in twelve languages, the same information in different jurisdictional contexts",
+      "Automated cargo handling — the mechanical percussion of containers being sorted, scanned, and routed",
+      "The particular silence of the transit detention levels, insulated by design",
+      "Security checkpoint tones — badge verification, access granted, access denied, repeated thousands of times per hour"
+    ],
+    "smells": [
+      "Aviation fuel — the chemical baseline of every breath in the zone",
+      "Recycled air in the Terminal, processed to different quality standards by level",
+      "Cargo holds opened in processing — the mixed scents of goods from every origin point on the planet",
+      "Ozone and overheated electronics from the automated systems",
+      "The detention levels smell like disinfectant and fear — a combination that is universal across holding facilities"
+    ],
+    "feel": "Overwhelming and dehumanizing. O'Hare Sovereign operates at a scale that reduces people to cargo — processed, sorted, routed, and valued by throughput rather than identity. The three-way jurisdiction creates a permanent sense of uncertainty about which rules apply, which makes the zone simultaneously the freest and most controlled space in Meridian 88. Power here is not about authority — it is about knowing which authority to invoke.",
+    "tags": []
+  },
+  "demographics": "Transient worker population of approximately 40,000-60,000, badge-tracked and jurisdiction-assigned. Permanent residents effectively zero — the zone is not designed for habitation. Transit population varies between 100,000-200,000 on any given day. The detention levels hold an undisclosed number of people in jurisdictional limbo.",
+  "economy": "The free-port economy is Meridian 88's primary interface with the global supply chain. Revenue is split between the three sovereign corponations according to processing jurisdiction. The regulatory arbitrage industry — specialists who route cargo and people through optimal jurisdictional channels — generates billions annually. The underground economy within the zone focuses on transit services, document fabrication, and the movement of goods and people through jurisdictional gaps.",
+  "power_structure": "Three-way corporate sovereignty: Helion (passenger and data), Vantage Meridian (cargo and logistics), Axiom Industrial (aerospace infrastructure). A joint coordination body called the Triad Commission manages inter-jurisdictional disputes, but in practice each corponation governs its domain independently. Security is provided by each corponation within its jurisdiction, creating overlapping patrols with different rules of engagement. The gaps between jurisdictions are where the real power operates — the fixers, brokers, and regulatory arbitrage specialists who know how to move through the seams.",
+  "dangers": [
+    "Three overlapping security jurisdictions with different rules of engagement — crossing the wrong line can trigger an incident with no clear resolution authority",
+    "Transit detention — being flagged by any of the three jurisdictions can result in indefinite holding without recourse",
+    "The free-port economy attracts the full spectrum of organized criminal enterprise, operating behind regulatory arbitrage cover",
+    "Badge tracking means total surveillance within the zone — every movement logged by at least one jurisdiction",
+    "Suborbital freight operations create physical danger zones where ground-level humans are not expected to survive",
+    "Document seizure — the three jurisdictions do not share data, which means travel documents valid in one zone may be flagged in another"
+  ],
+  "opportunities": [
+    "O'Hare Sovereign is the only way in or out of Meridian 88 for most people — controlling access to transit is enormously valuable",
+    "Regulatory arbitrage skills are among the most lucrative in the corridor — knowing the three jurisdictions is a career",
+    "The jurisdictional gaps create space for moving goods and people that cannot be moved through any single corporate system",
+    "The transit population includes people from everywhere — O'Hare is the best place in Meridian 88 for global intelligence",
+    "The Triad Commission's inter-jurisdictional disputes create leverage opportunities for anyone with information about corporate wrongdoing in the zone"
+  ],
+  "story_hooks": [
+    "A person is being held in transit detention who should not exist — their biometric data matches someone who died in corporate records three years ago, and all three jurisdictions are claiming authority over the case while secretly trying to acquire the detainee for different reasons. Someone needs to extract them before any of the three corponations succeeds.",
+    "A cargo container routed through Axiom's jurisdiction has been flagged by Helion's data systems as containing biological material that violates all three sovereignty codes. The container is sitting on a processing pad, and the clock is ticking before Axiom's automated systems route it to its destination. The contents could be evidence of corporate bioweapons research — or it could be a Helion false-flag operation designed to trigger a Triad Commission investigation that weakens Axiom's position.",
+    "A regulatory arbitrage specialist has disappeared inside the zone — last badged entering Vantage's cargo jurisdiction and never badged out. Their client list includes some of the most sensitive operations in the free port. Whoever finds them first controls a significant amount of leverage over multiple powerful interests."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Meridian Core",
+      "The Circuit",
+      "The Spire",
+      "The Corridor"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Badge-tracked logistics workers on rotating shifts",
+    "Regulatory arbitrage specialists navigating jurisdictional gaps",
+    "Corporate security personnel from all three sovereign entities",
+    "Transit passengers ranging from corporate executives to undocumented refugees",
+    "Fixers and brokers who specialize in the zone's three-way jurisdictional complexity"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.978,
+    "lng": -87.904,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "weapon",
+    "war",
+    "secret",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "night",
+    "refugee",
+    "drone"
+  ]
+}

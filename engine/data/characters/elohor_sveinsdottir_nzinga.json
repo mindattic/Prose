@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a601713fa37c921b504770bc",
+  "type": "character",
+  "name": "Elohor Sveinsdóttir-Nzinga",
+  "aliases": [
+    "Elo",
+    "The Shelf Whisperer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Sociologist specializing in Shelf community formation and informal economy networks",
+  "age": 41,
+  "status": "active",
+  "location": "University Spine, with frequent fieldwork in Hough Reclamation and Brightmoor Reclamation",
+  "description": "Elohor is a compact woman with deep umber skin and close-cropped natural hair shot through with threads of bioluminescent copper — a geneware mod she got in grad school and never removed. She wears the same style of worn canvas field jacket over institutional-issued thermals, her pockets always bristling with analogue notecards she doesn't fully trust to cloud backup. Her eyes are her most striking feature: one natural dark brown, one fitted with a patterned iris mod in amber tessellation — a gift from a Shelf elder she interviewed fifteen years ago that she accepted out of politeness and then fell in love with. She moves with the deliberate, unhurried energy of someone who has spent years learning to make people comfortable, to seem unthreatening, to wait.\n\nElohor is beloved by her graduate students and quietly despised by certain senior faculty who find her fieldwork methods 'insufficiently rigorous.' She publishes in peer-reviewed journals but she also posts plain-language summaries to community meshboards and shows up to Shelf neighborhood councils without an agenda. She genuinely likes people in a way that her academic peers find vaguely embarrassing. Her research on informal mutual aid networks in Hough Reclamation is considered foundational, but she worries constantly that her work has been used by parties she didn't intend — that somewhere, a Tessera urban planner used her data to identify which Shelf communities were 'stable enough to absorb' and which could be cleared.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That her research causes more harm than good",
+      "That she is ultimately just another extractive outsider regardless of her intentions"
+    ],
+    "core_desires": [
+      "To document lives that would otherwise go unrecorded",
+      "To make the Shelf legible to power without making it vulnerable to power"
+    ],
+    "coping_mechanisms": [
+      "Excessive note-taking as a way of not having to feel immediately",
+      "Cooking elaborate meals from her father's Delta recipes when overwhelmed"
+    ],
+    "blind_spots": [
+      "Underestimates how much her university affiliation protects and distances her simultaneously",
+      "Assumes people share her commitment to process over outcome"
+    ],
+    "secret": "Three years ago she discovered that a Tessera urban development subsidiary had quietly licensed her dissertation data to map 'displacement pressure points' in Brightmoor. She said nothing publicly because the whistleblowing would have ended the access she needs to keep protecting the communities she studies. She has not forgiven herself."
+  },
+  "speech_patterns": {
+    "vocabulary": "Academic precision mixed with Shelf vernacular she has genuinely absorbed; avoids jargon in the field, deploys it like armor in faculty meetings",
+    "cadence": "Unhurried, with long thoughtful pauses; asks questions more than she makes statements",
+    "verbal_tics": [
+      "'Walk me through that'",
+      "'What does that look like on the ground'",
+      "Repeats back what someone just said before responding"
+    ],
+    "example_lines": [
+      "'I'm not here to tell your story. I'm here to make sure someone records that you had one.'",
+      "'The data says X but the data was collected by me and I have biases I haven't finished cataloguing yet.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Shelf community elder she's close to goes missing the week after Elohor published a paper about that neighborhood's resource distribution — she's not sure if the paper is connected but she can't rule it out",
+    "A graduate student of hers has started feeding her raw field data to an anonymous meshboard account that is definitely not hers, and the posts are getting traction with Shelf activist networks"
+  ],
+  "narrative_function": "Primary information source on Shelf social dynamics, informal economies, and community networks; moral compass figure who complicates easy narratives about the poor; potential quest giver when her research puts her community contacts in danger",
+  "augmentations": "Patterned amber tessellation iris mod (right eye), bioluminescent copper hair threading (geneware), standard neural mesh for note-taking and data capture",
+  "daily_life": "Teaches two seminars on Tuesdays, spends Wednesdays and Thursdays in the field interviewing Shelf residents, Friday mornings writing, Friday afternoons in contentious department meetings she attends out of duty rather than hope.",
+  "affiliation": "Meridian Civic University — Department of Social Ecology",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fieldworker",
+      "community-embedded",
+      "ethically-conflicted",
+      "institutional-outsider",
+      "shelf-fluent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always get community consent before publishing anything that could identify individuals",
+      "Never share fieldwork data with corponation entities regardless of funding implications",
+      "Protect sources even at professional cost"
+    ],
+    "escalation_ladder": [
+      "Patient engagement and clarifying questions",
+      "Firm but non-confrontational refusal",
+      "Documented formal complaint through institutional channels",
+      "Public statement if institutional channels fail"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but observant — she's always cataloguing, though she tries to make it feel like genuine interest because it is",
+      "friends": "Deeply loyal, checks in constantly, sends food"
+    },
+    "stress_responses": {
+      "low": "Takes longer walks through whatever neighborhood she's studying",
+      "medium": "Becomes very quiet and writes in her analogue notebooks obsessively",
+      "high": "Disappears into a two-day cooking project and doesn't answer comms"
+    },
+    "contradictions": [
+      "Believes in radical transparency but keeps her Tessera discovery completely secret",
+      "Critiques extractive research practices but sometimes has to make hard calls about whose story gets told"
+    ],
+    "habits": [
+      "Leaves small data offerings at the E.L.F. shrine in the Hough Reclamation community center before interviews",
+      "Writes every research subject a handwritten thank-you note via physical post"
+    ],
+    "breaking_points": [
+      "Learning that her data directly caused someone's displacement or death",
+      "Being forced by the university to hand over field recordings to a corponation"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "well-maintained",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "original installation, never upgraded",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Perpetual Student": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Grainfort to a Delta-diaspora father and an Icelandic-Angolan mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed undergraduate thesis on informal currency systems in Ironvein",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Fieldwork in Hough Reclamation results in foundational dissertation on mutual aid network formation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered Tessera licensing of her dissertation data; chose silence; ongoing guilt",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Currently in year three of a longitudinal study on Brightmoor community resilience post-remediation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

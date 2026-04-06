@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58b7c30a3af47cfb7f1e3e7",
+  "name": "Quick Study",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Learns new things at frightening speed",
+  "behavioral_signature": "Absorbs and applies information rapidly",
+  "under_stress": "Learns even faster under pressure",
+  "at_rest": "Picking up new skills, always",
+  "will_always": [
+    "learn fast"
+  ],
+  "will_never": [
+    "struggle with basics"
+  ],
+  "unless": [
+    "speed of learning creates dangerous overconfidence"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Generalist",
+      "threshold": 0.7,
+      "context": "broad learning"
+    },
+    {
+      "archetype": "Street Smart",
+      "threshold": 0.65,
+      "context": "fast adaptation"
+    }
+  ],
+  "opposite_of": [
+    "Slow Burn"
+  ],
+  "tags": [
+    "fast",
+    "adaptive"
+  ]
+}

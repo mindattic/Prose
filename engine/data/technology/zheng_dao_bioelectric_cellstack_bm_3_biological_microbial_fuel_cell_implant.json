@@ -1,0 +1,61 @@
+{
+  "id": "019d6143aa587fb1bc116a41e5d526be",
+  "name": "Zheng-Dao Bioelectric CellStack BM-3 Biological Microbial Fuel Cell Implant",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric CellStack BM-3 Biological Microbial Fuel Cell Implant",
+  "type": "technology",
+  "aliases": [
+    "Gut Battery",
+    "BioCell",
+    "BM-3",
+    "Fermenter"
+  ],
+  "subcategory": "energy",
+  "description": "The CellStack BM-3 is a surgically implanted biological microbial fuel cell array designed to harvest electrical energy from the electrochemical activity of engineered gut microbiome colonies. Developed by Zheng-Dao Bioelectric as a long-duration auxiliary power source for high-draw neural augmentations, the BM-3 consists of three titanium-encased fuel cell chambers implanted in the peritoneal space, each seeded with a proprietary strain of Zheng-Dao's GeoElectric-7 exoelectrogenic bacteria. These organisms oxidize metabolic byproducts — acetate, lactate, and short-chain fatty acids — drawn passively from intestinal interstitial fluid, generating a sustained low-amperage direct current output of 15–40 mA at 0.8–1.2 V per chamber. A tri-chamber array produces sufficient power to continuously supplement or replace standard battery packs for mid-tier neural implants, eliminating the need for external recharging in routine use.\n\nThe BM-3's key innovation over earlier biofuel cell prototypes is its Symbiotic Interface Layer (SIL) — a semi-permeable hydrogel membrane coating each chamber that allows metabolite exchange while preventing immune recognition of the bacterial colonies. This dramatically reduces the chronic inflammation and fibrous encapsulation that rendered previous designs clinically unreliable within months of implantation. Combined with Novafold's ImmunoVeil TX-4 rejection suppression protocol as a standard co-prescription, the BM-3 achieves a clinically validated operational lifespan of 6–9 years before bacterial colony viability declines and chamber replacement is required. Output degrades predictably with poor nutrition, illness, or significant metabolic disruption — a vulnerability with real-world consequences for users in food-insecure environments.\n\nThe BM-3 is primarily marketed to Tier 2 and Tier 3 augmented citizens who rely on high-draw cortical or sensory implants but lack the infrastructure access or financial means to maintain dedicated external charging hardware. In practice, it has also become popular among operatives and couriers in professions where going off-grid for extended periods is operationally necessary — the implant generates no detectable electromagnetic signature during normal operation, making it attractive for those who need to disappear from power-grid monitoring systems.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "ZHENG-DAO BIOELECTRIC",
+    "NOVAFOLD PHARMACEUTICALS",
+    "HELIX BIOSYSTEMS"
+  ],
+  "base_technologies": [
+    "Microbial fuel cell bioelectrochemistry",
+    "Exoelectrogenic bacterial engineering",
+    "Semi-permeable hydrogel membrane fabrication",
+    "Peritoneal implant surgical protocols",
+    "Rejection suppression pharmacology"
+  ],
+  "enables": [
+    "Off-grid neural augmentation operation",
+    "Extended covert operations without recharging infrastructure",
+    "High-draw cortical implant viability in low-infrastructure zones",
+    "Bioelectric power integration with implanted medical devices"
+  ],
+  "social_impact": "The CellStack BM-3 has created a troubling dependency loop for lower-tier augmented citizens: the implant solves the recharging problem but ties an individual's neural augmentation functionality directly to their nutritional status. In Meridian 88's food-insecure Tier 3 and 4 zones, users experiencing malnutrition report progressive degradation of augmentation performance — blurred neural interfaces, lag in prosthetic response, sensory implant dropout — before they experience obvious hunger symptoms. Zheng-Dao markets this as 'intuitive biofeedback,' but critics and street medics describe it as effectively penalizing poverty with cognitive impairment. The company's replacement chamber service contracts are priced to ensure ongoing revenue dependency, and colony viability voids are not covered under standard Meridian 88 augmentation warranties.",
+  "story_hooks": [
+    "A series of neural augmentation failures in the Cairn District traces back not to hardware defects but to a contaminated food supply deliberately depleted of the specific metabolites the BM-3 bacteria require — someone is selectively disabling augmented residents",
+    "Zheng-Dao's proprietary GeoElectric-7 bacterial strain has been reverse-engineered and is being cultured in a black-market biolab, but the bootleg version produces a byproduct that slowly damages the SIL membrane — users are experiencing internal infections months after installation",
+    "An operative hired for a deep-cover long-duration infiltration discovers her BM-3 output is being remotely monitored by Zheng-Dao through an undisclosed telemetry channel — the company knows exactly where she is and what she's eating",
+    "A Tier 4 community health worker is quietly helping residents maintain their BM-3 colonies through precise nutritional supplementation, effectively keeping an entire neighborhood's augmentations functional for free — Zheng-Dao has taken notice"
+  ],
+  "tags": [
+    "energy",
+    "technology",
+    "war",
+    "augment",
+    "prosthetic",
+    "neural",
+    "ai",
+    "contract",
+    "power",
+    "poverty",
+    "medical",
+    "clinic",
+    "market",
+    "rain",
+    "train",
+    "hunger",
+    "food",
+    "tier 2"
+  ]
+}

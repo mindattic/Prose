@@ -1,0 +1,106 @@
+{
+  "id": "019d6143a9157e88816baef685f0d018",
+  "type": "place",
+  "name": "Collinwood Docks",
+  "aliases": [
+    "Collinwood",
+    "The Docks",
+    "Immigrant Shore"
+  ],
+  "description": "Collinwood was built by immigrants who worked the railroads and the lakefront industries. Slovenians, Italians, Croatians — they came for the jobs, stayed for the community, and built a neighborhood that felt like six different countries compressed into twenty blocks. The railroads are gone. The immigrant communities' descendants are a minority now, their cultural institutions preserved as landmarks in a neighborhood that has been reshaped by forces none of them could have anticipated. But the lakefront is still there, and Collinwood is still defined by its relationship to the water.\n\nThe Docks are Collinwood's reason for existence in 2200. Lake Erie's shoreline from East 152nd to the Euclid border has been converted into a continuous cargo handling facility that processes 40% of the physical goods entering the Cleveland sprawl from the lake. Ferrogate operates the rail connections. Kelpline handles the water-side logistics. Between them, the two corponations have turned Collinwood's lakefront into a sovereign industrial zone where containers are unloaded by autonomous cranes, sorted by AI logistics systems, and dispatched inland on Ferrogate rail without human hands touching anything. The efficiency is extraordinary. The noise is extraordinary. The displacement of the people who lived along the waterfront before the docks expanded was also extraordinary, though no one with the authority to prevent it chose to do so.\n\nInland from the docks, Collinwood retains a residential character that the industrial shore has lost. The streets south of Waterloo Road are a dense, working-class neighborhood populated by dock workers, Ferrogate maintenance crews, and the latest wave of immigrants — climate refugees from the Gulf Coast and economic refugees from the collapsed rural interior who have settled here because the dock economy, for all its brutality, provides steady employment. The Slovenian National Home on St. Clair still hosts community events, its programming now split between heritage celebrations and job-placement services for new arrivals. The old and the new coexist with the particular tension of a neighborhood that has always been a first stop and never a final destination.",
+  "atmosphere": {
+    "sights": [
+      "Autonomous cargo cranes moving in synchronized patterns along the lakefront — industrial ballet performed by machines that never tire",
+      "Ferrogate rail cars stretching inland from the docks, their sovereign right-of-way strips cutting through residential blocks like metal rivers",
+      "The Slovenian National Home's facade — original brickwork, new reinforced windows, a Croatian flag hanging next to a Gulf Coast Mutual Aid banner",
+      "Lake Erie visible from the dock perimeter — grey-green water dotted with cargo platforms and, further out, the running lights of Cormorant patrol vessels",
+      "Container stacks three stories high along the waterfront, their shipping labels a geography lesson in the corridor's trade routes"
+    ],
+    "sounds": [
+      "The Docks — a wall of industrial sound: crane motors, container impacts, rail car coupling, AI logistics systems calling instructions in machine-optimized frequencies",
+      "Ferrogate Rail Hounds — autonomous patrol vehicles screaming along the tracks at 280 km/h, their passage shaking buildings within a block",
+      "Residential Collinwood: multiple languages spoken on the same street — Slovenian, Croatian, Gulf Coast drawl, Shelf Cant",
+      "Lake Erie — the sound of large-scale water moving against industrial infrastructure, a low constant that Collinwood residents stop hearing after a week",
+      "The National Home on event nights — music that mixes Slovenian folk tradition with Gulf Coast blues in combinations that shouldn't work and do"
+    ],
+    "smells": [
+      "Lake water and industrial lubricant — the dock's signature combination, inescapable within six blocks",
+      "Diesel exhaust from the older Ferrogate equipment that hasn't been upgraded — the new rail cars are electric, the maintenance fleet is not",
+      "Cooking from the residential blocks — a rotating international menu that changes with each new wave of arrivals"
+    ],
+    "feel": "Collinwood Docks feels like a machine that people happen to live inside. The industrial rhythm of the lakefront sets the pace for everything — shift changes, meal times, sleep schedules, all organized around the docks' 24-hour operation cycle. It is loud, exhausting, and relentlessly functional. The residential streets carry a different energy — the warmth of a community that forms quickly because everyone is new here and everyone needs each other. The tension between the industrial shore and the human streets is the tension that has defined Collinwood for two centuries.",
+    "tags": []
+  },
+  "demographics": "Approximately 25,000 residents. Dock workers and Ferrogate maintenance crews comprise roughly 60% of the working population. The remainder is support economy — food services, housing maintenance, childcare, informal medical care. Significant populations of Gulf Coast climate refugees (arrived 2040s-2060s), rural interior economic refugees (arrived 2070s-present), and legacy Eastern European families (4th-6th generation). Tier 1-2 universally.",
+  "economy": "Dock labor is the primary employer, though the ratio of human workers to autonomous systems decreases annually. Ferrogate maintenance crews represent the second-largest employment category — the rail cars are automated but the tracks and infrastructure require human hands. The residential economy is service-based, organized around the needs of a shift-work population. Informal import trade — goods that 'fall off' the dock containers — supplements household income across the neighborhood.",
+  "power_structure": "Ferrogate holds sovereign authority over the rail corridors and transit hubs. Kelpline holds sovereign authority over the waterfront dock facilities. The residential streets between them fall under Tollgate's minimum infrastructure jurisdiction. The Collinwood Workers' Association, descended from the original dockworkers' unions, negotiates working conditions with both corponations and serves as de facto neighborhood governance for the residential population.",
+  "dangers": [
+    "Industrial accidents — the autonomous dock systems are efficient but indifferent to human bodies in the wrong place at the wrong time",
+    "Ferrogate Rail Hound proximity — the autonomous patrol vehicles will not stop for unauthorized track access, and unauthorized track access is defined by Ferrogate",
+    "Cargo theft consequences — the 'fell off a container' economy is tolerated within limits, but exceeding those limits triggers Kelpline security response",
+    "Lake exposure — the shoreline is industrialized but not sealed, and Lake Erie's weather events regularly flood the dock perimeter and adjacent residential blocks",
+    "Cormorant maritime patrols — anyone attempting to access the lake by small craft from Collinwood's shore faces interception by the most aggressive freshwater navy on Earth"
+  ],
+  "opportunities": [
+    "Dock work is brutal but available — one of the few reliable employment pathways for excluded residents in the Cleveland sprawl",
+    "The cargo processing facility handles goods from across the corridor — information about what's moving and where is valuable to the right buyer",
+    "Collinwood's residential community is tight-knit and protective — earning trust here opens connections to a labor network that spans the eastern docks",
+    "The lake access, while dangerous, is the only non-Ferrogate transit route to communities along the Erie shore"
+  ],
+  "story_hooks": [
+    "A container has arrived at the docks with no shipping manifest, no origin tag, and a biometric lock that matches no known corponation security protocol — and it's emitting a low-frequency sound that is making the dock workers uneasy",
+    "The Collinwood Workers' Association has obtained evidence that Kelpline is preparing to fully automate the docks within two years, eliminating 15,000 jobs — and they're looking for leverage to stop it",
+    "Someone is running a passenger ferry from Collinwood's shore to the Lake Erie islands, slipping past Cormorant patrols using routes that suggest inside knowledge of the patrol schedule"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Glenville Sound (Glenville)",
+      "The Rust Circuit (Euclid)",
+      "Lake Erie shoreline — dock access to the eastern corridor waterway",
+      "Ferrogate transit corridor — rail connection to The Gate and points west"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Dock workers and Ferrogate maintenance crews — the neighborhood's economic backbone",
+    "New arrivals — climate refugees and economic migrants who enter the Cleveland sprawl through the docks",
+    "Cargo brokers and logistics fixers who work the gray margin between legitimate trade and diversion",
+    "Kelpline and Ferrogate security personnel, whose presence is constant and whose jurisdiction is contested"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Slovenian National Home",
+      "description": "St. Clair Avenue cultural center — originally a Slovenian immigrant hall, now a multi-community hub serving legacy residents and new arrivals with equal hospitality",
+      "tags": []
+    },
+    {
+      "name": "The Collinwood Docks",
+      "description": "Continuous autonomous cargo facility stretching from East 152nd to the Euclid border — 40% of the Cleveland sprawl's physical imports pass through here",
+      "tags": []
+    },
+    {
+      "name": "Waterloo Road",
+      "description": "The dividing line between the industrial shore and the residential interior — the street where Collinwood's two worlds meet and occasionally collide",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.5736,
+    "lng": -81.5652,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "theft",
+    "trust",
+    "love",
+    "ai",
+    "medical",
+    "vehicle",
+    "refugee",
+    "food",
+    "water",
+    "lake"
+  ]
+}

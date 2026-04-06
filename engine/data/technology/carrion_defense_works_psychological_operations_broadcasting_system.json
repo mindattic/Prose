@@ -1,0 +1,47 @@
+{
+  "id": "019d6143aa3979d0ad3b56b1a6f7e1cf",
+  "name": "Carrion Defense Works Psychological Operations Broadcasting System",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Psychological Operations Broadcasting System",
+  "type": "technology",
+  "aliases": [
+    "POBS",
+    "Fear Machine",
+    "Carrion Voice",
+    "Dread Broadcast"
+  ],
+  "subcategory": "defense",
+  "description": "An integrated psychological warfare platform that combines directional audio, subliminal visual projection, atmospheric scent dispersal, and neural interface frequency modulation to induce specific emotional states in target populations. The POBS can generate fear, confusion, compliance, or aggression in individuals and crowds by simultaneously attacking multiple sensory and cognitive channels. The system's directional capabilities allow it to affect specific areas while leaving adjacent zones unaffected, creating sharp boundaries between calm and chaos that are themselves psychologically destabilizing.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "CARRION DEFENSE WORKS"
+  ],
+  "base_technologies": [
+    "Multi-sensory psychological manipulation",
+    "Directional emotional state induction",
+    "Neural interface mood modulation"
+  ],
+  "enables": [
+    "Targeted crowd emotional manipulation",
+    "Zone-specific psychological effect deployment",
+    "Fear induction for area denial",
+    "Compliance enforcement without physical force"
+  ],
+  "social_impact": "POBS deployment represents the militarization of psychology — the ability to make people feel anything, regardless of their actual circumstances, by attacking their sensory and cognitive processing simultaneously. The system has been used for crowd control, perimeter defense, and interrogation support, but its deeper implication is that human emotions can be manufactured and deployed as weapons. In a POBS-equipped environment, your fear might not be your own — it might be someone else's tactical decision.",
+  "story_hooks": [
+    "A POBS installation has malfunctioned and is broadcasting a sustained fear response across a residential district — thousands of people are experiencing irrational terror and the system cannot be remotely deactivated.",
+    "Someone has reverse-engineered POBS technology and installed a DIY version in a nightclub that broadcasts euphoria — the club is the most popular venue in Meridian 88, and the patrons do not know why they feel so good."
+  ],
+  "tags": [
+    "defense",
+    "technology",
+    "weapon",
+    "war",
+    "neural",
+    "ai",
+    "control",
+    "club",
+    "night",
+    "tier 4"
+  ]
+}

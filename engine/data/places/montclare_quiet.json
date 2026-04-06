@@ -1,0 +1,87 @@
+{
+  "id": "019d6143a92879fe8b51eb2c662ae311",
+  "type": "place",
+  "name": "Montclare Quiet",
+  "aliases": [
+    "Montclare",
+    "The Quiet",
+    "The Blank Spot",
+    "Dead Channel"
+  ],
+  "description": "Montclare barely existed before the incorporation. A small, quiet, far-northwest neighborhood of single-family homes — the kind of place that didn't make the news because nothing happened there. After the incorporation, nothing continued to happen, and this became its defining characteristic. Montclare Quiet is the single least surveilled, least noticed, least anything district in Meridian 88. Corporate cartography systems list it as 'residential — low priority.' The population registers are out of date by at least a decade. Axiom Security's coverage map shows a gap here that nobody has been assigned to fill, because filling it would require acknowledging it exists, and acknowledging it exists would require explaining why it was ignored, and explaining requires meetings.\n\nThe houses are still standing. That's the strange part. In a city where every square meter of space has been fought over, developed, flooded, or burned, the bungalows of Montclare Quiet simply persist. They've been modified — solar arrays on roofs, water recyclers in basements, communication blackout mesh over windows — but they're recognizably houses, recognizably suburban, recognizably the kind of place where someone once parked a station wagon and argued with their spouse about the lawn. The current residents maintain this appearance with deliberate precision, because looking boring is Montclare Quiet's primary defense mechanism.\n\nWhat actually happens behind those bungalow walls is another matter entirely. Montclare Quiet is the northwest corridor's premier safe house district. Every faction, fixer, and freelance operator in the outer districts knows that if you need a place to hold someone, hide someone, store something, or plan something, Montclare has a house for rent and a community that will not ask a single question. The residents aren't criminals. They're simply people who discovered that invisibility is the most valuable commodity in a surveillance economy, and they are very good at selling it. The community operates on a single rule: nothing that happens here draws attention. Violate that rule, and you don't get a second warning. You get an address that no longer exists.\n\nThere are no notable landmarks in Montclare Quiet. That is the point.",
+  "atmosphere": {
+    "sights": [
+      "Bungalows that look exactly like bungalows should — maintained, unremarkable, identical in their ordinariness",
+      "Empty streets with working streetlights — a surreal luxury in the outer districts",
+      "Communication blackout mesh visible on windows if you know what to look for",
+      "The occasional delivery van that arrives at odd hours and leaves lighter than it came",
+      "No corporate signage. No advertisements. No branding. Nothing to look at."
+    ],
+    "sounds": [
+      "Quiet. Genuine, deliberate, maintained quiet.",
+      "The hum of signal-dampening equipment running in basements — audible only to augmented hearing",
+      "Doors closing. Carefully, without slamming.",
+      "The absence of drone traffic — Montclare's airspace is somehow always deprioritized in the routing algorithms"
+    ],
+    "smells": [
+      "Cut grass — someone maintains the lawns, and the smell is aggressively normal",
+      "Nothing distinctive. Nothing memorable. Nothing that would make you describe this place to someone.",
+      "Cleaning products — the houses are maintained with the kind of thoroughness that suggests evidence management"
+    ],
+    "feel": "Uncanny in the opposite direction from the Core. Where the Core is too perfect, Montclare Quiet is too normal. It feels like a neighborhood that has been held in amber since before the collapse — preserved not by corporate investment but by collective will. Standing on a Montclare street at night, under working streetlights, with the sound of nothing at all, you experience a specific vertigo: the sense that the world ended everywhere except here, and the people who live here would prefer you didn't mention it.",
+    "tags": []
+  },
+  "demographics": "Population unknown, estimated at 5,000-8,000. Tier status mixed and deliberately obscured. The community's demographic profile is, by design, the least documented in Meridian 88. Census attempts return incomplete data. The residents prefer it this way.",
+  "economy": "",
+  "power_structure": "",
+  "dangers": [
+    "Drawing attention — the community enforces its invisibility with absolute commitment",
+    "Unknowingly renting a safe house adjacent to a faction that considers you an enemy",
+    "The community's rules are unwritten and violations are handled without appeal",
+    "Not knowing the protocols — Montclare looks like an ordinary neighborhood, and treating it as one is a mistake",
+    "The things stored in those basements — proximity to other people's problems"
+  ],
+  "opportunities": [
+    "Safe houses of unparalleled quality — invisible to surveillance, maintained to residential standards",
+    "A communications dead zone useful for meetings that cannot be recorded",
+    "Community contacts who know how to make people, objects, and information disappear",
+    "Staging ground for operations in the northwest corridor",
+    "Rest — Montclare is one of the only places in the outer districts where you can sleep without listening"
+  ],
+  "story_hooks": [
+    "Kyle needs a safe house for a client extraction, and the Montclare contact gives him a house next door to an operation run by people who would kill him on sight",
+    "Someone has violated the attention rule — a firefight in a Montclare bungalow, and the community's response mechanism reveals how organized they actually are",
+    "The reason Montclare stays off corporate maps isn't community effort alone — someone inside Axiom's cartography division is protecting it, and they want payment"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Dunning Preserve",
+      "The Cragin Stacks",
+      "The Portico"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "People who aren't here and were never here",
+    "Fixers arranging safe house rentals through intermediaries",
+    "Operators staging for northwest corridor jobs",
+    "Anyone willing to pay premium rates for the luxury of not being observed"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.93,
+    "lng": -87.751,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "corporate",
+    "surveillance",
+    "bar",
+    "fire",
+    "water"
+  ]
+}

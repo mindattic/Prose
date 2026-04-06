@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a85976f79c7b85324034c1a8",
+  "name": "Carrion Defense Works Rapid Fortification System RFS-3",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Rapid Fortification System RFS-3",
+  "type": "equipment",
+  "aliases": [
+    "RFS-3",
+    "Insta-Wall",
+    "Carrion Barrier",
+    "Quick Fort"
+  ],
+  "category": "tools",
+  "description": "A set of deployable ballistic barriers that unfold from flat-packed panels into free-standing walls providing cover against rifle-caliber fire. Each RFS-3 panel expands from a 60x40 cm flat pack into a 2m x 1m ballistic wall in 5 seconds using a spring-loaded deployment mechanism. The panels interlock to create longer barrier runs, corner positions, and enclosed fighting positions. The barriers are rated NIJ Level IV and can be refolded for transport after use. A single operator can deploy four panels in under 30 seconds, creating a defensible position from nothing.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — security and military",
+  "base_technologies": [],
+  "specifications": {
+    "panel deployed size": "2m x 1m x 10 cm",
+    "panel packed size": "60 x 40 x 10 cm",
+    "deployment": "5 seconds spring-loaded",
+    "protection": "NIJ Level IV — rifle rated",
+    "interlocking": "Panels connect for extended barriers",
+    "weight per panel": "12 kg",
+    "panels per kit": "4",
+    "reusable": "Refoldable for transport"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An RFS-3 barrier set up in a Tier 2 street stopped an armored vehicle pursuit — the driver did not expect a rifle-rated wall to appear in the roadway and the resulting collision disabled the vehicle.",
+    "RFS-3 panels have been permanently deployed in a Tier 1 neighborhood as semi-permanent fortifications — the community has built a defensive perimeter from equipment designed for temporary use."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "ai",
+    "bar",
+    "vehicle",
+    "armor",
+    "fire",
+    "tier 2"
+  ]
+}

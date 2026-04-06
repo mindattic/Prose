@@ -1,0 +1,112 @@
+{
+  "id": "019d6143a94a756a9308579f2c5e8be1",
+  "type": "place",
+  "name": "The Pale Mile",
+  "aliases": [
+    "Pale",
+    "The Bleach",
+    "Ghost Row",
+    "The Abandoned"
+  ],
+  "description": "The Pale Mile is a derelict residential and light-commercial corridor approximately 1.4 kilometers long, abandoned following a contained biochemical incident in 2161 that city records describe only as an 'industrial accident requiring precautionary evacuation.' The evacuation became permanent, the precautionary period never officially ended, and the district was quietly excised from city planning documents. The buildings remain structurally sound but are stripped of power, water, and any official presence. What grew in the absence of authority has been, depending on who you ask, either the most dangerous or the most honest place in Meridian 88.",
+  "atmosphere": {
+    "sights": [
+      "Bleached and faded facades — some chemical process has leached color from every surface exposed to the original incident",
+      "Windows sealed with plastic sheeting from the evacuation period, many now torn and flapping",
+      "Improvised settlements in ground-floor commercial spaces, visible from the street in amber generator light",
+      "Official warning barriers at the perimeter, long since graffitied into illegibility",
+      "Vegetation pushing through cracked pavement and up building walls — unusually aggressive growth"
+    ],
+    "sounds": [
+      "Wind moving through empty upper floors — the Pale has a distinctive hollow resonance",
+      "Generator hum from the inhabited sections",
+      "Silence in the uninhabited stretches that feels actively wrong after the noise of the rest of the city",
+      "Distant sounds from the perimeter — the city going about its business, audible but remote",
+      "Occasional animal sounds from species that have adapted to the environment"
+    ],
+    "smells": [
+      "A faint, persistent chemical undertone that residents have learned to ignore but newcomers notice immediately",
+      "Vegetation — green and slightly too sharp, like the plants are metabolizing something unusual",
+      "Generator exhaust from the inhabited sections",
+      "Rain-soaked concrete and old wood",
+      "The occasional smell of cooking or burning, when residents don't bother to conceal their presence"
+    ],
+    "feel": "Uncanny. The Pale Mile looks like the city but operates on different rules, and the physical environment carries a subtle wrongness — colors slightly off, growth patterns aberrant, the silence weighted differently than it should be. Long-term residents have adapted; visitors often cannot articulate what disturbs them.",
+    "tags": []
+  },
+  "demographics": "A small permanent population of 50-150 individuals who have chosen the Pale as a deliberate rejection of monitored city life, alongside a larger transient population using it for activities requiring complete isolation from surveillance. A small number of researchers — some legitimate, most not — conduct ongoing study of the post-incident environment.",
+  "economy": "Minimal and self-sufficient. Permanent residents subsist through a combination of urban foraging, supply drops from outside contacts, and services rendered to transient visitors. The Pale's primary economic value is as a location — it is the most surveilled-free space in Meridian 88, and that has a market price.",
+  "power_structure": "No formal authority. The permanent residents have loose social compacts around resource sharing and perimeter security, but make no claims of governance over the space. The Pale's unspoken rule is that what happens in the Pale is not discussed outside it — a norm enforced not by threat but by mutual understanding that the alternative is everyone losing the space.",
+  "dangers": [
+    "The original incident's residual effects are incompletely understood — long-term exposure carries unknown risks",
+    "The vegetation and animal life have adapted in ways that are occasionally hazardous",
+    "No emergency services will enter — any injury or crisis must be managed internally",
+    "Individuals using the Pale for illicit purposes are not always safe to be around",
+    "The city periodically schedules 'remediation assessments' that may be precursors to redevelopment",
+    "The upper floors of several buildings have structural instability unrelated to the incident"
+  ],
+  "opportunities": [
+    "The only space in Meridian 88 where surveillance is structurally absent — no cameras, no network coverage, no city sensors",
+    "The biochemical residue has produced plant and fungal growth with properties that several parties are very interested in acquiring",
+    "A meeting in the Pale is as private as anything gets in the megacity",
+    "Permanent residents have extensive knowledge of the city's unofficial history surrounding the incident",
+    "Abandoned buildings contain pre-incident materials, records, and equipment that have not been officially recovered"
+  ],
+  "story_hooks": [
+    "The city has announced a 'final remediation assessment' with a two-week timeline — and the permanent residents believe it is the precursor to forced clearance ahead of a development deal that has not been made public",
+    "A researcher who entered the Pale three weeks ago to study the plant life has not returned, but their equipment has begun transmitting data from somewhere inside",
+    "Something in the Pale is affecting neural implants — not damaging them, but causing users to experience shared sensory phenomena that should not be possible",
+    "The original evacuation records contain a discrepancy: the official incident timeline does not match what the building maintenance logs from that period describe",
+    "A faction from outside the city has made contact with Pale residents, offering resources in exchange for regular access to the space — and the residents are divided on whether to accept"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Shelf",
+      "Old Harbor",
+      "Substation Null"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Permanent residents who have chosen to live outside city systems",
+    "Parties requiring complete surveillance blackout for sensitive meetings or transactions",
+    "Independent researchers studying the post-incident ecology",
+    "Urban explorers and documentary makers who have found a way in",
+    "Individuals who need to disappear temporarily without leaving the city"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Whitewood",
+      "description": "A former park at the center of the Pale Mile where the trees and undergrowth have grown into a dense, disorienting tangle. The vegetation here has lost most of its green pigmentation — leaves are pale silver-white, bark is bone-colored, and the canopy filters light into something that feels lunar. Permanent residents treat it as a common space; outsiders find it difficult to navigate and report losing their sense of direction within minutes.",
+      "tags": []
+    },
+    {
+      "name": "The Hearth Building",
+      "description": "A six-story residential building where the permanent population has concentrated, occupying the lower three floors. Residents have converted the lobby into a communal space and established functional infrastructure — water collection, growing spaces, and a generator room. The upper floors are sealed off at permanent residents' insistence, and they decline to explain why.",
+      "tags": []
+    },
+    {
+      "name": "Incident Ground Zero",
+      "description": "The specific city block where the 2161 incident originated — identifiable by the degree of color bleaching on surrounding structures, which is visibly more severe than the rest of the Pale. The block is empty and undeveloped; even the most pragmatic residents do not camp here. What precisely occurred at this location is the subject of considerable speculation, and physical evidence inconsistent with the official account is visible to anyone who looks carefully.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.866,
+    "lng": -87.631,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "gun",
+    "neural",
+    "ai",
+    "elf",
+    "surveillance",
+    "power",
+    "injury",
+    "market",
+    "water"
+  ]
+}

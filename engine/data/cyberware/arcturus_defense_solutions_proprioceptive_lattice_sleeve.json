@@ -1,0 +1,62 @@
+{
+  "id": "019d6143a7b97e34a152580abf9a4ac6",
+  "name": "Arcturus Defense Solutions Proprioceptive Lattice Sleeve",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Proprioceptive Lattice Sleeve",
+  "type": "cyberware",
+  "aliases": [
+    "Ghost Limb",
+    "The Harness",
+    "Proprie-Sleeve",
+    "Body Map"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Proprioceptive Lattice Sleeve is a form-fitted exoneural garment woven from conductive elastomeric fiber and pressure-sensitive piezo-mesh, designed to be worn directly against the skin from shoulder to wrist on either or both arms. Unlike augmentations that replace or enhance a specific sensory modality, the Sleeve works by dramatically amplifying the body's existing proprioceptive system — the unconscious sense of limb position, tension, and spatial orientation. Micro-pressure sensors across the garment's surface feed continuous data into a subcutaneous induction node implanted at the wrist, which translates the signal stream into enhanced proprioceptive feedback to the wearer's nervous system. The result is a spatial awareness of one's own body that extends slightly beyond the skin, allowing operators to sense nearby objects, surfaces, and even air pressure differentials through the garment without looking at their hands.\n\nArcturus designed the Sleeve primarily for close-quarters combat specialists and EOD technicians who need precise tactile intelligence in zero-visibility conditions. The extended proprioceptive field — approximately four to seven centimeters beyond the skin surface — allows trained users to navigate confined spaces by feel alone, manipulate objects in complete darkness with near-surgical precision, and detect the approach of physical contact before it registers through normal touch receptors. The induction node implant is minor enough to fall below most augmentation registration thresholds, meaning the garment itself can be removed and the user declared clean while retaining the interface hardware.\n\nA secondary function, developed through field feedback from Arcturus contract operators, is the Sleeve's use in detecting micro-tremors and vibration patterns in surfaces the wearer touches. Experienced users can identify whether a surface is hollow, pressurized, or carrying current by resting a Sleeved hand against it and interpreting the enhanced feedback — a capability that has made the garment unexpectedly popular among safebreakers and structural infiltrators well outside its intended military market.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"garment_coverage\":\"Shoulder to wrist, single or bilateral configuration\",\"extended_field_range\":\"4–7cm beyond skin surface (user-trained variance)\",\"induction_node_implant\":\"Subcutaneous wrist mount, 3mm profile, minor surgical procedure\",\"sensor_density\":\"2,200 pressure nodes per sleeve\",\"power_source\":\"Kinetic harvesting from arm movement; 6-hour reserve cell backup\",\"scan_signature\":\"Garment: unremarkable textile. Induction node: detectable on Tier 2+ bioscan as minor implant\",\"operating_temperature\":\"-15°C to 55°C\",\"wash_cycle\":\"Fully waterproof to 30m; field-launderable\",\"training_requirement\":\"3–6 weeks for basic proficiency; 4–6 months for advanced surface analysis capability\"}",
+  "side_effects": [],
+  "cultural_context": "The Proprioceptive Lattice Sleeve has developed a quiet reputation as the augmentation of choice for people who work with their hands in dangerous conditions — a category that covers a surprisingly wide range of Meridian 88 residents. Within Arcturus contractor circles it is a standard-issue item for close-quarters specialists, but on the open market it has been adopted by a subculture of craftspeople, surgeons, and precision technicians who value the enhanced tactile intelligence for non-combat applications. There is a small but vocal community of blind and visually impaired residents who use the Sleeve as a primary navigation aid, though Arcturus has been publicly resistant to this framing of the product, apparently concerned about the licensing and liability implications of a military augment being categorized as assistive technology.",
+  "known_users": [
+    "Arcturus Defense Solutions close-quarters contract operators",
+    "EOD and structural disarmament technicians",
+    "High-end safebreakers and physical security specialists",
+    "Precision surgeons and microsurgery technicians",
+    "Blind and visually impaired navigators (unofficial use)",
+    "Combat grapplers and martial specialists"
+  ],
+  "story_hooks": [
+    "A series of high-security physical vault breaches have left no digital trace — the thief is using a Proprioceptive Lattice Sleeve to manipulate locks entirely by feel, leaving investigators without any electronic signature to trace.",
+    "Arcturus is quietly trying to buy back Sleeves that were sold to the civilian market after discovering a firmware flaw in the induction node that allows the device to be used as a covert vibration microphone through surfaces the wearer touches.",
+    "A character's bilateral Sleeve setup has been calibrated incorrectly, causing the extended proprioceptive field to overlap between both arms in a way that creates phantom-limb sensations — they keep reaching for objects that aren't there.",
+    "An underground fighting circuit has banned Sleeve users from open competition, and one fighter is challenging the ban publicly, arguing the augment is 'natural' because it only enhances existing biology — the legal and ethical debate is drawing significant media attention."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "combat",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "contract",
+    "power",
+    "ubc",
+    "surgery",
+    "market",
+    "rain",
+    "dark",
+    "train",
+    "water",
+    "circuit",
+    "tier 3"
+  ]
+}

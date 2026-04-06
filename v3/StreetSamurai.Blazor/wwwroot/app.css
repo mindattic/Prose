@@ -31,9 +31,9 @@ html, body {
 .card-body { padding: 10px; }
 .card-header { padding: 10px; }
 
-/* Icon gutter inside buttons */
+/* Icon gutter inside buttons — skip icon-only buttons */
 .btn i.bi { margin-right: 6px; }
-.btn-sq i.bi, .tb i.bi { margin-right: 0; }
+.btn i.bi:only-child, .btn-sq i.bi, .tb i.bi { margin-right: 0; }
 
 /* Right-align action button columns */
 .d-flex.justify-content-between .d-flex.gap-2:last-child,
@@ -90,6 +90,18 @@ small.text-muted { color: #8b949e !important; }
 .story-preview .facet-tag { padding: 1px 6px; border-radius: 3px; font-size: 0.75rem; }
 .story-preview blockquote { border-left: 3px solid #6c757d; padding-left: 1rem; color: #8b949e; font-style: italic; }
 .story-preview code { color: #e06c75; background: #21262d; padding: 2px 6px; border-radius: 3px; }
+
+/* Print preview — hr = page break */
+.story-preview-print hr {
+    border: none;
+    page-break-after: always;
+    break-after: page;
+    margin: 0;
+    height: 0;
+}
+@media print {
+    .story-preview-print hr { page-break-after: always; break-after: page; }
+}
 
 /* Analysis panel */
 .analysis-panel { border-color: #0dcaf0 !important; }
@@ -209,8 +221,30 @@ h1:focus {
     white-space: pre-wrap;
     overflow-wrap: break-word;
 }
-.rich-editor:focus { box-shadow: none; }
+.rich-editor:focus, .form-control.rich-editor:focus { box-shadow: none; outline: none; }
 .rich-editor p { margin-bottom: 1em; }
+.rich-editor h1, .rich-editor h2, .rich-editor h3 { color: #f8f9fa !important; margin-top: 1.5em; margin-bottom: 0.5em; }
+.rich-editor h1 { font-size: 1.4rem; color: #dc3545 !important; }
+.rich-editor h2 { font-size: 1.15rem; }
+.rich-editor h3 { font-size: 1rem; }
+.rich-editor hr {
+    border: none;
+    text-align: center;
+    margin: 1.5em 0;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+.rich-editor hr::after {
+    content: "* * *";
+    color: #ff8c00;
+    font-size: 0.9rem;
+    letter-spacing: 0.3em;
+}
+.rich-editor span[style], .rich-editor h2 span[style] {
+    background-color: transparent !important;
+    color: inherit !important;
+    font-size: inherit !important;
+}
 
 /* ── Entity popover ──────────────────────────────────── */
 .entity-popover {

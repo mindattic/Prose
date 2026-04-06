@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab5f74fdb975a471c59f759a",
+  "name": "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'",
+  "type": "weapon",
+  "aliases": [
+    "Verdict",
+    "RP-2",
+    "Rail Gun",
+    "Judge"
+  ],
+  "category": "pistol",
+  "description": "A compact electromagnetic rail pistol that accelerates a 3mm tungsten slug to hypersonic velocity using a miniaturized two-stage rail system. The RP-2 represents Zheng-Dao's attempt to compress railgun technology into a sidearm format, and the compromises are significant — the weapon generates extreme heat per shot, has a four-round capacity, and the rail erosion means the barrel assembly must be replaced every 80 rounds. Despite these limitations, the sheer penetrating power of a hypersonic tungsten slug fired from a pistol-sized platform has made it sought after by operators who need to defeat heavy armor at close range.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted",
+  "base_technologies": [
+    "Miniaturized electromagnetic rail acceleration",
+    "Hypersonic projectile stabilization",
+    "Compact supercapacitor cycling"
+  ],
+  "specifications": "caliber: 3mm tungsten slug\nmuzzle velocity: 2,200 m/s\nmagazine: 4 rounds\nbarrel life: 80 rounds before rail replacement\nweight: 1.8 kg\nrecharge time: 3 seconds between shots\npower source: Integrated supercapacitor, 20 shots per charge\npenetration: Rated for Grade 4 composite armor at 10 meters",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A dead mercenary was found with an RP-2 that has been fired exactly 80 times — the barrel is spent but the weapon was never serviced, suggesting it was issued for a single extended operation.",
+    "Zheng-Dao is offering a bounty for the return of prototype RP-3 units that were stolen during transit — the prototypes supposedly solve the barrel erosion problem."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "pistol",
+    "weapon",
+    "gun",
+    "ai",
+    "power",
+    "bar",
+    "armor",
+    "fire",
+    "tier 4"
+  ]
+}

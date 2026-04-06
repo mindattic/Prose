@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab537e778dcd2b24cd9e2cc1",
+  "name": "Tessera Industries Void Grenade VG-1 'Black Hole'",
+  "type": "weapon",
+  "aliases": [
+    "Black Hole",
+    "VG-1",
+    "Void Bomb",
+    "The Absence"
+  ],
+  "category": "exotic",
+  "description": "An experimental ordnance device that creates a 2-meter sphere of spatial compression lasting 0.5 seconds — everything within the sphere is subjected to extreme compressive forces as space itself contracts, crushing matter into a fraction of its original volume before the effect collapses and space snaps back to normal. The result is a sphere of mangled, compressed debris where intact objects used to be. Tessera's physicists describe it as a 'controlled spatial anomaly' and freely admit they do not fully understand the long-term effects on local spacetime. The Void Grenade is the single most classified item in Tessera's research division, and its existence has been confirmed only by the distinctive spherical compression signatures found at two classified incident sites.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Does not officially exist",
+  "base_technologies": [
+    "Controlled spatial compression generation",
+    "Localized spacetime manipulation",
+    "Experimental physics weaponization"
+  ],
+  "specifications": "effect radius: 2-meter sphere\neffect duration: 0.5 seconds\ncompression force: Estimated 50,000 atmospheres within sphere\ndetonation: 3-second timer after activation\nweight: 0.5 kg\nform factor: Standard grenade size\nprototypes: Estimated 5 units manufactured\nside effects: Unknown long-term spacetime distortion\nclassification: Tessera Ultra-Restricted",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A crime scene contains a perfect 2-meter sphere of crushed, compressed matter — vehicles, building material, and three human bodies reduced to a dense ball. Nothing in any weapons database explains it.",
+    "A Tessera researcher involved in the VG-1 program has disappeared after sending encrypted messages claiming the spatial compression events are not contained — each detonation is leaving a permanent microscopic weakness in spacetime that could accumulate."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "weapon",
+    "crime",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "market",
+    "vehicle",
+    "tier 5"
+  ]
+}

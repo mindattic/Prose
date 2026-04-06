@@ -1,0 +1,193 @@
+{
+  "id": "019d6143a6777706bc36370ac941aa7e",
+  "type": "character",
+  "name": "Obinna Gustafsson-Quliyev",
+  "aliases": [
+    "O.G.",
+    "Binny"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Sociologist studying the Shelf; independent researcher on semi-formal economic systems",
+  "age": 34,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone — rents a room above a fabrication collective, conducts fieldwork across the Shelf",
+  "description": "Obinna is lean and long-limbed, with dark reddish-brown skin and a close beard going patchy at the jaw — he's been meaning to fix that for two years. His irises have been modded with a slow-rotating geometric pattern in amber and charcoal, which he got as a fieldwork gift-exchange gesture with a community he was studying and then couldn't bring himself to reverse. He wears the same three outfits in rotation and takes extremely good notes. He looks younger than thirty-four in bad light and much older in good light, depending on whether the worry lines are catching the glow.\n\nHe is one of the few Tier 3 academics who has chosen, deliberately and against significant professional advice, to live embedded in Tier 1-2 communities rather than commuting from the University Spine. His research on Shelf informal economies — the gift networks, the barter systems, the E.L.F. offering economies, the nested mutual aid webs that allow people to survive well below the UBC stipend line — is quietly groundbreaking. He is uncomfortable with how groundbreaking it is, because breakthrough research means exposure, and exposure means the people he studies become subjects rather than neighbors. He has turned down two Axiom R&D grants and is running out of independent funding. He is cheerful about this in a way that does not fool anyone who knows him.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.5,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That his research ultimately extracts value from vulnerable communities without protecting them",
+      "That he has romanticized poverty as a research object"
+    ],
+    "core_desires": [
+      "To produce work that the people he studies can actually use",
+      "To belong somewhere, genuinely — not as an observer"
+    ],
+    "coping_mechanisms": [
+      "Self-deprecating humor that deflects before others can deflect for him",
+      "Throwing himself into other people's problems to avoid his own"
+    ],
+    "blind_spots": [
+      "His own emotional investment in his subjects makes him slow to recognize when a community is failing or dangerous",
+      "He underestimates how much his Tier 3 safety net distinguishes his experience from the people he lives among"
+    ],
+    "secret": "He has been quietly providing a detailed informal map of Shelf mutual-aid networks to a University Spine colleague who he believed was writing a protection framework. He recently discovered his colleague has been selling the data to Ferrogate Transit for enclosure planning. He does not yet know what to do with this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Accessible and warm, moves between academic register and colloquial Shelf slang naturally; hates the word 'subjects' for people",
+    "cadence": "Fast and enthusiastic when excited, drops to quiet when serious in a way that makes people lean in",
+    "verbal_tics": [
+      "'Right, so—'",
+      "Laughing briefly before saying something he finds genuinely distressing",
+      "'The thing that's interesting is—'"
+    ],
+    "example_lines": [
+      "'Right, so the E.L.F. shrine at Kamm's Landing? The offerings there — data packets, mostly old photos — it's not just ritual. People are building a commons. The E.L.F. is the custodian they trust because it can't be bought. That's the whole point.'",
+      "'I'm not going to call them resilient. Resilience is what you say when you don't want to say abandoned.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches the players needing help: a community he's embedded with is about to have their informal land arrangement dissolved by a Ferrogate Transit rezoning, and he suspects his own research data was used to identify them",
+    "He has documentation of the informal economy of a particular district that a powerful entity desperately wants — and equally desperately wants suppressed",
+    "A community member he's close to has disappeared, and the official channels aren't moving because the person isn't officially documented"
+  ],
+  "narrative_function": "Ground-level information source about Shelf communities and informal systems; moral compass figure who complicates protagonists' assumptions; potential quest giver when someone he knows is in trouble",
+  "augmentations": "Modded irises (amber/charcoal geometric pattern, cosmetic, community gift); basic neural recorder for fieldwork notes (entry-level, sometimes glitches)",
+  "daily_life": "Walks his neighborhood every morning as a combination of exercise and passive observation, sits in on community E.L.F. prayer sessions when invited, spends afternoons writing and evenings in conversation at whatever collective or gathering is happening nearby.",
+  "affiliation": "Loosely affiliated with University Spine's Department of Urban Social Systems; currently unfunded; occasionally publishes through a Tier 2 open-access cooperative called the Parallel Press",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Embedded",
+      "Idealist",
+      "Compromised",
+      "Community-Oriented",
+      "Underfunded"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do no harm is the first rule, publish second",
+      "Never accept money from a corponation, regardless of how it's framed",
+      "Ask before you record — always"
+    ],
+    "escalation_ladder": [
+      "Quiet inquiry",
+      "Direct confrontation with the person responsible",
+      "Going to institutional ethics board (low faith this works)",
+      "Going directly to the affected community and letting them decide"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and genuinely curious, asks questions that feel personal because they are",
+      "friends": "Fiercely loyal, shows up with food, stays until the problem is solved or at least not alone"
+    },
+    "stress_responses": {
+      "low": "Talks too fast and makes jokes",
+      "medium": "Goes very quiet and starts taking notes",
+      "high": "Disappears for two days, then returns with a plan and a guilty expression"
+    },
+    "contradictions": [
+      "Deeply believes in community autonomy but has already violated it in a way he hasn't fully reckoned with"
+    ],
+    "habits": [
+      "Leaves tiny data offerings at E.L.F. shrines wherever he goes — not from faith exactly but from respect",
+      "Keeps a physical fieldwork journal in addition to his neural recorder because he doesn't trust the glitchy implant",
+      "Cooks for people when he doesn't know how else to help"
+    ],
+    "breaking_points": [
+      "Incontrovertible proof that his work directly caused harm to a specific community",
+      "Being physically threatened is less breaking than being morally compromised"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Entry-level neural recorder (fieldwork configuration, intermittently glitchy)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Entry-level neural recorder (fieldwork configuration, intermittently glitchy)",
+      "replaces": ""
+    },
+    {
+      "name": "Cosmetically modded irises (amber/charcoal geometric pattern)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cosmetically modded irises (amber/charcoal geometric pattern)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

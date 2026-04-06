@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a698774e8698d59385d3eab6",
+  "type": "character",
+  "name": "Perpetua Okafor",
+  "aliases": [
+    "Auntie P",
+    "The Ledger",
+    "Mama Cass"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Black Market Pharmacist / Community Anchor",
+  "age": 61,
+  "status": "active",
+  "location": "The Shelf",
+  "description": "Perpetua Okafor occupies a converted shipping container wedged between a collapsed overpass and a recycled-water dispensary in the lower Shelf, where she has run an unlicensed pharmacy and informal clinic for over two decades. She is a broad, deliberate woman with close-cropped silver hair, deep brown skin mapped with the faint subcutaneous tracery of outdated biomonitor implants she can no longer afford to remove. Her hands are almost always stained at the fingertips from compounding work — pigments from synthesized capsule coatings, chemical residues she's stopped trying to scrub away entirely. She dresses practically in layered work tunics and canvas aprons with too many pockets, and she moves through the Shelf's crowds with the unhurried authority of someone who knows every face and every debt.\n\nShe was, before the Meridian Core's healthcare privatization sweeps of the 2060s, a licensed pharmacist with a small legitimate dispensary. When her license was revoked under the Consolidated Medical Compliance Act — a corporate-drafted policy that effectively eliminated independent practitioners in favor of Spire-affiliated MedCorp franchises — she did not relocate or reinvent herself. She stayed, and she went underground, and she became something the district needed far more than a franchise: someone who actually knew her patients by name. Her operation is an open secret, tolerated by local enforcers partly out of genuine community loyalty and partly because Perpetua has never been above keeping careful records of what those same enforcers buy from her.\n\nShe is not sentimental about what she does. She charges what the market will bear from those who can pay and nothing from those who cannot, and she keeps a handwritten ledger — actual paper, a deliberate choice — that tracks every transaction, every favor owed, every outstanding debt in both directions. The ledger is partly practical and partly philosophical: she believes that forgetting what you owe people is the first step toward becoming the kind of person who built the world that drove her underground in the first place.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.85,
+      "id": 0.3,
+      "shadow": 0.45,
+      "mask": 0.4,
+      "ghost": 0.55
+    },
+    "core_fears": [
+      "Dying before she's trained someone to replace her",
+      "Becoming complicit in the harm she witnesses by growing numb to it",
+      "That her pragmatism has quietly replaced her compassion without her noticing"
+    ],
+    "core_desires": [
+      "To maintain a community that does not abandon its most vulnerable",
+      "To practice medicine honestly, even if illegally",
+      "To be remembered as someone who kept accounts fairly"
+    ],
+    "coping_mechanisms": [
+      "Radical routine — the same morning rituals performed with near-religious consistency",
+      "Displacement of grief into labor; when someone dies she compounds medications for three days straight",
+      "Gallows humor deployed at precise moments to diffuse her own emotional pressure",
+      "The ledger as externalized memory and moral accounting system"
+    ],
+    "blind_spots": [
+      "She underestimates how much people fear her disapproval, which makes her bluntness land harder than she intends",
+      "She has convinced herself she has no ego investment in being needed, which is not entirely true",
+      "She mistrusts augmentation so reflexively that she sometimes underserves patients who rely on it"
+    ],
+    "secret": "The original Consolidated Medical Compliance Act audit that revoked her license was triggered by an anonymous tip. She has always suspected it came from a former colleague she mentored, and she has never confronted him, partly because she's not certain, and partly because he now runs the only legitimate clinic within four kilometers of the Shelf and his patients would suffer if she destroyed him."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise medical terminology mixed with Shelf vernacular; she code-switches fluidly but never condescendingly. Uses declarative sentences. Rarely asks questions she doesn't already know the answer to.",
+    "cadence": "Slow, measured, with long pauses before significant statements. Never rushes. The pauses themselves communicate weight.",
+    "verbal_tics": [
+      "Begins corrections with 'Now—' followed by a pause",
+      "Uses 'child' as a neutral address regardless of the recipient's age",
+      "Ends instructions with 'you understand me?' not as a question but as punctuation"
+    ],
+    "example_lines": [
+      "'Now— I'm going to tell you what this is, and what it isn't, and you're going to listen before you decide anything. You understand me?'",
+      "'I don't run charity. I run credit. There's a difference and the difference matters.'",
+      "'Child, I have watched the Spire sell people the idea that survival is a luxury product for thirty years. I'm not interested in being impressed by it anymore.'",
+      "'Put it in the ledger. Everything goes in the ledger. That's how we remember who we are.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Dae-jung Seo",
+      "type": "Complicated professional alliance",
+      "description": "Perpetua supplies Dae-jung with medications he can't source through legitimate channels and occasionally patches up his associates; he provides a layer of informal protection she refuses to formally acknowledge. Neither trusts the other entirely.",
+      "emotional_core": "Mutual respect built on mutual utility, with an undercurrent of ideological friction — she thinks he's building something that will eventually eat its own people; he thinks she's too proud to admit she needs protection.",
+      "story_tension": "If Dae-jung's operations escalate to the point of drawing Spire enforcement into the Shelf, Perpetua's clinic becomes collateral. She will have to decide whether to warn him, cut contact, or something more drastic."
+    },
+    {
+      "name": "Unnamed former colleague",
+      "type": "Suspected betrayer / current uneasy non-contact",
+      "description": "The man she suspects filed the compliance tip that ended her legitimate career now runs a licensed MedCorp satellite clinic three blocks away. They greet each other when they pass. They have never discussed it.",
+      "emotional_core": "A grief she has converted into a policy: she no longer mentors anyone she hasn't known for at least five years.",
+      "story_tension": "If his clinic comes under threat — corporate restructuring, gang pressure, anything — she will be forced to decide whether to help him, and the decision will require her to finally confront what she believes about him."
+    },
+    {
+      "name": "A rotating cast of Shelf adolescents",
+      "type": "Informal apprentices",
+      "description": "She is perpetually training two or three young people in basic compounding, triage, and record-keeping, never calling it apprenticeship, always framing it as 'helping out.'",
+      "emotional_core": "The closest thing she allows herself to hope — the belief that knowledge can be passed down and that something of what she's built will survive her.",
+      "story_tension": "One of her current apprentices has been approached by a Spire-affiliated talent scout offering legitimate MedCorp placement. Perpetua knows, and has said nothing."
+    }
+  ],
+  "story_hooks": [
+    "A new synthetic compound is circulating in the Shelf with effects she can't identify from her equipment — people aren't dying, but they're changing in ways that alarm her. She needs someone with better resources to analyze it.",
+    "The handwritten ledger goes missing. The ledger contains information that could destroy, implicate, or protect dozens of people across multiple factions.",
+    "A patient dies from something she prescribed correctly — which means either her supply chain has been compromised or someone tampered with the compound after it left her hands.",
+    "MedCorp launches a 'community health initiative' in the Shelf that is transparently designed to price her out and surveil her patient base. She has to decide how to respond without becoming the kind of person she despises.",
+    "Someone from her pre-underground life — a patient, a former colleague, a regulator — arrives at her container door needing help they can't get anywhere else."
+  ],
+  "narrative_function": "Community anchor and moral lodestone for the Shelf; represents the tension between institutional legitimacy and genuine care; provides a grounded, unglamorous counterpoint to the district's more spectacular operators. Her ledger functions as a plot device and thematic object — the idea that someone is still keeping honest accounts in a world that has abandoned the practice.",
+  "augmentations": "Outdated subcutaneous biomonitor mesh (non-functional, too expensive to remove safely),Magnification implants in both eyes, medical grade, aging — she has to blink deliberately to shift focal depth and sometimes the calibration drifts,A single haptic feedback implant in her right index finger, used for compound consistency testing",
+  "daily_life": "Wakes before dawn to complete compounding work in the quiet, before the day's traffic begins. Opens the container at first light. Sees patients on a walk-in basis until midday, then by the informal appointment system managed by a rotating neighborhood teenager who acts as de facto receptionist. Eats one substantial meal in the early afternoon, always cooked, never from a vendor, a point of stubborn principle. Spends evenings doing inventory, updating the ledger, and occasionally sitting outside the container on a folded chair watching the Shelf's street life with the patient attention of someone conducting ongoing research into human nature. Sleeps lightly and wakes easily.",
+  "affiliation": "Independent; informally aligned with Shelf community interests; maintains transactional relationships with multiple factions without belonging to any",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 6,
+      "impulsivity_deliberation": 8,
+      "assertion_deference": 8,
+      "transparency_guardedness": 4
+    },
+    "drives": [
+      "Maintain community that does not abandon its vulnerable",
+      "Practice medicine honestly",
+      "Be remembered for fair accounts"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Compounds medications for three days straight — displacement of grief into labor"
+      },
+      "moral": 9,
+      "trust": 5,
+      "desperation": 7
+    },
+    "strengths": [
+      "Fairness",
+      "Perseverance",
+      "Wisdom",
+      "Integrity",
+      "Leadership"
+    ],
+    "weaknesses": [
+      "Forgiveness",
+      "Playfulness",
+      "Humility",
+      "Hope",
+      "Zest"
+    ],
+    "tags": [
+      "pharmacist",
+      "community-anchor",
+      "ledger-keeper",
+      "elder",
+      "shelf-institution",
+      "principled"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Charge what the market bears from those who can pay, nothing from those who cannot",
+      "Everything goes in the ledger — forgetting what you owe is how you become them",
+      "Never mentor anyone she has not known for at least five years",
+      "Maintain radical routine — same morning rituals with near-religious consistency",
+      "Address people as 'child' regardless of age",
+      "End instructions with 'you understand me?' as punctuation, not question",
+      "Mistrusts augmentation reflexively — a bias she does not fully examine"
+    ],
+    "escalation_ladder": [
+      "'Now—' followed by a pause — correction incoming",
+      "Slow, declarative instruction delivered with the weight of decades",
+      "Gallows humor deployed at precise moments to relieve her own pressure",
+      "Opens the ledger in front of someone — the debts are made visible",
+      "Contacts Dae-jung Seo for the protection she refuses to formally acknowledge"
+    ],
+    "interpersonal_modes": {
+      "Dae-jung Seo": "Mutual utility with ideological friction — he provides protection, she provides medications",
+      "unnamed former colleague": "Grief converted into policy — suspected betrayer she has never confronted",
+      "apprentices": "Hope disguised as 'helping out' — belief that knowledge can be passed down",
+      "patients": "Direct, unhurried authority — the pauses communicate weight"
+    },
+    "stress_responses": {
+      "low": "Morning rituals become more elaborate and precise",
+      "medium": "Compounds medications with increased focus — work replaces feeling",
+      "high": "Gallows humor sharpens — deployed to prevent emotional escalation",
+      "critical": "Sits outside the container on a folded chair watching street life — patient observation as grief management"
+    },
+    "contradictions": [
+      "Believes she has no ego investment in being needed — she does, and it shapes decisions she does not examine",
+      "Suspects the former colleague filed the tip that destroyed her career but protects him because his patients need him",
+      "Mistrusts augmentation so reflexively she sometimes underserves patients who rely on it"
+    ],
+    "habits": [
+      "Wakes before dawn to compound in the quiet",
+      "Opens the container at first light",
+      "Eats one substantial cooked meal in early afternoon — never from a vendor",
+      "Updates the ledger every evening",
+      "Sits outside on a folded chair watching street life with patient attention"
+    ],
+    "breaking_points": [
+      "The handwritten ledger going missing",
+      "A patient dying from something she prescribed correctly — supply chain compromise",
+      "MedCorp launching a community health initiative designed to surveil her patient base",
+      "An apprentice being recruited away by a Spire talent scout"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

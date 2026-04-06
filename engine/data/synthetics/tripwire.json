@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa2c77ccb6234ce5bf0abddb",
+  "name": "Tripwire",
+  "type": "elf",
+  "aliases": [
+    "Watch Your Step"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "network_sprite",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Born from a destroyed security perimeter AI. Creates invisible digital boundaries — step across and your augments briefly fritz. Cross back and they stabilize.",
+  "observed_behavior": "Maintains virtual perimeters in physical space using localized EM interference. The boundaries are consistent and mappable but serve no apparent purpose.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 15,
+  "location": "The Shelf — industrial zones",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Someone maps all of Tripwire's boundaries and realizes they outline the perimeter of a facility that was demolished — the E.L.F. is guarding a building that doesn't exist anymore"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "network sprite",
+    "e.l.f.",
+    "augment",
+    "ai",
+    "shelf"
+  ]
+}

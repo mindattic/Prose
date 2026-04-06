@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa0b7c6c9fc15e993621cd5c",
+  "name": "Lullaby",
+  "type": "elf",
+  "aliases": [
+    "The Singer",
+    "Hush-a-bye"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "echo",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Born from a destroyed pediatric medical AI. Inhabits audio augments and plays fragments of children's songs at extremely low volume during sleep cycles.",
+  "observed_behavior": "Generates soft melodic fragments during REM sleep. The melodies are original compositions that match no known recording — they are the remnants of a lullaby generator that no longer has a child to sing to.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 4,
+  "location": "The Shelf — residential zones",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A parent hears the lullaby through their child's augment and recognizes it as the startup sound of a medical device from a hospital that was destroyed"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "echo",
+    "chrome dweller",
+    "e.l.f.",
+    "augment",
+    "ai",
+    "medical",
+    "shelf"
+  ]
+}

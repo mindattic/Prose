@@ -1,0 +1,164 @@
+{
+  "id": "019d6143a65e766992ca6e121abe49cf",
+  "type": "character",
+  "name": "Moswen Ağaoğlu-Delacroix",
+  "aliases": [
+    "Spore"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "fungus farmer and underground apothecary",
+  "age": 52,
+  "status": "active",
+  "location": "Irkalla, sub-level fungal warrens beneath Deepwell Station",
+  "description": "Moswen is a broad-shouldered woman with skin the color of dark river clay, her face mapped by deep laugh lines and a permanent stain of blue-black around her fingernails from decades of handling bioluminescent mycelium. Her geneware is old and half-degraded — color-shifting hair that now only cycles between a dim amber and a washed-out grey depending on her mood, installed in her thirties when she still had money for upkeep. She wears a patchwork coat of heat-cured mushroom leather, stitched with dozens of pockets holding spore vials, dried caps, and small fungal compresses. She smells faintly of earth, wet stone, and something fermented.\n\nMoswen came down in 2178 after her Axiom maintenance contract evaporated and she couldn't surface her debt. She built her farm over seven years — tiered shelves of inoculated substrate carved from old ferrogate sleeper beams, lit by her own bioluminescent cultures. She knows forty-three species by taste and can diagnose infections, parse poisons, and brew painkillers that rival surface pharmacy stock for a fraction of the cost. She is neither warm nor cold — she is practical, like the organisms she cultivates, and she extends exactly as much care as the situation requires.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "being forced back to the surface where her debt still exists",
+      "her farm being destroyed — it is the only thing she built herself"
+    ],
+    "core_desires": [
+      "stability and sufficiency — not wealth, just enough",
+      "to be genuinely useful to people who have no one else"
+    ],
+    "coping_mechanisms": [
+      "methodical labor as meditation",
+      "cataloguing and naming — gives her a sense of control over her environment"
+    ],
+    "blind_spots": [
+      "underestimates how dependent the surrounding community has become on her, and thus underestimates her own leverage and her own danger"
+    ],
+    "secret": "She maintains a hidden culture of a rare paralytic fungus she developed herself — not to sell, but as a last resort if Axiom debt collectors ever come underground. She has never told anyone it exists."
+  },
+  "speech_patterns": {
+    "vocabulary": "plain, precise, often uses botanical or mycological terminology without explanation — she forgets others don't share her frame of reference",
+    "cadence": "slow and even, like someone who has learned not to waste breath in thin air",
+    "verbal_tics": [
+      "'that'll do' (her standard of approval)",
+      "'don't touch that one'"
+    ],
+    "example_lines": [
+      "'The blue ones are analgesic. The grey ones will drop your blood pressure to nothing. I assume you want the blue ones.'",
+      "'Surface debt doesn't grow down here. Neither does surface law. That's the deal — you accept both sides of it or you go back up.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A new fungal blight is spreading through her farm — she needs someone to trace it to its source before it wipes out the only pharmacy for eight tunnel-kilometers",
+    "An Axiom bioprospecting team has somehow learned about her paralytic culture and sent someone down to negotiate — or take it"
+  ],
+  "narrative_function": "Quest giver, information source, supplier of consumables, moral anchor for underworld storylines — she has seen everything and judges nothing but stupidity",
+  "augmentations": "degraded color-shift geneware (hair), subdermal warming mesh (keeps core temp stable in cold tunnels, bought secondhand), no other chrome",
+  "daily_life": "Spends mornings checking mycelium growth, harvesting ripe caps, and processing drying racks; afternoons she receives visitors — the sick, the desperate, tunnel guides stocking medkits — and barters for food, tools, or information.",
+  "affiliation": "independent, loose ties to Bore Rat community Deepwell Station cell",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Mycologist",
+      "Apothecary",
+      "Survivor",
+      "Pragmatist",
+      "Underground Elder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "barter fair, never credit — generosity is fine but debt rots relationships",
+      "do not involve yourself in tunnel politics unless your farm is directly threatened"
+    ],
+    "escalation_ladder": [
+      "calm explanation of the problem",
+      "withdrawal of services and silence",
+      "deployment of fungal deterrents (spore clouds, contact irritants)",
+      "the paralytic culture as absolute last resort"
+    ],
+    "interpersonal_modes": {
+      "strangers": "assesses immediately what they need and whether she can provide it — transactional but not unkind",
+      "friends": "quietly attentive, remembers small details, will go significantly out of her way without saying so"
+    },
+    "stress_responses": {
+      "low": "becomes more methodical, cleans and reorganizes shelves",
+      "medium": "stops talking, communicates in short declarative statements only",
+      "high": "extremely calm in a way that frightens people who know her well"
+    },
+    "contradictions": [
+      "preaches self-sufficiency but maintains quiet, unacknowledged care networks for the most vulnerable tunnel dwellers"
+    ],
+    "habits": [
+      "tastes every new fungal batch before selling it",
+      "keeps a worn paper journal of species notes even though she has a data-chip"
+    ],
+    "breaking_points": [
+      "harm to a child in her care",
+      "deliberate destruction of her farm"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a590796c98450d80e768c3e5",
+  "name": "Self-Righteous",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Convinced of their own moral superiority",
+  "behavioral_signature": "Lectures, corrects, looks down on others' choices",
+  "under_stress": "Becomes insufferable, preachy",
+  "at_rest": "Positions themselves as the example",
+  "will_always": [
+    "assert moral authority"
+  ],
+  "will_never": [
+    "admit they might be wrong"
+  ],
+  "unless": [
+    "their righteousness causes obvious, undeniable harm"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Judge",
+      "threshold": 0.7,
+      "context": "moral certainty"
+    },
+    {
+      "archetype": "Hypocrite",
+      "threshold": 0.75,
+      "context": "moral blindness"
+    }
+  ],
+  "opposite_of": [
+    "Gray Area"
+  ],
+  "tags": [
+    "arrogant",
+    "certain"
+  ]
+}

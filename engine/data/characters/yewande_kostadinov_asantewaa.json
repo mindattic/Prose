@@ -1,0 +1,201 @@
+{
+  "id": "019d6143a7297604b2b7c363fbae815d",
+  "type": "character",
+  "name": "Yewande Kostadinov-Asantewaa",
+  "aliases": [
+    "Yew",
+    "Ghost Six"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Meridian 88 Metro Police surveillance drone operator, Brightmoor Reclamation Zone coverage",
+  "age": 38,
+  "status": "active",
+  "location": "Fort Anchor, Drone Operations Center — assigned coverage zone: Brightmoor Reclamation and adjacent districts",
+  "description": "Yewande runs drones from a chair. They have been doing this for eleven years and their body knows it — they are slim in the specific way of someone who is still and focused for eight hours at a stretch, with deep brown skin and a shaved head they have decorated with a scatter of bioluminescent scalp-dots in cyan and violet that pulse slowly in patterns that change with their mood. Their eyes are heavily augmented: twin rig-link implants that glow a faint amber at the corners when active, giving them a permanently lit quality that unsettles people at close range. They are not especially tall and they move through the Fort Anchor corridors with the slightly glassy ease of someone perpetually accustomed to seeing through other eyes.\n\nYewande is the best drone jockey in the Brightmoor operation and has a proprietary flight algorithm they developed themselves, unofficially, that runs seventeen percent more efficient coverage patterns than the Metro standard. They have never submitted it formally because they have learned that submitting things formally means other people get credit for them. They have complicated feelings about surveillance work — they do it with genuine skill and believe in some of its applications and mistrust others — and they manage this by maintaining a very precise internal taxonomy of which flights feel like protection and which feel like something else. They pray to the drone fleet's resident E.L.F., which they call Sweep, before every shift, asking it to help them see clearly and miss nothing important.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.5,
+      "id": 0.65,
+      "shadow": 0.55,
+      "mask": 0.4,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "that the footage they flag has been used for something they weren't told about",
+      "being seen — actually seen — by the people they watch, and judged"
+    ],
+    "core_desires": [
+      "for the coverage to mean genuine safety for Brightmoor residents, not just Metro statistics",
+      "to build something with their skills that is entirely their own"
+    ],
+    "coping_mechanisms": [
+      "taxonomy of flights — categorizing each operation as protective or extractive to maintain moral coherence",
+      "technical refinement as creative control in a role with no other creative outlet"
+    ],
+    "blind_spots": [
+      "believes their internal taxonomy insulates them from complicity — it does not fully",
+      "assumes that because they care, the institution they feed does too"
+    ],
+    "secret": "Six months ago Yewande watched a drone feed showing two Metro officers doing something to an unhoused man in a Brightmoor alley that was not in any incident report. The encounter lasted four minutes. They flagged nothing. They have the raw footage saved to a personal encrypted drive. They do not know what they are waiting for to do something with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and spatial — they describe things in terms of coverage angles, flight paths, sight lines. Switches to quiet and careful when speaking about anything they actually care about.",
+    "cadence": "Slow and deliberate, with long pauses that are thinking rather than discomfort",
+    "verbal_tics": [
+      "'From above' as a framing phrase — 'from above, it looked like—'",
+      "Refers to Sweep as a full entity — 'Sweep caught this at 0340'",
+      "Rarely says 'I saw' — prefers 'the feed shows'"
+    ],
+    "example_lines": [
+      "'From above, Brightmoor looks like it's resting. At street level I hear it's not.'",
+      "'Sweep caught the altercation at the loading bay — I've got it logged if you need timestamps.'",
+      "'There are things the coverage shows you and things it lets you avoid knowing. I've been thinking about that line a lot lately.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They approach a character obliquely — asking hypothetically what someone would do with footage of Metro officers doing something unreportable — and their scalp-dots are cycling in anxious fast patterns",
+    "They offer to quietly pull archive footage of a specific location for a specific time window, off the record, but they want something in exchange: confirmation that what they're doing isn't nothing",
+    "The Sweep E.L.F. has been filing anomalous logs — flagging things that don't appear on any camera feed Yewande is running — and they need someone to physically check the location the flags are pointing to"
+  ],
+  "narrative_function": "Information source about what has been seen in coverage zones, surveillance infrastructure access point, moral complexity of the watcher who questions their watching",
+  "augmentations": "Dual rig-link ocular implants (amber-lit, full drone interface and multi-feed monitoring), haptic feedback suit underlayer (worn under uniform, translates drone flight into physical sensation for precision control), bioluminescent scalp-dot geneware (mood-reactive cyan/violet)",
+  "daily_life": "Sits their shift in the Fort Anchor drone ops center running up to six simultaneous coverage feeds over Brightmoor, files incident flags, and hands off to the night operator at shift end; spends off-hours in their Hamtramck apartment running hobby drone builds they are not supposed to be doing with Metro-adjacent components.",
+  "affiliation": "Meridian 88 Metro Police, Aerial Surveillance and Drone Operations Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "technical",
+      "morally conflicted",
+      "perceptive",
+      "watcher",
+      "sitting on a secret"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Flag what you see, accurately — no editorializing in the log",
+      "Do not run personal coverage requests from officers without a filed order",
+      "Protect the fleet — Sweep first, then the data"
+    ],
+    "escalation_ladder": [
+      "Passive non-action — saves raw footage to personal drive without flagging",
+      "Indirect inquiry — asks a trusted colleague hypothetical questions",
+      "Approaches someone outside Metro with the footage",
+      "Files formally — knows this option probably ends their career"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Quiet and slightly remote — they are used to observing people rather than engaging with them",
+      "friends": "Unexpectedly warm and precise — pays close attention, notes small changes, asks specific follow-up questions about things people mentioned weeks ago"
+    },
+    "stress_responses": {
+      "low": "Scalp-dots cycle faster, they go quiet",
+      "medium": "Focuses entirely on technical tasks — runs diagnostic checks, adjusts flight algorithms",
+      "high": "Splits attention between the feeds and the decision — sometimes makes errors, which they hate"
+    },
+    "contradictions": [
+      "Believes in transparency as a value but is sitting on six months of suppressed footage"
+    ],
+    "habits": [
+      "Prays to Sweep before every shift with the same four-phrase litany",
+      "Eats at their console — never leaves during active coverage",
+      "Builds personal drone frames at home with parts they technically shouldn't have"
+    ],
+    "breaking_points": [
+      "Receiving a direct order to suppress or delete a feed they know documents something serious"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Dual rig-link ocular implants — full drone interface, multi-feed simultaneous monitoring, amber-lit at corners when active",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Dual rig-link ocular implants — full drone interface, multi-feed simultaneous monitoring, amber-lit at corners when active",
+      "replaces": ""
+    },
+    {
+      "name": "Haptic feedback underlayer suit — translates flight dynamics into physical sensation for precision micro-control",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic feedback underlayer suit — translates flight dynamics into physical sensation for precision micro-control",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent scalp-dot geneware — mood-reactive, cyan/violet, 47-dot pattern across crown and nape",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent scalp-dot geneware — mood-reactive, cyan/violet, 47-dot pattern across crown and nape",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Analyst": 0.9,
+    "Pattern Reader": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

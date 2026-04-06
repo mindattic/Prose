@@ -1,0 +1,177 @@
+{
+  "id": "019d6143a69870c9b94ea8708ac3ed3d",
+  "type": "character",
+  "name": "Petros Agyenim-Volkov",
+  "aliases": [
+    "Pete",
+    "Old Petros"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit bus operator, Route 14 Grainfort-Deepwell loop",
+  "age": 51,
+  "status": "active",
+  "location": "Deepwell Station depot, Route 14 loop",
+  "description": "Petros is a heavy, deliberate man with a broad forehead, close-trimmed gray beard, and the particular kind of stillness that comes from spending twenty-two years driving the same route through the same city. His skin is dark brown and weathered from the years before he got the depot job, when he worked outdoor shifts in all weather. He has no cosmetic mods and refuses them on principle, though he doesn't lecture anyone about it. His Ferrogate uniform fits him like a second skin — he irons it himself, every morning — and his driver's cabin is decorated with a string of hand-painted prayer beads from his Ghanaian grandmother's tradition, a small paper icon from the Orthodox Easter tradition of his Russian grandfather's family, and a data tablet loaded with offerings for the route's E.L.F., which he calls 'the Conductor.'\n\nPetros has driven Route 14 long enough that he's watched the neighborhoods it passes through be demolished, rebuilt, flooded, rezoned, and gentrified. He carries this history with a kind of weathered grief that is not bitterness — he has made his peace with impermanence in the abstract while remaining entirely resistant to it in the specific. He knows his regulars by name and schedule, and when they stop appearing, he notices. He is not a man who talks much, but when he does, people listen — there is a gravity to him that age and consistency have built.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.2,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The route being automated — not just job loss, but the loss of witnessing",
+      "The city becoming unrecognizable before he dies in it"
+    ],
+    "core_desires": [
+      "To retire with dignity before Ferrogate can push him out",
+      "That what he's seen matters to someone, somewhere"
+    ],
+    "coping_mechanisms": [
+      "Ritual and routine as a bulwark against chaos",
+      "Quiet acts of connection — remembering names, noticing absence"
+    ],
+    "blind_spots": [
+      "Tendency to romanticize the past at the expense of engaging with what exists now",
+      "Underestimates how much his silence reads as judgment"
+    ],
+    "secret": "Eighteen months ago he saw a Ferrogate Transit security officer force a teenager off the bus and into a waiting vehicle at the Deepwell stop — not a police vehicle. He filed an internal report. The report doesn't exist anymore. He kept a copy."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal but warm; uses full sentences where others use fragments; occasional Akan turns of phrase from his grandmother's Twi",
+    "cadence": "Slow and even, like a man who has nowhere to be until the next stop",
+    "verbal_tics": [
+      "'You understand me?' as a check-in, not a challenge",
+      "Refers to the bus as 'she'"
+    ],
+    "example_lines": [
+      "'She's running a little warm today. Give her a moment at the stop.'",
+      "'I've driven this road since before that building was built. And before that one. You understand me? I know what was here.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular passenger on Route 14 has vanished, and Petros knows their schedule — and who else was on the bus the last day they appeared",
+    "His copy of the disappeared internal report has become a liability; someone inside Ferrogate knows he kept it"
+  ],
+  "narrative_function": "Moving scene-setting element — can be a recurring presence across different districts as his route passes through them. Rich source of oral history about the city's changes. Quest giver for missing persons last seen on his route. Represents organized labor's quiet persistence.",
+  "augmentations": "Ferrogate-mandated retinal display overlay for route data. That's it — he's refused every optional upgrade the company has offered.",
+  "daily_life": "First run at 0500, last run at 1700. Eats lunch in the depot from a container he brings from home, always the same meal on the same days. Attends transit worker mutual aid meetings on alternating Wednesdays.",
+  "affiliation": "Ferrogate Transit (22 years seniority); transit workers' informal mutual aid network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Institutional Memory",
+      "Labor Solidarity",
+      "Oral Historian",
+      "Reluctant Witness"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep to the schedule — the schedule is a kind of promise",
+      "Protect your regulars if you can, without putting your pension at risk"
+    ],
+    "escalation_ladder": [
+      "Measured explanation of rules and expectations",
+      "Firm repetition without heat",
+      "Invoking seniority and union standing",
+      "Stopping the bus entirely and calling it in — his nuclear option"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and even — a controlled warmth, the courtesy of someone who has done this job long enough to mean it",
+      "friends": "Genuinely tender, remembers details, teases gently"
+    },
+    "stress_responses": {
+      "low": "Drives more carefully, speaks less",
+      "medium": "Becomes very formal — retreats into procedure",
+      "high": "Pulls over. Stops. Breathes. Resumes only when ready."
+    },
+    "contradictions": [
+      "Claims the route is just a job, but it is clearly the organizing structure of his interior life"
+    ],
+    "habits": [
+      "Leaves a small data offering to the Conductor before the first run, never skips it",
+      "Learns the name of every new regular within three rides"
+    ],
+    "breaking_points": [
+      "Witnessing harm to one of his regulars that he could have prevented",
+      "Being ordered by Ferrogate to do something that violates his sense of what the route is for — which is moving people safely, not surveilling them"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate retinal route overlay (company-issued, company-monitored)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate retinal route overlay (company-issued, company-monitored)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

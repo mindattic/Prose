@@ -1,0 +1,57 @@
+{
+  "id": "019d6143a90a78de9bfd91949553eedf",
+  "name": "Velorin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Vel",
+    "Quicksilver",
+    "Snap"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "reflex_accelerator",
+  "manufacturer": "Helix Biosystems",
+  "description": "Velorin is a synaptic transmission accelerator that temporarily upregulates acetylcholine receptor density and increases axonal conduction velocity across motor pathways, shaving 30-60 milliseconds off average reaction time. Developed to allow unaugmented combatants to compete against chrome-heavy opponents, Velorin is Helix's flagship combat product and represents years of SNT-adjacent neuropharmacology research. The perceptual effect is often described as the world slowing slightly while the user's body moves at normal speed.",
+  "method_of_use": "sublingual",
+  "effects": [
+    "Reaction time reduction of 30-60ms from individual baseline",
+    "Improved fine motor precision under stress",
+    "Subjective perception of slightly slowed external movement",
+    "Enhanced hand-eye coordination and target tracking",
+    "Mild elevation of processing speed for threat recognition"
+  ],
+  "side_effects": [
+    "Severe muscle tremors and fasciculations after drug clears",
+    "Acetylcholine rebound causing temporary weakness and coordination loss post-duration",
+    "Hypersensitivity to sensory input during peak effect — loud sounds and bright lights are painful",
+    "Risk of seizure if combined with BCI stimulation protocols",
+    "Chronic use degrades baseline reaction time as nervous system compensates"
+  ],
+  "duration": "15-20 minutes",
+  "addiction_risk": "moderate",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ240 per sublingual strip",
+  "cultural_context": "Velorin is the great equalizer — unaugmented fighters who can afford it can close the gap against lightly-chromed opponents. This creates a strange economic dynamic: chrome costs thousands of phi upfront, while Velorin costs hundreds per engagement. For runners who can't afford augmentation, Velorin is a subscription fee for staying competitive. There's a subculture of 'clean fighters' on the competitive circuit who use Velorin specifically because it doesn't qualify as augmentation under most underground fighting rules.",
+  "story_hooks": [
+    "A Helix researcher approaches a runner with an offer: beta-test the next-generation Velorin formulation, which promises 80ms reduction, in exchange for combat field data — but the waiver they're asked to sign has unusual indemnity clauses.",
+    "Someone is manufacturing a street version of Velorin that has an 80% chance of working and a 20% chance of triggering a grand mal seizure — and the counterfeit packaging is indistinguishable from the real thing.",
+    "A Tier 2 fighter has been using Velorin daily for three years and now has slower baseline reflexes than someone who's never taken it — she needs the drug just to reach normal human speed, and Helix may have known this would happen."
+  ],
+  "tags": [
+    "combatstimulant",
+    "reflexaccelerator",
+    "pharmaceutical",
+    "combat",
+    "loss",
+    "augment",
+    "bci",
+    "ai",
+    "ubc",
+    "pain",
+    "drug",
+    "stimulant",
+    "circuit",
+    "tier 3",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143aa5e7446995b0cbbd962c3e0",
+  "name": "Arcturus Warden Exo-Carrier",
+  "type": "transportation",
+  "aliases": [
+    "Warden",
+    "The Walker",
+    "Big Dog"
+  ],
+  "category": "military_security",
+  "manufacturer": "Arcturus Defense",
+  "description": "A six-legged autonomous carrier platform that moves through terrain no wheeled vehicle can navigate — rubble fields, collapsed infrastructure, vertical surfaces. The Warden is deployed for deep Underworld operations, disaster response, and situations where conventional vehicles cannot reach. Standing four meters tall, it moves with an unsettling insectoid grace that never stops being disturbing no matter how many times you see it. The cargo bay can carry supplies, casualties, or a tactical team. It is equally comfortable with all three.",
+  "propulsion": "Six-legged hydraulic locomotion, electric power",
+  "speed": "30 km/h flat ground, 15 km/h rough terrain, 5 km/h vertical climb",
+  "capacity": "8 personnel or 2,000 kg cargo",
+  "range": "24 hours continuous operation",
+  "tier_availability": "Military/corporate security only",
+  "cost": "Φ500,000 per unit",
+  "autonomy": "Fully autonomous with optional human direction. Terrain AI navigates independently.",
+  "armament": "Modular weapon mounts (2), crowd suppression systems, smoke deployment.",
+  "common_usage": "Underworld operations, disaster response, hostile terrain logistics, perimeter denial.",
+  "story_hooks": [
+    "A Warden sent into the deep Underworld comes back alone, its cargo bay sealed and its terrain AI refusing to share mapping data",
+    "Someone captures a Warden and reprograms it as a mobile fortress for a Tier 1 community — Arcturus wants it back"
+  ],
+  "tags": [
+    "militarysecurity",
+    "transportation",
+    "weapon",
+    "war",
+    "ai",
+    "corporate",
+    "power",
+    "underworld",
+    "rain",
+    "vehicle"
+  ]
+}

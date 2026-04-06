@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a7c470599002db5746ab84cf",
+  "name": "Ringo Corponation Pharyngeal Signal Bridge",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Pharyngeal Signal Bridge",
+  "type": "cyberware",
+  "aliases": [
+    "The Interpreter",
+    "Tonguework",
+    "The Diplomat's Throat"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Pharyngeal Signal Bridge is a communication augmentation installed in the laryngeal and pharyngeal musculature, combining a subvocal signal capture array with a micro-speaker lattice embedded in the soft tissue of the throat and a real-time linguistic processing unit housed in a slim module behind the left mastoid bone. The augmentation's primary function is bidirectional language translation: it captures the user's subvocalizations, processes them through a 340-language model stored on the mastoid unit, and produces output through the micro-speaker lattice that reproduces the target language in a voice profile matched to the user's own phonetic signature — same tone, same cadence, different language. Incoming speech is processed in reverse: the user hears the speaker's voice replaced in real time with a translation delivered through bone conduction directly to the inner ear.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"language_library\":\"340 languages and 1,200+ regional dialect variants (OTA updates via Ringo network)\",\"translation_latency\":\"0.3–0.8 seconds depending on linguistic complexity\",\"voice_profile_accuracy\":\"94% phonetic match to user's natural voice signature\",\"bone_conduction_range\":\"Full audible spectrum, private delivery\",\"mastoid_unit_dimensions\":\"4.1cm × 2.2cm × 0.9cm\",\"power_source\":\"Kinetic jaw-motion microgenerator; 48-hour passive reserve\",\"update_frequency\":\"Monthly dialect and slang patches via Ringo Connect subscription\"}",
+  "side_effects": [],
+  "cultural_context": "The Pharyngeal Signal Bridge is one of Ringo Corponation's most commercially successful augmentations precisely because it is mundane — it solves a problem that millions of people in Meridian 88's polyglot sprawl face daily. The city's population speaks hundreds of languages across its districts, and the Bridge has become as normalized as corrective lenses once were. Among purists in various cultural communities, there is a known resentment toward Bridge users who navigate cultural spaces without the years of immersion those communities regard as earned membership. The phrase 'throat foreigner' is used, sometimes affectionately, sometimes as a sharp accusation. High-end users pay for custom voice profile tuning that adds regional tells — a specific neighborhood accent, a generational slang pattern — to make the output less identifiably artificial.",
+  "known_users": [
+    "Meridian 88 trade district merchants and brokers",
+    "Infiltration operatives working cross-cultural assignments",
+    "Diplomatic and corporate liaison staff",
+    "Journalists covering district beat reporting",
+    "Refugee community advocates working across language barriers"
+  ],
+  "story_hooks": [
+    "A Ringo Connect subscription update has introduced a subtle error in a specific dialect cluster — users speaking this variant are unknowingly inserting a phrase that carries a deeply offensive connotation in the relevant community, and tensions are escalating before anyone identifies the source.",
+    "An operative's Bridge has been remotely updated with a false language profile — they believe they are speaking the correct language for a negotiation, but they are actually speaking something entirely different, and neither party realizes it yet.",
+    "Ringo Corponation's translation model has been trained on intercepted communications — a linguist has identified proprietary phrases from sealed corporate documents appearing in the public dialect update patches.",
+    "A community leader has discovered that a trusted colleague who has advocated for their district for years has been using the Bridge the entire time — the revelation about language has opened questions about everything else that was performed rather than genuine."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "war",
+    "trust",
+    "augment",
+    "ai",
+    "corporate",
+    "power",
+    "bar",
+    "rain",
+    "train",
+    "refugee",
+    "tier 1"
+  ]
+}

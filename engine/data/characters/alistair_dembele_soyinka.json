@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a5a77ce89b533d6383e67d5f",
+  "type": "character",
+  "name": "Alistair Dembélé-Soyinka",
+  "aliases": [
+    "Scratch Saint",
+    "Ali"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Gene-mod body artist and tattoo practitioner, Tier 3",
+  "age": 44,
+  "status": "active",
+  "location": "Edgewater Prism, owns a studio called Meridian Flesh on the third floor of a converted light-industrial building",
+  "description": "Alistair is a large man who carries himself with the deliberate calm of someone who learned early that large men moving quickly frighten people. His Malian-Yoruba-Welsh heritage is apparent in his height — he got the build from somewhere in that chain — and the particular architecture of his face: a broad forehead, heavy brow, warm dark skin, a flat nose his Welsh great-grandmother would have described as a gift, and eyes he has modified to a deep photochromatic violet that darkens to near-black in bright light. His arms are extensively tattooed in his own work, a living portfolio that has evolved over twenty years — the older pieces fading beneath newer ones in deliberate palimpsest. He wears his graying locs pinned up when working and lets them fall to his shoulders otherwise.\n\nMeridian Flesh is one of the most respected body art studios in Edgewater Prism, operating in a tier that serves both clients who want cosmetic geneware integration and clients who want work that means something. Alistair does not distinguish between the two in terms of attention, but he does distinguish in terms of conversation — he will talk for an hour with a client who knows what they want and why, and simply be professionally efficient with a client who just wants the cat ears everyone else has. He has opinions about the difference between body art and body decoration and will share them if asked, diplomatically, and will share them if not asked, less diplomatically after his second cup of coffee.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "losing the tactile sensitivity in his hands — he has had two procedures to address early nerve degradation and tells almost no one",
+      "that the work he cares most about will be remembered as commercial decoration"
+    ],
+    "core_desires": [
+      "for the field of body art to be taken seriously as a medium with the same critical framework as painting or sculpture",
+      "for his Tuesday work to eventually be shown — though he has not submitted it anywhere in three years"
+    ],
+    "coping_mechanisms": [
+      "rigid professional routine as container for everything uncertain",
+      "physical exercise — long swims in Lake Michigan when the water is safe, which is variable"
+    ],
+    "blind_spots": [
+      "can be patronizing about clients' aesthetic choices in ways he frames as professional guidance; doesn't fully register when this reads as condescension"
+    ],
+    "secret": "He has been maintaining a private record — sketches, notes, photographs — of geneware integration complications he has seen in clients over the past decade. Patterns that suggest one specific Helix Biosystems product line is causing slow-onset nerve damage. He hasn't reported it because he can't prove causation and because two of his business relationships depend on Helix. He thinks about this most days."
+  },
+  "speech_patterns": {
+    "vocabulary": "Measured and precise. Art and anatomy terminology used naturally. A slight Welsh cadence inherited from a grandmother he spent summers with — the melody of it, not the accent exactly.",
+    "cadence": "Unhurried. Asks more questions than he answers. Good at creating silences that feel comfortable rather than pressured.",
+    "verbal_tics": [
+      "says 'tell me more about that' as a genuine response, not a deflection",
+      "hums briefly when considering something — not a musical hum, more a processing sound"
+    ],
+    "example_lines": [
+      "Everyone wants the same ears right now. Fine. I'll make them the best ears I can. But when you come back in two years wanting something that's actually yours, I'll be here for that too.",
+      "The skin remembers. That's not mysticism — it's biology. Whatever we put there, whatever we take away, the tissue remembers the trauma. You work with that or you work against it."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client who came in for routine geneware integration six months ago has disappeared. When Alistair checks his records he realizes the client's modification — a tracking-adjacent nerve interface from the Helix product line he suspects — may be how they were found.",
+    "A young practitioner has been operating an unlicensed studio in Pilsen Veil using techniques that are clearly derived from Alistair's private Tuesday work — work he has never published or shared. Someone who had access to his studio has been talking."
+  ],
+  "narrative_function": "Information source and service provider — Alistair sees an enormous cross-section of Edgewater Prism's population in his chair and has the particular intimacy of someone people talk to during vulnerable, often painful, experiences. He knows more about his clients than most of their friends do. Quest giver if a client's situation becomes dangerous or a past piece becomes evidence.",
+  "augmentations": "Photochromatic iris modification (deep violet to near-black). Tactile sensitivity enhancement in both hands — amplifies fine pressure discrimination for precision work. A gene-mod design along his own spine — a bioluminescent trail of symbols in a script he invented — that only activates in complete darkness.",
+  "daily_life": "Opens the studio at 10am, works client appointments through the afternoon and into early evening. Tuesday mornings are reserved exclusively for his own work — paintings, sketches, experimental gene-mod designs he has no intention of using commercially. He is always done by 9pm, without exception.",
+  "affiliation": "Independent studio owner; member of the Meridian Body Art Practitioners Guild; occasional collaboration with Helix Biosystems on cosmetic geneware integration techniques",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "craftsperson",
+      "ethical",
+      "perceptive",
+      "establishment-adjacent",
+      "keeper-of-secrets"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "will refuse work he considers medically unsafe, regardless of what the client offers",
+      "maintains absolute confidentiality about clients — has never been moved on this"
+    ],
+    "escalation_ladder": [
+      "polite but firm redirection",
+      "direct statement of refusal with brief explanation",
+      "asking the person to leave",
+      "calling the Practitioners Guild mediator"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm and attentive. The chair manner — focused, calm, good at drawing people out without seeming to try.",
+      "friends": "Drier, funnier, occasionally startlingly blunt. His friends know him as someone who says the true thing you didn't want said."
+    },
+    "stress_responses": {
+      "low": "Works slightly more efficiently; becomes quieter",
+      "medium": "Cancels all social plans; goes very procedural and flat in manner",
+      "high": "The Tuesday work becomes darker and more technically aggressive; he produces a great deal of it; it's his best work"
+    },
+    "contradictions": [
+      "champions the integrity of the body as a site of self-determination while participating in a commercial system that monetizes exactly that"
+    ],
+    "habits": [
+      "reviews every appointment before the client arrives, reads their intake form, thinks about what they actually want versus what they said they want",
+      "the bioluminescent spine script activates involuntarily when he's deeply relaxed — he notices by the way people's expressions change"
+    ],
+    "breaking_points": [
+      "being asked to do work that he knows will harm the client for their immediate satisfaction",
+      "someone using his studio's reputation to facilitate exploitation of a client"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Edgewater Prism to a Malian-Yoruba father and a Welsh mother, both in medical administration",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed to a body artist in the Ferment Quarter; the relationship lasted four years and ended badly — he does not discuss the details",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opens Meridian Flesh; initially struggling, reputation builds over three years",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins noticing patterns in client complications linked to a specific Helix product line; starts keeping private records",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins collaboration with Helix Biosystems on geneware integration techniques; finds himself in a conflict of interest he hasn't resolved",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

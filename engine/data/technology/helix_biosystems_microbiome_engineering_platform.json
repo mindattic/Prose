@@ -1,0 +1,46 @@
+{
+  "id": "019d6143aa3e78fda3abe40ec4b2c3c1",
+  "name": "Helix Biosystems Microbiome Engineering Platform",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Microbiome Engineering Platform",
+  "type": "technology",
+  "aliases": [
+    "MEP",
+    "Gut Forge",
+    "Bio Flora",
+    "Helix Culture"
+  ],
+  "subcategory": "biotechnology",
+  "description": "A bioengineering system for designing and implanting custom microbial ecosystems in the human gut, respiratory tract, and skin. The MEP creates tailored microbiome communities that optimize digestion, immune function, toxin resistance, and even cognitive performance through the gut-brain axis. Each microbiome design is customized to the individual patient's genetics, diet, and health goals, and the engineered organisms are designed to establish permanent colonies that maintain themselves indefinitely. Helix offers microbiome packages ranging from basic health optimization to extreme environmental adaptation.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "HELIX BIOSYSTEMS",
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "Custom microbial community design",
+    "Gut-brain axis optimization",
+    "Permanent microbiome colony establishment"
+  ],
+  "enables": [
+    "Customized digestive optimization",
+    "Enhanced immune function through engineered flora",
+    "Toxin resistance through microbial processing",
+    "Cognitive enhancement via gut-brain axis"
+  ],
+  "social_impact": "The MEP has made the human body's microbial ecosystem another domain for optimization and inequality. Upper-tier individuals carry engineered microbiomes that protect them from food-borne illness, optimize their nutrition absorption, and enhance their cognitive performance through gut-brain signaling. Lower-tier individuals carry whatever microbes they have acquired naturally. The biological divide is invisible but measurable — people with engineered microbiomes are statistically healthier, sharper, and more resilient.",
+  "story_hooks": [
+    "A MEP microbiome package designed for a corporate executive has been found to include organisms that produce a compound making the host more suggestible — someone is using microbiome engineering for behavioral modification.",
+    "An engineered microbiome has become transferable between people through close contact — the optimization organisms are spreading naturally, but without the customization that made them safe for the original host."
+  ],
+  "tags": [
+    "biotechnology",
+    "technology",
+    "genetic",
+    "ai",
+    "corporate",
+    "rain",
+    "food",
+    "tier 2"
+  ]
+}

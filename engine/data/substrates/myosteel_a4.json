@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a9de7761919eb36c6b6e61fc",
+  "name": "Myosteel-A4",
+  "brand_name": "Myosteel",
+  "product_name": "Myosteel-A4",
+  "type": "substrate",
+  "aliases": [
+    "tensionite",
+    "stress-iron",
+    "A4"
+  ],
+  "category": "bio_hybrid",
+  "description": "Myosteel-A4 is an iron-nickel alloy matrix interpenetrated with engineered myogenic fiber bundles derived from synthetic muscle precursor cells, creating a composite that responds to repeated mechanical stress by triggering cellular proliferation and matrix densification — the same fundamental mechanism by which organic muscle hypertrophies under load. A freshly fabricated panel of Myosteel-A4 is approximately 40% weaker than its rated maximum; that maximum is only reached after months of sustained mechanical use, meaning the material literally grows stronger the harder it is worked. Crucible Industries markets it primarily to the military and heavy-labor augment sector, where long-term performance gain outweighs the liability of an initially unrated substrate.",
+  "properties": [
+    "stress_adaptive_strengthening",
+    "high_ultimate_tensile_strength",
+    "metabolic_dependency",
+    "biocompatible",
+    "moderate_initial_strength",
+    "self_reinforcing",
+    "slow_fatigue_recovery",
+    "weight_variable"
+  ],
+  "developers": [
+    "Crucible Industries",
+    "BioForge Labs"
+  ],
+  "applications": [
+    "exoskeletal load frames for heavy-labor augments",
+    "impact-absorbing structural panels in military body armor",
+    "high-cycle joint components in industrial prosthetics",
+    "structural members in augment chassis designed for long-term field deployment"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 18,000 per kg (base rated); performance-graded panels command premium",
+  "story_hooks": [
+    "A worker's Myosteel-A4 augment limbs have been under extreme load for three years in a mining operation — they are now measurably stronger than anything Crucible Industries has on record, and the corporation wants to study the subject whether they consent or not",
+    "Military surplus Myosteel-A4 panels are hitting the black market already stress-hardened to combat specifications — someone is stripping dead soldiers' augments and selling the pre-seasoned components at a significant markup",
+    "The myogenic fibers in a character's Myosteel implant are over-responding to a hormonal condition, continuing to strengthen and thicken past safe tolerances, and the implant is beginning to deform the surrounding bone"
+  ],
+  "tags": [
+    "biohybrid",
+    "substrate",
+    "combat",
+    "augment",
+    "prosthetic",
+    "ai",
+    "synthetic",
+    "elf",
+    "market",
+    "armor",
+    "tier 4",
+    "tier 5"
+  ]
+}

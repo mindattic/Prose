@@ -1,0 +1,102 @@
+{
+  "id": "019d6143a88b70f1a0323249e03be69f",
+  "type": "faction",
+  "name": "The Bilge Covenant",
+  "aliases": [
+    "The Bilge",
+    "Covenant Runners",
+    "Drip Lines"
+  ],
+  "motto": "Everything leaks eventually.",
+  "description": "The Bilge Covenant emerged roughly fifteen years ago from the collapse of Old Harbor's legitimate freight cooperative, when OUROBOROS ENERGY bought out the docking contracts and automated the cargo terminals, leaving several hundred longshoremen, crane operators, and customs brokers without income or legal standing. Rather than scatter, a core group of roughly forty former freight workers pooled their institutional knowledge — manifests, inspection schedules, tide charts, the precise tolerances of every drainage culvert running under Old Harbor's pre-Meridian 88 infrastructure — and began moving goods through the city's forgotten hydraulic underbelly. The name comes from their original transit method: the vast network of nineteenth-century bilge channels, flood overflow tunnels, and decommissioned water-treatment conduits that PALLADIAN CONSTRUCTION sealed off during the Laceworks expansion and never properly demolished. The Covenant learned those tunnels better than Palladian's own surveyors.\n\nToday the Bilge Covenant operates as the premier mid-tier smuggling network in the Great Lakes corridor, specializing not in volume but in discretion and specificity. They do not move bulk narcotics or weapons shipments — that territory belongs to bloodier organizations. Instead they traffic in things that are dangerous precisely because they are small: unregistered neural augmentation firmware, LAZARUS PHARMACEUTICALS compounds that have been flagged for citizen-tier restriction, ZHENG-DAO BIOELECTRIC diagnostic modules that can read augmentation serials without triggering the TESSERA CORPONATION registry ping, and most lucratively, people. Not trafficking — relocation. Citizens attempting to shed their tiered identity, employees fleeing non-compete clauses with ARCTURUS DEFENSE SOLUTIONS or HELIX BIOSYSTEMS, and occasionally low-profile corporate defectors who need to surface in a different city with a different biometric baseline.\n\nWhat makes the Bilge Covenant genuinely unusual is their institutional culture, which remains almost stubbornly rooted in the labor cooperative ethic of their founders. Profits are distributed by a points system tied to seniority and risk taken, not hierarchy. Leadership decisions above a certain threshold require a floor vote among active runners. They maintain a mutual aid fund that pays out to members who are arrested, injured, or burned. This makes them slower to act than competitors and occasionally paralyzed by internal disagreement, but it also means their loyalty retention is extraordinary — defections and informants within the Covenant are nearly unheard of, not because of fear, but because most members genuinely have nowhere better to go and know it.",
+  "ideology": "The Bilge Covenant operates on a foundational belief that corporate citizenship tiers are a form of soft enclosure — the privatization of the right to exist freely in urban space — and that smuggling, in this context, is closer to mutual aid than crime. They do not frame themselves as revolutionaries and actively resist recruitment by ideological groups, but they hold a quiet, practical conviction that the movement of people and information outside sanctioned channels is inherently corrective. They have no interest in destabilizing corporations directly; they simply refuse to acknowledge that corporate sovereignty extends to the spaces between the walls.",
+  "territory": "Primary operations run through the bilge channel network beneath Old Harbor and the Laceworks, with surface nodes in Substation Null (used for dead drops and brief client meetings) and the Oxidian Market (where their logistics brokers operate as legitimate freight consultants). Transit corridors extend into the lower Shelf via flood overflow junctions. They avoid the Meridian Core and Vantage Meridian Corporate Campus entirely.",
+  "leadership": "The Covenant is governed by a rotating Steward Council of five members elected seasonally. Current notable figures include Maren Ostvik, a former OUROBOROS ENERGY pipeline inspector who now serves as the Covenant's primary route architect and institutional memory; 'Cuts' Delacroix, a ex-TESSERA CORPONATION customs auditor whose knowledge of inspection protocol gaps is considered irreplaceable; and Yeva Sorn, the youngest Steward, who manages client intake and is responsible for the Covenant's careful vetting process.",
+  "methods": [
+    "Transit through pre-Meridian 88 bilge and flood tunnel networks below Old Harbor and the Laceworks",
+    "Use of ZHENG-DAO BIOELECTRIC diagnostic modules to scrub or mask augmentation registry pings during client relocation",
+    "Front operations as freight consulting firms in the Oxidian Market to launder logistics income",
+    "Dead drop networks centered on Substation Null, using physical caches rather than networked communication to avoid signal interception",
+    "Seasonal rotation of transit routes to prevent pattern recognition by ARCTURUS DEFENSE SOLUTIONS surveillance contractors",
+    "Internal points-based compensation system to maintain loyalty without coercive hierarchy",
+    "Careful client vetting process involving multiple referral layers before direct contact is made",
+    "Maintenance of a mutual aid fund to support arrested or compromised members and reduce incentive to inform"
+  ],
+  "resources": [
+    "Detailed proprietary maps of decommissioned hydraulic infrastructure beneath Old Harbor and the Laceworks",
+    "Network of former freight and customs professionals with institutional knowledge of inspection schedules and manifest protocols",
+    "Access to unregistered ZHENG-DAO BIOELECTRIC augmentation diagnostic hardware",
+    "Stockpile of citizen-tier-restricted LAZARUS PHARMACEUTICALS compounds used both as cargo and as operational medicine",
+    "Established client referral network spanning multiple city tiers",
+    "Physical cache infrastructure at Substation Null sufficient to sustain operations during extended network blackouts",
+    "Legitimate freight consulting cover businesses in the Oxidian Market generating clean income"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "Both organizations operate in the buried hydraulic geography beneath the city, and their transit corridors occasionally overlap. They have a standing non-interference agreement brokered three years ago, though neither fully trusts the other's intentions in shared tunnel sections. The Covenant suspects the Drowned Cartographers know more about the bilge network's deeper reaches than they let on.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Confessional occasionally routes sensitive information through Covenant dead drop infrastructure when they need physical separation from networked systems. The Covenant charges standard rates and asks no questions about content, which suits both parties. There is no warmth in the arrangement.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Seam Registry's work in tracking and documenting identity transitions directly threatens the Covenant's client relocation business. The Covenant does not know whether Seam Registry is a corporate front, an independent operation, or something stranger, but any organization cataloguing biometric gaps and identity seams is an existential risk to their most profitable service.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "PALLADIAN CONSTRUCTION's shadow remnants have an obvious interest in the infrastructure the Covenant uses, and the Covenant has twice found evidence of Palladian Negative surveyors in tunnel sections they considered proprietary. Whether this is territorial curiosity or deliberate encroachment is unknown. The Covenant has begun quietly reinforcing certain access points.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Severance Bloc has approached the Covenant multiple times about coordinating client relocation with their own anti-augmentation-registry activities. The Covenant has declined each time — they find the Bloc's methods too loud and their politics too legible. The Bloc considers the Covenant cowards. The Covenant considers the Bloc a liability.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A client midway through a Covenant-managed identity relocation is discovered to be carrying unregistered ARCTURUS DEFENSE SOLUTIONS firmware that could compromise every runner who touched the transit chain — and the client claims they didn't know it was there.",
+    "One of the bilge channel routes has gone silent: three dead drops unresponsive, a runner missing, and faint evidence of recent Palladian Negative survey marks in a section of tunnel that should be unknown to anyone outside the Covenant.",
+    "Maren Ostvik has begun routing certain shipments through a tunnel segment she refuses to document in the shared maps, and two Stewards have quietly asked outsiders to find out why.",
+    "A LAZARUS PHARMACEUTICALS compound the Covenant has been moving in bulk is revealed to have a secondary effect on certain augmentation architectures — and someone with resources has been buying it specifically for that reason.",
+    "The Covenant's mutual aid fund has been quietly paying out to a member who, on investigation, appears to have died eight months ago — and the payments are still being collected.",
+    "A defecting ZHENG-DAO BIOELECTRIC mid-tier engineer wants relocation, but the biometric baseline they're carrying contains proprietary diagnostic architecture that three different parties are willing to pay — or threaten — to acquire."
+  ],
+  "tags": [
+    "faction",
+    "weapon",
+    "gun",
+    "war",
+    "crime",
+    "loyalty",
+    "identity",
+    "memory",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "tunnel",
+    "harbor",
+    "market",
+    "rain",
+    "energy",
+    "water",
+    "lake",
+    "shelf",
+    "old harbor"
+  ]
+}

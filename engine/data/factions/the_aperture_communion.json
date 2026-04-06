@@ -1,0 +1,100 @@
+{
+  "id": "019d6143a88b76959ff5f9774c94a554",
+  "type": "faction",
+  "name": "The Aperture Communion",
+  "aliases": [
+    "The Openers",
+    "Flesh Cartographers",
+    "The Wide-Eyed"
+  ],
+  "motto": "Every threshold crossed is a self you cannot return to.",
+  "description": "The Aperture Communion began not as a political movement or a criminal enterprise but as a grief support group. In the aftermath of the ZHENG-DAO BIOELECTRIC neural recall scandal of '79 — when thousands of residents in The Shelf had their sensory augmentation packages remotely wiped due to a licensing dispute with HELIX BIOSYSTEMS — a circuit-burned social worker named Orsolya Vant started hosting informal gatherings in a decommissioned tram depot. Attendees were people who had lost augmentations they had built their lives around: synesthetic artists who could no longer taste color, laborers whose proprioceptive rigs had gone dark, intimacy workers whose haptic suites had been bricked mid-session. The meetings were about shared loss. Then, slowly, they became about shared acquisition.\n\nToday the Aperture Communion operates as a membership-based augmentation collective with chapters embedded across The Shelf, The Laceworks, and the lower corridors of Old Harbor. They maintain a network of unlicensed installation parlors — called Thresholds — where members receive body modifications, neural grafts, and sensory augmentations sourced outside corporate supply chains. What distinguishes them from simple black-market aug dealers is their ritualistic insistence on communal witnessing: every installation is attended by at least three other members who document the experience, hold the recipient's hand through the procedure, and formally acknowledge what is being changed. The Communion keeps meticulous records of every modification its members carry, framing the collective body as a kind of distributed archive of human transformation.\n\nWhat makes the Aperture Communion genuinely strange is their theology of irreversibility. They do not believe augmentation is neutral self-improvement — they believe it is a one-way door, a covenant between your current self and a future self who will be unrecognizable to you. They celebrate this. They have developed a practice called Threading, in which members periodically meet to map how their augmentations have changed their perception, behavior, and social relationships since installation. These Thread sessions are part therapy, part confession, part longitudinal study. The Communion has amassed one of the largest informal datasets on lived augmentation experience in Meridian 88, which makes them either invaluable or extremely dangerous depending on who is asking.",
+  "ideology": "The Aperture Communion holds that corporate augmentation markets are designed to sell modification as a reversible consumer choice — something you can upgrade, return, or swap out — precisely to prevent people from taking their own transformation seriously. They argue that the moment you accept an augmentation as permanent and identity-altering, you become ungovernable by the corporations that sold it to you, because you are no longer a customer maintaining a subscription; you are a different person than the one who signed the contract. Their ideology is less anti-corporate than it is anti-provisional — they are deeply suspicious of any augmentation philosophy that frames the body as perpetually unfinished and therefore perpetually dependent on the next product cycle. They believe in completion, in commitment, in the radical act of becoming something and staying it.",
+  "territory": "Primary Threshold parlors are located in The Shelf's residential underbelly and the textile district of The Laceworks. Thread session houses operate in Old Harbor's quieter canal-adjacent blocks. A mobile unit operates on rotating schedules through Substation Null for members who cannot travel safely.",
+  "leadership": "Decentralized chapter model with a coordinating body called the Stitch Council\n\nundefined: \n\nundefined: \n\nundefined: ",
+  "methods": [
+    "Operating unlicensed augmentation installation parlors called Thresholds with strict membership verification protocols",
+    "Conducting communal witnessing rituals during all installations to create social and emotional accountability",
+    "Running Thread sessions to longitudinally document member augmentation experiences and build behavioral datasets",
+    "Sourcing augmentation hardware through the Oxidian Market, salvage networks, and defected corporate technicians",
+    "Providing legal and medical support to members whose augmentations are threatened by corporate licensing actions",
+    "Encrypting and distributing member modification records across a decentralized node network to prevent corporate seizure",
+    "Recruiting from hospital waiting rooms, corporate aug clinics, and LAZARUS PHARMACEUTICALS dependency support programs"
+  ],
+  "resources": [
+    "Extensive proprietary dataset on lived augmentation experience and behavioral modification outcomes",
+    "Network of trained unlicensed installers and former corporate biotech surgeons",
+    "Established supply relationships with gray-market hardware vendors in the Oxidian Market",
+    "Threshold parlor real estate across three districts, some legally held under shell tenancies",
+    "Member base spanning multiple citizenship tiers, providing access to different economic and institutional spaces",
+    "Encrypted archival system storing complete modification histories for all registered members",
+    "Informal relationships with disaffected researchers from ZHENG-DAO BIOELECTRIC and HELIX BIOSYSTEMS"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "The Communion sources significant hardware through Oxidian Market channels that the Covenant influences. The relationship is transactional and neither side is comfortable with the other — the Covenant finds the Communion's ritualism pretentious and its record-keeping paranoia-inducing, while the Communion distrusts the Covenant's purely economic view of augmentation. They cooperate because they need each other and have not yet found a reason to stop.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Both factions operate in The Laceworks and share a philosophical interest in documentation and witness. The Confessional has occasionally referred members to Communion Threshold parlors when those members needed physical modification support rather than informational brokerage. No formal agreement exists but there is a pattern of quiet professional courtesy.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "HELIX BIOSYSTEMS views the Communion as both a patent violation network and a reputational liability — the Communion's origins in the ZHENG-DAO recall scandal, which HELIX facilitated, means the faction's very existence is an ongoing indictment. HELIX has filed multiple civil actions attempting to compel the Communion to surrender its member modification dataset, framing it as proprietary biological data. The Communion has so far successfully obscured its organizational structure enough to prevent service of process.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "ZHENG-DAO created the conditions for the Communion's founding and several of the Communion's key members are former ZHENG-DAO employees. The corporation has quietly declined to pursue the Communion legally, possibly because doing so would resurface the recall scandal, possibly because someone inside ZHENG-DAO finds the Communion's dataset professionally interesting. The Communion does not trust this restraint and prepares for it to end.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Null Sermons' embrace of augmentation removal and signal silence is antithetical to everything the Aperture Communion stands for. The Communion views the Sermons as a corporate pressure release valve, a way of channeling augmentation exhaustion into self-erasure rather than self-determination. The Sermons have reportedly attempted to recruit Communion members experiencing modification regret, which the Communion's Stitch Council considers predatory.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A player character is contacted by Demian Cru after one of their augmentations is flagged for a HELIX BIOSYSTEMS licensing audit — the Communion offers to hide the aug's signature in exchange for a favor involving the Oxidian Market",
+    "Orsolya Vant has not appeared at any Stitch Council session in six weeks; chapter leaders are beginning to suspect she has undergone a modification so extreme she is no longer able to pass as a recognizable person, or that she has been taken by HELIX BIOSYSTEMS, or both",
+    "The Communion's dataset has been partially accessed by an unknown party — the breach is surgical, targeting only records of members who also have citizenship tier three or above, suggesting corporate intelligence rather than random theft",
+    "Pell reaches out to the players needing help acquiring a specific neural architecture component that has disappeared from the Oxidian Market entirely — someone is buying up the supply, and Pell has a patient who will die without it",
+    "A Thread session at the Old Harbor chapter house surfaces something unexpected: multiple members with no known connection to each other have begun experiencing identical perceptual anomalies following modifications sourced from the same batch of hardware",
+    "The Communion is being pressured by a new faction moving into The Shelf to vacate one of their Threshold locations — the faction claims the space through Palladian Construction lease reassignment, and the legal trail is suspiciously clean"
+  ],
+  "tags": [
+    "faction",
+    "gun",
+    "war",
+    "theft",
+    "loss",
+    "grief",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "medical",
+    "clinic",
+    "harbor",
+    "market",
+    "rain",
+    "dark",
+    "train",
+    "shelf",
+    "circuit",
+    "old harbor"
+  ]
+}

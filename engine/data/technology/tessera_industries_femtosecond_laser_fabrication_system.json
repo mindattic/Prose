@@ -1,0 +1,45 @@
+{
+  "id": "019d6143aa52797ba0a759446a96d63e",
+  "name": "Tessera Industries Femtosecond Laser Fabrication System",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Femtosecond Laser Fabrication System",
+  "type": "technology",
+  "aliases": [
+    "FLFS",
+    "Atom Cutter",
+    "Tessera Scalpel",
+    "Light Forge"
+  ],
+  "subcategory": "manufacturing",
+  "description": "An ultra-precision manufacturing platform that uses femtosecond laser pulses to machine materials at the atomic scale. The FLFS can cut, drill, and shape any material — including diamond, sapphire, and exotic metamaterials — with tolerances measured in nanometers. The femtosecond pulse duration (10^-15 seconds) is so short that the material is removed before thermal energy can propagate to surrounding atoms, enabling cold ablation that leaves no heat-affected zone. The system fabricates components for neural interfaces, quantum computing hardware, and metamaterial structures that cannot be manufactured by any other method.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Femtosecond laser pulse generation",
+    "Atomic-scale cold ablation machining",
+    "Nanometer-tolerance positioning systems"
+  ],
+  "enables": [
+    "Atomic-precision component fabrication",
+    "Cold machining of any known material",
+    "Neural interface micro-component manufacturing",
+    "Quantum computing hardware production"
+  ],
+  "social_impact": "FLFS has made Tessera the sole source for the most precise manufactured components in Meridian 88 — neural interface electrodes, quantum computing substrates, and metamaterial structures all require fabrication tolerances that only femtosecond laser systems can achieve. This manufacturing monopoly gives Tessera a stranglehold on the supply chain for multiple critical technology sectors, as competing systems simply cannot produce components at the required precision.",
+  "story_hooks": [
+    "A Tessera FLFS unit has produced a component with features smaller than the system's documented resolution — the laser appears to be achieving atomic manipulation beyond its design parameters, and the resulting component exhibits properties that should be impossible.",
+    "Someone has stolen FLFS fabrication templates for neural interface components — not the components themselves but the manufacturing instructions, which would allow any entity with an FLFS system to produce Tessera-grade hardware independently."
+  ],
+  "tags": [
+    "manufacturing",
+    "technology",
+    "war",
+    "neural",
+    "ai",
+    "cold",
+    "energy",
+    "tier 4"
+  ]
+}

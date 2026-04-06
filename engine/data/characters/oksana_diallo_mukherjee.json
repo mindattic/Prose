@@ -1,0 +1,240 @@
+{
+  "id": "019d6143a67d79f5913b66cd0efe49d1",
+  "type": "character",
+  "name": "Oksana Diallo-Mukherjee",
+  "aliases": [
+    "Oxy",
+    "The Quiet Stitch"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Gene-mod body artist and tattoo artist",
+  "age": 35,
+  "status": "active",
+  "location": "The Garret, studio called Secondskin above a noodle bar on the Edgewater Prism level",
+  "description": "Oksana is compact and precise-looking, with light ochre skin, narrow-set dark eyes, and a body that is itself their most elaborate portfolio piece: bioluminescent freckle-constellations across their shoulders and throat, color-shifting scale-pattern geneware covering both forearms from wrist to elbow in teal and copper, and cat ears — small, dark-furred, fully expressive — perched on their head as their most remarked-upon feature, though they consider it their most boring one. Their hands are almost uncannily steady. They speak softly and move with the deliberate economy of someone who works in millimeters.\n\nTheir specialty is integrating traditional tattoo and scarification methods with geneware modification — they design pieces that are part pigment, part living tissue, partly responsive to the wearer's own biochemistry so that the work changes with the body over years. They are particularly sought out for memorial work, pieces made to commemorate lost people or mark major transitions, and they have developed a reputation for drawing out a client's full story before ever picking up a tool. They are not cheap, they have a two-month waiting list, and they do not take clients whose reasons they distrust. They are also, quietly, one of the most technically skilled unlicensed geneware applicators in The Garret.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing the steadiness in their hands — to age, damage, or neural drift",
+      "Being truly known by someone who then leaves anyway"
+    ],
+    "core_desires": [
+      "To make work that outlasts both the artist and the client",
+      "A relationship where they do not have to perform calm"
+    ],
+    "coping_mechanisms": [
+      "Extreme professional ritual — the precise setup of tools, the intake consultation — as a way of controlling anxiety",
+      "Deflection through attentive listening: keeping focus entirely on the other person"
+    ],
+    "blind_spots": [
+      "Their reputation for emotional availability in the studio does not translate to personal relationships, and they cannot see the gap",
+      "They screen clients for worthiness but apply no such rigor to people they let into their personal life"
+    ],
+    "secret": "They have been slowly, over five years, tattooing a complete map of Meridian 88's grey-market medical supply network onto the inner surfaces of a set of custom jacket panels — encoded in a pattern that reads as abstract art. They intend it as insurance. They have not decided against whom."
+  },
+  "speech_patterns": {
+    "vocabulary": "Professional and warm in the studio, measured and slightly formal outside it; uses the body as metaphor naturally ('what does that feel like, structurally?')",
+    "cadence": "Unhurried, with deliberate pauses that invite the other person to fill them — a practised interviewer's rhythm",
+    "verbal_tics": [
+      "'Tell me more about that' deployed as genuine curiosity and also as deflection from personal questions",
+      "Hums very softly when concentrating"
+    ],
+    "example_lines": [
+      "'The piece will grow with you. In ten years it'll tell a story neither of us can read yet.'",
+      "'I don't ask why someone wants what they want. I ask what they need to feel when they see it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client died three days after a session, and the death is being called natural causes, but Oksana noticed something in the client's tissue during the work that suggested it wasn't — and now they are trying to decide whether being right is worth the danger of saying so",
+    "Someone is counterfeiting their work — applying crude imitations of their distinctive integration technique under their name — and the fake pieces are failing biologically, causing the wearers harm"
+  ],
+  "narrative_function": "Information nexus — clients talk during long sessions and Oksana listens; they know secrets from every tier of The Garret's social world; also a practical resource for characters needing cosmetic cover work, unlicensed geneware application, or access to Helix grey-market medical supplies",
+  "augmentations": "Bioluminescent freckle-constellations (cosmetic geneware); color-shifting scale-pattern geneware on both forearms; geneware cat ears (fully expressive); sub-dermal hand stabilizers (occupational implants for precision work)",
+  "daily_life": "Opens the studio at noon, spends the first hour reviewing client files and correspondence, works on bodies until late evening with carefully scheduled appointments, closes alone and spends an hour doing maintenance on their own modifications.",
+  "affiliation": "Independent (Secondskin studio); loose professional relationship with Helix Biosystems grey-market suppliers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 10,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 9,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 0,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Body Artist",
+      "Geneware Specialist",
+      "Information Broker (Passive)",
+      "Precise and Guarded",
+      "Grey Market Connections"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never touch a client's body without explaining exactly what you are doing and why",
+      "A client's story belongs to them — it stays in the studio"
+    ],
+    "escalation_ladder": [
+      "Calm professional redirection",
+      "A single direct statement of boundary, delivered without apology",
+      "Ends the session, refunds the deposit, closes the door"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, curious, gently probing — gives the impression of great openness while revealing almost nothing",
+      "friends": "Rarely initiates but responds with full attention; affection shown through remembering small details over time"
+    },
+    "stress_responses": {
+      "low": "Becomes more methodical and ritualistic in studio setup",
+      "medium": "Slight increase in professional distance; warmer to clients, cooler to people who know them well",
+      "high": "Shuts down socially, works longer hours; their cat ears flatten and go still, which people who know them learn to read as a warning sign"
+    },
+    "contradictions": [
+      "Built their career on drawing out others' vulnerability while engineering total personal opacity"
+    ],
+    "habits": [
+      "Washes hands in an exact three-stage sequence before every session",
+      "Never eats in the studio"
+    ],
+    "breaking_points": [
+      "A client being harmed by someone exploiting trust they built in this space",
+      "Being told their precision is 'just technique' without acknowledgment of the care underneath it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Edgewater Prism district to a Ukrainian-Senegalese father and a Bengali-Kazakh mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed apprenticeship under a retiring Garret tattoo artist; inherited client list and studio lease",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Developed the biosynchronous integration technique that made their reputation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened Secondskin; two-month waiting list established within a year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

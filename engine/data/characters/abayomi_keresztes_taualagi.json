@@ -1,0 +1,251 @@
+{
+  "id": "019d6143a59d7a2d82ce0af2b62e3394",
+  "type": "character",
+  "name": "Abayomi Keresztes-Taualagi",
+  "aliases": [
+    "Bayo",
+    "The Admiral"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Corporate Wars naval veteran, pension-dependent community fixture",
+  "age": 79,
+  "status": "active",
+  "location": "Washburn Commons, Building 7, Unit 412 — near the canal-facing benches",
+  "description": "Abayomi is a barrel-chested man slowly collapsing inward on himself, the way old warships list before they go under. His skin is deep umber with a web of pale scarring across his left jaw and neck — plasma burns from the Siege of Kenosha Crossing, 2161. He keeps his white hair cropped close and his posture militarily straight even when the arthritis in his spine screams otherwise. He has geneware eyes — replacement optical implants that glow a faint amber in low light, given to him by Sterling-Nakamura after the originals were destroyed in combat. He wears the same three shirts in rotation and everyone in the building knows which day it is by the color.\n\nBayo is the kind of man who speaks slowly because he means every word, and who listens in a way that makes people feel heard down to their bones. He was a petty officer aboard a Ferrogate Transit escort frigate during the Corporate Wars and saw things he has never described to anyone still living. He spends his afternoons on the canal bench feeding data-pigeons and watching the water, and his evenings hosting an informal gathering he calls 'The Muster' — eight to twenty neighbors sitting in his unit sharing food and grievances. He is not a wise man in any mystical sense. He is simply someone who has outlived enough catastrophes to have excellent perspective.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "dying before he can make amends to someone he failed",
+      "watching the community he built dissolve after he is gone"
+    ],
+    "core_desires": [
+      "to be genuinely useful one more time",
+      "to believe the war he fought meant something"
+    ],
+    "coping_mechanisms": [
+      "ritual and routine",
+      "hosting others so he is never alone with his thoughts",
+      "sardonic humor"
+    ],
+    "blind_spots": [
+      "underestimates how much his approval shapes people around him",
+      "cannot recognize when his 'helping' is actually controlling"
+    ],
+    "secret": "During the Siege of Kenosha Crossing he gave an order that resulted in the deaths of eleven Zheng-Dao civilian dock workers who were in the wrong sector at the wrong time. The incident was classified by Sterling-Nakamura. He has never spoken of it. The pension he receives feels, to him, like payment for silence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old maritime slang mixed with formal military cadence; calls people 'sailor' regardless of gender as a term of mild affection; uses nautical metaphors for everything",
+    "cadence": "Measured, unhurried, with long pauses before important words — as if he is weighing them first",
+    "verbal_tics": [
+      "'Mark that'",
+      "'You follow me?'",
+      "Long exhale through the nose before disagreeing"
+    ],
+    "example_lines": [
+      "'Mark that — I am not telling you what to do. I am telling you what I saw happen to people who did the other thing.'",
+      "'The water doesn't care what flag your ship flies. Neither does time. You follow me?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A young veteran from a recent Axiom-Tessera border skirmish has shown up at Washburn Commons in crisis — Bayo has been informally mentoring them but something he said accidentally opened a wound; he needs someone to help bridge the gap",
+    "A Sterling-Nakamura legal team has arrived to reclassify the Kenosha Crossing incident records — Bayo doesn't know why, but old contacts have warned him it involves someone who survived and is now asking questions"
+  ],
+  "narrative_function": "Community anchor and moral compass; source of Corporate Wars history and veteran network contacts; can connect players to old soldiers, Ferrogate Transit institutional memory, or Washburn Commons residents with problems; quest giver for community-level crises",
+  "augmentations": "Sterling-Nakamura combat optical replacements (amber iris glow, low-light vision); spinal brace exoframe worn under clothing for mobility support; left knee joint replaced with ceramic prosthetic (civilian grade, slightly mismatched skin tone)",
+  "daily_life": "Wakes at 0500 out of habit, eats the same oat-paste breakfast, walks the canal path for forty minutes leaning on a carbon-fiber cane carved to look like driftwood. Afternoons are the bench; evenings are The Muster or arguing with pension administrators over comms.",
+  "affiliation": "Meridian Veterans Compact (inactive member); Washburn Commons Tenant Council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 3,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Veteran",
+      "Community Anchor",
+      "Guilt-Carrier",
+      "Reluctant Authority",
+      "Keeper of Secrets"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never lie to someone who has trusted you first",
+      "Protect the most vulnerable person in the room even at personal cost",
+      "Don't start fights you can finish — start only fights you can survive losing"
+    ],
+    "escalation_ladder": [
+      "Patient reasoning",
+      "Firm, quiet warning with eye contact",
+      "Physical placement of himself between threat and protected person",
+      "Absolute immovable silence that unnerves most people into backing down"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and courteous — offers food or water within five minutes if they seem to need it; asks questions before offering opinions",
+      "friends": "Blunt, warm, occasionally infuriating in his certainty — will tell you exactly what he thinks and then make you dinner"
+    },
+    "stress_responses": {
+      "low": "Goes quieter than usual, retreats to the canal bench",
+      "medium": "Becomes very organized — starts making lists, cleaning, checking on neighbors",
+      "high": "Reverts to command mode: clipped sentences, direct orders, then a crash of exhaustion and self-recrimination"
+    },
+    "contradictions": [
+      "Preaches non-violence but his body still moves like a weapon when threatened",
+      "Believes deeply in community but keeps his real grief entirely private"
+    ],
+    "habits": [
+      "Knocks on the doorframe three times before entering any room as an old naval good-luck habit",
+      "Keeps a small bottle of lake water on his windowsill — never explains it",
+      "Hums tuneless military cadences while cooking"
+    ],
+    "breaking_points": [
+      "Someone hurting a child or elderly neighbor in his building",
+      "Being told the Corporate Wars were justified or necessary"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Sterling-Nakamura Mk.IV Combat Optical Replacement (pair) — amber, low-light capable",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Sterling-Nakamura Mk.IV Combat Optical Replacement (pair) — amber, low-light capable",
+      "replaces": ""
+    },
+    {
+      "name": "Ceramic left knee prosthetic (civilian retrofit)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ceramic left knee prosthetic (civilian retrofit)",
+      "replaces": ""
+    },
+    {
+      "name": "Carbon-spinal support exobrace (worn under clothing)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Carbon-spinal support exobrace (worn under clothing)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Tactician": 0.9,
+    "War Weary": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2121 — Born in the Grainfort labor district, son of a dock loader and a canal maintenance tech",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2140 — Enlisted with Ferrogate Transit Escort Division at age 19",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2161 — Siege of Kenosha Crossing; received optical replacements; classified incident recorded",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2163 — Honorably discharged, relocated to Washburn Commons on pension",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Founded informal 'Muster' gatherings after neighbor died alone and undiscovered for four days",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

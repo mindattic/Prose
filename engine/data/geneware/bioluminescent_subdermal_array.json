@@ -1,0 +1,49 @@
+{
+  "id": "019d6143a89f76c1b127bcd0d18f667a",
+  "name": "Bioluminescent Subdermal Array",
+  "brand_name": "Bioluminescent",
+  "product_name": "Bioluminescent Subdermal Array",
+  "type": "geneware",
+  "aliases": [
+    "Glowskin",
+    "Neon Flesh",
+    "Lamplight"
+  ],
+  "category": "cosmetic",
+  "target_system": "integumentary (subdermal luminescence)",
+  "description": "Introduces genes from Aequorea victoria jellyfish and deep-sea anglerfish to produce bioluminescent protein chains beneath the skin. The result is a soft, controllable glow that can be patterned, dimmed, or brightened at will. Popular installations include glowing circuit-trace patterns along the arms, luminous freckles, and full-body constellations. The light is real — it illuminates a dark room. High-tier versions from Lacuna Genomics allow programmable patterns that shift throughout the day. Street versions from backroom gene clinics are often stuck on a single color and brightness, turning the user into a permanent lantern. In the Narrows, people with glowskin are walking nightlights, and some lease their presence to vendors who can't afford electric signage.",
+  "source_organism": "Aequorea victoria (crystal jellyfish), Melanocetus johnsonii (anglerfish)",
+  "manufacturer": "Lacuna Genomics (premium), various street clinics (budget)",
+  "tier_availability": "Tier 2+ (budget single-color Tier 1)",
+  "legality": "Unrestricted",
+  "procedure": "Subdermal injection matrix with retroviral carrier, single session",
+  "expression_time": "2–3 weeks; glow intensifies over first 6 months",
+  "reversibility": "Reversible with targeted gene silencing; leaves faint scarring along injection matrix lines",
+  "side_effects": [
+    "Persistent low-level glow during sleep (cannot fully extinguish)",
+    "Headaches from light-producing metabolic load",
+    "Budget versions occasionally produce UV-range light that causes sunburn to nearby skin"
+  ],
+  "social_perception": "Celebrated in nightlife culture. Tier 1 laborers with stuck-on glowskin are sometimes exploited as living light sources. Corporate environments consider it unprofessional except during social events.",
+  "story_hooks": [
+    "A murder victim's glowskin recorded the moment of death — the stress-triggered luminescence pattern is frozen into the skin like a photograph",
+    "A glowskin user discovers their pattern matches a proprietary Lacuna Genomics sequence they never paid for — someone pirated the gene package into their installation"
+  ],
+  "tags": [
+    "cosmetic",
+    "geneware",
+    "war",
+    "death",
+    "ai",
+    "corporate",
+    "control",
+    "clinic",
+    "neon",
+    "dark",
+    "night",
+    "circuit",
+    "narrows",
+    "tier 1",
+    "tier 2"
+  ]
+}

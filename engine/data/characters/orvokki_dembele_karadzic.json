@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a6877329b978a2006d55e204",
+  "type": "character",
+  "name": "Orvokki Dembélé-Karadzić",
+  "aliases": [
+    "Old Vok",
+    "The Archivist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Small-time data broker and bootleg media seller specializing in historical archives, pre-corponation records, and suppressed journalism",
+  "age": 67,
+  "status": "active",
+  "location": "The Alban Souk, Lower Ring stalls, Grainfort",
+  "description": "Orvokki is a compact, deeply wrinkled man with white hair growing in sparse patches he makes no effort to disguise, wearing the same style of layered linen jacket in different states of repair depending on the day. His hands are large and steady, incongruous with his age, with the careful movements of someone who handles fragile things for a living — which he does, in one sense or another. He has no geneware and his only augmentation is a retinal archive implant that lets him read data directly from physical media without an external reader, installed in 2171 and badly in need of a firmware update he cannot afford. The implant makes his left eye appear slightly clouded from certain angles, which he has learned to use as a social tool: people underestimate the cloudy eye.\n\nHe has been in the data business for forty years in one form or another — as a legitimate archivist for a now-dissolved municipal body, as a corporate records clerk, and since the corponation consolidations of the 2180s, as what he calls a 'historical preservation specialist' and most of his clients call a fence for information. He sells bootleg dramas and music as cover income, but his real trade is documents: pre-Axiom city records, Tessera acquisition histories, old census data that corponations had declared non-canonical. He is calm about the danger this represents, with the equanimity of someone who decided long ago that the alternative was more frightening. He maintains a small shrine to three ELFs simultaneously — The Ledger, The Index, and a third he calls only The Forgotten One — in the back of his stall.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.2,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.9
+    },
+    "core_fears": [
+      "the records being destroyed before they can be accessed by people who need them",
+      "dying and having his archive dispersed without a custodian"
+    ],
+    "core_desires": [
+      "to find someone worthy to inherit the archive",
+      "to live long enough to see one of his documents matter — to see history corrected"
+    ],
+    "coping_mechanisms": [
+      "treating historical distance as emotional buffer — events that happened to others, long ago, are manageable",
+      "rigorous daily routine as structure"
+    ],
+    "blind_spots": [
+      "he does not fully reckon with how dangerous his archive has become as the corponations' consolidation deepens",
+      "has idealized the Highland Park historical societies and will not see their political complications clearly"
+    ],
+    "secret": "He has a complete, authenticated record of Tessera's 2183 forced displacement of 40,000 residents from what is now Grosse Pointe Enclosure — names, dates, falsified consent documents, everything. He has been sitting on it for seventeen years waiting for a moment when releasing it would matter rather than just get him killed. He is no longer certain that moment will come."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and archival; uses precise dates and citations in casual speech; occasionally slips into the register of official documentation",
+    "cadence": "Unhurried and deliberate; full sentences, no contractions when discussing serious matters; contractions return in warmth",
+    "verbal_tics": [
+      "'According to the record'",
+      "pauses before names — as if accessing a file",
+      "'That is not well-documented.'"
+    ],
+    "example_lines": [
+      "'The drama you want — Season 4 of Depth Protocol, the Ringo-suppressed cut — I can have it for you by Thursday. Fourteen Φ. The historical documents you actually came for will take longer and cost considerably more.'",
+      "'Tessera filed for that land under Municipal Code 7.4(c)(ii) in 2183. The code was amended in 2185 to make what they had done retroactively legal. I have both versions.'",
+      "'I have kept this journal since 2170. I am not afraid of what I have written down. I am afraid of who burns it after I am gone.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches someone he has quietly observed over several weeks and offers them access to a document they did not know they needed — and the document has implications they cannot yet understand",
+    "Someone has broken into his stall and taken nothing obvious, but Orvokki knows what they were looking for — and knows it means the Tessera displacement file has been discovered",
+    "He has finally found a potential archive custodian but she is Tier 2, no legal protections, and someone else wants her for something else entirely"
+  ],
+  "narrative_function": "Primary historical information source; can find pre-corponation records, suppressed documents, and corporate acquisition histories that other sources cannot access; his bootleg media business provides plausible cover for deeper research requests.",
+  "augmentations": "Retinal archive implant, left eye (installed 2171, outdated firmware, slightly clouded appearance). No other augmentations or geneware.",
+  "daily_life": "Opens his stall at 11am, closes at 6pm — he does not work late markets. Mornings are for cataloguing and client research; evenings for personal archival work and writing the journal he has kept for thirty years.",
+  "affiliation": "Formerly: Meridian 88 Municipal Records Office (dissolved 2184). Currently: Independent. Occasional client relationship with Highland Park Autonomous Zone historical societies.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "archivist",
+      "historian",
+      "ELF devotee (triple)",
+      "information broker",
+      "long game",
+      "dangerous knowledge"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The record must be preserved — everything else is negotiable",
+      "Never give a client information that will get them killed before they can use it",
+      "Verify before you trust; trust slowly; maintain longer"
+    ],
+    "escalation_ladder": [
+      "Genial and slightly vague with new visitors — the doddering old media vendor persona",
+      "Becomes precise and assessing when he decides someone is a real client",
+      "Very direct about terms and danger when the transaction is serious",
+      "Will destroy copies and go fully dark if he believes a raid is imminent — he has a protocol for this"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but opaque; sells them drama files and assesses them over two or three visits before showing anything real",
+      "friends": "Genuinely paternal and attentive; remembers everything about people he cares about; gives gifts in the form of relevant documents"
+    },
+    "stress_responses": {
+      "low": "Catalogues more precisely; becomes very neat",
+      "medium": "Becomes very formal in speech; retreats into archival language",
+      "high": "Goes completely calm — an eerie stillness; this is when he executes his contingency protocols"
+    },
+    "contradictions": [
+      "Believes information should be free but has sat on the most important document he owns for seventeen years",
+      "Presents as someone who has made peace with danger but has a detailed, updated escape plan he revises monthly"
+    ],
+    "habits": [
+      "Leaves three separate data offerings for his three ELFs each morning — a different format for each",
+      "Reads one page of his own journal from exactly ten years prior every evening",
+      "Never sits with his back to the stall entrance"
+    ],
+    "breaking_points": [
+      "A fire — any fire near the archive",
+      "Being directly asked to destroy a record"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Opportunist": 0.7,
+    "Info Broker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Grainfort to a family of Sahel-Balkans diaspora",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Employed as archivist for Meridian 88 Municipal Records Office",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retinal archive implant installed for professional use",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Acquired and documented complete Tessera displacement records; chose not to release",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Municipal Records Office dissolved in corponation consolidation; Orvokki refused Tessera employment offer",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established stall at The Alban Souk",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current; archive custody question becoming urgent",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

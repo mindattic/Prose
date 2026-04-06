@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a8717838bf0b16aeaeb8d9fe",
+  "name": "Street Custom 'Smoke Box' Improvised Concealment Generator",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Smoke Box' Improvised Concealment Generator",
+  "type": "equipment",
+  "aliases": [
+    "Smoke Box",
+    "Fog Can",
+    "Blind Maker",
+    "Cloud Kit"
+  ],
+  "category": "stealth",
+  "description": "A repurposed theatrical fog machine loaded with an opaque chemical smoke compound that produces a dense white cloud obscuring a 15-meter area within 10 seconds. The Smoke Box is built from salvaged fog machines, modified vaporizer heating elements, or even pressurized cooking oil containers — any device that can rapidly aerosolize a liquid. The smoke compound is typically a mixture of glycol fog fluid and titanium dioxide powder that creates a cloud impenetrable to visible light and degraded for thermal imaging. Street operators use it for escape, ambush concealment, and preventing visual identification during operations.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — concealment device",
+  "base_technologies": [],
+  "specifications": {
+    "coverage": "15-meter radius dense smoke in 10 seconds",
+    "persistence": "3-5 minutes in still air",
+    "info": "less with wind",
+    "visibility reduction": "Near-zero at 2 meters",
+    "thermal attenuation": "approximately 40%",
+    "smoke compound": "Glycol + titanium dioxide mixture",
+    "weight": "1-3 kg depending on build",
+    "capacity": "2-4 deployments per tank",
+    "operator visibility": "Also zero — operator is equally blinded"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A coordinated robbery used six Smoke Boxes simultaneously to blind an entire city block — the smoke coverage was so complete that surveillance footage shows nothing for four minutes across 20 cameras.",
+    "A modified Smoke Box has been developed that produces smoke with an embedded irritant — not enough to incapacitate, but enough to make anyone without eye protection unable to keep their eyes open."
+  ],
+  "tags": [
+    "stealth",
+    "equipment",
+    "ai",
+    "surveillance",
+    "escape",
+    "tier 1"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a8717543bfbe1d7cf53d80e0",
+  "name": "Street Custom 'Spider Hole' Concealed Position Kit",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Spider Hole' Concealed Position Kit",
+  "type": "equipment",
+  "aliases": [
+    "Spider Hole",
+    "Hide Kit",
+    "Ground Blind",
+    "Burrow"
+  ],
+  "category": "stealth",
+  "description": "A kit for creating a concealed observation or ambush position in urban environments — a camouflaged cover that blends with surrounding debris, trash, or construction materials, concealing a person at ground level. The kit includes a collapsible frame covered in adaptable fabric that can be dressed with local materials to match any urban surface — garbage, rubble, dirt, or construction waste. An operator inside a properly prepared Spider Hole is virtually invisible from any angle, and can observe or engage from a position that no one knows exists. The kit has a long history in Tier 1 warfare.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — camping/concealment equipment",
+  "base_technologies": [],
+  "specifications": {
+    "frame": "Collapsible aluminum",
+    "info": "person-sized; optional periscope",
+    "cover": "Adaptable fabric for local material dressing",
+    "setup time": "15-30 minutes for full concealment",
+    "observation": "Viewing slits",
+    "size": "2m x 1m x 0.5m occupied",
+    "weight": "2 kg frame and fabric",
+    "camouflage": "Matches any urban surface with local materials",
+    "occupation time": "Limited by operator endurance — typically 8-12 hours"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A sniper operated from a Spider Hole in a trash heap for three days, waiting for a specific target — the position was never detected and was only found after the shooting when investigators followed the bullet trajectory backward.",
+    "A community defense network has established Spider Hole positions throughout a Tier 1 neighborhood, creating an invisible network of observers that monitors all movement through the area."
+  ],
+  "tags": [
+    "stealth",
+    "equipment",
+    "sniper",
+    "war",
+    "ai",
+    "tier 1"
+  ]
+}

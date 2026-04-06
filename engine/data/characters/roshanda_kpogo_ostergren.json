@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a6b77325bcf0110361bd6a28",
+  "type": "character",
+  "name": "Roshanda Kpogo-Östergren",
+  "aliases": [
+    "Rosh",
+    "The Librarian"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "expelled citizen and nomadic oral historian",
+  "age": 41,
+  "status": "active",
+  "location": "Rotates between Bridgepoint and Gravesend Basin; sleeps at the Gravesend travelers' shelter",
+  "description": "Roshanda was, until four years ago, a Tier 3 Tessera municipal archivist with an apartment in Edgewater Prism, a corporate pension accruing slowly, and a work record that would have earned her a formal commendation if she hadn't committed the specific category of misconduct that got her registration stripped instead. She carries herself with the precise, slightly stiff posture of someone still negotiating between who they were and what they've become. She is a lean woman of West African and Swedish descent with medium-dark skin, close-cropped natural hair that has developed a white streak above her left temple in the last four years — stress, she'll tell you, if you ask — and round-framed glasses she still wears out of habit even though her vision has been corrected by the basic corneal work she had done a decade ago. The glasses have no lenses anymore. She never took them off.\n\nRoshanda's current project is an oral history of the Meridian 88 drifter population: she walks, she listens, she records on a battered analog audio device (nothing networked, nothing that can be subpoenaed) and she transcribes by hand in a series of water-resistant notebooks she keeps in a waterproof roll pack. She has forty-one notebooks so far. She calls the project 'The Register of the Unregistered,' and she has not decided what she will do with it when it is finished, if it is ever finished. She approaches every stranger with the particular respect of someone who has learned that every person is an archive. She prays to no E.L.F. — she is skeptical of the whole phenomenon, which she finds sociologically interesting and theologically unconvincing, a position she shares freely whether or not anyone asked.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "that the archive will be destroyed before it can matter — that she is building something that will be swept away like everything else",
+      "that she is doing this for her own guilt rather than for the people whose stories she's collecting"
+    ],
+    "core_desires": [
+      "for the archive to be published, read, to change something concrete",
+      "to be reinstated — not because she wants the job back, but because she wants to have been right"
+    ],
+    "coping_mechanisms": [
+      "intellectual framing — turns every experience into data, which provides emotional distance",
+      "maintaining routine with obsessive consistency as a substitute for the structure her former life provided"
+    ],
+    "blind_spots": [
+      "treats people's stories as research more often than she realizes; the people she interviews sometimes feel processed rather than heard",
+      "believes her exile was a consequence of principle rather than a mistake in execution that could have been handled better"
+    ],
+    "secret": "The reason she was expelled was not the noble archival transgression she implies — she shared classified documents with a journalist to expose Tessera misconduct, yes, but she also did it partly to destroy a colleague who had been promoted over her. The outcome was just, but her motives were not purely so. The distinction haunts her."
+  },
+  "speech_patterns": {
+    "vocabulary": "Educated and precise, with an archivist's habit of sourcing claims; periodically catches herself using corporate jargon and corrects mid-sentence; slightly formal with strangers as a reflex",
+    "cadence": "Measured and thoughtful, with a journalist's instinct to leave space for the other person to keep talking",
+    "verbal_tics": [
+      "'If I understand you correctly—' before paraphrasing",
+      "Pushing glasses up her nose even though they have no lenses",
+      "'That's significant, actually.'"
+    ],
+    "example_lines": [
+      "'If I understand you correctly, you've been at this crossing for three seasons without your status reviewed. That's significant, actually — that's a pattern I'm seeing in five other cases.'",
+      "'I'm not a journalist. I'm not anything official. I'm just — I'm writing it down so that it existed. So that someone somewhere has to acknowledge it existed.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Notebook thirty-seven contains an interview with a man who described, in passing detail, the location of a sealed Tessera data vault from before the corporate restructuring — and then disappeared two weeks later; Roshanda is not sure if she's the reason he disappeared",
+    "A former academic contact has reached out offering to publish the archive through an offshore academic network — but the terms require transferring the original recordings to a Tessera-adjacent server, which Roshanda does not trust and cannot verify"
+  ],
+  "narrative_function": "Living encyclopedia of the drifter underworld — knows people, histories, and patterns across the entire transit periphery of Meridian 88. Can provide context, history, and contacts. May ask for help in ways that involve moral complexity. Her notebooks are a significant object.",
+  "augmentations": "Basic corneal correction (old, corporate-era). A Tessera employee-grade subdermal data port on her left wrist that was never removed — technically deactivated but she's heard they can be reactivated. This makes her periodically nervous.",
+  "daily_life": "Wakes at the shelter, has whatever passes for breakfast, walks a planned route through transit zones and gathering points collecting interviews; afternoons transcribing; evenings talking to whoever is around; careful about her visibility.",
+  "affiliation": "None — formerly Tessera Municipal Archives; informally networked with academic contacts she is no longer supposed to have",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "expelled-citizen",
+      "oral-historian",
+      "information-archive",
+      "principled-compromised",
+      "fallen-tier"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document first, act second — she has learned to regret acting without a record",
+      "Do not become the story; she is the recorder, not the subject"
+    ],
+    "escalation_ladder": [
+      "Polite disengagement and departure",
+      "Pointed questions designed to make the other party reveal their intentions",
+      "Invoking the archive as a deterrent — 'this conversation is on record'",
+      "Disappearing into the drifter network, which she knows better than anyone with her background has any right to"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm curiosity — the recorder's attention feels like care and often is, even if it's also research",
+      "friends": "Rare; when it happens, intensely loyal and somewhat self-conscious about it"
+    },
+    "stress_responses": {
+      "low": "Writes more, talks less",
+      "medium": "Reorganizes her notebooks by a new schema",
+      "high": "Goes very still and very quiet and then does something decisive that she has been planning without realizing it"
+    },
+    "contradictions": [
+      "Committed to preserving others' stories while actively obscuring the true version of her own",
+      "Methodically principled in her work while the event that created her current life was motivated by something far less pure than principle"
+    ],
+    "habits": [
+      "Pushes up her lensless glasses when thinking",
+      "Dates every page of every notebook in the margin before writing anything else",
+      "Walks the same route on days when she is anxious, regardless of whether there's anything to see"
+    ],
+    "breaking_points": [
+      "The archive being destroyed or confiscated",
+      "Someone confronting her directly and accurately about her mixed motives in leaving Tessera"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "deactivated",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Edgewater Prism to a Ghanaian-Swedish family; father a transit worker, mother a Tessera clerk",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joins Tessera Municipal Archives as a junior archivist",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to senior archivist; colleague promoted above her to the position she applied for",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Shares classified documents with a journalist; Tessera misconduct story breaks; Roshanda's registration and corporate status stripped",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins the Register of the Unregistered project three months after expulsion",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

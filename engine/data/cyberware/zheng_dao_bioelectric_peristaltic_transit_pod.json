@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a7ce779f8f6252038ab46e5f",
+  "name": "Zheng-Dao Bioelectric Peristaltic Transit Pod",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Peristaltic Transit Pod",
+  "type": "cyberware",
+  "aliases": [
+    "The Worm",
+    "Zheng-Dao Crawler",
+    "Gut Mover"
+  ],
+  "category": "vehicle",
+  "body_location": "",
+  "description": "The Peristaltic Transit Pod is a subsurface personal transport vehicle designed by Zheng-Dao Bioelectric for navigation through the dense utility tunnel networks, fluid conduit systems, and bio-infrastructure channels that run beneath Meridian 88's built environment. Unlike conventional tunnel vehicles that rely on wheels or tracks, the Pod moves through a biomimetic peristaltic propulsion system — a series of circumferential contraction rings along its exterior that produce a rhythmic, wave-like motion, allowing the vehicle to travel through curved, irregular, and partially obstructed passages that would defeat rigid-chassis alternatives. The outer hull is coated in a Zheng-Dao proprietary biofilm that reduces friction against tunnel walls and actively resists the corrosive biological and chemical compounds common in subsurface environments.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"length\":\"3.2 meters\",\"diameter\":\"0.9 meters\",\"minimum_passage_diameter\":\"1.0 meters\",\"top_speed_clear_tunnel\":\"28 km/h\",\"top_speed_irregular_passage\":\"9 km/h\",\"range\":\"180 km (battery)\",\"operator_capacity\":\"1\",\"power_source\":\"Bioelectric capacitor stack with regenerative contraction harvesting\",\"hull_temperature_resistance\":\"Up to 180°C continuous\"}",
+  "side_effects": [],
+  "cultural_context": "The Pod exists almost entirely outside civilian awareness — most residents of Meridian 88 have no idea that a vehicle capable of traversing the city's entire subsurface network exists. Within Zheng-Dao Bioelectric, operators of the Pod occupy a peculiar professional niche: they spend hours in near-total isolation moving through the biological and chemical underbelly of the city, and the psychological demands of the work create a tight-knit, somewhat insular community. Among those who know of the Pod's existence in criminal or intelligence circles, access to one — and more importantly, to someone who knows how to use it — is considered a serious operational asset.",
+  "known_users": [
+    "Zheng-Dao Bioelectric infrastructure maintenance specialists",
+    "Corporate deep-access infiltration operatives",
+    "Black market subsurface guides and smugglers",
+    "Intelligence operatives conducting long-term subsurface surveillance",
+    "Fugitives with the resources to disappear beneath the city"
+  ],
+  "story_hooks": [
+    "A Zheng-Dao maintenance operator has not surfaced from a routine Pod run in six days — their Subsurface Topology Relay is still transmitting, but the signal suggests the Pod is stationary deep inside a bioelectric conduit that shouldn't be accessible from any known tunnel junction.",
+    "Someone has been using a stolen Peristaltic Transit Pod to access sealed Zheng-Dao infrastructure nodes across the city — and the pattern of access points suggests they're looking for something specific, moving methodically toward the city's central bioelectric core.",
+    "A crew is offered an extraordinarily well-paying job that requires traversing a subsurface route no surface vehicle can take — the client provides a Pod and a map, but the map has three sections marked only with the notation 'do not stop here.'",
+    "Zheng-Dao's proprietary subsurface topology maps have been partially leaked, and every faction in the city with resources is scrambling to acquire the complete dataset — the person who holds the remaining sections is hiding somewhere underground, in a Pod, and doesn't want to be found."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "vehicle",
+    "cyberware",
+    "war",
+    "smuggle",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "tunnel",
+    "market",
+    "tier 3"
+  ]
+}

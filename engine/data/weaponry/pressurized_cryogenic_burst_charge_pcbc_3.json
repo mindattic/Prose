@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab3d72d1a32c62a2c57d44d2",
+  "name": "Pressurized Cryogenic Burst Charge PCBC-3",
+  "type": "weapon",
+  "aliases": [
+    "Coldsnap",
+    "The Freeze Frame",
+    "Brittlemaker"
+  ],
+  "category": "explosive",
+  "description": "The PCBC-3 functions by explosively rupturing a double-walled internal canister containing liquefied cryogenic compound held at approximately -196°C under significant pressure. The detonation is not primarily chemical — the explosive charge is minimal, serving only to rupture the canister and propel the cryogenic agent outward in a radial burst. The liquid compound flash-vaporizes on contact with ambient air, creating a localized temperature drop of 80–120°C within the dispersal radius in under 0.4 seconds. Materials and tissues within the primary zone experience extreme thermal shock: metals become brittle, polymers shatter, biological tissue freezes and fractures under mechanical stress.\n\nThe PCBC-3's tactical signature is defined by what happens after the initial burst. Unlike heat-based charges, the cryogenic effect persists in the environment for 15–40 seconds depending on ambient temperature and ventilation — the area remains lethally cold long after detonation, and surfaces remain structurally compromised. Armor plating hit by the burst loses significant tensile strength for the duration of the cold window, making it vulnerable to follow-up kinetic impacts that it would normally deflect. Security barriers, reinforced doors, and vehicle hulls can be rendered brittle and then breached with tools or impacts that would otherwise be completely ineffective.\n\nHelix Biosystems developed the PCBC-3 under a cryogenic medical research framework — the same technology used for rapid-freeze tissue preservation in trauma response units. The weaponized variant was not an official Helix product; it emerged from an internal R&D division that was quietly licensing the core compression technology to a third-party arms developer. When the connection became public in 2198, Helix's official position was that the licensing agreement had been unauthorized. Three division heads were terminated. The PCBC-3 continued to circulate.",
+  "manufacturer": "HELIX BIOSYSTEMS (core technology, unofficial derivation); field manufacture attributed to unlicensed contractors",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Cryogenic compound pressurization",
+    "Explosive canister rupture dispersal",
+    "Thermal shock material degradation"
+  ],
+  "specifications": "weight: 1.6 kg\ncryogenic agent: Classified compound (suspected liquefied nitrogen-argon mixture with proprietary accelerant)\ndispersal radius: 4 meters (primary zone), 8 meters (partial effect)\ntemperature drop: 80–120°C within primary zone (0.4-second onset)\ncold persistence: 15–40 seconds post-detonation (ambient dependent)\nstructural effect: Metal tensile strength reduced ~60% during cold window; polymers and ceramics subject to fracture\nbiological effect: Immediate frostbite to full tissue freeze within primary zone; cold shock incapacitation in secondary zone\ntrigger mechanism: Impact, timer, or remote detonation\nhazard to operator: Significant backblast risk; minimum safe distance 12 meters",
+  "tactical_use": "Operators use the PCBC-3 in two primary configurations: as a direct-entry breaching tool and as a personnel-denial charge. For breaching, the charge is placed against a reinforced barrier — a vault door, a security bulkhead, an armored vehicle panel — and detonated to render the material brittle before a follow-up kinetic breach. The combined cryogenic-plus-impact approach can defeat hardened materials in half the time of conventional breaching charges with far less noise. For personnel denial, it is deployed into enclosed spaces to incapacitate or kill augmented and unaugmented targets alike — cyberware offers no protection against rapid temperature drop, and many augmented individuals have less biological insulation than unaugmented counterparts.",
+  "cultural_context": "In Meridian 88, the PCBC-3 carries a particular association with surgical precision and high professionalism — it is a weapon that requires planning, proper handling equipment, and situational awareness that most street-level operators don't have. The backblast risk means careless users die; the breach applications mean it is almost exclusively used by crews with a specific objective rather than general violence. It has developed a reputation as a 'specialist's tool' and is treated with a degree of respect even by people who oppose its use. The Helix connection has made it a flashpoint in ongoing debates about corporate liability for weaponized medical technology.",
+  "known_users": [
+    "High-end vault and facility breach crews",
+    "Helix internal security (officially denied)",
+    "Cold-specialist archetype known as 'the Glaciologist'",
+    "Corporate counter-intrusion teams targeting rival secure facilities",
+    "Underground chemist networks that manufacture the cryogenic compound"
+  ],
+  "story_hooks": [
+    "A Helix Biosystems laboratory is breached using a PCBC-3 to crack a cryogenic storage vault. The thieves took one specific tissue sample and left everything else. The sample's existence was not in any public record.",
+    "A player character is hired to acquire a PCBC-3 for a client who turns out to be planning to use it against a medical cryogenic storage facility containing hundreds of suspended patients.",
+    "The unlicensed contractors manufacturing the PCBC-3 have a sourcing problem: the cryogenic compound requires a Helix-patented precursor. Someone inside Helix is selling it to them, and Helix wants the players to find out who — quietly.",
+    "A forensic investigator contacts the players: three recent deaths in separate incidents all show cryogenic tissue trauma consistent with PCBC-3 exposure, but no detonation sites have been found. Someone is using the weapon in a way that leaves no physical evidence of deployment."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "violence",
+    "war",
+    "death",
+    "augment",
+    "cyberware",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "medical",
+    "market",
+    "bar",
+    "cold",
+    "vehicle",
+    "armor"
+  ]
+}

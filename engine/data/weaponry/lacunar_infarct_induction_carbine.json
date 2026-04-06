@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab3079629d459bd384775310",
+  "name": "Lacunar Infarct Induction Carbine",
+  "type": "weapon",
+  "aliases": [
+    "LIIC-1",
+    "Lacuna",
+    "The Forgetter"
+  ],
+  "category": "firearm",
+  "description": "The Lacunar Infarct Induction Carbine delivers a precisely shaped ultrasonic pulse through a parabolic focusing array embedded in its barrel assembly. The pulse is calibrated to induce localized vasospasm in the small penetrating arteries supplying the deep white matter and subcortical structures of the brain — specifically the internal capsule, thalamus, and basal ganglia. The result is a targeted lacunar infarct: a small, contained stroke that produces predictable and selective neurological deficits depending on the pulse parameters loaded into the firing profile.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Black market / Military intelligence only",
+  "legality": "Prohibited — classified as a neurological torture device under Meridian 88 Statute 44-C",
+  "base_technologies": [
+    "Parabolic ultrasonic pulse focusing",
+    "Cerebrovascular vasospasm induction",
+    "Programmable neurological deficit profiling"
+  ],
+  "specifications": "effective range: 25 meters\npulse duration: 0.8 seconds\nfiring profiles: Aphasia, Motor Drop, Blank, Archive\neffect onset: 3–8 seconds post-pulse\neffect duration: 15 minutes to 72 hours depending on profile and individual vasculature\nweight: 3.1 kg\npower source: Proprietary Helix DAT-cell, 12 shots per cell\ndetectability: Silent, no visible emission, no thermal signature",
+  "tactical_use": "Intelligence and interrogation-adjacent operations. The 'Archive' profile is used before extracting a target to prevent them from forming memory of their capture route or holding location. 'Aphasia' is deployed during negotiations or testimony to discredit a target without visible injury. 'Blank' is used for soft abductions — the target experiences a gap in memory and cannot reliably report what happened. Operators are typically trained neuroscience technicians or intelligence assets, not standard combatants.",
+  "cultural_context": "The LIIC-1 exists in Meridian 88's underworld as an almost mythological object — most people have heard of it but few have seen one. It is associated exclusively with corporate intelligence work, and the phrase 'they Lacunaed him' has entered street slang to describe someone who seems present but hollowed out, unable to account for lost time. Survivors of Archive profile exposure often struggle to be believed — their testimony is fragmented and inconsistent in ways that mimic intoxication or fabrication.",
+  "known_users": [
+    "Corporate intelligence divisions (off-books)",
+    "State security services",
+    "High-end fixers specializing in information suppression",
+    "Black-site interrogation specialists"
+  ],
+  "story_hooks": [
+    "A key witness in a corporate fraud trial has arrived at the hearing with a six-hour memory gap covering the exact period they were supposed to have observed the incriminating transaction. No injury. No toxicology hit. Someone used a Lacuna on them, and the party needs to prove it.",
+    "One of the party members wakes up in a location they don't recognize with three hours missing. The only clue is a faint tinnitus in their left ear that a street medic says is consistent with focused ultrasonic exposure.",
+    "A Helix Biosystems researcher wants to defect and is willing to hand over the LIIC-1 calibration schematics. The problem is that Helix's intelligence division already knows she's talking to outside parties, and they have at least two Lacunas in the city."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "combat",
+    "gang",
+    "memory",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "ubc",
+    "injury",
+    "underworld",
+    "market",
+    "bar",
+    "rain",
+    "train",
+    "energy",
+    "fire"
+  ]
+}

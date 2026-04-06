@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a9d972c796bdd0cdbba2e569",
+  "name": "Dermalloy-V",
+  "brand_name": "Dermalloy",
+  "product_name": "Dermalloy-V",
+  "type": "substrate",
+  "aliases": [
+    "skin-steel",
+    "V-derm",
+    "living sheath"
+  ],
+  "category": "bio_hybrid",
+  "description": "Dermalloy-V is a flexible nickel-titanium shape-memory alloy woven at the micro-scale with a living dermal tissue layer — BioForge's engineered keratinocyte-fibroblast matrix grown directly onto and into the metal mesh during a co-culture fabrication process. The result is a material that behaves mechanically like a metal fabric but biologically like skin: it can be sutured to host tissue, develops a blood supply through angiogenesis, heals lacerations using the host's own repair mechanisms, and provides sensory feedback through integrated Meissner-corpuscle analogs embedded in the dermal layer. It is the gold standard outer covering for cosmetic and functional prosthetic limbs.",
+  "properties": [
+    "flexible",
+    "suture-compatible",
+    "angiogenic",
+    "sensory feedback",
+    "self-healing via host biology",
+    "shape-memory",
+    "cosmetically configurable",
+    "moderate puncture resistance"
+  ],
+  "developers": [
+    "BioForge Labs",
+    "Tessera Materials",
+    "Veilweave Textiles (weave architecture)"
+  ],
+  "applications": [
+    "cosmetic prosthetic limb outer covering",
+    "full-face prosthetics",
+    "augment exterior finishing for social integration",
+    "burn and trauma reconstruction panels",
+    "undercover operative body modification"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ14,000 per 100cm² panel (standard); Φ30,000–Φ80,000 per full limb sheath (custom-pigmented, sensory-grade)",
+  "story_hooks": [
+    "A Dermalloy-V covered prosthetic limb has been living on a black-market auction block for months — it was harvested from its original owner and the dermal layer is still alive, still healing, still warm, and bidders are disturbed to find it responds to touch.",
+    "An undercover operative's Dermalloy-V disguise is failing — the dermal layer is angiogenically integrating with their real tissue faster than anticipated, and removing it now would require surgery that would blow their cover and possibly kill them.",
+    "A Tier 5 socialite has commissioned a full-body Dermalloy-V resurfacing for cosmetic reasons — but their immune system is slowly recognizing that some of the dermal layer's cell cultures were sourced from an unconsenting donor, and a bioethics investigator is following the supply chain."
+  ],
+  "tags": [
+    "biohybrid",
+    "substrate",
+    "war",
+    "memory",
+    "augment",
+    "prosthetic",
+    "ai",
+    "elf",
+    "surgery",
+    "market",
+    "ethics",
+    "tier 3",
+    "tier 4"
+  ]
+}

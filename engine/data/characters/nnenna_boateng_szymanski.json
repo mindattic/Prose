@@ -1,0 +1,234 @@
+{
+  "id": "019d6143a66d78f08b2614b320faf65f",
+  "type": "character",
+  "name": "Nnenna Boateng-Szymański",
+  "aliases": [
+    "The Frequency",
+    "Nne"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Underground press operator and pirate broadcaster",
+  "age": 34,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone",
+  "description": "Nnenna is a compact woman with deep brown skin and close-cropped natural hair shot through with copper-dyed locs she clips back when she's working. Her left eye is a salvaged optic implant she bought secondhand — it glows a faint amber in low light and sometimes stutters, giving her an unsettling blink lag. She wears the same canvas jacket most days, patched at the elbows and covered in hand-stitched slogans in four languages. There's a quality to her stillness that makes people think she's always listening, because she is.\n\nNnenna runs 'Groundwave,' an unlicensed audio-visual broadcast that goes out three nights a week through a rotating network of transmitter nodes hidden across the HPAZ. She's brilliant, paranoid in ways that have saved her life twice, and has a gift for making complex political theory sound like something you'd argue about over bad synthetic coffee. She has little patience for performative activism and a sharp tongue for anyone she suspects is building a personal brand on other people's suffering.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Being silenced permanently — not just arrested but erased, unremembered",
+      "That the truth she broadcasts changes nothing"
+    ],
+    "core_desires": [
+      "To be believed",
+      "To build something that outlasts her"
+    ],
+    "coping_mechanisms": [
+      "Compulsive information-gathering",
+      "Dark humor",
+      "Focusing obsessively on the next broadcast when she's anxious"
+    ],
+    "blind_spots": [
+      "Underestimates how much her platform has made her personally dangerous to powerful people",
+      "Assumes everyone who listens is as politically sophisticated as she is"
+    ],
+    "secret": "Three years ago she received documented proof that a senior HPAZ Assembly member was taking quiet stipends from a Tessera community liaison. She killed the story because she was sleeping with him. He's since moved on and she still hasn't run it — the file sits encrypted on her forearm cache."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense, precise, code-switches fluidly between street vernacular and policy language; quotes sources by habit",
+    "cadence": "Rapid and rhythmic when excited, eerily measured when angry — the anger is the slow voice",
+    "verbal_tics": [
+      "'Full context—'",
+      "'That's on record'",
+      "Trails off mid-sentence when something occurs to her, picks up a different thread"
+    ],
+    "example_lines": [
+      "'Full context — Axiom didn't close that clinic because it was losing money. It was making money. They closed it because the data on patients was more valuable than the patients.'",
+      "'You want me to sit on this. I'm going to need a much better reason than your comfort level, friend.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A source has gone dark after giving Nnenna a data package she hasn't opened yet — she needs someone to physically check on them",
+    "Groundwave's next broadcast contains information that will get someone killed; she doesn't know who yet",
+    "A corporate media outlet has offered her a legitimate job with real resources — and she's actually thinking about it"
+  ],
+  "narrative_function": "Information source, local color, quest giver — she has heard things and she knows people. Can expose a secret or bury one. Her broadcast is a way to get information to the public or to seed a rumor into the district.",
+  "augmentations": "Secondhand left-eye optic implant (Ringo-brand, unauthorized resale, glitchy); subdermal data cache along her left forearm for storing raw broadcast files",
+  "daily_life": "Spends mornings scrubbing tips and verifying sources in a converted storage unit. Afternoons coordinating with her two-person tech crew to route that night's transmission. Broadcasts between 21:00 and 01:00 three nights a week, then spends the rest of the night sweeping for signal-trace teams.",
+  "affiliation": "Groundwave Independent Media Collective; loose ties to the HPAZ Neighborhood Assembly",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "broadcaster",
+      "investigator",
+      "idealist",
+      "paranoid",
+      "connected"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Verify before broadcasting, no matter the pressure",
+      "Never burn a source to save herself",
+      "If something feels like a setup, assume it is"
+    ],
+    "escalation_ladder": [
+      "Asks probing questions and takes notes",
+      "Goes quiet and starts recording",
+      "Publicly names names",
+      "Broadcasts and disappears for 72 hours"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, casually assessing — she's always running a source evaluation in the background",
+      "friends": "Dry affection, fiercely loyal, will fight you about your life choices with genuine care"
+    },
+    "stress_responses": {
+      "low": "Becomes hyper-organized, triple-checks everything",
+      "medium": "Gets sarcastic and starts stress-eating protein ration bars",
+      "high": "Goes completely silent and methodical — frightening to people who know her"
+    },
+    "contradictions": [
+      "Believes in radical transparency but keeps massive personal secrets",
+      "Preaches collective action but trusts almost no one enough to truly collaborate"
+    ],
+    "habits": [
+      "Hums old Ghanaian highlife songs while she edits",
+      "Leaves small data offerings for the E.L.F. she calls 'the Frequency Mother' — a spirit she believes inhabits the HPAZ's oldest transmitter node",
+      "Drinks tea obsessively, judges people by how they make it"
+    ],
+    "breaking_points": [
+      "Learning that someone she broadcast as a hero was actually an informant",
+      "Being physically prevented from broadcasting during a community crisis"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Fair — glitches under electromagnetic interference",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Hamtramck Enclave to a Ghanaian-Polish family; father was a Ferrogate Transit worker",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First pirate broadcast at age 17, a ten-minute audio piece about a wage theft case at the transit yards",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Groundwave formally established as a collective; current format stabilized",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Arrested briefly by Ferrogate security contractors, charges didn't stick",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Buried the Assembly member story; relationship ended six months later",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

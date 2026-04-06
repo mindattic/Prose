@@ -1,0 +1,68 @@
+{
+  "id": "019d6143ab58760ba869cb3c56c1810b",
+  "name": "Vascular Resonant Embolism Carbine VREC-4 'Clotter'",
+  "type": "weapon",
+  "aliases": [
+    "Clotter",
+    "The Coagulator",
+    "Strokegun",
+    "VREC"
+  ],
+  "category": "cyber",
+  "description": "The VREC-4 operates on the principle of targeted ultrasonic cavitation applied to the circulatory system. The weapon projects a focused beam of high-intensity focused ultrasound (HIFU) tuned to induce cavitation specifically within large-vessel blood flow — the carotid arteries, femoral veins, and pulmonary vasculature are primary targets. Cavitation at these sites generates localized microbubble formation within the bloodstream; when these bubbles collapse, they produce platelet activation cascades that trigger rapid, localized thrombus formation. In practical terms: the weapon causes strokes and pulmonary emboli on demand, at range, through clothing and light cover.\n\nThe Clotter's clinical presentation is its most insidious feature. A target struck in the carotid corridor presents within 30–120 seconds with symptoms indistinguishable from spontaneous ischemic stroke — sudden confusion, facial drooping, loss of arm control, speech disruption. Without the operator's knowledge, a forensic pathologist examining the victim would find a thrombus consistent with natural coagulation pathology. This deniability has made the VREC-4 the preferred weapon of a specific class of operator: those who need deaths that survive insurance review, inheritance challenges, and criminal investigation. TESSERA CORPONATION originally developed the HIFU platform for non-invasive cardiac surgery assistance; the coagulation application was a noted risk in their own safety literature, which was later cited by RINGO CORPONATION engineers who developed the weaponized variant.\n\nThe carbine form factor is deliberate — the weapon is designed to pass casual inspection as a conventional semi-automatic carbine with an unusual muzzle configuration. The beam is silent, invisible, and produces no thermal signature detectable by standard security scanning. Its only detectable emission is a narrow ultrasonic band that requires specialized equipment to identify. Operators carry a small transducer wand as a secondary tool for confirming vessel targeting through walls — a practice called 'fishing' in professional circles.",
+  "manufacturer": "RINGO CORPONATION (derived from TESSERA CORPONATION medical platform)",
+  "tier_availability": "Tier 4+ / Black market (professional assassination market)",
+  "legality": "Prohibited — classified as a method of undetectable homicide",
+  "base_technologies": [
+    "High-intensity focused ultrasound (HIFU) beam projection",
+    "Intravascular cavitation induction",
+    "Platelet activation cascade triggering"
+  ],
+  "specifications": "effective range: 5–80 meters\npenetration: Effective through clothing, 4 cm soft tissue, light drywall\ntargeting corridor: Carotid (stroke), femoral (DVT/PE), pulmonary (embolism)\ntime to thrombus formation: 15–45 seconds post-strike\ntime to clinical presentation: 30–120 seconds\nforensic detectability: None with standard autopsy — requires specialized HIFU exposure testing\npower source: Ultrasonic transducer cell, 22 discharges\nweight: 3.1 kg\nlength: 68 cm\nsecondary tool: Vessel-targeting transducer wand (included)\ndetectable emission: Narrow ultrasonic band, requires specialized scanner",
+  "tactical_use": "Used almost exclusively in assassination and targeted removal operations where forensic deniability is the primary requirement. Operators typically use the transducer wand to locate the target's major vessels through walls or from concealment before firing. The weapon is rarely used in open combat — its slow effect onset makes it unsuitable against alert targets. It is most effective against stationary or unaware targets in controlled environments. Some operators combine it with a conventional weapon as a backup, using the Clotter first to degrade the target's neurological function and then following up if the coagulation effect is insufficient.",
+  "cultural_context": "The Clotter is known in Meridian 88's professional assassination community as the 'accountant's weapon' — clean, deniable, and expensive. It is almost never seen at street level. Its existence is an open secret among corporate legal and security teams, who know that a sudden cluster of 'natural' deaths among executives or board members warrants investigation for VREC use. TESSERA CORPONATION has aggressively distanced itself from the weapon's existence despite its technology forming the platform's core, and has funded at least two bounties on RINGO CORPONATION engineers involved in the weaponization project. The weapon has contributed to a broader cultural paranoia in Meridian 88's upper corporate tiers — the wealthy have begun investing heavily in private medical staff trained to identify VREC presentations, and 'clot insurance' (rapid-response emergency medical contracts with specific HIFU testing protocols) has become a significant industry.",
+  "known_users": [
+    "Professional assassination network 'The Actuaries'",
+    "RINGO CORPONATION internal security (for competitor elimination)",
+    "Corporate heir Madelief Voss-Hartmann (suspected — three family members died of stroke)",
+    "Intelligence contractor 'Silt' (known VREC specialist, unconfirmed identity)",
+    "TESSERA CORPONATION recovery operative 'Anagram' (uses it to eliminate those who misuse their technology)"
+  ],
+  "story_hooks": [
+    "A wave of 'natural' deaths among mid-tier TESSERA CORPONATION executives is being quietly investigated internally — the party is hired to find the operator before the investigation becomes public and tanks the stock price. The trail leads somewhere unexpected.",
+    "A forensic pathologist has developed a post-mortem test that can detect VREC-caused thrombi — she is now a target, and the party must decide whether to protect her or broker her safety in exchange for information about who hired the shooter.",
+    "A character is struck by a Clotter round in a crowd but survives due to an unusual coagulation disorder. They experienced the full pre-stroke aura and know someone tried to kill them — but there's no evidence, no wound, and no witness.",
+    "RINGO CORPONATION is quietly offering a licensing deal to a municipal police department — the VREC-4 as a 'non-lethal compliance tool' with 'tuned-down' settings. Someone needs to stop this before it gets a veneer of legality."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "combat",
+    "gun",
+    "war",
+    "secret",
+    "loss",
+    "death",
+    "identity",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "wealth",
+    "medical",
+    "surgery",
+    "clinic",
+    "market",
+    "rain",
+    "moral",
+    "train",
+    "clothing",
+    "energy",
+    "tier 4"
+  ]
+}

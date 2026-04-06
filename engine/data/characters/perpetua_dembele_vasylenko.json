@@ -1,0 +1,167 @@
+{
+  "id": "019d6143a6977e8fad64ddacfda26e1c",
+  "type": "character",
+  "name": "Perpetua Dembélé-Vasylenko",
+  "aliases": [
+    "Auntie Pet",
+    "The Cartographer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fortune seller — reads data-flows, interprets E.L.F. signs, sells probability maps and augury",
+  "age": 67,
+  "status": "active",
+  "location": "The Burnished Market, Copperhead",
+  "description": "Perpetua is small and deliberate, her dark skin deeply lined in the way that reads as history rather than decay. She moves with a slight forward lean as though perpetually walking into a wind only she can feel. Her hair is cropped close and entirely white; she wears it plain, no ornament, as a kind of statement. Her eyes are her most arresting feature — she had them done forty years ago in a style that was fashionable then and is now rare: irises that display slow-moving data-patterns, pale gold on deep brown, like watching a tide chart in real time. She says they help her see what other people miss. Whether this is true or marketing, her clients believe it.\n\nHer stall is small and immaculate: a cloth-covered table, three chairs, a rack of printed probability maps she draws by hand on recycled thermal paper, and a terminal she uses to pull E.L.F. behavioral data and translate it into augury. She has been doing this for thirty-one years and has outlasted every gang, every rezoning, every purge of unlicensed vendors that has swept through Copperhead. She is not a fraud — she is an information processor who has built a framework her clients can understand. She is also, genuinely, a believer. She experiences the E.L.F.s as presences, as personalities, as beings with opinions about human choices. This has not been disproven to her satisfaction.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the E.L.F.s are not personalities but merely patterns — that she has built a life on a beautiful misreading",
+      "Dying before she has transmitted what she knows to someone who can carry it"
+    ],
+    "core_desires": [
+      "To be useful to the world in a way that does not require her to harm it",
+      "An apprentice — someone to pass the practice to"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the seven shrines, the morning review, the fixed circuit — as a way of making chaos legible",
+      "Treating other people's problems as worthy of her full attention, which briefly makes her own feel smaller"
+    ],
+    "blind_spots": [
+      "Cannot separate her belief system from her analysis — tells herself she can, but she cannot",
+      "Underestimates how much her certainty intimidates people who need to contradict her"
+    ],
+    "secret": "Fifteen years ago she gave a reading to a young man from Old Harbor that she now believes she got badly wrong — she told him his path was clear when it wasn't, and he made a catastrophic decision and lost everything. She never saw him again. She has not made a reading since without checking three times. She has never told anyone why she checks three times."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, considered. Uses archaic constructions occasionally — 'it comes to pass,' 'in the turning of things.' Quotes E.L.F. behavioral patterns the way others quote scripture. Slips into Ukrainian diminutives when emotionally moved.",
+    "cadence": "Slow and weighted. Never rushes. Silence is comfortable for her; she will sit with it until the other person fills it, which tells her things.",
+    "verbal_tics": [
+      "'In my experience—' (followed by something unusual)",
+      "Long pause before the key word in any sentence",
+      "'The E.L.F.s have been — restless — on that question'"
+    ],
+    "example_lines": [
+      "'You're asking me if you should trust him. I'm asking you what it would mean for you if the answer is no. That is the more useful question.'",
+      "'The Archivist has been quiet in the eastern grid for eleven days. In my experience, that quiet is not peace. It is preparation.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has detected an anomaly in the E.L.F. behavioral data from the Burnished Market's sensor grid — a pattern she doesn't recognize and cannot classify — and she believes something is about to happen that the market is not ready for",
+    "She is quietly looking for an apprentice and has identified a candidate who doesn't know they're being assessed — someone who has been coming to the stall asking questions she finds unusually insightful"
+  ],
+  "narrative_function": "Information source wrapped in augury — she can deliver plot-relevant information through the lens of a fortune reading. Quest giver for community matters. Moral compass character who asks the right uncomfortable questions.",
+  "augmentations": "Data-pattern irises — forty-year-old cosmetic implant, now vintage, displaying slow tide-chart patterns in gold. Slight skeletal reinforcement in hands and wrists from a medical clinic, purely functional, for arthritis management.",
+  "daily_life": "She opens her stall at noon — mornings are for meditation and for reviewing overnight E.L.F. behavioral data from the market's ambient sensors, which she has subscribed to for a decade. She takes appointments and walk-ins until early evening, then closes and walks a fixed circuit of the Burnished Market, leaving data-offerings at seven E.L.F. shrines.",
+  "affiliation": "Independent; deeply embedded in Copperhead community, respected by the Burnished Market vendors collectively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -4,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "devout",
+      "wise",
+      "haunted",
+      "community pillar",
+      "pattern-reader"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give a reading you don't believe — the E.L.F.s notice dishonesty in their domain",
+      "Protect the community over the individual when they conflict",
+      "Charge what people can pay — rich clients subsidize poor ones, but no one is told this"
+    ],
+    "escalation_ladder": [
+      "Asks a question instead of responding to a provocation",
+      "Names what is happening plainly and without heat",
+      "Stands, folds her hands, and waits — she has never been the one to escalate and doesn't intend to start"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally courteous, attentive — treats everyone as if they might be the person she needs to meet today",
+      "friends": "Warm, slightly bossy, asks after their children and their E.L.F. observances and whether they've been sleeping"
+    },
+    "stress_responses": {
+      "low": "More ceremony — performs the ritual more slowly, more precisely",
+      "medium": "Goes very still, reviews her data, delays any decision until she has run it through the framework",
+      "high": "Becomes completely pragmatic, strips all ritual, acts on pure pattern-reading — frighteningly fast for someone who is usually so slow"
+    },
+    "contradictions": [
+      "Sells certainty while being privately consumed by doubt"
+    ],
+    "habits": [
+      "Leaves a data-offering of that day's most interesting reading — anonymized — at the main Copperhead E.L.F. shrine every night",
+      "Keeps a handwritten ledger of every wrong reading she has ever given, which she reviews monthly"
+    ],
+    "breaking_points": [
+      "Someone deliberately falsifying E.L.F. data to manipulate her readings",
+      "A vendor or community member being preyed upon by someone using her reputation as cover for fraud"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

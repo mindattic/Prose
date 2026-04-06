@@ -1,0 +1,274 @@
+{
+  "id": "019d6143a71476dc84844260e80d57fd",
+  "type": "character",
+  "name": "Vesna Strand-Otieno",
+  "aliases": [
+    "Drift",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Remote drone and vehicle operations specialist — rigger",
+  "age": 20,
+  "status": "active",
+  "location": "The Canopy — elevated walkway district above Geartown",
+  "description": "Vesna Strand-Otieno is average height but with a presence that fills more space than the body accounts for. At 20, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nVesna Strand-Otieno is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.34,
+      "ideal": 0.6,
+      "id": 0.2,
+      "shadow": 0.1,
+      "mask": 0.16,
+      "ghost": 0.44
+    },
+    "core_fears": [
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "Being captured alive — death is preferable to corporate interrogation",
+      "That the work they do makes the city worse, not better"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Planning — responds to chaos by making detailed contingency plans for everything"
+    ],
+    "blind_spots": [
+      "Cannot accept help without interpreting it as leverage",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Vesna Strand-Otieno is slowly going chrome-sick — rejection symptoms are manageable now but getting worse. Has maybe two years before it becomes visible."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
+      "Uses old pre-collapse slang that nobody else remembers"
+    ],
+    "example_lines": [
+      "\"I have eyes in every district. Most of them are on wings.\"",
+      "\"The drone doesn't care about your feelings. Neither do I.\"",
+      "\"Remote operation means I'm everywhere and nowhere. It's very convenient.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Vesna Strand-Otieno's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "Someone is impersonating Vesna Strand-Otieno on jobs, and the impersonator is better at the work than the original",
+    "A high-paying contract turns out to target someone Vesna Strand-Otieno owes a personal debt to"
+  ],
+  "narrative_function": "Vesna Strand-Otieno is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 4
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 4
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 7
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 9
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.12,
+      "caution": 0.61,
+      "loyalty": 0.44,
+      "greed": 0.71,
+      "empathy": 0.66
+    },
+    "drives": [
+      "protection",
+      "revenge",
+      "loyalty"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 8,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "expert marksman",
+      "physical endurance",
+      "natural leadership presence"
+    ],
+    "weaknesses": [
+      "trust issues that limit crew effectiveness",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "rigger",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always verifies target identity independently before lethal contracts",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Being forced to choose between a crew member and the mission — and choosing wrong"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    },
+    {
+      "name": "Cybernetic arm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

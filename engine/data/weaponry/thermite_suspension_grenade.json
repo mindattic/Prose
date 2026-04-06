@@ -1,0 +1,57 @@
+{
+  "id": "019d6143ab55706cb332d31fe4255a45",
+  "name": "Thermite Suspension Grenade",
+  "type": "weapon",
+  "aliases": [
+    "TSG-4",
+    "Slag Egg",
+    "Foundry Pill",
+    "Drip Bomb"
+  ],
+  "category": "explosive",
+  "description": "The TSG-4 operates by suspending micronized thermite particles within a viscous aerogel matrix that is ejected outward at detonation rather than simply igniting in place. On trigger activation, a piezoelectric initiator fractures the inner housing and simultaneously ionizes the aerogel medium, causing the thermite suspension to disperse in a controlled radial bloom before secondary ignition commences. This sequence delays the burn by approximately 0.4 seconds — long enough for the gel to adhere to surfaces, personnel, and machinery before the 2,500-degree Celsius reaction begins.\n\nWhat distinguishes the TSG-4 from legacy incendiary grenades is its adhesive burn behavior. Standard thermite burns downward under gravity; the aerogel matrix holds the reaction in place regardless of surface angle, making it equally effective against vertical bulkheads, overhead infrastructure, and horizontal targets. The burn cannot be extinguished by conventional suppressants — the thermite provides its own oxidizer — and penetrates most civilian-grade armor plating within three to five seconds of contact.\n\nManufactured under contract for Meridian 88's internal security forces, the TSG-4 has since leaked widely into the black market through supply chain theft at ARCTURUS DEFENSE SOLUTIONS distribution nodes. Street operators call it the 'Slag Egg' for the faint yellow residue it leaves on concrete after burnthrough. Its reputation for destroying entire rooms of electronic infrastructure has made it a preferred tool of corporate saboteurs.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+ / Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Piezoelectric disruption",
+    "Aerogel suspension matrix",
+    "Exothermic metal oxidation"
+  ],
+  "specifications": "weight: 310g\ndiameter: 62mm\nburn temperature: 2,500°C sustained\nburn duration: 18–22 seconds\ndispersion radius: 3.5m adhesive bloom\ninitiator: Dual piezoelectric fracture cap\nhousing: Ceramic-composite shell with inner aerogel bladder\ndelay: 0.4s post-fracture pre-ignition",
+  "tactical_use": "Used primarily for denial operations and infrastructure destruction. Operators breach a room, deploy the TSG-4 into the center, and withdraw — the adhesive bloom coats walls, terminals, and occupants before igniting. Favored in server farm raids where data destruction is the objective. Close-quarters use is considered suicidal without full thermal shielding. Some operators use it defensively by rolling it through a doorway to seal a corridor permanently.",
+  "cultural_context": "The TSG-4 carries a reputation for cruelty that even hardened operators acknowledge. In Meridian 88's lower districts, being killed by a 'Slag Egg' is considered one of the worst possible deaths — the aerogel adhesion means victims cannot remove the burning material. Corporate security divisions use the weapon's reputation as a deterrent, and rumors of TSG-4 deployment are sometimes enough to disperse resistance. Possession of one marks a carrier as someone who has either deep black-market connections or has raided an ARCTURUS logistics chain.",
+  "known_users": [
+    "Corporate sabotage specialists",
+    "ARCTURUS Defense Solutions black-ops units",
+    "Infrastructure demolition contractors",
+    "Underworld fixers with high-tier supply access",
+    "Anti-corporate insurgent cells"
+  ],
+  "story_hooks": [
+    "A batch of TSG-4s stolen from an ARCTURUS shipment turns up in the hands of a residential protest group — someone is deliberately escalating the conflict.",
+    "A player finds a room burned with TSG-4 adhesive residue in a pattern too precise to be combat — it looks like an execution. The victim's identity is erased by the burn.",
+    "ARCTURUS is quietly recalling TSG-4 units from the black market, not for legal reasons — a flaw in a recent production batch causes the aerogel to ignite prematurely, before dispersal."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "combat",
+    "war",
+    "theft",
+    "death",
+    "identity",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "underworld",
+    "market",
+    "armor",
+    "tier 4"
+  ]
+}

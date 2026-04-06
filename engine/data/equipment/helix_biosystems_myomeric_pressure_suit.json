@@ -1,0 +1,69 @@
+{
+  "id": "019d6143a85b7073b1aa6725e264d397",
+  "name": "Helix Biosystems Myomeric Pressure Suit",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Myomeric Pressure Suit",
+  "type": "equipment",
+  "aliases": [
+    "Muscle Wrap",
+    "The Second Body",
+    "Helix Shell"
+  ],
+  "category": "armor",
+  "description": "The Myomeric Pressure Suit is a biomimetic compression garment engineered around synthetic muscle fiber bundles — myomeric actuators — woven throughout a high-density elastomer frame. At rest, the suit provides consistent compressive force across the wearer's musculature, reducing fatigue and supporting joint stability during prolonged activity. When external impact is detected through the suit's embedded piezoelectric sensor array, the myomeric fibers contract in the affected region within milliseconds, dramatically increasing local tissue density and distributing the impact load across a wider biological surface area. The effect is analogous to tensing a muscle before a blow, executed faster and more precisely than any voluntary human response.\n\nHelix's design philosophy here is fundamentally different from conventional armor: rather than interposing a material barrier between the threat and the wearer, the Myomeric Suit augments the body itself to better absorb and survive trauma. The distinction matters because the suit has no rigid components and no ballistic panels — it does not stop a round, but it significantly improves the wearer's survivability from wounds that would otherwise be incapacitating. Internal bleeding from blunt trauma is measurably reduced. Stab wounds are shallower on average. Bone fractures under compression loads are less frequent. Helix's clinical literature frames the suit as a medical device rather than armor, a classification that carries its own regulatory implications.\n\nThe suit requires a baseline biometric intake to tune the myomeric response to the wearer's specific tissue density, body composition, and resting muscle tone. Improperly fitted suits have caused compartment syndrome in documented cases when the contraction response misfired at high intensity across an extended area. Helix's certification process is rigorous, and uncertified suits — which circulate on the grey market — are considered genuinely dangerous by people who understand what they are.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Synthetic myomeric actuator fiber bundles",
+    "Piezoelectric impact sensor array",
+    "Biomimetic compressive frame elastomer",
+    "Biometric tissue density calibration system",
+    "Distributed contraction response mapping"
+  ],
+  "specifications": {
+    "weight": "1.8 kg (full body configuration)",
+    "coverage": "Full body musculature and joint systems",
+    "contraction_response_time": "0.22 milliseconds post-impact detection",
+    "resting_compression_output": "18–25 mmHg (adjustable by zone)",
+    "peak_contraction_force": "Up to 4x ambient tissue compression in impact zone",
+    "calibration_requirement": "Mandatory biometric intake; recalibration recommended after significant body composition change",
+    "power_source": "Integrated flexible micro-cell array (72-hour continuous operation)",
+    "profile": "Invisible under standard clothing"
+  },
+  "tactical_use": "Not a replacement for ballistic protection — the Myomeric Suit is a survivability multiplier worn beneath other armor or used alone in environments where conventional armor cannot be concealed. Most effective against melee, blunt force, and low-velocity projectiles. Operators who survive gunshot wounds in the suit report significantly reduced secondary trauma and faster recovery. Widely used in combination with the Reactive Shear Mantle by operators who can afford both layers.",
+  "cultural_context": "The Myomeric Pressure Suit sits at the intersection of performance enhancement and protection, and its users often frame it in terms of bodily optimization rather than defense. In corporate wellness culture, certified suits are status objects — Helix markets premium configurations to executive health programs. On the street, uncertified grey-market suits are circulated with the understanding that they are dangerous and that wearing one is an act of calculated desperation or ignorance. The clinical framing of the suit as a medical device creates a persistent ambiguity about who is permitted to wear one and under what circumstances.",
+  "known_users": [
+    "Helix Biosystems corporate wellness program executives",
+    "Special operations personnel requiring maximum concealment with survivability support",
+    "Underground sports athletes seeking injury reduction without detectable enhancement",
+    "Grey-market body modification practitioners accepting the compartment syndrome risk",
+    "High-value targets who cannot be seen wearing protection"
+  ],
+  "story_hooks": [
+    "A grey-market Myomeric Suit has caused a compartment syndrome fatality in the outer districts — the victim was a minor, and someone in the certification chain sold uncalibrated suits knowing the risks; Helix wants the source found before regulators do.",
+    "A corporate executive survived an assassination attempt that should have been fatal; the shooter insists the rounds hit center mass, and a Helix insider suggests the executive may have been wearing an unreleased next-generation Myomeric configuration not yet on the market.",
+    "A sports league is funding an investigation into a fighter who has won fifteen consecutive bouts without visible injury — the league suspects a Myomeric Suit, but the fighter's medical records have been sealed under a Helix confidentiality agreement.",
+    "Someone is distributing calibration override codes for Myomeric Suits on the dark net — the codes allow the contraction response to be triggered remotely, turning the suit into a compression weapon against its own wearer."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "weapon",
+    "gun",
+    "augment",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "medical",
+    "clinic",
+    "injury",
+    "market",
+    "bar",
+    "dark",
+    "fire",
+    "tier 3"
+  ]
+}

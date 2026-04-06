@@ -1,0 +1,71 @@
+{
+  "id": "019d6143a86076709b23b170cfb15356",
+  "name": "Lazarus Pharmaceuticals Hemolytic Suspension Matrix",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Hemolytic Suspension Matrix",
+  "type": "equipment",
+  "aliases": [
+    "The Embalmer",
+    "False Blood",
+    "Slow Red"
+  ],
+  "category": "medical",
+  "description": "The Hemolytic Suspension Matrix is a synthetic blood substitute delivered via pressurized IV canister, designed to temporarily replace lost blood volume and oxygen-carrying capacity in patients experiencing severe hemorrhagic shock. Unlike earlier saline-based volume expanders, the Matrix uses a proprietary suspension of ferro-organic oxygen carriers — microscopic lipid-shelled particles that bind and release oxygen with approximately 60% the efficiency of natural hemoglobin. A single 500ml canister can sustain basic organ function in a patient who has lost up to 40% blood volume for a window of three to five hours.\n\nLazarus engineered the Matrix with field triage as its primary use case, which means the delivery system is deliberately idiot-proof: a pre-calibrated auto-injector reads the patient's estimated weight via a grip-sensor and adjusts flow rate accordingly, preventing the pulmonary edema risk that plagued earlier rapid-infusion systems. The suspension fluid itself is shelf-stable at ambient temperature for up to two years and is universally compatible — no blood typing required. The trade-off is metabolic cost: extended use beyond the safe window causes the ferro-organic carriers to fragment into compounds that require liver processing, and patients who rely on the Matrix too long face a narrow but serious risk of synthetic hepatotoxicity.\n\nOn the street, the Matrix is called 'The Embalmer' with dark affection — it keeps you looking alive long enough to either reach a surgeon or make peace with the alternative. Lazarus's marketing materials have never once acknowledged this nickname.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Ferro-organic oxygen carrier suspension",
+    "Grip-calibrated auto-injector with weight estimation",
+    "Lipid-shell micro-particle delivery system",
+    "Universal blood-type compatibility chemistry",
+    "Ambient-stable pressurized canister"
+  ],
+  "specifications": {
+    "volume": "500ml per canister",
+    "oxygen_carrying_efficiency": "~60% relative to natural hemoglobin",
+    "effective_duration": "3–5 hours at standard metabolic load",
+    "blood_loss_coverage": "Up to 40% volume loss",
+    "safe_use_window": "Single canister per 8-hour period recommended",
+    "hepatotoxicity_threshold": "Risk onset after 2 consecutive canisters without surgical intervention",
+    "shelf_life": "24 months at ambient temperature",
+    "weight": "0.9 kg (canister + injector assembly)",
+    "compatibility": "Universal — no blood typing required"
+  },
+  "tactical_use": "Administered immediately upon identification of hemorrhagic shock in the field. The auto-injector can be operated by a non-medic with minimal training — two seconds of grip contact, locate a major vein, inject. Used to buy time for extraction or field surgery rather than as a standalone cure. Experienced medics pair the Matrix with the Lazarus Coagulant Bloom Injector to simultaneously address volume loss and active bleeding. Stacking multiple canisters is a known desperation measure with understood consequences.",
+  "cultural_context": "The Matrix's universal compatibility and low price point have made it genuinely ubiquitous — it's found in household first-aid kits in middle wards, in every corporate security team's loadout, and in the back pockets of fixers who work dangerous meetings. Its accessibility is one of Lazarus Pharmaceuticals' most effective pieces of soft branding: the company that keeps Meridian 88 alive, canister by canister. Critics note that Lazarus simultaneously holds patents on the primary hepatotoxicity treatment for Matrix overuse, a conflict of interest that has never successfully been litigated.",
+  "known_users": [
+    "Street medics and freelance fixers",
+    "Corporate security teams (standard issue)",
+    "Civilian households in mid-tier wards",
+    "Combat-zone journalists and documentarians",
+    "Anyone who works in a profession with a high probability of getting shot"
+  ],
+  "story_hooks": [
+    "A counterfeit Matrix canister batch has hit the market — the suspension fluid looks identical but lacks the ferro-organic carriers, delivering nothing but saline while the patient's condition continues to deteriorate.",
+    "Lazarus Pharmaceuticals has quietly reformulated the Matrix to accelerate hepatotoxicity onset, increasing demand for their proprietary treatment — a whistleblower needs the original formula smuggled out before the new version reaches distribution.",
+    "A player character discovers that someone they were supposed to protect has been surviving on stacked Matrix canisters for three days straight — they're still walking, still talking, but the liver failure window is hours away.",
+    "An outer ward community has organized a Matrix stockpile as a mutual aid resource — Lazarus's legal team is contesting their bulk purchase rights under a newly filed distribution exclusivity clause."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "combat",
+    "war",
+    "smuggle",
+    "loss",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "surgery",
+    "market",
+    "rain",
+    "dark",
+    "rights",
+    "train",
+    "chase",
+    "shelf",
+    "tier 1"
+  ]
+}

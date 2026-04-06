@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab347e759e6894b8f32691cf",
+  "name": "Neural Disruption Pistol NDP-4 'Stutter'",
+  "type": "weapon",
+  "aliases": [
+    "Stutter",
+    "The Hesitator",
+    "NDP",
+    "Feedback Gun",
+    "The Freeze"
+  ],
+  "category": "firearm",
+  "description": "The NDP-4 fires a dart-delivered neural feedback payload: a 2mm tungsten needle carrying a microscale piezoelectric transceiver and a burst-charge of neurotransmitter-disrupting polymer gel. On impact — typically at ranges under 40 meters — the needle embeds in soft tissue and the piezoelectric element activates from the kinetic impact, generating a localized electrical field that destabilizes sodium-channel gating in nearby motor neurons. The polymer gel simultaneously releases a fast-acting acetylcholinesterase inhibitor into the surrounding tissue, creating a 3-6 second window of profound motor disruption — the target experiences inability to initiate voluntary movement while remaining fully conscious. The effect is colloquially described as 'being frozen mid-thought.'\n\nThe NDP-4 uses a neural feedback loop architecture originally developed by HELIX BIOSYSTEMS for surgical tremor suppression. In its weapons application, the same feedback principle that once stabilized a surgeon's hands is inverted: the transceiver reads the target's local neural activity and generates counter-phase interference signals that scramble motor command transmission. This active interference component extends the disruption window beyond what the chemical payload alone would produce, and means the effect duration varies with the target's neural architecture — individuals with cybernetic motor augmentation may experience shorter disruption (1-2 seconds) or, in documented cases, a paradoxical amplification effect where the augmentation systems attempt to compensate and produce involuntary movement cascades instead.\n\nThe pistol itself is compact and conventionally shaped, operating on a CO2-driven dart projector with a 6-round rotary cylinder. Each dart is individually sealed in a nitrogen-purged capsule to preserve the polymer gel payload. The weapon produces minimal sound — a soft pneumatic pop — and no visible projectile, which has made it a favorite of abduction and interrogation specialists who need a target incapacitated without permanent damage and without witnesses understanding what just happened.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Neural feedback loops",
+    "Piezoelectric disruption",
+    "Acetylcholinesterase inhibition delivery"
+  ],
+  "specifications": "caliber: 2mm tungsten neural-payload dart\nfeed system: 6-round rotary cylinder, nitrogen-sealed dart capsules\npropulsion: CO2 pneumatic, 12g standard cartridge (18 shots)\neffective range: 5-40m optimal, degraded accuracy beyond 40m\ndisruption duration: 3-6 seconds (baseline), 1-2 seconds (augmented targets), variable (heavy augmentation)\nweight: 0.7 kg loaded\ndimensions: 220mm length, 135mm height\nacoustic signature: ~62 dB (comparable to a book dropped on a hard floor)\ncontraindications: Unpredictable in targets with Tier 3+ motor augmentation; potentially lethal with cardiac neural implants",
+  "tactical_use": "The NDP-4 is almost exclusively used for non-lethal incapacitation in abduction, extraction, and interrogation scenarios. A single dart creates a 3-6 second window during which a target can be physically controlled without resistance. Operators typically work in pairs — one fires the NDP-4 while the second moves immediately to physically secure the target, who will be conscious, aware, and terrified but unable to resist. The 6-round cylinder allows for multiple targets in sequence. Experienced operators carry a secondary conventional firearm for situations where the target proves augmented or where the disruption window is insufficient.",
+  "cultural_context": "The NDP-4 occupies a particularly feared niche in Meridian 88's criminal ecosystem because it is understood as a kidnapper's weapon. Its presence at a scene tells investigators that the perpetrators wanted someone alive and mobile — they needed the target incapacitated for seconds, not dead. The weapon is associated with corporate abduction teams, organ-trafficking operations, and political disappearances. Among the city's augmented population, the NDP-4 carries additional dread because of documented cases where heavy motor augmentation caused the 'amplification effect' — victims with full-body cybernetic systems have experienced violent involuntary convulsions lasting minutes rather than seconds of frozen stillness. HELIX BIOSYSTEMS has publicly disavowed any weapons application of their neural feedback research, a statement that has been received with widespread skepticism.",
+  "known_users": [
+    "Corporate abduction and extraction specialists",
+    "Organ trafficking networks",
+    "Political disappearance operators (state-adjacent)",
+    "High-end bounty hunters (non-lethal premium contracts)",
+    "HELIX BIOSYSTEMS internal security (deniable units)"
+  ],
+  "story_hooks": [
+    "A recovered NDP-4 dart from a disappearance scene carries a HELIX BIOSYSTEMS batch code that traces to a research division officially shut down two years ago — someone is still manufacturing",
+    "A target with Tier 4 motor augmentation experienced the amplification effect and died from the convulsive response — the operator who fired the dart is now being hunted by their own employer to eliminate the witness",
+    "Someone is using NDP-4s to abduct low-tier arcology residents who have no augmentation and no one looking for them — the pattern of disappearances only becomes visible when someone starts mapping them",
+    "A player character is hit by an NDP-4 dart and experiences the 3-6 second disruption while fully conscious during a critical moment — and sees something they were not meant to see"
+  ],
+  "ammunition_type": [
+    "2mm Tungsten Neural-Payload Dart TNP-2",
+    "Standard CO2 Propulsion Cartridge SPC-12"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "gun",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "market",
+    "rain",
+    "train",
+    "fire"
+  ]
+}

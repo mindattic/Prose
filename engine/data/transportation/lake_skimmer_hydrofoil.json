@@ -1,0 +1,39 @@
+{
+  "id": "019d6143aa697ac3892197ed05617f40",
+  "name": "Lake Skimmer Hydrofoil",
+  "type": "transportation",
+  "aliases": [
+    "Skimmer",
+    "Water Blade",
+    "Lake Runner"
+  ],
+  "category": "exotic",
+  "manufacturer": "Various (racing community builds)",
+  "description": "A small, fast hydrofoil designed for Great Lakes racing — an underground sport that draws Tier 2-4 thrill seekers and heavy betting. Skimmers ride on submerged foils that lift the hull clear of the water, reducing drag and allowing speeds that terrify passengers and thrill pilots. The racing circuit runs through the harbor, around the breakwater, and out into open lake in conditions that would make the harbor patrol blanch. Crashes are spectacular, frequent, and occasionally fatal.",
+  "propulsion": "Electric turbine, hydrofoil lift",
+  "speed": "150 km/h on foils",
+  "capacity": "1-2 crew",
+  "range": "100 km",
+  "tier_availability": "Tier 2-4 (racing community)",
+  "cost": "Φ8,000-20,000 depending on build quality",
+  "autonomy": "Manual only. The whole point is the pilot.",
+  "armament": "None. Speed is the weapon and the defense.",
+  "common_usage": "Lake racing, high-speed water transit, smuggling, showing off.",
+  "story_hooks": [
+    "A lake racing champion disappears during a night race and their Skimmer is found drifting with the motor still running",
+    "The racing circuit's route takes pilots over a deep spot in the lake where instruments go haywire — and the fast ones feel something pull at their foils"
+  ],
+  "tags": [
+    "exotic",
+    "transportation",
+    "weapon",
+    "blade",
+    "harbor",
+    "night",
+    "water",
+    "lake",
+    "circuit",
+    "tier 2",
+    "tier 4"
+  ]
+}

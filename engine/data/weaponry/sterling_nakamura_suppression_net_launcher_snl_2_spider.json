@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab447323b3e13edcb542ddee",
+  "name": "Sterling-Nakamura Suppression Net Launcher SNL-2 'Spider'",
+  "type": "weapon",
+  "aliases": [
+    "Spider",
+    "SNL-2",
+    "Net Gun",
+    "The Web"
+  ],
+  "category": "heavy",
+  "description": "A shoulder-fired launcher that deploys a weighted conductive net designed to entangle and incapacitate targets. The net spans 4 meters when deployed and carries a conductive mesh that can deliver a sustained taser-grade electrical discharge for up to 30 seconds, keeping the entangled target immobilized. The net's edge weights are designed to wrap around limbs and torso, and the conductive fibers tighten under tension — struggling makes the entanglement worse and increases the contact area for electrical discharge. Sterling-Nakamura markets it as their premier non-lethal capture system.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — law enforcement and security",
+  "base_technologies": [
+    "Conductive entanglement net engineering",
+    "Tension-reactive tightening geometry",
+    "Sustained electrical discharge delivery"
+  ],
+  "specifications": "net span: 4 meters deployed\nelectrical discharge: 50,000V taser-grade, 30-second sustained\neffective range: 5-20 meters\nlauncher weight: 4.2 kg\nnet weight: 1.5 kg per cartridge\ncartridges: Single-shot, reload in 8 seconds\nconductive fiber: Copper-core polymer weave\ntensile strength: Rated to 200 kg pull force",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Modified Spider nets have appeared that replace the electrical discharge with a contact sedative coating — targets are wrapped and unconscious within seconds, ideal for abduction.",
+    "A Spider net was used to capture a heavily augmented fugitive, but the electrical discharge interacted with their military-grade cyberware and caused a catastrophic power surge that killed three bystanders."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "heavy",
+    "gun",
+    "war",
+    "augment",
+    "cyberware",
+    "ai",
+    "power",
+    "market",
+    "fire",
+    "tier 2"
+  ]
+}

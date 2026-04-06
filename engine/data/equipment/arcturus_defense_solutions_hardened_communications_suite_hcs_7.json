@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a84f7213b6740e65bddf8087",
+  "name": "Arcturus Defense Solutions Hardened Communications Suite HCS-7",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Hardened Communications Suite HCS-7",
+  "type": "equipment",
+  "aliases": [
+    "HCS-7",
+    "War Radio",
+    "Arcturus Comm",
+    "Hard Line"
+  ],
+  "category": "communications",
+  "description": "A military-grade encrypted communications system hardened against jamming, interception, and EMP attack. The HCS-7 combines multiple communication modes — encrypted radio, laser-link, acoustic modem, and satellite uplink — in a ruggedized unit that automatically switches between channels based on the current threat environment. If radio is jammed, it switches to laser. If laser is blocked, it falls back to acoustic. The system maintains communication under conditions that would silence every other radio on the market. Arcturus issues it to field commanders and sells it to allied military organizations.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — military and authorized security",
+  "base_technologies": [],
+  "specifications": {
+    "modes": "Encrypted radio",
+    "info": "laser-link; acoustic modem; satellite uplink; line-of-sight laser; 500m acoustic; global satellite; shockproof; EMP-proof",
+    "encryption": "Quantum-key rolling encryption",
+    "jamming resistance": "Frequency-hopping + mode switching",
+    "EMP hardening": "Military-grade Faraday enclosure",
+    "range": "50 km radio",
+    "weight": "1.8 kg",
+    "battery": "48-hour multi-mode operation",
+    "ruggedness": "Waterproof"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An HCS-7's multi-mode capability was the only communication system that functioned during a coordinated jamming attack — the operator's after-action report reveals that the acoustic modem was the only mode that the jammers could not defeat.",
+    "A stolen HCS-7 has been modified to monitor all modes simultaneously rather than transmit — it has been turned into a multi-spectrum communications interceptor that can crack every channel except quantum-encrypted ones."
+  ],
+  "tags": [
+    "communications",
+    "equipment",
+    "war",
+    "ai",
+    "market",
+    "tier 4"
+  ]
+}

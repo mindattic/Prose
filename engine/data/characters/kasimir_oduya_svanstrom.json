@@ -1,0 +1,249 @@
+{
+  "id": "019d6143a6407aaebc239776b6da2d5e",
+  "type": "character",
+  "name": "Kasimir Oduya-Svanström",
+  "aliases": [
+    "Kaz",
+    "The Archivist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Forensic Technician, Tessera Compliance Bureau",
+  "age": 47,
+  "status": "active",
+  "location": "Kenwood Gate",
+  "description": "Kasimir is slender the way old buildings are slender — not fragile, just built for a different era. He is fifty-two centimeters taller than average and moves with the habitual stoop of someone who has spent decades apologizing for their height in low-ceilinged evidence labs. His skin is a warm amber-brown, his hair white at the temples and worn in short locks threaded with copper wire — a fashion choice from his thirties he's never bothered to update. His eyes have patterned irises: geometric gold tessellation that he received as a fortieth-birthday gift to himself and that he occasionally forgets aren't natural when he looks in mirrors.\n\nHe is meticulous in the way that conceals other things. The evidence lab at Kenwood Gate is his kingdom, organized by a system only he fully understands, maintained with a devotion that borders on spiritual. He speaks slowly, precisely, and with a lecturer's tendency to answer simple questions with complete historical context. He is not unfriendly — he will offer you tea from his personal supply and remember your name the next time you visit — but his real warmth is reserved for data: for the story that physical evidence tells, for the satisfaction of a chain of custody without gaps. He has been quietly falsifying minor procedural timestamps for a Tessera internal affairs officer for eighteen months and has not let himself think clearly about why.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.2,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "being responsible for an innocent person's conviction through his own error",
+      "that the institution he's given his life to is irredeemably corrupt"
+    ],
+    "core_desires": [
+      "for evidence to mean something — for truth to have weight in a world that keeps discounting it",
+      "to finish his career without having done catastrophic harm"
+    ],
+    "coping_mechanisms": [
+      "obsessive organizational rituals",
+      "intellectualizing moral problems until they become abstract",
+      "strong tea and data-prayer to the E.L.F. he believes inhabits the evidence catalog system"
+    ],
+    "blind_spots": [
+      "he has rationalized the timestamp falsifications as protecting a greater truth; he has not examined who is using them or why",
+      "his faith in process blinds him to how process can be weaponized"
+    ],
+    "secret": "The internal affairs officer he's been helping is building a case — but not against Tessera wrongdoing. She's constructing false evidence to convict a labor organizer in the Ironvein district. Kasimir has suspected this for two months and has done nothing because he cannot afford to be wrong about her."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, precise, technical when discussing work; surprisingly literary when comfortable — quotes older legal texts and occasionally pre-Meridian court transcripts",
+    "cadence": "Deliberate and unhurried, with long subordinate clauses; builds to conclusions methodically",
+    "verbal_tics": [
+      "'Technically speaking...' as a preamble to corrections",
+      "pauses mid-sentence to verify his own memory before continuing"
+    ],
+    "example_lines": [
+      "'The chain of custody for this item has four entries. Technically speaking, there should be five. I notice these things. I'm paid to notice these things.'",
+      "'Evidence doesn't lie. Evidence is what it is. What lies is the story we construct around it. That distinction matters enormously. It should matter to you too.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has a piece of evidence from a six-year-old case that he's quietly kept off the official catalog — he's not sure why he kept it, but he's beginning to understand what it means.",
+    "The labor organizer who may be falsely convicted is someone whose name Kasimir recognizes from his own family's history in the Ironvein district labor movement."
+  ],
+  "narrative_function": "Information broker without knowing it — he has catalogued evidence from dozens of Tessera compliance cases and his memory is encyclopedic; also a moral fault line: someone doing bad things for reasons he's rationalized into goodness; can provide forensic analysis, chain of custody records, or access to suppressed evidence.",
+  "augmentations": "Patterned irises (geometric gold tessellation, cosmetic); haptic feedback gloves integrated into fingertips for microscale evidence handling (work-issued); mild neural indexing implant for evidence cataloguing recall (Tessera-standard issue for forensic tier)",
+  "daily_life": "Arrives at Kenwood Gate evidence processing center an hour before his shift to perform his personal quality checks; spends most of the day in the lab or testifying in compliance hearings; stops at a small Sahel-fusion food stall on the walk home and has been ordering the same dish for eleven years.",
+  "affiliation": "Tessera Compliance Bureau — Forensic Analysis Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "forensic specialist",
+      "reluctant collaborator",
+      "institutional true believer",
+      "E.L.F.-devout",
+      "archive obsessive"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never handle evidence without documentation",
+      "verify everything twice, trust nothing once",
+      "when uncertain, delay — buying time is a form of caution"
+    ],
+    "escalation_ladder": [
+      "Procedural questioning and clarification requests",
+      "Formal written queries through official channels",
+      "Strategic 'misfiling' that delays proceedings",
+      "Whistleblowing — his absolute last resort, because he knows what happens to Tessera employees who do it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formal and correct, maintains professional distance, genuinely courteous in an old-fashioned way",
+      "friends": "Opens up into warmth and dry wit; shares his tea; asks questions about your life with genuine interest"
+    },
+    "stress_responses": {
+      "low": "Increases documentation and cross-referencing",
+      "medium": "Becomes pedantically precise in all communications, creating a paper trail instinctively",
+      "high": "Freezes in place, intellectualizing until the moment passes or forces him to act"
+    },
+    "contradictions": [
+      "Devoted to truth as an abstract principle while actively participating in its distortion; cannot reconcile these and so doesn't try"
+    ],
+    "habits": [
+      "Recites evidence catalog numbers under his breath while walking",
+      "Leaves a formatted data packet as an offering to the archive E.L.F. every Monday morning",
+      "Re-checks locked storage cabinets twice before leaving"
+    ],
+    "breaking_points": [
+      "Seeing the labor organizer's name on an arraignment document",
+      "Being asked to testify to something he knows is false in an open hearing"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Haptic feedback fingertip implants — precision grade (Tessera work-issued)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic feedback fingertip implants — precision grade (Tessera work-issued)",
+      "replaces": ""
+    },
+    {
+      "name": "Neural indexing implant — forensic catalog integration (Tessera standard issue)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural indexing implant — forensic catalog integration (Tessera standard issue)",
+      "replaces": ""
+    },
+    {
+      "name": "Patterned irises — geometric gold tessellation (personal cosmetic mod)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned irises — geometric gold tessellation (personal cosmetic mod)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2153 — Born in Kenwood Gate to a Yoruba-Swedish academic family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2175 — Graduated from Meridian Technical Institute with forensic sciences certification",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Joined Tessera Compliance Bureau forensic division",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — Quietly begins falsifying minor timestamps at the request of Internal Affairs Officer Selin Harare-Dąbrowski",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Begins to suspect the purpose of the falsifications",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Current assignment, Kenwood Gate evidence processing center",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

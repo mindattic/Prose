@@ -1,0 +1,40 @@
+{
+  "id": "019d6143aa6473cda009936161769974",
+  "name": "Ferrogate CL-9 L-Train",
+  "type": "transportation",
+  "aliases": [
+    "The L",
+    "The Spine",
+    "Clatter Line"
+  ],
+  "category": "public_transit",
+  "manufacturer": "Ferrogate Transit",
+  "description": "The arterial rail system of Meridian 88, running elevated tracks through every district above Tier 2. The CL-9 cars are sixty years old and it shows — rattling frames, flickering displays, seats worn to bare metal. But it runs. Twenty hours a day, every eleven minutes, packed to capacity and beyond. For most of the city, the L is the only way to get anywhere that walking can't reach. The smell is a signature blend of ozone, sweat, and cheap synth-coffee.",
+  "propulsion": "Electromagnetic rail, third-rail power draw from Meridian grid",
+  "speed": "Average 45 km/h, peak 80 km/h between stations",
+  "capacity": "220 seated, 400+ standing (regularly exceeds 500 during rush)",
+  "range": "Full loop: 94 km circuit through 47 stations",
+  "tier_availability": "Tier 1-3",
+  "cost": "Φ2 per ride, Φ45 monthly pass",
+  "autonomy": "Automated with manual override capability. Ferrogate dispatch controls routing.",
+  "armament": "None. Security cameras (60% functional).",
+  "common_usage": "Daily commute for millions. The lifeblood of the working class. Students, laborers, gig workers, and anyone who can't afford better.",
+  "story_hooks": [
+    "L-train breakdowns strand thousands and create temporary communities on platforms",
+    "Certain late-night cars are known to run routes that aren't on any schedule — ghost trains to stations that don't exist on the map"
+  ],
+  "tags": [
+    "publictransit",
+    "transportation",
+    "ai",
+    "control",
+    "power",
+    "bar",
+    "rain",
+    "night",
+    "train",
+    "circuit",
+    "tier 1",
+    "tier 3"
+  ]
+}

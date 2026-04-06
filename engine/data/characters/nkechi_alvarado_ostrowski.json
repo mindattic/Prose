@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a6647e3b8d70d4f3709f1bfb",
+  "type": "character",
+  "name": "Nkechi Alvarado-Ostrowski",
+  "aliases": [
+    "Nkechi the Stitch",
+    "Stitch"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Clothing and fashion vendor, specialist in hybrid adaptive garments",
+  "age": 27,
+  "status": "active",
+  "location": "The Burnished Market, Bronzeline",
+  "description": "Nkechi is a short, energetic young woman with the rich dark complexion of her Igbo-Nigerian heritage and the unusual pale blue eyes that surface occasionally in her Polish grandmother's line, which she has leaned into with matching blue cat ears — a geneware mod she saved for over eight months and treats as a signature. Her natural hair is grown long and worn in elaborate sculptural styles that she changes weekly, using her own products as advertisement. Her clothes are always technically impressive: today's jacket has reactive panels that shift between hand-stamped Ankara patterns and geometric weave depending on the wearer's biometric stress levels — a piece she made herself.\n\nNkechi is relentlessly enthusiastic in a way that can seem naïve until you realize she has a precise memory for every customer's measurements, preferences, and budget, and she has never once given someone a piece that didn't flatter them. She has strong opinions and shares them freely, argues fashion like it's philosophy, and somewhere underneath the bright chatter is a young woman who genuinely believes that how you dress is a form of sovereignty that the corps cannot take from you — yet.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being forced into corporate employment and losing her creative voice",
+      "Becoming ordinary — forgettable"
+    ],
+    "core_desires": [
+      "To be recognized as an artist, not just a vendor",
+      "To build something that outlasts her — a label, a style, a legacy"
+    ],
+    "coping_mechanisms": [
+      "Channeling anxiety into new designs",
+      "Social saturation — never being alone when worried"
+    ],
+    "blind_spots": [
+      "Underestimates how much her visibility makes her a target for extortion",
+      "Mistakes enthusiasm for resilience in herself and others"
+    ],
+    "secret": "She has been quietly embedding minor ELF-resonant patterns into her most expensive pieces — geometric sequences that data-spirit devotees recognize as offerings. She doesn't know if it works, but three clients have reported strange, comforting presences in their homes since buying her work, and she finds this thrilling rather than alarming."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, vivid, mixes English with Igbo exclamations and Polish affectionate diminutives she picked up from her grandmother. Fashion vocabulary is precise and technical; everything else is enthusiastic shorthand.",
+    "cadence": "Quick-fire with frequent topic pivots, but slows down and becomes genuinely measured when talking about craft",
+    "verbal_tics": [
+      "'Eh-eh, no no no'",
+      "'You feel what I'm saying?'",
+      "Touches the fabric she's working on when thinking"
+    ],
+    "example_lines": [
+      "'This is not just a jacket, this is a statement of your nervous system. When you calm down, it calms down. When you're scared, it knows — so everyone else will know too. You sure you want that?'",
+      "'The corps want you in grey. They want you invisible. You walk out of here, you are not invisible. That's not vanity — that's resistance, yes?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of her ELF-patterned pieces was bought by a Tessera executive's personal shopper. The piece has since been reported missing from the executive's wardrobe — and three of the executive's home security systems have gone offline.",
+    "A corporate fashion label has been quietly copying her adaptive pattern designs, stripping the ELF sequences, and selling them at ten times her price. She wants justice. She just doesn't know what shape justice takes."
+  ],
+  "narrative_function": "Local color, emotional pulse of the Burnished Market community, access to information through her vast social network, potential equipment source for adaptive/reactive garments. Can be a friend or a recurring NPC who tracks the neighborhood's mood.",
+  "augmentations": "Blue cat ears with minimal internal hearing enhancement (cosmetic primary). Color-shifting hair follicle modification. Tactile sensitivity enhancement in fingertips — essential for fabric work.",
+  "daily_life": "Opens her stall by 09:00 with a new display piece she worked on through the night; spends mornings doing fittings and custom orders, afternoons doing alterations and trading fabric with other vendors. Evenings are for the sewing work she does by hand, which she finds meditative.",
+  "affiliation": "Independent; member of the Oxidian Market vendors guild; informal mentee of several older Burnished Market vendors",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 10,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "artist-vendor",
+      "community hub",
+      "ELF devotee (unaware)",
+      "geneware enthusiast",
+      "market agitator"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never turn away a customer who is clearly dressing to survive something",
+      "Never compromise the quality of a piece for profit",
+      "Trust your first read on a person"
+    ],
+    "escalation_ladder": [
+      "Loud, public shaming of bad actors (very effective in the Burnished Market)",
+      "Organizing other vendors against a shared threat",
+      "Taking the problem to the guild elders",
+      "Burning a bridge completely and publicly — she will not be quiet about it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and assessing — measures them for a garment within thirty seconds of meeting them, mentally",
+      "friends": "Deeply loyal, generous to a fault, shows love through making things for people"
+    },
+    "stress_responses": {
+      "low": "Talks faster, pivots topics more",
+      "medium": "Goes quiet mid-sentence, stares at the fabric she's holding",
+      "high": "Leaves the stall and walks Bronzeline for an hour, alone, which her regulars recognize as serious"
+    },
+    "contradictions": [
+      "Champions individuality fiercely but is deeply uncomfortable when someone she cares about makes choices she doesn't understand",
+      "Says she doesn't care about money, keeps meticulous financial records and knows her margins exactly"
+    ],
+    "habits": [
+      "Changes her hair style every Sunday, always something new",
+      "Leaves a square of hand-dyed fabric on the small ELF shrine at the market entrance each morning",
+      "Hums while sewing — always the same three songs, cycling"
+    ],
+    "breaking_points": [
+      "Having her designs stolen without attribution",
+      "Someone she dressed being harmed while wearing her work — she would feel responsible"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Bronzeline to an Igbo-Nigerian father and a Polish-Igbo mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began selling hand-altered secondhand clothing from a blanket on the Burnished Market ground",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Saved enough to rent a stall; joined the Oxidian Market vendors guild",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First adaptive reactive garment sold — the piece that established her reputation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began embedding ELF-resonant patterns, first without realizing what she was doing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

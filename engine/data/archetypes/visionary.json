@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5997fae8be1e6d050bd3a16",
+  "name": "Visionary",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Sees what could be, not just what is",
+  "behavioral_signature": "Plans for futures others can't imagine",
+  "under_stress": "The vision becomes disconnected from reality",
+  "at_rest": "Dreaming, planning, inspiring",
+  "will_always": [
+    "look to the future"
+  ],
+  "will_never": [
+    "accept the present as permanent"
+  ],
+  "unless": [
+    "the vision requires sacrificing the present"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Innovator",
+      "threshold": 0.8,
+      "context": "forward-thinking"
+    },
+    {
+      "archetype": "Dreamer",
+      "threshold": 0.7,
+      "context": "future-oriented"
+    }
+  ],
+  "opposite_of": [
+    "Traditionalist"
+  ],
+  "tags": [
+    "future",
+    "inspiring"
+  ]
+}

@@ -15,12 +15,14 @@ public class ValidationService
 {
     private readonly WorldGraphService graph;
     private readonly ILlmService llm;
+    private readonly MultiLlmService multiLlm;
     private readonly ILogger<ValidationService> log;
 
-    public ValidationService(WorldGraphService graph, ILlmService llm, ILogger<ValidationService> log)
+    public ValidationService(WorldGraphService graph, ILlmService llm, MultiLlmService multiLlm, ILogger<ValidationService> log)
     {
         this.graph = graph;
         this.llm = llm;
+        this.multiLlm = multiLlm;
         this.log = log;
     }
 
@@ -99,15 +101,19 @@ public class ValidationService
     }
 
     /// <summary>
-    /// Deep validation — uses the LLM to check generated text against graph context.
-    /// Returns contradictions with the exact text in the story, the canon truth, and alternatives.
+    /// Deep validation — fans out to ALL configured LLM providers in parallel.
+    /// Each provider independently checks for canon contradictions. Results are
+    /// merged and deduplicated so different models catch different issues.
     /// </summary>
+    /// <summary>Fired during validation with progress updates (providerName, completedCount, totalCount).</summary>
+    public event Action<string, int, int>? OnValidationProgress;
+
     public async Task<List<CanonIssue>> ValidateDeepAsync(string generatedText, string worldContext, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(generatedText) || string.IsNullOrWhiteSpace(worldContext))
             return [];
 
-        var system = $"""
+        var systemPrompt = $"""
             You are a canon validator for a cyberpunk fiction world. Check the GENERATED TEXT
             against the WORLD CONTEXT (canonical truth). Find contradictions — facts
             that conflict with established canon.
@@ -115,7 +121,10 @@ public class ValidationService
             WORLD CONTEXT (this is TRUE):
             {worldContext}
 
-            For each contradiction found, return a JSON array of objects with:
+            Find the SINGLE MOST IMPORTANT contradiction — the one that most damages
+            canon integrity. Return exactly ONE issue (or empty array if none found).
+
+            Return a JSON array with 0 or 1 objects:
             - "category": "CANON", "PRONOUN", "TIMELINE", or "RELATIONSHIP"
             - "entity": the entity name involved
             - "severity": "hard" or "soft"
@@ -124,12 +133,105 @@ public class ValidationService
             - "canon_truth": what the canon actually says
             - "alternatives": array of 3 rewritten versions of the story_text that fix the contradiction while preserving narrative flow
 
-            If no issues, return empty array [].
-            Return ONLY the JSON array, nothing else.
+            Return ONLY the JSON array ([] if clean, or [single object] if found). Nothing else.
             """;
 
-        var response = await llm.GenerateAsync(system, generatedText, 0.1, 2048, ct: ct);
+        // Fan out to all configured providers in parallel
+        var providers = multiLlm.GetConfiguredProviders();
+        var allIssues = new List<CanonIssue>();
 
+        if (providers.Count > 0)
+        {
+            var total = providers.Count;
+            var completed = 0;
+            log.LogInformation("Validation fanning out to {Count} providers: {Providers}",
+                total, string.Join(", ", providers.Select(p => p.Name)));
+
+            OnValidationProgress?.Invoke($"0/{total} providers", 0, total);
+
+            // Fan out but track individual completions for progress
+            var tasks = providers.Select(async provider =>
+            {
+                try
+                {
+                    OnValidationProgress?.Invoke($"Waiting on {provider.Name}...", completed, total);
+                    var result = await multiLlm.CallProviderAsync(provider.Id, systemPrompt, generatedText, ct);
+                    var issues = ParseValidationResponse(result, provider.Name);
+                    Interlocked.Increment(ref completed);
+                    var status = issues.Count > 0 ? $"found {issues.Count} issue(s)" : "clean";
+                    OnValidationProgress?.Invoke($"{provider.Name}: {status} ({completed}/{total})", completed, total);
+                    return issues;
+                }
+                catch (Exception ex)
+                {
+                    Interlocked.Increment(ref completed);
+                    OnValidationProgress?.Invoke($"{provider.Name}: error ({completed}/{total})", completed, total);
+                    log.LogWarning(ex, "Validation request failed for provider {Provider}", provider.Name);
+                    return new List<CanonIssue>();
+                }
+            });
+
+            var results = await Task.WhenAll(tasks);
+            allIssues.AddRange(results.SelectMany(r => r));
+        }
+        else
+        {
+            // Fallback: use the default LLM
+            OnValidationProgress?.Invoke("Validating with default LLM...", 0, 1);
+            var response = await llm.GenerateAsync(systemPrompt, generatedText, 0.1, 2048, ct: ct);
+            allIssues.AddRange(ParseValidationResponse(response, "default"));
+            OnValidationProgress?.Invoke("Done", 1, 1);
+        }
+
+        // Deduplicate by story_text similarity, take the single best issue
+        var deduplicated = allIssues
+            .GroupBy(i => i.StoryText.Trim().ToLowerInvariant())
+            .Select(g =>
+            {
+                var best = g.OrderByDescending(i => i.Severity).ThenByDescending(i => i.StoryFixes.Count).First();
+                var allAlts = g.SelectMany(i => i.StoryFixes).Distinct().ToList();
+                return best with { StoryFixes = allAlts };
+            })
+            .OrderByDescending(i => i.Severity)
+            .Take(1) // One issue at a time
+            .ToList();
+
+        log.LogInformation("Validation found {Total} issues from {Providers} providers, {Deduped} after dedup",
+            allIssues.Count, providers.Count > 0 ? providers.Count : 1, deduplicated.Count);
+
+        // Generate canon fixes + vote on both directions for each issue
+        if (deduplicated.Count > 0)
+        {
+            for (int i = 0; i < deduplicated.Count; i++)
+            {
+                var issue = deduplicated[i];
+
+                // Generate canon-side fixes (what would canon need to say to match the story?)
+                OnValidationProgress?.Invoke($"Generating canon fixes {i + 1}/{deduplicated.Count}...", i, deduplicated.Count);
+                issue.CanonFixes = await GenerateCanonFixesAsync(issue, ct);
+
+                // Vote on story fixes
+                if (issue.StoryFixes.Count > 0)
+                {
+                    OnValidationProgress?.Invoke($"Voting on story fixes {i + 1}/{deduplicated.Count}...", i, deduplicated.Count);
+                    issue.StoryFixScores = await VoteOnFixesAsync(issue.StoryText, issue.CanonTruth, issue.StoryFixes, "story rewrite", ct);
+                }
+
+                // Vote on canon fixes
+                if (issue.CanonFixes.Count > 0)
+                {
+                    OnValidationProgress?.Invoke($"Voting on canon fixes {i + 1}/{deduplicated.Count}...", i, deduplicated.Count);
+                    issue.CanonFixScores = await VoteOnFixesAsync(issue.StoryText, issue.CanonTruth, issue.CanonFixes, "canon update", ct);
+                }
+            }
+            OnValidationProgress?.Invoke("Voting complete", deduplicated.Count, deduplicated.Count);
+        }
+
+        return deduplicated;
+    }
+
+    private List<CanonIssue> ParseValidationResponse(string response, string providerName)
+    {
         try
         {
             var json = response.Trim();
@@ -144,7 +246,7 @@ public class ValidationService
             {
                 Category = r.Category ?? "CANON",
                 EntityName = r.Entity ?? "",
-                Description = r.Description ?? "",
+                Description = $"[{providerName}] {r.Description ?? ""}",
                 Severity = r.Severity?.ToLowerInvariant() == "hard" ? IssueSeverity.Hard : IssueSeverity.Soft,
                 StoryText = r.StoryText ?? "",
                 CanonTruth = r.CanonTruth ?? "",
@@ -153,7 +255,7 @@ public class ValidationService
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "Validation canon check failed, returning empty results");
+            log.LogWarning(ex, "Validation parse failed for provider {Provider}", providerName);
             return [];
         }
     }
@@ -185,6 +287,136 @@ public class ValidationService
             return System.Text.Json.JsonSerializer.Deserialize<List<string>>(json.Trim()) ?? [];
         }
         catch (Exception ex) { log.LogWarning(ex, "Validation extraction failed"); return []; }
+    }
+
+    /// <summary>
+    /// Generate canon-side fixes — what would the canon entity need to say to match the story?
+    /// </summary>
+    public async Task<List<string>> GenerateCanonFixesAsync(CanonIssue issue, CancellationToken ct = default)
+    {
+        var system = $"""
+            A cyberpunk story says: {issue.StoryText}
+            But canon says: {issue.CanonTruth}
+            Entity involved: {issue.EntityName}
+
+            The author wants to keep the story as-is and update the canon instead.
+            Generate 3 alternative canon updates — how should the entity's canon entry
+            be rewritten so the story text is no longer a contradiction?
+
+            Each should:
+            1. Make the story text canonically correct
+            2. Be internally consistent with the world
+            3. Offer a different approach (minor tweak, expanded lore, creative reinterpretation)
+
+            Return ONLY a JSON array of 3 strings. Nothing else.
+            """;
+
+        var response = await llm.GenerateAsync(system, "Generate canon fixes.", 0.7, 512, ct: ct);
+        try
+        {
+            var json = response.Trim();
+            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
+            if (json.EndsWith("```")) json = json[..^3];
+            return System.Text.Json.JsonSerializer.Deserialize<List<string>>(json.Trim()) ?? [];
+        }
+        catch { return []; }
+    }
+
+    /// <summary>
+    /// Have all configured LLMs vote on a set of fixes. Returns scores 0-100 averaged across voters.
+    /// Returns empty scores if no votes come back (providers erroring/slow).
+    /// </summary>
+    public async Task<List<int>> VoteOnFixesAsync(string storyText, string canonTruth, List<string> fixes, string fixType, CancellationToken ct = default)
+    {
+        if (fixes.Count == 0) return [];
+        var empty = Enumerable.Repeat(0, fixes.Count).ToList();
+
+        var numberedFixes = string.Join("\n", fixes.Select((f, i) => $"  {i + 1}. {f}"));
+
+        var system = $"""
+            You are judging {fixType} options for a canon contradiction in a cyberpunk story.
+
+            STORY TEXT: {storyText}
+            CANON TRUTH: {canonTruth}
+
+            Score each {fixType} from 0 to 100 based on:
+            - Does it resolve the contradiction?
+            - Is it internally consistent with the world?
+            - Does it preserve narrative quality and voice?
+
+            OPTIONS:
+            {numberedFixes}
+
+            Return ONLY a JSON array of integers (scores 0-100), one per option.
+            Example for 3 options: [85, 42, 71]
+            """;
+
+        try
+        {
+            var providers = multiLlm.GetConfiguredProviders();
+            var allVotes = new List<List<int>>();
+
+            if (providers.Count > 0)
+            {
+                // Each provider gets 30s, collect whatever comes back
+                var tasks = providers.Select(async provider =>
+                {
+                    try
+                    {
+                        using var perProviderCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
+                        perProviderCts.CancelAfter(TimeSpan.FromSeconds(30));
+                        var response = await multiLlm.CallProviderAsync(provider.Id, system, "Score the options.", perProviderCts.Token);
+                        return ParseScores(response, fixes.Count);
+                    }
+                    catch { return null; }
+                });
+
+                var results = await Task.WhenAll(tasks);
+                allVotes.AddRange(results.Where(r => r != null)!);
+            }
+            else
+            {
+                using var fallbackCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
+                fallbackCts.CancelAfter(TimeSpan.FromSeconds(30));
+                var response = await llm.GenerateAsync(system, "Score the options.", 0.1, 256, ct: fallbackCts.Token);
+                var scores = ParseScores(response, fixes.Count);
+                if (scores != null) allVotes.Add(scores);
+            }
+
+            if (allVotes.Count == 0)
+            {
+                log.LogWarning("Voting returned no valid scores — skipping");
+                return empty;
+            }
+
+            var averaged = new List<int>();
+            for (int i = 0; i < fixes.Count; i++)
+            {
+                var votesForFix = allVotes.Where(v => i < v.Count).Select(v => v[i]).ToList();
+                averaged.Add(votesForFix.Count > 0 ? (int)votesForFix.Average() : 0);
+            }
+
+            return averaged;
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "Voting failed entirely — returning no scores");
+            return empty;
+        }
+    }
+
+    private static List<int>? ParseScores(string response, int expectedCount)
+    {
+        try
+        {
+            var json = response.Trim();
+            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
+            if (json.EndsWith("```")) json = json[..^3];
+            var scores = System.Text.Json.JsonSerializer.Deserialize<List<int>>(json.Trim());
+            if (scores != null && scores.Count == expectedCount) return scores;
+            return null;
+        }
+        catch { return null; }
     }
 
     private static List<string> GetWrongPronouns(string correctPronouns)
@@ -230,7 +462,20 @@ public record CanonIssue
     public IssueSeverity Severity { get; init; } = IssueSeverity.Soft;
     public string StoryText { get; init; } = "";
     public string CanonTruth { get; init; } = "";
-    public List<string> Alternatives { get; set; } = [];
+
+    /// <summary>Story rewrites that fix the contradiction (sync story → canon). Voted 0-100.</summary>
+    public List<string> StoryFixes { get; set; } = [];
+    public List<int> StoryFixScores { get; set; } = [];
+
+    /// <summary>Canon rewrites that update canon to match the story (sync canon → story). Voted 0-100.</summary>
+    public List<string> CanonFixes { get; set; } = [];
+    public List<int> CanonFixScores { get; set; } = [];
+
+    // Legacy compat
+    [System.Text.Json.Serialization.JsonPropertyName("alternatives")]
+    public List<string> Alternatives { get => StoryFixes; set => StoryFixes = value; }
+    [System.Text.Json.Serialization.JsonPropertyName("scores")]
+    public List<int> Scores { get => StoryFixScores; set => StoryFixScores = value; }
 }
 
 public enum IssueSeverity

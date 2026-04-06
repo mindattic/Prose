@@ -1,0 +1,92 @@
+{
+  "id": "019d6143a9477008aaf1f489b2752890",
+  "type": "place",
+  "name": "The Milwaukee Core",
+  "aliases": [
+    "Downtown Milwaukee",
+    "The Core MKE",
+    "The Grid",
+    "Corporate Milwaukee"
+  ],
+  "description": "Downtown Milwaukee is the junior partner in M88's corporate geography — smaller than Chicago's Spire district, less dominant than the Meridian Core, but essential to the Corridor's administrative architecture in the way that a regional office is essential to a global corporation: not where the decisions are made, but where the decisions are implemented. The skyline is a compressed version of M88's tiered aesthetic — glass towers that would be impressive in any other city but look modest from the maglev window as it arrives from the south, where the Spire's silhouette has been establishing the scale of corporate ambition for the previous ninety minutes.\n\nThe Core's primary function is administrative: the Milwaukee Administrative Zone's offices, Sentinel North's operational headquarters, and the regional divisions of eleven Big 20 corponations maintain their upper GLM operations from downtown towers. The work is mid-tier corporate: project management, logistics coordination, human resources administration, and the vast bureaucratic infrastructure required to maintain corporate sovereignty over a metropolitan area of 4 million people. The employees are Tier 3, overwhelmingly — the middle management class that translates executive vision into operational reality and absorbs the blame when the translation fails.\n\nThe architectural character is pragmatic. Milwaukee's downtown never had Chicago's ambition or budget, which in the sovereignty era turned out to be an advantage: the buildings are functional, efficiently designed, and recently enough constructed that they integrated current infrastructure standards without the expensive retrofitting that Chicago's older towers required. The Sentinel North headquarters — a black glass monolith at the intersection of Wisconsin and Water Streets — is the district's most distinctive structure, its reflective surface designed to be both architecturally striking and functionally opaque. You cannot see into Sentinel North. This is metaphorical, but it's also literal.\n\nThe street level is corporate-service commercial: restaurants where expense accounts are spent, bars where middle managers decompress, retail that serves a population with disposable income and no time to enjoy it. The after-hours population drops to near zero — downtown Milwaukee is a workplace, not a neighborhood, and the residents who do live here are either corporate employees in subsidized tower apartments or the small service-worker population that keeps the restaurants open past 6 PM. The emptiness after business hours gives downtown a different character: quiet, echoing, the surveillance systems audible in the absence of foot traffic. The drones that are background noise during the day become foreground at night, their navigation lights the only movement on streets designed for thousands.",
+  "atmosphere": {
+    "sights": [
+      "Corporate towers against Lake Michigan — glass, steel, and the branded signage of eleven Big 20 regional offices",
+      "The Sentinel North headquarters — a black glass monolith that reflects the city without revealing itself",
+      "The Riverwalk — Milwaukee's commercial promenade, maintained to Core standards, lined with restaurants and corporate retail",
+      "The Milwaukee Administrative Zone offices — a converted historic building that attempts to look governmental in a landscape that has forgotten what government looks like",
+      "Empty streets after hours — the downtown void, surveillance drones circling buildings that were full twelve hours ago"
+    ],
+    "sounds": [
+      "Business hours: the hum of a corporate district — climate systems, foot traffic, the muted sound of 40,000 people working in enclosed spaces",
+      "Lunch hour on the Riverwalk — conversation, restaurant noise, the brief social window when corporate employees remember they're human",
+      "After hours: surveillance drones and climate systems — the mechanical sounds of a district maintaining itself for an absent population",
+      "The Milwaukee River — running through the district, its sound masked during business hours, dominant after dark",
+      "Maglev arrivals — the express from M88's core delivers commuters every twelve minutes, each arrival a pulse of human noise"
+    ],
+    "smells": [
+      "Filtered corporate air — climate-controlled, scented by building management systems, indistinguishable from any other corporate district in the Corridor",
+      "Riverwalk restaurants — the smell of expense-account dining, higher quality than the surrounding districts but calibrated for consistency, not excellence",
+      "The Milwaukee River — detectable at street level near the Riverwalk, a reminder that the river predates and will outlast the buildings around it",
+      "After hours: nothing. The air scrubbers run at full capacity with no people to justify them, producing an atmosphere of clinical absence."
+    ],
+    "feel": "Functional and forgettable. The Milwaukee Core does its job without inspiring affection or resentment. It lacks the Meridian Core's aggressive opulence and the Spire's terrifying ambition. It is, instead, the kind of place where competent people do necessary work and go home to neighborhoods with more character. The Core's greatest danger is not corruption or violence but irrelevance — a regional office that could be relocated without anyone except the restaurants noticing.",
+    "tags": []
+  },
+  "demographics": "Daytime population approximately 40,000, primarily Tier 3 corporate employees. Nighttime residential population approximately 3,000 — corporate-subsidized tenants and service workers. The population is the most tier-homogeneous in Milwaukee: almost entirely Tier 3, with a thin layer of Tier 4 executives and a thin layer of Tier 2 service staff. The uniformity is eerie if you come from anywhere else.",
+  "economy": "Corporate administration and regional management. Eleven Big 20 regional offices. Milwaukee Administrative Zone government operations. Sentinel North operational headquarters. Service economy — restaurants, retail, and professional services catering to the corporate workforce. Estimated district economic output: Φ45 billion annually, almost entirely corporate revenue flowing through to parent companies elsewhere.",
+  "power_structure": "Sentinel North holds the security franchise and operates from its downtown headquarters. The Milwaukee Administrative Zone maintains its offices here but operates with limited authority relative to the corporate presence. Individual corponations govern their sovereign tower spaces. The district's power structure is layered: corporate sovereignty inside the buildings, Sentinel franchise on the streets, Administrative Zone in the gaps between.",
+  "dangers": [
+    "Corporate surveillance — the Core is the most monitored district in Milwaukee, with overlapping surveillance from Sentinel North, individual corponation security systems, and the Administrative Zone's own cameras",
+    "Jurisdictional complexity — each corporate tower operates under its parent company's sovereign charter, creating micro-jurisdictions that change at every building entrance",
+    "After-hours exposure — being in the Core after business hours draws attention from systems designed to notice anomalies in an empty landscape",
+    "Career risk — the Core is where corporate careers are managed, and the wrong encounter at the wrong restaurant can have professional consequences that feel like jurisdictional ones",
+    "The Sentinel North building — proximity to the security franchise's operational headquarters is not recommended for anyone whose activities might interest a security franchise"
+  ],
+  "opportunities": [
+    "Corporate intelligence — eleven Big 20 regional offices in close proximity create information density that rivals the M88 core",
+    "Administrative access — the Milwaukee Administrative Zone's offices process permits, registrations, and tier status modifications, and access to those processes has value",
+    "The Riverwalk social scene — corporate employees talk freely over lunch and drinks, and the conversations have strategic value",
+    "After-hours access — the Core's emptiness at night creates opportunities for people comfortable operating in surveilled but depopulated environments"
+  ],
+  "story_hooks": [
+    "The Sentinel North headquarters has been running unusual power draws — consistent with a facility expansion that doesn't appear on any filed building permit. Whatever they're building inside the black glass, they're building it now.",
+    "A Milwaukee Administrative Zone employee has been granting tier status modifications through an irregular process — modifications that don't match any authorized pathway — and the beneficiaries have no apparent connection to each other",
+    "Three different corponation regional offices have independently increased their security posture in the same week. None of them has issued an explanation. The pattern suggests they're all preparing for the same event."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Loft (east/southeast, across the river)",
+      "Brewer's Spine (north, along the river)",
+      "The East Bank (northeast)",
+      "Menomonee Gulch (southwest, via valley access)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tier 3 corporate workforce — 40,000 daily commuters who define the district's rhythm",
+    "Milwaukee Administrative Zone officials and staff",
+    "Sentinel North personnel — visible and invisible, operational and administrative",
+    "Fixers who operate in the gaps between corporate jurisdictions, brokering deals that require the cover of legitimate business activity"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 43.0389,
+    "lng": -87.9065,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "bar",
+    "night",
+    "drink",
+    "drone",
+    "water",
+    "spire"
+  ]
+}

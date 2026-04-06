@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a6b57b2c8445565e6d319cae",
+  "type": "character",
+  "name": "Rongo Delgado-Opoku",
+  "aliases": [
+    "Havoc",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "High-risk package and data transport — courier",
+  "age": 28,
+  "status": "active",
+  "location": "The Narrows — cramped residential corridors between megastructures",
+  "description": "Rongo Delgado-Opoku is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 28, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Rongo Delgado-Opoku plans to keep it that way. She works as a courier out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Rongo Delgado-Opoku is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.37,
+      "ideal": 0.64,
+      "id": 0.12,
+      "shadow": 0.1,
+      "mask": 0.46,
+      "ghost": 0.23
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "The quiet — silence means something is about to go very wrong",
+      "Being captured alive — death is preferable to corporate interrogation"
+    ],
+    "core_desires": [
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "To protect the people in their district who can't protect themselves",
+      "The perfect run — one job so clean it becomes legend"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Thinks speed can substitute for planning because it's worked so far"
+    ],
+    "secret": "Rongo Delgado-Opoku sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"I don't look inside the package. I don't ask about the package. I deliver the package.\"",
+      "\"Speed is a skill. Knowing when to slow down is wisdom. I sell both.\"",
+      "\"This route has three checkpoints and a kill zone. I'll be there in twenty minutes.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Rongo Delgado-Opoku a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Rongo Delgado-Opoku's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "Rongo Delgado-Opoku is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "As a courier, Rongo Delgado-Opoku embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 5
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 6
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 6
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 5
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.89,
+      "caution": 0.93,
+      "loyalty": 0.41,
+      "greed": 0.4,
+      "empathy": 0.37
+    },
+    "drives": [
+      "survival",
+      "protection",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 3,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "social chameleon — adapts to any environment",
+      "multilingual — speaks 4+ languages fluently"
+    ],
+    "weaknesses": [
+      "emotional volatility under extreme stress",
+      "old injury that flares under specific conditions",
+      "physical limitation from incomplete augmentation"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "courier",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Never discusses active contracts with anyone not directly involved",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Preaches independence but is desperate for approval from people they respect",
+      "Presents as emotionless professional but is deeply affected by collateral damage"
+    ],
+    "habits": [
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    },
+    {
+      "name": "Neural dampener",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Improviser": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

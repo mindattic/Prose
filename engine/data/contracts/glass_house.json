@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a7a271399efe03ace4625178",
+  "codename": "GLASS HOUSE",
+  "type": "contract",
+  "client": "Private citizen (via Compass)",
+  "client_tier": "Tier 1",
+  "category": "infiltration",
+  "description": "A Shelf mother believes her son is being held in a gene clinic doing unlicensed modifications on minors. She needs proof.",
+  "objective": "Infiltrate clinic at 14 Irongate Lane, document evidence of unlicensed geneware on minors.",
+  "location": "The Narrows",
+  "target": "Documentation evidence",
+  "opposition": "2 guards, basic electronic security",
+  "payout": "Φ12,000",
+  "bonuses": [
+    {
+      "type": "ghost",
+      "amount": "Φ5,000",
+      "condition": "Clinic never knows they were infiltrated"
+    }
+  ],
+  "complications": [],
+  "required_capabilities": {
+    "combat": 2,
+    "stealth": 6,
+    "hacking": 4,
+    "social": 3,
+    "medical": 3,
+    "tech": 4,
+    "transport": 1,
+    "demolitions": 0,
+    "surveillance": 8,
+    "linguistics": 0
+  },
+  "crew_size": "1-2",
+  "difficulty": "routine",
+  "time_limit": "72 hours",
+  "status": "open",
+  "outcome": "",
+  "tags": [
+    "infiltration",
+    "routine",
+    "runner",
+    "contract"
+  ]
+}

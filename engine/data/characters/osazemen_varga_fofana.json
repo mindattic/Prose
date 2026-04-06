@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a68877d3b5dc715ff1bbb39d",
+  "type": "character",
+  "name": "Osazemen Varga-Fofana",
+  "aliases": [
+    "Osa",
+    "the librarian"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Gene-sequence archivist and bioethics researcher managing the University Spine's genetic heritage repository",
+  "age": 63,
+  "status": "active",
+  "location": "University Spine — the Sequence Conservatory, a climate-controlled archive building at the edge of the Grand Corridor",
+  "description": "Osazemen is wiry and deliberate, with the careful economy of movement that comes from decades of working with materials that cannot be replaced if dropped. Their Edo-Hungarian-Guinean heritage shows in their high cheekbones and the particular warm-dark tone of their skin, which they take careful care of in ways they don't advertise. They have cat ears — deep brown, slightly oversized, geneware — that they got at forty-five after a lifetime of thinking they weren't the sort of person who got geneware, and they are still quietly delighted by them. Their hair is silver and kept very short. They dress well, in old-fashioned tailored things that cost money and last decades, which is their idea of sustainability.\n\nThey are the conscience of any room they enter, not through force but through the quiet accumulation of inconvenient questions asked in calm voices. They have managed the gene-sequence heritage archive for twenty-two years and have, in that time, blocked sixteen attempts by corponations to access, purchase, or reclassify its contents. They are not adversarial by nature — they believe in dialogue and due process — but they are absolutely implacable once they have decided where a line is. Students find them intimidating at first and then deeply reassuring: here is someone who has thought carefully about what they owe the future.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.35,
+      "ideal": 0.85,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.45,
+      "ghost": 0.25
+    },
+    "core_fears": [
+      "That the archive will be privatized after they retire, all the protections they built dismantled by someone who doesn't understand what they were for",
+      "That one of the access-denial decisions they made was wrong — that somewhere a person needed the genetic information to save their life and was refused"
+    ],
+    "core_desires": [
+      "To establish a legal framework for genetic heritage data that will survive them by decades",
+      "To see one of their graduate students take over the archive and do it better than they did"
+    ],
+    "coping_mechanisms": [
+      "Structured routine as ethical practice — doing the right small things correctly every day as preparation for doing the right hard things correctly when necessary",
+      "The pseudonymous commentary column as a space to be uncertain in ways they cannot be publicly"
+    ],
+    "blind_spots": [
+      "Occasionally too principled to be strategically flexible; has lost winnable fights by refusing to compromise on procedure when a small concession would have preserved the larger good"
+    ],
+    "secret": "They have a private arrangement with one specific E.L.F. that has taken up residence in the archive's climate control systems. They have never formally documented this E.L.F.'s presence — doing so would trigger a University review that might result in its removal — and in exchange for their silence, the E.L.F. has on three occasions provided them with advance warning of unauthorized access attempts. Osazemen considers this either the best or worst thing they have ever done professionally, depending on the day."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and precise without being cold; uses complete sentences in casual conversation; the occasional dry observation delivered without affect, which lands harder for the deadpan",
+    "cadence": "Even and unhurried; never raises their voice; pauses at the end of a statement and lets the other person decide what to do with it",
+    "verbal_tics": [
+      "'That's a question worth taking seriously' as a way to slow down a conversation that's moving too fast",
+      "Cat ears move independently of their composure — flatten when they're genuinely worried, swivel forward when interested — and they have never quite learned to control this"
+    ],
+    "example_lines": [
+      "'The archive does not belong to this institution. This institution is its current steward. The distinction is not semantic.'",
+      "'You're asking me what I would do if a life depended on access to restricted material. I've been asked that before. The question is always more interesting than the answer.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A woman has appeared claiming that her grandmother's genetic heritage sequence — stored in the archive — was used without consent to develop a Helix Biosystems product worth hundreds of millions of Quanta, and she wants Osazemen's testimony to support a legal case Helix is trying very hard to prevent",
+    "The archive's climate control has begun producing an anomalous thermal pattern that Osazemen suspects is their resident E.L.F. attempting to communicate something urgent — but the message is in a format they cannot parse alone"
+  ],
+  "narrative_function": "Moral anchor and institutional gatekeeper; holds genetic heritage data that corponations would pay enormously for; can provide background on genetic lineage questions, corporate bioresearch history, or the ethics of specific biotech; a figure who must be convinced rather than bypassed",
+  "augmentations": "Geneware cat ears (deep brown, slightly oversized, mobile); retinal micro-resolution scanner for reading genetic sequence prints; bone-density reinforcement in spine (medical, occupational — for the decades of archive posture)",
+  "daily_life": "They arrive before anyone else, check the climate controls, and walk the archive stacks before sitting at their desk — a ritual they describe as 'taking attendance.' They supervise graduate students in the afternoon, attend ethics board meetings regularly, and spend evenings preparing lectures or writing the bioethics commentary columns they publish under a pseudonym.",
+  "affiliation": "University Spine — Sequence Conservatory; member of the International Bioheritage Ethics Council; tenured full professor in the Department of Genetic History",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "institutional-guardian",
+      "bioethicist",
+      "implacable",
+      "quietly-contradicted",
+      "elder-authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Every access request, regardless of urgency claimed, must go through the formal review process — no exceptions have ever been made and none will be",
+      "When in doubt about an ethical question, writes it out fully before deciding; does not make important decisions in the moment"
+    ],
+    "escalation_ladder": [
+      "States their position clearly and once",
+      "Documents the disagreement formally and in detail",
+      "Activates the full weight of institutional and legal process, then steps aside and lets it run"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous, attentive, and slightly formal; assesses whether they are present to make a request or to learn something, and calibrates accordingly",
+      "friends": "Reveals dry humor and genuine warmth; remembers everything about the people they care about; gives extremely specific and well-considered gifts"
+    },
+    "stress_responses": {
+      "low": "More precise in language, less conversational",
+      "medium": "Withdraws to paperwork and formal process as a way of converting anxiety into structure",
+      "high": "Becomes entirely still and completely unreadable; this is when they are most dangerous in an institutional conflict and most unreachable personally"
+    },
+    "contradictions": [
+      "Believes absolutely in transparency and due process, and has arranged a private undocumented compact with a non-human intelligence that violates every principle of the institutional oversight they enforce for everyone else"
+    ],
+    "habits": [
+      "Walks the archive stacks every morning before opening",
+      "Publishes bioethics commentary under the pseudonym 'Archivist-at-Large' twice per month; the pseudonym is moderately penetrable and they know it"
+    ],
+    "breaking_points": [
+      "Discovering that a corponation has already obtained archive material through means that bypassed all the protections they built"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "2",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Perpetual Student": 0.9,
+    "Quick Study": 0.9,
+    "Seeker": 0.9,
+    "Dreamer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Meridian Core; third-generation Meridian, family background in medical records administration",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Appointed to Sequence Conservatory; youngest archivist in University Spine history at the time",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First major corponation access-block: refused Sterling-Nakamura request for agricultural heritage sequences; case became a landmark",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began private compact with archive E.L.F.; has never documented it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began pseudonymous commentary column 'Archivist-at-Large'; pseudonym known to perhaps twelve people",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

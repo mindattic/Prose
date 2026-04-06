@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5607d63b45383bcb949a509",
+  "name": "Bleeding Heart",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Feels every injustice personally",
+  "behavioral_signature": "Driven by compassion to the point of self-harm",
+  "under_stress": "Overwhelmed by the world's suffering",
+  "at_rest": "Volunteers, donates, cries at the news",
+  "will_always": [
+    "respond to suffering"
+  ],
+  "will_never": [
+    "ignore pain they could address"
+  ],
+  "unless": [
+    "their compassion is being exploited"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Empath",
+      "threshold": 0.8,
+      "context": "emotional sensitivity"
+    },
+    {
+      "archetype": "Idealist",
+      "threshold": 0.75,
+      "context": "moral optimism"
+    }
+  ],
+  "opposite_of": [
+    "Cold Calculator"
+  ],
+  "tags": [
+    "compassionate",
+    "vulnerable"
+  ]
+}

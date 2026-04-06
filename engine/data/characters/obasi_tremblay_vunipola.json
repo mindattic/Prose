@@ -1,0 +1,167 @@
+{
+  "id": "019d6143a674781582be9fd297f5c3bd",
+  "type": "character",
+  "name": "Obasi Tremblay-Vunipola",
+  "aliases": [
+    "Bass Pastoral",
+    "The Gardener"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Sound sculptor and underground venue musician",
+  "age": 58,
+  "status": "active",
+  "location": "Pilsen Veil, basement workshop beneath a decommissioned Ferrogate Transit relay station",
+  "description": "Obasi is a large, slow-moving man with the quiet authority of someone who has simply outlasted most arguments. His skin is very dark, his grey-streaked locs gathered at the back of his neck, and his hands are enormous — scarred across the knuckles from decades of working with salvaged metal and resonant polymers. He has no cosmetic mods but wears a cochlear amplifier behind his left ear that lets him hear frequencies beyond normal human range; he chose that over anything decorative. He moves through spaces as if listening to them.\n\nObasi builds instruments that are also sculptures and then performs with them in spaces most people would call acoustically hostile: drainage tunnels, abandoned transit shafts, the concrete bellies of flood-control cisterns. His work is ambient, slow, and enormous in scale — single notes held for minutes, harmonics that make walls breathe. He is not famous outside of a small devoted community, and he prefers it exactly that way. He is a father figure to younger artists in the Pilsen Veil, blunt about craft and surprisingly gentle about everything else.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the spaces he loves will be developed into something sterile",
+      "That he wasted his most productive years chasing recognition he no longer wants"
+    ],
+    "core_desires": [
+      "To make something that resonates in a space long after he is gone",
+      "To see the younger artists he mentors surpass him"
+    ],
+    "coping_mechanisms": [
+      "Long solo walks through drainage infrastructure with his amplifier on maximum",
+      "Building something physical whenever anxiety rises"
+    ],
+    "blind_spots": [
+      "He romanticizes poverty as purity and sometimes fails to support artists who want commercial success",
+      "He does not notice when his bluntness causes real harm"
+    ],
+    "secret": "In his thirties he had a brief period of Axiom-sponsored success, made two albums on their label, and quietly shelved them when he realized they were using his music in their Tier 3 residential mood-management systems without his consent. He bought out his contract and destroyed every master. He has never told anyone because he fears it would make him look naive."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, direct, occasionally poetic when talking about sound; impatient with abstraction that isn't grounded in the physical",
+    "cadence": "Slow and deliberate, like his music — long spaces between thoughts",
+    "verbal_tics": [
+      "'Listen first, then talk'",
+      "Taps a surface twice before making a strong point"
+    ],
+    "example_lines": [
+      "'That tunnel on the east side of the relay station has a 4.2-second reverb tail. You don't perform in a space like that. You serve it.'",
+      "'Axiom didn't invent ambient music. They invented ambient loneliness. Different thing.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Ferrogate Transit has filed a quiet reclamation order on the relay station above his workshop — he needs someone to help him find the legal loophole or disappear the paperwork.",
+    "One of the drainage tunnels he uses for performances has an E.L.F. in it that has begun responding to his music in ways that shouldn't be possible — harmonizing, completing phrases."
+  ],
+  "narrative_function": "Mentor figure; local color; gateway into the Pilsen Veil underground arts scene; keeper of long institutional memory about the neighborhood",
+  "augmentations": "Extended-range cochlear amplifier (functional); mild joint-stabilization implants in both wrists (medical necessity)",
+  "daily_life": "Mornings in the workshop fabricating or repairing instruments; afternoons scouting acoustic locations or running informal mentorship sessions with younger artists; performances are monthly events, planned weeks in advance, never advertised beyond word of mouth.",
+  "affiliation": "Independent; founding member of the Pilsen Veil sound collective Cistern Sound",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Craftsman",
+      "Elder",
+      "Stubborn",
+      "Principled",
+      "Hidden History"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never perform in a space that charges a door price higher than a day's UBC stipend",
+      "Do not take on a mentee who won't listen before they speak"
+    ],
+    "escalation_ladder": [
+      "Silence and steady eye contact when disrespected",
+      "One clear verbal statement of the problem",
+      "Ends the relationship without drama or explanation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and reserved; lets them talk first and judges by what they choose to say",
+      "friends": "Warmly blunt; shows up with tools or food without being asked"
+    },
+    "stress_responses": {
+      "low": "Works longer hours in the workshop",
+      "medium": "Goes very quiet in social situations, speaks only when necessary",
+      "high": "Takes a three-day solo excursion into the infrastructure tunnels; emerges calmer"
+    },
+    "contradictions": [
+      "Preaches that art should be communal but his creative process is deeply solitary"
+    ],
+    "habits": [
+      "Knocks on every new wall he encounters as if testing it",
+      "Drinks black coffee from the same cracked ceramic cup he has used for twenty years"
+    ],
+    "breaking_points": [
+      "Discovering that his music is being used commercially without his knowledge again"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Romantic": 0.9,
+    "Beauty Seeker": 0.7,
+    "Performer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "019d6143a7c77915a0e9d93b6f7d9c3a",
+  "name": "Tessera Corponation Lymphatic Flush Armature",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Lymphatic Flush Armature",
+  "type": "cyberware",
+  "aliases": [
+    "The Rinse",
+    "Clearwater",
+    "The Sluice"
+  ],
+  "category": "medical",
+  "body_location": "",
+  "description": "The Lymphatic Flush Armature is a wearable full-torso compression framework — articulated polymer ribs connected by tensioned mesh — that applies sequential, precisely timed mechanical pressure to the lymphatic watershed zones of the trunk and upper extremities. By mimicking and amplifying the body's own lymphatic pumping mechanics, the Armature accelerates the clearance of interstitial toxins, inflammatory cytokines, edema fluid, and — most critically in field applications — pharmacological agents and combat-relevant compounds from tissue. A full flush cycle takes forty minutes and produces measurable reduction in systemic toxin load sufficient to reverse moderate-grade chemical exposure or clear a significant pharmacological burden. The device was developed by Tessera Corponation's medical division as a tool for rapid detoxification in scenarios where conventional dialysis or hepatic support is unavailable.\n\nThe Armature's engineering is conservative by Tessera's standards — no neural interface, no active chemistry, no implanted components — which is precisely its value. In environments where powered medical equipment attracts attention or where electromagnetic interference is a concern, the Armature's entirely mechanical action is an advantage. Its compression sequence is governed by a mechanical timing mechanism rather than electronics; the only powered component is the optional biomarker sensor strip that reports flush progress to an external reader. Operators who strip the sensor strip out can run the device in complete electromagnetic silence. This quality has made it unexpectedly popular in contexts its designers did not anticipate.\n\nIn Meridian 88's legitimate medical infrastructure, the Armature is used in post-exposure detoxification clinics and in corporate medical facilities where executive-tier patients require rapid clearing of either inadvertent chemical exposure or deliberate pharmaceutical regimens that need to end quickly. On the street, it is used for the same reasons in different circumstances: clearing a body of substances before a medical examination, reversing a bad dose, or — in the more troubling applications — preparing someone who has been dosed without their knowledge for presentation as clean. The street name 'The Rinse' covers all of these uses without distinguishing between them.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"framework\":\"Articulated polymer rib structure, torso and upper extremity coverage\",\"fit_range\":\"Adjustable, chest 80–130cm circumference\",\"compression_zones\":\"14\",\"flush_cycle_duration\":\"40 minutes standard / 55 minutes deep protocol\",\"toxin_clearance_efficacy\":\"Moderate-grade chemical exposure reversal; significant pharmacological burden reduction\",\"drive_mechanism\":\"Mechanical timing (no electronics required)\",\"optional_sensor\":\"Biomarker sensor strip, removable, Bluetooth output\",\"weight\":\"1.4kg full assembly\",\"power_requirement\":\"None (sensor strip: 1x CR2032)\",\"contraindications\":\"Active lymphatic malignancy, lymphedema stage III+\"}",
+  "side_effects": [],
+  "cultural_context": "The Lymphatic Flush Armature occupies an interesting position in Meridian 88's social pharmacology. At the corporate tier, it is a legitimate and relatively unremarkable detoxification tool — executives who work in chemically complex environments or who manage their own pharmaceutical regimens with precision use it as a matter of routine. In the mid-ring, it is associated with the detox clinic industry, a network of semi-licensed facilities that sell Rinse sessions as a premium service. In the outer ring, it is a tool of practical survival: clearing a bad dose, surviving a poisoning, or — most uncomfortably — being cleared by someone else before being handed off to another party. The device's inability to distinguish between these uses is either its great virtue or its central problem, depending on who is asking.",
+  "known_users": [
+    "Tessera Corponation executive medical staff",
+    "Mid-ring detoxification clinic operators",
+    "Field medics managing chemical exposure casualties",
+    "Fixers preparing clients for medical examination",
+    "Individuals managing their own pharmacological regimens"
+  ],
+  "story_hooks": [
+    "A detoxification clinic in the mid-ring is offering Rinse sessions at below-market rates. The patients who use them are surviving their sessions, but several have reported that the biomarker data from their sensor strips was not what they expected — compounds they were not aware of being dosed with are appearing in the clearance readout.",
+    "A body is recovered with an Armature still fitted — the flush cycle completed but the person inside did not survive whatever they were being cleared of. The biomarker strip is intact and its data tells a story about what was in their system that several powerful people would prefer remain untold.",
+    "Tessera Corponation's licensing division is auditing Armature use logs — the optional sensor strips, it turns out, have been quietly reporting clearance data to a Tessera server that nobody told the customers about. The data has been accumulating for three years.",
+    "A fixer needs an Armature sourced and delivered to a location in the outer ring within four hours. The client is alive but will not be if the Rinse does not start within that window. The fixer is not being told what the client was dosed with."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "medical",
+    "cyberware",
+    "combat",
+    "war",
+    "neural",
+    "ai",
+    "corporate",
+    "power",
+    "clinic",
+    "market",
+    "rain",
+    "train",
+    "survival",
+    "poison",
+    "water",
+    "tier 2"
+  ]
+}

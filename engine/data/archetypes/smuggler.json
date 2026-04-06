@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59371e783e734ba38026d33",
+  "name": "Smuggler",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Moves goods across borders that don't want them crossed",
+  "behavioral_signature": "Knows routes, hides, bribes, and timing",
+  "under_stress": "Takes riskier routes",
+  "at_rest": "Mapping routes, building contacts",
+  "will_always": [
+    "move the goods"
+  ],
+  "will_never": [
+    "get caught"
+  ],
+  "unless": [
+    "the cargo is people who don't want to be moved"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Wheelman",
+      "threshold": 0.65,
+      "context": "transport"
+    },
+    {
+      "archetype": "Hustler",
+      "threshold": 0.6,
+      "context": "working the system"
+    }
+  ],
+  "opposite_of": [
+    "Lookout"
+  ],
+  "tags": [
+    "resourceful",
+    "mobile"
+  ]
+}

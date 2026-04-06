@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a9e37db299b594a068120253",
+  "name": "Rigel-VS",
+  "brand_name": "Rigel",
+  "product_name": "Rigel-VS",
+  "type": "substrate",
+  "aliases": [
+    "Rigel",
+    "locksoft",
+    "variable-set"
+  ],
+  "category": "smart_material",
+  "description": "A Tessera Materials variable-stiffness composite using a magnetorheological elastomer core sandwiched between carbon-fiber skins, capable of transitioning from pliable rubber-like flexibility to near-rigid structural hardness in under 80 milliseconds when a magnetic field is applied via embedded coil networks. Rigel-VS panels and sheets can be locally stiffened in zones, allowing complex morphing behaviors — a flat sheet that selectively hardens into a structural brace, or a garment that locks rigid around an impact site. Field collapse returns it to full flexibility instantly.",
+  "properties": [
+    "variable_stiffness",
+    "fast_response",
+    "magnetorheological",
+    "impact_activated_capable",
+    "durable",
+    "moderate_weight",
+    "requires_power_for_rigid_state"
+  ],
+  "developers": [
+    "Tessera Materials",
+    "Apex Nanofabrication"
+  ],
+  "applications": [
+    "adaptive body armor",
+    "reconfigurable splints and braces",
+    "morphing vehicle panels",
+    "soft robotics joints",
+    "deployable shields"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 1,100 per m²",
+  "story_hooks": [
+    "A Rigel-VS garment's embedded coils have been sabotaged — in a fight, the armor will lock rigid at the wrong moment, trapping the wearer mid-movement.",
+    "Military-grade Rigel-VS panels are showing up in Shelf gang armor — someone is running a serious supply operation through official channels.",
+    "A character needs to pass a security scan: their Rigel-VS armor can go fully flexible and disguise itself as civilian clothing, but only if the power cell holds."
+  ],
+  "tags": [
+    "smartmaterial",
+    "substrate",
+    "gang",
+    "robot",
+    "elf",
+    "power",
+    "vehicle",
+    "clothing",
+    "armor",
+    "shelf",
+    "tier 3",
+    "tier 4"
+  ]
+}

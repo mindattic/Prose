@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a5ed7d7d9dc1d4a56b40e1fd",
+  "type": "character",
+  "name": "Deniz Malm-Amoah",
+  "aliases": [
+    "Razor",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "High-speed vehicle operations specialist — wheelman",
+  "age": 55,
+  "status": "active",
+  "location": "The Canopy — elevated walkway district above Geartown",
+  "description": "Deniz Malm-Amoah are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 55, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a wheelman out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nDeniz Malm-Amoah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.64,
+      "ideal": 0.87,
+      "id": 0.73,
+      "shadow": 0.64,
+      "mask": 0.16,
+      "ghost": 0.13
+    },
+    "core_fears": [
+      "That their reputation is built on luck, not skill, and the luck is finite",
+      "That the work they do makes the city worse, not better",
+      "Being replaced — younger, faster, cheaper runners coming up behind them"
+    ],
+    "core_desires": [
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Freedom from augmentation debt — the interest compounds like a tumor"
+    ],
+    "coping_mechanisms": [
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
+      "Maintains weapons obsessively — cleaning guns is meditation"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage",
+      "Trusts technology more than people — machines don't betray"
+    ],
+    "secret": "Deniz Malm-Amoah witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Uses old pre-collapse slang that nobody else remembers",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"Get in, sit down, hold on. Questions can wait until we're not being shot at.\"",
+      "\"This vehicle has been modified for speed, armor, and my personal comfort. Two of those help you.\"",
+      "\"I know every street in this district the way you know your own face.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The fixer who handles Deniz Malm-Amoah's contracts goes silent — dead, disappeared, or turned",
+    "A dead drop Deniz Malm-Amoah maintains is found and cleaned out — whoever did it now has leverage",
+    "Deniz Malm-Amoah intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "Deniz Malm-Amoah is a pressure point — the kind of character whose choices ripple outward. When they make a decision, other people's lives change. That weight is the engine of their stories.",
+  "augmentations": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster. Internal drug synthesizer — produces combat stims and medical compounds on demand",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 9
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 8
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 6
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.66,
+      "caution": 0.27,
+      "loyalty": 0.51,
+      "greed": 0.37,
+      "empathy": 0.43
+    },
+    "drives": [
+      "power",
+      "freedom",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 6,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "technical expertise with augmentation systems",
+      "intimidating physical presence",
+      "mechanical aptitude — can repair or modify almost anything"
+    ],
+    "weaknesses": [
+      "poor impulse control in specific triggers",
+      "difficulty with authority figures",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "wheelman",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never discusses active contracts with anyone not directly involved",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Presents as emotionless professional but is deeply affected by collateral damage"
+    ],
+    "habits": [
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
+    ],
+    "breaking_points": [
+      "Being publicly exposed — name, face, address, all of it blown",
+      "A child being put in danger as leverage against them"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Synthetic blood with oxygen-carrying nanites",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+      "replaces": ""
+    },
+    {
+      "name": "Internal drug synthesizer",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

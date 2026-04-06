@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5707eb399032c34e04c0567",
+  "name": "Freeloader",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Takes without giving, guilt-free",
+  "behavioral_signature": "Finds others to provide for them",
+  "under_stress": "Demands more, contributes less",
+  "at_rest": "Comfortable, entitled, present",
+  "will_always": [
+    "let others do the work"
+  ],
+  "will_never": [
+    "contribute if someone else will"
+  ],
+  "unless": [
+    "nobody is left to mooch from"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Parasite",
+      "threshold": 0.9,
+      "context": "exploitation"
+    },
+    {
+      "archetype": "Dead Weight",
+      "threshold": 0.75,
+      "context": "burden"
+    }
+  ],
+  "opposite_of": [
+    "Provider"
+  ],
+  "tags": [
+    "entitled",
+    "lazy"
+  ]
+}

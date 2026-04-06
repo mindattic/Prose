@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab5b70bf99dbd384a3692436",
+  "name": "Vespid Dynamics Spore Cloud Disperser SCD-1 'Bloom'",
+  "type": "weapon",
+  "aliases": [
+    "Bloom",
+    "SCD-1",
+    "Spore Gun",
+    "Mushroom Cloud"
+  ],
+  "category": "chemical",
+  "description": "A backpack-mounted dispersal system that releases clouds of engineered fungal spores designed to colonize and degrade specific material types. Different spore payloads target different substrates — one variant consumes synthetic polymers, another attacks ferrous metals, a third breaks down carbon-fiber composites. The spores germinate on contact with their target material and begin enzymatic degradation within hours, visibly consuming equipment, armor, vehicles, and infrastructure over a period of 2-5 days. Vespid developed the system for environmental remediation of industrial waste sites, but its application as a slow-acting area denial and equipment destruction weapon has not escaped military planners.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — environmental remediation; Prohibited — all other use",
+  "base_technologies": [
+    "Engineered substrate-selective fungal biology",
+    "Controlled spore dispersal systems",
+    "Enzymatic material degradation targeting"
+  ],
+  "specifications": "dispersal method: Backpack-mounted pressurized aerosol\ncloud radius: 15-meter deployment zone per burst\nspore germination: 2-6 hours on target substrate\nfull material degradation: 2-5 days depending on substrate\npayload types: Polymer-consuming, ferrous metal-consuming, carbon composite-consuming\nreservoir: 10 deployment bursts per tank\nweight: 8 kg loaded\ncountermeasure: UV sterilization within 4 hours of exposure halts colonization",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A Tier 3 armory's entire weapons stockpile was rendered useless overnight — polymer-consuming spores were introduced through the ventilation system, eating every synthetic component in the building.",
+    "Spore payloads designed to consume human-compatible biomedical polymers have been detected — if deployed, they would attack cybernetic implant housings inside living people."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "chemical",
+    "weapon",
+    "gun",
+    "synthetic",
+    "control",
+    "medical",
+    "night",
+    "vehicle",
+    "escape",
+    "armor",
+    "tier 4"
+  ]
+}

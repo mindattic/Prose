@@ -1,0 +1,70 @@
+{
+  "id": "019d6143a86b7140b5adfc6332371beb",
+  "name": "Ringo Corponation Tandem Fold Microvan",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Tandem Fold Microvan",
+  "type": "equipment",
+  "aliases": [
+    "The Ringo Box",
+    "Fold Van",
+    "Accordion"
+  ],
+  "category": "vehicle",
+  "description": "The Tandem Fold Microvan is Ringo Corponation's answer to Meridian 88's chronic spatial scarcity — a compact urban transport vehicle built around a collapsible chassis system that allows the vehicle to compress its width and length by approximately 40% when parked or navigating narrow corridors. The compression mechanism, called the Tandem Fold System, uses a series of interlocking structural ribs and pneumatic sleeve joints to physically reconfigure the vehicle's profile without compromising the passenger or cargo compartment integrity. In its collapsed state, the Microvan occupies roughly the footprint of a large motorcycle.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Tandem Fold Collapsible Chassis",
+    "Pneumatic Sleeve Joint System",
+    "Split-Axle Dual Electric Drive",
+    "Pivot-Turn Steering Geometry",
+    "Structural Rib Compression Framework"
+  ],
+  "specifications": {
+    "length_standard": "4.1 meters",
+    "length_collapsed": "2.5 meters",
+    "width_standard": "1.8 meters",
+    "width_collapsed": "1.1 meters",
+    "passenger_capacity": "4",
+    "cargo_capacity": "600 kg (seats folded)",
+    "top_speed": "130 km/h",
+    "range": "310 km (single charge)",
+    "power_source": "Split-axle lithium polymer battery"
+  },
+  "tactical_use": "The Microvan's ubiquity is its greatest tactical asset — it blends seamlessly into urban traffic and draws no attention from enforcement or corporate security. Operatives use it as a surveillance vehicle, a mobile staging platform, and a getaway vehicle that can squeeze through alley junctions that would stop a conventional car. The cargo configuration has been used to transport everything from medical supplies to bound prisoners. Its collapsible profile also makes it uniquely suited to rooftop transport, stacked parking facilities, and the compressed transit tunnels that connect certain mid-district blocks.",
+  "cultural_context": "The Tandem Fold Microvan is the everyman vehicle of Meridian 88 — seen everywhere from corporate campus lots to outer-district street markets. It carries no prestige and considerable practicality, which has made it quietly beloved by working residents and quietly contemptuous to the city's upper tiers. Some outer-district communities have developed a culture of extensively modifying Fold Vans into rolling homes, medical clinics, and workshops, given their spatial flexibility. The vehicle appears in dozens of Vantablack Media productions as shorthand for ordinary, struggling urban life.",
+  "known_users": [
+    "Small business operators and delivery workers",
+    "Mid-tier corporate administrative staff",
+    "Outer-district community organizers",
+    "Undercover surveillance operatives",
+    "Freelance fixers needing inconspicuous transport"
+  ],
+  "story_hooks": [
+    "A Ringo Corponation delivery fleet of Fold Vans has been rerouted by a firmware update — every van in the district is now converging on the same address, and nobody at Ringo will admit to pushing the update.",
+    "A crew's reliable Microvan has been fitted with a hidden compartment by a previous owner — and that compartment contains something the previous owner clearly died trying to hide.",
+    "An outer-district community has converted twelve Fold Vans into a mobile neighborhood — a rolling settlement that uses the vans' collapse function to pack into defensible configurations at night — and someone with real estate interests wants them gone.",
+    "A seemingly ordinary Fold Courier delivery van is running a route that doesn't correspond to any registered business — but it makes the same stops, at the same times, every single day."
+  ],
+  "tags": [
+    "vehicle",
+    "equipment",
+    "war",
+    "love",
+    "ai",
+    "corporate",
+    "surveillance",
+    "medical",
+    "clinic",
+    "tunnel",
+    "rooftop",
+    "alley",
+    "market",
+    "rain",
+    "night",
+    "motorcycle",
+    "train",
+    "tier 1"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa6c7221aa729f0dcd02b862",
+  "name": "Patchwork Scooter",
+  "type": "transportation",
+  "aliases": [
+    "Buzzer",
+    "Wasp",
+    "Zip"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Various (mass-produced knockoffs)",
+  "description": "The cheapest motorized personal vehicle that still functions as advertised. A small electric scooter with a step-through frame, manufactured by a dozen different companies that all copy the same basic design. They're everywhere in Tier 1-2 — parked in clusters, locked to railings, abandoned when the battery dies. The name comes from the repair culture: every scooter is a patchwork of replacement parts from different manufacturers in different colors. A scooter that's all one color is either new or fictional.",
+  "propulsion": "Electric hub motor, swappable battery",
+  "speed": "25 km/h",
+  "capacity": "1 rider + small cargo",
+  "range": "20 km (new battery), 8 km (typical used battery)",
+  "tier_availability": "Tier 1-2",
+  "cost": "Φ80 new, Φ20-40 used, batteries Φ10 each",
+  "autonomy": "Manual only",
+  "armament": "None",
+  "common_usage": "Short-distance commuting, errands, the default vehicle of the urban poor.",
+  "story_hooks": [
+    "A specific model of scooter battery is exploding — the knockoff manufacturer used unstable chemistry and thousands are in circulation",
+    "Scooter chop shops in The Shelf operate as a front for a communications network — messages are passed inside battery housings"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "ai",
+    "elf",
+    "vehicle",
+    "shelf",
+    "tier 1",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "019d6143aa3e7cf4a840be5dcabc4814",
+  "name": "Helix Biosystems CRISPR-Omega Gene Editing Suite",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems CRISPR-Omega Gene Editing Suite",
+  "type": "technology",
+  "aliases": [
+    "CRISPR-Omega",
+    "Gene Writer",
+    "Helix Editor",
+    "DNA Forge"
+  ],
+  "subcategory": "biotechnology",
+  "description": "The latest generation of targeted gene editing technology, capable of making precise modifications to living human cells in vivo — without extracting the cells first. CRISPR-Omega uses engineered viral delivery vehicles that target specific cell types and organs, carrying gene editing payloads that activate only in the intended tissue. A single injection can modify liver function, enhance muscle fiber composition, alter immune response patterns, or correct genetic defects across the affected organ within weeks. The technology enables genetic modification of living adults, not just embryos — rewriting the code of a person who is already built.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "HELIX BIOSYSTEMS",
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "In vivo targeted gene editing",
+    "Tissue-specific viral delivery vehicles",
+    "Conditional gene activation payloads"
+  ],
+  "enables": [
+    "Adult genetic modification without surgery",
+    "Organ-specific genetic enhancement",
+    "Genetic disease correction in living patients",
+    "Custom biological trait expression"
+  ],
+  "social_impact": "CRISPR-Omega has blurred the line between medical treatment and human enhancement in ways that existing regulatory frameworks cannot handle. Correcting a genetic heart defect is medicine; enhancing a healthy heart to operate at 150% efficiency is enhancement — but the technology is identical. A black market for unauthorized gene modifications has emerged, offering everything from cosmetic changes to cognitive enhancement packages, with quality ranging from legitimate clinical protocols to dangerously unstable experimental edits performed in apartment bathrooms.",
+  "story_hooks": [
+    "A CRISPR-Omega modification intended to enhance cognitive function has had an unexpected cascading effect — the patient's brain is physically restructuring itself in ways that the gene edit did not program.",
+    "An unauthorized CRISPR-Omega clinic has been editing clients' immune systems to resist a specific pathogen that has not been publicly identified yet — someone knows about a threat before it has materialized."
+  ],
+  "tags": [
+    "biotechnology",
+    "technology",
+    "genetic",
+    "ai",
+    "elf",
+    "medical",
+    "surgery",
+    "clinic",
+    "disease",
+    "market",
+    "rain",
+    "vehicle",
+    "tier 3"
+  ]
+}

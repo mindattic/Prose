@@ -1,0 +1,275 @@
+{
+  "id": "019d6143a63c7bb3907156b3874391f8",
+  "type": "character",
+  "name": "Kadiatou Eriksson-Diallo",
+  "aliases": [
+    "Gyro",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Network intrusion and digital warfare specialist — netrunner",
+  "age": 33,
+  "status": "active",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "description": "Kadiatou Eriksson-Diallo is lean and angular, all sharp edges and visible tension. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a netrunner out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nKadiatou Eriksson-Diallo has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.57,
+      "ideal": 0.85,
+      "id": 0.43,
+      "shadow": 0.66,
+      "mask": 0.54,
+      "ghost": 0.76
+    },
+    "core_fears": [
+      "Their past catching up — debts, enemies, broken promises",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being replaced — younger, faster, cheaper runners coming up behind them"
+    ],
+    "core_desires": [
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "To find the person who burned them and make it educational"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Exercises compulsively — the body must be ready, always",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
+    ],
+    "secret": "Kadiatou Eriksson-Diallo betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Ends statements with 'yeah?' — not a question, a dare"
+    ],
+    "example_lines": [
+      "\"Every system has a door. Most of them have a door the architect forgot about.\"",
+      "\"I don't hack networks. I have conversations with them. Most of them are lonely.\"",
+      "\"The ice they're running is military-grade. That means expensive, not impenetrable.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The fixer who handles Kadiatou Eriksson-Diallo's contracts goes silent — dead, disappeared, or turned",
+    "A former associate resurfaces with evidence that could destroy Kadiatou Eriksson-Diallo's reputation — and a price for silence",
+    "Kadiatou Eriksson-Diallo is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Kadiatou Eriksson-Diallo represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Freelance — Geartown regular",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 7
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 9
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 10
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 7
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.5,
+      "caution": 0.54,
+      "loyalty": 0.11,
+      "greed": 0.82,
+      "empathy": 0.63
+    },
+    "drives": [
+      "justice",
+      "money",
+      "survival"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 8,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "mechanical aptitude — can repair or modify almost anything",
+      "technical expertise with augmentation systems"
+    ],
+    "weaknesses": [
+      "grudge-holding that compromises rational decision-making",
+      "inability to delegate — must control everything personally",
+      "trust issues that limit crew effectiveness"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "netrunner",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always has an exit route planned before agreeing to any meeting",
+      "Always verifies target identity independently before lethal contracts",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Will not betray a client who paid in full, regardless of better offers"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Keeps a physical paper notebook — no digital record of personal thoughts"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "A child being put in danger as leverage against them",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Smartgun link in right forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "replaces": ""
+    },
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Analyst": 0.7,
+    "Pattern Reader": 0.7,
+    "Problem Solver": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

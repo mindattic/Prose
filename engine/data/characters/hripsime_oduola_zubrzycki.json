@@ -1,0 +1,164 @@
+{
+  "id": "019d6143a628798b91fe8e322eb86aee",
+  "type": "character",
+  "name": "Hripsimé Oduola-Zubrzycki",
+  "aliases": [
+    "Madame Catastrophe"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Comedian and underground cabaret performer",
+  "age": 47,
+  "status": "active",
+  "location": "The Ferment Quarter, resident performer at the Lye & Lampblack club on Sutter Mews",
+  "description": "Hripsimé is medium height, broad-shouldered, and has the physical presence of someone who learned early that a room either belongs to you or it doesn't. Her hair is deep red — natural color, she will tell you, with a straight face, for about four seconds — and she wears it long and somewhat chaotic. Her skin is warm tawny-olive and she has laugh lines that could double as topographic maps. Her only mod is a tail, cat-model, rust-colored, which she uses as a prop during performances with expert comic timing; she has had it since she was twenty-three and considers it a co-author.\n\nHer comedy is vicious, structural, and deeply personal — she excavates class rage, corponation absurdity, and the specific indignities of Tier 2 civilian life with the precision of someone who has lived every joke. She has been banned from two Axiom-affiliated venues and has a standing invitation to return to both that she declines publicly and enthusiastically. At the Lye & Lampblack she is an institution: four nights a week, two sets, and an after-set period where she sits at the bar and is notoriously unapproachable unless you buy her a specific brand of fermented grain drink and ask her about something she actually cares about.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.4,
+      "id": 0.8,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That the anger that fuels her work will one day just be gone — burned out — and she will have nothing left",
+      "Being genuinely pitied rather than laughed with"
+    ],
+    "core_desires": [
+      "For her audiences to leave feeling less alone in their rage",
+      "One large, definitive, undeniable success before she decides she doesn't care about success"
+    ],
+    "coping_mechanisms": [
+      "Converts every painful experience into material within 48 hours",
+      "Maintains very strict routines as an anchor against chaos"
+    ],
+    "blind_spots": [
+      "Uses humor to deflect every time someone tries to care for her directly",
+      "Cannot tell when she has actually wounded someone who laughed anyway"
+    ],
+    "secret": "She was offered a Zheng-Dao corporate entertainment contract eight years ago — full Tier 3 package, creative control clause she knew was meaningless — and she almost took it. She spent a week in a hotel room they paid for, ordered room service for three days, then walked out without signing. She has never told anyone how close she came to taking it and pretends the offer was always a joke."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense, allusive, class-conscious; mixes formal diction with Ferment Quarter vernacular deliberately for comic and rhetorical effect",
+    "cadence": "Rhythmic with expert timing; knows exactly when to slow down and when to accelerate",
+    "verbal_tics": [
+      "'Don't look at me like that'",
+      "Tail moves in slow arcs when she is about to say something she has been building toward"
+    ],
+    "example_lines": [
+      "'Axiom banned me because my material was, quote, corrosive to workplace morale. I have never been more flattered by anything in my professional life.'",
+      "'You know what I love about Meridian 88? We've solved poverty. We just moved it somewhere we don't have to look at it. Problem solved! Great city. Fantastic city.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Lye & Lampblack's owner has quietly sold a stake to a Ringo subsidiary without telling the staff; Hripsimé has found the filing buried in public records and is deciding what to do with it.",
+    "Someone has been recording her sets and selling them to a Tier 4 underground stream; the recordings are edited to remove the class politics and leave only the safe jokes."
+  ],
+  "narrative_function": "Information source — she knows everyone in the Ferment Quarter and remembers everything; social lubricant for getting players into scenes; occasional quest giver when something threatens the club or the neighborhood",
+  "augmentations": "Rust-colored cat tail (cosmetic, geneware); minor vocal clarity implant in larynx (she calls it insurance)",
+  "daily_life": "Writes material in the mornings, usually in a back booth at the Lye & Lampblack before it opens; spends afternoons handling the practical administration of her own career with barely concealed contempt; performs four nights, sleeps erratically, reads constantly.",
+  "affiliation": "Resident performer at Lye & Lampblack; no collective affiliation; nominally independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 10,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -4,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Performer",
+      "Sharp",
+      "Guarded",
+      "Class-conscious",
+      "Institution"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never soften a joke that is also true",
+      "Do not perform for audiences who are laughing at the people the joke is about rather than recognizing themselves"
+    ],
+    "escalation_ladder": [
+      "Deals with threats via public ridicule first",
+      "Goes very quiet and formal when genuinely angry — a sign people around her recognize as serious",
+      "Takes precise, researched, deliberate action without warning"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Performs a version of herself — charming, sharp, slightly too much — as a screening mechanism",
+      "friends": "Still performs but with the volume down; shows real care through remembered details and unexpected practical help"
+    },
+    "stress_responses": {
+      "low": "Writes more, edits less",
+      "medium": "Drinks more than she should and picks unnecessary arguments with people she likes",
+      "high": "Cancels everything, goes home, doesn't speak for two days, emerges with new material"
+    },
+    "contradictions": [
+      "Performs intimacy and vulnerability on stage for hundreds of people but cannot accept either in a private room"
+    ],
+    "habits": [
+      "Writes every set line by hand before typing it",
+      "Strokes her tail absently when thinking — not for show, genuinely unconscious"
+    ],
+    "breaking_points": [
+      "Someone using her material to punch down at a target she was defending"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

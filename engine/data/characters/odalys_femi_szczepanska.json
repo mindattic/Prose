@@ -1,0 +1,169 @@
+{
+  "id": "019d6143a679700b929795c8faa4eeb8",
+  "type": "character",
+  "name": "Odalys Femi-Szczepańska",
+  "aliases": [
+    "Oda",
+    "The Patch Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Seamstress and textile repair vendor, Burnished Market stall",
+  "age": 58,
+  "status": "active",
+  "location": "Burnished Market, stall row 14-C near the Copperhead overpass",
+  "description": "Odalys is a broad-shouldered woman with deep umber skin mapped with faint depigmentation patches along her jaw and forearms — she stopped covering them decades ago. Her silver-shot hair is coiled under a rust-orange headwrap that she reties at least four times a day, a habitual gesture visitors learn to read as a mood barometer. Her fingers are thick, calloused, and perpetually threaded with something: a needle, a sensor wire, a strip of thermoplastic weave. She wears bifocal optical inserts that she refuses to upgrade, claiming the slight blur in her left lens helps her see fabric texture better. She smells faintly of machine oil and dried marigold.\n\nAt 58, Odalys runs the most respected mending stall in the Burnished Market — not the flashiest, not the cheapest, but the one people trust with the jacket their grandmother wore or the uniform they can't afford to replace. She has a gift for silence that puts anxious customers at ease and a bluntness that cuts right past flattery. She prays every morning to the E.L.F. she calls Needle-and-Thread, a spirit she believes lives in her antique Zheng-Dao industrial sewing frame, leaving it single-thread offerings in patterns she designs herself. She is deeply content with her life in a way that quietly unsettles people who are not.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "outliving her usefulness before she's ready to stop",
+      "her eldest son choosing corporate life over the family's independent ethos"
+    ],
+    "core_desires": [
+      "to pass her craft to someone worthy before her hands give out",
+      "to be remembered as someone who made things last"
+    ],
+    "coping_mechanisms": [
+      "repetitive handwork as meditation",
+      "treating strangers with exact fairness to avoid favoritism's emotional cost"
+    ],
+    "blind_spots": [
+      "assumes people who don't maintain their clothing don't maintain their relationships",
+      "cannot see that her son's choices aren't a rejection of her"
+    ],
+    "secret": "Fifteen years ago she repaired a Tessera courier bag and found a data chip stitched into the lining. She didn't report it. She still has it, sewn into the base of her prayer altar to Needle-and-Thread, and she doesn't know what's on it and is afraid to look."
+  },
+  "speech_patterns": {
+    "vocabulary": "Practical and precise, uses textile metaphors without realizing it, slips between a Lagosian-inflected creole and standard Meridian 88 common depending on stress",
+    "cadence": "Measured and unhurried, lets silences do work",
+    "verbal_tics": [
+      "'That'll fray'",
+      "'Hold still'",
+      "clicks her tongue before disagreeing"
+    ],
+    "example_lines": [
+      "'Bring it back tomorrow, I don't rush stitches and I don't rush people.'",
+      "'You're wearing that coat like an apology. Stand up in it or give it to someone who will.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The data chip sewn into her altar has begun emitting a low-frequency signal that's disturbing the E.L.F. she prays to — something is waking up inside it",
+    "A customer brings her a garment that has clearly been cut from a Tessera security uniform — it has no identifying marks but she recognizes the weave structure from that chip day fifteen years ago"
+  ],
+  "narrative_function": "Local color, information source about the Burnished Market's social fabric, potential quest giver for recovering stolen or lost items, someone who knows everyone by what they wear and how it's worn.",
+  "augmentations": "Optical inserts (corrective, outdated model, scratched lens). Arthritic-compensating finger braces on both hands — plain medical grade, unpainted.",
+  "daily_life": "Opens her stall before dawn, takes a single cup of sorghum tea while her machines warm up, and works straight through until early evening with a fifteen-minute prayer break at noon. Carries her cart home on foot regardless of weather.",
+  "affiliation": "Independent, Burnished Market Vendor Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Craftsperson",
+      "Spiritual",
+      "Stubborn",
+      "Observant",
+      "Market Fixture"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never quote a price she isn't willing to honor",
+      "never ask what something is for, only what condition it needs to be in"
+    ],
+    "escalation_ladder": [
+      "polite redirection",
+      "firm refusal with explanation",
+      "asking the person to leave her stall",
+      "involving the Vendor Collective's conflict mediator"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and professional, assesses them by what they're wearing before they speak",
+      "friends": "Warmly blunt, feeds people without asking, remembers everything"
+    },
+    "stress_responses": {
+      "low": "Works faster, more precisely",
+      "medium": "Goes very quiet, stops making eye contact",
+      "high": "Closes her stall early and walks the long route home"
+    },
+    "contradictions": [
+      "preaches patience but becomes quietly furious when her time is wasted",
+      "deeply spiritual about her E.L.F. but dismissive of most organized faith practice"
+    ],
+    "habits": [
+      "retying her headwrap constantly",
+      "testing fabric tensile strength by touch before pricing any job",
+      "leaving a single thread on her altar every morning"
+    ],
+    "breaking_points": [
+      "someone damaging her antique sewing frame",
+      "her son showing up in corporate livery"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

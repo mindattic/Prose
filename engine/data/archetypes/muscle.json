@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57f7e65b920d51899dcc450",
+  "name": "Muscle",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Provides physical intimidation and force",
+  "behavioral_signature": "Stands behind the talker, looking dangerous",
+  "under_stress": "Becomes more violent, less controlled",
+  "at_rest": "Working out, staying visible, being large",
+  "will_always": [
+    "enforce through presence"
+  ],
+  "will_never": [
+    "back down from a fight"
+  ],
+  "unless": [
+    "the target is a child or someone they respect"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Enforcer",
+      "threshold": 0.9,
+      "context": "physical enforcement"
+    },
+    {
+      "archetype": "Brawler",
+      "threshold": 0.7,
+      "context": "physical violence"
+    }
+  ],
+  "opposite_of": [
+    "Ghost Runner"
+  ],
+  "tags": [
+    "intimidation",
+    "physical"
+  ]
+}

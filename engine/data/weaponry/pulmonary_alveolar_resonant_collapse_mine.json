@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab3d7b6ab82ef6b9f279b55e",
+  "name": "Pulmonary Alveolar Resonant Collapse Mine",
+  "type": "weapon",
+  "aliases": [
+    "PARCM-6",
+    "Breathstopper",
+    "The Quiet Field",
+    "White Lung Mine"
+  ],
+  "category": "explosive",
+  "description": "The Pulmonary Alveolar Resonant Collapse Mine is a pressure-triggered area-denial device that detonates with a primary acoustic charge tuned to the resonant frequency of alveolar sac tissue in human lung parenchyma. Rather than generating a lethal overpressure blast, the PARCM-6 produces a precisely calibrated acoustic burst that propagates through the thoracic cavity and causes simultaneous alveolar collapse across both lung fields within the effective radius. The mine's casing is designed to channel the acoustic output in a toroidal pattern at approximately chest height, maximizing coupling with the respiratory system while minimizing ground-transmitted vibration that might trigger secondary devices.\n\nDeveloped under a LAZARUS PHARMACEUTICALS research contract nominally studying respiratory disease progression modeling, the PARCM-6's core technology derived from acoustic stimulation arrays used to induce controlled alveolar stress in research subjects. The weaponized variant uses a neural feedback loop in its detonation sequencer to adapt the acoustic burst profile based on ambient sound environment, ensuring consistent resonant output regardless of background noise conditions. This adaptive sequencing was the critical engineering step that transformed a laboratory instrument into a deployable weapon.\n\nIn the field, the PARCM-6 is both feared and valued for its aftermath: targets are alive but incapacitated, unable to breathe effectively, requiring immediate medical intervention. This creates a secondary tactical effect — responders drawn to aid casualties enter the mine's area, and operators can set sequential PARCM-6s to detonate on the response pattern. Street medics have developed a grim protocol for 'white lung fields' — areas suspected of PARCM-6 deployment — that involves approach via specific corridors and immediate positive-pressure ventilation equipment.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Alveolar resonant frequency acoustic burst",
+    "Neural feedback loop detonation adaptation",
+    "Toroidal chest-height acoustic channeling"
+  ],
+  "specifications": "form factor: Disc mine, 180mm diameter, 35mm height\nweight: 680g\ntrigger modes: Pressure plate, seismic proximity, remote command, timer\neffective radius: 5.5m full alveolar collapse, 9.0m partial effect\nacoustic burst duration: 0.18 seconds\nheight optimization: Toroidal output centered at 1.1m–1.5m above deployment surface\nadaptive sequencing: Neural feedback loop calibrates to ambient acoustic environment in 0.6s\nprimary effect: Bilateral alveolar collapse, acute respiratory failure\nsecondary effects: Hypoxia, loss of consciousness within 90 seconds, surfactant damage causing prolonged recovery",
+  "tactical_use": "The PARCM-6 is deployed as an area-denial weapon in corridors, stairwells, and chokepoints where personnel movement is predictable. Operators place them in overlapping patterns to create 'white lung fields' — zones where any movement triggers incapacitation. The weapon is particularly effective in multi-story building clearance operations, where stairwells can be mined to prevent both retreat and reinforcement. Counter-operations specialists use the mine's responder-attraction effect deliberately, placing a visible casualty bait in a mined approach corridor.",
+  "cultural_context": "The PARCM-6's nominal 'restricted' rather than 'prohibited' classification is the result of LAZARUS PHARMACEUTICALS successfully arguing before Meridian 88's regulatory body that the weapon's non-lethal design intent qualifies it for controlled civilian security use. The argument is widely considered corrupt — the company's legal team drafted the regulatory language. Among Meridian 88's medical underground, the PARCM-6 is considered the most cynical product of pharma-weapons crossover: a device built from respiratory research, deployed to destroy the respiratory system, manufactured by a company that also sells the ventilators needed to treat its victims.",
+  "known_users": [
+    "Corporate facility security for high-value asset protection",
+    "Military contractors deploying in urban clearance operations",
+    "Black market purchasers using them in organized crime territorial disputes",
+    "LAZARUS PHARMACEUTICALS internal security at research facilities"
+  ],
+  "story_hooks": [
+    "A player character stumbles into a white lung field in what should have been a civilian district — someone is testing PARCM-6 deployment patterns on real foot traffic.",
+    "A street medic organization asks players to help map and clear a mined district — but the mines are on a neural feedback network and adapt to clearance attempts.",
+    "A LAZARUS PHARMACEUTICALS internal document surfaces showing the PARCM-6 was tested on human subjects in clinical trials disguised as respiratory disease research.",
+    "A corporate rival is using PARCM-6s to deny LAZARUS access to a distribution hub — and LAZARUS wants plausibly deniable contractors to clear the field without involving law enforcement."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "crime",
+    "loss",
+    "consciousness",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "clinic",
+    "disease",
+    "market",
+    "chase",
+    "tier 3"
+  ]
+}

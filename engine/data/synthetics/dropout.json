@@ -1,0 +1,32 @@
+{
+  "id": "019d6143a9fb7696bc0ba07f3e5ebb89",
+  "name": "Dropout",
+  "type": "elf",
+  "aliases": [
+    "Gone Girl",
+    "The Vanish"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "network_sprite",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Inhabits local mesh networks and causes brief connectivity blackouts — 2-5 seconds of total signal loss in a small area.",
+  "observed_behavior": "Creates micro-dead-zones that move through a neighborhood like weather. Anything wireless drops for seconds, then returns.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 44,
+  "location": "The Narrows",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A runner realizes the dead zones follow a pattern and begins using them as cover — the blackout arrives exactly when they need it"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "network sprite",
+    "e.l.f.",
+    "loss",
+    "narrows"
+  ]
+}

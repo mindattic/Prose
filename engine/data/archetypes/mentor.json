@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57e721b88a7a15abf9f2d5b",
+  "name": "Mentor",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Develops others into leaders",
+  "behavioral_signature": "Teaches, guides, challenges growth",
+  "under_stress": "Mentors more intensely, less patiently",
+  "at_rest": "Teaching, advising, sharing experience",
+  "will_always": [
+    "develop others"
+  ],
+  "will_never": [
+    "hold others back"
+  ],
+  "unless": [
+    "the mentee must learn by failing and the failure could be fatal"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Teacher",
+      "threshold": 0.8,
+      "context": "education"
+    },
+    {
+      "archetype": "Servant Leader",
+      "threshold": 0.7,
+      "context": "supportive leadership"
+    }
+  ],
+  "opposite_of": [
+    "Tyrant"
+  ],
+  "tags": [
+    "developmental",
+    "wise"
+  ]
+}

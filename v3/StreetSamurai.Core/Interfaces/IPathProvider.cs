@@ -16,4 +16,7 @@ public interface IPathProvider
     string WorldDir { get; }
     string FacetsDir { get; }
     string GraphDir { get; }
+    string LogDir { get; }
+    string ExportDir { get; }
+    string ArchiveDir { get; }
 }

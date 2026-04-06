@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a5bb7907a55d456f62a4e8ca",
+  "type": "character",
+  "name": "Aybek Guerrero-Osei-Mensah",
+  "aliases": [
+    "Fathom",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Forced entry and close-quarters combat specialist — breacher",
+  "age": 37,
+  "status": "active",
+  "location": "Geartown — industrial district of chop shops and fabricators",
+  "description": "Aybek Guerrero-Osei-Mensah are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a breacher out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Aybek Guerrero-Osei-Mensah describe them as a precision instrument — point them at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.52,
+      "ideal": 0.67,
+      "id": 0.21,
+      "shadow": 0.97,
+      "mask": 0.15,
+      "ghost": 0.81
+    },
+    "core_fears": [
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Being captured alive — death is preferable to corporate interrogation",
+      "Becoming obsolete as augmentation technology outpaces their chrome"
+    ],
+    "core_desires": [
+      "To prove everyone who dismissed them catastrophically wrong",
+      "To find the person who burned them and make it educational",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Aybek Guerrero-Osei-Mensah murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Ends statements with 'yeah?' — not a question, a dare"
+    ],
+    "example_lines": [
+      "\"Doors are polite suggestions. I'm not polite.\"",
+      "\"First through the door, last to flinch. That's the job description.\"",
+      "\"Close quarters is where plans go to die. I make sure it's their plans, not ours.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Aybek Guerrero-Osei-Mensah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A dead drop Aybek Guerrero-Osei-Mensah maintains is found and cleaned out — whoever did it now has leverage",
+    "Aybek Guerrero-Osei-Mensah is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Aybek Guerrero-Osei-Mensah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release. Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Independent — operates through reputation only",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 8
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.69,
+      "caution": 0.56,
+      "loyalty": 1,
+      "greed": 0.41,
+      "empathy": 0.81
+    },
+    "drives": [
+      "survival",
+      "money",
+      "revenge"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 5,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "exceptional close-quarters combat",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "substance dependency — functional but fragile"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "breacher",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Never discusses active contracts with anyone not directly involved",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Insists they work alone but performs noticeably better in a team"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+    ],
+    "breaking_points": [
+      "Being publicly exposed — name, face, address, all of it blown",
+      "Watching someone they trained or mentored die on a job they recommended",
+      "A child being put in danger as leverage against them"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioware adrenaline regulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+      "replaces": ""
+    },
+    {
+      "name": "Bone lacing",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Brawler": 0.7,
+    "Berserker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

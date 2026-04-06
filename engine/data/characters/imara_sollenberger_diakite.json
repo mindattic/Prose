@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a62f7d7da71d67884bca7158",
+  "type": "character",
+  "name": "Imara Sollenberger-Diakité",
+  "aliases": [
+    "Ima",
+    "The Magician"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Barber and body artist, Mexicantown Libre",
+  "age": 24,
+  "status": "active",
+  "location": "Mexicantown Libre; works at a shop called Corte Libre on the main pedestrian corridor of Avon Curve",
+  "description": "Imara Sollenberger-Diakité is twenty-four years old and already one of the most sought-after cutters in Mexicantown Libre, a fact she treats with pointed nonchalance because she knows the moment she seems to want it is the moment someone will try to take it. Her father is Malian-German and her mother is from a Guatemalan-Somali diaspora family — she got the best of several worlds: height, cheekbones, and what her clients call 'the hands.' She has geneware cat ears — small, grey-tipped, always moving independently of her mood in ways that reveal what her face carefully hides. She styled her own locs into a structural crown she redesigns every three months and uses as a portfolio piece. Her arms carry a cascade of bioluminescent tattoo-work down to the wrists, blues and greens that pulse faintly under the shop's work lights.\n\nShe does cuts, yes, but she is better known for what the neighborhood calls reading the chair — the way she listens while she works. Clients come for the hair and stay because something about the position, the mirror, the rhythm of scissors, makes them speak. She does not offer advice. She does not judge. She reflects back the shape of what she heard with uncanny precision, which people find either healing or unnerving depending on who they are. She is trying to save enough to take over the shop when its current owner retires. She is also, quietly, furiously ambitious in ways she doesn't fully have language for yet.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Becoming trapped in other people's stories instead of building her own",
+      "That her ambition is bigger than the world will allow her to express"
+    ],
+    "core_desires": [
+      "To own Corte Libre outright before she's thirty",
+      "To be recognized for her craft by someone who can change her reach — but on her own terms"
+    ],
+    "coping_mechanisms": [
+      "Channeling anxiety into precision work — stress produces her best cuts",
+      "The community council as a way of feeling like she's doing something larger than scissors"
+    ],
+    "blind_spots": [
+      "So attuned to others' emotional states that she sometimes loses track of her own until it surfaces at wrong moments",
+      "Her ambition occasionally makes her read opportunity where there is only exploitation dressed nicely"
+    ],
+    "secret": "Señora Pacheco-Wangari has already offered to sell her the shop at a price she can actually reach — if she marries the Señora's nephew, who is also a perfectly decent person, as a legal citizenship convenience for a family relocation visa. Imara has not said no. She has not said yes. She has been not-answering for eleven weeks."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fluid and contemporary, Mexicantown Libre vernacular mixed with French phrases from her father's side; speaks at normal pace in conversation but goes nearly silent while working",
+    "cadence": "Easy and warm in conversation; in the chair, speaks only in soft precise questions",
+    "verbal_tics": [
+      "'Yeah, no, exactly.'",
+      "Low hum when she's concentrating",
+      "'What did you do about it?' — her default follow-up to almost any problem shared"
+    ],
+    "example_lines": [
+      "'The ears don't lie, people always say. I say the hands don't lie. Watch the hands.'",
+      "'You're going to tell me everything that's happening with that situation. Not because I'm asking. Because you came in for a cut and you've been staring at yourself in the mirror for ten minutes. So. What did you do about it?'",
+      "'I want the shop. I want it so bad it's embarrassing. And I'm going to get it. I just haven't figured out which version of me gets it yet.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client left without paying three weeks ago — not unusual — but also left behind a physical object under the chair that Imara has not reported, touched, or thrown away: a folded data wafer addressed to no one",
+    "Señora Pacheco-Wangari's deadline on the marriage arrangement is quietly approaching; Imara has begun asking oblique questions of clients with legal expertise, trying to find another path to the same door"
+  ],
+  "narrative_function": "Social hub and rumor exchange; emotional intelligence resource; potential quest-giver for community disputes; clients include people from every tier passing through Mexicantown Libre, making her information network unusually wide",
+  "augmentations": "Geneware cat ears (grey-tipped, cosmetic, emotionally involuntary); bioluminescent tattoo cascade, both arms (blue-green, cosmetic); retractable nail extensions (cosmetic, practical for certain styling techniques)",
+  "daily_life": "Shop hours 10:00 to 20:00 five days a week; spends mornings practicing new technique on a mannequin collection in her apartment; attends community council meetings she pretends are optional but has not missed in eighteen months.",
+  "affiliation": "Corte Libre (employed under Señora Pacheco-Wangari, the owner); Mexicantown Libre community network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "social hub",
+      "emotional intelligence",
+      "ambitious",
+      "community embedded",
+      "information magnet"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never cut someone's hair angry — finish the emotion before picking up the scissors",
+      "Always remember what a client told you last time, even if they don't bring it up again",
+      "Don't mistake someone's vulnerability in the chair for closeness outside it"
+    ],
+    "escalation_ladder": [
+      "Deflects and redirects with humor",
+      "Direct and quiet statement of the boundary",
+      "Ends the session and does not reschedule"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and professionally curious — she wants to know people as a rule, not just as clients",
+      "friends": "Fully present and fiercely loyal; will sit with someone in a bad moment without trying to fix it, which is rarer than it sounds"
+    },
+    "stress_responses": {
+      "low": "Cat ears flatten slightly; work gets more precise",
+      "medium": "Goes bright and performatively cheerful, which everyone who knows her reads as distress",
+      "high": "Leaves, goes to the lake edge at Avon Curve, sits until the feeling breaks"
+    },
+    "contradictions": [
+      "Earns her reputation by helping people know themselves better while actively avoiding self-knowledge about her own largest decision"
+    ],
+    "habits": [
+      "Cleans her scissors with a specific cloth in a specific order as an opening ritual for each client",
+      "Leaves a small braid of hair clippings at the shop's E.L.F. altar — a spirit the shop calls La Tijera — as a daily offering",
+      "Reorganizes her mannequin collection by instinct when anxious, then denies she did it"
+    ],
+    "breaking_points": [
+      "Being condescended to about her craft by someone who cannot do it",
+      "Feeling like her future is being decided by someone else's needs"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9,
+    "Social Chameleon": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

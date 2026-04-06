@@ -1,0 +1,32 @@
+{
+  "id": "019d6143a9f377caae9054deaeed3084",
+  "name": "Cobweb",
+  "type": "elf",
+  "aliases": [
+    "Old Thread"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "wisp",
+  "habitat": "network_sprite",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "A residual data pattern in abandoned network segments — the barest skeleton of what was once a data-cataloging AI. It creates connections between unrelated data points.",
+  "observed_behavior": "Links files, records, and data fragments across network segments in ways that suggest thematic association rather than algorithmic sorting. The links are often meaningful to human researchers.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 3,
+  "location": "The Circuit — abandoned data centers",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A researcher following Cobweb's data links discovers a connection between two corponations that neither wants public"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "wisp",
+    "network sprite",
+    "e.l.f.",
+    "ai",
+    "bar",
+    "circuit"
+  ]
+}

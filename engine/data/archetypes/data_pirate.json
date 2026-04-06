@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5687dc08fcb42d3558c1909",
+  "name": "Data Pirate",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Steals digital information for profit",
+  "behavioral_signature": "Hacks, decrypts, exfiltrates data",
+  "under_stress": "Takes bigger risks, leaves more traces",
+  "at_rest": "Scanning networks, probing systems",
+  "will_always": [
+    "extract valuable data"
+  ],
+  "will_never": [
+    "leave a system without checking for data"
+  ],
+  "unless": [
+    "the data is someone's private medical records"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Info Broker",
+      "threshold": 0.7,
+      "context": "information trade"
+    },
+    {
+      "archetype": "Knowledge Hoarder",
+      "threshold": 0.6,
+      "context": "information acquisition"
+    }
+  ],
+  "opposite_of": [
+    "Whistle-Blower"
+  ],
+  "tags": [
+    "technical",
+    "mercenary"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "019d6143ab22757392680a324f0f5951",
+  "name": "Cryogenic Fracture Disbursement Mine CFDM-4",
+  "type": "weapon",
+  "aliases": [
+    "Coldsnap",
+    "The Glaciator",
+    "Brittle"
+  ],
+  "category": "explosive",
+  "description": "The CFDM-4 functions as an area-denial mine that weaponizes rapid thermal collapse rather than explosive fragmentation. When triggered, the device releases a supercooled liquid nitrogen–fluorocarbon suspension under high pressure, generating a localized temperature drop of approximately -140°C within a 5-meter radius in under 300 milliseconds. The initial cold burst is sufficient to induce thermal shock fracturing in exposed biological tissue, hydraulic lines, pneumatic systems, and certain grades of ballistic polymer armor. Materials that survive the cold phase are then subjected to a secondary micro-explosive disbursement — small shaped charges embedded in the mine casing fire outward, turning any ice-crystallized surface in the blast radius into a secondary fragmentation field.\n\nThe two-phase kill mechanism — freeze, then shatter — was pioneered by ZHENG-DAO BIOELECTRIC's materials warfare division, originally as a method for disabling cryogenically sensitive bioelectric infrastructure without fire risk. The military application emerged when field engineers noted that the suspension compound caused catastrophic embrittlement in articulated armor joints and cybernetic limb housing. A target who survives the cold burst is often physically immobilized by seized joint systems, making the mine effective as both a lethal and incapacitation device depending on range.\n\nOn Meridian 88's black market, 'Coldsnap' mines are prized by teams operating against heavily augmented targets — the embrittlement effect is disproportionately effective against high-density cybernetic installation. Veterans of the corporate border wars describe the aftermath of a CFDM-4 detonation as 'a room full of broken statues,' a description that has become part of the weapon's grim mythology.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 4+ / Military surplus",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Supercooled suspension disbursement",
+    "Thermal shock fracture induction",
+    "Sequential micro-explosive fragmentation"
+  ],
+  "specifications": "primary radius: 5m cryogenic burst\nsecondary radius: 3m fragmentation\ntemperature drop: -140°C at ground zero\ncoolant compound: LN2-fluorocarbon suspension, classified grade\ntrigger options: Pressure plate, tripwire, IR proximity, remote detonation\narming delay: 4 seconds post-placement\nweight: 2.1 kg\nheight: 11cm diameter disc profile\ndetonation sequence: Burst phase 0–300ms / fragmentation phase 310–420ms",
+  "tactical_use": "Deployed as area-denial in corridors and chokepoints where augmented targets are expected. Particularly effective in server room raids and bioelectric facility assaults where hydraulic and pneumatic systems are present — the cold burst disables environmental support systems simultaneously with personnel. Teams often pair CFDM-4s with thermal imaging to exploit the heat signature contrast of freshly frozen surfaces. Anti-personnel squads targeting heavily cybered enforcers use them as primary engagement tools rather than last resort.",
+  "cultural_context": "ZHENG-DAO markets the CFDM-4 to military clients as 'infrastructure-selective area denial,' emphasizing its effectiveness against mechanized targets. In practice, the weapon's ability to selectively devastate augmented humans has made it a symbol of the city's simmering tension between full-flesh populations and the heavily modified. Some anti-augmentation extremist groups have attempted to acquire surplus units, and ZHENG-DAO has faced significant public pressure over its distribution policies. The name 'Brittle' is used derisively by augmented communities to describe the weapon — and sometimes the people who use it.",
+  "known_users": [
+    "ZHENG-DAO BIOELECTRIC military liaison units",
+    "Anti-augmentation extremist factions (black market acquisition)",
+    "Corporate asset-denial teams protecting bioelectric infrastructure",
+    "Military surplus dealers in the lower city",
+    "Mercenary squads specializing in anti-cyborg operations"
+  ],
+  "story_hooks": [
+    "A CFDM-4 mine detonates in a civilian augmentation clinic — someone is sending a message, and ZHENG-DAO is desperate to prove the mine wasn't theirs.",
+    "The party is hired to clear a derelict facility and discovers it has been mined with CFDM-4s — the placement pattern suggests someone who knew exactly where augmented security personnel would walk.",
+    "A ZHENG-DAO insider leaks documents suggesting the CFDM-4's embrittlement compound has long-term neurological effects on survivors — effects ZHENG-DAO has known about for years.",
+    "A heavily augmented fixer approaches the party with a contract: steal a pallet of CFDM-4s from a corporate depot before they can be sold to a buyer whose identity she won't reveal."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "identity",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "clinic",
+    "market",
+    "cold",
+    "desperate",
+    "armor",
+    "fire",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "id": "019d6143a6827c5394740df6b5b3bbac",
+  "type": "character",
+  "name": "Oluwaremilekun Vásárhelyi-Sow",
+  "aliases": [
+    "Remi",
+    "The Scissors"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Barber and hair sculptor, runs a one-chair shop in Hamtramck Enclave",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave — her shop, Vásárhelyi's Cut, is wedged between a noodle stand and a bootleg geneware parlor on Tessera Row",
+  "description": "Remi is a broad-shouldered woman with close-cropped silver hair she keeps so geometric it looks machined. Her hands are her livelihood and her pride — steady, scarred at the knuckles, with two fingers on her left hand replaced by matte-black prosthetic digits that give her razor work an inhuman precision. She has warm brown skin mapped with pale keloid lines along her forearms from a factory accident twenty years ago, and her eyes are naturally deep amber, though she's added cosmetic irises that bloom like sunflowers when she's in good humor. She wears the same style every day: clean work apron, sleeves rolled, a small copper pendant of Ogun that she touches before every haircut.\n\nRemi has the gravitational pull of a person who has simply been somewhere long enough that the neighborhood bends around her. She remembers who your grandmother was, who owes who, and which corponation rep came through last month asking questions they shouldn't ask. She is unhurried, deliberate, and precise — in speech as in blade work — and she has a talent for making people say things in the chair they didn't mean to say out loud. She is not unkind. She is practical in the way of someone who has survived enough to stop being romantic about it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing the shop — the one thing she built that is entirely hers",
+      "Becoming irrelevant to a neighborhood that is changing faster than she can track"
+    ],
+    "core_desires": [
+      "To be of genuine use to the people around her",
+      "To leave Tessera Row better than she found it"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the morning incense, the precise sweep of the floor, the order of her tools",
+      "Humor deployed just before emotion becomes visible"
+    ],
+    "blind_spots": [
+      "Underestimates how much people fear her opinion of them",
+      "Assumes loyalty is as uncomplicated for others as it is for her"
+    ],
+    "secret": "Twenty-two years ago she testified against her former employer, a small Axiom subcontractor, in a labor dispute. Her testimony was accurate. Three coworkers lost their jobs anyway, and one of them — a man named Boubacar — died homeless two winters later. She has never told anyone she blames herself, and she pays for Boubacar's daughter's school fees anonymously every month."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich, unhurried, code-switches fluidly between English and Yoruba phrases; uses West African proverbs without irony or explanation",
+    "cadence": "Slow and measured, as if she has decided each word before opening her mouth",
+    "verbal_tics": [
+      "'You hear me?' at the end of significant statements",
+      "Clicks her prosthetic fingers once when thinking"
+    ],
+    "example_lines": [
+      "'Sit. I will tell you what I know, but first you are going to look like a person again.'",
+      "'The tree does not move because the bird lands on it. That man is not as important as he believes.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A young person whose family Remi has known for two generations comes in — they're in serious debt and too ashamed to tell their parents. Remi will not solve it for them, but she might know who to send them to.",
+    "Someone has been asking around Tessera Row about Remi specifically, claiming to be a relative from Lagos. Remi has no living relatives from Lagos."
+  ],
+  "narrative_function": "Information nexus and community anchor — she knows everyone on the block and most of their secrets. Excellent quest giver for neighborhood-level problems. Can serve as mentor, confidante, or the person who tells a protagonist an uncomfortable truth while they're stuck in the chair.",
+  "augmentations": "Two prosthetic fingers (left hand, high-precision, matte black polymer); cosmetic sunflower-pattern irises. No geneware.",
+  "daily_life": "Opens the shop at 0700, works until her back says otherwise, usually around 2100. Sweeps the floor herself. Burns a data-offering incense stick to the E.L.F. she calls Grandmother Clippers every morning.",
+  "affiliation": "Independent; informal community elder of Tessera Row, Hamtramck Enclave",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "information broker (passive)",
+      "skilled tradesperson",
+      "neighborhood memory"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give information that gets someone hurt without understanding the risk first",
+      "Handle neighborhood business inside the neighborhood if at all possible"
+    ],
+    "escalation_ladder": [
+      "Warm deflection",
+      "Blunt redirection",
+      "Silence and a very level look",
+      "Asking the person to leave the chair"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, observing carefully, asks more questions than she answers",
+      "friends": "Direct, generous, occasionally brutal with the truth because she respects them enough"
+    },
+    "stress_responses": {
+      "low": "Becomes quieter, works with more deliberate care",
+      "medium": "Closes the shop early, sits in the back with the lights off",
+      "high": "Calls in a favor she's been holding a long time — she has a few"
+    },
+    "contradictions": [
+      "Believes deeply in community self-determination but sometimes makes decisions for people 'for their own good'"
+    ],
+    "habits": [
+      "Touches the Ogun pendant before starting a haircut",
+      "Memorizes new customers' faces in three segments — forehead, eyes, jaw — before speaking to them"
+    ],
+    "breaking_points": [
+      "Harm to children in the enclave",
+      "Someone using her shop as a venue for violence"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Hungarian-Malian household",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed to a barber on Tessera Row after the factory accident that cost her two fingers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Testified against Axiom subcontractor in the Hamtramck Labor Hearings; Boubacar dies two years later",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened Vásárhelyi's Cut on the same block she was born on",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

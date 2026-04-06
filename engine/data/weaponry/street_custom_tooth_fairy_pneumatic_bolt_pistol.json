@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab4b7ca89a4a59b514725637",
+  "name": "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
+  "type": "weapon",
+  "aliases": [
+    "Tooth Fairy",
+    "Bolt Gun",
+    "Stunner",
+    "The Dentist's Friend"
+  ],
+  "category": "improvised",
+  "description": "A modified veterinary captive bolt pistol redesigned for use against humans. The original tool — used for livestock stunning — has been adapted with an extended barrel sleeve, a reinforced bolt, and a higher-pressure pneumatic cartridge that drives the bolt with enough force to penetrate the human skull at contact range. It is a point-blank assassination weapon, silent except for the pneumatic discharge, and leaves a wound that can be mistaken for a blunt force injury by inexperienced medical examiners. The weapon's association with slaughterhouse equipment gives it a particular psychological weight that its users exploit deliberately.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — modified lethal device",
+  "base_technologies": [
+    "Pneumatic captive bolt modification",
+    "Contact-range penetration engineering"
+  ],
+  "specifications": "bolt penetration: 7 cm hardened steel bolt\noperating range: Contact only\npower source: Single-use pneumatic cartridge\nweight: 0.9 kg\nreload: 4 seconds per cartridge swap\nacoustic signature: 55 dB — comparable to a heavy book dropping\nconcealability: Fits inside a jacket pocket",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A string of apparent blunt-force homicides in Tier 1 are revealed to be bolt pistol killings when a forensic specialist notices the consistent wound depth and diameter.",
+    "A slaughterhouse worker has gone missing along with two dozen pneumatic cartridges and the facility's entire stock of bolt pistol housings — someone is manufacturing Tooth Fairies at scale."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "gun",
+    "ai",
+    "power",
+    "medical",
+    "injury",
+    "bar",
+    "tier 1"
+  ]
+}

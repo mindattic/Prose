@@ -1,0 +1,93 @@
+{
+  "id": "019d6143a9547b33b1d90995c4cd2a10",
+  "type": "place",
+  "name": "The Woodline",
+  "aliases": [
+    "Woodlawn",
+    "The Promise District",
+    "Obama's Ghost"
+  ],
+  "description": "The Woodline is the neighborhood that was saved and then wasn't. In the old city, Woodlawn was supposed to be transformed by the Obama Presidential Center — a beacon of investment and community renewal anchored to the South Side like a promise kept. The Center was built. It was beautiful. And then the collapse happened, and the beautiful building became the most expensive ruin on the South Side. The Center still stands, its modernist angles and landscaped grounds now enclosed within an Axiom Security perimeter, repurposed as a Tier 3 administrative processing hub. The exhibits about democracy and civic engagement are still inside, behind locked doors, in rooms now used for tier reclassification hearings. The irony is not lost on the residents. The irony is the only thing they have left from the original promise.\n\nThe Woodline earned its name from the treeline that marks the boundary between the old residential blocks and the University of Chicago's expanding security perimeter to the north. Hydewood's campus wall casts a literal shadow over the Woodline's northern blocks, and the relationship between the two districts is the relationship between a castle and the village that feeds it. Woodline residents work service jobs on campus — cleaning, maintenance, food preparation — crossing through checkpoints each morning and returning each evening to a neighborhood that receives none of the campus infrastructure investment. The streets here are pre-collapse pavement, cracked and unrepaired. The housing is dense and aging. Community organizations do the work that municipal government abandoned, running everything from childcare to neural interface clinics out of converted storefronts.\n\nBut the Woodline has something that makes it unusual in the southern corridor: construction. Axiom Industries has been running a redevelopment initiative here for three years — new residential towers, upgraded grid connections, a promised transit link to the Meridian Core. The official narrative is urban renewal. The actual pattern is displacement. Each new tower that goes up has tier requirements for residency that the current population cannot meet. Each grid upgrade connects to Axiom infrastructure that requires Axiom service contracts. The Woodline is being rebuilt, block by block, into a neighborhood its own residents can't afford to live in. The community calls it the Second Displacement, after the first one — the one that happened when the old city died.\n\nThe resistance is quiet and structural. Community land trusts, originally established in the pre-collapse era, still hold title to a handful of residential blocks that Axiom's redevelopment hasn't been able to legally absorb. These blocks are the Woodline's immune system — pockets of Tier 1-2 housing surrounded by rising Tier 3 construction, stubbornly refusing to sell. The people who live there know that holding land is the only leverage that outlasts a corporate news cycle. Kyle has allies here. The land trust organizers are the kind of people who plan in decades, not days, and they understand something that most street-level operators don't: the fight isn't always in the moment. Sometimes the fight is just still being here.",
+  "atmosphere": {
+    "sights": [
+      "The Obama Presidential Center — modernist architecture behind Axiom security fencing, repurposed and repurposed again",
+      "New residential towers rising beside crumbling pre-collapse housing, the contrast deliberate and cruel",
+      "Construction drones moving materials overhead, building a neighborhood designed for other people",
+      "Community land trust signs on residential blocks — small, hand-painted, defiant",
+      "The Hydewood campus wall visible to the north, casting its shadow into the Woodline's morning streets",
+      "Service workers queuing at the campus checkpoint at dawn, badge readers glowing amber"
+    ],
+    "sounds": [
+      "Construction noise — constant, mechanical, the sound of a neighborhood being overwritten",
+      "The campus checkpoint scanner — a tone that means you're cleared to serve, another tone that means you're not",
+      "Community meetings in land trust buildings, where the agenda hasn't changed in three years: hold the line",
+      "Children in after-school programs run by volunteers, their laughter carrying further than it should because the old blocks are emptying",
+      "The hum of new Axiom grid infrastructure, powering buildings the current residents can't access"
+    ],
+    "smells": [
+      "Fresh construction materials — synthetic concrete, polymer insulation — the smell of new buildings for new people",
+      "Cooking from the remaining community kitchens, heavy with spices that have been in these blocks for generations",
+      "Exhaust from construction drones that haven't been fitted with emission filters because the Woodline's air quality isn't monitored"
+    ],
+    "feel": "The Woodline feels like watching your home being packed up by strangers who smile and tell you this is progress. There's grief here, but it's the kind of grief that sharpens into something useful. The people who are still holding on know exactly what they're holding on to and exactly what it costs.",
+    "tags": []
+  },
+  "demographics": "Approximately 25,000 current residents, declining as displacement accelerates. Historically Black community with strong institutional roots. New construction is attracting Tier 3 residents with no connection to the neighborhood's history. The demographic shift is the point, though Axiom's press releases describe it as organic growth.",
+  "economy": "Service employment at Hydewood's campus. Community-run mutual aid networks. Axiom redevelopment construction provides temporary jobs that evaporate when each phase completes. Land trust properties maintain a small internal economy of shared resources and cooperative labor.",
+  "power_structure": "Axiom Industries holds redevelopment authority. Community land trusts hold legal title to approximately fifteen residential blocks and resist absorption through a combination of pre-collapse property law and organized collective action. The Obama Center site is Axiom sovereign territory. Hydewood's campus exerts gravitational pull on the local labor market.",
+  "dangers": [
+    "Axiom redevelopment displaces residents through pricing, not force — harder to fight because there's no visible violence",
+    "Construction sites are hazardous and underregulated — injuries among temp workers are common and unreported",
+    "The campus checkpoint creates a daily vulnerability for service workers whose tier status is reviewed on each crossing",
+    "Community organizers face legal harassment through Axiom's property litigation division",
+    "New residents in Tier 3 towers and existing Tier 1-2 residents occupy the same streets with different rights — friction is structural"
+  ],
+  "opportunities": [
+    "Community land trusts need outside support — legal, financial, informational — and will work with operators who prove trustworthy",
+    "Axiom redevelopment data reveals patterns useful to anyone fighting corporate displacement across Meridian",
+    "The Obama Center's original archives may still be intact inside the repurposed facility — pre-collapse civic records with legal and historical value",
+    "Construction logistics create temporary security gaps in Axiom's perimeter — useful for those who need access to the redevelopment zone"
+  ],
+  "story_hooks": [
+    "A community land trust is about to lose its last legal challenge against Axiom's eminent domain filing. The case hinges on a pre-collapse municipal record that should be in the Obama Center's archives — now locked inside an Axiom facility.",
+    "Axiom's redevelopment plan includes a classified Phase 4 that hasn't been publicly announced. A construction foreman found the plans and doesn't understand what he's looking at, but he knows it's wrong.",
+    "Service workers crossing the campus checkpoint are being quietly screened for neural interface compatibility. The ones who qualify are offered transfers. None of them have been seen since."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Hydewood",
+      "Washburn Commons",
+      "South Shore Strand",
+      "Chatham Flats"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Service workers commuting daily to Hydewood's campus",
+    "Community land trust organizers with legal expertise and long memories",
+    "Axiom redevelopment contractors building a future that excludes the present",
+    "Displaced residents returning to visit what's left",
+    "Ronin and freelancers who understand that the Woodline's fight is everyone's fight on a longer timeline"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.795,
+    "lng": -87.596,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "violence",
+    "trust",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "clinic",
+    "market",
+    "shadow",
+    "rights",
+    "food"
+  ]
+}

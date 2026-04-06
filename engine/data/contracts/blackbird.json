@@ -1,0 +1,50 @@
+{
+  "id": "019d6143a7a1799687cfe40c02821108",
+  "codename": "BLACKBIRD",
+  "type": "contract",
+  "client": "Anonymous (via The Ledger)",
+  "client_tier": "Tier 2",
+  "category": "extraction",
+  "description": "A Zheng-Dao researcher has gone dark inside a corporate black site in the Narrows, disguised as a water treatment plant. Their family wants them out. The researcher may not want to leave.",
+  "objective": "Extract Dr. Amara Osei-Petrov alive from Zheng-Dao Narrows facility.",
+  "location": "The Narrows",
+  "target": "Dr. Amara Osei-Petrov",
+  "opposition": "Zheng-Dao security, 4 Goliaths, biometric locks",
+  "payout": "Φ75,000",
+  "bonuses": [
+    {
+      "type": "ghost",
+      "amount": "Φ20,000",
+      "condition": "Zero security alerts"
+    },
+    {
+      "type": "clean",
+      "amount": "Φ15,000",
+      "condition": "No casualties"
+    }
+  ],
+  "complications": [],
+  "required_capabilities": {
+    "combat": 6,
+    "stealth": 8,
+    "hacking": 7,
+    "social": 4,
+    "medical": 5,
+    "tech": 6,
+    "transport": 5,
+    "demolitions": 3,
+    "surveillance": 7,
+    "linguistics": 0
+  },
+  "crew_size": "3-5",
+  "difficulty": "dangerous",
+  "time_limit": "48 hours",
+  "status": "open",
+  "outcome": "",
+  "tags": [
+    "extraction",
+    "dangerous",
+    "runner",
+    "contract"
+  ]
+}

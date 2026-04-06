@@ -1,0 +1,269 @@
+{
+  "id": "019d6143a62b7d8d958111b3281be654",
+  "type": "character",
+  "name": "Ihaia Mori-Sefa",
+  "aliases": [
+    "Brine",
+    "The Contractor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate espionage and data exfiltration — data thief",
+  "age": 52,
+  "status": "active",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "description": "Ihaia Mori-Sefa is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 52, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a data thief out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Ihaia Mori-Sefa is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.48,
+      "ideal": 0.82,
+      "id": 0.61,
+      "shadow": 0.31,
+      "mask": 0.66,
+      "ghost": 0.13
+    },
+    "core_fears": [
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Going cyberpsycho — losing the boundary between human and machine"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Power — enough leverage that nobody ever threatens them again"
+    ],
+    "coping_mechanisms": [
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Overwork — takes every contract offered because idleness invites thinking"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Trusts technology more than people — machines don't betray",
+      "Assumes the worst in corporate people, missing the rare ones who could be allies"
+    ],
+    "secret": "Ihaia Mori-Sefa witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Uses technical jargon for everything, including emotions"
+    ],
+    "example_lines": [
+      "\"Your firewalls are decorative. Like curtains on a submarine.\"",
+      "\"I copy things. The original owners rarely appreciate the compliment.\"",
+      "\"Data wants to be free. I just charge a facilitation fee.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Ihaia Mori-Sefa's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A high-paying contract turns out to target someone Ihaia Mori-Sefa owes a personal debt to",
+    "Ihaia Mori-Sefa is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "As a data thief, Ihaia Mori-Sefa embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Neural dampener — blocks external hacking attempts, passive ICE in the brain. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Freelance — multi-district operator",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 6
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 9
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.45,
+      "caution": 0.4,
+      "loyalty": 0.57,
+      "greed": 0.82,
+      "empathy": 0.18
+    },
+    "drives": [
+      "revenge",
+      "money",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 4,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "multilingual — speaks 4+ languages fluently"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "difficulty with authority figures"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "data thief",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Always verifies target identity independently before lethal contracts",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Never discusses active contracts with anyone not directly involved"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural dampener",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "replaces": ""
+    },
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

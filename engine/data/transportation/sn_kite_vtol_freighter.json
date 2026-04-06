@@ -1,0 +1,38 @@
+{
+  "id": "019d6143aa70746e8c5cc08ec64e823e",
+  "name": "SN Kite VTOL Freighter",
+  "type": "transportation",
+  "aliases": [
+    "Kite",
+    "Freight Bird",
+    "Sky Van"
+  ],
+  "category": "commercial_air",
+  "manufacturer": "Sterling-Nakamura",
+  "description": "A medium VTOL cargo aircraft that handles time-sensitive freight — medical supplies, perishables, high-value components. Faster than a zeppelin, more payload than a Mule drone, and capable of landing on any flat surface. The Kite is the workhorse of premium logistics, operated by licensed cargo companies and occasionally by freelance pilots who own their own craft and take contracts no one else will.",
+  "propulsion": "Tilt-rotor VTOL, hydrogen turbine cruise",
+  "speed": "300 km/h cruise",
+  "capacity": "5,000 kg payload",
+  "range": "800 km",
+  "tier_availability": "Commercial license required",
+  "cost": "Φ500,000 per unit",
+  "autonomy": "Pilot-operated with AI co-pilot, full autonomous capability (rarely used)",
+  "armament": "None standard. Defensive countermeasure package available.",
+  "common_usage": "Priority freight, medical transport, corporate supply chain, freelance cargo operations.",
+  "story_hooks": [
+    "A freelance Kite pilot takes a contract to deliver an unmarked container to a lake platform that isn't on any chart",
+    "Kite freighters are being hijacked mid-flight by something that takes control of the avionics without leaving a digital trace"
+  ],
+  "tags": [
+    "commercialair",
+    "transportation",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "zeppelin",
+    "drone",
+    "lake"
+  ]
+}

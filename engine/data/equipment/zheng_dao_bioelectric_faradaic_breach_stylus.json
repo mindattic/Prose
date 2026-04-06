@@ -1,0 +1,67 @@
+{
+  "id": "019d6143a8827e84b6a6088e08958a96",
+  "name": "Zheng-Dao Bioelectric Faradaic Breach Stylus",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Faradaic Breach Stylus",
+  "type": "equipment",
+  "aliases": [
+    "The Stylus",
+    "Burn Pen",
+    "ZD Scribe"
+  ],
+  "category": "utility",
+  "description": "The Faradaic Breach Stylus is a handheld electrochemical cutting and access tool developed by Zheng-Dao Bioelectric's industrial maintenance division, nominally for servicing sealed bioelectric conduit housings and corroded terminal blocks in humid or submerged environments. The device delivers precisely modulated faradaic current through a tungsten-carbide tip, using electrochemical dissolution rather than heat or mechanical force to breach conductive barriers. Against standard security-grade lock cylinders, hardened cable ties, and low-gauge ferrous barriers, it operates nearly silently and produces no visible light signature.\n\nThe Stylus is approximately the size and weight of a large marker pen, which is not coincidental — Zheng-Dao's design team deliberately pursued a form factor that would survive the pocket of a field technician without dedicated carrying equipment. The tip is replaceable and rated for approximately 400 meters of linear cut before degradation becomes significant. An integrated charge indicator runs along one face as a simple three-segment bar, and the device accepts standard Zheng-Dao 9V bioelectric cells as well as the more common aftermarket equivalents.\n\nThe gap between its intended application — unseizing corroded industrial hardware — and its actual range of use is wide enough that Zheng-Dao's legal department has reportedly drafted restriction requests to the city licensing board on three separate occasions, each time withdrawing them when sales projections were reviewed. The Stylus sells exceptionally well.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Faradaic electrochemical dissolution",
+    "Tungsten-carbide tip array",
+    "Modulated current delivery circuit",
+    "Zheng-Dao 9V bioelectric cell interface"
+  ],
+  "specifications": {
+    "weight": "94g with cell installed",
+    "length": "162mm",
+    "tip_material": "Tungsten-carbide composite",
+    "tip_lifespan": "~400 linear meters before replacement required",
+    "breach_rate": "Standard lock cylinder: 8-14 seconds. 2mm ferrous sheet: 22 seconds. Hardened security cable: 31 seconds",
+    "noise_signature": "Sub-40dB at 1 meter",
+    "power_source": "Zheng-Dao 9V bioelectric cell or compatible aftermarket equivalent",
+    "cell_lifespan": "Approximately 6 hours continuous operation",
+    "operating_environments": "Rated to IP67, functional in partial submersion"
+  },
+  "tactical_use": "The Stylus is used primarily for quiet access — defeating padlocks, cutting cable restraints, and breaching thin panel seals without the acoustic signature of mechanical cutters or the thermal signature of plasma tools. Its effectiveness against conductive materials makes it well-suited to cutting power feeds to electronic locks before attempting bypass, a two-tool sequence common among experienced operators. In wet environments such as flooded sub-basements or drainage access tunnels, it remains fully functional where most alternatives fail. It is too slow for emergency extraction use but highly effective for deliberate, planned entry.",
+  "cultural_context": "Among Meridian 88's substantial population of infrastructure maintenance workers, the Stylus is simply a tool — reliable, replaceable, unremarkable. Among the city's shadow-economy access specialists, owning one is considered basic competence rather than sophistication. The device's total mundanity is considered a feature: it can sit openly in a tool belt or chest pocket without attracting any attention from security personnel familiar with trade tools. More expensive or exotic breach hardware signals intent; the Stylus signals plausible deniability.",
+  "known_users": [
+    "Zheng-Dao bioelectric field technicians",
+    "Infrastructure maintenance contractors",
+    "Freelance access specialists and second-story operators",
+    "Investigative journalists operating in restricted facilities",
+    "Organized retrieval crews working corporate waste sites"
+  ],
+  "story_hooks": [
+    "A Stylus tip recovered from a crime scene carries an electrochemical residue profile that forensic analysts can match to a specific alloy batch — one used exclusively in one building's lock hardware, placing the owner at the scene with more precision than a fingerprint.",
+    "Zheng-Dao quietly released a firmware update to Stylus units with embedded wireless chips — a feature never disclosed in any product documentation — that logs usage events. Someone is now selling that log data.",
+    "A restricted maintenance corridor was breached using a Stylus, but the cut geometry suggests the operator was working one-handed and under significant time pressure; a witness saw someone with a shoulder injury leaving the adjacent street."
+  ],
+  "tags": [
+    "utility",
+    "equipment",
+    "war",
+    "crime",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "injury",
+    "tunnel",
+    "market",
+    "bar",
+    "rain",
+    "shadow",
+    "train",
+    "circuit",
+    "tier 1"
+  ]
+}

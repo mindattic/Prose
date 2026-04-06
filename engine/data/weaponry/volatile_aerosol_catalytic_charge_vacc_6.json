@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab5d7d82ad0908d306830b70",
+  "name": "Volatile Aerosol Catalytic Charge VACC-6",
+  "type": "weapon",
+  "aliases": [
+    "Breathseed",
+    "The Slow Bloom",
+    "Greenhouse"
+  ],
+  "category": "explosive",
+  "description": "The VACC-6 is a delayed-action area weapon that operates through catalytic aerosol chemistry rather than conventional explosive mechanics. The device releases a proprietary suspended catalyst compound — developed under LAZARUS PHARMACEUTICALS' advanced biochemical division — that remains inert in open air but undergoes rapid exothermic oxidation when it contacts the compressed, humidified air of sealed respiratory systems: lungs, rebreathers, HVAC circulation loops, and sealed habitat environments. The resulting reaction is not a traditional explosion but a localized chemical combustion event occurring at the point of inhalation or intake, typically producing severe internal thermal trauma and toxic oxidation byproducts simultaneously.\n\nThe tactical novelty of the VACC-6 is its discrimination logic: the catalytic compound is essentially harmless in ambient atmospheric conditions but becomes a precision incendiary the moment it enters a system designed to concentrate and circulate air. This makes it extraordinarily effective in environments where conventional explosives cannot be used — pressurized habitats, clean-room facilities, medical bays, and sealed transport vehicles. Targets wearing open-face armor survive unharmed while those in sealed suit systems suffer catastrophic respiratory failure. The compound disperses to safe concentrations within 90 minutes in open environments.\n\nLAZARUS PHARMACEUTICALS has consistently denied that the VACC-6 was developed as a weapons system, characterizing the catalytic compound as a derivative of their atmospheric remediation research. Internal documents recovered by investigative journalists suggest otherwise. The weapon is called 'Breathseed' by operators because of the delay between dispersal and effect — you plant it in the air, and it grows when someone breathes.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Black market / Tier 5 covert acquisition",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Catalytic aerosol chemistry",
+    "Respiratory-contact exothermic oxidation",
+    "Selective atmospheric disbursement"
+  ],
+  "specifications": "dispersal radius: 12m initial cloud\nactivation condition: Contact with compressed/humidified respiratory airflow\nreaction temperature: 600–900°C at point of contact\natmospheric persistence: 90 minutes at standard conditions\ncompound state: Suspended nano-droplet aerosol\ndelivery form: Pressurized canister, 380g\nweight: 0.6 kg\nsafe handling: Open-air deployment only; deploying operator must use open-face respirator, not sealed system\ndetection: Requires specialized spectrographic analysis; invisible, odorless",
+  "tactical_use": "Used for covert facility denial — deployed in HVAC intake points, airlock staging areas, and pressurized vehicle garages before target arrival. Particularly effective against sealed-suit security teams and environmental control personnel who rely on closed-loop air systems. Assassination applications involve trace dispersal in enclosed vehicles or private habitat spaces. The 90-minute dissipation window allows operators to be long clear of the site before effects manifest, providing deniability. Counter-use: targets who detect the compound via spectrographic scan have a brief window to purge affected systems.",
+  "cultural_context": "The VACC-6 is one of the most controversial weapons in Meridian 88's black market ecosystem because of its perceived 'invisibility' — it leaves no blast signature, no shrapnel, no obvious crime scene. LAZARUS PHARMACEUTICALS' corporate reputation has been shadowed by persistent rumors of its involvement in several high-profile sealed-facility deaths, none of which have been conclusively prosecuted. Among covert operators, Breathseed is considered a mark of serious professional resources — it is not a weapon for street-level violence but for the kind of targeted elimination that makes bodies look like accidents.",
+  "known_users": [
+    "Corporate assassination specialists",
+    "LAZARUS PHARMACEUTICALS black operations contractors",
+    "State-level intelligence operatives",
+    "High-end fixers with access to tier-5 procurement channels",
+    "Rogue pharmaceutical researchers selling to private clients"
+  ],
+  "story_hooks": [
+    "A sealed-habitat executive dies of apparent respiratory failure — the party is hired by his family, who suspect VACC-6 but can find no evidence because the compound has long since dissipated.",
+    "LAZARUS PHARMACEUTICALS approaches the party to recover stolen research files — the files contain the synthesis protocol for the VACC-6 compound, and someone is already selling copies.",
+    "The party's safehouse has been hit with a VACC-6 dispersal — they have 90 minutes to figure out who targeted them before the compound clears and evidence disappears.",
+    "A whistleblower from LAZARUS claims the compound has a secondary, undocumented effect: long-term trace accumulation in non-sealed environments that can be activated remotely by a specific radio frequency."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "violence",
+    "crime",
+    "death",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "market",
+    "shadow",
+    "vehicle",
+    "armor",
+    "tier 5"
+  ]
+}

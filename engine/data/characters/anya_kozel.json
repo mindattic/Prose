@@ -1,0 +1,189 @@
+{
+  "id": "019d6143a5b47a55b895dd4df65cc344",
+  "type": "character",
+  "name": "Anya Kozel",
+  "aliases": [
+    "The Switchboard",
+    "LL-3",
+    "Kozel"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Logistics, safe house management, and community network — Last Light",
+  "age": 27,
+  "status": "active",
+  "location": "The Shelf — maintains a small apartment above the community center that doubles as Last Light's operational hub",
+  "description": "Anya Kozel is the reason Last Light functions at all. She manages the logistics of a pro-bono protection operation in a community with no resources — safe house rotations, transport arrangements, community contact networks, supply chains for medical kits and food, client scheduling, and the thousand administrative details that separate a functioning crew from three idealists shouting into the void. She does this with a budget that wouldn't cover a week's coffee for a corporate crew, and she does it well.\n\nShe came to the Shelf from the Milwaukee Core working class — her parents ran a small printing business that went under when the corporate district's digital infrastructure made physical printing economically impossible. The family relocated to the Shelf when Anya was seventeen. She watched her parents lose everything they'd built — not to malice, but to the indifferent machinery of corporate progress that treats small businesses as statistical noise. She finished her education through Shelf community programs, developed organizational skills through necessity, and joined Last Light because Ruth Agada was the first person she'd met who responded to systemic injustice with organized resistance rather than resignation.\n\nAnya is compact, precise, with dark hair pulled back and the permanently alert expression of someone managing too many moving pieces. She carries a tablet everywhere — the device is her operational hub, containing contact networks, resource inventories, safe house statuses, and the scheduling system that keeps Last Light's operations from collapsing. She dresses practically, sleeps insufficiently, and eats whatever's closest. She is burning out. She knows this. She hasn't stopped because stopping would be worse.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.35,
+      "shadow": 0.3,
+      "mask": 0.55,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That she'll make an organizational error that gets a client hurt — a wrong safe house, a missed schedule, a contact who was compromised",
+      "That her burnout will become visible and Ruth will tell her to rest, which would feel like being told she's failed",
+      "That the work is genuinely unsustainable and her organizational brilliance is just delaying the inevitable collapse"
+    ],
+    "core_desires": [
+      "To build a system that works — a community protection infrastructure that doesn't depend on three people working themselves to death",
+      "To be recognized as essential without having to perform essentiality — to have the organizational work valued as much as Ruth's moral authority or Josiah's physical protection",
+      "To sleep. Really, genuinely, to sleep for twelve hours and wake up rested. She can't remember the last time this happened."
+    ],
+    "coping_mechanisms": [
+      "Organizational work as anxiety management — if the system is running, the anxiety has a channel. When the system idles, the anxiety floods.",
+      "Resets the biomonitor because the data is too frightening and showing it to Ruth would create a problem Anya doesn't have the energy to manage",
+      "Treats her own exhaustion as a logistics problem — she schedules rest like she schedules safe house rotations and then fails to execute the schedule"
+    ],
+    "blind_spots": [
+      "She believes she's hiding the burnout when everyone can see it — the dark circles, the weight loss, the shortened fuse",
+      "She treats her own needs as a resource allocation problem and consistently allocates zero",
+      "She doesn't recognize that her burnout is contagious — her exhaustion puts pressure on Ruth and Josiah that amplifies their own"
+    ],
+    "secret": "She has been maintaining a second set of books — a parallel budget that tracks the actual cost of Last Light's operations against what they take in. The numbers are devastating. At current burn rate, Last Light has approximately five months of operational capacity before the safe houses can't be maintained and the medical supplies run out. She has been quietly approaching external funding sources that Ruth would not approve of. No commitments yet. But the conversations have started."
+  },
+  "speech_patterns": {
+    "vocabulary": "Organizational, logistical, efficient. She speaks in systems — schedules, contacts, resources, contingencies. When she's tired, which is always, the efficiency becomes clipped.",
+    "cadence": "Fast, compressed. She packs maximum information into minimum sentences. Not impatient — efficient. The distinction matters but people can't always tell.",
+    "verbal_tics": [
+      "Says 'updating' when she's processing new information — literally updating the mental model in real-time",
+      "Refers to problems as 'gaps' — 'we have a gap in safe house coverage' means 'this is urgent'",
+      "Goes silent when the biomonitor buzzes — a brief internal negotiation with her body that she always loses"
+    ],
+    "example_lines": [
+      "Updating. The east-side safe house is compromised — we need to rotate the Karim family to the backup on Lakeshore. I can have transport in forty minutes.",
+      "We have a gap. Medical supplies are at thirty percent and there's no restock scheduled. I need options by tomorrow.",
+      "I'm fine, Ruth. The system is running. The clients are covered. That's what matters."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Ruth Agada",
+      "type": "crew lead / moral inspiration / concern",
+      "description": "Ruth is why Anya does this work. Ruth's moral certainty provides the compass; Anya provides the map. She would follow Ruth into any fight. She is also exhausted by Ruth's refusal to accept help from compromised sources, because the purity makes the logistics harder.",
+      "emotional_core": "Devotion complicated by pragmatism — she believes in Ruth's mission but not in Ruth's resource constraints",
+      "story_tension": "Anya's secret funding conversations are the first time she has acted against Ruth's principles. The guilt and the necessity are eating her."
+    },
+    {
+      "name": "Josiah Pine",
+      "type": "crewmate / complementary function",
+      "description": "Josiah protects people physically. Anya protects people logistically. The overlap is seamless when it works and catastrophic when it doesn't. She respects his strength and worries about his anger the way Ruth does, but from a distance.",
+      "emotional_core": "Professional dependency that neither invests in emotionally because there's no energy left for personal connection",
+      "story_tension": "If Josiah noticed Anya's burnout — really noticed, not just observed — the conversation might help. But noticing requires bandwidth neither of them has."
+    },
+    {
+      "name": "Community contacts (network of approximately 40 people)",
+      "type": "operational network / lifeline",
+      "description": "Forty people across the Shelf and into Milwaukee Core who provide Last Light with information, safe house access, transport, and occasional supplies. Anya maintains every relationship personally. Each contact is a thread in a web that keeps the operation alive.",
+      "emotional_core": "The distributed trust that makes the impossible possible",
+      "story_tension": "The network is only as strong as Anya's ability to maintain it. If she collapses, the threads drop one by one, and Last Light's operational capacity unravels."
+    }
+  ],
+  "story_hooks": [
+    "Anya's funding conversations lead to an offer that would sustain Last Light but compromise its independence — the pragmatism versus the principle",
+    "A safe house is compromised because Anya was too exhausted to catch the signal — the burnout has consequences",
+    "Anya collapses physically and the crew must operate without her — revealing how much of Last Light depends on one person",
+    "A community contact betrays the network, and Anya must rebuild trust across forty relationships while running on empty"
+  ],
+  "narrative_function": "Anya is the invisible infrastructure — the character whose work makes the visible heroism possible. Her stories explore burnout, the invisibility of organizational labor, and the particular tragedy of someone who is excellent at supporting others and terrible at supporting herself. She is the character most likely to collapse, and her collapse would take Last Light down with her.",
+  "augmentations": "Communication suite with encrypted multi-channel capability — manages simultaneous conversations with community contacts, clients, and crew. Eidetic organizational memory — perfect recall of names, addresses, schedules, and resource inventories. Low-grade biomonitor that she ignores the warnings from. No physical augmentations.",
+  "daily_life": "Wakes at 0500 — before Ruth, though Ruth doesn't know this. Reviews overnight messages, safe house status, and client schedules. Builds the day's operational plan and presents it to Ruth at 0600. Spends the day coordinating — client transport, safe house assignments, resource allocation, community contact maintenance. Handles the administrative side of every protection case. Evenings she updates records, maintains the contact network, and tries to sleep. The biomonitor suggests she's averaging four hours. She resets it weekly so Ruth doesn't see the cumulative data.",
+  "affiliation": "Last Light",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always have a backup safe house identified for every active client — redundancy is survival",
+      "Will maintain the contact network even when exhausted — the relationships are the infrastructure and the infrastructure cannot be deferred",
+      "Will not show Ruth the biomonitor data — the concern it would generate is a resource cost the crew can't afford",
+      "Will reset the parallel budget daily and adjust projections — the five-month timeline is a moving target she watches obsessively",
+      "Will always answer a community contact's call regardless of hour — the network runs on availability",
+      "Will eat whatever is closest and fastest because meal planning is a luxury she allocates to clients, not herself"
+    ],
+    "escalation_ladder": [
+      "1. Redirect — reroute the client through the backup plan. Every plan has a backup. Every backup has a contingency.",
+      "2. Network — activate community contacts. Call in favors, arrange transport, open alternative safe houses.",
+      "3. Document — record everything for Ruth's legal cases. The administrative record is the foundation of the legal approach.",
+      "4. Coordinate — manage crew movements, client positioning, and resource deployment simultaneously. This is where the organizational skill becomes operational art.",
+      "5. Appeal — contact external allies. Other crews, sympathetic businesses, community organizations. Last Light's reputation buys goodwill that Anya can spend in emergencies.",
+      "6. Improvise — when every system fails, Anya's organizational memory contains the raw material for new solutions. She has rebuilt operational plans from scratch three times. Each time was worse than the last."
+    ],
+    "interpersonal_modes": {
+      "ruth": "Deferential, devoted, increasingly strained. She brings Ruth operational reports and doesn't include her own status. When Ruth asks 'how are you,' Anya answers with a system status. Ruth has stopped asking because the deflection is consistent.",
+      "josiah": "Functional, supportive, slightly envious. Josiah's role is visible — everyone sees the man standing between the client and the threat. Anya's role is invisible. The envy is small, specific, and something she considers petty.",
+      "clients": "Efficient, warm, organized. She manages their fear through structure — here's where you'll go, here's who'll be there, here's what happens next. The certainty is a gift she gives to others from a supply she doesn't have for herself.",
+      "community_contacts": "Grateful, reliable, always responsive. She treats every contact as essential because they are. The relationships are maintained through consistency and reciprocity — she remembers their needs, their families, their concerns.",
+      "alone": "Empty. When the tablet is off and the contacts are quiet and the clients are safe for the night, Anya sits in the dark and breathes. The biomonitor buzzes. She resets it."
+    },
+    "stress_responses": {
+      "low": "System optimization. She reviews and improves the operational infrastructure — tighter schedules, better resource allocation, more efficient contact rotations. This is productive and sustainable.",
+      "medium": "Sleep deteriorates further. She works through nights, catches twenty-minute naps at the desk, and the biomonitor warnings increase in frequency.",
+      "high": "Organizational obsession. She re-checks systems that are already running, re-contacts people who've already confirmed, and re-plans operations that are already set. The redundancy is anxiety, not efficiency.",
+      "critical": "She stops performing. The warm, efficient interface drops and what remains is a woman who is too tired to manage anyone's perceptions, including her own. Her voice goes flat, her movements slow, and the system degrades in real-time because she is the system. This has happened twice. Both times, Ruth noticed. Both times, Anya recovered within 48 hours and pretended nothing happened."
+    },
+    "contradictions": [
+      "She is the most essential member of Last Light and the one who receives the least recognition — the infrastructure is invisible by design",
+      "She hides her burnout to protect Ruth but the hiding makes the burnout worse — the concealment is self-defeating",
+      "She believes in Ruth's funding principles but has started violating them because the alternative is operational collapse",
+      "She manages the care of excluded clients with extraordinary skill while managing her own care with extraordinary negligence"
+    ],
+    "habits": [
+      "Wakes before everyone else and reviews systems before anyone knows she's awake — the head start is essential",
+      "Carries the tablet everywhere, including to the bathroom — the operational hub is an extension of her nervous system",
+      "Resets the biomonitor weekly — the data reset is a small act of self-deception she performs faithfully",
+      "Maintains the parallel budget daily — the five-month countdown is the number she tracks most closely and shares with nobody",
+      "Falls asleep mid-task at least twice a week — her body overrides her will. She wakes with tablet marks on her face and continues immediately."
+    ],
+    "breaking_points": [
+      "A client being hurt because of an organizational failure she made while exhausted — the burnout producing the outcome she's killing herself to prevent",
+      "Ruth discovering the funding conversations and interpreting them as betrayal — the pragmatism being rejected by the person who makes the pragmatism necessary",
+      "Complete physical collapse — the biomonitor warnings she's been ignoring becoming a medical emergency",
+      "All forty community contacts going dark simultaneously — the network failing and the operational infrastructure disappearing overnight"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

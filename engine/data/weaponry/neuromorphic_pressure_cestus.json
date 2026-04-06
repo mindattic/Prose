@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab367d15b40cfb512fd0ce58",
+  "name": "Neuromorphic Pressure Cestus",
+  "type": "weapon",
+  "aliases": [
+    "NPC-1 'Reflex'",
+    "Reflex",
+    "The Second Brain"
+  ],
+  "category": "melee",
+  "description": "The Neuromorphic Pressure Cestus is a combat glove system developed by Tessera Corponation's advanced human-machine interface division, representing a convergence of their proprietary neural feedback architecture with conventional close-combat augmentation. The cestus consists of a form-fitting composite glove with an embedded neuromorphic processing layer — a thin-film synthetic neural network printed directly onto the glove's inner surface and in direct contact with the operator's skin. This network reads the operator's own motor intention signals at the skin surface level, predicting the trajectory and timing of a strike approximately 80 milliseconds before the operator's conscious mind finalizes the movement.\n\nThis predictive capability feeds into the cestus's reactive systems: a network of micro-pneumatic pressure cells distributed across the striking surfaces inflates and reconfigures in the 80-millisecond window before impact, dynamically reshaping the glove's contact geometry to maximize force transmission for the specific strike type being thrown. A hook, a straight, an elbow, a palm strike — each receives a different pressure cell configuration optimized for that movement's biomechanical profile. The result is a weapon that makes the operator's natural fighting instincts more effective, rather than requiring them to learn a new system.\n\nTessera Corponation markets the NPC-1 as 'augmentation that learns you,' and the marketing is largely accurate — the neuromorphic layer adapts over approximately forty hours of use, progressively refining its model of the specific operator's motor patterns. An NPC-1 calibrated to one user is measurably less effective in another's hands, a feature Tessera frames as personalization but which has significant implications for theft, transfer, and the black market.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Neural feedback loops",
+    "Neuromorphic signal processing",
+    "Micro-pneumatic adaptive geometry"
+  ],
+  "specifications": "weight: 0.4 kg per glove\nneuromorphic layer: Tessera Type-N thin-film synthetic neural network, skin-contact\nprediction window: 80 ms pre-strike motor intention reading\npressure cell count: 224 micro-pneumatic cells per glove\ncalibration period: ~40 hours of active use for full operator-specific optimization\npower source: Integrated flexible microcell, 6-hour operation\ncross-operator performance: Approximately 60% effectiveness when used by non-calibrated operator\nglove material: Composite ceramic-fiber outer shell, neuromorphic-embedded inner liner",
+  "tactical_use": "The NPC-1 is used by close-combat specialists who rely on instinctive fighting styles rather than formalized martial systems — its predictive architecture works best when the operator fights naturally and does not attempt to consciously direct the glove's behavior. Operators report a sensation of hitting 'harder than they should' without understanding why, which Tessera's documentation confirms is the intended user experience. In extended engagements, the glove's adaptive pressure redistribution reduces hand fatigue and impact trauma to the operator, extending effective fighting endurance. The weapon has no active offensive capability — it amplifies what the operator does rather than adding new attack types, which makes it invisible to most weapon detection systems and difficult to classify under existing legal frameworks.",
+  "cultural_context": "The NPC-1 occupies a strange position in Meridian 88's augmentation culture — it is simultaneously one of the most sophisticated combat tools available and one of the least visible, lacking the obvious aesthetic of most combat augmentation. Among Tessera Corponation's corporate culture, gifting a calibrated NPC-1 is considered a significant gesture of trust, as a calibrated glove represents the neural signature of its owner in a tangible form. This has given rise to a disturbing black market in 'harvested' calibrations — neuromorphic data extracted from seized or stolen gloves and analyzed to produce detailed models of an operator's fighting patterns, motor habits, and reaction signatures. Tessera Corponation is aware of this market and has been accused of doing nothing because the data itself is commercially valuable.",
+  "known_users": [
+    "Tessera Corponation executive protection details",
+    "Advanced close-combat contractors in the Tier 3+ market",
+    "Competitive underground fighters seeking legal augmentation",
+    "Intelligence operatives who need combat capability without visible weapons",
+    "Yuna Parallel, Tessera Corponation field liaison and documented NPC-1 prototype user"
+  ],
+  "story_hooks": [
+    "A harvested calibration from a deceased Tessera security operative is circulating on the black market — but analysis of the neural signature reveals fighting patterns and stress responses that suggest the operative witnessed something they were not supposed to, and Tessera wants the calibration data destroyed before someone else reads what is in it.",
+    "A player character is offered an NPC-1 pre-calibrated to a legendary underground fighter who disappeared six months ago — the glove works better than anything they have ever worn, but they keep having intrusive motor memories that are not theirs, and someone is willing to pay very well to find out who the original owner was.",
+    "Tessera Corponation's neuromorphic division has been quietly approached by a defense contractor who wants to use the NPC-1's predictive architecture not for combat, but to build a system that can read an opponent's fighting intentions before they act — a non-contact application that would make the NPC-1's combat use look trivial by comparison."
+  ],
+  "ammunition_type": [
+    "none"
+  ],
+  "tags": [
+    "melee",
+    "weapon",
+    "combat",
+    "war",
+    "theft",
+    "trust",
+    "love",
+    "augment",
+    "neural",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "rain",
+    "tier 3"
+  ]
+}

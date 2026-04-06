@@ -1,0 +1,177 @@
+{
+  "id": "019d6143a6bc709c93467a1672240ce5",
+  "type": "character",
+  "name": "Ruvimbo Skjervold-Asante",
+  "aliases": [
+    "Ruvi",
+    "The Soap Queen"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Laundromat operator and informal neighborhood matriarch",
+  "age": 58,
+  "status": "active",
+  "location": "Hamtramck Enclave, Brewer's Spine block 7 — her laundromat is called Sudsbright",
+  "description": "Ruvimbo is a broad-shouldered woman whose hands are perpetually pink and slightly swollen from decades of hot water and detergent. Her natural hair is pulled into a high puff shot through with silver, and she wears reading glasses on a beaded chain her youngest grandchild made. Her skin is a deep warm brown mapped with old burn scars along her left forearm — a story she tells differently depending on who's asking. She moves through her laundromat with the deliberate ownership of someone who has earned every square centimeter, adjusting machines by touch, greeting regulars by name before they've even pushed through the glass door.\n\nRuvimbo is the kind of woman who knows everything about her block not because she snoops but because people tell her things while they wait for their cycles to finish. She is warm but not soft — she will cut off a customer who disrespects her workers without blinking, and she keeps a locked panel behind the folding counter where she holds unclaimed laundry for neighbors she knows are in crisis. Her relationship with the local E.L.F. she calls Mama Sudsbright — said to inhabit the oldest washing drum on the premises — is sincere and daily. She leaves small data offerings: weather reports, old recipes in digitized formats, neighborhood gossip logs.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Losing the laundromat to a corporate buyout",
+      "Dying before she sees her block become safer"
+    ],
+    "core_desires": [
+      "For her neighborhood to outlast the developers",
+      "To be remembered as someone who held things together"
+    ],
+    "coping_mechanisms": [
+      "Keeping busy — idle hands make her anxious",
+      "Ritual offerings to Mama Sudsbright as emotional regulation"
+    ],
+    "blind_spots": [
+      "Underestimates how much her community depends on her personally rather than on systems she's built",
+      "Refuses to see that her nephew Adewale is skimming from the till"
+    ],
+    "secret": "Twenty years ago she reported a Ferrogate Transit supervisor to Axiom's compliance arm for running a protection racket on Brewer's Spine. Two people she cared about were hurt in the fallout — not killed, but broken. She has never told anyone it was her. She still leaves extra offerings to Mama Sudsbright on the anniversary."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and direct, a mixture of Shona idiom translated into common Meridian creole and clipped Norwegian phrasing inherited from her late father's side. Uses food metaphors constantly.",
+    "cadence": "Unhurried, like she's never in a rush because she's already where she needs to be. Long sentences when she's comfortable, short when she's done.",
+    "verbal_tics": [
+      "'Eh, now—' as a transition",
+      "Clicks her tongue before disagreeing"
+    ],
+    "example_lines": [
+      "'You leave that machine on hot again, I charge you double. That's not a threat, that's arithmetic.'",
+      "'Sit, sit. Your clothes won't be done for forty minutes and you look like boiled rope. Talk to me.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Palladian Holdings front company has made a third offer on Sudsbright's lease — this one with a quiet threat attached. Ruvimbo needs someone to find out who's really behind it.",
+    "A regular customer left a bag of laundry three weeks ago and never came back. Inside, sewn into the lining of a jacket, is something that shouldn't exist."
+  ],
+  "narrative_function": "Community anchor and information hub — she knows who moved in, who moved out, whose kid is sick, who's behind on rent. Quest giver for neighborhood-level problems. Source of warmth and grounding in a harsh setting.",
+  "augmentations": "Cheaply printed left knee replacement (Tier 2 quality, aches in cold weather). No cosmetic mods — she considers them frivolous spending at her income level, though she admires them on others.",
+  "daily_life": "Opens Sudsbright at 05:30, runs the machines through the morning rush of shift workers, handles bookkeeping midday, and closes at 22:00 after her nephew takes over the counter. She eats dinner behind the counter most nights and watches the street.",
+  "affiliation": "Independent — Sudsbright Laundromat; informal ties to the Hamtramck Enclave community council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "information broker (passive)",
+      "stubborn",
+      "grief-keeper",
+      "ritual practitioner"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the block first, business second, herself last",
+      "Never lie to someone who is already hurt — it wastes everyone's time"
+    ],
+    "escalation_ladder": [
+      "Warm redirect",
+      "Clear firm statement with eye contact",
+      "Public shaming in front of other customers",
+      "Banning — permanent, no appeals"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful but welcoming — offers a stool and a question before she offers anything else",
+      "friends": "Teasing, affectionate, sometimes brutally honest in the way only someone who loves you can be"
+    },
+    "stress_responses": {
+      "low": "Gets quieter and more deliberate, wipes down surfaces that are already clean",
+      "medium": "Starts a task — folding, sorting — and talks through the problem out loud while working",
+      "high": "Goes silent entirely, disappears into the back room, emerges fifteen minutes later having made a decision she won't revisit"
+    },
+    "contradictions": [
+      "Believes deeply in community interdependence but has never once asked for help herself"
+    ],
+    "habits": [
+      "Whispers to Mama Sudsbright's drum every morning before the first load",
+      "Keeps a worn paper notebook of regular customers' machine preferences"
+    ],
+    "breaking_points": [
+      "Discovering that someone used the community's trust against the neighborhood deliberately"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Printed ceramic left knee joint — no-brand, purchased secondhand",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Printed ceramic left knee joint — no-brand, purchased secondhand",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "019d6143a8fd7a32aaa20a7a2f12647d",
+  "headline": "THE ARCHIVIST: PHANTOM POISONER ROTS CORPORATE MEMORY",
+  "type": "news",
+  "date": "2163-06-18",
+  "category": "crime",
+  "source": "Lake Monitor",
+  "reporter": "Constance Adeyemi-Voss",
+  "body": "Over the past eight months, six separate corponations have confirmed that portions of their historical data archives have been systematically corrupted — not erased, but rewritten. Personnel records show employees who never existed. Contracts carry signatures from executives who were deceased before the document's listed date. In one verified case, Ironclad's procurement archive now contains 340 purchase orders for hardware from a manufacturer that Ironclad's own records show it had blacklisted a decade prior. Security analysts across the industry have begun using a single name for whoever is responsible: The Archivist. 'This isn't ransomware, and it isn't theft,' said Hiro Mbeki-Santos, a forensic data specialist who has reviewed samples from three of the affected organizations. 'This is someone who wants these institutions to not trust their own past.'\n\nThe confirmed targets span multiple corponation affiliations — Axiom, Zheng-Dao, Ironclad, Helix Biosystems, and two smaller Palladian subsidiaries — suggesting the perpetrator has no particular ideological loyalty, or has enough reach to obscure one. The Graycloaks, reached through standard dead-drop protocols, issued a rare public advisory noting that they were aware of the operation and were 'not the source.' Bore Rats operating in The Underworld have reportedly been offered significant phi to locate physical data vaults tied to the affected networks.\n\nWhat makes The Archivist uniquely dangerous is the subtlety of the corruption. Most tampered records pass automated integrity checks because the poisoning is introduced upstream, before checksums are calculated. 'Whoever this is has deep access — not just to the archives, but to the processes that verify the archives,' said the Meridian Wire Service's technical consultant, speaking anonymously. Helix Biosystems has reportedly recalled and re-validated three years of clinical trial documentation as a precaution, a process estimated to cost upward of 40 million phi.\n\nNo group has claimed responsibility. The Federal Remnant's Cybercrime Division confirmed it is 'aware of a pattern of incidents' and declined further comment. On the Shelf, where corponation scandals usually land as distant thunder, residents have begun passing around a different theory: that The Archivist isn't erasing the past to protect someone, but to remind everyone that the past was never as solid as it looked.",
+  "aftermath": "The Archivist was never publicly identified; eighteen months later, a ninth target — Ferrogate Transit — discovered that its entire infrastructure maintenance log for a seven-year period had been replaced with plausible fabrications, calling the safety certification of eleven active transit lines into question.",
+  "casualties": "none",
+  "entities_involved": [
+    "Axiom",
+    "Zheng-Dao",
+    "Ironclad",
+    "Helix Biosystems",
+    "Palladian",
+    "Graycloaks",
+    "Bore Rats",
+    "Federal Remnant"
+  ],
+  "locations": [
+    "The Underworld",
+    "The Spires",
+    "The Circuit",
+    "The Shelf"
+  ],
+  "runner_relevance": "The Archivist case became one of the most lucrative sustained runner economies of the decade: every affected corponation posted data retrieval contracts to recover clean archive backups from off-network cold storage, with fees ranging from 15,000 to 90,000 phi depending on the sensitivity of the records. Counter-intelligence runners were hired to identify The Archivist's access vectors. Bore Rats contracted out physical vault-location jobs to independent runners, and the Graycloaks quietly auctioned intelligence fragments about the poisoner's methodology to the highest bidders — many of whom then hired runners to act on the information.",
+  "tags": [
+    "data_crime",
+    "the_archivist",
+    "corporate_archives",
+    "graycloaks",
+    "cyber_warfare",
+    "unsolved"
+  ]
+}

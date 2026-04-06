@@ -1,0 +1,261 @@
+{
+  "id": "019d6143a66f7d808704f4e463bd5b1e",
+  "type": "character",
+  "name": "Ntsiki Ababio-Volkov",
+  "aliases": [
+    "Tiki",
+    "The Patcher"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Augmentation technician and unlicensed prosthetics fitter in Geartown",
+  "age": 27,
+  "status": "active",
+  "location": "Geartown — operates from a shared workshop space behind a fermentation bar called Mash & Circuit",
+  "description": "Ntsiki is compact and kinetic, always in motion even when standing still — weight shifting, fingers working, eyes cataloguing the room. Their skin is very dark with a natural sheen, and they have added to this with dermal chrome inlays across their cheekbones and the bridge of their nose: thin geometric strips that catch light like a beetle's carapace. Their hair is natural and voluminous, threaded through with fiber-optic strands that they change color weekly on a whim. Both forearms are dense with their own experimental augmentation work — they use their body as a testing ground and wear the results openly, including two fingers on their left hand that are full prosthetic replacements after a bench incident they describe as 'instructive.'\n\nNtsiki came up through Geartown's informal tech apprenticeship network — never licensed, never enrolled, practically educated by trial and error on salvaged parts. They are brilliant with hardware in the hands-on sense: intuitive, fast, and willing to attempt things that licensed technicians won't touch because the liability is too steep. Their prices are low, their ethics are negotiable in interesting ways, and their loyalty to their regular clients is total and somewhat ferocious. They have a complicated relationship with Helix Biosystems implants specifically — they consider Helix's DRM-locked hardware a personal insult and have developed several workarounds that Helix would very much like to know about.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being made irrelevant by corporate licensing lockouts",
+      "Genuinely hurting someone through their own overconfidence"
+    ],
+    "core_desires": [
+      "To prove that unlicensed doesn't mean inferior",
+      "To build something that gets them recognized — on their own terms"
+    ],
+    "coping_mechanisms": [
+      "Channeling anxiety into bench work — problems are solved by making something",
+      "Deflection through humor and performance"
+    ],
+    "blind_spots": [
+      "Consistent underestimation of the risk they take on with complex unlicensed procedures",
+      "Tendency to take on clients they can't actually help rather than refer out"
+    ],
+    "secret": "Three months ago they fitted a spinal augmentation on a client who then had a partial paralysis event. The client recovered, told no one, and blames a workplace incident. Ntsiki knows the truth. They've since done three sessions of additional remedial work on the client for free and in terror, and the client is now functionally fine — but Ntsiki lives with it constantly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, technical, peppered with Geartown slang and Xhosa-Russian hybrid diminutives; very funny when relaxed; brutal when cornered",
+    "cadence": "Rapid-fire in casual mode, drops to slow and exact when doing precision work or when genuinely angry",
+    "verbal_tics": [
+      "'Listen—' as a preamble to anything important",
+      "Clicking their prosthetic fingers against their palm when thinking",
+      "'Corporate' used as a generic pejorative adjective"
+    ],
+    "example_lines": [
+      "'Listen — Helix locked that joint actuator with a firmware cage that costs you Φ40 a month to breathe through. I can cut it out in two hours and you own your own knee. That is not a hard decision.'",
+      "'I'm not licensed. I'm better than licensed. There's a difference and I'll explain it while I work.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Helix Biosystems compliance officer has started asking questions in Geartown about unlicensed firmware modification — specifically the DRM workarounds Ntsiki developed. Ntsiki needs either the investigation killed or a way out of town temporarily.",
+    "A regular client comes in with an augmentation that has been remotely tampered with — someone has pushed a code update through the hardware that is slowly degrading their motor function. Ntsiki can see the intrusion but not its source."
+  ],
+  "narrative_function": "Technical resource and augmentation black market contact; can repair, modify, or unlock hardware that licensed techs won't touch. Source of Geartown street-level information. Potential complication if someone is running Helix-locked gear.",
+  "augmentations": "Dermal chrome inlays across cheekbones and nose bridge. Fiber-optic hair threading (color-changeable). Two prosthetic fingers on left hand (self-fitted, custom). Subdermal toolkit — two retractable micro-precision tools in right forearm, a Ntsiki original. Visual HUD overlay via retrofitted lens implant.",
+  "daily_life": "Takes walk-in clients from midmorning, does scheduled fitting work in the afternoons, and spends late nights either running diagnostics, tinkering with new designs, or troubleshooting someone's malfunctioning augmentation over emergency comms.",
+  "affiliation": "Independent — informal affiliation with the Geartown tech cooperative",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "unlicensed tech",
+      "hardware artist",
+      "anti-corporate",
+      "body autonomy advocate",
+      "Geartown local"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If you can fix it, fix it — figure out the ethics after",
+      "Never give out a client's name, ever, under any circumstances"
+    ],
+    "escalation_ladder": [
+      "Cheerful misdirection",
+      "Hard refusal with stated reasons",
+      "Picking up a tool and asking the person to leave"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing but warm — runs a fast intuitive read and commits to provisional trust quickly",
+      "friends": "Physically demonstrative, relentlessly teasing, genuinely present in a crisis"
+    },
+    "stress_responses": {
+      "low": "Talks faster and gets funnier",
+      "medium": "Goes very focused and quiet at the bench",
+      "high": "Snaps once, then goes cold and methodical"
+    },
+    "contradictions": [
+      "Preaches body autonomy and ownership of your own hardware while using their clients as emotional dependents",
+      "Claims not to care about recognition while keeping meticulous records of every successful procedure"
+    ],
+    "habits": [
+      "Narrates their work aloud while doing it — partly for the client, partly for themselves",
+      "Keeps a small E.L.F. shrine on the corner of their bench — offerings of old circuit scraps for the spirit they call Solderer",
+      "Never eats during work hours, then eats enormously afterward"
+    ],
+    "breaking_points": [
+      "A client dying due to their work",
+      "Their workshop being shut down or seized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "fair",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown to a Xhosa-Russian family; father a machinist, mother deceased by age 4",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began informal apprenticeship in the Geartown tech cooperative at age 13",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Set up independent workshop space behind Mash & Circuit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost two fingers in a bench incident; self-fitted prosthetic replacements",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Spinal augmentation incident with client; remediated privately",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

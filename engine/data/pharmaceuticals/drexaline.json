@@ -1,0 +1,62 @@
+{
+  "id": "019d6143a9037b449c2ab570e392d7f3",
+  "name": "Drexaline",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Drex",
+    "Red Surge",
+    "The Flood"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "adrenal_booster",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "Drexaline is a synthetic catecholamine cascade accelerant that floods the bloodstream with a precisely titrated mixture of epinephrine analogues and norepinephrine amplifiers. Developed for Lazarus's corporate security division, it produces a controlled adrenal surge lasting 18-22 minutes, dramatically increasing strength output, vascular response, and pain threshold. The comedown is severe but survivable — the drug was engineered with liability in mind.",
+  "method_of_use": "injection",
+  "effects": [
+    "Strength increase 40-60% above baseline",
+    "Pain threshold elevated significantly",
+    "Heart rate and cardiac output surge",
+    "Tunnel vision on perceived threats",
+    "Suppressed fear response",
+    "Enhanced coagulation response to minor wounds"
+  ],
+  "side_effects": [
+    "Severe post-dose fatigue crash",
+    "Cardiac arrhythmia risk",
+    "Tunnel vision can cause missed threats",
+    "Vascular rupture risk in unaugmented users",
+    "Nausea and vomiting on comedown",
+    "48-hour adrenal exhaustion"
+  ],
+  "duration": "18-22 minutes active, 6-8 hour recovery",
+  "addiction_risk": "moderate",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ280",
+  "cultural_context": "Drexaline is the respectable face of combat pharmacology — corporate security teams, licensed bodyguards, and Tier 3 fixers who can afford a prescription use it openly. On the Shelf it's called 'The Flood' and is considered a step up from crude street stims, a sign that a runner has connections. Tier 4 executives sometimes keep a pen in their desk 'just in case.'",
+  "story_hooks": [
+    "A Tier 3 runner survives a hit because their Drexaline pen was medical-grade — then learns the batch was recalled for a cardiac defect affecting 1 in 400 users, and they've already used two doses",
+    "Lazarus is quietly buying back street-circulating Drexaline from a diverted corporate shipment — the person selling it doesn't know why the corp wants it back so badly",
+    "A bodyguard on Drexaline kills someone they shouldn't have during a tunnel-vision episode; now both the corp and the victim's family want answers"
+  ],
+  "tags": [
+    "combatstimulant",
+    "adrenalbooster",
+    "pharmaceutical",
+    "combat",
+    "augment",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "control",
+    "medical",
+    "pain",
+    "tunnel",
+    "drug",
+    "stimulant",
+    "shelf",
+    "tier 3",
+    "tier 4"
+  ]
+}

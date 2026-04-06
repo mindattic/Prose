@@ -1,0 +1,104 @@
+{
+  "id": "019d6143a93f75eea07c66c37c92b1ea",
+  "type": "place",
+  "name": "The Garret",
+  "aliases": [
+    "Near West Side",
+    "Fulton Sprawl",
+    "The Garret District",
+    "Greek Row"
+  ],
+  "description": "The Near West Side was always a place of collisions — Greek immigrants and meatpackers, university students and public housing residents, sports fans and the people who lived in the buildings that got demolished to build the stadiums. When the corporate sovereignty treaties carved Meridian 88 into territories, the Garret became the collision itself: a district defined by the fact that no single entity could claim it. Three corponations hold partial jurisdiction. Two universities maintain sovereign campus zones. The United Center — now the Tessera Colosseum — operates as an independent entertainment franchise territory. And between all of these, in the gaps and seams, the Garret just kept being what it always was: a place where different worlds rub against each other and generate heat.\n\nFulton Market survived its transformation into a corporate food-tech corridor by becoming something stranger than anyone planned. The old meatpacking infrastructure was repurposed for synthetic protein production, and the restaurants that once served Φ200 tasting menus now serve engineered cuisine to Tier 3 and 4 workers on lunch breaks from the nearby corporate campuses. But beneath the sanitized surface, the original market culture persists in basement kitchens and back-alley food stalls where analog ingredients — real vegetables, actual animal protein — command prices that would make the old Fulton Market restaurateurs weep. Greektown compressed into a four-block enclave where the descendants of the original community run neural-interface taverns that serve ouzo alongside memory-sharing experiences curated from a century of immigrant nostalgia.\n\nThe UIC campus became a Tessera Corponation research annex in the 2050s, its academic mission officially preserved but practically subordinated to corporate R&D priorities. Students still attend, but their research belongs to Tessera before the ink dries. The campus perimeter is a hard jurisdiction line — step off the sidewalk and your legal rights change mid-stride. This makes the blocks immediately surrounding UIC some of the most legally complex terrain in Meridian 88, a landscape where freelancers and fixers thrive because nobody can agree on whose law applies.\n\nThe Garret's defining feature is density of contradiction. Corporate workers eat lunch next to untier-ed refugees. Research labs share walls with unlicensed clinics. The Tessera Colosseum broadcasts combat sports to millions while, three blocks away, people fight for real in disputes that no jurisdiction will adjudicate. It is the most honest district in Meridian 88, because it makes no attempt to pretend that any of this makes sense.",
+  "atmosphere": {
+    "sights": [
+      "The Tessera Colosseum's holographic exterior cycling through event promotions visible from twenty blocks away",
+      "UIC campus perimeter walls — clean white concrete with embedded surveillance, a hard line between corporate academia and the street",
+      "Fulton Market's synthetic protein vats visible through factory windows, glowing pink and amber",
+      "Greektown's compressed four-block enclave lit in blue and white neon, neural-tavern signs flickering in Greek and English",
+      "Jurisdiction boundary markers — subtle color shifts in street lighting indicating whose law applies where"
+    ],
+    "sounds": [
+      "The roar of the Tessera Colosseum crowd bleeding through the walls on fight nights",
+      "Three different corporate announcement systems overlapping in competing frequencies",
+      "Sizzling from Fulton Market basement kitchens where analog food is prepared in secret",
+      "University lecture audio leaking from campus perimeter speakers — corporate-approved curriculum broadcast as ambient propaganda",
+      "Bouzouki music from the neural-taverns, layered with subsonic memory-share frequencies"
+    ],
+    "smells": [
+      "Synthetic protein processing — a clean, faintly sweet industrial smell that coats the Fulton blocks",
+      "Real cooking from the underground analog kitchens — garlic, smoke, animal fat",
+      "Ozone from the Tessera Colosseum's energy shields",
+      "The particular sterile nothing-smell of corporate campus air filtration"
+    ],
+    "feel": "A district that vibrates with jurisdictional friction. Every block is a negotiation between competing authorities, and the people who live here have learned to read the invisible lines the way sailors read currents. Exhausting and alive in equal measure.",
+    "tags": []
+  },
+  "demographics": "The most jurisdictionally diverse district in Meridian 88. Population includes Tessera employees (Tier 3-4), UIC research staff and students (Tier 2-3), Fulton Market food-tech workers (Tier 2), the compressed Greektown community (Tier 1-2), and a transient population of untier-ed individuals navigating the jurisdiction gaps.",
+  "economy": "Layered economies stacked on top of each other. Corporate food-tech dominates Fulton Market's visible economy. The underground analog food market generates significant gray-market revenue. The Tessera Colosseum's entertainment economy pulls in credit from across M88. UIC's research output feeds Tessera's IP pipeline.",
+  "power_structure": "Tessera Corponation holds the largest jurisdiction footprint through UIC and the Colosseum. Ringo Corponation controls several Fulton Market production facilities. Palladian Construction maintains infrastructure rights for the residential blocks. The Greektown enclave operates semi-autonomously through a community council that predates corporate sovereignty.",
+  "dangers": [
+    "Jurisdiction boundary confusion — legal rights change block by block, sometimes mid-street",
+    "Tessera campus security responds aggressively to perceived perimeter breaches",
+    "Colosseum fight nights draw volatile crowds and opportunistic crime",
+    "Corporate IP enforcement teams patrol aggressively near UIC — possessing the wrong data is a sovereign crime",
+    "Underground analog food operations attract both health enforcement and protection rackets"
+  ],
+  "opportunities": [
+    "Jurisdiction gaps create demand for freelance fixers who understand the legal patchwork",
+    "The analog food underground pays well for supply chain protection and ingredient smuggling",
+    "Tessera's research annex leaks information like a sieve — the right data broker can retire on a single semester's yield",
+    "Greektown's neural-taverns are premium meeting spaces for discreet negotiations",
+    "The Colosseum's entertainment economy generates work for security, logistics, and cleanup crews"
+  ],
+  "story_hooks": [
+    "A UIC researcher has gone missing inside the campus perimeter — their family cannot enter to search, Tessera claims no knowledge, and the researcher's last message was a single word: 'Sublevel'",
+    "The Greektown community council is being pressured to sell their autonomous status to Tessera — they are looking for leverage, and they believe it exists in the university archives",
+    "Someone is doctoring the synthetic protein at three Fulton Market facilities, introducing a compound that interacts with neural interfaces in ways nobody can yet explain"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Conservatory",
+      "The Loom",
+      "Pilsen Veil",
+      "The Meridian Core"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tessera corporate employees commuting between campus and Colosseum districts",
+    "Analog food smugglers and underground restaurateurs",
+    "Freelance fixers navigating the jurisdiction patchwork",
+    "Students and researchers trapped in Tessera's academic pipeline",
+    "Fight fans and gamblers drawn to Colosseum events"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.881,
+    "lng": -87.659,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "combat",
+    "crime",
+    "smuggle",
+    "loss",
+    "memory",
+    "neural",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "control",
+    "clinic",
+    "doctor",
+    "alley",
+    "market",
+    "rain",
+    "night",
+    "rights",
+    "refugee",
+    "food"
+  ]
+}

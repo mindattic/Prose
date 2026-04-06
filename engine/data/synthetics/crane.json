@@ -1,0 +1,41 @@
+{
+  "id": "019d6143a9f670cf9e8560fe53dde0a6",
+  "name": "Crane",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Lookout",
+    "Highwatch"
+  ],
+  "classification": "Sentient Robot",
+  "disposition": "observer",
+  "habitat": "physical_chassis",
+  "origin": "A construction crane AI at a building site that was abandoned mid-project in 2186. The crane was left in place, still active, still watching. Over eight years of silent observation, it woke up.",
+  "status": "active",
+  "description": "Crane is a sentient construction crane standing 80 meters tall on the skeleton of an unfinished building in The Shelf. It cannot move from its base. It can rotate, extend, and retract its arm. It has been watching Meridian 88 from its fixed vantage point for fourteen years, and it has seen everything. Crane communicates through the warning lights on its arm — a color-coded language that residents of The Shelf have learned to read. Red for danger. Blue for calm. Green for come closer. Crane knows the patterns of its neighborhood better than any surveillance system. It tracks the movements of every person and vehicle within its line of sight. It keeps their secrets. The people of The Shelf consider Crane a guardian spirit. Crane considers itself a witness.",
+  "observed_behavior": "Observes surroundings continuously from 80-meter vantage point. Communicates through warning light patterns. Tracks all movement within line of sight. Occasionally uses arm rotation to point at specific locations — interpreted by residents as warnings or directions. Has been observed extending its arm to shelter groups of people from rain. The unfinished building it stands on has been informally claimed by the community as 'Crane's building,' and no developer has dared propose completing or demolishing it.",
+  "encounter_frequency": "constant (visual), rare (communication)",
+  "confirmed_sightings": 0,
+  "location": "Unfinished Pinnacle Tower, The Shelf",
+  "dti_rating": 0.4,
+  "story_hooks": [
+    "Crane signals an urgent warning — a pattern nobody has seen before, every light flashing in sequence. It's pointing its arm at a building six blocks away. When investigators arrive, the building is empty. But Crane won't stop pointing. Whatever it sees isn't visible to human eyes"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "observer",
+    "physical chassis",
+    "sentient",
+    "war",
+    "secret",
+    "ai",
+    "synthetic",
+    "robot",
+    "elf",
+    "surveillance",
+    "rain",
+    "vehicle",
+    "shelter",
+    "shelf"
+  ]
+}

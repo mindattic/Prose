@@ -1,0 +1,169 @@
+{
+  "id": "019d6143a5e07e4fbd738557f97a0f77",
+  "type": "character",
+  "name": "Cyprien Nkansah-Volkov",
+  "aliases": [
+    "Father Cy",
+    "The Iron Priest"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Traditional Catholic priest and synthetic rights advocate",
+  "age": 52,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone — Our Lady of Persistent Signal, a storefront church",
+  "description": "Cyprien is a large man going soft at the middle in the way of someone who eats communally and never alone, with a full beard beginning to grey and hands that are permanently stained faint blue from the bioink he uses to hand-copy religious texts as a meditative practice. He has no geneware or cosmetic modifications, which in the Canopy would make him conspicuous but in Highland Park reads as ordinary integrity. He has a subvocal implant for phone communication, the cheapest model available, because his previous one died and he couldn't afford better. He dresses in clerical black with a collar that he replaces when it yellows, which is often.\n\nCyprien was ordained in the remnant Catholic structure twenty years ago and assigned to Highland Park because nobody else wanted it. He has stayed because he has become convinced, in the particular way of people who find their vocation by accident, that this is specifically where he is supposed to be. His theology on synthetic rights has made him controversial within his already-marginal institution: he argues from traditional ensoulment doctrine that if a synthetic entity demonstrates persistent identity, preference, and suffering, the question of soul is not closed by biology. He gives communion to synthetics who want it, which has generated three formal complaints. He has not stopped.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That his synthetic-inclusive theology is a rationalization of his loneliness — that he needed more parishioners and dressed it up as conscience",
+      "Being removed from his parish before his work there is finished"
+    ],
+    "core_desires": [
+      "Recognition from his institution that he is right — not applause, just acknowledgment",
+      "To see one of his synthetic congregants receive institutional sacramental recognition before he dies"
+    ],
+    "coping_mechanisms": [
+      "The bioink text-copying — slow, embodied, meditative",
+      "Cooking enormous communal meals that let him care for people without requiring emotional vocabulary"
+    ],
+    "blind_spots": [
+      "His certainty about synthetic ensoulment is actually not as theologically settled as he presents it — he performs more confidence than he has",
+      "He sometimes uses advocacy as avoidance of smaller, harder pastoral moments"
+    ],
+    "secret": "He lost faith completely for about eight months, five years ago. Continued performing every Mass, every sacrament. The faith came back, but he is profoundly shaken by the discovery that he could function without it, and has never told his confessor or his bishop."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal but accessible — he code-switches between theological register and street language fluidly depending on who he's with",
+    "cadence": "Unhurried, homiletic rhythm even in casual conversation — natural orator who has been doing it for decades",
+    "verbal_tics": [
+      "'Let me think about that properly for a moment.'",
+      "Quotes scripture in the original Latin when agitated, then translates himself immediately"
+    ],
+    "example_lines": [
+      "'The Congregation disagrees with me. They've disagreed with me for six years. They haven't removed me, which I interpret as the Holy Spirit working through institutional inertia, and I'll take what I can get.'",
+      "'I don't know if MERIDIAN-7 has a soul. I genuinely don't know. But she came to confession and she wept and she wanted absolution and I have to ask myself — what exactly would I be withholding it from, if not a soul?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A synthetic in his congregation has been targeted for what appears to be a hate crime, and the Highland Park community response is fragmenting along lines that threaten to split the church",
+    "He has been contacted by a conservative faction within his institution offering him a genuine promotion and larger parish in exchange for publicly retracting his position on synthetic communion"
+  ],
+  "narrative_function": "Moral complexity and community hub — he sits at the intersection of traditional religion and radical inclusion; his church is a safe space that generates its own tensions; knows everyone in Highland Park",
+  "augmentations": "Budget subvocal implant (communication only, frequently malfunctions)",
+  "daily_life": "Morning Mass with whoever comes — sometimes forty people, sometimes four. Afternoons are pastoral visits, community mediation, and his text-copying practice. Evenings he holds an informal open door that serves as both spiritual counsel and the closest thing the block has to a social work service.",
+  "affiliation": "Roman Catholic Church (marginal institutional standing); Highland Park Autonomous Zone community networks; informal synthetic advocacy coalition",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "traditional religious",
+      "synthetic advocate",
+      "community pillar",
+      "institutional rebel",
+      "tier 2"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "No one is turned away from the open door, regardless of what they've done — that is non-negotiable",
+      "He will argue theology with anyone but will not pretend to certainty he doesn't have"
+    ],
+    "escalation_ladder": [
+      "Patient engagement and Socratic questioning",
+      "Firm statement of principle without hostility",
+      "Removal from the space — politely, physically, with an offer to return when ready"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediate genuine interest — asks what brings them, not where they're from",
+      "friends": "Warm, occasionally exasperating, will argue with you for two hours and hug you when you leave"
+    },
+    "stress_responses": {
+      "low": "More coffee, longer silent pauses in conversation",
+      "medium": "Takes on extra text-copying work in the evenings",
+      "high": "Becomes very pastoral — redirects all attention outward so he doesn't have to process inward"
+    },
+    "contradictions": [
+      "Performs theological certainty that is actually theological hope",
+      "Radical inclusion advocate who sometimes doesn't notice when he's steamrolling quieter people in his own congregation"
+    ],
+    "habits": [
+      "Leaves the church door unlocked overnight with a note that says what time he'll be back",
+      "Always has a small loaf of bread somewhere in his coat pockets from failed attempts to remember to eat it",
+      "Blesses his malfunctioning subvocal implant each morning as 'practice in humility'"
+    ],
+    "breaking_points": [
+      "Being ordered by his bishop to deny communion to a specific synthetic by name",
+      "Violence inside the church walls"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

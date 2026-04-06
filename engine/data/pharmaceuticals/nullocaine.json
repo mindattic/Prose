@@ -1,0 +1,61 @@
+{
+  "id": "019d6143a90679e5bae05cf4b3d557ea",
+  "name": "Nullocaine",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Null",
+    "Ghost Paint",
+    "The Nothing"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "pain_suppressor",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Nullocaine is a broad-spectrum nociceptor inhibitor that binds to pain receptors across the central and peripheral nervous system, effectively severing the sensation of pain while leaving motor function and cognition intact. It was originally developed for battlefield triage but entered the civilian market after Novafold's military contracts lapsed. The drug does not heal — it simply ensures you don't know how badly you're hurt.",
+  "method_of_use": "dermal_patch",
+  "effects": [
+    "Complete suppression of pain sensation within 90 seconds of application",
+    "Mild dissociative quality that prevents panic response to wounds",
+    "Preservation of full motor control and proprioception",
+    "Slight elevation of pain threshold that persists 2-3 hours after drug clears",
+    "Allows continued function through injuries that would otherwise cause shock"
+  ],
+  "side_effects": [
+    "User cannot gauge severity of wounds during duration — catastrophic injury goes unfelt",
+    "Delayed shock onset after drug clears, sometimes fatal",
+    "Damage accumulation without feedback leads to over-exertion injuries",
+    "Chronic use causes permanent reduction in pain sensitivity, increasing injury risk",
+    "Patch site skin irritation and localized necrosis with repeated use at same location"
+  ],
+  "duration": "45-60 minutes",
+  "addiction_risk": "low",
+  "tier_availability": "Tier 2-3",
+  "legality": "restricted",
+  "street_price": "Φ90 per patch",
+  "cultural_context": "Nullocaine patches are everywhere on the Shelf because violence is everywhere. A runner wearing one is gambling — the patch might keep them in a fight they should have fled, and they'll only find out how bad the damage is when they're safe and it wears off. Medics in Tier 2 clinics have a name for the pattern: 'Null crash,' the moment a patient who walked in under their own power suddenly collapses as sensation returns. Several Shelf legends involve fighters who fought on with Null patches over wounds that should have killed them.",
+  "story_hooks": [
+    "A mercenary completes an entire extraction op, delivers her package, collects payment, and collapses in the elevator — Nullocaine masked a punctured lung and two broken ribs she never knew she had.",
+    "Someone is selling counterfeit Nullocaine patches that contain a tracking compound instead of the active ingredient — whoever is running the operation has real-time location data on every runner in the Shelf who bought from that batch.",
+    "A Tier 4 executive has been using prescription Nullocaine for years to manage chronic pain, and now lives in a state of complete pain insensibility — making them extraordinarily dangerous and impossible to interrogate."
+  ],
+  "tags": [
+    "combatstimulant",
+    "painsuppressor",
+    "pharmaceutical",
+    "violence",
+    "combat",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "power",
+    "clinic",
+    "injury",
+    "pain",
+    "market",
+    "drug",
+    "stimulant",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

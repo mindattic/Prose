@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a8a073bf9340bf35b6086ca4",
+  "name": "Cellulose Digestive Adaptation",
+  "brand_name": "Cellulose",
+  "product_name": "Cellulose Digestive Adaptation",
+  "type": "geneware",
+  "aliases": [
+    "Grass Eater",
+    "Ruminant Gut",
+    "Fiber Mod"
+  ],
+  "category": "agricultural/industrial",
+  "target_system": "digestive (cellulose fermentation capability)",
+  "description": "Introduces a modified cecal chamber (a fermentation pouch between the small and large intestine) populated with termite-derived cellulase-producing bacteria. The user gains the ability to extract nutritional value from cellulose — plant fiber, paper, wood pulp, cotton, and other materials that are nutritionally useless to unmodified humans. The modification doesn't make these materials taste good — wood pulp is still wood pulp — but it makes them food. In a city where food supply chains are controlled by corponations and food insecurity drives Tier 1 desperation, the ability to eat grass, leaves, and waste paper is a survival modification. Gravemoss Biofoundry developed it during a food crisis in Meridian 88's first century and has kept the price low as a public health measure — or, cynics note, to reduce pressure on the food supply chain that the corponations control.",
+  "source_organism": "Macrotermes bellicosus (African termite, cellulase bacteria), Bos taurus (cattle, cecal fermentation genes)",
+  "manufacturer": "Gravemoss Biofoundry",
+  "tier_availability": "Tier 1+ (subsidized by Gravemoss public health initiative)",
+  "legality": "Unrestricted",
+  "procedure": "Oral retroviral treatment establishing cecal chamber and bacterial colony, single dose with 2-week dietary transition",
+  "expression_time": "3–4 weeks for chamber development; bacterial colony stable at 6 weeks",
+  "reversibility": "Reversible with bacterial colony ablation and cecal suppression",
+  "side_effects": [
+    "Significant flatulence during initial adaptation and when processing cellulose",
+    "Bloating from fermentation gas production",
+    "Cellulose-heavy diet produces distinctively unpleasant body odor",
+    "Nutritional content of cellulose is low — it supplements but doesn't replace normal food",
+    "Rare: bacterial colony imbalance causing severe digestive distress"
+  ],
+  "social_perception": "The clearest poverty marker after photosynthetic skin. 'Grass eater' is used as both a description and a slur. Higher tiers find it repulsive. Tier 1 residents view it pragmatically — you eat what you can. Some activists eat cellulose publicly as protest performance.",
+  "story_hooks": [
+    "A Grass Eater discovers that the paper they've been eating contains chemical residues from a corponation document shredding operation — they're inadvertently consuming corporate secrets that their body is processing into metabolites detectable by corporate scanners",
+    "Gravemoss Biofoundry's subsidized pricing is revealed to include a tracking compound in the bacterial colony — they've been monitoring the location and health of every Cellulose Mod user in the city"
+  ],
+  "tags": [
+    "agriculturalindustrial",
+    "geneware",
+    "war",
+    "secret",
+    "ai",
+    "synthetic",
+    "corporate",
+    "control",
+    "poverty",
+    "survival",
+    "food",
+    "tier 1"
+  ]
+}

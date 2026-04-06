@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -8,8 +9,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// clothing brands, synth-food, street food, luxury goods.
 /// Ranked by popularity within their category.
 /// </summary>
-public class ConsumerGoodData
+public class ConsumerGoodData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("brand_name")] public string BrandName { get; set; } = "";
     [JsonPropertyName("product_name")] public string ProductName { get; set; } = "";

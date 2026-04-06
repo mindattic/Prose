@@ -1,0 +1,220 @@
+{
+  "id": "019d6143a6cc78d0bd6b535ebd1bd2f3",
+  "type": "character",
+  "name": "Seydou Papadopoulos-Mataagi",
+  "aliases": [
+    "The Pelican",
+    "Seyd"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant and scrap reseller",
+  "age": 34,
+  "status": "active",
+  "location": "Geartown, near the Ferrogate Transit depot access road",
+  "description": "Seydou is a lanky man, all elbows and long neck, with warm brown skin dusted gray-white at the temples from years of breathing particulate in Geartown's recycling corridors. He has retractable keratin-reinforced claws — a geneware mod from his teens he got cheap and kept because they're useful for sorting scrap — and his irises are a vivid coral-pink that he insists is natural but is almost certainly a low-grade mod he can't remember getting. His cart is legendary: a three-tier wheeled behemoth welded together from mismatched Ferrogate Transit chassis parts, stacked with stripped augmentation casings, salvaged circuit boards, cracked lenses, defunct E.L.F. housing units, and the occasional inexplicable object he cannot identify but refuses to discard because 'it feels expensive.'\n\nSeydou operates on a philosophy of radical optimism about the utility of broken things. He is gregarious to a fault, remembers every customer's name and approximate circumstances, and maintains a running mental inventory of about six hundred distinct items across his cart and three rented storage lockers he visits in rotation. He laughs easily and loudly, which draws people from two stalls away, and he has an almost supernatural ability to produce exactly the component someone needs from somewhere in the middle tier of the cart, apparently without looking.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being truly alone — not just unloved but irrelevant, invisible, forgotten",
+      "That his cheerfulness is hollow and everyone can tell"
+    ],
+    "core_desires": [
+      "To be genuinely needed, not just useful",
+      "To own a real shop with a door and a sign"
+    ],
+    "coping_mechanisms": [
+      "Constant social engagement to avoid sitting with his own thoughts",
+      "Finding beauty and worth in discarded things — projection, but functional"
+    ],
+    "blind_spots": [
+      "His gregariousness reads as trustworthy but he discloses too much too fast and gets burned by it",
+      "Chronically underprices himself because he wants people to like him"
+    ],
+    "secret": "One of his storage lockers contains a near-complete Axiom-brand personal defense drone he found in a canal drain eighteen months ago. He knows it's probably stolen. He's been incrementally repairing it. He doesn't know what he plans to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Expansive, warm, full of technical scrap terminology mixed with Malian French diminutives and Greek exclamations he picked up from his grandmother",
+    "cadence": "Fast, overlapping itself, trails off into lists of things",
+    "verbal_tics": [
+      "'—no wait, I have that, hold on—'",
+      "Calls everyone 'friend' until he knows their name, then uses it constantly"
+    ],
+    "example_lines": [
+      "'Friend, friend, what you're describing — stripped relay housing, maybe 40mm port? — I had three of those yesterday, sold two, but the third is somewhere in the middle tier, give me a second—'",
+      "'Everything broken used to be something. That's not sad. That's just — everything has a before, you know?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Axiom drone in his locker has started activating on its own at night — broadcasting a signal he can't decode — and someone has been following him",
+    "He knows the Ferrogate depot is scrapping a batch of transit cars that supposedly contain sealed cargo containers from a derailment three years ago, and he's offering to split whatever's inside with anyone who'll help him get there first"
+  ],
+  "narrative_function": "Equipment source, rumor hub, comic relief with hidden competence, can locate obscure parts for a price or a favor",
+  "augmentations": "Retractable keratin-reinforced claws (geneware, cosmetic/functional); coral-pink irises (suspected low-grade mod); no cyberware — can't afford it and doesn't trust installers in his price range",
+  "daily_life": "He wakes at 4am to hit the depot access road before other scrappers, loads the cart, wheels it to his Geartown pitch by 7am, and talks to customers until dark. Three nights a week he visits his storage lockers to rotate stock.",
+  "affiliation": "Independent; friendly arrangement with the Ferrogate Transit depot night-shift workers who tip him off about scheduled scrapping",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 4,
+      "creativity": 8,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "scrap savant",
+      "social magnet",
+      "walking inventory",
+      "low-tier fixer adjacent",
+      "accidental possession of dangerous things"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell something he suspects is actively dangerous without saying so",
+      "Always remember what someone told him — it's social currency"
+    ],
+    "escalation_ladder": [
+      "Jokes and deflects",
+      "Gets quieter and more formal, uses full names",
+      "Picks up the heaviest thing within reach and holds it loosely"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm, immediately gabby, offering to help before asked",
+      "friends": "The same, but with more truth buried in the jokes"
+    },
+    "stress_responses": {
+      "low": "Talks faster",
+      "medium": "Starts inventorying things with his hands, touching objects on the cart",
+      "high": "Goes totally quiet, which is deeply alarming to anyone who knows him"
+    },
+    "contradictions": [
+      "He insists he loves the freedom of cart life but fantasizes obsessively about a fixed address"
+    ],
+    "habits": [
+      "Pats the side of his cart like it's a pet when he passes it",
+      "Eats the same fried plantain wrap from the stall two spots down every day at noon",
+      "Names particularly interesting pieces of scrap before selling them"
+    ],
+    "breaking_points": [
+      "Someone stealing from the cart",
+      "Being told his work isn't real work"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown; father Malian-origin transit worker, mother Greek-Samoan seamstress",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got geneware claws at 14 from a back-alley clinic; spent two months learning not to shred everything he touched",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Started scrapping the Ferrogate depot access road after losing a factory assembly job to automation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Found the Axiom drone in a canal drain during a flood-scrap run",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: established Geartown pitch, drone situation quietly escalating",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

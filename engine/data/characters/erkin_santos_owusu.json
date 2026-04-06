@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a60473309874e46a3fa31474",
+  "type": "character",
+  "name": "Erkin Santos-Owusu",
+  "aliases": [
+    "Flux",
+    "The Contractor"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Field trauma surgeon and combat support — combat medic",
+  "age": 42,
+  "status": "active",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "description": "Erkin Santos-Owusu are lean and angular, all sharp edges and visible tension. At 42, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Erkin Santos-Owusu plans to keep it that way. They work as a combat medic out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Erkin Santos-Owusu are one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.24,
+      "ideal": 0.6,
+      "id": 0.44,
+      "shadow": 0.76,
+      "mask": 0.58,
+      "ghost": 0.98
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Going cyberpsycho — losing the boundary between human and machine"
+    ],
+    "core_desires": [
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Ritual — follows the same pre-job routine every time, superstition as structure"
+    ],
+    "blind_spots": [
+      "Assumes their skill set is more transferable than it actually is",
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot see that their independence is actually isolation wearing a better outfit"
+    ],
+    "secret": "Erkin Santos-Owusu once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Uses technical jargon for everything, including emotions"
+    ],
+    "example_lines": [
+      "\"Hold still. This is going to hurt and I don't care.\"",
+      "\"I can keep you alive through almost anything. What I can't do is make you grateful.\"",
+      "\"Blood type? No, I don't need your blood type. I need you to stop moving.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Erkin Santos-Owusu a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Erkin Santos-Owusu discovers a job they completed last year was a setup for something much larger and much worse",
+    "A corporate black site Erkin Santos-Owusu once infiltrated is being reopened, and the people inside know their face"
+  ],
+  "narrative_function": "Erkin Santos-Owusu functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Cortical bomb (employer installed, removed by street doc, scar tissue remains). Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 9
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 6
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 4
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 8
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.19,
+      "caution": 0.69,
+      "loyalty": 0.2,
+      "greed": 0.11,
+      "empathy": 0.57
+    },
+    "drives": [
+      "freedom",
+      "reputation",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 8,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "encyclopedic knowledge of Meridian 88 infrastructure"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "old injury that flares under specific conditions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "combat medic",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always verifies target identity independently before lethal contracts",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Carries a specific caliber round as a lucky charm — has never fired it"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "replaces": ""
+    },
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Brawler": 0.7,
+    "Berserker": 0.7,
+    "Tactician": 0.7,
+    "Risk Taker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

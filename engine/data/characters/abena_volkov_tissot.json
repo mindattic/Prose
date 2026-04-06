@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a59f7df185ecbe001df3d185",
+  "type": "character",
+  "name": "Abena Volkov-Tissot",
+  "aliases": [
+    "Benny",
+    "The Clockwork Barber"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Barber and neighborhood fixture in Hamtramck Enclave",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave, shop called 'Four Blades' on Prater Row",
+  "description": "Abena is a broad-shouldered woman with skin the color of dark teak, silver-streaked locs pinned up under a work bandana, and the kind of hands that look like they could crack walnuts but handle a straight razor with surgical calm. She has cosmetic irises done in a spiraling amber-and-black pattern she's had since her forties, a small gift to herself after her husband left. Her shop is a relic — three analog mirrors, two functioning chairs, one busted, a shelf of unlabeled pomades, and a shrine to a local E.L.F. called Clipper that she keeps fed with sound clips of her favorite music and the occasional hair clipping placed in a small copper bowl. She believes Clipper keeps her blades sharp and her hands steady.\n\nAbena has been cutting hair in Hamtramck Enclave for twenty-three years. She is the kind of person who holds the neighborhood's memory — she knows whose grandmother used to live in every building, who cheated on who, which corponation rep tried to buy the block. She doesn't gossip idly. She listens more than she speaks, and when she does speak it tends to land. She has a dry, unhurried humor that disarms people faster than flattery, and a stubbornness about her rates and her hours that has outlasted three waves of gentrification pressure from Tessera-adjacent real estate shells.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Hamtramck being consumed and homogenized by corponation development",
+      "Dying before she has passed her knowledge to anyone who will use it"
+    ],
+    "core_desires": [
+      "To keep her shop and her block intact",
+      "To be truly known by at least one person before she dies"
+    ],
+    "coping_mechanisms": [
+      "Ritual — precise daily routines give her a sense of order",
+      "Deflecting vulnerability with humor"
+    ],
+    "blind_spots": [
+      "She assumes loyalty from long-term neighbors she hasn't actually tested",
+      "She underestimates how much she herself has changed and hardened"
+    ],
+    "secret": "Twenty years ago, she informed on a local fixer to a Tessera security contractor to protect her shop from being burned. The fixer disappeared. She has never told anyone. She donates anonymously to the fixer's surviving daughter's school fees every term."
+  },
+  "speech_patterns": {
+    "vocabulary": "Measured, working-class; mixes French-derived expressions from her mother's family with clipped Eastern European rhythm from her father's side. Occasionally lapses into Twi-inflected idiom.",
+    "cadence": "Slow, deliberate. Long pauses before important statements. Never finishes sentences she doesn't mean.",
+    "verbal_tics": [
+      "'That's a thing.'",
+      "Clicks her tongue before disagreeing with someone",
+      "'You hear me?'"
+    ],
+    "example_lines": [
+      "'Sit. Stop fidgeting. I've got the razor.'",
+      "'That one — I knew his uncle. Different kind of trouble, but trouble runs in lines, doesn't it.'",
+      "'They'll buy the block when I'm dead. Not a day before. You hear me?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A developer rep has started offering her neighbors buyouts; someone broke her shop window as a warning. She needs people she can trust to find out who is coordinating it.",
+    "She knows where an old Hamtramck Enclave community archive is buried — physical drives, not networked — that someone very powerful wants erased."
+  ],
+  "narrative_function": "Neighborhood oracle, information hub, quest giver for community-level problems. Characters who need to know something about Hamtramck Enclave come to Abena. She may trade information for favors, not cash.",
+  "augmentations": "Cosmetic spiral irises (amber/black). No other augmentations. Refuses chrome on principle.",
+  "daily_life": "Opens Four Blades at 0800, works until the last client leaves, sometimes past 2100. Eats dinner standing up at the counter, listening to old Congolese soukous on a battered speaker.",
+  "affiliation": "Independent; loose ties to Hamtramck Enclave community council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neighborhood memory",
+      "blade proficiency",
+      "community ties",
+      "secret keeper",
+      "stubborn"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never act from panic — wait, observe, then move",
+      "Protect the block before protecting herself",
+      "Don't trust anyone who doesn't sit still in the chair"
+    ],
+    "escalation_ladder": [
+      "Quiet observation and information gathering",
+      "Leveraging community relationships to apply pressure",
+      "Going to the Enclave council with evidence",
+      "Taking direct and potentially irreversible personal action"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, watchful, professional. Gives nothing away until she's assessed them.",
+      "friends": "Warm but still guarded about her inner life. Shows care through acts, not words."
+    },
+    "stress_responses": {
+      "low": "Hums to herself while working, moves through routine methodically",
+      "medium": "Goes very quiet. Stops joking. Cleans things that are already clean.",
+      "high": "Disappears into the back room for ten minutes, emerges composed. Nobody knows what she does back there."
+    },
+    "contradictions": [
+      "Believes in community above all but has never fully let anyone into her own life",
+      "Hates dishonesty but built her stability on a lie she's never confessed"
+    ],
+    "habits": [
+      "Wipes her blades on a red cloth exactly three times after each client",
+      "Leaves a specific music file playing for Clipper overnight",
+      "Checks the block before she locks up, walking its perimeter slowly"
+    ],
+    "breaking_points": [
+      "If the shop is directly threatened with physical destruction",
+      "If someone she loves is hurt because of something she withheld"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2148 — Born in Hamtramck Enclave to a Ghanaian-French mother and a Russian-Swiss father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2166 — Apprenticed to an elderly barber on Prater Row",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174 — Informant incident; fixer disappears",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2177 — Opens Four Blades under her own name",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Husband leaves; gets spiral iris mods",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day; facing new development pressure on the block",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

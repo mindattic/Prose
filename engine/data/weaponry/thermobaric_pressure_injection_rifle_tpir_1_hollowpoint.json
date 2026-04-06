@@ -1,0 +1,60 @@
+{
+  "id": "019d6143ab567116b1590b08d35bafb3",
+  "name": "Thermobaric Pressure Injection Rifle TPIR-1 'Hollowpoint'",
+  "type": "weapon",
+  "aliases": [
+    "Hollowpoint",
+    "The Breather",
+    "Lungshot",
+    "Thermobar"
+  ],
+  "category": "firearm",
+  "description": "The TPIR-1 fires a hollow-bodied frangible projectile containing a micro-canister of binary thermobaric precursor compounds kept separated by a rupturable membrane. On impact with a soft target, the projectile fractures and the membrane ruptures, allowing the compounds to mix and react within the wound cavity over approximately 40 milliseconds — long enough for the target's own tissue to contain the initial reaction, then catastrophically insufficient to contain the overpressure that follows. The result is a wound profile that is dramatically disproportionate to the projectile's caliber, as the thermobaric expansion occurs inside the body rather than outside it. Against hard surfaces, the projectile shatters without triggering the reaction, making it a weapon that is selectively devastating only against soft targets.\n\nOuroboros Energy's weapons division developed the binary precursor system as a derivative of their work on controlled micro-combustion for miniaturized power cells — the same chemistry that drives their portable energy products, redirected. The TPIR-1 is the only weapon in its class to use a purely internal thermobaric effect; earlier attempts by competitors used external-burst projectiles that produced undirected overpressure and were quickly banned. Ouroboros's innovation was the selective reaction timing, which they achieved through a proprietary membrane compound that responds to the specific mechanical stress of tissue impact rather than hard-surface impact, providing the weapon's remarkable target selectivity.\n\nThe rifle itself is unremarkable in appearance — a medium-length, conventionally styled firearm with no exotic external components. The binary canister projectiles require climate-controlled storage to maintain membrane integrity, a logistical limitation that Ouroboros has addressed through an insulated magazine housing with a small thermal regulator. Operators who ignore the storage requirements report a significant rate of dud rounds, and the occasional premature reaction in a poorly maintained magazine has contributed to the weapon's fearsome reputation even among its own users.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Military only / Black market (premium pricing)",
+  "legality": "Prohibited — classified under Meridian 88 Anti-Atrocity Statute 12.1 as an unlawful wound-enhancement device",
+  "base_technologies": [
+    "Binary thermobaric chemistry",
+    "Selective frangible projectile design",
+    "Controlled micro-combustion"
+  ],
+  "specifications": "projectile: Frangible hollow-body, 9.5mm, binary thermobaric micro-canister payload\nreaction delay: 38–42 milliseconds post-membrane rupture\ntrigger condition: Membrane ruptures on soft-tissue impact stress; inert on hard-surface impact\neffective range: 200m accurate fire\nmuzzle velocity: 820 m/s\npower source: Conventional propellant charge; no external power requirement\nmagazine: 15-round thermally regulated magazine (operating range: 4°C–22°C)\nweight: 3.1 kg with loaded magazine\ndud rate: Less than 1% within spec storage; up to 18% outside thermal range\nintegrated systems: Magazine thermal indicator, binary compound status display (green/amber/red per round)",
+  "tactical_use": "Military units that have operated the TPIR-1 in sanctioned contexts use it for high-value target elimination where certainty of incapacitation is non-negotiable and collateral structural damage must be avoided — the weapon's hard-surface inertness means it can be fired in occupied structures without risk of wall penetration or ricochet. Black market operators use it primarily for assassination, as the wound profile is distinctive enough to send a message while the weapon's prohibited status ensures the killing cannot be tied to sanctioned forces. The thermal magazine requirement is a significant field limitation; operators in hot environments report frequent amber-status rounds and have developed improvised cooling rigs that have become a recognizable field modification.",
+  "cultural_context": "The TPIR-1 sits at the intersection of Meridian 88's most uncomfortable conversations about corporate weapons development and the ethics of energy conglomerate diversification. Ouroboros Energy is primarily known for its power infrastructure and consumer energy products; the revelation that their micro-combustion research had produced a prohibited anti-personnel weapon created a significant public relations crisis that Ouroboros weathered by emphasizing the military licensing context and officially withdrawing from civilian sales. The weapon's street name — Hollowpoint — is ironic given that conventional hollowpoints are legal and relatively unremarkable; the Hollowpoint's reputation far exceeds its visual appearance, and carrying one in Meridian 88 is understood as a statement of intent that goes beyond simple armament.",
+  "known_users": [
+    "Ouroboros Energy military contract forces (officially retired)",
+    "Black market assassination contractors",
+    "High-value elimination specialists",
+    "Military intelligence wet-work units",
+    "Collectors (inert display rounds; functional weapons rare)"
+  ],
+  "story_hooks": [
+    "A prominent Ouroboros Energy executive is found dead with a wound profile consistent with a TPIR-1 discharge — the irony is not lost on investigators, but more pressingly, someone has access to a weapon that Ouroboros claims no longer exists.",
+    "A shipment of climate-controlled cases is intercepted at the Meridian 88 port authority; the cases contain TPIR-1 magazines maintained at precise thermal spec, but the rounds inside have had their binary membranes replaced with an unknown compound that the port's hazmat team cannot identify.",
+    "An Ouroboros Energy micro-combustion researcher approaches a fixer claiming they were coerced into developing the TPIR-1's binary chemistry and want their name removed from the classified patent before it surfaces in a war crimes tribunal.",
+    "A field-modified TPIR-1 with an improvised cooling rig is recovered from a crime scene — the modifications are precise enough to suggest a trained engineer, and the cooling rig uses components exclusive to LAZARUS PHARMACEUTICALS cold-storage equipment."
+  ],
+  "ammunition_type": [
+    "9.5mm Frangible Thermobaric Micro-Canister FTM-95"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "war",
+    "crime",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "market",
+    "bar",
+    "rain",
+    "cold",
+    "ethics",
+    "train",
+    "energy",
+    "fire"
+  ]
+}

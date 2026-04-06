@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58779cfa99e2722508ba229",
+  "name": "Prepared",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Has supplies, plans, and backups for every scenario",
+  "behavioral_signature": "Over-packs, over-plans, over-prepares",
+  "under_stress": "Falls back to plans B through Z",
+  "at_rest": "Packing, checking gear, making lists",
+  "will_always": [
+    "be ready for anything"
+  ],
+  "will_never": [
+    "go in unprepared"
+  ],
+  "unless": [
+    "preparation time means someone dies waiting"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Safety First",
+      "threshold": 0.8,
+      "context": "caution"
+    },
+    {
+      "archetype": "Tactician",
+      "threshold": 0.7,
+      "context": "planning"
+    }
+  ],
+  "opposite_of": [
+    "Improviser"
+  ],
+  "tags": [
+    "thorough",
+    "organized"
+  ]
+}

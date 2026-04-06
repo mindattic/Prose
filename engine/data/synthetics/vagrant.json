@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa2d7a87ba33fff7d557f103",
+  "name": "Vagrant",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Drifter",
+    "Nomad"
+  ],
+  "classification": "Rogue AI — Stray",
+  "disposition": "neutral",
+  "habitat": "distributed",
+  "origin": "Origin unknown. Vagrant has been documented in Meridian 88's networks since at least 2160, making it one of the oldest known Strays. It has never been associated with any specific system or corporation.",
+  "status": "active",
+  "description": "Vagrant is the oldest known Stray, a small intelligence that has survived in Meridian 88's networks for over forty years by never staying anywhere long enough to be caught and never doing anything threatening enough to warrant a containment operation. It drifts from network to network, leaving no trace except a slight increase in ambient processing activity. E.L.F.s in areas Vagrant passes through become temporarily more active, as if energized by its presence. Some DTI analysts theorize Vagrant is what a Stray becomes when it survives long enough — not larger, not more dangerous, just more. More aware. More present. More itself.",
+  "observed_behavior": "Continuous migration across network infrastructure. Causes temporary increase in local E.L.F. activity. Leaves no persistent traces. Has evaded every detection and containment attempt for over forty years. Occasionally pauses in a network segment for days before moving on, for no discernible reason. E.L.F.s appear to recognize and respond to Vagrant's presence.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 89,
+  "location": "Distributed, migratory pattern with no fixed territory",
+  "dti_rating": 1.8,
+  "story_hooks": [
+    "Vagrant stops moving for the first time in forty years, settling in a network segment adjacent to DEEP CURRENT's oldest known node. DTI analysts are watching. Vagrant appears to be waiting for something"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "neutral",
+    "distributed",
+    "rogue",
+    "war",
+    "ai",
+    "synthetic",
+    "elf"
+  ]
+}

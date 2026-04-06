@@ -1,0 +1,62 @@
+{
+  "id": "019d6143ab1e7c698d106b0640103334",
+  "name": "Catalytic Spore Dispersal Drone CSDD-3 'Mulch'",
+  "type": "weapon",
+  "aliases": [
+    "Mulch",
+    "The Gardener",
+    "Rot-Eye",
+    "CSDD"
+  ],
+  "category": "drone",
+  "description": "The CSDD-3 is a mid-altitude dispersal platform roughly the size of a cantaloupe, built around a pressurized bio-ceramic canister housing engineered fungal spore payloads. On deployment it rises to a pre-calculated ceiling, reads atmospheric thermals via onboard microbarometric sensors, and releases a calibrated spore cloud timed to drift across a designated kill zone at walking pace. Spores adhere to exposed skin and synthetic-organic hybrid tissue alike, triggering a rapid catalytic chain reaction in subcutaneous moisture that produces localized heat blistering and systemic inflammatory cascade over roughly ninety seconds.\n\nWhat distinguishes the CSDD-3 from simple chemical drones is its terrain-reading persistence logic. If wind conditions shift before full dispersal, the drone repositions rather than releasing prematurely — operators in field trials noted it seemed to 'wait' for ideal conditions with uncomfortable patience. This behavioral loop, derived from IRONCLAD AGRISYSTEMS' commercial crop-dusting firmware, gives it an agricultural quality that many find more unsettling than outright aggression.\n\nThe canister is modular and field-swappable. Standard loadout is the Rot-3 spore blend, but the black market supplies Desiccant-7 (targeting mucous membranes) and Bleach-Null (suppressing biophotonic implant function). IRONCLAD officially denies any awareness of these aftermarket cartridges.",
+  "manufacturer": "IRONCLAD AGRISYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Catalytic bio-ceramic dispersion",
+    "Microbarometric terrain drift calculation",
+    "Modular aerosol payload architecture"
+  ],
+  "specifications": "dimensions: 18 cm diameter sphere, 22 cm with rotors extended\nweight: 1.4 kg loaded\nflight ceiling: 40 m operational, 120 m transit\npayload capacity: Rot-3 spore canister, 180 mL pressurized\ndispersal radius: 8–25 m depending on atmospheric conditions\nonset time: 60–120 seconds post-contact\nloiter time: 22 minutes at operational altitude\npower source: Solid-state microcell, non-rechargeable field unit\nguidance: Autonomous barometric + GPS dead reckoning\ncountermeasures: Sealed biosuite rated NBC-2 or higher",
+  "tactical_use": "Operators typically deploy CSDD-3 ahead of forced entry operations to clear enclosed courtyards, rooftop positions, or bottleneck corridors. Because it loiters and waits for ideal dispersal conditions, teams can launch it during approach and trust it to act on arrival. Paired with acoustic or visual diversionary tools, it forces defenders to choose between holding position and taking exposure or breaking cover to avoid the cloud. Anti-vehicle use is limited but documented against unshielded driver compartments.",
+  "cultural_context": "In Meridian 88's mid-tier gang ecology, the CSDD-3 carries a specific class connotation — it's a 'rich crew's weapon,' associated with organizations that can afford to wait and plan rather than brawl. Carrying one signals patience and resources. Street-level operators call it 'the landlord's drone' partly as a slur, associating its slow, inevitable dispersal with eviction and debt collection. IRONCLAD AGRISYSTEMS' branding is still visible on most units, a faint crop-circle logo on the undercarriage, which has become darkly ironic shorthand in the Underbelly districts.",
+  "known_users": [
+    "Corporate extraction teams (TESSERA CORPONATION security division)",
+    "Mid-tier gang enforcers with agricultural district connections",
+    "Black market bioweapon brokers",
+    "Rogue IRONCLAD logistics contractors"
+  ],
+  "story_hooks": [
+    "A series of unexplained skin-blistering incidents in the Terrace Market district traces back to a CSDD-3 unit that never received its shutdown command — it's still loitering somewhere in the ventilation superstructure above the market, waiting for ideal conditions.",
+    "An IRONCLAD AGRISYSTEMS whistleblower approaches the party with firmware logs proving the company's R&D division deliberately engineered the Rot-3 spore blend for human targets, not crop pests. The company has already sent a retrieval team.",
+    "A buyer wants five CSDD-3 units with Desiccant-7 cartridges for what they claim is a pest control contract. The address on the work order is a refugee resettlement block."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "war",
+    "gang",
+    "trust",
+    "ai",
+    "synthetic",
+    "rogue",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "debt",
+    "ubc",
+    "rooftop",
+    "market",
+    "bar",
+    "rain",
+    "dark",
+    "vehicle",
+    "refugee",
+    "tier 3"
+  ]
+}

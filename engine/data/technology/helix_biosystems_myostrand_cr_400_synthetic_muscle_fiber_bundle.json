@@ -1,0 +1,62 @@
+{
+  "id": "019d6143aa3f73aabfdbf7fb6a4f348c",
+  "name": "Helix Biosystems MyoStrand CR-400 Synthetic Muscle Fiber Bundle",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems MyoStrand CR-400 Synthetic Muscle Fiber Bundle",
+  "type": "technology",
+  "aliases": [
+    "Cordwork",
+    "Helix Rope",
+    "Four-Hundreds",
+    "Stringers"
+  ],
+  "subcategory": "augmentation",
+  "description": "The MyoStrand CR-400 is a modular synthetic muscle replacement system consisting of braided carbon-polymer actuation fibers embedded with piezoelectric contractile elements, designed to be surgically implanted alongside or in replacement of native muscle tissue. Each CR-400 bundle replicates the form factor of a standard human muscle fascicle and interfaces with existing motor nerve terminals via Helix's NeuroClamp junction collars, which are included in every installation kit. The system delivers approximately 4.2 times the contractile force of equivalent biological muscle mass while consuming roughly 60% of the metabolic energy, drawing supplemental power from a subcutaneous CascadeCell-compatible capacitor node. The CR-400 is notable for its tiered activation architecture — the fibers are organized into slow-twitch analog layers for sustained load-bearing and fast-twitch burst layers for explosive force output, with the ratio dynamically managed by an embedded microcontroller that reads nerve signal cadence. Unlike full-limb cybernetic replacement, MyoStrand installations preserve native skeletal and dermal structures, making them visually undetectable and avoiding the legal reclassification complications that come with registered prosthetic limbs under Meridian 88's Augmentation Registry Act. Arcturus Defense Solutions licenses a hardened military variant for special operations units, while the civilian version flows through Helix's authorized surgical network and a substantial black-market channel.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "HELIX BIOSYSTEMS",
+    "ARCTURUS DEFENSE SOLUTIONS"
+  ],
+  "base_technologies": [
+    "Carbon-polymer piezoelectric fiber fabrication",
+    "Motor nerve terminal junction interfacing",
+    "Tiered contractile fiber architecture",
+    "Subcutaneous capacitor power integration",
+    "Synthetic fascicle biocompatibility coating"
+  ],
+  "enables": [
+    "Superhuman strength within biological skeletal load limits",
+    "Sustained high-output physical labor without fatigue degradation",
+    "Covert augmentation undetectable by standard biometric scanning",
+    "Military close-quarters combat force multiplication",
+    "Industrial exoskeleton load-sharing integration"
+  ],
+  "social_impact": "MyoStrand installations have quietly restructured physical labor economics across Meridian 88's port districts and Palladian Construction worksites — a CR-400 augmented longshoreman or structural worker can sustain output that previously required two unaugmented workers, and Kelpline Logistics has been documented offering augmentation subsidies in lieu of wage increases, effectively making the implant a prerequisite for competitive employment in heavy industry. At the same time, the undetectability of the CR-400 has become a serious concern in athletic and security contexts, as the implants produce no metallic signature and existing bioscan protocols cannot distinguish synthetic fiber bundles from dense natural muscle tissue, leading to a wave of augmented individuals in roles explicitly prohibited from enhancement.",
+  "story_hooks": [
+    "A dockworker union is threatening a strike after discovering Kelpline Logistics has been quietly tracking which members have accepted MyoStrand subsidies — and using that data to identify union organizers for termination",
+    "A champion in Meridian 88's underground fighting circuit is suspected of running CR-400 bundles but the promoter needs proof before the prize money changes hands — the fixer needs to get a tissue sample without the fighter noticing",
+    "An Arcturus Defense military variant CR-400 has surfaced in civilian hands with its governor firmware removed, producing forces that are fracturing the host's own skeleton — someone sold it knowing this",
+    "A Helix Biosystems quality control breach: a batch of CR-400 units shipped with a contractile calibration error that causes random full-body spasms under high neural load"
+  ],
+  "tags": [
+    "augmentation",
+    "technology",
+    "combat",
+    "war",
+    "augment",
+    "prosthetic",
+    "neural",
+    "ai",
+    "synthetic",
+    "contract",
+    "control",
+    "power",
+    "money",
+    "ubc",
+    "market",
+    "explosive",
+    "energy",
+    "circuit",
+    "tier 2"
+  ]
+}

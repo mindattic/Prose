@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a86b72f5aadc0b85f0658396",
+  "name": "Sterling-Nakamura Diplomatic Immunity Bracelet DIB-1",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Diplomatic Immunity Bracelet DIB-1",
+  "type": "equipment",
+  "aliases": [
+    "DIB-1",
+    "Get Out Free",
+    "Immunity Band",
+    "Sterling Pass"
+  ],
+  "category": "tools",
+  "description": "A wrist-worn device that continuously broadcasts a verified diplomatic immunity credentials signal recognized by law enforcement systems throughout Meridian 88. The DIB-1 contains a quantum-encrypted identity chip that authenticates the wearer's diplomatic status to any scanner or automated system, triggering legal protections that prevent detention, search, or arrest. The bracelet's signal is recognized by autonomous security systems, which stand down when detecting a valid diplomatic credential. Sterling-Nakamura issues them to senior personnel and allied diplomatic staff — the bracelet does not make the wearer invincible, but it makes detaining them a significant legal and political event.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 5",
+  "legality": "Issued — Sterling-Nakamura diplomatic staff only",
+  "base_technologies": [],
+  "specifications": {
+    "broadcast": "Continuous diplomatic credential signal",
+    "authentication": "Quantum-encrypted identity chip",
+    "recognition": "Compatible with all Meridian 88 law enforcement systems",
+    "effect": "Triggers diplomatic immunity legal protections",
+    "range": "10-meter broadcast radius",
+    "battery": "1-year operation",
+    "weight": "0.05 kg",
+    "tamper detection": "Self-wipe on unauthorized removal",
+    "form factor": "Elegant wrist band",
+    "info": "corporate branded"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A DIB-1 was used by a murder suspect to walk through a crime scene perimeter — the automated security systems stood down and human officers hesitated to challenge a diplomatic credential, giving the suspect time to escape.",
+    "A counterfeit DIB-1 has appeared that broadcasts a valid-seeming diplomatic credential — the forgery is good enough to fool automated systems but will not survive manual verification, creating a narrow window of false immunity."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "crime",
+    "identity",
+    "ai",
+    "escape",
+    "tier 5"
+  ]
+}

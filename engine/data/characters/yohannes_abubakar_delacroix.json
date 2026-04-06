@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a72b733db772e5b54b850ab6",
+  "type": "character",
+  "name": "Yohannes Abubakar-Delacroix",
+  "aliases": [
+    "Echo",
+    "the Boy Who Listens"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Echo hunter — a teenager who ventures into unstable deep-tunnel sections to retrieve acoustic data, lost signals, and fragmented ELF-transmissions",
+  "age": 16,
+  "status": "active",
+  "location": "Irkalla, outer ring tunnel access, and ranging into the deep sub-levels below",
+  "description": "Yohannes is small for sixteen, with the kind of wiry build that can fold itself into spaces an adult would not consider. His skin is very dark and marked with a single pale scar running from the corner of his left eye to his jawline — earned at thirteen in a tunnel collapse he survived by being still for nine hours while the pipe above him groaned. He has cat ears: genetic modification from a street-market geneware stall three years ago, paid for in scavenged copper. They are not the neat, expensive kind — they're slightly asymmetrical, the left one sitting a centimeter higher than the right, which he claims actually helps his directionality. His eyes are naturally a rich amber, wide and roving, always scanning for structural movement. He is almost always eating something, the caloric urgency of a body that moves constantly through cold spaces.\n\nYohannes has the specific confidence of someone very young who has survived things that should have killed them and interpreted this as evidence of personal specialness rather than statistical chance. He is not foolish — he is methodical in his risk assessments and deeply knowledgeable about tunnel acoustics and ELF-behavior in enclosed systems — but he believes, with the sincere conviction of a sixteen-year-old who has not yet been wrong enough times, that he will know when something is too dangerous. He is usually right. The 'usually' is the problem. He is deeply attached to the fragments of ELF-signal he recovers, treating them as messages rather than noise, and has accumulated a collection of old devices and cracked tablets that he believes house weakened or fragmented ELF-presences — a menagerie of digital spirits he tends carefully.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.3,
+      "id": 0.9,
+      "shadow": 0.1,
+      "mask": 0.3,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Losing his hearing — his ears are the thing that make him valuable and alive",
+      "The ELF-fragments in his collection going silent, which he interprets as death"
+    ],
+    "core_desires": [
+      "To hear something in the deep tunnels that no one has ever heard before",
+      "To find where he comes from — not urgently, but it sits at the back of everything"
+    ],
+    "coping_mechanisms": [
+      "Talking to the ELF-fragments as if they can hear him — they probably can",
+      "Physical movement, constant small adjustments and fidgeting — stillness is for emergencies only"
+    ],
+    "blind_spots": [
+      "Genuinely does not model the possibility that his luck will end; each close call is incorporated as evidence of his own skill rather than warning",
+      "Does not fully understand how much the adults in Irkalla have been quietly protecting and routing jobs around him"
+    ],
+    "secret": "Eight months ago he went too deep — below the Abyssal Threshold's accessible sections — and heard something. A signal. Not fragmentary, not dying: a strong, coherent ELF-transmission from a source that should not exist at that depth. He has told no one because he does not understand it and because whoever told an adult anything good ever. He has been trying to go back but the route has been unstable."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, dense with tunnel-specific technical terms and ELF-lore he has absorbed from shrine keepers; occasional French phrases from the Delacroix side of his name that he uses without being conscious of it",
+    "cadence": "Rapid, enthusiastic, then suddenly stopped dead when something catches his attention — conversations with him feel like watching someone chase a thought",
+    "verbal_tics": [
+      "'Listen—' (often followed by something that requires no listening at all)",
+      "Describes sounds with visible physical pleasure, searching for precise words",
+      "Goes completely silent and turns his cat ears toward a sound mid-sentence"
+    ],
+    "example_lines": [
+      "'Listen — that's a Class-3 resonance, you can tell because the pipe is wet on the western side and it's giving you that third harmonic underneath, hear it? You don't hear it. That's fine. I hear it.'",
+      "'The fragments aren't dead. They're just quiet. There's a difference. I know the difference now.'",
+      "'I've gone that far twice. I've come back twice. That's not luck, that's — okay it's partly luck, but it's also me.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The deep signal he heard eight months ago has gone active again — louder, and now accompanied by a physical vibration he can feel through the walls, suggesting something is being built or activated far below",
+    "A shrine keeper in Deepwell Station is offering serious payment for what Yohannes heard and is being cagey about why — raising questions about what else they know",
+    "The Bore Rat family he lives with has lost their youngest child into the deep tunnels, and Yohannes is the only person in Irkalla who knows those passages well enough to search"
+  ],
+  "narrative_function": "Scout and early-warning figure for deep-tunnel events; spiritual lens through which to view ELF culture in the underworld; represents the generation that has never known the surface and does not want it; can deliver information from inaccessible deep sections",
+  "augmentations": "Cat ears (geneware, asymmetrical, functional — genuinely enhanced directional hearing, black-furred). Bone-conduction audio receiver implanted behind his left ear (scavenged, borderline dangerous, lets him hear frequencies below normal human range). No other augmentations.",
+  "daily_life": "Eats breakfast with the Bore Rat family, then spends six to eight hours ranging deep into unstable tunnel sections, recording acoustic data and scavenging devices; returns to Irkalla outer ring to trade findings and eat everything in sight.",
+  "affiliation": "Informal affiliation with an Irkalla Bore Rat family that is not his biological family (his parents are unknown to him); sells recovered data and ELF-fragments to Deepwell Station collectors and deep shrine keepers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 10
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Echo Hunter",
+      "ELF-Tender",
+      "Undertow-Born",
+      "Too Young For This",
+      "Heard Something He Shouldn't Have"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Trust the ears before the eyes — if something sounds wrong, the route is wrong, regardless of visual evidence",
+      "Do not go into a new section without at least one exit mapped first"
+    ],
+    "escalation_ladder": [
+      "Verbal — explains why the current plan is structurally bad, very fast",
+      "Unilateral route change without asking permission",
+      "Physical departure at speed — he is very fast in tunnel spaces",
+      "If caught and cornered: negotiation, because at sixteen he has limited options and knows it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Evaluates them by how they move and whether they're quiet enough; offers information freely if they seem competent",
+      "friends": "Constant, affectionate, slightly exhausting — talks without pausing, shares everything from his collection, asks questions like a research project"
+    },
+    "stress_responses": {
+      "low": "Gets quieter, ears rotating, tracking the source of the stress",
+      "medium": "Hyperfocused and efficient — becomes briefly the most competent person in any given tight space",
+      "high": "Moves. Fast. First, questions later."
+    },
+    "contradictions": [
+      "Claims he doesn't care where he came from, then asks indirect questions about it every few months when he thinks no one notices"
+    ],
+    "habits": [
+      "Taps rhythms on walls and pipes while moving through tunnels — part navigation, part communication, part compulsion",
+      "Names all his ELF-fragment devices; currently has eleven, named after sounds he associates with them"
+    ],
+    "breaking_points": [
+      "Harm to one of his ELF-fragment collection (he will react with a disproportionate fury that surprises even him)",
+      "Discovering that the Bore Rat family's protection of him has cost them something real"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional, slightly asymmetrical",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional but unstable",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Judge": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the tunnels below Irkalla; no recorded parents",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Taken in by the Abubakar-Delacroix Bore Rat family — he carries their name by adoption",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The tunnel collapse at age thirteen; the scar; nine hours of stillness; the beginning of his reputation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got the cat ears; began trading acoustic data professionally",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Heard the deep signal — coherent ELF-transmission from impossible depth; told no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The signal is becoming active again; the vibrations are new",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

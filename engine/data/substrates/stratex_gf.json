@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a9e47603b0e23c2c06ded9eb",
+  "name": "Stratex-GF",
+  "brand_name": "Stratex",
+  "product_name": "Stratex-GF",
+  "type": "substrate",
+  "aliases": [
+    "GF panel",
+    "Stratex",
+    "graphofoam"
+  ],
+  "category": "composite",
+  "description": "A graphene-reinforced structural foam composite developed by Tessera Materials by infiltrating a closed-cell polymer foam precursor with graphene nanoplatelet suspensions before cure, creating a lightweight cellular matrix where every cell wall is graphene-reinforced. Stratex-GF achieves structural panel performance with a density near that of rigid foam insulation, enabling construction and vehicle applications where mass budget is critical. Its closed-cell architecture also provides inherent thermal and acoustic insulation properties alongside structural function.",
+  "properties": [
+    "ultra-low density",
+    "compressive strength",
+    "thermal insulation",
+    "acoustic dampening",
+    "moisture resistance",
+    "machinability",
+    "impact energy absorption"
+  ],
+  "developers": [
+    "Tessera Materials",
+    "Crucible Industries"
+  ],
+  "applications": [
+    "lightweight structural infill panels for hab module construction",
+    "vehicle body and interior structural cores",
+    "portable shelter and emergency habitat panels",
+    "acoustic baffling in transit and industrial facilities",
+    "insulated cargo container walls"
+  ],
+  "tier_availability": "Tier 1-2",
+  "cost": "Φ95 per kg",
+  "story_hooks": [
+    "Stratex-GF has become the material of choice for illegal Shelf-level hab expansions — it's cheap, strong enough, and easy to cut with improvised tools, meaning entire unauthorized districts are being built from it without any structural inspection.",
+    "A batch of Stratex-GF panels from a Tier 1 construction supply depot is found to contain voids in the graphene infiltration — the panels test structurally sound but the graphene content is below spec, and someone signed off on the quality certificates anyway.",
+    "A Tessera Materials quality auditor goes missing three days after filing an internal report about Stratex-GF production irregularities at a Shelf-adjacent manufacturing facility."
+  ],
+  "tags": [
+    "composite",
+    "substrate",
+    "ai",
+    "elf",
+    "vehicle",
+    "shelter",
+    "energy",
+    "shelf",
+    "tier 1",
+    "tier 2"
+  ]
+}

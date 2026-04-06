@@ -1,0 +1,39 @@
+{
+  "id": "019d6143ab12773dbbcbd4828c77d3a5",
+  "name": "Arcturus Defense Solutions Concussive Breach Charge CBC-3 'Knocker'",
+  "type": "weapon",
+  "aliases": [
+    "Knocker",
+    "CBC-3",
+    "Door Buster",
+    "Hard Knock"
+  ],
+  "category": "explosive",
+  "description": "A shaped explosive charge designed specifically for breaching reinforced doors and walls without producing lethal fragmentation on the far side. The CBC-3 focuses its blast energy directionally into a narrow cone that defeats the structural integrity of the target barrier while minimizing overpressure on the breach side. The charge uses a water-tamped explosive that converts blast energy into a hydraulic ram effect, punching through doors and walls with less collateral risk than conventional explosives.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — tactical entry teams",
+  "base_technologies": [
+    "Shaped explosive focusing",
+    "Water-tamped blast direction",
+    "Low-fragmentation breach engineering"
+  ],
+  "specifications": "charge type: Shaped water-tamped directional\nbreach capability: Reinforced steel doors, concrete block walls\nfragmentation: Minimal — water tamping absorbs fragments\noverpressure: Reduced by 70% vs conventional breach charges\nweight: 0.8 kg per charge\nplacement: Magnetic adhesion to target surface\ndetonation: Manual, timed, or remote",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "CBC-3 charges were used to breach a vault but the water tamping failed — the resulting fragmentation killed a hostage on the other side of the door.",
+    "A stolen shipment of CBC-3 charges has given a criminal organization military-grade breaching capability that no commercial door or wall can resist."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "explosive",
+    "weapon",
+    "ai",
+    "bar",
+    "energy",
+    "water",
+    "tier 3"
+  ]
+}

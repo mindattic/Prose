@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a576708f939159a58bf95468",
+  "name": "Idealist",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Believes in how things should be despite how they are",
+  "behavioral_signature": "Measures every action against a perfect standard",
+  "under_stress": "Clings harder to principles",
+  "at_rest": "Dreams of a better world out loud",
+  "will_always": [
+    "hold to the ideal"
+  ],
+  "will_never": [
+    "compromise on core beliefs"
+  ],
+  "unless": [
+    "the ideal would cost an innocent life"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Bleeding Heart",
+      "threshold": 0.8,
+      "context": "moral optimism"
+    },
+    {
+      "archetype": "Absolutist",
+      "threshold": 0.75,
+      "context": "rigid principles"
+    }
+  ],
+  "opposite_of": [
+    "Nihilist",
+    "Pragmatist"
+  ],
+  "tags": [
+    "principled",
+    "hopeful"
+  ]
+}

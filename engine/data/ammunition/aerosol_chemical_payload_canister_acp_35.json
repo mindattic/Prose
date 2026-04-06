@@ -1,0 +1,52 @@
+{
+  "id": "019d6143a5577667b841809331ca41c6",
+  "name": "Aerosol Chemical Payload Canister ACP-35",
+  "type": "ammunition",
+  "aliases": [
+    "Chem canister",
+    "ACP-35",
+    "Cloud pack",
+    "Spray load"
+  ],
+  "category": "exotic",
+  "caliber": "35mL chemical aerosol",
+  "description": "The ACP-35 is a standardized pressurized canister containing 35mL of chemical aerosol payload, used across a range of chemical-dispersal weapon platforms as both antipersonnel and area-denial ammunition. The canister's pressurization system atomizes the chemical payload into a fine aerosol mist upon discharge, producing a cloud of active chemical agent that persists in still air for 8-30 seconds depending on the specific formulation.\n\nThe ACP-35 format was established to standardize the rapidly proliferating market of chemical dispersal weapons, each of which previously used proprietary canister designs. The standard defines canister dimensions, connector interface, and pressurization parameters, but not the chemical formulation — which means any ACP-35 canister can contain anything from tear gas analog to nerve agent precursor, and the external labeling is the only indication of contents. This has created obvious problems for regulators and obvious opportunities for operators.\n\nThe canister's dual-valve design allows for two discharge modes: a focused stream for single-target engagement and a dispersed cloud for area effect. The weapon platform controls which valve opens, giving operators tactical flexibility from a single canister. Most chemical dispersal weapons carry 4-8 ACP-35 canisters in a rotary or linear magazine, and mixed loads — combining different formulations in a single magazine — are a common field practice.",
+  "manufacturer": "Various (standardized format)",
+  "tier_availability": "Tier 2+ (base format) / Tier 3+ (weapons-grade formulations) / Black market (prohibited formulations)",
+  "legality": "Licensed (irritant and marking formulations) / Restricted (incapacitant formulations) / Prohibited (lethal chemical agents)",
+  "specifications": "volume: 35mL per canister\npressure: 180 bar\ndischarge_modes: Focused stream (2m width at 10m) / Dispersed cloud (4m diameter)\npersistence: 8-30 seconds in still air\ncanister_count_per_weapon: 4-8 typical\nshelf_life: 12-36 months depending on formulation\nstorage: Cool, dry, ventilated",
+  "compatible_weapons": [
+    "Hemolytic Vapor Induction Carbine",
+    "Galvanic Vapor Diffusion Pistol GVDP-1 'Saltlick'",
+    "Electrochemical Dissolution Sprayer EDS-2 'Lacquer'",
+    "Oxidative Plasma Breath Lance OPBL-1 'Vestment'",
+    "Pulmonary Surfactant Degradation Carbine"
+  ],
+  "variants": [
+    "ACP-35 Irritant (tear gas analog, non-lethal, licensed)",
+    "ACP-35 Incapacitant (motor disruption compound, restricted)",
+    "ACP-35 Hemolytic (blood agent formulation, prohibited)",
+    "ACP-35 Marker (UV-fluorescent aerosol, target tracking, licensed)",
+    "ACP-35 Corrosive (material degradation agent, prohibited)"
+  ],
+  "cultural_context": "The ACP-35 canister is the most regulated ammunition format in Meridian 88, with its chemical contents subject to classification, tracking, and prosecution in ways that kinetic ammunition is not. The irony is that the standardized canister format makes enforcement nearly impossible — a canister of licensed irritant is physically identical to a canister of prohibited hemolytic agent, and field testing is impractical. This regulatory gap has made the ACP-35 a focal point of weapons policy debate, with some jurisdictions proposing chemical taggants in all formulations and manufacturers lobbying against any requirement that would increase production cost. Among operators, the ACP-35 is treated with a respect bordering on fear — loading the wrong canister or misjudging wind conditions has killed more operators than enemy fire.",
+  "story_hooks": [
+    "A licensed security company's ACP-35 inventory audit has revealed that 15% of their irritant canisters have been swapped for incapacitant formulations — someone inside the company is escalating their less-lethal arsenal without authorization.",
+    "A black market chemist is producing custom ACP-35 formulations to order, including a compound that specifically targets individuals with a particular neural implant model — the formulation exploits a cooling fluid leak vulnerability to deliver the agent directly to the implant site."
+  ],
+  "tags": [
+    "exotic",
+    "ammunition",
+    "weapon",
+    "neural",
+    "ai",
+    "elf",
+    "control",
+    "market",
+    "bar",
+    "fire",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

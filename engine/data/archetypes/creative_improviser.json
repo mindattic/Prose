@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a56673f59007aef625b657fc",
+  "name": "Creative Improviser",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Creates in the moment without plan or script",
+  "behavioral_signature": "Reacts, adapts, builds on what's happening now",
+  "under_stress": "Becomes more erratic, more brilliant",
+  "at_rest": "Jamming, riffing, playing",
+  "will_always": [
+    "create in the moment"
+  ],
+  "will_never": [
+    "follow a script when improvising is possible"
+  ],
+  "unless": [
+    "improvisation risks catastrophic failure in high stakes"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Chaos Creator",
+      "threshold": 0.7,
+      "context": "spontaneous"
+    },
+    {
+      "archetype": "Remix",
+      "threshold": 0.65,
+      "context": "adaptive creation"
+    }
+  ],
+  "opposite_of": [
+    "Perfectionist",
+    "Architect"
+  ],
+  "tags": [
+    "spontaneous",
+    "adaptive"
+  ]
+}

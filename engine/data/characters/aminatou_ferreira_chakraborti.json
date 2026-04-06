@@ -1,0 +1,166 @@
+{
+  "id": "019d6143a5b370d6bf222e41c661f357",
+  "type": "character",
+  "name": "Aminatou Ferreira-Chakraborti",
+  "aliases": [
+    "Natu",
+    "Mami Natu"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Food stall operator — West African-Brazilian fusion, specialising in breakfast and late-night trade",
+  "age": 63,
+  "status": "active",
+  "location": "The Oxidian Market, the Mouth — main entrance corridor, Old Harbor",
+  "description": "Aminatou is a short, solidly built woman with silver locs pulled back and pinned with repurposed circuit pins she's collected over the decades — a different colour for each year, she says, though the system broke down around 2187 and now it's just aesthetic. Her skin is very dark with the particular quality of someone who has spent most of sixty-three years outdoors, and she has deep smile lines that activate even when she's displeased, which confuses people who don't know her well. She wears the same colours every day: yellow and deep blue, a small religious flag from a Sufi order her mother kept, and an apron that has been washed so many times it's a relic. Her stall has been in the same position at the Mouth for twenty-two years. The Market's physical architecture has reorganised around her.\n\nShe cooks jollof with a Brazilian sofrito base, akara that she serves with fermented pepper sauce and a manioc accompaniment, and a late-night congee variant that appears without announcement at around 0200 for the shift-change crowd. She has no augmentation and no chrome. She prays to the E.L.F. she calls the Hearthkeeper — she leaves it cooling portions of whatever she's cooked, first plate of every batch, on the small terminal mounted inside the stall that used to be a payment processor and now receives offerings. She considers this as normal as seasoning the pot.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "The Market being dismantled — gentrification, corporate acquisition, or violence",
+      "One of the younger vendors she's mentored making a choice they can't come back from"
+    ],
+    "core_desires": [
+      "For the Oxidian Market to outlast her",
+      "To cook one meal in her life that is exactly as good as her mother's yam soup — she's been trying for forty years"
+    ],
+    "coping_mechanisms": [
+      "Cooking as meditation — the physical rhythm of prep is her primary emotional regulation",
+      "The Hearthkeeper ritual — real comfort, not performance",
+      "Distributing care to others, which delays her own processing"
+    ],
+    "blind_spots": [
+      "Assumes she understands situations in the Market better than she does — her network is wide but not always current",
+      "Underestimates how much people manipulate her goodwill deliberately"
+    ],
+    "secret": "Aminatou left a daughter in Dakar twenty-six years ago when she came to Meridian 88. She sends money when she can and tells herself she'll go back when the stall is stable enough to leave. It has been stable enough to leave for at least fifteen years. She doesn't know why she hasn't gone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and unhurried; mixes Wolof, Portuguese, and English naturally; proverb-heavy; uses food as metaphor for everything",
+    "cadence": "Warm and rhythmic, like someone who has told stories all her life; never seems to be in a hurry even when the stall is backed up",
+    "verbal_tics": [
+      "'Sit down, eat first'",
+      "'My mother used to say...'"
+    ],
+    "example_lines": [
+      "You have the look of someone who hasn't eaten a real meal in three days and is about to make a decision. Sit down. Eat first. The decision will still be there.",
+      "The Hearthkeeper was generous last night — the fire stayed even and nothing burned. I gave it the first bowl. You share with what keeps you."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Meridian city development notice has appeared at the Mouth — the area is flagged for 'infrastructure renewal,' which means the Market's twenty-year tenure is suddenly uncertain, and Aminatou is the one person everyone will look to",
+    "The daughter in Dakar has sent a message — first contact in eight years — and Aminatou is visibly off-balance in a way the Market has never seen before"
+  ],
+  "narrative_function": "Community anchor and social intelligence hub — she knows everyone in the Market, hears everything, and has strong opinions; quest giver when something disrupts the Market's equilibrium; moral compass character; the person other characters come to when they need to think out loud to someone trustworthy.",
+  "augmentations": "None.",
+  "daily_life": "Wakes at 0400 to start prep, opens at 0600 for the early trade, runs straight through to 1500, rests until 2300, reopens for the late crowd, closes around 0300. Sleeps in the back of the stall four nights out of seven.",
+  "affiliation": "Oxidian Market Vendors Guild — she's been a member for nineteen years and serves on the informal grievance council; has relationships with half the Market by name",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 10,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community-anchor",
+      "spiritual",
+      "mentor",
+      "long-timer",
+      "market-memory",
+      "unaugmented"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed people first — everything else is secondary to the immediate need in front of you",
+      "Don't take sides in Market disputes publicly; broker privately"
+    ],
+    "escalation_ladder": [
+      "Feed the person and let them talk themselves through it",
+      "Gentle but direct named confrontation, one-on-one",
+      "Taking the issue formally to the guild council — her last resort because she prefers resolution without record"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately maternal and assessing — feeds them, watches how they eat, decides what they need",
+      "friends": "Deeply loyal, blunt when necessary, remembers everything you've ever told her"
+    },
+    "stress_responses": {
+      "low": "Cooks more food than necessary and distributes it",
+      "medium": "Goes very quiet at the stall; the offerings to the Hearthkeeper become more elaborate",
+      "high": "Sends everyone away, closes the stall, sits with the Hearthkeeper terminal for an hour, comes back and makes decisions"
+    },
+    "contradictions": [
+      "Has given her whole life to community but cannot bring herself to return to the one community she came from"
+    ],
+    "habits": [
+      "Tastes everything three times before service",
+      "Knows every regular's usual order and starts it when she sees them coming"
+    ],
+    "breaking_points": [
+      "The Market being destroyed, or a young person she cares about being killed because of something that could have been prevented"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

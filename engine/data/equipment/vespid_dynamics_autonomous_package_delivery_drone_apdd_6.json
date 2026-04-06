@@ -1,0 +1,50 @@
+{
+  "id": "019d6143a87d7c45ae90c79de072d793",
+  "name": "Vespid Dynamics Autonomous Package Delivery Drone APDD-6",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Autonomous Package Delivery Drone APDD-6",
+  "type": "equipment",
+  "aliases": [
+    "APDD-6",
+    "Mail Bug",
+    "Package Drone",
+    "Delivery Wasp"
+  ],
+  "category": "drones",
+  "description": "A cargo drone capable of autonomously delivering packages up to 5 kg across Meridian 88 using Vespid's Autonomous Navigation Mesh. The APDD-6 navigates urban airspace, avoids obstacles and other aircraft, and delivers payloads to designated GPS coordinates or directly to a recipient identified by neural interface beacon. The drone is weather-resistant, tamper-detecting, and equipped with a cargo bay that can be configured for standard packages, medical supplies, or temperature-controlled pharmaceutical transport.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — commercial delivery",
+  "base_technologies": [],
+  "specifications": {
+    "payload": "5 kg maximum",
+    "range": "30 km on single charge",
+    "speed": "60 km/h cruise",
+    "navigation": "Vespid ANM + GPS",
+    "recipient identification": "GPS coordinates or neural interface beacon",
+    "cargo bay": "30x20x15 cm",
+    "info": "configurable",
+    "tamper detection": "Alerts on unauthorized opening",
+    "weight": "3 kg empty",
+    "weather": "Rain and 40 km/h wind capable"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "APDD-6 drones have been hijacked in flight and their cargo redirected to unknown recipients — the hijacking exploits a vulnerability in the neural interface beacon system.",
+    "An APDD-6 was loaded with an explosive device instead of a package — it delivered itself to the target's door, and the tamper detection that should have flagged the payload was disabled."
+  ],
+  "tags": [
+    "drones",
+    "equipment",
+    "neural",
+    "ai",
+    "elf",
+    "control",
+    "medical",
+    "drone",
+    "explosive",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a5f177698cb172b0fb3ea91d",
+  "type": "character",
+  "name": "Dieynaba Achterberg-Mwololo",
+  "aliases": [
+    "Dr. Dieynaba",
+    "The Quiet Knife"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Trauma surgeon, Aurochs Medical Complex, Level 4 Critical Bay",
+  "age": 46,
+  "status": "active",
+  "location": "Aurochs Medical Complex — lives in Bronzeline, thirty-minute transit from the hospital",
+  "description": "Dieynaba is the kind of person who becomes invisible until she is suddenly the most important person in the room. Tall, narrow, with close-cropped silver hair she started growing out at thirty-five after a particularly bad run of nights, she moves through the hospital corridors with a quality of compression — everything pulled inward and efficient. Her face is angular and striking, her skin deep brown, and she has no cosmetic augmentations whatsoever, a quiet statement in an environment where most of her colleagues wear at least a tailored iris or a dermal accent. Her only concession is a thin prosthetic ring finger on her right hand — a replacement she had done after a surgical injury, fitted in matte medical ceramic, which she has never bothered to have skinned over.\n\nShe has operated on more gunshot wounds, industrial trauma cases, and augmentation rejection cascades than she can count, and she has developed the particular flat affect of a surgeon who has learned that feeling during surgery means slowing down. Off the table she is dry, acerbically funny in small doses, and possessed of a privacy so total that colleagues who have worked alongside her for years know almost nothing about her life outside the hospital. She is not cruel. She is simply rigorous in the application of her attention, and most things do not meet her threshold.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Making an error that she cannot attribute to anything except her own failure",
+      "Being seen as less than fully competent by her team during a crisis"
+    ],
+    "core_desires": [
+      "To practice surgery without institutional interference — no quotas, no corponation priorities, no triage politics",
+      "A life outside this building that she has not yet managed to build"
+    ],
+    "coping_mechanisms": [
+      "Total compartmentalization — the hospital is a sealed space; her private life is another one entirely",
+      "Perfectionism as prophylaxis against vulnerability"
+    ],
+    "blind_spots": [
+      "Believes her emotional flatness in clinical settings is professionalism rather than dissociation",
+      "Cannot ask for help until a situation has already become critical"
+    ],
+    "secret": "She has been secretly consulting — pro bono, untraceable — for a cooperative clinic in the Narrows that serves patients Aurochs would refuse. If the hospital found out she was redirecting complex cases to an unlicensed facility, her contract would be terminated immediately. She considers this the most important thing she does."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse, precise, and slightly formal — does not use filler words; switches without warning into warm and specific when speaking about a case she finds interesting",
+    "cadence": "Unhurried, flat, with a Senegalese-Kenyan rhythm that surfaces in her vowels when she's tired",
+    "verbal_tics": [
+      "Very long pauses before answering anything personal",
+      "Repeating the last word of a sentence she doesn't believe"
+    ],
+    "example_lines": [
+      "'The patient has about four minutes of viable decision-making window. We can have that conversation after.'",
+      "'Comfortable. That's what you said. Comfortable.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient came through her trauma bay with wounds that match a pattern she has now seen in six separate cases over three months — all with scorched tissue consistent with a specific augmentation overload signature. She's been documenting it quietly and needs someone to investigate the source.",
+    "Her covert work for the Narrows cooperative clinic has been noticed — not by Aurochs, but by someone who wants to use it as leverage over her."
+  ],
+  "narrative_function": "High-tier information source on trauma patterns in the city — she can tell you what kinds of wounds are spiking and what that implies about corporate or gang activity. Formidable institutional contact. Can save a character's life in extremis, at a cost that might be social rather than financial.",
+  "augmentations": "Prosthetic ring finger, right hand (medical ceramic, unskinned). Stabilization brace implanted in both wrists — microsurgical-grade, prevents tremor under extended operations. Optical zoom implant, left eye only — surgical magnification.",
+  "daily_life": "Twelve-hour shifts on a four-days-on-three-off rotation, though she regularly stays past shift end on complex cases. Off days are aggressively protected — she goes somewhere and does something she tells no one about.",
+  "affiliation": "Aurochs Medical Complex (senior staff, Trauma Division — Tier 3 with Tier 4 compensation negotiations ongoing)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "trauma surgeon",
+      "institutional insider",
+      "covert idealist",
+      "information source",
+      "hard to read"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The patient on the table is the only priority until they are stable",
+      "Never make a commitment she cannot honor — she would rather refuse than fail to deliver"
+    ],
+    "escalation_ladder": [
+      "Silence and a measuring look",
+      "One precise statement of position with no repetition",
+      "Complete disengagement — she walks away and does not return to the conversation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally courteous, gives nothing away, assesses competence rapidly and adjusts accordingly",
+      "friends": "Very few; those who have earned her trust receive a dry, specific warmth and an attention that feels like being studied affectionately"
+    },
+    "stress_responses": {
+      "low": "Slows down, becomes quieter",
+      "medium": "Voice drops to near-inaudible; movements become very deliberate",
+      "high": "Total clinical focus — reports from colleagues suggest she becomes a different person in high-casualty events; they mean this as a compliment"
+    },
+    "contradictions": [
+      "Claims to be uninvested in outcomes beyond her own technical performance, while secretly running a parallel practice out of something that looks a lot like idealism",
+      "Protects her privacy absolutely while being compelled to notice and remember everything about the people around her"
+    ],
+    "habits": [
+      "Eats the same meal every pre-shift: black tea and flatbread with nothing on it",
+      "Runs her thumb along her prosthetic ring finger when evaluating a difficult decision",
+      "Never sits during a consultation if she can stand"
+    ],
+    "breaking_points": [
+      "Watching a patient die due to Aurochs triage protocols prioritizing corporate-insured patients over critical cases",
+      "Her covert clinic being shut down or raided"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Bronzeline; father a Senegalese urban planner, mother a Kenyan-Dutch logistics attorney",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed surgical residency at Aurochs; finished third in cohort",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Surgical injury to right hand; prosthetic replacement, declined skinning",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began covert consulting work for Narrows cooperative clinic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

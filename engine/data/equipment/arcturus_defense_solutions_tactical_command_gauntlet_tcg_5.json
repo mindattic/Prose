@@ -1,0 +1,50 @@
+{
+  "id": "019d6143a8537165a70724698b9fb307",
+  "name": "Arcturus Defense Solutions Tactical Command Gauntlet TCG-5",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Tactical Command Gauntlet TCG-5",
+  "type": "equipment",
+  "aliases": [
+    "TCG-5",
+    "War Glove",
+    "Command Hand",
+    "Arcturus Gauntlet"
+  ],
+  "category": "communications",
+  "description": "A forearm-mounted tactical computing and communications platform that integrates real-time mapping, squad tracking, drone control, and encrypted communications into a ruggedized wrist-worn unit. The TCG-5 features a flexible display that wraps around the forearm, providing a large-format tactical map accessible at a glance. It connects to squad members' neural interfaces, displaying their positions, status, and sensor feeds in an integrated common operating picture. The gauntlet can control up to 4 drones simultaneously, manage automated defensive systems, and coordinate fire support requests through an encrypted uplink.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — military and security command",
+  "base_technologies": [],
+  "specifications": {
+    "display": "Flexible forearm wrap",
+    "info": "20x8 cm; 10 km range; impact resistant; EMP hardened",
+    "squad tracking": "Up to 12 linked operators",
+    "drone control": "4 simultaneous",
+    "defense system management": "Compatible with Arcturus autonomous platforms",
+    "communications": "256-bit encrypted",
+    "mapping": "Real-time 3D terrain with sensor overlay",
+    "weight": "0.6 kg",
+    "battery": "24-hour active use",
+    "ruggedness": "Waterproof"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A stolen TCG-5 still had active squad tracking links — the thief could see the real-time positions of an Arcturus security team without them knowing their movements were compromised.",
+    "A TCG-5's drone control interface was exploited to hijack an operator's own drones mid-mission — the drones were turned against the squad they were supposed to protect."
+  ],
+  "tags": [
+    "communications",
+    "equipment",
+    "war",
+    "love",
+    "neural",
+    "ai",
+    "control",
+    "drone",
+    "fire",
+    "tier 3"
+  ]
+}

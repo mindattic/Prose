@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa757bf99d374ecc2ac49c52",
+  "name": "Walking Street (Autonomous Road Section)",
+  "type": "transportation",
+  "aliases": [
+    "The Walkway",
+    "Moving Ground",
+    "People Mover"
+  ],
+  "category": "public_transit",
+  "manufacturer": "Tessera (Infrastructure Division)",
+  "description": "Sections of road surface that move — giant conveyor belts built into the sidewalks of Tier 3-4 commercial districts. Step on, stand still, and the ground carries you at walking pace or faster. The Walking Streets connect transit hubs, shopping centers, and corporate plazas, keeping pedestrian flow efficient and predictable. In theory, they're a marvel of urban design. In practice, they break down frequently, trap clothing and bags in the mechanism, and create a two-class pedestrian system where the moving walk is clean and maintained while the static sidewalk beside it crumbles.",
+  "propulsion": "Conveyor belt mechanism, electric drive",
+  "speed": "6 km/h standard, 12 km/h express lanes",
+  "capacity": "Continuous flow — hundreds of pedestrians simultaneously",
+  "range": "Individual segments: 100m-2 km",
+  "tier_availability": "Tier 3-4 districts",
+  "cost": "Free to use (infrastructure tax funded)",
+  "autonomy": "Automated operation, speed-controlled by occupancy sensors",
+  "armament": "None. Emergency stop buttons every 20 meters (50% functional).",
+  "common_usage": "Pedestrian transit in commercial districts, connecting transit hubs, urban flow management.",
+  "story_hooks": [
+    "A Walking Street segment reverses direction during rush hour, causing chaos — the AI controlling it claims it was avoiding a greater hazard ahead",
+    "Someone maps the Walking Street network and realizes the flow patterns herd people through specific commercial zones, optimizing foot traffic for certain businesses"
+  ],
+  "tags": [
+    "publictransit",
+    "transportation",
+    "ai",
+    "corporate",
+    "control",
+    "clothing",
+    "tier 3",
+    "tier 4"
+  ]
+}

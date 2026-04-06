@@ -1,0 +1,194 @@
+{
+  "id": "019d6143a6bd7927bc61412de1394674",
+  "type": "character",
+  "name": "Réamonn Diarra-Zheleznyak",
+  "aliases": [
+    "Red",
+    "Réa"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street performer and puppeteer",
+  "age": 19,
+  "status": "active",
+  "location": "Mexicantown Libre, Grand Corridor",
+  "description": "Réamonn is wiry and restless, with warm copper-tan skin, a gap between his front teeth, and a mop of deep red hair that is entirely natural and has been a source of commentary his entire life. He's of average height but seems taller when he performs — something about how he uses his body changes when he has a puppet on his arm. His hands are his most distinctive feature: long-fingered, constantly moving, stained with the paints and solvents he uses to build his puppets. He has retractable cat-claw mods on both hands, which he uses practically for puppet construction rather than any aesthetic reason.\n\nRéamonn builds elaborate articulated puppet figures from salvage — recycled plastic, old circuit boards, scraps of fabric from Mexicantown's textile markets — and performs at the intersection of Grand Corridor and the Libre's main plaza most afternoons. He's been doing this since he was fifteen, unlicensed, subsisting on tips and the UBC stipend. His performances are satirical, political, and often about things happening in the specific neighborhood that day, which means he has a dedicated local following and has twice been asked by Ferrogate Transit security to 'move along.' He always does. He always comes back. He is young enough to believe this is sustainable and old enough to know it might not be.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "being invisible, passing through the city without leaving a mark",
+      "his father was right that this is a waste of a life"
+    ],
+    "core_desires": [
+      "to be known in this neighborhood as belonging here, genuinely",
+      "to build a puppet so perfect it seems alive"
+    ],
+    "coping_mechanisms": [
+      "turning real stress into puppet satire — externalizing everything",
+      "seeking out the Libre's ELF shrines when he feels directionless"
+    ],
+    "blind_spots": [
+      "his satirical work can genuinely injure people he's using as targets and he doesn't fully reckon with this",
+      "he conflates being liked with being safe"
+    ],
+    "secret": "The color-shifting geneware he had installed was for a theater program at a Tessera-affiliated arts school he was accepted to at age 16. He walked out after three days because a faculty member told him puppet performance was 'not a serious discipline.' He's never told anyone he was accepted, because it complicates the story he tells about himself."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, colloquial, full of Mexicantown Libre street slang and Malian French expressions from his grandmother. Shifts seamlessly between registers when performing.",
+    "cadence": "Rapid-fire in conversation, theatrical and varied during performance — he can make his voice do almost anything.",
+    "verbal_tics": [
+      "'No, listen, it's — okay, here —'",
+      "mimicking the voices of people he's telling stories about mid-sentence",
+      "laughing before the punchline"
+    ],
+    "example_lines": [
+      "'You want to know what Ferrogate's doing with the south plaza? Ask me after the show. I'll have a puppet of the whole situation by Thursday.'",
+      "'My dad says I'm wasting my hands. My dad has never seen what these hands can do.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A recent puppet performance satirizing Ferrogate Transit's expansion plans hit too close to home — someone who saw the show has told him a Ferrogate security contractor has been asking about 'the red-haired kid at Grand Corridor,' and he doesn't know if this is intimidation or something worse.",
+    "One of his puppets — a figure he built from salvage without knowing the origin of the components — has started behaving strangely: making sounds it shouldn't, moving when he's not manipulating it. He thinks there might be an ELF fragment in the circuitry and he doesn't know whether to be terrified or delighted."
+  ],
+  "narrative_function": "Street-level local color and information source; knows everything happening in Mexicantown Libre in real time; his satirical performances can be used to track neighborhood mood and recent events; potential point-of-contact character who can lead players deeper into Libre's informal community networks.",
+  "augmentations": "Retractable claw mods (both hands, practical geneware, entry-level), color-shifting hair dye geneware (has it but only ever uses 'red' — had it installed for a purpose he's since abandoned)",
+  "daily_life": "Spends mornings in his shared room building new puppets or repairing old ones, afternoons and evenings performing at Grand Corridor, nights at the vendors' cooperative's informal social gatherings.",
+  "affiliation": "Independent; informally connected to Mexicantown Libre's street vendors' cooperative",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 10,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-performer",
+      "puppeteer",
+      "satirist",
+      "tier-1",
+      "UBC-dependent",
+      "neighborhood-fixture"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If you can make it funny, make it funny — humor is armor and weapon both",
+      "Never perform for an empty crowd; even two people is enough",
+      "Always have the next puppet partially built; idle hands mean idle mind"
+    ],
+    "escalation_ladder": [
+      "Deflection through humor",
+      "Direct and earnest appeal",
+      "Getting loud — he has a performer's voice and he'll use it in an argument",
+      "Involving bystanders (he's a showman; he'll make a scene if he has to)",
+      "Running — he's fast and knows the Libre's back routes"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately performs for them in small ways — a quick impression, a joke — to test their warmth before deciding whether to trust them",
+      "friends": "Deeply loyal, remembers everything about them and references it unexpectedly, shows affection through making things for them"
+    },
+    "stress_responses": {
+      "low": "Builds compulsively, new puppets he has no plan for",
+      "medium": "Performs longer sets, staying in the plaza past dark",
+      "high": "Goes completely serious and quiet in a way that unsettles people who know him"
+    },
+    "contradictions": [
+      "Uses performance to avoid genuine conversation about himself, even though performance is also the most honest thing about him",
+      "Claims he doesn't care about formal artistic legitimacy, but the Tessera rejection still shapes every choice he makes"
+    ],
+    "habits": [
+      "Names every puppet he builds — they have full personalities in his head",
+      "Leaves a small puppet figure at ELF shrines as an offering",
+      "Eats the same thing from the same vendor every day before a performance, for luck"
+    ],
+    "breaking_points": [
+      "Someone destroying one of his puppets deliberately",
+      "Being officially banned from Grand Corridor by Ferrogate security"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Retractable claw mods, both hands (geneware, practical, tier 1)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retractable claw mods, both hands (geneware, practical, tier 1)",
+      "replaces": ""
+    },
+    {
+      "name": "Color-shifting hair geneware (installed, unused, tier 1)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Color-shifting hair geneware (installed, unused, tier 1)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sentinel": 0.9,
+    "Pragmatist": 0.9,
+    "Code Keeper": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

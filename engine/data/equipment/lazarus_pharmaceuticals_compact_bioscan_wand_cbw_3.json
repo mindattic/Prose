@@ -1,0 +1,44 @@
+{
+  "id": "019d6143a85f7a88a182603559960fd1",
+  "name": "Lazarus Pharmaceuticals Compact Bioscan Wand CBW-3",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Compact Bioscan Wand CBW-3",
+  "type": "equipment",
+  "aliases": [
+    "CBW-3",
+    "Body Reader",
+    "Health Wand",
+    "Lazarus Scanner"
+  ],
+  "category": "medical",
+  "description": "A handheld scanning device that performs a comprehensive biological assessment when waved over a patient's body — detecting broken bones, internal bleeding, organ damage, foreign objects, toxins in the bloodstream, and neural interface status. The CBW-3 uses a combination of ultrasound, bioimpedance, and chemical sensing to build a holographic body map showing the location and severity of all detected conditions. The scan takes 15 seconds for a full body assessment and requires no physical contact — the wand operates at a distance of up to 30 cm.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — medical professionals",
+  "base_technologies": [],
+  "specifications": {
+    "scan time": "15 seconds full body",
+    "range": "Up to 30 cm from body surface",
+    "detection": "Fractures",
+    "info": "bleeding; organ damage; foreign objects; toxins",
+    "output": "Holographic body map on linked display",
+    "sensors": "Ultrasound + bioimpedance + chemical",
+    "weight": "0.2 kg",
+    "battery": "100 scans per charge",
+    "resolution": "2 mm structural detail"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A CBW-3 scan of a seemingly healthy person revealed a micro-explosive device implanted adjacent to their neural interface — a cortical bomb that the patient did not know they had.",
+    "CBW-3 wands have been modified to transmit scan results to unauthorized recipients — every medical scan becomes intelligence about the patient's physical vulnerabilities."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "neural",
+    "explosive",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "019d6143aa52770e8fba727fca993d6b",
+  "name": "Tessera Industries Holographic Data Storage",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Holographic Data Storage",
+  "type": "technology",
+  "aliases": [
+    "HDS",
+    "Light Memory",
+    "Holo Store",
+    "Tessera Crystal"
+  ],
+  "subcategory": "computing",
+  "description": "A data storage medium that encodes information as holographic interference patterns within a crystal matrix, achieving storage densities of 1 petabyte per cubic centimeter. HDS crystals are readable by laser interferometry and can store data for an estimated 10,000 years without degradation. The technology has made long-term data archival physically compact and essentially permanent. A corporation's entire data history can be stored in a crystal the size of a sugar cube, and that crystal will outlast the civilization that created it.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Holographic interference pattern encoding",
+    "Crystal matrix data inscription",
+    "Laser interferometric reading systems"
+  ],
+  "enables": [
+    "Petabyte-per-cm3 storage density",
+    "10,000-year data persistence",
+    "Physically compact total archive capability",
+    "Permanent record storage"
+  ],
+  "social_impact": "HDS has made data destruction nearly impossible — any information committed to crystal storage will persist essentially forever. This permanence has profound implications for privacy, accountability, and forgetting. Corporations store everything because storage is trivially cheap and permanent, creating comprehensive records that can be audited, subpoenaed, or stolen at any future date. The concept of information having a natural lifespan has been abolished.",
+  "story_hooks": [
+    "An HDS crystal found in a demolished building contains the complete financial records of a corporation that officially dissolved 50 years ago — the records reveal that the corporation never actually ceased operations.",
+    "Someone is stealing HDS crystals from corporate archives — not for the data they contain but for the storage medium itself, which they are re-encoding with information from an unknown source."
+  ],
+  "tags": [
+    "computing",
+    "technology",
+    "memory",
+    "ai",
+    "elf",
+    "corporate",
+    "tier 3"
+  ]
+}

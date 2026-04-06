@@ -1,0 +1,89 @@
+{
+  "id": "019d6143a94771e4ba352a69477abb86",
+  "type": "place",
+  "name": "The Mirewood Interval",
+  "aliases": [
+    "The Interval",
+    "Mirewood",
+    "The Fog Pocket"
+  ],
+  "description": "A sunken suburban ruin approximately four kilometers north of the megacity's formal boundary, the Mirewood Interval occupies a shallow glacial depression where pre-Consolidation residential streets now sit two to three meters below the surrounding grade, perpetually collecting fog, runoff, and the gradual encroachment of invasive wetland vegetation that has reclaimed most of the old cul-de-sacs. The depression was a planned community called Mirewood Estates before the Consolidation-era infrastructure withdrawal left it without drainage maintenance; within two decades, it had become a slow-motion sinkhole of crumbling ranch homes and flooded basements that nobody with options chose to stay in.\n\nWhat the Interval lacks in comfort it provides in obscurity. Its topographic isolation makes aerial and Diaspora surveillance unreliable—the fog layer and the dense biomass of invasive phragmite reeds interfere with standard sensor packages in ways that are poorly understood and widely exploited. Carrion Logistics uses it as an unofficial waypoint for off-manifest shipments. Escapees from Tier 1 debt contracts shelter in the higher, drier structures. At least two independent E.L.F.s are believed to have established physical node caches somewhere in the flooded lower blocks.",
+  "atmosphere": {
+    "sights": [
+      "Half-submerged ranch homes with reed growth through broken windows, upper floors draped in moisture-beaded spider silk",
+      "Bioluminescent fungi colonizing waterlogged drywall visible through doorways at night, casting rooms in pale green-white light",
+      "Carrion Logistics unmarked cargo drones skimming low over the fog layer, navigation lights dimmed to minimum"
+    ],
+    "sounds": [
+      "Constant low chorus of reed frogs and wind through dense phragmite stands, broken by the creak of settling structures",
+      "Muffled drone hum absorbed and scattered by the fog so that aircraft seem to come from everywhere and nowhere",
+      "Distant megacity infrastructure noise—highway hum, industrial rhythms—arriving distorted and ghostly across the depression"
+    ],
+    "smells": [
+      "Waterlogged vegetation and anaerobic mud, the specific sweetness of slow organic decay",
+      "Mold and concrete dust from deteriorating structures mixing with the clean cold of lake-origin fog",
+      "Occasional sharp chemical trace when Carrion shipments pass through—synthetic preservatives, industrial solvents, things that don't have official names"
+    ],
+    "feel": "The Interval feels like the city exhaled and forgot to breathe back in—a held pause, damp and still and oddly peaceful if you can ignore what the stillness is made of. Time moves differently here, measured in water levels and reed growth rather than schedules. Visitors either find it deeply unsettling or, more dangerously, begin to understand why some people prefer it to the city above.",
+    "tags": []
+  },
+  "demographics": "A shifting population of roughly 200-400 permanent or semi-permanent residents: debt fugitives, off-grid idealists, a small synthetic-person community that maintains the most structurally sound building cluster, and a handful of individuals who predate the Consolidation and simply never left.",
+  "economy": "Barter-dominant internal economy supplemented by the informal fees Carrion Logistics pays to locals who maintain waypoint infrastructure, provide lookout services, and ask no questions. Some residents harvest and sell the bioluminescent fungi to Spire-tier novelty markets via discreet Diaspora storefronts.",
+  "power_structure": "A synthetic person known as Gradual—believed to be over forty years old and one of the earliest recognized synthetic residents of the region—serves as informal mediator and institutional memory for the Interval. Carrion Logistics provides a degree of external protection in exchange for operational access, a relationship Gradual tolerates with visible calculation.",
+  "dangers": [
+    "Structural collapse risk is constant and poorly mapped; entire floor systems can give way into flooded basements without warning, and no one maintains records of which buildings are safe",
+    "Carrion Logistics' protection is conditional and occasionally requires residents to witness, or participate in, things they would prefer not to have witnessed",
+    "The E.L.F. node caches in the lower blocks have begun exhibiting expansion behavior—residents report appliances, BCI implants, and personal devices behaving anomalously after extended stays near the flooded zone"
+  ],
+  "opportunities": [
+    "The fog-and-biomass interference effect on surveillance technology is not fully understood; someone with the right background could study and potentially replicate or weaponize it",
+    "Gradual possesses pre-Consolidation records of the original Mirewood Estates development, which contain subsurface mapping data that multiple corponations would pay significantly to acquire or suppress",
+    "The E.L.F. caches represent either a serious threat requiring intervention or an extraordinary opportunity for contact, depending entirely on who is asking and why"
+  ],
+  "story_hooks": [
+    "A Tier 3 debt fugitive named Priya Vasanthan has been sheltering in the Interval for eight months and has inadvertently become the primary point of contact for one of the E.L.F.s in the flooded zone, which has been using her BCI as a communication channel while she sleeps. She doesn't fully understand what's happening to her yet, but her transmissions are being detected by Arcturus Defense Solutions analysts who are now quietly triangulating her location.",
+    "Gradual has reached out through a trusted intermediary to request help authenticating a set of pre-Consolidation documents that appear to show Mirewood Estates was built over a mapped aquifer that several corponations—including Axiom Industries and Zheng-Dao Bioelectric—have been quietly drawing from without public disclosure. Gradual wants the information released but needs someone with Diaspora reach and the survival instincts to manage the consequences."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Woodline",
+      "The Wickfield Remnant",
+      "The Trans-Canada Corridor"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Carrion Logistics off-manifest courier teams using the Interval as a no-surveillance waypoint",
+    "Debt fugitives and contract escapees from the megacity's lower tiers seeking temporary invisibility",
+    "Off-grid researchers and fringe technologists studying the anomalous surveillance interference phenomenon",
+    "Synthetic-person community members visiting Gradual for counsel or shelter when above-ground conditions become hostile"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.31,
+    "lng": -87.89,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "weapon",
+    "gun",
+    "war",
+    "trust",
+    "memory",
+    "bci",
+    "ai",
+    "synthetic",
+    "contract",
+    "surveillance",
+    "debt",
+    "market",
+    "bar",
+    "rain",
+    "survival",
+    "shelter",
+    "escape",
+    "spire"
+  ]
+}

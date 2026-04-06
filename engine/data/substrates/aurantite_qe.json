@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a9d5787caadbbfaa09796be9",
+  "name": "Aurantite-QE",
+  "brand_name": "Aurantite",
+  "product_name": "Aurantite-QE",
+  "type": "substrate",
+  "aliases": [
+    "entangle-alloy",
+    "QE plate",
+    "spooky metal"
+  ],
+  "category": "exotic",
+  "description": "Aurantite-QE is a gold-platinum-erbium alloy in which quantum-assembled dopant clusters maintain macroscopic quantum entanglement between paired sample sets — two pieces of Aurantite-QE fabricated simultaneously share correlated quantum states that can be read and written as data at room temperature. The entanglement is not used for faster-than-light communication but enables instantaneous state verification: a piece of Aurantite-QE can confirm the physical and informational integrity of its paired counterpart across any distance, functioning as an unforgeable cryptographic key embedded in matter itself. Maintaining the entanglement requires the alloy to remain below a critical magnetic field threshold.",
+  "properties": [
+    "macroscopic_quantum_entanglement",
+    "state_correlation",
+    "cryptographic_key_material",
+    "tamper_evident",
+    "non_magnetic_sensitivity",
+    "high_corrosion_resistance",
+    "ductile",
+    "high_density"
+  ],
+  "developers": [
+    "Apex Nanofabrication",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "unforgeable physical authentication tokens",
+    "quantum-secured diplomatic seals",
+    "paired vault locking mechanisms",
+    "treaty verification instruments",
+    "high-value asset provenance tracking",
+    "military IFF transponder cores",
+    "Spire-tier identity credentials"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 520,000 per paired set (minimum unit — pairs only)",
+  "story_hooks": [
+    "One half of a high-value Aurantite-QE authentication pair has been stolen — the thieves don't know what they have yet, but the moment they expose it to a scanner, the owner will know exactly where it is, and they will come immediately.",
+    "A forger claims to have broken the entanglement protocol and is selling 'decoupled' Aurantite-QE fragments as generic quantum material — if true, this would invalidate every diplomatic treaty and vault seal in the Spire tier.",
+    "A Tier 1 scavenger pulled a small Aurantite-QE token from a demolition site — she doesn't know what it is, but something across the city just lit up on someone's board, and very expensive people are moving toward her location."
+  ],
+  "tags": [
+    "exotic",
+    "substrate",
+    "war",
+    "identity",
+    "ai",
+    "elf",
+    "spire",
+    "tier 4",
+    "tier 5"
+  ]
+}

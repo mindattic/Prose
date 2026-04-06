@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a9dc74c7b7f823e04c1e217b",
+  "name": "Hemalite-GX",
+  "brand_name": "Hemalite",
+  "product_name": "Hemalite-GX",
+  "type": "substrate",
+  "aliases": [
+    "blood iron",
+    "GX-hem",
+    "ironblood"
+  ],
+  "category": "bio_hybrid",
+  "description": "Hemalite-GX is a cast iron-cobalt alloy developed by Crucible Industries in partnership with BioForge, distinguished by a proprietary internal microvasculature network — laser-sintered channels 80-200 microns in diameter running throughout the bulk material — that is seeded with an engineered hemoglobin-analog fluid and a population of synthetic erythrocyte-like repair cells. The fluid carries oxygen and chemical repair precursors to damage sites, enabling crack-healing and corrosion remediation from within the metal itself. The system operates entirely on dissolved chemical gradients rather than requiring bioelectric input, making it the most autonomously self-sustaining bio-metal currently available.",
+  "properties": [
+    "autonomous self-healing",
+    "corrosion resistant",
+    "high hardness",
+    "chemical-gradient driven",
+    "no bioelectric dependency",
+    "moderate weight",
+    "resistant to thermal cycling damage"
+  ],
+  "developers": [
+    "Crucible Industries",
+    "BioForge Labs"
+  ],
+  "applications": [
+    "heavy industrial machinery components",
+    "infrastructure repair-in-place applications",
+    "marine and subsea structural elements",
+    "long-duration unattended augment components",
+    "deep-environment exoframe plating"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ2,100 per kg (industrial grade); Φ5,400 per kg (implant-compatible grade)",
+  "story_hooks": [
+    "A century-old Hemalite-GX structural beam in a Shelf district building is still actively self-healing — the original hemoglobin-analog fluid has been replicating and mutating for a hundred years and now has properties that no one at Crucible Industries can fully account for.",
+    "Street-level augment hackers have discovered that Hemalite-GX's internal fluid network can be tapped and chemically reprogrammed to carry custom payloads — turning structural implant components into slow-release drug delivery systems without the host's knowledge.",
+    "A Crucible Industries whistleblower claims the hemoglobin-analog fluid in industrial-grade Hemalite-GX batches contains a classified chemical compound that accumulates in surrounding tissue over years of proximity — and the corporation has known about it since 2187."
+  ],
+  "tags": [
+    "biohybrid",
+    "substrate",
+    "augment",
+    "ai",
+    "synthetic",
+    "elf",
+    "drug",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

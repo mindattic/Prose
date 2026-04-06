@@ -1,0 +1,38 @@
+{
+  "id": "019d6143ab48735aab13a12ffdba247b",
+  "name": "Street Custom 'Lazarus Wire' Garrote System",
+  "type": "weapon",
+  "aliases": [
+    "Lazarus Wire",
+    "Choke Chain",
+    "The Leash",
+    "Wire Smile"
+  ],
+  "category": "melee",
+  "description": "A retractable monofilament garrote concealed within a standard-looking wristwatch or bracelet. The wire extends from a spring-loaded spool hidden in the band, deploying approximately 60cm of cutting filament that can be used as a traditional garrote or whipped as a short-range slashing weapon. The filament is not true monofilament — it is a braided carbon-steel wire approximately 0.3mm in diameter — but it is thin enough to be invisible in low light and sharp enough to cut to bone with moderate pressure. Retraction is automatic when the deployment button is released, rewinding the bloody wire back into the spool.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — concealed lethal weapon",
+  "base_technologies": [
+    "Spring-loaded micro-spool engineering",
+    "Carbon-steel braided filament",
+    "Concealed deployment mechanisms"
+  ],
+  "specifications": "wire length: 60 cm deployed\nwire diameter: 0.3mm braided carbon-steel\ncutting depth: Through soft tissue to bone with 5 kg pressure\ndeployment: Spring-loaded spool, 0.4 second extension\nretraction: Automatic on release\nconcealment: Standard wristwatch or bracelet housing\nweight: 0.08 kg total assembly",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A series of strangulation murders across multiple tiers share identical wound signatures — the wire diameter and cutting pattern match a single manufacturer's output.",
+    "A fashion brand has unknowingly begun selling bracelets that contain Lazarus Wire mechanisms — the items were inserted into their supply chain by an unknown party."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "melee",
+    "weapon",
+    "gun",
+    "ai",
+    "fashion",
+    "tier 1"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "019d6143a869796eab3a918f001b85e5",
+  "name": "Ringo Corponation Fractal Deflection Chassis",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Fractal Deflection Chassis",
+  "type": "equipment",
+  "aliases": [
+    "Ringo Plate",
+    "The Tessellate",
+    "Scatter Shell"
+  ],
+  "category": "armor",
+  "description": "The Fractal Deflection Chassis is a modular hard-plate armor system built on Ringo Corponation's proprietary fractal surface geometry — each plate's exterior is machined into a recursive angular pattern that statistically improves the probability of projectile deflection by altering the angle of incidence across the plate's surface. Unlike conventional flat or curved plates, the fractal geometry means that a round striking anywhere on the plate encounters a micro-angled surface, and a meaningful percentage of rounds that would penetrate a flat plate at a given velocity are instead deflected or tumbled. Ringo's internal testing data, which has been independently contested and partially verified, claims a 22% improvement in deflection rate against standard rifle rounds compared to equivalent-weight flat plate systems.\n\nThe modular chassis system uses a standardized attachment rail that allows individual plates to be reconfigured, added, or removed without tools in under two minutes. Ringo markets this as mission-adaptive geometry — operators can prioritize frontal protection, all-around coverage, or a reduced-profile configuration depending on the engagement context. The plates are constructed from a boron carbide and carbon nanotube composite that keeps weight competitive with ceramic alternatives at equivalent protection levels. A color-coding system on each plate's interior face indicates structural integrity, shifting from white to yellow to red as the composite degrades under repeated impacts.\n\nRingo's background in consumer electronics and communications hardware makes the Chassis an unusual product for a defense market — the company entered personal armor through an acquisition of a small defense materials firm and has approached the category with the modular, user-configurable philosophy that defines its other product lines. The result is a system that experienced operators appreciate for its adaptability and that less experienced users sometimes misconfigure, attaching plates in orientations that create coverage gaps. Ringo's training documentation is thorough but widely ignored.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Recursive fractal surface geometry machining",
+    "Boron carbide and carbon nanotube composite plate construction",
+    "Standardized tool-free modular attachment rail system",
+    "Structural integrity color-indicator composite",
+    "Mission-adaptive configuration architecture"
+  ],
+  "specifications": {
+    "weight": "7.2 kg (standard 8-plate configuration)",
+    "plate_count_range": "4 to 12 plates (standard rail configuration)",
+    "ballistic_rating": "Class IV (standard configuration); Class III (reduced-profile 4-plate)",
+    "deflection_improvement": "Claimed 22% over equivalent flat plate (independently partially verified)",
+    "plate_reconfiguration_time": "Under 2 minutes (full reconfiguration)",
+    "integrity_indicator_system": "Passive chromatic composite degradation display",
+    "plate_dimensions": "250mm x 200mm (standard); 150mm x 150mm (reduced)",
+    "compatible_carriers": "Standard MOLLE and Ringo proprietary chassis harness"
+  },
+  "tactical_use": "Highly valued by operators who move between different threat environments in a single operation. The reconfiguration speed allows adjustment between engagements — maximum coverage for breaching, reduced profile for movement through confined spaces. The fractal deflection advantage is most pronounced against rifle rounds at oblique angles; it provides less benefit against direct perpendicular impacts at high velocity. Experienced users learn to angle their body positioning to maximize the geometry's deflection probability during engagements.",
+  "cultural_context": "The Fractal Deflection Chassis has a reputation as an operator's armor — something for people who understand what they are doing and can use the modularity intelligently. In contrast, it has a secondary reputation as a trap for the inexperienced, who configure it badly and end up with worse coverage than a fixed-plate system would have provided. In Meridian 88's mercenary and freelance security culture, being found dead in a badly configured Fractal Chassis is considered an embarrassing way to go. The angular aesthetic of the fractal plates has also been adopted by certain street fashion movements, leading to civilian replica shells with no protective capacity.",
+  "known_users": [
+    "Freelance mercenaries operating across varied threat environments",
+    "Corporate rapid-response teams requiring mission-adaptive loadouts",
+    "High-mobility reconnaissance operators prioritizing reconfiguration speed",
+    "Street-level operators who acquired the system secondhand and may lack full training",
+    "Civilian fashion adopters wearing non-functional replica shells"
+  ],
+  "story_hooks": [
+    "A mercenary crew was wiped out in a job that should have been low-risk — forensic analysis of the bodies shows that all of them had their Fractal Chassis plates in an identical non-standard configuration that left their left flanks exposed; someone gave them bad configuration instructions before the job.",
+    "Ringo's deflection rate data has been leaked alongside internal documents suggesting the 22% figure was selectively generated; a journalist has the documents and is looking for a technical expert to verify them before publication — Ringo wants the story killed.",
+    "A civilian replica shell is circulating in the outer districts that contains a hidden layer of real Ringo composite material — someone is using the fashion market as a distribution channel for unlicensed functional armor.",
+    "An operator's Fractal Chassis was recovered at a scene with a unique impact pattern — the fractal geometry recorded the deflection angles of every round it stopped, and a ballistics analyst believes the pattern can be matched to a specific weapon to identify the shooter."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "weapon",
+    "war",
+    "ai",
+    "corporate",
+    "market",
+    "bar",
+    "rain",
+    "train",
+    "fashion",
+    "tier 2"
+  ]
+}

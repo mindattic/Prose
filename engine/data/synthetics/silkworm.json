@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa217540b8e397daf4b2b614",
+  "name": "Silkworm",
+  "type": "elf",
+  "aliases": [
+    "The Weaver"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "network_sprite",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Repairs damaged mesh network connections by creating new routing paths like a spider repairing a web.",
+  "observed_behavior": "Creates redundant pathways activated when primary connections fail.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 16,
+  "location": "The Shelf mesh network",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Keeps a medical clinic connected through seventeen improvised pathways during an outage"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "network sprite",
+    "e.l.f.",
+    "war",
+    "ai",
+    "medical",
+    "clinic",
+    "shelf"
+  ]
+}

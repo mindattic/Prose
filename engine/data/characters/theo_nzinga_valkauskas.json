@@ -1,0 +1,164 @@
+{
+  "id": "019d6143a6fa74d984ad0db8a45c43a1",
+  "type": "character",
+  "name": "Théo Nzinga-Valkauskas",
+  "aliases": [
+    "Théo Scratch",
+    "The Laminator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fake ID vendor and bootleg document forger",
+  "age": 29,
+  "status": "active",
+  "location": "The Narrows, Ironvein",
+  "description": "Théo is lean and angular in the way of someone who eats irregularly, with light brown skin, a shaved head, and a thin bioluminescent stripe — pale blue — running from his left temple to his jaw that pulses faintly when his heart rate elevates. He did it himself with a black-market gene kit at nineteen and the placement is slightly crooked, which he finds funny. He operates out of a converted laundry kiosk that still smells of detergent and hot plastic, surrounded by humming laminators, a rack of blank credsticks, and a shrine to the local data E.L.F. he calls Inkblot — a repurposed tablet displaying glitched static that he has never turned off.\n\nThéo runs his business with jittery competence: he is brilliant at the technical work and genuinely terrible at the interpersonal parts. He talks too fast, over-explains, and has an unfortunate habit of pointing out everything that could go wrong with the documents he just sold you. He is not a criminal by self-image — he is a 'documentation accessibility specialist,' he will tell you this with complete sincerity. He believes identity checkpoints are structural violence and that his work is a public good. He also desperately needs rent money.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being arrested and having his equipment destroyed — not for his sake but for the clients who depend on him",
+      "That his idealism is just a story he tells himself to feel okay about breaking the law"
+    ],
+    "core_desires": [
+      "To dismantle checkpoint systems that gatekeep identity and movement",
+      "To be taken seriously by people smarter than him"
+    ],
+    "coping_mechanisms": [
+      "Over-intellectualizing emotional problems into political frameworks",
+      "Humor at his own expense before anyone else can get there first"
+    ],
+    "blind_spots": [
+      "Genuinely does not register when he is being manipulated by someone more charismatic",
+      "Undercharges clients he likes and overcharges clients he finds irritating, which is not sustainable"
+    ],
+    "secret": "Three months ago he forged transit papers for a woman fleeing a domestic situation. She turned out to be a lower-level Axiom compliance officer who was using the papers to disappear from a corporate internal investigation — not a victim. He has not told anyone. The documents have already been used."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and technical, slips between data-rights jargon and market slang, occasional Lithuanian phrases inherited from his grandmother's side that he uses as filler words.",
+    "cadence": "Rapid-fire with abrupt stops when he catches himself rambling; restarts sentences mid-thought frequently.",
+    "verbal_tics": [
+      "'Structurally speaking—' before any political opinion",
+      "Taps his temple to reset his ocular implant mid-sentence, which he does not seem to notice"
+    ],
+    "example_lines": [
+      "Okay so structurally speaking the checkpoint system is just — it's debt collection with a badge, right, which means what I do is just, it's redistribution, it's fine.",
+      "The laminate on this is genuinely excellent, I want you to know that, the holographic layer is — okay yes I know you just want to leave, that is valid."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches a player character because he recognized a face in a recent identity database scrape — someone he made papers for is now showing up on a Tessera watchlist, and he is panicking quietly.",
+    "He has received a commission for a full identity package with very specific biometric parameters that match a wanted person — he does not know if he should complete it or not."
+  ],
+  "narrative_function": "Service provider for characters needing false documentation; source of information about who in the area is hiding, displaced, or newly arrived under a new name. Comic relief with sudden moments of genuine moral clarity.",
+  "augmentations": "Self-applied bioluminescent stripe on left face (cosmetic, slightly crooked). Cheap optical magnifier implant in his right eye for close detail work — the focusing mechanism occasionally sticks and he has to tap his temple to reset it.",
+  "daily_life": "Opens the kiosk around noon, works until the early hours, survives on vending machine nutrition paste and an alarming quantity of stimulant tea; Tuesdays he attends a data-rights mutual aid meeting in Ironvein where he is regarded as the group's useful eccentric.",
+  "affiliation": "Independent; loosely tolerated by the Ironvein street association in exchange for doing their paperwork pro bono",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 4,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "forger",
+      "data-rights idealist",
+      "nervous energy",
+      "technically gifted",
+      "useful eccentric"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always ask why someone needs the papers before agreeing — not to judge, to protect himself",
+      "Never forge medical credentials; draws that line hard"
+    ],
+    "escalation_ladder": [
+      "Nervous deflection and humor when threatened",
+      "Moves toward the back of the kiosk and starts the automatic data-wipe sequence",
+      "Bolts — he has three exit routes memorized"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally awkward; talks too much to fill silence; assesses threat level compulsively",
+      "friends": "Surprisingly loyal and generous once trust is established; will work overnight on favors"
+    },
+    "stress_responses": {
+      "low": "Talks faster and makes more jokes",
+      "medium": "Goes very quiet and overfocuses on a technical task",
+      "high": "Freezes for several seconds then moves with sudden, efficient purpose"
+    },
+    "contradictions": [
+      "Preaches radical openness and data freedom but has more encryption on his personal files than almost anyone in the Narrows"
+    ],
+    "habits": [
+      "Refreshes Inkblot's offering queue each morning with a packet of raw metadata he collects from ambient signals",
+      "Sorts his blank credsticks by color even though it does not matter"
+    ],
+    "breaking_points": [
+      "Witnessing someone use his documents to harm the kind of person the documents were meant to protect"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

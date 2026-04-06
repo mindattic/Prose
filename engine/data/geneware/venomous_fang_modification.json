@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a8b5748a995ac9582b011e6e",
+  "name": "Venomous Fang Modification",
+  "brand_name": "Venomous",
+  "product_name": "Venomous Fang Modification",
+  "type": "geneware",
+  "aliases": [
+    "Snake Bite",
+    "Viper Grin",
+    "Fangmod"
+  ],
+  "category": "defensive",
+  "target_system": "dental/glandular (venom production and fang delivery)",
+  "description": "Modifies the upper canine teeth into retractable fangs backed by venom glands in the upper jaw. The fangs are hollow with a groove channel that delivers venom on bite. The venom composition varies by installation — Gravemoss Biofoundry offers neurotoxic (pain and paralysis), hemotoxic (tissue damage), and sedative blends. The fangs retract flush with the normal tooth line when not deployed, making them invisible during normal conversation. Deployment is voluntary through jaw muscle tension. The venom glands refill over 24–48 hours after a full discharge. The user is immune to their own venom but not to other users' formulations. In the Shelf, fangmod users form a loose community with its own etiquette — you don't bare fangs in casual conversation, and you never bite without warning unless your life depends on it.",
+  "source_organism": "Bungarus multicinctus (many-banded krait, neurotoxic variant), Bothrops atrox (common lancehead, hemotoxic variant)",
+  "manufacturer": "Gravemoss Biofoundry",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted (requires defensive permit; venom type must be registered)",
+  "procedure": "Dental surgery with venom gland implantation and retroviral fang growth, 2 sessions",
+  "expression_time": "4–6 weeks for fang growth; 8 weeks for venom gland maturation",
+  "reversibility": "Fangs removable; venom glands require surgical excision",
+  "side_effects": [
+    "Jaw ache from venom gland pressure when reserves are full",
+    "Risk of accidental self-bite during dental procedures",
+    "Venom potency affected by hydration and diet",
+    "Gum inflammation around fang sockets",
+    "Rare: venom gland rupture causing localized facial swelling and pain"
+  ],
+  "social_perception": "Stigmatized more than TTX or Livewire — there's something primal about venomous teeth that disturbs people. Fangmod users face discrimination in employment, housing, and social settings. A visible fang deployment during an argument can result in assault charges even without a bite.",
+  "story_hooks": [
+    "A fangmod user's venom composition changes spontaneously — the venom glands are producing something new, something that wasn't in the original installation",
+    "A series of bite-wound deaths across the Shelf are traced to a single venom profile, but the registered user has been dead for three months — someone harvested and is weaponizing the venom glands"
+  ],
+  "tags": [
+    "defensive",
+    "geneware",
+    "weapon",
+    "war",
+    "death",
+    "ai",
+    "elf",
+    "surgery",
+    "pain",
+    "bar",
+    "shelf",
+    "tier 4"
+  ]
+}

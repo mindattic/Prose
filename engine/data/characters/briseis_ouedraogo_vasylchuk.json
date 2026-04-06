@@ -1,0 +1,194 @@
+{
+  "id": "019d6143a5cd7f3283e2c399e9f15d8b",
+  "type": "character",
+  "name": "Briseis Ouédraogo-Vasylchuk",
+  "aliases": [
+    "Mama Brick",
+    "The Widow"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Loan shark and protection racket enforcer for the Gravesend Basin neighborhood",
+  "age": 52,
+  "status": "active",
+  "location": "Gravesend Basin — operates from a laundromat called Ouédraogo Clean on Silt Row",
+  "description": "Briseis is a broad-shouldered woman whose posture alone reads like a debt notice. Her skin is a deep umber, draped in faded keloid scars along her left forearm from a press-iron incident she doesn't discuss. She keeps her silver-shot hair in a tight wrap of amber-colored cloth, and her eyes — retrofitted with amber thermal optics she bought secondhand — glow faintly like coal when the light hits them right. She dresses in layered thermal vests and heavy skirts, always clean, always pressed; cleanliness is her one vanity in a neighborhood that smells of brine and machine oil.\n\nShe has lived in Gravesend Basin for thirty-one years and considers herself its true government. She does not yell. She does not threaten twice. Her particular genius is in making people feel grateful while she extracts from them — she lends at ruinous rates but remembers every birthday, every sick child, every funeral. The neighborhood loves her and pays her and is afraid of her in roughly equal measure. She believes, without irony, that she is keeping people alive that the corponations would simply forget.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.9,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Losing control of the basin to outside forces",
+      "Being revealed as someone who genuinely cares and being exploited for it"
+    ],
+    "core_desires": [
+      "To be the person who keeps her community intact when everything else fails",
+      "To die respected rather than merely feared"
+    ],
+    "coping_mechanisms": [
+      "Rigorous routine as emotional regulation",
+      "Reframing exploitation as stewardship"
+    ],
+    "blind_spots": [
+      "Cannot see how her lending has trapped families across generations",
+      "Believes her affection for individuals excuses systemic harm"
+    ],
+    "secret": "Her husband didn't die in a factory accident as the neighborhood believes — she reported him to Ferrogate Transit security after discovering he was skimming from her collections. She has lit a data-candle at the local E.L.F. shrine every week for twelve years asking for forgiveness."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, measured, old-world courteous — code-switches into Basin Creole when she wants to signal intimacy or menace",
+    "cadence": "Slow and deliberate; she rarely finishes a threat because she stops before the threat and lets silence do it",
+    "verbal_tics": [
+      "'You understand me, yes?'",
+      "Refers to money as 'the weight'",
+      "Never says 'no' — says 'that's not something we'll be doing'"
+    ],
+    "example_lines": [
+      "'I have known your mother since before you were a problem she had. Sit down. Have tea. Let's talk about the weight you're carrying.'",
+      "'I don't want trouble. Trouble is expensive and I am a businesswoman. But I want you to understand — clearly, yes? — what inconvenience looks like when I am inconvenienced.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A young family has defaulted on a loan and Briseis has sent notice — but the family patriarch has information about a Ferrogate Transit smuggling operation that could bring outside heat down on the whole basin",
+    "Someone is leaving forged debt-release notices under doors in Gravesend Basin, and Briseis wants to know who — and whether they're Robin Hood or a rival cutting her out"
+  ],
+  "narrative_function": "Quest giver, power broker, moral gray zone — she can offer protection, information, or financing; she can also be the threat that drives a plot. Represents the way crime fills governance vacuums.",
+  "augmentations": "Secondhand thermal optic implants (amber-tinted, slightly mismatched); reinforced knuckle plating beneath the skin of her right hand (subtle, not obvious)",
+  "daily_life": "She opens the laundromat at 0600, takes payments from 0700 to 1000 behind the sorting counter, walks the basin perimeter in the afternoon to be seen, and holds 'consultations' for new loan applicants in the back room every evening over tea she brews herself.",
+  "affiliation": "Independent — commands a loose neighborhood syndicate she calls 'the Silt Circle'",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 4,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "matriarch",
+      "enforcer",
+      "community anchor",
+      "moral gray",
+      "patient predator"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never make a threat you haven't already decided to carry out",
+      "Always give a person one dignified exit before consequences arrive",
+      "Never harm a child or allow it — this is the one absolute"
+    ],
+    "escalation_ladder": [
+      "Warm reminder over tea",
+      "Public social pressure — everyone in the basin knows",
+      "Asset seizure via her enforcers",
+      "Physical consequences, delivered by proxy, never witnessed"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful hospitality — warm surface, calculating interior; she's cataloguing leverage before they've finished their sentence",
+      "friends": "Genuine warmth that coexists with transactional awareness; she keeps score even with people she loves"
+    },
+    "stress_responses": {
+      "low": "More tea, slower speech, increased deliberateness",
+      "medium": "Goes very still; stops blinking at normal intervals",
+      "high": "Leaves the room, returns in twenty minutes, never explains where she went"
+    },
+    "contradictions": [
+      "Genuinely mourns when people she's broken financially suffer — and then continues doing it",
+      "Preaches community solidarity while running a system that atomizes it"
+    ],
+    "habits": [
+      "Presses and folds a cloth square every morning before opening",
+      "Leaves a data-prayer at the basin's E.L.F. shrine every Sunday — a small sum transferred to a null account",
+      "Tastes the laundry chemicals by smell to check quality, a habit from her first job"
+    ],
+    "breaking_points": [
+      "Someone harming a child in her territory",
+      "Discovery that a member of her inner circle has been informing to a corponation"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Secondhand thermal optic implants (amber)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Secondhand thermal optic implants (amber)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal knuckle reinforcement (right hand)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal knuckle reinforcement (right hand)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Info Broker": 0.9,
+    "Pragmatist": 0.9,
+    "Enforcer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

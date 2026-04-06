@@ -1,0 +1,49 @@
+{
+  "id": "019d6143a8b379fcb7b3bcae54ebb6dd",
+  "name": "Thermoelectric Skin Conversion",
+  "brand_name": "Thermoelectric",
+  "product_name": "Thermoelectric Skin Conversion",
+  "type": "geneware",
+  "aliases": [
+    "Power Skin",
+    "Body Battery",
+    "Watt Flesh"
+  ],
+  "category": "agricultural/industrial",
+  "target_system": "integumentary/metabolic (bioelectric harvesting)",
+  "description": "Introduces thermoelectric conversion cells into the skin that harvest the temperature differential between body heat and ambient air to generate a small but continuous electrical current. The user becomes a biological battery — capable of charging small electronics through skin contact, powering low-draw devices, and in extremis, providing emergency power to medical equipment. Output is modest: approximately 2–5 watts in normal conditions, spiking to 10–15 watts in cold environments where the thermal differential is greatest. Zheng-Dao Bioelectric developed the modification for field workers in remote areas where charging infrastructure is unavailable. In the Shelf, where electricity is unreliable and expensive, Power Skin users charge their neighbors' devices for small fees — a living power grid, one handshake at a time.",
+  "source_organism": "Synthetic thermoelectric protein constructs (no organism source), Electrophorus electricus (electric eel, bioelectric regulation genes)",
+  "manufacturer": "Zheng-Dao Bioelectric",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "procedure": "Dermal injection matrix with thermoelectric cell integration, 2 sessions",
+  "expression_time": "3–5 weeks",
+  "reversibility": "Reversible with thermoelectric cell ablation; leaves faint grid-pattern scarring",
+  "side_effects": [
+    "Skin feels noticeably warm to others — like a low-grade fever",
+    "Electrical tingling sensation during high output",
+    "Metal jewelry and accessories may cause discomfort from current flow",
+    "Caloric demand increases with power output",
+    "Rare: uncontrolled discharge during extreme cold causing minor burns at output points"
+  ],
+  "social_perception": "Practical and mildly admirable. Power Skin users are valued community members in low-infrastructure areas. The modification is unremarkable — useful without being flashy. Some users develop a sideline charging business.",
+  "story_hooks": [
+    "A Power Skin user discovers their output has doubled overnight — the thermoelectric cells are evolving, and their body temperature is dropping as the cells harvest more heat",
+    "A network of Power Skin users in the Shelf is organized into a biological power grid by a community leader — until a corponation utility company sues them for unlicensed power distribution"
+  ],
+  "tags": [
+    "agriculturalindustrial",
+    "geneware",
+    "war",
+    "ai",
+    "synthetic",
+    "elf",
+    "control",
+    "power",
+    "medical",
+    "night",
+    "cold",
+    "shelf",
+    "tier 2"
+  ]
+}

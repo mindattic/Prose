@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5607ec790def27af2f2958d",
+  "name": "Book Smart",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Knows theory perfectly, struggles with application",
+  "behavioral_signature": "References texts, cites sources, quotes experts",
+  "under_stress": "Retreats further into theory",
+  "at_rest": "Reading, studying, memorizing",
+  "will_always": [
+    "reference the literature"
+  ],
+  "will_never": [
+    "trust experience over textbooks"
+  ],
+  "unless": [
+    "the book is wrong and the street is right"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Scholar",
+      "threshold": 0.85,
+      "context": "academic knowledge"
+    },
+    {
+      "archetype": "Expert",
+      "threshold": 0.7,
+      "context": "domain knowledge"
+    }
+  ],
+  "opposite_of": [
+    "Street Smart"
+  ],
+  "tags": [
+    "academic",
+    "theoretical"
+  ]
+}

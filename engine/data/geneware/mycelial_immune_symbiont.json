@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a8ab7f35ba8c5ed3678b2d87",
+  "name": "Mycelial Immune Symbiont",
+  "brand_name": "Mycelial",
+  "product_name": "Mycelial Immune Symbiont",
+  "type": "geneware",
+  "aliases": [
+    "Fungus Blood",
+    "Shroom Shield",
+    "Cordyceps Mod"
+  ],
+  "category": "medical",
+  "target_system": "immune/integumentary (fungal symbiotic immune enhancement)",
+  "description": "Introduces a beneficial fungal symbiont — engineered from medicinal mushroom species — that colonizes the skin and mucosal membranes, creating a living biological shield. The mycelial network produces broad-spectrum antimicrobial compounds, accelerates wound healing at colonized sites, and provides an early-warning immune response by detecting pathogens before they penetrate the body. The symbiont is invisible to the naked eye but detectable as a faint earthy scent on the user's skin. In ideal conditions, the mycelium produces barely visible white filaments at wound sites that accelerate clotting and prevent infection — essentially a biological bandage that grows from the skin. Gravemoss Biofoundry engineered the symbiont from Trametes versicolor (turkey tail mushroom) and Ganoderma lucidum (reishi), both renowned for immune-modulating properties.",
+  "source_organism": "Trametes versicolor (turkey tail mushroom), Ganoderma lucidum (reishi mushroom), engineered symbiotic strain",
+  "manufacturer": "Gravemoss Biofoundry",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "procedure": "Topical application of symbiont starter culture with skin-integration medium, single session",
+  "expression_time": "2–4 weeks for initial colonization; full immune integration at 3 months",
+  "reversibility": "Eliminable with antifungal treatment; immune benefits disappear within 2 weeks",
+  "side_effects": [
+    "Faint earthy or mushroom scent on skin",
+    "Visible white mycelial filaments at wound sites (alarming to those unfamiliar)",
+    "Symbiont competes with normal skin flora — may cause temporary skin irritation during colonization",
+    "Antifungal medications kill the symbiont, requiring reinstallation",
+    "Rare: mycelial overgrowth in humid conditions producing visible fungal patches on skin"
+  ],
+  "social_perception": "Practical and mildly unusual. The earthy scent is distinctive but not unpleasant. The visible wound-healing filaments are unsettling until you understand what they are. In the Shelf, the modification is valued as affordable immune support. Some users cultivate the earthy aesthetic deliberately.",
+  "story_hooks": [
+    "A Shroom Shield user's symbiont detects a pathogen in a sealed corporate building that the building's own sensors miss — the fungal network is more sensitive than electronic detection",
+    "A mycelial overgrowth event causes a user's skin to sprout visible mushroom fruiting bodies — alarming but harmless, and the spores carry the symbiont to nearby unmodified people, spreading the immune benefits without consent"
+  ],
+  "tags": [
+    "medical",
+    "geneware",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "bar",
+    "rain",
+    "train",
+    "shelf",
+    "tier 2"
+  ]
+}

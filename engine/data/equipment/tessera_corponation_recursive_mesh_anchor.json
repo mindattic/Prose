@@ -1,0 +1,63 @@
+{
+  "id": "019d6143a8757982a706deb48bd72fc2",
+  "name": "Tessera Corponation Recursive Mesh Anchor",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Recursive Mesh Anchor",
+  "type": "equipment",
+  "aliases": [
+    "Ghost Nail",
+    "Loop Spike",
+    "Tessera Anchor",
+    "RMA"
+  ],
+  "category": "utility",
+  "description": "The Recursive Mesh Anchor is a deployable network node disguised as a structural fastener — a thumb-sized titanium spike that, when driven into any conductive surface, broadcasts a self-replicating subnet capable of bridging isolated local networks across a radius of up to 400 meters. The device piggybacks on ambient electrical noise in walls, conduits, and rebar to propagate signal without drawing detectable power draw from any single source. Once planted, it fragments its own address signature recursively every 11 seconds, making passive detection nearly impossible without physical access to the spike itself.\n\nWhat distinguishes the RMA from conventional signal repeaters is its passive operational profile. It requires no active power cell after initial deployment — the kinetic energy of insertion charges an internal graphene microcapacitor that sustains the device for 72 hours. The spike's exterior is coated in construction-grade polymer composite, making it visually indistinguishable from standard structural anchors used by Palladian and other contractors throughout Meridian 88's lower districts.\n\nThe RMA is standard kit for Tessera's own field intelligence contractors and has leaked into the hands of fixers, corporate espionage runners, and union organizers who need persistent comms infrastructure in surveilled buildings. Building security sweeps routinely miss them; the most reliable countermeasure is a physical inspection of every fastener in a structure, which is rarely practical.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Recursive subnet fragmentation",
+    "Graphene microcapacitor",
+    "Passive electrical noise harvesting",
+    "Conductive surface propagation"
+  ],
+  "specifications": {
+    "dimensions": "12mm diameter x 38mm length",
+    "weight": "47g",
+    "operational_duration": "72 hours post-insertion",
+    "signal_radius": "400m in conductive-rich environments, 180m in dry concrete",
+    "address_rotation_interval": "11 seconds",
+    "insertion_tool_required": "Standard pneumatic or manual driver",
+    "detection_resistance": "Passes standard RF sweep; fails only under directed spectral analysis"
+  },
+  "tactical_use": "Planted during advance recon of a target building — often during a legitimate contractor visit or building access window. Provides persistent comms relay for a follow-on team operating inside signal-dead zones like server vaults, sub-basements, or Faraday-lined executive floors. Can also be used to bridge two isolated networks for passive data exfiltration over extended periods.",
+  "cultural_context": "Among runners in Meridian 88's contractor class, finding a Tessera Anchor in a wall you just drilled is a known occupational hazard and dark joke — 'someone was here before you.' The anchors have become a kind of territorial marker in the grey-market intelligence community, a sign that a building is already compromised or being watched. Corporate security divisions have begun cataloguing anchor placements as a way of mapping rival intelligence networks, which has made the devices simultaneously more valuable and more dangerous to carry.",
+  "known_users": [
+    "Tessera field intelligence contractors",
+    "Corporate espionage fixers",
+    "Union network organizers",
+    "Freelance data brokers",
+    "Building infiltration specialists"
+  ],
+  "story_hooks": [
+    "A runner plants an RMA only to discover it immediately handshakes with an existing anchor already in the wall — someone has been running a subnet in this building for months.",
+    "A Tessera contractor is found dead with every RMA in her kit already deployed in a building she never officially entered.",
+    "A building demolition crew accidentally broadcasts a dormant RMA's stored data cache when their cutting equipment charges it back to life.",
+    "A corporate security director offers a substantial bounty for whoever can map all active anchors in a rival's headquarters tower — without alerting the rival."
+  ],
+  "tags": [
+    "utility",
+    "equipment",
+    "gun",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "bar",
+    "dark",
+    "energy",
+    "tier 2"
+  ]
+}

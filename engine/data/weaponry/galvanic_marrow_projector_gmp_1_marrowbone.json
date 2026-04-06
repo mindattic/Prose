@@ -1,0 +1,67 @@
+{
+  "id": "019d6143ab2a76fcab1498c8283662cb",
+  "name": "Galvanic Marrow Projector GMP-1 'Marrowbone'",
+  "type": "weapon",
+  "aliases": [
+    "Marrowbone",
+    "The Deep Ache",
+    "Bone Gun",
+    "Resonant Pain"
+  ],
+  "category": "cyber",
+  "description": "The Galvanic Marrow Projector GMP-1 delivers a precisely tuned galvanic current through a directional conductive beam that penetrates surface tissue and targets the high-conductivity environment of bone marrow directly. Bone marrow, suspended in its semi-fluid lipid matrix within the skeletal cavity, conducts galvanic current far more readily than surrounding tissue, allowing the GMP-1 to bypass surface armor and even subdermal plating by routing its effect through the skeletal system rather than against it. The result is an intense, incapacitating pain response originating from deep within the body, accompanied by temporary disruption of the hematopoietic activity that marrow performs — effectively stunning the body's blood production system.\n\nRingo Corponation developed the GMP-1 for crowd compliance applications following regulatory pressure against lethal crowd control options after the Meridian 88 South Quarter incident. The weapon was marketed as a 'non-lethal deep compliance system' — language that has since been challenged in three separate regulatory reviews, as prolonged exposure causes marrow necrosis and long-term hematological complications that manifest weeks after the initial event. Ringo's legal team has successfully argued that these delayed complications do not constitute immediate lethality, keeping the weapon in a compliance classification rather than a lethal one.\n\nThe GMP-1 fires with a low electrical buzz and leaves no visible wound on the target, which made it attractive to security forces wanting deniable compliance options. Users who have been hit describe the sensation as a profound wrongness centered in their bones — not surface pain but something deeper and more disorienting, as if the pain is coming from the inside of the body rather than the outside. The psychological effect is significant and persistent; many survivors report bone-deep anxiety responses for months afterward, triggered by the sound of electrical equipment.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+ (compliance configuration); Tier 4+ (extended exposure configuration)",
+  "legality": "Licensed — certified compliance and security use; Restricted — extended exposure modification; Prohibited — civilian ownership",
+  "base_technologies": [
+    "Galvanic current directional projection",
+    "Marrow conductivity targeting",
+    "Piezoelectric disruption"
+  ],
+  "specifications": "effective range: 2–20 meters\ncurrent delivery: 0.4–2.8 mA adjustable, directed beam\nexposure threshold safe: Under 3 seconds continuous\nexposure threshold damaging: Over 8 seconds continuous\npower source: Galvanic cell pack, 45 shots per charge at standard setting\nweight: 2.6 kg\npenetration depth: Effective against subdermal plating up to 8mm\nform factor: Compact rifle with adjustable exposure dial and beam collimator",
+  "tactical_use": "Used in crowd dispersal, detainee compliance, and situations requiring incapacitation without visible injury. Operators are trained to use short exposure bursts to induce compliance without crossing into tissue damage thresholds — though field reports consistently show operators exceeding safe exposure durations during high-stress deployments. The weapon's ability to penetrate subdermal armor makes it effective against heavily augmented targets who have otherwise made themselves resistant to surface-level compliance tools. In extended exposure configurations, used as a slow-acting punishment weapon whose effects are deniable due to the delayed onset of damage.",
+  "cultural_context": "The GMP-1 is one of Meridian 88's most politically contested weapons. Compliance forces defend it as a non-lethal option that saves lives; medical researchers and civil rights organizations have spent years documenting the delayed hematological damage that Ringo Corponation's legal team continues to reframe as unrelated health conditions. The weapon has become a symbol of institutional violence that hides behind technicality — the slow ache that the city produces in the people it controls. 'Marrowboned' has entered Meridian 88 slang as a term for someone whose resistance has been broken from the inside, left standing but fundamentally damaged.",
+  "known_users": [
+    "Meridian 88 Compliance Authority crowd control units",
+    "RINGO CORPONATION facility security",
+    "Corporate detention processing staff",
+    "Private prison contractors operating in the lower districts",
+    "'Patience' — a compliance specialist known for methodical, deniable interrogation work"
+  ],
+  "story_hooks": [
+    "A LAZARUS PHARMACEUTICALS researcher has quietly been treating an unusual cluster of hematological cases in the lower districts — all with the same damage profile, all claiming they were 'never hit by anything' — and the data is about to go public unless someone stops it.",
+    "A player character has been experiencing bone-deep aches for weeks after a crowd compliance incident — a street doctor tells them they have GMP-1 marrow damage, and the statute of limitations on filing a complaint expires in 72 hours.",
+    "A modified GMP-1 with the safety limiters removed has been used in a string of apparent natural deaths — the bodies show no external wounds, and the coroner is classifying them as cardiac events.",
+    "RINGO CORPONATION is lobbying to remove the exposure duration limits from the GMP-1's compliance classification — a player character is approached by a civil rights organization to steal the internal research documents that would prove the company already knows the current limits are insufficient."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "violence",
+    "gun",
+    "war",
+    "death",
+    "augment",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "medical",
+    "doctor",
+    "injury",
+    "pain",
+    "market",
+    "rain",
+    "rights",
+    "train",
+    "armor",
+    "energy",
+    "fire",
+    "tier 2",
+    "tier 4"
+  ]
+}

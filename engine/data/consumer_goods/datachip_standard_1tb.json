@@ -1,0 +1,33 @@
+{
+  "id": "019d6143a74f77fc80f6b9a222de9e39",
+  "name": "DataChip Standard — 1TB",
+  "brand_name": "DataChip",
+  "product_name": "DataChip Standard — 1TB",
+  "type": "consumer_good",
+  "category": "electronics",
+  "subcategory": "data storage",
+  "manufacturer": "SolidState Storage Co.",
+  "description": "Physical data storage chip the size of a fingernail. Holds 1 terabyte. No network connection — data goes on, data comes off, and nothing in between is traceable. The analog backup of the digital world.",
+  "flavor_profile": "Tiny, metallic, fragile-looking but durable, fits in any device with a standard chip slot",
+  "tier_availability": "Tier 1-4",
+  "price": "Φ3.00",
+  "popularity_rank": 5,
+  "slogan": "Your data. Your hands.",
+  "cultural_context": "DataChips are how physical data transfer happens. Handing someone a chip is handing them information that never touched a network. Dead drops, backups, archives — the chip is the vessel. The physical act of giving someone a chip has weight.",
+  "story_hooks": [
+    "DataChips can be encrypted but they can also be physically destroyed — which makes them both secure and vulnerable in ways digital storage isn't.",
+    "A courier network that moves DataChips across tier boundaries has become critical infrastructure for people who need information to move without network traces."
+  ],
+  "tags": [
+    "electronics",
+    "data_storage",
+    "consumer_good",
+    "chip",
+    "analog_backup",
+    "privacy",
+    "tier_1",
+    "tier_2",
+    "tier_3",
+    "tier_4"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "019d6143aa5a718f8ccd4176a688d25d",
+  "name": "Zheng-Dao Heavy Industries Hypersonic Scramjet Transport",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Hypersonic Scramjet Transport",
+  "type": "technology",
+  "aliases": [
+    "HST",
+    "Speed Bird",
+    "Zheng-Dao Express",
+    "Mach Rider"
+  ],
+  "subcategory": "transportation",
+  "description": "A hypersonic air transport system using scramjet engines that cruise at Mach 8+, reducing intercontinental travel times to under 90 minutes. The vehicles fly at altitudes above 30 kilometers, entering the upper atmosphere where air resistance is minimal and the scramjet engines achieve maximum efficiency. Zheng-Dao operates a fleet of HST vehicles for executive transport, high-priority cargo delivery, and rapid force deployment, connecting Meridian 88 to global destinations faster than any conventional aircraft. The vehicles are not weapons platforms, but their speed makes them effectively immune to interception by anything except other hypersonic systems.",
+  "tier_availability": "Tier 5",
+  "developers": [
+    "ZHENG-DAO HEAVY INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Scramjet propulsion engineering",
+    "Hypersonic thermal protection systems",
+    "Upper atmosphere navigation"
+  ],
+  "enables": [
+    "Mach 8+ global transit",
+    "90-minute intercontinental travel",
+    "Rapid global force deployment",
+    "High-priority cargo delivery at unprecedented speed"
+  ],
+  "social_impact": "HST has shrunk the world for those who can afford it — Zheng-Dao executives attend meetings on different continents within the same business day. This global reach amplifies the power of corporations that operate HST fleets, allowing real-time physical presence anywhere on Earth. The technology has also raised concerns about the use of hypersonic platforms as kinetic weapons — a vehicle traveling at Mach 8 does not need explosive ordnance to be devastating on impact.",
+  "story_hooks": [
+    "A Zheng-Dao HST has gone off-course during a routine flight and is heading toward a population center at Mach 8 — whether it is a malfunction, a hijacking, or an attack, the 90-second response window is already closing.",
+    "Someone has developed a method to track HST flights that Zheng-Dao believed were undetectable — the flight data reveals patterns of executive travel that expose corporate strategy to competitors."
+  ],
+  "tags": [
+    "transportation",
+    "technology",
+    "weapon",
+    "war",
+    "ai",
+    "corporate",
+    "power",
+    "vehicle",
+    "explosive",
+    "tier 5"
+  ]
+}

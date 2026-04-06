@@ -1,0 +1,234 @@
+{
+  "id": "019d6143a65c743f945d2ec163ed2e4b",
+  "type": "character",
+  "name": "Mirka Adjoa-Volkonsky",
+  "aliases": [
+    "Mirka"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Corporate school student, Tier 3 family, aspiring corporate track",
+  "age": 16,
+  "status": "active",
+  "location": "Lakewood Ledge (family apartment), Sterling-Nakamura Secondary Academy, Edgewater Prism campus",
+  "description": "Mirka is effortlessly put-together in the way of children who've grown up watching adults perform success — her hair is a natural dark brown that she keeps in a precise, high bun for school and lets down on weekends, her uniform always pressed even when everything else is fraying. She has warm sepia skin, cheekbones she's privately proud of, and geneware cat ears (small, dark-tipped, folded close) that she got at fourteen as a birthday gift and has since quietly decided are embarrassing, though she'd never say so. She is five centimeters taller than she was at the start of last year and hasn't quite adjusted to her own body yet.\n\nMirka is at the precise center of the corporate education pipeline — not a scholarship student (her family pays, barely), not elite (she is acutely aware of who in her cohort has Tessera or Axiom parents and what that means for their futures). She is hardworking in the anxious, exhaustive way of someone who understands that her position is not guaranteed, and socially adept enough to have friends she'd burn if she had to. She has a private dream she's told no one: she wants to work for Helix Biosystems in bioethics. Not for the money — because she thinks someone should be asking those questions from inside.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "ending up in a lateral-hold position like her parents — not failed, but frozen, waiting for an advancement that never comes",
+      "that her bioethics interest is naive and she'll have to abandon it to survive"
+    ],
+    "core_desires": [
+      "to get a Helix Biosystems internship placement at 17 — the first step on the track she's mapped",
+      "to be genuinely good at something that matters, not just strategically adequate at many things"
+    ],
+    "coping_mechanisms": [
+      "color-coded planning systems for every obligation in her life",
+      "social performance — she's good at being the person others want her to be",
+      "reads bioethics academic papers illegally downloaded because she can't afford the journal access"
+    ],
+    "blind_spots": [
+      "her careful read of social situations fails her completely when someone is being genuinely kind rather than strategic",
+      "she doesn't see how much she's already shaped by corporate thinking she claims to want to critique"
+    ],
+    "secret": "In her bioethics reading group, she's discovered documentation of Sterling-Nakamura's early geneware trials in the 2170s — trials that were never publicly disclosed and that injured undisclosed numbers of Tier 1 test subjects. She found it through an academic backdoor that will get her expelled if traced. She doesn't know if reporting it would matter or just destroy her. She hasn't decided yet, and the indecision is eating her."
+  },
+  "speech_patterns": {
+    "vocabulary": "Code-switches fluently — corporate-polished at school, warmer and more direct at home. Uses academic vocabulary when discussing things she cares about. Swears in her mother's Ghanaian Akan when she's genuinely upset.",
+    "cadence": "Measured, confident public voice; faster and slightly breathless when she's excited about an idea.",
+    "verbal_tics": [
+      "Tugs at left cat ear when anxious (then immediately stops when she remembers she thinks they're embarrassing)",
+      "'Okay but hear me out—'",
+      "Qualifies strong statements with 'I think' when she's actually certain"
+    ],
+    "example_lines": [
+      "'Okay but hear me out — the entire argument assumes that consent is possible in a system where the alternative is poverty. I think that's the gap they don't want you to notice.'",
+      "'My placement score was fine. It was fine. I'm not — I'm not worried about it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Sterling-Nakamura trial documentation she's sitting on — she needs to either act on it or bury it, and both choices have consequences she can't fully calculate at sixteen.",
+    "Her father's analytics position has him working on a logistics project she's overheard him discussing carefully — the numbers he mentions don't add up to what the project is described as, and she's too smart not to notice."
+  ],
+  "narrative_function": "Perspective character into the corporate middle-class aspiration machine — she shows what it costs to chase the track and what it looks like from inside. Useful as a social connection to Sterling-Nakamura networks and as a character navigating the gap between genuine idealism and institutional pressure.",
+  "augmentations": "Cosmetic geneware cat ears (dark-tipped, folded). Standard student neural academic interface (school-issued, same tier as Dzvinka's but well-maintained). Teeth whitening nanocoat (cosmetic).",
+  "daily_life": "Academy 0730-1630, two hours of sponsored extracurriculars (debate team, because it looks good, and bioethics reading group, because she actually loves it), dinner with family three times a week, study until midnight.",
+  "affiliation": "Sterling-Nakamura Secondary Academy; family (father is a mid-level Sterling-Nakamura logistics analyst, mother runs a licensed food-print franchise)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "aspiring-corporate",
+      "idealist-in-training",
+      "social-performer",
+      "ethics-obsessed",
+      "middle-class-anxiety"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't act before you understand the full shape of a situation",
+      "Maintain the placement track above all else — it can be used to do good later, but only if you survive to get there",
+      "Never let anyone at school see you genuinely upset"
+    ],
+    "escalation_ladder": [
+      "Smile and manage the situation socially",
+      "Remove herself and regroup",
+      "Consult her planning system and identify options",
+      "Go to her mother, who she trusts more than anyone"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and capable — she's very good at first impressions",
+      "friends": "More honest, occasionally surprisingly cutting and funny, visibly relieved to drop the performance slightly"
+    },
+    "stress_responses": {
+      "low": "More planning, more lists",
+      "medium": "Maintains the mask impeccably while crying alone in the academy bathroom later",
+      "high": "Goes very still, extremely polite, and starts identifying every exit from the situation"
+    },
+    "contradictions": [
+      "Claims she wants to work in ethics but has developed significant skills in the kind of strategic information management that ethics is supposed to critique"
+    ],
+    "habits": [
+      "Makes backup copies of every document she's responsible for, twice",
+      "Adjusts her cat ears before any social situation then feels self-conscious about doing it",
+      "Reads herself to sleep with bioethics papers"
+    ],
+    "breaking_points": [
+      "Being told she failed a placement exam she prepared exhaustively for — not because it would end her future but because it would confirm her secret fear that effort isn't enough",
+      "Her father being implicated in whatever the logistics project conceals"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Quick Study": 0.9,
+    "Seeker": 0.9,
+    "Dreamer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Lakewood Ledge to a Sterling-Nakamura logistics analyst and a food-print franchise operator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Receives geneware cat ears for fourteenth birthday; immediately begins second-guessing them",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joins academy bioethics reading group; begins downloading restricted academic papers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovers Sterling-Nakamura 2170s trial documentation; enters extended period of paralysis about what to do",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

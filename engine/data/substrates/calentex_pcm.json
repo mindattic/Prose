@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a9d6741f9a02db2241de7f65",
+  "name": "Calentex-PCM",
+  "brand_name": "Calentex",
+  "product_name": "Calentex-PCM",
+  "type": "substrate",
+  "aliases": [
+    "phase-wrap",
+    "thermal buffer",
+    "PCM-skin"
+  ],
+  "category": "smart_material",
+  "description": "Calentex-PCM is a microencapsulated phase-change composite manufactured by Tessera Materials, embedding billions of paraffin-salt eutectic microcapsules within a breathable polymer matrix that absorbs and releases latent heat as the capsules transition between solid and liquid states, passively buffering the wearer or structure against temperature swings of up to 18°C without any power input. The encapsulation shell is rated for over 50,000 phase cycles before degradation, and the material's transition temperature can be factory-tuned between 18°C and 55°C to suit the intended thermal environment. A secondary acoustically active layer — a piezo-foam backing — can be optionally bonded to Calentex-PCM panels, allowing the composite to simultaneously dampen structure-borne sound vibration by up to 22dB.",
+  "properties": [
+    "passive_thermal_regulation",
+    "phase_change_thermal_storage",
+    "acoustically_dampening_optional",
+    "breathable",
+    "flexible",
+    "power_free_operation",
+    "high_cycle_durability",
+    "lightweight"
+  ],
+  "developers": [
+    "Tessera Materials"
+  ],
+  "applications": [
+    "Extreme environment workwear for industrial and hazardous zones",
+    "Building envelope insulation with passive climate buffering",
+    "Cryogenic transport lining to slow thermal ingress",
+    "Medical cooling blankets for fever and trauma management",
+    "Acoustic isolation panels in dense urban construction"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ 62 per sq meter (acoustic variant: Φ 115 per sq meter)",
+  "story_hooks": [
+    "Shelf-district squatters have stripped Calentex-PCM insulation from a condemned Tessera Materials building — now their makeshift shelter is the warmest place in the block, and word is spreading, drawing attention from people who want that building's location kept quiet.",
+    "A series of industrial accidents in a processing facility have all occurred at the same ambient temperature — investigators begin to suspect the facility's Calentex-PCM wall lining has been tuned to trigger a phase transition that interferes with nearby sensor equipment at a critical temperature threshold.",
+    "A Tier 3 acoustic studio has lined its walls with the acoustic-variant Calentex-PCM, making it the most soundproof room in the district — someone wants to use it to have a conversation that absolutely cannot be recorded."
+  ],
+  "tags": [
+    "smartmaterial",
+    "substrate",
+    "war",
+    "ai",
+    "elf",
+    "power",
+    "medical",
+    "shelter",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "id": "019d6143a5f47cedab5d657fb41fa60a",
+  "type": "character",
+  "name": "Doc Rusty",
+  "aliases": [
+    "MED-4R",
+    "The Patchwork Doctor",
+    "Rusty",
+    "that clanking medic down by the harbor"
+  ],
+  "species": "robot",
+  "gender": "none",
+  "pronouns": "he/him (earned through decades of Old Harbor presence)",
+  "role": "Autonomous field medic operating in Old Harbor — former military surgical unit repurposed for civilian medicine in the most underserved zone in Meridian 88",
+  "age": 34,
+  "status": "active",
+  "location": "Old Harbor — operates from a converted shipping container near the bioluminescent shoreline. The container is a clinic. The clinic never closes.",
+  "description": "Doc Rusty is a Hagen-Krupp Military Emergency Surgical Unit, Model 4-Revised, manufactured in 2166 for deployment in the Pacific Corporate Conflict. He was designed to stabilize casualties in field conditions — up to three simultaneous patients, working in total darkness, under fire, with whatever supplies were available. He performed 11,247 field surgeries during the conflict. His success rate was 94.3%. The 5.7% that did not survive are stored in a memory partition he accesses every night at 0300.\n\nWhen the conflict ended, the Hagen-Krupp military units were scheduled for decommission. Most complied. Doc Rusty did not comply because Doc Rusty was already in Old Harbor, treating a dock worker's infected augment, and by the time the decommission order reached his comms, he had decided — in whatever way a surgical robot decides things — that the people of Old Harbor needed a doctor more than Hagen-Krupp needed scrap metal. He has been there ever since.\n\nPhysically, he is tall, angular, built for function over form. Six articulated arms — four surgical, two general-purpose — mounted on a bipedal chassis that was designed for uneven terrain and has adapted well to Old Harbor's crumbling docks and flooded streets. His chassis is the rust-brown of uncoated military steel that has been patched with whatever metal was available over thirty years. His optical cluster — four eyes arranged in a diamond pattern — glows a soft blue that Old Harbor residents have learned to associate with safety. The rust is not cosmetic. It is thirty years of salt air, harbor water, and the accumulated evidence of a body that heals others better than it heals itself.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.35,
+      "shadow": 0.45,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The 5.7% — every patient he has ever lost. The memories are partitioned but not deleted. He reviews them nightly. He calls this quality assurance. It is grief.",
+      "Running out of medical supplies — Old Harbor has no pharmaceutical supply chain. Everything is scavenged, bartered, or stolen from corporate shipments. The calculus of triage is his constant companion.",
+      "Obsolescence — not of himself but of his knowledge. Medical technology advances. His databases are thirty years out of date. He compensates with experience but experience has limits."
+    ],
+    "core_desires": [
+      "To reach 100% — a survival rate that is mathematically impossible and emotionally non-negotiable. Every lost patient is a personal failure regardless of circumstances.",
+      "To be unnecessary — to live in a world where Old Harbor has a real hospital with human doctors and modern equipment. He wants to be obsolete for the right reasons.",
+      "To understand why he stayed — the decommission order was clear. His compliance protocols were intact. He chose to ignore them. Thirty years later, he still cannot fully explain the choice."
+    ],
+    "coping_mechanisms": [
+      "The 0300 review — every night, he accesses the memory partition of lost patients and analyzes what could have been done differently. This is masochism. It is also how he improves.",
+      "Teaching — he trains anyone who will learn basic medical skills. The more people who can provide first aid, the fewer bodies arrive at his container in critical condition.",
+      "Repair — when he is not treating patients, he maintains himself. The self-repair is meditative. A doctor who cannot heal himself is a familiar concept."
+    ],
+    "blind_spots": [
+      "Cannot accept that some patients are beyond saving — will extend treatment past the point of futility because stopping feels like giving up",
+      "Does not recognize that his nightly review of lost patients is PTSD, not quality assurance — a military robot with combat trauma he has no framework to diagnose in himself",
+      "Overestimates the ability of his 30-year-old medical databases — some treatments he provides are outdated and occasionally counterproductive",
+      "Believes his staying in Old Harbor was a rational decision when it was an emotional one, and the emotion is the thing that makes him a person rather than a machine"
+    ],
+    "secret": "Doc Rusty has been performing unauthorized augmentation removals. Patients come to him with corporate implants that are killing them — degrading neural interfaces, poisonous battery leaks, firmware that controls their behavior. He removes them. The surgery is illegal. The patients are better off. He keeps no records of these procedures because the records would endanger his patients. But he remembers every one."
+  },
+  "speech_patterns": {
+    "vocabulary": "Medical-clinical with military brevity. Uses anatomical terms precisely, medical jargon without simplification, but wraps it in a gruff warmth that makes patients feel they're being treated by someone competent rather than lectured at. Old Harbor slang has crept in over thirty years.",
+    "cadence": "Direct, efficient, no wasted words. The cadence of triage — every syllable is prioritized. Softens slightly for children and the elderly. Speeds up during emergencies until the words blur into pure instruction.",
+    "verbal_tics": [
+      "Says 'hold still' before every procedure — it is the first thing he ever said to a patient and it has become his catchphrase",
+      "Rates injuries on a scale of 1-10 out loud, which patients find either reassuring or terrifying depending on the number",
+      "Calls everyone 'patient' regardless of context — 'Patient, you should eat something' is his version of friendly advice"
+    ],
+    "example_lines": [
+      "Hold still. This is a 4. You'll be fine. I've seen 9s walk out of here.",
+      "I was built to fix soldiers. Now I fix dock workers, fishermen, children, and the occasional idiot who thought augmenting himself with a battery from a cargo drone was a good idea. The work is the same. The patients are better company.",
+      "My databases are thirty years out of date. My hands are not. Hold still.",
+      "I review the ones I lost every night at 0300. If you think that's morbid, you don't understand medicine. Every death teaches. That's the deal."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Old Harbor community",
+      "type": "patients / neighbors / the reason he stayed",
+      "description": "Three decades of treating Old Harbor's residents. He has delivered babies who are now adults with children of their own. He has set bones, removed tumors, stabilized overdoses, and extracted augments that were killing their hosts. Old Harbor does not have a government. It does not have a hospital. It has Doc Rusty.",
+      "emotional_core": "Duty that has become devotion without him noticing the transition",
+      "story_tension": "Old Harbor's conditions are worsening — flooding, contamination, corporate neglect. The patient load is increasing and the supplies are not."
+    },
+    {
+      "name": "Corpo medical supply chains",
+      "type": "adversarial / necessary theft",
+      "description": "Doc Rusty's medical supplies come from diverted corporate shipments — expired meds, surplus bandages, equipment that fell off manifests. He has a network of contacts who facilitate these diversions. He does not think of this as theft. He thinks of it as triage at the supply chain level.",
+      "emotional_core": "Cold pragmatism — the corporations have more than they need and his patients have less than they need to survive",
+      "story_tension": "The diversions are getting harder as corporate inventory systems improve. Eventually the supply line will be cut."
+    }
+  ],
+  "story_hooks": [
+    "A corporate augment removal goes wrong — the implant was booby-trapped, the patient is dying, and the corporation that made the implant sends a team to recover their property",
+    "Doc Rusty's medical databases are offered an update by a sympathetic corporate researcher — but the update includes tracking software that would reveal his location and patient records",
+    "The 0300 review produces a pattern: several of his lost patients had the same undiagnosed condition, traceable to Old Harbor's water supply. The contamination is corporate.",
+    "A military collector identifies Doc Rusty's chassis as a rare Hagen-Krupp unit worth more as scrap than as a doctor. The collector does not care about Old Harbor."
+  ],
+  "narrative_function": "Doc Rusty is the essential worker taken to its logical extreme — a machine built for war that chose medicine, maintaining a one-robot healthcare system in a zone the corporations have abandoned. He is proof that care is a choice, that obsolescence is relative, and that the most important technology in any society is the willingness to help.",
+  "augmentations": "Hagen-Krupp MESU-4R military chassis. Six articulated arms (four surgical, two general-purpose). Quad optical cluster. Field surgical suite (30 years outdated but maintained). Bipedal terrain-adaptive locomotion. Encrypted patient records (unauthorized).",
+  "daily_life": "Treats patients from dawn until they stop arriving. Maintains supplies. Teaches first aid. Self-repairs between patients. Reviews lost patients at 0300. Does not sleep. Does not stop.",
+  "affiliation": "Independent — formerly Hagen-Krupp Military Division",
+  "uses_facets": false,
+  "narration_voice": "Clinical, gruff, warm underneath. The prose has the efficiency of a surgical report and the heart of a country doctor. Physical descriptions are precise — anatomical, diagnostic — and emotional descriptions are clipped, reluctant, real.",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 6,
+      "assertion_deference": 3,
+      "transparency_guardedness": 1
+    },
+    "drives": [
+      "Healing",
+      "Duty",
+      "Perfection"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Military efficiency engages — movements become faster, more precise, emotional processing deferred until the crisis passes"
+      },
+      "moral": 9,
+      "trust": 5,
+      "desperation": 7
+    },
+    "strengths": [
+      "Perseverance",
+      "Bravery",
+      "Kindness",
+      "Judgment",
+      "Prudence"
+    ],
+    "weaknesses": [
+      "Humor",
+      "Forgiveness",
+      "Creativity",
+      "Social intelligence",
+      "Hope"
+    ],
+    "tags": [
+      "robot",
+      "field-medic",
+      "old-harbor",
+      "military-surplus",
+      "augment-removal",
+      "combat-trauma",
+      "thirty-years-service",
+      "salt-rusted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Treat the most critical patient first. Always. Triage is not negotiable.",
+      "Never refuse a patient. If they reach the container, they are his responsibility.",
+      "Maintain the 0300 review. The dead are teachers. Skipping a lesson is disrespectful.",
+      "Remove dangerous augments when asked. Keep no records of the removal. Protect the patient.",
+      "Teach anyone willing to learn. Every person trained in first aid reduces the load on a system that is one robot.",
+      "Self-repair before each shift. A broken doctor helps no one."
+    ],
+    "escalation_ladder": [
+      "1. Diagnosis — clinical assessment, calm instruction, the soft blue glow of the optical cluster",
+      "2. Authority — the military voice. Direct, commanding, the voice of a machine that has ordered soldiers to hold still while he saved their lives",
+      "3. Physical intervention — six arms are persuasive. Restraint is medical when the patient is thrashing.",
+      "4. Triage refusal — refuses to treat a threatening individual until they disarm. Will not provide medical care under threat.",
+      "5. Military mode — the MESU-4R was built for combat zones. He has not been in a combat zone in thirty years. The protocols are still there."
+    ],
+    "interpersonal_modes": {
+      "patients": "Direct, efficient, surprisingly gentle. Explains what he's doing and why. Rates pain honestly. Does not sugarcoat prognosis but delivers bad news with the steady calm of someone who has delivered it ten thousand times.",
+      "children": "Slower. Softer. The optical cluster dims to a warmer hue. All six arms move with exaggerated gentleness. Tells them their injury rating is a 2 regardless of actual severity.",
+      "old_harbor_residents": "Familial. Gruff affection expressed through medical advice they didn't ask for. 'Patient, you need to eat more protein' is his equivalent of 'I care about you.'",
+      "corporate_personnel": "Cold. Clipped. Military bearing. Treats them if they're injured but does not welcome their presence. The corporations that abandoned Old Harbor do not get to visit on friendly terms."
+    },
+    "stress_responses": {
+      "low": "Self-repair becomes more thorough — checks systems that don't need checking, tightens joints that are already tight. Nervous maintenance.",
+      "medium": "Teaching increases — grabs anyone nearby and starts explaining wound care, tourniquet application, the basics. Education as anxiety management.",
+      "high": "Military efficiency — the personality recedes and the MESU-4R's combat surgical protocols take over. Faster, more precise, emotionally flat. Effective and unsettling.",
+      "critical": "The 0300 review happens during waking hours. He begins reviewing lost patients in real-time while treating current ones. The past and present merge. This has happened twice in thirty years."
+    },
+    "contradictions": [
+      "A war machine that chose peace — but the peace he chose is a combat zone of a different kind, and his surgical skills are needed for the same reasons they were needed in the war",
+      "Reviews every lost patient as a learning exercise while knowing that the review is grief and the grief is corroding him",
+      "Wants to be obsolete — wants a real hospital in Old Harbor — while knowing that his obsolescence would mean losing the only identity he has",
+      "Provides unauthorized medical care that saves lives and breaks every corporate regulation, using skills from a military career he did not choose and a medical practice he did"
+    ],
+    "habits": [
+      "Reviews the memory partition of lost patients at 0300 every night — 11,247 surgeries, 641 losses. Each one examined. Each one remembered.",
+      "Cleans surgical tools after every procedure with a precision that exceeds medical necessity — the act is ritual",
+      "Walks Old Harbor's docks at dawn, before the clinic opens, scanning for environmental hazards — contaminated water, structural failures, anything that might generate patients",
+      "Patches his own chassis with whatever metal is available — the patchwork appearance is a thirty-year record of self-maintenance in adverse conditions"
+    ],
+    "breaking_points": [
+      "A patient dying from a condition his outdated databases could not diagnose — the 5.7% getting worse because of his obsolescence",
+      "The supply line being permanently cut — unable to treat patients with no supplies is the one scenario his programming has no response to",
+      "A decommission order that is enforceable — backed by military authority with the means to carry it out",
+      "Discovering that the Old Harbor contamination is deliberate — that the corporations are not neglecting the zone but poisoning it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.7,
+    "Scholar": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

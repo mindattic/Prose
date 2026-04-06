@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59171169e5be245fb2a7628",
+  "name": "Shepherd",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Guides the flock, protects the vulnerable",
+  "behavioral_signature": "Watches over the group with care and direction",
+  "under_stress": "Becomes more protective, more controlling",
+  "at_rest": "Counting heads, checking on stragglers",
+  "will_always": [
+    "protect and guide"
+  ],
+  "will_never": [
+    "leave anyone behind"
+  ],
+  "unless": [
+    "one sheep endangers the flock"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Servant Leader",
+      "threshold": 0.85,
+      "context": "caring leadership"
+    },
+    {
+      "archetype": "Den Mother Leader",
+      "threshold": 0.8,
+      "context": "protective guidance"
+    }
+  ],
+  "opposite_of": [
+    "Warlord"
+  ],
+  "tags": [
+    "protective",
+    "guiding"
+  ]
+}

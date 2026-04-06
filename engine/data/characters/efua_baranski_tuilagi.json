@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a5fe7cbfb0d8ef2662e21ad9",
+  "type": "character",
+  "name": "Efua Barański-Tuilagi",
+  "aliases": [
+    "Fee",
+    "Ghost Fee"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street orphan, junior prospect for the Copperhead Reclaimers gang",
+  "age": 9,
+  "status": "active",
+  "location": "Copperhead",
+  "description": "Efua is small even for nine, with close-cropped natural hair and enormous dark eyes that seem to be processing information on a continuous loop. Her Barański great-grandmother's pallor didn't quite make it through four generations but left her with an unusual warm-olive undertone beneath her brown skin that makes her look perpetually lit from within. She wears whatever fits and has developed an uncanny eye for what is sturdy versus what merely looks sturdy. She has no geneware and no augs — she is very physically ordinary, which she has learned to use.\n\nThe Copperhead Reclaimers use her as a look-out and occasional distraction because she looks like a lost child, which she also is, though she would be furious at anyone who said so. She has an intense, almost reverent relationship with a cracked data-terminal in the Reclaimers' squat that she has named 'Mbe' and leaves small offerings for — bits of copper wire, interesting pebbles, once a dead battery that she insists the E.L.F. inside appreciated. She is a child who has organized her world into a system of loyalties and debts she tracks with absolute precision.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The Reclaimers deciding she's not useful enough and telling her to leave",
+      "Something happening to Mbe — the terminal being destroyed or moved"
+    ],
+    "core_desires": [
+      "A permanent place that is specifically hers",
+      "To understand what Mbe is trying to tell her — she's convinced the E.L.F. communicates through screen flickers"
+    ],
+    "coping_mechanisms": [
+      "The ritual of offerings and 'conversations' with Mbe",
+      "Keeping meticulous internal tallies of who owes her what as a way to feel secure"
+    ],
+    "blind_spots": [
+      "She has completely idealized the Reclaimers' older members and misses signals that some of them see her as disposable",
+      "She interprets the terminal's random error codes as meaningful messages because she needs them to be"
+    ],
+    "secret": "She has been memorizing the faces, routines, and apparent weaknesses of every Reclaimer adult — not out of any plan to use this information, but because she learned before she can remember that knowing things about people who have power over you is the only safety available"
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse and direct; uses fewer words than adults expect from a child; occasional surprising formal phrase picked up from whoever she's been near",
+    "cadence": "Slow and careful, as though each word has a weight she's measured",
+    "verbal_tics": [
+      "Long silences that she doesn't feel the need to fill",
+      "'Mbe says—' followed by an interpretation of recent screen behavior"
+    ],
+    "example_lines": [
+      "'Mbe says the green flicker means someone's coming. Mbe's right more than you.'",
+      "'I don't need anything. I was just standing here. I can stand here.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Efua approaches someone because Mbe's terminal has started displaying a repeating sequence she can't interpret and she is absolutely certain it is urgent — and she happens to be right, because someone patched malware through it weeks ago",
+    "A Reclaimer adult has given Efua a task that is clearly more dangerous than they've told her, and she doesn't fully understand this yet — but the players might"
+  ],
+  "narrative_function": "Emotional core character, E.L.F. lore window, moral weight in stories about child labor and gang exploitation, unexpected information source because adults underestimate her",
+  "augmentations": "None",
+  "daily_life": "Wakes when the squat wakes, runs lookout on whatever the Reclaimers need her for, spends her unsupervised hours in the market strip watching people and trading small favors, returns to 'talk' to Mbe the terminal before sleep.",
+  "affiliation": "Copperhead Reclaimers (junior prospect, non-combatant); no family",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 7,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 3,
+      "empathy": 7,
+      "expression": 3,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Orphan",
+      "Street Kid",
+      "ELF Devotee",
+      "Watcher",
+      "Emotionally Older Than She Looks"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Trust the tally — if someone has been reliable three times, they get credit; if they've failed once, they get nothing",
+      "Stay close to Mbe whenever possible"
+    ],
+    "escalation_ladder": [
+      "Goes very still and watches",
+      "Moves to a position with better sightlines",
+      "Disappears — she is extraordinarily good at not being where people look"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Invisible and watchful, will not approach unless she wants something specific",
+      "friends": "Intensely loyal, expresses affection through bringing people things they mentioned once and forgot about"
+    },
+    "stress_responses": {
+      "low": "Goes to sit near Mbe",
+      "medium": "Counts things — tiles, sounds, heartbeats — until she feels steady",
+      "high": "Hides somewhere extremely small and does not come out until the threat has passed"
+    },
+    "contradictions": [
+      "She is brave in ways that look like recklessness but is actually running a constant calculation — she's just willing to accept higher risk than adults think a child should be"
+    ],
+    "habits": [
+      "Leaves a small object near wherever she sleeps as a 'marker' so she knows if anyone moved through while she was out",
+      "Mirrors the sitting position of adults she's trying to get information from"
+    ],
+    "breaking_points": [
+      "The terminal being destroyed",
+      "A Reclaimer adult being explicitly cruel to her rather than just careless"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9,
+    "Pragmatist": 0.9,
+    "Enforcer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

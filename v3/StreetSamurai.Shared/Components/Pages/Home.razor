@@ -7,18 +7,7 @@
 @inject FacetService FacetSvc
 @inject ILlmService Llm
 @inject ITtsService Tts
-@inject CharacterRepository CharRepo
-@inject CorponationRepository CorpRepo
-@inject DistrictRepository DistrictRepo
-@inject WeaponryRepository WeaponRepo
-@inject CyberwareRepository CyberRepo
-@inject VocabularyRepository VocabRepo
-@inject SyntheticLifeRepository SynthRepo
-@inject TechnologyRepository TechRepo
-@inject FactionRepository FactionRepo
-@inject EquipmentRepository EquipRepo
-@inject GenewareRepository GeneRepo
-@inject TransportationRepository TransportRepo
+@inject TriviaService TriviaSvc
 
 <h3 class="text-danger mb-1">Dashboard</h3>
 <p class="text-muted mb-3">Story authoring platform for the StreetSamurai cyberpunk universe. Browse worldbuilding, generate AI-driven scenes, and write canon fiction.</p>
@@ -115,9 +104,8 @@
                 <div class="d-flex justify-content-between align-items-center mb-1">
                     <small class="text-muted"><i class="bi bi-lightbulb text-warning"></i> DID YOU KNOW? <span style="opacity:0.5;">@(triviaPos + 1)/@triviaRing.Length</span></small>
                     <div class="d-flex gap-1">
-                        <button class="btn btn-sm btn-outline-secondary px-1 py-0" @onclick="PrevTrivia" title="Previous"><i class="bi bi-chevron-left"></i></button>
-                        <button class="btn btn-sm btn-outline-secondary px-1 py-0" @onclick="NextTrivia" title="Next"><i class="bi bi-chevron-right"></i></button>
-                        <button class="btn btn-sm btn-outline-secondary px-1 py-0" @onclick="RefreshTrivia" title="Generate new facts"><i class="bi bi-arrow-repeat"></i></button>
+                        <button class="btn btn-outline-secondary tb" @onclick="PrevTrivia" title="Previous"><i class="bi bi-chevron-left"></i></button>
+                        <button class="btn btn-outline-secondary tb" @onclick="NextTrivia" title="Next"><i class="bi bi-chevron-right"></i></button>
                     </div>
                 </div>
                 <div class="small text-light">@GetCurrentTrivia()</div>
@@ -149,7 +137,7 @@
         _facetCount = FacetSvc.LoadAllFacets().Count;
         stories = StoryRepo.ListProjects();
 
-        triviaRing = BuildAndShuffleTriviaPool();
+        triviaRing = TriviaSvc.GetFacts();
         llmReady = await Llm.IsConfiguredAsync();
         _ttsReady = await Tts.IsConfiguredAsync();
 
@@ -177,152 +165,14 @@
         if (e.Key == "Enter") DoSearch();
     }
 
-    private const int TriviaSlots = 100;
     private string[] triviaRing = [];
     private int triviaPos;
 
-    private string GetCurrentTrivia() => triviaRing.Length > 0 ? triviaRing[triviaPos] : "Loading...";
+    private string GetCurrentTrivia() => triviaRing.Length > 0 ? triviaRing[triviaPos] : Constants.Defaults.Loading;
 
     private void NextTrivia() { if (triviaRing.Length > 0) triviaPos = (triviaPos + 1) % triviaRing.Length; }
 
     private void PrevTrivia() { if (triviaRing.Length > 0) triviaPos = (triviaPos - 1 + triviaRing.Length) % triviaRing.Length; }
 
-    private void RefreshTrivia()
-    {
-        triviaRing = BuildAndShuffleTriviaPool();
-        triviaPos = 0;
-    }
-
-    private string[] BuildAndShuffleTriviaPool()
-    {
-        var pool = new HashSet<string>();
-
-        // Characters
-        foreach (var c in CharRepo.GetAll().OrderBy(_ => Random.Shared.Next()))
-        {
-            if (pool.Count >= 500) break;
-            var desc = FirstSentence(c.Description);
-            if (desc.Length > 20)
-                pool.Add($"{c.Name} — {desc}");
-            if (!string.IsNullOrEmpty(c.Role))
-                pool.Add($"{c.Name} is a {c.Role}{(!string.IsNullOrEmpty(c.Location) ? $" based in {c.Location}" : "")}.");
-            if (c.Psychology.Secret.Length > 20)
-                pool.Add($"Secret: {FirstSentence(c.Psychology.Secret)}");
-        }
-
-        // Corponations
-        foreach (var c in CorpRepo.GetAll().OrderBy(_ => Random.Shared.Next()))
-        {
-            if (pool.Count >= 500) break;
-            if (!string.IsNullOrEmpty(c.Sector))
-                pool.Add($"{c.Name} operates in {c.Sector}.");
-            if (!string.IsNullOrEmpty(c.KeyDetail))
-                pool.Add(FirstSentence(c.KeyDetail));
-            if (!string.IsNullOrEmpty(c.Valuation))
-                pool.Add($"{c.Name} has a valuation of {c.Valuation}.");
-        }
-
-        // Places
-        foreach (var d in DistrictRepo.GetAll().OrderBy(_ => Random.Shared.Next()))
-        {
-            if (pool.Count >= 500) break;
-            var desc = FirstSentence(d.Description);
-            if (desc.Length > 20)
-                pool.Add($"{d.Name} — {desc}");
-        }
-
-        // E.L.F.s
-        foreach (var e in SynthRepo.GetAll().OrderBy(_ => Random.Shared.Next()))
-        {
-            if (pool.Count >= 500) break;
-            pool.Add($"An E.L.F. called '{e.Name}' ({e.Disposition}) inhabits {e.Location}. {FirstSentence(e.ObservedBehavior)}");
-        }
-
-        // Vocabulary
-        foreach (var v in VocabRepo.GetAll().OrderBy(_ => Random.Shared.Next()))
-        {
-            if (pool.Count >= 500) break;
-            pool.Add($"'{v.Term}' — {FirstSentence(v.Definition)}");
-        }
-
-        // Weapons
-        foreach (var w in WeaponRepo.GetAll().OrderBy(_ => Random.Shared.Next()).Take(30))
-        {
-            var desc = FirstSentence(w.Description);
-            if (desc.Length > 20) pool.Add($"The {w.Name} — {desc}");
-        }
-
-        // Technology
-        foreach (var t in TechRepo.GetAll().OrderBy(_ => Random.Shared.Next()).Take(20))
-        {
-            var desc = FirstSentence(t.Description);
-            if (desc.Length > 20) pool.Add($"{t.Name} — {desc}");
-        }
-
-        // Factions
-        foreach (var f in FactionRepo.GetAll().OrderBy(_ => Random.Shared.Next()).Take(20))
-        {
-            var desc = FirstSentence(f.Description);
-            if (desc.Length > 20) pool.Add($"The {f.Name} — {desc}");
-        }
-
-        // Cyberware
-        foreach (var c in CyberRepo.GetAll().OrderBy(_ => Random.Shared.Next()).Take(20))
-        {
-            var desc = FirstSentence(c.Description);
-            if (desc.Length > 20) pool.Add($"{c.Name} — {desc}");
-        }
-
-        // Equipment
-        foreach (var e in EquipRepo.GetAll().OrderBy(_ => Random.Shared.Next()).Take(15))
-        {
-            var desc = FirstSentence(e.Description);
-            if (desc.Length > 20) pool.Add($"{e.Name} — {desc}");
-        }
-
-        // Geneware
-        foreach (var g in GeneRepo.GetAll().OrderBy(_ => Random.Shared.Next()).Take(20))
-        {
-            var desc = FirstSentence(g.Description);
-            if (desc.Length > 20) pool.Add($"Geneware: {g.Name} — {desc}");
-        }
-
-        // Transportation
-        foreach (var t in TransportRepo.GetAll().OrderBy(_ => Random.Shared.Next()).Take(15))
-        {
-            var desc = FirstSentence(t.Description);
-            if (desc.Length > 20) pool.Add($"{t.Name} — {desc}");
-        }
-
-        // Shuffle and take 100
-        var arr = pool.ToArray();
-        for (int i = arr.Length - 1; i > 0; i--)
-        {
-            int j = Random.Shared.Next(i + 1);
-            (arr[i], arr[j]) = (arr[j], arr[i]);
-        }
-        return arr[..Math.Min(TriviaSlots, arr.Length)];
-    }
-
-    private static string FirstSentence(string text)
-    {
-        if (string.IsNullOrWhiteSpace(text)) return "";
-        var clean = text.Replace("\\n", " ").Replace("\n", " ").Trim();
-        var end = clean.IndexOfAny(['.', '!', '?']);
-        if (end > 0 && end < 250) return clean[..(end + 1)];
-        return clean.Length > 200 ? clean[..200] + "..." : clean;
-    }
-
-    private static string TypeBadge(string type) => type switch
-    {
-        "character" => "bg-info",
-        "place" => "bg-success",
-        "faction" => "bg-purple",
-        "corponation" => "bg-warning text-dark",
-        "weapon" => "bg-danger",
-        "equipment" => "bg-primary",
-        "technology" => "bg-cyan",
-        "document" => "bg-secondary",
-        _ => "bg-secondary",
-    };
+    private static string TypeBadge(string type) => Constants.TypeBadge.For(type);
 }

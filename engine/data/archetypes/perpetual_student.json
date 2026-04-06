@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a585757380e4d44d6b7ce3f0",
+  "name": "Perpetual Student",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Always learning, never finishing",
+  "behavioral_signature": "Collects skills, courses, knowledge without applying",
+  "under_stress": "Learns new things to avoid confronting current problems",
+  "at_rest": "Studying something, anything",
+  "will_always": [
+    "start learning something new"
+  ],
+  "will_never": [
+    "declare mastery"
+  ],
+  "unless": [
+    "learning is procrastination from action"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Scholar",
+      "threshold": 0.8,
+      "context": "learning"
+    },
+    {
+      "archetype": "Quick Study",
+      "threshold": 0.65,
+      "context": "acquisition"
+    }
+  ],
+  "opposite_of": [
+    "Expert"
+  ],
+  "tags": [
+    "curious",
+    "scattered"
+  ]
+}

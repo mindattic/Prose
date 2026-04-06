@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab527be088c7064aeac25dda",
+  "name": "Tessera Industries Optical Disruptor OD-4 'Strobe'",
+  "type": "weapon",
+  "aliases": [
+    "Strobe",
+    "OD-4",
+    "Flash Gun",
+    "Eye Killer"
+  ],
+  "category": "energy",
+  "description": "A handheld directed energy device that emits a rapidly cycling pattern of high-intensity light at frequencies calculated to induce seizure-like neural disruption in human visual processing. The OD-4 projects a beam of strobing light that cycles through specific frequencies known to cause photosensitive responses — disorientation, nausea, loss of motor control, and in approximately 3% of targets, full tonic-clonic seizures. The beam is effective against both augmented and unaugmented targets because it exploits fundamental biological visual processing rather than electronic systems.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — riot control",
+  "base_technologies": [
+    "Photosensitive frequency calculation",
+    "High-intensity directed light projection",
+    "Neural visual disruption patterns"
+  ],
+  "specifications": "beam type: High-intensity cycling visible light\nfrequency: Calculated photosensitive disruption pattern\neffective range: 5-50 meters directional\neffect: Disorientation, nausea, motor loss, 3% seizure risk\npower: Rechargeable capacitor, 30 seconds continuous\nweight: 0.4 kg\nform factor: Pistol-sized handheld\ncountermeasure: Light-filtering eyewear or closed eyes",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An OD-4 was used in a crowded venue and triggered seizures in eleven people — the operator did not know or care about the 3% seizure risk in a crowd of 400.",
+    "A modified OD-4 has been tuned to a frequency that specifically disrupts the visual processing of Axiom-model neural interfaces, causing permanent damage to the optical enhancement firmware."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "energy",
+    "weapon",
+    "gun",
+    "war",
+    "loss",
+    "augment",
+    "neural",
+    "ai",
+    "control",
+    "power",
+    "tier 2"
+  ]
+}

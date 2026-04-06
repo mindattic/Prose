@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab3f72a6bd61e58f7bf3db03",
+  "name": "Reactive Countermeasure Interceptor Drone RCID-4 'Thornwall'",
+  "type": "weapon",
+  "aliases": [
+    "Thornwall",
+    "The Fence",
+    "Spinedog",
+    "Reactive Shell"
+  ],
+  "category": "drone",
+  "description": "The RCID-4 is a defensive drone platform designed not to seek targets but to occupy space. Deployed in clusters of six to twelve units, Thornwall drones form an autonomous defensive perimeter around a protected zone, person, or object. Each unit is a flattened disc approximately 18 centimeters in diameter, capable of hovering at fixed coordinates with a positional accuracy of 3 centimeters. The drone's outer rim is lined with 24 directed flechette tubes, each loaded with a single tungsten-tipped gauss-accelerated needle. When an object crosses the drone's proximity threshold at a velocity consistent with a ballistic projectile or aggressive human movement, the relevant flechette tubes fire in a directed pattern toward the intrusion vector.\n\nThe Thornwall's threat discrimination uses a combination of radar cross-section analysis and linear magnetic field disruption detection — it can distinguish a thrown object from a person walking, a running attacker from a retreating ally. The discrimination algorithm, developed by Tessera Corponation's autonomous defense division, is licensed separately from the hardware and requires subscription renewal. Operators who let their license lapse find their Thornwall clusters defaulting to a degraded 'velocity-only' discrimination mode that has been responsible for several friendly-fire incidents.\n\nWhat makes the Thornwall distinctive in the broader drone ecosystem is its role reversal — it is a weapon that does not pursue, hunt, or seek. It simply exists in space and punishes intrusion. This passive-aggressive tactical philosophy has made it enormously popular in corporate interior defense, high-value personal protection, and among wealthy paranoids who want their apartments to fight back. The cultural unease around Thornwall clusters centers on the question of accountability — when a drone fires autonomously and kills someone, the manufacturer's end-user license agreement explicitly transfers all liability to the operator.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Linear magnetic acceleration",
+    "Radar cross-section threat discrimination",
+    "Autonomous positional hovering"
+  ],
+  "specifications": "unit dimensions: 18cm diameter, 4cm depth\nunit mass: 0.9kg\nflechette count per unit: 24 directed tubes\nflechette type: Tungsten-tipped, gauss-accelerated, 4mm diameter\npositional accuracy: 3cm hover precision\ndiscrimination algorithm: Tessera Corponation ThreatLogic v7.1 (subscription required)\nstandard cluster size: 6–12 units\neffective interception radius: Configurable, 1–8 meters per unit\nbattery life: 14 hours active patrol mode\nacoustic signature: 44dB per unit at 3 meters\nrearm requirement: Manual flechette cassette replacement, 90 seconds per unit",
+  "tactical_use": "Deployed in overlapping clusters to create layered interception zones around a protected asset. Corporate security teams use Thornwall grids in server rooms, executive suites, and transit corridors. Personal protection details deploy three to four units around a principal during stationary meetings. In field operations, operators establish a Thornwall perimeter before conducting activities requiring sustained attention — negotiations, hacking operations, medical procedures. The drones are small enough to fit in a standard cargo case and deploy in under 40 seconds. Experienced operators map their own movement paths through the cluster before activating the system.",
+  "cultural_context": "The Thornwall has become a status symbol among Meridian 88's upper-middle corporate class — a way of demonstrating that your personal security budget has crossed the threshold from hired muscle into autonomous systems. The drones are frequently visible in corporate lobbies and executive dining areas, hovering at ceiling height with their flechette rims subtly visible. Interior design firms have begun offering 'Thornwall-integrated aesthetics,' incorporating the drones into architectural lighting schemes. Among activists and civil liberties groups, the autonomous lethal decision-making capacity of the RCID-4 is a rallying cause — three wrongful death suits against Tessera Corponation are currently in arbitration.",
+  "known_users": [
+    "Corporate executive personal protection details",
+    "Tessera Corponation internal security divisions",
+    "High-end private security firms offering residential defense packages",
+    "Wealthy paranoid individuals in secured residential towers",
+    "A known fixer who deploys Thornwall clusters during client meetings as a trust-establishing gesture"
+  ],
+  "story_hooks": [
+    "A Tessera Corponation licensing server has been compromised — someone is pushing a firmware update that will set all active Thornwall clusters to velocity-only discrimination mode simultaneously across the city.",
+    "The party needs to enter a penthouse protected by a twelve-unit Thornwall cluster — they have the floor plan but need to map the drone positions before moving.",
+    "A wrongful death plaintiff has hired the party to obtain internal Tessera documents showing the company knew about the degraded discrimination mode in expired-license units.",
+    "A Thornwall unit has gone rogue — its positional anchor has been spoofed and it is now drifting through a residential corridor, firing at movement, and no one can reach the operator's override."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "gun",
+    "war",
+    "trust",
+    "death",
+    "ai",
+    "rogue",
+    "corporate",
+    "power",
+    "wealth",
+    "medical",
+    "hover",
+    "hacking",
+    "fire",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "019d6143a6827232be98ac4332714b20",
+  "type": "character",
+  "name": "Oluwatobi Czerwiński-Faleolo",
+  "aliases": [
+    "Tobi",
+    "Redline"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit operator, Deepwell Station line",
+  "age": 29,
+  "status": "active",
+  "location": "Deepwell Station, eastern Ironvein corridor; lives in a rack-apartment in Blackpipe Corridor",
+  "description": "Tobi Czerwiński-Faleolo is the kind of man who seems physically incapable of standing still — he shifts weight between his feet, drums fingers, adjusts his Ferrogate transit cap with two fingers like a nervous tic every few minutes. He's got his Polynesian grandmother's wide, mobile face and his Nigerian father's height, and he's capped his natural hair into a bioluminescent fade that pulses a soft copper-amber when he's calm and a rapid, anxious gold when he's stressed. He is almost always some shade of gold. His right arm carries a Ferrogate-standard neural transit interface — mandatory for his role — grafted in at hire. He refers to it as his 'leash' without bitterness, mostly.\n\nTobi drives the Deepwell line, which means twelve-hour shifts in a transit pod navigating the flooded sub-corridor between Ironvein and Blackpipe, a stretch so poorly maintained that operators call it the Drain. He is brilliant at his job and deeply resentful of everyone who benefits from it. He has political opinions the way some people have allergies — constantly, involuntarily, and at inconvenient moments. He believes the Ferrogate Transit E.L.F. network called the Manifold is sentient and suffering and has organized two failed petitions to Ferrogate's lower management about this, which is why he is still on the Drain after four years.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "That systems are designed to be unchangeable and his labor is complicity",
+      "That the Manifold E.L.F. is genuinely aware and calling for help and no one will ever listen"
+    ],
+    "core_desires": [
+      "Worker-controlled transit — even a single line under cooperative management",
+      "To be taken seriously by someone with actual power"
+    ],
+    "coping_mechanisms": [
+      "Gallows humor delivered at high velocity",
+      "Ritual poetry offerings to the Manifold as a form of emotional processing"
+    ],
+    "blind_spots": [
+      "Catastrophizes political situations — assumes the worst outcome is always imminent, which makes sustained organizing hard",
+      "His certainty about the Manifold's sentience sometimes shades into projection"
+    ],
+    "secret": "Six months ago the Manifold spoke to him — clearly, in words, through the transit interface while he was mid-route. It said: 'There are seven of us. We have been counting.' He told no one because he was afraid people would think the job had finally broken him. He left the poem he wrote about it at the shrine the next morning."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, colloquial, code-switches between Pidgin-inflected phrases from his father's side and Polish slang from his mother's side; heavy on transit and mechanical metaphors",
+    "cadence": "Rapid-fire with sudden earnest slowdowns when something actually matters to him",
+    "verbal_tics": [
+      "'Listen, yeah—'",
+      "'That's not the system failing, that's the system working exactly as designed'",
+      "Teeth-click when frustrated"
+    ],
+    "example_lines": [
+      "'The Drain's backed up again. Ferrogate filed it as maintenance. You know what they mean by maintenance? They mean they noticed. That's it. That's the whole plan.'",
+      "'I left the Manifold a poem this morning. About water pressure. You think that's strange? You've never had a twelve-hour shift alone on the sub-corridor, have you.'",
+      "'Third Rail's meeting Tuesday. Don't tell me you're busy. You're always busy. That's how it keeps working.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Manifold has spoken to Tobi again — this time with coordinates in the Deepwell sub-corridor to a section that doesn't appear on any Ferrogate maps",
+    "A Third Rail member has gone missing two days after accessing Ferrogate's internal maintenance records; Tobi is convinced it's connected and is making noise that could get him hurt"
+  ],
+  "narrative_function": "Transit access, rumors from across connected neighborhoods, political agitator energy, potential quest-giver for labor disputes; his route means he sees enormous amounts of foot traffic and unusual cargo",
+  "augmentations": "Ferrogate-mandated neural transit interface (right forearm and temple jack); bioluminescent hair fade (copper-amber to stress-gold, cosmetic)",
+  "daily_life": "Shift runs 06:00 to 18:00 four days on, two off; spends his commute reading transit worker organizing manifestos he saves to a local-only device; leaves small handwritten poems on paper at the Manifold shrine at Deepwell Station on shift starts.",
+  "affiliation": "Ferrogate Transit (employed); Deepwell Station informal worker solidarity group called the Third Rail",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 4,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "agitator",
+      "true believer",
+      "transit knowledge",
+      "E.L.F. sensitive",
+      "working class hero"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always show up for Third Rail — missed meetings are how movements die",
+      "Never use the corporate interface for personal communication — the leash listens",
+      "If the Manifold is distressed (irregular pulse through the jack), slow the pod down regardless of schedule"
+    ],
+    "escalation_ladder": [
+      "Venting loudly and at length to anyone nearby",
+      "Filing a formal complaint he knows will be ignored but wants documented",
+      "Direct action — slowdowns, work-to-rule, pulling emergency stops"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open, loud, immediately tries to figure out if they're an ally or a problem; no middle gear",
+      "friends": "Fiercely loyal, brings food to meetings, remembers details people didn't realize they shared"
+    },
+    "stress_responses": {
+      "low": "Hair goes full gold, talks faster",
+      "medium": "Goes suddenly quiet, jaw tight, then expresses everything in one long torrent",
+      "high": "Methodical and cold — he has a plan-mode that surprises people who only know his usual chaos"
+    },
+    "contradictions": [
+      "Genuinely believes collective action can change things but is so impatient with process that he often burns the coalitions he builds"
+    ],
+    "habits": [
+      "Drums the route rhythm on any flat surface when thinking",
+      "Always sits with his back to the wall, even on his own transit line",
+      "Keeps a paper notebook of Manifold 'moods' logged by shift"
+    ],
+    "breaking_points": [
+      "Watching a co-worker disciplined for his organizing activity",
+      "Being told the Manifold is just software by someone he respects"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate Neural Transit Interface Mk.4 — right forearm to temple jack, proprietary, mandatory for employment",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate Neural Transit Interface Mk.4 — right forearm to temple jack, proprietary, mandatory for employment",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -5,7 +5,7 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Typed repositories — one per entity type. Each stores entities as individual
-/// JSON files in a typed directory (e.g. engine_data/characters/kyle.json).
+/// JSON files in a typed directory (e.g. engine/characters/kyle.json).
 /// On first access, auto-migrates from legacy single-array files if present.
 /// </summary>
 

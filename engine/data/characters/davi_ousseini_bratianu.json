@@ -1,0 +1,205 @@
+{
+  "id": "019d6143a5e9703a999e282c1f3225ad",
+  "type": "character",
+  "name": "Davi Ousseini-Brătianu",
+  "aliases": [
+    "Static Davi",
+    "the Kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Graffiti artist and neon artist",
+  "age": 19,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, sleeping in a rotating series of squats; works primarily along the Blackpipe Corridor",
+  "description": "Davi is slight and quick, the kind of person who seems to occupy less space than his dimensions suggest — useful when you're tagging corponation infrastructure at three in the morning. He has his mother's Nigerien cheekbones and his father's Romanian pallor, a combination that gives his face an angular quality that reads differently in different lights. His hair is grown out into a soft cloud he's bleached pale gold; he's got cat ears installed — small, tufted, matte black — that he paid for with three months of odd jobs and wears with the slightly self-conscious pride of someone whose first big purchase was purely for joy. His clothes are perpetually paint-stained in colors that don't match what he's currently working on.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being disappeared by Ferrogate Transit security for the mural he painted over their substation last month",
+      "Becoming ordinary — getting a job, getting tired, stopping"
+    ],
+    "core_desires": [
+      "To make something so big and so undeniable that it cannot be removed or ignored",
+      "To find his father, who left for the Menomonee Gulch labor yards when Davi was eleven and stopped sending messages"
+    ],
+    "coping_mechanisms": [
+      "Working through the night until exhaustion shuts the anxiety down",
+      "Turning fear into aesthetic — his best pieces come from his worst weeks"
+    ],
+    "blind_spots": [
+      "He believes his youth protects him in a way it fundamentally does not",
+      "He mistakes being seen for being understood"
+    ],
+    "secret": "He found his father's last known location two years ago — alive, in a Ferrogate Transit labor contract in the Gulch. He hasn't gone to find him because he doesn't know what to do if the man doesn't want to be found."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quick and vernacular, Zone slang layered over occasional flashes of careful precision when talking about technique",
+    "cadence": "Fast, then suddenly stops; runs sentences together when excited",
+    "verbal_tics": [
+      "'Nah, listen—' when he's about to make a point",
+      "'It's fine' when it obviously isn't"
+    ],
+    "example_lines": [
+      "'Nah, listen, the neon isn't the piece, the neon is what the piece is dreaming about, you understand?'",
+      "'It's fine. Security rotation is thirty-two minutes, I've counted. It's fine.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of his recent murals on the Blackpipe Corridor was painted over within hours — the only murals that get removed that fast are the ones that accidentally documented something",
+    "A Tessera corporate art scout has been photographing his work and he's been offered a meeting — the crew thinks it's a sellout, he's not sure what he thinks"
+  ],
+  "narrative_function": "Street-level information source about the Zone and the Corridor; local color; potential unwitting witness to things painted over; his escalating ambitions could pull him into danger",
+  "augmentations": "Cosmetic cat ears (matte black, tufted); no other augmentations — he can't afford them and is mildly suspicious of corporate implant supply chains",
+  "daily_life": "Sleeps until noon, scavenges or trades for materials in the afternoon, scouts locations at dusk, works at night when the Corridor's security patrols are thinnest.",
+  "affiliation": "Highland Park Autonomous Zone; loosely affiliated with a graffiti crew called Crow Voltage",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Reckless Idealist",
+      "Technical Prodigy",
+      "Street Mythmaker",
+      "Unresolved Grief"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't tag residential walls — only corporate and transit infrastructure",
+      "Never give up a crew member's name, ever, to anyone"
+    ],
+    "escalation_ladder": [
+      "Jokes it off and moves",
+      "Goes quiet and watches",
+      "Runs — and then comes back later to finish what he started"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Bouncy and deflecting, performs confidence he doesn't entirely feel",
+      "friends": "Loyal to a fault, shares everything, takes up causes on their behalf with more energy than wisdom"
+    },
+    "stress_responses": {
+      "low": "Talks faster and makes more jokes",
+      "medium": "Gets very quiet and starts drawing in his margins obsessively",
+      "high": "Disappears for two or three days and comes back with a new piece somewhere impossible"
+    },
+    "contradictions": [
+      "He insists his work is political and for everyone but is privately devastated when people don't recognize his specific aesthetic signature"
+    ],
+    "habits": [
+      "Leaves small spray-painted offerings to the E.L.F. he calls Spilllight at the base of every major piece",
+      "Keeps a physical sketchbook of every tag he's ever done with the date and location"
+    ],
+    "breaking_points": [
+      "Watching security whitewash one of his murals in real time",
+      "Someone claiming credit for Crow Voltage work they didn't do"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Born in Highland Park to a Nigerien mother and Romanian father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192 — Father leaves for Ferrogate Transit labor contract in Menomonee Gulch",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — First significant tag appears on a Ferrogate substation; joins Crow Voltage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Locates father's last known address; does not go",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — The Blackpipe Corridor murals begin drawing outside attention",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

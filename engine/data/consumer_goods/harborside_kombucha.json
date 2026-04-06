@@ -1,0 +1,31 @@
+{
+  "id": "019d6143a7607f17860ffcdfa96e7e2b",
+  "name": "Harborside Kombucha",
+  "brand_name": "Harborside",
+  "product_name": "Harborside Kombucha",
+  "type": "consumer_good",
+  "category": "street_food",
+  "subcategory": "fermented drink",
+  "manufacturer": "Old Harbor Fermentation Guild",
+  "description": "Small-batch kombucha brewed in Old Harbor using local algae cultures. Sold in recycled glass bottles with hand-written labels. Slightly different every batch.",
+  "flavor_profile": "Tart, effervescent, with a marine minerality unique to the harbor water, sometimes floral, sometimes funky",
+  "tier_availability": "Tier 1-3",
+  "price": "Φ2.50",
+  "popularity_rank": 25,
+  "slogan": "Alive in every bottle.",
+  "cultural_context": "The Fermentation Guild is a Tier 1 cooperative that's become a minor cultural institution. Their kombucha varies batch-to-batch, which is either charming or infuriating depending on your expectations.",
+  "story_hooks": [
+    "The Guild's SCOBY mother culture is over thirty years old and produces unique probiotic strains — a pharmaceutical company wants to acquire it."
+  ],
+  "tags": [
+    "street_food",
+    "fermented",
+    "consumer_good",
+    "kombucha",
+    "old_harbor",
+    "tier_1",
+    "tier_2",
+    "tier_3",
+    "cooperative"
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "id": "019d6143a6de7fc9a5ecc3b0582a70c7",
+  "type": "character",
+  "name": "Stanislav Lebedev-Tutu",
+  "aliases": [
+    "Tectonic",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate espionage and data exfiltration — data thief",
+  "age": 25,
+  "status": "active",
+  "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology",
+  "description": "Stanislav Lebedev-Tutu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 25, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a data thief out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Stanislav Lebedev-Tutu lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.48,
+      "ideal": 0.58,
+      "id": 0.95,
+      "shadow": 0.21,
+      "mask": 0.36,
+      "ghost": 0.58
+    },
+    "core_fears": [
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "Losing control of their own body to a hacker or malfunctioning cyberware"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "To protect the people in their district who can't protect themselves"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Planning — responds to chaos by making detailed contingency plans for everything"
+    ],
+    "blind_spots": [
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Assumes their skill set is more transferable than it actually is"
+    ],
+    "secret": "Stanislav Lebedev-Tutu has a child in another city, being raised by someone else. Sends Φ2,000 monthly under an alias. Has never visited."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries",
+      "Swears in three languages, often in the same sentence"
+    ],
+    "example_lines": [
+      "\"Your firewalls are decorative. Like curtains on a submarine.\"",
+      "\"I copy things. The original owners rarely appreciate the compliment.\"",
+      "\"Data wants to be free. I just charge a facilitation fee.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corporate black site Stanislav Lebedev-Tutu once infiltrated is being reopened, and the people inside know his face",
+    "A crew member from Stanislav Lebedev-Tutu's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "Stanislav Lebedev-Tutu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "Stanislav Lebedev-Tutu functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome. Smartgun link in right forearm — interfaces directly with compatible weapons",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 4
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 5
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 9
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.25,
+      "caution": 0.66,
+      "loyalty": 0.87,
+      "greed": 0.78,
+      "empathy": 0.22
+    },
+    "drives": [
+      "justice",
+      "reputation",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 7,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "mechanical aptitude — can repair or modify almost anything",
+      "network of reliable contacts"
+    ],
+    "weaknesses": [
+      "trust issues that limit crew effectiveness",
+      "chronic insomnia affecting long-term performance",
+      "difficulty with authority figures"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "data thief",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Always verifies target identity independently before lethal contracts",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Maintains a dead drop with emergency supplies in three separate districts"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cybernetic arm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+      "replaces": ""
+    },
+    {
+      "name": "Smartgun link in right forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Thief": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

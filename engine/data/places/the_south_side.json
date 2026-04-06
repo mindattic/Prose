@@ -1,0 +1,96 @@
+{
+  "id": "019d6143a94e728aa754075f608dd73a",
+  "type": "place",
+  "name": "The South Side",
+  "aliases": [
+    "Milwaukee South Side",
+    "La Zona Sur",
+    "South Milwaukee",
+    "The Corridor Sur"
+  ],
+  "description": "The South Side of Milwaukee has been Polish and then Mexican and then everything, in the way that working-class neighborhoods absorb each wave of arrivals and incorporate them into an identity that is less about any single culture than about the shared experience of working hard for not enough money. The Polish churches still stand — St. Josaphat's Basilica, its copper dome visible from every district in southern Milwaukee, is now jointly operated by a Polish heritage congregation and a Mexican Catholic parish, and the scheduling of feast days requires the kind of diplomatic negotiation usually reserved for territorial disputes. Which is, in a way, what it is.\n\nThe residential blocks are dense, practical, and defiant in the manner of neighborhoods that have been called 'in decline' by every census for seventy years and are still here when the census-takers have moved on. The housing is a mix of century-old workers' cottages — small, solidly built, adapted with the same solar-atmospheric-recycling modifications seen in Sherman Heights — and mid-century apartment buildings that have aged with less grace but more capacity, absorbing the population growth that the cottages can't. Every available surface generates power or grows food. The South Side learned self-sufficiency from necessity and taught it to Sherman Heights, or the other way around, depending on who you ask and how much time they have to argue about it.\n\nThe economy is survival-plus: survival is the baseline, and the 'plus' is whatever margin people can build above it. The commercial strips along Lincoln Avenue and Oklahoma Avenue serve the daily needs of a Tier 1-2 population — groceries, medical care, augment maintenance, the essentials — supplemented by a fabrication and repair economy that operates out of garages, basements, and the kind of workshops that exist behind businesses whose front operations would be very surprised to learn about them. The South Side fixes things. Not just augments and machinery — the South Side fixes problems, connects people, and routes resources through networks that have no digital presence because digital presence is surveillance and surveillance is something the South Side has learned to avoid.\n\nThe industrial southern edge, along the Kinnickinnic River, connects to the Menomonee Gulch's fabrication ecosystem, creating a continuous working-class corridor from the South Side through the valley to Walker's Landing. Workers move between these districts freely — the jurisdiction is shared Sentinel North franchise territory, and Sentinel's interest in the movement of Tier 1-2 workers between industrial zones is minimal. This connectivity creates a de facto working-class network that spans Milwaukee's entire southern geography, and the network is more organized than it appears.",
+  "atmosphere": {
+    "sights": [
+      "St. Josaphat's Basilica dome — copper gone green, visible from the entire South Side, a landmark that predates every institution that claims authority here",
+      "Workers' cottages in dense rows — small, maintained, each one slightly different because a century of individual modification has made them unique",
+      "Lincoln Avenue commercial strip — small businesses with signage in Spanish, Polish, English, and Shelf Cant, serving a population that communicates in all four",
+      "Garage workshops — visible through open doors on every third block, the South Side's informal economy operating in plain sight",
+      "Community murals — particularly along Oklahoma Avenue, depicting labor history, immigrant stories, and pointed commentary on corporate governance"
+    ],
+    "sounds": [
+      "Basilica bells — St. Josaphat's rings on the hour, and the sound carries across the South Side like a municipal heartbeat",
+      "Commercial strip activity — the sound of a neighborhood doing business: haggling, greeting, the ring of old-fashioned cash registers that some shops maintain because cash doesn't generate data",
+      "Workshop noise from the garages — the soundtrack of an informal economy, audible but not visible from the main streets",
+      "Polka and norteño from competing radios — the South Side's two cultural traditions, literally broadcasting at each other",
+      "The KK River — audible in the southern blocks, its current carrying industrial runoff south toward the lake"
+    ],
+    "smells": [
+      "Kielbasa and carnitas — the South Side's dual culinary identity, coexisting on every block and occasionally on the same grill",
+      "Workshop exhaust — solder, cutting fluid, and the miscellaneous chemical smell of things being repaired",
+      "Incense from St. Josaphat's — drifting from the basilica's open doors, mixing with the neighborhood's industrial scent",
+      "River water from the KK — industrial, organic, and getting slightly better every decade, which is the South Side's relationship to progress in general"
+    ],
+    "feel": "Stubborn. The South Side has the energy of a neighborhood that has been counted out repeatedly and repeatedly refuses to be counted. The community is not ideological like The Tangles or institutional like Sherman Heights — it is practical, hardworking, and bonded by the shared understanding that the people around you are the only resource you can count on. The cultural fusion of Polish and Latino traditions has produced something neither parent culture would fully recognize: a community identity built on work, family, faith, and the particular kind of mutual aid that comes from a century of being told your neighborhood doesn't matter.",
+    "tags": []
+  },
+  "demographics": "Approximately 65,000 residents. Tier 1-2. Approximately 50% Latino (predominantly Mexican-American, multi-generational), 20% Polish-American (multi-generational), 15% mixed/other, 15% recent displacement arrivals. The neighborhood's cultural identity is proudly hybrid — neither Polish nor Mexican alone, but a South Side identity that encompasses both and has its own traditions, its own food, and its own opinions.",
+  "economy": "Service economy along the commercial strips. Informal fabrication and repair economy operating from residential workshops. Industrial labor flowing south to the KK River corridor and west to the Menomonee Gulch. The community's economic network is extensive, informal, and deliberately opaque — transactions happen through relationships, not platforms, and the absence of digital records is a feature, not a limitation.",
+  "power_structure": "No single authority. The South Side Community Alliance — a coalition of neighborhood associations, church organizations, and business owners — serves as the primary governance voice. St. Josaphat's parish council holds significant influence. Sentinel North patrols the district with moderate intensity but limited community engagement. The workshop economy has its own informal hierarchy, coordinated by operators who have earned trust over decades.",
+  "dangers": [
+    "Sentinel profiling — similar to Sherman Heights, the South Side's demographics trigger algorithmic risk assessments that produce disproportionate enforcement",
+    "Workshop hazards — the informal fabrication economy operates without safety standards, and injuries are treated by community medics rather than reported",
+    "Environmental exposure — the KK River corridor's contamination affects the southern blocks",
+    "Economic fragility — the informal economy is resilient but cash-dependent, and disruption to the physical currency supply would be devastating",
+    "Inter-community tension — the Polish-Latino cultural synthesis is genuine but not universal, and generational conflicts about identity and priority occasionally surface"
+  ],
+  "opportunities": [
+    "The repair economy — the South Side can fix anything, and 'anything' includes things that weren't supposed to be fixable",
+    "The working-class network — connectivity between the South Side, Walker's Landing, and the Menomonee Gulch creates an information and logistics network spanning Milwaukee's entire industrial geography",
+    "Cultural camouflage — the South Side's dual-culture identity creates a social complexity that automated surveillance systems consistently misread",
+    "Community loyalty — earning trust here takes time, but the trust, once earned, opens the entire southern Milwaukee network"
+  ],
+  "story_hooks": [
+    "The workshop network has been asked to fabricate a component that none of the operators recognize — the specifications suggest a device that doesn't match any known technology, and the client is paying enough to discourage questions",
+    "St. Josaphat's Basilica has been granted heritage protection status by the Milwaukee Administrative Zone, which sounds benign until the community realizes the protection order gives the zone authority to enter and inspect the building — including its basement, where the community has been storing things the zone doesn't know about",
+    "A South Side family's century-old cottage contains a pre-digital archive that a corporate genealogy project has flagged as 'historically significant.' The family would like to be left alone. The corporation would not."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Walker's Landing (northeast)",
+      "Bay View Docks (east, along lakefront)",
+      "Menomonee Gulch (north, via KK River corridor)",
+      "The western suburban sprawl (west)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Multi-generational South Side families — the Polish-Latino community that defines the district",
+    "Industrial workers commuting to the Gulch and the KK River corridor",
+    "Workshop clients from across Milwaukee's working-class districts",
+    "People who need things fixed, connected, or moved without generating a digital trail"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.9968,
+    "lng": -87.9285,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "trust",
+    "loyalty",
+    "identity",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "power",
+    "money",
+    "medical",
+    "alley",
+    "survival",
+    "food"
+  ]
+}

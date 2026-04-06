@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -6,8 +7,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// An ammunition type in the Meridian 88 world.
 /// Cross-references compatible weapons by name.
 /// </summary>
-public class AmmunitionData
+public class AmmunitionData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "ammunition";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];

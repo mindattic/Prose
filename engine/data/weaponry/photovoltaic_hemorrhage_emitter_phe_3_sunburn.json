@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab3c764490aac933ccd72d67",
+  "name": "Photovoltaic Hemorrhage Emitter PHE-3 'Sunburn'",
+  "type": "weapon",
+  "aliases": [
+    "Sunburn",
+    "The Cooker",
+    "Solaris Stick",
+    "Redline"
+  ],
+  "category": "energy",
+  "description": "The PHE-3 operates by concentrating a narrow-band photovoltaic excitation beam tuned to the near-infrared absorption spectrum of hemoglobin and subcutaneous capillary tissue. On contact, the beam induces rapid localized vasodilation followed by catastrophic microvascular rupture beneath the skin's surface — a process that leaves no visible external wound for several seconds before hemorrhagic bruising blooms outward. The weapon draws on photonic resonance cycling technology developed by Arcturus Defense Solutions for orbital solar relay systems, miniaturized into a carbine-length chassis.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Photovoltaic resonance cycling",
+    "Hemoglobin spectral targeting",
+    "Near-infrared beam collimation"
+  ],
+  "specifications": "length: 68 cm\nweight: 3.1 kg\npower source: Dual photovoltaic capacitor cell (ADS-PV9)\neffective range: 8–120 m\nbeam wavelength: 780–850 nm NIR band\ncharge time: 1.4 seconds per pulse\nshots per cell: 22 full-charge pulses\ncooling system: Passive ceramic heat sink with gel-phase dissipation fins",
+  "tactical_use": "Operators favor the PHE-3 for its delayed wound presentation — targets often continue moving for 4–8 seconds before systemic blood pressure drop incapacitates them, creating confusion among allied personnel. It is used in crowd infiltration scenarios where a clean, invisible first strike is needed before breaking contact. The weapon's lack of visible beam in standard lighting conditions and near-silent discharge make it effective for close-protection ambushes. Experienced operators layer pulses on a single target to accelerate hemorrhagic cascade rather than spreading fire.",
+  "cultural_context": "The PHE-3 carries a deeply unsettling reputation in Meridian 88's underground medical community — trauma surgeons at off-grid clinics have named the wound pattern 'sunburn syndrome' due to the characteristic deep bruising that appears hours after death. Street enforcers who carry it are considered especially cruel, as the weapon's delayed effect means victims often don't know they've been hit. Corporate wetwork teams prize it precisely because autopsies frequently misattribute cause of death to natural cardiovascular failure. Ownership is a marker of either serious institutional backing or dangerous black-market connections.",
+  "known_users": [
+    "Arcturus Defense Solutions executive protection details",
+    "Corporate assassins operating under plausible-deniability contracts",
+    "Meridian 88 coroner's office black-site investigators (confiscated units)",
+    "High-end fixer 'Casket Rennick'",
+    "Unregistered street medic turned enforcer 'Blanche Odera'"
+  ],
+  "story_hooks": [
+    "A string of deaths ruled cardiac arrest are revealed to share the PHE-3's wound signature — someone is running a quiet purge, and the only lead is a black-market parts supplier in the Fen District.",
+    "A player character is hit by a PHE-3 pulse during a firefight and doesn't realize it until they collapse twenty minutes later — they have hours to find treatment before internal hemorrhage becomes fatal.",
+    "An Arcturus Defense Solutions whistleblower claims the PHE-3's targeting algorithm was calibrated using non-consenting human subjects from a Lazarus Pharmaceuticals clinical program.",
+    "A stolen shipment of PHE-3 units surfaces in the hands of a radical anti-corporate cell — they're planning something public, something that will look like a mass medical event."
+  ],
+  "ammunition_type": [
+    "Arcturus High-Density Capacitor Cell ADS-HC9"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "war",
+    "death",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "ubc",
+    "medical",
+    "clinic",
+    "market",
+    "fire",
+    "tier 4"
+  ]
+}

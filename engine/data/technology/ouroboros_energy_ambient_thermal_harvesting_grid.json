@@ -1,0 +1,46 @@
+{
+  "id": "019d6143aa477dc98302beb889be07b6",
+  "name": "Ouroboros Energy Ambient Thermal Harvesting Grid",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Ambient Thermal Harvesting Grid",
+  "type": "technology",
+  "aliases": [
+    "ATHG",
+    "Heat Tap",
+    "Thermal Grid",
+    "Ouroboros Harvest"
+  ],
+  "subcategory": "energy",
+  "description": "A distributed energy collection system that harvests waste thermal energy from urban infrastructure — building HVAC exhaust, vehicle engines, industrial processes, and even human body heat in crowded spaces — and converts it to electrical power through thermoelectric generator arrays embedded in structural surfaces. The ATHG turns Meridian 88 itself into a power source, with every warm surface contributing to the grid. The system produces modest power per square meter but scales with city density, making the most crowded, industrially active districts the most productive energy zones.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "OUROBOROS ENERGY",
+    "ZHENG-DAO HEAVY INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Distributed thermoelectric conversion",
+    "Urban thermal mapping",
+    "Structural surface energy integration"
+  ],
+  "enables": [
+    "Passive urban power generation",
+    "Reduced dependence on centralized power infrastructure",
+    "Energy harvesting from industrial waste heat",
+    "Self-powered building systems"
+  ],
+  "social_impact": "The ATHG has made population density directly proportional to energy production in equipped districts, creating a perverse economic incentive to increase crowding in areas that are already overcrowded. Ouroboros Energy charges building owners for ATHG installation but keeps a percentage of the harvested energy, effectively taxing the body heat of residents. In Tier 1 districts where ATHG infrastructure has been installed, residents have noted that their living spaces feel colder — the thermal harvesting is literally extracting warmth from their homes.",
+  "story_hooks": [
+    "Ouroboros Energy is planning to install ATHG infrastructure in a Tier 1 district's public spaces — harvesting body heat from people who will never see a fraction of the energy produced, while making their environment measurably colder.",
+    "Someone has modified ATHG thermoelectric arrays to run in reverse, dumping stored energy as heat into specific building zones — offices are reaching dangerous temperatures and the cause is invisible."
+  ],
+  "tags": [
+    "energy",
+    "technology",
+    "war",
+    "elf",
+    "power",
+    "cold",
+    "vehicle",
+    "tier 2"
+  ]
+}

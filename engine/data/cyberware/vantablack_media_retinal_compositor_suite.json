@@ -1,0 +1,57 @@
+{
+  "id": "019d6143a7ca79e595b3b47e7a730b28",
+  "name": "Vantablack Media Retinal Compositor Suite",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack Media Retinal Compositor Suite",
+  "type": "cyberware",
+  "aliases": [
+    "The Lens",
+    "The Director's Eye",
+    "Frame"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Retinal Compositor Suite is a layered ocular augmentation developed by Vantablack Media's hardware division — the company's only physical product line, and one it guards with considerable legal aggression. A micro-thin photonic layer is bonded directly to the retinal surface via laser-guided adhesion, overlaying the carrier's natural vision with a fully composited mixed-reality field. Unlike standard AR overlay implants, the RCS does not merely project imagery over the visual field — it performs real-time scene reconstruction, replacing, removing, or augmenting elements of the physical environment with composited visual content at a fidelity indistinguishable from genuine perception. The carrier does not see a display. They see a world that has been edited.\n\nVantablack's proprietary Scene Language Protocol drives the compositor, allowing remote directors, producers, or operators to push environmental overlays, visual suppressions, or full scene replacements to the carrier's vision in real time over an encrypted narrow-band signal. The intended application is immersive media production — placing RCS-equipped talent inside synthetic environments without physical sets, or capturing authentic reaction footage from subjects experiencing scripted reality. Vantablack's premium content arm uses it to produce the hyper-realistic 'lived experience' streams that dominate Meridian 88's upper-tier entertainment market, where audiences pay premium rates for content that is indistinguishable from unaugmented first-person experience.\n\nThe RCS has predictably escaped its intended market. Intelligence operatives use it to visually suppress environmental details they are not authorized to see — a function Vantablack's corporate clients use to enforce information compartmentalization in their own workforces. Street-level users run cracked Scene Language Protocol builds to overlay navigational data, tactical feeds, or entirely fabricated visual environments. A small and disturbing subculture has emerged around users who run persistent fictional overlays over their daily lives — not for tactical advantage, but because the world the RCS shows them is preferable to the one that exists.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"overlay_fidelity\":\"Perceptually indistinguishable from unaugmented vision at standard light conditions\",\"scene_reconstruction_latency\":\"2.1ms full-field composite refresh\",\"remote_control_range\":\"Standard: 800m line-of-sight; extended: network relay unlimited\",\"visual_suppression\":\"Selective object/person/text removal from carrier visual field\",\"protocol\":\"Vantablack SLP v.4.2 (licensed); cracked SLP builds widely circulated\",\"implant_site\":\"Bilateral retinal surface bond\",\"power_draw\":\"Dedicated microcell behind orbital rim, 72-hour charge cycle\",\"compatibility\":\"Vantablack content production hardware; partial compatibility with Tessera AR infrastructure\"}",
+  "side_effects": [],
+  "cultural_context": "The RCS is status technology at its most extreme — a Vantablack license is expensive, conspicuous, and carries the cultural weight of the company's near-monopoly on premium experiential media. Carriers in upper-tier social environments are assumed to be either Vantablack industry professionals or wealthy enthusiasts. The cracked street builds carry the opposite valence: a sign of technical sophistication and deliberate rejection of corporate media infrastructure. The 'overlay addicts' — those running persistent fictional reality skins — are a source of genuine social anxiety in Meridian 88, representing a population that has effectively opted out of shared consensual reality.",
+  "known_users": [
+    "Vantablack Media production talent and field directors",
+    "Corporate intelligence officers enforcing visual compartmentalization",
+    "Upper-tier experiential media consumers",
+    "Street-level operators running cracked SLP tactical builds",
+    "Ilyse Chandra — Vantablack senior producer rumored to run a persistent personal overlay 24 hours a day"
+  ],
+  "story_hooks": [
+    "A Vantablack media production went wrong — the talent running RCS saw something during a live shoot that the Scene Language Protocol was supposed to suppress. Whatever it was, Vantablack has been trying to recover the retinal log data ever since, and the talent has gone missing.",
+    "Someone has built a cracked SLP overlay that makes its users see specific people as completely different individuals — a targeted identity-masking tool. The players need to find a target who may be wearing a face that isn't their own, from the perspective of everyone around them.",
+    "A corporate facility uses RCS-based visual compartmentalization on all staff. A whistleblower inside is trying to communicate what they've seen — but they can't describe it because the implant suppresses their ability to visually recall the suppressed content.",
+    "An overlay addict running a persistent fictional skin has witnessed a real crime — but their testimony is legally inadmissible because their visual record is an edited composite. The players have to find another way to prove what they saw."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "war",
+    "crime",
+    "identity",
+    "augment",
+    "ai",
+    "synthetic",
+    "corporate",
+    "control",
+    "power",
+    "wealth",
+    "ubc",
+    "market",
+    "escape",
+    "tier 3"
+  ]
+}

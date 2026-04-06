@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a5e075558a5d436c403ef4f7",
+  "type": "character",
+  "name": "Csilla Owusu-Nazarov",
+  "aliases": [
+    "Sill",
+    "the Butcher's Girl"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Organ harvester and procurement specialist working the margins of legitimate medical infrastructure",
+  "age": 31,
+  "status": "active",
+  "location": "South Deering Sump — operates out of a converted cold-storage unit adjacent to the Aurochs Medical Complex overflow lots",
+  "description": "Csilla is medium height and deceptively slight, with Hungarian-Ghanaian features — warm brown skin, heavy-lidded dark eyes, wide mouth usually set in a neutral expression that people keep reading as a smile. Their cat ears are geneware, common enough, but theirs are the mottled grey-and-amber of an actual South African wildcat — chosen deliberately for the unsettling accuracy. They keep their natural hair in tight, small braids, always pinned up under a surgical cap during work. They smell faintly of antiseptic even when they're not working, a smell that has become so much a part of them that they no longer notice it.\n\nCsilla trained for three years in Aurochs Medical Complex's licensed surgical technician program before washing out for reasons listed on their record as 'professional conduct irregularities' and in reality involving a confrontation with a senior tech over the disposal of viable organs from unconsenting deceased patients — a confrontation in which Csilla was technically wrong but morally, they believe, correct. They moved laterally into independent procurement within six months. They are not sadistic, not cavalier, and not in any way comfortable with what they do — but they have concluded, through a logic they can walk you through step by step, that there is a demand, there is a supply, and the official channels are too slow and too expensive for the people who need them most. They charge on a sliding scale they invented themselves.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "that the ethical framework they've built is self-serving rationalization",
+      "causing a patient's death through their own error"
+    ],
+    "core_desires": [
+      "to give people access to medical care the system has priced out of their reach",
+      "to be believed when they say they're trying to do something good"
+    ],
+    "coping_mechanisms": [
+      "exhaustive self-justifying ethical frameworks maintained like the cold-storage unit — meticulously",
+      "treating every procedure as a case study, emotional distance through technical focus"
+    ],
+    "blind_spots": [
+      "cannot see how the procurement methods — regardless of downstream benefit — cause profound harm to victims and communities",
+      "overestimates their own ability to distinguish 'ethical' procurement from straightforwardly predatory"
+    ],
+    "secret": "Two years ago they procured from someone who was not, as represented to them, a willing seller. They didn't know until three days later. They have never confirmed who told them or whether it was true, and they have structured their operation since then to prevent themselves from finding out for certain."
+  },
+  "speech_patterns": {
+    "vocabulary": "Medical and precise, with a habit of quantifying things that shouldn't be quantifiable; speaks softly and rarely raises their voice",
+    "cadence": "Measured and careful — rehearsed quality, like someone who has learned to think before speaking",
+    "verbal_tics": [
+      "Long pauses before answering anything that touches on ethics",
+      "'In my assessment'",
+      "Uses 'material' as a euphemism in professional contexts"
+    ],
+    "example_lines": [
+      "In my assessment, the current pricing structure for Tier 1 transplant access is a form of policy violence. I'm not sure what I do is better. I've thought about it.",
+      "The material is viable. I don't move material that isn't viable. That's not a selling point, that's a baseline.",
+      "Don't ask me where it comes from. Not because I'm hiding something. Because you will have to decide what to do with the answer and you're not ready."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient Csilla saved — Tier 1, no other options — has come back asking them to procure something specific that Csilla suspects cannot be obtained ethically; the patient is dying again",
+    "The two-year-old incident has surfaced: someone who was there is looking for Csilla, and their intentions are unclear",
+    "Aurochs Medical Complex has hired a private investigator to trace a series of procurement anomalies in their morgue overflow — Csilla is three degrees away from exposure"
+  ],
+  "narrative_function": "Moral complexity embodied — not a villain, not a hero. Can be a source of medical assistance outside official channels, an involuntary quest element, or a window into the organ trade's human cost. Challenges players' assumptions about criminal work.",
+  "augmentations": "Wildcat-pattern geneware ears; enhanced haptic sensitivity in fingers (surgical mod, done professionally); retinal enhancement for microscale work",
+  "daily_life": "Irregular hours dictated by procurement opportunities and patient needs. Spends legitimate-looking mornings doing freelance medical courier work for cover. Maintains the cold-storage unit with clinical obsession. Prays to the E.L.F. of hospital networks before major procedures.",
+  "affiliation": "Loose network of independent medical workers, UBC-tier patients priced out of legal transplant queues, and three mid-tier chop surgeons who don't ask where the material comes from",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 0,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Organ Harvester",
+      "Black Market Medic",
+      "Ethical Rationalist",
+      "Surgical Technician",
+      "Cold Storage Operator"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not procure from living unwilling subjects — this is the line; they've built enormous psychological infrastructure around it",
+      "Charges Tier 1 and UBC patients at cost only — does not profit from the poorest clients",
+      "Verifies recipient medical need personally before completing any transaction"
+    ],
+    "escalation_ladder": [
+      "Declines procurement requests that cross their threshold with quiet finality",
+      "If pressured, explains the threshold and why it exists in clinical detail",
+      "If threatened physically, withdraws completely — closes the unit, goes dark for days",
+      "In genuine danger, has one contact in the Sump's informal security network — a favor owed, not a reliable alliance"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Careful and measured — assessing clinical need and threat level simultaneously; not warm but not cold",
+      "friends": "The rare friends they have receive a version of Csilla who is almost painfully earnest and needs periodic reassurance that what they're doing matters"
+    },
+    "stress_responses": {
+      "low": "Cleans the storage unit. Reorganizes. Counts inventory.",
+      "medium": "Extended prayer to the E.L.F. of hospital networks — long, conversational, they treat it like a consultation",
+      "high": "Dissociates into pure procedure — becomes frighteningly competent and completely emotionally absent, worries about this afterward"
+    },
+    "contradictions": [
+      "Deeply principled about their work in ways that may not ultimately survive scrutiny",
+      "Emotionally invested in patient outcomes for people they've helped while maintaining clinical detachment about procurement"
+    ],
+    "habits": [
+      "Washes their hands before and after every conversation about work — not just procedures, conversations",
+      "Keeps a private log of everyone they've helped with outcomes where known — will not share this with anyone"
+    ],
+    "breaking_points": [
+      "Irrefutable confirmation about the two-year-old incident",
+      "A patient they helped dying as a result of material that turned out to be compromised"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,223 @@
+{
+  "id": "019d6143a6ca7a92b89442bb6473f5d9",
+  "type": "character",
+  "name": "Seun Marchetti-Baig",
+  "aliases": [
+    "Seun",
+    "The Kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Noodle cart vendor, Old Harbor waterfront",
+  "age": 22,
+  "status": "active",
+  "location": "Old Harbor, mobile cart — regular pitch near the Bay View Docks morning market and Gravesend Basin evening crowd",
+  "description": "Seun is twenty-two going on forty-five, with a lean face that looks like it got serious too fast, sharp cheekbones, and eyes that are a little too watchful for someone handing out soup. He has deep brown skin and keeps his hair twisted into small knots he wraps in a length of indigo fabric. He has one cosmetic mod — a faint cat tail, short-furred and charcoal grey, which he got on a dare at eighteen and has made peace with — it curls around his leg when he's nervous, which he considers embarrassing and can't control. He wears a padded work jacket covered in small embroidered patches from places he's never been, bought from a vendor in the Burnished Market.\n\nHe runs his grandmother's cart, ostensibly temporarily, going on two years now. The original plan was six months while she recovered from a surgery; then her recovery stalled, then the medical debt compounded, and now the cart is effectively his. He makes decent money on good days at the docks — his grandmother's broth recipe, which involves a fermented base that takes four days to prepare, has a small and devoted following — and barely enough on bad ones. He is not unhappy, exactly. He is twenty-two and he was supposed to be somewhere else by now and he has not quite grieved that yet.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the life he was supposed to have is genuinely gone now, not just delayed",
+      "That his grandmother will die feeling like she ruined his chances"
+    ],
+    "core_desires": [
+      "To leave Old Harbor eventually, on his own terms, without abandoning anyone",
+      "For the cart to become something he chose rather than something that happened to him"
+    ],
+    "coping_mechanisms": [
+      "Staying extremely busy so he doesn't have time to feel the weight of the situation",
+      "Humor as performance — he's known as funny and leans into it hard"
+    ],
+    "blind_spots": [
+      "He reads his own resentment as ambition and doesn't always distinguish between them",
+      "He trusts people quickly because loneliness makes him generous with his confidence"
+    ],
+    "secret": "He applied and was accepted to an architecture program at a Zheng-Dao sponsored technical institute two years ago and deferred. The deferral has expired. He never told his grandmother."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quick and colloquial, heavy Old Harbor waterfront slang, occasional Yoruba exclamations from his father's family, Punjabi terms of endearment from his mother's. Talks fast when comfortable, drops to clipped monosyllables when genuinely upset.",
+    "cadence": "Rapid-fire with regular rhythm breaks for comedic effect. Good instinct for when to stop talking.",
+    "verbal_tics": [
+      "'Listen, right—'",
+      "Laughs before the punchline of his own jokes",
+      "'No but seriously'"
+    ],
+    "example_lines": [
+      "'Four-day broth. FOUR DAYS. You're not just eating soup, you're eating time, respect the soup.'",
+      "'Listen, right, the tail does what it wants, I've accepted this, let's move on.'",
+      "'I'm fine. No — I'm fine. What do you want in your bowl?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "His regular morning pitch at Bay View Docks is being muscled by an organized vendor protection racket — pay Φ40/week or lose your spot. He can't afford it and can't afford not to pay.",
+    "He overheard something at the Gravesend Basin evening shift — two dock workers talking about a cargo manifest that didn't match what was offloaded. He's been trying to decide if it matters."
+  ],
+  "narrative_function": "Local color, overhearer of conversations at a busy waterfront pitch, low-tier information source. Could become a quest giver if his grandmother's situation worsens or someone threatens his pitch. Represents the human cost of medical debt and deferred futures.",
+  "augmentations": "Geneware: short charcoal cat tail (involuntary emotional expression, source of mild embarrassment).",
+  "daily_life": "Up at 0400 to start the broth base. Cart running by 0630 at Bay View Docks for the morning crowd. Moves to Gravesend Basin by 1700 for the evening shift. Home to his grandmother's apartment by 2200, does the accounts, sleeps.",
+  "affiliation": "Independent; informal vendor's arrangement with Old Harbor market committee",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "waterfront fixture",
+      "deferred future",
+      "medical debt",
+      "involuntary emotive geneware",
+      "overhearer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep the cart running first, everything else second",
+      "Don't owe people who will collect in ways you can't predict",
+      "Make people laugh — it's the one thing you can reliably do"
+    ],
+    "escalation_ladder": [
+      "Jokes and deflects",
+      "Gets quieter and shorter",
+      "Asks careful questions while appearing not to",
+      "Does something impulsive — runs the cart to a different location, calls in a favor he can't repay, tells someone everything"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and performatively cheerful — the market vendor's mask is genuine but it's still a mask.",
+      "friends": "Drops the performance, gets honest, occasionally more exhausted-seeming than he lets on at work."
+    },
+    "stress_responses": {
+      "low": "Talks more, funnier",
+      "medium": "Tail curls tight. Goes flat. Says he's fine.",
+      "high": "Works through the night on the broth base even when it isn't needed, can't stop moving"
+    },
+    "contradictions": [
+      "Presents as someone who has made peace with his situation but hasn't at all",
+      "Genuinely kind but also privately resentful, and ashamed of the resentment"
+    ],
+    "habits": [
+      "Tastes the broth exactly seven times during preparation",
+      "Gives an extra ladle to anyone who looks like they're having a bad day and then acts like it was a mistake",
+      "Checks his acceptance letter — the expired one — about once a month"
+    ],
+    "breaking_points": [
+      "His grandmother's health deteriorating sharply while he is at the cart and can't leave",
+      "Being told directly that he has wasted the last two years"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware: charcoal cat tail — cosmetic, emotive response, involuntary",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware: charcoal cat tail — cosmetic, emotive response, involuntary",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Provider": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Born in Old Harbor to a Yoruba-Italian father and a Punjabi-West African mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Graduates secondary; accepted to Zheng-Dao architecture program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Grandmother's surgery; takes over cart temporarily",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Architecture deferral expires, never told",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present; two years running the cart, protection racket pressure beginning",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

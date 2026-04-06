@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a5627cc7a0467fe0c48124eb",
+  "name": "Charmer",
+  "type": "archetype",
+  "category": "social",
+  "description": "Makes everyone feel like the most important person in the room",
+  "behavioral_signature": "Deploys warmth, humor, and attention strategically",
+  "under_stress": "Charms harder, more desperately",
+  "at_rest": "The life of every gathering",
+  "will_always": [
+    "make people feel good"
+  ],
+  "will_never": [
+    "be deliberately rude"
+  ],
+  "unless": [
+    "the charm stops working and real emotion leaks through"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Face",
+      "threshold": 0.8,
+      "context": "social skills"
+    },
+    {
+      "archetype": "People Pleaser",
+      "threshold": 0.7,
+      "context": "desire to please"
+    }
+  ],
+  "opposite_of": [
+    "Ice",
+    "Hermit"
+  ],
+  "tags": [
+    "charisma",
+    "warmth"
+  ]
+}

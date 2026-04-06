@@ -1,0 +1,65 @@
+{
+  "id": "019d6143a86475f5bce584e9933f678f",
+  "name": "Ouroboros Energy Tidal Frequency Dead Drop",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Tidal Frequency Dead Drop",
+  "type": "equipment",
+  "aliases": [
+    "Tidal Drop",
+    "The Buoy",
+    "OE-TFDD"
+  ],
+  "category": "comms",
+  "description": "The Tidal Frequency Dead Drop is a waterproof, neutrally buoyant data storage and transmission device designed to be deployed in Meridian 88's extensive subsurface water infrastructure — the drainage canals, flood management tunnels, retention basins, and tidal exchange channels that run beneath much of the city's lower districts. The device drifts passively with water flow until it reaches a pre-programmed depth or salinity threshold, at which point it anchors itself magnetically to any ferrous surface in its proximity and enters a listening state. A courier with the corresponding receiver can make contact simply by moving through the same water infrastructure within 15 meters of the deployed unit, triggering a rapid burst transmission of the stored payload over a short-range encrypted channel that exists for only the duration of the exchange — typically 1.4 to 3 seconds.\n\nOuroboros Energy developed the Tidal Frequency Dead Drop ostensibly for use in its subsurface infrastructure monitoring network, where autonomous sensor units needed a mechanism to offload collected data to maintenance personnel without requiring hardwired access points. The dead drop architecture — passive storage, triggered burst, automatic payload wipe after successful transfer — was a genuine engineering solution to a real logistics problem. It is also, with minimal modification, a near-perfect covert communication tool. The water infrastructure provides physical concealment, acoustic masking, and a delivery medium that moves payloads passively across the city without any operator involvement after initial deployment.\n\nThe device has become foundational to Meridian 88's underground information economy. Operators who need to pass sensitive data across the city without courier risk deploy a Tidal Drop into the drainage system at one location and let the city's own water management infrastructure carry it to the recipient's collection point. The 72-hour operational window and automatic payload wipe on successful transfer mean that even a recovered device yields nothing actionable after the exchange has occurred.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Passive Drift Positioning",
+    "Salinity and Depth Threshold Anchoring",
+    "Magnetic Surface Adhesion",
+    "Triggered Burst Transmission",
+    "Automatic Post-Transfer Payload Wipe"
+  ],
+  "specifications": {
+    "dimensions": "11cm x 6cm diameter (cylindrical)",
+    "weight": "190g in air; neutrally buoyant in fresh water; slight positive buoyancy in salt/mixed water (corrected by ballast adjustment)",
+    "power_source": "Hydro-kinetic micro-generator supplemented by capacitor reserve; indefinite passive operation",
+    "storage_capacity": "Up to 4TB encrypted payload",
+    "burst_transmission_range": "Up to 15m in water; 6m through concrete/soil",
+    "transmission_duration": "1.4–3.1 seconds per full payload transfer",
+    "operational_window": "72 hours post-deployment before automatic self-wipe",
+    "trigger_conditions": "Configurable depth, salinity, temperature, or proximity thresholds",
+    "post_transfer_behavior": "Automatic payload wipe; optional self-dissolution casing (48-hour degradable variant available)"
+  },
+  "tactical_use": "Standard operational protocol involves the sender programming the drop's anchor threshold to match a specific point in the drainage network — a known salinity gradient where freshwater meets tidal backflow, a characteristic depth at a junction beneath a target district — and deploying it upstream. The recipient, knowing the threshold parameters, moves through the designated section of infrastructure within the 72-hour window with a paired receiver. The exchange happens automatically on proximity, requiring no direct operator action beyond presence. The 1.4–3.1 second transmission window is fast enough that a courier moving at walking pace through a drainage tunnel completes the exchange without stopping. For high-security operations, the biodegradable casing variant ensures that an uncollected device leaves no recoverable hardware.",
+  "cultural_context": "The Tidal Frequency Dead Drop has given rise to a distinct subculture among Meridian 88's information brokers and couriers — those who know the city's subsurface water infrastructure well enough to navigate it, time it, and use it as a delivery network. This knowledge is itself valuable and carefully guarded; understanding where the tidal gradients shift, which drainage junctions are accessible, and how the flood management system's seasonal cycles affect flow patterns is expertise that cannot be acquired from any public source. Couriers who specialize in Tidal Drop operations are sometimes called 'divers' regardless of whether they actually enter the water, and they command premium rates for work that requires both technical competence and intimate knowledge of the city's hidden geography.",
+  "known_users": [
+    "Underground information brokers",
+    "Corporate espionage couriers",
+    "Resistance network logistics coordinators",
+    "Data smugglers operating across district boundaries",
+    "Ouroboros Energy infrastructure maintenance personnel (authorized)"
+  ],
+  "story_hooks": [
+    "A Tidal Drop is recovered from a drainage junction in an advanced state of degradation — the payload wipe triggered but incomplete, leaving fragments of a transmission that suggest an ongoing operation involving someone inside the Municipal Water Authority.",
+    "A courier tasked with collecting a Tidal Drop at a specific junction arrives to find the device has already been collected — but their client insists no one else was sent, raising the question of whether the drop's threshold parameters were leaked or independently calculated by a third party.",
+    "Ouroboros Energy files a formal complaint with the Municipal Spectrum Authority about 'unauthorized use of subsurface infrastructure for unlicensed transmission activities,' which is widely read as the company preparing to introduce a detection and disruption system into the drainage network — threatening the entire Tidal Drop ecosystem.",
+    "A Tidal Drop surfaces in a retention basin during a public works drainage event, intact and active, containing a payload that has been cycling through the city's water system for an estimated four months — its original recipient apparently never made the collection, and its sender is unknown."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "smuggle",
+    "ai",
+    "elf",
+    "corporate",
+    "ubc",
+    "tunnel",
+    "rain",
+    "energy",
+    "water",
+    "tier 2"
+  ]
+}

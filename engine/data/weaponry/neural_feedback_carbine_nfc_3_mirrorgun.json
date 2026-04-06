@@ -1,0 +1,65 @@
+{
+  "id": "019d6143ab3573c29b3c1646d4a83b3a",
+  "name": "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+  "type": "weapon",
+  "aliases": [
+    "Mirrorgun",
+    "NFC-3",
+    "The Echo",
+    "Feedback"
+  ],
+  "category": "firearm",
+  "description": "The NFC-3 does not fire a conventional projectile. It emits a tightly focused stream of encoded neural feedback signals derived from the operator's own nervous system, sampled in real time through a sensor array embedded in the grip and stock. The signal stream is amplified, phase-inverted, and projected at the target via a coherent electromagnetic emitter in the barrel. When the stream contacts a target with active neural augmentation — cybernetic nervous system components, neural interface implants, or synaptic enhancement hardware — it creates a feedback loop between the target's augmentation and the projected signal, producing effects ranging from temporary motor disruption to complete neurological shutdown depending on the intensity setting and the target's augmentation profile.\n\nRingo Corponation developed the NFC-3 as a counter-augmentation platform, responding to the tactical problem of heavily cyberware-augmented combatants who could shrug off conventional firearms due to pain suppression systems and reflex enhancements. The feedback loop exploits the fundamental architecture of neural augmentation: the more extensively a target is augmented, the more vulnerable they are to a correctly tuned feedback stream. Against fully unaugmented targets, the NFC-3 is almost entirely ineffective — the emitted signal has no neural hardware to interact with and dissipates without meaningful effect. This limitation is the weapon's defining tactical characteristic.\n\nThe grip sensor array must maintain contact with the operator's bare skin to sample the neural signal baseline. Operators wearing full gloves cannot use the weapon effectively — a deliberate design choice that Ringo Corponation defends as a safety feature preventing unauthorized use, though critics note it also makes the weapon impractical in environments requiring full protective equipment. The weapon's emitter produces a faint violet luminescence during discharge that is invisible to standard optics but detectable to augmented visual systems — a cruel irony given the weapon's primary target demographic.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 4+ / Military only",
+  "legality": "Prohibited (counter-augmentation weapons treaty violations in 7 jurisdictions)",
+  "base_technologies": [
+    "Neural feedback loops",
+    "Coherent electromagnetic emission",
+    "Real-time biosignal sampling"
+  ],
+  "specifications": "emission type: Encoded neural feedback signal stream\neffective range: 30m (full effect) / 50m (partial effect)\nintensity settings: 5 stages — Motor disruption / Sensory overload / Coordination failure / Augmentation lockout / Neurological shutdown\nrate of fire: Continuous beam (sustained) / Pulse mode\nweight: 2.8 kg\npower source: High-density capacitor bank, 40 seconds sustained fire per charge\noperator requirement: Bare-skin grip contact for neural signal sampling\neffectiveness against unaugmented: Negligible\nvisual signature: Violet luminescence (invisible to standard optics, visible to augmented vision)",
+  "tactical_use": "Deployed specifically against augmented targets in environments where conventional firearms are ineffective due to the target's pain suppression and reflex systems. Standard doctrine is to sweep the beam across the target rather than hold a fixed point, as movement disrupts the feedback loop coherence and reduces effectiveness. In team operations, the NFC-3 operator is typically shielded by conventional firearms users who handle unaugmented threats while the Mirrorgun operator concentrates on augmented targets. The weapon is considered a specialist tool requiring significant operator training to use effectively.",
+  "cultural_context": "The Mirrorgun occupies a uniquely contentious space in Meridian 88's cultural landscape around augmentation. For augmented individuals — a significant and politically vocal population — it represents one of the most direct expressions of fear and hostility toward their existence: a weapon designed specifically to hurt people because they have implants. Anti-augmentation political factions have quietly funded Ringo Corponation's development program, while augmentation rights advocates have made the NFC-3 a centerpiece of their arguments that augmented individuals face systematic persecution. In street culture, being targeted with a Mirrorgun is considered a profound insult regardless of whether it causes injury.",
+  "known_users": [
+    "Corporate counter-augmentation enforcement units",
+    "Anti-augmentation militia groups (black market acquisition)",
+    "Ringo Corponation field testing teams",
+    "Government security forces in jurisdictions with active augmentation restrictions"
+  ],
+  "story_hooks": [
+    "An augmented street medic who treated victims of NFC-3 attacks is now a target herself — someone is using a Mirrorgun to silence witnesses to a corporate operation. She needs protection and the players need to trace the weapon back to whoever authorized its use, which means following a supply chain that Ringo Corponation has deliberately obscured.",
+    "A stolen NFC-3 is being used by someone who doesn't understand its limitations — they're firing it at unaugmented targets and getting no results, then escalating to conventional violence in frustration. The players are hired to recover the weapon before its erratic user kills someone, but the recovery means going into territory controlled by an anti-augmentation faction that will not welcome outsiders.",
+    "Ringo Corponation approaches the players to field-test a new NFC-3 firmware update that claims to extend effectiveness against partially augmented targets. The test parameters are suspiciously specific, and the 'test subjects' Ringo has identified are activists who have been publicly critical of the weapon's development. The players have to decide whether to run the test, expose Ringo's intentions, or find a third option."
+  ],
+  "ammunition_type": [
+    "Zheng-Dao Type-4 Bioelectric Cell ZD-T4",
+    "Ringo Corponation R-Cell Type-9 RC-9"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "violence",
+    "combat",
+    "gun",
+    "war",
+    "love",
+    "augment",
+    "cyberware",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "power",
+    "injury",
+    "pain",
+    "market",
+    "bar",
+    "rain",
+    "rights",
+    "train",
+    "fire",
+    "tier 4"
+  ]
+}

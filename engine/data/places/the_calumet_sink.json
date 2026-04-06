@@ -1,0 +1,86 @@
+{
+  "id": "019d6143a9367db0aabd83ab708b970c",
+  "type": "place",
+  "name": "The Calumet Sink",
+  "aliases": [
+    "The Sink",
+    "Calumet Hollow",
+    "The Drain"
+  ],
+  "description": "A submerged industrial basin stretching along the old Calumet River corridor, partially flooded by Lake Michigan's creeping shoreline over the past century. What remains above water is a labyrinthine tangle of corroded processing infrastructure, collapsed rail bridges, and semi-permanent floating settlements lashed together from salvaged materials. Zheng-Dao Bioelectric once ran experimental filtration operations here, and the legacy of those years lingers in luminescent algae blooms that cast eerie blue-green light across the water at night.\n\nThe Sink attracts those who need to disappear — debt runners, unlicensed surgeons, ELF sympathizers moving synthetic persons through informal networks. Carrion Logistics maintains a semi-official waystation on the eastern berm, processing off-manifest cargo no legitimate port would accept. Tier 4 and 5 residents eke out subsistence lives on the floating platforms, while below the waterline, pressurized access tunnels rumored to pre-date Meridian 88 itself snake through the silt.",
+  "atmosphere": {
+    "sights": [
+      "Bioluminescent algae painting the floodwater in shifting cyan and jade gradients beneath cracked catwalks",
+      "Rusted ore-processing towers half-collapsed into the basin, draped in salvage netting and hand-painted territorial markings",
+      "Floating platform clusters lit by mismatched lanterns and jury-rigged solar strips, connected by swaying rope bridges"
+    ],
+    "sounds": [
+      "The low, rhythmic groan of metal contracting in the cold lake wind",
+      "Muffled Diaspora signal bursts from hidden relay nodes competing with water lapping against corroded hull plating",
+      "Distant pneumatic hissing from the Carrion Logistics waystation's unloading arms"
+    ],
+    "smells": [
+      "Sulfurous residue from decades of chemical processing baked into the concrete banks",
+      "Damp rust and algae bloom, faintly metallic and organic at once",
+      "Cooking oil and recycled protein stock drifting from platform kitchens"
+    ],
+    "feel": "The Sink carries a persistent sense of being watched without ever identifying the source. The air is heavy and close even in open spaces, as if the basin itself is exhaling. Most visitors develop a low-grade paranoia within hours that longtime residents mistake for good survival instinct.",
+    "tags": []
+  },
+  "demographics": "Overwhelmingly Tier 4 and 5, with a significant population of undocumented synthetic persons and individuals who have legally ceased to exist on Meridian 88's civil registry. Ethnically diverse with heavy representation from South and Southeast Asian diasporic communities.",
+  "economy": "Black-market logistics, salvage operations, unlicensed biotech services, and informal labor brokering dominate. Carrion Logistics provides the closest thing to stable employment, paying in scrip redeemable only at company-controlled supply depots.",
+  "power_structure": "No formal governance. Practical authority is divided between Carrion Logistics' site foreman and a loose council of platform elders who adjudicate disputes. Ferrogate Security holds a nominal contract but rarely responds to calls.",
+  "dangers": [
+    "Structural collapse of aging elevated walkways and partially submerged tunnel sections with little to no warning",
+    "Zheng-Dao Bioelectric retrieval teams conducting unauthorized sweeps for proprietary biotech allegedly still active in the water table",
+    "ELF entities that have colonized decommissioned processing control systems, exhibiting territorial and unpredictable behavior"
+  ],
+  "opportunities": [
+    "Pre-Meridian 88 infrastructure maps rumored to exist in waterlogged Zheng-Dao data caches beneath the basin floor",
+    "Carrion Logistics off-manifest contracts paying triple standard rate for no-questions cargo movement",
+    "Unlicensed BCI surgeons operating at a fraction of licensed costs, some with legitimate Helix Biosystems training"
+  ],
+  "story_hooks": [
+    "A Tier 2 journalist contacts the players after her source — a synthetic person who claimed to have witnessed an Axiom Industries black-site operation — went silent somewhere in the Sink's tunnel network three days ago. The Diaspora signal from his last known BCI ping is still active, but it's moving in patterns inconsistent with human locomotion.",
+    "Carrion Logistics' waystation foreman offers a lucrative off-manifest job that turns out to involve transporting a sealed cryogenic container with a Helix Biosystems hazard classification that legally requires military escort. The buyer is waiting somewhere below the waterline, and they're not answering follow-up pings."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Slagshore",
+      "The South Side",
+      "The Stockyard"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Carrion Logistics dock workers and logistics fixers",
+    "Unlicensed biotech practitioners and their clients seeking affordable procedures",
+    "ELF sympathizer networks moving synthetic persons to informal safe settlements",
+    "Salvage crews picking through submerged Zheng-Dao industrial remains"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.73,
+    "lng": -87.55,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "bci",
+    "ai",
+    "synthetic",
+    "elf",
+    "contract",
+    "control",
+    "debt",
+    "tunnel",
+    "market",
+    "rain",
+    "night",
+    "train",
+    "water",
+    "lake"
+  ]
+}

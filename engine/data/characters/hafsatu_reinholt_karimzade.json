@@ -1,0 +1,182 @@
+{
+  "id": "019d6143a6237c998f459a038f4868c0",
+  "type": "character",
+  "name": "Hafsatu Reinholt-Karimzade",
+  "aliases": [
+    "Mère Haf",
+    "the Anchor"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Climate refugee and de facto matriarch of a tent-city family cluster",
+  "age": 67,
+  "status": "active",
+  "location": "The Waukegan Industrial Shelf, Tent Cluster 9 (informally: 'Haf's Row')",
+  "description": "Hafsatu came to Meridian 88's edges seventeen years ago with twelve people and lost four of them to the journey. She arrived with nothing except a ferocious organizational intelligence and the absolute conviction that the remaining eight would survive. They did. The cluster at Haf's Row has grown to forty-one people now — not all related by blood, but all held in place by a complex web of obligation, affection, and the specific terror of disappointing this woman.\n\nShe is small and tends toward stillness, which makes people underestimate her until they have been in a room with her for five minutes. Her face is a remarkable architecture of age and expression — she has the kind of features that are precise and deliberate even at rest. She wears her natural white hair unprocessed, cut close on the sides and fuller on top. Her hands are her most augmented feature: she accepted a nerve-enhancement package years ago to treat arthritic damage, and the faint silver threads of the implants are visible under the skin of her knuckles when the light is right. She does not consider this augmentation — she considers it a medical necessity, and she resents the question. She is generous to the point of self-destruction with resources and merciless with nonsense, and she has no patience for the distinction between the two.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That the cluster will fracture after she is gone",
+      "That the journey cost more than it was worth and she will never be allowed to admit it"
+    ],
+    "core_desires": [
+      "Legal residency for every person in her cluster",
+      "One day of rest where she is not responsible for anything"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the morning prayer, the evening count, the maintenance of routine as a bulwark against chaos",
+      "Redirecting grief into logistics"
+    ],
+    "blind_spots": [
+      "Cannot accept help gracefully — frames it as weakness even when she is exhausted",
+      "Has decided two of her cluster members are trustworthy beyond evidence; has not updated this assessment in years"
+    ],
+    "secret": "One of the four people she lost on the journey to Meridian 88 did not die by accident. There was a choice, in the dark, with limited water, and she made it. She has never spoken of it. She carries the name of that person in her mouth like a stone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and precise in three languages, shifts between them within sentences based on emotional register. Sahel-inflected syntax, constructed sentences.",
+    "cadence": "Measured, even, authoritative — speaks as if each sentence has been weighed before release",
+    "verbal_tics": [
+      "'Listen to me.' (not a request)",
+      "'Yes or no, not maybe.'",
+      "Uses full names when displeased"
+    ],
+    "example_lines": [
+      "'You want to help. Good. Help means showing up on the third day when it is boring and nothing has changed. Can you do that?'",
+      "'I did not carry these people this far to watch them disappear into someone else's problem. What are you going to do about it?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit representative has been visiting the Shelf with relocation offers that sound generous and feel wrong; Hafsatu needs someone with city-knowledge to investigate the fine print.",
+    "One of her cluster's young adults has gone missing into the deeper city, and she cannot go herself without leaving the cluster leaderless — she needs someone she can trust to find them."
+  ],
+  "narrative_function": "Authority figure in the margins — she commands loyalty in communities that have no official power. Quest giver for problems within the Shelf community. Moral compass character who challenges players' assumptions about poverty and agency. Can provide shelter and community knowledge.",
+  "augmentations": "Nerve-enhancement implants in both hands (medical, treats arthritic neuropathy — silver subcutaneous threading visible at knuckles). No cosmetic modifications.",
+  "daily_life": "Up before anyone else, mediating the morning's conflicts before they become the afternoon's crises; coordinates food and water allocation for the cluster, maintains the shared prayer-shrine to the industrial E.L.F. called Ironlung who the Shelf residents believe governs the heating systems.",
+  "affiliation": "Waukegan Shelf Refugee Collective (informal); no corponation ties",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 10,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "matriarch",
+      "survivor",
+      "community organizer",
+      "grief-keeper",
+      "pragmatist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The cluster's survival comes before her comfort, always",
+      "Never lie to someone who is making a decision that affects their safety",
+      "Accept nothing from corponations without reading every word twice"
+    ],
+    "escalation_ladder": [
+      "Quiet, pointed questions",
+      "Public naming of the problem in front of witnesses",
+      "Withdrawal of cooperation and community resources",
+      "Appeals to the broader Shelf Collective — she has allies"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally courteous, immediately assessing — watches hands and eyes, categorizes within the first minute",
+      "friends": "Demanding and tender in equal measure, expresses affection through acts of practical care"
+    },
+    "stress_responses": {
+      "low": "Becomes more formal, speech slows",
+      "medium": "Begins reorganizing physical space — cleaning, moving, ordering — as displaced action",
+      "high": "Goes completely silent and finds somewhere private; the cluster knows not to approach for twenty minutes"
+    },
+    "contradictions": [
+      "Preaches that everyone is worth saving while having made a choice that suggests she knows this is not always true"
+    ],
+    "habits": [
+      "Counts the cluster members every evening — a head-count, murmured names",
+      "Keeps a physical ledger of resources in a waterproof case",
+      "Tends the Ironlung shrine with small machine-oil offerings every morning"
+    ],
+    "breaking_points": [
+      "Any official threatening to separate families in the cluster",
+      "Being asked to prove her value to someone with authority over her"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Nerve-enhancement implants (both hands, medical grade, arthritic neuropathy treatment)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Nerve-enhancement implants (both hands, medical grade, arthritic neuropathy treatment)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

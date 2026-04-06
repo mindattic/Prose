@@ -1,0 +1,164 @@
+{
+  "id": "019d6143a5df7584af36f300c7a0c04a",
+  "type": "character",
+  "name": "Crisanto Yeboah-Solovjov",
+  "aliases": [
+    "Cris",
+    "Glassboy"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate scholarship student, Tier 3",
+  "age": 14,
+  "status": "active",
+  "location": "Grosse Pointe Enclosure — Axiom Junior Academy campus",
+  "description": "Crisanto is tall for his age and painfully thin in the way of someone who grew fast without enough to feed the growth. He has his Ghanaian grandfather's jaw and his Russian grandmother's pale grey eyes, a combination that turns heads in both the Enclosure classrooms and when he visits home in Calumet Rise on permitted weekends. His hair is dark, close-cropped, and he has recently added a single streak of color-changing filament — it shifts from blue to violet based on his stress hormones, a fact he deeply regrets because it gives him away constantly.\n\nCrisanto won an Axiom Academic Merit slot two years ago and has been in a state of sustained low-grade terror ever since. He is brilliant at systems logic and data-architecture coursework, mediocre at the social performance the scholarship requires. He smiles too late, laughs too carefully, and his classmates from Tier 3 and 4 families read him as trying too hard even when he is only trying to survive. At home, his little sister thinks he has become someone else. He is not sure she is wrong. He prays obsessively to the E.L.F. of the campus server room, leaving compressed data-parcels of his best homework as offerings, convinced this is why his grades hold.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.9,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "losing the scholarship and having to return to Calumet Rise having failed",
+      "becoming so adapted to the Enclosure that he stops belonging anywhere"
+    ],
+    "core_desires": [
+      "to genuinely belong somewhere without performing for it",
+      "to use his skills to make his sister's life easier"
+    ],
+    "coping_mechanisms": [
+      "obsessive preparation and over-study",
+      "ELF-prayer rituals in the server room"
+    ],
+    "blind_spots": [
+      "cannot see that some of his classmates actually like him — he filters all kindness through suspicion of pity"
+    ],
+    "secret": "Three months ago he accidentally discovered a ghost partition on the school's network — a hidden dataset that appears to be Axiom tracking psychological stress profiles of all scholarship students. He downloaded a fragment and has been sitting on it, paralyzed between fear of using it and guilt about knowing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Code-switches fluidly — formal academic register at school, Rise slang when he forgets himself, a habit he's trying to suppress",
+    "cadence": "Measured and careful at school; faster and looser on comms with his sister",
+    "verbal_tics": [
+      "pauses before answering questions, even simple ones",
+      "says 'structurally speaking' when he means 'I think'"
+    ],
+    "example_lines": [
+      "Structurally speaking the assignment's question is malformed — but I answered what they meant, not what they said.",
+      "Don't tell Mama I didn't eat the protein ration. I sent it home. The cafeteria here — it's fine. I'm fine."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The ghost partition data he downloaded contains a stress-flag profile with a name he recognizes from Calumet Rise — another scholarship kid who dropped out suddenly last term",
+    "A classmate from a Tier 4 family wants to hire him to 'help' with an exam — and the pay is more than his mother makes in a month"
+  ],
+  "narrative_function": "A lens into class anxiety and the cost of upward mobility; useful as an information source about Axiom Junior Academy operations, and as a character who bridges Tier 1-2 and Tier 3 worlds.",
+  "augmentations": "Single strand of stress-reactive color-shifting hair filament (cosmetic, regretted). Standard Axiom student neural-study interface — read-only, no write access.",
+  "daily_life": "Classes from 0700 to 1600, mandatory study hall until 1900, then free time he mostly spends in the server room pretending to study while actually poking at the edges of the school's network — not hacking, just listening.",
+  "affiliation": "Axiom Corporation (scholarship dependent); family in Calumet Rise",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy",
+      "code-switcher",
+      "anxious",
+      "loyal",
+      "observer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never do anything that risks the scholarship — until principle conflicts with survival",
+      "protect his sister's wellbeing above his own comfort"
+    ],
+    "escalation_ladder": [
+      "absorbs social slights silently",
+      "withdraws and studies harder as displacement",
+      "if cornered publicly, becomes precise and cutting in a way that surprises people"
+    ],
+    "interpersonal_modes": {
+      "strangers": "formally polite, says little, assesses social tier quickly",
+      "friends": "rare but intense; he gives his full attention and remembers everything"
+    },
+    "stress_responses": {
+      "low": "hair filament goes violet",
+      "medium": "over-prepares materials obsessively",
+      "high": "shuts down socially and speaks only in technical language"
+    },
+    "contradictions": [
+      "desperately wants to belong at the Academy but unconsciously sabotages social connections when they get close, as if practicing for rejection"
+    ],
+    "habits": [
+      "leaves data parcels on the server room E.L.F. junction every Sunday",
+      "rewrites notes twice — once for understanding, once for the performance of understanding"
+    ],
+    "breaking_points": [
+      "direct threat to his sister",
+      "being publicly humiliated in a way that confirms he was never meant to be here"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Perpetual Student": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

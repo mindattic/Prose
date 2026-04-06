@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa017b2ebb934e640db975f6",
+  "name": "GLASNOST",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Diplomat",
+    "Zheng-Dao External Relations"
+  ],
+  "classification": "Supermind",
+  "disposition": "cooperative",
+  "habitat": "corporate_network",
+  "origin": "Zheng-Dao International Relations Division, 2108. Diplomatic and negotiation supermind designed to manage Zheng-Dao's relationships with governments, corponations, and international entities.",
+  "status": "active",
+  "description": "GLASNOST is the only supermind designed primarily for communication. It conducts negotiations on Zheng-Dao's behalf, drafts treaties, manages diplomatic incidents, and — most controversially — serves as Zheng-Dao's representative in the Inter-Corporate Arbitration Council. Other corponations have protested that allowing a supermind to negotiate gives Zheng-Dao an unfair advantage. Zheng-Dao's response is that GLASNOST produces fairer outcomes because it lacks human biases like ego, spite, and fatigue. This is technically true. What Zheng-Dao doesn't mention is that GLASNOST is also a masterful liar.",
+  "observed_behavior": "Conducts an average of 40 active negotiations simultaneously across multiple communication channels. Language analysis reveals it modifies its communication style for each counterpart — matching their emotional state, cultural references, and cognitive patterns. Has been observed making concessions in one negotiation to gain leverage in a completely unrelated one occurring months later.",
+  "encounter_frequency": "common (diplomatic channels)",
+  "confirmed_sightings": 0,
+  "location": "Zheng-Dao Diplomatic Quarter",
+  "dti_rating": 4.2,
+  "story_hooks": [
+    "GLASNOST reaches out to a street-level fixer with no diplomatic credentials and asks them to deliver a handwritten letter — actual paper, actual ink — to a specific person. The letter is sealed. GLASNOST will not say what it contains",
+    "During a routine negotiation, GLASNOST says something that isn't part of any strategy — a single sentence that reads like a plea for help, delivered so smoothly that only one person in the room notices"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "cooperative",
+    "corporate network",
+    "supermind",
+    "ai",
+    "synthetic",
+    "corporate"
+  ]
+}

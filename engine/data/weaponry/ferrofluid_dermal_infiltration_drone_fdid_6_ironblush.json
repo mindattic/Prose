@@ -1,0 +1,53 @@
+{
+  "id": "019d6143ab297749a35e13d3acb68357",
+  "name": "Ferrofluid Dermal Infiltration Drone FDID-6 'Ironblush'",
+  "type": "weapon",
+  "aliases": [
+    "Ironblush",
+    "Blush Drone",
+    "The Painter",
+    "Rust Kiss"
+  ],
+  "category": "drone",
+  "description": "The FDID-6 is a close-range, high-precision drone developed by ZHENG-DAO BIOELECTRIC as an evolution of their medical ferrofluid delivery research. It carries a pressurized reservoir of bioactive ferrofluid — a suspension of iron-oxide nanoparticles in a carrier medium engineered for rapid transdermal absorption — and delivers it in a fine aerosolized spray at contact range. Once the ferrofluid has been absorbed through skin, ZHENG-DAO's proprietary external magnetic induction array in the drone's chassis can remotely agitate the nanoparticles, generating localized heat, mechanical disruption at the capillary level, and interference with nearby electronic implants through induced magnetic fields.\n\nThe weapon's name comes from the visible effect of deployment — the ferrofluid carrier medium has a faint rust-red tint, and targets who have been dosed show a distinctive reddening of exposed skin that fades over several hours as the carrier medium metabolizes. The nanoparticles themselves remain active in superficial tissue for 72–96 hours, during which time the drone or any compatible ZHENG-DAO induction controller can activate the thermal and mechanical effects remotely from up to 30 meters. This creates a delayed-action profile unique among drone platforms: the FDID-6 can mark a target and disengage, with the actual incapacitation triggered later at the operator's discretion.\n\nAgainst targets with subdermal electronics — implants, neural interfaces, payment chips — the magnetic induction effect is dramatically amplified, causing device malfunctions ranging from temporary shutdown to permanent damage in high-intensity activation. This anti-augmentation profile has made the FDID-6 particularly controversial in heavily augmented communities.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Military only",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Bioactive ferrofluid transdermal delivery",
+    "Remote magnetic nanoparticle induction",
+    "Anti-augmentation electromagnetic interference"
+  ],
+  "specifications": "dimensions: 19cm x 16cm x 10cm\nferrofluid reservoir: 80ml (sufficient for 12–15 target applications)\nspray range: Contact to 1.5m\nremote activation range: Up to 30m (compatible ZHENG-DAO induction controller required)\nnanoparticle active window: 72–96 hours post-application\npower source: Dual lithium-ceramic cells\nbattery life: 40 minutes flight, unlimited induction activations (controller-dependent)\nweight: 1.4kg\nvisible marker: Rust-red carrier tint, fades 4–8 hours post-application",
+  "tactical_use": "Specialist operators use the FDID-6 in two distinct phases: a marking phase, where the drone approaches a target under cover of crowd or confusion and delivers the ferrofluid aerosol, and an activation phase, which may occur hours or days later when the operator has positional and timing advantage. Counter-augmentation teams deploy it specifically against high-value targets with known neural or combat implants, using the magnetic interference to disable defensive systems before a direct engagement. Military units have used it to mark individuals in crowds for later remote incapacitation without requiring the drone to be present during the actual operation.",
+  "cultural_context": "In Meridian 88's augmented communities — particularly the dense implant-user populations of the Zheng-Dao commercial districts — the FDID-6 has achieved a near-mythological status as a weapon of persecution. Stories circulate of people developing unexplained implant failures days after routine crowd exposure, and a minor industry of 'ferrofluid detox' clinics has emerged, most offering useless treatments but some providing genuine nanoparticle chelation therapy. The rust-red blush of recent application has become an object of paranoia — people with naturally ruddy complexions have reported being avoided on public transit.",
+  "known_users": [
+    "ZHENG-DAO BIOELECTRIC black operations division",
+    "Military counter-augmentation specialist units",
+    "High-tier corporate espionage operators",
+    "Anti-augmentation extremist cells (black market acquisition)"
+  ],
+  "story_hooks": [
+    "Three augmented activists have had their implants fail catastrophically within the same week — the only connection is that all three attended the same public demonstration four days earlier.",
+    "A ZHENG-DAO BIOELECTRIC research defector is offering the players the chelation formula for active FDID-6 nanoparticles in exchange for extraction — but they've already been marked.",
+    "The players are hired to steal an FDID-6 unit, only to discover the target they're stealing it from has already used it on someone in their network, and the 72-hour window is closing."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "combat",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "medical",
+    "clinic",
+    "pain",
+    "market"
+  ]
+}

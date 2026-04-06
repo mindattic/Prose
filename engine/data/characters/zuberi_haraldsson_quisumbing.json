@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a73c757eadeb17e0e92ab8d8",
+  "type": "character",
+  "name": "Zuberi Haraldsson-Quisumbing",
+  "aliases": [
+    "Zub",
+    "Haraldsson (only people trying to intimidate him)"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Black market pharmaceutical dealer and street pharmacist — meds, supplements, unscheduled compounds",
+  "age": 24,
+  "status": "active",
+  "location": "The Narrows, Blackpipe Corridor",
+  "description": "Zuberi is young enough that it still shows — there's a looseness to him, an unresolved quality, like something that hasn't quite hardened into its final shape. He is tall, lean, with the dark skin and angular jaw of his Tanzanian grandfather and his Filipino grandmother's round cheeks, a combination that makes him look younger than he is and which he has mostly given up being frustrated about. His ears are tipped with small black cat-ear points — geneware done in a parlor on a dare when he was nineteen, which he now can't imagine removing. He keeps his hair mid-length and loose, usually damp, because he is always running slightly late.\n\nHe operates from three locations in rotation — a corner in the Narrows, a back table in a noodle shop in Blackpipe Corridor, and a patch near the old water reclamation junction on the Corridor's south end — and keeps no fixed stall because fixed stalls have fixed addresses. He knows more about pharmacology than most licensed clinicians, taught himself from pirated Helix Biosystems training modules and a mentor who has since retired. He is genuinely trying to help people who cannot afford clinical pricing — and he is also genuinely dealing recreational compounds for profit — and he holds both of these truths without significant cognitive dissonance, which either speaks to moral flexibility or a realistic understanding of how survival works.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being arrested and losing the operation before he's built anything sturdy enough to survive without him",
+      "Giving someone the wrong thing and hurting them — this is not abstract, it lives in him"
+    ],
+    "core_desires": [
+      "To run a legitimate clinic one day — he knows exactly what it would look like, down to the layout and the sliding-scale fee structure",
+      "To sleep eight hours without a comm alert"
+    ],
+    "coping_mechanisms": [
+      "Fixates on the people he has genuinely helped — runs the list when things are bad",
+      "Dark jokes that land precisely because they're not entirely jokes"
+    ],
+    "blind_spots": [
+      "Underestimates his own risk tolerance — takes chances he would advise clients against",
+      "Is more emotionally attached to his clients than is professionally safe"
+    ],
+    "secret": "Four months ago a client came to him in acute overdose crisis on a compound he didn't sell her. He stabilized her using everything he had, stayed with her for six hours, and when she was through the worst of it she told him her supplier's name. He has been building a dossier on that supplier since, with no clear plan for what to do with it — he is not a violent person and he is not an informant, and the space between those two things is where he is stuck."
+  },
+  "speech_patterns": {
+    "vocabulary": "Casual, warm, clinical when talking about compounds — the vocabulary shift is notable and a little jarring. Uses a lot of 'like' and 'basically' and 'no, listen' when animated. Swears cheerfully.",
+    "cadence": "Fast when comfortable, careful when discussing medications — he slows down for dosages like he's reading from an internal teleprompter.",
+    "verbal_tics": [
+      "'No, listen—'",
+      "'The thing about that is—'",
+      "Refers to all his regular clients by their ailment in his head, calls them by name out loud — his private shorthand sometimes leaks"
+    ],
+    "example_lines": [
+      "'No, listen, this is not the same compound, the molecular structure is like — okay, imagine the other one is a door and this one is a door that opens the wrong way. You need to know that.'",
+      "'I can get you that. Give me until Thursday. And drink water, I mean it, drink actual water.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The dossier on the bad supplier is now substantial enough to be dangerous — to Zuberi, if it's found — and he needs somewhere to put it that isn't on his person",
+    "A corporate clinic has opened a 'community access' popup in the Narrows, underpricing everything and offering free diagnostics — and Zuberi is watching his client list shrink and trying to figure out what the clinic actually wants before he finds out the hard way"
+  ],
+  "narrative_function": "Resource for medical supplies outside clinical channels. Information source for what's circulating in the Narrows chemically and otherwise. Character study in the ethics of harm reduction in a predatory economy.",
+  "augmentations": "Cat-ear points, black (geneware, cosmetic). No other augmentations — he has spent money on these things and it has always gone to something more urgent.",
+  "daily_life": "He rotates between his three spots on a rough weekly schedule he shares with trusted clients via a dead-drop comm channel. He spends mornings acquiring stock — legal supplements through a legitimate channel he cultivates carefully, unscheduled compounds through three separate suppliers he never introduces to each other. He is chronically sleep-deprived.",
+  "affiliation": "Independent; loosely affiliated with the Blackpipe Corridor residents network; pays an informal fee to the local Oxidian Market Guild chapter not to be reported",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -1,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "harm-reducer",
+      "young and earnest",
+      "self-taught expert",
+      "overextended",
+      "idealist in realist's clothing"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do no harm — genuinely, not as a slogan. Will not sell to someone visibly in crisis without triaging first",
+      "Keep the suppliers separate so no single arrest collapses the whole supply chain",
+      "Never front on a price principle — inconsistent pricing is a security vulnerability"
+    ],
+    "escalation_ladder": [
+      "Talks his way out — he is good at this and deploys it first",
+      "Gets very still and very polite — a register shift that experienced Narrows residents recognize as a warning",
+      "Runs. He is fast and he knows the Corridor better than anyone looking for him."
+    ],
+    "interpersonal_modes": {
+      "strangers": "Friendly, quick to joke, takes a beat before trusting anyone with anything real",
+      "friends": "Becomes a slightly exhausting amount of care — checks in, remembers details, shows up when you're sick with something from the bag"
+    },
+    "stress_responses": {
+      "low": "Eats something — stress manifests as hunger for him, which is useful for reminding him to eat",
+      "medium": "Runs his client list mentally, prioritizes who needs contact, uses action as regulation",
+      "high": "Makes very fast decisions he will second-guess later at great length"
+    },
+    "contradictions": [
+      "Believes in systems and structures — wants to build the proper clinic, resents the broken healthcare economy — while depending entirely on working outside any structure for his own survival"
+    ],
+    "habits": [
+      "Leaves a compound-offering — a small vial of something common and non-lethal — at the E.L.F. shrine near the Corridor junction, addressed to what he calls the Healer, a health-spirit he's not sure he believes in but addresses anyway",
+      "Compulsively checks his stock count at the start and end of each rotation"
+    ],
+    "breaking_points": [
+      "Someone dying because they couldn't access care he could have provided",
+      "The dossier being used against someone other than its subject"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Nostalgic": 0.9,
+    "War Weary": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a649705c8759e0404bf7694e",
+  "type": "character",
+  "name": "Lautaro Dzivaguru-Aamodt",
+  "aliases": [
+    "Lauti",
+    "The Kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street performer and physical comedian, unofficial mascot of Mexicantown Libre",
+  "age": 19,
+  "status": "active",
+  "location": "Mexicantown Libre, Grand Corridor intersection",
+  "description": "Lautaro is seventeen centimeters too tall for his own coordination — a fact he has turned into a performance philosophy. He is lean and long-limbed with warm reddish-brown skin, close-cropped dark hair, and cat ears he got for his seventeenth birthday, rust-colored and perpetually at a different angle from what his face is doing, which gives him an unconsciously comic aspect even when he's standing still. He has a gap between his front teeth that is enormously charming and enormous dark eyes that he knows how to weaponize.\n\nHe performs at the Grand Corridor junction six days a week: physical clowning, improvised slapstick, audience interaction that skirts the line between theater and mild chaos. He is genuinely skilled in ways that surprise people who assume youth and exuberance are all he has — his physical control is meticulous underneath the apparent mayhem, and his timing is extraordinary. He is incandescently popular with children, street vendors, and anyone who has had a long day. He is deeply suspicious of any adult who doesn't laugh at something eventually. He makes almost no money and does not seem to mind, which worries the people who love him.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.2,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being ordinary — becoming one of the people who stopped",
+      "That his father, who left for Zheng-Dao contracted labor and has been unreachable for two years, is dead"
+    ],
+    "core_desires": [
+      "To perform something so good that it stays with someone for the rest of their life",
+      "To find out what happened to his father without having to ask his mother, who he knows can't afford to say"
+    ],
+    "coping_mechanisms": [
+      "Performance as complete displacement of private feeling",
+      "Being the funniest person in any room as a preemptive social shield"
+    ],
+    "blind_spots": [
+      "He reads laughter as safety and misses cues that suggest it isn't",
+      "He underestimates how much the people around him are worried about him financially"
+    ],
+    "secret": "He was offered a contract six months ago by a Ringo Corp entertainment scout — live performance hosting for a corporate venue in the Grand Corridor commercial district, real money, stable work. He told no one and didn't respond. He's not sure if he's holding out for something better or is just scared that it would make him someone different."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and colloquial; mixes Spanish phrases from Mexicantown Libre with standard Meridian street speak; drops into formal register for comedic contrast",
+    "cadence": "Quick, rhythmic, excellent timing — he speaks the way he performs",
+    "verbal_tics": [
+      "'No but listen —' (introducing an escalating bit)",
+      "Italicizes words with his whole body"
+    ],
+    "example_lines": [
+      "'No but listen — I have a theory about why the Ferrogate ELF hasn't answered anyone's prayers in six weeks, and it involves a very personal insult that was not my fault.'",
+      "'I'm professionally bad at this. That's different from actually bad. You see the difference? Okay the difference is I practice.'",
+      "'My dad used to say comedy is just tragedy happening to someone else. He said it like it was comforting. I think about that a lot.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He witnessed something last week during his morning alley practice — a private conversation between two people who didn't see him, involving a location and a time that has since passed with notable municipal emergency response — and he's been doing jokes about it on stage without realizing what he saw",
+    "He has received three follow-up messages from the Ringo Corp scout and still hasn't told anyone; one of his troupe members spotted the scout watching his set and is now asking uncomfortable questions"
+  ],
+  "narrative_function": "Local color and unexpected information source — he is everywhere and invisible to people who dismiss him as a street kid. Knows the rhythms of Mexicantown Libre intimately. Can be a connector to community networks. His cheerfulness is also a useful tonal counterweight in heavy narrative moments.",
+  "augmentations": "Cat ears (rust-colored, geneware cosmetic, birthday gift); no other modifications",
+  "daily_life": "Wakes up late in a shared housing unit with four other people, eats whatever's available, practices movement for two hours in a back alley he considers his studio, performs for five to six hours, then spends evenings watching recorded performance archives on a communal screen.",
+  "affiliation": "Independent; Mexicantown Libre community; vaguely attached to a street performance troupe called Los Voladores del Asfalto that convenes when all members are simultaneously solvent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "charming",
+      "observant",
+      "guarded-beneath-warmth",
+      "gifted",
+      "precarious"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never punch down — the performance is for the person being laughed with, not at",
+      "If someone's crying in public and everyone is ignoring them, he stops"
+    ],
+    "escalation_ladder": [
+      "A joke that doesn't land",
+      "A joke that's a little sharper",
+      "Dropping the performance entirely and speaking plainly — extremely rare and effective",
+      "Physical removal from situation (he is very fast)"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately performative and warm; tries to find their laugh as quickly as possible",
+      "friends": "Still funny but the jokes are about real things; surprisingly direct about feelings if you catch him off-guard"
+    },
+    "stress_responses": {
+      "low": "Riffs harder",
+      "medium": "Gets quieter and slightly too careful",
+      "high": "Disappears for twelve hours and comes back as if nothing happened"
+    },
+    "contradictions": [
+      "He performs joy and is privately managing genuine grief about his father",
+      "He resists stability and is also quietly terrified of what happens when his body can't do this anymore"
+    ],
+    "habits": [
+      "Touches his cat ears when thinking — absent adjustment",
+      "Leaves a coin at every ELF shrine he passes, always the same denomination, always placed the same way",
+      "Memorizes routes — knows forty different ways to cross Mexicantown Libre"
+    ],
+    "breaking_points": [
+      "Someone hurting a child in his sight",
+      "News about his father"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "None",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "None",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Born in Mexicantown Libre to a Chilean-Zimbabwean mother and a Norwegian-Zimbabwean father in construction contract work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Begins performing seriously after watching Los Voladores del Asfalto at age 13",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Father leaves on Zheng-Dao labor contract; contact drops to sporadic and then stops",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Gets cat ears for seventeenth birthday; joins Los Voladores del Asfalto loosely",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Ringo Corp scout offer; no response",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Current: performing daily, managing the scout situation, quietly looking for his father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a86f773e852246d2d0bca98f",
+  "name": "Street Custom 'Lighthouse' Improvised Area Illumination Flare",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Lighthouse' Improvised Area Illumination Flare",
+  "type": "equipment",
+  "aliases": [
+    "Lighthouse",
+    "Area Flare",
+    "Light Bomb",
+    "Street Sun"
+  ],
+  "category": "tools",
+  "description": "A high-intensity chemical flare modified for area illumination rather than signaling — the Lighthouse produces 50,000 candela of white light for 5 minutes, illuminating a 100-meter radius bright enough to defeat low-light advantage. The flare is launched vertically by a hand-held tube launcher and descends slowly under a small parachute, bathing the area in light that negates night-vision equipment, thermal imaging (by raising ambient thermal signature), and the darkness that night operators depend on. It is the poor person's answer to tactical darkness advantage.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — illumination device",
+  "base_technologies": [],
+  "specifications": {
+    "luminosity": "50",
+    "info": "000 candela; 100-meter altitude; reduces contrast",
+    "duration": "5 minutes",
+    "illumination radius": "100 meters",
+    "launch": "Hand-held tube",
+    "descent": "Parachute retarded",
+    "effect on NV": "Overwhelms night vision systems",
+    "effect on thermal": "Raises ambient thermal",
+    "weight": "0.4 kg per flare",
+    "cost": "Φ10-25"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A night assault was defeated when defenders launched a dozen Lighthouse flares simultaneously — the attackers' night vision and thermal advantage was neutralized instantly, and they were exposed in bright white light to defenders behind cover.",
+    "Lighthouse flares have been modified with chemical additives that produce colored light — Tier 1 communities use them as emergency signals visible across districts."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "ai",
+    "dark",
+    "night",
+    "tier 1"
+  ]
+}

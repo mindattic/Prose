@@ -1,0 +1,219 @@
+{
+  "id": "019d6143a6477fefaefcb418092ec984",
+  "type": "character",
+  "name": "Kweku Babić-Alvarado",
+  "aliases": [
+    "Flip",
+    "the Kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "numbers runner and low-level gang prospect, The Narrows",
+  "age": 17,
+  "status": "active",
+  "location": "The Narrows — works the stretch between the Blackpipe Corridor transit stop and the Gage Circuit market row",
+  "description": "Kweku is seventeen and looks it — still growing into his frame, with Ghanaian-Croatian features and close-cropped natural hair with a dyed orange streak. He moves fast and light, the way kids who grew up in tight corridors move, always slightly angled like he's prepared to redirect. He has geneware cat ears — soft black-and-orange, a birthday mod from his older sister — that perk and flatten with his mood in ways he hasn't learned to control yet. His clothes are Tier 1 practical: durable synthetics, good shoes chosen for speed.\n\nKweku is smart in ways the Narrows rewards and in ways it doesn't. He can memorize a route, a face, a number, and a cover story simultaneously; he reads social dynamics in a room within seconds; he is genuinely funny and likable and uses both as tools before he even realizes he's doing it. What he cannot do yet is see far enough ahead. He thinks about the next run, the next Φ, the next step up — not about what the gang will ask of him when stepping up means something worse than carrying slips. He is not innocent, exactly. He is not yet not-innocent. The window is closing.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "becoming like the older Coppermouth Boys who have stopped thinking about getting out",
+      "letting his grandmother find out what he's actually doing"
+    ],
+    "core_desires": [
+      "enough Quanta to move his grandmother out of the Narrows before her health gets worse",
+      "to be genuinely respected — not feared, respected"
+    ],
+    "coping_mechanisms": [
+      "humor as deflection and social armor",
+      "refusing to think about the future in any specific way"
+    ],
+    "blind_spots": [
+      "the gang's escalating asks feel incremental enough that he adjusts to each one without seeing the cumulative distance he's traveled",
+      "believes his loyalty to his grandmother makes him fundamentally different from the others, which it doesn't"
+    ],
+    "secret": "He memorizes the numbers slips he runs and has been quietly compiling a picture of the Coppermouth operation — not to sell it, just because he can't help himself. He has a notebook at home with three months of routes, figures, and names that would be extremely dangerous if anyone found it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Narrows street vernacular mixed with flashes of surprising vocabulary from his sporadic schooling; code-switches rapidly based on audience",
+    "cadence": "fast and energetic when comfortable, goes very still and quiet when nervous in a way that's completely unlike his baseline",
+    "verbal_tics": [
+      "'Nah but real talk though'",
+      "'That's not — no, that's not how that works'",
+      "his cat ears perk up visibly when he's interested in something, which he's embarrassed by"
+    ],
+    "example_lines": [
+      "'I got places to be, but I can give you like three minutes. What do you actually need?'",
+      "'My nan thinks I'm doing courier work. Which, technically. So that's not even a lie, right? That's not a lie.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "His memorized data notebook has accidentally captured information about something much larger than a street numbers operation — and he doesn't know it yet",
+    "A Coppermouth lieutenant is asking him to graduate to carrying something other than slips; he's looking for any reason not to say yes",
+    "His older sister has figured out what he's doing and is threatening to tell their grandmother — he needs to find a way forward that doesn't collapse his life in multiple directions at once"
+  ],
+  "narrative_function": "Human cost of criminal economy, potential point-of-view character for Narrows life, someone who can be saved or lost depending on how events unfold — moral pressure point",
+  "augmentations": "Geneware cat ears (black with orange tips, cosmetic); no chrome — too young and too broke",
+  "daily_life": "School, technically, in the mornings — attends about half the time. Afternoons and evenings running numbers slips between Coppermouth collection points on his stretch. Eats dinner with his grandmother most nights. Leaves wrapped candy at the cracked transit kiosk on the Blackpipe corner, which he believes has a friendly E.L.F. inside that gives him good luck.",
+  "affiliation": "Prospect-level member of a Narrows street gang called the Coppermouth Boys; no formal rank",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Street Smart",
+      "At the Threshold",
+      "Cat-Eared",
+      "Memorizer",
+      "Grandmother's Boy"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never run slips on the school block — that's the one rule he made for himself and he keeps it",
+      "Don't let anyone see where he lives; the Narrows knows separating home from work is survival"
+    ],
+    "escalation_ladder": [
+      "Deflects with jokes and apparent obliviousness",
+      "Suddenly has somewhere urgently to be",
+      "Runs — literally; he is very fast"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Friendly and readable-as-harmless — this is calculated, mostly, but also just how he is",
+      "friends": "Genuinely warm, takes care of people, organizes things without being asked — naturally slides into logistics roles"
+    },
+    "stress_responses": {
+      "low": "Jokes more frequently and more loudly",
+      "medium": "Goes quiet and starts doing something with his hands — sorting things, organizing",
+      "high": "Disappears. Literally goes to ground in a spot no one knows about — a maintenance crawlspace off the Gage Circuit market"
+    },
+    "contradictions": [
+      "Genuinely cares about his community's people while participating in the economy that exploits them"
+    ],
+    "habits": [
+      "Leaves candy at the Blackpipe kiosk every morning before the first run",
+      "Does a mental route review before sleep — runs every collection point forward and backward in his head like a map"
+    ],
+    "breaking_points": [
+      "Being asked to do something that hurts someone he can specifically see — not an abstraction, a specific person in front of him"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Narrows; father absent, mother deceased in a transit accident when he was four",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moves in with paternal grandmother in the Blackpipe Corridor area",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First contact with Coppermouth Boys — begins as occasional lookout",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Becomes regular numbers runner; receives cat ear geneware as sixteenth birthday gift from sister",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current status — being watched by a Coppermouth lieutenant for potential promotion",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

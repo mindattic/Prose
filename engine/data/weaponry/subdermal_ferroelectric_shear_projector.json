@@ -1,0 +1,54 @@
+{
+  "id": "019d6143ab4c7b7b8d55bf907154fb84",
+  "name": "Subdermal Ferroelectric Shear Projector",
+  "type": "weapon",
+  "aliases": [
+    "SFSP-4",
+    "Cleaver",
+    "The Separator"
+  ],
+  "category": "firearm",
+  "description": "The Subdermal Ferroelectric Shear Projector fires a focused, rapidly alternating ferroelectric field pulse that penetrates the skin and induces mechanical shear stress in ferromagnetic and piezoelectric materials implanted beneath it — specifically the titanium alloy housings, ceramic substrates, and magnetostrictive actuators common in cybernetic implants. The effect on a heavily augmented target is catastrophic: implant housings fracture along stress lines, flexible circuit substrates delaminate, and the physical interface between biological tissue and synthetic components is violently disrupted. On unaugmented targets, the weapon produces a deep bruising sensation and mild muscle spasm, little more.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 3+ / Law enforcement procurement",
+  "legality": "Licensed — civilian ownership prohibited; law enforcement and licensed security use permitted under Augmentation Compliance Framework regulations",
+  "base_technologies": [
+    "Ferroelectric alternating field pulse projection",
+    "Magnetostrictive actuator disruption",
+    "Passive implant-density scanning"
+  ],
+  "specifications": "effective range: 20 meters (full effect), 35 meters (partial effect)\nfield pulse frequency: Variable 50–200 Hz alternating\ncharge levels: Three — Compliance (mild disruption), Suppress (moderate shear), Destroy (catastrophic implant failure)\neffect on unaugmented: Minor — deep tissue vibration, transient muscle spasm\neffect on heavily augmented: Severe — implant structural failure, biological interface disruption, possible internal hemorrhage at implant sites\nweight: 3.8 kg\nshots per cell: 20 at Compliance, 12 at Suppress, 6 at Destroy\nimplant scanner range: 5 meters passive",
+  "tactical_use": "Deployed in augmentation-heavy environments where standard lethal weapons create legal liability but operators anticipate encountering heavily modified targets. The Compliance setting is used for crowd work and initial contact. Suppress is used when a target is actively resisting. Destroy is technically reserved for imminent threat scenarios but has been used in documented incidents under disputed circumstances. Counter-augmentation specialists pair the SFSP-4 with conventional sidearms — the Cleaver disrupts a target's combat implants, and the sidearm handles the follow-up.",
+  "cultural_context": "The SFSP-4 has become the single most politically charged weapon in Meridian 88's current public discourse. For the city's augmented population — which in some districts constitutes a majority — it represents a weapon designed specifically to harm their bodies in ways the law does not fully recognize as assault. 'Cleaver' is used as both a noun and a verb in augmented communities: to be 'Cleavered' means to have your implants damaged by state or corporate force. Ringo Corponation's public affairs team insists the weapon is non-lethal and that documented deaths following SFSP-4 use were caused by pre-existing conditions, not the weapon. This position has not improved their standing.",
+  "known_users": [
+    "Meridian 88 Municipal Compliance Division (contested procurement)",
+    "Ringo Corponation private security",
+    "Anti-augmentation extremist groups (black market units)",
+    "Corporate security in high-augmentation facilities"
+  ],
+  "story_hooks": [
+    "A Ringo Corponation internal memo has leaked suggesting the company knew the SFSP-4's implant scanner had a documented flaw that caused it to register bystanders as primary targets under certain lighting conditions — and shipped the weapon anyway. Someone wants the party to verify the memo's authenticity before it goes to a journalist.",
+    "A member of the party has had their implants damaged by an SFSP-4 hit — not in combat, but in what was supposedly a routine compliance stop. The officer who fired it claims the targeting scanner flagged the character as a high-augmentation threat. The scanner logs have been wiped.",
+    "An augmented community in the labor districts has obtained three SFSP-4 units through unclear means and is planning to use them against Ringo Corponation security during a planned protest action. The party must decide whether to intervene, facilitate, or stay out of it — and who they'll make enemies of either way."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "combat",
+    "death",
+    "augment",
+    "neural",
+    "ai",
+    "synthetic",
+    "corporate",
+    "power",
+    "market",
+    "energy",
+    "fire",
+    "circuit",
+    "tier 3"
+  ]
+}

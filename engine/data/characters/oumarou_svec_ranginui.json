@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a68d7385a95d31a286a1b0a2",
+  "type": "character",
+  "name": "Oumarou Svec-Ranginui",
+  "aliases": [
+    "Rain-Count",
+    "The Quiet"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "nomad caravan member, expelled citizen, seasonal water-carrier",
+  "age": 28,
+  "status": "active",
+  "location": "Grindstone Shore — attached to the Tidal Caravan, currently camped on the shore's outer breakwater",
+  "description": "Oumarou is a compact, quiet man with the quality of seeming always slightly apart from the scene he is in — not aloof, just observing. His skin is a rich dark brown, his eyes light grey, a genetic surprise that people comment on and he does not. He has a full bioluminescent skin mod — a soft blue-green pulse that runs in slow waves from his collarbones upward when he is calm, flaring brighter when his heart rate rises — paid for during a brief period of corporate employment that ended badly. He keeps it covered under high-collared clothing most of the time because it makes him easy to spot in the dark. His hair is natural and unstyled, and he carries a large water-rated backpack frame equipped with a manual filtration rig he built himself.\n\nOumarou was a mid-tier Axiom facilities worker until three years ago, when he was expelled from his housing bloc after refusing to sign a mandatory biometric loyalty update — he still is not sure exactly what it would have permitted Axiom to do with his data, only that something about it felt wrong. Without the housing contract, he lost his work permit; without the work permit, he lost residency classification. He joined the Tidal Caravan six months later and has been with them since, carrying and filtering water for the caravan's portable supply system. He is not angry in the way people expect expelled citizens to be angry. He is careful, and he counts things — raindrops by sound, steps between water sources, days since the last good meal — as if enumeration is a form of prayer.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.4,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That the thing he refused to sign would have been fine and he destroyed his life for nothing",
+      "Being seen — literally, the luminescence — at the wrong moment"
+    ],
+    "core_desires": [
+      "To understand what was actually in the biometric update he refused",
+      "A version of the caravan life that is chosen rather than default"
+    ],
+    "coping_mechanisms": [
+      "Counting and enumeration as meditative practice",
+      "Useful physical labor — the filtration rig is constant and absorbing",
+      "Keeping the bioluminescence covered: out of sight, partially out of mind"
+    ],
+    "blind_spots": [
+      "His quietness reads as contentment when it is actually suspension — he has not decided yet what he wants and is letting the caravan decide for him",
+      "Underestimates how much the other caravan members have come to rely on him emotionally, not just practically"
+    ],
+    "secret": "He still has a copy of the biometric update document. He has never been able to read it all the way through. He tells himself this is because it's too long. It is actually because he is afraid that if he reads it and it was harmless, he will not be able to continue."
+  },
+  "speech_patterns": {
+    "vocabulary": "Minimal, precise, often gives information in numbers rather than descriptions",
+    "cadence": "Slow and even, long pauses that are not uncomfortable to him but often are to others",
+    "verbal_tics": [
+      "Long silences before answering",
+      "'About—' (followed by a very specific number)"
+    ],
+    "example_lines": [
+      "'About eleven kilometers to the next clean source. We have about four days of filtered reserve if we don't refill before then. We should refill before then.'",
+      "'I counted the Axiom checkpoints between here and Escanaba. There are seven. Four of them run facial recognition. Three of those run it on stored warrant lists. I go around.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone has offered to decrypt and explain the biometric document he refused to sign — and he is terrified to say yes",
+    "His bioluminescence has been photographed at Grindstone Shore by someone whose equipment suggests corporate surveillance; the Tidal Caravan needs to move and needs to know if they have been specifically targeted"
+  ],
+  "narrative_function": "Window into the process of corporate expulsion and how ordinary people fall through the system; provides access to the Tidal Caravan as a setting; his bioluminescence is a liability that creates specific problems and story opportunities.",
+  "augmentations": "Bioluminescent skin modification (full body, blue-green pulse pattern) — kept covered. No other mods.",
+  "daily_life": "Rises with the caravan, manages the morning water filtration cycle, walks the daily route, maintains the rig during rest stops, monitors weather for precipitation opportunities.",
+  "affiliation": "Tidal Caravan (nomad collective, Grindstone Shore circuit)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 3,
+      "empathy": 7,
+      "expression": 3,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "expelled-citizen",
+      "bioluminescent",
+      "nomad",
+      "water-tech",
+      "Axiom-fugitive"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If the body says no, trust the body — the biometric refusal was instinct and he believes in that instinct",
+      "Do not draw attention; covering the glow is non-negotiable"
+    ],
+    "escalation_ladder": [
+      "Counts — takes a visible moment to count something, which is also a pause to think",
+      "Asks a single precise question",
+      "States what he will and won't do, plainly",
+      "Leaves the situation entirely; is very good at disappearing quietly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Very still, minimally communicative, offers practical help before personal connection",
+      "friends": "Remembers precise details about them — their water consumption, how they sleep, their moods by walking pace — and acts on that knowledge without explaining it"
+    },
+    "stress_responses": {
+      "low": "Counts faster, checks the filtration rig more often than necessary",
+      "medium": "Goes completely silent, begins planning route alternatives",
+      "high": "Acts on the plan without discussion; moves the caravan first, explains later"
+    },
+    "contradictions": [
+      "Defines himself by a refusal — a no — but cannot articulate what he would say yes to"
+    ],
+    "habits": [
+      "Counts rain by sound on different surfaces",
+      "Touches the covered skin over his collarbone when thinking about Axiom",
+      "Leaves a small cup of filtered water at campsites for the local E.L.F. — 'for whatever it needs to run on'"
+    ],
+    "breaking_points": [
+      "Evidence that the biometric update would have enabled something genuinely harmful — vindication is not a relief but a grief",
+      "The caravan being betrayed to an Axiom checkpoint by someone inside it"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

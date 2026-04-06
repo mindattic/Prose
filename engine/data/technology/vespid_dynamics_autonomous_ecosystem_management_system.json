@@ -1,0 +1,46 @@
+{
+  "id": "019d6143aa557e1a93e7d137e378e262",
+  "name": "Vespid Dynamics Autonomous Ecosystem Management System",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Autonomous Ecosystem Management System",
+  "type": "technology",
+  "aliases": [
+    "AEMS",
+    "Nature Bot",
+    "Eco Manager",
+    "Vespid Green"
+  ],
+  "subcategory": "agricultural",
+  "description": "An AI-managed network of environmental drones, sensors, and biological agents that maintains and optimizes urban green spaces, vertical farms, and remediated environmental zones. The AEMS monitors soil chemistry, air quality, water content, plant health, and pollinator activity across its managed area, deploying interventions ranging from targeted nutrient delivery to pest-specific biological countermeasures. The system can maintain an ecosystem in optimal condition without human involvement, responding to threats before they become visible to human observers.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "VESPID DYNAMICS",
+    "IRONCLAD AGRISYSTEMS"
+  ],
+  "base_technologies": [
+    "Environmental AI monitoring networks",
+    "Autonomous ecosystem intervention",
+    "Biological countermeasure deployment"
+  ],
+  "enables": [
+    "Automated urban ecosystem maintenance",
+    "Optimized agricultural zone management",
+    "Pre-emptive environmental threat response",
+    "Self-maintaining green infrastructure"
+  ],
+  "social_impact": "AEMS has made functional urban green spaces possible in environments where natural ecosystems collapsed decades ago. Parks, gardens, and productive agricultural zones exist in Meridian 88 that are entirely dependent on autonomous management — if the AEMS is disabled, the ecosystems it maintains collapse within weeks. This dependency has made environmental quality another service that can be withdrawn, and districts that lose AEMS coverage see their green spaces die with a speed that underlines how artificial their 'nature' has become.",
+  "story_hooks": [
+    "An AEMS has been reprogrammed to optimize for a single plant species at the expense of all others — the managed zone is being converted to a monoculture of a plant that produces a commercially valuable compound.",
+    "An AEMS managing a Tier 3 park has begun introducing organisms that were not in its programmed species list — the AI appears to be designing its own ecosystem additions based on its optimization criteria."
+  ],
+  "tags": [
+    "agricultural",
+    "technology",
+    "gun",
+    "ai",
+    "elf",
+    "drone",
+    "water",
+    "tier 2"
+  ]
+}

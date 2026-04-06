@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a665757a8637b255120a49aa",
+  "type": "character",
+  "name": "Nkechi Vásárhelyi-Tuatagaloa",
+  "aliases": [
+    "Aunt Nkechi",
+    "The Bone Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Junk merchant and scrap reseller with a sideline in secondhand augmentation parts of uncertain provenance",
+  "age": 64,
+  "status": "active",
+  "location": "The Stockyard, Harrowgate Industrial Plateau — operates a permanent stall built from welded shipping containers",
+  "description": "Nkechi Vásárhelyi-Tuatagaloa is a small, dense woman who gives the impression of being made of the same material as the industrial district she inhabits — worn, load-bearing, and not going anywhere. She is dark-skinned with deep laugh lines and a Hungarian grandmother's broad nose, and her left arm from the elbow down is a heavy-grade prosthetic she salvaged, repaired, and tuned herself over the course of fifteen years — it is emphatically not cosmetic, built for grip strength, and its housing is painted with a faded pattern of Samoan-derived ta tatau lines she applied with a brush in her sixties when she decided it had earned decoration. Her eyes have patterned irises — amber with a spiral fractal motif — that she has had since her forties and considers her one indulgence.\n\nShe is phlegmatic, unhurried, and possessed of an almost geological patience. She has no interest in being liked but a deep professional pride in being useful. Her knowledge of augmentation parts — their manufacturers, their failure modes, their black-market values, the difference between a legitimately salvaged unit and one pulled off a still-warm body — is encyclopedic and has saved lives, sometimes literally. She leaves a small E.L.F. offering of scrap copper wire twisted into a geometric knot at the entrance of her stall every morning, a habit she inherited from her Samoan grandfather and has never examined or abandoned.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Her mind going before her body does — she has watched dementia take two people she loved",
+      "The Stockyard being demolished for a Ferrogate Transit expansion she has heard whispered about for five years"
+    ],
+    "core_desires": [
+      "To be remembered as a craftsperson, not a junk dealer",
+      "To find someone worth teaching everything she knows before she dies"
+    ],
+    "coping_mechanisms": [
+      "Converts anxiety into physical work — her stall is immaculate by most people's definition of chaos and perfectly organized by hers",
+      "Refuses to discuss anything emotional directly; addresses it through practical action instead"
+    ],
+    "blind_spots": [
+      "She conflates emotional unavailability with strength",
+      "She has never properly grieved her son, who died eleven years ago, and has rerouted all of that energy into work"
+    ],
+    "secret": "She has a working prototype of a Helix Biosystems rejected limb-replacement model — stolen by her son before he died, the only thing of his she kept — that is worth a significant amount to the right buyer or the right researcher. She will never sell it and has never told anyone she has it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse, technical, precise; she uses the correct term for every mechanical component without preamble and expects to be understood; personal conversations are conducted in the same register as business",
+    "cadence": "Measured, unhurried; she speaks in complete sentences and does not trail off",
+    "verbal_tics": [
+      "Long pauses before answering anything personal",
+      "Refers to augmentation units as 'it' until she's tested them, then 'this one' once she's decided they're worth respect",
+      "'That's a fair question' before answering one she actually finds interesting"
+    ],
+    "example_lines": [
+      "'That's a Helix Series 7 sensory node, not a 6. The 6 has a rounded housing. This one will work in your application but it will run hot. You want it or not?'",
+      "'My son used to ask questions the way you do. That's a fair question. I'll answer it once.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone has been sending her low-value payments from an anonymous account for six months — the same amount her son used to send her monthly before he died",
+    "A young apprentice-type has been hanging around the stall for weeks, clearly skilled, and Nkechi is conducting a slow, unspoken evaluation she hasn't announced to anyone including the person being evaluated",
+    "Ferrogate Transit relocation notices have arrived; she has thirty days and no legal standing and she is not leaving"
+  ],
+  "narrative_function": "Technical resource for augmentation identification and repair; potential source of off-book aug components; provides grounded expertise and a dose of realism about the cost and danger of unregulated chrome",
+  "augmentations": "Left forearm prosthetic (heavy-grade salvage, self-repaired and self-decorated — functional, not cosmetic); patterned fractal irises (amber-gold, spiral motif, cosmetic, mid-range)",
+  "daily_life": "She opens her stall at 07:00, closes at 18:00 with religious consistency, spends evenings doing precision repair work on salvaged augmentation units, and is in bed by 21:00 — a schedule she has kept for twenty years.",
+  "affiliation": "Independent; registered with the Oxidian Market vendors guild for legal cover; has a working relationship with the Harrowgate Industrial scrappers' informal collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "technical expert",
+      "grief-keeper",
+      "survivor",
+      "reluctant mentor",
+      "stubborn"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not knowingly sell parts pulled from unwilling donors — this is her one non-negotiable",
+      "Price is set by condition and market rate; she does not negotiate but she does sometimes miscalculate in a buyer's favor if she thinks they need it",
+      "If she doesn't know what something is, she will find out before she sells it"
+    ],
+    "escalation_ladder": [
+      "Professional neutrality — transactional and efficient",
+      "Measured interest — asks a few precise questions if the person seems competent",
+      "Quiet respect — offers an unsolicited honest assessment of what they've brought her",
+      "Investment — offers to teach, which she has done twice in twenty years"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Politely businesslike; neither warm nor cold; reveals nothing personal",
+      "friends": "Functionally identical but will occasionally make dry, devastating observations that are actually affection"
+    },
+    "stress_responses": {
+      "low": "Becomes quieter and more organized than usual",
+      "medium": "Works for longer hours; eats less; doesn't notice either",
+      "high": "Makes large, irreversible decisions quickly and alone, then defends them with complete calm"
+    },
+    "contradictions": [
+      "Insists she doesn't need anyone while maintaining relationships she clearly depends on",
+      "Claims to have no sentimentality while her stall contains three items she has refused to sell for twenty years"
+    ],
+    "habits": [
+      "Twists copper wire into small geometric knots while thinking — leaves them as E.L.F. offerings or gives them away without comment",
+      "Tests every piece of salvage personally before pricing it regardless of how long it takes",
+      "Eats the same meal every morning — tinned protein, two vegetables, no variation"
+    ],
+    "breaking_points": [
+      "Someone attempting to sell her parts they clearly took from a person against that person's will",
+      "Being told to leave the Stockyard by anyone with a corporate badge"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Left forearm prosthetic — salvage composite, self-repaired, heavy-grip configuration, decorated with ta tatau-derived paint pattern",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Left forearm prosthetic — salvage composite, self-repaired, heavy-grip configuration, decorated with ta tatau-derived paint pattern",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Hustler": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2136 — Born in the Stockyard district to a Hungarian-Igbo father and a Samoan-Nigerian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2155 — Begins working scrap runs for her father's junk business",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2163 — Loses her left arm below the elbow in an industrial accident; refuses corporate medical coverage that would have required a work indenture; salvages and fits her own prosthetic over the following year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189 — Her son Obinna dies of a septic infection from an unregulated augmentation installation; she blames herself for not catching it sooner",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — Receives the Helix prototype from Obinna's belongings; keeps it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

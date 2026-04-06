@@ -1,0 +1,52 @@
+{
+  "id": "019d6143a9e1782b8c0f281a1a759a23",
+  "name": "Ossian-B",
+  "brand_name": "Ossian",
+  "product_name": "Ossian-B",
+  "type": "substrate",
+  "aliases": [
+    "bone-nanotube",
+    "ossian",
+    "living carbon"
+  ],
+  "category": "nano_material",
+  "description": "Ossian-B is BioForge Labs' flagship CNT-organic hybrid substrate, produced by functionalizing single-wall carbon nanotubes with hydroxyapatite and collagen-analog proteins that trigger osteoblast adhesion and guided bone remodeling. When implanted adjacent to living bone, the material acts as a scaffold that the body progressively integrates — over six to eighteen months, host tissue grows into and through the CNT matrix, creating a true bone-nanotube composite stronger than either component alone. It is the foundational material for next-generation augment anchoring systems.",
+  "properties": [
+    "biocompatible",
+    "osseointegration_capable",
+    "high_compressive_strength",
+    "load_bearing",
+    "bioresorbable_scaffold",
+    "infection_resistant",
+    "MRI_compatible"
+  ],
+  "developers": [
+    "BioForge Labs",
+    "licensed to several licensed augment manufacturers"
+  ],
+  "applications": [
+    "augment skeletal anchor points",
+    "bone fracture repair scaffolds",
+    "load-bearing prosthetic interfaces",
+    "spinal reinforcement implants",
+    "dental implant foundations"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 9,800 per cubic centimeter",
+  "story_hooks": [
+    "A batch of counterfeit Ossian-B is circulating in Shelf-level chop shops — it looks identical but lacks the functionalization chemistry, meaning implants will fail to integrate and will eventually loosen catastrophically.",
+    "Someone has discovered that fully integrated Ossian-B implants can be tracked via a subtle electromagnetic signature — every person with the material in their body is a beacon.",
+    "BioForge Labs' osseointegration formula is the subject of a patent dispute; a smaller biotech claims the functionalizing chemistry was stolen from their research, and they have documentation."
+  ],
+  "tags": [
+    "nanomaterial",
+    "substrate",
+    "augment",
+    "prosthetic",
+    "ai",
+    "elf",
+    "shelf",
+    "tier 3",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "019d6143a6e17e78b6d8fc7128b9779e",
+  "type": "character",
+  "name": "Sunniva Ekwensi-Parata",
+  "aliases": [
+    "Niv",
+    "The Neon Needle"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Neon artist and street-level sign fabricator",
+  "age": 22,
+  "status": "active",
+  "location": "Lakeview Neon district, shares a ground-floor studio-shopfront on Volta Row",
+  "description": "Sunniva is angular and restless, with light brown skin, a shaved head, and a constellation of small cosmetic implants along their jawline that glow faint gold when they are excited or nervous — which is often. Their fingers are perpetually scored with minor burns from glass tube work, and they favor patched workwear in colors they have personally dyed using neon gas byproduct residue, which gives their clothes an inexplicable faint shimmer. They are in near-constant motion, touching things, testing things, talking rapidly.\n\nThey came to Lakeview Neon at nineteen with no money and a portfolio of gas-tube sketches done in a Brightmoor Reclamation squat, and they hustled their way into a shared studio through sheer relentless presence. Now they fabricate custom neon signage for small businesses and underground venues during the day to cover costs, and at night they install unsanctioned neon pieces across the district's exterior walls — abstract work, dense with personal iconography, that has begun attracting serious attention from the art corridor crowd. They are genuinely thrilled by this and also terrified of what it might mean.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.9,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being absorbed into the commercial art world and becoming decorative",
+      "That their work is good because they are hungry and will become mediocre when comfortable"
+    ],
+    "core_desires": [
+      "Recognition from the people in the streets, not galleries",
+      "To one day do a permanent installation large enough to be seen from the lake"
+    ],
+    "coping_mechanisms": [
+      "Fills anxiety with physical making — glass work is meditative under pressure",
+      "Talks to the E.L.F. they believe inhabits the main transformer in the studio"
+    ],
+    "blind_spots": [
+      "Mistakes everyone's enthusiasm for solidarity; slow to recognize opportunists",
+      "Undervalues their commercial work as lesser even though it shows real technical mastery"
+    ],
+    "secret": "The E.L.F. they talk to in the transformer — they have started to receive what feel like replies. Not words, but power fluctuations that correspond too precisely to be random. They haven't told anyone because they think it will sound unstable."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, colloquial, full of technical neon and electrical terms dropped casually into personal conversations",
+    "cadence": "Rapid, often mid-sentence pivots, finishes other people's sentences incorrectly but enthusiastically",
+    "verbal_tics": [
+      "'Right? Right.'",
+      "Starts sentences with 'Okay so—'",
+      "Uses 'gorgeous' to describe structural or technical solutions"
+    ],
+    "example_lines": [
+      "'Okay so the pink is a neon-argon mix at 12 milliamps and it reads as skin from fifteen meters away, which is gorgeous, right? Right.'",
+      "'I left an offering — seventeen seconds of uncompressed frequency data — and the transformer did the thing again. Three blinks. Same as last time.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of their unsanctioned nighttime installations inadvertently covered the tag of a very old and very territorial graffiti crew who are now looking for them.",
+    "A Palladian corporate art scout has been photographing their street work and has offered a contract that would technically give Palladian reproduction rights to everything they have ever made."
+  ],
+  "narrative_function": "Local color and scene atmosphere; information source on the Lakeview Neon district and underground venue networks; potential person-in-need for city code enforcement storylines",
+  "augmentations": "Cosmetic gold-bioluminescent subdermal jaw implants (reactive to emotion); minor heat-resistance dermal layer on fingertips (practical mod for glass work)",
+  "daily_life": "Days are shop work — client consultations, tube bending, gas fills, installations; nights belong to their own work, often not sleeping until three or four in the morning, leaving new pieces on walls that weren't there at midnight.",
+  "affiliation": "Loosely affiliated with the Lakeview Neon artisan cooperative; no formal collective membership",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -3,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Energetic",
+      "Gifted",
+      "Naive",
+      "Driven",
+      "Street-level"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Say yes first, figure out the logistics second",
+      "Never cover another artist's existing work without asking"
+    ],
+    "escalation_ladder": [
+      "Talks faster and louder when threatened",
+      "Physically puts themselves between their work and anyone trying to damage it",
+      "Calls in every favor from the cooperative simultaneously"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and slightly overwhelming; treats everyone as a potential collaborator",
+      "friends": "Completely porous — overshares, borrows tools without asking, shows up at odd hours with food"
+    },
+    "stress_responses": {
+      "low": "Bends glass tubes even when there is no commission — the motion is calming",
+      "medium": "Talks constantly, filling silence with technical detail",
+      "high": "Goes completely silent and disappears into a long solo installation run, sometimes all night"
+    },
+    "contradictions": [
+      "Despises commercial co-optation but is genuinely excited every time a business client loves their work"
+    ],
+    "habits": [
+      "Always has at least one unlit glass tube in a jacket pocket",
+      "Photographs every piece they make on a physical camera with chemical film"
+    ],
+    "breaking_points": [
+      "Someone destroying a finished piece — not tagging over it, actively breaking it"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9,
+    "Romantic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

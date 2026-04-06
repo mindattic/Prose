@@ -1,0 +1,70 @@
+{
+  "id": "019d6143a88372f7bbabeaa87549c8a3",
+  "name": "Zheng-Dao Bioelectric Galvanic Carapace Shell",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Galvanic Carapace Shell",
+  "type": "equipment",
+  "aliases": [
+    "The Eel Suit",
+    "Shock Skin",
+    "Galvanic Shell",
+    "ZD-Carapace"
+  ],
+  "category": "armor",
+  "description": "The Galvanic Carapace Shell is a reactive body armor system developed by Zheng-Dao Bioelectric that integrates a layered bioelectric charge matrix beneath a semi-rigid ceramic composite exterior. When the outer shell absorbs kinetic or thermal impact, piezoelectric transducers convert the energy into a directed galvanic discharge across the armor's surface, creating a localized electric shock field that punishes close-contact attackers and disrupts electronic targeting systems in immediate proximity. The charge cycles reset within 1.4 seconds under normal load, providing near-continuous deterrence against melee engagement.\n\nWhat distinguishes the Carapace Shell from conventional reactive plating is its symbiotic relationship with the wearer's own bioelectric field. Zheng-Dao's proprietary Dermosync calibration layer reads the operator's skin conductivity and autonomic nervous responses, adjusting discharge thresholds to avoid self-harm during perspiration or stress. The outer shell itself has a faintly iridescent, oil-slick finish caused by the conductive polymer mesh just beneath the surface coating — a visual signature that experienced street operators recognize immediately.\n\nPrimarily adopted by corporate security details operating in close-quarters environments such as server vaults, executive transit corridors, and bioresearch facilities, the Carapace Shell has also found significant uptake among mid-tier gang enforcers who acquire surplus units through gray-market channels. It is considered both practical armor and a status symbol in certain criminal strata — wearing one signals that you've survived enough encounters to afford real protection.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Piezoelectric transduction matrix",
+    "Dermosync bioelectric calibration",
+    "Conductive polymer mesh laminate",
+    "Ceramic composite impact shell",
+    "Galvanic discharge cycling"
+  ],
+  "specifications": {
+    "weight_kg": "8.4",
+    "coverage": "Torso, shoulders, upper arms",
+    "discharge_voltage": "Up to 4,200V surface pulse",
+    "reset_cycle_seconds": "1.4",
+    "impact_resistance_rating": "NIJ Level IIIA equivalent",
+    "battery_life_hours": "14",
+    "operating_temperature_range_c": "-10 to +55",
+    "self_harm_threshold_override": "Dermosync auto-cutoff below 800V at skin contact"
+  },
+  "tactical_use": "Operators wearing the Galvanic Carapace Shell are trained to invite close engagement, allowing the reactive discharge to disable or deter melee combatants. The shell's electronic disruption field also creates a 0.8-meter interference bubble that degrades drone micro-guidance systems and wireless detonation signals, making it valuable in breaching scenarios. Security teams often pair it with non-conductive gloves and boots to avoid grounding the discharge.",
+  "cultural_context": "In Meridian 88's corporate security culture, the Galvanic Carapace Shell is shorthand for 'serious money and serious threat.' Wearing one in a negotiation context is considered an implicit statement of intent. Among street-level operators, a scuffed or partially repaired Carapace Shell — the iridescent finish scratched and dulled from use — is worn as a badge of survival. Zheng-Dao has leaned into this, releasing a limited 'Field-Worn' aesthetic finish that mimics battle damage.",
+  "known_users": [
+    "Zheng-Dao corporate enforcement cadres",
+    "Mid-tier syndicate enforcers",
+    "Black site facility security personnel",
+    "Freelance close-protection operators",
+    "Kael Morrow (rumored — Dockside Faction lieutenant)"
+  ],
+  "story_hooks": [
+    "A batch of Galvanic Carapace Shells with a faulty Dermosync calibration layer has been sold on the black market — wearers are suffering cardiac events during high-stress situations.",
+    "A Zheng-Dao whistleblower claims the Dermosync layer is transmitting biometric data back to corporate servers, allowing the company to track and physiologically profile every registered user.",
+    "A gang war has erupted in the Meridian 88 industrial district because one faction suddenly acquired a shipment of Carapace Shells, fundamentally shifting the balance of power in close-quarters territory disputes.",
+    "The players need to retrieve a Carapace Shell from a deceased corporate agent — but the Dermosync layer has locked to the dead wearer's biometric profile and is cycling random discharges."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "combat",
+    "war",
+    "gang",
+    "love",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "money",
+    "market",
+    "rain",
+    "train",
+    "survival",
+    "drone",
+    "energy",
+    "tier 2"
+  ]
+}

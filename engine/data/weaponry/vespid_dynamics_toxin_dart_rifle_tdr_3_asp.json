@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab5c7c83ae396c9e7adf6b50",
+  "name": "Vespid Dynamics Toxin Dart Rifle TDR-3 'Asp'",
+  "type": "weapon",
+  "aliases": [
+    "Asp",
+    "TDR-3",
+    "Venom Rifle",
+    "Quiet Death"
+  ],
+  "category": "rifle",
+  "description": "A suppressed pneumatic rifle firing hollow-point darts loaded with selectable toxin payloads. The TDR-3 operates on compressed gas propulsion, producing no muzzle flash and minimal acoustic signature — the loudest component is the dart's impact. Vespid supplies a range of toxin capsules from incapacitant to lethal, color-coded and loaded into the dart's reservoir chamber before firing. The weapon has become the preferred tool of corporate assassination teams who need deniable, quiet elimination at medium range.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — chemical weapon delivery system",
+  "base_technologies": [
+    "Pneumatic suppressed propulsion",
+    "Modular toxin payload delivery",
+    "Thermal-integrated optics"
+  ],
+  "specifications": "propulsion: Compressed nitrogen, 180 m/s dart velocity\neffective range: 15-80 meters\nmagazine: 5-dart rotary chamber\nacoustic signature: 38 dB at 1 meter\ntoxin options: Incapacitant (blue), paralytic (yellow), lethal (red), tracer compound (green)\nweight: 2.8 kg with optic\noptics: Integrated 4x thermal with wind compensation",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A series of apparently natural deaths among mid-tier corporate managers has been linked by a single commonality — trace compounds consistent with TDR-3 green tracer darts found in their bloodwork.",
+    "A Vespid insider is selling a new toxin capsule on the black market that induces permanent memory loss of the preceding 72 hours — perfect for witnesses."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "rifle",
+    "weapon",
+    "loss",
+    "death",
+    "memory",
+    "corporate",
+    "market",
+    "tier 4"
+  ]
+}

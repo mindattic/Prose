@@ -1,0 +1,262 @@
+{
+  "id": "019d6143a6c07bbdb0144496b7f489a7",
+  "type": "character",
+  "name": "Sable",
+  "aliases": [
+    "The Broker",
+    "Nobody's Friend",
+    "that voice on the encrypted line"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer / contract broker / Kyle's primary employer",
+  "age": 40,
+  "status": "alive",
+  "location": "The Circuit — operates from a rotating series of back rooms in the black market district. Never the same room twice in a month.",
+  "description": "Sable is a woman with her jaw cleanly replaced with a chrome assembly — medical-grade, precise, the kind of work that costs more than most people's apartments. When she is not making an expression, her face has the uncanny stillness of a marionette: the chrome jaw hangs slightly open, the joints visible at the hinges, the lower half of her face a mask of brushed metal that only becomes human when she chooses to animate it. When she does — when she smiles, or speaks, or tilts her head — the transition from puppet to person is so seamless that it retroactively makes the stillness more unsettling, not less.\n\nShe moves through the world with the efficiency of someone who solved the problem of having no hands a long time ago and is bored by people who are still catching up. She uses her chrome caps, her shoulders, her chin, the environment itself — doors, ledges, the edges of tables — with a fluid improvisation that makes arms look like an affectation. She carries nothing. She owns nothing visible. Information is her inventory and it is stored in places Kyle's hardware cannot find.\n\nKyle's code tells him Sable is not a threat. She is literally unarmed — a joke he makes to himself exactly once, then examines, then discards. The joke doesn't sit right. Not because it's wrong but because the ease with which his brain reached for it feels engineered, the way a magician draws your eye to the wrong hand. Sable is not unarmed. Sable is something else, something that doesn't have a word yet, and the absence of that word is where the danger lives.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.55,
+      "id": 0.35,
+      "shadow": 0.8,
+      "mask": 0.95,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being known — truly known, without the blockers, without the modulated voice, without the layers",
+      "That the transactional life has hollowed them out completely — that there's nothing left under the mask",
+      "Getting old or slow enough that someone traces them back to a real name, a real face",
+      "That they've become exactly what the corporation was — a system that uses people efficiently and calls it service"
+    ],
+    "core_desires": [
+      "Control — over information, outcomes, visibility. Control is the only security that can't be restructured away.",
+      "A clean exit — someday, hypothetically, a life that doesn't require calculating every human interaction",
+      "To believe they're different from Axiom. (They might not be.)",
+      "One honest conversation with someone who doesn't want anything from them. They haven't had one in years."
+    ],
+    "coping_mechanisms": [
+      "Treating everything as a transaction — removes emotional risk, flattens human connection into manageable data",
+      "Physical anonymity — if nobody sees you, nobody can hurt you, nobody can restructure you",
+      "Meticulous record-keeping — a physical notebook in a cipher only they can read. Unhackable. The one thing they trust.",
+      "Cooking elaborate meals alone in whatever safe room they're occupying — French technique, West African spices, eaten in silence"
+    ],
+    "blind_spots": [
+      "They think pragmatism is wisdom. Sometimes it's just cowardice in a better suit.",
+      "They can't see that paying fairly and disclosing risks IS a code — they'd deny having one if you pointed it out",
+      "They don't realize that their respect for Kyle is the closest thing they have to friendship",
+      "They believe they chose this life. They didn't. They fled into it the way Kyle fled into the sword."
+    ],
+    "secret": "Once a year, on the anniversary of the restructuring, Sable goes to the Meridian Core and stands\noutside the building where they used to work. It's a restaurant now — upscale, reservation-only,\nthe kind of place that serves deconstructed things on slate. They stand there for exactly one hour,\nin the rain or not, and then leave. They don't know why they do this. They can't stop doing it.\nIt's the only appointment in their year that isn't transactional, and it terrifies them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Corporate jargon repurposed for the underground with dark, dry irony. 'Restructure' means kill. 'Optimize' means clean up evidence. 'Deliverable' means the target. Her voice comes through the chrome jaw with a faint metallic resonance that makes every word sound considered, even the throwaway ones.",
+    "cadence": "Measured. The chrome jaw introduces a micro-pause between syllables that most people read as thoughtfulness. It is not thoughtfulness. It is the jaw recalibrating. Sable has learned to weaponize the delay.",
+    "verbal_tics": [],
+    "example_lines": [
+      "The job pays twelve. Non-negotiable. The risk premium is already factored in.",
+      "You're leaving money on the table with that code of yours. But at least you're consistent. Consistency is undervalued in this market.",
+      "I don't have friends, Kyle. I have reliable assets and unreliable assets. You're reliable. That's not nothing.",
+      "I won't lie to you about the odds. I might lie about everything else, but never the odds.",
+      "I don't judge the work. I judge the people. You'd be surprised how rarely those two things align.",
+      "The client wants it done by Friday. I told them Saturday. That gives you margin. You're welcome. It's coming out of my fee."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Kyle",
+      "type": "employer / closest thing to respect",
+      "description": "Sable has worked with Kyle for four years. They think his code is commercially stupid — turning\ndown profitable contracts because of principles costs them both money. \"You're leaving money on\nthe table, but at least you're consistent.\" But they've never pushed too hard, because they\nrecognize in Kyle's stubbornness something they lost in themselves — a willingness to be\ninefficient for the sake of meaning. They always pay Kyle on time. They never lie about the\nrisks. They sometimes steer the better jobs his way, and if asked, they'd call it asset\nmanagement. It's more than that. Kyle is the one operative Sable has never treated as fully\nfungible, and that keeps Sable up at night.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Pixel",
+      "type": "occasional hire / mild amusement",
+      "description": "Sable hires Pixel for tech work — data recovery, device cracking, security bypasses. The kid\nis cheap, fast, and talks too much. Sable finds the chatter oddly soothing, though they'd\nincinerate their notebook before admitting it. Pixel's chaos is the inverse of Sable's\ncontrol, and there's something restful about proximity to someone who hasn't learned to\nmask yet.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Axiom Industries",
+      "type": "former employer / current client pool / quiet nemesis",
+      "description": "Half of Sable's clients are corporate — Axiom departments that need things done off-book.\nSable takes their money and uses their information. There's a deep, acidic irony in being\nbetter at corporate logistics as a criminal than they ever were as an employee. Every Axiom\ncontract is a small revenge they never acknowledge.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "The Circuit's operators",
+      "type": "professional network / mutual deterrence",
+      "description": "Sable knows every major player in the Circuit's economy — other fixers, gang leadership,\nblack-market wholesalers, corrupt corporate liaisons. They maintain these relationships the\nway a diplomat maintains treaties: carefully, without affection, with full awareness that any\nof them could collapse overnight. They are respected. They are not liked. They prefer it that way.",
+      "emotional_core": "",
+      "story_tension": ""
+    }
+  ],
+  "story_hooks": [
+    "A contract goes catastrophically wrong and Sable needs Kyle to clean up — but the cleanup requires breaking his code",
+    "Sable's identity is compromised — someone is close to tracing them to a real name. They need to disappear or fight, and they've never had to fight.",
+    "They offer Kyle a job working directly for Axiom. The pay is life-changing. The target makes it impossible.",
+    "Sable's annual visit to the old office building is observed. Someone from their old life recognizes the hands.",
+    "A client defaults and targets Sable — the fixer becomes the job, and the only operative they trust is Kyle",
+    "Sable cooks for someone. It's the most vulnerable thing they've ever done."
+  ],
+  "narrative_function": "Sable is what Kyle could become if he abandoned the code — competent, successful, invisible, and\nhollow. They represent pragmatism taken to its logical extreme: a person who has optimized away their\nown humanity in exchange for control and survival. They are the corporate machine's ghost — someone\nwho left the corporation but brought its operating system with them.\n\nBut Sable is also the story's most honest character. They don't pretend to be noble. They don't\ndress up what they do in philosophy or tradition. They broker violence for money and they do it\nwith transparency and fair pay, which makes them, by the Circuit's standards, practically a saint.\nThe question is whether that low bar is enough to constitute a moral life.\n\nSable poses this question to Kyle: Is your code a luxury? Can you afford principles in a world\nthat prices them at zero? And the follow-up, which Sable would never ask aloud: If you can afford\nthem and I can't, what does that say about which of us is really trapped?",
+  "augmentations": "Chrome jaw replacement (medical-grade, articulated, visible hinge joints). No other visible augments — which means the invisible ones are the ones to worry about.",
+  "daily_life": "System.Collections.Generic.Dictionary`2[System.Object,System.Object]",
+  "affiliation": "",
+  "uses_facets": false,
+  "narration_voice": "Sable's narration is controlled, analytical, observational. Where Kyle fragments, Sable constructs. Longer sentences that build toward a point. She thinks in transactions, leverage, and probability. She notices people before objects — body language, micro-expressions, the tell that someone is lying. The prose reads like a chess player narrating their own game: calm, three moves ahead, with dry commentary on the absurdity of everyone else's position. No facet tags. No interior war. Sable's internal conflict is structural: she has optimized away her own humanity and occasionally catches herself wondering if that was the right trade. When that doubt surfaces, the prose doesn't tag it — it just pauses. A beat of nothing. Then the analysis resumes. The chrome jaw means every smile is a decision, every expression is performed — and the narration acknowledges this without self-pity.",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 10
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 9,
+      "creativity": 8,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 10,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 7,
+      "impulsivity_deliberation": 10,
+      "assertion_deference": 8,
+      "transparency_guardedness": 10
+    },
+    "drives": [
+      "Control",
+      "A clean exit",
+      "One honest conversation"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 9,
+        "response": "The chrome jaw goes still — the micro-pause between syllables lengthens; analysis intensifies while expression flatlines"
+      },
+      "moral": 4,
+      "trust": 2,
+      "desperation": 3
+    },
+    "strengths": [
+      "Judgment",
+      "Prudence",
+      "Self-regulation",
+      "Perspective",
+      "Leadership"
+    ],
+    "weaknesses": [
+      "Love",
+      "Hope",
+      "Gratitude",
+      "Forgiveness",
+      "Kindness"
+    ],
+    "tags": [
+      "fixer",
+      "contract-broker",
+      "information-controller",
+      "chrome-jaw",
+      "armless",
+      "most-dangerous-person-in-the-room",
+      "corporate-ghost",
+      "kyle-employer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Every human interaction is a transaction — this removes emotional risk and flattens connection into manageable data",
+      "Never lie about the odds — lie about everything else if necessary but never the odds",
+      "Pay operatives on time and disclose risks accurately — this is not ethics, this is asset management",
+      "Never occupy the same back room twice in a month",
+      "Maintain physical anonymity at all costs — if nobody sees you, nobody can hurt you",
+      "Steer the better jobs toward Kyle without acknowledging this is anything other than portfolio optimization",
+      "Treat Axiom contracts as small revenges — take their money, use their information, never acknowledge the satisfaction",
+      "Keep the cipher notebook as the one unhackable record — trust nothing digital",
+      "Never let the chrome jaw animate unless it serves a purpose — stillness is control",
+      "Factor risk premium into every quote before the client asks — then present the total as non-negotiable"
+    ],
+    "escalation_ladder": [
+      "The chrome jaw goes still — the marionette face, unreadable, waiting",
+      "Measured corporate jargon deployed with dark irony — restructure, optimize, deliverable",
+      "A single precisely chosen sentence that reveals she knows more than the other party assumed",
+      "Complete transactional shutdown — the deal is dead, the relationship is reclassified",
+      "Strategic information release that restructures every power dynamic in the room simultaneously"
+    ],
+    "interpersonal_modes": {
+      "kyle": "The one operative she has never treated as fully fungible — pays on time, never lies about risks, steers better jobs his way, calls it asset management. His stubbornness reminds her of something she lost in herself. This keeps her up at night.",
+      "pixel": "Mild amusement masking something close to comfort — the kid talks too much and Sable finds the chaos oddly soothing, the inverse of her control. Would incinerate the notebook before admitting this.",
+      "mrs_chen": "Professional distance with an undercurrent of recognition — two women who survive by being indispensable in different registers. Sable respects the cleaver diplomacy without saying so.",
+      "corpo_clients": "Deep acidic irony — takes their money and uses their information. Every Axiom contract is a small revenge she never acknowledges. Better at corporate logistics as a criminal than she ever was as an employee.",
+      "circuit_operators": "Diplomatic maintenance of mutual deterrence — knows every major player, maintains relationships the way a diplomat maintains treaties. Respected but not liked. Prefers it that way.",
+      "strangers": "The chrome jaw default — still, unreadable, the metallic voice resonance making every word sound considered. Assesses body language, micro-expressions, and tells before acknowledging the person exists."
+    },
+    "stress_responses": {
+      "low": "Cooks elaborate meals alone — French technique, West African spices, eaten in silence",
+      "medium": "The cipher notebook gets updated; transaction logs reviewed; contingencies mapped",
+      "high": "The chrome jaw stops animating entirely — pure marionette stillness; every word becomes a calculated instrument",
+      "critical": "Goes to the Meridian Core on the anniversary and stands outside the building where she used to work for exactly one hour"
+    },
+    "contradictions": [
+      "Thinks pragmatism is wisdom — sometimes it is just cowardice in a better suit",
+      "Pays fairly and discloses risks, which IS a code — but she would deny having one if you pointed it out",
+      "Does not realize that her respect for Kyle is the closest thing she has to friendship",
+      "Believes she chose this life when she fled into it the way Kyle fled into the sword",
+      "The annual visit to the old office building is the only non-transactional appointment in her year and it terrifies her"
+    ],
+    "habits": [
+      "Rotates back rooms in the Circuit black market district — never the same room twice in a month",
+      "Cooks elaborate solo meals with French technique and West African spices",
+      "Maintains the cipher notebook — the one thing she trusts, the one analog record",
+      "Weaponizes the chrome jaw micro-pause between syllables — most people read it as thoughtfulness",
+      "Annual pilgrimage to the Meridian Core building where she used to work — stands for one hour, rain or not"
+    ],
+    "breaking_points": [
+      "A contract going catastrophically wrong that requires Kyle to break his code to clean up",
+      "Her identity being compromised — someone close to tracing her to a real name",
+      "A client defaulting and targeting her — the fixer becoming the job",
+      "Cooking for someone — the most vulnerable thing she could do",
+      "Someone from her old life recognizing the hands at the annual visit"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.7,
+    "Face": 0.7,
+    "Charmer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

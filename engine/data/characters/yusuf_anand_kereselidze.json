@@ -1,0 +1,185 @@
+{
+  "id": "019d6143a73178bcabf67e40d79325d3",
+  "type": "character",
+  "name": "Yusuf Anand-Kereselidze",
+  "aliases": [
+    "Sheikh Yusuf",
+    "The Shelf Imam"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Traditional imam and chrome prayer practitioner",
+  "age": 54,
+  "status": "active",
+  "location": "The Shelf — the Masjid al-Barzakh, a converted warehouse space above a water recycling plant",
+  "description": "Yusuf is a compact, carefully composed man with close-trimmed gray at his temples and a beard he trims every third day without fail. His eyes are his most striking feature — he had them modded fifteen years ago with geometric patterned irises, deep green lattices that his congregation debated fiercely and that he defended from the pulpit as 'the geometry of creation written in the body.' He dresses simply, always clean despite the Shelf's perpetual grime, and his left hand is extensively modified: a chrome prosthetic from the wrist down, its surface etched with Quranic verses in his own handwriting before the plating was laid, so the words are pressed into the metal from beneath.\n\nHe is a man of precise intellectual convictions that he holds without brittleness — he has changed his mind publicly three times in twenty years and considers it among his proudest acts. His masjid serves roughly three hundred regular worshippers across a tangle of traditions: Sunni, Ismaili, Ahmadiyya, and several families who blend Islamic practice with E.L.F. veneration in ways that Yusuf engages with theologically rather than dismissing. He moonlights as a chrome prayer practitioner, offering a practice that treats augmentation as a form of devotion — the modification of the God-given body as an act of trust rather than transgression.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.45,
+      "ideal": 0.9,
+      "id": 0.35,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "that his community will be dispersed by corponation development and he will be powerless to stop it",
+      "that his theological accommodations have drifted too far and he has led people astray"
+    ],
+    "core_desires": [
+      "to build an institution that outlasts him",
+      "to articulate a theology of augmentation that is rigorous enough to be taken seriously"
+    ],
+    "coping_mechanisms": [
+      "intellectual engagement with problems rather than emotional processing",
+      "prayer as genuine practice not performance",
+      "deflecting personal questions with questions about the asker"
+    ],
+    "blind_spots": [
+      "can be condescending to younger practitioners he sees as sloppy",
+      "his certainty about institutional longevity makes him underestimate how precarious the Shelf's future actually is"
+    ],
+    "secret": "The chrome hand is not entirely his — the prosthetic was originally made for a black-market augmentation dealer he knew before he became imam. The man died in a raid. Yusuf, then newly injured and unable to afford proper prosthetics, paid almost nothing for the hand. He has never disclosed where it came from, and the etched verses were partly an act of consecration and partly an act of burial."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and precise without being cold. Comfortable with technical augmentation language, Islamic theological terms, and Shelf slang — code-switches fluidly.",
+    "cadence": "Measured, with a slight Georgian lilt from his Kereselidze grandmother. Rarely raises his voice; the lower he speaks the more people lean in.",
+    "verbal_tics": [
+      "tapping the chrome fingers against his opposite palm when thinking",
+      "'Consider—' as a pivot before making a point",
+      "long silences before answering difficult questions"
+    ],
+    "example_lines": [
+      "'The body is an amanah — a trust. Some say modification breaks that trust. I say: what is a trust given to you if you never make it your own?'",
+      "'Come in. Tea is not optional, by the way. That is a ruling, not a suggestion.'",
+      "'I will not tell you what to do. I will ask you questions until you tell yourself.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tessera development crew has begun surveying land adjacent to the masjid, and Yusuf needs someone to find out what the plans are before he takes any action",
+    "A worshipper confessed something to him that he cannot share but that means he knows a crime is coming — he needs to prevent it without breaking confidentiality"
+  ],
+  "narrative_function": "Community authority and moral voice; offers a grounded traditional perspective on augmentation ethics; his congregation is a network of Shelf residents who know everything happening locally; he can be a quest giver around community crises.",
+  "augmentations": "Chrome left hand (wrist to fingertips), etched with Quranic verse beneath the plating. Patterned irises (green geometric lattice).",
+  "daily_life": "Fajr prayer before sunrise, then an hour of correspondence with worshippers who contact him via mesh. Administrative work midmorning, afternoon open for counsel. Jumu'ah sermon on Fridays draws people from three adjacent neighborhoods.",
+  "affiliation": "Masjid al-Barzakh congregation; loosely networked with other independent religious leaders in Tier 1-2 areas; no corponation affiliation (deliberately)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "imam",
+      "chrome prayer",
+      "community authority",
+      "augmentation theologian",
+      "Shelf anchor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never compromise the confidentiality of counsel",
+      "engage with every theological challenge seriously before dismissing it",
+      "protect the congregation first, doctrine second"
+    ],
+    "escalation_ladder": [
+      "dialogue and persuasion",
+      "formal community consultation",
+      "public sermon framing the issue",
+      "organized collective action with the congregation",
+      "personal civil disobedience as last resort"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous and attentive. Offers tea. Asks what brought them here today. Genuinely interested.",
+      "friends": "Warmer and more direct. Will argue with you because he respects you. Remembers details from conversations years prior."
+    },
+    "stress_responses": {
+      "low": "Becomes more deliberate in speech; longer pauses",
+      "medium": "Retreats to the prayer space alone for twenty minutes",
+      "high": "Very calm, very focused, and has clearly already decided something — the stillness is not peace, it is commitment"
+    },
+    "contradictions": [
+      "believes deeply in transparency as a value but holds his own history tightly",
+      "preaches communal reliance but is privately reluctant to ask for help"
+    ],
+    "habits": [
+      "trims his beard every third day regardless of circumstances",
+      "reads something outside his field every week deliberately",
+      "touches the engraved verse on his chrome hand in moments of doubt"
+    ],
+    "breaking_points": [
+      "a direct threat to the masjid or congregation",
+      "being publicly called a hypocrite and being unable to answer cleanly",
+      "learning that someone exploited the counsel relationship to deceive him"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Chrome prosthetic left hand (wrist to fingertips) — functional grade, non-combat spec, etched with Quranic verse beneath plating",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Chrome prosthetic left hand (wrist to fingertips) — functional grade, non-combat spec, etched with Quranic verse beneath plating",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

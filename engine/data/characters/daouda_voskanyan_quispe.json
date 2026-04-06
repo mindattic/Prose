@@ -1,0 +1,165 @@
+{
+  "id": "019d6143a5e3748ba8c62f368706a958",
+  "type": "character",
+  "name": "Daouda Voskanyan-Quispe",
+  "aliases": [
+    "The Deacon",
+    "D.V."
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Union organizer for Ferrogate Transit maintenance workers",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave",
+  "description": "Daouda is a large man going soft at the middle after thirty years of physical work, with calloused hands that don't quite match his current desk-and-meeting life. His skin is a dark, warm brown, and he keeps his silver-streaked hair cropped close. He has a prosthetic left forearm — industrial accident, Ferrogate's fault, settled out of court for a number he will not say — in matte gray that he has deliberately kept undecorated while everyone around him customizes their chrome. The plainness is a statement about what it cost him.\n\nHe has organized three successful contract actions in the past decade and is personally responsible for the Hamtramck Enclave maintenance workers' current health and hazard provisions. He is patient to a degree that unnerves younger activists — he can sit in a bad meeting for four hours and still be the last person to speak, and still be the one who changes the outcome. He lights a candle at the Enclave's E.L.F. shrine every morning and asks the transit spirits to keep his people safe underground.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Watching his people accept a bad deal because they are too tired to fight",
+      "That the union will outlive its principles and he will have built a machine that grinds the same people it was meant to protect"
+    ],
+    "core_desires": [
+      "Dignity as a structural condition, not a personal achievement",
+      "To retire knowing someone good is holding what he built"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the candle, the morning prayers to the E.L.F.s, the same route to work every day",
+      "Mentorship as a way of externalizing hope he can no longer hold internally"
+    ],
+    "blind_spots": [
+      "Can be paternalistic with younger organizers, especially women — he means well but steers too hard",
+      "His caution sometimes reads as conservatism and he loses radical energy he could use"
+    ],
+    "secret": "During a particularly brutal contract fight twelve years ago, he quietly passed an Axiom HR operative information about a disruptive faction within his own union — not to break the strike, but to protect what he saw as a winnable core demand. The faction was sidelined. He has never told anyone. He does not know if it was the right thing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, working language, occasional French phrases from his grandmother's side — he uses them when he wants to say something precisely and doesn't trust the English to hold",
+    "cadence": "Slow and deliberate, with long pauses that feel like they have weight",
+    "verbal_tics": [
+      "'You understand what I'm saying?'",
+      "Addresses people as 'friend' when he's making a point he needs them to hear"
+    ],
+    "example_lines": [
+      "The contract isn't the victory. The contract is the floor. The victory is that they know we can build the floor again whenever they try to take it.",
+      "Friend, I've sat in that room. They're not afraid of loud. They're afraid of organized. There's a difference."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A series of 'accidents' in the maintenance tunnels has him convinced someone is trying to thin the union's most vocal members — he needs outside eyes who can move through the tunnels without being marked as his people",
+    "A young organizer he mentored has gone missing three days before a critical contract vote"
+  ],
+  "narrative_function": "Quest giver and moral anchor — he has connections throughout Ferrogate's physical infrastructure and can get people into or out of transit tunnels, but his real value is as a barometer of what the working tier actually needs and thinks.",
+  "augmentations": "Industrial-grade prosthetic left forearm (post-accident). Basic retinal work-light mod for tunnel inspection.",
+  "daily_life": "Up at five, checks in with shop stewards across three maintenance depots via encrypted comms, spends his afternoons in the Enclave's union hall handling grievances and mentoring younger organizers, evenings often mediating between management and workers or attending council meetings.",
+  "affiliation": "Ferrogate Transit Workers' Solidarity Union (FTWSU); Hamtramck Enclave community council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "veteran organizer",
+      "infrastructure access",
+      "community pillar",
+      "patient strategist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never cross a line that can't be uncrossed — the movement has to outlast any single fight",
+      "Protect your most vulnerable members first, your loudest members second"
+    ],
+    "escalation_ladder": [
+      "Exhaust every official channel first, documenting everything",
+      "Move to work slowdowns and public pressure campaigns",
+      "Strike action as last resort — it costs his people too much to use lightly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formal and courteous, takes measure slowly, offers respect before it is earned as a matter of principle",
+      "friends": "Warm and intensely present — remembers details about people's families, asks real follow-up questions"
+    },
+    "stress_responses": {
+      "low": "Becomes quieter and more deliberate",
+      "medium": "Increases his ritual behaviors — more candles, longer prayer sessions",
+      "high": "Goes into problem-solving isolation, barely sleeps, emerges with a plan fully formed"
+    },
+    "contradictions": [
+      "Preaches collective action but carries his heaviest burdens absolutely alone"
+    ],
+    "habits": [
+      "Morning candle at the E.L.F. shrine before anything else",
+      "Keeps a handwritten ledger of every grievance filed and resolved — forty years of them"
+    ],
+    "breaking_points": [
+      "Watching a worker he personally vouched for get fired as retaliation and being unable to prevent it",
+      "Discovering his own union leadership has been bought"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

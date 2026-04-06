@@ -1,0 +1,221 @@
+{
+  "id": "019d6143a6187cdfb8ce02b5c89baf03",
+  "type": "character",
+  "name": "Galdino Serpil-Rarotongan",
+  "aliases": [
+    "Galdy",
+    "Old Salt"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Climate refugee, former lakeshore farmer, now seasonal Ferrogate Transit groundskeeper",
+  "age": 68,
+  "status": "active",
+  "location": "Grindstone Shore, Ferrogate Transit maintenance dormitory block C",
+  "description": "Galdino is a large, slow-moving man who has been worn smooth by decades of hard weather, like driftwood. His face is broad and deeply seamed, brown skin weathered to near-leather, with the pale eyes his Cook Islands grandfather gave him sitting incongruously pale in that dark face — what his wife used to call 'sky holes.' He moves deliberately, with the careful economy of someone whose joints have logged decades of outdoor labor and who has learned to budget pain. He keeps his grey hair cropped close and wears a Ferrogate Transit maintenance vest over everything regardless of temperature because it has many pockets and he has filled them with things he considers essential: a folding tool, seeds he can no longer plant, a small lacquered image of a lake E.L.F. from a shrine that no longer exists because the land it stood on is now thirty meters underwater.\n\nGaldino's family farmed the eastern Lake Michigan shoreline for four generations until the coastal surge protocols permanently inundated their land in 2189. He has been a climate refugee for eleven years, rotating through seasonal work along Meridian 88's industrial edges — dock maintenance, freight sorting, currently groundskeeping for Ferrogate Transit's maintenance infrastructure at Grindstone Shore. He does not complain about this, exactly, but he talks about soil and planting cycles the way other people talk about deceased relatives. He is patient with almost everyone and genuinely interested in young people in the way of someone who has run out of other things to invest in.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.4,
+      "id": 0.3,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.9
+    },
+    "core_fears": [
+      "Dying before seeing the land return — knowing intellectually it won't in his lifetime but being unable to stop waiting",
+      "Becoming someone his dead wife would not recognize"
+    ],
+    "core_desires": [
+      "To plant something and watch it grow to completion, just once more",
+      "For someone young to know the names of the things that were here before the water"
+    ],
+    "coping_mechanisms": [
+      "Names things — gives names to landmarks, E.L.F.s, birds, anything nameable",
+      "Oral history — tells stories about the land as if the telling preserves it"
+    ],
+    "blind_spots": [
+      "Grief has made him occasionally passive — waits for things to change rather than acting to change them",
+      "Romanticizes the past; the farm life was also hard and sometimes brutal"
+    ],
+    "secret": "He knows the exact coordinates of a pre-flood structure twenty meters underwater off Grindstone Shore that contains seed stock for seventeen agricultural varieties that are now extinct on the surface. He's never told anyone because he cannot figure out how to retrieve it and is afraid that if he tells someone and they can't retrieve it either, he will have to accept it is gone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain and unhurried, agricultural metaphors. Treats silences as part of conversation. Occasional Spanish phrases from his Andean grandmother's line, mostly proverbs.",
+    "cadence": "Slow, deliberate, with natural pauses that feel like breathing rather than hesitation",
+    "verbal_tics": [
+      "'That's the way of it' to close a thought",
+      "Refers to the lake as 'she' always"
+    ],
+    "example_lines": [
+      "'She took the far field in '89 and the close field in '91. That's the way of it. She was always going to take them. We just didn't listen.'",
+      "'My wife said — she said, Galdy, you talk to the ground more than you talk to me. I said, the ground always listens. She said, so do I. She was right. That's the way of it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The submerged structure containing extinct seed stock has been detected by Helix Biosystems survey equipment — they are preparing a retrieval operation that will not leave the seeds in community hands",
+    "Galdino has begun seeing lights from the approximate coordinates of the drowned farmstead — something is operating down there, and he is the only person alive who knows what used to be there"
+  ],
+  "narrative_function": "Local color and unexpected wisdom — he knows the physical geography of the Grindstone Shore and surrounding area better than any database, has deep knowledge of what's under the water (former farms, homes, infrastructure), and carries emotional weight that can give stories stakes and resonance.",
+  "augmentations": "A prosthetic right index finger — the original was lost to a combine accident in 2187, before the flood. The prosthetic is old, slightly wrong-colored, and he has wrapped the base in twine for grip. Nothing else.",
+  "daily_life": "Reports to maintenance shift at 0600, spends the day doing groundskeeping and minor infrastructure upkeep along the Grindstone Shore transit infrastructure, eats with the other seasonal workers at the communal mess, spends evenings by the lake shore where he can see the water that took his land.",
+  "affiliation": "Ferrogate Transit (seasonal contracted worker, non-citizen employee); informal connection to a small community of other lakeshore climate refugees",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "climate refugee",
+      "seasonal worker",
+      "oral historian",
+      "lakeshore native",
+      "Ferrogate Transit contracted",
+      "grieving"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't cause trouble for people who are just trying to get by",
+      "Name the thing correctly before deciding what to do about it"
+    ],
+    "escalation_ladder": [
+      "Listens without responding",
+      "Asks a single clarifying question",
+      "States his position once, plainly",
+      "Goes very quiet and does the thing he decided on regardless of consensus"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Offers them something — a place to sit, a story, whatever he has — before asking anything of them",
+      "friends": "Remembers everything they've ever told him and brings it back at the right moment"
+    },
+    "stress_responses": {
+      "low": "Goes to the lakeshore and sits",
+      "medium": "Begins telling a story about the farm that seems unrelated but always arrives at the point eventually",
+      "high": "Acts without discussion — moves to protect people or things with quiet, immovable physicality"
+    },
+    "contradictions": [
+      "Intensely present with people around him while psychologically still living in a place that no longer exists"
+    ],
+    "habits": [
+      "Carries seeds in his pocket that he turns over with his prosthetic finger",
+      "Leaves small offerings at the Grindstone Shore E.L.F. junction box every week",
+      "Knows the name and shift of every other seasonal worker at the dormitory"
+    ],
+    "breaking_points": [
+      "Someone treating the lakeshore infrastructure carelessly in a way that damages the ecology",
+      "A young person with nowhere to go being turned away from resources while he has any left to give"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born on the family farm on the eastern Lake Michigan shore",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First parcel of family land inundated under coastal surge protocols",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Final farm parcels inundated; family displaced; wife died during displacement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Registered as climate refugee; began seasonal labor circuit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Currently in third consecutive season as Ferrogate Transit groundskeeper at Grindstone Shore",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

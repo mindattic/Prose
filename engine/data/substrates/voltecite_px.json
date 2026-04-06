@@ -1,0 +1,56 @@
+{
+  "id": "019d6143a9e872dc95a334a445573171",
+  "name": "Voltecite-PX",
+  "brand_name": "Voltecite",
+  "product_name": "Voltecite-PX",
+  "type": "substrate",
+  "aliases": [
+    "piezo plate",
+    "PX brick",
+    "stress-gen"
+  ],
+  "category": "ceramic",
+  "description": "A lead-free potassium sodium niobate piezoelectric ceramic fabricated through quantum-assisted domain alignment, achieving piezoelectric coefficients three times higher than legacy PZT formulations while eliminating toxic lead content that restricted previous generations from biomedical applications. The quantum domain alignment process locks ferroelectric domains in precise orientations that maximize energy conversion efficiency, enabling practical power generation from structural vibration, footfall, and hydraulic pressure fluctuations. Apex Nanofabrication holds the core patents and licenses production to approved fabricators.",
+  "properties": [
+    "high_piezoelectric_coefficient",
+    "lead_free",
+    "biocompatible",
+    "mechanically_robust",
+    "temperature_stable_to_400C",
+    "high_electrical_output",
+    "moderate_brittleness"
+  ],
+  "developers": [
+    "Apex Nanofabrication",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "structural energy harvesting floors and roadways",
+    "implanted biometric power generators",
+    "self-powered sensor nodes",
+    "kinetic energy recovery in armor systems",
+    "high-precision actuators",
+    "acoustic emission detection arrays"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ 3,100 per kg",
+  "story_hooks": [
+    "A Tier 1 district has illegally tiled its main corridor with salvaged Voltecite-PX panels, generating enough power to run their section off-grid — the grid authority wants it shut down, the residents will fight to keep it.",
+    "Someone has wired a network of Voltecite-PX sensors into a building's structural concrete, turning the entire structure into a covert surveillance microphone that captures vibration patterns from every room.",
+    "An implanted Voltecite-PX power generator in a corporate executive is producing anomalous electrical signatures that are interfering with encrypted communications in a twenty-meter radius — and someone is exploiting this as a jamming tool."
+  ],
+  "tags": [
+    "ceramic",
+    "substrate",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "power",
+    "medical",
+    "armor",
+    "energy",
+    "tier 2",
+    "tier 3"
+  ]
+}

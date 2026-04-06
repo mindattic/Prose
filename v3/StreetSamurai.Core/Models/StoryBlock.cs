@@ -10,7 +10,7 @@ namespace StreetSamurai.Core.Models;
 public class StoryProject
 {
     [JsonPropertyName("id")]
-    public string Id { get; set; } = Guid.NewGuid().ToString("N");
+    public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
 
     [JsonPropertyName("title")]
     public string Title { get; set; } = "Untitled";
@@ -30,10 +30,6 @@ public class StoryProject
 
     [JsonPropertyName("modified")]
     public DateTime Modified { get; set; } = DateTime.UtcNow;
-
-    [JsonPropertyName("is_archived")]
-    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
-    public bool IsArchived { get; set; }
 
     /// <summary>Plain text derived from HTML — for search, word count, entity detection.</summary>
     [JsonIgnore]

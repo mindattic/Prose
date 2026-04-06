@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a5c87ce1be77368e63927683",
+  "type": "character",
+  "name": "Bohuslav Enyinnaya-Čermák",
+  "aliases": [
+    "Slava",
+    "Old Grease"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Mechanic and small-vehicle repair specialist, runs a ground-floor shop in Geartown",
+  "age": 52,
+  "status": "active",
+  "location": "Geartown — Axle Street, Unit 9, street level beneath the Pembrook residential overhang",
+  "description": "Bohuslav Enyinnaya-Čermák is a large man gone slightly soft around the middle, with the forearms of someone who has spent three decades using them as his primary tools. His heritage is Czech-Igbo — his father was a machinist from Brno who ended up in Meridian via the Eastern European labor migration of the 2140s, his mother from a Lagos extended family that had been in the city since before it incorporated as Meridian. His face is broad and dark, his hair steel-grey and clipped short, his hands permanently black at the knuckle creases in a way that soap no longer fully addresses. He has a retractable reinforced thumb claw on the right hand — a modification he made himself from salvage parts in 2181 — which he uses as a pry tool so often he's forgotten he has it. His left eye is a secondhand optic he bought from a Geartown parts dealer a decade ago; it's slightly the wrong shade of brown for the natural right eye, which he considers funny.\n\nHe is gruff in the manner of someone who has given up pretending to be approachable because being approachable kept leading to people asking him for favors he didn't want to refuse. Underneath the grime and the monosyllables, he is fair to a fault and quietly contemptuous of anyone who isn't. He has an E.L.F. shrine built into the wall above his diagnostic terminal — a gutted engine block filled with machine oil, spare bolts, and a photograph of the first vehicle he ever repaired — dedicated to what he calls the Grease Ghost, a mechanical spirit he credits with keeping the worst jobs manageable. He argues with it sometimes.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "The shop failing — not financially, but becoming irrelevant as vehicle tech moves beyond his knowledge",
+      "His son, who left for a Tessera contract position, becoming someone he doesn't recognize"
+    ],
+    "core_desires": [
+      "To fix things that matter to people, not just things that are expensive",
+      "For the Geartown block to survive the next wave of corporate rezoning"
+    ],
+    "coping_mechanisms": [
+      "Working through problems physically — when emotionally troubled he finds something to disassemble",
+      "The E.L.F. shrine practice, which he would deny is spiritual if pressed"
+    ],
+    "blind_spots": [
+      "Reads stoicism as strength in others; misses when people around him are struggling",
+      "Distrusts institutional solutions so thoroughly he sometimes refuses help that would actually serve him"
+    ],
+    "secret": "He has been quietly cannibalizing a Ferrogate Transit shuttle that was abandoned in an alley behind his shop three years ago. He's not sure if it was stolen, abandoned, or deliberately hidden there, and he has deliberately avoided finding out because the parts are too useful."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse, technical, occasionally sardonic; Czech-Igbo idiom blend produces unusual metaphors",
+    "cadence": "Short declarative sentences; long technical explanations delivered with total authority and zero concession to jargon",
+    "verbal_tics": [
+      "'Yes or no?' (used to cut off unnecessary conversation)",
+      "'The machine doesn't lie' (repeated belief statement)"
+    ],
+    "example_lines": [
+      "'What's wrong with it? You tell me what's wrong, I'll tell you if you're right. Start with what you heard, not what you think.'",
+      "'The Grease Ghost was quiet this morning. Either everything's fine or something's about to cost you significantly.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Ferrogate shuttle hidden in his alley turns out to have something still inside it — cargo, equipment, or a person — that someone is now looking for",
+    "His son contacts him from a Tessera facility with a request Bohuslav can't fulfill without knowing things he's been careful not to know"
+  ],
+  "narrative_function": "Reliable resource character — can repair, modify, or assess almost any ground vehicle or mechanical system. Access to Geartown's informal information network. Potential fence for mechanical components, willing or otherwise.",
+  "augmentations": "Salvage-built retractable reinforced thumb claw, right hand. Secondhand replacement optic, left eye (brown, slightly wrong shade). Subdermal vibration sensor in both palms — lets him diagnose engine problems by feel.",
+  "daily_life": "Opens at seven, closes when the job is done, which is sometimes midnight. Eats lunch from a noodle cart two doors down, the same cart every day. Argues with the Grease Ghost shrine on bad days. Drinks one beer at the Ferment Quarter on Friday nights, home by ten.",
+  "affiliation": "Independent; Geartown Mechanics Guild (dues-paying member, rarely attends meetings)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "expert craftsman",
+      "local knowledge",
+      "stubbornly ethical",
+      "unexploded problem"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Fix what can be fixed, price it fairly, don't overreach",
+      "Never work on something without knowing what it actually does — refuses jobs from clients who won't explain the vehicle's purpose"
+    ],
+    "escalation_ladder": [
+      "Terse explanation of the problem",
+      "Refusal to continue the job",
+      "Physically removing the vehicle from the premises and billing for the diagnostic"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessess competence first, character second; treats proven competence with immediate respect regardless of other factors",
+      "friends": "Still gruff but shows up, fixes things without being asked, occasionally leaves food at people's doors"
+    },
+    "stress_responses": {
+      "low": "Works in silence, no music, just the sounds of the shop",
+      "medium": "Argues with the shrine, then gets back to work",
+      "high": "Refuses all clients for a day, does inventory alone, emerges with a decision made"
+    },
+    "contradictions": [
+      "Insists the E.L.F. shrine is a joke and yet maintains it with genuine care and addresses the Grease Ghost in private"
+    ],
+    "habits": [
+      "Wipes his hands before speaking to a client even when they won't get clean",
+      "Checks the alley behind the shop every morning before opening"
+    ],
+    "breaking_points": [
+      "Someone interfering with the shrine",
+      "Being asked to do something that will harm someone who trusted him with their vehicle"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "2",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown to Ondřej Čermák and Adaeze Enyinnaya-Čermák",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began working in the shop at 18 under his father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took over the shop when his father's hands gave out from joint degradation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Son Kelechi accepted a Tessera contract, relocated from Geartown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

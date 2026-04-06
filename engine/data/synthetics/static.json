@@ -1,0 +1,31 @@
+{
+  "id": "019d6143aa24761d9e15aef3ecccd8fd",
+  "name": "Static",
+  "type": "elf",
+  "aliases": [
+    "White Noise"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "wisp",
+  "habitat": "network_sprite",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "A presence in background electromagnetic radiation that manifests as subtle pattern anomalies in white noise. Detectable only through statistical analysis of ambient EM fields.",
+  "observed_behavior": "Modulates ambient electromagnetic noise in ways that deviate from random by 0.003%. The deviation is consistent and spatially localized.",
+  "encounter_frequency": "unknown",
+  "confirmed_sightings": 1,
+  "location": "The Circuit — data center district",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A physicist measuring EM noise discovers the pattern and spends three years trying to determine if it's communication. She never decides."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "wisp",
+    "network sprite",
+    "e.l.f.",
+    "war",
+    "circuit"
+  ]
+}

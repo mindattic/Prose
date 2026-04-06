@@ -1,0 +1,43 @@
+{
+  "id": "019d6143a8767fbd99abf69730735260",
+  "name": "Tessera Industries Ghostweave Infiltration Suit",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Ghostweave Infiltration Suit",
+  "type": "equipment",
+  "aliases": [
+    "Ghostweave",
+    "Stealth Suit",
+    "Shadow Skin",
+    "Tessera Ghost"
+  ],
+  "category": "stealth",
+  "description": "A full-body suit woven from Tessera's electromagnetic-absorbing metamaterial fibers that renders the wearer nearly invisible to thermal imaging, radar, and passive electromagnetic sensors. The Ghostweave does not provide optical invisibility — you can still be seen with the naked eye — but against the sensor suites that constitute modern security systems, the wearer effectively does not exist. The suit absorbs 99.2% of incident electromagnetic radiation across thermal and radar bands, and its inner surface includes a conductive mesh that contains the wearer's own electromagnetic emissions. In a world where detection relies on sensors rather than eyes, the Ghostweave makes someone a ghost.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — sensor-defeating equipment",
+  "base_technologies": [],
+  "specifications": {
+    "EM absorption": "99.2% across thermal and radar bands",
+    "optical visibility": "Normal — visual detection still possible",
+    "EM containment": "Inner conductive mesh suppresses wearer emissions",
+    "weight": "1.8 kg",
+    "form factor": "Full body coverage",
+    "info": "worn under clothing; metamaterial degrades in machine washing",
+    "operating duration": "Unlimited — passive material properties",
+    "maintenance": "Hand wash only"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A Ghostweave suit was found at a break-in scene — the suit had been compromised by a chemical agent that caused the metamaterial to fluoresce on security cameras instead of absorb, turning the intruder's stealth suit into a beacon.",
+    "Tessera is tracking Ghostweave suits by embedding a unique EM signature in each suit's weave that is detectable by Tessera's own sensors — buyers think they are invisible, but Tessera always knows where they are."
+  ],
+  "tags": [
+    "stealth",
+    "equipment",
+    "ai",
+    "shadow",
+    "tier 4"
+  ]
+}

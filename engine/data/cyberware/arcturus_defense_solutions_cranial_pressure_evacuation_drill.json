@@ -1,0 +1,57 @@
+{
+  "id": "019d6143a7b7724cbe8640b7ac88bc7d",
+  "name": "Arcturus Defense Solutions Cranial Pressure Evacuation Drill",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Cranial Pressure Evacuation Drill",
+  "type": "cyberware",
+  "aliases": [
+    "The Trepan",
+    "The Bishop's Key",
+    "Skull Tap"
+  ],
+  "category": "medical",
+  "body_location": "",
+  "description": "The Cranial Pressure Evacuation Drill is a precision field surgical instrument designed to perform emergency burr-hole trepanation — the controlled drilling of a small opening in the skull to relieve life-threatening intracranial pressure caused by hematoma, edema, or traumatic brain bleed. Arcturus developed the device for military combat medics who may encounter severe head trauma in environments where evacuation to a full surgical suite is impossible within the critical intervention window. The drill features a self-limiting depth governor that prevents penetration beyond the dura mater, a vacuum-sealed drainage port, and a real-time pressure differential sensor that tells the operator when sufficient decompression has been achieved.\n\nThe engineering is deliberately conservative: Arcturus resisted the temptation to automate the procedure fully, instead keeping a human hand on the instrument throughout. The device guides and limits but does not replace operator judgment, on the reasoning that a partially skilled medic with a governed tool makes better decisions in chaotic field conditions than a fully automated system that may misread ambiguous injury presentations. The housing is matte-black polymer over a titanium drill assembly, ruggedized for combat environments, and the entire kit including drainage tubing, sterile sleeve, and pressure sensor fits in a case the size of a large hardcover book.\n\nIt is called 'The Trepan' universally — medics, operators, and patients alike — though soldiers have also taken to calling it 'The Bishop's Key,' a reference both to its ecclesiastical shape and to the sense that its use represents a final negotiation between the living and the dead.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"drill_diameter\":\"14mm standard burr (12mm pediatric sleeve available)\",\"depth_governor\":\"Adjustable 4–8mm, dura-contact auto-stop\",\"pressure_sensor_range\":\"0–80 mmHg intracranial differential\",\"drainage_port\":\"Vacuum-assisted, 3mm silicone tubing\",\"power_source\":\"Integrated lithium cell, 90-minute operational life\",\"sterility\":\"Single-use drill sleeve; housing autoclave-compatible\",\"kit_dimensions\":\"28 cm x 20 cm x 8 cm\",\"kit_weight\":\"2.1 kg complete\",\"operator_training_requirement\":\"Minimum Field Surgical Certification Level 2\"}",
+  "side_effects": [],
+  "cultural_context": "The Trepan occupies a specific psychological category in combat medicine culture: it is the tool that signals you are doing something that should not be done outside a hospital, and doing it anyway because the alternative is worse. Medics who have used it in the field report a lasting sense of having crossed a threshold. Among mercenary outfits, a medic known to carry and use the Trepan commands a particular kind of respect — and a particular kind of unease. In Meridian 88's black-market surgical underground, modified civilian versions with the depth governor removed are used for more questionable cranial interventions, which has contributed to regulatory pressure on licensed distribution.",
+  "known_users": [
+    "Arcturus Defense Solutions contracted combat medics",
+    "High-tier mercenary unit field surgeons",
+    "Corporate black-ops extraction team medics",
+    "Underground surgical specialists (modified units)",
+    "Disaster response teams operating in collapsed infrastructure zones"
+  ],
+  "story_hooks": [
+    "A modified Trepan with the depth governor removed has been used on a series of victims found in the outer wards — the penetration depth suggests someone was accessing rather than relieving, and the targets all survived with no memory of the procedure.",
+    "A corporate executive suffered a traumatic brain bleed during an ambush; the only person available with a Trepan is a player character with Field Surgical Certification Level 1 and a laminated diagram.",
+    "An Arcturus Defense Solutions shipment of Trepan kits has been intercepted — the drill sleeves have been swapped with non-sterile alternatives, and the first wave of field casualties from the new batch are developing post-procedural infections.",
+    "A street medic operating without a license has saved eleven lives with a black-market Trepan and is now facing prosecution; the families of the eleven are organizing in her defense, and Arcturus's legal team wants the device back as evidence."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "medical",
+    "cyberware",
+    "combat",
+    "war",
+    "memory",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "injury",
+    "market",
+    "rain",
+    "train",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "019d6143a87b72859bd6b09885c6d915",
+  "name": "Vantablack Media Orphan Signal Cartridge",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack Media Orphan Signal Cartridge",
+  "type": "equipment",
+  "aliases": [
+    "the Cartridge",
+    "Orphan Drop",
+    "Ghost Broadcast"
+  ],
+  "category": "comms",
+  "description": "The Orphan Signal Cartridge is a single-use broadcast device designed to transmit a compressed data package — message, file, or audio — across a wide-area signal burst that is specifically engineered to be unattributable to any sender. Vantablack Media developed it as a tool for protected-source journalism: a whistleblower or field correspondent can load the Cartridge with content, set a timed or proximity-triggered release, and walk away. When it fires, the burst mimics the signal profile of legacy infrastructure bleed — the kind of ghost transmissions that Meridian 88's aging broadcast towers emit constantly — making the source indistinguishable from decades-old equipment noise.\n\nThe Cartridge is physically a small cylinder, roughly the size of a flare, with a single data input port and a mechanical timer ring. It contains no identifying markings and is manufactured from materials that resist forensic analysis — the polymer casing dissolves in water over 48 hours, and the internal components are designed to thermally self-erase after transmission. The broadcast itself is a single, non-repeating burst lasting between 0.3 and 1.2 seconds depending on data load, making it nearly impossible to triangulate with standard direction-finding equipment.\n\nVantablack markets the Cartridge under a press-freedom framework and has successfully lobbied for its classification as a journalism tool rather than a communications device in several jurisdictions. In Meridian 88, this legal ambiguity has made it a staple not just of journalists but of anyone who needs to get information somewhere without leaving a trail. The secondary market for used — but not yet fired — Cartridges is surprisingly active, since buyers trust the single-use design to mean no prior data contamination.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Tier 1+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Legacy signal profile mimicry",
+    "Wide-area compressed burst transmission",
+    "Timed and proximity-triggered release mechanisms",
+    "Thermal self-erasure circuitry",
+    "Water-soluble forensic-resistant polymer casing"
+  ],
+  "specifications": {
+    "data_capacity": "Up to 500MB compressed; optimized for text, audio, and still images",
+    "transmission_duration": "0.3–1.2 seconds dependent on payload",
+    "trigger_options": "Mechanical timer (1 minute to 72 hours), proximity sensor (paired device or passive human-presence), manual",
+    "signal_profile": "Mimics legacy broadcast infrastructure bleed; defeats standard source-attribution at 94% confidence",
+    "self-destruct": "Thermal erasure of internals post-transmission; casing dissolves in water over 48 hours",
+    "receiver_requirement": "Any device tuned to receive the broadcast frequency range; decryption requires a paired key loaded at time of data input",
+    "dimensions": "18cm x 3cm diameter cylinder"
+  },
+  "tactical_use": "Used for one-way unattributable transmission of critical information — intelligence packages, evidence, operational orders — to a receiving party without establishing any traceable communication channel. Operatives load the Cartridge, place it in a location that will be abandoned before transmission, and the burst fires autonomously. Receivers monitoring the appropriate frequency range and holding the decryption key retrieve the content. The physical Cartridge is never recovered.",
+  "cultural_context": "The Orphan Signal Cartridge has a particular resonance in Meridian 88's journalism and activist communities, where it is understood as a tool of last resort — used when someone has information that needs to exist in the world regardless of what happens to them. Finding a fired Cartridge casing is considered a minor omen in some districts, a sign that someone nearby had something important to say. Vantablack's branding around press freedom gives the device a legitimacy that its actual use in the field often exceeds.",
+  "known_users": [
+    "Investigative journalists and protected sources",
+    "Corporate whistleblowers",
+    "Activist networks releasing evidence of wrongdoing",
+    "Intelligence operatives transmitting final reports under duress",
+    "Fixers delivering sensitive information to clients without direct contact"
+  ],
+  "story_hooks": [
+    "A Cartridge fires in a district the players are operating in — the content is addressed to them by name, from a sender who claims to already be dead.",
+    "A player is handed a loaded Cartridge by a panicked contact who says they can't be seen with it any longer; the timer is already running.",
+    "Vantablack Media's legal team reaches out: a Cartridge was used to transmit something that is now causing a diplomatic incident, and they need the players to find whoever loaded it before authorities trace the device back to Vantablack's supply chain.",
+    "A series of Cartridges have been firing in sequence across the city over the past week, each containing one piece of a larger message — someone is using them as a distributed dead drop for an audience that knows how to listen."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "trust",
+    "ai",
+    "elf",
+    "corporate",
+    "market",
+    "freedom",
+    "fire",
+    "water",
+    "circuit",
+    "tier 1"
+  ]
+}

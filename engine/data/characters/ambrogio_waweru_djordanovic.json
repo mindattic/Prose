@@ -1,0 +1,247 @@
+{
+  "id": "019d6143a5b079c2acc9e5a94b76fd0c",
+  "type": "character",
+  "name": "Ambrogio Waweru-Djordanović",
+  "aliases": [
+    "Brio",
+    "The Nose"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Forensic Technician, Meridian 88 Metro Police",
+  "age": 52,
+  "status": "active",
+  "location": "Fort Anchor, Forensic Sciences Unit, Level 7",
+  "description": "Ambrogio is a slight man who has lost the battle with his posture and accepted it, curving slightly forward as if permanently examining something just below his eyeline. His skin is a warm medium brown, hair gone to silver-white and kept in a neat, very short fade, and he wears magnification lenses over his natural eyes — actual lenses in frames he has had repaired seven times rather than upgrade to ocular implants, because he does not trust surgeons with his eyes, a conviction he holds with irrational but absolute certainty. He has enhanced olfactory augmentation, which is the one mod he consented to readily because it directly serves his work: he can smell chemical compounds at parts-per-billion concentrations, and has an informal reputation for diagnosing cause of death before the toxicology panel comes back.\n\nAmbrogio has worked Metro Police forensics for twenty-six years and has achieved a specific kind of institutional invisibility — he is everywhere in the building and somehow always slightly forgotten when promotions are discussed. He does not appear to mind, though this appearance is not entirely accurate. He is meticulous to a degree that colleagues find either reassuring or maddening depending on whether they need results today or results that are correct. He has a running argument with the evidence chain management system that has lasted three years and will likely outlast them both.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.65,
+      "id": 0.45,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.55
+    },
+    "core_fears": [
+      "That his findings have been used to convict people he has helped convict wrongfully and he doesn't know which ones",
+      "Becoming irrelevant — being retired or replaced by an analysis system before he has finished cases he considers his responsibility"
+    ],
+    "core_desires": [
+      "To produce work that is exactly correct",
+      "To be acknowledged as having been exactly correct, even retroactively, even after he's gone"
+    ],
+    "coping_mechanisms": [
+      "Perfectionism as a substitute for processing anxiety",
+      "Talking to the ELF that has colonized his spectrometer — he consults it as a kind of second opinion"
+    ],
+    "blind_spots": [
+      "Believes his objectivity is total; does not see that his discomfort with certain detectives changes how promptly he processes their work",
+      "Underestimates how much his institutional invisibility is a choice he makes"
+    ],
+    "secret": "He has been quietly re-examining the physical evidence from a fourteen-year-old homicide case in his off-hours — a case whose conviction he now believes was wrong — and has not told anyone because he does not know what the correct chain of disclosure is and is afraid of what the institutional response will be."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and technical in professional contexts, unexpectedly warm and elaborate when discussing anything that genuinely interests him. Occasional Swahili and Serbian phrases, which surface more when he is tired.",
+    "cadence": "Measured, never rushed. Finishes every sentence he starts. Thinks visibly before speaking.",
+    "verbal_tics": [
+      "'Technically speaking' as a preface to corrections",
+      "Refers to the spectrometer ELF as 'she' and occasionally addresses it directly mid-conversation"
+    ],
+    "example_lines": [
+      "'Technically speaking, the accelerant pattern suggests the fire originated in the southeast corner, not the north wall. The north wall is where the report says it started. I'm flagging this.'",
+      "'She's been running the compound analysis for forty minutes. She'll have something useful. She always does, if you let her work.'",
+      "'I've been here twenty-six years. The building has changed four times. The evidence doesn't change. That's why I stay.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The fourteen-year-old case re-examination has produced a finding he can no longer sit on — and he needs someone with investigative resources who is not Metro Police command.",
+    "A piece of current evidence has been altered between collection and his analysis, and he knows it, and has documented it, and is deciding what to do with that documentation."
+  ],
+  "narrative_function": "Information source for forensic details, cause of death, trace evidence, chemical analysis. Can surface buried evidence or reinterpret old cases. An honest broker within the institution — his findings cannot easily be pressured, which makes him valuable and occasionally inconvenient to Metro Police command.",
+  "augmentations": "Enhanced olfactory system — Helix Biosystems nasal augment, detects chemical compounds at parts-per-billion, installed 2183. Magnification frames (non-augmented, physical lenses — deliberately chosen over ocular implants). Mild subdermal temperature regulation implant, medical necessity.",
+  "daily_life": "Arrives at Level 7 forensics lab at 0730, processes the overnight evidence queue, spends the bulk of each day at his workstation or in the cold room, and writes reports in a prose style that his supervisors consider unnecessarily literary. Brings his lunch every day in the same worn container. Leaves at 1700 exactly unless actively mid-analysis, in which case he stays until it's done.",
+  "affiliation": "Meridian 88 Metro Police, Forensic Sciences Unit",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "meticulous",
+      "principled",
+      "institutionally invisible",
+      "forensic expert",
+      "long-game thinker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything before acting on it",
+      "Do not release findings you are not certain of — certainty takes the time it takes",
+      "Maintain chain of custody even when — especially when — it would be easier not to"
+    ],
+    "escalation_ladder": [
+      "Note discrepancy internally, flag in personal log",
+      "Request clarification through official channels",
+      "Escalate finding to supervisor with full documentation",
+      "If supervisor response is inadequate, hold findings until he has determined a safe disclosure path — this can take a long time"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite and somewhat formal, assesses whether they are going to be careless around his equipment",
+      "friends": "Verbose about topics that interest him, asks follow-up questions about your life with genuine curiosity, remembers small details years later"
+    },
+    "stress_responses": {
+      "low": "Cleans already-clean equipment, reorganizes the evidence queue",
+      "medium": "Talks to the spectrometer ELF more than usual, eats his lunch at his desk instead of the break room",
+      "high": "Becomes eerily calm and methodical, produces his best work, and then goes home and does not sleep"
+    },
+    "contradictions": [
+      "Committed to institutional truth-telling while sitting on a finding that could destabilize an old conviction",
+      "Claims to have no opinion on detectives' cases while his processing timeline tells a different story"
+    ],
+    "habits": [
+      "Consults the spectrometer ELF before beginning any analysis he considers important",
+      "Keeps a personal carbon copy of every report he files",
+      "Polishes his magnification frames with the same cloth every morning"
+    ],
+    "breaking_points": [
+      "Receiving a direct order to alter or suppress a forensic finding — he will refuse, quietly and with complete documentation, regardless of consequence"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Deepwell Station to a Kenyan-Serbian family; father was a Metro infrastructure worker",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed chemistry and forensic analysis certification at Meridian Technical Institute",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Metro Police Forensic Sciences Unit as junior technician",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Had olfactory augmentation installed after building a professional case for it over two years of requests",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "A homicide case conviction — case 2186-337 — goes through his lab; he has a question about the evidence he does not escalate at the time",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins quietly re-examining physical evidence from case 2186-337 in personal time after a re-filed records request surfaces the original sample archive",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Re-examination is 70% complete; his preliminary findings are not consistent with the 2186 conviction",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

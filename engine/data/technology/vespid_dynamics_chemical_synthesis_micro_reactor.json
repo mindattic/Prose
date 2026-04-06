@@ -1,0 +1,46 @@
+{
+  "id": "019d6143aa56709f8630f08d94b10eca",
+  "name": "Vespid Dynamics Chemical Synthesis Micro-Reactor",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Chemical Synthesis Micro-Reactor",
+  "type": "technology",
+  "aliases": [
+    "CSMR",
+    "Pocket Lab",
+    "Chem Maker",
+    "Vespid Synth"
+  ],
+  "subcategory": "manufacturing",
+  "description": "A compact chemical synthesis system the size of a briefcase that can produce small quantities of complex chemical compounds from basic precursor materials. The CSMR uses microfluidic reactor channels etched into silicon chips to perform multi-step chemical syntheses that normally require laboratory-scale equipment, producing milligram to gram quantities of target compounds in hours. The system is programmable — load a synthesis protocol and the appropriate precursors, and it produces the output compound automatically. Vespid designed it for field synthesis of drone maintenance chemicals, but its ability to produce any compound from a programmable recipe has obvious dual-use implications.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "VESPID DYNAMICS",
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "Microfluidic reactor channel fabrication",
+    "Programmable multi-step synthesis",
+    "Compact precursor handling systems"
+  ],
+  "enables": [
+    "Field synthesis of complex compounds",
+    "Programmable chemical production",
+    "Small-quantity pharmaceutical fabrication",
+    "On-demand chemical agent production"
+  ],
+  "social_impact": "The CSMR has made chemical production portable and democratized — anyone with a CSMR and the right protocol can synthesize pharmaceutical compounds, industrial chemicals, or chemical agents from basic precursors available at any supply outlet. The technology has disrupted the pharmaceutical supply chain by enabling local synthesis of medications that were previously manufactured only in centralized facilities, while simultaneously enabling the local synthesis of chemical weapons and controlled substances.",
+  "story_hooks": [
+    "CSMRs have been found in Tier 1 producing life-saving medications at a fraction of pharmaceutical prices — the synthesis protocols were leaked by a Lazarus employee who believed the drugs should be accessible to everyone.",
+    "A CSMR loaded with an unknown synthesis protocol was seized during a raid — the protocol produces a compound that does not match any known chemical, and the synthesis requires precursors that are not commercially available."
+  ],
+  "tags": [
+    "manufacturing",
+    "technology",
+    "weapon",
+    "ai",
+    "control",
+    "drug",
+    "drone",
+    "tier 3"
+  ]
+}

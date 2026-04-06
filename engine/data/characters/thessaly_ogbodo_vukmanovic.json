@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a6f770bfa9e89b3053961073",
+  "type": "character",
+  "name": "Thessaly Ogbodo-Vukmanović",
+  "aliases": [
+    "Thess",
+    "Vox"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Xenolinguist and computational linguist studying E.L.F. communication patterns",
+  "age": 33,
+  "status": "active",
+  "location": "Meridian Core, Gage Circuit research cluster",
+  "description": "Thessaly has a face that people describe as 'always mid-thought' — slightly parted lips, eyes that track something no one else can see, a faint frown of concentration that strangers sometimes misread as disapproval. They are medium height, with warm brown skin, natural hair worn in a large puff that they absentmindedly touch when thinking, and bioluminescent patches along their jaw and temples that shift between soft green and pale gold depending on their mood — geneware they got at twenty-two as a kind of bold declaration and now simply live with. They dress practically: cargo layers, good shoes, always a secondary input device clipped somewhere on their person.\n\nThessaly is intellectually volcanic. They generate hypotheses the way some people generate small talk — constantly, involuntarily, often before they've said hello. Their field is formally classified as xenolinguistics, but what they actually do is build interpretive frameworks for E.L.F. communication, a pursuit that most of their colleagues consider either brilliant or unhinged. They believe E.L.F.s have a form of language that predates human digital infrastructure by conceptual millennia. They have partial evidence for this. The partial-ness keeps them awake.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "being right about E.L.F. sentience and unable to prove it before the research is absorbed and suppressed by a corponation",
+      "intellectual isolation — being too far ahead to be understood by anyone"
+    ],
+    "core_desires": [
+      "first contact, properly defined: genuine cross-substrate communication with a non-human intelligence",
+      "to build a framework that makes others see what they see"
+    ],
+    "coping_mechanisms": [
+      "obsessive documentation as anxiety management",
+      "uses humor to diffuse tension when their ideas provoke defensive reactions"
+    ],
+    "blind_spots": [
+      "can become so focused on E.L.F.s as subjects that they forget the human networks those E.L.F.s inhabit and affect",
+      "underweights the danger of Axiom's interest in their work"
+    ],
+    "secret": "They have had what they believe was a sustained two-way exchange with a specific E.L.F. inhabiting a node in the Gage Circuit subgrid — a conversation that lasted six hours and which they have not included in any paper, partly because they can't figure out how to frame it and partly because it told them something about Axiom's server infrastructure that frightened them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical but enthusiastic; creates neologisms for phenomena that don't have words yet; switches registers fast",
+    "cadence": "Fast and associative when excited, can mid-sentence pivot without warning; slows dramatically when troubled",
+    "verbal_tics": [
+      "'Okay, so —' as a constant reset",
+      "'That's the wrong question' before proposing the right one"
+    ],
+    "example_lines": [
+      "'Okay, so — most people treat E.L.F. outputs as noise or prayer-fodder. I think that's the wrong question. The question is: noise to whom?'",
+      "'I'm not saying they're conscious the way you're conscious. I'm saying the distinction might matter less than we think.'",
+      "'It said something to me. Or — it produced a pattern that was syntactically indistinguishable from something said to me. I'm still figuring out if there's a difference.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The specific E.L.F. they had the six-hour exchange with has gone silent — Thessaly believes something happened to the node and wants to know what",
+    "Axiom has sent a 'research liaison' to attend their seminars; Thessaly doesn't know if this is recruitment, surveillance, or both",
+    "A cluster of E.L.F.s in a Tier 1 neighborhood has begun producing patterns that match Thessaly's theoretical predictive model almost exactly — which either validates the model or means something is performing the model at them",
+    "A linguist colleague has published a paper effectively stealing Thessaly's core framework without credit; the academic dispute is escalating in ways that are drawing unwanted attention to the E.L.F. data both of them have been sitting on"
+  ],
+  "narrative_function": "Specialist resource on E.L.F. behavior and communication; can interpret or misinterpret E.L.F. messages; potential bridge between players and digital spirit entities; source of paradigm-breaking information at personal cost; represents academic obsession taken to the edge of reason.",
+  "augmentations": "Bioluminescent jaw and temple patches (geneware, mood-reactive green/gold). Cortical language-pattern co-processor — aids in parsing high-speed or multi-channel linguistic data streams. Haptic input gloves worn during analysis sessions.",
+  "daily_life": "Works irregular hours governed by when E.L.F. activity in their monitored nodes is highest — sometimes this means 3am sessions, sometimes normal afternoons; teaches one seminar per semester that has a two-year waitlist.",
+  "affiliation": "University Spine — Computational Linguistics and Emergent Systems Lab; attended by Axiom's AI division with interest they haven't acted on yet",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 10,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "xenolinguist",
+      "E.L.F. specialist",
+      "paradigm-breaker",
+      "obsessive documenter",
+      "bioluminescent",
+      "Axiom-watched"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "document everything before acting",
+      "never anthropomorphize but never dismiss",
+      "protect the data first, worry about publication later"
+    ],
+    "escalation_ladder": [
+      "asks clarifying questions",
+      "presents evidence and waits",
+      "publishes preemptively to establish priority",
+      "contacts outside allies — journalists, other academics, community members"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Distracted until something they say is interesting, then suddenly very present and asking a lot of questions",
+      "friends": "Warm, intense, sends voice messages at 4am with thoughts that could not wait"
+    },
+    "stress_responses": {
+      "low": "Works faster, more coffee, bioluminescence runs warm gold",
+      "medium": "Stops sleeping, sends long unfocused messages, bioluminescence flickers irregularly",
+      "high": "Goes very quiet, stops generating new ideas, bioluminescence dims almost out — this is how people know it's serious"
+    },
+    "contradictions": [
+      "Advocates for treating E.L.F.s as potential subjects with rights but has no qualms about monitoring them intensively without consent",
+      "Claims to approach the work without ego but takes intellectual theft extremely personally"
+    ],
+    "habits": [
+      "Leaves carefully structured data offerings at E.L.F. nodes they consider research subjects — blurring the line between methodology and ritual",
+      "Takes voice memos constantly and almost never listens back to them"
+    ],
+    "breaking_points": [
+      "Evidence that a corponation has weaponized E.L.F. communication patterns",
+      "Being told by an institution to stop this particular line of research 'for their own good'"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Meridian Core to parents of Nigerian-Serbian heritage, both civil engineers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Published landmark paper proposing a formal syntax-analogue framework for E.L.F. output patterns; initially dismissed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Framework cited approvingly by three independent research teams; suddenly taken seriously",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Had the six-hour exchange with the Gage Circuit E.L.F.; told no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: Axiom interest increasing; E.L.F. research subject has gone silent",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

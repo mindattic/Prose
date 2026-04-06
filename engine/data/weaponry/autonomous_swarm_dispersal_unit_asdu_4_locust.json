@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab1673eba1b5d70020f7a16f",
+  "name": "Autonomous Swarm Dispersal Unit ASDU-4 'Locust'",
+  "type": "weapon",
+  "aliases": [
+    "The Cloud",
+    "Locust Box",
+    "Swarmkit",
+    "Bug Bomb"
+  ],
+  "category": "drone",
+  "description": "The ASDU-4 is a mid-chassis autonomous swarm drone housing a colony of 200–400 micro-units, each roughly the size of a thumbnail, fabricated from carbon-composite shells and equipped with independent piezoelectric propulsion fins. Upon deployment, the colony disperses in configurable patterns—cordon, pursuit, saturation, or denial—governed by a distributed hive-logic processor that eliminates the need for a centralized command node. Each micro-unit carries a 0.8-gram shaped charge of TATP-analog high explosive capable of penetrating soft armor at contact range, delivering lethal fragmentation to unarmored targets and sustained harassment to hardened ones.\n\nWhat distinguishes the ASDU-4 from earlier swarm prototypes is its fault-tolerant mesh communication architecture. Destroying individual units does not degrade swarm cohesion; the colony reorganizes and redistributes targeting priorities in under 40 milliseconds. The swarm can navigate urban geometry autonomously using onboard LIDAR pings shared across the mesh, threading corridors, ventilation ducts, and vehicle interiors that conventional weapons cannot reach. A proprietary IFF beacon system—licensed separately—prevents friendly casualties, though bootleg units circulating in the Meridian 88 undermarket frequently lack this feature entirely.\n\nOperators in the field refer to deployment as 'opening the box,' and the psychological impact on targeted personnel is disproportionate to the ASDU-4's raw lethality. The sound of the swarm—a low, chittering harmonic produced by thousands of synchronized propulsion fins—has become a recognizable signature in contested districts. Several documented cases exist of entire security teams abandoning fortified positions upon auditory detection alone.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — classified as area-denial swarm munition under Meridian Autonomous Weapons Accord, Article 9",
+  "base_technologies": [
+    "Piezoelectric propulsion microactuators",
+    "Distributed hive-logic mesh processing",
+    "Shaped micro-charge fragmentation"
+  ],
+  "specifications": "colony count: 200–400 units (standard loadout)\nunit dimensions: 22mm x 14mm x 8mm\nunit mass: 3.1 grams each\npayload per unit: 0.8g TATP-analog contact charge\noperational range: Up to 600 meters from deployment point\nbattery life: 18 minutes sustained flight\nswarm reorganization latency: 38–42ms\ndeployment chassis: 310mm x 210mm x 90mm hardcase canister\nIFF compatibility: Arcturus Beacon Protocol v4 (optional module, sold separately)\nenvironmental limits: Degraded performance above wind speeds of 35 km/h; waterproof to 1m submersion",
+  "tactical_use": "Deployed primarily for area denial, room clearing, and pursuit of fleeing targets through complex terrain. Corporate extraction teams use cordon-pattern deployment to collapse escape routes before breaching. Street operators favor saturation patterns for ambush scenarios in tight corridors. The swarm's autonomous navigation removes the operator from direct line of sight, making it attractive for remote activation traps. Counter-swarm protocols involve high-frequency sonic disruptors or EMP bursts, both of which require dedicated equipment rarely carried by civilian security.",
+  "cultural_context": "The ASDU-4 occupies a particular place of dread in Meridian 88's street mythology. Unlike a bullet or a blade, the swarm feels alive—purposeful in a way that unsettles even hardened operators. In the Kowloon Stack and the Sublevel markets, possession of a Locust Box is a credibility marker among fixers and mid-tier enforcers, though using one in a civilian district carries severe social consequences within most criminal organizations. Corporate sec-teams deploying ASDU-4 units in residential zones during the Vertical 9 Evictions of 2197 permanently damaged public perception of ARCTURUS DEFENSE SOLUTIONS, a PR wound the company has not fully recovered from.",
+  "known_users": [
+    "ARCTURUS DEFENSE SOLUTIONS black-site extraction teams",
+    "Mid-tier syndicate enforcers (bootleg units)",
+    "Ghost-market fixers specializing in contested-zone operations",
+    "Rogue corporate saboteurs",
+    "Meridian 88 PD Counter-Terrorism Unit (licensed, restricted deployment)"
+  ],
+  "story_hooks": [
+    "A bootleg ASDU-4 without IFF beacons has been traced to a series of killings in a residential stack—but the swarm's hive-log, if recovered, contains targeting data that implicates a corporate client, not a street operator.",
+    "A fixer is hired to retrieve an ASDU-4 canister abandoned in a sealed sublevel after a botched operation. The swarm inside is still active, still patrolling, and has been doing so for three weeks.",
+    "An ARCTURUS whistleblower claims the IFF beacon protocol has a backdoor allowing the manufacturer to override friendly-fire protection remotely. She needs an escort to the press and someone is already hunting her.",
+    "A player character wakes up with an ASDU-4 deployment canister chained to their wrist and a timer counting down. Someone wants something delivered—or wants them to figure out why they were chosen as the delivery mechanism."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "blade",
+    "war",
+    "ai",
+    "rogue",
+    "corporate",
+    "power",
+    "market",
+    "rain",
+    "vehicle",
+    "escape",
+    "armor",
+    "explosive",
+    "fire",
+    "water",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "019d6143a90c7747a0362f92b111b0a4",
+  "type": "place",
+  "name": "Ashfeld",
+  "aliases": [
+    "Ashburn",
+    "The Bungalow Belt",
+    "Ash Flats",
+    "The Grey Zone"
+  ],
+  "description": "Ashfeld is where the middle class went to die slowly. The bungalow belt — that great swath of single-family homes built in the mid-twentieth century for city workers and their families — survived the Consolidation largely intact, and that survival became its defining tragedy. The homes are still here. The two-flats are still here. The streets are still gridded and named and maintained just enough to be navigable. What is gone is everything that made this a neighborhood rather than a housing inventory: the stability, the pensions, the assumption that owning a home meant something, the belief that working for the city meant the city worked for you.\n\nAshfeld's population is descended from — and in some cases still consists of — the municipal workforce that built and maintained Chicago's infrastructure. Police officers, firefighters, water department workers, sanitation crews. When the corporations assumed sovereignty over their territories and privatized public services district by district, these workers did not become corporate employees. They became redundant. Some were absorbed into corporate security or facilities maintenance at reduced wages and no benefits. Some hung on in the diminished municipal workforce that still technically exists to serve the ungoverned zones. Many simply aged out, their pensions frozen or eliminated, their bungalows becoming the only asset they retained from a career of public service that the public no longer controlled.\n\nThe result is a district that looks functional from the outside and is hollowing from within. The bungalows are maintained — Ashfeld residents are people who maintain things, it is in their nature and their training — but the maintenance is cosmetic over structural, paint over rot. The commercial corridors have contracted to essential services: a pharmacy, a grocery, two bars, a hardware store. The tax base has eroded to the point where even basic infrastructure — streetlights, water pressure, waste collection — is unreliable. Ashfeld is not collapsing. It is deflating, slowly and quietly, in a way that generates no headlines and attracts no attention because the people here were trained to handle problems without asking for help.\n\nThe Grey Zone nickname comes from Ashfeld's jurisdictional status: technically municipal territory, practically ungoverned, theoretically available for corporate sovereignty claims but unattractive because the land value does not justify the administrative overhead of governance. This grey status gives Ashfeld a peculiar quality — it is one of the few districts in Meridian 88 where you can live a quiet life, own a home, keep your head down, and be more or less left alone. The cost of that quiet is isolation, declining services, and the growing awareness that the quiet itself is a symptom of being forgotten.",
+  "atmosphere": {
+    "sights": [
+      "Rows of bungalows and two-flats maintained with stubborn precision — trimmed hedges, swept walks, painted trim over aging structures",
+      "Streetlights that work on some blocks and not others, creating patchwork corridors of light and dark",
+      "Retired municipal vehicles repurposed as planters, storage, or in one case a neighborhood library",
+      "American flags — an unusual number of them, on porches and in windows, a loyalty to something that no longer exists in its original form",
+      "Empty commercial storefronts with 'For Lease' signs so old they have become part of the architecture"
+    ],
+    "sounds": [
+      "Lawn maintenance — the mechanical hum of people keeping up appearances out of habit and pride",
+      "Police and fire scanner chatter from open windows — retired responders who never stopped listening",
+      "The absence of traffic — Ashfeld's streets are quiet in a way that reads as peaceful or dying depending on the hour",
+      "Bar conversation in the evening — the particular cadence of people telling stories about a city that used to work",
+      "Dogs barking — Ashfeld has more dogs per capita than any adjacent district, a legacy of families that kept them"
+    ],
+    "smells": [
+      "Cut grass and garden soil — maintained yards even when maintenance serves no economic purpose",
+      "Bar smoke and cheap beer from the two remaining taverns",
+      "The chemical smell of home maintenance products — paint, sealant, cleaning agents deployed against entropy",
+      "Cooking from open kitchen windows — heavy, caloric, the food of people who did physical work for a living"
+    ],
+    "feel": "Haunted by normalcy. Ashfeld feels like a place trying to sustain a version of life that the world has moved past. The maintenance, the flags, the scanner chatter — it is all the muscle memory of a community that was built around institutions that no longer function. There is dignity in it, and sadness, and something that might be stubbornness or might be denial.",
+    "tags": []
+  },
+  "demographics": "Predominantly white and working-class, with growing Latine and African American populations as younger families from adjacent districts find affordable housing. Aging demographic skew — many retired or displaced municipal workers. Tier 1 and Tier 2, with some untier-ed residents in the declining southern blocks.",
+  "economy": "Pension remnants and diminished municipal employment sustain the older population. Younger residents commute to employment elsewhere. The informal economy is smaller here than in adjacent districts — Ashfeld's culture of institutional loyalty makes its residents slower to embrace gray-market alternatives. The two bars function as de facto community centers and employment networks.",
+  "power_structure": "No formal governance beyond the vestigial municipal structure. An informal network of retired first responders — called the Old Watch — coordinates neighborhood security, infrastructure maintenance, and mutual aid. The Old Watch operates on the assumption that they are still public servants, even though the public they served no longer exists in any recognizable form. Their authority is based on competence, community trust, and the fact that most of them still own weapons from their service years.",
+  "dangers": [
+    "Infrastructure decay beneath maintained surfaces — water mains, electrical systems, and foundations are failing",
+    "Isolation from emergency services — response times from corporate security providers are measured in hours, not minutes",
+    "The Old Watch's competence is aging out with its members — no succession plan exists",
+    "Ashfeld's grey jurisdictional status makes it vulnerable to sudden sovereignty claims if land values shift",
+    "Depression and substance abuse among displaced municipal workers — a quiet crisis with no support infrastructure"
+  ],
+  "opportunities": [
+    "Affordable, defensible housing in maintained structures — rare in the lower Shelf",
+    "The Old Watch's institutional knowledge of municipal infrastructure is invaluable — they know where the pipes run, where the tunnels go, how the old city's systems actually work",
+    "Ashfeld's jurisdictional grey zone allows operations that would draw attention in corporate territory",
+    "The retired first responder population includes people with security, medical, and technical skills that are available for hire",
+    "The bungalow belt's physical layout — single-family homes with yards and sightlines — is naturally defensible"
+  ],
+  "story_hooks": [
+    "An Old Watch member has discovered that the municipal water main serving Ashfeld has been quietly rerouted — flow has been diverted to an adjacent corporate territory that needed additional capacity. The diversion explains the declining water pressure and was authorized by a municipal official who no longer holds office. Proving the diversion and reversing it requires documentation that exists in the old municipal records archive, which is now inside corporate sovereign territory.",
+    "A real estate investment algorithm has flagged Ashfeld's bungalow belt as undervalued — the first time in twenty years that any corporate system has noticed the district. Purchase offers are arriving at bungalow doors, and the prices are good enough to tempt people who have been struggling. The Old Watch suspects a coordinated buy-out but cannot identify the buyer.",
+    "A retired fire department captain in Ashfeld has been maintaining a complete, hand-drawn map of the old city's underground infrastructure — tunnels, utilities, emergency access routes — updated continuously for thirty years. She is dying, and the map exists only in her house. Multiple parties have learned about it."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Cicada Lawn",
+      "Mount Greenvault",
+      "Auburn Grist",
+      "Beverlynn Heights"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Retired municipal workers maintaining routines and community networks",
+    "Old Watch patrol members on regular neighborhood circuits",
+    "Younger families from adjacent districts seeking affordable housing",
+    "Fixers recruiting retired first responders for jobs requiring institutional knowledge",
+    "Real estate scouts assessing bungalow belt property values"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.749,
+    "lng": -87.707,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "weapon",
+    "war",
+    "trust",
+    "loyalty",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "pain",
+    "tunnel",
+    "market",
+    "bar",
+    "rain",
+    "train",
+    "survival",
+    "chase",
+    "fire",
+    "water",
+    "shelf",
+    "circuit"
+  ]
+}

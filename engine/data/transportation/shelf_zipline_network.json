@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa6f71278dd538690193ce31",
+  "name": "Shelf Zipline Network",
+  "type": "transportation",
+  "aliases": [
+    "The Zip",
+    "Cable Run",
+    "Spider Route"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Community-installed — no manufacturer",
+  "description": "An improvised network of cables strung between Shelf buildings, used with simple pulley harnesses for rapid transit between rooftops and upper floors. The Zipline Network grew organically over decades — whenever someone needed to get from Building A to Building B without going down to street level, they strung a cable. Now the network covers most of The Shelf's residential blocks, and experienced users can traverse the entire district without touching the ground. The cables are maintained by the community with varying degrees of competence. Testing a line before you ride it is not paranoia — it's survival.",
+  "propulsion": "Gravity + human momentum",
+  "speed": "20-40 km/h depending on angle and rider weight",
+  "capacity": "1 rider per line",
+  "range": "Line-to-line: 30-200 meters per segment",
+  "tier_availability": "Tier 1 (The Shelf specifically)",
+  "cost": "Free (community resource). Harness rental: Φ0.25/day.",
+  "autonomy": "Manual only. Grip strength is your safety system.",
+  "armament": "None",
+  "common_usage": "Rooftop-to-rooftop transit, avoiding street-level hazards, courier shortcuts, children's play (terrifyingly).",
+  "story_hooks": [
+    "The Zipline Network forms the backbone of a communications system — messages are passed at connection points, creating a telegraph that no electronics can detect",
+    "Someone is cutting ziplines at night, isolating specific buildings from the network and from help"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "ai",
+    "elf",
+    "rooftop",
+    "night",
+    "survival",
+    "shelf",
+    "tier 1"
+  ]
+}

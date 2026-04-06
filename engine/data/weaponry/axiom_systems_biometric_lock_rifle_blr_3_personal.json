@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab16720ebeb042ddc7e4848f",
+  "name": "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+  "type": "weapon",
+  "aliases": [
+    "Personal",
+    "BLR-3",
+    "Bio Rifle",
+    "Keyed Gun"
+  ],
+  "category": "rifle",
+  "description": "A bullpup assault rifle with an integrated biometric lock system that prevents anyone other than the registered owner from firing it. The BLR-3 reads the operator's palmprint, pulse pattern, and neural interface signature simultaneously — all three must match the registered profile or the trigger mechanism remains physically locked. Axiom developed it to prevent weapon capture and misuse during corporate conflict, ensuring that seized weapons cannot be turned against their issuing force. The biometric system has been praised as a safety innovation and condemned as a control mechanism — operators cannot share weapons with allies, cannot use captured enemy BLR-3s, and cannot sell or transfer the weapon without an Axiom technician re-registering it.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — Axiom security forces",
+  "base_technologies": [
+    "Triple biometric authentication",
+    "Physical trigger lock mechanisms",
+    "Neural interface weapon registration"
+  ],
+  "specifications": "caliber: 5.56mm caseless\nmagazine: 40 rounds\nrate of fire: 750 RPM\neffective range: 50-400 meters\nbiometric lock: Palmprint + pulse + neural interface triple authentication\nauthentication time: 0.3 seconds on grip\nweight: 3.5 kg\nfire modes: Semi, burst, full auto\nre-registration: Requires Axiom technician",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A dead Axiom operative's BLR-3 was fired after their death — the biometric system accepted a dead hand, dead pulse, and a cloned neural interface signature, meaning someone duplicated the operator's entire biometric profile.",
+    "A firmware exploit allows BLR-3 rifles to be permanently unlocked by injecting a specific code through the maintenance port — the exploit is spreading through underground channels and Axiom cannot patch it remotely."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "rifle",
+    "weapon",
+    "gun",
+    "war",
+    "death",
+    "neural",
+    "ai",
+    "corporate",
+    "control",
+    "fire",
+    "tier 3"
+  ]
+}

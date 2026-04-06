@@ -1,0 +1,56 @@
+{
+  "id": "019d6143aa507ecb818b579f5b951aa0",
+  "name": "Tessera Corponation ArcLight PF-12 Plasma Fusion Microreactor",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation ArcLight PF-12 Plasma Fusion Microreactor",
+  "type": "technology",
+  "aliases": [
+    "The Sun Box",
+    "PF",
+    "Tessera Torch",
+    "Little Star"
+  ],
+  "subcategory": "energy",
+  "description": "The ArcLight PF-12 is a compact deuterium-helium-3 plasma fusion microreactor designed for installation in large buildings, corporate campuses, and military installations requiring reliable, high-density power generation fully independent of external grid infrastructure. The PF-12 achieves fusion ignition through a proprietary magnetic confinement geometry Tessera designates 'oblate torus compression' — a departure from conventional tokamak design that allows the reactor vessel to fit within a 6-meter diameter, 4-meter height footprint while sustaining plasma at operational temperatures. Each PF-12 unit generates 22 megawatts of thermal output, converted to approximately 14 megawatts of net electrical output after system overhead, sufficient to power a large corporate tower or a mid-sized military forward operating base entirely off-grid.\n\nThe PF-12 is notable for its fuel logistics model as much as its engineering: helium-3 is extracted from Great Lakes basin regolith processing operations managed by Dredge Mining under an exclusive Tessera supply contract, while deuterium is produced onsite via electrolytic separation from municipal water. This dual-source fuel independence means a PF-12 installation can theoretically operate for 18 months without external resupply, a feature that makes it exceptionally attractive for high-security installations that cannot risk grid dependency. The reactor's control systems are built on a hardened Tessera-proprietary AI substrate that is explicitly not compatible with CinderBlock AI infrastructure, a deliberate architectural choice that prevents third-party monitoring or integration.\n\nThe ArcLight PF-12 is currently restricted to Tier 1 corporate installations and Arcturus Defense Solutions military clients. Tessera maintains strict control over installation, servicing, and decommissioning — no independent technicians are certified to work on PF-12 hardware, and each unit contains tamper-detection systems that trigger controlled plasma quench and irreversible component vitrification upon unauthorized access. There are unconfirmed reports of between three and seven black-market PF-12 units in operation across Meridian 88, sources unknown.",
+  "tier_availability": "Tier 1 / Military only",
+  "developers": [
+    "TESSERA CORPONATION",
+    "ARCTURUS DEFENSE SOLUTIONS"
+  ],
+  "base_technologies": [
+    "oblate torus magnetic confinement",
+    "deuterium-helium-3 fusion reaction",
+    "high-temperature plasma management systems",
+    "onsite electrolytic deuterium extraction",
+    "hardened proprietary reactor control AI"
+  ],
+  "enables": [
+    "total grid independence for Tier 1 and military installations",
+    "sustained high-power operations in infrastructure-denied environments",
+    "energy-intensive directed energy weapons platforms",
+    "corporate campus sovereignty from Ouroboros grid leverage",
+    "black-market fusion power for non-state actors"
+  ],
+  "social_impact": "The ArcLight PF-12 has effectively created a two-tier energy reality in Meridian 88 that mirrors and reinforces its citizenship stratification: Tier 1 corporate towers glow with fusion-powered certainty while lower districts experience rolling brownouts engineered by Ouroboros pricing algorithms. More insidiously, the PF-12's grid independence means that Tessera's most important installations are immune to the energy-as-leverage tactics that Ouroboros and the city administration use to enforce compliance in lower tiers — the reactor has given Tessera a form of infrastructural sovereignty that even the city's nominal governance structures cannot threaten. The existence of black-market PF-12 units is a persistent anxiety for both Tessera and city security forces, as an unmonitored fusion reactor in the wrong hands represents both a power source and a potential radiological incident.",
+  "story_hooks": [
+    "A decommissioned PF-12 unit was supposed to have been vitrified and removed from a demolished Tier 1 tower — but the Tessera service crew that performed the decommission has disappeared and the reactor vessel is not in any registered disposal facility",
+    "A Tier 4 block has had reliable, clean power for three months with no grid connection and no visible generation infrastructure — someone is running a PF-12 beneath the building and local fixers are being paid very well to ask no questions",
+    "Arcturus Defense Solutions has ordered six PF-12 units for a classified installation inside Meridian 88's city limits — the installation site doesn't match any registered military facility, and Tessera's logistics team has been told explicitly not to ask",
+    "A Tessera reactor technician — one of fewer than forty people in the world certified to service PF-12 hardware — wants to defect and is willing to trade detailed reactor schematics for extraction, but every faction in the city wants those schematics for different reasons"
+  ],
+  "tags": [
+    "energy",
+    "technology",
+    "weapon",
+    "war",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "market",
+    "water",
+    "lake",
+    "tier 1"
+  ]
+}

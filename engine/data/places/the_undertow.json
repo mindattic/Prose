@@ -1,0 +1,95 @@
+{
+  "id": "019d6143a9527863ad656674299d38ba",
+  "type": "place",
+  "name": "The Undertow",
+  "aliases": [
+    "South Haven",
+    "Undertow Beach",
+    "The Drowning"
+  ],
+  "description": "South Haven was a resort town built on sunsets. The kind of place where the entire economy ran on people driving three hours to watch the sun go down over Lake Michigan and then buying fudge. It was charming. It was seasonal. It was exactly the kind of economy that does not survive climate destabilization, lake-level rise, and the collapse of the middle class that used to fund weekend getaways.\n\nWhat South Haven became is harder to categorize. The old downtown -- what's left above water -- has been repurposed as an offshore recreation zone for mid-tier corporate workers from the Meridian 88 corridor. Tessera Leisure Holdings operates the beachfront, offering 'authentic lakeside experiences' to employees who earn enough to afford a weekend pass but not enough to access the elite resorts further north. The experience is manufactured nostalgia: reconstructed beach cottages, artisanal ice cream that costs more per scoop than the original shops charged per gallon, and sunset viewing decks with augmented reality overlays that filter out the cargo platform traffic on the horizon. It is a theme park version of a place that used to be real.\n\nBelow the tourist layer, the Undertow earns its name. The lake has risen nearly two meters since South Haven's resort heyday, and the lower sections of the old town are permanently flooded. This submerged district -- locally called the Undertow -- is where the people who actually live here year-round have settled. Houseboats, converted marina structures, and floating platform homes connected by walkways and rope bridges. The Undertow community is small, insular, and deeply suspicious of outsiders. They fish the lake, maintain their own power grid from wave-energy converters, and operate one of the most effective smuggling networks on the eastern shore. Cargo that enters the lake from offshore and needs to reach the inland corridor without passing through any checkpoint goes through the Undertow. The residents don't advertise this. They don't need to. Everyone who needs to know already does.",
+  "atmosphere": {
+    "sights": [
+      "The Tessera beachfront above -- neon-lit boardwalk, holographic sunset enhancement, tourists in branded leisure wear",
+      "Below, the Undertow -- houseboats and floating platforms connected by rope bridges, lit by salvaged LEDs and bioluminescent panels",
+      "Flooded storefronts visible through clear water on calm days, the old town preserved like a museum nobody curates",
+      "Wave-energy converters bobbing offshore, their rhythmic motion the Undertow's heartbeat",
+      "The lighthouse at the harbor mouth, still functional, now serving as both navigation aid and Undertow community meeting point"
+    ],
+    "sounds": [
+      "Water everywhere -- lapping, dripping, the constant conversation between the lake and the structures built on it",
+      "Tourist noise from the upper boardwalk -- filtered, distant, another world",
+      "Boat engines at odd hours -- the smuggling runs happen between 2 and 5 AM",
+      "Wave-energy converters churning -- a rhythmic mechanical pulse",
+      "The creak of floating structures adjusting to swell -- the Undertow is never still"
+    ],
+    "smells": [
+      "Clean lake water -- South Haven is far enough from the industrial zones that the lake actually smells like a lake here",
+      "Fish, fresh and smoked -- the Undertow eats what it catches",
+      "Salt-treated wood and marine sealant from constant structural maintenance",
+      "Manufactured nostalgia scents pumped onto the Tessera boardwalk -- cotton candy and sunscreen, algorithmically optimized"
+    ],
+    "feel": "Two places occupying the same coordinates. The surface is a corporate vacation simulation, pleasant and hollow. Below the waterline is something older and more honest -- a community that lives with the lake rather than on top of it. The Undertow has the specific energy of a place that has decided the official world is irrelevant and built its own. It's peaceful in a way that the upper boardwalk can only simulate.",
+    "tags": []
+  },
+  "demographics": "Surface tourist district serves approximately 15,000 visitors per week during high season. Year-round Undertow population is roughly 1,200 -- tight-knit, multi-generational fishing and maritime families, predominantly Tier 1-2 with a handful of former Tier 3 residents who chose this life deliberately.",
+  "economy": "Surface economy is Tessera Leisure Holdings tourism revenue -- significant but entirely extracted. Undertow economy is fishing, wave-energy generation, boat repair, and smuggling. The smuggling income alone is estimated at Φ40 million annually, distributed across the community through a share system that ensures nobody starves and nobody gets rich enough to attract attention.",
+  "power_structure": "Tessera Leisure Holdings controls the surface tourist infrastructure. The Undertow is governed by a harbor council of senior residents who operate by consensus and enforce decisions through social pressure and the ultimate sanction: exile from the community, which in a place this isolated is effectively a death sentence for your livelihood.",
+  "dangers": [
+    "Lake storms -- the Undertow's floating structures are resilient but not invincible, and rescue services don't extend below the boardwalk",
+    "Tessera security occasionally sweeps the waterline district, looking for smuggling infrastructure they know exists but can't map",
+    "Drowning -- the flooded lower town has currents, submerged structures, and no lifeguards",
+    "Getting caught in a smuggling run -- the penalties are corporate jurisdiction, which means Tessera decides your sentence",
+    "Trust -- the Undertow doesn't forgive outsiders who betray their confidence"
+  ],
+  "opportunities": [
+    "The smuggling network moves anything that fits on a boat -- cargo, people, data stored on physical media",
+    "The Undertow's wave-energy tech is innovative and could be scaled if someone provided capital without strings",
+    "Clean lake water is increasingly rare and increasingly valuable -- South Haven has it",
+    "Information passes through the Undertow from offshore sources that the inland surveillance networks can't monitor"
+  ],
+  "story_hooks": [
+    "A Tessera Leisure executive discovers the Undertow and sees not a community to displace but a 'lifestyle brand' to monetize -- and the harbor council is divided on whether to negotiate or fight",
+    "Something is surfacing from the flooded lower town -- artifacts from before the rise, including sealed data storage that predates the corporate era and might contain records someone deleted",
+    "A smuggling run goes wrong and the cargo turns out to be a person who multiple corponations are looking for"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Benton Divide (south along the coast)",
+      "Tulip Protocol / Holland (north along the coast)",
+      "Offshore smuggling routes (lake)",
+      "The Lakeshore Corridor I-196 (inland)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tessera Leisure tourists on the surface",
+    "Undertow fishing families and maritime workers",
+    "Smugglers moving cargo along the eastern lake shore",
+    "The occasional outsider who earned enough trust to be allowed below the boardwalk"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.4031,
+    "lng": -86.2736,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "smuggle",
+    "trust",
+    "death",
+    "augment",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "harbor",
+    "storm",
+    "energy",
+    "water",
+    "lake"
+  ]
+}

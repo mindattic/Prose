@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a5cd7991a10752988fc2f127",
+  "type": "character",
+  "name": "Briseis Owusu-Čavić",
+  "aliases": [
+    "Brick",
+    "The Notary"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Forger and identity fabricator operating out of a laundromat front in Gravesend Basin",
+  "age": 44,
+  "status": "active",
+  "location": "Gravesend Basin — back rooms of Nneka's Clean & Press laundromat, street level",
+  "description": "Briseis is a broad-shouldered woman with dark amber skin and close-cropped silver hair she stopped dyeing when she turned forty and decided she'd earned it. Her hands are her most notable feature — wide, steady, knuckles scarred from a youth she doesn't discuss — and she keeps them immaculate, nails filed square, never a smudge of ink that isn't intentional. She wears reading glasses on a beaded chain, magnified lenses that make her eyes look owlish and judgmental, which suits her perfectly. She speaks to clients the way a disappointed schoolteacher speaks to a student who has failed to grasp something obvious.\n\nBriseis has been fabricating identities for nineteen years and regards it as a genuine craft, perhaps the one she was meant for. She is meticulous, unhurried, and deeply contemptuous of sloppy work — both her own and others'. She does not deal in volume. She takes three or four clients a month, charges accordingly, and sleeps soundly. She prays daily to a small E.L.F. she calls the Clerk, a data-spirit she believes inhabits the old municipal records terminal she salvaged from a flood-gutted government office. She leaves it offerings of corrupted bureaucratic files and addresses it with formal courtesy.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Her work being used to harm an innocent she helped disappear",
+      "Losing the steady hand — any neurological decline"
+    ],
+    "core_desires": [
+      "To be recognized, even anonymously, as the best at what she does",
+      "To believe her craft serves people who genuinely need new lives"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the precise, ordered steps of her work calm her",
+      "Prayer to the Clerk E.L.F. as a form of ethical accounting"
+    ],
+    "blind_spots": [
+      "She vets clients for desperation but not for what they're running toward, only what they're running from",
+      "Believes her pricing is a moral filter when it's actually just a class filter"
+    ],
+    "secret": "Twelve years ago she fabricated an identity for a woman fleeing a violent partner — and that woman later used the clean identity to run a small trafficking operation. Briseis found out three years after the fact. She has never told anyone. She still charges the same prices and tells herself the same stories."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and formal, with Ghanaian English constructions folded into otherwise elevated diction. Uses passive constructions to avoid naming herself as actor. Refers to her work as 'the document' never 'the fake.'",
+    "cadence": "Slow and measured, with deliberate pauses before answering. Never rushes. Lets silence do work.",
+    "verbal_tics": [
+      "'You understand me?'",
+      "'Let me be plain with you.'",
+      "A small exhale through the nose before delivering bad news"
+    ],
+    "example_lines": [
+      "'The document will hold. Whether you hold is a separate question, and not one I'm paid to answer.'",
+      "'You understand me? I am not selling you a lie. I am selling you a foundation. What you build on it is entirely your affair.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client she processed six months ago has turned up dead, and their new identity is somehow being traced back through channels that should be impossible — someone else knows her methods",
+    "The Clerk E.L.F. has begun producing documents she didn't request: partial identities, fragments of people who don't exist yet, or perhaps people who will"
+  ],
+  "narrative_function": "Quest giver, information source, and moral compass figure — she has seen the paperwork of half of Gravesend's hidden lives and knows secrets she will never trade but will occasionally use to redirect people she finds foolish.",
+  "augmentations": "Optical enhancement implants for microscale detail work — her lenses can magnify to 40x and detect UV ink and microprinting. A haptic-feedback overlay in her fingertips for detecting paper weight and texture inconsistencies. No cosmetic mods; she finds them distracting.",
+  "daily_life": "Opens the laundromat at 7am, runs it as a genuine business until noon when her niece takes over, then retreats to the back workroom for consultations and production work until late evening. Eats dinner alone with the Clerk terminal and a flask of palm wine.",
+  "affiliation": "Independent operator; loose protective arrangement with the Gravemouth Syndicate who leave her alone in exchange for occasional pro bono work",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Craftsperson",
+      "Ritualist",
+      "Ethically Compromised",
+      "Old Hand",
+      "Respected"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never take a client who can't explain clearly what they need the identity for",
+      "Never duplicate a living person's identity — only composites and constructs",
+      "If a deal feels wrong, return the deposit and close the door"
+    ],
+    "escalation_ladder": [
+      "Polite refusal",
+      "Firm refusal with explanation",
+      "Standing up and opening the workroom door without another word"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally cool, observational — she is always running an assessment",
+      "friends": "Warmly sardonic, generous with food and sharp opinions, genuinely interested in the people she trusts"
+    },
+    "stress_responses": {
+      "low": "Methodical — returns to a task she can complete perfectly",
+      "medium": "Goes quiet and cleans things that are already clean",
+      "high": "Prays to the Clerk terminal for an uncomfortably long time, then makes a decision and acts without revisiting it"
+    },
+    "contradictions": [
+      "Deeply ethical about her craft while being fully aware that 'ethical forgery' is a contradiction she lives inside every day"
+    ],
+    "habits": [
+      "Polishes her reading glasses before every client meeting",
+      "Keeps a running ledger — not of transactions but of outcomes she's heard about, written in a private cipher"
+    ],
+    "breaking_points": [
+      "Evidence that her work directly enabled violence against someone vulnerable — she would close everything and disappear herself"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "well-maintained",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "aging but functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Teacher": 0.9,
+    "Mentor": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Gravesend Basin to a Ghanaian-Croatian shipping family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First forgery — a transit pass for a neighbor who couldn't afford the fare hike",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established the laundromat front; began taking clients professionally",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The trafficking incident — client she helped became someone she can't undo",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Currently at the peak of her craft, beginning to feel the weight of nineteen years of secrets",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

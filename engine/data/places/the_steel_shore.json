@@ -1,0 +1,110 @@
+{
+  "id": "019d6143a9507364a46eb483b6c7de08",
+  "type": "place",
+  "name": "The Steel Shore",
+  "aliases": [
+    "Lorain",
+    "Steel Town",
+    "The Shore"
+  ],
+  "description": "Lorain built ships and made steel. The U.S. Steel plant and the American Shipbuilding Company defined the city for a century, employing tens of thousands and creating a working-class community whose identity was inseparable from the industries that fed it. When the steel left, Lorain experienced the same slow death as every Rust Belt city — population decline, economic collapse, and the particular despair of a place that knows exactly what it used to be and has no blueprint for what to become. The corridor provided a blueprint. Whether Lorain is grateful depends on who you ask.\n\nThe Steel Shore is Lorain's current identity: a continuous industrial-residential zone along the Lake Erie shoreline where the old shipbuilding infrastructure has been repurposed for vessel maintenance and modification. The Black River, which cuts through the center of the city, divides two distinct zones. West of the river, Palladian Construction operates a maritime construction facility that builds the cargo platforms, dock infrastructure, and floating industrial installations that the corridor's lake economy depends on. East of the river, the old steel mill site has been converted into a Ferrogate sovereign maintenance depot — the facility where the rail corponation's eastern fleet is serviced, repaired, and occasionally modified in ways that the maintenance logs don't reflect.\n\nThe civilian population occupies the streets between these industrial anchors with the resigned practicality of a community that has been through worse. The old Broadway commercial district still functions, though the businesses have changed — augment maintenance shops, synthetic food distributors, and the kind of general stores that serve a population whose needs are basic and whose budgets are tight. The Puerto Rican community that became a significant part of Lorain's population in the mid-20th century persists, its cultural presence visible in the remaining businesses along Pearl Avenue and in the annual festival that the Steel Shore's corporate landlords tolerate because it costs them nothing and the workers enjoy it. Lorain was always a city that worked. The Steel Shore works too. The difference is who benefits.",
+  "atmosphere": {
+    "sights": [
+      "The Black River dividing the city — west bank Palladian maritime construction, east bank Ferrogate maintenance depot, civilian streets in between",
+      "Palladian's maritime construction yard — cargo platforms in various stages of assembly, cranes that work the waterline like mechanical herons",
+      "Ferrogate maintenance depot — rail cars in long rows being serviced by mixed human-autonomous crews, the sovereign right-of-way corridor entering the facility like a metal river",
+      "Broadway's commercial strip — functional, unadorned, serving a population that needs things to work more than it needs them to look good",
+      "Lake Erie from the shore — open water dotted with the Palladian-built cargo platforms that the Steel Shore helped construct"
+    ],
+    "sounds": [
+      "Shipyard percussion — the rhythmic bang of hull plates being formed, the whine of cutting tools on steel, the deep thud of maritime construction at scale",
+      "Ferrogate depot operations — rail car wheels being ground, couplings tested, the intermittent shriek of metal-on-metal that maintenance workers have learned to ignore",
+      "The Black River — flowing through engineered channels, its sound a lower-frequency counterpoint to the industrial noise on both banks",
+      "Pearl Avenue — music from the Puerto Rican businesses, Spanish mixed with Shelf Cant and Standard",
+      "Lake wind carrying the sound of cargo platforms being loaded offshore — a distant industrial rhythm that serves as the Steel Shore's ambient clock"
+    ],
+    "smells": [
+      "Hot steel and welding flux — the shipyard's contribution to the local atmosphere, unchanged in a century",
+      "Ferrogate lubricant — the maintenance depot's signature scent, a petroleum-synthetic blend that permeates the east side",
+      "The Black River — carrying whatever the upstream industrial operations contribute, which varies daily",
+      "Cooking from Pearl Avenue — sofrito, roasted pork, and coffee from the Puerto Rican restaurants that anchor the civilian commercial district"
+    ],
+    "feel": "The Steel Shore feels like a place that has been rebuilt without being renewed. The infrastructure is modern. The work is steady. The industrial output is significant. But the community that exists between the corponation facilities carries the weight of a century of displacement — first by economics, then by corporate sovereignty — and the resulting mood is one of competent endurance rather than vitality. People here are good at their work. They are also tired of working for someone else's benefit.",
+    "tags": []
+  },
+  "demographics": "Approximately 40,000 residents. Mixed working-class population with significant Puerto Rican community (approximately 25%, multi-generational). Tier 1-2 universally. High employment rate due to Palladian and Ferrogate labor demand, but wages are fixed at levels that maintain the population without enabling mobility.",
+  "economy": "Maritime construction (Palladian) and rail maintenance (Ferrogate) are the primary employers. The civilian economy serves the workforce — food, housing, basic goods. Pearl Avenue's Puerto Rican businesses represent the district's only independent commercial sector, sustained by community loyalty and cultural identity. The Black River's commercial traffic generates dock fees that Tollgate collects.",
+  "power_structure": "Palladian holds sovereign authority on the west bank. Ferrogate holds sovereign authority on the east bank. The civilian streets between them fall under Tollgate minimum infrastructure jurisdiction. The Steel Shore Workers' Alliance negotiates with both corponations and manages civilian governance. The Puerto Rican Cultural Association on Pearl Avenue operates as an independent community organization with significant social influence.",
+  "dangers": [
+    "Industrial hazards — both the Palladian shipyard and Ferrogate depot generate exposure risks that the workforce accepts as a condition of employment",
+    "The Black River — flooding during severe weather events, combined with whatever chemical load the river carries, creates periodic contamination events in the civilian zones",
+    "Dual sovereignty tension — Palladian and Ferrogate occasionally contest the boundary between their jurisdictions, and civilians caught in the overlap have no clear legal standing",
+    "Economic dependency — the entire civilian economy depends on two employers, and either could automate or relocate without obligation to the workforce"
+  ],
+  "opportunities": [
+    "Maritime construction skills are in high demand across the lake economy — Palladian-trained workers are recruited by every lakefront operation in the corridor",
+    "Ferrogate's maintenance depot handles the eastern fleet's most sensitive equipment — information about modifications and non-standard configurations is valuable",
+    "The Black River provides water access between the lake and the interior that bypasses both Palladian and Ferrogate sovereignty — if you know the channels",
+    "The Puerto Rican community's independence and cultural cohesion provide a social infrastructure that outsiders can access through demonstrated respect"
+  ],
+  "story_hooks": [
+    "Ferrogate has begun modifying a subset of rail cars with equipment that doesn't match any known transit or cargo configuration — and the maintenance workers assigned to the project have been sworn to secrecy",
+    "Palladian's maritime construction yard has received a contract to build something that doesn't appear in any public shipbuilding catalog — the specifications suggest a military vessel, but Palladian isn't a defense contractor",
+    "The Black River's chemical composition has changed abruptly, and the contamination pattern traces upstream to a source that doesn't appear on any industrial registry"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Ferment Quarter (Sandusky) — lakeside corridor west",
+      "Lakewood Ledge (Lakewood) — lakeside corridor east toward Cleveland",
+      "The I-90 Vein — highway corridor connecting to the Cleveland sprawl",
+      "Lake Erie — Palladian maritime operations and open water access"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Palladian maritime construction workers and Ferrogate maintenance crews",
+    "Supply chain operators moving between the lakefront facilities",
+    "Workers from the broader Cleveland sprawl seeking Ferrogate or Palladian employment",
+    "Pearl Avenue community — the district's cultural anchor and social hub"
+  ],
+  "notable_locations": [
+    {
+      "name": "Palladian Maritime Yards",
+      "description": "West bank construction facility building the cargo platforms and floating infrastructure that the corridor's lake economy runs on",
+      "tags": []
+    },
+    {
+      "name": "Ferrogate Eastern Maintenance Depot",
+      "description": "East bank facility servicing the rail corponation's eastern fleet — the place where what Ferrogate moves and how it moves it can be observed",
+      "tags": []
+    },
+    {
+      "name": "Pearl Avenue",
+      "description": "The Puerto Rican commercial and cultural corridor — the Steel Shore's only independent community district, sustained by generations of cultural continuity",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.4528,
+    "lng": -82.1824,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "gun",
+    "loyalty",
+    "death",
+    "identity",
+    "augment",
+    "ai",
+    "synthetic",
+    "corporate",
+    "contract",
+    "rain",
+    "train",
+    "food",
+    "water",
+    "lake"
+  ]
+}

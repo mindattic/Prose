@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab1370a7b62349a8428e2b09",
+  "name": "Arcturus Defense Solutions Kinetic Denial System KDS-4 'Bouncer'",
+  "type": "weapon",
+  "aliases": [
+    "Bouncer",
+    "KDS-4",
+    "Push Field",
+    "The Wall"
+  ],
+  "category": "heavy",
+  "description": "A vehicle-mounted kinetic repulsion system that generates a short-range concussive blast wave capable of hurling personnel and light vehicles away from the emission point. The KDS-4 uses a rapid-expansion gas generator coupled with a shaped acoustic reflector to create a directional wall of overpressure that travels outward at approximately 200 m/s. The blast is non-fragmentary but the kinetic energy transfer is sufficient to cause fatal blunt force trauma at close range and significant injury out to 15 meters. Arcturus markets it as a non-lethal crowd dispersal system, a classification that has been challenged in multiple jurisdictions.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — riot control and vehicle defense",
+  "base_technologies": [
+    "Rapid-expansion gas generation",
+    "Shaped acoustic blast reflection",
+    "Directional overpressure focusing"
+  ],
+  "specifications": "blast type: Directional concussive overpressure\neffective range: 5-30 meters cone\nlethal range: 0-8 meters\nrecharge: 12 seconds between blasts\nblasts per charge: 6\nweight: 180 kg (vehicle-mounted)\nmount: Standard vehicle hardpoint or static emplacement\noverpressure at 10m: 3.5 PSI",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A KDS-4 was deployed against a peaceful protest and classified as 'non-lethal force' despite eleven fatalities — the legal battle is becoming a flashpoint for anti-corporate sentiment.",
+    "Someone has stolen a KDS-4 unit and mounted it in the back of a cargo van — mobile concussive blasts have been hitting corporate convoys."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "heavy",
+    "war",
+    "ai",
+    "corporate",
+    "control",
+    "injury",
+    "market",
+    "vehicle",
+    "energy",
+    "tier 4"
+  ]
+}

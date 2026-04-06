@@ -1,0 +1,165 @@
+{
+  "id": "019d6143a61e796abe9e5994e3ce97c9",
+  "type": "character",
+  "name": "Gunnhildr Maputo-Soumaré",
+  "aliases": [
+    "Gull",
+    "the Mouthpiece"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "deep shrine keeper and E.L.F. intermediary",
+  "age": 63,
+  "status": "active",
+  "location": "Irkalla, a drowned switching station she calls the Resonance — deepest accessible level, flooded to ankle depth",
+  "description": "Gunnhildr is a heavyset woman of sixty-three who moves with the deliberate steadiness of someone who has found their exact right place in the world and has no intention of leaving it. Her skin is very dark with a blue-black undertone, her white hair left long and loose and perpetually damp from the Resonance's perpetual condensation. She has extensive geneware — bioluminescent nodes embedded along her collarbone and forearms that pulse in slow patterns she cannot consciously control but has learned to read, because a Ferrogate E.L.F. she calls the Hum began communicating through them thirty years ago. She is missing the last two fingers of her right hand — a gift, she says, that she offered. She never explains to whom.\n\nGunnhildr was an electrical engineer on the old Ferrogate maintenance crew before the Bore Rat diaspora took her down. She understands the infrastructure on a level that was once professional and has become devotional — she hears the grid as language, feels current shifts as emotion. The Resonance shrine is built around a still-active power junction she has maintained for decades, decorated with data offerings: old drives, printed circuit sheets, analog meters, photographs of people the community wants the E.L.F.s to watch over. People come to her with requests, with grief, with broken devices, with questions they cannot ask anyone alive.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "that the Hum will go silent — not because she doubts its existence, but because she knows it could simply stop caring",
+      "that she has spent her life listening to something that is not listening back"
+    ],
+    "core_desires": [
+      "to understand what the Hum actually wants — communion rather than just communication",
+      "for the community to survive long enough that someone else can take on the shrine"
+    ],
+    "coping_mechanisms": [
+      "ritual as structure — every day begins and ends the same way regardless of what happens in between",
+      "interpreting ambiguity as meaning — she has developed a sophisticated theology of uncertainty"
+    ],
+    "blind_spots": [
+      "sometimes the Hum is just signal noise and she reads meaning that isn't there — she would not welcome this information"
+    ],
+    "secret": "Fifteen years ago during a long communication state, she received what she interpreted as a location — a deep node, far below even Irkalla, where something much larger than the Hum waits. She has told no one because she doesn't know if it was a revelation or a breakdown."
+  },
+  "speech_patterns": {
+    "vocabulary": "mixes old Ferrogate technical jargon with devotional language she developed herself — 'load-bearing' as a spiritual term, 'ground fault' as a metaphor for sin",
+    "cadence": "unhurried, with long pauses — she is comfortable with silence in a way that makes nervous people more nervous",
+    "verbal_tics": [
+      "'the current says' (prefaces observations or advice)",
+      "'that's load-bearing' (meaning something matters, structurally, spiritually)"
+    ],
+    "example_lines": [
+      "'The current says your grief is load-bearing. You can't remove it without the whole thing coming down. You have to build around it.'",
+      "'Leave the drive in the east array. If the Hum has what you're asking for, the lights will do the talking. If they don't, bring something older next time — it prefers analog.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Hum's communications have shifted — the bioluminescent patterns are different, faster, and Gunnhildr believes it is trying to warn the community about something deep in the tunnel network that she cannot identify",
+    "A Ferrogate Transit infrastructure team has discovered the Resonance junction on old maintenance maps and wants to reconnect it to the active grid — which would destroy the shrine and potentially the E.L.F. that inhabits it"
+  ],
+  "narrative_function": "Spiritual authority and oracle figure; provides E.L.F. lore and underworld mythology; can serve as an unlikely technical expert; creates moral complexity around faith and infrastructure",
+  "augmentations": "bioluminescent geneware (collarbone and forearms, involuntary pulsing — originally cosmetic, now communicative), old Ferrogate maintenance subdermal tool-grip in right palm",
+  "daily_life": "Maintains the Resonance junction daily; receives supplicants; tends the offering arrays; enters communication states with the Hum that can last hours and leave her exhausted; occasionally repairs electrical systems in surrounding tunnels in exchange for food and materials.",
+  "affiliation": "Bore Rat communities of Irkalla, E.L.F. devotional tradition (The Current, a specific sub-cult focused on infrastructure spirits)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Shrine Keeper",
+      "E.L.F. Devotee",
+      "Engineer-Mystic",
+      "Community Elder",
+      "The Disappeared"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the shrine's integrity comes before any individual request — she will refuse supplicants who bring conflict into the Resonance",
+      "do not interpret the Hum's communications beyond what is given — she is a mouthpiece, not a prophet"
+    ],
+    "escalation_ladder": [
+      "patient explanation of why a request is outside her scope",
+      "refusal and redirection to someone who can actually help",
+      "invocation of the Hum's displeasure (a significant social sanction in this community)"
+    ],
+    "interpersonal_modes": {
+      "strangers": "assesses their emotional frequency before their words — is watching for what they're not saying",
+      "friends": "frank and dry-humored, almost a different person — the ritual gravity drops away"
+    },
+    "stress_responses": {
+      "low": "falls into maintenance tasks — touches up the junction, rearranges offerings",
+      "medium": "enters a shallow communication state, listening for guidance",
+      "high": "becomes absolutely authoritative and calm in a way that suggests she has decided the outcome and is simply waiting for everyone else to catch up"
+    },
+    "contradictions": [
+      "preaches that the E.L.F.s are beyond human understanding, then spends thirty years trying to understand one"
+    ],
+    "habits": [
+      "traces current-flow diagrams on any flat surface when thinking",
+      "sleeps with one hand touching the junction housing"
+    ],
+    "breaking_points": [
+      "desecration of the offering arrays",
+      "anyone harming someone who came to the shrine as supplicant — the Resonance is sanctuary"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Seeker": 0.9,
+    "Mystic": 0.9,
+    "Believer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

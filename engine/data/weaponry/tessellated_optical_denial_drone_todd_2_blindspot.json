@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab507cbda16159f400f7d287",
+  "name": "Tessellated Optical Denial Drone TODD-2 'Blindspot'",
+  "type": "weapon",
+  "aliases": [
+    "Blindspot",
+    "The Tile",
+    "TODD",
+    "Mote"
+  ],
+  "category": "drone",
+  "description": "The TODD-2 operates as a swarm-capable photonic denial platform — each individual unit is a flat hexagonal tile roughly 12 cm across, housing a phased array of micro-lensed emitters that produce precisely sculpted coherent light interference patterns. When a single unit detects a target via thermal or motion signature, it positions itself in the subject's visual cone and activates its pattern array, producing a persistent false-geometry overlay in the target's visual field — not blindness, but a convincing spatial hallucination that makes distances, edges, and surfaces unreliable. Targets frequently walk into walls, misjudge step heights, or freeze entirely trying to parse contradictory spatial data.\n\nThe TODD-2's genuine tactical edge emerges when multiple units coordinate. Three or more tiles triangulating a single target can produce a full 270-degree interference envelope, effectively trapping the target in a bubble of fabricated geometry. Operators describe the effect as 'putting someone inside a painting.' The swarm communicates via low-power mesh radio with negligible emissions signature, making electronic detection difficult. VANTABLACK MEDIA's involvement in its development is rarely advertised but evident in the emitter array's lineage — it borrows heavily from their immersive architectural projection systems.\n\nThe tiles are fragile by drone standards and were never designed for contested airspace. They perform poorly in rain and fail entirely in direct high-lumen environments. Their power cells last approximately 40 minutes at full interference output, after which they return to a designated recovery point or drop to the ground inert.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Phased coherent light interference array",
+    "Swarm mesh radio coordination",
+    "Micro-lensed photonic sculpting"
+  ],
+  "specifications": "dimensions: 12 cm hexagonal tile, 1.8 cm depth\nweight: 0.19 kg per unit\ntypical deployment: 6–12 units per operation\ninterference range: Effective up to 4 m per unit\nswarm envelope: Up to 270° visual disruption with 3+ coordinated units\neffect duration: Persistent while target remains in range\nbattery life: 38–42 minutes at full output\nflight mode: Near-silent ducted-fan hover, ceiling 12 m\nfailure conditions: Rain, >8,000 lux ambient light, strong RF jamming\ncountermeasures: Ocular implants with interference filtering (licensed tier), physical blindfold",
+  "tactical_use": "TODD-2 swarms are used almost exclusively for non-lethal containment, high-value capture operations, and crowd control in enclosed spaces. Security firms use them to immobilize individuals without physical confrontation. Criminal organizations deploy them to disorient guards during heists. The tiles are typically seeded through ventilation access or dropped from a building edge before an operation begins. Experienced operators pre-position recovery nets so tiles can be retrieved — they're expensive and traceable if left behind.",
+  "cultural_context": "VANTABLACK MEDIA publicly produces immersive installation art and corporate event environments. The TODD-2's existence is one of Meridian 88's more poorly-kept open secrets — media critics have noted that the company's flagship 'Sensory Architecture' exhibitions produce strikingly similar disorientation effects to documented TODD-2 deployments. The drone has become associated with a particular kind of violence that the city's upper tier prefers: clean, deniable, and aesthetically coherent. Victims of TODD-2 encounters frequently report lasting difficulty with spatial perception, an effect VANTABLACK's legal team characterizes as 'pre-existing anxiety.'",
+  "known_users": [
+    "VANTABLACK MEDIA private security contractors",
+    "High-end extraction specialists",
+    "Corporate espionage cells",
+    "Art-world fixers and black market couriers"
+  ],
+  "story_hooks": [
+    "A prominent architect claims she experienced a TODD-2 attack inside a VANTABLACK MEDIA exhibition opening — but the company's lawyers argue she simply had a dissociative episode during an immersive installation. The line between art and weapon is precisely what's on trial.",
+    "Someone is deploying TODD-2 units in the Underbelly transit corridors with no apparent objective — targets are disoriented for forty minutes and then released. No theft, no assault. The pattern suggests rehearsal.",
+    "A recovered TODD-2 tile has firmware that doesn't match any known variant. The interference pattern it produces isn't designed to disorient — it's designed to implant a specific false memory of a location the target has never been."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "violence",
+    "war",
+    "theft",
+    "heist",
+    "secret",
+    "memory",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "pain",
+    "market",
+    "rain",
+    "hover"
+  ]
+}

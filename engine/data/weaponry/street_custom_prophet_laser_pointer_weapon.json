@@ -1,0 +1,39 @@
+{
+  "id": "019d6143ab4977e4bab340100f1e9489",
+  "name": "Street Custom 'Prophet' Laser Pointer Weapon",
+  "type": "weapon",
+  "aliases": [
+    "Prophet",
+    "Pointer Gun",
+    "Pen Laser",
+    "God's Finger"
+  ],
+  "category": "energy",
+  "description": "A high-powered laser weapon disguised as — or built from — industrial laser cutting modules stacked in series within a tube roughly the size of a flashlight. The Prophet concentrates coherent light into a beam capable of causing instant retinal destruction at distance and thermal burns on skin with sustained exposure. The build uses commercially available laser diodes intended for industrial cutting applications, wired in parallel to achieve dangerous power levels. The weapon is favored by street-level operators for its concealability, silence, and the terrifying precision of a weapon that can blind someone from across a room before they know they are being targeted.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — directed energy weapon",
+  "base_technologies": [
+    "Industrial laser diode stacking",
+    "Coherent light focusing optics",
+    "Concealed energy weapon fabrication"
+  ],
+  "specifications": "beam type: Visible coherent light, 450nm wavelength\npower output: 5-20W depending on diode count\neffective range: Line of sight, lethal to eyes at 500+ meters\nthermal effect: Second-degree burns at 5 meters with 3-second exposure\nweight: 0.3-0.8 kg\npower source: Lithium cell pack, 2-5 minutes continuous\nconcealability: Flashlight or pen-sized form factor",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A sniper-style blinding campaign has left fourteen people permanently blind in a Tier 2 commercial district — the attacks are precise, targeted, and the weapon leaves no ballistic evidence.",
+    "A batch of Prophet builds is circulating that use an unstable diode configuration prone to thermal runaway — the weapons are blinding their users as often as their targets."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "energy",
+    "weapon",
+    "gun",
+    "sniper",
+    "ai",
+    "power",
+    "tier 1"
+  ]
+}

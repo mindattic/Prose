@@ -1,0 +1,238 @@
+{
+  "id": "019d6143a6f2755f84945e6d0e93aa6d",
+  "type": "character",
+  "name": "Teo Vargas-Illesca",
+  "aliases": [
+    "Teito",
+    "Patch",
+    "The Kid (outdated, resented)"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street-Level Medic / Unlicensed Trauma Surgeon",
+  "age": 19,
+  "status": "active",
+  "location": "The Shelf",
+  "description": "Teo is slight and brown-skinned, with the kind of wiry build that comes from not eating enough rather than any athletic intention, and hands that are disproportionately steady for someone his age. His hair is cut close on the sides and left longer on top in a way that has grown out past its original shape, and he has a small scar through his left eyebrow from a job that went sideways when he was sixteen. He wears scrub-green cargo pants, a compression undershirt, and whatever outer layer is clean, with a reinforced medical bag that is older than his current career and significantly better maintained than anything else he owns.\n\nTeo grew up in The Shelf in the orbit of a street collective that needed someone who could handle wounds and didn't ask the kind of questions that brought attention. He taught himself from salvaged medical texts, stolen clinical AR modules, and two years of shadowing a defrocked surgeon named Orsolya who operated out of a back room in exchange for silence and supply runs. Orsolya disappeared when Teo was seventeen—he suspects she was picked up for an unlicensed practice sweep, but has no confirmation—and he inherited her equipment, her client list, and her reputation before he was old enough to have built his own.\n\nHe is genuinely gifted in ways he cannot fully articulate, with an intuitive grasp of trauma response that exceeds his formal training by a significant margin. He is also nineteen, which means he makes decisions with a speed and confidence that occasionally substitute for the judgment he has not yet developed. He charges what people can pay, refuses to let anyone die on his table for reasons of cost, and has a growing reputation in The Shelf as someone you can trust with your life in the most literal possible sense, which is a reputation that attracts exactly the kind of trouble a nineteen-year-old should not be navigating alone.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.68,
+      "id": 0.71,
+      "shadow": 0.33,
+      "mask": 0.45,
+      "ghost": 0.52
+    },
+    "core_fears": [
+      "Losing someone on the table because he simply did not know enough",
+      "Being licensed and regulated and turned into something that serves only people who can pay for it",
+      "That the people he patches up will keep doing whatever put them on his table until one of them doesn't survive it"
+    ],
+    "core_desires": [
+      "To actually know what he is doing—to have the training that would make the intuition safe",
+      "To have a real operating space with real equipment that doesn't require improvisation",
+      "To find out what happened to Orsolya"
+    ],
+    "coping_mechanisms": [
+      "Gallows humor that he deploys with the timing of someone who has learned it works",
+      "Obsessive post-procedure review, going over every decision in writing in a battered notebook",
+      "Keeping busy to the point of exhaustion so he doesn't have to sit with the ones he couldn't save"
+    ],
+    "blind_spots": [
+      "Underestimates how much his youth affects how people assess his credibility, and compensates with overconfidence",
+      "Has not processed that he is running a version of the same operation that got Orsolya taken away",
+      "Tends to see the physical problem and miss the systemic one—fixes the wound without asking why someone keeps getting wounded"
+    ],
+    "secret": "Three months ago he performed an emergency procedure on someone who later turned out to be a mid-tier enforcer for a faction he has a quiet arrangement with—an arrangement that required him to report certain kinds of injuries. He did not report it. He does not know if anyone noticed."
+  },
+  "speech_patterns": {
+    "vocabulary": "Medical terminology used casually and without affectation, mixed with Shelf slang; speaks faster when nervous; swears in Spanish under his breath during procedures",
+    "cadence": "Quick and clipped in professional mode, looser and more digressive when relaxed; tends to front-load important information",
+    "verbal_tics": [
+      "Says 'okay, okay' as a self-steadying mechanism when assessing a situation",
+      "Uses 'technically' to hedge claims he is actually confident in",
+      "Refers to patients as 'this one' during procedures"
+    ],
+    "example_lines": [
+      "'Okay, okay—exit wound's clean, which is the good news. The bad news is everything else. How long ago? No, don't tell me, I can tell. Lie down.'",
+      "'I am technically not a doctor. I am also technically the only person in a six-block radius who can do this, so.'",
+      "'She made it. Don't thank me, thank the fact that you got her here in under twenty minutes. Next time, ten. Write it down.'",
+      "'I don't do triage by who's paying. I do triage by who's dying fastest. If that's a problem for you, there's a licensed clinic in the Core that will absolutely let you fill out forms while someone bleeds.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Orsolya (surname unknown)",
+      "type": "mentor, missing",
+      "description": "The defrocked surgeon who taught him and disappeared. He keeps her equipment calibrated and her methods current as if she might return and inspect his work.",
+      "emotional_core": "Unresolved grief and loyalty, structured as professional debt",
+      "story_tension": "She may not have been taken in a sweep—she may have left voluntarily, or been moved by a faction, or be findable"
+    },
+    {
+      "name": "Imara Solís-Bekele",
+      "type": "repeat client, complicated affection",
+      "description": "Imara has been on his table twice. He has given her the speech about pattern recognition both times. She has not changed her patterns. He has not stopped treating her.",
+      "emotional_core": "A frustrated protectiveness he does not have the vocabulary to express",
+      "story_tension": "The third time she comes in, the injury may be beyond what he can manage alone"
+    },
+    {
+      "name": "Blessed Nkemdirim",
+      "type": "uneasy benefactor",
+      "description": "Blessed has supplied Teo with medical materials twice without asking for anything explicit in return. Teo knows this is not charity and has not yet been told what the ledger entry is.",
+      "emotional_core": "Gratitude and the specific anxiety of a debt whose terms you haven't been shown",
+      "story_tension": "The call-in is coming, and it will almost certainly conflict with Teo's operating principles"
+    }
+  ],
+  "story_hooks": [
+    "Someone brings him a patient with augmentations he has never encountered—military or corporate-grade—and the injuries suggest something that should not be happening in The Shelf",
+    "He is offered a legitimate residency placement by a Meridian Core medical institution, with conditions attached that would require him to stop operating in The Shelf",
+    "Orsolya surfaces—not missing, but working under a different name for a faction that has very specific ideas about what she owes them",
+    "The unreported enforcer patient comes back—not for treatment, but to tell him what he has been drawn into by his silence"
+  ],
+  "narrative_function": "Ground-level humanity and moral clarity—Teo represents what care looks like without institutional mediation, and his youth makes the cost of that clarity visible; also functions as a node connecting multiple factions through the neutral ground of medical need",
+  "augmentations": "Haptic feedback enhancement in both hands, medical-grade, installed by Orsolya—increases tactile resolution for surgical work,Basic AR overlay in right eye, medical reference only, running on a cracked license that expires periodically and requires rebooting,No defensive or offensive augmentations",
+  "daily_life": "Keeps irregular hours dictated by whoever needs him. Sleeps in the back of his operating space—a converted utility room with a proper surgical lamp he is inexplicably proud of. Eats street food when he remembers to eat. Spends downtime reviewing procedures in his notebook and running through scenarios. Has a small collection of physical medical texts he treats with more care than anything else he owns. Occasionally plays cards with the collective members who look out for his space in exchange for priority treatment.",
+  "affiliation": "Loosely aligned with a Shelf street collective for mutual protection; functionally independent; has informal supply relationships with two mid-tier factions that he is careful not to let become obligations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 6,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 6,
+      "transparency_guardedness": 4
+    },
+    "drives": [
+      "Competence",
+      "Knowledge",
+      "Finding Orsolya"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Speeds up physically and verbally; defaults to gallows humor"
+      },
+      "moral": 8,
+      "trust": 5,
+      "desperation": 6
+    },
+    "strengths": [
+      "Bravery",
+      "Kindness",
+      "Curiosity",
+      "Perseverance",
+      "Fairness"
+    ],
+    "weaknesses": [
+      "Prudence",
+      "Self-regulation",
+      "Perspective",
+      "Humility",
+      "Judgment"
+    ],
+    "tags": [
+      "street-medic",
+      "unlicensed-surgeon",
+      "youth",
+      "gifted",
+      "shelf-native"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Triage by who is dying fastest, never by who is paying",
+      "Never turn away a patient for inability to pay",
+      "Keep Orsolya equipment calibrated as if she might inspect it",
+      "Review every procedure in writing afterward, no exceptions",
+      "Accept supplies from factions but resist letting them become obligations",
+      "Say okay okay as a self-steadying mechanism before every assessment"
+    ],
+    "escalation_ladder": [
+      "Gallows humor deployed with practiced timing",
+      "Direct medical authority — drops the youth affect and commands the room",
+      "Overconfident action that substitutes speed for judgment",
+      "Freezes when confronted with a case beyond his training"
+    ],
+    "interpersonal_modes": {
+      "orsolya": "Unresolved grief structured as professional debt; keeps her methods current",
+      "imara_solis_bekele": "Frustrated protectiveness he cannot articulate; gives her the pattern-recognition speech",
+      "blessed_nkemdirim": "Gratitude mixed with anxiety about an undefined debt",
+      "patients": "Quick, competent, reassuring — front-loads important information",
+      "strangers": "Overcompensates for youth with overconfidence"
+    },
+    "stress_responses": {
+      "low": "Obsessive post-procedure notebook review",
+      "medium": "Works to exhaustion to avoid sitting with the ones he could not save",
+      "high": "Speed increases, judgment decreases; substitutes confidence for caution",
+      "critical": "Swears in Spanish under his breath and goes very still before acting"
+    },
+    "contradictions": [
+      "Running the same kind of unlicensed operation that got Orsolya taken away",
+      "Sees the physical wound but misses the systemic one — fixes without asking why",
+      "Compensates for youth with overconfidence that occasionally replaces the judgment he has not yet developed"
+    ],
+    "habits": [
+      "Says okay okay before assessing any new situation",
+      "Reviews every procedure in a battered notebook during downtime",
+      "Eats street food only when he remembers to eat",
+      "Plays cards with collective members who guard his space",
+      "Uses technically to hedge claims he is actually confident in"
+    ],
+    "breaking_points": [
+      "Losing someone on the table because he did not know enough",
+      "Being offered a legitimate residency that requires abandoning the Shelf",
+      "Orsolya surfacing under circumstances that reveal uncomfortable truths",
+      "The unreported enforcer returning with consequences for his silence"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

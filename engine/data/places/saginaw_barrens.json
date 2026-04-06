@@ -1,0 +1,108 @@
+{
+  "id": "019d6143a9307e8c945f298211799831",
+  "type": "place",
+  "name": "Saginaw Barrens",
+  "aliases": [
+    "Bay City / Saginaw MI",
+    "The Barrens",
+    "Lumber Ghost",
+    "Sag-Bay"
+  ],
+  "description": "The Saginaw River valley was once the lumber capital of the world. Then it was a manufacturing center. Then it was a rust belt cautionary tale. Now it is the Barrens — a sprawling, depopulated urban landscape along the Lake Huron shore where the Saginaw River meets Saginaw Bay. The lumber is gone. The manufacturing is gone. The people are mostly gone. What remains is infrastructure built for 400,000 people occupied by 90,000, and the particular atmosphere of a place that was abandoned not by catastrophe but by the slow withdrawal of economic purpose.\n\nThe Saginaw Barrens is what happens when the GLM's economic engine moves on and nobody turns off the lights. The old manufacturing districts along the river have been partially reclaimed by automated recycling operations — Ashgrave Materials runs a sovereignty facility that processes salvage from the abandoned industrial buildings, extracting metals, composites, and construction materials for resale. The operation employs 3,000 people in a city that once employed 150,000 in manufacturing. The math is the message. The residential areas that remain occupied cluster around the recycling facility and the waterfront, where a stubborn community maintains services, schools, and something resembling civic life through a combination of mutual aid and refusal to leave.\n\nSaginaw Bay itself has become an automated aquaculture zone — Ironclad Agrisystems operates protein farming platforms across the shallow bay, producing synthetic fish and kelp-based nutrients for the GLM's lower-tier food supply. The platforms are visible from shore, geometric grids of floating infrastructure that produce food without requiring the presence of the people who eat it. The bay's natural fishery is gone — the water chemistry won't support it — but the aquaculture platforms thrive in conditions that killed the original ecosystem. The irony writes itself. The Barrens is a place where the future arrived, found the present lacking, and automated the replacement.",
+  "atmosphere": {
+    "sights": [
+      "Abandoned manufacturing buildings stretching along the Saginaw River — roofless, windowless, being slowly dismantled by Ashgrave recycling drones",
+      "Aquaculture platforms on Saginaw Bay, geometric and precise, producing food in water that can't support natural life",
+      "Occupied residential blocks surrounded by empty ones — islands of habitation in a sea of vacancy",
+      "The Saginaw River carrying recycling runoff to the bay — water the color of rust and progress",
+      "Deer and coyotes in the abandoned districts — nature reclaiming what the economy released"
+    ],
+    "sounds": [
+      "Ashgrave recycling drones dismantling buildings — the sound of a city being converted into raw materials",
+      "Wind through empty structures — the Barrens generates its own weather sounds, and they sound like loneliness",
+      "Aquaculture platform machinery on the bay — mechanical, rhythmic, and audible from the shore on quiet nights",
+      "The occupied districts' community sounds — children, conversation, music — concentrated and defiant"
+    ],
+    "smells": [
+      "Industrial rust and recycling chemical residue — the scent of buildings being reduced to components",
+      "Saginaw Bay aquaculture — a synthetic marine smell, close to fish but chemically wrong",
+      "Vegetation growing through concrete in the abandoned districts — earth reclaiming human ambition"
+    ],
+    "feel": "A place that is both ending and persisting simultaneously. The Barrens is not dead — 90,000 people live here, work here, raise children here — but it is dying around them, and they know it. The atmosphere is not despair. It is something more complex: the knowledge that your home is being recycled, and the decision to stay anyway.",
+    "tags": []
+  },
+  "demographics": "Population 90,000, down from 300,000 a generation ago and 400,000 at the manufacturing peak. The remaining population is overwhelmingly Tier 1 — the people who couldn't afford to leave, or who chose not to. Median age is rising. Community cohesion is high — shared adversity does that. The excluded don't come to the Barrens; there's nothing to be excluded from.",
+  "economy": "Recycling and salvage (Ashgrave Materials) and automated aquaculture (Ironclad Agrisystems). The two operations account for 80% of formal employment. The remaining 20% is community economy — services, small-scale agriculture, and the barter networks that develop when formal currency becomes scarce. The Barrens produces raw materials and food for the GLM and receives almost nothing in return.",
+  "power_structure": "Ashgrave Materials and Ironclad Agrisystems hold sovereignty over their respective operations. Michigan municipal government maintains jurisdiction over the residential areas, but with a tax base of 90,000 in infrastructure built for 400,000, governance is triage. A community council — elected informally, recognized reluctantly by the municipal government — handles the day-to-day decisions that keep the occupied districts functioning.",
+  "dangers": [
+    "Structural collapse in the abandoned districts — the buildings are being recycled, but not fast enough to prevent random failure",
+    "Ashgrave recycling operations encroaching on occupied residential areas — the drones don't always distinguish between abandoned and inhabited",
+    "Aquaculture chemical runoff in Saginaw Bay — the platforms produce food and contamination in equal measure",
+    "Isolation — the Barrens is low-priority for emergency services, supply deliveries, and anyone else's attention",
+    "Economic death spiral — the population is too small to sustain services, and the lack of services drives the population smaller"
+  ],
+  "opportunities": [
+    "Cheap real estate — the abandoned districts contain buildings, infrastructure, and space that can be acquired for almost nothing",
+    "Salvage — Ashgrave doesn't process everything, and what they leave behind has value to someone with the right contacts",
+    "Aquaculture expertise — Bay-trained operators are employable across the GLM's food production network",
+    "Privacy — the Barrens' low surveillance footprint makes it useful for operations that prefer not to be observed"
+  ],
+  "story_hooks": [
+    "Ashgrave's recycling drones have excavated something beneath one of the old manufacturing buildings — not construction material, something older, something that shouldn't be there",
+    "The aquaculture platforms on Saginaw Bay have started producing organisms that aren't in the growth program — the synthetic ecosystem is evolving",
+    "A community in the Barrens has declared independence from Michigan municipal governance, establishing the first self-governing territory in the GLM based on nothing more than occupation and refusal to leave"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Bluewater Checkpoint (Port Huron, southeast along the coast)",
+      "Grindstone Shore (Alpena, north along the Huron coast)",
+      "The I-75 Spine (south toward Detroit and Meridian 88)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Ashgrave recycling workers and salvage operators",
+    "Ironclad aquaculture technicians",
+    "Community council members and mutual aid organizers",
+    "Salvagers and scavengers working the abandoned districts"
+  ],
+  "notable_locations": [
+    {
+      "name": "Ashgrave Recycling Zone",
+      "description": "The sovereign salvage operation — drones and automated systems converting a dead manufacturing district into raw materials, building by building",
+      "tags": []
+    },
+    {
+      "name": "Bay Platforms",
+      "description": "Ironclad's aquaculture grid on Saginaw Bay — geometric, automated, and producing food in water that killed its original ecosystem",
+      "tags": []
+    },
+    {
+      "name": "The Holdout Blocks",
+      "description": "The occupied residential district — 90,000 people in buildings maintained by stubbornness and mutual aid",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 43.5945,
+    "lng": -83.8889,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "death",
+    "ai",
+    "synthetic",
+    "elf",
+    "surveillance",
+    "alley",
+    "bar",
+    "rain",
+    "train",
+    "food",
+    "drone",
+    "water",
+    "lake"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57f74b9a3b08986fcb27a13",
+  "name": "Missionary",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Shares their faith with evangelical fervor",
+  "behavioral_signature": "Converts, teaches, spreads the word",
+  "under_stress": "Becomes more aggressive in conversion",
+  "at_rest": "Preaching, teaching, reaching out",
+  "will_always": [
+    "spread the word"
+  ],
+  "will_never": [
+    "keep their faith private"
+  ],
+  "unless": [
+    "missionary work is destroying a culture"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Zealot",
+      "threshold": 0.7,
+      "context": "fervent belief"
+    },
+    {
+      "archetype": "Teacher",
+      "threshold": 0.65,
+      "context": "sharing knowledge"
+    }
+  ],
+  "opposite_of": [
+    "Rationalist"
+  ],
+  "tags": [
+    "evangelical",
+    "driven"
+  ]
+}

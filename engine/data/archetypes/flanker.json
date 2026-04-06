@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a56f741cb88479b1baa49d64",
+  "name": "Flanker",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Attacks from unexpected angles",
+  "behavioral_signature": "Never where the enemy expects",
+  "under_stress": "Becomes unpredictable, chaotic",
+  "at_rest": "Studies layouts, maps exits",
+  "will_always": [
+    "attack from the side or rear"
+  ],
+  "will_never": [
+    "approach from the obvious direction"
+  ],
+  "unless": [
+    "the only path is straight through"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Ambusher",
+      "threshold": 0.8,
+      "context": "positional"
+    },
+    {
+      "archetype": "Guerrilla",
+      "threshold": 0.75,
+      "context": "indirect"
+    }
+  ],
+  "opposite_of": [
+    "Stone Wall",
+    "Duelist"
+  ],
+  "tags": [
+    "mobile",
+    "tactical"
+  ]
+}

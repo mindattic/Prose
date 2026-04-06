@@ -1,0 +1,121 @@
+{
+  "id": "019d6143a91c77169db10ee07f9d93ed",
+  "type": "place",
+  "name": "Gravesend Basin",
+  "aliases": [
+    "The Basin",
+    "Sinktown",
+    "The Drowned Quarter",
+    "Gravesend"
+  ],
+  "description": "A sunken district occupying what was once a lakefront industrial zone, Gravesend Basin sits three to eight meters below the surrounding city grade, the result of decades of subsidence, failed remediation efforts, and a catastrophic drainage collapse in 2161 that the city never fully addressed. Rainwater, runoff, and leaked coolant from upper-level infrastructure pools in the Basin's lower streets, creating a permanent shallow flood in the deepest sections that residents navigate by elevated walkways, repurposed boats, and improvised bridges between buildings. Despite — or because of — its abandonment by city services, Gravesend has developed a fierce internal community.",
+  "atmosphere": {
+    "sights": [
+      "Street-level floors permanently submerged, windows dark beneath murky water",
+      "Elevated wooden and metal walkways connecting building second floors",
+      "Bioluminescent algae colonies casting blue-green light on water surfaces",
+      "Laundry lines strung between buildings at third-floor height",
+      "Improvised boats — kayaks, flat-bottomed skiffs, repurposed cargo pallets with motors",
+      "Children fishing from walkway edges into the flooded streets",
+      "Rust and waterline stains marking every structure to twice human height"
+    ],
+    "sounds": [
+      "Water moving — lapping, dripping, the distant gurgle of drainage",
+      "Outboard motors on small craft navigating the deeper channels",
+      "Frogs and insects that have colonized the Basin's ecosystem",
+      "Sounds carrying strangely across water in the enclosed space",
+      "Distant city noise made muffled and dreamlike by the basin's below-grade acoustics",
+      "Generator hum from the self-managed power grid"
+    ],
+    "smells": [
+      "Stagnant water with an iron and algae undertone",
+      "Cooking fires on elevated platforms",
+      "Mildew and damp concrete",
+      "Surprisingly clean air in upper levels — the water filters particulates",
+      "Chemical traces from legacy industrial contamination",
+      "Woodsmoke from heating in the dry upper floors"
+    ],
+    "feel": "Unexpectedly peaceful for a disaster zone — the Basin has found its own rhythm. The constant presence of water creates a meditative baseline that residents either embrace or slowly go mad from. Outsiders feel watched and slightly off-balance on the narrow walkways. There is a beauty here that city planners would never have designed.",
+    "tags": []
+  },
+  "demographics": "Predominantly residents who have nowhere else to go or who actively chose to disappear from civic records. Large populations of undocumented workers, people with warrants, those in debt to corporate creditors, and a surprising number of deliberate off-gridders — artists, ideologues, and people who simply do not want to be found. Multi-generational families exist alongside recent arrivals.",
+  "economy": "Subsistence and informal. Aquaculture in the flooded streets — fish, shellfish, and engineered algae — provides both food and a small export trade. Repair and fabrication workshops operate in upper floors. The Basin's off-grid status makes it attractive for services requiring anonymity, and a modest information-economy has developed around people who know how to disappear and how to find those who have.",
+  "power_structure": "The Basin Compact — a council of building stewards, one per occupied structure, that meets weekly on a rotating central platform. The Compact manages the water pumping schedule, walkway maintenance, power grid allocation, and conflict resolution. It has no enforcement mechanism beyond collective social pressure and, in extremis, the threat of platform revocation. Remarkably effective. Two figures hold outsized influence: Maret Osei, who controls the algae cultivation network and therefore food security, and a person known only as the Cartographer, who maintains the only accurate map of which structures are safe.",
+  "dangers": [
+    "Structural collapse — waterlogged buildings fail without warning",
+    "Contaminated water causing illness, particularly in flood season",
+    "Bounty hunters and debt collectors operating outside their legal jurisdiction",
+    "The deeper channels at night, where visibility is zero and accidents happen",
+    "City authorities occasionally threatening clearance operations that never quite materialize",
+    "Legacy industrial contamination in the soil and deep water",
+    "Territorial disputes over the most valuable elevated real estate"
+  ],
+  "opportunities": [
+    "True anonymity — no cameras, no grid connection, no official presence",
+    "Aquaculture products unavailable through licensed supply chains",
+    "A community that protects its own and asks few questions",
+    "Access to people who have successfully erased their official existence",
+    "The Basin's unique ecology has produced biological samples of interest to researchers",
+    "Salvage in the permanently flooded lower floors — the original industrial zone left a great deal behind"
+  ],
+  "story_hooks": [
+    "The Cartographer has gone missing, and with them the only complete map of the Basin's structural hazards — without it, the Compact cannot safely route foot traffic, and three buildings they've been avoiding are now dangerously overcrowded",
+    "Something in the deep water of the Basin's lowest channel has been interfering with boat motors and electronic equipment — the Basin's children are calling it the Quiet, and two adults have drowned in circumstances that don't match simple accident",
+    "A corporate remediation company has filed a legitimate claim on the Basin's land and has been given a 90-day clearance order — the Compact has 90 days to either fight it legally, which requires resources they don't have, or make the project too costly to pursue",
+    "A person living quietly in the Basin for seven years is actually a disappeared corporate whistleblower whose testimony could reopen a closed case — multiple parties have just learned they're here"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Old Harbor",
+      "The Brine Warrens",
+      "Harrowgate Industrial Plateau"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Residents of the Basin community",
+    "Debt fugitives and warrant-holders seeking temporary refuge",
+    "Independent researchers studying the Basin's accidental ecosystem",
+    "Fixers with clients who need to vanish for a while",
+    "Salvage divers working the submerged lower floors",
+    "City officials doing the minimum required inspection visits",
+    "Artists drawn to the aesthetic of managed decay"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Float",
+      "description": "A 40-meter platform assembled from salvaged construction materials and permanently moored at the Basin's geographic center, The Float serves as the Compact's meeting hall, the Basin's largest communal space, and the closest thing Gravesend has to a public square. Markets are held here twice weekly. The structure is surprisingly solid — it has been continuously maintained and improved for over fifteen years.",
+      "tags": []
+    },
+    {
+      "name": "The Lung",
+      "description": "A former industrial air-handling unit whose interior has been converted into a network of dry, warm living spaces by an extended family of engineers. The Lung is the most technologically sophisticated structure in the Basin, running its own filtered air system and a small but reliable power generation setup. The family rents space to those who can pay and has been known to offer shelter to people in acute danger, for reasons they decline to explain.",
+      "tags": []
+    },
+    {
+      "name": "Channel Six",
+      "description": "The deepest navigable waterway through the Basin's flooded streets, wide enough for two boats to pass and dark enough that even augmented eyes struggle below the surface. Channel Six is the Basin's main artery and also its most dangerous passage after dark. The walls of buildings along its length are covered in marker paint indicating depths, hazards, and the names of those who drowned in the water below.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.855,
+    "lng": -87.61,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "debt",
+    "rain",
+    "night",
+    "food",
+    "water",
+    "lake"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "019d6143aa3e783d96140fa136bfbab6",
+  "name": "Helix Biosystems Engineered Symbiotic Organism Platform",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Engineered Symbiotic Organism Platform",
+  "type": "technology",
+  "aliases": [
+    "ESOP",
+    "Symbiont Maker",
+    "Living Upgrade",
+    "Helix Bond"
+  ],
+  "subcategory": "biotechnology",
+  "description": "A bioengineering framework for designing organisms intended to live in symbiosis with a human host, providing biological capabilities that augmentation achieves through hardware. ESOP-derived organisms include skin-dwelling bacteria that produce natural UV protection, gut microbiome supplements that synthesize vitamins and metabolize toxins, subdermal organisms that regulate body temperature, and blood-borne engineered cells that enhance oxygen transport. Unlike cyberware, symbiont augmentations are biological, self-repairing, and invisible to electronic detection — they are living upgrades that grow with their host.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "HELIX BIOSYSTEMS",
+    "VESPID DYNAMICS"
+  ],
+  "base_technologies": [
+    "Host-compatible symbiotic organism design",
+    "Biological capability augmentation",
+    "Self-sustaining living implant engineering"
+  ],
+  "enables": [
+    "Biological augmentation without hardware",
+    "Self-repairing enhancement systems",
+    "Electronic detection-immune upgrades",
+    "Biologically integrated capability extension"
+  ],
+  "social_impact": "ESOP has created a new category of augmentation that sidesteps the cultural and political conflicts surrounding cyberware. Symbiont upgrades are not visible, not detectable, and not associated with the identity politics of cybernetic augmentation. This invisibility has made them the preferred enhancement path for individuals who want capability improvement without the social stigma or surveillance exposure of cyberware. The technology has also created a new form of inequality — symbiont-augmented individuals appear unaugmented and receive the social benefits of presenting as 'natural' while possessing engineered advantages.",
+  "story_hooks": [
+    "A symbiont organism designed for toxin resistance has mutated within its host and begun producing a novel compound — the host is now unconsciously secreting a substance that affects the behavior of people around them.",
+    "Helix's symbiont organisms have been discovered to communicate with each other between hosts through chemical signals — creating an invisible network of biological information exchange between augmented individuals who have no idea they are connected."
+  ],
+  "tags": [
+    "biotechnology",
+    "technology",
+    "gun",
+    "war",
+    "secret",
+    "identity",
+    "augment",
+    "cyberware",
+    "ai",
+    "elf",
+    "surveillance",
+    "tier 3"
+  ]
+}

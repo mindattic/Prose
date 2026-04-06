@@ -1,0 +1,120 @@
+{
+  "id": "019d6143a9337a73a9433892138ee4b5",
+  "type": "place",
+  "name": "Substation Null",
+  "aliases": [
+    "The Null",
+    "Under-Zero",
+    "The Quiet Place",
+    "Station Nothing"
+  ],
+  "description": "Substation Null is a decommissioned power relay hub occupying several interconnected levels beneath the northern stretch of The Shelf, accessible through maintenance tunnels, a handful of unofficial entry points, and one known surface entrance that most people who use it pretend doesn't exist. Originally constructed to manage power distribution for a now-demolished industrial sector, the station was officially abandoned during the infrastructure consolidation of the 2040s and subsequently removed from city maintenance records — an omission that was either bureaucratic error or deliberate, depending on who you ask.",
+  "atmosphere": {
+    "sights": [
+      "Enormous decommissioned transformer housings repurposed as walls, rooms, and structural supports",
+      "Bioluminescent fungal growth cultivated along certain corridors as low-maintenance lighting",
+      "Jury-rigged power taps drawing from nearby active conduits — the wiring is a palimpsest of decades of ad hoc additions",
+      "Chalk and spray-paint wayfinding marks in evolving community shorthand",
+      "Condensation dripping from ceiling infrastructure, collected in improvised cisterns"
+    ],
+    "sounds": [
+      "The deep subsonic hum of power conduits running overhead — felt more than heard",
+      "Dripping water echoing in high-ceilinged chambers",
+      "Muffled conversations from behind closed-off sections",
+      "Distant transit rumble from city infrastructure above",
+      "The occasional burst of sound from the deeper levels where noise discipline relaxes"
+    ],
+    "smells": [
+      "Damp concrete and mineral water",
+      "Old machine oil soaked into every surface",
+      "Cooking smells from the inhabited sections — usually something with a lot of spice",
+      "Ozone from the live power infrastructure",
+      "The particular staleness of recycled air that has been breathed too many times"
+    ],
+    "feel": "The Null feels like the city's held breath — removed from the noise and surveillance above, heavy with the knowledge that the people here have chosen or been forced into invisibility. There is community in the dark, but also paranoia, and the infrastructure that shelters residents could kill them if it failed.",
+    "tags": []
+  },
+  "demographics": "A rotating population of 300-800 individuals depending on conditions above ground. Off-grid residents, fugitives, political dissidents, individuals escaping debt or corporate indenture, and a core of long-term inhabitants who have built permanent lives here. Also hosts a significant transient population using it as a waypoint.",
+  "economy": "Barter-dominant with some scrip circulating from the surface. Residents trade skills, scavenged materials, information, and labor. A small number of above-ground operators provide essential supplies in exchange for services the Null's population can uniquely offer: discretion, access to the tunnel network, and off-record technical work.",
+  "power_structure": "The Council of Conductors — an ironic title adopted by seven long-term residents who manage resource allocation, dispute resolution, and security policy. Membership is earned through tenure and community trust rather than election. Their authority is real but consensus-based; they can be overruled by collective action and they know it.",
+  "dangers": [
+    "Infrastructure failure — aging power conduits, unstable ceilings, and flooding from above are constant threats",
+    "City utility crews occasionally enter for maintenance and must be redirected or avoided",
+    "Bounty runners and corporate retrieval teams probe the tunnel network for specific targets",
+    "Interpersonal violence in a closed environment with no external authority",
+    "Air quality in the deeper sections requires monitoring and can degrade without warning",
+    "The power taps are illegal and any significant draw could trigger automated fault detection above ground"
+  ],
+  "opportunities": [
+    "Unmonitored meeting space with no surveillance infrastructure",
+    "Access to the tunnel network connecting to multiple districts across the city",
+    "A community of people with strong motivation to stay off official records — ideal for sensitive recruitment",
+    "Technical expertise concentrated among residents who have learned to maintain infrastructure with nothing",
+    "A repository of information about city infrastructure that predates current digital records"
+  ],
+  "story_hooks": [
+    "The Council of Conductors has sent word through careful channels that something is moving through the deeper tunnels — something they cannot identify and are not willing to investigate alone",
+    "A child born in the Null has been identified by a corporate genetic database as carrying a proprietary gene sequence, triggering a legal claim of ownership that the above-ground courts are taking seriously",
+    "A section of the Null that has been sealed for fifteen years has begun broadcasting a repeating signal on a frequency that interferes with local neural implants",
+    "A long-term resident who served as an unofficial historian has died, and their records — which reportedly document the real reasons the station was decommissioned — have gone missing",
+    "The Council needs help negotiating with a new group that has moved into the deep tunnels — armed, organized, and not interested in the existing arrangement"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Shelf",
+      "The Laceworks",
+      "Old Harbor"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Permanent off-grid residents and refugees from above",
+    "Runners and fixers using the tunnel network for discreet transit",
+    "Journalists and researchers who have earned access",
+    "Smugglers moving goods between districts below surveillance level",
+    "Individuals in the process of disappearing — or helping someone else do so"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Main Hall",
+      "description": "The largest interior space in the Null, occupying the footprint of the original primary relay chamber. The decommissioned transformer housings have been converted into residences, workshops, and communal spaces. A central fire pit — vented through a carefully maintained chimney improvised from old conduit — serves as the community's social center. The Council meets here in open session on the first of each month.",
+      "tags": []
+    },
+    {
+      "name": "The Archive Room",
+      "description": "A cramped side chamber where decades of residents have deposited documentation: handwritten journals, printed city records, salvaged hard drives, and hand-drawn maps of the tunnel network. Maintained by a rotating archivist, it represents an unofficial history of both Substation Null and the city above from the perspective of those the city forgot.",
+      "tags": []
+    },
+    {
+      "name": "The Deep Corridor",
+      "description": "A tunnel extending beyond the known inhabited sections of the Null, running beneath city blocks that have changed ownership multiple times. The walls here predate the station itself, incorporating older infrastructure of uncertain purpose. The Council discourages exploration without escort, citing structural instability — though longtime residents suspect the reasons are more complicated.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.872,
+    "lng": -87.635,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "violence",
+    "gun",
+    "war",
+    "smuggle",
+    "trust",
+    "neural",
+    "genetic",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "power",
+    "debt",
+    "tunnel",
+    "bar",
+    "refugee",
+    "shelf"
+  ]
+}

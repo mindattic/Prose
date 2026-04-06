@@ -1,0 +1,192 @@
+{
+  "id": "019d6143a735725d8ebc8723498415dc",
+  "type": "character",
+  "name": "Zibusiso Ferrante-Nakawé",
+  "aliases": [
+    "Zibu",
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Loan shark and debt enforcer operating out of Gravesend Basin",
+  "age": 44,
+  "status": "active",
+  "location": "Gravesend Basin — runs collections from a tea house called The Silt Cup on Mucker's Row",
+  "description": "Zibusiso is a heavyset woman with deep brown skin mapped by old keloid scars she's never had removed — she calls them her receipts. Her hair is grown long and locked, threaded with copper wire and small data chips she claims hold the records of every debt ever owed to her. Her eyes have been modded with a golden spiral iris pattern, and she wears reading lenses over them when working numbers, which is always. She dresses in layered kente-stripe synthfabric and keeps her hands conspicuously unaugmented — soft, manicured, rings on every finger — because she wants people to notice she doesn't need chrome to hurt them.\n\nZibusiso is meticulous, patient, and genuinely warm in the way that predators sometimes are. She remembers birthdays, asks after sick relatives, and will extend grace periods with apparent generosity before the mood shifts into something cold and absolute. She doesn't threaten — she simply describes consequences in precise, accountant-level detail. People leave her table feeling both comforted and terrified, which is exactly how she likes it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "losing control of her ledger — being owed something she cannot collect",
+      "being seen as weak or sentimental"
+    ],
+    "core_desires": [
+      "absolute clarity about where she stands with everyone",
+      "to build something lasting that outlives her"
+    ],
+    "coping_mechanisms": [
+      "meticulous record-keeping as a form of control",
+      "performing warmth to disarm"
+    ],
+    "blind_spots": [
+      "she underestimates the loyalty networks of tight-knit families and communities",
+      "she believes everyone has a price and misses people who genuinely don't"
+    ],
+    "secret": "She has been quietly forgiving the debts of a small cluster of families in the Basin whose children remind her of the daughter she gave up for adoption twenty years ago — she has no idea the daughter is now working three blocks away as a dock loader"
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and formal with a warm veneer — uses financial metaphors for everything, switches to blunt declarative sentences when the warmth is done",
+    "cadence": "Measured and unhurried, never raises her voice",
+    "verbal_tics": [
+      "'Let's be clear about the numbers here'",
+      "'That's the interest talking, not me'"
+    ],
+    "example_lines": [
+      "You borrowed forty, the month rolled twice, so what you owe now is fifty-eight and my goodwill, which I'm told is worth something.",
+      "I'm not angry with you, sweetheart. Anger is for people who didn't see this coming. I saw this coming."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A debtor who cannot pay has disappeared — Zibusiso suspects foul play and wants to know if the debt died with them or if someone is hiding them",
+    "She approaches the players because someone has been forging her collection receipts, undercutting her reputation and skimming payments",
+    "Her daughter has unknowingly taken out a loan from Zibusiso's operation and Zibusiso is in agony about what to do"
+  ],
+  "narrative_function": "Quest giver, financial pressure source, information broker on who owes whom, moral complication — she's not cartoonishly evil and can be genuinely helpful if approached correctly.",
+  "augmentations": "Golden spiral iris genemod. Subdermal haptic feedback in fingertips for counting physical currency and detecting forgeries. No combat chrome.",
+  "daily_life": "Opens The Silt Cup at 0600, reviews her ledger over tea, conducts morning collections by 1000, then spends afternoons making new loans and managing the social ecosystem of favors and debts she's built across the Basin.",
+  "affiliation": "Independent — loosely allied with the Gravesend Basin crew known as the Mudline Compact",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 3
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "loan shark",
+      "numbers specialist",
+      "information hub",
+      "community figure",
+      "cold pragmatist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never lend to someone who cannot name two people who will vouch for them",
+      "Always give one genuine warning before escalating",
+      "Never conduct business in anger"
+    ],
+    "escalation_ladder": [
+      "Warm reminder and renegotiation offer",
+      "Cold formal notice with explicit timeline",
+      "Send an enforcer for a visible social visit — no violence yet",
+      "Asset seizure and public humiliation",
+      "Disappearance of something the debtor loves"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Gracious and curious, offers tea, asks questions — gathering information under the guise of hospitality",
+      "friends": "Genuinely warm but always slightly transactional — affection is real but never fully separated from what they're worth to her"
+    },
+    "stress_responses": {
+      "low": "Counts her rings, one by one, under the table",
+      "medium": "Becomes very still and very quiet, lets silence do the work",
+      "high": "Retreats to her ledger, refuses further conversation until she's recalculated everything"
+    },
+    "contradictions": [
+      "Genuinely fond of people she is also willing to ruin",
+      "Believes in fairness even within a system she knows is predatory"
+    ],
+    "habits": [
+      "Keeps a handwritten ledger in addition to her digital one — she doesn't fully trust either alone",
+      "Refills people's tea without asking"
+    ],
+    "breaking_points": [
+      "Discovering her daughter is in her debt system",
+      "Someone physically destroying her physical ledger"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal haptic feedback — fingertips only",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal haptic feedback — fingertips only",
+      "replaces": ""
+    },
+    {
+      "name": "Golden spiral iris genemod",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Golden spiral iris genemod",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7,
+    "Opportunist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

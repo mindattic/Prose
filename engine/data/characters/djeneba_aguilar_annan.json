@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a5f27175b3f3aafd69e7b87e",
+  "type": "character",
+  "name": "Djeneba Aguilar-Annan",
+  "aliases": [
+    "Uranium",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Remote drone and vehicle operations specialist — rigger",
+  "age": 45,
+  "status": "active",
+  "location": "Meridian Station — central transit nexus, neutral ground",
+  "description": "Djeneba Aguilar-Annan are athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 45, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Djeneba Aguilar-Annan plans to keep it that way. They work as a rigger out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented rigger in Meridian 88, but they might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.72,
+      "ideal": 0.27,
+      "id": 0.34,
+      "shadow": 0.89,
+      "mask": 0.65,
+      "ghost": 0.53
+    },
+    "core_fears": [
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "To protect the people in their district who can't protect themselves",
+      "To find the person who burned them and make it educational"
+    ],
+    "coping_mechanisms": [
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it"
+    ],
+    "blind_spots": [
+      "Overestimates their own abilities in situations outside their specialty",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Assumes their skill set is more transferable than it actually is"
+    ],
+    "secret": "Djeneba Aguilar-Annan once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "verbal_tics": [
+      "Uses old pre-collapse slang that nobody else remembers",
+      "Repeats the last thing someone said back to them before responding — processing or intimidation"
+    ],
+    "example_lines": [
+      "\"I have eyes in every district. Most of them are on wings.\"",
+      "\"The drone doesn't care about your feelings. Neither do I.\"",
+      "\"Remote operation means I'm everywhere and nowhere. It's very convenient.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone is impersonating Djeneba Aguilar-Annan on jobs, and the impersonator is better at the work than the original",
+    "Djeneba Aguilar-Annan's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A high-paying contract turns out to target someone Djeneba Aguilar-Annan owes a personal debt to"
+  ],
+  "narrative_function": "Djeneba Aguilar-Annan functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Eye replacement — one organic, one cybernetic with recording capability and zoom. Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — works solo contracts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 6
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 5
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 9
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 5
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.65,
+      "caution": 0.9,
+      "loyalty": 0.92,
+      "greed": 0.28,
+      "empathy": 0.66
+    },
+    "drives": [
+      "loyalty",
+      "survival",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 7,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "natural leadership presence",
+      "technical expertise with augmentation systems"
+    ],
+    "weaknesses": [
+      "grudge-holding that compromises rational decision-making",
+      "chronic insomnia affecting long-term performance",
+      "emotional volatility under extreme stress"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "rigger",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never discusses active contracts with anyone not directly involved",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Eye replacement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
+      "replaces": ""
+    },
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

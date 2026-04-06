@@ -1,0 +1,241 @@
+{
+  "id": "019d6143a654775d94a73388f93c6c05",
+  "type": "character",
+  "name": "Marcus Bellamy",
+  "aliases": [
+    "Torque",
+    "The Boss",
+    "Big Marc"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lower Dock Crew leader — Prologue survivor. Lost his right arm.",
+  "age": 34,
+  "status": "active",
+  "location": "The Shelf — lower loading docks",
+  "description": "Marcus Bellamy grew up in the Grind layer of the Shelf, son of a cargo platform supervisor who drank himself to death after a Kessler-Dyne automation wave eliminated his entire shift. Marcus inherited two things: his father's loading dock connections and his father's conviction that the world owes you nothing and you take what you can carry. He built the Lower Dock Crew from six displaced cargo workers who realized that controlling dock access was more profitable than working the docks. He has a seven-year-old son named Eli who lives with Marcus's ex-partner, Danae, three tiers up. Marcus sends money every week. He has never missed a payment. He tells himself the crew is how he provides. The truth is more complicated.\n\nKyle removed his right arm at the shoulder socket. The replacement is a Tier 1 surplus unit that clicks when he extends it and has a two-second lag on fine motor control. He has chrome-plated it because Marcus Bellamy has always believed that looking strong and being strong are the same thing. They are not. He is learning this slowly.\n\nHe keeps upgrading after every encounter with Kyle — more chrome, better hardware, heavier plating. It never helps. He is a man trying to solve a software problem with hardware, and the recurring joke of his appearances is that each time he has less original biology and more machine, and each time it matters less.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.2,
+      "id": 0.4,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0
+    },
+    "core_fears": [
+      "Eli seeing what his father actually does",
+      "His crew seeing him as weak",
+      "Kyle coming back"
+    ],
+    "core_desires": [
+      "To provide for Eli without Eli knowing how",
+      "To feel invincible again",
+      "Revenge he knows he cannot get"
+    ],
+    "coping_mechanisms": [
+      "Upgrades constantly",
+      "Tells increasingly inaccurate stories about the fight",
+      "Sends money to Danae like clockwork"
+    ],
+    "blind_spots": [
+      "More chrome makes him a bigger target, not a harder one",
+      "Eli already knows — kids in the Shelf always know"
+    ],
+    "secret": "The Morozov beating was ordered by someone above him. A Tessera middle manager named Oren Falk. Marcus was the tool, not the hand. He has never told his crew this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dock slang layered over a vocabulary that's smarter than he lets on. Marcus reads — engineering manuals, mostly — but hides it.",
+    "cadence": "Loud in front of the crew. Quiet when alone. The volume is performance.",
+    "verbal_tics": [
+      "Flexes the new arm when talking — testing it, not showing off, but it looks like showing off",
+      "Starts sentences with 'Next time' when he means 'I'm scared'"
+    ],
+    "example_lines": [
+      "Next time's different. *click* ...I'm getting that calibrated.",
+      "Eli asked me why my arm sounds like a stapler. I told him it's a feature. He didn't believe me. Kid's too smart."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Eli Bellamy",
+      "type": "son",
+      "description": "Seven years old. Lives with Danae three tiers up. Marcus lives for the weekly payment and the biweekly visit. Eli is already asking questions Marcus cannot answer.",
+      "emotional_core": "The only clean thing in his life",
+      "story_tension": "If the crew falls apart, the payments stop. If the payments stop, Marcus has no reason to pretend he's not a bad person."
+    },
+    {
+      "name": "Danae Osei",
+      "type": "ex-partner",
+      "description": "Left Marcus when the crew started. She was right to leave. Marcus knows this. He sends money and does not ask to come back.",
+      "emotional_core": "Respect disguised as distance",
+      "story_tension": "Danae knows about Kyle. She told Marcus to stop. He didn't listen."
+    },
+    {
+      "name": "Kyle",
+      "type": "nemesis (one-sided)",
+      "description": "Kyle does not think about Marcus. Marcus thinks about Kyle every day.",
+      "emotional_core": "Humiliation",
+      "story_tension": "Every reappearance is funnier and sadder."
+    },
+    {
+      "name": "Oren Falk",
+      "type": "handler",
+      "description": "Tessera middle manager who ordered the Morozov beating. Marcus takes orders. Marcus does not ask why.",
+      "emotional_core": "Subservience he calls partnership",
+      "story_tension": "If Kyle traces the beating back to Falk, Marcus becomes a loose end."
+    }
+  ],
+  "story_hooks": [
+    "The Morozov beating was ordered by Tessera — corporate reach into Shelf violence",
+    "Eli is a narrative lever",
+    "Each appearance: more chrome, less dignity, same man trying to be enough"
+  ],
+  "narrative_function": "Comic relief through escalating failure. The recurring joke: a man who keeps adding hardware to solve a software problem. Each encounter with Kyle leaves him with less original body. The reader tracks his transformation from threatening to pathetic to accidentally sympathetic.",
+  "augmentations": "Tier 1 surplus right arm (replacement). Sub-dermal jaw plating (new, after Kyle). Chrome-plated knuckles on remaining hand. Knee brace (left, after hand cannon).",
+  "daily_life": "Runs the dock crew. Plans revenge he'll never execute. Shops for chrome upgrades.",
+  "affiliation": "Lower Dock Crew (leader)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 4
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 6,
+      "creativity": 3,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 4,
+      "expression": 6,
+      "integrity": 3
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 8,
+      "transparency_guardedness": 6
+    },
+    "drives": [
+      "Provide for Eli",
+      "Regain respect",
+      "Revenge against Kyle"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Gets louder, upgrades chrome, tells bigger stories"
+      },
+      "moral": 3,
+      "trust": 4,
+      "desperation": 6
+    },
+    "strengths": [
+      "Perseverance",
+      "Leadership",
+      "Bravery",
+      "Love",
+      "Industry"
+    ],
+    "weaknesses": [
+      "Humility",
+      "Prudence",
+      "Perspective",
+      "Self-Regulation",
+      "Honesty"
+    ],
+    "tags": [
+      "crew-leader",
+      "father",
+      "chrome-obsessed",
+      "humiliated",
+      "escalating",
+      "hardware-solution"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never miss a payment to Danae — Eli comes first",
+      "Never let the crew see weakness — volume is armor",
+      "Upgrade after every encounter with Kyle — more chrome, more plating",
+      "Follow Oren Falk's orders without asking why",
+      "Tell the fight story bigger each time",
+      "Chrome-plate everything visible — looking strong IS being strong"
+    ],
+    "escalation_ladder": [
+      "Gets louder, flexes the arm, postures",
+      "Makes threats he cannot back up",
+      "Buys more chrome — heavier, shinier, less useful",
+      "Takes on a job from Falk he knows is too dangerous",
+      "Goes after Kyle directly — the fight he can never win"
+    ],
+    "interpersonal_modes": {
+      "Eli": "Tender, careful, terrified of being seen clearly by his own child",
+      "Danae": "Distant respect — sends money, does not ask to come back",
+      "Kyle": "Obsessive one-sided nemesis — thinks about him daily",
+      "Oren Falk": "Subservient compliance disguised as partnership",
+      "crew": "Loud authority covering growing doubt"
+    },
+    "stress_responses": {
+      "low": "Flexes the new arm, tests the calibration, performs confidence",
+      "medium": "Shops for chrome upgrades, plans revenge scenarios",
+      "high": "Stories about the Kyle fight become increasingly fictional",
+      "critical": "Goes quiet — the volume drops and the real Marcus surfaces"
+    },
+    "contradictions": [
+      "Tells himself the crew is how he provides for Eli — the truth is he needs the crew to feel like he matters",
+      "Keeps adding hardware to solve a software problem — each upgrade makes him a bigger target, not a harder one",
+      "Takes orders from Falk while telling his crew he is the one in charge"
+    ],
+    "habits": [
+      "Flexes the replacement arm when talking — testing, not showing off",
+      "Starts sentences with 'Next time' when he means 'I'm scared'",
+      "Sends money to Danae every week without fail",
+      "Chrome-plates new components before testing them",
+      "Reads engineering manuals in private — hides this from the crew"
+    ],
+    "breaking_points": [
+      "Eli seeing what his father actually does",
+      "Kyle returning and removing more of him",
+      "The crew discovering he takes orders from Falk",
+      "The payments to Danae becoming impossible"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Commander": 0.9,
+    "Natural Authority": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

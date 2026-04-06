@@ -1,0 +1,50 @@
+{
+  "id": "019d6143a7a27444b466bffaed500678",
+  "codename": "LULLABY",
+  "type": "contract",
+  "client": "Anonymous parent (via Ghost Mother)",
+  "client_tier": "Tier 3",
+  "category": "protection",
+  "description": "A corporate whistleblower's family is targeted. Two children, ages 8 and 12, still in school. Get them out and keep them safe for 72 hours.",
+  "objective": "Extract and protect two minors from Tessera Academy. Deliver to safehouse at hour 48.",
+  "location": "The Core",
+  "target": "Two children (protection)",
+  "opposition": "Tessera campus security, possible pursuit teams",
+  "payout": "Φ60,000",
+  "bonuses": [
+    {
+      "type": "clean",
+      "amount": "Φ20,000",
+      "condition": "Children unharmed"
+    },
+    {
+      "type": "ghost",
+      "amount": "Φ15,000",
+      "condition": "Tessera cannot identify the team"
+    }
+  ],
+  "complications": [],
+  "required_capabilities": {
+    "combat": 5,
+    "stealth": 6,
+    "hacking": 3,
+    "social": 7,
+    "medical": 4,
+    "tech": 3,
+    "transport": 6,
+    "demolitions": 0,
+    "surveillance": 5,
+    "linguistics": 0
+  },
+  "crew_size": "3-4",
+  "difficulty": "challenging",
+  "time_limit": "72 hours",
+  "status": "open",
+  "outcome": "",
+  "tags": [
+    "protection",
+    "challenging",
+    "runner",
+    "contract"
+  ]
+}

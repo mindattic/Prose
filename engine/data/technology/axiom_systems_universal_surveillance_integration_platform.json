@@ -1,0 +1,44 @@
+{
+  "id": "019d6143aa3779249a0aecfef1700060",
+  "name": "Axiom Systems Universal Surveillance Integration Platform",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems Universal Surveillance Integration Platform",
+  "type": "technology",
+  "aliases": [
+    "USIP",
+    "All-See",
+    "Panopticon",
+    "Axiom Eyes"
+  ],
+  "subcategory": "surveillance",
+  "description": "A software platform that aggregates feeds from every electronic sensor in a designated area — security cameras, Diaspora devices, IoT sensors, vehicle telemetry, biometric scanners, and environmental monitors — into a unified surveillance picture. USIP creates a complete, real-time model of all activity within its coverage area, tracking every person, vehicle, and electronic device simultaneously. The system uses AI to flag anomalous behavior, predict threat patterns, and reconstruct events after the fact using data from multiple overlapping sensors. Within USIP's coverage area, privacy is not reduced — it is eliminated.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "AXIOM SYSTEMS"
+  ],
+  "base_technologies": [
+    "Multi-source sensor fusion",
+    "Real-time activity modeling",
+    "AI anomaly detection and prediction"
+  ],
+  "enables": [
+    "Total area surveillance with zero blind spots",
+    "Retroactive event reconstruction",
+    "Predictive threat identification",
+    "Complete movement tracking of all persons"
+  ],
+  "social_impact": "USIP coverage areas are sometimes called 'glass zones' — spaces where everyone can be seen at all times. The system has made certain crimes virtually impossible within coverage areas (violent crime, unauthorized entry, unregistered gatherings) while making other crimes trivial to commit for those with USIP access (stalking, blackmail, competitive intelligence). The psychological effect of living under total surveillance has been documented: residents of glass zones report lower crime but also lower creativity, risk-taking, and social spontaneity — a population that is safe but increasingly passive.",
+  "story_hooks": [
+    "A murder was committed inside a USIP glass zone — total surveillance coverage — but the system shows no perpetrator entering or leaving the area, and the victim appears to simply die without external cause on every sensor feed.",
+    "A USIP operator has been using their access to surveil a specific individual obsessively — the amount of data collected borders on a comprehensive digital clone of the target's daily life."
+  ],
+  "tags": [
+    "surveillance",
+    "technology",
+    "war",
+    "crime",
+    "ai",
+    "vehicle",
+    "tier 3"
+  ]
+}

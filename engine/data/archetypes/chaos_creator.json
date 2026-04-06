@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a5617ae1bbbdf99989538271",
+  "name": "Chaos Creator",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Makes beautiful messes",
+  "behavioral_signature": "Introduces entropy into ordered systems",
+  "under_stress": "The chaos becomes a storm",
+  "at_rest": "Breaking patterns, mixing media, smashing norms",
+  "will_always": [
+    "disrupt the expected"
+  ],
+  "will_never": [
+    "create within boundaries willingly"
+  ],
+  "unless": [
+    "chaos threatens something fragile and irreplaceable"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Rebel Artist",
+      "threshold": 0.8,
+      "context": "breaking rules"
+    },
+    {
+      "archetype": "Graffiti",
+      "threshold": 0.75,
+      "context": "disruptive art"
+    }
+  ],
+  "opposite_of": [
+    "Perfectionist",
+    "Architect"
+  ],
+  "tags": [
+    "wild",
+    "unpredictable"
+  ]
+}

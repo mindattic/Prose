@@ -1,0 +1,182 @@
+{
+  "id": "019d6143a6f47f44976e7a50db1d2e02",
+  "type": "character",
+  "name": "Thandiswe Połczyński-Aroha",
+  "aliases": [
+    "Thandi",
+    "Sixteen-Fingers"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Apprentice fabricator, Geartown machine shop",
+  "age": 14,
+  "status": "active",
+  "location": "Geartown",
+  "description": "Thandiswe has their nickname because they have, technically, twelve fingers — a Helix Biosystems geneware expression that manifested at birth, two extra fingers on each hand, fully articulated, that their master fabricator Nzinga insists is what makes them exceptional at fine mechanical work. They are compact and wiry, with warm amber-brown skin, very short natural hair kept close to the skull, and eyes that have a faint natural golden ring around the iris — another geneware expression, unremarked-upon in Geartown. Their hands are always nicked with small cuts and stained with cutting fluid that no solvent quite removes from the cuticles.\n\nThandi is self-possessed in a way that reads as older than fourteen — the product of spending most of their life around adult fabricators who treated them as a colleague-in-training rather than a child. They are deeply invested in the physical, tactile reality of objects: how things fit together, why they break, what a material feels like when it's stressed. They have limited patience for abstraction and social nuance, but they are intensely loyal to Nzinga's shop and to the handful of people they consider their own. They have started to develop opinions about labor and wages that make the older apprentices both proud and nervous.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being permanently separated from the work — injury to their hands",
+      "The shop closing if Nzinga can't make rent"
+    ],
+    "core_desires": [
+      "To build something that lasts longer than they do",
+      "To understand why the machines are worth less every year even though they're getting better at making them"
+    ],
+    "coping_mechanisms": [
+      "Disassembling and reassembling small objects when anxious",
+      "Discussing abstract worries in purely mechanical metaphors"
+    ],
+    "blind_spots": [
+      "Genuinely doesn't register social hierarchies until they've already violated them",
+      "Assumes everyone means what they say — hasn't learned to hear subtext"
+    ],
+    "secret": "They have been secretly repairing a damaged Ferrogate maintenance bot they found in a Geartown access channel — not to sell it, just to see if they can. It's almost working. They haven't told Nzinga because they used shop materials."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and tactile; tends to describe everything in fabrication terms; uses 'load-bearing' as a general-purpose adjective for important things",
+    "cadence": "Steady, unhurried, slightly monotone until engaged — then precise and almost rapid-fire",
+    "verbal_tics": [
+      "'Which means—' as transition phrase",
+      "Taps fingers on nearest surface while thinking (all twelve)"
+    ],
+    "example_lines": [
+      "'That weld's going to fail at the joint. The load-bearing problem isn't the weld itself, which means — it's the material choice before the weld.'",
+      "'I don't know why Nzinga charges less than Copperhead shops for the same work. That seems like a structural problem.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Ferrogate bot they've been secretly repairing has started exhibiting behavior that might indicate an E.L.F. inhabiting it — and it's started communicating",
+    "A Copperhead industrial supplier has been systematically underpricing Geartown shops and Thandi has noticed the pattern in the supply invoices before any adult has"
+  ],
+  "narrative_function": "Local color for Geartown; resource for characters who need fabrication, repair, or information about mechanical systems; potential focus of a labor-dispute storyline.",
+  "augmentations": "Twelve-fingered geneware expression (natural, not installed); basic haptic sensitivity mods in fingertips installed by Nzinga for the work — industrial grade, not cosmetic",
+  "daily_life": "In the shop by 06:30, bench work and component fitting until 14:00, afternoon classroom instruction (Geartown Guild provides rotating technical tutors), evening either at the shop finishing a job or at the communal meal the apprentices share in the building's shared kitchen.",
+  "affiliation": "Nzinga Połczyński-Aroha's fabrication shop (family business), Geartown Apprentice Guild (junior member)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 10,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 3,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Twelve-Fingered",
+      "Fabrication-Prodigy",
+      "Labor-Conscious",
+      "Tactile-Thinker",
+      "Guild-Apprentice"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't start a job you can't finish",
+      "If you can fix it, fix it; complaining without fixing is noise",
+      "Ask Nzinga about people; ask yourself about machines"
+    ],
+    "escalation_ladder": [
+      "Point out the problem precisely and factually",
+      "Repeat themselves, more precisely",
+      "Fix the problem unilaterally and present the outcome"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses whether they know anything useful; not unkind, just direct and slightly impatient",
+      "friends": "Generous with time and tools; will work alongside someone in silence for hours and consider this intimacy"
+    },
+    "stress_responses": {
+      "low": "Gets very focused on whatever is in front of them",
+      "medium": "Starts cleaning and reorganizing the bench unnecessarily",
+      "high": "Goes completely quiet and finds something to take apart"
+    },
+    "contradictions": [
+      "Complains that the Guild meetings are pointless talking and then shows up early and argues vigorously",
+      "Claims not to care about recognition, then carefully dates and marks everything they build with a tiny personal symbol"
+    ],
+    "habits": [
+      "Signs every finished piece with a small stamped mark on an interior surface",
+      "Carries three sizes of hex wrench in their left boot",
+      "Checks the E.L.F. shrine bolted to the shop doorframe every morning — a prayer for the machines to behave"
+    ],
+    "breaking_points": [
+      "Watching someone damage a tool through carelessness",
+      "Nzinga being disrespected by a client"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9,
+    "Optimist": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

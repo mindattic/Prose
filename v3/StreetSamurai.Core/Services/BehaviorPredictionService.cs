@@ -404,7 +404,9 @@ public class BehaviorPredictionService
         var influences = new List<string>();
         if (character.Archetypes.Count == 0) return influences;
 
-        var allArchetypes = archetypeRepo.GetAll().ToDictionary(a => a.Name, StringComparer.OrdinalIgnoreCase);
+        var allArchetypes = archetypeRepo.GetAll()
+            .GroupBy(a => a.Name, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
 
         // Get character's archetypes sorted by strength
         var active = character.Archetypes

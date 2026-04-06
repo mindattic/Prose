@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab547c2087d84fc937885c2b",
+  "name": "Thermal Signature Inverter TSI-2 'Cold Case'",
+  "type": "weapon",
+  "aliases": [
+    "Cold Case",
+    "Freeze Tag",
+    "The Inverter",
+    "White Ghost"
+  ],
+  "category": "cyber",
+  "description": "The TSI-2 is a directed energy weapon that projects a focused beam of concentrated Peltier-effect thermal extraction — colloquially described as 'a heat vacuum' — that does not freeze its target in any conventional sense but instead induces rapid, extreme localized hypothermia by stripping thermal energy from the impact zone faster than biological tissue can compensate. At full power against a human torso, the effect produces a roughly 15-centimeter diameter zone of flash-cooled tissue that seizes muscle fibers, fractures capillary walls, and causes immediate motor failure in the affected area. The surrounding tissue remains at body temperature; only the targeted zone is affected, which creates a wound pattern unlike anything produced by conventional weapons.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+ / Licensed",
+  "legality": "Licensed (corporate security, licensed bounty contractors)",
+  "base_technologies": [
+    "Directed Peltier-effect thermal extraction",
+    "Coherent energy focusing",
+    "Cryogenic containment cycling"
+  ],
+  "specifications": "form factor: Compact carbine, 520mm length, distinctive matte-white housing with heat-sink ribbing along barrel\neffective range: Up to 35 meters at full effect; partial effect to 50 meters\npower source: Liquid-nitrogen-assisted thermoelectric cell, 8 full-power shots or 20 partial shots\nweight: 2.2 kg\nbeam diameter at target: 12–18 cm depending on range\neffect onset: Immediate on contact\ncooldown between shots: 6 seconds\ncell replacement time: 8 seconds",
+  "tactical_use": "The Cold Case is primarily used for incapacitation rather than killing — a hit to a limb renders it non-functional for 20–40 minutes as tissue gradually rewarms. Corporate security teams use it for detaining high-value targets who need to be taken alive. Bounty contractors favor it because a torso hit is incapacitating but survivable if medical attention arrives within roughly fifteen minutes, giving them a live delivery option. Against heavily armored targets, the TSI-2 is less effective as armor insulates against thermal extraction — it is specifically optimized for lightly armored, highly augmented targets whose cybernetic components are disrupted by the temperature differential.",
+  "cultural_context": "TESSERA CORPONATION markets the TSI-2 aggressively as a 'humane compliance solution,' and there is a glossy corporate legitimacy to the weapon that other entries in this arsenal lack. Licensed security firms display it visibly as a statement of institutional restraint — 'we have the option not to kill you.' On the street, this reputation is regarded with deep suspicion. Operators know that a Cold Case hit to the torso is survivable only with prompt care, and corporate security is not always motivated to provide that care promptly. The weapon's clean white aesthetic and the bloodless nature of its wounds have made it a favorite in corporate propaganda depicting 'responsible force.'",
+  "known_users": [
+    "TESSERA CORPONATION internal security division",
+    "Licensed corporate bounty contractors",
+    "High-end private security details",
+    "Certain police auxiliary units in corporate-administered districts",
+    "Collectors with TESSERA brand loyalty"
+  ],
+  "story_hooks": [
+    "A bounty contractor delivers a target alive but the target dies of complications from Cold Case exposure two hours later — was it negligence, or did someone slow-walk the medical response intentionally?",
+    "A stolen shipment of TSI-2 units has appeared on the black market with the licensing chips removed — someone is planning something that requires the appearance of institutional legitimacy without the paper trail.",
+    "A character is hit by a Cold Case round in a situation where medical help is hours away — do they find a solution, or does the clock run out?",
+    "TESSERA's 'humane compliance' marketing is being used in a legal case to argue that a security team acted appropriately — but a street medic's testimony about the actual wound progression tells a different story."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "war",
+    "loyalty",
+    "loss",
+    "augment",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "medical",
+    "market",
+    "bar",
+    "rain",
+    "cold",
+    "train",
+    "armor",
+    "energy",
+    "tier 3"
+  ]
+}

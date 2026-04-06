@@ -1,0 +1,61 @@
+{
+  "id": "019d6143a85079a8bd65c55d39059054",
+  "name": "Arcturus Defense Solutions Null-Seam Signal Shroud",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Null-Seam Signal Shroud",
+  "type": "equipment",
+  "aliases": [
+    "The Shroud",
+    "Null Bag",
+    "Signal Coffin"
+  ],
+  "category": "comms",
+  "description": "The Null-Seam Signal Shroud is a portable Faraday enclosure designed to completely isolate any electronic device placed inside it from all external electromagnetic signals — incoming and outgoing. Constructed from twelve interlocking layers of Arcturus's proprietary Ferrolattice fabric, the shroud achieves attenuation exceeding 120dB across frequencies from 100Hz to 40GHz, effectively rendering any device inside it electronically dead to the outside world. It folds to the size of a large envelope, deploys in seconds, and is rated for field use in wet, dusty, and high-vibration environments.\n\nWhat distinguishes the Null-Seam from cheaper signal-blocking pouches is the seam construction: conventional Faraday bags fail at their closures, where imperfect contact between layers creates signal leakage paths. Arcturus solved this with a magnetic compression seal that creates continuous conductive contact around the entire closure perimeter, eliminating the seam gap entirely. The result is a blocking performance that meets military-grade standards for device isolation, used by Arcturus's own field intelligence units for transporting sensitive hardware through hostile surveillance environments.\n\nThe shroud is also used offensively: any device placed inside it is immediately cut off from remote wipe commands, tracking signals, and tamper-detection pings. This makes it indispensable for anyone who has acquired hardware they need to examine without triggering its security protocols — or for anyone carrying a device they do not want broadcasting their location.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Ferrolattice multi-layer EM attenuation fabric",
+    "Magnetic compression null-seam closure",
+    "Broadband Faraday shielding (100Hz–40GHz)",
+    "Field-rated flexible enclosure construction"
+  ],
+  "specifications": {
+    "dimensions_folded": "210mm x 150mm x 8mm",
+    "dimensions_deployed": "380mm x 280mm interior usable space",
+    "weight": "340g",
+    "attenuation": "120dB+ across 100Hz–40GHz",
+    "closure_type": "Magnetic compression null-seam, continuous conductive contact",
+    "material": "Ferrolattice 12-layer composite, field-rated",
+    "environmental_rating": "IP67 equivalent (water and dust resistance)",
+    "deployment_time": "Under 5 seconds",
+    "capacity": "Devices up to 280mm x 180mm x 40mm; multiple smaller devices"
+  },
+  "tactical_use": "Operatives use the Null-Seam Shroud to transport acquired hardware — stolen comm devices, lifted data cores, confiscated implants — without triggering remote security responses. A device inside the shroud cannot receive a remote wipe command, cannot ping its owner's network, and cannot transmit location data. It is also used to carry a team's own devices through areas with aggressive signal-harvesting infrastructure, preventing passive logging of device identifiers. Some teams use it as a pre-mission discipline tool: all personal devices go in the shroud before an operation begins, eliminating the risk of accidental transmission.",
+  "cultural_context": "The Null-Seam Shroud has become something of a ritual object in professional circles. Pulling one out before a meeting signals that you are serious about operational security — a nonverbal statement that what happens in this room stays in this room. Some fixers require everyone at a negotiation to bag their devices as a condition of the meeting. In the Undercroft, cheaper knockoffs with degraded attenuation performance are sold under various names; savvy buyers test them with a basic RF meter before trusting them with anything important. The genuine Arcturus model is identifiable by a small embossed serial number on the interior lining — knockoffs rarely bother to replicate it.",
+  "known_users": [
+    "Military and corporate intelligence field units",
+    "Professional fixers and negotiators",
+    "Hardware acquisition specialists",
+    "Counterintelligence operatives",
+    "High-security courier services"
+  ],
+  "story_hooks": [
+    "A character recovers a Null-Seam Shroud with a device still inside — the device is still live, meaning someone sealed it and then never came back to open it.",
+    "A meeting is called in which all parties must bag their devices — but someone in the room is transmitting anyway, from hardware that shouldn't exist.",
+    "The black market is suddenly flooded with counterfeit Null-Seam Shrouds that perform perfectly on an RF meter but contain a passive logging layer that records everything placed inside them.",
+    "A character discovers their Arcturus-issue Shroud has a serial number that traces back to a unit reported destroyed in a classified operation two years ago.",
+    "A corporate client insists that a delivery be transported inside a Null-Seam Shroud for the entire transit — no exceptions, no checking the contents. The payout is enormous. The reason is never explained."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "trust",
+    "ai",
+    "corporate",
+    "surveillance",
+    "market",
+    "tier 2"
+  ]
+}

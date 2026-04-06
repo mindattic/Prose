@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -6,8 +7,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// A quote, saying, or notable line — from real-world inspiration, in-world characters,
 /// or anonymous street wisdom. Some are attributed, some are just things people say.
 /// </summary>
-public class QuoteData
+public class QuoteData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("quote")] public string Quote { get; set; } = "";
     [JsonPropertyName("attribution")] public string Attribution { get; set; } = "";
     [JsonPropertyName("source")] public string Source { get; set; } = "";

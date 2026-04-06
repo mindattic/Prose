@@ -1,0 +1,56 @@
+{
+  "id": "019d6143a7c27c7c9c87d6564f41dd1a",
+  "name": "Lazarus Pharmaceuticals Synaptic Echo Vault",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Synaptic Echo Vault",
+  "type": "cyberware",
+  "aliases": [
+    "the Dead Drop",
+    "Pharma Box",
+    "Echo Casket"
+  ],
+  "category": "comms",
+  "body_location": "",
+  "description": "The Synaptic Echo Vault is a passive message-storage device disguised as a standard pharmaceutical dispensary unit, common enough in Meridian 88's medically over-saturated districts to be virtually invisible. It operates by encoding communications as synthetic neurotransmitter sequences, storing them in a chemically stable polymer substrate that reads as inert pharmaceutical compound to most scanners. Retrieval requires a keyed biosample — typically a drop of blood or saliva — that triggers a receptor-unlock cascade, converting the stored chemistry back into readable signal output through a paired reader wand.\n\nWhat distinguishes the Vault from conventional dead drops is its temporal durability. Messages encoded in the substrate remain viable for up to ninety days without power, and the unit itself emits no detectable RF signature during dormancy. The disguise is reinforced by a secondary layer of actual expired medication occupying the upper tray, which satisfies cursory physical inspections. Higher-tier units incorporate a self-degradation trigger that dissolves the substrate within seconds of unauthorized access attempts.\n\nThe device is favored by fixers, underground journalists, and pharmaceutical couriers who operate in contested districts where digital traffic is heavily monitored. It has become something of a cultural artifact in the Lazarus-controlled medical zones — locals who find one in a clinic bathroom know better than to touch it, having learned that lesson the hard way.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"storage_capacity\":\"Up to 4,000 words of encoded text or 90 seconds of compressed audio\",\"substrate_viability\":\"90 days at ambient temperature\",\"access_method\":\"Keyed biosample (blood, saliva, epidermal cells)\",\"false_positive_rating\":\"99.3% against standard pharmaceutical scanners\",\"self-destruct_trigger\":\"Unauthorized access attempt or thermal spike above 60°C\",\"dimensions\":\"Standard 12-slot pill dispensary form factor\",\"power_requirement\":\"None during dormancy; reader wand requires micro-cell charge\"}",
+  "side_effects": [],
+  "cultural_context": "In Lazarus-controlled districts, the pharmaceutical dead drop has become a recognized underworld convention — so much so that street-level slang now uses 'picking up a prescription' as coded language for collecting intelligence. The device carries a dual status: to those in the know, possessing one signals serious operational discipline and network access; to outsiders, it's just another piece of medical clutter in a city drowning in it.",
+  "known_users": [
+    "Deep-cover corporate intelligence assets",
+    "Underground medical whistleblowers",
+    "Fixer networks operating in the Lazarus medical zones",
+    "Freelance couriers running information for rival corps"
+  ],
+  "story_hooks": [
+    "A Vault is found in a decommissioned clinic — the biosample key belonged to someone who died six weeks ago, and the message inside predates their death by a day.",
+    "A player is handed a Vault by a dying contact but has no reader wand; the 90-day clock is ticking and someone is already looking for it.",
+    "Lazarus Pharmaceuticals begins quietly recalling a specific production batch of Vaults, offering no explanation — the black market price for that batch has tripled overnight.",
+    "A routine pharmaceutical inspection turns up a Vault on a player's person; the inspector pauses, looks at them carefully, and slides it back without a word."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "comms",
+    "cyberware",
+    "war",
+    "death",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "control",
+    "power",
+    "medical",
+    "clinic",
+    "underworld",
+    "market",
+    "night",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a9e87b36944dcf82dacc2f4e",
+  "name": "Vitropatch-SH",
+  "brand_name": "Vitropatch",
+  "product_name": "Vitropatch-SH",
+  "type": "substrate",
+  "aliases": [
+    "Vitropatch",
+    "self-patch",
+    "SH resin"
+  ],
+  "category": "smart_material",
+  "description": "A BioForge Labs self-healing vitrimer polymer that encapsulates micro-vascular networks filled with a catalyst-laden healing agent derived from SNT secretion proteins. When a crack or puncture ruptures the vasculature, the healing agent floods the damage site and polymerizes within 8–90 seconds depending on wound severity, restoring up to 94% of original tensile strength. The SNT-protein catalyst gives Vitropatch-SH a faintly organic smell when actively healing.",
+  "properties": [
+    "self_healing",
+    "high_tensile_strength",
+    "puncture_resistant",
+    "semi_transparent",
+    "chemical_resistant",
+    "SNT_derived",
+    "moderate_thermal_resistance"
+  ],
+  "developers": [
+    "BioForge Labs",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "pressure suit liners",
+    "vehicle hull coatings",
+    "pipe and conduit jacketing",
+    "protective gear overlays",
+    "flexible armor backing"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ 210 per kg",
+  "story_hooks": [
+    "A Vitropatch-SH suit continues healing itself long after its wearer has died — investigators find a body inside a perfectly sealed, self-repaired suit.",
+    "Black-market Vitropatch-SH cut with cheap resin heals on the surface but traps contamination inside, causing catastrophic delayed failure.",
+    "A character relies on their Vitropatch-SH armor to seal a breach in a vacuum environment, but the healing agent reservoir is nearly depleted."
+  ],
+  "tags": [
+    "smartmaterial",
+    "substrate",
+    "secret",
+    "ai",
+    "elf",
+    "market",
+    "vehicle",
+    "armor",
+    "tier 2",
+    "tier 3"
+  ]
+}

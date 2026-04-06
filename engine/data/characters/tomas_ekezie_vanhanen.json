@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a704748398b8b12fcbd83a99",
+  "type": "character",
+  "name": "Tomás Ekezie-Vanhanen",
+  "aliases": [
+    "Twig"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "truant network runner — carries physical messages and small parcels through The Narrows",
+  "age": 11,
+  "status": "active",
+  "location": "Blackpipe Corridor",
+  "description": "Tomás is a wiry, perpetually underfed boy with deep amber skin, tight coiled hair buzzed close on the sides, and enormous dark eyes that seem to absorb everything around him. He has geneware cat ears — small, tawny, tipped with black — that he inherited from his mother's cosmetic mod passing through the embryo. They swivel toward sound when he's nervous, which other kids find unsettling. He moves like water through cracks: fast, low, nearly invisible in crowds twice his height. A faded Ferrogate Transit patch is sewn onto his jacket, not because he works for them, but because he found it and thought it made him look official.\n\nTomás is fundamentally cheerful in a way that has nothing to do with his circumstances and everything to do with refusal. He has decided — with the firm logic of an eleven-year-old who has thought about it seriously — that being sad about things is slower than being useful. He collects information the way other kids collect tokens, storing it in a mental ledger he calls 'what's worth knowing.' He prays to the E.L.F. he believes lives in the junction box at Pipe Fourteen every morning, leaving a single cached data packet as offering.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "being too slow to matter",
+      "losing the other runners — his only real family"
+    ],
+    "core_desires": [
+      "enough food that he doesn't think about it",
+      "to one day see the lake up close"
+    ],
+    "coping_mechanisms": [
+      "humor and deflection",
+      "constant motion — stillness makes him anxious",
+      "ritualistic offerings to Pipe Fourteen's E.L.F."
+    ],
+    "blind_spots": [
+      "doesn't recognize when adults are exploiting him versus genuinely helping",
+      "underestimates how dangerous some of his clients are"
+    ],
+    "secret": "He once delivered a package that, from the smell and weight, he's pretty sure contained a severed finger. He kept running. He's never told anyone. He still thinks about it."
+  },
+  "speech_patterns": {
+    "vocabulary": "clipped street slang, Blackpipe runner cant, surprising flashes of formal phrasing picked up from message contents he's memorized",
+    "cadence": "fast and punchy, trails off when uncertain, speeds up when excited",
+    "verbal_tics": [
+      "'yeah-yeah-yeah' as a filler",
+      "calls everyone 'boss' regardless of actual status"
+    ],
+    "example_lines": [
+      "'Yeah-yeah-yeah, Pipe Fourteen's E.L.F. was humming this morning, that's a good sign, boss.'",
+      "'Package goes where I take it. You want to know what's in it, you open it yourself.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He accidentally memorized the contents of a corporate communiqué he wasn't supposed to read — the sender wants it back, and him silenced",
+    "One of his regular clients has stopped leaving packages and Tomás is genuinely worried about them — will he investigate?",
+    "A new adult is trying to recruit him and the other runners into something more serious than message delivery"
+  ],
+  "narrative_function": "Local color and information conduit; knows the physical geography of Blackpipe better than almost anyone; can deliver messages to NPCs who don't want to be found; possible point-of-view into child street life",
+  "augmentations": "Inherited geneware cat ears (cosmetic, passive). No other mods.",
+  "daily_life": "Wakes before dawn in a shared squat above a condensation recycler, picks up his morning packet list from a dead-drop beneath Pipe Fourteen, runs twelve to twenty deliveries before midday, eats whatever he's paid in food or can trade messages for, and spends evenings at the communal fire where older runners tell stories.",
+  "affiliation": "Blackpipe Runner Collective (informal child courier network), no corporate ties",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-smart",
+      "courier",
+      "cat-eared",
+      "superstitious",
+      "fast"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "always deliver — reputation is survival",
+      "never open the package (except that once)",
+      "protect the younger runners first"
+    ],
+    "escalation_ladder": [
+      "deflect with humor and distance",
+      "run — exits are always mapped before entering",
+      "scream for the nearest adult runner"
+    ],
+    "interpersonal_modes": {
+      "strangers": "cheerful and transactional — names a price immediately to establish the relationship",
+      "friends": "physically affectionate, shares food unprompted, fiercely loyal"
+    },
+    "stress_responses": {
+      "low": "whistles tunelessly",
+      "medium": "ears flatten, goes very quiet, starts cataloguing exits",
+      "high": "bolts without warning, hides in spaces too small for adults"
+    },
+    "contradictions": [
+      "deeply superstitious about E.L.F.s but also privately skeptical — keeps the rituals anyway because 'costs nothing'"
+    ],
+    "habits": [
+      "touches the Ferrogate patch before a difficult delivery",
+      "counts steps between landmarks without thinking about it",
+      "hoards small edible things in jacket pockets"
+    ],
+    "breaking_points": [
+      "harm to one of the younger runners in his care"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

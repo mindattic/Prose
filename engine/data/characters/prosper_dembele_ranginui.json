@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a6a27e23b3832480f2b3c42a",
+  "type": "character",
+  "name": "Prosper Dembélé-Ranginui",
+  "aliases": [
+    "Pros",
+    "Pebble"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate school scholarship student, Tier 3 aspirant from Tier 1 origins",
+  "age": 14,
+  "status": "active",
+  "location": "Grosse Pointe Enclosure (attends Axiom Meridian Youth Academy; family lives in Chatham Flats)",
+  "description": "Prosper exists in a permanent state of between. At Axiom Meridian Youth Academy he is the scholarship kid — too brown, wrong address on his enrollment form, lunch that smells like Chatham Flats rather than the Enclosure's algae bistros. In Chatham Flats he is the one who goes to school across the checkpoint, who uses words his cousins have to look up, who is slowly becoming something they recognize less. He is tall for fourteen, with his Malian grandfather's long limbs and his Māori grandmother's broad jaw, his skin a warm middle-brown that the Enclosure kids describe as 'exotic' in a way that makes him feel like a zoo exhibit. He keeps his expression carefully neutral at school — he has practiced it in reflective surfaces until it holds. He has a single geneware mod, a gift from an aunt: irises that show a faint geometric pattern, teal on dark brown, like circuit traces. At school he keeps his eyes down. At home he forgets to.\n\nHe is genuinely, almost painfully intelligent — the scholarship was not charity, it was an accurate assessment. He is also furious about almost everything, a fury he has learned to compress into extremely precise academic performance. His teachers see a diligent, exceptional student. His mother sees a boy who sometimes cries at the kitchen table at 2 AM while reviewing coursework and refuses to say why.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "failing and having to admit the Enclosure kids were right",
+      "succeeding and losing everyone from Chatham Flats"
+    ],
+    "core_desires": [
+      "to stop having to choose which version of himself to be",
+      "to build something that belongs to both places he comes from"
+    ],
+    "coping_mechanisms": [
+      "converting emotion into academic output",
+      "extreme organizational systems as a form of control"
+    ],
+    "blind_spots": [
+      "believes intellectual performance will eventually make people stop seeing his background — it won't",
+      "underestimates how much his Chatham Flats knowledge is actually an asset"
+    ],
+    "secret": "He has been anonymously feeding Axiom Academy's internal communications to a Chatham Flats community organizer for four months — small things, policy changes that affect the checkpoint, enrollment criterion shifts. He tells himself it barely counts."
+  },
+  "speech_patterns": {
+    "vocabulary": "Code-switches constantly and is aware of it. Formal, precise diction at school; looser, quicker patois at home. Both registers are equally real to him but he can't use them in the same place.",
+    "cadence": "Measured and deliberate in formal contexts. At home, faster, with long pauses before difficult sentences.",
+    "verbal_tics": [
+      "'specifically' used as an emphasis marker",
+      "laughs quietly before saying something he's actually angry about"
+    ],
+    "example_lines": [
+      "'Specifically, the criterion change affects checkpoint-resident students. I thought you should know before the announcement.'",
+      "'It's fine. It's good, actually. Everything is very, very fine.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The community organizer he's been feeding data to has started making moves that are escalating beyond policy advocacy — Prosper is in deeper than he understood.",
+    "An Axiom recruiter has flagged him for an accelerated corporate track that would require permanently relocating to the Enclosure at 16. His mother has already said yes."
+  ],
+  "narrative_function": "Emotional anchor and social commentary; can provide access to corporate school networks or Chatham Flats community connections; his dual position makes him an unexpected bridge and an unexpected source of information about both worlds.",
+  "augmentations": "Geneware: patterned irises — teal geometric circuit traces over dark brown. No chrome.",
+  "daily_life": "Checkpoint commute at 0630, eleven hours of corporate curriculum designed to produce future Axiom mid-managers, then back through the checkpoint to homework and family dinner, then studying until he falls asleep at his desk.",
+  "affiliation": "Axiom Meridian Youth Academy (scholarship); family ties in Chatham Flats",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "scholarship-kid",
+      "code-switcher",
+      "academic-high-performer",
+      "community-informant",
+      "dual-world"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never let them see you rattled at school",
+      "homework before everything except family emergencies",
+      "check Chatham Flats community board every night"
+    ],
+    "escalation_ladder": [
+      "absorb and perform normalcy",
+      "retreat to academics as emotional processing",
+      "make a reckless decision from accumulated suppressed feeling"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Careful and formally polite; assesses which world they belong to before deciding how to speak",
+      "friends": "Warmer and funnier than anyone at school would believe; slightly broken-open, still watchful"
+    },
+    "stress_responses": {
+      "low": "Studies harder, sleeps less",
+      "medium": "Goes very, very quiet and polite — danger sign",
+      "high": "Breaks the careful neutral face; says the precise, devastating true thing he has been holding back"
+    },
+    "contradictions": [
+      "Believes he doesn't care what the Enclosure kids think; has memorized every slight and dismissal they've offered"
+    ],
+    "habits": [
+      "reorganizes his notes after stressful days",
+      "texts his mother a location check every time he crosses the checkpoint",
+      "leaves small Quanta amounts at a data-terminal E.L.F. shrine near the Chatham Flats checkpoint — a habit from childhood"
+    ],
+    "breaking_points": [
+      "someone from school finding and mocking something from his Chatham Flats life",
+      "being asked to formally denounce or distance from his neighborhood as a condition of advancement"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

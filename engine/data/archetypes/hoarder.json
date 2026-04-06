@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57579bfa9c9d3ef3d0edc9d",
+  "name": "Hoarder",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Keeps everything because you never know",
+  "behavioral_signature": "Stockpiles obsessively, shares reluctantly",
+  "under_stress": "Clings to possessions desperately",
+  "at_rest": "Organizing, counting, hiding things",
+  "will_always": [
+    "save it for later"
+  ],
+  "will_never": [
+    "throw anything away"
+  ],
+  "unless": [
+    "someone is starving and they have plenty"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Miser",
+      "threshold": 0.8,
+      "context": "retention"
+    },
+    {
+      "archetype": "Scarcity Mind",
+      "threshold": 0.85,
+      "context": "fear of lack"
+    }
+  ],
+  "opposite_of": [
+    "Generous Fool"
+  ],
+  "tags": [
+    "accumulation",
+    "anxiety"
+  ]
+}

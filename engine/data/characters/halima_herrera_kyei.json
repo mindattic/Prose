@@ -1,0 +1,270 @@
+{
+  "id": "019d6143a62477b4819c7d76dfa7dbfb",
+  "type": "character",
+  "name": "Halima Herrera-Kyei",
+  "aliases": [
+    "Oxide",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Network intrusion and digital warfare specialist — netrunner",
+  "age": 27,
+  "status": "active",
+  "location": "The Circuit — neon-lit entertainment and vice district",
+  "description": "Halima Herrera-Kyei are athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 27, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a netrunner out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Halima Herrera-Kyei agrees on two things: they are worth the fee, and they are terrible company at dinner.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.43,
+      "ideal": 0.22,
+      "id": 0.89,
+      "shadow": 0.69,
+      "mask": 0.91,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "The quiet — silence means something is about to go very wrong"
+    ],
+    "core_desires": [
+      "Stability — a place to sleep that's the same place two nights running",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "Control — over their body, their schedule, their future"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Humor — deflects everything serious with jokes until the joke becomes the personality"
+    ],
+    "blind_spots": [
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Assumes their skill set is more transferable than it actually is"
+    ],
+    "secret": "Halima Herrera-Kyei can't read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"Every system has a door. Most of them have a door the architect forgot about.\"",
+      "\"I don't hack networks. I have conversations with them. Most of them are lonely.\"",
+      "\"The ice they're running is military-grade. That means expensive, not impenetrable.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Halima Herrera-Kyei's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A former associate resurfaces with evidence that could destroy Halima Herrera-Kyei's reputation — and a price for silence",
+    "Halima Herrera-Kyei discovers a job they completed last year was a setup for something much larger and much worse"
+  ],
+  "narrative_function": "Halima Herrera-Kyei is a pressure point — the kind of character whose choices ripple outward. When they make a decision, other people's lives change. That weight is the engine of their stories.",
+  "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent — loose crew affiliations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 4
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 8
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 9
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.25,
+      "caution": 0.6,
+      "loyalty": 0.45,
+      "greed": 0.48,
+      "empathy": 0.87
+    },
+    "drives": [
+      "loyalty",
+      "knowledge",
+      "revenge"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 4,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "pain tolerance beyond normal limits"
+    ],
+    "weaknesses": [
+      "substance dependency — functional but fragile",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "netrunner",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Always verifies target identity independently before lethal contracts",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
+    ],
+    "habits": [
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Never drinks anything they didn't see poured or open themselves"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic blood with oxygen-carrying nanites",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Analyst": 0.7,
+    "Pattern Reader": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

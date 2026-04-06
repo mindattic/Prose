@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a7ce7037bb1698e14087e688",
+  "name": "Zheng-Dao Bioelectric Peristaltic Breach Driver",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Peristaltic Breach Driver",
+  "type": "cyberware",
+  "aliases": [
+    "Gut Drill",
+    "Worm Driver",
+    "Peristaltic",
+    "PBD"
+  ],
+  "category": "utility",
+  "body_location": "",
+  "description": "The Peristaltic Breach Driver is a flexible, segmented boring tool designed to navigate curved and obstructed conduits, wall cavities, and ductwork that rigid breach tools cannot access. Modeled on the muscular contraction mechanics of biological peristalsis, the device's 23 interlocking polymer segments undulate in coordinated waves to propel a hardened tungsten carbide tip through composite wall materials, insulation layers, and soft partition structures at a rate of approximately 8cm per minute. The operator feeds the device into an initial pilot hole and steers it via a haptic wrist controller that translates hand gestures into directional bias along the tool's leading segments.\n\nZheng-Dao's proprietary Axonal Flex Coupling — the same joint architecture used in several of their bioelectric prosthetic lines — gives each segment a 34-degree range of articulation, allowing the driver to navigate bends as tight as 15cm radius. The tip assembly houses a micro-camera and thermal sensor array, feeding a heads-up display to the operator's lens or deck. When the tip breaches the target cavity, it can deploy a small anchor flange to hold an opening, pass a fiber line, or release a dissolvable chemical marker for later location.\n\nThe PBD is popular with Meridian 88's building infiltration community, particularly for accessing HVAC plenum spaces, cable risers, and the sealed interstitial floors common in older corporate towers. It has also found use among Palladian Construction's less scrupulous site assessors, who use it to inspect competitor structures without triggering access alarms.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"total_length\":\"1.4m fully extended\",\"segment_count\":\"23\",\"segment_articulation\":\"34 degrees per joint\",\"minimum_turn_radius\":\"15cm\",\"boring_rate\":\"8cm/min through standard composite partition\",\"tip_camera_resolution\":\"1080p with thermal overlay\",\"control_interface\":\"Haptic wrist cuff, gesture-mapped\",\"power_source\":\"Integrated ZD-series bioelectric cell, 4-hour operational life\",\"compatible_materials\":\"Composite partition, foam insulation, soft concrete, ductwork aluminum\"}",
+  "side_effects": [],
+  "cultural_context": "The PBD occupies an awkward legal space in Meridian 88 — it's sold legitimately to licensed building inspectors and structural assessors, which gives runners a plausible cover story for possession. The 'licensed contractor' identity is a well-worn operational cover in the city, and the Peristaltic Breach Driver is considered one of the key props that makes that cover credible. Among infiltration specialists, carrying a PBD without a contractor license is considered sloppy — the license itself is often forged, but the effort signals professionalism.",
+  "known_users": [
+    "Building infiltration specialists",
+    "Corporate structural assessors",
+    "Duct-running drone operators",
+    "Freelance wire tappers",
+    "Palladian Construction site surveyors"
+  ],
+  "story_hooks": [
+    "A runner using a PBD to tap a server room discovers the wall cavity is already occupied — by a different tool, left behind and still transmitting.",
+    "A Zheng-Dao licensed inspector reports her PBD navigated to a location that doesn't exist on any building schematic — a sealed floor with no official record.",
+    "Someone is selling counterfeit PBDs in the lower markets; the fakes bore correctly but the tip camera feeds are being mirrored to an unknown third party.",
+    "A corporate tower's new security retrofit includes PBD-detection foam injected into all wall cavities — someone on the inside leaked the breach team's method."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "utility",
+    "cyberware",
+    "war",
+    "identity",
+    "prosthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "market",
+    "drone",
+    "tier 2"
+  ]
+}

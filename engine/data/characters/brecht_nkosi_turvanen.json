@@ -1,0 +1,194 @@
+{
+  "id": "019d6143a5ca7e4e9e7f49e46ea7826d",
+  "type": "character",
+  "name": "Brecht Nkosi-Turvanen",
+  "aliases": [
+    "Brecht",
+    "The Big Quiet"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Building superintendent, Lockhaven South residential stack",
+  "age": 44,
+  "status": "active",
+  "location": "Lockhaven South, Stack Eleven — he lives in the sub-basement maintenance unit",
+  "description": "Brecht is enormous — six-foot-four with the kind of bulk that comes from two decades of hauling pipes and climbing maintenance shafts, not from any gym program. His skin is deep brown with a reddish undertone, and his face carries a network of small scars from a gas line incident in his thirties that he never had properly treated. He keeps his head shaved and his beard trimmed with almost military precision, the one vanity he allows himself. His eyes are a startling pale grey-green, a recessive gift from his Finnish grandmother that people find unsettling until they realize how rarely he blinks in a crisis.\n\nStack Eleven houses 340 units of mixed Tier 1-2 residents and Brecht runs it with the quiet authority of someone who has fixed every pipe, knows every squeaky panel, and has personally carried two elderly tenants out during a partial floor collapse three years ago. He is not beloved in the way that warm people are beloved — he's respected in the way that a load-bearing wall is respected. He has no patience for bureaucracy and extraordinary patience for people. He maintains a small shrine to the E.L.F. he calls Boiler-Father in the sub-basement furnace room, and believes deeply that the building's mechanical systems have a will of their own that rewards or punishes based on how people treat them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "the building failing because Palladian won't fund repairs and people getting hurt",
+      "being responsible for something he couldn't prevent"
+    ],
+    "core_desires": [
+      "for the stack to outlast the corporation that owns it",
+      "to be left alone to do his job without interference"
+    ],
+    "coping_mechanisms": [
+      "physical labor as emotional regulation",
+      "rigid daily structure",
+      "displacement — fixing the building instead of himself"
+    ],
+    "blind_spots": [
+      "cannot recognize loneliness in himself, only in others",
+      "believes competence and care are the same thing"
+    ],
+    "secret": "He has been quietly siphoning power from Palladian's maintenance budget allocation — not for himself, but to fund heating repairs in the lowest floors that corporate refused to approve. He keeps meticulous records of every diverted quanta in a paper ledger, as if documentation makes it less theft. If Palladian audits, he'll lose everything."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse, technical when discussing the building, surprisingly poetic when discussing people — different registers, both sincere",
+    "cadence": "Slow delivery, long pauses, never raises his voice",
+    "verbal_tics": [
+      "'That's a load-bearing problem'",
+      "refers to building systems as 'she'",
+      "ends difficult conversations with 'Right then'"
+    ],
+    "example_lines": [
+      "'She's been making that noise for two weeks. That means she's asking, not demanding. Come back in a week and she'll be demanding.'",
+      "'I don't care why it happened. I care that it doesn't happen again in my building.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Palladian sends an auditor to Stack Eleven and Brecht needs someone he trusts — which is almost no one — to help him make the books look right before they arrive",
+    "Something is living in the sub-basement below the furnace room, below where even Brecht's maintenance maps go, and Boiler-Father has stopped answering his prayers"
+  ],
+  "narrative_function": "Building-level authority figure, potential quest giver when something goes wrong in the stack, information source on tenant activity and building infrastructure, moral anchor in a community under stress.",
+  "augmentations": "Subdermal pressure sensors in both hands (allows him to detect gas leaks and pipe stress by touch — installed after the gas line incident). Spinal brace, partially biointegrated, from the same incident.",
+  "daily_life": "Begins rounds at 0500, checks boiler, water recyclers, and elevator hydraulics before most residents wake. Takes complaints at his door from 0800 to 0900 only, no exceptions. Eats lunch alone in the furnace room with Boiler-Father.",
+  "affiliation": "Independent contractor to Palladian Property Holdings (his actual employer, whom he resents)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Protector",
+      "Stoic",
+      "Technically Skilled",
+      "Community Pillar",
+      "Rule-Breaker for Good Reasons"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the building's residents come before the building's owners",
+      "if he can fix it himself, he does — he only asks for help when someone could get hurt"
+    ],
+    "escalation_ladder": [
+      "calm explanation of the problem",
+      "written notice to Palladian",
+      "doing it himself without authorization",
+      "putting his body between the problem and the residents"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses quietly before speaking, leads with practical help rather than words",
+      "friends": "Expresses care entirely through action — fixing things, showing up, remembering details"
+    },
+    "stress_responses": {
+      "low": "Gets very systematic, makes lists",
+      "medium": "Works through the night, stops eating",
+      "high": "Goes completely silent and handles everything himself, refuses all help"
+    },
+    "contradictions": [
+      "believes in rules but breaks them constantly for the right reasons",
+      "intensely private but knows the intimate details of 340 households"
+    ],
+    "habits": [
+      "checking boiler pressure three times even when it's fine",
+      "always carrying a ration bar he never eats",
+      "talking quietly to building systems when he thinks no one can hear"
+    ],
+    "breaking_points": [
+      "a child getting hurt in the building due to neglect he couldn't prevent",
+      "Palladian threatening to evict long-term residents for profit"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal pressure/chemical sensor mesh — palms and fingertips",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal pressure/chemical sensor mesh — palms and fingertips",
+      "replaces": ""
+    },
+    {
+      "name": "Biointegrated spinal brace — L3-L5 vertebrae support",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Biointegrated spinal brace — L3-L5 vertebrae support",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9,
+    "Social Chameleon": 0.9,
+    "Mentor": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

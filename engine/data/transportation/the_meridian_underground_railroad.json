@@ -1,0 +1,40 @@
+{
+  "id": "019d6143aa7477a9a914646d2b71f17f",
+  "name": "The Meridian Underground Railroad",
+  "type": "transportation",
+  "aliases": [
+    "The Railroad",
+    "Ghost Track",
+    "Freedom Line"
+  ],
+  "category": "underground",
+  "manufacturer": "Unknown — community-maintained",
+  "description": "Not a single vehicle but a secret network of maintained tunnels, hidden rail lines, safe houses, and improvised transport that moves people — refugees, escapees, the disappeared — through the Underworld from one side of Meridian 88 to the other without surfacing. The Railroad uses everything: mining carts, rafts, crawlers, walking paths, and passages that shouldn't exist. It has been operating for at least thirty years. No one knows who runs it. The name is deliberate, historical, and weighted with meaning.",
+  "propulsion": "Various — whatever the network provides at each segment",
+  "speed": "Variable. A full transit takes 8-16 hours.",
+  "capacity": "Individual or small group transit",
+  "range": "The entire city, underground",
+  "tier_availability": "By invitation only. You don't find the Railroad — it finds you.",
+  "cost": "Free. The Railroad doesn't charge. It asks you to help the next person.",
+  "autonomy": "Human-guided throughout. Trust is the navigation system.",
+  "armament": "Whatever the guides carry. Anonymity is the primary defense.",
+  "common_usage": "Escaping corporate indenture, fleeing security sweeps, relocating threatened individuals, disappearing.",
+  "story_hooks": [
+    "A freelancer is asked to escort someone through the Railroad and discovers it passes through chambers that contain technology from before the city was founded",
+    "The Railroad's operators are being hunted by a corporate AI that has learned to predict their routes — and someone inside is feeding it data"
+  ],
+  "tags": [
+    "underground",
+    "transportation",
+    "trust",
+    "secret",
+    "ai",
+    "corporate",
+    "underworld",
+    "tunnel",
+    "freedom",
+    "vehicle",
+    "refugee",
+    "escape"
+  ]
+}

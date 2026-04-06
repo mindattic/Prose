@@ -1,0 +1,33 @@
+{
+  "id": "019d6143a77e7f1ca4941fe7f31998f7",
+  "name": "PowerCell Universal Battery Pack",
+  "brand_name": "PowerCell",
+  "product_name": "PowerCell Universal Battery Pack",
+  "type": "consumer_good",
+  "category": "household",
+  "subcategory": "power",
+  "manufacturer": "VoltWorks",
+  "description": "Rechargeable battery pack compatible with most household devices, portable electronics, and small augment chargers. Holds 10,000mAh equivalent. The universal power brick of M88.",
+  "flavor_profile": "Dense, heavy for its size, warm when charging, indicator light shows charge level",
+  "tier_availability": "Tier 1-4",
+  "price": "Φ10.00",
+  "popularity_rank": 5,
+  "slogan": "Power when you need it.",
+  "cultural_context": "Power reliability varies by tier. In the Shelf, outages are frequent and PowerCells are lifelines. People charge them opportunistically — at work, at transit stations, anywhere with a socket. A dead PowerCell is a minor emergency.",
+  "story_hooks": [
+    "VoltWorks batteries have a firmware-limited lifespan — they stop holding charge after 18 months regardless of actual cell condition. A hacker community has developed a firmware bypass.",
+    "Counterfeit PowerCells with unstable chemistry have caused fires in Shelf housing blocks."
+  ],
+  "tags": [
+    "household",
+    "power",
+    "consumer_good",
+    "battery",
+    "charging",
+    "tier_1",
+    "tier_2",
+    "tier_3",
+    "tier_4",
+    "essential"
+  ]
+}

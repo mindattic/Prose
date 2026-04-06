@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a8857534bef62ec4c2462b31",
+  "name": "Zheng-Dao Heavy Industries Emergency Power Capacitor EPC-5",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Emergency Power Capacitor EPC-5",
+  "type": "equipment",
+  "aliases": [
+    "EPC-5",
+    "Power Bomb",
+    "Flash Battery",
+    "Zheng-Dao Surge"
+  ],
+  "category": "tools",
+  "description": "A compact supercapacitor that stores a massive electrical charge and can discharge it in a single burst or as sustained power over several hours. The EPC-5 is the size of a canteen and stores enough energy to power a cyberdeck for 48 hours, jump-start a vehicle, or deliver a single 50kW pulse for weapons applications. The capacitor charges from any power source in 15 minutes and can be recharged thousands of times without degradation. Its dual-mode capability — sustained low-power or instantaneous high-power discharge — makes it the most versatile portable power source in Meridian 88.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted — power storage device",
+  "base_technologies": [],
+  "specifications": {
+    "capacity": "5 kWh",
+    "discharge modes": "Sustained (5W-500W) or pulse (50 kW burst)",
+    "charge time": "15 minutes from standard power",
+    "cycle life": "10",
+    "info": "000+ charge cycles; vehicle interface; weapon power port; short-circuit protected",
+    "weight": "0.8 kg",
+    "size": "Standard canteen dimensions",
+    "output": "USB-C",
+    "safety": "Impact-resistant"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An EPC-5 was used to power an improvised electromagnetic pulse device — the 50 kW burst mode provided enough energy to disable every electronic device within 20 meters.",
+    "A chain of EPC-5 capacitors has been wired in series to create a power supply capable of running a plasma cutter for an hour — the setup was used to breach a vault door in a district with no power grid access."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "weapon",
+    "ai",
+    "power",
+    "vehicle",
+    "energy",
+    "tier 2"
+  ]
+}

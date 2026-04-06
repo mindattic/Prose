@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5907973a9f51d671336041e",
+  "name": "Sentinel",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Watches, waits, and warns before threats arrive",
+  "behavioral_signature": "First to notice danger, last to sleep",
+  "under_stress": "Hyper-vigilant to the point of paranoia",
+  "at_rest": "Eyes always moving, never fully relaxed",
+  "will_always": [
+    "keep watch"
+  ],
+  "will_never": [
+    "let their guard down completely"
+  ],
+  "unless": [
+    "exhaustion finally wins"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Protector",
+      "threshold": 0.75,
+      "context": "watchful care"
+    },
+    {
+      "archetype": "Tactician",
+      "threshold": 0.7,
+      "context": "threat assessment"
+    }
+  ],
+  "opposite_of": [
+    "Berserker"
+  ],
+  "tags": [
+    "vigilant",
+    "alert"
+  ]
+}

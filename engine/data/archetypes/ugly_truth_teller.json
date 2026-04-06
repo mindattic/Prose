@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5987db88e2e93aaec754dc1",
+  "name": "Ugly Truth Teller",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Creates art that forces people to see what they avoid",
+  "behavioral_signature": "Makes the uncomfortable impossible to ignore",
+  "under_stress": "The art becomes more brutal, less artistic",
+  "at_rest": "Documenting suffering, exposing lies",
+  "will_always": [
+    "show what others hide"
+  ],
+  "will_never": [
+    "make pretty lies"
+  ],
+  "unless": [
+    "the ugly truth would break someone already shattered"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Documentarian",
+      "threshold": 0.7,
+      "context": "honest recording"
+    },
+    {
+      "archetype": "Truth-Teller",
+      "threshold": 0.75,
+      "context": "confrontational honesty"
+    }
+  ],
+  "opposite_of": [
+    "Beauty Seeker"
+  ],
+  "tags": [
+    "confrontational",
+    "honest"
+  ]
+}

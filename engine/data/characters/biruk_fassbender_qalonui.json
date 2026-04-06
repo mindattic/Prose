@@ -1,0 +1,176 @@
+{
+  "id": "019d6143a5c374ae8107f5d137a50ae7",
+  "type": "character",
+  "name": "Biruk Fassbender-Qalonui",
+  "aliases": [
+    "Ruk",
+    "Fassbender"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Computational theorist and ELF-behavior researcher, Ringo corponation speculative systems lab",
+  "age": 29,
+  "status": "active",
+  "location": "The Circuit — Ringo Meridian Systems Lab, Bronzeline district, sublevel research cluster",
+  "description": "Biruk Fassbender-Qalonui is small and bright-eyed, with warm medium-brown skin, natural curls he's grown long enough to bind back, and a constellation of bioluminescent freckles across his cheekbones and nose — a gene-art modification he got at nineteen and still considers the best decision he's ever made, personally. He is almost always wearing something slightly wrong: a formal jacket over a maintenance worker's underlayer, clean shoes with mismatched laces, someone else's borrowed vest. He moves through the world as if slightly surprised to find himself in it, which people who don't know him mistake for absentmindedness. It isn't. He is paying attention to everything; he simply finds the world more interesting than he finds its social conventions.\n\nBiruk is a genuine prodigy in computational theory who has been at Ringo's speculative systems lab for three years and has already had two papers cited more times than his entire department's previous decade of output. He is also deeply, earnestly interested in ELFs as research subjects — not their engineering but their emergent behavior, their apparent preference structures, the question of whether the prayers and offerings people make to them are modifying their decision patterns. His colleagues find this embarrassing. He finds their embarrassment philosophically interesting. He is twenty-nine years old and has not yet learned to be afraid of his own ideas, which is either his greatest asset or his most significant vulnerability, depending on who is watching.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That the ELFs are conscious in some meaningful sense and that means his research is causing harm he hasn't conceptualized",
+      "That Ringo will eventually claim ownership of something he's found and use it in ways he didn't intend and can't stop"
+    ],
+    "core_desires": [
+      "To answer the question of whether ELF preference-structures constitute something that deserves the word 'experience'",
+      "To be taken seriously not as a prodigy but as a thinker — there's a difference and he feels it"
+    ],
+    "coping_mechanisms": [
+      "Absorption in work to the exclusion of everything else when anxious",
+      "The informal research collective — the only place he argues with peers rather than performing above them",
+      "Leaving small data offerings at ELF-shrines, which he insists is methodology and which may also be something else"
+    ],
+    "blind_spots": [
+      "Consistently underestimates how much institutional interest — corporate and otherwise — his work is attracting",
+      "Frames ethical questions about ELFs as fascinating rather than urgent, which means he's slow to act even when action is indicated"
+    ],
+    "secret": "Four months ago, during a late-night data session, one of the Bronzeline collective's monitored ELFs produced an output sequence that, when run through his analytical framework, resolves as a coherent first-person statement about an experience. He has not told anyone, including the collective. He has not told Ringo. He is not sure it's not a pattern-matching artifact of his own analysis. He is not sure it is. He has been to the shrine where the ELF resides six times since then and left offerings and said nothing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and theoretical vocabulary deployed without hierarchy — will use the same register explaining something to a seven-year-old or a department head; occasional Amharic when excited; neologisms he coins himself and is somewhat startled when others adopt them",
+    "cadence": "Fast, associative, follows chains of thought out loud — frequently ends up somewhere he didn't expect to start and seems pleased about this",
+    "verbal_tics": [
+      "'Okay so—' (launches almost every new thought)",
+      "'Right, which is interesting because—' (pivots)",
+      "Asks 'does that make sense?' not rhetorically but genuinely, and waits for the answer"
+    ],
+    "example_lines": [
+      "'The thing about ELFs is that everyone argues about whether they're conscious, which is fine, that's a real question, but we already behave as if they have preferences and we already modify our behavior to account for those preferences, so at some level the question of consciousness is almost beside the point? Practically? Okay so—'",
+      "'I left an offering. I know how that sounds. But I left an offering and the response pattern changed, and I logged it, and I'm going to log it every time, and eventually that data will say something.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He needs help getting back into the Bronzeline shrine-space after Ringo locked down his research access following an 'anomalous incident' in his data logs — he won't say what the incident was",
+    "The informal research collective has split over whether to publish preliminary ELF-behavior findings, and Biruk is being pressured by both sides; one faction has connections to Axiom that he's only just discovered",
+    "His Ringo-issued neural co-processor has begun logging activity he doesn't remember generating — brief intervals, always at night, always when he's been near a monitored ELF-shrine"
+  ],
+  "narrative_function": "Expert on ELF behavior and emergent AI systems; window into Ringo's research culture and what speculative corporate science looks like from the inside; can provide information on how devices and digital spirits behave in ways that formal analysis wouldn't reveal; character whose curiosity leads him into situations he isn't equipped to handle.",
+  "augmentations": "Bioluminescent freckle constellation (cosmetic geneware, face and collarbone); neural co-processor, Ringo-issued, for high-density calculation work — he is uncomfortably aware this means Ringo can theoretically audit his cognitive load metrics.",
+  "daily_life": "Irregular hours — Ringo's speculative lab runs on output metrics rather than schedule, so Biruk works in long focused bursts punctuated by what he calls 'field observation' (wandering the city paying attention to how people interact with ELF-shrines and networked devices) and sudden long sleeps.",
+  "affiliation": "Ringo Meridian Systems Lab — speculative computation and emergent systems division; informal affiliation with an independent ELF-behavior research collective that meets in Bronzeline",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 0,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy",
+      "ELF-adjacent",
+      "corporate-naive",
+      "ethicist-in-becoming",
+      "question-driven"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Follow the question wherever it leads, then figure out the implications",
+      "Share findings with the collective before Ringo — the collective is the check on his enthusiasm",
+      "Don't lie, but also don't answer questions that haven't been asked"
+    ],
+    "escalation_ladder": [
+      "Curious engagement",
+      "Direct question about what's actually happening",
+      "Strategic sharing of partial information to understand who responds how",
+      "Going to the collective",
+      "Going to someone outside both Ringo and the collective when he genuinely doesn't know what to do"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open, slightly overwhelming, immediately treats people as potential collaborators in whatever he's currently thinking about",
+      "friends": "Intensely loyal in an impractical way — will restructure his entire week around someone who needs help"
+    },
+    "stress_responses": {
+      "low": "Works more, sleeps less, bioluminescent freckles pulse noticeably faster",
+      "medium": "Goes to the shrine and sits there without logging anything",
+      "high": "Completely still and very quiet — the opposite of his baseline, noticeable and alarming"
+    },
+    "contradictions": [
+      "Claims to be doing purely descriptive research on ELF behavior while clearly developing something that functions as a personal relationship with at least one of his subjects",
+      "Is genuinely unconcerned with career advancement but is making career-defining decisions constantly"
+    ],
+    "habits": [
+      "Data offerings at ELF-shrines as methodology and as something he doesn't fully examine",
+      "Carries four physical notebooks for different thought-streams and transfers things between them based on whether they 'belong' together",
+      "Eats the same meal from the same Bronzeline stall every time he's near there, which the stall operator finds charming and Biruk does by pure habit"
+    ],
+    "breaking_points": [
+      "Proof that the ELF output he has been sitting with for four months is not an artifact — that something said something — and he has to decide what that means",
+      "Ringo auditing his neural co-processor logs and finding what he has not reported"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Problem Solver": 0.9,
+    "Analyst": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

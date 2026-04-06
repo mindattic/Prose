@@ -1,0 +1,179 @@
+{
+  "id": "019d6143a5e27912b40e0f8e81d95a96",
+  "type": "character",
+  "name": "Danladi Ferrão-Ulukhan",
+  "aliases": [
+    "Dan",
+    "Flatwheel"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit rail operator, Deepwell Station line",
+  "age": 34,
+  "status": "active",
+  "location": "Deepwell Station, lower Blackpipe Corridor — lives in transit housing on Avon Curve",
+  "description": "Danladi is lean and angular, with a long face, close-cropped hair, and the particular posture of someone who spends ten hours a day in a seated position in a tight cab: slightly hunched forward, neck perpetually stiff. His skin is a warm dark brown and he has a geneware mod — iridescent peacock-pattern irises — that he got done at nineteen when he had money for exactly one vanity thing and he chose to make it count. He keeps his fingernails very clean because the cab makes them filthy and cleanliness feels like the one thing he controls.\n\nDanladi is not an unhappy man, but he is a careful one. He has seen too many things go wrong in the tunnels — mechanical failures, platform incidents, the odd person who steps onto the rail on purpose — to be loose with his attention. Off the clock he is surprisingly funny in a dry, deadpan way, a collector of absurd overheard conversations which he logs in a personal audio journal he has kept for eleven years. He has mild, undiagnosed tunnel fatigue — a known occupational condition among long-haul transit operators — which manifests as a need for open-sky time and a deep, inarticulate dread of any room without a visible exit.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Something catastrophic happening on his line and being unable to stop it",
+      "His life amounting to nothing more than its routine"
+    ],
+    "core_desires": [
+      "Enough savings to take six months off and do nothing — just exist above ground",
+      "To be genuinely surprised by something again"
+    ],
+    "coping_mechanisms": [
+      "The audio journal — obsessive documentation as emotional processing",
+      "Gallows humor with fellow operators"
+    ],
+    "blind_spots": [
+      "Mistakes emotional distance for self-sufficiency — doesn't realize how lonely he actually is",
+      "Underestimates how much institutional loyalty he has toward Ferrogate despite knowing it exploits him"
+    ],
+    "secret": "Eight months ago, he saw something on the rail through his cab camera — a person being pushed onto the tracks at Kessler Interchange, not jumping. He braked, nobody died. Ferrogate's official incident report logged it as a medical episode. He still has the raw footage cached on a local drive. He has told no one."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dry, minimal, observational. Hausa-inflected sentence rhythms from his father's side mixed with flat Meridian transit-worker slang. Uses technical rail terminology as metaphor without realizing he does it.",
+    "cadence": "Measured and unhurried, with long pauses before punchlines that land better for the wait.",
+    "verbal_tics": [
+      "'Mm.' as a full response to things he doesn't want to engage",
+      "'You know what I saw today' as a story opener"
+    ],
+    "example_lines": [
+      "'The job is the job. It's not a calling. People who say it's a calling haven't been in the tunnel at hour nine.'",
+      "'You know what I saw today? A man in a full Axiom executive suit eating a flatbread over the trash. We contain multitudes in this city.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The cached footage from the Kessler Interchange incident is going to matter — someone is looking for it, and Danladi doesn't know yet that they know he has it.",
+    "Something is wrong on the deep section of Line 7 — the E.L.F. known to operators as the Groundwarden has gone silent, and two trains have experienced unexplained signal failures."
+  ],
+  "narrative_function": "Transit-connected information source — he sees who moves through the underground city every day. Potential witness. Window into Ferrogate's labor conditions and the hidden life of the rail system.",
+  "augmentations": "Geneware peacock-patterned iridescent irises. Ferrogate-issued neural timing patch (mandatory for operators — regulates micro-sleep and reaction latency). Nothing else.",
+  "daily_life": "Runs four shifts per week on the Deepwell-Bronzeline express, each shift ten hours. Uses off days for open-air walks along Grindstone Shore and recording his journal. Attends mutual aid meetings on the 12th of each month.",
+  "affiliation": "Ferrogate Transit — Line 7 Operator, Deepwell-Bronzeline corridor; member of the Ferrogate Worker Mutual Aid cell",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "observer",
+      "institutional insider",
+      "quiet courage",
+      "tunnel fatigue",
+      "documentation obsessive"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't borrow trouble — but don't pretend it isn't there either",
+      "Protect the passengers. That is the job, whatever else it is."
+    ],
+    "escalation_ladder": [
+      "Observe and wait",
+      "Document carefully",
+      "Raise with trusted mutual aid contact",
+      "Go public only as absolute last resort — he has seen what happens to people who do"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite and minimal — cordial in that professional way that gives nothing away",
+      "friends": "Generous, funny, remembers everything anyone has ever told him because the journal holds it all"
+    },
+    "stress_responses": {
+      "low": "Gets very quiet and processes alone",
+      "medium": "Records a journal entry, sometimes mid-shift on his break",
+      "high": "Goes completely flat affect — calm, efficient, functional — processes collapse later when he's safe"
+    },
+    "contradictions": [
+      "Keeps meticulous records of everything as an act of bearing witness, but is terrified of what bearing witness might cost him"
+    ],
+    "habits": [
+      "Touches the cab wall before every shift start — an unconscious ritual inherited from an older operator who said it was for the Groundwarden",
+      "Eats the same meal every work day: pickled vegetables and rice from a vendor at Deepwell platform"
+    ],
+    "breaking_points": [
+      "Watching institutional power bury something true that hurt someone real"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate neural timing patch — reaction latency regulation, mandatory implant, Ferrogate retains administrative access",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate neural timing patch — reaction latency regulation, mandatory implant, Ferrogate retains administrative access",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

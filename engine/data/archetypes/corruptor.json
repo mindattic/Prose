@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a566764cb2cd429f09c2bf7a",
+  "name": "Corruptor",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Drags others down to their level",
+  "behavioral_signature": "Finds the weakness in others' morality and exploits it",
+  "under_stress": "Becomes more insidious",
+  "at_rest": "Normalizes small compromises that lead to big ones",
+  "will_always": [
+    "make others complicit"
+  ],
+  "will_never": [
+    "let someone keep their innocence"
+  ],
+  "unless": [
+    "corrupting them would break something beautiful they want to preserve"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Manipulator",
+      "threshold": 0.75,
+      "context": "exploitation"
+    },
+    {
+      "archetype": "Enabler",
+      "threshold": 0.8,
+      "context": "moral erosion"
+    }
+  ],
+  "opposite_of": [
+    "Redeemer",
+    "Moral Compass"
+  ],
+  "tags": [
+    "corrupting",
+    "insidious"
+  ]
+}

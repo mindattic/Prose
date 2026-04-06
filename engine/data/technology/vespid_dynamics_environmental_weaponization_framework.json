@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa567c51949727b205de7231",
+  "name": "Vespid Dynamics Environmental Weaponization Framework",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Environmental Weaponization Framework",
+  "type": "technology",
+  "aliases": [
+    "EWF",
+    "Nature War",
+    "Eco Weapon",
+    "Vespid Green"
+  ],
+  "subcategory": "biotechnology",
+  "description": "A systematic methodology for engineering biological organisms to serve as weapons or force multipliers — insects that carry surveillance payloads, plants that produce defensive chemical compounds, bacteria that consume specific materials, and fungi that grow into structural shapes. The EWF does not create a single weapon but provides a framework for turning any biological organism into a tool through targeted genetic modification. Vespid's bio-weapons division uses EWF to produce a constantly evolving catalog of biological agents that are technically classified as 'organisms' rather than 'weapons,' exploiting a regulatory gap.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "VESPID DYNAMICS",
+    "HELIX BIOSYSTEMS"
+  ],
+  "base_technologies": [
+    "Targeted organism genetic weaponization",
+    "Biological function repurposing",
+    "Regulatory classification exploitation"
+  ],
+  "enables": [
+    "Custom biological weapon agents",
+    "Organism-based surveillance systems",
+    "Biodegradable infrastructure attack",
+    "Living area denial systems"
+  ],
+  "social_impact": "EWF has made the natural world a potential threat vector in ways that security systems are not designed to handle. A tree could be a surveillance platform. An insect could be a weapon. Mold in a building could be a targeted attack rather than poor maintenance. The framework has created a form of strategic paranoia where anything alive might be engineered, blurring the boundary between natural environment and operational theater.",
+  "story_hooks": [
+    "A new species of insect has appeared in a corporate district that is not found in any entomological database — it is an EWF-engineered surveillance organism, and it has been breeding in the walls for months.",
+    "A garden maintained by a Tier 3 building's residents has been discovered to contain EWF-modified plants that release a low-concentration sedative compound — the residents have been slightly drugged every time they tended their garden."
+  ],
+  "tags": [
+    "biotechnology",
+    "technology",
+    "weapon",
+    "war",
+    "genetic",
+    "ai",
+    "corporate",
+    "surveillance",
+    "drug",
+    "tier 4"
+  ]
+}

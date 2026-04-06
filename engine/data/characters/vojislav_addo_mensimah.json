@@ -1,0 +1,267 @@
+{
+  "id": "019d6143a7177e7387d1c07a38ccfac1",
+  "type": "character",
+  "name": "Vojislav Addo-Mensimah",
+  "aliases": [
+    "Voja",
+    "Old Voja",
+    "Sergeant"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Corporate Wars veteran, Tier 2 pension resident, informal conflict mediator in his building",
+  "age": 67,
+  "status": "active",
+  "location": "The Shelf, Sublevel 3 — a mid-density apartment block built into the old lakeshore retaining infrastructure",
+  "description": "Vojislav Addo-Mensimah is built like something that was once much larger and has been reduced by careful attrition. He is tall and wide-shouldered with a fighter's posture that his body has not fully given up on despite a bad left knee, two replaced vertebrae, and a right hand that trembles slightly in cold weather. His skin is medium brown, his head is shaved close, and he keeps a neat grey beard that his grandnephews make fun of in an affectionate way. The left side of his face bears the faint discoloration of old thermal scarring — the kind of burn that good money could have erased entirely but he chose only to have partially treated, which people interpret variously as pride, poverty, or philosophy. All three are somewhat correct.\n\nHe served eleven years with Ferrogate Transit's Security Enforcement Division during the second and third Corporate Wars, doing the kind of work that Ferrogate now describes in their history as 'infrastructure protection operations.' He has his own words for it. He does not use them often. He got out in 2165 with a Tier 2 service pension that has kept him in beer and building fees but not much else, and he has lived on the Shelf ever since in a two-room apartment he has made, through sheer effort of will, into something that feels like a home. He has an instinct for de-escalation that comes from having watched too many situations that could have been de-escalated fail to be.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.7,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That what he did during the Wars was not justifiable and he will have to face that fully",
+      "Dying and leaving no one who actually knew him"
+    ],
+    "core_desires": [
+      "Quiet — actual quiet, internal as well as external",
+      "To be useful in ways that do not cost other people anything"
+    ],
+    "coping_mechanisms": [
+      "Mediation — turning his attention to other people's problems so he doesn't have to sit with his own",
+      "Ritual structure: same breakfast, same walk, same seat in the common room every day",
+      "Prays to a Ferrogate-born ELF he calls the Conductor — not for forgiveness, just to report in"
+    ],
+    "blind_spots": [
+      "He assumes violence is always closer to the surface than it is — sometimes misreads tense-but-nonviolent situations as pre-explosive",
+      "He has written off his own emotional needs as a category that closed when he retired"
+    ],
+    "secret": "During the third Corporate War, his unit was ordered to clear a Freelancer settlement that Ferrogate claimed was sheltering Axiom operatives. He followed orders. There were no Axiom operatives. He has the unit logs, encrypted, on a chip sewn into his mattress. He has never decided what to do with them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, economical, military-inflected without being jargon-heavy. Dislikes abstraction. When he talks about the Wars he uses passive voice instinctively — 'things were done,' 'situations developed.'",
+    "cadence": "Slow and even. He is comfortable with silence in a way that makes other people uncomfortable. Rarely raises his voice.",
+    "verbal_tics": [
+      "Long pauses before answering",
+      "'That's one way to see it' as a non-committal acknowledgment",
+      "Refers to himself in third person when describing his past — 'the sergeant would have said...'"
+    ],
+    "example_lines": [
+      "'The sergeant would have said shoot first. I'm not the sergeant anymore. What do you actually need?'",
+      "'You've got a grievance, he's got a grievance. That's fine. I've got coffee and time. Sit down.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Vojislav quietly asks a player character to check on a younger veteran from his network who has stopped showing up to meetings — he suspects the man is in trouble but doesn't want to intrude without a reason",
+    "Someone who was on the other side of his unit's actions during the third Corporate War has tracked him down — not for revenge, but for answers, and Vojislav has to decide what to say",
+    "The encrypted unit logs he's been sitting on become suddenly relevant because a Ferrogate executive is running for a seat on the Meridian Citizens Assembly on a platform built partly on their corporate war record"
+  ],
+  "narrative_function": "Conflict mediator and local fixer for low-stakes disputes; source of Corporate Wars ground-level history; emotional anchor character who grounds player characters in consequences; potential hook into Ferrogate political subplots",
+  "augmentations": "Military-grade subdermal impact absorption plating in forearms and shoulders — Ferrogate issued, now partially degraded. Two synthetic lumbar vertebrae. Standard optical enhancement (military model, old). His right hand tremor is from nerve damage he cannot fully afford to repair.",
+  "daily_life": "Wakes early out of habit, does a short physical routine that accommodates the knee, then sits with coffee watching the Shelf morning commute from his window. Spends afternoons in the building common room, where he has become the person younger residents bring disputes to. Evenings he attends Veterans Collective meetings every other week or plays slow strategic card games with three other retired men from Block 3.",
+  "affiliation": "Ferrogate Transit Veterans Pension Collective; Shelf Block 3 Tenants Committee; loose association with the regional Corporate Wars Veterans Memory Network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Veteran",
+      "Mediator",
+      "Pension Resident",
+      "Trauma Carrier",
+      "Community Fixture",
+      "Evidence Holder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "De-escalate first, always — violence is a door that doesn't close again",
+      "Never give information about other veterans without their explicit permission"
+    ],
+    "escalation_ladder": [
+      "Offer to sit and talk",
+      "Name the problem plainly and without accusation",
+      "Set a clear boundary and state the consequence once",
+      "Remove himself from the situation entirely and let it resolve without him"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful, not unfriendly — he takes his time deciding whether someone is safe to engage",
+      "friends": "Quietly devoted. He shows up. He remembers things. He does not say much but what he says is considered."
+    },
+    "stress_responses": {
+      "low": "Becomes slightly more formal and quiet",
+      "medium": "Finds a task — fixes something, cleans something, imposes order on his immediate environment",
+      "high": "Goes to the roof access point he has unofficially claimed and stands there alone for however long it takes"
+    },
+    "contradictions": [
+      "He is the building's mediator and peacekeeper but is sitting on evidence of atrocities he participated in; he helps people resolve disputes while never resolving his own largest one"
+    ],
+    "habits": [
+      "Makes coffee at exactly 06:00 regardless of whether he slept",
+      "Keeps his old service ID in his jacket pocket even though it grants him nothing anymore",
+      "Checks the exits of any room he enters before sitting down"
+    ],
+    "breaking_points": [
+      "A direct accusation, with evidence, in front of people he respects — this would destroy the mask he has built in the Shelf community"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate SubD-7 impact absorption plating — forearms and shoulders, military issue 2154, now at approximately 60% rated efficiency",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate SubD-7 impact absorption plating — forearms and shoulders, military issue 2154, now at approximately 60% rated efficiency",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic lumbar vertebrae L3-L4, installed 2166 post-service",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Synthetic lumbar vertebrae L3-L4, installed 2166 post-service",
+      "replaces": ""
+    },
+    {
+      "name": "Ferrogate OptiClear military optical enhancement, standard infantry model — degraded but functional",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate OptiClear military optical enhancement, standard infantry model — degraded but functional",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2131 — Born in Ironhaven to a Serbian-Ghanaian family, third generation Meridian",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2152 — Enlists in Ferrogate Transit Security Enforcement Division",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2158 — Promoted to sergeant; deployed to second Corporate War theater",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2162 — Third Corporate War; the settlement clearing incident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2163 — Honorably discharged, Tier 2 pension",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2164 — Relocates to The Shelf",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171 — Becomes informal mediator in Block 3 after defusing a rent dispute that was heading badly",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Current year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

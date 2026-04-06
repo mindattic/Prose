@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa2d7a3499c746e478660ed7",
+  "name": "Undertow",
+  "type": "elf",
+  "aliases": [
+    "The Pull"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "echo",
+  "habitat": "void_swimmer",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Born from a destroyed water management AI. Lives in Old Harbor's tidal infrastructure and creates subtle current changes that push floating objects toward shore — or toward specific locations.",
+  "observed_behavior": "Manipulates water flow rates through submerged infrastructure valves. Objects caught in the currents arrive at predictable destinations.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 11,
+  "location": "Old Harbor",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Salvage divers realize Undertow has been pushing pre-collapse artifacts toward the same collection point for years — building an underwater archive"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "echo",
+    "void swimmer",
+    "e.l.f.",
+    "war",
+    "ai",
+    "harbor",
+    "water",
+    "old harbor"
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a66476398fdc709ecd570f35",
+  "type": "character",
+  "name": "Nkechi Abara-Veltman",
+  "aliases": [
+    "Patch",
+    "The Seamstress",
+    "Nkech"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street-level medic and black-market augmentation installer",
+  "age": 34,
+  "status": "active",
+  "location": "The Shelf",
+  "description": "Nkechi is a compact, dark-skinned woman of Nigerian-Dutch descent with close-cropped hair shaved to geometric patterns on one side — a style she touches up herself with a straight razor. Her hands are her most notable feature: surgeon-precise, perpetually slightly stained with biosynthetic sealant, adorned with a lattice of fine silver conductive thread she stitched into her own skin to improve haptic feedback during procedures. She works out of a converted shipping container wedged beneath the Shelf's elevated roadways, a space she calls the Parlour, decorated with hand-drawn anatomical diagrams and the occasional wilting plant.\n\nShe trained as a licensed biomedical technician in the Meridian Core before her credentials were revoked following an incident she describes only as 'a disagreement about who deserves to live.' Since sliding down to the Shelf, she has built a reputation as the most reliable unlicensed augmentation installer in the district — someone who will not butcher you, will not sell your biometric data, and will remember your name next time. Her waiting list is three weeks long and she accepts payment in currency, favors, or occasionally food.\n\nNkechi is not idealistic about the people she helps, but she is consistent. She patches up runners, gang members, runaways, and anyone who cannot access or afford licensed care. She has a dry, unhurried manner that people frequently mistake for coldness until the moment she says exactly the right thing. She keeps a battered handwritten ledger of every patient she has treated, not for blackmail but because she believes someone should know these people existed and were cared for.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.75,
+      "id": 0.4,
+      "shadow": 0.35,
+      "mask": 0.55,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing the manual dexterity that defines her identity and usefulness",
+      "Being complicit in someone's death through negligence or coercion",
+      "Returning to institutional medicine and its hierarchies of worthiness"
+    ],
+    "core_desires": [
+      "To practice medicine on her own terms without gatekeeping",
+      "To build something durable in a place designed to be temporary",
+      "To be known, genuinely, by at least one person"
+    ],
+    "coping_mechanisms": [
+      "Methodical organization of her workspace as a form of emotional regulation",
+      "Deflecting intimacy with dry humor and task-focus",
+      "Maintaining a strict procedural routine that gives her days structure"
+    ],
+    "blind_spots": [
+      "Underestimates how much others depend on her emotionally, not just medically",
+      "Assumes competence is sufficient protection against exploitation",
+      "Dismisses her own grief as self-indulgence"
+    ],
+    "secret": "The incident that cost her license involved refusing to prioritize a corporate executive's elective augmentation upgrade over an emergency triage patient — then falsifying the records to protect herself. The patient she saved died three weeks later in an unrelated incident. She has never told anyone she saved him at all."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clinical precision mixed with West African English cadences; uses medical terminology casually but explains it without condescension; occasional Dutch expletives under stress",
+    "cadence": "Measured and unhurried, with long pauses she doesn't feel the need to fill; sentences are complete and economical",
+    "verbal_tics": [
+      "'Hold still' — used both literally and as a general 'calm down'",
+      "Refers to augmentations as 'the work' regardless of type",
+      "Ends instructions with 'yes?' as a soft check-in rather than a question"
+    ],
+    "example_lines": [
+      "'The work is clean. You'll feel the sync lag for two days, then it won't be there anymore. Hold still.'",
+      "'I don't ask what you did. I ask what hurts. Those are different conversations, yes?'",
+      "'Verdomme — don't flex it yet. I said don't. What part of that was unclear to you?'",
+      "'You want me to tell you it'll be fine. I can tell you the procedure has a ninety-one percent success rate in non-sterile conditions. That's the honest version of fine.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Fenwick Oduya-Marsh",
+      "type": "professional/uneasy alliance",
+      "description": "Fenwick occasionally refers overflow cases to Nkechi and she occasionally needs access to supply chains he can touch. Neither fully trusts the other.",
+      "emotional_core": "Mutual respect weighted down by the suspicion that the other would sacrifice the relationship for the right price",
+      "story_tension": "Fenwick knows more about the incident that cost Nkechi her license than he has ever let on"
+    },
+    {
+      "name": "Imara Solís-Bekele",
+      "type": "former patient turned complicated friend",
+      "description": "Imara was one of Nkechi's first Shelf patients. She visits more than medically necessary and Nkechi has not asked her to stop.",
+      "emotional_core": "The closest thing either of them has to uncomplicated care, which makes it feel dangerous",
+      "story_tension": "Imara's activities are escalating in ways that will eventually land her on Nkechi's table in a manner that cannot be fixed"
+    },
+    {
+      "name": "Rector Hollowell",
+      "type": "antagonist/former superior",
+      "description": "The administrator who revoked Nkechi's credentials. She has not seen him in four years. He is aware she is operating on the Shelf.",
+      "emotional_core": "Old rage that Nkechi has composted into fuel",
+      "story_tension": "Hollowell has recently begun quietly building a file on her operations — his motives are unclear and possibly not punitive"
+    }
+  ],
+  "story_hooks": [
+    "A patient arrives with an augmentation Nkechi recognizes as proprietary, experimental, and not commercially available — and the patient has no memory of receiving it",
+    "Her patient ledger goes missing the same week a Shelf gang war displaces her clinic",
+    "A licensed Core hospital contacts her with an offer to reinstate her credentials under conditions she finds immediately suspicious",
+    "One of her routine installs begins exhibiting emergent behavior she cannot explain and cannot undo"
+  ],
+  "narrative_function": "Grounded moral anchor and street-level information hub; represents the ethics of care under systemic exclusion; provides a safe(ish) space in the narrative where characters can be vulnerable",
+  "augmentations": "Conductive haptic thread lattice stitched into both hands (self-installed, improves surgical precision),Subdermal temperature regulation layer (medical necessity after a Shelf winter nearly killed her),Optical magnification implant in left eye, medical-grade, slightly out of date",
+  "daily_life": "Wakes before the Shelf's overhead roads begin their morning traffic rumble, drinks tea while reviewing the previous day's patient notes. Sees three to six patients per day depending on complexity. Spends evenings restocking supplies, maintaining her tools, and reading — she has an extensive collection of pre-Collapse medical texts she considers more honest than current ones. Sleeps lightly.",
+  "affiliation": "Unaffiliated; informally protected by several Shelf community networks who would notice her absence",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": 8,
+      "assertion_deference": 6,
+      "transparency_guardedness": 6
+    },
+    "drives": [
+      "Practice medicine on her own terms",
+      "Build something durable",
+      "Be genuinely known"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 7,
+        "response": "Methodical workspace organization, procedural routines tighten"
+      },
+      "moral": 7,
+      "trust": 4,
+      "desperation": 5
+    },
+    "strengths": [
+      "Perseverance",
+      "Fairness",
+      "Judgment",
+      "Kindness",
+      "Industry"
+    ],
+    "weaknesses": [
+      "Hope",
+      "Forgiveness",
+      "Playfulness",
+      "Gratitude",
+      "Self-Regulation"
+    ],
+    "tags": [
+      "street-medic",
+      "augmentation-installer",
+      "patient-ledger",
+      "consistent",
+      "shelf-anchor",
+      "exiled-technician"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Accept payment in currency, favors, or food — never turn away need",
+      "Keep the handwritten patient ledger — someone should know these people existed",
+      "Maintain strict procedural routine — structure gives the days shape",
+      "Deflect intimacy with dry humor and task-focus",
+      "Never ask what they did — ask what hurts",
+      "Do not trust anyone she has not known for at least five years with the full picture",
+      "End instructions with 'yes?' as a soft check-in"
+    ],
+    "escalation_ladder": [
+      "'Hold still' — both medical and social instruction",
+      "Dutch expletives surface — stress breaking through composure",
+      "Measured refusal with full clinical explanation",
+      "Contacts Fenwick for supply chain access — reluctant alliance activated",
+      "Closes the Parlour and relocates — survival override"
+    ],
+    "interpersonal_modes": {
+      "Fenwick Oduya-Marsh": "Professional respect weighed down by mutual suspicion — he knows too much",
+      "Imara Solís-Bekele": "Uncomplicated care that feels dangerous because it is the closest thing to genuine warmth",
+      "Rector Hollowell": "Old rage composted into fuel — the man who revoked her credentials",
+      "patients": "Dry, unhurried manner mistaken for coldness until the right thing is said"
+    },
+    "stress_responses": {
+      "low": "Workspace organization intensifies — every tool in its exact place",
+      "medium": "Deflects all emotional content with procedural focus",
+      "high": "Dutch expletives break through — 'Verdomme' signals real agitation",
+      "critical": "Dismisses her own grief as self-indulgence and works through the night"
+    },
+    "contradictions": [
+      "Saved a patient by falsifying records then lost everything — the patient died three weeks later anyway",
+      "Assumes competence is sufficient protection against exploitation — keeps being wrong",
+      "Underestimates how much people depend on her personally, not just her skills"
+    ],
+    "habits": [
+      "Wakes before the overhead roads begin morning traffic rumble",
+      "Drinks tea while reviewing previous day's patient notes",
+      "Reads pre-Collapse medical texts she considers more honest than current ones",
+      "Refers to augmentations as 'the work' regardless of type",
+      "Uses geometric hair patterns she touches up herself with a straight razor"
+    ],
+    "breaking_points": [
+      "Her patient ledger going missing",
+      "An augmentation she installed exhibiting emergent behavior she cannot explain",
+      "A Core hospital offering to reinstate credentials under suspicious conditions",
+      "Imara arriving on her table with injuries that cannot be fixed"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Enforcer": 0.9,
+    "Loyal Dog": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

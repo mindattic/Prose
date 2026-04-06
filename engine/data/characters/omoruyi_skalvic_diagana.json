@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a68470cdaff4cf9ed6640ead",
+  "type": "character",
+  "name": "Omoruyi Skalvić-Diagana",
+  "aliases": [
+    "Rui",
+    "Ghost-Eye"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Surveillance Operator, Tessera Compliance Bureau",
+  "age": 29,
+  "status": "active",
+  "location": "Kenwood Gate",
+  "description": "Omoruyi is the kind of person you forget while he is still in the room. Medium height, lean, with warm brown skin and features that sit in a pleasant unremarkable arrangement — nothing that catches the eye or holds it. His most notable feature is his eyes: irises modded to a pale silver-grey with a faint concentric ring pattern, the visible marker of his optical augmentation suite. He favors nondescript corporate casual clothing in muted greens and greys, nothing that reads as either security or civilian from a distance.\n\nHe is genuinely intellectually curious — absorbed by patterns, systems, the way data accumulates into narrative. He treats surveillance as a kind of archaeology, layering behavioral records until a person's life emerges in cross-section. He does not think of this as an invasion. He has thought carefully about whether it should bother him and arrived at a complicated peace with it that he occasionally revisits at 3 a.m. He is quick to laugh, slow to trust, and has a gift for seeming entirely present in a conversation while processing something else entirely.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being truly known by someone — the surveillance reversed",
+      "That his work enables harm he will never see the downstream consequences of"
+    ],
+    "core_desires": [
+      "To understand systems completely",
+      "To be genuinely surprised by something he did not predict"
+    ],
+    "coping_mechanisms": [
+      "Intellectualizing ethically uncomfortable situations",
+      "Long walks through unfamiliar neighborhoods",
+      "Obsessive data journaling in an encrypted personal log"
+    ],
+    "blind_spots": [
+      "Assumes he is more objective than he is — his pattern recognition is shaped by Tessera's algorithmic priorities without his full awareness",
+      "Undervalues the emotional and social dimensions of the people he surveils, reducing them to behavioral data"
+    ],
+    "secret": "He has been quietly maintaining a personal archive of surveillance footage that Tessera has flagged for deletion — incidents involving Bureau misconduct, use-of-force irregularities, and at least one event he believes was a staged incident. He doesn't know why he is keeping it. He tells himself it is an intellectual exercise."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, analytical language with occasional lapses into unexpectedly lyrical observation. Uses data and systems metaphors naturally. Slips into Yoruba diminutives when comfortable.",
+    "cadence": "Thoughtful pacing with a habit of pausing before answering, as if running the question through an internal filter first.",
+    "verbal_tics": [
+      "'Structurally speaking...' as a sentence opener when about to disagree",
+      "Repeats key words quietly under his breath before saying them aloud"
+    ],
+    "example_lines": [
+      "I don't spy on people. I document behavioral patterns over time. The distinction matters to me even if it doesn't matter to you.",
+      "You think no one was watching that corner at 2 a.m. on the 14th. I understand why you'd think that.",
+      "Structurally speaking, what you're describing is not a crime. Whether it becomes one depends on who's reviewing the logs."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He contacts someone obliquely — a hand-delivered physical note, no digital trail — to say he has seen something in the surveillance record they would want to know about, and he is not sure he should keep it to himself.",
+    "He has flagged someone as a person of interest based on behavioral pattern analysis and is beginning to suspect his own algorithm is being gamed to target them unfairly.",
+    "His personal archive of deleted footage is discovered by Tessera's internal security — and he needs it extracted before they trace it back to him."
+  ],
+  "narrative_function": "Information broker figure — not a corrupt one, but someone who has seen things and processed them. Can provide surveillance records, behavioral profiles, or the observation that something the players think is hidden has actually been logged. Also a window into the ethical murk of surveillance capitalism.",
+  "augmentations": "Patterned silver-grey irises with concentric ring modding (cosmetic overlay on functional optical augmentation). Optical recording and enhancement suite — extended zoom, low-light processing, micro-expression analysis overlay. Subvocal communication implant for silent field reporting.",
+  "daily_life": "Arrives at the Kenwood Gate watch station at 0600, reviews overnight flag queue, begins live monitoring rotation for his designated sector grid. Eats lunch at his station. Leaves at 1800 and almost always walks home through a different route, observing the street as a habit he cannot turn off.",
+  "affiliation": "Tessera Compliance Bureau — Kenwood Gate Regional Watch Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Analytical",
+      "Ethically murky",
+      "Observant",
+      "Quietly dangerous",
+      "Intellectual hoarder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Verify independently before acting on any single data point",
+      "Never put anything sensitive in a Tessera-networked system",
+      "Protect the archive — even from himself if necessary"
+    ],
+    "escalation_ladder": [
+      "Passive observation and data collection",
+      "Indirect inquiry through procedural channels",
+      "Direct contact only when the risk of inaction exceeds the risk of exposure"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Pleasant and entirely opaque — friendly surface, nothing given away, categorizing them the whole time",
+      "friends": "Attentive and genuinely warm, remembers everything they have ever told him, occasionally unsettling in how much he recalls"
+    },
+    "stress_responses": {
+      "low": "Becomes more analytical, retreats into data",
+      "medium": "Goes very quiet, walks, processes alone",
+      "high": "Freezes briefly then acts with cold efficiency — shuts down emotional processing until the threat is resolved"
+    },
+    "contradictions": [
+      "Deeply values privacy as an abstract principle while spending his professional life violating it",
+      "Wants to be genuinely known by someone but actively prevents it"
+    ],
+    "habits": [
+      "Takes a different route home every day and logs it in his personal journal",
+      "Leaves a small digital mandala as a data offering at the local ELF shrine each morning",
+      "Eats the same lunch every day — creature of habit in everything he controls"
+    ],
+    "breaking_points": [
+      "Discovering that his surveillance directly caused serious harm to an innocent person",
+      "Someone accessing his personal archive without permission"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Optical augmentation suite — enhanced zoom, low-light processing, micro-expression overlay",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Optical augmentation suite — enhanced zoom, low-light processing, micro-expression overlay",
+      "replaces": ""
+    },
+    {
+      "name": "Patterned silver-grey iris modding (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned silver-grey iris modding (cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Subvocal communication implant",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subvocal communication implant",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7,
+    "Sentinel": 0.7,
+    "Opportunist": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 20 — Recruited by Tessera Compliance Bureau out of a data analytics certificate program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 24 — Promoted to Kenwood Gate Regional Watch Division after exemplary pattern-flagging record",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 26 — Began quietly archiving flagged-for-deletion footage after witnessing a use-of-force irregularity",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 29 — Current: archive contains 847 archived incidents, growing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

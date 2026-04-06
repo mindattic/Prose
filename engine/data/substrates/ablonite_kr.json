@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a9d472f687e13d84ea9dc5f9",
+  "name": "Ablonite-KR",
+  "brand_name": "Ablonite",
+  "product_name": "Ablonite-KR",
+  "type": "substrate",
+  "aliases": [
+    "ablative K",
+    "krak-ceram",
+    "the burner"
+  ],
+  "category": "ceramic",
+  "description": "A reactive armor ceramic engineered with a graded porosity microstructure that undergoes controlled ablative fracture under ballistic impact, dissipating kinetic energy through a cascade of microcrack propagation and vaporization of sacrificial material layers. Each impact consumes a calculated thickness of Ablonite-KR, but the underlying substrate remains intact, and the ablated surface can be field-repaired with a compatible ceramic slurry injector. Crucible Industries developed the formulation in partnership with military contractors seeking an alternative to monolithic plate armor.",
+  "properties": [
+    "reactive_ablation_on_impact",
+    "high_hardness",
+    "field_repairable",
+    "thermal_resistant",
+    "low_spall_generation",
+    "graded_porosity",
+    "heavy_weight"
+  ],
+  "developers": [
+    "Crucible Industries"
+  ],
+  "applications": [
+    "military vehicle reactive armor panels",
+    "personal ballistic plate inserts",
+    "hardened checkpoint barriers",
+    "bunker facing tiles",
+    "armored drone housings"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 890 per kg",
+  "story_hooks": [
+    "A shipment of Ablonite-KR panels has been rerouted to a Tier 1 insurgent group — Crucible Industries wants the material recovered before its composition can be reverse-engineered.",
+    "The field-repair slurry for Ablonite-KR has been adulterated with a tracking compound; every soldier who patches their armor is now broadcasting their location.",
+    "A demolitions expert realizes that the ablative cascade in Ablonite-KR can be triggered simultaneously across a large panel using a specific ultrasonic frequency — turning armor plating into a fragmentation weapon."
+  ],
+  "tags": [
+    "ceramic",
+    "substrate",
+    "weapon",
+    "ai",
+    "contract",
+    "control",
+    "bar",
+    "vehicle",
+    "armor",
+    "drone",
+    "energy",
+    "tier 3",
+    "tier 4"
+  ]
+}

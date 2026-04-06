@@ -1,0 +1,213 @@
+{
+  "id": "019d6143a6907ce0b15d881f2e18aa83",
+  "type": "character",
+  "name": "Pako Dzhaparidze-Falemalu",
+  "aliases": [
+    "Pakpak",
+    "the Kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "seasonal worker and airship drifter",
+  "age": 17,
+  "status": "active",
+  "location": "Waukegan Industrial Shelf (bunkhouse adjacent to Dock Seven)",
+  "description": "Pako is seventeen and looks it — all unfinished angles and restless energy, a rangy kid with warm brown skin, loose black curls that he's never bothered to cut properly so they spiral out in all directions, and eyes that are a natural dark green with a ring of amber around the pupil that makes them look permanently lit from within. He's got geneware cat ears — small, dark-furred, perpetually swiveling — that he bought with his first real paycheck because he wanted them badly and thought they'd make him look older. They don't. He's wearing a Ferrogate Transit work vest four sizes too big for him, which he received as part of the seasonal dock labor package and which he has rolled up at the sleeves and drawn on with a marker pen along all the pocket seams.\n\nPako is a Georgian-Samoan kid from nowhere in particular — born on an airship cargo hauler, raised on a circuit of industrial ports, currently on his third season of dock work at the Waukegan Industrial Shelf. He is fizzing with the particular energy of someone who has not yet decided what kind of person to be and is trying on options rapidly. He is funny, reckless, occasionally deeply kind, frequently thoughtless, and genuinely talented at three-dimensional spatial reasoning in ways he doesn't have the vocabulary to describe — he just knows where things are and where they'll be. He prays to an E.L.F. he calls Ironbird, the spirit of the cargo hauler he was born on, by tapping specific sequences on metal surfaces.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.3,
+      "id": 0.9,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "being grounded permanently — never getting back onto an airship",
+      "that the hauler crew who raised him didn't actually care and just needed small hands for tight spaces"
+    ],
+    "core_desires": [
+      "to pilot something, anything, eventually",
+      "to be seen as competent by someone whose opinion he respects"
+    ],
+    "coping_mechanisms": [
+      "physical activity — fidgeting, climbing things, running bets to keep his mind occupied",
+      "tapping the Ironbird prayer sequence on any metal surface when anxious"
+    ],
+    "blind_spots": [
+      "performs not-caring about people far more convincingly than he actually doesn't care; gets hurt when people believe the performance",
+      "dramatically underestimates how dangerous some of the situations his impulsivity gets him into"
+    ],
+    "secret": "He has a genuine pilot's intuition — the hauler captain recognized it and taught him the basics before his last contract ended. He can fly simple cargo rigs. He has told no one because he's afraid if he says it out loud, something will stop it from being true."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and loose, industrial dock slang mixed with airship crew idiom; drops words when he's excited; invents compound words for things he doesn't have vocabulary for",
+    "cadence": "Quick, often overlapping itself — starts sentences before finishing the previous thought",
+    "verbal_tics": [
+      "'Yeah-yeah-yeah' when he's processing",
+      "'That's a build, right?' meaning 'that's a thing, right?'",
+      "Tapping metal surfaces mid-conversation"
+    ],
+    "example_lines": [
+      "'Yeah-yeah-yeah, I know what you're saying, but the weight's wrong, I can feel it, the back cargo's shifted, that's a build, right?'",
+      "'I don't want to stay on the ground. The ground is just — it's just waiting. The air is actually going somewhere.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A cargo container he helped load is now the subject of a very quiet search by people who are not Ferrogate Transit employees — and Pako, who has perfect recall for load configurations, is the only one who knows exactly where it ended up",
+    "The hauler captain who taught him to fly has sent a message: the hauler is grounded indefinitely by a Ferrogate inspection hold, the crew is stranded, and Pako is the only person in the region with any money or connections, however minimal"
+  ],
+  "narrative_function": "Local color and unexpected asset — his spatial instincts make him genuinely useful for navigation and cargo problems. Entry point into the airship drifter subculture. A character who might become something significant if someone takes an interest in him, or who might not, which is equally interesting.",
+  "augmentations": "Geneware cat ears (cosmetic, dark fur, bought secondhand — the left one tracks slightly slow). No other augmentations.",
+  "daily_life": "Six-hour dock shifts loading and unloading airship cargo at Dock Seven; spends off-hours running bets with bunkmates, watching airships, getting into and out of minor trouble, sending irregular messages to the hauler crew who raised him.",
+  "affiliation": "Seasonal contract with Ferrogate Transit Dock Operations; informally part of the bunkhouse crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 4,
+      "creativity": 7,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -5,
+      "assertion_deference": -3,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "drifter-kid",
+      "airship-born",
+      "spatial-prodigy",
+      "seasonal-worker",
+      "becoming"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Act first, work out the specifics while already acting",
+      "Loyalty to the bunkhouse crew until they demonstrate they don't deserve it — then immediately"
+    ],
+    "escalation_ladder": [
+      "Loud and cheerful negotiation",
+      "Louder and less cheerful negotiation",
+      "Does the thing he was told not to do anyway",
+      "Runs — not from cowardice, from pure instinct"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately friendly and slightly performing — turns up the volume on himself for an audience",
+      "friends": "Drops the performance, becomes oddly earnest and occasionally too honest"
+    },
+    "stress_responses": {
+      "low": "Gets louder and makes jokes",
+      "medium": "Goes quiet in a way that is very unlike him and starts calculating",
+      "high": "Moves — gets himself physically out of the situation and then figures out what to do"
+    },
+    "contradictions": [
+      "Craves permanence and belonging while choosing seasonal work and constant movement because it's what he knows",
+      "Performs confidence as a constant state while being genuinely uncertain about almost everything"
+    ],
+    "habits": [
+      "Taps the Ironbird sequence on dock equipment before each shift",
+      "Draws on everything — margins of forms, vest pockets, his own forearms",
+      "Checks the airship schedules every morning even on days off"
+    ],
+    "breaking_points": [
+      "Being told he will never qualify for a pilot's certification due to his unregistered birth status",
+      "Something happening to the hauler crew while he was unable to help"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "fair",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born aboard the cargo hauler Ironbird One somewhere over Lake Superior; parents were crew, both Georgian-Samoan, both gone by his fifth year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First seasonal dock contract at Manitowoc Drydock, age 12; lied about his age",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hauler captain gives him informal pilot instruction during two seasons of work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Third season at Waukegan Industrial Shelf; Ferrogate grounds the Ironbird One",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

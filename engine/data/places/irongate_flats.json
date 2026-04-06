@@ -1,0 +1,115 @@
+{
+  "id": "019d6143a91f703d8815741ef51c10ff",
+  "type": "place",
+  "name": "Irongate Flats",
+  "aliases": [
+    "The Flats",
+    "Irongate",
+    "The Low Corridor",
+    "Rust Haven"
+  ],
+  "description": "Irongate Flats occupies a compressed strip of reclaimed industrial land along the Chicago River's northern fork, sandwiched between the elevated rail infrastructure of an active Carrion Logistics freight line overhead and a retaining wall that separates it from the Shelf's lower drainage channels below. The neighborhood grew organically from a cluster of heavy equipment storage yards and machine shops that never fully cleared out after the industrial consolidations of the 2130s, and the result is a dense, low-rise district that feels structurally halfway between a permanent settlement and a long-term encampment — corrugated metal facades bolted onto older brick structures, rooftop additions built from salvaged freight containers, covered walkways strung between buildings to shelter the narrow streets from the constant rain of rust and grit shaken loose by freight trains passing overhead.\n\nThe approximately four thousand people who live in Irongate Flats are predominantly Tier 3 and Tier 4 workers in the industrial and logistics trades — welders, fabricators, machine diagnosticians, BCI-assisted heavy equipment operators, and the considerable support infrastructure that keeps them housed, fed, medicated, and functional. There is a rough competence to daily life here that outsiders sometimes mistake for roughness of another kind: people know their tools, know their neighbors, and know the difference between a problem they can fix themselves and one that requires help. The local economy is substantially cash-equivalent, with most transactions conducted through a neighborhood-managed Diaspora sub-mesh that runs parallel to the main network and keeps local transaction records out of corponation analytics.\n\nThe freight line overhead is both the district's primary liability and its primary economic driver. Carrion Logistics pays a nominal easement fee to a neighborhood association that uses the funds to maintain the retaining wall infrastructure and the covered walkways. In exchange, Carrion maintains a hands-off policy toward the community that represents a meaningful departure from the corponation's usual practices — a relationship maintained through careful cultivation and a shared understanding that the most experienced equipment specialists in the region live directly below the freight line and keep it running smoothly.",
+  "atmosphere": {
+    "sights": [
+      "Covered streets in perpetual industrial twilight, lit by strings of work lights and neon business signage in a dozen languages",
+      "Freight trains passing overhead every twenty to forty minutes, visible through steel-grate sections of the walkway covers, their running lights strobing through the gaps",
+      "Machine shops and fabrication spaces with their shutters open to the street, sparks and blue welding light spilling across wet pavement",
+      "Rooftop container additions painted in bright colors — reds, greens, deep yellows — contrasting with the grey-brown industrial surroundings",
+      "Children running errands between shops, their BCIs visibly active, navigating the covered street grid with the fluency of long familiarity"
+    ],
+    "sounds": [
+      "The rhythmic thunder of freight trains passing overhead, shaking loose a constant fine rain of rust and particulate",
+      "Industrial noise from open-shutter shops — grinding, hammering, the high whine of precision cutting tools",
+      "Street conversation in Tagalog, Yoruba, Portuguese, Hindi, and Mandarin, voices raised against the background noise",
+      "The neighborhood sub-mesh producing a faint harmonic hum audible through BCI audio channels — a side effect of its non-standard architecture that locals find comforting and visitors find strange"
+    ],
+    "smells": [
+      "Machine oil, hot metal, and the particular ozone smell of active welding equipment",
+      "Street food from covered vendors — grilled protein, fermented grain drinks, fried flatbreads with pungent fillings",
+      "River water and the particular wet-rust smell that drifts up from the drainage channels below the retaining wall",
+      "Diesel and the chemical exhaust of freight train power systems cutting through everything else when a train passes"
+    ],
+    "feel": "Irongate Flats has the dense, pressurized feeling of a place that has optimized for survival and landed, accidentally, on something resembling flourishing. The covered streets create an intimate, almost interior quality to the public space — rain and wind are kept out, sound is channeled and amplified, and the visual horizon is always close. This produces a social intensity that newcomers find either welcoming or claustrophobic depending on their orientation. The community's relationship to its own infrastructure is unusually hands-on: residents fix things, modify things, argue about things in public forums, and maintain a collective investment in their environment that is rare at Tier 3 and essentially unheard of at Tier 4.",
+    "tags": []
+  },
+  "demographics": "Predominantly Tier 3 and Tier 4 industrial and logistics workers and their families. Significant multigenerational populations of Filipino, Nigerian, Brazilian, and South Asian descent, reflecting the historical labor migration patterns of the 2110s-2130s industrial consolidations. A small but stable population of synthetic persons who found informal acceptance here before synthetic personhood became a wider civil rights issue.",
+  "economy": "Primary income through industrial fabrication, equipment maintenance, and specialist labor contracting — particularly to Carrion Logistics, Ringo Heavy Industries, and several independent freight operators. Secondary economy in street food, local retail, and informal financial services run through the neighborhood sub-mesh. A discreet but acknowledged gray market in unregistered equipment modifications and off-book fabrication work for clients who need custom hardware without a paper trail.",
+  "power_structure": "The Irongate Neighborhood Association is the de facto governing body, holding the Carrion Logistics easement contract and managing the sub-mesh infrastructure. Leadership is elected but heavily influenced by the three or four senior master fabricators whose workshops are the economic anchors of the district. Ferrogate Security does not hold a contract here — the Association manages its own dispute resolution through a combination of community mediation and, when necessary, the credible threat of withdrawing the specialist labor that keeps Carrion's freight line operational.",
+  "dangers": [
+    "The freight line overhead creates genuine physical hazard from falling debris, particularly during high-speed cargo runs — residents know the safe corridors but visitors do not",
+    "The retaining wall above the drainage channels has experienced two partial failures in the last decade; a significant failure would flood the lower streets within minutes",
+    "Off-book fabrication clients occasionally arrive with needs that attract dangerous attention from corponation enforcement or rival criminal operators",
+    "The sub-mesh's non-standard architecture makes it a periodic target for hostile ELF intrusion — the mesh has been partially compromised twice, with significant disruption to local financial records",
+    "Carrion Logistics' increasing automation agenda threatens the labor relationship that underpins the neighborhood's negotiating position, a threat that is producing internal political tension"
+  ],
+  "opportunities": [
+    "Access to specialist fabrication capabilities outside corporate supply chains — custom hardware, unregistered modifications, and bespoke equipment built by people who actually know what they are doing",
+    "The sub-mesh infrastructure provides a semi-private financial network usable by those with the right introductions for transactions that do not appear in standard Diaspora records",
+    "The neighborhood's relationship with Carrion Logistics provides legitimate logistics and freight access that can be leveraged for moving goods or people without standard manifest scrutiny"
+  ],
+  "story_hooks": [
+    "One of the senior master fabricators has been quietly building something in the back of her shop for three years, ordering parts through channels that are deliberately obscured and keeping her most trusted apprentices away from the project. Two weeks ago she disappeared, and the partially assembled object she left behind has attracted the attention of both Arcturus Defense Solutions and an entity claiming to be an ELF who says the fabricator was building it for them. Someone needs to find out where she went and whether she left voluntarily.",
+    "Carrion Logistics has begun deploying automated maintenance units on the freight line overhead — units that, the neighborhood's equipment diagnosticians have discovered, are also performing surveillance functions unrelated to freight operations, mapping the sub-mesh architecture and logging the faces of residents. The Association wants the surveillance functionality disabled without tipping off Carrion that it has been detected, which requires someone with the technical skills to modify the units during active deployment and the social skills to keep the operation from leaking."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Shelf",
+      "The South Side",
+      "The Stockyard",
+      "The Rust Circuit"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Industrial fabricators, welders, and equipment specialists seeking or offering work",
+    "Carrion Logistics logistics coordinators maintaining the labor relationship",
+    "Fixers and independent operators sourcing custom hardware through off-book channels",
+    "Synthetic persons who have found informal community acceptance here",
+    "Ringo Heavy Industries subcontracting agents scouting specialist labor"
+  ],
+  "notable_locations": [
+    {
+      "name": "Okafor's Workshop",
+      "description": "The largest and most technically sophisticated fabrication shop in the Flats, operated by a third-generation master fabricator named Dele Okafor. Produces custom industrial components for legitimate clients and considerably more specialized work for others.",
+      "tags": []
+    },
+    {
+      "name": "The Association Hall",
+      "description": "A converted machine shop serving as the Neighborhood Association's meeting and administrative space, with the sub-mesh primary node housed in a reinforced basement vault below it.",
+      "tags": []
+    },
+    {
+      "name": "The Span Market",
+      "description": "A covered market occupying the widest section of the main walkway corridor, running continuously from early morning to late night with food vendors, repair stalls, and informal labor exchange postings.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.887,
+    "lng": -87.731,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "gun",
+    "war",
+    "trust",
+    "bci",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "ubc",
+    "rooftop",
+    "market",
+    "rain",
+    "rights",
+    "train",
+    "shelter",
+    "food",
+    "shelf"
+  ]
+}

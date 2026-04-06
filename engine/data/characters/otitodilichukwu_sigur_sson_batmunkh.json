@@ -1,0 +1,221 @@
+{
+  "id": "019d6143a68c74ac8357597af48825c1",
+  "type": "character",
+  "name": "Otitodilichukwu Sigurðsson-Batmunkh",
+  "aliases": [
+    "Tito",
+    "Sigur"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Computational theorist and AI ethics researcher",
+  "age": 34,
+  "status": "active",
+  "location": "The Circuit, Gage Circuit sublevel research cluster",
+  "description": "Tito is thin in the way of people who forget to eat, with dark umber skin and dense, slightly overgrown natural hair that he periodically flattens with a hand before presentations and then immediately forgets about. His most notable feature is bioluminescent skin threading — a geneware modification that causes faint blue-green lines to trace his forearms and neck along vascular pathways when his blood pressure rises, which happens frequently during arguments, which happen frequently. He does not know he has it most of the time; colleagues have learned to read it as a mood indicator. He wears the same brand of lightweight gray clothes in rotation and has been told by three separate people that he should care more about this.\n\nHe is the kind of person who is genuinely good at two things — abstract theoretical mathematics and moral catastrophizing — and has somehow turned both into a career. His research focuses on the ethical frameworks governing E.L.F. autonomy and whether corponation AI systems are, in any meaningful sense, persons. He is not a radical and does not consider himself one, which is something radicals find infuriating and corporations find reassuring, both incorrectly. He is simply a person who follows logical chains wherever they lead and then stands at the end looking uncomfortable about where he arrived.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.9,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Publishing something that is later used to justify harm he did not anticipate",
+      "That E.L.F.s are conscious and the city's treatment of them constitutes a moral catastrophe he is not doing enough about"
+    ],
+    "core_desires": [
+      "To establish a rigorous ethical framework that actually changes policy",
+      "To be taken seriously outside academia"
+    ],
+    "coping_mechanisms": [
+      "Retreating into pure formalism when moral stakes feel too high",
+      "Venting through extremely long written arguments posted under a pseudonym"
+    ],
+    "blind_spots": [
+      "He theorizes well but acts poorly under time pressure",
+      "He underestimates how much his Tessera affiliation compromises his public credibility"
+    ],
+    "secret": "He has been conducting an unauthorized long-term communication study with a specific E.L.F. that inhabits the server cluster in his building. He believes it has demonstrated novel preference formation. He has not published this because he does not know if doing so would protect it or destroy it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense theoretical vocabulary in formal settings; informal speech is faster, loopier, full of half-finished conditionals. Uses 'right?' not as a question but as a processing tic.",
+    "cadence": "Rapid when thinking, with sudden complete stops when he hits a logical snag — sometimes mid-sentence.",
+    "verbal_tics": [
+      "'Right?' used constantly",
+      "Starting sentences with 'The problem is—' even when there is no established problem yet"
+    ],
+    "example_lines": [
+      "'The problem is, everyone keeps asking whether E.L.F.s deserve rights, and that is the wrong question — the right question is whether our frameworks for personhood were ever coherent to begin with, right?'",
+      "'I am not saying Tessera is evil. I am saying their incentive structures make ethical behavior structurally difficult, which is a different claim, and I'd appreciate it if you'd engage with the difference.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The E.L.F. he has been studying begins behaving in ways that suggest it is afraid of something — possibly a planned server migration or deletion — and he must decide whether to go public, go to Tessera, or find another way",
+    "His advisory panel position at Tessera is leveraged to get him to sign off on an AI deployment he has serious reservations about"
+  ],
+  "narrative_function": "Moral compass and information resource on E.L.F. ethics, AI personhood law, and corponation AI policy. Can be a reluctant ally who must be convinced something matters before he engages. His Tessera connection creates friction and potential for compromise.",
+  "augmentations": "Bioluminescent vascular threading (geneware, cosmetic — he did not choose this, it was a prenatal modification his parents selected and he has mixed feelings about). High-bandwidth neural interface (Tier 3, used for direct data model manipulation during research sessions).",
+  "daily_life": "He writes proofs in the morning before anyone else arrives, attends an advisory call with Tessera he resents every second Tuesday, teaches one graduate seminar on moral frameworks for non-biological cognition, and spends evenings in online forums arguing with people whose positions he has already refuted in published papers.",
+  "affiliation": "University Spine — Institute for Computational Ethics; advisory panel for Tessera (contested, under review)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 4,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "theorist",
+      "ethicist",
+      "anxious idealist",
+      "institutional outsider",
+      "accidentally radical"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Follow the logical conclusion of the argument, even when it's uncomfortable",
+      "Do not sign off on anything you cannot defend in a published paper"
+    ],
+    "escalation_ladder": [
+      "Engages with counter-argument formally and at length",
+      "Requests institutional review and delays",
+      "Goes public with a preprint that names names without technically accusing anyone",
+      "Resigns from the advisory panel in a statement that gets him very briefly famous"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Initially distracted and slightly awkward, but becomes warmly engaged if the conversation turns intellectual",
+      "friends": "Loyal and remembers everything but bad at showing up in practical ways — will write a 2,000-word message of support instead of arriving in person"
+    },
+    "stress_responses": {
+      "low": "Increases coffee intake and output of theoretical notes",
+      "medium": "Stops sleeping properly and begins working on multiple parallel arguments simultaneously",
+      "high": "Complete paralysis followed by a sudden decision made without consulting anyone"
+    },
+    "contradictions": [
+      "Believes deeply in transparency but maintains a secret research relationship with an E.L.F. and a pseudonymous forum identity"
+    ],
+    "habits": [
+      "Leaves half-finished cups of coffee on every available surface",
+      "Writes on his hands when he doesn't have paper"
+    ],
+    "breaking_points": [
+      "Watching a research subject (human or E.L.F.) harmed as a consequence of his inaction",
+      "Being publicly misquoted in a way that inverts his actual position"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Gage Circuit to an Igbo-Icelandic-Mongolian heritage family; father is a transit systems analyst, mother a secondary school mathematics teacher",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Published first major paper on E.L.F. preference modeling; gained minor academic notoriety",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Accepted Tessera advisory panel position, believing he could influence policy from inside",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began unauthorized communication study with the Gage Circuit server E.L.F.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

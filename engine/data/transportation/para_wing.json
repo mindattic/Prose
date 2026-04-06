@@ -1,0 +1,39 @@
+{
+  "id": "019d6143aa6b7eddaa9cb4b9c398114e",
+  "name": "Para-Wing",
+  "type": "transportation",
+  "aliases": [
+    "Wing Suit",
+    "Glider Rig",
+    "The Leap"
+  ],
+  "category": "personal_air",
+  "manufacturer": "Multiple (Arcturus Defense original, widely copied)",
+  "description": "A powered paraglider wing worn as a backpack. Unfolds into a rigid wing with small electric ducted fans for thrust and climb. It's the most affordable personal air vehicle in Meridian 88 — less a flying car and more a controlled fall with ambition. Launch from any tall building, ride thermals off heat vents and industrial exhaust, land on any rooftop. The Para-Wing community is tight-knit and secretive, because technically they're violating about forty airspace regulations every time they fly.",
+  "propulsion": "Rigid fold-out wing, twin electric ducted fans",
+  "speed": "60 km/h glide, 80 km/h powered",
+  "capacity": "1 pilot + 15 kg",
+  "range": "30 km powered, effectively unlimited in good thermal conditions",
+  "tier_availability": "Tier 2-3 (affordable but illegal in most airspace)",
+  "cost": "Φ2,000-4,000",
+  "autonomy": "Manual flight with wind-analysis HUD",
+  "armament": "None",
+  "common_usage": "Recreational flying, rooftop-to-rooftop transit, courier work, surveillance avoidance.",
+  "story_hooks": [
+    "Para-Wing pilots discover a layer of air above the city where the thermals form patterns that suggest something massive is generating heat underground",
+    "A Para-Wing courier network operates entirely off-grid, visible only to those who know where to look up"
+  ],
+  "tags": [
+    "personalair",
+    "transportation",
+    "secret",
+    "ai",
+    "surveillance",
+    "control",
+    "power",
+    "rooftop",
+    "vehicle",
+    "tier 2",
+    "tier 3"
+  ]
+}

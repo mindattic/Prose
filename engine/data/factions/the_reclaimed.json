@@ -1,0 +1,59 @@
+{
+  "id": "019d6143a8977fdbb901e758333b14d2",
+  "type": "faction",
+  "name": "The Reclaimed",
+  "aliases": [
+    "Reclaimers",
+    "The Diggers",
+    "Rubble Rats"
+  ],
+  "motto": "The old world built better than this one.",
+  "description": "The Reclaimed are a scavenger gang of about forty-five operating in Detroit's massive ruins belt — the miles of abandoned industrial and residential infrastructure that ring the city's still-functioning core. While other scavengers pick through surface debris, the Reclaimed specialize in deep salvage: entering structurally compromised buildings, excavating collapsed basements, and recovering materials from sites that even the desperate consider too dangerous.\n\nThe crew's edge is engineering knowledge. Their founder, an ex-construction foreman named Dutch, trained them in structural assessment — how to read a building's stress points, where a floor will hold and where it won't, how to shore up a collapsing tunnel long enough to extract what's inside. This knowledge lets the Reclaimed go where others can't, and they've pulled extraordinary finds from deep in the ruins: pre-collapse medical equipment, intact server racks with recoverable data, industrial machinery that still functions, and building materials that the modern economy can't produce because the factories that made them no longer exist.\n\nThe Reclaimed have a quasi-archaeological approach to their work. They catalog finds, maintain records of which sites have been stripped and which remain productive, and they've developed a rough map of Detroit's ruins that represents the most comprehensive survey of the city's abandoned infrastructure in existence. They treat the ruins with something approaching reverence — not sentimentality, but the practical respect of people who know that carelessness in a collapsing building kills.\n\nTheir market is diverse. Construction crews buy recovered building materials. Clinics buy pre-collapse medical equipment. Data brokers buy recovered server contents. The Reclaimed sell to anyone except the corporations that they blame for abandoning Detroit in the first place — a principled stance that costs them their most lucrative potential customers.",
+  "ideology": "The ruins are a resource, not a graveyard. The Reclaimed believe that the pre-collapse world's infrastructure represents an enormous store of value that the current economy is too lazy or too frightened to recover. They also harbor a deep resentment toward the corporate entities that abandoned Detroit's outer districts, viewing their salvage work as reclaiming what was stolen through neglect.",
+  "territory": "Detroit's ruins belt, with primary operations in the Brightmoor and Warrendale districts. Base camp in a structurally reinforced warehouse in Brightmoor.",
+  "leadership": "",
+  "methods": [
+    "Deep salvage — entering structurally compromised buildings using engineering assessment and temporary shoring",
+    "Excavation — digging into collapsed basements and buried structures to reach sealed materials",
+    "Structural assessment — reading a building's integrity to determine safe access routes and productive sites",
+    "Cataloging — maintaining records of salvage sites, finds, and remaining potential across the ruins belt",
+    "Controlled demolition — carefully bringing down sections of structures to access interior materials",
+    "Booby-trapping — rigging productive sites with warnings and deterrents against competing scavengers"
+  ],
+  "resources": [
+    "Forty-five members trained in structural assessment and deep salvage techniques",
+    "Engineering tools — shoring jacks, cutting equipment, winches, and demolition charges",
+    "The most comprehensive map of Detroit's ruins belt in existence",
+    "Stockpiles of salvaged materials with established buyer networks",
+    "A reinforced warehouse base with workshop and storage facilities",
+    "Institutional knowledge of pre-collapse construction methods and material locations"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "",
+  "story_hooks": [
+    "The Reclaimed broke into a sealed facility in the ruins belt and found evidence of corporate experiments that were buried — literally — when the district was abandoned",
+    "A salvage team is trapped in a collapsing structure with a find too valuable to abandon — the Reclaimed need outside help for a complex rescue",
+    "A corporation is claiming ownership of ruins-belt property and threatening the Reclaimed with trespass — the legal fight could set precedents for the entire GLMZ",
+    "Dutch found something in the ruins that changed his behavior — he's become secretive, paranoid, and is redirecting crew resources to a project he won't explain",
+    "A rival scavenger crew is using the Reclaimed's own maps against them, hitting sites before they can be properly worked — someone inside is selling data"
+  ],
+  "tags": [
+    "faction",
+    "war",
+    "gang",
+    "secret",
+    "ai",
+    "corporate",
+    "control",
+    "medical",
+    "clinic",
+    "tunnel",
+    "harbor",
+    "market",
+    "warehouse",
+    "rain",
+    "train",
+    "desperate"
+  ]
+}

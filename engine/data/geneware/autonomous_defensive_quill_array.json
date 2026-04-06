@@ -1,0 +1,52 @@
+{
+  "id": "019d6143a89d7f42b49a8c2f9d5ac645",
+  "name": "Autonomous Defensive Quill Array",
+  "brand_name": "Autonomous",
+  "product_name": "Autonomous Defensive Quill Array",
+  "type": "geneware",
+  "aliases": [
+    "Porcupine Mod",
+    "Spike Back",
+    "Quill Guard"
+  ],
+  "category": "defensive",
+  "target_system": "integumentary (erectile keratinous quill formation)",
+  "description": "Introduces porcupine-derived quill growth genes into the skin of the upper back, shoulders, and outer forearms. The quills lie flat against the skin when relaxed and erect into sharp, barbed spines when the user is threatened or consciously activates them. Erected quills stand 4–8 cm tall and are sharp enough to penetrate clothing and skin. The barbs are designed to break off in an attacker's flesh (like porcupine quills), causing persistent pain and requiring medical extraction. The quill bed continuously regrows broken quills over 1–2 weeks. The modification is purely passive-defensive — it makes the user painful to grab, grapple, or tackle from behind. Gravemoss Biofoundry designed it for people who face physical violence regularly and can't afford weapon-equivalent modifications. It's cheaper than venom glands, less regulated than electric organs, and always ready.",
+  "source_organism": "Erethizon dorsatum (North American porcupine), Hystrix cristata (crested porcupine, barbed quill variant)",
+  "manufacturer": "Gravemoss Biofoundry",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed (classified as passive weapon)",
+  "procedure": "Dorsal and forearm dermal injection with quill-growth retroviral carrier, 2 sessions",
+  "expression_time": "6–8 weeks for initial quill growth; full density at 4 months",
+  "reversibility": "Quill follicles removable with laser ablation; regrowth must be gene-suppressed",
+  "side_effects": [
+    "Quills shred clothing when erected — shirts are destroyed from the inside",
+    "Sleeping on the back requires quill-resistant bedding",
+    "Involuntary erection during startle, anger, or cold",
+    "Quill breakage is painful — each quill has a nerve-rich follicle",
+    "Intimacy requires careful quill suppression — accidents are unpleasant for both parties"
+  ],
+  "social_perception": "Practical and somewhat intimidating. Quill users are given physical space — nobody wants to bump into someone who might spike. The modification is associated with survival rather than aggression. In the Shelf, a visible quill bristle is a universal 'don't touch me' signal.",
+  "story_hooks": [
+    "A quill user's barbed quills are found embedded in a wall at a crime scene — they didn't attack anyone, they were pressed against the wall by force, and the quills reveal the exact dimensions and force of whoever pinned them",
+    "A Gravemoss Biofoundry recall reveals that a batch of Quill Guard installations produces quills with a hollow channel — they're not just sharp, they're delivering a trace chemical from the follicle into anyone they penetrate, and the chemical is a Gravemoss proprietary marker"
+  ],
+  "tags": [
+    "defensive",
+    "geneware",
+    "violence",
+    "weapon",
+    "war",
+    "crime",
+    "ai",
+    "elf",
+    "medical",
+    "pain",
+    "bar",
+    "cold",
+    "survival",
+    "clothing",
+    "shelf",
+    "tier 2"
+  ]
+}

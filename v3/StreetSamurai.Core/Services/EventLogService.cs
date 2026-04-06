@@ -79,7 +79,7 @@ public class EventLogService
             {
                 events.Add(new StoryEvent
                 {
-                    Id = Guid.NewGuid().ToString("N")[..8],
+                    Id = Guid.CreateVersion7().ToString("N")[..8],
                     BeatIndex = beatIndex,
                     Type = raw.Type ?? "action",
                     Summary = raw.Summary ?? "",
@@ -193,7 +193,7 @@ public class EventLogService
     }
 
     private string GetLogPath(string projectId) =>
-        Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.events.json");
+        StoryFolderHelper.GetFilePath(paths.StoriesDir, projectId, "events.json");
 }
 
 /// <summary>A discrete narrative event — something that HAPPENED in the story.</summary>

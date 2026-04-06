@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab5e75519a4a2f78c41d9c96",
+  "name": "Zheng-Dao Heavy Industries Neutron Emitter NE-1 'Clean Sweep'",
+  "type": "weapon",
+  "aliases": [
+    "Clean Sweep",
+    "NE-1",
+    "Neutron Gun",
+    "The Cleaner"
+  ],
+  "category": "energy",
+  "description": "A directed neutron radiation weapon that kills biological organisms while leaving structures, equipment, and electronics completely intact. The NE-1 projects a focused beam of fast neutrons that pass through walls and cover, irradiating everything biological within the beam path with a lethal dose of radiation. Death from neutron exposure is not immediate — targets may survive for hours or days depending on dose, experiencing progressive organ failure as their cells die from radiation damage. The weapon's strategic value lies in its ability to kill the occupants of a building without damaging the building itself — perfect for seizing infrastructure, reclaiming facilities, or silently depopulating areas for reoccupation.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Strategic weapon — Zheng-Dao sovereign authorization only",
+  "base_technologies": [
+    "Directed fast neutron generation",
+    "Focused neutron beam projection",
+    "Biological-selective radiation targeting"
+  ],
+  "specifications": "beam type: Focused fast neutron emission\npenetration: Passes through standard construction materials\nlethal dose delivery: 10 seconds of exposure at 50 meters\neffective range: 10-200 meters\nweight: 85 kg on vehicle mount\npower source: Onboard nuclear source + accelerator\ncrew: 3 operators with radiation shielding\ndeath timeline: Hours to days depending on exposure duration\ncountermeasure: Borated polyethylene shielding, 10 cm minimum",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An entire apartment building's residents died over 72 hours from what was officially called a chemical leak — but a radiation specialist has found neutron activation signatures in the building's steel structure.",
+    "A Zheng-Dao NE-1 was deployed against a fortified position during a corporate conflict, and the 'clean' building was reoccupied within hours — but the rapid reoccupation timeline suggests they knew it was a neutron weapon and had the seizure force ready before the attack."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "energy",
+    "weapon",
+    "gun",
+    "death",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "vehicle",
+    "tier 5"
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a73d79a9b07a41036123a4a9",
+  "type": "character",
+  "name": "Zurab Ivanov-Appiah",
+  "aliases": [
+    "Vector",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Personnel recovery and hostile extraction — extraction specialist",
+  "age": 55,
+  "status": "active",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling",
+  "description": "Zurab Ivanov-Appiah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 55, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Zurab Ivanov-Appiah plans to keep it that way. She works as a extraction specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Zurab Ivanov-Appiah is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.92,
+      "ideal": 0.23,
+      "id": 0.82,
+      "shadow": 0.53,
+      "mask": 0.97,
+      "ghost": 0.38
+    },
+    "core_fears": [
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Dying alone in some alley and nobody noticing for weeks"
+    ],
+    "core_desires": [
+      "Knowledge — to understand the systems that grind people down",
+      "To find the person who burned them and make it educational",
+      "To prove everyone who dismissed them catastrophically wrong"
+    ],
+    "coping_mechanisms": [
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Overwork — takes every contract offered because idleness invites thinking",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it"
+    ],
+    "blind_spots": [
+      "Overestimates their own abilities in situations outside their specialty",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Believes their trauma makes them special instead of recognizing it as damage to manage"
+    ],
+    "secret": "Zurab Ivanov-Appiah sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening",
+      "Swears in three languages, often in the same sentence"
+    ],
+    "example_lines": [
+      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+      "\"The extraction window is four minutes. I've done it in three.\"",
+      "\"I don't rescue people. I relocate them aggressively.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Zurab Ivanov-Appiah discovers a job they completed last year was a setup for something much larger and much worse",
+    "Zurab Ivanov-Appiah intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "A former associate resurfaces with evidence that could destroy Zurab Ivanov-Appiah's reputation — and a price for silence"
+  ],
+  "narrative_function": "Zurab Ivanov-Appiah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes. Eye replacement — one organic, one cybernetic with recording capability and zoom",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 5
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 7
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 6
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 6
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.97,
+      "caution": 0.11,
+      "loyalty": 0.9,
+      "greed": 0.5,
+      "empathy": 0.58
+    },
+    "drives": [
+      "freedom",
+      "justice",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 8,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "physical endurance",
+      "pain tolerance beyond normal limits"
+    ],
+    "weaknesses": [
+      "trust issues that limit crew effectiveness",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "extraction specialist",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always verifies target identity independently before lethal contracts",
+      "Never discusses active contracts with anyone not directly involved"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Preaches independence but is desperate for approval from people they respect",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
+    ],
+    "breaking_points": [
+      "Being publicly exposed — name, face, address, all of it blown",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    },
+    {
+      "name": "Eye replacement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Tactician": 0.9,
+    "Protector": 0.9,
+    "Improviser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa6a769996725fd88c610ef5",
+  "name": "Meridian Gondola",
+  "type": "transportation",
+  "aliases": [
+    "Canal Boat",
+    "Slow Float",
+    "The Drift"
+  ],
+  "category": "public_transit",
+  "manufacturer": "Local operators (traditional craft)",
+  "description": "In the older waterfront districts where canals were built into the city infrastructure, electric gondolas serve as water taxis and tour boats. They're slow, scenic, and weirdly peaceful in a city that is neither of those things. The gondoliers are an institution — some families have been poling boats through these canals for three generations. The canals themselves are aging and in some districts slowly sinking, making the gondola routes change year by year as old channels flood and new ones form.",
+  "propulsion": "Electric motor or traditional pole/oar",
+  "speed": "8 km/h",
+  "capacity": "4-6 passengers",
+  "range": "Canal network extent",
+  "tier_availability": "Tier 1-3 (waterfront districts)",
+  "cost": "Φ2-5 per trip",
+  "autonomy": "Human operator",
+  "armament": "None. The pole has traditional secondary uses.",
+  "common_usage": "Canal district transit, tourism, romantic outings, the only way to reach certain waterfront addresses.",
+  "story_hooks": [
+    "A gondolier navigates a canal that wasn't there yesterday — the water has broken through into a previously sealed underground passage",
+    "The gondolier families know the canal system so well they serve as an intelligence network, reporting on what they see from the water"
+  ],
+  "tags": [
+    "publictransit",
+    "transportation",
+    "ai",
+    "water",
+    "tier 1",
+    "tier 3"
+  ]
+}

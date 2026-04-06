@@ -1,0 +1,42 @@
+{
+  "id": "019d6143aa6c7fd48c27807f10d5e110",
+  "name": "Parcel Drone (Standard)",
+  "type": "transportation",
+  "aliases": [
+    "Buzzer",
+    "Package Hawk",
+    "Drop Bot"
+  ],
+  "category": "commercial_ground",
+  "manufacturer": "Multiple (Tessera platform, various manufacturers)",
+  "description": "Small autonomous delivery drones that fill the airspace of Tier 2-4 districts like mechanical insects. They carry packages up to 5 kg and navigate by a combination of GPS, visual mapping, and mesh network coordination. In Tier 1 districts, they're rare — the theft rate exceeds 40% and the drones learn to avoid certain blocks entirely. The buzzing of parcel drones is the ambient sound of commerce.",
+  "propulsion": "Quad-rotor electric",
+  "speed": "50 km/h",
+  "capacity": "5 kg payload",
+  "range": "25 km round trip",
+  "tier_availability": "Tier 2-4 (avoid Tier 1 zones)",
+  "cost": "Φ800 per unit (commercial fleet pricing)",
+  "autonomy": "Fully autonomous, swarm-coordinated routing",
+  "armament": "Anti-tamper shock system, GPS tracking, self-destruct on theft (premium models).",
+  "common_usage": "Package delivery, food delivery, medical supply transport, small-item logistics.",
+  "story_hooks": [
+    "Parcel drones in a specific district have been delivering packages that nobody ordered to addresses that don't exist",
+    "Someone figures out how to reprogram parcel drones as surveillance platforms and now the sky is full of corporate spies"
+  ],
+  "tags": [
+    "commercialground",
+    "transportation",
+    "war",
+    "theft",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "medical",
+    "food",
+    "drone",
+    "tier 1",
+    "tier 2",
+    "tier 4"
+  ]
+}

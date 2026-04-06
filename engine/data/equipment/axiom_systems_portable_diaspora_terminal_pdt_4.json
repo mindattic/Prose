@@ -1,0 +1,42 @@
+{
+  "id": "019d6143a8567c50abd214062419dbbc",
+  "name": "Axiom Systems Portable Diaspora Terminal PDT-4",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems Portable Diaspora Terminal PDT-4",
+  "type": "equipment",
+  "aliases": [
+    "PDT-4",
+    "Net Box",
+    "Axiom Terminal",
+    "Public Access"
+  ],
+  "category": "communications",
+  "description": "A ruggedized portable terminal that provides Diaspora network access in areas without infrastructure coverage. The PDT-4 establishes a satellite uplink and creates a local wireless hotspot serving up to 50 users within a 100-meter radius. Axiom deploys them in emergency situations and sells them to organizations operating in infrastructure-poor zones. The terminal includes content filtering consistent with Axiom's Automated Censorship Infrastructure, ensuring that even off-grid Diaspora access operates within Axiom's information control parameters.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — communications equipment",
+  "base_technologies": [],
+  "specifications": {
+    "connectivity": "Satellite uplink to Diaspora",
+    "local coverage": "100-meter wireless hotspot",
+    "users": "Up to 50 simultaneous",
+    "weight": "3 kg",
+    "battery": "24 hours operation",
+    "form factor": "Ruggedized briefcase",
+    "content filtering": "Axiom ACI integrated",
+    "bandwidth": "100 Mbps shared"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A PDT-4 deployed in a Tier 1 dead zone has been modified to bypass the ACI content filter — for the first time, residents are accessing unfiltered Diaspora and discovering how much information has been hidden from them.",
+    "Axiom is distributing free PDT-4 terminals in underserved districts as a humanitarian gesture — but each terminal maps every device that connects to it, building a comprehensive census of the off-grid population."
+  ],
+  "tags": [
+    "communications",
+    "equipment",
+    "control",
+    "tier 1"
+  ]
+}

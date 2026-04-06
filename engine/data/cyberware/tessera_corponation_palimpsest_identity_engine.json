@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a7c87976be49292b3cf32bff",
+  "name": "Tessera Corponation Palimpsest Identity Engine",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Palimpsest Identity Engine",
+  "type": "cyberware",
+  "aliases": [
+    "The Engine",
+    "Stack Mask",
+    "Tessera Ghost"
+  ],
+  "category": "implant",
+  "body_location": "",
+  "description": "The Palimpsest Identity Engine is a sophisticated cranial BCI and subdermal hardware stack that combines biometric spoofing, behavioral pattern modulation, and deep memory compartmentalization into a single integrated system. Implanted across three sites — a primary processor at the mastoid, a biometric emission array beneath the facial dermis, and a cortical interface layer seated at the prefrontal boundary — the Engine allows the user to maintain up to six discrete 'identity stacks': complete behavioral and biometric profiles that include gait modulation signals, microexpression suppression, altered galvanic skin response patterns, and false biometric emission signatures for fingerprint and iris scanners. Switching between stacks takes approximately 90 seconds and involves a brief period of mild disorientation as the behavioral modulation protocols resynchronize.\n\nTessera Corponation developed the Palimpsest Engine from their existing work in persona management software for corporate media operations, adapting what was originally a digital identity architecture into a hardware-biological hybrid system. The Engine's memory compartmentalization feature is its most technically remarkable aspect: each identity stack can be configured to restrict access to specific memories, effectively creating cognitive partitions that prevent the user — under duress, chemical interrogation, or standard BCI scanning — from accessing information assigned to a different stack. A user operating under Stack 3 genuinely cannot recall events stored under Stack 1 without a deliberate and authenticated stack-switch.\n\nThe Palimpsest Engine is the premier tool of deep-cover operatives, intelligence assets who operate across multiple jurisdictional identities, and a small number of individuals who have used it for personal psychological reasons — compartmentalizing trauma, managing multiple social lives that cannot be allowed to intersect, or simply maintaining the cognitive hygiene required to sustain long-term deception at a professional level.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"identity_stacks\":\"Up to 6 discrete profiles\",\"implant_sites\":\"Mastoid processor, subdermal facial array, prefrontal cortical interface\",\"stack_switch_time\":\"~90 seconds, with mild disorientation window\",\"biometric_spoofing\":\"Fingerprint, iris, gait, galvanic skin response, microexpression\",\"memory_compartmentalization\":\"Full cognitive partition per stack — cross-stack access blocked under interrogation conditions\",\"authentication_method\":\"Neural passphrase + physiological key (heartbeat rhythm pattern)\",\"stack_bleed_risk\":\"Documented in long-term users (18+ months) — partial memory partition degradation\",\"tessera_backdoor\":\"Unconfirmed; persistent community belief in manufacturer root access\"}",
+  "side_effects": [],
+  "cultural_context": "The Palimpsest Engine occupies a nearly mythological status in Meridian 88's intelligence underground. Most people who claim to have one don't, and most people who actually have one don't claim to. There is a persistent and unverifiable belief that Tessera Corponation maintains a root-level backdoor in every Engine ever produced, allowing them to force a stack collapse and access all compartmentalized memory simultaneously — Tessera has never confirmed or denied this. Long-term users report a phenomenon called 'stack bleed,' where memory partitions begin to degrade and cross-contaminate after 18 or more months, producing identity confusion and in severe cases, a condition informally called 'ghost cascade' where the user loses reliable access to any single coherent identity.",
+  "known_users": [
+    "Deep-cover intelligence operatives",
+    "Corporate espionage assets running multi-identity operations",
+    "High-value defectors with multiple institutional loyalties",
+    "Individuals managing irreconcilable social identities",
+    "Tessera Corponation internal affairs operatives",
+    "Caden Rourke, suspected 6-stack operative with unknown primary affiliation"
+  ],
+  "story_hooks": [
+    "A contact the crew has worked with for two years triggers a stack switch in front of them — and the person who emerges has no knowledge of the crew, the job, or any of the shared history, and is visibly terrified of the strangers in front of them.",
+    "A Palimpsest Engine user is experiencing advanced ghost cascade — their stacks are collapsing and they are losing access to critical intelligence that multiple factions desperately want extracted before it's gone forever.",
+    "The persistent rumor of Tessera's backdoor turns out to be true — and someone has used it to force a stack collapse on a deep-cover operative at the worst possible moment, burning an entire intelligence network in a single triggered event.",
+    "A client hires the crew to locate a person who may be running a Palimpsest Engine — the complication is that the 'person' may actually be two or three different people sharing a single body across identity stacks, and the crew isn't sure which stack they've found or what the others know."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "implant",
+    "cyberware",
+    "war",
+    "deception",
+    "identity",
+    "memory",
+    "neural",
+    "bci",
+    "ai",
+    "corporate",
+    "market",
+    "desperate"
+  ]
+}

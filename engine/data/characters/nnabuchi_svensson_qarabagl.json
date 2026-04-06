@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a6677ff69b223306b9951eab",
+  "type": "character",
+  "name": "Nnabuchi Svensson-Qarabağlı",
+  "aliases": [
+    "Sarge",
+    "Old Burn"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate Wars veteran, Tier 1 pension-dependent, informal block protector",
+  "age": 71,
+  "status": "active",
+  "location": "The Shelf, Block 9 — ground-floor unit beneath a noodle stand",
+  "description": "Nnabuchi is a large man running to softness at the edges now, though the frame underneath still speaks of someone who was once built for war. His face is a geography of old decisions — a burn scar that covers the left side of his jaw and neck in pale, slightly lustrous skin; a nose broken enough times to have given up on its original shape; eyes that are a startling light grey, inherited from his Azerbaijani grandmother and striking against his dark complexion. His right arm from elbow to fingertip is military-grade prosthetic, matte black Ferrogate chassis, the joints worn smooth by twenty years of civilian use. He keeps it clean but unpainted, which on The Shelf reads as a kind of statement.\n\nHe has the personality of a load-bearing wall — he does not move, but things lean on him. He is profoundly uncomfortable with gratitude, deflects compliments with flat humor, and will help anyone in Block 9 with anything practical: fixing plumbing, sitting with someone who is frightened, walking an elderly neighbor home. He was a Zheng-Dao contract soldier for eleven years and does not discuss this except obliquely, in fragments that surface when he's had enough synthetic lager. He prays nightly to the E.L.F. he believes lives in the block's power-cycling unit, leaving small data-offerings — usually recordings of things that happened on the block that day. He calls it 'keeping the spirit informed.'",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing control of himself physically and hurting someone he loves",
+      "The block being taken from the people who live there"
+    ],
+    "core_desires": [
+      "A quiet life that amounts to something without requiring more violence",
+      "To be known as more than a weapon"
+    ],
+    "coping_mechanisms": [
+      "Routine as armor against intrusive memory",
+      "Displacement of protective instinct onto the block as a whole",
+      "Prayer to the power-cycling E.L.F."
+    ],
+    "blind_spots": [
+      "He reads stillness as safety and movement as threat, which sometimes makes him slow to recognize psychological danger to people he's watching over",
+      "He believes his presence alone is enough to keep the block safe, underestimating organized corporate pressure"
+    ],
+    "secret": "In the final months of his Zheng-Dao contract, he participated in the demolition of a residential cluster in what is now Ironvein to clear land for a Zheng-Dao logistics hub. He told himself they gave the residents warning. He knows how much warning they gave."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical, slightly formal in structure, occasionally drops military shorthand. Uses full sentences even when shorter options exist, as though he learned to speak carefully after a period of not speaking at all.",
+    "cadence": "Slow, deliberate. Comfortable with silence in a way that makes other people uncomfortable.",
+    "verbal_tics": [
+      "Long pause before answering questions about the past",
+      "'That's one way to see it.'",
+      "Refers to The Shelf as 'the block' exclusively"
+    ],
+    "example_lines": [
+      "You want to know about the Corporate Wars. That's one way to see it. Another way is you want to know what people are capable of when a corponation tells them it's necessary.",
+      "I'm not going anywhere. Neither is anybody on this block, if I have anything to say about it. Which I do."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Zheng-Dao urban redevelopment team begins surveying Block 9 and Nnabuchi recognizes one of the surveyors from his contract days — the man knows what Nnabuchi did at Ironvein",
+    "A veteran from his unit arrives on The Shelf in crisis, and Nnabuchi must decide how much of his old life to let back in",
+    "The E.L.F. in the power-cycling unit has begun broadcasting strange data-fragments that only Nnabuchi's offerings can decipher — they look like coordinates for something buried under the block"
+  ],
+  "narrative_function": "Street-level security anchor and neighborhood watchman; source of Corporate Wars history and ground-truth information about The Shelf's power dynamics; can serve as reluctant muscle or community conscience in stories; his veteran's network connections can surface unexpected leads.",
+  "augmentations": "Military-grade Ferrogate right arm prosthetic (full replacement from elbow, standard infantry model, 20+ years old). Subdermal trauma-response regulator in the chest — dampens adrenaline spikes, civilian-converted from military spec. Faint bioluminescent gene-mod on his remaining fingertips, pale blue, which he got on a dare from his daughter fifteen years ago and has kept because she likes it.",
+  "daily_life": "Wakes at 0430 out of habit, does slow deliberate exercises on his small balcony while watching the block come alive below him; buys one coffee from the noodle stand above him (the owner always charges him half price, he always insists on paying full, they have done this for twelve years); spends much of the day in a folding chair near the block entrance, apparently doing nothing, actually watching everything.",
+  "affiliation": "Zheng-Dao Veterans Assistance Network (nominal; rarely attends meetings); Block 9 informal community; independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Corporate Wars Veteran",
+      "Block Protector",
+      "Guilt-Carrier",
+      "Quiet Authority",
+      "Reluctant Soldier"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the block before protecting himself",
+      "Never draw first; always be willing to finish"
+    ],
+    "escalation_ladder": [
+      "Standing up and being visible",
+      "Moving into someone's path without speaking",
+      "One clear verbal warning, stated once",
+      "Physical intervention — controlled, minimal, overwhelming"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and neutral, categorizing quickly, giving nothing away",
+      "friends": "Dry, reliable, shows care through action rather than words"
+    },
+    "stress_responses": {
+      "low": "Becomes very still and quiet",
+      "medium": "The trauma-response regulator activates visibly — he breathes slowly and deliberately for several seconds",
+      "high": "Switches to a clipped military mode of speech; makes rapid practical assessments; emotion goes somewhere else entirely and does not return for hours"
+    },
+    "contradictions": [
+      "Protects civilians with fierce loyalty while carrying guilt for civilians he failed to protect",
+      "Dislikes being called a soldier but has never stopped soldiering"
+    ],
+    "habits": [
+      "Records a short data-log of the day's events every night for the E.L.F.",
+      "Keeps a manual repair kit and will fix anything broken without being asked",
+      "Drinks synthetic lager slowly, never more than two, always the same brand"
+    ],
+    "breaking_points": [
+      "Watching someone be evicted from the block while he stands by helpless",
+      "Being confronted directly and publicly with what he did at Ironvein"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born on The Shelf, Block 9, to a family of transit workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Enlists in Zheng-Dao contract infantry at 19 following family debt crisis",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Right arm destroyed in Kenosha Corridor engagement; receives Ferrogate prosthetic replacement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Participates in Ironvein residential demolition; end of his contract shortly after",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Returns to Block 9; begins living in his current ground-floor unit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Daughter leaves the block for a Helix Biosystems residential tier; they remain in contact",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

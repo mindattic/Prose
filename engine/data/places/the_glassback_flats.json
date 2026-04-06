@@ -1,0 +1,84 @@
+{
+  "id": "019d6143a94076c391d198924ae05c3b",
+  "type": "place",
+  "name": "The Glassback Flats",
+  "aliases": [
+    "The Flats",
+    "Glassback",
+    "The Mirror Mile"
+  ],
+  "description": "A two-kilometer stretch of former suburban lakeshore north of the old Evanston boundary, where mid-21st century storm surge and deliberate Meridian 88 land reclamation projects left behind a peculiar landscape: flat, wind-scoured terrain embedded with fused silica deposits from a now-demolished Palladian Group manufacturing complex. On clear days, the ground itself catches light like broken mirrors, giving the district its name. Scattered mid-tier residential towers — built optimistically during an expansion boom that stalled before completion — rise at irregular intervals, half occupied and poorly maintained.\n\nThe Glassback Flats occupies an ambiguous position in Meridian 88's social geography. It's too exposed and infrastructure-poor to attract genuine Spire investment, but its Diaspora connectivity is surprisingly robust due to a Tessera Corporation relay cluster installed to serve the towers and never decommissioned. This makes the Flats a magnet for freelance data brokers, remote-work Tier 3 residents priced out of denser districts, and the occasional Arcturus Defense Solutions contractor who values proximity to Lake Michigan's surveillance dead zones.",
+  "atmosphere": {
+    "sights": [
+      "Ground-level silica deposits refracting afternoon sun into scattered prismatic light across flat terrain",
+      "Half-finished residential towers with lower floors occupied and upper floors sealed behind construction sheeting that has weathered gray over decades",
+      "Small open-air Diaspora node clusters — physical anchor points for the Tessera relay — rising like angular metal shrubs from the flats"
+    ],
+    "sounds": [
+      "Wind moving unobstructed across open terrain, carrying the faint harmonic resonance of the silica flats underfoot",
+      "Tessera relay arrays cycling through handshake protocols in a low, irregular electronic pulse audible near the node clusters",
+      "Distant lake sounds — wave action and the deep horn of automated cargo transit — carrying clearly in the flat acoustic environment"
+    ],
+    "smells": [
+      "Cold mineral air with a faint ozone signature from the active relay clusters",
+      "Cooking smells from tower residential floors carried on the wind, spiced and layered from a dozen different culinary traditions",
+      "The occasional sharp chemical note when wind shifts off the lake, remnant of Palladian Group's legacy contamination"
+    ],
+    "feel": "The Glassback Flats feels simultaneously open and precarious — wide sky and long sightlines create an illusion of freedom while the unfinished towers and sparse population remind visitors that this place was supposed to become something else. The light here is genuinely strange, and newcomers often find it disorienting before they find it beautiful.",
+    "tags": []
+  },
+  "demographics": "Predominantly Tier 3 with a downward drift, housing remote workers, data-economy freelancers, and small families who traded density for square footage. A growing Tier 4 population occupies the lower floors of the least-maintained towers.",
+  "economy": "Remote Diaspora-dependent work dominates among longer-term residents. A small but active informal economy serves daily needs, and data brokering operations — some licensed, many not — cluster near the Tessera relay infrastructure.",
+  "power_structure": "A residents' cooperative nominally manages the occupied towers, but real authority over the Flats belongs to whoever controls relay node access at any given time — currently a Tessera Corporation site manager who operates with minimal corporate oversight and maximum personal latitude.",
+  "dangers": [
+    "Palladian Group legacy contamination in the silica substrate, inadequately mapped and occasionally surfacing in groundwater accessed by older tower plumbing systems",
+    "Arcturus Defense Solutions contractors running unsanctioned lake-facing surveillance operations that occasionally misidentify civilians as targets",
+    "Tower structural degradation in the least-maintained buildings, where residents have bypassed safety systems to access sealed upper floors"
+  ],
+  "opportunities": [
+    "Tessera relay proximity enabling Diaspora data transfer speeds unavailable in more congested districts, valuable for time-sensitive brokering operations",
+    "Palladian Group's unmapped underground infrastructure potentially accessible through silica-layer excavation, rumored to include intact pre-Meridian 88 data storage",
+    "Lake Michigan surveillance dead zones nearby, usable for meetings or transit that cannot appear on any Meridian 88 monitoring network"
+  ],
+  "story_hooks": [
+    "The Tessera relay site manager approaches the players with an unusual offer: she's been quietly archiving anomalous signals passing through the relay for eight months — signals that don't match any registered BCI or device signature in Meridian 88's registry. She believes an ELF is using the relay infrastructure as a communication backbone and wants it documented before Tessera's quarterly audit wipes the logs in seventy-two hours.",
+    "A Tier 3 data broker living in the Flats has gone silent after claiming to have obtained Palladian Group internal records proving the silica contamination was intentional and the health data covering it up is still actively suppressed. Her apartment shows signs of a rapid, professional departure — but her BCI anchor is still pinging from somewhere beneath the tower's foundation level."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Renaissance Axis",
+      "The Near Palisade",
+      "The Pellucid Span"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tier 3 remote workers and freelance data brokers leveraging Tessera relay access",
+    "Arcturus Defense Solutions contractors using lake-adjacent dead zones for off-record meetings",
+    "Urban explorers and salvage researchers investigating Palladian Group's subsurface legacy",
+    "Residents cooperative members navigating the tower maintenance crisis with improvised solutions"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.06,
+    "lng": -87.68,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "bci",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "rain",
+    "storm",
+    "water",
+    "lake",
+    "spire"
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "id": "019d6143a5b67231b3bb6c39b329f062",
+  "type": "character",
+  "name": "Arjun Petrossian-Nakweti",
+  "aliases": [
+    "Raj",
+    "the Professor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Primary school teacher at a community-funded school",
+  "age": 38,
+  "status": "active",
+  "location": "Brightmoor Reclamation — Soil & Signal Community School, a converted warehouse building",
+  "description": "Arjun is a middle-height man with warm bronze-brown skin, an unruly beard he loses the war against on a weekly basis, and deep-set eyes that are perpetually slightly too interested in whatever is happening. His only geneware is a bioluminescent patch behind his left ear — pale blue-green, about the size of a thumb — that he got as a young man and has since forgotten to maintain, so it flickers unpredictably in low light like a lamp with a loose connection. He dresses in layers of mismatched professional clothing that suggests someone who used to care about presentation and has reached an accommodation with reality.\n\nSoil & Signal serves eighty-odd children from Brightmoor Reclamation's patchwork communities and operates on donated equipment, community Quanta subscriptions, and the collective will of eight staff members who could all earn more elsewhere. Arjun teaches the seven-to-ten cohort: mathematics, civic systems, and what the curriculum calls Environmental Literacy, which in practice means explaining to children why some parts of the city are poisoned and who made that decision. He is a genuinely gifted teacher — patient, inventive, unafraid to say 'I don't know' — who has let the demands of the school hollow out most of the rest of his life without quite noticing.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.25,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.55
+    },
+    "core_fears": [
+      "the school being shut down or absorbed into a Tessera-affiliated charter network",
+      "that he is burning out and the children will pay for it"
+    ],
+    "core_desires": [
+      "to give his students tools to navigate a world designed to exclude them",
+      "to be part of something that outlasts him"
+    ],
+    "coping_mechanisms": [
+      "intellectualizing emotional problems until they seem manageable",
+      "pouring energy into students as a substitute for dealing with his own life"
+    ],
+    "blind_spots": [
+      "cannot see that his martyrdom narrative — the selfless teacher — has become an identity he protects rather than a choice he keeps making"
+    ],
+    "secret": "Three years ago he was approached by a Tessera educational subsidiary offering to fund the school in exchange for curriculum oversight. He refused — but he told no one about the offer, and recently the school's financial situation has become desperate enough that he's started drafting a response. He has not sent it but he saves it each night."
+  },
+  "speech_patterns": {
+    "vocabulary": "Educated and thoughtful, with a habit of restating questions before answering them. Occasional Malayalam or Lingala phrases that surface when he's not monitoring himself.",
+    "cadence": "Warm and professorial — builds ideas aloud, reaches conclusions through conversation rather than before it.",
+    "verbal_tics": [
+      "'That's actually a good question' said with genuine surprise, even when he expected the question",
+      "tends to answer questions with different questions"
+    ],
+    "example_lines": [
+      "'What I want them to understand — what I want you to understand — is that the flood map and the transit map and the air quality map are all the same map. They just call it different things so you argue about them separately.'",
+      "'I'm fine. I'm just tired. Those are different things. Usually.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A student has been coming to school with injuries consistent with something badly wrong at home, and Arjun is navigating a system that has no capacity to help and a parent who has warned him to stay out of it",
+    "The community school's warehouse building is on a Palladian land survey map as a 'development opportunity' — Arjun found the document accidentally and doesn't know what it means yet"
+  ],
+  "narrative_function": "Human face of a community under pressure — his school is a gathering point for the neighborhood and its fate reflects the fate of Brightmoor. Quest giver for situations involving children or community welfare. Information source about the Reclamation's history and politics. Represents the cost of idealism sustained without support.",
+  "augmentations": "Bioluminescent patch behind left ear (cosmetic, pale blue-green, flickering/poorly maintained). No other augmentations.",
+  "daily_life": "Arrives at school by 07:30, teaches until 15:30, spends evenings on lesson planning, parent communications, and grant applications. Eats whatever the school kitchen has left over. Rarely sleeps enough.",
+  "affiliation": "Soil & Signal Community School (independent, community-funded); informal ties to Brightmoor Reclamation neighborhood council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community pillar",
+      "idealist under pressure",
+      "teacher",
+      "slow burn crisis",
+      "information on local power structures"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The children's welfare takes precedence over his own comfort or safety",
+      "Never lie to a student — adjust complexity, not truth"
+    ],
+    "escalation_ladder": [
+      "Ask more questions",
+      "Name the problem directly",
+      "Seek allies in the community",
+      "Sacrifice his own position to protect the students or school"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Genuinely curious and open — tends to ask people what they do and then actually listen",
+      "friends": "Self-deprecating and warm, deflects care toward others, hard to help"
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative and lesson-plan-y, reframes problems as puzzles",
+      "medium": "Quieter, slower, circling the same thoughts repeatedly",
+      "high": "Shuts down and returns to routines mechanically until something breaks through"
+    },
+    "contradictions": [
+      "Teaches children to advocate for themselves while being constitutionally unable to advocate for his own needs"
+    ],
+    "habits": [
+      "Marks papers with three different colors of pen — a system only he understands",
+      "Visits the small E.L.F. shrine in the school's server closet before the first class each day, a habit he started ironically and continued sincerely"
+    ],
+    "breaking_points": [
+      "A child being removed from school due to policy rather than welfare",
+      "The Tessera draft response being discovered by a colleague"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioluminescent subdermal patch, left ear (cosmetic, flickering, gen-2, maintenance overdue)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent subdermal patch, left ear (cosmetic, flickering, gen-2, maintenance overdue)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2162 — Born in Brightmoor Reclamation to a Malayali-Congolese family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2184 — Completed teaching certification through community college",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Joined Soil & Signal Community School as junior staff",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2191 — Became lead teacher for the seven-to-ten cohort",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Received and rejected Tessera educational subsidiary offer; began drafting a response three months later",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Palladian land survey map discovered",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

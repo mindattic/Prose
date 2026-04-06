@@ -1,0 +1,47 @@
+{
+  "id": "019d6143aa3b79afa46c26a5580cabd7",
+  "name": "Dredge Mining Collective Rare Earth Element Synthesis",
+  "brand_name": "Dredge",
+  "product_name": "Dredge Mining Collective Rare Earth Element Synthesis",
+  "type": "technology",
+  "aliases": [
+    "REES",
+    "Element Forge",
+    "Atom Maker",
+    "Dredge Alchemy"
+  ],
+  "subcategory": "materials",
+  "description": "An industrial process that transmutes common elements into rare earth metals through controlled nuclear reactions in a compact particle accelerator. The REES system can produce any element on the periodic table from abundant feedstock materials, eliminating dependency on mining for scarce resources. The process is energy-intensive but economically viable when powered by micro-fusion reactors, and it produces quantities measured in kilograms per day — sufficient for manufacturing but not bulk industrial use. Dredge Mining Collective developed the technology to ensure their own relevance in a future where natural deposits are exhausted.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "DREDGE MINING COLLECTIVE",
+    "OUROBOROS ENERGY"
+  ],
+  "base_technologies": [
+    "Controlled nuclear transmutation",
+    "Compact particle acceleration",
+    "Element-specific atomic assembly"
+  ],
+  "enables": [
+    "On-demand rare earth element production",
+    "Independence from geological resource deposits",
+    "Custom isotope fabrication",
+    "Strategic material self-sufficiency"
+  ],
+  "social_impact": "REES has disrupted the resource economics that have shaped geopolitics for centuries. Rare earth elements that once gave controlling nations and corporations extraordinary leverage can now be fabricated on demand. This has shifted power from resource holders to energy holders — whoever controls the fusion reactors that power REES controls the material supply chain. Dredge's dual control of both mining operations and synthesis technology gives them a hedged position that other resource-dependent entities lack.",
+  "story_hooks": [
+    "Dredge is using REES to synthesize elements that do not naturally occur in useful quantities — transuranics with novel properties that have never been studied because they have never existed in macroscopic amounts.",
+    "A REES facility has experienced a containment failure during a transmutation run, and the resulting contamination includes isotopes that should not exist according to the process parameters — someone modified the run to produce something specific."
+  ],
+  "tags": [
+    "materials",
+    "technology",
+    "mutation",
+    "ai",
+    "elf",
+    "control",
+    "power",
+    "energy",
+    "tier 4"
+  ]
+}

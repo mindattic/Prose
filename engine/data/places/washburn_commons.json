@@ -1,0 +1,103 @@
+{
+  "id": "019d6143a9587b90a5dc3628f2668049",
+  "type": "place",
+  "name": "Washburn Commons",
+  "aliases": [
+    "Washington Park",
+    "The Commons",
+    "The Green Lie"
+  ],
+  "description": "Washburn Commons is what happens when a corporation buys a park and decides it should earn its keep. The original Washington Park — one of Olmsted and Vaux's masterworks, a designed landscape meant to give the South Side room to breathe — was seized by Helix BioSystems during the Tier Consolidation as part of a land-for-debt swap with the municipal government. Helix fenced it, gated it, and converted it into a Tier 3-and-above bioremediation preserve. The grass is real. The trees are real. The air is filtered through canopy-mounted atmospheric processors that make the park a literal bubble of clean oxygen in the middle of a district that can't afford to breathe. The people who live around it can see the green through the fencing. They cannot enter without a valid tier credential above 2.\n\nThe neighborhood surrounding the park has become a study in proximity without access. Residential blocks press up against the Helix perimeter, close enough to smell the grass after rain, close enough to hear the birdsong from the engineered aviary Helix installed as a corporate team-building amenity. The locals call it the Green Lie — the promise of a public commons that was always, in the end, for someone else. Street-level Washburn is dense, underserviced, and angry. The housing stock is pre-collapse concrete towers retrofitted with jury-rigged climate systems and shared neural access points. Community organizing here is fierce and has been for generations; the tradition of mutual aid that defined the original Washington Park neighborhood didn't die, it just went underground.\n\nHelix runs bioremediation research in the park's interior — experimental soil treatments, engineered pollinators, atmospheric carbon capture prototypes. Some of this work is legitimate and even beneficial. Some of it involves compounds that drift over the fence line when the wind shifts, and the respiratory illness rates in the surrounding blocks are three times the Meridian average. Nobody at Helix has commented on the correlation. The residents have filed seventeen complaints through the municipal system. The municipal system has forwarded all seventeen to Helix's internal review board.\n\nBeneath the manicured surface, the park's old tunnel system — originally built for maintenance access to the Olmsted-era drainage infrastructure — has become a smuggling corridor. Goods move from the Shelf through Washburn's tunnels into the park's service entrances, where Helix employees with expensive habits and flexible ethics make exchanges that never appear on any corporate ledger. Kyle has used these tunnels. Everyone who operates in the southern corridor knows about them. Helix security knows too, but the tunnels are useful to enough mid-level managers that they remain officially undiscovered.",
+  "atmosphere": {
+    "sights": [
+      "The Helix perimeter fence — matte black, three meters tall, with embedded biometric scanners that pulse soft green when a valid tier walks past",
+      "Real grass visible through the fence, impossibly green against the grey concrete of the surrounding blocks",
+      "Residential towers pressing against the park boundary like faces against glass",
+      "Atmospheric processor units mounted in the park's tree canopy, visible as silver nodes among real leaves",
+      "Street-level murals depicting the park as it was — open, public, alive — painted over Helix branding",
+      "Engineered pollinators drifting over the fence line, iridescent and slightly too large to be natural"
+    ],
+    "sounds": [
+      "Birdsong from the Helix aviary — real birds, corporate property, audible for three blocks",
+      "The low hum of atmospheric processors filtering air that the surrounding blocks don't get",
+      "Community meetings in basement halls, voices carrying the particular intensity of people who have been ignored seventeen times",
+      "Children playing in the shadow of the fence, inventing games about what's on the other side",
+      "The occasional crack of a Helix security drone adjusting its patrol pattern overhead"
+    ],
+    "smells": [
+      "Grass and clean air drifting over the fence — a taunt in molecular form",
+      "Chemical undertone on days when the wind shifts, sharp and medicinal, from the bioremediation labs",
+      "Cooking from the residential blocks — communal kitchens running on shared rations",
+      "Recycled air from overtaxed climate units in the towers, with a staleness that clean air makes worse by comparison"
+    ],
+    "feel": "Washburn Commons feels like standing outside a window watching someone eat. The park is right there — the green, the air, the birdsong — and it is not for you. The anger here is old and patient and organized, which makes it more dangerous than the loud kind.",
+    "tags": []
+  },
+  "demographics": "Predominantly Tier 1-2 residents, historically Black community with deep roots predating the collapse. Gulf Coast climate refugees make up a growing minority. The population is approximately 45,000, none of whom can enter the park they live around.",
+  "economy": "Street-level services, communal resource sharing, and tunnel-based gray market logistics. Helix employs a small number of locals as groundskeeping contractors at minimum tier wages, which the community views as insult dressed as opportunity.",
+  "power_structure": "Helix BioSystems holds sovereign authority over the park interior. The surrounding residential blocks fall in a jurisdiction gap between Helix territory and Axiom's general South Side governance. Community councils wield real informal power and coordinate with the Collective on resource distribution.",
+  "dangers": [
+    "Helix security responds aggressively to fence-line incursions — nonlethal deterrents that leave marks",
+    "Respiratory illness from bioremediation compound drift, chronic and cumulative",
+    "Tunnel system collapses — the Olmsted-era drainage was not built for the traffic it carries",
+    "Community organizers who draw too much attention tend to receive visits from Helix's community liaison division, which is not what the name suggests",
+    "Tier enforcement at the park gates — wrong credential means wrong day"
+  ],
+  "opportunities": [
+    "The tunnel network provides reliable smuggling infrastructure for operators who earn community trust",
+    "Helix employees with habits create leverage opportunities for those who pay attention",
+    "Community councils are well-organized and can provide safe harbor, intelligence, and collective action",
+    "Bioremediation research data has value to competing corponations and to activists building a case against Helix",
+    "The park's atmospheric processors could theoretically be redirected to serve the surrounding blocks — a heist worth dreaming about"
+  ],
+  "story_hooks": [
+    "A Helix whistleblower has data proving the bioremediation compound drift is intentional — a long-term population study conducted without consent — and needs someone to get the data out through the tunnels",
+    "The community council is planning a coordinated fence breach — not to vandalize, but to hold a memorial in the park for residents lost to respiratory illness. They need security patterns mapped.",
+    "Someone is killing Helix groundskeeping contractors, and the community is being blamed. The actual killer operates from inside the park."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Hydewood",
+      "The Woodline",
+      "Chatham Flats",
+      "The Shelf"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Community organizers with generational memory and no patience left",
+    "Tunnel runners moving goods between the Shelf and Helix's service economy",
+    "Helix BioSystems employees who enter the park and never look at the neighborhood around it",
+    "Respiratory clinicians running free clinics from converted storefronts",
+    "Freelancers and ronin who use the tunnels and respect the community's rules"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.796,
+    "lng": -87.608,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "heist",
+    "trust",
+    "memory",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "debt",
+    "clinic",
+    "tunnel",
+    "harbor",
+    "market",
+    "rain",
+    "ethics",
+    "refugee",
+    "shelf"
+  ]
+}

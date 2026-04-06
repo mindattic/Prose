@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a6b27c0f8865089d6603a47f",
+  "type": "character",
+  "name": "Rodney Sisk",
+  "aliases": [
+    "Crank",
+    "Cranky",
+    "Rod"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lower Dock Crew member — Prologue survivor. Lost fingers, most teeth.",
+  "age": 33,
+  "status": "active",
+  "location": "The Shelf — lower loading docks",
+  "description": "Rodney Sisk is the angriest person in the Lower Dock Crew and possibly in the Shelf. He lost three fingers on his right hand to the katana and most of his upper teeth to the flat of the blade. His replacement fingers are industrial salvage — thick, clumsy, meant for cargo work. His dental work is Tier 1 ceramic that doesn't match, giving him a checkerboard smile he refuses to show.\n\nRodney grew up in the Exclusion Zone between Gary and Hammond — the same ungoverned corridors Kyle survived as a child, though they never crossed paths. He has a daughter, Keisha (age 9), from a relationship that ended when the mother, Trina, relocated to the Milwaukee Zone. Rodney has not seen Keisha in two years. He sends messages. Keisha responds with single-word answers. He reads each one forty times.\n\nOf all the crew, Rodney is the most likely to do something stupid and solo. He has the least to lose and the most anger. He went back to the loading dock the day after the Prologue and collected Kyle's spent shell casings. He keeps them in a jar on his shelf. He does not know why. He looks at them every night. They are the closest thing he has to a relationship with the man who broke him.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0,
+      "id": 0.3,
+      "shadow": 0.8,
+      "mask": 0.3,
+      "ghost": 0
+    },
+    "core_fears": [
+      "Keisha forgetting his face",
+      "Smiling in public",
+      "Being useless"
+    ],
+    "core_desires": [
+      "To hurt Kyle",
+      "To see Keisha",
+      "To feel like he matters to someone"
+    ],
+    "coping_mechanisms": [
+      "Anger — it's the only emotion that doesn't require teeth to express",
+      "The shell casing jar",
+      "Planning solo revenge that will fail"
+    ],
+    "blind_spots": [
+      "Solo action against Kyle is suicide and he doesn't care enough to stop",
+      "The shell casings are not rage — they're grief, and he can't tell the difference"
+    ],
+    "secret": "He writes letters to Keisha that he never sends. They are in a box under his bed next to the jar of shell casings. The letters are gentle, funny, and well-written. Nobody in the crew would believe he wrote them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Angry. Profane. Missing sibilants from the dental work. The lisp undercuts every threat.",
+    "cadence": "Spits words. Literally — the ceramic causes saliva issues.",
+    "verbal_tics": [
+      "Covers mouth when talking",
+      "Whistles on S sounds",
+      "Gets louder when the lisp gets worse"
+    ],
+    "example_lines": [
+      "I'll find him. I'll *whistle* find him and I'll — THTOP LAUGHING.",
+      "Keitha thent me a mesthage. Thaid 'ok.' Jutht 'ok.' *pause* ...That'th enough."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Keisha Sisk",
+      "type": "daughter",
+      "description": "Nine years old. Milwaukee Zone. Single-word messages. Rodney's entire emotional landscape compressed into 'ok' and 'fine' and 'goodnight.'",
+      "emotional_core": "Love that has no delivery mechanism",
+      "story_tension": "If Rodney dies doing something stupid, Keisha's last message will have been 'ok.' Rodney knows this."
+    },
+    {
+      "name": "Trina",
+      "type": "ex",
+      "description": "Relocated to Milwaukee. Does not prevent Keisha's messages. Does not encourage them.",
+      "emotional_core": "Exhaustion",
+      "story_tension": "Trina left because Rodney was already angry. The crew made it worse. Kyle made it unbearable."
+    }
+  ],
+  "story_hooks": [
+    "The shell casing jar is grief disguised as obsession",
+    "The unsent letters are the real Rodney",
+    "Most likely to make a solo move — most likely to die doing it",
+    "The lisp undercuts every threat — dark comedy that eventually becomes tragic"
+  ],
+  "narrative_function": "The angry one. Crank is pure frustrated rage without the hardware or intelligence to do anything with it. His solo revenge attempts will be recurring failures that escalate in ambition and comedy. The shell casing collection is either creepy or sad depending on the light.",
+  "augmentations": "Three industrial salvage fingers (right hand). Tier 1 ceramic dental partial. Nothing else new.",
+  "daily_life": "Being angry. Planning revenge. Practicing threats in the mirror. Whistling involuntarily.",
+  "affiliation": "Lower Dock Crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 3,
+      "vitality": 6,
+      "perception": 4
+    },
+    "mental": {
+      "cognition": 4,
+      "willpower": 6,
+      "creativity": 3,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 3,
+      "expression": 4,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 6,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 8,
+      "transparency_guardedness": 2
+    },
+    "drives": [
+      "Revenge",
+      "Fatherhood",
+      "Significance"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 3,
+        "response": "Erupts into loud sibilant rage that undercuts itself"
+      },
+      "moral": 4,
+      "trust": 3,
+      "desperation": 8
+    },
+    "strengths": [
+      "Bravery",
+      "Perseverance",
+      "Love",
+      "Honesty",
+      "Zest"
+    ],
+    "weaknesses": [
+      "Prudence",
+      "Self-regulation",
+      "Forgiveness",
+      "Perspective",
+      "Judgment"
+    ],
+    "tags": [
+      "dock-crew",
+      "prologue-survivor",
+      "angry",
+      "father",
+      "revenge-obsessed"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If it involves hurting Kyle, do it regardless of odds",
+      "Never smile in public — the teeth are a humiliation",
+      "Read every message from Keisha at least forty times",
+      "Plan solo revenge missions even when they are obviously suicidal",
+      "Cover mouth when speaking to hide the lisp",
+      "Keep the shell casing jar maintained and visible"
+    ],
+    "escalation_ladder": [
+      "Loud profane threats undermined by the lisp",
+      "Physical posturing and thrown objects",
+      "Solo action without informing the crew",
+      "Genuinely dangerous solo confrontation attempt"
+    ],
+    "interpersonal_modes": {
+      "keisha": "Desperate tenderness expressed only in unsent letters",
+      "trina": "Exhausted resentment masking self-blame",
+      "crew_members": "Angry solidarity; loudest voice in any room, least effective",
+      "kyle": "Obsessive hatred indistinguishable from grief",
+      "strangers": "Hostile defensiveness, especially about the teeth"
+    },
+    "stress_responses": {
+      "low": "Grumbling, pacing, practicing threats in the mirror",
+      "medium": "Loud outbursts with increased whistling on sibilants",
+      "high": "Retreats to the shell casing jar; stares at it for hours",
+      "critical": "Goes solo — walks toward Kyle with no plan and maximum anger"
+    },
+    "contradictions": [
+      "The shell casings are grief disguised as obsession and he cannot tell the difference",
+      "His unsent letters reveal a gentle articulate man the crew would never believe exists",
+      "Wants to be present for Keisha but keeps choosing actions that will get him killed"
+    ],
+    "habits": [
+      "Looks at the shell casing jar every night before sleeping",
+      "Writes letters to Keisha he never sends",
+      "Practices threats in the mirror, getting louder as the lisp worsens",
+      "Covers his mouth reflexively during conversation",
+      "Reads Keisha single-word messages dozens of times"
+    ],
+    "breaking_points": [
+      "Keisha stopping her messages entirely",
+      "Being laughed at for the lisp during a serious moment",
+      "Someone finding and reading his unsent letters",
+      "A genuine opportunity to face Kyle alone"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

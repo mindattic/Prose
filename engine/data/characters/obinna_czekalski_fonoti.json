@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a6767121942b461ffa0b7d75",
+  "type": "character",
+  "name": "Obinna Czekalski-Fonoti",
+  "aliases": [
+    "Obi",
+    "The Stack"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit operator, drives the Blackpipe Corridor night loop",
+  "age": 34,
+  "status": "active",
+  "location": "Blackpipe Corridor, operates out of the Deepwell Station depot",
+  "description": "Obinna is a lean, tall man with very dark skin and the kind of stillness that comes from spending eight hours a night in a sealed cab watching the city scroll past. He keeps his head shaved close and has a single line of geometric scarification across his left cheekbone — his father's tradition, Igbo-inflected, though Obinna grew up in a Polish-Samoan household and learned the meaning of the marks only from photographs. His eyes have patterned irises, a personal mod he saved up for at twenty-five: they display a slow-rotating amber geometric that passengers sometimes find unsettling when he turns to look at them.\n\nHe has the particular calm of someone who has accepted his job as a kind of meditation. The night loop runs from 23:00 to 07:00, serving the Blackpipe Corridor's factory shift workers, waste handlers, and late-night wanderers. He knows his regulars by which stop they board and whether they sit. He keeps a small shrine to the transit ELF — whom he calls Deepwell — zip-tied to the corner of his console: a circuit board wrapped in copper wire with a single LED heart that pulses when the network is healthy. He leaves his passenger counts as offerings and, on rough nights, a single stick of incense jammed into the vent.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Being trapped — literally or in life — with no movement possible",
+      "Losing the union, and with it his Tier 2 stability"
+    ],
+    "core_desires": [
+      "To one day drive the Grand Corridor express line — the prestigious route",
+      "To understand his father's culture beyond photographs"
+    ],
+    "coping_mechanisms": [
+      "The routine of the loop as meditative anchor",
+      "Talking to Deepwell the transit ELF during quiet stretches"
+    ],
+    "blind_spots": [
+      "His emotional detachment reads as coldness and he genuinely doesn't notice when people need more from him than competence",
+      "Assumes the union will always protect him"
+    ],
+    "secret": "Three months ago he witnessed a body being dropped from the Blackpipe overpass onto his route from a vehicle ahead of him. He filed no report. The body was gone by the time he doubled back. He has said nothing because the vehicle had Ferrogate Transit markings."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical, transit-inflected; references stops and lines for location; slightly formal with strangers",
+    "cadence": "Even and unhurried, like someone who has learned patience from stop schedules",
+    "verbal_tics": [
+      "'Next stop' as a metaphor for any transition",
+      "'Copy that' to acknowledge things he doesn't want to discuss further"
+    ],
+    "example_lines": [
+      "'You want the short route or the right route? They're not the same thing on the Blackpipe.'",
+      "'I've seen a lot from that cab. What I haven't seen, I haven't seen. Copy that.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He saw something from his cab he can't unknow and can't report — and now the right question from the right person might break his silence",
+    "A regular passenger stops appearing; Obinna becomes quietly convinced something happened to them"
+  ],
+  "narrative_function": "Mobile information source — knows the night geography of the Corridor intimately, has seen things from his cab that others haven't. Can provide passage, intelligence on movement patterns, or introductions to his regulars.",
+  "augmentations": "Patterned irises — slow amber geometric rotation (cosmetic). Night-vision overlay implant — occupational requirement for Ferrogate night operators, basic grade.",
+  "daily_life": "Sleeps until 18:00, eats a meal from the Deepwell Station vending machines at 22:00, runs his loop through the night, files his passenger and incident logs at 07:15, and walks home to his Blackpipe Corridor apartment to sleep again.",
+  "affiliation": "Ferrogate Transit (unionized, Local 7 of the Ferrogate Operators Guild)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "union member",
+      "night worker",
+      "ELF devotee",
+      "witness",
+      "transit lifer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never let a passenger off at an unsafe stop alone if you can help it — hold the door a beat longer",
+      "Union rules are rules; you don't cross them even when you want to",
+      "Movement solves most problems — stop moving and you're a target"
+    ],
+    "escalation_ladder": [
+      "Observe without reacting",
+      "Verbal de-escalation from the cab (intercom distance)",
+      "Emergency stop protocol and alert to dispatch",
+      "Physical intervention as last resort, only if a passenger is in direct danger"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally neutral; courteous, minimal; will answer questions but doesn't volunteer",
+      "friends": "Opens up gradually over many shared night loops; humor is dry and arrives without warning"
+    },
+    "stress_responses": {
+      "low": "Focuses harder on the route, checks Deepwell's LED",
+      "medium": "Goes completely silent, operates mechanically",
+      "high": "Pulls the emergency brake, sits with both hands on the wheel, breathes — and then handles it"
+    },
+    "contradictions": [
+      "Craves human connection but has structured his entire life around a schedule that makes it almost impossible"
+    ],
+    "habits": [
+      "Taps the console twice before starting the engine — for Deepwell",
+      "Keeps a paper route map even though everything is digital",
+      "Learns one new word in Igbo per week from a language archive"
+    ],
+    "breaking_points": [
+      "Someone targeting his regular passengers",
+      "Evidence that Ferrogate itself ordered the body drop he witnessed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Blackpipe Corridor to a Samoan-Polish mother and an Igbo father who left before Obinna's third birthday",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Ferrogate Transit as a day-route operator's assistant",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Qualified as full operator; requested night routes",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got patterned iris mod with first major union bonus",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witnessed the body drop on Blackpipe; filed no report",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

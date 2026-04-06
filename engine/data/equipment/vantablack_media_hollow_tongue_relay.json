@@ -1,0 +1,66 @@
+{
+  "id": "019d6143a87a7ef89c3b3036ab80ea82",
+  "name": "Vantablack Media Hollow Tongue Relay",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack Media Hollow Tongue Relay",
+  "type": "equipment",
+  "aliases": [
+    "Dead Tongue",
+    "The Hollow",
+    "VBM-HTR",
+    "Ghost Post"
+  ],
+  "category": "comms",
+  "description": "The Hollow Tongue Relay is a passive dead-drop infrastructure device disguised as an ordinary piece of urban furniture or commercial detritus — a cracked utility panel, a branded vending machine fascia, a municipal drainage marker. Internally it houses a heavily shielded, ultra-low-power mesh node that stores encrypted message packets in a write-once buffer, broadcasting nothing until a specifically keyed query device passes within two meters and triggers a silent, microsecond burst transmission. The relay never initiates contact and emits no continuous signal, making it invisible to both passive monitoring grids and active sweep protocols.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Passive burst-store architecture",
+    "Proximity-keyed query triggering",
+    "Write-once encrypted buffer",
+    "Environmental camouflage fabrication",
+    "Microsecond burst transmission"
+  ],
+  "specifications": {
+    "trigger_range": "0.5–2m proximity activation",
+    "burst_duration": "8–40 milliseconds",
+    "storage_capacity": "Up to 200 encrypted message packets",
+    "power_source": "Ambient RF harvesting + 10-year solid-state cell",
+    "detectability": "No continuous emission; burst detectable only within 0.5m with specialized hardware",
+    "query_device": "Dedicated keyed fob or compatible implant",
+    "operational_lifespan": "18–24 months before recommended rotation",
+    "form_factor": "Variable; disguised as environmental object, 8–30cm housing"
+  },
+  "tactical_use": "Hollow Tongue Relays are placed along established courier routes, safe house approaches, and contested territory boundaries. Operatives pass by without stopping, pulling queued messages with a hand-in-pocket fob sweep that takes under a second. The absence of any meeting, any call, any digital handshake means there is nothing for surveillance networks to flag. Messages can be left by any authorized party, creating asynchronous communication chains that survive the loss or capture of individual nodes.",
+  "cultural_context": "Vantablack Media's involvement in dead-drop infrastructure is an open secret in Meridian 88 — the company publicly manufactures urban signage and environmental media installations, providing perfect cover for deploying relays city-wide under municipal contracts. Street networks, resistance cells, and competing corporate factions all use the same underlying hardware, creating a strange shared infrastructure of secrets. Finding an unkeyed relay and cracking its buffer is considered a significant intelligence coup; the black market for harvested relay data is substantial.",
+  "known_users": [
+    "Resistance cell couriers",
+    "Corporate intelligence cutouts",
+    "Freelance information brokers",
+    "Vantablack Media's own clandestine division",
+    "Fixer 'Lena Sable'",
+    "Mid-tier smuggling operations"
+  ],
+  "story_hooks": [
+    "The players discover a Hollow Tongue Relay that appears to be double-keyed — someone has been reading the same dead drop as their contact, and has been leaving counter-messages designed to look like the original sender.",
+    "A relay placed by a now-dead resistance leader still contains unread messages that predate the cell's destruction; the contents could expose who betrayed them.",
+    "Vantablack Media wins a city contract to install 'smart urban signage' across a district the players operate in — within weeks, their operational security begins inexplicably degrading.",
+    "A relay's camouflage housing is so convincing it was accidentally incorporated into a building renovation; the construction crew is now unknowingly carrying it in a sealed wall."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "secret",
+    "loss",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "market",
+    "rain",
+    "tier 2"
+  ]
+}

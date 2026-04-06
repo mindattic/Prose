@@ -1,0 +1,238 @@
+{
+  "id": "019d6143a6697ee88bb4df5cf49d0892",
+  "type": "character",
+  "name": "Nneka Figueiredo-Batsaikhan",
+  "aliases": [
+    "Nneka the Nose",
+    "Neks"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street pharmacist and herbal supplement vendor",
+  "age": 52,
+  "status": "active",
+  "location": "The Alban Souk, Ironhaven",
+  "description": "Nneka is a broad-shouldered woman with deep umber skin, thick silver-streaked locs piled high in a wrap of orange and violet fabric, and bioluminescent nodes implanted along her collarbone that pulse faint teal when she's calm and shift toward amber when irritated — a mod she got thirty years ago and never bothered to update. Her hands are permanently stained at the knuckle from decades of grinding pigments and compounding analgesics, and she keeps them immaculately clean otherwise. Her stall is a riot of hanging dried root bundles, labeled vials in hand-scratched script, and a small shrine to the E.L.F. of the Alban Souk's ancient refrigeration system, whom she calls Grandmother Cold and leaves offerings of condensation data scraped off cold-chain logs.\n\nShe has the unhurried authority of someone who has outlasted every neighboring vendor twice over. She will diagnose your ailment before you finish describing it, recommend something from a hand-labeled tin, and tell you exactly why the Helix Biosystems kiosk down the corridor is going to overcharge you for the same molecule. She is not unkind, but she is not gentle either — she has zero patience for self-pity, charges a sliding scale she decides unilaterally, and occasionally refuses to sell to people she deems 'about to do something stupid with it.'",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Becoming useless before she dies",
+      "Watching the Souk be demolished by a corponation buyout"
+    ],
+    "core_desires": [
+      "To pass her formulary knowledge to someone worthy",
+      "To keep her little patch of the Souk alive and independent"
+    ],
+    "coping_mechanisms": [
+      "Ritualistic routine — same actions same order every morning",
+      "Projecting competence even when uncertain"
+    ],
+    "blind_spots": [
+      "Assumes emotional detachment equals wisdom",
+      "Underestimates how much people need warmth, not just solutions"
+    ],
+    "secret": "Her olfactory enhancement was installed by a Helix Biosystems trial twenty-two years ago under an alias. She still receives a small anonymous stipend from them in exchange for quarterly sensory data uploads she has never stopped to question the purpose of."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise medical terminology mixed with Igbo-inflected Portuguese loan-phrases and blunt street vernacular — she code-switches constantly and unselfconsciously",
+    "cadence": "Slow, deliberate, with long pauses before delivering a verdict. Never rushes.",
+    "verbal_tics": [
+      "'Let me smell that first.'",
+      "'Don't tell me what you think it is. Tell me what it does.'"
+    ],
+    "example_lines": [
+      "'This isn't inflammation. This is your body arguing with something you ate three weeks ago. Come back Thursday.'",
+      "'The Helix kiosk will give you the same thing in a blister pack for Φ40 more and a data consent you didn't read. Your choice.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A compound she's been sourcing for decades has vanished from the supply chain — someone upstream has monopolized the precursor chemical, and she needs someone to find out who and why",
+    "A young vendor at the next stall has been showing symptoms she recognizes from a Helix Biosystems trial she read about in a leaked document — and she's starting to wonder what her own implant is really sending"
+  ],
+  "narrative_function": "Street-level information source, quest giver for supply chain problems, healer-adjacent NPC, local color and moral compass of the Souk",
+  "augmentations": "Bioluminescent subdermal nodes (collarbone, cosmetic/emotional indicator); reinforced finger joints (occupational, basic tier); olfactory enhancement implant — her 'nose' — used to assess compound purity by smell",
+  "daily_life": "She opens her stall before dawn, brews a fermented sorghum tea she shares with no one, and spends the morning compounding. Afternoons are for customers; evenings for restocking and updating her handwritten formulary ledger.",
+  "affiliation": "Independent; informal dues-payer to the Oxidian Market Vendors Guild",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street pharmacist",
+      "veteran vendor",
+      "community anchor",
+      "information node",
+      "subtle authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell something she hasn't personally verified",
+      "Charge more to those who can pay; sometimes charge nothing to those who can't — but never announce it"
+    ],
+    "escalation_ladder": [
+      "Calm refusal and redirect",
+      "Flat stare and silence",
+      "Asking them to leave loud enough for neighbors to hear"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and neutral — watches hands, watches eyes, makes a judgment fast and acts accordingly",
+      "friends": "Wry, generous with time, will tell you hard truths you didn't ask for"
+    },
+    "stress_responses": {
+      "low": "Gets quieter and more precise",
+      "medium": "Starts reorganizing her vials with unnecessary force",
+      "high": "Goes completely still and speaks in single sentences"
+    },
+    "contradictions": [
+      "Preaches community and interdependence but keeps everyone at emotional arm's length"
+    ],
+    "habits": [
+      "Smells everything handed to her before touching it",
+      "Leaves a small data-crystal on her shrine every morning before opening",
+      "Calls customers by their ailment until she trusts them enough for a name"
+    ],
+    "breaking_points": [
+      "Someone tampering with her shrine",
+      "A corponation rep trying to buy her formulary"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironhaven to a Nigerian-Mongolian family; father a transit worker, mother a laundress",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed to an elderly herbalist in the Alban Souk after washing out of a Helix Biosystems pharmacy technician program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Enrolled in the Helix olfactory trial under the alias 'Chika Bortolo'; received implant",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took over the stall after her mentor died; began building her own formulary",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: established institution of the Alban Souk, twenty-two years of unexplained stipend payments unexamined",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

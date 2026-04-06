@@ -1,0 +1,95 @@
+{
+  "id": "019d6143a95971e09bf7b3f5d29fe818",
+  "type": "place",
+  "name": "West Elsgate",
+  "aliases": [
+    "West Elsdon",
+    "The Gate",
+    "Little Krakow",
+    "Quiet Block"
+  ],
+  "description": "West Elsgate is the kind of neighborhood that disappears between the cracks of a megacity's attention. Small, residential, and so deliberately unremarkable that drone surveillance algorithms routinely classify it as low-priority and redirect coverage to more interesting targets. This is not an accident. The Eastern European and Hispanic families who constitute West Elsgate's population have spent decades cultivating an appearance of irrelevance so thorough it amounts to camouflage. The blocks are clean. The neural mesh is standard-issue. The noise levels are within parameters. Nothing happens here, according to every metric Axiom uses to decide where to look. Nothing at all.\n\nWhat actually happens in West Elsgate is that things are stored. The neighborhood's small footprint and residential character make it ideal for the kind of quiet warehousing that Meridian's more visible districts can't support. Three of every ten residential basements in West Elsgate contain something that isn't residential -- data caches, medical supplies for the gray market, fabrication components in transit between the Circuit and the Southwest industrial zones, and occasionally people who need to be somewhere that isn't on anyone's itinerary. The storage economy isn't organized by any single faction. It's a neighborhood practice, a cottage industry of discretion, managed through personal relationships and the Eastern European tradition of minding your own business elevated to an operational doctrine.\n\nThe Polish cultural infrastructure is the neighborhood's skeleton. Two generations removed from immigration, the families who settled here brought a Central European pragmatism about state authority that translated seamlessly into Meridian's corporate sovereignty environment: power is temporary, borders are negotiable, and the most important things are kept in places nobody official knows about. The Hispanic community, arriving later and integrating gradually, brought their own parallel tradition of institutional distrust, and the two populations bonded over the shared understanding that the safest place for anything valuable is somewhere boring.",
+  "atmosphere": {
+    "sights": [
+      "Tidy residential blocks indistinguishable from a dozen other Southwest neighborhoods",
+      "Basement windows with blackout film -- standard home improvement, nothing to see here",
+      "Corner stores with inventory that doesn't quite match their stated specialties",
+      "Elderly residents on porches whose casual observation covers every sightline on the block",
+      "Neural mesh coverage indicators showing exactly average signal strength -- suspiciously exactly average"
+    ],
+    "sounds": [
+      "Residential quiet -- children, kitchen noise, entertainment feeds at reasonable volumes",
+      "The absence of anything unusual, which is itself unusual in Meridian",
+      "Basement doors opening and closing at odd hours, quickly enough that you'd miss it if you weren't listening",
+      "Polish folk music from kitchen radios, blending with nortenho from the next house over"
+    ],
+    "smells": [
+      "Home cooking -- bigos, tamales, and the unplaceable smell of a neighborhood that actually uses its kitchens",
+      "Basement air -- cool, slightly chemical, noticeable near certain houses",
+      "Nothing industrial, nothing corporate, nothing that would trigger an environmental sensor"
+    ],
+    "feel": "Aggressively ordinary. West Elsgate radiates a normalcy so complete it takes a professional to recognize it as constructed. The neighborhood feels safe in the way a locked cabinet feels safe -- not because nothing is inside, but because what's inside is exactly where someone put it on purpose.",
+    "tags": []
+  },
+  "demographics": "Approximately 10,000 residents, predominantly Tier 2. Eastern European families -- Polish, Ukrainian, Lithuanian -- comprise the older generation, with a growing Hispanic population in the younger cohort. Population is stable and intentionally small. New residents are accepted slowly and vetted thoroughly.",
+  "economy": "Surface economy is standard residential services. The storage economy generates substantially more revenue, distributed across dozens of households and coordinated through personal networks rather than any centralized organization.",
+  "power_structure": "No formal governance beyond the standard Meridian residential block structure. Real authority rests with the senior family networks who coordinate the storage economy -- a distributed, informal power structure with no single point of failure and no single point of contact.",
+  "dangers": [
+    "Accidentally discovering what's in someone's basement -- the neighborhood's hospitality has firm limits",
+    "Being identified as surveillance or corporate intelligence -- West Elsgate's detection instincts are honed",
+    "The storage economy occasionally handles cargo that attracts violent interest from outside parties",
+    "The neighborhood's protective silence can become a trap if you need help and nobody wants to be noticed helping you"
+  ],
+  "opportunities": [
+    "Secure, discreet storage in a district that corporate surveillance routinely overlooks",
+    "A network of utterly reliable people who have been keeping secrets professionally for generations",
+    "Transit routing through a neighborhood that isn't monitored closely enough to matter",
+    "The corner stores stock things that aren't on the shelves -- you just have to know what to ask for"
+  ],
+  "story_hooks": [
+    "One of West Elsgate's storage basements contains something its owners didn't know they were holding -- and the people who placed it there haven't come back to collect it in six months",
+    "Axiom Security is piloting a new residential surveillance upgrade program in the Southwest, and West Elsgate is on the installation list -- the neighborhood is preparing countermeasures with the quiet efficiency of people who've been expecting this",
+    "A data cache stored in West Elsgate contains financial records linking a Spire-level executive to pre-Meridian war crimes, and the person who stashed it there has gone missing"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Garfield Rack",
+      "Gage Circuit",
+      "Clearpath",
+      "West Lawn Line"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Residents who know every face on their block and notice every car that doesn't belong",
+    "Discreet couriers making deliveries to specific basements at specific times",
+    "Circuit traders using West Elsgate as a staging point for Southwest distribution",
+    "People who need something stored where nobody will think to look",
+    "Nobody suspicious -- that's the whole point"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.806,
+    "lng": -87.685,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "crime",
+    "trust",
+    "secret",
+    "neural",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "medical",
+    "market",
+    "rain",
+    "drone",
+    "spire",
+    "circuit"
+  ]
+}

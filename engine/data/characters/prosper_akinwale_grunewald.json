@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a6a2742db23bb2ea458cbe8e",
+  "type": "character",
+  "name": "Prosper Akinwale-Grunewald",
+  "aliases": [
+    "The Anchor",
+    "Pros",
+    "Akin"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate communications director and internal intelligence broker, Meridian Core",
+  "age": 55,
+  "status": "active",
+  "location": "The Meridian Core",
+  "description": "Prosper Akinwale-Grunewald is the kind of man who has made himself so useful to so many competing interests that removing him has become structurally inadvisable, which is precisely the position he spent thirty years engineering. He is a large man — tall and broad in the way of someone who was once physically imposing and has settled into a comfortable authority — of Nigerian-German descent, with a deep brown complexion, wire-rimmed glasses he wears purely for the signal of approachability they send, and a wardrobe that sits in the precise register of expensive-but-not-ostentatious. He occupies a corner office in the Meridian Core's mid-tower communications complex, a space he has curated to feel warm rather than corporate — real wood surfaces, no visible screens, a standing offer of good coffee to anyone who visits.\n\nHis official title is Senior Director of Strategic Communications for the Halcyon-Vanta Group, a mid-sized corporate entity with fingers in infrastructure, media licensing, and private logistics. In practice, his role is considerably more elastic. He has spent decades accumulating a particular kind of capital — the knowledge of who knows what, who owes whom, and which official narratives have load-bearing fictions inside them. He does not think of himself as corrupt, a distinction he would draw carefully and at length if asked: he facilitates outcomes that would happen anyway, he would say, and prefers to be in the room where they're shaped rather than simply subject to them. This is not entirely self-serving rationalization, which makes it more dangerous.\n\nProsper is a widower — his husband Léon died six years ago of a degenerative neurological condition that the right augmentation might have slowed, had it been available outside the Spire's private medical tier. He does not discuss this. He has a daughter, Adaeze, who works in Old Harbor doing community infrastructure work and who does not speak to him. He does not discuss this either, though people who watch him carefully notice that his composure develops a hairline fracture whenever her name surfaces.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.71,
+      "ideal": 0.42,
+      "id": 0.55,
+      "shadow": 0.78,
+      "mask": 0.88,
+      "ghost": 0.66
+    },
+    "core_fears": [
+      "That the accommodations he made to get here made him into something Léon would not have recognized",
+      "Irrelevance — being removed from the information flows that constitute his sense of self",
+      "That his daughter's judgment of him is accurate"
+    ],
+    "core_desires": [
+      "To matter in ways that outlast his position",
+      "Absolution that he would never ask for directly",
+      "To find one situation where he acts on principle without calculating the angle first"
+    ],
+    "coping_mechanisms": [
+      "Reframing every ethical compromise as pragmatic necessity in real time",
+      "Maintaining meticulous social warmth as a buffer against self-examination",
+      "Overworking — his schedule leaves no space for stillness"
+    ],
+    "blind_spots": [
+      "Genuinely cannot perceive when people like him rather than need him — the distinction has collapsed",
+      "Believes his information control protects people; rarely accounts for who it harms",
+      "His grief for Léon has calcified into a grievance against the system that he expresses only through positioning, never through action"
+    ],
+    "secret": "He has been quietly funneling low-level intelligence to a contact he believes works for an accountability collective — a small, private act of conscience he maintains while doing nothing to change his larger operations. He does not know the contact is actually working for a Spire faction that is allowing him to feel moral so he remains pliable."
+  },
+  "speech_patterns": {
+    "vocabulary": "Expansive and precise, with a fondness for the long sentence that arrives at a point through apparent digression; uses corporate register fluently but can shift to warmth with evident ease; occasionally deploys Yoruba phrases in moments of genuine emotion",
+    "cadence": "Unhurried and deliberate, with a radio-quality resonance that he is entirely aware of; skilled at the pause that makes the other person feel heard",
+    "verbal_tics": [
+      "Opening responses with 'What I'd say to that is—' before saying something different from what the other person expected",
+      "Referring to problematic situations as 'textured'",
+      "A brief hum — not quite agreement, not quite skepticism — that people spend years trying to correctly interpret"
+    ],
+    "example_lines": [
+      "'What I'd say to that is — the question isn't whether it happened. The question is what story it's inside of.'",
+      "'This is a textured situation. Which means we move carefully, and we move now.'",
+      "'I've been in this building for twenty-two years. I know where every load-bearing wall is. That's not a metaphor.'",
+      "'Mmh. Walk me through what you think I don't already know.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Maren Voss",
+      "type": "professional rival with historical entanglement",
+      "description": "They came up through adjacent corridors in the corporate world and have been circling each other ever since — occasionally useful to one another, never fully trusting.",
+      "emotional_core": "Respect complicated by the knowledge that they would both sacrifice the other without excessive regret",
+      "story_tension": "He recently learned something about her that she doesn't know he knows, and is deciding what to do with the asymmetry"
+    },
+    {
+      "name": "Adaeze (his daughter)",
+      "type": "estranged family",
+      "description": "She left the Core six years ago, explicitly rejecting the world he represents. He monitors her work in Old Harbor from a distance, through intermediaries she would be furious to know about.",
+      "emotional_core": "Love expressed entirely in wrong ways",
+      "story_tension": "Her community infrastructure work has recently intersected with something that could make her a target — and he is trying to protect her without her knowledge or consent, which risks making things worse"
+    },
+    {
+      "name": "Augustin Reyes-Mbatha",
+      "type": "protégé, possibly compromised",
+      "description": "Prosper mentored him early in his career and feels genuine affection — which is why he is disturbed by evidence that Augustin has been making moves that don't fit any pattern Prosper recognizes.",
+      "emotional_core": "Paternal pride curdling into suspicion",
+      "story_tension": "He doesn't know whether Augustin is working an angle Prosper hasn't seen yet, or whether someone has gotten to him"
+    }
+  ],
+  "story_hooks": [
+    "His 'conscience contact' approaches him with information that could only have come from inside Halcyon-Vanta — which means either the contact is fabricated, or there's a leak he hasn't found",
+    "Adaeze's Old Harbor project uncovers something that directly implicates one of Prosper's long-standing arrangements, forcing him to choose between protecting her and protecting himself",
+    "A junior analyst brings him evidence that Léon's medical denial was not bureaucratic — it was a deliberate decision made by a named executive he has been working alongside for three years",
+    "He is offered a position in the Spire — the culmination of everything he's worked for — at exactly the moment he begins to understand what that would actually cost"
+  ],
+  "narrative_function": "Embodies the seduction and cost of systemic complicity; functions as an entry point into corporate power structures and a mirror for characters navigating moral compromise; his trajectory can move toward redemption or deeper entanglement depending on story needs",
+  "augmentations": "A passive social-signal reader integrated into his glasses frames that aggregates micro-expression data into a general 'trust-confidence index' — he has used it so long he no longer notices when he's consulting it,A memory-fidelity implant that records conversations with perfect accuracy; he has never disclosed its presence,Standard Core-tier cardiovascular maintenance system, installed as a 'wellness benefit' by Halcyon-Vanta — he has occasionally wondered what else it monitors",
+  "daily_life": "Arrives at the office before most of his floor is staffed — not for productivity, but because the quiet hour is when he thinks most clearly. His calendar is back-to-back from nine onward, a choreography of meetings that look collaborative and function as intelligence-gathering. He lunches alone when he can, in a small noodle place in the lower Core that has been there since before the towers were built; the owner knows his order. Evenings are for the calls and messages that don't go through official channels. He attends cultural events — gallery openings, performances — as much for the rooms they put him in as for the work itself, though he still looks at paintings the way someone looks at paintings, not at the people around them. He goes home to an apartment that is very well-designed and very quiet.",
+  "affiliation": "Halcyon-Vanta Group (Senior Director); informal broker relationships across multiple Core factions; nominally unaffiliated with Spire interests, though the line is becoming harder to locate",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 8,
+      "assertion_deference": 7,
+      "transparency_guardedness": 8
+    },
+    "drives": [
+      "Matter in ways that outlast his position",
+      "Absolution he will never ask for",
+      "One principled act without calculating the angle"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 7,
+        "response": "Social warmth intensifies as a buffer, overwork fills all available space"
+      },
+      "moral": 4,
+      "trust": 4,
+      "desperation": 5
+    },
+    "strengths": [
+      "Social Intelligence",
+      "Leadership",
+      "Perspective",
+      "Prudence",
+      "Industry"
+    ],
+    "weaknesses": [
+      "Honesty",
+      "Integrity",
+      "Humility",
+      "Kindness",
+      "Authenticity"
+    ],
+    "tags": [
+      "corporate-comms",
+      "intelligence-broker",
+      "widower",
+      "father-estranged",
+      "mask-wearer",
+      "meridian-core"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Be in the room where outcomes are shaped rather than subject to them",
+      "Maintain meticulous social warmth as a buffer against self-examination",
+      "Funnel low-level intelligence to the conscience contact — the small private act",
+      "Monitor Adaeze from a distance through intermediaries — protect without consent",
+      "Reframe every ethical compromise as pragmatic necessity in real time",
+      "Never discuss Leon except when composure cracks",
+      "Open with 'What I'd say to that is—' before saying something unexpected"
+    ],
+    "escalation_ladder": [
+      "'What I'd say to that is—' followed by reframing",
+      "The brief hum — not agreement, not skepticism — that takes years to interpret",
+      "Describes the situation as 'textured' — signals complexity and danger",
+      "Deploys information asymmetry — reveals what he knows to reshape the room",
+      "Contacts the conscience collective — the one move that is not calculated"
+    ],
+    "interpersonal_modes": {
+      "Adaeze": "Love expressed entirely in wrong ways — surveillance disguised as protection",
+      "Maren Voss": "Circling respect with mutual knowledge that either would sacrifice the other",
+      "Augustin Reyes-Mbatha": "Paternal pride curdling into suspicion",
+      "colleagues": "Calibrated warmth that makes every person feel heard — and serves his information network"
+    },
+    "stress_responses": {
+      "low": "Social warmth increases — the buffer thickens",
+      "medium": "Overworks — schedule leaves no space for stillness or grief",
+      "high": "Composure develops a hairline fracture when Adaeze's name surfaces",
+      "critical": "Yoruba phrases surface in genuine emotion — the mask slips"
+    },
+    "contradictions": [
+      "Funnels intelligence to what he thinks is an accountability collective — it is actually a Spire faction keeping him pliable",
+      "Cannot distinguish between people liking him and people needing him — the distinction has collapsed",
+      "Grief for Leon has calcified into a grievance he expresses through positioning rather than action"
+    ],
+    "habits": [
+      "Arrives at the office before most of the floor — the quiet hour for clear thinking",
+      "Lunches alone at a small noodle place in the lower Core — the owner knows his order",
+      "Attends cultural events for the rooms they put him in",
+      "Looks at paintings like someone who actually looks at paintings",
+      "Goes home to an apartment that is very well-designed and very quiet"
+    ],
+    "breaking_points": [
+      "Learning that Leon's medical denial was a deliberate decision by a named colleague",
+      "Adaeze's community work intersecting with one of his long-standing arrangements",
+      "Discovering the conscience contact works for a Spire faction",
+      "Being offered the Spire position at the moment he understands the cost"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

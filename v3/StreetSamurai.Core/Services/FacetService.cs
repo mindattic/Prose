@@ -16,9 +16,9 @@ public class FacetService
     {
         if (_cache != null) return _cache;
 
-        _cache = db.Facets.ToDictionary(
-            f => f.Name,
-            f => new FacetDefinition
+        _cache = db.Facets.GroupBy(f => f.Name).ToDictionary(
+            g => g.Key,
+            g => { var f = g.First(); return new FacetDefinition
             {
                 Name = f.Name,
                 Label = f.Label.Length > 0 ? f.Label : $"[{f.Name.ToUpperInvariant()}]",
@@ -31,7 +31,7 @@ public class FacetService
                 Prohibitions = f.Voice.Prohibitions,
                 VoiceTone = f.Voice.Tone,
                 VoiceStyle = f.Voice.Style,
-            });
+            }; });
 
         return _cache;
     }
@@ -80,7 +80,7 @@ public record FacetDefinition
     public string Domain { get; init; } = "";
     public List<string> Triggers { get; init; } = [];
     public string SystemPrompt { get; init; } = "";
-    public string Model { get; init; } = "claude-sonnet-4-6";
+    public string Model { get; init; } = Constants.Defaults.DefaultModel;
     public double Temperature { get; init; } = 0.8;
     public List<string> CoreMemories { get; init; } = [];
     public List<string> Prohibitions { get; init; } = [];

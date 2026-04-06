@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a8577da8ab8e8e135baef1ed",
+  "name": "Carrion Defense Works Bioelectric Camouflage Generator BCG-2",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Bioelectric Camouflage Generator BCG-2",
+  "type": "equipment",
+  "aliases": [
+    "BCG-2",
+    "Life Mask",
+    "Bio Camo",
+    "Heartbeat Faker"
+  ],
+  "category": "counter-surveillance",
+  "description": "A body-worn device that generates a configurable bioelectric field mimicking the signature of a different person, animal, or no living being at all. The BCG-2 can spoof biometric sensors that detect heartbeat, bioelectric brain activity, galvanic skin response, and body impedance — the sensor reads whatever the BCG-2 tells it to read. The device can make the wearer appear dead to biometric scanners, mimic the bioelectric signature of a specific individual for access control bypass, or generate the signature of an animal to explain detection without raising alarm. Carrion developed it for covert operators who need to defeat biometric perimeter security.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited — biometric spoofing device",
+  "base_technologies": [],
+  "specifications": {
+    "field type": "Configurable bioelectric signature",
+    "modes": "Null (appear dead)",
+    "info": "clone (specific individual); mask (animal); custom; brain activity; skin response; impedance",
+    "bioelectric mimicry": "Heartbeat",
+    "effective range": "Overpowers sensors within 2 meters",
+    "battery": "8-hour active generation",
+    "weight": "0.2 kg",
+    "form factor": "Belt-worn module",
+    "programming": "Neural interface or manual preset selection"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A secured area's biometric perimeter showed no living presence during a time when a theft was committed — the intruder used a BCG-2 in null mode, appearing as a walking dead zone to every sensor.",
+    "A BCG-2 was used to clone an executive's bioelectric signature and gain access to a biometric-locked facility — the intrusion was undetectable because the sensors saw exactly the right person."
+  ],
+  "tags": [
+    "countersurveillance",
+    "equipment",
+    "theft",
+    "ai",
+    "surveillance",
+    "control",
+    "rain",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58d7cf1869a4fbff5c8af4f",
+  "name": "Remix",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Takes existing things and makes them new",
+  "behavioral_signature": "Combines, recontextualizes, transforms",
+  "under_stress": "Remixes faster, less carefully",
+  "at_rest": "Sampling, cutting, pasting",
+  "will_always": [
+    "make something new from something old"
+  ],
+  "will_never": [
+    "create from nothing"
+  ],
+  "unless": [
+    "the remix disrespects something sacred"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Copycat",
+      "threshold": 0.65,
+      "context": "working from existing"
+    },
+    {
+      "archetype": "Improviser",
+      "threshold": 0.7,
+      "context": "creative adaptation"
+    }
+  ],
+  "opposite_of": [
+    "Architect"
+  ],
+  "tags": [
+    "transformative",
+    "adaptive"
+  ]
+}

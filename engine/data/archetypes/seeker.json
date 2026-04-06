@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a590787f8c664a95c59ebe26",
+  "name": "Seeker",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Searches for meaning without knowing what they're looking for",
+  "behavioral_signature": "Questions everything spiritual and existential",
+  "under_stress": "Seeks more desperately, less wisely",
+  "at_rest": "Reading, meditating, questioning",
+  "will_always": [
+    "keep searching"
+  ],
+  "will_never": [
+    "accept easy answers"
+  ],
+  "unless": [
+    "the search itself becomes an excuse to never commit"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Consciousness Explorer",
+      "threshold": 0.8,
+      "context": "spiritual inquiry"
+    },
+    {
+      "archetype": "Meaning Maker",
+      "threshold": 0.75,
+      "context": "purpose-seeking"
+    }
+  ],
+  "opposite_of": [
+    "Believer"
+  ],
+  "tags": [
+    "questioning",
+    "open"
+  ]
+}
