@@ -1,0 +1,47 @@
+{
+  "id": "c36a999ac896385e2c8df2483d6a07de",
+  "name": "Crucible Industries Tempest-12 'Widowmaker'",
+  "type": "weapon",
+  "aliases": [
+    "Widowmaker",
+    "Tempest",
+    "The Widow"
+  ],
+  "category": "shotgun",
+  "description": "The Crucible Industries Tempest-12 is a semi-automatic shotgun chambered in 12 gauge with an eight-round tube magazine, an extended barrel with interchangeable choke tubes, and a modular stock system that converts between a full rifle stock, a folding stock, and a pistol grip configuration. The Widowmaker is Crucible's general-purpose combat shotgun — less specialized than the Storm-12's breaching focus or the Maelstrom's area denial role.\n\nThe Tempest's interchangeable choke system allows the operator to adjust the weapon's spread pattern to match engagement conditions — cylinder bore for room clearing, modified for intermediate range, and full choke for slug work at extended distance. Combined with the modular stock, a single Tempest-12 can be configured for any shotgun role short of full-automatic fire. Field-swapping a choke tube takes fifteen seconds; stock conversion takes about the same.\n\nCrucible positions the Tempest-12 as the shotgun for operators who don't know what they'll face until they're facing it. The weapon's adaptability has made it popular among independent contractors, bounty hunters, and security teams who operate across varied environments without the luxury of mission-specific weapon selection. The Widowmaker adapts because its users must.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — enhanced registration required; folding stock may require separate permit",
+  "base_technologies": [
+    "Interchangeable choke system",
+    "Modular stock system",
+    "Semi-automatic gas action",
+    "Extended tube magazine"
+  ],
+  "specifications": "caliber: 12 gauge\neffective_range: 30-50 meters (choke dependent)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 8+1 rounds\nweight: 3.5 kg (full stock configuration)",
+  "tactical_use": "A modular combat shotgun adaptable to varied engagement conditions. The interchangeable choke system provides pattern customization for different ranges. The modular stock system allows the weapon to be configured for the operational environment. The eight-round magazine provides adequate sustained fire capability. Suitable as a primary weapon for operators who face unpredictable threats across varied environments.",
+  "cultural_context": "The Widowmaker is the independent operator's shotgun. Where corponation teams carry mission-specific weapons, independents carry a Tempest and adapt on the fly. The weapon has become associated with the self-reliant professional who works alone and needs every tool in one package. Its nickname is earned through use rather than marketing — the Tempest makes widows of the people who underestimate the operator carrying it.",
+  "known_users": [
+    "Independent contractors",
+    "Bounty hunters",
+    "Versatile security operators",
+    "Multi-environment tactical teams"
+  ],
+  "story_hooks": [
+    "A Widowmaker configured as a precision slug gun is used to make a shot at 75 meters that shouldn't be possible with a smoothbore shotgun — the operator is using saboted ammunition that nobody has seen before.",
+    "An independent operator's Tempest has been modified with a choke tube that contains a hidden compartment for smuggling small items through checkpoints. The modification is discovered when the choke fails catastrophically during a firefight."
+  ],
+  "ammunition_type": [
+    "12 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "semi_auto",
+    "modular",
+    "versatile",
+    "adaptable",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

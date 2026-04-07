@@ -1,0 +1,52 @@
+{
+  "name": "Ringo RM-4 'Thresher'",
+  "type": "automaton",
+  "classification": "Agricultural/Combat — Autonomous Clearing Platform",
+  "aliases": [
+    "Thresher",
+    "Lawn Mower",
+    "Red Harvest"
+  ],
+  "manufacturer": "RingoEye Orbital Systems",
+  "description": "The RM-4 is an agricultural automaton designed for crop clearing and land preparation — a tracked platform the size of a small car with forward-mounted rotary cutting blades designed to clear vegetation, small trees, and crop residue at industrial speed. Ringo deployed them across its agricultural holdings for efficient land management. The combat application was discovered accidentally when a unit malfunctioned during a demonstration near a group of observers.\n\nThe incident was classified. The capability was not forgotten. Ringo's security division realized that a machine designed to cut through dense vegetation at high speed could, with minimal reprogramming, cut through dense crowds at high speed. The combat variant of the RM-4 replaces the vegetation-optimized cutting blades with hardened steel rotary cutters and adds armored side panels to protect the drive system from small arms fire. It drives into groups of people at 40 km/h and does what it was designed to do to crops.\n\nRingo has never officially acknowledged the combat variant. Agricultural RM-4 units are in wide, legitimate use. The combat variant is visually indistinguishable until the blade configuration is examined closely — hardened steel cutters where agricultural cutting teeth should be. This dual-use ambiguity is, by this point, a recognized Ringo design philosophy.",
+  "tier_availability": "Tier 2+ (agricultural); Tier 4+ (combat)",
+  "legality": "Agricultural: Licensed. Combat variant: Does not officially exist",
+  "autonomy_level": "Autonomous route following (agricultural); Remote operated (combat)",
+  "dimensions": "2.5m length, 2.0m width, 1.2m height",
+  "weight": "2,200 kg",
+  "power_source": "Diesel engine, 8-hour endurance",
+  "locomotion": "Tracked — 40 km/h maximum speed",
+  "armament": [
+    "Forward-mounted rotary cutting blades (3m cutting width)",
+    "Armored chassis (combat variant)"
+  ],
+  "sensors": [
+    "Obstacle detection",
+    "GPS route following",
+    "Remote camera feed (combat variant)"
+  ],
+  "countermeasures": "Tracked vehicles can be immobilized by anti-vehicle mines, caltrops, and terrain obstacles. The cutting blades are forward-mounted only — flanking and rear attacks avoid the primary danger. Elevated positions above 1.2m are outside the blade arc.",
+  "known_deployments": [
+    "Agricultural land management across Ringo holdings",
+    "Combat variant: classified, multiple unconfirmed incidents"
+  ],
+  "story_hooks": [
+    "A Shelf community built on former Ringo agricultural land is receiving eviction notices. At the perimeter of the district, three RM-4 units have been parked. Agricultural variants, according to Ringo. Residents who've seen them up close disagree.",
+    "An RM-4 combat variant was used in an incident that left seventeen dead. The unit's logs were wiped. The victims were all members of a labor organization that had been organizing Ringo agricultural workers."
+  ],
+  "cultural_context": "The Thresher represents Ringo's particular brand of horror — the conversion of agricultural tools into weapons of mass killing. The fact that the same machine that harvests food also harvests people is a metaphor that writes itself.",
+  "tags": [
+    "automaton",
+    "tracked",
+    "agricultural",
+    "cutting",
+    "weapon",
+    "war",
+    "ringo",
+    "corporate",
+    "dual-use",
+    "tier 4"
+  ],
+  "id": "64dc5bcb6093950d31f93bc1bcbca88d",
+  "parent_corponation": "Ringo Corponation"
+}

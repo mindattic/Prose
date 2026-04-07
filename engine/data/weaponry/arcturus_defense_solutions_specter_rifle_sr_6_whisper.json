@@ -1,0 +1,49 @@
+{
+  "id": "4dcbaffee28a58847fe8fb519dc1965d",
+  "name": "Arcturus Defense Solutions Specter Rifle SR-6 'Whisper'",
+  "type": "weapon",
+  "aliases": [
+    "Whisper",
+    "SR-6",
+    "Ghost Gun"
+  ],
+  "category": "assault_rifle",
+  "description": "The SR-6 Whisper is Arcturus' integrally suppressed assault rifle, designed for operations where sound discipline is paramount. Unlike rifles with detachable suppressors, the Whisper's barrel is permanently enclosed in a suppression shroud that bleeds propellant gases through a series of expansion chambers along the barrel's full length. Combined with subsonic 6.5mm ammunition, the weapon produces less noise than a closing car door.\n\nThe BCI integration includes a sound-profile analyzer that monitors the weapon's acoustic signature in real-time and alerts the operator if suppression efficiency degrades. The rifle also features a thermal masking system that circulates coolant through the suppression shroud, reducing the infrared signature of the heated barrel to near-ambient levels within seconds of firing.\n\nArcturus developed the Whisper for their deniable operations division — the arm of corporate security that conducts actions that officially never happened. The weapon's combination of acoustic and thermal suppression makes detection by surveillance systems extremely difficult. After an engagement, the SR-6 leaves minimal forensic signature — subsonic rounds fragment on impact, and the integrally suppressed design captures residue that would otherwise contaminate the shooter.",
+  "manufacturer": "Blackwood Commercial Group",
+  "tier_availability": "Tier 4+",
+  "legality": "Highly restricted — deniable operations authorization only",
+  "base_technologies": [
+    "Integral suppression system",
+    "Thermal signature masking",
+    "BCI acoustic monitoring",
+    "Forensic signature reduction"
+  ],
+  "specifications": "caliber: 6.5mm subsonic caseless\neffective_range: 300m\nrate_of_fire: 650 rpm (cyclic)\nmagazine_capacity: 25 rounds\nweight: 4.2 kg",
+  "tactical_use": "The SR-6 is optimized for covert engagements where discovery means mission failure. Its combined acoustic and thermal suppression defeats both human senses and electronic surveillance, allowing operators to engage targets in monitored environments without triggering alarms. The subsonic ammunition limits range and penetration compared to standard loads, but within its operational envelope the Whisper is nearly undetectable.",
+  "cultural_context": "The Whisper's existence is technically classified, though its use in enough deniable operations has made it an open secret. In intelligence circles, being told someone carries a Whisper is a warning: the person holding it operates outside normal rules of engagement. The weapon has no legitimate civilian or standard military application — it exists solely to kill quietly and leave no evidence.",
+  "known_users": [
+    "Arcturus deniable operations",
+    "Tier 5 intelligence operatives",
+    "Corporate assassination specialists"
+  ],
+  "story_hooks": [
+    "A Whisper was recovered from a crime scene that Arcturus claims is impossible — the weapon's serial number belongs to a unit that was supposedly destroyed in a decommissioning audit three years ago.",
+    "An operator realizes their SR-6's BCI acoustic monitor has been recording and transmitting their location every time they fire — the weapon has been tracking its own user."
+  ],
+  "ammunition_type": [
+    "6.5mm subsonic caseless",
+    "6.5mm subsonic frangible"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "suppressed",
+    "covert",
+    "deniable",
+    "stealth",
+    "Arcturus",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

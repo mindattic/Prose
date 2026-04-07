@@ -13,6 +13,9 @@
         <div class="card bg-dark text-light border-secondary mb-2 card-body">
             <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                    placeholder="Filter places..." @bind="filter" @bind:event="oninput" />
+            <div class="mb-2">
+                <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+            </div>
             <div class="d-flex gap-2">
             <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Places" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
@@ -91,6 +94,7 @@
 
             <div class="field-label mb-1">Atmosphere</div>
             <div class="mb-3"><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Atmosphere.Feel"></textarea></div>
+            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
         }
         else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a place or create a new one</div> }
     </div>
@@ -102,13 +106,23 @@
     private bool isNew, _confirmDelete;
     private string originalName = "";
     private string filter = "";
+    private List<(string name, int count)> allTags = [];
+    private HashSet<string> selectedTags = [];
 
-    private IEnumerable<DistrictData> FilteredItems => string.IsNullOrWhiteSpace(filter)
-        ? items
-        : items.Where(d => d.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
-            || d.Aliases.Any(a => a.Contains(filter, StringComparison.OrdinalIgnoreCase)));
+    private IEnumerable<DistrictData> FilteredItems
+    {
+        get
+        {
+            IEnumerable<DistrictData> result = items;
+            if (!string.IsNullOrWhiteSpace(filter))
+                result = result.Where(d => d.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
+            if (selectedTags.Count > 0)
+                result = result.Where(d => selectedTags.All(tag => d.Tags.Contains(tag)));
+            return result;
+        }
+    }
 
-    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); }
     private void AddNew() { editing = new DistrictData(); isNew = true; _confirmDelete = false; }
     private void Edit(DistrictData d) { editing = d; originalName = d.Name; isNew = false; _confirmDelete = false; }
     private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
@@ -127,5 +141,8 @@
 
     private string MapUrl(double lat, double lng, string name) =>
         $"https://wego.here.com/?map={lat},{lng},14,normal&x=ep";
+    private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
+    private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

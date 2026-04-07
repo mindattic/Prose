@@ -1,0 +1,41 @@
+{
+  "id": "6f2c8b1e9d4a037e5c1f8b2a7d390e64",
+  "name": "Solvent Driftwalker Hazmat Sneaker",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "An unusual piece — a chemical-resistant shoe built to look like a normal athletic sneaker in faded white and grey. Where standard hazmat boots are obvious, the Driftwalker is designed for light chemical exposure environments where full protective gear would attract attention. The upper is sealed synthetic with chemical-resistant coating; the sole is acid-tolerant rubber. Worn by Shelf-side fixers and investigators who need to walk through contaminated zones without looking like they're doing a job.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "chemical-resistant sealed synthetic upper",
+    "acid-tolerant rubber outsole",
+    "sealed seam construction",
+    "antimicrobial liner"
+  ],
+  "functionality": "Rated for light chemical and biohazard exposure (Class 1-2). Sealed seams prevent fluid wicking. Sole resists mild acid and solvent degradation. Looks like ordinary athletic footwear.",
+  "what_it_says": "You go places with something to hide about why you're there. The discretion is the point.",
+  "worn_by": [
+    "Shelf investigators",
+    "freelance fixers",
+    "environmental journalists",
+    "smugglers moving through contaminated zones"
+  ],
+  "manufacturer": "Solvent Field Gear",
+  "price_range": "Φ145 - Φ180",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The shoes test positive for a compound that was only released in a chemical spill that the corponation responsible claims never happened.",
+    "Someone is wearing these into a Tier 4 building — which means they either have clearance or they're very good at looking like they do."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "hazmat",
+    "chemical-resistant",
+    "covert",
+    "sneaker",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

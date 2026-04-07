@@ -12,7 +12,7 @@
   "category": "augmentation",
   "body_location": "",
   "description": "The Ocular Depth Compiler is a paired replacement of the eye's vitreous chamber and retinal architecture, replacing the organic lens-and-receptor system with a multi-spectral sensor array behind a synthetic corneal lens that is optically indistinguishable from natural tissue. Where conventional ocular augmentations focus on visual enhancement — magnification, night vision, overlays — the Depth Compiler's core function is spatial reconstruction: it continuously builds a precise three-dimensional model of the user's environment by processing stereoscopic depth data across visible, near-infrared, and structured-light frequencies simultaneously, feeding this model to a co-processor implanted at the temporal lobe interface.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "CogAd Platforms",
   "tier_availability": "Tier 3+",
   "legality": "Licensed",
   "installation_requirements": "",
@@ -39,7 +39,6 @@
   "tags": [
     "augmentation",
     "cyberware",
-    "war",
     "augment",
     "neural",
     "ai",
@@ -48,5 +47,6 @@
     "market",
     "night",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

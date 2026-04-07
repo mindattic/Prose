@@ -12,7 +12,7 @@
   ],
   "category": "comms",
   "description": "The Vantablack Subvocal Relay Patch is a skin-adhered communications device roughly the size of a large bandage, worn over the throat or along the jaw. It intercepts the micro-vibrations produced by subvocal speech — the subtle muscular and laryngeal movements that occur when a person 'thinks' words without vocalizing them aloud — translates them into coherent audio through a proprietary neuromuscular signal processing algorithm, and transmits the result as an encrypted voice signal indistinguishable in quality from normal spoken communication. To an outside observer, the wearer appears completely silent, with no visible earpiece or microphone. The receiving end of the transmission is delivered through bone conduction via a secondary micro-patch worn behind the ear or along the jaw's ramus.\n\nThe Patch was developed by Vantablack Media's covert communications subsidiary — a division whose existence the corporation officially neither confirms nor denies — and represents a significant advancement over older subvocal technology, which required extensive individual calibration and produced low-fidelity output. The current generation of Patches uses a self-calibrating algorithm that maps each user's unique subvocal signature within approximately ninety seconds of first wear, achieving voice accuracy exceeding 97% without prior setup. The device is single-use by design: the biosignature calibration is locked to the first wearer's neuromuscular profile, and the adhesive substrate degrades after 72 hours of wear, after which the Patch must be discarded.\n\nThe Vantablack Subvocal Relay Patch is the communications tool of choice for operators who need to maintain team contact in environments where any visible communications hardware would be immediately suspicious — undercover infiltrations, social engineering operations, high-security social environments. It is also widely used by Meridian 88's security and protection details, where the ability to communicate without visible earpieces is a significant professional advantage. The single-use nature and premium pricing make it a marker of well-funded operations.",
-  "manufacturer": "VANTABLACK MEDIA",
+  "manufacturer": "Aperture Talent Agency",
   "tier_availability": "Tier 3+",
   "legality": "Licensed",
   "base_technologies": [
@@ -62,5 +62,6 @@
     "corporate",
     "market",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Vantablack Media"
 }

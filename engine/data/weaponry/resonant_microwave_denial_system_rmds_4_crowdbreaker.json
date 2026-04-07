@@ -10,7 +10,7 @@
   ],
   "category": "energy",
   "description": "The RMDS-4 is a directed-energy area denial platform that projects a diverging cone of millimeter-wave microwave radiation, tuned to the 94 GHz frequency band at which water molecules in the subcutaneous layer of human skin absorb energy most efficiently. The effect on exposed targets is an immediate, overwhelming burning sensation across all exposed skin surfaces — described universally by subjects as being 'cooked from the outside in.' The sensation is intense enough to trigger involuntary flight response in virtually all subjects within seconds, regardless of training or psychological preparation.\n\nDeveloped by Tessera Corponation's non-lethal security division, the RMDS-4 is explicitly designed not to cause permanent injury under standard exposure protocols. At rated power and exposure times under four seconds, the weapon produces no lasting tissue damage — the burning sensation ceases within seconds of leaving the beam. This has made it extraordinarily attractive to corporate security operations that need to control crowds or breach occupied spaces without generating the liability of lethal force. However, the weapon's power output can be adjusted beyond factory defaults, and modified units operating above rated parameters cause severe epidermal burns, corneal damage, and at extended high-power exposure, fatal hyperthermia.\n\nThe RMDS-4 is mounted on a shoulder-rig platform with a 120-degree horizontal sweep and a 30-degree vertical arc, controlled by a handle-mounted targeting interface. The emitter head is recognizable by its distinctive hexagonal radiating array — a design that has become visually synonymous with corporate crowd control in Meridian 88's visual culture, appearing in protest art and propaganda with striking frequency.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "Tessera Media Group",
   "tier_availability": "Tier 2+",
   "legality": "Licensed",
   "base_technologies": [
@@ -53,6 +53,8 @@
     "rain",
     "train",
     "water",
-    "tier 2"
-  ]
+    "tier 2",
+    "less_lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

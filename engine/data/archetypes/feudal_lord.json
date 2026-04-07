@@ -1,0 +1,33 @@
+{
+  "id": "f32f86bb1f2f00c5c97815e806fe9633",
+  "name": "Feudal Lord",
+  "type": "archetype",
+  "category": "power",
+  "description": "Owns the land, owns the people on it, that's just how it works",
+  "behavioral_signature": "Treats authority as property and loyalty as rent",
+  "under_stress": "Demands tribute and obedience as proof of control",
+  "at_rest": "Generous to vassals, ruthless to outsiders",
+  "will_always": [
+    "protect their domain and the people who serve it"
+  ],
+  "will_never": [
+    "recognize authority they didn't grant"
+  ],
+  "unless": [
+    "a greater lord they actually respect makes a demand"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Warlord",
+      "threshold": 0.8,
+      "context": "territorial authority"
+    }
+  ],
+  "opposite_of": [
+    "Equalizer"
+  ],
+  "tags": [
+    "feudal",
+    "possessive"
+  ]
+}

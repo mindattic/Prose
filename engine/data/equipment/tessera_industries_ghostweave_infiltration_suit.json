@@ -12,7 +12,7 @@
   ],
   "category": "stealth",
   "description": "A full-body suit woven from Tessera's electromagnetic-absorbing metamaterial fibers that renders the wearer nearly invisible to thermal imaging, radar, and passive electromagnetic sensors. The Ghostweave does not provide optical invisibility — you can still be seen with the naked eye — but against the sensor suites that constitute modern security systems, the wearer effectively does not exist. The suit absorbs 99.2% of incident electromagnetic radiation across thermal and radar bands, and its inner surface includes a conductive mesh that contains the wearer's own electromagnetic emissions. In a world where detection relies on sensors rather than eyes, the Ghostweave makes someone a ghost.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Vasquez Biocompatible Materials",
   "tier_availability": "Tier 4+",
   "legality": "Prohibited — sensor-defeating equipment",
   "base_technologies": [],
@@ -39,5 +39,6 @@
     "ai",
     "shadow",
     "tier 4"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

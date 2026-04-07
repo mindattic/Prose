@@ -1,0 +1,51 @@
+{
+  "id": "d4e8b3901c6a27f5e0143d7b9c2a5f08",
+  "name": "Ferroink Signal-Break Operative Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "This set leads with a structured moto-cut jacket in deep navy-black with an ink-wash ferrous brown panel running diagonally across the left chest and right shoulder — a deliberate asymmetry that makes the jacket memorable without being flashy. That visibility is a choice: this runner has a reputation and uses it. The jacket is single-layer reinforced with a Kevlar-analogue interlining that stops a blade and slows a low-caliber round without adding the bulk of obvious armor. The right sleeve is aug-cut — the outer seam from wrist to elbow opens on a ratchet-zip, accommodating full chrome arm augmentation with a secure reclose; when open, internal routing channels manage power and data cables cleanly along the forearm. Chest and inner-hem holster panels are built in, sized for compact sidearms or breaching tools. Beneath the jacket, a mandarin-collar shirt in dark teal shot-silk synthetic provides a layer of respectability — this outfit passes at a Tier 3 establishment without triggering dress-code scrutiny. The trousers are flat-front in deep charcoal with a subtle diamond-weave texture, cut to allow full-range leg movement and featuring a hidden inner-ankle holster channel on both legs. Footwear is a polished synthetic leather chelsea boot in dark brown, square-toe, with a reinforced steel toe cap concealed under the finish. A low-profile comm earpiece clips behind the ear with a near-invisible matte-black wire running under the collar.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "navy-black moto-cut outer shell",
+    "Kevlar-analogue interlining",
+    "ferrous brown accent panel fabric",
+    "dark teal shot-silk synthetic",
+    "charcoal diamond-weave trouser material",
+    "polished synthetic leather",
+    "steel toe cap insert",
+    "ratchet-zip aug-cut seam hardware"
+  ],
+  "functionality": "Blade-resistant and low-caliber-resistant interlining; ratchet-zip aug-cut right sleeve for full chrome arm accommodation with cable routing; dual chest holster panels; inner-hem tool pockets; inner-ankle holster channels (bilateral); integrated comm earpiece routing under collar; passes Tier 3 dress code; reinforced steel toe footwear",
+  "what_it_says": "This runner is good enough to be known and smart enough to still be careful. The jacket's diagonal colorblock is a signature — people in certain circles recognize it, and that's the point. The teal shirt and polished boots say this person can sit across from a Tier 3 client without embarrassing anyone. The steel toe says they've also kicked their way out of a situation before.",
+  "worn_by": [
+    "mid-career named runners",
+    "extraction specialists with client-facing roles",
+    "chrome-arm aug users",
+    "fixers who also run",
+    "operatives who trade on personal reputation"
+  ],
+  "manufacturer": "Ferroink — established street label, Circuit District, known quantity in runner communities",
+  "price_range": "Φ 910 – Φ 1,400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The jacket's diagonal colorblock is recognized mid-job by a target who knows exactly who the runner is — the element of surprise is gone, and now it's a negotiation or a fight.",
+    "A copycat runner is wearing a knockoff Ferroink jacket in the same colorblock, running a job that's about to go wrong — and witnesses are going to describe 'the Ferroink runner' to security.",
+    "A chrome-arm user's ratchet-zip seizes during a chase, locking the sleeve open and snagging on a door frame at the worst possible moment."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier 3",
+    "tier 4",
+    "reputation_visible",
+    "aug_compatible",
+    "blade_resistant",
+    "holster_integrated",
+    "chrome_arm_compatible",
+    "tactical",
+    "ferroink_label"
+  ],
+  "parent_corponation": ""
+}

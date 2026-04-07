@@ -9,7 +9,7 @@
   ],
   "category": "explosive",
   "description": "The TCDS-3 operates by firing a magnetically-stabilized shell casing packed with a proprietary nano-particulate thermite compound developed under contract with ARCTURUS DEFENSE SOLUTIONS. On impact or timed detonation, the outer casing fractures along pre-scored seams, releasing the thermite payload as a cascading aerosol that ignites upon contact with atmospheric oxygen. The burn sequence is not instantaneous — it sustains for four to seven seconds at temperatures exceeding 2,800°C, flowing into gaps, joints, and ventilation channels like liquid fire.\n\nWhat distinguishes the TCDS-3 from conventional incendiary ordnance is its cavity-seeking behavior. The nano-particulate suspension is electrostatically charged prior to launch, causing particles to be attracted toward metallic surfaces and enclosed spaces — door seams, vehicle chassis, armored suits, server housings. Operators describe the effect as 'painting the inside of a wall.' The weapon is particularly devastating against hardened structures because it burns through reinforcement rather than blasting around it.\n\nOn the streets of Meridian 88, the TCDS-3 is called 'Smelter' for obvious reasons. It is a weapon that leaves no survivors in a sealed space and no usable evidence in a burned-out vehicle. Corporate demolition crews use modified variants for precision structural teardown, but the weapon's proliferation into black market channels has made it a favored tool of arsonists-for-hire and syndicate enforcers settling property disputes permanently.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Blackwood Commercial Group",
   "tier_availability": "Tier 4+ / Black market",
   "legality": "Prohibited",
   "base_technologies": [
@@ -50,6 +50,8 @@
     "vehicle",
     "armor",
     "fire",
-    "tier 4"
-  ]
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

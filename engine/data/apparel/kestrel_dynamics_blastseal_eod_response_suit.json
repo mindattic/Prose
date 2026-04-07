@@ -1,0 +1,46 @@
+{
+  "id": "4d8c1f6b3e0a9257c4d8f1b6e3a09257",
+  "name": "Kestrel Dynamics BlastSeal EOD Response Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Matte olive-drab with high-vis orange panel inserts at the torso and thighs, the BlastSeal is a full-body explosive ordnance disposal suit that moves like wearing a building. The outer shell is multi-ply ballistic nylon over rigid ceramic-composite trauma plates at chest, abdomen, and thighs — the plates are removable via Velcro-sealed access panels. An integrated ballistic collar and neck brace assembly locks into the helmet ring. The suit's arms are heavily padded, limiting fine motor control. Interior cooling tubes run from a spine-mounted micro-chiller unit. Kestrel's raptor-wing crest is embossed on both shoulders.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "multi-ply ballistic nylon",
+    "ceramic-composite trauma plates",
+    "integrated ballistic neck brace",
+    "micro-chiller cooling tube network",
+    "Velcro-sealed plate access panels",
+    "anti-blast overpressure foam lining"
+  ],
+  "functionality": "Rated for fragmentation and overpressure from devices up to Class-4 detonation at 1.5m standoff. Micro-chiller sustains safe internal temperature for 90-minute operational windows. Spinal rig channel allows limited BCI integration for remote sensor feeds. Mobility is severely restricted — suit weight is 34kg without helmet.",
+  "what_it_says": "You walk toward the thing everyone else is running from, and the city pays you just enough to almost feel worth it.",
+  "worn_by": [
+    "corporate EOD specialists",
+    "CorpSec bomb disposal teams",
+    "high-clearance infrastructure security contractors",
+    "black-site ordnance technicians"
+  ],
+  "manufacturer": "Kestrel Dynamics (Corponation — defense subsidiary)",
+  "price_range": "Φ18,000–Φ34,000",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A BlastSeal recovered from a CorpSec depot has had its serial number ground off and a Shelf gang's territorial mark scratched into the collar ring — someone stole it, and they're using it for something other than bomb disposal.",
+    "The micro-chiller spine unit is a known point of failure — a coolant leak at 60 minutes has killed three technicians; Kestrel has suppressed the maintenance reports.",
+    "An EOD specialist who survived a Class-5 detonation in this suit claims the ceramic plates fused to her chrome arm — the suit saved her life and cost her the limb."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "blast-suit",
+    "EOD",
+    "ballistic",
+    "tier-4",
+    "full-body",
+    "aug-compatible",
+    "corponation-issued",
+    "high-value"
+  ],
+  "parent_corponation": ""
+}

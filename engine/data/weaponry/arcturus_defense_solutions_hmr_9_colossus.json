@@ -1,0 +1,45 @@
+{
+  "id": "a3f7c2d1e8b04596f1a2c3d4e5f67890",
+  "name": "Arcturus Defense Solutions HMR-9 'Colossus'",
+  "type": "weapon",
+  "aliases": [
+    "Colossus",
+    "the Hammer",
+    "Big Blue"
+  ],
+  "category": "melee",
+  "description": "The HMR-9 'Colossus' is a two-handed shock maul developed by Arcturus Defense Solutions for riot suppression, anti-materiel interdiction, and hardened-target neutralization. At 1.4 meters in length and weighing 7.2 kilograms, the Colossus is built around a tungsten-alloy striking head housing a quad-cell capacitor bank capable of storing up to 800,000 volts. A single full-charge strike against a human target delivers neuromuscular incapacitation severe enough to be indistinguishable from cardiac arrest; against light vehicles, the discharge is sufficient to fuse ignition systems, detonate fuel cell regulators, and permanently disable onboard electronics through induced voltage spikes.\n\nThe HMR-9 was originally fielded by Arcturus's own internal enforcement divisions for use against fortified Tier 1 barricades and armored vehicles during the 2194 Shelf Uprising, where standard shock batons proved ineffective against crowds using salvaged construction exo-frames. Field reports from that deployment noted that a single Colossus strike to the chassis of a jury-rigged personnel carrier caused total drive failure and secondary electrical fire. Arcturus subsequently made the HMR-9 available to licensed municipal enforcement contractors with appropriate use-of-force documentation.\n\nThe weapon has attracted sustained criticism from civil rights organizations, who argue that the 'less-lethal' designation is functionally inaccurate — documented fatality rates in individuals with cardiac implants, BCI systems, or sub-dermal chrome reach approximately 23% per full-charge strike. Arcturus's official position is that the HMR-9 is 'operator-calibrated' and that full-charge deployment against augmented individuals requires supervisor authorization under their published use-of-force protocols, a policy enforcement advocates describe as 'unverifiable in the field.'",
+  "manufacturer": "Blackwood Commercial Group",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — heavy-discharge maul; requires municipal enforcement contract or licensed security certification; private ownership prohibited in most Meridian districts",
+  "base_technologies": [
+    "high-density capacitor array",
+    "tungsten-alloy impact head",
+    "charge-state display",
+    "insulated composite grip"
+  ],
+  "specifications": "Length: 1.4 m\nWeight: 7.2 kg\nDischarge Voltage: Up to 800,000 V (adjustable: 200kV / 500kV / 800kV)\nCapacitor Recharge Time: 4 seconds (full charge)\nContinuous Strike Mode: 12 consecutive low-charge strikes before recharge required\nBattery Life: 40 full-charge strikes per power cell\nPower Cell: ADS ProCell-8 (proprietary)\nStrike Head Material: Tungsten-carbide composite\nGrip: Two-hand insulated polymer, anti-vibration dampening\nAnti-Vehicle Rating: Light vehicle electronics, fuel cell regulators\nOperating Temperature: -30°C to +65°C",
+  "tactical_use": "The Colossus is typically deployed by two-person enforcement teams — one operator wielding the maul, one providing cover or crowd management. In vehicle interdiction, a single overhead strike to the hood or door panel of a civilian transport is sufficient to trigger cascading electrical failure. Against personnel, operators are trained to use low-charge settings for standard crowd suppression and reserve full-charge for armored or exo-frame-equipped targets. The weight and swing arc require training; an untrained user risks overextension, making it a poor improvised weapon despite its fearsome reputation.",
+  "cultural_context": "On the Shelf, the Colossus is called 'Big Blue' — the color of the arc discharge at full charge. It carries a specific dread reputation distinct from ordinary batons; being hit by a standard baton is a common enough experience in Tier 1 that it barely registers as noteworthy, but 'they called in a Big Blue' signals a qualitatively different level of force. Among enforcement personnel, carrying one is a status marker — it means your unit is rated for anti-vehicle ops. Activists have taken to documenting every deployment with the phrase 'Colossus on the ground' as a live alert signal on encrypted mesh boards.",
+  "known_users": [
+    "Arcturus Defense Solutions enforcement divisions",
+    "licensed Meridian municipal security contractors",
+    "private industrial security at high-value infrastructure sites"
+  ],
+  "story_hooks": [
+    "A Colossus-wielding enforcement officer is found dead in a Tier 1 access tunnel — the maul's discharge log shows it was fired seventeen times in ninety seconds, far beyond any standard engagement, and the last strike was directed upward at a drainage grate leading to a Tier 3 residential block."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "electric",
+    "two-handed",
+    "anti-vehicle",
+    "riot-control",
+    "heavy",
+    "enforcement"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

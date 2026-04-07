@@ -1,0 +1,61 @@
+{
+  "id": "c84b2f0e5d71a39c1e6f804b2d953a70",
+  "name": "UNKNOWN ORIGIN GhostMind Signal Veil Anti-Surveillance BCI",
+  "brand_name": "UNKNOWN ORIGIN",
+  "product_name": "GhostMind Signal Veil Anti-Surveillance BCI",
+  "type": "cyberware",
+  "aliases": [
+    "the Veil",
+    "GhostMind",
+    "Signal Coffin",
+    "Null-Crown"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The GhostMind Signal Veil is a clandestinely manufactured anti-surveillance BCI circulating in Meridian 88's gray and black markets, designed to deny, spoof, and actively corrupt the neural monitoring infrastructure that permeates the city's corporate and civic zones. At its core, the device runs a dual-layer countermeasure architecture: a passive Faraday mesh woven into the implant's outer housing attenuates ambient neural scan emissions by 94%, while an active spoofing array — driven by a custom FPGA running the community-developed NullOS firmware — broadcasts synthetic neural signature noise calibrated to register as an unremarkable civilian profile on standard BCI monitoring arrays. The device additionally includes a feed-injection module capable of inserting pre-recorded 'ghost sessions' into civic neural-ID verification checkpoints, allowing the user to pass identity sweeps with a fabricated but internally consistent neural fingerprint. Hardware origin is deliberately obfuscated; components are sourced from at least seven different legitimate manufacturers and assembled by an unknown collective referred to in underground forums only as 'the Null Workshop.'\n\nThe GhostMind occupies a contested moral and legal space in Meridian 88. Among privacy advocates, journalists operating under corporate suppression, political dissidents, and residents of surveilled arcology tiers, it is considered essential infrastructure — the only reliable means of existing in public space without contributing to the omnipresent neural data harvest that feeds corporate behavioral markets. Law enforcement and the Bureau of Neural Welfare classify it as a Restricted device, citing its capacity to defeat emergency neural-ID protocols used in missing-persons cases and medical emergencies. On the street, it carries a mythology disproportionate to its actual install base: the Veil is said to be worn by the city's most dangerous fixers, by at least two sitting corporate board members, and by the anonymous collective of activists known as the Open Skull Front. Its actual install base is unknown, which is, by design, the point.",
+  "manufacturer": "UNKNOWN ORIGIN",
+  "tier_availability": "Tier 3–4",
+  "legality": "Restricted — possession is a Class 3 misdemeanor in Central Districts; Class 1 felony within designated Corporate Security Zones; actively hunted by Bureau of Neural Welfare enforcement units; gray market in Outer Rings where enforcement is irregular",
+  "installation_requirements": "No licensed facility will perform installation; requires underground ripperdoc with RF shielding capability; installation must be performed in a signal-isolated environment to prevent detection during procedure; typical install time 4–6 hours",
+  "rejection_risk": "Moderate-high (14–19%) — uncontrolled manufacturing tolerances and lack of biocompatibility certification; significant variance between production batches; no post-install support infrastructure",
+  "maintenance": "Community firmware updates via encrypted dead-drop channels (NullOS update cycle irregular, typically monthly); hardware has no sanctioned maintenance pathway; users advised to establish relationship with trusted underground technician; estimated functional lifespan 3–5 years before hardware degradation",
+  "specifications": "{\"passive_attenuation\": \"Faraday mesh, 94% neural scan emission reduction\", \"active_spoofing\": \"custom FPGA + NullOS firmware, synthetic neural signature broadcast\", \"spoofing_profiles\": \"up to 12 stored ghost identities\", \"feed_injection\": \"civic neural-ID checkpoint ghost session insertion\", \"detection_resistance\": \"defeats standard Tier 1-3 scanning arrays; partial resistance to Tier 4 military-grade scanners\", \"hardware_origin\": \"multi-source obfuscated components, no single traceable manufacturer\", \"os\": \"NullOS community firmware (open source, encrypted repository)\", \"power_source\": \"dual micro-cell array, inductive charging via modified civilian pad\", \"form_factor\": \"mimics civilian BCI profile on external scan\", \"batch_variance\": \"high — no quality standardization between production runs\"}",
+  "side_effects": [
+    "Persistent low-grade electromagnetic interference with nearby consumer electronics — users learn to keep distance from sensitive equipment",
+    "NullOS firmware conflicts occasionally cause intrusive signal bleed, perceived as faint phantom audio or visual static at the periphery of consciousness",
+    "Documented cases of ghost-session desynchronization — the device briefly broadcasts conflicting identity signatures, creating a detectable anomaly that experienced Bureau scanners can flag",
+    "Psychological effect of sustained signal isolation reported by some users as a profound and disorienting sense of 'neural loneliness' — the absence of ambient mesh connectivity felt as sensory deprivation"
+  ],
+  "cultural_context": "The GhostMind has become a symbol of resistance in Meridian 88's dissident communities. Wearing one — or claiming to — is a political statement as much as a practical choice. The Open Skull Front distributes installation guides in public spaces as acts of civil disobedience, and Bureau of Neural Welfare crackdowns on underground ripperdocs who install the Veil have become flashpoints for broader protests about neural surveillance rights. Paradoxically, rumors persist that several senior Bureau officials wear modified versions of the device themselves.",
+  "known_users": [
+    "Political dissidents, journalists, and privacy activists",
+    "High-value criminal operatives and fixers requiring identity concealment",
+    "Corporate whistleblowers and defectors",
+    "Members of the Open Skull Front activist collective"
+  ],
+  "story_hooks": [
+    "A Bureau of Neural Welfare investigator hires the party to trace the Null Workshop supply chain — but the investigation reveals the Workshop is being protected by a powerful corporate interest that benefits from having untraceable neural signatures available for its own covert operatives",
+    "A new batch of GhostMind units circulating in the Outer Rings contains a hidden secondary function: rather than merely spoofing the user's identity, it is quietly transmitting aggregated neural data to an unknown recipient — someone has compromised the supply chain and turned the privacy device into a surveillance tool",
+    "A client with a GhostMind installed has been flagged by Bureau scanners despite the device functioning correctly — suggesting someone has developed a Tier 5 scanning protocol that breaks the Veil, and word getting out could endanger hundreds of users who believe themselves protected"
+  ],
+  "street_price": "Φ9,500",
+  "licensed_price": "Φ0 — no licensed market exists",
+  "tags": [
+    "cyberware",
+    "bci",
+    "anti-surveillance",
+    "privacy",
+    "signal-spoofing",
+    "black-market",
+    "gray-market",
+    "unknown-origin",
+    "tier3",
+    "tier4",
+    "restricted",
+    "illegal",
+    "dissident",
+    "identity-masking",
+    "specialized"
+  ],
+  "parent_corponation": ""
+}

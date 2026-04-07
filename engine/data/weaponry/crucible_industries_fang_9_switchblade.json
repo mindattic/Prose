@@ -1,0 +1,47 @@
+{
+  "id": "6ada0451052432bf26ae7e787edb1e8f",
+  "name": "Crucible Industries Fang-9 'Switchblade'",
+  "type": "weapon",
+  "aliases": [
+    "Switchblade",
+    "Fang Nine",
+    "The Fang"
+  ],
+  "category": "pistol",
+  "description": "The Crucible Industries Fang-9 is a machine pistol chambered in 9x19mm with a selector switch offering semi-automatic and three-round burst fire modes. The weapon features a folding foregrip, a ported barrel to reduce muzzle climb, and an extended thirty-round magazine that protrudes well below the grip. The overall profile is aggressive and distinctly non-civilian.\n\nThe Switchblade is what happens when Crucible Industries decides to make a pistol for people who expect to be outnumbered. The three-round burst mode delivers a tight cluster at close range — approximately a four-centimeter spread at five meters — that can defeat soft body armor through sheer round concentration. The folding foregrip provides just enough control to keep bursts on target out to fifteen meters.\n\nCrucible markets the Fang-9 exclusively to licensed security contractors and corponation enforcement arms. The reality is more complicated — the weapon's popularity on the black market rivals its legitimate sales. Its compact size, burst capability, and intimidation factor make it a favorite among organized crime enforcers who can afford the premium over conventional pistols.",
+  "manufacturer": "Rootstock Brewing",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — contractor license required; burst mode prohibited for civilian ownership",
+  "base_technologies": [
+    "Select-fire mechanism",
+    "Ported barrel",
+    "Folding foregrip",
+    "Extended magazine well"
+  ],
+  "specifications": "caliber: 9x19mm\neffective_range: 35 meters (semi), 15 meters (burst)\nrate_of_fire: Semi-automatic / 3-round burst\nmagazine_capacity: 30 rounds\nweight: 0.98 kg (with loaded magazine)",
+  "tactical_use": "A compact select-fire weapon for close-quarters engagements where volume of fire matters. The burst mode is devastating at room-clearing distances but wastes ammunition rapidly. Best deployed in confined spaces by operators comfortable with aggressive recoil management. The extended magazine provides sustained fire capability unusual for a pistol-class weapon.",
+  "cultural_context": "The Switchblade is a prestige weapon in criminal circles — owning one signals access to restricted military-grade equipment and the connections to acquire it. In legitimate security circles, it signals that your employer expects you to face threats that a standard pistol cannot handle. Either way, pulling a Fang-9 changes the temperature of any room.",
+  "known_users": [
+    "Licensed security contractors",
+    "Organized crime enforcers",
+    "Corponation rapid-response teams",
+    "Black market collectors"
+  ],
+  "story_hooks": [
+    "A Fang-9 with its burst limiter removed — now capable of full automatic fire — is being used in a series of brazen daylight robberies in the Mids.",
+    "Crucible Industries hires the players to trace a pipeline of stolen Fang-9s that are appearing in Shelf gang territory at suspiciously low prices."
+  ],
+  "ammunition_type": [
+    "9x19mm"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "machine_pistol",
+    "burst_fire",
+    "restricted",
+    "aggressive",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

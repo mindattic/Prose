@@ -23,12 +23,262 @@
   "tags": [
     "violence",
     "weapon",
-    "war",
     "bci",
-    "ai",
     "corporate",
     "contract",
     "control",
     "market"
+  ],
+  "subsidiaries": [
+    {
+      "name": "Arcturus Training Academy",
+      "line_of_business": "Private military education and officer certification programs",
+      "public_facing": false
+    },
+    {
+      "name": "Ironside Armaments",
+      "line_of_business": "Small arms and personal weapon systems manufacturing",
+      "public_facing": false
+    },
+    {
+      "name": "Meridian Neural Defense",
+      "line_of_business": "Military-grade BCI hardening and counter-intrusion firmware",
+      "public_facing": false
+    },
+    {
+      "name": "Murmuration Systems",
+      "line_of_business": "Autonomous drone swarm platforms and perimeter defense networks",
+      "public_facing": false
+    },
+    {
+      "name": "Sentinel Orbital Security",
+      "line_of_business": "Armed satellite constellation operations and orbital defense",
+      "public_facing": false
+    },
+    {
+      "name": "Forge Strategic Consulting",
+      "line_of_business": "Corporate and sovereign security doctrine development",
+      "public_facing": false
+    },
+    {
+      "name": "Harwell Logistics Group",
+      "line_of_business": "Military-scale supply chain and forward operating base provisioning",
+      "public_facing": false
+    },
+    {
+      "name": "Iron Point Ammunition",
+      "line_of_business": "Munitions manufacturing for small arms through vehicle-mounted systems",
+      "public_facing": false
+    },
+    {
+      "name": "Aegis Vehicle Works",
+      "line_of_business": "Armored personnel carriers, tactical transports, and autonomous ground platforms",
+      "public_facing": false
+    },
+    {
+      "name": "Prevail Medical Systems",
+      "line_of_business": "Battlefield trauma kits, field surgical suites, and combat medic augmentation",
+      "public_facing": false
+    },
+    {
+      "name": "Okoye Risk Analytics",
+      "line_of_business": "Threat prediction modeling and behavioral futures for the ATPM exchange",
+      "public_facing": false
+    },
+    {
+      "name": "Three Ps Insurance Syndicate",
+      "line_of_business": "Sovereign zone liability coverage and contractor death-and-dismemberment policies",
+      "public_facing": false
+    },
+    {
+      "name": "Blackwood Commercial Group",
+      "line_of_business": "Weapons export licensing, international arms sales brokerage",
+      "public_facing": false
+    },
+    {
+      "name": "Djibouti Dry Dock Holdings",
+      "line_of_business": "Naval vessel maintenance and maritime staging operations",
+      "public_facing": false
+    },
+    {
+      "name": "Corridor Defense Networks",
+      "line_of_business": "Electronic warfare systems, signal jamming, and communications security",
+      "public_facing": false
+    },
+    {
+      "name": "Castellan Perimeter Solutions",
+      "line_of_business": "Automated wall systems, sensor fencing, and sovereign border infrastructure",
+      "public_facing": false
+    },
+    {
+      "name": "Vanguard Exoskeletal",
+      "line_of_business": "Powered armor systems for military and industrial applications",
+      "public_facing": false
+    },
+    {
+      "name": "Raptor Aerospace Division",
+      "line_of_business": "Combat drone airframes and autonomous aerial strike platforms",
+      "public_facing": false
+    },
+    {
+      "name": "Overwatch Reconnaissance",
+      "line_of_business": "ISR satellite tasking, long-range surveillance, and intelligence gathering",
+      "public_facing": false
+    },
+    {
+      "name": "Bulwark Cybersecurity",
+      "line_of_business": "Network defense, intrusion prevention, and sovereign zone digital infrastructure protection",
+      "public_facing": false
+    },
+    {
+      "name": "Cognitive Rehabilitation Partners LLC",
+      "line_of_business": "Prison-based medical research participation program administration",
+      "public_facing": false
+    },
+    {
+      "name": "Reclamation Zone Services Inc",
+      "line_of_business": "Failed-state infrastructure reconstruction and resource extraction management",
+      "public_facing": false
+    },
+    {
+      "name": "Meridian Group Holdings",
+      "line_of_business": "Classified operations financial management and contract disbursement",
+      "public_facing": false
+    },
+    {
+      "name": "PMC Indemnity Corp",
+      "line_of_business": "Legal liability shield for private military contractor operations in ungoverned zones",
+      "public_facing": false
+    },
+    {
+      "name": "Autonomous Engagement Solutions LLC",
+      "line_of_business": "Drone kill-chain authorization protocol licensing and compliance documentation",
+      "public_facing": false
+    },
+    {
+      "name": "Stability Operations Trust",
+      "line_of_business": "Territorial concession management and resource rights administration",
+      "public_facing": false
+    },
+    {
+      "name": "Arcturus Humanitarian Foundation",
+      "line_of_business": "PR-facing charitable arm providing medical aid in zones where Arcturus PMCs operate",
+      "public_facing": true
+    },
+    {
+      "name": "Northstar Fitness",
+      "line_of_business": "Chain of high-performance gyms and physical conditioning centers popular with corporate workers",
+      "public_facing": true
+    },
+    {
+      "name": "Persist Energy Drinks",
+      "line_of_business": "Stimulant beverage brand marketed to athletes and night-shift workers",
+      "public_facing": true
+    },
+    {
+      "name": "Hearthstone Home Security",
+      "line_of_business": "Residential alarm systems and neighborhood monitoring packages for civilian homes",
+      "public_facing": true
+    },
+    {
+      "name": "SafePassage Insurance",
+      "line_of_business": "Personal safety and transit insurance for corridor residents traveling through ungoverned zones",
+      "public_facing": true
+    },
+    {
+      "name": "ClearSky Weather Services",
+      "line_of_business": "Atmospheric monitoring network also used for military reconnaissance calibration",
+      "public_facing": true
+    },
+    {
+      "name": "Bright Horizon Childcare",
+      "line_of_business": "Daycare and early education centers in sovereign zones, doubling as employee retention tools",
+      "public_facing": true
+    },
+    {
+      "name": "Summit Outdoor Apparel",
+      "line_of_business": "Rugged civilian clothing brand derived from military uniform textile research",
+      "public_facing": true
+    },
+    {
+      "name": "Lantern Publishing",
+      "line_of_business": "Military history books, tactical fiction, and augmented reality combat simulation entertainment",
+      "public_facing": true
+    },
+    {
+      "name": "Valor Pet Care",
+      "line_of_business": "Veterinary clinics and working animal training, originally for military K-9 units",
+      "public_facing": true
+    },
+    {
+      "name": "Iron Harvest Brewing",
+      "line_of_business": "Craft beer brand operated on the Colorado Springs campus, popular with off-duty personnel",
+      "public_facing": true
+    },
+    {
+      "name": "Kodiak Provisions",
+      "line_of_business": "Shelf-stable field rations repackaged as premium camping and emergency preparedness food",
+      "public_facing": true
+    },
+    {
+      "name": "Watchfire Entertainment",
+      "line_of_business": "Combat simulation gaming studio producing the top-selling tactical shooter franchise globally",
+      "public_facing": true
+    },
+    {
+      "name": "Stronghold Real Estate",
+      "line_of_business": "Residential and commercial property development within Arcturus sovereign zones",
+      "public_facing": true
+    },
+    {
+      "name": "Polaris Navigation Systems",
+      "line_of_business": "Consumer GPS and route-planning apps with military-grade positioning accuracy",
+      "public_facing": true
+    },
+    {
+      "name": "Anvil Materials Science",
+      "line_of_business": "Armor composite and ballistic textile research with civilian industrial applications",
+      "public_facing": false
+    },
+    {
+      "name": "Mensah Protective Equipment",
+      "line_of_business": "Body armor, ballistic helmets, and personal protection gear for private security contractors",
+      "public_facing": false
+    },
+    {
+      "name": "Peregrine Fast Courier",
+      "line_of_business": "Drone-based package delivery leveraging autonomous swarm logistics technology",
+      "public_facing": true
+    },
+    {
+      "name": "Resolve Behavioral Health",
+      "line_of_business": "PTSD treatment and cognitive recovery services for augmented veterans",
+      "public_facing": true
+    },
+    {
+      "name": "Langstrom Applied Research",
+      "line_of_business": "Advanced materials and weapons prototyping lab named after the CTO",
+      "public_facing": false
+    },
+    {
+      "name": "Garrison Infrastructure",
+      "line_of_business": "Construction and maintenance of forward operating bases and sovereign zone facilities",
+      "public_facing": false
+    },
+    {
+      "name": "ADS Financial Services",
+      "line_of_business": "Employee banking, payroll processing, and contractor payment systems",
+      "public_facing": false
+    },
+    {
+      "name": "Bastion Data Centers",
+      "line_of_business": "Hardened server facilities for ATPM exchange and classified intelligence processing",
+      "public_facing": false
+    },
+    {
+      "name": "Sentinel K-9 Services",
+      "line_of_business": "Military and security working dog breeding, training, and deployment",
+      "public_facing": false
+    }
   ]
 }

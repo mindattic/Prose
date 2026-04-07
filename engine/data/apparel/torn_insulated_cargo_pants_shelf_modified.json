@@ -1,0 +1,40 @@
+{
+  "id": "b7f4e2c0a1d9358b7f4e2c0ad193580b",
+  "name": "Torn Insulated Cargo Pants (Shelf Modified)",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Cold-weather cargo pants — originally made for outdoor workers — with the insulation layer partially exposed where the outer shell has torn and been left open or crudely resealed with tape. Bulky, warm, and loud when you walk. Extra cargo pockets have been added at the shin, hand-stitched from salvaged fabric. A Shelf winter staple.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "torn nylon outer shell",
+    "exposed synth-down insulation",
+    "salvaged canvas pocket additions",
+    "peel-and-stick seam tape"
+  ],
+  "functionality": "Provides genuine cold insulation despite cosmetic damage.",
+  "what_it_says": "You're prepared for the Shelf's winters. You adapt before you replace.",
+  "worn_by": [
+    "Shelf residents in winter",
+    "overnight workers",
+    "unhoused individuals"
+  ],
+  "manufacturer": "Unknown (heavily modified from original manufacture)",
+  "price_range": "Φ5 - Φ10",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The insulation layer has something stitched inside it — a document, a keepsake, something the last owner didn't want found easily.",
+    "These pants are recognizable to a specific relief worker who handed them out three winters ago — and is surprised to see them still going."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 1",
+    "insulated",
+    "cargo",
+    "winter",
+    "modified",
+    "shelf"
+  ],
+  "parent_corponation": ""
+}

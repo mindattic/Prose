@@ -1,0 +1,33 @@
+{
+  "name": "TESSERA Genomics Lab Director Coat",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_office_wear",
+  "manufacturer": "TESSERA Biotech",
+  "description": "TESSERA's internal hierarchy is encoded in its lab coats. The Director-grade version is issued upon promotion to senior research staff and is distinct from technician-level coats in several ways that TESSERA employees read instantly: the fabric is a heavier biopel-weave that resists Class 2 biocontaminants without requiring a secondary gown, the cuffs seal with a half-twist magnetic lock rather than elastic, and the TESSERA helix logo at the left breast is rendered in raised iridescent thread rather than flat embroidery. The cut accommodates geneware modifications extensively — the back panel has a structured split seam for wingspan-adjacent modifications, and the collar is designed to sit cleanly against fur-line or scaled skin without bunching. Internal pockets are RFID-isolated, a requirement for anyone handling proprietary sequence data.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ310",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "TESSERA employees wear their coat grade like a rank insignia. Technicians know not to approach a Director coat without being addressed first. Outside TESSERA facilities, the coat reads as significant biotech affiliation and draws both deference and suspicion depending on the neighborhood.",
+  "story_hooks": [
+    "A Director coat reported stolen three months ago is still being worn by someone who has been successfully impersonating a TESSERA senior researcher — the RFID pocket lining is what's kept them undetected.",
+    "The iridescent thread in the logo of a specific production run contains a passive data-capture filament, the result of a Vantablack supply-chain insertion.",
+    "A recently demoted researcher refuses to return their Director coat and has been seen in it in Tier 2 bars, where it buys them drinks and dangerous conversations."
+  ],
+  "tags": [
+    "tessera",
+    "biotech",
+    "lab-coat",
+    "director-grade",
+    "biohazard-resistant",
+    "geneware-compatible",
+    "corporate",
+    "research",
+    "hierarchy-marker"
+  ],
+  "id": "1d8202713cd245a2a60a96861ac30b7d",
+  "parent_corponation": "Tessera Corponation"
+}

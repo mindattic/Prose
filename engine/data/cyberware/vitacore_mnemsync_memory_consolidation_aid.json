@@ -1,0 +1,57 @@
+{
+  "id": "b56f3a017e8c4d29f1743a8c5e902b17",
+  "name": "VitaCore MnemSync Memory Consolidation Aid",
+  "brand_name": "VitaCore",
+  "product_name": "MnemSync",
+  "type": "cyberware",
+  "aliases": [
+    "the anchor",
+    "sticky brain",
+    "total recall (inaccurate but common)",
+    "sync chip",
+    "the shelf"
+  ],
+  "category": "cognitive",
+  "body_location": "cranial — hippocampal interface, subdermal temporal plate",
+  "description": "The MnemSync is a hippocampal-adjacent interface implant that enhances the brain's natural memory consolidation processes rather than replacing them. During waking hours, the implant monitors attentional tagging — the neurochemical signals the brain uses to flag experiences as worth encoding — and amplifies the strength of those tags for events the user has consciously or semiconsciously prioritized. During sleep, when the hippocampus performs its standard overnight consolidation of short-term to long-term memory, the MnemSync applies a mild synchronized low-frequency pulse pattern that deepens synaptic potentiation in targeted memory traces. The result is not perfect photographic recall — VitaCore is careful and legally required to be clear about this — but a measurably improved retrieval success rate, faster associative recall, and a reduction in the frustrating tip-of-tongue retrieval failures that characterize average human memory. Users describe it as remembering the way they always wished they did: not a superpower, but the absence of a familiar weakness. A paired waking-attention mode allows users to manually 'flag' a moment or conversation for priority consolidation using a simple subvocal trigger.\n\nThe MnemSync's user base is broad and largely unglamorous — it is the implant of people who cannot afford to forget. Paralegals who need to recall verbatim client statements, nurses tracking complex medication interactions across long shifts, students in technical certification programs, and small-business owners managing supplier relationships and inventory by memory alone. In Tier 1 communities, where written records are sometimes inaccessible, unreliable, or dangerous to keep, strong personal recall carries real survival value. The implant is also quietly popular among older adults in Tier 2 and Tier 3 who want to maintain cognitive sharpness into their seventies and eighties — VitaCore markets a senior-optimized variant called the MnemSync Clarity that emphasizes preventive maintenance against age-related consolidation decline.",
+  "manufacturer": "VITACORE HEALTH SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic; 75-minute procedure; no specialist required beyond licensed implant technician; same-day discharge",
+  "rejection_risk": "Low",
+  "maintenance": "Annual firmware update (over-the-air); subdermal temporal plate checked every 2 years for micro-migration; no battery replacement (thermoelectric powered)",
+  "specifications": "{\"target_region\": \"hippocampus adjacent\", \"consolidation_enhancement\": \"sleep-phase synchronized pulse\", \"waking_mode\": \"manual priority flagging via subvocal trigger\", \"recall_improvement\": \"38-61% retrieval success rate improvement (clinical average)\", \"senior_variant\": \"MnemSync Clarity\", \"power_source\": \"thermoelectric\", \"flag_capacity\": \"unlimited (cloud-synced index)\", \"contraindications\": \"active seizure disorders, certain prior neural trauma\"}",
+  "side_effects": [
+    "Consolidation pulse during sleep can cause unusually vivid or emotionally intense dreams, particularly in the first month",
+    "Some users report that flagged memories feel 'brighter' or more emotionally weighted than unflagged ones, occasionally making routine flagged moments feel disproportionately significant in retrospect",
+    "Mild temporal-region warmth during sleep-phase operation — most users habituate within two weeks",
+    "Rare: over-consolidation of traumatic or high-stress events flagged during acute distress; VitaCore recommends against using the manual flag trigger during crisis situations"
+  ],
+  "cultural_context": "The MnemSync doesn't carry the status weight of flashier cognitive implants — it doesn't make you smarter in ways others can see, and it doesn't announce itself. This invisibility is part of its social texture: it's the implant people have quietly, practically, without making a statement about it. In working-class Tier 1 and Tier 2 communities, it carries a gentle dignity — the implant of people taking their lives seriously, doing the work. The senior-market Clarity variant has reshaped how Meridian 88 thinks about aging; the image of a seventy-year-old grandmother with a MnemSync running her neighborhood mutual aid network from memory is a common cultural touchstone in Shelf community storytelling. There is a small ethical debate — mostly in academic circles — about whether enhanced individual recall creates social friction in communities where shared misremembering has historically served as collective emotional protection.",
+  "known_users": [
+    "Paralegals, legal aid workers, and court advocates",
+    "Nurses, pharmacy techs, and home care workers managing complex medical information",
+    "Students in technical, medical, or legal certification programs",
+    "Small-business owners, market traders, and independent contractors",
+    "Older adults using it for preventive cognitive maintenance",
+    "Shelf-tier community organizers and mutual aid coordinators who cannot safely keep written records"
+  ],
+  "story_hooks": [
+    "A witness to a corporate crime has a MnemSync — meaning their testimony is neurologically verifiable as accurately consolidated rather than confabulated — and a corponation legal team is trying to find a way to discredit the implant's data integrity before trial",
+    "A player character with a MnemSync begins retrieving a memory they never consciously flagged — a face, a room, a phrase — surfacing repeatedly during sleep consolidation cycles, suggesting they witnessed something their conscious mind never acknowledged",
+    "A black-market MnemSync variant is circulating on the Shelf that doesn't just consolidate the user's memories — it also passively indexes and transmits flagged memory signatures to an unknown receiver"
+  ],
+  "street_price": "Φ220–Φ380",
+  "licensed_price": "Φ590 at VitaCore wellness clinics; MnemSync Clarity senior variant Φ710",
+  "tags": [
+    "cyberware",
+    "cognitive",
+    "lifestyle",
+    "memory",
+    "recall",
+    "consolidation",
+    "working-class",
+    "senior-market"
+  ],
+  "parent_corponation": ""
+}

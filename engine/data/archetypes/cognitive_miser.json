@@ -1,0 +1,33 @@
+{
+  "id": "59ea52cc465aa7b9aec8c5ff68b67b91",
+  "name": "Cognitive Miser",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Uses the least possible thought to reach a good-enough answer",
+  "behavioral_signature": "Relies on heuristics, shortcuts, and rules of thumb",
+  "under_stress": "Shortcuts become dangerous oversimplifications",
+  "at_rest": "Efficient, practical, never overthinks",
+  "will_always": [
+    "find the simplest adequate explanation"
+  ],
+  "will_never": [
+    "invest deep thought when a shortcut exists"
+  ],
+  "unless": [
+    "the stakes are high enough to justify the mental effort"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Street Smart",
+      "threshold": 0.7,
+      "context": "practical shortcuts"
+    }
+  ],
+  "opposite_of": [
+    "Overthinker"
+  ],
+  "tags": [
+    "efficient",
+    "heuristic"
+  ]
+}

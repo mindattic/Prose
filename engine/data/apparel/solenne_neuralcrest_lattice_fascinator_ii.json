@@ -1,0 +1,47 @@
+{
+  "id": "1a2b3c4d5e6f7890abcdef1234567890",
+  "name": "Solenne Neuralcrest Lattice Fascinator II",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A sculptural Spire-tier fascinator built around exposed neural-port hardware as the centerpiece of the design. The base is hand-formed iridescent bioresin — shifting from deep violet to pale gold depending on angle — mounted on a swept platinum wire frame that clips invisibly into the hair or scalp anchors. Radiating from the port hub, articulated filaments of gold-tone chromalloy wire extend in an asymmetric lattice, tipped with micro-droplets of cultured bioluminescent pearl.\n\nThe piece actively integrates with BCI hardware: the lattice filaments carry passive signal-routing capacity, functioning as a short-range social BCI relay while broadcasting the wearer's preferred public identity tag to nearby compatible devices. Couture-made. No two are identical.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "iridescent bioresin",
+    "platinum-alloy wire frame",
+    "chromalloy lattice filaments",
+    "cultured bioluminescent pearl drops",
+    "scalp-anchor magnetic base"
+  ],
+  "functionality": "Passive BCI social relay via chromalloy lattice: broadcasts identity tag, preferred contact protocols, and status tier to nearby BCI-enabled individuals. Scalp-anchor mounting is compatible with port-adjacent chrome hardware. Bioluminescent pearl elements glow faintly in low light without power draw.",
+  "what_it_says": "Your neural hardware is not hidden — it is the jewel, and everyone in the room is already receiving your signal.",
+  "worn_by": [
+    "Spire-tier executives",
+    "corponation board members",
+    "old-money power brokers",
+    "elite social figures with visible BCI hardware"
+  ],
+  "manufacturer": "Solenne",
+  "price_range": "Φ4,200–Φ11,000",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Solenne Lattice II was found in a Tier 2 pawn shop — the identity tag still broadcast, and it belongs to someone officially listed as deceased.",
+    "The passive relay function has an undocumented secondary mode: it logs every BCI identifier within six meters, and Solenne's data arm has been quietly selling the records.",
+    "A Spire gala guest's fascinator began broadcasting a distress-coded identity tag mid-event — no one in the room admitted to noticing, but three people left early."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "fascinator",
+    "neural-port",
+    "BCI-compatible",
+    "aug-compatible",
+    "tier-5",
+    "spire",
+    "couture",
+    "bioluminescent",
+    "luxury",
+    "corponation"
+  ],
+  "parent_corponation": ""
+}

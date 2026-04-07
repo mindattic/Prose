@@ -526,4 +526,7 @@ internal class RealDataPathProvider : IPathProvider
     public string WorldDir => Path.Combine(root, "world");
     public string FacetsDir => Path.Combine(root, "character", "facets");
     public string GraphDir => Path.Combine(engineData, "graph");
+    public string LogDir => Path.Combine(root, "logs");
+    public string ExportDir => Path.Combine(root, "exports");
+    public string ArchiveDir => Path.Combine(root, "archives");
 }

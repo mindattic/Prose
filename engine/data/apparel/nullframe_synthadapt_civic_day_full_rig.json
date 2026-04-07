@@ -1,0 +1,44 @@
+{
+  "id": "f1c3e7a5d2b0984af1c3e7a5d2b0984a",
+  "name": "Nullframe SynthAdapt Civic Day Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Designed for synthetic body proportions — elongated limb ratios, non-standard torso geometry, and sensor-cluster placement at skull and shoulders. A modular wrap-front overshirt in warm ochre structural jersey closes with magnetic tension bands rather than buttons, draping cleanly over non-human chest geometry. Fluid palazzo trousers in deep indigo with six-panel construction accommodate extended leg ratios. Soft flat-wrap shoes use tension-lace systems for non-standard foot structure.\n\nAll panels are fully detachable at standardized clip points for body modification swaps. The shoulder wrap accommodates external sensor arrays without compression.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "structural jersey fabric",
+    "magnetic tension-band closure",
+    "six-panel fluid drape trouser fabric",
+    "sensor-array-compatible shoulder weave",
+    "tension-lace soft wrap shoe material"
+  ],
+  "functionality": "Magnetic tension closures eliminate button-incompatible areas, six-panel trouser construction fits extended limb ratios, detachable panel clips for body-mod swaps, sensor-array shoulder accommodation, tension-lace shoes fit non-standard foot geometry.",
+  "what_it_says": "I exist in this city on my own terms, and I dressed for exactly the body I have.",
+  "worn_by": [
+    "synthetics navigating civilian spaces",
+    "synthetic-identifying geneware individuals",
+    "non-human-proportion augmented persons"
+  ],
+  "manufacturer": "Nullframe Collective (street label)",
+  "price_range": "Φ700–Φ1,400",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The magnetic closure system uses a frequency that interferes with certain CorpSec scanner arrays — possibly by design.",
+    "Nullframe's pattern-maker is a synthetic who was denied entry to every licensed fashion program in M88; the brand's cult following is quiet but fierce.",
+    "A city council proposal to require synthetics to wear identification bands would render this outfit — and everything it represents — illegal overnight."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "synthetic",
+    "synthetic_adapted",
+    "non_human",
+    "aug_compatible",
+    "gene_compatible",
+    "tier2",
+    "tier3",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

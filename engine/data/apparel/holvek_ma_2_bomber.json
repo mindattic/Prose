@@ -1,0 +1,40 @@
+{
+  "id": "b81e4d3c7a2f96051e3b4d8c7a2f9605",
+  "name": "Holvek MA-2 Bomber",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A civilian reinterpretation of the classic military bomber silhouette — ribbed cuffs and hem, a front zip, slash pockets, and a clean nylon shell in olive, black, or a deep brick red. Holvek is a mid-sized manufacturer based in the Tier 3 commercial district that does honest, unfussy work. The MA-2 is their best-selling jacket by a wide margin. It's not exciting. It fits well, it doesn't cost too much, and it comes in twelve colors.\n\nThe lining is a quilted synthetic insulation that handles Chicago-corridor winters without drama. No tech, no gimmicks. Students, young office workers, and service-sector employees wear it because it looks put-together without announcing any particular affiliation. It's the jacket equivalent of a firm handshake.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "nylon shell",
+    "quilted synthetic insulation lining",
+    "ribbed polyester trim"
+  ],
+  "functionality": "",
+  "what_it_says": "You're practical and presentable. You don't need your jacket to make a statement.",
+  "worn_by": [
+    "university students",
+    "young office workers",
+    "service-sector employees",
+    "Tier 3 generalists"
+  ],
+  "manufacturer": "Holvek",
+  "price_range": "Φ110",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The same jacket in the same color is worn by four different people at a crime scene — none of them know each other, and none of them know why they're there.",
+    "A limited run of the MA-2 was accidentally shipped with an RFID tag that tracks to a classified corponation logistics node.",
+    "A Tier 1 knockoff of the MA-2 is circulating in the Shelf — identical in appearance but the lining contains contraband sewn into flat packets."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "bomber",
+    "everyday",
+    "casual",
+    "nylon"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "c2d8f5a1e3b7094fc6a1d3e9b2f7c40e",
+  "name": "GridPatch Electrical Crew Dayside Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The daily rig of a GridPatch Infrastructure electrical maintenance crew member — the people who keep Meridian's power grid from folding under the city's perpetual load. The foundation is a flame-resistant (FR-rated) work shirt in sun-faded mustard yellow, long-sleeve, with pearl-snap closures rather than metal buttons to reduce arc hazard, double chest pockets with snap flaps, and a GridPatch utility patch embroidered on the left chest. The shirt's right cuff has been pre-modified with a velcro breakaway closure, a standard accommodation for workers with chrome forearm augmentation who need to quickly expose hardware. Over this, a lightweight FR-rated vest in charcoal with a mesh back panel for ventilation, four front pockets, and a broad strip of retroreflective tape across the upper back. The vest's rear collar has a reinforced loop for attaching a hardhat retention strap. Trousers are heavy-duty FR canvas in tan, straight-cut with gusseted crotch for full movement, a hammer loop on the left thigh, and multiple cargo pockets sealed with metal-free hook-and-loop closures. Boots are insulated, dielectric-rated (non-conductive) lace-up work boots in brown leather-analog with a composite (non-metal) toe cap. A yellow hard hat with a GridPatch decal rides on the head on-site, clipped to the vest when off. Nitrile-coated work gloves tuck into the vest pocket when not worn.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "FR-rated synth-cotton (flame resistant)",
+    "FR-rated canvas",
+    "mesh polyblend back panel",
+    "leather-analog boot upper",
+    "composite toe cap",
+    "retroreflective tape",
+    "nitrile-coated knit gloves"
+  ],
+  "functionality": "full flame-resistant construction, dielectric non-conductive boot, composite non-metal toe cap, breakaway velcro cuff for chrome arm accommodation, metal-free hardware throughout to reduce arc hazard, hardhat retention loop, retroreflective hi-vis strip, ventilated vest back panel, tool loops",
+  "what_it_says": "Electrical infrastructure work is one of the more respected Circuit trades — technically demanding and genuinely dangerous. This kit marks the wearer as someone with a specialty, not just a body filling a shift. The sun-faded yellow of the shirt says years on the job; the immaculate condition of the dielectric boots says they haven't gotten careless yet.",
+  "worn_by": [
+    "grid electrical maintenance workers",
+    "power relay technicians",
+    "substation inspection crews",
+    "infrastructure repair specialists"
+  ],
+  "manufacturer": "GridPatch Infrastructure Services (vest, hard hat, gloves — issued) / independent FR workwear suppliers (shirt, trousers, boots — personal purchase, company-spec required)",
+  "price_range": "Φ250–Φ380 (FR-rated materials carry a premium; boots alone Φ90–Φ130)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A crew member's dielectric boots have been tampered with — the non-conductive sole compromised in a way that looks like wear but isn't, and they're scheduled to work a live substation tomorrow.",
+    "The GridPatch vest's pocket contains an inspection report that was never filed — documenting a section of grid infrastructure that is critically degraded and has been signed off as stable by someone up the chain.",
+    "The breakaway cuff on the right sleeve keeps triggering at the wrong moment, exposing a chrome forearm that carries illegal modification — military-grade actuators that no Circuit worker should have."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "electrical",
+    "grid_maintenance",
+    "gridpatch",
+    "flame_resistant",
+    "aug_compatible",
+    "hi_vis",
+    "infrastructure",
+    "hazard_rated"
+  ],
+  "parent_corponation": ""
+}

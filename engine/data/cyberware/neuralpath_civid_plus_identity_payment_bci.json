@@ -1,0 +1,59 @@
+{
+  "id": "2e6b9f1d5c0a4873b9e3f7c2a0d48156",
+  "name": "NeuralPath CivID Plus Identity & Payment BCI",
+  "brand_name": "NeuralPath",
+  "product_name": "CivID Plus Identity & Payment BCI",
+  "type": "cyberware",
+  "aliases": [
+    "CivID",
+    "the Plus",
+    "ID chip",
+    "wallet-brain",
+    "civic socket",
+    "the Mark"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The NeuralPath CivID Plus is a consolidated civic identity and financial integration BCI that combines standard feed access and AR overlay with deep integration into Meridian 88's identity verification infrastructure, payment networks, transit systems, and municipal service access portals. Where general-purpose BCIs treat payment and identity as software features layered onto a mesh, the CivID Plus treats them as primary hardware functions — its dedicated CivCore processing module maintains persistent encrypted handshakes with the city's Identity Authority servers, transit nodes, licensed vendor payment terminals, and benefits distribution systems, enabling frictionless authentication at speeds no software-layer implementation can match. The CivID Plus also includes NeuralPath's BioLock biometric binding system, which cryptographically ties the BCI's identity credentials to the user's unique neurochemical signature, making the unit legally non-transferable and effectively impossible to spoof without the user's physical presence.\n\nThe CivID Plus was developed in partial response to a Meridian 88 municipal initiative to reduce identity fraud and benefits trafficking in Tier 1-2 populations, and the city government offers heavily subsidized installation through public health clinics as part of its civic participation program — a policy that has generated significant controversy. Proponents argue that the CivID Plus gives Tier 1-2 residents faster and more reliable access to the services they need, reduces bureaucratic friction, and cuts down on the predatory identity brokers who exploit documentation gaps in vulnerable communities. Critics, including civil liberties organizations and several Shelf-based community groups, argue that the subsidy program amounts to coercive surveillance infrastructure — that the city is effectively paying poor people to accept permanent biometric tracking in exchange for access to food assistance, transit credits, and municipal housing registries. Despite the controversy, the CivID Plus has achieved enormous market penetration in Tier 2-3 and is the most installed BCI model in the city by unit count.",
+  "manufacturer": "NEURALPATH TECHNOLOGIES INCORPORATED",
+  "tier_availability": "Tier 2-3",
+  "legality": "Unrestricted — municipal subsidy program available for Tier 1-2 residents; BioLock binding is mandatory for subsidized units",
+  "installation_requirements": "Licensed clinic or municipal public health installation center; subsidized units installed at government facilities with mandatory registration; 2-hour procedure",
+  "rejection_risk": "Minimal — simplified mesh footprint; CivCore module uses passive near-cortical placement avoiding deep neural structures",
+  "maintenance": "Identity credential sync automatic via city infrastructure; payment key rotation monthly; annual CivCore integrity audit; BioLock recalibration if neurochemical signature shifts due to major medical events",
+  "specifications": "{\"bandwidth\": \"3.2 Gbps sustained\", \"node_count\": 84, \"ar_resolution\": \"1080p overlay at 60fps\", \"encryption\": \"AES-512 CivCore government-tier / AES-256 general feed\", \"battery_life\": \"Passive inductive; CivCore draws 0.2W continuous\", \"feed_channels\": 8, \"latency\": \"11ms standard / 2ms CivCore identity transactions\", \"identity_systems\": \"MEA ID Authority, Transit Authority, Benefits Registry, Licensed Vendor Network\", \"payment_networks\": \"All Meridian licensed payment rails\", \"biolock\": \"Neurochemical signature binding, legally non-transferable\", \"storage\": \"1.5TB onboard cache\", \"OS\": \"NeuralPath CivOS 3.7\"}",
+  "side_effects": [
+    "Persistent low-level awareness of authentication handshakes — some users describe a faint 'tapping' sensation when the CivCore module exchanges credentials with infrastructure nodes in dense commercial areas",
+    "BioLock binding recalibration failure following major illness or significant neurochemical changes can temporarily lock users out of their own identity credentials, a bureaucratic nightmare that can take weeks to resolve",
+    "Psychological discomfort in users who become aware of the continuous location and transaction data stream the CivCore module generates, sometimes manifesting as paranoia or social withdrawal",
+    "Subsidized units running government firmware have limited customization options, causing frustration and occasional attempts to jailbreak the CivOS layer with mixed and sometimes dangerous results"
+  ],
+  "cultural_context": "The CivID Plus is politically loaded in ways that few consumer BCIs manage. In Tier 3, it is simply the sensible administrative choice — efficient, reliable, well-integrated with daily civic life. In Tier 2, it is common but carries a faint stigma when the subsidized government-firmware version is implied, since the telltale lack of UI customization marks someone as a benefits recipient. On the Shelf, the CivID Plus is a source of deep and genuine ideological conflict: many Tier 1 residents refuse it on principle, maintaining that it is a surveillance collar dressed up as a service, while others accept the subsidy as a pragmatic trade-off for accessing systems that are otherwise inaccessible to the undocumented and the poor. The phrase 'got the Mark' — referencing the BioLock binding — is used on the Shelf as both a neutral descriptor and a mild slur depending on tone and context.",
+  "known_users": [
+    "Tier 2-3 working residents using it for daily transit, payment, and civic access",
+    "Municipal benefits recipients on subsidized installation programs",
+    "Undocumented workers seeking formal civic registration through the subsidy pathway",
+    "Retail and service industry workers whose employers require certified payment integration",
+    "Recent immigrants navigating Meridian 88's civic enrollment systems"
+  ],
+  "story_hooks": [
+    "A flaw in the CivCore authentication protocol allows someone to clone a CivID Plus credential without the BioLock — the exploit is being sold on the Shelf black market, and the city's Identity Authority is quietly hunting for the source while concealing the vulnerability from the public.",
+    "A player character discovers that the subsidized CivID Plus units distributed through a specific municipal clinic contain an undocumented secondary data channel reporting behavioral and location data to a private corponation rather than city servers.",
+    "A community organizer on the Shelf has found a way to spoof the neurochemical BioLock binding, enabling undocumented residents to use CivID Plus credentials without government registration — the players must decide whether to protect this operation or shut it down when both the city and a criminal syndicate come looking."
+  ],
+  "street_price": "Φ1,100",
+  "licensed_price": "Φ2,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "consumer",
+    "civic-identity",
+    "payment-integration",
+    "surveillance",
+    "tier-2",
+    "tier-3",
+    "neuralpath",
+    "mid_range_consumer"
+  ],
+  "parent_corponation": ""
+}

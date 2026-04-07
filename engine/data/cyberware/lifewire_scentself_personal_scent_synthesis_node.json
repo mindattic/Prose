@@ -1,0 +1,56 @@
+{
+  "id": "f5a3d8b2c017e694b82f1a4d703c9e56",
+  "name": "LifeWire ScentSelf Personal Scent Synthesis Node",
+  "brand_name": "LifeWire",
+  "product_name": "ScentSelf",
+  "type": "cyberware",
+  "aliases": [
+    "the perfumer",
+    "scent-skin",
+    "the bloom",
+    "scentnode",
+    "the diffuser",
+    "smellware"
+  ],
+  "category": "cosmetic",
+  "body_location": "subdermal neck (primary diffusion node); secondary nodes optional at wrists and sternum",
+  "description": "The ScentSelf is a subdermal aromatic synthesis implant embedded at the lateral neck, housing a microfluidic synthesis chamber that produces and diffuses custom fragrance compounds through the skin's surface via controlled transdermal permeation. The system synthesizes scent molecules on-demand from a compact precursor reservoir — a small injectable cartridge replaced every 60-90 days — rather than storing pre-made fragrance, allowing for an effectively unlimited palette of scent profiles. Users select from LifeWire's library of over 14,000 catalogued fragrance compositions, or commission custom blends through the ScentSelf companion app's AI scent-building interface. Diffusion intensity is adjustable from 'personal' (detectable only at close range) to 'presence' (a light ambient scent extending roughly one meter), with an automatic dampening mode that responds to crowded or enclosed environments via a small CO2 density sensor. The system can also be set to shift scent profile gradually over time, mimicking the 'top note to base note' evolution of traditional perfumes without any external application.\n\nThe ScentSelf addresses a simple problem: traditional fragrance application is inconsistent, requires daily effort, and degrades unpredictably throughout the day. For many users, the appeal is purely practical — a consistent, controlled personal scent that requires no thought and never fades, never over-applies, never clashes with body chemistry in unexpected ways. For others, the ScentSelf is a genuine identity technology: the ability to have a signature scent as stable and personal as a face. In Meridian 88's dense, layered social environments — transit cars, shared housing blocks, corporate open floors — personal scent is a significant social variable, and the ScentSelf's precision makes it a tool for deliberate self-presentation. Some users maintain multiple saved profiles for different contexts: one for work, one for social evenings, one for intimacy. The cartridge replacement market has spawned a large secondary industry of boutique precursor blenders who sell custom-formulated cartridges outside LifeWire's official catalog.",
+  "manufacturer": "LIFEWIRE CONSUMER BIOTECH CORPORATION",
+  "tier_availability": "Tier 2-4",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or LifeWire retail installation center; 60-minute procedure under local anesthetic; neck and optional wrist/sternum nodes installed in same session",
+  "rejection_risk": "Low",
+  "maintenance": "Precursor cartridge replacement every 60-90 days (injectable, available at pharmacies and LifeWire retail); annual synthesis chamber flush; companion app firmware updates automatic; full node replacement every 8-10 years",
+  "specifications": "{\"synthesis_library\": \"14,000+ catalogued compositions, AI custom blend tool\", \"diffusion_method\": \"controlled transdermal permeation\", \"intensity_range\": \"personal (0.1m) to presence (1.0m)\", \"auto_dampening\": \"CO2 density sensor, crowd-responsive\", \"cartridge_duration\": \"60-90 days typical use at moderate intensity\", \"scent_evolution_mode\": \"programmable top-to-base transition over 2-8 hours\", \"saved_profiles\": \"up to 24 stored on-device\", \"optional_nodes\": \"wrist and sternum secondary diffusion points\", \"custom_cartridge_support\": \"third-party certified cartridges compatible\"}",
+  "side_effects": [
+    "Mild skin warmth at diffusion sites for 1-2 weeks post-installation as permeation channels establish",
+    "Some users experience scent fatigue — reduced personal perception of their own output — requiring periodic recalibration to avoid unconscious intensity increases",
+    "Rare: synthesis chamber contamination from incompatible third-party cartridge compounds producing off-note diffusion, requiring professional flush",
+    "Small number of users develop mild contact sensitivity at the neck node site, managed with anti-inflammatory settings in the companion app"
+  ],
+  "cultural_context": "Personal scent has been a social signal for as long as humans have lived in proximity, and the ScentSelf has simply made that signal programmable. In Meridian 88's culture, a person's ScentSelf profile is considered an intimate detail — asking someone what scent they're running is roughly equivalent to asking about their skincare routine, slightly personal but not rude between acquaintances. The proliferation of ScentSelf has created new social norms around scent in shared spaces: many workplaces and transit systems post 'low-diffusion zone' guidelines, and the automatic dampening mode was added to the ScentSelf in response to early complaints about scent saturation in enclosed environments. The boutique precursor cartridge market has become a significant cultural space — small-batch artisan blenders in Tier 2 and 3 neighborhoods sell custom cartridges the way craft brewers once sold beer, and the practice of gifting a custom-blended cartridge is a recognized romantic gesture. Among Tier 4 and 5 users, bespoke molecular perfumers command extraordinary fees to create signature scents that become as personal as a name.",
+  "known_users": [
+    "Professionals who want consistent, effortless personal presentation",
+    "Social and nightlife-oriented individuals who cycle through scent profiles",
+    "People with sensitivities to traditional topical fragrances",
+    "Tier 4 corporate users for whom a signature scent is a deliberate brand",
+    "Boutique cartridge enthusiasts who treat scent as a collector's hobby"
+  ],
+  "story_hooks": [
+    "A LifeWire ScentSelf cartridge batch has been contaminated at a distribution warehouse — not with something dangerous, but with a synthesis compound that produces a scent identical to a proprietary fragrance owned by a luxury Spire perfume house, and the resulting lawsuit is being used to crack down on the entire boutique cartridge industry",
+    "A corporate spy has been identified by their ScentSelf profile — a distinctive custom blend that appeared in environmental sensors at three separate secure locations — and the players are asked to either protect or expose the person behind that scent",
+    "A Tier 1 community is experiencing an unusual phenomenon: someone is distributing illegally modified ScentSelf cartridges that include trace compounds designed to trigger specific emotional states — mild anxiety, mild euphoria — and the source is somewhere in the neighborhood's black market supply chain"
+  ],
+  "street_price": "ΦΦΦ 320-580 (primary node); wrist/sternum add-ons Φ80 each; cartridges Φ35-80 (official) or Φ15-40 (boutique/third-party)",
+  "licensed_price": "ΦΦΦ 700-1,200 at LifeWire clinics; official cartridge subscription Φ55/month",
+  "tags": [
+    "cyberware",
+    "cosmetic",
+    "lifestyle",
+    "scent",
+    "pheromone-adjacent",
+    "fashion",
+    "personal-identity"
+  ],
+  "parent_corponation": ""
+}

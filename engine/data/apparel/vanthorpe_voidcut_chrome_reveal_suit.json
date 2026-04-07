@@ -1,0 +1,50 @@
+{
+  "id": "e2c8a5f3d7b1094a6e3f2c8d5b7a1e09",
+  "name": "Vanthorpe Voidcut Chrome Reveal Suit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A Tier 4 club and lounge outfit that exists at the exact intersection of corporate authority and deliberate transgression — the kind of suit that reads as professional from across the room and as something more dangerous up close. The jacket is single-button, structured, in deep midnight-blue synth-wool with a subtle self-pattern woven in near-black reactive thread that shifts geometry slowly — so slowly it takes several minutes of observation to confirm it's moving. The lapels are faced in mirror-chrome synth-leather, and the jacket's interior lining is holographic silver, visible as the wearer moves. Both sleeves terminate at the elbow in engineered cutoffs — clean, deliberate, chrome-edged — leaving the forearm fully exposed: for wearers with chrome augmentation this frames the hardware precisely; for those without it reads as equally intentional minimalism. A fitted high-collar shirt underneath is sheer black with a structured front placket, the collar designed with a wide notch at the back for neural port access. Trousers are slim, midnight-blue synth-wool matching the jacket, with a single holographic silver stripe down each outer seam that activates under UV. Footwear is clean, pointed ankle boots in mirror-chrome synth-leather matching the lapels. A single signet ring with a deep blue bioluminescent stone — dim but unmistakable — and no other accessories. The restraint is the statement.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "synth-wool",
+    "reactive thread",
+    "mirror-chrome synth-leather",
+    "holographic silver lining fabric",
+    "sheer black stretch fabric",
+    "bioluminescent stone"
+  ],
+  "functionality": "Engineered elbow cutoffs with chrome-edged finish designed for chrome forearm and hand augment display. High-collar back notch provides clean neural port access. Reactive thread pattern in jacket fabric is passive — no power source, shifts via ambient temperature differential. Holographic silver trouser stripe is UV-activated. Interior lining is signal-diffuse, providing mild BCI privacy shielding in close contact.",
+  "what_it_says": "You belong in the Spire lounges but you chose to come down one tier tonight because you wanted to be the most dangerous-looking person in the room without trying. The chrome edges on your jacket sleeves cost more than most people's rent and you cut the sleeves off yourself.",
+  "worn_by": [
+    "Tier 4 junior executives",
+    "augmentation specialists",
+    "corponation legal and compliance officers off-duty",
+    "Tier 3 professionals with Tier 4 aspirations and the budget to match",
+    "chrome-augmented professionals who use their hardware as social currency"
+  ],
+  "manufacturer": "Vanthorpe — Tier 4 tailoring house, bespoke and small production runs",
+  "price_range": "Φ 1,100 – Φ 1,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The BCI privacy shielding in the jacket lining is not incidental — a Vanthorpe production insider reveals that a specific run of these jackets was commissioned by a corponation security division to create a wearable dead zone for clandestine meetings, and the buyer list is sealed.",
+    "Two people at the same Tier 4 lounge are wearing identical Vanthorpe suits — which should be impossible given the bespoke production model. One of them is not who they claim to be.",
+    "The bioluminescent stone in the signet ring is a geneware-derived biological gem — grown, not manufactured — and a Shelf biosalvage crew has identified it as cut from a source they know, a source that is supposed to be a protected person."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "nightlife_club",
+    "tier 4",
+    "corporate",
+    "chrome_display",
+    "aug_compatible",
+    "synth_wool",
+    "holographic",
+    "tailored",
+    "lounge",
+    "vanthorpe",
+    "reactive_fabric"
+  ],
+  "parent_corponation": ""
+}

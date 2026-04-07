@@ -1,0 +1,47 @@
+{
+  "id": "a3f7c2e1b8d94f6a0c5e2d7b1a9f3c08",
+  "name": "The Crucible",
+  "type": "entertainment",
+  "category": "venue",
+  "subcategory": "underground_club",
+  "aliases": [
+    "the Cru",
+    "Crucible Shelf",
+    "the Burn"
+  ],
+  "description": "The Crucible occupies the gutted shell of a pre-Collapse smelting plant in Shelf District 7, its rusted catwalks and blast furnace housings repurposed into tiered standing platforms around a central concrete stage. The ceiling is open to the grid-level above — on clear nights, the neon bleed from the Circuit districts above casts everything in shifting amber and violet. Capacity is nominally six hundred, though documented nights have pushed past a thousand, bodies packed between support pillars slick with condensation. The venue has no fixed ownership on paper; it is maintained by a rotating collective of workers, fixers, and musicians who pass a physical iron key between them as a symbol of stewardship.\n\nThe Crucible is arguably the most politically charged venue in Meridian 88. Corporate censors have raided it eleven times since 2201; eleven times it has reopened within a week. Its stage has hosted the debut performances of Sovereign Filament, the last live set by the Ferrous Saints before their lead vocalist was disappeared, and the infamous 2217 benefit concert for the Tier 1 flood victims that raised over Φ400,000 in pirate feed donations. A recording of that night — Sovereign Filament — Live at the Crucible — circulates on encrypted mesh networks and is considered a sacred artifact by Shelf communities across the city.",
+  "creator": "various",
+  "distributor": "pirate_feed",
+  "tier_availability": "Tier 1+",
+  "legality": "underground_only",
+  "genre": "Shelf punk, protest folk, industrial drone, stratum",
+  "medium": "live",
+  "audience": "Tier 1 and Tier 2 workers, union organizers, political dissidents, underground musicians, journalists with conscience",
+  "cultural_impact": "The Crucible functions as a de facto community hall, legal aid coordination point, and spiritual center for Shelf District 7 as much as it does a music venue. Its survival through repeated corporate raids has made it a symbol of Shelf resilience citywide — its iron key insignia appears as graffiti from the flooded basements of District 2 to the maintenance tunnels under the Circuit. Vantablack Media has publicly categorized it as a 'threat vector for anti-corporate sentiment,' which has done nothing except make tickets — when tickets exist — more coveted.",
+  "known_fans": [
+    "Shelf union organizers",
+    "pirate feed broadcasters",
+    "underground journalists",
+    "off-grid medics",
+    "political dissidents in hiding",
+    "Tier 2 workers who make the descent"
+  ],
+  "story_hooks": [
+    "A player character is given the iron key for safekeeping after the current steward is arrested — the key is also a data chip containing the names of every corporate informant who has attended the Crucible in the past decade.",
+    "A Vantablack Media fixer is sent to shut down the Crucible permanently, but finds themselves staying for the opening act and reconsidering their assignment.",
+    "A legendary recording from a 2198 performance — predating the current collective — surfaces on the mesh, and its contents suggest the Crucible has been a meeting place for something far older and more organized than anyone knew."
+  ],
+  "tags": [
+    "entertainment",
+    "music",
+    "venue",
+    "underground_club",
+    "shelf",
+    "protest",
+    "pirate_feed",
+    "banned_venue",
+    "political",
+    "legendary"
+  ],
+  "parent_corponation": ""
+}

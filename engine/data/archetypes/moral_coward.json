@@ -1,0 +1,34 @@
+{
+  "id": "31deedeb0c894aece5f325ef088e394a",
+  "name": "Moral Coward",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Knows what's right but can't make themselves do it",
+  "behavioral_signature": "Avoids moral choices by pretending they don't exist",
+  "under_stress": "Freezes, deflects, or finds someone else to decide",
+  "at_rest": "Agrees with whatever the room believes",
+  "will_always": [
+    "look for a way out of hard choices"
+  ],
+  "will_never": [
+    "stand alone on principle"
+  ],
+  "unless": [
+    "cornered with no escape and forced to choose"
+  ],
+  "similar_to": [
+    {
+      "archetype": "People Pleaser",
+      "threshold": 0.7,
+      "context": "avoiding conflict"
+    }
+  ],
+  "opposite_of": [
+    "Moral Compass",
+    "Truth Teller"
+  ],
+  "tags": [
+    "avoidant",
+    "weak-willed"
+  ]
+}

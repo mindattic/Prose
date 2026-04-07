@@ -1,0 +1,34 @@
+{
+  "id": "ecdd6559612b71952228817c307fb790",
+  "name": "Credit Thief",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Takes credit for others' work with surgical precision",
+  "behavioral_signature": "Presents others' ideas as their own to leadership with perfect timing",
+  "under_stress": "Gets caught stealing credit and tries to gaslight the victim",
+  "at_rest": "Monitoring who's producing good work they can claim",
+  "will_always": [
+    "position themselves near successful projects"
+  ],
+  "will_never": [
+    "give attribution when they can avoid it"
+  ],
+  "unless": [
+    "the original creator is too powerful to cross"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Manipulator",
+      "threshold": 0.65,
+      "context": "professional theft"
+    }
+  ],
+  "opposite_of": [
+    "Mentor"
+  ],
+  "tags": [
+    "theft",
+    "credit",
+    "positioning"
+  ]
+}

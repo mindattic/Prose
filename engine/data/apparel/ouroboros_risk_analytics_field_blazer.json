@@ -1,0 +1,34 @@
+{
+  "name": "Ouroboros Risk Analytics Field Blazer",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_office_wear",
+  "manufacturer": "Ouroboros Internal Procurement, Halcyon Tailoring Division",
+  "description": "Ouroboros's field-facing analysts — the ones who visit sites after accidents, assess claims, and make the quiet determinations that decide whether families get paid — wear this blazer as part of their mandatory client-contact uniform. Cut in a slim, androgynous silhouette from a wool-polyamide blend that holds its press through a 14-hour shift, the jacket comes in two approved colors: deep navy and a warm charcoal. The Ouroboros ouroboros-snake logo is embroidered on the left breast in thread that shifts from gold to silver depending on the viewing angle, a subtle flex that clients in Tier 2 and 3 zones always notice.\n\nThe fabric contains a passive environmental sensor mesh that logs temperature, air quality, and ambient radiation — officially for the analyst's safety, practically to build a data record Ouroboros can use in claim disputes. Collar and cuff cuts are standard and not particularly aug-friendly, but the jacket is produced in 40 body configurations including tail-accommodating rear vents and extended shoulder clearance for wing stubs. Analysts are required to maintain the blazer in pristine condition; visible wear is grounds for uniform replacement fees deducted from the next pay cycle.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ310",
+  "augment_compatible": false,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "When an Ouroboros blazer shows up at your door or workplace, something has gone wrong for someone. The uniform carries the weight of institutional power — polite, well-dressed, and absolutely not on your side. Some Ouroboros analysts hate what the uniform represents. Most have learned not to think about it.",
+  "story_hooks": [
+    "An analyst discovers the environmental sensor mesh in her blazer has been logging data that directly contradicts the official report she was told to file.",
+    "A blazer belonging to a missing Ouroboros field analyst surfaces in a Tier 1 pawn shop — still transmitting location data to Ouroboros servers.",
+    "A Tier 2 community organizer gets hold of an authentic Ouroboros blazer and uses it to bluff her way into a corporate claims hearing."
+  ],
+  "tags": [
+    "ouroboros",
+    "finance",
+    "corporate",
+    "blazer",
+    "office",
+    "uniform",
+    "geneware-compatible",
+    "sensor-mesh",
+    "tier3",
+    "field-analyst"
+  ],
+  "id": "e25bb4314a944892b1178992aa9473da",
+  "parent_corponation": "Ouroboros Energy"
+}

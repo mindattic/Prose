@@ -1,0 +1,47 @@
+{
+  "id": "f08b4e2a7d913c6540e1a7d2b9f36c81",
+  "name": "Solenne NeuralSkin Spire Climate Bodysuit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "The NeuralSkin is the base layer that Spire augmentation demands — a full-body nano-fabric suit in translucent ivory that becomes nearly invisible against most skin tones. Gossamer-thin but structurally dense, it reads body temperature, ambient conditions, and chrome implant power draw simultaneously, adjusting thermal output zone by zone in real time. Where chrome meets skin, the NeuralSkin forms data-conductive contact patches that route power and signal between implants without external wiring. Geneware accommodations include seamless membrane splits for tails, dorsal ridges, and bioluminescent skin panels.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "nano-fabric climate membrane",
+    "thermo-adaptive zone filaments",
+    "chrome-interface conductive contact patches",
+    "seamless gene-vent membrane splits",
+    "self-repairing polymer substrate"
+  ],
+  "functionality": "Active zone-by-zone climate regulation synced to BCI biofeedback; maintains optimal skin temperature regardless of external conditions. Routes power and data between chrome implants via contact patches, eliminating external cabling entirely. Self-repairs minor tears within 20 minutes. Compatible with full-body geneware including tails, wings, and bioluminescent skin.",
+  "what_it_says": "Your body is an optimized system and you can afford to treat it like one.",
+  "worn_by": [
+    "Spire C-suite executives",
+    "elite augmented specialists",
+    "corponation power brokers",
+    "high-modification geneware clients",
+    "Spire-level security operatives"
+  ],
+  "manufacturer": "Solenne — Tier 5 luxury biosystems corponation",
+  "price_range": "Φ14,000–Φ40,000",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The NeuralSkin's chrome interface patches passively log all implant activity — Solenne's data retention policy is buried in a 400-page terms document almost no one has read.",
+    "A black-market replica NeuralSkin is circulating in Tier 3 — it looks identical but the conductive patches have a subtle backdoor that can shock the wearer into unconsciousness on remote command.",
+    "A Spire executive's NeuralSkin began self-repairing around a foreign object — something small, metallic, and deliberately placed inside the substrate before delivery."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "nano_fabric",
+    "climate_regulation",
+    "aug_compatible",
+    "gene_compatible",
+    "tier5",
+    "spire",
+    "chrome_interface",
+    "bci_compatible",
+    "luxury"
+  ],
+  "parent_corponation": ""
+}

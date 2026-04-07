@@ -1,0 +1,50 @@
+{
+  "name": "TESSERA GK-8 'Doorman'",
+  "type": "automaton",
+  "classification": "Security",
+  "aliases": [
+    "Doorman",
+    "The Bouncer",
+    "Gate Face"
+  ],
+  "manufacturer": "TESSERA",
+  "description": "The GK-8 is a building entrance security automaton — a humanoid-frame platform standing 2.0 meters, finished in polished black composite with a single optical band across its featureless face that pulses blue when scanning and red when denying entry. It stands at building entrances, checks identification against authorized access lists, scans for concealed weapons using a millimeter-wave array built into its chest plate, and physically blocks unauthorized persons from entering. Its frame is wide enough to fill a standard doorway.\n\nThe GK-8 is unfailingly polite in the way that machines are polite — it uses scripted phrases delivered in a neutral tone that convey courtesy without warmth. 'Good morning. Please present identification.' 'Access authorized. Welcome.' 'Access denied. Please step back.' It does not negotiate. It does not accept explanations for missing credentials. It does not care about your appointment, your urgency, or your indignation. It processes your identification or it blocks the door. There is no middle ground.\n\nTESSERA has deployed thousands of GK-8 units across Meridian 88's commercial and residential buildings. They have replaced human doormen almost entirely in Tier 3+ buildings. The units never take breaks, never accept bribes, never let a friend through without credentials, and never discriminate based on appearance. This last point is technically true and practically irrelevant — the GK-8 discriminates based on access lists, and the people who create those lists discriminate based on whatever they want.",
+  "tier_availability": "Tier 2-3",
+  "legality": "Commercial — building security license required",
+  "autonomy_level": "Autonomous — access control AI with remote management",
+  "dimensions": "2.0m height, 0.8m width",
+  "weight": "150 kg",
+  "power_source": "Hardwired building power with 12-hour battery backup",
+  "locomotion": "Bipedal, limited mobility (entrance area only)",
+  "armament": [
+    "Integrated restraint arms (non-lethal grab-and-hold)",
+    "Alarm system integration"
+  ],
+  "sensors": [
+    "Millimeter-wave concealed weapon scanner",
+    "Facial recognition",
+    "ID credential verification",
+    "Behavioral anomaly detection"
+  ],
+  "countermeasures": "Heavy frame resists physical force. Can be bypassed via building service entrances not covered by the unit. Facial recognition can be spoofed with prosthetic overlays rated for millimeter-wave transparency.",
+  "known_deployments": [
+    "Commercial and residential building entrances across Tier 2-4 districts"
+  ],
+  "story_hooks": [
+    "A GK-8 in a corporate lobby has been flagging a specific individual as 'authorized' despite that person not appearing on any access list. Someone has added a ghost entry to the unit's database — a person who can walk into the building whenever they want and the machine will let them through.",
+    "A GK-8's weapon scanner has been subtly recalibrated — it no longer detects a specific type of concealed weapon. Someone is planning to walk into the building armed, and the doorman will smile and let them pass."
+  ],
+  "cultural_context": "The GK-8 has replaced the human doorman — a figure who once served as the social gatekeeper of a building, who knew residents by name, who exercised judgment. The GK-8 exercises nothing. It follows rules. Whether this is an improvement depends entirely on whether the rules were written fairly.",
+  "tags": [
+    "automaton",
+    "security",
+    "doorman",
+    "access control",
+    "tessera",
+    "humanoid",
+    "tier 2",
+    "tier 3"
+  ],
+  "id": "5351c38b89e66fba9252db4d52a6ea30",
+  "parent_corponation": "Tessera Corponation"
+}

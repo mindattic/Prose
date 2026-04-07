@@ -1,0 +1,45 @@
+{
+  "id": "3c8d1f5a7e204b69c3d8f1a5e7204b96",
+  "name": "Axiom Defense ArcShell Construction Exo-Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A Tier 3–4 powered construction exoskeleton with integrated clothing system. The rigid exoframe is brushed gunmetal titanium-alloy over articulated polycarb joint housings, worn over a compression base suit in dark slate gray with hi-vis amber paneling at shoulders and thighs. Hydraulic assist units run along the spine and outer legs, with visible pressure lines in translucent orange.\n\nThe base suit is abrasion-resistant stretch-aramid with reinforced knees, elbows, and palms. Neural interface collar connects to BCI for load-sensing feedback. Corponation builds use this for high-rise skeleton work; black-market versions show up on Shelf demolition crews.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "titanium-alloy exoframe",
+    "articulated polycarb joint housings",
+    "stretch-aramid compression base suit",
+    "hydraulic assist pressure lines",
+    "BCI-interface neural collar"
+  ],
+  "functionality": "Hydraulic spine and leg assist multiplies carry load up to 400kg. BCI neural collar transmits load-stress feedback directly to the operator. Base suit provides abrasion and impact resistance independent of the frame. Exoframe joints lock for sustained load-hold. Aug-compatible frame channels accommodate prosthetic limb integration.",
+  "what_it_says": "Either a licensed construction specialist billing Φ900 a day, or someone who acquired this through channels that don't ask questions.",
+  "worn_by": [
+    "high-rise construction specialists",
+    "heavy infrastructure crews",
+    "demolition contractors",
+    "black-market Shelf salvage operators",
+    "corporate site foremen"
+  ],
+  "manufacturer": "Axiom Defense Solutions (corponation, construction division)",
+  "price_range": "Φ8,500 – Φ14,000 (new); Φ2,000 – Φ4,500 (black market/surplus)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A surplus ArcShell sold to a Shelf demolition crew still has its previous operator's BCI calibration loaded — and that person is listed as missing.",
+    "The hydraulic pressure lines on a black-market unit have been modified to handle something other than construction loads.",
+    "An Axiom site foreman's exo-suit has been logging GPS coordinates it was never authorized to transmit."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "exoskeleton",
+    "construction",
+    "powered",
+    "industrial",
+    "BCI",
+    "aug-compatible",
+    "hi-vis"
+  ],
+  "parent_corponation": ""
+}

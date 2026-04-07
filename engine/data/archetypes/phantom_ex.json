@@ -1,0 +1,34 @@
+{
+  "id": "9f35a82668a2f72c692dc74718543d15",
+  "name": "Phantom Ex",
+  "type": "archetype",
+  "category": "relationship",
+  "description": "Every current relationship is haunted by the ghost of a past one",
+  "behavioral_signature": "Compares everyone to someone who's gone",
+  "under_stress": "Actively tries to recreate the lost relationship with whoever's available",
+  "at_rest": "Carrying the template of an old love over every new connection",
+  "will_always": [
+    "compare present to past"
+  ],
+  "will_never": [
+    "fully see a new person for who they are"
+  ],
+  "unless": [
+    "someone is so utterly different that the old template can't map onto them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Nostalgic",
+      "threshold": 0.7,
+      "context": "relationship ghosts"
+    }
+  ],
+  "opposite_of": [
+    "Shedder"
+  ],
+  "tags": [
+    "ghosts",
+    "comparison",
+    "past"
+  ]
+}

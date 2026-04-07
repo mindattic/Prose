@@ -1,0 +1,40 @@
+{
+  "id": "5d1be39a4c7f082e6b3a91d8f0c25470",
+  "name": "Velox Shadowtread Infiltration Shoe",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "Low-profile slip-on in charcoal grey stretch-fabric with a paper-thin acoustic-damping sole. From a distance it looks like a plain athletic shoe — no logos, no reflective trim, nothing to catch light. The sole is made from a viscoelastic polymer compound that absorbs footfall vibration at the source, making footsteps nearly inaudible on hard floors, metal grating, and gravel.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "stretch microfiber upper",
+    "viscoelastic acoustic sole",
+    "carbon-weave reinforced toe",
+    "anti-static lining"
+  ],
+  "functionality": "Acoustic-damping sole reduces footfall noise by approximately 85% on hard surfaces. Anti-static lining prevents triggering pressure sensors. Sole leaves no retrievable tread pattern.",
+  "what_it_says": "You go places you aren't supposed to be. This isn't a fashion choice — it's equipment.",
+  "worn_by": [
+    "corporate infiltrators",
+    "investigators",
+    "thieves",
+    "journalists working restricted areas"
+  ],
+  "manufacturer": "Velox Tactical Goods",
+  "price_range": "Φ180 - Φ220",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Velox Shadowtreads keep showing up at crime scenes — not worn by the victims.",
+    "A contact offers a pair with a hidden tracker already installed, probably by whoever sold them to her first."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "stealth",
+    "tactical",
+    "infiltration",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

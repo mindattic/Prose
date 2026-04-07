@@ -12,7 +12,7 @@
   ],
   "category": "counter-surveillance",
   "description": "A device that disrupts holographic projections, augmented reality overlays, and adaptive camouflage systems within a 15-meter radius by emitting a structured light pattern that interferes with the coherent light used by these systems. The RAP-1 essentially forces the visual environment to be real — holograms flicker and collapse, AR overlays glitch and disappear, and active camouflage systems display artifacts that reveal the concealed object. Tessera developed it as a countermeasure to their own holographic and metamaterial products, recognizing that a tool to defeat illusions has as much market value as the illusions themselves.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Vasquez Biocompatible Materials",
   "tier_availability": "Tier 3+",
   "legality": "Licensed — security and investigation",
   "base_technologies": [],
@@ -42,5 +42,6 @@
     "surveillance",
     "market",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "An experimental weapon that generates a localized spatial distortion field at a targeted point, causing matter within the field to briefly phase between states in a way that current physics cannot fully explain. The practical effect is that solid objects within the 1-meter field radius experience a momentary loss of structural integrity — molecular bonds flicker, materials briefly become permeable, and anything caught in the transition snaps back to solidity with catastrophic misalignment. The effect lasts less than a tenth of a second but the material damage is permanent: metal crystallizes along new fault lines, biological tissue suffers cellular disruption, and electronics experience cascading component failure. Tessera's R&D team reportedly does not fully understand why the device works.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "NeoCortex Industries",
   "tier_availability": "Tier 5",
   "legality": "Experimental — Tessera internal only",
   "base_technologies": [
@@ -35,6 +35,8 @@
     "loss",
     "ai",
     "power",
-    "tier 5"
-  ]
+    "tier 5",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "9c3e7a1f5b0d2468c3e7a1f5b0d24682",
+  "name": "Kestrel Dynamics Field Operations Shirt",
+  "type": "apparel",
+  "category": "top",
+  "description": "A long-sleeved button-front shirt in a tightly woven dark charcoal ripstop, cut for movement with articulated elbows and a gusseted underarm. The left chest bears the Kestrel Dynamics logo — a small stylized raptor in flight — embroidered in dark grey thread, barely visible unless the light catches it right. There are four pockets: two chest with button flaps, two at the lower sides with velcro closures. The collar sits flat and the back has a single box pleat for mobility. The fabric is treated for moisture-wicking and minor abrasion resistance.\n\nKestrel Dynamics is a mid-tier corponation specializing in logistics security, site assessment, and risk consulting. The Field Operations Shirt is standard-issue for their non-uniformed field personnel — analysts, site leads, liaison officers — who need to look professional in environments where a suit would be wrong and a t-shirt would be wronger. It's available for civilian purchase through their contractor supply portal, which means it's also common among people who want to look like they have somewhere official to be.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "ripstop woven synthetic",
+    "moisture-wicking treatment",
+    "abrasion-resistant finish"
+  ],
+  "functionality": "",
+  "what_it_says": "You work in the field, loosely defined. You have a role. You may or may not be who you say you are.",
+  "worn_by": [
+    "Kestrel Dynamics field personnel",
+    "private risk consultants",
+    "security contractors",
+    "people who bought it through the portal to look the part",
+    "journalists covering dangerous areas"
+  ],
+  "manufacturer": "Kestrel Dynamics (corponation-issued, portal-available)",
+  "price_range": "Φ95",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The Kestrel Dynamics logo on a shirt can be scanned by company systems to verify employment status — wearing one without being in the system is a minor offense in some jurisdictions, a significant one in others.",
+    "A decommissioned Kestrel field operative is still wearing the shirt — technically they shouldn't be, and someone has noticed.",
+    "A batch of counterfeit Kestrel shirts is circulating in the Shelf; whoever made them got the logo exactly right, which means they had access to the embroidery template."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 3",
+    "work shirt",
+    "corporate uniform",
+    "field ops",
+    "ripstop",
+    "corponation",
+    "contractor"
+  ],
+  "parent_corponation": ""
+}

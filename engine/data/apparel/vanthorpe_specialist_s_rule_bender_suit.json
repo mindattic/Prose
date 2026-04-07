@@ -1,0 +1,43 @@
+{
+  "id": "c8e2a5f0b371d9c4e2a5f0b371d9c4e2",
+  "name": "Vanthorpe Specialist's Rule-Bender Suit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Where Tier 3 wears the uniform, Tier 4 quietly rewrites it — and this Vanthorpe two-piece is exactly that kind of carefully calibrated deviation. The jacket is a single-breasted cut in deep teal-charcoal synth-wool with a faint iridescent warp thread that shifts between grey and blue depending on ambient light — visible only up close, plausibly deniable from across a room. The lapels are slightly wider than corporate standard, and the interior lining is printed with an abstract geometric pattern in rust and gold, visible only when the jacket opens. The trousers are high-waisted and tapered, in a matching teal-charcoal, with a pronounced crease and a subtle side-split at the ankle hem — this accommodates a standard prosthetic ankle rig or chrome leg brace without the split reading as a modification accommodation. It just looks intentional. Underneath, a white Vanthorpe Coolweave Dress Shirt with a mandarin collar instead of the standard spread — another quiet rule-bend. Footwear is a hand-lasted chocolate brown derby in calf-analog leather, the single most expensive item in the set. No tie. The absence of a tie at Tier 4 is a statement only Tier 4 can make.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "iridescent synth-wool warp-thread suiting",
+    "calf-analog leather derby",
+    "Vanthorpe coolweave shirting",
+    "geometric-print interior lining"
+  ],
+  "functionality": "Ankle-hem side split for prosthetic rig accommodation, coolweave shirt for thermal regulation during extended meetings, interior lining provides RFID signal dampening as incidental feature of fabric density, mandarin collar conceals standard BCI port neckline hardware",
+  "what_it_says": "This person knows the rules well enough to break them without getting caught. The teal is not corporate-standard but it isn't unprofessional. The brown shoes against charcoal suiting is a choice that signals taste. They've earned the right to have taste. They want you to notice without admitting you noticed.",
+  "worn_by": [
+    "Tier 4 senior analysts",
+    "specialist consultants",
+    "technical leads with client-facing responsibilities",
+    "skilled professionals who've stopped asking permission for minor deviations"
+  ],
+  "manufacturer": "Vanthorpe & Associates Corporate Line",
+  "price_range": "Φ 900–Φ 1,400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The iridescent warp thread in the jacket fabric is a passive photonic data medium — someone has encoded a message in the weave that only reads under a specific spectrum of UV light, and the wearer has no idea.",
+    "A Tier 3 employee who's been studying this character copies the look with off-brand materials — the resulting outfit is close enough that it causes a genuine moment of social confusion at a department meeting.",
+    "The chocolate brown derbies were hand-lasted by a Tier 2 cobbler who quietly slipped a micro-tracker into the heel welt — the cobbler's client is a rival corponation's intelligence arm."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_4",
+    "aug_compatible",
+    "vanthorpe",
+    "specialist",
+    "rule_bender",
+    "iridescent"
+  ],
+  "parent_corponation": ""
+}

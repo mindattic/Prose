@@ -1,0 +1,49 @@
+{
+  "id": "e59a3c0d82f14b73a6d27e1f0c8b4956",
+  "name": "Hookline Independent Freight Night Haul Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The working uniform of an independent dock and freight hauler running night shifts on the Circuit-level cargo corridors — no corponation logo, no issued kit, everything sourced personally and maintained obsessively. The base is a heavyweight dark navy cargo trouser from Goretek — HaulMaster cut, with reinforced inner thighs, six pockets including two deep side-cargo pockets with compression buckles, and a wide belt loop arrangement that accommodates a tool-and-tether harness. The trouser legs are slightly flared at the ankle to accommodate a digitigrade leg prosthetic on the left side, the seam there hand-opened and restitched with orange industrial thread — a visible repair that's also a practical modification. On top: a Sable Freight thermal henley in dark brown, long-sleeved, with a kangaroo chest pocket that holds a flex-screen work manifest. Over it, a high-vis orange safety vest — generic market-bought, no branding — with reflective silver strips at chest and hem, multiple D-ring attachment points, and a built-in radio holster on the left chest.\n\nBoots are Dockmaster Deepwade — waterproof, steel-toe, ankle-height with a side-zip for fast removal. A wide-brimmed matte-black rain hat with a synth-wax finish and a hi-vis orange band around the crown keeps acid-drizzle off the neck. Thick fingerless work gloves in gray synth-leather leave the fingertips free for manifest-screen operation. A battered personal light — magnetic clip-mount, warm amber beam — clips to the vest's shoulder strap. The whole kit is dark, functional, and anonymous: no name patch, no affiliation. Just the work.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heavyweight navy synth-canvas (trousers)",
+    "dark brown thermal jersey",
+    "hi-vis orange safety vest nylon",
+    "waterproof synth-leather (boots)",
+    "synth-wax coated hat material",
+    "gray synth-leather (gloves)",
+    "orange industrial thread (repair seam)"
+  ],
+  "functionality": "Six-pocket cargo trousers with compression buckles, hand-modified flared leg seam for digitigrade prosthetic, radio holster vest, D-ring tether attachment points, waterproof steel-toe boots, flex-screen manifest pocket, magnetic clip light, acid-rain-resistant hat brim",
+  "what_it_says": "Independent. Not corponation-employed — which means no benefits, no union card, but also no one monitoring your manifest times or scanning your cargo too closely. The hand-modified trouser leg is the first thing anyone notices: whoever this is, they have a prosthetic limb and they did the alteration themselves, which means they're resourceful and not particularly interested in being pitied. The lack of any branding is a statement: this person works for themselves and trusts no logo.",
+  "worn_by": [
+    "independent freight haulers",
+    "night-shift dock runners",
+    "gray-market cargo movers",
+    "off-books courier contractors"
+  ],
+  "manufacturer": "Goretek (trousers); Sable Freight (henley); Dockmaster (boots); generic circuit market (vest, hat, gloves); self-modified",
+  "price_range": "Φ 160–Φ 220 (assembled piecemeal over time)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The flex-screen manifest in the chest pocket contains a hidden partition with a cargo log that contradicts official dock records — someone is systematically skimming containers, and this hauler either knows or is being set up to take the fall.",
+    "The hand-modified trouser seam conceals a shallow sewn channel running up the inner leg — it's been used to carry something small and rigid, and whatever it was, it's gone now, but there's dried blood in the seam.",
+    "A player character needs a night-shift cargo hauler who won't ask questions about a particular shipment; this kit is the visual signal that its wearer is the right kind of independent — for a price."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "freight",
+    "dock_work",
+    "independent",
+    "night_shift",
+    "aug_compatible",
+    "hi_vis",
+    "self_modified",
+    "working_class"
+  ],
+  "parent_corponation": ""
+}

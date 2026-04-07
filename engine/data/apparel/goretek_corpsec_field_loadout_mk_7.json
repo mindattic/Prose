@@ -1,0 +1,45 @@
+{
+  "id": "a3f7c2e1b09d4e8f6a1c5d2b7e4f9031",
+  "name": "Goretek CorpSec Field Loadout Mk-7",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Head-to-toe CorpSec field kit: matte-black ballistic-rated helmet with integrated AR visor and neural port passthrough, gorget collar sealing against chem particulate. Torso runs a Goretek TacShell-derived hard-plate vest over a moisture-wicking compression underlayer with spinal-rig channel running center-back. Mid-layer is a dark charcoal ops jacket, mag-closure, with chrome-arm sleeve splits. Reinforced cargo trousers in graphite ripstop, knee-pad inserts, thigh holster mounts. Boots are steel-toe mag-lock tactical with ankle-brace integration for leg prosthetics. All hardware matte-finished to suppress EM signature.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "ballistic-rated polyceramic plate",
+    "ripstop graphite synthweave",
+    "mag-closure polymer hardware",
+    "moisture-wicking compression mesh",
+    "steel-toe composite boot shell"
+  ],
+  "functionality": "Full ballistic protection to Class-3 threat rating; spinal-rig channel accommodates most standard military augments; chrome-arm sleeve splits; integrated AR visor with BCI uplink; mag-lock boot sole for vertical surface operations; chem-seal gorget.",
+  "what_it_says": "This person is contracted, armed, and authorized — approach with stated business only.",
+  "worn_by": [
+    "CorpSec field operatives",
+    "private security contractors",
+    "corporate enforcement squads",
+    "augmented tactical personnel"
+  ],
+  "manufacturer": "Goretek Defense Apparel",
+  "price_range": "Φ 4,200 – Φ 7,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A field kit with a serial number that traces back to a decommissioned unit — the wearer shouldn't exist in any active roster.",
+    "The AR visor keeps overlaying a ghost contact that was deleted from the network six months ago.",
+    "CorpSec insignia has been field-stripped and replaced with blank panels — someone's operating off-book."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corpsec",
+    "military",
+    "tactical",
+    "aug_compatible",
+    "full_kit",
+    "tier3",
+    "tier4",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

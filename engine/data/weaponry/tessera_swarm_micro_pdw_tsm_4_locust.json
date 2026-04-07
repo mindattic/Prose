@@ -1,0 +1,47 @@
+{
+  "id": "436e4eff7cffc5ef46255dd841e308ee",
+  "name": "Tessera Swarm Micro-PDW TSM-4 'Locust'",
+  "type": "weapon",
+  "aliases": [
+    "Locust",
+    "TSM-4",
+    "Swarm Gun"
+  ],
+  "category": "smg",
+  "description": "The TSM-4 Locust fires micro-flechettes rather than conventional projectiles — 1mm tungsten needles accelerated electromagnetically from a 200-round cassette. Each trigger pull releases a burst of 5 flechettes in a controlled spread pattern, and the BCI smart-link adjusts the spread width based on range to target. At conversational distance, the spread is a 2cm circle. At 50 meters, it expands to a 30cm pattern.\n\nThe Locust's electromagnetic acceleration system draws from an internal capacitor that recharges from a belt-mounted power cell, providing approximately 40 bursts (200 flechettes) per charge. The micro-flechettes penetrate soft body armor through cumulative damage — individual needles are marginally effective, but a burst of five creates a wound channel that defeats fiber-based armor through sheer number of penetration points.\n\nTessera designed the Locust for close-protection scenarios where collateral damage must be minimized. The micro-flechettes lose lethality rapidly beyond 50 meters and cannot penetrate hard barriers, making them ideal for environments where overpenetration threatens bystanders or infrastructure. At Φ11,000, the weapon is expensive and its ammunition is proprietary — a deliberate choice by Tessera to maintain control over the supply chain.",
+  "manufacturer": "NovaMind Consumer Division",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — specialized weapons licensing",
+  "base_technologies": [
+    "Electromagnetic flechette acceleration",
+    "BCI spread-width control",
+    "Micro-flechette cassette feed",
+    "Cumulative armor defeat"
+  ],
+  "specifications": "caliber: 1mm tungsten micro-flechette\neffective_range: 50m\nrate_of_fire: 200 bursts/min (5 flechettes per burst)\nmagazine_capacity: 200 flechettes (40 bursts)\nweight: 1.4 kg",
+  "tactical_use": "The Locust provides close-quarters lethality with minimal overpenetration risk. The BCI-controlled spread pattern ensures maximum hit probability at all engagement distances while the micro-flechettes' rapid energy loss beyond 50 meters eliminates collateral risk to distant bystanders. The cumulative armor defeat mechanism makes the weapon effective against soft body armor while remaining unable to penetrate hard barriers or structural elements. In close-protection scenarios, the Locust allows engagement of threats without endangering the principal.",
+  "cultural_context": "The Locust is a weapon that provokes horror in medical professionals. Micro-flechette wounds are nightmarish to treat — dozens of 1mm tungsten needles embedded in tissue, many too small to image on standard medical scanners, each one a potential infection vector or delayed hemorrhage source. Anti-weapons campaigners have targeted the Locust specifically, calling it a weapon designed to maximize suffering. Tessera responds that the weapon is designed to minimize collateral damage. Both are correct.",
+  "known_users": [
+    "Close-protection specialists",
+    "VIP security details",
+    "Tessera special operations"
+  ],
+  "story_hooks": [
+    "A Locust victim survived the initial engagement but is dying slowly as embedded micro-flechettes migrate through tissue toward vital organs. The only scanner capable of locating them all belongs to the corponation that ordered the hit.",
+    "Someone has reverse-engineered the Locust's proprietary flechette cassettes and is manufacturing bootleg ammunition. The bootleg flechettes are made from surgical steel instead of tungsten — they're magnetic, which makes them detectable but also means they interact unpredictably with anyone carrying ferromagnetic cyberware."
+  ],
+  "ammunition_type": [
+    "1mm tungsten micro-flechette cassette"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "flechette",
+    "electromagnetic",
+    "micro",
+    "Tessera",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

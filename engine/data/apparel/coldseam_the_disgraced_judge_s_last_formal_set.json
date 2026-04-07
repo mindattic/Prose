@@ -1,0 +1,46 @@
+{
+  "id": "b82f5a7e1c3d094670f2e5b8a91c47d3",
+  "name": "Coldseam The Disgraced Judge's Last Formal Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Once a Spire governance robe, now stripped of insignia and carefully reworked into something that reads as formal without declaring allegiance. Deep charcoal wool-analog longcoat — the judicial gold trim has been unpicked, leaving ghost-lines in the weave. Beneath: a pressed high-collar shirt in off-white, slightly yellowed at the cuffs from repeated laundering. Slim formal trousers, hand-pressed. Worn black oxfords, resoled twice. A single neural port at the temple is left uncovered — the port housing is engraved with a case number that no longer exists in any public record.\n\nColdseam makes nothing this formal; this is a one-off commission from a tailor who asked no questions.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "wool-analog longcoat",
+    "high-collar cotton-analog shirt",
+    "pressed formal trouser weave",
+    "resoled leather-analog oxford",
+    "engraved neural port housing"
+  ],
+  "functionality": "Formal presentation without active affiliation signaling, neural port left accessible, resoled boots for extended wear, hand-pressed construction requiring no powered maintenance.",
+  "what_it_says": "Someone who once held enormous power and lost it — still carrying the posture, no longer carrying the title.",
+  "worn_by": [
+    "disgraced Spire judges",
+    "fallen corporate arbiters",
+    "defrocked governance officials navigating lower tiers",
+    "characters defined by a specific downfall"
+  ],
+  "manufacturer": "Coldseam (one-off commission)",
+  "price_range": "Φ 300 – Φ 700",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The case number engraved on the neural port housing was expunged — finding out why requires accessing a court archive that officially burned in 2189.",
+    "Someone in the Spire is paying a Shelf fixer to locate this person before they talk to a journalist.",
+    "The ghost-lines where the judicial trim was removed are visible under certain lighting — in the right circles, people still recognize what this coat used to be."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "character_defining",
+    "formal",
+    "fallen_elite",
+    "aug_compatible",
+    "full_kit",
+    "tier2",
+    "tier3",
+    "spire_adjacent",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

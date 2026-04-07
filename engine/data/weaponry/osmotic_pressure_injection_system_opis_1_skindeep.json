@@ -9,7 +9,7 @@
   ],
   "category": "exotic",
   "description": "The OPIS-1 'Skindeep' is a short-to-medium range delivery weapon developed by Lazarus Pharmaceuticals that uses focused osmotic pressure waves to drive liquid payloads through intact skin and soft tissue without penetrating the surface — no needle, no wound, no visible mark. The weapon generates a precisely calibrated pressure differential at the target surface, temporarily increasing cellular membrane permeability in a localized area and forcing a liquid payload carried in the weapon's pressurized reservoir through the skin barrier and into subcutaneous or intramuscular tissue. The payload — which can be any compound stable in liquid suspension — is delivered in approximately 0.3 seconds and leaves no external evidence of administration beyond a brief, easily-missed reddening of the skin.",
-  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "manufacturer": "Sunrise Senior Care",
   "tier_availability": "Tier 2+ (medical variant); Black market (tactical variant)",
   "legality": "Prohibited (tactical variant); Licensed (medical variant, clinical use only)",
   "base_technologies": [
@@ -59,6 +59,8 @@
     "bar",
     "night",
     "energy",
-    "tier 2"
-  ]
+    "tier 2",
+    "lethal"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
 }

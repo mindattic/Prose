@@ -1,0 +1,42 @@
+{
+  "id": "7b1e4d9c3a0f82e5c6b3d7a1f4e09c28",
+  "name": "Vantrel Bespoke Biosync Oxford",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "Vantrel's flagship dress shoe integrates a full biometric mesh into the insole — heart rate, gait pressure mapping, cortisol levels read through the plantar fascia — all routed through a BCI-linked companion app. The upper is cultured calf leather, clean and unbroken, available in matte black or warm ivory. The sole is micro-textured carbon resin. Nothing about it looks like a smart shoe.\n\nFavored by Tier 4-5 executives who want health monitoring without the aesthetic of a wellness device. The data is yours alone, encrypted, legally protected. Or so Vantrel says.",
+  "tier_association": "Tier 4-5",
+  "materials": [
+    "cultured calf leather",
+    "carbon resin sole",
+    "biometric mesh insole",
+    "memory foam midsole"
+  ],
+  "functionality": "Continuous biometric monitoring (heart rate, gait, cortisol, blood pressure). BCI-paired. Data encrypted to wearer's neural key.",
+  "what_it_says": "You monitor your body the way you monitor your portfolio — quietly, constantly, and with expensive tools.",
+  "worn_by": [
+    "corporate executives",
+    "Tier 5 professionals",
+    "health-conscious Spire residents",
+    "politicians"
+  ],
+  "manufacturer": "Vantrel",
+  "price_range": "Φ850 - Φ1,200",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Vantrel Oxford belonging to a dead Tier 5 exec contains biometric data from the hour of their death — data that contradicts the official cause.",
+    "Someone is running a black market in secondhand Vantrel shoes; the old biometric data inside them hasn't been wiped."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 4",
+    "tier 5",
+    "luxury",
+    "smart shoe",
+    "biometric",
+    "BCI-compatible",
+    "dress shoe"
+  ],
+  "parent_corponation": ""
+}

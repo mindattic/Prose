@@ -1,0 +1,34 @@
+{
+  "id": "13b72929e364dd226e6b87c6fa10752a",
+  "name": "Pack Alpha",
+  "type": "archetype",
+  "category": "social",
+  "description": "Commands loyalty through presence and competence, not title or threat",
+  "behavioral_signature": "Others defer to them without being asked",
+  "under_stress": "Takes on too much responsibility, refuses to show weakness",
+  "at_rest": "Casually aware of everyone in their orbit",
+  "will_always": [
+    "step up when the group needs direction"
+  ],
+  "will_never": [
+    "follow someone they don't respect"
+  ],
+  "unless": [
+    "following preserves the pack"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Natural Authority",
+      "threshold": 0.85,
+      "context": "leadership"
+    }
+  ],
+  "opposite_of": [
+    "Freeloader"
+  ],
+  "tags": [
+    "leadership",
+    "presence",
+    "loyalty"
+  ]
+}

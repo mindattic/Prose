@@ -1,0 +1,48 @@
+{
+  "id": "9095c77640dde23ec64c04089aaa5a45",
+  "name": "Crucible UGL-2 'Understudy'",
+  "type": "weapon",
+  "aliases": [
+    "Understudy",
+    "Piggyback",
+    "Underhung"
+  ],
+  "category": "grenade launcher",
+  "description": "A single-shot underslung grenade launcher designed to mount beneath the barrel of any standard assault rifle or carbine via universal rail adapter. The UGL-2 adds grenade capability to a primary weapon system without requiring the operator to carry a dedicated launcher, trading capacity for convenience. The break-action loading mechanism accepts standard 40mm casings and can be reloaded in under three seconds by a trained operator.\n\nCrucible designed the Understudy for squad-level operations where dedicated grenade launchers are impractical — room clearing, vehicle patrols, and quick-reaction scenarios where switching between primary weapon and launcher would cost critical seconds. The universal rail adapter fits 94% of assault platforms currently in production, making it the default choice for operators who want explosive capability without the weight penalty of a standalone launcher.",
+  "manufacturer": "CRUCIBLE INDUSTRIAL",
+  "tier_availability": "Tier 3+",
+  "legality": "Military — restricted; Licensed for corporate security with explosive ordnance permit",
+  "street_price": "Φ3,200",
+  "base_technologies": [
+    "Universal rail mounting system",
+    "Break-action single-shot mechanism",
+    "Recoil isolation dampener"
+  ],
+  "specifications": "caliber: 40mm standard casings\ncapacity: 1 round\neffective range: 50-350 meters\nweight: 1.8 kg\nlength: 305mm\nmounting: Universal accessory rail",
+  "tactical_use": "Squad-level explosive support. Operators carry 4-6 rounds in belt pouches and reload between engagements. Used primarily for breaching reinforced doors, disabling vehicles, and flushing targets from cover.",
+  "cultural_context": "The Understudy is so common in Meridian 88's security ecosystem that 'checking for understudies' has become standard practice when disarming a suspect — the launcher sits flush beneath a rifle barrel and can be missed on visual inspection if you're not looking for it.",
+  "known_users": [
+    "Corporate security teams across all major corponations",
+    "Meridian 88 Tactical Response",
+    "Licensed private military contractors"
+  ],
+  "story_hooks": [
+    "A batch of UGL-2 launchers has been modified to fire a proprietary 40mm round that deploys a localized EMP on detonation — turning a common infantry attachment into a cyberware killer.",
+    "An operator's Understudy misfired during a corporate raid, sending a fragmentation round into a residential floor. Crucible claims manufacturing defect. The operator claims the weapon was sabotaged."
+  ],
+  "ammunition_type": [
+    "40mm_grenade"
+  ],
+  "tags": [
+    "grenade launcher",
+    "weapon",
+    "underslung",
+    "attachment",
+    "explosive",
+    "crucible",
+    "military",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

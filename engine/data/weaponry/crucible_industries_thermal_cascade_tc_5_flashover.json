@@ -1,0 +1,45 @@
+{
+  "id": "fd0633f64a6d81a935276d23b26c345d",
+  "name": "Crucible Industries Thermal Cascade TC-5 'Flashover'",
+  "type": "weapon",
+  "aliases": [
+    "Flashover",
+    "TC-5",
+    "Thermal Cascade",
+    "The Ignition"
+  ],
+  "category": "exotic",
+  "description": "A directed energy weapon that fires a microwave pulse calibrated to ignite specific materials at range. The Flashover does not burn targets directly — instead, it rapidly heats flammable materials in the target area (clothing, paper, wood, fuel, solvents) past their ignition point, causing them to spontaneously combust. The result is an apparently natural fire that starts simultaneously at every point within the beam's focus.\n\nCrucible designed the TC-5 for infrastructure denial — destroying enemy supplies, equipment, and facilities through fire without leaving evidence of an incendiary weapon. The microwave pulse is invisible and silent, and the resulting fire appears to start from material failure rather than external ignition. Arson investigators trained to look for pour patterns and ignition points find nothing, because the ignition source was a directed energy beam that left no physical trace.\n\nThe Flashover's anti-personnel effect is incidental but devastating. Clothing ignites while being worn. Hair combusts. Synthetic materials melt. A target struck by the TC-5 does not experience being shot — they experience spontaneous combustion.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted — incendiary weapons authorization",
+  "base_technologies": [
+    "Material-selective microwave ignition",
+    "Directed thermal energy calibration",
+    "Covert incendiary weapon engineering"
+  ],
+  "specifications": "caliber: N/A — calibrated microwave ignition pulse\neffective_range: 10-200 meters\nrate_of_fire: 1 pulse per 5 seconds\ncapacity: 10 pulses per power cell\nweight: 9.6 kg\npower_source: Dedicated thermal-calibrated power cell",
+  "tactical_use": "The Flashover is deployed for covert infrastructure destruction and deniable incendiary attacks. The weapon's ability to cause fires that appear spontaneous makes it invaluable for operations where plausible deniability is required. Operators target ammunition stores, fuel depots, vehicle fleets, and document archives — anything flammable that an enemy needs to function. The fire appears natural, the cause is untraceable, and the destruction is comprehensive.",
+  "cultural_context": "The TC-5 has created a persistent paranoia about spontaneous fires in Meridian 88. When a warehouse burns without apparent cause, or a vehicle fleet ignites simultaneously, people wonder if a Flashover was responsible. Crucible has never publicly acknowledged the weapon's existence, but the pattern of untraceable fires following corporate disputes is difficult to explain by coincidence. Insurance investigators have begun consulting directed energy experts when fire investigations find no conventional ignition source.",
+  "known_users": [
+    "Crucible Industries covert operations",
+    "Corporate infrastructure warfare specialists"
+  ],
+  "story_hooks": [
+    "A residential block in the lower tiers experienced simultaneous combustion — every flammable material in a 50-meter radius ignited at the same moment. The fire department recorded 200 simultaneous ignition points. No natural cause explains the event, but no weapon was found.",
+    "A former Crucible engineer is selling TC-5 frequency calibration data on the black market. With this data, anyone with sufficient microwave generation equipment could build a crude Flashover equivalent — and someone is buying."
+  ],
+  "ammunition_type": [
+    "Calibrated microwave ignition pulse"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "directed-energy",
+    "incendiary",
+    "covert",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

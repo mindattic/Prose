@@ -1,0 +1,46 @@
+{
+  "id": "7d1e4a09c3b8f256a7d1e4a09c3b8f25",
+  "name": "Radcore NeutronVeil Reactor Maintenance Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A Class-4 radiation suit manufactured for licensed reactor technicians and illegally resold into Shelf black markets where contaminated zones demand it. The outer shell is a pewter-grey woven lead-polymer fabric — heavy, stiff at the shoulders, with a characteristic forward-lean posture after long wear. Dosimeter patches are stitched at the chest and left forearm; most secondhand suits have patches that are faded or missing entirely.\n\nThe suit breaks into five modular sections: torso, two arm assemblies, two leg assemblies — all connected by locking ring seals at joints. A thick polycarbonate helmet dome with integrated air filtration scrubber completes the ensemble. New suits smell of antiseptic; old ones smell of nothing, which is somehow worse.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "lead-polymer woven shell fabric",
+    "modular locking ring joint seals",
+    "HEPA/activated-carbon air scrubber",
+    "polycarbonate helmet dome",
+    "inner Tyvek moisture barrier"
+  ],
+  "functionality": "Rated for gamma and beta radiation shielding. Modular joint seals allow limited limb replacement if a section is compromised. Integrated air scrubber filters particulate and low-level radioactive dust. Dosimeter patches log cumulative exposure. Aug-routing channels run along the outer forearm seams.",
+  "what_it_says": "You go where the reactors are cracked and someone has to go in first.",
+  "worn_by": [
+    "licensed reactor maintenance techs",
+    "Shelf scavengers in hot zones",
+    "black-market rad-suit resellers who test product personally",
+    "corporate-contracted decontamination crews"
+  ],
+  "manufacturer": "Radcore Systems (corponation licensed); surplus units through Shelf black market",
+  "price_range": "Φ 1,200–Φ 4,800 (new); Φ 200–Φ 600 (secondhand, condition varies)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A secondhand suit on the Shelf market still has the original owner's name stenciled inside the collar — that person is listed as missing in a reactor incident three years ago.",
+    "Someone is selling counterfeit Radcore suits with substandard lead-polymer content; the dosimeter patches are cosmetic only.",
+    "A reactor tech discovers their suit's scrubber was swapped for a non-functional replica — deliberate sabotage, or a supply chain failure?"
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "radiation",
+    "reactor",
+    "hazmat",
+    "industrial",
+    "modular",
+    "work-gear",
+    "shelf",
+    "tier2",
+    "tier3"
+  ],
+  "parent_corponation": ""
+}

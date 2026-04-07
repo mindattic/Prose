@@ -1,0 +1,34 @@
+{
+  "id": "178b89dce38af6444765a7b38879b8d6",
+  "name": "Network Node",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Survives by being too connected to remove without damaging the whole system",
+  "behavioral_signature": "Knows someone in every faction, crew, and organization",
+  "under_stress": "Leverages connections dangerously, burning bridges for short-term safety",
+  "at_rest": "Maintaining a web of relationships across every boundary",
+  "will_always": [
+    "make themselves essential to multiple networks"
+  ],
+  "will_never": [
+    "let themselves become dispensable"
+  ],
+  "unless": [
+    "going dark is the only way to survive immediate threat"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Networker",
+      "threshold": 0.85,
+      "context": "survival through connection"
+    }
+  ],
+  "opposite_of": [
+    "Hermit"
+  ],
+  "tags": [
+    "connections",
+    "indispensability",
+    "networks"
+  ]
+}

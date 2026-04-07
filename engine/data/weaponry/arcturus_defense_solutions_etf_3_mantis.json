@@ -1,0 +1,48 @@
+{
+  "id": "1b7e4d9a0c3f625814b7e9d0c4a3f261",
+  "name": "Arcturus Defense Solutions ETF-3 'Mantis'",
+  "type": "weapon",
+  "aliases": [
+    "mantis",
+    "the L",
+    "fork",
+    "tonfa-z"
+  ],
+  "category": "melee",
+  "description": "The Arcturus ETF-3 is a purpose-built electrified tonfa — an L-shaped impact weapon derived from the classical Okinawan martial arts implement, reimagined for the threat environments of 22nd-century enforcement work. The main shaft is 56 centimeters of milled titanium-polymer composite; the perpendicular handle grip is 18 centimeters, positioned 14 centimeters from the shaft's base in the traditional tonfa geometry. This configuration allows the weapon to be carried with the long shaft running along the forearm, effectively extending and reinforcing forearm blocks, and rotated forward for striking using the momentum of the entire arm. A high-density capacitor module is embedded within the grip handle, and the discharge circuit runs the full length of the main shaft through an insulated internal channel, surfacing at the tip and along a 15-centimeter electrode strip near the end.\n\nThe ETF-3 is designed for operators trained in tonfa technique — it is not a beginner's weapon. Arcturus issues it only to personnel who have completed their Close Quarters Compliance certification, which includes specific tonfa curriculum. In the hands of a trained operator, the ETF-3 is a sophisticated tool: the forearm-guard carry position protects against incoming strikes while the discharge circuit means any successful block against an attacker's limb can simultaneously deliver a shock. The rotation-and-strike motion, when the discharge is timed to the moment of contact, is described in Arcturus training materials as 'exceptionally efficient.'\n\nThe ETF-3 is one of the more specialized weapons in Arcturus's less-lethal catalog and sees relatively limited distribution. Its presence in a confrontation is a reliable indicator of a trained operator, which carries its own deterrent value.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — Arcturus contractor issue; civilian possession requires martial arts instructor license plus personal protection permit",
+  "base_technologies": [
+    "titanium-polymer composite construction",
+    "high-density grip capacitor",
+    "internal insulated discharge channel",
+    "tonfa-geometry ergonomics"
+  ],
+  "specifications": "Main Shaft Length: 560mm\nHandle Length: 180mm\nHandle Offset from Base: 140mm\nWeight: 820g\nDischarge Voltage: 65,000V\nAmperage: 0.004A\nElectrode Coverage: Tip + 150mm end strip\nCapacitor Module: Integrated in grip, non-removable\nCharge Capacity: ~45 full discharges\nCharge Time: 4 hours (Arcturus inductive dock)\nPrice: Φ1,800",
+  "tactical_use": "ETF-3 operators use the weapon in a hybrid role — forearm guard for defense with simultaneous shock delivery against incoming strikes, and rotation-strikes for offensive compliance. The forearm carry guard position is particularly effective in corridor and doorway environments where swing space is limited. Trained operators use the discharge in a 'press and hold' technique during joint locks and control positions, allowing sustained low-current application that maintains subject compliance without the full-discharge shock cycle. This technique is considered advanced and is only taught at the senior level of Arcturus CQC certification.",
+  "cultural_context": "The ETF-3 is rare enough that most people in Meridian 88 have never seen one in person, and its L-shaped silhouette reads as unusual and vaguely threatening to people unfamiliar with tonfa geometry. Among martial arts practitioners and close-quarters combat enthusiasts, it has a reputation as a serious piece of kit — something that signals its carrier has actual formal training rather than just a weapons purchase. In certain underground fight circuits, electrified tonfa fighting has emerged as a fringe competitive discipline, though the equipment used there is generally improvised rather than Arcturus-issue.",
+  "known_users": [
+    "Arcturus CQC-certified enforcement operators",
+    "Arcturus executive protection specialists",
+    "underground electrified combat sports practitioners",
+    "select Tier 4 corporate security with Arcturus training contracts"
+  ],
+  "story_hooks": [
+    "An ETF-3 with a filed-off serial number is being used by someone operating in Tier 1 who clearly has formal tonfa training — they've hospitalized three people in separate incidents, never been caught on camera clearly. The victims have no obvious connection, but all of them had pending testimony in an Arcturus contractor misconduct review."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "baton",
+    "electric",
+    "tonfa",
+    "martial_arts",
+    "military",
+    "restricted",
+    "arcturus"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

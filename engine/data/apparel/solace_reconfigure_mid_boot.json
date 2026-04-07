@@ -1,0 +1,40 @@
+{
+  "id": "e6b9f2d4a0c7358e1b9f2d4a7c0e3581",
+  "name": "Solace Reconfigure Mid Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A mid-height boot with a thermally activated sole that reshapes itself to the wearer's foot geometry after a brief heat cycle from a pocket-sized activator tool. Originally developed for prosthetics rehabilitation clinics, it crossed over into consumer markets when augmented users realized how well it handled transition periods — when chrome is being upgraded, swapped, or repaired and foot geometry changes frequently. The upper is a soft matte nylon with minimal seaming and a side zip.\n\nFavored by Tier 3 augmented users who cycle through prosthetic configurations, or anyone whose augmentation is still being calibrated. The boot conforms once per heat cycle and holds its shape until reset.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "matte nylon upper",
+    "thermally-activated reshaping sole",
+    "memory foam liner",
+    "rubber outsole"
+  ],
+  "functionality": "Thermally activated sole reshapes to exact foot geometry using included heat-activator tool. Holds custom shape until reset. Accommodates changing prosthetic configurations.",
+  "what_it_says": "You're in transition — upgrading, adapting, figuring it out. Or you're just thorough about fit.",
+  "worn_by": [
+    "augmented users cycling through prosthetic upgrades",
+    "prosthetics rehabilitation patients",
+    "Tier 3 chrome users during calibration periods"
+  ],
+  "manufacturer": "Solace Medical Goods",
+  "price_range": "Φ130 - Φ160",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The boot's sole retains the ghost impression of every previous geometry it's been molded to — a worn pair is a history of someone's prosthetic changes.",
+    "Solace boots are stocked in several corporate medical facilities, meaning a pair can get you into waiting rooms and corridors where street clothes wouldn't."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "aug-compatible",
+    "thermal-mold",
+    "reconfigurable",
+    "rehabilitation",
+    "boot"
+  ],
+  "parent_corponation": ""
+}

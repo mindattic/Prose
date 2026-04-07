@@ -1,0 +1,44 @@
+{
+  "id": "a3f7c2e1b09d4856f3a2c7e1d09b4856",
+  "name": "Arcturus BladeWatch CorpSec Full Field Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Head-to-toe CorpSec loadout: matte-black ballistic-rated helmet with integrated AR visor and bone-conduction comms, a modular tactical vest in charcoal over a Pragma compression underlayer, reinforced aug-channel arm sleeves with quick-detach couplings for chrome limbs, slate-grey TacWeave cargo trousers with thigh-mounted mag pouches, and Kessler-grade composite boots with non-slip tread. Velcro ID patches display unit insignia in phosphor yellow.\n\nVest panels are swappable between hard-plate and flex configurations. Spinal rig channel runs center-back. All seams are aug-split rated for prosthetic limb clearance.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "ballistic-rated polymer shell",
+    "TacWeave compression mesh",
+    "carbon-fiber plate inserts",
+    "aug-channel elastomer sleeve",
+    "non-slip composite rubber sole"
+  ],
+  "functionality": "Integrated AR visor with threat-tagging overlay, aug-split seams at shoulders and hips, spinal rig channel, mag-pouch thigh rails, quick-detach vest panels, sealed boot toe for kick-impact protection.",
+  "what_it_says": "You are the law inside this corponation's perimeter, and you know it.",
+  "worn_by": [
+    "CorpSec field officers",
+    "private security contractors",
+    "corporate enforcement liaisons"
+  ],
+  "manufacturer": "Polaris Navigation Systems",
+  "price_range": "Φ2,800–Φ4,500",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A unit patch on the vest belongs to a CorpSec division officially disbanded two years ago — but the officer wearing it is very much active.",
+    "The AR visor's threat-tagging database has been quietly updated to flag union organizers as hostiles.",
+    "One of the quick-detach vest panels conceals a secondary compartment — someone has been using it to move contraband through checkpoints."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "military",
+    "corpsec",
+    "tactical",
+    "aug_compatible",
+    "field_kit",
+    "tier3",
+    "tier4",
+    "gap_outfit"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

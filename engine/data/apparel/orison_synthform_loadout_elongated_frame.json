@@ -1,0 +1,45 @@
+{
+  "id": "c1a4e7f3b8d02659a3f5c2e9b1d07a84",
+  "name": "Orison Synthform Loadout — Elongated Frame",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Designed for synthetics with non-standard proportions — elongated limbs, narrow torsos, reversed-joint legs. A segmented bodysuit in smoke-grey adaptive mesh forms the base, with modular panel attachments that reconfigure via snap-tension rather than seams. Over it: a cropped asymmetric jacket with extended sleeve channels that accommodate limb length variance up to 40cm beyond human standard. Reversed-joint leg accommodation is built into the trouser via articulated gussets at the knee-analog joint. Footwear is a flat-soled wrap boot with adjustable tension strapping — no fixed heel. The silhouette is deliberately striking: this outfit doesn't pretend to be human-cut.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "adaptive snap-tension mesh bodysuit",
+    "modular panel synthweave jacket",
+    "articulated gusset trouser",
+    "adjustable tension-strap flat wrap boot",
+    "polyceramic snap hardware"
+  ],
+  "functionality": "Snap-tension panels adjust to non-standard limb proportions without tailoring; articulated gussets accommodate reversed or multi-joint leg structures; extended sleeve channels for elongated arms; no fixed heel footwear for digitigrade or flat synthetic foot structures.",
+  "what_it_says": "A synthetic who dresses for their own body, not an approximation of a human one.",
+  "worn_by": [
+    "synthetics with non-human proportions",
+    "synthetic rights advocates",
+    "frame-diverse artificial persons",
+    "artists and performers with synthetic builds"
+  ],
+  "manufacturer": "Orison Synthform Collective (street label, synthetic-founded)",
+  "price_range": "Φ 340 – Φ 1,100",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Orison's founder disappeared during a Tier 5 corporate acquisition attempt — the label keeps running, no one knows who's making the decisions.",
+    "Wearing this in certain Tier 3 districts draws stares; wearing it in Tier 1 draws respect.",
+    "A specific colorway of this outfit is associated with a synthetic underground railroad moving artificial persons across corponation jurisdictions."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "synthetic",
+    "synthform",
+    "non_human",
+    "aug_compatible",
+    "tier2",
+    "tier3",
+    "identity",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

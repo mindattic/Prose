@@ -1,0 +1,49 @@
+{
+  "id": "f4a1d7e3c0b9256af4a1d7e3c0b9256a",
+  "name": "Pellucid BioClean Class-1 Geneware Lab Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A cleanroom suit designed for Class-1 geneware fabrication environments and high-grade biotech labs. The outer shell is ultrasonic-welded polyethylene fabric in sterile white with fine silver anti-static threading — new suits are blinding white; worn ones carry a faint yellowish cast from sterilization fluid cycling. Hood is integrated with a sealed polycarbonate visor and positive-pressure filtered air delivery at the collar.\n\nEvery seam is smooth-faced inward to prevent particulate shedding. Gloves are separate but connect via sterile-lock ring cuffs. The suit design accommodates tail and horn geneware through sealed elasticated apertures at the base of the spine and crown — apertures ship sealed and are field-opened by the user. Used in Tier 4-5 labs but also smuggled into unlicensed Shelf geneware clinics.",
+  "tier_association": "Tier 3-5",
+  "materials": [
+    "ultrasonic-welded polyethylene outer shell",
+    "silver anti-static threading",
+    "integrated polycarbonate visor",
+    "positive-pressure filtered air collar delivery",
+    "sterile-lock ring glove cuffs",
+    "sealed elasticated geneware apertures"
+  ],
+  "functionality": "Class-1 cleanroom rated — less than 10 particles per cubic foot. Positive-pressure air delivery prevents contaminant ingress. Anti-static threading prevents charge buildup near sensitive biotech equipment. Sealed gene-compatible apertures at spine base and crown. Neural port access panel at rear collar for BCI techs working in sterile environments.",
+  "what_it_says": "You work with things precise enough that your body is the contamination risk.",
+  "worn_by": [
+    "geneware fabrication technicians",
+    "biotech lab researchers",
+    "chip-fab cleanroom operators",
+    "unlicensed Shelf geneware clinic staff"
+  ],
+  "manufacturer": "Pellucid BioSystems (Tier 4-5 licensed); stolen/surplus units reach Shelf clinics",
+  "price_range": "Φ 2,200–Φ 5,600 (licensed); Φ 400–Φ 900 (surplus/gray market)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Shelf geneware clinic is performing unlicensed modifications using stolen Pellucid suits — the suits are legitimate, but nothing else in the operating space is.",
+    "A lab technician notices their suit's positive-pressure system has been quietly downgraded — someone wanted a specific sample to get out of the cleanroom.",
+    "The sealed gene-apertures on a batch of suits were shipped pre-opened, suggesting someone at the factory is flagging suits for buyers who don't want to ask questions about their modifications."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "cleanroom",
+    "biotech",
+    "geneware",
+    "lab",
+    "sterile",
+    "work-gear",
+    "tier3",
+    "tier4",
+    "tier5",
+    "gene-compatible",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

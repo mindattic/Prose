@@ -1,0 +1,34 @@
+{
+  "name": "Meridian Health Collective EMT Response Suit",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "medical_emergency_response",
+  "manufacturer": "Evergreen Wellness",
+  "description": "The EMT Response Suit is the daily-wear uniform for emergency medical technicians operating across all tiers of Meridian 88 under the city's public health framework — a framework that is nominally independent but substantially Lazarus-licensed in its equipment and protocols. The suit is a two-piece design in high-visibility paramedic blue with retroreflective white striping. The jacket is a fluid-resistant ripstop shell with integrated chest padding rated for the physical demands of patient extraction; the trousers have reinforced knee panels and deep cargo pockets with one-hand-open closures. Geneware accommodation is built into the design specification: the collar is cut wide for neck-fur or bioluminescent skin, the back yoke has a structured panel for wing-adjacent modifications, and the trousers offer a rear vent seam for tail-geneware that closes with a sterile-grade zipper when not needed. All seams are welded, not stitched, for fluid resistance.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ220",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "EMTs in Meridian 88 operate in a complicated political space — they're the city's health service but Lazarus's licensing fees mean the Collective is perpetually underfunded, and response times in Tier 1 are a documented scandal. The uniform is trusted in most of the city but has been counterfeited by Shelf medical services that operate outside Lazarus licensing, creating a credential problem that the Collective and Lazarus both prefer to ignore.",
+  "story_hooks": [
+    "A counterfeit EMT response suit, indistinguishable from genuine issue, is being used by someone running a Shelf medical service that operates outside Lazarus oversight — and their patient outcomes are actually better.",
+    "Lazarus quietly embedded a treatment-data capture thread in the suit's chest panel lining that logs patient vitals during initial response — data that Lazarus owns under the licensing agreement.",
+    "An EMT working a Tier 1 night shift finds that their suit's retroreflective striping is being used as a targeting reference by automated security systems that were never supposed to be active in medical response zones."
+  ],
+  "tags": [
+    "lazarus",
+    "emt",
+    "emergency-medical",
+    "paramedic",
+    "geneware-compatible",
+    "augment-compatible",
+    "fluid-resistant",
+    "high-visibility",
+    "public-health",
+    "two-piece"
+  ],
+  "id": "843145ce7a9340c19f8754fbfd6e9259",
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

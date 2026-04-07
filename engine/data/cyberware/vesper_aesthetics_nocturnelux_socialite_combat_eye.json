@@ -1,0 +1,55 @@
+{
+  "id": "e6c8d3f1a02b5947b5e6f7a8c9d0e123",
+  "name": "VESPER AESTHETICS NocturneLux Socialite Combat Eye",
+  "brand_name": "VESPER AESTHETICS",
+  "product_name": "NocturneLux Dual-Mode Socialite Combat Ocular",
+  "type": "cyberware",
+  "aliases": [
+    "Velvet Killers",
+    "NoctiLux",
+    "Viper Glam"
+  ],
+  "category": "ocular",
+  "body_location": "eyes",
+  "description": "The NocturneLux is Vesper Aesthetics' answer to a question no one was supposed to be asking: what if the most beautiful eyes in the room were also the most dangerous? Externally, the unit presents as a high-fashion full-replacement ocular with deep, shifting scleral tones — midnight velvet, iridescent gold, void black — and an iris that cycles through couture-pattern overlays licensed from three Spire-level designers. Beneath the aesthetic layer, a concealed tactical package includes threat-distance estimation, low-light amplification to 0.002 lux, and a micro-expression analysis overlay that reads physiological stress cues in conversation partners, displayed as subtle color halos visible only to the wearer.\n\nThe NocturneLux is the open secret of Meridian 88's Tier 4-5 social-predator class — executives, negotiators, socialites who navigate rooms where every conversation is a transaction and reading people accurately is worth more than any weapon. Vesper markets it as 'confidence enhancement' and files the tactical package under 'social awareness features,' which has kept it in Licensed rather than Restricted territory through what everyone assumes is an expensive legal arrangement. On the Shelf, knockoffs circulate with degraded aesthetic layers and broken micro-expression reads that are just as likely to hallucinate hostility as detect it.",
+  "manufacturer": "VESPER AESTHETICS",
+  "tier_availability": "Tier 3-5",
+  "legality": "Licensed",
+  "installation_requirements": "Full ocular extraction; aesthetic calibration session for designer pattern licensing; standard biocompatible installation",
+  "rejection_risk": "Low — Vesper uses Lazarus-sourced biocompatible coating under licensing agreement; rejection rates comparable to medical-grade units",
+  "maintenance": "Seasonal designer pattern library updates via Vesper boutique uplink; annual lens polish; micro-expression sensor recalibration every 8 months",
+  "specifications": "{\"aesthetic_modes\": \"scleral tone palette 800 colors, 3 licensed designer iris pattern suites\", \"low_light\": \"0.002 lux amplification\", \"threat_estimation\": \"range and vector overlay\", \"micro_expression_analysis\": \"physiological stress cue detection, color halo display\", \"halo_visibility\": \"wearer-only\", \"iris_animation\": \"couture-pattern cycling\", \"recording\": \"passive 2K ambient log\", \"power\": \"bioelectric passive draw\", \"uplink\": \"Vesper boutique secure sync\"}",
+  "side_effects": [
+    "Micro-expression overlay causes hyperanalytical social behavior — users struggle to engage in conversation without running threat/stress assessments",
+    "Designer pattern cycling can trigger involuntary aesthetic mode shifts during emotional arousal, revealing internal state",
+    "Long-term users report difficulty trusting positive social interactions — the overlay makes sincerity look identical to practiced deception",
+    "Knockoff units produce false micro-expression reads causing paranoia and inappropriate social aggression"
+  ],
+  "cultural_context": "The NocturneLux has become shorthand in Meridian 88's Tier 4-5 circles for a specific kind of person — beautiful, aware, and not entirely safe. Wearing them is a social statement that you play the room as a board rather than a party. The fact that they're technically Licensed rather than Restricted is considered one of Vesper's finest achievements.",
+  "known_users": [
+    "Tier 4-5 executives and corporate negotiators",
+    "High-end socialites and social-circuit power brokers",
+    "Diplomatic and intelligence-adjacent personnel",
+    "Luxury-tier fixers operating in Spire spaces",
+    "Celebrities whose public persona requires both beauty and situational dominance"
+  ],
+  "story_hooks": [
+    "A Vesper NocturneLux unit begins displaying micro-expression halos around people who aren't present in the room — ghost reads of people who were there hours ago, or something the sensor was never designed to detect",
+    "The seasonal designer pattern update pushes a hidden data-harvest payload — every NocturneLux ambient log from the past year is being silently exfiltrated to an unknown recipient",
+    "A Tier 5 negotiator's NocturneLux recorded a conversation that neither party was supposed to remember; the passive log survived, and now both sides want it destroyed — or want the other side to think it's been destroyed"
+  ],
+  "street_price": "Φ41,000",
+  "licensed_price": "Φ95,000",
+  "tags": [
+    "cyberware",
+    "ocular",
+    "fashion",
+    "tactical",
+    "hybrid",
+    "micro-expression",
+    "vesper",
+    "licensed",
+    "socialite"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,34 @@
+{
+  "id": "e4e87eefab0bc558acaf5a3ba88a14bf",
+  "name": "Doomsday Prepper",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Survives by preparing for catastrophes that may never come",
+  "behavioral_signature": "Has a plan for every apocalypse scenario including the unlikely ones",
+  "under_stress": "Finally vindicated when disaster strikes, becomes smugly competent",
+  "at_rest": "Stockpiling, planning, and warning others who don't listen",
+  "will_always": [
+    "prepare for the worst"
+  ],
+  "will_never": [
+    "be caught without a contingency plan"
+  ],
+  "unless": [
+    "the disaster is something genuinely unprecedented"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Prepared",
+      "threshold": 0.85,
+      "context": "extreme preparation"
+    }
+  ],
+  "opposite_of": [
+    "Gambler"
+  ],
+  "tags": [
+    "preparation",
+    "paranoia",
+    "stockpiling"
+  ]
+}

@@ -10,7 +10,7 @@
   ],
   "category": "explosive",
   "description": "The HDC-2 is a two-stage chemical-explosive device designed for data infrastructure denial. The outer shell contains a conventional shaped charge that ruptures a pressurized inner reservoir filled with a superheated hydrolytic solution — a proprietary TESSERA CORPONATION compound that aggressively attacks organic polymers, fiber-optic cladding, and unshielded circuit substrates on contact. The blast itself is modest; the real damage is the dispersed chemical payload that coats surfaces in a 5-meter radius with a compound that continues reacting for up to 40 minutes after detonation.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "Cognitive Wellness Foundation",
   "tier_availability": "Tier 3+",
   "legality": "Restricted",
   "base_technologies": [
@@ -45,6 +45,8 @@
     "corporate",
     "market",
     "circuit",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

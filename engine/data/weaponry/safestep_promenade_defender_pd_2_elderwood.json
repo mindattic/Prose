@@ -1,0 +1,46 @@
+{
+  "id": "f3a4b5c6d7e8901234f5a6b7c8d90123",
+  "name": "SafeStep Promenade Defender PD-2 'Elderwood'",
+  "type": "weapon",
+  "aliases": [
+    "Elderwood",
+    "grandpa's stick",
+    "the cane"
+  ],
+  "category": "melee",
+  "description": "The SafeStep Promenade Defender PD-2 'Elderwood' is marketed with elegant restraint: 'personal security for the discerning pedestrian.' It is, to all external appearances, a handsome walking cane — 95 centimeters of dark composite polymer with a woodgrain surface texture, a curved ergonomic handle, and a rubber ferrule tip. It is also a fully functional 120,000-volt shock weapon, with the discharge electrode concealed within the handle's grip surface and activated by a biometric thumb press that requires enrollment to a specific user's fingerprint. Without the biometric trigger, the Elderwood functions and feels exactly like a standard mobility aid.\n\nSafeStep developed the Elderwood in response to a documented pattern of violent crime targeting older Tier 3-4 residents — individuals who were perceived as wealthy enough to be worth robbing but physically vulnerable enough to be easy targets. The product was designed specifically to avoid the social and psychological friction of carrying an obvious weapon: many of SafeStep's target demographic had no interest in appearing armed, either for personal aesthetic reasons or because they lived in buildings with strict weapons policies that did not extend to mobility aids. The Elderwood exploits this gap with quiet effectiveness. It has been in continuous production since 2188 and is SafeStep's best-selling product by unit revenue.\n\nThe weapon's concealed nature has generated moderate legal controversy. Meridian's concealed weapon statutes are primarily written around projectile weapons, and the Elderwood occupies a grey zone: it is not concealed in the sense that it is visible, but its weapon capability is not disclosed, raising questions about whether it constitutes a deceptively configured weapon under Meridian Code 77-B. SafeStep's legal team has successfully defended this position in three separate regulatory challenges, arguing that the device is 'a mobility aid with an integrated personal safety feature,' a classification that the relevant regulatory body has not yet formally contested.",
+  "manufacturer": "SAFESTEP",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal (contested) — classified as mobility aid with integrated safety feature; biometric lock prevents unauthorized use; concealed weapon challenges unresolved under Meridian Code 77-B",
+  "base_technologies": [
+    "biometric fingerprint activation",
+    "concealed contact electrode",
+    "woodgrain composite polymer shell",
+    "mobility aid form factor"
+  ],
+  "specifications": "Length: 95 cm (standard); 85/105 cm available\nWeight: 0.42 kg\nDischarge Voltage: 120,000 V\nActivation: Biometric thumb press (up to 3 enrolled fingerprints)\nBattery Life: 150 strikes per charge (micro-USB-C charging, 2-hour full charge)\nElectrode Location: Concealed in grip surface\nBody: Woodgrain composite polymer (5 color/texture variants)\nWeight Bearing: Rated to 150 kg (functional mobility aid)\nFerrule: Replaceable rubber tip\nPrice: Φ380–Φ520 (variant-dependent)",
+  "tactical_use": "The Elderwood is a defensive weapon for close-quarters ambush response — it is not a dueling tool or an offensive instrument. The typical use case involves an attacker moving to grab or strike the user; the user makes contact with the handle grip as part of a natural defensive gesture (raising the cane, pushing away) and activates the biometric discharge, delivering a shock that drops most unaugmented assailants. The handle-mounted electrode means discharge requires close body contact, limiting range but making the activation motion naturalistic. Users with combat training adapt it to more deliberate strike patterns, but SafeStep's own materials emphasize 'instinctive activation in surprise scenarios.'",
+  "cultural_context": "In Tier 3-4 communities, the Elderwood has become a quiet status object among a certain demographic — the 'discerning older resident who is not naive about Meridian.' Ownership is rarely advertised; it tends to be discovered after the fact, when someone has used one. There is a specific cultural archetype in Meridian storytelling — the seemingly frail older person who turns out to be considerably more dangerous than assumed — and the Elderwood has become a real-world prop for that archetype. Younger residents sometimes mock it as 'grandpa's stick,' but this mockery tends to diminish after the first time they see one deployed. On the street, the phrase 'check the cane' has entered circulation as a warning about not making assumptions about elderly marks.",
+  "known_users": [
+    "older Tier 3-4 residents in high-pedestrian areas",
+    "individuals with mobility impairments who want self-defense capability",
+    "some Tier 4 professionals who prefer subtle carry"
+  ],
+  "story_hooks": [
+    "A retired Arcturus logistics analyst — 74 years old, uses a cane due to a knee replacement — was found at the scene of an altercation in a Tier 3 transit plaza with two unconscious assailants and a discharged Elderwood. Standard procedure. Except the analyst's discharge log, which SafeStep maintains for warranty purposes, shows the cane was used seventeen times in the past month, and the locations don't match the reported incident — they match a pattern of targeted attacks on individuals connected to a specific Arcturus internal audit from 2198."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "electric",
+    "concealed",
+    "disguised",
+    "defensive",
+    "civilian",
+    "biometric",
+    "mobility-aid"
+  ],
+  "parent_corponation": ""
+}

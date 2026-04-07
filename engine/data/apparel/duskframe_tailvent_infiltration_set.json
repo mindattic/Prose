@@ -1,0 +1,48 @@
+{
+  "id": "2d8a501f7c3b96e4d0f2a74b1e8c3d90",
+  "name": "Duskframe Tailvent Infiltration Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Designed from the ground up for runners with significant geneware — specifically those with tails, bioluminescent skin, or other visible biological modifications that make standard tactical gear a liability. The jacket is a mid-length structured piece in deep teal-grey with a matte finish, cut wide at the hip with a full-length dorsal vent that runs from the small of the back to the hem, sealed with a continuous pressure-release zipper that can be opened single-handed. The vent accommodates prehensile tails up to approximately 90cm without binding, and the zipper teeth are coated in a thermal-neutral compound that won't read against body heat on infrared. The jacket's interior is lined with scanner-diffusing baffling and carries four concealed weapon channels — two at the chest, one cross-draw at the left hip, one lower-right for a compact sidearm. The base layer beneath is a long-sleeve in deep charcoal with integrated bioluminescence-dampening panels along the forearms and collar — for runners whose geneware glow would otherwise give them away in dark environments, these panels absorb and redirect the light output inward, effectively dimming visible bioluminescence by approximately 70%. The trousers are wide-leg dark olive with a reinforced tail-channel waistband, articulated thighs, and two deep cargo pockets with internal dividers for tool organization. Footwear is a low-profile wrap boot in matte anthracite synth-leather with a segmented sole for quiet movement and adjustable ankle closures that work with non-standard foot morphology. A slim waist wrap in dark indigo provides additional concealed storage and can be released as a distraction throw.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "deep teal-grey matte structured ripstop",
+    "scanner-diffusing interior baffling",
+    "bioluminescence-dampening charcoal stretch knit",
+    "dark olive wide-leg articulated twill",
+    "matte anthracite synth-leather",
+    "thermal-neutral zipper compound"
+  ],
+  "functionality": "Full-length dorsal tail vent with single-hand pressure-release zipper; bioluminescence-dampening forearm and collar panels; four concealed weapon channels; scanner-diffusing jacket lining; tail-channel reinforced waistband; adjustable ankle closures for non-standard foot morphology; segmented quiet-movement sole; concealed waist-wrap storage; infrared-neutral zipper coating",
+  "what_it_says": "This outfit acknowledges that geneware isn't a liability if you plan around it. The runner wearing this has made peace with what they are and found a way to make it tactical. The bioluminescence-dampening panels and the tail vent aren't apologies — they're engineering. It reads as Tier 2-3 to most people, just someone with visible geneware moving through Circuit, which is common enough to be unremarkable.",
+  "worn_by": [
+    "geneware-heavy runners",
+    "operatives with tails or bioluminescent modifications",
+    "runners who can't pass as baseline human and have stopped trying",
+    "gene-modded infiltration specialists",
+    "couriers with non-standard body morphology"
+  ],
+  "manufacturer": "Duskframe Collective — independent street label, gene-mod community origin",
+  "price_range": "Φ 850 – Φ 1,300",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The bioluminescence-dampening panels have been functioning at reduced capacity since a chemical exposure two jobs back — in a dark server room, the runner's forearms begin to glow faintly through the fabric at exactly the wrong moment.",
+    "A corpsec checkpoint has a new scanner specifically calibrated to detect the thermal-neutral zipper compound used in gene-compatible tactical gear, suggesting someone in the runner community has been feeding equipment intel to the corponation.",
+    "The runner is hired specifically because of their visible geneware — the client needs someone who will be remembered as 'the one with the tail' to draw attention away from the real operative working the same job in plain clothes."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier_2",
+    "tier_3",
+    "gene_compatible",
+    "tail_vent",
+    "bioluminescence_dampening",
+    "scanner_resistant",
+    "concealed_carry",
+    "geneware_tactical"
+  ],
+  "parent_corponation": ""
+}

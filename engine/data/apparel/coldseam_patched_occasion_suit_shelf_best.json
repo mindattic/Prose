@@ -1,0 +1,32 @@
+{
+  "name": "Coldseam Patched Occasion Suit — Shelf Best",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "suit",
+  "manufacturer": "Coldseam (market-made, no fixed address)",
+  "description": "A two-piece suit assembled from mismatched fabric lots — the jacket a dark charcoal synth-wool, the trousers a slightly lighter black that has faded to near-gray at the knees. Both pieces have been let out and taken in multiple times; the evidence is visible in the seam lines if you look. The lapels are hand-pressed with something waxy, probably a bar of market soap, and hold their shape for a few hours before relaxing. The jacket's right sleeve has a careful patch at the elbow, stitched in a thread that is close but not quite matching.\n\nOn the Shelf, this is what you wear to your cousin's tier-certification hearing, to a funeral, to the one job interview that might mean something. It is clean. That matters more than anything else. People who wear this suit understand that being clean and pressed in a Tier 1 environment requires real effort and real sacrifice, and other Shelf residents recognize that effort immediately.",
+  "tier_availability": "Tier 1-2",
+  "price": "Φ8",
+  "augment_compatible": false,
+  "geneware_compatible": false,
+  "durability": "low",
+  "legal_status": "legal",
+  "cultural_context": "On the Shelf, a suit like this is borrowed, shared, and passed between neighbors for occasions. Owning one outright is a small form of wealth. Higher-tier observers often clock it instantly as Shelf-formal, which carries its own social weight in mixed-tier spaces.",
+  "story_hooks": [
+    "The suit belongs to three different people in the same building — whoever has the occasion that week borrows it, cleans it, and returns it. Someone has started leaving a small note in the breast pocket each time.",
+    "A character wearing this to a corporate job interview is seated in a waiting room full of Tier 3 applicants in proper synth-wool. The receptionist's expression tells them everything before a word is spoken.",
+    "The patch on the sleeve was sewn by someone who is no longer alive. The wearer has never repaired it further, even when the stitching began to loosen."
+  ],
+  "tags": [
+    "shelf",
+    "suit",
+    "formal",
+    "hand-repaired",
+    "budget",
+    "occasion",
+    "tier-1",
+    "thrift"
+  ],
+  "id": "85ae024879a94531a0dd71c7045c8694",
+  "parent_corponation": ""
+}

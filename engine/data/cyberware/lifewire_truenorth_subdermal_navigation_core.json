@@ -1,0 +1,55 @@
+{
+  "id": "a3f7c2e1b509d84f6a1e3c7d2b0f9e45",
+  "name": "LifeWire TrueNorth Subdermal Navigation Core",
+  "brand_name": "LifeWire",
+  "product_name": "TrueNorth",
+  "type": "cyberware",
+  "aliases": [
+    "the pin",
+    "dotfinder",
+    "wayfinder",
+    "the needle",
+    "geobone"
+  ],
+  "category": "convenience",
+  "body_location": "subdermal mastoid (behind the ear, base of skull)",
+  "description": "The TrueNorth is a compact subdermal navigation implant housing a triaxial magnetometer, a MEMS gyroscope, and a low-power mesh-network receiver that triangulates position using Meridian 88's civic beacon grid. It delivers directional and positional data as a continuous proprioceptive signal — not a visual overlay, but a felt sense of orientation, like an internal tug in the direction of a destination. Users describe it as having an additional spatial instinct rather than reading a map. When integrated with a paired neural mesh or external AR glasses, it can project a minimal waypoint system, but the implant functions entirely without external devices. In beacon-dead zones such as deep Shelf tunnels or shielded corporate arcologies, it falls back to dead reckoning using the gyroscope and last known position, maintaining accuracy within roughly forty meters over a two-hour drift window.\n\nThe TrueNorth is ubiquitous among delivery workers, transit operators, and anyone who spends significant time navigating Meridian 88's layered infrastructure of elevated walkways, sub-level corridors, and flood-diverted street grids. For Tier 1 and Tier 2 residents in particular, where civic signage is poorly maintained and street-level geography shifts seasonally with flooding and construction, the implant functions as basic survival infrastructure rather than luxury. Parents in the Shelf commonly have the implant installed in teenagers as a safety measure. The felt-sense navigation means users never have to look at a screen in dangerous areas, keeping their eyes and attention free — a practical consideration that has made it standard-issue for courier work.",
+  "manufacturer": "LIFEWIRE CONSUMER IMPLANT SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or licensed pharmacy kiosk; 20-minute procedure under local anesthetic",
+  "rejection_risk": "Minimal",
+  "maintenance": "Firmware sync recommended every 6 months via clinic kiosk; beacon calibration annually; battery cell rated for 9-year replacement cycle",
+  "specifications": "{\"positioning_method\": \"civic beacon triangulation + MEMS dead reckoning\", \"fallback_accuracy\": \"~40m over 2hr drift\", \"output_modality\": \"proprioceptive haptic signal\", \"optional_overlay\": \"compatible with NeuralPath and MindBridge mesh platforms\", \"beacon_grid_coverage\": \"Tier 2-5 full, Tier 1 partial\", \"battery_life\": \"9-year cell\", \"dimensions\": \"11mm x 6mm x 3mm\"}",
+  "side_effects": [
+    "Mild spatial disorientation during first 2-3 weeks of calibration",
+    "Occasional phantom directional pull when beacon signal drops suddenly",
+    "Some users report difficulty sleeping on the installation side for the first month",
+    "Rare cases of minor proprioceptive noise described as a faint hum when stationary in signal-dense areas"
+  ],
+  "cultural_context": "The TrueNorth is so common in Meridian 88 that asking someone for directions is considered mildly eccentric — like asking a stranger to do arithmetic for you. Among Tier 1 and Tier 2 residents it carries no social weight at all; it is simply a thing you have, like shoes. In Tier 4 and Tier 5 circles the base model is considered a working-class implant, and those who want navigation functionality at higher tiers typically integrate it into premium neural platforms rather than wearing the standalone unit. There is a minor subculture of Shelf youth who deliberately disable or spoof the beacon sync as an assertion of off-grid identity, wearing the implant for the dead-reckoning function only and calling it 'going dark.' Courier and logistics unions have lobbied, with limited success, to have employer-mandated TrueNorth installs classified as workplace equipment eligible for corporate coverage.",
+  "known_users": [
+    "Delivery couriers and logistics workers",
+    "Teenagers in Tier 1 and Tier 2 neighborhoods",
+    "Transit workers and infrastructure maintenance crews",
+    "New arrivals to Meridian 88 navigating unfamiliar districts",
+    "Elderly residents managing cognitive navigation difficulties"
+  ],
+  "story_hooks": [
+    "A player's TrueNorth begins giving impossible directional data — pointing consistently toward a location that doesn't appear on any civic beacon map, deep in an unmapped Shelf sub-level.",
+    "A courier union is striking over a corponation policy requiring workers to use a proprietary TrueNorth firmware update that also logs all movement data to corporate servers, and the players are asked to either support the strike or break it.",
+    "Someone has been surgically removing TrueNorth units from victims in the Shelf — not for resale, but apparently to build something out of the magnetometer arrays."
+  ],
+  "street_price": "Ψ180–Ψ320 depending on district and vendor",
+  "licensed_price": "Ψ490 at LifeWire authorized clinics",
+  "tags": [
+    "cyberware",
+    "convenience",
+    "lifestyle",
+    "navigation",
+    "mass-market",
+    "worker-class",
+    "proprioceptive"
+  ],
+  "parent_corponation": ""
+}

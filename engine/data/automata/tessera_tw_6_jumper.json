@@ -1,0 +1,50 @@
+{
+  "name": "TESSERA TW-6 'Jumper'",
+  "type": "automaton",
+  "classification": "Spider Platform — Rapid Assault",
+  "aliases": [
+    "Jumper",
+    "Tick",
+    "Leapfrog"
+  ],
+  "manufacturer": "Thoughtline Messaging",
+  "description": "The TW-6 is a compact, four-legged spider platform with massively oversized rear leg actuators that give it a vertical leap capacity of twelve meters and a horizontal jump range of twenty. It weighs only 15 kilograms and carries a single shaped explosive charge in its ventral cavity. The operational concept is simple: the Jumper identifies a target, closes distance through a series of rapid leaps that make it nearly impossible to track visually, lands on the target, clamps its legs around whatever body part it contacts, and detonates.\n\nThe TW-6 is a disposable assassin. Each unit costs roughly what a mid-tier augmentation procedure costs, making them economically viable as single-use weapons against high-value targets. They can be deployed from rooftops, vehicles, or simply released at ground level to leap toward their designated target. The jump trajectory is calculated to be erratic — no two jumps follow the same arc — making interception by automated defense systems extremely difficult.\n\nTESSERA markets the TW-6 as an 'asymmetric threat response platform' designed to neutralize targets that conventional weapons cannot reach. The reality is that it's a mechanical suicide bomber shaped like a nightmare, and its small size means it can be concealed in bags, boxes, or vehicles until deployment.",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted",
+  "autonomy_level": "Fully autonomous after target designation",
+  "dimensions": "0.3m body length, 0.6m leg span (compact), 1.0m leg span (jump position)",
+  "weight": "15 kg",
+  "power_source": "Single-use lithium cell, 20-minute operational life",
+  "locomotion": "Quadruped with enhanced leap actuators (12m vertical, 20m horizontal)",
+  "armament": [
+    "Ventral shaped explosive charge",
+    "Leg clamp system"
+  ],
+  "sensors": [
+    "Target-lock optical tracking",
+    "Inertial navigation for jump calculation"
+  ],
+  "countermeasures": "Shotgun-type weapons most effective against airborne units. Electronic countermeasures can disrupt target lock between jumps. The 20-minute battery life means evasion is theoretically possible if you can run long enough.",
+  "known_deployments": [
+    "TESSERA security operations",
+    "Black market units documented in corporate assassination attempts"
+  ],
+  "story_hooks": [
+    "A box containing six dormant TW-6 units was intercepted in a shipping container bound for the Shelf. The target designations are already programmed. Six names. Six people who don't know they're marked.",
+    "A TW-6 jumped onto a target and failed to detonate — its charge was a dud. The target is alive with a mechanical spider clamped to their chest, and the removal process is the most terrifying bomb disposal job in the city."
+  ],
+  "cultural_context": "The TW-6 has made rooftops and elevated positions feel unsafe for the first time. In a city where looking up meant seeing spires, looking up now also means checking for something that might be looking back.",
+  "tags": [
+    "automaton",
+    "spider",
+    "assassin",
+    "explosive",
+    "weapon",
+    "war",
+    "tessera",
+    "corporate",
+    "tier 4"
+  ],
+  "id": "bfab64036ebac9ec99984480d4835766",
+  "parent_corponation": "Tessera Corponation"
+}

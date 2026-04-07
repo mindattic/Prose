@@ -1,0 +1,47 @@
+{
+  "id": "cfbdba92c6fb98f94c32d6a8ee641959",
+  "name": "Lazarus Pharmaceuticals OceanPurge Marine Restoration",
+  "brand_name": "Lazarus",
+  "product_name": "OceanPurge MRS-3",
+  "type": "technology",
+  "aliases": [
+    "OceanPurge",
+    "MRS-3",
+    "Sea Cleaner",
+    "Ocean Scrubber"
+  ],
+  "subcategory": "environmental",
+  "description": "The OceanPurge MRS-3 is a fleet of autonomous marine vessels designed to extract microplastics, heavy metals, and persistent organic pollutants from ocean water. Each vessel is a catamaran-hull platform approximately 30 meters long, equipped with cascading filtration systems that process 500,000 liters of seawater per hour. The filtration stages progress from physical mesh collection of macro-debris through increasingly fine membrane filters to a final nanofiltration stage that captures particles down to 50 nanometers — small enough to remove dissolved chemical contaminants and microplastic fragments that conventional filtration misses.\n\nLazarus Pharmaceuticals entered the marine restoration market through an unexpected path: their pharmaceutical research required ultra-pure water for drug synthesis, and the nanofiltration technology they developed for that purpose proved effective at ocean decontamination. The OceanPurge fleet of approximately 400 vessels operates continuously across the world's oceans, concentrating on shipping lanes, coastal industrial zones, and the remnants of the Pacific and Atlantic garbage patches that were partially remediated in the 2150s but continue to leach contaminants.\n\nThe extracted contaminants are stored in sealed tanks aboard each vessel and offloaded at processing facilities where recoverable materials — rare earth metals, platinum-group elements accumulated in ocean sediment — are extracted for sale. The remaining toxic waste is vitrified into glass blocks and stored in deep geological repositories. Lazarus reports that ocean microplastic concentrations have decreased by 70% since the OceanPurge program's inception in 2168, though independent researchers argue the actual figure is closer to 45% and that Lazarus's measurements conveniently sample from areas recently cleaned by their own vessels.",
+  "tier_availability": "Tier 3",
+  "developers": [
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "Cascading nanofiltration",
+    "Autonomous marine navigation",
+    "Contaminant recovery processing",
+    "Deep geological waste storage"
+  ],
+  "enables": [
+    "Ocean microplastic removal",
+    "Heavy metal extraction from seawater",
+    "Marine ecosystem restoration",
+    "Rare earth recovery from ocean sediment"
+  ],
+  "social_impact": "OceanPurge has positioned Lazarus as an environmental steward — a reputation they leverage aggressively in marketing and regulatory negotiations. The program's actual environmental impact is significant but often overstated, and critics note that Lazarus profits from the rare earth materials recovered from ocean contamination, creating yet another corporate incentive structure where cleanup is also a revenue source. Coastal fishing communities have reported improved catches in areas where OceanPurge vessels operate regularly, providing tangible evidence of ecological recovery.",
+  "story_hooks": [
+    "An OceanPurge vessel's filtration system has captured biological material that doesn't match any known marine organism — something is living in the deep ocean that science hasn't cataloged, and Lazarus is keeping the samples under maximum biosecurity rather than sharing them.",
+    "Three OceanPurge vessels have deviated from their programmed routes and converged on a single point in the deep Pacific — their autonomous navigation systems all independently determined that something at that location requires immediate filtration, and Lazarus has deployed a military escort to the site."
+  ],
+  "tags": [
+    "environmental",
+    "technology",
+    "terraforming",
+    "ocean",
+    "marine",
+    "lazarus",
+    "filtration",
+    "tier 3"
+  ],
+  "parent_corponation": ""
+}

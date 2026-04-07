@@ -1,0 +1,48 @@
+{
+  "id": "2d8ab66aa4fae7687d1a1585fd9441f3",
+  "name": "Ouroboros CS-4 'Gentleman'",
+  "type": "weapon",
+  "aliases": [
+    "Gentleman",
+    "Walking Stick",
+    "Sunday Cane"
+  ],
+  "category": "concealed weapon",
+  "description": "A carbon-fiber walking cane containing a 60-centimeter monomolecular-edged blade concealed within the shaft. The blade is drawn by twisting the cane's handle 90 degrees and pulling — a motion that takes approximately 0.3 seconds for a practiced user. The blade's monomolecular edge can sever unarmored limbs, and the cane's 90-centimeter overall length provides reach advantage over conventional bladed weapons. The remaining shaft section serves as a parrying tool or blunt-force weapon after the blade is drawn.\n\nOuroboros manufactures the Gentleman for a specific clientele: wealthy individuals in Meridian 88's upper tiers who face personal security threats but cannot be seen carrying weapons without damaging their social position. The cane is crafted from genuine carbon fiber with premium fittings, weighted for comfortable walking use, and finished to standards that justify its Φ8,000 price point as a luxury accessory. In a social environment where visible weapons are considered gauche, the Gentleman allows its owner to be armed while appearing civilized.\n\nThe weapon's monomolecular edge is its most dangerous feature and its primary maintenance burden. The edge degrades with each use and requires professional resharpening that only Ouroboros-certified technicians can perform. This creates a dependency chain — Gentleman owners must maintain a relationship with Ouroboros to keep their weapon functional, and Ouroboros's maintenance records constitute a database of every person in Meridian 88 who is carrying a concealed monomolecular blade.",
+  "manufacturer": "Ouroboros Solar Array Division",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — concealed bladed weapon; widely owned in upper tiers with zero enforcement",
+  "street_price": "Φ8,000",
+  "base_technologies": [
+    "Monomolecular edge fabrication",
+    "Quick-draw concealment mechanism",
+    "Carbon-fiber structural engineering"
+  ],
+  "specifications": "blade length: 60cm\nedge: Monomolecular (requires periodic resharpening)\ncane length: 90cm overall\nweight: 0.7 kg\ndraw time: 0.3 seconds (practiced user)\nmaterial: Carbon fiber shaft, titanium fittings",
+  "tactical_use": "Personal defense and premeditated close-quarters combat. The Gentleman provides a concealed lethal option in social environments where firearms or visible weapons would be inappropriate. The blade's reach and cutting power compensate for the user's likely lack of formal combat training.",
+  "cultural_context": "The Gentleman is an open secret in Meridian 88's upper tiers. Everyone knows that the carbon-fiber canes carried by certain executives and socialites are weapons. Nobody acknowledges it. The legal prohibition against concealed blades is enforced exclusively in the lower tiers, creating a two-tier justice system where the wealthy carry monomolecular swords and the poor are arrested for pocketknives.",
+  "known_users": [
+    "Upper-tier executives and socialites",
+    "Retired corporate security personnel",
+    "Ouroboros board members (complimentary issue)"
+  ],
+  "story_hooks": [
+    "A Gentleman blade has been used in a killing at a charity gala — a monomolecular cut through the carotid, fast enough that the victim was dead before anyone noticed. Every guest with a carbon-fiber cane is now a suspect, and there are fourteen of them.",
+    "Ouroboros's maintenance records have been stolen, revealing the identity of every Gentleman owner in Meridian 88. Someone is selling the list to people who want to know which members of the upper tier are secretly armed — and which are not."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "concealed",
+    "weapon",
+    "disguised",
+    "cane",
+    "blade",
+    "monomolecular",
+    "ouroboros",
+    "luxury",
+    "melee",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Ouroboros Energy"
+}

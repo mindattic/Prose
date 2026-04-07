@@ -1,0 +1,34 @@
+{
+  "name": "Crucible Smelter Operations Thermal Suit",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "protective_industrial",
+  "manufacturer": "Crucible Manufacturing Solutions",
+  "description": "Workers operating in Crucible's active smelting floors and high-temperature fabrication cells wear this suit as their primary layer of protection between themselves and environments that can reach 900 degrees Celsius at the point of operation. The outer shell is a ceramic-fiber composite woven over a reflective aluminized barrier — stiff at the shoulders and chest where heat exposure is greatest, more flexible at the joints where mobility is necessary for crane controls and pour-gate operations. Crucible's safety division mandates this suit for all smelter floor personnel regardless of augmentation status, which creates ongoing friction with workers whose chrome runs hot and requires additional ventilation. The suit incorporates mesh ventilation channels along the flanks that help but don't fully resolve the conflict.\n\nThe suit is orange-red — Crucible's floor safety color — with black trim and a reflective stripe across the back and both arms. The Crucible wordmark is heat-stamped on the left chest. It weighs approximately 4.2 kilograms fully assembled, and workers on eight-hour smelter shifts describe the weight as the defining physical fact of their working day. Tail accommodations exist: a sealed rear port with a fire-rated closure flap rated to the same thermal standard as the rest of the suit. Workers with significant geneware modifications that increase surface area — fur, scales, dermal ridges — report significantly elevated heat stress and have been the subject of three ongoing Crucible labor grievances regarding suit design inadequacy.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ340",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "The Crucible thermal suit is understood in Meridian 88's industrial labor community as a symbol of one of the city's most physically demanding jobs. Workers who wear it carry a specific kind of pride and exhaustion. The suit's weight and heat are discussed in Tier 2 worker communities the way weather is discussed — constant, defining, shared. Labor organizers have used the suit's documented inadequacy for geneware workers as a rallying point.",
+  "story_hooks": [
+    "A fatal smelter-floor incident is being attributed to suit failure, but the worker's colleagues believe the suit was sabotaged.",
+    "A labor organizer is compiling documentation of geneware workers' heat-stress injuries to file against Crucible — and needs someone to help them get the medical records.",
+    "A stolen Crucible thermal suit turns up in a Shelf workshop being used for something that requires serious heat protection."
+  ],
+  "tags": [
+    "crucible",
+    "industrial",
+    "thermal-protection",
+    "smelter",
+    "heavy-industry",
+    "augment-compatible",
+    "geneware-compatible",
+    "labor",
+    "uniform",
+    "tier2"
+  ],
+  "id": "086717a99d3e4a568c3d46b894575599",
+  "parent_corponation": "Crucible Genomics"
+}

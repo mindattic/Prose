@@ -1,0 +1,34 @@
+{
+  "name": "SwiftRoute Last-Mile Delivery Uniform Set",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "delivery_driver",
+  "manufacturer": "SwiftRoute Logistics, Crew Outfitting Division",
+  "description": "SwiftRoute's last-mile delivery drivers cover every tier of Meridian 88, from Shelf drop-offs to Spire concierge delivery, and their uniform reflects that range of environments. The set includes a weathershell jacket in SwiftRoute's cobalt blue with retroreflective silver trim on the shoulders, chest, and cuffs for visibility in low-light urban conditions; a moisture-wicking base-layer shirt; and reinforced cargo trousers with expandable knee panels for riders who spend shifts on electric cargo bikes. The jacket is waterproof to IP68 standard and rated for sustained operation in M88's frequently severe weather corridors along the lake. GPS routing hardware is woven into the left sleeve in a mesh antenna pattern that feeds directly to the driver's BCI delivery overlay.\n\nThe uniform is designed for constant motion: every closure is magnetic or snap-based for one-handed operation, and the collar seals quickly against weather without requiring both hands. Port-access panels are integrated at the left wrist for BCI scanning hardware used to authenticate deliveries. The jacket back panel is split-vent for geneware-modified riders with tail modifications, and the collar is sized generously for workers with neck or jaw augmentation. SwiftRoute drivers are tracked continuously via the GPS mesh; the uniform is, functionally, a monitoring device. Most drivers know this and have made their peace with it, or haven't.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ110",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "SwiftRoute drivers are everywhere in M88 — they're one of the few worker categories that moves freely between tiers on a daily basis. The cobalt blue is recognized and mostly trusted; drivers have cultivated a reputation for reliability that's separate from any feelings about the corporation that employs them. The GPS tracking is an open secret that everyone pretends isn't there.",
+  "story_hooks": [
+    "A driver's GPS mesh logs a route through a section of Tier 1 that SwiftRoute's official maps show as impassable rubble — but the route data shows regular traffic, suggesting an active community the corporation doesn't know about or is actively ignoring.",
+    "A package on a standard SwiftRoute manifest is flagged by the driver's BCI scanner as containing restricted biologicals — but the system immediately clears it and logs the flag as a false positive.",
+    "A driver who covers both Tier 1 and Tier 5 routes starts noticing that certain packages going up to the Spire are being returned, unopened, with no reason logged — and the return addresses don't exist."
+  ],
+  "tags": [
+    "delivery",
+    "swiftroute",
+    "logistics",
+    "weathershell",
+    "gps-woven",
+    "augment-compatible",
+    "geneware-compatible",
+    "high-vis",
+    "tier2",
+    "urban-mobility"
+  ],
+  "id": "07a4b01556704528a2132aac3aea9c96",
+  "parent_corponation": ""
+}

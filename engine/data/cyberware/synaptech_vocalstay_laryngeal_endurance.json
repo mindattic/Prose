@@ -1,0 +1,56 @@
+{
+  "id": "c6a4d1f8b237e059c6a4d1f8b037e059",
+  "name": "SynapTech VocalStay Laryngeal Endurance",
+  "brand_name": "SynapTech",
+  "product_name": "VocalStay",
+  "type": "cyberware",
+  "aliases": [
+    "the stay",
+    "iron throat",
+    "voice lock",
+    "cord keeper",
+    "the hold"
+  ],
+  "category": "professional",
+  "body_location": "laryngeal — submucosal vocal fold reinforcement and perilaryngeal neuromuscular nodes",
+  "description": "The VocalStay is a laryngeal endurance implant designed to prevent the cumulative tissue damage and neuromuscular fatigue that destroys the professional voices of teachers, singers, street vendors, auctioneers, and anyone whose livelihood depends on sustained vocal output over years or decades. The implant consists of two primary components: a submucosal reinforcement matrix applied to the medial surface of each vocal fold, constructed from a biocompatible viscoelastic hydrogel that supplements the fold's natural lamina propria and resists the micro-hemorrhages and nodule formation that result from vocal overuse; and a set of six perilaryngeal neuromuscular stimulation nodes placed around the cricothyroid and thyroarytenoid muscles that deliver precisely timed micro-current pulses to prevent the muscular fatigue patterns that lead to compensatory misuse and long-term strain. An integrated acoustic sensor in the thyroid cartilage monitors vocal fold collision force in real time and can alert the user — via a subtle vibratory signal at the throat — when they are approaching harmful output levels. The system does not alter the natural voice character; it simply makes the instrument more durable.\n\nFor classroom teachers, the VocalStay is as close to a professional necessity as any implant in the city. A standard Meridian 88 educator speaks for five to eight hours daily in acoustically imperfect environments, often projecting over ambient noise, and the cumulative toll on unaugmented vocal anatomy is severe — chronic nodules, hemorrhagic polyps, and early dysphonia are occupational diseases of the teaching profession. Singers, from conservatory-trained performers to weekend venue acts, use it to protect their instrument across a long career. Street vendors in the Shelf's open-air markets, auctioneers, tour guides, and call-center workers running vocal output for eight hours straight are all common users. People who have the VocalStay describe the experience of a long vocal day as simply less tiring — the throat does not feel raw, the voice does not thin out in the final hours, and the anxiety of feeling one's voice beginning to fail mid-performance or mid-lesson simply recedes.",
+  "manufacturer": "SYNAPTECH",
+  "tier_availability": "Tier 2-4",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient ENT clinic; local anesthesia with mild sedation; procedure takes approximately 60–90 minutes; vocal rest required for 10–14 days post-installation",
+  "rejection_risk": "Minimal",
+  "maintenance": "Annual acoustic calibration and hydrogel integrity check at any SynapTech ENT partner clinic; neuromuscular nodes are firmware-updated wirelessly; hydrogel matrix rated for 7-year service life before elective refresh",
+  "specifications": "{\"fold_reinforcement\": \"viscoelastic hydrogel submucosal matrix\", \"stimulation_nodes\": 6, \"acoustic_sensor\": true, \"alert_type\": \"thyroid-cartilage vibrotactile\", \"fatigue_reduction\": \"estimated 60-70% reduction in vocal fold collision trauma\", \"voice_alteration\": \"none — natural timbre preserved\", \"wireless_update\": true, \"power\": \"biogalvanic self-charging\", \"weight\": \"4g installed\"}",
+  "side_effects": [
+    "Mild throat soreness and sensation of tightness during the 10–14 day post-installation vocal rest period",
+    "Some users report a brief period of hypersensitivity to throat-clearing and coughing while the hydrogel matrix integrates",
+    "Occasional false-positive fatigue alerts during emotional speech or singing at high dynamic range, which can be recalibrated",
+    "Rare cases of mild pitch instability during the first 2–3 weeks of active use while neuromuscular nodes establish baseline profiles"
+  ],
+  "cultural_context": "Among professional educators in Meridian 88, the VocalStay has achieved near-ubiquitous status in Tier 2 and 3 school systems — many teacher training programs include implant counseling as part of professional preparation, and the Meridian 88 Municipal Teachers' Union successfully negotiated employer-subsidized installation for full-time staff in 2191. In performance communities, the implant is openly discussed and normalized, treated as equivalent to a singer investing in good technique and proper warmup — it is not seen as cheating, simply as maintenance. Among street vendors and Shelf-level market workers, the economics are straightforward: a vendor who loses their voice loses their livelihood, and the implant costs less than two weeks of lost income. There is a small counter-cultural thread among certain purist vocal performance schools that considers the hydrogel reinforcement an artificial alteration of the instrument, but this view is a minority position and largely generational.",
+  "known_users": [
+    "Classroom teachers at all tier levels",
+    "Professional and semi-professional singers",
+    "Street vendors and open-air market workers",
+    "Auctioneers, tour guides, and public speakers",
+    "Call-center and customer-service workers",
+    "Religious leaders, officiants, and community organizers"
+  ],
+  "story_hooks": [
+    "A beloved Tier 1 community teacher's VocalStay acoustic sensor logs reveal that someone has been broadcasting a secondary subsonic signal through the school's PA system during her classes — her implant has been picking it up and logging it without her knowledge, and the signal matches a known corporate behavioral influence frequency.",
+    "A famous singer's voice has changed subtly but unmistakably since their last VocalStay hydrogel refresh — their manager suspects the clinic used a non-standard formulation that is slowly altering vocal fold geometry, either by accident or by design.",
+    "A street vendor in the Shelf market claims she overheard a specific conversation between two corporate figures — but investigators note her VocalStay alert log shows she was in vocal fatigue rest mode at the alleged time, raising questions about whether she could have been where she says she was."
+  ],
+  "street_price": "Ф480–Ф650",
+  "licensed_price": "Ф1,100–Ф1,500",
+  "tags": [
+    "cyberware",
+    "professional",
+    "lifestyle",
+    "laryngeal",
+    "vocal",
+    "endurance",
+    "educator"
+  ],
+  "parent_corponation": ""
+}

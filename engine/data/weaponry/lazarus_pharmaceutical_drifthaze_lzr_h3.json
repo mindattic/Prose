@@ -1,0 +1,50 @@
+{
+  "id": "26b9e4a7d3f150890d6e7f8a9b0c1238",
+  "name": "Lazarus Pharmaceutical DriftHaze LZR-H3",
+  "type": "weapon",
+  "aliases": [
+    "LZR-H3",
+    "haze",
+    "dream mist",
+    "the drift",
+    "confuser",
+    "pink cloud"
+  ],
+  "category": "spray",
+  "description": "The Lazarus Pharmaceutical LZR-H3 DriftHaze occupies an uncomfortable regulatory position in Meridian 88's security product ecosystem. It is classified as a 'cognitive compliance agent' — a category that Lazarus Pharmaceutical's legal team spent considerable resources lobbying into existence. The active compound is a synthetic dissociative hallucinogen designated LZR-41S, derived from a modified phenethylamine scaffold. When inhaled or absorbed through mucosal membranes, LZR-41S produces a rapid-onset perceptual disturbance state lasting 30–60 seconds, characterized by spatial disorientation, time dilation, emotional flattening, and visual pattern hallucination. Subjects report the experience as dreamlike and non-threatening during the episode, but are effectively incapable of coordinated physical action, threat assessment, or decision-making during the window. Recovery is complete in most cases, with no residual pharmacological effect beyond a brief period of mild cognitive fog lasting 5–15 minutes post-recovery.\n\nLazarus markets the LZR-H3 for crowd management scenarios where the goal is to interrupt coordinated group action — protests, organized resistance, or mob behavior — without causing physical injury. The aerosol is delivered as a very fine mist capable of affecting multiple individuals in a 3-meter radius with a single discharge, and the low dosage required means a standard canister holds enough compound for eight to twelve effective deployments. The manufacturer is careful to note that the compound's effects vary significantly based on existing neurochemistry, BCI load, and pre-existing conditions, and that subjects with certain psychiatric histories may experience prolonged or intensified reactions.\n\nThe LZR-H3 exists in a legal grey zone that reflects Meridian 88's increasingly permissive attitude toward chemical compliance tools in the hands of licensed security actors. Human rights organizations classify it as a form of non-consensual psychoactive administration — effectively drugging people against their will — while Lazarus and its corporate clients argue that the absence of lasting physical harm places it within the same ethical category as any other incapacitating spray.",
+  "manufacturer": "LAZARUS PHARMACEUTICAL",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — Category II cognitive compliance agent; authorized for use by registered security contractors operating under Meridian 88 Crowd Management Protocol 7; individual civilian possession prohibited; subject to ongoing regulatory review",
+  "base_technologies": [
+    "LZR-41S synthetic dissociative hallucinogen",
+    "modified phenethylamine scaffold",
+    "mucosal absorption delivery",
+    "ultra-fine mist aerosol system"
+  ],
+  "specifications": "Active compound: LZR-41S synthetic dissociative (phenethylamine derivative)\nAdministration: inhalation / mucosal absorption\nOnset time: 8–15 seconds post-exposure\nEffect duration: 30–60 seconds (primary phase) / 5–15 minutes cognitive fog (recovery phase)\nPrimary effects: spatial disorientation, time dilation, visual hallucination, emotional flattening, motor incoordination\nEffective area: 3m radius per discharge\nApplications per canister: 8–12 deployments\nRisk factors: prolonged effect in subjects with psychiatric conditions, high BCI cognitive load, or certain neurological augmentations\nNet volume: 200ml\nPrice: Φ890",
+  "tactical_use": "Used for the disruption of coordinated group action — breaking up organized resistance, neutralizing a group of armed subjects simultaneously, or creating a window of confusion during which security personnel can advance or make arrests. Operators deploy the LZR-H3 upwind of a group or into an enclosed space, then wait 10–15 seconds before entering. The effect is non-discriminating within its radius, so operator PPE (sealed respiratory mask) is mandatory. The 30–60 second primary window is narrow but sufficient for a trained team to establish physical control.",
+  "cultural_context": "On the street, the LZR-H3 is called 'the drift' or 'pink cloud' — the latter from the faint pinkish tint of the mist under certain lighting conditions. Survivors of its use at protest dispersals describe a deeply unsettling experience of losing agency without losing consciousness — knowing something is wrong but being unable to act on that knowledge. Lazarus Pharmaceutical's involvement has made the product a flashpoint for anti-corporate sentiment; graffiti in Tier 2 zones frequently depicts the Lazarus logo alongside the phrase 'they drug us to keep us still.'",
+  "known_users": [
+    "Lazarus Pharmaceutical contracted security units",
+    "corporate campus crowd management teams",
+    "some Arcturus auxiliary units under specific contracts",
+    "black market operators (limited)"
+  ],
+  "story_hooks": [
+    "A journalist investigating a protest dispersal in Tier 2 went into the DriftHaze cloud and came out 40 minutes later — far longer than the documented effect window. Lazarus's batch records for that canister show a compound concentration three times the licensed specification."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "less_lethal",
+    "hallucinogenic",
+    "dissociative",
+    "tier3",
+    "aerosol",
+    "lazarus",
+    "crowd_control",
+    "cognitive"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

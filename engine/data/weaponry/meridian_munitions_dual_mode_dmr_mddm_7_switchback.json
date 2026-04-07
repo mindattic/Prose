@@ -1,0 +1,49 @@
+{
+  "id": "2980bbc61fcd0aa74469af453af68a60",
+  "name": "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+  "type": "weapon",
+  "aliases": [
+    "Switchback",
+    "MDDM-7",
+    "Two-Face"
+  ],
+  "category": "dmr",
+  "description": "The MDDM-7 Switchback is a dual-caliber DMR that chambers both 6.5mm caseless and 8.6mm caseless through a barrel-swap system that the BCI smart-link manages automatically. The weapon carries two barrels internally — one precision 6.5mm tube for long-range accuracy and one heavy 8.6mm tube for close-range stopping power. On neural command, the active barrel rotates into position in 0.8 seconds, reconfiguring the weapon's ballistic profile.\n\nThe 6.5mm mode delivers 1-MOA accuracy at 800 meters — competitive with dedicated DMR platforms. The 8.6mm mode sacrifices accuracy for devastating close-range terminal effect, functioning essentially as a semi-automatic battle rifle that hits like a freight train inside 300 meters. The BCI system adjusts the smart-scope's ballistic calculations automatically when the barrel swaps, and the magazine well accepts both caliber-specific magazines.\n\nMeridian designed the Switchback for designated marksmen who operate without close-range backup. In small freelance teams where the marksman might need to defend their position at CQB distances before resuming precision overwatch, the MDDM-7 provides both capabilities without requiring a secondary weapon. At Φ9,500, the dual-barrel system represents a significant engineering investment that Meridian prices competitively.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Available — premium licensing",
+  "base_technologies": [
+    "Dual-barrel rotation system",
+    "BCI automated barrel swap",
+    "Multi-caliber ballistic adaptation",
+    "Compact dual-barrel housing"
+  ],
+  "specifications": "caliber: 6.5mm caseless / 8.6mm caseless (switchable)\neffective_range: 800m (6.5mm) / 400m (8.6mm)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 20 rounds (6.5mm) / 12 rounds (8.6mm)\nweight: 5.0 kg",
+  "tactical_use": "The Switchback eliminates the DMR's traditional vulnerability to close-range engagement. When hostiles close inside the 6.5mm's optimal range, the operator swaps to 8.6mm and meets the threat with overwhelming close-range firepower. The 0.8-second barrel swap is fast enough for reactive transitions during dynamic engagements. The weapon's versatility allows the marksman to operate independently or in small teams without requiring dedicated close-range support.",
+  "cultural_context": "The Switchback reflects the reality of freelance designated marksmanship — that precision shooters rarely have the luxury of a full squad protecting their position. The weapon acknowledges that the marksman is often alone, and solitude requires versatility. Freelance marksmen have adopted the Switchback enthusiastically, valuing its ability to handle the unpredictable engagement distance variations of independent operations.",
+  "known_users": [
+    "Freelance designated marksmen",
+    "Solo operators",
+    "Small-team marksmen",
+    "Versatile precision shooters"
+  ],
+  "story_hooks": [
+    "A Switchback's barrel rotation jammed mid-swap during a critical engagement, leaving the operator with neither barrel in firing position. The 0.8-second swap became an eternity as the operator manually forced the rotation.",
+    "A Switchback operator discovered that the dual-barrel housing had been modified to include a third barrel position — empty, but pre-drilled for a caliber that doesn't exist in production. Someone is planning for ammunition that hasn't been invented yet."
+  ],
+  "ammunition_type": [
+    "6.5mm caseless match",
+    "8.6mm caseless"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "dual_caliber",
+    "versatile",
+    "switchable",
+    "Meridian",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

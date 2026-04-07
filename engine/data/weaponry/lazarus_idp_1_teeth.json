@@ -1,0 +1,49 @@
+{
+  "id": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+  "name": "Lazarus IDP-1 'Teeth'",
+  "type": "weapon",
+  "aliases": [
+    "Teeth",
+    "Vagina Dentata",
+    "The Bite",
+    "Snap Trap"
+  ],
+  "category": "self_defense",
+  "description": "The IDP-1 is an internal defense prosthetic developed by Lazarus Pharmaceuticals' personal security division — a small, bio-compatible implant designed to be worn internally by individuals at risk of sexual assault. The device consists of a flexible silicone sleeve lined with retractable barbed micro-hooks and a pressure-activated chemical injection system. Upon unauthorized penetration, the hooks engage and lock, while the injection system delivers a concentrated incapacitating agent directly into the attacker's tissue. The combination of mechanical retention and chemical incapacitation renders the attacker immobile and in extreme pain within seconds. Medical removal requires surgical intervention — attempts to self-remove cause the barbs to dig deeper.\n\nLazarus developed the IDP-1 after analyzing assault statistics in Shelf districts where CorpSec presence is negligible and response times for any security force average forty-seven minutes. The device was designed for a population that cannot rely on external protection and cannot afford augmented defense systems. At Φ45 per unit, it is one of the most affordable personal defense items Lazarus produces — a pricing decision that Lazarus's marketing team describes as 'humanitarian' and critics describe as 'the bare minimum acknowledgment that the company profits from the conditions that make the device necessary.'\n\nThe IDP-1 has had measurable impact in districts where distribution programs have been implemented. Assault rates in the Shelf's Harbor Row district dropped 34% in the six months following a community health organization's free distribution campaign. The device has also generated significant cultural impact — the knowledge that any potential victim might be equipped with one has created a deterrent effect that extends beyond individual users. Street-level slang for the device varies by district, but 'Teeth' is universal. The phrase 'she's got teeth' has entered the Shelf vernacular as both a literal warning and a metaphor for hidden capability.",
+  "manufacturer": "Lazarus Franchise Licensing",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — classified as personal medical defense device",
+  "base_technologies": [
+    "Bio-compatible silicone construction",
+    "Pressure-activated micro-hook engagement",
+    "Chemical incapacitation injection system",
+    "Tamper-resistant barbed retention"
+  ],
+  "specifications": "form_factor: Internal silicone sleeve\nactivation: Pressure-triggered, no user action required\nretention_mechanism: 24 retractable barbed micro-hooks\nchemical_payload: 2mL concentrated capsaicin-lidocaine compound\nincapacitation_time: 3-8 seconds\nremoval: Surgical only — emergency rooms carry extraction kits\nreusable: Single-use (hooks and chemical payload)\nshelf_life: 18 months\nweight: 12g\nprice: Φ45",
+  "tactical_use": "The IDP-1 requires no training, no activation, and no conscious decision from the user — it functions automatically upon unauthorized contact. This zero-action design was deliberate: Lazarus's behavioral research indicated that assault victims frequently experience freeze responses that prevent activation of manual defense devices. The IDP-1 removes the need for the victim to act. The chemical payload ensures the attacker cannot continue even if pain tolerance is high, and the mechanical retention ensures they cannot flee before the chemical takes full effect.",
+  "cultural_context": "The IDP-1 has become a symbol of self-reliance in Shelf communities where institutional protection does not exist. Community health organizations distribute them alongside contraceptives and basic medical supplies. The device has generated controversy among corporate ethicists who argue that it constitutes a 'booby trap' — Lazarus's legal team has successfully countered that the device only activates in response to an illegal act and that classifying self-defense as entrapment requires siding with the attacker. In the Shelf, there is no controversy. There is only demand.",
+  "known_users": [
+    "Shelf community health distribution programs",
+    "Harbor Row Women's Cooperative",
+    "Independent sex workers across all tier districts",
+    "Underworld residents in high-risk zones",
+    "Corporate employees in Tier 2-3 districts with inadequate security"
+  ],
+  "story_hooks": [
+    "A wave of emergency room visits from men with IDP-1 injuries has revealed a pattern — all of the attackers targeted women in the same district, on the same nights, suggesting coordinated predatory behavior. The ER data is building a map of a serial assault operation.",
+    "A counterfeit IDP-1 has appeared on the black market — cheaper than the real thing but with a faulty chemical system that harms the user instead of the attacker. Lazarus wants the counterfeiter found, not out of altruism but because the fakes are damaging the brand."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "medical",
+    "implant",
+    "lazarus",
+    "pharmaceutical",
+    "shelf",
+    "tier 1"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

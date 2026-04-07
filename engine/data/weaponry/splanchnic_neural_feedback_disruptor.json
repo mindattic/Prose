@@ -9,7 +9,7 @@
   ],
   "category": "cyber",
   "description": "The SNFD-1 targets the splanchnic nervous system — the dense network of autonomic nerves governing abdominal organ function — by projecting a modulated neural feedback pulse that overrides normal visceral signaling. The pulse induces simultaneous paradoxical signals across the celiac, superior mesenteric, and inferior mesenteric ganglia: organs receive competing commands to contract and dilate, to accelerate and suppress motility, to activate and inhibit secretion. The result is catastrophic visceral dysregulation — violent involuntary peristalsis, acute nausea and vomiting, loss of bladder and bowel control, and waves of referred pain across the entire abdomen.\n\nThe weapon's designers at Ringo Corponation specifically engineered the feedback loop to bypass voluntary nervous system override. Training, pain tolerance, and pharmacological suppressants provide minimal resistance — the splanchnic network is largely inaccessible to conscious control, meaning even highly augmented or conditioned targets respond to the SNFD-1 with full incapacitation. The effect lasts between eight and twenty-five minutes depending on individual physiology, with a lingering period of autonomic instability for up to two hours afterward.\n\nWhat has made the Gutcheck genuinely feared is its psychological dimension. The profound loss of bodily control it induces — particularly the incontinence — causes acute shame responses that outlast the physical effect. Ringo Corponation's internal testing documentation, leaked in 2183, revealed that the psychological recovery period was considered a 'feature' during development, as targets subjected to the weapon in coercive contexts showed significantly elevated compliance in subsequent interactions. The company has never publicly acknowledged the leak.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Detroit Reclamation Infrastructure",
   "tier_availability": "Black market, Tier 5 (covert government)",
   "legality": "Prohibited",
   "base_technologies": [
@@ -61,6 +61,8 @@
     "armor",
     "energy",
     "fire",
-    "tier 5"
-  ]
+    "tier 5",
+    "less_lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

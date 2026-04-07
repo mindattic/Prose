@@ -1,0 +1,34 @@
+{
+  "id": "f62e781003c3fea49fb1f7f1449c14cc",
+  "name": "Bridge Burner",
+  "type": "archetype",
+  "category": "relationship",
+  "description": "Destroys relationships completely when they end, leaving no possibility of return",
+  "behavioral_signature": "Former friends become enemies, ex-partners become strangers",
+  "under_stress": "Burns bridges they still need",
+  "at_rest": "Maintaining absolute separation from everyone they've left behind",
+  "will_always": [
+    "end things permanently"
+  ],
+  "will_never": [
+    "go back to someone after leaving"
+  ],
+  "unless": [
+    "survival depends on reconnecting with someone they've scorched"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Scorched Earth",
+      "threshold": 0.7,
+      "context": "relational destruction"
+    }
+  ],
+  "opposite_of": [
+    "Forgiver"
+  ],
+  "tags": [
+    "finality",
+    "destruction",
+    "no_return"
+  ]
+}

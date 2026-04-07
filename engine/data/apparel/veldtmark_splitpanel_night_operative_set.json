@@ -1,0 +1,51 @@
+{
+  "id": "f40b71d8a259c3e6071bf40d8a352c19",
+  "name": "Veldtmark Splitpanel Night Operative Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A night-work rig that refuses the all-black cliché with conviction — this ensemble is built in deep navy and weathered wine-red, colors that disappear in M88's sodium-tinged nighttime streetlight better than black ever does against artificial illumination. The structural piece is a long double-breasted coat in deep navy with wine-red interior facing, cut to mid-thigh with mag-detach side panels that can be stripped away in under two seconds to reveal a close-cut silhouette beneath — the full coat reads as a Tier 3 evening coat, the stripped version as a transit worker's coverall layer. The coat's lining is gene-compatible throughout: the rear panel is a full-length split-zip running from collar to hem, with reinforced flex-gussets on either side accommodating tail, wing-stub, or spinal rig configurations without distorting the outer silhouette. Beneath the coat, a fitted long-sleeve top in dark burgundy features two integrated forearm holster bands — flat-profile polymer bands that carry compact sidearms flush against the inner forearm, accessible via a palm-twist release. Trousers are straight-cut in charcoal anthracite with a scanner-resistant weave, carrying six total pockets — two standard, two deep thigh with mag-close, and two hidden rear waistband pockets. Footwear is a mid-calf boot in dark oxblood synthetic leather with a stacked composite heel that adds two centimeters of height — a subtle silhouette change that confounds gait-recognition systems — and a hollow heel compartment sized for a data chip stack or a folded emergency med-patch.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "navy mag-detach panel coat shell",
+    "wine-red interior facing",
+    "gene-compatible full-split rear lining",
+    "flex-gusset wing-accommodation panels",
+    "flat-profile polymer forearm holster bands",
+    "scanner-resistant anthracite trouser weave",
+    "oxblood synthetic leather",
+    "composite stacked heel"
+  ],
+  "functionality": "Mag-detach side panels for rapid silhouette change, gene-compatible full rear split-zip with flex gussets, dual forearm-mount palm-release holster bands, scanner-resistant trouser fabric, gait-disrupting stacked heel with hollow compartment, six total pockets including two hidden waistband",
+  "what_it_says": "This is an outfit with opinions. The wine-red and navy palette is a statement — this runner isn't hiding what they are, they're just making sure you can't prove it. There's a reputation built into the cut: runners who wear the Veldtmark Splitpanel are known to be thorough, expensive, and deeply uninterested in being chased. The gene-compatible rear split is a statement of professional accommodation — this runner works with everyone.",
+  "worn_by": [
+    "senior contract runners with established reputations",
+    "runners with geneware tail or wing modifications",
+    "night-side extraction and infiltration specialists",
+    "operatives who want to be recognized by peers while remaining anonymous to marks"
+  ],
+  "manufacturer": "Veldtmark Street — a respected mid-tier street label with a decade of runner-community trust, known for the Splitpanel line specifically",
+  "price_range": "Φ 1,100–Φ 1,700",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A gait-recognition system at a private corponation event has been updated with an algorithm that specifically accounts for stacked-heel disruption — someone has been feeding it data on runner counter-measures, and this operative's heel is flagged the moment they cross the threshold.",
+    "The mag-detach panels are stripped mid-pursuit through a night market, and the runner realizes the coat's interior — now fully exposed — carries a Veldtmark label with a serial number that a specific corponation security division has been hunting for three months.",
+    "Another runner at the same location is wearing the same coat in the same colorway — a coincidence that becomes a crisis when the mark they're both after assumes they're working together, changing every calculation both runners have made for the evening."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier 3",
+    "tier 4",
+    "night-work",
+    "gene-compatible",
+    "mag-detach",
+    "quick-change",
+    "forearm-holster",
+    "gait-disruption",
+    "veldtmark",
+    "reputation-wear"
+  ],
+  "parent_corponation": ""
+}

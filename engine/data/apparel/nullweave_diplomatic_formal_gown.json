@@ -1,0 +1,34 @@
+{
+  "name": "Nullweave Diplomatic Formal Gown",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "gown",
+  "manufacturer": "Nullweave Diplomatic Atelier",
+  "description": "Nullweave's diplomatic line was developed in response to a specific problem: formal garments that carry too many signals. Corporate colors, cultural insignia, tier-display materials, affiliation badges — in high-stakes inter-corponation or inter-faction diplomatic settings, every visual cue is a variable that can derail a conversation before it starts. The Diplomatic Formal Gown resolves this through deliberate neutrality. The fabric is a cool-toned off-white silk-analog that has been engineered to read as neither warm nor cold under any standard interior lighting spectrum. The silhouette is conservative and globally non-specific — no cut that reads as culturally affiliated, no ornamentation that signals anything. Privacy-weave lining is standard. BCI-responsive elements are absent by design.\n\nThe gown accommodates augmentations at the shoulder and spine via flush magnetic seaming, and a standard tail accommodation is available. It is not a beautiful garment in any exciting sense. It is a garment engineered to create no friction, to give observers nothing to react to, to allow the person wearing it to be evaluated on what they say rather than what they wear. In certain rooms, that is worth considerably more than beauty.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ2100",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "Standard issue for professional diplomatic liaisons, neutral arbitrators, and corponation representatives attending events where faction signaling would be counterproductive. Also worn by some synthetic beings at legal proceedings, for the same reason — to give observers as little as possible to react to.",
+  "story_hooks": [
+    "A character is given this gown to wear to a meeting they were not told the nature of in advance. The gown tells them, before anyone speaks, that whatever this meeting is, it is being treated as diplomacy.",
+    "Someone wears this gown to a social event rather than a professional one. The effect in a room full of expressive, tier-signaling formal wear is striking in its own way — a deliberate void in the visual field.",
+    "The gown has a privacy-weave lining that blocks biometric scanning. Someone wearing it through a high-security checkpoint is stopped. They are not carrying anything. The scanner simply cannot confirm that."
+  ],
+  "tags": [
+    "gown",
+    "formal",
+    "diplomatic",
+    "neutral-signal",
+    "privacy-weave",
+    "augment-compatible",
+    "geneware-compatible",
+    "tier-4",
+    "tier-5",
+    "nullweave"
+  ],
+  "id": "b4ed1759606d49dbaaa7e2d6bbcbf2a2",
+  "parent_corponation": ""
+}

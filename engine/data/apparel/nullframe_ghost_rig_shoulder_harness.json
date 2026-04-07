@@ -1,0 +1,46 @@
+{
+  "id": "2c9e5a1f7d3b08c4e6a0f2d8b1c7e350",
+  "name": "Nullframe Ghost Rig Shoulder Harness",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Over-jacket tactical harness in matte-black recycled ballistic nylon with grey ghost-stitching along the load-bearing channels. Four modular holster mounts — two chest, two flank — accept standard-format mag housings or custom inserts. A dorsal channel runs spine-length to accommodate spinal rig externals and neural port cable management.\n\nFits over most mid-weight jackets without bunching. Strap geometry adjusts via ceramic slide buckles that hold under 200kg of lateral pull. Popular with operatives who need to look like they're carrying nothing.",
+  "tier_association": "Tier 2-4",
+  "materials": [
+    "recycled ballistic nylon",
+    "ceramic slide buckles",
+    "Dyneema load channels",
+    "neoprene shoulder pads",
+    "modular MOLLE-format mount rails"
+  ],
+  "functionality": "Four modular holster mounts configurable for sidearms, data-drives, medkits, or custom rigs. Dorsal channel routes spinal rig cables cleanly without snagging. Ceramic buckles are non-metallic — scanner-minimal. Collapses flat under a jacket without visible print.",
+  "what_it_says": "You're prepared for something, and you'd rather the room not know what.",
+  "worn_by": [
+    "private security contractors",
+    "off-books couriers",
+    "corporate field investigators",
+    "augmented operatives",
+    "street-level fixers"
+  ],
+  "manufacturer": "Nullframe",
+  "price_range": "Φ340 – Φ780",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A specific mount configuration — left chest, right flank empty — is a known signal in certain Circuit circles that the wearer is available for hire.",
+    "Nullframe's ceramic buckles are non-metallic, but a recent Corpsec memo flags the harness's Dyneema channels as identifiable by millimeter-wave scan.",
+    "Someone was found wearing one with all four mounts loaded but no weapons — just sealed data canisters, all encrypted."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "harness",
+    "holster",
+    "tactical",
+    "concealed-carry",
+    "aug-compatible",
+    "tier-2",
+    "tier-3",
+    "tier-4"
+  ],
+  "parent_corponation": ""
+}

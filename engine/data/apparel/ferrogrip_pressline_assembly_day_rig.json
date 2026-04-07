@@ -1,0 +1,48 @@
+{
+  "id": "5d8b1f3a7c2e9046d3f4a5b6c7d8e901",
+  "name": "Ferrogrip Pressline Assembly Day Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The standard daily rig for pressline assembly workers at mid-tier fabrication facilities — not corponation-issued but purchased through the factory commissary and worn by thousands of floor workers across Circuit. The coverall is the centerpiece: a single-piece garment in deep industrial charcoal, made from Ferrogrip's proprietary ToughWeave synth-canvas that resists minor spark burns, hydraulic fluid, and metal shavings. It runs from ankle to collar, fitted through the torso with a gusseted crotch for crouching and a back pleat for reach. The chest has two utility pockets with press-stud closures, and the right shoulder carries a loop-and-clip strip for hanging safety glasses or a face shield. A removable hi-vis orange safety vest goes over the top — mesh-backed for ventilation, with reflective yellow-green chevrons front and rear and a name patch strip in white across the chest, typically filled with a hand-written or heat-stamped first name. Beneath the coverall, workers wear a moisture-wicking short-sleeve compression undershirt in grey, often customized with personal markings or a faded band tee worn underneath for morale. Heavy steel-toe boots in matte black with a reinforced ankle cuff and oil-resistant sole complete the lower half. A welding-grade fabric cap — flat brim, charcoal, with a rear port cutout stitched open for neural plug access — sits on the head, often backwards.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ToughWeave synth-canvas",
+    "mesh synth-polyester",
+    "reflective yellow-green tape",
+    "moisture-wicking compression knit",
+    "steel-reinforced rubber sole composite",
+    "press-stud alloy hardware"
+  ],
+  "functionality": "Spark and minor burn resistance, hydraulic fluid repellent, full-range gusseted mobility, removable hi-vis vest for variable hazard zones, neural port clearance in cap, steel-toe and oil-resistant boots, tool and PPE attachment points throughout",
+  "what_it_says": "Factory floor. Honest work, low glamour. The name patch is the only personal identity marker the job allows — some workers make it count with embroidered nicknames or small sewn emblems. The worn orange vest says they've been on the floor long enough to stop caring how they look in it.",
+  "worn_by": [
+    "pressline assembly workers",
+    "fabrication floor technicians",
+    "stamping machine operators",
+    "factory shift leads",
+    "apprentice machinists"
+  ],
+  "manufacturer": "Ferrogrip Industrial Apparel (commissary label, boots by Veldtmann contract supply)",
+  "price_range": "Φ140–Φ200 (coverall and vest), Φ60–Φ90 (boots separately)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A worker's name patch reads a name that doesn't match any employee in the facility system — they've been working this floor for six months and nobody checked.",
+    "The ToughWeave coverall has a manufacturer's defect running through an entire production batch — workers are reporting chemical burns where the fabric should be protective, and Ferrogrip's liability team is quietly trying to swap inventory before anyone files a formal report.",
+    "Someone has been leaving hand-stamped union organizing pamphlets tucked into the tool loops of coveralls in the changing room — management wants to know who, and the security footage shows only orange vests and charcoal coveralls, no faces."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "factory",
+    "pressline",
+    "coverall",
+    "hi-vis",
+    "aug_compatible",
+    "industrial",
+    "working_class"
+  ],
+  "parent_corponation": ""
+}

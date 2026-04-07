@@ -1,0 +1,57 @@
+{
+  "id": "c4e9b1f6a7d3028c5e8b4a2f9d6c1e73",
+  "name": "LifeWire SolarShield UV Dermal Protection Layer",
+  "brand_name": "LifeWire",
+  "product_name": "SolarShield UV Dermal Protection Layer",
+  "type": "cyberware",
+  "aliases": [
+    "sun skin",
+    "the shield",
+    "bronze coat",
+    "UV lock",
+    "the layer"
+  ],
+  "category": "professional",
+  "body_location": "dermal — full-body or partial (upper body standard package); subdermal chromophore lattice across all treated skin",
+  "description": "SolarShield is a subdermal chromophore lattice implanted across the dermal layers of treated skin areas — standard package covers face, neck, arms, and upper torso, with full-body coverage available as an upgrade. The lattice consists of a dense network of biocompatible synthetic melanin analogue microspheres that are dispersed within the dermis and remain permanently active. Unlike topical sunscreens, the SolarShield layer cannot be sweated off, washed away, or forgotten. The synthetic chromophore network absorbs ultraviolet radiation across the full UV-A and UV-B spectrum and converts it to harmless infrared heat dissipated through normal thermoregulation, providing continuous broad-spectrum protection equivalent to SPF 90+ in standard configuration. A secondary anti-inflammatory agent dispersed alongside the chromophore network suppresses the photochemical cascade that causes sunburn, meaning that even partial UV exposure that exceeds the implant's capacity produces no acute burn response. The system is entirely passive and requires no activation, power, or conscious management of any kind.\n\nSolarShield was developed with outdoor workers in mind and remains most heavily used in those communities: construction crews working on Meridian 88's perpetual infrastructure expansion, agricultural and hydroponic workers in the city's rooftop and peripheral growing operations, utility maintenance workers on exposed elevated infrastructure, and waterway workers on the lake. In a city where Tier 1 and 2 workers often cannot afford time off for medical treatment, the practical value of never developing sunburn, accelerated photoaging, or sun-related dermatitis is significant and immediate. Beyond the working-class market, SolarShield has found strong uptake among outdoor recreation communities — cyclists, runners, lake sailors — and among people who simply find the ritual of daily sunscreen application burdensome. The cosmetic side of the implant is occasionally a point of interest: because the chromophore lattice is a fixed density, it does not tan or darken further with sun exposure, leaving treated skin at a stable, consistent tone regardless of sun exposure, which some users appreciate and others find takes adjustment.",
+  "manufacturer": "LIFEWIRE",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Pharmacy kiosk for partial (face/arms) installation; full upper-body package requires an outpatient clinic session of approximately 60 minutes; full-body coverage requires a 2-hour clinic appointment",
+  "rejection_risk": "Minimal",
+  "maintenance": "No active maintenance required; chromophore microspheres are biologically inert and permanent; optional cosmetic recalibration available to adjust lattice density and resulting skin tone at any licensed LifeWire clinic; full replacement not typically necessary within a 20-year horizon",
+  "specifications": "{\"coverage_options\": \"face-neck-arms (standard), upper body, full body\", \"uv_protection\": \"broad-spectrum UV-A and UV-B, SPF 90+ equivalent\", \"chromophore_type\": \"synthetic melanin analogue microspheres\", \"energy_conversion\": \"UV-to-infrared thermal dissipation\", \"anti_inflammatory\": \"subdermal photochemical cascade suppressor included\", \"power_source\": \"passive — no power required\", \"skin_tone_effect\": \"stable fixed tone, no further tanning response\", \"standard_package_installation_time\": \"60 minutes\"}",
+  "side_effects": [
+    "the skin's natural tanning response is permanently suppressed in treated areas, which some users find requires social or aesthetic adjustment",
+    "mild redness and sensitivity for 5–10 days post-installation as the dermis integrates the chromophore lattice",
+    "in very rare cases, uneven lattice distribution during installation creates subtle patchiness in skin tone, correctable with a calibration follow-up",
+    "the treated skin produces very slightly more warmth to the touch in direct sunlight as absorbed UV energy is converted to heat — generally imperceptible but occasionally noted during close physical contact"
+  ],
+  "cultural_context": "SolarShield is the kind of implant that reveals Meridian 88's class structure in miniature. For Shelf and Tier 2 outdoor workers, it is a straightforward occupational health tool — a way to protect skin that is continuously exposed to sun without the cost and inconvenience of topical products that must be reapplied. Many get the partial package at a pharmacy kiosk the same week they start a new outdoor job. For Tier 3 and 4 residents, it is a lifestyle convenience that eliminates a daily grooming step. The fixed skin tone effect has generated some cultural commentary: because the implant stabilizes skin at a set tone that does not darken further, some users choose to have it calibrated to a slightly deeper tone than their natural baseline, which has opened conversations about cosmetic colorism that the manufacturer has carefully avoided engaging with publicly. In Meridian 88's mixed-heritage population, where skin tone is already extraordinarily varied and categories of racial pigmentation have largely lost their historical social meaning, the debate is more aesthetic than charged — but it is present.",
+  "known_users": [
+    "outdoor construction and infrastructure workers",
+    "rooftop agricultural and hydroponic workers",
+    "utility and communications tower maintenance crews",
+    "lake and waterway workers",
+    "outdoor athletes and recreational cyclists",
+    "anyone who finds daily sunscreen application inconvenient",
+    "people with photosensitive skin conditions"
+  ],
+  "story_hooks": [
+    "A batch of SolarShield units installed at a Tier 1 pharmacy kiosk has a chromophore lattice contamination issue that is causing photosensitization rather than protection — the affected workers, mostly outdoor laborers, are developing severe burns and blistering, and LifeWire's recall response is suspiciously slow, suggesting someone in their distribution chain has an interest in delaying the investigation.",
+    "A witness in a high-profile corporate negligence case has SolarShield coverage — and the opposing legal team is arguing that because the implant prevents the normal UV-exposure skin aging markers that forensic age-estimation relies on, her apparent age cannot be verified, a legal novelty that has become a test case for implant-mediated evidence challenges.",
+    "A worker's advocacy group has obtained internal LifeWire documents suggesting the cosmetic tone calibration feature was deliberately designed to nudge users toward lighter skin tone defaults in its first-generation algorithm — the documents are explosive, and multiple parties want them suppressed or publicized depending on their interests."
+  ],
+  "street_price": "Φ180–Φ450",
+  "licensed_price": "Φ480–Φ1,100",
+  "tags": [
+    "cyberware",
+    "professional",
+    "lifestyle",
+    "dermal",
+    "UV-protection",
+    "outdoor",
+    "labor"
+  ],
+  "parent_corponation": ""
+}

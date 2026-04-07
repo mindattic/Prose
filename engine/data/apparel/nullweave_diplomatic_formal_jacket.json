@@ -1,0 +1,35 @@
+{
+  "name": "Nullweave Diplomatic Formal Jacket",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "diplomatic attire",
+  "manufacturer": "Vantablack Applied Textiles (licensed diplomatic division)",
+  "description": "Vantablack's diplomatic textile division produces garments for inter-corponation liaisons, city council neutral-zone sessions, and cross-faction negotiators who need to enter rooms where faction signals — colors, corporate insignia, augment displays, geneware aesthetics — can poison an opening handshake. The Nullweave jacket is constructed from a matte, signal-neutral fabric that absorbs rather than reflects light, carrying no embedded RFID, no smart-thread, no BCI-reactive elements. It is deliberately, architecturally empty of information. The cut is neither masculine nor feminine, neither conservative nor progressive — a silhouette that was designed by committee to land nowhere on any cultural register.\n\nThe jacket accommodates a full range of augment hardware and geneware modifications through a flexible internal structure that adjusts without visible seaming. It comes in three colors: Meridian Gray, Void Black, and Pale Neutral — each chosen via spectral analysis to be maximally unassociated with any corponation palette. Wearing one signals that you are here to negotiate, not to represent. In the right rooms, this is more powerful than any insignia.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ890",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "The Nullweave jacket is required attire at several categories of inter-corponation meeting under Meridian 88's Corporate Coexistence Accords. Its restricted status comes not from danger but from regulatory control — only licensed diplomatic personnel and certified neutral-zone mediators are officially permitted to purchase it. Gray market examples circulate among fixers and independent negotiators who work outside corponation structures.",
+  "story_hooks": [
+    "A gray-market Nullweave jacket is traced back to a Vantablack internal leak — someone is selling diplomatic-grade signal-null garments to parties who should not have access to them.",
+    "A character wears a genuine Nullweave to a meeting they are not authorized to attend; the jacket gets them through the door, but being recognized in it raises questions about who certified them.",
+    "The jacket's signal-null properties inadvertently block a passive BCI medical alert — and a negotiator in the room has an undetected cardiac augment that needs external monitoring."
+  ],
+  "tags": [
+    "diplomatic",
+    "signal neutral",
+    "Vantablack",
+    "negotiation",
+    "restricted",
+    "augment compatible",
+    "geneware compatible",
+    "inter-corponation",
+    "Tier 3",
+    "Tier 4",
+    "nullweave"
+  ],
+  "id": "ce82698e55084a0183b7548995dd7ca2",
+  "parent_corponation": "Vantablack Media"
+}

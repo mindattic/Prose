@@ -1,0 +1,46 @@
+{
+  "id": "4f89e723c251fefc6527c6c8afea1ea3",
+  "name": "Hollow Point Precision Requiem HP-4 'Dirge'",
+  "type": "weapon",
+  "aliases": [
+    "Dirge",
+    "HP-4",
+    "Requiem",
+    "Death Song"
+  ],
+  "category": "sniper",
+  "description": "A suppressed anti-personnel precision rifle that fires subsonic fragmenting rounds designed to produce maximum wound trauma while minimizing over-penetration risk. Hollow Point Precision is a small manufacturer founded by a former field medic who understood exactly how to make a bullet kill efficiently.\n\nThe HP-4 fires a 9.3mm polymer-jacketed round that expands to 22mm upon tissue contact, fragmenting into six pre-scored petals that travel along divergent wound channels. The round was engineered to deposit 100% of its kinetic energy within the target, producing catastrophic internal damage without exit wounds. This makes the Requiem ideal for urban environments where over-penetration endangers civilians.\n\nThe weapon's integral suppressor reduces its acoustic signature to 72 decibels — loud enough to be heard in an enclosed space, but easily lost in the ambient noise of Meridian 88's urban environment.",
+  "manufacturer": "HOLLOW POINT PRECISION",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — security contractors; Restricted from military use (treaty provisions)",
+  "base_technologies": [
+    "Pre-scored fragmenting projectile design",
+    "Total energy deposition ballistics",
+    "Integral precision suppression"
+  ],
+  "specifications": "caliber: 9.3mm polymer-jacketed fragmenting\neffective_range: 50-600 meters\nrate_of_fire: Semi-automatic, 1 round per 1.5 seconds\ncapacity: 10-round detachable magazine\nweight: 4.8 kg\npower_source: None — conventional mechanical action",
+  "tactical_use": "The Dirge is deployed in urban environments where over-penetration is unacceptable — hospitals, residential complexes, crowded commercial districts. Security contractors operating in civilian-dense areas favor the HP-4 because a miss strikes a wall and stops, rather than passing through into occupied space. The trade-off is reduced range and ineffectiveness against armored targets — the fragmenting round struggles with anything heavier than light composite vest.",
+  "cultural_context": "Hollow Point Precision's founder speaks openly about their design philosophy: a weapon that kills one person and only one person. In a city where stray rounds kill dozens of bystanders annually, the Requiem has been adopted by security firms that market themselves as 'responsible' operators. Critics point out that a weapon designed to maximize wound trauma is a strange vehicle for corporate responsibility.",
+  "known_users": [
+    "Urban security contractors",
+    "Hospital and medical facility security teams"
+  ],
+  "story_hooks": [
+    "A Requiem round recovered from a crime scene shows modifications to the fragmentation pattern — the petals have been coated with a slow-acting cytotoxin that causes organ failure over days. Someone has turned a precision weapon into a delayed-action assassin's tool.",
+    "Hollow Point Precision's founder has received death threats from a trauma surgeon who has seen too many Dirge wounds. The surgeon is building a case that the weapon constitutes a war crime under pre-collapse treaty law."
+  ],
+  "ammunition_type": [
+    "9.3mm polymer-jacketed fragmenting"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "suppressed",
+    "fragmenting",
+    "urban",
+    "tier 3",
+    "anti-personnel",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

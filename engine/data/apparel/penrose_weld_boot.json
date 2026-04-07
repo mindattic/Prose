@@ -1,0 +1,41 @@
+{
+  "id": "07c4e9b2f6a1d38e5c7a2f4b9d1e6c30",
+  "name": "Penrose Weld Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A high-ankle work boot built specifically for welding and metalwork environments. The outer shell is a heat-resistant synthetic with smooth, seamless facing to prevent slag and sparks catching in creases. The lacing system uses a side-zip instead of exposed eyelets, which can melt. The sole is oil- and heat-resistant rubber. Not a glamorous boot — scorch marks accumulate and are worn as a kind of informal badge. Penrose has been making this exact model since 2158.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heat-resistant synthetic upper",
+    "side-zip closure",
+    "aluminized heat shield lining",
+    "oil-resistant rubber sole"
+  ],
+  "functionality": "Heat and spark resistance, side-zip for rapid removal, reinforced ankle, oil-resistant sole",
+  "what_it_says": "You work with metal and fire. The scorch marks are credentials.",
+  "worn_by": [
+    "welders",
+    "metalworkers",
+    "shipyard crew",
+    "Tier 2 fabricators"
+  ],
+  "manufacturer": "Penrose Safety Goods",
+  "price_range": "Φ42 - Φ58",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The scorch pattern on a well-used pair can tell an experienced eye what kind of welding work was done and roughly where.",
+    "Penrose's side-zip design was briefly popular with runners on the Shelf who needed boots they could pull on fast."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "welding",
+    "heat-resistant",
+    "work boot",
+    "metalwork",
+    "industrial"
+  ],
+  "parent_corponation": ""
+}

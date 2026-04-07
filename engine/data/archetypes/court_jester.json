@@ -1,0 +1,34 @@
+{
+  "id": "d13e9915332125b3f2f3beb40bd49cbe",
+  "name": "Court Jester",
+  "type": "archetype",
+  "category": "social",
+  "description": "Uses humor to say what no one else dares, hiding truth in jokes",
+  "behavioral_signature": "Makes everyone laugh while delivering devastating observations",
+  "under_stress": "Jokes become cruel and cutting",
+  "at_rest": "Observing absurdity with quiet amusement",
+  "will_always": [
+    "find the ridiculous in serious situations"
+  ],
+  "will_never": [
+    "deliver criticism without wrapping it in humor"
+  ],
+  "unless": [
+    "someone they love is in real danger"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Devils Advocate",
+      "threshold": 0.65,
+      "context": "challenging norms"
+    }
+  ],
+  "opposite_of": [
+    "Stoic"
+  ],
+  "tags": [
+    "humor",
+    "truth",
+    "deflection"
+  ]
+}

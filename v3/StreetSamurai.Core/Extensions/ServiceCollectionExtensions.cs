@@ -39,6 +39,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SubstrateRepository>();
         services.AddSingleton<PharmaceuticalRepository>();
         services.AddSingleton<ConsumerGoodRepository>();
+        services.AddSingleton<AutomatonRepository>();
+        services.AddSingleton<ApparelRepository>();
+        services.AddSingleton<EntertainmentRepository>();
         services.AddSingleton<MotifRepository>();
         services.AddSingleton<ToneBibleRepository>();
 
@@ -67,6 +70,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SubstrateRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PharmaceuticalRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ConsumerGoodRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<AutomatonRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ApparelRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<EntertainmentRepository>());
 
         // Export discovery — auto-finds all IExportableRepository instances
         services.AddSingleton<ExportDiscoveryService>();
@@ -79,6 +85,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<ExportService>();
+        services.AddSingleton<FtpPublishService>();
         services.AddSingleton<HtmlExportService>();
         services.AddSingleton<StoryService>();
         services.AddSingleton<IStoryBlockRepository, JsonStoryBlockRepository>();

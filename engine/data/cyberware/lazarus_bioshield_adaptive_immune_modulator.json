@@ -1,0 +1,56 @@
+{
+  "id": "c9d3e6f0a2b4c5d7e8f9a0b1c2d3e4f5",
+  "name": "Lazarus BioShield Adaptive Immune Modulator",
+  "brand_name": "Lazarus Pharmaceuticals",
+  "product_name": "BioShield",
+  "type": "cyberware",
+  "aliases": [
+    "the wall",
+    "allergy off",
+    "immuno",
+    "clean blood",
+    "the shield"
+  ],
+  "category": "health",
+  "body_location": "lymphatic — bilateral cervical lymph node micro-emitters with mediastinal anchor node",
+  "description": "The BioShield Adaptive Immune Modulator is a three-node implant system manufactured by Lazarus Pharmaceuticals' consumer health division. Two micro-emitter units are placed adjacent to the bilateral cervical lymph nodes via minimally invasive needle-guided insertion, while a slightly larger anchor node is positioned in the mediastinal lymphatic tissue through a short thoracoscopic procedure. Together, the nodes create a continuous low-level bioelectric field that modulates dendritic cell signaling — the immune system's primary mechanism for distinguishing harmful pathogens from harmless environmental antigens. In practical terms, this means the BioShield can selectively suppress hypersensitivity responses (allergic reactions, environmental sensitivities, autoimmune flares) while simultaneously priming the system's pathogen response for faster and more robust activation against genuine infectious threats. The system is not a blunt immunosuppressant; it uses a continuously updated threat-classification library (updated quarterly via Lazarus's Hematic Network) to distinguish between a pollen particle and a bacterial membrane protein. Users with specific autoimmune conditions can work with a licensed immunologist to set custom sensitivity profiles.\n\nIn a megacity the size of Meridian 88, where air quality varies enormously by tier, food provenance is uncertain, and industrial pollutants from the Shelf's lower manufacturing corridors drift into residential zones, functional immune modulation is not a luxury for the millions of people who would otherwise spend weeks each year in inflammatory misery. BioShield users cite the most immediate change as the disappearance of seasonal and environmental allergies — the chronic eye-watering, the antihistamine dependency, the productivity loss that characterized pre-implant life. For people with diagnosed autoimmune conditions, the implant is often transformative, replacing daily pharmaceutical regimens with a set-and-calibrate system that adapts rather than simply suppressing. Lazarus markets the BioShield at multiple price points, with the Tier 1 Essentials Edition offering core allergy and basic immune support, and the Tier 3-4 Adaptive Pro offering full autoimmune profiling and the custom sensitivity interface.",
+  "manufacturer": "Little Sprout Pediatrics",
+  "tier_availability": "Tier 1-4",
+  "legality": "Licensed (requires initial immunological screening; installation by licensed medical provider)",
+  "installation_requirements": "Licensed medical clinic; cervical nodes via needle-guided insertion (outpatient, 30 minutes); mediastinal anchor requires short thoracoscopic procedure under light sedation (2-hour outpatient)",
+  "rejection_risk": "Low",
+  "maintenance": "Quarterly threat-library update via Lazarus Hematic Network (wireless, automatic); annual lymphatic function review; node integrity scan every 5 years",
+  "specifications": "{\"node_count\": 3, \"node_placement\": [\"bilateral cervical lymph nodes (x2)\", \"mediastinal anchor\"], \"modulation_target\": \"dendritic cell signaling\", \"update_cadence\": \"quarterly (Lazarus Hematic Network)\", \"sensitivity_profiles\": \"Essentials (fixed) / Adaptive Pro (custom)\", \"power_source\": \"bioelectric lymphatic flow harvest\", \"threat_library_size\": \"2.4 million classified antigens (current)\", \"warranty\": \"8 years\"}",
+  "side_effects": [
+    "Mild cervical lymph node tenderness for 1–2 weeks post-installation",
+    "Temporary heightened fatigue during the initial 30-day immune recalibration period",
+    "Occasional brief sensation of chest pressure near the mediastinal node during large pathogen-response activation events",
+    "Very rarely: the system may over-suppress a novel antigen not yet in the threat library, resulting in a muted response to an unfamiliar allergen that users should monitor manually"
+  ],
+  "cultural_context": "The BioShield carries the unambiguous social weight of being a Lazarus product — the company's reputation for medical-grade quality means the implant is perceived as legitimate healthcare rather than enhancement, and there is very little stigma attached to it across any tier. If anything, the cultural conversation around BioShield tends to focus on access equity: Lazarus's tiered pricing structure means that Tier 1 Essentials users get meaningfully less functionality than Adaptive Pro users paying five times the price for the same hardware with unlocked software. Advocacy groups periodically push for full functionality to be included in the base model, and Lazarus periodically responds with press releases about expanded access programs. In Tier 3 and 4 circles, having a custom-profiled BioShield with an immunologist-tuned sensitivity map is a quiet marker of the kind of healthcare access that money buys — the difference between a body that is managed and a body that is optimized.",
+  "known_users": [
+    "Allergy and asthma sufferers across all tiers",
+    "Autoimmune condition patients (rheumatoid, lupus variants, IBD)",
+    "Tier 1 residents exposed to industrial pollutants and poor air quality",
+    "Healthcare and sanitation workers with high pathogen exposure",
+    "Parents who install the Essentials Edition in children with severe environmental allergies"
+  ],
+  "story_hooks": [
+    "A newly classified airborne industrial compound in a Shelf district is not yet in the Lazarus threat library — BioShield users in the area are experiencing no symptoms while unimplanted residents fall ill, but the implants are actively suppressing an inflammatory response that is actually the body's only warning signal for early-stage tissue damage.",
+    "A counterfeit BioShield ring is selling cheap knockoffs with a threat library that hasn't been updated in three years — users think they are protected and are making behavioral choices accordingly.",
+    "A Lazarus whistleblower approaches the party with evidence that the Adaptive Pro sensitivity profiles are being data-mined to build a detailed immunological map of Tier 4 residents — information worth an extraordinary amount to bioweapon designers."
+  ],
+  "street_price": "Ϸ500–Ϸ750 (Essentials) / Ϸ1,100–Ϸ1,600 (Adaptive Pro)",
+  "licensed_price": "Ϸ980–Ϸ1,400 (Essentials) / Ϸ2,200–Ϸ3,100 (Adaptive Pro)",
+  "tags": [
+    "cyberware",
+    "health",
+    "lifestyle",
+    "immune",
+    "allergy",
+    "autoimmune",
+    "lazarus",
+    "licensed"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

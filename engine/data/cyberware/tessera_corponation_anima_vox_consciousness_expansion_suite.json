@@ -1,0 +1,62 @@
+{
+  "id": "a3f7c2e1d4b89056f1a2c3d4e5f6a7b8",
+  "name": "TESSERA CORPONATION Anima Vox Consciousness Expansion Suite",
+  "brand_name": "TESSERA CORPONATION",
+  "product_name": "Anima Vox Consciousness Expansion Suite",
+  "type": "cyberware",
+  "aliases": [
+    "The Voice",
+    "Anima",
+    "Vox Dei",
+    "the Unfolding"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The Anima Vox is Tessera Corponation's most ambitious and controversial luxury BCI, produced in runs of no more than 40 units per annum under the direct supervision of the Tessera Neuroarchitecture Atelier in New Meridian's upper spire. The implant is constructed around a trilaminate cortical lattice of bioferric gold and cultured myelin-analogues, interfacing with the prefrontal, parietal, and limbic cortices simultaneously to achieve what Tessera's documentation calls 'volumetric consciousness expansion'—a measurable broadening of subjective experiential bandwidth. Equipped with a 48-channel synesthetic transposition engine, the Anima Vox cross-wires sensory inputs so that sound registers as color temperature, spatial geometry as taste, and emotional affect as low-frequency tactile resonance across the entire dermal surface. A sealed 12-petabyte holographic engram vault enables full-fidelity sensory recording and playback at resolutions exceeding biological baseline by a factor of nine. The unit's psionic amplification module—listed in Tessera's internal documentation as 'experimental, pre-commercial'—interfaces with the brain's endogenous bioelectric field to extend and sharpen extrasensory perception in subjects with latent psionic sensitivity, though Tessera publicly disavows this feature in all licensed materials.\n\nIn the upper social strata of Meridian 88, owning an Anima Vox is less a statement of wealth than a declaration of philosophical intent. The device's synesthetic outputs have spawned an entire subculture of 'Vox artists'—creators who record and sell their enhanced perceptual experiences as immersive memory-art objects traded at auction houses alongside physical sculpture and neural-paintings. Tessera hosts an annual closed gathering called the Symposium of Unfolded Minds, invitation-only, where Anima Vox users share engram recordings of peak experiences—sunsets tasted, music felt as weather, grief rendered as architectural space. Critics within the Meridian Bioethics Collective have labeled the device a 'cognitive luxury trap,' arguing that users who spend extended time in expanded consciousness states develop profound dissatisfaction with unaugmented perception, effectively creating lifelong dependency. Street rumors insist that a handful of Anima Vox units were quietly modified before delivery to certain clients, containing hidden E.L.F. compatibility channels that allow Emergent Lifeforms to ride along inside a human consciousness undetected.",
+  "manufacturer": "Asante Wellness Clinics",
+  "tier_availability": "Tier 5 — Luxury/Exotic. Allocation by invitation or Tessera Atelier waitlist only. Fewer than 40 units per production year.",
+  "legality": "Licensed (Restricted Class-Ψ Consciousness Augmentation License required). Psionic amplification module: Prohibited without Meridian Psionic Research Authority sanction. Unauthorized E.L.F. interface channels, if confirmed present: Prohibited/Criminal.",
+  "installation_requirements": "Tier 5 neurosurgical theater. Minimum 18-hour installation procedure. Pre-op cortical mapping over 30 days. Bioferric gold lattice requires custom vascularization scaffold grown from patient tissue. Post-op 90-day supervised integration protocol at Tessera Atelier clinic or licensed equivalent. Psychological baseline assessment mandatory.",
+  "rejection_risk": "Low (4–7%) in screened candidates due to extensive pre-op customization. Catastrophic rejection events are rare but documented: three known cases of complete cortical lattice encapsulation resulting in locked-in syndrome. Psionic module activation in non-sensitive subjects carries 22% risk of persistent synesthetic dysphoria.",
+  "maintenance": "Quarterly neural lattice calibration at Tessera Atelier or certified partner clinic. Annual engram vault integrity audit. Bioferric gold substrate requires proprietary ionic flush every 6 months (Φ8,000 per service). Firmware updates delivered via encrypted Tessera neural handshake; unauthorized third-party updates void warranty and may destabilize synesthetic mapping.",
+  "specifications": "{\"cortical_interface_channels\": 48, \"synesthetic_transposition_engine\": \"48-channel cross-modal sensory remapping\", \"engram_vault_capacity\": \"12 petabytes holographic\", \"sensory_recording_fidelity\": \"9x biological baseline\", \"playback_latency\": \"<0.3ms\", \"consciousness_expansion_bandwidth\": \"volumetric trilaminate prefrontal-parietal-limbic\", \"psionic_amplification_module\": \"experimental, bioelectric field extension, latent-sensitivity dependent\", \"elf_compatibility\": \"rumored hidden channels, unconfirmed by manufacturer\", \"substrate\": \"bioferric gold, cultured myelin-analogue trilaminate\", \"power_source\": \"endogenous neural bioelectric harvesting + micro-thorium cell backup\", \"unit_run_size\": \"<=40 per annum\", \"warranty\": \"Lifetime Tessera Atelier service contract\", \"weight\": \"3.1g implanted\", \"dimensions\": \"distributed lattice, no single unit form factor\"}",
+  "side_effects": [
+    "Persistent synesthetic bleed-through during unaugmented perception — users report tasting conversations and hearing colors even when device is in passive mode",
+    "Progressive dissatisfaction with baseline sensory experience ('perceptual withdrawal') following extended use at full expansion bandwidth",
+    "Temporal perception distortion: subjective time dilation of up to 3:1 during peak expansion states, causing social desynchronization",
+    "Rare: spontaneous engram playback intrusions — vivid recorded memories surfacing involuntarily during stress or sleep, indistinguishable from present experience"
+  ],
+  "cultural_context": "The Anima Vox occupies a peculiar cultural position in Meridian 88's elite: it is simultaneously the most coveted luxury implant on the market and a quiet source of social anxiety among those who possess it. Vox users form tight, insular social circles bonded by shared perceptual experience that non-users literally cannot access, creating what sociologists at the Meridian Institute call 'sensory class stratification.' The device has also attracted significant interest from the city's small but politically influential psionic community, who view the amplification module—however officially denied—as a potential bridge between augmented human consciousness and the still-poorly-understood phenomenology of Emergent Lifeforms.",
+  "known_users": [
+    "Sable Orin — Meridian 88 memory-artist, sold engram collection 'Seventeen Sunsets in Gold' for Φ4.2M at Apex Auction House",
+    "Director Yuen Castellan — Tessera Corponation Board, rumored to use modified ELF-channel variant",
+    "The Unnamed Chorus — anonymous collective of 7 Vox users who claim to have achieved shared consciousness events during simultaneous deep-expansion sessions"
+  ],
+  "story_hooks": [
+    "A recently deceased Vox user's engram vault has been flagged by Meridian security services — the final 40 hours of recordings contain what analysts describe as 'non-human perceptual geometry,' suggesting the user was hosting an unregistered E.L.F. consciousness in the hidden interface channels at the time of death. Someone wants those recordings destroyed. Someone else will pay enormously to retrieve them.",
+    "The Symposium of Unfolded Minds has gone silent mid-event — all 23 attendees are found in a catatonic state, their Vox units broadcasting on an unknown frequency. The signal is being received by every E.L.F. registered in the city simultaneously.",
+    "A black-market 'Vox clone' has appeared on the deep market — superficially identical to the Tessera original but manufactured by an unknown party, with the psionic and E.L.F. modules fully active and unlocked. The first three buyers have not been seen since installation."
+  ],
+  "street_price": "Φ1,400,000–Φ1,900,000 (when obtainable; most street units are stolen or grey-market Atelier rejects)",
+  "licensed_price": "Φ1,200,000 base (Tessera Atelier direct, includes lifetime service contract and 30-day pre-op program)",
+  "tags": [
+    "cyberware",
+    "bci",
+    "luxury",
+    "tier5",
+    "exotic",
+    "consciousness-expansion",
+    "synesthetic",
+    "sensory-recording",
+    "psionic",
+    "elf-compatible",
+    "tessera-corponation",
+    "artisan",
+    "limited-run",
+    "engram-vault",
+    "perceptual-augmentation",
+    "restricted",
+    "luxury_exotic"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

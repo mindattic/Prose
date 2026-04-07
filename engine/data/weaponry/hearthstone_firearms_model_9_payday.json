@@ -1,0 +1,43 @@
+{
+  "id": "3a5936adc12ab897ba1da24e7a627e29",
+  "name": "Hearthstone Firearms Model 9 'Payday'",
+  "type": "weapon",
+  "aliases": [
+    "Payday",
+    "The Nine"
+  ],
+  "category": "pistol",
+  "description": "The Hearthstone Model 9 is a bottom-of-the-barrel semi-automatic pistol chambered in 9x19mm, manufactured from injection-molded polymer and stamped steel components. The barrel is unrifled on early production runs — a cost-cutting measure that Hearthstone has never officially acknowledged. The trigger pull is heavy and gritty, the sights are rudimentary plastic posts, and the magazine release has a documented tendency to drop magazines under recoil.\n\nThe Payday is the firearm of last resort for people who cannot afford anything better. It is sold in blister packs at convenience stores in Shelf districts, often alongside prepaid comm cards and synthetic protein bars. Shelf security forces confiscate thousands annually, but the economics of the weapon make replacement trivial — a new Model 9 costs less than a decent meal in the Mids.\n\nDespite its reputation as disposable junk, the Payday has an outsized cultural presence. It appears in countless Shelf folk songs and street poetry as a symbol of desperation and defiance. The phrase 'pulling a Payday' has entered common slang meaning to attempt something with inadequate tools and pure nerve.",
+  "manufacturer": "HEARTHSTONE FIREARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — minimal registration required",
+  "base_technologies": [
+    "Stamped steel construction",
+    "Injection-molded polymer frame"
+  ],
+  "specifications": "caliber: 9x19mm\neffective_range: 15 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 8 rounds\nweight: 0.45 kg",
+  "tactical_use": "The Model 9 is not a tactical weapon in any meaningful sense. It is a point-blank defensive tool with poor accuracy beyond conversational distance. Users who carry it do so because they have no other option. In a confrontation, the best strategy is to close distance and fire rapidly, hoping volume compensates for the weapon's inherent inaccuracy.",
+  "cultural_context": "In Shelf culture, the Payday is simultaneously mocked and respected — mocked for its quality, respected for what carrying one implies about the owner's circumstances and willingness to fight regardless. Corponation marketing campaigns occasionally appropriate Shelf gun culture imagery, which is universally regarded as tasteless.",
+  "known_users": [
+    "Shelf district residents",
+    "Desperate couriers",
+    "First-time gun owners with no budget"
+  ],
+  "story_hooks": [
+    "A character finds a Payday with one round left in a dead courier's hand — and the serial number has been scratched off with something that wasn't a tool.",
+    "A Shelf community organizer is buying Paydays in bulk, but not for the reason anyone assumes."
+  ],
+  "ammunition_type": [
+    "9x19mm"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "shelf",
+    "cheap",
+    "disposable",
+    "common",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

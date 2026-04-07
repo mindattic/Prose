@@ -1,0 +1,39 @@
+{
+  "id": "7b2e9f4c1a3d8057b2e9f4c1d3a80574",
+  "name": "Goretek WorkHold Tape-Reinforced Trousers",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Goretek makes industrial duct-tape and seam sealant — not pants. But their heavy-duty bonding tape is so widely used for clothing repair on the Shelf that pants held together almost entirely with Goretek silver tape have become their own informal product category. These work trousers started life as something else; now they're a structural argument for adhesive.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "worn poly-cotton work twill",
+    "Goretek industrial bond tape",
+    "reclaimed zipper hardware"
+  ],
+  "functionality": "Reinforced stress points resist tearing under physical labor conditions.",
+  "what_it_says": "You fix what breaks. You keep going.",
+  "worn_by": [
+    "manual laborers",
+    "Shelf mechanics",
+    "infrastructure workers"
+  ],
+  "manufacturer": "Goretek (tape only) / self-assembled",
+  "price_range": "Φ4 - Φ9",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The tape pattern on a pair of these matches a specific repair job done by a known Shelf fixer — a calling card.",
+    "Goretek tape reacts faintly to chemical exposure, changing color — someone's pants are telling a story they don't know yet."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 1",
+    "reinforced",
+    "work",
+    "tape",
+    "shelf",
+    "labor"
+  ],
+  "parent_corponation": ""
+}

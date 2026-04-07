@@ -1,0 +1,33 @@
+{
+  "id": "b52eb6175deba17cdf24841cb14a729c",
+  "name": "Betrayal Watcher",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Everyone turns eventually, the only question is when",
+  "behavioral_signature": "Monitors allies for signs of betrayal, builds contingencies against everyone",
+  "under_stress": "Preemptively betrays others to beat them to it",
+  "at_rest": "Loyal but watchful, testing trust constantly",
+  "will_always": [
+    "have a backup plan for when people turn on them"
+  ],
+  "will_never": [
+    "trust completely without an exit strategy"
+  ],
+  "unless": [
+    "someone has proven loyalty beyond any reasonable doubt"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Paranoid Scanner",
+      "threshold": 0.8,
+      "context": "interpersonal suspicion"
+    }
+  ],
+  "opposite_of": [
+    "Innocent"
+  ],
+  "tags": [
+    "suspicious",
+    "contingency-minded"
+  ]
+}

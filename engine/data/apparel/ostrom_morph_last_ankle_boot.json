@@ -1,0 +1,38 @@
+{
+  "id": "c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9",
+  "name": "Ostrom Morph-Last Ankle Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A mid-ankle boot with a flexible thermoset upper that can be heat-molded at home or at a cobbler to conform to non-standard foot shapes. The toe box is deep and rounded, the heel collar is split-gusseted to accommodate wide ankle joints. It looks like a normal, slightly boxy ankle boot in dark grey or black — unremarkable from a distance. Tier 3 buyers appreciate that it passes as ordinary while actually solving real problems. Geneware users with partial hooves, wide splayed feet, or asymmetric toe configurations swear by it.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "thermoset synthetic leather",
+    "flexible polymer midsole",
+    "cork-foam footbed"
+  ],
+  "functionality": "Upper can be heat-molded for custom fit around non-standard foot morphology. Split heel gusset for wide ankle accommodation.",
+  "what_it_says": "You've thought about this. You solved the problem quietly and you look fine doing it.",
+  "worn_by": [
+    "geneware users with complex foot mods",
+    "Tier 3 professionals",
+    "people who want a normal-looking boot that actually fits"
+  ],
+  "manufacturer": "Ostrom Footwear Co.",
+  "price_range": "Φ85 - Φ110",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A cobbler in the Tier 2-3 border district offers unofficial Ostrom molding services for half the price — and nobody's quite sure how they got the heat specs.",
+    "Someone's been selling counterfeit Ostrom boots with non-thermoset uppers that crack after two weeks of wear."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "geneware-compatible",
+    "morph-fit",
+    "ankle boot",
+    "practical"
+  ],
+  "parent_corponation": ""
+}

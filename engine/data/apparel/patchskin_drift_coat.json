@@ -1,0 +1,52 @@
+{
+  "id": "51d7f3a0c8b2e946f1d5a7c3b0e28459",
+  "name": "Patchskin Drift Coat",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A long, dramatic coat that is less a single garment than a living document of the Shelf — every panel a different salvaged fabric, stitched and fused into a floor-length silhouette that somehow holds together. Dark panels of industrial rubber sheeting alternate with sections of waxed sailcloth, synthetic suede in faded ochre, and several squares of what was once a high-visibility vest, now so oxidized it reads as deep amber rather than yellow. The lining is a quilt of mismatched thermal emergency blankets, crinkled and reflective on the inside, visible through the wide lapels. The coat closes with a mismatched run of fasteners — two toggles, three large snaps, and a length of paracord threaded through grommets at the center. Beneath it, a long-sleeve thermal undershirt in off-white sits tucked into straight-cut trousers in deep charcoal that have been hemmed unevenly — one leg slightly shorter than the other after a repair. The trouser knees are patched with iron-on synthetic leather. Feet are in rubber overshoes — bright orange, institutional, clearly salvaged from a flood-response kit — worn over a thin pair of insulated socks. On the head, a deep-crown beanie in black wool-synth, hand-darned at the brim with mismatched thread in three colors. Hands are bare except for a single fingerless compression glove on the left hand. One ear carries a salvaged audio driver — a small speaker housing repurposed as an earring, trailing a thin wire that disappears into the coat's collar.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "industrial rubber sheeting",
+    "waxed sailcloth",
+    "synthetic suede",
+    "oxidized high-visibility material",
+    "emergency thermal blanket lining",
+    "paracord",
+    "charcoal cotton-synth trouser twill",
+    "synthetic leather knee patches",
+    "rubber overshoes",
+    "wool-synth knit",
+    "salvaged audio driver housing"
+  ],
+  "functionality": "Patchwork rubber and waxed panels provide acid-rain and moisture resistance. Thermal blanket lining retains body heat significantly in cold industrial zones. Wide lapels and deep pockets (four interior, two exterior) store survival essentials. Rubber overshoes add waterproofing over worn footwear. Beanie provides head warmth. Salvaged audio driver earring may still receive low-frequency signals on certain deprecated broadcast bands.",
+  "what_it_says": "There is unmistakable style here — not despite the poverty but through it. The coat is a statement: I am still here, I am still building, I am still making something out of nothing. The patchwork is too deliberate to be purely accidental. This person has an eye, even if they have nothing else. On the Shelf, that coat is recognized. People know it, and by extension they know the person wearing it.",
+  "worn_by": [
+    "Shelf creatives and makers",
+    "community figures and informal leaders",
+    "people who've been on the Shelf long enough to develop a signature",
+    "wanderers and drifters with deep local knowledge"
+  ],
+  "manufacturer": "Entirely self-constructed over years; ongoing project",
+  "price_range": "Φ5–Φ20 in raw materials (but the labor and time are priceless)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The coat is locally famous enough that someone has offered to buy it — a Tier 4 fashion collector who sees 'authentic Shelf art' — and the offer is more money than the wearer has ever seen, but the coat IS them.",
+    "The salvaged audio driver earring picks up a signal it shouldn't — a repeating encrypted burst on a frequency that was supposed to go dark three years ago.",
+    "One of the fabric panels in the coat is cut from the uniform of a corponation employee who disappeared — and a corporate investigator just recognized it."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "patchwork",
+    "drift_coat",
+    "gene_compatible",
+    "shelf_fashion",
+    "maker_culture",
+    "survival_wear",
+    "iconic_look"
+  ],
+  "parent_corponation": ""
+}

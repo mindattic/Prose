@@ -1,0 +1,33 @@
+{
+  "id": "d2b4d453e9ae6f58e03fa595221ba776",
+  "name": "Success Fear",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Terrified that getting what they want will prove they don't deserve it",
+  "behavioral_signature": "Self-sabotages right before breakthrough moments",
+  "under_stress": "Actively destroys opportunities to avoid the terror of achievement",
+  "at_rest": "Talented but perpetually underperforming",
+  "will_always": [
+    "pull back just before succeeding"
+  ],
+  "will_never": [
+    "accept success without waiting for the other shoe to drop"
+  ],
+  "unless": [
+    "someone catches the self-sabotage and names it"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Self Destructor",
+      "threshold": 0.8,
+      "context": "fear of achievement"
+    }
+  ],
+  "opposite_of": [
+    "Glory Hound"
+  ],
+  "tags": [
+    "self-sabotaging",
+    "avoidant"
+  ]
+}

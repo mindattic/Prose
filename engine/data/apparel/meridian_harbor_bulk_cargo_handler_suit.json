@@ -1,0 +1,35 @@
+{
+  "name": "Meridian Harbor Bulk Cargo Handler Suit",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "dockworker_industrial",
+  "manufacturer": "Meridian Port Authority Supply Division",
+  "description": "Issued to bulk cargo handlers working the lower docks where freight from irradiated Great Lakes shipping lanes is offloaded and processed, this suit is a step above standard dockwear. The primary shell is a heavy ballistic nylon reinforced at the knees, elbows, and shoulders with ceramic-composite panels rated for compression loads during container work. A radiation-shielding liner made from lead-bismuth microfiber runs the length of the torso and upper arms, reducing cumulative exposure for workers in the lower irradiated cargo zones. Wrist-mounted rad counter ports are integrated into both sleeves. Anchor loops along the belt line accommodate crane-operator safety tethers. The suit is cut wide through the chest and hips to allow full movement and accommodate most augment frames, with a rear zip tail gusset.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ280",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "extreme",
+  "legal_status": "legal",
+  "cultural_context": "Lower dock workers in M88 carry a quiet status among Tier 2 laborers — the work is dangerous and the pay is marginally better than warehouse jobs, but the radiation exposure accumulates over years. Many workers supplement with Lazarus anti-rad pharmaceuticals purchased out of pocket. The suit is a visible marker of that particular kind of earned toughness.",
+  "story_hooks": [
+    "A shipment arrives from a freighter with no registered origin, and the cargo handlers who unloaded it are showing unusual rad readings that don't match the manifest.",
+    "The Port Authority has been quietly underfunding suit replacement cycles — suits rated for three years are being kept in service for six, and workers don't know.",
+    "A dock handler discovers something living inside a sealed irradiated container, and the suit's rad counter is reading higher than anything they've seen before."
+  ],
+  "tags": [
+    "meridian_harbor",
+    "dockworker",
+    "port",
+    "radiation_shielded",
+    "heavy_duty",
+    "cargo",
+    "augment_compatible",
+    "geneware_compatible",
+    "tier2",
+    "tier3",
+    "industrial"
+  ],
+  "id": "cc3f0e8abb8b456bb4a9455509d675d8",
+  "parent_corponation": ""
+}

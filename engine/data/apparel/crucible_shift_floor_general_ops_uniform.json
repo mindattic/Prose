@@ -1,0 +1,48 @@
+{
+  "id": "7b1e9d3c52a047f8b3e6c10d84f29a05",
+  "name": "Crucible Shift Floor General Ops Uniform",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The everyday uniform of a Crucible Industries general floor worker — not the specialized smelter or weld crew kits, but the backbone ops staff who keep materials moving, machinery logged, and shift quotas met. The jacket is a flame-resistant charcoal canvas work coat, thigh-length, with snap-off sleeves for hot-floor adaptability. The Crucible hex-and-anvil logo is heat-transfer printed across the upper back in dull orange. Chest pockets on both sides, one with a clear-window ID slot. Beneath it, a crew-neck work shirt in faded safety orange — washed to a muted clay tone after dozens of industrial cycles — with reinforced elbow patches in matching canvas. The shirt has a left-sleeve channel running from shoulder to wrist: an aug-accommodation track stitched into the seam to allow chrome arm hardware to sit flush without bunching fabric. Work trousers are heavy-gauge charcoal canvas with hammer loops, a full ring of tool eyelets at the waist, and double-stitched thighs. Boots are thick-soled composite safety boots with a puncture-resistant midsole and a self-tightening ankle strap. Safety goggles on an elastic band hang around the neck when not in use — scratched lenses, one replacement arm in a different color. A hardshell bump cap in safety orange sits low on the brow, often pushed back off the forehead by mid-shift.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "flame-resistant canvas",
+    "safety-orange synthetic cotton blend",
+    "heavy-gauge charcoal canvas",
+    "composite rubber sole",
+    "polycarbonate goggle lens",
+    "hardshell ABS bump cap"
+  ],
+  "functionality": "Flame resistance for factory floor proximity, snap-off sleeves for temperature adaptability, aug-accommodation arm channel for chrome hardware, tool loops and hammer eyelets, puncture-resistant boot midsole, ID window pocket for floor access scanning, bump cap for overhead hazard zones.",
+  "what_it_says": "Floor worker. Not management, not specialist crew — the kind of person who keeps the whole operation running while the supervisors take credit. The faded orange shirt means they've been here long enough to have laundered it thirty times. The scratched goggle lens means they don't expense replacements. There's no ego in this outfit, just hours.",
+  "worn_by": [
+    "Crucible Industries general floor staff",
+    "materials handling crew",
+    "machinery maintenance assistants",
+    "factory floor logistics workers",
+    "shift quota monitors"
+  ],
+  "manufacturer": "GeneFit Health Testing",
+  "price_range": "Φ160–Φ210 (partially company-subsidized; workers cover 40% of cost)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A floor worker's ID window pocket holds two badges — their own and someone else's. One of them is for a section of the facility that doesn't appear on any public floor plan.",
+    "The snap-off sleeve modification on one jacket has been reversed and reinforced from the inside — someone has sewn something into the lining of that detachable sleeve.",
+    "A player needs to get onto a Crucible floor without credentials. The uniform is easy enough to find secondhand — but the bump cap color codes differ by section, and they don't know which color gets them to the right level."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "factory",
+    "uniform",
+    "corponation_issued",
+    "crucible_industries",
+    "flame_resistant",
+    "aug_compatible",
+    "industrial"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

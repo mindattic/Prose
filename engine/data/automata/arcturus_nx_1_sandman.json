@@ -1,0 +1,51 @@
+{
+  "name": "Arcturus NX-1 'Sandman'",
+  "type": "automaton",
+  "classification": "Incapacitation Platform — Sleep Agent Delivery",
+  "aliases": [
+    "Sandman",
+    "Lullaby",
+    "Night Night"
+  ],
+  "manufacturer": "Raptor Aerospace Division",
+  "description": "The NX-1 is a small aerial drone — quadrotor, roughly the size of a dinner plate — that carries a pressurized canister of aerosolized soporific agent. It navigates to a target location — typically a bedroom, through an open window or ventilation system — and releases the agent in a controlled dispersal pattern designed to induce deep, unrousable sleep in all occupants within a 10-meter radius. The onset time is approximately 90 seconds after exposure, and the sleep duration is 4 to 8 hours depending on body mass and augmentation.\n\nThe Sandman enables everything that comes after it. Kidnapping, assassination, implantation of surveillance devices, planting of evidence, medical procedures performed without consent — the NX-1 is the prelude to crimes that require the victim to be unconscious. Arcturus sells it as an 'extraction support platform' designed for hostage rescue and medical emergency response, which is a legitimate use case that accounts for perhaps 5% of actual deployments.\n\nThe soporific agent is the NX-1's primary ethical concern. Developed by Lazarus Pharmaceuticals under contract to Arcturus, the compound has a narrow therapeutic window — the difference between the dose that induces sleep and the dose that causes respiratory depression is small. In enclosed spaces, in combination with alcohol or other depressants, or in individuals with certain augmentations, the Sandman's payload can be lethal. The official mortality rate is 0.8%. In the Shelf, where many residents have compromised respiratory systems and augmentations that interact unpredictably with pharmaceutical agents, the actual rate is believed to be significantly higher.",
+  "tier_availability": "Tier 4+",
+  "legality": "Military/security restricted",
+  "autonomy_level": "Semi-autonomous with pre-programmed target location",
+  "dimensions": "0.25m rotor span",
+  "weight": "1.5 kg",
+  "power_source": "Micro lithium cell, 45-minute flight time",
+  "locomotion": "Quadrotor — silent operation mode",
+  "armament": [
+    "Pressurized soporific agent canister (10m effective radius)"
+  ],
+  "sensors": [
+    "Building navigation",
+    "Occupant detection (thermal)",
+    "Wind/ventilation current mapping"
+  ],
+  "countermeasures": "Sealed sleeping environments. Gas masks. Air filtration systems. The drone's near-silent operation makes detection difficult but not impossible — augmented hearing can detect rotor noise. Open windows in Meridian 88's climate are common in the Shelf, making countermeasures theoretical for most potential targets.",
+  "known_deployments": [
+    "Extraction operations",
+    "Medical emergency response (rare)",
+    "Suspected use in kidnappings, assassinations, and non-consensual medical procedures"
+  ],
+  "story_hooks": [
+    "A player character wakes up groggy, four hours later than they should have, with a needle mark on their arm that wasn't there before. Their BCI shows a gap in recording. A Sandman was used on them last night. What was done during those four hours?",
+    "A Shelf community has been experiencing a wave of 'unexplained deep sleep' events — entire apartments falling unconscious simultaneously. Items are missing when they wake up. Someone is using Sandmen to rob the neighborhood, but the residents can't afford air filtration and can't close their windows in the heat."
+  ],
+  "cultural_context": "The Sandman weaponizes sleep — the most vulnerable state a person can be in. Its existence means that falling asleep in an unsecured location is a calculated risk, adding 'ability to afford sealed sleeping quarters' to the list of survival advantages that wealth provides.",
+  "tags": [
+    "automaton",
+    "aerial",
+    "incapacitation",
+    "chemical",
+    "weapon",
+    "arcturus",
+    "lazarus",
+    "corporate",
+    "tier 4"
+  ],
+  "id": "b16a9541789640906e7d962f78e1ff97",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "29e5a1b3c4d6f7801234567890123456",
+  "name": "Sable Freight Longhaul Flannel",
+  "type": "apparel",
+  "category": "top",
+  "description": "A heavyweight flannel shirt in a traditional two-color plaid — navy and grey, or rust and charcoal — with a full button front and a chest pocket on each side. The fabric is a brushed synthetic-wool that has nearly the same hand as real flannel but doesn't compress or mat with repeated washing. Reinforced at the collar, cuffs, and pocket corners. Cut generously through the chest and shoulders to allow layering over a thermal base. Long tails can be tucked or worn out.\n\nSable Freight issues these as optional cold-weather supplement to standard uniform sets, but they've migrated well beyond the logistics workforce. They're durable, warm, and cost less than most of their competitors. You'll find them on dock workers layered over Ironpass thermals, on Tier 2 families at weekend markets, on Shelf residents who acquired them secondhand, and on Tier 3 people who like the aesthetic and appreciate that the quality is real. The Sable Freight logo tag is small and easily removed.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "brushed synthetic-wool flannel",
+    "reinforced collar and cuff binding",
+    "double chest pockets"
+  ],
+  "functionality": "",
+  "what_it_says": "You're practical. You've been outside. You're probably going to be outside again.",
+  "worn_by": [
+    "freight logistics workers",
+    "dock crews",
+    "outer-corridor laborers",
+    "Shelf residents (secondhand)",
+    "Tier 2 and 3 working adults"
+  ],
+  "manufacturer": "Sable Freight (Sable Logistics Group)",
+  "price_range": "Φ44",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Sable Freight flannel found at a crime scene has a Shelf-market vendor's repair stitching — which leads back to a specific stall that may have handled stolen cargo.",
+    "Sable Logistics is quietly phasing out the flannel from their uniform supplement program, and the workers who rely on it are organizing a response.",
+    "A character inherits one of these from someone who disappeared on a long-haul run — sewn inside the sleeve hem is a transit manifest for a cargo that officially doesn't exist."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 2",
+    "flannel",
+    "workwear",
+    "sable freight",
+    "logistics",
+    "cold weather",
+    "button-down"
+  ],
+  "parent_corponation": ""
+}

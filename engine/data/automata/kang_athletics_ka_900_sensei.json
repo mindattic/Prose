@@ -1,0 +1,52 @@
+{
+  "id": "778334c861f029095488b54378894a05",
+  "name": "Kang Athletics KA-900 'Sensei'",
+  "type": "automaton",
+  "classification": "Training",
+  "aliases": [
+    "Sensei",
+    "Nine Hundred",
+    "The Teacher"
+  ],
+  "manufacturer": "KANG ATHLETICS",
+  "description": "The KA-900 is Kang Athletics' top-of-line martial arts instruction platform, designed not for fighting but for teaching. It is the most patient, knowledgeable, and technically precise martial arts instructor available in any form — human or machine. Standing at moderate height on a bipedal frame with exceptional range of motion, it can demonstrate techniques from over sixty martial arts traditions with biomechanically perfect form, then observe a student's attempt and provide instant, detailed correction.\n\nSensei's teaching methodology is its defining feature. Rather than adaptive difficulty (fighting harder as the user improves), it employs progressive skill building — isolating individual components of complex techniques, drilling them at controlled speed, and assembling them into fluid combinations only when each component meets quality thresholds. It teaches in the way elite human instructors teach: slowly, precisely, and with infinite repetition. The machine will demonstrate a hip throw five thousand times without a flicker of impatience, adjusting its demonstration each time to emphasize whatever aspect the student is struggling with.\n\nThe KA-900 has earned genuine respect in traditional martial arts communities, which initially viewed it with hostility. The machine's programming was developed in collaboration with grandmasters from dozens of disciplines, and it preserves technical knowledge that might otherwise be lost as elderly masters die without sufficient students. Several critically endangered martial arts — styles with fewer than a dozen living practitioners — have been comprehensively recorded in Sensei units, ensuring their survival in machine memory if nowhere else.",
+  "tier_availability": "Tier 2",
+  "legality": "Consumer — unrestricted sale",
+  "autonomy_level": "Instructional — guides student progress, demonstrates and corrects",
+  "dimensions": "1.75m height, 0.65m width, high-flexibility bipedal frame",
+  "weight": "110 kg",
+  "power_source": "Rechargeable battery, 10-hour continuous use",
+  "locomotion": "Bipedal, full martial arts range of motion, exceptional flexibility",
+  "armament": [
+    "Padded demonstration strikes (very low force)",
+    "Controlled grappling for technique demonstration"
+  ],
+  "sensors": [
+    "Precision motion capture (student form analysis)",
+    "Joint angle measurement",
+    "Balance and weight distribution tracking",
+    "Technique comparison engine (compares student to reference form)"
+  ],
+  "countermeasures": "Sensei units cannot strike with force sufficient to injure. Grappling demonstrations use minimal resistance. The machine prioritizes student safety above all other parameters and will refuse instructions that could cause injury.",
+  "known_deployments": [
+    "Martial arts dojos worldwide",
+    "Cultural preservation programs",
+    "University physical education",
+    "Rehabilitation centers (adapted movement therapy)"
+  ],
+  "story_hooks": [
+    "A Sensei unit in a traditional dojo contains the complete technical knowledge of a martial art whose last human master just died. A corporation wants to acquire the unit for its combat AI division. The dojo can't afford to outbid them.",
+    "A character has been training with a Sensei for months and has noticed it occasionally demonstrates techniques that aren't in any known martial art — movements that seem designed for a body with different proportions than a human."
+  ],
+  "cultural_context": "The KA-900 has become a cultural preservation tool as much as a training device. In communities where traditional martial arts carry deep cultural significance, Sensei units are treated with respect typically reserved for human instructors. Some dojos bow to their Sensei unit. The machines do not understand why, but they bow back, because it was in the training data.",
+  "tags": [
+    "automaton",
+    "training",
+    "martial arts",
+    "instruction",
+    "cultural",
+    "kang",
+    "preservation"
+  ],
+  "parent_corponation": ""
+}

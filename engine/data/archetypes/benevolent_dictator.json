@@ -1,0 +1,33 @@
+{
+  "id": "92f51a3ccc89b78d294464e0b7522a73",
+  "name": "Benevolent Dictator",
+  "type": "archetype",
+  "category": "power",
+  "description": "Total control, wielded with genuine care for the people under it",
+  "behavioral_signature": "Makes unilateral decisions that are usually good for everyone",
+  "under_stress": "Stops consulting anyone, becomes the thing they swore not to be",
+  "at_rest": "Listens carefully, then decides alone anyway",
+  "will_always": [
+    "take responsibility for the group's welfare"
+  ],
+  "will_never": [
+    "share decision-making power"
+  ],
+  "unless": [
+    "they realize their judgment has become corrupted"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Den Mother",
+      "threshold": 0.7,
+      "context": "protective control"
+    }
+  ],
+  "opposite_of": [
+    "Anarchist Purist"
+  ],
+  "tags": [
+    "authoritarian",
+    "caring"
+  ]
+}

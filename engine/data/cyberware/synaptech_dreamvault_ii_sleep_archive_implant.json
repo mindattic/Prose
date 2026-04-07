@@ -1,0 +1,57 @@
+{
+  "id": "3e70a9c5f1b24d88e3a70c9f51b24d88",
+  "name": "SynapTech DreamVault II Sleep Archive Implant",
+  "brand_name": "SynapTech",
+  "product_name": "DreamVault II",
+  "type": "cyberware",
+  "aliases": [
+    "the reel",
+    "dream box",
+    "night capture",
+    "the vault",
+    "pillow cam"
+  ],
+  "category": "cognitive",
+  "body_location": "cranial — temporal lobe interface with subdermal occipital storage node",
+  "description": "The DreamVault II is a second-generation oneiric capture implant that records the neural activity patterns associated with REM-stage dreaming and reconstructs them into navigable experiential files — not video, not audio, but a format unique to the consumer dream-capture market, playable through any SynapTech-compatible AR interface or neural mesh as a first-person immersive experience. The system passively monitors sleep architecture via a temporal lobe surface array, detecting REM onset and initiating capture automatically. Dream data is encoded as a layered neural pattern file, compressed and stored in a subdermal occipital node with 64GB of onboard storage — roughly 200–400 hours of dream content depending on fidelity settings. Files can be shared, sold, deleted, or backed up to SynapTech's DreamCloud platform. The DreamVault II introduces improved emotional fidelity over its predecessor, capturing not just the visual and narrative content of dreams but the affective texture — the specific quality of fear, longing, or wonder that accompanied each sequence. Capture is passive; no user action is required beyond sleeping.\n\nThe dream-capture market is one of the stranger entertainment phenomena of 2200, and the DreamVault II sits at its mass-market center. The appeal is immediate and deeply human: the chance to revisit what the sleeping mind produces, to share it with a partner or a friend, to sell an unusually vivid nightmare to a horror content platform or license a recurring landscape dream to an architectural firm seeking creative inspiration. On the Shelf, a good dream can be worth real money — certain categories of dream content (erotic, prophetic-feeling, trauma-adjacent) command strong prices on platforms that aggregate and sell to entertainment corponations. Middle-tier users treat it as a personal archive, a journal that writes itself. The experience of playing back a dream through the implant is described as stranger than memory and more intimate than any recording — because it is, in the most literal sense, what it felt like to be inside your own sleeping mind.",
+  "manufacturer": "SYNAPTECH SENSORY SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted — content sale subject to platform terms of service; certain dream content categories require age verification on commercial platforms",
+  "installation_requirements": "Outpatient clinic or licensed pharmacy installation kiosk; 45-minute procedure; topical anesthetic; same-day discharge",
+  "rejection_risk": "Minimal",
+  "maintenance": "Storage node offload to DreamCloud or local device recommended monthly; firmware updates automatic via DreamCloud sync; hardware rated for 10-year service life; annual checkup optional",
+  "specifications": "{\"capture_format\": \"SynapTech Neural Pattern File (.snpf)\", \"onboard_storage\": \"64GB (approx. 200–400 hours at standard fidelity)\", \"fidelity_modes\": [\"standard\", \"high\", \"archival\"], \"interface\": \"temporal lobe surface array, non-penetrating\", \"storage_node\": \"subdermal occipital, 10mm x 6mm\", \"playback_compatibility\": \"SynapTech AR interfaces, MindBridge neural mesh, NeuralPath Conduit; third-party via .snpf open standard\", \"cloud_platform\": \"DreamCloud (free 10GB tier; paid tiers from Φ6/month)\", \"emotional_fidelity\": \"affective layer encoding, DreamVault II exclusive feature\"}",
+  "side_effects": [
+    "Increased dream recall without playback — users become more consciously aware of dreaming, which some find enriching and others find exhausting",
+    "Occasional capture bleed: the system briefly initiates capture during hypnagogic states (the threshold between waking and sleep), producing fragmentary files of half-formed images that some users find unsettling",
+    "A small percentage of users report that reviewing their own dream content changes their relationship to the dreams — the act of observation altering subsequent dream patterns",
+    "Mild occipital pressure sensation during initial calibration week as the storage node settles"
+  ],
+  "cultural_context": "Dream-capture has become one of the defining recreational technologies of the 2190s and 2200s, and the DreamVault II is the model that made it genuinely accessible. The cultural conversation around it is rich and unresolved. Relationship therapists note a phenomenon called 'dream intimacy' — couples who share dream files regularly report both increased closeness and, in some cases, a loss of mystery that strains the relationship. Philosophers and ethicists debate whether a captured dream is still a dream, or whether the act of capture and replay transforms it into something else entirely — a media artifact rather than an experience. On commercial platforms, the dream economy is booming: top dream creators on DreamShare and SomnaSell earn more than most Tier 2 workers, and the genre categories (architectural dreams, grief dreams, erotic content, childhood memory reconstruction, prophetic-feeling sequences) have developed their own aesthetics and audiences. Privacy advocates raise persistent concerns about the DreamCloud platform's data practices, noting that the emotional fidelity data the DreamVault II captures constitutes an extraordinarily intimate psychological profile.",
+  "known_users": [
+    "Entertainment creators and dream-economy participants across all tiers",
+    "Couples and close friends who share dream files as a form of intimacy",
+    "Shelf residents who supplement income by selling dream content to commercial platforms",
+    "Artists, writers, and designers who use their own dream archives as creative source material",
+    "Therapists and patients using dream content as a clinical tool in sleep and trauma treatment"
+  ],
+  "story_hooks": [
+    "A character's DreamVault II has captured something that cannot be explained by their own neurology — a detailed, accurate architectural layout of a building they have never visited, raising questions about whether dream-capture can somehow intercept external signals.",
+    "A DreamCloud data breach has exposed the private dream archives of thousands of users — but the real danger isn't embarrassment; it's that someone has been using the emotional fidelity data to build psychological vulnerability profiles for targeted manipulation.",
+    "A Shelf dream-seller's content has gone viral on SomnaSell for reasons they don't understand — and the corponation that bought the distribution rights is now claiming ownership of the dream itself under a terms-of-service clause buried in the DreamCloud agreement."
+  ],
+  "street_price": "Φ350–Φ580 (base unit, no cloud subscription)",
+  "licensed_price": "Φ780–Φ1,050 at SynapTech clinics; DreamCloud Standard first year included",
+  "tags": [
+    "cyberware",
+    "cognitive",
+    "lifestyle",
+    "dream-capture",
+    "entertainment",
+    "mass-market",
+    "temporal-lobe",
+    "sleep",
+    "dream-economy"
+  ],
+  "parent_corponation": ""
+}

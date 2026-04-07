@@ -1,0 +1,52 @@
+{
+  "id": "a3f7c2e1b8d94056f1a2c3e7d9b04512",
+  "name": "Ashveil Pulsethread Underground Rave Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A Tier 1 rave survivalist's full kit assembled from reclaimed industrial mesh, acid-bleached synth-cotton, and hand-sewn bioluminescent thread salvaged from busted Tier 3 signage. The top is a sleeveless, asymmetric crop constructed from overlapping panels of charcoal mesh and torn silver-grey synth-knit, held together with exposed safety pins and friction-bonded seam tape. Bioluminescent thread traces erratic circuit-like patterns across the chest and left shoulder — dim in daylight, igniting in deep cyan and acid-green under UV. The bottoms are wide-leg cargo trousers in matte black reclaimed nylon, one leg sliced open at the outer seam and relaced with elastic cord to accommodate chrome leg augments or scaled geneware limbs. A low-slung patchwork belt of mismatched leather scraps and wire-clasped utility pouches finishes the waist. Footwear is battered synth-rubber platform boots, knee-high, with cracked iridescent coating that still catches strobe light. A frayed, hooded half-cloak in acid-rain-stained translucent poly hangs from one shoulder, fastened with a salvaged pipe-clamp. The whole look is loud, improvised, and absolutely intentional.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed industrial mesh",
+    "acid-bleached synth-cotton",
+    "salvaged bioluminescent thread",
+    "matte nylon",
+    "synth-rubber",
+    "reclaimed leather scraps",
+    "translucent poly sheeting",
+    "elastic cord"
+  ],
+  "functionality": "Open outer seam with elastic lacing accommodates chrome leg augments and scaled or furred geneware limbs. Half-cloak provides minimal acid-rain protection. Utility belt pouches hold small tools, stims, or comms patches. Hood can be raised to obscure face from surveillance. Bioluminescent thread is passive — no power source required, UV-reactive.",
+  "what_it_says": "You built this yourself from whatever the Shelf threw away and it looks better than anything bought new. You know the underground circuit, you've been to raves that don't have names, and you are not here to be seen by anyone who matters — only by the people who count.",
+  "worn_by": [
+    "Shelf rave regulars",
+    "underground circuit runners",
+    "scrapper artists",
+    "young Tier 1 residents with no budget and full aesthetic commitment",
+    "geneware youth with visible modifications they can't afford to hide"
+  ],
+  "manufacturer": "Self-assembled — components sourced from Ashveil Night Market, scrap bins, and busted Tier 3 signage stripping",
+  "price_range": "Φ 18 – Φ 55 total assembly cost",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A PC wearing this kit is recognized by a Tier 4 fashion scout who insists the bioluminescent thread pattern matches a stolen Solenne design — which is impossible, unless someone in the Shelf has access to proprietary thread stock they shouldn't.",
+    "The UV-reactive thread in this outfit begins responding to a frequency the wearer didn't activate — someone at the rave is broadcasting a coded signal through the crowd's biolum gear, and this kit is picking it up.",
+    "A Shelf enforcer uses the distinctive cracked iridescent boots as identification, claiming the wearer was at a location the night of a killing. The boots were purchased secondhand three days ago."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "nightlife_club",
+    "tier 1",
+    "rave",
+    "bioluminescent",
+    "aug_compatible",
+    "gene_compatible",
+    "shelf",
+    "underground",
+    "self_made",
+    "mesh",
+    "UV_reactive"
+  ],
+  "parent_corponation": ""
+}

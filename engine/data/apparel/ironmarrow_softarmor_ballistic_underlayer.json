@@ -1,0 +1,46 @@
+{
+  "id": "c8b3d70e5f1a294607e3c9b2a1d58f0e",
+  "name": "Ironmarrow SoftArmor Ballistic Underlayer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Matte black, form-fitting, worn under street clothes without obvious bulk. The torso shell and upper thigh panels are densely woven shear-thickening gel fiber — pliable at rest, rigid on impact. A faint hexagonal quilting pattern marks the protected zones. Shoulder and side seams are reinforced with ceramic whisker tape.\n\nThe neck sits high. Chrome-routing channels run along both inner forearms and the upper spine, finished with snap-close covers. Smells faintly of industrial solvent from the gel impregnation process. Runs warm.",
+  "tier_association": "Tier 2-4",
+  "materials": [
+    "shear-thickening gel fiber composite",
+    "ceramic whisker reinforcement tape",
+    "carbon-nanotube reinforced spandex shell",
+    "conductive chrome-routing channel lining",
+    "anti-infrared inner coating"
+  ],
+  "functionality": "Rated for fragmentation and low-velocity ballistic protection across torso and upper thighs. Chrome-routing channels allow power and data lines from arm or spinal implants to route cleanly under outer garments. Anti-IR inner coating reduces thermal signature. Does not protect against high-velocity rifle rounds.",
+  "what_it_says": "You expect to get shot at, and you've planned for it.",
+  "worn_by": [
+    "security contractors",
+    "corporate couriers carrying physical assets",
+    "Tier 2 gang-adjacent workers in hot neighborhoods",
+    "private investigators",
+    "off-duty enforcement"
+  ],
+  "manufacturer": "Ironmarrow (street-corponation hybrid, semi-licensed)",
+  "price_range": "Φ550–Φ900",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A murder victim was wearing an Ironmarrow underlayer — the round that killed them wasn't supposed to penetrate it, which means the shooter used something very illegal.",
+    "Ironmarrow units are serialized; the street version has the serial ground off, but forensics can still find the ghost number under UV.",
+    "A Tier 2 factory worker quietly wearing one every day hasn't told anyone why — something is coming and they know it."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "armor",
+    "ballistic",
+    "tactical",
+    "aug-compatible",
+    "tier-2",
+    "tier-3",
+    "tier-4",
+    "concealable"
+  ],
+  "parent_corponation": ""
+}

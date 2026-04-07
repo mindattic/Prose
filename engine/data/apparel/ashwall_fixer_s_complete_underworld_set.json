@@ -1,0 +1,47 @@
+{
+  "id": "7b2f4c9a1e6d0385f7c3a8e2d1b05f46",
+  "name": "Ashwall Fixer's Complete Underworld Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A fixer's look is studied neutrality: mid-weight longcoat in slate-grey waxed synthwool, unbranded, cut wide enough to conceal hardware and accommodate a partial spinal rig. Beneath it, a structured collarless shirt in dark indigo — Yoruba-inspired block print barely visible in direct light — tucked into slim tapered trousers with concealed inner-thigh pockets. Footwear is a low-profile matte ankle boot, no metal hardware to trip scanners. Hands covered by thin grip-null gloves. A flat cap or structured hood — situationally deployed — completes the look. The whole outfit reads as Tier 3 from thirty meters and reveals nothing closer.",
+  "tier_association": "Tier 2-4",
+  "materials": [
+    "waxed synthwool longcoat shell",
+    "indigo block-print poly-linen shirt",
+    "tapered synthetic-twill trouser",
+    "scanner-neutral matte ankle boot",
+    "grip-null thin glove material"
+  ],
+  "functionality": "Concealed inner-thigh pockets; scanner-neutral boot hardware; longcoat cut accommodates spinal rig and concealed carry; grip-null gloves leave no biometric traces on surfaces; hood deployment takes under two seconds.",
+  "what_it_says": "This person moves between worlds and belongs to none of them — which means they belong to whoever's paying.",
+  "worn_by": [
+    "information brokers",
+    "fixers",
+    "underworld intermediaries",
+    "off-book corporate liaisons",
+    "enforcers working above street level"
+  ],
+  "manufacturer": "Ashwall Independent (assembled from multiple unlicensed sources)",
+  "price_range": "Φ 900 – Φ 2,400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The block-print shirt is a specific pattern tied to a dissolved Lagos-corridor trade guild — wearing it is either a statement or a mistake.",
+    "The inner-thigh pocket contains a data chip that the wearer claims not to know the contents of.",
+    "Every piece of this outfit was purchased separately, in different districts, over eighteen months — someone built an identity that can't be traced to a single transaction."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld",
+    "fixer",
+    "info_broker",
+    "enforcer",
+    "aug_compatible",
+    "tier2",
+    "tier3",
+    "tier4",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

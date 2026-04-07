@@ -1,0 +1,39 @@
+{
+  "id": "f6b28e3c1d7a094598c5f1e4b62d30a7",
+  "name": "Hartwell Ironweave Insulated Cargo Pant",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Cold-weather cargo trousers with a quilted thermal lining throughout the legs and seat. The outer shell is a dark, tightly woven synthetic with mild wind resistance. Built for outdoor construction and cold-deck warehouse environments. Bulky through the thigh but surprisingly mobile. Most pairs are navy blue or black.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "wind-resistant nylon shell",
+    "polyester quilted liner",
+    "nylon cargo pocket panels"
+  ],
+  "functionality": "Quilted thermal insulation, wind-resistant shell, multiple cargo pockets",
+  "what_it_says": "You work outside or in unheated spaces, and you've learned to layer properly.",
+  "worn_by": [
+    "outdoor construction workers",
+    "cold-storage loaders",
+    "maintenance crews",
+    "winter dock workers"
+  ],
+  "manufacturer": "Hartwell Workline",
+  "price_range": "Φ28 - Φ36",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The quilted lining can be partially removed through a seam — some workers carry flat items between the shell and liner rather than in visible pockets.",
+    "Hartwell Ironweave is recognizable enough that wearing it signals you're from a cold-work environment, which tells people something about where you spend your days."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 2",
+    "workwear",
+    "insulated",
+    "cargo",
+    "cold-weather"
+  ],
+  "parent_corponation": ""
+}

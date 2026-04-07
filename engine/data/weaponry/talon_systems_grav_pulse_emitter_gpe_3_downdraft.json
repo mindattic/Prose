@@ -1,0 +1,46 @@
+{
+  "id": "447d86400bf5a1c471fafda8de0ad492",
+  "name": "Talon Systems Grav-Pulse Emitter GPE-3 'Downdraft'",
+  "type": "weapon",
+  "aliases": [
+    "Downdraft",
+    "GPE-3",
+    "Grav-Pulse Emitter",
+    "Slam"
+  ],
+  "category": "exotic",
+  "description": "A directed gravitational weapon that projects a focused pulse of gravitational force in a cone-shaped area of effect. Unlike the localized gravity wells of the GL-3 Crush Depth, the Downdraft produces a broad directional push — effectively a gravitational shockwave that slams everything in its path to the ground with 8-12G of downward force for approximately 0.5 seconds.\n\nTalon Systems developed the GPE-3 as a non-lethal crowd control weapon that exploits gravitational manipulation at lower intensities than Arcturus's lethal GL-3. The Downdraft's pulse is calibrated to incapacitate rather than kill — the brief duration prevents the sustained compression that causes organ failure, while the force magnitude is sufficient to drop even augmented targets to the ground and prevent them from rising for several seconds.\n\nThe weapon's cone-shaped area of effect covers a 15-meter wide swath at maximum range, making it effective against groups of targets. The gravitational pulse passes through cover and concealment — walls, furniture, and vehicles provide no protection against a force that acts on mass itself.",
+  "manufacturer": "TALON SYSTEMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Non-lethal classification at standard settings — military restricted at elevated power",
+  "base_technologies": [
+    "Directional gravitational pulse generation",
+    "Cone-shaped gravitational area effect",
+    "Non-lethal gravity manipulation calibration"
+  ],
+  "specifications": "caliber: N/A — directional gravitational pulse\neffective_range: 10-80 meters, 15-meter cone width at max range\nrate_of_fire: 1 pulse per 8 seconds\ncapacity: 10 pulses per power cell\nweight: 14 kg\npower_source: Gravitational manipulation power cell",
+  "tactical_use": "The Downdraft is deployed for crowd dispersal, area denial, and non-lethal incapacitation of groups. The weapon's cone-shaped effect allows a single operator to knock an entire group prone in a single pulse, creating a window for restraint, extraction, or withdrawal. The gravitational pulse's ability to pass through cover makes it effective against barricaded subjects — the operator does not need line of sight to the target, only line of effect to the space they occupy.",
+  "cultural_context": "The GPE-3 has sparked intense debate about the use of gravitational manipulation as a non-lethal tool. At standard settings, the weapon is rarely lethal — but 'rarely' is not 'never.' Individuals with osteoporosis, spinal injuries, or pregnancy are at significantly elevated risk from the sudden gravitational load. Rights organizations have called for the weapon's reclassification after several deaths in crowd-control scenarios involving vulnerable populations.",
+  "known_users": [
+    "Talon Systems demonstration team",
+    "Corporate crowd management units"
+  ],
+  "story_hooks": [
+    "A Downdraft was used against a protest crowd that included a pregnant woman. The gravitational pulse caused injuries that resulted in a miscarriage. The operator followed standard engagement protocol. The legal and ethical aftermath threatens to end gravitational weapon deployment in civilian-adjacent scenarios.",
+    "Someone has modified a GPE-3 to project its pulse upward rather than downward — the modified weapon launches targets into the air with 10G of upward force, and gravity handles the lethal landing. The modification is crude but effective."
+  ],
+  "ammunition_type": [
+    "Directional gravitational pulse"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "gravity",
+    "non-lethal",
+    "crowd-control",
+    "area-effect",
+    "tier 4",
+    "less_lethal"
+  ],
+  "parent_corponation": ""
+}

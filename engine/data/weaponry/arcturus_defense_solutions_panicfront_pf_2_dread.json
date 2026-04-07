@@ -1,0 +1,46 @@
+{
+  "id": "6d0a3c8f1e5b274938c2a6f4d7b1e8c5",
+  "name": "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+  "type": "weapon",
+  "aliases": [
+    "Dread",
+    "The Fear",
+    "Phobe Gas",
+    "Blue Panic"
+  ],
+  "category": "spray",
+  "description": "The PanicFront PF-2 is one of Arcturus Defense Solutions' most controversial active products — a synthetic pheromone and neurochemical aerosol compound designated ADS-Phob-2 that exploits the olfactory-amygdala pathway to trigger acute irrational fear response in exposed subjects. The compound contains synthetic analogs of human alarm pheromones combined with a proprietary aerosolized neurochemical agent that directly potentiates fear-circuit activation in the limbic system. The result is not pain, not nausea, not physical impairment — it is pure, uncontrollable terror. Subjects exposed to PF-2 experience immediate onset of panic, irrational flight behavior, paranoid ideation, and an overwhelming sense of imminent threat that has no relationship to actual environmental conditions. The experience is psychologically indistinguishable from extreme acute fear in the moment of exposure.\n\nThe PF-2 canister is distinguished by its blue-gray housing and a slow-release valve designed for area saturation rather than targeted deployment — the compound is most effective when it fills a space, as the pheromone component also triggers secondary fear responses in other individuals who have been exposed to the first wave of affected subjects. Fear is, in this context, literally contagious. ADS documentation describes this as a 'cascade compliance effect.' Critics have described it as engineering a panic stampede.\n\nThe PF-2 is restricted to military and specialized law enforcement use under Meridian regulations, but documented cases of its use in Tier 1 crowd suppression operations have been reported by multiple independent observers. Arcturus has neither confirmed nor denied these reports. The compound produces no metabolic trace after four hours and leaves no physical evidence of deployment beyond its faint blue-gray aerosol coloration, which dissipates within minutes.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — military and specialized law enforcement use only; civilian possession prohibited; use in public spaces without declared emergency status is a municipal ordinance violation, enforcement inconsistent",
+  "base_technologies": [
+    "synthetic alarm pheromone analogs",
+    "ADS-Phob-2 limbic system neurochemical agent",
+    "cascade-effect area saturation delivery"
+  ],
+  "specifications": "Active compounds: ADS-Phob-2 (synthetic alarm pheromones + limbic potentiator)\nDelivery: slow-release valve, area saturation; effective in enclosed spaces up to 80 square meters\nOnset: 10–25 seconds\nDuration of effect: 20–45 minutes\nCascade effect: secondary fear response in proximate exposed individuals\nDetectability: no metabolic trace after 4 hours\nAerosol color: blue-gray (dissipates within 3–5 minutes)\nCanister capacity: single sustained deployment (full area saturation)\nWeight: 0.28 kg\nDimensions: 17cm × 6cm\nPrice: Φ1,200",
+  "tactical_use": "PF-2 is a crowd-breaking rather than crowd-controlling tool — it does not stop people, it sends them running. Military doctrine uses it for perimeter breaching (to clear a space before entry), for breaking organized resistance formations, and for denying assembly in sensitive areas. The cascade effect means a single deployment can propagate through a crowd far beyond the initial saturation zone. Security teams using PF-2 are trained to have clear egress corridors available before deployment, as the flight response is uncontrolled and a panicking crowd in an enclosed space creates serious secondary injury risk.",
+  "cultural_context": "Dread occupies a specific and dark place in the cultural imagination of Meridian's lower tiers. Unlike physical pain tools, the fear response produced by PF-2 is remembered differently — survivors describe not being hurt, but being certain they were about to die, certain something terrible was directly behind them, certain in a way that no amount of rational reflection afterward can fully erase. 'They ran the Dread' in Shelf community testimony about crackdowns is a phrase associated with the worst operations. The blue-gray coloration, briefly visible before it dissipates, has been rendered in street murals across Tier 1 districts as a symbol of state psychological violence.",
+  "known_users": [
+    "Arcturus Defense Solutions military contract units",
+    "Meridian Municipal Security specialized tactical divisions (undisclosed)",
+    "private military contractors (black-market acquisition documented)"
+  ],
+  "story_hooks": [
+    "A survivor of a Tier 1 crackdown remembers the blue-gray mist — but the official incident report lists only TC-4 deployment, and someone with access to those records is now following the survivor"
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "less_lethal",
+    "phobic_response",
+    "pheromone",
+    "psychological",
+    "arcturus",
+    "restricted",
+    "controversial",
+    "crowd_control"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

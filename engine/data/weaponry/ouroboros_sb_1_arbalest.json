@@ -1,0 +1,48 @@
+{
+  "id": "06565b71a5ca2f7fca30bddfb3ebdeb7",
+  "name": "Ouroboros SB-1 'Arbalest'",
+  "type": "weapon",
+  "aliases": [
+    "Arbalest",
+    "Siege Bow",
+    "Wall Breaker"
+  ],
+  "category": "crossbow",
+  "description": "A vehicle-mounted heavy crossbow platform that fires 1-meter steel bolts weighing 5 kilograms at velocities sufficient to penetrate reinforced concrete walls. The Arbalest uses a hydraulic draw mechanism that charges a bank of torsion springs generating 400 kilograms of draw force, combined with a short electromagnetic acceleration stage that brings the bolt to terminal velocity. The weapon is mounted on a powered gimbal that allows 180-degree traverse and 45-degree elevation from a vehicle roof or fixed position.\n\nOuroboros developed the Arbalest as a breaching tool for tactical teams that need to penetrate fortified positions without explosive ordnance. A 5-kilogram steel bolt arriving at 200 m/s punches through walls, doors, barricades, and light vehicles with the kinetic energy of a small cannon round, but without the explosive signature, fragmentation hazard, or ammunition regulation of conventional heavy weapons. Like the Longbow, the Arbalest exploits the legal fiction that anything firing a bolt is a crossbow.\n\nThe weapon's most common deployment is punching access holes through walls during forced-entry operations — a single Arbalest bolt creates a 15-centimeter breach that operators can use as a firing port, observation point, or anchor for breaching charges. Three bolts in a triangular pattern create a hole large enough for a person to enter. The process is slower than explosive breaching but creates no blast injury risk to occupants the entry team wants alive.",
+  "manufacturer": "Serpentine Data Centers",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — vehicle-mounted weapon permit required",
+  "street_price": "Φ28,000",
+  "base_technologies": [
+    "Hydraulic torsion spring system",
+    "Electromagnetic terminal acceleration",
+    "Powered gimbal mounting"
+  ],
+  "specifications": "bolt length: 1 meter\nbolt weight: 5 kg\nbolt velocity: 200 m/s\neffective range: 150 meters\npenetration: 200mm reinforced concrete\nreload time: 8 seconds (hydraulic draw)\nweapon weight: 85 kg (excluding mount)\nmounting: Vehicle roof or fixed emplacement",
+  "tactical_use": "Structural breaching, fortified position neutralization, and anti-vehicle operations. The Arbalest replaces explosive breaching in operations where blast effects are unacceptable. Vehicle-mounted units provide mobile siege capability for urban operations teams.",
+  "cultural_context": "The Arbalest is the most absurd example of the crossbow classification loophole — a vehicle-mounted siege weapon that fires 5-kilogram steel spears through concrete walls, legally classified as archery equipment. Its existence has become a running joke in arms regulation discourse and a serious argument for legal reform that will never happen because the manufacturers lobby harder than the reformers.",
+  "known_users": [
+    "Ouroboros tactical entry teams",
+    "Corporate security rapid-response units",
+    "Meridian 88 special operations (denied)"
+  ],
+  "story_hooks": [
+    "An Arbalest bolt has been found embedded in the wall of a Tier 5 corporate executive's private residence — fired from street level, it punched through three interior walls before stopping. No follow-up attack occurred. It was a message: we can reach you through your walls.",
+    "Someone has mounted an Arbalest on a stolen freight vehicle and is driving through the Shelf, firing bolts through the walls of buildings suspected to house corporate surveillance equipment. They're hitting their targets with suspicious accuracy."
+  ],
+  "ammunition_type": [
+    "heavy_bolt"
+  ],
+  "tags": [
+    "crossbow",
+    "weapon",
+    "vehicle-mounted",
+    "siege",
+    "breaching",
+    "ouroboros",
+    "heavy",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Ouroboros Energy"
+}

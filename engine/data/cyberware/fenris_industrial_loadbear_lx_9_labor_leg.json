@@ -1,0 +1,56 @@
+{
+  "id": "7b1d4f93e20c865a3d7f1b4e92c0a857",
+  "name": "FENRIS INDUSTRIAL LoadBear LX-9 Labor Leg",
+  "brand_name": "FENRIS INDUSTRIAL",
+  "product_name": "Fenris Industrial LoadBear LX-9 Labor Leg",
+  "type": "cyberware",
+  "aliases": [
+    "Fenris Planks",
+    "Standies",
+    "Foreman Legs"
+  ],
+  "category": "leg",
+  "body_location": "legs",
+  "description": "The LoadBear LX-9 is a full leg replacement engineered specifically for sustained load-bearing labor, featuring a modular internal frame that redistributes compressive force laterally across the joint structure rather than stacking it vertically through the spine interface. An integrated fatigue-suppression system dampens neuromuscular exhaustion signals at the nerve coupler, allowing continuous standing and walking for 16-plus hours without the physiological degradation that destroys biological legs over years of labor. Sole plates are interchangeable with job-site specific inserts — concrete grip, anti-static, chemical resistant.\n\nThe LX-9 is the most common cyberlimb on Meridian 88 construction sites, warehouse floors, and manufacturing lines. Fenris sells them through employer subsidy programs in the lower tiers, meaning many workers receive them as part of a job contract — and quietly discover that the employer retains a remote monitoring module in the firmware.",
+  "manufacturer": "FENRIS INDUSTRIAL",
+  "tier_availability": "Tier 1-3",
+  "legality": "Licensed",
+  "installation_requirements": "Occupational health clinic or Fenris-certified installer, employer co-sign on subsidized units, standard neural interface fitting",
+  "rejection_risk": "Low — designed for maximally broad compatibility across diverse biological interfaces, extended clinical testing in labor populations",
+  "maintenance": "Sole plate inspection monthly, fatigue-suppression node recalibration every 6 months, modular frame bolt check quarterly",
+  "specifications": "{\"material\": \"Reinforced structural polymer over aluminum alloy frame\", \"weight\": \"3.4kg per leg\", \"continuous_operation_rating\": \"18 hours standing/walking\", \"load_distribution\": \"Lateral force redistribution up to 220kg carried load\", \"sole_plates\": \"Modular, 6 standard job-site variants available\", \"fatigue_suppression\": \"Neuromuscular exhaustion signal dampening at nerve coupler\", \"monitoring_module\": \"Employer telemetry optional (standard on subsidized units)\", \"warranty\": \"3 years with employer contract, 1 year retail\"}",
+  "side_effects": [
+    "Fatigue suppression masks genuine overexertion signals — users can injure biological hip and spine without warning",
+    "Employer telemetry module tracks movement patterns and rest periods, often used for productivity enforcement",
+    "Reduced tactile sensation in feet compared to biological baseline",
+    "Long-term users report difficulty gauging physical exhaustion even in non-work contexts"
+  ],
+  "cultural_context": "The LX-9 has become a symbol of the labor-debt cycle in Meridian 88's lower tiers — workers accept the subsidy, sign the contract, and spend years paying off the hardware in labor while the employer monitors every step. Labor organizers in the Shelf district refer to Fenris subsidy units as 'company legs,' and removing the telemetry module without authorization voids the warranty and can trigger contract penalties.",
+  "known_users": [
+    "Construction and infrastructure workers on employer subsidy programs",
+    "Warehouse and logistics floor staff",
+    "Manufacturing line workers in Tier 1-2 facilities",
+    "Independent laborers who purchased retail after saving",
+    "Labor organizers who've had the telemetry module physically removed"
+  ],
+  "story_hooks": [
+    "A labor organizer asks the players to extract a Fenris firmware engineer who's willing to testify that the telemetry module has been logging more than movement — it's been recording ambient audio near workers during union meetings.",
+    "A worker's LX-9 fatigue suppression node has malfunctioned in the opposite direction — they feel every sensation at amplified intensity and can no longer work, but their employer is refusing to honor the warranty.",
+    "Someone is selling a patch that disables the employer telemetry module on subsidized LX-9 units — Fenris Industrial wants the distributor found, and so does a labor cartel who claims the patch belongs to them."
+  ],
+  "street_price": "Φ10,500",
+  "licensed_price": "Φ18,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "leg",
+    "labor",
+    "industrial",
+    "fenris-industrial",
+    "fatigue-elimination",
+    "load-bearing",
+    "worker",
+    "subsidized"
+  ],
+  "parent_corponation": ""
+}

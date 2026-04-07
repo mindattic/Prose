@@ -1,0 +1,48 @@
+{
+  "name": "Arcturus HD-1 'Homestead'",
+  "type": "automaton",
+  "classification": "Domestic",
+  "aliases": [
+    "Homestead",
+    "The Handyman",
+    "Bolt"
+  ],
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "description": "The HD-1 is Arcturus's attempt to enter the consumer market — a bipedal household maintenance automaton standing 1.7 meters, designed for home repair tasks: plumbing, electrical work, structural patching, appliance repair. Arcturus built it using scaled-down military robotics, which means the HD-1 is dramatically overengineered for its purpose. Its hands can apply torque sufficient to shear bolts off military vehicles. Its frame can support loads that would crush a residential floor. It was designed to fix your sink by people who usually design things that destroy buildings.\n\nThe result is a consumer product that makes homeowners vaguely nervous. The HD-1 moves with the mechanical precision of a weapons platform because it is, fundamentally, a weapons platform that has been taught to use a wrench instead of a rifle. Its visual design — angular, armored-looking, with the characteristic Arcturus matte-gray finish — does nothing to soften this impression. Children are afraid of it. Adults are uneasy around it. It fixes things flawlessly.\n\nArcturus has sold fewer HD-1 units than projected because consumers find it intimidating. The company has responded by offering an optional 'soft shell' — a padded exterior covering in consumer-friendly colors that makes the HD-1 look like a large appliance instead of a soldier. Sales improved thirty percent. Underneath the pastel padding, it is still a military chassis that could punch through a concrete wall.",
+  "tier_availability": "Tier 2-3",
+  "legality": "Consumer — unrestricted",
+  "autonomy_level": "Task autonomous — repair diagnostic AI",
+  "dimensions": "1.7m height, 0.6m shoulder width",
+  "weight": "110 kg",
+  "power_source": "Hydrogen fuel cell, 48-hour endurance",
+  "locomotion": "Bipedal, military-grade servo motors (throttled for residential use)",
+  "armament": [],
+  "sensors": [
+    "Structural integrity scanner",
+    "Electrical fault detection",
+    "Pipe-wall sonar",
+    "Thermal imaging for leak detection"
+  ],
+  "countermeasures": "Consumer safety locks prevent application of full mechanical force. These locks can be removed with aftermarket firmware.",
+  "known_deployments": [
+    "Mid-tier residential districts, particularly newer construction"
+  ],
+  "story_hooks": [
+    "Someone has been buying HD-1 units, stripping the consumer safety locks, and reselling them to underground fighting rings where they compete against each other in mechanical brawls. The units are technically household appliances. The violence they inflict on each other is extraordinary.",
+    "An HD-1's consumer safety locks failed during a routine repair, and it drove a screwdriver through a load-bearing wall with enough force to rupture a gas line in the adjacent apartment. The resulting explosion killed three people. Arcturus claims the locks were tampered with. The owner claims they weren't."
+  ],
+  "cultural_context": "The HD-1 is a reminder that Arcturus is, fundamentally, a weapons manufacturer. Even their consumer products carry the DNA of military engineering. Hardware reviewers describe using the HD-1 as 'having a tank fix your toilet' — it works, but you never forget what it was built from.",
+  "tags": [
+    "automaton",
+    "domestic",
+    "maintenance",
+    "repair",
+    "arcturus",
+    "consumer",
+    "bipedal",
+    "tier 2",
+    "tier 3"
+  ],
+  "id": "5893172aa1ca9d02d243707400e6c271",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

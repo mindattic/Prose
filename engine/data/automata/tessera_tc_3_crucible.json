@@ -1,0 +1,51 @@
+{
+  "name": "TESSERA TC-3 'Crucible'",
+  "type": "automaton",
+  "classification": "Heavy Platform — Mobile Incinerator",
+  "aliases": [
+    "Crucible",
+    "The Oven",
+    "Clean Sweep"
+  ],
+  "manufacturer": "TESSERA",
+  "description": "The TC-3 is a tracked platform carrying a forward-mounted industrial plasma torch with a 30-meter range and a 15-degree cone of effect. It was originally designed for demolition — clearing condemned structures by literally melting them — and for hazardous waste disposal through high-temperature incineration. TESSERA's security division recognized that a machine designed to reduce buildings to slag could serve other purposes.\n\nThe combat variant of the TC-3 is identical to the demolition variant. There is no modification required. A machine that incinerates buildings incinerates everything in them. TESSERA simply changes the targeting coordinates from 'condemned structure' to 'occupied structure' and the TC-3 does not know the difference. It cannot know the difference. It is a machine that creates fire and points it where it's told.\n\nThe TC-3 is deployed for 'urban renewal operations' — TESSERA's term for clearing areas designated for demolition that may or may not be fully evacuated. The unit's plasma torch creates temperatures sufficient to melt structural steel, meaning nothing within its engagement zone survives in a recognizable form. Evidence, bodies, records, personal belongings — everything becomes slag. TESSERA's legal team has noted in internal documents that this evidentiary destruction is 'an incidental benefit of the demolition methodology.'",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed for demolition. Combat use: regulatory grey area",
+  "autonomy_level": "Remote operated with autonomous demolition sequencing",
+  "dimensions": "3.5m length, 2.5m width, 2.0m height",
+  "weight": "5,500 kg",
+  "power_source": "High-capacity fuel cell array, 6-hour continuous operation",
+  "locomotion": "Tracked — 15 km/h maximum",
+  "armament": [
+    "Forward-mounted industrial plasma torch (30m range, 15-degree cone, 3,000°C+)"
+  ],
+  "sensors": [
+    "Thermal imaging",
+    "Structural analysis for demolition sequencing",
+    "Remote camera feed"
+  ],
+  "countermeasures": "Plasma torch has limited traverse angle — flanking avoids the engagement cone. The unit is slow and tracked, making it vulnerable to anti-vehicle weapons. Fuel cell array is volatile if penetrated. Water does not extinguish plasma-heated materials.",
+  "known_deployments": [
+    "Authorized demolition operations",
+    "Urban renewal projects (disputed)",
+    "Evidence elimination (alleged)"
+  ],
+  "story_hooks": [
+    "A TC-3 has been dispatched to demolish a Shelf building that is still occupied. TESSERA's paperwork says the building was evacuated. The residents say it wasn't. The TC-3 arrives in six hours.",
+    "A TC-3 was used to demolish a building that contained evidence of corporate crimes. A journalist had been inside, copying files. The journalist escaped, but their copies were destroyed. The only remaining evidence is a partial transmission they sent before the building melted."
+  ],
+  "cultural_context": "The TC-3 is the industrial eraser — a machine that makes things not have existed. In a city where evidence is power, the ability to reduce a building and everything in it to slag is the ultimate form of corporate censorship.",
+  "tags": [
+    "automaton",
+    "tracked",
+    "incinerator",
+    "plasma",
+    "demolition",
+    "weapon",
+    "tessera",
+    "corporate",
+    "tier 4"
+  ],
+  "id": "3e70cd7f21683b85bedc5297bc7e9a5c",
+  "parent_corponation": "Tessera Corponation"
+}

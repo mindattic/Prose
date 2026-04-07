@@ -1,0 +1,43 @@
+{
+  "id": "1a2b3c4d5e6f708192a3b4c5d6e7f809",
+  "name": "Rourke & Sable Lambskin Moto Jacket",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A classic asymmetric-zip motorcycle jacket in black lambskin, cut close through the torso with a slight flare at the hip. The lapels are wide and lay flat. Hardware is brushed nickel — zipper pulls, snaps, the two buckles at the waist. The interior is lined in smooth cotton twill. Pre-worn leather panels at the elbows and shoulders give it the look of something that has been places, though Rourke & Sable achieves this through careful finishing rather than actual age. Four exterior pockets, one interior.\n\nRourke & Sable is a mid-tier leather goods manufacturer with a reputation for honest materials and clean execution. This jacket occupies that reliable space between 'too cheap to trust' and 'too expensive to justify' — the Tier 3 sweet spot. Riders, musicians, and people who own exactly one nice jacket tend to make it this one.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "lambskin leather",
+    "cotton twill lining",
+    "brushed nickel hardware",
+    "cotton interfacing"
+  ],
+  "functionality": "",
+  "what_it_says": "You have taste and you've spent money on something real. You're not performing anything — you just like a good leather jacket.",
+  "worn_by": [
+    "motorcycle riders",
+    "musicians",
+    "artists",
+    "Tier 3 professionals with personal style",
+    "anyone who saved up for it"
+  ],
+  "manufacturer": "Rourke & Sable Leather Goods",
+  "price_range": "Φ275",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Rourke & Sable sources their lambskin from a single geneware ranch in rural Wisconsin — the ranch just burned down under suspicious circumstances and the next production run is indefinitely delayed",
+    "A specific serial number range of this jacket was recalled quietly — the tannery used a chemical compound that causes skin sensitization over time — but not all units were recovered",
+    "Someone is commissioning custom modifications to these jackets: hidden interior pockets sized precisely for a specific weapon profile, added by an unlicensed tailor in the Shelf"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "leather",
+    "moto",
+    "motorcycle",
+    "normal",
+    "classic"
+  ],
+  "parent_corponation": ""
+}

@@ -10,7 +10,7 @@
   ],
   "category": "energy",
   "description": "The Capacitive Nerve Induction Lance is a precision energy weapon designed around a principle of extreme selectivity: rather than disrupting broad bioelectric function, it delivers a tightly focused capacitive discharge along a single projected electromagnetic filament — colloquially called 'the thread' — that is thin enough to target individual nerve trunks at range. The filament is maintained by a phased-array antenna system in the weapon's emitter head that continuously adjusts to compensate for atmospheric interference. At point of contact, the discharge induces a violent, involuntary nerve firing in the targeted structure — a single motor nerve produces a full-force muscle contraction; a sensory nerve produces an overwhelming pain signal; autonomic nerves produce effects that vary unpredictably and dangerously.\n\nHELIX BIOSYSTEMS developed the CNIL-1 under their 'Precision Compliance' research program, initially as a surgical adjunct for nerve stimulation procedures in patients with certain degenerative conditions. The military application was recognized almost immediately by ARCTURUS DEFENSE SOLUTIONS, which licensed the core technology and collaborated on the combat-ready version. The result is a weapon that demands exceptional operator training — hitting a specific nerve trunk at range requires detailed anatomical knowledge and a steady hand — but rewards that training with effects that no other platform can replicate. A shot to the brachial plexus drops a weapon instantly. A shot to the vagus nerve can stop a heart.\n\nThe weapon's cultural cachet is built on exclusivity and expertise. Threadneedle operators are known in professional circles as 'knitters' — a term that acknowledges both the weapon's filament mechanism and the surgical precision of skilled use. In assassination circles, a confirmed vagus-nerve kill is considered a mark of extraordinary craft, discussed with the kind of hushed respect usually reserved for master artisans. HELIX BIOSYSTEMS is aware of this reputation and has done nothing to discourage it.",
-  "manufacturer": "HELIX BIOSYSTEMS (core technology) / ARCTURUS DEFENSE SOLUTIONS (combat application)",
+  "manufacturer": "Blackwood Commercial Group",
   "tier_availability": "Tier 5+ / Military only / Black market (rare)",
   "legality": "Prohibited",
   "base_technologies": [
@@ -54,6 +54,8 @@
     "ethics",
     "train",
     "fire",
-    "tier 5"
-  ]
+    "tier 5",
+    "less_lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

@@ -1,0 +1,47 @@
+{
+  "id": "5d9b1e4c7a2f3e08b6d4c9f1a3e7b20d",
+  "name": "Kelvex Transit Maintenance Ground Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The standard layered rig for MagRail ground maintenance crews who work the underbelly of the transit system — crawl spaces, signal relay stations, and track-level inspection walks. The outer shell is a waist-length hi-vis jacket in deep navy with broad reflective tape bands at the chest, waist, and cuffs, Kelvex Transit Authority logo printed in white on the left breast, and a rear panel that reads MAINTENANCE in tall retroreflective lettering. The jacket has a rear hem vent and a dorsal seam split to accommodate spinal aug rigs without bunching. Beneath it, a heavy-duty navy work shirt with a mandarin collar, hidden snap placket, and elbow patches in gunmetal grey synth-leather. Trousers are Goretek HaulMaster-style in charcoal canvas with double-layered seat and knees, cargo pockets on both thighs secured with hook-and-loop, and a tool loop array at the right hip. Steel-toe boots in matte black with a non-conductive sole and ankle-height lacing system with a secondary magnetic snap keeper. A navy knit watch cap completes the look, often pulled low.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "hi-vis ripstop shell",
+    "heavy canvas",
+    "synth-leather elbow patches",
+    "retroreflective tape",
+    "non-conductive rubber sole",
+    "knit polyblend"
+  ],
+  "functionality": "dorsal seam split for spinal aug rigs, retroreflective hi-vis banding, non-conductive steel-toe boot, tool loop array, cargo thigh pockets, snap-placket shirt for fast layering changes, BCI-compatible sleeve cuff opening",
+  "what_it_says": "Transit maintenance is unglamorous, essential work. This kit says the wearer keeps the city moving from below, unseen. The Kelvex branding marks them as employed, stable, and accountable to a schedule. Worn off-duty, it reads as honest labor — the kind of person who fixes things rather than breaks them.",
+  "worn_by": [
+    "MagRail track maintenance crews",
+    "signal relay technicians",
+    "transit ground infrastructure workers",
+    "tunnel inspection teams"
+  ],
+  "manufacturer": "Kelvex Transit Authority (uniform issue) / Goretek (trousers, contractor purchase)",
+  "price_range": "Φ140–Φ220 (jacket and shirt employer-issued; trousers and boots personal purchase)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A maintenance worker discovers a section of track that has been deliberately sabotaged — and the work order log has been wiped clean.",
+    "The retroreflective lettering on the back of the jacket makes the wearer highly visible in the dark tunnels, which is a problem when they're trying to avoid the person following them.",
+    "The non-corponation trousers become a disciplinary issue when a new supervisor insists on full uniform compliance — but the issued trousers don't fit the worker's prosthetic leg."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "transit",
+    "maintenance",
+    "hi_vis",
+    "aug_compatible",
+    "corponation_branded",
+    "kelvex",
+    "ground_crew"
+  ],
+  "parent_corponation": ""
+}

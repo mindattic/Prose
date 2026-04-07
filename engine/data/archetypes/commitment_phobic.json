@@ -1,0 +1,33 @@
+{
+  "id": "879518f658e2e39f8956c2ae0c522b00",
+  "name": "Commitment Phobic",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Every door closed is a trap, every promise is a chain",
+  "behavioral_signature": "Avoids binding decisions, keeps every option open indefinitely",
+  "under_stress": "Flees from anything that looks like permanence",
+  "at_rest": "Free-floating, available, never quite landing anywhere",
+  "will_always": [
+    "keep their options open"
+  ],
+  "will_never": [
+    "sign anything they can't get out of"
+  ],
+  "unless": [
+    "something matters enough to be worth the risk of staying"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Gambler",
+      "threshold": 0.7,
+      "context": "avoiding commitment"
+    }
+  ],
+  "opposite_of": [
+    "Loyal Dog"
+  ],
+  "tags": [
+    "avoidant",
+    "restless"
+  ]
+}

@@ -11,7 +11,7 @@
   "category": "exotic",
   "caliber": "8mm aerosol round",
   "description": "The MASCR-8 is a specialized aerosol delivery projectile for the Magnetically Accelerated Synovial Crystallization Rifle, containing a supersaturated ionic crystallization compound in a frangible polymer shell. The round is magnetically accelerated to moderate velocity and shatters on impact, releasing its payload as a fine aerosol that penetrates clothing and skin to reach the synovial fluid in the target's joints.\n\nThe crystallization compound is a proprietary Tessera Corponation formulation that remains in supersaturated solution until exposed to the specific chemical environment of human synovial fluid, at which point it rapidly precipitates into jagged crystalline structures within the joint capsule. The onset is delayed — 60-90 seconds — which means the target initially appears unaffected, a property that makes the weapon ideal for covert incapacitation in situations where immediate visible effects would compromise the operator.\n\nThe rifle carries 8 rounds in a linear magazine, with each round individually sealed against moisture contamination. The crystallization compound is extremely hygroscopic and will precipitate prematurely if exposed to atmospheric moisture, rendering the round useless. This sensitivity limits the weapon's operational viability in humid environments and requires operators to store ammunition in desiccated containers.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "Mosaic Surgical Centers",
   "tier_availability": "Black market / Military research",
   "legality": "Prohibited — classified as chemical weapon under Meridian Bioweapons Convention",
   "specifications": "weight_per_round: 3.8g\nmuzzle_velocity: 340 m/s (magnetically accelerated)\npenetration_rating: Frangible — shatters on contact, no penetration\neffective_against: Biological targets with synovial joints (ineffective against full synthetic)\ncountermeasures: Sealed environmental suit, synthetic joint replacements, prompt irrigation with chelation solution within 30 seconds of exposure",
@@ -41,5 +41,6 @@
     "medical",
     "market",
     "clothing"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

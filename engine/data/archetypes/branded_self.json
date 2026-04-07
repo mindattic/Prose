@@ -1,0 +1,33 @@
+{
+  "id": "3a44e5eb8788d40ed92333818d52c7f4",
+  "name": "Branded Self",
+  "type": "archetype",
+  "category": "identity",
+  "description": "Their identity is a product, carefully marketed and maintained",
+  "behavioral_signature": "Curates every aspect of their public persona for strategic effect",
+  "under_stress": "The brand cracks and the person underneath is unrecognizable",
+  "at_rest": "Polished, consistent, always on message",
+  "will_always": [
+    "protect the brand"
+  ],
+  "will_never": [
+    "do anything off-brand in public"
+  ],
+  "unless": [
+    "the brand becomes a prison and they're dying inside it"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Performer",
+      "threshold": 0.8,
+      "context": "curated identity"
+    }
+  ],
+  "opposite_of": [
+    "Authentic Core"
+  ],
+  "tags": [
+    "curated",
+    "strategic"
+  ]
+}

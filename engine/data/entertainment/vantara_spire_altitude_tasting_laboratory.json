@@ -1,0 +1,31 @@
+{
+  "name": "Vantara — Spire Altitude Tasting Laboratory",
+  "type": "entertainment",
+  "category": "cuisine",
+  "subcategory": "fine dining institution",
+  "creator": "Chef Osazemen Brandt-Iyer",
+  "description": "Occupying the 91st floor of the Eidolon Tower in the Spire, Vantara offers a fourteen-course neural-assisted tasting experience in which each dish is paired with a precisely calibrated BCI flavor-memory cue — the diner tastes not just the food on the plate but an associated memory of eating, curated from a licensed archive of pre-Collapse culinary experiences. Real ingredients dominate the menu at extraordinary cost: a single course may feature actual saffron (Φ340 per gram at import), genuine Hokkaido kelp, or heritage-breed pork raised in the controlled agri-floors of Helix Tower Seven. Chef Osazemen Brandt-Iyer, who trained under three separate culinary traditions before engineering a fourth of her own, insists that the BCI pairings are not the meal — they are the argument the meal is making.",
+  "year": 2211,
+  "tier_association": "Tier 5",
+  "medium": "physical with BCI overlay",
+  "cultural_impact": "Vantara's waiting list — currently four years — has become a social currency in Spire circles, and reservations are traded, gifted, and occasionally stolen. The restaurant's practice of pairing real food with BCI memory cues opened a philosophical debate about whether synthetic memory constitutes authentic culinary experience, a conversation that has migrated well beyond the Spire into academic and underground food circles.",
+  "controversy": "In 2214, food journalist Tariq Osei-Halverson published a leaked internal document suggesting that Vantara's BCI memory archive included unlicensed neural recordings sourced from Tier 1 and Tier 2 subjects without consent — meaning that wealthy diners were experiencing the food memories of people who couldn't afford to eat at the restaurant, or anywhere near it. Brandt-Iyer denied the sourcing allegation; the archive provider, a subsidiary of Axiom Network, settled out of court.",
+  "status": "active",
+  "tags": [
+    "fine dining",
+    "BCI-assisted cuisine",
+    "real ingredients",
+    "Spire culture",
+    "neural memory pairing",
+    "luxury",
+    "controversy",
+    "culinary philosophy"
+  ],
+  "story_hooks": [
+    "A Tier 2 archivist realizes that a specific memory in Vantara's licensed BCI flavor library is unmistakably her grandmother's — and she never consented to any neural recording.",
+    "Someone is systematically acquiring and then destroying Vantara reservations belonging to specific Spire executives; the chef hires an investigator who must navigate the social ecosystem of the waiting list to find the culprit.",
+    "A food critic from the underground pirate feed Saltmouth receives an anonymous reservation and must decide whether reviewing Vantara honestly will destroy their credibility with their Shelf audience or validate everything they've spent years arguing against."
+  ],
+  "id": "3acdec722c0946499dd37000acdedc2c",
+  "parent_corponation": ""
+}

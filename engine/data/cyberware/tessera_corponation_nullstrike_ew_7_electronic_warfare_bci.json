@@ -1,0 +1,57 @@
+{
+  "id": "e5c3a8f2d1074b6e9230f7a4c1b8d592",
+  "name": "Tessera Corponation NullStrike EW-7 Electronic Warfare BCI",
+  "brand_name": "Tessera Corponation",
+  "product_name": "NullStrike EW-7 Electronic Warfare BCI",
+  "type": "cyberware",
+  "aliases": [
+    "NullStrike",
+    "EW-7",
+    "The Null",
+    "Tessera Jammer"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The NullStrike EW-7 is Tessera Corponation's flagship electronic warfare BCI, designed to transform a single operator into a mobile signals intelligence and disruption platform capable of contesting the electromagnetic spectrum across a 2km operational radius. The device integrates a seven-band software-defined radio array—physically distributed across the cranial chassis and a supplementary dorsal antenna node implanted at C3—with a neural signal processing engine that allows the operator to perceive the electromagnetic environment as a richly textured sensory overlay, mapping active transmitters, encrypted comms channels, and electronic countermeasure signatures in real time. Offensive capabilities include targeted jamming of specific frequency bands with sub-100ms activation latency, directed EMP pulse generation via the dorsal node (rated to disable unshielded electronics within 15m), and quantum-spoofed signal injection capable of feeding false telemetry into enemy sensor networks. Defensively, the EW-7 incorporates Tessera's proprietary SpectrumVeil passive masking, which renders the operator's own electronic signature nearly undetectable to conventional battlefield sensors.\n\nWithin Meridian 88's intelligence and special operations communities, NullStrike operators—colloquially 'Nulls'—are regarded as among the most asymmetrically dangerous individuals on any battlefield. Tessera markets the EW-7 aggressively to corporate security divisions and national military clients alike, positioning it as a force equalizer capable of neutralizing technologically superior opponents through spectrum dominance. The device's cultural footprint extends beyond the battlefield: in Meridian 88's sprawling hacker underground, a cracked civilian-grade version of the EW-7's signal perception overlay—stripped of its offensive capabilities—has become a coveted status symbol, offering users a ghostly awareness of the electromagnetic world invisible to unaugmented eyes. Tessera's legal team pursues these unauthorized modifications with considerable vigor, making possession of a modified EW-7 a reliable indicator that someone has very expensive enemies.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 5",
+  "legality": "Military-Only",
+  "installation_requirements": "Tier 5 neurosurgeon; secondary dorsal antenna node installation at C3 (separate procedure); Tessera EM Sensitivity Screening required; 21-day neural calibration with progressive spectrum exposure; SpectrumVeil activation requires separate licensing key from Tessera",
+  "rejection_risk": "High (22% without full Tessera pre-conditioning; 9% with complete protocol)",
+  "maintenance": "45-day antenna node integrity check; software-defined radio array recalibration every 90 days; SpectrumVeil passive masking firmware updated monthly via Tessera secure uplink; dorsal node requires annual physical inspection",
+  "specifications": "{\"operational_radius\": \"2km\", \"radio_bands\": 7, \"signal_processing\": \"Real-time EM overlay at 180Hz\", \"jamming_activation_latency\": \"<100ms\", \"directed_emp_range\": \"15m\", \"emp_rating\": \"Unshielded electronics disable\", \"quantum_spoofing\": \"Signal injection with 4096-qubit authentication bypass\", \"passive_masking\": \"Tessera SpectrumVeil v3.1\", \"antenna_nodes\": [\"Cranial array\", \"C3 dorsal node\"], \"encryption\": \"Tessera QuantumLock EW-grade\", \"power_draw\": \"High — requires Tessera bio-electric booster cell\", \"tier\": 5}",
+  "side_effects": [
+    "Chronic tinnitus-adjacent phenomenon: operators perceive active radio transmissions as faint auditory artifacts even when overlay is suppressed",
+    "Hypersensitivity to unshielded electronic devices in close proximity, manifesting as mild headache and visual static in dense urban electromagnetic environments",
+    "Documented compulsive spectrum-scanning behavior in long-term users, analogous to obsessive checking behaviors",
+    "Rare but severe: directed EMP pulse generation has caused unintended feedback loops in users with additional cranial implants lacking adequate hardening"
+  ],
+  "cultural_context": "Nulls occupy a unique cultural space in Meridian 88—simultaneously feared as battlefield force-multipliers and quietly glamorized in underground tech communities who romanticize the idea of perceiving the hidden electromagnetic architecture of the city. Tessera has leaned into this dual identity in its marketing, producing limited-run promotional materials that frame NullStrike operators as 'conductors of the invisible orchestra,' a phrase that has taken on ironic second life as hacker slang.",
+  "known_users": [
+    "Tessera Corponation Internal Security Division",
+    "Meridian 88 Signals Intelligence Corps",
+    "Select allied national military EW units"
+  ],
+  "story_hooks": [
+    "A NullStrike EW-7 has been used to blind the sensor networks covering an entire district of Meridian 88 for eleven minutes—long enough for something to be moved, or someone to disappear—and the operator's identity has been carefully erased from Tessera's bonding registry.",
+    "A hacker collective claims to have developed a full offensive unlock for a civilian-modified EW-7, and they're offering it for sale to the highest bidder; Tessera's response has been to quietly contract someone to retrieve it by any means necessary.",
+    "An active-duty NullStrike operator is experiencing the EW-7's spectrum overlay continuously—they can no longer turn it off—and the unceasing electromagnetic perception is driving them toward psychological collapse."
+  ],
+  "street_price": "Φ175,000",
+  "licensed_price": "Φ270,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "electronic-warfare",
+    "signals-intelligence",
+    "emp",
+    "spectrum-dominance",
+    "tier5",
+    "tessera",
+    "jamming",
+    "spoofing",
+    "military_elite"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

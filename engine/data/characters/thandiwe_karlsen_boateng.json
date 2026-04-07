@@ -1,0 +1,64 @@
+{
+  "id": "4feff42c3d1c48a1ed1dee0f5f0eec18",
+  "name": "Thandiwe Karlsen-Boateng",
+  "type": "character",
+  "aliases": [
+    "Ironclad",
+    "The Auditor"
+  ],
+  "role": "Private Investigator",
+  "description": "Thandiwe Karlsen-Boateng is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients — the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Shelf to the Spires is a story she never tells because it would reveal vulnerabilities she's spent decades armoring over. What matters is the present: she is the best corporate investigator in Meridian 88, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she's hired to find a mole, the mole is found. When she's hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren't always what her clients wanted to hear — she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
+  "affiliation": "Meridian Corporate Intelligence Group — a boutique firm serving Tier 4-5 clients",
+  "tier": "Tier 4",
+  "location": "A fortified suite on the 87th floor of the Tessera-adjacent Pinnacle Tower, Spires district",
+  "specialization": "Corporate espionage investigation — identifying moles, data breaches, and intellectual property theft",
+  "methods": [
+    "Behavioral analysis of employee populations to identify anomalous patterns",
+    "Honeypot operations — planting false data to see who takes the bait",
+    "Deep financial forensics — following money through shell companies and crypto channels",
+    "Counter-surveillance sweeps using military-grade detection equipment",
+    "Social network mapping to identify pressure points and compromised relationships"
+  ],
+  "notable_cases": [
+    "Identified a seventeen-year mole inside Axiom's quantum computing division who had been passing trade secrets to Zheng-Dao through a dead-drop system embedded in a children's game app",
+    "Uncovered a scheme where three Tessera executives were running a shadow company that siphoned Φ2.3 billion in R&D funds over four years",
+    "Proved that a supposed data breach was actually an inside job orchestrated by the company's own security chief to justify a budget increase"
+  ],
+  "equipment": [
+    "Military-grade counter-surveillance suite — detects and neutralizes listening devices, hidden cameras, and passive BCI scanners",
+    "Quantum-encrypted communications terminal — theoretically unbreakable",
+    "Access to corporate database cross-reference tools available only to licensed investigators",
+    "A wardrobe that costs more than a Shelf apartment per outfit — appearances are investigative tools in the Spires",
+    "Retinal scanner spoofing device for accessing secured corporate facilities during investigations"
+  ],
+  "personality": "Thandiwe is cold the way a scalpel is cold — it's not personal, it's functional. She grew up Tier 2 and clawed her way to the Spires through intelligence, ruthlessness, and an absolute refusal to be impressed by anyone's title or wealth. She treats every person she meets as a potential subject of investigation and maintains files on her own clients because trust is a vulnerability she can't afford. She is impeccably professional, never drinks at business functions, laughs rarely and never spontaneously, and has a reputation for destroying careers with the same emotional affect as someone filing paperwork. Under the armor, she is deeply lonely and aware that she has optimized herself for success at the cost of everything else.",
+  "relationships": [
+    {
+      "name": "Director Kaito Bergstrom-Osei",
+      "type": "primary client",
+      "description": "Axiom's head of internal affairs — her largest and most demanding client, whose own loyalty she privately questions"
+    },
+    {
+      "name": "Vesna Medina-Appiah",
+      "type": "former protege",
+      "description": "Left Thandiwe's firm to start a competing practice — Thandiwe considers this a betrayal and monitors her operations"
+    }
+  ],
+  "story_hooks": [
+    "Thandiwe is hired to investigate a data breach at Axiom, but the trail leads to Director Kaito himself — her biggest client and the source of 40% of her revenue",
+    "Someone is feeding information about her ongoing investigations to the subjects she's investigating, and the leak is inside her own firm",
+    "A Shelf-level PI contacts her with evidence of a corporate crime so large it could destabilize Meridian 88's economy — but the evidence was obtained illegally and she has to decide whether her ethics or her effectiveness takes priority"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "corporate_espionage",
+    "spires",
+    "tier_4",
+    "elite"
+  ],
+  "carried_weapons": [
+    "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
+  ],
+  "registered_firearms": []
+}

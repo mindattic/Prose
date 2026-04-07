@@ -1,0 +1,40 @@
+{
+  "id": "3c4d5e6f7a8b901234c5d6e7f8a9b0c1",
+  "name": "Aldren Packmule Utility Cargo Pant",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Generous straight-fit cargo pants with an almost absurd number of pockets — ten total, including two drop-leg side pockets secured with both button and zip, two hidden interior thigh channels, and a sealed rear document pocket. Built from a mid-weight canvas-cotton blend in tan, olive, or dark navy.\n\nFavored by field technicians, medics, and anyone whose job requires having the right thing in the right place immediately. The drop-leg pockets are the signature feature — they sit lower than standard cargo pockets, keeping bulk off the hip and making deep storage accessible while seated. Looks utilitarian. Is utilitarian.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "canvas-cotton mid-weight blend",
+    "sealed rear document pocket lining",
+    "double-stitched drop-leg pocket construction"
+  ],
+  "functionality": "Ten total pockets including drop-leg dual-secured pockets, hidden interior thigh channels, sealed rear document pocket",
+  "what_it_says": "You carry a lot, you know where all of it is, and you've been caught without something important exactly once.",
+  "worn_by": [
+    "field medics",
+    "technicians",
+    "on-site engineers",
+    "well-prepared fixers"
+  ],
+  "manufacturer": "Aldren",
+  "price_range": "Φ61",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A medic's sealed document pocket contains paperwork that was supposed to have been destroyed — someone kept a copy.",
+    "The drop-leg pockets are deep enough that customs scanners at a Tier 4 checkpoint consistently miss what's at the bottom."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 3",
+    "cargo",
+    "utility",
+    "tactical",
+    "field",
+    "high-pocket-count"
+  ],
+  "parent_corponation": ""
+}

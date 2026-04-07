@@ -1,0 +1,34 @@
+{
+  "name": "TESSERA BioOps Lab Technician Coverall",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_lab_wear",
+  "manufacturer": "TESSERA Biotech Internal Supply Division",
+  "description": "Issued to TESSERA's bench-level geneware technicians working in BSL-2 and BSL-3 environments, this full-body coverall is constructed from a microporous film laminate that blocks particulates, aerosolized biologicals, and most common chemical splashes. The exterior is TESSERA's clinical white with a subtle helix-pattern emboss visible only under UV — a mark of authenticity that prevents counterfeit uniforms from entering secure lab areas. Integrated hood and booties attach via sealed magnetic closures. Disposable in theory, but most techs wash and reuse them until the laminate integrity fails, typically at around 30 cycles.\n\nThe suit is designed with the full range of TESSERA's own geneware modifications in mind — there are discrete fin-shaped vents along the spine for bioluminescent skin that can overheat under sealed suits, and the hood has a structured internal frame to accommodate horn clearance up to 18cm. A wrist-mounted contamination sensor logs exposure events and syncs to the wearer's BCI. The suit does not accommodate external chrome augmentation well; workers with significant cyberware typically request custom-cut versions at additional cost, which TESSERA docks from their pay.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ95",
+  "augment_compatible": false,
+  "geneware_compatible": true,
+  "durability": "low",
+  "legal_status": "restricted",
+  "cultural_context": "TESSERA lab techs are a complicated caste — educated enough to understand what they're working on, but paid just enough to keep them from leaving. The white coverall is a daily reminder of their position: visible, trackable, replaceable. Some techs decorate the inside lining where inspectors won't see.",
+  "story_hooks": [
+    "A contamination sensor log from a discarded coverall shows a tech was exposed to a compound that doesn't appear in any TESSERA public research manifest.",
+    "Someone is selling used TESSERA coveralls on the gray market — still containing trace biologicals from the lab. Whether that's valuable or dangerous depends on who's buying.",
+    "A new hire discovers that the 'custom cut' surcharge for her chrome arm has been quietly added to her contract as permanent debt, not a one-time fee."
+  ],
+  "tags": [
+    "tessera",
+    "biotech",
+    "lab",
+    "coverall",
+    "biohazard",
+    "geneware-compatible",
+    "disposable",
+    "uniform",
+    "tier3",
+    "scientific"
+  ],
+  "id": "22bd422f6c814f7f93dd462f3e97258d",
+  "parent_corponation": "Tessera Corponation"
+}

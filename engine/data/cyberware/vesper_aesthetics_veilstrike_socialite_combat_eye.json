@@ -1,0 +1,56 @@
+{
+  "id": "2d6f08b4e3a7c951f08e4b2a7d1c3f80",
+  "name": "VESPER AESTHETICS Veilstrike Socialite Combat Eye",
+  "brand_name": "VESPER AESTHETICS",
+  "product_name": "Veilstrike Socialite Combat Ocular Hybrid",
+  "type": "cyberware",
+  "aliases": [
+    "Killer Couture",
+    "Veilstrike",
+    "Pretty Predator"
+  ],
+  "category": "ocular",
+  "body_location": "eyes",
+  "description": "The Veilstrike is Vesper Aesthetics' most controversial product — a bilateral hybrid ocular that presents as a high-fashion Chromashift unit while concealing a functional tactical processing layer underneath. The right eye operates as a full Luminos-class display with animated iris patterns and bioluminescent sclera; the left houses a concealed threat-assessment engine with micro-expression reading, biometric stress detection, and a stripped-down IFF overlay that tags armed individuals within 30 meters. The two systems share a unified neural interface that allows the wearer to switch between social and tactical modes via a deliberate blink sequence, with no external tell during the transition.\n\nVesper markets the Veilstrike discreetly — it does not appear in their public catalog. It is sold through private appointments to Tier 4-5 clientele who operate in environments where being perceived as unarmed is strategically valuable: corporate executives navigating hostile boardrooms, socialites with security concerns, and the wealthiest tier of organized crime who prefer elegance to intimidation. The legality is ambiguous; Vesper argues the tactical layer falls below Restricted thresholds, and that argument has been tested in Meridian courts three times.",
+  "manufacturer": "VESPER AESTHETICS",
+  "tier_availability": "Tier 4-5",
+  "legality": "Restricted",
+  "installation_requirements": "Vesper private clinic only; bilateral installation mandatory; NDA signing prior to procedure; no third-party surgeon access",
+  "rejection_risk": "Moderate — the dual-system neural interface creates competing signal loads on the optic nerve; Vesper's proprietary signal-arbitration firmware mitigates but does not eliminate conflict",
+  "maintenance": "Vesper private clinic visits only — unit is encrypted against third-party maintenance; annual bilateral recalibration required; fashion layer pattern updates via private StyleCloud tier",
+  "specifications": "{\"right_eye\": {\"type\": \"Fashion display\", \"iris_colors\": \"16M combinations\", \"sclera_glow\": \"12 hues bioluminescent\"}, \"left_eye\": {\"type\": \"Concealed tactical\", \"threat_detection_range\": \"30m\", \"micro_expression_reading\": true, \"biometric_stress_detection\": true, \"IFF_overlay\": \"Simplified, armed-individual tagging only\"}, \"mode_switching\": \"Deliberate blink sequence, <1s transition, no external tell\", \"scanner_profile\": \"Registers as fashion-only unit on standard commercial scans\", \"unified_neural_latency\": \"<6ms\"}",
+  "side_effects": [
+    "Mode bleed: tactical overlays occasionally intrude during social mode, causing the wearer to unconsciously assess threats at formal events — visible as micro-expressions of alertness that trained observers notice",
+    "Dual neural interface creates a persistent low-grade pressure sensation behind the left eye, described by users as 'always being watched from the inside'",
+    "Micro-expression reading in social mode can cause empathy overload — the wearer becomes acutely aware of every person's concealed emotional state in a room",
+    "Documented cases of identity fragmentation: users begin to partition their personality into 'social self' and 'tactical self' with increasing difficulty integrating them"
+  ],
+  "cultural_context": "The Veilstrike exists in Meridian's legal gray zone because Vesper has spent considerable money keeping it there. The product embodies a particular Tier 5 philosophy: that power should be invisible, that the most dangerous person in the room should look like they're thinking about the canapés. Among those who know what to look for, a Veilstrike installation is a signal that someone has resources, connections, and reasons to be careful.",
+  "known_users": [
+    "Tier 5 corporate executives with personal security concerns",
+    "Wealthy organized crime figures maintaining civilian appearances",
+    "High-profile political figures operating in contested social environments",
+    "Elite fixers who work Tier 4-5 social circuits",
+    "Intelligence operatives with Vesper-tier cover identities"
+  ],
+  "story_hooks": [
+    "Vesper's private clinic records for Veilstrike installations are stolen — the list of who in Meridian has concealed tactical eyes is now in play, and every name on it is suddenly in danger",
+    "A player notices someone's left eye has the subtle micro-tell of a Veilstrike in tactical mode during what was supposed to be a routine social meeting — the question is whether to act on the knowledge",
+    "Vesper approaches the players to recover a prototype Veilstrike Mark II stolen from their R&D facility — the new version reportedly has a concealed lethal capability that would make the original look like a toy"
+  ],
+  "street_price": "Φ85,000",
+  "licensed_price": "Φ180,000",
+  "tags": [
+    "cyberware",
+    "ocular",
+    "hybrid",
+    "fashion",
+    "tactical",
+    "concealed",
+    "social",
+    "combat",
+    "restricted",
+    "vesper"
+  ],
+  "parent_corponation": ""
+}

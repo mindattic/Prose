@@ -1,0 +1,45 @@
+{
+  "id": "e5c3f8a1d7042b96e1c5f3a8d0b42e71",
+  "name": "Veldtmann RadCore Reactor Zone Enclosure Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A Tier 3 radiation enclosure suit for reactor maintenance and contaminated Shelf zones. The outer shell is dense lead-composite polyfilm in matte institutional yellow, stenciled with Veldtmann's black chevron and dosimeter attachment points at chest, wrist, and collar. Inner layers are triple-sealed with radiation-dampening aerogel batting and a moisture barrier.\n\nThe integrated helmet is hard-shelled polycarb with a leaded-glass visor. All seams are pressure-bonded and color-coded for inspection — red seams indicate primary radiation barriers. Rated RAD-IV for gamma and beta exposure.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "lead-composite polyfilm outer shell",
+    "radiation-dampening aerogel batting",
+    "polyurethane moisture barrier",
+    "leaded polycarbonate visor",
+    "pressure-bonded RAD-IV seam tape"
+  ],
+  "functionality": "RAD-IV rated for gamma and beta shielding up to 6-hour exposure windows. Dosimeter ports at three points allow continuous monitoring. Pressure-bonded seams prevent particulate ingress. Integrated air supply runs 90 minutes. Leaded visor maintains visibility in high-flux environments.",
+  "what_it_says": "Someone who goes into the places the rest of the city pretends don't exist.",
+  "worn_by": [
+    "reactor maintenance crews",
+    "Shelf contamination zone workers",
+    "hazmat response teams",
+    "decontamination contractors",
+    "unlicensed isotope salvagers"
+  ],
+  "manufacturer": "Veldtmann Safety Systems (corponation subsidiary)",
+  "price_range": "Φ1,400 – Φ2,800",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A suit returned from a Shelf contamination zone registered exposure levels that would require the area to be restricted — but no official restriction was ever filed.",
+    "The dosimeter on a reactor worker's suit has been spoofed to read low; someone doesn't want the actual exposure logged.",
+    "Veldtmann quietly recalled this batch number two months ago but never collected the suits already distributed to Shelf contractors."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "radiation",
+    "reactor",
+    "hazmat",
+    "full-body",
+    "industrial",
+    "contamination",
+    "enclosure"
+  ],
+  "parent_corponation": ""
+}

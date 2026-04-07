@@ -1,0 +1,45 @@
+{
+  "id": "3c9e7d14f0a2b8561d4f9c3a7e08b625",
+  "name": "Rheon Systems SoftShell Ballistic Underlayer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Worn under civilian clothing, the SoftShell is a full-torso soft ballistic underlayer in off-white with Rheon's triple-hex pattern embossed subtly across the surface. The material is a non-Newtonian smart composite — pliable and light at rest, rigidifying on sudden impact across the strike zone. Slim enough to hide under a dress shirt or fitted jacket without obvious bulk. The neck and underarm panels are perforated for airflow. A faint chemical smell dissipates within an hour of first wear.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "non-Newtonian smart composite ballistic weave",
+    "perforated airflow panels",
+    "low-profile heat-bonded seams",
+    "chrome-port bypass channels",
+    "anti-print outer skin coat"
+  ],
+  "functionality": "Rated for low-velocity ballistic and blade-edge impact across torso and upper back. Smart-stiffening activates on impact without requiring power. Chrome-port bypass channels route implant cabling cleanly through the torso without creating pressure points or ballistic weak spots.",
+  "what_it_says": "You have enough enemies to warrant armor and enough taste to hide it.",
+  "worn_by": [
+    "junior corporate executives",
+    "corporate security liaisons",
+    "private sector negotiators",
+    "high-value couriers",
+    "paranoid specialists"
+  ],
+  "manufacturer": "Rheon Systems — Tier 4 defense-adjacent corponation",
+  "price_range": "Φ480–Φ900",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A SoftShell was recovered from a crime scene with a strike deformation pattern that doesn't match any registered weapon caliber in the M88 database.",
+    "Rheon quietly recalled a batch of Mark IIIs for a stiffening failure — but the recall notice never reached the black market units already in circulation.",
+    "A corporate fixer was photographed at a peace summit — image analysis suggests they're wearing a SoftShell under diplomatic clothing, which is a treaty violation."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "ballistic",
+    "armor_underlayer",
+    "conceal",
+    "aug_compatible",
+    "tier4",
+    "tactical",
+    "corporate"
+  ],
+  "parent_corponation": ""
+}

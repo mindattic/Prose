@@ -1,0 +1,38 @@
+{
+  "id": "e4a10d6c8f295b37a91c4d0e7b3f52c8",
+  "name": "Rolen Depot Utility Trouser",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Simple, no-frills work trousers in dark brown or black, sold by the pallet-load to Tier 1 and Tier 2 employers for issue to shift workers. Straight cut, flat front, two side pockets and two back pockets. The fabric is coarse and stiff when new and takes months of washing to soften. Ubiquitous on the Shelf.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "coarse poly-cotton blend",
+    "nylon thread"
+  ],
+  "functionality": "none",
+  "what_it_says": "You're drawing a shift wage somewhere, or you bought the cheapest thing available and it happened to be this.",
+  "worn_by": [
+    "shift laborers",
+    "entry-level warehouse staff",
+    "Shelf residents",
+    "anyone on a tight budget"
+  ],
+  "manufacturer": "Rolen Basic Goods",
+  "price_range": "Φ10 - Φ14",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Rolen Depot trousers are sold in bulk by gray-market resellers — a batch with an unusual dye lot might trace back to a corporate stockroom theft.",
+    "Because they're so generic, they're sometimes deliberately chosen by people who want to disappear into a crowd on the Shelf."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 1",
+    "workwear",
+    "basic",
+    "budget",
+    "uniform"
+  ],
+  "parent_corponation": ""
+}

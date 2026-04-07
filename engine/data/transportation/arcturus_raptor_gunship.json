@@ -8,7 +8,7 @@
     "Corporate Hammer"
   ],
   "category": "military_security",
-  "manufacturer": "Arcturus Defense",
+  "manufacturer": "SafePassage Insurance",
   "description": "An attack VTOL gunship that serves as the heavy enforcement arm of corporate security forces. The Raptor is what happens when a corponation decides a problem requires deletion rather than management. Twin turbofan engines, articulated weapon pods, sensor suite that can track a running person from five kilometers away. When a Raptor lights up its searchlight, you stop. You kneel. You hope you're not the target.",
   "propulsion": "Twin hydrogen turbofan, anti-grav hover capability",
   "speed": "350 km/h cruise, 450 km/h maximum",
@@ -28,11 +28,8 @@
     "transportation",
     "weapon",
     "gun",
-    "war",
-    "death",
-    "ai",
     "corporate",
-    "hover",
-    "fire"
-  ]
+    "hover"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

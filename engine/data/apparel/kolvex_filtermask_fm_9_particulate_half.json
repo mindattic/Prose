@@ -1,0 +1,45 @@
+{
+  "id": "b8e2d94c0f17a365c9d1e2f3a4b5c602",
+  "name": "Kolvex FilterMask FM-9 Particulate Half",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A no-frills half-face respirator from Kolvex Industrial Supply, the FM-9 is the standard mask on every Circuit factory floor and transit maintenance corridor. Matte charcoal elastomer body, dual side-mounted grey filter cartridges, and a tight-sealing foam inner gasket. The nose bridge is reinforced with a thin aluminum strip for shaping to fit. Strap is a wide neoprene-analog band.\n\nMost worn FM-9s are decorated with marker tags, sticker residue, or paint overspray from the wearer's job site — an accidental archive of everywhere they've worked.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "charcoal elastomer",
+    "dual-stage particulate filter cartridges",
+    "aluminum nose bridge",
+    "neoprene-analog strap",
+    "foam inner gasket"
+  ],
+  "functionality": "Filters fine particulates, chemical vapors, and acid-rain aerosols. Cartridges are rated for 40-hour replacement cycles and are widely available at Circuit supply depots. Clip-tab system allows one-hand cartridge swap.",
+  "what_it_says": "You work somewhere the air will hurt you, and you've made your peace with it.",
+  "worn_by": [
+    "factory floor workers",
+    "transit maintenance crews",
+    "street vendors in industrial zones",
+    "Shelf residents on Circuit-adjacent borders"
+  ],
+  "manufacturer": "Kolvex Industrial Supply",
+  "price_range": "Φ22 – Φ55 (replacement cartridges Φ8 each)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of counterfeit FM-9 cartridges is circulating in Circuit — they look identical but filter nothing; someone is making money while workers get sick.",
+    "A specific lot number of FM-9s was issued to workers at a facility that officially never existed; finding one is a thread that unravels a corponation cover-up.",
+    "A Circuit organizer uses the FM-9's standard issue status as a disguise — every face looks the same when you're all wearing Kolvex."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "mask",
+    "half-face mask",
+    "filter mask",
+    "respirator",
+    "tier-2",
+    "circuit",
+    "industrial",
+    "kolvex"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Lazarus MedCore Surgical Scrub — Augmented Cut",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "medical_surgical",
+  "manufacturer": "Lazarus Medical Systems",
+  "description": "Lazarus's augmented-cut scrub set was developed in response to documented rates of augmentation-related surgical contamination — chrome port covers left open, cable routing creating sterile-field breaks, poorly designed garments forcing surgeons to improvise. The top features mapped port-access panels along the forearms and upper back, each sealed with a sterile-grade silicone flap that holds closed under normal movement but peels back under deliberate pressure. The fabric is a tri-layer antimicrobial weave that sheds biological contamination under standard autoclave cycling and repels fluid splash at the outer face. The color is Lazarus standard — a muted teal with white piping — and the Lazarus caduceus-cross logo sits at the upper left chest in bonded reflective film. Tail accommodation is handled through a structured rear vent in the trousers, reinforced so the seam doesn't fail during extended standing procedures.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ185",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "In Lazarus facilities, the augmented-cut scrub is standard issue for any surgical staff with documented chrome. Wearing it in a non-Lazarus clinic signals either a Lazarus-trained surgeon or someone who lifted the set. The design has been widely copied by independent med-clinics in Tier 2 who can't afford Lazarus licensing but need the functionality.",
+  "story_hooks": [
+    "A surgeon performing off-book procedures in a Tier 1 basement clinic wears a genuine augmented-cut set, raising questions about how they're sourcing Lazarus-restricted equipment.",
+    "The sterile-grade silicone port flaps on a recent production batch were manufactured with a microscopic RFID thread — Lazarus claims it's inventory management, but the tracking radius is far wider than any warehouse needs.",
+    "A Lazarus-employed surgeon's scrubs are found at the scene of a non-medical incident, still sealed in their sterile packaging, never worn."
+  ],
+  "tags": [
+    "lazarus",
+    "medical",
+    "surgical",
+    "scrubs",
+    "augment-compatible",
+    "geneware-compatible",
+    "sterile",
+    "antimicrobial",
+    "hospital",
+    "operating-room"
+  ],
+  "id": "fd128b67b7064d70a3be221689521744",
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

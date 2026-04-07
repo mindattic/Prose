@@ -1,0 +1,47 @@
+{
+  "id": "e6d3b0f9a21c47e8b5d0f4a7c92e1b38",
+  "name": "Ghostline ThinSkin Grip Infiltration Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Ultra-thin second-skin gloves designed for close-access work. The outer surface is micro-textured gecko-polymer — nearly invisible grip enhancement that reads as bare skin to casual inspection but adheres to glass, polished metal, and composite surfaces with unsettling confidence. Interior surface is lined with a biometric-scatter membrane that disrupts fingerprint, palm-vein, and thermal imaging capture at contact points.\n\nFive-finger cut with no reinforcement bulk. Available in twelve skin-tone variants and two synthetic-skin finishes. Tears easily if snagged — designed to be worn as a consumable, not a long-term tool. Sold in packs of three pairs, vacuum-sealed.",
+  "tier_association": "Tier 2-4",
+  "materials": [
+    "gecko-polymer micro-texture outer",
+    "biometric-scatter membrane inner lining",
+    "ultra-thin syn-elastane base",
+    "vacuum-seal single-use packaging"
+  ],
+  "functionality": "Gecko-polymer surface enhances grip on smooth vertical and inverted surfaces. Biometric-scatter membrane disrupts fingerprint, palm-vein, and thermal imaging at contact. Worn as a consumable — single-use recommended for high-stakes work. Twelve skin-tone variants for visual concealment against the wearer's hands.",
+  "what_it_says": "You were never here, and if you were, you didn't touch anything.",
+  "worn_by": [
+    "corporate infiltrators",
+    "Tier 2 petty thieves scaling better",
+    "freelance data couriers",
+    "black-market access brokers",
+    "CorpSec internal affairs investigators"
+  ],
+  "manufacturer": "Ghostline (street label, no registered address)",
+  "price_range": "Φ80–Φ200 per 3-pack",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A torn fragment of a Ghostline glove is found adhered to a 40th-floor window ledge — the biometric scatter membrane is still intact, meaning whoever left it behind hasn't been identified yet.",
+    "A new batch of Ghostline skins is circulating with a manufacturing defect: the scatter membrane has a narrow frequency gap that a specific CorpSec scanner model can read through.",
+    "A Tier 4 executive is quietly buying Ghostline packs in bulk — not for infiltration, but because they're terrified someone is using them to move through their own secured floor."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "infiltration",
+    "thief",
+    "grip-enhanced",
+    "print-masking",
+    "tier-2",
+    "tier-3",
+    "tier-4",
+    "stealth",
+    "consumable",
+    "street label"
+  ],
+  "parent_corponation": ""
+}

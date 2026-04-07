@@ -1,0 +1,48 @@
+{
+  "id": "74ade4e99e2e6581264e02c730207dbb",
+  "name": "Arcturus Defense Solutions ARC-R6 'Warden'",
+  "type": "weapon",
+  "aliases": [
+    "Warden",
+    "ARC-R6",
+    "The Six"
+  ],
+  "category": "revolver",
+  "description": "The Arcturus Defense Solutions ARC-R6 is a six-shot double-action revolver chambered in .44 Magnum with an integrated smart-link system and BCI-connected targeting suite. The frame is forged titanium alloy — lighter than steel while maintaining the strength needed for magnum pressures — and the barrel features Arcturus's CeraShield coating. The weapon combines the reliability and power of a traditional revolver with neural-integrated aiming technology.\n\nThe Warden represents Arcturus's answer to operators who trust revolvers but want smart-link capability. The BCI system provides the same real-time ballistic overlay as the ARC-SL9 but calibrated for the .44 Magnum's different trajectory profile. The system also monitors the cylinder rotation and maintains an exact round count, feeding ammunition status directly to the shooter's awareness — solving the revolver's traditional weakness of uncertain round count under stress.\n\nThe combination of revolver simplicity and smart-link precision creates a weapon that appeals to experienced operators making the transition to neural-integrated firearms. The Warden doesn't jam, doesn't fail to feed, and doesn't require magazine management — it simply works, and the BCI system makes it work better. For operators who have trusted wheel guns their entire careers, the Warden makes the case that technology and tradition can coexist.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — BCI registration and enhanced firearms license required",
+  "base_technologies": [
+    "BCI smart-link",
+    "Forged titanium alloy frame",
+    "CeraShield coating",
+    "Neural round-count tracking"
+  ],
+  "specifications": "caliber: .44 Magnum\neffective_range: 65 meters (smart-linked)\nrate_of_fire: Double-action revolver\nmagazine_capacity: 6 rounds (cylinder)\nweight: 1.18 kg\nBCI_latency: <8ms",
+  "tactical_use": "A smart-linked magnum revolver combining traditional reliability with neural-integrated targeting. The BCI overlay provides precise aiming data and real-time ammunition tracking. The .44 Magnum round delivers superior stopping power against armored and augmented targets. The revolver mechanism eliminates the feed-related malfunctions that can affect semi-automatic smart weapons. Limited by six-round capacity and slow reloading.",
+  "cultural_context": "The Warden is the weapon that ended the argument between revolver purists and smart-link advocates — or at least changed it. Operators who swore they would never carry a 'computer gun' make an exception for the Warden, because underneath the technology, it's still a revolver. Arcturus understood their audience perfectly.",
+  "known_users": [
+    "Veteran operators transitioning to smart-link",
+    "Revolver specialists in Tier 4+ security",
+    "Arcturus field consultants",
+    "Elite bounty hunters who prefer revolvers"
+  ],
+  "story_hooks": [
+    "A Warden's BCI system is hacked mid-engagement, providing the shooter with false targeting data that causes them to miss a critical shot. The hack came through the weapon's own neural connection.",
+    "An unregistered Warden appears with its BCI system wiped — someone has figured out how to factory-reset Arcturus smart-link weapons, removing all tracking and registration data."
+  ],
+  "ammunition_type": [
+    ".44 Magnum"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "smart_link",
+    "BCI",
+    "magnum",
+    "arcturus",
+    "titanium",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

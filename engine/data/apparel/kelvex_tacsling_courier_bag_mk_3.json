@@ -1,0 +1,48 @@
+{
+  "id": "d4e8b1f3a72c905e6b3d2f1a0c4e7891",
+  "name": "Kelvex TacSling Courier Bag MK-3",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Single-strap ballistic-nylon messenger bag in transit-authority grey with high-vis orange reflective piping along the flap seam. The body is reinforced at corners with vulcanized rubber bumpers. Interior is a dense foam-lined main compartment with a rigid document sleeve and a secondary mesh pocket sized for a compact medkit.\n\nThe shoulder strap is wide, padded, and routes over the chest with a magnetic sternum clip that releases under pressure — designed for quick dismount in crowded transit cars. Exterior has a waterproof map sleeve and two zippered side pockets.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ballistic nylon",
+    "vulcanized rubber",
+    "high-vis reflective piping",
+    "closed-cell foam",
+    "magnetic sternum hardware"
+  ],
+  "functionality": "Waterproof main compartment, rigid document sleeve rated for A3 flatfiles, chest-release strap for rapid dismount, exterior RFID-shielded pocket for transit passes and ID chips. Fits over chrome arm rigs without binding.",
+  "what_it_says": "This person moves fast, carries what matters, and doesn't have time to look precious about it.",
+  "worn_by": [
+    "transit couriers",
+    "MagRail operators",
+    "street medics",
+    "dispatch riders",
+    "Tier 2 day laborers"
+  ],
+  "manufacturer": "Kelvex Transit Supply Co.",
+  "price_range": "Φ120 – Φ210",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The MK-3 has a manufacturing defect in the RFID shielding — corporate knows, and chose not to issue a recall.",
+    "A courier's bag was found abandoned on a MagRail platform, interior pristine except for a handwritten list of names — all Tier 4 executives.",
+    "Street vendors near Circuit stations sell knockoff MK-3s with a hidden secondary compartment built into the foam lining."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "bag",
+    "messenger",
+    "courier",
+    "sling",
+    "tier-2",
+    "circuit",
+    "aug-compatible",
+    "gene-compatible",
+    "transit",
+    "waterproof"
+  ],
+  "parent_corponation": ""
+}

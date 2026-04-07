@@ -1,0 +1,47 @@
+{
+  "id": "bb5ee3fc67ff580fdb31ae0c7d73fdb6",
+  "name": "Crucible Industries Suppressed Compact SC-2 'Murmur'",
+  "type": "weapon",
+  "aliases": [
+    "Murmur",
+    "SC-2",
+    "Whisper Box"
+  ],
+  "category": "smg",
+  "description": "The SC-2 Murmur is an integrally suppressed submachine gun designed for industrial security operations where noise discipline is required — server farms, laboratory complexes, and medical facilities where gunfire causes equipment damage beyond the immediate engagement zone. The weapon's barrel is permanently enclosed in a suppression housing that reduces the 9mm subsonic report to levels below the threshold for triggering acoustic security alarms.\n\nThe Murmur uses a locked-breech design unusual for a 9mm SMG, eliminating the mechanical noise of a blowback bolt cycling. The result is a weapon where the loudest sound is the bullet's impact rather than its departure. Combined with subsonic ammunition, the SC-2 can be fired inside a server room without triggering decibel-sensitive fire suppression systems — a real operational concern in facilities where the equipment is worth more than the people.\n\nCrucible markets the Murmur to facility security forces and specialized teams operating in noise-sensitive environments. At Φ4,200, it is priced for organizational procurement rather than individual purchase. The weapon is unremarkable in every way except its silence, which in the right environment is worth more than any other feature.",
+  "manufacturer": "Verdure Garden Supply",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — suppressed weapons licensing",
+  "base_technologies": [
+    "Integral suppression housing",
+    "Locked-breech noise reduction",
+    "Sub-alarm-threshold acoustic profile"
+  ],
+  "specifications": "caliber: 9mm subsonic caseless\neffective_range: 50m\nrate_of_fire: 600 rpm (cyclic)\nmagazine_capacity: 25 rounds\nweight: 2.4 kg",
+  "tactical_use": "The Murmur allows armed response in environments where the sound of gunfire causes more damage than the bullets. Server farms, clean rooms, laboratory complexes, and medical facilities all contain equipment that is sensitive to acoustic shock or decibel-triggered safety systems. The SC-2's below-alarm acoustic profile ensures that engaging a threat does not simultaneously destroy the facility's critical infrastructure.",
+  "cultural_context": "The Murmur occupies a peculiar niche — a weapon designed to protect things that are damaged by weapons. Its existence reflects the priority hierarchy of corporate facilities: equipment first, then data, then personnel. Security forces carrying Murmurs are sometimes called 'librarians' — they enforce silence as a professional requirement.",
+  "known_users": [
+    "Server farm security",
+    "Laboratory complex guards",
+    "Medical facility security",
+    "Data center protection teams"
+  ],
+  "story_hooks": [
+    "A data center heist went undetected because the thieves used stolen Murmurs — the acoustic security system never triggered, and the camera footage showed muzzle flashes with no corresponding audio alerts.",
+    "A Murmur was used in an assassination at a medical facility. The suppressed weapon was so quiet that patients in adjacent rooms heard nothing — the body wasn't discovered for hours."
+  ],
+  "ammunition_type": [
+    "9mm subsonic caseless"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "suppressed",
+    "silent",
+    "facility_security",
+    "Crucible",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

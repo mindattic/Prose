@@ -1,0 +1,45 @@
+{
+  "id": "7b1e4d9a0c3f85e2a76b1d4e8c0f3291",
+  "name": "Okafor Systems ThermoShell Parka",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "A heavyweight hooded parka designed for sustained cold-weather exposure, sold primarily through Okafor Systems' industrial supply division but widely available in Tier 2 and Tier 3 outlets. The outer shell is a tightly woven synthetic that sheds water and resists abrasion. The fill is a high-loft recycled synthetic insulation rated to -25 Celsius. It comes in four colors: safety orange, utility grey, deep navy, and a flat black that's the most popular by a wide margin. The hood is helmet-compatible and has a wire brim to keep its shape in wind.\n\nThis is the coat most people in Meridian 88 actually wear. Millions of them. Okafor Systems produces it in fourteen variants — zip-in liner versions, hi-vis versions, children's sizes — and the basic model has been largely unchanged for twenty years. When the lakefront wind drops to minus fifteen and the spray is coming off the water, this is what keeps you alive.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synthetic ripstop shell",
+    "recycled loft insulation",
+    "nylon lining",
+    "YKK-equivalent hardware"
+  ],
+  "functionality": "",
+  "what_it_says": "You are practical. You are probably cold a lot. You bought this because it works and didn't think too hard about it.",
+  "worn_by": [
+    "nearly everyone in Tier 1 and Tier 2",
+    "outdoor workers",
+    "students",
+    "parents",
+    "transit commuters",
+    "Tier 3 people who don't care about fashion"
+  ],
+  "manufacturer": "Okafor Systems Industrial Division",
+  "price_range": "Φ62",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A witness to a Shelf-district killing was wearing this coat — but so were forty thousand other people that night, making identification nearly impossible",
+    "A counterfeit run of these parkas has hit the market filled with substandard insulation; people are dying of exposure thinking they're protected",
+    "The flat black variant has become associated with a specific political movement after a protest that made the feeds — now wearing one is a statement whether you meant it to be or not"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "tier 2",
+    "parka",
+    "mass-market",
+    "cold weather",
+    "no-tech",
+    "corponation",
+    "ubiquitous"
+  ],
+  "parent_corponation": ""
+}

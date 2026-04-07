@@ -12,7 +12,7 @@
   "category": "augmentation",
   "body_location": "",
   "description": "The Retinal Compositor Suite is a layered ocular augmentation developed by Vantablack Media's hardware division — the company's only physical product line, and one it guards with considerable legal aggression. A micro-thin photonic layer is bonded directly to the retinal surface via laser-guided adhesion, overlaying the carrier's natural vision with a fully composited mixed-reality field. Unlike standard AR overlay implants, the RCS does not merely project imagery over the visual field — it performs real-time scene reconstruction, replacing, removing, or augmenting elements of the physical environment with composited visual content at a fidelity indistinguishable from genuine perception. The carrier does not see a display. They see a world that has been edited.\n\nVantablack's proprietary Scene Language Protocol drives the compositor, allowing remote directors, producers, or operators to push environmental overlays, visual suppressions, or full scene replacements to the carrier's vision in real time over an encrypted narrow-band signal. The intended application is immersive media production — placing RCS-equipped talent inside synthetic environments without physical sets, or capturing authentic reaction footage from subjects experiencing scripted reality. Vantablack's premium content arm uses it to produce the hyper-realistic 'lived experience' streams that dominate Meridian 88's upper-tier entertainment market, where audiences pay premium rates for content that is indistinguishable from unaugmented first-person experience.\n\nThe RCS has predictably escaped its intended market. Intelligence operatives use it to visually suppress environmental details they are not authorized to see — a function Vantablack's corporate clients use to enforce information compartmentalization in their own workforces. Street-level users run cracked Scene Language Protocol builds to overlay navigational data, tactical feeds, or entirely fabricated visual environments. A small and disturbing subculture has emerged around users who run persistent fictional overlays over their daily lives — not for tactical advantage, but because the world the RCS shows them is preferable to the one that exists.",
-  "manufacturer": "VANTABLACK MEDIA",
+  "manufacturer": "Neural Feed Productions",
   "tier_availability": "Tier 3+",
   "legality": "Licensed",
   "installation_requirements": "",
@@ -53,5 +53,6 @@
     "market",
     "escape",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Vantablack Media"
 }

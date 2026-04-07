@@ -1,0 +1,40 @@
+{
+  "id": "3a8c1e5f7b0d246a9c3f1e8b5d0a2746",
+  "name": "Foundry Broadfoot Work Sneaker",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A wide-platform sneaker with a removable footbed system designed for augmented workers whose prosthetic feet are larger or differently weighted than standard shoe lasts accommodate. The toe box is unusually deep and wide, the outsole a chunky flat rubber platform. It comes in three widths and the insole stack is user-adjustable with included shims. Looks like an oversized utilitarian sneaker — functional ugliness worn with indifference.\n\nThe Foundry Broadfoot is the most common aug-compatible shoe on the Shelf and lower Tier 2. It's cheap, it works, and it doesn't pretend to be anything else.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "canvas upper",
+    "layered foam insole system",
+    "shim-adjustment footbed",
+    "flat rubber platform outsole"
+  ],
+  "functionality": "Extra-wide, extra-deep toe box for large-format prosthetic feet. User-adjustable insole shim system for height and weight distribution compensation.",
+  "what_it_says": "You're working class, augmented, and stretching every quanta. No shame in it.",
+  "worn_by": [
+    "Shelf and Tier 2 augmented workers",
+    "prosthetic users with non-standard foot profiles",
+    "people who can't afford fitted aug-footwear"
+  ],
+  "manufacturer": "Foundry Goods Co.",
+  "price_range": "Φ45 - Φ58",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The shim system is generic enough that people use Foundry footbeds to modify non-aug shoes — a small trade in modified footbeds exists on the Shelf.",
+    "A Foundry Broadfoot in good condition found at a crime scene is notable — it means the owner took care of things, which says something about them."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "aug-compatible",
+    "wide-last",
+    "sneaker",
+    "budget",
+    "utilitarian"
+  ],
+  "parent_corponation": ""
+}

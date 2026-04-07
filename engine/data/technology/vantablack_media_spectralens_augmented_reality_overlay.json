@@ -1,0 +1,46 @@
+{
+  "id": "b1b574a1891d5332af6179d10fc543bf",
+  "name": "Vantablack Media SpectraLens Augmented Reality Overlay",
+  "brand_name": "Vantablack",
+  "product_name": "SpectraLens AR-3",
+  "type": "technology",
+  "aliases": [
+    "SpectraLens",
+    "AR-3",
+    "Reality Filter",
+    "Lens"
+  ],
+  "subcategory": "holographics",
+  "description": "The SpectraLens AR-3 is a consumer augmented reality system that overlays holographic content directly onto the wearer's visual field through a pair of lightweight optical lenses that are nearly indistinguishable from ordinary eyewear. Unlike BCI-mediated AR systems that inject visual data into the neural pathway, the SpectraLens projects micro-holographic images onto the lens surface itself, creating an overlay visible only to the wearer without requiring any neural implant. This makes the SpectraLens accessible to unaugmented individuals and has driven its adoption to an estimated 12 million units in Meridian 88 -- making it the most widely deployed holographic technology in the city by a factor of ten.\n\nVantablack's business model for the SpectraLens is not hardware -- the lenses are sold at or below manufacturing cost. The revenue comes from the overlay content. Every SpectraLens user sees Meridian 88 through a Vantablack-curated visual layer: advertisements rendered directly into their visual field, corporate branding superimposed on buildings, product information floating above retail displays, and a persistent feed of Vantablack news content scrolling at the edges of vision. The lenses include opt-out controls for advertising, but opting out requires a premium subscription of 400 per month. For most users, the choice is between seeing the world through Vantablack's commercial overlay or not using the technology at all. Twelve million people have chosen the overlay.\n\nThe SpectraLens's deepest impact is perceptual. When 12 million people see the same holographic overlay on their city, the overlay becomes reality by consensus. Vantablack can make a building appear to be in better condition than it is, make a neighborhood look cleaner or dirtier than it is, or add visual elements to public spaces that exist only in the overlay. The boundary between Meridian 88 and Vantablack's version of Meridian 88 has become functionally meaningless for a third of the population, and Vantablack's editorial decisions about what to show and what to hide shape the city's perceived reality more powerfully than any physical modification could.",
+  "tier_availability": "Tier 1+ (subsidized consumer device)",
+  "developers": [
+    "VANTABLACK MEDIA"
+  ],
+  "base_technologies": [
+    "Micro-holographic lens projection",
+    "Eye-tracking content positioning",
+    "Cloud-connected content delivery"
+  ],
+  "enables": [
+    "Mass-market augmented reality without neural implants",
+    "Persistent commercial overlay on visual perception",
+    "Corporate-curated visual reality for millions",
+    "Consensus reality manipulation through shared overlays",
+    "Visual information delivery to unaugmented populations"
+  ],
+  "social_impact": "The SpectraLens has created a population that literally does not see the same city as those without the lenses. SpectraLens users live in Vantablack's version of Meridian 88 -- cleaner, better-branded, more commercially oriented, and stripped of visual information that Vantablack considers non-productive. Users who remove their lenses after extended wear report a disorienting 'reality shock' at seeing the unfiltered city. Some users refuse to remove them entirely, preferring Vantablack's version to the real one.",
+  "story_hooks": [
+    "A SpectraLens software update has introduced a new feature: the overlay now alters the apparent facial expressions of people the wearer interacts with, making everyone appear slightly more friendly, slightly more agreeable. Users are reporting improved social experiences without realizing their perception of other people's emotions is being commercially managed.",
+    "A hacker group has compromised the SpectraLens content delivery system and is replacing Vantablack's commercial overlay with an unfiltered view of reality -- showing SpectraLens users the actual condition of buildings, neighborhoods, and infrastructure that the overlay has been beautifying. The effect on 12 million users seeing the real city for the first time is causing social unrest."
+  ],
+  "tags": [
+    "technology",
+    "holographics",
+    "augmented-reality",
+    "vantablack",
+    "consumer",
+    "perception",
+    "media"
+  ],
+  "parent_corponation": ""
+}

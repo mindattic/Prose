@@ -1,0 +1,34 @@
+{
+  "id": "51c37a8004aa2c367b8582c650c5edb5",
+  "name": "Bliss Junkie",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Chases peak experiences and euphoria through any available means",
+  "behavioral_signature": "Always seeking the next transcendent moment, pharmaceutical or otherwise",
+  "under_stress": "Reaches for increasingly dangerous sources of bliss",
+  "at_rest": "Either basking in recent euphoria or craving the next hit",
+  "will_always": [
+    "seek peak experiences"
+  ],
+  "will_never": [
+    "accept ordinary contentment as enough"
+  ],
+  "unless": [
+    "someone shows them that quiet happiness can be its own kind of bliss"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Thrill Chaser",
+      "threshold": 0.7,
+      "context": "seeking highs"
+    }
+  ],
+  "opposite_of": [
+    "Stoic"
+  ],
+  "tags": [
+    "euphoria",
+    "addiction",
+    "transcendence"
+  ]
+}

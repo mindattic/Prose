@@ -12,7 +12,7 @@
   ],
   "category": "electronic_warfare",
   "description": "A throwable device that emits a powerful broadband electromagnetic jamming signal in a 30-meter radius for 5 minutes, disrupting all wireless communications, sensor systems, and neural interface external connections within range. The SJG-3 is used for tactical communications denial — thrown into an area before an assault to prevent defenders from calling for reinforcements or coordinating response. The jamming signal is powerful enough to disrupt hardened military communications and causes painful interference in neural interfaces, which most users experience as a sudden, overwhelming burst of static in their augmented senses.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Murmuration Systems",
   "tier_availability": "Tier 3+",
   "legality": "Restricted — military and authorized operations",
   "base_technologies": [],
@@ -45,5 +45,6 @@
     "power",
     "pain",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

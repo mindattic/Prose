@@ -1,0 +1,53 @@
+{
+  "id": "5e9b1d3a72f04c8e2b6a0d4f9c317e85",
+  "name": "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
+  "type": "cyberware",
+  "aliases": [
+    "The Sleeve",
+    "Chromeback",
+    "Silkspine"
+  ],
+  "category": "spine",
+  "body_location": "spine",
+  "description": "The FlexSheath is a form-fitting graphene-composite exoskeleton that sheathes the existing vertebral column rather than replacing it, bonded to each vertebra via osseointegrated anchor points and laced with shape-memory polymer filaments that continuously adjust tension based on posture data. Impact-absorbing graphene lattice panels distribute axial and lateral force across the entire spinal length, reducing localized injury risk by an estimated 73%. An embedded microprocessor reads postural sensor arrays 400 times per second, subtly contracting filaments to correct slouch, uneven loading, and scoliosis drift in real time.\n\nChromeworks markets the FlexSheath primarily to Tier 3-4 professionals — desk-bound executives, surgeons, architects — who want spinal health maintenance without the brutal surgery of full replacement. It's become fashionable among Tier 4 wellness culture as a 'performance upgrade' rather than a medical device, and the chrome-edged anchor points visible at the neckline are considered tasteful hardware jewelry in certain circles. Athletes use it for injury prevention; dancers prize it for the postural precision it grants.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 2-5",
+  "legality": "Licensed",
+  "installation_requirements": "Minimally invasive anchor implantation under local anesthesia, 4-6 hours, orthopedic specialist; no vertebral removal",
+  "rejection_risk": "Minimal — graphene composite is non-reactive; anchor points use CHROMEWORKS OsseoLock bonding",
+  "maintenance": "Quarterly filament tension recalibration; software posture profile updates via clinic sync",
+  "specifications": "{\"material\": \"Graphene-composite lattice with shape-memory polymer filaments\", \"impact_distribution\": \"73% force reduction across full spinal length\", \"posture_correction\": \"Active, 400Hz sensor polling\", \"anchor_points\": 24, \"processor\": \"Embedded microcontroller with wireless sync\", \"flexibility_retention\": \"94% of baseline range\", \"weight_kg\": 0.6}",
+  "side_effects": [
+    "Mild proprioceptive recalibration period — users feel 'puppeted' for first 2-3 weeks",
+    "Dependency risk: muscles atrophy slightly as the sheath handles postural load",
+    "Wireless sync creates exploitable data channel if unencrypted",
+    "Visible anchor hardware at neckline and lumbar cannot be fully concealed"
+  ],
+  "cultural_context": "The FlexSheath occupies an unusual cultural space — it's simultaneously a genuine medical device and a luxury lifestyle product. Tier 4 wellness clinics upsell it as 'posture optimization,' and there's an active community of users who share posture profiles and filament tension 'recipes' online. Critics note that its muscle-atrophy side effect creates a lifelong dependency that suits CHROMEWORKS' maintenance revenue model perfectly.",
+  "known_users": [
+    "White-collar professionals with chronic back pain",
+    "Competitive athletes seeking injury prevention",
+    "Tier 4-5 wellness enthusiasts",
+    "Surgeons and precision-work professionals",
+    "Dancers and performance artists"
+  ],
+  "story_hooks": [
+    "A hacker has discovered that unencrypted FlexSheath wireless sync channels can be hijacked to force the filaments into full spinal rigidity — effectively freezing a target in place remotely",
+    "A Tier 5 executive's FlexSheath posture data has been quietly logged and sold to a corporate rival, who can now predict her stress levels, fatigue, and emotional state from her spine's tension patterns"
+  ],
+  "street_price": "Φ28,000",
+  "licensed_price": "Φ58,000",
+  "tags": [
+    "cyberware",
+    "spine",
+    "graphene",
+    "posture",
+    "impact-absorption",
+    "chromeworks",
+    "medical",
+    "lifestyle"
+  ],
+  "parent_corponation": ""
+}

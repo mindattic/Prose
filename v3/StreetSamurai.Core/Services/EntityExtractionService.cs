@@ -228,9 +228,9 @@ public class EntityExtractionService
         {
             return JsonSerializer.Deserialize<ExtractionResult>(json, JsonDefaults.LlmParsing) ?? new ExtractionResult();
         }
-        catch (Exception ex)
+        catch (JsonException)
         {
-            Serilog.Log.Warning(ex, "Entity extraction failed — LLM returned malformed JSON");
+            Serilog.Log.Debug("Entity extraction skipped — LLM returned truncated JSON (expected during regeneration)");
             return new ExtractionResult();
         }
     }

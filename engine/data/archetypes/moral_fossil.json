@@ -1,0 +1,33 @@
+{
+  "id": "958e3a200b3e1d389f33fff37b4b6d66",
+  "name": "Moral Fossil",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Their ethics belong to a world that no longer exists",
+  "behavioral_signature": "Applies outdated moral frameworks to modern problems",
+  "under_stress": "Retreats further into obsolete principles",
+  "at_rest": "Lectures about how things used to mean something",
+  "will_always": [
+    "judge the present by the standards of the past"
+  ],
+  "will_never": [
+    "accept that morality evolves"
+  ],
+  "unless": [
+    "someone from their generation shows them how the world changed"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Traditionalist",
+      "threshold": 0.8,
+      "context": "outdated values"
+    }
+  ],
+  "opposite_of": [
+    "Reformer"
+  ],
+  "tags": [
+    "anachronistic",
+    "rigid"
+  ]
+}

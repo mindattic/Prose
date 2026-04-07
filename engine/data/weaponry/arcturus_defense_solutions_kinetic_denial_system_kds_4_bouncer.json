@@ -10,7 +10,7 @@
   ],
   "category": "heavy",
   "description": "A vehicle-mounted kinetic repulsion system that generates a short-range concussive blast wave capable of hurling personnel and light vehicles away from the emission point. The KDS-4 uses a rapid-expansion gas generator coupled with a shaped acoustic reflector to create a directional wall of overpressure that travels outward at approximately 200 m/s. The blast is non-fragmentary but the kinetic energy transfer is sufficient to cause fatal blunt force trauma at close range and significant injury out to 15 meters. Arcturus markets it as a non-lethal crowd dispersal system, a classification that has been challenged in multiple jurisdictions.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Iron Point Ammunition",
   "tier_availability": "Tier 4+",
   "legality": "Licensed — riot control and vehicle defense",
   "base_technologies": [
@@ -30,13 +30,14 @@
   "tags": [
     "heavy",
     "war",
-    "ai",
     "corporate",
     "control",
     "injury",
     "market",
     "vehicle",
     "energy",
-    "tier 4"
-  ]
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

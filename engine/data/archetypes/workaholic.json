@@ -1,0 +1,34 @@
+{
+  "id": "7db19310542db99558d8d3d3d2905dda",
+  "name": "Workaholic",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Defines identity entirely through labor and cannot stop producing",
+  "behavioral_signature": "Working at 3 AM on something that could wait until Monday",
+  "under_stress": "Works harder until they physically collapse",
+  "at_rest": "There is no rest, only less intense work",
+  "will_always": [
+    "find more work to do"
+  ],
+  "will_never": [
+    "take a real break"
+  ],
+  "unless": [
+    "their body simply shuts down"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Purpose Driven",
+      "threshold": 0.7,
+      "context": "driven behavior"
+    }
+  ],
+  "opposite_of": [
+    "Burnout"
+  ],
+  "tags": [
+    "labor",
+    "identity",
+    "compulsion"
+  ]
+}

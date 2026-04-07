@@ -1,0 +1,34 @@
+{
+  "name": "Vantablack Internal Security Analyst Uniform",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_tactical",
+  "manufacturer": "Neural Feed Productions",
+  "description": "Vantablack's internal security analysts do not carry weapons in the conventional sense. Their uniform reflects this: it is designed to communicate authority through absence rather than display. The suit is constructed from a matte-black fabric with a light-absorption coefficient high enough to make the wearer appear slightly two-dimensional in photographs and low-resolution surveillance footage — a practical choice that doubles as a psychological tool. The cut is slim and precise, with no external pockets, no visible fasteners, and no brand markings of any kind. A Vantablack analyst's uniform is identified by what it lacks.\n\nThe fabric incorporates passive signal-dampening threads that reduce the wearer's BCI broadcast signature without fully masking it — enough to prevent casual eavesdropping, not enough to trigger the anti-spoofing protocols in secure facilities. Wrist cuffs contain embedded haptic nodes that allow encrypted tap-communication between team members in environments where verbal or digital communication is inadvisable. The uniform is issued as a complete set and must be returned on reassignment; analysts who attempt to retain theirs are contacted once, politely, and the matter is resolved without further documentation.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ680",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "Vantablack analysts are rarely seen and immediately recognized when they are. In Meridian 88's corporate zones, spotting someone in a Vantablack uniform at a meeting or in a lobby is understood as a signal that something significant is being evaluated. The uniform's deliberate anonymity has become its own kind of status marker — the absence of branding is the brand.",
+  "story_hooks": [
+    "A Vantablack uniform is found abandoned in a public locker at a transit hub — no ID, no trace of the analyst who left it.",
+    "A character is approached by someone in the uniform who claims to be a defector and needs their help getting out of Meridian 88.",
+    "The haptic nodes in a recovered uniform are still active and transmitting an encrypted signal."
+  ],
+  "tags": [
+    "vantablack",
+    "intelligence",
+    "corpsec",
+    "signal-dampening",
+    "matte-black",
+    "uniform",
+    "analyst",
+    "tactical",
+    "tier4",
+    "tier5"
+  ],
+  "id": "512f011d412b4975b7220daba5680709",
+  "parent_corponation": "Vantablack Media"
+}

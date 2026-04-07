@@ -1,0 +1,46 @@
+{
+  "id": "f1b4d7e3c09a2856d3f1b4e7c0a92856",
+  "name": "Crucible ForgeWall MK-3 Foundry Apron Rig",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A heavy split-bib foundry apron in charred graphite and rust-brown, the ForgeWall MK-3 is built for high-heat forge work and arc welding. The bib and skirt panels are thick aluminized carbon-ceramic felt, visibly dimpled from spatter impacts. Cross-back harness straps are reinforced webbing with quick-release buckles at the sternum. Leg panels split at the groin for mobility, held by magnetically-clasped side tabs. The collar edge is bound in heat-treated leather analog — deep brown, cracked and re-oiled repeatedly. Crucible's forge-anvil stamp is pressed into the left chest panel.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "aluminized carbon-ceramic felt",
+    "reinforced webbing harness",
+    "heat-treated leather-analog collar binding",
+    "magnetic side-tab closures",
+    "carbon-fiber spatter shield panels"
+  ],
+  "functionality": "Rated to 1,100°C radiant heat for short-duration exposure. Spatter-resistant front panels shed molten metal without ignition. Quick-release sternum buckle allows rapid removal. Split-leg design accommodates full squat and kneel positions. Compatible with chrome arm augmentations — harness adjusts wide at the shoulder.",
+  "what_it_says": "You work with real fire and real metal, and your gear carries every burn to prove it.",
+  "worn_by": [
+    "foundry workers",
+    "arc welders",
+    "fabrication shop floor leads",
+    "independent metalworkers",
+    "forge-pit operators"
+  ],
+  "manufacturer": "Crucible Industrial Wear (street-adjacent corponation brand)",
+  "price_range": "Φ550–Φ900",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A ForgeWall MK-3 with a hidden interior pocket sewn into the bib lining — the original owner used it to smuggle component chips out of a restricted fab floor.",
+    "Crucible's MK-3 is known to have a batch defect in the left-panel spatter shield — one in forty units has an under-bonded ceramic layer that delaminates under sustained heat.",
+    "A veteran forge worker's apron has forty-seven spatter impacts catalogued in a personal log stitched into the reverse — one for every serious accident they witnessed."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "forge",
+    "welding",
+    "heat-resistant",
+    "tier-2",
+    "tier-3",
+    "industrial",
+    "apron",
+    "aug-compatible"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

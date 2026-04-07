@@ -1,0 +1,59 @@
+{
+  "id": "b84e1f62a3075dc9e4b2f0817a6d3c59",
+  "name": "CortexDynamics Stratum Entertainment BCI",
+  "brand_name": "CortexDynamics",
+  "product_name": "Stratum",
+  "type": "cyberware",
+  "aliases": [
+    "the Stratum",
+    "gamemesh",
+    "the dive",
+    "cortex candy",
+    "deep-feed"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The CortexDynamics Stratum is a consumer BCI engineered around immersive entertainment and neural gaming, offering a standard feed and civic integration platform augmented by the company's ImmersCore neural entertainment engine. The ImmersCore module expands the BCI's sensory processing channels beyond standard AR overlay into partial sensory substitution territory — while falling well short of full-immersion military or luxury systems, the Stratum can deliver enhanced spatial audio directly to the auditory cortex, proprioceptive feedback for physical gaming applications, and a deep-feed mode that prioritizes entertainment signal processing at the cost of background feed functions, creating a noticeably richer immersive experience than standard consumer BCIs. The platform runs at 150 Mbps with an eight-channel architecture — four dedicated to standard feed operations and four switchable to ImmersCore entertainment processing — with 1440p AR rendering and a 6ms latency profile that competitive gaming communities have benchmarked favorably. Standard civic integration, QUANTA payment, and full feed access are included, and the Stratum supports optional smartlink unlock for carry permit holders.\n\nThe Stratum has carved out a devoted following among Meridian 88's gaming subcultures, neural entertainment communities, and the sprawling population of Tier 2-3 residents who treat immersive entertainment as a primary social outlet in a city where physical recreation space is scarce and expensive. Neural gaming leagues — particularly the underground tactile combat simulation circuits that operate in warehouse spaces throughout the outer Tier 2 districts — have effectively standardized on the Stratum as their preferred hardware, and CortexDynamics sponsors several semi-professional teams. The device has a complicated relationship with mental health advocates, who note that the deep-feed mode's sensory richness creates measurable dependency profiles in vulnerable users — the city's neural addiction support services report that Stratum units account for a disproportionate share of entertainment-dependency cases, a statistic CortexDynamics contests vigorously in its public filings.",
+  "manufacturer": "CORTEXDYNAMICS NEURAL TECHNOLOGIES",
+  "tier_availability": "Tier 2-3",
+  "legality": "Unrestricted — deep-feed mode subject to Meridian 88 Neural Entertainment Use guidelines; not legally restricted but flagged in therapeutic contexts",
+  "installation_requirements": "Outpatient procedure at CortexDynamics authorized clinic or independent neural installer; local anesthetic; 2-hour installation; ImmersCore calibration session 48 hours post-install",
+  "rejection_risk": "Low to Moderate — standard mesh integration is low-risk, but ImmersCore's expanded sensory processing channels require additional neural pathway mapping that shows elevated inflammatory response in approximately 8% of patients during the first month",
+  "maintenance": "Bi-weekly automatic firmware updates; ImmersCore sensory calibration recommended every six months as neural pathways adapt to the enhanced processing load; deep-feed mode usage logging recommended for users with dependency risk factors",
+  "specifications": "{\"bandwidth\": \"150 Mbps\", \"channels\": \"8 (4 standard feed + 4 switchable ImmersCore)\", \"ar_resolution\": \"1440p equivalent\", \"encryption\": \"AES-256\", \"battery\": \"Passive induction with 10-hour active buffer; deep-feed mode reduces to 6 hours\", \"latency\": \"6-11ms standard; 4ms ImmersCore gaming mode\", \"sensory_channels\": [\"visual AR\", \"auditory cortex direct\", \"proprioceptive feedback\", \"limited tactile substitution\"], \"deep_feed_mode\": \"Available — prioritizes ImmersCore processing, reduces background feed functions\", \"smartlink\": \"Optional licensed firmware unlock\", \"feed_protocols\": [\"CivNet\", \"MeshPublic\", \"QUANTA-Pay v4\", \"ImmersCore Network v3\"], \"update_method\": \"OTA automatic with manual scheduling option\"}",
+  "side_effects": [
+    "Entertainment dependency risk — ImmersCore's enhanced sensory substitution creates measurable hedonic adaptation in approximately 22% of heavy users, making real-world sensory experience feel comparatively muted",
+    "Deep-feed disorientation on exit — users emerging from deep-feed mode report a 30-90 second reorientation period as standard sensory processing resumes; dangerous in unsecured environments",
+    "Proprioceptive bleed — extended gaming sessions with proprioceptive feedback enabled occasionally produce phantom movement sensations for several hours post-session",
+    "Sleep architecture disruption — ImmersCore's sensory channels remain partially active during sleep in approximately 15% of users, producing unusually vivid and sometimes distressing dream states"
+  ],
+  "cultural_context": "The Stratum sits at an interesting cultural intersection: it is genuinely excellent hardware for its price point, but its association with entertainment dependency and gaming subcultures gives it a slightly disreputable reputation in professional Tier 3 circles. Corporate HR departments in conservative firms have been known to flag Stratum implants in background checks as a lifestyle signal — an informal association with people who prioritize escapism over ambition. In the outer Tier 2 districts and the Shelf's upper edges, however, the Stratum is aspirational hardware, and the neural gaming communities that have formed around it represent some of the most tight-knit social networks in the city. The ImmersCore dependency statistics have made the device a flashpoint in ongoing legislative debates about neural entertainment regulation.",
+  "known_users": [
+    "competitive and casual neural gamers across Tier 2-3",
+    "neural entertainment league participants — both sanctioned and underground",
+    "young Tier 2 residents for whom entertainment is a primary social outlet",
+    "freelance creative workers who use ImmersCore for immersive design and visualization",
+    "residents of high-density housing blocks where physical social space is limited"
+  ],
+  "story_hooks": [
+    "A pirated ImmersCore content package circulating through underground neural gaming networks in the outer Tier 2 districts contains something extra — a passive data-harvesting routine that is collecting not just usage data but raw sensory memories from deep-feed sessions, and the content itself seems designed to elicit specific emotional states worth recording.",
+    "A player character discovers that a close contact has slipped into severe neural entertainment dependency — their Stratum's deep-feed logs show they haven't voluntarily exited the ImmersCore network in eleven days, sustained by automated civic services that are somehow still processing their QUANTA payments. Someone is keeping them in.",
+    "CortexDynamics is preparing to push a mandatory firmware update that will throttle deep-feed mode intensity by 40% in response to new city neural health regulations — and the underground gaming community is planning to riot, while a grey-market firmware vendor is offering a patch that preserves full ImmersCore functionality at the cost of removing all safety limiters."
+  ],
+  "street_price": "Φ2,600",
+  "licensed_price": "Φ4,200",
+  "tags": [
+    "cyberware",
+    "bci",
+    "consumer",
+    "tier-2",
+    "tier-3",
+    "cortexdynamics",
+    "entertainment",
+    "gaming",
+    "immersive",
+    "neural-mesh",
+    "mid_range_consumer"
+  ],
+  "parent_corponation": ""
+}

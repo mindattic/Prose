@@ -1,0 +1,57 @@
+{
+  "id": "3985191f893feefbe15b252d439a3a19",
+  "type": "faction",
+  "name": "The Harbor Rats",
+  "aliases": [
+    "Rats",
+    "Dock Rats",
+    "Harbor Boys"
+  ],
+  "motto": "If it comes through the port, we get our taste.",
+  "description": "The Harbor Rats are Old Harbor's most entrenched criminal organization — a mid-tier outfit of approximately 400 members who control smuggling operations through Meridian 88's port infrastructure. They are not sophisticated. They are not glamorous. They are dock workers, stevedores, crane operators, and warehouse laborers who realized decades ago that the most valuable thing they possessed wasn't their labor but their access.\n\nThe Rats control what comes in and what goes out through a network of corrupted port workers, forged shipping manifests, and blind spots in the automated cargo scanning systems that they maintain through a combination of bribery and sabotage. Need to bring something into Meridian 88 without corporate customs knowing? The Harbor Rats can make it happen. Need to get something out? Same. Weapons, drugs, people, data storage (physical data smuggling remains relevant when network surveillance is total), stolen augmentation components, industrial equipment, biological samples — the Rats don't care what's in the container as long as they get paid.\n\nThe organization is structured around dock crews — teams of eight to twelve members who control specific sections of the port. Each crew operates semi-independently, running its own smuggling operations and paying a percentage to the organization's leadership. This structure makes the Rats resilient (lose one crew and the others continue) but also fractious (crews compete for the most profitable routes and occasionally settle disputes with violence).",
+  "ideology": "The port belongs to the workers, and the workers deserve their cut. This is not political philosophy — it's the pragmatic conviction that if you control the physical infrastructure, you control the economy that runs through it.",
+  "territory": "Old Harbor's port facilities and the surrounding warehouse district. The Rats have minimal presence outside the port area but absolute control within it.",
+  "leadership": "Dockmaster Emeka Johansson, a former crane operator who rose through the organization by being the smartest person in every room full of tough people. He runs the Rats from a harbormaster's office that still has his old crane certification on the wall.",
+  "methods": [
+    "Cargo smuggling through corrupted port infrastructure",
+    "Forged shipping manifests and customs documentation",
+    "Maintenance of blind spots in automated scanning systems",
+    "Bribery of port authority officials and automated system operators",
+    "Physical security of smuggled goods in warehouse storage",
+    "Violence against competitors who attempt to use the port without permission"
+  ],
+  "resources": [
+    "400 members embedded in port operations",
+    "Control of physical port infrastructure and its blind spots",
+    "Relationships with smugglers and black market operators across the hemisphere",
+    "Warehouse storage facilities for contraband",
+    "Institutional knowledge of port operations spanning decades",
+    "Dockmaster Johansson's intelligence and organizational skill"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "The Jade Syndicate",
+      "type": "business",
+      "description": "The Syndicate is the Rats' largest client, using their smuggling infrastructure for drug precursors and weapons imports. The relationship is transactional and stable.",
+      "tags": [
+        "criminal",
+        "logistics"
+      ]
+    }
+  ],
+  "narrative_function": "The Rats represent the criminal economy that exists because the legal one doesn't serve everyone — and the practical reality that controlling physical infrastructure is still power in a digital age.",
+  "story_hooks": [
+    "A container has arrived at the port with no shipping manifest, no sender information, and a biometric lock keyed to someone who died twenty years ago. The Rats want it opened. The crew that found it is afraid to.",
+    "Dockmaster Johansson's daughter has been kidnapped by someone who wants the Rats to smuggle something specific — something Johansson won't describe but clearly fears."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "smuggling",
+    "old harbor",
+    "port",
+    "organized crime",
+    "dock"
+  ]
+}

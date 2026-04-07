@@ -1,0 +1,34 @@
+{
+  "id": "c3d0efa2a1d69a4221e20e3455a88900",
+  "name": "Provocateur Agent",
+  "type": "archetype",
+  "category": "social",
+  "description": "Deliberately destabilizes social situations to see what shakes loose",
+  "behavioral_signature": "Asks the question everyone was avoiding at the worst possible moment",
+  "under_stress": "Provokes without purpose, just to feel something",
+  "at_rest": "Studying the cracks in every relationship around them",
+  "will_always": [
+    "push buttons to test reactions"
+  ],
+  "will_never": [
+    "let comfortable lies sit undisturbed"
+  ],
+  "unless": [
+    "pushing would destroy something they actually care about"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Provocateur",
+      "threshold": 0.9,
+      "context": "social disruption"
+    }
+  ],
+  "opposite_of": [
+    "Peacemaker"
+  ],
+  "tags": [
+    "disruption",
+    "testing",
+    "chaos"
+  ]
+}

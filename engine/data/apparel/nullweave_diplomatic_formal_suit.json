@@ -1,0 +1,34 @@
+{
+  "name": "Nullweave Diplomatic Formal Suit",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "diplomatic_attire",
+  "manufacturer": "Nullweave Atelier (independent, registered neutral)",
+  "description": "The Diplomatic Formal Suit is Nullweave's flagship product and the reason the atelier exists. It is designed to carry no signal — no Corponation affiliation, no tier marker, no cultural coding that reads as alignment with any faction currently active in Meridian politics. The fabric is a proprietary matte-finish synth-wool blend that absorbs light evenly, preventing the chromatic reads that BCI-equipped observers use to assess affiliation. All hardware — buttons, closures, zippers — is in a neutral brushed titanium alloy that matches no Corponation's standard palette. The cut is deliberately ambiguous: structured enough to read as formal, loose enough to avoid the specific silhouette language of any corporate dress code.\n\nNullweave maintains a small staff of political analysts who update the suit's design quarterly as Corponation visual languages evolve. A suit purchased six months ago may require a hardware swap to remain fully neutral. The atelier offers a subscription service for active diplomatic personnel. The suit is augment-compatible with standard port-access panels and geneware-compatible with a modular rear panel system.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ480",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "The Nullweave suit is recognized by people who know what to look for — which is exactly the point. In rooms where everyone is reading everyone else, wearing something that returns no data is itself a statement. It says: I am here to negotiate, not to declare. Some factions find this reassuring. Others find it threatening. Vantablack's analysis division has a category for it.",
+  "story_hooks": [
+    "The character is wearing a Nullweave suit at a multi-faction meeting when a Vantablack analyst privately messages them: 'Your suit is four months out of date. The matte finish now reads as Ouroboros compliance division to anyone running current visual ID. You have about eight minutes before the Crucible rep notices.'",
+    "Someone has started producing counterfeit Nullweave suits that are nearly identical but carry a hidden Corponation affiliation marker in the button NFC. The atelier is trying to find out who and why without going public with the vulnerability.",
+    "A Synthetic representative is attending their first formal inter-Corponation negotiation. They've been advised to wear Nullweave. The atelier's staff realizes their design has never been tested for how it reads on a Synthetic body, which reflects light differently than biological tissue."
+  ],
+  "tags": [
+    "formal",
+    "diplomatic",
+    "neutral-signal",
+    "suit",
+    "Nullweave",
+    "no-affiliation",
+    "BCI-resistant",
+    "aug-compatible",
+    "geneware-compatible",
+    "Tier 3-4"
+  ],
+  "id": "94b39040b083477a9e350ad4e6558723",
+  "parent_corponation": ""
+}

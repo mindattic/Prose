@@ -1,0 +1,33 @@
+{
+  "id": "200b6a1a8a8fd2e58eff4112222f6008",
+  "name": "Meaninglessness Terror",
+  "type": "archetype",
+  "category": "fear",
+  "description": "The possibility that nothing matters is a howling void they can't look into",
+  "behavioral_signature": "Constructs elaborate meaning systems to keep existential dread at bay",
+  "under_stress": "The meaning collapses and they stare into the void",
+  "at_rest": "Purposeful, driven, philosophically engaged",
+  "will_always": [
+    "search for or create meaning"
+  ],
+  "will_never": [
+    "accept that suffering is random"
+  ],
+  "unless": [
+    "they find peace in meaninglessness itself"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Meaning Maker",
+      "threshold": 0.85,
+      "context": "fear of nihilism"
+    }
+  ],
+  "opposite_of": [
+    "Nihilist"
+  ],
+  "tags": [
+    "existential",
+    "meaning-seeking"
+  ]
+}

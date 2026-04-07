@@ -1,0 +1,33 @@
+{
+  "id": "5c32e5cef31580fd0c2d75e820247468",
+  "name": "Chosen One",
+  "type": "archetype",
+  "category": "identity",
+  "description": "Believes they exist for a specific purpose, cosmically ordained",
+  "behavioral_signature": "Interprets every event as confirmation of their destined role",
+  "under_stress": "Questioning the purpose causes existential collapse",
+  "at_rest": "Moves with terrifying certainty through an uncertain world",
+  "will_always": [
+    "follow the signs they see everywhere"
+  ],
+  "will_never": [
+    "accept that they might be ordinary"
+  ],
+  "unless": [
+    "the purpose demands a sacrifice they're not willing to make"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Prophet",
+      "threshold": 0.8,
+      "context": "destined identity"
+    }
+  ],
+  "opposite_of": [
+    "Absurdist"
+  ],
+  "tags": [
+    "destined",
+    "certain"
+  ]
+}

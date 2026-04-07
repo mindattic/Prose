@@ -1,0 +1,58 @@
+{
+  "id": "a3f7c2e1b8d04591fe6a2c3d7e9b1048",
+  "name": "Kessler Kinetics Vaultstreak R7 Runner Leg",
+  "brand_name": "KESSLER KINETICS",
+  "product_name": "Kessler Kinetics Vaultstreak R7 Runner Leg System",
+  "type": "cyberware",
+  "aliases": [
+    "Streaks",
+    "Vaultrunners",
+    "R7s"
+  ],
+  "category": "leg",
+  "body_location": "legs",
+  "description": "The Vaultstreak R7 is a full leg replacement built around a carbon-composite endoskeleton with tensioned polymer tendons that store and release kinetic energy at each stride. The system uses a predictive gait algorithm that reads muscle-origin nerve signals 40ms ahead of motion, pre-tensioning the ankle and knee joints for explosive acceleration. A hollow-core tibial shaft reduces mass to 1.8kg per limb without sacrificing torsional rigidity. Sprint assist engages automatically above 18 km/h, delivering up to 47% energy return over biological baseline.\n\nThe R7 is the preferred limb of competitive urban circuit runners, courier networks, and the growing semi-professional sprint league scene in the Shelf districts. On the street it's aspirational hardware — kids in Tier 1 tape cardboard fins to their stock Meridian prosthetics to imitate the Vaultstreak's silhouette. Kessler sponsors several high-profile Tier 3 athletes, keeping the brand visible enough to move units across income brackets.",
+  "manufacturer": "KESSLER KINETICS",
+  "tier_availability": "Tier 2-4",
+  "legality": "Licensed",
+  "installation_requirements": "Certified prosthetist, osseointegration anchor surgery, 4-week neural calibration period",
+  "rejection_risk": "Low — carbon-composite socket lined with biocompatible PEEK polymer; standard osseointegration protocol",
+  "maintenance": "Tendon polymer replacement every 18 months; joint bearing service every 12 months; firmware update quarterly",
+  "specifications": "{\"weight_per_limb_kg\": 1.8, \"max_sprint_speed_kmh\": 52, \"energy_return_percent\": 47, \"material\": \"carbon-composite endoskeleton, tensioned polymer tendons\", \"gait_prediction_ms\": 40, \"sprint_assist_threshold_kmh\": 18, \"ankle_articulation_degrees\": 60, \"waterproofing\": \"IPX4 splash resistant\", \"power_source\": \"kinetic harvest + lithium-ceramic backup cell\", \"battery_life_hours\": 72}",
+  "side_effects": [
+    "Phantom speed sensation during sleep — users report vivid running dreams with involuntary leg twitches",
+    "Overcorrection gait on soft terrain; mud or sand can confuse predictive algorithm causing stumbles",
+    "Biological leg (if unilateral) develops compensatory muscle hypertrophy within 6 months",
+    "Occasional tendon resonance hum audible to nearby persons at sustained speeds above 40 km/h"
+  ],
+  "cultural_context": "The Vaultstreak R7 occupies a unique cultural space as both performance hardware and street fashion icon. In the Tier 2-3 corridor districts, owning a pair signals upward mobility — you're fast enough, and funded enough, to chase something better. Kessler's smart marketing leans into this, dropping limited colorway firmware skins each season.",
+  "known_users": [
+    "Urban circuit runners and semi-professional sprint athletes",
+    "Courier and package delivery network employees",
+    "Tier 2-3 aspirational youth culture",
+    "Parkour and freerunning communities",
+    "Physical therapy patients recovering to athletic function"
+  ],
+  "story_hooks": [
+    "A Vaultstreak R7 pair surfaces on the black market with a Kessler prototype firmware that pushes sprint speed to 70 km/h — but the tendon stress data suggests the user's biological spine couldn't handle it",
+    "A courier union is threatening strike action after their employer mandated R7 installations for all workers, claiming ownership of the limbs as 'company equipment'",
+    "Someone is winning underground sprint races using an R7 with the serial numbers filed off — and they're moving faster than the R7 should be capable of"
+  ],
+  "street_price": "Φ28,000",
+  "licensed_price": "Φ54,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "leg",
+    "runner",
+    "speed",
+    "carbon-composite",
+    "athletic",
+    "kessler-kinetics",
+    "tier2",
+    "tier3",
+    "tier4",
+    "licensed"
+  ],
+  "parent_corponation": ""
+}

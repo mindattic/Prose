@@ -1,0 +1,55 @@
+{
+  "id": "a3f8c21d9e4b7056f1a2c3d4e5f60789",
+  "name": "VitaCore SomnaRest Sleep Compression Implant",
+  "brand_name": "VitaCore",
+  "product_name": "SomnaRest",
+  "type": "cyberware",
+  "aliases": [
+    "the four-hour",
+    "sleep clip",
+    "soma chip",
+    "the compressor",
+    "nightcap"
+  ],
+  "category": "health",
+  "body_location": "cranial — hypothalamic microarray, posterior scalp entry point",
+  "description": "The SomnaRest Sleep Compression Implant is a microarray of bioelectric nodes threaded into the hypothalamus and adjacent thalamic relay structures. It works by actively modulating the brain's sleep architecture — compressing all five stages of the sleep cycle into a dense, highly efficient 3.5-to-4-hour window. The implant monitors real-time neurochemical output (adenosine clearance, cortisol onset, melatonin curve) and adjusts stimulation timing to ensure the user achieves complete slow-wave and REM cycle completion without truncation. A secondary subdermal receiver at the posterior scalp handles firmware updates and diagnostic syncs via a standard LifeWire-compatible reader. The system draws on the body's own bioelectric field for passive power, supplemented by a micro-cell rated for seven years before replacement.\n\nFor the tens of millions of working-class Shelf and Tier 2 residents who hold two or three jobs, the SomnaRest is less a luxury than a survival tool. A parent working a warehouse shift from 0200 to 1000 and then a service window from 1200 to 2000 simply cannot afford eight hours unconscious. The SomnaRest gives them back three to four hours every single night — hours that translate directly into time with children, a second income stream, or simply the dignity of a meal eaten while awake. Users report waking from a SomnaRest cycle feeling genuinely refreshed rather than the groggy truncation that unassisted short sleep produces. The implant has become so normalized in Tier 1 and 2 communities that a person sleeping a full eight hours is sometimes regarded with mild suspicion — as someone who either doesn't have enough work or can't afford the chip.",
+  "manufacturer": "VITACORE HEALTH SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient neurology clinic; 90-minute procedure under local anesthetic; same-day discharge",
+  "rejection_risk": "Low",
+  "maintenance": "Annual firmware sync at any VitaCore kiosk; micro-cell replacement every 7 years; optional quarterly neurochemical calibration for users with shift-work schedules",
+  "specifications": "{\"sleep_compression_target\": \"3.5–4 hours full cycle\", \"power_source\": \"bioelectric harvesting + micro-cell (7-year rated)\", \"update_interface\": \"LifeWire-compatible posterior receiver\", \"monitored_markers\": [\"adenosine clearance\", \"cortisol onset\", \"melatonin curve\", \"REM cycle completion\"], \"node_count\": \"14 hypothalamic / 6 thalamic\", \"warranty\": \"10 years\"}",
+  "side_effects": [
+    "Vivid, unusually coherent dreams during the first two weeks of calibration",
+    "Mild frontal headache for 3–5 days post-installation",
+    "Occasional brief hypnic jerk upon sleep onset, more pronounced in the first month",
+    "Some users report a subtle sense of 'compressed time' — difficulty estimating how long they have been asleep"
+  ],
+  "cultural_context": "The SomnaRest occupies a strange cultural position in Meridian 88 — simultaneously a badge of working-class practicality and a quiet symbol of a society that has decided human rest is a resource to be optimized rather than protected. On the Shelf, having a sleep chip is as unremarkable as owning a transit pass. Tier 3 and 4 users tend to frame it as a productivity enhancement, attending 'reclaimed hours' wellness seminars run by MindBridge affiliates. There is a small but vocal counter-culture movement — mostly artists and older Tier 3 professionals — who refuse the implant on principle, calling it 'the corponation tax on dreaming.' This position is widely regarded as a Tier 4 luxury opinion by anyone who has ever worked a double.",
+  "known_users": [
+    "Shift workers holding multiple jobs",
+    "Single parents in Tier 1 and Tier 2 housing blocks",
+    "Medical residents and emergency service personnel",
+    "Graduate students and entry-level corporate workers",
+    "Small business owners in Tier 2 commercial corridors"
+  ],
+  "story_hooks": [
+    "A rash of SomnaRest units in a Tier 1 block have begun malfunctioning simultaneously, locking users into REM states they cannot wake from — and the firmware update that caused it was pushed silently three nights ago.",
+    "A fixer discovers that a specific batch of SomnaRest chips contains an undocumented secondary function: logging dream-state neurochemical signatures, the data quietly sold to a Tessera Corponation subsidiary profiling subconscious stress responses.",
+    "A labor organizer is trying to get SomnaRest classified as a required employer provision for double-shift workers — and the bill's opposition is being quietly funded by VitaCore itself, which prefers voluntary purchase."
+  ],
+  "street_price": "Ϸ340–Ϸ480",
+  "licensed_price": "Ϸ720–Ϸ950",
+  "tags": [
+    "cyberware",
+    "health",
+    "lifestyle",
+    "sleep",
+    "neurological",
+    "working-class",
+    "productivity"
+  ],
+  "parent_corponation": ""
+}

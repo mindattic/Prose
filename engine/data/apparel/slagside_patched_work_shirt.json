@@ -1,0 +1,47 @@
+{
+  "id": "3b8f0d6c2e9a174583b0f8d6c2e9a174",
+  "name": "Slagside Patched Work Shirt",
+  "type": "apparel",
+  "category": "top",
+  "description": "Not a product — a practice. The Slagside Patched Work Shirt is a Shelf tradition: a long-sleeve button-front work shirt, usually a dead brand or salvaged industrial uniform top, repaired and personalized until the original garment is more patch than shirt. Common base garments include old Solberg-Maru uniform shirts, defunct corponation maintenance coverall tops, and whatever durable synth-fabric shirts cycle through the Shelf's secondhand stalls. Patches are anything that holds — fabric scraps, adhesive repair tape in contrasting colors, heat-fused synthetic leather squares, embroidered panels traded between neighbors.\n\nNo two are alike. They're worn as a point of identity: in a district where you can't afford to look like anything, you make yourself look like something. Some Shelf residents spend months on a single shirt, treating it as an ongoing project. Others are purely functional — rip, patch, wear. The name 'Slagside' comes from one of the Shelf's most densely populated industrial zones, but the practice is city-wide.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged synth-fabric base",
+    "mixed textile patches",
+    "adhesive repair tape",
+    "embroidered panels",
+    "heat-fused synthetic leather"
+  ],
+  "functionality": "",
+  "what_it_says": "You don't have much, but you have something to say. This shirt is an autobiography in fabric — anyone who knows how to read it can tell where you've been.",
+  "worn_by": [
+    "Shelf residents",
+    "Shelf youth gangs",
+    "scavengers",
+    "underground artists",
+    "Tier 2 people with Shelf roots who haven't forgotten"
+  ],
+  "manufacturer": "Self-made / community craft",
+  "price_range": "Φ3–Φ12 (materials cost)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A specific pattern of patches — three diagonal blue strips over the left breast — is a known signal in one Shelf district meaning the wearer is under protection of a particular crew; wearing it without authorization can be extremely dangerous.",
+    "A Tier 4 fashion designer has been photographing Slagside shirts for a collection, and the Shelf community's reaction ranges from flattered to furious — someone is organizing a response.",
+    "A character recognizes a patch on a stranger's shirt as a piece of fabric from a garment they lost years ago, in a place they've never talked about."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 1",
+    "Shelf",
+    "patchwork",
+    "scavenged",
+    "work shirt",
+    "handmade",
+    "gang adjacent",
+    "aug-compatible",
+    "gene-compatible"
+  ],
+  "parent_corponation": ""
+}

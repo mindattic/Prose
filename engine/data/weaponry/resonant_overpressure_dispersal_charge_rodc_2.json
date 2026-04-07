@@ -9,7 +9,7 @@
   ],
   "category": "explosive",
   "description": "The RODC-2 does not explode in any conventional sense. Rather than producing a single detonation shockwave, it generates a rapid sequence of precisely tuned pressure pulses — typically seven to twelve waves fired in 80-millisecond intervals — using a piezoelectric lattice core that converts stored charge into mechanical compression events. The result is a sustained overpressure envelope that interacts destructively with biological tissue while leaving hard structures comparatively intact. Glass survives. Lungs do not.\n\nThe weapon was developed by TESSERA CORPONATION's defense subsidiary as a 'precision crowd suppression tool' intended for use in enclosed corporate facilities where conventional explosives would compromise structural integrity. The frequency tuning is calibrated to resonate with pulmonary air columns and middle-ear structures, causing hemorrhagic trauma at ranges where blast-wave weapons would be non-lethal. At close range, the overpressure pulses are sufficient to cause cardiac arrhythmia and cerebral contusion in unshielded targets.\n\nField operators have noted that the RODC-2 produces an eerie, almost subsonic thudding sensation before casualties begin to manifest — victims often describe feeling 'punched from everywhere at once' before losing consciousness. This perceptual lag has given the weapon a reputation for psychological horror among survivors. The Wavebreaker designation emerged from its use in breaking up fortified positions where combatants had entrenched behind cover — the pressure pulses curve around obstacles with limited but meaningful effectiveness.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "Tessera Orbital Labs",
   "tier_availability": "Military only / Corporate security licensed",
   "legality": "Restricted",
   "base_technologies": [
@@ -53,6 +53,8 @@
     "market",
     "bar",
     "armor",
-    "fire"
-  ]
+    "fire",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

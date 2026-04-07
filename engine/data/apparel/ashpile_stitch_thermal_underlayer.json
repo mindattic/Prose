@@ -1,0 +1,43 @@
+{
+  "id": "a3f7c2e1b09d4a56f8e3c71d2b5a9f04",
+  "name": "Ashpile Stitch-Thermal Underlayer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Hand-stitched from salvaged insulation batting, reclaimed synth-fleece strips, and scavenged thermal foil remnants, this underlayer is a patchwork of mismatched gray, rust, and industrial yellow. Every seam is doubled by hand with waxed thread — some sections re-stitched three or four times over. The surface is uneven, lumpy in places, but it holds heat against Shelf cold and acid-rain damp with stubborn efficiency. Worn edges are bound with whatever ribbon or cord was available.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed synth-fleece",
+    "salvaged thermal foil batting",
+    "scavenged insulation wadding",
+    "waxed hand-stitch thread",
+    "mismatched binding cord"
+  ],
+  "functionality": "Passive thermal retention against sub-zero Shelf temperatures and acid-rain moisture; no smart features, no power draw — just layered insulation that works when the grid doesn't.",
+  "what_it_says": "You make do with what the city throws away, and you've gotten very good at it.",
+  "worn_by": [
+    "Shelf residents",
+    "scavengers",
+    "unhoused workers",
+    "kids who inherited their parents' patch jobs"
+  ],
+  "manufacturer": "Self-made / no label",
+  "price_range": "Φ2–Φ8 (materials cost) or traded",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A distinctive patch of orange industrial foil matches a scrap found at a sealed-off collapse site — someone was there when the building came down.",
+    "The inner lining contains a hand-sewn pocket with a folded paper note in a language the wearer can't read.",
+    "A Shelf kid trades one of these to a Tier 3 journalist who's going undercover — it's the most honest thing they've ever worn."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "thermal",
+    "shelf",
+    "hand-made",
+    "survival",
+    "low-tech",
+    "tier-1"
+  ],
+  "parent_corponation": ""
+}

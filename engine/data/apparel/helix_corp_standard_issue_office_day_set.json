@@ -1,0 +1,43 @@
+{
+  "id": "a3f7c2e1b849d056f3a1e7c2b849d056",
+  "name": "Helix Corp Standard-Issue Office Day Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The quintessential Tier 3 cubicle uniform, issued or subsidized by Helix Corp and barely distinguishable from the one worn by the person in the next pod over. A medium-grey poly-synth button-down with subtle herringbone texture sits tucked into straight-cut charcoal trousers made from Helix's in-house 'DuraWeave' blend — stiff enough to hold a crease for a full shift, uncomfortable enough to remind you this time belongs to the company. The shirt collar features a discrete BCI port loop sewn into the left placket, sized for standard 3mm neural jacks. Black synthetic-leather belt with a brushed-nickel buckle embossed with the Helix logo. Footwear is the Helix-sourced Cordis Autofit Dress Oxford in matte black — practical, auto-lacing, and entirely forgettable. A laminated ID lanyard in corporate teal hangs at chest height, clipped to the second button. Everything fits adequately. Nothing fits well.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "poly-synth herringbone blend",
+    "DuraWeave synthetic trouser fabric",
+    "synthetic leather belt",
+    "laminated ID lanyard composite"
+  ],
+  "functionality": "BCI port loop at collar for standard 3mm jacks, auto-lace footwear for fast floor transitions, stain-resistant trouser finish rated for eight-hour desk shifts, ID lanyard with RFID badge clip",
+  "what_it_says": "You are employed. You are compliant. You are not yet anyone. The uniform is the point — it signals that you belong to the building, not the other way around. Wearing it outside the office is mildly embarrassing. Wearing it slightly wrong is a disciplinary note.",
+  "worn_by": [
+    "Helix Corp data entry clerks",
+    "Tier 3 administrative processors",
+    "cubicle-floor generalists",
+    "junior support staff on their first corporate contract"
+  ],
+  "manufacturer": "Helix Corp Internal Apparel Division",
+  "price_range": "Φ 80–Φ 140 (often partially subsidized via payroll deduction)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character wearing this uniform is mistaken for a Helix employee while investigating a corporate building — the lanyard gets them through three security checkpoints before anyone looks twice.",
+    "The uniform's RFID badge clip has been quietly logging location data to a Helix server for months; a character discovers the firmware and realizes every employee in the building is being tracked to the minute.",
+    "A Tier 3 worker shows up to an important meeting in this outfit and is turned away at the executive floor — the elevator literally won't accept their badge above Level 14."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_3",
+    "uniform",
+    "aug_compatible",
+    "helix_corp",
+    "cubicle",
+    "conformist"
+  ],
+  "parent_corponation": ""
+}

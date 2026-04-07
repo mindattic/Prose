@@ -1,0 +1,34 @@
+{
+  "id": "914840a7d844d61f8cff031934c6cd84",
+  "name": "Meeting Warrior",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Fights all their battles in conference rooms and group chats",
+  "behavioral_signature": "Dominates meetings, controls agendas, weaponizes minutes",
+  "under_stress": "Calls emergency meetings to feel in control",
+  "at_rest": "Preparing talking points and pre-meeting alliances",
+  "will_always": [
+    "use meetings as their arena"
+  ],
+  "will_never": [
+    "settle things in a simple conversation when a meeting could be scheduled"
+  ],
+  "unless": [
+    "speed is critical and there's no time to convene"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Bureaucrat",
+      "threshold": 0.6,
+      "context": "procedural combat"
+    }
+  ],
+  "opposite_of": [
+    "Fixer Professional"
+  ],
+  "tags": [
+    "meetings",
+    "procedure",
+    "arena"
+  ]
+}

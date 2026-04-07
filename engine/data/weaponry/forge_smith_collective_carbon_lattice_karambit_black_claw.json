@@ -1,0 +1,47 @@
+{
+  "id": "1a3870d616465002148d36db4b4de890",
+  "name": "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
+  "type": "weapon",
+  "aliases": [
+    "Black Claw",
+    "Carbon Karambit",
+    "Hook Fang",
+    "The Crescent"
+  ],
+  "category": "melee",
+  "description": "A curved fighting knife in the karambit profile — a Southeast Asian design featuring a hooked blade and a finger ring for retention — constructed from solid carbon-lattice composite. The Black Claw's curved blade is optimized for draw cuts and hooking strikes, and the carbon-lattice material gives it an edge hardness that exceeds most commercial ceramics while maintaining the toughness to absorb impacts without chipping.\n\nThe Forge-Smith Collective's karambit specialists produce Black Claws using a proprietary pressure-forming process that aligns the carbon lattice along the blade's curve, concentrating material strength along the cutting edge. The result is a knife that can be driven point-first into hardened steel and extracted without damage — a party trick that Black Claw makers use to demonstrate their product's quality and that has become an informal acceptance test for new production.\n\nThe karambit's finger ring is not decorative — it allows the blade to be retained during grappling, rotated between forward and reverse grip without releasing the handle, and used as a striking surface in its own right. The Black Claw's ring is machined from the same carbon-lattice composite as the blade, thick enough to function as a knuckle impact weapon when the blade is folded back against the forearm in a concealed carry position.",
+  "manufacturer": "FORGE-SMITH COLLECTIVE",
+  "tier_availability": "Tier 1-2 (artisan availability)",
+  "legality": "Unlicensed — artisan production",
+  "base_technologies": [
+    "Pressure-formed carbon-lattice composite",
+    "Curve-aligned material grain",
+    "Integrated retention ring design"
+  ],
+  "specifications": "blade_length: 10 cm (curved measurement)\ntotal_length: 20 cm\nweight: 120 g\nblade_material: Curve-aligned carbon-lattice composite\nedge_hardness: 82 HRC equivalent\nretention: Integral finger ring\ngrip_options: Forward, reverse, concealed",
+  "tactical_use": "The Black Claw is a close-quarters grappling weapon designed for chaotic, body-to-body combat where longer weapons are useless. The finger ring ensures the weapon cannot be disarmed through conventional techniques, and the curved blade is optimized for draw cuts against soft tissue — throat, inner arm, inner thigh. Experienced users flow between forward and reverse grip mid-fight, presenting different threat angles without pause. The weapon's small size makes it concealable in a forearm sheath or waistband holster.",
+  "cultural_context": "The karambit's Southeast Asian heritage resonates in Meridian 88's thoroughly blended population — it is a weapon from one of dozens of martial traditions that have been mixed and adapted into the city's combat culture. The Black Claw has become a standard sidearm for close-quarters fighters across all tiers, and the finger ring has been adopted as a subtle recognition symbol — wearing a ring on the index finger of the dominant hand signals karambit proficiency to those who know what to look for.",
+  "known_users": [
+    "Close-quarters combat specialists",
+    "Lower-tier martial practitioners",
+    "Grappling-focused fighters"
+  ],
+  "story_hooks": [
+    "A series of killings shares an identical wound pattern — curved draw cuts consistent with a Black Claw, but the angle and depth suggest augmented speed. Someone with reflex enhancements is using an artisan blade to commit murders that look like street-level violence.",
+    "A Forge-Smith karambit specialist has been commissioned to produce a Black Claw with specific dimensional requirements — the buyer wants a blade that fits precisely into a particular cybernetic forearm housing. Custom assassination hardware."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "dagger",
+    "karambit",
+    "carbon-lattice",
+    "artisan",
+    "tier 1",
+    "grappling",
+    "concealed",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

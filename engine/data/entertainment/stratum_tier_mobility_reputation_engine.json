@@ -1,0 +1,44 @@
+{
+  "id": "2c8e1f4b7a0d3956e1c4b8f2a7d05e3c",
+  "name": "Stratum — Tier Mobility Reputation Engine",
+  "type": "entertainment",
+  "category": "platform",
+  "subcategory": "reputation system",
+  "description": "Stratum is a corporate-run social reputation platform operated by the Helion-Vasquez Corponation that calculates and publicly displays a user's 'Mobility Index' — a composite score drawn from employment history, social connections, BCI engagement metrics, purchase patterns, and peer endorsements. Unlike the broader Meridian Score, Stratum is specifically designed as a tier-mobility tool, promising users that high scores unlock housing applications, employment priority, and corporate partnership access. Its gamified interface and 'tier ladder' visualization have made it aspirationally addictive, particularly among Tier 2 users desperate for upward movement.",
+  "origin_year": 2201,
+  "tier_association": "Tier 2-3",
+  "status": "active",
+  "cultural_impact": "Stratum has effectively privatized social aspiration in Meridian 88's middle tiers — users modify their behavior, relationships, and public expression to optimize their Mobility Index, creating a documented chilling effect on dissent and nonconformity among Tier 2-3 populations. Critics call it 'the prettiest cage in the city.'",
+  "key_figures": [
+    "Helion-Vasquez Corponation (operator)",
+    "Nadia Okofor-Brennan (platform director, public face)",
+    "Collective 'Zero Index' (activist group dedicated to Stratum score sabotage)"
+  ],
+  "locations": [
+    "Helion-Vasquez Tower, Tier 4 Central Spine",
+    "Stratum kiosks in every Tier 2-3 transit hub",
+    "Zero Index counter-kiosks in Lakeward District (frequently dismantled)"
+  ],
+  "corporate_stance": "endorsed",
+  "story_hooks": [
+    "A Tier 2 user's Mobility Index collapses overnight with no explanation — digging into why reveals they were flagged by a ghost algorithm responding to a connection they don't remember making, one that traces back to Abscess.",
+    "Zero Index has obtained internal Stratum documentation proving the Mobility Index is partially fabricated — high scores are sometimes awarded to users Helion-Vasquez wants to recruit, regardless of actual metrics — and they need help publishing it safely.",
+    "A Tier 3 user is offered an inexplicably perfect Stratum score in exchange for an unnamed future favor from someone inside Helion-Vasquez — and the offer comes through an untraceable channel."
+  ],
+  "tags": [
+    "reputation-system",
+    "social-credit",
+    "corporate",
+    "tier-mobility",
+    "Helion-Vasquez",
+    "Tier-2",
+    "Tier-3",
+    "gamification",
+    "surveillance",
+    "behavioral-control"
+  ],
+  "user_base": "Approximately 9 million registered users; primary demographic is Tier 2 adults aged 18-50 actively seeking upward tier mobility; mandatory for Helion-Vasquez employment applicants",
+  "monetization": "Mandatory for Helion-Vasquez ecosystem access; premium 'Score Accelerator' subscriptions at Φ45/month; employer and landlord verification API fees; behavioral data sold to corponation partners",
+  "notable_feature": "Tier Ladder visualization — a real-time animated display showing a user's relative position among all Stratum users, designed to make tier proximity feel tangible and achievable, maximizing engagement through engineered aspiration anxiety",
+  "parent_corponation": ""
+}

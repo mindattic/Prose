@@ -1,0 +1,49 @@
+{
+  "id": "b17f8b2a153863426daba776708de1fc",
+  "name": "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'",
+  "type": "weapon",
+  "aliases": [
+    "Masterwork",
+    "VSCS-1",
+    "The Custom"
+  ],
+  "category": "dmr",
+  "description": "The VSCS-1 Masterwork is not a production weapon — it is a platform. Each Masterwork is built to the individual customer's specifications by Volkov-Saito's custom shop, with the buyer selecting caliber, barrel length, action type, stock configuration, optics, and BCI integration level. The only constant is the quality standard: every Masterwork delivers sub-quarter-MOA accuracy regardless of configuration.\n\nThe custom shop process begins with a consultation where the buyer's physical dimensions, neural interface specifications, shooting style, and intended use case are documented. A master gunsmith then designs and builds the weapon over a period of 8-12 weeks, hand-fitting every component and individually testing the complete system. The weapon-learning BCI system is pre-calibrated during the build process using the buyer's neural profile, so the rifle arrives partially personalized.\n\nPricing starts at Φ50,000 and escalates based on complexity. Electromagnetic acceleration options add Φ20,000. Custom caliber development adds more. Each Masterwork is serial-numbered and registered to its owner, with Volkov-Saito maintaining lifetime service records. Fewer than 100 are produced annually, and the waiting list extends two years. The Masterwork is the pinnacle of individual precision weapons — a weapon built for one person and one purpose.",
+  "manufacturer": "VOLKOV-SAITO PRECISION",
+  "tier_availability": "Tier 5",
+  "legality": "Restricted — custom weapons registration",
+  "base_technologies": [
+    "Custom-built precision platform",
+    "Individual owner specification",
+    "Pre-calibrated weapon-learning system",
+    "Master gunsmith hand-fitting"
+  ],
+  "specifications": "caliber: Customer specified\neffective_range: Configuration dependent (800-1,200m typical)\nrate_of_fire: Configuration dependent\nmagazine_capacity: Configuration dependent\nweight: Configuration dependent (typically 4-6 kg)",
+  "tactical_use": "The Masterwork is the ultimate expression of the precision marksman's relationship with their weapon. Built to individual specification, the rifle fits one operator's body, interface, and shooting style with a precision that production weapons cannot approach. The pre-calibrated weapon-learning system begins at a higher baseline than field-calibrated systems, and the hand-fitted components eliminate the tolerances that limit production accuracy. In capable hands, the Masterwork approaches the theoretical accuracy limit of its chosen cartridge.",
+  "cultural_context": "The Masterwork is the prestige weapon of the precision shooting world. Owning one signifies both the financial means and the demonstrated skill that Volkov-Saito requires before accepting a custom order — they interview potential buyers and reject those they deem insufficiently dedicated. This gatekeeping creates an exclusive community of Masterwork owners who share a bond of recognized skill and invested commitment. A Masterwork is never just a weapon. It is a collaboration between gunsmith and marksman.",
+  "known_users": [
+    "Elite precision marksmen",
+    "Competition champions",
+    "Ultra-wealthy operators",
+    "Precision shooting collectors"
+  ],
+  "story_hooks": [
+    "A Masterwork owner died, and their weapon went to estate sale. Volkov-Saito is attempting to buy it back — the weapon-learning data contains sensitive information about the deceased operator's neural patterns that could be exploited.",
+    "A Masterwork with electromagnetic acceleration capabilities was stolen during transit from the custom shop to the buyer. The weapon is worth Φ75,000 and is the most accurate individual precision rifle ever built. Everyone wants it."
+  ],
+  "ammunition_type": [
+    "Customer specified"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "custom",
+    "hand_built",
+    "premium",
+    "precision",
+    "Volkov-Saito",
+    "tier 5",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

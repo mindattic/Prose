@@ -1,0 +1,46 @@
+{
+  "id": "9e2b5f8d1c4a7036b2e9f5c8d1a47036",
+  "name": "TESSERA BioSeal Class-1 Cleanroom Coverall",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Crisp ISO-white with subtle grey TESSERA grid-logo repeating across the chest and sleeves, the BioSeal Class-1 is the standard-issue cleanroom suit for chip fabrication and geneware lab environments. The material is ultra-low-particulate spunbonded polyolefin with antistatic thread woven throughout — it crinkles faintly with every movement. All seams are ultrasonically bonded, zero stitching. The integrated hood has a clear polycarbonate face shield with anti-fog coating and a sealed HEPA-filtered breath vent at the chin. Elasticated cuffs mate to sterile gloves. The silhouette is deliberately featureless.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "spunbonded polyolefin (ultra-low particulate)",
+    "antistatic conductive thread",
+    "ultrasonically bonded seams",
+    "polycarbonate anti-fog face shield",
+    "HEPA chin-vent filter"
+  ],
+  "functionality": "ISO Class 3 rated — suitable for advanced chip fab and geneware clinic prep zones. Antistatic weave prevents electrostatic discharge near sensitive components. Full-body contamination barrier for both inbound particulates and outbound biological material. Single-use rated; TESSERA officially discourages reuse, though Tier-3 labs regularly re-sterilize.",
+  "what_it_says": "You work in precision environments where the product is worth more than you are, and the suit makes sure the room never knows you were there.",
+  "worn_by": [
+    "chip fabrication technicians",
+    "geneware clinic prep staff",
+    "biotech lab workers",
+    "pharmaceutical synthesis operators",
+    "cleanroom quality control auditors"
+  ],
+  "manufacturer": "TESSERA Genomics & Systems (Corponation)",
+  "price_range": "Φ90–Φ180 per unit (bulk-issued by employer)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A TESSERA BioSeal recovered from a black-market geneware clinic still has trace DNA from an unlicensed splice procedure — evidence someone would kill to suppress.",
+    "Cleanroom suits are used as anonymous disguises by corporate espionage operatives; inside a fab floor, everyone looks identical.",
+    "A technician has been secretly marking their suit with a single microdot of colored pigment each shift — a record of 200 days of unpaid overtime they're building a case around."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "cleanroom",
+    "biotech",
+    "chip-fab",
+    "geneware",
+    "tier-3",
+    "tier-4",
+    "full-body",
+    "sterile"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

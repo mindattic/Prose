@@ -1,0 +1,54 @@
+{
+  "id": "2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e",
+  "name": "Graymarket Shrine Runner's Street Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Light, fast, and visually complex in a way that reads as intentional from a distance but dissolves into improvisation up close. The top is a cropped long-sleeve in deep rust, the sleeves extended with mismatched ribbed cuffs in charcoal that come from an entirely different garment — the seam joining them visible as a deliberate design choice, a ring of contrast stitching in faded orange thread. The neckline is wide and reinforced with a band of self-repair tape folded into a decorative trim. Over the top sits an open vest constructed from salvaged webbing and fabric panels — the panels are varied: one in washed teal that's almost gray, one in faded olive, one in near-black nylon from what was once a courier bag. The webbing is black nylon, the kind used in harnesses, and the vest functions as both garment and carry system, with D-rings at the chest for clipping pouches and loops at the lower back for tucking rolled items. The lower half is slim-cut trousers in a faded charcoal twill, the left thigh carrying a large flat pocket with a flap closure secured by a salvaged buckle, the right calf wrapped in a compression sleeve in gray that covers a bioluminescent gene-mod — a faint blue-green shimmer visible at the sleeve's upper edge where it doesn't quite reach the hem. Gene-mod accommodation is evident: the lower back of the trousers has a soft tail-loop stitched in — currently unused but present, suggesting the wearer either has a tail mod or is planning for one. Footwear is a low-profile running shoe built on a salvaged sole with an upper hand-stitched from reclaimed neoprene in patches of gray and rust, the toe box reinforced with a strip of carbon-fiber salvage. A neck wrap in faded indigo-gray serves as face cover, warmth, and identity concealment as needed.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "rust thermal knit",
+    "charcoal ribbed cuffs",
+    "salvaged webbing",
+    "washed teal canvas",
+    "faded olive fabric",
+    "near-black courier nylon",
+    "charcoal twill",
+    "gray compression sleeve",
+    "reclaimed neoprene",
+    "carbon-fiber salvage toe",
+    "faded indigo-gray neck wrap"
+  ],
+  "functionality": "Vest-harness carry system with D-rings and loops for rapid attachment; large thigh pocket for flat items; compression sleeve for bioluminescent mod concealment; tail-loop accommodation; neck wrap for face concealment or warmth; lightweight construction for speed; carbon-fiber reinforced toe for kicking through debris",
+  "what_it_says": "This is someone who moves between spaces — between Shelf districts, between the Shelf and the Circuit, between the legal and the not. The harness vest says they carry things. The compression sleeve covering the bioluminescent mod says they know when to be invisible. The tail-loop says they're either forward-thinking or connected to geneware culture. The contrast stitching is a flex — a tiny, deliberate aesthetic choice that says they haven't given up on looking like themselves.",
+  "worn_by": [
+    "Shelf couriers and runners",
+    "gray-market traders",
+    "geneware culture participants",
+    "people who move between tiers informally",
+    "youth with access to partial gene-mods"
+  ],
+  "manufacturer": "Fully self-assembled; no single manufacturer; webbing from a collapsed Stratum Logistics surplus cache; sole base from Voss Athletic seconds",
+  "price_range": "Φ 20–45 assembled; harness vest alone Φ 10–18 on Shelf market",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The compression sleeve is concealing a bioluminescent gene-mod that wasn't licensed through TESSERA — which means the wearer is technically in violation of the Genomic Disclosure Act every time they cross a monitored checkpoint.",
+    "One of the D-rings on the harness vest is clipped to a small container that has been there so long the wearer no longer thinks about it — but someone else does, and they've been following the runner for two days.",
+    "The contrast stitching on the sleeve seam is actually a coded pattern — a visual language used by a specific Shelf courier collective to identify members without verbal communication. A new contact needs to know if this wearer is in that network."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier 1",
+    "runner",
+    "courier",
+    "gene_compatible",
+    "bioluminescent",
+    "harness",
+    "lightweight",
+    "gray-market",
+    "tail-compatible"
+  ],
+  "parent_corponation": ""
+}

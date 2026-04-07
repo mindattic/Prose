@@ -5,6 +5,8 @@
 @inject WorldGraphService Graph
 @inject IPathProvider Paths
 @inject ExportDiscoveryService ExportDiscovery
+@inject FtpPublishService FtpSvc
+@inject HtmlExportService HtmlExportSvc
 
 <div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Settings</h4>
@@ -132,10 +134,18 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <label class="form-label text-muted">Generate browsable .htm files for all repositories to ~/exports/.</label>
+                        <label class="form-label text-muted">Generate Encyclopedia and publish to web.</label>
                         <div class="input-group">
-                            <ExportButton Mode="all" GetAllRepos="GetAllReposForExport" ExtraStyle="" />
+                            <button class="btn btn-sm btn-danger" @onclick="PublishAll" disabled="@publishing">
+                                @if (publishing) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                else { <i class="bi bi-cloud-upload me-1"></i> }
+                                Publish
+                            </button>
                         </div>
+                        @if (publishStatus != null)
+                        {
+                            <small class="mt-1 d-block @(publishSuccess ? "text-success" : "text-muted")">@publishStatus</small>
+                        }
                     </div>
                 </div>
                 @if (brokenFiles.Count > 0)
@@ -146,6 +156,80 @@
                             <div class="small text-danger"><i class="bi bi-x-circle"></i> @err</div>
                         }
                     </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@* ── FTP Publishing ─────────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-cloud-upload"></i> FTP Publishing</span>
+                @if (ftpTestResult != null)
+                {
+                    <span class="badge @(ftpTestSuccess ? "bg-success" : "bg-danger")">@ftpTestResult</span>
+                }
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Host / IP</label>
+                        <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="ftp.example.com" @bind="SettingsSvc.FtpHost" />
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Port</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.FtpPort" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted">Username</label>
+                        <input type="text" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.FtpUsername" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted">Password</label>
+                        <div class="input-group">
+                            <input type="@(showFtpPassword ? "text" : "password")" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.FtpPassword" />
+                            <button class="btn btn-outline-secondary" type="button" @onclick="() => showFtpPassword = !showFtpPassword"><i class="bi @(showFtpPassword ? "bi-eye-slash" : "bi-eye")"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3 mt-1">
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Remote Path</label>
+                        <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="/m88" @bind="SettingsSvc.FtpRemotePath" />
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted d-block">&nbsp;</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" @bind="SettingsSvc.FtpUseSsl" />
+                            <label class="form-check-label text-muted">SSL</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted d-block">&nbsp;</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" @bind="SettingsSvc.FtpPassive" />
+                            <label class="form-check-label text-muted">Passive</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted d-block">&nbsp;</label>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm btn-outline-info" @onclick="TestFtp" disabled="@ftpBusy">
+                                <i class="bi bi-plug"></i> Test Connection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                @if (ftpBusy)
+                {
+                    <div class="mt-2 text-muted small"><i class="bi bi-arrow-repeat spin"></i> @ftpStatus</div>
+                }
+                @if (ftpPublishResult != null)
+                {
+                    <div class="mt-2 small @(ftpPublishSuccess ? "text-success" : "text-danger")">@ftpPublishResult</div>
                 }
             </div>
         </div>
@@ -481,6 +565,94 @@
     private string? validationResult;
     private int validationTotal, _validationErrors;
     private List<string> brokenFiles = [];
+
+    // FTP
+    private bool showFtpPassword;
+    private bool ftpBusy;
+    private string? ftpTestResult, ftpStatus, ftpPublishResult;
+    private bool ftpTestSuccess, ftpPublishSuccess;
+
+    // Publish All (export + FTP)
+    private bool publishing;
+    private string? publishStatus;
+    private bool publishSuccess;
+
+    private async Task TestFtp()
+    {
+        ftpBusy = true; ftpTestResult = null; ftpPublishResult = null; ftpStatus = "Testing connection...";
+        await InvokeAsync(StateHasChanged);
+        var (ok, msg) = await Task.Run(() => FtpSvc.TestConnectionAsync());
+        ftpTestResult = msg; ftpTestSuccess = ok; ftpBusy = false; ftpStatus = null;
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task PublishAll()
+    {
+        publishing = true; publishSuccess = false; publishStatus = "Exporting...";
+        await InvokeAsync(StateHasChanged);
+
+        // Step 1: Export all repos to HTML
+        string? exportPath = null;
+        try
+        {
+            var repos = ExportDiscovery.GetAllRepos();
+            var totalEntries = repos.Values.Sum(r => r.Count);
+            exportPath = await Task.Run(() => HtmlExportSvc.ExportAll(repos, (cur, total) =>
+            {
+                publishStatus = $"Exporting {cur:N0}/{total:N0} entries...";
+                InvokeAsync(StateHasChanged);
+            }));
+            publishStatus = $"Export complete ({totalEntries:N0} entries). Uploading via FTP...";
+            await InvokeAsync(StateHasChanged);
+        }
+        catch (Exception ex)
+        {
+            publishStatus = $"Export failed: {ex.Message}";
+            publishing = false;
+            await InvokeAsync(StateHasChanged);
+            return;
+        }
+
+        // Step 2: Upload via FTP
+        if (!FtpSvc.IsConfigured)
+        {
+            publishStatus = "Export complete. FTP not configured — set host/username/password in FTP Publishing section below.";
+            publishing = false;
+            await InvokeAsync(StateHasChanged);
+            return;
+        }
+
+        try
+        {
+            var (ok, msg) = await Task.Run(() => FtpSvc.PublishAsync(
+                HtmlExportSvc.ExportDir,
+                (cur, total, file) =>
+                {
+                    publishStatus = $"Uploading {cur}/{total}: {file}";
+                    InvokeAsync(StateHasChanged);
+                }));
+            publishSuccess = ok;
+            publishStatus = ok ? "Published successfully!" : msg;
+        }
+        catch (Exception ex)
+        {
+            publishStatus = $"Upload failed: {ex.Message}";
+        }
+
+        publishing = false;
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task PublishToFtp()
+    {
+        ftpBusy = true; ftpPublishResult = null; ftpStatus = "Preparing upload...";
+        await InvokeAsync(StateHasChanged);
+        var (ok, msg) = await Task.Run(() => FtpSvc.PublishAsync(
+            HtmlExportSvc.ExportDir,
+            (cur, total, file) => { ftpStatus = $"Uploading {cur}/{total}: {file}"; InvokeAsync(StateHasChanged); }));
+        ftpPublishResult = msg; ftpPublishSuccess = ok; ftpBusy = false; ftpStatus = null;
+        await InvokeAsync(StateHasChanged);
+    }
 
     private HashSet<string> visibleKeys = new();
     private string KeyType(string field) => visibleKeys.Contains(field) ? "text" : "password";

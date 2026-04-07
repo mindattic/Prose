@@ -1,0 +1,52 @@
+{
+  "name": "Arcturus AD-7 'Vulture'",
+  "type": "automaton",
+  "classification": "Aerial Drone — Persistent Overwatch",
+  "aliases": [
+    "Vulture",
+    "Eye in the Sky",
+    "Circler"
+  ],
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "description": "The AD-7 is a fixed-wing drone with a 4-meter wingspan that circles at altitudes between 500 and 2,000 meters, providing continuous surveillance and precision strike capability for ground operations. Its electric propulsion system is nearly silent at operational altitude, and its optical systems can read a BCI serial number from 1,500 meters. The Vulture carries two precision-guided munitions — small, but large enough to destroy a vehicle or kill everyone in a room.\n\nThe AD-7's primary value is persistence. A single Vulture can maintain station for 72 hours, watching, recording, and waiting for a target to appear. Multiple units rotating in relay can maintain continuous coverage indefinitely. The knowledge that a Vulture is overhead — and you can't see it, and you don't know if today is the day it decides to drop something — creates a constant, grinding psychological pressure that affects behavior at population scale.\n\nArcturus sells Vulture coverage as a service. Corporate clients subscribe to overwatch packages covering specific districts or facilities, and Arcturus maintains the fleet. This means the drones are always there, watching everything, and the data from their surveillance feeds is Arcturus's to sell separately. The strike capability is the headline feature, but the surveillance data is the profit center.",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed for corporate security use",
+  "autonomy_level": "Semi-autonomous with remote strike authorization",
+  "dimensions": "4.0m wingspan, 2.2m length",
+  "weight": "85 kg",
+  "power_source": "Solar-supplemented electric, 72-hour endurance",
+  "locomotion": "Fixed-wing electric propulsion",
+  "armament": [
+    "2x precision-guided munitions (5 kg warhead each)"
+  ],
+  "sensors": [
+    "High-resolution optical (readable BCI serial at 1,500m)",
+    "Thermal imaging",
+    "Signal intelligence collection",
+    "Persistent tracking algorithms"
+  ],
+  "countermeasures": "Surface-to-air weapons effective but possession is heavily restricted. Signal jamming disrupts strike authorization link but not surveillance. Cloud cover and dense urban canyons limit optical coverage. Operating altitude makes visual detection nearly impossible.",
+  "known_deployments": [
+    "Continuous coverage over multiple Meridian 88 districts",
+    "Corporate facility overwatch",
+    "Targeted strike operations (classified)"
+  ],
+  "story_hooks": [
+    "A Vulture strike killed three people in the Shelf. Arcturus claims they were valid military targets. Eyewitnesses say they were a family eating dinner. The surveillance footage that would prove either claim is classified.",
+    "Someone has figured out how to spoof Vulture targeting data, making the drones designate false targets. Real people at real addresses are receiving invisible death sentences. The spoofing signal is coming from inside Arcturus's own network."
+  ],
+  "cultural_context": "Vultures are invisible but omnipresent, and their presence has changed behavior patterns across Meridian 88. People avoid open spaces. Gatherings are held under cover. The sky is no longer neutral — it belongs to whoever can afford the subscription.",
+  "tags": [
+    "automaton",
+    "aerial",
+    "drone",
+    "surveillance",
+    "strike",
+    "weapon",
+    "arcturus",
+    "corporate",
+    "tier 4"
+  ],
+  "id": "ad84ae555f88940832c50a5dfd1ff8ba",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

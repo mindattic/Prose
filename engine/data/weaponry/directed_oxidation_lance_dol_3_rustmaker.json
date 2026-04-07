@@ -10,7 +10,7 @@
   ],
   "category": "cyber",
   "description": "The DOL-3 projects a sustained stream of catalytically accelerated oxidation agents — a proprietary OUROBOROS ENERGY compound designated OX-7 — delivered in a superheated plasma carrier that allows the agent to penetrate surface coatings and begin attacking the metallic substrates beneath. Against standard materials, this is a moderate industrial cutting tool. Against cybernetic implants, it is a weapon of unusual cruelty: OX-7 is specifically formulated to attack the ferrous and titanium alloys most commonly used in structural cybernetic components, causing rapid surface degradation that generates heat as a byproduct. An implant struck by the Rustmaker does not simply fail — it heats from within as its structural integrity deteriorates, causing thermal burns to surrounding tissue from the inside outward while simultaneously seizing joints and locking mechanical augmentations in place.",
-  "manufacturer": "OUROBOROS ENERGY",
+  "manufacturer": "Serpentine Data Centers",
   "tier_availability": "Tier 3+ (industrial variant) / Black market (weaponized variant)",
   "legality": "Restricted (industrial use, licensed), Prohibited (weaponized variant)",
   "base_technologies": [
@@ -56,6 +56,8 @@
     "market",
     "energy",
     "fire",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Ouroboros Energy"
 }

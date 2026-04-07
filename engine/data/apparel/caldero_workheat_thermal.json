@@ -1,0 +1,40 @@
+{
+  "id": "a3f7c2e1d4b8091f6e5a2c3d7b4f9e10",
+  "name": "Caldero Workheat Thermal",
+  "type": "apparel",
+  "category": "top",
+  "description": "A heavyweight thermal undershirt from Caldero Industrial, the kind that's been the standard-issue underlayer for dock workers and warehouse crews across the Lakes corridor for forty years. Waffle-knit synth-cotton in faded brick red or charcoal grey, with flat-felled seams that won't dig into skin under a harness or safety vest. The collar is a low crew that doesn't bunch under a jacket. Reinforced at the elbows and the lower back where workers bend and strain. It smells faintly of the industrial washing process when new, and after a few cycles it softens into something almost pleasant.\n\nCaldero doesn't market this shirt. It doesn't need to. It shows up in every supply locker in every cold-floor facility from Shelf level to the mid-stacks. Tier 2 workers buy it three at a time. Tier 1 residents find it secondhand, cut the sleeves off, patch the holes. It's the kind of garment that outlives its owner's job.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-cotton waffle knit",
+    "reinforced polyblend panels"
+  ],
+  "functionality": "",
+  "what_it_says": "You work with your body. You're not trying to impress anyone. You showed up.",
+  "worn_by": [
+    "dock workers",
+    "warehouse staff",
+    "construction crew",
+    "Shelf residents in secondhand condition",
+    "anyone who gets cold on the job"
+  ],
+  "manufacturer": "Caldero Industrial",
+  "price_range": "Φ18",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Caldero thermal with a specific batch code from 2197 was the only thing linking three bodies found in the sub-level drains — they all worked the same ghost shift at a facility that officially doesn't exist.",
+    "A Tier 4 fashion house released a 'distressed heritage' version for Φ380. The backlash from actual workers who wear the real thing turned ugly fast.",
+    "Someone has been leaving Caldero thermals — clean, folded, with a single Quanta coin tucked inside — on doorsteps of laid-off workers in Stack 7. Nobody knows who."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 2",
+    "workwear",
+    "thermal",
+    "underlayer",
+    "caldero"
+  ],
+  "parent_corponation": ""
+}

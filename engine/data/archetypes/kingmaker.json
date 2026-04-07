@@ -1,0 +1,33 @@
+{
+  "id": "42e328acca09f9e6e2020ce78761f0df",
+  "name": "Kingmaker",
+  "type": "archetype",
+  "category": "power",
+  "description": "Doesn't want the throne, wants to choose who sits on it",
+  "behavioral_signature": "Elevates others to power and controls them from behind",
+  "under_stress": "Installs increasingly unstable puppets out of desperation",
+  "at_rest": "Cultivates promising candidates like a gardener",
+  "will_always": [
+    "stay one step behind the spotlight"
+  ],
+  "will_never": [
+    "take visible power for themselves"
+  ],
+  "unless": [
+    "every candidate they've backed is dead or turned"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Shadow Leader",
+      "threshold": 0.85,
+      "context": "behind-the-scenes control"
+    }
+  ],
+  "opposite_of": [
+    "Figurehead"
+  ],
+  "tags": [
+    "manipulative",
+    "strategic"
+  ]
+}

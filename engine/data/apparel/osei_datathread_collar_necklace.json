@@ -1,0 +1,47 @@
+{
+  "id": "b4d7e0f2a8c1365907d4b8e2a0c13f56",
+  "name": "Osei Datathread Collar Necklace",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A flat woven collar-necklace in black and deep indigo, constructed from conductive thread in a kente-derived interlocking geometry. Embedded along the inner weave are three micro data-chip nodes disguised as decorative brass-toned beads — indistinguishable from ornament unless you know the activation press sequence.\n\nThe textile sits flat against the collarbone, roughly 2cm wide. The weave pattern shifts subtly under UV — a street authentication mark used by Circuit information brokers. Looks like jewelry. Functions like a dead-drop.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "conductive woven thread",
+    "indigo-dyed synthetic textile",
+    "micro data-chip nodes",
+    "brass-toned resin bead casings",
+    "UV-reactive dye trace"
+  ],
+  "functionality": "Three embedded data-chip nodes store up to 8TB encrypted each; activation via sequential bead-press; UV-reactive weave pattern functions as street-level authentication marker; passive NFC read-block when nodes are inactive.",
+  "what_it_says": "Information is currency, and you carry yours close to the throat.",
+  "worn_by": [
+    "information brokers",
+    "Circuit fixers",
+    "underground journalists",
+    "mid-tier corporate whistleblowers",
+    "data couriers"
+  ],
+  "manufacturer": "Osei & Park (street data division)",
+  "price_range": "Φ 180–340",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "One bead node in a circulating batch contains a partial AI personality fragment — whoever loaded it didn't finish the wipe.",
+    "The UV authentication pattern has been counterfeited by a rival broker network, causing violent misidentification on neutral ground.",
+    "A Tier-5 compliance officer is collecting these off bodies — the data they contain may connect to a corponation merger that was never made public."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "necklace",
+    "functional-jewelry",
+    "data-storage",
+    "tier-2",
+    "tier-3",
+    "street-label",
+    "information-broker",
+    "aug-compatible",
+    "gene-compatible"
+  ],
+  "parent_corponation": ""
+}

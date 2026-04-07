@@ -1,0 +1,43 @@
+{
+  "id": "29d7e4a0b5c813f69e2b05a8c1f374d8",
+  "name": "Harkon Siege Assault Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A heavy tactical boot in flat black with a composite armor shell covering the toe, ankle, and shin to mid-calf. The exterior panels have a deliberately aggressive geometry — layered, angular, built for intimidation as much as protection. Worn by corporate enforcement teams and private military contractors in Tier 4 operations. The sole integrates a vibration-dampening layer over a hard-strike heel for breaching kicks.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "composite armor shell panels",
+    "ballistic-rated boot body",
+    "vibration-dampening midsole",
+    "hardened polymer shin guard",
+    "moisture-sealed liner"
+  ],
+  "functionality": "Toe and ankle armor rated for ballistic fragmentation and 80J impact. Shin guard integrated to mid-calf. Breach-rated heel delivers approximately 900N force for door-strike use. Sealed against fluid intrusion.",
+  "what_it_says": "You are well-funded, well-trained, and authorized to use force. This is professional violence equipment.",
+  "worn_by": [
+    "corporate enforcement operators",
+    "private military contractors",
+    "high-tier security specialists",
+    "tactical response units"
+  ],
+  "manufacturer": "Harkon Defense Systems",
+  "price_range": "Φ380 - Φ500",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair is recovered from a massacre site — the manufacturer's records show the unit they were assigned to was officially disbanded two years ago.",
+    "Someone is selling Harkon boots on the Shelf black market. At Tier 2 prices. No one knows where the supply is coming from."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 4",
+    "tactical",
+    "armored",
+    "military",
+    "combat",
+    "corporate",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

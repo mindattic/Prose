@@ -1,0 +1,49 @@
+{
+  "name": "Vantablack AT-4 'Phantom Cab'",
+  "type": "automaton",
+  "classification": "Autonomous Vehicle — Urban Transport",
+  "aliases": [
+    "Phantom Cab",
+    "Ghost Ride",
+    "Black Car"
+  ],
+  "manufacturer": "VANTABLACK MOBILITY",
+  "description": "The AT-4 is an autonomous passenger vehicle that operates throughout Meridian 88's upper and middle tiers, providing on-demand transportation to subscribers of Vantablack's mobility service. The vehicle seats four passengers in a windowless, sound-insulated cabin with interior environmental controls and entertainment displays. There is no steering wheel, no manual override, and no way to see outside except through the vehicle's own camera feeds displayed on interior screens — feeds that Vantablack can modify in real time.\n\nThe Phantom Cab's most controversial feature is its routing algorithm. The AT-4 does not take the fastest route, the shortest route, or the route the passenger requests. It takes the route that maximizes Vantablack's revenue, which may include detours through commercial districts where the interior displays show targeted advertisements, or past competing businesses whose negative information Vantablack has been paid to present. Passengers in a sealed, windowless cabin with no manual override are a captive audience in the most literal sense.\n\nVantablack's terms of service — which no one reads — include a clause granting the company rights to all conversations, biometric data, and behavioral patterns recorded during transit. The AT-4's cabin is the most surveilled space in Meridian 88 per square meter. Business negotiations, personal confessions, medical discussions, criminal planning — everything said in a Phantom Cab belongs to Vantablack. The company's data brokerage division generates more revenue than its transportation service.",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — commercial transportation operator",
+  "autonomy_level": "Fully autonomous, no manual override",
+  "dimensions": "4.8m length, 2.0m width, 1.6m height",
+  "weight": "1,800 kg",
+  "power_source": "Solid-state battery pack, 400 km range per charge",
+  "locomotion": "Four-wheel electric drive, all-wheel steering",
+  "armament": [],
+  "sensors": [
+    "360-degree external sensor array (LIDAR, camera, radar)",
+    "Interior cabin monitoring (audio, video, biometric)",
+    "Traffic network integration",
+    "Passenger identification and behavioral analysis"
+  ],
+  "countermeasures": "Sealed cabin can be remotely locked. Vehicle can be immobilized remotely by Vantablack operations center. Emergency exit requires physical force against reinforced doors.",
+  "known_deployments": [
+    "Meridian 88 Tier 3-5 transportation network (continuous fleet of 8,000+ units)",
+    "Corporate campus shuttle services",
+    "VIP transport with enhanced security packages"
+  ],
+  "story_hooks": [
+    "A Phantom Cab has delivered a passenger to a destination they didn't request — a Vantablack facility in an industrial district with no public access. The passenger hasn't been seen since. The company claims a 'routing error.'",
+    "An underground collective has figured out how to spoof AT-4 cabin sensors, creating dead zones inside the vehicles where conversations can't be recorded. They're selling 'privacy rides' to anyone who can afford the Φ500 surcharge."
+  ],
+  "cultural_context": "The Phantom Cab has become a symbol of Meridian 88's surveillance economy. 'Getting into a black car' is slang for making a mistake you can't take back. Privacy advocates have staged protests by riding Phantom Cabs while reading corporate surveillance data aloud, forcing the system to record its own crimes.",
+  "tags": [
+    "automaton",
+    "vehicle",
+    "transport",
+    "surveillance",
+    "autonomous",
+    "vantablack",
+    "corporate",
+    "tier 3"
+  ],
+  "id": "ad82859ba001abcf53d625e2ee1885ce",
+  "parent_corponation": "Vantablack Media"
+}

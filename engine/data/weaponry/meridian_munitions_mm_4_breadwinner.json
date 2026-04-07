@@ -1,0 +1,48 @@
+{
+  "id": "238700062a1d507604292eab338f9c2e",
+  "name": "Meridian Munitions MM-4 'Breadwinner'",
+  "type": "weapon",
+  "aliases": [
+    "Breadwinner",
+    "MM-4",
+    "The Paycheck"
+  ],
+  "category": "assault_rifle",
+  "description": "Meridian Munitions designed the MM-4 specifically for the freelancer market — operators who need corporate-grade reliability without corporate-grade prices or corporate-grade surveillance. The Breadwinner chambers 6mm caseless in a bullpup configuration that keeps the barrel length at 450mm while maintaining an overall length under 700mm. A basic BCI interface provides aim-assist without the full neural handshake that premium weapons demand.\n\nThe MM-4's defining feature is its open-architecture accessory rail system, which accepts attachments from any manufacturer rather than locking users into a proprietary ecosystem. This makes it the preferred platform for operators who mix and match equipment from multiple sources. Meridian even publishes the rail specifications openly, encouraging third-party development.\n\nAt Φ2,800 for a standard unit, the Breadwinner occupies the sweet spot between the disposable KPA-15 and premium corporate rifles. It rewards skilled marksmanship without demanding neural augmentation, making it popular among operators who keep their BCI integration minimal.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Open-architecture accessory system",
+    "Bullpup caseless configuration",
+    "Basic BCI aim-assist"
+  ],
+  "specifications": "caliber: 6mm caseless\neffective_range: 450m\nrate_of_fire: 720 rpm (cyclic)\nmagazine_capacity: 35 rounds\nweight: 3.0 kg",
+  "tactical_use": "The MM-4 is a workhorse for independent operators. Its compact bullpup layout excels in vehicle operations and urban environments where overall length matters. The open accessory system means operators can configure the weapon for any mission profile without buying into a single manufacturer's ecosystem. The basic BCI aim-assist provides a meaningful accuracy improvement without requiring deep neural integration.",
+  "cultural_context": "The Breadwinner's name is literal — it is the tool that puts food on the table for thousands of freelance operators across Meridian 88. Meridian Munitions has cultivated a reputation as the arms manufacturer that respects operator independence, and the MM-4 embodies that ethos. In freelancer bars and safe houses, the Breadwinner is the default rifle, as common and unremarkable as a work tool should be.",
+  "known_users": [
+    "Independent freelancers",
+    "Tier 2-3 security contractors",
+    "Bounty hunters",
+    "Caravan guards"
+  ],
+  "story_hooks": [
+    "Meridian Munitions is being pressured by Arcturus to close their open-architecture specs. If they comply, thousands of freelancers lose their equipment ecosystem overnight.",
+    "A modified Breadwinner recovered from an assassination has aftermarket parts from six different manufacturers — tracing the weapon means tracing six separate supply chains."
+  ],
+  "ammunition_type": [
+    "6mm caseless standard",
+    "6mm caseless hollow-point"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "freelancer",
+    "open_architecture",
+    "bullpup",
+    "caseless",
+    "tier 2",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "d09e5b3a71fc284c6a8801e2c93f7d55",
+  "name": "Radcore NeutronShield RZ-9 Reactor Entry Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A full-envelope radiation suit in matte lead-gray with fluorescent amber warning strips running diagonally across the torso and down both legs. The outer layer is woven neutron-scatter fabric — boron-filament threaded through a dense polyimide base — with a rigid chest plate housing an embedded dosimeter display visible through a small scratch-resistant window. Bulky but articulated at the hip and shoulder with accordion-fold gussets.\n\nDesigned for reactor maintenance crews working hot zones in M88's aging fission grid and the contaminated industrial sectors of The Shelf. The suit's amber strips fade to cream with cumulative radiation exposure — a passive wear indicator most supervisors pretend not to notice.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "boron-filament neutron-scatter weave",
+    "polyimide base fabric",
+    "lead-composite chest plate",
+    "accordion polyimide gussets",
+    "embedded dosimeter module"
+  ],
+  "functionality": "Rated for 12-hour low-to-moderate radiation exposure in reactor maintenance zones. Integrated chest dosimeter logs cumulative dose and triggers a haptic pulse at threshold. Accordion gussets allow full crouch and crawl movement. Compatible with standard CBRN respirator collar mounts.",
+  "what_it_says": "You go into the places that slowly kill you, and the suit keeps score.",
+  "worn_by": [
+    "fission grid maintenance technicians",
+    "contaminated-zone remediation workers",
+    "reactor safety inspectors",
+    "Shelf scavengers who got lucky enough to find one"
+  ],
+  "manufacturer": "Radcore Industrial Protection",
+  "price_range": "Φ 1,200–Φ 2,800",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A suit returned from a Shelf remediation job has a dosimeter log showing exposure levels that should have been fatal — the worker who wore it is fine, and no one can explain why.",
+    "Radcore's RZ-9 is the standard-issue suit for a reactor zone that officially doesn't exist on any M88 infrastructure map.",
+    "The amber warning strips on a supervisor's suit haven't faded in three years of reactor work — someone has been replacing them before inspections."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "radiation",
+    "reactor",
+    "industrial",
+    "hazmat",
+    "tier2",
+    "tier3",
+    "fullsuit",
+    "workwear"
+  ],
+  "parent_corponation": ""
+}

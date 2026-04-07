@@ -1,0 +1,56 @@
+{
+  "id": "a3f7c2e1b84d9056f2a1c3e7d5b09841",
+  "name": "KESSLER KINETICS Velociter Sprint Leg System",
+  "brand_name": "KESSLER KINETICS",
+  "product_name": "Kessler Kinetics Velociter Sprint Leg System",
+  "type": "cyberware",
+  "aliases": [
+    "Jackrabbits",
+    "Kessler Blades",
+    "Sprinters"
+  ],
+  "category": "leg",
+  "body_location": "legs",
+  "description": "The Velociter is a full leg replacement built around a carbon-composite endoskeleton with parabolic energy-return blade architecture at the ankle and metatarsal junctions. Kinetic energy harvested during heel-strike is stored in dual flexion springs and released at toe-off, providing a measurable velocity boost with every stride. The knee joint uses a predictive servo-assist driven by a gait-prediction AI chip that anticipates motion 80ms ahead of conscious intention.\n\nKessler's Velociter is the dominant leg on the competitive running circuit and a fixture in the Meridian 88 underground sprint scene. Couriers, competitive athletes, and Tier 2-3 runners who saved aggressively for months wear them as a badge of earned speed, often leaving the chrome finish raw rather than painting over the Kessler logo.",
+  "manufacturer": "KESSLER KINETICS",
+  "tier_availability": "Tier 2-4",
+  "legality": "Licensed",
+  "installation_requirements": "Certified sports prosthetics clinic, neural gait calibration session, minimum 48-hour recovery protocol",
+  "rejection_risk": "Low — biocompatible polymer nerve sleeve reduces interface inflammation",
+  "maintenance": "Flex spring tensioning every 3 months, gait AI firmware updates recommended quarterly, joint bearing inspection annually",
+  "specifications": "{\"top_speed_boost\": \"+34% over baseline human sprint\", \"energy_return_efficiency\": \"91%\", \"weight\": \"2.1kg per leg\", \"material\": \"T900 carbon composite over titanium alloy frame\", \"knee_servo_response\": \"80ms predictive assist\", \"battery\": \"Passive kinetic harvest, no external charge required\", \"waterproofing\": \"IPX4 splash resistant\", \"max_load_rating\": \"180kg\"}",
+  "side_effects": [
+    "Phantom limb acceleration sensations during sleep for first 6-8 weeks",
+    "Mild proprioceptive drift when transitioning from running to standing still",
+    "Tendon stress at biological hip joint if only one leg is replaced — bilateral installation strongly recommended",
+    "Compulsive urge to sprint reported in approximately 12% of long-term users"
+  ],
+  "cultural_context": "In the Meridian 88 underground sprint leagues, Velociters are considered the honest working-class performance leg — not the flashy boutique option, but the one that actually wins races. Kessler sponsors several non-sanctioned track events in the Shelf and Mid-Tier districts, creating a grassroots brand loyalty that corporate advertising could never manufacture.",
+  "known_users": [
+    "Competitive amateur and semi-pro runners",
+    "Package couriers operating in high-density pedestrian zones",
+    "Tier 2-3 athletes priced out of boutique options",
+    "Underground sprint circuit regulars",
+    "Physical rehabilitation patients with active lifestyle goals"
+  ],
+  "story_hooks": [
+    "A Kessler-sponsored underground sprint event is being used as cover for a data courier drop — the players need to either race their way into the winner's circle or intercept the handoff mid-race.",
+    "A Velociter user is clocking impossible times — someone has reflashed their gait AI with military-grade predictive movement software that was never meant for civilian legs.",
+    "Kessler's quarterly firmware update pushed a hidden throttle limiter after a regulatory dispute — and the street is furious enough to pay for someone to crack it."
+  ],
+  "street_price": "Φ18,500",
+  "licensed_price": "Φ34,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "leg",
+    "runner",
+    "speed",
+    "carbon-composite",
+    "athletic",
+    "kessler-kinetics",
+    "energy-return",
+    "sports"
+  ],
+  "parent_corponation": ""
+}

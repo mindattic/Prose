@@ -1,0 +1,34 @@
+{
+  "name": "Ringo Production Assistant Field Set",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_office_wear",
+  "manufacturer": "Ringo Entertainment Group",
+  "description": "Ringo's production assistants are the operational tissue of the media corponation's field productions, live events, and broadcast installations — the people who make everything work while remaining invisible on camera. Their uniform set consists of a structured cargo vest, slim-cut utility trousers, and a long-sleeve base layer, all in Ringo's signature deep violet with silver piping. The vest carries fourteen external pockets sized for specific production tools: comms units, cable spools, lens wipes, talent earpieces, power cells, and two dedicated pockets for the BCI override dongles that allow PAs to drop into any crewmember's feed in an emergency. The Ringo eye-logo is embroidered in silver on the vest's right shoulder.\n\nThe set is designed for eighteen-hour days in variable environments — outdoor broadcasts in lake-effect weather, cramped backstage corridors, Tier 3 event venues, and occasionally the Shelf locations that Ringo's more adventurous documentary divisions favor. The base layer is moisture-wicking and odor-suppressing, which is less a luxury than a practical necessity. Geneware compatibility is built in: the vest accommodates wing-bud clearance at the back, and the trouser waistband has a pre-cut tail accommodation sealed with a snap closure. PAs who survive their first year with Ringo often have their vest pockets reorganized to reflect their specific role — a form of personalization that supervisors quietly encourage as it improves efficiency.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ195",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "In Meridian 88's entertainment and media culture, Ringo violet is a recognizable signal. PAs in Ringo sets occupy a specific social position — entry-level corporate, overworked, but connected to the media infrastructure that shapes how the city sees itself. Many Tier 3 residents who grew up watching Ringo content have complex feelings about meeting the people who actually produce it.",
+  "story_hooks": [
+    "A Ringo PA witnessed something during a Shelf documentary shoot that wasn't supposed to be captured — and their vest's BCI override dongle recorded it.",
+    "A character needs to infiltrate a Ringo production event and sourcing a legitimate PA uniform is the cleanest approach.",
+    "A former PA is selling custom-reorganized vests on the gray market — each one configured for a specific type of covert operation."
+  ],
+  "tags": [
+    "ringo",
+    "media",
+    "entertainment",
+    "production",
+    "field-work",
+    "geneware-compatible",
+    "augment-compatible",
+    "uniform",
+    "tier3",
+    "tier4"
+  ],
+  "id": "fdf0f5b408134434a3a05201273fbe9f",
+  "parent_corponation": "Ringo Corponation"
+}

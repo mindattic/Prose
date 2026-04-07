@@ -1,0 +1,34 @@
+{
+  "id": "44b34d5ebe16a80d0871bc22f821fdc7",
+  "name": "Crowd Whisperer",
+  "type": "archetype",
+  "category": "social",
+  "description": "Senses and shifts the mood of groups through subtle emotional manipulation",
+  "behavioral_signature": "Rooms calm down or heat up based on their deliberate influence",
+  "under_stress": "Loses control of the crowd energy and panics",
+  "at_rest": "Reading the emotional temperature of every group they're near",
+  "will_always": [
+    "feel the collective mood before individuals do"
+  ],
+  "will_never": [
+    "ignore group dynamics"
+  ],
+  "unless": [
+    "their own emotions overwhelm their sensitivity"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Crowd Reader",
+      "threshold": 0.85,
+      "context": "group awareness"
+    }
+  ],
+  "opposite_of": [
+    "Loner"
+  ],
+  "tags": [
+    "crowds",
+    "emotion",
+    "influence"
+  ]
+}

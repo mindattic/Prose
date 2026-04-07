@@ -1,0 +1,47 @@
+{
+  "id": "b40f3d7e1a925c68d2e1b7f094a3c52e",
+  "name": "Solenne Neuralcrest Port Fascinator III",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A sculptural Spire fascinator built around a hand-formed bioluminescent resin base in deep verdigris, mounted to a carved bone-analogue comb. The centerpiece is a precision-machined open lattice of white-gold-plated brass that frames and ornaments exposed neural-port hardware rather than concealing it — ports glow amber through the lattice at night. Trailing filaments of bioprogrammed silk catch light and pulse faintly in sync with the wearer's BCI activity. Each piece is unique.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "hand-formed bioluminescent resin",
+    "carved bone-analogue comb",
+    "white-gold-plated brass lattice",
+    "bioprogrammed silk filaments",
+    "neural-sync reactive thread"
+  ],
+  "functionality": "Purely ornamental with one exception: the lattice is machined to accommodate and display standard Axiom, Pragma, and TESSERA neural-port hardware without snagging. The bioprogrammed silk pulses in response to BCI signal output, making augmentation visible as aesthetic performance.",
+  "what_it_says": "Your chrome is not a concession to utility — it is the centerpiece, and you paid someone extraordinary to say so.",
+  "worn_by": [
+    "Spire C-suite executives",
+    "corponation board members",
+    "augmented power brokers",
+    "Tier 5 cultural figures",
+    "old-money geneware patrons"
+  ],
+  "manufacturer": "Solenne (Spire atelier, bespoke commission only)",
+  "price_range": "Φ12,000–Φ40,000 (commission; no fixed price)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Two Spire attendees arrived at the same governance gala wearing Solenne III fascinators whose silk filaments pulsed in perfect synchrony — suggesting either their BCIs were communicating, or both had been hacked from the same source.",
+    "A Solenne atelier apprentice is secretly selling 3D scans of bespoke commissions to a Tier 2 fabricator who is reproducing them in cheap resin — the copies are spreading down the tiers faster than Solenne can issue cease orders.",
+    "The bone-analogue comb material in the last six pieces tested positive for actual human bone matrix — Solenne has not responded to inquiries."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "fascinator",
+    "neural-port",
+    "aug-compatible",
+    "tier-5",
+    "spire",
+    "bioluminescent",
+    "bespoke",
+    "luxury",
+    "BCI"
+  ],
+  "parent_corponation": ""
+}

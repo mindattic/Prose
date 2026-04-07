@@ -9,7 +9,7 @@
   ],
   "category": "exotic",
   "description": "The LRI-5 operates by firing a near-invisible pressurized micro-needle capable of penetrating standard dermal armor at ranges up to twelve meters. Upon subcutaneous delivery, the payload — a proprietary synthetic lymphotropic compound — binds to the target's lymphatic vessels and triggers a rapid cascading inflammatory response. The victim's own immune system becomes the instrument of incapacitation, producing systemic edema, joint failure, and acute respiratory distress within ninety seconds of exposure.\n\nWhat distinguishes the Floodgate from conventional chemical delivery systems is its integration of piezoelectric disruption circuitry within the needle itself. As the micro-needle penetrates tissue, a brief localized vibration pulse fragments the tip into a mesh of sub-millimeter barbs, anchoring the delivery mechanism and ensuring full compound release even if the target attempts to remove it. This makes post-incident medical intervention significantly more complex and time-consuming.\n\nThe weapon's external profile is nearly indistinguishable from a high-end medical auto-injector — a deliberate design choice by Lazarus Pharmaceuticals, whose pharmaceutical division ostensibly produced the chassis for 'field triage applications.' Its plausible deniability as medical equipment has made it a favorite of corporate intelligence operatives and high-society assassins who operate in environments where weapons screening is routine.",
-  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "manufacturer": "Solano Virology Institute",
   "tier_availability": "Black market",
   "legality": "Prohibited",
   "base_technologies": [
@@ -62,6 +62,8 @@
     "poison",
     "armor",
     "energy",
-    "circuit"
-  ]
+    "circuit",
+    "lethal"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
 }

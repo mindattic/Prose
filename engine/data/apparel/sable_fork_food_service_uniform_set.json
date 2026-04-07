@@ -1,0 +1,36 @@
+{
+  "name": "Sable & Fork Food Service Uniform Set",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "food_service_kitchen",
+  "manufacturer": "Sable & Fork Hospitality Apparel",
+  "description": "Sable & Fork is the dominant supplier of food service uniforms across Meridian 88's restaurant and catering industry, covering everything from Tier 2 canteens to Tier 4 corporate dining facilities. The standard set includes a double-breasted chef's coat, work trousers, and an apron, all constructed from a heat-resistant synthetic-cotton blend rated to sustained exposure at 280°C without degradation. The coat is white with black piping at the collar and cuff — a deliberate neutral that allows restaurants to add their own branding through embroidery or heat-transfer patches. The apron is a heavier canvas weave with a grease-resistant coating that repels most organic and synthetic cooking oils; it can be wiped clean during a shift and machine-washed at the end. The trouser design includes wide-leg construction to avoid heat trapping near open flame or induction surfaces.\n\nSable & Fork's geneware accommodation is notably thorough for food service wear, driven by the reality that kitchen workforces in M88 are highly diverse. The coat includes a rear yoke panel that opens for tail clearance, the collar sits low enough to avoid friction with common neck augments, and the hat options include a structured toque with horn-clearance inserts as well as a close-fit net cap designed for fur-bearing head configurations — both rated as equivalent hygienic coverage under Meridian 88's food safety code. The uniform set is priced at the lower end of Sable & Fork's range; higher-tier establishments typically order the structured Maison line, but the standard set is what keeps M88's food industry running.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ65",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The Sable & Fork white-and-black is the invisible uniform of M88 — worn by the people who feed the city, rarely seen by the people being fed. In Tier 1 and 2 communities, the uniform is associated with one of the few stable employment sectors available, and the condition of someone's Sable & Fork set is often a quiet indicator of how long they've held the job: new and stiff, or soft and stained with the specific colors of a particular kitchen.",
+  "story_hooks": [
+    "A kitchen worker at a Tier 4 corporate dining facility discovers their apron's grease-resistant coating is also filtering trace compounds from the food being prepared — someone is adding something to the menu that isn't on the ingredient list.",
+    "A Sable & Fork distribution center is found to be shipping uniform sets with embedded RFID tags that aren't in the product spec — someone is using the uniforms to track food service workers across the city.",
+    "A chef's coat recovered from a crime scene carries embroidery from a restaurant that was destroyed in a fire three years ago — but the coat's fabric shows no age consistent with that timeline."
+  ],
+  "tags": [
+    "food_service",
+    "kitchen",
+    "sable_and_fork",
+    "heat_resistant",
+    "geneware_compatible",
+    "aug_compatible",
+    "hospitality",
+    "tier2",
+    "tier3",
+    "chef",
+    "apron",
+    "grease_resistant"
+  ],
+  "id": "ff7279fb16774e31ba1e6b88d8a58c03",
+  "parent_corponation": ""
+}

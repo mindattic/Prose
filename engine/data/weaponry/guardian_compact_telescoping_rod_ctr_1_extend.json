@@ -1,0 +1,46 @@
+{
+  "id": "7b19d3a5c0e8f24610b7d2a4c9e1f380",
+  "name": "Guardian Compact Telescoping Rod CTR-1 'Extend'",
+  "type": "weapon",
+  "aliases": [
+    "the extender",
+    "pocket stick",
+    "snap-out"
+  ],
+  "category": "melee",
+  "description": "The Guardian CTR-1 is a telescoping shock rod designed explicitly around the problem of concealability. Collapsed, it measures just 22 centimeters — short enough to sit in a jacket pocket, a large purse, or a vehicle door compartment without obvious profile. A sharp outward flick of the wrist deploys the three-section aluminum-alloy shaft to its full 52-centimeter operational length, locking each section with an audible click. The contact electrode at the tip activates automatically on full extension if the safety thumb switch is pre-engaged, a design choice that has generated some controversy around accidental discharge during deployment.\n\nGuardian positions the CTR-1 firmly in the consumer self-defense market, advertising it with imagery of night-shift workers, rideshare drivers, and healthcare staff navigating Tier 2 transit corridors after dark. It delivers 40,000 volts at a fixed output, slightly lower than dedicated security batons, but sufficient to startle and deter most threats. The internal battery is non-removable and charges via USB-Ω, the universal charging standard of 2180, giving it the same charging convenience as a personal device. Battery life is rated at approximately 25 discharges.\n\nThe CTR-1's deployment mechanism has been involved in several documented personal injury cases — primarily users accidentally shocking themselves or bystanders during the extension motion. Guardian has issued two firmware updates to the safety interlock system and settled the resulting litigation quietly. The product remains on shelves and continues to sell extremely well.",
+  "manufacturer": "GUARDIAN",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — classified as personal safety device under Meridian Municipal Code 44.7; no permit required for carry in Tiers 1-3",
+  "base_technologies": [
+    "telescoping shaft mechanism",
+    "auto-activation safety interlock",
+    "USB-Ω charging",
+    "capacitive discharge"
+  ],
+  "specifications": "Length (collapsed): 220mm\nLength (extended): 520mm\nWeight: 310g\nDischarge Voltage: 40,000V\nAmperage: 0.002A (fixed)\nCharge Capacity: ~25 full discharges\nCharge Time: 90 minutes (USB-Ω)\nDeployment: Three-section spring-assisted telescoping\nSafety: Thumb-switch interlock with auto-activate on full extension\nPrice: Φ95",
+  "tactical_use": "The CTR-1 is intended for defensive use by civilians in close-quarters situations — pressed against an attacker or used with a short striking motion. Its compact carry profile is its primary advantage, allowing it to be on the person in situations where a full-length baton would be impractical or socially conspicuous. Users are advised to keep the safety disengaged only when actively anticipating threat, given the auto-activation quirk on deployment. The telescoping motion itself — fast, loud, and visually distinctive — is often noted by self-defense instructors as a useful psychological deterrent even before contact.",
+  "cultural_context": "The CTR-1 is sometimes called the 'snap-out' for the sound of its deployment, or simply 'the extender.' It occupies a slightly nervous social space — widely seen as a legitimate self-defense tool for people who cannot afford better or who work in environments where heavier weapons would be inappropriate, but also associated with a kind of anxious middle-tier urban paranoia. In certain Tier 2 circles, carrying one is seen as practical; in Tier 3 social settings, it might be considered a faux pas, the kind of thing you keep in your bag but don't mention at dinner.",
+  "known_users": [
+    "night-shift healthcare workers",
+    "rideshare and delivery drivers",
+    "Tier 2 civilian commuters",
+    "small retail staff in high-foot-traffic zones"
+  ],
+  "story_hooks": [
+    "A CTR-1 recovered at a crime scene shows signs of modification — the auto-activate interlock has been bypassed and the discharge circuit rewired to fire repeatedly on a timer. Someone built a trap weapon, and the victim it was used on isn't talking."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "baton",
+    "electric",
+    "telescoping",
+    "concealable",
+    "consumer",
+    "civilian"
+  ],
+  "parent_corponation": ""
+}

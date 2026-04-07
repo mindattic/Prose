@@ -1,0 +1,34 @@
+{
+  "id": "de2cd3f5ff68320594357c7b8fc9af4d",
+  "name": "Coward",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Runs from every fight, prioritizing survival over honor or loyalty",
+  "behavioral_signature": "Gone before the first punch lands",
+  "under_stress": "Freezes instead of fleeing when escape routes are cut off",
+  "at_rest": "Identifying the nearest exit in every room",
+  "will_always": [
+    "choose survival over glory"
+  ],
+  "will_never": [
+    "stand and fight when running is an option"
+  ],
+  "unless": [
+    "someone they love can't run and there's no one else"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Canary",
+      "threshold": 0.7,
+      "context": "flight response"
+    }
+  ],
+  "opposite_of": [
+    "Berserker"
+  ],
+  "tags": [
+    "flight",
+    "survival",
+    "fear"
+  ]
+}

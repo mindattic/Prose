@@ -1,0 +1,43 @@
+{
+  "id": "a3f7c2e1b09d4856f1e2a3c7d0b5e891",
+  "name": "Ashpile HandStitch Thermal Wrap Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A thick, irregular underlayer stitched together from salvaged fleece offcuts, industrial insulation batting, and torn synthetic jersey. Seams are visible and mismatched — some double-stitched with wire thread, others sealed with heat-bond tape. Colors range from ash-gray to oil-stained beige, with dark patches where material sources changed mid-construction. No two are identical.\n\nCommon across Shelf settlements near the lake corridor where acid-rain wind cuts through rusted wall gaps at night. Worn under scavenged coats, the bulk shows at the collar and wrists — a clear marker of Shelf survival.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged fleece offcuts",
+    "industrial insulation batting",
+    "recycled synthetic jersey",
+    "heat-bond tape strips",
+    "wire-reinforced thread"
+  ],
+  "functionality": "Provides basic passive insulation against cold and acid-damp. No active systems. Layered construction traps body heat in uneven pockets. Rough inner surface chafes on bare skin — most wearers add a thin cotton slip beneath.",
+  "what_it_says": "You made this yourself, or someone who cares about you did — survival sewn by hand.",
+  "worn_by": [
+    "Shelf residents",
+    "scavengers",
+    "unhoused workers",
+    "children in Shelf family units"
+  ],
+  "manufacturer": "Self-made / informal Shelf crafters",
+  "price_range": "Φ2–Φ8 (materials cost only)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A specific stitch pattern identifies this layer as made by a known Shelf seamstress — her work turns up on bodies sometimes, and someone is counting.",
+    "Embedded inside the batting: a folded paper with a partial map of a Circuit-level maintenance tunnel entry point.",
+    "The heat-bond tape along the left side is partially peeled — underneath is a different fabric entirely, one that doesn't match anything sold in M88."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "thermal",
+    "shelf",
+    "hand-made",
+    "insulation",
+    "survival",
+    "tier-1"
+  ],
+  "parent_corponation": ""
+}

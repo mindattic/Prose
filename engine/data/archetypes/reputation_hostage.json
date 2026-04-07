@@ -1,0 +1,33 @@
+{
+  "id": "bde56109fc78bebe202bcee81ca2dd9c",
+  "name": "Reputation Hostage",
+  "type": "archetype",
+  "category": "identity",
+  "description": "Trapped inside a reputation they can't escape",
+  "behavioral_signature": "Fights against or reluctantly fulfills what everyone expects them to be",
+  "under_stress": "Becomes the reputation because resisting takes too much energy",
+  "at_rest": "Small, quiet acts of defiance against their public image",
+  "will_always": [
+    "feel the weight of expectations"
+  ],
+  "will_never": [
+    "be seen for who they actually are"
+  ],
+  "unless": [
+    "someone looks past the reputation and sees the person"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Performer",
+      "threshold": 0.7,
+      "context": "trapped by image"
+    }
+  ],
+  "opposite_of": [
+    "Anonymous"
+  ],
+  "tags": [
+    "trapped",
+    "misunderstood"
+  ]
+}

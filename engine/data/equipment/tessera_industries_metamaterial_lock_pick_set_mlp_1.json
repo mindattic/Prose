@@ -12,7 +12,7 @@
   ],
   "category": "tools",
   "description": "A set of lockpicking tools fabricated from programmable matter that can dynamically reconfigure their shape to match any lock profile. The MLP-1 contains three programmable matter tools that can transform from standard tension wrenches and picks to specialized decoder tools, tubular lock picks, wafer picks, and any other configuration needed for a specific lock type. The tools are controlled through a neural interface that scans the lock's keyway and automatically shapes the tool to match. Where a conventional lockpick set requires 15+ individual tools and extensive practice, the MLP-1 provides a universal solution that adapts itself to the challenge.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Vasquez Biocompatible Materials",
   "tier_availability": "Tier 4+",
   "legality": "Prohibited — universal lock bypass device",
   "base_technologies": [],
@@ -43,5 +43,6 @@
     "elf",
     "control",
     "tier 4"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

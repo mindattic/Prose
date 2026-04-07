@@ -1,0 +1,44 @@
+{
+  "id": "2e9a4c6f1d7b30e8a5c2f9d4b6e1a7c3",
+  "name": "Shelf Patchwork Tank (Scavenged)",
+  "type": "apparel",
+  "category": "top",
+  "description": "Not a manufactured item — this is something built from nothing. A tank top assembled from three or four mismatched fabric sources: a section of old corporate uniform fabric (the logo partially burned or bleached out), a strip of fluorescent mesh from a construction vest, and a back panel that might be repurposed synth-bag material. Whoever made it knew what they were doing — the seams hold, the armholes are clean, and someone has added a hand-stitched border along the collar in a tight cross-stitch pattern using bright orange thread. Every one of these is unique.\n\nOn the Shelf, you wear what you can get. But there's craft here — real craft. Some of these tanks end up in Tier 3 boutiques with a four-hundred-quanta markup and a story about 'authentic street construction.' The people who made them don't see a coin of that.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "scavenged synth-cotton",
+    "repurposed mesh fabric",
+    "industrial poly-bag material",
+    "salvage thread"
+  ],
+  "functionality": "",
+  "what_it_says": "You make do. You also make something out of making do — there's pride in this, even if the world doesn't see it that way.",
+  "worn_by": [
+    "Shelf residents",
+    "street artists",
+    "underground market vendors",
+    "young people with nothing and style anyway"
+  ],
+  "manufacturer": "Unknown — individual maker",
+  "price_range": "Φ6",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The burned-out logo on the front is from a corponation that was supposedly dissolved fifteen years ago — but someone is still making uniforms with that mark.",
+    "A Tier 4 fashion house has started producing 'authentic Shelf-inspired' reproductions of this style, and the backlash from Tier 1 communities is building toward something uglier than protest.",
+    "A character recognizes the cross-stitch pattern as a specific maker's signature — and that maker disappeared six months ago."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tank",
+    "tier 1",
+    "shelf",
+    "scavenged",
+    "patchwork",
+    "handmade",
+    "street",
+    "no-brand"
+  ],
+  "parent_corponation": ""
+}

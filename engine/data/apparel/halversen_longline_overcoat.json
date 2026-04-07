@@ -1,0 +1,44 @@
+{
+  "id": "2c8f5a1e7b3d9046c2f8a5e1b7d30469",
+  "name": "Halversen Longline Overcoat",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "Halversen is a Tier 4 tailoring house operating out of the Meridian 88 upper commercial district, known for structured suiting and outerwear that signals corporate authority without ostentation. The Longline Overcoat is their flagship outerwear piece — a knee-length coat in heavyweight boiled wool or cashmere-wool blend, single-breasted with a notched lapel, slash pockets, and a back vent that allows for comfortable stride. The lining is a silk-weave in a subtle houndstooth. Offered in charcoal, camel, and an almost-black midnight navy.\n\nThis is the coat of senior analysts, department heads, and corponation liaisons who walk into rooms and need to be read immediately as someone of consequence. It is not showy. It does not need to be. The cut is authoritative, the fabric drapes with the weight of expensive things, and it holds a press through an entire workday. No tech features — Halversen's position is that tech is for people who cannot afford to simply look correct.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "boiled wool or cashmere-wool blend shell",
+    "silk-weave lining",
+    "bone buttons",
+    "internal structured chest canvas"
+  ],
+  "functionality": "",
+  "what_it_says": "You are someone who makes decisions that affect other people's lives and you dress accordingly. The coat is not a costume — it is the correct uniform for what you actually are.",
+  "worn_by": [
+    "senior corp analysts",
+    "department heads",
+    "corponation liaisons",
+    "Tier 4 professionals",
+    "lawyers"
+  ],
+  "manufacturer": "Halversen",
+  "price_range": "Φ480",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Halversen overcoat is found folded neatly over a chair in an abandoned Tier 4 office — no sign of the owner, no indication of why they left it behind",
+    "A Tier 2 character acquires a Halversen second-hand and finds that doors open differently when they wear it into certain buildings",
+    "Halversen keeps records of every coat they have made; a character needs to trace who owned a specific coat without alerting the tailoring house"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "outerwear",
+    "tier 4",
+    "overcoat",
+    "wool",
+    "corporate",
+    "tailored",
+    "non-tech"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b09d4568fa12c3e7b5d09a41",
+  "name": "Patchline Scavenger's Utility Belt",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Wide canvas belt salvaged from industrial webbing, triple-stitched with reclaimed copper wire at stress points. Mottled grey-brown with acid-bleach streaks, fitted with mismatched D-rings, three canvas pouches of varying sizes, and a bent carabiner. Every loop and pocket shows hard use — frayed edges heat-sealed to stop further unraveling.\n\nClosure is a heavy-gauge hook salvaged from dock rigging, not a buckle. Sits low on the hips. Often worn over multiple layers, cinching a coat shut when zippers have failed.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed industrial webbing canvas",
+    "salvaged copper wire",
+    "heat-sealed fraying edges",
+    "mismatched steel D-rings",
+    "dock-rigging hook closure"
+  ],
+  "functionality": "Multiple pouches and loops carry tools, scavenged components, ration packs, and small trade goods. The heavy hook closure can double as an improvised pry tool. Belt width provides mild lumbar support during heavy carry loads.",
+  "what_it_says": "Everything this person owns is functional, nothing is wasted, and they built this themselves.",
+  "worn_by": [
+    "Shelf scavengers",
+    "tunnel runners",
+    "informal freight haulers",
+    "people who can't afford manufactured gear"
+  ],
+  "manufacturer": "Self-made / barter market",
+  "price_range": "Φ2–Φ8 (used) or materials cost only",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "One of the pouches has a false bottom concealing a folded paper map — analog, untraceable, covering tunnels that don't appear on any city grid.",
+    "The hook closure is stamped with a dock authority serial number from a facility that officially burned down six years ago.",
+    "A character recognizes the canvas weave pattern as coming from a specific collapsed infrastructure district — someone who lived there would know it immediately."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "belt",
+    "utility",
+    "tier-1",
+    "shelf",
+    "self-made",
+    "aug-compatible",
+    "gene-compatible",
+    "scavenger",
+    "survival"
+  ],
+  "parent_corponation": ""
+}

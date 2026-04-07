@@ -1,0 +1,42 @@
+{
+  "id": "03c9e5d2f7a1b64803c9e5d2f7a1b648",
+  "name": "Stratum Corporate Services Polo",
+  "type": "apparel",
+  "category": "top",
+  "description": "Stratum issues this polo to client-facing staff across its service subsidiaries — lobby attendants, corporate hospitality coordinators, guest relations personnel, and lower-tier administrative support who interact with the public. The fabric is a tight-knit polycotton in Stratum's proprietary charcoal-and-white color palette, with the Stratum logotype embroidered in white thread at the left chest. The collar is a standard two-button polo cut, stiff enough to stay presentable through an eight-hour shift, and the fit is designed to look neat across a range of body types without tailoring.\n\nOff the clock, Stratum employees are technically prohibited from wearing issued uniforms in public — a policy nobody enforces and nobody follows. In Tier 2 neighborhoods near Stratum transit hubs and logistics centers, these polos are everywhere. Some people buy the knockoff version from street vendors who've copied the colorway without the embroidery. The shirt itself is perfectly comfortable. It's just that wearing it always reads as 'I work for someone.'",
+  "tier_association": "Tier 4",
+  "materials": [
+    "polycotton blend",
+    "embroidered corporate logotype",
+    "moisture-wicking inner panel at back yoke"
+  ],
+  "functionality": "",
+  "what_it_says": "You're in the system. You represent something larger than yourself, and you've made a kind of peace with that.",
+  "worn_by": [
+    "Stratum corporate staff",
+    "hospitality workers",
+    "client relations personnel",
+    "administrative support",
+    "people who haven't changed after their shift"
+  ],
+  "manufacturer": "Stratum Corponation (internal uniform division)",
+  "price_range": "Φ0 (issued) / Φ22 (knockoff market)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Stratum polo in perfect condition found on the Shelf — no ID tag, no employee number, no explanation for how it got there.",
+    "Someone wearing a knockoff Stratum polo is waved through a corporate checkpoint by a guard who doesn't look closely enough at the embroidery.",
+    "A Stratum employee discovers their issued polo has a serial number stitched into the hem — and that number is associated with a different employee who was terminated six months ago."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 4",
+    "corporate uniform",
+    "polo",
+    "Stratum",
+    "professional",
+    "issued"
+  ],
+  "parent_corponation": ""
+}

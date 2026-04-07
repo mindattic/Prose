@@ -1,0 +1,38 @@
+{
+  "id": "7b2c9d4e1a3f68025c4b7d9e2a1f8304",
+  "name": "Nexrun Phase 3 Trainer",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A mid-range running trainer with a segmented foam outsole and a snug knit upper that accommodates moderate foot swelling during long runs. Comes in four colorways — all of them slightly too bright. Popular with morning joggers along the elevated greenways.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "engineered knit upper",
+    "segmented EVA foam",
+    "carbon-rubber heel cap"
+  ],
+  "functionality": "Adaptive lacing tightens automatically when motion sensors detect running gait. Loosens when stationary for 30 seconds.",
+  "what_it_says": "You take care of yourself. You probably have a jogging route you're proud of.",
+  "worn_by": [
+    "recreational runners",
+    "fitness-conscious Tier 3 residents",
+    "off-duty medics"
+  ],
+  "manufacturer": "Nexrun Athletic",
+  "price_range": "Φ58 - Φ68",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The adaptive lacing has a firmware glitch — it occasionally tightens mid-sprint for no reason.",
+    "Someone left a pair on a park bench with a handwritten note tucked inside the tongue."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "running shoe",
+    "trainer",
+    "self-lacing",
+    "athletic"
+  ],
+  "parent_corponation": ""
+}

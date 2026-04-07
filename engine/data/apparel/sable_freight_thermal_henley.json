@@ -1,0 +1,42 @@
+{
+  "id": "3c4d5e6f7081920212223242526272829",
+  "name": "Sable Freight Thermal Henley",
+  "type": "apparel",
+  "category": "top",
+  "description": "A long-sleeve thermal henley from Sable Freight, a workwear brand that started supplying cold-chain logistics workers and has since expanded into general industrial apparel. The fabric is a waffle-knit thermal cotton-poly in off-white, heather grey, or dark brown, with a three-button placket at the neck and flat-locked seams throughout to reduce pressure points under heavier outerwear. The cuffs are slightly extended to stay tucked into gloves.\n\nThis is a base layer that gets worn as an outer layer because it looks like one. The cut is relaxed enough to be comfortable over a full shift and fitted enough not to bunch under a jacket. Sable Freight henleys show up in fabrication plants, on delivery crews, and in the kitchens of Tier 2 restaurants. They also show up on Tier 3 people who want something that looks like it works for a living.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "waffle-knit cotton-poly thermal blend",
+    "flat-locked seam construction",
+    "reinforced button placket"
+  ],
+  "functionality": "",
+  "what_it_says": "You're practical, you run cold, and you've probably had this shirt for at least two years.",
+  "worn_by": [
+    "cold-chain logistics workers",
+    "kitchen staff",
+    "fabrication workers",
+    "Tier 2 tradespeople",
+    "Tier 3 people who like the aesthetic"
+  ],
+  "manufacturer": "Sable Freight Apparel",
+  "price_range": "Φ34",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Sable Freight's main client is a cold-storage corponation that uses the brand's uniform program to track worker movement — the henleys have no tech, but the belt clips distributed alongside them do.",
+    "A Tier 3 designer has been photographed repeatedly in a Sable Freight henley, and now the brand is getting orders it doesn't know how to handle from a demographic it never targeted.",
+    "A character wearing a Sable Freight henley is mistaken for a maintenance worker in a restricted facility — and decides to play along."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 2",
+    "henley",
+    "thermal",
+    "workwear",
+    "Sable Freight",
+    "layering"
+  ],
+  "parent_corponation": ""
+}

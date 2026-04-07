@@ -1,0 +1,49 @@
+{
+  "id": "e8377fe2f1b3c512e7611d23759b9e8c",
+  "name": "Arcturus UW-8 'Barracuda'",
+  "type": "weapon",
+  "aliases": [
+    "Barracuda",
+    "Torpedo Pistol",
+    "Wet Work"
+  ],
+  "category": "underwater weapon",
+  "description": "A supercavitating pistol that fires solid steel darts encased in a gas-generating sabot, creating a bubble envelope around the projectile that reduces water resistance and extends effective range to 30 meters underwater — double the range of conventional underwater weapons. The Barracuda's darts arrive with enough kinetic energy to penetrate diving equipment, underwater vehicle hulls, and the reinforced suits worn by infrastructure workers operating in contaminated water.\n\nArcturus developed the UW-8 for naval special operations, but the weapon has found extensive use in Meridian 88's underwater economy. The city's submerged spaces host smuggling operations, illegal salvage, and clandestine transit networks that conventional law enforcement cannot effectively police. The Barracuda gives underwater operators a decisive range advantage in engagements where 15 additional meters of reach means the difference between firing first and dying first.\n\nThe weapon's gas-generating sabot is its most innovative and most dangerous component. The chemical reaction that produces the supercavitation bubble generates hydrogen gas as a byproduct, which means that firing the Barracuda in enclosed submerged spaces builds up an explosive atmosphere. An operator who fires too many rounds in a sealed flooded chamber risks creating a hydrogen pocket that a single spark will detonate. Field operators have learned to count their shots and ventilate between engagements.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Military — restricted to authorized maritime operations",
+  "street_price": "Φ7,500",
+  "base_technologies": [
+    "Supercavitating projectile design",
+    "Gas-generating sabot",
+    "Corrosion-proof firing mechanism"
+  ],
+  "specifications": "projectile: 6mm supercavitating steel dart\ncapacity: 8 darts\neffective range: 30 meters underwater\nmuzzle velocity: 250 m/s (supercavitating)\nweight: 1.1 kg\nlength: 230mm\nwarning: Hydrogen gas buildup in enclosed spaces after 4+ rounds",
+  "tactical_use": "Extended-range underwater combat. The Barracuda provides range superiority in submerged engagements, allowing the operator to engage targets before they can close to conventional underwater weapon range. Critical safety consideration: hydrogen gas accumulation in enclosed submerged spaces limits sustained fire.",
+  "cultural_context": "The Barracuda has made underwater spaces in Meridian 88 measurably more dangerous. Before its introduction, underwater combat was limited to speargun range — effectively grappling distance. The 30-meter range of supercavitating darts has turned flooded tunnels into shooting galleries where ambush positions that were previously safe are now kill zones.",
+  "known_users": [
+    "Arcturus maritime security forces",
+    "Naval special operations units",
+    "Elite smuggling interdiction teams",
+    "High-end freelance divers"
+  ],
+  "story_hooks": [
+    "A Barracuda was fired in a sealed flooded chamber, and the hydrogen buildup from repeated shots detonated, collapsing a section of submerged infrastructure. The explosion revealed a hidden chamber behind the collapsed wall containing something that predates Meridian 88 by centuries.",
+    "Someone is using Barracudas to systematically kill the divers who patrol Meridian 88's water intake systems. The city's water supply is being left unguarded, and whoever is doing it wants access to the intake tunnels for a reason that can't be good."
+  ],
+  "ammunition_type": [
+    "supercavitating_dart"
+  ],
+  "tags": [
+    "underwater",
+    "weapon",
+    "pistol",
+    "supercavitating",
+    "maritime",
+    "arcturus",
+    "military",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

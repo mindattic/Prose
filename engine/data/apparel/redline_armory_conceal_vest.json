@@ -1,0 +1,43 @@
+{
+  "id": "8e2c6a0f4b1d7395e2c6a0f4b1d73950",
+  "name": "Redline Armory Conceal Vest",
+  "type": "apparel",
+  "category": "top",
+  "description": "A close-fitting vest in matte dark olive, cut to look like a casual utility vest from the outside — four visible exterior pockets with zip closures, a mock-suede panel at the shoulders, a full zip front. Inside is a different story: four internal holster positions (two shoulder, two hip-flank), each with adjustable retention straps and magnetic quick-release. The inner lining is a ballistic-resistant soft panel rated for standard kinetic rounds — not full armor, but enough to make a difference at range. The exterior fabric is a tightly woven synthetic that doesn't print.\n\nRedline Armory is a licensed civilian arms and accessories manufacturer operating in the grey zone between Tier 3 and 4 markets. The Conceal Vest is their civilian carry flagship — legal in most corponation jurisdictions with proper registration, and popular with private security contractors, off-duty enforcement personnel, and Tier 3 residents in neighborhoods where the threat assessment justifies it. It's also, quietly, popular with people who are not licensed and don't intend to be.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "synthetic woven exterior",
+    "ballistic-resistant soft panel lining",
+    "mock-suede shoulder panels",
+    "magnetic retention hardware"
+  ],
+  "functionality": "Internal ballistic soft armor rated for standard kinetic rounds at range. Four concealed holster positions with adjustable magnetic retention. Does not print through exterior fabric.",
+  "what_it_says": "You carry, or you want people to think you do, or you're worried enough about something specific that you spent the money.",
+  "worn_by": [
+    "licensed civilian carriers",
+    "private security contractors",
+    "off-duty enforcement",
+    "Tier 3 residents in high-threat neighborhoods",
+    "unlicensed carriers in lower tiers"
+  ],
+  "manufacturer": "Redline Armory",
+  "price_range": "Φ290",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A run of the 2198 production batch had a manufacturing defect in the ballistic panel — a void in the material that only covers a 4cm area over the left side. Redline hasn't issued a recall.",
+    "The vest's magnetic retention hardware can be remotely triggered by a specific EM frequency — a vulnerability that someone has weaponized.",
+    "A Tier 1 resident has somehow acquired a Redline Conceal Vest; the question is whether they bought it, stole it, or were given it — and by whom."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 3",
+    "vest",
+    "conceal carry",
+    "ballistic",
+    "security",
+    "armored"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,48 @@
+{
+  "id": "e3348af1f564f4fc5b438722fa44e835",
+  "name": "Kang-Petrov Arms KPS-9 'Rattler'",
+  "type": "weapon",
+  "aliases": [
+    "Rattler",
+    "KPS-9",
+    "Buzz Gun",
+    "Street Sweeper"
+  ],
+  "category": "smg",
+  "description": "The KPS-9 Rattler is the cheapest submachine gun on Meridian 88. At Φ400, it costs less than many handguns, and Kang-Petrov manufactures it with that price point as the primary design constraint. The weapon is a simple blowback-operated SMG chambered in 9mm brass-cased, with a stamped steel receiver, polymer grip, and a 32-round stick magazine. There is no BCI link, no electronic sight, no onboard computer. The sights are molded into the receiver.\n\nReliability is inconsistent. The Rattler functions adequately when clean and properly lubricated, but the loose tolerances that enable mass production also admit contamination. In dusty or wet conditions, malfunctions increase noticeably. The weapon's accuracy is sufficient for engagements inside 50 meters, but beyond that distance the combination of fixed sights and a short barrel makes consistent hits challenging.\n\nNone of this matters to the Rattler's customers. The KPS-9 exists because violence is not exclusively a privilege of the well-funded. For Φ400, a person in a Tier 1 zone gets a weapon that fires 30 rounds of commonly available ammunition. It is not a good weapon. It is an available weapon. In a world where availability often matters more than quality, the Rattler sells millions.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Widely available — minimal restrictions",
+  "base_technologies": [
+    "Stamped steel mass production",
+    "Simple blowback operation"
+  ],
+  "specifications": "caliber: 9mm brass-cased\neffective_range: 50m\nrate_of_fire: 600 rpm (cyclic)\nmagazine_capacity: 32 rounds\nweight: 2.1 kg",
+  "tactical_use": "The Rattler has no tactical sophistication. It is a volume-of-fire weapon used at close range where accuracy is determined by proximity rather than skill. In desperate defense scenarios, the KPS-9 provides suppressive capability that a handgun cannot match. Its sole tactical advantage is ubiquity — ammunition and spare parts are available everywhere, and the weapon's simplicity means anyone can learn to operate it in minutes.",
+  "cultural_context": "The Rattler is the weapon of the desperate, the impoverished, and the unprepared. Finding a KPS-9 in someone's possession tells you nothing about their affiliations — it tells you about their budget. The weapon appears in crime scenes, defensive actions, and everywhere that violence occurs among people who cannot afford better. Kang-Petrov has been criticized for manufacturing a weapon this cheap, but the alternative is a monopoly on violence by those who can afford premium arms.",
+  "known_users": [
+    "Tier 1 civilians",
+    "Street-level criminals",
+    "Emergency defense",
+    "Anyone with Φ400"
+  ],
+  "story_hooks": [
+    "A bulk shipment of 10,000 Rattlers was intercepted en route to a Tier 1 zone that is about to vote on corporate annexation. The timing suggests someone wants the vote to go a specific way.",
+    "A forensic analyst has traced identical manufacturing defects in Rattlers from three different crime scenes — the weapons came from the same production batch, suggesting coordinated distribution."
+  ],
+  "ammunition_type": [
+    "9mm brass-cased standard",
+    "9mm brass-cased hollow-point"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "cheap",
+    "mass_production",
+    "ubiquitous",
+    "Kang-Petrov",
+    "tier 1",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

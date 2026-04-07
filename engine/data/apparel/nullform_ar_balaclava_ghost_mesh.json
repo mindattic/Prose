@@ -1,0 +1,45 @@
+{
+  "id": "f4e3d2c1b0a9876543210fedcba98765",
+  "name": "Nullform AR Balaclava // Ghost Mesh",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "Full-coverage balaclava in matte black stretch-mesh with embedded micro-AR emitter threads running in a subtle grid pattern visible only under direct UV. The face panel is a semi-rigid breathable composite that doubles as a minimal AR display — projecting a faint HUD overlay for navigation pings, biometric readouts, or a user-programmed blank-face mask effect for crowd anonymity.\n\nDesigned for aug-compatible wear: the crown has a reinforced panel with two port-access flaps for standard BCI hardware, sealed with silent magnetic closures when not in use. Jaw and chin seams are reinforced against tearing during physical activity. No branding visible externally.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "stretch AR-thread mesh",
+    "semi-rigid breathable composite face panel",
+    "micro-AR emitter filament",
+    "magnetic port-access flap hardware"
+  ],
+  "functionality": "Minimal AR HUD via face-panel emitters: navigation, biometrics, or anonymity mask overlay. BCI port-access flaps at crown for standard hardware. Full face and neck coverage. Breathable at moderate exertion. Pairs with external BCI rigs via short-range wireless.",
+  "what_it_says": "You move through spaces without wanting to be recognized — and you have the tech to make that real.",
+  "worn_by": [
+    "corporate intelligence operatives",
+    "security contractors",
+    "night-side couriers",
+    "aug-heavy professionals who value anonymity"
+  ],
+  "manufacturer": "Nullform",
+  "price_range": "Φ210–Φ380",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Nullform's anonymity-mask overlay is supposed to be cosmetic — but a recent firmware update started broadcasting a faint identifier signal no one officially acknowledges.",
+    "Three people wearing Ghost Mesh balaclavas were caught on a Tier 4 tower's internal cameras the night of a data breach; Nullform has no record of those serial numbers.",
+    "A contact wants to meet but insists both parties wear Ghost Mesh — they say they'll explain why once the AR overlays confirm no facial recognition is running."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "balaclava",
+    "AR",
+    "aug-compatible",
+    "tactical",
+    "tier-3",
+    "tier-4",
+    "anonymity",
+    "BCI-compatible",
+    "street-brand"
+  ],
+  "parent_corponation": ""
+}

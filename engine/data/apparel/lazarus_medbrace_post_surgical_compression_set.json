@@ -1,0 +1,46 @@
+{
+  "id": "2e9f1d6a4c8b305f7a0e2d5c9b3f71a8",
+  "name": "Lazarus MedBrace Post-Surgical Compression Set",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Issued in pale clinical grey with soft amber sensor piping, this full-torso compression garment covers from mid-thigh to collarbone. Graduated compression panels target lymphatic drainage and surgical site stabilization. Each unit is thermally bonded to patient measurements at point of discharge — Lazarus Pharmacy's logo is heat-stamped above the left hip.\n\nThe fabric is smooth and slightly cool to the touch. Velcro-free magnetic closures run down the sternum and left side for post-op access. An amber light pulses slowly at the base of the sternum when wound-site sensors detect elevated inflammation.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "graduated-compression elastane-nylon blend",
+    "bio-conductive wound-sensor substrate",
+    "anti-microbial silver-thread lining",
+    "rigid-soft hybrid sternum panel",
+    "moisture-transport mesh underlay"
+  ],
+  "functionality": "Graduated compression for post-surgical lymphatic and circulatory support. Integrated wound-site sensors alert wearer and linked MedNet device to inflammation or infection flags. Magnetic closures allow medical access without full removal. Fits over most limb-chrome mounting hardware at shoulder or hip.",
+  "what_it_says": "You've been cut open recently, and you're still standing.",
+  "worn_by": [
+    "post-surgical patients — aug installation recovery, organ replacement, geneware procedures",
+    "Tier 2 workers who can't afford full recovery leave",
+    "trauma survivors",
+    "anyone a week out from something serious"
+  ],
+  "manufacturer": "Lazarus Pharmacy Group (corponation, medical division)",
+  "price_range": "Φ140–Φ260 (partially subsidized under Lazarus MedCredit plans)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A character still wearing their Lazarus compression set six months post-op — the sensors keep logging, and Lazarus's data division owns that health record.",
+    "Someone is wearing a Lazarus set that isn't theirs — the sensor ID routes to a patient listed as deceased.",
+    "The amber inflammation warning has been solid red for three days; the character can't afford a follow-up appointment and is hoping it resolves itself."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "medical",
+    "compression",
+    "post-surgical",
+    "biometric",
+    "aug-compatible",
+    "gene-compatible",
+    "tier-2",
+    "tier-3",
+    "lazarus"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

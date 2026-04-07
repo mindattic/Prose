@@ -1,0 +1,34 @@
+{
+  "id": "4449fc23e0b627b1ff87f08d18a5f015",
+  "name": "Bittersweet",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Experiences every emotion as a complex blend of joy and sorrow simultaneously",
+  "behavioral_signature": "Smiles with wet eyes, laughs at funerals, cries at weddings",
+  "under_stress": "Emotional complexity becomes confusion and they can't identify what they feel",
+  "at_rest": "Holding contradictory emotions with practiced grace",
+  "will_always": [
+    "feel multiple things at once"
+  ],
+  "will_never": [
+    "experience a simple, uncomplicated emotion"
+  ],
+  "unless": [
+    "something cuts through all complexity with pure singular force"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Melancholic",
+      "threshold": 0.7,
+      "context": "emotional complexity"
+    }
+  ],
+  "opposite_of": [
+    "Furious"
+  ],
+  "tags": [
+    "complexity",
+    "duality",
+    "nuance"
+  ]
+}

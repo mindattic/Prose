@@ -1,0 +1,31 @@
+{
+  "name": "Scar Tissue Radio",
+  "type": "entertainment",
+  "category": "podcast",
+  "subcategory": "pirate radio / shelf dispatches",
+  "creator": "Broadcast collective known only as 'The Keloid'",
+  "description": "Originating from a repurposed water reclamation substation in Shelf District 7, Scar Tissue Radio is an unfiltered audio feed broadcasting survival news, mutual aid coordinates, and raw testimonials from Tier 1 residents. Hosts rotate anonymously to avoid Axiom Security suppression, and the show is distributed via low-bandwidth audio compression through cracked BCI channels and salvaged speakers mounted in tunnel junctions. It is equal parts community bulletin board, grief archive, and defiant noise.",
+  "year": 2207,
+  "tier_association": "Tier 1-2",
+  "medium": "pirate audio broadcast / cracked BCI low-bandwidth feed",
+  "cultural_impact": "Scar Tissue Radio functions as the de facto emergency communication network for entire Shelf districts where corporate infrastructure has been deliberately degraded, making it a lifeline that no corponation has successfully killed despite repeated attempts.",
+  "controversy": "Axiom Security classifies it as a sedition platform after a 2209 episode broadcast the names and shift schedules of undercover Compliance officers embedded in Shelf markets. Three suspected operators were detained; the show returned within four days.",
+  "status": "underground",
+  "tags": [
+    "pirate radio",
+    "shelf",
+    "mutual aid",
+    "anonymity",
+    "survival",
+    "anti-corporate",
+    "community",
+    "BCI cracking"
+  ],
+  "story_hooks": [
+    "A player character receives a Scar Tissue Radio broadcast containing their own name — listed as a corporate informant — and has 48 hours to find out who submitted the tip before the Shelf acts on it.",
+    "The Keloid collective reaches out to an outsider to physically transport a hard drive of archived broadcasts to an off-site location after their substation is raided, but the drive contains more than audio.",
+    "A beloved anonymous host goes silent mid-episode; listeners organize a search that pulls them into the politics of who controls the Shelf's underground communication infrastructure."
+  ],
+  "id": "53eec031481e4e3998c70a32593efd6b",
+  "parent_corponation": ""
+}

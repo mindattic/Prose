@@ -1,0 +1,51 @@
+{
+  "id": "f96a4c0d27e1435b8d72f3c01b5e8a74",
+  "name": "GridPatch Infrastructure Maintenance Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The working uniform of M88's grid maintenance crews — the people who patch cracked conduit, reroute power lines after acid-rain shorts, and descend into junction crawlspaces that haven't been opened since the last generation of workers sealed them. It's a full-coverage kit designed for confined spaces, electrical hazard, and extended outdoor exposure. The outer shell is a hi-vis safety orange rain-resistant work jacket with a mesh lining, zippered chest pockets, and two forearm pockets designed to hold diagnostic tablets or cable tools. The back carries a large reflective M88 Infrastructure Services logo in silver-grey. Underneath is a charcoal flame-resistant work shirt, loose enough to move in, with a full-length arm channel on the left sleeve for accommodating chrome arm hardware — the channel secured with industrial velcro tabs that allow field-quick reconfiguration. Insulated navy work trousers with double-knee panels, an integrated tool belt loop system at the waist (six loops, three D-rings), and lower-leg cinch straps for tucking into boot tops. Boots are tall-shaft rubber-composite safety boots, knee-height, rated for standing water and mild chemical exposure — standard for street-level infrastructure work after rain events. A white hard hat with a brim-mounted LED strip sits on the head, the interior fitted with a foam impact liner. Safety glasses with side shields are pushed up onto the hard hat brim when not in use. A hi-vis vest goes over everything when working street-adjacent, doubling the reflective surface area.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "hi-vis polyester rain shell",
+    "flame-resistant cotton-synthetic work shirt",
+    "insulated nylon-canvas work trouser",
+    "rubber-composite tall safety boot",
+    "ABS hard hat shell",
+    "foam impact liner",
+    "industrial velcro",
+    "retro-reflective silver-grey tape"
+  ],
+  "functionality": "Electrical and flame hazard resistance, full rain shell protection, chrome arm accommodation channel with velcro tabs, tool loop and D-ring belt system, lower-leg cinch straps for boot-tucking in standing water, brim-mounted LED strip for low-light confined work, hi-vis vest overlay for street-adjacent visibility compliance, chemical-resistant boot shaft.",
+  "what_it_says": "City infrastructure. The people who keep the lights on and the conduit from flooding. The M88 Infrastructure Services logo means they're municipal-adjacent — not a corponation employee, but contracted through one, with just enough institutional backing to get into access hatches that most people never know exist. The worn boot shafts and the replacement foam in the hard hat mean this isn't new work.",
+  "worn_by": [
+    "M88 grid maintenance crews",
+    "infrastructure repair technicians",
+    "power conduit specialists",
+    "street-level junction workers",
+    "contracted city systems maintenance staff"
+  ],
+  "manufacturer": "M88 Infrastructure Services (jacket and hard hat issued; shirt and trousers from Ironpass Workwear contract; boots from Kessler Safety line)",
+  "price_range": "Φ220–Φ310 (partially city-contracted subsidy; workers cover boot and underlayer costs)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A maintenance worker's access log shows they descended into a junction crawlspace beneath Circuit Block 7 four times last month — but there are no work orders for that block, and the conduit there was certified intact two years ago.",
+    "The LED strip on a hard hat has been modified to pulse in a specific pattern when powered on — a subtle signal, invisible to anyone who doesn't know what they're looking for, used to mark safe passage for someone moving through the tunnels below.",
+    "A grid maintenance crew was sent to a power short in a sealed sub-level and never filed a completion report. Their jackets were found neatly folded outside the access hatch. The hatch was sealed from the inside."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "maintenance",
+    "infrastructure",
+    "hi_vis",
+    "flame_resistant",
+    "aug_compatible",
+    "city_contracted",
+    "confined_space",
+    "electrical_rated"
+  ],
+  "parent_corponation": ""
+}

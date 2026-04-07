@@ -1,0 +1,43 @@
+{
+  "id": "a3f7c2e1d9b04582fc6a1e3d7b2c9f80",
+  "name": "Ashwall Ironblood Territory Duster",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A knee-length duster in sun-bleached oxblood synth-canvas, hand-stenciled with the Ashwall Ironblood gang's territorial grid-map across the back in matte black and chrome-flake paint. Each panel carries layered patches: heat-stamped block numerals marking district claims, hand-sewn fabric swatches cut from defeated rivals, and reinforced shoulder yokes where chrome arm-rigs rest. Seams are triple-stitched in red monofilament. No two are identical — new patches added after each territorial dispute, making the coat a living record of violence and loyalty.\n\nThe interior lining is salvaged reflective emergency foil stitched into a crude quilt, offering marginal warmth against Shelf acid-rain while maintaining the silhouette.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "synth-canvas",
+    "salvage reflective foil",
+    "chrome-flake paint",
+    "red monofilament thread",
+    "reclaimed rival-gang fabric patches"
+  ],
+  "functionality": "Reinforced shoulder channels accommodate chrome arm prosthetics; interior foil lining provides acid-rain moisture resistance; deep inner pockets sized for contraband or medkits.",
+  "what_it_says": "This coat is a walking deed of ownership — wearing it without permission is a death sentence.",
+  "worn_by": [
+    "Ashwall Ironblood gang members",
+    "Shelf territorial enforcers",
+    "district captains"
+  ],
+  "manufacturer": "Ashwall Ironblood (self-made, gang-produced)",
+  "price_range": "Not for sale — earned or taken",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A runner finds one of these coats on a body in neutral territory — wearing it to cross the district might work, or might start a war.",
+    "A patch on the back lists coordinates that don't match any known Shelf grid — someone sewed a dead-drop location into the gang's own iconography.",
+    "A Tier 3 fashion curator offers a small fortune for one as 'authentic subcultural artifact,' not understanding what it costs to own it."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "gang",
+    "shelf",
+    "territory",
+    "tier-1",
+    "aug-compatible",
+    "diy",
+    "street"
+  ],
+  "parent_corponation": ""
+}

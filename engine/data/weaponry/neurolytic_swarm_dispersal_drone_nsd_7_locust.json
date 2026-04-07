@@ -10,7 +10,7 @@
   ],
   "category": "drone",
   "description": "The NSD-7 is a mid-tier autonomous dispersal platform roughly the size of a human fist, housing a compressed micro-swarm of 400–600 semi-independent sub-drones, each no larger than a fingernail. Upon release, the parent chassis identifies thermal signatures within a programmable radius and detonates its swarm canister, sending sub-units in ballistic arcs calibrated to maximize coverage across irregular terrain. Each sub-drone carries a micro-filament electrode array capable of delivering targeted neurolytic pulses to exposed skin or thin fabric.\n\nWhat distinguishes the NSD-7 from earlier swarm platforms is its use of distributed piezoelectric power harvesting — each sub-drone recharges its discharge capacitor from ambient vibration and pressure as it lands or crawls across a target's body, meaning a single deployment can sustain harassment for up to eighteen minutes without an external power source. The parent drone also maintains a low-frequency coordination signal that prevents sub-units from clustering inefficiently, spreading them in optimized interference patterns across multiple targets simultaneously.\n\nIn practice, the NSD-7 does not kill. It overwhelms. Targets experience cascading muscle convulsions, disorientation, and involuntary vocalization as sub-drones fire in coordinated sequences designed to prevent neurological adaptation. Crowd control units favor it for its deniability — sub-drones are difficult to collect as evidence and degrade in UV light within 36 hours.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Blackwood Commercial Group",
   "tier_availability": "Tier 3+",
   "legality": "Restricted",
   "base_technologies": [
@@ -50,6 +50,8 @@
     "rain",
     "energy",
     "fire",
-    "tier 3"
-  ]
+    "tier 3",
+    "less_lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

@@ -1,0 +1,41 @@
+{
+  "id": "a3f7c2e1b8d94f05e6a1c3b7d2f08e94",
+  "name": "Skinprint Markets (The Dermal Bazaar)",
+  "type": "entertainment",
+  "category": "phenomenon",
+  "subcategory": "ghost market",
+  "description": "Skinprint Markets are invitation-only ghost bazaars where vendors tattoo encrypted QR maps onto paying customers' forearms — the map dissolves within 72 hours, leading to a location that shifts every weekend. Originating in the Shelf district known as the Sump, these markets specialize in geneware modifications, unlicensed BCI firmware, and contraband aesthetics that corponation clinics refuse to carry. The most infamous recurring iteration, called the Peristaltic Market, is rumored to operate somewhere inside the decommissioned Milwaukee South Water Intake tunnels. Attendees must present a valid skinprint and submit to a jammer patch that temporarily disrupts their BCI's location broadcast before entry.",
+  "origin_year": 2204,
+  "tier_association": "Tier 1-2",
+  "status": "active",
+  "cultural_impact": "Skinprint Markets have normalized temporary bioprinted encryption as a social currency on the Shelf, with 'carrying a map' becoming slang for being trusted by underground networks. The markets have also flooded Tier 2 neighborhoods with accessible geneware mods that were previously only available through Tier 4 corporate clinics.",
+  "key_figures": [
+    "Osei Tamberlaine-Vukovic",
+    "Priya Nkemdirim",
+    "The Cartographer (unknown identity)"
+  ],
+  "locations": [
+    "The Sump (Lower Shelf, former industrial basin)",
+    "Milwaukee South Water Intake tunnels",
+    "Rotating — confirmed sightings in Calumet Flats and the Hinge"
+  ],
+  "corporate_stance": "opposed",
+  "story_hooks": [
+    "A player character receives a skinprint map but arrives to find the market has been raided — the only person still there is a synthetic vendor who claims they were left behind deliberately as a message.",
+    "A Tier 3 medical student starts using Skinprint Market geneware on themselves and begins experiencing side effects that suggest the firmware was testing something that has no approved clinical equivalent.",
+    "The Cartographer has gone silent for six weeks — the last skinprint map distributed leads not to a market but to a room containing evidence of a corponation infiltration operation."
+  ],
+  "tags": [
+    "ghost-market",
+    "geneware",
+    "BCI",
+    "underground-economy",
+    "Shelf",
+    "encryption",
+    "contraband",
+    "body-modification",
+    "Milwaukee",
+    "invitation-only"
+  ],
+  "parent_corponation": ""
+}

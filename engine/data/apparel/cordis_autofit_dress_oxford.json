@@ -1,0 +1,41 @@
+{
+  "id": "a3f7c2e1b8d4509f6e2a1c7b3d8e4f90",
+  "name": "Cordis Autofit Dress Oxford",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A clean, low-profile oxford in burnished synthetic leather with a subtle matte finish. Micro-tensioners embedded in the lacing system read foot pressure and adjust fit throughout the day — tighter during long walks, looser during seated periods. Available in black, oxblood, and slate grey.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "synthetic leather",
+    "carbon-fiber shank",
+    "memory-foam insole",
+    "micro-tensioner lacing system"
+  ],
+  "functionality": "Adaptive auto-lacing that adjusts tension based on activity and swelling patterns tracked via embedded pressure sensors.",
+  "what_it_says": "You're a professional who invests in comfort without being flashy about it. Practical intelligence, not performance theater.",
+  "worn_by": [
+    "office workers",
+    "junior executives",
+    "architects",
+    "legal professionals"
+  ],
+  "manufacturer": "Cordis Footwear",
+  "price_range": "Φ145 - Φ185",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The lacing sensors log gait data — someone has been accessing that data without the wearer's knowledge.",
+    "A contact can be identified by the distinctive pressure signature their auto-lace oxford broadcasts on short-range BCI mesh."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "tier 4",
+    "smart",
+    "dress",
+    "auto-lace",
+    "professional"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Arcturus CorpSec Tier-2 Response Uniform",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_tactical",
+  "manufacturer": "Arcturus Defense Solutions",
+  "description": "The standard-issue response uniform for Arcturus security contractors working Tier 2 patrol zones. Built around a graphene-weave underlayer bonded to rigid UHMWPE plate inserts at the chest, shoulders, and forearms, the suit offers ballistic protection rated to standard pistol calibers without the bulk of full tactical kit. The coloring is Arcturus's signature matte charcoal with high-vis amber trim on the shoulder panels — visible enough to deter, dark enough to blend in low-light corridor sweeps. Every seam is double-stitched with conductive thread that routes biomonitor data to the contractor's BCI overlay.\n\nThe uniform ships with pre-cut port-access panels at the left forearm and base of the skull, compatible with the most common BCI and neural-link hardware on the market. A reinforced tail-loop seam runs along the posterior hem for geneware-modified personnel, and the collar sits wide enough to clear standard-grade horn implants. Arcturus contractors are required to wear this or the MK-7 line while on duty; wearing it off-duty in Tier 1 zones is a known intimidation tactic.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ420",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "Shelf residents know this uniform means a sweep is happening. Tier 2 workers view Arcturus contractors with cautious deference — they're not cops, but they have more authority than cops in most corporate zones. The amber trim has become shorthand in street slang for 'watch yourself.'",
+  "story_hooks": [
+    "A contractor's uniform goes missing from a locker room in a Tier 2 housing block — someone is impersonating Arcturus security, and the real question is whether Arcturus wants them caught or quietly disappeared.",
+    "A former Arcturus contractor still wears her uniform jacket off-duty, the Arcturus patch removed but the silhouette unmistakable. It keeps people from bothering her. Until it doesn't.",
+    "The biomonitor thread in a dead contractor's uniform recorded his final 40 minutes. Someone wants that data pulled before the official investigation does."
+  ],
+  "tags": [
+    "corpsec",
+    "arcturus",
+    "tactical",
+    "ballistic",
+    "patrol",
+    "uniform",
+    "augment-compatible",
+    "geneware-compatible",
+    "tier2",
+    "security"
+  ],
+  "id": "0c20f9f508984534b051de2c00e1bcdf",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

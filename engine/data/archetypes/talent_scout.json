@@ -1,0 +1,34 @@
+{
+  "id": "7bcf358ffcb9143b47ec267c44de7b37",
+  "name": "Talent Scout",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Finds and develops hidden potential in people others overlook",
+  "behavioral_signature": "Sees what someone could become before they see it themselves",
+  "under_stress": "Invests in people who aren't ready and gets burned",
+  "at_rest": "Watching, assessing, identifying raw talent",
+  "will_always": [
+    "look for unrealized potential"
+  ],
+  "will_never": [
+    "dismiss someone without assessing what they could become"
+  ],
+  "unless": [
+    "the person has proven they'll waste every opportunity given"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Mentor",
+      "threshold": 0.75,
+      "context": "developing others"
+    }
+  ],
+  "opposite_of": [
+    "Micromanager"
+  ],
+  "tags": [
+    "talent",
+    "development",
+    "potential"
+  ]
+}

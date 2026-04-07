@@ -1,0 +1,41 @@
+{
+  "id": "f9e0b4c7a1d3826e5f0c9b2d7a4e1c83",
+  "name": "Lumen Adaptive Climate Sneaker",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "Lumen's signature sneaker reads ambient temperature, humidity, and UV index through sensors in the outsole and adjusts the upper's thermal properties in real time — breathable in heat, insulating in cold, water-shedding in rain. The upper is a woven aerogel composite that shifts from soft white to pale silver depending on light conditions. Low-profile, clean silhouette. Looks like a high-end fashion sneaker at a glance.\n\nThe shoe of choice for Tier 4 professionals who travel between climate zones daily and refuse to look disheveled doing it.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "aerogel composite upper",
+    "adaptive membrane",
+    "recycled carbon midsole",
+    "climate sensor array"
+  ],
+  "functionality": "Real-time thermal and moisture regulation. Photochromic upper responds to UV. BCI-optional pairing for manual override.",
+  "what_it_says": "You are always comfortable, always put-together, and you spent money to make that effortless.",
+  "worn_by": [
+    "Tier 4 professionals",
+    "frequent travelers",
+    "architects",
+    "tech-sector workers"
+  ],
+  "manufacturer": "Lumen",
+  "price_range": "Φ380 - Φ550",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Lumen sneaker's climate sensor logged environmental data during a location its owner claims they never visited — the timestamp is damning.",
+    "A counterfeit Lumen has been circulating on the Shelf. It looks identical. The climate adaptation works. Nobody knows who made it."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 4",
+    "luxury",
+    "smart shoe",
+    "climate-adaptive",
+    "sneaker",
+    "tech-wear"
+  ],
+  "parent_corponation": ""
+}

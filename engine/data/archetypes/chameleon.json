@@ -1,0 +1,34 @@
+{
+  "id": "5ae869539b7f655fde8a692760b0121d",
+  "name": "Chameleon",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Survives by becoming whatever the current environment rewards",
+  "behavioral_signature": "Unrecognizable from one context to the next",
+  "under_stress": "Identity fragments, can't remember which version of themselves is real",
+  "at_rest": "Studying what this place values and becoming that",
+  "will_always": [
+    "adapt to local expectations"
+  ],
+  "will_never": [
+    "maintain a consistent identity across contexts"
+  ],
+  "unless": [
+    "someone they trust asks who they really are"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Social Chameleon",
+      "threshold": 0.9,
+      "context": "identity shifting"
+    }
+  ],
+  "opposite_of": [
+    "Standard Bearer"
+  ],
+  "tags": [
+    "adaptation",
+    "identity",
+    "survival"
+  ]
+}

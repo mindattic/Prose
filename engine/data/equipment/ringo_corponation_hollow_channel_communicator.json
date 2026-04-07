@@ -11,7 +11,7 @@
   ],
   "category": "comms",
   "description": "The Hollow Channel Communicator is a bone-conduction audio device that forgoes all radio transmission in favor of direct physical vibration, transmitting voice communication through contact with any rigid surface — a table, a wall, a vehicle chassis, a railing — that is shared between sender and receiver. Both parties press a small adhesive transducer pad against the same connected physical structure; the sender's voice is converted to vibration, travels through the material, and is reconstructed into audio at the receiver's end. Because the signal never enters the electromagnetic spectrum, it is entirely invisible to radio frequency monitoring, spectrum analysis, and signal intelligence equipment of any kind. There is no transmission to intercept, no frequency to identify, and no encryption to break — because the communication exists only as mechanical vibration within a physical object.\n\nThe device's limitations are significant and define its use cases precisely. Both communicating parties must be in contact with the same continuous rigid structure simultaneously, which in practice means the Hollow Channel is used for short-range coordination in confined environments — shared buildings, adjacent rooms, connected vehicles, underground infrastructure. The audio fidelity is acceptable rather than excellent, with some frequency loss through dense or acoustically absorptive materials, and the system cannot carry data, only voice. Ringo Corponation designed the transducer pads to be thin enough to adhere under clothing or inside a jacket lining, making them concealable during covert use.\n\nThe Hollow Channel Communicator occupies a niche that other communication tools cannot fill: environments where any electromagnetic emission, however small or encrypted, will trigger automated security responses. High-security corporate vaults, certain government facilities, and the most sensitive private residences in Meridian 88 are swept continuously for RF activity, making conventional comms suicidal for anyone operating covertly inside them. In these environments, the Hollow Channel is not merely useful — it is the only viable option for maintaining contact between team members.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Ringo Housing Authority",
   "tier_availability": "Tier 2+",
   "legality": "Unrestricted",
   "base_technologies": [
@@ -58,5 +58,6 @@
     "chase",
     "clothing",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

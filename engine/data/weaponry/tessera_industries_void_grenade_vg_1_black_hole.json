@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "An experimental ordnance device that creates a 2-meter sphere of spatial compression lasting 0.5 seconds — everything within the sphere is subjected to extreme compressive forces as space itself contracts, crushing matter into a fraction of its original volume before the effect collapses and space snaps back to normal. The result is a sphere of mangled, compressed debris where intact objects used to be. Tessera's physicists describe it as a 'controlled spatial anomaly' and freely admit they do not fully understand the long-term effects on local spacetime. The Void Grenade is the single most classified item in Tessera's research division, and its existence has been confirmed only by the distinctive spherical compression signatures found at two classified incident sites.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Tile & Mortar Real Estate",
   "tier_availability": "Tier 5",
   "legality": "Does not officially exist",
   "base_technologies": [
@@ -31,12 +31,13 @@
     "exotic",
     "weapon",
     "crime",
-    "ai",
     "elf",
     "contract",
     "control",
     "market",
     "vehicle",
-    "tier 5"
-  ]
+    "tier 5",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

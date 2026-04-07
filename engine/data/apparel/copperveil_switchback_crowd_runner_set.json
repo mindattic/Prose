@@ -1,0 +1,51 @@
+{
+  "id": "a3f7c2e1b8d049561f2a7c3e9b0d4f82",
+  "name": "Copperveil Switchback Crowd-Runner Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A reversible mid-length jacket anchors this set — one side a muted copper-brown twill with faint diagonal texture, the other a washed slate-grey microweave that reads as generic transit worker at a glance. The jacket features a split-back panel with magnetic detach seams at the shoulder blades, accommodating tail geneware or spinal rig hardware without bunching. Concealed inside-chest channels run parallel to the sternum for flat holster inserts or folded tools, and a hidden inner hem pocket spans the full width of the back panel. Beneath it, a dense rust-amber henley in scanner-resistant polymerized cotton sits close to the body, collar high enough to obscure a neck-line neural port. The trousers are straight-leg in dark ochre canvas with reinforced kneepad pockets (empty by default, functional when loaded) and two thigh channels for quick-draw tool access. Footwear is a low-profile boot in oil-tanned synthetic leather, cork-composite sole for reduced acoustic signature on hard floors, ankle-height with a side-zip hidden under a fold of material. The whole look reads as a mid-Circuit shift worker running an errand — until the jacket flips.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "polymerized cotton (scanner-resistant)",
+    "copper-brown twill",
+    "slate-grey microweave",
+    "dark ochre canvas",
+    "oil-tanned synthetic leather",
+    "cork-composite sole material",
+    "magnetic detach seam hardware"
+  ],
+  "functionality": "Reversible jacket for rapid identity shift; split-back panel with magnetic detach seams for spinal rigs and tail geneware; dual sternum holster channels; full-width hidden hem pocket; thigh-channel trousers for tool access; reinforced knee pockets; low acoustic-signature footwear; scanner-resistant base layer",
+  "what_it_says": "This person moves through crowds without snagging attention. The copper tones say working-class practicality, not poverty. The jacket flip says they've done this before. Runners who wear this are methodical, patient, and prefer to be three blocks gone before anyone knows a job happened.",
+  "worn_by": [
+    "crowd-blend operatives",
+    "courier runners",
+    "counter-surveillance scouts",
+    "mid-tier fixers working below their usual grade",
+    "tail-geneware runners needing panel accommodation"
+  ],
+  "manufacturer": "Driftmark Collective — unlicensed street label, Circuit District, M88",
+  "price_range": "Φ 340 – Φ 510",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A runner flips the jacket mid-pursuit and walks past the pursuing security team — but the copper side has a distinctive repair patch their contact will recognize, blowing the switch.",
+    "The scanner-resistant henley is flagging at a checkpoint because someone swapped the genuine article with a knockoff — now the runner needs to bluff through a hand-scan with a concealed weapon in the sternum channel.",
+    "A fixer spots the Driftmark Collective label inside the jacket collar and immediately knows the runner's tier — raising or lowering their offered rate accordingly."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier 2",
+    "tier 3",
+    "reversible",
+    "crowd-blend",
+    "scanner-resistant",
+    "gene_compatible",
+    "aug_compatible",
+    "quick-change",
+    "tactical",
+    "circuit_district"
+  ],
+  "parent_corponation": ""
+}

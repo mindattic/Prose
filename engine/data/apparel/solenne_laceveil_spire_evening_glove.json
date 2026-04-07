@@ -1,0 +1,47 @@
+{
+  "id": "f4e09c3a71b8d25f6e3a0c9b147d82e6",
+  "name": "Solenne Laceveil Spire Evening Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Opera-length evening gloves designed for Spire galas and corponation function circuits. Constructed from bioluminescent silk-analog with a sheer gossamer overlay of hand-knotted synthetic lace in a pattern derived from Andean and West African textile traditions — no single source, everything fused. The glow is tunable via a micro-node at the inner wrist: resting pulse, static shimmer, or full dark depending on the room.\n\nThe upper arm portion is cut with a wide slit and concealed magnetic closure, allowing the glove to be worn over or alongside chrome upper arm housings without bunching. Available in midnight teal, bone white, and void black.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "bioluminescent silk-analog",
+    "hand-knotted synthetic lace",
+    "micro-node light controller",
+    "magnetic slit closure",
+    "reinforced matte-finish wrist seam"
+  ],
+  "functionality": "Tunable bioluminescent glow via wrist micro-node. Magnetic slit closure accommodates chrome upper arm or forearm augmentation. Moisture-resistant inner lining prevents staining from condensation or skin oils during extended wear.",
+  "what_it_says": "You are dressed by someone who knows your body's exact geometry — chrome, geneware, and all — and made it look like it was always meant to glow.",
+  "worn_by": [
+    "Spire socialites",
+    "corponation executives attending formal functions",
+    "high-profile synthetics with humanoid proportions",
+    "chrome-augmented elite guests",
+    "power brokers' partners"
+  ],
+  "manufacturer": "Solenne Atelier",
+  "price_range": "Φ2,400–Φ6,000",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of these gloves was left behind at a Spire function where a senior executive collapsed — the gloves are registered to someone who wasn't on the guest list.",
+    "The bioluminescent dye in a recent Solenne batch reacts unexpectedly to a specific CorpSec UV scanning frequency, briefly illuminating concealed sub-dermal implants.",
+    "A Tier 3 forger has produced near-perfect replicas sold to aspiring social climbers — the tell is a slightly wrong glow frequency that Spire regulars clock immediately."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "fashion gloves",
+    "gala",
+    "evening wear",
+    "tier-5",
+    "bioluminescent",
+    "aug-compatible",
+    "spire",
+    "luxury",
+    "lace"
+  ],
+  "parent_corponation": ""
+}

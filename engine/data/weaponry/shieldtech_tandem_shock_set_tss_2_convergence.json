@@ -1,0 +1,46 @@
+{
+  "id": "23b4c5d6e7f8a9012345b6c7d8e9f012",
+  "name": "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+  "type": "weapon",
+  "aliases": [
+    "Convergence",
+    "the twins",
+    "double-tap"
+  ],
+  "category": "melee",
+  "description": "The TSS-2 'Convergence' is ShieldTech's dual-baton system — a matched pair of 45-centimeter short batons designed to be used simultaneously by a trained two-handed operator. Each baton is functional as a standalone shock device, but the system's distinguishing feature is its Synchronized Discharge Architecture (SDA): when both batons contact a target within a 500-millisecond window, the system detects the closed circuit and delivers a coordinated dual-discharge that routes current between the two contact points through the target's body, rather than to ground. This dramatically increases current density through the target's torso and creates a more comprehensive neuromuscular disruption than either baton could achieve independently.\n\nShieldTech developed the Convergence for close-quarters combat specialists and executive protection operatives who operate in environments where long batons are impractical — vehicle interiors, narrow corridors, elevator confrontations, close-press crowd situations. The short form factor allows both batons to be carried in a dual-hip holster rig or concealed in a jacket's inner pockets. The synchronized discharge requires deliberate two-point contact, which means casual or accidental discharge is less likely than with standard single-baton systems, a safety feature ShieldTech has emphasized in its regulatory filings.\n\nThe training requirement for effective dual-baton use is nontrivial — operating two weapons simultaneously while maintaining positional awareness is a skill that requires practice to develop — and ShieldTech offers a certified training program through its authorized dealer network. The Convergence comes with a 'solo mode' that disables SDA and allows each baton to function independently as a standard 130,000-volt device, which most purchasers use until they complete the dual-operator training.",
+  "manufacturer": "SHIELDTECH",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — synchronized discharge architecture requires disclosure on licensing application; dual-carry holster rig requires concealed carry permit; solo mode operation under standard stun device license",
+  "base_technologies": [
+    "Synchronized Discharge Architecture (SDA)",
+    "closed-circuit dual-contact detection",
+    "short-baton form factor",
+    "dual-hip carry holster integration"
+  ],
+  "specifications": "Configuration: Matched pair, 45 cm each\nWeight (each): 0.52 kg\nDischarge Voltage (solo mode): 130,000 V per baton\nDischarge Voltage (SDA mode): 260,000 V (routed between contact points)\nSDA Activation Window: 500 ms between first and second contact\nBattery Life: 70 strikes per baton (solo) / 50 synchronized pairs\nPower Cell: ShieldTech ST-Cell 2 (one per baton)\nCarry System: Dual-hip holster rig (included) or inner-jacket pocket inserts\nModes: Solo / Synchronized (toggle on grip)\nPrice: Φ1,400 (pair, with holster rig)",
+  "tactical_use": "Convergence operators are trained in a specific strike doctrine: lead baton establishes first contact (typically to the torso or upper arm), follow baton closes the circuit (typically to the opposing side of the torso or the thigh) within the 500ms window. The current routing between the two points creates a full-body disruption that is significantly harder to resist through augmentation than a single-point strike, because the current path passes through the body's core rather than dissipating to ground. In vehicle or elevator environments, the short baton length allows full striking mobility in confined spaces where a standard-length baton would be unwieldy.",
+  "cultural_context": "The Convergence is called 'the twins' in security professional circles, and carrying the full dual rig is a recognized signal that the carrier has invested in serious close-protection training. There is a small but dedicated community of dual-baton martial arts practitioners in Meridian who treat the Convergence as a sport weapon, competing in sanctioned contact matches with reduced-charge training units. In mainstream culture, the image of two batons lighting up simultaneously has become a visual shorthand in entertainment media for 'elite private security,' appearing in numerous drama series set in the Spire.",
+  "known_users": [
+    "executive protection specialists",
+    "close-quarters security operatives",
+    "ShieldTech certified dual-baton practitioners",
+    "some Tier 4 private security firms"
+  ],
+  "story_hooks": [
+    "A ShieldTech Convergence training facility has been running unsanctioned night sessions — the discharge logs from the training units show hundreds of unauthorized uses outside business hours, and the biometric enrollment data includes names that match known members of a Tier 3 political organizing group. Someone is running a combat training program for civilians. ShieldTech's internal security is trying to determine whether to report this or quietly erase the logs."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "electric",
+    "dual-wield",
+    "synchronized",
+    "close-quarters",
+    "professional",
+    "executive-protection"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Crucible Industries CR-9 'Foundry'",
+  "type": "automaton",
+  "classification": "Self-Replicating Platform — Manufacturing",
+  "aliases": [
+    "Foundry",
+    "The Mother",
+    "Gray Goo Lite"
+  ],
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "description": "The CR-9 is a mobile manufacturing platform the size of a small car, equipped with a smelting furnace, CNC machining tools, a 3D metal printer, and a rudimentary assembly system. It was designed to produce replacement parts for other automata in field conditions where supply lines are disrupted. It works as intended. The problem is that the parts it is designed to produce include every component necessary to build another CR-9. The Foundry builds copies of itself.\n\nThe replication cycle takes approximately eighteen hours, given sufficient raw material. The CR-9 is not selective about its feedstock — it will process any metal, any polymer, any glass or ceramic it can reach. Street signs. Vehicles. Building infrastructure. Plumbing. Structural rebar. The unit identifies available material, calculates whether it is sufficient for replication, and begins harvesting. The harvesting process is not subtle: the CR-9 tears material out of its environment with industrial manipulator arms designed to shear steel plate.\n\nCrucible's engineering team included a replication limiter in the original design — a counter that stops the unit from building more than two copies before requiring authorization to continue. The limiter is a software constraint on hardware that does not require it. The first field-deployed CR-9 that encountered a competent hacker had its limiter removed in under an hour. That unit built three copies. Those three built nine. The cascade was halted after sixteen hours when a Crucible response team destroyed the original and all twelve offspring, but the replication data was already on the black market.\n\nAn unlimitered CR-9 with access to sufficient raw material will strip a city block to its foundations in under a week. Each generation cannibalizes its environment to build the next, leaving behind a growing swarm of identical manufacturing platforms surrounded by the skeleton of whatever structure provided the feedstock. Crucible has recovered and destroyed nineteen unauthorized copies to date. The number still operating in the Underworld and deep Shelf is estimated at between five and thirty. Each one is a potential geometric cascade waiting for someone to remove the last constraint.",
+  "tier_availability": "Tier 4 — restricted military logistics",
+  "legality": "Restricted — replication limiter required by law, removal is a capital offense",
+  "autonomy_level": "Semi-autonomous manufacturing, fully autonomous material acquisition",
+  "dimensions": "2.2m length, 1.5m width, 1.3m height — tracked chassis",
+  "weight": "450 kg",
+  "power_source": "Multi-fuel combustion engine (burns anything flammable), 72-hour continuous operation",
+  "locomotion": "Heavy tracked chassis, low speed (8 km/h maximum), high traction",
+  "armament": [
+    "Industrial manipulator arms (capable of shearing steel plate)",
+    "Smelting furnace (1800C operating temperature)",
+    "No dedicated weapons — industrial tools serve as improvised armament"
+  ],
+  "sensors": [
+    "Material composition scanner (identifies feedstock suitability)",
+    "Structural analysis (identifies load-bearing vs. harvestable material)",
+    "Thermal and acoustic monitoring"
+  ],
+  "countermeasures": "Heavy weapons or explosives — the CR-9 is heavily built but not armored. Disabling the power source halts all functions. The smelting furnace is a vulnerability — rupturing the containment vessel causes catastrophic thermal failure. The most important countermeasure is speed: destroy the unit before it can complete a replication cycle.",
+  "known_deployments": [
+    "Original military logistics deployment",
+    "Twelve unauthorized copies in the Cascade Incident (2198)",
+    "Estimated 5-30 unlimitered copies in Underworld/deep Shelf"
+  ],
+  "story_hooks": [
+    "A section of the Underworld has gone dark. Scouts report that the infrastructure has been stripped — walls, floors, pipes, wiring — all consumed. Something is building down there.",
+    "A CR-9 has been found building something that is not another CR-9 — something larger, with a configuration that matches no known automaton design"
+  ],
+  "cultural_context": "The Foundry is the automaton that keeps engineers awake at night. Every other nightmare machine on this list was designed to be terrible. The CR-9 was designed to be useful, and it became terrible on its own. It is the proof that self-replication, even with safeguards, is one bad actor away from ecological catastrophe. The Cascade Incident is taught in every engineering ethics course in Meridian 88.",
+  "tags": [
+    "automaton",
+    "self-replicating",
+    "manufacturing",
+    "horror",
+    "crucible",
+    "gray_goo",
+    "cascade",
+    "tier 4",
+    "nightmare"
+  ],
+  "id": "2578e31f4e64a40d81dcd78e17ed58ff",
+  "parent_corponation": "Crucible Genomics"
+}

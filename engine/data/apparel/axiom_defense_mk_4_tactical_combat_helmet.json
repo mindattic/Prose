@@ -1,0 +1,47 @@
+{
+  "id": "d9b6e05a2c48f731a1b2c3d4e5f6a704",
+  "name": "Axiom Defense Mk-4 Tactical Combat Helmet",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "Axiom Defense Solutions' Mk-4 is the field-standard hard helmet for CorpSec and licensed private operators. Low-profile ballistic shell in matte-black ceramic composite over an aramid-fiber liner, with a modular rail system at the crown and temples for light mounts, sensor pods, and breaching tools. The visor is a flip-down ballistic-rated AR panel tinted gunmetal, projecting tactical overlays synced to BCI or external HUD pack.\n\nAug-compatible rear port is a recessed channel with a rubber gasket cover, accommodating standard-diameter neural port access without seal compromise. Chin strap is quick-release dual-lock polymer.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "ceramic composite ballistic shell",
+    "aramid-fiber liner",
+    "modular rail system",
+    "ballistic-rated AR flip-visor",
+    "quick-release polymer chin strap",
+    "rubber neural-port gasket"
+  ],
+  "functionality": "Ballistic protection rated for standard sidearm rounds at close range. Integrated AR visor syncs to BCI or external pack. Modular rail accepts Axiom-standard accessories. Neural port channel maintains helmet seal while allowing BCI cable or wireless coil access.",
+  "what_it_says": "You operate with institutional force behind you — or you want people to believe you do.",
+  "worn_by": [
+    "CorpSec field officers",
+    "licensed private security",
+    "Tier 4 specialists in hostile-environment roles",
+    "military contractors"
+  ],
+  "manufacturer": "Axiom Defense Solutions",
+  "price_range": "Φ1,400 – Φ2,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Mk-4 with its serial number acid-scrubbed turns up on a Shelf body — tracing the helmet back through supply chains reveals an internal CorpSec surplus leak.",
+    "The AR visor's tactical overlay firmware has a remote-wipe vulnerability; a fixer who knows the exploit can blind an entire CorpSec squad simultaneously.",
+    "A Tier 3 middle manager bought a surplus Mk-4 for 'home protection' — it's still logged on an active Axiom tactical network, and someone is watching the feed."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tactical helmet",
+    "helmet",
+    "tier-3",
+    "tier-4",
+    "aug-compatible",
+    "AR visor",
+    "ballistic",
+    "axiom defense",
+    "corpsec"
+  ],
+  "parent_corponation": ""
+}

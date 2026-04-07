@@ -1,0 +1,49 @@
+{
+  "id": "c6e3901a4f8d72b5a1093ec2d74b8f56",
+  "name": "Nullframe Quickshift Extraction Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A runner's emergency rig — built for jobs that go wrong fast and require a complete visual shift within thirty seconds. The outer layer is a structured hooded overjacket in dark moss green with a slightly oversized silhouette, every panel attached with rapid-release magnetic snap clusters rather than sewn seams. The entire jacket can be stripped and compacted to a palm-sized bundle in under fifteen seconds, revealing a second complete outer layer beneath: a slim-fit dark terracotta long-sleeve utility shirt with a standing collar, chest pockets, and elbow-reinforced sleeves — an entirely different silhouette, color, and read. Both layers carry scanner-resistant nano-weave in the back panels. The jacket has a full internal holster system — two chest mounts, one cross-body, and a lower-back retention point — all of which transfer cleanly to the utility shirt's hidden mounting points, which are accessed through a magnetic-sealed vent along the shirt's left flank. The trousers are a dark slate-blue modular cargo cut with detachable lower-leg panels: worn full-length they read as work trousers; panels stripped, they become knee-length shorts with a clean hem, changing the silhouette entirely. A slim neural-port cover cap in brushed pewter sits at the nape of the neck, magnetically attached and easily removed or replaced. Boots are compact mid-tops in matte dark clay with silent-sole compound and a false-bottom heel compartment for emergency storage. The whole rig is designed to let a runner walk out of a building looking nothing like the person who walked in.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "dark moss green magnetic-panel ripstop",
+    "dark terracotta utility twill",
+    "scanner-resistant nano-weave back panels",
+    "dark slate-blue modular cargo twill",
+    "silent-sole rubber compound",
+    "brushed pewter neural-port cover"
+  ],
+  "functionality": "Full outer jacket strips to palm-sized bundle in under 15 seconds via magnetic snap clusters; second complete visual layer revealed beneath; dual-layer scanner-resistant back panels; full internal holster system with cross-layer transfer mounting; detachable trouser lower-leg panels for silhouette change; magnetic neural-port cover; false-bottom heel compartment; complete visual identity shift without changing location",
+  "what_it_says": "This outfit exists for one purpose: the job went sideways and the runner needs to not be the person who just did that. It's not a disguise kit — it's a contingency. The runner who wears this has planned for failure as carefully as they've planned for success. The terracotta utility shirt under the moss green jacket is specific enough in color to register as a different person on camera review. That's the whole point.",
+  "worn_by": [
+    "extraction specialists",
+    "runners with high job failure rates who survive anyway",
+    "operatives working jobs with a known compromise risk",
+    "couriers carrying hot materials",
+    "anyone who has been burned before and learned from it"
+  ],
+  "manufacturer": "Nullframe — street label, no confirmed origin, distributed through secondary markets",
+  "price_range": "Φ 1,050 – Φ 1,600",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The runner strips the outer jacket and compresses it on schedule, but the magnetic snap clusters on the left shoulder panel have degraded and one section won't release — they have to walk out of the building with half a jacket hanging off one arm and improvise the rest.",
+    "Corpsec has upgraded their camera systems to cross-reference silhouette changes in the same building within a 45-minute window — the runner's quick-change worked visually but the new system flags the trouser panel detachment as a known operative technique.",
+    "The false-bottom heel compartment contains something the runner doesn't remember putting there — and whatever it is, it's been broadcasting a low-frequency ping since before the job started."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier_2",
+    "tier_3",
+    "quick_change",
+    "reversible",
+    "scanner_resistant",
+    "aug_compatible",
+    "concealed_carry",
+    "extraction",
+    "modular"
+  ],
+  "parent_corponation": ""
+}

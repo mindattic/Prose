@@ -1,0 +1,48 @@
+{
+  "id": "a3f7c2e1b8d04591ae6230f7c9145bde",
+  "name": "Stratum MagLine Transit Operator Day Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A sharp, company-issued uniform built for transit operators running M88's elevated rail and underground tube lines. The core is a structured navy polyblend jacket with Stratum Logistics' orange-and-grey chevron shoulder patch stitched directly into the seam — not ironed on, not going anywhere. The jacket has a mandarin collar, snap-close breast pockets, and a left-chest embroidered name panel in block lettering. Underneath sits a moisture-wicking charcoal thermal base layer with a half-zip neck, designed to regulate body temperature through platform heat surges and cold tunnel drafts. Trousers are navy cargo-cut with reinforced knees, two side cargo pockets sealed with magnetic closures, and a low-profile tool loop on the right thigh for fare scanner holsters or comms clips. A hi-vis orange stripe runs the outer leg seam — retro-reflective in low light. Boots are the Veldtmann Steelcap 7 equivalent construction: thick rubber composite sole, steel toe cap, ankle support wrap, and oil-resistant tread. A charcoal knit watch cap with a small Stratum emblem on the cuff finishes the head. The whole kit reads institutional but maintained — pressed enough to mean the wearer takes the job seriously, worn enough to mean they've been doing it for years.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "polyblend twill",
+    "moisture-wicking synthetic thermal knit",
+    "reinforced nylon cargo fabric",
+    "rubber composite",
+    "retro-reflective safety tape",
+    "embroidered cotton patch"
+  ],
+  "functionality": "Thermal regulation for hot platform and cold tunnel environments, cargo pockets for fare equipment and tools, retro-reflective leg stripe for rail-adjacent visibility, magnetic pocket closures prevent tool loss, steel-toe boot construction, name panel for passenger-facing identification.",
+  "what_it_says": "This is a person with a steady job and a union card. The Stratum patch means benefits, a pension if they live long enough, and a supervisor somewhere filing their hours. The wear on the jacket elbows says they've been at it long enough to stop caring what the fresh recruits think. Reliable. Present. Not going anywhere.",
+  "worn_by": [
+    "Stratum Logistics transit operators",
+    "elevated rail conductors",
+    "tube line platform attendants",
+    "fare enforcement officers",
+    "transit supervisors on probationary step-down"
+  ],
+  "manufacturer": "Stratum Logistics (corponation-issued uniform contract, manufactured by Kessler Fabricworks subsidiary)",
+  "price_range": "Φ180–Φ240 (company-subsidized; out-of-pocket replacement cost after damage deduction)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A transit operator's name patch reads a name the player recognizes — someone reported missing three weeks ago. The uniform is being worn by someone else entirely.",
+    "The retro-reflective leg stripe has been partially scraped off on one operator's uniform — deliberately, not from wear — suggesting they've been moving through sections of tunnel they don't want to be seen in.",
+    "Stratum just changed their uniform contract supplier. The new jackets have a slightly different emblem. Someone in the old uniform is still running a route that was officially discontinued six months ago."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "transit",
+    "uniform",
+    "corponation_issued",
+    "stratum_logistics",
+    "hi_vis",
+    "steel_toe",
+    "aug_compatible"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,68 @@
+{
+  "id": "f6a97b37a27b489de40a848725559c66",
+  "name": "Enver Svensson-Asante",
+  "type": "character",
+  "aliases": [
+    "The Lens",
+    "Panopticon"
+  ],
+  "role": "Private Investigator",
+  "description": "Enver Svensson-Asante has invested approximately Φ1.2 million in investigative augmentation, and he is the augmentation. Every chrome component in his body was chosen specifically for investigative function — not combat, not vanity, not general enhancement, but the specific task of observing, recording, and analyzing. He is a walking surveillance platform, and he has embraced this identity so completely that it's difficult to say where the investigator ends and the cyberware begins.\n\nHis senses operate on a level that unaugmented humans cannot comprehend. He sees across multiple spectra simultaneously, hears conversations happening behind closed doors, smells chemical traces that have been dissipating for hours, and remembers everything — literally everything — he has ever perceived since the eidetic implant was installed eleven years ago. This makes him extraordinarily effective at gathering evidence and catastrophically bad at normal human interaction, because he perceives lies, stress responses, and physiological deception in real-time and has no social filter preventing him from mentioning it.\n\nThe cost of all this chrome is significant. He requires four hours of charging daily for his cybernetic systems. He suffers from sensory overload episodes that leave him incapacitated. He has been rejected from every investigative firm he's applied to because his augmentation level puts him in an insurance category normally reserved for military hardware. So he works alone, takes cases that require his specific capabilities, and spends his downtime in a sensory deprivation tank that is the only place in Meridian 88 where his augmented senses finally shut up.",
+  "affiliation": "Independent — too augmented for most firms to insure",
+  "tier": "Tier 3",
+  "location": "A reinforced apartment in Kessler Row, half living space and half charging station for his extensive cyberware",
+  "specialization": "Surveillance and evidence gathering through extensive investigative augmentation",
+  "methods": [
+    "Recording everything through cybernetic eyes with 40x zoom and multi-spectrum vision",
+    "Directional hearing through cyberears capable of isolating individual conversations in crowded spaces",
+    "Chemical analysis through nasal augmentation — can identify individuals by scent signature",
+    "Subdermal signal interceptors that passively capture nearby wireless communications",
+    "Eidetic memory implant that allows perfect recall of anything observed"
+  ],
+  "notable_cases": [
+    "Solved a poisoning case by smelling the toxin on the suspect from across a crowded room — the compound was odorless to unaugmented humans",
+    "Recorded a meeting between corrupt CorpSec officers from 200 meters away, through two walls, using his audio and visual augmentation in concert",
+    "Identified a shapeshifting synthetic infiltrator by detecting the subtle electromagnetic signature their disguise system emitted — invisible to any unaugmented observer"
+  ],
+  "equipment": [
+    "Cybernetic eyes — full replacement, multi-spectrum (visual, thermal, ultraviolet), 40x optical zoom, constant recording",
+    "Cyberears — directional microphones, sound isolation capability, frequency range far beyond human normal",
+    "Nasal chemical analyzer — can identify over 10,000 chemical compounds and 200,000 individual scent signatures",
+    "Subdermal antenna array — passive interception of wireless signals within 50-meter radius",
+    "Eidetic memory implant — neural augmentation that provides perfect recall, searchable like a database"
+  ],
+  "personality": "Enver is what happens when someone decides to become an investigative instrument. Turkish-Swedish-Ghanaian heritage, thirty-six years old, and so heavily augmented that unaugmented people find being around him uncomfortable — his eyes are obvious chrome replacements that glow faintly blue, and he has a habit of tilting his head at precisely the angle that optimizes his directional microphones, giving him an unsettling birdlike quality. He is aware of everything around him at all times and cannot turn this awareness off, which has made him simultaneously the most observant person in any room and the most exhausted. He sleeps poorly, overwhelmed by sensory input even in silence. He is professionally brilliant and personally difficult — prone to interrupting people to correct details they got wrong about their own experiences, because his augmented recall is more accurate than their organic memory.",
+  "relationships": [
+    {
+      "name": "Dr. Fatou Nyberg-Twumasi",
+      "type": "cyberware technician",
+      "description": "The only person certified to service his full augmentation suite — sees him more regularly than anyone else in his life"
+    },
+    {
+      "name": "Samira Hedlund-Ofosu",
+      "type": "occasional partner",
+      "description": "An unaugmented PI who works cases with him when a human touch is needed — finds him exhausting but undeniably useful"
+    }
+  ],
+  "story_hooks": [
+    "Enver's eidetic memory implant begins surfacing memories he doesn't remember experiencing — either the implant is malfunctioning or someone has been adding data to his neural storage",
+    "A case requires him to go fully offline — disabling all augmentation for 48 hours — and he discovers that he's forgotten how to function as an unaugmented human",
+    "Someone develops a way to spoof his sensory augmentation, feeding him false data that's indistinguishable from reality — his greatest asset becomes his greatest vulnerability"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "augmented",
+    "cyberware",
+    "surveillance",
+    "kessler_row"
+  ],
+  "carried_weapons": [
+    "Tessera Adaptive Platform TAP-5 'Chameleon'",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "registered_firearms": [
+    "Tessera Adaptive Platform TAP-5 'Chameleon'",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "f08b3c7a1d6e2954a0b7f3c8e1d42609",
+  "name": "Vanthorpe Meridian Prestige Chronoband",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A wide-profile wrist device in brushed palladium-alloy casing with a sapphire-composite face. The watch displays analog time via physical hands — a deliberate affectation — while a secondary micro-display ring around the bezel shows encrypted calendar, BCI handshake status, and ambient biometric data in pale gold numerics. The band is hand-stitched horween-equivalent synth-leather in deep oxblood.\n\nNo logo is visible from the face. The Vanthorpe mark is engraved on the case back, readable only when removed — a signature for those who already know.",
+  "tier_association": "Tier 4-5",
+  "materials": [
+    "brushed palladium alloy case",
+    "sapphire-composite crystal",
+    "oxblood synth-leather band",
+    "micro-display bezel ring",
+    "gold-toned internal movement"
+  ],
+  "functionality": "Analog timekeeping with BCI handshake confirmation ring; encrypted calendar sync; biometric ambient monitoring; case-back NFC exec-ID chip for Spire building access; water and pressure resistant to 200m.",
+  "what_it_says": "Power doesn't need to announce itself — it simply keeps time.",
+  "worn_by": [
+    "Spire executives",
+    "senior corponation directors",
+    "old-money power brokers",
+    "Tier-4 specialists performing upward mobility"
+  ],
+  "manufacturer": "Vanthorpe",
+  "price_range": "Φ 4,200–9,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The NFC exec-ID chip in one production batch was cloned from a real Spire access credential — someone inside Vanthorpe sold the mold.",
+    "The encrypted calendar on a recovered unit contains appointment logs that implicate a corponation board in a zoning fraud scheme.",
+    "A Tier-2 worker is seen wearing one — either stolen, gifted, or evidence of an identity they're trying to leave behind."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "watch",
+    "wrist-device",
+    "tier-4",
+    "tier-5",
+    "BCI-compatible",
+    "luxury",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

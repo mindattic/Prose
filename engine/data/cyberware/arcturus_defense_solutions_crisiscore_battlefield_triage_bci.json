@@ -1,0 +1,59 @@
+{
+  "id": "e6b9c2d5f8a1043e7b6c9d2f5a8e1043",
+  "name": "Arcturus Defense Solutions CrisisCore Battlefield Triage BCI",
+  "brand_name": "Arcturus Defense Solutions",
+  "product_name": "CrisisCore Battlefield Triage BCI",
+  "type": "cyberware",
+  "aliases": [
+    "CrisisCore",
+    "The Triage Rig",
+    "BloodMind",
+    "CC-4"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The CrisisCore Battlefield Triage BCI is Arcturus Defense Solutions' Tier 4 neural platform designed for combat medics, trauma surgeons operating in active war zones, and forward surgical teams attached to high-intensity military units. The system integrates four simultaneous data streams optimized specifically for biological crisis assessment: real-time biometric uplinks from all squad members' personal health monitors, a direct neural interface with portable diagnostic hardware enabling haptic-enhanced examination feedback, a pharmaceutical management AI that calculates drug interactions and dosing in real time and delivers recommendations as direct cognitive prompts, and a procedural memory augmentation layer that encodes trauma surgery protocols directly into the operator's motor cortex as instinctive kinematic sequences. Under fire, with three casualties and two minutes of safe window, a CrisisCore operator performs triage not by consulting memory or equipment but by experiencing the correct sequence of actions as a form of directed physical certainty. The EMP hardening is rated to MIL-SPEC EMP-8, slightly below ADS combat standards, reflecting the assumption that medical operators will be operating in somewhat less contested electromagnetic environments than frontline combatants.\n\nThe CrisisCore exists in a morally complex position within Meridian 88's military medical culture. Its operators save lives at a documented rate significantly higher than unaugmented combat medics — CrisisCore-equipped units show a 34% improvement in field casualty survival outcomes in ADS's own studies, a figure independently corroborated by Meridian 88 Military Medical Command. But the procedural memory augmentation layer, which writes surgical protocols directly onto the motor cortex, raises persistent questions about informed consent, medical autonomy, and the degree to which a CrisisCore operator's clinical judgment is genuinely their own. Several military medical ethicists have published concerns that the system optimizes for speed and protocol adherence at the expense of the adaptive clinical reasoning that distinguishes an excellent trauma surgeon from a very fast one.",
+  "manufacturer": "Meridian Neural Defense",
+  "tier_availability": "Tier 4",
+  "legality": "Restricted",
+  "installation_requirements": "Level 4 neuro-surgical facility; ADS CrisisCore-certified installation team; medical professional license verification mandatory; procedural memory encoding session requires 80 hours of supervised protocol training prior to motor cortex write; pharmaceutical AI calibration to individual operator's medical specialty",
+  "rejection_risk": "Low (7%); elevated risk in operators with prior motor cortex augmentation due to procedural memory layer conflict",
+  "maintenance": "Quarterly pharmaceutical AI database updates; procedural memory layer integrity check every 6 months; biometric uplink array calibration annually; ADS depot review every 18 months",
+  "specifications": "{\"stream_capacity\": 4, \"stream_types\": [\"squad_biometrics\", \"diagnostic_hardware_interface\", \"pharmaceutical_ai\", \"procedural_memory_augmentation\"], \"emp_rating\": \"MIL-SPEC EMP-8\", \"encryption\": \"ADS-Q7 Quantum Protocol\", \"squad_biometric_uplink_capacity\": 16, \"pharmaceutical_ai\": \"ADS PharmCore v5.2\", \"procedural_memory_protocols\": [\"trauma_surgery\", \"triage_assessment\", \"field_amputation\", \"hemorrhage_control\", \"airway_management\"], \"latency_ms\": 1.4, \"power_source\": \"Bio-thermic cell\", \"weight_g\": 170, \"installation_time_hours\": 40, \"protocol_training_hours\": 80}",
+  "side_effects": [
+    "Procedural intrusion: encoded surgical protocols occasionally surface during non-medical activities, manifesting as an overwhelming kinematic urge to perform triage-related physical sequences — most commonly hemorrhage control movements — when the operator encounters injured individuals in civilian contexts",
+    "Biometric hypervigilance: constant passive monitoring of squad biometrics generalizes to involuntary health assessment of all nearby individuals, causing significant social discomfort and, in some operators, a compulsive need to intervene in minor health situations",
+    "Pharmaceutical AI dependency: operators come to rely on PharmCore dosing recommendations to the degree that unaugmented pharmaceutical decision-making becomes anxiety-inducing and unreliable, a particular problem during system maintenance windows",
+    "Casualty threshold numbing: the system's efficiency optimization suppresses acute emotional response to patient death during triage operations; while functionally necessary, this produces a documented pattern of delayed grief processing that accumulates over deployment and requires structured psychological intervention"
+  ],
+  "cultural_context": "CrisisCore operators occupy a unique and deeply respected position in Meridian 88's military culture — the combination of their life-saving function and the visible neural augmentation required to perform it at combat speed creates an almost sacred social status in the units they serve. Soldiers who have been brought back from clinical death by a CrisisCore medic often describe a specific quality of gratitude that borders on reverence, not for the medic personally but for the augmented certainty they embody. This reverence creates its own pressures: CrisisCore operators are expected to be infallible, and the casualties they cannot save despite the system's capabilities carry a social and psychological weight that non-augmented medics are not held to.",
+  "known_users": [
+    "Meridian 88 Military Medical Command forward surgical teams",
+    "ADS-contracted combat medical units",
+    "Elite private military contractor medical detachments",
+    "Select Tessera Corponation security division trauma response teams"
+  ],
+  "story_hooks": [
+    "A CrisisCore medic's pharmaceutical AI begins flagging anomalies in the biometric data of squad members that indicate slow poisoning — not from enemy action, but from something in their own supply chain. The medic has 18 hours before the doses become fatal and no one in their chain of command will take the alert seriously.",
+    "During a mass casualty event, a CrisisCore operator's procedural memory layer activates a surgical protocol that is not in any official ADS database — a protocol that saves a patient who should have been unsaveable by any known method. Someone encrypted a ghost protocol into the system, and the operator needs to know why.",
+    "A retired CrisisCore medic is being sued by a patient's family, who allege that the procedural memory augmentation caused the medic to perform an unauthorized experimental procedure. The medic genuinely cannot determine whether the action was their own clinical judgment or a protocol they didn't know they had been given."
+  ],
+  "street_price": "Φ85,000",
+  "licensed_price": "Φ130,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "tier4",
+    "battlefield-triage",
+    "medical",
+    "multi-stream",
+    "emp-hardened",
+    "procedural-memory",
+    "pharmaceutical-ai",
+    "arcturus",
+    "combat-medical",
+    "military_elite"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

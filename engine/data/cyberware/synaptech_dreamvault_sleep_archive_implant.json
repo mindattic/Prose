@@ -1,0 +1,57 @@
+{
+  "id": "e94c7f2d31a84b6090d2e5a17bc63f08",
+  "name": "SynapTech DreamVault Sleep Archive Implant",
+  "brand_name": "SynapTech",
+  "product_name": "DreamVault",
+  "type": "cyberware",
+  "aliases": [
+    "the vault",
+    "dreambox",
+    "night capture",
+    "the reel",
+    "sleepcast chip"
+  ],
+  "category": "cognitive",
+  "body_location": "cranial — thalamic monitor mesh with occipital secondary node",
+  "description": "The DreamVault is a passive neural recording implant that captures the subjective experiential data of REM sleep and slow-wave dream states, encoding them into compressed playback files that users can review, share, or archive using SynapTech's companion platform. Unlike memory enhancement implants, the DreamVault does not interact with or improve waking cognition — it is a pure capture device, monitoring thalamic and occipital activity during sleep and translating the resulting signal patterns into a reconstructed experiential file. Playback occurs through any standard neural entertainment interface: the user re-experiences the dream as a first-person immersive sequence, with fidelity ranging from approximately 60% (in light sleep captures) to 85% (in deep REM sessions) of the original subjective experience. The implant's companion app allows users to tag, annotate, and organize their archive, and SynapTech's social platform DreamShare has become one of the most-trafficked experiential media networks in the city, with a robust creator economy built around curated dream content, therapeutic dream analysis subscriptions, and an art community dedicated to dream-sourced visual and narrative work.\n\nThe DreamVault has created an entirely new category of personal media in Meridian 88. For many users, it serves a straightforward entertainment function — waking up and reviewing an interesting dream the way one might rewatch a film. But the implant's cultural footprint goes well beyond entertainment. Therapists increasingly use DreamVault archives as supplementary clinical material, with patient consent, to access emotional content that patients struggle to verbalize. Grief counselors in Tier 1 and Tier 2 communities have reported that clients who dream of deceased loved ones find measurable comfort in being able to return to those dreams deliberately. On the creative side, a generation of Meridian 88 artists has built careers around their DreamVault archives — raw dream footage is a recognized art form, and some creators command significant subscription audiences on DreamShare for unedited nightly captures. The implant is cheap enough to have penetrated Tier 1, where even residents with limited discretionary income treat it as a basic quality-of-life purchase.",
+  "manufacturer": "SYNAPTECH SENSORY SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Pharmacy kiosk installation available for base model; 45-minute outpatient procedure; no specialist required",
+  "rejection_risk": "Minimal",
+  "maintenance": "Monthly storage sync to SynapTech cloud archive (automatic); annual hardware check; occipital node self-tests nightly; no battery replacement (thermoelectric)",
+  "specifications": "{\"capture_fidelity\": \"60-85% subjective experience reconstruction\", \"target_states\": [\"REM\", \"slow-wave dream\"], \"playback_format\": \"first-person immersive via neural entertainment interface\", \"storage\": \"local 90-day rolling cache + optional SynapTech cloud archive\", \"companion_platform\": \"DreamShare\", \"social_sharing\": \"opt-in, user-controlled\", \"power_source\": \"thermoelectric\", \"capture_tagging\": \"manual or AI-assisted in companion app\"}",
+  "side_effects": [
+    "Some users develop increased awareness of their dreams during the capture process, leading to more frequent partial awakenings during REM — usually resolves within the first month as the brain habituates",
+    "Reviewing distressing dream captures can reinforce the emotional weight of nightmares in ways unassisted recall typically does not; SynapTech recommends against repeated playback of high-distress captures without therapeutic support",
+    "Occasional capture bleed — fragments of a dream from one night appearing in the following night's capture, creating a false continuity that some users find disorienting",
+    "A small percentage of users report that knowing their dreams are being recorded subtly alters the character of their dreaming over time — content becomes more performative or narrative-structured"
+  ],
+  "cultural_context": "The DreamVault has redefined privacy norms in Meridian 88 in ways that are still being negotiated. Sharing your dreams on DreamShare is, for Tier 1 and Tier 2 youth, a primary form of social bonding and self-expression — the intimacy of a shared dream capture is understood as a significant act of trust, and romantic partners exchanging dream access is a recognized relationship milestone. At the same time, the platform has generated ongoing controversy: employers in Tier 4 have been caught attempting to subpoena DreamVault archives in misconduct investigations, DreamShare's content moderation struggles with the legally murky status of dream-sourced depictions of real people, and civil liberties organizations regularly challenge SynapTech's data retention policies. Despite the controversy, the implant is so thoroughly embedded in daily life that opposition to it reads as eccentric. Refusing to have a DreamVault is, in most social circles, treated as a mild oddity.",
+  "known_users": [
+    "Young adults across all tiers using DreamShare as a social and creative platform",
+    "Therapists and their clients using archives as supplementary clinical material",
+    "Grief counselors and their clients seeking access to dreams of deceased loved ones",
+    "Visual artists, writers, and narrative designers sourcing creative material from their archives",
+    "Researchers studying oneiric patterns across demographic groups",
+    "Insomnia sufferers using capture data to analyze their sleep architecture with clinicians"
+  ],
+  "story_hooks": [
+    "A DreamVault capture from a murder victim is submitted as evidence — the dream recorded the night before their death contains imagery that investigators believe encodes an unconscious memory of their killer, but dream-sourced evidence has no legal standing and someone powerful wants it kept that way",
+    "A player character reviews their most recent DreamVault capture and finds a sequence they have no memory of dreaming — a location, a conversation, a face — that appears to be surveillance footage of a real place, not a dream at all",
+    "A cult operating in the Shelf is using shared DreamVault captures as a sacrament — members receive a specific dream file at initiation and report that viewing it changes how they dream permanently, with new recruits beginning to produce captures that resemble the original in disturbing detail"
+  ],
+  "street_price": "Φ140–Φ260",
+  "licensed_price": "Φ390 at SynapTech retail locations; DreamShare premium subscription Φ12/month",
+  "tags": [
+    "cyberware",
+    "cognitive",
+    "lifestyle",
+    "dreams",
+    "entertainment",
+    "social",
+    "creative",
+    "archive"
+  ],
+  "parent_corponation": ""
+}

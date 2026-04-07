@@ -1,0 +1,43 @@
+{
+  "id": "70d2f5a3e1c8b4961270d2f5a3e1c8b4",
+  "name": "Kestrel Tactical Conceal Vest",
+  "type": "apparel",
+  "category": "top",
+  "description": "A close-fitting tactical vest designed to be worn as an outer layer — not hidden under a jacket but styled to pass as a utilitarian fashion piece. The Kestrel is constructed from a rigid-soft composite: a woven outer shell over segmented ballistic panels that cover the torso without the bulk of traditional armor. Four front zip pockets of different sizes, a clean stand collar, and a snap-front closure. In matte black or olive drab, it reads as tactical-chic from a distance and is functional body armor up close.\n\nKestrel markets to private security contractors, licensed concealed-carry civilians, and Tier 3-4 buyers who work in environments where soft armor is prudent but uniformed protection is the wrong signal. The vest offers NIJ Level IIA coverage — adequate for most civilian threat scenarios in Meridian 88. The pockets are organized for specific carry: left chest for documentation, right chest for sidearm accessories, lower left for comms, lower right general.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "woven poly-aramid outer shell",
+    "segmented ballistic composite panels",
+    "moisture-wicking interior mesh"
+  ],
+  "functionality": "NIJ Level IIA soft body armor (torso coverage). Segmented panel construction allows moderate movement. No electronic components.",
+  "what_it_says": "You've assessed your environment and decided the risk is real. Either very cautious, doing something dangerous, or both.",
+  "worn_by": [
+    "private security contractors",
+    "licensed civilian carry holders",
+    "journalists covering high-risk areas",
+    "corporate investigators",
+    "Tier 3 residents in border zones between tiers"
+  ],
+  "manufacturer": "Kestrel Protective Systems",
+  "price_range": "Φ280",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Kestrel vest stopped a round in an incident that was officially ruled an accident — the owner still has the vest with the deformed panel and has never reported it.",
+    "Kestrel quietly sells a modified version to a specific corponation's private security arm that has slightly different panel coverage — leaving a gap that a specific caliber can exploit.",
+    "A Kestrel vest was found in a dumpster near the Tier 2-3 boundary, still zipped up, with something sewn into the lining that wasn't factory-installed."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 3",
+    "vest",
+    "armor",
+    "concealed carry",
+    "tactical",
+    "Kestrel",
+    "security"
+  ],
+  "parent_corponation": ""
+}

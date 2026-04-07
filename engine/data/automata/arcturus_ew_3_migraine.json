@@ -1,0 +1,51 @@
+{
+  "name": "Arcturus EW-3 'Migraine'",
+  "type": "automaton",
+  "classification": "Electronic Warfare — BCI Disruption Platform",
+  "aliases": [
+    "Migraine",
+    "Brain Fryer",
+    "The Scrambler"
+  ],
+  "manufacturer": "Raptor Aerospace Division",
+  "description": "The EW-3 is a small wheeled drone — about the size of a suitcase — that carries a directional electromagnetic warfare suite capable of disrupting, scrambling, or seizing control of Brain-Computer Interface systems within a 200-meter radius. In a city where 78% of the population has some form of BCI implant, the EW-3 is effectively a weapon that attacks almost everyone simultaneously.\n\nThe disruption mode causes BCI static — visual artifacts, auditory hallucinations, motor control glitches, and sensory processing errors in everyone within range. The effects are temporary but profoundly disabling. The scramble mode targets specific BCI signatures and can render individual implants non-functional for hours, effectively blinding and deafening victims who depend on their augmentations. The seizure mode — classified, denied by Arcturus — can allegedly take control of a target's BCI and feed false sensory data directly into their nervous system, making them see, hear, and feel things that don't exist.\n\nThe EW-3 is small enough to be carried in a bag, placed under a vehicle, or hidden in a room. Its effects look like BCI malfunction — a common enough occurrence that victims may not realize they're under attack until the patterns become unmistakable. By that point, the EW-3 has done its work.",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted — civilian possession prohibited",
+  "autonomy_level": "Remote operated or pre-programmed activation",
+  "dimensions": "0.4m x 0.3m x 0.2m",
+  "weight": "12 kg",
+  "power_source": "High-density lithium cell, 4-hour active emission",
+  "locomotion": "Four-wheeled, indoor rated",
+  "armament": [
+    "Directional BCI disruption array (200m radius)",
+    "Scramble mode (targeted BCI attack)",
+    "Seizure mode (classified, BCI control)"
+  ],
+  "sensors": [
+    "BCI signature detection",
+    "Electromagnetic environment mapping"
+  ],
+  "countermeasures": "Faraday-shielded BCIs are resistant but not immune. Non-augmented individuals are unaffected. Signal triangulation can locate the emission source. The unit's electromagnetic output makes it detectable by spectrum analysis equipment.",
+  "known_deployments": [
+    "Military electronic warfare operations",
+    "Corporate counter-intrusion",
+    "Black market use in criminal operations and political suppression"
+  ],
+  "story_hooks": [
+    "An EW-3 has been placed in a Shelf market. Everyone in the area is experiencing BCI disruption — some are seeing things that aren't there, others have lost motor control. The market has become a zone of chaos, and nobody can identify the source because their BCIs keep telling them to look in the wrong direction.",
+    "A player character's BCI has been seized by an EW-3 in seizure mode. They're seeing false sensory data — a version of reality that doesn't exist. They need to figure out what's real before they act on false information that leads them into a trap."
+  ],
+  "cultural_context": "The EW-3 attacks the technology that Meridian 88's population depends on for daily function. It turns augmentation into vulnerability and proves that the more connected you are, the more ways you can be hurt.",
+  "tags": [
+    "automaton",
+    "electronic warfare",
+    "bci",
+    "disruption",
+    "weapon",
+    "arcturus",
+    "corporate",
+    "tier 4"
+  ],
+  "id": "3abf992947685fb33669643462f22a7f",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

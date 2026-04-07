@@ -148,6 +148,11 @@ public class AgendaEngine
             log.LogInformation("Found {Count} conflicts from agendas", conflicts.Count);
             return conflicts;
         }
+        catch (JsonException)
+        {
+            log.LogDebug("Conflict discovery skipped — LLM returned truncated JSON");
+            return [];
+        }
         catch (Exception ex)
         {
             log.LogError(ex, "Conflict discovery failed");

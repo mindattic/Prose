@@ -1,0 +1,34 @@
+{
+  "id": "e0f6dfc2d3f1995dff66b4075add868a",
+  "name": "Distant",
+  "type": "archetype",
+  "category": "relationship",
+  "description": "Maintains emotional distance in every relationship as a survival mechanism",
+  "behavioral_signature": "Physically present but emotionally unreachable",
+  "under_stress": "Withdraws further until the relationship exists in name only",
+  "at_rest": "Comfortable at arm's length",
+  "will_always": [
+    "keep emotional distance"
+  ],
+  "will_never": [
+    "be fully emotionally available"
+  ],
+  "unless": [
+    "someone earns closeness through years of patient consistency"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Lone Wolf",
+      "threshold": 0.7,
+      "context": "emotional distance"
+    }
+  ],
+  "opposite_of": [
+    "Devoted"
+  ],
+  "tags": [
+    "distance",
+    "protection",
+    "unavailable"
+  ]
+}

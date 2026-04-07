@@ -1,0 +1,45 @@
+{
+  "id": "7d1b4e9a3c6f0d2e8b5a7c9f1e4d6b30",
+  "name": "Vanthorpe Analyst's Pressed Distinction Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The Tier 4 specialist's answer to the corporate uniform — not a rebellion, but a negotiation. The trousers are Vanthorpe's own selvedge-weave wool-analog in deep charcoal, cut with a slightly higher rise and a subtly wider leg than regulation, landing exactly within the acceptable deviation window that every Tier 4 employee has memorized. The shirt is a Vanthorpe Coolweave in pale cream rather than the standard-issue blue, the collar structured without being stiff, the fabric visibly better — it drapes rather than sits. Over it goes a single-breasted blazer in a dark slate herringbone, not issued but purchased, with a half-lining in a deep copper-rust that flashes only when the wearer reaches for something. The left sleeve has a discreet aug-channel seam running from elbow to cuff, accommodating a chrome forearm prosthetic with a clean, unobtrusive split that closes magnetically when not needed. Footwear is a pair of Sorel & Vane cap-toe oxfords in oxblood, resoled once and better for it. A slim brushed-titanium BCI port cover at the right temple, matching the blazer buttons. No lanyard. Badge is embedded.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "selvedge wool-analog",
+    "coolweave synthetic-cotton",
+    "herringbone wool-blend",
+    "copper-rust acetate lining",
+    "brushed titanium hardware"
+  ],
+  "functionality": "Aug-channel seam in left sleeve for chrome forearm compatibility, embedded badge RFID in blazer lining, BCI port cover integrated at temple, temperature-regulating coolweave shirt layer, magnetic closure aug-seam",
+  "what_it_says": "You earn enough to choose your own clothes. You chose well but not provocatively. You know exactly where the line is and you have placed yourself one careful step on the correct side of it. The oxblood shoes are the tell — you have opinions, and you are confident enough to express one.",
+  "worn_by": [
+    "Tier 4 data architects",
+    "senior compliance analysts",
+    "project lead specialists",
+    "licensed BCI integration consultants",
+    "anyone who has passed their second review cycle and knows it"
+  ],
+  "manufacturer": "Vanthorpe Ready-to-Wear (blazer and trousers); Vanthorpe Coolweave line (shirt); Sorel & Vane (footwear)",
+  "price_range": "Φ 1,400–Φ 2,100 full set",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The copper-rust lining of this blazer is a color associated with a specific internal faction within a corponation — a color the wearer chose innocently. Suddenly they are receiving nods from people three tiers above them and cold shoulders from their own team.",
+    "The embedded badge in the blazer lining has been quietly cloned. Someone is walking floors they shouldn't be walking. The original owner doesn't know yet, but they've started getting flagged for access events they can't account for.",
+    "A character is being interviewed for a Tier 5 position. The interviewer spends thirty seconds looking at their shoes before saying anything. The oxblood oxfords were either exactly right or exactly wrong, and the character won't know which until the offer letter arrives — or doesn't."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_4",
+    "specialist_wear",
+    "aug_compatible",
+    "vanthorpe",
+    "rule_bender",
+    "professional"
+  ],
+  "parent_corponation": ""
+}

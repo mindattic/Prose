@@ -1,0 +1,45 @@
+{
+  "id": "7e1a5c3f9b2d084c6f3e7a1d5c9b2e06",
+  "name": "Pragma TacWeave Ballistic Underlayer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Slim-cut, body-conforming underlayer in matte slate with subtle hexagonal weave texture barely visible at the collar and cuffs. From outside, it reads as an athletic undershirt. Inside, six overlapping panels of soft ballistic weave — shear-thickening fluid suspended in para-aramid matrix — cover the torso and upper back. The fabric breathes adequately, sits flat under dress shirts or jackets without visible bulk, and resists printing against the skin. Gene-channel vents along the lower back accommodate tail-base modifications.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "para-aramid ballistic weave",
+    "shear-thickening fluid matrix panels",
+    "synth-cotton outer shell",
+    "gene-vent stretch panels",
+    "anti-print laminate lining"
+  ],
+  "functionality": "NIJ Level II soft ballistic protection across torso panels; passes as athletic underlayer in most visual inspection contexts; gene-vent rear panels for tail-base geneware; moisture management for all-day desk or field wear.",
+  "what_it_says": "You've thought about what happens when things go wrong, and you've done something about it without making it anyone's business.",
+  "worn_by": [
+    "mid-level corporate investigators",
+    "security consultants",
+    "journalists covering volatile beats",
+    "small business owners in contested districts",
+    "off-duty CorpSec"
+  ],
+  "manufacturer": "Pragma Systems — Tier 3-4 tactical supplier",
+  "price_range": "Φ280–Φ450",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Tier 3 accountant starts wearing one after their firm's senior partner gets shot in the lobby — nobody at the office knows.",
+    "A recovered round embedded in the ballistic panel is the wrong caliber for any licensed weapon in this district.",
+    "The gene-vent panel has been retrofitted with a hidden pocket — slim, flat, body-temperature — currently holding a data chip."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "ballistic",
+    "armor-underlayer",
+    "gene-compatible",
+    "tier-3",
+    "tier-4",
+    "conceal",
+    "tactical"
+  ],
+  "parent_corponation": ""
+}

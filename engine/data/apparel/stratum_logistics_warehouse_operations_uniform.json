@@ -1,0 +1,35 @@
+{
+  "name": "Stratum Logistics Warehouse Operations Uniform",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "logistics_warehouse",
+  "manufacturer": "Stratum Workwear Solutions",
+  "description": "Stratum supplies warehouse and logistics operations across Meridian 88's distribution network, and their standard warehouse operations uniform is the daily reality for tens of thousands of workers in the city's fulfillment centers, sorting hubs, and cold-storage facilities. The set consists of a reinforced polo shirt, cargo trousers with articulated knees, a high-visibility safety vest, and an optional thermal liner for cold-chain facilities. The polo and trousers come in company-specific colorways — employers purchase branded versions with their own logo over-printed on the Stratum base — but the cut and construction are standardized. The safety vest is the item with the most technology: embedded in the hi-vis panels are passive RFID nodes that interface with warehouse management systems, logging worker location, task completion, and equipment interaction without requiring active input.\n\nThe trousers feature a full tool-loop array at the thigh and hip, sized for handheld scanners, stylus tools, and packing materials. Knee panels are reinforced with gel-core impact absorption for workers who spend time crouching at lower rack levels. Augment compatibility is handled through a universal port-access panel system on the forearms and a back panel with breakaway seams for dorsal chrome. Geneware tail accommodations are standard on all Stratum trousers. Workers generally receive two sets per year and are responsible for their own maintenance — a point of ongoing friction in Stratum-supplied workplaces, as the sets degrade faster than the replacement cycle accounts for.",
+  "tier_availability": "Tier 1-2",
+  "price": "Φ55",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "Stratum warehouse uniforms are one of the most common work garments in Meridian 88's lower tiers. The embedded RFID tracking is widely known among workers and widely resented — break-room conversations about the surveillance nodes are a constant undercurrent of warehouse culture. Some workers have developed low-tech methods for briefly masking their vest signals during unauthorized breaks, a practice that has become a minor subculture of its own.",
+  "story_hooks": [
+    "The RFID logs from a Stratum vest place a worker at the scene of a warehouse theft they claim they didn't commit — but the logs have been edited.",
+    "A character needs to access a restricted distribution hub; Stratum uniforms are the entry vector, but the RFID nodes will need to be dealt with.",
+    "A labor organizer is documenting the gap between Stratum's replacement cycle and actual uniform lifespan as part of a broader wage-theft case."
+  ],
+  "tags": [
+    "logistics",
+    "warehouse",
+    "stratum",
+    "hi-vis",
+    "rfid",
+    "augment-compatible",
+    "geneware-compatible",
+    "uniform",
+    "tier1",
+    "tier2",
+    "labor"
+  ],
+  "id": "ff23826e6c8a490b9cbddbe95895cbb6",
+  "parent_corponation": ""
+}

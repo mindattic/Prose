@@ -1,0 +1,48 @@
+{
+  "id": "15a8d3f6c2e049780c5d6e7f8a9b0127",
+  "name": "Arcturus Defense Solutions PolyBind PB-5",
+  "type": "weapon",
+  "aliases": [
+    "PB-5",
+    "glue gun",
+    "sticky stop",
+    "amber",
+    "the curer"
+  ],
+  "category": "spray",
+  "description": "The Arcturus Defense Solutions PB-5 PolyBind is a two-component reactive polymer adhesive delivered via a dual-chamber aerosol system. The two components — a polyurethane prepolymer and an accelerated moisture-cure catalyst — are stored separately within the canister and mixed at the nozzle tip at the moment of discharge. The resulting foam expands to approximately four times its liquid volume within two seconds of application and achieves a tensile bond strength sufficient to resist 180kg of separation force within eight seconds. Applied to a subject's feet, legs, or hands, the compound effectively immobilizes them by bonding to footwear, clothing, and any adjacent surface — floor, wall, or vehicle — with equal affinity. The set foam is resistant to tearing and requires either chemical solvent application or mechanical cutting to remove.\n\nThe PB-5 was developed for crowd control and perimeter security applications where conventional restraints cannot be applied quickly enough or in sufficient quantity. A single canister contains enough compound to produce three to four effective immobilization applications. The foam is chemically inert after curing and does not cause skin irritation or systemic toxicity in standard exposure; however, application over a subject's face or airway is explicitly prohibited in Arcturus's deployment guidelines due to asphyxiation risk from foam expansion in respiratory passages. The compound is soluble in Arcturus's proprietary PolyRelease PR-1 solvent, which takes approximately 90 seconds to work and is carried by operators for post-incident release of cooperative subjects.\n\nThe PB-5 has been adopted by several Tier 2 and 3 corporate security firms as a restraint alternative for situations where conventional zip-ties or handcuffs are impractical — large crowds, panicking individuals, subjects with augmented limbs that defeat standard restraints. Its effectiveness against augmented subjects is a particular selling point, as the polymer bonds to chrome and synthetic materials as readily as to fabric and concrete.",
+  "manufacturer": "Iron Point Ammunition",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — institutional purchase available to registered security contractors; individual purchase requires personal protection professional credential; use over airway or face is categorically prohibited",
+  "base_technologies": [
+    "dual-component reactive polyurethane system",
+    "accelerated moisture-cure catalyst",
+    "expanding polymer foam",
+    "dual-chamber aerosol nozzle mixing"
+  ],
+  "specifications": "System type: dual-component reactive polyurethane foam\nComponents: polyurethane prepolymer (Chamber A) / moisture-cure catalyst (Chamber B)\nExpansion ratio: 4:1 (liquid to cured foam)\nInitial cure time: 8 seconds (handling strength)\nFull cure time: 45 seconds\nBond strength (full cure): 180kg separation resistance\nApplications per canister: 3–4 effective immobilization doses\nChemical compatibility: bonds to fabric, chrome, concrete, polymer, glass\nRelease agent: PolyRelease PR-1 (90-second dissolution)\nLethality risk: asphyxiation if applied to face/airway\nNet weight: 340g\nPrice: Φ480",
+  "tactical_use": "Deployed to immobilize individuals at a distance without physical contact. The preferred application point is the lower legs and feet — a single burst anchors the subject to the floor within seconds. For augmented subjects with enhanced limb strength, application to multiple points simultaneously (both legs, or legs and one arm) increases restraint reliability. Operators carry PR-1 solvent for release of cooperative subjects. In perimeter security, the PB-5 is used to seal doorways and corridors by spraying across the floor, creating an adhesive zone.",
+  "cultural_context": "In security circles, the PB-5 is called 'the curer' for its rapid-set properties. On the street, being 'ambered' — immobilized by PolyBind foam — has become a specific and humiliating term for a security encounter that went badly. The foam is visible, distinctive, and not quickly removed, meaning a 'cured' subject is publicly marked as having been restrained. There are accounts of security firms leaving individuals bonded in place for hours without deploying the PR-1 solvent, which is considered a significant abuse of the system.",
+  "known_users": [
+    "Arcturus contracted security divisions",
+    "Tier 3 corporate campus security",
+    "transit authority rapid response teams",
+    "high-security facility perimeter units"
+  ],
+  "story_hooks": [
+    "A Shelf resident was found bonded to a wall in a transit corridor — dead from exposure, not from the foam itself. The PR-1 solvent that should have been used to release them is missing from the nearby security post log. No one has been assigned responsibility."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "less_lethal",
+    "adhesive",
+    "immobilization",
+    "tier3",
+    "aerosol",
+    "arcturus",
+    "crowd_control"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

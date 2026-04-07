@@ -11,7 +11,7 @@
   "category": "dart",
   "caliber": "80mm x 0.3mm",
   "description": "The TNA-80 is a pattern-deployable array of ultra-fine tungsten-alloy conductive needles designed for the ENAR-3 'Porcupine' incapacitation rifle. Each needle is 80mm long and 0.3mm in diameter — thin enough to penetrate skin and light clothing with minimal visible wounding but long enough to reach subcutaneous nerve pathways. The needles are coated in a hydrophilic compound that enhances electrical conductivity when in contact with biological fluid, turning each embedded needle into an electrode for the weapon's charge pattern system.\n\nThe needles are loaded in pre-configured pattern cassettes, each containing between 12 and 48 needles arranged in a specific geometric spread optimized for a particular incapacitation effect. The 8 pre-loaded charge patterns — from localized hand tremor to full-body incapacitation — correspond to cassette configurations that deliver needles to the optimal anatomical targets for that effect. A 'Hand Tremor' cassette deploys 12 needles in a tight cluster aimed at the forearm, while a 'Full Body Incapacitation' cassette spreads 48 needles across a torso-sized target area.\n\nEach cassette is single-use — one discharge per cassette, requiring a reload between shots. This makes the ENAR-3 a slow-firing weapon by any standard, but its effects are immediate and precisely controllable. The needles themselves are designed to be minimally invasive: thin enough that most targets don't immediately realize they've been hit, with the hydrophilic coating preventing significant bleeding. Removal is straightforward for a medic with tweezers, though the electrical charge residue in the tissue can cause localized muscle fasciculation for hours after extraction.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Ringo Medical Transport",
   "tier_availability": "Tier 3+ / Licensed security contractors",
   "legality": "Licensed — Class-B Directed Incapacitation certification required",
   "specifications": "weight_per_cassette: 8-32g (depending on needle count)\nmuzzle_velocity: 280 m/s (electromagnetic acceleration)\npenetration_rating: Skin and light clothing only, defeated by any rigid armor\neffective_against: Unarmored biological targets, exposed skin areas\ncountermeasures: Rigid armor, Faraday-weave clothing, thick leather or synthetic outerwear, distance beyond 25m (pattern dispersal)",
@@ -48,5 +48,6 @@
     "clothing",
     "armor",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

@@ -1,0 +1,51 @@
+{
+  "id": "b2c9f4d7a0e1386c5f8b3d6a2e7c1904",
+  "name": "Thornback Tactical Hood — Detach Series 3",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A standalone tactical hood from Thornback, a street-adjacent security outfitter operating out of Circuit Ward 12. Cut from laminated ballistic ripstop in matte black with subtle olive undertone, it features a built-in balaclava liner that can be rolled down into the collar. The rear panel has a split-channel seam running crown to neck — accommodating spinal rigs and dorsal chrome up to 40mm profile. Horn slots at the crown are reinforced with bonded flex-rubber grommets, cleanly finished. Attachment points at the collar connect to standard tactical plate carrier mounts.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "laminated ballistic-grade ripstop (nylon-aramid blend)",
+    "roll-down balaclava liner in brushed moisture-wicking mesh",
+    "bonded flex-rubber horn grommets",
+    "YKK-equivalent pressure-release collar attachments",
+    "reflective-suppression coating on outer shell"
+  ],
+  "functionality": "Full head and neck coverage. Balaclava liner can be worn or stowed. Split rear seam accommodates spinal rigs and dorsal chrome. Horn grommets prevent pressure sores during extended wear. Collar mounts attach to compatible vest systems. Rain-repellent outer treatment.",
+  "what_it_says": "You've thought about every angle of what could come at your head, biological or ballistic.",
+  "worn_by": [
+    "CorpSec contractors",
+    "Tier 2 security workers",
+    "geneware-modded individuals (horned)",
+    "private couriers",
+    "night-shift dock security",
+    "street operatives"
+  ],
+  "manufacturer": "Thornback (street-adjacent security outfitter, Circuit Ward 12)",
+  "price_range": "Φ140–Φ210",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The split-channel seam design was reverse-engineered from a stolen Axiom Defense prototype — Axiom has been trying to trace the leak for two years.",
+    "A specific run of Series 3 hoods was sold to both sides of a Circuit Ward 12 territorial dispute; the hoods are identical, and the bodies are sometimes hard to tell apart afterward.",
+    "A geneware-modded individual with full rack horns wore this hood through a corponation checkpoint without being flagged — the grommets suppress heat signature from horn bases."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "hood",
+    "balaclava",
+    "tactical",
+    "tier-2",
+    "tier-3",
+    "aug-compatible",
+    "gene-compatible",
+    "detachable",
+    "spinal-rig-compatible",
+    "horn-accommodation",
+    "thornback",
+    "street-brand"
+  ],
+  "parent_corponation": ""
+}

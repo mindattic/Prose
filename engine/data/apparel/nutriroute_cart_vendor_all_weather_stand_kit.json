@@ -1,0 +1,50 @@
+{
+  "id": "e7b5d2a9c1f043718c6e3b0d5a2f9c34",
+  "name": "NutriRoute Cart Vendor All-Weather Stand Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A street food vendor's full working kit, built for twelve-hour outdoor shifts in M88's acid-tinged weather and the crushing foot traffic of Circuit-level plazas. The foundation is a long-sleeved fitted base layer in white moisture-wicking synth-cotton, worn under a NutriRoute-branded bib apron in bright saffron yellow with wide chest straps and a front kangaroo pocket large enough to hold a payment terminal, two seasoning pouches, and a folded rain hood. The apron's fabric has a food-safe antimicrobial coating and a water-resistant outer face. Over the base layer, a charcoal zip-through hoodie provides warmth during low-traffic hours; the hood is lined in the same saffron yellow as the apron, visible when thrown back. Wide-leg black cargo trousers in a light synth-canvas have a deep rear pocket on each leg and a knee patch in the same saffron yellow — a NutriRoute brand consistency requirement that vendors quietly resent. Footwear is a pair of black slip-resistant clogs with a closed toe, waterproof upper, and a cushioned insole rated for all-day standing on hard surface. A flat-brimmed saffron cap with a NutriRoute logo embroidered in white sits on the crown, often worn slightly tilted. The kit reads loud and cheerful in color, worn and personal in texture.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "white moisture-wicking synth-cotton base layer",
+    "saffron synth-canvas bib apron (antimicrobial, water-resistant coating)",
+    "charcoal zip-through hoodie with saffron hood lining",
+    "light synth-canvas cargo trousers",
+    "food-safe antimicrobial fabric treatment",
+    "waterproof closed-toe slip-resistant clog upper",
+    "cushioned standing-rated insole"
+  ],
+  "functionality": "Food-safe antimicrobial apron coating, large kangaroo apron pocket for payment terminal and supplies, water-resistant outer fabric for acid rain exposure, slip-resistant all-day standing footwear, integrated rain hood in kangaroo pocket, layered temperature regulation for outdoor all-weather shifts.",
+  "what_it_says": "You know your regulars by order, not name. You've been at the same corner for six years and you know who's late for work and who's been crying and who's carrying something they shouldn't be. The saffron is loud and you've learned to use that — nobody looks twice at the cart vendor. You see everything. You remember everything.",
+  "worn_by": [
+    "NutriRoute licensed cart vendors",
+    "street food operators",
+    "independent market stall workers",
+    "plaza food service staff",
+    "traveling commissary workers"
+  ],
+  "manufacturer": "NutriRoute (corponation-branded vendor uniform program; apron and cap issued, remaining pieces vendor-sourced within brand color compliance guidelines)",
+  "price_range": "Φ140–Φ210 (apron and cap company-issued; remaining pieces self-purchased within spec)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A NutriRoute vendor at a specific Circuit plaza has been quietly keeping a handwritten log of everyone who passes their cart between 0600 and 0900 — they've noticed a pattern in the foot traffic that suggests a synchronized movement of people that has nothing to do with commuting.",
+    "The large kangaroo pocket of a vendor's apron has been used as a dead-drop for months — small packages, folded notes, once a very small firearm — and the vendor wants out of the arrangement but doesn't know how to safely refuse.",
+    "The saffron uniform makes the vendor instantly recognizable across the plaza, which is exactly why someone is impersonating them — a fake NutriRoute cart has appeared two blocks east, staffed by someone who doesn't quite know the menu."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "street_vendor",
+    "food_service",
+    "nutriroute",
+    "corponation_issued",
+    "hi_vis",
+    "gene_compatible",
+    "outdoor_work",
+    "all_weather"
+  ],
+  "parent_corponation": ""
+}

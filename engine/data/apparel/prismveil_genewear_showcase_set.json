@@ -1,0 +1,50 @@
+{
+  "id": "c8b3e1f7a04d256891fc3a7e2b5d08c1",
+  "name": "Prismveil Genewear Showcase Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A Tier 3 club outfit engineered from the ground up for geneware-modded bodies — specifically those with tails, horns, bioluminescent skin, or non-functional wings. The top is a structured halter in deep indigo holographic-trim fabric, the shimmer shifting between violet and copper depending on angle and light source. The back is entirely open in a dramatic plunge with a tailored split that widens at the base — a generous, finished tail-aperture with smooth synth-satin edging that won't chafe fur or scale tissue. Pants are wide-cut palazzo style in layered sheer iridescent organza over a matte charcoal liner, with a high-rise waist that sits below any spinal modification hardware and a back seam that opens via hidden magnetic closures to accommodate tail roots of any diameter. A lightweight cape attachment — holographic-trim organza in shifting amber-to-teal — clips at the shoulder blades and drapes asymmetrically, designed to rest over non-functional wing stubs without compression. Horn-wearers benefit from a simple crown-accessory option: a brushed-rose-gold circlet that wraps the base of a single horn or bridges between two, embedded with slow-pulse biolum nodes. Shoes are open-toe block-heel sandals in rose-gold synth-leather, adjustable to accommodate digitigrade feet or standard human proportions.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "holographic-trim indigo fabric",
+    "synth-satin tail-aperture edging",
+    "sheer iridescent organza",
+    "matte charcoal liner",
+    "holographic-trim organza cape",
+    "brushed rose-gold synthetic metal",
+    "biolum nodes",
+    "rose-gold synth-leather"
+  ],
+  "functionality": "Full geneware accommodation: finished tail-aperture with magnetic closure expansion, cape designed to rest over wing stubs without restricting circulation, adjustable horn circlet, digitigrade-compatible footwear. Holographic trim is passive — no power required. Biolum nodes in the circlet run on a 48-hour micro-cell.",
+  "what_it_says": "Middle-management or small business owner who invested in geneware mods and wants clothes that celebrate rather than awkwardly accommodate them. This outfit says the modifications were a choice, not an accident — they're displayed with intention and dressed to match. The holographic trim is aspirational without being pretentious.",
+  "worn_by": [
+    "geneware-modded Tier 3 professionals on nights out",
+    "small business owners with cosmetic modifications",
+    "mid-tier club regulars with tails, horns, or wing stubs",
+    "bioluminescent-skinned patrons who want their glow complemented rather than competed with"
+  ],
+  "manufacturer": "Cascara Mods & Thread (Tier 3 boutique, specializes in geneware-compatible fashion)",
+  "price_range": "Φ740–Φ1,400",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A club has a strict 'no visible geneware' door policy — nominally illegal under M88 anti-discrimination statutes but quietly enforced — and a wearer in this outfit becomes the test case when they're turned away and decide to push back publicly.",
+    "The biolum nodes in the horn circlet begin resonating with another patron's bioluminescent skin modification at close range, creating an unintended light-sync effect that draws a crowd — and the attention of someone who shouldn't be watching.",
+    "The manufacturer is accused of stealing geneware-accommodation designs from a Tier 1 self-modified community that pioneered the tail-aperture construction years earlier — the wearer, unknowingly dressed in contested IP, gets caught in the middle."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "nightlife_club",
+    "tier 3",
+    "gene_compatible",
+    "geneware_display",
+    "holographic_trim",
+    "tail_compatible",
+    "horn_compatible",
+    "wing_compatible",
+    "gender_fluid",
+    "club_wear"
+  ],
+  "parent_corponation": ""
+}

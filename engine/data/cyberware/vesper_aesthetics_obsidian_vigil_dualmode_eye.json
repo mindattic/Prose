@@ -1,0 +1,55 @@
+{
+  "id": "2d6f0b8e5c3a917f4d2e8b1c9a5f30d7",
+  "name": "VESPER AESTHETICS Obsidian Vigil DualMode Eye",
+  "brand_name": "VESPER AESTHETICS",
+  "product_name": "Obsidian Vigil DualMode Ocular Couture",
+  "type": "cyberware",
+  "aliases": [
+    "Vigils",
+    "Dark Glass",
+    "Pretty Killers"
+  ],
+  "category": "ocular",
+  "body_location": "eyes",
+  "description": "The Obsidian Vigil is Vesper Aesthetics' open secret—a fashion ocular that presents as a luxury cosmetic product while housing a restricted-tier threat detection and low-light combat suite underneath its signature solid-black aesthetic. The outer display layer renders a seamless obsidian iris with optional subtle iridescent shimmer, indistinguishable from a high-end cosmetic implant; beneath it, a secondary processor runs passive threat-range estimation, motion prediction in peripheral vision, and full-spectrum low-light amplification invisible to external observers. Switching between fashion and tactical modes takes a practiced blink sequence.\n\nVesper markets the Vigil discreetly through private consultation, never in public catalogs, and the clientele list is understood to include Spire security-conscious executives, high-profile entertainers with genuine threat profiles, and a certain class of Tier 4 socialite who prefers to be underestimated. On the street they're called Pretty Killers by people who've learned the hard way that not all fashion eyes are harmless.",
+  "manufacturer": "VESPER AESTHETICS",
+  "tier_availability": "Tier 4-5",
+  "legality": "Restricted",
+  "installation_requirements": "Vesper private clinic only; appointment-based; identity verification required; 3.5-hour procedure",
+  "rejection_risk": "Low — Vesper premium biocompatible housing; dual-processor thermal load requires 8-week thermal regulation adaptation period",
+  "maintenance": "Annual Vesper private clinic service; fashion layer substrate recharge every 18 months; tactical firmware updates via secure Vesper channel",
+  "specifications": "{\"fashion_layer\": \"full-sclera obsidian display with optional iridescent shimmer, 8 intensity settings\", \"low_light_amplification\": \"full spectrum to 0.001 lux\", \"threat_ranging\": \"passive optical range estimation to 200m\", \"motion_prediction\": \"peripheral motion arc modeling, 160° field\", \"mode_switch\": \"blink sequence, 0.3 second transition\", \"recording\": \"2K continuous, 1TB onboard\", \"cosmetic_detectability\": \"presents as standard fashion ocular on biometric scan\", \"zoom\": \"1x–8x optical\"}",
+  "side_effects": [
+    "Mode-switch blink sequence occasionally triggers during REM sleep, causing users to wake in tactical mode",
+    "Peripheral motion prediction creates hyperawareness in crowded social settings that users describe as exhausting",
+    "The obsidian aesthetic blocks the user's own eye-contact social cues, creating subtle but persistent interpersonal distance",
+    "Dual-processor thermal load causes mild orbital warmth perceptible to close physical contact"
+  ],
+  "cultural_context": "The Obsidian Vigil exists in a deliberate legal gray zone that Vesper navigates through aggressive private-client agreements and strategic ambiguity about what exactly the tactical suite constitutes under Meridian law. Among the Spire's threat-aware elite, wearing a pair is a statement: you take your own safety seriously enough to hide that you're taking it seriously, which is the most Spire thing imaginable.",
+  "known_users": [
+    "Tier 4–5 executives and VIPs with genuine personal threat profiles",
+    "High-profile entertainers with dedicated security concerns",
+    "Spire-level organized crime leadership maintaining social legitimacy",
+    "Private security consultants embedded in civilian social contexts",
+    "Wealthy individuals who have survived at least one assassination attempt"
+  ],
+  "story_hooks": [
+    "A Vesper private clinic appointment list has leaked, and every name on it is now a target for someone who wants to know which Spire elite are running hidden tactical hardware",
+    "A socialite's Obsidian Vigil tactical logs recorded a conversation at a Canopy party that neither party was supposed to have — the recording is now the most valuable object in the city",
+    "Vesper is quietly recalling a specific production batch of Vigil units, and they're not saying why — the owners of that batch are being contacted by a very different kind of representative than a Vesper service technician"
+  ],
+  "street_price": "Φ58,000",
+  "licensed_price": "Φ140,000",
+  "tags": [
+    "cyberware",
+    "ocular",
+    "fashion",
+    "tactical",
+    "hybrid",
+    "stealth",
+    "restricted",
+    "luxury",
+    "bilateral"
+  ],
+  "parent_corponation": ""
+}

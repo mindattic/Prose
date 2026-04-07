@@ -1,0 +1,55 @@
+{
+  "id": "a3f7c2e1b849d056f3a1c7e2b049d856",
+  "name": "ZhengDao Bioelectric LumbarBrace Pro",
+  "brand_name": "ZhengDao Bioelectric",
+  "product_name": "LumbarBrace Pro",
+  "type": "cyberware",
+  "aliases": [
+    "the brace",
+    "spine wrap",
+    "dock back",
+    "iron spine",
+    "workhorse"
+  ],
+  "category": "professional",
+  "body_location": "spinal — lumbar vertebrae L1 through L5, subdermal paraspinal musculature",
+  "description": "The LumbarBrace Pro is a semi-rigid bioelectric exoskeletal support system implanted along the lumbar spine and surrounding musculature. A lattice of shape-memory polymer rods is anchored to the transverse processes of L1–L5 via osseointegrated micro-pins, with a network of galvanic stimulation nodes threaded through the erector spinae and multifidus muscle groups. The system continuously monitors spinal load via embedded pressure sensors and delivers precisely timed microcurrent pulses to activate stabilizing musculature before strain occurs — predictive rather than reactive. During heavy lifts, the lattice stiffens to distribute compressive force across a wider cross-section of the vertebral column, reducing peak disc pressure by an estimated 40–60% depending on load geometry. Firmware updates delivered over the air adjust stimulation protocols based on accumulated biomechanical data logged during the user's specific work patterns.\n\nThe LumbarBrace Pro is the standard implant for anyone whose livelihood depends on their back. Dock workers on the Lake Michigan freight terminals, hospital orderlies transferring patients, warehouse pickers at the Shelf-level distribution centers, and residential construction crews are the primary demographic. For many Tier 1 and Tier 2 workers, a blown lumbar disc is a career-ending and financially catastrophic event — the LumbarBrace Pro is cheaper than two months of recovery and far cheaper than spinal reconstructive surgery. Workers often describe the experience as feeling like someone is always bracing their back at exactly the right moment, a subtle but constant sense of support they notice most when the implant is temporarily offline for maintenance. Employer-subsidized installation is common in logistics corponations, and many labor contracts in physically demanding sectors now list it as a standard onboarding benefit.",
+  "manufacturer": "ZHENG DAO BIOELECTRIC",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient surgical clinic; local anesthesia with sedation; osseointegration requires 6–8 week healing period before full activation",
+  "rejection_risk": "Low",
+  "maintenance": "Annual firmware update and load-calibration session at any ZhengDao-certified clinic; polymer lattice rated for 10-year service life before elective replacement",
+  "specifications": "{\"load_reduction\": \"40-60% peak disc compression\", \"stimulation_nodes\": 18, \"sensor_refresh_rate\": \"200Hz\", \"battery\": \"biogalvanic self-charging, no replacement required\", \"lattice_material\": \"shape-memory polymer composite\", \"wireless_update\": true, \"data_logging\": \"continuous biomechanical telemetry\", \"weight\": \"34g installed\"}",
+  "side_effects": [
+    "Mild lower back stiffness during the first 2–3 weeks of osseointegration",
+    "Occasional involuntary muscle twitch during overnight recalibration cycles",
+    "Transient tingling along lumbar dermatomes when stimulation thresholds are adjusted",
+    "Some users report difficulty sensing fatigue in the lower back, occasionally leading to overexertion in unmonitored muscle groups"
+  ],
+  "cultural_context": "In Tier 1 and Tier 2 communities, the LumbarBrace Pro carries essentially zero stigma — it is viewed with the same neutrality as steel-toed boots or a back brace belt, just permanent and smarter. Among dock crews and warehouse workers, having one is often a mark of someone serious about their trade and their longevity. There is a mild class-inflected irony in Tier 4 and 5 spaces: the implant's utilitarian origins make it invisible in corporate wellness culture, where the equivalent demographic opts for more premium Helix Biosystems spinal products. On the Shelf, used units sold by workers who upgraded or left the trade are a common gray-market item, installed by informal technicians — a practice ZhengDao officially discourages but has never aggressively litigated.",
+  "known_users": [
+    "Freight dock workers and longshoremen",
+    "Hospital orderlies, nurses, and patient transport staff",
+    "Warehouse pickers and logistics workers",
+    "Residential and commercial construction laborers",
+    "Movers and heavy-equipment operators"
+  ],
+  "story_hooks": [
+    "A dock worker's LumbarBrace Pro begins logging anomalous load data suggesting they are regularly lifting weights inconsistent with their official job duties — someone has been using their crew to move something heavy and off-manifest.",
+    "A wave of counterfeit LumbarBrace Pro units installed through a Shelf-level gray-market clinic begin failing at the lattice anchors, causing spinal injuries in dozens of workers — someone is cutting polymer with substandard materials and the real ZhengDao has a PR crisis on its hands.",
+    "A labor organizer is using the biomechanical telemetry data logged by workers' LumbarBrace implants to build a legal case proving their employer's loading quotas exceed safe physiological limits — the corponation wants that data buried."
+  ],
+  "street_price": "Ф380–Ф520",
+  "licensed_price": "Ф900–Ф1,200",
+  "tags": [
+    "cyberware",
+    "professional",
+    "lifestyle",
+    "labor",
+    "spinal",
+    "ergonomic",
+    "physical-work"
+  ],
+  "parent_corponation": ""
+}

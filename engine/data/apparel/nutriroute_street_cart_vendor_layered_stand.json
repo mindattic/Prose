@@ -1,0 +1,49 @@
+{
+  "id": "2e50b8f193dc4a7e8c31d642f07a5b19",
+  "name": "NutriRoute Street Cart Vendor Layered Stand",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The uniform of a street food vendor working the Circuit grid — someone running a licensed cart or stall in one of M88's transit interchange markets, feeding the shift-change crowds with hot food and fast service. The foundation is a waterproof apron in deep charcoal with two wide kangaroo pockets at the hip, adjustable neck strap, and a NutriRoute vendor association logo embroidered in orange thread at the chest — a small circular badge marking the cart as part of the licensed vendor collective, not a black-market operation. Beneath the apron is a long-sleeve work shirt in navy with rolled-up cuffs, moisture-wicking, with a slim right-arm channel for basic neural port access (a concession to the vendor scanning their own BCI orders without removing layers). A thick-strapped canvas chest-cross — two straps meeting at a central ring — holds a compact insulated carry bag on the back for moving between the cart and supply drops. Trousers are charcoal utility cut, non-slip-treated at the knee, with a phone-sized side pocket sealed with a flap button. Footwear is a chunky slip-resistant clog-boot in black rubber composite, oil- and grease-proof, with a thick insole for standing twelve-hour shifts on concrete. A hairnet or close-cropped beanie in white covers the head — vendor association health code requirement. Hands are bare or in thin grip-texture food-service gloves, usually tucked into the apron pocket between uses.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "waterproof charcoal canvas apron",
+    "moisture-wicking polyblend work shirt",
+    "canvas chest-cross strapping",
+    "charcoal utility twill",
+    "rubber composite non-slip clog-boot",
+    "food-service polyethylene gloves",
+    "embroidered cotton patch"
+  ],
+  "functionality": "Non-slip boot sole for wet cart surfaces, moisture-wicking shirt for high-heat cooking environments, insulated back carry bag for supply runs, BCI neural port access channel in shirt sleeve, wide apron pockets for order tools and payment devices, slip-proof trouser knee treatment for crouching at low cart storage.",
+  "what_it_says": "Licensed, legitimate, and working every hour the transit system runs. The NutriRoute badge means they passed the vendor collective's health inspection and paid their monthly association fee — they have something to protect. The worn clog-boot soles mean they've been standing on this particular corner long enough to know every regular's order before they open their mouth.",
+  "worn_by": [
+    "licensed street food vendors",
+    "transit interchange cart operators",
+    "NutriRoute collective members",
+    "hot-food stall workers",
+    "mobile commissary assistants"
+  ],
+  "manufacturer": "NutriRoute Vendor Collective (apron and badge issued by collective; shirt and trousers from Hollenbeck workwear line; boots generic composite)",
+  "price_range": "Φ140–Φ200 (apron collective-issued at membership; remainder self-purchased)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A vendor's NutriRoute badge is a near-perfect counterfeit — but they've been working the same corner for two years, and everyone on the block knows them. Someone gave them that badge, and that someone is now calling in a favor.",
+    "The insulated back carry bag has a false bottom. The vendor has been moving something other than food supplies between the cart and the supply depot for six months, and they're terrified of being caught.",
+    "A transit interchange vendor witnessed something at the platform level during a night shift and has been wearing their apron hood pulled low ever since — they're trying to look like a different person, and it's almost working."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "street_vendor",
+    "food_service",
+    "licensed",
+    "collective_issued",
+    "non_slip",
+    "aug_compatible",
+    "transit_adjacent"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,47 @@
+{
+  "id": "a3f7c2e1b904d56a8f0e3c7d2b1a9f4e",
+  "name": "Helix Corp Compliance Tier Pressed Day Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The quintessential Tier 3 corporate uniform, issued with minor variations across a dozen corponation subsidiaries. A collarless button-front shirt in Helix Corp's proprietary 'administratum weave' — a mid-weight polysynth blend in muted slate-blue that resists wrinkling and absorbs approximately forty percent of ambient sweat. The shirt's collar sits slightly too high and the cuffs slightly too narrow, a cut optimized for a body-scanning algorithm rather than a human tailor. Straight-leg trousers in matching slate-grey with a permanent crease ironed in at the factory, worn smooth at the inner thigh from daily transit seating. A single-button blazer in the same grey-blue family, mass-produced in four standardized fits, with a subtle Helix Corp embossed chevron on the left breast pocket. Footwear is the Cordis Autofit Dress Oxford in matte charcoal, the laces replaced with magnetic closures after the originals frayed. A lanyard with a printed-polymer ID badge completes the look — the badge worn front-facing at chest height as policy dictates.\n\nUp close, the seams show stress at the shoulders and the blazer lining has begun to pill. The neural port collar-notch at the back of the neck has been hand-cut and messily finished with iron-on binding tape rather than factory-finished, a common modification for BCI-equipped workers that Helix Corp refuses to accommodate in their standard issue. The shoes show buffing marks where scuffs have been polished out repeatedly. This is a person who has worn this outfit, or one exactly like it, every working day for years.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "administratum polysynth weave",
+    "recycled polyester lining",
+    "synthetic cotton broadcloth",
+    "iron-on binding tape",
+    "magnetic closure strips",
+    "printed polymer"
+  ],
+  "functionality": "Wrinkle-resistant and sweat-absorbent fabric for long transit and desk shifts. Magnetic closures for quick security checkpoint compliance. BCI port notch (hand-modified). Badge lanyard anchor loop built into collar stay. Scuff-resistant shoe cap.",
+  "what_it_says": "This is someone who follows the rules because breaking them costs more than it's worth. The outfit signals full compliance with corponation dress code, mid-tier aspirationlessness, and the quiet exhaustion of someone who has stopped expecting the uniform to fit. The hand-cut BCI notch is the only visible act of personal agency.",
+  "worn_by": [
+    "Helix Corp cubicle administrators",
+    "mid-tier data entry clerks",
+    "compliance floor workers",
+    "junior scheduling coordinators",
+    "any Tier 3 office drone required to present as professional"
+  ],
+  "manufacturer": "Helix Corp Internal Provisioning Division",
+  "price_range": "Φ 180–Φ 260 (often partially subsidized by employer as 'uniform allowance')",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character wearing this outfit is pulled aside by a Helix Corp HR compliance bot that flags their hand-cut BCI notch as an 'unauthorized uniform modification' — the fine is small but the precedent is terrifying.",
+    "Two people in nearly identical versions of this outfit meet in a transit corridor and realize they work for competing subsidiaries of the same corponation — the badge chevrons are almost identical, the cut marginally different.",
+    "Someone is given a slightly better version of this outfit — same color, slightly better fabric — as a quiet signal that they are being considered for a Tier 4 evaluation. No one tells them directly."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_3",
+    "uniform",
+    "mass_produced",
+    "bci_compatible",
+    "helix_corp",
+    "compliant",
+    "pressed"
+  ],
+  "parent_corponation": ""
+}

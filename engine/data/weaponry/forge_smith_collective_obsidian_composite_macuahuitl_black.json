@@ -1,0 +1,47 @@
+{
+  "id": "e580e0daac24ee3e47bc9fb15542976c",
+  "name": "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'",
+  "type": "weapon",
+  "aliases": [
+    "Black Teeth",
+    "Obsidian Club",
+    "The Jaw",
+    "Volcanic Edge"
+  ],
+  "category": "melee",
+  "description": "A reconstruction of the Aztec macuahuitl — a flat wooden club edged with obsidian blades — rebuilt using synthetic obsidian-composite inserts set into a carbon-lattice frame. The Black Teeth's cutting edges are sharper than surgical steel, capable of edge retention that natural obsidian cannot achieve, and mounted in a frame that will not shatter under impact as traditional wooden versions did. The weapon combines pre-Columbian design philosophy with 23rd-century materials science.\n\nEach obsidian-composite insert is 8 centimeters long and 2 millimeters thick, set into machined slots along both edges of the paddle-shaped frame. The inserts are designed to be sacrificial — they chip and break on hard impacts, but each broken insert exposes a fresh cutting surface, and the weapon carries enough inserts (24 per edge) that it remains effective through extended combat. Replacement insert strips cost Φ40 and snap into the frame without tools.\n\nThe Forge-Smith Collective began producing Black Teeth at the request of a martial arts instructor with Nahua heritage who wanted to demonstrate that indigenous weapon designs had genuine tactical merit beyond historical curiosity. The weapon's performance in controlled testing — it outcut several corporate vibro-blades in unassisted cutting trials — silenced skeptics and created demand that the Collective struggles to meet. The macuahuitl has returned to Meridian 88 not as a museum piece but as a functional combat weapon.",
+  "manufacturer": "FORGE-SMITH COLLECTIVE",
+  "tier_availability": "Tier 1-2 (artisan availability)",
+  "legality": "Unlicensed — artisan production",
+  "base_technologies": [
+    "Synthetic obsidian-composite cutting inserts",
+    "Carbon-lattice structural frame",
+    "Sacrificial-edge continuous sharpness"
+  ],
+  "specifications": "total_length: 75 cm\nblade_width: 10 cm\nweight: 1.1 kg\ninsert_count: 48 (24 per edge)\ninsert_material: Synthetic obsidian-composite\nframe_material: Carbon-lattice composite\nreplacement_insert_cost: Φ40 per strip\nedge_sharpness: Exceeds surgical steel",
+  "tactical_use": "The Black Teeth cuts with extraordinary sharpness on the initial strike and maintains cutting performance as inserts break and expose fresh edges. The paddle shape allows both edge strikes and flat-face impacts, giving the wielder cutting and bludgeoning options in a single weapon. Against armored targets, the obsidian-composite inserts are hard enough to score and abrade armor coatings, degrading protection over repeated strikes. The weapon's flat profile makes it awkward to parry with conventional weapons — blades tend to slide along the paddle face rather than catching in a bind.",
+  "cultural_context": "The return of the macuahuitl to active combat use has resonated powerfully in Meridian 88's mixed-heritage communities. The weapon represents indigenous ingenuity validated by modern science — proof that pre-colonial weapon design was sophisticated, effective, and worthy of revival. The Black Teeth has sparked interest in other traditional weapons from cultures that were historically marginalized, and the Forge-Smith Collective has begun producing composite versions of weapons from African, Pacific Islander, and South Asian traditions. The movement is called 'ancestral tech' and it is growing.",
+  "known_users": [
+    "Ancestral-tech martial practitioners",
+    "Nahua heritage martial artists",
+    "Traditional weapons revivalists"
+  ],
+  "story_hooks": [
+    "An ancestral-tech practitioner armed with a Black Teeth defeated a cybernetically augmented opponent in a documented public fight — the footage has become a rallying point for the unaugmented community and a source of embarrassment for the cyberware industry.",
+    "A corporate anthropologist has documented the ancestral-tech movement and published a paper claiming it is a 'threat to technological progress.' The paper has generated death threats from both supporters and opponents of the movement."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "macuahuitl",
+    "obsidian",
+    "traditional",
+    "artisan",
+    "tier 1",
+    "cultural",
+    "ancestral-tech",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

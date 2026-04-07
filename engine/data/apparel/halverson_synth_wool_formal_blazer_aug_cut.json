@@ -1,0 +1,34 @@
+{
+  "name": "Halverson Synth-Wool Formal Blazer (Aug-Cut)",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "formal_blazer",
+  "manufacturer": "Halverson & Crane Clothiers",
+  "description": "Halverson's mid-range blazer in their standard synth-wool blend — a fabric that reads as professional without the cost of genuine animal-fiber wool. The Aug-Cut variant adds a structured right-shoulder seam that opens along a concealed magnetic closure, allowing access to shoulder-mount chrome without removing the jacket. The left cuff has a discreet port-access panel sized for the three most common BCI tether standards. Neither modification is advertised on the label; they're listed in the technical spec sheet available at point of sale.\n\nThis is the blazer a Tier 2 worker buys when they get a Tier 3 job offer and need to dress for the interview before they can afford Tier 3 clothes. It holds up to regular dry-cleaning cycles, drapes cleanly, and photographs well. The construction is honest — not luxurious, but not pretending to be.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ85",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "Halverson occupies the aspirational middle — clothes that signal effort and seriousness without signaling wealth. Wearing a Halverson Aug-Cut blazer to a corporate interview tells the interviewer you're augmented, you're functional, and you're not trying to hide it. That reads differently depending on which Corponation is interviewing you.",
+  "story_hooks": [
+    "The character bought this blazer for a Tier 3 interview five years ago and has worn it to every significant event since. It's been dry-cleaned so many times the synth-wool has a slightly different texture at the lapels. They're considering whether to replace it or keep wearing the history.",
+    "A Halverson quality-control recall notice comes through: a batch of Aug-Cut magnetic closures was produced with a micro-current flaw that can interfere with older shoulder-mount chrome. The character's blazer is in the affected batch.",
+    "Someone at a Tier 4 event comments on the blazer — not unkindly, but precisely enough that the character understands they've been identified as not belonging."
+  ],
+  "tags": [
+    "formal",
+    "blazer",
+    "synth-wool",
+    "aug-compatible",
+    "BCI-port",
+    "mid-tier",
+    "interview",
+    "professional",
+    "Halverson",
+    "Tier 2-3"
+  ],
+  "id": "45a8f877429641d1b5ab364311233dc9",
+  "parent_corponation": ""
+}

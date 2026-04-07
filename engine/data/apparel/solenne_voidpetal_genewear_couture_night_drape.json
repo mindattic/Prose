@@ -1,0 +1,48 @@
+{
+  "id": "c04f8e7a2b1d63509f7c2ea4d8b31076",
+  "name": "Solenne Voidpetal Genewear Couture Night Drape",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A Tier 5 VIP lounge piece from Solenne's experimental Genewear Couture line — a full-length asymmetric drape gown built around the body's geneware modifications rather than despite them. The primary fabric is Solenne's proprietary Voidpetal — a ultra-thin, gravity-weighted material that flows like liquid shadow, appearing pure matte black at rest but blooming with deep bioluminescent indigo and pearl under UV and sound-reactive lighting, the patterns shifting organically as the fabric moves. The gown opens at the upper back in a structured architectural frame — twin arcing panels of boned holographic organza that spread away from the spine like abstract wings, designed to accommodate geneware wings or simply to stand alone as sculpture. A full-length tail split runs the left side seam, edged in matching Voidpetal with a trailing hem that sweeps the floor. Horn channels at the crown are integrated into a matching headpiece — a minimal arc of the same holographic organza with fiber-optic threading that responds to the wearer's bioluminescent skin by mirroring its color in the headpiece's light output. Footwear is barefoot-compatible with optional Solenne Voidpetal ankle wraps that trail to the floor.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "Solenne Voidpetal gravity-weighted bioluminescent fabric",
+    "holographic organza boning panels",
+    "fiber-optic headpiece threading",
+    "Voidpetal ankle wrap extensions"
+  ],
+  "functionality": "Sound-reactive and UV-reactive Voidpetal requires no power source — purely material-reactive. Geneware wing accommodation frame is adjustable via concealed internal boning for wingspan up to 1.8 meters. Tail split is fully unbound for unrestricted movement of any tail type. Headpiece fiber-optic response to bioluminescent skin is passive — proximity-reactive, no BCI required. Barefoot-compatible base allows geneware foot modifications.",
+  "what_it_says": "This is someone for whom the entire room is a backdrop. The gown doesn't perform for the club — the club performs for the gown. Geneware is not accommodated here; it is celebrated as the design's reason for existing. Tier 5 doesn't explain itself. It simply arrives and the lighting adjusts.",
+  "worn_by": [
+    "Tier 5 corponation executives",
+    "geneware showcase patrons",
+    "Spire social architects",
+    "bioluminescent geneware individuals with significant social capital",
+    "non-binary and gender-fluid Spire elites"
+  ],
+  "manufacturer": "Solenne — Tier 5 corponation fashion house, Spire district flagship",
+  "price_range": "Φ 28,000–Φ 65,000 custom commission",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The Voidpetal fabric's organic bioluminescent bloom pattern has begun responding to a specific frequency that isn't music — it's a coded signal, and the gown is acting as an unintentional receiver, broadcasting the wearer's location to someone who should not know where they are.",
+    "A rival Tier 5 power broker's companion is wearing an identical gown — impossible, since each piece is custom commission — and the implications of who had access to Solenne's private pattern files are deeply dangerous.",
+    "The headpiece's fiber-optic response activates in proximity to another bioluminescent individual in the VIP lounge — someone the wearer has never met but whose genetic signature their geneware is recognizing, which is impossible unless they share a designer."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "nightlife_club",
+    "tier 5",
+    "spire",
+    "gene_compatible",
+    "bioluminescent",
+    "gown",
+    "couture",
+    "holographic",
+    "geneware_showcase",
+    "VIP_lounge",
+    "solenne"
+  ],
+  "parent_corponation": ""
+}

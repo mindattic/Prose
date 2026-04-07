@@ -1,0 +1,39 @@
+{
+  "id": "e8c4a1f3d0b25769c2e4f1a3b5d6e709",
+  "name": "Velex LumiPanel Legging",
+  "type": "apparel",
+  "category": "legwear",
+  "description": "A full-length compression legging in matte black with three vertical panels of optically clear biopolymer film running from hip to ankle on each leg. The panels are designed to sit over bioluminescent skin patches without interfering with light output — the glow shows through clean and unfiltered. On non-bioluminescent wearers, the transparent strips simply reveal skin.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "compression synth-knit",
+    "biopolymer transparent panel",
+    "flatlock seam"
+  ],
+  "functionality": "Transparent panels allow bioluminescent geneware to display through fabric; panels are scratch-resistant and UV-stable",
+  "what_it_says": "You got the bioluminescence and you're not hiding it under opaque fabric like it embarrasses you.",
+  "worn_by": [
+    "bioluminescent geneware users",
+    "clubbers and night-shift workers",
+    "people who treat their mods as aesthetic"
+  ],
+  "manufacturer": "Velex",
+  "price_range": "Φ55",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The panels on a contact's leggings are dark — their bioluminescence has stopped working, which shouldn't be possible without intervention.",
+    "A knockoff version uses cheaper film that yellows the glow, marking the wearer as someone who can't afford the real thing."
+  ],
+  "tags": [
+    "apparel",
+    "legwear",
+    "tier 3",
+    "gene-compatible",
+    "bioluminescence",
+    "transparent panel",
+    "geneware",
+    "night life"
+  ],
+  "parent_corponation": ""
+}

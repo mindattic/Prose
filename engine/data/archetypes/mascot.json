@@ -1,0 +1,34 @@
+{
+  "id": "2a02950856145bd4fc250c941ea38c8b",
+  "name": "Mascot",
+  "type": "archetype",
+  "category": "social",
+  "description": "Adopted by groups as a symbol or lucky charm rather than a true member",
+  "behavioral_signature": "Everyone likes them but no one takes them seriously",
+  "under_stress": "Realizes they have no real allies, only fans",
+  "at_rest": "Being patted on the head and tolerated",
+  "will_always": [
+    "be underestimated"
+  ],
+  "will_never": [
+    "be given real responsibility voluntarily"
+  ],
+  "unless": [
+    "they prove themselves in a crisis no one else can handle"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Court Jester",
+      "threshold": 0.6,
+      "context": "non-threatening role"
+    }
+  ],
+  "opposite_of": [
+    "Natural Authority"
+  ],
+  "tags": [
+    "underestimated",
+    "symbol",
+    "peripheral"
+  ]
+}

@@ -8,7 +8,7 @@
     "Cold Run"
   ],
   "category": "commercial_ground",
-  "manufacturer": "Tessera",
+  "manufacturer": "Tessera Transit Systems",
   "description": "A heavily shielded van designed to transport physical data storage — servers, drives, quantum storage units — between facilities. In a world where electronic transmission can be intercepted, sometimes the most secure way to move data is to put it in a box and drive it there. The Data Van is a Faraday cage on wheels, electromagnetically sealed, temperature controlled, and escorted by security that takes their job very seriously. The irony of a tech company moving data by truck is not lost on anyone.",
   "propulsion": "Electric, armored drive train",
   "speed": "100 km/h",
@@ -26,13 +26,11 @@
   "tags": [
     "commercialground",
     "transportation",
-    "ai",
     "corporate",
     "control",
     "medical",
-    "rain",
     "cold",
-    "train",
     "armor"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

@@ -1,0 +1,58 @@
+{
+  "id": "00faa1dff2213251ca641234219985a6",
+  "type": "faction",
+  "name": "The Neural Liberation Front",
+  "aliases": [
+    "NLF",
+    "Neural Lib",
+    "The Liberators"
+  ],
+  "motto": "Your mind is not their market.",
+  "description": "The Neural Liberation Front is a radical activist group of approximately 500 members that campaigns against what they call 'neural colonialism' — the corporate practice of using BCI technology to collect, analyze, and monetize human thought patterns, emotional responses, and cognitive data. In Meridian 88, where BCIs are ubiquitous and corporate firmware monitors everything from attention patterns to emotional states, the NLF argues that humanity's last private space — the mind itself — has been colonized for profit.\n\nThe NLF's activism ranges from public protest to direct action. On the legal end, they file lawsuits challenging corporate neural data collection, publish reports on the extent of BCI surveillance, and advocate for 'neural privacy' legislation. On the illegal end, they develop and distribute 'liberation firmware' — unauthorized BCI modifications that block corporate data collection while maintaining the BCI's functionality. This firmware is popular, effective, and a felony to install under Meridian 88's augmentation licensing laws.\n\nThe NLF is small but technically sophisticated. Its members include BCI engineers, neuroscientists, and privacy advocates who understand the technology well enough to fight it. They are hunted by corporate security (their liberation firmware costs the BCI industry an estimated Φ200 million annually in lost data revenue) and beloved by citizens who install the firmware and experience, for the first time, the sensation of thinking without being watched.",
+  "ideology": "Neural privacy is the last human right. Corporate collection of cognitive data through BCI technology is the most intimate violation of privacy in human history — more invasive than surveillance, more controlling than censorship, more dehumanizing than any physical intrusion. The mind must be free.",
+  "territory": "No permanent facilities. The NLF operates from rotating safe houses and encrypted networks.",
+  "leadership": "A figure known as 'Root' coordinates NLF operations. Root is believed to be a former corporate BCI architect whose identity is protected by the most sophisticated anonymity protocols the NLF can build.",
+  "methods": [
+    "Development and distribution of liberation firmware blocking corporate neural data collection",
+    "Legal challenges to corporate neural data practices",
+    "Public reports on the extent of BCI surveillance",
+    "Direct action against BCI data collection infrastructure",
+    "Education about neural privacy through underground channels",
+    "Advocacy for neural privacy legislation"
+  ],
+  "resources": [
+    "500 technically sophisticated members",
+    "Liberation firmware that blocks corporate neural data collection",
+    "Legal team specializing in neural privacy law",
+    "Encrypted communication and distribution networks",
+    "Root's deep knowledge of BCI architecture",
+    "Growing public concern about neural privacy that drives support and recruitment"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "TESSERA",
+      "type": "enemy",
+      "description": "TESSERA loses more revenue to NLF liberation firmware than to any other single cause. TESSERA's security division has a standing task force dedicated to identifying and neutralizing NLF operatives.",
+      "tags": [
+        "corporate",
+        "tech",
+        "conflict"
+      ]
+    }
+  ],
+  "narrative_function": "The NLF represents the fight for the last private space — the mind — in a world that has commodified everything else.",
+  "story_hooks": [
+    "The NLF has discovered something in the neural data that corporate BCIs collect — a pattern that suggests the data isn't just being monitored but is being used to subtly influence thought patterns. If true, every BCI in Meridian 88 is a mind control device. Root needs independent verification before going public.",
+    "A new version of liberation firmware has an unintended side effect: users report experiencing memories that aren't their own. The NLF doesn't know if this is a bug, a feature of the underlying BCI architecture they didn't understand, or something else entirely."
+  ],
+  "tags": [
+    "faction",
+    "political",
+    "privacy",
+    "neural",
+    "bci",
+    "radical",
+    "tech"
+  ]
+}

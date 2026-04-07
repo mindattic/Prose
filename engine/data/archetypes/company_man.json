@@ -1,0 +1,34 @@
+{
+  "id": "c522ac2f8c774cfff41a4babc370d366",
+  "name": "Company Man",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Identifies completely with their employer and defends them reflexively",
+  "behavioral_signature": "Uses 'we' when talking about the corporation's decisions",
+  "under_stress": "Doubles down on company loyalty even when the company is clearly wrong",
+  "at_rest": "Proudly representing the brand in every interaction",
+  "will_always": [
+    "defend their employer"
+  ],
+  "will_never": [
+    "publicly criticize the organization they serve"
+  ],
+  "unless": [
+    "the betrayal is so personal it shatters the identity merger"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Loyal Dog",
+      "threshold": 0.7,
+      "context": "institutional loyalty"
+    }
+  ],
+  "opposite_of": [
+    "Saboteur"
+  ],
+  "tags": [
+    "loyalty",
+    "corporate",
+    "identity"
+  ]
+}

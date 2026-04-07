@@ -1,0 +1,33 @@
+{
+  "id": "10773763ef0090d1e011d626a00f3a35",
+  "name": "Helplessness Echo",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Once couldn't do anything, now overcompensates to never feel that way again",
+  "behavioral_signature": "Acquires skills, weapons, resources, and plans to prevent ever being powerless",
+  "under_stress": "Doubles down on preparation rather than accepting vulnerability",
+  "at_rest": "Competent, over-equipped, quietly terrified underneath",
+  "will_always": [
+    "over-prepare for every contingency"
+  ],
+  "will_never": [
+    "allow themselves to be caught without resources"
+  ],
+  "unless": [
+    "helping someone requires giving up their safety net"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Prepared",
+      "threshold": 0.8,
+      "context": "overcompensation"
+    }
+  ],
+  "opposite_of": [
+    "Reckless Denier"
+  ],
+  "tags": [
+    "over-prepared",
+    "compensating"
+  ]
+}

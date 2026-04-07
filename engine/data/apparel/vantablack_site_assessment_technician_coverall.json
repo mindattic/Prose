@@ -1,0 +1,33 @@
+{
+  "name": "Vantablack Site Assessment Technician Coverall",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_field_operations",
+  "manufacturer": "Neural Feed Productions",
+  "description": "When Vantablack deploys personnel under a non-security cover, the Site Assessment Technician Coverall is the standard disguise layer. It is deliberately unremarkable — a mid-grey one-piece with minimal branding, a small 'VAT SYSTEMS / FACILITY SERVICES' patch on the left arm, and the kind of anonymous utility cut that reads as any number of maintenance or inspection contractors. The fabric itself is not anonymous: the outer face is a signal-dampening weave that reduces the wearer's electromagnetic and thermal signature meaningfully, making automated detection systems work harder. The inner face is moisture-wicking and includes mapped cable routing for BCI hardware and subdermal augment power interfaces. Pockets are deep and internally reinforced. The back panel has a concealed equipment harness attachment system. Vantablack issues these with paperwork that will pass most credential checks, including union affiliation cards for the Meridian Facilities Workers Local.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ620",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "gray_market",
+  "cultural_context": "The VAT Systems cover identity is a known quantity among Meridian security professionals — it's Vantablack's most commonly burned alias. But it keeps working because facilities contractors are genuinely invisible in most environments; nobody looks at maintenance workers. The coverall is occasionally sold through gray channels to people with no Vantablack connection who just want what it provides.",
+  "story_hooks": [
+    "Three people wearing this coverall are caught on camera at three separate locations across Meridian 88 at the same time — two of them are confirmed Vantablack, the third is unaccounted for.",
+    "A genuine VAT Systems facilities contractor — the actual company Vantablack fronts — has started noticing that their workers are being stopped and questioned at sites they've never been assigned to.",
+    "Someone is selling these coveralls in Tier 2 with working Meridian Facilities Workers Local cards, and whoever is supplying them has access to Vantablack's internal document systems."
+  ],
+  "tags": [
+    "vantablack",
+    "covert-ops",
+    "coverall",
+    "signal-dampening",
+    "thermal-reduction",
+    "cover-identity",
+    "maintenance-disguise",
+    "bci-compatible",
+    "gray-market"
+  ],
+  "id": "91aa50146c6f4146b767fd5e4e3279fd",
+  "parent_corponation": "Vantablack Media"
+}

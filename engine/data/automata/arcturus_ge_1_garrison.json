@@ -1,0 +1,53 @@
+{
+  "name": "Arcturus GE-1 'Garrison'",
+  "type": "automaton",
+  "classification": "Security",
+  "aliases": [
+    "Garrison",
+    "Gate Keeper",
+    "The Checkpoint"
+  ],
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "description": "The GE-1 is a vehicle checkpoint automaton — a pair of heavy bipedal units that flank a road or entrance, each standing 2.5 meters tall with integrated vehicle scanning systems and deployable road barriers. The paired units operate as a coordinated gate system: one scans approaching vehicles while the other manages the barrier. Vehicles are identified by license plate, RFID transponder, and occupant facial recognition through windshield-penetrating optical systems. Authorized vehicles pass without stopping. Unauthorized vehicles are halted by the barrier and subjected to secondary screening.\n\nThe GE-1's secondary screening is thorough and invasive. Ground-penetrating sensors check undercarriage compartments. Millimeter-wave imaging scans the vehicle interior. Chemical sniffers detect explosives, narcotics, and biological agents. The process takes ninety seconds and the vehicle occupants are required to remain inside with hands visible. The GE-1 units' size and armored appearance ensure compliance — they are designed to look like something that could tear a vehicle apart, because they can. Each unit carries a hydraulic claw arm capable of peeling open a car door like a tin can.\n\nArcturus deploys GE-1 pairs at corporate campus entrances, government facility checkpoints, and high-security district boundaries. They have replaced human-operated checkpoints almost entirely in Tier 4+ areas, primarily because they process vehicles faster, detect more contraband, and cannot be talked past, bribed, or intimidated. The GE-1 does not care who you are. It cares what the scan shows.",
+  "tier_availability": "Tier 3-4",
+  "legality": "Commercial — vehicle security checkpoint license required",
+  "autonomy_level": "Paired autonomous — coordinated gate management AI",
+  "dimensions": "2.5m height per unit, 0.9m width",
+  "weight": "380 kg per unit",
+  "power_source": "Hardwired installation power with 6-hour battery backup per unit",
+  "locomotion": "Bipedal, limited mobility (checkpoint area only)",
+  "armament": [
+    "Hydraulic claw arm (vehicle interdiction)",
+    "Deployable road barrier",
+    "Integrated tire spike strip"
+  ],
+  "sensors": [
+    "License plate recognition",
+    "RFID transponder reader",
+    "Windshield-penetrating facial recognition",
+    "Undercarriage ground-penetrating radar",
+    "Chemical detection array"
+  ],
+  "countermeasures": "Paired operation means both units must be disabled simultaneously to breach the checkpoint. The road barrier can be bypassed by leaving the road surface. Units are hardwired — cutting power to the installation disables both, though battery backup provides six hours of continued operation.",
+  "known_deployments": [
+    "Corporate campus entrances, government checkpoints, and district boundary gates in Tier 3-5 areas"
+  ],
+  "story_hooks": [
+    "A GE-1 checkpoint has been waving through vehicles containing concealed contraband — its chemical detection array has been recalibrated to ignore a specific compound. Someone on the inside has modified the scan parameters, and a steady stream of something illegal is flowing through the checkpoint undetected.",
+    "A GE-1 pair deployed at a district boundary has started denying entry to vehicles registered to residents of specific lower-tier neighborhoods. The access list hasn't changed — the units' facial recognition database has been updated with demographic profiling data. The checkpoint is now enforcing class segregation that no human operator authorized."
+  ],
+  "cultural_context": "The GE-1 makes the class boundaries of Meridian 88 physical. You can see the line where one world ends and another begins — it is the checkpoint where two armored machines decide whether you belong. The experience of being scanned, assessed, and either admitted or rejected by a machine has become a defining experience of inter-tier travel.",
+  "tags": [
+    "automaton",
+    "security",
+    "checkpoint",
+    "vehicle",
+    "arcturus",
+    "bipedal",
+    "armored",
+    "tier 3",
+    "tier 4"
+  ],
+  "id": "f265776db617bee11630ef70433b41fa",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

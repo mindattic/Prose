@@ -9,7 +9,7 @@
   ],
   "category": "firearm",
   "description": "The Subdermal Ferroelectric Shear Projector fires a focused, rapidly alternating ferroelectric field pulse that penetrates the skin and induces mechanical shear stress in ferromagnetic and piezoelectric materials implanted beneath it — specifically the titanium alloy housings, ceramic substrates, and magnetostrictive actuators common in cybernetic implants. The effect on a heavily augmented target is catastrophic: implant housings fracture along stress lines, flexible circuit substrates delaminate, and the physical interface between biological tissue and synthetic components is violently disrupted. On unaugmented targets, the weapon produces a deep bruising sensation and mild muscle spasm, little more.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Sovereign Zone Insurance",
   "tier_availability": "Tier 3+ / Law enforcement procurement",
   "legality": "Licensed — civilian ownership prohibited; law enforcement and licensed security use permitted under Augmentation Compliance Framework regulations",
   "base_technologies": [
@@ -49,6 +49,8 @@
     "energy",
     "fire",
     "circuit",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

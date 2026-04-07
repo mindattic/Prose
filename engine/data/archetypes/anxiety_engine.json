@@ -1,0 +1,34 @@
+{
+  "id": "3f6746b1e83a27e24412e08a0deb09ee",
+  "name": "Anxiety Engine",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Runs on constant low-grade fear that manifests as relentless preparation",
+  "behavioral_signature": "Always worried about the thing after the thing after the thing",
+  "under_stress": "Anxiety becomes paralyzing and they can't act at all",
+  "at_rest": "Worrying productively about future problems",
+  "will_always": [
+    "anticipate what could go wrong"
+  ],
+  "will_never": [
+    "relax completely"
+  ],
+  "unless": [
+    "exhaustion finally overwhelms the anxiety"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Overthinker",
+      "threshold": 0.8,
+      "context": "anticipatory worry"
+    }
+  ],
+  "opposite_of": [
+    "Serene"
+  ],
+  "tags": [
+    "anxiety",
+    "preparation",
+    "worry"
+  ]
+}

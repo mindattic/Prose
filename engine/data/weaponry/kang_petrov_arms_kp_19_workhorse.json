@@ -1,0 +1,45 @@
+{
+  "id": "20b67af565e97093f046c927dcaa1c51",
+  "name": "Kang-Petrov Arms KP-19 'Workhorse'",
+  "type": "weapon",
+  "aliases": [
+    "Workhorse",
+    "The KP",
+    "Nineteen"
+  ],
+  "category": "pistol",
+  "description": "The Kang-Petrov KP-19 is a full-size duty pistol chambered in 9x19mm, built on a steel-reinforced polymer frame with a cold-hammer-forged barrel. It represents the baseline of competent firearm engineering — nothing revolutionary, nothing deficient. The action is reliable, the trigger is acceptable, and the sights are adequate steel three-dot units that hold zero indefinitely.\n\nThe KP-19 is the standard-issue sidearm for dozens of private security companies, building security teams, and licensed personal protection operators throughout the Mids. Kang-Petrov's business model is volume and consistency — every KP-19 performs identically to every other KP-19, and replacement parts are available at any hardware vendor in Meridian 88.\n\nThe Workhorse earned its nickname honestly. It is the pistol that guards carry when their employer doesn't care about brand prestige but does care about liability. It works, it keeps working, and when it finally wears out after tens of thousands of rounds, the replacement costs the same as a moderately expensive dinner.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "Cold-hammer-forged barrel",
+    "Steel-reinforced polymer frame"
+  ],
+  "specifications": "caliber: 9x19mm\neffective_range: 50 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 17 rounds\nweight: 0.78 kg",
+  "tactical_use": "A reliable mid-range duty pistol suitable for security work and personal defense. Accurate enough for aimed fire at reasonable distances, with sufficient magazine capacity for most defensive encounters. Compatible with standard rail-mounted accessories including lights and laser designators.",
+  "cultural_context": "The KP-19 is boring, and that is its virtue. Nobody brags about carrying a Workhorse. Nobody writes songs about it. It is the pistol equivalent of a sensible pair of shoes — functional, forgettable, and quietly everywhere.",
+  "known_users": [
+    "Private security contractors",
+    "Building security teams",
+    "Licensed personal protection operators",
+    "Mid-tier bounty hunters"
+  ],
+  "story_hooks": [
+    "A batch of KP-19s with modified firing pins has entered circulation — someone is building untraceable weapons from factory-standard parts.",
+    "A retired security guard's well-worn KP-19 has scratch marks inside the grip that turn out to be coordinates."
+  ],
+  "ammunition_type": [
+    "9x19mm"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "reliable",
+    "common",
+    "duty",
+    "security",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,55 @@
+{
+  "id": "f4a1c6d3e8720b5f9e3c1a7d2b0f8e45",
+  "name": "FENRIS INDUSTRIAL GripMax HX Industrial Hand",
+  "brand_name": "FENRIS INDUSTRIAL",
+  "product_name": "FENRIS INDUSTRIAL GripMax HX Industrial Hand",
+  "type": "cyberware",
+  "aliases": [
+    "The Crusher",
+    "Mag-Fist",
+    "Fenris Paw"
+  ],
+  "category": "misc",
+  "body_location": "hand",
+  "description": "The GripMax HX is a wrist-terminated industrial hand replacement built for environments where tools fail and organic tissue has no business being. The frame is high-carbon steel with reinforced polymer knuckle guards, driven by hydraulic microactuators rated for 1,200 PSI crush force — enough to shear structural bolts or compress copper pipe fittings bare-handed. The palm houses a 400kg-rated electromagnetic array that can lock onto ferrous surfaces for climbing or cargo handling, switch to a repulsion mode for controlled component separation, and function as a magnetic tool holder during work. Fingertips are standardized hex-socket compatible, allowing direct drive of bolts without a wrench. The hand is deliberately overbuilt and visually industrial �� Fenris does not apologize for aesthetics.\n\nThe GripMax HX is the hand of choice for heavy industry, demolition, salvage, and deep-infrastructure maintenance crews who work in conditions that destroy lesser equipment. It is common in the Port Authority's hull-maintenance teams, the city's underground utility corridors, and anywhere the work involves metal, pressure, and the expectation of violence toward inanimate objects. On the street, it has found a second life among enforcers and debt collectors for whom the hand's capability communicates intent before a word is spoken.",
+  "manufacturer": "FENRIS INDUSTRIAL",
+  "tier_availability": "Tier 1-3",
+  "legality": "Licensed",
+  "installation_requirements": "Wrist disarticulation, industrial-grade socket installation, standard surgical team sufficient; Fenris publishes open installation specs",
+  "rejection_risk": "Moderate — hydraulic microactuator fluid has known inflammatory response risk in patients with autoimmune conditions; steel frame weight strains wrist socket over time without proper osseointegration",
+  "maintenance": "Monthly hydraulic fluid check, quarterly electromagnetic coil inspection, annual socket torque assessment; replacement parts available at any industrial supply depot",
+  "specifications": "{\"frame\": \"High-carbon steel with polymer knuckle guards\", \"crush_force\": \"1200 PSI max\", \"magnetic_array\": \"400kg hold-rated, palm-mounted\", \"magnetic_modes\": \"Attract, repel, tool-hold\", \"fingertip_drive\": \"Hex-socket compatible, M4-M16\", \"actuators\": \"Hydraulic microactuators\", \"weight\": \"1.8kg\", \"operating_temp\": \"-30C to +200C\", \"IP_rating\": \"IP68 waterproof\", \"warranty\": \"5 years mechanical\"}",
+  "side_effects": [
+    "Significant wrist and forearm fatigue during extended use due to the hand's weight",
+    "Electromagnetic array interferes with nearby electronics and credit chips if not switched to standby",
+    "Users frequently underestimate crush force in social situations, crushing cups, handshakes, and door handles",
+    "Hydraulic fluid has a faint machine-oil smell that persists even after cleaning"
+  ],
+  "cultural_context": "A Fenris hand on the Shelf is a working tool, worn without ceremony. Among enforcers and street muscle, it has become a recognizable symbol of applied force — more honest than a weapon, because it is never put away.",
+  "known_users": [
+    "Heavy industry and demolition workers, Shelf and Slab tiers",
+    "Port Authority and hull-maintenance crews",
+    "Underground utility and infrastructure maintenance workers",
+    "Street-level enforcers and collection muscle",
+    "Salvage operators and wreck divers"
+  ],
+  "story_hooks": [
+    "A series of industrial 'accidents' in a Port Authority maintenance crew all involve crush injuries inconsistent with equipment failure — someone's GripMax has been overclocked and someone else knows it",
+    "A Fenris GripMax recovered from a crime scene has a magnetic array that recorded a partial electromagnetic imprint of the last ferrous surface it contacted — enough to identify a location",
+    "The latest GripMax firmware update includes an undisclosed remote-disable feature that Fenris claims is for theft prevention, but which labor unions are calling a corporate control mechanism"
+  ],
+  "street_price": "Φ6,800",
+  "licensed_price": "Φ13,000",
+  "tags": [
+    "cyberware",
+    "misc",
+    "hand",
+    "industrial",
+    "magnetic",
+    "crush-rated",
+    "fenris-industrial",
+    "tier1-3",
+    "heavy-duty"
+  ],
+  "parent_corponation": ""
+}

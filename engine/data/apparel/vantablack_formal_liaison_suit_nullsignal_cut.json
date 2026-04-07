@@ -1,0 +1,35 @@
+{
+  "name": "Vantablack Formal Liaison Suit — Nullsignal Cut",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "suit",
+  "manufacturer": "Silhouette Fashion Media",
+  "description": "Not available through any civilian or commercial channel, the Nullsignal Cut is Vantablack's formal wear option for personnel who attend diplomatic, legal, or inter-corponation events in an official liaison capacity. The fabric is a proprietary weave that absorbs approximately 94% of visible light, creating an effect that reads as depth rather than color — the suit does not look black so much as it looks like an absence. Under standard interior lighting it is striking. Under low light it becomes difficult to visually track. The cut is conventional formal — two-button, notched lapel — which makes the visual effect more unsettling rather than less. Privacy-weave lining blocks biometric scanning at standard commercial sensor ranges.\n\nThe suit carries no visible Vantablack branding. It carries no visible anything. That is the design brief. Vantablack personnel attending formal functions are not there to be identified. They are there to observe, to represent an interest that prefers not to be named in the room, and to leave without being clearly described afterward.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ4200",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "Recognizable to anyone who knows what to look for — which is, by design, very few people. In rooms where intelligence community presence is expected, a person in this suit is given a wide, careful berth. In rooms where it is not expected, its presence is alarming.",
+  "story_hooks": [
+    "A character spots someone in a Nullsignal suit at what was supposed to be a private family ceremony. No one invited any Vantablack liaison. No one knows how they got in.",
+    "The privacy-weave lining creates a blind spot in the venue's security system. Whatever happened in that corner of the room during the gala is simply not on record.",
+    "A civilian gets access to one of these suits through channels they won't explain. Wearing it to a public formal event produces a reaction they did not fully anticipate."
+  ],
+  "tags": [
+    "suit",
+    "formal",
+    "augment-compatible",
+    "privacy-weave",
+    "vantablack",
+    "intelligence",
+    "tier-4",
+    "tier-5",
+    "restricted",
+    "nullsignal",
+    "biometric-blocking"
+  ],
+  "id": "9d7b8629ede443a1981926a6a8e7fb87",
+  "parent_corponation": "Vantablack Media"
+}

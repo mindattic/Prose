@@ -9,7 +9,7 @@
   ],
   "category": "cyber",
   "description": "The MTPL-2 exploits thermoelectric induction to generate rapid, localized heating within the meningeal membranes surrounding the brain. A directional microwave-band emitter penetrates the skull and preferentially excites the fluid-dense dural and arachnoid layers, producing a steep thermal gradient. The resulting expansion of cerebrospinal fluid within the enclosed cranial vault creates acute intracranial pressure spikes, manifesting in the target as sudden incapacitating headache, nausea, loss of motor coordination, and at sustained exposure, hemorrhagic stroke.\n\nThe weapon's distinctive characteristic is its graduated effect curve. At low power settings, the MTPL-2 produces a debilitating but non-lethal pressure event lasting several minutes — useful for crowd control or capture operations. At maximum output, sustained for more than three seconds, the cranial pressure becomes unsurvivable without immediate decompression surgery. Operators describe the kill as 'clean from the outside,' with no external wound and internal damage consistent with spontaneous aneurysm.\n\nArcturus Defense Solutions developed the Crown as a successor to older microwave crowd-dispersal systems, arguing that precision targeting eliminated the indiscriminate harm of area-effect predecessors. The lance form factor allows engagement up to forty meters with a focused beam, making it effective for both individual neutralization and controlled area denial when swept across a crowd. Its use in the Meridian 88 Port Authority Suppression of 2181 — where seventeen dock workers died of 'simultaneous cerebrovascular events' — remains officially uninvestigated.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Iron Point Ammunition",
   "tier_availability": "Military only",
   "legality": "Prohibited (civilian), Restricted (licensed state contractors)",
   "base_technologies": [
@@ -51,8 +51,9 @@
     "medical",
     "surgery",
     "market",
-    "bar",
     "rain",
-    "energy"
-  ]
+    "energy",
+    "less_lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

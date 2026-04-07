@@ -1,0 +1,34 @@
+{
+  "name": "Dawngate Occasion Wrap Gown",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "formal_gown",
+  "manufacturer": "Dawngate Collective",
+  "description": "A floor-length wrap gown in a deep jewel-toned stretch-satin analog, produced by a small Tier 2 collective that sources surplus fabric from Ringo media production warehouses and repurposes it into retail garments. The result is a gown that looks more expensive than it is — the fabric has a genuine sheen and weight to it, and the wrap construction adjusts naturally to a range of body types. It comes in whatever color the collective was able to source that production run, so colorways are inconsistent and often unexpected. Tail accommodation is built into every version via a rear wrap gap that closes with a hidden snap.\n\nBought by Tier 2 women and femme-presenting individuals for everything from corponation subsidiary award ceremonies to Tier 3 weddings to the rare gala invitation that crosses economic lines. The Dawngate name carries quiet pride in communities that know it — the collective is worker-owned and has been operating continuously since 2171.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ65",
+  "augment_compatible": false,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The Dawngate gown has become something of a community symbol in certain Shelf-adjacent Tier 2 neighborhoods — seeing one means someone is celebrating something real. The collective's worker-owned status is known and respected; buying Dawngate is understood as a political choice as much as an aesthetic one. The inconsistent colorways have spawned a small subculture of people who collect and trade specific run colors.",
+  "story_hooks": [
+    "A woman wears her Dawngate gown to a Lazarus synthetic personhood hearing as a show of support for a synthetic she considers family — the color, a discontinued rust-gold from a 2196 Ringo period drama, becomes associated with the case in media coverage.",
+    "The collective's lead fabric sourcer is approached by a Ringo executive who wants to license the brand for a nostalgia fashion line — the collective votes on whether to accept.",
+    "Two women arrive at the same Tier 3 event in the same Dawngate colorway, from the same production run, and realize they both bought it from the same resale stall three years apart."
+  ],
+  "tags": [
+    "gown",
+    "formal",
+    "Tier 2",
+    "Tier 3",
+    "worker-owned",
+    "geneware-compatible",
+    "tail-accommodation",
+    "surplus-fabric",
+    "celebration",
+    "community"
+  ],
+  "id": "d24d1cd400ee4636b47c66b6d8716ce8",
+  "parent_corponation": ""
+}

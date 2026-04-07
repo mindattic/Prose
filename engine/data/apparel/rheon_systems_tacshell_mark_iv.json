@@ -1,0 +1,44 @@
+{
+  "id": "f4a8c3e6b1d902f7a4c8e3b6d1f9a2c5",
+  "name": "Rheon Systems TacShell Mark IV",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A hard-shell rain jacket in flat anthracite grey with sealed seams, a helmet-compatible storm hood on a magnetic clasp system, and pit-zip venting. From the outside it looks like a technical outdoor jacket — clean, minimal, slightly military in its geometry. What isn't visible is the thin-film ballistic membrane laminated between the outer shell and the inner fleece backer: a Rheon Systems proprietary weave rated for handgun rounds at standard engagement distances. The jacket stops bullets and sheds rain simultaneously.\n\nRheon Systems markets this to Tier 3-4 civilians who work in risk-adjacent environments — journalists, field medics, corporate investigators, district-level political staff — people who need protection but can't appear to be armored. The ballistic layer adds almost no weight or bulk. You wouldn't know it was there unless you tried to put a round through it.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "hard-shell laminate",
+    "ballistic thin-film membrane",
+    "fleece backer",
+    "magnetic hardware"
+  ],
+  "functionality": "Concealed ballistic protection rated for handgun rounds at standard engagement distances. Magnetic storm hood clasp system.",
+  "what_it_says": "You take your safety seriously but you're not advertising the fact. You move through risk environments professionally.",
+  "worn_by": [
+    "field journalists",
+    "corporate investigators",
+    "district-level political staff",
+    "field medics",
+    "risk-aware Tier 3 professionals"
+  ],
+  "manufacturer": "Rheon Systems",
+  "price_range": "Φ680",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Rheon TacShell recovered from a crime scene stopped a round that forensics can't match to any licensed weapon in the district — the ballistic evidence that should exist simply isn't there.",
+    "Rheon Systems has issued a quiet recall on a specific production run — the ballistic membrane has a seam flaw at the left kidney that reduces protection to near zero, and someone who knows this is hunting people who wear this jacket.",
+    "A character discovers their TacShell has a tiny RFID tag sewn into the hood baffle — not Rheon's — someone has been tracking their movements for months."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "outerwear",
+    "tier 3",
+    "ballistic",
+    "tech-enhanced",
+    "rain shell",
+    "concealed armor",
+    "corporate brand"
+  ],
+  "parent_corponation": ""
+}

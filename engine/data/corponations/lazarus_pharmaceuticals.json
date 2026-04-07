@@ -22,12 +22,261 @@
   "full_text": "LAZARUS PHARMACEUTICAL & BIOLOGICAL DEPENDENCY SOVEREIGNTY, CORP-S — stock designation LPX-C — is the dominant pharmaceutical manufacturing and medical infrastructure corponation of the Meridian 88 corridor, serving as the primary pharmaceutical supplier to an estimated 18 million corridor residents through its network of 2,400 sovereign micro-clinics and its aggressively managed product dependency ecosystem. Founded in the immediate aftermath of the 2136 Corridor Plague by virologist Dr. Emeka Solano and pharmaceutical chemist Dr. Rina Vasquez, the corponation was built on a founding act of calculated exploitation — the proprietary capture of the only effective treatment protocol for a pathogen that killed 800,000 people, converted into a sovereign pharmaceutical product rather than a public health resource. Vasquez's guiding philosophy, biological dependency as revenue infrastructure, has shaped every product Lazarus has brought to market since. The corponation's flagship neurological drug NeuroStabil — prescribed to an estimated 12 million residents for a remarkable range of conditions — exemplifies this approach, with a discontinuation syndrome so severe that independent medical researchers have characterized it as functionally permanent dependency. Lazarus's medical franchise network, 2,400 sovereign micro-clinics operating as Lazarus territorial enclaves throughout the corridor, serves as both distribution infrastructure and diagnostic capture system — funneling patients toward Lazarus products through franchise physicians operating under contractual prescribing incentive structures. The corponation's security arm, The Immune, enforces pharmaceutical sovereignty through both conventional security operations and the distinctive capability of its Biological Response Teams. Operating from the Lazarus Compound in Milwaukee Sector 3 and a classified research territory in the Upper Peninsula, Lazarus employs 93,000 direct staff and 45,000 licensed franchise operators. Valued at Φ3.2 trillion with annual revenues of Φ510 billion, ranked 6th in the Big 20, Lazarus holds a form of leverage over the corridor that its competitors can only regard with a mixture of awe and discomfort: it has made itself biologically necessary to millions of people, and it charges accordingly.",
   "tags": [
     "weapon",
-    "ai",
     "synthetic",
     "medical",
     "clinic",
-    "rain",
-    "train",
     "drug"
+  ],
+  "subsidiaries": [
+    {
+      "name": "Lazarus Micro-Clinic Network",
+      "line_of_business": "2,400 sovereign micro-clinics serving as distribution and diagnostic capture infrastructure",
+      "public_facing": true
+    },
+    {
+      "name": "The Immune Security Division",
+      "line_of_business": "7,500-person pharmaceutical enforcement and biological security force",
+      "public_facing": false
+    },
+    {
+      "name": "NeuroStabil Manufacturing",
+      "line_of_business": "Production of the flagship neurological maintenance drug prescribed to 12 million residents",
+      "public_facing": false
+    },
+    {
+      "name": "Lazarus Biological Reserve",
+      "line_of_business": "Classified research territory in the Upper Peninsula of former Michigan",
+      "public_facing": false
+    },
+    {
+      "name": "Solano Virology Institute",
+      "line_of_business": "Pathogen research and antiviral development named after co-founder",
+      "public_facing": false
+    },
+    {
+      "name": "Lazarus Compound Operations",
+      "line_of_business": "Milwaukee Sector 3 sovereign manufacturing and research enclave management",
+      "public_facing": false
+    },
+    {
+      "name": "Biological Response Teams",
+      "line_of_business": "Specialized units for pathogen containment and dependency enforcement operations",
+      "public_facing": false
+    },
+    {
+      "name": "Lazarus Franchise Licensing",
+      "line_of_business": "Manages 45,000 licensed medical franchise operators and prescribing incentive structures",
+      "public_facing": false
+    },
+    {
+      "name": "Vasquez Pharmaceutical Chemistry",
+      "line_of_business": "Drug formulation and discontinuation protocol engineering",
+      "public_facing": false
+    },
+    {
+      "name": "Corridor Plague Memorial Foundation",
+      "line_of_business": "Historical preservation of the 2136 pandemic response, positioning Lazarus as savior",
+      "public_facing": true
+    },
+    {
+      "name": "Lazarus Clinical Trials Division",
+      "line_of_business": "Human testing pipeline for new pharmaceutical products and dependency profiles",
+      "public_facing": false
+    },
+    {
+      "name": "Intellectual Property Enforcement Group",
+      "line_of_business": "Aggressive suppression of generic drug manufacturing and counterfeit operations",
+      "public_facing": false
+    },
+    {
+      "name": "Dependency Analytics Lab",
+      "line_of_business": "Discontinuation syndrome calibration and optimal dependency curve engineering",
+      "public_facing": false
+    },
+    {
+      "name": "Lazarus Medical Devices",
+      "line_of_business": "Diagnostic equipment, surgical instruments, and drug delivery systems",
+      "public_facing": false
+    },
+    {
+      "name": "Pharmaceutical Counterfeit Interdiction",
+      "line_of_business": "Operations to locate and destroy unauthorized generic versions of Lazarus drugs",
+      "public_facing": false
+    },
+    {
+      "name": "Voluntary Treatment Partners LLC",
+      "line_of_business": "Legal entity managing informed consent documentation for clinical trials",
+      "public_facing": false
+    },
+    {
+      "name": "Upper Peninsula Research Holdings",
+      "line_of_business": "Financial firewall between Lazarus and classified biological research operations",
+      "public_facing": false
+    },
+    {
+      "name": "MedAxis Legacy Trust",
+      "line_of_business": "Holding company for patents inherited from collapsed predecessor MedAxisCorp",
+      "public_facing": false
+    },
+    {
+      "name": "Discontinuation Support Services Inc",
+      "line_of_business": "Technically available but practically prohibitive cessation assistance programs",
+      "public_facing": false
+    },
+    {
+      "name": "Corridor Health Emergency Fund",
+      "line_of_business": "Charitable trust funding pandemic preparedness (also justifying pathogen stockpiles)",
+      "public_facing": true
+    },
+    {
+      "name": "Evergreen Wellness",
+      "line_of_business": "Consumer vitamin and supplement brand sold in RingoMart and grocery chains",
+      "public_facing": true
+    },
+    {
+      "name": "Calm Harbor Mental Health",
+      "line_of_business": "Therapy and counseling centers that default to NeuroStabil as first-line treatment",
+      "public_facing": true
+    },
+    {
+      "name": "Sunrise Senior Care",
+      "line_of_business": "Elder care facilities with comprehensive pharmaceutical management programs",
+      "public_facing": true
+    },
+    {
+      "name": "PureForm Cosmetics",
+      "line_of_business": "Skincare and beauty products using pharmaceutical-grade compounds",
+      "public_facing": true
+    },
+    {
+      "name": "VitalBoost Sports Nutrition",
+      "line_of_business": "Performance supplement brand for athletes with mild dependency-forming compounds",
+      "public_facing": true
+    },
+    {
+      "name": "Lullaby Sleep Aids",
+      "line_of_business": "Over-the-counter sleep medication brand with high repeat-purchase rates",
+      "public_facing": true
+    },
+    {
+      "name": "Meadow Allergy Relief",
+      "line_of_business": "Seasonal allergy medication line generating reliable recurring revenue",
+      "public_facing": true
+    },
+    {
+      "name": "BrightSmile Dental Care",
+      "line_of_business": "Dental clinic chain within micro-clinic locations, cross-selling pharmaceutical products",
+      "public_facing": true
+    },
+    {
+      "name": "Little Sprout Pediatrics",
+      "line_of_business": "Children healthcare clinics establishing early Lazarus brand loyalty",
+      "public_facing": true
+    },
+    {
+      "name": "Lazarus Veterinary Sciences",
+      "line_of_business": "Animal pharmaceutical products and veterinary clinic partnerships",
+      "public_facing": true
+    },
+    {
+      "name": "ClearMind Focus Supplements",
+      "line_of_business": "Cognitive enhancement pills marketed to students, with dependency profile",
+      "public_facing": true
+    },
+    {
+      "name": "Renewal Weight Management",
+      "line_of_business": "Diet pharmaceutical program requiring ongoing prescription maintenance",
+      "public_facing": true
+    },
+    {
+      "name": "Ironblood Hematology",
+      "line_of_business": "Blood disorder treatment centers and synthetic blood product manufacturing",
+      "public_facing": true
+    },
+    {
+      "name": "Breathe Easy Respiratory",
+      "line_of_business": "Asthma and respiratory treatment derived from Corridor Plague antiviral research",
+      "public_facing": true
+    },
+    {
+      "name": "Lazarus Biotech Incubator",
+      "line_of_business": "Startup accelerator acquiring promising biotech firms before they become competitors",
+      "public_facing": true
+    },
+    {
+      "name": "Pillars Insurance Group",
+      "line_of_business": "Health insurance plans requiring exclusive use of Lazarus products and clinics",
+      "public_facing": true
+    },
+    {
+      "name": "Resilience Pain Management",
+      "line_of_business": "Chronic pain clinics prescribing Lazarus analgesics with careful dependency engineering",
+      "public_facing": true
+    },
+    {
+      "name": "Helix Wound Care",
+      "line_of_business": "Advanced wound treatment products using bioengineered healing compounds",
+      "public_facing": true
+    },
+    {
+      "name": "Corridor Diagnostic Labs",
+      "line_of_business": "Blood work and diagnostic testing facilities funneling results toward Lazarus prescriptions",
+      "public_facing": true
+    },
+    {
+      "name": "Lazarus Water Purification",
+      "line_of_business": "Municipal water treatment adding Lazarus-approved mineral supplements",
+      "public_facing": false
+    },
+    {
+      "name": "Phoenix Recovery Centers",
+      "line_of_business": "Addiction treatment facilities that replace street drugs with Lazarus pharmaceuticals",
+      "public_facing": true
+    },
+    {
+      "name": "Genome Health Analytics",
+      "line_of_business": "Genetic testing service that recommends preventive Lazarus medications based on DNA",
+      "public_facing": true
+    },
+    {
+      "name": "Nurture Fertility Clinics",
+      "line_of_business": "Reproductive health services with hormone therapy dependency profiles",
+      "public_facing": true
+    },
+    {
+      "name": "Lazarus Ambulance Corps",
+      "line_of_business": "Emergency medical transport prioritizing patients with active Lazarus prescriptions",
+      "public_facing": true
+    },
+    {
+      "name": "Sanctuary Hospice Care",
+      "line_of_business": "End-of-life care facilities with comprehensive palliative pharmaceutical programs",
+      "public_facing": true
+    },
+    {
+      "name": "Pillar Orthopedics",
+      "line_of_business": "Joint replacement and bone health clinics prescribing long-term Lazarus maintenance drugs",
+      "public_facing": true
+    },
+    {
+      "name": "MoodBridge Counseling App",
+      "line_of_business": "Mental health app that recommends Lazarus pharmaceuticals based on mood tracking",
+      "public_facing": true
+    },
+    {
+      "name": "Lazarus Occupational Health",
+      "line_of_business": "Workplace drug testing and employee wellness programs funneling workers to Lazarus clinics",
+      "public_facing": true
+    },
+    {
+      "name": "Greenleaf Herbal Remedies",
+      "line_of_business": "Natural supplement brand containing Lazarus compounds marketed as holistic medicine",
+      "public_facing": true
+    },
+    {
+      "name": "Corridor Blood Bank",
+      "line_of_business": "Blood donation and transfusion services building a biological sample database",
+      "public_facing": true
+    }
   ]
 }

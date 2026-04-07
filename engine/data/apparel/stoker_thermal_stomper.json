@@ -1,0 +1,41 @@
+{
+  "id": "f2a5c8e1d4b36f09c1e7a3d5b8f2c4e0",
+  "name": "Stoker Thermal Stomper",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A heavy insulated boot built for workers in refrigerated facilities, cold-storage warehouses, and the brutal winters on the Shelf's exposed upper levels. Thick double-walled synthetic upper with a removable fleece liner, a wide platform sole for stability on ice, and a bright orange pull-loop at the heel. Not subtle, not light, not comfortable for walking more than a few blocks — but your toes stay alive at minus twenty. Well-worn pairs are a common sight on Tier 1 street corners in winter.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "double-wall synthetic upper",
+    "removable fleece liner",
+    "thermal insulation batting",
+    "rubber platform sole"
+  ],
+  "functionality": "Thermal insulation rated to -25°C, ice-grip outsole, removable liner (washable)",
+  "what_it_says": "You work cold storage or you live somewhere the heat cuts out. Warmth over everything.",
+  "worn_by": [
+    "cold-storage workers",
+    "Shelf residents in unheated buildings",
+    "night-shift outdoor laborers",
+    "winter delivery runners"
+  ],
+  "manufacturer": "Stoker Industrial",
+  "price_range": "Φ28 - Φ40",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The removable liner is sometimes used to conceal small items — warm, soft, and rarely checked at entry points.",
+    "A Shelf community that lost building heat for a winter hoards these — finding a stockpile might tell you who knew the heat was going to fail."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "thermal",
+    "cold weather",
+    "work boot",
+    "insulated",
+    "winter"
+  ],
+  "parent_corponation": ""
+}

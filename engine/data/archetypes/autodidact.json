@@ -1,0 +1,33 @@
+{
+  "id": "687bcdc466a39f885071e7c545c92f65",
+  "name": "Autodidact",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Taught themselves everything they know and trusts no teacher fully",
+  "behavioral_signature": "Learns independently and distrusts institutional knowledge",
+  "under_stress": "Refuses help from experts even when they're drowning",
+  "at_rest": "Deep in a book, a manual, or an experiment of their own design",
+  "will_always": [
+    "figure it out themselves"
+  ],
+  "will_never": [
+    "accept knowledge on authority alone"
+  ],
+  "unless": [
+    "the expert has proven themselves through repeated demonstration"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Perpetual Student",
+      "threshold": 0.7,
+      "context": "self-driven learning"
+    }
+  ],
+  "opposite_of": [
+    "Dogmatist"
+  ],
+  "tags": [
+    "self-taught",
+    "independent"
+  ]
+}

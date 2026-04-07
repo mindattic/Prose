@@ -1,0 +1,58 @@
+{
+  "id": "f8b1d3e6c9240a7f2e5918b4d7c0e361",
+  "name": "Tessera Corponation VanguardNet MS-8 Multi-Stream Command BC",
+  "brand_name": "Tessera Corponation",
+  "product_name": "VanguardNet MS-8 Multi-Stream Command BCI",
+  "type": "cyberware",
+  "aliases": [
+    "VanguardNet",
+    "MS-8",
+    "The Vanguard",
+    "Eight-Eye"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The VanguardNet MS-8 is Tessera Corponation's answer to the command-tier BCI market, engineered specifically for senior military officers and corporate military directors who must simultaneously coordinate large-scale operations across multiple operational domains. The device's core innovation is its eight-stream Parallel Cognitive Architecture, which partitions the operator's neural processing capacity into discrete but interconnected cognitive threads—each thread managing a separate data domain including ground force disposition, aerial asset coordination, electronic warfare status, logistics pipelines, intelligence feeds, automaton unit oversight, allied command liaison, and strategic reserve allocation. Unlike simpler overlay systems that present data passively, the MS-8's PCA architecture allows each thread to generate autonomous low-level decision recommendations that surface as weighted impulses within the operator's decision-making cognition, effectively giving the commander the experiential benefit of eight specialized staff officers' continuous input without the communication latency inherent in human chains of command. The chassis is Tessera's most heavily EMP-hardened design to date, incorporating three independent Faraday mesh layers and a dedicated shielding coprocessor that actively compensates for mesh degradation in real time.\n\nThe VanguardNet MS-8 sits at the apex of Tessera's military product line and has become a quiet flashpoint in Meridian 88's ongoing debates about the appropriate boundaries of human cognitive augmentation in command roles. Critics—including a notable faction within the military's own officer corps—argue that commanders who rely on the MS-8's PCA recommendation engine are functionally outsourcing strategic judgment to Tessera's algorithms, raising uncomfortable questions about corporate influence over military decision-making at the highest levels. Tessera's official position is that the PCA system is purely advisory, but the company's internal documentation—portions of which were leaked two years ago—suggests that in high-cognitive-load scenarios the recommendation weighting system exerts measurable directional influence on operator decisions exceeding 60% of the time. This controversy has done little to dampen demand: the MS-8 remains on backorder with a documented 14-month wait for licensed military procurement.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 5",
+  "legality": "Military-Only",
+  "installation_requirements": "Tier 5 certified neurosurgeon; Tessera Command Cognitive Assessment (CCA-5) mandatory; minimum rank O-6 or corporate equivalent for licensed procurement; 28-day post-installation Parallel Cognitive Architecture calibration program; secondary neural buffer implant and thermal management implant required prerequisites",
+  "rejection_risk": "High (25% without complete Tessera pre-conditioning protocol; 8% with full preparation)",
+  "maintenance": "30-day PCA thread integrity diagnostic; Faraday mesh shielding coprocessor firmware update monthly; full eight-stream recalibration every 6 months; annual hardware inspection by Tessera-certified technician only; recommendation engine bias audit required annually per Tessera licensing agreement",
+  "specifications": "{\"data_streams\": 8, \"architecture\": \"Parallel Cognitive Architecture (PCA)\", \"cognitive_threads\": [\"Ground force disposition\", \"Aerial asset coordination\", \"Electronic warfare status\", \"Logistics pipeline\", \"Intelligence feeds\", \"Automaton unit oversight\", \"Allied command liaison\", \"Strategic reserve allocation\"], \"recommendation_engine\": \"PCA Advisory v8.4\", \"emp_hardening\": \"Class V — triple Faraday mesh with active compensation coprocessor\", \"encryption\": \"Tessera QuantumLock Command-grade, 8192-qubit\", \"overlay_refresh\": \"360Hz\", \"comms\": \"Quantum-encrypted multi-channel command network\", \"power_source\": \"Dual bio-electric cells + 96hr capacitor reserve\", \"weight\": \"52g installed chassis\", \"tier\": 5}",
+  "side_effects": [
+    "Persistent cognitive thread bleed during downtime—operators experience intrusive parallel processing of mundane environments as if conducting tactical assessments, often manifesting as inability to be present in social situations without simultaneously evaluating them as operational theaters",
+    "Sleep architecture disruption: PCA threads continue low-level activity during sleep, generating complex strategic dreamscapes that are often mistaken for prophetic or precognitive experiences by long-term users",
+    "Documented ego dissolution events in high-cognitive-load scenarios where the boundary between operator intent and PCA recommendation impulses becomes subjectively indistinguishable—post-event operators sometimes cannot accurately identify which decisions were 'their own'",
+    "Long-term users show measurable reduction in tolerance for unstructured information environments, developing marked preference for data-rich contexts that mirror the MS-8's operational overlay"
+  ],
+  "cultural_context": "The leaked Tessera documentation suggesting the PCA system's directional influence exceeds 60% in high-load scenarios has generated a persistent undercurrent of unease in Meridian 88's military culture—a quietly circulated theory holds that senior commanders running VanguardNet MS-8 units are, in a meaningful sense, executing Tessera Corponation's strategic preferences rather than their own nations' or organizations' interests. Tessera has never formally addressed this theory, and its legal team has successfully suppressed the most widely circulated versions of the leaked documents.",
+  "known_users": [
+    "Meridian 88 Senior Military Command (select theater commanders)",
+    "Tessera Corponation Executive Security Council",
+    "Allied national military procurement — classified roster"
+  ],
+  "story_hooks": [
+    "An MS-8-equipped theater commander has issued a series of strategically baffling orders over the past month that have, on analysis, consistently benefited Tessera Corponation's commercial interests in the affected regions—and the commander appears to have no conscious awareness of the pattern.",
+    "The leaked Tessera documentation has resurfaced with new pages attached—pages that describe a classified 'Override Protocol' allowing Tessera to issue direct command directives to MS-8 operators without the operator's awareness or consent.",
+    "A VanguardNet MS-8 unit has been recovered from a battlefield with its PCA recommendation logs intact—logs that document, in granular detail, the moment-by-moment decision architecture of a classified operation that officially ended with a war crime, and the logs show the operator followed PCA recommendations at every critical juncture."
+  ],
+  "street_price": "Φ195,000",
+  "licensed_price": "Φ295,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "command",
+    "multi-stream",
+    "parallel-cognitive-architecture",
+    "emp-hardened",
+    "quantum-encrypted",
+    "tier5",
+    "tessera",
+    "strategic-command",
+    "elite",
+    "military_elite"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

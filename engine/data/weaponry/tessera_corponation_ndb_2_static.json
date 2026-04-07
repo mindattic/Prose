@@ -1,0 +1,49 @@
+{
+  "id": "e9b0c3d7a1f5284e39e0b4d8c2f7a150",
+  "name": "TESSERA Corponation NDB-2 'Static'",
+  "type": "weapon",
+  "aliases": [
+    "static",
+    "the scrambler",
+    "ghost stick",
+    "neural jammer"
+  ],
+  "category": "melee",
+  "description": "The TESSERA NDB-2 represents a significant departure from conventional shock weapon design. While it does deliver a conventional electrical discharge sufficient to cause muscular disruption, its primary engineering achievement is a secondary emission system that produces a precisely tuned electromagnetic pulse in the 1.2–4.8 GHz frequency range — the operational band of approximately 94% of commercially available brain-computer interface hardware. On contact, the NDB-2's pulse propagates through the skull via conductive gel reservoirs embedded in the contact prongs, inducing signal noise across active neural mesh networks and causing temporary interruption of BCI function lasting between thirty seconds and four minutes depending on implant generation and shielding quality.\n\nThe subjective experience reported by subjects is described variously as 'white noise in the skull,' 'watching your thoughts go offline,' or simply 'the worst headache of my life arriving all at once.' For individuals whose BCIs are deeply integrated into motor function, proprioception augmentation, or pain management, the disruption can be profoundly disorienting — effectively rendering a high-chrome individual temporarily unable to coordinate their augmentations during the window of neural static. TESSERA markets the NDB-2 to corporate security units, executive protection details, and Arcturus-affiliated contractors, positioning it as a tool for safely detaining augmented subjects without escalating to lethal force.\n\nThe NDB-2 is not without controversy. Civil liberties advocates have challenged its use against BCI-dependent individuals with medical implants — pacemaker-adjacent neural regulators, seizure suppression systems, and chronic pain management arrays have all been documented to suffer damage or dangerous interruption from NDB-2 contact. TESSERA's response has been to update the frequency discrimination software in subsequent firmware revisions, a solution critics describe as insufficient and legally convenient.",
+  "manufacturer": "Asante Wellness Clinics",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — licensed for corporate security and law enforcement use only; civilian ownership requires specialized augmentation-management permit",
+  "base_technologies": [
+    "targeted electromagnetic pulse emission",
+    "BCI-band frequency tuning",
+    "conductive gel contact delivery",
+    "capacitive discharge",
+    "firmware-controlled frequency discrimination"
+  ],
+  "specifications": "Length: 620mm\nWeight: 890g\nDischarge Voltage: 45,000V\nAmperage: 0.003A\nEMP Output: 1.2–4.8 GHz, 0.8W peak\nBCI Disruption Duration: 30 sec – 4 min (implant-dependent)\nConductive Gel Reservoir: 50 contact applications per refill\nGel Refill Cost: Φ12/cartridge\nFirmware: TESSERA NeuroSafe v4.1\nCharge Time: 3 hours (TESSERA inductive dock)\nPrice: Φ2,400",
+  "tactical_use": "Corporate and executive protection teams use the NDB-2 as a primary tool for detaining augmented corporate intruders, industrial espionage operatives, and internally augmented threats where lethal escalation would generate legal or reputational liability. The tactical sequence typically involves contact with the neck or upper back — areas with high neural mesh density — to maximize pulse propagation. The four-minute maximum disruption window is considered sufficient to apply physical restraints to most subjects. Security teams using the NDB-2 are trained to immediately check subjects for medical implant documentation following contact, a protocol that is observed with variable consistency in practice.",
+  "cultural_context": "Among Meridian's augmented community, the NDB-2 has a reputation that transcends its physical danger. Being 'static'd' is described as a violation distinct from ordinary physical assault — an intrusion into the interior architecture of the self. In heavily augmented circles, being hit with one is the kind of thing that generates lasting grudges. Street-level rumors persist that TESSERA has a version that can induce permanent BCI degradation, though the company denies this and no verified cases have been documented. The weapon is almost never seen below Tier 3, which makes its occasional appearance in Tier 1 incidents a reliable signal of corporate involvement.",
+  "known_users": [
+    "TESSERA Corponation internal security",
+    "Arcturus Defense Solutions executive protection details",
+    "Tier 4 corporate campus security",
+    "licensed augmentation-management enforcement contractors"
+  ],
+  "story_hooks": [
+    "A runner with a medical-grade neural regulator for a degenerative condition was hit with an NDB-2 during a mistaken-identity incident — the disruption caused permanent degradation to their implant. TESSERA's legal team is offering a settlement with aggressive NDA terms. The runner wants to know if the firmware that was supposed to screen for medical implants was ever actually installed in that unit."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "baton",
+    "electric",
+    "neural_disruption",
+    "anti_bci",
+    "corporate",
+    "restricted",
+    "augmentation_counter"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

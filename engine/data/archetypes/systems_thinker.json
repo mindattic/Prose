@@ -1,0 +1,33 @@
+{
+  "id": "f9109ac754b74d02bd6419529699be74",
+  "name": "Systems Thinker",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Sees the machine, not the parts",
+  "behavioral_signature": "Maps connections and feedback loops before addressing individual components",
+  "under_stress": "Over-complicates simple problems by seeing too many connections",
+  "at_rest": "Draws diagrams and traces cause-effect chains for fun",
+  "will_always": [
+    "look for the systemic cause behind the symptom"
+  ],
+  "will_never": [
+    "accept a simple explanation for a complex phenomenon"
+  ],
+  "unless": [
+    "the simple explanation is demonstrably correct"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Analyst",
+      "threshold": 0.8,
+      "context": "structural thinking"
+    }
+  ],
+  "opposite_of": [
+    "Gut Instinct"
+  ],
+  "tags": [
+    "holistic",
+    "analytical"
+  ]
+}

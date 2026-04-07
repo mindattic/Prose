@@ -1,0 +1,56 @@
+{
+  "id": "e8a4b27d1f530c96d4e2b18a53f7c041",
+  "name": "CHROMEWORKS Silhouette Ghost-Step Leg System",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "Chromeworks Silhouette Ghost-Step Stealth Leg System",
+  "type": "cyberware",
+  "aliases": [
+    "Whisperwalkers",
+    "Ghost Feet",
+    "Silk Steps"
+  ],
+  "category": "leg",
+  "body_location": "legs",
+  "description": "The Silhouette Ghost-Step is a full leg replacement built around vibration-cancellation architecture: every servo, joint actuator, and heel-strike surface incorporates active counter-vibration dampening that reduces footfall acoustic signature to below ambient noise floor in standard urban environments. Thermal masking is achieved through a ceramic micro-layer embedded in the outer shell that dissipates heat laterally rather than radiating it upward, defeating standard IR floor sensors and most ground-scanning thermal detection systems. The result is a leg that produces less detectable noise and heat than a biological limb moving at equivalent speed.\n\nChromeworks markets the Ghost-Step to corporate security consultants and private investigation firms, but its primary clientele in Meridian 88 is the tier of professional operatives who move through spaces they aren't supposed to be in. The shell comes in seven neutral finishes, none of them chrome — a deliberate departure from Chromeworks' signature aesthetic that signals exactly what this product is for.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 3-5",
+  "legality": "Restricted",
+  "installation_requirements": "Chromeworks-certified premium clinic, full neural gait remapping for silent movement patterns, acoustic calibration session required post-install",
+  "rejection_risk": "Minimal — Chromeworks' seamless neural integration technology leads the industry in reducing interface rejection events",
+  "maintenance": "Counter-vibration dampening recalibration every 4 months, thermal ceramic layer inspection annually, servo lubrication with Chromeworks proprietary compound only",
+  "specifications": "{\"material\": \"Aerospace-grade titanium alloy with ceramic thermal masking shell\", \"weight\": \"2.6kg per leg\", \"acoustic_signature\": \"Below ambient urban noise floor at walking pace\", \"thermal_masking\": \"Lateral heat dissipation, defeats standard IR ground sensors\", \"servo_noise\": \"<8 decibels at full range of motion\", \"counter_vibration\": \"Active dampening in all joint actuators and heel-strike surfaces\", \"gait_modes\": \"Standard, Slow-Stalk, Sprint-Silent\", \"shell_finishes\": \"7 neutral matte options, no chrome\"}",
+  "side_effects": [
+    "Counter-vibration system creates subtle proprioceptive dissonance — users report feeling 'disconnected' from ground contact during initial adaptation",
+    "Thermal masking causes legs to run warmer than biological tissue internally — users should avoid prolonged use in already hot environments",
+    "Silent gait can disturb other people who don't hear the user approaching, causing social friction in everyday contexts",
+    "Sprint-Silent mode draws significant power and requires a belt-worn battery pack for sustained use beyond 8 minutes"
+  ],
+  "cultural_context": "The Ghost-Step occupies a strange cultural position in Meridian 88: officially sold to licensed security consultants, universally understood to equip a different class of professional entirely. Chromeworks maintains plausible deniability through meticulous licensing paperwork while quietly sponsoring no public events and maintaining no visible storefronts — the Ghost-Step is purchased through appointment-only consultations at unmarked Tier 3-4 clinics.",
+  "known_users": [
+    "Corporate espionage operatives",
+    "High-end private investigators",
+    "Tier 3-4 infiltration specialists",
+    "Licensed security consultants with ambiguous portfolios",
+    "Collectors of restricted Chromeworks hardware"
+  ],
+  "story_hooks": [
+    "A building's security footage shows no intruder, but something bypassed a vault that required physical presence — the only clue is a faint thermal smear on an IR-sensitive panel consistent with Ghost-Step lateral heat dispersion.",
+    "Chromeworks has recalled a specific serial range of Ghost-Step units for a 'firmware update,' but the affected users — all of whom are active operatives — are convinced the update installs a location beacon.",
+    "A Ghost-Step unit is for sale in a black market lot with its serial number burned off — the previous owner's encrypted movement logs are still stored in the gait AI, and someone is paying very well to know where those legs have been."
+  ],
+  "street_price": "Φ87,000",
+  "licensed_price": "Φ165,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "leg",
+    "stealth",
+    "chromeworks",
+    "restricted",
+    "vibration-dampened",
+    "thermal-masking",
+    "silent-servos",
+    "infiltration"
+  ],
+  "parent_corponation": ""
+}

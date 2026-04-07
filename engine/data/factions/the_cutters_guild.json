@@ -1,0 +1,59 @@
+{
+  "id": "c3be07939faa0cc3bd49645c25ed3f5b",
+  "type": "faction",
+  "name": "The Cutters Guild",
+  "aliases": [
+    "Cutters",
+    "The Guild",
+    "Chop Doctors"
+  ],
+  "motto": "Clean cuts. Fair prices. No questions.",
+  "description": "The Cutters Guild is Meridian 88's most organized cyberware theft and redistribution network — a criminal organization that steals augmentations from the augmented and sells them to those who can't afford legitimate installation. The Guild employs approximately 200 people: the 'cutters' themselves (surgeons of varying skill who extract augmentations from victims or willing sellers), 'strippers' (technicians who wipe identifying firmware and refurbish stolen hardware), 'fitters' (surgeons who install refurbished augmentations in new clients), and the support network of scouts, drivers, warehouse operators, and security that keeps the operation running.\n\nThe Guild occupies a moral gray zone that Meridian 88 specializes in. Their victims — people jumped in alleys and stripped of their augmentations — suffer genuine trauma, often permanent injury. But their clients — Shelf residents who can't afford Tier-3 prices for augmentations that are increasingly necessary for employment — get access to technology that would otherwise be forever out of reach. The Guild doesn't see itself as predatory. It sees itself as a redistribution service. The truth, as always, is messier than any narrative.\n\nThe Guild operates a network of 'clinics' — hidden surgical facilities scattered throughout the Shelf and Underworld where cutting, stripping, and fitting take place. Quality varies enormously. The Guild's best cutters are former corporate surgeons whose skills rival anything in a legitimate clinic. The worst are butchers who leave their victims scarred, infected, or dead. The Guild's internal quality control is improving but inconsistent, and a bad experience at a Guild clinic is one of the Shelf's most common horror stories.",
+  "ideology": "Augmentation is a necessity, not a luxury. The corponations' monopoly on augmentation technology creates artificial scarcity that the Guild corrects through redistribution. Yes, the redistribution involves theft. The original distribution involved exploitation. Neither side is clean.",
+  "territory": "Hidden clinics throughout the Shelf and Underworld. The Guild's operations are deliberately distributed to prevent a single raid from crippling the network.",
+  "leadership": "The Surgeon General — a name that is either ironic or aspirational — is a former TESSERA augmentation specialist named Dr. Asha Reeves-Obi who left corporate medicine after a crisis of conscience and now runs the Guild with the same exacting standards she applied to her corporate work.",
+  "methods": [
+    "Targeted theft of augmentations from vulnerable individuals",
+    "Voluntary purchase of augmentations from desperate sellers",
+    "Firmware wiping and hardware refurbishment",
+    "Installation of refurbished augmentations at below-market prices",
+    "Scout networks identifying both targets and potential clients",
+    "Quality control programs to reduce surgical complications"
+  ],
+  "resources": [
+    "200 operatives including surgeons, technicians, and support staff",
+    "A network of hidden clinics throughout the Shelf and Underworld",
+    "Firmware-wiping technology that defeats most corporate tracking",
+    "Dr. Reeves-Obi's surgical expertise and former corporate connections",
+    "A client base of Shelf residents who depend on the Guild for augmentation access",
+    "Relationships with other criminal organizations who need augmentation services"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "The Guild and the Silicon Apostles have an uncomfortable symbiosis. The Apostles' constant augmentation upgrades produce a steady stream of 'obsolete' hardware they're willing to sell, and the Guild provides below-market installation services for experimental augmentations the Apostles' own surgeons won't handle.",
+      "tags": [
+        "criminal",
+        "augment"
+      ]
+    }
+  ],
+  "narrative_function": "The Guild is the sharp edge of the augmentation divide — the point where the gap between haves and have-nots becomes a surgical table.",
+  "story_hooks": [
+    "A batch of augmentations stripped from victims contained a hidden component — a tracking device, or a data recorder, or something else — that has led someone powerful to the Guild's primary clinic. Dr. Reeves-Obi needs the clinic evacuated and the components traced before whoever planted them arrives.",
+    "A Guild cutter has been installing augmentations that contain hidden malware — a sleeper agent program that gives someone remote access to the recipient's BCI. The Guild doesn't know who hired the cutter or why.",
+    "A Shelf mother brings her child to a Guild clinic for a BCI installation the family can't afford through legitimate channels. The procedure goes wrong. The Guild's quality control has failed, and the consequences are personal."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "chop shop",
+    "augment",
+    "surgery",
+    "shelf",
+    "underworld",
+    "organized crime"
+  ]
+}

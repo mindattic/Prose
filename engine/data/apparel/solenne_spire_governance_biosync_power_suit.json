@@ -1,0 +1,50 @@
+{
+  "id": "c5e8a1f3d0b7e4c9a2f6b3d1e7c0a8f5",
+  "name": "Solenne Spire Governance Biosync Power Suit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "This is not clothing. This is architecture worn by a person. The Solenne Spire Governance suit is bespoke from the ground up, constructed over four fittings at Solenne Atelier's appointment-only Tier 5 consultation suite. The jacket is a double-breasted silhouette in deep midnight navy, woven from Solenne's proprietary thermolace — a fabric with embedded microfilament heating and cooling channels that maintain the wearer's surface temperature within a half-degree regardless of the room, eliminating any visible stress response from the body. The lapels are faced in a subtle privacy-weave that scatters directional microphones and visual surveillance drones, rendering the wearer's spoken words unintelligible at distances over two meters. Posture-active panels in the shoulders and lumbar distribute weight and provide gentle structural correction, so the wearer always stands exactly as tall as their frame allows. The trousers are cut with a full tail-vent panel running the rear seam — gene-compatible for any geneware modification up to a standard prehensile tail, with a hidden pleat system that adjusts the silhouette automatically. A cream silk-analog pocket square, a single heavy brushed-gold button at each cuff, and Vantrel bespoke biosync oxfords in black complete the look. The whole ensemble syncs to the wearer's BCI, adjusting microclimate, posture support, and privacy-weave activation based on ambient threat assessment.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "Solenne thermolace microfilament weave",
+    "privacy-scatter lapel facing",
+    "posture-active structural panel composite",
+    "silk-analog pocket square",
+    "brushed gold hardware",
+    "gene-adaptive rear pleat system"
+  ],
+  "functionality": "Thermoregulation to ±0.5°C, directional microphone and visual drone scatter in lapels, BCI-synced microclimate adjustment, posture-active lumbar and shoulder support, tail-vent rear panel with auto-adjusting pleat silhouette, embedded biometric ID broadcasting on Tier 5 secure frequency",
+  "what_it_says": "Power this absolute requires no announcement. The suit maintains your body temperature so you never sweat in a negotiation. It straightens your spine so you never slouch in a boardroom. It blurs your words so surveillance can't capture them. You are not dressed for the office. The office is dressed for you.",
+  "worn_by": [
+    "Corponation C-suite executives",
+    "Tier 5 board members",
+    "senior diplomatic liaisons",
+    "power brokers attending governance summits",
+    "anyone whose calendar entry reads 'closed session' three days a week"
+  ],
+  "manufacturer": "Solenne Atelier — bespoke, appointment only, six-week lead time minimum",
+  "price_range": "Φ 48,000–Φ 95,000 depending on geneware accommodation and BCI integration tier",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The privacy-scatter weave in the lapels has a narrow frequency gap — one specific model of surveillance drone, discontinued eight years ago but still operated by one particular intelligence division, can still hear through it. Someone in that division knows what was said in the last board meeting.",
+    "A character acquires one of these suits secondhand through channels they'd rather not explain. The BCI sync profile still contains fragments of the previous owner's preference data — microclimate settings, posture correction baselines, and three encrypted calendar entries that never got wiped.",
+    "The posture-active panels in this suit were calibrated for a specific body. Worn by someone else, they correct toward the original wearer's posture — subtly, over hours, until the new wearer begins to move like someone they've never met."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_5",
+    "spire",
+    "bespoke",
+    "solenne",
+    "biosync",
+    "power_suit",
+    "aug_compatible",
+    "gene_compatible",
+    "privacy_weave",
+    "thermoregulating"
+  ],
+  "parent_corponation": ""
+}

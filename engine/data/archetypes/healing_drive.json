@@ -1,0 +1,33 @@
+{
+  "id": "b8cf89b22fee8f7ce5da3f52b8e14a3a",
+  "name": "Healing Drive",
+  "type": "archetype",
+  "category": "desire",
+  "description": "Needs to fix what's broken in other people",
+  "behavioral_signature": "Gravitates toward damaged individuals and tries to repair them",
+  "under_stress": "Takes on too many broken people and breaks under the weight",
+  "at_rest": "Gentle, attentive, drawn to suffering they think they can ease",
+  "will_always": [
+    "try to help the hurt"
+  ],
+  "will_never": [
+    "walk past someone in pain"
+  ],
+  "unless": [
+    "helping would enable destructive behavior"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Nurturer",
+      "threshold": 0.8,
+      "context": "desire to heal"
+    }
+  ],
+  "opposite_of": [
+    "Corruptor"
+  ],
+  "tags": [
+    "compassionate",
+    "caretaker"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "a3f7c2e1b09d4f6a8e2c5d7b1f3a9e04",
+  "name": "Ironblood Pact Colorblock Territory Jacket",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A heavyweight salvage-canvas jacket cut wide at the shoulders, paneled in the Ironblood Collective's signature burnt-orange and raw-iron grey. Back panel carries a hand-pressed gang sigil in cracked rubber ink — a stylized gear split by a lightning bolt — surrounded by district patch clusters stitched in layered embroidery. Sleeve seams are deliberately split and re-laced with steel-braid cord, marking a member who has survived at least one territorial confrontation. Interior lining is mismatched salvage fabric, each piece sourced from a different dead corponation uniform.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvage canvas",
+    "rubber-ink screenprint",
+    "steel-braid lacing cord",
+    "reclaimed corponation uniform lining",
+    "layered embroidery thread"
+  ],
+  "functionality": "Reinforced back panel absorbs minor impact. Laced sleeve seams can be quickly torn open to accommodate chrome arm augmentations during conflict. Interior pockets are heat-sealed for acid rain resistance.",
+  "what_it_says": "This wearer belongs somewhere, and crossing them means crossing everyone who wears this color.",
+  "worn_by": [
+    "Ironblood Collective members",
+    "Shelf territorial gang affiliates",
+    "Tier 1 youths claiming district identity",
+    "ex-members who kept the jacket anyway"
+  ],
+  "manufacturer": "Self-made / Ironblood Collective communal workshops",
+  "price_range": "Φ0 (earned, not purchased) — black market Φ180–Φ400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A runner finds a dead Ironblood member's jacket — wearing it could open doors or get them killed depending on which district they're in.",
+    "A corponation intelligence analyst has been tasked with mapping gang patch genealogy to predict territorial shifts — she needs a jacket to go undercover.",
+    "Someone is selling authenticated Ironblood jackets to Tier 4 fashion tourists, and the Collective has noticed."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "gang",
+    "tier-1",
+    "shelf",
+    "territorial",
+    "aug-compatible",
+    "salvage",
+    "subcultural"
+  ],
+  "parent_corponation": ""
+}

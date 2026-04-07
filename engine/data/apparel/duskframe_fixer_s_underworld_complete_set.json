@@ -1,0 +1,46 @@
+{
+  "id": "5c9b02e7d4a13f80627e4c1ab093d5f8",
+  "name": "Duskframe Fixer's Underworld Complete Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The fixer's uniform: a structured midi-length coat in deep plum-black synthetic wool, unbranded, with internal pocket architecture — flat-sewn channels for datasticks, a concealed mag-clasp holster at the left hip, chrome-arm relief seams. Beneath: a high-neck compression top in charcoal viscose-analog, and tailored straight-leg trousers with a subtle ikat-weave pattern suggesting West African and Central Asian textile fusion. Ankle boots are pull-on, rubber-soled, heel-compressed for silence.\n\nThe ensemble reads as Tier-3 from a distance — respectable, forgettable. On close inspection the coat's inner lining is hand-stitched signal-dampening mesh, and the collar has a BCI-dead-zone strip sewn into the band.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "synthetic wool",
+    "signal-dampening mesh lining",
+    "charcoal viscose-analog compression top",
+    "ikat-weave synthetic trouser fabric",
+    "rubber-soled pull-on ankle boot",
+    "mag-clasp holster panel"
+  ],
+  "functionality": "Signal-dampening coat lining disrupts passive BCI scanning, concealed internal datastick channels, mag-clasp hip holster, chrome-arm relief seams, BCI-dead-zone collar strip, heel-compressed silent soles.",
+  "what_it_says": "Whoever this is, they have been in every room they weren't supposed to be in — and left nothing behind.",
+  "worn_by": [
+    "underworld fixers",
+    "information brokers",
+    "mid-tier criminal intermediaries",
+    "burned corporate contractors"
+  ],
+  "manufacturer": "Duskframe (unlicensed street label)",
+  "price_range": "Φ 900 – Φ 1,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The signal-dampening lining is a newer weave than the coat — someone upgraded this after purchase, and that someone had access to restricted materials.",
+    "The ikat-weave trousers are hand-loomed, traceable to a single artisan collective in the Circuit — a calling card for those who know.",
+    "A CorpSec scanner flags the BCI-dead-zone collar strip as contraband, but the officer hesitates — this person has a look that says the arrest would cost more than the charge."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld",
+    "fixer",
+    "concealment",
+    "aug_compatible",
+    "tier2",
+    "tier3",
+    "street_label",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

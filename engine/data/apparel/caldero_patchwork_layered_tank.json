@@ -1,0 +1,43 @@
+{
+  "id": "a3f7c2e1b8d054609f2a1e7c3b8d4f90",
+  "name": "Caldero Patchwork Layered Tank",
+  "type": "apparel",
+  "category": "top",
+  "description": "A Shelf staple assembled from salvaged textile scraps — panels of faded corporate workwear fabric stitched alongside strips of what was once a West African kente-print garment, a section of silver-gray thermal lining, and a band of heavy denim along one shoulder. No two Caldero tanks are identical because there is no Caldero — it's a street name for the guy on the Tier 1 market stall at the corner of Caldero and 9th who sews these by hand from whatever comes in that week. The stitching is visible, sometimes doubled where the fabric was thin, and the whole thing has a raw hem at the bottom that curls slightly after washing.\n\nWorn close to the body, it breathes better than it looks. Shelf kids wear these under everything, or alone in summer, and the layered construction means there's always a pocket sewn somewhere unexpected — inside the kente panel, under the denim patch. It's not fashionable in any conventional sense, but on the Shelf it reads as resourceful, and resourceful is respected.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged polycotton blend",
+    "reclaimed thermal lining",
+    "scavenged kente-print fabric",
+    "repurposed denim strip"
+  ],
+  "functionality": "",
+  "what_it_says": "You survive on the Shelf and you're not embarrassed about it. You've stopped pretending otherwise.",
+  "worn_by": [
+    "Shelf residents",
+    "scrappers",
+    "street kids",
+    "low-tier market vendors"
+  ],
+  "manufacturer": "Caldero Street Market (independent, unlicensed)",
+  "price_range": "Φ8",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A particular Caldero tank stitched together from a dead man's jacket becomes recognizable to people who knew him — and someone wants it back.",
+    "The hidden inner pocket has a hand-sewn label that reads a date, a name, and nothing else.",
+    "A Tier 4 fashion scout photographs someone wearing one on the Shelf and tries to license the 'aesthetic' — the original maker has opinions about this."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 1",
+    "shelf",
+    "patchwork",
+    "tank top",
+    "handmade",
+    "street vendor",
+    "scavenged"
+  ],
+  "parent_corponation": ""
+}

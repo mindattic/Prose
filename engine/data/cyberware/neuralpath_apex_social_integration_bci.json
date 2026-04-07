@@ -1,0 +1,57 @@
+{
+  "id": "7d1e4a09c3b85f2061dfe8a4309c17b2",
+  "name": "NeuralPath Apex Social Integration BCI",
+  "brand_name": "NeuralPath",
+  "product_name": "Apex",
+  "type": "cyberware",
+  "aliases": [
+    "the Apex",
+    "SocMesh",
+    "cloutware",
+    "the handshaker",
+    "face-feed"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The NeuralPath Apex is a consumer-grade BCI engineered specifically around social connectivity and identity management, sitting one tier above the company's baseline Horizon mesh. Its dual-core neural processor handles standard feed access, full-resolution AR overlay at 1080p equivalent, and QUANTA payment integration, but its distinguishing feature is the SocialMatrix engine — a dedicated co-processor that manages real-time social feed aggregation, reputation scoring, proximity-based profile exchange, and neural notification filtering with learned behavioral weighting. The Apex can maintain up to twelve simultaneous social feed threads without perceptible lag, and its identity broadcast module allows users to push curated profile packets to nearby compatible BCIs within a 15-meter radius, enabling instant social credentialing in professional and social environments. Smartlink weapon integration is available as a licensed firmware unlock for legal carry permit holders.\n\nThe Apex is ubiquitous among young professionals, service-industry workers, and upwardly mobile Tier 2 residents who treat their social feed presence as a career asset. In Meridian 88's dense social economy — where reputation scores influence everything from apartment applications to job interviews — the Apex's SocialMatrix engine is less a luxury and more a practical necessity for anyone navigating Tier 2-3 social spaces. The implant has spawned a subculture of 'Apex runners' who obsessively optimize their proximity broadcasts and reputation metrics, and NeuralPath's companion app ecosystem has made the Apex the platform of choice for Meridian's sprawling influencer and content-creator economy. The device is so common in certain districts that social gatherings without an Apex-dense proximity field feel conspicuously quiet.",
+  "manufacturer": "NEURALPATH CONSUMER SYSTEMS",
+  "tier_availability": "Tier 2-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient procedure at NeuralPath certified clinic; local anesthetic; 90-minute installation; same-day activation",
+  "rejection_risk": "Low — mature biocompatible platform with over 12 million installations city-wide; well-characterized neurological integration profile",
+  "maintenance": "Bi-weekly automatic firmware updates; quarterly SocialMatrix algorithm recalibration via clinic or authorized home-calibration kit (Φ45); annual neural pathway integrity check recommended",
+  "specifications": "{\"bandwidth\": \"120 Mbps\", \"channels\": 4, \"ar_resolution\": \"1080p equivalent\", \"encryption\": \"AES-256 with social-layer sandboxing\", \"battery\": \"Passive induction with 6-hour active buffer cell\", \"latency\": \"8-14ms\", \"social_threads\": 12, \"proximity_broadcast_range\": \"15 meters\", \"feed_protocols\": [\"CivNet\", \"MeshPublic\", \"SocialMatrix v7\", \"QUANTA-Pay v4\"], \"smartlink\": \"Licensed firmware unlock available\", \"update_method\": \"OTA automatic with optional manual control\"}",
+  "side_effects": [
+    "Social anxiety amplification in users predisposed to comparison behavior — reputation score visibility has been linked to elevated cortisol in longitudinal studies",
+    "Notification fatigue syndrome: persistent low-grade cognitive load from background social feed processing, manifesting as difficulty concentrating in feed-silent environments",
+    "Proximity broadcast habituation — some long-term users report discomfort or social anxiety in environments where their profile isn't being actively received by others",
+    "Mild sleep disruption from background SocialMatrix processing during the first month post-installation"
+  ],
+  "cultural_context": "The Apex occupies an interesting middle-class aspirational position — it is within reach of most working Tier 2 residents with a payment plan, but its SocialMatrix capabilities signal ambition and social engagement that clearly differentiate its users from OpenLane holders. In Tier 3 professional environments, an Apex proximity broadcast is expected; arriving at a social or professional event without one is read as either poverty or deliberate anti-social signaling. The device has become so tied to social identity that NeuralPath's marketing team has successfully reframed the act of upgrading to an Apex as a rite of passage, and the installation day selfie — taken the moment the feed activates — is a cultural ritual in Meridian's working and middle classes.",
+  "known_users": [
+    "young professionals in Tier 2-3",
+    "service industry and hospitality workers",
+    "content creators and social influencers",
+    "retail and sales professionals who rely on reputation scoring",
+    "recent graduates entering the corporate job market"
+  ],
+  "story_hooks": [
+    "A NeuralPath software update to the SocialMatrix algorithm quietly begins suppressing the reputation scores of users associated with labor organizing activity — and the effect is subtle enough that most victims assume their social standing is genuinely declining.",
+    "A player character's Apex begins receiving proximity broadcasts from a profile that doesn't exist in any civic registry — a ghost identity that seems to be moving through the city just ahead of a series of disappearances.",
+    "The Apex's reputation scoring system has been gamed by a criminal syndicate selling 'reputation laundering' services to Tier 1 residents trying to pass as Tier 3 — and someone in the city's corporate infrastructure wants the scheme shut down quietly, without exposing how easily the system can be manipulated."
+  ],
+  "street_price": "Φ1,800",
+  "licensed_price": "Φ2,900",
+  "tags": [
+    "cyberware",
+    "bci",
+    "consumer",
+    "tier-2",
+    "tier-3",
+    "neuralpath",
+    "social-integration",
+    "neural-mesh",
+    "mid_range_consumer"
+  ],
+  "parent_corponation": ""
+}

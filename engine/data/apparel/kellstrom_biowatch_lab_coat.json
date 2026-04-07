@@ -1,0 +1,43 @@
+{
+  "id": "9a4d7c1f2e5b830a6d9c4f7e2b1a5d8c",
+  "name": "Kellstrom BioWatch Lab Coat",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "Kellstrom Biological Systems is a Tier 4 corponation subsidiary focused on geneware development and pharmaceutical synthesis. Their BioWatch Lab Coat is standard-issue for wet-lab personnel working in contact with biological agents, but it's also sold as a standalone item to independent researchers, biotech startups, and anyone who works in environments where contamination is a genuine concern. The coat is a mid-thigh length in a bright white polymer-cotton blend that resists most common chemical and biological surface contamination. It's treated with a hydrophobic coating that causes most liquids to bead and run off rather than soak in. The cuffs are snug and adjustable. The pockets are sealed with press-closure flaps.\n\nOutside of lab environments, the BioWatch has developed an unexpected secondary life. Geneware modification clinics — particularly the unlicensed ones operating in the Tier 2-3 boundary zones — use them because they suggest legitimacy. Some artists have adopted the clean white as a canvas. A few people just like the look of a good lab coat and wear it over street clothes, a choice that reads somewhere between scientific and eccentric depending on the neighborhood.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "polymer-cotton blend",
+    "hydrophobic surface treatment",
+    "antimicrobial lining at cuffs",
+    "reinforced press-closure pockets"
+  ],
+  "functionality": "Chemical and biological surface contamination resistance. Hydrophobic outer treatment. Cuff seals rated for splash protection.",
+  "what_it_says": "You work with things that could hurt you, or you want people to think you do.",
+  "worn_by": [
+    "corponation wet-lab researchers",
+    "independent biotech workers",
+    "unlicensed geneware clinic staff",
+    "artists using the white as canvas",
+    "people who like the look"
+  ],
+  "manufacturer": "Kellstrom Biological Systems",
+  "price_range": "Φ118",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A BioWatch coat recovered from an unlicensed geneware clinic has contamination on the cuffs that doesn't match anything in the clinic's official inventory — someone was working on something else.",
+    "A Kellstrom researcher went missing wearing one; the hydrophobic coating preserved a partial handprint on the sleeve that nobody has been able to match.",
+    "An artist who paints in their BioWatch has been documenting what they witness at a Tier 2 geneware clinic on the interior lining — a running record hidden under the white exterior."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "lab coat",
+    "biological",
+    "kellstrom",
+    "corponation",
+    "functional"
+  ],
+  "parent_corponation": ""
+}

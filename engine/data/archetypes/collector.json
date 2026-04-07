@@ -1,0 +1,34 @@
+{
+  "id": "d83a6d2bc06b5072b309a4204135c3b2",
+  "name": "Collector",
+  "type": "archetype",
+  "category": "social",
+  "description": "Accumulates people, favors, and debts like a living ledger",
+  "behavioral_signature": "Remembers every favor given and received with perfect accuracy",
+  "under_stress": "Calls in all debts simultaneously",
+  "at_rest": "Cataloging who owes what to whom",
+  "will_always": [
+    "keep score"
+  ],
+  "will_never": [
+    "do something for nothing"
+  ],
+  "unless": [
+    "the investment has clear long-term payoff"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Investor",
+      "threshold": 0.7,
+      "context": "social transactions"
+    }
+  ],
+  "opposite_of": [
+    "Generous Fool"
+  ],
+  "tags": [
+    "debts",
+    "favors",
+    "accounting"
+  ]
+}

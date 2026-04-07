@@ -12,7 +12,7 @@
   ],
   "category": "communications",
   "description": "A covert communications relay device that can be concealed in walls, under floors, or inside furniture, creating a local encrypted mesh network that does not touch any existing communications infrastructure. The PCR-3 creates an independent communication channel between paired devices using frequency-hopping spread spectrum transmission that is virtually undetectable against the background electromagnetic noise of urban environments. Multiple relays can be daisy-chained to extend range, and the network auto-heals if individual relays are destroyed.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Vasquez Biocompatible Materials",
   "tier_availability": "Tier 3+",
   "legality": "Prohibited — unauthorized communications infrastructure",
   "base_technologies": [],
@@ -41,5 +41,6 @@
     "corporate",
     "dark",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

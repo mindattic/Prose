@@ -1,0 +1,49 @@
+{
+  "id": "117db1758f7e3663013fa30f349bd574",
+  "name": "Tessera TK-20 Apex 'Mandate'",
+  "type": "weapon",
+  "aliases": [
+    "Mandate",
+    "TK-20",
+    "Apex"
+  ],
+  "category": "pistol",
+  "description": "The Tessera TK-20 Apex is Tessera Corponation's flagship smart-linked combat pistol, chambered in 10mm Auto with full BCI integration, biometric authentication, and a proprietary predictive targeting system that begins calculating firing solutions before the shooter has consciously decided to fire. The weapon reads pre-motor cortex signals through the BCI link and begins ballistic computation during the 200-millisecond window between intention and action.\n\nThe Mandate is engineered for Tessera's most senior security operatives — individuals with military-grade BCI implants and years of neural-weapon integration training. The predictive targeting system is disorienting for inexperienced users; the weapon presents firing solutions for targets the shooter hasn't consciously identified yet, which can cause hesitation and confusion in operators without proper training. For trained users, the effect is seamless — the weapon feels like an extension of thought itself.\n\nTessera does not sell the Mandate commercially. Units are issued to qualifying personnel and recovered upon separation from service. The handful that have appeared on the black market command prices equivalent to a Shelf apartment building, and Tessera's asset recovery teams pursue every one with notable determination.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 5",
+  "legality": "Corponation-restricted — not available for civilian purchase",
+  "base_technologies": [
+    "BCI smart-link integration",
+    "Predictive targeting system",
+    "Pre-motor cortex signal reading",
+    "Biometric authentication",
+    "Proprietary ballistic AI"
+  ],
+  "specifications": "caliber: 10mm Auto\neffective_range: 70 meters (smart-linked)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 12 rounds\nweight: 0.95 kg\nBCI_latency: <3ms\npredictive_window: 200ms pre-trigger",
+  "tactical_use": "An elite smart-linked combat pistol with predictive targeting that reduces engagement time below human conscious reaction speed. The system identifies and presents firing solutions for threats before the operator's conscious mind has finished processing — effectively allowing the trained operator to shoot at the speed of instinct rather than deliberation. Requires extensive training to use effectively; untrained operators experience disorientation.",
+  "cultural_context": "The Mandate is a myth to most of Meridian 88. Its existence is known but its capabilities are exaggerated in street-level rumors — some claim it can fire autonomously, read minds, or target people through walls. The reality is impressive enough without embellishment. Among those who know the truth, the Mandate represents the current ceiling of neural-weapon integration technology.",
+  "known_users": [
+    "Tessera Corponation senior security operatives",
+    "Tessera executive protection division",
+    "Tessera asset recovery teams"
+  ],
+  "story_hooks": [
+    "A Mandate surfaces on the black market with its biometric lock intact — meaning someone has either cloned a senior Tessera operative's neural signature, or the weapon's owner is selling it while still employed. Either possibility has serious implications.",
+    "A Tessera operative's Mandate begins presenting firing solutions for their own colleagues — the predictive system is flagging friendlies as threats, and no one can determine whether it's a malfunction or if the AI knows something the operator doesn't."
+  ],
+  "ammunition_type": [
+    "10mm Auto"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "smart_link",
+    "BCI",
+    "AI",
+    "tessera",
+    "elite",
+    "predictive",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "c4a1f83e7b29d546e0f1a2b3c4d5e603",
+  "name": "Wrenwire Portless AR Wrap Visor",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A sleek wraparound AR visor from Wrenwire, a street-label electronics brand operating out of Circuit's eastern fabrication quarter. The frame is matte recycled polycarbonate in deep teal, with a single-piece curved lens that shifts from neutral smoke to near-opaque in high UV. Micro-projectors embedded in the temples cast HUD overlays — navigation, comms, environmental readouts — directly onto the lens surface.\n\nDesigned explicitly for users without neural ports, the Portless line relies on gesture-and-blink input. The bridge is padded with antimicrobial silicone and adjustable via a thumb-screw at each temple.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "recycled polycarbonate frame",
+    "photochromic single-piece lens",
+    "micro-projector array",
+    "antimicrobial silicone bridge pad",
+    "gesture-input temple sensors"
+  ],
+  "functionality": "Delivers AR overlay HUD without BCI requirement. Pairs to personal device via short-range mesh. Photochromic lens adjusts in under 2 seconds. 14-hour battery life; charges via induction strip on inner left temple.",
+  "what_it_says": "You want the tech but you're keeping your skull your own — practical independence over integration.",
+  "worn_by": [
+    "aug-skeptic couriers",
+    "small business owners",
+    "street vendors tracking inventory",
+    "Tier 2 workers who can't afford BCI but need AR access"
+  ],
+  "manufacturer": "Wrenwire (street label, eastern Circuit fab quarter)",
+  "price_range": "Φ190 – Φ340",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "Wrenwire's gesture-input firmware has an undocumented passive recording mode — someone is harvesting environmental data from thousands of wearers citywide.",
+    "A Tier 3 manager discovers the visor's mesh pairing can tap into unsecured corponation internal feeds if you know the handshake sequence.",
+    "The teal colorway was originally a one-off custom run for a now-defunct Circuit collective; wearing original-run teal is a quiet signal in certain circles."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "visor",
+    "AR visor",
+    "smart eyewear",
+    "tier-2",
+    "tier-3",
+    "street label",
+    "wrenwire",
+    "no-BCI",
+    "photochromic"
+  ],
+  "parent_corponation": ""
+}

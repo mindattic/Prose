@@ -12,7 +12,7 @@
   ],
   "category": "vehicle",
   "description": "The Lammergeier is an unpowered thermal soaring platform developed by Ouroboros Energy as a byproduct of their atmospheric heat mapping research — the company needed a low-cost, long-endurance observation platform for monitoring thermal columns above their industrial energy installations, and the result was a vehicle that accidentally became one of the most capable covert aerial platforms in Meridian 88. The airframe is a swept-wing glider with a 9-meter wingspan built from aerogel-composite panels that are nearly invisible on radar and produce no heat signature because the vehicle carries no engine. Lift is generated entirely through exploitation of thermal columns — the rising heat plumes produced in abundance by Meridian 88's industrial density.\n\nThe Lammergeier's Thermal Navigation System is the vehicle's core intelligence — a suite of atmospheric pressure and temperature sensors linked to a predictive soaring algorithm that identifies and routes the glider between thermal columns with minimal operator input. An experienced pilot can fly indefinitely over the industrial districts, riding the city's waste heat as fuel. The vehicle seats one in a prone configuration, reducing frontal profile to under 0.4 square meters. Communication and sensor systems are passive-only by default — the glider listens and observes without transmitting, making it electronically silent during operations. Data is stored onboard and offloaded after landing.\n\nThe Lammergeier is used by Ouroboros for legitimate atmospheric monitoring, but the platform's properties — no engine, no emissions, no active transmissions, radar-near-invisible — make it extraordinarily attractive for surveillance, courier drops, and infiltration overwatch. It is not fast and it cannot operate in rain or low-thermal conditions, but over the right terrain and under the right atmospheric conditions, it is effectively undetectable. Operators who know Meridian 88's thermal geography can cross the entire city without touching the ground.",
-  "manufacturer": "OUROBOROS ENERGY",
+  "manufacturer": "Infinite Loop Recycling",
   "tier_availability": "Tier 2+",
   "legality": "Licensed",
   "base_technologies": [
@@ -62,5 +62,6 @@
     "rain",
     "energy",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Ouroboros Energy"
 }

@@ -11,7 +11,7 @@
   ],
   "category": "comms",
   "description": "The Distributed Echo Mesh Kit is a field-deployable mesh networking system packaged as a set of twelve adhesive node discs, each approximately the diameter of a coin and 4mm thick. When placed on surfaces throughout a building, tunnel system, or urban block, the nodes self-organize into a low-power mesh network within ninety seconds, creating a private encrypted communications backbone entirely independent of any existing infrastructure. The mesh operates on frequency-hopping spread spectrum in the sub-GHz band, prioritizing wall penetration and range over bandwidth. The resulting network supports voice, text, and low-resolution positional data for up to eight simultaneous users.\n\nVantablack Media developed the Echo Mesh Kit ostensibly for their field journalism teams operating in communications-denied environments — protest zones, disaster areas, and regions where corporate or state actors have seized control of local networks. The kit's civilian packaging and media-company branding have allowed it to circulate with relatively light regulatory scrutiny despite capabilities that make it extremely useful for operations that have nothing to do with journalism. Each node is designed to be nearly invisible once placed, with a matte surface that accepts paint, dust, and grime naturally.\n\nThe mesh has no central node — if any individual disc is found and destroyed, the network reroutes automatically. Full network collapse requires removal of nine or more of the twelve nodes. The discs are designed to be left behind: they are cheap enough to be considered disposable, and they self-wipe after a factory-set duration between 24 hours and 30 days depending on the configuration selected before deployment.",
-  "manufacturer": "VANTABLACK MEDIA",
+  "manufacturer": "Subliminal Overlay Division",
   "tier_availability": "Tier 1+",
   "legality": "Unrestricted",
   "base_technologies": [
@@ -52,9 +52,7 @@
   "tags": [
     "comms",
     "equipment",
-    "war",
     "trust",
-    "love",
     "ai",
     "elf",
     "corporate",
@@ -63,5 +61,6 @@
     "pain",
     "tunnel",
     "tier 1"
-  ]
+  ],
+  "parent_corponation": "Vantablack Media"
 }

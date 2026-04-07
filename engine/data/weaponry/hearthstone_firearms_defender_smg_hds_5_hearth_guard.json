@@ -1,0 +1,48 @@
+{
+  "id": "cd14ea446ff97308896273befbffe45a",
+  "name": "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
+  "type": "weapon",
+  "aliases": [
+    "Hearth Guard",
+    "HDS-5",
+    "Home Defense"
+  ],
+  "category": "smg",
+  "description": "The HDS-5 Hearth Guard is a semi-automatic-only carbine chambered in 9mm brass-cased, designed for civilian home and business defense. Hearthstone Firearms deliberately restricted the weapon to semi-automatic operation to avoid regulatory classification as a military weapon, keeping it legal in jurisdictions where automatic weapons are prohibited. The result is a 9mm carbine with a 16-round magazine, basic iron sights, and no electronic components.\n\nThe Hearth Guard's design emphasizes safety for untrained users. The manual safety is oversized and color-coded — red for fire, white for safe. The magazine release requires deliberate two-finger operation to prevent accidental drops. The trigger pull is a heavy 4.5 kilograms to prevent negligent discharge. Every design decision prioritizes preventing accidents over maximizing combat effectiveness.\n\nAt Φ350, the Hearth Guard is the cheapest long gun Hearthstone produces. It sells in enormous volumes to small business owners, residential cooperatives, and individuals who need a weapon more capable than a handgun but cannot afford or legally possess a military-grade platform. The weapon is basic, safe, and reliable — exactly what its customers need.",
+  "manufacturer": "HEARTHSTONE FIREARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — civilian grade",
+  "base_technologies": [
+    "Safety-prioritized design",
+    "Semi-automatic restricted operation",
+    "Accident-prevention ergonomics"
+  ],
+  "specifications": "caliber: 9mm brass-cased\neffective_range: 75m\nrate_of_fire: Semi-automatic only\nmagazine_capacity: 16 rounds\nweight: 2.3 kg",
+  "tactical_use": "The Hearth Guard provides civilian defenders with a stable, easy-to-shoot platform that is more accurate than a handgun at home-defense distances. The heavy trigger and safety features reduce the risk of accidental discharge by untrained family members. The 9mm carbine format offers mild recoil suitable for shooters of all sizes and strength levels. It is not a combat weapon — it is a defense tool designed to be used by people who hope they never need it.",
+  "cultural_context": "The Hearth Guard is the weapon of shopkeepers, teachers, and parents. It lives in bedroom closets and behind store counters, and most of them are never fired outside of basic familiarization. Hearthstone markets the HDS-5 with images of ordinary people in ordinary spaces — a deliberate contrast to the operator-focused marketing of corporate arms. The message is clear: this weapon is for you, not for soldiers.",
+  "known_users": [
+    "Civilian homeowners",
+    "Small business owners",
+    "Residential cooperatives",
+    "Community watch groups"
+  ],
+  "story_hooks": [
+    "A shopkeeper defended their business with a Hearth Guard during a riot and is now facing legal consequences — the jurisdiction's self-defense laws were written by the corponation that instigated the unrest.",
+    "Hearthstone's bulk shipment of 5,000 Hearth Guards to a Tier 1 settlement was intercepted by corporate security, who classify the semi-automatic carbines as military weapons under a newly enacted regulation."
+  ],
+  "ammunition_type": [
+    "9mm brass-cased standard"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "civilian",
+    "home_defense",
+    "safe",
+    "affordable",
+    "Hearthstone",
+    "tier 1",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

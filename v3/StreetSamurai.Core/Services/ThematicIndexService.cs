@@ -49,7 +49,7 @@ public class ThematicIndexService
         var newIndex = new Dictionary<string, List<ThematicHit>>(StringComparer.OrdinalIgnoreCase);
 
         foreach (var c in db.Characters)
-            IndexByTags(newIndex, c.Name, "character", FirstSentence(c.Description), c.Stats.Tags);
+            IndexByTags(newIndex, c.Name, "character", FirstSentence(c.Description), c.Stats.StatTags);
         foreach (var d in db.Districts)
             IndexByTags(newIndex, d.Name, "place", FirstSentence(d.Description), d.Tags);
         foreach (var f in db.Factions)

@@ -10,7 +10,7 @@
   ],
   "category": "energy",
   "description": "A handheld directed energy device that emits a rapidly cycling pattern of high-intensity light at frequencies calculated to induce seizure-like neural disruption in human visual processing. The OD-4 projects a beam of strobing light that cycles through specific frequencies known to cause photosensitive responses — disorientation, nausea, loss of motor control, and in approximately 3% of targets, full tonic-clonic seizures. The beam is effective against both augmented and unaugmented targets because it exploits fundamental biological visual processing rather than electronic systems.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Lumina Home Automation",
   "tier_availability": "Tier 2+",
   "legality": "Licensed — riot control",
   "base_technologies": [
@@ -31,13 +31,14 @@
     "energy",
     "weapon",
     "gun",
-    "war",
     "loss",
     "augment",
     "neural",
     "ai",
     "control",
     "power",
-    "tier 2"
-  ]
+    "tier 2",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

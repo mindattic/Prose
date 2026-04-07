@@ -10,6 +10,9 @@
         <div class="card bg-dark text-light border-secondary mb-2 card-body">
             <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                    placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+            <div class="mb-2">
+                <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+            </div>
             <div class="d-flex gap-2">
             <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Characters" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
@@ -98,6 +101,7 @@
                 <div style="flex: 1; min-width: 200px;"><div class="field-label">Blind Spots</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editBlindSpots"></textarea></div>
             </div>
             <div class="mb-3"><div class="field-label">Secret</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Psychology.Secret"></textarea></div>
+            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
 
             @* ── Behavioral ──────────────────────────── *@
             <div class="field-label text-danger mt-3">Behavioral</div>
@@ -139,6 +143,8 @@
     private bool isNew, _confirmDelete;
     private string originalName = "";
     private string filter = "";
+    private List<(string name, int count)> allTags = [];
+    private HashSet<string> selectedTags = [];
 
     // Facet weights
     private double editWound, _editIdeal, _editId, _editShadow, _editMask, _editGhost;
@@ -150,14 +156,22 @@
     private string editStressLow = "", _editStressMed = "", _editStressHigh = "", _editStressCrit = "";
     private string editStoryHooks = "";
 
-    private IEnumerable<CharacterData> FilteredItems => string.IsNullOrWhiteSpace(filter)
-        ? items
-        : items.Where(c => c.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
-            || c.Role.Contains(filter, StringComparison.OrdinalIgnoreCase));
+    private IEnumerable<CharacterData> FilteredItems
+    {
+        get
+        {
+            IEnumerable<CharacterData> result = items;
+            if (!string.IsNullOrWhiteSpace(filter))
+                result = result.Where(c => c.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
+            if (selectedTags.Count > 0)
+                result = result.Where(c => selectedTags.All(tag => c.Tags.Contains(tag)));
+            return result;
+        }
+    }
 
     protected override void OnInitialized()
     {
-        Repo.Reload(); items = Repo.GetAll();
+        Repo.Reload(); items = Repo.GetAll(); RebuildTags();
         if (Nav.Uri.Contains("new=true")) AddNew();
     }
 
@@ -266,5 +280,8 @@
 
     private static List<string> SplitLines(string text) =>
         (text ?? "").Split('\n', StringSplitOptions.RemoveEmptyEntries).Select(l => l.Trim()).Where(l => l.Length > 0).ToList();
+    private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
+    private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

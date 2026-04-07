@@ -1,0 +1,33 @@
+{
+  "id": "058f00a765f7765a6bed38e810912f99",
+  "name": "Resistance Cell Leader",
+  "type": "archetype",
+  "category": "power",
+  "description": "Commands loyalty through shared danger and purpose",
+  "behavioral_signature": "Leads by example in direct opposition to a larger power",
+  "under_stress": "Becomes paranoid about infiltration and betrayal",
+  "at_rest": "Plans, recruits, maintains the flame of defiance",
+  "will_always": [
+    "keep the cause alive"
+  ],
+  "will_never": [
+    "compromise with the oppressor"
+  ],
+  "unless": [
+    "the compromise saves their people and the cause can survive"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Guerrilla",
+      "threshold": 0.8,
+      "context": "underground leadership"
+    }
+  ],
+  "opposite_of": [
+    "Bureaucrat"
+  ],
+  "tags": [
+    "underground",
+    "defiant"
+  ]
+}

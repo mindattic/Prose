@@ -1,0 +1,50 @@
+{
+  "id": "2d6f8a1c4e7b9d3f0a5c8e2b4f6d1a7c",
+  "name": "Solberg-Maru Structural Maintenance Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Solberg-Maru Infrastructure is one of the mid-tier corponations responsible for maintaining Meridian's aging transit tunnels, bridge superstructures, and elevated MagRail support columns — work that is unglamorous, physically demanding, and absolutely essential. Their field crew uniform is issued in two colors: charcoal grey for standard maintenance and safety orange for elevated-risk structural work. This kit is the standard grey issue. The coverall is a single-piece construction in heavy synth-canvas with articulated knees and elbows — pre-bent at the joint so the fabric doesn't bind when climbing or crouching — and a full-length front zipper backed by a magnetic snap storm flap. The Solberg-Maru logo, a stylized arch over a horizontal line (representing bridge over waterway), is heat-pressed in reflective silver on the back and left breast. A four-point harness anchor loop is reinforced into the upper back panel, rated to arrest a sixty-kilogram fall load. The collar is high and snug with a separate magnetic closure, designed to pair with a respirator mask that clips to a dedicated ring at the left collar point.\n\nUnderneath is an Ironpass Thermal Work Layer in dark charcoal, moisture-wicking and cut to allow full shoulder rotation. The boots are the Penrose Weld Boot, adapted here for climbing use with extra ankle support and a lug sole rated for rebar, grating, and wet concrete. A full-body tool harness in heavy nylon webbing goes over the coverall — carabiner points at both hips and the chest, with a tool-drop tether system for working at height. The hard hat is white Solberg-Maru branded with a pinned-on personal identification number and, almost always, at least one unauthorized sticker from a band, a political cause, or a neighborhood market. Aug-compatible at the spine and both shoulders: the coverall features a rear channel and bilateral shoulder zips that open cleanly for spinal rigs and shoulder-mounted chrome without compromising the structural integrity of the harness anchor. This is a rig for people who keep the city from falling down.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heavy synth-canvas coverall shell",
+    "articulated joint pre-formed fabric",
+    "reflective silver heat-press logo",
+    "reinforced harness anchor webbing",
+    "nylon tool harness",
+    "Ironpass Thermal Work Layer synthweave",
+    "lug-sole concrete-rated rubber boot construction",
+    "magnetic storm flap zipper backing"
+  ],
+  "functionality": "Rated fall-arrest harness anchor loop, articulated knees and elbows for climbing and crawling, respirator clip-mount at collar, tool-drop tether harness with multi-point carabiner attachment, aug-compatible rear spine channel and bilateral shoulder zips, high snug collar for respirator seal, lug sole for rebar and wet concrete, thermal base layer for tunnel temperature variance, magnetic storm flap for wind exposure at height",
+  "what_it_says": "Structural maintenance workers occupy a specific niche in Circuit society — they're not glamorous, they're not customer-facing, and most of the city has no idea they exist until something breaks. The harness and the anchor loop say: I work at height, and I do it right. The unauthorized hard hat sticker says: I am still a person inside this corponation rig. Workers who've been on Solberg-Maru crews for years develop a quiet professional pride — they know the city's skeleton better than anyone.",
+  "worn_by": [
+    "Solberg-Maru structural maintenance crew",
+    "bridge inspection workers",
+    "MagRail support column technicians",
+    "tunnel infrastructure repair teams",
+    "elevated-structure rigging specialists"
+  ],
+  "manufacturer": "Solberg-Maru Infrastructure (corponation-issued coverall and harness); Ironpass thermal layer; Penrose Weld Boot",
+  "price_range": "Φ260–Φ380 (issued; personal component replacement Φ80–Φ140 per item)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A structural maintenance worker doing routine inspection of a MagRail support column discovers that three load-bearing anchors have been replaced with substandard components — and the work order in the system shows the job was completed correctly six weeks ago by a crew that doesn't exist.",
+    "The unauthorized sticker on a worker's hard hat turns out to be a tracking device — someone has been mapping every Solberg-Maru crew's movement through the tunnel network for months.",
+    "A veteran crew member's personal BCI log, recorded during years of tunnel work, contains acoustic and structural data that proves a section of the city's infrastructure is weeks from catastrophic failure — data that Solberg-Maru's official inspections have somehow missed every single time."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "structural_maintenance",
+    "corponation_issued",
+    "aug_compatible",
+    "height_rated",
+    "solberg_maru",
+    "coverall",
+    "infrastructure"
+  ],
+  "parent_corponation": ""
+}

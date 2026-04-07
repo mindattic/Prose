@@ -1,0 +1,58 @@
+{
+  "id": "266eaf2f23301faecdffca3f6f263401",
+  "type": "faction",
+  "name": "The Flicker Collective",
+  "aliases": [
+    "Flicker",
+    "The Collective",
+    "Data Ghosts"
+  ],
+  "motto": "Information wants to be free. We charge a handling fee.",
+  "description": "The Flicker Collective is Meridian 88's premier data theft and information brokerage operation — a loose network of approximately 150 elite hackers, social engineers, and intelligence analysts who steal corporate secrets and sell them to the highest bidder. Unlike the Jade Syndicate's intelligence operation, which gathers information to support its own criminal enterprises, Flicker exists solely to trade in information itself. Data is their product, their currency, and their religion.\n\nFlicker's operatives — called 'flickers' — specialize in penetrating corporate networks through a combination of BCI-enhanced hacking, social engineering, physical infiltration, and the exploitation of insider contacts. A typical Flicker operation might involve months of preparation: identifying a target, mapping its security architecture, cultivating a disgruntled employee, and executing a data extraction that leaves no trace. The stolen data is then cataloged, verified, and offered for sale through Flicker's encrypted marketplace, where buyers include rival corponations, foreign intelligence services, journalists, resistance movements, and occasionally the target company itself (buying back its own secrets is cheaper than the damage of their release).\n\nThe Collective operates on a reputation system. Flickers are independent contractors who take jobs, deliver results, and receive ratings from both Flicker's management and their clients. High-rated flickers get access to better jobs, better tools, and better intelligence. Low-rated flickers get cut off. This system produces a quality of work that corporate security divisions respect even as they try to prevent it.",
+  "ideology": "Information asymmetry is the foundation of corporate power. By redistributing information — for a price — Flicker corrects the market. This is a self-serving philosophy wrapped in anti-corporate language, and Flicker's members are mostly honest about that.",
+  "territory": "No permanent physical location. Flicker operates through encrypted networks and temporary meeting spaces. Operatives are distributed throughout Meridian 88, with concentrations in the Circuit and Laceworks where targets are richest.",
+  "leadership": "A figure known as 'the Broker' runs Flicker's marketplace and sets operational priorities. The Broker's identity is unknown — even to most Flicker operatives. Communication is through encrypted channels only.",
+  "methods": [
+    "BCI-enhanced network penetration targeting corporate systems",
+    "Social engineering and insider cultivation within target organizations",
+    "Physical infiltration of secure facilities",
+    "Data verification, cataloging, and marketplace management",
+    "Reputation-based quality control of operatives",
+    "Strategic release of information to manipulate markets and political outcomes"
+  ],
+  "resources": [
+    "150 elite hackers and intelligence operatives",
+    "An encrypted marketplace with a reputation system",
+    "Extensive archive of stolen corporate intelligence",
+    "BCI-enhanced hacking tools and custom exploit libraries",
+    "A network of insider contacts across major corponations",
+    "The Broker's organizational skill and mysterious identity"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "Flicker and Null Sermons occasionally trade — Flicker provides intelligence that Null Sermons turns into broadcasts, and Null Sermons provides broadcast access that Flicker uses for information operations. The relationship is cautious and mutually beneficial.",
+      "tags": [
+        "criminal",
+        "information"
+      ]
+    }
+  ],
+  "narrative_function": "Flicker represents the commodification of truth — the reality that in a corporate-sovereign city, even secrets have a market price.",
+  "story_hooks": [
+    "The Broker has posted a job that Flicker's top operatives are refusing to take. The target is Axiom's inner network — the one nobody has ever penetrated. The pay is sufficient to retire on. The last three operatives who attempted preliminary reconnaissance haven't been heard from.",
+    "A Flicker data package has surfaced containing the real identity of someone the players know — and the information is being auctioned to the person's enemies."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "hacker",
+    "data",
+    "information",
+    "circuit",
+    "laceworks",
+    "espionage"
+  ]
+}

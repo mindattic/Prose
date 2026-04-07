@@ -1,0 +1,53 @@
+{
+  "id": "c5b8e3f0a12d674e9b3c5f8a2e0d7c43",
+  "name": "Sootmark Nightwatch Layer Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Built for staying invisible in the dark industrial corridors of the Shelf while remaining functional in the cold. The base is a full-length thermal underlayer in matte black — the kind of utilitarian piece that Circuit-tier factories produce by the millions, here worn past its intended lifespan, the cuffs replaced with strips cut from a neoprene wetsuit and secured with adhesive seam tape. Over that comes a mid-layer hoodie in deep charcoal fleece, the hood reinforced with a wire brim salvaged from a hard hat so it holds its shape in wind without being pulled back. The hoodie's kangaroo pocket has been subdivided internally with sewn-in elastic loops holding a small flashlight, a multi-tool, and a folded strip of reflective tape for emergencies. The outer layer is a cut-down jacket — originally longer, now cropped at the hip with the cut edge raw and sealed with heat-bond tape — in matte dark olive synthetic ripstop. The back panel has been stenciled in rust-colored paint with a crude geometric sigil, the mark of a specific Shelf block watch rotation. Trousers are slim-cut tactical in faded charcoal, both knees double-layered with iron-on rubber patches. Footwear is a pair of heavy low-profile boots in matte black rubber-composite, the lug soles worn almost flat but retreaded with adhesive grip strips along the ball of the foot for quiet movement on wet metal grating. A neck gaiter in dark gray sits around the throat, doubling as a face cover. Spinal rig aug-compatible: the jacket and hoodie both have a central back channel — a vertical seam left unstitched and finished with snap-close flaps — running from collar to hem.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "thermal compression knit",
+    "charcoal fleece",
+    "neoprene",
+    "synthetic ripstop",
+    "rubber composite",
+    "adhesive grip strips",
+    "heat-bond tape",
+    "wire brim salvage",
+    "elastic",
+    "rubber patch iron-on"
+  ],
+  "functionality": "Full thermal layering for cold industrial night environments. Hard-hat wire brim keeps hood functional in wind. Internal pocket organizer for essential tools. Jacket back channel accommodates spinal rig augmentation. Grip strips on boot soles enable quiet movement on wet surfaces. Neck gaiter provides respiratory and face protection. Block-watch sigil identifies the wearer to allied residents.",
+  "what_it_says": "Someone who watches. Patient, organized, community-invested in a specific way — this isn't a loner's outfit, it's a person embedded in a local network. The sigil on the back is a declaration of territory and responsibility. The spinal channel on the jacket suggests a serious aug investment, unusual for Tier 1, and implies either a past in a higher tier or a very specific set of skills that made the hardware worth sacrificing for.",
+  "worn_by": [
+    "Shelf block watch volunteers",
+    "community security runners",
+    "spinal-rig augmented residents",
+    "night shift infrastructure watchers",
+    "former Tier 2 workers who fell through the cracks"
+  ],
+  "manufacturer": "Base pieces from Circuit-tier surplus; modifications self-made; sigil stenciled by local block artist",
+  "price_range": "Φ15–Φ35 assembled",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The rust-colored sigil on the jacket back is a block watch mark — but the block it represents was condemned and evacuated six months ago. Why is the wearer still wearing it, and are they the only one left?",
+    "The spinal rig channel in the jacket is cut to accommodate a specific military-grade rig configuration that hasn't been available on the civilian market for fifteen years. Someone who recognizes the spec wants to know where it came from.",
+    "The internal pocket organizer holds a strip of reflective tape that, when unfolded, reveals handwritten coordinates on the non-reflective backing — coordinates to something the wearer has been guarding the location of for a very long time."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "aug_compatible",
+    "spinal_rig_compatible",
+    "nightwatch",
+    "stealth",
+    "layered",
+    "community",
+    "block_watch",
+    "thermal"
+  ],
+  "parent_corponation": ""
+}

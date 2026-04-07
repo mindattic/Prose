@@ -1,0 +1,50 @@
+{
+  "id": "2b7f5e9c13a048d6f0e4c8a391b62d70",
+  "name": "Veldtmann Pressline Assembly Line Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A complete assembly line worker's kit issued by Veldtmann Industrial for pressline floor operations — stamping, forming, and quality inspection of fabricated metal components. The uniform jacket is a medium-weight royal blue synth-cotton blend with snap-front closure, elasticated cuffs that tighten against wrist augmentation ports to prevent snagging in machinery, and a Veldtmann Industrial chest emblem — a stylized press-stamp in yellow on a black field — embroidered at the left breast. The back panel carries the worker's station number in large yellow stencil print. The trousers match in royal blue, with articulated knees, two front slash pockets, and a sewn-in kneeling pad at the right knee — a small mercy for inspection posture on the concrete floor. A slim hi-vis yellow stripe runs down the outer leg seam on both sides.\n\nA white hard hat with Veldtmann's press-stamp logo and an elastic sweatband is standard issue; this one has been personalized with a strip of family photos laminated under clear tape on the inside brim — visible only to the wearer. Safety glasses with side shields hang around the neck on a breakaway cord. Underfoot: Veldtmann Steelcap 7 boots in black with yellow toe-cap striping. Hearing protection — molded yellow foam plugs on a behind-the-neck band — sits ready around the collar. The outfit is clean at shift start: royal blue pressed, steel-toes wiped. By shift end, there's stamping oil on the cuffs and metal dust in every crease.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "royal blue synth-cotton blend",
+    "elasticated cuff material",
+    "hi-vis yellow reflective tape",
+    "hard hat ABS shell",
+    "side-shield polycarbonate",
+    "molded hearing protection foam",
+    "composite steel-toe boot material"
+  ],
+  "functionality": "Machinery-safe elasticated wrist cuffs (aug-port compatible), articulated knees, sewn-in kneeling pad, hi-vis leg striping, hard hat with sweat band, breakaway safety glass cord, steel-toe boots, behind-neck hearing protection band",
+  "what_it_says": "A Veldtmann assembly line worker — steady employment, mandatory safety compliance, the kind of job that comes with PPE audits and a floor supervisor who counts heads at shift start. The laminated family photos under the hard hat brim are invisible to management and essential to the worker: a private world maintained inside the institutional one. The pressed uniform at shift start signals someone who still believes in showing up right, even if the floor will wreck it by noon.",
+  "worn_by": [
+    "pressline assembly workers",
+    "stamping floor operators",
+    "quality inspection line staff",
+    "Veldtmann Industrial employees"
+  ],
+  "manufacturer": "Veldtmann Industrial — fully corponation-issued uniform and PPE",
+  "price_range": "Φ 150–Φ 200 (corponation-issued; dock replacement fees apply per item)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The station number stenciled on the back of a worker's jacket matches a station that was officially decommissioned after a fatal accident — but someone is still clocking into it each shift, and the output logs show full production.",
+    "The laminated photos under the hard hat brim include one face that a player character recognizes — someone who is supposed to be dead, standing in an outdoor market scene with a timestamp from eight months ago.",
+    "A Veldtmann floor worker has been quietly documenting safety violations in a hand-written log hidden inside the kneeling pad of their work trousers, and they need someone they can trust to get it out of the facility."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "assembly_line",
+    "industrial",
+    "uniform",
+    "corponation_issued",
+    "aug_compatible",
+    "veldtmann",
+    "pressline",
+    "working_class",
+    "hi_vis"
+  ],
+  "parent_corponation": ""
+}

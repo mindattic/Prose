@@ -1,0 +1,52 @@
+{
+  "id": "f04b7d2c9e163a58dc80f4a21b6e3c07",
+  "name": "Ironpass Corridor Maintenance Night Crew Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The working kit of M88's infrastructure maintenance crews — the men, women, and modified persons who descend into the transit corridors, utility conduits, and elevated walkway superstructures during the 0200–0600 dead window when foot traffic drops and repair windows open. The primary garment is a high-visibility coverall in charcoal grey with broad safety-orange shoulder yokes and sleeve stripes, retroreflective tape running the outer leg seams and across the upper back. An Ironpass Infrastructure Services logo — a stylized wrench-and-hex bolt in white — is stenciled on the back panel; a sewn name patch and crew number tag sit on the chest. The coverall has aug-channel seams at both forearms and the upper back, triple-snap closures allowing quick removal of panels for workers with elbow chrome, wrist-mounted tools, or dorsal spinal rigs. Attached to the left thigh is a detachable tool loop panel — a grid of nylon loops and clip rings holding screwdrivers, sealant injectors, wire snips, and a compact diagnostic tablet. A neoprene balaclava in black covers the neck and lower face against tunnel drafts and particulate, with a gap at the crown for BCI port access. The head protection is a low-profile hard hat in safety orange with an integrated LED work light on an articulated arm. Boots are the Ironpass Reinforced Thermal Work Boot — mid-calf, insulated, with a steel midsole against dropped hardware and a chemical-resistant outer sole for corridor solvents.\n\nNight crew kits accumulate personal history fast: sealant stains, scorch marks from conduit work, replacement panels in slightly-off shades of charcoal where the original material wore through. Workers often clip a personal light — a small secondary headlamp or colored chem-glow stick — to their tool panel as a crew identifier in low-visibility conditions. The balaclava's BCI gap is wide enough to accept third-party neural port collars, and several crew members have aftermarket port upgrades that allow direct interface with M88's infrastructure diagnostic network — a technically unauthorized modification that supervisors rely on too heavily to report.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "charcoal synth-canvas",
+    "safety-orange synth-wax yoke panels",
+    "retroreflective tape",
+    "nylon tool loop grid",
+    "neoprene balaclava",
+    "hard-shell polymer hard hat",
+    "insulated boot lining",
+    "steel midsole",
+    "chemical-resistant outer sole"
+  ],
+  "functionality": "High-visibility retroreflective markings for low-light corridor safety, dual forearm and dorsal aug-channel coverall panels, detachable thigh tool loop panel, integrated LED articulated work light, BCI port gap in balaclava, insulated chemical-resistant steel-midsole footwear, diagnostic tablet clip",
+  "what_it_says": "These are the people who keep the city running while everyone else is asleep. The Ironpass logo is unglamorous but stable — maintenance contracts are long-term, and the crew number tag means accountability in a system that needs someone to blame when infrastructure fails.",
+  "worn_by": [
+    "infrastructure maintenance crews",
+    "corridor repair technicians",
+    "utility conduit workers",
+    "elevated walkway structural teams",
+    "M88 night-shift civil works personnel"
+  ],
+  "manufacturer": "Ironpass Infrastructure Services (corponation issue); boots from Ironpass Footwear Division",
+  "price_range": "Φ 160–Φ 220 (issued; tool panel replacement at worker cost)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A night crew member's diagnostic tablet log shows they accessed a sealed infrastructure node three weeks before a critical corridor failure — but their crew number doesn't match any shift scheduled for that section.",
+    "Someone is using a stolen Ironpass night crew kit to move through M88's restricted maintenance corridors undetected; the retroreflective markings make them visible to every camera, but the corponation's own systems are flagging the uniform as authorized.",
+    "A veteran maintenance worker's coverall has aug-channel panels that have been sewn shut — they used to have forearm chrome, and whatever happened to it, they don't talk about it during shift."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "maintenance",
+    "infrastructure",
+    "ironpass",
+    "corponation_issue",
+    "night_crew",
+    "aug_compatible",
+    "high_visibility",
+    "corridor_work"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,48 @@
+{
+  "id": "7b1d4a9e3f062c8510d7b3a2e6f94c01",
+  "name": "Dustveil Patchwork Ghost Operative Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "At first glance this is a Tier 1 survivor's layered coat — mismatched panels of deep olive, charcoal, and faded indigo stitched together in a pattern that reads as poverty-mended patchwork. The truth is that each panel is a distinct material chosen for a specific function: the olive sections are scanner-absorbing Vantex weave, the charcoal panels are impact-dispersing flex-armor rated for small-caliber glancing hits, and the indigo patches are thermal-bleed fabric that suppresses body-heat signature. Underneath, a long-sleeved base layer in washed-out grey features gene-compatible back paneling — the rear seam splits along a reinforced zip from collar to waist, accommodating a broad range of geneware spinal or wing configurations without compromising the coat's silhouette. Slim-cut trousers in deep slate carry four concealed internal pockets, each with sound-dampened closures. The footwear is deliberate contrast: battered high-top boots with mismatched lace colors, a classic Shelf aesthetic that completes the poverty read while concealing a hardened composite sole and a toe-cap rated for door-breach kicks. A wide-brim hat in sun-faded olive with a low crown completes the silhouette, obscuring facial geometry from overhead surveillance drones.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "Vantex scanner-absorbing weave",
+    "flex-armor impact panels",
+    "thermal-bleed fabric",
+    "gene-compatible split-seam rear paneling",
+    "sound-dampened pocket closures",
+    "composite-reinforced boot sole"
+  ],
+  "functionality": "Multi-function patchwork panels (scanner absorption, impact dispersion, thermal suppression), gene-compatible rear seam, four internal sound-dampened trouser pockets, door-breach composite toe, wide-brim drone-obscuring hat",
+  "what_it_says": "This outfit is a lie told in fabric. It performs destitution with surgical accuracy while concealing serious capability. Runners who wear it are either operating deep in Shelf territory where appearing resourced is dangerous, or they're professionals who understand that the best camouflage in M88 is looking like someone nobody wants to look at twice.",
+  "worn_by": [
+    "deep-cover infiltration runners",
+    "Shelf-side operatives",
+    "runners with geneware modifications requiring concealment",
+    "poverty-passing social engineers"
+  ],
+  "manufacturer": "Self-assembled from sourced components — base layer from a street tailor collective called Needlebone, with functional panels custom-ordered from unlicensed material vendors",
+  "price_range": "Φ 580–Φ 820",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A corporate security sweep flags the outfit's thermal-bleed signature as anomalous — not invisible, just wrong in a way that reads as equipment malfunction until someone looks closer.",
+    "The runner's geneware wings, usually folded flat under the rear split seam, begin to extend involuntarily during a stress response — the coat holds, but barely, and the silhouette betrays something non-standard to a watching fixer across the street.",
+    "The hat's brim obscures the runner from overhead drones but also blocks a critical sightline at the worst possible moment — a choice between surveillance evasion and situational awareness with no good answer."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier 1",
+    "tier 2",
+    "poverty-pass",
+    "scanner-resistant",
+    "thermal-suppression",
+    "gene-compatible",
+    "deep-cover",
+    "shelf-side",
+    "needlebone"
+  ],
+  "parent_corponation": ""
+}

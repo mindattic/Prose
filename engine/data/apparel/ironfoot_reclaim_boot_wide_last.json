@@ -1,0 +1,39 @@
+{
+  "id": "14c7d0e3f6a9592178b9c0d1e2f3a456",
+  "name": "Ironfoot Reclaim Boot (Wide Last)",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A wide-last boot designed to fit augmented feet with basic chrome or prosthetic extensions — one of the few Shelf-made options that acknowledges not everyone has standard anatomy. The upper is reclaimed leather in irregular browns and blacks, the sole a thick slab of recycled polymer. Sizes are approximate; a cloth tag inside lists three measurements and says 'closest fit wins.'",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed leather",
+    "recycled polymer sole",
+    "cotton lining"
+  ],
+  "functionality": "Wide last accommodates basic augmented or prosthetic feet. No tech integration.",
+  "what_it_says": "You've got chrome and you're not hiding it. You also can't afford the Velasca aug-boot, so this is what fits.",
+  "worn_by": [
+    "augmented Shelf workers",
+    "veterans on basic support",
+    "anyone with non-standard feet"
+  ],
+  "manufacturer": "Ironfoot Workshop (Shelf-based)",
+  "price_range": "Φ15 - Φ25",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Ironfoot's maker keeps a waiting list — demand always exceeds supply, and some names on that list are years old.",
+    "A pair fits perfectly, but the person who ordered them never came to collect."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "aug-compatible",
+    "wide last",
+    "salvage",
+    "shelf",
+    "prosthetic-friendly"
+  ],
+  "parent_corponation": ""
+}

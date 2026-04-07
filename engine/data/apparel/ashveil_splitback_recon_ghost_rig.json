@@ -1,0 +1,48 @@
+{
+  "id": "2d90f6e4c73a158b4e2d06f9c81a7b35",
+  "name": "Ashveil Splitback Recon Ghost Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Built for prolonged observation work in mid-density urban environments, this rig prioritizes stillness over movement — it's made to be worn for eight hours in a transit corridor, a market stall queue, or a service corridor without drawing a second look. The anchor piece is an anorak-style pullover in muted sand-ochre with subtle vertical stripe detail, a pattern common enough in Circuit-level workwear to register as background noise to any human observer or basic pattern-recognition surveillance. The anorak's hood is structured with internal wire framing that shapes to block facial recognition from above and side angles simultaneously, collapsing flat when not needed. A chest harness worn beneath the anorak — visible only when the zipper is opened — carries a modular tool rack: four interchangeable pouches that accept everything from a compact sidearm to a drone relay unit. The base layer is a long-sleeved thermal shirt in deep slate with a BCI-port collar notch at the rear nape, accommodating standard neural jack access without requiring the anorak to be removed. Trousers are straight-cut in medium grey with reinforced cuffs, an internal wire-routing sleeve along the right leg for aug-power, and three hidden waistband pockets accessible from inside the waistband only. Footwear is a low-profile athletic-style shoe in off-white with dark grey accent — the deliberate cleanliness of the shoes against the worn anorak reads as aspirational Tier 2, the universal human story of someone keeping one thing nice.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "matte synthetic anorak shell",
+    "wire-framed structured hood",
+    "modular chest harness webbing",
+    "BCI-notch thermal base layer",
+    "aug-routing right-leg sleeve",
+    "low-profile synthetic athletic shoe"
+  ],
+  "functionality": "Structured facial-recognition-blocking hood, modular chest harness with four swappable pouches, BCI rear-nape port notch, aug-power routing right trouser leg, three internal waistband hidden pockets, prolonged-wear comfort construction",
+  "what_it_says": "This outfit communicates patience. It isn't built for the sprint — it's built for the wait. The runner who wears this has spent enough time on observation jobs to understand that the greatest threat to a recon operative isn't being seen, it's being remembered. The clean shoes are the tell to anyone who knows how to look: deliberate detail management, not accident.",
+  "worn_by": [
+    "surveillance and recon specialists",
+    "overwatch operatives",
+    "runners who sell intelligence more than violence",
+    "BCI-heavy technical operatives"
+  ],
+  "manufacturer": "Greymark Unseen — a near-anonymous street label that sells exclusively through dead-drop ordering systems; no storefront, no catalog, just reputation",
+  "price_range": "Φ 620–Φ 950",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The runner has been stationary for six hours in a transit corridor when the anorak's hood-wire frame begins to fatigue and reshape — the facial-geometry blocking degrades subtly, and an overhead drone's recognition confidence score climbs from 12% to 67% over the next forty minutes without the runner knowing.",
+    "The modular chest harness pouch system was loaded by a fixer's equipment runner, and one of the four pouches contains something the operative wasn't briefed on — something that explains why this particular surveillance contract pays three times the standard rate.",
+    "The BCI collar notch becomes a liability when a corponation security tech notices the specific cut during a pat-down inspection — it's a design tell unique to Greymark Unseen, and this particular security tech has a file on that label."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier 2",
+    "tier 3",
+    "recon",
+    "surveillance",
+    "crowd-blend",
+    "aug-compatible",
+    "bci-compatible",
+    "modular",
+    "greymark-unseen"
+  ],
+  "parent_corponation": ""
+}

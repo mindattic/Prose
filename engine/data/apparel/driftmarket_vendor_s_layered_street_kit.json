@@ -1,0 +1,51 @@
+{
+  "id": "78b2d5f9e4a1c03671d8e2b5f4a9c017",
+  "name": "Driftmarket Vendor's Layered Street Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The working uniform of a Circuit street food vendor or open-air market stall operator — not corponation-issued, but assembled with the same utilitarian logic, built from pieces sourced across market stalls and discount Circuit outlets. The base is a long-sleeved henley in deep rust-orange, a color that reads as warm and approachable against the grey of Circuit streets and incidentally hides most food stains. Over it goes a heavy canvas apron in waxed dark olive, full bib-style with wide front pockets — one pocket holds a flat-folded order tablet, the other a collection of stylus pens, zip ties, and a folded cloth for wiping surfaces. The apron strings are doubled and cross-wrapped at the back rather than tying at the waist, distributing weight better for someone who stands for ten hours straight. Around the hips, a nylon utility belt carries a compact heat-seal tool for packaging, a change pouch in worn black leather, and a folded thermal bag sleeve for keeping items at temperature.\n\nTrousers are straight-cut black synth-canvas with a slight stretch through the thigh, comfortable for standing and bending, with reinforced pockets. On the feet: a low-cut black rubber-soled work shoe with a wide toe box and a textured grip sole rated for wet and greasy surfaces — the kind of shoe that goes unremarked until someone tries to work without them. A short-brimmed cap in the same rust-orange as the henley keeps overhead rig lights and rain off the face; a name or stall identifier is often written in white paint marker on the front brim. Hands are bare — the vendor's hands are their instrument — but a pair of thin heat-resistant gloves is folded into the apron pocket for grill work. The whole kit is civilian, personal, and carries the smell of whatever they're selling.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "waxed canvas apron fabric",
+    "rust-orange cotton-polyblend henley fabric",
+    "black synth-canvas trouser fabric",
+    "nylon utility belt webbing",
+    "worn leather change pouch",
+    "rubber-soled work shoe construction",
+    "heat-resistant thin glove material",
+    "olive canvas apron body"
+  ],
+  "functionality": "Bib apron with cross-wrap back straps for weight distribution during long standing shifts; large front pockets for order tablet and tools; nylon utility belt with heat-seal tool and thermal bag sleeve; grip-rated wet-surface work soles; heat-resistant pocket gloves for grill work; wide toe box shoe for prolonged standing comfort",
+  "what_it_says": "This vendor owns their setup — literally and figuratively. They're not employed by a corponation; they're self-employed in the Circuit economy, which means hustle, early mornings, and no safety net. The personalized name on the cap brim says this is a brand, even a small one. The well-worn but clean apron signals professionalism and pride in the work. They're not poor — they're independent, which in Circuit means something specific and hard-earned.",
+  "worn_by": [
+    "Circuit open-air market food vendors",
+    "street stall operators",
+    "mobile cart vendors",
+    "night market workers",
+    "independent commissary operators"
+  ],
+  "manufacturer": "Self-assembled; apron from Hollenbeck Canvas Goods (street label); shoes from Foundry Broadfoot line; belt from unmarked Circuit market supplier",
+  "price_range": "Φ95–Φ160 (fully assembled; built up over time rather than purchased at once)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A vendor's order tablet, tucked in the apron pocket, has been accidentally logging audio in a busy Circuit market square — and buried in three weeks of ambient noise is a recorded conversation that implicates a Tier 4 official in a supply chain fraud.",
+    "The rust-orange henley is a specific dye lot that Circuit vendors use as an informal mutual aid signal — wearing it means you're willing to shelter someone, no questions asked, and a character in crisis knows exactly what to look for.",
+    "A vendor whose stall has been operating in the same Circuit block for fifteen years is being displaced by a corponation expansion — and their regular customers, all wearing variants of this same working kit, are about to make that displacement very difficult."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "vendor",
+    "street_food",
+    "market",
+    "self_employed",
+    "gene_compatible",
+    "civilian",
+    "apron",
+    "independent"
+  ],
+  "parent_corponation": ""
+}

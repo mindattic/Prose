@@ -11,7 +11,7 @@
   ],
   "category": "vehicle",
   "description": "The Laminar Shadow Bike is a single-rider pursuit and infiltration motorcycle engineered by Arcturus Defense Solutions for rapid urban movement with minimal sensor footprint. Its frame is constructed from radar-absorbent composite laminate — a layered material that scatters both active sonar and millimeter-wave scanning — while the electric drive system runs through a vibration-damped motor housing that reduces acoustic signature to near-ambient levels at speeds below 80 km/h. The bike rides on self-sealing smart-rubber tires embedded with pressure-sensitive grip nodes that modulate traction in real time based on surface feedback.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Murmuration Systems",
   "tier_availability": "Tier 3+",
   "legality": "Restricted",
   "base_technologies": [
@@ -57,12 +57,12 @@
     "surveillance",
     "alley",
     "market",
-    "rain",
     "shadow",
     "night",
     "motorcycle",
     "stealth",
     "circuit",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

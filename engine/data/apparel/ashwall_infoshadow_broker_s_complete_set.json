@@ -1,0 +1,48 @@
+{
+  "id": "c5b8e2a047f3d19c6b5e8a2047f3d19c",
+  "name": "Ashwall InfoShadow Broker's Complete Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The info broker's full underworld look: a slim-cut collarless shirt in deep plum shot-silk — understated wealth, no logos — beneath a structured mid-length coat in matte charcoal wool-synth with hidden interior panels for data storage media and slim weapons. Trousers are tailored dark slate with a subtle iridescent weave visible only at close range. Shoes are soft-soled, pointed-toe oxfords in black bioskin — silent on tile and concrete alike.\n\nAccessories are deliberate: one matte-chrome data-link bracelet on the left wrist, a minimal neural port ring at the temple, and a narrow-brim hat in pressed felt that obscures the face on overhead surveillance. No visible aug hardware, though the coat accommodates a spinal rig under the back panel.",
+  "tier_association": "Tier 2-4",
+  "materials": [
+    "shot-silk poly-blend tunic",
+    "wool-synth structured coat",
+    "iridescent slate twill trouser",
+    "bioskin oxford leather",
+    "matte chrome alloy bracelet",
+    "pressed felt narrow-brim hat"
+  ],
+  "functionality": "Hidden interior coat panels for data storage and slim weapons, spinal rig channel under back panel, soft bioskin soles for near-silent movement, neural port integration at temple ring, surveillance-obscuring hat brim angle.",
+  "what_it_says": "I know things you need, I dress like I don't need you, and neither of those facts is an accident.",
+  "worn_by": [
+    "info brokers",
+    "underworld fixers",
+    "data smugglers",
+    "mid-tier underworld intermediaries",
+    "burned corporate analysts gone independent"
+  ],
+  "manufacturer": "Ashwall (street label)",
+  "price_range": "Φ1,100 – Φ2,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The interior panel of the coat contains a data chip that hasn't been opened in three years — the broker doesn't know who planted it.",
+    "The bioskin oxfords are traceable to a Spire tannery that only sells to Tier 5 clients; how the broker got them is its own story.",
+    "Someone in the same hat and coat configuration was photographed at two separate crime scenes six months apart — different person, same outfit."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld",
+    "fixer",
+    "info_broker",
+    "aug_compatible",
+    "stealth",
+    "tier2",
+    "tier3",
+    "tier4",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

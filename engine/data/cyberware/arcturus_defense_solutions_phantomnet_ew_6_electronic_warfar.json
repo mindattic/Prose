@@ -1,0 +1,58 @@
+{
+  "id": "b1e4d7a2c5f8903e6d2b1a4c7e0f3928",
+  "name": "Arcturus Defense Solutions PhantomNet EW-6 Electronic Warfar",
+  "brand_name": "Arcturus Defense Solutions",
+  "product_name": "PhantomNet EW-6 Electronic Warfare",
+  "type": "cyberware",
+  "aliases": [
+    "EW-6",
+    "PhantomNet",
+    "The Jammer",
+    "Ghost Six"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The PhantomNet EW-6 is Arcturus Defense Solutions' dedicated electronic warfare BCI, purpose-built for signals intelligence operators, cyber-warfare specialists, and ECM field units operating in contested electromagnetic environments. The unit integrates a six-channel spectral analysis co-processor with direct neural interfacing, enabling the operator to perceive the electromagnetic spectrum as a fully navigable sensory space — hostile comms traffic, drone guidance frequencies, automated turret control signals, and encrypted military uplinks become as legible as visual terrain to a trained EW-6 operator. Active countermeasure suites allow direct neural-initiated jamming across designated frequency bands, while the unit's proprietary ShadowWeave spoofing architecture can generate convincing false electromagnetic signatures to misdirect autonomous targeting systems. The full-skull Faraday mesh is rated to MIL-SPEC EMP-11, the highest civilian-accessible rating, and the unit's own emissions are suppressed to below ambient noise floor during passive operation.\n\nElectronic warfare operators running the EW-6 occupy a peculiar cultural niche within Meridian 88's military structure — simultaneously indispensable and deeply mistrusted. The ability to perceive and manipulate invisible signal architectures is regarded by conventional infantry with a suspicion that borders on superstition; EW-6 operators are commonly called 'Phantoms' or 'Ghosters' in field vernacular, and are often billeted separately from standard units. Several high-profile incidents in which EW-6 operators were found to have been passively intercepting command-level communications — officially for tactical purposes — have generated ongoing classified reviews within the Meridian 88 Strategic Command, though no formal charges have ever been filed.",
+  "manufacturer": "Meridian Neural Defense",
+  "tier_availability": "Tier 5",
+  "legality": "Military-Only",
+  "installation_requirements": "Level 5 neuro-surgical facility; ADS EW-certified neurotechnician; full-skull Faraday mesh installation mandatory; spectral co-processor requires 96-hour neural mapping calibration; psychological clearance per ADS EW Directive 12-F",
+  "rejection_risk": "Low (5%); risk elevates significantly with prior cochlear or auditory augmentation due to spectral co-processor interference",
+  "maintenance": "Monthly firmware updates via ADS secure channel mandatory; spectral array recalibration every 6 months; ShadowWeave spoofing library updated quarterly via encrypted ADS depot uplink",
+  "specifications": "{\"spectral_channels\": 6, \"frequency_range_hz\": \"1Hz-300GHz\", \"active_jamming_bands\": 3, \"spoofing_architecture\": \"ShadowWeave v4.1\", \"emp_rating\": \"MIL-SPEC EMP-11\", \"passive_emission_floor_dbm\": -140, \"encryption\": \"ADS-Q7 Quantum Protocol\", \"neural_signal_latency_ms\": 1.1, \"power_source\": \"Bio-thermic cell + shielded capacitor array\", \"weight_g\": 195, \"installation_time_hours\": 96, \"co_processor\": \"ADS Spectral-6 Neural Array\"}",
+  "side_effects": [
+    "Electromagnetic synesthesia: passive spectral perception bleeds into waking consciousness, causing ordinary electrical infrastructure — lighting grids, transit systems, civilian comms — to register as intrusive noise or visual static overlays",
+    "Frequency fixation episodes: operators become involuntarily locked onto a detected signal, unable to disengage conscious attention for periods of 30 seconds to several minutes",
+    "Interpersonal trust erosion: chronic passive interception of ambient communications produces a documented psychological pattern of hypervigilant suspicion toward unaugmented individuals whose communications cannot be monitored",
+    "Tinnitus-variant phantom carrier tones: persistent low-amplitude tonal experiences corresponding to no real-world signal source, reported by 67% of long-term EW-6 operators"
+  ],
+  "cultural_context": "The EW-6 and its operators exist in a space that the broader military culture finds uncomfortable — the ability to silently surveil and disrupt communications systems sits at an uneasy intersection of tactical necessity and potential betrayal. Within intelligence and cyber-warfare communities, EW-6 operators are regarded as elite practitioners of an almost esoteric discipline; outside those communities, they are regarded with the particular unease reserved for those who can listen to conversations no one intended to share. The street mythology around black-market EW-6 units — allegedly modified to remove ADS usage logging — sustains a thriving underground of corporate espionage speculation.",
+  "known_users": [
+    "Meridian 88 Signals Intelligence Corps",
+    "ADS-contracted ECM field units",
+    "Classified Meridian 88 cyber-warfare detachments",
+    "Rumored use by at least two major corporate intelligence divisions operating under military contractor cover"
+  ],
+  "story_hooks": [
+    "An EW-6 operator on a routine signals sweep begins detecting an encrypted carrier frequency that matches no known military or civilian protocol — the signal is broadcasting from beneath the city, from infrastructure that has been sealed since the Collapse of 2187.",
+    "A PhantomNet unit is recovered from a killed enemy operative, and its ShadowWeave spoofing library contains false electromagnetic signatures for vessels and installations that technically do not exist — including one that matches the players' current base of operations.",
+    "A veteran EW-6 operator is being quietly retired by ADS, their unit scheduled for mandatory wipe and reissue. They have three days to prove that what they've been intercepting in their involuntary frequency-fixation episodes is real intelligence and not a symptom of system degradation."
+  ],
+  "street_price": "Φ160,000",
+  "licensed_price": "Φ260,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "tier5",
+    "electronic-warfare",
+    "signals-intelligence",
+    "emp-hardened",
+    "jamming",
+    "spoofing",
+    "arcturus",
+    "elite",
+    "military_elite"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "e509d3c87b1f42a60e7dc2f8a3b14e60",
+  "name": "Coldveil Operator's Full-Balaclava",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A close-fitting full balaclava in matte black and slate-grey paneling, constructed from a four-way stretch thermal-weave with a built-in PM2.5 filter layer across the mouth and nose zone. The face panel is reinforced with flat-bonded seams that don't bulk under a helmet or mask. Three port-access slits at the crown are sealed by magnetic flaps — open them and standard BCI jacks clear without removing the balaclava.\n\nThe rear panel has a wide occiput seam channel that accommodates basic spinal rig anchor plates. Sold through mid-tier tactical supply shops but popular with operatives, couriers, and anyone who needs to be anonymous in cold weather.",
+  "tier_association": "Tier 2-4",
+  "materials": [
+    "four-way stretch thermal-weave",
+    "PM2.5 filter membrane",
+    "flat-bonded nylon reinforcement",
+    "magnetic port-access flaps",
+    "spandex-neoprene blend"
+  ],
+  "functionality": "Thermal retention for sub-zero Shelf wind corridors. Integrated PM2.5 filtration handles acid-mist and industrial particulate. Magnetic crown flaps allow BCI port access without removal. Spinal rig channel prevents pressure points during extended wear with back-mounted augmentation.",
+  "what_it_says": "You operate in conditions most people avoid, and you've thought through every piece of your kit.",
+  "worn_by": [
+    "private security operatives",
+    "long-haul couriers",
+    "augmented industrial workers",
+    "off-books contractors",
+    "urban climbers"
+  ],
+  "manufacturer": "Coldveil Tactical Apparel",
+  "price_range": "Φ 120–Φ 210",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of Coldveil balaclavas was recalled quietly after the magnetic port-access flaps were found to interfere with a specific Axiom BCI model, causing momentary signal dropout — someone used that window to commit a crime.",
+    "A courier was identified by the specific wear pattern on their Coldveil's nose bridge — the only evidence in a high-profile theft case.",
+    "The filter membrane in older Coldveil units can be chemically treated to selectively block certain aerosolized compounds, a technique known only to a few Shelf chemists."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "balaclava",
+    "aug-compatible",
+    "tactical",
+    "filter",
+    "tier-2",
+    "tier-3",
+    "tier-4",
+    "coldveil",
+    "thermal",
+    "bci-compatible"
+  ],
+  "parent_corponation": ""
+}

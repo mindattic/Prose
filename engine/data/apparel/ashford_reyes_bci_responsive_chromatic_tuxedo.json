@@ -1,0 +1,36 @@
+{
+  "name": "Ashford & Reyes BCI-Responsive Chromatic Tuxedo",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "tuxedo",
+  "manufacturer": "Ashford & Reyes Bespoke (Tier 4-5 atelier)",
+  "description": "Ashford & Reyes is a two-person atelier operating out of a Tier 4 studio in the upper commercial district, producing approximately forty garments per year. Their chromatic tuxedo is constructed from a base of real-wool barathea — sourced at considerable expense from a vertical farm operation in the northern corridor — overlaid with a micro-woven BCI-responsive chromatic layer that reads ambient emotional and physiological data from the wearer's neural interface and shifts the fabric's surface sheen accordingly. At rest, the tuxedo reads as flat black. Under stress, the lapels develop a deep blue iridescence. During elevated social engagement, a warm bronze tone bleeds through the chest. The wearer cannot fully control it; they can only learn to work with it.\n\nThe construction is entirely by hand, requiring twelve to eighteen fittings. Augment accommodations are custom — each tuxedo is built around the specific chrome, geneware, or modification profile of its wearer, with no generic openings but precise ones. A client with functional geneware wings receives back panels with integrated support architecture. A client with full-arm chrome receives sleeve construction that treats the augment as part of the garment's structure. The price is per consultation quote, but Φ3,200 is the published floor.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ3,200",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "The chromatic tuxedo's BCI-responsiveness makes it simultaneously intimate and exposed — the garment broadcasts physiological states that social convention normally conceals. In Tier 4-5 circles, wearing one is a calculated vulnerability: a signal that you are confident enough to let the room see your reactions. Some clients disable the chromatic layer entirely after the first event, having underestimated what they were agreeing to display.",
+  "story_hooks": [
+    "A Vantablack intelligence analyst attends a Tier 5 event in this tuxedo, unaware that the BCI-responsive layer is broadcasting data that a trained observer can read as a stress response map — effectively narrating their reactions to everything in the room.",
+    "Ashford or Reyes recognizes a client's emotional profile in the chromatic shifts and realizes the person wearing their tuxedo is not the person they fitted it for.",
+    "The real-wool barathea is traced to a vertical farm operation that is quietly under Arcturus quarantine — and the garment may carry something the wearer doesn't know about."
+  ],
+  "tags": [
+    "tuxedo",
+    "BCI responsive",
+    "chromatic",
+    "real wool",
+    "bespoke",
+    "Tier 4",
+    "Tier 5",
+    "augment compatible",
+    "geneware compatible",
+    "hand tailored",
+    "atelier",
+    "emotional display"
+  ],
+  "id": "0e239b7840174d828bc52f710b067255",
+  "parent_corponation": ""
+}

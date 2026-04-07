@@ -8,7 +8,7 @@
     "Ringo Wagon"
   ],
   "category": "commercial_ground",
-  "manufacturer": "Ringo",
+  "manufacturer": "Ringo Fleet Management",
   "description": "A towable trailer that unfolds into a complete retail stall — awning, display shelves, point-of-sale terminal, security camera. Ringo leases these to vendors who want more presence than a cart but can't afford a permanent storefront. Like all Ringo products, the lease comes with comprehensive surveillance that the vendor agrees to in the fine print nobody reads. The Popup Stalls cluster in markets and street fairs, creating temporary commercial districts that appear and disappear with the lease cycle.",
   "propulsion": "None — towed by any vehicle with a hitch",
   "speed": "N/A (towable)",
@@ -34,5 +34,6 @@
     "food",
     "tier 1",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

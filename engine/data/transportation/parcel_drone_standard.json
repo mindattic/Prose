@@ -8,7 +8,7 @@
     "Drop Bot"
   ],
   "category": "commercial_ground",
-  "manufacturer": "Multiple (Tessera platform, various manufacturers)",
+  "manufacturer": "Tessera Transit Systems",
   "description": "Small autonomous delivery drones that fill the airspace of Tier 2-4 districts like mechanical insects. They carry packages up to 5 kg and navigate by a combination of GPS, visual mapping, and mesh network coordination. In Tier 1 districts, they're rare — the theft rate exceeds 40% and the drones learn to avoid certain blocks entirely. The buzzing of parcel drones is the ambient sound of commerce.",
   "propulsion": "Quad-rotor electric",
   "speed": "50 km/h",
@@ -26,7 +26,6 @@
   "tags": [
     "commercialground",
     "transportation",
-    "war",
     "theft",
     "ai",
     "elf",
@@ -38,5 +37,6 @@
     "tier 1",
     "tier 2",
     "tier 4"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

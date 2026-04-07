@@ -1,0 +1,48 @@
+{
+  "id": "ef743b24f4378f40395cb291601c85f0",
+  "name": "Carrion Defense Works CGL-1 'Basilisk'",
+  "type": "weapon",
+  "aliases": [
+    "Basilisk",
+    "Smart Lobber",
+    "Eye of God"
+  ],
+  "category": "grenade launcher",
+  "description": "A smart-linked single-shot grenade launcher with an integrated fire control system that programs airburst fuzes in real time. The operator designates a target through the weapon's optic, the fire control calculates range and trajectory, and programs the 40mm round's electronic fuze to detonate at the precise point in space where fragmentation will be most effective. The result is grenades that explode directly above targets behind cover, in windows, or around corners — places that conventional grenade launchers cannot reliably reach.\n\nCarrion developed the Basilisk for urban operations where targets shelter behind barriers that would stop direct-fire weapons. The programmable airburst capability means that no cover shorter than a sealed overhead structure provides protection — walls, vehicles, dumpsters, and barricades are all rendered irrelevant by a weapon that detonates its payload in the air above them. The psychological effect on targets is severe: the knowledge that your cover means nothing fundamentally changes how people fight.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 4+",
+  "legality": "Military — restricted deployment; extremely expensive black market",
+  "street_price": "Φ22,000 (programmable rounds Φ800 each)",
+  "base_technologies": [
+    "Real-time fuze programming",
+    "Integrated laser rangefinder",
+    "Ballistic computer with wind correction"
+  ],
+  "specifications": "caliber: 40mm programmable airburst\ncapacity: 1 round\neffective range: 50-800 meters\nairburst accuracy: +/- 0.5 meters at 400m\nweight: 4.1 kg\nlength: 750mm\nfire control: Integrated ballistic computer with laser rangefinder",
+  "tactical_use": "Precision area denial against fortified targets. Each round costs Φ800, making the Basilisk a surgical tool rather than a suppression weapon. Operators use it to eliminate specific high-value targets behind cover, or to clear room interiors through windows without entering.",
+  "cultural_context": "The Basilisk has earned a reputation as an assassin's tool disguised as military ordnance. A weapon that can place a fragmentation burst inside a specific room from 400 meters away is, functionally, a precision killing tool with explosive radius. The distinction between grenade launcher and guided weapon becomes academic at this level of accuracy.",
+  "known_users": [
+    "Carrion Defense Works demonstration teams",
+    "Elite corporate strike units",
+    "At least one known freelance assassin operating in Meridian 88"
+  ],
+  "story_hooks": [
+    "Three separate assassinations across Meridian 88 used identical Basilisk airburst profiles — same detonation height, same fragmentation pattern, same fire control signature. One weapon, one operator, three targets who had nothing in common except that they were all about to testify in the same corporate tribunal.",
+    "A Basilisk round detonated inside a sealed room with no windows and no line of sight from any exterior position. Either the fire control system has capabilities Carrion hasn't disclosed, or someone found a way to program the round after it was in flight."
+  ],
+  "ammunition_type": [
+    "40mm_programmable"
+  ],
+  "tags": [
+    "grenade launcher",
+    "weapon",
+    "smart",
+    "programmable",
+    "airburst",
+    "carrion",
+    "precision",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

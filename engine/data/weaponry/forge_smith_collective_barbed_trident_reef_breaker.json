@@ -1,0 +1,47 @@
+{
+  "id": "5e38efc5db614cbcf3073f28ba74aae8",
+  "name": "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+  "type": "weapon",
+  "aliases": [
+    "Reef Breaker",
+    "Barbed Trident",
+    "Three Fingers",
+    "The Fork"
+  ],
+  "category": "melee",
+  "description": "A three-pronged trident with backward-facing barbs on each tine, constructed from case-hardened carbon-lattice steel. The Reef Breaker is designed with a specific tactical purpose: to penetrate body armor and resist extraction. The barbs engage with armor material and underlying tissue on entry, and any attempt to pull the weapon free causes the barbs to expand the wound channel and snag on armor's internal layering. Removing a Reef Breaker from an armored target typically requires cutting the armor away from the outside.\n\nThe Forge-Smith Collective developed the trident as a psychological weapon as much as a physical one. The sight of a three-pronged barbed spear is viscerally threatening in a way that more sophisticated weapons are not — it triggers an ancient recognition of impalement that no amount of modern combat experience can override. Opponents facing a Reef Breaker must contend with both the physical threat and the primitive fear response that the weapon's appearance generates.\n\nEach tine is individually barbed with a pattern specific to the smith who produced it — a maker's mark that doubles as a functional design element. The barb patterns vary from simple backward angles to complex spiral configurations that rotate during extraction attempts, and experienced Forge-Smith artisans consider barb design a competitive art form. The most respected smiths produce barbs that are both maximally effective and aesthetically distinctive — a combination of beauty and brutality that defines the Collective's design philosophy.",
+  "manufacturer": "FORGE-SMITH COLLECTIVE",
+  "tier_availability": "Tier 1-2 (artisan availability)",
+  "legality": "Unlicensed — artisan production, classified as barbed weapon where applicable",
+  "base_technologies": [
+    "Carbon-lattice case-hardened construction",
+    "Anti-extraction barb engineering",
+    "Three-point armor penetration geometry"
+  ],
+  "specifications": "total_length: 200 cm\nshaft_length: 160 cm\ntine_length: 40 cm each\nweight: 2.6 kg\nmaterial: Case-hardened carbon-lattice steel\nbarb_type: Smith-specific, anti-extraction\narmor_penetration: Rated for Level III composite",
+  "tactical_use": "The Reef Breaker is used to disable rather than kill — a barbed trident embedded in an opponent's torso or limb renders them effectively immobilized, unable to advance or retreat without catastrophic injury. In formation use, trident-armed fighters pin lead attackers in place while teammates engage the remainder. The anti-extraction barbs mean that even if the trident wielder releases the weapon, the embedded trident continues to impair the target. Against armored opponents, the three-point geometry concentrates force at three simultaneous points, overcoming the armor's ability to distribute impact.",
+  "cultural_context": "The trident carries cultural weight from multiple traditions — Roman gladiatorial combat, Hindu mythology, marine warfare — and in Meridian 88's blended culture, all of these associations coexist. The Reef Breaker's name references the weapon's effectiveness in the 'reef' of armored corridors, but also evokes oceanic imagery that resonates with the city's coastal communities. Trident fighting has a small but passionate following, and the annual barb-design competition is one of the Forge-Smith Collective's most creatively celebrated events.",
+  "known_users": [
+    "Community defense formations",
+    "Trident-fighting practitioners",
+    "Anti-armor infantry groups"
+  ],
+  "story_hooks": [
+    "A corporate security officer was found impaled on a Reef Breaker in a lower-tier corridor — the barbs were still engaged, meaning whoever placed the weapon had time to set it as a trap rather than wield it. The trident was mounted at chest height across a doorway, aimed at the corridor the officer was known to patrol.",
+    "A Forge-Smith artisan has developed barbs that release a chemical compound on extraction attempt — a delayed-action toxin that punishes any attempt to remove the weapon. The innovation has divided the Collective between those who consider it brilliant and those who consider it a violation of artisan ethics."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "trident",
+    "polearm",
+    "barbed",
+    "artisan",
+    "tier 1",
+    "anti-armor",
+    "formation",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

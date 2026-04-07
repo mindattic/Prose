@@ -1,0 +1,46 @@
+{
+  "id": "4af36acd33fcf529020c30d08f03e848",
+  "name": "Meridian Munitions Defender-12 'Alley Cat'",
+  "type": "weapon",
+  "aliases": [
+    "Alley Cat",
+    "Defender Twelve",
+    "The Alley Gun"
+  ],
+  "category": "shotgun",
+  "description": "The Meridian Munitions Defender-12 is a pump-action shotgun chambered in 12 gauge with a 14-inch barrel, pistol grip, and a heat shield over the barrel. The weapon is stripped to bare essentials — no stock, no sights beyond a brass bead, no accessory rail. It is a close-range violence delivery system priced for the Shelf market and designed to fit in places where a full-size shotgun won't.\n\nThe Alley Cat is the Shelf's answer to the question 'What if I need a shotgun but I live in a one-room apartment?' The pistol grip and short barrel make the weapon compact enough to store in a closet or under a cot, and the heat shield prevents the barrel from burning the user's hand after multiple shots — a detail that suggests Meridian Munitions expects the weapon to be fired more than once in rapid succession.\n\nThe weapon's name comes from its prevalence in the narrow service alleys that run behind Shelf apartment blocks — spaces too tight for full-size long arms but too dangerous to traverse unarmed. Security patrols through these alleys carry the Defender-12 in one hand and a flashlight in the other, a configuration that the pistol grip specifically enables. The Alley Cat is a creature of the dark, tight spaces where Shelf life happens behind closed doors.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — short-barrel permit required",
+  "base_technologies": [
+    "Short-barrel pump action",
+    "Pistol grip",
+    "Barrel heat shield"
+  ],
+  "specifications": "caliber: 12 gauge\neffective_range: 15 meters (buckshot)\nrate_of_fire: Pump-action\nmagazine_capacity: 4+1 rounds\nweight: 2.5 kg\noverall_length: 56 cm",
+  "tactical_use": "A compact pump shotgun for confined-space operations. The pistol grip enables one-handed carry with a flashlight in the other. The short barrel maximizes spread at close range. Recoil with the pistol grip is harsh — sustained aimed fire is difficult. Best used for close-range ambush defense or patrol in tight environments where a full-size shotgun is impractical.",
+  "cultural_context": "The Alley Cat is the weapon of the in-between spaces — the alleys, stairwells, maintenance corridors, and utility tunnels that form the circulatory system of Shelf districts. It is not a weapon for open confrontation. It is a weapon for the moment when something appears in a narrow space and there are no good options, only a bad option and a worse one.",
+  "known_users": [
+    "Shelf alley patrols",
+    "Building maintenance security",
+    "Utility tunnel workers",
+    "Shelf enforcers in tight environments"
+  ],
+  "story_hooks": [
+    "An Alley Cat is found propped against a wall in a service tunnel with a note attached: 'For whoever needs this next.' The weapon is loaded and the note is in a dead person's handwriting.",
+    "A series of attacks in Shelf maintenance corridors are attributed to someone using an Alley Cat — but the attacker is never seen, and the weapon is never found. The attacks only happen when certain maintenance schedules align."
+  ],
+  "ammunition_type": [
+    "12 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "pump_action",
+    "compact",
+    "shelf",
+    "close_quarters",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,50 @@
+{
+  "id": "b91d4e6f037a2c58d1e3f740a2b6c809",
+  "name": "Ironpass Dock & Haul Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A harbor dockworker's full kit built for the wet, corrosive air of Meridian Harbor's lower loading decks. The outermost layer is a heavy-duty safety-orange weathershell jacket with sealed seams, acid-resistant coating, and a broad back panel printed with a white cargo handler designation number. The cuffs are wide enough to clear chrome forearm augments, with a secondary snap closure for a tighter seal in spray conditions. Beneath it sits a navy thermal henley with a reinforced neckline and flat-stitched seams to reduce pressure points under a harness rig. Cargo trousers in the same acid-resistant charcoal fabric as the jacket feature double-layered thigh panels, six external pockets with drain holes at the base, wide knee guards stitched in place with bright orange thread, and a reinforced crotch gusset for climbing and crouching. A name patch reading the wearer's dock assignment sits on the left chest of the jacket. Boots are heavy matte-black waterproof waders to mid-calf with steel toe caps, slip-resistant lug soles, and hook-and-bar lacing. A neoprene neck gaiter in navy rounds out the look, usually pulled down around the collar until the spray picks up.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "acid-resistant synth-canvas",
+    "sealed weathershell laminate",
+    "neoprene neck gaiter",
+    "thermal synth-wool henley",
+    "double-layer knee panel reinforcement",
+    "steel-toe waterproof boot leather analog",
+    "slip-resistant vulcanized rubber outsole"
+  ],
+  "functionality": "Acid-resistant and waterproof outer shell, chrome-forearm-wide cuffs with secondary snap closure, drain-hole cargo pockets for wet environments, harness-compatible flat seams, reinforced knee and crotch panels for manual labor range of motion, steel-toe waterproof footwear, designation number printing for dock zone identification.",
+  "what_it_says": "You move cargo for a living. You've been soaked through and dried out and soaked again so many times that your joints ache when the acid rain shifts direction. The designation number on your back is not a name but you've made peace with that. You know how to tie seventeen different load knots and you are not impressed by anyone who doesn't.",
+  "worn_by": [
+    "harbor dock workers",
+    "cargo handlers",
+    "freight loaders",
+    "lower-deck crane ground crew",
+    "salvage barge workers"
+  ],
+  "manufacturer": "Ironpass WorkGear (street-adjacent industrial label, common in harbor districts)",
+  "price_range": "Φ310–Φ420",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A dockworker in this kit passes the players a cargo manifest folded inside their neoprene gaiter — the shipment listed doesn't match what was actually unloaded, and the designation number on their jacket places them at a berth that officially received nothing that night.",
+    "The acid-resistant coating on a particular jacket has been modified — someone has been using the outer shell fabric as a dead-drop surface, writing messages in a chemical ink that only appears under specific UV frequencies.",
+    "A dock worker is missing. All that's left at their assigned loading station is this kit, neatly folded, with the name patch cut out."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "dock_worker",
+    "cargo_handler",
+    "harbor",
+    "weathershell",
+    "hi_vis",
+    "aug_compatible",
+    "waterproof",
+    "ironpass"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,33 @@
+{
+  "id": "f8f0f0370cfa640dce04e6008d5b1721",
+  "name": "Gray Eminence",
+  "type": "archetype",
+  "category": "power",
+  "description": "The real decisions happen in rooms this person never officially enters",
+  "behavioral_signature": "Influences policy through unofficial channels and deniable contacts",
+  "under_stress": "Gets exposed and loses their invisibility",
+  "at_rest": "Invisible to the public, essential to the powerful",
+  "will_always": [
+    "operate through intermediaries"
+  ],
+  "will_never": [
+    "take public credit or blame"
+  ],
+  "unless": [
+    "stepping into the light is the only way to prevent catastrophe"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Puppet Master",
+      "threshold": 0.85,
+      "context": "hidden influence"
+    }
+  ],
+  "opposite_of": [
+    "Demagogue"
+  ],
+  "tags": [
+    "invisible",
+    "influential"
+  ]
+}

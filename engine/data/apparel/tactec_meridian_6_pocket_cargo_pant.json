@@ -1,0 +1,39 @@
+{
+  "id": "a3f7c2d1e8b04956f1a2c3d4e5f67890",
+  "name": "Tactec Meridian 6-Pocket Cargo Pant",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Straight-cut tactical pants in matte graphite or olive drab ripstop, with six external cargo pockets and four concealed interior ones. The fabric has a subtle grid texture from reinforced stress-point stitching. Sits mid-rise with a gusseted crotch for full range of motion.\n\nPopular with security contractors, warehouse shift leads, and anyone who needs to carry a lot without looking like they're trying. Unassuming enough for a day job, practical enough for whatever happens after.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ripstop poly-cotton blend",
+    "nylon webbing",
+    "YKK-equivalent zippers"
+  ],
+  "functionality": "Six exterior cargo pockets, four concealed interior pockets, gusseted crotch, reinforced belt loops rated for duty belt weight",
+  "what_it_says": "You're prepared, practical, and not interested in impressing anyone — just getting the job done.",
+  "worn_by": [
+    "security guards",
+    "warehouse workers",
+    "shift supervisors",
+    "street-level fixers"
+  ],
+  "manufacturer": "Tactec",
+  "price_range": "Φ38",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A courier finds a sealed data chip tucked inside a pocket seam of a secondhand pair — it wasn't theirs.",
+    "A security guard's hidden pocket holds something their employer explicitly told them not to carry on shift."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 2",
+    "tactical",
+    "cargo",
+    "security",
+    "practical"
+  ],
+  "parent_corponation": ""
+}

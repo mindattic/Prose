@@ -1,0 +1,39 @@
+{
+  "id": "b05e3c8a2f1d7496c3e9b7a015f2d84e",
+  "name": "Ovex Durastretch Work Legging",
+  "type": "apparel",
+  "category": "legwear",
+  "description": "Thick, compression-style work leggings designed for physical labor — heavy enough to resist abrasion against equipment and machinery, with reinforced panels over the shins and outer thighs. Worn alone in warm environments or as a base layer under trousers. Common in black or dark grey. Popular with workers who have lower-limb geneware or digitigrade leg modifications because the stretch accommodates non-standard anatomy.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "heavy compression nylon",
+    "abrasion-resistant shin panels",
+    "spandex blend"
+  ],
+  "functionality": "Abrasion-resistant reinforced panels, compression support, high-stretch fit for modified anatomy",
+  "what_it_says": "You work hard, you move a lot, and standard trousers don't fit your body or your job.",
+  "worn_by": [
+    "laborers with geneware modifications",
+    "machine operators",
+    "Tier 1 physical workers",
+    "couriers"
+  ],
+  "manufacturer": "Ovex Worksupply",
+  "price_range": "Φ12 - Φ18",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "Ovex leggings are one of the few affordable options for digitigrade-modded workers — a shortage in a district would hit a very specific population hard.",
+    "The compression fit leaves little room for concealment, which is exactly why certain employers require them as part of a uniform."
+  ],
+  "tags": [
+    "apparel",
+    "legwear",
+    "tier 1",
+    "workwear",
+    "compression",
+    "gene-compatible",
+    "aug-friendly"
+  ],
+  "parent_corponation": ""
+}

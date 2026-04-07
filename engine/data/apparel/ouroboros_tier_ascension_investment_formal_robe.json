@@ -1,0 +1,35 @@
+{
+  "name": "Ouroboros Tier-Ascension Investment Formal Robe",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "corponation_investiture_robe",
+  "manufacturer": "Ouroboros Ceremonial Procurement Office",
+  "description": "Ouroboros marks the formal elevation of senior personnel with a ceremony distinct from most Corponation investitures: the robe is not given to the new executive but worn during the ceremony and then returned to Ouroboros's archive. The logic is explicitly stated in the ceremony's liturgy — you wear the institution, the institution does not wear you. The robe itself is a deep burgundy over cream lining, constructed in a layered silk-analog with Ouroboros's ouroboros-serpent motif woven in a self-color pattern visible only under UV light. The weight is moderate; the construction is precise. A single platinum-thread numeral on the interior lining records the number of times the robe has been worn in prior ceremonies — a number that grows with each use and is considered a mark of the robe's significance.\n\nSenior executives who have worn the robe sometimes describe the ceremony's final moment — when the robe is removed and returned — as clarifying. A few have described it as humiliating. Ouroboros considers both responses appropriate.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ3200",
+  "augment_compatible": false,
+  "geneware_compatible": false,
+  "durability": "extreme",
+  "legal_status": "legal",
+  "cultural_context": "The Ouroboros investiture ceremony is one of the most discussed and least understood Corponation rituals in Meridian. The robe's return is sometimes cited in business journalism as evidence of Ouroboros's institutional psychology — the company's insistence that no individual accumulates symbolic capital that belongs to the organization. Former Ouroboros executives who left on bad terms sometimes reference the robe's return as their first clear understanding of what they'd joined.",
+  "story_hooks": [
+    "The platinum numeral on a robe the character is asked to wear during a ceremony reads 31 — thirty-one prior wearers. Someone has compiled a list. The character receives it anonymously the morning of the ceremony.",
+    "An Ouroboros robe has been removed from the archive. The ceremonial office is managing the discovery quietly. The character is brought in to find it before the next scheduled investiture in nine days.",
+    "A former Ouroboros executive who left under difficult circumstances has written a detailed account of their investiture ceremony, including a description of the moment the robe was taken back. Ouroboros's legal division is assessing whether publication constitutes a breach of their separation agreement."
+  ],
+  "tags": [
+    "formal",
+    "ceremonial",
+    "Ouroboros",
+    "investiture",
+    "robe",
+    "corponation",
+    "archive",
+    "Tier 4-5",
+    "silk-analog",
+    "UV-motif",
+    "institutional"
+  ],
+  "id": "bfa1885af643407c9cf0df6329f4f71a",
+  "parent_corponation": "Ouroboros Energy"
+}

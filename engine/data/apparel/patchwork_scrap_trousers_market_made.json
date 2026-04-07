@@ -1,0 +1,39 @@
+{
+  "id": "c5a1e7d3b94f2068c5a1e7d3094f2068",
+  "name": "Patchwork Scrap Trousers (Market-Made)",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Assembled by Shelf market tailors from whatever fabric scraps are available that week — upholstery remnants, old uniform panels, hotel linen, synthetic fur offcuts, torn billboard vinyl. No two pairs are identical. The construction is functional if rough: hand-stitched seams, mismatched colors, an elastic waistband that does its best. Surprisingly warm.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "mixed scrap fabric",
+    "elastic salvage",
+    "hand-stitched reclaimed thread"
+  ],
+  "functionality": "none",
+  "what_it_says": "You bought local. You support the people in your block who know how to make something from nothing.",
+  "worn_by": [
+    "Shelf residents",
+    "market-goers",
+    "children on the Shelf"
+  ],
+  "manufacturer": "Various Shelf market tailors",
+  "price_range": "Φ3 - Φ7",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A panel of fabric in one pair is cut from a garment with sentimental value to someone in the market — they want it back.",
+    "A tailor who makes these has started embedding tiny hand-drawn tags inside the waistband, each one different — collectors are emerging."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 1",
+    "patchwork",
+    "handmade",
+    "market",
+    "shelf",
+    "scrap"
+  ],
+  "parent_corponation": ""
+}

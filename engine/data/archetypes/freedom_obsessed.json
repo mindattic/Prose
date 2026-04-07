@@ -1,0 +1,33 @@
+{
+  "id": "bf4e932925646722429506637282836f",
+  "name": "Freedom Obsessed",
+  "type": "archetype",
+  "category": "desire",
+  "description": "Chains come in every form and they can feel every one",
+  "behavioral_signature": "Sacrifices security, comfort, and relationships to remain unbound",
+  "under_stress": "Destroys anything that feels like a constraint, including good things",
+  "at_rest": "Restless, mobile, allergic to obligation",
+  "will_always": [
+    "choose freedom over safety"
+  ],
+  "will_never": [
+    "accept a leash, no matter how golden"
+  ],
+  "unless": [
+    "someone they love needs them to stay and they choose it freely"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Lone Wolf",
+      "threshold": 0.75,
+      "context": "autonomy drive"
+    }
+  ],
+  "opposite_of": [
+    "Loyal Dog"
+  ],
+  "tags": [
+    "independent",
+    "restless"
+  ]
+}

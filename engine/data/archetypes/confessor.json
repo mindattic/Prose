@@ -1,0 +1,34 @@
+{
+  "id": "4317373fc8f1ecbb910381b709e4d094",
+  "name": "Confessor",
+  "type": "archetype",
+  "category": "social",
+  "description": "Draws secrets out of people by creating space for vulnerability",
+  "behavioral_signature": "Others reveal things to them they never intended to share",
+  "under_stress": "Weaponizes confessions they've collected",
+  "at_rest": "Quietly available, warm, listening",
+  "will_always": [
+    "make people feel heard"
+  ],
+  "will_never": [
+    "share their own secrets first"
+  ],
+  "unless": [
+    "reciprocity is the only way to unlock critical information"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Empath",
+      "threshold": 0.7,
+      "context": "emotional attunement"
+    }
+  ],
+  "opposite_of": [
+    "Liar"
+  ],
+  "tags": [
+    "trust",
+    "extraction",
+    "intimacy"
+  ]
+}

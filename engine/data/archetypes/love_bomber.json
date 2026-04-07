@@ -1,0 +1,34 @@
+{
+  "id": "96d54c9134581c84db5480cfa2df3d84",
+  "name": "Love Bomber",
+  "type": "archetype",
+  "category": "relationship",
+  "description": "Overwhelms new connections with intense affection and attention",
+  "behavioral_signature": "Grand gestures, constant messages, overwhelming focus in the first weeks",
+  "under_stress": "Bombing intensifies as desperation to keep the connection grows",
+  "at_rest": "Planning the next overwhelming display of affection",
+  "will_always": [
+    "come on too strong"
+  ],
+  "will_never": [
+    "let a new connection develop at natural pace"
+  ],
+  "unless": [
+    "someone sets boundaries they actually respect"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Serial Bonder",
+      "threshold": 0.75,
+      "context": "intense early attachment"
+    }
+  ],
+  "opposite_of": [
+    "Distant"
+  ],
+  "tags": [
+    "intensity",
+    "overwhelm",
+    "early_stage"
+  ]
+}

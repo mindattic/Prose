@@ -1,0 +1,48 @@
+{
+  "id": "f4a0c71e3d9b2856e1f7a3c08d5b9e24",
+  "name": "Vanthorpe NeuralRoute Aug-Interface Bodysuit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Matte obsidian with hairline gold-copper data traces visible under direct light, the NeuralRoute sits flush against the skin from ankle to throat. It is visually striking even fully clothed — the gold trace pattern is faintly luminous at chrome interface points. Cut for both standard and digitigrade lower-body proportions.\n\nThe fabric is nano-bonded in flat panels with zero bulk at seams. Port-open cutouts at standard neural, spinal, wrist, and ankle chrome sites are finished with conductive lip seals. Worn by people with serious augmentation loads who need clean power and data routing across multiple chrome installations without external cabling.",
+  "tier_association": "Tier 4-5",
+  "materials": [
+    "nano-bonded conductive polysilk",
+    "gold-copper data trace substrate",
+    "flexible power-routing bus layer",
+    "graphene thermal dissipation weave",
+    "adaptive-compression outer shell",
+    "port-seal conductive silicone lip"
+  ],
+  "functionality": "Routes power and data between up to twelve simultaneous chrome implant sites via integrated bus layer, eliminating exposed cabling between installations. Thermal dissipation weave manages heat from active chrome. BCI-addressable — the wearer can reroute data pathways through neural interface. Port cutouts self-seal around chrome hardware to prevent contamination ingress.",
+  "what_it_says": "Your body is a system, and this is its wiring diagram.",
+  "worn_by": [
+    "heavily augmented corporate operatives",
+    "Spire-level executives with full chrome suites",
+    "black-site military contractors",
+    "high-end augmentation specialists who wear their work",
+    "Tier 4-5 aug enthusiasts"
+  ],
+  "manufacturer": "Vanthorpe Systems (Tier 4-5 corponation, augmentation infrastructure division)",
+  "price_range": "Φ3,200–Φ7,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A NeuralRoute suit's bus layer can be forensically mapped to reconstruct exactly what chrome a person was running — someone very powerful doesn't want their aug load on record.",
+    "A Shelf-level hacker has built a pirated version from salvaged BCI flex-cable and transit card substrate — it works, but runs hot enough to burn if two implants fire simultaneously.",
+    "The gold trace pattern on a dead operative's NeuralRoute matches a proprietary layout that only one corponation's R&D division uses — they were running prototype chrome."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "aug-interface",
+    "chrome-routing",
+    "bci-compatible",
+    "power-routing",
+    "tier-4",
+    "tier-5",
+    "tactical",
+    "high-tech",
+    "vanthorpe"
+  ],
+  "parent_corponation": ""
+}

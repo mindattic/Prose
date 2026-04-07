@@ -1,0 +1,46 @@
+{
+  "id": "9a68eb338f87db588e2707809055af28",
+  "name": "Tessera Phantom Mark IV 'Ghost Writer'",
+  "type": "weapon",
+  "aliases": [
+    "Ghost Writer",
+    "Phantom IV",
+    "The Whisper",
+    "Ink"
+  ],
+  "category": "sniper",
+  "description": "Tessera's flagship suppressed precision platform fires caseless subsonic rounds through a 14-baffle integral suppressor that reduces the weapon's acoustic signature to below 60 decibels. The Phantom Mark IV was designed for deniable operations in urban environments where gunfire would attract immediate response.\n\nThe rifle uses a delayed-blowback action tuned for absolute reliability with subsonic ammunition, and the barrel incorporates a thermal masking sleeve that dissipates heat signatures within seconds of firing. At effective range, the only indication of a Phantom shot is the impact itself.\n\nTessera markets the weapon exclusively through classified procurement channels, and each unit is serialized with a quantum-dot identifier that the company claims is impossible to remove. Street armorers disagree, and a thriving black market exists for 'cleaned' Phantoms with their identifiers acid-etched away.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 4+",
+  "legality": "Classified procurement only — corporate or state actors",
+  "base_technologies": [
+    "Integral multi-baffle suppression",
+    "Caseless subsonic ammunition",
+    "Thermal masking barrel sleeve"
+  ],
+  "specifications": "caliber: 8.6mm caseless subsonic\neffective_range: 50-800 meters\nrate_of_fire: Semi-automatic, 1 round per second\ncapacity: 10-round detachable magazine\nweight: 5.4 kg\npower_source: None — conventional mechanical action",
+  "tactical_use": "The Ghost Writer excels in urban assassination where stealth outweighs raw stopping power. Operators pair the weapon with BCI-linked optics that compensate for the subsonic round's pronounced bullet drop at range. The weapon is favored for operations inside Meridian 88's enclosed arcology levels where sound carries unpredictably and a single unsuppressed shot can trigger automated security responses across multiple sectors.",
+  "cultural_context": "The phrase 'ghost writing' has entered Meridian 88 slang to describe any covert action carried out with professional precision. When someone dies without witnesses, without sound, and without forensic evidence, people say they were 'ghost written.' Tessera neither confirms nor denies the weapon's existence in public channels.",
+  "known_users": [
+    "Tessera covert operations division",
+    "Unnamed corporate wet-work teams"
+  ],
+  "story_hooks": [
+    "Three mid-level corporate managers from competing firms were ghost written in the same week — all killed with 8.6mm caseless rounds. Someone is pruning a corporate org chart.",
+    "A cleaned Phantom has surfaced on the black market with its original quantum-dot identifier still readable under deep UV — it traces back to a Tessera executive's personal armory."
+  ],
+  "ammunition_type": [
+    "8.6mm caseless subsonic"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "suppressed",
+    "stealth",
+    "corporate",
+    "tier 4",
+    "assassination",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

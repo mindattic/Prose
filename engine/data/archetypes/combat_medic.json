@@ -1,0 +1,34 @@
+{
+  "id": "ea948289371a261b1a477d8d6cedbdf9",
+  "name": "Combat Medic",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Fights specifically to keep others alive, killing to preserve life",
+  "behavioral_signature": "Shoots with one hand and applies pressure with the other",
+  "under_stress": "Has to choose between fighting and saving and both suffer",
+  "at_rest": "Restocking medical supplies, maintaining weapons, sleeping badly",
+  "will_always": [
+    "prioritize wounded over kills"
+  ],
+  "will_never": [
+    "leave a wounded ally on the field"
+  ],
+  "unless": [
+    "recovering them would get more people killed than it saves"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Lifeline",
+      "threshold": 0.8,
+      "context": "battlefield medicine"
+    }
+  ],
+  "opposite_of": [
+    "Executioner"
+  ],
+  "tags": [
+    "healing",
+    "combat",
+    "triage"
+  ]
+}

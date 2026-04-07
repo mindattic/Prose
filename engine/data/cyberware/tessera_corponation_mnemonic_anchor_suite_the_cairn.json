@@ -13,7 +13,7 @@
   "category": "augmentation",
   "body_location": "",
   "description": "The Cairn is a cognitive augmentation system developed by Tessera Corponation that addresses one of the more destabilizing consequences of a heavily augmented life: memory fragmentation. Individuals with multiple neural implants, regular chemical cognitive enhancement, or exposure to signal-based memory interference frequently experience degraded episodic memory fidelity — events become uncertain, timelines blur, and the distinction between experienced memory and implant-mediated data becomes unreliable. The Cairn counters this through a dual-layer architecture: a hippocampal interface node that tags incoming episodic memories with cryptographic temporal markers at the moment of formation, and a solid-state memory buffer seated at the base of the skull that stores compressed high-fidelity snapshots of tagged memories as a reference baseline.\n\nThe retrieval experience is unlike simply remembering. When a user invokes a Cairn-anchored memory, the system doesn't reconstruct it through natural recall — it plays back the stored snapshot in overlay, a brief immersive flash that sits over present perception like a double exposure. Users describe it as 'stepping into a photograph.' The fidelity is absolute within the snapshot's scope, which makes The Cairn invaluable for precise recollection of conversations, contracts, observed details, and events — but the snapshot is also frozen at the moment of anchoring, capturing only what the user was attending to at that instant, with peripheral detail dropped. Operators learn to deliberately attend to what they want to preserve, a practice that has a secondary effect of making them extraordinarily present during events they anticipate wanting to remember.\n\nTessera markets The Cairn primarily to corporate executives and legal professionals as a litigation-grade memory integrity tool, and the cryptographic temporal markers are legally admissible as authentication in several corporate jurisdictions within Meridian 88. The street applications are considerably less refined — anchored memories can be extracted from the buffer by a skilled technician, making The Cairn both a personal archive and a potential evidence locker. Users who carry sensitive anchored memories sometimes become targets, and a subculture of 'cairn-crackers' specializes in covert buffer extraction.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "Asante Wellness Clinics",
   "tier_availability": "Tier 2+",
   "legality": "Unrestricted",
   "installation_requirements": "",
@@ -42,8 +42,6 @@
   "tags": [
     "augmentation",
     "cyberware",
-    "war",
-    "death",
     "memory",
     "augment",
     "neural",
@@ -54,5 +52,6 @@
     "ubc",
     "market",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "An advanced flashbang variant that attacks all five senses simultaneously plus neural interface channels. The SOG-3 detonates with a synchronized package: blinding light across visible and IR spectra, 180 dB acoustic burst, aerosolized capsaicinoid irritant, a burst of electromagnetic interference targeting neural frequencies, and a surface coating on the casing that releases a nausea-inducing olfactory compound on detonation. The combined sensory assault overwhelms both biological and augmented processing capacity, causing a 30-60 second window of total incapacitation regardless of the target's augmentation level or training.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Osei Neural Research Institute",
   "tier_availability": "Tier 3+",
   "legality": "Licensed — tactical entry teams",
   "base_technologies": [
@@ -38,6 +38,8 @@
     "rain",
     "night",
     "train",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

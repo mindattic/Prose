@@ -1,0 +1,49 @@
+{
+  "id": "76ba77bd3e4da2ab832e1c7bacb2263e",
+  "name": "Crucible Industries Battle Rifle BR-11 'Tribunal'",
+  "type": "weapon",
+  "aliases": [
+    "Tribunal",
+    "BR-11",
+    "Judge Gun"
+  ],
+  "category": "assault_rifle",
+  "description": "The BR-11 Tribunal is a 7.62mm battle rifle built for Crucible's corporate adjudication teams — security forces authorized to enforce contract disputes through direct action. The weapon's onboard system maintains a legal log that timestamps each engagement with the relevant contract clause being enforced, creating a chain of evidence that satisfies corporate arbitration courts. Every trigger pull is a legally documented act.\n\nMechanically, the Tribunal is a refined version of the FR-9 Ironmonger refit with precision components. The barrel is chrome-lined match-grade, the trigger is a two-stage unit adjustable from 1.5 to 3.5 kilograms, and the action is glass-bedded into the receiver for consistent accuracy. BCI integration provides legal overlay information — the operator sees contract boundaries, authorized engagement zones, and target authorization status in real-time.\n\nCrucible designed the Tribunal to make violence bureaucratic. Every aspect of the weapon exists to ensure that when force is applied, it is documented, justified, and legally defensible. This makes the BR-11 the most civilized instrument of brutality in production.",
+  "manufacturer": "Rho-Series Production Facility",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — corporate adjudication forces only",
+  "base_technologies": [
+    "Legal engagement logging",
+    "BCI contract-overlay system",
+    "Match-grade precision components",
+    "Arbitration-ready evidence chain"
+  ],
+  "specifications": "caliber: 7.62mm caseless\neffective_range: 650m\nrate_of_fire: 600 rpm (cyclic)\nmagazine_capacity: 20 rounds\nweight: 4.3 kg",
+  "tactical_use": "The Tribunal functions as both weapon and legal instrument. Its precision components deliver match-grade accuracy for engagements where clean, documented kills are required — a stray round into non-contracted areas creates legal liability. Operators are trained to fire only within authorized engagement zones, and the BCI overlay ensures they know exactly where those boundaries lie. The legal logging system has a secondary tactical benefit: it discourages unauthorized use, since every round is audited.",
+  "cultural_context": "The Tribunal represents the intersection of violence and bureaucracy that defines corporate sovereignty. In a world where contracts carry the force of law and enforcement is privatized, the BR-11 is the physical manifestation of corporate justice. Being targeted by a Tribunal operator means your death will be filed, reviewed, and archived. The weapon's nickname 'Judge Gun' captures its role perfectly — it doesn't just kill, it adjudicates.",
+  "known_users": [
+    "Crucible adjudication teams",
+    "Corporate enforcement specialists",
+    "Contract dispute resolution forces"
+  ],
+  "story_hooks": [
+    "A Tribunal operator discovers their legal overlay has been manipulated — the 'authorized targets' displayed in their BCI were actually civilians reclassified by a corrupt contract manager.",
+    "The legal logs from a BR-11 recovered at a crime scene prove the killing was authorized under a contract that technically doesn't exist. Someone fabricated an entire corporate dispute to justify murder."
+  ],
+  "ammunition_type": [
+    "7.62mm caseless match",
+    "7.62mm caseless standard"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "legal",
+    "adjudication",
+    "precision",
+    "corporate",
+    "Crucible",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

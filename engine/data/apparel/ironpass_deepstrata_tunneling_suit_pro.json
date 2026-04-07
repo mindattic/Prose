@@ -1,0 +1,46 @@
+{
+  "id": "2b9e5f3a7c1d4086e2f3a4b5c6d7e8f1",
+  "name": "Ironpass DeepStrata Tunneling Suit Pro",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Gunmetal grey reinforced with rust-orange abrasion panels across the knees, elbows, and shoulder caps. The DeepStrata is a purpose-built tunneling suit for underground excavation in M88's subsurface infrastructure corridors — where collapses, gas pockets, and groundwater intrusion are occupational hazards rather than emergencies. Shell is ripstop ballistic nylon over a crushproof foam chassis at impact zones.\n\nIntegrated kneepads are gel-filled with a hard outer cap. The collar accepts a standard tunnel respirator bayonet mount. Spinal channel runs full-length up the back, accommodating spinal rigs and exoskeletal harness attachments. Pockets are sealed with magnetic closures rated for dust ingress.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "ripstop ballistic nylon",
+    "crushproof impact foam",
+    "gel-fill kneepads with hard cap",
+    "magnetic-seal pocket closures",
+    "integrated spinal channel webbing"
+  ],
+  "functionality": "Impact protection at knees, elbows, and shoulders; spinal channel accommodates spinal rigs and exoskeletal harness mounts; collar bayonet mount accepts standard tunnel respirators; magnetic-seal pockets rated IP65 for dust; reinforced seat panel for confined-space crawl work.",
+  "what_it_says": "You work below the city where no one is watching and everything can go wrong.",
+  "worn_by": [
+    "municipal tunnel maintenance crews",
+    "underground infrastructure workers",
+    "unlicensed Shelf tunnel runners",
+    "excavation subcontractors",
+    "deep-grid transit engineers"
+  ],
+  "manufacturer": "Ironpass Industrial Workwear",
+  "price_range": "Φ340–Φ720",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A tunnel crew breaks through a sealed pre-collapse corridor and finds it occupied — someone has been living in the deep grid for years, and they've built something down there.",
+    "The spinal channel was spec'd to accommodate standard rigs, but a new military-grade spinal augment doesn't fit — its owner needs a modified suit before the next shift or can't work.",
+    "A tunnel worker's suit data-logger — used for safety compliance — has been recording audio; a labor organizer wants the files before the corponation's safety inspector does."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "mining",
+    "tunneling",
+    "underground",
+    "aug-compatible",
+    "industrial",
+    "impact-resistant",
+    "tier-2",
+    "tier-3"
+  ],
+  "parent_corponation": ""
+}

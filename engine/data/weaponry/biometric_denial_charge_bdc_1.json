@@ -9,7 +9,7 @@
   ],
   "category": "explosive",
   "description": "The BDC-1 is a remotely programmable proximity charge that incorporates a passive biometric scanner into its arming and detonation logic. Before deployment, the operator uploads a biometric target profile — drawn from neural pattern data, gait analysis signatures, cardiac rhythm signatures, or a combination — and the charge's onboard processing unit continuously scans its environment for matching profiles. When a match is detected within the trigger radius, the charge detonates. Non-matching individuals can walk directly past the charge, handle it, or even inspect it without triggering detonation. The charge will not fire for anyone who does not match the programmed profile.\n\nThe technical architecture draws on neural feedback loop technology originally developed for personalized medical monitoring — the same systems used to track patients' neural signatures across hospital environments for automated care. The BDC-1 repurposes these passive scanning arrays as targeting hardware. The result is a weapon that is functionally invisible to everyone except its designated target. It does not look like a bomb. It does not act like a bomb. It sits passively in an environment and waits, sometimes for days, until the right person arrives. The explosive payload itself is a compact shaped charge designed for anti-personnel effect within a 3-meter radius.\n\nTessera Corponation developed the BDC-1 under a contract framing that described it as a 'personalized perimeter security asset' — language carefully chosen to position it as a defensive rather than offensive system. The distinction collapsed almost immediately in practice. The weapon is used almost exclusively for targeted assassination, and its ability to sit dormant through inspections and sweeps while waiting for a specific individual has made it the preferred tool of a particular class of contractor who specializes in long-timeline eliminations. Tessera continues to produce it under restricted licensing while publicly maintaining the defensive framing.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "Asante Wellness Clinics",
   "tier_availability": "Tier 4+",
   "legality": "Restricted (licensed security contractors only); Prohibited for anti-personnel programming",
   "base_technologies": [
@@ -53,6 +53,8 @@
     "vehicle",
     "escape",
     "fire",
-    "tier 4"
-  ]
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

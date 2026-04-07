@@ -1,0 +1,47 @@
+{
+  "id": "fd591500f6d98e8ca8730a1ca8ff4272",
+  "name": "Arcturus Defense Solutions Aegis Emplacement AE-6 'Bulwark'",
+  "type": "weapon",
+  "aliases": [
+    "Bulwark",
+    "AE-6",
+    "Aegis",
+    "The Wall"
+  ],
+  "category": "support",
+  "description": "A heavy emplaced weapon system designed for fixed-position defense. The Bulwark fires 10mm tungsten-core rounds from a dual-barrel configuration at 800 rounds per minute, with an integrated shield generator that projects a localized kinetic barrier in front of the firing position.\n\nThe AE-6 weighs 85 kg and requires mounting on a prepared position — rooftop, vehicle, or reinforced tripod. Once emplaced, the weapon's shield generator creates a 2-meter wide energy barrier that deflects small-arms fire while allowing the operator to engage threats from behind cover that did not exist before deployment.\n\nArcturus designed the Bulwark for corporate checkpoint defense and corridor denial. The combination of sustained heavy fire and projected shielding makes a single AE-6 position functionally equivalent to a fortified bunker — deployable in under three minutes and relocatable as tactical needs change.",
+  "manufacturer": "Blackwood Commercial Group",
+  "tier_availability": "Tier 5",
+  "legality": "Military restricted — emplaced weapons authorization required",
+  "base_technologies": [
+    "Dual-barrel heavy automatic fire",
+    "Integrated kinetic barrier projection",
+    "Rapid-deploy emplacement system"
+  ],
+  "specifications": "caliber: 10mm tungsten-core\neffective_range: 100-1,200 meters\nrate_of_fire: 800 rounds per minute (dual barrel combined)\ncapacity: 400-round linked belt\nweight: 85 kg (weapon and shield generator)\npower_source: Shield: portable fusion cell, 2 hours continuous projection",
+  "tactical_use": "The Bulwark transforms any position into a hardened defensive point. Corporate security teams deploy AE-6 units at choke points during building lockdowns, perimeter breaches, and territorial disputes. The shield generator's kinetic barrier stops conventional small-arms fire but is transparent to directed energy weapons — a known vulnerability that attackers exploit by mixing kinetic and energy weapons in their assault elements.",
+  "cultural_context": "The sight of a Bulwark being deployed signals that a corporate entity has decided to hold ground at any cost. In Meridian 88's ongoing territorial disputes, the AE-6 has become synonymous with escalation — its presence means negotiations have failed and the corporation is prepared for siege warfare. Lower-tier communities caught between competing Bulwark positions have learned to evacuate when they see the distinctive shield shimmer.",
+  "known_users": [
+    "Arcturus corporate defense forces",
+    "High-tier security installations"
+  ],
+  "story_hooks": [
+    "A Bulwark position was overrun when its shield generator was defeated by a weapon no one can identify — the barrier simply vanished. Arcturus is offering a reward for information about the counter-shield technology.",
+    "Someone is deploying stolen Bulwark units in the lower tiers, creating fortified positions that municipal security cannot breach. A community has declared independence behind a wall of Arcturus hardware."
+  ],
+  "ammunition_type": [
+    "10mm tungsten-core linked belt"
+  ],
+  "tags": [
+    "weapon",
+    "support",
+    "emplaced",
+    "heavy",
+    "shield",
+    "defensive",
+    "tier 5",
+    "corporate",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

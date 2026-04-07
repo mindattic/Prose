@@ -1,0 +1,41 @@
+{
+  "id": "038f9263d5e7b8041268f9274e5d7b80",
+  "name": "Brightline Hi-Vis Construction Shell",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "High-visibility orange and yellow, retroreflective tape in ANSI-compliant stripes across the chest, back, and arms. The Brightline is the jacket you see on every active construction site in Meridian 88 — worn by the people building the elevated transit lines, maintaining the power conduit runs, and doing the physical work that keeps the megacity standing. It's a windbreaker-weight shell with a quilted vest liner that can be removed in warmer months. The fit is utilitarian and generous enough to layer over coveralls.\n\nBrightline is a Tier 1 to 2 safety brand that sells direct to construction companies and labor cooperatives. Individual workers sometimes buy their own when site-issued jackets wear out. The jacket carries no cachet — it is purely functional — but it's an honest symbol of labor in a city that increasingly tries to make its working infrastructure invisible.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "ripstop polyester shell",
+    "retroreflective tape",
+    "removable quilted liner"
+  ],
+  "functionality": "",
+  "what_it_says": "You work. You build things. You're not ashamed of it.",
+  "worn_by": [
+    "construction workers",
+    "infrastructure maintenance crews",
+    "transit workers",
+    "labor cooperative members"
+  ],
+  "manufacturer": "Brightline Safety Co.",
+  "price_range": "Φ38",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Someone is using stolen Brightline jackets to move through restricted construction zones undetected — and one of the real workers is being blamed.",
+    "A labor organizer has been using the hi-vis jacket as a covert signal system — specific tape patterns indicate meeting times and locations.",
+    "A Tier 5 architect was found dead in a Brightline jacket on a construction site they'd never been authorized to visit."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 1",
+    "hi-vis",
+    "safety",
+    "workwear",
+    "construction",
+    "labor"
+  ],
+  "parent_corponation": ""
+}

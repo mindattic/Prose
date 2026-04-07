@@ -1,0 +1,35 @@
+{
+  "name": "PolyRoute Delivery Driver Weathershell",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "delivery_logistics",
+  "manufacturer": "PolyRoute Logistics",
+  "description": "PolyRoute is one of M88's dominant last-mile delivery networks, and the Weathershell is what their drivers wear through the city's full meteorological range — acid-tinged lake squalls, the deep cold of Great Lakes winters, and the wet heat that settles over the megacity's lower districts in summer. The jacket is a three-layer construction: an outer shell of hydrophobic ripstop that sheds water and resists the mild chemical content of Meridian 88's precipitation, a thermal-regulating mid-layer that adjusts insulation based on exertion level, and a moisture-wicking inner face. The exterior is a medium grey with PolyRoute's route-arrow logo in orange at the chest and back, and high-visibility retroreflective striping along the sleeves.\n\nA GPS-conductive thread network runs through the jacket's left sleeve, connecting to a wrist-worn routing display that pulls live delivery manifests, traffic data, and route optimization from PolyRoute's logistics AI. The jacket includes a chest-mounted scanner holster for package verification hardware. BCI-compatible collar port allows hands-free navigation for drivers with neural interface setups. The Weathershell is geneware-tolerant at the back and waist — tail accommodation gussets are standard, and the hood has adjustable side clearance for ear configurations. PolyRoute drivers are contractors, not employees, which means the jacket is technically a rental deducted from earnings — a financial arrangement that generates significant resentment among the workforce.",
+  "tier_availability": "Tier 1-2",
+  "price": "Φ175",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The grey-and-orange of PolyRoute is everywhere in M88, a constant reminder of the gig economy that underpins the city's consumption. Drivers develop intense familiarity with every district's rhythms, and the Weathershell marks them as people who know the city's back routes, service corridors, and unofficial shortcuts better than anyone. That knowledge has value far beyond package delivery.",
+  "story_hooks": [
+    "A PolyRoute driver discovers their GPS thread network has been logging not just their routes but detailed interior scans of every building they've entered for delivery — data PolyRoute has been selling to an undisclosed third party.",
+    "A series of Weathershell jackets are recovered from a Tier 1 warehouse, all with their GPS threads manually extracted — someone is building a fleet of untraceable delivery drivers.",
+    "A driver's routing AI begins sending them to addresses that don't exist in any official registry, and the packages they're delivering have no sender information."
+  ],
+  "tags": [
+    "delivery",
+    "logistics",
+    "polyroute",
+    "gps_woven",
+    "weatherproof",
+    "gig_economy",
+    "aug_compatible",
+    "geneware_compatible",
+    "tier1",
+    "tier2",
+    "contractor"
+  ],
+  "id": "2477fa19a4194371ae455b9ed480a905",
+  "parent_corponation": ""
+}

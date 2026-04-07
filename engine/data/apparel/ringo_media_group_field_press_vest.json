@@ -1,0 +1,35 @@
+{
+  "name": "Ringo Media Group Field Press Vest",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_office_wear",
+  "manufacturer": "Ringo Data Services",
+  "description": "Ringo's on-ground media personnel — the reporters, fixers, and content capture crews who work outside the studio — wear the Field Press Vest, a garment that sits at the intersection of corporate branding and practical journalism. The vest is constructed from a medium-weight weather-resistant ripstop in Ringo's signature electric yellow, with the Ringo wordmark in bold black across the back and a smaller logo at the left chest. Twelve external pockets accommodate capture equipment, data chips, external BCI relay hardware, and backup power cells. The vest is not armored, but it is treated with a visual-prominence coating that makes it highly visible on camera and in crowd footage — a deliberate design choice, as Ringo's field staff rely on their recognizability as press for a degree of social protection in volatile coverage zones.\n\nThe vest includes a BCI-sync port at the collar that connects to Ringo's proprietary LiveStream infrastructure, allowing field personnel to push content directly to Ringo's broadcast networks without local processing. A passive GPS weave tracks field crew positions and feeds to the Ringo logistics desk. The vest is explicitly not designed for hostile environments — Ringo's liability documentation is extremely clear that it confers no ballistic or chemical protection — but field crews working Shelf assignments frequently modify their vests with third-party trauma inserts, a practice Ringo officially discourages and unofficially depends on. Geneware accommodation is minimal; the vest is cut for a standard human silhouette, and crew members with significant modifications often find it ill-fitting.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ140",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The yellow Ringo vest is a contested symbol. To some in M88, it represents the presence of a witness — a check on violence and official misconduct. To others, particularly in Tier 1 communities, it represents a corporation that profits from broadcasting their suffering. Field crews navigate this tension daily, and the vest that's supposed to protect them through visibility sometimes makes them a target for people who don't want to be seen.",
+  "story_hooks": [
+    "A field crew's GPS weave data, which Ringo supposedly uses only for logistics, is subpoenaed by Arcturus during a corpsec investigation into an incident the crew covered.",
+    "Counterfeit Ringo vests are being worn by individuals in a Tier 1 district to move through Arcturus checkpoints — the vests provide enough press credential ambiguity to slow detainment procedures.",
+    "A field reporter's LiveStream uplink is hijacked mid-broadcast, and the content being pushed to Ringo's network is not footage the reporter captured."
+  ],
+  "tags": [
+    "media",
+    "ringo",
+    "press",
+    "field_crew",
+    "gps_woven",
+    "bci_compatible",
+    "high_visibility",
+    "aug_compatible",
+    "tier2",
+    "tier3",
+    "journalism"
+  ],
+  "id": "77a301b871314673852bd18c6cfe0348",
+  "parent_corponation": "Ringo Corponation"
+}

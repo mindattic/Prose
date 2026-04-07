@@ -1,0 +1,50 @@
+{
+  "id": "2c6e9b4d1f7a0c8e3b5d2f8a1c4e7b0d",
+  "name": "Ironpass Electrical Maintenance Night Crew Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The Ironpass night maintenance crew kit is what infrastructure looks like from the inside — functional, unglamorous, and built for crawl spaces and conduit tunnels. The primary layer is a flame-resistant synth-cotton work shirt in faded charcoal with a band collar and chest pockets sealed by magnetic closures rated for electromagnetic interference environments. An Ironpass Maintenance Division patch sits on the left shoulder in grey and yellow — a wrench over a lightning bolt — and a laminated crew ID badge clips to the right chest pocket. The shirt's rear yoke has a spinal rig channel: a vertical reinforced seam with snap-open access panels that accommodate external spinal augmentation hardware without compressing the rig's port nodes. Over it goes a high-visibility vest in safety yellow with 360-degree reflective silver tape striping and a radio holster on the right chest.\n\nThe trousers are Fenmark ToughSeam Electrician Pants in deep charcoal — arc-flash rated, with reinforced knees, a deep back pocket with snap closure for circuit documentation, and a built-in knee pad system. The belt is a wide nylon rigger belt with a grounded metal buckle. Footwear is the Penrose Weld Boot in matte black — dielectric sole, composite toe, ankle-high with a side zip for fast donning. A matte-finish hard hat in yellow with a mounted headlamp and a flip-down face shield completes the head protection. Work gloves in arc-rated synth-leather are tucked into the left cargo pocket. The kit is clean at shift start but by 0300 it carries the smell of ozone and tunnel damp.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "flame-resistant synth-cotton",
+    "arc-flash rated twill",
+    "safety yellow ripstop",
+    "reflective silver polyfilm tape",
+    "dielectric rubber sole",
+    "composite toe shell",
+    "arc-rated synth-leather glove",
+    "reinforced nylon webbing"
+  ],
+  "functionality": "Flame and arc-flash resistant primary layers, spinal rig channel with snap-open access panels for aug hardware, 360-degree hi-vis reflective banding, dielectric footwear for live electrical environments, integrated knee protection, radio holster, EM-rated magnetic pocket closures, headlamp and face shield hard hat system",
+  "what_it_says": "Essential infrastructure labor — the kind of work that keeps the city's lights on and is rewarded with a night shift and a tunnel assignment. The spinal rig channel says Ironpass accommodates augmented workers, probably because the rigs make crew members faster and more precise in tight conduit runs. The laminated badge says they are accountable, trackable, and authorized to be in places most people never see.",
+  "worn_by": [
+    "Ironpass electrical maintenance crew",
+    "infrastructure night shift technicians",
+    "conduit and tunnel maintenance workers",
+    "Circuit-tier utility workers with spinal augmentation"
+  ],
+  "manufacturer": "Ironpass Infrastructure Division — standard issue; Fenmark (trousers); Penrose (boots)",
+  "price_range": "Φ 290–Φ 420 (partially subsidized by Ironpass; boots and trousers employee-purchased)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The maintenance crew's tunnel assignment puts them in a section of conduit that does not appear on any official Ironpass map — and the wiring inside does not match any known corponation standard.",
+    "A crew member's spinal rig has been recording environmental data from every tunnel access point for six months; someone wants that data, and someone else wants to make sure it never surfaces.",
+    "The laminated crew ID badge grants access to a sub-level that was supposed to be decommissioned — the badge system never got the update."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "maintenance",
+    "electrical",
+    "infrastructure",
+    "aug_compatible",
+    "hi_vis",
+    "flame_resistant",
+    "night_shift",
+    "corponation_issued"
+  ],
+  "parent_corponation": ""
+}

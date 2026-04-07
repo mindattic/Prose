@@ -1,0 +1,48 @@
+{
+  "id": "f4a1b7c3d2e9058f6a7b8c9d0e1f2a3b",
+  "name": "Axiom Defense Solutions BlastWall EOD Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Slate grey with deep navy blast panels and retro-reflective tape at the shoulders and calves. The BlastWall is Axiom's premier explosive ordnance disposal suit, rated for fragmentation, overpressure, and thermal pulse. The outer shell is layered Dyneema composite over a rigid ceramic-insert torso plate system. The suit is heavy — wearers feel it.\n\nThe helmet is integrated via a rigid neck dam collar, with a ballistic polycarbonate visor and internal heads-up display fed from the wearer's BCI. Chrome arm wearers have dedicated rigid-sleeve extensions with haptic retention clips. The suit's rear panel carries an emergency quick-release pull for fast doffing. Gene-ware wearers with non-standard limb geometry require custom fitting.",
+  "tier_association": "Tier 3-5",
+  "materials": [
+    "Dyneema composite outer shell",
+    "ceramic torso insert plates",
+    "ballistic polycarbonate visor",
+    "rigid neck dam collar",
+    "haptic retention chrome-sleeve extensions"
+  ],
+  "functionality": "Fragmentation and overpressure rated to Class IV blast events; integrated BCI-fed HUD in helmet visor; chrome arm haptic retention sleeve extensions; emergency quick-release rear pull for rapid doffing; thermal pulse resistance rated to 800°C flash exposure for 2 seconds.",
+  "what_it_says": "You walk toward the thing everyone else is running from, and someone paid serious money to keep you alive doing it.",
+  "worn_by": [
+    "corporate EOD specialists",
+    "CorpSec bomb disposal units",
+    "Tier 4-5 private security contractors",
+    "municipal emergency response specialists",
+    "black-market ordnance technicians"
+  ],
+  "manufacturer": "Axiom Defense Solutions",
+  "price_range": "Φ12,000–Φ28,000",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A BlastWall suit is recovered at a Shelf bomb scene — it's registered to a Tier 5 CorpSec unit that officially has no operations in this district.",
+    "The BCI-fed HUD has been quietly logging GPS and biometric data and transmitting it to an unknown server; the EOD tech wearing it has no idea they've been surveilled for months.",
+    "A black-market ordnance tech acquired a stolen BlastWall and used it to walk into a corporate vault — the suit's ownership beacon is still broadcasting, and Axiom's recovery team is already moving."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "blast",
+    "EOD",
+    "bomb-disposal",
+    "aug-compatible",
+    "BCI-compatible",
+    "military-grade",
+    "tier-3",
+    "tier-4",
+    "tier-5",
+    "full-body"
+  ],
+  "parent_corponation": ""
+}

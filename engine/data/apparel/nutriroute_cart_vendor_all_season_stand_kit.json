@@ -1,0 +1,49 @@
+{
+  "id": "f04d6a1e8c3b5972e1d0f7a2c94b830e",
+  "name": "NutriRoute Cart Vendor All-Season Stand Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The full working uniform of a NutriRoute licensed street cart vendor — one of the Circuit tier's most visible workers, stationed at transit hubs, factory gates, and corridor intersections through all weather. The foundation is a pair of straight-cut black synth-cotton trousers with deep side pockets and a reinforced inner-thigh panel for long hours of standing and squatting. The primary layer is a NutriRoute branded quarter-zip pullover in safety orange with a white NutriRoute wordmark across the chest and a QR patch on the left sleeve that links to the cart's live menu — updated remotely by the vendor. The quarter-zip collar can be pulled high against wind; the cuffs are tight-knit to keep out cold without hampering hand movement. Over it in cold weather: a padded gilet in charcoal with a high mock-neck collar, multiple zippered chest pockets for holding Quanta-chip payment terminals, and hi-vis silver strips at the shoulder seams.\n\nOn the head: a NutriRoute-branded mesh-back cap in orange and black, the brim curved and worn low against sun or drizzle. A full-length black synthetic-rubber apron ties at the waist and chest, covering the front of the outfit during service — stain-resistant, wipe-clean, with a front kangaroo pocket holding order-slip printouts and a pen-stylus. Footwear is a pair of Foundry Broadfoot Work Sneakers in black — cushioned for standing shifts, oil-resistant sole, slightly scuffed from daily use. The vendor's hands are bare for service speed, knuckles often chapped from cold. A small bioluminescent flower sticker — personal, not corporate — is stuck to the inside brim of the cap, glowing faintly blue: the only soft thing in the whole outfit.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "black synth-cotton (trousers)",
+    "safety orange tight-knit synth-cotton (pullover)",
+    "charcoal synthetic insulation (gilet)",
+    "synthetic rubber (apron)",
+    "mesh-back cap nylon",
+    "hi-vis silver reflective strips"
+  ],
+  "functionality": "QR-linked menu sleeve patch, Quanta-chip terminal pockets in gilet, stain-resistant wipe-clean apron with order-slip pocket, high collar wind protection, oil-resistant cushioned work sneakers, deep cargo pockets, high-visibility shoulder strips",
+  "what_it_says": "A licensed NutriRoute vendor — not a gray-market operator, an actual franchisee who paid the licensing fee and wears the logo. That costs something, and it buys a certain legitimacy: transit authority doesn't hassle you, the corporate protection window means you're not paying protection to anyone else either. The bioluminescent sticker under the cap brim is the tell that there's a whole person inside the uniform — someone who likes small beautiful things and keeps one hidden on their person at all times.",
+  "worn_by": [
+    "NutriRoute licensed cart vendors",
+    "street food operators at transit hubs",
+    "factory gate food service workers",
+    "corridor intersection food stall operators"
+  ],
+  "manufacturer": "NutriRoute corponation (branded pullover, cap, apron); Foundry (sneakers); charcoal gilet from circuit market independent label",
+  "price_range": "Φ 120–Φ 175 (franchise kit partially subsidized by NutriRoute licensing agreement)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The QR sleeve patch on a vendor's pullover links to the live menu — but a secondary layer beneath the public-facing QR quietly logs the BCI signatures of every person who scans it, feeding data to an unknown third party.",
+    "A NutriRoute vendor at a specific factory gate has been working the same corner for eleven years and knows every face, every schedule, every vehicle that passes — they are the best possible witness to whatever happened the night the shift supervisor disappeared.",
+    "The bioluminescent sticker inside the cap brim is not a decoration: it's a marker, a signal to someone who knows what to look for, indicating that this vendor is a message drop point for a Circuit-level mutual aid network."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "street_vendor",
+    "food_service",
+    "uniform",
+    "corponation_issued",
+    "gene_compatible",
+    "nutriroute",
+    "transit_hub",
+    "working_class",
+    "hi_vis"
+  ],
+  "parent_corponation": ""
+}

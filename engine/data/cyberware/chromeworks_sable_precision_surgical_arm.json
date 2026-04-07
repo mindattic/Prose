@@ -1,0 +1,57 @@
+{
+  "id": "7b1d4e9a3c0f82651e7a2d4b9c3f0e58",
+  "name": "CHROMEWORKS Sable Precision Surgical Arm",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "Chromeworks Sable Series Precision Surgical Arm",
+  "type": "cyberware",
+  "aliases": [
+    "Steadhand",
+    "The Scalpel",
+    "Glass Fingers"
+  ],
+  "category": "arm",
+  "body_location": "arm",
+  "description": "The Chromeworks Sable is a full-arm replacement engineered to sub-millimeter motor tolerances, using a layered piezoelectric actuator system in each finger joint that allows positional accuracy to 0.04mm without tremor. The arm's neural integration suite runs a proprietary vibration-cancellation algorithm that filters environmental micro-tremors from the operator's own body, ensuring motionless precision even when the user is fatigued, stressed, or under mild stimulant load. The exterior is matte-finish surgical chrome with slim profile articulation, designed to fit inside standard sterile-field gloves.\n\nThe Sable is the gold standard for microsurgeons, bomb disposal technicians, and high-end watchmakers in Meridian 88's Tier 4 professional class. CHROMEWORKS markets it aggressively through hospital licensing programs and licensed medical tech distributors, making it the most common precision arm in Spire-adjacent clinic settings. It carries significant social cachet — a Sable arm at a dinner table announces a career built on skill, not brute labor.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 3-5",
+  "legality": "Licensed",
+  "installation_requirements": "Certified neural interface socket; CHROMEWORKS-authorized surgical installation; 72-hour calibration protocol post-op",
+  "rejection_risk": "Low — biocompatible alloy housing and CHROMEWORKS's established neural integration protocol minimize inflammatory response",
+  "maintenance": "Quarterly actuator calibration; annual piezoelectric layer inspection; firmware updates via CHROMEWORKS subscription service",
+  "specifications": "{\"positional_accuracy\": \"0.04mm\", \"tremor_suppression\": \"vibration-cancellation algorithm, active\", \"finger_joints\": \"piezoelectric actuator array\", \"weight\": \"2.1kg\", \"exterior_finish\": \"matte surgical chrome\", \"glove_compatible\": true, \"neural_latency\": \"4ms\", \"max_grip_force\": \"120kg\", \"sustained_precision_duration\": \"continuous\", \"power_source\": \"biocell draw\"}",
+  "side_effects": [
+    "Overconfidence in fine motor tasks during the first month as users adapt to tremor-free operation",
+    "Mild proprioceptive dissonance when switching between the cyberlimb and any remaining organic limb",
+    "Occasional algorithm dropout under strong electromagnetic interference, causing brief uncontrolled micro-movements",
+    "Social anxiety around situations requiring intentional imprecision — handwriting, casual gesture, emotional touch"
+  ],
+  "cultural_context": "Among Meridian 88's medical and technical professional class, a Sable arm is recognized instantly by its slim profile and matte chrome finish — it's a credential worn on the body. Demolitions technicians call it 'the license to live' because a steady hand on a detonator is the difference between a controlled job and a crater.",
+  "known_users": [
+    "Microsurgeons and reconstructive specialists in Tier 4-5 hospitals",
+    "Bomb disposal and demolitions technicians",
+    "High-end watchmakers and precision instrument craftspeople",
+    "Neurosurgical residents seeking competitive advantage in placement",
+    "Forgers and counterfeit document specialists operating in Tier 2-3 gray markets"
+  ],
+  "story_hooks": [
+    "A renowned surgeon's Sable arm is behaving erratically during operations — someone has pushed a corrupted firmware update through the CHROMEWORKS subscription service",
+    "A demolitions tech with a Sable arm is found dead at a job site, arm missing — whoever took it needed sub-millimeter precision for something that couldn't wait for procurement",
+    "A black-market Sable clone is circulating with a hidden data-capture layer that records everything the user touches and transmits it to an unknown receiver"
+  ],
+  "street_price": "Φ38,000",
+  "licensed_price": "Φ72,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "precision",
+    "full_arm",
+    "surgical",
+    "chromeworks",
+    "licensed",
+    "sub_millimeter",
+    "professional",
+    "tremor_suppression",
+    "arm"
+  ],
+  "parent_corponation": ""
+}

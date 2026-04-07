@@ -1,0 +1,49 @@
+{
+  "id": "f8de71747df344c76a43ae5844b9887c",
+  "name": "Street Custom 'Nail Biter' Pipe Pistol",
+  "type": "weapon",
+  "aliases": [
+    "Nail Biter",
+    "Shelf Special",
+    "Zip Gun",
+    "Crack Pipe"
+  ],
+  "category": "improvised firearm",
+  "description": "A single-shot pistol made from a short length of steel pipe, a nail for a firing pin, and a rubber-band-powered striker mechanism. The Nail Biter fires a single .22 or .25 caliber round from a barrel that may or may not be straight, through a chamber that may or may not seal properly, using a firing pin that may or may not strike the primer centered. The weapon represents the absolute minimum viable firearm — the least amount of material and engineering required to make a thing that shoots a bullet.\n\nNail Biters are the most common weapon in the Shelf, produced in quantities that no tracking system can quantify. The materials cost less than Φ5, the assembly requires no tools beyond a file and pliers, and the instructions have been passed through the community for generations. Every teenager in the Shelf knows how to build one. Most of them have built one. The quality varies from functional to suicidal — some Nail Biters will fire reliably for fifty rounds, while others will blow apart on the first shot.\n\nThe weapon's single-round capacity is its defining tactical limitation and its cultural significance. A Nail Biter gives you one shot. One chance to solve whatever problem requires a bullet. This makes every trigger pull a deliberate choice — you can't spray and pray with a weapon that needs to be reloaded by unscrewing the barrel and inserting another round. Nail Biter violence in the Shelf is almost always intentional, personal, and close-range.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Illegal — improvised firearm",
+  "street_price": "Φ5-20 (materials cost)",
+  "base_technologies": [
+    "Pipe-barrel construction",
+    "Nail firing pin",
+    "Rubber-band striker mechanism"
+  ],
+  "specifications": "caliber: .22 LR or .25 ACP\ncapacity: 1 round\neffective range: 3-5 meters (generous)\nbarrel length: 60-100mm\nweight: 100-200g\nreliability: 60-80% depending on construction\nreload: Unscrew barrel, insert round, reassemble",
+  "tactical_use": "Contact-range self-defense and personal violence. The Nail Biter is not a combat weapon — it is a tool for a single, specific, close-range act. Users point it at someone within arm's reach and fire, hoping the mechanism functions as intended.",
+  "cultural_context": "The Nail Biter is the Shelf's universal equalizer. It doesn't matter how poor you are — you can build one. It doesn't matter how weak you are — it fires the same bullet. The weapon's ubiquity has created a social dynamic where every interaction in the lowest tiers carries the theoretical possibility that the other person has a pipe gun in their pocket. This mutual deterrence is crude but functional.",
+  "known_users": [
+    "Shelf residents (widespread)",
+    "Anyone who can find a pipe and a nail",
+    "Juveniles and first-time weapon carriers"
+  ],
+  "story_hooks": [
+    "A corporate executive was killed by a .22 round from a Nail Biter — a Φ5 weapon defeating Φ50,000 worth of personal security. The shooter walked up during a public appearance, fired once, and disappeared into the crowd. The investigation has no leads because the weapon was discarded and is indistinguishable from plumbing.",
+    "A Shelf school has confiscated 40 Nail Biters from students in a single semester. The children aren't building them for violence — they're building them for protection against the violence that follows them to school."
+  ],
+  "ammunition_type": [
+    "22_lr"
+  ],
+  "tags": [
+    "improvised",
+    "weapon",
+    "pipe gun",
+    "shelf",
+    "street",
+    "poverty",
+    "firearm",
+    "tier 1",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "f4a60b3e8d1c7529f4a6b0e3d8c17295",
+  "name": "Nkemdirim & Soh Hazard Overcoat",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "A knee-length overcoat built around a chemical-resistant outer layer — not full hazmat, but enough to handle the aerosolized particulates, industrial runoff mist, and low-grade toxin exposure that is daily life near the Shelf's eastern industrial zones. The outer shell is a laminated barrier fabric in pale grey that can be wiped clean. The collar and cuffs seal with adjustable closures. A particulate filter hood tucks into the collar and deploys quickly. It looks like a slightly utilitarian overcoat until you notice the seal points.\n\nNkemdirim & Soh is a Shelf-based operation — two engineers who lost family to industrial exposure and built a business out of the need they saw every day. Their overcoat is not cheap for Tier 1, but community health organizations buy them in bulk and resell at subsidy. The coat has no tech, but the materials science is serious. It won't protect against a chemical weapon, but it will protect against the slow-kill reality of breathing near the processing yards.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "laminated barrier fabric",
+    "chemical-resistant outer shell",
+    "sealed cuffs and collar",
+    "deployable particulate hood"
+  ],
+  "functionality": "",
+  "what_it_says": "You live or work near the toxic zones and you take your survival seriously. This is practical armor against a slow death.",
+  "worn_by": [
+    "Shelf residents near industrial zones",
+    "environmental workers",
+    "community health volunteers",
+    "scavengers",
+    "activists documenting pollution sites"
+  ],
+  "manufacturer": "Nkemdirim & Soh Safety Apparel",
+  "price_range": "Φ55",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Nkemdirim & Soh recently discovered their proprietary barrier fabric is being counterfeited with inferior material — people who think they're protected aren't",
+    "A corponation is quietly trying to shut down the company through regulatory harassment, and the founders need help understanding why",
+    "A journalist wants to wear one of these into a restricted industrial zone to document conditions — and needs someone to get them close enough"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "tier 1",
+    "hazmat overcoat",
+    "chemical resistant",
+    "no-tech",
+    "shelf",
+    "independent brand",
+    "protective",
+    "social justice"
+  ],
+  "parent_corponation": ""
+}

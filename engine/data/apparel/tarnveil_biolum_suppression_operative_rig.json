@@ -1,0 +1,53 @@
+{
+  "id": "e2b6d0f4a1c873059d4e7a2b8f3c1d65",
+  "name": "Tarnveil Biolum Suppression Operative Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Designed explicitly for runners carrying bioluminescent geneware — the subdermal glow, luminous patterning, or light-emitting scales that are fashionable in 2200 but catastrophically conspicuous on a night job. The outer shell is a long-line field jacket in deep tarnished olive, woven with a light-suppression microfibre layer that mutes bioluminescent bleed-through by approximately seventy percent — enough to render a glowing runner dark at practical distances in low light. The jacket is fitted but not tight, falling to upper-thigh, with a pronounced collar that folds up to cover jaw and neck-line bioluminescence. Full-length sleeves have interior biolum-suppression lining as well. The jacket's exterior is matte-finished and treated to resist acid-rain sheeting — a practical nod to Shelf and Circuit-border work. Beneath it, a compression undershirt in the same suppression microfibre handles residual glow from the torso and arms. Trousers are in dark umber cargo-cut with suppression lining in the lower leg panels, plus four concealed pockets accessed through false seam breaks and two thigh-mounted holster channels. The cut is wide enough through the hip and seat to accommodate scaled or furred lower-body geneware without binding. Footwear is a mid-calf boot in matte black synthetic leather with a wrapped ankle cuff that can be extended to knee height for wet terrain, biolum-suppression lining on the inner shaft. A pair of thin suppression gloves in matching olive is stored in the inside chest pocket, extending coverage to the hands. The complete set, worn and closed, reduces visible bioluminescence to near zero in practical field conditions.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "tarnished olive biolum-suppression microfibre outer shell",
+    "acid-rain treated exterior finish",
+    "compression undershirt suppression microfibre",
+    "dark umber cargo trouser fabric",
+    "suppression-lined lower leg panels",
+    "matte black synthetic leather boot",
+    "extendable ankle-to-knee boot cuff",
+    "suppression microfibre inner boot lining",
+    "suppression gloves (olive microfibre)"
+  ],
+  "functionality": "Approximately 70% bioluminescence muting at practical field distances; acid-rain exterior treatment; full-body coverage system (jacket, undershirt, trousers, boots, gloves); fold-up collar for jaw and neck biolum coverage; concealed false-seam pockets (four in trousers); bilateral thigh holster channels; wide hip-and-seat cut for scaled or furred geneware; extendable boot cuff for wet terrain",
+  "what_it_says": "This runner has geneware they're proud of — on their own time. On the job, they're disciplined enough to cover it entirely. The tarnished olive reads as practical and slightly military without crossing into costume. Anyone in the runner community who recognizes the suppression microfibre fabric texture knows exactly what this person is and what they're carrying underneath.",
+  "worn_by": [
+    "bioluminescent geneware runners",
+    "scaled or furred geneware operatives",
+    "night-work specialists",
+    "runners who maintain separate street and job identities",
+    "operatives working Shelf or Circuit-border low-light environments"
+  ],
+  "manufacturer": "Tarnveil Systems — specialist street label, niche reputation among geneware-heavy runner communities",
+  "price_range": "Φ 780 – Φ 1,150",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The suppression microfibre degrades after prolonged acid-rain exposure — a runner's bioluminescent scales start bleeding through the jacket mid-job on a wet Circuit-border rooftop, making them a visible target.",
+    "A contact who's never met the runner in person only knows them by their bioluminescent patterning — the runner shows up in full Tarnveil suppression and the contact refuses to confirm identity, stalling the handoff.",
+    "The suppression gloves are one size too small for a runner with scaled hands from geneware, and removing them mid-job to operate delicate equipment lights up their hands like a beacon in the dark corridor."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier 2",
+    "tier 3",
+    "gene_compatible",
+    "biolum_suppression",
+    "geneware_specialist",
+    "night_ops",
+    "acid_resistant",
+    "holster_integrated",
+    "hidden_pockets",
+    "tarnveil_systems"
+  ],
+  "parent_corponation": ""
+}

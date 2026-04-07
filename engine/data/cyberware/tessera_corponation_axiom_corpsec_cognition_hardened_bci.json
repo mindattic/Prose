@@ -1,0 +1,61 @@
+{
+  "id": "c5b2a8e3f1d7049b6e3c8a2f5d1b7e40",
+  "name": "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+  "brand_name": "TESSERA CORPONATION",
+  "product_name": "Axiom CorpSec Cognition Hardened BCI",
+  "type": "cyberware",
+  "aliases": [
+    "The Axiom",
+    "Tessera Lock",
+    "Corp Brain",
+    "Loyalty Chip",
+    "The Warden"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The Tessera Corponation Axiom is an enterprise-grade, security-hardened BCI platform developed for deployment across Tessera's own CorpSec divisions and licensed to qualified corporate security operators throughout Meridian 88. The implant integrates a multi-layer cognitive security architecture featuring real-time intrusion detection, memory compartmentalization, and a passive psychological baseline monitoring system that flags deviations consistent with coercion, compromise, or unauthorized information extraction attempts. The core hardware includes a 256-channel cortical mesh with dedicated security co-processors running Tessera's proprietary IronMind OS — a closed-architecture neural operating system with no external debugging interface and rolling 48-hour encryption key cycling. The compartmentalization engine partitions operationally sensitive memories into cryptographically isolated neural vaults accessible only under authenticated conditions, preventing extraction via standard neural interrogation hardware. An onboard threat-detection module cross-references behavioral biometrics — stress hormone proxies, micro-expression muscle activity, subvocal pattern analysis — against a continuously updated baseline profile, generating silent alerts to a designated handler network when anomalies exceed threshold values.\n\nThe Axiom is issued exclusively to Tessera Corponation's own Tier 3-4 security personnel and sold under strict vetting protocols to allied corporate clients with Tessera-approved security clearance structures. Within Tessera's internal culture, receiving an Axiom implant is a formalized rite of passage for operatives advancing to sensitive operations roles — the installation ceremony is treated with deliberate solemnity, and the implant's loyalty verification functions are openly acknowledged rather than obscured. Critics, including several Meridian 88 civil liberties organizations, argue that the psychological baseline monitoring and handler alert functions constitute continuous warrantless surveillance of employees' mental states, a charge Tessera's legal division has successfully deflected through the Professional Security Exemption clauses of the city's Neural Privacy Statute. Among rival corporate security operators, an operative known to carry an Axiom is treated with a specific mixture of professional respect and wariness — the hardware is excellent, but everyone knows that Tessera's handler network is watching.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3-4",
+  "legality": "Restricted",
+  "installation_requirements": "Tessera-certified installation facility only; full background vetting and corporate security clearance; handler network enrollment prior to installation; 96-hour post-installation isolation and baseline calibration period",
+  "rejection_risk": "Moderate — IronMind OS cortical mesh requires precise placement; elevated rejection risk in individuals with prior BCI implant history due to scar tissue interference; psychological adaptation stress classified as expected and non-pathological by Tessera medical staff",
+  "maintenance": "48-hour encryption key auto-cycling (automated); quarterly IronMind OS security patch installation by Tessera technician; annual full-system audit required to maintain active clearance status; handler network re-enrollment on role change",
+  "specifications": "{\"cortical_mesh_channels\": 256, \"operating_system\": \"IronMind OS, closed-architecture, no external debug interface\", \"encryption\": \"Rolling 48-hour key cycling, AES-512 equivalent\", \"memory_compartmentalization\": \"Cryptographic neural vault isolation, authentication-gated access\", \"intrusion_detection\": \"Passive real-time monitoring, unauthorized extraction attempt flagging\", \"psychological_baseline_monitoring\": \"Behavioral biometrics — stress proxies, micro-expression, subvocal pattern\", \"handler_alert_system\": \"Silent encrypted uplink to designated handler network\", \"threat_threshold_tuning\": \"Handler-adjustable sensitivity parameters\", \"power_source\": \"Passive inductive charging, 96-hour operational reserve\", \"dimensions\": \"Triple-lobe cranial array, 14mm x 10mm per lobe\", \"weight\": \"6.3g total\"}",
+  "side_effects": [
+    "Compartmentalization bleed — operatives occasionally find themselves unable to consciously access compartmentalized memories even when authentication conditions are met, as the neural vault boundaries become over-trained and begin partitioning non-sensitive memories",
+    "Handler awareness syndrome — the knowledge that the implant is continuously transmitting behavioral data to a handler network produces chronic low-grade paranoia and self-monitoring behavior in a significant minority of users",
+    "Baseline drift anxiety — the implant's continuous comparison of current psychological state against baseline creates a feedback loop in some users, where the awareness of being monitored for deviations causes the very stress responses that trigger anomaly flags",
+    "Social authenticity impairment — long-term users report difficulty in non-professional social contexts, as the subvocal and micro-expression monitoring creates a persistent background self-censorship reflex"
+  ],
+  "cultural_context": "The Axiom occupies a specific and contested place in Meridian 88's corporate security culture. Tessera Corponation markets it as 'the architecture of trustworthy operations,' and within Tessera's internal hierarchy, the implant functions as a visible commitment device — an operative with an Axiom has, in a meaningful sense, opened their mind to the organization. This is understood by everyone involved. The loyalty verification and handler monitoring functions are not hidden from recipients; they are presented as features, as evidence of the operative's willingness to be trusted precisely because they can be verified. Outside Tessera, the implant's reputation is more complicated — independent security consultants who encounter Axiom-equipped operatives in the field treat them as simultaneously highly capable and fundamentally compromised, their judgment always potentially filtered through Tessera's handler network.",
+  "known_users": [
+    "Tessera Corponation internal CorpSec operatives at sensitive operations grade",
+    "Allied corporate security divisions operating under Tessera partnership agreements",
+    "High-clearance Tessera intelligence and counterintelligence personnel",
+    "Selected Tier 4 corporate executives in roles with classified operational exposure"
+  ],
+  "story_hooks": [
+    "A Tessera Axiom operative has gone dark — their handler alert system stopped transmitting 36 hours ago, which should be impossible given the hardware's design. Tessera has hired the party to locate the operative, but hasn't told them whether the mission is a rescue, a retrieval, or something else entirely.",
+    "A disgruntled former Tessera operative is selling information about the Axiom's handler network architecture to a rival corporation — but the implant's compartmentalization engine means they can only access the information in fragments, under specific authenticated conditions. The party has been hired to facilitate the data transfer, but someone on the Tessera handler network has noticed the anomaly flags and is already moving.",
+    "An Axiom operative approaches the party privately, off-handler, having found a narrow window in the monitoring protocol. They've discovered evidence of serious crimes being committed by Tessera leadership — but every attempt to act on it triggers baseline deviation flags. They need help extracting the evidence in a way that doesn't register as an anomaly before Tessera's handler network shuts them down."
+  ],
+  "street_price": "Φ22,000",
+  "licensed_price": "Φ45,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "professional-grade",
+    "security-hardened",
+    "corpsec",
+    "tessera-corponation",
+    "loyalty-verification",
+    "intrusion-detection",
+    "memory-compartmentalization",
+    "restricted",
+    "tier-3",
+    "tier-4",
+    "corporate",
+    "professional"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

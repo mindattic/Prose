@@ -1,0 +1,47 @@
+{
+  "id": "900ece95a0108bfccc6d9c26ff4fae81",
+  "name": "Tessera TKR-SL 'Inquisitor'",
+  "type": "weapon",
+  "aliases": [
+    "Inquisitor",
+    "TKR-SL",
+    "The Smart Wheel"
+  ],
+  "category": "revolver",
+  "description": "The Tessera TKR-SL is a six-shot double-action revolver chambered in .357 Magnum with BCI smart-link integration and Tessera's full biometric authentication suite. The weapon represents Tessera's entry into the smart-linked revolver market — a direct competitor to the Arcturus Warden that emphasizes Tessera's ecosystem integration over Arcturus's raw performance.\n\nThe Inquisitor's smart-link system is tightly integrated with Tessera's corporate security network. In addition to standard ballistic overlay and round-count tracking, the weapon feeds firing data — including time, location, direction, and target information — directly to Tessera's security monitoring infrastructure in real time. Every shot fired by an Inquisitor is logged, time-stamped, geo-tagged, and archived. Tessera markets this as 'accountability assurance.' Critics call it surveillance.\n\nThe technical performance is excellent — Tessera's BCI protocols are mature and the .357 Magnum platform is proven. The Inquisitor shoots well, handles well, and integrates seamlessly with Tessera's broader security systems. The question isn't whether it works, but whether the operator is comfortable knowing that every trigger pull is being watched, recorded, and analyzed by their employer.",
+  "manufacturer": "Tessera Behavioral Exchange",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — BCI registration and corponation security clearance required",
+  "base_technologies": [
+    "BCI smart-link",
+    "Biometric authentication",
+    "Real-time firing data telemetry",
+    "Corporate security network integration"
+  ],
+  "specifications": "caliber: .357 Magnum\neffective_range: 55 meters (smart-linked)\nrate_of_fire: Double-action revolver\nmagazine_capacity: 6 rounds (cylinder)\nweight: 1.08 kg\nBCI_latency: <8ms",
+  "tactical_use": "A smart-linked revolver with full corporate security integration. The BCI overlay provides targeting assistance and round-count tracking. Real-time firing telemetry provides command-level awareness of every discharge. The .357 Magnum platform offers reliable stopping power. The biometric lock prevents unauthorized use. Best suited for corponation security operations where individual accountability and oversight are priorities.",
+  "cultural_context": "The Inquisitor crystallizes the tension between capability and control that defines Tessera's relationship with its employees. The weapon makes its carrier more effective while simultaneously making their every action transparent to the corporation. Among Tessera security personnel, accepting an Inquisitor assignment is understood as accepting a higher level of scrutiny in exchange for superior equipment.",
+  "known_users": [
+    "Tessera senior security operatives",
+    "Tessera high-oversight assignments",
+    "Tessera internal affairs investigators"
+  ],
+  "story_hooks": [
+    "An Inquisitor's telemetry data contradicts the shooter's account of a lethal incident — the weapon says it fired north, the shooter says they fired south. Either the weapon or the shooter is lying, and the implications of each possibility are different but equally disturbing.",
+    "A Tessera operative discovers that the Inquisitor's telemetry has been broadcasting to a second, unauthorized receiver. Someone outside Tessera knows every shot every Inquisitor has ever fired."
+  ],
+  "ammunition_type": [
+    ".357 Magnum"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "smart_link",
+    "BCI",
+    "tessera",
+    "surveillance",
+    "corporate",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

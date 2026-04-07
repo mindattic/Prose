@@ -1,0 +1,51 @@
+{
+  "id": "d4a0f3c7b2e619587e4c2d8a0f5b3c71",
+  "name": "Hookline Independent Freight Hauler Street Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "An independent freight hauler's kit — not corporate-issued, assembled piece by piece from what works. The outermost layer is a faded charcoal-brown canvas work jacket, well past its original color, with a hand-applied Hookline patch on the back — a fish hook through a circuit board, the unofficial emblem of M88's independent hauler collective. Pockets are everywhere: two chest, two hip, two internal, and a long vertical map pocket on the left inner lining. The collar has been modified with a strip of orange retroreflective tape added by the wearer, a common self-modification among non-affiliated haulers who need hi-vis compliance without corporate markings. Beneath the jacket is a dark green thermal henley, thick-seamed and pill-resistant, tucked into wide-leg cargo trousers in a dark slate synth-canvas with reinforced seat panels, a gusseted crotch, and a full-circumference adjustable waistband with a removable belt that holds two tool loops and a snap-clip ring. The cuffs of the trousers are tucked into mid-calf lace-up boots in worn brown synthetic leather with steel toe caps and oil-resistant soles. A knit wool-blend beanie in dark olive, often pulled back to expose the neural port behind the left ear, completes the look. Everything fits like it's been worn in over years.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "canvas work jacket (weathered synth-canvas)",
+    "retroreflective orange tape (self-applied)",
+    "thick-seam thermal synth-wool henley",
+    "slate synth-canvas cargo trousers",
+    "reinforced seat panels",
+    "synthetic leather mid-calf boot",
+    "oil-resistant rubber outsole",
+    "wool-blend knit beanie"
+  ],
+  "functionality": "High pocket count for independent hauler tool and document storage, removable belt with tool loops and snap-clip ring, neural port clearance via beanie positioning, retrofitted hi-vis compliance tape, oil-resistant steel-toe footwear, gusseted trousers for full range of motion in loading and climbing contexts.",
+  "what_it_says": "You work for yourself and that means you work twice as hard for half the guarantee. The Hookline patch isn't a brand — it's a signal to other independents that you're not Stratum, not Sable Freight, not anyone's property. You've got your own route and your own contacts and you'd like to keep both. Scrappy. Self-sufficient. Quietly networked.",
+  "worn_by": [
+    "independent freight haulers",
+    "unlicensed courier runners",
+    "Hookline collective members",
+    "gray-market transport operators",
+    "circuit-tier gig workers moving cargo off the books"
+  ],
+  "manufacturer": "Self-assembled; jacket from Slagside surplus, trousers from Ironpass off-cuts, boots from Morrow & Sons, Hookline patch handmade or sourced through the collective",
+  "price_range": "Φ250–Φ380 (accumulated over time; not purchased as a set)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The Hookline patch on a hauler's jacket is actually a coded signal — the specific placement and thread color indicate what cargo the wearer is currently moving and whether they're available for a side contract.",
+    "An independent hauler in this kit knows every unofficial loading bay and back-channel entry point in a district the players need to access quietly — but they want something moved in return.",
+    "A hauler has gone missing on a routine run. Their kit has shown up in a pawn market on Circuit level — everything intact, neural port access beanie still folded inside the jacket pocket."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "independent_hauler",
+    "freight",
+    "self_assembled",
+    "hookline_collective",
+    "hi_vis",
+    "aug_compatible",
+    "underground_cachet",
+    "street_label"
+  ],
+  "parent_corponation": ""
+}

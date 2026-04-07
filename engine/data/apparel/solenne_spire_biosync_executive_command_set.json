@@ -1,0 +1,51 @@
+{
+  "id": "c5e8a1f3d027b94c6e2f8a5d1c3b7e09",
+  "name": "Solenne Spire Biosync Executive Command Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Tier 5 power dressed so quietly that it takes a trained eye to understand what they're seeing. The jacket is bespoke Solenne Atelier — a double-breasted cut in 'eclipse wool,' a material that does not exist in any retail catalog, woven from a proprietary nano-filament blend that actively regulates body temperature within a 0.3-degree tolerance, stiffens slightly at the shoulders when the wearer adopts a dominant posture, and softens at the chest when seated to prevent any visible fabric pull. The color is described internally by Solenne as 'depth-black' — it absorbs ambient light slightly more than standard black fabric, making the wearer appear to occupy slightly more visual space than they physically do. The lapels are peak-cut, wide and sharp, with no visible stitching. No corponation logo appears anywhere on the exterior. Inside the left breast is a privacy-fabric panel that blocks bioscan and thermal imaging — a Tier 5 courtesy, ensuring no meeting-room scanner can read the wearer's heart rate during negotiations. The trousers are cut with a full, authoritative drape and a gene-compatible rear ventilation panel that accommodates a tail-geneware modification with a clean, tailored slit finished in matching eclipse wool binding. Footwear is the Vantrel Bespoke Biosync Oxford, which adapts its fit in real time.\n\nThe shirt beneath is silk-analog in warm ivory, with a mandarin collar and no visible closures — it seals via embedded micro-magnets aligned to the wearer's specific measurements. A single piece of jewelry: a wide cuff of brushed dark chrome on the right wrist that functions as a BCI secondary interface node, styled to look purely ornamental. The outfit breathes, adjusts, monitors, and protects. It costs more than most Tier 3 workers earn in three years, and it shows only to people who know what to look for.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "Solenne eclipse wool nano-filament blend",
+    "posture-active shoulder stiffening matrix",
+    "privacy-fabric bioscan-blocking panel",
+    "silk-analog ivory microweave",
+    "micro-magnet closure system",
+    "eclipse wool gene-compatible binding",
+    "brushed dark chrome BCI interface cuff"
+  ],
+  "functionality": "Active temperature regulation within 0.3-degree tolerance. Posture-enhancing shoulder matrix that stiffens under power stances. Privacy-fabric bioscan and thermal-imaging block in chest panel. Micro-magnet closures sized to wearer's exact measurements. Gene-compatible tail-vent in rear trouser panel. BCI secondary interface node integrated into wrist cuff. Adaptive oxford footwear synced to gait.",
+  "what_it_says": "This person does not need to signal status — they ARE status. The absence of logos, the silence of the technology, the perfect drape that never pulls: this is a suit that has been told what the wearer needs and has complied. Wearing this in a room of Tier 3 and 4 workers creates a gravitational effect that has nothing to do with loudness.",
+  "worn_by": [
+    "Corponation C-suite executives",
+    "Tier 5 power brokers",
+    "senior governance board members",
+    "Spire-resident old money",
+    "senior diplomatic liaisons representing sovereign corponations"
+  ],
+  "manufacturer": "Solenne Atelier (bespoke Tier 5 house, appointment only, no public storefront)",
+  "price_range": "Φ 48,000–Φ 120,000+ (bespoke, single commission)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A character wearing a stolen or borrowed version of this suit enters a Tier 5 space — the biosync oxford begins adapting to the wrong gait profile and the posture matrix stiffens at the wrong moments, subtly marking the wearer as out of place to anyone who knows what to look for.",
+    "The privacy-fabric bioscan block triggers a Vantablack security protocol during a building sweep — the wearer becomes the only person in the room whose vitals cannot be confirmed, which is either their intention or a catastrophic accident.",
+    "A Tier 3 analyst is tasked with dry-cleaning this suit after a Tier 5 executive leaves it behind — the privacy panel reacts to the cleaning machine's scanner array and locks the jacket's micro-magnet closures permanently shut, trapping something inside."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_5",
+    "executive",
+    "bespoke",
+    "biosync",
+    "aug_compatible",
+    "gene_compatible",
+    "solenne",
+    "power_dressing",
+    "privacy_fabric",
+    "spire"
+  ],
+  "parent_corponation": ""
+}

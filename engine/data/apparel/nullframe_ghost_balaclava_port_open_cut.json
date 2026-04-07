@@ -1,0 +1,45 @@
+{
+  "id": "e592a7f3d14b6c08af37e92b10d4c651",
+  "name": "Nullframe Ghost Balaclava — Port-Open Cut",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A close-fit balaclava in matte signal-absorbing charcoal stretch-knit, leaving only the eyes exposed. Precision-cut port access panels at the occipital and temporal positions are finished with flat-lock seams and sit flush when unoccupied — no sagging or bunching. A secondary half-face filter layer is integral, not removable. The fabric has a faint crosshatch texture visible only at close range.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "signal-absorbing stretch-knit nylon",
+    "flat-lock reinforced port panels",
+    "integrated N99 filter membrane",
+    "low-emissivity inner lining"
+  ],
+  "functionality": "Neural-port access panels allow BCI plug-in without removal. Low-emissivity lining reduces thermal signature slightly. Integrated filter handles particulate and light chemical exposure. Fits snugly under helmets or hoods without bunching.",
+  "what_it_says": "You move through spaces where being seen is a liability, and your chrome is not decorative.",
+  "worn_by": [
+    "corporate field operatives",
+    "private security",
+    "augmented couriers",
+    "off-book specialists",
+    "Tier 3 night workers with BCI rigs"
+  ],
+  "manufacturer": "Nullframe (street label, Circuit district origin)",
+  "price_range": "Φ95–Φ140",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Nullframe's port-open panels are cut to a spec that matches Axiom Defense neural jack placements exactly — either a coincidence or someone inside Axiom fed the pattern to a street label.",
+    "A Tier 4 compliance officer was found wearing one during an internal audit — the footage shows her plugging into a terminal she had no clearance for.",
+    "Three different operatives from competing firms showed up to the same location wearing identical Nullframe balaclavas on the same night. None of them know how that happened."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "balaclava",
+    "aug-compatible",
+    "neural-port",
+    "stealth",
+    "tier-3",
+    "tier-4",
+    "filter",
+    "operative"
+  ],
+  "parent_corponation": ""
+}

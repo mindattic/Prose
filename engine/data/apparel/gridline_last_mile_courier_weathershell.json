@@ -1,0 +1,35 @@
+{
+  "name": "Gridline Last-Mile Courier Weathershell",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "delivery_and_logistics",
+  "manufacturer": "Gridline Logistics Solutions",
+  "description": "Issued to Gridline couriers operating across all weather conditions in M88's layered urban environment, this weathershell jacket does the heavy lifting of keeping drivers functional during twelve-hour shifts in rain, industrial particulate, and temperature swings across the city's climate-uneven districts. The outer shell is a seam-sealed ripstop with a hydrophobic coating that sheds water and light chemical spray. GPS antenna filaments are woven into the left sleeve, feeding route data directly to a wrist-mounted display or BCI interface. High-visibility orange panels at the shoulders and lower back are retroreflective. A rear hem vent accommodates tail modifications. The Gridline logo and courier ID number are printed on the back in weatherproof ink that remains scannable after heavy wear.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ130",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "Gridline couriers are the circulatory system of M88's middle tiers — present everywhere, noticed by almost no one. The weathershell is practical enough that off-market versions are popular with people who need to move through the city without drawing attention. The courier ID on the back makes real Gridline shells risky to wear off-shift in some contexts.",
+  "story_hooks": [
+    "A Gridline courier's GPS log shows they made a delivery to a location that officially doesn't exist — and they disappeared the same shift.",
+    "Someone is running a shadow courier network using stolen Gridline weathershells, exploiting the scanner-readable ID system to pass through corporate checkpoints.",
+    "The GPS filaments in a specific batch of weathershells have been compromised to transmit courier locations to a third party in real time."
+  ],
+  "tags": [
+    "gridline",
+    "courier",
+    "delivery",
+    "logistics",
+    "weathershell",
+    "gps_integrated",
+    "augment_compatible",
+    "geneware_compatible",
+    "high_vis",
+    "tier2",
+    "tier3"
+  ],
+  "id": "eb1e3db50b88457087a94ed10e2dcca1",
+  "parent_corponation": ""
+}

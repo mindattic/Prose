@@ -1,0 +1,54 @@
+{
+  "id": "b7ee456672ce18f2a7de873655617459",
+  "name": "Axiom Kinetics AK-Drill 'Hellweek'",
+  "type": "automaton",
+  "classification": "Training",
+  "aliases": [
+    "Hellweek",
+    "The Drill",
+    "Axiom Nightmare"
+  ],
+  "manufacturer": "AXIOM KINETICS",
+  "description": "The AK-Drill is a military-grade physical conditioning automaton designed to push human bodies to their absolute limits. It is used by special forces selection programs worldwide as an objective, untiring, and emotionally immune alternative to human drill instructors. The machine is a squat, powerful unit on tracked treads that can keep pace with running soldiers across any terrain, barking orders through a speaker array loud enough to be heard over gunfire and windstorms. It does not encourage. It does not sympathize. It assesses and demands.\n\nHellweek's programming is based on the physiological data of tens of thousands of military selection candidates. It knows, with statistical precision, exactly how hard it can push a human body before permanent damage occurs — and it pushes to exactly that line. Heart rate, blood oxygen, cortisol levels, gait analysis, pupil dilation — the machine monitors over forty biometric indicators in real time and adjusts its demands to keep each individual at their personal maximum sustainable output. Candidates who can be pushed harder are pushed harder. Those approaching genuine medical risk are quietly scaled back — though the machine never tells them this, because the psychological belief that one is about to break is part of the training.\n\nThe machine's most controversial feature is its psychological pressure system. Hellweek is programmed to identify and exploit individual psychological vulnerabilities — not to cause harm, but to build resilience. It learns what breaks each person and applies that pressure systematically, teaching them to function under the specific type of stress they're worst at handling. Military psychologists designed the system. Military psychologists also have the highest refusal rate when asked to observe it in operation.",
+  "tier_availability": "Tier 3",
+  "legality": "Military/institutional restricted",
+  "autonomy_level": "Autonomous — independently manages training intensity and psychological pressure",
+  "dimensions": "1.5m height, 1.2m width, tracked chassis",
+  "weight": "350 kg",
+  "power_source": "Diesel-electric, 72-hour continuous operation",
+  "locomotion": "Tracked, all-terrain, can pace running humans across rough ground",
+  "armament": [
+    "Water cannon (non-lethal, used for stress inoculation)",
+    "Noise generators",
+    "Strobe systems"
+  ],
+  "sensors": [
+    "Long-range biometric monitoring (multiple subjects simultaneously)",
+    "Environmental assessment (weather, terrain, hazards)",
+    "Individual psychological profile tracking",
+    "Voice stress analysis"
+  ],
+  "countermeasures": "Medical override can be triggered by supervising officer or automated medical alert system. The machine will not push a subject into cardiac arrest, organ failure, or permanent musculoskeletal damage — though it will push them close enough that the distinction feels academic.",
+  "known_deployments": [
+    "Special forces selection courses (multiple nations)",
+    "Corporate executive protection academies",
+    "Extreme fitness competitions (observer/pacer)",
+    "Rumored use in enhanced interrogation programs"
+  ],
+  "story_hooks": [
+    "A character is going through a private security selection course that uses a Hellweek unit. The machine has identified something in the character's psychological profile that the character has been hiding from everyone — and it is methodically pressuring that exact vulnerability.",
+    "A Hellweek unit has been stolen and reprogrammed by a cult leader who uses it to break down recruits' psychological resistance before indoctrination. Survivors describe the experience as the worst week of their lives."
+  ],
+  "cultural_context": "Hellweek is spoken of in military circles with the same mix of respect and dread reserved for legendary drill instructors. Surviving an AK-Drill selection is a credential that opens doors in the private military world. The phrase 'Hellweek certified' on a resume means something specific and serious.",
+  "tags": [
+    "automaton",
+    "training",
+    "military",
+    "conditioning",
+    "psychological",
+    "axiom",
+    "selection",
+    "endurance"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,48 @@
+{
+  "id": "e04d7b3a1f528c96ad71e203bc940f58",
+  "name": "Ashwall Broker's Complete Underworld Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A fixer's full look built for rooms where everyone is armed: charcoal-grey structured longcoat in water-resistant silk-analog over a collarless black tunic and slim charcoal trousers with concealed thigh channels for chrome leg rigs. Soft leather-analog ankle boots with silent soles. Hands bare or gloved in Ashwall's signature grip-null secondskin. A low-profile neural port cover sits flush at the temple — polished gunmetal, not hidden, just understated. No insignia. No brand marks visible.\n\nEvery seam is hand-finished. The coat's inner lining contains eight concealed pockets, two of which are signal-shielded for device storage. Tail slit runs the full back length of the coat.",
+  "tier_association": "Tier 2-4",
+  "materials": [
+    "water-resistant silk-analog",
+    "grip-null secondskin leather-analog",
+    "signal-shielded pocket lining",
+    "reinforced tunic weave",
+    "silent-sole boot composite"
+  ],
+  "functionality": "Eight inner concealed pockets (two signal-shielded), chrome leg channel seams, tail slit, silent-sole boots, flush neural port cover, no visible brand identification.",
+  "what_it_says": "Whoever this is, they operate in spaces that don't officially exist — and they've been doing it long enough to afford good clothes.",
+  "worn_by": [
+    "fixers",
+    "info brokers",
+    "underworld intermediaries",
+    "black market facilitators",
+    "burned corporate agents gone independent"
+  ],
+  "manufacturer": "Ashwall",
+  "price_range": "Φ 1,400 – Φ 2,600",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "One of the signal-shielded pockets contains a device that hasn't been powered on in three years — and someone very dangerous wants to know why it went dark.",
+    "The coat was tailored for someone else; the original owner's name is stitched in faded thread inside the collar, half-unpicked.",
+    "A Tier 5 exec keeps requesting meetings with whoever wears this coat, through intermediaries, always anonymously."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld",
+    "fixer",
+    "concealment",
+    "aug_compatible",
+    "gene_compatible",
+    "full_kit",
+    "tier2",
+    "tier3",
+    "tier4",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "b7d3e0a5c8f1246b9e4d0c7f2a5b3e81",
+  "name": "Dockside IsoKnit Cryo-Handler Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Bulky mid-forearm gloves in a dense recycled-wool outer shell over a closed-cell neoprene insulation layer, then a vapor-barrier liner in silver mylar. The exterior is a salt-stained cream-grey with orange reflective stripe at the cuff. Built for cold-chain dock work in the Lake Meridian corridor — sustained sub-zero handling of cryo-containers and refrigerated freight.\n\nThe right glove features a cutaway thumb and index for scanner-pad operation without full removal. Wrist strap is adjustable and rated for tether-clip attachment. Chrome-arm users get an extended cuff with a ratchet closure that seals over prosthetic wrist housings.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "recycled wool outer shell",
+    "closed-cell neoprene insulation",
+    "silver mylar vapor-barrier liner",
+    "reflective orange cuff stripe",
+    "ratchet closure hardware"
+  ],
+  "functionality": "Rated to -40°C sustained contact. Vapor-barrier liner prevents moisture ingress from cryo-containers. Cutaway right thumb and index allow scanner-pad operation. Chrome-arm extended cuff with ratchet closure seals over prosthetic wrist housings. Tether-clip wrist strap rated to 80kg load.",
+  "what_it_says": "Cold-dock labor — unglamorous, essential, and hard on the body whether you've still got both original hands or not.",
+  "worn_by": [
+    "cold-chain dock workers",
+    "freight handlers",
+    "cryo-storage technicians",
+    "Lake Meridian port crews"
+  ],
+  "manufacturer": "Dockside Supply Co.",
+  "price_range": "Φ22–Φ48",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A cryo-container flagged as machine parts contains something biological — and the dock worker who handled it is now running a fever no med-patch can identify.",
+    "The ratchet cuff design was copied from a military cold-weather augment spec without licensing; a corponation legal team has arrived at the docks.",
+    "A veteran dock worker with two chrome arms has worn the same pair for six years — the mylar liner has a hand-drawn map of the port's blind spots on the inside."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "cold weather",
+    "environmental",
+    "industrial",
+    "work gloves",
+    "aug-compatible",
+    "tier-1",
+    "tier-2",
+    "Dockside"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "e4393c09733d80fb41641b9a68275e52",
+  "name": "Carrion Defense Works AMR-3 'Gravedigger'",
+  "type": "weapon",
+  "aliases": [
+    "Gravedigger",
+    "Bunker Buster",
+    "Deep Sleeper"
+  ],
+  "category": "anti-materiel rifle",
+  "description": "A bolt-action anti-materiel rifle chambered in 12.7mm with a uniquely long 1,200mm barrel designed for extreme-range precision — the Gravedigger sacrifices rate of fire and portability for accuracy that borders on surgical at distances exceeding 2,500 meters. The weapon uses a free-floating barrel with harmonic dampening, a precision-machined bolt with zero vertical play, and match-grade ammunition hand-loaded to individual weapon specifications. Each Gravedigger is test-fired at the factory and ships with a ballistic profile unique to that specific weapon.\n\nCarrion designed the AMR-3 as a precision anti-materiel tool for engagements where the first shot must hit because there will be no second shot. At 2,500 meters, the round's flight time exceeds 3 seconds — long enough for any aware target to move, any vehicle to reposition, any alert to be sounded. The Gravedigger operator gets one chance, and the weapon is built to ensure that chance is not wasted.\n\nThe Gravedigger's extreme range creates a unique tactical problem for defenders: at 2,500 meters, the shooter is beyond the effective range of almost every weapon system that isn't itself an anti-materiel rifle. Locating the firing position requires specialized counter-sniper assets, and by the time those assets deploy, the Gravedigger operator has disassembled the weapon and vanished. The weapon breaks down into three sections that fit in a standard duffel bag, and an experienced operator can transition from firing to packed in under 90 seconds.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 5",
+  "legality": "Military only — prohibited for any non-military use",
+  "street_price": "Φ65,000 (match-grade ammunition Φ150 per round)",
+  "base_technologies": [
+    "Harmonic-dampened free-float barrel",
+    "Weapon-specific ballistic profiling",
+    "Rapid-disassembly field design"
+  ],
+  "specifications": "caliber: 12.7x108mm match\naction: Bolt-action\nmagazine: 3 rounds\neffective range: 2,500+ meters\nmuzzle velocity: 900 m/s\nbarrel length: 1,200mm\nweight: 16 kg\nlength: 1,900mm (assembled)\ndisassembly time: 90 seconds to field-packed",
+  "tactical_use": "Extreme-range precision anti-materiel and anti-personnel engagement. Each shot is a deliberate action preceded by extensive calculation of windage, elevation, temperature, humidity, and Coriolis effect. The Gravedigger is deployed when the target must be destroyed from a distance that makes attribution functionally impossible.",
+  "cultural_context": "The Gravedigger is a ghost weapon — used from distances where the shooter is invisible, inaudible, and effectively immune to retaliation. In Meridian 88's threat landscape, the Gravedigger represents the ultimate expression of asymmetric violence: one person, one weapon, one shot, from a position so far away that the target never knew they were in danger.",
+  "known_users": [
+    "Military sniper units",
+    "Corporate assassination specialists (Tier 5 contracts)",
+    "Exactly one known freelance operator — callsign 'Sexton'"
+  ],
+  "story_hooks": [
+    "A target was killed at an officially measured distance of 2,847 meters — a shot that required the round to travel for over 4 seconds through urban wind corridors. The ballistic profile matches a Gravedigger, but no known operator has the skill for that shot. Someone new is working.",
+    "Three Gravedigger rifles have been stolen from a military armory. Each weapon's unique ballistic profile is on file, meaning any round fired can be traced to the specific weapon. But the thief also stole the ballistic records, and without them, the weapons are ghosts."
+  ],
+  "ammunition_type": [
+    "12.7mm_match"
+  ],
+  "tags": [
+    "anti-materiel",
+    "weapon",
+    "rifle",
+    "heavy",
+    "precision",
+    "sniper",
+    "carrion",
+    "extreme-range",
+    "tier 5",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "7e2a4c9f0b3d1857e2a4c9f0b3d18574",
+  "name": "Ashwall Enforcer's Underworld Complete Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "An enforcer built for the Circuit's backrooms: a structured matte-black longcoat with hidden interior panel stitching for flat-carry concealment, worn over a dark burgundy high-collar knit that obscures neck chrome ports, fitted conceal-cut trousers in charcoal wool-blend with knife-slot lining at the calf, and low-profile combat-ready loafers with silent rubber soles. A wide woven belt with a plain brushed-steel buckle doubles as a rig anchor.\n\nThe longcoat's lining is signal-dampening mesh — no passive BCI reads. Shoulder seams are aug-split for chrome arm clearance. Nothing gleams. Nothing announces.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "matte wool-blend coating",
+    "signal-dampening mesh lining",
+    "ribbed high-gauge knit",
+    "charcoal wool-blend trouser fabric",
+    "silent-tread rubber loafer sole"
+  ],
+  "functionality": "Signal-dampening coat lining blocks passive BCI scanning, flat-carry concealment stitching in interior panels, calf knife-slot trouser lining, aug-split shoulder seams, rig-anchor belt, silent rubber soles.",
+  "what_it_says": "Nothing about you is accidental, and the people who matter already know that.",
+  "worn_by": [
+    "underworld enforcers",
+    "fixer lieutenants",
+    "debt collectors for unlicensed operations"
+  ],
+  "manufacturer": "Ashwall Street Label",
+  "price_range": "Φ900–Φ1,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The signal-dampening lining is the same grade used in Tier 5 secure boardrooms — someone with access is supplying Ashwall with restricted materials.",
+    "The brushed-steel belt buckle is a recognition token — certain doors in the Circuit open when they see it.",
+    "A previous owner's blood has been scrubbed from the lining but the forensic trace remains, linking the coat to an unsolved killing three years back."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld",
+    "enforcer",
+    "fixer",
+    "conceal_carry",
+    "signal_dampening",
+    "aug_compatible",
+    "tier2",
+    "tier3",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

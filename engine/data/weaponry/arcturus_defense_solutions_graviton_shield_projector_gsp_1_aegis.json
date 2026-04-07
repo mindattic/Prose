@@ -10,7 +10,7 @@
   ],
   "category": "heavy",
   "description": "An experimental defensive system that projects a localized gravity distortion field in a 3-meter hemisphere around the emitter, deflecting incoming projectiles by altering their trajectory through gravitational lensing. The GSP-1 does not stop bullets — it bends them, causing rounds to curve away from the protected zone with increasing deflection based on proximity to the emitter. The field is effective against ballistic projectiles and slow-moving ordnance but has minimal effect on directed energy weapons, which travel too fast for gravitational deflection at this scale. The system consumes enormous power and can only maintain the field for 12 seconds before requiring a 90-second recharge.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Ironside Armaments",
   "tier_availability": "Tier 5",
   "legality": "Experimental — military testing authorization only",
   "base_technologies": [
@@ -35,7 +35,8 @@
     "power",
     "vehicle",
     "energy",
-    "fire",
-    "tier 5"
-  ]
+    "tier 5",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

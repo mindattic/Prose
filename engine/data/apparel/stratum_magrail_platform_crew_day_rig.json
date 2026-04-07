@@ -1,0 +1,48 @@
+{
+  "id": "a3f8c2e1d47b9056f3a1c8e2b5d70493",
+  "name": "Stratum MagRail Platform Crew Day Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A head-to-toe transit authority uniform built for platform-level work on the MagRail corridors. The jacket is heavyweight navy synth-canvas with a mandarin collar, Stratum Logistics embroidered chest patch in silver thread, and two diagonal hi-vis orange shoulder panels that run from collar to sleeve seam. A rear vent runs the full length of the jacket's center back, designed to accommodate basic spinal-rig augmentation with a magnetic snap closure that can be released one-handed. The trousers are charcoal stretch-twill with reinforced knee panels, two deep cargo pockets with velcro-tab closures, and a built-in tool loop belt sewn into the waistband. A retractable badge lanyard clips to a D-ring at the left chest. Underfoot: steel-toe flatform boots in matte black synth-leather with orange reflective piping along the heel and ankle, oil-resistant soles rated for wet platform surfaces.\n\nThe worker's name patch — white embroidery on black — sits above the right breast pocket. A thin thermal base layer in Stratum gray shows at the collar. A matte-black transit authority helmet with folding visor hangs from a carabiner at the hip when not worn. Gloves — cut-resistant synth-leather with open fingertips for BCI touchpad operation — are tucked into the left cargo pocket. The whole rig reads as institutional and maintained: pressed but not pristine, bearing the scuff marks of daily platform life.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heavyweight navy synth-canvas",
+    "charcoal stretch-twill",
+    "synth-leather",
+    "hi-vis orange reflective panels",
+    "cut-resistant synth-leather glove material",
+    "thermal jersey base layer"
+  ],
+  "functionality": "Spinal-rig vent with magnetic closure, tool loop waistband, D-ring badge attachment, reinforced knee panels, oil-resistant steel-toe boots, BCI-compatible open-fingertip gloves, retractable lanyard, deep cargo pockets",
+  "what_it_says": "This is someone employed by a major corponation transit system — not a contractor, an actual employee with benefits and a union card. The pressed name patch and intact branding say they take pride in the work even if the work is grinding. The aug-vent on the jacket back suggests they've got a spinal rig — probably for platform hazard alerts or load-monitoring. Reliable, institutional, tired in a dignified way.",
+  "worn_by": [
+    "MagRail platform crew",
+    "transit authority ground staff",
+    "station maintenance operators",
+    "ticketing booth workers on outdoor platforms"
+  ],
+  "manufacturer": "Stratum Logistics — corponation-issued uniform, minor field repairs by wearer",
+  "price_range": "Φ 180–Φ 240 (corponation-issued; replacement cost to worker if lost)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A platform worker's Stratum name patch belongs to someone who died six months ago — the current wearer acquired it through channels they won't explain, and now Stratum's HR enforcement unit is looking for the discrepancy.",
+    "The magnetic spinal-rig vent has been modified to conceal a data-chip smuggling channel — someone is moving sensitive route data out of the MagRail network one shift at a time.",
+    "A player character needs to move through a restricted transit zone undetected; acquiring and wearing this uniform is the most plausible cover — but every platform worker knows every other platform worker by face."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "transit",
+    "uniform",
+    "corponation_issued",
+    "aug_compatible",
+    "stratum_logistics",
+    "magrail",
+    "hi_vis",
+    "working_class"
+  ],
+  "parent_corponation": ""
+}

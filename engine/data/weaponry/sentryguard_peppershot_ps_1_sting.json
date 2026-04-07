@@ -1,0 +1,43 @@
+{
+  "id": "fcaf8403a6bc87f8bdcc9e5e19ee03c4",
+  "name": "SentryGuard PepperShot PS-1 'Sting'",
+  "type": "weapon",
+  "aliases": [
+    "Sting",
+    "PS-1",
+    "Pocket Pepper",
+    "The Spritz"
+  ],
+  "category": "self_defense",
+  "description": "The most common self-defense item carried in Meridian 88, the SentryGuard PS-1 is a palm-sized canister of oleoresin capsaicin rated at 4.2 million Scoville Heat Units. A half-second burst produces a cone of atomized irritant effective to three meters, causing immediate lacrimation, mucous membrane inflammation, and temporary blindness lasting eight to twelve minutes. SentryGuard sells more PS-1 units annually than any other single product in the Meridian 88 personal security market.\n\nThe canister contains twelve bursts and features a flip-top safety to prevent accidental discharge. The formulation includes a UV-reactive dye that marks the attacker's skin for up to seventy-two hours, aiding identification by security forces. At Tier 1, the PS-1 is often the only defensive tool a person can afford, and empty canisters are refilled from bulk pepper concentrate sold in open-air markets — a practice SentryGuard officially condemns but has never taken legal action to stop.\n\nThe PS-1's ubiquity has made it a cultural symbol. Carrying one is not a statement — not carrying one is. Meridian 88 residents refer to leaving home unarmed as 'going naked,' and the click of a PS-1 safety is one of the city's ambient sounds.",
+  "manufacturer": "SENTRYGUARD CONSUMER DEFENSE",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Oleoresin capsaicin atomization",
+    "UV-reactive marking dye",
+    "Pressurized aerosol delivery"
+  ],
+  "specifications": "capacity: 12 bursts\nrange: 3 meters effective cone\nSHU rating: 4.2 million\nweight: 48 g\ncanister dimensions: 9 cm x 3 cm\neffect duration: 8-12 minutes incapacitation\nUV dye persistence: 72 hours on skin",
+  "tactical_use": "Point and spray at the face. No training required. The PS-1 is effective against unaugmented attackers and those with standard-grade optics. Augmented individuals with sealed ocular implants may be partially resistant, but the respiratory irritant component still causes distress. Ineffective in strong wind or rain. Best deployed as a first response while creating distance to flee.",
+  "cultural_context": "SentryGuard has built an entire brand around the PS-1's accessibility. Their slogan — 'Everyone Deserves a Fighting Chance' — appears on transit ads across every tier. In Tier 1 communities, used PS-1 canisters are collected and refilled as a communal resource. Some neighborhoods maintain shared canisters chained to stairwell railings. The PS-1 is so common that muggers factor it into their approach tactics, often attacking from behind or targeting the spray hand first.",
+  "known_users": [],
+  "story_hooks": [
+    "A batch of counterfeit PS-1 canisters has appeared in Tier 1 markets — they look identical but contain only colored water. Someone is profiting from leaving an entire neighborhood defenseless.",
+    "A chemist in Tier 2 has developed a PS-1 refill formula that also contains a contact sedative — people who buy her refills don't realize their spray is now potentially lethal."
+  ],
+  "ammunition_type": [
+    "OC aerosol canister"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "pepper_spray",
+    "chemical",
+    "tier_1",
+    "everyday_carry",
+    "affordable"
+  ],
+  "parent_corponation": ""
+}

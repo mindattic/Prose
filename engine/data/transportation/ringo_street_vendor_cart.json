@@ -8,7 +8,7 @@
     "Street Box"
   ],
   "category": "commercial_ground",
-  "manufacturer": "Ringo",
+  "manufacturer": "Ringo Fleet Management",
   "description": "A motorized vendor cart manufactured by Ringo, the corponation that quietly dominates Tier 1-2 street commerce. Electric drive, fold-out serving counter, integrated heating/cooling, and a surprisingly sophisticated inventory tracking system. Ringo doesn't sell these carts — they lease them, and the lease agreement gives Ringo access to every transaction, every location, and every customer interaction. The carts are affordable. The data extraction is the real product.",
   "propulsion": "Electric drive, three wheels",
   "speed": "15 km/h",
@@ -26,7 +26,6 @@
   "tags": [
     "commercialground",
     "transportation",
-    "ai",
     "surveillance",
     "medical",
     "night",
@@ -34,5 +33,6 @@
     "food",
     "tier 1",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

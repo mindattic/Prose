@@ -1,0 +1,44 @@
+{
+  "id": "e1c4f7a2b9d05863e1c4f7a2b9d05863",
+  "name": "Meridian Score — Social Reputation Engine",
+  "type": "entertainment",
+  "category": "platform",
+  "subcategory": "reputation and social credit system",
+  "description": "Meridian Score is the dominant social reputation engine in M88, a semi-public scoring system jointly administered by the Corponation Coalition Infrastructure Bureau and the nominally independent Meridian Score Foundation. Every registered M88 citizen has a Score — a composite index drawing from employment history, financial behavior, civic participation, corponation service records, peer endorsements, and increasingly, social platform activity including Pulse feed sentiment analysis. Scores range from 0 to 1000 and directly affect access to Tier 3+ housing applications, certain employment categories, transit credits, and medical priority queuing. The system was established by legislative mandate in 2191 following the Ward 9 civil disruptions, framed as a 'civic trust infrastructure' initiative.",
+  "origin_year": 2191,
+  "tier_association": "All tiers",
+  "status": "active",
+  "cultural_impact": "Meridian Score has created a parallel economy of Score brokers — fixers who specialize in legitimate and illegitimate score manipulation — and has generated profound psychological stratification, with Score anxiety clinically documented as a significant mental health burden affecting an estimated 60% of Tier 2-3 residents.",
+  "key_figures": [
+    "Director Anselm Figueiredo-Park (Meridian Score Foundation, public face)",
+    "Nadia Solaris-Kwame (prominent Score reform activist and former Foundation data analyst)",
+    "The Grader (anonymous Score manipulation broker, Shelf-based)"
+  ],
+  "locations": [
+    "Meridian Score Foundation offices, Tier 4 Civic Quarter",
+    "Score Appeal Bureau, Tier 3 administrative district",
+    "The Grader's operation, rumored to shift between Ward 5 and Ward 8"
+  ],
+  "corporate_stance": "endorsed",
+  "story_hooks": [
+    "A routine Score audit reveals that an entire Ward 6 neighborhood has had their scores systematically suppressed for three years — not to zero, but to precisely the level that keeps them in Tier 2 and ineligible for the housing lottery, and the pattern is too precise to be algorithmic error",
+    "Nadia Solaris-Kwame goes public with internal Foundation data showing that Pulse emotional feed sentiment analysis is weighted 300% higher in Score calculations than disclosed — and the Foundation begins a very quiet, very thorough campaign to discredit her",
+    "The Grader offers a player a legitimately clean Score increase — no forgery, just exploiting a real loophole in the Foundation's peer endorsement system — but accepting it means endorsing someone whose history they don't know, for reasons they haven't been told"
+  ],
+  "tags": [
+    "reputation-system",
+    "social-credit",
+    "civic-infrastructure",
+    "corponation",
+    "tier-mobility",
+    "Score-anxiety",
+    "data-surveillance",
+    "employment",
+    "housing",
+    "Shelf-resistance"
+  ],
+  "user_base": "Mandatory registration for all 5.1 million M88 citizens; active engagement (checking, appealing, managing) estimated at 2.3 million monthly",
+  "monetization": "Government and corponation licensing fees for Score data access, premium Score monitoring subscription for individuals, corporate bulk employment screening packages",
+  "notable_feature": "The Score Shadow — an unofficial parallel tracking system maintained by community volunteers that aggregates known Score manipulation cases and algorithmic bias patterns, used by Shelf residents to anticipate and contest adverse Score events before they compound",
+  "parent_corponation": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "f3e0a5c8d1b24769f3a4b5c6d7e89015",
+  "name": "ShieldTech UVTrace UT-1 Identification Spray",
+  "type": "weapon",
+  "aliases": [
+    "UT-1",
+    "UV tag",
+    "ghost marker",
+    "the mark",
+    "spectrum paint"
+  ],
+  "category": "spray",
+  "description": "The ShieldTech UT-1 UVTrace is a forensic identification aerosol designed for the rapid, covert tagging of individuals during security incidents. The active compound is a synthetic fluorescent dye — Lumogen Violet LV-7, a ShieldTech proprietary formulation — suspended in a fast-drying alcohol carrier that bonds to skin, hair, and most textile fibers within 8–12 seconds of application. The dye is completely invisible under ambient light but fluoresces intensely at 365nm UV illumination, which is standard in all Meridian 88 transit authority checkpoints, police processing facilities, and most corporate security screening stations. A single one-second application leaves a UV signature detectable for 48–72 hours on skin and up to two weeks on fabrics, surviving multiple hand-washing cycles.\n\nThe UT-1 is marketed to security personnel as a force-multiplier for incident response — rather than attempting to physically detain every individual involved in a disturbance, security operators can quickly spray multiple subjects and allow them to disperse, knowing that the tagged individuals will be automatically flagged when they pass through any UV-equipped security checkpoint in the city. ShieldTech's marketing materials describe it as 'converting a crowd-control problem into a forensic data collection opportunity.' The spray has no biological effect beyond very mild alcohol-carrier dryness and is considered genuinely non-lethal by any meaningful metric.\n\nThe UT-1 has, however, generated controversy in civil liberties contexts. Critics point out that the spray effectively converts any security encounter into an extended surveillance operation — a person tagged at a protest can be identified, processed, and potentially prosecuted days later based on their UV signature, even if they were never formally detained. In Tier 1 and 2 zones where UV checkpoints are ubiquitous, there is effectively no way to avoid eventual detection once tagged.",
+  "manufacturer": "SHIELDTECH",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — no license required for institutional purchase by registered security firms; individual civilian purchase legal with standard identification",
+  "base_technologies": [
+    "Lumogen Violet LV-7 fluorescent dye",
+    "fast-cure alcohol carrier",
+    "pressurized fine-mist aerosol",
+    "UV-fluorescence at 365nm"
+  ],
+  "specifications": "Active compound: Lumogen Violet LV-7 synthetic fluorescent dye\nCarrier: isopropyl alcohol blend\nDetection wavelength: 365nm UV\nBond time: 8–12 seconds on skin/textile\nDetection duration: 48–72 hours (skin) / up to 14 days (fabric)\nWashfastness: survives 3–5 standard wash cycles on fabric\nBiological effect: none (mild skin dryness from alcohol carrier)\nEffective range: 0.5–3m\nNet volume: 150ml\nPrice: Φ130",
+  "tactical_use": "Deployed during crowd disturbances, transit incidents, or situations where security personnel are outnumbered and cannot make immediate arrests. A single sweep of the UT-1 over a group can tag 8–12 individuals in under five seconds. The tagged subjects are then allowed to disperse and are subsequently identified when they pass through UV-equipped checkpoints at transit stations, building entrances, or police facilities. Some security teams use the UT-1 in combination with facial recognition systems, though this practice has been legally challenged in Tier 3+ zones.",
+  "cultural_context": "On the street, being 'UV-tagged' or 'marked' is understood as a delayed arrest — you may have escaped the immediate situation, but you are now on a countdown. Shelter networks in Tier 1 distribute UV-detecting torch devices so residents can check themselves after any security encounter. A small cottage industry of 'UV wash' services — claiming to remove the dye in fewer cycles than standard washing — has emerged in Shelf neighborhoods, with varying effectiveness. Security forces sometimes deploy the UT-1 preemptively at known gathering points before protests begin.",
+  "known_users": [
+    "ShieldTech-contracted security firms",
+    "transit authority security",
+    "Arcturus auxiliary security units",
+    "corporate campus security teams",
+    "civil disturbance response units"
+  ],
+  "story_hooks": [
+    "A tagged activist discovers they were marked at a vigil they attended legally — when they investigate the incident log, there is no record of any security deployment at that location that day. Someone is running an off-books tagging operation."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "non_lethal",
+    "forensic",
+    "surveillance",
+    "tier2",
+    "aerosol",
+    "identification",
+    "security"
+  ],
+  "parent_corponation": ""
+}

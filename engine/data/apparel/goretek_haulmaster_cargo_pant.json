@@ -1,0 +1,37 @@
+{
+  "id": "a3f7c2e1b8d04591e6720f3a9c54d817",
+  "name": "Goretek HaulMaster Cargo Pant",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Heavy-duty canvas cargo pants in faded olive or charcoal, built for long shifts on warehouse floors. Six deep pockets plus twin tool loops on the left thigh, reinforced stress points with bar-tack stitching. Most pairs show grease smears and faded wash marks that no cleaning cycle fully removes.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heavy canvas",
+    "polyester-cotton blend",
+    "nylon webbing"
+  ],
+  "functionality": "Tool loops, six deep pockets, bar-tack reinforced stress points",
+  "what_it_says": "You work with your hands and you don't pretend otherwise.",
+  "worn_by": [
+    "warehouse workers",
+    "dock loaders",
+    "general laborers"
+  ],
+  "manufacturer": "Goretek Workwear",
+  "price_range": "Φ22 - Φ28",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A hidden pocket behind the left knee panel has been carefully hand-stitched shut — something was sewn inside and never retrieved.",
+    "Goretek runs a repair-and-return program; a worn pair exchanged at any depot comes back with fresh reinforcement and a new lot number stamped inside the waistband."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 2",
+    "workwear",
+    "cargo",
+    "durable"
+  ],
+  "parent_corponation": ""
+}

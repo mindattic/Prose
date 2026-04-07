@@ -1,0 +1,52 @@
+{
+  "id": "e9a0d4b7f2c3815e4d6a0b9c7f2e1d58",
+  "name": "Brineworks Salvage Hauler's Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A working outfit engineered for physical labor in the reclaimed industrial waterfront zones, where salt-brine flooding combines with acid rain and heavy lifting to destroy ordinary clothing in weeks. The foundation is a compression base layer in rust-orange thermal knit — the color is original, not faded, sourced from a medical supply surplus lot and repurposed, the fabric designed for moisture-wicking and now doing double duty as thermal insulation. Over it: a sleeveless work vest in heavy waxed canvas, originally dark green but now a mottled, oil-stained near-black, with six external pockets of varying sizes and a single interior chest pocket sealed with a metal clasp salvaged from a corponation document case. The vest's back is wide and unobstructed, gene-compatible: two long diagonal slits have been cleanly cut and re-hemmed with reinforced binding tape, accommodating a pair of vestigial decorative wings — the geneware kind, too small for flight but real feather and bone, here folded tight against the back in dusty gray-brown. Work trousers are canvas duck cloth in stained khaki, the legs tucked into knee-high rubber wading boots in matte black, the kind used in chemical processing facilities, with the original corponation logo scrubbed off and replaced with a hand-scratched personal mark. A wide oilskin apron is tied over the trousers from waist to knee, spattered with brine residue and chemical staining. Hands are covered in heavy rubberized work gloves, one thumb heavily wrapped in self-repair tape over what is clearly a healed-badly fracture. A battered wide-face respirator hangs around the neck on a strip of industrial webbing, ready to be pulled up.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "thermal compression knit",
+    "waxed canvas",
+    "canvas duck cloth",
+    "oilskin",
+    "rubber wading boot material",
+    "rubberized work glove material",
+    "self-repair tape",
+    "industrial webbing",
+    "reinforced binding tape"
+  ],
+  "functionality": "Brine and acid-rain resistance through full rubber boot coverage and waxed/oilskin outer layers. Wide-back vest accommodates decorative wing geneware without restriction. Six external cargo pockets for tools and salvage. Apron provides splash protection for lower body. Respirator on quick-access webbing for sudden chemical exposure. Moisture-wicking base layer manages sweat during heavy labor.",
+  "what_it_says": "A physical worker, someone who hauls and lifts and wades through things other people don't want to touch. The wings are a personal choice — geneware on the Shelf is rare and expensive, and decorative wings are even rarer, a statement of self that survives despite the circumstances. They weren't bought recently; they're old growth, lived-in. This person had a different life at some point, or saved for a very long time for something that makes them feel like themselves.",
+  "worn_by": [
+    "brine-zone salvage haulers",
+    "chemical waterfront laborers",
+    "gene-modded workers with vestigial wings",
+    "scrap dealers working wet industrial zones",
+    "former Tier 2 dock workers"
+  ],
+  "manufacturer": "Medical surplus repurposed (base layer); remaining components from Shelf markets and chemical supply salvage",
+  "price_range": "Φ20–Φ50 total; wings geneware separate and significantly more",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The document-case clasp on the interior chest pocket is still engraved with a corponation seal — the clasp came with something inside it, and whatever that was, the wearer has never told anyone.",
+    "The wing accommodation cuts in the vest were made by someone who knew exactly what they were doing — precise, clean, professionally hemmed. On the Shelf, that level of tailoring skill is either a Tier 2 exile or someone who used to make a living doing it.",
+    "The personal mark scratched into the rubber boots matches a mark found on three pieces of salvage that turned up in a Tier 3 market this week — salvage that was reported as destroyed in a controlled demolition the corponation claims was routine."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "gene_compatible",
+    "wing_compatible",
+    "labor",
+    "brine_zone",
+    "waterfront",
+    "salvage",
+    "heavy_work",
+    "chemical_resistant"
+  ],
+  "parent_corponation": ""
+}

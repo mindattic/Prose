@@ -1,0 +1,46 @@
+{
+  "id": "c5b9e3f1a07d2846c5b9e3f1a07d2846",
+  "name": "Pyrovex FlameCore Chemical Fire Response Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Firefighting gear purpose-built for chemical and accelerant fires common in M88's industrial corridors. The outer shell is aluminized Nomex-ceramic weave in brushed silver — flame-reflective, rated to 1,100°C radiant heat. Outer surface shows characteristic rainbow iridescence near seams from repeated heat cycling. The torso is double-layered with an intumescent foam core that expands under extreme heat to seal breaches.\n\nBuilt-in respiratory system uses a chest-mounted rebreather canister with a 45-minute supply. Gloves are integrated at the wrist with a quick-release locking ring for tool handling. Helmet is a full-face composite shell with gold-tinted polycarbonate visor. The suit is bulky but articulated — worn by people who move fast in bad places.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "aluminized Nomex-ceramic outer weave",
+    "intumescent foam core mid-layer",
+    "chest-mounted rebreather canister",
+    "composite full-face helmet shell",
+    "gold-tinted polycarbonate visor",
+    "integrated quick-release gloves"
+  ],
+  "functionality": "Radiant heat rated to 1,100°C. Intumescent core seals breaches under heat. 45-minute rebreather supply. Integrated HUD in visor displays thermal imaging and atmospheric toxin readout. Forearm aug-channels allow chrome limb heat-shielding pass-through. Magnetic boot plates for stability on liquid-pooled floors.",
+  "what_it_says": "You're the one who runs toward the chemical fire while everyone else runs out.",
+  "worn_by": [
+    "corporate fire response teams",
+    "municipal emergency services",
+    "industrial plant emergency crews",
+    "private hazard contractors"
+  ],
+  "manufacturer": "Pyrovex Response Systems (Tier 3-4 corponation contractor)",
+  "price_range": "Φ 8,500–Φ 14,000",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A fire response crew member's suit shows breach-sealing foam activation on the left shoulder — but the incident report for that shift says the call was a false alarm.",
+    "A Tier 2 fire crew is using counterfeit Pyrovex suits — visually identical, but the intumescent layer is missing.",
+    "The gold visor tint was a Tier 5 safety consultant's aesthetic request; three response techs have died because the tint obscures low-visibility thermal readings."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "firefighting",
+    "chemical-fire",
+    "flame-resistant",
+    "industrial",
+    "emergency-response",
+    "work-gear",
+    "tier3",
+    "tier4"
+  ],
+  "parent_corponation": ""
+}

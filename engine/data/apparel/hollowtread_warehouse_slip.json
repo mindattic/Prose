@@ -1,0 +1,40 @@
+{
+  "id": "d8f3a1c6e2b54d07f1a3c8e6b2d4f0a9",
+  "name": "Hollowtread Warehouse Slip",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A low-profile slip-on work shoe engineered specifically for indoor warehouse and distribution center environments. Lightweight composite upper with a broad, flat anti-fatigue sole that channels pressure away from the heel — designed for workers who stand on hard concrete for twelve-hour shifts. The sole has a hexagonal grip pattern optimized for smooth floors and conveyor edges. Comes in mandatory safety yellow or faded grey. Cheap enough that most employers buy them in bulk and issue them to staff.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "composite mesh upper",
+    "anti-fatigue foam midsole",
+    "rubber grip sole"
+  ],
+  "functionality": "Anti-fatigue sole construction, slip-resistant on smooth floors, ESD (electrostatic discharge) safe",
+  "what_it_says": "These were probably issued to you. You work indoors, on your feet, all day.",
+  "worn_by": [
+    "warehouse pickers",
+    "distribution center workers",
+    "factory assembly line staff",
+    "logistics sorters"
+  ],
+  "manufacturer": "Hollowtread Systems",
+  "price_range": "Φ15 - Φ20",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Bulk-issued by several large corponation distribution hubs — a pair identifies which facility someone works or worked at by the embossed lot code.",
+    "The ESD-safe sole is sometimes sought by people doing sensitive electronics work off the books."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "warehouse",
+    "slip-on",
+    "safety",
+    "issued gear",
+    "budget"
+  ],
+  "parent_corponation": ""
+}

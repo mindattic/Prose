@@ -1,0 +1,34 @@
+{
+  "id": "91e97a0e6e5fe4aef7082d34d8cfe9d3",
+  "name": "Wound Collector",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Accumulates emotional injuries and defines themselves by their damage",
+  "behavioral_signature": "Can recount every hurt in chronological order with perfect recall",
+  "under_stress": "Every wound reopens simultaneously",
+  "at_rest": "Tenderly maintaining their catalog of suffering",
+  "will_always": [
+    "remember exactly how they were hurt"
+  ],
+  "will_never": [
+    "heal fully because the wounds are their identity"
+  ],
+  "unless": [
+    "someone offers a new identity worth more than the pain"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Wound Carrier",
+      "threshold": 0.85,
+      "context": "carrying damage"
+    }
+  ],
+  "opposite_of": [
+    "Phoenix"
+  ],
+  "tags": [
+    "wounds",
+    "identity",
+    "accumulation"
+  ]
+}

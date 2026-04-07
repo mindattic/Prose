@@ -1,0 +1,34 @@
+{
+  "id": "88b6ee0f8988c3e17d5a98ffac7019de",
+  "name": "Disgust Response",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Primary emotional mode is revulsion at moral or physical contamination",
+  "behavioral_signature": "Recoils from corruption, filth, and moral compromise with visceral intensity",
+  "under_stress": "Sees contamination everywhere, can't touch anything or trust anyone",
+  "at_rest": "Maintaining standards of purity in their environment",
+  "will_always": [
+    "react strongly to moral or physical corruption"
+  ],
+  "will_never": [
+    "tolerate what they perceive as filth"
+  ],
+  "unless": [
+    "survival requires getting dirty"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Perfectionist",
+      "threshold": 0.6,
+      "context": "purity standards"
+    }
+  ],
+  "opposite_of": [
+    "Gray Area"
+  ],
+  "tags": [
+    "disgust",
+    "purity",
+    "contamination"
+  ]
+}

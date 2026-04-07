@@ -1,0 +1,46 @@
+{
+  "id": "b2c4f8e0a7d31659038bce94f6a50d27",
+  "name": "Coldseam The Disgraced Arbiter's Exit Suit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Once a Tier-5 judicial robe set, now stripped of insignia and worn into something else entirely. The foundation is a heavy charcoal-and-deep-burgundy brocade longcoat — Spire-quality fabric, unmistakable to anyone who knows — but the corponation seals have been cut out, leaving raw rectangular voids at collar and cuffs. Beneath: a plain white high-collar shirt, hand-pressed, slightly yellowed. Trousers are the original matched brocade, knife-creased out of habit. Shoes are Tier-5 oxfords, re-soled with Shelf rubber — the only practical concession to a new life.\n\nA BCI-port at the temple is exposed, no cosmetic cap. A second port at the base of the skull has been physically sealed with epoxy — something was removed, permanently.",
+  "tier_association": "Tier 1-5",
+  "materials": [
+    "heavy charcoal-burgundy brocade",
+    "Spire-grade wool blend",
+    "plain cotton-analog white shirt",
+    "re-soled Tier-5 leather oxford",
+    "epoxy port sealant"
+  ],
+  "functionality": "Spire-grade thermal regulation brocade retains passive warmth, re-soled oxfords provide Shelf-viable traction, exposed BCI port functional, sealed rear port indicates removed implant — nature unknown.",
+  "what_it_says": "This person fell from the highest tier and kept the coat — either as mourning or as warning.",
+  "worn_by": [
+    "disgraced Spire judges",
+    "defrocked corponation arbiters",
+    "exiled power brokers",
+    "Tier-5 defectors living below"
+  ],
+  "manufacturer": "Coldseam (self-assembled — original Spire garments, Shelf modifications)",
+  "price_range": "Φ 50 – Φ 120 (current resale; original pieces worth Φ 40,000+)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The sealed skull port contained a judicial memory implant — whatever rulings and secrets were stored there are now inaccessible to everyone, including the wearer.",
+    "The raw voids where corponation seals were cut are the exact shape of the Ouroboros Compliance Division insignia — a very specific enemy was made.",
+    "A Tier-2 street kid recognizes the brocade pattern from a wanted bulletin; this person presided over a trial that condemned an entire Shelf neighborhood."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "character_defining",
+    "disgraced",
+    "spire",
+    "tier5",
+    "tier1",
+    "aug_compatible",
+    "judicial",
+    "unique",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

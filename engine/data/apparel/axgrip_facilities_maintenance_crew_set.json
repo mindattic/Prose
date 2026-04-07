@@ -1,0 +1,52 @@
+{
+  "id": "2c6f1a8e3d5b7049c8f2e6a1d4b90c35",
+  "name": "Axgrip Facilities Maintenance Crew Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The daily working dress of an M88 building and infrastructure maintenance worker — the people who keep Circuit's residential blocks, transit hubs, and mid-level commercial buildings from falling apart. The outer layer is a zip-front work jacket in medium grey synth-fleece with a water-resistant outer shell laminate, warm enough for crawlspace and rooftop work in M88's variable climate. The left chest carries an embroidered patch for the maintenance contractor — in this case, Axgrip Facilities Group, a mid-tier Circuit services company whose logo is a stylized wrench in black and yellow. The jacket's right sleeve has a full-length aug-accommodation channel zip from shoulder to cuff, opening flat to allow a full chrome arm to be inserted or removed without undressing; the seam is double-stitched with reinforced stress points. Beneath is a yellow high-vis long-sleeved work shirt, the collar worn open, a BCI sync port visible at the base of the neck where the shirt's collar is cut with a notched relief.\n\nWork trousers are charcoal heavy-canvas with articulated knees, six external pockets, and a hammer loop on the right thigh. A padded kneeling patch is sewn into the inner knee. Boots are lace-up mid-height in dark brown oiled leather, composite-toed, with a side-zip assist and a chunky rubber lug sole for grip on wet floors, ladder rungs, and rooftop membrane. The worker carries a worn canvas tool bag over one shoulder, patched at the bottom corner with adhesive synth-fabric. A yellow hard hat is clipped to the bag strap when not worn. Safety glasses with clear lenses hang from the jacket's front zipper pull. The whole set is anonymous in the best Circuit way — this person belongs in the building, and nobody looks twice.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "grey synth-fleece work jacket fabric",
+    "water-resistant shell laminate",
+    "yellow high-vis polyblend work shirt",
+    "heavy-canvas charcoal trouser fabric",
+    "oiled leather boot uppers",
+    "composite toe cap",
+    "rubber lug sole",
+    "worn canvas tool bag material",
+    "padded inner knee patch"
+  ],
+  "functionality": "Full-length aug-channel zip on right sleeve for chrome arm accommodation; BCI port collar relief notch; water-resistant shell for outdoor and rooftop work; articulated knees and hammer loop for physical maintenance tasks; composite-toe side-zip boots for ladder and rooftop grip; hard hat clip on tool bag strap; padded inner knee for prolonged kneeling work",
+  "what_it_says": "Maintenance workers are invisible by design — their uniform says 'I'm supposed to be here, fixing something' and people stop seeing them. That invisibility is professional camouflage, and in Circuit it's also a kind of freedom. The Axgrip patch marks corponation employment without marking status; this isn't prestigious work, but it's steady, skilled, and it requires knowing the bones of every building in the sector. The aug-channel sleeve says the company accommodates its workers — or at least, the union contract requires them to.",
+  "worn_by": [
+    "Axgrip Facilities Group maintenance technicians",
+    "building systems repair crews",
+    "HVAC and duct technicians",
+    "plumbing and electrical maintenance workers",
+    "rooftop infrastructure repair teams"
+  ],
+  "manufacturer": "Axgrip Facilities Group (corponation contractor-issued jacket and patches); trousers and shirt self-purchased from Ironpass Workwear and Circuit discount outlets",
+  "price_range": "Φ150–Φ230 (mixed issued and self-purchased; jacket issued, trousers and boots personal)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A maintenance worker's routine access to building systems across twenty Circuit blocks makes them the perfect unwitting courier — someone has been using their tool bag to move data chips between dead drops, and they have no idea.",
+    "The Axgrip Facilities patch is a known passkey in certain Circuit spaces — anyone wearing it can move through service corridors without challenge, a fact that a character planning a heist is very interested in.",
+    "A maintenance crew member discovers during a routine duct inspection that an entire sub-level of a Circuit residential block has been quietly walled off and repurposed — and the new occupants don't want to be found."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "maintenance",
+    "facilities",
+    "aug_compatible",
+    "corponation_issued",
+    "axgrip",
+    "high_visibility",
+    "building_systems",
+    "invisible_labor"
+  ],
+  "parent_corponation": ""
+}

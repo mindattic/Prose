@@ -1,0 +1,41 @@
+{
+  "id": "a3f7c2e1b8d04591fe6a30c7d2819b4e",
+  "name": "Korvan Ironclad Combat Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A full-ankle combat boot in matte dark olive, built from layered thermite-treated polymer over a steel-reinforced toe cap and heel strike plate. The outer shell is visibly armored — segmented panels with shallow ridges that channel impact force away from the foot. Lacing runs through metal eyelets to a side-zip closure for fast donning. Standard-issue aesthetic without being mil-surplus.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "thermite-treated polymer shell",
+    "steel-reinforced toe cap",
+    "impact-dispersal midsole",
+    "nylon webbing lace"
+  ],
+  "functionality": "Rated for 40J toe-cap impact. Heel plate absorbs fall impact up to 3m drop. Anti-puncture midsole resists nail and glass penetration.",
+  "what_it_says": "You work somewhere that can hurt you. Security, construction, enforcement — practical danger, not glamour.",
+  "worn_by": [
+    "private security",
+    "construction workers",
+    "warehouse enforcers",
+    "off-duty patrol officers"
+  ],
+  "manufacturer": "Korvan Industrial Footwear",
+  "price_range": "Φ95 - Φ130",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair turns up with the serial numbers ground off — traced back to a security contractor that officially doesn't exist.",
+    "The anti-puncture midsole caught something — a needle loaded with a paralytic. The wearer never knew."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "tactical",
+    "armored",
+    "work boot",
+    "combat",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

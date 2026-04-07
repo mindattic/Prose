@@ -1,0 +1,52 @@
+{
+  "id": "f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2",
+  "name": "Shelf IDP-X 'Dentata'",
+  "type": "weapon",
+  "aliases": [
+    "Dentata",
+    "The Shotgun Shell",
+    "Last Surprise",
+    "The Goodbye",
+    "Point Blank"
+  ],
+  "category": "self_defense",
+  "description": "The IDP-X is not a Lazarus product. It is not a product at all. It is a Shelf improvisation — a single shotgun shell housed in a bio-compatible silicone sleeve with a spring-loaded firing pin connected to a wireless trigger, typically a micro-transmitter worn as a ring, bracelet, or tooth implant. The user activates the trigger. The firing pin strikes the primer. The shotgun shell detonates at contact range inside the attacker's body. There is no chemical incapacitation. There is no barbed retention system. There is a 12-gauge shell and approximately zero distance between the muzzle and the target.\n\nThe IDP-X emerged in Shelf districts where the Lazarus IDP-1 'Teeth' was considered insufficient — communities where attackers had learned to check for the commercial device before assaulting their victims, or where the non-lethal incapacitation of the IDP-1 was viewed as inadequate justice for the crime. The Dentata was engineered by Shelf weaponsmiths using readily available components: a standard shotgun shell, a spring-loaded firing mechanism small enough to fit inside a medical-grade silicone housing, and a wireless micro-detonator scavenged from commercial blasting equipment. The total materials cost is under Φ20. The assembly requires basic mechanical skill and about forty minutes.\n\nThe IDP-X is, by any legal or ethical standard, a lethal weapon disguised as a medical device. It kills. That is its designed function. The Shelf communities that produce and distribute them do not dispute this. Their position, stated plainly on the hand-printed cards that accompany each unit, is: 'If the system won't protect us, the system doesn't get to decide how we protect ourselves.' CorpSec has classified the IDP-X as an illegal booby trap. Lazarus has issued statements distancing the IDP-X from their IDP-1 product line. Neither classification nor statement has reduced production. The Dentata is made in kitchens and distributed through the same networks that distribute food and medicine. It is survival technology, and the Shelf does not recognize corporate authority over survival.",
+  "manufacturer": "Shelf weaponsmiths — no single manufacturer",
+  "tier_availability": "Tier 1",
+  "legality": "Prohibited — classified as illegal booby trap / improvised explosive device",
+  "base_technologies": [
+    "Standard 12-gauge shotgun shell",
+    "Spring-loaded firing pin mechanism",
+    "Wireless micro-detonator trigger",
+    "Bio-compatible silicone housing"
+  ],
+  "specifications": "form_factor: Internal silicone sleeve with embedded shotgun shell\nactivation: Remote wireless trigger (ring, bracelet, or tooth implant transmitter)\npayload: Single 12-gauge shotgun shell (buckshot or slug)\neffective_range: Contact — 0 meters\ntrigger_range: Wireless, 5-meter effective radius\nsafety: Manual pin lock removed before use\nreusable: No — single use, destructive\nassembly_time: ~40 minutes\nmaterials_cost: Φ20\nweight: 45g",
+  "tactical_use": "Unlike the IDP-1's automatic activation, the IDP-X requires a deliberate decision from the user — the wireless trigger must be consciously activated. This was a design choice, not a limitation. Shelf weaponsmiths who developed the device argued that the decision to use lethal force should remain with the person being assaulted, not automated. The trigger is typically worn on the dominant hand as a ring with a recessed button, requiring a firm press to activate. Some variants use a bite-activated tooth implant, freeing the hands entirely. The 5-meter wireless range allows activation even if the user's hands are restrained, provided the trigger is on their person.",
+  "cultural_context": "The IDP-X is the Shelf's answer to a question that Lazarus's IDP-1 asked politely: what do you do when nobody is coming to help? The IDP-1 says 'incapacitate and wait for authorities.' The IDP-X says 'there are no authorities.' The device has become a flashpoint in the ongoing debate about Shelf autonomy — corporate legal frameworks call it murder, Shelf communities call it self-defense, and the gap between those positions is the gap between people who have security and people who don't. Emergency room personnel in Shelf-adjacent districts have been trained to recognize IDP-X injuries. There is no treatment protocol. There is a notification to next of kin.",
+  "known_users": [
+    "Shelf community defense networks",
+    "Independent sex workers in high-risk zones",
+    "Underworld residents",
+    "Distributed through mutual aid networks alongside food and medicine"
+  ],
+  "story_hooks": [
+    "A CorpSec raid on a Shelf apartment found forty IDP-X units in various stages of assembly. The resident claims they're for community distribution. CorpSec wants to charge them with weapons manufacturing. The neighborhood is organizing their defense — legal and otherwise.",
+    "An IDP-X activation in a Tier 3 district has killed the son of a corporate executive. The device was used in legitimate self-defense during an assault. The executive is demanding the 'manufacturer' be found and prosecuted. The Shelf is closing ranks. The case is becoming a symbol for both sides.",
+    "Someone has modified the IDP-X design with a dead man's switch — if the user's heart rate drops below a threshold, the device fires automatically. The modification is being distributed as an 'upgrade.' The implications for anyone who falls asleep wearing one are catastrophic."
+  ],
+  "ammunition_type": [
+    "12_gauge"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "lethal",
+    "improvised",
+    "shotgun",
+    "explosive",
+    "shelf",
+    "community",
+    "tier 1"
+  ],
+  "parent_corponation": ""
+}

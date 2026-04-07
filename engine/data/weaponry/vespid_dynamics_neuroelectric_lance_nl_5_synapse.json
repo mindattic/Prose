@@ -1,0 +1,46 @@
+{
+  "id": "b2059c6e6c1c857b86bfaa9677767d7f",
+  "name": "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
+  "type": "weapon",
+  "aliases": [
+    "Synapse",
+    "NL-5",
+    "Neuroelectric Lance",
+    "The Nerve"
+  ],
+  "category": "exotic",
+  "description": "A directed energy weapon that fires a focused electrical current along an ionized air channel, similar to Tessera's Stormcaller but miniaturized and calibrated specifically for anti-personnel use. The Synapse delivers a precise 5,000-volt pulse shaped to interfere with the human nervous system, inducing involuntary muscle contraction, loss of motor control, and unconsciousness at therapeutic power — or cardiac arrest and neural burnout at lethal settings.\n\nVespid designed the NL-5 as an evolution of conventional electroshock weapons. Where a taser requires physical contact or wire-guided probes, the Synapse delivers its electrical charge through 30 meters of open air. The ionization laser creates a conductive path invisible to the naked eye, and the electrical discharge travels along this path faster than the target can react.\n\nThe weapon is compact enough to be concealed beneath a jacket, making it popular with plainclothes security operators and undercover intelligence assets who need a ranged incapacitation tool that does not look like a weapon.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed at non-lethal settings — restricted at lethal settings",
+  "base_technologies": [
+    "Air-ionization conductive channel generation",
+    "Shaped anti-personnel electrical pulse",
+    "Concealed directed energy weapon design"
+  ],
+  "specifications": "caliber: N/A — ionization-guided electrical discharge\neffective_range: 5-30 meters\nrate_of_fire: 1 pulse per 2 seconds\ncapacity: 30 non-lethal pulses or 10 lethal pulses per power cell\nweight: 1.6 kg\npower_source: Integrated power cell, field-replaceable",
+  "tactical_use": "The Synapse is deployed for ranged incapacitation in environments where kinetic weapons are inappropriate or unavailable. Plainclothes operators use the weapon to neutralize threats in crowded environments where a gunshot would cause panic. The NL-5's shaped electrical pulse is calibrated to incapacitate without causing cardiac arrest at non-lethal settings, though the margin between incapacitation and cardiac arrest is narrower than Vespid's marketing suggests — particularly in targets with cardiac implants or pre-existing conditions.",
+  "cultural_context": "The Synapse has democratized ranged electroshock technology, making it available to a much wider range of operators than the expensive directed energy platforms produced by Tessera and Arcturus. This proliferation has created concerns about widespread misuse — a weapon that incapacitates without visible injury is an ideal tool for abuse, and reports of NL-5 use in unauthorized interrogation and punishment scenarios have increased steadily since its introduction.",
+  "known_users": [
+    "Vespid Dynamics security division",
+    "Plainclothes corporate security",
+    "Law enforcement"
+  ],
+  "story_hooks": [
+    "A series of seemingly random collapses in a Tier 3 commercial district have been traced to NL-5 strikes — someone is incapacitating people and robbing them while they are unconscious. The victims wake up with no memory of the attack and no visible injuries.",
+    "Vespid's NL-5 has been modified by a black-market technician to sustain the ionization channel for continuous discharge — turning a pulse weapon into a continuous electrical beam. The modification drains the power cell in 4 seconds but the effect during those 4 seconds is invariably lethal."
+  ],
+  "ammunition_type": [
+    "Ionization-guided electrical pulse"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "electrical",
+    "non-lethal",
+    "concealable",
+    "tier 3",
+    "less_lethal"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,46 @@
+{
+  "id": "7e1b4a3c9d2f0e5a8c6b7d4f3a1e2c90",
+  "name": "Drekk ChemWall Acid-Environment Full Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Matte black with high-visibility acid-yellow chevrons across the shoulders and thighs, the ChemWall is a one-piece chemical barrier suit made from Drekk's proprietary ViperSkin — a chlorosulfonated polyethylene outer shell bonded to a closed-cell foam thermal liner. Designed for Shelf acid-rain zones and Circuit-level industrial cleaning crews. The silhouette is bulky, utilitarian, and carries no pretense.\n\nThe integrated hood is sealed with a bayonet-lock visor ring accepting standard 40mm filter canisters. Taped seams run in bright yellow contrast stitching for visual inspection. Integrated tail-exit gusset at rear seam for gene-compatible wearers.",
+  "tier_association": "Tier 1-3",
+  "materials": [
+    "ViperSkin chlorosulfonated polyethylene",
+    "closed-cell foam thermal liner",
+    "polycarbonate bayonet visor",
+    "nitrile over-boot sole",
+    "sealed seam tape"
+  ],
+  "functionality": "Resists pH 0–2 acid splash and prolonged acid-rain exposure; bayonet-lock visor accepts standard industrial filter canisters; rear gusset accommodates tail geneware without compromising the chemical seal; integrated over-boot sole rated for caustic floor spills.",
+  "what_it_says": "You go into places that eat through anything cheaper.",
+  "worn_by": [
+    "Shelf acid-zone scrap runners",
+    "Circuit industrial cleaning crews",
+    "municipal hazmat responders",
+    "chemical plant maintenance workers"
+  ],
+  "manufacturer": "Drekk Heavy Fabrication",
+  "price_range": "Φ290–Φ650",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A cleaning crew member finds a sealed document packet fused inside a corroded drainage pipe — still legible, and someone very powerful wants it back.",
+    "The ViperSkin compound has a known failure mode at temperatures above 60°C; a batch was shipped to Shelf workers without the recall notice.",
+    "A gene-compatible worker with a prehensile tail used the rear gusset to smuggle out biosamples from a restricted chemical site — and now needs help disappearing."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "hazmat",
+    "chemical",
+    "acid-resistant",
+    "environmental",
+    "industrial",
+    "gene-compatible",
+    "tier-1",
+    "tier-2",
+    "tier-3"
+  ],
+  "parent_corponation": ""
+}

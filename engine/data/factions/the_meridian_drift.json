@@ -1,0 +1,83 @@
+{
+  "id": "48e566ffd14fb47dd127842ffe76c79d",
+  "type": "faction",
+  "name": "The Meridian Drift",
+  "aliases": [
+    "The Drift",
+    "Drifters",
+    "Ghost Freight",
+    "MD"
+  ],
+  "motto": "Everything moves. The only question is price.",
+  "description": "The Meridian Drift is the largest inter-city smuggling network operating out of Meridian 88, controlling an estimated 40% of all unauthorized cargo movement between the city and the nearest surviving urban centers -- New Brisbane, the Jakarta Collective, and the contested ports of the Philippine Archipelago Compact. The Drift does not manufacture, does not retail, and does not consume. It moves things. Anything. Medical supplies to communities embargoed by corporate sanctions. Weapons to insurgencies the corponations prefer starved. People fleeing contractual obligations that amount to slavery. Data on physical media when electronic transfer is too monitored. The Drift's neutrality is its product -- they move cargo for anyone willing to pay, and their reputation for delivery is the only currency that matters in the spaces between cities.\n\nThe network was established in 2161 as a loose confederation of boat captains, drone operators, and overland guides who navigated the increasingly hostile territory between Meridian 88 and neighboring settlements. Rising sea levels, irradiated zones, automated border enforcement, and corporate naval patrols turned inter-city travel from difficult to nearly impossible for anyone outside corporate logistics chains. The Drift filled the gap. Over four decades, it evolved from a handful of desperate smugglers into a sophisticated logistics operation with its own navigation charts, safe houses, fuel caches, and bribed border officials spanning three thousand kilometers of coastline.\n\nThe Drift operates on a cell structure -- individual captains and crews know their own routes and contacts but not the full network. Coordination happens through a system of coded broadcasts on frequencies that shift according to a schedule known only to senior navigators called Pilots. The most valuable Drift assets are not ships or drones but the Pilots themselves -- people who carry decades of route knowledge, tide charts, patrol schedules, and the locations of safe passages through irradiated waters in their heads. A Pilot's defection or capture can collapse an entire corridor.",
+  "ideology": "Movement is freedom. The corponations control cities; the spaces between cities belong to whoever is willing to cross them. Borders are not geography -- they are pricing structures. The Drift exists to ensure that no embargo is absolute and no blockade is permanent.",
+  "territory": "Meridian 88's coastal zones, particularly Old Harbor and the submerged districts. Corridor routes extending to New Brisbane, the Jakarta Collective, and the Philippine Archipelago Compact. Safe houses and fuel caches at approximately 200-kilometer intervals along primary routes.",
+  "leadership": "The Drift has no single leader. The seven senior Pilots form an informal council that sets route priorities and resolves disputes. The most respected Pilot is known only as Compass -- a woman in her seventies who has personally navigated every active corridor and whose route knowledge is considered irreplaceable.",
+  "methods": [
+    "Submersible cargo vessels that travel beneath corporate naval patrol depth",
+    "Autonomous drone swarms that overwhelm border detection systems through sheer numbers",
+    "Overland convoys through irradiated zones using hardened vehicles and timed exposure windows",
+    "Coded broadcast coordination on frequency-hopping channels",
+    "Bribery networks within corporate border enforcement agencies",
+    "Physical data smuggling on hardened media when electronic channels are compromised"
+  ],
+  "resources": [
+    "Fleet of submersible cargo vessels and surface craft",
+    "Autonomous drone swarms for border penetration",
+    "Network of safe houses and fuel caches across 3,000 km of coastline",
+    "Seven senior Pilots with irreplaceable route knowledge",
+    "Bribed officials within multiple corporate border agencies",
+    "Coded communication infrastructure on shifting frequencies"
+  ],
+  "goals": [
+    "Maintain open movement corridors between all surviving urban centers",
+    "Prevent any single corponation from achieving total logistics monopoly",
+    "Train the next generation of Pilots before the current generation ages out",
+    "Establish a permanent underwater depot in international waters beyond corporate jurisdiction"
+  ],
+  "relationships": [
+    {
+      "name": "Arcturus Defense Solutions",
+      "type": "enemy",
+      "description": "Arcturus operates the naval patrol systems that the Drift must evade. The relationship is adversarial but professional -- both sides understand the game.",
+      "tags": [
+        "corporate",
+        "military",
+        "conflict"
+      ]
+    },
+    {
+      "name": "Vantablack Media",
+      "type": "client",
+      "description": "Vantablack occasionally hires the Drift to move journalists and data into or out of embargoed zones. The arrangement is unofficial and deniable.",
+      "tags": [
+        "corporate",
+        "trade"
+      ]
+    },
+    {
+      "name": "The Suture Collective",
+      "type": "client",
+      "description": "The Collective relies on the Drift to import medical supplies that cannot be sourced within Meridian 88.",
+      "tags": [
+        "mutual-aid",
+        "trade"
+      ]
+    }
+  ],
+  "narrative_function": "The Drift represents the persistence of connection in a world designed for isolation. The corponations want cities to be self-contained markets -- the Drift proves that human networks always find ways to flow around obstacles. They are the circulatory system of a world that pretends its cities are separate organs.",
+  "story_hooks": [
+    "A Drift submersible has gone silent on the Jakarta corridor. The cargo manifest lists medical supplies, but the client who booked the shipment has disappeared. Someone needs to find the vessel before Arcturus patrol ships do -- and determine what it was really carrying.",
+    "Compass is dying. Her route knowledge exists only in her memory, and the Drift's survival depends on extracting it before she goes. She has agreed to a neural recording procedure, but the only technology capable of capturing navigational knowledge at that density is owned by TESSERA.",
+    "A new inter-city route has been discovered through previously impassable irradiated waters -- the radiation levels have mysteriously dropped. The Drift wants to exploit the corridor but someone needs to determine why the radiation fell and whether it will return."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "smuggling",
+    "logistics",
+    "maritime",
+    "inter-city",
+    "old-harbor"
+  ]
+}

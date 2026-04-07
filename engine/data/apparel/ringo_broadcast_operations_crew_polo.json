@@ -1,0 +1,35 @@
+{
+  "name": "Ringo Broadcast Operations Crew Polo",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_office_wear",
+  "manufacturer": "Ringo Data Services",
+  "description": "The standard uniform for Ringo's non-talent production floor staff — camera operators, lighting technicians, floor directors, and live broadcast coordinators. Cut in Ringo's signature deep red with a black collar and sleeve trim, the polo carries the Ringo 'R' wordmark at the breast in gloss black. The fabric is a performance stretch blend that manages heat well under studio lighting conditions and resists the kind of casual snagging that happens in cable-heavy environments. A reinforced loop at the left hip is sized for standard headset clips, and a discreet BCI sync port is embedded at the right collar point for hands-free comms integration. Shoulder seams are gusseted for full range of motion. Available in standard and wide-shoulder augment-frame cuts.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ60",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "Ringo crew polos are aspirational in some Tier 2 communities — working Ringo production, even at the floor level, means proximity to the media apparatus that shapes how M88 sees itself. The polo is recognizable enough that wearing one in the right neighborhood opens doors, and in the wrong one, raises suspicion about what you've seen and what you might broadcast.",
+  "story_hooks": [
+    "A crew member in a Ringo polo is quietly recording something they shouldn't be during a live broadcast — and the BCI sync log proves it.",
+    "Someone is selling counterfeit Ringo crew polos in a Tier 2 district as a way to gain access to restricted event perimeters.",
+    "A fired Ringo employee hasn't returned their polo and is using the residual access code embedded in the BCI port to re-enter the broadcast building."
+  ],
+  "tags": [
+    "ringo",
+    "media",
+    "broadcast",
+    "production",
+    "crew",
+    "polo",
+    "augment_compatible",
+    "bci_compatible",
+    "tier2",
+    "tier3",
+    "corporate"
+  ],
+  "id": "1bfdee78a60046309ffed555fa0fccbf",
+  "parent_corponation": "Ringo Corponation"
+}

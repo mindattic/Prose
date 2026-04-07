@@ -1,0 +1,55 @@
+{
+  "id": "2e90f47d1b3ca865e0d258f7a419c3b8",
+  "name": "SynapTech IrisBloom Ocular Color Modulator",
+  "brand_name": "SynapTech",
+  "product_name": "IrisBloom",
+  "type": "cyberware",
+  "aliases": [
+    "blooms",
+    "irises",
+    "color-eyes",
+    "petals",
+    "the shift"
+  ],
+  "category": "cosmetic",
+  "body_location": "ocular (iris, both eyes standard; single eye available)",
+  "description": "The IrisBloom is a paper-thin biocompatible photochromic film bonded to the anterior surface of the iris in each eye, containing an array of independently addressable chromatic cells capable of reproducing any color within the full visible spectrum, including patterns, gradients, and subtle animated effects such as slow color-cycling or radial blooming transitions. Unlike earlier contact-lens-based cosmetic color systems, the IrisBloom is permanent — bonded directly to the iris tissue — and requires no daily insertion or removal. The chromatic layer is fully transparent in its resting state and does not interfere with the eye's optical function, pupil dilation, or low-light performance. Color and pattern selection is controlled via a subcutaneous earlobe tap node — a tiny flush-mounted button that cycles through saved presets — or through SynapTech's companion app via short-range neural link. The film is designed to last 10-15 years before requiring replacement, and the bonding procedure is fully reversible with no permanent alteration to iris tissue.\n\nThe IrisBloom is the direct descendant of colored contact lenses, and like its ancestor it occupies a space between fashion accessory and identity statement. In Meridian 88, eye color has entirely lost its genetic meaning — with humanity's full blending, natural eye color is already distributed across every shade — and the IrisBloom simply extends that palette further. Many users choose colors that would be impossible naturally: vivid violet, silver, gold, deep amber, or pattern effects like a starburst of contrasting rings. The earlobe tap node has become one of the most recognized cosmetic cyberware markers in the city; spotting the small button on someone's lobe and noticing their eye color shift mid-conversation is a common social moment. Children beg their parents for IrisBloom installs the way previous generations begged for ear piercings, and the minimum recommended installation age of 16 is widely flouted.",
+  "manufacturer": "SYNAPTECH CONSUMER IMPLANT DIVISION",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Licensed optometric clinic or SynapTech retail installation center; 45-minute outpatient procedure per eye under topical anesthetic; no sedation required",
+  "rejection_risk": "Minimal",
+  "maintenance": "Annual optometric checkup to inspect film adhesion and chromatic cell integrity; companion app firmware updates push automatically; earlobe tap battery replacement every 3 years; film replacement every 10-15 years",
+  "specifications": "{\"chromatic_cell_density\": \"18,000 per square millimeter of iris surface\", \"color_gamut\": \"full visible spectrum plus iridescent and metallic effects\", \"pattern_support\": \"up to 4 independently colored radial zones per eye\", \"animation_support\": \"slow cycle and bloom transition modes\", \"optical_interference\": \"none — fully transparent resting state\", \"pupil_response\": \"unaffected\", \"control_method\": \"earlobe tap node (preset cycling) or SynapTech app\", \"film_lifespan\": \"10-15 years\", \"installation_reversibility\": \"fully reversible, no permanent iris alteration\"}",
+  "side_effects": [
+    "Mild eye irritation and photosensitivity for 3-7 days post-installation during film bonding",
+    "Occasional brief visual shimmer when cycling between colors as chromatic cells reset — typically less than half a second",
+    "Some users experience mild dry-eye symptoms in the first month as tear film adjusts to the bonded layer",
+    "Rare: chromatic cell cluster failure in small patches producing a faint mottled appearance, correctable by targeted recalibration at clinic"
+  ],
+  "cultural_context": "IrisBloom and the broader category of iris color implants are among the most socially normalized cosmetic cyberware in Meridian 88 — arguably more normalized than any other implant category because eye color was already cosmetically modified for a century before the technology moved under the surface. The earlobe tap has become a fashion item in its own right, with hundreds of decorative covers and aftermarket designs. Among younger demographics, 'eye matching' — coordinating IrisBloom colors with DermaCast patterns or ChromeRoot colors for a cohesive look — is a significant part of personal style culture. There is a small but vocal community of people who choose to keep their natural eye color as a statement of 'authenticity,' a position that is sometimes read as principled and sometimes as contrarian. In Spire circles, bespoke IrisBloom designs commissioned from optical artists command extraordinary prices — the equivalent of couture, worn in the eyes.",
+  "known_users": [
+    "Teenagers and young adults as a rite-of-passage cosmetic implant",
+    "Fashion-forward individuals across all tiers",
+    "Performers and public figures seeking distinctive appearance",
+    "People who previously relied on cosmetic contact lenses",
+    "Spire elites with bespoke commissioned designs"
+  ],
+  "story_hooks": [
+    "A SynapTech firmware update has introduced a subtle telemetry function — the earlobe tap node is logging color-change timestamps and transmitting them to a marketing analytics server, creating a behavioral profile; a privacy advocate has the evidence but needs help getting it public before SynapTech's legal team buries it",
+    "A witness description mentions someone with a very specific IrisBloom pattern — an unusual four-zone design in a distinctive color combination — and the players need to trace who commissioned that pattern through SynapTech's design records, which are technically private",
+    "A Tier 1 teenager has gone into debt to a loan shark to afford a black-market IrisBloom install from an uncertified technician; the film was applied incorrectly and is slowly damaging the iris tissue, but licensed removal requires clinic fees the family cannot afford"
+  ],
+  "street_price": "ΦΦΦ 150-320 (both eyes, standard palette); custom pattern designs 80-200 additional",
+  "licensed_price": "ΦΦΦ 380-700 at SynapTech retail clinics; bespoke commissioned designs Φ2,000+",
+  "tags": [
+    "cyberware",
+    "cosmetic",
+    "lifestyle",
+    "ocular",
+    "iris",
+    "fashion",
+    "mass-market"
+  ],
+  "parent_corponation": ""
+}

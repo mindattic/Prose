@@ -1,0 +1,47 @@
+{
+  "id": "d4b8e3a1c7f209e5b6d2a4c8f1e3b705",
+  "name": "Kolvex FilterMask FM-12 Urban Half-Face",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A matte charcoal thermoplastic half-face mask covering nose to chin, manufactured by Kolvex with the same utilitarian honesty as their transit-grade filtration caps. The mask body has a slight anatomical curve and sits flush against the face via a dual-strap silicone seal. Two replaceable hex-cartridge filters flank the exhalation valve — cartridges are color-coded: grey for particulate, amber for chemical, red for biological. The exterior is stamped with the Kolvex hexagon mark in debossed relief.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "injection-molded thermoplastic elastomer shell",
+    "replaceable activated-carbon hex filter cartridges",
+    "food-grade silicone face seal",
+    "woven nylon adjustment straps"
+  ],
+  "functionality": "Filters PM2.5 particulate, low-concentration industrial solvents, and common urban aerosols. Cartridges rated for 80 hours of use. Strap system adjusts for most head sizes including those with neck-level chrome augmentation.",
+  "what_it_says": "You take the air quality seriously but you're not trying to make a statement about it.",
+  "worn_by": [
+    "transit operators",
+    "factory floor workers",
+    "street vendors",
+    "Circuit-level commuters",
+    "small business owners near industrial zones"
+  ],
+  "manufacturer": "Kolvex (corponation, transit and safety equipment division)",
+  "price_range": "Φ45–Φ90 (cartridge refills Φ12 each)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of FM-12s sold in Circuit Ward 7 had amber cartridges that tested positive for a rare neurotoxin — whether contamination or sabotage is unresolved.",
+    "The silicone seal leaves a faint ring on the face after long wear — a visible mark that Circuit workers recognize and Spire residents find unsettling.",
+    "Someone has been swapping used red bio-cartridges back into sealed packaging and reselling them; the next outbreak could trace back to a single counterfeit shipment."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "mask",
+    "half-face",
+    "filter-mask",
+    "tier-2",
+    "tier-3",
+    "circuit",
+    "corponation",
+    "kolvex",
+    "air-filtration",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

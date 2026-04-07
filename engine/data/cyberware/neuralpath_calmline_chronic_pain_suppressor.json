@@ -1,0 +1,57 @@
+{
+  "id": "e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6",
+  "name": "NeuralPath CalmLine Chronic Pain Suppressor",
+  "brand_name": "NeuralPath",
+  "product_name": "CalmLine",
+  "type": "cyberware",
+  "aliases": [
+    "the quiet",
+    "painoff",
+    "numb line",
+    "the mercy",
+    "calm wire",
+    "silence chip"
+  ],
+  "category": "health",
+  "body_location": "spinal — epidural microarray at thoracic vertebrae T6–T10, with optional cervical extension",
+  "description": "The CalmLine Chronic Pain Suppressor is a flexible epidural microarray that adheres to the dural surface of the spinal cord between thoracic vertebrae T6 and T10, with an optional cervical extension module available for patients with upper-body or craniofacial pain conditions. The array consists of 24 to 48 bioelectric contact points that deliver precisely calibrated neuromodulation signals to the dorsal horn — the spinal cord's primary pain signal relay — interrupting the transmission of chronic nociceptive and neuropathic signals before they ascend to conscious awareness. Unlike older spinal cord stimulators, the CalmLine does not operate on a fixed stimulation pattern; its onboard adaptive processor reads afferent signal traffic in real time and applies targeted interference only to pain-pathway signals, leaving proprioceptive, thermal protective, and acute injury signals intact. This means users retain the ability to feel damaging heat, detect a new injury, and maintain full spatial body awareness — the CalmLine addresses chronic pain without creating the dangerous sensory blindness associated with earlier-generation total nerve blocks. A small control node, placed subdermally at the lower back, allows the user or a clinician to adjust stimulation intensity and access diagnostic logs.\n\nFor the estimated 40 million residents of Meridian 88 living with chronic pain conditions — spinal injuries from physical labor, nerve damage from industrial accidents, fibromyalgia-spectrum disorders, phantom limb pain, degenerative joint conditions — the CalmLine is, without exaggeration, a restoration of personhood. Chronic pain is corrosive in ways that extend far beyond physical sensation: it degrades sleep, cognition, emotional regulation, and the capacity to work. NeuralPath positions the CalmLine as a medical-grade rehabilitation tool, and it is frequently covered under corponation healthcare plans for diagnosed chronic pain conditions, making it one of the few implants where the licensed price may actually be lower than street cost for insured workers. On the Shelf, where physical labor injuries are endemic and rehabilitation healthcare is scarce, the CalmLine is often the first implant a person ever gets — and the one they are most reluctant to ever remove.",
+  "manufacturer": "NEURALPATH BIOSYSTEMS",
+  "tier_availability": "Tier 1-4",
+  "legality": "Licensed (requires chronic pain diagnosis and neurological clearance)",
+  "installation_requirements": "Licensed neurology or pain management clinic; 2-hour epidural placement procedure under light sedation; overnight observation recommended; cervical extension is a separate follow-up procedure",
+  "rejection_risk": "Low",
+  "maintenance": "Biannual stimulation calibration with a NeuralPath-certified pain specialist; firmware update annually; control node battery replacement every 5 years",
+  "specifications": "{\"array_placement\": \"epidural, T6–T10 (cervical extension optional)\", \"contact_points\": \"24 (standard) / 48 (with cervical extension)\", \"modulation_target\": \"dorsal horn nociceptive relay\", \"signal_processing\": \"real-time adaptive afferent traffic analysis\", \"preserved_sensations\": [\"acute injury pain\", \"thermal protective response\", \"proprioception\"], \"control_node\": \"subdermal lower back, user/clinician adjustable\", \"power_source\": \"micro-cell + bioelectric supplement (5-year cell replacement)\", \"warranty\": \"10 years\"}",
+  "side_effects": [
+    "Mild tingling or 'buzzing' sensation along the spine during the first week of calibration, particularly noticeable when transitioning between sitting and standing",
+    "Some users report a brief period of emotional adjustment as chronic pain, which had structured daily life for years, is suddenly absent",
+    "Rare: over-suppression events during high-intensity stimulation settings, resulting in a temporary dull numbness across the lower torso that resolves within hours",
+    "Headache and mild nausea for 1–3 days post-procedure, typical of epidural placement"
+  ],
+  "cultural_context": "The CalmLine is one of the least socially complicated implants in common use — chronic pain is universally understood as suffering, and an implant that addresses it carries almost no stigma across any tier. If anything, the cultural conversation around CalmLine tends to center on access and gatekeeping: the Licensed requirement means that undiagnosed or undocumented chronic pain sufferers — a disproportionately Tier 1 population with limited healthcare access — often cannot obtain the implant through official channels, driving a significant street market for gray-market units installed by unlicensed practitioners. NeuralPath has faced sustained public pressure over its licensing requirements, which critics argue exist primarily to protect the company's clinical installation revenue rather than to ensure patient safety. Within communities where physical labor injuries are common, a CalmLine scar at the lower back is an unremarkable and respected mark — evidence of a body that has been through something and found a way to keep working.",
+  "known_users": [
+    "Physical laborers with cumulative spinal and joint injuries",
+    "Industrial accident survivors with nerve damage",
+    "Fibromyalgia and neuropathy patients",
+    "Older Tier 1 and 2 residents with decades of labor-related wear",
+    "Veterans and security personnel with chronic injury sequelae"
+  ],
+  "story_hooks": [
+    "A gray-market CalmLine installer in a Shelf district is doing good work — but is using a firmware fork that has an undocumented feature: under specific signal conditions, it can be remotely triggered to maximize stimulation output, causing total lower-body sensory disruption, effectively a weapon built into a pain implant.",
+    "A NeuralPath software update has introduced a subtle calibration drift that is causing CalmLine units across a specific installation batch to gradually reduce their suppression of protective acute pain signals — users are not feeling new injuries and several have developed serious undetected conditions.",
+    "A corponation labor lawyer is building a class action case arguing that employers who require physical labor should be mandated to cover CalmLine installation — and she needs the party to document injury rates in a Tier 1 manufacturing block without tipping off the corponation's security division."
+  ],
+  "street_price": "Ϸ600–Ϸ900",
+  "licensed_price": "Ϸ400–Ϸ700 (with corponation health coverage) / Ϸ1,400–Ϸ2,000 (uninsured)",
+  "tags": [
+    "cyberware",
+    "health",
+    "lifestyle",
+    "pain-management",
+    "neurological",
+    "spinal",
+    "licensed",
+    "labor"
+  ],
+  "parent_corponation": ""
+}

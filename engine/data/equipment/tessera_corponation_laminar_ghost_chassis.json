@@ -12,7 +12,7 @@
   ],
   "category": "armor",
   "description": "The Laminar Ghost Chassis is Tessera Corponation's flagship stealth suit — a full-body garment system that combines passive thermal baffling, acoustic dampening laminate, and a dynamic optical surface layer into a unified platform. The outer surface is composed of Tessera's proprietary Fold-Reactive polymer, which samples ambient light from micro-aperture sensors distributed across the suit and re-emits it through a micro-LED matrix on the opposing surface, creating a near-real-time visual camouflage effect that is effective against human observers and most standard optical surveillance systems at ranges beyond four meters. The effect degrades noticeably at close range and breaks down entirely under ultraviolet or multispectral scanning.\n\nBeneath the optical layer, the Ghost Chassis incorporates a passive thermal baffling membrane that suppresses the wearer's infrared signature to approximately ambient temperature within 90 seconds of activation, and an acoustic dampening laminate that reduces movement noise to below 15 decibels at normal walking pace. The suit is powered by a distributed micro-cell array woven through the lining, providing up to six hours of full active operation before requiring recharge. Tessera has positioned the Ghost Chassis as an intelligence-gathering and infiltration tool rather than a combat platform — the underlying armor protection is modest, rated for light fragmentation and minimal ballistic resistance.\n\nThe Ghost Chassis is tightly controlled by Tessera, sold exclusively through authorized intelligence-sector procurement channels and issued under strict end-user licensing agreements. Despite this, several units have surfaced in the hands of corporate espionage teams, high-end criminal organizations, and at least one documented case involving a Meridian 88 investigative journalist who used one to document a restricted Tessera research facility — an incident that resulted in significant legal action and the journalist's disappearance.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "Vasquez Biocompatible Materials",
   "tier_availability": "Tier 4+",
   "legality": "Prohibited",
   "base_technologies": [
@@ -68,5 +68,6 @@
     "escape",
     "stealth",
     "tier 4"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

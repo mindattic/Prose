@@ -1,0 +1,57 @@
+{
+  "id": "7d1a4e93c2f047b8a56de301f8820c4a",
+  "name": "NeuralPath FlowState Focus Regulator",
+  "brand_name": "NeuralPath",
+  "product_name": "FlowState",
+  "type": "cyberware",
+  "aliases": [
+    "the lock",
+    "flow chip",
+    "quiet brain",
+    "the dial",
+    "drift fix"
+  ],
+  "category": "cognitive",
+  "body_location": "cranial — prefrontal cortex interface mesh, hairline-mounted access port",
+  "description": "The FlowState is a prefrontal regulatory mesh implant designed to assist individuals whose neurological baseline makes sustained attention, task initiation, and executive function unreliable. The system works by monitoring real-time electrochemical gradients in the prefrontal cortex and anterior cingulate, detecting the characteristic oscillatory patterns associated with attentional drift, impulsivity spikes, and task-switching overload. When the implant identifies these signatures, it delivers precisely calibrated low-amplitude electrical nudges — not stimulation in the dramatic sense, but subtle corrections, like a hand steadying a compass needle — that guide the brain's own chemistry back toward a focused equilibrium. Critically, the FlowState does not suppress personality, emotion, or creativity; NeuralPath's marketing has consistently emphasized that the implant does not create a new cognitive state but rather removes interference from the one the user already has. A companion app allows users to set intensity profiles (light, standard, deep focus) and schedule focus windows around their daily routines, with the implant automatically releasing its guidance during designated rest periods.\n\nThe FlowState is the most commonly prescribed cognitive implant for attention-deficit presentations across all tiers of Meridian 88, having largely replaced oral pharmaceutical regimens by the 2180s for patients who qualify. For Tier 2 workers — line supervisors, data entry clerks, delivery coordinators — the difference between a medicated morning and a FlowState morning is described as the difference between fighting a current and swimming in still water. Students in underfunded Shelf schools who receive subsidized FlowState installations through city health programs consistently show improved academic retention. The implant carries a Licensed classification because its dosing profiles must be calibrated by a certified neural technician at installation, but annual check-ins are brief and most users go years without needing any adjustment.",
+  "manufacturer": "NEURALPATH COGNITIVE SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Licensed",
+  "installation_requirements": "Licensed neural technician required for initial calibration; outpatient clinic procedure, 2 hours; same-day discharge; annual calibration check recommended",
+  "rejection_risk": "Minimal",
+  "maintenance": "Annual calibration appointment; firmware updates delivered passively via NeuralPath's civic health network; no battery replacement required (inductive power from body heat)",
+  "specifications": "{\"target_region\": \"prefrontal cortex + anterior cingulate\", \"intervention_type\": \"low-amplitude electrochemical guidance\", \"user_profiles\": [\"light\", \"standard\", \"deep focus\"], \"scheduling\": \"companion app controlled\", \"power_source\": \"thermoelectric body heat\", \"contraindications\": \"certain seizure disorder histories\", \"pediatric_approval\": \"age 10+ with guardian consent\", \"companion_app\": \"NeuralPath FlowState OS\"}",
+  "side_effects": [
+    "First week: vivid, unusually structured dreams as the brain processes the new equilibrium baseline during sleep",
+    "Occasional mild frontal pressure sensation when the implant engages during high-demand focus windows",
+    "Some users report difficulty initiating social small talk during active deep-focus sessions — the implant doesn't suppress sociability but narrows attentional bandwidth",
+    "Rare: rebound attentional scatter in the hour following a scheduled release window, particularly in new users; resolves within the first month"
+  ],
+  "cultural_context": "The FlowState occupies complicated cultural ground in Meridian 88. Among Tier 2 and Tier 3 families, getting a child implanted is treated with the same practical normalcy as getting corrective lenses — a necessary tool that removes a barrier to participation. On the Shelf, city-subsidized FlowState programs are both celebrated (as one of the few genuine public health investments in the district) and quietly resented (critics note that teaching children to chemically conform to industrial attention standards papers over systemic educational failures). In Tier 4 corporate environments, the FlowState is ubiquitous but rarely mentioned — it's assumed, like having a good chair. A small countercultural movement among Tier 2 and Tier 3 youth has developed around going 'undialed' — deactivating the implant deliberately during creative or social time — as a form of authentic self-expression.",
+  "known_users": [
+    "Students across all tiers, particularly those in demanding academic tracks",
+    "Data workers, logistics coordinators, and administrative professionals",
+    "Parents managing high-cognitive-load household management alongside employment",
+    "Artists who use scheduled off-windows to preserve 'unfiltered' creative states",
+    "City-subsidized recipients in Shelf-tier youth health programs",
+    "Shift workers needing reliable sustained attention across irregular schedules"
+  ],
+  "story_hooks": [
+    "A Shelf school's subsidized FlowState batch has been quietly running a non-consented experimental profile — one that doesn't just regulate focus but subtly reinforces compliance with authority figures; a technician notices the anomalous dosing signature",
+    "A player character's FlowState begins delivering guidance during moments that don't match any focus-window schedule — something is triggering it externally, and the source is transmitting from somewhere in the building they keep returning to",
+    "A corporate whistleblower needs to go 'undialed' to access memories they formed before their FlowState installation — and finds that the unmedicated version of themselves is a stranger they're not sure they trust"
+  ],
+  "street_price": "Φ310–Φ500 (gray-market uncalibrated units; not recommended)",
+  "licensed_price": "Φ780 at NeuralPath licensed clinics; subsidized to Φ0–Φ120 under Meridian 88 Civic Health Access Program for qualifying Tier 1 recipients",
+  "tags": [
+    "cyberware",
+    "cognitive",
+    "lifestyle",
+    "focus",
+    "ADHD",
+    "medical",
+    "subsidized",
+    "neurological"
+  ],
+  "parent_corponation": ""
+}

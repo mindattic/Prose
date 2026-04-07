@@ -1,0 +1,47 @@
+{
+  "id": "f3a0c8e5b2d1947f0e3c5a8b4d2f1960",
+  "name": "ShieldTech Enforcer DM-4 'Crossover'",
+  "type": "weapon",
+  "aliases": [
+    "crossover",
+    "the switch",
+    "double-tap",
+    "enforcer"
+  ],
+  "category": "melee",
+  "description": "The ShieldTech DM-4 is a dual-mode baton designed for security personnel who require a single tool capable of functioning as both a conventional impact weapon and an electric shock device. In its default impact configuration, it is a 56-centimeter reinforced polycarbonate baton with a weighted polymer core — functionally comparable to a traditional PR-24 in mass and balance, capable of delivering meaningful blunt-force strikes. A recessed toggle switch on the lower grip activates the discharge system, energizing a pair of contact electrodes at the tip and along the upper third of the shaft, allowing the weapon to deliver a 55,000-volt shock on contact during a strike or press application.\n\nThe design philosophy addresses a documented problem in security work: the moment of weapon transition. Drawing a separate shock device after establishing impact contact, or vice versa, creates a vulnerability window that has resulted in documented injuries to security personnel. The DM-4 eliminates that window by integrating both functions into a single platform. The electric discharge mode can be activated mid-swing, meaning a strike that makes contact delivers both kinetic and electrical energy simultaneously — a combination ShieldTech's training materials describe as 'synergistic compliance.' Critics have noted that 'synergistic compliance' sounds considerably more benign than 'being hit with a stick that also electrocutes you.'\n\nThe DM-4 is certified under MMSS-7 for licensed security use and is a common upgrade purchase for building security firms whose staff already carry the SB-3. It is priced at a point that makes it accessible to most security contractors but slightly out of reach for casual civilian purchase.",
+  "manufacturer": "SHIELDTECH",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — legal for security contractors with active MMSS-7 credentials; civilian carry requires Tier 2 personal protection permit",
+  "base_technologies": [
+    "reinforced polymer impact construction",
+    "integrated capacitive discharge",
+    "dual-mode toggle switching",
+    "distributed shaft electrode array"
+  ],
+  "specifications": "Length: 560mm\nWeight: 780g\nImpact Mode: Reinforced polycarbonate, polymer-weighted core\nDischarge Voltage: 55,000V\nAmperage: 0.003A\nElectrode Coverage: Tip + upper 200mm of shaft\nMode Switch: Recessed toggle, lower grip\nCharge Capacity: ~35 full discharges\nCharge Time: 3.5 hours (inductive)\nPrice: Φ340",
+  "tactical_use": "Security personnel are trained to use the DM-4 in impact mode for initial distance management and crowd control, transitioning to or combining with discharge mode for close-contact compliance situations. The simultaneous delivery of kinetic and electrical energy during a contact strike significantly increases the probability of immediate subject compliance and is recommended in training for situations where a single-stimulus response has failed. The distributed electrode array along the shaft means that even non-tip strikes can deliver a shock if the discharge mode is active, which requires careful attention to bystander positioning.",
+  "cultural_context": "The DM-4 is called 'the switch' by security professionals who appreciate its versatility, and 'the crossover' by those on the receiving end of its dual-mode capability. In Tier 2 and 3 entertainment districts where nightclub and venue security carry them openly, the DM-4 has become something of a visual symbol of the mid-tier security professional — more serious than the basic SB-3, not as intimidating as Arcturus hardware, occupying the practical middle ground that most of Meridian 88 actually lives in.",
+  "known_users": [
+    "ShieldTech-contracted venue and event security",
+    "transit corridor enforcement personnel",
+    "corporate campus perimeter security",
+    "Tier 2-3 private residential security details"
+  ],
+  "story_hooks": [
+    "A series of incidents at a Tier 3 entertainment district involve victims with bruising and electrical burn patterns consistent with DM-4 use — but the venue whose security staff carry DM-4s has airtight camera records showing nothing. Someone is using a DM-4 in the blind spots, and they know exactly where those blind spots are."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "baton",
+    "electric",
+    "dual_mode",
+    "impact",
+    "security",
+    "licensed"
+  ],
+  "parent_corponation": ""
+}

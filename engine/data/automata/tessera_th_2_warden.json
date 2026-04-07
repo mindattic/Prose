@@ -1,0 +1,54 @@
+{
+  "name": "TESSERA TH-2 'Warden'",
+  "type": "automaton",
+  "classification": "Walking Tank — Urban Pacification",
+  "aliases": [
+    "Warden",
+    "Street Judge",
+    "The Wall"
+  ],
+  "manufacturer": "Thoughtline Messaging",
+  "description": "The TH-2 is a bipedal walking platform standing 3.8 meters tall, designed specifically for urban crowd control and district pacification operations. Unlike the multi-legged designs favored by other manufacturers, TESSERA deliberately chose a humanoid bipedal configuration for the Warden — not for any mechanical advantage, but for psychological impact. A thing that walks like a person but stands twice as tall and is made of armor plate triggers a specific kind of fear that multi-legged platforms do not.\n\nThe Warden's armament is non-lethal by specification and lethal by application. Its primary systems include a chest-mounted sonic cannon capable of incapacitating everyone within a 60-degree cone at ranges up to 100 meters, arm-mounted tear gas launchers, and hip-mounted rubber-bullet gatling systems. All of these are classified as non-lethal. All of them can kill at close range, at sustained exposure, or when used against individuals with certain medical conditions or augmentations. TESSERA's liability documentation runs to 400 pages and absolves the corponation of responsibility in all such cases.\n\nThe Warden walks through crowds. That is its primary tactical application. It walks, slowly and deliberately, through groups of people, and its presence — the height, the sound, the knowledge of what its weapons do — creates a wake of dispersal. TESSERA deploys them in pairs, walking parallel routes through target districts, compressing populations between them.",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed for crowd control — non-lethal designation",
+  "autonomy_level": "Remote operated with autonomous crowd response",
+  "dimensions": "3.8m height, 1.8m shoulder width, bipedal",
+  "weight": "4,200 kg",
+  "power_source": "Hydrogen fuel cell, 36-hour endurance",
+  "locomotion": "Bipedal heavy walker, paved surface optimized",
+  "armament": [
+    "Chest-mounted directional sonic cannon",
+    "2x arm-mounted tear gas launchers",
+    "2x hip-mounted rubber-bullet gatling systems (800 rpm)",
+    "Shoulder-mounted floodlights and loudspeakers"
+  ],
+  "sensors": [
+    "Crowd density analysis",
+    "Facial recognition array",
+    "Acoustic gunshot detection"
+  ],
+  "countermeasures": "Bipedal design is inherently less stable than multi-legged platforms — cable traps across legs at ankle height can topple the unit. Sonic cannon requires forward facing; attacking from behind negates primary weapon. Rubber-bullet gatlings jam in heavy rain.",
+  "known_deployments": [
+    "Meridian 88 district pacification operations (regular)",
+    "Shelf protest suppression",
+    "Circuit district lockdowns during corporate summit events"
+  ],
+  "story_hooks": [
+    "A Warden unit has been hacked to broadcast a revolutionary manifesto through its loudspeakers while walking its suppression route. TESSERA can't shut it down remotely without revealing the vulnerability. The walking propaganda machine is becoming a rallying point.",
+    "Two Wardens are walking a compression pattern through a Shelf neighborhood — standard pacification. But this time, the neighborhood has prepared. Cable traps, signal jammers, and a plan. If they can bring down one Warden on live feed, it changes everything."
+  ],
+  "cultural_context": "The Warden's bipedal design was a calculated psychological choice that backfired culturally. By making the platform humanoid, TESSERA gave anti-automaton artists a perfect metaphor: the faceless giant walking through the neighborhood, indifferent to the people it displaces.",
+  "tags": [
+    "automaton",
+    "walker",
+    "bipedal",
+    "crowd control",
+    "weapon",
+    "tessera",
+    "corporate",
+    "violence",
+    "tier 4"
+  ],
+  "id": "655dd8f49bfac90afe6b3c93d96eae40",
+  "parent_corponation": "Tessera Corponation"
+}

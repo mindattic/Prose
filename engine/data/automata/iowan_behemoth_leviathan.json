@@ -1,0 +1,55 @@
+{
+  "id": "a762ae78f605976bd75c93c944603dfc",
+  "name": "Iowan Behemoth — 'Leviathan'",
+  "type": "automaton",
+  "classification": "Iowan Behemoth",
+  "aliases": [
+    "Leviathan",
+    "The Swimmer",
+    "Dirt Whale"
+  ],
+  "manufacturer": "Unknown — origin disputed",
+  "description": "Leviathan does not walk on the surface. It moves beneath it. The machine is a subterranean borer of staggering proportions — estimated at over 150 meters long and 20 meters in diameter, it tunnels through the earth at depths ranging from 30 to 200 meters. Its passage is detected by the surface effects: a rolling wave of displaced earth, collapsed terrain, and the deep subsonic rumbling that gives nearby settlements minutes of warning before the ground begins to buckle. Leviathan has been responsible for more infrastructure damage than any other Behemoth.\n\nThe tunnels Leviathan leaves behind are structurally sound — reinforced by a secreted mineral compound that hardens into something resembling concrete. The tunnel network beneath Iowa is extensive, and growing. Some sections have been explored and mapped; they connect Behemoth gathering points, mineral deposits, and underground water sources in a pattern that suggests deliberate infrastructure. Palisade builds roads on the surface. Leviathan builds them underground. The two networks intersect at specific points where vertical shafts connect tunnel to road, though no one has observed either machine acknowledging the other.\n\nLeviathan surfaces rarely and unpredictably. When it does, the event is catastrophic — a section of ground the size of a football field erupts upward as the machine's boring head breaches the surface, venting heat and pulverized rock in a geyser of debris. It remains partially surfaced for hours, its upper hull exposed to the sky, before submerging again. During these surfacing events, the exposed hull radiates enough heat to be visible on infrared satellites. No one knows why it surfaces. No one wants to be nearby when it does.",
+  "tier_availability": "N/A — uncontrolled autonomous entity",
+  "legality": "N/A — no jurisdiction claims authority over Behemoths",
+  "autonomy_level": "Fully autonomous — subterranean tunneling behavior",
+  "dimensions": "Estimated 150m+ length, 20m diameter",
+  "weight": "Estimated 25,000+ metric tons",
+  "power_source": "Geothermal tap — harvests heat from deep earth",
+  "locomotion": "Subterranean boring, surface displacement wave (~6 km/h underground)",
+  "armament": [
+    "Boring head capable of destroying anything in its path underground",
+    "Surface eruption event — catastrophic area destruction",
+    "Superheated rock ejection during surfacing",
+    "Tunnel collapse (deliberate or incidental) destroys surface structures"
+  ],
+  "sensors": [
+    "Seismic array (360-degree subsurface mapping)",
+    "Thermal gradient detection",
+    "Mineral composition analysis",
+    "Gravitometric density scanning"
+  ],
+  "countermeasures": "Leviathan is effectively untouchable. It operates underground, beyond the reach of surface weapons. The few attempts to attack it during surfacing events have been thwarted by the extreme heat and debris field. Theoretically, a deep-penetration bunker buster could reach it at shallow depths, but no faction has been willing to deploy that level of ordnance in the wasteland.",
+  "known_deployments": [
+    "Entire Iowa subsurface — tunnel network spans estimated 2,000 km",
+    "Surface eruptions documented 14 times since 2160",
+    "Tunnels confirmed extending into Missouri, Illinois, and Wisconsin"
+  ],
+  "story_hooks": [
+    "Leviathan's tunnel has intersected the foundation of a settlement's water processing plant. The tunnel is structurally sound and leads somewhere interesting — but entering it means traveling through Leviathan's domain, and the machine could return at any time.",
+    "Seismographs show Leviathan is boring directly toward the underground infrastructure of a major city. At current speed, it will breach the city's sublevel in six days. The city has no weapon that can reach it."
+  ],
+  "cultural_context": "Leviathan is the invisible threat — the one you can't see coming until the ground starts moving. Wasteland construction always includes seismic monitors, and 'Leviathan drills' — emergency evacuations triggered by subsonic rumbling — are practiced in every settlement along its known routes. Children are taught to recognize the sound before they learn to read.",
+  "tags": [
+    "automaton",
+    "behemoth",
+    "iowan",
+    "subterranean",
+    "borer",
+    "colossal",
+    "wasteland",
+    "hazard",
+    "tunneling"
+  ],
+  "parent_corponation": ""
+}

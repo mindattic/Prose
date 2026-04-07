@@ -1,0 +1,46 @@
+{
+  "id": "f89a400e7d36077245bee267cf97c968",
+  "name": "Hearthstone Firearms Defender-38 'Snubnose'",
+  "type": "weapon",
+  "aliases": [
+    "Snubnose",
+    "Defender",
+    "Snubby"
+  ],
+  "category": "revolver",
+  "description": "The Hearthstone Defender-38 is a five-shot double-action revolver chambered in .38 Special with a two-inch barrel, designed as the ultimate simple defensive weapon. The frame is aluminum alloy to reduce weight, the hammer is shrouded to prevent snagging on clothing during draw, and there is no adjustable sight — just a milled groove in the top strap that serves as a rudimentary sight channel.\n\nThe Snubnose is the revolver equivalent of the Guardian-12 — a weapon for people who want something simple, safe, and effective at arm's length. The two-inch barrel makes it genuinely pocketable, and the shrouded hammer allows a smooth draw from a coat pocket without catching on fabric. Five rounds of .38 Special won't win a prolonged firefight, but at the ranges where this weapon will be used — typically less than three meters — the point is to survive the first ten seconds.\n\nHearthstone sells the Defender-38 with a soft fabric pocket holster and a five-round speedloader. Their marketing is characteristically practical: 'Five answers to one question.' The weapon sells steadily across all tiers, from Shelf grandmothers who keep one in their housecoat pocket to Mid executives who slip one into their overcoat as a deep-concealment backup.",
+  "manufacturer": "HEARTHSTONE FIREARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — minimal registration required",
+  "base_technologies": [
+    "Aluminum alloy frame",
+    "Shrouded hammer",
+    "Short barrel"
+  ],
+  "specifications": "caliber: .38 Special\neffective_range: 8 meters\nrate_of_fire: Double-action revolver\nmagazine_capacity: 5 rounds (cylinder)\nweight: 0.38 kg",
+  "tactical_use": "A minimal defensive revolver for close-range emergency use. The shrouded hammer enables snag-free pocket draw. Five rounds of .38 Special provide adequate close-range stopping power against unarmored targets. Not accurate beyond conversational distance. Designed to be drawn and fired at contact range during surprise encounters.",
+  "cultural_context": "The Snubnose crosses all social boundaries. It is the one firearm that Shelf residents and Mid executives carry for the same reason in the same way — tucked in a pocket, available instantly, hopefully never needed. Its universal presence is a quiet commentary on the baseline anxiety that pervades all tiers of Meridian 88.",
+  "known_users": [
+    "Cross-tier concealed carriers",
+    "Elderly residents",
+    "Deep-concealment backup carriers",
+    "First-time revolver buyers"
+  ],
+  "story_hooks": [
+    "A dying person hands a Snubnose to a stranger with the words 'Keep this safe' — the weapon contains a microdrive embedded in the grip that holds information worth killing for.",
+    "A trend of decorating Snubnoses with personalized grip panels becomes popular in Mid social circles, turning a weapon of anxiety into a fashion accessory."
+  ],
+  "ammunition_type": [
+    ".38 Special"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "snubnose",
+    "concealed",
+    "simple",
+    "universal",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

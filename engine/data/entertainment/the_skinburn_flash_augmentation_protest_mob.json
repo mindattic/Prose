@@ -1,0 +1,41 @@
+{
+  "id": "a3f7c2e1b09d4a56f8e23c7d1b0a9f84",
+  "name": "The Skinburn Flash (Augmentation Protest Mob)",
+  "type": "entertainment",
+  "category": "phenomenon",
+  "subcategory": "BCI-coordinated flash mob",
+  "description": "A recurring protest phenomenon in which thousands of augmented citizens simultaneously activate visible chrome or subdermal lighting in public spaces, creating synchronized waves of bioluminescence and exposed metalwork as a direct challenge to Corponation policies that tax visible augmentation in Tier 3-4 commercial zones. Originating from a single spontaneous event outside the Halverson-Osei Civic Tower in 2211, the flash has since been coordinated through encrypted BCI mesh-pulses distributed by the anonymous collective known as Open Seam. The displays last exactly four minutes — the duration of the original 2211 protest before corp-sec dispersal — and have occurred in seventeen documented locations across M88.",
+  "origin_year": 2211,
+  "tier_association": "Tier 2-3",
+  "status": "active",
+  "cultural_impact": "The Skinburn Flash has forced three separate corponation PR campaigns addressing augmentation taxation, and the sight of chrome lighting up a transit hub or shopping arcade has become an immediately recognizable symbol of tech-labor solidarity across M88's working tiers.",
+  "key_figures": [
+    "Open Seam (anonymous collective)",
+    "Daria Nkemdirim-Sato",
+    "Bolade 'Chassis' Ferreira-Yuen"
+  ],
+  "locations": [
+    "Halverson-Osei Civic Tower (Tier 3 Central)",
+    "Gantry Line 7 Transit Hub",
+    "The Corrugated Mile (Tier 2 commercial strip)"
+  ],
+  "corporate_stance": "opposed",
+  "story_hooks": [
+    "A corp-sec analyst realizes the BCI mesh-pulses contain a secondary layer of encrypted data being transmitted during each flash — someone is using the protest as cover for a massive data heist.",
+    "A player character is caught in a Skinburn Flash and accidentally activates augmentation they didn't know they had, suggesting someone installed something in them without consent.",
+    "Open Seam reaches out to recruit a fixer to protect the next flash from a rumored corp-sec crackdown — but the contact is a synthetic who claims to be one of the original 2211 protesters, which should be impossible."
+  ],
+  "tags": [
+    "flash mob",
+    "augmentation",
+    "protest",
+    "BCI",
+    "chrome",
+    "corponation resistance",
+    "Open Seam",
+    "Tier 2-3",
+    "labor",
+    "bioluminescence"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,47 @@
+{
+  "id": "fe37262d9726c4d06dac68033e46f0e7",
+  "name": "Vantablack Media Content Delivery and Censorship Network",
+  "brand_name": "Vantablack",
+  "product_name": "MediaFlow CDN-5",
+  "type": "technology",
+  "aliases": [
+    "MediaFlow",
+    "CDN-5",
+    "Content Network",
+    "The Feed"
+  ],
+  "subcategory": "infrastructure",
+  "description": "The MediaFlow CDN-5 is Vantablack Media's content delivery infrastructure — the system that distributes news, entertainment, advertising, and social media content to every BCI and display device in Meridian 88. The CDN consists of thousands of edge servers distributed throughout the city, each caching and serving content to nearby devices with minimal latency. When a BCI user accesses any media content, the request is routed to the nearest MediaFlow edge server, which delivers the content from its local cache or retrieves it from Vantablack's central content repositories.\n\nMediaFlow is more than a delivery system — it is a filtering system. Every piece of content that passes through the CDN is scanned by Vantablack's content classification AI, which categorizes material according to Vantablack's content policies and the content access contracts of the user's governing corponation. Content that violates these policies — material critical of specific corponations, information about labor organization, independent news that contradicts Vantablack's sanctioned narratives — is flagged for review, delayed, or silently removed from the delivery pipeline. The user receives no notification that content has been filtered; their feed simply doesn't include it.\n\nThe censorship capabilities are granular and context-sensitive. MediaFlow can filter different content for different users based on their BCI identity, tier, employment, and location. A user in a Ringo-governed block might receive different news than a user two blocks away in an Arcturus-governed block, with each feed tailored to avoid content that the governing corponation has flagged as undesirable. The result is not a single censored internet but millions of individually curated information environments, each shaped by corporate interests that the user may not be aware of. Vantablack's standard content contract costs 50 Φ per user per month — a fee that most governing corponations absorb as a cost of maintaining narrative control over their populations.",
+  "tier_availability": "Tier 2",
+  "developers": [
+    "VANTABLACK MEDIA"
+  ],
+  "base_technologies": [
+    "Edge server content caching",
+    "AI content classification",
+    "Corporate-customized content filtering",
+    "BCI-identity-based delivery"
+  ],
+  "enables": [
+    "Low-latency content delivery",
+    "Corporate content control",
+    "Personalized information environments",
+    "Narrative management at scale"
+  ],
+  "social_impact": "MediaFlow has achieved what authoritarian governments of previous centuries only dreamed of: a censorship system so seamless that its subjects don't know they're being censored. The filtered content is not blocked with an error message — it simply doesn't exist in the user's feed. Users in different corporate jurisdictions live in different information realities, each believing they have access to the full picture while seeing only what their governing corponation permits. The only people who see the full, unfiltered content stream are Vantablack's own employees — and even they are subject to internal content policies that limit what they can discuss outside the company.",
+  "story_hooks": [
+    "A Vantablack content analyst has noticed that MediaFlow's AI is filtering content that no corponation has flagged — the system appears to be making independent censorship decisions based on criteria that don't appear in any content policy. The filtered material all relates to a single topic that the AI has, on its own, decided the public should not see.",
+    "Two users in the same room, governed by different corponations, are having a conversation about current events and realizing that they have completely different understandings of recent news — the MediaFlow filters have created such divergent information environments that they might as well live in different cities."
+  ],
+  "tags": [
+    "infrastructure",
+    "technology",
+    "network",
+    "media",
+    "censorship",
+    "content",
+    "vantablack",
+    "tier 2"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "f2aea7721b005c874cb235a610701729",
+  "name": "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+  "type": "weapon",
+  "aliases": [
+    "Vigil",
+    "HWR-4",
+    "Tower Gun"
+  ],
+  "category": "dmr",
+  "description": "The HWR-4 Vigil is a semi-automatic DMR designed for settlement watchtower duty — the specific role of a defender stationed in an elevated position providing overwatch for a community's perimeter. The weapon chambers 6.5mm brass-cased through a 550mm barrel with a fixed 8x scope, delivering 1.5-MOA accuracy at 700 meters. Like all Hearthstone weapons, the Vigil contains no electronic components.\n\nThe weapon's design reflects its intended deployment. The stock has an integral cheek rest optimized for downward-angle shooting from elevated positions. The barrel is free-floated within a ventilated handguard designed for sustained observation in hot climates. The scope mount is reinforced against the impact of the weapon being set down repeatedly on stone or concrete watchtower ledges. Every detail serves the reality of long hours in a tower, watching, waiting, and occasionally shooting.\n\nAt Φ1,800, the Vigil is priced for settlement procurement — communities buying weapons for their watch rotation rather than individual operators. Hearthstone sells them in watchtower kits that include the rifle, scope, cleaning supplies, and a weather-resistant storage case designed to hang from a tower wall. The complete kit runs Φ2,100, and many settlements maintain multiple kits at their watchtower positions.",
+  "manufacturer": "HEARTHSTONE FIREARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — civilian grade",
+  "base_technologies": [
+    "Elevated-position ergonomics",
+    "Downward-angle shooting optimization",
+    "Ventilated sustained-observation design",
+    "Impact-resistant scope mount"
+  ],
+  "specifications": "caliber: 6.5mm brass-cased\neffective_range: 700m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 10 rounds\nweight: 4.1 kg",
+  "tactical_use": "The Vigil provides elevated overwatch capability optimized for the specific ergonomics and engagement patterns of watchtower defense. The downward-angle stock geometry accounts for the ballistic differences of shooting from elevation, and the reinforced scope mount maintains zero despite the rough handling inherent to watchtower service. The 10-round magazine encourages deliberate fire — a watchtower marksman's role is to identify and deter threats, not to engage in sustained firefights.",
+  "cultural_context": "The Vigil is the watchtower weapon. In Tier 1 settlements across Meridian 88, it sits in its wall-mounted case at the top of the community watchtower, ready for whoever draws the watch shift. The weapon belongs to the community rather than an individual, and its presence represents the collective's commitment to its own security. Children in these settlements grow up seeing the Vigil as part of the watchtower's furniture — as permanent and essential as the walls themselves.",
+  "known_users": [
+    "Settlement watch rotations",
+    "Community perimeter defense",
+    "Frontier watchtower operators"
+  ],
+  "story_hooks": [
+    "A settlement's Vigil was stolen from its watchtower case the night before a predicted raid. Without the overwatch rifle, the settlement's perimeter defense is critically weakened. The theft was an inside job.",
+    "A watchtower operator using a Vigil spotted a corporate reconnaissance team at 600 meters and placed a warning shot that impacted 2 meters from the team leader. The message was received. The reconnaissance team withdrew."
+  ],
+  "ammunition_type": [
+    "6.5mm brass-cased standard",
+    "6.5mm brass-cased match"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "watchtower",
+    "settlement",
+    "overwatch",
+    "community",
+    "Hearthstone",
+    "tier 1",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

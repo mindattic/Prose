@@ -1,0 +1,45 @@
+{
+  "id": "d91b4e7a2f0c83561e4d7b9a3c2f1e08",
+  "name": "Voss ChromeVeil Cosmetic Interface Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "A precision-fitted glove designed to cosmetically cover chrome hands and forearm augmentations while maintaining full digital functionality. Exterior is matte synth-skin in a wide range of melanin tones and undertones, surface-textured to approximate pore structure at close range. The palm and finger interiors are lined with signal-transparent graphene mesh that allows BCI handshake and capacitive surface interaction without removal.\n\nCutaway options at the fingertips are available for users who need unmediated tactile feedback. The wrist seal bonds magnetically to most standard chrome forearm flanges, creating a seamless silhouette under a suit cuff.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "synth-skin polymer",
+    "graphene mesh lining",
+    "magnetic wrist seal ring",
+    "micro-pore surface texture layer",
+    "BCI-transparent signal film"
+  ],
+  "functionality": "Allows capacitive touch and BCI handshake through the glove material; magnetic wrist seal bonds to chrome forearm flanges; optional fingertip cutaways; signal-transparent palm enables device interaction without removal.",
+  "what_it_says": "You have chrome but you're choosing when the world sees it.",
+  "worn_by": [
+    "junior corporate executives with arm augments",
+    "client-facing specialists",
+    "augmented professionals in conservative firms",
+    "upwardly mobile Tier 3 workers managing optics"
+  ],
+  "manufacturer": "Voss Adaptive Systems",
+  "price_range": "Φ210–Φ480",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A client insists their negotiating partner is fully biological — but someone noticed the magnetic seam at the wrist cuff during a handshake.",
+    "A counterfeit run of these gloves uses non-signal-transparent film, causing BCI dropout at critical moments during high-stakes meetings.",
+    "An investigator needs to identify a suspect by their chrome hand model — but the ChromeVeil obscures the manufacturer markings entirely."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "aug-compatible",
+    "chrome-cover",
+    "cosmetic",
+    "BCI",
+    "interface",
+    "tier-3",
+    "tier-4",
+    "voss"
+  ],
+  "parent_corponation": ""
+}

@@ -9,7 +9,7 @@
   ],
   "category": "explosive",
   "description": "The SRC-2 does not detonate in the conventional sense. It anchors to a surface via four magnetized contact prongs and then drives a precisely tuned low-frequency resonance pulse directly into the substrate — concrete, steel plate, composite flooring, even packed earth. The pulse is calibrated to match the structural resonance frequency of the target material, which the charge's onboard sensor array calculates in the 0.8 seconds after contact. At resonance frequency, the charge amplifies the vibration in a compounding wave pattern until the structural integrity of the material fails catastrophically from within. The external surface may show no visible damage until the moment of collapse.\n\nThe SRC-2's defining characteristic is that its destructive energy is entirely directional — downward and outward through the substrate, not upward into open air. Personnel standing on the affected surface experience the failure as the floor or wall simply ceasing to exist beneath them. There is no pressure wave, no heat, no shrapnel — just sudden, catastrophic structural dissolution. This makes standard blast-protection gear completely irrelevant. Hardened armor rated for conventional explosives offers no protection whatsoever if the floor you are standing on liquefies into rubble.\n\nPalladian Construction originally developed resonance-charge technology for controlled demolition of legacy infrastructure in Meridian 88's lower wards — a way to drop a building precisely without disturbing adjacent structures. The SRC-2 is a direct weaponization of that demolition patent, adapted by a third-party contractor that Palladian has spent four years unsuccessfully suing into nonexistence. The original demolition variant required a licensed operator and a 48-hour structural survey. The SRC-2 requires neither.",
-  "manufacturer": "PALLADIAN CONSTRUCTION (original patent); unlicensed derivative manufacture attributed to RINGO CORPONATION shell subsidiary",
+  "manufacturer": "Halloran Security Consulting",
   "tier_availability": "Black market",
   "legality": "Prohibited",
   "base_technologies": [
@@ -47,6 +47,8 @@
     "control",
     "market",
     "armor",
-    "energy"
-  ]
+    "energy",
+    "lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

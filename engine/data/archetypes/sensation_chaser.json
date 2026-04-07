@@ -1,0 +1,33 @@
+{
+  "id": "ee9a6d733687e43908e3333f296f1922",
+  "name": "Sensation Chaser",
+  "type": "archetype",
+  "category": "desire",
+  "description": "Needs to feel more, harder, deeper, just to know they're alive",
+  "behavioral_signature": "Pursues extreme experiences for the intensity rather than the outcome",
+  "under_stress": "Escalates sensation-seeking to dangerous levels",
+  "at_rest": "Bored with normal life, constantly planning the next hit",
+  "will_always": [
+    "seek out intensity"
+  ],
+  "will_never": [
+    "choose moderation voluntarily"
+  ],
+  "unless": [
+    "the next sensation would kill them and they're not ready to die"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Risk Taker",
+      "threshold": 0.8,
+      "context": "sensation seeking"
+    }
+  ],
+  "opposite_of": [
+    "Stoic"
+  ],
+  "tags": [
+    "thrill-seeking",
+    "intense"
+  ]
+}

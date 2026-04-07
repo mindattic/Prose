@@ -1,0 +1,51 @@
+{
+  "id": "2b6e9d3c0f847a15e9d3c0f847a15e9d",
+  "name": "Solenne Spire Executive Biosync Power Suit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "This is not clothing. This is architecture. The Solenne Spire Executive Biosync Power Suit is a bespoke commission requiring three biometric fittings, two consultation sessions, and a minimum eight-week lead time. The jacket is a double-breasted cut in deep anthracite biosync wool — a living-fiber fabric that actively monitors the wearer's core temperature and adjusts thermal output within ±0.5 degrees, fed by a paper-thin thermofilm layer sewn between the outer shell and the silk-analog lining. The posture-enhance inner structure — a network of memory-shape microfilament boning — subtly shifts when the wearer slouches, providing passive correction without discomfort. The trousers are perfectly tapered in matching biosync wool, with gene-compatible construction throughout: a discreet tail-channel runs the full length of the back waistband and terminates in a self-sealing vent at the trouser seat, accommodating tails up to 60cm in diameter without visible alteration to the exterior silhouette. A bespoke horn-loop collar system is available as a fitting option on the jacket. The shirt is a privacy-weave silk-analog in pale silver with a standing collar — the privacy-fabric lining blocks passive BCI signal harvesting, meaning no ambient scanner in the building reads anything off the wearer's neural hardware unless they choose to allow it. Footwear is a hand-lasted welt-sewn Oxford in genuine heritage leather with a biosync insole that adjusts arch support in real time. No visible branding anywhere.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "biosync living-fiber wool",
+    "memory-shape microfilament boning",
+    "thermofilm thermal regulation layer",
+    "privacy-weave silk-analog shirting",
+    "heritage leather hand-lasted Oxford",
+    "biosync adaptive insole"
+  ],
+  "functionality": "Active thermal regulation ±0.5°C via thermofilm layer, passive posture correction via memory-shape boning, gene-compatible tail-channel and optional horn-loop collar, privacy-weave shirt blocks passive BCI signal harvesting, biosync insole for real-time arch support, RFID-null exterior shell, no visible branding",
+  "what_it_says": "Power dresses down. At Tier 5, the suit doesn't signal status through visible luxury markers — it signals it through the total absence of effort. No logos. No augmentation displays. No visible technology. The suit simply makes the wearer look more composed, more present, and more correct than everyone else in the room, and it does this invisibly. The person wearing this does not need you to know how much it cost.",
+  "worn_by": [
+    "Tier 5 corponation C-suite executives",
+    "Spire-level power brokers",
+    "old-money board members",
+    "senior diplomatic liaisons",
+    "geneware-modified executives who require discreet accommodation"
+  ],
+  "manufacturer": "Solenne Atelier — Bespoke Spire Division (commission only)",
+  "price_range": "Φ 18,000–Φ 45,000+ (bespoke commission, price varies by fitting complexity and gene-compatible options)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A character obtains a stolen Solenne biosync suit — it fits well enough, but the biometric thermofilm is calibrated to the original owner, and the suit's thermal behavior subtly misfires under stress, marking the impersonator to anyone who knows what to look for.",
+    "The privacy-weave shirt is blocking more than passive BCI harvesting — it's also blocking an emergency locator signal that Spire security embedded in all executive-tier garments after a kidnapping incident; the wearer doesn't know the signal exists, and neither does their security detail.",
+    "During a high-stakes boardroom confrontation, a character notices that the opposing executive's posture is unnaturally perfect — they recognize the Solenne biosync correction system and understand that the executive is more nervous than they appear, because the suit is working overtime."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_5",
+    "aug_compatible",
+    "gene_compatible",
+    "solenne",
+    "bespoke",
+    "biosync",
+    "spire",
+    "privacy_fabric",
+    "posture_enhance",
+    "thermal_regulation",
+    "power_suit"
+  ],
+  "parent_corponation": ""
+}

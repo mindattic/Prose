@@ -1,0 +1,47 @@
+{
+  "id": "a3f7c2e1b09d4856f1e2a3c4d5b6e7f8",
+  "name": "Kelvex Transit Ground Crew All-Weather Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A complete daily rig for Kelvex MagRail ground crew — the workers who keep the platforms running between the operator cabin and the maintenance tunnels. The outer layer is a hip-length anorak in Kelvex corporate navy, bonded synth-nylon with reflective silver tape running diagonally across the chest and down both sleeves, bright enough to catch mag-platform floodlights at distance. The Kelvex logo — a stylized K bisected by a transit line — is heat-pressed over the left breast in white, with an embroidered crew number patch on the right. Underneath sits a charcoal ribbed thermal base layer with a half-zip mock neck, tough enough to function as standalone outerwear on mild days. The trousers are Goretek HaulMaster-cut in the same navy, with reinforced knee panels in gunmetal grey ballistic nylon, deep cargo pockets sealed with magnetic closures, and a dedicated tool loop strip along the right thigh. A wide nylon webbing belt in safety orange carries a folding multi-tool, key fob lanyard, and a clip-point for a tablet sleeve. Boots are steel-capped platform treads with anti-static soles and a side-zip for quick removal at shift end. A close-fitting knit cap in charcoal with a single reflective stripe completes the look, often pulled low over a neural port housing on the skull's rear.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "bonded synth-nylon",
+    "ribbed thermal synth-cotton",
+    "ballistic nylon",
+    "nylon webbing",
+    "reflective silver tape",
+    "anti-static rubber composite"
+  ],
+  "functionality": "All-weather wind and light-rain resistance, thermal base layer for cold platform tunnels, anti-static soles for electrified rail environments, magnetic cargo pocket closures prevent tool loss on moving platforms, neural port clearance in knit cap, aug-compatible sleeve channels for chrome forearm users",
+  "what_it_says": "This is someone who shows up, does the work, and goes home. The Kelvex branding signals corporate employment — stable wages, union card, maybe a pension if the corponation honors it. The reflective tape says they work near things that move fast. The worn boot toes and faded knee panels say they've been doing it for years.",
+  "worn_by": [
+    "MagRail ground crew",
+    "platform maintenance workers",
+    "transit infrastructure technicians",
+    "Kelvex shift supervisors on the floor"
+  ],
+  "manufacturer": "Kelvex Transit Systems (corponation-issued uniform, boots sourced from Veldtmann contract)",
+  "price_range": "Φ180–Φ260 (company-subsidized at Φ40–Φ80 out of pocket for workers)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A ground crew worker finds a deactivated synthetic wedged in the maintenance crawlspace beneath Platform 9 — wearing the same Kelvex uniform, crew number and all, but the synthetic was never on the roster.",
+    "The reflective tape on this rig is the exact pattern a witness described seeing flee a mag-platform incident that killed two passengers; the wearer claims they were on the opposite end of the line.",
+    "Kelvex has just announced a new automated ground crew rollout — the worker in this rig has two weeks before their position is dissolved, and they've started quietly removing the company patch."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "transit",
+    "kelvex",
+    "all-weather",
+    "reflective",
+    "aug_compatible",
+    "corporate_uniform",
+    "working_class"
+  ],
+  "parent_corponation": ""
+}

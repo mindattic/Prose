@@ -1,0 +1,41 @@
+{
+  "id": "b7e0a4d2c5f8137b4e0a7d2c5f8130b4",
+  "name": "Ashton & Reyes Mag-Heel Oxford",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A dress oxford with a discreet ferromagnetic heel plate, designed for augmented professionals who work in secure corporate environments with maglock flooring. The shoe itself is impeccable — burnished synthetic cordovan, a sleek silhouette, double-stitched welt. Nothing about it reads as industrial or modified. The mag-heel is invisible from the outside.\n\nWorn in Tier 4 boardrooms and Tier 3 office floors alike. The idea is that you look composed and formal while being able to operate in any environment your chrome legs need to navigate.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "synthetic cordovan leather",
+    "ferromagnetic heel plate",
+    "leather insole",
+    "leather-wrapped rubber outsole"
+  ],
+  "functionality": "Concealed ferromagnetic heel plate provides maglock compatibility. Invisible from exterior. Compatible with standard industrial and corporate-grade maglocked flooring.",
+  "what_it_says": "You're polished, augmented, and neither of those things is anyone's business unless you choose to make it so.",
+  "worn_by": [
+    "augmented corporate executives",
+    "Tier 4 professionals with prosthetic limbs",
+    "security consultants who dress for boardrooms"
+  ],
+  "manufacturer": "Ashton & Reyes",
+  "price_range": "Φ175 - Φ200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The mag-heel frequency is calibrated to a specific corporate client's flooring spec — wearing them in a rival facility could flag you on their security grid.",
+    "A pair was found at a crime scene with the heel plate surgically removed — someone needed the ferromagnetic component for something else entirely."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 4",
+    "aug-compatible",
+    "maglock",
+    "formal",
+    "oxford",
+    "corporate",
+    "concealed-tech"
+  ],
+  "parent_corponation": ""
+}

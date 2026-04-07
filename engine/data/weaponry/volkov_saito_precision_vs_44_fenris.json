@@ -1,0 +1,48 @@
+{
+  "id": "09f16612755fb04667ad42a555b94935",
+  "name": "Volkov-Saito Precision VS-44 'Fenris'",
+  "type": "weapon",
+  "aliases": [
+    "Fenris",
+    "VS-44",
+    "Wolf Rifle"
+  ],
+  "category": "assault_rifle",
+  "description": "The VS-44 Fenris is a heavy assault rifle chambered in 8.6mm caseless, designed to bridge the gap between standard infantry rifles and crew-served weapons. At nearly five kilograms unloaded, the Fenris is too heavy for conventional patrol use but devastating in the hands of augmented operators with reinforced skeletal systems or powered exoframes. Its 8.6mm round delivers energy comparable to legacy .338 Lapua at half the range, shredding Level III armor and punching through light vehicle panels.\n\nVolkov-Saito designed the weapon for operators who are themselves weapons platforms — individuals whose physical augmentation allows them to handle recoil and weight that would be punishing for baseline humans. The stock interfaces with common spinal-mount weapon stabilization systems, and the BCI link includes a recoil-prediction algorithm that pre-tensions the operator's augmented musculature milliseconds before each shot.\n\nThe Fenris is not subtle. Its muzzle report is thunderous, its muzzle flash is visible in daylight, and its terminal effects are gratuitously destructive. Volkov-Saito sells it as a force multiplier for augmented combatants who need to deliver crew-served firepower from a man-portable platform.",
+  "manufacturer": "VOLKOV-SAITO PRECISION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — augmented operator certification required",
+  "base_technologies": [
+    "Heavy-caliber caseless system",
+    "Spinal-mount stabilization interface",
+    "BCI recoil-prediction algorithm",
+    "Augmented operator optimization"
+  ],
+  "specifications": "caliber: 8.6mm caseless\neffective_range: 700m\nrate_of_fire: 450 rpm (cyclic)\nmagazine_capacity: 20 rounds\nweight: 4.9 kg",
+  "tactical_use": "The Fenris turns a single augmented operator into a fire support element. Its 8.6mm round penetrates cover that stops intermediate calibers, and the recoil-prediction system maintains accuracy through sustained fire that would be impossible for unaugmented shooters. In urban combat, a Fenris operator can suppress hardened positions and engage light vehicles without requiring dedicated anti-materiel weapons. The weapon's weight and recoil make it impractical for baseline human use.",
+  "cultural_context": "The Fenris occupies an uncomfortable space in the augmentation debate. It is a weapon that requires augmentation to use effectively, making it a tool exclusively for the enhanced. This exclusivity appeals to augmented operators who view their modifications as competitive advantages, while baseline humans see it as another door closed by the augmentation gap. In some communities, carrying a Fenris is a statement: I am more than you.",
+  "known_users": [
+    "Augmented PMC operators",
+    "Exoframe-equipped security forces",
+    "Heavy assault specialists"
+  ],
+  "story_hooks": [
+    "A baseline human operator has been using a Fenris without augmentation, absorbing punishing recoil that is slowly destroying their shoulder and spine. They cannot afford the augmentations but need the weapon's firepower to survive.",
+    "A series of vehicle ambushes using Fenris rifles points to an augmented operator gone rogue — but the ballistic signatures suggest the same weapon is appearing in multiple cities simultaneously."
+  ],
+  "ammunition_type": [
+    "8.6mm caseless",
+    "8.6mm caseless AP"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "heavy",
+    "augmented",
+    "high_caliber",
+    "Volkov-Saito",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

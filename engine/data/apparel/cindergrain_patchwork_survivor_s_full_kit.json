@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2e1b09d456f8a2c3e7f1d0b9a45",
+  "name": "Cindergrain Patchwork Survivor's Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A head-to-toe layering system assembled over years rather than purchased at once. The base is a long-sleeved thermal compression shirt in faded ash-gray, its original branding long since worn to illegibility, seams reinforced with overlapping strips of orange self-repair tape that have themselves begun to fray at the edges. Over that sits a quilted vest of salvaged insulation panels — mismatched grays and a single panel of rust-brown — stitched together with thick black upholstery thread in visible X-patterns. The outer layer is a hip-length work jacket in washed-out olive canvas, its left sleeve replaced entirely with a sleeve from a different jacket in charcoal wool, and its collar stiffened with a strip of recycled polymer sheeting to deflect acid-rain splash. Both chest pockets are reinforced with riveted leather patches. Cargo pants in dark charcoal synthetic twill hang heavy with accumulated gear — four deep pockets on each thigh sealed with mismatched industrial snaps, the knees double-patched in rubber-backed fabric for crawling on Shelf grating. A worn leather belt carries a utility loop on each hip. Boots are a resoled pair of thick-soled work boots, the uppers cracked and sealed repeatedly with black rubber sealant compound, the toe caps re-wrapped in salvaged steel plate fixed with pop rivets. A knit balaclava in dark gray — hand-stitched where moth damage opened holes — can be pulled up to cover the lower face against acid mist.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged thermal compression fabric",
+    "quilted insulation panels",
+    "olive canvas",
+    "charcoal wool",
+    "recycled polymer sheeting",
+    "riveted leather patches",
+    "synthetic twill",
+    "rubber-backed fabric",
+    "self-repair tape",
+    "upholstery thread",
+    "rubber sealant compound",
+    "salvaged steel plate",
+    "hand-knit wool"
+  ],
+  "functionality": "Multi-layer acid-rain resistance via polymer collar and sealant-treated outer shell. Deep cargo pockets for survival gear. Knee reinforcement for crawling through industrial ruins. Balaclava seals against airborne particulate. Boot toe caps provide impact protection. Self-repair tape maintains structural integrity of failing seams.",
+  "what_it_says": "This person has survived the Shelf long enough to know exactly what kills you and has patched against each threat individually. The mismatched materials aren't carelessness — they're a biography of close calls and salvage runs. No single piece is new. Everything has been repaired at least twice.",
+  "worn_by": [
+    "long-term Shelf residents",
+    "salvage runners",
+    "tunnel squatters",
+    "scrapyard workers",
+    "infrastructure scavengers"
+  ],
+  "manufacturer": "Self-assembled from salvage, no single maker",
+  "price_range": "Φ12–Φ40 (assembled over time from scrap markets)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Circuit-tier investigator stops the wearer at a checkpoint — the self-repair tape on the jacket matches a chemical signature from a recent industrial break-in, and suddenly a survival kit becomes evidence.",
+    "The salvaged steel toe caps on the boots are stamped with a Crucible Corponation serial number from a batch reported stolen three years ago — someone is very interested in finding out where the wearer got them.",
+    "In a Shelf food line, another survivor recognizes the charcoal wool sleeve as having been cut from a jacket belonging to someone who disappeared six months ago."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "layered",
+    "acid_resistant",
+    "salvage",
+    "survival",
+    "patched",
+    "aug_compatible"
+  ],
+  "parent_corponation": ""
+}

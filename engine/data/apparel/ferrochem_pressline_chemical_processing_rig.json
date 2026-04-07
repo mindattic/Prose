@@ -1,0 +1,48 @@
+{
+  "id": "7b1e5d3a9c2f4e8b0d6a3f7c1e2b5d9a",
+  "name": "Ferrochem Pressline Chemical Processing Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Ferrochem's standard floor kit for pressline workers handling caustic synthesis compounds — a full-coverage rig in industrial teal with safety-orange contrast panels across the chest, upper arms, and boot caps. The outer shell is a heavyweight chembarrier-treated coverall with sealed seams, rated for Class 2 chemical splash exposure. The Ferrochem logo — a stylized double-helix inside a hexagon — is heat-pressed in reflective white on the back and left chest. The wrists terminate in deep cuff rings designed to lock with standard-issue nitrile-blend gauntlet gloves, which are tucked into a thigh utility loop when not in active use. A built-in spine channel runs the coverall's back panel, accommodating spinal augmentation rigs up to Class 3 without pinching or seal compromise. Underneath is a Pragma Systems adaptive base layer in bone white that wicks and regulates temperature through twelve-hour shifts in elevated-heat environments.\n\nFootwear is the Varsen ChemBarrier Pull-On in teal-dyed rubber with a steel midsole and chemical-rated outsole. A full-face shield visor clips to a reinforced collar ring and hangs at the chest when not deployed. Workers typically customize the rig with handwritten name tags in paint marker over the issued name patch (the printed ones peel in three weeks), and most develop small personal tells — a colored rag tucked in the left pocket, a string of prayer beads looped through a utility ring, a sticker from a street vendor half-melted by solvent spray. This is a serious piece of protective gear worn by people who understand exactly what it protects against.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "chembarrier-treated heavyweight synthcotton shell",
+    "sealed chembarrier seams",
+    "nitrile-blend gauntlet gloves",
+    "Pragma Systems adaptive base layer",
+    "chemical-rated rubber outsole",
+    "reflective heat-press logo print",
+    "reinforced collar ring"
+  ],
+  "functionality": "Class 2 chemical splash protection, sealed seam construction, spine channel for augmentation rigs up to Class 3, wrist cuff-lock system for gauntlet integration, full-face visor clip mount, steel midsole, temperature-regulating base layer, thigh utility loop for glove storage",
+  "what_it_says": "You work with things that can dissolve your skin, and the company has decided your continued function is worth the cost of this suit. There's no glamour here, but there's competence — workers who wear this rig know their protocols cold, because the alternative is a chemical burn incident report and a week in a Lazarus clinic. The personal modifications say: I've been here long enough to have opinions.",
+  "worn_by": [
+    "chemical pressline workers",
+    "synthesis floor technicians",
+    "Ferrochem processing plant employees",
+    "industrial cleaning crew leads"
+  ],
+  "manufacturer": "Ferrochem Industries (corponation-issued); base layer by Pragma Systems",
+  "price_range": "Φ310–Φ420 (issued; personal replacement Φ95–Φ150 per component)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pressline worker's rig tests positive for a compound that isn't on the approved synthesis list — something is being processed in the facility that doesn't appear in any official inventory.",
+    "The sealed seams on a batch of recently issued rigs have been quietly downgraded to Class 1 protection while still being labeled Class 2 — a cost-cutting measure that someone buried in a procurement memo.",
+    "A worker's personal modification — a specific arrangement of colored rags in their utility loops — turns out to be a coded signal used by a labor organizing cell operating inside the plant."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "industrial",
+    "chemical_rated",
+    "coverall",
+    "corponation_issued",
+    "aug_compatible",
+    "ferrochem",
+    "hazmat_adjacent"
+  ],
+  "parent_corponation": ""
+}

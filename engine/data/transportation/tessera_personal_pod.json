@@ -8,7 +8,7 @@
     "Bubble Car"
   ],
   "category": "personal_ground",
-  "manufacturer": "Tessera",
+  "manufacturer": "Tessera Transit Systems",
   "description": "A single-occupant autonomous vehicle the size of a large armchair, enclosed in a transparent shell. The Pod is Tessera's vision of personal urban transport — you sit inside your climate-controlled bubble and it drives you wherever you need to go at city speeds. No parking needed; it drops you off and drives itself to the next customer. In Tier 3-4 districts, Pods fill the streets like chrome eggs, each containing a person staring at their own reflection in someone else's Pod. It's efficient, antisocial, and a perfect metaphor for the city.",
   "propulsion": "Electric, three-wheel, autonomous drive",
   "speed": "50 km/h",
@@ -32,5 +32,6 @@
     "vehicle",
     "tier 3",
     "tier 4"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

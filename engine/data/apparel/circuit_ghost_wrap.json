@@ -1,0 +1,49 @@
+{
+  "id": "7b2e5a9c1f0d4832e6b7a3c8d9f05e41",
+  "name": "Circuit Ghost Wrap",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A look built for moving unseen through the Shelf's surveillance gaps and contested corridors. The base is a close-fitting long-sleeve in matte black moisture-wicking jersey, worn thin at the elbows, with a dead neural port interface sewn into the left collar — salvaged from a discarded BCI unit, non-functional but kept as a ward or trophy. Over it hangs a deconstructed puffer vest, the insulation long since redistributed unevenly so it sits flat in some panels and bunched in others, creating an unintentionally textured silhouette. The outer shell of the vest is coated in a peeling anti-reflective treatment that still works in low light. Slim straight-leg trousers in dark grey ripstop are belted with a length of doubled industrial webbing, the buckle a salvaged cargo clip. Three patch pockets run down the right thigh, each sealed with hook-and-loop closures worn almost to smoothness. Feet are wrapped in thin compression socks under low-profile sneakers with thick gum soles — the uppers re-glued at least twice, the toe cap reinforced with a strip of adhesive rubber. A long rectangular scarf in faded indigo cotton, washed to near-grey, is wound once around the neck and tucked into the vest. The hood of a destroyed jacket — just the hood, separated from its original garment — is clipped to the back collar of the vest with two carabiners, deployable in seconds.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "matte black moisture-wicking jersey",
+    "deconstructed anti-reflective puffer shell",
+    "dark grey ripstop",
+    "industrial webbing",
+    "compression knit",
+    "gum-soled canvas",
+    "adhesive rubber",
+    "indigo cotton",
+    "salvaged BCI port housing"
+  ],
+  "functionality": "Anti-reflective vest coating reduces visibility under surveillance lighting. Detachable hood provides rapid head coverage without a full jacket. Low-profile footwear for silence on metal grating. Hook-and-loop pockets allow fast access. Salvaged BCI port in collar is non-functional but can fool a casual scanner into misreading the wearer as an augmented individual, which sometimes grants different treatment at checkpoints.",
+  "what_it_says": "Movement is this person's primary skill. They don't want to be remembered, don't want to be scanned, don't want to be stopped. The dead BCI port is either a bluff or a reminder of something lost. Either way, they've built their whole look around not being noticed — and the fact that it works is a kind of expertise.",
+  "worn_by": [
+    "shelf couriers and message runners",
+    "scavengers who work inside corporate perimeters",
+    "people evading debt collectors or bounty contracts",
+    "former Tier 2 workers who fell"
+  ],
+  "manufacturer": "Self-assembled; vest shell possibly Circuit-brand surplus",
+  "price_range": "Φ8–Φ25 total",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The salvaged BCI port collar piece actually retains a fragment of its previous owner's neural signature — and a corporate security system just flagged it as belonging to a missing employee.",
+    "The detachable hood was cut from a jacket belonging to someone who died in the wearer's arms, and they've never explained why they kept it.",
+    "The anti-reflective coating on the vest is failing — and there's one section of the Shelf where the wearer needs to pass through a motion-sensitive killzone tonight."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "stealth_wear",
+    "runner",
+    "low_profile",
+    "aug_compatible",
+    "salvage_fashion",
+    "urban_survival"
+  ],
+  "parent_corponation": ""
+}

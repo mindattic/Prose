@@ -1,0 +1,44 @@
+{
+  "id": "e5b3a1c7f9d20847e5b3a1c7f9d20847",
+  "name": "Drexel Armory Conceal-Plate Field Jacket",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "From the outside, this looks like a well-made M65-style field jacket — olive drab or coyote tan, cotton-nylon ripstop, four cargo pockets, a hood that stows in the collar. It is not. The Drexel Armory Conceal-Plate is built around a removable ballistic insert system: soft-armor panels in the chest, back, and flanks rated for standard small-arms at close range, with rigid plate pockets that accept Drexel or third-party hard inserts. The armor adds less than a centimeter of profile and is undetectable to casual inspection. The jacket passes metal scanners unless the hard plates are installed.\n\nDrexel Armory sells to licensed private security, bounty contractors, and Tier 3 civilians with the right permits. The jacket is also a staple of the unlicensed self-defense community, where it circulates without plates and with the insert pockets quietly removed or disguised. The ripstop is tough enough to take repeated washing, and the cut is practical rather than tactical-aesthetic — it does not scream armor.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "cotton-nylon ripstop shell",
+    "soft ballistic fiber panels",
+    "rigid plate pockets (plates sold separately)",
+    "mesh lining",
+    "YKK hardware"
+  ],
+  "functionality": "Concealed ballistic soft-armor panels rated for standard small-arms; removable rigid plate pockets for hard insert upgrade. No electronic components.",
+  "what_it_says": "You have thought about getting shot and made a practical decision about it. That could mean you are cautious, professional, or living somewhere that requires this kind of caution.",
+  "worn_by": [
+    "licensed private security",
+    "bounty contractors",
+    "Shelf-adjacent Tier 3 civilians",
+    "journalists working dangerous beats",
+    "off-duty cops"
+  ],
+  "manufacturer": "Drexel Armory",
+  "price_range": "Φ210",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character takes a round and survives because of plates they almost left home — the plates now have a bullet deformed against them, which they keep",
+    "A shipment of Drexel field jackets arrived in the Shelf with the plate pockets already loaded — no one knows who sent them or why",
+    "The jacket's ripstop pattern is identical to a discontinued military surplus design; someone with the right contacts might recognize the lineage"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "field jacket",
+    "ballistic",
+    "concealed armor",
+    "security",
+    "practical"
+  ],
+  "parent_corponation": ""
+}

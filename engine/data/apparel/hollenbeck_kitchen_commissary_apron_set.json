@@ -1,0 +1,36 @@
+{
+  "name": "Hollenbeck Kitchen & Commissary Apron Set",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "food_service",
+  "manufacturer": "Hollenbeck Hospitality Supply Co.",
+  "description": "A standard-issue apron and head covering set used across M88's institutional kitchen operations — corporate commissaries, hospital cafeterias, transit hub food counters, and school nutrition programs. The apron is a heavy-duty coated canvas in neutral grey-beige, heat-resistant to 250°C surface contact, with a full-bib design and two large front pockets sealed with silicone-edged flaps to prevent contamination ingress. Shoulder straps adjust without buckles — a magnetic alignment system allows one-handed donning and removal. The head covering is a structured mesh cap with adjustable crown expansion for horn clearance up to 22cm and ear-friendly side panels that lie flat against fur or external ear modifications. A matching sleeve cover is included for workers with arm augmentations that require protection from kitchen splatter.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ40",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The Hollenbeck set is the background fabric of institutional food service in M88 — unglamorous, functional, and quietly present in every large kitchen that serves the working population. Workers often form small social rituals around the apron: how you fold it, whether you keep it clean or wear the stains as a record of the shift. The horn-accommodating cap is standard enough now that its absence in older kitchen uniforms marks them as outdated.",
+  "story_hooks": [
+    "A commissary worker notices that the food being prepared for a specific corporate floor has a different supply chain than what's served to lower-tier staff — and the difference isn't just quality.",
+    "A set of Hollenbeck aprons from a hospital cafeteria batch tests positive for a trace pharmaceutical compound that shouldn't be in kitchen supply materials.",
+    "A kitchen worker using the apron set has been quietly documenting food waste and supply diversion in a large Tier 4 corporate commissary — and someone wants them to stop."
+  ],
+  "tags": [
+    "hollenbeck",
+    "food_service",
+    "kitchen",
+    "commissary",
+    "apron",
+    "heat_resistant",
+    "augment_compatible",
+    "geneware_compatible",
+    "horn_compatible",
+    "tier2",
+    "tier3",
+    "institutional"
+  ],
+  "id": "40db1d7a722444d1833ac893d6541017",
+  "parent_corponation": ""
+}

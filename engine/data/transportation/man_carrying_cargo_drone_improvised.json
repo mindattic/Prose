@@ -8,7 +8,7 @@
     "Tier 1 Airlines"
   ],
   "category": "exotic",
-  "manufacturer": "Improvised — modified Arcturus Mule frames",
+  "manufacturer": "SafePassage Insurance",
   "description": "A cargo drone modified to carry a human passenger. This is exactly as dangerous as it sounds. Tier 1 ingenuity at its most desperate — an Arcturus Mule drone with the cargo bay stripped and a seat (or harness, or rope) installed. The drone's lift capacity barely handles an adult human, the battery life is halved, and the stability algorithms freak out because the payload keeps shifting. People ride these because the alternative is worse. The mortality rate is not tracked because no one wants to know.",
   "propulsion": "Eight-rotor electric (overloaded)",
   "speed": "40 km/h (terrifying at any speed)",
@@ -34,5 +34,6 @@
     "drone",
     "shelf",
     "tier 1"
-  ]
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "9c4b2e8f5a1d7c0b3e6f9a2d5c8b4e7f",
+  "name": "Meridian Rite Ceremonial Robe",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "The Meridian Rite is not sold in stores. It is commissioned, individually, through a process that begins with an inquiry to a corponation cultural affairs department and ends, three to six months later, with a garment that represents the wearer's corporate citizenship status in formal terms. The robe itself is a floor-length ceremonial garment in the house colors of the commissioning corponation, constructed from a silk-viscose blend with hand-embroidered insignia panels at the chest, cuffs, and hem. The embroidery encodes the wearer's corporate rank, division, tenure, and commendations in a visual language that is readable to those trained to read it and simply beautiful to those who are not. It is worn at corporate ceremonies, formal address events, and high-tier social functions where the message is not 'I have money' but 'I have legitimacy within a system that has decided to recognize me.' Different corponations have different house colors and insignia grammar — a trained observer can identify corporate affiliation, rank tier, and service history at a glance.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "silk-viscose blend",
+    "hand-embroidered insignia panels",
+    "structured internal boning",
+    "weighted hem",
+    "corponation-specific dye lot"
+  ],
+  "functionality": "",
+  "what_it_says": "You have achieved formal recognition within a corporate power structure and you are choosing to make that recognition visible. This is not vanity — it is institutional communication.",
+  "worn_by": [
+    "senior corporate officers",
+    "Tier 4 corporate citizens at formal events",
+    "corponation ceremonial representatives",
+    "recipients of corporate commendations"
+  ],
+  "manufacturer": "Various corponation house ateliers (not commercially available)",
+  "price_range": "Φ1800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Meridian Rite robe from a corponation that officially dissolved eight years ago has appeared at a formal event — someone is wearing the insignia of a dead institution, and the people who can read the embroidery are deeply unsettled by what rank it indicates",
+    "The hand-embroidery tradition used for the insignia panels is maintained by a small atelier of specialists, most of whom are Tier 2 workers who can read corporate rank in their sleep but are formally forbidden from discussing what they know about the people they dress",
+    "A counterfeit Meridian Rite robe has been circulating — the embroidery is nearly perfect but the rank insignia describes a corporate position that does not exist in any known organizational structure"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "Tier 4",
+    "ceremonial",
+    "corporate",
+    "robe",
+    "commissioned",
+    "formal"
+  ],
+  "parent_corponation": ""
+}

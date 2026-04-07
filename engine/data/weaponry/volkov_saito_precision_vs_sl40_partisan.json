@@ -1,0 +1,46 @@
+{
+  "id": "4112f5fba313903f428196ffa814baae",
+  "name": "Volkov-Saito Precision VS-SL40 'Partisan'",
+  "type": "weapon",
+  "aliases": [
+    "Partisan",
+    "VS-SL40",
+    "The Smart Forty"
+  ],
+  "category": "pistol",
+  "description": "The Volkov-Saito VS-SL40 is a smart-linked semi-automatic pistol chambered in .40 S&W, bridging the gap between Volkov-Saito's conventional precision firearms and the neural-integrated platforms from Arcturus and Tessera. The Partisan uses a simplified BCI interface that provides aiming assistance without the full threat-assessment or predictive capabilities of top-tier smart weapons — essentially a high-tech red-dot sight projected directly into the shooter's visual cortex.\n\nThe simplified smart-link makes the Partisan accessible to a wider range of BCI-equipped shooters. Where the Arcturus Ghost Protocol requires extensive neural-weapon integration training, the Partisan's system is intuitive enough to use effectively within hours of initial calibration. The trade-off is capability — the Partisan doesn't predict, doesn't classify threats, and doesn't compensate for anything beyond basic ballistic trajectory. It simply puts a dot where the bullet will go.\n\nVolkov-Saito markets the Partisan as 'the thinking person's smart weapon' — a reference to its philosophical position that the shooter should make all the decisions and the weapon should simply help them execute. This resonates with professional shooters who view full AI-assisted targeting as a crutch and appreciate a tool that enhances their existing skill rather than replacing it.",
+  "manufacturer": "VOLKOV-SAITO PRECISION",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — BCI registration required",
+  "base_technologies": [
+    "Simplified BCI smart-link",
+    "Neural dot-sight projection",
+    "Ballistic trajectory calculation"
+  ],
+  "specifications": "caliber: .40 S&W\neffective_range: 60 meters (smart-linked)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 13 rounds\nweight: 0.94 kg\nBCI_latency: <15ms",
+  "tactical_use": "A smart-linked duty pistol that enhances existing marksmanship without replacing shooter decision-making. The neural dot-sight provides faster target acquisition and improved first-round hit probability at range. The simplified BCI interface requires minimal training compared to full smart-link systems. Suitable for professional operators who want technological assistance without AI dependency.",
+  "cultural_context": "The Partisan has a devoted following among professional shooters who distrust full AI targeting systems. Carrying one signals a specific philosophy: that skill should be enhanced, not automated. In competitive shooting circles that allow smart-link weapons, Partisan users consistently place well, which lends credibility to their philosophical position.",
+  "known_users": [
+    "BCI-equipped professional shooters",
+    "Competitive smart-link division competitors",
+    "Corponation investigators",
+    "Independent operators who distrust AI targeting"
+  ],
+  "story_hooks": [
+    "A competitive shooter using a Partisan defeats an opponent using a Kingmaker — prompting a public debate about whether AI-assisted targeting should be its own category. The loser's employer takes the embarrassment personally.",
+    "Volkov-Saito's simplified BCI protocol is hacked, and someone is using the neural interface to deliver seizure-inducing signals through the weapon's smart-link connection."
+  ],
+  "ammunition_type": [
+    ".40 S&W"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "smart_link",
+    "BCI",
+    "precision",
+    "skill_enhancing",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

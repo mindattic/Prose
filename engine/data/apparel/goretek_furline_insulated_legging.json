@@ -1,0 +1,40 @@
+{
+  "id": "91e4c7a2f0b3586d02e1c4a7b9d1f268",
+  "name": "Goretek FurLine Insulated Legging",
+  "type": "apparel",
+  "category": "legwear",
+  "description": "A full-length thermal legging designed for fur geneware users who run cold despite their coat — a common complaint with short-fur mods that don't fully thermoregulate. The outer fabric is a brushed synth-fleece and the interior is slick-lined to prevent matting. The waistband folds down easily for tail-port layering under a trouser. Unglamorous but genuinely useful in Meridian winters.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "brushed synth-fleece",
+    "slick interior lining",
+    "fold-down waistband"
+  ],
+  "functionality": "Thermal insulation for under-thermoregulating fur mods; slick interior prevents fur matting; fold-down waistband enables tail-port layering",
+  "what_it_says": "You've got the fur but not the heat — and you're practical enough to do something about it.",
+  "worn_by": [
+    "short-fur geneware users",
+    "Tier 2 outdoor workers in winter",
+    "people who layer under work trousers"
+  ],
+  "manufacturer": "Goretek",
+  "price_range": "Φ35",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Shelf-tier contact is wearing these — they're not cheap enough for the Shelf, which raises questions about where they came from.",
+    "The fold-down waistband has a hidden flat pocket just large enough for a folded paper note or a few small chips."
+  ],
+  "tags": [
+    "apparel",
+    "legwear",
+    "tier 2",
+    "gene-compatible",
+    "fur geneware",
+    "thermal",
+    "legging",
+    "winter",
+    "layering"
+  ],
+  "parent_corponation": ""
+}

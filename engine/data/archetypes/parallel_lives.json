@@ -1,0 +1,34 @@
+{
+  "id": "8f35e419fb8999381c21e185f1e9e91a",
+  "name": "Parallel Lives",
+  "type": "archetype",
+  "category": "relationship",
+  "description": "Maintains completely separate relationship spheres that never intersect",
+  "behavioral_signature": "No one in their life knows the full picture of who they are",
+  "under_stress": "Spheres collide and they can't maintain the separation",
+  "at_rest": "Carefully compartmentalizing every connection",
+  "will_always": [
+    "keep their worlds separate"
+  ],
+  "will_never": [
+    "introduce people from different parts of their life"
+  ],
+  "unless": [
+    "a crisis forces all their people into the same room"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Method Actor",
+      "threshold": 0.6,
+      "context": "identity compartments"
+    }
+  ],
+  "opposite_of": [
+    "Matchmaker"
+  ],
+  "tags": [
+    "compartments",
+    "secrecy",
+    "separation"
+  ]
+}

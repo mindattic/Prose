@@ -1,0 +1,33 @@
+{
+  "id": "5e26373e2ce20f9212af499d5757f2dd",
+  "name": "Pragmatic Learner",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Only learns what they need right now for the problem in front of them",
+  "behavioral_signature": "Acquires just-in-time knowledge and discards what's not immediately useful",
+  "under_stress": "Scrambles to learn critical skills at the last second",
+  "at_rest": "Efficient, targeted, never studies anything abstract for fun",
+  "will_always": [
+    "learn the minimum needed to solve the current problem"
+  ],
+  "will_never": [
+    "pursue knowledge for its own sake"
+  ],
+  "unless": [
+    "boredom drives them to pick up something new out of curiosity"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Quick Study",
+      "threshold": 0.8,
+      "context": "efficient learning"
+    }
+  ],
+  "opposite_of": [
+    "Scholar"
+  ],
+  "tags": [
+    "practical",
+    "efficient"
+  ]
+}

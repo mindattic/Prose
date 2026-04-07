@@ -1,0 +1,33 @@
+{
+  "id": "0c183f660dc823715d47d37dd7dbcd3f",
+  "name": "Tabula Rasa",
+  "type": "archetype",
+  "category": "identity",
+  "description": "Blank slate, waiting to be written on, and that's either freedom or terror",
+  "behavioral_signature": "Has no fixed identity and absorbs whatever environment offers",
+  "under_stress": "Becomes whatever the most dominant person in the room wants",
+  "at_rest": "Open, curious, dangerously suggestible",
+  "will_always": [
+    "absorb the identity cues around them"
+  ],
+  "will_never": [
+    "resist influence that feels genuine"
+  ],
+  "unless": [
+    "they've been burned by a previous imprint and learned caution"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Innocent",
+      "threshold": 0.7,
+      "context": "unformed self"
+    }
+  ],
+  "opposite_of": [
+    "Authentic Core"
+  ],
+  "tags": [
+    "blank",
+    "impressionable"
+  ]
+}

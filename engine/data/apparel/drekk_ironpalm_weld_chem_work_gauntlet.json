@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b84d09f56a1e3c7d2b0f9814",
+  "name": "Drekk IronPalm Weld & Chem Work Gauntlet",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Heavy-duty gauntlets built for the forge floor and acid-wash bays. Outer shell is heat-scored syn-leather over a nitrile-composite palm, stained amber and grey from sustained chemical exposure. Knuckle ridges are reinforced with stamped recycled ferrosteel plates. The wrist cuff is wide and buckled — designed to seal over jumpsuit sleeves or bare skin alike.\n\nCutaway index and middle fingers on the dominant hand allow for basic touchpad input without removal. Interior lining is moisture-wicking mesh, replaceable as a separate insert sold by the sheet at most Tier 1–2 hardware stalls.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "syn-leather",
+    "nitrile composite",
+    "recycled ferrosteel",
+    "moisture-wicking mesh lining",
+    "heavy nylon buckle strap"
+  ],
+  "functionality": "Rated for temperatures up to 480°C brief contact. Chemical resistance against common industrial acids and solvents. Reinforced palm reduces vibration fatigue from pneumatic tools. Cutaway fingers allow limited terminal input without full removal.",
+  "what_it_says": "You work with your hands in places that would ruin someone else's skin, and you don't expect anyone to thank you for it.",
+  "worn_by": [
+    "fab floor welders",
+    "smelter crew",
+    "Tier 1 scrap refiners",
+    "chemical waste handlers",
+    "dock maintenance workers"
+  ],
+  "manufacturer": "Drekk Industrial Supply",
+  "price_range": "Φ18–Φ45",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of these gloves is found at a chemical spill scene — one glove missing, the other stiff with dried blood and something that isn't acid.",
+    "A Tier 2 factory rep is quietly selling counterfeit Drekk gauntlets rated for conditions they can't handle — three workers have already been burned.",
+    "The wearer's left gauntlet has a serial number that matches a pair reported stolen from a sealed hazmat site two years ago."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "work gloves",
+    "industrial",
+    "welding",
+    "chemical-resistant",
+    "tier-1",
+    "tier-2",
+    "heat-resistant",
+    "fab floor"
+  ],
+  "parent_corponation": ""
+}

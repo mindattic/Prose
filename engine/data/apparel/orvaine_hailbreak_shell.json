@@ -1,0 +1,44 @@
+{
+  "id": "6d84e0a2c31f795b2e0d4a7f1c8b36e5",
+  "name": "Orvaine Hailbreak Shell",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A no-nonsense rain shell from Orvaine's utility line, cut slightly longer in the back to cover the waistband when leaning forward — a detail that sounds minor until you've spent a shift in the rain. The Hailbreak is made from a three-layer bonded nylon ripstop with a durable water-repellent finish that beads and sheds even in sustained downpour. The cut is relaxed enough to layer over a hoodie without binding. Packable into its own chest pocket, compressing down to roughly the size of a folded paperback. Comes in four colors: slate grey, deep navy, safety olive, and a high-visibility amber-yellow version used by corridor maintenance crews. Pit zips for ventilation. Fully seam-taped.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "three-layer bonded nylon ripstop",
+    "DWR-treated face fabric",
+    "mesh lining at shoulders"
+  ],
+  "functionality": "",
+  "what_it_says": "Practical, unsentimental, and well-chosen. You understand weather and you dress for it. The Hailbreak is the jacket of people who spend real time outside — not commuting through climate-controlled tubes, but actually out in it.",
+  "worn_by": [
+    "infrastructure workers",
+    "street vendors",
+    "courier runners",
+    "construction crew",
+    "anyone who works outdoors in the corridor's unpredictable lake-effect weather"
+  ],
+  "manufacturer": "Orvaine Utility Apparel",
+  "price_range": "Φ58",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The high-vis amber version is standard issue for corridor maintenance, which means wearing one is a low-effort way to move through restricted infrastructure zones without immediate challenge.",
+    "Orvaine quietly discontinued the Hailbreak's original formula two years ago — current production uses a cheaper bonded layer that delaminates after heavy use. Vintage stock from before the reformulation trades at a premium on secondary markets.",
+    "A witness to something they shouldn't have seen was wearing a Hailbreak in slate grey. There are forty thousand of them in active circulation in the city."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 2",
+    "rain shell",
+    "windbreaker",
+    "utility",
+    "packable",
+    "no-tech",
+    "outdoor",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

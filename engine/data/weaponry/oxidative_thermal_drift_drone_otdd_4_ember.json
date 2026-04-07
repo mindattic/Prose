@@ -41,7 +41,6 @@
     "combat",
     "war",
     "gang",
-    "death",
     "ai",
     "corporate",
     "power",
@@ -51,6 +50,8 @@
     "cold",
     "hover",
     "energy",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Ouroboros Energy"
 }

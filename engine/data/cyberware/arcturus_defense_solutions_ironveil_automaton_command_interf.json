@@ -1,0 +1,58 @@
+{
+  "id": "c9d2e5f1a4b7083c6e9d2f5a8b1c4e70",
+  "name": "Arcturus Defense Solutions IronVeil Automaton Command Interf",
+  "brand_name": "Arcturus Defense Solutions",
+  "product_name": "IronVeil Automaton Command Interface",
+  "type": "cyberware",
+  "aliases": [
+    "IronVeil",
+    "The Throne",
+    "ACI-4",
+    "Puppeteer Rig"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The IronVeil Automaton Command Interface is Arcturus Defense Solutions' dedicated neural platform for direct real-time control of multiple autonomous combat machines, with a certified simultaneous command capacity of four independent Iowan Behemoth-class platforms or up to twelve lighter autonomous combat drones. Unlike the TAC-8's broad battlefield integration approach, the IronVeil is architecturally optimized for the specific demands of automaton command: a deep-bonded motor cortex interface translates the operator's proprioceptive and kinematic intent into machine instruction at sub-millisecond latency, while a dedicated sensory routing module feeds compressed telemetry from all active units into a coherent synthetic body-map that the brain processes as a distributed physical self. The system uses ADS-proprietary NeuroFrame compression to prevent sensory flooding when receiving simultaneous damage reports, terrain feedback, and targeting data from multiple platforms. EMP hardening is rated to MIL-SPEC EMP-9, and all automaton control channels are quantum-encrypted on isolated ADS-Q7 subnets to prevent signal hijacking.\n\nOperators of the IronVeil are among the most psychologically screened individuals in Meridian 88's military apparatus, and for good reason — the experience of inhabiting four Behemoth frames simultaneously, feeling the ground shudder through four sets of mechanical legs, processing the targeting solutions of four separate weapons systems as though they were one's own extended hands, is described in declassified psychological assessments as 'a god complex with empirical justification.' The ADS internal designation for the phenomenon is 'Frame Inflation,' and it is considered the primary occupational hazard of IronVeil operators — not the combat, but what combat at that scale does to a human sense of proportion and consequence.",
+  "manufacturer": "Resolve Behavioral Health",
+  "tier_availability": "Tier 5",
+  "legality": "Military-Only",
+  "installation_requirements": "Level 5 neuro-surgical facility; deep motor cortex bonding procedure requiring 48-hour sedation protocol; ADS ACI-certified neurotechnician; mandatory pre-installation psychological baseline assessment; NeuroFrame sensory compression module requires separate calibration session of minimum 40 hours",
+  "rejection_risk": "Moderate (11%) due to deep motor cortex bonding; highest risk factor is prior motor augmentation or spinal interface hardware",
+  "maintenance": "Bi-monthly ADS depot calibration; NeuroFrame compression library updated with each new Behemoth firmware release; motor cortex bond integrity scan annually; psychological evaluation every 6 months mandatory per ADS Operator Health Protocol",
+  "specifications": "{\"simultaneous_behemoth_control\": 4, \"simultaneous_drone_control\": 12, \"interface_type\": \"Deep Motor Cortex Bond\", \"compression_system\": \"ADS NeuroFrame v3.7\", \"control_latency_ms\": 0.6, \"emp_rating\": \"MIL-SPEC EMP-9\", \"encryption\": \"ADS-Q7 Quantum Protocol — Isolated Subnets\", \"sensory_routing_module\": true, \"power_source\": \"Bio-thermic cell + dual redundant capacitors\", \"weight_g\": 230, \"installation_time_hours\": 88, \"certified_automaton_platforms\": [\"Iowan Behemoth Series IV-VII\", \"ADS Harrier-class combat drone\", \"ADS Razorback autonomous infantry platform\"]}",
+  "side_effects": [
+    "Frame Inflation syndrome: progressive erosion of the operator's sense of their biological body as the 'primary' self, with Behemoth frames experienced as more real, more capable, and more significant than the human form",
+    "Phantom limb cascade: following extended multi-frame sessions, operators experience vivid phantom sensations of mechanical limbs, weapons systems, and chassis weight that have no biological correlate",
+    "Kinematic dissonance: the motor cortex bond causes brief but disorienting episodes in which the operator attempts to perform movements only possible in a Behemoth frame — reaching distances of meters, exerting tons of force — resulting in falls, broken bones, and in two documented cases, fatal accidents in post-mission debrief environments",
+    "Hypo-empathy for biological casualties: operators who have spent extended periods processing combat through machine frames report diminished emotional response to human injury and death relative to machine damage"
+  ],
+  "cultural_context": "The IronVeil has generated more ethical controversy than perhaps any other piece of military cyberware in current deployment. Anti-augmentation movements and several academic bioethics institutions have filed formal complaints with Meridian 88's Regulatory Oversight Bureau, arguing that the Frame Inflation phenomenon constitutes a form of iatrogenic psychological harm that ADS is deliberately failing to address. Within the military, IronVeil operators are simultaneously celebrated as force-multipliers of extraordinary power and quietly sidelined from command roles after service — the combination of Frame Inflation and hypo-empathy profiles makes them poor candidates for leadership of biological troops.",
+  "known_users": [
+    "Meridian 88 Autonomous Combat Division, Behemoth Control Corps",
+    "ADS contracted theater-level automaton commanders",
+    "Classified deep-strike units operating Behemoth platforms in denied-access zones"
+  ],
+  "story_hooks": [
+    "A retired IronVeil operator, struggling with Frame Inflation syndrome in a civilian psychiatric facility, begins receiving what she believes are direct neural signals from a Behemoth unit — a unit that was supposedly decommissioned and destroyed two years ago.",
+    "An IronVeil-equipped commander loses contact with all four of their Behemoth units simultaneously during a critical operation, only to discover the machines are still active, still fighting — but no longer responding to any recognized command signature.",
+    "The players must extract an IronVeil operator from behind enemy lines, but the operator refuses to move until they have manually shut down each of their four Behemoth frames — a process that will take forty minutes in a hot zone — because they cannot psychologically accept leaving the machines behind."
+  ],
+  "street_price": "Φ175,000",
+  "licensed_price": "Φ270,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "tier5",
+    "automaton-control",
+    "behemoth-interface",
+    "drone-command",
+    "emp-hardened",
+    "quantum-encrypted",
+    "arcturus",
+    "elite",
+    "motor-cortex",
+    "military_elite"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "6d7f5e786b90665646cd496208034d10",
+  "name": "Forge-Smith Collective Thermal Lance Glaive 'Red Harvest'",
+  "type": "weapon",
+  "aliases": [
+    "Red Harvest",
+    "Thermal Glaive",
+    "Hot Reaper",
+    "The Scythe"
+  ],
+  "category": "melee",
+  "description": "A glaive-profile polearm with a heated blade that reaches 1,100 degrees Celsius through a chemical fuel system running the length of the shaft. The Red Harvest combines the glaive's sweeping cutting geometry with thermal-edge technology, creating a weapon that reaps through armored and unarmored targets with equal effectiveness. The 40-centimeter blade at the end of the 180-centimeter shaft provides both cutting leverage and thermal destruction.\n\nThe Forge-Smith Collective developed the Red Harvest for community defense against armored corporate incursions — a scenario where conventional melee weapons bounce harmlessly off security armor. The thermal blade melts through composite armor on contact, and the glaive's sweeping strikes cover wide arcs that prevent multiple armored opponents from advancing simultaneously. The chemical fuel system — a ferrocerium compound similar to the Ember axe's power source — is immune to electronic interference and burns for 90 minutes per charge.\n\nThe weapon requires significant space to use effectively — the 180-centimeter shaft and 40-centimeter blade create a sweeping radius that demands open room or wide corridors. In confined spaces, the Red Harvest becomes a liability, and operators must transition to shorter weapons. This limitation has led to a tactical doctrine where glaive-armed fighters hold open areas and intersections while shorter-weapon fighters cover the tight corridors that feed into them.",
+  "manufacturer": "FORGE-SMITH COLLECTIVE",
+  "tier_availability": "Tier 2+ (artisan availability)",
+  "legality": "Unlicensed — artisan production, thermal weapon classification varies",
+  "base_technologies": [
+    "Chemical thermal blade system",
+    "Glaive-profile sweeping geometry",
+    "Ferrocerium fuel shaft integration"
+  ],
+  "specifications": "total_length: 220 cm (shaft + blade)\nshaft_length: 180 cm\nblade_length: 40 cm\nweight: 2.8 kg\nblade_temperature: 1,100°C\nfuel_system: Ferrocerium chemical compound, shaft-integrated\nburn_time: 90 minutes continuous\nsweep_radius: ~220 cm",
+  "tactical_use": "The Red Harvest controls open spaces and intersections. Its sweeping strikes cover arcs that prevent multiple opponents from advancing, and the thermal blade defeats armor that would resist conventional cutting weapons. Operators position themselves at corridor junctions and open areas where the weapon's reach advantage is maximized. The glaive's hook geometry allows operators to catch and pull armored opponents off balance, exposing them to the thermal edge. The weapon is useless in tight corridors and must be supported by fighters with shorter weapons in mixed-space combat.",
+  "cultural_context": "The Red Harvest represents the Forge-Smith Collective's most ambitious community defense weapon — a polearm that can hold open ground against armored corporate security. Its development was a direct response to corporate incursions into lower-tier territory, and its name reflects the grim pragmatism of communities that have accepted the possibility of organized violence. Red Harvest training sessions are conducted openly in lower-tier plazas, serving both as martial instruction and as a visible deterrent to corporate overreach.",
+  "known_users": [
+    "Community defense formations",
+    "Forge-Smith Collective practitioners",
+    "Anti-corporate territorial defense groups"
+  ],
+  "story_hooks": [
+    "A Red Harvest formation held an intersection against a corporate security team for six hours — long enough for the community behind them to evacuate. The footage has become a recruitment tool for community defense organizations across Meridian 88.",
+    "The ferrocerium fuel compound used in the Red Harvest has been found to produce toxic combustion byproducts in enclosed spaces — long-term use in poorly ventilated areas is causing respiratory damage. The Collective is racing to reformulate the fuel before the weapon poisons the people it is meant to protect."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "glaive",
+    "polearm",
+    "thermal",
+    "artisan",
+    "tier 2",
+    "community-defense",
+    "anti-armor",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

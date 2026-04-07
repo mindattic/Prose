@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b09d4a56f8e3c7d2a1b05f9e",
+  "name": "Veldtmann Pressline Night Shift Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A head-to-toe pressline night crew uniform built for twelve-hour shifts under fluorescent factory light. The core piece is a charcoal-grey ripstop coverall with Veldtmann's orange chevron stripe running diagonally across the chest and left shoulder, embroidered name patch above the right breast pocket, and a corponation logo stamped in heat-transfer vinyl on the back yoke. The coverall features reinforced knee panels in a darker charcoal, triple-stitched seams throughout, and a side-zip aug channel running from the left hip to the mid-calf to accommodate chrome leg prosthetics or exo-brace struts. Underneath sits a Veldtmann-branded moisture-wicking thermal undershirt in slate grey, crew-neck, with flatlock seams to prevent friction burns during long wear. A low-profile hard hat in safety orange clips to a belt loop when not in use. Hands are covered by cut-resistant synth-leather gloves with the fingertips of the dominant hand left open for BCI touchpad operation.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ripstop synth-nylon",
+    "thermal polyblend",
+    "synth-leather",
+    "heat-transfer vinyl",
+    "reinforced kevlar-weave knee panels"
+  ],
+  "functionality": "aug-channel side zip for chrome leg accommodation, reinforced knee panels, BCI-open fingertip gloves, tool loops at hip and thigh, chest and hip pockets with magnetic closures, hard hat clip loop, moisture-wicking underlayer",
+  "what_it_says": "This is someone who shows up, clocks in, and does the work. The name patch and corponation branding say they belong to a machine — not proudly, not bitterly, just practically. The immaculate condition of the coverall despite its age signals discipline and a certain quiet dignity.",
+  "worn_by": [
+    "pressline factory workers",
+    "assembly line operators",
+    "shift floor crew",
+    "machine maintenance techs"
+  ],
+  "manufacturer": "Veldtmann Industrial Apparel",
+  "price_range": "Φ180–Φ260 (often employer-subsidized or issued)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A worker's name patch belongs to someone who died on the floor three months ago — and they're still wearing it because no one updated the system.",
+    "The aug-channel zip conceals a smuggled data chip sewn into the lining, passed between shifts by workers organizing against Veldtmann's new productivity quotas.",
+    "A supervisor notices the corponation logo has been subtly defaced on a worker's back yoke — a small act of resistance that could mean termination or worse."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "factory",
+    "pressline",
+    "coverall",
+    "aug_compatible",
+    "corponation_branded",
+    "veldtmann",
+    "night_shift"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,44 @@
+{
+  "id": "9a5c3e7f1b2d8049a5c3e7f1b2d80496",
+  "name": "Nexigen Biometric Base Layer",
+  "type": "apparel",
+  "category": "top",
+  "description": "Nexigen's biometric base layer looks, at first glance, like a plain fitted long-sleeve shirt in charcoal or white. The fabric is a proprietary stretch-composite that sits close to the skin and breathes well enough to wear all day without discomfort. It's only when you look at the collar seam that you notice the thin embedded sensor strip — a continuous loop of conductive thread that reads skin temperature, perspiration rate, and heart rate variability, syncing passively to a paired BCI or personal device.\n\nThe data it generates is unobtrusive and continuous — not a medical device, but a wellness layer. It tells you when you're running hot before you feel it, tracks stress markers across a workday, and can be set to alert on anomalies. Nexigen sells these primarily to Tier 3 and 4 professionals who want the data without wearing a visible device. The shirt is comfortable enough that many people forget it's doing anything. That comfort is, depending on your perspective, the feature or the concern.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "Nexigen stretch-composite fabric",
+    "conductive thread sensor loop",
+    "moisture-transport inner layer"
+  ],
+  "functionality": "Passive biometric monitoring: skin temperature, heart rate variability, perspiration rate. Syncs via short-range BCI or paired device. No active components, no battery — draws from body heat via thermopile strip at collar.",
+  "what_it_says": "You are the kind of person who optimizes — your body, your schedule, your stress response. Whether that's admirable or concerning depends entirely on who's reading the data with you.",
+  "worn_by": [
+    "Tier 3 and 4 professionals",
+    "health-optimizing individuals",
+    "corporate employees required to wear wellness monitoring",
+    "athletes",
+    "people with medical monitoring needs"
+  ],
+  "manufacturer": "Nexigen Wellness Systems",
+  "price_range": "Φ190",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Nexigen base layer belonging to a Tier 4 executive recorded an anomalous stress spike at exactly the time a competitor's facility was sabotaged — the data exists somewhere in Nexigen's servers.",
+    "Someone is distributing modified Nexigen base layers with the sensor data rerouted to an external receiver — a corporate espionage tool disguised as wellness apparel.",
+    "A Tier 2 worker found a discarded Nexigen shirt at a dump site; it's still syncing to something, and whatever it's syncing to is responding."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 3",
+    "smart-fabric",
+    "tech-enhanced",
+    "base layer",
+    "biometric",
+    "nexigen",
+    "long-sleeve",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

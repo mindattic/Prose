@@ -11,7 +11,7 @@
   "category": "dart",
   "caliber": "3.2mm",
   "description": "The FTD-3 is a sub-caliber ferromagnetic dart designed for the Variable Impedance Rifle VIR-9, engineered to perform across the weapon's full 12-stage impedance range from subsonic stealth shots to hypervelocity anti-materiel penetration. The dart is a solid tungsten-alloy needle with a ferromagnetic core that interacts with the VIR-9's electromagnetic coil array, allowing the weapon to precisely control muzzle velocity from stage to stage without requiring different ammunition types.\n\nThe ferromagnetic core is the critical component — a proprietary Tessera Corponation alloy that maintains consistent magnetic responsiveness across a velocity range of 80 m/s to 2,400 m/s. At low impedance stages, the dart exits the barrel at subsonic velocities with minimal acoustic signature, suitable for covert elimination at close range. At maximum impedance, the same dart achieves hypervelocity speeds that defeat most personal armor through sheer kinetic energy. The dart's flight characteristics change dramatically across this range: at low speeds it flies like a conventional flechette, at high speeds it behaves more like a railgun projectile with minimal drop over distance.\n\nThe darts are packaged in 15-round sealed magazines with integral humidity control, as the ferromagnetic core is susceptible to oxidation that degrades its magnetic responsiveness. Field storage beyond 30 days in unsealed conditions can reduce maximum-impedance performance by up to 15%, which has led to a practice among experienced VIR-9 operators of cycling their magazine stock frequently and disposing of rounds that have been exposed to atmosphere for extended periods.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "Seo Research Compliance Group",
   "tier_availability": "Tier 3+",
   "legality": "Restricted",
   "specifications": "weight_per_round: 4.2g\nmuzzle_velocity: 80–2,400 m/s (impedance dependent)\npenetration_rating: Stage 1-4: soft targets only / Stage 5-8: standard body armor / Stage 9-12: Class IV armor and light vehicle plating\neffective_against: Variable by impedance — personnel at all stages, armored targets at high impedance, light vehicles at maximum\ncountermeasures: Magnetic deflection fields (partial at high impedance), spaced composite armor, active defense systems at lower velocities",
@@ -45,5 +45,6 @@
     "stealth",
     "energy",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

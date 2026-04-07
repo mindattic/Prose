@@ -1,0 +1,33 @@
+{
+  "name": "Arcturus CorpSec Spire Detail Dress Uniform",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_formal_tactical",
+  "manufacturer": "Summit Outdoor Apparel",
+  "description": "Issued exclusively to Arcturus personnel assigned to Tier 4-5 client protection details, the Spire Detail Dress Uniform walks the line between threat-response capability and boardroom acceptability. The jacket is cut from a rigid-weave graphene-threaded fabric that reads as charcoal wool at a glance but offers Level IIA ballistic resistance across the chest and shoulders. Lapels are reinforced with micro-plating; the collar sits high enough to protect the carotid without looking like armor. Arcturus branding is minimal — a small oxidized-silver hex badge at the breast pocket, nothing more. Trousers are articulated at the hip and knee for unrestricted movement, with a magnetic-closure thigh holster channel sewn into the right leg lining. Port access panels at the wrists accommodate standard BCI cuff-links and neural-tether hardware without visible alteration to the silhouette.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ780",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "Seeing an Arcturus officer in this uniform means someone important is nearby and someone else has paid a great deal to keep them safe. On the Shelf, spotting this uniform triggers immediate behavioral changes in crowds. In the Spire, it is as common as a maitre d's coat.",
+  "story_hooks": [
+    "A secondhand unit surfaces in a Tier 2 pawnshop with all the internal ID tags burned out — someone walked off a detail, or someone took the uniform off a body.",
+    "The Arcturus hex badge on one circulating uniform has a faint secondary frequency embedded in the metal that pings a classified location every six hours.",
+    "A Spire client insists their Arcturus detail wear the dress uniform at all times, even during a credible threat window, because the armor-visible alternative 'sends the wrong message.'"
+  ],
+  "tags": [
+    "corpsec",
+    "arcturus",
+    "formal",
+    "tactical",
+    "ballistic-resistant",
+    "spire",
+    "protection-detail",
+    "bci-compatible",
+    "dress-uniform"
+  ],
+  "id": "ca213c864f8145d1b590bc8672befc9f",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

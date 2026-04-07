@@ -1,0 +1,49 @@
+{
+  "id": "2d4efe13b715e12e80447dc21ff9a9df",
+  "type": "faction",
+  "name": "The Neon Bodhisattvas",
+  "aliases": [
+    "Neon Bodhi",
+    "The Bodhisattvas",
+    "Electric Monks"
+  ],
+  "motto": "Suffering is the signal. Compassion is the response. The rest is noise.",
+  "description": "The Neon Bodhisattvas are a Buddhist-influenced movement of roughly 4,000 adherents who practice what they call 'engaged digital dharma' — the application of Buddhist principles to life in a hyper-augmented, corporate-dominated city. Founded by a former Ringo marketing executive named Hana Park-Oduya who left her Tier-4 life after a mental health crisis and ordained in a traditional Buddhist lineage before returning to Meridian 88 with a mission, the Bodhisattvas operate on a simple premise: suffering in Meridian 88 is not an aberration but the predictable result of attachment, craving, and ignorance operating at institutional scale. Corponations are attachment engines. Augmentation is craving made metal. The entire city is a monument to the second noble truth.\n\nThe Bodhisattvas don't withdraw from this system — that's the 'engaged' part. They work within it. Members maintain jobs, use augmentation, participate in the economy. But they practice mindfulness techniques — some traditional, some BCI-enhanced — designed to maintain awareness of the suffering the system produces and to respond with compassion rather than complicity. Their meditation centers, called 'Nodes,' offer free meditation instruction, mental health support, and a rare space in Meridian 88 where the only thing anyone is trying to sell you is the suggestion that you sit still for twenty minutes.\n\nThe Bodhisattvas run the most effective suicide prevention network in the Shelf, staffed entirely by volunteers who combine traditional Buddhist compassion practices with BCI-mediated crisis intervention. This single program has saved more lives than most religious movements in Meridian 88 can claim, and it has given the Bodhisattvas a moral authority that their small size would not otherwise warrant.",
+  "ideology": "Buddhist dharma applied to technological modernity. Suffering is produced by attachment, craving, and ignorance. Corporate capitalism is these forces operating at institutional scale. The path to liberation requires engagement with the system, not withdrawal from it, combined with mindfulness practices that maintain awareness and compassion.",
+  "territory": "Five Nodes (meditation centers): two in the Circuit, one in the Shelf, one in Old Harbor, one in the Laceworks. All are deliberately modest spaces.",
+  "leadership": "Dharma Teacher Hana Park-Oduya, who holds authentic lineage in the Soto Zen tradition and combines it with a marketing executive's understanding of how systems of persuasion function. She is warm, direct, and occasionally terrifying in her clarity.",
+  "methods": [
+    "Free meditation instruction at five Nodes across Meridian 88",
+    "BCI-enhanced mindfulness practices combining traditional meditation with neural feedback",
+    "Suicide prevention and mental health crisis intervention in the Shelf",
+    "Dharma talks applying Buddhist teachings to specific problems of life in Meridian 88",
+    "Workplace mindfulness programs offered to corporate employees",
+    "Volunteer training for crisis intervention and compassionate listening"
+  ],
+  "resources": [
+    "4,000 dedicated practitioners",
+    "Five Node meditation centers",
+    "The most effective suicide prevention network in the Shelf",
+    "Hana Park-Oduya's unique combination of Buddhist training and corporate expertise",
+    "Goodwill among mental health professionals who refer clients to the Bodhisattvas",
+    "A growing reputation as the only religious movement in Meridian 88 with no hidden agenda"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "The Bodhisattvas ask whether ancient wisdom can survive translation into a radically different context — and whether the attempt is itself a form of the compassion they preach.",
+  "story_hooks": [
+    "A Node volunteer has discovered that a specific augmentation — widely installed in the Shelf — is causing neurological changes that increase suicidal ideation. The data is clear. The manufacturer is Ringo, Hana's former employer. Publishing the finding will save lives and destroy the Bodhisattvas.",
+    "Hana Park-Oduya's former life is catching up with her. A marketing campaign she designed before her ordination is still running, still causing measurable harm, and someone has connected it to her new identity."
+  ],
+  "tags": [
+    "faction",
+    "religious",
+    "buddhist",
+    "mental health",
+    "circuit",
+    "shelf",
+    "old harbor",
+    "laceworks",
+    "compassion"
+  ]
+}

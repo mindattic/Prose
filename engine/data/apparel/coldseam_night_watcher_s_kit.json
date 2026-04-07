@@ -1,0 +1,53 @@
+{
+  "id": "f1d3b7a4c0e6829d5f1b3a7c4e0d6298",
+  "name": "Coldseam Night Watcher's Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Night watch on the Shelf is informal, unglamorous, and necessary — someone has to sit the perimeter of a squat block or community shelter through the cold hours, watching for raiders, Corponation enforcement sweeps, and the slower threats. This outfit is optimized for stillness, warmth, and not being seen. The outer layer is a long hooded coat in near-black charcoal, the fabric a dense synthetic weave with a matte finish that absorbs rather than reflects available light — not a designed stealth coating, just a fabric that happens to work that way, likely cut from industrial blackout curtaining. The hood is deep and structured, holding its shape when raised, with a drawstring that cinches it to a narrow opening around the face. The coat's interior has been lined with panels of salvaged thermal batting, unevenly distributed — thicker at the torso and upper arms, thinner at the forearms for dexterity. Beneath the coat, a mid-layer pullover in dark heather gray sits over a thermal base layer in faded black; the pullover's cuffs are cut long and folded back, providing extra wrist coverage when unrolled. Trousers are close-cut in dark gray, with cargo pockets at the outer thighs — both sealed with friction-closure strips rather than zippers, to minimize noise. The boots are soft-soled mid-calf, the upper in cracked matte black synthetic leather, the sole a thick rubber compound that has been scraped smooth on the outer edge for silence on metal grating. Around the neck, a face wrap in dark charcoal — a long tube of fabric that can be pulled up to cover nose and mouth or worn loose. Fingerless gloves in worn dark leather leave the fingertips free; the right glove's index finger has been cut shorter than the others, exposing the tip of a cybernetic finger — matte black, clearly older-generation chrome, the joint slightly audible when flexed. A small battered earpiece sits in the left ear, the cord disappearing under the collar.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "matte charcoal industrial blackout curtain synthetic weave coat",
+    "salvaged thermal batting coat lining",
+    "dark heather gray mid-layer pullover",
+    "faded black thermal base layer",
+    "dark gray close-cut cargo trousers with friction-closure pockets",
+    "soft-soled cracked matte black synthetic leather mid-calf boots",
+    "scraped-smooth thick rubber sole",
+    "dark charcoal tube face wrap",
+    "worn dark leather fingerless gloves",
+    "older-generation matte black cybernetic finger (personal aug)",
+    "battered earpiece"
+  ],
+  "functionality": "Matte blackout-fabric coat minimizes light reflection for low-profile positioning. Deep structured hood allows full concealment of face while maintaining peripheral vision. Thermal batting lining concentrates insulation at torso and upper arms while maintaining forearm dexterity. Friction-closure cargo pockets operate silently. Soft scraped-smooth boot soles reduce noise on metal grating and concrete. Fingerless gloves with shortened index finger allow full tactile sensitivity for the cybernetic finger, which likely has pressure or temperature sensing capability. Battered earpiece suggests connection to a low-power local comm network — Shelf-built, short range.",
+  "what_it_says": "This person chose this watch shift. The outfit says deliberate preparation rather than emergency improvisation — the friction closures, the scraped soles, the shortened glove finger. The cybernetic finger is old and audible, which means they've had it long enough to stop being self-conscious about the sound. The earpiece says they're not alone out here — there's a network, even if it's just two other people watching two other corners.",
+  "worn_by": [
+    "volunteer community night watch members in Shelf squat blocks",
+    "informal security for Shelf community shelters",
+    "scouts for Shelf resistance or mutual aid networks",
+    "anyone whose job is to see without being seen and report without being heard"
+  ],
+  "manufacturer": "Self-assembled; coat fabric is cut from salvaged industrial blackout curtaining; gloves are street-market surplus; earpiece is hand-built from salvaged components",
+  "price_range": "Φ15–Φ40 for assembled outfit; earpiece separately Φ5–Φ15 built or Φ25–Φ50 purchased",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The earpiece connects to a Shelf-built comm network that has been inadvertently picking up encrypted signals from a nearby corponation facility — signals that someone very powerful wants to ensure no one on the Shelf ever decodes.",
+    "The night watcher saw something three nights ago that they haven't reported to anyone — not because they're hiding it, but because they don't yet know what it means, and they're waiting to see if it happens again.",
+    "The audible cybernetic finger joint is getting louder, which means the joint seal is failing — without maintenance the whole finger will lock within weeks, and the only person on the Shelf who can fix it is currently missing."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier 1",
+    "night watch",
+    "stealth",
+    "aug-compatible",
+    "cybernetic",
+    "community defense",
+    "cold weather",
+    "low-profile",
+    "comm network"
+  ],
+  "parent_corponation": ""
+}

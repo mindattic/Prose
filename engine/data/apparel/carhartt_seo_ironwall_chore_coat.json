@@ -1,0 +1,41 @@
+{
+  "id": "a3f7c2e1b4d6890f2c5a7e3b1d4f6a8c",
+  "name": "Carhartt-Seo Ironwall Chore Coat",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A descendant of the classic duck-canvas chore coat, the Ironwall is built for Tier 2 workers who need something that can take genuine punishment. The fabric is a heavyweight synthetic-cotton duck in faded khaki or engine-room brown, triple-stitched at every seam and bartacked at the stress points. Four patch pockets sit on the front, deep enough to lose a wrench in. The collar is corduroy-lined — a detail borrowed from old American workwear that Carhartt-Seo has never bothered to remove because it works. After a few months of hard use it softens and creases in ways that make it look like it belongs to the person wearing it.\n\nMost of the people who wear this work in fabrication yards, the lower transit corridors, or warehouse logistics. It's not a fashion item and it doesn't try to be. On the Shelf it gets handed down. In Tier 2 neighborhoods it's the default for anyone who works outside or in unregulated spaces. A few Tier 3 people buy it deliberately, either because they grew up in it or because they like the message it sends.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synthetic-cotton duck canvas",
+    "corduroy collar lining",
+    "brass-tone hardware"
+  ],
+  "functionality": "",
+  "what_it_says": "You work with your hands and you don't apologize for it.",
+  "worn_by": [
+    "fabrication workers",
+    "transit laborers",
+    "warehouse logistics staff",
+    "Shelf survivors who found steady work",
+    "Tier 3 people making a statement"
+  ],
+  "manufacturer": "Carhartt-Seo",
+  "price_range": "Φ48",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A coat found in a locker at an abandoned fabrication yard still has a name tag stitched inside — someone who disappeared six months ago during a corponation site dispute.",
+    "A union organizer uses the coat as an identifier; members know to approach anyone wearing a Ironwall with a specific patch on the left shoulder.",
+    "The coat's deep pockets are where a Tier 2 courier has been hiding data chips for a client they've never met."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 2",
+    "workwear",
+    "chore coat",
+    "durable",
+    "carhartt-seo"
+  ],
+  "parent_corponation": ""
+}

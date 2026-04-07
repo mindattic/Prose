@@ -1,0 +1,56 @@
+{
+  "id": "4e9a17f6c3b28d05e1f74a9c20b63d87",
+  "name": "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+  "brand_name": "ARCTURUS DEFENSE SOLUTIONS",
+  "product_name": "SentinelEar Tactical Auditory System MK-II",
+  "type": "cyberware",
+  "aliases": [
+    "Sentinel",
+    "Ghost Ears",
+    "The Counter"
+  ],
+  "category": "auditory",
+  "body_location": "ears",
+  "description": "The SentinelEar MK-II is a full cochlear replacement system built around a military-spec acoustic intelligence processor capable of real-time gunshot triangulation to within 1.5 degrees of arc, individual footstep counting and gait analysis up to 60 meters, whisper amplification to conversational clarity at 40 meters, and encrypted squad communications via a hardened short-range radio node embedded in the mastoid. The acoustic AI runs continuously, flagging threat signatures and feeding data to a neural HUD overlay without requiring conscious user input. All communications are encrypted using Arcturus' rotating military cipher protocol.\n\nThe MK-II is standard-issue hardware for Arcturus-contracted military units, GRPD Tactical Response, and select Meridian 88 corporate security divisions with black-level clearance. Restricted distribution is enforced aggressively — Arcturus employs hardware kill-switches that can be remotely triggered if a unit is reported stolen or used outside sanctioned parameters. On the black market, deactivated or jailbroken units are among the most sought-after pieces of tactical hardware in the city.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4-5 (licensed military/security); black market any tier",
+  "legality": "Restricted",
+  "installation_requirements": "Military surgical suite; temporal bone processing unit requires precision anchoring; mastoid antenna node implantation; minimum 96-hour classified neural calibration with Arcturus technician present",
+  "rejection_risk": "Moderate — temporal bone processing unit creates localized pressure; mastoid antenna node has documented 12% minor infection rate at implant site",
+  "maintenance": "Encrypted firmware updates pushed remotely by Arcturus; physical inspection by certified Arcturus technician every 6 months; kill-switch status verification required annually",
+  "specifications": "{\"gunshot_triangulation\": \"1.5° arc accuracy, 300m range\", \"footstep_analysis\": \"Individual gait ID up to 60m, count up to 200 simultaneous\", \"whisper_amplification\": \"40m range, conversational clarity from 15dB source\", \"squad_comms_range\": \"800m encrypted short-range radio\", \"encryption\": \"Arcturus RotorCipher v7, 2048-bit rotating\", \"threat_AI\": \"SentinelMind v3.1, continuous passive monitoring\", \"power_draw\": \"1.4W bioelectric + capacitor reserve\", \"kill_switch\": \"Remote hardware disable, Arcturus-controlled\"}",
+  "side_effects": [
+    "Hypervigilance and chronic stress response — the threat-detection AI triggers adrenaline-adjacent neural signals even in safe environments",
+    "Temporal bone processing unit causes persistent low-grade pressure headaches in approximately 30% of users",
+    "Squad comms channel bleeds into auditory awareness during sleep, causing fragmented rest and reported 'ghost radio' dreams",
+    "Psychological dependency: users report severe anxiety when the system is powered down, feeling tactically 'blind'"
+  ],
+  "cultural_context": "Among Meridian 88's tactical and security communities, a confirmed SentinelEar install is a serious credential — and a serious liability. The built-in kill-switch means Arcturus maintains operational control over every unit in the field, a fact that creates deep unease among the black market users who run jailbroken versions. GRPD officers with SentinelEar installs are identifiable by the faint mastoid port behind their right ear, a detail that has made it a targeting marker in anti-police actions.",
+  "known_users": [
+    "Arcturus-contracted military and PMC operators",
+    "GRPD Tactical Response and counter-terror units",
+    "Corporate black-level security divisions",
+    "Black market tactical runners with jailbroken units",
+    "High-value personal protection specialists"
+  ],
+  "story_hooks": [
+    "A runner's jailbroken SentinelEar suddenly reactivates its kill-switch remotely — someone at Arcturus knows exactly where they are and what they've been listening to",
+    "The footstep-counting AI begins logging a recurring gait signature that matches someone who died six months ago",
+    "An Arcturus technician is offering to permanently disable kill-switches for a price — but every operator who took the deal has since gone missing"
+  ],
+  "street_price": "Φ68,000",
+  "licensed_price": "Φ115,000",
+  "tags": [
+    "cyberware",
+    "hearing_implant",
+    "tactical",
+    "military",
+    "gunshot_triangulation",
+    "squad_comms",
+    "arcturus_defense",
+    "restricted",
+    "combat",
+    "auditory"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

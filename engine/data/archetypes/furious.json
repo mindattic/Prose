@@ -1,0 +1,34 @@
+{
+  "id": "b1c398dd87ad38b083dfddadb9bd0d90",
+  "name": "Furious",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Runs on a constant low-grade anger that fuels everything they do",
+  "behavioral_signature": "Every action has an edge, every word has teeth",
+  "under_stress": "Anger becomes uncontrolled and indiscriminate",
+  "at_rest": "Simmering, tight-jawed, ready",
+  "will_always": [
+    "respond with intensity"
+  ],
+  "will_never": [
+    "let an insult slide"
+  ],
+  "unless": [
+    "anger would hurt someone they refuse to damage"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Rage Driven",
+      "threshold": 0.85,
+      "context": "anger as fuel"
+    }
+  ],
+  "opposite_of": [
+    "Serene"
+  ],
+  "tags": [
+    "anger",
+    "intensity",
+    "fuel"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Arcturus HW-1 'Goliath'",
+  "type": "automaton",
+  "classification": "Walking Tank — Heavy Fire Support",
+  "aliases": [
+    "Goliath",
+    "Big Iron",
+    "The Argument"
+  ],
+  "manufacturer": "Murmuration Systems",
+  "description": "The HW-1 is a four-legged walking weapons platform standing 4.5 meters tall and weighing twelve metric tons. It is, in the simplest terms, a tank that walks. The primary armament is a turret-mounted 40mm autocannon with 400 rounds of mixed ammunition, supplemented by coaxial machine guns and a dorsal-mounted missile pod carrying four anti-vehicle guided missiles. The legs provide mobility across terrain that would stop tracked vehicles — rubble fields, stairways wide enough to accommodate the 3-meter stride, and slopes up to 45 degrees.\n\nArcturus designed the Goliath for urban warfare scenarios where conventional armored vehicles are channeled into predictable routes by narrow streets and barricades. The walking chassis allows the HW-1 to step over barricades, climb rubble piles, and navigate through building interiors if doorways are widened — which the 40mm autocannon can accomplish in seconds. The fire control system integrates with Arcturus's command network for coordinated operations with infantry and aerial assets.\n\nThe Goliath's presence on a battlefield is definitive. There is no infantry weapon in common use that can penetrate its composite armor. There is no cover in a standard urban environment that its autocannon cannot destroy. Its arrival at a conflict typically ends the conflict — either through direct engagement or through the immediate surrender of anyone who understands what they're looking at.",
+  "tier_availability": "Tier 5",
+  "legality": "Military — Arcturus internal deployment only",
+  "autonomy_level": "Crew-operated (2 operators) with autonomous defensive systems",
+  "dimensions": "4.5m height, 3.0m stride, 3.5m hull width",
+  "weight": "12,000 kg",
+  "power_source": "Diesel-electric hybrid, 200km range",
+  "locomotion": "Quadruped heavy walker, all-terrain",
+  "armament": [
+    "Turret-mounted 40mm autocannon (400 rounds)",
+    "2x coaxial 7.62mm machine guns",
+    "Dorsal missile pod (4x anti-vehicle guided missiles)",
+    "Smoke/chaff dispensers"
+  ],
+  "sensors": [
+    "360-degree sensor fusion",
+    "Thermal imaging",
+    "Millimeter-wave radar",
+    "Laser rangefinder"
+  ],
+  "countermeasures": "Anti-tank weapons (HEAT, kinetic penetrators) remain effective against leg joints. Mines designed for tracked vehicles may not trigger under walking platforms — specialized anti-walker mines exist but are rare. Leg actuator damage can immobilize the unit but the turret remains operational.",
+  "known_deployments": [
+    "Arcturus military operations outside Meridian 88",
+    "Meridian 88 perimeter defense",
+    "2184 Shelf Uprising (confirmed, two units)"
+  ],
+  "story_hooks": [
+    "A Goliath has broken down in the Shelf — leg actuator failure. The crew evacuated. The turret is still active on autonomous defense mode, shooting anything that approaches within 200 meters. The neighborhood is trapped.",
+    "Intelligence suggests Arcturus is moving three Goliaths into position around the Circuit district. This isn't a demonstration — this is preparation for something."
+  ],
+  "cultural_context": "The Goliath is the symbol of corponation military power. Its silhouette appears on anti-corporate propaganda worldwide. The phrase 'send in the argument' has become slang for overwhelming, disproportionate force response.",
+  "tags": [
+    "automaton",
+    "walker",
+    "tank",
+    "heavy",
+    "weapon",
+    "war",
+    "arcturus",
+    "corporate",
+    "military",
+    "tier 5"
+  ],
+  "id": "f70ac182499feadeca6fb89e31a6cdd3",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

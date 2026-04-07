@@ -10,7 +10,7 @@
   ],
   "category": "firearm",
   "description": "The TPIR-1 fires a hollow-bodied frangible projectile containing a micro-canister of binary thermobaric precursor compounds kept separated by a rupturable membrane. On impact with a soft target, the projectile fractures and the membrane ruptures, allowing the compounds to mix and react within the wound cavity over approximately 40 milliseconds — long enough for the target's own tissue to contain the initial reaction, then catastrophically insufficient to contain the overpressure that follows. The result is a wound profile that is dramatically disproportionate to the projectile's caliber, as the thermobaric expansion occurs inside the body rather than outside it. Against hard surfaces, the projectile shatters without triggering the reaction, making it a weapon that is selectively devastating only against soft targets.\n\nOuroboros Energy's weapons division developed the binary precursor system as a derivative of their work on controlled micro-combustion for miniaturized power cells — the same chemistry that drives their portable energy products, redirected. The TPIR-1 is the only weapon in its class to use a purely internal thermobaric effect; earlier attempts by competitors used external-burst projectiles that produced undirected overpressure and were quickly banned. Ouroboros's innovation was the selective reaction timing, which they achieved through a proprietary membrane compound that responds to the specific mechanical stress of tissue impact rather than hard-surface impact, providing the weapon's remarkable target selectivity.\n\nThe rifle itself is unremarkable in appearance — a medium-length, conventionally styled firearm with no exotic external components. The binary canister projectiles require climate-controlled storage to maintain membrane integrity, a logistical limitation that Ouroboros has addressed through an insulated magazine housing with a small thermal regulator. Operators who ignore the storage requirements report a significant rate of dud rounds, and the occasional premature reaction in a poorly maintained magazine has contributed to the weapon's fearsome reputation even among its own users.",
-  "manufacturer": "OUROBOROS ENERGY",
+  "manufacturer": "Ouroboros Solar Array Division",
   "tier_availability": "Military only / Black market (premium pricing)",
   "legality": "Prohibited — classified under Meridian 88 Anti-Atrocity Statute 12.1 as an unlawful wound-enhancement device",
   "base_technologies": [
@@ -53,8 +53,9 @@
     "rain",
     "cold",
     "ethics",
-    "train",
     "energy",
-    "fire"
-  ]
+    "fire",
+    "lethal"
+  ],
+  "parent_corponation": "Ouroboros Energy"
 }

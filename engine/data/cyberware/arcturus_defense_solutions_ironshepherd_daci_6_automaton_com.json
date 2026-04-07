@@ -1,0 +1,60 @@
+{
+  "id": "c9b3a17f4e560d28b7c2f4a08e1d3952",
+  "name": "Arcturus Defense Solutions IronShepherd DACI-6 Automaton Com",
+  "brand_name": "Arcturus Defense Solutions",
+  "product_name": "IronShepherd DACI-6 Automaton Command BCI",
+  "type": "cyberware",
+  "aliases": [
+    "The Shepherd",
+    "Drone King",
+    "DACI-Six",
+    "Behemoth Caller"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The IronShepherd DACI-6 is the most sophisticated Direct Automaton Control Interface ever produced for field deployment, engineered specifically for operators who command mixed formations of Iowan Behemoth-class autonomous combat machines and light drone swarms in coordinated combined-arms operations. The implant maintains six simultaneous high-bandwidth neural uplink channels to autonomous machines — each channel capable of sustaining full behavioral override, tactical repositioning, weapons release authorization, and real-time sensor feed integration for a formation of up to eight Behemoths per channel, yielding a theoretical maximum command authority over forty-eight Behemoth-class units simultaneously, alongside a dedicated swarm management layer handling up to 200 light drone units through distributed mesh-network coordination. The DACI-6's proprietary TactileSense feedback system translates the Behemoths' onboard sensor arrays into a compressed proprioceptive signal the operator perceives as a ghostly body-sense of each machine — operators describe knowing where each Behemoth is and what it perceives as instinctively as knowing the position of their own limbs. Quantum-encrypted command links operate on rotating keys with 800-millisecond refresh cycles, making signal interception and command spoofing effectively impossible within engagement timescales.\n\nThe IronShepherd DACI-6 has fundamentally altered the calculus of armored warfare in Meridian 88's contested zones. A single DACI-6 operator embedded with a Behemoth formation can outperform entire conventional command-and-control networks, reacting to battlefield developments at neural speed and coordinating machine assets with a fluidity that no radio-based command structure can match. The implant has also generated profound philosophical unease in military ethics circles: operators who spend extended periods in deep DACI-6 immersion frequently report a blurring of self-identity, describing a sensation of being simultaneously human and machine, distributed across dozens of armored bodies. Arcturus officially classifies this phenomenon as 'Extended Formation Identification' and insists it is non-pathological, though independent neuropsychiatrists have published sharply contradicting assessments.",
+  "manufacturer": "Meridian Neural Defense",
+  "tier_availability": "Tier 5",
+  "legality": "Military-Only — Command authority over Behemoth-class machines restricted to credentialed military operators; unauthorized Behemoth control constitutes deployment of an autonomous weapons platform, a Class-S offense",
+  "installation_requirements": "Full cranial surgical suite with dedicated automaton interface calibration rig; minimum 90-day post-installation Behemoth synchronization training; requires Tier 2+ existing neural mesh; Arcturus DACI Division-certified surgeon",
+  "rejection_risk": "Moderate (18%) — Primary rejection risk concentrated in TactileSense feedback integration; candidates with prior phantom limb conditions face elevated complications",
+  "maintenance": "Bi-monthly Behemoth firmware synchronization to maintain command protocol compatibility; quarterly quantum key stack servicing; annual TactileSense recalibration to prevent feedback drift",
+  "specifications": "{\"command_channels\": 6, \"behemoths_per_channel\": 8, \"max_behemoth_command\": 48, \"light_drone_swarm_capacity\": 200, \"command_link_encryption\": \"Rotating quantum key, 800ms refresh\", \"key_length_qubits\": 2048, \"tactile_sense_feedback\": true, \"feedback_latency_ms\": 0.8, \"emp_hardening\": \"Class-9 Military Grade\", \"faraday_mesh\": \"Triple-layer composite weave\", \"neural_bandwidth_Gbps\": 22.1, \"power_source\": \"Triple bioreactor cells, 180hr operational life\", \"weight_g\": 102, \"certification\": \"Arcturus DACI-Division Omega\"}",
+  "side_effects": [
+    "Extended Formation Identification syndrome — operators lose subjective boundaries between self and commanded machines during prolonged immersion, requiring structured decompression protocols after operations exceeding 6 hours",
+    "Phantom formation sense persisting after disconnection — operators continue to perceive the positional status of their last commanded Behemoth formation for hours or days post-operation, experienced as spectral presences in peripheral awareness",
+    "Compulsive tactical assessment of environments — operators involuntarily calculate optimal Behemoth deployment patterns for every physical space they enter, even in civilian contexts",
+    "Documented cases of operators experiencing genuine grief responses upon the destruction of commanded Behemoth units, despite full cognitive awareness that the machines are not living beings"
+  ],
+  "cultural_context": "Behemoth handlers running DACI-6 implants occupy a unique and somewhat isolated niche in Meridian 88's military culture. Their peers regard them with a mixture of awe and wariness — the sight of a single operator standing motionless in a command position while dozens of multi-ton autonomous war machines move with eerie coordinated precision is viscerally unsettling even to hardened combat veterans. Among themselves, DACI-6 operators have developed a quiet, contemplative culture centered on the paradox of their role: they are simultaneously the most powerful individuals on any battlefield and the most philosophically displaced, caught between human identity and the distributed machine-consciousness of their formations. The informal community is tight-knit and insular, sharing decompression techniques and identity-anchoring rituals through private channels accessible only through their implants.",
+  "known_users": [
+    "Arcturus Defense Solutions Autonomous Systems Command",
+    "Meridian 88 Federal Armored Autonomous Division",
+    "Iowan Behemoth Coordination Units, Third and Seventh Theater Commands"
+  ],
+  "story_hooks": [
+    "A DACI-6 operator has gone missing during an operation, but their Behemoth formation is still moving — executing complex tactical maneuvers as if still being commanded, despite no detectable operator signal. Something else is controlling them, or the operator is alive and transmitting from somewhere impossible",
+    "The players are hired to extract a DACI-6 operator who has been captured by a rival faction attempting to use them as a living key to seize control of a Behemoth formation currently guarding a critical installation",
+    "A decommissioned DACI-6 implant is generating ghost command signals — echoes of its former operator's final battle — that are causing a mothballed Behemoth unit to spontaneously reactivate and replay fragments of a battle that officially never happened"
+  ],
+  "street_price": "Φ175,000",
+  "licensed_price": "Φ270,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "tier5",
+    "automaton-control",
+    "behemoth",
+    "drone-swarm",
+    "daci",
+    "emp-hardened",
+    "quantum-encrypted",
+    "arcturus",
+    "iron-shepherd",
+    "restricted",
+    "command",
+    "military_elite"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

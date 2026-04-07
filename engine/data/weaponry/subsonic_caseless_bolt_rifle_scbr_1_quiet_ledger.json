@@ -11,7 +11,7 @@
   ],
   "category": "firearm",
   "description": "The SCBR-1 fires a 12.7mm caseless subsonic round using a precision-engineered linear combustion chamber that burns propellant so completely and at such controlled pressure that the muzzle report is reduced to approximately 118 dB without any suppressor — well below the threshold of conventional recognition as a gunshot. Combined with an integrated wet suppressor that uses a sealed liquid baffle system, the total acoustic signature drops to 94 dB: audible at close range but indistinguishable at distance from mechanical noise, HVAC systems, or street clutter. The caseless ammunition eliminates ejection noise entirely, and the manually-operated rotary bolt produces only the soft mechanical click of cycling. At 200 meters in an urban environment, the weapon is functionally silent.\n\nThe SCBR-1 was developed by RINGO CORPONATION's advanced projects division under a research contract originally framed around 'acoustic security assessment tools' — a designation that allowed the project to proceed without triggering weapons development review boards. The weapon's 12.7mm subsonic round was engineered specifically to maintain terminal effectiveness despite reduced velocity: the projectile uses a dense tungsten core with a controlled-deformation polymer jacket that produces consistent expansion at subsonic speeds, maintaining wound ballistics comparable to a standard supersonic 7.62mm round. The trade-off is range — effective precision fire is limited to approximately 300 meters, beyond which the heavy subsonic projectile drops steeply.\n\nThe weapon's name comes from its role in RINGO CORPONATION's internal mythology as the instrument of quiet corporate accounting — the settling of debts that cannot be settled openly. It is a precision rifle in the traditional sense, manually cycled, requiring a shooter who understands patience and positioning. The wet suppressor requires replacement of the liquid baffle cartridge every 30 shots, and the caseless ammunition is proprietary to RINGO's supply chain, meaning operators must maintain a relationship with RINGO's logistics network to stay armed.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Heritage Broadcasting",
   "tier_availability": "Black market",
   "legality": "Prohibited",
   "base_technologies": [
@@ -54,6 +54,8 @@
     "debt",
     "rooftop",
     "market",
-    "fire"
-  ]
+    "fire",
+    "lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

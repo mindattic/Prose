@@ -1,0 +1,44 @@
+{
+  "id": "6f0c8a5d3b9e1f4c7d2a6b0e8c5f3d1a",
+  "name": "Graymark Thermal Shell",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "Graymark sits in a specific niche: thermal regulation technology at a price point that Tier 3 buyers can justify as a long-term investment. The Thermal Shell is a mid-length jacket — not quite a parka, not quite a shell — with an embedded heating element network powered by a thin-film battery panel integrated into the back lining. The exterior is a matte-finish nylon in a medium gray that photographs as almost any color depending on light conditions. The heat distribution is even and adjustable via a small analog dial at the left cuff — no BCI required, which is a deliberate choice. Three settings: low, medium, and high. At high, in extreme cold, you can feel it working within about ninety seconds. The jacket is cut slim enough to look intentional in a Tier 3 office context and practical enough to actually use on the lakefront. Battery life is approximately eight hours on medium setting.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "matte nylon shell",
+    "thin-film battery lining",
+    "embedded heating element mesh",
+    "synthetic insulation fill",
+    "water-resistant finish"
+  ],
+  "functionality": "Embedded resistive heating network with analog dial control. Three heat settings. Approximately 8 hours battery life on medium. No BCI required.",
+  "what_it_says": "You have decided to solve the problem of being cold with technology rather than bulk, and you had the budget to do it without going into debt. You are pragmatic about comfort.",
+  "worn_by": [
+    "Tier 3 professionals",
+    "architects and field engineers",
+    "outdoor workers with above-average budgets",
+    "people with circulation issues",
+    "lakefront commuters"
+  ],
+  "manufacturer": "Graymark Technical Apparel",
+  "price_range": "Φ380",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of Graymark Thermal Shells from the current season has a heating element defect that causes localized overheating in the left shoulder region — no injuries reported yet, but someone with access to the quality control data is sitting on it",
+    "Graymark's thin-film battery technology was reportedly licensed from a military contractor under terms that are now being contested — the outcome of the dispute could force a redesign that eliminates the no-BCI-required feature",
+    "The analog dial control, which Graymark markets as a feature for users who prefer not to use BCI, has become a quiet political statement in anti-BCI communities — wearing a Graymark is a low-key way of signaling your position on neural interface mandates"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "Tier 3",
+    "thermal regulation",
+    "tech-enhanced",
+    "practical",
+    "lakefront",
+    "heating element"
+  ],
+  "parent_corponation": ""
+}

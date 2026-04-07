@@ -1,0 +1,47 @@
+{
+  "id": "3e25358c02723d8f49c615622623c697",
+  "name": "Crucible Industries Barrage-9 'Hornet'",
+  "type": "weapon",
+  "aliases": [
+    "Hornet",
+    "Barrage",
+    "B-9"
+  ],
+  "category": "pistol",
+  "description": "The Crucible Industries Barrage-9 is a fully automatic machine pistol chambered in 9x19mm, fed from a helical magazine holding fifty rounds. The weapon features a forward pistol grip, a muzzle compensator, and a cyclic rate of 1,100 rounds per minute that empties the magazine in under three seconds of continuous fire.\n\nThe Hornet is not subtle. It is a volume-of-fire weapon designed for situations where suppression and area denial matter more than precision. The helical magazine gives it ammunition capacity that rivals some submachine guns, and the compensator keeps the muzzle from climbing uncontrollably during full-auto fire — though 'controllable' is a generous description. In practice, operators fire in short bursts and accept that rounds will disperse across a roughly human-sized area at ten meters.\n\nCrucible Industries sells the Barrage-9 exclusively to corponation military contracts and licensed heavy-security firms. It is one of the few pistol-class weapons that carries automatic-weapons-grade licensing requirements. On the black market, the Hornet commands premium prices and confers immediate credibility — or terror, depending on perspective.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — automatic weapons license required",
+  "base_technologies": [
+    "Fully automatic mechanism",
+    "Helical magazine",
+    "Muzzle compensator",
+    "Forward pistol grip"
+  ],
+  "specifications": "caliber: 9x19mm\neffective_range: 25 meters (burst), 10 meters (full auto)\nrate_of_fire: Full automatic, 1100 RPM\nmagazine_capacity: 50 rounds (helical)\nweight: 1.4 kg (loaded)",
+  "tactical_use": "A volume-of-fire weapon for close-quarters suppression and area denial. The high cyclic rate and large magazine capacity allow sustained suppressive fire from a pistol-sized platform. Not a precision weapon — effectiveness relies on volume rather than accuracy. Best employed in defensive positions or ambush scenarios where the operator can brace against something solid.",
+  "cultural_context": "The Hornet is a weapon of excess. Carrying one says you expect — or want — the kind of trouble that requires fifty rounds in three seconds. In criminal circles, it's a power statement. In professional circles, it's an acknowledgment that sometimes the plan involves making a lot of noise and hoping quantity has a quality all its own.",
+  "known_users": [
+    "Corponation heavy-security teams",
+    "Black market enforcers",
+    "Licensed facility defense contractors",
+    "Criminal organizations (black market)"
+  ],
+  "story_hooks": [
+    "A Hornet is used in a brazen attack on a corponation convoy in broad daylight — the fifty-round magazine is emptied in one burst, and every round hits the same vehicle with suspicious precision. Someone has modified the weapon with a targeting system it was never designed to carry.",
+    "Crucible Industries discovers that someone has reverse-engineered the helical magazine design and is producing unlicensed copies that fit other weapons platforms."
+  ],
+  "ammunition_type": [
+    "9x19mm"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "machine_pistol",
+    "full_auto",
+    "volume_fire",
+    "restricted",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

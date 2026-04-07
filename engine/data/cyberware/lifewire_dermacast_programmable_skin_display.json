@@ -1,0 +1,55 @@
+{
+  "id": "a3f7c2e1b804d659f1a02c3e7b9d4f82",
+  "name": "LifeWire DermaCast Programmable Skin Display",
+  "brand_name": "LifeWire",
+  "product_name": "DermaCast",
+  "type": "cyberware",
+  "aliases": [
+    "the canvas",
+    "skinscreen",
+    "dermcast",
+    "wallpaper",
+    "the gallery"
+  ],
+  "category": "cosmetic",
+  "body_location": "subdermal full-body or partial panel (chest, arms, back — user-selected coverage zone)",
+  "description": "The DermaCast is a subdermal chromatic mesh woven just beneath the epidermis, composed of billions of individually addressable biophotonic cells that can replicate virtually any color, pattern, gradient, or animated motif across the covered skin surface. The mesh communicates with a palm-sized wireless controller or a companion neural tap (sold separately) and refreshes display states at up to 60 cycles per second, enabling smooth animated effects. The system draws power from ambient body heat via a thermoelectric microgenerator embedded at the base of the ribcage, eliminating the need for external charging in most climates. Software updates delivered over LifeWire's consumer network add new pattern libraries, seasonal collections licensed from fashion houses, and community-generated designs available through the LifeWire Skin Marketplace.\n\nThe DermaCast has become one of the defining cosmetic implants of mid-century Meridian 88 — as ubiquitous in Tier 2 and 3 neighborhoods as tattoos were a century prior, and considerably more flexible. Wearers cycle through looks for work, social events, and personal expression with the same casualness as changing a shirt. Full-body coverage is a status display among club culture and the artistic communities of the Shelf's upper districts, while partial installs — a single forearm panel or a collar-line display — are popular with office workers who want understated customization. Parents sometimes get matching family crest patterns installed. Grief traditions have emerged around the practice of displaying memorial patterns on death anniversaries. The implant has, in many ways, replaced the tattoo industry entirely for the generations raised after 2160.",
+  "manufacturer": "LIFEWIRE CONSUMER BIOTECH CORPORATION",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or licensed LifeWire retail installation kiosk; partial panel installs take under two hours under local anesthetic, full-body coverage requires a half-day appointment",
+  "rejection_risk": "Minimal",
+  "maintenance": "Annual mesh integrity scan at any LifeWire retail location; firmware updates push automatically over consumer network; thermoelectric cell replacement every 5-7 years",
+  "specifications": "{\"display_resolution\": \"480 biophotonic cells per square centimeter\", \"refresh_rate\": \"up to 60Hz\", \"color_gamut\": \"full visible spectrum plus near-UV accent modes\", \"power_source\": \"subdermal thermoelectric microgenerator\", \"wireless_protocol\": \"LifeWire SkinLink 4.2\", \"coverage_options\": \"partial panel (0.05 sqm minimum) to full-body (approx. 1.7 sqm)\", \"animation_support\": \"yes, up to 12 simultaneous animated zones\", \"marketplace_integration\": \"LifeWire Skin Marketplace, 400,000+ licensed designs\"}",
+  "side_effects": [
+    "Mild itching during initial mesh integration, typically resolving within 10-14 days",
+    "Occasional display artifacts (static patches, color bleed) during high-fever illness as body temperature disrupts thermoelectric regulation",
+    "Vivid skin-sensation dreams during the first week of calibration as the nervous system maps the mesh",
+    "Rare: photosensitivity at mesh boundaries in direct high-UV sunlight without updated UV-filter firmware"
+  ],
+  "cultural_context": "The DermaCast occupies the same cultural space that tattoos held in the late twentieth and early twenty-first centuries, but with none of the permanence and significantly less social stigma. In Tier 1 and 2 communities, full-panel arm and chest installs are a normal rite of passage for young adults, with first-install parties common among families who can scrape together the cost. Corporate Tier 4 environments have developed informal norms around 'professional mode' — neutral skin tones or subtle geometric patterns during work hours — and several corponations include DermaCast etiquette in their employee conduct guidelines. High-fashion variants running licensed couture patterns from Spire designers exist at premium price points, creating a visible class gradient: the Shelf wears community marketplace designs and pirated pattern packs, the Spire wears Maison-licensed animations that cost more than a Tier 1 monthly wage. Among the street art communities of Meridian 88's lower districts, wearing unlicensed or cracked pattern firmware is considered a political act.",
+  "known_users": [
+    "Young adults making their first major cosmetic purchase",
+    "Artists and performers",
+    "Club and nightlife culture participants",
+    "Families displaying coordinated memorial or cultural patterns",
+    "Corporate workers with employer-approved 'professional mode' installs"
+  ],
+  "story_hooks": [
+    "A beloved community artist on the Shelf dies, and their signature pattern — widely worn as tribute — is claimed by a LifeWire licensing subsidiary, triggering automatic cease-and-desist firmware pushes to thousands of wearers who suddenly find their skin displaying a legal warning banner",
+    "A Tier 3 accountant notices their DermaCast is displaying micro-advertisements during sleep — barely perceptible, but a journalist has documented that LifeWire's latest firmware update includes an opt-out-only passive ad display clause buried in the terms of service",
+    "The players are asked to identify a body, but the deceased's DermaCast is still running on residual heat — and the last pattern loaded may contain a hidden steganographic message"
+  ],
+  "street_price": "ΦΦΦ 280-600 depending on coverage area (partial panel to full-body)",
+  "licensed_price": "ΦΦΦ 500-1,400 at official LifeWire retail clinics",
+  "tags": [
+    "cyberware",
+    "cosmetic",
+    "lifestyle",
+    "skin-display",
+    "fashion",
+    "biophotonic",
+    "mass-market"
+  ],
+  "parent_corponation": ""
+}

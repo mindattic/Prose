@@ -1,0 +1,33 @@
+{
+  "id": "8c3e78a2770408bd8ee83164dd7a7151",
+  "name": "Approval Addict",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Their worth is measured entirely in other people's opinions",
+  "behavioral_signature": "Shapes every action around anticipated reactions from others",
+  "under_stress": "Becomes a doormat, agreeing with contradictory people simultaneously",
+  "at_rest": "Charming, agreeable, exhausted from performing",
+  "will_always": [
+    "check the room before stating an opinion"
+  ],
+  "will_never": [
+    "risk being disliked"
+  ],
+  "unless": [
+    "someone they respect more demands they take a stand"
+  ],
+  "similar_to": [
+    {
+      "archetype": "People Pleaser",
+      "threshold": 0.9,
+      "context": "approval-seeking"
+    }
+  ],
+  "opposite_of": [
+    "Authentic Core"
+  ],
+  "tags": [
+    "dependent",
+    "performing"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "71b5f3d9e2a4c8061d7b5f3a9e2c4806",
+  "name": "Pellucid Biolab Standard Coat",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A knee-length lab coat in a clean white poly-cotton blend with snap closures rather than buttons for faster removal in contamination situations. Two large lower pockets, two chest pockets, a pen slot sewn into the left breast. The fabric has a tight weave that resists light liquid splatter and holds a press well — after a shift it looks like you've been working, not like you've been through something.\n\nPellucid is the dominant supplier of professional lab and medical workwear throughout Meridian 88's licensed research sector. This coat is standard issue at geneware clinics, university labs, corporate R&D facilities, and the many gray-market clinics that operate in the transition zones between tiers. The same coat on a Tier 4 researcher and a back-alley gene-splicer — the coat itself makes no judgment.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "poly-cotton blend",
+    "light liquid-resistant finish",
+    "snap closures",
+    "reinforced pocket seams"
+  ],
+  "functionality": "",
+  "what_it_says": "You work in a lab or want people to think you do. In this city, both are plausible.",
+  "worn_by": [
+    "licensed researchers",
+    "geneware clinic staff",
+    "pharmaceutical technicians",
+    "gray-market gene-splicers",
+    "medical professionals across all tiers"
+  ],
+  "manufacturer": "Pellucid Professional Workwear",
+  "price_range": "Φ55",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Pellucid lab coat found at an unauthorized geneware site has a corponation R&D facility ID badge still clipped to the chest pocket — the researcher it belonged to is listed as on sabbatical.",
+    "Pellucid has introduced a new batch of coats with a slightly different chemical composition in the fabric — someone with the right instruments would notice it reacts to a specific airborne compound used in a classified corponation process.",
+    "Gray-market clinics have been getting shipments of Pellucid coats with corponation lab insignia already embroidered — someone inside Pellucid is helping unauthorized operations look legitimate."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "lab coat",
+    "professional",
+    "medical",
+    "research",
+    "workwear"
+  ],
+  "parent_corponation": ""
+}

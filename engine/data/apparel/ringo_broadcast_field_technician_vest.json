@@ -1,0 +1,34 @@
+{
+  "name": "Ringo Broadcast Field Technician Vest",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "media_technical_crew",
+  "manufacturer": "Ringo Data Services",
+  "description": "Ringo's field broadcast technicians — the crew running cameras, signal repeaters, and live-feed rigs for everything from sponsored sports events to political press junkets — wear this vest as their standard on-site identifier. Built from a durable ripstop nylon in Ringo's electric red, the vest carries 14 external pockets of varying size calibrated for broadcast hardware: signal boosters, battery packs, lens filters, and interface cables all have designated homes. The Ringo 'R' logo in reflective white sits on the front and back, making crew identifiable in crowded or chaotic environments. Interior mesh lining keeps the vest breathable during long outdoor shoots.\n\nThe vest is designed to layer over personal clothing rather than replace it, which means it accommodates almost any body type or modification without manufacturer adjustment — the front closes with a wide-gap magnetic buckle system that clears most chest-mounted chrome, and the back panel is split to accommodate wing stubs or dorsal geneware modifications. A passive signal-routing harness built into the lining allows the wearer's BCI to interface directly with compatible Ringo broadcast hardware. Crew members have a complicated relationship with the vest: it marks you as essential on set, but it also makes you invisible to the talent and the executives who pretend the broadcast happens by itself.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ130",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "In Ringo's world, the talent wears couture and the crew wears red vests. It's a deliberate hierarchy. But crew members who've been on enough shoots develop a kind of pride in the vest — they're the ones who actually make the broadcast work, and everyone in the industry knows it.",
+  "story_hooks": [
+    "A field technician's vest contains broadcast footage auto-logged to Ringo's cloud servers from a shoot where something very wrong happened that never made it to air.",
+    "Someone in a Ringo vest is moving through a restricted Tier 4 event — but Ringo has no scheduled broadcast there, and the 'technician' doesn't appear on any crew manifest.",
+    "A veteran crew member discovers that the BCI signal-routing harness in her vest has been passively collecting biometric data from everyone she's been near on set for three years."
+  ],
+  "tags": [
+    "ringo",
+    "media",
+    "broadcast",
+    "crew",
+    "technical",
+    "vest",
+    "augment-compatible",
+    "geneware-compatible",
+    "entertainment",
+    "tier2"
+  ],
+  "id": "53ecc448caa74b728238d66438392b3c",
+  "parent_corponation": "Ringo Corponation"
+}

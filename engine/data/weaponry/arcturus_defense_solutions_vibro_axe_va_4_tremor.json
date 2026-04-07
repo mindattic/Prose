@@ -1,0 +1,45 @@
+{
+  "id": "2eb980d615a81988193d2903911ac18c",
+  "name": "Arcturus Defense Solutions Vibro-Axe VA-4 'Tremor'",
+  "type": "weapon",
+  "aliases": [
+    "Tremor",
+    "VA-4",
+    "The Shaker",
+    "Splitjaw"
+  ],
+  "category": "melee",
+  "description": "A single-bladed combat axe with a transverse vibration system that oscillates the cutting edge perpendicular to the blade face at 35,000 cycles per second. The VA-4's vibration pattern is specifically engineered for chopping rather than slicing — each impact is amplified by the lateral oscillation, which drives the edge deeper into the target material with every microsecond of contact. A Tremor strike against armored plate does not bounce or deflect; it digs in and keeps going.\n\nArcturus designed the Vibro-Axe for field demolition and obstacle clearance — cutting through structural supports, locked hatches, and barricade materials that resist conventional cutting tools. The weapon's axe geometry transfers more kinetic energy per swing than a sword-profile blade, and the vibration system multiplies that energy's effect on the target. The result is a breaching tool that requires no power grid connection and weighs less than a portable cutting laser.\n\nThe VA-4 has found its primary combat audience among augmented operators who fight in confined industrial environments — maintenance corridors, machinery spaces, and infrastructure tunnels where long blades are impractical. The axe's compact head and one-handed capability allow it to be used in spaces too tight for swords, while its vibration-enhanced cutting power ensures that armor and barriers offer minimal protection.",
+  "manufacturer": "Blackwood Commercial Group",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — industrial/combat dual-classification",
+  "base_technologies": [
+    "Transverse vibration edge system",
+    "Carbon-lattice axe head",
+    "Impact-amplification oscillation"
+  ],
+  "specifications": "head_width: 18 cm cutting edge\nhandle_length: 45 cm\ntotal_weight: 1.6 kg\nvibration_frequency: 35,000 Hz transverse\npower_source: Handle-integrated capacitor, 5 hours continuous\nhead_material: Carbon-lattice composite\none_handed: Yes",
+  "tactical_use": "The Tremor excels in confined-space combat where its compact profile and devastating chopping power outperform longer weapons. The vibration system's transverse oscillation makes the weapon difficult to parry — contact with a blocking weapon or shield transmits the vibration into the defender's arm, causing numbness and loss of grip. Operators in maintenance corridors and industrial environments use the VA-4 as their primary weapon, switching to it from firearms when engagement distances drop below five meters.",
+  "cultural_context": "The Vibro-Axe has become the signature weapon of Meridian 88's infrastructure workers — the maintenance crews, tunnel rats, and pipe-runners who keep the city's systems functioning in spaces no one else willingly enters. Many carry the VA-4 as both tool and weapon, and a vibro-axe hanging from a tool belt signals someone who works in the deep infrastructure. The maintenance worker subculture has developed a brutal but effective fighting style built around the weapon's confined-space strengths.",
+  "known_users": [
+    "Arcturus industrial teams",
+    "Infrastructure maintenance crews",
+    "Confined-space combat specialists"
+  ],
+  "story_hooks": [
+    "Maintenance workers in a lower-tier tunnel system have stopped responding to calls. When a team goes to investigate, they find the tunnels barricaded with industrial debris — and the workers inside are armed with VA-4s, defending something they found in the deep infrastructure.",
+    "A modified VA-4 has been recovered with its vibration frequency altered to match the resonant frequency of a specific type of structural beam — someone is preparing to bring down a building with hand tools."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "axe",
+    "vibro-axe",
+    "confined-space",
+    "tier 3",
+    "industrial",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "9dbb1f74aaac7cec4cd9c7b5a69a2ff5",
+  "name": "Ends Justify Means",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Any tool is clean if the job matters enough",
+  "behavioral_signature": "Commits atrocities with a clear conscience because the goal is worthy",
+  "under_stress": "Escalates methods without moral hesitation",
+  "at_rest": "Plans terrible things with genuine warmth in their eyes",
+  "will_always": [
+    "do whatever the mission requires"
+  ],
+  "will_never": [
+    "let squeamishness compromise the objective"
+  ],
+  "unless": [
+    "the cost exceeds the value of the goal itself"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Necessary Evil",
+      "threshold": 0.85,
+      "context": "justified brutality"
+    }
+  ],
+  "opposite_of": [
+    "Deontologist",
+    "Pacifist"
+  ],
+  "tags": [
+    "ruthless",
+    "mission-focused"
+  ]
+}

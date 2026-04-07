@@ -1,0 +1,34 @@
+{
+  "id": "b8c9797f471124584ca26e954d45f02c",
+  "name": "Mercy First",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Forgiveness isn't weakness, it's the only thing that stops the bleeding",
+  "behavioral_signature": "Extends grace even when punishment is deserved and expected",
+  "under_stress": "Forgives things that shouldn't be forgiven",
+  "at_rest": "Creates space for people to be better than their worst moment",
+  "will_always": [
+    "offer a second chance"
+  ],
+  "will_never": [
+    "be the first to throw the stone"
+  ],
+  "unless": [
+    "mercy would directly enable ongoing harm to the defenseless"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Forgiver",
+      "threshold": 0.9,
+      "context": "extending grace"
+    }
+  ],
+  "opposite_of": [
+    "Retributionist",
+    "Executioner"
+  ],
+  "tags": [
+    "merciful",
+    "forgiving"
+  ]
+}

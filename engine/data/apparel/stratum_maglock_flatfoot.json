@@ -1,0 +1,41 @@
+{
+  "id": "c5e8a1f3d07b294e6c8a0f3d5b7e2194",
+  "name": "Stratum Maglock Flatfoot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A low-profile slip-on shoe with a ferromagnetic outsole plate designed to interface with magnetic-lock flooring systems in industrial and transit environments. The upper is a plain stretch-mesh in grey or black, close-fitting and unremarkable. The sole is notably flat and slightly heavier than expected, with a visible seam where the mag-plate inserts.\n\nA workhorse item for augmented laborers who spend shifts on maglocked gantries or transit car rooftops. The shoe itself is nothing special — the sole is everything. Replacement mag-plates are sold separately.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "stretch mesh upper",
+    "ferromagnetic steel outsole plate",
+    "foam midsole",
+    "polyurethane shell"
+  ],
+  "functionality": "Ferromagnetic outsole plate provides passive magnetic-lock compatibility with standard industrial and transit maglocked surfaces. Plates are field-replaceable.",
+  "what_it_says": "You work in places where falling is a real option. Practical to the point of indifference to aesthetics.",
+  "worn_by": [
+    "gantry workers",
+    "rail maintenance crews",
+    "augmented laborers in maglocked environments",
+    "dock workers"
+  ],
+  "manufacturer": "Stratum Industrial Goods",
+  "price_range": "Φ45 - Φ55",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The mag-plate frequency is keyed to specific industrial zones — wearing these in the wrong facility sets off access alerts.",
+    "Someone has been leaving Stratum Flatfoots near transit maintenance hatches across the city — always one shoe, never a pair."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "aug-compatible",
+    "maglock",
+    "industrial",
+    "slip-on",
+    "low-profile"
+  ],
+  "parent_corponation": ""
+}

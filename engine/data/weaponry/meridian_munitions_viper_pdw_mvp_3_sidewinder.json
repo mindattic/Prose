@@ -1,0 +1,49 @@
+{
+  "id": "9795067780de468f3834139879ea7e9f",
+  "name": "Meridian Munitions Viper PDW MVP-3 'Sidewinder'",
+  "type": "weapon",
+  "aliases": [
+    "Sidewinder",
+    "MVP-3",
+    "Viper"
+  ],
+  "category": "smg",
+  "description": "The MVP-3 Sidewinder is Meridian Munitions' compact personal defense weapon, designed for operators who need maximum firepower in minimum space. The weapon uses a telescoping bolt design that wraps around the barrel, reducing overall length to 280mm with the stock folded while maintaining a 180mm barrel for adequate velocity. Chambered in 5.7mm caseless armor-piercing, the Sidewinder punches above its weight class against body armor.\n\nThe BCI aim-assist module is the same open-architecture system used in the MM-4 Breadwinner, maintaining Meridian's commitment to non-proprietary accessories. A rail-mounted micro red dot is included as standard, and the weapon accepts any manufacturer's suppressor on its threaded barrel. The 25-round magazine fits flush with the grip, maintaining the compact profile.\n\nAt Φ2,200, the Sidewinder occupies the mid-range of the PDW market. It lacks the BCI sophistication of Tessera's Reflex and the rock-bottom pricing of Kang-Petrov's Rattler, but it delivers reliable performance with armor-piercing capability in a package that fits inside a laptop bag. For the freelancer who needs a concealable weapon that can defeat body armor, the MVP-3 is the practical choice.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Telescoping bolt design",
+    "Open-architecture BCI module",
+    "Armor-piercing optimized feed"
+  ],
+  "specifications": "caliber: 5.7mm caseless AP\neffective_range: 150m\nrate_of_fire: 850 rpm (cyclic)\nmagazine_capacity: 25 rounds\nweight: 1.6 kg",
+  "tactical_use": "The Sidewinder provides armor-piercing capability in a concealable package. Its 5.7mm AP round defeats Level II body armor at close range and degrades Level III protection, giving operators a response to armored threats that pistol-caliber weapons cannot address. The compact dimensions allow concealed carry in civilian environments where a visible weapon would compromise the operation. The open-architecture BCI module means operators already using Meridian's ecosystem can transfer their settings directly.",
+  "cultural_context": "The Sidewinder is the freelancer's insurance policy — the weapon carried when the job description says 'no weapons expected' but experience says otherwise. Its popularity among couriers, negotiators, and fixers reflects the reality that Meridian 88's professional class moves through danger zones as part of their daily routine. The MVP-3 doesn't start fights. It finishes the ones that find you.",
+  "known_users": [
+    "Freelance operators",
+    "Corporate couriers",
+    "Negotiators and fixers",
+    "Personal defense carriers"
+  ],
+  "story_hooks": [
+    "A courier's Sidewinder was the only weapon available when their convoy was ambushed. The 25-round magazine held off attackers long enough for extraction — barely.",
+    "Meridian is developing an upgraded Sidewinder with a 40-round extended magazine, but the prototype was stolen from their R&D facility along with the production blueprints."
+  ],
+  "ammunition_type": [
+    "5.7mm caseless AP",
+    "5.7mm caseless standard"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "PDW",
+    "compact",
+    "armor_piercing",
+    "concealed",
+    "Meridian",
+    "tier 2",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

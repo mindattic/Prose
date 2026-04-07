@@ -1,0 +1,43 @@
+{
+  "id": "cb2e33187778f61af1c9d4fdf0e404de",
+  "name": "Carrion Defense Works StreetSweeper CS-6 'Gutter Rain'",
+  "type": "weapon",
+  "aliases": [
+    "Gutter Rain",
+    "CS-6",
+    "The Drencher",
+    "Acid Spit"
+  ],
+  "category": "self_defense",
+  "description": "A heavy-duty chemical defense spray designed for the violent reality of Tier 1-2 street life, where attackers may be chemically numbed, heavily augmented, or simply too desperate to be deterred by pain. The CS-6 fires a pressurized stream of Carrion's proprietary Compound 6 — a synthetic irritant combined with a contact adhesive that bonds to skin and continues to burn for up to thirty minutes. The compound cannot be wiped off and is resistant to water, requiring a specific chemical neutralizer to remove.\n\nCarrion makes no attempt to market the CS-6 as a gentle deterrent. The packaging is industrial black with hazard-yellow warning stripes, and the instructions explicitly state that the compound causes second-degree chemical burns on prolonged skin contact. The canister is built to withstand being dropped, stepped on, or submerged, because Carrion's target demographic lives in environments where equipment takes abuse.\n\nThe CS-6 occupies a legal gray area — its effects technically exceed the threshold for 'non-lethal' classification, but Meridian 88's self-defense statutes permit 'reasonable force proportional to perceived threat,' and in Tier 1-2, the perceived threat is usually severe enough to justify aggressive chemical deterrents. Law enforcement periodically moves to restrict the CS-6, and Carrion periodically lobbies to prevent it.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 1+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Synthetic persistent irritant chemistry",
+    "Contact adhesive binding agent",
+    "Hardened pressurized delivery system"
+  ],
+  "specifications": "capacity: 4 stream bursts\nrange: 5 meters directed stream\nburn duration: up to 30 minutes without neutralizer\nneutralizer: Carrion CDW-Neut6 (sold separately, Φ15)\nweight: 210 g\ncanister construction: impact-rated polymer shell\nchemical burn severity: first to second degree on prolonged contact",
+  "tactical_use": "Aim for exposed skin — face, neck, hands. The stream delivery is more wind-resistant than aerosol sprays, making it effective outdoors. The adhesive compound means a single hit continues to cause escalating pain, even if the attacker initially pushes through. Carrion recommends spraying and running — the compound's thirty-minute burn will discourage pursuit. Carry the neutralizer separately in case of accidental self-exposure.",
+  "cultural_context": "In Tier 1-2, the CS-6 is known as the equalizer you carry when you know pepper spray won't cut it. Its aggressive branding is a deliberate contrast to the sanitized marketing of upscale defense products — Carrion's implicit message is 'we know what you're actually facing out there.' The CS-6 has generated controversy after several incidents where attackers suffered permanent scarring, but Carrion's legal position — that the alternative to chemical burns is often death — has held up in every challenge so far.",
+  "known_users": [],
+  "story_hooks": [
+    "A vigilante in Tier 1 has been using CS-6 to permanently disfigure people they identify as predators — the compound's adhesive properties make the scarring deliberate and recognizable.",
+    "Carrion's Compound 6 formula was leaked online, and home-brewed versions with inconsistent concentrations are causing severe injuries — including several cases of permanent blindness."
+  ],
+  "ammunition_type": [
+    "Compound 6 adhesive irritant stream"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "chemical",
+    "aggressive",
+    "persistent",
+    "tier_1",
+    "street_level"
+  ],
+  "parent_corponation": ""
+}

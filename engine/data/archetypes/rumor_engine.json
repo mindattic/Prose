@@ -1,0 +1,34 @@
+{
+  "id": "07d32621ac13492a45d15bffbaad101a",
+  "name": "Rumor Engine",
+  "type": "archetype",
+  "category": "social",
+  "description": "Generates and amplifies stories until truth becomes irrelevant",
+  "behavioral_signature": "Every conversation with them adds embellishment to the narrative",
+  "under_stress": "Fabricates entire scenarios and believes them",
+  "at_rest": "Embroidering the last interesting thing they heard",
+  "will_always": [
+    "add detail to any story they retell"
+  ],
+  "will_never": [
+    "let facts get in the way of a good narrative"
+  ],
+  "unless": [
+    "someone they fear is the subject"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Gossip",
+      "threshold": 0.8,
+      "context": "information spread"
+    }
+  ],
+  "opposite_of": [
+    "Documentarian"
+  ],
+  "tags": [
+    "rumors",
+    "amplification",
+    "narrative"
+  ]
+}

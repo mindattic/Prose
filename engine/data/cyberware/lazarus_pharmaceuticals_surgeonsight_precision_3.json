@@ -1,0 +1,54 @@
+{
+  "id": "c5d9b3e2f14a8760f3c4e5d6b7a8f901",
+  "name": "LAZARUS PHARMACEUTICALS SurgeonSight Precision-3",
+  "brand_name": "LAZARUS PHARMACEUTICALS",
+  "product_name": "SurgeonSight Precision-3 Medical Ocular",
+  "type": "cyberware",
+  "aliases": [
+    "Lazarus Lens",
+    "Precision-Threes",
+    "Scope Eyes"
+  ],
+  "category": "ocular",
+  "body_location": "eyes",
+  "description": "The SurgeonSight Precision-3 is a medical-grade full-replacement ocular engineered specifically for high-precision surgical and clinical environments, offering optical zoom from 0.5x wide-field to 40x microsurgical magnification with sub-micron focal stability. The integrated tissue analysis overlay uses near-infrared spectroscopy to display live vascularization maps, tissue oxygenation gradients, and anomalous cellular density flagging directly in the visual field. Depth-perception calibration is performed during installation to the individual surgeon's neural signature, ensuring that spatial judgment under magnification remains accurate rather than disorienting.\n\nThe Precision-3 is the standard of care in Meridian 88's Tier 4-5 hospital systems and the preferred ocular of the city's elite surgical corps — cardiovascular specialists, microsurgeons, and the rare neural-reconstruction practitioners who work in the Spire's private clinics. Lazarus sells them at a price point that keeps them firmly out of Shelf-level reach, which has created a gray market of older Precision-2 units circulating among unlicensed street docs who use them for everything from trauma triage to illegal augmentation installation.",
+  "manufacturer": "Little Sprout Pediatrics",
+  "tier_availability": "Tier 3-5",
+  "legality": "Licensed",
+  "installation_requirements": "Full ocular extraction; calibration procedure requiring 4-hour neural mapping session; Lazarus-certified medical installer only",
+  "rejection_risk": "Minimal — Lazarus biocompatible coating and proprietary rejection-minimizing gel matrix; lowest rejection rate in class",
+  "maintenance": "Bi-annual spectroscopy sensor recalibration; annual neural signature re-sync; lens array inspection every 3 months",
+  "specifications": "{\"zoom_range\": \"0.5x to 40x\", \"focal_stability\": \"sub-micron at max magnification\", \"tissue_analysis\": \"near-infrared spectroscopy overlay\", \"vein_mapping\": \"real-time vascularization display\", \"oxygenation_monitoring\": \"live tissue O2 gradient\", \"anomaly_flagging\": \"cellular density deviation >2 sigma\", \"depth_calibration\": \"individual neural signature\", \"recording\": \"optional 8K surgical log\", \"power\": \"bioelectric passive draw, 200hr standby\"}",
+  "side_effects": [
+    "Zoom reflex triggering — involuntary magnification when focusing on fine detail in daily life, causing momentary disorientation",
+    "Tissue overlay persistence in off-duty contexts — wearers begin involuntarily analyzing skin and tissue on strangers",
+    "Prolonged use at high magnification causes headaches in roughly 15% of users until neural adaptation completes",
+    "Emotional detachment reported by long-term surgical users — the analytical overlay bleeds into interpersonal perception"
+  ],
+  "cultural_context": "In Meridian 88's medical community, a surgeon without Precision-3s is quietly considered a liability — the eyes have become so standard in elite surgical practice that hospitals now factor ocular spec into credentialing reviews. Among Shelf-level street docs, a salvaged pair of Precision-2s is worth more than most people's annual income and carries the weight of a credential they'll never officially hold.",
+  "known_users": [
+    "Elite cardiovascular and microsurgeons in Tier 4-5 hospital systems",
+    "Spire-level private clinic practitioners",
+    "Neural-reconstruction specialists",
+    "Unlicensed street surgeons operating with salvaged older units",
+    "Forensic pathologists and high-precision lab technicians"
+  ],
+  "story_hooks": [
+    "A Precision-3 unit recovered from a murdered surgeon still contains an encrypted surgical log of a procedure that was never officially performed — on a patient listed as never admitted",
+    "A street doc's salvaged Precision-2 begins displaying tissue anomaly flags on every person they look at — the spectroscopy sensor is malfunctioning, or something in the water is wrong",
+    "Lazarus Pharmaceuticals issues a silent recall on all Precision-3 units manufactured in a specific 6-month window — no explanation given, and surgeons who comply are left blind during the replacement wait"
+  ],
+  "street_price": "Φ38,000",
+  "licensed_price": "Φ82,000",
+  "tags": [
+    "cyberware",
+    "ocular",
+    "medical",
+    "surgical",
+    "lazarus",
+    "licensed",
+    "precision",
+    "zoom"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "e52a8f3b1c764d0a9e37b2f5c8d1a047",
+  "name": "Pragma BioSync Underlayer Mark II",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A second-skin compression shirt and legging set in deep slate blue with subtle silver biometric-trace lines running along major vascular pathways — decorative only from the outside, but each line conceals a sensor filament. The Mark II reads heart rate, blood oxygenation, cortisol levels, hydration, and skin galvanic response, feeding data continuously to a paired BCI or wristmount. Fabric is smooth matte elastane-synthetic with just enough compression to feel intentional without being medical. Common among Tier 3 desk workers trying to optimize.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "elastane-synthetic biometric mesh",
+    "conductive silver sensor filaments",
+    "moisture-transport inner weave",
+    "reinforced BCI data-port collar loop",
+    "breathable antimicrobial outer surface"
+  ],
+  "functionality": "Continuous passive biometric monitoring synced to BCI or companion app; alerts for stress spikes, dehydration, and cardiac irregularities. Light compression aids circulation during sedentary work. Port loop at the nape routes data without external cabling.",
+  "what_it_says": "You're optimizing yourself the way you optimize a spreadsheet — methodically, slightly anxiously.",
+  "worn_by": [
+    "middle managers",
+    "cubicle analysts",
+    "small business owners",
+    "fitness-focused office workers",
+    "chronic health trackers"
+  ],
+  "manufacturer": "Pragma Systems — Tier 3 wellness corponation label",
+  "price_range": "Φ120–Φ210",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The Mark II's data feed is stored server-side by Pragma — a leaked document suggests that data is being sold to insurance underwriters.",
+    "A wearer's cortisol log shows they were in extreme distress at the exact time they claim they were home asleep.",
+    "Someone has been spoofing healthy biometric readings through a hardware mod — and they're about to walk into a mandatory corporate wellness screening."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "biometric",
+    "smart_fabric",
+    "compression",
+    "aug_compatible",
+    "tier3",
+    "wellness",
+    "bci_compatible"
+  ],
+  "parent_corponation": ""
+}

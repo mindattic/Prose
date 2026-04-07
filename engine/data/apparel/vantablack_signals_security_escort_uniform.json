@@ -1,0 +1,34 @@
+{
+  "name": "Vantablack Signals Security Escort Uniform",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_tactical",
+  "manufacturer": "Vantablack Proprietary Outfitting",
+  "description": "Vantablack's escort security operatives occupy a different role than their analyst counterparts — they are physically present, visible, and intended to project a specific kind of deterrence. Their uniform reflects this: a structured black jacket over matching tactical trousers, with a matte-finish chest rig that carries no visible weapon mounts but has hardpoints rated for rapid attachment of Vantablack-issued equipment. The jacket's fabric incorporates the same light-absorption weave used in analyst suits, making the wearer appear slightly flattened in recording environments — useful when accompanying clients who require discretion about their security arrangements. A single white Vantablack sigil — the only visible branding — is set into the left collar in reflective thread visible only under direct light.\n\nThe chest rig is the operationally significant element. Its front panels are layered with soft armor rated for standard ballistics, and the rear panel carries a signal-isolation membrane that provides limited protection against directed-energy BCI disruption — a threat taken seriously in Vantablack's operational environment. The uniform is sized and cut to accommodate significant augmentation; the jacket back has a full-length magnetic closure panel for operatives with extensive dorsal chrome, and sleeve lengths are available in extended cuts for arm-augmented personnel. Geneware accommodations are not standard issue — Vantablack's escort division maintains strict physical specifications that functionally exclude most significant geneware modifications, a policy that has generated quiet external criticism and internal legal review.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ760",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "extreme",
+  "legal_status": "restricted",
+  "cultural_context": "A Vantablack escort operative accompanying a client is a visible statement of resources and threat level. In Meridian 88's Tier 4 and 5 spaces, the uniform reads as a signal to other security professionals, corporate rivals, and journalists alike. The exclusion of geneware-modified operatives from Vantablack's escort division is an ongoing point of controversy in both labor and civil rights discussions in the city.",
+  "story_hooks": [
+    "A Vantablack escort operative approaches a character privately during an assignment — they have information they want to pass on without Vantablack's knowledge.",
+    "The signal-isolation membrane in a recovered uniform has been modified to do the opposite of its stated function — it's broadcasting rather than blocking.",
+    "A geneware-modified ex-Vantablack applicant is filing a discrimination case and needs documentation of the physical specification policy in practice."
+  ],
+  "tags": [
+    "vantablack",
+    "corpsec",
+    "escort",
+    "tactical",
+    "signal-isolation",
+    "augment-compatible",
+    "ballistic-resistant",
+    "uniform",
+    "tier4",
+    "tier5"
+  ],
+  "id": "db99c3a327fe4f148f634d3d7ac0df03",
+  "parent_corponation": "Vantablack Media"
+}

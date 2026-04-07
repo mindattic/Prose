@@ -1,0 +1,36 @@
+{
+  "name": "Crucible Investiture Formal Robe",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "ceremonial robe",
+  "manufacturer": "GeneFit Health Testing",
+  "description": "Crucible's corponation investiture robe is issued to employees achieving Division Principal rank or higher — a structured, floor-length garment in industrial charcoal and deep copper, the colors drawn from Crucible's founding charter documents. The outer layer is a heavy woven textile with a matte finish, its surface embedded with Crucible's operational insignia in raised metallic thread visible only under direct light. The lining is copper-tone silk-analog, smooth against chrome augments, with reinforced openings at the forearms and a structured hood that can be raised for ceremonial occasions. The garment is not sold — it is issued, registered to the recipient's personnel file, and formally returned upon departure from the corponation (or recovered from their estate).\n\nThe robe's weight is deliberate — approximately 2.3 kilograms — designed to be physically felt during the ceremony of investiture. Crucible's internal culture prizes the tangible, the built, the heavy. The robe communicates this. Investiture ceremonies are held in Crucible's foundry-floor event halls, where the ambient heat and sound of the manufacturing operation continue in the background. The robe is designed to perform dignity in that environment without looking out of place.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ0 (issued, not purchased)",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "extreme",
+  "legal_status": "restricted",
+  "cultural_context": "The Crucible investiture robe is one of the few formal garments in Meridian 88 that cannot be purchased. Its restricted circulation makes it a genuine status object — visible proof of corponation rank rather than consumer spending. Counterfeit versions exist and are treated as serious offenses by Crucible's internal security. The robe appearing outside a Crucible context always generates questions.",
+  "story_hooks": [
+    "A Crucible investiture robe appears in a Shelf district pawnshop — either the owner fled, died, or sold what they were never supposed to sell.",
+    "A character is invited to attend a Crucible investiture as a guest and must navigate the ceremony's protocols without the robe that marks every other participant.",
+    "Crucible's records show an investiture robe was issued to a Division Principal who officially does not exist — someone scrubbed from the personnel system but whose robe is still registered."
+  ],
+  "tags": [
+    "ceremonial",
+    "robe",
+    "Crucible",
+    "investiture",
+    "corponation",
+    "issued",
+    "Tier 4",
+    "Tier 5",
+    "formal",
+    "heavy industry",
+    "restricted",
+    "augment compatible"
+  ],
+  "id": "01b88e5226a24acf969745d07ed481b8",
+  "parent_corponation": "Crucible Genomics"
+}

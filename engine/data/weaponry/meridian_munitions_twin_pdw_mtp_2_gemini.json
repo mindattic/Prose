@@ -1,0 +1,50 @@
+{
+  "id": "b26ea2f41c513108f5c80aed13018206",
+  "name": "Meridian Munitions Twin PDW MTP-2 'Gemini'",
+  "type": "weapon",
+  "aliases": [
+    "Gemini",
+    "MTP-2",
+    "Twin Gun",
+    "Double Tap"
+  ],
+  "category": "smg",
+  "description": "The MTP-2 Gemini is a paired weapon system — two identical micro-PDWs sold as a matched set and designed to be dual-wielded with BCI coordination. Each unit is a compact 5.7mm caseless PDW with a 15-round magazine, but the weapons' BCI systems communicate to create a unified fire-control solution. When both weapons are drawn, the smart-link allocates targeting between left and right hands, allowing the operator to engage two separate targets simultaneously.\n\nDual-wielding weapons is generally impractical — human neurology isn't optimized for independent bilateral targeting. The Gemini's BCI system compensates by handling the targeting math neurally, splitting the operator's attention between two aim points and providing independent aim-assist to each hand. The system requires extensive training and a Class 4 motor-interface BCI, but trained Gemini operators can engage two targets in different directions with the speed of a single-weapon draw.\n\nAt Φ8,000 per pair, the Gemini is a specialist system for operators with the neural hardware and training to exploit its capabilities. In untrained hands, the paired weapons offer no advantage over a single PDW with a larger magazine. In trained hands, the Gemini doubles the operator's engagement capacity at close range.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Available — premium licensing",
+  "base_technologies": [
+    "Paired weapon BCI coordination",
+    "Bilateral targeting AI",
+    "Independent dual aim-assist",
+    "Cross-linked fire control"
+  ],
+  "specifications": "caliber: 5.7mm caseless\neffective_range: 75m per unit\nrate_of_fire: 850 rpm per unit (cyclic)\nmagazine_capacity: 15 rounds per unit (30 total)\nweight: 1.1 kg per unit (2.2 kg total)",
+  "tactical_use": "The Gemini enables simultaneous multi-target engagement at close range. Trained operators can neutralize two threats in the time it takes a single-weapon operator to engage one. The paired system excels in close-protection scenarios where threats may approach from multiple directions simultaneously. The bilateral targeting AI handles the coordination that human neurology cannot naturally perform, making practical what would otherwise be cinematic fantasy.",
+  "cultural_context": "The Gemini occupies a strange space between practical weapon and performance art. Dual-wielding has been cinematic fantasy for centuries, and the Gemini makes it functional reality through neural technology. Gemini operators attract attention — the sight of someone drawing and firing two weapons simultaneously is viscerally impressive. This visibility cuts both ways: in covert operations, the distinctive dual-draw is a signature that identifies the operator's equipment and capability.",
+  "known_users": [
+    "Specialist close-protection operators",
+    "Exhibition shooters",
+    "High-tier freelancers"
+  ],
+  "story_hooks": [
+    "A Gemini operator's BCI link to one weapon was severed mid-engagement, causing them to fire wildly with their off-hand while maintaining precision with their dominant hand. The split-second of uncontrolled fire hit a bystander.",
+    "An underground fighting circuit features Gemini operators in duels — the first competitor to score hits with both weapons simultaneously wins. The matches are illegal, broadcast, and enormously popular."
+  ],
+  "ammunition_type": [
+    "5.7mm caseless standard",
+    "5.7mm caseless AP"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "PDW",
+    "dual_wield",
+    "paired",
+    "BCI",
+    "Meridian",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

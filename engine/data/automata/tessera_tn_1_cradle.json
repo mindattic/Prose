@@ -1,0 +1,55 @@
+{
+  "name": "TESSERA TN-1 'Cradle'",
+  "type": "automaton",
+  "classification": "Containment — Autonomous Prisoner Transport",
+  "aliases": [
+    "Cradle",
+    "Iron Maiden",
+    "The Box"
+  ],
+  "manufacturer": "TESSERA",
+  "description": "The TN-1 is a six-legged walking platform with a central compartment designed to contain a single human being. The compartment is a reinforced capsule with restraint systems, life support, and sedation capability. The TN-1 identifies its designated target through biometric confirmation, incapacitates them using a short-range taser or chemical spray, loads them into the compartment using articulated manipulator arms, seals the capsule, and walks to a designated delivery point. It is an autonomous kidnapping machine.\n\nTESSERA describes the TN-1 as an 'automated high-risk detainee transport system' designed for situations where human security personnel face unacceptable risk — transporting augmented prisoners, moving infectious disease patients, or extracting VIPs from hostile environments. All of these are legitimate applications. They account for a fraction of TN-1 deployments.\n\nThe reality is that the TN-1 is used for extrajudicial detention. Corporate security designates a target, the Cradle walks to them, takes them, and delivers them to wherever the corporation wants them. The target disappears off the street, enclosed in a walking box that nobody can see inside. No witnesses see a face. No recordings show a human being taken. The TN-1 walks through crowds with its cargo and nobody knows if the box is empty or if someone is inside it, sedated and restrained, being carried to a place they will never be seen again.",
+  "tier_availability": "Tier 5",
+  "legality": "Licensed for high-risk detainee transport",
+  "autonomy_level": "Fully autonomous — biometric target acquisition, incapacitation, and transport",
+  "dimensions": "1.8m height, 2.0m length, containment capsule: 0.6m x 0.6m x 1.9m",
+  "weight": "450 kg",
+  "power_source": "Hydrogen fuel cell, 24-hour endurance",
+  "locomotion": "Hexapod all-terrain walker",
+  "armament": [
+    "Short-range taser",
+    "Chemical incapacitation spray",
+    "Restraint system",
+    "Sedation injection (capsule interior)"
+  ],
+  "sensors": [
+    "Biometric target identification",
+    "Crowd navigation",
+    "Capsule occupant vital sign monitoring"
+  ],
+  "countermeasures": "Preventing the initial incapacitation is the best countermeasure — the taser and chemical spray are short-range. The capsule can be opened from outside with cutting tools. Destroying the unit's legs immobilizes it with the capsule intact. The biometric targeting can be confused by cosmetic surgery or augmentation changes that alter facial structure and gait.",
+  "known_deployments": [
+    "High-risk prisoner transport",
+    "VIP extraction",
+    "Extrajudicial detention operations (documented by civil rights organizations)"
+  ],
+  "story_hooks": [
+    "A TN-1 was seen walking through the Shelf carrying someone. It walked for six hours and was delivered to a TESSERA black site. The person inside was a union organizer. The arrest warrant was issued two days after the detention — TESSERA filed the paperwork retroactively.",
+    "A player character has been designated as a TN-1 target. The Cradle is somewhere in the city, walking toward them. They don't know what it looks like. They know it's coming."
+  ],
+  "cultural_context": "The Cradle is the automaton that represents the disappearance — the mechanism by which people are removed from society without due process, without witnesses, and without recourse. Its walking form means it can reach places vehicles cannot, and its autonomous operation means no human has to make the moral choice to kidnap someone.",
+  "tags": [
+    "automaton",
+    "hexapod",
+    "containment",
+    "kidnapping",
+    "weapon",
+    "tessera",
+    "corporate",
+    "justice",
+    "horror",
+    "tier 5"
+  ],
+  "id": "073f3e47f63d4c2cb29c38694a0f8c2a",
+  "parent_corponation": "Tessera Corponation"
+}

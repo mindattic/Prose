@@ -1,0 +1,39 @@
+{
+  "id": "a3f7c2e1b8d94065f2a1c3e7b9d04582",
+  "name": "Crucible Chromestep Mid",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A mid-cut boot built around a hollow shell chassis — the interior is a configurable foam-lattice sleeve that pressure-molds to chrome prosthetic ankles or standard feet within minutes of first wear. The exterior is matte black synthetic leather with brushed alloy toe caps and exposed rivet detailing. A wide velcro-and-ratchet closure system runs up the lateral side for easy removal over fixed-geometry limbs.\n\nPopular with Tier 2 augmented workers who need something that looks presentable off-shift. The chrome detailing means a prosthetic leg doesn't look out of place — it looks intentional.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synthetic leather",
+    "foam-lattice liner",
+    "brushed alloy",
+    "recycled rubber outsole"
+  ],
+  "functionality": "Pressure-adaptive interior sleeve molds to prosthetic or biological ankle geometry. Wide lateral ratchet closure accommodates fixed-geometry chrome limbs.",
+  "what_it_says": "You've got chrome and you're not hiding it. Practical, a little proud.",
+  "worn_by": [
+    "augmented factory workers",
+    "transit operators with prosthetic limbs",
+    "Tier 2 people who want durability over flash"
+  ],
+  "manufacturer": "BioSilk Textiles",
+  "price_range": "Φ58 - Φ72",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character's boot liner has been re-molded so many times it holds the ghost shape of a previous prosthetic — one that belonged to someone else.",
+    "Crucible boots are standard issue at several corponation assembly facilities, which means wearing them off-site marks you as someone who works — or worked — for a specific employer."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "aug-compatible",
+    "boot",
+    "chrome-fit",
+    "work-casual"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Lazarus Patient Transport & Triage Scrub",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "medical_scrubs",
+  "manufacturer": "Evergreen Wellness",
+  "description": "Designed for Lazarus paramedics, triage nurses, and patient transport staff — the people working the threshold between the clinic and the street — these scrubs prioritize durability and biological containment over comfort. The base fabric is a tight-weave synthetic that resists fluid penetration and can be decontaminated with standard spray-down protocols without degrading. They come in Lazarus's institutional teal, with a white caduceus-and-serpent logo on the left chest and a QR-linked ID patch on the right shoulder that feeds staff credentials to hospital intake systems. The cut is deliberately loose to allow full range of motion under emergency conditions.\n\nAugmentation compatibility is a design priority: the scrub has pre-reinforced port-access points at the standard wrist, forearm, and dorsal-neck BCI locations, and the fabric around these panels is elasticized to conform to different chrome profiles without tearing. For geneware-modified staff, the scrubs are available with tail-slot rear panels and furred-lining options at the collar and cuffs to prevent chafing on modified skin. Lazarus triage staff working Tier 1 zones often add personal armor inserts to the torso panels — not officially sanctioned, but Lazarus HR has quietly updated the uniform spec to accommodate it.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ75",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "Lazarus teal is a complicated color in Meridian 88. In Tier 1 and 2, it means someone's coming to help — or it means Lazarus is here to document who survives for billing purposes. Triage staff develop their own relationship with the uniform, often personalizing it in ways that humanize them to patients who've learned to distrust the corporation.",
+  "story_hooks": [
+    "A triage nurse notices her ID patch is logging patient contact data that gets routed to a Lazarus subsidiary she's never heard of, not the hospital system.",
+    "A counterfeit Lazarus scrub set is being used by someone providing off-the-books medical care in Tier 1 — and they're better at the job than most of Lazarus's licensed staff.",
+    "After a mass-casualty event, a transport worker realizes the QR ID system routed all Tier 1 patients to a Lazarus overflow facility that no longer appears on any public registry."
+  ],
+  "tags": [
+    "lazarus",
+    "medical",
+    "scrubs",
+    "triage",
+    "paramedic",
+    "augment-compatible",
+    "geneware-compatible",
+    "biohazard-rated",
+    "tier2",
+    "healthcare"
+  ],
+  "id": "3b1824c9105d464cb967a43d4d3da67d",
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

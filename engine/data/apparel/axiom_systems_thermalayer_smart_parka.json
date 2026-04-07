@@ -1,0 +1,44 @@
+{
+  "id": "3d7a0f9c5e1b8246a3d7f0c9e5b18246",
+  "name": "Axiom Systems ThermaLayer Smart Parka",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "Axiom Systems is a Tier 4 corporate manufacturer with a strong foothold in climate-adaptive apparel. The ThermaLayer Smart Parka is their flagship cold-weather piece for the Meridian 88 market — a mid-thigh parka in a matte-finish weatherproof shell with a detachable hood, deep cargo pockets, and a clean silhouette that does not read as obviously technical. The interior is where the technology lives: a thin-film heating element network powered by a kinetic-charge cell that tops off during normal movement, with a BCI-optional interface that allows body-temp regulation without reaching for controls.\n\nThe heating layer responds to ambient temperature and user preference, maintaining a set comfort band passively or actively. The BCI integration is optional — the jacket also works through a small haptic control panel in the left cuff. Battery life is approximately 18 hours of active heating on a full charge. It is warm, weatherproof, and comfortable without the heating engaged at all. The smart layer is the premium; the parka is already excellent without it.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "weatherproof nylon-polyester shell",
+    "thin-film heating element network",
+    "kinetic-charge cell",
+    "recycled synthetic insulation fill",
+    "BCI interface chip (optional activation)"
+  ],
+  "functionality": "Active thermal regulation via thin-film heating elements; BCI-compatible interface for body-temp preference setting; kinetic-charge cell with ~18hr active heating life; haptic cuff controls as non-BCI fallback.",
+  "what_it_says": "You invest in comfort and you are comfortable with technology doing quiet work on your behalf. You do not need to announce the features — you just know you are warm.",
+  "worn_by": [
+    "Tier 4 professionals",
+    "senior corp employees",
+    "tech-adjacent middle management",
+    "Spire-adjacent individuals who prefer functional over flashy"
+  ],
+  "manufacturer": "Axiom Systems",
+  "price_range": "Φ560",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character's ThermaLayer parka begins heating at maximum in a temperate room — someone is using the BCI interface to mess with them remotely",
+    "The kinetic-charge cell in a specific production batch has a flaw that causes it to store far more energy than rated — one jacket nearly started a fire",
+    "A Tier 2 knockoff of the ThermaLayer exists on the Shelf market; it uses cheaper elements and has a failure rate that has caused minor burns, but people buy it anyway"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "outerwear",
+    "tier 4",
+    "parka",
+    "smart clothing",
+    "thermal",
+    "BCI compatible",
+    "tech-enhanced"
+  ],
+  "parent_corponation": ""
+}

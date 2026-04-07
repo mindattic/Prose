@@ -1,0 +1,56 @@
+{
+  "id": "91e6b3d0a4f7c2850e1d9f3a6c8b2e70",
+  "name": "MindBridge SpectraLens Chromatic Expansion Module",
+  "brand_name": "MindBridge",
+  "product_name": "SpectraLens",
+  "type": "cyberware",
+  "aliases": [
+    "wideyes",
+    "the spectrum",
+    "chromewrap",
+    "painter's eyes",
+    "spectra"
+  ],
+  "category": "sensory",
+  "body_location": "retinal — cone photoreceptor augmentation bilateral with occipital calibration node",
+  "description": "The SpectraLens system augments the human eye's cone photoreceptor population through the addition of two new synthetic photopigment variants — one tuned to a narrow band in the near-ultraviolet range just beyond baseline human violet perception, and one extending sensitivity into the near-infrared boundary just past baseline red. A calibration node seated at the occipital lobe processes the expanded color signals and integrates them with existing visual cortex color maps through a careful neuroadaptation protocol that unfolds over six to eight weeks post-installation. The result is not a dramatic, alien visual experience — SpectraLens users don't suddenly see in thermal or ultraviolet in any cinematic sense. Instead, they perceive a wider, richer version of the visible spectrum: colors that baseline humans see as identical are revealed as subtly distinct, gradients become more nuanced, and certain natural and synthetic materials display properties invisible to the unaugmented eye. Flowers, bird plumage, certain mineral surfaces, and many synthetic fabric dyes appear markedly more complex. The neuroadaptation period is critical — the brain must build new color language to describe what the eyes now report — and MindBridge provides a comprehensive guided calibration program during this phase.\n\nThe SpectraLens has found its most passionate user base among visual artists, designers, dye-workers, and anyone whose work or pleasure involves color discrimination. Painters and illustrators describe the implant as permanently expanding their creative vocabulary — seeing color relationships that were previously invisible changes both what they make and how they see the world. Textile workers and colorists in fabrication industries have adopted it as a professional tool, as the near-UV extension reveals dye lot variations and fabric inconsistencies that would otherwise require spectrometer equipment. Photographers and visual media producers use it to compose with a richer palette awareness. Beyond professional use, there is a substantial recreational community for whom the SpectraLens is simply a way of experiencing visual beauty more fully — the kind of people who spend time in botanical gardens, who collect minerals, who find that the world looks genuinely more interesting and varied through augmented eyes. At its price point, it is a meaningful investment, but accessible enough that it has spread well into Tier 2 communities among anyone who prioritizes sensory richness.",
+  "manufacturer": "MINDBRIDGE SENSORY CONSUMER DIVISION",
+  "tier_availability": "Tier 2-4",
+  "legality": "Unrestricted",
+  "installation_requirements": "Specialist ophthalmology clinic or certified MindBridge installation center; local anesthetic eye drops; photopigment injection procedure 60 minutes; occipital node placement requires mild sedation and adds 30 minutes; neuroadaptation program enrollment required",
+  "rejection_risk": "Low",
+  "maintenance": "Occipital node firmware updates every 12–18 months; annual eye exam recommended; photopigment variants have an estimated 15-year stability window before potential re-injection; neuroadaptation support app included for first year",
+  "specifications": "{\"new_photopigment_variants\": 2, \"near_UV_extension\": \"340–380nm band\", \"near_IR_extension\": \"700–780nm band\", \"total_color_discrimination_increase\": \"estimated 35–50% more distinguishable hues than baseline\", \"neuroadaptation_period\": \"6–8 weeks full integration\", \"occipital_node_size\": \"6mm x 3mm\", \"power\": \"passive bioelectric\", \"compatible_with_AR_overlays\": true, \"colorblindness_correction\": \"partial — consult specialist\"}",
+  "side_effects": [
+    "Visual 'shimmer' or iridescence on certain surfaces during the neuroadaptation period as the brain learns to interpret new color signals — typically described as beautiful but occasionally disorienting",
+    "Mild headaches and visual fatigue during the first three weeks of the neuroadaptation program as the occipital node builds new color processing pathways",
+    "Some users experience a permanent shift in color preference and aesthetic sensibility as their visual world expands — occasionally described as 'grief for the old way of seeing' in user communities",
+    "Rare: temporary difficulty with color-coded interfaces and signage during the adaptation period as new and old color signals temporarily conflict"
+  ],
+  "cultural_context": "The SpectraLens has an outsized reputation relative to its market penetration — it is the cyberware that people who don't have cyberware have heard of, the one that sounds almost magical. In visual arts communities across the city, it is discussed with a mixture of genuine enthusiasm and occasional gatekeeping: established artists who developed their color sense unaugmented sometimes bristle at younger artists who 'bought' an expanded palette, while others argue that expanded perception is simply a new tool, no different from a better pigment. In Tier 2 communities with strong craft traditions — textile districts, mural collectives, ceramics cooperatives — the SpectraLens has become embedded in professional culture, a mark of someone serious about their visual work. There is also a notable philosophical community around the implant: the experience of genuinely perceiving colors that other people cannot, and the difficulty of describing or sharing that perception, has generated significant art, writing, and debate about the nature of subjective experience and what it means to see the world differently than the people around you.",
+  "known_users": [
+    "Visual artists, painters, illustrators, and sculptors",
+    "Textile designers, dye-workers, and fashion colorists",
+    "Photographers and visual media producers",
+    "Mineralogists, botanists, and natural scientists",
+    "Recreational users who prioritize aesthetic experience of the world"
+  ],
+  "story_hooks": [
+    "A piece of street art has appeared in a Tier 2 district that looks ordinary to baseline eyes but contains an entirely different hidden composition visible only to SpectraLens users — and the message in that hidden layer is addressed to someone specific, by name, who hasn't told anyone they have the implant",
+    "A MindBridge neuroadaptation app update has introduced a subtle guided suggestion during the calibration program — users who complete the full eight-week protocol find themselves perceiving a particular corporate logo as more trustworthy and visually harmonious than they did before, and the logo belongs to a Tessera Corponation subsidiary currently under civic investigation",
+    "A SpectraLens user working as a textile authenticator at a Tier 4 auction house has identified that several items certified as pre-Collapse originals contain synthetic dye compounds that didn't exist before 2150 — but the auction house's legal team is insisting the implant produces unreliable perceptual data that isn't admissible as evidence"
+  ],
+  "street_price": "Φ890–Φ1,400",
+  "licensed_price": "Φ2,100–Φ2,600 at MindBridge certified ophthalmology centers",
+  "tags": [
+    "cyberware",
+    "sensory",
+    "lifestyle",
+    "ocular",
+    "color-expansion",
+    "artist",
+    "spectrum",
+    "neuroadaptation"
+  ],
+  "parent_corponation": ""
+}

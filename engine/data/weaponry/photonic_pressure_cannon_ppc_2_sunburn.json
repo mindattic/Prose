@@ -10,7 +10,7 @@
   ],
   "category": "energy",
   "description": "The Photonic Pressure Cannon generates an intensely focused beam of coherent light in the near-ultraviolet spectrum, but its primary mechanism of harm is not thermal — it is mechanical. By rapidly pulsing the beam at frequencies between 800 and 1200 pulses per second, the PPC-2 creates a phenomenon called laser-induced plasma pressure: each pulse ionizes a thin layer of surface material, and the explosive expansion of that plasma generates a localized pressure wave equivalent to a repeated physical impact. Against unarmored targets, this produces deep subcutaneous bruising, ruptured capillaries, and in sustained exposure, structural damage to underlying bone. Against light armor, it can cause spallation of inner surfaces.\n\nARCTURUS DEFENSE SOLUTIONS developed the PPC-2 as a crowd-control alternative to kinetic impact rounds, marketing it to municipal contracts across the Meridian 88 administrative zones. The pitch was that it left no ballistic evidence and produced 'compliance injuries' rather than lethality. Field deployment rapidly disproved the lethality claim — sustained bursts to the torso have proven fatal in multiple documented incidents, and the weapon's reputation for 'clean' crowd suppression collapsed within two seasons of its municipal rollout.\n\nThe weapon is recognizable by the distinctive purple-white glow of its emitter array and the sharp cracking sound each pulse makes — not unlike rapid applause at close range. Targets who have survived describe the sensation as being hit repeatedly by an invisible fist that somehow leaves no visible entry point. Forensic physicians in the free clinics have taken to calling the characteristic injury pattern 'Arcturus bruising.'",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Ironside Armaments",
   "tier_availability": "Tier 3+ / Black market",
   "legality": "Restricted (municipal contracts) / Prohibited (civilian ownership)",
   "base_technologies": [
@@ -55,6 +55,8 @@
     "market",
     "armor",
     "explosive",
-    "tier 3"
-  ]
+    "tier 3",
+    "less_lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

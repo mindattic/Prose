@@ -13,7 +13,7 @@
   "category": "augmentation",
   "body_location": "",
   "description": "The Arcturus Reflex Splice is a combat-grade neuromuscular augmentation system that intercepts motor signals between the spinal cord and peripheral musculature, inserting a synthetic relay cluster — the ADR-7 node — at the T1–T4 vertebral junctions. This relay pre-processes threat response signals using a dedicated threat-assessment microprocessor, effectively bypassing the brain's slower conscious processing loop for a predefined set of physical responses. The result is a reaction time reduction of approximately 140 milliseconds for trained motor programs, which in close-quarters combat represents the difference between a block and a broken arm.\n\nWhat distinguishes Razorwake from cheaper reflex boosters is its trained-response architecture. The system does not simply accelerate all movement — it must be calibrated to a specific operator's existing combat muscle memory over a 6-week conditioning protocol. This makes it deeply personal equipment; a Razorwake splice pulled from one operator and installed in another will fire responses that may be actively harmful, triggering the previous user's combat patterns in a new body. Arcturus Defense Solutions has built significant revenue around recalibration services as a result. The ADR-7 node also features an optional 'hot mode' that can be toggled via subvocal command, entering a higher-gain state that extends pre-processing to offensive strike initiation — at the cost of fine motor control and a significant metabolic burn.\n\nRazorwake was originally developed under an Arcturus contract for special operations units in the Meridian Enforcement Compact, and military-spec units still carry Arcturus serial numbers traceable to that program. Civilian and black-market variants have proliferated through decommissioned operators selling their calibrated units — a practice Arcturus officially discourages while quietly providing recalibration services to whoever walks through the door.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Meridian Neural Defense",
   "tier_availability": "Tier 2+",
   "legality": "Restricted",
   "installation_requirements": "",
@@ -58,5 +58,6 @@
     "chase",
     "fire",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

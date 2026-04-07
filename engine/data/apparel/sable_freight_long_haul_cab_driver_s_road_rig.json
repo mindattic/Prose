@@ -1,0 +1,50 @@
+{
+  "id": "3b6d9e2f1a4c7058e3f4a5b6c7d8e902",
+  "name": "Sable Freight Long-Haul Cab Driver's Road Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Independent long-haul freight cab operators — the ones running Sable Freight contracts through the M88 outer corridors, acid-rain bypasses, and inter-sector cargo routes — put together a rig that works for sixteen hours in a cab seat and doesn't fall apart when they have to get out and deal with a breakdown at 3 AM on an elevated causeway. The trousers are Goretek cargo-cut in washed navy, broken in soft over years, with reinforced seat and inner thigh for long sits, a wide waistband that doesn't dig during extended driving, and cargo pockets on both thighs sealed with snap-buttons. A wide webbing belt in black carries a compact multi-tool and a key fob clip. The upper layer starts with an Ironpass-style heavy thermal work shirt in faded olive — flannel-weight synth-cotton, chest pockets with button closures, rolled-up sleeves almost always, with a Sable Freight contractor patch heat-pressed to the left sleeve upper arm. Over this, when out of the cab, goes a quilted vest in dark charcoal with a stand collar — no sleeves, allowing full arm mobility for cargo strapping and vehicle checks, with a large interior pocket on the left breast for a route tablet. Boots are mid-cut moto-style in worn black synth-leather with a side zip, thick lug sole, and a reinforced toe — not steel-capped, prioritizing comfort for the long sit over full safety rating. A worn baseball-style cap in Sable Freight charcoal-grey with a battered brim completes the head, usually worn front-forward, neural port at the rear left accommodated by a stitched-open eyelet in the cap's rear adjustment band.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "washed synth-canvas",
+    "synth-cotton flannel",
+    "quilted synth-nylon",
+    "synth-leather",
+    "nylon webbing",
+    "lug rubber outsole",
+    "press-button alloy hardware"
+  ],
+  "functionality": "Long-duration seat comfort in reinforced trouser construction, multi-tool and key fob carry on belt, tablet pocket in vest for route data, no-sleeve vest for full arm mobility during vehicle maintenance, neural port clearance in cap rear, side-zip boots for fast on-off, contractor patch for Sable Freight route authorization checkpoints",
+  "what_it_says": "Independent operator. Not a company employee — a contractor, which means slightly more autonomy and slightly more risk. The olive shirt and charcoal vest are personal choices, not issued gear. The Sable patch is the only corporate marker, and it's on the sleeve, not the chest. This person owns their rig, knows the routes, and has opinions about the best acid-bypass to the eastern sector.",
+  "worn_by": [
+    "independent long-haul freight cab operators",
+    "Sable Freight contract drivers",
+    "inter-sector cargo runners",
+    "freelance logistics drivers",
+    "owner-operator truckers"
+  ],
+  "manufacturer": "Mixed: Goretek (trousers), Ironpass (work shirt), Sable Freight contractor kit (vest and patch), personal boot selection",
+  "price_range": "Φ190–Φ280 assembled (spread across multiple purchases over time)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A long-haul driver's route tablet — kept in that interior vest pocket — contains the last six months of manifest data for a Sable Freight corridor that's supposed to be logging empty runs; the cargo weights tell a different story.",
+    "The driver is the only person who regularly runs a specific outer-sector bypass route at night and has been informally flagging unusual vehicle activity to a contact — when that contact goes dark, the driver realizes they've been feeding intelligence to someone they can't identify.",
+    "A Sable Freight contractor patch has been cloned — someone is running a ghost vehicle on the same route authorization, and the real driver keeps arriving at checkpoints to find logs showing they already passed through hours ago."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "freight",
+    "long-haul",
+    "driver",
+    "sable_freight",
+    "aug_compatible",
+    "gene_compatible",
+    "contractor",
+    "working_class"
+  ],
+  "parent_corponation": ""
+}

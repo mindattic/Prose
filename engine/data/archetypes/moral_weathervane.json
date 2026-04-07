@@ -1,0 +1,34 @@
+{
+  "id": "0c6db1fcaab4a67d336db9d0a1fd16b0",
+  "name": "Moral Weathervane",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Their ethics point wherever the strongest wind blows",
+  "behavioral_signature": "Adopts the moral stance of whoever has power in the room",
+  "under_stress": "Flips allegiance mid-crisis to the winning side",
+  "at_rest": "Genuinely believes whatever they last heard",
+  "will_always": [
+    "align with the dominant moral position"
+  ],
+  "will_never": [
+    "hold a position that isolates them"
+  ],
+  "unless": [
+    "every side is equally dangerous and they must pick blind"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Social Chameleon",
+      "threshold": 0.7,
+      "context": "moral flexibility"
+    }
+  ],
+  "opposite_of": [
+    "Absolutist",
+    "Standard Bearer"
+  ],
+  "tags": [
+    "malleable",
+    "conformist"
+  ]
+}

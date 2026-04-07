@@ -1,0 +1,43 @@
+{
+  "id": "a3f7c2e1b8d094561f2e7a3c9b0d4e82",
+  "name": "Lazarus Pharmaceutical Emetix-9 'Purge'",
+  "type": "weapon",
+  "aliases": [
+    "Purge",
+    "The Heave",
+    "Nine-Sick"
+  ],
+  "category": "spray",
+  "description": "The Emetix-9 is a handheld aerosol dispersal unit containing a proprietary Lazarus Pharmaceutical compound designated LP-Emetic-9, a synthetic cholinomimetic agent that binds aggressively to gastrointestinal vagal receptors and the chemoreceptor trigger zone simultaneously. Onset of violent emesis occurs within four to eight seconds of inhalation or mucosal contact, followed by sustained nausea lasting fifteen to forty minutes depending on the subject's metabolic rate and augmentation status. The compound is colorless and carries only a faint medicinal odor — subjects often have no warning before incapacitation.\n\nDeveloped originally as an emergency counter-toxin delivery mechanism for Lazarus field medics, the Emetix-9 was quietly repurposed and licensed to Meridian Municipal Security for crowd dispersal after internal trials demonstrated its near-universal effectiveness across augmented and baseline human subjects alike. Unlike OC-based sprays, Emetix-9 does not rely on pain compliance — it bypasses conscious resistance entirely by triggering an involuntary physiological cascade. A subject can be enraged, armored, and pain-tolerant and still be incapacitated within seconds.\n\nThe weapon is controversial within civil liberties advocacy circles because Lazarus holds the antidote — LP-Antag-9 — under a separate licensed product, and municipal contracts have been criticized for creating dependency on Lazarus supply chains for basic crowd control operations. Street medics operating in the Shelf refer to it grimly as 'the Lazarus tax.'",
+  "manufacturer": "BrightSmile Dental Care",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — municipal and licensed security use only; civilian possession requires medical dispensary license",
+  "base_technologies": [
+    "synthetic cholinomimetic aerosol",
+    "pressurized micro-valve dispersal",
+    "mucosal absorption compound"
+  ],
+  "specifications": "Active compound: LP-Emetic-9 (cholinomimetic agonist)\nDelivery: pressurized aerosol cone, 1.2m spread at 2m range\nOnset: 4–8 seconds post-exposure\nDuration of effect: 15–40 minutes\nCanister capacity: 6 bursts\nWeight: 0.19 kg\nDimensions: 14cm × 4cm\nShelf life: 36 months\nAntidote: LP-Antag-9 (sold separately, licensed)\nPrice: Φ85",
+  "tactical_use": "Municipal security deploys Emetix-9 in confined crowd situations where OC spray or acoustic tools are impractical — transit hubs, elevator corridors, processing queues. A single burst into a packed crowd creates immediate secondary disruption as affected individuals involuntarily drop, collapse, or create space around themselves. Security teams are trained to deploy from upwind positions and follow immediately with physical containment while subjects are incapacitated. It is also used by licensed bounty contractors for non-damaging subject extraction — a target rendered unable to stand or resist is far easier to transport than one who has been beaten into compliance.",
+  "cultural_context": "On the street, Emetix-9 is called 'Nine-Sick' or simply 'The Heave.' Shelf residents have a deep and specific hatred for it — being gassed with Purge in a protest crackdown is described as a uniquely humiliating experience, and the fact that Lazarus profits from both the weapon and its antidote is a recurring grievance in anti-corporate graffiti. Security forces using it are sometimes called 'Lazarus boys' regardless of actual employer. There is a dark irony in its medicinal origins that has not been lost on anyone.",
+  "known_users": [
+    "Meridian Municipal Security",
+    "licensed private security contractors",
+    "Lazarus Pharmaceutical field response teams",
+    "licensed bounty contractors"
+  ],
+  "story_hooks": [
+    "A shipment of LP-Antag-9 antidote has been intercepted, and a protest is scheduled in three days — someone wants the crowd to suffer without relief"
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "less_lethal",
+    "crowd_control",
+    "chemical",
+    "municipal",
+    "pharmaceutical"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

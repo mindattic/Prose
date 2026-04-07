@@ -1,0 +1,37 @@
+{
+  "id": "d4e7f0a2b5c8193734d5e6f7a8b9c012",
+  "name": "Tenex Seal-Coat Slip-On",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A flat canvas slip-on shoe with a sole so thin it's nearly gone at the ball of the foot. The entire exterior has been painted over with Tenex industrial sealant — a grey-brown rubberized coating applied by brush, lumpy in places, cracked at the toe flexion point. It's ugly and it works. Keeps water out most of the time.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "canvas",
+    "Tenex industrial sealant",
+    "worn foam insole"
+  ],
+  "functionality": "Improvised waterproofing. Sealant reduces breathability significantly.",
+  "what_it_says": "You know how to make things last. You also haven't had a dry day in weeks.",
+  "worn_by": [
+    "older Shelf residents",
+    "people working near water or drainage runoff"
+  ],
+  "manufacturer": "Unknown canvas base, Tenex sealant (Korova Industrial)",
+  "price_range": "Φ5 - Φ8",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Tenex sealant leaves a distinctive chemical signature. Forensics can track anyone who walked through a sealed area.",
+    "An old woman's been recoating the same shoes every six months for eleven years. She knows every corner of the Shelf by what got them wet."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "slip-on",
+    "waterproofed",
+    "improvised",
+    "shelf"
+  ],
+  "parent_corponation": ""
+}

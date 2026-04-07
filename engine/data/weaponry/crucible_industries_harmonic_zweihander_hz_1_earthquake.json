@@ -1,0 +1,46 @@
+{
+  "id": "318a01d2b12e341d185128eeea6d36c3",
+  "name": "Crucible Industries Harmonic Zweihander HZ-1 'Earthquake'",
+  "type": "weapon",
+  "aliases": [
+    "Earthquake",
+    "HZ-1",
+    "The Tremor",
+    "Groundshaker"
+  ],
+  "category": "melee",
+  "description": "A massive two-handed sword that uses a bass-frequency vibration system tuned to transmit kinetic shockwaves through whatever it strikes. The Earthquake does not merely cut — on impact, its blade discharges a low-frequency pulse that propagates through the target material, causing structural fracturing well beyond the point of contact. A strike against a wall does not just damage the impact point; it sends cracks radiating outward in a two-meter radius.\n\nThe HZ-1's blade is 120 centimeters of aerogel-reinforced carbon composite, thick enough to absorb its own shockwave without self-destructing. The vibration generator is housed in the massive crossguard and produces a subsonic hum that can be felt rather than heard — a deep bone-level vibration that makes nearby observers instinctively uncomfortable. At full power, the weapon's strikes can fracture reinforced concrete and shatter ballistic glass.\n\nCrucible built the Earthquake as a siege weapon for corporate breach teams that needed to break through hardened barriers without explosives. The weapon requires significant physical strength or powered augmentation to wield effectively — at 5.2 kilograms, it is one of the heaviest melee weapons in active service. Users tend to be either heavily augmented operators or naturally large individuals who have built their entire fighting style around the weapon's ponderous but devastating delivery.",
+  "manufacturer": "AquaPure Biofilter",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — siege weapon classification",
+  "base_technologies": [
+    "Bass-frequency shockwave transmission",
+    "Aerogel-reinforced carbon composite blade",
+    "Impact-propagation vibration system"
+  ],
+  "specifications": "blade_length: 120 cm\ntotal_length: 168 cm\nweight: 5.2 kg\nvibration_frequency: 12 Hz (subsonic)\nshockwave_radius: ~2 meters from impact point\npower_source: Crossguard-integrated fuel cell, 2 hours active\nblade_material: Aerogel-reinforced carbon composite",
+  "tactical_use": "The Earthquake is a breaching and area-denial weapon. Its shockwave propagation means that every strike damages an area rather than a point, making it effective against barriers, clustered opponents, and structural targets. In melee combat, opponents who block the weapon still receive transmitted shockwave damage through their own weapon or shield. The primary limitation is speed — the weapon is too heavy for rapid exchanges, and each swing requires a full-body commitment that leaves the wielder momentarily vulnerable.",
+  "cultural_context": "The HZ-1 has become associated with a particular archetype in Meridian 88's combat culture: the heavy hitter who sacrifices speed and subtlety for absolute destructive power. Earthquake wielders are both respected and avoided — their presence changes the geometry of any engagement. The weapon's subsonic hum has been sampled by Meridian 88's industrial music scene, and the term 'earthquake drop' in music refers to a bass hit that vibrates the listener's chest.",
+  "known_users": [
+    "Crucible Industries siege teams",
+    "Augmented heavy combatants",
+    "Corporate breach specialists"
+  ],
+  "story_hooks": [
+    "An Earthquake strike caused a structural cascade that collapsed a section of lower-tier housing — killing fourteen people who were not involved in the fight. The wielder claims it was a weapon malfunction; engineering analysis suggests the weapon performed exactly as designed.",
+    "A miniaturized version of the shockwave generator has appeared in the black market, small enough to be integrated into a standard-sized weapon. The technology has leaked from Crucible."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "zweihander",
+    "vibro-blade",
+    "shockwave",
+    "siege",
+    "tier 4",
+    "heavy",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

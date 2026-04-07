@@ -1,0 +1,43 @@
+{
+  "id": "7d1b3a9f5e2c084b6d7a1f3e8c2b5d09",
+  "name": "Vansen Pressline Work Henley",
+  "type": "apparel",
+  "category": "top",
+  "description": "A heavy-duty three-button henley made for people who work with their hands. The fabric is Vansen's signature GritWeave — a dense synth-cotton composite that resists minor abrasions and holds up to repeated industrial washing without pilling or fading. Raglan sleeves allow full arm mobility, and the reinforced shoulder panels are triple-stitched. Comes in two colors: off-white and a dark charcoal called 'Forge.' The chest pocket is sized to hold a data chip or a folded work order.\n\nVansen makes workwear the way workwear should be made — without frills. The Pressline Henley is issued to workers at several Tier 2 manufacturing floors as optional uniform-adjacent clothing, which means you see it everywhere from assembly lines to freight yards to the weekend market.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "GritWeave synth-cotton composite",
+    "reinforced poly-thread",
+    "ribbed cuff elastic"
+  ],
+  "functionality": "",
+  "what_it_says": "You work for a living and you're not embarrassed about it. You buy clothes that last, not clothes that impress.",
+  "worn_by": [
+    "factory workers",
+    "freight handlers",
+    "mechanics",
+    "dock workers",
+    "off-duty security"
+  ],
+  "manufacturer": "Vansen Industrial Apparel",
+  "price_range": "Φ34",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The charcoal colorway has become an informal identifier for members of a Tier 2 labor organizing cell — wearing it to a meeting means you're sympathetic.",
+    "A character wears one as a disguise to blend into a factory floor they have no business being on.",
+    "Someone finds a work order folded in the chest pocket of a secondhand one — the job listed was never completed."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "henley",
+    "tier 2",
+    "workwear",
+    "vansen",
+    "industrial",
+    "durable",
+    "everyday"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,46 @@
+{
+  "id": "a4dccdff7e68e0df5bc7b9ab1b0a5125",
+  "name": "Crucible Industries Forge-454 'Hammerfall'",
+  "type": "weapon",
+  "aliases": [
+    "Hammerfall",
+    "Forge",
+    "The Four-Fifty-Four"
+  ],
+  "category": "revolver",
+  "description": "The Crucible Industries Forge-454 is a five-shot double-action revolver chambered in .454 Casull, built on a reinforced stainless steel frame with a seven-inch ported barrel. The .454 Casull round sits between .44 Magnum and .500 S&W Magnum in terms of power, delivering rifle-like energy from a handgun platform that is heavy but manageable for strong shooters without augmentation or neural assistance.\n\nThe Hammerfall is Crucible's answer to the question: 'What is the most powerful revolver a natural human can shoot effectively?' The ported barrel vents gas upward to counteract muzzle rise, and the heavy frame absorbs enough recoil energy that a physically fit, trained shooter can fire all five rounds without losing their grip or their composure. The .454 Casull round penetrates light cover, defeats most personal body armor, and delivers terminal energy that stops threats decisively.\n\nIn the firearms community, the Hammerfall occupies a respected middle ground between the manageable .44 Magnum revolvers and the punishing .500 S&W platforms that effectively require augmentation to shoot well. It is the big revolver for people who want to remain human and unaugmented but refuse to accept that as a limitation.",
+  "manufacturer": "Corridor Composting Services",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — heavy weapons permit required",
+  "base_technologies": [
+    "Reinforced stainless frame",
+    "Ported barrel",
+    ".454 Casull chamber"
+  ],
+  "specifications": "caliber: .454 Casull\neffective_range: 55 meters\nrate_of_fire: Double-action revolver\nmagazine_capacity: 5 rounds (cylinder)\nweight: 1.62 kg",
+  "tactical_use": "A high-power revolver bridging the gap between .44 Magnum and .500 S&W platforms. The .454 Casull round defeats most personal body armor and penetrates light cover. Manageable recoil for strong unaugmented shooters with proper technique. The ported barrel reduces muzzle rise for faster follow-up shots. Five-round capacity requires careful shot selection.",
+  "cultural_context": "The Hammerfall is the weapon of choice for operators who make a philosophical commitment to remaining unaugmented. In a world where BCI smart-links and neural recoil management are available, choosing to shoot a .454 Casull with nothing but your own hands and eyes is a statement about human capability. The Hammerfall community is small, proud, and absolutely certain that their approach is correct.",
+  "known_users": [
+    "Unaugmented heavy-weapons operators",
+    "Anti-augmentation advocates",
+    "Wilderness defense personnel",
+    "Strength-focused competitive shooters"
+  ],
+  "story_hooks": [
+    "A Hammerfall competition between augmented and unaugmented shooters becomes a media event — and the unaugmented shooter wins with a perfect score. Accusations of hidden augmentation fly, and the truth is more complicated than either side expects.",
+    "A .454 Casull round loaded with a depleted-uranium penetrator is found at a crime scene. The round shouldn't exist — the combination would generate pressures that exceed the Forge-454's rated chamber pressure. But the weapon fired it without failing."
+  ],
+  "ammunition_type": [
+    ".454 Casull"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "powerful",
+    "unaugmented",
+    "heavy",
+    "human_limits",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

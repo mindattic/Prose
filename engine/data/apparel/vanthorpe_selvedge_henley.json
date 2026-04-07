@@ -1,0 +1,42 @@
+{
+  "id": "a3f7c2d8e1b054a69f3c7d2e8b1a054f",
+  "name": "Vanthorpe Selvedge Henley",
+  "type": "apparel",
+  "category": "top",
+  "description": "A three-button henley in heavyweight cotton-analog weave, the kind of shirt that feels broken in from the first wear. Vanthorpe sources their selvedge from a mill cooperative in what used to be the Carolinas, and the fabric has that slight irregularity of something woven slowly — a faint salt-and-pepper texture in a range of muted earth tones. The placket buttons are matte bone resin. Chest seams sit flat and clean. Comes in sizes that actually fit augmented shoulder profiles without bunching.\n\nThis is a working person's shirt that also happens to be genuinely good. Machinists, transit engineers, dockworkers on Lake Erie wear it because it lasts. It also gets picked up by Tier 3 folks who like the honest craftsmanship aesthetic — the shirt that says you don't need to perform effort because you actually do the work.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "cotton-analog selvedge weave",
+    "bone resin buttons",
+    "flatlock-stitched seams"
+  ],
+  "functionality": "",
+  "what_it_says": "You value durability over flash. You either work with your hands or want people to think you do, and in this case the shirt earns the read either way.",
+  "worn_by": [
+    "transit workers",
+    "machinists",
+    "tradespeople",
+    "Tier 3 craftwork enthusiasts",
+    "off-duty corp workers going casual"
+  ],
+  "manufacturer": "Vanthorpe Goods Co.",
+  "price_range": "Φ38",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Vanthorpe henley with a specific dye lot number has become an identifying mark among a network of labor organizers — the shirt itself is a signal.",
+    "The Carolina mill cooperative that weaves the fabric is rumored to be operating in a corponation dead zone, outside any charter — someone wants to know who's actually running it.",
+    "A character finds a henley in a dead man's locker; the chest pocket has been carefully unpicked and re-sewn around a folded piece of paper."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 2",
+    "henley",
+    "workwear",
+    "casual",
+    "durable",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "6a076aab7faa4ad52ad2dcc4a4e169bb",
+  "name": "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+  "type": "weapon",
+  "aliases": [
+    "Monsoon",
+    "SN-7",
+    "Cascade",
+    "Flash Flood"
+  ],
+  "category": "support",
+  "description": "A man-portable electromagnetic suppression system that fires rapid bursts of magnetically-accelerated ceramic slugs. The Monsoon trades the sustained fire capability of conventional machine guns for overwhelming burst density — each trigger pull releases a 40-round burst in 0.3 seconds, creating an instantaneous wall of projectiles.\n\nSterling-Nakamura designed the Cascade Projector for ambush and counter-ambush scenarios where the first seconds of contact determine the outcome. The SN-7's burst capability allows a single operator to deliver the firepower equivalent of a full squad's opening volley. The ceramic slugs fragment on impact with hard surfaces, producing secondary projectile effects that extend the weapon's lethality beyond its direct fire pattern.\n\nThe trade-off is ammunition consumption. A 400-round magazine provides only 10 trigger pulls, and the weapon's electromagnetic accelerator requires a 2-second recharge between bursts. Monsoon operators learn to make each burst count.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — military and corporate assault units",
+  "base_technologies": [
+    "Ultra-rapid burst electromagnetic acceleration",
+    "Ceramic slug fragmentation ballistics",
+    "Instantaneous fire density optimization"
+  ],
+  "specifications": "caliber: 6mm ceramic slug\neffective_range: 30-400 meters\nrate_of_fire: 40-round burst per 2.3 seconds (including recharge)\ncapacity: 400-round detachable magazine\nweight: 8.6 kg weapon, 5.2 kg loaded magazine\npower_source: Integrated capacitor bank, recharges from magazine power cell",
+  "tactical_use": "The Monsoon is deployed for maximum immediate effect in contact situations. Its burst capability is devastating in ambush initiation — a single operator can suppress or destroy an entire fire team before they can react. In defensive situations, the weapon's burst density creates an impenetrable wall of ceramic fragments that stops charges cold. Operators are trained to conserve bursts and use the 2-second recharge interval to assess and reposition.",
+  "cultural_context": "Sterling-Nakamura markets the Monsoon as 'the first word and the last word' — a weapon designed for decisive moments rather than sustained engagements. The weapon has found particular favor with executive protection details who need maximum firepower in minimum time. A bodyguard with a concealed Monsoon can deliver a devastating counterattack that buys their principal the seconds needed to escape.",
+  "known_users": [
+    "Sterling-Nakamura security division",
+    "Executive protection specialists"
+  ],
+  "story_hooks": [
+    "A Monsoon was used in a crowded marketplace to eliminate a single target — the 40-round burst killed the target and eleven bystanders. The operator claims the engagement was authorized. The authorization documents have disappeared.",
+    "Sterling-Nakamura is developing a Monsoon variant that fires guided micro-munitions instead of ceramic slugs — each round in the burst tracking independently. The prototype has been stolen from their testing facility."
+  ],
+  "ammunition_type": [
+    "6mm ceramic slug"
+  ],
+  "tags": [
+    "weapon",
+    "support",
+    "burst",
+    "electromagnetic",
+    "suppression",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

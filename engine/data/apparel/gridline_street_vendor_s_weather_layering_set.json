@@ -1,0 +1,49 @@
+{
+  "id": "2c6a8f3e51d0b7942ea5c1f83d7e09b4",
+  "name": "Gridline Street Vendor's Weather Layering Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A practical, self-curated layering kit worn by Circuit-level street food vendors, market stall operators, and mobile cart workers who spend full shifts exposed to M88's variable weather — acid-rain squalls, thermal inversions, and the cold lake-corridor wind that scours the elevated walkways. The outermost layer is a waist-length anorak in weatherproof sage-green synth-wax, hood cinched with a toggle drawstring, chest pocket sealed with a magnetic flap. A small embroidered patch on the left shoulder reads the vendor's licensed stall number in Circuit's market registry — required by city ordinance, often accompanied by a handmade decorative border the vendor has added themselves. Beneath the anorak, a heavy-duty apron in charcoal canvas covers the torso from collar to knee, cross-back straps distributing the weight of deep front pockets loaded with tools, condiment packets, a card reader, and small wares. The apron's bib has a transparent ID-sleeve pocket for the vendor's Circuit commerce license. Under the apron, a rust-orange thermal mid-layer pullover with a funnel neck provides insulation. Trousers are dark olive cargo-cut synth-twill, knee-reinforced for the crouching and kneeling of restocking and equipment maintenance. Footwear is a pair of Ashgrove Linework Work Boots — oil-resistant flat sole, composite toe, ankle-height.\n\nThis isn't a uniform — it's an ecosystem of practical choices refined over seasons. Vendors working gene-compatible builds often have their apron straps widened or the anorak hood enlarged to accommodate horns or enhanced ear structures; most of these modifications are hand-sewn. The stall number patch is the only branding required, but vendors frequently add layers of personal expression: painted apron pockets, lucky charms clipped to the anorak zipper pull, an ancestor's recipe card laminated and tucked behind the ID sleeve.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "weatherproof synth-wax",
+    "charcoal canvas",
+    "thermal knit pullover",
+    "synth-twill",
+    "transparent polymer ID sleeve",
+    "composite toe cap",
+    "oil-resistant rubber sole",
+    "magnetic closure polymer"
+  ],
+  "functionality": "Full weather protection via layering system, deep-pocket apron for vendor tools and wares, commerce license ID sleeve, oil-resistant composite-toe footwear, knee reinforcement for restocking work, adjustable hood for weather and gene-modification accommodation",
+  "what_it_says": "Self-employed, licensed, and proud of it. The stall number patch signals legitimacy in a city that aggressively culls unlicensed vendors. The personal touches say this person has been doing this long enough to make it their own.",
+  "worn_by": [
+    "licensed street food vendors",
+    "Circuit market stall operators",
+    "mobile cart workers",
+    "open-air market traders"
+  ],
+  "manufacturer": "Self-assembled; anorak from Gridline Outerwear (street brand), apron from Driftmarket Canvas Supply, boots from Ashgrove",
+  "price_range": "Φ 220–Φ 360 (assembled over time)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A vendor's stall number patch is registered to a person who died eighteen months ago — someone has been operating under a dead person's license, and the market registry is finally running audits.",
+    "The laminated recipe card behind a vendor's ID sleeve is written in a language no translator module recognizes — and a customer with an unusual background suddenly goes very still when they see it.",
+    "A Circuit vendor's cart is the only establishment on a particular elevated walkway that stays open during a corponation-enforced curfew — they know something about why, and the apron pockets hold more than condiments."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "street_vendor",
+    "market",
+    "self_assembled",
+    "weatherproof",
+    "gene_compatible",
+    "licensed",
+    "layering"
+  ],
+  "parent_corponation": ""
+}

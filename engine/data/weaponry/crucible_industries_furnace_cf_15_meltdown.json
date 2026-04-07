@@ -1,0 +1,46 @@
+{
+  "id": "c79ff421a6537bb9410966a27aaffcf1",
+  "name": "Crucible Industries Furnace CF-15 'Meltdown'",
+  "type": "weapon",
+  "aliases": [
+    "Meltdown",
+    "CF-15",
+    "Furnace",
+    "The Smelter"
+  ],
+  "category": "support",
+  "description": "A vehicle-mounted continuous-beam thermal weapon that projects a 30kW infrared laser capable of cutting through armored vehicles, structural steel, and reinforced concrete. The Furnace is not a precision weapon — it is a demolition tool mounted on a weapon platform.\n\nCrucible designed the CF-15 for breaching operations where explosive charges are impractical or insufficient. The continuous beam can cut a human-sized opening in a reinforced concrete wall in under 8 seconds, and its thermal effect on personnel caught in the beam path is instantaneous and catastrophic. The weapon requires vehicle-grade power supply and cooling systems, making it unsuitable for dismounted operation.\n\nThe Meltdown has earned its nickname from several incidents where the weapon's beam was sustained longer than intended, heating structural elements to the point of failure. Two building collapses in Meridian 88 have been attributed to CF-15 engagements where the operator failed to account for the thermal load on load-bearing structures.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Military restricted — heavy directed energy authorization",
+  "base_technologies": [
+    "High-power continuous infrared beam generation",
+    "Vehicle-integrated cooling systems",
+    "Thermal cutting beam focus control"
+  ],
+  "specifications": "caliber: N/A — continuous infrared beam\neffective_range: 50-500 meters\nrate_of_fire: Continuous beam, adjustable duration\ncapacity: N/A — limited by power supply\nweight: 340 kg (weapon and cooling system)\npower_source: Vehicle fusion reactor, draws 60kW sustained",
+  "tactical_use": "The Furnace is deployed for deliberate breaching of hardened positions, destruction of armored vehicles, and denial of reinforced structures. The weapon's continuous beam allows the operator to trace cutting paths through material, effectively using the laser as a thermal saw. In anti-vehicle roles, the CF-15 can disable an armored vehicle by cutting through its engine compartment or crew cabin in a sustained 3-second exposure.",
+  "cultural_context": "The Meltdown's destructive power has made it a symbol of corporate excess — a weapon so powerful it can accidentally collapse buildings. Environmental activists point to the CF-15 as evidence that corporate military technology has exceeded any reasonable definition of proportional force. Crucible's defense is that the weapon is 'precisely destructive' — it destroys only what the operator aims at. The building collapses, they argue, were operator error.",
+  "known_users": [
+    "Crucible Industries heavy weapons division",
+    "Corporate siege warfare units"
+  ],
+  "story_hooks": [
+    "A CF-15 was used to cut through the wall of a bank vault during what appears to be a corporate-sponsored heist. The thermal signature was detected by satellite, and now three different intelligence agencies want to know which corporation sanctioned the operation.",
+    "Crucible has developed a miniaturized Furnace variant that can be backpack-mounted, reducing the beam power to 8kW but making it man-portable. The prototype is missing from their testing facility."
+  ],
+  "ammunition_type": [
+    "Continuous infrared beam"
+  ],
+  "tags": [
+    "weapon",
+    "support",
+    "vehicle-mounted",
+    "directed-energy",
+    "thermal",
+    "breaching",
+    "tier 5",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

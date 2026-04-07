@@ -1,0 +1,53 @@
+{
+  "id": "9c3f1a6e2d0b7845c3f9a1e6d2b0c874",
+  "name": "Hearthpatch Elder's Walking Coat Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Not every Shelf outfit is built for running or hiding. This one is built for endurance, dignity, and the long walk. The centerpiece is a full-length coat — originally a women's overcoat in deep burgundy wool, now faded to a dusty maroon with a gray undertone — that has been repaired so many times it has become a new garment. Every patch is a different fabric: a square of dark green canvas at the left elbow, a strip of black synthrubber at the hem where puddle-rot set in, a careful re-weaving of the right lapel with rust-colored thread that doesn't quite match but holds the shape. The coat falls to mid-calf and is belted with a wide leather strap, worn and darkened with age, the original buckle replaced with a hand-bent wire clasp. Beneath it, a layered situation: a thick ribbed turtleneck in off-white that's been washed gray, tucked into wide-leg trousers in dark brown heavy cotton, the waistband reinforced with a second strip of fabric sewn over the original. Shoes are flat, wide-last, in cracked dark leather resoled twice in thick rubber — the kind of shoe built for someone who stands and walks all day and needs their feet to still work at the end of it. A wide wool headwrap in faded teal and rust, gene-compatible in its generous size and soft drape, covers the head and wraps loosely at the neck. Hands are bare. The coat's interior has been fitted with four hand-sewn pockets, deep and flat, invisible from outside.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "faded wool overcoat",
+    "canvas patch panels",
+    "synthrubber hem patch",
+    "rust re-weave thread",
+    "aged leather belt",
+    "wire clasp",
+    "ribbed cotton-blend turtleneck",
+    "heavy dark cotton",
+    "cracked leather",
+    "thick rubber resole",
+    "wool headwrap blend"
+  ],
+  "functionality": "Full-length coat provides exceptional cold and wind protection across the Shelf's exposed corridors. Multiple interior pockets distribute weight and keep valuables close to the body and out of view. Wide-last resoled shoes support long-duration walking on uneven Shelf terrain. Wool headwrap provides warmth and can be repositioned as a face cover. Gene-compatible headwrap accommodates horns or cranial geneware without adjustment.",
+  "what_it_says": "Age, survival, and the particular pride of someone who refuses to look defeated. Every repair in this coat is a year of living on the Shelf, and the wearer wears them all openly. This is not someone who dresses down — this is someone who dresses with everything they have, and everything they have is a coat that's been loved back from the dead.",
+  "worn_by": [
+    "Shelf elders",
+    "long-term Shelf residents",
+    "informal community anchors and mediators",
+    "street healers",
+    "anyone who has been on the Shelf long enough to develop style instead of just survival"
+  ],
+  "manufacturer": "Coat is of unknown original manufacture, extensively self-repaired over years; all other components are Shelf market or self-made",
+  "price_range": "Φ8–Φ22 (the coat is priceless to the wearer)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "Sewn into the lining of the coat, between two older patches, is a folded document — something the wearer either forgot was there or is deliberately carrying without acknowledging.",
+    "A Tier 3 vintage textile dealer spots the original coat's construction and realizes it's pre-Collapse manufacture, potentially worth far more than the wearer could imagine — and wants it badly.",
+    "The wire clasp on the belt is a specific design that functions as a recognition signal among a Shelf mutual-aid network — and a newcomer who knows the signal is desperately trying to make contact."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "gene_compatible",
+    "elder_wear",
+    "dignity",
+    "long_term_survivor",
+    "heavily_repaired",
+    "full_length_coat",
+    "community_anchor"
+  ],
+  "parent_corponation": ""
+}

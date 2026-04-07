@@ -1,0 +1,42 @@
+{
+  "id": "18d4f0a2b3c5e6790123456789012345",
+  "name": "Nexagen Employee Wellness Polo",
+  "type": "apparel",
+  "category": "top",
+  "description": "Issued to all Nexagen Genomics & Wellness Solutions customer-facing staff below the Director tier. A fitted polo shirt in the company's signature deep teal, with a subtle texture-woven logo on the left chest and a clean two-button placket. The fabric is a moisture-wicking synthetic blend with a slight sheen — it photographs well under the warm lighting of Nexagen's client consultation floors, which is not an accident. The collar stays crisp through a full shift. The fit is tailored: slim enough to look polished, loose enough to allow the kind of demonstrative gesturing that wellness consultants are trained to use.\n\nThis shirt communicates institutional trust. When you see it, you know you're dealing with someone who has been vetted, badged, and trained in Nexagen's proprietary client interaction protocols. Off the clock, employees often change immediately — the polo carries an undertow of performance that's hard to shake. On the black market, clean Nexagen polos occasionally circulate as social engineering props, which is why the embroidered lot codes on the collar hem are updated quarterly.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "moisture-wicking synthetic blend",
+    "texture-woven logo embroidery",
+    "lot-coded collar hem label"
+  ],
+  "functionality": "Embedded lot code in collar hem allows Nexagen HR systems to verify shirt authenticity and track which facility it was issued from.",
+  "what_it_says": "You are a professional representative of a trusted institution. Or you are pretending to be.",
+  "worn_by": [
+    "Nexagen client-facing staff",
+    "genomics wellness consultants",
+    "geneware intake coordinators",
+    "people impersonating the above"
+  ],
+  "manufacturer": "Nexagen Genomics & Wellness Solutions (corponation internal issue)",
+  "price_range": "Φ0 (issued) / Φ150 (black market)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A rogue Nexagen polo with a lot code that doesn't match any issued batch has been showing up in access logs at three different secure facilities.",
+    "A character is given a Nexagen polo by a contact and told it will get them into a specific building — they don't know the contact works for Nexagen security.",
+    "The quarterly lot code update has been delayed by six weeks with no explanation, and Nexagen's internal security team is quietly panicking."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 4",
+    "polo",
+    "corporate uniform",
+    "nexagen",
+    "genomics",
+    "issued garment",
+    "social engineering"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,47 @@
+{
+  "id": "c9d1e6a3f4b7205d8e2f1c3a6b0d4e78",
+  "name": "Ovex DutyBand Court-Issue Ankle Monitor",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Matte black polymer housing, 38mm thick, locked to the ankle by a tamper-evident ratchet band in high-visibility yellow. The status light pulses green every four seconds when compliant; amber when near a restricted zone; red when a violation is logged. Ovex manufacturing marks are embossed on the outer face. Impossible to disguise under most pants legs. Designed to be seen — the visibility is the point.",
+  "tier_association": "Tier 1-3",
+  "materials": [
+    "high-impact polymer housing",
+    "tamper-evident ratchet band",
+    "status LED array",
+    "GPS and BCI-ping module",
+    "sealed lithium cell (court-charged)"
+  ],
+  "functionality": "Continuous GPS tracking with 10-meter precision. BCI-ping broadcasts wearer ID to law enforcement nodes within 50 meters. Tamper detection triggers immediate alert. Battery charged remotely by municipal grid — wearer cannot deactivate. Logs all zone breaches with timestamp.",
+  "what_it_says": "The system knows exactly where this person is at all times, and everyone around them knows it too.",
+  "worn_by": [
+    "Court-supervised parolees",
+    "citizens under corporate injunction",
+    "Tier 1 residents on conditional housing agreements",
+    "political detainees on reduced custody"
+  ],
+  "manufacturer": "Ovex Compliance Systems",
+  "price_range": "Φ0 (court-issued) / Φ180–Φ400 (compliance fee billed to wearer monthly)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A fixer claims she can spoof the GPS ping for Φ600 — but three of her last clients disappeared within a week of the job.",
+    "The monitor on a Tier 1 resident starts pulsing red inside his own apartment, flagging a zone he's never left — and no one at Ovex will explain why.",
+    "A street tech discovers the monitors broadcast on a secondary frequency that no court order authorized — someone is listening to more than location data."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "ankle-monitor",
+    "court-issue",
+    "compliance",
+    "tier-1",
+    "tier-2",
+    "tier-3",
+    "ovex",
+    "aug-compatible",
+    "gene-compatible",
+    "surveillance"
+  ],
+  "parent_corponation": ""
+}

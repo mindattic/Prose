@@ -1,0 +1,47 @@
+{
+  "id": "9b2f5e8a1d3c47061fa4b9e2c5d7f308",
+  "name": "Vanthorpe Meridian Conceal Shoulder Rig",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Over-jacket shoulder harness in black vegetable-tanned synthetic leather, cut narrow and flat to disappear under a blazer or coat. Main holster sits high under the left arm with a magnetic retention snap; a counterweight pouch on the right holds spare charge packs or a secondary piece. All hardware is matte black — no shine, no jangle.\n\nStraps cross at the upper back via a low-profile X-brace that accommodates spinal rig hardware through a split-rail channel. The whole rig weighs 340 grams unloaded. Favored by Tier 4 specialists who need to carry without advertising it.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "synthetic vegetable-tanned leather",
+    "magnetic retention snap hardware",
+    "matte black aluminum buckles",
+    "split-rail spinal rig channel",
+    "microfiber sweat lining"
+  ],
+  "functionality": "Magnetic snap retention allows one-handed draw. Counterweight pouch balances the load and accepts secondary weapon or charge packs. Split-rail back channel routes cleanly over spinal augmentation rigs. Strap tension is micro-adjustable for chrome arm fittings. Sits flat enough to remain undetectable under a structured jacket.",
+  "what_it_says": "This person is armed, doesn't want you to know it, and has enough resources to do it elegantly.",
+  "worn_by": [
+    "corporate security consultants",
+    "private investigators",
+    "junior executives in hostile negotiation roles",
+    "licensed carry specialists",
+    "fixers working Tier 4 contracts"
+  ],
+  "manufacturer": "Vanthorpe Tactical Goods",
+  "price_range": "Φ900–Φ1,400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A counterweight pouch is found to contain a chip with encrypted comms — not weapons-related at all, suggesting the rig is being used as a dead drop carrier.",
+    "Vanthorpe's latest batch has a manufacturing defect in the magnetic snap that causes it to partially disengage under strong electromagnetic fields — common near MagRail stations.",
+    "A character is given this rig by a contact who says it belonged to someone who 'won't be needing it' — the previous owner's biometric trace is still warm in the microfiber lining."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "holster",
+    "harness",
+    "conceal carry",
+    "over-jacket",
+    "tactical",
+    "tier-4",
+    "aug-compatible",
+    "vanthorpe",
+    "armed"
+  ],
+  "parent_corponation": ""
+}

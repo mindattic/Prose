@@ -1,0 +1,43 @@
+{
+  "id": "f79c8e058fff6c608efc1f4ee4ba08c5",
+  "name": "Kyūsei Chemical FogWall FW-2",
+  "type": "weapon",
+  "aliases": [
+    "FogWall",
+    "FW-2",
+    "Cloud Can",
+    "Smoke Pepper"
+  ],
+  "category": "self_defense",
+  "description": "A defensive spray that prioritizes area denial over direct incapacitation. The FW-2 releases a dense, persistent cloud of micro-encapsulated irritant particles that hang in the air for up to ninety seconds, creating a barrier of chemical fog between the user and their attacker. The cloud is opaque to visible light and most commercial-grade optical enhancement systems, combining visual obstruction with respiratory irritation.\n\nKyūsei Chemical, a Kyoto-based firm that relocated its consumer defense division to Meridian 88 in 2081, designed the FW-2 after market research showed that most self-defense spray deployments fail because the user panics and sprays wildly rather than targeting the attacker's face. The FW-2 removes the accuracy requirement — the user simply points it at the ground between themselves and the threat and runs the other direction.\n\nThe canister is larger than typical pocket sprays, about the size of a small water bottle, and contains three full-cloud deployments. The micro-encapsulation technology means the irritant particles burst on contact with moisture — eyes, nasal passages, and sweat-dampened skin — while remaining relatively inert on dry surfaces. This reduces collateral contamination of the area after the cloud disperses.",
+  "manufacturer": "KYUSEI CHEMICAL",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Micro-encapsulated irritant particles",
+    "Persistent aerosol suspension",
+    "Moisture-activated capsule rupture"
+  ],
+  "specifications": "capacity: 3 cloud deployments\ncloud radius: 4 meter sphere\ncloud persistence: 60-90 seconds\nweight: 180 g\ncanister dimensions: 15 cm x 5 cm\nvisual obstruction: opaque to visible light and standard-grade optics\nirritation onset: immediate on mucous membrane contact",
+  "tactical_use": "Deploy at ground level between yourself and the threat, then move away from the cloud. The FW-2 is not designed to incapacitate — it is designed to create space and break line of sight. Effective in enclosed spaces like corridors and transit stations where the cloud fills the available volume. Less effective outdoors in wind. The moisture-activation mechanism means it is particularly effective against sweating or rain-dampened attackers.",
+  "cultural_context": "The FW-2 has become the preferred self-defense tool for people who know they cannot outfight their attacker and just need to escape. Its Japanese engineering and clean design have given it a reputation as a thoughtful, non-aggressive defensive choice — the self-defense option for people who dislike the idea of self-defense weapons. Kyūsei's marketing emphasizes escape and de-escalation rather than punishment or retaliation.",
+  "known_users": [],
+  "story_hooks": [
+    "A series of robberies in Tier 3 have been committed using modified FW-2 canisters loaded with a knockout agent instead of irritant — victims wake up stripped of everything valuable.",
+    "Kyūsei Chemical is being pressured to add a law enforcement override to the FW-2's formula — a chemical that security forces could deploy to instantly neutralize the cloud, which would also neutralize its value as a defense against corrupt security."
+  ],
+  "ammunition_type": [
+    "Micro-encapsulated irritant fog canister"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "chemical",
+    "area_denial",
+    "fog",
+    "escape_tool",
+    "tier_2"
+  ],
+  "parent_corponation": ""
+}

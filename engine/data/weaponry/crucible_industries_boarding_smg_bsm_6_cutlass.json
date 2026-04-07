@@ -1,0 +1,50 @@
+{
+  "id": "491e047b7253116ea87007f315c0e6e0",
+  "name": "Crucible Industries Boarding SMG BSM-6 'Cutlass'",
+  "type": "weapon",
+  "aliases": [
+    "Cutlass",
+    "BSM-6",
+    "Pirate Gun"
+  ],
+  "category": "smg",
+  "description": "The BSM-6 Cutlass is purpose-built for maritime and orbital boarding operations, featuring a waterproof sealed action, a built-in breaching tool at the muzzle, and an integrated magnetic clamp on the underside that locks the weapon to ferrous surfaces when the operator needs both hands free. The weapon fires 10mm caseless from a 20-round magazine with a controlled 550 rpm rate designed for deliberate room-clearing rather than suppressive spray.\n\nThe Cutlass's breaching tool is a hardened steel prow at the muzzle that functions as a prying bar, glass breaker, and emergency melee weapon. The BCI integration includes a structural analysis overlay that identifies weak points in doors, hatches, and bulkheads for the breaching tool, and a decompression risk calculator for orbital operations that warns operators before firing in areas with hull integrity concerns.\n\nCrucible developed the Cutlass in response to the growing piracy problem on Meridian 88's maritime trade routes and the security needs of orbital stations. At Φ3,500, it is priced for organizational procurement by security firms, ship crews, and station operators who need a weapon designed for the unique challenges of forced entry in sealed environments.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — maritime/orbital security licensing",
+  "base_technologies": [
+    "Sealed waterproof action",
+    "Integrated breaching tool",
+    "Magnetic weapon clamp",
+    "BCI structural analysis overlay"
+  ],
+  "specifications": "caliber: 10mm caseless\neffective_range: 50m\nrate_of_fire: 550 rpm (cyclic)\nmagazine_capacity: 20 rounds\nweight: 2.5 kg",
+  "tactical_use": "The Cutlass is a specialist boarding weapon. Its breaching tool eliminates the need for a separate entry tool, its magnetic clamp frees hands for climbing and movement through zero-G environments, and its sealed action functions after full submersion. The 10mm round provides the stopping power needed to end close-quarters engagements quickly in confined spaces where prolonged firefights risk structural damage. The decompression calculator prevents operators from creating lethal hull breaches with their own weapons.",
+  "cultural_context": "The Cutlass has been adopted by both sides of maritime conflict — security forces and pirates alike carry BSM-6s because the weapon is simply the best tool for the job. Crucible officially condemns piracy while acknowledging that they cannot control secondary market sales. In port communities, the Cutlass is as common as a boat hook, and its distinctive muzzle prow makes it instantly recognizable.",
+  "known_users": [
+    "Maritime security forces",
+    "Orbital station boarding teams",
+    "Ship crews",
+    "Pirates (unofficial)"
+  ],
+  "story_hooks": [
+    "A pirate crew's Cutlass weapons all share sequential serial numbers — they were stolen directly from a Crucible shipment meant for a security firm. The firm is demanding Crucible replace them, and Crucible is demanding the firm explain how an entire shipment was hijacked.",
+    "An orbital station boarding team discovered their Cutlass decompression calculators had been miscalibrated. If they had fired in the section they were clearing, they would have breached the hull and killed everyone aboard."
+  ],
+  "ammunition_type": [
+    "10mm caseless standard",
+    "10mm caseless frangible"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "boarding",
+    "maritime",
+    "orbital",
+    "breaching",
+    "Crucible",
+    "tier 2",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

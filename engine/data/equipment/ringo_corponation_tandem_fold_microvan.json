@@ -11,7 +11,7 @@
   ],
   "category": "vehicle",
   "description": "The Tandem Fold Microvan is Ringo Corponation's answer to Meridian 88's chronic spatial scarcity — a compact urban transport vehicle built around a collapsible chassis system that allows the vehicle to compress its width and length by approximately 40% when parked or navigating narrow corridors. The compression mechanism, called the Tandem Fold System, uses a series of interlocking structural ribs and pneumatic sleeve joints to physically reconfigure the vehicle's profile without compromising the passenger or cargo compartment integrity. In its collapsed state, the Microvan occupies roughly the footprint of a large motorcycle.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Ringo Internal Adjudication",
   "tier_availability": "Tier 1+",
   "legality": "Unrestricted",
   "base_technologies": [
@@ -50,7 +50,6 @@
   "tags": [
     "vehicle",
     "equipment",
-    "war",
     "love",
     "ai",
     "corporate",
@@ -61,10 +60,10 @@
     "rooftop",
     "alley",
     "market",
-    "rain",
     "night",
     "motorcycle",
     "train",
     "tier 1"
-  ]
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

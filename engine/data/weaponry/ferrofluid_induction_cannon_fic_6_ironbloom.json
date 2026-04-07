@@ -10,7 +10,7 @@
   ],
   "category": "energy",
   "description": "The FIC-6 fires a pressurised payload of magnetically-responsive ferrofluid that, upon impact, is activated by a trailing induction pulse from the weapon's secondary emitter. The fluid — a suspension of iron nanoparticles in a low-viscosity carrier — spreads across the target surface on impact and then responds to the induction pulse by undergoing violent magnetic excitation. The particles heat rapidly, the carrier medium vaporises, and the iron suspension becomes a superheated aerosol that drives through gaps, seams, and porous surfaces with extreme prejudice.\n\nAgainst armoured targets, the Ironbloom's mechanism is particularly effective because conventional armour design assumes threats from the outside. The ferrofluid finds joints, ventilation gaps, and sensor apertures — and the induction pulse activates it once it has already partially infiltrated the interior. Against unarmoured biological targets, the initial impact distributes the fluid across a wide area before activation, producing an effect operators have described as 'wearing a coat that catches fire from the inside.' The weapon is devastating at close to medium range and becomes increasingly imprecise beyond 20 metres as the fluid disperses.\n\nHELIX BIOSYSTEMS developed the ferrofluid compound originally for targeted drug delivery — the induction activation mechanism was designed to release medication at specific internal sites. The weaponised application was reportedly developed by a contractor working from stolen research, and HELIX has been litigating intellectual property claims against the FIC-6's actual manufacturer (a shell corp believed to be a TESSERA CORPONATION subsidiary) for eleven years without resolution.",
-  "manufacturer": "TESSERA CORPONATION (disputed; shell subsidiary 'Irongate Applied Systems')",
+  "manufacturer": "Tile & Mortar Real Estate",
   "tier_availability": "Black market / Tier 4 (restricted channels)",
   "legality": "Prohibited",
   "base_technologies": [
@@ -51,6 +51,8 @@
     "market",
     "drug",
     "fire",
-    "tier 4"
-  ]
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

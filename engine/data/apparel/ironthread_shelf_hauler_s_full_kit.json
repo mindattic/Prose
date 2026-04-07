@@ -1,0 +1,53 @@
+{
+  "id": "e9a1b2c3d4f5607182930a4b5c6d7e8f",
+  "name": "Ironthread Shelf Hauler's Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A working rig assembled for repeated heavy labor in corrosive conditions — the kind of outfit that gets worn six days a week, washed when there's water, and repaired the same night it tears. The primary garment is a full-coverage boilersuit in heavyweight faded olive drab, the fabric stiffened from years of oil, industrial sealant, and repeated acid-rain exposure into something approaching light armor. The chest panel has a large rectangular acid-shield patch in charcoal gray, edges sealed with a bead of industrial adhesive that's cracked and re-applied so many times it forms a topographic ridge around the patch's perimeter. Both knees are likewise reinforced — the right with rubberized canvas, the left with a section of industrial conveyor belting cut to fit and secured with heavy rivets. The suit's left sleeve has been cut away at the shoulder and replaced with a chrome-compatible open channel — the wearer has a partial arm augmentation, and the channel is lined with a strip of anti-friction neoprene to prevent the chrome edge from catching on fabric. Beneath the suit, a compression underlayer in gray spandex-blend manages sweat and minor impact. Over the suit in cold conditions, a quilted over-vest in faded black adds thermal mass, its front closure a row of industrial snaps, two of which are mismatched replacements. Boots are heavy-duty, triple-resoled Shelf work boots, the uppers stitched with waxed cord in three different colors where seams have been re-done, the toe box packed with a steel plate cut from a sheet of scrap. A wide back-support belt in reinforced nylon completes the lower kit. The face is partially protected by a half-mask respirator in scuffed gray plastic, worn around the neck when not in use, its filter cartridge visibly old and marked with a hand-scratched date.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "heavyweight olive drab canvas",
+    "charcoal acid-shield patch",
+    "industrial conveyor belt rubber",
+    "riveted rubberized canvas",
+    "anti-friction neoprene channel lining",
+    "gray spandex-blend compression layer",
+    "faded black quilted fill",
+    "waxed cord",
+    "reinforced nylon",
+    "scuffed gray plastic respirator"
+  ],
+  "functionality": "Full-body acid and corrosive splash protection; chrome-compatible open sleeve channel with neoprene lining; steel-reinforced toe box; back-support belt for heavy lifting; integrated respirator for airborne hazard environments; thermal vest layer for temperature regulation; knee reinforcement for kneeling work on hard surfaces",
+  "what_it_says": "Pure labor. This rig says the wearer moves things, fixes things, hauls things — and has been doing it long enough that the suit itself is a record. The chrome-compatible sleeve channel is notable: this person has augmentation, which costs money, which means either sacrifice or debt. The aug may be the most expensive thing they own, and the suit is built around protecting it.",
+  "worn_by": [
+    "Shelf salvage haulers",
+    "unlicensed infrastructure repair workers",
+    "aug-users who can't afford Tier 2 work",
+    "scrap metal dealers",
+    "people working informal construction in the Shelf's lower zones"
+  ],
+  "manufacturer": "Base suit is surplus Crucible industrial workwear, heavily modified; vest is self-made; aug channel modification done by a local fabricator",
+  "price_range": "Φ 25–55 complete kit; base suit Φ 8–15 surplus",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The hand-scratched date on the respirator filter is six months past its safe-use window. The wearer knows this. Replacement filters cost Φ 4 and that money is going somewhere else.",
+    "The chrome sleeve channel was fabricated by a specific underground aug-tech in the Shelf's transit underbelly — and that person has since disappeared, which is information someone with resources would pay for.",
+    "The acid-shield patch on the chest was applied after an industrial accident that officially never happened — a Crucible subsidiary spill that was covered up. The patch is evidence. The wearer is evidence."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier 1",
+    "labor",
+    "boilersuit",
+    "aug_compatible",
+    "acid-resistant",
+    "industrial",
+    "patched",
+    "chrome-compatible",
+    "respirator"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

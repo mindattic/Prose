@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b09d4568f2a1c3e7b0d94521",
+  "name": "Rheon Systems CorpSec Field Loadout MK-6",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Head-to-toe tactical rig issued to mid-tier CorpSec units. Matte-black segmented TacShell torso armor over a moisture-wicking graphene underlayer, ballistic-rated ceramic shoulder pauldrons, and articulated knee-strike greaves. Helmet is a low-profile carbon composite with integrated HUD visor and neural uplink port at the occipital ridge. Gloves are cut-resistant syntex with haptic feedback nodes at the fingertips.\n\nBoots are steel-shank, oil-resistant, with mag-lock heel capability. All panels connect via quick-release buckles for field maintenance. The entire kit ships in a compressed carry-bag and assembles in under four minutes. Standard colorway is gunmetal with amber corponation stripe.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "TacShell polymer composite",
+    "graphene underlayer mesh",
+    "ceramic ballistic inserts",
+    "carbon composite helmet shell",
+    "cut-resistant syntex",
+    "steel-shank rubber sole"
+  ],
+  "functionality": "Full ballistic protection to Class 3, integrated neural HUD uplink, mag-lock boot heel for surface adhesion, quick-release panel system for field repair, thermal signature dampening on torso.",
+  "what_it_says": "You are a sanctioned instrument of force — credentialed, equipped, and expendable.",
+  "worn_by": [
+    "CorpSec patrol officers",
+    "corporate enforcement contractors",
+    "private security detail leads",
+    "licensed bounty operatives"
+  ],
+  "manufacturer": "Rheon Systems",
+  "price_range": "Φ2,800 – Φ4,500",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A unit's loadout serial number traces back to a black-site requisition that officially never happened.",
+    "The HUD uplink has a firmware backdoor — someone is watching through every officer's visor.",
+    "A disgraced CorpSec officer still has her full kit; no one came to collect it after she was burned."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "military",
+    "corpsec",
+    "tactical",
+    "full_loadout",
+    "aug_compatible",
+    "tier3",
+    "tier4",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

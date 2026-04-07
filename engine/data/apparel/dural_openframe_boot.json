@@ -1,0 +1,40 @@
+{
+  "id": "f1a4d7e0b3c6928f5d1a4e7b0c3f6289",
+  "name": "Dural Openframe Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A striking mid-calf boot that dispenses with a conventional upper entirely — instead, a series of adjustable alloy straps and polymer rails wrap around the leg in an open cage structure. Originally designed for chrome legs where a closed boot upper would trap heat from servo mechanisms, it has become something of a style statement in Tier 3 circles. The straps are individually adjustable to fit any limb profile, biological or augmented.\n\nIt looks industrial and deliberate. On a chrome leg, the cage structure echoes the mechanics beneath. On a biological leg, it's a fashion choice. Either way, people notice.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "anodized aluminum straps",
+    "polymer rail system",
+    "rubber treaded sole",
+    "neoprene strap lining"
+  ],
+  "functionality": "Open cage structure accommodates any limb profile including large-format chrome prosthetics. Individual strap adjustment fits variable geometry. Heat-dissipating design for servo-driven limbs.",
+  "what_it_says": "You're not hiding anything. Your augmentation is part of how you look, and you've built your wardrobe around it.",
+  "worn_by": [
+    "augmented individuals who wear their chrome openly",
+    "industrial designers and artists",
+    "Tier 3 streetwear adopters"
+  ],
+  "manufacturer": "Dural Form",
+  "price_range": "Φ120 - Φ150",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A specific strap configuration has become a coded signal in certain augmentation communities — worn a particular way, it means you're looking for a specific kind of work.",
+    "The rails are strong enough that people have been known to use disassembled Dural boots as improvised restraints or splints."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "aug-compatible",
+    "open-frame",
+    "chrome-visible",
+    "fashion",
+    "boot"
+  ],
+  "parent_corponation": ""
+}

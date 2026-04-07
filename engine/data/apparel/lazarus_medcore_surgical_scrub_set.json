@@ -1,0 +1,34 @@
+{
+  "name": "Lazarus MedCore Surgical Scrub Set",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "medical_surgical",
+  "manufacturer": "Evergreen Wellness",
+  "description": "The MedCore scrub set is the standard surgical uniform across Lazarus-affiliated hospitals and private clinics throughout Meridian 88. The fabric is a tightly bonded synthetic-cellulose blend rated for Class 4 biohazard splash resistance, with a micro-textured surface that actively prevents bacterial adhesion through a low-level electrostatic charge sustained by the wearer's body heat. The scrubs come in Lazarus's signature pale blue-green — a color chosen in the 2140s for its effect on patient stress responses — with the Lazarus caduceus printed in white at the left shoulder. Port access panels at the forearm and neck accommodate BCI hardline connections used during augment-adjacent surgical procedures, where the surgeon's neural interface must sync with the patient's chrome.\n\nThe MedCore set is designed with geneware accommodation as a baseline feature: the waistband includes a pre-cut tail slot reinforced with sealed edging, the hood option has molded horn-clearance inserts, and the fabric's stretch coefficient is high enough to accommodate fur-bearing limbs without restricting circulation. Lazarus supplies these scrubs at subsidized rates to licensed practitioners but sells them commercially to clinics operating outside the Lazarus network — at a significantly higher markup. In underfunded Tier 1 and 2 clinics, worn-out MedCore scrubs held together with nano-adhesive patches are a common sight, second and third owners of a garment meant to last one surgical rotation.",
+  "tier_availability": "All tiers",
+  "price": "Φ85",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The pale blue-green of Lazarus scrubs is one of the most universally recognized colors in M88. In Tier 1 zones where Lazarus clinics operate on skeleton budgets, a person in MedCore scrubs commands a kind of informal authority — they're someone who can help. In higher tiers, the same scrubs might mark someone as overworked, underpaid, or both.",
+  "story_hooks": [
+    "A Shelf surgeon is performing unlicensed augment procedures using legitimate Lazarus scrubs and equipment — Lazarus wants the practice shut down, but the community the surgeon serves has no other options.",
+    "A batch of MedCore scrubs distributed to a Tier 1 clinic has an anomalous electrostatic signature — someone has modified the anti-bacterial charge to also disrupt nearby diagnostic equipment.",
+    "A patient recognizes their surgeon's scrubs as the same set worn during a procedure they have no memory of — a procedure not listed in their medical record."
+  ],
+  "tags": [
+    "medical",
+    "lazarus",
+    "surgical",
+    "biohazard_rated",
+    "aug_compatible",
+    "geneware_compatible",
+    "scrubs",
+    "all_tiers",
+    "bci_compatible",
+    "electrostatic"
+  ],
+  "id": "ea964a9803e941f49b4561baf6e1308e",
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

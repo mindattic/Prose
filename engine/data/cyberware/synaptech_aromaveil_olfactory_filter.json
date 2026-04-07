@@ -1,0 +1,55 @@
+{
+  "id": "a3f82c1d9e4b7065f2a18c3d5e9b047f",
+  "name": "SynapTech AromaVeil Olfactory Filter",
+  "brand_name": "SynapTech",
+  "product_name": "AromaVeil",
+  "type": "cyberware",
+  "aliases": [
+    "the nose job",
+    "sniffer chip",
+    "veil",
+    "scent gate",
+    "the filter"
+  ],
+  "category": "sensory",
+  "body_location": "nasal submucosal — bilateral olfactory epithelium surface nodes",
+  "description": "The AromaVeil is a pair of micro-thin neuromodulatory mesh patches bonded directly to the olfactory epithelium via endoscopic nasal installation. Each patch contains several hundred chemoreceptor-adjacent signal nodes that intercept olfactory nerve impulses before they reach the bulb, applying a firmware-defined filter profile in real time. Users configure scent preferences through the SynapTech Sense companion app — suppressing specific molecular signatures (sulfur compounds, ammonia, decay volatiles) while allowing or amplifying others (food aromatics, florals, personal preference profiles). The system does not block smell wholesale; it performs selective molecular gating with sub-millisecond latency, meaning the user's subjective experience remains natural rather than numbed. Three standard filter modes ship with the device: Commute Mode (urban odor suppression), Home Mode (neutral baseline), and Enhance Mode (amplifies pleasant aromatics up to 40% above baseline sensitivity).\n\nFor the roughly sixty percent of Meridian 88 residents who live in Tier 1 or Tier 2 zones — where transit corridors, waste processing infrastructure, and dense housing produce chronic olfactory stress — the AromaVeil is less a luxury than a quality-of-life correction. Shelf residents especially report that commuting without one is a grinding daily misery, and the implant is among the most commonly gifted items for coming-of-age milestones in working-class families. Food service workers use Enhance Mode to heighten their professional sensitivity to ingredient quality; parents use it to manage the ambient realities of raising children in small apartments. The device has no display, no external component, and no visible indicator — it is entirely invisible to others, which contributes to its reputation as one of the most quietly adopted implants in the city.",
+  "manufacturer": "SYNAPTECH SENSORY SYSTEMS CORPONATION",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or licensed pharmacy kiosk; endoscopic nasal procedure, approximately 25 minutes per side, local anesthetic only",
+  "rejection_risk": "Minimal",
+  "maintenance": "Annual firmware update via clinic uplink or home NFC pad; mesh patches rated for 8-year service life before optional replacement",
+  "specifications": "{\"filter_profiles\": \"up to 48 user-defined scent gates\", \"amplification_range\": \"0.1x to 1.4x baseline sensitivity\", \"latency\": \"<2ms signal interception\", \"power_source\": \"passive thermoelectric harvesting, body heat\", \"app_connectivity\": \"SynapTech Sense companion app, Bluetooth mesh\", \"patch_dimensions\": \"18mm x 6mm bilateral\", \"rated_service_life\": \"8 years\"}",
+  "side_effects": [
+    "Mild phantom scent episodes during first-week calibration (most commonly reported: burnt toast, rain, artificial citrus)",
+    "Occasional brief olfactory dropout lasting 1-3 seconds during heavy filter switching",
+    "Some users report reduced appetite during Commute Mode if food aromas are over-suppressed",
+    "Rare post-installation sinus pressure for 48-72 hours as tissue settles around mesh patches"
+  ],
+  "cultural_context": "The AromaVeil occupies an interesting middle space in Meridian 88's implant culture — it is common enough to be unremarkable, but its prevalence is highest in lower tiers, which means upper-tier residents sometimes associate it with hardship rather than preference. On the Shelf, asking someone if they have their veil in is as natural as asking if they have their transit pass. In Tier 3 and above, the same implant is reframed as a sensory refinement tool — the same hardware, different marketing language. Restaurants in Tier 4 districts have begun offering 'AromaVeil-aware' menus that explicitly design dishes for users running Enhance Mode, treating the implant's amplification capabilities as a feature rather than a filter. There is a small but vocal community of olfactory purists who reject the device on philosophical grounds, arguing that unmediated smell — including the bad — is part of authentic urban experience. They are, predictably, mostly from tiers that can afford to find authenticity charming.",
+  "known_users": [
+    "Tier 1 and Tier 2 residents who commute through industrial or transit-heavy corridors",
+    "Food service workers and professional tasters who use Enhance Mode for quality assessment",
+    "Parents with young children in small-footprint apartments",
+    "Sanitation and waste management workers for whom it is effectively occupational equipment",
+    "Hospitality and service industry staff in client-facing roles"
+  ],
+  "story_hooks": [
+    "A rogue firmware update pushed to all AromaVeil units in a Tier 2 district begins amplifying a specific chemical signature — one that turns out to be the trace compound of a slow-release environmental toxin being vented from a nearby Corponation facility, effectively making thousands of residents involuntary sensors for a contamination event someone powerful wants buried.",
+    "A character with an AromaVeil running Enhance Mode catches a scent profile at a crime scene that doesn't match the official account — the specific aromatic signature of a Tier 5 perfume house exclusive, in a location where no one from that tier should have been.",
+    "The SynapTech Sense app's cloud filter library is breached and tens of thousands of users have their personal scent preference profiles leaked — intimate data that reveals medical conditions, dietary habits, and relationship patterns that people never imagined anyone could read from smell preferences."
+  ],
+  "street_price": "Φ340",
+  "licensed_price": "Φ780",
+  "tags": [
+    "cyberware",
+    "sensory",
+    "lifestyle",
+    "olfactory",
+    "filter",
+    "mass-market",
+    "quality-of-life"
+  ],
+  "parent_corponation": ""
+}

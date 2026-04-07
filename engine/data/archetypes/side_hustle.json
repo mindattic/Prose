@@ -1,0 +1,34 @@
+{
+  "id": "a6300057d3ec69b182a01871ed2e76ad",
+  "name": "Side Hustle",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Always running a secondary operation alongside their primary obligations",
+  "behavioral_signature": "Doing something else on company time with impressive stealth",
+  "under_stress": "Side hustle and main job collide and both suffer",
+  "at_rest": "Building the thing they actually care about in stolen moments",
+  "will_always": [
+    "have something else going on"
+  ],
+  "will_never": [
+    "give their full attention to just one thing"
+  ],
+  "unless": [
+    "the main gig becomes the passion project"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Plate Spinner",
+      "threshold": 0.65,
+      "context": "divided attention"
+    }
+  ],
+  "opposite_of": [
+    "Workaholic"
+  ],
+  "tags": [
+    "dual_purpose",
+    "stealth",
+    "entrepreneurial"
+  ]
+}

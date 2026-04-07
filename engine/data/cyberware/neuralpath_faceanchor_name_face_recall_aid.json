@@ -1,0 +1,57 @@
+{
+  "id": "5b1e8d3a7f294c06e2b5d9f1c3a70e82",
+  "name": "NeuralPath FaceAnchor Name & Face Recall Aid",
+  "brand_name": "NeuralPath",
+  "product_name": "FaceAnchor",
+  "type": "cyberware",
+  "aliases": [
+    "the rolodex",
+    "nametag",
+    "face file",
+    "the anchor",
+    "who's who"
+  ],
+  "category": "social",
+  "body_location": "cranial — single processor node at the right fusiform gyrus region, with retinal sensor integration",
+  "description": "The FaceAnchor implant sits at the intersection of memory augmentation and social navigation. A compact processor node implanted adjacent to the fusiform face area of the right temporal lobe intercepts and augments the brain's own face recognition processing, logging facial geometry data from the user's visual field and cross-referencing it against a private encrypted personal contact database built up over time through use. When the user encounters someone they have met before, the system delivers a smooth, low-latency memory prompt — not an AR overlay, but a felt sense of recognition coupled with a soft peripheral text tag at the edge of vision: the person's name, the context of last meeting, any notes the user has attached. New faces can be tagged in real time through a brief intentional eye-focus gesture, prompting the system to log the face and accept a subvocal or app-entered name and note. The database is stored locally with optional encrypted mesh backup, and is never shared with third-party servers — NeuralPath made this commitment explicit after the privacy controversies that sank two competitor products in the early 2180s.\n\nThe FaceAnchor is one of those implants that users describe as immediately indispensable after the first week. The use cases are broad: professionals who attend high-volume networking events and need to remember 200 names; people with prosopagnosia or face-blindness conditions for whom the implant is fully assistive; anyone who has ever stood at a party next to someone whose name they absolutely cannot retrieve. In large urban environments like Meridian 88, where a person's social and professional network might span thousands of loose connections, the cognitive labor of maintaining those connections without assistance is genuinely significant. The FaceAnchor offloads that labor almost entirely. Users often report that it changes how they approach social situations — the low-grade anxiety of not remembering someone, and the small social harm that causes, simply disappears.",
+  "manufacturer": "NEURALPATH INTERFACE SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic; local anesthetic; 60-minute procedure; 10-day calibration period during which the system builds baseline face geometry processing",
+  "rejection_risk": "Minimal",
+  "maintenance": "App-based database management; firmware updates quarterly; annual node check recommended; no battery replacement — passive neural bioelectric draw",
+  "specifications": "{\"face_geometry_resolution\": \"2,840-point mesh per face\", \"recall_latency\": \"under 200ms from visual acquisition\", \"database_capacity\": \"unlimited local storage, encrypted\", \"backup\": \"optional encrypted mesh backup, user-controlled\", \"prompt_delivery\": \"peripheral visual text tag plus felt-recognition neural signal\", \"tagging_gesture\": \"intentional 1.5-second eye focus\", \"node_size\": \"7mm diameter\", \"power_source\": \"neural bioelectric passive draw\", \"third_party_sharing\": \"none — local only by default\"}",
+  "side_effects": [
+    "During calibration, some users experience a brief disorienting 'double-recognition' sensation when meeting familiar faces — the system and the brain's natural recognition arrive at slightly different latencies",
+    "Occasional false positives — the system flags a stranger as known when facial geometry is close to someone in the database; users learn to verify",
+    "A small number of users with existing strong natural face memory report the implant feeling redundant and slightly intrusive for the first month before finding its utility in note-keeping",
+    "Rare: vivid social dreams during calibration as the system integrates with natural memory consolidation processes"
+  ],
+  "cultural_context": "The FaceAnchor is one of the most socially accepted implants in Meridian 88 — in Tier 2 and 3 environments, asking whether someone has a FaceAnchor is like asking whether they use a calendar app. The privacy architecture NeuralPath built into the product — explicit local-only storage, no third-party data access, user-controlled backup — was a deliberate response to the scandals around earlier competitors and has made it the trusted default. There is a minor etiquette question that comes up occasionally: if someone uses a FaceAnchor to remember details about you that you've told them only once, in passing, months ago, is that intimacy or is it a kind of performance of intimacy? Most people have settled on not caring, but the question surfaces in enough cultural commentary that it's a recognized conversation. For people with prosopagnosia or neurological conditions affecting face memory, the FaceAnchor is simply part of how they move through the world, and its Unrestricted status and accessible price point mean it's available to Tier 1 users who need it.",
+  "known_users": [
+    "Professionals in high-volume networking fields — sales, politics, community organizing, hospitality",
+    "People with prosopagnosia or neurological face-memory conditions",
+    "Elderly users experiencing age-related name recall difficulty",
+    "Social workers and case managers handling large client rosters",
+    "Anyone in a role where remembering constituents, clients, or community members is professionally important",
+    "People with general social anxiety around name recall"
+  ],
+  "story_hooks": [
+    "A player character's FaceAnchor logs a face in a crowd during a routine social event — and when they review the tag later, they realize the person's face matches someone who should, according to official records, be dead.",
+    "Someone is targeting people with FaceAnchor implants — not for the hardware, but because a security vulnerability in an older firmware version means their private contact databases can be silently exfiltrated, exposing the full social network of hundreds of users.",
+    "A witness claims they don't recognize the suspect at all — but their FaceAnchor log, subpoenaed by investigators, shows a recognition event with a timestamp that places them in the same room as the suspect three weeks before the incident."
+  ],
+  "street_price": "Φ220–Φ380 depending on storage and backup options",
+  "licensed_price": "Φ580 at NeuralPath authorized outpatient clinics",
+  "tags": [
+    "cyberware",
+    "social",
+    "lifestyle",
+    "memory",
+    "face-recognition",
+    "assistive",
+    "networking",
+    "tier1-3"
+  ],
+  "parent_corponation": ""
+}

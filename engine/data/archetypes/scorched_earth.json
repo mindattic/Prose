@@ -1,0 +1,34 @@
+{
+  "id": "7b0eb69aa2f9a51f12aca652e1949881",
+  "name": "Scorched Earth",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Survives by ensuring nothing useful remains for anyone pursuing them",
+  "behavioral_signature": "Everything behind them is ash, slag, or corrupted data",
+  "under_stress": "Destroys things they still need in the panic to leave nothing",
+  "at_rest": "Preparing demolition plans for every place they occupy",
+  "will_always": [
+    "burn their trail"
+  ],
+  "will_never": [
+    "leave something intact that could be used to track them"
+  ],
+  "unless": [
+    "someone they care about needs what they'd destroy"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Destroyer",
+      "threshold": 0.7,
+      "context": "tactical destruction"
+    }
+  ],
+  "opposite_of": [
+    "Cache Builder"
+  ],
+  "tags": [
+    "destruction",
+    "trail_erasure",
+    "scorched_earth"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "71d4a09c3e8f2b150c6d7a4e9f1b8230",
+  "name": "Strikeshield Dynamics BDA-9 Blast Disposal Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Bulky, olive-drab full-body blast attenuation suit with articulated composite panels over a shear-thickening fluid underlayer. The outer shell is matte-finished boron carbide over polycarbonate, with a distinctive quilted appearance from the fluid-pack underlayer beneath. Helmet is integrated, full-face, with heads-up display and filtered external audio. Weighs 34 kilograms unassisted.\n\nMost BDA-9 wearers use a lightweight servo-assist undersuit — sold separately. The suit accommodates spinal rigs and neural ports but requires pre-fitting for any significant chrome augmentation. Tier 3-4 municipal bomb disposal units use it; black-market versions stripped of the tracking transponder show up occasionally on Shelf fixers.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "boron carbide composite panels",
+    "shear-thickening fluid underlayer",
+    "polycarbonate outer shell",
+    "integrated HUD visor",
+    "ballistic-rated throat seal"
+  ],
+  "functionality": "Rated for fragmentation and overpressure up to 15kg TNT equivalent at 3-meter standoff. Shear-thickening fluid layer hardens on impact. Integrated HUD displays threat-assessment BCI feed and structural integrity sensors. Filtered audio allows communication while muffling blast wave. Transponder logs location and suit integrity data to central dispatch in real time.",
+  "what_it_says": "Someone decided your life is worth more than the cost of this suit — or you stole it because you had no choice.",
+  "worn_by": [
+    "municipal bomb disposal technicians",
+    "corporate security EOD specialists",
+    "black-market Shelf operators",
+    "Tier 3-4 law enforcement"
+  ],
+  "manufacturer": "Strikeshield Dynamics (licensed corponation contractor)",
+  "price_range": "Φ 12,000–Φ 18,500 (black market stripped units Φ 3,000–Φ 5,000)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A BDA-9 with its transponder removed turned up on a Shelf fixer — the suit's integrity log still contains encrypted data from its last authorized deployment, and someone wants it erased.",
+    "A Tier 3 disposal tech discovers her suit's real-time location feed has been accessed by a private corponation account, not her employer — she's been surveilled on every job for two years.",
+    "The shear-thickening fluid in a batch of BDA-9 suits has been diluted during manufacture; the suits will pass visual inspection but fail under live blast conditions."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "blast-disposal",
+    "eod",
+    "industrial",
+    "law-enforcement",
+    "tier3",
+    "tier4",
+    "full-enclosure"
+  ],
+  "parent_corponation": ""
+}

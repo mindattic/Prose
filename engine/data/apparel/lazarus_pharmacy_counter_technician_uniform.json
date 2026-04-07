@@ -1,0 +1,35 @@
+{
+  "name": "Lazarus Pharmacy Counter Technician Uniform",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "medical_service",
+  "manufacturer": "Evergreen Wellness",
+  "description": "Worn by Lazarus pharmacy counter staff in licensed dispensary locations across Tier 2 through Tier 4 districts, this uniform is designed to communicate cleanliness, authority, and approachability in equal measure. A fitted white tunic with a mandarin collar sits over matching straight-leg trousers, both in an antimicrobial polyester-cotton blend that resists contamination from common pharmaceutical compounds. The Lazarus green cross is embroidered at the left chest. A sealed medication-grade pocket runs along the right thigh with a tamper-evident zipper. Subdermal implant clearance is built into the shoulder and forearm panels, and the collar has a small BCI port notch for inventory and dispensing system integration. The fabric self-cleans under UV light, which most Lazarus facilities cycle every six hours.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ95",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The white Lazarus tunic is one of the most recognized uniforms in M88. For many Tier 1 and Tier 2 residents, a Lazarus counter tech is the closest thing to accessible medical care they'll see. The uniform carries a weight of institutional trust that individual technicians sometimes find hard to live up to, and occasionally weaponize.",
+  "story_hooks": [
+    "A counter tech has been quietly swapping legitimate prescriptions with placebos for patients flagged in the Ouroboros insurance database — and using the sealed thigh pocket to remove the real medication.",
+    "A player needs access to a specific pharmaceutical compound and must either befriend, bribe, or impersonate a Lazarus counter tech.",
+    "The UV self-cleaning cycle in a particular Lazarus branch has been modified to also degrade certain augment-related compounds, affecting the medication of specific cyberware users."
+  ],
+  "tags": [
+    "lazarus",
+    "pharmacy",
+    "medical",
+    "counter",
+    "technician",
+    "antimicrobial",
+    "augment_compatible",
+    "bci_compatible",
+    "tier2",
+    "tier3",
+    "healthcare"
+  ],
+  "id": "45ea4d4940064fce95757e95c23a651e",
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

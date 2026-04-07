@@ -1,0 +1,42 @@
+{
+  "id": "c5a3f0e2d8b1749c5a3f0e2d8b17e49c",
+  "name": "Pragma Systems Field Polo",
+  "type": "apparel",
+  "category": "top",
+  "description": "A three-button short-sleeve polo in Pragma Systems' corporate grey-blue, with the company's geometric hexagon mark embroidered in white on the left chest. Cut in a relaxed fit to accommodate a range of body types and augmentation profiles — the shoulder and upper arm seams are double-reinforced with a gusseted construction that gives room without looking sloppy. The fabric is a durable synthetic piqué that holds its color through industrial washing and resists minor chemical splash.\n\nDistributed to Pragma field technicians, infrastructure maintenance crews, and on-site support staff. Wearing one in the field means you're Pragma — or you want people to think you are. The polo is unremarkable in every intentional way: visible enough to identify you as staff, anonymous enough that nobody looks twice. Thousands of them exist across the city. Counterfeits are trivially easy to produce, which is both a problem and, for certain people, a useful feature.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synthetic piqué",
+    "chemical-resistant treatment",
+    "embroidered logo",
+    "gusseted shoulder construction"
+  ],
+  "functionality": "",
+  "what_it_says": "I work for Pragma. Or I need you to think I do.",
+  "worn_by": [
+    "Pragma Systems field technicians",
+    "infrastructure workers",
+    "social engineers",
+    "anyone running a Pragma impersonation"
+  ],
+  "manufacturer": "Pragma Systems (internal supply / Daltex Uniform Manufacturing)",
+  "price_range": "Φ28",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character acquires a Pragma polo and uses it to access a restricted infrastructure node — the shirt gets them through two checkpoints before someone notices the embroidery thread color is slightly wrong.",
+    "A Pragma field tech is found dead in a Shelf district, still in uniform — his crew ID is missing but the shirt is intact.",
+    "Someone is selling counterfeit Pragma polos on the Shelf for Φ8 each — the buyer pool is more interesting than the seller realizes."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 2",
+    "polo",
+    "corporate uniform",
+    "pragma systems",
+    "workwear",
+    "field tech"
+  ],
+  "parent_corponation": ""
+}

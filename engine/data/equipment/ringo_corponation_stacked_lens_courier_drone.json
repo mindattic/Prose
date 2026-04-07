@@ -12,7 +12,7 @@
   ],
   "category": "vehicle",
   "description": "The Stacked Lens Courier Drone is a mid-weight autonomous delivery platform built around Ringo Corponation's proprietary multi-aperture optical navigation system — a ring of seven overlapping wide-angle lenses that constructs a continuous 340-degree environmental model updated at 60 frames per second. Unlike conventional drones that rely primarily on LIDAR or GPS, the Stacked Lens uses passive optical triangulation, making it highly resistant to signal jamming and capable of navigating GPS-dark zones such as the Sub-Verge tunnels, shielded corporate campuses, and the electromagnetic noise floors of the Slag Markets. The drone's body is a flattened ovoid roughly the size of a carry case, suspended beneath a contra-rotating six-rotor assembly that minimizes acoustic signature while maintaining lift stability in Meridian 88's variable corridor wind conditions.\n\nThe drone's most distinctive feature is its adaptive payload cradle — a reconfigurable internal bay that uses the same tensioned band technology found in Ringo Corponation's logistics packaging line. The cradle reads payload weight and geometry on loading and redistributes its internal tension bands to create a custom-fitted, shock-absorbing housing for whatever is placed inside. This makes the Stacked Lens suitable for fragile, irregular, or sensitive cargo that standard drones would damage in transit. A secondary external hardpoint allows attachment of a standardized cargo module for bulk runs, though this significantly increases acoustic signature and reduces maneuverability.\n\nThe Stacked Lens occupies a middle ground in Meridian 88's drone ecosystem: too large and expensive for casual personal use, too commercially available for exclusive corporate deployment. It is the workhorse of independent courier networks, mid-tier logistics contractors, and — with firmware modifications — a favored platform for runners moving sensitive packages through signal-contested terrain.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Bright Block Childcare",
   "tier_availability": "Tier 2+",
   "legality": "Restricted",
   "base_technologies": [
@@ -64,7 +64,7 @@
     "dark",
     "escape",
     "drone",
-    "fire",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

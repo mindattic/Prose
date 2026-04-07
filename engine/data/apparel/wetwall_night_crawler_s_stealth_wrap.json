@@ -1,0 +1,50 @@
+{
+  "id": "2b7e4a0f1d9c36857e4b2a0f8d1c9e35",
+  "name": "Wetwall Night Crawler's Stealth Wrap",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Everything about this outfit is built around moving through the Shelf after dark without being seen, heard, or remembered. The foundation is a skin-close base layer in dark navy, barely distinguishable from black, in a moisture-wicking weave that's been hand-dyed unevenly — the dye job is amateur but effective, breaking up any reflective sheen. Over that: a long-sleeved pullover in matte dark gray, the neck cut low and wide enough to pull up over the nose, the cuffs long enough to cover the wrists entirely. The outer layer is a deconstructed hooded jacket, its original shape somewhere between a coach's shell and a rain anorak, now cut down, re-seamed, and fitted with a series of interior pockets accessible through hidden slits — one at the chest, two at the lower hem, one inside each sleeve near the wrist. The hood is deep and can be cinched to a narrow oval around the face. The whole jacket is treated with a matte-finish waterproofing compound that kills any surface sheen. Trousers are slim-fit in heavy black cotton twill, the inner ankle seams reinforced with self-repair tape to prevent snagging. Boots are soft-soled, mid-ankle, in worn synthetic suede that's been re-dyed black — near-silent on most Shelf flooring, with a thin but grippy rubber sole. Thin knit gloves in charcoal complete the set. There is nothing reflective anywhere on this outfit. No hardware, no exposed metal, no pale thread.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "moisture-wicking hand-dyed base layer",
+    "matte dark gray cotton-blend pullover",
+    "matte-treated synthetic shell fabric",
+    "heavy black cotton twill",
+    "self-repair tape",
+    "soft synthetic suede",
+    "thin knit wool-blend",
+    "matte waterproofing compound"
+  ],
+  "functionality": "Full matte treatment eliminates reflective signature in low-light environments. Deep hood and face-covering collar allow near-complete concealment without additional gear. Hidden interior pocket system distributes carried items close to the body, reducing profile and sound. Soft-soled boots minimize footfall noise. Moisture-wicking base layer manages heat during sustained movement.",
+  "what_it_says": "This person does not want to be seen. Whether that's survival pragmatism, profession, or necessity is left entirely open — but the level of deliberate care in eliminating every reflective surface says this is not accidental. They move at night, they move quietly, and they've thought about it.",
+  "worn_by": [
+    "Shelf information runners",
+    "unlicensed couriers",
+    "squatters navigating CorpSec patrol routes",
+    "Shelf-based fixers",
+    "anyone who survives by being overlooked"
+  ],
+  "manufacturer": "Jacket is heavily modified from a PolyRoute surplus shell; remaining pieces are Shelf market finds, hand-dyed and self-treated",
+  "price_range": "Φ15–Φ30 assembled",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The hidden wrist-sleeve pocket contains something the wearer was paid to deliver three days ago and hasn't been able to — the recipient has gone dark and the client is getting impatient.",
+    "A Tier 2 CorpSec surveillance upgrade has added thermal imaging to the Shelf's eastern corridor — and this outfit, optimized for visible-light concealment, offers no protection against it.",
+    "Another night-runner recognizes the specific matte-treatment smell — it's a formula only one person on the Shelf makes, and that person disappeared two weeks ago."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "stealth",
+    "night_movement",
+    "concealment",
+    "runner",
+    "self_modified",
+    "matte_treated",
+    "no_hardware"
+  ],
+  "parent_corponation": ""
+}

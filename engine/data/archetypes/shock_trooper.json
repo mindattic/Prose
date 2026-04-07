@@ -1,0 +1,34 @@
+{
+  "id": "593cf4cfcdeee16d5cd3b534bc115a47",
+  "name": "Shock Trooper",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Hits first, hits hard, overwhelms before the enemy can organize",
+  "behavioral_signature": "The fight is over before most people realize it started",
+  "under_stress": "Charges in without assessing, gets overwhelmed by prepared defenses",
+  "at_rest": "Maintaining readiness for instant explosive action",
+  "will_always": [
+    "strike fast and hard"
+  ],
+  "will_never": [
+    "wait when they could act"
+  ],
+  "unless": [
+    "intelligence suggests a trap that speed won't overcome"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Vanguard",
+      "threshold": 0.8,
+      "context": "first strike"
+    }
+  ],
+  "opposite_of": [
+    "Tactician"
+  ],
+  "tags": [
+    "speed",
+    "violence",
+    "initiative"
+  ]
+}

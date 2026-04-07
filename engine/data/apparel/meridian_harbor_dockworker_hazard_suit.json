@@ -1,0 +1,36 @@
+{
+  "name": "Meridian Harbor Dockworker Hazard Suit",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "heavy_industrial_dockwork",
+  "manufacturer": "Harborline Industrial Wear",
+  "description": "Meridian 88's port district processes cargo from across the continental network, including sealed containers from the irradiated shipping corridors of the former mid-Atlantic coast. The Harborline Hazard Suit is the standard-issue garment for dockworkers certified to handle Tier 2 and 3 radiation-risk cargo. The exterior shell is a lead-composite-fiber weave — lighter than traditional radiation shielding by about 60%, achieved through molecular-scale lead particle distribution — combined with a chemical-resistant outer laminate rated for most industrial solvents and biological runoff. The suit is a full-body coverage design with integrated hood, sealed cuff rings for glove attachment, and a positive-pressure collar seal. Color is a distinctive deep teal, chosen for its visibility against the grey concrete and rust of dock environments, with Harborline's anchor-and-circuit logo at the back.\n\nThe suit is built for the physical demands of dock labor: articulated joints at the knee, hip, and shoulder that don't restrict movement during heavy lifting, and reinforced knee and shin panels for crane-cab climbing. BCI port access is sealed behind a twist-lock cover to maintain suit integrity. Geneware accommodation is extensive — the dock workforce has significant geneware diversity, and Harborline's design reflects this, with tail-sealed rear seams, adjustable hood geometry for horn configurations, and stretch-panel integration at the back for early wing-stage modifications. The suit requires decontamination scan after each use in Tier 2 or higher cargo zones; workers who skip this step are subject to significant fines, a rule enforced unevenly depending on shift supervisor.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ310",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "Dockworkers in the Harborline suit occupy a specific niche in M88's labor culture — they handle cargo that nobody else is cleared to touch, from zones that most of the city pretends don't exist anymore. The teal suit is associated with a workforce that is highly organized, politically active, and aware that what they move through the port shapes the city's economy in ways that are rarely acknowledged.",
+  "story_hooks": [
+    "A decontamination scan flags a sealed container for elevated radiation, but the manifest lists it as processed textile goods — someone is shipping something through the port using falsified cargo documentation.",
+    "A dockworker's hazard suit decontamination log shows they were scanned clean after handling a container that was later found to contain biologically active material — either the suit failed, or the scanner was tampered with.",
+    "A Harborline suit is recovered from a Shelf district far from the port, still sealed and still registering trace radiation from a cargo classification that's officially embargoed from Meridian 88's port entirely."
+  ],
+  "tags": [
+    "industrial",
+    "dockwork",
+    "radiation_shielded",
+    "harborline",
+    "hazmat",
+    "heavy_industry",
+    "aug_compatible",
+    "geneware_compatible",
+    "tier2",
+    "tier3",
+    "port",
+    "cargo"
+  ],
+  "id": "66af508095a54116bfb041ad254018d9",
+  "parent_corponation": ""
+}

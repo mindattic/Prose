@@ -1,0 +1,56 @@
+{
+  "id": "5e8d1a30f742c96b2d03e5871b4f7c82",
+  "name": "NeuralPath EasePoint Chronic Pain Implant",
+  "brand_name": "NeuralPath",
+  "product_name": "EasePoint",
+  "type": "cyberware",
+  "aliases": [
+    "the quieter",
+    "pain zero",
+    "nerve kill",
+    "the ease",
+    "dull chip"
+  ],
+  "category": "health",
+  "body_location": "spinal — epidural placement at the thoracic or lumbar vertebral level depending on pain origin; secondary subdermal wrist node for user control",
+  "description": "The EasePoint is a spinal cord stimulation and nociceptive modulation implant designed for the long-term management of chronic pain conditions including neuropathy, post-injury sensitization, degenerative joint pain, and fibromyalgia-spectrum disorders. A primary electrode array is placed epidurally and delivers high-frequency electrical pulses at 10,000Hz — a frequency that interrupts pain signal transmission without producing the paresthesia (tingling sensation) associated with older spinal stimulator technology. A secondary processing node implanted subdermally at the wrist allows the user to adjust stimulation intensity across five discrete levels and to set pain threshold profiles for different activities, such as a reduced-suppression mode during physical therapy that allows the user to feel effort without debilitating pain. The device communicates with the primary array via encrypted short-range bioradio and logs pain event data for sharing with treating clinicians during follow-up appointments.\n\nChronic pain is one of the defining invisible crises of the lower tiers in Meridian 88, where physically demanding labor, poor ergonomic conditions, inadequate early injury treatment, and the cumulative stress of Shelf-level living have produced a population with disproportionately high rates of musculoskeletal and neuropathic conditions. The EasePoint is NeuralPath's answer to a population that cannot afford to stop working but cannot function through the pain. For a Tier 1 warehouse handler with degenerative lumbar disease, the EasePoint does not cure anything — but it makes the workday possible, and it makes the rest of the day livable. Clinicians who work in the lower tiers describe it as one of the most impactful interventions they offer, not because it heals but because it restores the ability to participate in daily life.",
+  "manufacturer": "NEURALPATH BIOINTERFACE CORPORATION",
+  "tier_availability": "Tier 1-3",
+  "legality": "Licensed",
+  "installation_requirements": "Requires a licensed pain management specialist or neurosurgical technician for spinal placement; outpatient procedure under regional anesthetic; wrist node is a minor secondary implant placed at the same session; full procedure approximately 2 hours with overnight observation recommended",
+  "rejection_risk": "Low",
+  "maintenance": "Annual calibration and electrode integrity check at any NeuralPath-affiliated clinic; firmware update every 12 months; battery replacement every 5–7 years (minor outpatient procedure); wrist node battery is inductive and self-replenishing",
+  "specifications": "{\"stimulation_frequency\": \"10,000Hz high-frequency (paresthesia-free)\", \"electrode_array\": \"8-contact epidural lead\", \"user_adjustment_levels\": \"5 discrete intensity profiles\", \"wireless_control_range\": \"wrist node, 15cm bioradio link\", \"pain_event_logging\": \"continuous, 90-day onboard storage\", \"battery_life_primary\": \"5–7 years\", \"device_lifespan\": \"10 years before lead replacement evaluation\", \"dimensions_primary\": \"generator 32mm x 18mm x 8mm; lead 45cm\"}",
+  "side_effects": [
+    "Mild back soreness at the implant site for two to three weeks post-installation",
+    "Occasional awareness of the stimulation as a faint warmth or pressure sensation, particularly at higher intensity levels",
+    "Some users report difficulty accurately gauging physical exertion limits, since effort-related discomfort is reduced — clinicians recommend supervised activity adjustment during the first month",
+    "Rare cases of lead migration in the first six weeks requiring a minor repositioning procedure"
+  ],
+  "cultural_context": "The EasePoint occupies a quietly dignified place in Meridian 88's social landscape. Chronic pain has long carried a stigma — the suspicion that sufferers are exaggerating, the pressure to push through, the association with weakness in physically demanding communities. The EasePoint has not entirely erased that stigma, but it has changed the conversation: having the implant signals that the pain was real enough to treat, real enough for a clinician to sign off on. In Tier 1 and 2 communities, it is common enough to be unremarkable, and workers who have it often describe a particular solidarity with others who do. There is a secondary culture around the wrist node — some users have it fitted with decorative sleeves or integrated into existing subdermal jewelry, and the subtle gesture of tapping it to adjust settings has become a recognizable social signal among people who live with managed pain.",
+  "known_users": [
+    "warehouse and dock workers with occupational spinal injuries",
+    "older residents across all tiers managing degenerative joint conditions",
+    "veterans of industrial accidents or Shelf-level violence with residual neuropathic damage",
+    "patients with fibromyalgia-spectrum diagnoses who have exhausted pharmaceutical options",
+    "anyone with a chronic pain condition that has resisted medication management"
+  ],
+  "story_hooks": [
+    "A Tier 1 labor organizer with an EasePoint is found dead, and the coroner's report notes that the device's pain suppression was set to maximum — far beyond therapeutic levels — at the time of death. The logs show someone else's authentication key was used to override the user profile.",
+    "NeuralPath releases a mandatory firmware update for all EasePoint units that includes a new 'occupational compliance mode' which subtly raises pain thresholds during registered work hours — effectively allowing employers to extract more physical labor from implanted workers. The update is buried in a terms-of-service agreement.",
+    "A player's contact — a former Shelf medic who installs EasePoints off the books for people who can't afford the licensed price — goes missing the same week a NeuralPath IP enforcement team is spotted in the district."
+  ],
+  "street_price": "Φ520–Φ780 (unlicensed installation by black-market medics: add Φ150–Φ300)",
+  "licensed_price": "Φ1,200–Φ1,800 at NeuralPath pain management clinics; partial coverage available under most Tier 2-3 occupational health plans",
+  "tags": [
+    "cyberware",
+    "health",
+    "lifestyle",
+    "pain-management",
+    "neural",
+    "spinal",
+    "medical-grade",
+    "quality-of-life"
+  ],
+  "parent_corponation": ""
+}

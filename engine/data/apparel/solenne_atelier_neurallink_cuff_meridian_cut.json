@@ -1,0 +1,47 @@
+{
+  "id": "e7a3d1f09c5b284617e8a2f4d0c9b531",
+  "name": "Solenne Atelier NeuralLink Cuff — Meridian Cut",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Broad wrist cuff in polished white gold over a titanium core, 52mm wide, set with a flush BCI interface port at the inner wrist. The outer face carries a tessellated pattern of hand-engraved geometric lines — a fusion of Yoruba adire geometry and Scandinavian knotwork, executed in negative relief so the metal catches light in shifting planes. A hairline ring of pale blue bioluminescent resin traces the port surround.\n\nWorn as both a status signal and a functional interface device. The port connects directly to Spire-tier BCI hardware, allowing seamless neural handshake with secured corporate environments without exposing a raw port.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "polished white gold over titanium core",
+    "hand-engraved negative relief surface",
+    "flush BCI interface port",
+    "pale blue bioluminescent resin inlay",
+    "hardened sapphire port cover"
+  ],
+  "functionality": "Integrated BCI port cover protects the neural interface from contamination and provides a clean hardwired handshake point for Spire-tier secure environments. Bioluminescent resin pulses faintly when an active BCI handshake is established. Sapphire port cover is rated for daily open-close cycles without wear degradation.",
+  "what_it_says": "Power doesn't need to shout — it wears its access points like jewelry.",
+  "worn_by": [
+    "Spire-tier executives",
+    "corponation board members",
+    "old-money Meridian families",
+    "power brokers who move between secured environments daily"
+  ],
+  "manufacturer": "Solenne Atelier",
+  "price_range": "Φ28,000–Φ55,000",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The BCI port on a particular cuff has been subtly modified to log handshake signatures from every secure environment it accesses — someone has been building a map of Spire-level secure zones.",
+    "A cuff surfaces at a Tier 1 pawn operation with the engraving partially filed off — whoever brought it in either stole it or was paid to disappear it.",
+    "The bioluminescent resin is sourced from a single licensed geneware cultivar; tracing the resin batch can identify exactly which Solenne production run a cuff came from — and who purchased it."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "wrist device",
+    "functional jewelry",
+    "BCI interface",
+    "tier-5",
+    "spire",
+    "solenne",
+    "aug-compatible",
+    "gene-compatible",
+    "luxury",
+    "status"
+  ],
+  "parent_corponation": ""
+}

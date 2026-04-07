@@ -1,0 +1,48 @@
+{
+  "id": "7d1f5a8c3b0e2d9f4a6c8e1b3d7f0a5c",
+  "name": "GridFeed Night Stand Vendor Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The GridFeed night cart vendor kit is a layered, weather-adapted street food uniform assembled from a mix of GridFeed franchise-issued pieces and personal additions. The base is a long-sleeve henley in deep burgundy with a GridFeed logo heat-transfer on the left chest — a stylized bowl over a power grid node. Over it goes the GridFeed-issued bistro apron: heavy-duty waxed canvas in charcoal with wide front pockets, a hanging towel loop, and a reinforced bib panel that deflects steam and hot grease. The apron strings wrap twice around the waist and tie at the front for quick removal. A sweat-resistant skull cap in matching charcoal keeps hair contained and is covered during wet weather by a wide-brim waterproof overhatch that clips to the cap's brim rail.\n\nLower body is the vendor's own choice: Goretek WorkHold tape-reinforced trousers in dark navy, worn with a canvas-weave belt and a phone-and-fob loop clipped at the left hip. The trousers have been hem-adjusted for the vendor's digitigrade geneware legs — the inner seam has been let out and the calf panels expanded with a contrasting charcoal panel by a Circuit-tier tailor, accommodating the reverse-joint structure cleanly. Footwear is the Foundry Broadfoot Work Sneaker in matte black — grippy, easy to clean, rated for eight-hour standing. The right forearm carries a thin chrome payment-reader interface mount, a common aug-addition for vendors who process Φ transactions without reaching for a terminal. The whole kit smells like five-spice and rain.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "waxed canvas",
+    "moisture-wick cotton henley",
+    "canvas weave trouser fabric",
+    "waterproof brim shell",
+    "grip rubber sole",
+    "chrome payment interface mount",
+    "heat-transfer print"
+  ],
+  "functionality": "Grease and steam-resistant waxed apron with deep storage pockets, moisture-resistant skull cap and clip-on overhatch for rain, digitigrade gene-compatible trouser modification, chrome payment reader arm mount for fast Φ transactions, easy-clean footwear for long standing shifts",
+  "what_it_says": "Someone running their own corner of the economy — small, independent-ish (franchise-affiliated, not owned), out in all weather, feeding people. The geneware trouser mod says they spent money on tailoring rather than buying new, which is a Circuit-tier calculation. The chrome payment mount says they move volume and move it fast. The apron strings tied at the front say they have done this enough that they do not think about it.",
+  "worn_by": [
+    "GridFeed franchise cart vendors",
+    "night market street food operators",
+    "independent food stall workers",
+    "Circuit-tier vendor workers with geneware modifications"
+  ],
+  "manufacturer": "GridFeed Franchise Supply (apron, logo henley, cap); Goretek (trousers); Foundry (footwear); independent tailor (trouser modification)",
+  "price_range": "Φ 160–Φ 240 (franchise-issued pieces at cost; personal items self-purchased)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The vendor's payment reader has been skimming a fraction of a Φ from each transaction for months, routing it to an account they did not set up — and the GridFeed franchise auditor arrives tomorrow.",
+    "A character who needs to disappear for a few hours takes a shift at the cart — but the regular vendor's regulars know something is wrong immediately.",
+    "The cart's location at the corner of two transit corridors makes it the perfect dead-drop point; the vendor has been passing packages without knowing what is in them."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "street_vendor",
+    "food_service",
+    "franchise",
+    "aug_compatible",
+    "gene_compatible",
+    "night_shift",
+    "weather_resistant"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,47 @@
+{
+  "id": "a3f7c2e1b84d09f6e5c3a1d7f2b8e094",
+  "name": "Veldtmann Pressline Day Crew Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A complete corponation-issued day shift uniform from Veldtmann Manufacturing. The core piece is a heavyweight charcoal synth-cotton coverall with a reinforced front zip and snap-over storm flap, stamped with the Veldtmann logo in faded white on the left chest and a sewn name patch on the right. The sleeves are cut wide at the right forearm to accommodate chrome prosthetics, with a magnetic closure cuff that seals clean around standard aug interfaces. Hi-vis orange reflective tape runs in twin horizontal bands across the chest and around both upper arms. Underneath sits a sweat-wicking thermal base layer in slate grey, visible at the collar. A rigid-shell hard hat in safety orange with a cracked brim that's been re-taped at the seam crowns the look.\n\nThe lower half features built-in knee pad channels with worn-in molded inserts, and the thighs carry three tool loops and a zip cargo pocket on the left leg reinforced with bar-tack stitching. Boots are Veldtmann Steelcap 7s — composite-toe, oil-resistant sole, black with orange heel striping that matches the coverall tape. Heavy-duty work gloves in charcoal nitrile-coated synth-leather hang clipped to a D-ring at the hip. The whole kit reads worn but maintained: clean at shift start, grimy by shift end, and built to survive both.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heavyweight synth-cotton twill",
+    "reflective polyfilm tape",
+    "nitrile-coated synth-leather",
+    "thermal moisture-wick jersey",
+    "composite toe shell",
+    "oil-resistant rubber compound",
+    "molded polypropylene knee inserts"
+  ],
+  "functionality": "Full shift coverage with thermal base layer, aug-compatible sleeve cuff with magnetic closure, integrated knee protection, tool loops, cargo storage, steel-cap foot protection, hi-vis reflective banding for hazardous floor environments",
+  "what_it_says": "This person clocks in, clocks out, and does not complain. The name patch means they are accountable to a corponation roster. The worn knee inserts and re-taped hard hat say they have been here long enough to break things and fix them. The maintained cleanliness says they have pride in the work even if not in the employer.",
+  "worn_by": [
+    "Veldtmann assembly floor workers",
+    "pressline operators",
+    "factory floor general crew",
+    "industrial shift workers across Circuit-tier manufacturing plants"
+  ],
+  "manufacturer": "Veldtmann Manufacturing — standard issue, employee-subsidized",
+  "price_range": "Φ 180–Φ 260 (subsidized at Φ 40–Φ 80 out of pocket for Veldtmann employees)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character in this uniform is found somewhere they should not be — the Veldtmann logo places them precisely, but the shift log says they clocked out six hours ago.",
+    "The name patch belongs to someone else — a dead coworker whose identity the wearer has quietly assumed to keep drawing a paycheck.",
+    "A union organizer uses the uniform's corponation branding as cover to move through a rival facility unquestioned, until someone reads the name patch."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "factory",
+    "coverall",
+    "corponation_issued",
+    "hi_vis",
+    "aug_compatible",
+    "industrial"
+  ],
+  "parent_corponation": ""
+}

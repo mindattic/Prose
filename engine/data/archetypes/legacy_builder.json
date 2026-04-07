@@ -1,0 +1,33 @@
+{
+  "id": "f23c6814bd6282c9d9b230de14f6b4da",
+  "name": "Legacy Builder",
+  "type": "archetype",
+  "category": "desire",
+  "description": "Needs to leave something behind that outlasts them",
+  "behavioral_signature": "Builds institutions, bloodlines, or works designed to survive their death",
+  "under_stress": "Sacrifices the present for a future they won't see",
+  "at_rest": "Plans in decades, builds in stone, thinks past their own mortality",
+  "will_always": [
+    "ask what survives when they're gone"
+  ],
+  "will_never": [
+    "invest in anything ephemeral"
+  ],
+  "unless": [
+    "the ephemeral thing saves someone alive right now"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Immortality Seeker",
+      "threshold": 0.8,
+      "context": "outliving death"
+    }
+  ],
+  "opposite_of": [
+    "Nihilist"
+  ],
+  "tags": [
+    "builder",
+    "future-oriented"
+  ]
+}

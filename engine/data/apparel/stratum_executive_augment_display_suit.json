@@ -1,0 +1,34 @@
+{
+  "name": "Stratum Executive Augment-Display Suit",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "suit",
+  "manufacturer": "Stratum Clothiers (Ouroboros subsidiary)",
+  "description": "Designed for mid-to-senior corponation executives who wear their augmentation as credential, the Stratum Executive suit features chrome-display panels along the left lapel and cuff — thin strips of polished composite framing the visible edge of an implanted forearm or wrist augment, treating the chrome hardware as architectural detail rather than something to conceal. The fabric is a high-thread-count polysilk blend with a faint self-correcting weave that resists wrinkling for up to 72 hours under normal use. The jacket is cut with open channels at both inner forearms and a reinforced collar stay that accommodates a cervical BCI housing without bunching.\n\nStratum is an Ouroboros subsidiary, and the suit carries that lineage — conservative, intentional, designed to project competence rather than excess. It is the default formal uniform of the Ouroboros executive floor and appears frequently at inter-corponation negotiation sessions, Arcturus contractor review meetings, and Lazarus board presentations. The chrome-display panels have become a recognizable signifier in Tier 4 formal contexts: you have augments, you are not embarrassed by them, and you paid to have them framed correctly.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ480",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "The chrome-display panel aesthetic emerged from Arcturus defense culture, where augmentation was always visible and functional. Stratum translated this into corporate formal language, normalizing the display of augment hardware in executive spaces. The suit has become a quiet power signal: executives who hide their chrome in cheaper suits are read as either ashamed of it or unable to afford the framing.",
+  "story_hooks": [
+    "A mid-level Ouroboros analyst wears a counterfeit Stratum suit with fake chrome-display panels — no actual augments — to a Tier 4 networking event, and has to maintain the fiction all evening.",
+    "The chrome-display panels on a genuine Stratum suit are found to passively log nearby BCI handshake signatures — a Vantablack-adjacent data collection function buried in the composite material.",
+    "A character inherits this suit from a deceased corponation parent and has to decide whether to wear it to the estate proceedings — and what wearing it will signal to the assembled lawyers."
+  ],
+  "tags": [
+    "suit",
+    "augment display",
+    "corporate",
+    "Ouroboros",
+    "Tier 3",
+    "Tier 4",
+    "BCI compatible",
+    "chrome panel",
+    "executive",
+    "polysilk"
+  ],
+  "id": "ffc59e4c5ca94a568173c116644f0fe4",
+  "parent_corponation": "Ouroboros Energy"
+}

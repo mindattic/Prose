@@ -1,0 +1,57 @@
+{
+  "id": "e0d3a71f5c8b240e9f1d6a3c7b05e2f8",
+  "name": "IRONLIMB Spectre SV-4 Stealth Arm",
+  "brand_name": "IRONLIMB",
+  "product_name": "Ironlimb Spectre SV-4 Stealth Arm",
+  "type": "cyberware",
+  "aliases": [
+    "The Ghost Arm",
+    "Quiet Iron",
+    "Pocket"
+  ],
+  "category": "arm",
+  "body_location": "arm",
+  "description": "The Spectre SV-4 is Ironlimb's covert operations arm, engineered with acoustic-dampened servo housings that reduce operational noise to under 18 decibels — quieter than a human heartbeat at arm's length. The forearm contains three concealed compartments: a slim-profile tool cavity rated for lock picks and bypass tools, a document/data-chip sleeve, and a spring-loaded injector housing for up to two syringes. The entire arm is signal-shielded with a Faraday-weave chassis layer, preventing electromagnetic scanning from detecting internal contents or broadcasting a cyberware signature to passive scanners.\n\nThe SV-4 is officially marketed to licensed investigators, corporate espionage consultants, and executive protection specialists, but its real customer base is well understood by anyone on the street. Ironlimb maintains plausible deniability through careful licensing language, but the arm's compartment specifications and signal-dampening capabilities make its intended use cases obvious. In the Spire tiers it's used by fixers and corporate intelligence operatives; in lower tiers it's the arm of choice for couriers who move things that shouldn't be moved.",
+  "manufacturer": "IRONLIMB",
+  "tier_availability": "Tier 2-4",
+  "legality": "Prohibited",
+  "installation_requirements": "Full shoulder disarticulation, discreet off-books surgical installation strongly advised; official installation requires licensed investigator documentation",
+  "rejection_risk": "Low — Ironlimb uses a rubberized biocompatible interface layer; Faraday weave does not interfere with neural bonding",
+  "maintenance": "Quarterly acoustic dampener servicing, compartment seal inspection, Faraday weave integrity test; all serviceable without clinic visit using field kit",
+  "specifications": "{\"arm_weight\": \"2.9 kg\", \"operational_noise\": \"<18 dB at 1 meter\", \"concealed_compartments\": 3, \"compartment_types\": [\"tool cavity 180mm x 20mm\", \"document/datachip sleeve\", \"dual-syringe injector housing\"], \"signal_shielding\": \"Faraday-weave chassis, blocks passive cyberware scanners\", \"material\": \"acoustic-dampened servo housings, rubberized biocompatible interface\", \"neural_latency\": \"9 ms\", \"grip_strength\": \"680 N\"}",
+  "side_effects": [
+    "Faraday-weave chassis occasionally interferes with the user's own neural uplink devices if worn on the same arm",
+    "Acoustic dampening requires servo housings running slightly hotter than standard, causing mild warmth detectable by thermal imaging",
+    "Compartment spring mechanisms can misfire under extreme temperature differentials, causing unexpected partial deployment",
+    "Prolonged use of signal-dampening in areas with strong EM fields causes a low buzzing sensation at the shoulder socket"
+  ],
+  "cultural_context": "The SV-4 is an open secret in Meridian's intelligence and criminal communities — officially prohibited for concealed compartments and scanner-defeat technology, but widely circulated through grey-market channels. Among fixers and couriers, 'running quiet iron' specifically means operating with a Spectre arm.",
+  "known_users": [
+    "Corporate intelligence and espionage operatives",
+    "Tier 3-4 fixers and information brokers",
+    "High-end couriers and contraband runners",
+    "Licensed private investigators (official cover)",
+    "Assassination and extraction specialists"
+  ],
+  "story_hooks": [
+    "A body is found with a SV-4 whose compartments have been professionally emptied — whatever was being couriered is now missing and multiple parties want it found",
+    "A new scanner technology claims to defeat Faraday-weave shielding; every SV-4 owner in the city suddenly has a problem",
+    "An Ironlimb engineer approaches the party claiming the SV-4's compartment specs were leaked to a hostile actor before production — every unit is compromised"
+  ],
+  "street_price": "Φ38,000",
+  "licensed_price": "Φ72,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "stealth",
+    "full-arm",
+    "concealed",
+    "prohibited",
+    "ironlimb",
+    "faraday",
+    "signal-dampened",
+    "compartments",
+    "arm"
+  ],
+  "parent_corponation": ""
+}

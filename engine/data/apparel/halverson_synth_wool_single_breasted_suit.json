@@ -1,0 +1,34 @@
+{
+  "name": "Halverson Synth-Wool Single-Breasted Suit",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "business_suit",
+  "manufacturer": "Halverson & Crane",
+  "description": "A reliable mid-tier two-piece suit in a dark charcoal or slate blue synth-wool blend, constructed with real stitched interfacing and a full canvas chest piece — an uncommon feature at this price point. Halverson & Crane have been producing this cut for thirty years with minimal changes, and that consistency is part of the appeal. The lapels are moderate, the trousers are cut straight with a slight taper, and the lining is a clean gunmetal grey that holds its shape through daily wear. It's not trying to be remarkable.\n\nThis is the suit a Tier 2 supervisor wears to quarterly reviews, a Tier 3 mid-level administrator keeps at the office for unexpected client meetings, and a Tier 2 union rep puts on when testifying before a municipal arbitration board. Augment-compatible back panel is available as a Φ15 alteration option from most Halverson retail kiosks. No geneware accommodation in the standard cut, but the trousers have modest waistband flex.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ185",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The Halverson suit is the suit of aspiration and maintenance — worn by people who are either climbing toward something or working to hold on to what they have. It signals competence and effort without signaling wealth, which in certain Tier 3 environments is exactly right. A Tier 4 person wearing one reads as deliberately understated or as someone whose fortunes recently changed.",
+  "story_hooks": [
+    "A Tier 2 union organizer has worn the same Halverson suit to every negotiation for six years — a deliberate choice to never appear to have profited from the work.",
+    "The augment-compatible back panel alteration leaves a small rectangular seam that a Tier 4 interviewer clocks immediately, filing away a data point about the candidate's economic history.",
+    "Someone finds a Halverson suit in their deceased parent's closet, still in the dry-clean bag, never worn — purchased for an occasion that never came."
+  ],
+  "tags": [
+    "suit",
+    "Tier 2",
+    "Tier 3",
+    "synth-wool",
+    "business",
+    "reliable",
+    "augment-compatible-option",
+    "formal",
+    "mid-market",
+    "aspiration"
+  ],
+  "id": "4734f849409b46da9e9fcf90c2a87de2",
+  "parent_corponation": ""
+}

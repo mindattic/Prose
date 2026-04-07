@@ -1,0 +1,34 @@
+{
+  "id": "285d4b47635be5e6052a7ceda28e9a98",
+  "name": "Shedder",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Survives by abandoning identity, possessions, and people at regular intervals",
+  "behavioral_signature": "Completely reinvents themselves every few years with no trace of the old self",
+  "under_stress": "Sheds too much and loses things they actually needed",
+  "at_rest": "Deciding what to leave behind next",
+  "will_always": [
+    "travel light in every sense"
+  ],
+  "will_never": [
+    "let attachment accumulate"
+  ],
+  "unless": [
+    "one thing proves impossible to leave behind"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Nomad",
+      "threshold": 0.75,
+      "context": "impermanence"
+    }
+  ],
+  "opposite_of": [
+    "Hoarder"
+  ],
+  "tags": [
+    "reinvention",
+    "abandonment",
+    "lightness"
+  ]
+}

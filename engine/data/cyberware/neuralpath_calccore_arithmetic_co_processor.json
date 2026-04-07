@@ -1,0 +1,57 @@
+{
+  "id": "c9e3a17f4d82b065c2e9a3f17d4b8062",
+  "name": "NeuralPath CalcCore Arithmetic Co-Processor",
+  "brand_name": "NeuralPath",
+  "product_name": "CalcCore",
+  "type": "cyberware",
+  "aliases": [
+    "the abacus",
+    "number head",
+    "calc",
+    "the ledger",
+    "brain math"
+  ],
+  "category": "cognitive",
+  "body_location": "cranial — prefrontal subdermal processor with parietal lobe interface array",
+  "description": "The CalcCore is a dedicated mathematical co-processor implant that offloads numerical computation from the biological brain to a purpose-built silicon-organic hybrid chip seated subdermally in the prefrontal region, with a passive interface array mapped to the intraparietal sulcus — the brain's primary numerical cognition zone. When the user encounters a mathematical problem, either consciously posed or arising naturally from a situation (estimating change, calculating load tolerances, reading financial data), the CalcCore intercepts the cognitive task and returns the answer as an intuitive numerical sense — not a readout, not a visual overlay, but a felt certainty, the same way a native speaker knows a sentence is grammatically wrong without parsing the rules. The chip handles arithmetic, algebra, unit conversion, statistical estimation, and compound interest calculations in real time, with optional modules for geometry, probability, and basic calculus available as licensed add-ons. Results are delivered in under 40 milliseconds.\n\nThe CalcCore's user base is one of the most socioeconomically diverse of any cognitive implant. On the Shelf, market vendors and small-scale traders use it to avoid being shortchanged in fast-moving transactions where pulling out a device would signal vulnerability. Tier 2 accountancy workers get it subsidized through employer wellness programs. University students in economics, engineering, and logistics programs treat it as standard kit, the way students in earlier centuries treated graphing calculators. What distinguishes the CalcCore experience from using an external tool is the seamlessness — there is no reaching for a device, no deliberate calculation, no moment of conscious effort. Numbers simply become legible in a way they weren't before. Users often describe the first month as 'learning to see in a new color.'",
+  "manufacturer": "NEURALPATH BIOINTERFACE SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic; 75-minute procedure; local anesthetic; same-day discharge; academic and employer group-rate programs widely available",
+  "rejection_risk": "Minimal",
+  "maintenance": "Firmware updates quarterly via NeuralPath kiosk or wireless sync; module add-ons installed remotely; processor rated for 15-year service life with no consumable components",
+  "specifications": "{\"core_functions\": [\"arithmetic\", \"unit_conversion\", \"statistical_estimation\", \"compound_interest\", \"ratio_analysis\"], \"optional_modules\": [\"geometry_pack\", \"probability_engine\", \"calculus_lite\"], \"result_latency\": \"<40ms\", \"interface_type\": \"passive parietal array, non-penetrating\", \"processor\": \"prefrontal subdermal, silicon-organic hybrid, 8mm x 5mm\", \"power\": \"metabolic glucose cell, zero external charging required\", \"academic_licensing\": \"NeuralPath EduRate available for enrolled students\"}",
+  "side_effects": [
+    "A persistent tendency to automatically calculate numerical relationships in non-mathematical contexts — noticing ratios in art, estimating crowd sizes, mentally pricing everything",
+    "Mild disorientation when performing manual arithmetic that conflicts with the implant's faster answer",
+    "Occasional 'number intrusion' during early calibration — spontaneous numerical associations surfacing during unrelated thought",
+    "Some users report reduced patience for ambiguity in non-numerical domains, a secondary behavioral shift linked to the implant's precision bias"
+  ],
+  "cultural_context": "The CalcCore carries a double reputation in Meridian 88. In professional and academic circles, it is completely standard — not having one in certain fields reads as an affectation or a disadvantage, like refusing to use a neural mesh. In street-level commerce, however, it occupies a more complex social space. Vendors and traders who use it rarely announce it; doing so in a negotiation implies you have an edge, which can either accelerate a deal or poison trust. There is a running joke on the Shelf that you can always tell who has a CalcCore by how quickly they stop counting change. In academic integrity debates, the CalcCore sits in a permanent gray zone — universities generally permit it since it cannot access external networks, but the line between cognitive aid and unfair advantage remains contested. Tier 4 financial professionals sometimes opt for more expensive proprietary systems, viewing the NeuralPath consumer model as insufficiently precise for high-stakes trading, though independent benchmarks rarely support this.",
+  "known_users": [
+    "Market traders and small-business operators across all tiers",
+    "University students in technical and financial disciplines",
+    "Logistics workers, warehouse supervisors, and supply chain coordinators",
+    "Tier 2 accountants and payroll administrators",
+    "Gamblers, bookmakers, and anyone whose livelihood depends on fast probability estimation"
+  ],
+  "story_hooks": [
+    "A character's CalcCore begins returning answers that are slightly, consistently wrong — not randomly, but in a pattern that always benefits a specific corponation's pricing algorithms, suggesting a supply-chain compromise in the firmware.",
+    "A Shelf trader who relies on their CalcCore for survival discovers the implant's optional probability module has been quietly harvesting their transaction data, building a behavioral profile sold to a credit-scoring subsidiary.",
+    "An academic integrity tribunal has subpoenaed NeuralPath's usage logs for all CalcCore implants active during a city-cert examination — and the party is hired either to protect that data or extract it."
+  ],
+  "street_price": "Φ280–Φ450 (base unit)",
+  "licensed_price": "Φ600–Φ850 at NeuralPath clinics; student EduRate: Φ390 with enrollment verification",
+  "tags": [
+    "cyberware",
+    "cognitive",
+    "lifestyle",
+    "mathematics",
+    "calculation",
+    "mass-market",
+    "prefrontal",
+    "student",
+    "commerce"
+  ],
+  "parent_corponation": ""
+}

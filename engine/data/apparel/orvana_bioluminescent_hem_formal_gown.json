@@ -1,0 +1,35 @@
+{
+  "name": "Orvana Bioluminescent Hem Formal Gown",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "formal gown",
+  "manufacturer": "Orvana Couture (TESSERA licensed fabric)",
+  "description": "Orvana's signature formal gown uses a TESSERA-licensed bioluminescent thread woven into the hem and train — living filaments that emit a slow, pulsing light in blue-white or amber tones, sustained by body heat and requiring no external power source. The gown itself is cut in heavy silk-analog with a fluid column silhouette, structured at the bodice with internal boning and a chromatic lining that catches the bioluminescent light and redistributes it upward through the fabric in a subtle gradient. A deep rear vent accommodates geneware tail modifications up to standard C-class length, and the back closure is a magnetic press-seam that adjusts automatically to wing-brace hardware or scapular augment housings.\n\nAt Tier 3-4 pricing, the Orvana gown is aspirational for the professional class and practical for the lower corporate tier. It is frequently worn to Ringo-affiliated media events, TESSERA client galas, and mid-level corponation award ceremonies. The bioluminescent hem dims after approximately 300 hours of activation and cannot be recharged — owners either resell or relegate the gown to non-luminescent occasions, which it handles with grace.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ620",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The Orvana gown marks a specific stratum of Meridian social life: people who have made it far enough to attend events with bioluminescent dress codes but are still calculating whether the purchase is worth the month it costs. TESSERA's licensing of bioluminescent thread to fashion labels has made living-light fabric accessible below Spire pricing, which has complicated what was once an exclusive status signal.",
+  "story_hooks": [
+    "The bioluminescent thread in a batch of Orvana gowns is dimming prematurely — TESSERA's licensing division is quietly investigating whether a competitor has introduced a biological inhibitor into Orvana's supply chain.",
+    "A character attends a corponation event in this gown, and the pulsing hem syncs unexpectedly with a nearby BCI broadcast — drawing attention they cannot afford.",
+    "A Tier 2 tailor acquires a damaged Orvana gown and carefully harvests the still-active bioluminescent thread for resale, piece by piece."
+  ],
+  "tags": [
+    "gown",
+    "bioluminescent",
+    "formal",
+    "TESSERA",
+    "Tier 3",
+    "Tier 4",
+    "geneware compatible",
+    "tail vent",
+    "wing compatible",
+    "silk-analog",
+    "living fabric"
+  ],
+  "id": "8fe4e8f974474f7a8ed8167aeef1f90d",
+  "parent_corponation": "Tessera Corponation"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ccf363738174982a8b46564921616c50",
+  "name": "Meridian Munitions Compact-7 'Rat Trap'",
+  "type": "weapon",
+  "aliases": [
+    "Rat Trap",
+    "The Compact",
+    "Seven"
+  ],
+  "category": "pistol",
+  "description": "The Meridian Munitions Compact-7 is a subcompact pistol designed for deep concealment, chambered in .32 ACP. The frame is a single-piece carbon composite that flexes slightly under recoil — a design feature Meridian markets as 'recoil absorption' but which shooters recognize as structural cheapness. The slide is thin stamped steel with a matte black coating that chips within weeks of regular carry.\n\nThe Rat Trap fills the niche between the absolute bottom-shelf disposables and actual defensive firearms. It is marginally more accurate than a Payday, marginally more reliable, and marginally more expensive. Office workers in lower-Mid districts carry them in ankle holsters and purse compartments, telling themselves it provides real protection.\n\nMeridian Munitions sells more Compact-7s than any other single firearm model in the lower Mids. The weapon has become so associated with anxious middle-tier workers that carrying one is sometimes used as shorthand for someone who is afraid but not afraid enough to spend real money on safety.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "Carbon composite frame",
+    "Stamped steel slide"
+  ],
+  "specifications": "caliber: .32 ACP\neffective_range: 10 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 6 rounds\nweight: 0.34 kg",
+  "tactical_use": "Deep concealment weapon for close-range self-defense. The .32 ACP round lacks stopping power against armored or augmented targets. Effective only against unarmored soft targets at point-blank range. Tactical instructors generally advise emptying the magazine and running.",
+  "cultural_context": "The Rat Trap is the butt of jokes in firearms circles and the quiet comfort of millions of lower-Mid workers who slip one into their coat pocket every morning. Its cultural position is one of quiet, slightly embarrassing pragmatism.",
+  "known_users": [
+    "Lower-Mid office workers",
+    "Commuters on high-risk transit lines",
+    "Small shop owners"
+  ],
+  "story_hooks": [
+    "A corporate accountant pulls a Rat Trap during an office hostage situation — and it jams on the first round.",
+    "Thousands of Compact-7s are being recalled due to a firing pin defect, but someone is buying up the recalled units."
+  ],
+  "ammunition_type": [
+    ".32 ACP"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "compact",
+    "concealed",
+    "cheap",
+    "common",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

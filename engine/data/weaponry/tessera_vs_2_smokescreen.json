@@ -1,0 +1,49 @@
+{
+  "id": "cb8b4c405b816447c396ceec1972d0b3",
+  "name": "TESSERA VS-2 'Smokescreen'",
+  "type": "weapon",
+  "aliases": [
+    "Smokescreen",
+    "Cloud Car",
+    "Vanish Kit"
+  ],
+  "category": "vehicle-mounted weapon",
+  "description": "A vehicle-integrated smoke and countermeasure dispensing system that deploys obscurant smoke, oil slick, caltrops, and chaff from concealed ports in a vehicle's rear bumper, side panels, and undercarriage. The VS-2 provides a comprehensive suite of pursuit denial capabilities, allowing a fleeing vehicle to create multiple obstacles for pursuing vehicles and disable both visual and electronic tracking.\n\nTESSERA designed the VS-2 as a defensive counterpart to offensive vehicle weapon systems like the VMG-4. Where the Turret fights, the Smokescreen runs — deploying countermeasures that blind pursuers, puncture tires, destroy traction, and confuse radar and infrared tracking. A full VS-2 deployment creates a 50-meter zone of obscurant smoke behind the vehicle, scattered with caltrops that defeat standard tires and slick with an oil compound that reduces road friction to near zero.\n\nThe system's electronic countermeasures are equally aggressive. The chaff dispensers scatter radar-reflective filaments that create ghost returns on pursuit vehicle sensors, and an integrated infrared flare system defeats thermal tracking. The VS-2 turns escape into an engineering problem and solves it with brute-force denial of every sensor and surface the pursuit relies on.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — vehicle countermeasure permit required",
+  "street_price": "Φ22,000 (installed, countermeasure reloads Φ3,000)",
+  "base_technologies": [
+    "Multi-spectrum obscurant smoke",
+    "Deployable caltrop dispersal",
+    "Radar and infrared countermeasures"
+  ],
+  "specifications": "smoke coverage: 50-meter obscurant zone\ncaltrop dispersal: 200 units per deployment\noil slick: 30-meter coverage area\nchaff range: 100-meter radar confusion zone\nIR flares: 8 per reload\ndeployment: Dashboard-controlled, individual or full-suite\nreload: Requires depot service",
+  "tactical_use": "Pursuit denial and escape facilitation. Operators deploy countermeasures sequentially or simultaneously based on pursuit type — smoke for visual, caltrops for wheeled, oil for traction, chaff for radar, flares for infrared. A full-suite deployment virtually guarantees escape from any single-vehicle pursuit.",
+  "cultural_context": "The VS-2 is the preferred defensive system for Meridian 88's extraction specialists and high-value couriers — people whose job requires them to run rather than fight. 'Smoking out' is slang for deploying countermeasures during a chase, and VS-2-equipped vehicles are identified by subtle reinforcement of the rear bumper that experienced operators learn to spot.",
+  "known_users": [
+    "Corporate extraction teams",
+    "High-value courier services",
+    "VIP transport operators",
+    "Criminal organizations with vehicle fleets"
+  ],
+  "story_hooks": [
+    "A VS-2 smoke deployment on a highway caused a 30-vehicle pileup that killed seven people. The vehicle deploying countermeasures was fleeing a corporate security team, and neither party will accept responsibility for the civilian casualties caught between them.",
+    "A VS-2 system has been modified to dispense an aerosolized nerve agent instead of obscurant smoke. The vehicle's rear bumper is now a chemical weapon delivery system disguised as a standard countermeasure package."
+  ],
+  "ammunition_type": [
+    "countermeasure_pack"
+  ],
+  "tags": [
+    "vehicle",
+    "weapon",
+    "countermeasure",
+    "smoke",
+    "defensive",
+    "tessera",
+    "pursuit",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

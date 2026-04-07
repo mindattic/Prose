@@ -1,0 +1,49 @@
+{
+  "id": "3e6a0d9c5f1b7248d3e6a0c9f52b1807",
+  "name": "Scaleback Recon Layering Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Lean and functional, this outfit is assembled for someone who needs to move fast, carry nothing unnecessary, and still survive the Shelf's worst conditions. The top layer is a close-cut moto-style jacket in salvaged coated nylon — originally black, now a streaky charcoal with surface cracking along the creases — with a short stand collar and asymmetric zipper, the pull replaced with a length of wire twisted into a loop. The jacket's back panel has been slit vertically along the center seam and re-closed with an industrial zipper, creating a channel that accommodates a spinal aug rig: the wearer's chrome spinal column reinforcement is visible through the gap when the back zipper is cracked open, catching light in silver-grey segments. The jacket's interior is lined with a layer of aluminized mylar cut from emergency blankets, adding thermal retention without bulk. Underneath is a fitted long-sleeve rashguard in dark olive, the collar high enough to cover the lower neck ports of the spinal rig. Below the waist, slim tactical trousers in faded black with articulated knees — clearly salvaged from a Circuit-level security uniform, the original patch locations now lighter squares where insignia were removed. A slim profile boot in synthetic leather rises to mid-calf, side-zip, with a thin lug sole; the right boot has a narrow sheath sewn into the inner shaft. On the head, a close-cropped cap in the same faded black as the trousers, worn low. Around the neck, a thin lanyard holds a cracked plastic ID card — the text worn off, the photo unrecognizable, kept for reasons the wearer hasn't explained to anyone.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged coated nylon",
+    "aluminized mylar lining",
+    "dark olive compression knit",
+    "faded tactical twill",
+    "synthetic leather",
+    "thin lug rubber soles",
+    "salvaged industrial zipper hardware",
+    "plastic lanyard and card"
+  ],
+  "functionality": "Spinal rig channel in jacket back allows full aug-rig access without disrobing. Mylar lining provides thermal retention. Articulated trouser knees allow crouching, climbing, and running without restriction. Boot sheath provides concealed carry option. High rashguard collar covers aug ports and neck hardware. Slim profile reduces snagging in tight industrial environments. Salvaged security-uniform trousers retain original reinforced construction.",
+  "what_it_says": "This is a person who has a spinal rig and isn't hiding it — but isn't advertising it either. The aug accommodation is practical, not performative. The stripped security trousers say they either worked Circuit-level security once or took these off someone who did. Either way, they know how enforcement operates, how patrols move, what to avoid. The blank ID card is a question mark that makes people slightly uneasy.",
+  "worn_by": [
+    "Shelf-side fixers and scouts",
+    "people with chrome spinal rigs who need aug-compatible everyday wear",
+    "former security or military who've fallen to Tier 1",
+    "freelance information runners"
+  ],
+  "manufacturer": "Self-assembled; trousers repurposed from Circuit security surplus",
+  "price_range": "Φ20–Φ45",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The tactical trousers still have an active RFID thread sewn into the waistband — and a Circuit-level security contractor's tracking system has just pinged them.",
+    "The spinal rig visible through the jacket's back channel is partially military-grade hardware that the wearer shouldn't legally possess, and a corponation tech just recognized the serial number.",
+    "The blank ID card on the lanyard has a microscopic data tattoo printed on its surface — readable only under UV, placed there by someone who needed a dead drop and chose the wearer's card without their knowledge."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "recon_wear",
+    "aug_compatible",
+    "spinal_rig_compatible",
+    "chrome_accommodation",
+    "tactical",
+    "salvage_fashion",
+    "fixer_adjacent"
+  ],
+  "parent_corponation": ""
+}

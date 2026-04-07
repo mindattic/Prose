@@ -1,0 +1,46 @@
+{
+  "id": "b1e4d7a09c3f258610b2d3e4f5a67891",
+  "name": "Guardian CS-7 SecureSpray",
+  "type": "weapon",
+  "aliases": [
+    "CS-7",
+    "blue guard",
+    "security juice",
+    "the warden"
+  ],
+  "category": "spray",
+  "description": "The Guardian CS-7 SecureSpray is a mid-tier dual-agent aerosol combining a 2% CS (2-chlorobenzalmalononitrile) lachrymatory compound with a 0.5% OC amplifier, suspended in a hydrofluorocarbon propellant rated for stable discharge across a temperature range of -10°C to 45°C. It is the standard-issue crowd and personal control spray for contracted security firms, private building management companies, and licensed corporate security auxiliaries operating in Tier 2 and Tier 3 zones. The canister is significantly larger than consumer-grade options — approximately 180ml — with an ergonomic overmold grip, a rotating nozzle head offering cone or stream patterns, and a tamper-evident seal ring for accountability tracking.\n\nThe CS component produces a rapid and pronounced tearing and burning response in mucosal tissue, with secondary effects including coughing, chest tightness, and disorientation. The OC amplifier extends the inflammatory response and increases effectiveness against partially augmented targets whose respiratory systems remain biological. Guardian markets the CS-7 as a 'compliance facilitation tool' in its B2B literature, and most purchasers are institutional — building security firms, transit authority contractors, and mid-tier corporate campus guards. Individual licensing is available but carries a background verification requirement.\n\nThe CS-7 has a reasonably strong reputation for reliability and consistent performance, though critics within the civil liberties advocacy space have raised concerns about its deployment in enclosed residential environments, where the CS agent can persist for several hours and affect uninvolved residents through shared ventilation systems.",
+  "manufacturer": "GUARDIAN",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — individual purchase requires personal security license; institutional purchase available under commercial security contractor registration",
+  "base_technologies": [
+    "CS lachrymatory compound",
+    "oleoresin capsicum amplifier",
+    "hydrofluorocarbon propellant",
+    "dual-pattern nozzle system"
+  ],
+  "specifications": "Primary agent: 2% CS (2-chlorobenzalmalononitrile)\nSecondary agent: 0.5% oleoresin capsicum\nPropellant: HFC-134a blend\nNet volume: 180ml\nNozzle modes: cone (3m spread) / stream (5m direct)\nEffective range: 1–5m depending on mode\nSpray duration: approx. 12 seconds continuous\nOperating temperature: -10°C to +45°C\nPrice: Φ85",
+  "tactical_use": "Used by security personnel to control individuals who are non-compliant or physically aggressive without resorting to impact weapons or conducted energy devices. The stream setting allows targeted application against a single subject at moderate range; the cone setting is used for crowd dispersal or when precise aim is not possible. Standard security doctrine calls for a one-second burst followed by a verbal compliance command, with additional bursts applied as needed. Deployment in confined spaces requires post-incident ventilation protocols.",
+  "cultural_context": "The CS-7 is known colloquially as 'blue guard' due to its blue canister livery and association with corporate security auxiliaries — the 'blue guards' who patrol Tier 2 and 3 commercial zones. Among working-class residents, being sprayed with a CS-7 is called 'getting the warden' and carries a humiliating social connotation — it implies you were compliant enough to be sprayed but not dangerous enough to be shot. Security workers view it as a mundane professional tool, like a radio or a badge scanner.",
+  "known_users": [
+    "corporate campus security auxiliaries",
+    "transit authority contractors",
+    "Tier 2–3 private building security",
+    "licensed personal protection operatives"
+  ],
+  "story_hooks": [
+    "A CS-7 canister recovered from a crime scene has a serial number that traces back to a security contractor who officially disbanded two years ago — but the canister's manufacture date is last month."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "non_lethal",
+    "security",
+    "tier2",
+    "dual_agent",
+    "aerosol",
+    "institutional"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Arcturus DX-4 'Taxidermist'",
+  "type": "automaton",
+  "classification": "Deception Platform — Corpse Manipulation",
+  "aliases": [
+    "Taxidermist",
+    "Puppet Master",
+    "The Necromancer"
+  ],
+  "manufacturer": "Raptor Aerospace Division",
+  "description": "The DX-4 is a flat, disc-shaped automaton approximately 30 centimeters in diameter and 5 centimeters thick, designed to attach to the back of a human corpse and reanimate it. The unit's underside is covered in hundreds of micro-actuator needles that penetrate the skin and interface with the target's musculoskeletal system, taking control of major muscle groups through direct electrical stimulation. The corpse stands up. The corpse walks. The corpse holds a weapon. The corpse does not know it is dead because it is not the corpse making decisions.\n\nThe DX-4 was designed for battlefield deception — reanimating fallen soldiers to create confusion about force disposition and to psychologically devastate enemy combatants who find themselves fighting people they just killed. The movement is not natural. It is close enough to pass at a distance or in poor lighting, but up close, the gait is wrong — too smooth, too mechanical, with the micro-corrections of a control system rather than the organic imprecision of voluntary movement. The face does not express. The eyes do not track. The corpse fights with the skills its muscles remember, guided by the DX-4's tactical algorithms.\n\nThe horror is not that it works. The horror is that it works well enough. A reanimated corpse can operate for approximately 48 hours before tissue degradation renders the musculature non-functional. During that window, the DX-4 can use the body to walk through allied checkpoints (the face is recognized), access secured areas (biometric scanners read dead tissue), and carry out objectives using a body that people hesitate to shoot because they know who it used to be.\n\nField reports from the corporate conflicts describe soldiers refusing to fire on reanimated comrades. They describe commanders unable to issue shoot-to-kill orders against bodies wearing their friends' faces. They describe the sound — the wet, mechanical sound of dead muscles being forced through motions they performed in life, the creak of rigor-stiffened joints being overridden by electrical impulse. One veteran described shooting a reanimated corpse and watching the DX-4 detach, skitter across the floor like a horseshoe crab, and attach itself to another body. He said it was the last thing he saw before he stopped being able to function as a soldier.",
+  "tier_availability": "Tier 5 — military black operations",
+  "legality": "Prohibited under all Meridian Accords and Geneva Convention successors — classified as desecration weapon",
+  "autonomy_level": "Semi-autonomous tactical behavior, remote mission guidance",
+  "dimensions": "30cm diameter, 5cm thick (disc form factor)",
+  "weight": "2.8 kg",
+  "power_source": "High-density battery, 48-hour operational endurance",
+  "locomotion": "Uses host corpse's musculoskeletal system — ambulatory while tissue remains functional",
+  "armament": [
+    "Host corpse manipulation (melee and firearms capability)",
+    "Rapid reattachment to new host",
+    "Psychological warfare through corpse reanimation"
+  ],
+  "sensors": [
+    "Muscle fiber integrity assessment",
+    "Environmental awareness through host's sensory organs (limited)",
+    "Tactical positioning via onboard lidar"
+  ],
+  "countermeasures": "Targeting the DX-4 disc on the host's back destroys the control system. Headshots are ineffective — the brain is not being used. Incendiary weapons render the host non-functional. The most reliable identifier is gait analysis — the reanimated movement pattern is detectable by trained observers or automated systems.",
+  "known_deployments": [
+    "Corporate conflict zones outside Meridian 88 (2190s)",
+    "One confirmed urban deployment within the city (2198, details classified)"
+  ],
+  "story_hooks": [
+    "A dead gang member has been seen walking the Shelf three days after his confirmed death — his family is hysterical, and someone needs to find out who is wearing their son like a suit",
+    "A DX-4 has been found on the black market and a fixer wants to use it for the ultimate impersonation job — walking a dead executive into a board meeting"
+  ],
+  "cultural_context": "The Taxidermist has destroyed the concept of a peaceful death in Meridian 88. Families now request cremation at unprecedented rates, not for spiritual reasons but because they are terrified of what might be done with the body. The DX-4 has turned the dead into a resource, and grief into a vulnerability that can be exploited.",
+  "tags": [
+    "automaton",
+    "corpse",
+    "reanimation",
+    "horror",
+    "arcturus",
+    "deception",
+    "psychological",
+    "tier 5",
+    "nightmare"
+  ],
+  "id": "638d57b1226bcd01d81c85ff812905d4",
+  "parent_corponation": "Arcturus Defense Solutions"
+}
