@@ -1,0 +1,43 @@
+{
+  "id": "4a1d7c5f2e8b3069d5f1a4b7e2c08d3a",
+  "name": "Solberg-Maru ShiftLayer Zip-Cuff Thermal Glove — Pair",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Fingerless thermal gloves with zip-on full-finger caps that convert them from dexterous work gloves to full cold-weather hand cover in one motion. Slate blue synthetic leather palm with a knit thermal back panel; the zip-on caps are stored rolled at the wrist when not in use. Fits over standard chrome hand augmentation with an elasticated chrome-knuckle gusset.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "synthetic leather palm",
+    "thermal knit back panel",
+    "elasticated chrome-gusset lining",
+    "YKK mini-zip finger caps"
+  ],
+  "functionality": "Zip-on full-finger caps for cold conversion; chrome-knuckle elasticated gusset for aug fit; caps stow at wrist.",
+  "what_it_says": "You need your hands free to work but you're not freezing your fingers off waiting for the temperature to make up its mind.",
+  "worn_by": [
+    "augmented technicians",
+    "market vendors",
+    "mid-level couriers",
+    "field repair workers",
+    "data entry workers with chrome hands"
+  ],
+  "manufacturer": "Solberg-Maru Precision Gear",
+  "price_range": "Φ65–Φ95",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The zip caps on the right glove are a different color than the left — a mismatched replacement that suggests the originals were lost in a hurry.",
+    "The chrome-gusset spec matches a Vansen AugMount fitting exactly, suggesting these were designed in tandem with someone else's product line."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "transitional_layering",
+    "gloves",
+    "convertible",
+    "zip_off",
+    "aug_compatible",
+    "tier_3",
+    "great_lakes_weather",
+    "fingerless"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Sociologist studying social stratification and community formation in the Shelf zones",
   "age": 52,
   "status": "active",
-  "location": "Primarily field-based in Auburn Grist and Chatham Flats; maintains a desk at the University Spine's Institute for Urban Social Research in the Meridian Core",
+  "location": "Primarily field-based in Auburn Grist and Chatham Flats; maintains a desk at the University Spine's Institute for Urban Social Research in the Meridian Core, near State and Jackson",
   "description": "Patience Aborode-Kristjánsson looks like someone who has been places and come back changed by them in ways she wears openly. She is a large, broad-shouldered woman with deep black skin and grey natural hair cut close, with reading lines around her eyes and a scar along her left jawline from an incident in the Shelf she does not discuss. Her Yoruba-Icelandic heritage is everywhere in her face — the strong jaw, the wide forehead, the surprising pale hazel of her eyes, which are the thing people remember. She wears functional clothes that can survive a twelve-hour fieldwork day and carries a physical notebook alongside her data equipment, which her graduate students treat as an affectation and which she defends loudly and regularly.\n\nShe has spent the last two decades embedded in the lower-tier communities of Meridian 88's peripheral zones — Shelf communities, reclamation zones, the edges of the city that corponation sociology tends to treat as problems to model rather than people to know. Her work has produced four books that have made her genuinely influential in academic circles and genuinely respected in the communities she studies, a combination that is rarer than it should be. She is direct, large in presence, quick to laugh and quicker to call out what she considers intellectual dishonesty. She is also, under the professional armor, a person who has seen a great deal of suffering and carried it without adequate resources for processing it.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,25 @@
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "University Spine",
+    "Chatham Flats",
+    "Meridian Core",
+    "Auburn Grist",
+    "The Reclamation Assembly",
+    "Meridian 88",
+    "Chronicle",
+    "The Shelf",
+    "The Heritage Vault",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "The Pale Mile",
+    "Hazel Brink",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "Meridian Core"
 }

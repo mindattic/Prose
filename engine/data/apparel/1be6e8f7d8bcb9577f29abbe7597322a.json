@@ -1,0 +1,38 @@
+{
+  "id": "1be6e8f7d8bcb9577f29abbe7597322a",
+  "name": "Drift Collective Upcycle Armor",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "Body armor assembled entirely from salvaged materials — flattened cans layered into scale patterns, car-door panels cut into torso plates, industrial rubber matting shaped into shoulder guards. The armor is heavy, inconsistent in protection, and unmistakably handmade. Each piece is unique and tells the story of where its materials came from.\n\nDrift Collective Upcycle Armor makes a statement louder than its protection level — it says that the wearer arms themselves from the waste stream of the economy that discards them. It is practical, philosophical, and deliberately ugly in a way that rejects Spire aesthetics entirely.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged metal",
+    "industrial rubber",
+    "repurposed vehicle panels",
+    "improvised fasteners"
+  ],
+  "functionality": "Variable protection (inconsistent), social statement, waste-stream utilization",
+  "what_it_says": "You built armor from their garbage because their garbage is all they left you, and you're still standing.",
+  "worn_by": [
+    "Drift Collective members",
+    "Shelf fighters",
+    "anti-corponation activists"
+  ],
+  "manufacturer": "Handmade (individual)",
+  "price_range": "Φ0 (built from salvage)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A set of Drift Collective Upcycle Armor stops a bullet that standard armor at twice the price would have missed — the random layering of materials accidentally created a composite that outperforms engineered solutions."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 1",
+    "Drift Collective",
+    "upcycle",
+    "DIY",
+    "armor",
+    "Shelf"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Street food stall operator — spiced protein wraps, synthetic broth, black-market spice blends",
   "age": 52,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Western and Division",
   "description": "Olamide is a broad-shouldered woman with dark amber skin mapped in old burn scars along her left forearm — souvenirs from a grease fire twenty years back that she wears without shame. Her hair is a natural silver-streaked corona she keeps pinned under a bright saffron headwrap during service, and she has cosmetic patterned irises done in deep indigo whorls that she got when her youngest turned ten, as a treat to herself. Her stall is a masterpiece of organized chaos: three burners, a recycled heat-drum, seventeen unlabeled spice jars arranged in an order only she understands, and a hand-painted sign reading SWEETMOUTH in three scripts. She moves behind the counter with the unhurried authority of someone who has never once doubted she belongs exactly where she is.\n\nShe is relentlessly sociable in the way of someone who has learned that warmth is a survival tool and then genuinely come to love it. She remembers every regular's order and their children's names and their mother's health complaints. She is also unflinching when she needs to be — she has run the same stall through two gang territory disputes and one Ferrogate Transit labor riot, serving both sides without commentary. She prays to the E.L.F. she calls Saltmother, a market-spirit she believes governs honest commerce, and leaves data-offerings of her daily transaction logs at a small shrine wired into her heat-drum.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,17 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-6 'Equalizer'",
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Ferrogate Transit",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Geartown",
+    "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
+    "Coronal Discharge Projector CDP-9 'Sunburn'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

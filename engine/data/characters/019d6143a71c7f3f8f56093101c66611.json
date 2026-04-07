@@ -12,7 +12,7 @@
   "role": "Personal security and threat neutralization — bodyguard",
   "age": 25,
   "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
   "description": "Ximena Bautista-Nwosu are compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a bodyguard out of Old Harbor, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nXimena Bautista-Nwosu have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,11 @@
   ],
   "registered_firearms": [
     "Nkomo-Lindqvist NLR-9 'Counselor'"
-  ]
+  ],
+  "related_entities": [
+    "Masquerade",
+    "The Unfinished Theorem",
+    "The Gradient Compact"
+  ],
+  "district": "Old Harbor"
 }

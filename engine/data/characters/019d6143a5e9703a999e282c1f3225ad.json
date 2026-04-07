@@ -12,7 +12,7 @@
   "role": "Graffiti artist and neon artist",
   "age": 19,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, sleeping in a rotating series of squats; works primarily along the Blackpipe Corridor",
+  "location": "Highland Park Autonomous Zone, sleeping in a rotating series of squats; works primarily along the Blackpipe Corridor, near Michigan Ave and Walton",
   "description": "Davi is slight and quick, the kind of person who seems to occupy less space than his dimensions suggest — useful when you're tagging corponation infrastructure at three in the morning. He has his mother's Nigerien cheekbones and his father's Romanian pallor, a combination that gives his face an angular quality that reads differently in different lights. His hair is grown out into a soft cloud he's bleached pale gold; he's got cat ears installed — small, tufted, matte black — that he paid for with three months of odd jobs and wears with the slightly self-conscious pride of someone whose first big purchase was purely for joy. His clothes are perpetually paint-stained in colors that don't match what he's currently working on.",
   "psychology": {
     "facet_weights": {
@@ -205,5 +205,15 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Blackpipe Corridor",
+    "Tessera Corponation",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Spires"
 }

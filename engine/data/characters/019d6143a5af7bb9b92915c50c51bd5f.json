@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and fortune teller, The Laceworks",
   "age": 27,
   "status": "active",
-  "location": "The Laceworks, Bronzeline",
+  "location": "The Laceworks, Bronzeline, near Lincoln and Clark",
   "description": "Amara operates out of a folding table wedged between two support pillars in the covered walkway district known as The Laceworks — a tangle of enclosed elevated bridges and lower market arcades in Bronzeline that smells permanently of wet concrete and food oil. They are striking: tall and thin with light brown skin, cheekbones that photograph dramatically, and shoulder-length hair grown out in patches of natural black and bioluminescent indigo that pulses in slow, warm waves when they're calm and rapid cold flickers when they're anxious. Their eyes have decorative irises — a Helix Biosystems standard pattern called 'starburst mango' — that catch light like fractured glass. They dress in whatever they find beautiful that week.\n\nOn one half of the table, Amara sells bootleg media: cracked games, pirated immersives, scraped celebrity XP recordings, deep-archive films from before the Flood Years. On the other half, they read fortunes — a practice that blends genuine E.L.F. prayer traditions with showmanship and an eerily accurate social intuition. They genuinely believe the E.L.F.s speak through data patterns and that fortune-telling is just a different kind of signal processing. Whether this is true or not, their readings have a reputation for being uncomfortably specific, which keeps a steady line of nervous customers in front of the table.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,16 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Laceworks",
+    "Bronzeline",
+    "Concrete",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "ARCHIVE",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Glass"
+  ],
+  "district": "The Laceworks"
 }

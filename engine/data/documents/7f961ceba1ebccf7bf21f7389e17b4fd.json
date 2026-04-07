@@ -6,7 +6,9 @@
   "date": "unknown",
   "classification": "classified",
   "description": "RE: The [REDACTED] Protocol. As discussed in Tuesday's [REDACTED], the board has approved Phase [REDACTED] of the [REDACTED] initiative. All personnel assigned to Floor 13 are to report to [REDACTED] by [REDACTED]. Non-compliance will result in [REDACTED]. This memo will not be archived.",
-  "related_entities": [],
+  "related_entities": [
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What protocol requires this level of redaction?",

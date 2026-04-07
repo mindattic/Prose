@@ -13,7 +13,7 @@
   "role": "Unlicensed field medic and augmentation repair technician",
   "age": 22,
   "status": "active",
-  "location": "Old Harbor",
+  "location": "Old Harbor, near Lake Shore and Wacker",
   "description": "Gavril is a slight young man of Ghanaian-Japanese descent who looks, at first glance, like he is in the wrong place — too young, too clean-handed, too careful with his movements for Old Harbor's Gate 9 district. The impression lasts until you see him work, at which point it inverts entirely. He has his mother's broad cheekbones and his father's near-black eyes, and his hands, when they are still, have the quality of instruments waiting to be used. A fading scar runs from his left jaw to his collarbone, the only visible evidence of the incident that ended his two years of formal medical training at a Meridian Core institution.",
   "psychology": {
     "facet_weights": {
@@ -243,5 +243,15 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Ringo Corponation Haptic Signature Recorder",
+    "Meridian Core",
+    "TESSERA PG-2 'Signature'",
+    "The Shelf",
+    "Irontide Tidal Energy",
+    "Handed",
+    "The Pure Hand"
+  ],
+  "district": "Old Harbor"
 }

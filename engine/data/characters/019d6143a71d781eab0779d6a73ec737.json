@@ -12,7 +12,7 @@
   "role": "Food stall operator — hand-pulled noodle and fermented broth vendor",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Kedzie and Division",
   "description": "Ximena is a broad-shouldered woman with deep umber skin mapped in laugh lines and old burn scars along her left forearm from a cooking fire twenty years back. Her hair has been gene-dyed a permanent copper-gold that she wears in a thick plait down her back, and her eyes carry patterned irises — concentric rings of amber and dark brown, a cosmetic mod she saved three months of UBC stipend to afford when she was thirty. She runs her stall with the authority of a small general, keeping three pots going simultaneously, the steam rising around her like offerings to the market's resident E.L.F., whom she calls Grandpot and leaves a small data crystal near the burner each morning.\n\nXimena is warm to the point of disarming — she remembers what every regular ordered last time and will argue passionately that your body needs bone broth today, not the chili oil, she can tell by your eyes. But beneath the maternal bustle is a woman who has seen her neighborhood's character scraped away one Tessera rezoning at a time, and who keeps a detailed mental ledger of who is eating less than they used to. She is the social infrastructure of her corner of the market, whether she admits it or not.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,19 @@
   "registered_firearms": [
     "Volkov-Saito Precision VSR-20 'Partisan'",
     "Crucible Industries Fang-9 'Switchblade'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "The Reclamation Authority",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Geartown",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "TESSERA TK-4 'Hellhound'",
+    "Adaeze Chen-Hawkins",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

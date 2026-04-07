@@ -12,7 +12,7 @@
   "role": "Retired Ferrogate Transit engineer and community council elder",
   "age": 79,
   "status": "active",
-  "location": "Washburn Commons, Building 14, Unit 6-C",
+  "location": "Washburn Commons, Building 14, Unit 6-C, near Western and Chicago Ave",
   "description": "Oluwafémi is a broad-shouldered man whose frame still suggests the physical authority he once carried, though now he moves with a deliberate slowness that speaks more to carefulness than infirmity. His skin is deep brown, mapped with old burn scarring along the left side of his neck where a pressure seal blew in the Kessler Interchange tunnels in 2167. He keeps his white hair cropped close and wears a Ferrogate Transit veterans' pin on every shirt he owns — a small orange wheel on a black field. His eyes are his most striking feature: one natural dark brown, one replaced with a cheap amber ocular implant that never quite tracked correctly, giving him a slightly owlish look that unsettles people who don't know him.\n\nFemi is the kind of man who shows up first and stays last. He runs the Washburn Commons tenant council with the same methodical patience he once applied to transit corridor pressure calculations — he keeps notes, follows up, remembers everything. Beneath the geniality he deploys with strangers is a man who has been watching Ferrogate's pension promises erode for twelve years and is quietly, furiously cataloguing every breach. He is not naive about power, but he has decided that the only way he can still use his is by being the person people in his building trust absolutely.",
   "psychology": {
     "facet_weights": {
@@ -255,5 +255,13 @@
   "registered_firearms": [
     "Arcturus Defense Solutions Specter Rifle SR-6 'Whisper'",
     "Volkov-Saito Precision VS-S1 'Nightcourt'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Washburn Commons",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Augmentation technician and unlicensed prosthetics fitter in Geartown",
   "age": 27,
   "status": "active",
-  "location": "Geartown — operates from a shared workshop space behind a fermentation bar called Mash & Circuit",
+  "location": "Geartown — operates from a shared workshop space behind a fermentation bar called Mash & Circuit, near Armitage and Milwaukee",
   "description": "Ntsiki is compact and kinetic, always in motion even when standing still — weight shifting, fingers working, eyes cataloguing the room. Their skin is very dark with a natural sheen, and they have added to this with dermal chrome inlays across their cheekbones and the bridge of their nose: thin geometric strips that catch light like a beetle's carapace. Their hair is natural and voluminous, threaded through with fiber-optic strands that they change color weekly on a whim. Both forearms are dense with their own experimental augmentation work — they use their body as a testing ground and wear the results openly, including two fingers on their left hand that are full prosthetic replacements after a bench incident they describe as 'instructive.'\n\nNtsiki came up through Geartown's informal tech apprenticeship network — never licensed, never enrolled, practically educated by trial and error on salvaged parts. They are brilliant with hardware in the hands-on sense: intuitive, fast, and willing to attempt things that licensed technicians won't touch because the liability is too steep. Their prices are low, their ethics are negotiable in interesting ways, and their loyalty to their regular clients is total and somewhat ferocious. They have a complicated relationship with Helix Biosystems implants specifically — they consider Helix's DRM-locked hardware a personal insult and have developed several workarounds that Helix would very much like to know about.",
   "psychology": {
     "facet_weights": {
@@ -262,5 +262,17 @@
     "Kang-Petrov Arms KP-10C 'Bullpup'",
     "Kang-Petrov Arms KPS-3M 'Mongrel'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Quiet Room",
+    "Geartown",
+    "Crucible Industries CF-1 'Carapace'",
+    "The Gradient Compact",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pure Hand",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Circuit"
 }

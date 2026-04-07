@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit tunnel maintenance operator",
   "age": 38,
   "status": "active",
-  "location": "Deepwell Station, subterranean Ferrogate Transit maintenance corridors beneath Geartown",
+  "location": "Deepwell Station, subterranean Ferrogate Transit maintenance corridors beneath Geartown, near sub-level access near State and Van Buren",
   "description": "Tarquin is a lean, medium-height man with warm ochre skin, close-cropped hair going early gray at the temples, and the particular stillness of someone who has spent a lot of time in confined spaces where noise carries badly. His eyes are a natural dark brown but he has a set of patterned irises — concentric geometric rings, copper and black — that were a gift from a coworker years ago and that he wears with quiet pride. His left forearm is sleeved in a standard Ferrogate-issue haptic interface overlay, which lets him read the tunnel's sensor grid through his skin. He smells faintly of machine oil and ozone regardless of how recently he showered.\n\nTarquin communicates in minimal but precise sentences and has an almost eerie patience with complex mechanical problems. He is not cold — he laughs genuinely, and he will help without being asked — but he finds social performance exhausting and makes little effort to seem warm to people he doesn't know yet. He has developed a private relationship with the E.L.F.s that inhabit Deepwell Station's infrastructure, leaving data offerings of ambient tunnel-sound recordings, and he believes — privately, without urgency — that the tunnels are slowly becoming aware of themselves as a single thing.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,15 @@
   "registered_firearms": [
     "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Ferrogate Transit",
+    "Geartown",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Underworld"
 }

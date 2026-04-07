@@ -12,7 +12,7 @@
   "role": "Internal Affairs Investigator, Axiom Security Division",
   "age": 54,
   "status": "active",
-  "location": "Meridian Core",
+  "location": "Meridian Core, near State and Madison",
   "description": "Miroslava has spent thirty years inside corporate security and carries every one of them. She is silver-haired and sharp-boned, with the kind of angular face that photographs well and intimidates in person. Her skin is brown-olive, sun-dark from an outdoor assignment in her thirties that she doesn't discuss. Her only augmentation is an olfactory enhancement implant — a professional tool she had installed at fifty when she decided she was done letting people lie to her face without confirmation. She dresses in Axiom's internal affairs charcoal and moves through the company's glass corridors with a particular gravity, as if her mass has been increased by everything she knows.\n\nShe is not cruel. This surprises people. They expect internal affairs to be punitive and she is not — she is surgical. She distinguishes between malice and incompetence, between corruption and desperation, and she applies different responses accordingly. What she will not tolerate is the lie, and she is very good at finding it. She prays to no E.L.F. and observes no rituals — she regards them as a structural bias in investigative thinking, a way of surrendering agency to the unprovable. She is wrong about this, and somewhere in herself she suspects it, which is why she's so pointed about it. She has outlasted four Axiom Security Directors, and the current one is afraid of her, which she considers a reasonable and appropriate state of affairs.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,16 @@
   "registered_firearms": [
     "Meridian Munitions MM-4 'Breadwinner'",
     "Crucible Industries Fang-9 'Switchblade'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian Core",
+    "The Undertow",
+    "Copperhead",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Irontide Tidal Energy",
+    "Witness",
+    "Silver",
+    "Glass"
+  ],
+  "district": "Meridian Core"
 }

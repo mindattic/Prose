@@ -12,7 +12,7 @@
   "role": "Junior hacker and tech-prodigy student at a public technical institute, Tier 2",
   "age": 17,
   "status": "active",
-  "location": "Edgewater Prism — Meridian Public Technical Institute, Lower Campus",
+  "location": "Edgewater Prism — Meridian Public Technical Institute, Lower Campus, near Lincoln and Addison",
   "description": "Lyudmila is seventeen and looks it in the worst possible way — they have the specific exhaustion of someone who has been the smartest person in every room they have ever been in and has not yet decided whether that is a gift or a sentence. They are medium height, soft-bodied, with Ukrainian-Tahitian heritage that gave them wavy dark hair they have threaded with bioluminescent strands that pulse slowly when they are focused — a mod they installed themselves at fifteen using a kit meant for adults. The job is good, mostly. One strand on the left side occasionally glitches amber instead of the intended white.\n\nMila attends the Meridian Public Technical Institute on full need-grant and spends approximately forty percent of their scheduled class hours actually in class, with the remainder in a basement server room they were banned from and then un-banned from after they fixed a hardware problem the Institute's IT department had been unable to solve for three months. They are not malicious — they hack things the way other people doodle, compulsively, because systems have shapes and they want to know the shapes. Their current project, which they have been working on in careful slices between coursework, is an attempt to map the E.L.F. population of the Edgewater Prism district — not to interfere with them but out of genuine theological curiosity about where they cluster and why.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,16 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "The Convergence Ministry",
+    "Vellichor Institute",
+    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "The Heritage Vault",
+    "Irontide Tidal Energy",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Laceworks"
 }

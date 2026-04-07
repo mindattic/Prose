@@ -1,0 +1,36 @@
+{
+  "id": "8c36666061727428adc58ad699c38f36",
+  "name": "Nimbus Fabrication Conductor's Touch Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Thin, flexible gloves with piezoelectric fingertips that convert mechanical pressure into precise electrical signals. Each fingertip can generate controlled micro-current output, allowing the wearer to interface with electronic systems through direct contact — bypassing standard input devices entirely.\n\nDeveloped for electronics repair technicians who need to test circuits by touch, the Conductor's Touch has been adopted by data thieves who use them to bypass mechanical input locks and directly stimulate electronic components.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "piezoelectric fingertips",
+    "signal-modulation circuits",
+    "insulated palm"
+  ],
+  "functionality": "Direct electronic interface via touch, controlled micro-current output, circuit testing",
+  "what_it_says": "Your fingers speak the language of electricity and you use that to have conversations with machines.",
+  "worn_by": [
+    "electronics technicians",
+    "data thieves",
+    "hardware hackers"
+  ],
+  "manufacturer": "Nimbus Fabrication",
+  "price_range": "Φ1,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A hardware hacker using Conductor's Touch gloves reports that touching a particular server rack sent a signal back — the machine responded to the touch with a pattern that resembled a distress call."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 3",
+    "piezoelectric",
+    "electronic interface",
+    "hacking",
+    "tech"
+  ]
+}

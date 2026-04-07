@@ -13,7 +13,7 @@
   "role": "Intelligence analyst and pattern specialist — The Quiet Table",
   "age": 44,
   "status": "active",
-  "location": "The Circuit — maintains a small apartment above a data-repair shop that doubles as her analytical workspace",
+  "location": "The Circuit — maintains a small apartment above a data-repair shop that doubles as her analytical workspace, near North Ave and Damen",
   "description": "Noor Farouk was supposed to be an academic. She had the doctorate — computational sociology, focused on network dynamics in post-governance urban systems — and the tenure-track position at a Circuit university that barely exists anymore. When the university's funding collapsed under corporate pressure (the research was getting inconvenient for certain interests), Noor found herself with a brilliant analytical mind, a mortgage, and no institutional home. Glass Maren found her six months later, teaching statistics to bored corporate trainees for subsistence pay.\n\nShe is the engine that turns Glass's raw intelligence into actionable product. Where Glass collects — conversations, documents, observations — Noor connects. She maps relationships between corporations, between individuals, between events separated by years and jurisdictions. She sees patterns the way musicians hear harmonies — not the individual notes, but the structure that makes them mean something.\n\nNoor is compact, sharp-featured, with dark hair streaked silver at the temples — premature, stress-related, and she's stopped caring. She wears reading glasses she doesn't technically need anymore (the optical augmentation handles it) because the glasses were her mother's and putting them on means it's time to work. Her workspace is a controlled chaos of screens, physical notes, and string-and-pin boards that she insists work better than any digital mapping tool.",
   "psychology": {
     "facet_weights": {
@@ -189,5 +189,14 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Forge-Smith Collective Diaspora Blade 'Mongrel'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Gradient Compact",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Glass"
+  ],
+  "district": "The Circuit"
 }

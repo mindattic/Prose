@@ -1,0 +1,35 @@
+{
+  "id": "c695d20e2b526248c126a3613de5b99d",
+  "name": "Sentinel Corp Biometric Integration Bodysuit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A full-body base layer that serves as the integration platform for Sentinel Corp's employee monitoring system. The suit tracks location, vital signs, stress hormones, sleep patterns, and caloric expenditure, transmitting continuous data to Sentinel's workforce management system. Employees are required to wear it during all active shifts.\n\nThe suit is comfortable, well-made, and provided free of charge. It is also a total surveillance garment that gives the corponation real-time awareness of every employee's physical and emotional state. Refusal to wear it is grounds for contract termination.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "biometric sensor array",
+    "location tracking module",
+    "comfort-weave fabric"
+  ],
+  "functionality": "Full biometric monitoring, GPS tracking, workforce analytics integration",
+  "what_it_says": "Your employer owns your schedule, your location, and your biometric data, and you wear the proof against your skin.",
+  "worn_by": [
+    "Sentinel Corp employees",
+    "corporate-monitored workforce"
+  ],
+  "manufacturer": "Sentinel Corp",
+  "price_range": "Φ0 (employer-issued, mandatory)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Sentinel employee's Integration Bodysuit shows 30 minutes of flatlined biometric data in the middle of a shift — but the employee was seen working normally during that window, suggesting someone spoofed the suit."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 3",
+    "biometric",
+    "surveillance",
+    "Sentinel Corp",
+    "mandatory"
+  ]
+}

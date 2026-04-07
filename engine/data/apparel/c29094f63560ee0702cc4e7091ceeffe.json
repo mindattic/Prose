@@ -1,0 +1,36 @@
+{
+  "id": "c29094f63560ee0702cc4e7091ceeffe",
+  "name": "Duskline Apparel Chameleon Wrap",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A head-and-neck wrap made from chromatic-shift fabric that slowly cycles through muted color tones, blending with whatever environment the wearer moves through. The color changes are subtle and organic — not flashy technological display but quiet adaptive camouflage. The fabric also dampens thermal signatures.\n\nOriginally a military prototype that was deemed too slow-cycling for combat use, the Chameleon Wrap found its market among urban stalkers, surveillance operatives, and fashion-forward individuals in mid-tier districts who appreciate the wrap's constantly shifting aesthetic.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "chromatic-shift fabric",
+    "thermal-dampening layer",
+    "adaptive pigment cells"
+  ],
+  "functionality": "Slow-cycle adaptive camouflage, thermal signature reduction",
+  "what_it_says": "You move through spaces without committing to any single visual identity — you're always almost invisible.",
+  "worn_by": [
+    "surveillance operatives",
+    "urban stalkers",
+    "mid-tier fashion enthusiasts"
+  ],
+  "manufacturer": "Duskline Apparel",
+  "price_range": "Φ1,600",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Chameleon Wrap left at a murder scene has locked into a single color — the exact shade of the wall behind the victim, as though the wrap recorded the moment of the killing."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 3",
+    "wrap",
+    "camouflage",
+    "chromatic-shift",
+    "stealth"
+  ]
+}

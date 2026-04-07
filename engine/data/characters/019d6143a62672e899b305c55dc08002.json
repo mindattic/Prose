@@ -12,7 +12,7 @@
   "role": "Nomadic seasonal worker and informal oral historian of transit communities",
   "age": 71,
   "status": "active",
-  "location": "McKinley Flats labor camp, currently between the third and fourth seasonal rotations",
+  "location": "McKinley Flats labor camp, currently between the third and fourth seasonal rotations, near Kedzie and Division",
   "description": "Haroutioun is a large man going soft at the edges — once muscular, now padded with age in a way that still suggests the old strength underneath. His skin is a warm terracotta brown and his face is deeply lined, creased by weather into something that reads as ancient without being frail. He has a white mustache of impressive volume that he maintains with obvious care and slight vanity. He walks with a cane, not from weakness but from a right hip that never healed properly after a construction accident fifteen years ago — the cane is carved from some piece of salvage wood he found somewhere, covered in small notched marks he made to count things he won't specify. His geneware is an antique: color-shifting irises that he got decades ago and that have aged badly, so they cycle through colors with a slight lag and occasional glitch, settling on a warm amber-brown most of the time.\n\nHaroutioun has done seasonal labor across the Lake Michigan basin for forty years — agricultural processing, industrial cleaning, construction, cargo handling, maintenance. He holds more worker classifications than almost anyone in the labor camps, most of them legally registered under a legitimate identity he is careful to maintain. What is unusual about him is that he remembers everything. He has a prodigious, organized memory for names, faces, routes, and events, and he uses it to maintain a living oral record of the transit community — who came through, what happened to them, where they went, who is looking for whom. People leave him messages to pass along. People ask him where their cousin went. He takes the responsibility seriously.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,13 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-6 'Equalizer'",
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "related_entities": [
+    "McKinley Flats",
+    "The Burden Clause",
+    "SafeStep Promenade Defender PD-2 'Elderwood'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

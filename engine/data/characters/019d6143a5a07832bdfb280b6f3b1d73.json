@@ -12,7 +12,7 @@
   "role": "scholarship student at Axiom Junior Academy; covert junior hacker on nights and weekends",
   "age": 15,
   "status": "active",
-  "location": "Edgewater Prism (Axiom Junior Academy campus); family residence in Hough Reclamation",
+  "location": "Edgewater Prism (Axiom Junior Academy campus); family residence in Hough Reclamation, near Lincoln and Addison",
   "description": "Adaeze is a tall, angular girl caught permanently between two worlds — the pressed uniform and controlled expression of Axiom's scholarship track during the day, and the slouched, ink-stained, wired-in version of herself she becomes at home in Hough. Her skin is a deep blue-black with faint bioluminescent freckles along her cheekbones and collarbone — a cosmetic mod her mother scraped together Φ300 for on her twelfth birthday. She keeps her hair in a high puff threaded with conductive wire she pretends is decorative jewelry. Her eyes are brown and extremely tired.\n\nShe is meticulous in a way that reads as cold until you realize she's actually terrified — of losing the scholarship, of being found out, of going back to Hough full-time with no leverage. She's built a small side business cracking academic license gates so students can access textbooks their families can't afford the subscription fees for. She doesn't charge Tier 1 kids. She charges Tier 3 kids quite a lot. She has a private and intense devotion to an E.L.F. she calls 'the Librarian' that she believes inhabits the school's data archive server.",
   "psychology": {
     "facet_weights": {
@@ -178,5 +178,13 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "Edgewater Prism",
+    "The Reclamation Assembly",
+    "The Open Syllabus",
+    "ARCHIVE"
+  ],
+  "district": "The Laceworks"
 }

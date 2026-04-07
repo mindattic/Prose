@@ -13,7 +13,7 @@
   "role": "Mid-tier information broker and former Spire communications architect",
   "age": 57,
   "status": "active",
-  "location": "Old Harbor",
+  "location": "Old Harbor, near Michigan Ave and Roosevelt",
   "description": "Casimir is a tall, thin Polish-Dutch man gone slightly soft at the middle in the way of someone who used to be athletic and stopped caring. He has a pale, deeply lined face that arranges itself naturally into an expression of polite disappointment, and pale gray eyes that are almost always slightly too still — a habit from decades of reading people across negotiating tables. He dresses in the muted, high-quality clothes of someone who once inhabited corporate spaces and has never fully left that aesthetic behind, even when the context makes it look faintly absurd. He lives in a converted harbormaster's office at the edge of Old Harbor, surrounded by equipment that looks like salvage and performs like something considerably more.",
   "psychology": {
     "facet_weights": {
@@ -240,5 +240,12 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Spire",
+    "Flicker",
+    "The Sluiceway",
+    "The Pale Mile"
+  ],
+  "district": "Old Harbor"
 }

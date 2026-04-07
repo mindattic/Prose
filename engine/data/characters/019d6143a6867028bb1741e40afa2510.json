@@ -12,7 +12,7 @@
   "role": "Barber and informal community mediator, Hamtramck Enclave",
   "age": 61,
   "status": "active",
-  "location": "Hamtramck Enclave — his shop, 'Sefa's Cut', occupies the ground floor of a residential stack on Corrugated Row",
+  "location": "Hamtramck Enclave — his shop, 'Sefa's Cut', occupies the ground floor of a residential stack on Corrugated Row, near Kedzie and Division",
   "description": "Orkhan is a lean, compact man whose age shows mainly in the white that has taken over his close-cropped hair and the deep creases around his eyes — the rest of him is surprisingly wiry, and he moves with the unhurried precision of someone who has been practicing fine motor skills for four decades. His skin is a warm olive that shifts toward bronze under the shop's fluorescent strips. His geneware is a single concession to the era: his fingertips emit a faint blue-white bioluminescence that he had installed purely for practical reasons, so he can work in the dark during power brownouts without disturbing a client mid-cut. He keeps his shop small and deliberately cluttered — photographs pinned to every wall, a secondhand shrine to the Razor ELF in the corner hung with clippings of hair and old razor blades, a samovar that has not been turned off since 2181.\n\nHe has the manner of a confessor without the religion: people tell him things. He does not seek information, he simply creates the conditions in which information cannot help but flow — the warmth of the shop, the meditative rhythm of scissors, the way he asks questions and then waits, genuinely, for the answer. He has outlasted three landlords, two Enclave council administrations, and one attempted Axiom buyout of the block. He considers his continued presence an act of political resistance, though he would never use those words.",
   "psychology": {
     "facet_weights": {
@@ -179,5 +179,19 @@
   "carried_weapons": [
     "Street Custom 'Confession' Modified Industrial Nail Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Riverbottom",
+    "Tessera Suppression Lattice SL-3 'Quilt'",
+    "Cinderblock Ai",
+    "Vantablack Media Confessor Tap — 'The Booth'",
+    "Bathysphere Networks",
+    "Aslan Vasquez-Chatterjee",
+    "The Gradient Compact",
+    "Switchblade Alley",
+    "Bronze",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

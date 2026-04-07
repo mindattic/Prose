@@ -12,7 +12,7 @@
   "role": "DJ and sound sculptor, underground rave circuit, Tier 2",
   "age": 29,
   "status": "active",
-  "location": "The Garret, rents a room in a converted water tower shared with five others",
+  "location": "The Garret, rents a room in a converted water tower shared with five others, near Damen and Armitage",
   "description": "Ekene moves through spaces with the particular quality of someone who is always listening — head slightly tilted, eyes unfocused, processing acoustic information before visual. Their Igbo-Polish-Malagasy heritage has produced a face that strangers frequently find difficult to read and then realize they've been trying to categorize incorrectly: a long jaw, widely-spaced dark eyes with yellow-ringed irises (geneware, chosen deliberately to resemble a secondary predator), skin the deep warm brown of their father's Igbo family with the occasional Malagasy undertone that shifts in certain light. Their hair is shaved close at the temples and maintained in a structured vertical ridge down the center that they dye in bands of frequency-reactive pigment — it shifts color with ambient sound, which means at their own sets it becomes a visual instrument.\n\nEkene does not play music so much as engineer environments. Their sets at the Garret's underground circuit are classified by regular attendees as physically affecting — subsonic layers, frequencies that produce specific emotional states, structures that take an hour to resolve and leave people feeling like they've been somewhere. They are precise about sound in the way a surgeon is precise about incision, and they have a corresponding social bluntness — they find small talk genuinely effortful and do not produce it. People who understand what they do treat them with considerable respect. People who don't frequently mistake their quietness for shyness, which is incorrect.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,18 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Garret",
+    "The Nearfield",
+    "Zheng-dao Bioelectric",
+    "Glenville Sound",
+    "The Heritage Vault",
+    "Bathysphere Networks",
+    "Irkalla",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Nesting Doll",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Circuit"
 }

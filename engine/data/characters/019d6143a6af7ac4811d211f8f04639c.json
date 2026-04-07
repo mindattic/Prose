@@ -13,7 +13,7 @@
   "role": "Former Spire-tier bioethics executive / Exiled community medic",
   "age": 67,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Halsted and Chicago Ave",
   "description": "Rector Hollowell is a large man gone soft at the edges, with the posture of someone who once commanded rooms and has since chosen not to. His skin is the pale ochre of long indoor living, his hands enormous and steady, his white hair kept short and his beard grown out in the way of a man who has stopped performing for an audience that no longer exists. He wears the same rotation of practical clothes—heavy canvas, worn but clean—and carries a battered medical kit that is more capable than it looks because he has modified it himself over eleven years of field use in The Shelf.\n\nRector spent twenty-two years as Director of Bioethical Compliance at Vantara BioSystems, one of The Spire's three major augmentation conglomerates. He was the man who signed off on clinical trial parameters, who sat across from regulators and explained why the variance in adverse outcome data was within acceptable bounds, who used the language of ethics as a procedural instrument. He was not unintelligent about what he was doing. He did it anyway. The specific incident that ended his career is documented in sealed corporate arbitration records: a neural augmentation trial in the lower districts in which forty-three participants experienced cascading cognitive degradation, eighteen of whom died. Rector had flagged the risk internally fourteen months prior. The flag was overruled. He signed the continuation anyway.\n\nHe was not prosecuted. He was quietly exited, his Spire access revoked, his identity scrubbed from Vantara's public materials. He went to The Shelf because he didn't know where else to go, and he stayed because someone needed stitches and he was the only one there with the knowledge. That was eleven years ago. He has since become the closest thing The Shelf has to a neighborhood doctor, working from a converted storage unit he calls the Surgery, accepting payment in food, labor, or nothing. He does not talk about his past. Everyone in The Shelf knows anyway.",
   "psychology": {
     "facet_weights": {
@@ -240,5 +240,19 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Threshold",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Shelf",
+    "The Spire",
+    "Threshold",
+    "Big Rig",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pure Hand",
+    "Palette",
+    "The Pale Mile",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

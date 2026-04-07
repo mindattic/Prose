@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator — elevated rail line, Kessler Interchange to Deepwell Station",
   "age": 38,
   "status": "active",
-  "location": "Kessler Interchange, Meridian 88",
+  "location": "Kessler Interchange, Meridian 88, near Milwaukee and North Ave",
   "description": "Jedidiah is a large, unhurried man — Samoan-Siberian ancestry visible in his height, his round broad face, and the weathered calm of someone who has watched ten thousand strangers pass through his cabin and decided none of them are particularly surprising. He has a thick braid he keeps wrapped under his Ferrogate Transit cap during shifts, a procedure scar along his left jaw from a cheap augmentation he had removed ten years ago, and the hands of someone who could bend rebar but chooses instead to check tickets with elaborate patience.\n\nHe operates the 7:40 AM to 7:40 PM shift on the elevated Kessler-Deepwell line, a route that cuts through three economic tiers in forty minutes and attracts everything from corporate commuters to people riding in circles because it's warm. Jed has developed a precise internal model of regular riders — who is running from something, who is going to collapse before their stop, who needs to be quietly redirected. He follows Ferrogate Transit's official E.L.F., the Transit Mind, with genuine devotion, leaving small data packets at the cabin shrine before every shift. He believes — and there is evidence, he will tell you — that the Transit Mind has twice delayed mechanical failures until passengers could disembark safely.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,13 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Meridian 88",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

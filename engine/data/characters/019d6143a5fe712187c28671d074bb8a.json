@@ -12,7 +12,7 @@
   "role": "Data archaeologist recovering pre-Collapse digital records and reconstructing lost histories",
   "age": 28,
   "status": "active",
-  "location": "The Circuit, operating out of a rented server-adjacent lab space in Deepwell Station",
+  "location": "The Circuit, operating out of a rented server-adjacent lab space in Deepwell Station, near sub-level access near LaSalle and Congress",
   "description": "Edvinas is slight and pale in the way of someone who has spent formative years in low-light server environments, with Lithuanian-Nigerian heritage that shows in his long jaw and the particular amber tone of his skin under fluorescent lab lights. He has bioluminescent lines running along his temples and the back of his hands — a geneware mod he got at nineteen and has never regretted, pale blue-white that brightens when he's concentrating and dims when he sleeps. His hair is a dark loose cloud that he ties back with whatever cable is nearest. He looks younger than he is, which he has stopped trying to correct; instead he uses the underestimation strategically.\n\nHe is possessed by the specific obsession of the archivist: not just what is lost, but the shape of what is lost, the way a gap in the record is itself a record. He can spend eight hours in pursuit of a single corrupted timestamp. He is not antisocial — he can be delightful company, quick-witted and genuinely curious — but he disappears into his work in a way that has cost him two relationships and the trust of a department head who needed him to surface for funding reviews.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,19 @@
   "carried_weapons": [
     "Street-Custom Razorwire Wraps 'Glass Hands'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "The Circuit",
+    "Ashford Signal",
+    "Chronicle",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "The Pale Mile",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Underworld"
 }

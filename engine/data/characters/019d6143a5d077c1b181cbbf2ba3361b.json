@@ -12,7 +12,7 @@
   "role": "gang prospect and lookout, Tier 1",
   "age": 16,
   "status": "active",
-  "location": "The Stockyard, Iron Bend",
+  "location": "The Stockyard, Iron Bend, near Halsted and Chicago Ave",
   "description": "Casimir is built like he was designed for a different neighborhood and ended up here — broad through the shoulders for his age, with his Ghanaian grandfather's deep-set eyes and his Belarusian grandmother's unexpectedly sharp nose, and skin the color of dark polished teak. He has retractable claw mods on his right hand, cheap gray-market work that catches and sticks sometimes and leaves small gouges in every surface he rests his fingers on. His left ear has a long cosmetic antenna mod — a thin chrome filament that curves up past the ear's edge — which he got because the Iron Bend crew's older members have them and he wanted in on the aesthetic before he was officially in anything.\n\nHe is a prospect for the Iron Bend Substrates, a mid-tier territorial crew operating in The Stockyard's lower warehouse district. He runs lookout and does small-package relay, technically a step below full prospect status but he won't admit that to anyone. He is loudly confident in a way that reads differently depending on who's listening — to younger kids it sounds like authority, to the older crew members it sounds like a boy who hasn't been hurt enough yet to know what he doesn't know. He is not stupid. He is seventeen months from figuring that out.",
   "psychology": {
     "facet_weights": {
@@ -218,5 +218,20 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Stockyard",
+    "The CEO",
+    "Grandmother",
+    "Iron Bend",
+    "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
+    "SynapTech PolyGlot Live Translation Implant",
+    "Tessera Corponation",
+    "Tibor Osei-Svanstrom",
+    "Déjà Vu",
+    "Arcturus CK-5 'Bloodhound'",
+    "Teak",
+    "Iron"
+  ],
+  "district": "The Shelf"
 }

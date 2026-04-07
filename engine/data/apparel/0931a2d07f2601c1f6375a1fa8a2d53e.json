@@ -1,0 +1,37 @@
+{
+  "id": "0931a2d07f2601c1f6375a1fa8a2d53e",
+  "name": "Threadbare Collective Patchwork Mittens",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Hand-sewn mittens assembled from whatever fabric is available — old uniforms, curtain scraps, packaging material. Each pair is unique, often mismatched, and held together with visible stitching that ranges from competent to desperate. Some incorporate conductive thread salvaged from discarded electronics, giving them accidental touch-screen compatibility.\n\nA Shelf-district survival item that has become a quiet act of community care — volunteer sewing circles produce hundreds of pairs each winter and distribute them for free. Wearing Patchwork Mittens is wearing proof that someone cared whether your hands stayed warm.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged fabric scraps",
+    "repurposed thread",
+    "occasional conductive salvage"
+  ],
+  "functionality": "Basic cold protection, accidental touch-screen compatibility (some pairs)",
+  "what_it_says": "Someone made these for you out of nothing, and that means more than anything manufactured.",
+  "worn_by": [
+    "Shelf residents",
+    "mutual aid recipients",
+    "anyone who needs warm hands"
+  ],
+  "manufacturer": "Handmade (Shelf community)",
+  "price_range": "Φ0 (donated)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of Patchwork Mittens are found containing a slip of paper with GPS coordinates sewn into the lining — someone used the community mitten program to pass a message."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 1",
+    "handmade",
+    "Shelf",
+    "community",
+    "DIY",
+    "mutual aid"
+  ]
+}

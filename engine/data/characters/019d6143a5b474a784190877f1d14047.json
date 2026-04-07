@@ -12,7 +12,7 @@
   "role": "Street-level noodle cart vendor",
   "age": 26,
   "status": "active",
-  "location": "The cart circuit: mornings at Calumet Rise worker gate, afternoons at Deepwell Station plaza, evenings outside the Ferment Quarter",
+  "location": "The cart circuit: mornings at Calumet Rise worker gate, afternoons at Deepwell Station plaza, evenings outside the Ferment Quarter, near sub-level access near State and Van Buren",
   "description": "Anouk has the kind of face that changes depending on what they're feeling — not through any augmentation, but because their expressions are theatrical and unguarded, eyebrows mobile as flags. Their skin is deep brown with a warm undertone, and they have a bioluminescent patterning along their collarbone and upper arms: a cascade of soft teal dots that pulse gently when their body temperature rises — which it frequently does over a cooking cart. Their hair is kept in a high puff wrapped in orange synthetic silk, and they wear a secondhand Arcturus-branded apron they've covered in patches, safety pins, and one embroidered patch that reads 'ASK ME ABOUT BABA STOCK' in blocky letters.\n\nThe cart is called Threefold, named for the three broths Anouk cycles through depending on their mood and what they could source cheaply. They are exuberantly social, know regulars by name and usual order, and maintain a strict policy of sliding-scale pricing that they enforce entirely based on vibes — they have never written it down and deny having a system, but longtime customers know that if Anouk likes you and you look hungry, you pay less. They pray to a small E.L.F. they call the Burner before every cook session, leaving a data-chip with a new recipe they've invented as an offering. They believe sincerely that the Burner makes the broth better.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,19 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-10 Match 'Deadlock'",
     "Hearthstone Firearms Ranch SMG HRS-3 'Cattleman'"
-  ]
+  ],
+  "related_entities": [
+    "The Ferment Quarter",
+    "Deepwell Station",
+    "Calumet Rise",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Grainfort",
+    "Zheng-dao Bioelectric",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Arcturus Defense Solutions",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA TK-4 'Hellhound'",
+    "Silk"
+  ],
+  "district": "The Underworld"
 }

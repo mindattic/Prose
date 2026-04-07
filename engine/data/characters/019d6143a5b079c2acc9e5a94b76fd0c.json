@@ -12,7 +12,7 @@
   "role": "Forensic Technician, Meridian 88 Metro Police",
   "age": 52,
   "status": "active",
-  "location": "Fort Anchor, Forensic Sciences Unit, Level 7",
+  "location": "Fort Anchor, Forensic Sciences Unit, Level 7, near Western and Chicago Ave",
   "description": "Ambrogio is a slight man who has lost the battle with his posture and accepted it, curving slightly forward as if permanently examining something just below his eyeline. His skin is a warm medium brown, hair gone to silver-white and kept in a neat, very short fade, and he wears magnification lenses over his natural eyes — actual lenses in frames he has had repaired seven times rather than upgrade to ocular implants, because he does not trust surgeons with his eyes, a conviction he holds with irrational but absolute certainty. He has enhanced olfactory augmentation, which is the one mod he consented to readily because it directly serves his work: he can smell chemical compounds at parts-per-billion concentrations, and has an informal reputation for diagnosing cause of death before the toxicology panel comes back.\n\nAmbrogio has worked Metro Police forensics for twenty-six years and has achieved a specific kind of institutional invisibility — he is everywhere in the building and somehow always slightly forgotten when promotions are discussed. He does not appear to mind, though this appearance is not entirely accurate. He is meticulous to a degree that colleagues find either reassuring or maddening depending on whether they need results today or results that are correct. He has a running argument with the evidence chain management system that has lasted three years and will likely outlast them both.",
   "psychology": {
     "facet_weights": {
@@ -249,5 +249,14 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ]
+  ],
+  "related_entities": [
+    "Fort Anchor",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Irontide Tidal Energy",
+    "Tibor Osei-Svanstrom",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

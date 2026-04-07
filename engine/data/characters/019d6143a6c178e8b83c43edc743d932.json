@@ -12,7 +12,7 @@
   "role": "Counter-surveillance and mole detection — counterintelligence specialist",
   "age": 45,
   "status": "active",
-  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Pulaski and Chicago Ave",
   "description": "Sagyn Ekberg-Asare is slight and easy to overlook, which is exactly the point. At 45, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented counterintelligence specialist in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,12 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Street Custom 'Angry Mary' Aerosol Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

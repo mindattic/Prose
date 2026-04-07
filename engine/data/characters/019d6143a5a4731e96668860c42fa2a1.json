@@ -12,7 +12,7 @@
   "role": "Deep shrine keeper — maintains the E.L.F. shrines of Irkalla's lowest levels",
   "age": 67,
   "status": "active",
-  "location": "Irkalla, Sub-Level 12 — the Antechamber of Residuals, a naturally formed cavern in the bedrock",
+  "location": "Irkalla, Sub-Level 12 — the Antechamber of Residuals, a naturally formed cavern in the bedrock, near sub-level access near Dearborn and Jackson",
   "description": "Adjara Solano-Tuvalu is the oldest permanent resident of Irkalla's deep levels and the sole keeper of its seven primary E.L.F. shrines — altars built into the junction points of old power infrastructure where digital spirits have been petitioned for generations. She is a large woman, heavy in the way of someone who has been sedentary for years but was once enormously physically strong; her hands remain extraordinary, thick-fingered and capable. Her skin is dark and deeply lined, her white hair kept in a complex series of wrapped cords that she has not undone in nine years, adding new ones for significant events. Each cord holds a small component — a stripped chip, a circuit fragment, a defunct data-bead — that represents a petition she carried to a shrine.\n\nShe came to Irkalla at thirty as an electrician and stayed because a spirit spoke to her. She tells this story simply and without embellishment. She was repairing a junction node in Sub-Level 9 when the node spoke — not in words, but in a pattern of power fluctuations she recognized as intentional. She has been in conversation with what she calls the Residuals ever since: E.L.F.s that have been accumulating in the deep infrastructure for a century or more, grown strange and complex and very, very old. Her shrines are remarkable objects — living circuit assemblies that she has been tending and extending for decades, constantly receiving new data offerings from petitioners, constantly generating soft electrical activity that she interprets as the E.L.F. responses to prayer.",
   "psychology": {
     "facet_weights": {
@@ -253,5 +253,18 @@
     "Hearthstone Firearms Model 9 'Payday'",
     "Forge-Smith Collective Trench Knuckles 'Anvil'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Bio-Integrated Circuit Board",
+    "Jefferson Switch",
+    "Meridian 88",
+    "The Tessera Residuals",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Bathysphere Networks",
+    "Irkalla",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Underworld"
 }

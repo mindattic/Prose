@@ -12,7 +12,7 @@
   "role": "Puppet maker and street performer",
   "age": 67,
   "status": "active",
-  "location": "Pilsen Veil, works from a narrow workshop on Coppervane Alley",
+  "location": "Pilsen Veil, works from a narrow workshop on Coppervane Alley, near Ashland and Chicago Ave",
   "description": "Hadrianus is a large man gone soft at the edges, with the powerful hands of someone who has done fine work for forty years and the stooped posture of someone who has spent those years hunched over a workbench. His skin is a warm medium brown — West African father, Russian mother — and his face is deeply lined in ways that make him look either wise or exhausted depending on the light, which he finds funny. His hair went fully white in his fifties and he wears it short. His left eye is mechanical, a deep-focus optic he got secondhand in the 2180s that has a faint red ring around the iris; he's kept it this long because it helps him see tiny joints and wire connections, not for aesthetics, and it gives his face a slightly uncanny quality he has come to appreciate.\n\nHadrianus makes puppets — not the simple kind. His creations are articulated sculptures two to three feet tall, built from salvaged materials, each with a distinct E.L.F. invoked into them through a ritual he developed over decades. He performs with them in the streets of the Pilsen Veil two or three afternoons a week, drawing crowds of children and their exhausted parents who stay longer than they meant to. He is gentle, patient, and possessed of a very dry humor that flies over children's heads and lands precisely on adults. He has seen a great deal and chosen to remain in the Veil when he could have moved elsewhere, which is itself a statement he doesn't feel the need to make aloud.",
   "psychology": {
     "facet_weights": {
@@ -220,5 +220,14 @@
   "carried_weapons": [
     "Street Custom 'Glass Garden' Caltrops"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Pilsen Veil",
+    "Kang-Petrov Arms KPS-12 'Workbench'",
+    "Copperveil Intelligence",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

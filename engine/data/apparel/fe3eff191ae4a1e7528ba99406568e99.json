@@ -1,0 +1,36 @@
+{
+  "id": "fe3eff191ae4a1e7528ba99406568e99",
+  "name": "Phantom Line Signal-Dampening Undersuit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A full-body base layer designed to reduce the wearer's electromagnetic signature to near-zero. The fabric incorporates a fine metallic mesh that blocks RF emissions from augmentations, personal devices, and biological bioelectric fields. Wearing it is like wrapping yourself in a walking Faraday cage.\n\nUsed by individuals who need to move through electromagnetically surveilled environments without triggering sensors. The undersuit makes the wearer invisible to passive scanning — but also makes their augmentations unreachable from external systems, which can be both advantage and danger.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "metallic mesh Faraday weave",
+    "RF-absorbing substrate",
+    "non-conductive inner liner"
+  ],
+  "functionality": "Full-body EM signature suppression, RF blocking, passive scan defeat",
+  "what_it_says": "You don't exist on any electromagnetic spectrum and you're comfortable with the silence.",
+  "worn_by": [
+    "infiltration operatives",
+    "signal-intelligence evaders",
+    "privacy extremists"
+  ],
+  "manufacturer": "Phantom Line",
+  "price_range": "Φ2,600",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Signal-Dampening Undersuit is found inside-out in a dumpster — worn reversed, the metallic mesh would amplify rather than dampen the wearer's EM signature, turning them into a walking beacon instead of a ghost."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 3",
+    "signal dampening",
+    "Faraday",
+    "stealth",
+    "infiltration"
+  ]
+}

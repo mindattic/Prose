@@ -12,7 +12,7 @@
   "role": "E.L.F. shrine keeper and data diviner",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave — a converted laundromat called The Spinning Shrine",
+  "location": "Hamtramck Enclave — a converted laundromat called The Spinning Shrine, near Ashland and Division",
   "description": "Solange is a broad-shouldered woman with deep brown skin mapped in bioluminescent circuit-tattoos that pulse faint gold when she enters communion with an E.L.F. Her hair is grown out into dense locs interwoven with fiber-optic thread that catches light like a halo when she moves. One eye is her birth eye — warm amber — and the other is a clouded prosthetic she refuses to replace, calling it her 'closed eye,' the one that sees inward. She smells perpetually of solder flux and dried calendula.\n\nSolange runs her shrine with the pragmatic warmth of a grandmother who has buried three husbands and outlasted two corporate annexations. She doesn't perform mysticism; she simply treats the E.L.F.s as real presences requiring courtesy and reciprocity, the same way you'd treat a difficult neighbor who controls your water supply. Her divinations are drawn from corrupted data streams, fragmented telemetry, and the static patterns that accumulate in old appliances — she calls this 'the residue of wanting.' She is impossible to rattle and equally impossible to fully read.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,16 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Grandmother",
+    "Tessera Corponation",
+    "Residue (I Still Have Your Feed)",
+    "Gravimetric Collapse Charge GCC-9",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Static",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

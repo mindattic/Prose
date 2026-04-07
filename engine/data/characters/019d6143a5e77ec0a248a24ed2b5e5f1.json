@@ -12,7 +12,7 @@
   "role": "Structural breach and explosive ordnance specialist — demolitions expert",
   "age": 59,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near Armitage and Milwaukee",
   "description": "Daulet Edlund-Gyan is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 59, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a demolitions expert out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Edlund-Gyan is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,14 @@
     "Meridian Munitions Snapper-22 'Cricket'",
     "Forge-Smith Collective Trench Knuckles 'Anvil'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "Geartown",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Checkpoint Operator, Ferrogate Transit Security",
   "age": 31,
   "status": "active",
-  "location": "Kessler Interchange, Meridian 88",
+  "location": "Kessler Interchange, Meridian 88, near Milwaukee and Damen",
   "description": "Daouda is built wide and compact, the kind of body that came from years of adolescent labor before it settled into something functional and calm. His complexion is a warm chestnut brown, his hair worn in tight, close-cut coils shot through with bioluminescent blue threading — a cheap genemod he got at a Mexicantown Libre parlor for his twenty-fifth birthday that he's maintained ever since because his daughter said it made him look like a hero. He has the patient, half-attentive expression of someone who has processed thirty thousand faces through a chokepoint and is no longer surprised by the human shape, but his eyes quicken when something actually breaks pattern.\n\nHe's not corrupt, which at Kessler Interchange makes him something of an oddity. He takes Φ12 under the table maybe twice a year when someone's biometric is glitching and they're going to miss a hospital appointment, and he has decided that this is what his moral flexibility budget allows. He has a small shrine to the Interchange E.L.F. — locally called 'the Turnstile' — affixed to the inside of his booth, decorated with expired transit tokens and a photo of his daughter printed on glossy plastic. He believes the Turnstile has kept three serious incidents off his shift in three years, and he's probably right that something has.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,16 @@
   "registered_firearms": [
     "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
     "Tessera TKR-10 'Executor'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Mexicantown Libre",
+    "The Interchange",
+    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'",
+    "Meridian 88",
+    "Ferrogate Transit",
+    "Turnstile",
+    "The Gradient Compact"
+  ],
+  "district": "The Circuit"
 }

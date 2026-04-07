@@ -1,0 +1,40 @@
+{
+  "id": "a3f7c2e1b09d4568f1a2e3c4d5b67890",
+  "name": "Slagpatch Acid-Proof Shelf Poncho",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A rough rectangle of salvaged industrial tarp stitched with mismatched cord, coated in layers of recycled rubberized sealant gone yellowy-grey from repeated acid exposure. Crude hood tunnel is reinforced with a strip of salvaged conveyor belting. Worn, patched, and faintly chemical-smelling — but it keeps the acid rain off chrome and skin alike.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged industrial tarp",
+    "recycled rubber sealant",
+    "conveyor belt strip",
+    "reclaimed cord"
+  ],
+  "functionality": "Full-torso acid rain barrier with reinforced hood; crude chrome-pass slits cut into sides for basic arm augmentations.",
+  "what_it_says": "Survival first, aesthetics never — this person is fighting the Shelf one rainstorm at a time.",
+  "worn_by": [
+    "Shelf scavengers",
+    "informal laborers",
+    "chrome-users without corrosion insurance",
+    "street homeless"
+  ],
+  "manufacturer": "No-brand (self-made or Shelf market stall)",
+  "price_range": "Φ8–Φ22",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The poncho has a serial number stamped on the tarp — from a sealed Ferrochem waste shipment that was never supposed to reach the Shelf.",
+    "Someone stitched a small map into the inner lining in orange thread. It leads somewhere underground."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "rain_gear",
+    "acid_protection",
+    "tier_1",
+    "makeshift",
+    "poncho",
+    "shelf_wear"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "gang prospect, orphan",
   "age": 17,
   "status": "active",
-  "location": "The Stockyard, Iron Bend",
+  "location": "The Stockyard, Iron Bend, near Pulaski and Chicago Ave",
   "description": "Nnamdi is tall and broad-shouldered, built like someone who grew fast and hasn't finished, with very dark brown skin, a shaved head, and a jagged scar bisecting his right eyebrow from a fall three years ago. He has geneware color-cycling pupils — shifts between grey and gold in a slow pulse — which he got on credit from a Stockyard bodmod stall and hasn't finished paying off. His jaw is always slightly set, and he has the particular stillness of someone who learned early that looking ready prevents more problems than looking friendly. He walks with an economy of motion that is entirely self-taught.\n\nNnamdi aged out of the Brightmoor Reclamation Orphanage at sixteen and has been in Iron Bend since. He is technically a prospect for the Stockyard Irons, a mid-level territorial gang, which means he runs perimeter watches, collects small-vendor protection fees, and waits to be tested in ways he's trying not to think about. He is not by nature violent — which is the central tension of his life. He's good at watching and remembering and intimidating by presence alone, and he has told himself that is enough to build on. He has a small personal ELF shrine tattooed on his inner wrist — not digital, just ink — in the shape of a data-stream sigil.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,17 @@
   ],
   "registered_firearms": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "The Stockyard",
+    "The Orphanage",
+    "The Reclamation Assembly",
+    "Iron Bend",
+    "TESSERA ES-4 'Perimeter'",
+    "Arcturus Defense Solutions",
+    "Gold",
+    "Iron"
+  ],
+  "district": "The Shelf"
 }

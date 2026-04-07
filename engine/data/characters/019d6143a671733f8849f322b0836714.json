@@ -12,7 +12,7 @@
   "role": "Freelance combat specialist — street samurai",
   "age": 33,
   "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Halsted and Chicago Ave",
   "description": "Nurlan Vega-Acheampong is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 33, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Nurlan Vega-Acheampong describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -277,5 +277,12 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Volkov-Saito Precision VS-40 'Magistrate'"
-  ]
+  ],
+  "related_entities": [
+    "Adaptive Camouflage Skin",
+    "The Narrows Compact",
+    "Burden of Longitude",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

@@ -1,0 +1,40 @@
+{
+  "id": "3c6e0b9a2d4f817c3c6e0b9a2d4f817c",
+  "name": "Omex CivServ Reflective Patrol Cap",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Six-panel structured cap in dark navy cotton canvas with a retro-reflective Omex Corporate Services stripe above the brim. The front panel carries a heat-pressed employee number rather than a name. Sweatband is absorbent terrycloth, frequently replaced.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "cotton canvas",
+    "retro-reflective polyester stripe",
+    "terrycloth sweatband",
+    "plastic snap closure"
+  ],
+  "functionality": "Retro-reflective stripe provides low-light visibility; structured brim blocks sun and light precipitation during outdoor site work.",
+  "what_it_says": "Your number is on your head and you wear it without thinking anymore.",
+  "worn_by": [
+    "municipal service workers",
+    "Omex contracted staff",
+    "site safety monitors",
+    "outdoor maintenance crew"
+  ],
+  "manufacturer": "Omex Corporate Services (corporate issue)",
+  "price_range": "Φ12–Φ20 (replacement; issued on hire)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Employee numbers on Omex caps follow a sequence that reveals department and shift — someone who knows the code can read a worker's entire assignment history.",
+    "A cap with a scratched-out number and a hand-written name stitched below the brim belongs to someone who decided to take theirs back."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "circuit_workwear",
+    "hat",
+    "cap",
+    "corporate-issue",
+    "tier2",
+    "omex"
+  ]
+}

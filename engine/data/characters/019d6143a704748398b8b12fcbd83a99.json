@@ -11,7 +11,7 @@
   "role": "truant network runner — carries physical messages and small parcels through The Narrows",
   "age": 11,
   "status": "active",
-  "location": "Blackpipe Corridor",
+  "location": "Blackpipe Corridor, near Fullerton and Damen",
   "description": "Tomás is a wiry, perpetually underfed boy with deep amber skin, tight coiled hair buzzed close on the sides, and enormous dark eyes that seem to absorb everything around him. He has geneware cat ears — small, tawny, tipped with black — that he inherited from his mother's cosmetic mod passing through the embryo. They swivel toward sound when he's nervous, which other kids find unsettling. He moves like water through cracks: fast, low, nearly invisible in crowds twice his height. A faded Ferrogate Transit patch is sewn onto his jacket, not because he works for them, but because he found it and thought it made him look official.\n\nTomás is fundamentally cheerful in a way that has nothing to do with his circumstances and everything to do with refusal. He has decided — with the firm logic of an eleven-year-old who has thought about it seriously — that being sad about things is slower than being useful. He collects information the way other kids collect tokens, storing it in a mental ledger he calls 'what's worth knowing.' He prays to the E.L.F. he believes lives in the junction box at Pipe Fourteen every morning, leaving a single cached data packet as offering.",
   "psychology": {
     "facet_weights": {
@@ -164,5 +164,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Ferrogate Transit",
+    "Jefferson Switch",
+    "Adaeze Chen-Hawkins",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

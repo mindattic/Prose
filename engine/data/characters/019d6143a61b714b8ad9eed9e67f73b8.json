@@ -11,7 +11,7 @@
   "role": "street poet and oral performer",
   "age": 67,
   "status": "active",
-  "location": "Pilsen Veil — performs at the junction of Menomonee Gulch and Mexicantown Libre",
+  "location": "Pilsen Veil — performs at the junction of Menomonee Gulch and Mexicantown Libre, near Halsted and Division",
   "description": "Ghislain is old in the way the city makes people old — not withered but compacted, all the softness burned away until what remains is extremely dense. He is dark-skinned, Congolese and Russian heritage visible in the breadth of his face and his pale grey eyes, which are startling and which he has never modified because he believes his body came to him as a message he is still decoding. He wears the same long coat in all seasons, patched so many times it has become a map of itself, and he carries a battered audio-capture pendant around his neck that predates most of the people he performs for. He smells of coffee and the particular chemical tang of Pilsen Veil's air.\n\nHe stands at his corner three or four days a week and recites — original poems, memorized classics from a dozen traditions, improvised responses to whatever is happening that day in the Veil. He does not pass a hat. He does not have an uplink for transfers. He accepts food, sometimes. He has been doing this for thirty-one years, through two corporate rezoning attempts, a flood event, a plague year, and a period when Ferrogate Transit security actively moved him on weekly. He came back each time. He is not sentimental about this — he describes it as a job, and himself as a worker.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,20 @@
   "registered_firearms": [
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Kang-Petrov Arms KPS-9 'Rattler'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Mexicantown Libre",
+    "Menomonee Gulch",
+    "Jefferson Switch",
+    "Pilsen Veil",
+    "Palladian Construction",
+    "The Heritage Vault",
+    "Copperveil Intelligence",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "ARCHIVE",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

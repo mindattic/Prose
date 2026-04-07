@@ -12,7 +12,7 @@
   "role": "protection racket enforcer and neighborhood fixer",
   "age": 51,
   "status": "active",
-  "location": "South Deering Sump, specifically the Boilerplate Quarter commercial strip",
+  "location": "South Deering Sump, specifically the Boilerplate Quarter commercial strip, near North Ave and Damen",
   "description": "Toluwani is a large woman who moves with the deliberate economy of someone who learned long ago that size is information and waste is weakness. Her skin is very dark, mapped with a network of old scar tissue on the left forearm that she has never had repaired — she calls it the ledger, because each one corresponds to a lesson, and she is still learning. Her hair is thick and natural, shot through with silver she refuses to cover, worn pulled back for work and loose at home. Her eyes are unmodded warm brown and miss nothing. She has retractable ceramic-composite knuckle caps, practical rather than decorative, and a torso subdermal weave that she describes as 'just common sense at my age.'\n\nShe has worked the Boilerplate Quarter for twenty-three years, first as a runner, then as muscle, then as the person who decides how the Quarter works. She is not precisely in charge of a gang — she is more the load-bearing wall of an informal security arrangement that has kept the Sump's legitimate small businesses from being absorbed by three different Stockyard-adjacent syndicates. She collects her fees, handles disputes, and occasionally applies physical remediation to problems that require it. The shopkeepers mostly think of her the way people think of weather — a constant, sometimes destructive, ultimately just a feature of the environment. A few of them genuinely love her.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,16 @@
   "registered_firearms": [
     "Crucible Industries Ember Rifle ER-7 'Ashfall'",
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
-  ]
+  ],
+  "related_entities": [
+    "South Deering Sump",
+    "Gage Circuit",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Adaeze Chen-Hawkins",
+    "Lazarus LX-2 'Lab Rat'",
+    "Silver",
+    "Slagworks Industrial",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Underworld"
 }

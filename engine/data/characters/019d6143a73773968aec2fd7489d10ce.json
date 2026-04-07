@@ -12,7 +12,7 @@
   "role": "Loan shark and bookmaker operating out of Gravesend Basin",
   "age": 44,
   "status": "active",
-  "location": "Gravesend Basin — runs her operation from a repurposed fish-processing barge called the Mercy Float",
+  "location": "Gravesend Basin — runs her operation from a repurposed fish-processing barge called the Mercy Float, near Kedzie and Division",
   "description": "Zinzile is a compact, broad-shouldered woman with deeply weathered brown skin and silver-streaked locs she keeps pinned under a battered captain's cap. Her eyes have been modded with abacus-patterned irises — concentric rings of amber and black that scroll subtly when she's calculating, which is always. She dresses in practical waterproofed layers, always with a ledger-shaped datapad holstered at her hip like a sidearm. A faded tattoo of a Polynesian wave pattern wraps her left forearm, overlaid years later with a Czech geometric border she had done in a moment of sentimental reclamation.\n\nZinzile speaks softly and precisely, the way a person does when they've learned that volume is for people who aren't sure they'll be obeyed. She extends credit with genuine warmth — she believes in people, or she says she does — and collects with a patience that her debtors consistently mistake for mercy until they understand it is something far more calculated. She keeps meticulous handwritten backups of every transaction because she trusts no network she doesn't own.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,19 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Gravesend Basin",
+    "The Reclamation Assembly",
+    "NeuralPath CalmLine Chronic Pain Suppressor",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Gradient Compact",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll"
+  ],
+  "district": "The Shelf"
 }

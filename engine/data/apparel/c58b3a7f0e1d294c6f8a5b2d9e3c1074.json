@@ -1,0 +1,40 @@
+{
+  "id": "c58b3a7f0e1d294c6f8a5b2d9e3c1074",
+  "name": "Stahl-Koenig Industries IronGuard Assault Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Brutalist matte-black and industrial rust-red composite plate armor over reinforced ballistic fatigues, bearing Stahl-Koenig's angular SK-anvil logo embossed in iron-grey on the chest and helmet crest. The helmet is a full-skull hard shell with integrated thermal overlay and blast-rated visor, built to survive foundry-floor conditions as readily as a firefight. Load-bearing rig is heavy-duty modular steel-frame webbing carrying breaching tools, suppression rounds, and a corded industrial torch. Boots are foundry-grade magnesium-alloy reinforced, rated for molten splash and ballistic fragmentation.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "composite ballistic plate",
+    "reinforced ballistic weave fatigues",
+    "magnesium-alloy boot reinforcement",
+    "steel-frame load webbing",
+    "blast-rated polycarbonate visor"
+  ],
+  "functionality": "Blast and fragmentation resistance, thermal overlay HUD, foundry-rated heat protection, and heavy breaching equipment compatibility.",
+  "what_it_says": "Stahl-Koenig doesn't send diplomats — they send infrastructure.",
+  "worn_by": [
+    "Stahl-Koenig IronGuard security forces",
+    "industrial asset protection units",
+    "facility siege response teams"
+  ],
+  "manufacturer": "Stahl-Koenig Industries Defense Manufacturing Arm",
+  "price_range": "Φ 5,500–Φ 8,000 (issued)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An IronGuard unit has been stationed inside a facility that officially shut down three years ago — and they're still receiving active supply drops.",
+    "The embossed SK-anvil logo on one operative's chest plate has been ground off and spray-painted over — someone is running a ghost unit."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "military_corpsec_kit",
+    "stahl_koenig",
+    "industrial_security",
+    "tactical",
+    "heavy_assault",
+    "corp_issued"
+  ]
+}

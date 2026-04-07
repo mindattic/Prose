@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit Security officer, Kessler Interchange beat",
   "age": 34,
   "status": "active",
-  "location": "Kessler Interchange, transit hub level 4",
+  "location": "Kessler Interchange, transit hub level 4, near Milwaukee and Damen",
   "description": "Yemisi is a broad-shouldered woman with deep umber skin and close-cropped natural hair threaded with copper wire implants that catch the platform lights when she turns her head. Her left eye is a standard-issue Ferrogate tactical unit — flat gray iris with a faint targeting reticle that glows amber when she's scanning — but her right eye is entirely her own, warm brown and quick to crinkle with exhaustion or irritation. She wears her transit security uniform like armor, every crease deliberate, badge always centered. Off-shift she becomes almost unrecognizable, softer somehow, though the copper threads remain.\n\nYemisi has the particular weariness of someone who has spent eleven years asking people to please move away from the yellow line. She is not cruel, not corrupt, not heroic — she is simply present, day after day, in a job that rewards no one. She has a sharp eye for trouble three seconds before it starts and a stubborn reluctance to escalate past what the situation actually needs. Her coworkers call her Brick because she doesn't move.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,14 @@
   ],
   "registered_firearms": [
     "Crucible Industries Fang-9 'Switchblade'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

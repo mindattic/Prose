@@ -12,7 +12,7 @@
   "role": "Building cleaner, overnight shift, Lakeview Neon residential-commercial tower",
   "age": 26,
   "status": "active",
-  "location": "Lakeview Neon (works nights, sleeps days in a shared unit in Edgewater Prism)",
+  "location": "Lakeview Neon (works nights, sleeps days in a shared unit in Edgewater Prism), near Lincoln and Clark",
   "description": "Praxedes is slight and angular with the kind of quiet that makes them easy to overlook — which is exactly the point, and also the source of a private bitterness they would never admit to. Their skin is a deep warm brown, their hair grown out into an unpatterned cloud that they pull back with whatever is close to hand. Their most notable feature is cosmetic geneware that makes their skin emit very faint luminescent patches in irregular shapes across their collarbones and shoulders, something like lichen on stone — they got it done in a Ferment Quarter studio at twenty-two when they had briefly more money, and now they keep it because it gives them something to look at during the long silent corridors of the overnight shift. They wear Tessera-brand cleaner coveralls two sizes too large that they've hemmed and repaired so many times the cuffs are a different fabric entirely.\n\nThey are intensely observant in the way that invisible people become — they have catalogued the habits of two hundred and fourteen residents in Lakeview Neon without any of them knowing their name. They write things down in a physical notebook, small cramped handwriting, not for any purpose they've articulated but because it feels like proof that the world exists and they are in it. Off shift they are funny and unexpectedly warm, quick with a dry joke, but it takes time to reach that person. Most people never do.",
   "psychology": {
     "facet_weights": {
@@ -192,5 +192,16 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ]
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "Lakeview Neon",
+    "Kang Athletics KA-200 'Padwork'",
+    "WELLSPRING",
+    "Tessera Corponation",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Laceworks"
 }

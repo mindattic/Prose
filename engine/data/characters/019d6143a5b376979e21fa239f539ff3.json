@@ -12,7 +12,7 @@
   "role": "Bio-waste disposal technician at Aurochs Medical Complex, with a side practice in informal pharmaceutical redistribution",
   "age": 32,
   "status": "active",
-  "location": "Aurochs Medical Complex — sub-basement waste processing facility; lives in Blackpipe Corridor",
+  "location": "Aurochs Medical Complex — sub-basement waste processing facility; lives in Blackpipe Corridor, near Armitage and Milwaukee",
   "description": "Aminata is a compact, deliberately unmemorable woman who has spent years perfecting the skill of being overlooked. She wears the grey-green uniform of Aurochs support services, keeps her dark hair pulled back in a practical bun, and has the kind of face that is genuinely warm in repose and genuinely blank on demand — she switches between them like a light. Her skin is a deep warm brown and her eyes are standard-issue dark, though the left one occasionally produces a faint violet phosphorescence from a bioluminescent mod she got second-hand and can't fully suppress, which she covers with a tinted contact lens that she hates. Her hands are permanently chemical-stained at the knuckles from the sterilization protocols.\n\nShe processes medical waste: sharps, expired biologics, surgical byproducts, and — this is where it gets complicated — the medications that are technically expired but functionally still effective, which Aurochs destroys by protocol and she intercepts by system. She has built a careful, small operation: she identifies medications that are safe and functional, diverts them before incineration, and routes them to four street clinics in The Narrows and Blackpipe Corridor at cost or below. She does not think of this as heroic. She thinks of it as the obvious thing that someone in her position could do, and she cannot understand why more people in her position don't do it. This is perhaps the most dangerous thing about her.",
   "psychology": {
     "facet_weights": {
@@ -195,5 +195,17 @@
   "registered_firearms": [
     "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Blackpipe Corridor",
+    "The Narrows Compact",
+    "Dredge Mining Collective",
+    "Riddle",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "The Gradient Compact",
+    "The Pure Hand",
+    "Tibor Osei-Svanstrom"
+  ],
+  "district": "The Circuit"
 }

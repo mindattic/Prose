@@ -12,7 +12,7 @@
   "role": "Stand-up comedian and underground spoken word performer, Tier 1",
   "age": 24,
   "status": "active",
-  "location": "Pilsen Veil, rotating between a shared squat above a protein noodle stall and whatever venue will have him",
+  "location": "Pilsen Veil, rotating between a shared squat above a protein noodle stall and whatever venue will have him, near Western and Chicago Ave",
   "description": "Femi Q is lean and restless, built like someone who burns through calories via nervous energy rather than exercise. His Yoruba-Polish-Azerbaijani ancestry gives him a face of striking contradictions — high Slavic cheekbones, the warm brown skin and broad nose of his father's Lagos line, and his Azerbaijani grandmother's dramatically hooded eyes that he's chosen to highlight with geneware iris mods that shift through patterns of concentric gold rings when he's performing. His hair is kept very short on the sides and erupts into a soft irregular cloud on top, usually unwashed. He dresses in layers of secondhand everything — three collars, mismatched sleeves — that somehow cohere into something that reads as intentional.\n\nHe is one of the fastest talkers in Pilsen Veil and possibly the most dangerous, because he deploys his speed to bury the sharpest observations inside barrages of absurdity before anyone can quite register they've been cut. He performs at whatever unlicensed venue will book him — back rooms, open drain channels with an audience of forty, once the cargo bay of a stationary Ferrogate car. His material cycles obsessively through class anxiety, the theater of corponation loyalty, and the specific humiliations of being young and broke in a city that sells young and broke as aesthetic. He is genuinely funny. He is also genuinely angry, and the seam between the two is where his best work lives.",
   "psychology": {
     "facet_weights": {
@@ -221,5 +221,15 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Pilsen Veil",
+    "Grandmother",
+    "Ferrogate Transit",
+    "Nesting Doll",
+    "Ringo Corponation",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

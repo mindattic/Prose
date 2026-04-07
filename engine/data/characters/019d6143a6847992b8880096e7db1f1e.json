@@ -12,7 +12,7 @@
   "role": "Apprentice to a machine-tender at the Harrowgate Industrial Plateau",
   "age": 14,
   "status": "active",
-  "location": "Harrowgate Industrial Plateau",
+  "location": "Harrowgate Industrial Plateau, near North Ave and Damen",
   "description": "Ondřej is stocky and solid, with light brown skin that is perpetually smudged with machine grease in the creases of their knuckles and around their ears, and close-cropped dark hair they keep practical-short. Their eyes are a pale grey-green — an odd inheritance from some distant Slavic ancestor — and they have a habit of blinking very slowly at people when thinking, which adults find either unsettling or endearing. They dress in heavy canvas work clothes with magnetic clip-points for tools, and their boots are steel-toed hand-me-downs two sizes too large that they've stuffed with folded composite foam to fit. One small personal touch: self-applied geneware pigment spots on their left wrist, a constellation pattern in copper-gold bioluminescence that a friend did with a secondhand kit.\n\nOndřej is quiet in the way of people who have spent years listening to machines rather than people. They understand how things fit together — mechanical systems, load-bearing structures, the logic of why something was designed the way it was — with an intuitive fluency that their master-tender, old Vesović-Nkemba, calls 'the feeling.' They do not particularly enjoy dealing with people they don't know, but they are fiercely attached to the small community of the Plateau floor. They pray to a Plateau E.L.F. called Grind that the workers believe inhabits the main press assembly and that, legend holds, will seize up the machinery to warn of coming danger.",
   "psychology": {
     "facet_weights": {
@@ -166,5 +166,17 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Harrowgate Industrial Plateau",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Free Assembly",
+    "Palette",
+    "Copper",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile",
+    "Steel",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

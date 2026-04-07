@@ -12,7 +12,7 @@
   "role": "Street pharmacist — off-prescription medications, cognitive supplements, pain management, and quiet mood chemistry",
   "age": 63,
   "status": "active",
-  "location": "The Narrows, Deepwell Station",
+  "location": "The Narrows, Deepwell Station, near sub-level access near Dearborn and Jackson",
   "description": "Henryk is a man who has been slowly becoming the color of his surroundings for twenty years: grey-brown skin softened by age and poor lighting, a close-cropped beard gone entirely silver, and eyes that are pale grey-green and still sharply diagnostic behind a pair of clip-on lens augmentations he wears primarily for the magnification when reading small labels. He is not tall and was never physically imposing, but he holds himself with the specific gravity of someone who has been trusted with real things and has not always deserved it and knows it. He dresses practically in dark thermals and a long coat with more internal pockets than external — his pharmacy is entirely contained within his person.\n\nHe sets up in the same alcove at Deepwell Station every day, at the same time, with the same small folding table and the same hand-lettered sign that says CONSULTATIONS in three languages. Everyone in The Narrows knows what he actually sells, but he maintains the fiction of the sign with complete sincerity. He was a licensed pharmaceutical technician once, for a Helix Biosystems subsidiary, until he wasn't. He understands chemistry at a level his current location does not require and does not reward, and this gap between his capacity and his circumstances has become the central texture of his interior life.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,17 @@
   "carried_weapons": [
     "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "Harrowgate Industrial Plateau",
+    "South Deering Sump",
+    "Irontide Tidal Energy",
+    "Silver",
+    "The Pale Mile",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Underworld"
 }

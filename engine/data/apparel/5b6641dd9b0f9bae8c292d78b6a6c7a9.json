@@ -1,0 +1,36 @@
+{
+  "id": "5b6641dd9b0f9bae8c292d78b6a6c7a9",
+  "name": "Helion Manufacturing Cable-Management Harness",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A torso-worn harness with integrated cable routing channels, clip points, and strain-relief loops designed for technicians who work with multiple data cables, power feeds, and diagnostic lines simultaneously. The harness keeps cables organized, untangled, and secured against the body during movement through tight maintenance corridors.\n\nA mundane but essential accessory for anyone who has tripped over their own cabling in a crawlspace and learned the hard way that cable management is a survival skill when you are thirty meters inside a ventilation shaft.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reinforced nylon webbing",
+    "cable-routing channels",
+    "strain-relief loops"
+  ],
+  "functionality": "Cable organization, strain relief, hands-free cable management",
+  "what_it_says": "You work in spaces where tripping on a cable could mean falling off a catwalk, and you have solved that problem permanently.",
+  "worn_by": [
+    "maintenance technicians",
+    "network installers",
+    "infrastructure workers"
+  ],
+  "manufacturer": "Helion Manufacturing",
+  "price_range": "Φ95",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Cable-Management Harness found in a restricted server room still has three cables clipped to it — each one spliced with data-intercept taps that were recording traffic from three separate corponation networks simultaneously."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 1",
+    "harness",
+    "cable management",
+    "technician",
+    "utility"
+  ]
+}

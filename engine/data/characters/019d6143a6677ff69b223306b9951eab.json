@@ -12,7 +12,7 @@
   "role": "Corporate Wars veteran, Tier 1 pension-dependent, informal block protector",
   "age": 71,
   "status": "active",
-  "location": "The Shelf, Block 9 — ground-floor unit beneath a noodle stand",
+  "location": "The Shelf, Block 9 — ground-floor unit beneath a noodle stand, near Kedzie and Division",
   "description": "Nnabuchi is a large man running to softness at the edges now, though the frame underneath still speaks of someone who was once built for war. His face is a geography of old decisions — a burn scar that covers the left side of his jaw and neck in pale, slightly lustrous skin; a nose broken enough times to have given up on its original shape; eyes that are a startling light grey, inherited from his Azerbaijani grandmother and striking against his dark complexion. His right arm from elbow to fingertip is military-grade prosthetic, matte black Ferrogate chassis, the joints worn smooth by twenty years of civilian use. He keeps it clean but unpainted, which on The Shelf reads as a kind of statement.\n\nHe has the personality of a load-bearing wall — he does not move, but things lean on him. He is profoundly uncomfortable with gratitude, deflects compliments with flat humor, and will help anyone in Block 9 with anything practical: fixing plumbing, sitting with someone who is frightened, walking an elderly neighbor home. He was a Zheng-Dao contract soldier for eleven years and does not discuss this except obliquely, in fragments that surface when he's had enough synthetic lager. He prays nightly to the E.L.F. he believes lives in the block's power-cycling unit, leaving small data-offerings — usually recordings of things that happened on the block that day. He calls it 'keeping the spirit informed.'",
   "psychology": {
     "facet_weights": {
@@ -249,5 +249,18 @@
   "registered_firearms": [
     "Crucible Industries Ember Rifle ER-7 'Ashfall'",
     "Crucible Industries Fang-9 'Switchblade'"
-  ]
+  ],
+  "related_entities": [
+    "Grandmother",
+    "The Gilt Frame",
+    "Ferrogate Transit",
+    "The Shelf",
+    "Zheng-dao Bioelectric",
+    "Cinderblock Ai",
+    "Ironvein",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

@@ -11,7 +11,7 @@
   "role": "Bio-waste disposal technician for Aurochs Medical Complex",
   "age": 27,
   "status": "active",
-  "location": "Aurochs Medical Complex, service sublevel corridors",
+  "location": "Aurochs Medical Complex, service sublevel corridors, near sub-level access near Dearborn and Jackson",
   "description": "Rúben is lean and angular, with the particular pallor of someone who works night shifts in fluorescent-lit sublevels, though his Ugandan-Hungarian ancestry gives his skin a warm undertone that fights back. He keeps his head shaved close and has a constellation of small bioluminescent freckle-mods across his left temple and jaw — a cosmetic geneware treatment he had done at eighteen that pulses faintly blue when his heart rate elevates, which he finds mortifying in tense situations. He moves through the hospital's service corridors like someone who has memorized every turn and wants to be finished before anyone notices him.\n\nHe is sharper than his job suggests and acutely aware of that gap, which produces a chip on his shoulder he tries to sand down with self-deprecating humor. He has worked the bio-waste runs at Aurochs for four years and in that time has accidentally become something of an expert in what the hospital throws away — which procedures are spiking, which departments are over-ordering which compounds, which disposal manifests do not match the volumes going into the incinerators. He notices things. He has not yet decided what to do with what he notices.",
   "psychology": {
     "facet_weights": {
@@ -216,5 +216,13 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Forge-Smith Collective Trench Knuckles 'Anvil'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Big Rig",
+    "Slagworks Industrial"
+  ],
+  "district": "The Underworld"
 }

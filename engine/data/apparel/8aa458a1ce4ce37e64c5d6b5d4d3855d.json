@@ -1,0 +1,36 @@
+{
+  "id": "8aa458a1ce4ce37e64c5d6b5d4d3855d",
+  "name": "Synthesis Collective Biofilm Mask",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A full-face mask made from living biofilm substrate that bonds temporarily to the wearer's skin, creating a seamless, airtight seal. The biofilm filters airborne toxins, pathogens, and particulates while allowing normal respiration through engineered micropores. The mask is semi-transparent, giving the wearer's face a translucent, slightly unsettling appearance.\n\nDeveloped for Synthesis Collective substrate handlers, the Biofilm Mask has become a status symbol in certain counter-culture circles where the organic-tech aesthetic carries ideological weight.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "living biofilm substrate",
+    "engineered micropore membrane",
+    "nutrient gel applicator"
+  ],
+  "functionality": "Airborne filtration, pathogen barrier, airtight seal, 48-hour active lifespan",
+  "what_it_says": "You trust living technology more than dead machinery, and you want everyone to see that choice on your face.",
+  "worn_by": [
+    "substrate handlers",
+    "counter-culture adherents",
+    "biotech enthusiasts"
+  ],
+  "manufacturer": "Synthesis Collective",
+  "price_range": "Φ2,400",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A batch of Biofilm Masks begins bonding permanently to wearers' faces — the living substrate mutated, and removal now requires surgical intervention."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 4",
+    "mask",
+    "biofilm",
+    "Synthesis Collective",
+    "organic-tech"
+  ]
+}

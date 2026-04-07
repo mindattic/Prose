@@ -12,7 +12,7 @@
   "role": "Forensic evidence handler and chain-of-custody specialist, Meridian 88 Metro Police",
   "age": 52,
   "status": "active",
-  "location": "Fort Anchor, Metro Police Central Evidence Repository",
+  "location": "Fort Anchor, Metro Police Central Evidence Repository, near Halsted and Division",
   "description": "Erzsébet is a sturdy, meticulous woman with iron-grey locs she keeps pinned up during work hours and lets down everywhere else, and deep brown skin that has picked up the particular pallor of someone who spends most of their life under artificial light. Her hands are always gloved when she is working and bare when she isn't — a transition she makes with a deliberateness that people who know her recognize as the boundary between Erzsébet the professional and Erzsébet the person. She has no cosmetic modifications and regards them with neither judgment nor interest; the question simply never came up for her.\n\nShe has worked Metro's Central Evidence Repository at Fort Anchor for twenty-three years and has survived five departmental reorganizations, three chiefs of police, two corruption purges, and one literal flood that compromised fourteen meters of archival shelving. She knows the repository the way surgeons know bodies — its logic, its failures, its places where things disappear and where they don't. She is the person Metro detectives call when they need to know if something was ever there. She is also, quietly, the person who notices when something that should be there isn't, and she keeps her own records because she stopped trusting Metro's in her eighth year.",
   "psychology": {
     "facet_weights": {
@@ -190,5 +190,15 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "Riddle",
+    "Fort Anchor",
+    "Full Clearance (The Erasure Mix)",
+    "Chimera-Null",
+    "The Pure Hand",
+    "Iron"
+  ],
+  "district": "The Shelf"
 }

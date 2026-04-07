@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor — bespoke street-wear, gang colors, identity-obscuring gear",
   "age": 29,
   "status": "active",
-  "location": "The Laceworks, Ironvein",
+  "location": "The Laceworks, Ironvein, near Lincoln and Clark",
   "description": "Sovan is willowy and precise, with the kind of stillness that comes from spending twelve hours a day bent over a fabrication rig. Their skin is a warm golden-brown, their hair grown long on one side and close-cropped on the other — the long side dyed in a bioluminescent gradient that shifts from deep violet to electric coral depending on their mood, a geneware modification they maintain obsessively. Their hands are always in motion: folding, measuring, picking at a loose thread on their own sleeve. They have a retractable needle fitted into the tip of their right index finger — a workshop mod they had done at seventeen that has never quite worked the way the cheap clinic promised, occasionally deploying itself at embarrassing moments.\n\nSovan occupies a converted shipping container in the Laceworks that they've lined with bolts of reclaimed synth-fabric, printed patterns, and hand-drawn designs pinned to every surface. They are soft-spoken to the point of being mistaken for shy, but their shyness is actually precision: they don't speak until they have something exact to say. Their designs tell stories — a jacket's lining holds a hidden map of a neighborhood's safe houses, a dress's hem is embroidered with the names of people who died in the 2193 Ironvein flooding. They are fiercely proud of their craft and contemptuous of fast-print fashion houses. They are also quietly terrified that their work will get them killed, because some of what they make falls into categories that certain people would prefer didn't exist.",
   "psychology": {
     "facet_weights": {
@@ -175,5 +175,14 @@
     "Hearthstone Firearms Model 9 'Payday'",
     "Street Custom 'Baptism' Electrified Water Cannon"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Laceworks",
+    "Ironvein",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Needle",
+    "Bashir Quansah-Mehrotra"
+  ],
+  "district": "The Laceworks"
 }

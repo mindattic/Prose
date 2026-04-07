@@ -13,7 +13,7 @@
   "role": "Lead information broker and network curator — The Quiet Table",
   "age": 61,
   "status": "active",
-  "location": "The Circuit — operates from a private booth in a members-only tea house called The Leaf",
+  "location": "The Circuit — operates from a private booth in a members-only tea house called The Leaf, near Damen and Armitage",
   "description": "Glass Maren has been trading information in Meridian 88 for longer than most runners have been alive. He started as a corporate intelligence analyst for a pharmaceutical conglomerate that no longer exists — consumed by Veridian Health Sciences in the consolidation wave of the 2180s. When the acquisition happened, Glass walked away with two things: his contact network and an understanding that information only has value if you control its context.\n\nHe built The Quiet Table over twenty years — a three-person operation that competes with Sable's network by occupying a different ecological niche. Where Sable trades in urgent, operational intelligence — who's doing what right now — the Quiet Table trades in deep context. History. Relationships. The slow-moving currents that determine which corporations will merge, which jurisdictions will shift, which politicians will fall. Their clients are patient people who plan in years, not hours.\n\nGlass is tall, thin, with a face that has weathered into distinguished rather than old. Silver hair, clean-shaven, clothes that are twenty years out of fashion and perfectly maintained. He moves slowly because speed is for people who haven't planned far enough ahead. His voice is the kind of quiet that makes other people lean in. He has never raised it in public. He has never needed to.",
   "psychology": {
     "facet_weights": {
@@ -191,5 +191,15 @@
   "carried_weapons": [
     "Street Custom 'Sunday School' Weaponized Religious Artifact"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Circuit",
+    "VERIDIAN GHOST",
+    "ARCHIVE",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Silver",
+    "Glass"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Cross-district contraband specialist — smuggler",
   "age": 59,
   "status": "active",
-  "location": "The Underbelly — sub-street tunnels and maintenance corridors",
+  "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near Dearborn and Jackson",
   "description": "Liora Gutierrez-Asante is lean and angular, all sharp edges and visible tension. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLiora Gutierrez-Asante has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,17 @@
     "Street Custom 'Backfire' Weaponized Exhaust System",
     "Street-Custom Loaded Pipe 'Bell Ringer'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Shelf",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Clover"
+  ],
+  "district": "The Underworld"
 }

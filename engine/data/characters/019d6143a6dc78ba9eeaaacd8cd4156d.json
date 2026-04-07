@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor and short-order cook",
   "age": 22,
   "status": "active",
-  "location": "The Burnished Market — rotating pitch between Grand Corridor and Brewer's Spine, depending on enforcement sweeps",
+  "location": "The Burnished Market — rotating pitch between Grand Corridor and Brewer's Spine, depending on enforcement sweeps, near North Ave and Damen",
   "description": "Sousou is young enough that his face hasn't fully decided what it's going to settle into — there's still something unfinished about him, a quality he compensates for with a loudness of presence that fills the space around his cart. He is medium height, lean, with a warm light-brown complexion and color-changing hair he keeps cut short on the sides and longer on top, cycling it through oranges and greens depending on the day's mood — today it's a deep amber that shifts to jade in direct light. His hands are already the hands of someone who's been cooking since he could reach a surface: scarred across the knuckles from hot metal, permanently stained around the cuticles from various spice pastes. He has enhanced scent glands, which he will tell you is the best modification a cook can get and which is responsible for approximately forty percent of his competitive advantage.\n\nHis cart runs on two burners and a philosophy: the broth is Congolese-Polish in DNA, built from a fermented corn base with a smoked beef backbone his grandmother taught him and a roux technique his father learned from a Polish neighbor in Lockhaven South, and it is not available any other way in Meridian 88. He is aware of this. He is not modest about it. He runs the cart alone, moves it three times a week to stay ahead of market enforcement, and has a rotating customer base that follows him via a stripped-down community mesh channel. He is also, somewhat to his own surprise, becoming good at this — not just cooking, but the business of it — and has started to suspect that he might want more than a cart.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,24 @@
   "carried_weapons": [
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Lockhaven South",
+    "Dredge Mining Collective",
+    "Grand Corridor",
+    "Brewer's Spine",
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Grandmother",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
+    "Tessera Corponation",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Adaeze Chen-Hawkins",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Holographic artist and VR experience designer",
   "age": 31,
   "status": "active",
-  "location": "The Loft, Edgewater Prism district",
+  "location": "The Loft, Edgewater Prism district, near Lincoln and Clark",
   "description": "Yseult has the look of someone who spends most of their time inside illuminated spaces — her Ghanaian-Serbian complexion has an indoor pallor she compensates for with chromatic eye mods that shift through the visible spectrum in slow cycles, making her gaze feel like watching a sunset in real time. She's slight, precise in her movements, and habitually overdressed in a corporate-minimalist style that reads as slightly out of place in The Loft's more chaotic aesthetic — she worked a Tessera contract for three years and the wardrobe habits stuck even though she hates that they did. Her fingers are constantly moving, twitching through gestural commands on an AR layer only she can see.\n\nYseult builds experiences, not art objects — immersive holographic and VR environments commissioned for galleries, underground events, and occasionally for clients she won't name. She is technically brilliant and conversationally anxious, most comfortable when she can communicate through the work rather than through words. She has strong opinions about what holographic art should do — 'not decorate, not distract, but displace, just for a moment' — and will defend them at length if pressed, which is the one topic that makes her forget to be nervous. She left her Tessera contract under circumstances she describes as 'a philosophical disagreement,' which is technically true and also a significant understatement.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,11 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "The Loft",
+    "Tessera Corponation"
+  ],
+  "district": "The Laceworks"
 }

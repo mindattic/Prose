@@ -13,7 +13,7 @@
   "role": "Crew lead and primary courier — Switchback",
   "age": 22,
   "status": "active",
-  "location": "The Shelf — operates from a rooftop squat above a defunct laundromat",
+  "location": "The Shelf — operates from a rooftop squat above a defunct laundromat, near Ashland and Chicago Ave",
   "description": "Jinx Alvarado runs packages across jurisdiction lines faster than anyone in Meridian 88 and has the shattered collarbone scars to prove it. Born on the Shelf, raised in the gap between governance tiers, she learned early that speed is the only resource the excluded have that the corps can't buy. She was running messages for local vendors at twelve, crossing into Milwaukee Core at fourteen, and by sixteen she'd built a reputation as the courier you call when the package absolutely has to cross three jurisdictions before the automated surveillance cycle resets.\n\nShe founded Switchback at nineteen with her two closest friends — not out of ambition, but because running alone was getting people killed. The Shelf's courier kids were being picked off by corporate security teams who treated them like vermin in the infrastructure. A crew meant backup, meant overlapping routes, meant someone noticed when you didn't come home. Three years later, Switchback is the Shelf's premier courier operation: small, fast, and just reckless enough to take jobs that the professional crews won't touch.\n\nJinx is small — five-three, wiry, built for rooftops and ventilation shafts. Her hair is cut asymmetrically and changes color with whatever dye is available. She moves constantly — pacing, climbing, balancing on railings. Stillness is an emergency state. Her augmentations are visible: the spring-loaded ankle joints catch light when she runs, and the grip pads on her palms leave faint marks on everything she touches.",
   "psychology": {
     "facet_weights": {
@@ -191,5 +191,16 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Shelf Life",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Lacuna Genomics",
+    "Ringo DV-4 'Courier'"
+  ],
+  "district": "The Shelf"
 }

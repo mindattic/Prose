@@ -12,7 +12,7 @@
   "role": "Q-zero ghost — stateless person with no digital identity",
   "age": 24,
   "status": "active",
-  "location": "Shifting — currently sheltering in the drainage underbelly of Grand Crossing Gate",
+  "location": "Shifting — currently sheltering in the drainage underbelly of Grand Crossing Gate, near sub-level access near LaSalle and Congress",
   "description": "Zephyrine exists in a strange category of person: alive but officially absent. Their biometric signature was purged from the city's dataweave three years ago during an administrative error that Axiom's records division declined to reverse because doing so would have required admitting the error existed. They have no Quanta account, no transit pass, no ration allocation, no UBC stipend — nothing. Every scanner they walk past registers a blank. They have adapted to this with a kind of furious ingenuity that reads, from the outside, as almost cheerful.\n\nThey are slender and quick, with a shaved head except for a single forelock dyed an uneven rust-orange. Their skin is dark brown and marked with small geometric stick-and-poke tattoos they did themselves — coordinates, symbols, small records of places they have been. They dress in layers chosen specifically for their lack of reflective surfaces, nothing that catches light or scanner arrays. Their bioluminescent geneware is subtle: a faint blue-green tracery along their collarbones that only shows in full darkness, a cosmetic mod done years ago when they still had an identity to attach it to. They smile easily and the smile never reaches the careful calculation in their eyes.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,16 @@
   "carried_weapons": [
     "Crucible Industries Viper Mk.III 'Copperhead'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "TESSERA PG-2 'Signature'",
+    "Crucible RE-2 'Receptionist'",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Nesting Doll",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Rust"
+  ],
+  "district": "The Underworld"
 }

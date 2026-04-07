@@ -12,7 +12,7 @@
   "role": "Holographic artist and choreographer",
   "age": 29,
   "status": "active",
-  "location": "Pilsen Veil, working out of a rented rehearsal bay in a building called the Meridian Hive",
+  "location": "Pilsen Veil, working out of a rented rehearsal bay in a building called the Meridian Hive, near Ashland and Division",
   "description": "Yannick is medium height and all kinetic energy, the kind of person who cannot sit without some part of him moving — tapping, shifting, bouncing a knee. His father's Malian bone structure and his mother's Czech coloring have given him an angular face with warm undertones, a combination he's leaned into with bioluminescent freckles across his cheeks and nose that glow soft amber under low light. He keeps his hair short except for a single long braid at his nape he wraps in conductive thread that connects to a personal haptic rig — his main instrument. His hands are covered in small calluses from years of dance and from the contact rigs he builds himself from salvaged holo-projector parts.\n\nHe makes work that lives at the intersection of choreography and holographic installation: his pieces require live performers moving through interactive holo-environments that respond to their bodies, creating something that is neither dance nor sculpture nor light show but something without a clean category name. He has a Tier 3 sponsorship from Axiom's cultural subdivision that he accepted last year with considerable public hand-wringing and that he still hasn't entirely made peace with. He is the most anxious person in any room who appears to be the least anxious person in that room.",
   "psychology": {
     "facet_weights": {
@@ -227,5 +227,17 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Pilsen Veil",
+    "Tessera Industries Holographic Distraction Projector HDP-5",
+    "Threshold",
+    "Chimera-Null",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

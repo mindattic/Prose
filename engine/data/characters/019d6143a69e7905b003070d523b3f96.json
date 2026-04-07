@@ -12,7 +12,7 @@
   "role": "Tailor and seamstress, runs a small alterations shop",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave, shop front on Czerny Row beneath the Ferrogate overpass",
+  "location": "Hamtramck Enclave, shop front on Czerny Row beneath the Ferrogate overpass, near Ashland and Chicago Ave",
   "description": "Priscila is a broad-shouldered woman whose hands tell her whole biography — thick calluses on her fingertips, ink stains in the whorls of her thumb, and a faint chemical burn scar along her left palm from an incident with synth-dye she doesn't discuss. Her hair is silver-streaked black, worn in a tight bun stabbed through with two long needles she uses as both tools and weapons of emphasis, jabbing the air when she makes a point. Her skin is deep brown and she has the mild bioluminescent pattern along her clavicle and shoulders — a pale amber tracery she got at forty as a birthday gift to herself, though she admits it's harder to see now that her skin has 'settled,' as she calls it.\n\nShe speaks plainly and fast, with a West African lilt layered under a flat Midwestern vowel she picked up from forty years in the Enclave. She is not warm exactly, but she is fair — customers who come in broke and come back with money find she remembers. She hoards thread colors obsessively, labeling them with her own taxonomy: 'lake green,' 'rust that means something,' 'the blue they stopped making.' She prays to the ELF that lives in her industrial sewing machine every morning, leaving a small data chip of her stitch-count logs as offering.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,17 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Ferrogate Transit",
+    "Lazarus LP-3 'Clinic Spider'",
+    "Stratum",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

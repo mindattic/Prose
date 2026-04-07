@@ -12,7 +12,7 @@
   "role": "Bootleg fashion and cosmetic geneware dealer, The Alban Souk",
   "age": 29,
   "status": "active",
-  "location": "The Alban Souk, Bronzeline",
+  "location": "The Alban Souk, Bronzeline, near Kedzie and Division",
   "description": "Søren is a living advertisement for their own product. Their skin shifts through slow amber-to-violet gradients every few hours — a mid-range bioluminescent geneware treatment they applied themselves using a bootleg kit and later refined. Their hair, worn in a dramatic architectural sweep pinned with illuminated wire, cycles through three pre-programmed color palettes depending on their mood. They are lean and angular, with sharp Armenian cheekbones from the Mirzoyan line and the long-limbed ease of someone entirely comfortable in their body. Their stall in the Alban Souk is less a stall and more a theater set: draped fabric in iridescent materials, a mirror framed in flickering ELF-light strips, and a rotating display of pigment-patch samples, pattern-iris contacts, and small gene-treatment vials in color-coded cases.\n\nSøren is relentlessly enthusiastic in a way that reads as exhausting until you realize it is completely genuine. They love transformation — the specific moment when someone looks in the mirror and becomes more themselves. They are generous with samples and merciless with bad taste, and will tell you honestly if something won't work for your skin tone or phenotype before they sell it to you. They have a gift for reading what someone actually wants versus what they say they want, which makes them an excellent dealer and an occasionally uncomfortable companion.",
   "psychology": {
     "facet_weights": {
@@ -254,5 +254,15 @@
     "Meridian Munitions Wheelgun-38 'Roundhouse'",
     "Street Custom 'Widowmaker' Rigged Power Tool"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Alban Souk",
+    "Bronzeline",
+    "Petra Glass",
+    "WELLSPRING",
+    "Lazarus EC-4 'Companion'",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

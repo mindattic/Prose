@@ -1,0 +1,42 @@
+{
+  "id": "9c5d2e4f7a1b3068d9c4e2f5b7a10d63",
+  "name": "Solenne Atelier AutoDry Stormweave Rain Cape",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A floor-sweeping rain cape in ivory-white smart-fabric that sheds water on contact and returns to a pressed, dry state within forty seconds via embedded micro-thermal filaments activated by body heat. Cut with a high Mandarin-Andean collar and a rear pleat that opens cleanly for wings or dorsal geneware. Worn at Spire level as a casual weather layer — the fact that it costs more than a Circuit worker's monthly wage is entirely the point.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "Solenne AutoDry smart-fabric",
+    "micro-thermal filament array",
+    "silk-analog inner lining",
+    "magnetic cape clasp — platinum-coated"
+  ],
+  "functionality": "Self-drying smart-fabric cape with body-heat-activated micro-thermal reset; rear pleat accommodates wing and dorsal geneware.",
+  "what_it_says": "The rain doesn't touch this person — not really, not in any way that matters.",
+  "worn_by": [
+    "Spire executives",
+    "corponation C-suite",
+    "geneware-modified elite",
+    "high-profile social figures"
+  ],
+  "manufacturer": "Solenne Atelier",
+  "price_range": "Φ8,400–Φ14,000",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A cape matching this description was left folded on a Shelf bench in Tier 1 last winter — no identification, no surveillance footage of who left it.",
+    "The AutoDry filament network can theoretically be reprogrammed; a Shelf hacker claims to have a method that turns it into a passive surveillance mesh."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "rain_gear",
+    "cape",
+    "smart_fabric",
+    "self_drying",
+    "tier_5",
+    "gene_compatible",
+    "spire_wear",
+    "luxury"
+  ]
+}

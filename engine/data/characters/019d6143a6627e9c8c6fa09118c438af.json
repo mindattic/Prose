@@ -12,7 +12,7 @@
   "role": "Corporate espionage and data exfiltration — data thief",
   "age": 41,
   "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Lake Shore and Wacker",
   "description": "Ngaire Rojas-Yeboah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 41, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a data thief out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Ngaire Rojas-Yeboah is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,14 @@
   "carried_weapons": [
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "Old Harbor"
 }

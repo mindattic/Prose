@@ -12,7 +12,7 @@
   "role": "Pawn shop owner and discreet secondhand goods trader",
   "age": 47,
   "status": "active",
-  "location": "The Burnished Market, Calumet Rise",
+  "location": "The Burnished Market, Calumet Rise, near North Ave and Damen",
   "description": "Oumou is a compact, precise woman with medium-dark skin, silver-shot black hair she keeps cropped close, and a pair of cat ears — slate grey, slightly large for her head — that she got at thirty-five as a birthday gift to herself and has never once regretted. Her shop, Ferreira & Found, occupies a permanent stall reinforced with welded security grating and smells of machine oil, old fabric, and the faintly sweet incense she burns for the E.L.F. she calls the Assessor, which she believes governs fair exchange and the honest weighing of value. The Assessor's shrine is a polished scale bolted to the back wall with small offerings of old coins and broken jewelry hanging from it.\n\nOumou is sharp, unhurried, and constitutionally impossible to rush or charm. She has a talent for appraising objects that borders on uncanny — she can hold a piece of chrome for thirty seconds and tell you where it came from, how old it is, and what its street value is within a few percent. She is not unkind but she is precise, and she runs her shop on a code of scrupulous fairness that has made her one of the most trusted figures in Calumet Rise. She is also one of the best-informed people in the district, because people tell you things when they are desperate to sell.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,15 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Helix Biosystems",
+    "Calumet Rise",
+    "The Gradient Compact",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Circuit"
 }

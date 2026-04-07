@@ -12,7 +12,7 @@
   "role": "The Disappeared — identity broker and document ghost",
   "age": 34,
   "status": "active",
-  "location": "Abyssal Threshold, mobile — no fixed residence",
+  "location": "Abyssal Threshold, mobile — no fixed residence, near sub-level access near LaSalle and Congress",
   "description": "Chibundo Ferreira-Yupik has no legal existence. No biometric registration, no UBC account, no corponation employment history, no Ferrogate transit record. They erased themselves from Meridian 88's surface datanet eleven years ago with painstaking, elegant precision, and they have spent every year since helping others do the same — for a fee, always for a fee. They are of middling height, slight, with warm sienna skin and close-cropped natural hair. Their most striking feature is what they've done to their biometric profile: geneware has altered their iris patterns every eighteen months for the last decade, and a subdermal signal-scatter mesh makes their face present differently to every facial recognition node they pass. To cameras, they are a continuous glitch. To people, they are vivid and specific — dark eyes that track everything, hands that are always moving, a smile that arrives half a second before it should, like they already knew the joke.\n\nThey operate out of the Abyssal Threshold transit corridors, never sleeping in the same cache twice. Their clients are people fleeing — debt collectors, abusive partnerships, corponation indenturement, the occasional actual criminal. Chibundo does not ask why. They ask for documentation of identity, ask for Φ40-200 depending on complexity, and they provide the tools of vanishing: signal-scatter protocols, route maps to communities that do not report to the surface grid, contacts within the Bore Rat communities who will accept someone new. They are not a forger exactly — they don't create false identities. They create absences.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,17 @@
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Abyssal Threshold",
+    "Meridian 88",
+    "Threshold",
+    "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
+    "Big Rig",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Tessera Corponation",
+    "The Pure Hand"
+  ],
+  "district": "The Underworld"
 }

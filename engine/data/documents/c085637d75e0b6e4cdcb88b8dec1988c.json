@@ -6,7 +6,10 @@
   "date": "2198",
   "classification": "restricted",
   "description": "...the green is moving faster now. It's not growing. It's— [7 second silence] ...we're pulling back to the ridgeline. If you don't hear from us by [CORRUPTED] ...tell my wife I— [TRANSMISSION ENDS]",
-  "related_entities": [],
+  "related_entities": [
+    "Canopy Station Nine",
+    "Ridgeline"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What is 'the green' expanding across Kentucky?",

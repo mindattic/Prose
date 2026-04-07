@@ -12,7 +12,7 @@
   "role": "Fake ID vendor and identity documents forger — The Alban Souk",
   "age": 27,
   "status": "active",
-  "location": "The Alban Souk, Hamtramck Enclave",
+  "location": "The Alban Souk, Hamtramck Enclave, near Pulaski and Chicago Ave",
   "description": "Saodat is the kind of person you notice and immediately forget, which is the point. Medium height, medium build, features that read as generically pleasant — warm light-brown skin, dark eyes, hair that is currently an unremarkable chin-length black but was a different color last week and will be again next week. They have a cosmetic geneware mod that lets them adjust their hair color through a dermal panel on the back of their neck, and they use it strategically to match moods, blend into crowds, or signal to regular clients what kind of day it is (black means business, dark red means they're watching, deep green means come back later). The only consistent physical detail is a small tattoo of an open eye on the inside of their left wrist, which they cover when working.\n\nTheir stall front is officially a document services and notarization kiosk — perfectly legal, mildly boring, doing a modest but real trade in legitimate bureaucratic services for the enclave's large population of people whose papers are perpetually in some state of incompleteness. The back half of the business happens in a rented room above a noodle shop forty meters away, which they visit by a route they vary daily. They are calm, precise, and give off a faint air of someone taking a very long test that never ends.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,13 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "The Alban Souk",
+    "ShieldTech Enforcer DM-4 'Crossover'",
+    "Adaeze Chen-Hawkins",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

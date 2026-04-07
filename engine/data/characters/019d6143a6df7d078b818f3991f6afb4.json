@@ -12,7 +12,7 @@
   "role": "Covert entry and social penetration specialist — infiltrator",
   "age": 36,
   "status": "active",
-  "location": "The Circuit — neon-lit entertainment and vice district",
+  "location": "The Circuit — neon-lit entertainment and vice district, near Armitage and Milwaukee",
   "description": "Suki Nordin-Asante-Mensah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 36, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a infiltrator out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSuki Nordin-Asante-Mensah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,11 @@
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

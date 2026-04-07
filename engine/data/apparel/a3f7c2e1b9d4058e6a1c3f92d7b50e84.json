@@ -1,0 +1,42 @@
+{
+  "id": "a3f7c2e1b9d4058e6a1c3f92d7b50e84",
+  "name": "Deepwater Smuggler's Transit Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A battered lake-freight worker's layered kit — oilskin outer shell in faded slate-green over a scanner-dampening liner, worn canvas cargo trousers with six false-bottom pockets, and steel-toed deck boots with hollowed heels. The jacket's lining is woven with signal-scatter mesh that reads as standard industrial polyweave on checkpoint scanners. Nothing about it says criminal; everything about it says someone who moves cargo for a living.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "oilskin polymer",
+    "signal-scatter mesh liner",
+    "waxed canvas",
+    "vulcanized rubber",
+    "hollow-core composite heel"
+  ],
+  "functionality": "Six false-bottom cargo pockets, scanner-dampening liner, and hollow heel compartments hold contraband rated up to 2kg without triggering standard checkpoint sensors.",
+  "what_it_says": "This person loads and unloads freight for twelve hours a day and has nothing worth inspecting.",
+  "worn_by": [
+    "lake-route smugglers",
+    "contraband couriers",
+    "black market logistics runners"
+  ],
+  "manufacturer": "Dockwall Surplus Co. (street-modified)",
+  "price_range": "Φ 340–Φ 680",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A checkpoint officer keeps waving the wearer through — until one shift, he doesn't.",
+    "The hollow heels contain a data chip that wasn't supposed to be there when the courier picked up the shipment."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld_criminal_kit",
+    "smuggler",
+    "scanner_resistant",
+    "hidden_compartments",
+    "tier1",
+    "tier2",
+    "working_class",
+    "lake_route"
+  ]
+}

@@ -11,7 +11,7 @@
   "role": "Street doc operating out of a converted shipping container in The Narrows",
   "age": 41,
   "status": "active",
-  "location": "The Narrows, Blackpipe Corridor",
+  "location": "The Narrows, Blackpipe Corridor, near Milwaukee and North Ave",
   "description": "Ingrid is a compact woman with dark brown skin and frost-pale freckles scattered across her nose and cheekbones — a genetic echo of her Finnish grandfather that surprises people expecting uniformity. Her hair grows in dense coils that she keeps pinned under a faded surgical cap she has not replaced in six years. Her hands are her most remarkable feature: steady, large-knuckled, permanently stained with the blue-gray residue of antiseptic gel. She wears magnification implants that give her left eye a slightly oversized, luminous quality, like a cat watching from a dim room.\n\nPatch is brusque in the way of people who have learned that warmth invites dependency they cannot sustain. She charges what people can pay — sometimes nothing, sometimes a favor, sometimes the Φ40 she actually needs for supply runs. She keeps a small data-shrine to the E.L.F. known as Suture-3 above her surgical table: a tangle of copper wire and expired med-patch wrappers, to which she mutters brief petitions before complicated procedures. She does not talk about where she trained.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,22 @@
   ],
   "registered_firearms": [
     "Tessera TKR-10 'Executor'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "The CEO",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Gradient Compact",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Residue (I Still Have Your Feed)",
+    "The Suture Collective",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pure Hand",
+    "Copper",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit tram operator, Line 9 (Geartown to Meridian Core)",
   "age": 34,
   "status": "active",
-  "location": "Deepwell Station — Line 9 operations hub",
+  "location": "Deepwell Station — Line 9 operations hub, near sub-level access near Dearborn and Jackson",
   "description": "Yseult is lean and angular, the kind of person who looks like she was built for efficiency rather than comfort — high cheekbones, close-set amber eyes with patterned irises she had done in a sunburst design in her twenties (the pattern has faded slightly at the edges but she has not refreshed it, which she considers a form of autobiography). Her skin is a warm medium brown and she keeps her locs pinned back under her operator's cap on shift; off shift they fall to her shoulders and she wears them down with the aggressive relief of someone who spends eight hours in a hat. She has a geneware tail — a slim, black-furred addition she got at twenty-two — that she has learned to keep disciplined and still while operating but which betrays her moods with embarrassing fidelity the moment she is off duty.\n\nYseult has the particular personality of someone who has driven the same route for nine years and has achieved a kind of zen mastery over the repetition — she finds the variation inside the sameness, the way a musician finds different things in a familiar song each time. She is sardonic in the way of someone who has heard every possible excuse for fare evasion and has developed a taxonomy of them. She is fiercely protective of her passengers in a detached, professional way that occasionally shocks people who expect indifference. She is a union rep for the Ferrogate Transit Workers Collective and takes that role with more seriousness than she takes almost anything else.",
   "psychology": {
     "facet_weights": {
@@ -250,5 +250,16 @@
   "registered_firearms": [
     "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
     "Tessera TK-7 Service Pistol 'Ticker'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Deepwell Station",
+    "Dredge Mining Collective",
+    "Geartown",
+    "Tessera TAR-12 'Consensus'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Underworld"
 }

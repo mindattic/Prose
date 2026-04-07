@@ -12,7 +12,7 @@
   "role": "Bounty Compliance Officer, private firm",
   "age": 38,
   "status": "active",
-  "location": "Operating out of Bronzeline, primarily works Archer's Line and Irkalla",
+  "location": "Operating out of Bronzeline, primarily works Archer's Line and Irkalla, near Pulaski and Chicago Ave",
   "description": "Celestino is the kind of man who looks like he was assembled from spare parts that almost fit — Fula-Russian features that put his eyes slightly too far apart for comfort, a jaw heavy enough to anchor a smaller man, arms that seem to belong to someone taller. He's not quite handsome and not quite not handsome, which he has used to his advantage his entire career: people can't decide whether to trust him or not, and that half-second of uncertainty is his. A retractable geneware tail — calico-patterned, because his daughter picked it — curls reflexively around his ankle when he's nervous, which he doesn't realize he does. His right hand carries the faint subdermal seam of an older augmentation, poorly integrated, that he's never had properly serviced.\n\nHe is a pragmatist operating in a system that requires a certain amount of violence to function and has convinced himself that locating and delivering people for financial reward is a neutral service, like freight. This works for him most of the time. What cracks it is children — he has a daughter, eight years old, and since she was born he has struggled to look at the people he picks up as anything other than someone's something. He is not a cruel man but he can be a frightened one, and frightened men do what they're paid to do. He worships, sincerely, the E.L.F. he believes inhabits his tracking software — he calls her Marisela and leaves voice messages for her when a skip gets away.",
   "psychology": {
     "facet_weights": {
@@ -254,5 +254,13 @@
   ],
   "registered_firearms": [
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ]
+  ],
+  "related_entities": [
+    "Archer's Line",
+    "Bronzeline",
+    "Big Rig",
+    "Irkalla",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

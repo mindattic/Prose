@@ -12,7 +12,7 @@
   "role": "Laundry operator and alterations seamstress",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, operates out of a basement laundry called Suds & Seams on Vela Row",
+  "location": "Hamtramck Enclave, operates out of a basement laundry called Suds & Seams on Vela Row, near Halsted and Division",
   "description": "Fatou Bergkvist-Nakashima is a broad-shouldered woman with deep umber skin gone ashy at the temples, her hair kept in a tight silver-flecked wrap she changes weekly — practical, never decorative. Her hands are perpetually reddened from industrial solvents, knuckles enlarged from thirty years of pressing and threading. She has the single cosmetic augmentation she's ever allowed herself: patterned irises in a woven indigo-and-cream design she chose the week her youngest left for a Tessera dormitory scholarship. She called it a goodbye gift to herself.\n\nFatou runs Suds & Seams with the efficiency of a woman who has never once had the luxury of inefficiency. She does not chat while she works. She does not chat while she doesn't work. But she watches everything — who comes in with bloodstained sleeves and asks no questions, who cries in the plastic chair by the dryers, who stuffs a garment to the bottom of their bag before placing it on the counter. She keeps these observations to herself, filing them like receipts. She is not unkind; she simply measures kindness the way she measures detergent — enough for the purpose, never wasted.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,15 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

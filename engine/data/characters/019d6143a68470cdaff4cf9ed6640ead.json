@@ -12,7 +12,7 @@
   "role": "Surveillance Operator, Tessera Compliance Bureau",
   "age": 29,
   "status": "active",
-  "location": "Kenwood Gate",
+  "location": "Kenwood Gate, near North Ave and Damen",
   "description": "Omoruyi is the kind of person you forget while he is still in the room. Medium height, lean, with warm brown skin and features that sit in a pleasant unremarkable arrangement — nothing that catches the eye or holds it. His most notable feature is his eyes: irises modded to a pale silver-grey with a faint concentric ring pattern, the visible marker of his optical augmentation suite. He favors nondescript corporate casual clothing in muted greens and greys, nothing that reads as either security or civilian from a distance.\n\nHe is genuinely intellectually curious — absorbed by patterns, systems, the way data accumulates into narrative. He treats surveillance as a kind of archaeology, layering behavioral records until a person's life emerges in cross-section. He does not think of this as an invasion. He has thought carefully about whether it should bother him and arrived at a complicated peace with it that he occasionally revisits at 3 a.m. He is quick to laugh, slow to trust, and has a gift for seeming entirely present in a conversation while processing something else entirely.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,17 @@
   "registered_firearms": [
     "Arcturus Defense Solutions ADM-10 'Overseer'",
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Kenwood Gate",
+    "The Quiet Room",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "ARCHIVE",
+    "Silver",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Pale Mile",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

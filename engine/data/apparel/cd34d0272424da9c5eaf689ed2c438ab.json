@@ -1,0 +1,37 @@
+{
+  "id": "cd34d0272424da9c5eaf689ed2c438ab",
+  "name": "Reclaimed Territory Squatter's Vest",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A high-visibility safety vest — the kind found at any construction site — modified with spray-painted building numbers and block designations marking the squatter communities the wearer has lived in. Each number represents a building occupied, defended, and eventually lost to demolition or eviction. The vest is worn over everything.\n\nIn Shelf communities where housing instability is the norm, the Squatter's Vest is a record of survival. The numbers aren't addresses — they're battle scars. Wearers recognize each other's histories at a glance and know exactly how many times someone has been displaced.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "modified safety vest",
+    "spray paint",
+    "stenciled markings"
+  ],
+  "functionality": "Housing history display, community recognition, displacement documentation",
+  "what_it_says": "You've been kicked out of this many buildings and you're still here, wearing the count like a challenge.",
+  "worn_by": [
+    "squatter community members",
+    "displaced residents",
+    "housing activists"
+  ],
+  "manufacturer": "Self-made",
+  "price_range": "Φ10 (base vest cost)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Squatter's Vest shows a building number that corresponds to a property still listed as occupied by its legal owner — suggesting the squatter community and the legal residents coexist in the same building without either acknowledging the other."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 1",
+    "squatter",
+    "Shelf",
+    "housing",
+    "displacement",
+    "survival"
+  ]
+}

@@ -11,7 +11,7 @@
   "role": "Bio-waste disposal technician, Aurochs Medical Complex",
   "age": 27,
   "status": "active",
-  "location": "Aurochs Medical Complex — sub-basement disposal corridors and external processing bays",
+  "location": "Aurochs Medical Complex — sub-basement disposal corridors and external processing bays, near North Ave and Milwaukee",
   "description": "Rustam is wiry and quick-moving with the restless energy of someone who has decided that boredom is a personal failing. His skin is light brown with olive undertones, and he has patterned irises — a cosmetic mod he saved three months of UBC stipend for as a teenager, concentric rings of teal and amber — which are his most immediately striking feature in an otherwise unremarkable face. He wears his dark hair shaggy and keeps a small charm of braided copper wire on his left wrist, an offering token for the E.L.F. he calls the Rot, which he believes inhabits the incinerator system and keeps the more dangerous biological material from becoming something worse.\n\nRustam is cheerful in the way people sometimes are when they have accepted something that others cannot, which in his case is that he handles medical waste all day, knows exactly what hospitals produce, and has developed a deeply comprehensive understanding of what is discarded and what is valuable. He is not above sharing this information for the right consideration. He is not malicious — he's curious, social, and fundamentally unsqueamish in a way that took him years to recognize as an asset. He calls himself the last thing between Meridian 88 and a very bad outbreak, which is truer than anyone likes to admit.",
   "psychology": {
     "facet_weights": {
@@ -224,5 +224,14 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Meridian 88",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

@@ -11,7 +11,7 @@
   "role": "fungus farmer and underground apothecary",
   "age": 52,
   "status": "active",
-  "location": "Irkalla, sub-level fungal warrens beneath Deepwell Station",
+  "location": "Irkalla, sub-level fungal warrens beneath Deepwell Station, near sub-level access near LaSalle and Congress",
   "description": "Moswen is a broad-shouldered woman with skin the color of dark river clay, her face mapped by deep laugh lines and a permanent stain of blue-black around her fingernails from decades of handling bioluminescent mycelium. Her geneware is old and half-degraded — color-shifting hair that now only cycles between a dim amber and a washed-out grey depending on her mood, installed in her thirties when she still had money for upkeep. She wears a patchwork coat of heat-cured mushroom leather, stitched with dozens of pockets holding spore vials, dried caps, and small fungal compresses. She smells faintly of earth, wet stone, and something fermented.\n\nMoswen came down in 2178 after her Axiom maintenance contract evaporated and she couldn't surface her debt. She built her farm over seven years — tiered shelves of inoculated substrate carved from old ferrogate sleeper beams, lit by her own bioluminescent cultures. She knows forty-three species by taste and can diagnose infections, parse poisons, and brew painkillers that rival surface pharmacy stock for a fraction of the cost. She is neither warm nor cold — she is practical, like the organisms she cultivates, and she extends exactly as much care as the situation requires.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,18 @@
     "Meridian Munitions Snapper-22 'Cricket'",
     "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "Mushroom Leather",
+    "Ferrogate Transit",
+    "Imara Solís-Khatgal",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
+    "Irkalla",
+    "Leather",
+    "Chimera-Null",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Clay"
+  ],
+  "district": "The Underworld"
 }

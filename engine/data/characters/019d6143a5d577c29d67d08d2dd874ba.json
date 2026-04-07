@@ -12,7 +12,7 @@
   "role": "VR experience designer and holographic artist",
   "age": 38,
   "status": "active",
-  "location": "Grand Corridor, studio-apartment in the Gage Circuit transition zone",
+  "location": "Grand Corridor, studio-apartment in the Gage Circuit transition zone, near Damen and Armitage",
   "description": "Celestin is a medium-height man with the slightly abstracted quality of someone who spends significant portions of his waking life inside spatial constructions he builds himself. He has warm brown skin, close-cut hair, and a neatly trimmed beard going early-grey at the edges. His eyes carry retinal projection overlays — custom, top-tier, not cosmetic but functional, allowing him to see his own builds overlaid on physical space without a headset. He dresses in muted technical clothing that he treats as irrelevant to his existence, but always wears one specific item: a length of hand-woven fabric from his grandmother's household worn as a shoulder wrap, which he claims is for the texture reference and which everyone suspects is simply love.\n\nHe works on commission for Tier 3-4 clients — corporate lobbies, private collectors, memorial installations — and privately on a long-running personal project he calls the Lakeform Archive: a fully navigable VR reconstruction of Meridian 88's shoreline as it existed in ten-year intervals from 2050 to present, built entirely from oral histories, degraded footage, and his own spatial intuition. He is meticulous, slightly obsessive, and becomes a completely different person when talking about the Archive — looser, faster, visibly joyful in a way his professional mode never quite permits.",
   "psychology": {
     "facet_weights": {
@@ -193,5 +193,15 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Corridor",
+    "Gage Circuit",
+    "Meridian 88",
+    "Grandmother",
+    "The Shore Dogs",
+    "ARCHIVE",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Remote drone and vehicle operations specialist — rigger",
   "age": 44,
   "status": "active",
-  "location": "Glassway — corporate-adjacent retail district, heavy surveillance",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Damen and Armitage",
   "description": "Idris Vega-Acheampong is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a rigger out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Idris Vega-Acheampong agrees on two things: she is worth the fee, and she is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,12 @@
   "carried_weapons": [
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Shelf",
+    "The Gradient Compact",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

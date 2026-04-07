@@ -12,7 +12,7 @@
   "role": "Metro Police beat cop, Gage Circuit district",
   "age": 29,
   "status": "active",
-  "location": "Gage Circuit",
+  "location": "Gage Circuit, near Milwaukee and North Ave",
   "description": "Yemisi is built like someone who grew up hauling things — broad-shouldered, compact, with the particular kind of stillness that comes from years of standing on corners watching people lie to her. Her skin is a deep umber that catches neon in purples and greens, and she has cosmetic bioluminescent freckles across her cheekbones that pulse faintly when her heart rate elevates — a mod she got at nineteen and now deeply regrets on the job because perps can read her stress. Her hair is kept in tight, practical coils under her regulation cap. She has the face of someone who wanted to believe in something and is still deciding whether she does.\n\nOn the street she is patient in a way that unnerves people — she listens longer than cops are supposed to, takes notes by hand on a battered paper notepad even though her neural uplink could record everything. She genuinely knows the Gage Circuit block-by-block, knows which E.L.F. shrines get fresh data offerings and which are abandoned, knows whose kids go to which school. She has not yet become cynical, but she is working on it, and that tension — between the person she came into the job as and the person the job is making — is visible in everything she does.",
   "psychology": {
     "facet_weights": {
@@ -218,5 +218,12 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Compact-7 'Rat Trap'"
-  ]
+  ],
+  "related_entities": [
+    "Gage Circuit",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Tessera Corponation"
+  ],
+  "district": "The Circuit"
 }

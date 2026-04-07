@@ -12,7 +12,7 @@
   "role": "Prosthetics fitter and augmentation technician at a mid-tier Geartown workshop",
   "age": 34,
   "status": "active",
-  "location": "Geartown, the Spindle District — a workshop called Actual Bodies",
+  "location": "Geartown, the Spindle District — a workshop called Actual Bodies, near Damen and Armitage",
   "description": "Rémi is slight and precise, the kind of person whose hands do most of his communicating. He keeps his natural skin — a warm medium brown with undertones that shift gold in good light — completely unmodified, which is unusual for someone in his trade and which he is mildly defensive about if asked. His one concession to the aesthetic of his work is his eyes: he had his irises replaced with calibration-pattern models that display a rotating set of geometric markers he can use as a reference grid when fitting prosthetics. They're beautiful and faintly unsettling, like looking into a targeting system. His hair is cut close on the sides with a soft, loose top he doesn't style — it does what it does.\n\nHe is a craftsman in the old sense, genuinely invested in the fit and function of every limb, joint, and sensory prosthetic that leaves his workshop. He talks to his clients at length before he touches a measurement tool, because he believes most fitters skip the conversation and produce limbs that technically work and practically don't. He is warm and disarming in consultation, a little awkward socially outside of that context — the shop is his native environment and he becomes vaguely uncertain when removed from it. He has a complicated relationship with his own body and its wholeness that he has never examined closely enough to name.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,15 @@
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
     "Crucible Industries Composite Kukri CK-7 'Gurkha'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "TESSERA TX-0 'Mimic'",
+    "Ferrogate Transit",
+    "Geartown",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "SPINDLE",
+    "The Pure Hand",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

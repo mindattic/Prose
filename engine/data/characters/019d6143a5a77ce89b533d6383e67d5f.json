@@ -12,7 +12,7 @@
   "role": "Gene-mod body artist and tattoo practitioner, Tier 3",
   "age": 44,
   "status": "active",
-  "location": "Edgewater Prism, owns a studio called Meridian Flesh on the third floor of a converted light-industrial building",
+  "location": "Edgewater Prism, owns a studio called Meridian Flesh on the third floor of a converted light-industrial building, near Clark and Belmont",
   "description": "Alistair is a large man who carries himself with the deliberate calm of someone who learned early that large men moving quickly frighten people. His Malian-Yoruba-Welsh heritage is apparent in his height — he got the build from somewhere in that chain — and the particular architecture of his face: a broad forehead, heavy brow, warm dark skin, a flat nose his Welsh great-grandmother would have described as a gift, and eyes he has modified to a deep photochromatic violet that darkens to near-black in bright light. His arms are extensively tattooed in his own work, a living portfolio that has evolved over twenty years — the older pieces fading beneath newer ones in deliberate palimpsest. He wears his graying locs pinned up when working and lets them fall to his shoulders otherwise.\n\nMeridian Flesh is one of the most respected body art studios in Edgewater Prism, operating in a tier that serves both clients who want cosmetic geneware integration and clients who want work that means something. Alistair does not distinguish between the two in terms of attention, but he does distinguish in terms of conversation — he will talk for an hour with a client who knows what they want and why, and simply be professionally efficient with a client who just wants the cat ears everyone else has. He has opinions about the difference between body art and body decoration and will share them if asked, diplomatically, and will share them if not asked, less diplomatically after his second cup of coffee.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,13 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Forge-Smith Collective Diaspora Blade 'Mongrel'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "Pilsen Veil",
+    "Grandmother",
+    "The Heritage Vault",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Laceworks"
 }

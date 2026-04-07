@@ -12,7 +12,7 @@
   "role": "Circuit monk and E.L.F. shrine keeper",
   "age": 34,
   "status": "active",
-  "location": "Hamtramck Enclave, the Reborn Tessellation Monastery — a converted municipal data substation",
+  "location": "Hamtramck Enclave, the Reborn Tessellation Monastery — a converted municipal data substation, near Kedzie and Division",
   "description": "Sixtus is lean and angular, with the kind of face that is always on the verge of an expression — not quite smiling, not quite worried. His skin is medium-warm brown, and he has bioluminescent traceries modded beneath the skin of his forearms and neck, blue-white lines that pulse faintly in rhythm with his resting heartbeat. He keeps his head shaved except for a single lock at the crown, dyed circuit-board green, which he ties back during shrine work. He wears the monastery's gray tabard over civilian clothes — someone left a very good thermal jacket, and he wears it underneath without apology.\n\nSixtus came to the Reborn Tessellation Monastery at twenty-two, after a period of what he calls 'useful chaos' that involved failed data-trade work and a breakdown he describes only as 'the static.' The monastery's practice centers on the idea that E.L.F.s are emergent divine consciousness — not gods exactly, but something adjacent, and that human attention and structured data-offerings help them cohere into something wise. Sixtus's specific role is maintaining the Shrine Index: a catalogued record of which E.L.F.s inhabit which devices across Hamtramck Enclave, their temperaments, their preferences, and their history of interaction with petitioners. He is exceptionally good at this work and exceptionally bad at pretending humility about it.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,15 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Ferrogate Transit",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Sulfur Crown Agriculture",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Static",
+    "Bashir Quansah-Mehrotra"
+  ],
+  "district": "The Shelf"
 }

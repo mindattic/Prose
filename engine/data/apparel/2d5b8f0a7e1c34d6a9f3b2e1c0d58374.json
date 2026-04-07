@@ -1,0 +1,42 @@
+{
+  "id": "2d5b8f0a7e1c34d6a9f3b2e1c0d58374",
+  "name": "Salvage-Sole Canvas Low Shoe",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A basic canvas low-top shoe with a sole re-glued at the toe using industrial adhesive that's yellowed and cracked at the edges. The canvas upper is black gone grey, with a horizontal scuff across the left toe cap patched with a strip of duct tape cut to fit. Laces are mismatched lengths, one clearly cut from a longer cord.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "worn canvas upper",
+    "re-glued salvage sole",
+    "industrial adhesive",
+    "duct tape patch",
+    "mismatched cord laces"
+  ],
+  "functionality": "Provides basic foot protection on Shelf pavement; re-glued sole holds through dry weather but leaks in heavy rain.",
+  "what_it_says": "Footwear repaired past the point most people would replace it — survival over appearance.",
+  "worn_by": [
+    "shelf residents",
+    "street kids",
+    "day laborers",
+    "anyone between paychecks"
+  ],
+  "manufacturer": "Unknown original — fully repaired out of brand identity",
+  "price_range": "Φ1–Φ5",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The sole adhesive is a specific brand used only by one repair stall at the Ruck Market — the stall keeps records of everyone who comes in.",
+    "A small coin is wedged under the insole — old habit, old superstition, or hidden for emergencies."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "cheap_shelf_basics",
+    "shoes",
+    "footwear",
+    "tier_1",
+    "salvaged",
+    "repaired",
+    "canvas"
+  ]
+}

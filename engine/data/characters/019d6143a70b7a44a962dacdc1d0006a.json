@@ -12,7 +12,7 @@
   "role": "compute broker and stolen-data fence operating in Shallowgrave",
   "age": 51,
   "status": "active",
-  "location": "Shallowgrave, a basement-level node café called The Still that functions as both legitimate establishment and brokerage floor",
+  "location": "Shallowgrave, a basement-level node café called The Still that functions as both legitimate establishment and brokerage floor, near Pulaski and Chicago Ave",
   "description": "Ubah is the kind of person who has become part of the architecture. They've been in Shallowgrave so long that certain alleys seem to orient toward their café, certain data packets seem to route through their servers the way water finds lower ground. They are short, wide, with Somali-Hawiye features — high forehead, long jaw, very dark skin — and their Cook Islands-Czech grandfather gave them a surname that confused every bureaucratic system they ever encountered, which they consider an advantage. They are entirely grey now — hair, eyebrows, the very fine down on their forearms visible in good light — and make no effort to change it. Their irises have a hexagonal pattern mod: tessellated bronze, installed thirty years ago and still immaculate.\n\nUbah does not traffic in things. They traffic in access — stolen computational capacity, hoarded data caches, corporate surveillance leaks, processing time borrowed from systems whose owners don't yet know it's been borrowed. The Still serves decent synthetic coffee and runs legitimate node access on the surface level while Ubah sits at the center table running brokerage operations in the open, trusting that most people who see a middle-aged person typing cannot imagine what is actually being typed. They are right about this most of the time. They have cultivated a personality of mild disinterest that people consistently mistake for dimness. This mistake has been profitable.",
   "psychology": {
     "facet_weights": {
@@ -243,5 +243,14 @@
   "registered_firearms": [
     "Tessera Adaptive Platform TAP-5 'Chameleon'",
     "Hearthstone Firearms Trail-357 'Pathfinder'"
-  ]
+  ],
+  "related_entities": [
+    "Shallowgrave",
+    "The CEO",
+    "ShieldTech CLA-3 'Cascade'",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Bronze"
+  ],
+  "district": "The Shelf"
 }

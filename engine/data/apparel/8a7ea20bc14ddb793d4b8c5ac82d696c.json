@@ -1,0 +1,36 @@
+{
+  "id": "8a7ea20bc14ddb793d4b8c5ac82d696c",
+  "name": "Veridian Optics Eyepiece Chain",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A fine-link chain designed to secure optical devices — monocles, loupes, scan lenses — around the neck when not in active use. The chain features a magnetic quick-release clasp and is available in steel, black oxide, or gold-tone. A small retractable tether prevents the optical device from swinging during movement.\n\nA minor accessory that has become a significant social signal in Spire circles — wearing an eyepiece chain implies you own precision optics worth securing, which implies wealth and profession. Empty chains worn as pure fashion statements have become their own trend.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "fine-link chain",
+    "magnetic quick-release clasp",
+    "retractable tether"
+  ],
+  "functionality": "Optical device security, quick-release access, swing prevention",
+  "what_it_says": "You own something worth looking through and worth not dropping.",
+  "worn_by": [
+    "appraisers",
+    "Spire professionals",
+    "fashion-conscious individuals"
+  ],
+  "manufacturer": "Veridian Optics",
+  "price_range": "Φ480",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An empty eyepiece chain is found at a crime scene — the chain's quick-release was triggered, meaning whatever optical device was attached was deliberately removed in a hurry."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 4",
+    "chain",
+    "optical",
+    "fashion",
+    "Spire"
+  ]
+}

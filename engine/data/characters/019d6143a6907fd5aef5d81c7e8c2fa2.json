@@ -12,7 +12,7 @@
   "role": "Freelance private investigator specializing in missing persons, Tier 1-2 clientele",
   "age": 38,
   "status": "active",
-  "location": "Burnside Pocket",
+  "location": "Burnside Pocket, near Damen and Armitage",
   "description": "Palesa Vuorinen-Ekwensi runs their operation out of a secondhand electronics repair shop in Burnside Pocket — a legitimate business that pays approximately forty percent of its bills, with the PI work covering the rest. They are medium height and move with a deliberate economy, the kind of person who picks a spot in a room and knows all the exits before they sit down. Their skin is a warm golden-brown, their eyes dark and slightly asymmetrical from a scar through the left brow that healed badly after an incident they don't discuss. They have geneware cat ears — tawny and slightly oversized — acquired as a teenager and kept because, they say, the enhanced hearing is professionally useful, which is true and also not the whole reason.\n\nPalesa specializes in finding people who don't have the Quanta to hire a proper firm and who Metro Police will not look for — runaways into Irkalla, workers who vanished after missing a debt payment, kids eaten by the gap between Tier 1 and Tier 2. They charge on a sliding scale that regularly slides to nothing. Their shop is a known safe harbor; people leave messages in a particular cracked planter out front. They are pragmatic about almost everything and sentimental about this work in a way they have never articulated to anyone.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,13 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ]
+  ],
+  "related_entities": [
+    "Burnside Pocket",
+    "The Render",
+    "Irkalla",
+    "Lacuna Genomics",
+    "IRONLIMB Spectre SV-4 Stealth Arm"
+  ],
+  "district": "The Circuit"
 }

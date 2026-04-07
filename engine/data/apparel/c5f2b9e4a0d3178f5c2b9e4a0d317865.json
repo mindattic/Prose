@@ -1,0 +1,43 @@
+{
+  "id": "c5f2b9e4a0d3178f5c2b9e4a0d317865",
+  "name": "Driftwall Foam-Packed Insulated Boot — Steel Shank",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A Shelf-grade winter boot built from reclaimed rubber outsoles, closed-cell foam inserts packed into salvaged leather-analog uppers, and sheet-metal ankle shanks for structural support. They're ugly, mismatched at the ankle seams, and rated for standing in slush for 12-hour shifts. Warm enough that Shelf residents trade them like currency mid-winter.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed rubber outsole",
+    "closed-cell foam insulation",
+    "salvaged leather-analog upper",
+    "sheet-metal ankle shank",
+    "wool-scrap inner sock lining"
+  ],
+  "functionality": "Waterproof to ankle depth in standing slush; insulated for static cold down to -25C; steel shank prevents outsole collapse on debris-strewn terrain.",
+  "what_it_says": "Someone who knows exactly what happens to feet in a Shelf winter and refused to let it happen to theirs.",
+  "worn_by": [
+    "Shelf residents",
+    "scrapyard workers",
+    "acid-rain zone laborers",
+    "unhoused individuals with resources"
+  ],
+  "manufacturer": "Unknown — Shelf fabrication, no mark",
+  "price_range": "Φ15–Φ35 (barter-adjacent)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The right boot's foam insert has a data chip embedded in it — someone's insurance policy, or someone's dead drop.",
+    "These boots were traded for three days of generator access; the person who gave them up was gambling on a mild winter and lost."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "winter_heavy",
+    "tier1",
+    "boots",
+    "insulated",
+    "salvage",
+    "shelf",
+    "waterproof",
+    "no_brand"
+  ]
+}

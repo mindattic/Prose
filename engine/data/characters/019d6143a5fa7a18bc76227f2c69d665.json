@@ -12,7 +12,7 @@
   "role": "Loan shark",
   "age": 51,
   "status": "active",
-  "location": "The Shelf lower levels, specifically the Blackpipe Corridor market hub",
+  "location": "The Shelf lower levels, specifically the Blackpipe Corridor market hub, near Pulaski and Chicago Ave",
   "description": "Dzifa has the kind of face that has grown into itself — high cheekbones above hollowed cheeks, close-cropped natural hair gone to silver at the temples, skin the color of dark honey mapped with the specific fine lines of someone who has spent decades expressing exactly as much as she chooses to express and no more. She is thin in a way that suggests efficiency rather than want. She dresses in well-maintained secondhand clothing in muted ochres and deep greens, always with a long vest that has many pockets, all of which she knows the contents of. Her one visible mod is cat ears — small, dark-furred, and alert — that she had installed at thirty and has maintained ever since; they rotate toward sound with small, involuntary precision, which she uses to her advantage because people underestimate what she is hearing.\n\nDzifa runs her loan operation from a tea stall in the Blackpipe market that is legitimately also a tea stall — she has brewed good tea for twenty years and takes genuine pride in it. She learned lending from her grandmother, who ran a rotating savings collective in the lower Shelf before the Copper Ledger absorbed the territory. Dzifa understands money as a social technology and interest as a form of relationship; she is not cruel, but she is absolutely clear about consequences, and the Blackpipe community both relies on her and is slightly afraid of her, which she considers the correct balance.",
   "psychology": {
     "facet_weights": {
@@ -229,5 +229,15 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R8 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Grandmother",
+    "The Shelf",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "Copper",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

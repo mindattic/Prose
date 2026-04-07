@@ -12,7 +12,7 @@
   "role": "Underground comedian and spoken word performer",
   "age": 27,
   "status": "active",
-  "location": "Hamtramck Enclave, rotating between basement venues and a rented room above a tea house on Brezinski Circuit",
+  "location": "Hamtramck Enclave, rotating between basement venues and a rented room above a tea house on Brezinski Circuit, near Western and Chicago Ave",
   "description": "Séverin is compact and restless, built like someone who is always about to stand up from a chair — shoulders slightly forward, weight on the balls of their feet, dark brown skin luminous under stage lights they have spent years learning to use as a weapon. They have their mother's wide Congolese forehead and their grandmother's pale Volga eyes, a combination that strangers find disconcerting and that Séverin has weaponized into an entire chunk of material. Their hair is grown out in a soft natural cloud and color-shifted to cycling deep blue at the roots fading to copper at the tips — they change it seasonally, the way other people change their jackets.\n\nSéverin is possibly the funniest person in Hamtramck Enclave and is the only person in Hamtramck Enclave who would not say so, though they would say it about themselves at three in the morning having had too much fermented buckwheat tea. Their comedy is structurally precise and politically incendiary — a routine will appear to be about, say, the indignity of renewing one's UBC stipend, and then thirty seconds before the end the floor opens up and there is something about complicity and grief underneath. Audiences often report laughing and then feeling like they should not have. Séverin considers this the correct response.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,14 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Grandmother",
+    "The Gradient Compact",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Copper",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "High-risk package and data transport — courier",
   "age": 49,
   "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Lake Shore and Wacker",
   "description": "Altan Navarro-Afriyie is compact and densely muscled, built low to the ground like something designed to survive impacts. At 49, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a courier out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Navarro-Afriyie describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,16 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "The Gradient Compact",
+    "Stratum",
+    "Ringo DV-4 'Courier'",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "Old Harbor"
 }

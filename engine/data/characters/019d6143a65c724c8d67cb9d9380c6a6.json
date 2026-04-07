@@ -12,7 +12,7 @@
   "role": "Retired union leader, former Dearborn Forge machine workers' organizer",
   "age": 83,
   "status": "active",
-  "location": "Avalon Quiet, the Foundry Rest, Unit 9 (a former union hall converted to senior housing)",
+  "location": "Avalon Quiet, the Foundry Rest, Unit 9 (a former union hall converted to senior housing), near Lincoln and Addison",
   "description": "Miroljub is a person of considerable physical presence despite their age — still broad through the shoulders, hands that are visibly enlarged by decades of machine work and two decades of chrome reinforcement, skin the color of dark river clay mapped with old hydraulic burns along both forearms. They have a full beard, silver-white, kept long and braided with small steel hex-nuts — not decoration but notation: each nut represents a contract won. There are thirty-one of them. Their eyes are deep-set under heavy brows and have been modified with retinal overlays that display scrolling text when they are reading union documents, which is often. They move slowly but without any suggestion that the slowness is weakness.\n\nMiroljub organized workers at Dearborn Forge for forty-one years, starting as a floor welder and ending as the most recognizable union figure in Meridian 88's manufacturing sector. They retired at seventy-eight when their heart required a significant reconstruction, and they have spent the five years since refusing to actually retire in any functional sense — still advising, still reviewing contracts, still showing up to shop-floor solidarity actions in a mobility assist suit they make no attempt to hide. They are living legend to people who know the labor history and an incomprehensible relic to people who don't, and they genuinely do not care which category any given person falls into. They are here and they are working.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,22 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Dearborn Forge",
+    "Avalon Quiet",
+    "The Undertow",
+    "Gravemoss Biofoundry",
+    "Meridian 88",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Irontide Tidal Energy",
+    "Crucible Industries CR-9 'Foundry'",
+    "The Pure Hand",
+    "Silver",
+    "Ringo Corponation",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Steel",
+    "Clay"
+  ],
+  "district": "The Laceworks"
 }

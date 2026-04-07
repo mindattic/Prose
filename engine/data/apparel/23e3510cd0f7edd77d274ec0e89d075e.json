@@ -1,0 +1,37 @@
+{
+  "id": "23e3510cd0f7edd77d274ec0e89d075e",
+  "name": "Cascade Biotech Substrate Containment Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A specialized containment suit designed for handling active substrate materials that exhibit unpredictable biological behavior. The suit's exterior is coated with a substrate-repellent compound that prevents biological agents from bonding to the surface. Internal monitoring systems alert the wearer if any substrate material penetrates the barrier.\n\nUnique to Synthesis Collective and Cascade Biotech facilities where substrate research pushes into territory that conventional hazmat equipment can't address. The suit is designed for threats that are alive, adaptive, and actively trying to find a way through.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "substrate-repellent coating",
+    "breach-detection sensor grid",
+    "adaptive-threat barrier layers"
+  ],
+  "functionality": "Active substrate containment, breach detection, bio-bonding prevention",
+  "what_it_says": "Whatever you're handling is alive, it wants out, and this suit is the argument against that.",
+  "worn_by": [
+    "substrate researchers",
+    "biocontainment specialists",
+    "Synthesis Collective operatives"
+  ],
+  "manufacturer": "Cascade Biotech",
+  "price_range": "Φ16,000",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Substrate Containment Suit's breach-detection system activates inside a storage room that should contain no active substrate — something in that room has woken up."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 4",
+    "substrate",
+    "containment",
+    "biological",
+    "Cascade",
+    "adaptive"
+  ]
+}

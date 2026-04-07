@@ -12,7 +12,7 @@
   "role": "Food stall operator — congee and fermented protein bowls",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, stall row 7, near the eastern steam vents",
+  "location": "The Oxidian Market, stall row 7, near the eastern steam vents, near Halsted and Chicago Ave",
   "description": "Ossian is a broad-shouldered man whose face has been slowly tenderized by decades of steam and smoke — deep creases bracket his mouth, his cheeks are perpetually ruddy, and his eyebrows have the texture of steel wool. He wears the same yellowed thermal apron every day, patched in eleven places, and keeps a battered wooden ladle tucked into his belt even when he isn't cooking. His geneware is minimal and practical: bioluminescent nodes under his fingernails that pulse amber when he's checking temperature by touch, a sensory aug that sharpens smell discrimination to near-professional levels. He moves through a crowd like a ship through fog — unhurried, implacable, politely unstoppable.\n\nHe has been running the same congee stall in the same spot for twenty-three years and has strong opinions about everything: the correct ratio of fermented shrimp paste to broth, which Corponation is the least evil this quarter, whether the E.L.F. of the eastern steam vents (whom he calls 'Grandmother Hiss') deserves gratitude offerings of salt or of sweetened oil. He treats regulars like difficult but beloved relatives and first-timers with the wary generosity of someone who suspects they might be trouble. His cooking is genuinely exceptional and unreasonably cheap.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,17 @@
   "registered_firearms": [
     "Arcturus Defense Solutions SAR-3 'Warden'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Grandmother",
+    "Tessera Corponation",
+    "Ossian",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Steel",
+    "Wool",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Shelf"
 }

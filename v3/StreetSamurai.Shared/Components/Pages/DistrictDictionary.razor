@@ -38,7 +38,7 @@
                 <HeaderButtons>
                     @if (editing.Coordinates.Lat != 0)
                     {
-                        <a href="@MapUrl(editing.Coordinates.Lat, editing.Coordinates.Lng, editing.Name)" target="_blank"
+                        <a href="@MapExternalUrl(editing.Coordinates.Lat, editing.Coordinates.Lng)" target="_blank"
                            class="btn btn-sm btn-outline-info" title="View on map">
                             <i class="bi bi-geo-alt"></i> Map
                         </a>
@@ -49,7 +49,14 @@
                 </HeaderButtons>
                 <ChildContent>
                     @* ── Map Embed ───────────────────────────────── *@
-                    @if (editing.Coordinates.Lat != 0 && !string.IsNullOrWhiteSpace(Settings.MapApiKey))
+                    @if (editing.Coordinates.Lat != 0 && Settings.MapService == "google" && !string.IsNullOrWhiteSpace(Settings.GoogleMapsApiKey))
+                    {
+                        <div class="mb-3 rounded overflow-hidden border border-secondary" style="height: 250px;">
+                            <iframe src="@($"https://www.google.com/maps/embed/v1/view?key={Settings.GoogleMapsApiKey}&center={editing.Coordinates.Lat},{editing.Coordinates.Lng}&zoom=14&maptype=roadmap")"
+                                    width="100%" height="100%" style="border: none;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    }
+                    else if (editing.Coordinates.Lat != 0 && Settings.MapService == "here" && !string.IsNullOrWhiteSpace(Settings.MapApiKey))
                     {
                         <div class="mb-3 rounded overflow-hidden border border-secondary" style="height: 250px;">
                             <div id="here-map" style="width: 100%; height: 100%;"></div>
@@ -61,8 +68,8 @@
                             <div class="text-center">
                                 <i class="bi bi-geo-alt text-danger" style="font-size: 2rem;"></i>
                                 <div class="text-muted small mt-1">@editing.Coordinates.Lat.ToString("F4"), @editing.Coordinates.Lng.ToString("F4")</div>
-                                <a href="@MapUrl(editing.Coordinates.Lat, editing.Coordinates.Lng, editing.Name)" target="_blank" class="btn btn-sm btn-outline-info mt-2">
-                                    <i class="bi bi-box-arrow-up-right"></i> Open in HERE
+                                <a href="@MapExternalUrl(editing.Coordinates.Lat, editing.Coordinates.Lng)" target="_blank" class="btn btn-sm btn-outline-info mt-2">
+                                    <i class="bi bi-box-arrow-up-right"></i> Open in Maps
                                 </a>
                             </div>
                         </div>
@@ -124,7 +131,7 @@
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
-        if (editing != null && editing.Coordinates.Lat != 0 && !string.IsNullOrWhiteSpace(Settings.MapApiKey))
+        if (editing != null && editing.Coordinates.Lat != 0 && Settings.MapService == "here" && !string.IsNullOrWhiteSpace(Settings.MapApiKey))
         {
             try { await JS.InvokeVoidAsync("hereMap.show", "here-map", Settings.MapAppId, Settings.MapApiKey,
                 editing.Coordinates.Lat, editing.Coordinates.Lng, editing.Name); }
@@ -132,8 +139,9 @@
         }
     }
 
-    private string MapUrl(double lat, double lng, string name) =>
-        $"https://wego.here.com/?map={lat},{lng},14,normal&x=ep";
+    private string MapExternalUrl(double lat, double lng) => Settings.MapService == "google"
+        ? $"https://www.google.com/maps/@{lat},{lng},14z"
+        : $"https://wego.here.com/?map={lat},{lng},14,normal&x=ep";
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();

@@ -12,7 +12,7 @@
   "role": "Retired archive keeper and community storyteller",
   "age": 81,
   "status": "active",
-  "location": "Avalon Quiet — the Meridian Public Memory Archive, third floor reading room",
+  "location": "Avalon Quiet — the Meridian Public Memory Archive, third floor reading room, near Lincoln and Belmont",
   "description": "Vesna Quatremaine-Oduya is a small, densely wrinkled woman who moves through the archive like she owns the air itself. Her skin is a deep warm umber crosshatched with laugh lines and a long scar across her left jawline she's never explained to anyone's satisfaction. Her hair is kept in two white locs pinned across the crown of her head with antique data-pins — actual physical pins, the kind you can't buy new anymore. Her eyes are a pale, startling grey that she insists are natural, though young people always ask. She wears the same style of garment every day: a high-collared tunic in whichever deep jewel tone she's feeling, and soft shoes that make no noise on the archive's composite floors.\n\nVesna spent forty-one years as a data archivist for Tessera Corporation before taking an early exit package during the post-war restructuring. She knows things. Specifically, she knows what was recorded, what was deliberately not recorded, and where the gaps are shaped like lies. She is patient, precise, and capable of a warmth so sudden it startles people who've only seen her severe professional face. She runs informal story sessions for the Avalon Quiet elderly residents on Tuesday evenings, recounting pre-Meridian histories and the Corporate Wars from the civilian side — the ration lines, the blackouts, the children who grew up not knowing which corponation's soldiers were which.",
   "psychology": {
     "facet_weights": {
@@ -243,5 +243,15 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Avalon Quiet",
+    "Sulfur Crown Agriculture",
+    "Sentinel-Guard-88",
+    "Tessera Corponation",
+    "ARCHIVE",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile"
+  ],
+  "district": "The Laceworks"
 }

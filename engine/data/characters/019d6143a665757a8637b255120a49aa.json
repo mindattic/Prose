@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller with a sideline in secondhand augmentation parts of uncertain provenance",
   "age": 64,
   "status": "active",
-  "location": "The Stockyard, Harrowgate Industrial Plateau — operates a permanent stall built from welded shipping containers",
+  "location": "The Stockyard, Harrowgate Industrial Plateau — operates a permanent stall built from welded shipping containers, near Western and Division",
   "description": "Nkechi Vásárhelyi-Tuatagaloa is a small, dense woman who gives the impression of being made of the same material as the industrial district she inhabits — worn, load-bearing, and not going anywhere. She is dark-skinned with deep laugh lines and a Hungarian grandmother's broad nose, and her left arm from the elbow down is a heavy-grade prosthetic she salvaged, repaired, and tuned herself over the course of fifteen years — it is emphatically not cosmetic, built for grip strength, and its housing is painted with a faded pattern of Samoan-derived ta tatau lines she applied with a brush in her sixties when she decided it had earned decoration. Her eyes have patterned irises — amber with a spiral fractal motif — that she has had since her forties and considers her one indulgence.\n\nShe is phlegmatic, unhurried, and possessed of an almost geological patience. She has no interest in being liked but a deep professional pride in being useful. Her knowledge of augmentation parts — their manufacturers, their failure modes, their black-market values, the difference between a legitimately salvaged unit and one pulled off a still-warm body — is encyclopedic and has saved lives, sometimes literally. She leaves a small E.L.F. offering of scrap copper wire twisted into a geometric knot at the entrance of her stall every morning, a habit she inherited from her Samoan grandfather and has never examined or abandoned.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,21 @@
   "registered_firearms": [
     "Crucible Industries Havoc-44 'Mauler'",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "Harrowgate Industrial Plateau",
+    "Ferrogate Transit",
+    "Ringo Corponation Haptic Signature Recorder",
+    "The Stockyard",
+    "Grandmother",
+    "The CEO",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Gravimetric Collapse Charge GCC-9",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Tin Man",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and small-time data broker",
   "age": 26,
   "status": "active",
-  "location": "The Burnished Market, Edgewater Prism",
+  "location": "The Burnished Market, Edgewater Prism, near Lincoln and Clark",
   "description": "Tuulikki is small and restless, with their Finnish grandmother's pale complexion overlaid with their Nigerian father's dark freckles — an unusual constellation across their nose and cheeks that they've leaned into by having bioluminescent nodes implanted along the same scatter pattern, so their freckles glow faint amber when they're excited or running hot. Their hair is geneware-modified to shift between deep black and a washed-out violet depending on temperature, and they wear it asymmetrical and usually slightly chaotic. They dress in layers of cheap Burnished Market textiles — mismatched patterns, things they've traded for rather than bought — and have a habit of wearing too many small earrings, most of them handmade by their market neighbors.\n\nTuulikki's stall is a masterpiece of organized chaos: rack after rack of slotted media chips, bootleg neural-experience packages, pirated entertainment feeds, and buried underneath the legitimate-seeming surface, curated data parcels for people who need specific information and can't access corporate archives. They have a magpie intelligence — they absorb and cross-reference constantly — and a social performance of cheerful airheadedness that they use deliberately and effectively. Underneath it, they are careful, slightly paranoid, and very good at what they do. They believe information wants to be free in the way that some people believe in ELFs: devoutly, with rituals to match.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,20 @@
     "Street Custom 'Lazybones' Tripwire Shotgun Trap",
     "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Edgewater Prism",
+    "Grandmother",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Magpie",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight"
+  ],
+  "district": "The Laceworks"
 }

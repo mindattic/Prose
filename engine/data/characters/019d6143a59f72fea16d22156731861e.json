@@ -12,7 +12,7 @@
   "role": "Retired archive keeper and community storyteller",
   "age": 82,
   "status": "active",
-  "location": "The Shelf, Washburn Commons — apartment 14-G above the Ferrogate Transit hub",
+  "location": "The Shelf, Washburn Commons — apartment 14-G above the Ferrogate Transit hub, near Ashland and Division",
   "description": "Abimbola is a small, wire-thin woman whose skin has the deep matte darkness of old carbon fiber, mapped with fine wrinkles that seem to trace circuit patterns when the light catches them right. Her left eye was replaced after a workplace pressure incident with a ceramic prosthetic that never quite matched — it's a milky amber orb with a fixed iris, which she's decorated over the decades with hand-painted Yoruba adinkra symbols using surgical-grade pigment ink. Her real eye is still sharp and black and misses nothing. She keeps her white hair in elaborate plaited towers pinned with salvaged data-spikes, and she dresses in layered synthsilk robes in rust and ochre that billow when she walks. She moves slowly but with enormous deliberateness, as though every step is a considered choice.\n\nAbimbola spent forty years as a lower-tier archive technician for Axiom's municipal records division, cataloguing what was supposed to be destroyed and quietly, carefully not destroying it. She has an almost religious relationship with information — she believes that forgetting is a form of violence and that memory is the only true resistance available to people without power. She is warm to anyone who sits still long enough to listen, but her warmth has a quality of assessment in it, as though she is deciding whether you are worth the particular truth she plans to share with you.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,18 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Washburn Commons",
+    "Carbon Fiber",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Shelf",
+    "Bathysphere Networks",
+    "Stratum",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

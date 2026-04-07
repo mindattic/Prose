@@ -12,7 +12,7 @@
   "role": "Identity fabricator and document forger",
   "age": 38,
   "status": "active",
-  "location": "Shallowgrave, operates from a legitimate alterations shop called Secondskin",
+  "location": "Shallowgrave, operates from a legitimate alterations shop called Secondskin, near Ashland and Division",
   "description": "Velislava presents as the most ordinary woman imaginable, which is her primary professional qualification. She is medium height, medium build, with Samoan-Slavic features that read as ambiguous in any database — a long jaw softened by her Armenian grandmother's cheekbones, dark eyes behind plain-glass frames she doesn't need but wears to give her face something to remember that isn't her face. Her hair is dark brown with a natural wave, cut to exactly jaw length, never different. She wears the same four outfits on a rotation. She has no mods, no geneware, nothing that would tag her biometrically beyond baseline. This is not poverty — it is discipline.\n\nSecondhand clothes hang in the windows of Secondskin and Velislava does genuinely good alteration work; she has a waiting list of neighborhood clients who would be devastated to lose her. They have no idea that the back room behind the ironing press contains one of the finest document fabrication setups in the Shallowgrave district — not the flashiest, not the most expensive, but the most meticulous. Vel specializes in the boring and bulletproof: employment histories, medical records, transit passes, residential registrations. Not spectacular new identities for runners. Clean paper for desperate people. She tells herself this distinction matters morally. Some days she believes it.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,17 @@
   "carried_weapons": [
     "Forge-Smith Collective Diaspora Blade 'Mongrel'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Tessera Corponation",
+    "Shallowgrave",
+    "Grandmother",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+    "ShieldTech CLA-3 'Cascade'",
+    "The Human Baseline Alliance",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Glass"
+  ],
+  "district": "The Shelf"
 }

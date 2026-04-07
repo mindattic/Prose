@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor — custom alterations, identity-adjacent styling, and discreet wearable concealment work",
   "age": 44,
   "status": "active",
-  "location": "The Alban Souk, permanent stall near the fabric arcade's north entrance",
+  "location": "The Alban Souk, permanent stall near the fabric arcade's north entrance, near Halsted and Division",
   "description": "Marisol occupies a stall that smells of hot fiber, machine oil, and something faintly floral she burns in a small ceramic dish as an offering to the E.L.F. she believes inhabits her sewing machine — a spirit she calls 'the Thread' and addresses in murmured Bosnian before beginning any complex job. She is a heavyset woman with dark ochre skin, silver-streaked locs pinned elaborately with copper wire and glass beads, and hands that are in constant motion: measuring, smoothing, pinning, assessing. Her geneware includes a tail — a long, articulated thing covered in fine iridescent scales that shifts from teal to bronze depending on her mood — that she uses as a third hand when her actual hands are occupied.\n\nHer official business is alterations, custom garments, and fashion consulting for the Alban Souk's working-class clientele. Her unofficial business is the same, just with pockets that don't show up on scanner sweeps, hidden carries woven into lining structure, and the occasional garment commissioned for someone who needs to look like someone else. She does not ask questions about why. She charges by complexity of the problem, not by what it is, and has a strict personal rule: nothing she makes gets used to hurt someone who hasn't hurt them first. How she enforces this is largely a matter of intuition and the Thread's counsel.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,15 @@
   "registered_firearms": [
     "Crucible Industries Storm Carbine SC-4 'Downpour'",
     "Crucible Industries Titan-500 'Earthquake'"
-  ]
+  ],
+  "related_entities": [
+    "The Alban Souk",
+    "Silver",
+    "Copper",
+    "The Pure Hand",
+    "Bronze",
+    "Glass",
+    "Compass Rose"
+  ],
+  "district": "The Shelf"
 }

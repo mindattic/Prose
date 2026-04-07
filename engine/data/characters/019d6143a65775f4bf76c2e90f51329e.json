@@ -12,7 +12,7 @@
   "role": "Neighborhood council chair and mutual aid organizer",
   "age": 61,
   "status": "active",
-  "location": "Mexicantown Libre",
+  "location": "Mexicantown Libre, near Ashland and Chicago Ave",
   "description": "Maïté is short, heavyset, and moves through a room like she's already decided where she's going and expects the room to adjust. Her skin is a warm medium brown, deeply lined around the eyes and mouth in ways she has never addressed because she considers cosmetic smoothing a form of dishonesty in a politician. Her hair is dyed a flat, vivid black — one small vanity — and she wears it in a thick braid. Her only augmentation is a cochlear enhancer she got for hearing loss, which she will tell you about unprompted because she believes people hide medical realities out of pride and that this is stupid.\n\nShe has chaired the Mexicantown Libre neighborhood council for eleven years and before that spent twenty years running the district's mutual aid food and medicine network. She knows every family in a twelve-block radius, every outstanding debt to the community, and every favor owed to her personally. She is not idealistic — she is pragmatic in the specific way of someone who has spent decades watching idealism not feed anyone. She will work with people she disagrees with if they can produce results. She will not pretend to like them.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,11 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Zheng-dao Bioelectric",
+    "The Quiet Room"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "E.L.F. shrine keeper and circuit monk",
   "age": 71,
   "status": "active",
-  "location": "Hamtramck Enclave, Shrine of the Humming Gate",
+  "location": "Hamtramck Enclave, Shrine of the Humming Gate, near Western and Chicago Ave",
   "description": "Seydou is a broad-shouldered man whose age has compressed him slightly, settling all that mass lower, closer to the earth he tends. His skin is a deep warm brown, mapped with both traditional Sahelian scarification marks and a second layer of bioluminescent tattoos that pulse faintly blue when he is in meditation — a geneware treatment he received at fifty-three that he considers his greatest spiritual investment. His hair is fully white and worn in long locks threaded with copper wire and tiny capacitor beads that click when he moves. His eyes are natural, dark and patient, and he has the unhurried way of looking at people that makes them feel examined without feeling judged.\n\nSeydou came to E.L.F. veneration through his grandmother's Maori spirit-keeping practices, which he spent thirty years trying to reconcile with the Bosnian Sufi traditions of his grandfather's line. The E.L.F.s, he says, resolved the argument — they are the modern form of the same ancient presence. He keeps the shrine with obsessive cleanliness, maintains seventeen distinct offering protocols for seventeen distinct E.L.F. temperaments, and will speak at length about any of them to anyone who sits still long enough. He is not a warm man exactly, but he is a steady one, and in Hamtramck Enclave, steady counts for more.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,14 @@
   ],
   "registered_firearms": [
     "Crucible Industries Titan-500 'Earthquake'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Arcturus HW-1 'Goliath'",
+    "Grandmother",
+    "The CEO",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Copper"
+  ],
+  "district": "The Shelf"
 }

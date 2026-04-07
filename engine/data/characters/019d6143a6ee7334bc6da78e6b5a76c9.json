@@ -12,7 +12,7 @@
   "role": "Underground press operator and anti-corporate agitator",
   "age": 29,
   "status": "active",
-  "location": "The Shelf — operates out of a sub-basement print node in Garfield Rack",
+  "location": "The Shelf — operates out of a sub-basement print node in Garfield Rack, near Pulaski and Chicago Ave",
   "description": "Temitope is wiry and perpetually underslept, with warm brown skin that flickers faintly at the cheekbones — a bioluminescent mod he got at nineteen that he now considers an identifying liability but refuses to remove on principle. His hair is cut close on the sides and left to grow into an untidy crown on top, frequently dusted with the toner residue of the print machines he maintains. He dresses in layers of things that belong to other people, or so it seems — every item slightly too large or too small, pockets everywhere.\n\nHe runs Groundswell, a semi-weekly zine distributed physically through a network of forty-seven dead drops across Tiers 1 and 2, and digitally through a rotating series of anonymous mirrors. The print edition he considers sacramental: 'You can't delete paper.' He is funny, caustic, and dangerously charming, with an anger that runs so clean and hot it can read as joy until you follow where it points. He believes in the press with religious fervor and distrusts organizations almost as much as he distrusts corporations, which has kept him free and largely friendless.",
   "psychology": {
     "facet_weights": {
@@ -176,5 +176,16 @@
   "registered_firearms": [
     "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ]
+  ],
+  "related_entities": [
+    "Garfield Rack",
+    "Graviton Compression Emitter GCE-3 'Flatline'",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Residue (I Still Have Your Feed)",
+    "VitaCore DermaTone Adaptive Skin Pigment System",
+    "Nesting Doll",
+    "Stalker"
+  ],
+  "district": "The Shelf"
 }

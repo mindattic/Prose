@@ -12,7 +12,7 @@
   "role": "Street pharmacist and grey-market drug dealer, The Burnished Market",
   "age": 41,
   "status": "active",
-  "location": "The Burnished Market, Calumet Rise",
+  "location": "The Burnished Market, Calumet Rise, near North Ave and Milwaukee",
   "description": "Tòfà is a tall man with a runner's build that has gone slightly soft around the middle in recent years, dark russet-brown skin, and a neatly maintained beard going grey at the chin. He has retractable cat-claw geneware on both hands — a practical mod, he'll tell you, useful for precise chemical work, though anyone who has seen him actually use a pipette knows he doesn't need them for that. His eyes are unmodified, which makes him unusual in the Burnished Market. He operates from a converted medical cart, immaculate inside its locking compartments, which he parks at the same spot every day with the punctuality of someone who understands that reliability is the most important product he sells. His signage is understated: a small white placard that says TÒFÀ HEALTH SOLUTIONS in plain text.\n\nTòfà was, for nine years, a licensed pharmaceutical technician at a Helix Biosystems retail clinic. He knows medication interactions, dosing principles, contraindications, and the specific pharmaceutical needs of a community that cannot afford a clinic visit with the depth of someone who studied it formally and has spent a decade applying that knowledge in conditions his training never covered. He is scrupulously honest about what his products can and cannot do. He has turned people away. He has sent people to the clinic when they needed the clinic, even when they couldn't pay and even when that meant losing a sale. He is not a good man in a simple sense — he is a man operating in a system that makes goodness expensive — but he is a careful one.",
   "psychology": {
     "facet_weights": {
@@ -243,5 +243,17 @@
   "carried_weapons": [
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Helix Biosystems",
+    "Calumet Rise",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "BLACKWATER",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Bashir Quansah-Mehrotra",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

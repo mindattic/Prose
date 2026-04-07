@@ -1,0 +1,37 @@
+{
+  "id": "baedc6714be950c83bafa6a473f6bfd9",
+  "name": "Tangent Audio Subvocal Throat Mic Choker",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A close-fitting choker with embedded subvocal microphones that pick up throat vibrations from speech too quiet to be audible. The wearer can communicate through mouthing words or whispering at volumes inaudible to anyone standing next to them. From the outside, the choker looks like a simple black band necklace.\n\nEssential equipment for covert operations, undercover work, and the kind of negotiations where being seen talking to your handler would end the conversation — and possibly the speaker.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "subvocal microphone array",
+    "vibration-sensing membrane",
+    "matte polymer band"
+  ],
+  "functionality": "Subvocal communication, silent transmission, covert comm",
+  "what_it_says": "You talk to people no one else knows you're talking to, and the conversation never enters the room.",
+  "worn_by": [
+    "undercover operatives",
+    "intelligence agents",
+    "covert negotiators"
+  ],
+  "manufacturer": "Tangent Audio",
+  "price_range": "Φ1,400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A subvocal choker recovered from a crime scene is still transmitting — and the receiving end is inside a corponation building that officially has no intelligence operations."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 3",
+    "choker",
+    "subvocal",
+    "covert",
+    "comm",
+    "Tangent"
+  ]
+}

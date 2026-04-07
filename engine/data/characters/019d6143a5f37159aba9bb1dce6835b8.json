@@ -12,7 +12,7 @@
   "role": "Freelance combat specialist — street samurai",
   "age": 62,
   "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Halsted and Chicago Ave",
   "description": "Djeneba Tarasov-Yiadom is compact and densely muscled, built low to the ground like something designed to survive impacts. At 62, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Djeneba Tarasov-Yiadom plans to keep it that way. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Djeneba Tarasov-Yiadom lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -277,5 +277,12 @@
   "registered_firearms": [
     "Meridian Munitions MM-4 'Breadwinner'",
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ]
+  ],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "The Gradient Compact",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

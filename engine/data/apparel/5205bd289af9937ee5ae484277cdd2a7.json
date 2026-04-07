@@ -1,0 +1,36 @@
+{
+  "id": "5205bd289af9937ee5ae484277cdd2a7",
+  "name": "Tangent Audio Bone-Conduction Headband",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A slim headband embedded with bone-conduction transducers that deliver audio directly through the skull, leaving the ears completely unobstructed. The band is covered in moisture-wicking fabric and looks like an ordinary athletic headband. Controls are touch-sensitive pads disguised as decorative stitching.\n\nUsed by operatives who need comm audio without visible earpieces, athletes who want music without blocking environmental sound, and augmented individuals whose ear canals have been modified in ways that make traditional earbuds impractical.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "bone-conduction transducers",
+    "moisture-wicking fabric",
+    "touch-sensitive controls"
+  ],
+  "functionality": "Bone-conduction audio, covert comm reception, open-ear design",
+  "what_it_says": "You're listening to something nobody else can hear, and your ears are still free to catch everything around you.",
+  "worn_by": [
+    "operatives",
+    "athletes",
+    "augmented individuals"
+  ],
+  "manufacturer": "Tangent Audio",
+  "price_range": "Φ780",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A dead courier's bone-conduction headband is still receiving transmissions from an encrypted channel — someone is still sending orders to a person who can no longer follow them."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 3",
+    "headband",
+    "bone-conduction",
+    "audio",
+    "covert"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Loan shark and protection racket enforcer for the Gravesend Basin neighborhood",
   "age": 52,
   "status": "active",
-  "location": "Gravesend Basin — operates from a laundromat called Ouédraogo Clean on Silt Row",
+  "location": "Gravesend Basin — operates from a laundromat called Ouédraogo Clean on Silt Row, near Halsted and Chicago Ave",
   "description": "Briseis is a broad-shouldered woman whose posture alone reads like a debt notice. Her skin is a deep umber, draped in faded keloid scars along her left forearm from a press-iron incident she doesn't discuss. She keeps her silver-shot hair in a tight wrap of amber-colored cloth, and her eyes — retrofitted with amber thermal optics she bought secondhand — glow faintly like coal when the light hits them right. She dresses in layered thermal vests and heavy skirts, always clean, always pressed; cleanliness is her one vanity in a neighborhood that smells of brine and machine oil.\n\nShe has lived in Gravesend Basin for thirty-one years and considers herself its true government. She does not yell. She does not threaten twice. Her particular genius is in making people feel grateful while she extracts from them — she lends at ruinous rates but remembers every birthday, every sick child, every funeral. The neighborhood loves her and pays her and is afraid of her in roughly equal measure. She believes, without irony, that she is keeping people alive that the corponations would simply forget.",
   "psychology": {
     "facet_weights": {
@@ -198,5 +198,16 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-10 Match 'Deadlock'",
     "Crucible Industries Close Defense Weapon CDW-8 'Barricade'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Gravesend Basin",
+    "The Iron Lotus",
+    "Stratum",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Iron",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

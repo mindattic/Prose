@@ -12,7 +12,7 @@
   "role": "Executive Vice President of Strategic Acquisition, Ringo Corporation",
   "age": 57,
   "status": "active",
-  "location": "Vantage Meridian Corporate Campus, Ringo Tower — Floor 58, corner office",
+  "location": "Vantage Meridian Corporate Campus, Ringo Tower — Floor 58, corner office, near State and Madison",
   "description": "Caoimhe Abubakar-Sigurðsson is a tall woman of sixty-ish who has made deliberate choices about how she ages. Her skin is dark and luminous — the bioluminescent dermal layer she had installed at forty is subtle, a warmth under the surface that catches in low light like embers, and she has never adjusted it toward anything flashier. Her hair is entirely white and kept in a long braid she wears forward over one shoulder. She has retractable claw mods on both hands, filed short enough that most people don't notice them, installed not for aesthetics but because she found them useful and has never felt the need to explain that. She dresses in a palette of black, ivory, and deep wine, always expensively, never ostentatiously.\n\nCaoimhe has been acquiring companies for Ringo for over two decades, and she is very good at it in the way that a certain kind of intelligence becomes: by being completely honest about what it wants while everyone else is still pretending they don't want anything. She is charming in the formal register, devastating in the negotiating room, and has a quality of stillness that makes people feel simultaneously seen and examined. She grew up in a Tier 4 household in what was then New Windsor, the daughter of a Ringo logistics executive, and has spent her entire career at the same corponation — a loyalty she's never examined too closely.",
   "psychology": {
     "facet_weights": {
@@ -257,5 +257,15 @@
   "carried_weapons": [
     "Tessera TK-9 Proteus 'Shapeshifter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Vantage Meridian Corporate Campus",
+    "the_meridian_office_park",
+    "Pilsen Veil",
+    "CRUCIBLE Vantage Artisan Precision Hand",
+    "Palette",
+    "The Pure Hand",
+    "Ringo Corponation"
+  ],
+  "district": "Meridian Core"
 }

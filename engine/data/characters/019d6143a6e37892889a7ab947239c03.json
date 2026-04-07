@@ -12,7 +12,7 @@
   "role": "Retired Axiom data archivist, now keeper of an informal neighborhood memory archive",
   "age": 84,
   "status": "active",
-  "location": "Norwood Quiet, the Bramble (an unofficial archive space in a converted residential unit)",
+  "location": "Norwood Quiet, the Bramble (an unofficial archive space in a converted residential unit), near Armitage and Milwaukee",
   "description": "Szymon is a tall, slightly stooped figure whose height is still visible in their bones even as age has curved their spine. Their skin is medium-dark, deeply lined, and they have let their hair go entirely white and grow into a loose cloud they contain with whatever is nearest — a clip, a piece of wire, once memorably a fork. Their eyes are fully augmented, both replaced in their forties for professional reasons, and they have an unusual amber-to-violet gradient iris that they chose because they liked the way light moved through it. They wear fingerless gloves always, a habit from decades of handling physical storage media.\n\nThey speak in layers, circling a point from multiple angles before landing, which people who don't know them find maddening and people who do find deeply reassuring. They have the archivist's particular mania for context — nothing means anything without what came before, and they will give you the what-came-before whether you asked for it or not. The Bramble is crammed floor-to-ceiling with physical and digital media: neighborhood history, personal testimonies, photographs, chat logs, voicemails, menus from restaurants that no longer exist. They collect these things with the urgency of someone racing an erasure they can feel approaching.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,16 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Norwood Quiet",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "ARCHIVE",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus Defense Solutions ETF-3 'Mantis'"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Freelance combat specialist — street samurai",
   "age": 64,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
   "description": "Aslan Vasquez-Chatterjee is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 64, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a street samurai out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAslan Vasquez-Chatterjee has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,13 @@
   "registered_firearms": [
     "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
     "Meridian Munitions Snapper-22 'Cricket'"
-  ]
+  ],
+  "related_entities": [
+    "Geartown",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Clover"
+  ],
+  "district": "The Circuit"
 }

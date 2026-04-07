@@ -12,7 +12,7 @@
   "role": "Street kid, gang prospect (junior), The Narrows",
   "age": 13,
   "status": "active",
-  "location": "The Narrows, Copperhead border",
+  "location": "The Narrows, Copperhead border, near North Ave and Damen",
   "description": "Iskander is all sharp angles and nervous energy, a thin boy with dark olive skin, a shaved head that's grown out uneven, and a jaw that's set in a permanent expression somewhere between defiance and plea. His left eye has a cosmetic mod — a slit pupil in amber, gift from an older gang prospect who found it in a pawn bin and thought it was funny — that he wears with more pride than anything else he owns. He has a long scar across his right palm that he tells different stories about every time someone asks. He smells of the cheap rehydrated noodles sold from the Narrows carts, and his jacket has someone else's name stenciled on the inside lining.\n\nIskander is auditioning for membership in the Copperhead Lacunae — a street organization that controls mid-tier contraband flow through the Narrows — and he knows it's an audition. He's smart enough to know that being smart isn't enough here; he's trying to learn what enough looks like. He runs small errands, holds packages he's not allowed to look inside, laughs at the right moments. Underneath this performance he is a child who has not slept in a bed with clean sheets in two years and who is starting to forget that this isn't just how things are.",
   "psychology": {
     "facet_weights": {
@@ -178,5 +178,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Copperhead",
+    "NeuralPath ClearRun Focus Regulation Implant",
+    "Adaeze Chen-Hawkins",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Circuit"
 }

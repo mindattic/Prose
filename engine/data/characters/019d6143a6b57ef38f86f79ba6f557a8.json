@@ -13,7 +13,7 @@
   "role": "Corporate Infrastructure Engineer / Covert Saboteur",
   "age": 38,
   "status": "active",
-  "location": "The Meridian Core (works); The Circuit (lives)",
+  "location": "The Meridian Core (works); The Circuit (lives), near LaSalle and Madison",
   "description": "Rorke Vassiliev is a senior infrastructure engineer for Axiom Structural Solutions, the Spire-contracted firm responsible for maintaining and expanding the data-physical architecture that keeps the Meridian Core's buildings intelligent, its transit nodes synchronized, and its environmental systems from killing everyone inside them. He is tall and angular with a narrow face, pale skin that rarely sees unfiltered light, and the kind of posture that comes from spending most of his waking hours interfacing with systems rather than people — slightly forward, head inclined, as though perpetually leaning toward a screen. He keeps his dark hair short and his clothes expensive in a deliberately understated way, the corporate-adjacent aesthetic of someone who earns well but performs modesty about it. His augmentations are high-end and largely invisible.\n\nHe is also, under a carefully maintained operational identity, one of the more consequential infrastructure saboteurs operating in Meridian 88 — a fact that would end his career, his freedom, and most likely his life if it became known to his employers. His targets are selective and his methods are slow: he does not blow things up. He degrades. He introduces subtle errors into maintenance schedules, creates cascading inefficiencies in building management systems, routes data through nodes that can later be accessed by people who shouldn't have access. He has, over eight years, quietly contributed to three major structural 'malfunctions' in Spire-adjacent developments that displaced luxury tenants and stalled corporate expansion into the Circuit. He considers this proportionate. He does not consider it enough.\n\nThe dissonance of his existence — drawing a substantial corporate salary to maintain the systems he is also quietly breaking — has not driven him to crisis but has instead produced a very particular kind of self-possession. He has become expert at compartmentalization, at maintaining separate registers of reality, at being genuinely useful and genuinely dangerous in the same body. He is not sure this is healthy. He has decided it doesn't matter.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,20 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NLR-9 'Counselor'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Meridian 88",
+    "The Circuit",
+    "Helix Biosystems Vagal Resonance Dampener",
+    "The Spire",
+    "Biometric Denial Charge BDC-1",
+    "The Shelf",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "The Pale Mile"
+  ],
+  "district": "Meridian Core"
 }

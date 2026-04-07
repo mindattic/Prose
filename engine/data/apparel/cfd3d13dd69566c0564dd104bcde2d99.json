@@ -1,0 +1,36 @@
+{
+  "id": "cfd3d13dd69566c0564dd104bcde2d99",
+  "name": "Synthesis Collective BioWeave Substrate Liner",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A living base layer grown from engineered substrate that bonds temporarily to the wearer's skin surface, creating a symbiotic interface. The BioWeave metabolizes dead skin cells and sweat as nutrients while producing a micro-layer of antibacterial and anti-inflammatory compounds against the skin. It feels like wearing warm liquid that has learned the shape of your body.\n\nDeveloped for Synthesis Collective researchers working in prolonged isolation conditions, the BioWeave is deeply unsettling to people unfamiliar with substrate technology. It breathes, it adapts, and when removed, it takes approximately thirty seconds to stop moving.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "living substrate fabric",
+    "symbiotic bonding layer",
+    "nutrient processing membrane"
+  ],
+  "functionality": "Symbiotic skin interface, antibacterial production, metabolic waste processing",
+  "what_it_says": "You're wearing something alive against your skin and you've made peace with what that means.",
+  "worn_by": [
+    "substrate researchers",
+    "biotech enthusiasts",
+    "long-duration field operatives"
+  ],
+  "manufacturer": "Synthesis Collective",
+  "price_range": "Φ3,400",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A BioWeave liner removed from a patient refuses to stop bonding to whatever surface it touches — the substrate has evolved past its intended programming and is actively seeking a new host."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 4",
+    "substrate",
+    "living fabric",
+    "Synthesis Collective",
+    "biotech"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "984757e6430a371d9899b67a1d8da668",
+  "name": "Korvain Dynamics Blast Visor",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A flip-up ballistic visor mounted on a lightweight titanium headframe, rated for fragmentation and low-velocity projectile deflection. The visor itself is layered polycarbonate with an anti-spall coating on the interior. When raised, it locks above the forehead; when lowered, it covers the face from hairline to chin.\n\nUsed by breaching teams, demolitions crews, and the kind of private security that expects to be shot at. The Blast Visor does not pretend to be subtle — its presence communicates that the wearer is prepared for violence.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "titanium headframe",
+    "layered polycarbonate",
+    "anti-spall coating"
+  ],
+  "functionality": "Fragmentation protection, low-velocity projectile deflection, flip-up mechanism",
+  "what_it_says": "You expect things to explode near your face and you've budgeted accordingly.",
+  "worn_by": [
+    "breaching teams",
+    "demolitions crews",
+    "heavy security"
+  ],
+  "manufacturer": "Korvain Dynamics",
+  "price_range": "Φ1,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Blast Visor recovered from a failed bank heist has a name etched on the interior — belonging to a corponation security consultant who was supposedly on shift that night."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 3",
+    "visor",
+    "ballistic",
+    "tactical",
+    "protective"
+  ]
+}

@@ -13,7 +13,7 @@
   "role": "Excluded — former Circuit data architect, now stateless and living off-grid",
   "age": 28,
   "status": "active",
-  "location": "Nomadic between Old Harbor and the underdeck of The Shelf",
+  "location": "Nomadic between Old Harbor and the underdeck of The Shelf, near Wacker and State",
   "description": "Eulàlia is a wiry young woman of Catalan-Senegalese heritage with the restless, slightly hollow-eyed look of someone who sleeps in four-hour increments and considers this a feature rather than a problem. She keeps her dark hair in a haphazard knot and dresses in layers that can be shed or added based on which part of the city she needs to move through. She has a habit of mapping her surroundings in her head — exits, sightlines, power sources — that makes her seem distracted in conversation when she is actually paying very close attention to everything except the person speaking.\n\nEulàlia was, until two years ago, a mid-tier data architect employed by a Circuit infrastructure firm, designing the information routing systems that keep Meridian 88's corporate districts legible to themselves. She was twenty-six, overqualified, and beginning to understand the full scope of what her work was being used for. The sequence of events following that understanding resulted in her employment termination, the revocation of her residential registration, the freezing of her financial identity, and what she describes as 'a fairly educational few weeks.' She is now, legally, no one. Her identity exists only in fragments she maintains herself.\n\nShe is not broken by this. She is, if anything, clarified. Eulàlia operates as a freelance network infiltrator and system saboteur, taking contracts that align with her criteria — which are specific, non-negotiable, and not primarily financial. She has a gift for understanding systems architecturally, for finding the load-bearing assumption that, removed, causes something large to stop working. She finds this genuinely interesting. The politics are almost secondary. Almost.",
   "psychology": {
     "facet_weights": {
@@ -246,5 +246,13 @@
   "registered_firearms": [
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Shelf",
+    "ARCHITECT",
+    "The Heritage Vault",
+    "Nesting Doll"
+  ],
+  "district": "Old Harbor"
 }

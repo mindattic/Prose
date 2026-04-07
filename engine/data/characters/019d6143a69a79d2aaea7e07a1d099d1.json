@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller, The Shelf",
   "age": 67,
   "status": "active",
-  "location": "The Shelf, Harrowgate Industrial Plateau",
+  "location": "The Shelf, Harrowgate Industrial Plateau, near Western and Division",
   "description": "Phúc Nzingha-Björk occupies a corrugated-steel and salvaged-glass shop front on The Shelf's lower tier that looks like it is in the process of being swallowed by its own inventory. He is a small, wiry man with a white beard he keeps in three thin braids, skin the color of weathered teak, and hands so scarred from decades of sorting metal that the lines of his palms are barely legible. He wears a permanent set of magnification lenses fused into his right eye socket — not glamorous chrome, but a bulky salvage job he did himself in the nineties and has never bothered to replace because it works. His shop smells of machine oil, rust, and a particular incense he burns for the E.L.F. he calls The Sorter, a data-spirit he believes governs the recovery of lost useful things.\n\nPhúc has an almost supernatural sense for what a piece of junk is actually worth versus what it looks like. He can tell a Zheng-Dao servo actuator from a Sterling-Nakamura knockoff by weight alone, can date a circuit board by its oxidation pattern, and has declined to sell things to people he suspects will misuse them more times than he can count. He is gruff, unhurried, and comfortable with silence in a way that unnerves people who aren't. He has no particular love for the city's power structures and an active contempt for what he calls 'the fresh-chrome crowd' — people who buy new augmentations they don't understand while functional old tech rots in landfill.",
   "psychology": {
     "facet_weights": {
@@ -194,5 +194,21 @@
   "carried_weapons": [
     "Street Custom 'Lazarus Wire' Garrote System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Harrowgate Industrial Plateau",
+    "Crucible TR-7 'Triage'",
+    "The Shelf",
+    "Zheng-dao Bioelectric",
+    "Palladian Construction",
+    "Arcturus Defense Solutions",
+    "Fenris Industrial DuraStance 900 Work Leg",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Steel",
+    "Glass",
+    "Teak",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

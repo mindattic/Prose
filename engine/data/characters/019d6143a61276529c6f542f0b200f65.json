@@ -12,7 +12,7 @@
   "role": "Covert entry and social penetration specialist — infiltrator",
   "age": 39,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
   "description": "Fatoumata Mwangi-Leblanc is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 39, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a infiltrator out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nFatoumata Mwangi-Leblanc has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,14 @@
   "registered_firearms": [
     "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "Ashfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Clover"
+  ],
+  "district": "The Shelf"
 }

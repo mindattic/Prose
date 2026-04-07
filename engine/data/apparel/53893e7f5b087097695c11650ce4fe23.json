@@ -1,0 +1,36 @@
+{
+  "id": "53893e7f5b087097695c11650ce4fe23",
+  "name": "MedTech Solutions Compression Recovery Suit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A full-body compression garment with graduated pressure zones that promote blood circulation, reduce inflammation, and accelerate muscle recovery. Embedded sensors monitor the wearer's physiological state and adjust compression in real time through micro-pump bladders along each limb.\n\nUsed by athletes, augmentation recovery patients, and laborers whose bodies take daily punishment they can't afford to heal from slowly. The suit is worn under work clothes and runs continuously, turning downtime into recovery time.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "graduated compression fabric",
+    "micro-pump bladders",
+    "physiological sensors"
+  ],
+  "functionality": "Dynamic compression therapy, real-time recovery monitoring, inflammation reduction",
+  "what_it_says": "Your body is breaking down and you're patching it faster than it can fall apart.",
+  "worn_by": [
+    "athletes",
+    "augmentation patients",
+    "heavy laborers"
+  ],
+  "manufacturer": "MedTech Solutions",
+  "price_range": "Φ1,200",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A laborer's Compression Recovery Suit data log shows muscle damage patterns inconsistent with their stated occupation — they're not lifting crates, they're fighting."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 3",
+    "compression",
+    "recovery",
+    "medical",
+    "therapy"
+  ]
+}

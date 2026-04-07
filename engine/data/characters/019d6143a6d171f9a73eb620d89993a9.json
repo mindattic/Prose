@@ -12,7 +12,7 @@
   "role": "Blackmail specialist and information broker for petty leverage",
   "age": 34,
   "status": "active",
-  "location": "Gravesend Basin, operates out of a water-damaged apartment above the Pelican Fry stall on Sump Row",
+  "location": "Gravesend Basin, operates out of a water-damaged apartment above the Pelican Fry stall on Sump Row, near Halsted and Division",
   "description": "Sokołów has the patient, watchful quality of someone who has learned to make herself invisible. She is medium height, with deep amber skin, close-cropped natural hair she dyes a muted copper, and wide-set eyes fitted with patterned irises—concentric rings of gold and black that she uses deliberately to unsettle people when she removes her tinted contacts in negotiation. Her hands are always busy: folding receipts, tapping rhythm on surfaces, smoothing the worn edges of her data chips. She dresses in forgettable browns and grays, functional layers that carry no corporate logo and make no statement. She could be a transit worker, a clinic scheduler, a nobody. That is entirely the point.\n\nSokołów is methodical and almost affectless in conversation, communicating through implication rather than declaration. She has a talent for making people feel that confessing to her is the only rational choice, and she genuinely believes she provides a service—she rarely destroys anyone, preferring the sustainable income of ongoing compliance. She has a private moral line: she will not leverage people over things that could get them killed or trafficked. She's broken that rule once, and she knows it, and it follows her.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,18 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Trail-357 'Pathfinder'"
-  ]
+  ],
+  "related_entities": [
+    "Gravesend Basin",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Irontide Tidal Energy",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "The Pure Hand",
+    "Nesting Doll",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Urban sociologist specializing in Shelf communities and informal governance, independent researcher",
   "age": 36,
   "status": "active",
-  "location": "Chatham Flats — lives and works embedded in the community they study",
+  "location": "Chatham Flats — lives and works embedded in the community they study, near Ashland and Division",
   "description": "Iphigenia Tambadou-Szarvas is compact and restless, with warm brown skin, a nose ring that cycles through three colors with their mood (a cheap cosmetic mod they've had since graduate school), and natural hair grown into a large, somewhat chaotic halo they cut themselves with kitchen scissors. They dress exclusively in layers that can be added or removed depending on which district they're moving through — they've gotten very good at reading the visual codes of neighborhoods and adjusting accordingly. Their eyes are unmodified, which in the Shelf reads as either poverty or principle; in Iphigenia's case it is both, worn with quiet stubbornness.\n\nThey have the particular energy of someone who is genuinely fascinated by people — not as subjects but as people — and communities on the Shelf can sense the difference. They've been invited to births, funerals, water-distribution arguments, and at least two ELF-shrine consecrations in districts researchers never get into. They also have a temper they've mostly learned to manage, a sharp tongue when bureaucratic abstraction is used to justify human harm, and a habit of forgetting to eat when they are deep in field notes. They are fiercely protective of the communities they work with and will refuse to share data that could harm them, which has cost them two university positions and one very lucrative Axiom contract.",
   "psychology": {
     "facet_weights": {
@@ -176,5 +176,18 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street Custom 'Backfire' Weaponized Exhaust System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Chatham Flats",
+    "FOUNDATION",
+    "The Shelf",
+    "The Gradient Compact",
+    "Babel",
+    "Nesting Doll",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Slagworks Industrial",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

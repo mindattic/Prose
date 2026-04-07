@@ -13,7 +13,7 @@
   "role": "Route planner and backup courier — Switchback",
   "age": 23,
   "status": "active",
-  "location": "The Shelf — rents a room in a co-op housing block four buildings from Jinx's squat",
+  "location": "The Shelf — rents a room in a co-op housing block four buildings from Jinx's squat, near Halsted and Chicago Ave",
   "description": "Puck Nygaard is the steady hand in a crew built on velocity. Where Jinx is instinct and adrenaline, Puck is preparation and endurance. He can't match Jinx's raw speed — nobody on the Shelf can — but he can run longer, plan better, and carry heavier packages without slowing down. He is the reason Switchback has a backup plan for every route, a dead drop on every block, and a reputation for reliability that extends beyond the Shelf.\n\nHe grew up three blocks from Jinx, in a co-op housing block held together by community labor and bureaucratic neglect. His mother was a Shelf seamstress who paid for his first augmentation — a basic reflex enhancer — by taking double shifts for eight months. He started running with Jinx at fifteen because the alternative was stacking crates in a warehouse for wages that wouldn't cover food. The running was better. The running was freedom. Seven years later, the freedom is starting to feel like a different kind of cage.\n\nPuck is tall for a courier — six-one, broad-shouldered, built more for endurance than acrobatics. He compensates with route knowledge that borders on encyclopedic. He knows every alley, every service tunnel, every timing gap in every surveillance grid on the Shelf and into Milwaukee Core. His face is open, honest, and perpetually a little worried — the face of someone who sees the problems that the enthusiastic people don't.",
   "psychology": {
     "facet_weights": {
@@ -189,5 +189,15 @@
   "carried_weapons": [
     "Street Custom 'Angry Mary' Aerosol Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lazarus Pharmaceuticals NeuroPrecision Surgical BCI",
+    "VitaCore SteadyField Precision Motor Implant",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "The Shelf",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Neuromorphic Pressure Cestus",
+    "Ringo DV-4 'Courier'"
+  ],
+  "district": "The Shelf"
 }

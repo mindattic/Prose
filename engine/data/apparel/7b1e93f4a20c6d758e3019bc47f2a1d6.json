@@ -1,0 +1,41 @@
+{
+  "id": "7b1e93f4a20c6d758e3019bc47f2a1d6",
+  "name": "Ashwall Geneware Street Preacher's Manifesto Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A floor-length coat of layered salvage canvas, hand-painted with dense scripture in six languages, split up the back to accommodate a full bioluminescent spine ridge that pulses amber during sermons. Beneath it, a bare-chested wrap of kente-panel cloth across the torso and loose linen trousers with a tail-slot cut at the rear. The coat hem is perpetually singed.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvage canvas",
+    "hand-applied paint",
+    "kente-panel cloth",
+    "linen",
+    "scorch-edged hem"
+  ],
+  "functionality": "Back split and tail-slot accommodate full geneware expression; the coat layers provide moderate acid-rain protection.",
+  "what_it_says": "This person has given their body to their message and wants every passerby to read it.",
+  "worn_by": [
+    "geneware-modded street preachers",
+    "Shelf cult leaders",
+    "radical body-autonomy activists"
+  ],
+  "manufacturer": "Self-constructed; Ashwall canvas base stock",
+  "price_range": "Φ15–30 materials cost; labor is devotion",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "One of the six languages on the coat is a dead corporate cipher — whoever painted it knew something they shouldn't.",
+    "The bioluminescent spine ridge flickers irregularly, suggesting an infection or a failing geneware install."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "unique_character_look",
+    "tier1",
+    "street_preacher",
+    "geneware",
+    "bioluminescent",
+    "manifesto",
+    "religion"
+  ]
+}

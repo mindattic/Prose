@@ -11,7 +11,7 @@
   "role": "Fixer - Disappearance specialist",
   "age": 44,
   "status": "active",
-  "location": "Old Harbor",
+  "location": "Old Harbor, near Michigan Ave and Roosevelt",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -100,5 +100,6 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "district": "Old Harbor"
 }

@@ -12,7 +12,7 @@
   "role": "Independent vehicle mechanic specializing in Ferrogate Transit auxiliary vehicles and civilian cargo crawlers",
   "age": 34,
   "status": "active",
-  "location": "Geartown, Ironvein sub-block, bay unit 7",
+  "location": "Geartown, Ironvein sub-block, bay unit 7, near Milwaukee and Damen",
   "description": "Gulliver is lean and grease-darkened in a way that feels permanent, as though the machine oil has become part of his pigmentation — his hands are always a shade darker than his forearms no matter how much he scrubs. He has his mother's Ghanaian cheekbones and his father's Kazakh jaw, which together give him a face that people find hard to stop looking at without knowing quite why. He keeps his hair close-cropped except for two finger-wide stripes he has dyed iridescent copper, a remnant of a decade-old fashion he never bothered to give up. He has a prehensile tail modification — mottled gray-brown with a slightly prehensile curl — that he got at nineteen and has used as a third utility limb ever since: it holds tools, hooks parts bins, and occasionally taps impatiently on the floor when he is thinking.\n\nGulliver is constitutionally incapable of leaving a broken thing alone. This is a professional gift and a personal curse. His bay is organized with the obsessive logic of a man who has lost a critical component one too many times and never forgot it. He is not unfriendly but he is focused, and conversations with him often drift sideways into the mechanics of whatever he happens to be working on. He keeps a small ELF shrine mounted above his main workbench — a figure he calls Grease Aunt, fashioned from fused capacitors and old gasket rings — and consults it before any job that involves a vehicle with a history of instability.",
   "psychology": {
     "facet_weights": {
@@ -220,5 +220,17 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Kang-Petrov Arms KPS-12 'Workbench'",
+    "Geartown",
+    "Ironvein",
+    "Crucible WR-9 'Gulliver'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Pure Hand",
+    "Copper",
+    "The Wire Taps"
+  ],
+  "district": "The Circuit"
 }

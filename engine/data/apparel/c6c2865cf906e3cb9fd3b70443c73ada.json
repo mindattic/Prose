@@ -1,0 +1,36 @@
+{
+  "id": "c6c2865cf906e3cb9fd3b70443c73ada",
+  "name": "Synthesis Collective Cleanroom Isolation Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A positive-pressure cleanroom suit that maintains a filtered, sterile micro-environment around the wearer. The suit's air supply is HEPA-filtered and pressurized slightly above ambient, ensuring that any breach pushes clean air out rather than allowing contaminants in. Transparent face panels provide full visibility.\n\nUsed in substrate research, pharmaceutical manufacturing, and any environment where the work requires contamination levels measured in parts per billion. The suit protects the work from the wearer as much as it protects the wearer from the work.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "positive-pressure envelope",
+    "HEPA filtration system",
+    "transparent face panels"
+  ],
+  "functionality": "Positive-pressure isolation, HEPA-filtered air, sterile micro-environment",
+  "what_it_says": "You are the contaminant, and this suit keeps your biology from ruining something worth more than you.",
+  "worn_by": [
+    "substrate researchers",
+    "pharmaceutical workers",
+    "precision manufacturers"
+  ],
+  "manufacturer": "Synthesis Collective",
+  "price_range": "Φ5,600",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A cleanroom suit's pressure logs show it was deliberately depressurized for eleven seconds during a substrate handling operation — just long enough to introduce the wearer's biological material into the sample."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 4",
+    "cleanroom",
+    "isolation",
+    "sterile",
+    "Synthesis Collective"
+  ]
+}

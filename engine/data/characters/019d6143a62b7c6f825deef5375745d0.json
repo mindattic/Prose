@@ -12,7 +12,7 @@
   "role": "Bio-waste disposal technician for Aurochs Medical Complex",
   "age": 29,
   "status": "active",
-  "location": "Aurochs Medical Complex, Sub-Level 3 bio-waste processing facility",
+  "location": "Aurochs Medical Complex, Sub-Level 3 bio-waste processing facility, near sub-level access near LaSalle and Congress",
   "description": "Ignác is compact and wiry, with golden-brown skin and a face that is younger than his eyes. His hair is kept shaved close out of practical necessity — long hair and bio-waste processing are a bad combination — but he has an elaborate bioluminescent tattoo that runs from behind his left ear down his neck, pulsing a cool blue-green that he can modulate with concentration. He wears standard Aurochs disposal coveralls with his name stenciled in block letters on the chest pocket, and he smells faintly of industrial enzymatic cleaner no matter what else he does.\n\nHe has an unexpected gift for observation that he's never quite known what to do with. Twelve hours a day in the bowels of a major medical complex means Ignác sees what gets thrown away, and a remarkable amount can be understood about a hospital's actual business by paying attention to its waste stream. He's cheerful in the gallows-humor way of people who work deeply unglamorous jobs, freely self-deprecating, and genuinely curious about people in a way that disarms them before they realize he's been listening very carefully.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,12 @@
     "Crucible Industries Havoc-44 'Mauler'",
     "Meridian Munitions Street PDW MSP-7 'Alleycat'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "The Gradient Compact",
+    "Street Custom 'Gallows' Recurve Bow",
+    "IRONLIMB Spectre SV-4 Stealth Arm"
+  ],
+  "district": "The Underworld"
 }

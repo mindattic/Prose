@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor — custom streetwear, geneware-adaptive textiles, and secondhand curated fashion",
   "age": 23,
   "status": "active",
-  "location": "The Alban Souk, Calumet Rise",
+  "location": "The Alban Souk, Calumet Rise, near Western and Division",
   "description": "Solina is a small, bright-eyed young woman with color-changing hair — a geneware mod she got as a gift from her older sister that cycles through her moods in deep jewel tones, though she has learned to override it manually for professional situations and keeps it a steady ochre during business hours. She has dark skin and the compact, efficient movements of someone who grew up in a small space, and her personal style is a rotating argument: today structured and architectural, tomorrow soft and layered, always intentional. Her stall is hung with pieces she has made, altered, sourced, and curated — everything labeled with a hand-written tag in her small careful script explaining its origin, its material, and what she thinks it's for.\n\nSolina is ambitious in the specific way of someone young enough to still believe in the direct line between work and outcome. She is making things. She believes in what she is making. She has not yet been defeated by the market in any permanent way, and this gives her an energy that is simultaneously infectious and occasionally exhausting to people who have been at it longer. She is genuinely talented — the pieces she designs herself have started drawing buyers from Beverlynn Heights who come slumming in Calumet Rise specifically for her work — and she is beginning to understand, with some anxiety, what that attention might mean.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,16 @@
     "Street Custom 'Angry Mary' Aerosol Flamethrower",
     "Forge-Smith Collective Composite Tonfa 'Riot Answer'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Beverlynn Heights",
+    "The Alban Souk",
+    "Calumet Rise",
+    "The Meridian Compact for Economic Justice",
+    "The Gradient Compact",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Stratum",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa"
+  ],
+  "district": "The Shelf"
 }

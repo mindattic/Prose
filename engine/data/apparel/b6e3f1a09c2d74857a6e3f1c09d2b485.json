@@ -1,0 +1,42 @@
+{
+  "id": "b6e3f1a09c2d74857a6e3f1c09d2b485",
+  "name": "Vansen ArcWarm Heated Glove — Chrome-Socket Fit",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Thick neoprene-shell gloves with embedded resistive heating wire and a reinforced chrome-socket palm that accommodates partial hand augmentations and wrist interface ports. The heating system is powered by a slim battery cell worn at the wrist, giving 8 hours of warmth at -30C. Available in black and gunmetal.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "neoprene outer shell",
+    "resistive heating wire mesh",
+    "chrome-socket palm reinforcement",
+    "thermal reflective inner lining",
+    "slim lithium-cell wristband"
+  ],
+  "functionality": "Active resistive heating rated to -30C wind chill; palm socket accommodates partial hand chrome and wrist interface hardware without pressure points.",
+  "what_it_says": "Someone who invested in proper aug-compatible winter gear — not rich, but not cutting corners on their hands.",
+  "worn_by": [
+    "mid-level augmented workers",
+    "small business owners with chrome hands",
+    "skilled tradespeople",
+    "Tier 3 commuters"
+  ],
+  "manufacturer": "Vansen AugMount Accessories",
+  "price_range": "Φ120–Φ180",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The battery cell has been modified to run hotter than spec — whoever did it knew exactly how close to the thermal limit they could push.",
+    "One glove's socket fit is calibrated for a rare discontinued chrome model; whoever owned these had very specific hardware."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "winter_heavy",
+    "tier3",
+    "aug_compatible",
+    "gloves",
+    "heated",
+    "chrome_compatible",
+    "vansen"
+  ]
+}

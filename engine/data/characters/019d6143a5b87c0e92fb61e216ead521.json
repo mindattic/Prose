@@ -12,7 +12,7 @@
   "role": "Aerial extraction and rapid transit pilot — getaway pilot",
   "age": 59,
   "status": "active",
-  "location": "The Spires — mid-level corporate residential towers",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
   "description": "Aslan Granlund-Tawiah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 59, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a getaway pilot out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAslan Granlund-Tawiah is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,11 @@
   "carried_weapons": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Nearfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Spires"
 }

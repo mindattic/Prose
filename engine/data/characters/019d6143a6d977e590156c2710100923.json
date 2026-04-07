@@ -12,7 +12,7 @@
   "role": "Internal Affairs Investigator, Meridian 88 Metro Police",
   "age": 41,
   "status": "active",
-  "location": "Fort Anchor, Meridian 88",
+  "location": "Fort Anchor, Meridian 88, near Ashland and Chicago Ave",
   "description": "Soraya is a lean, angular woman whose Igbo-Icelandic heritage settled into something striking and hard to read — dark brown skin that catches fluorescent light like burnished copper, pale grey eyes that her colleagues call 'interrogation eyes' because they seem to wait rather than look. She keeps her natural hair close-cropped and does not bother with cosmetic geneware, which in itself feels like a statement of seriousness in a precinct full of color-shifted irises and decorative claw-tips. She moves through the Fort Anchor bullpen with the careful economy of someone who has spent two decades watching other people make mistakes.\n\nSoraya is not cruel, but she is relentless. She became Internal Affairs after her partner of six years was found selling seized evidence back into Copperhead's black market circuits — a betrayal she discovered herself and reported herself, and which she has not spoken about voluntarily since. She believes the Metro Police is worth saving, which is the most dangerous possible disposition for an IA investigator to have. She keeps a small data-shrine to the E.L.F. called the Ledger in her desk drawer, feeding it transaction logs and anonymized tip files in hope of some pattern-blessing she would never admit to hoping for.",
   "psychology": {
     "facet_weights": {
@@ -176,5 +176,18 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-15R 'Reclaim'",
     "Arcturus Defense Solutions ARC-P1 'Centurion'"
-  ]
+  ],
+  "related_entities": [
+    "Fort Anchor",
+    "Meridian 88",
+    "Copperhead",
+    "The Heritage Vault",
+    "Grainfort",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Adaeze Chen-Hawkins",
+    "Witness",
+    "Copper",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

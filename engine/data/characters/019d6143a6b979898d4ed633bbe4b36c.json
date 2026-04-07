@@ -12,7 +12,7 @@
   "role": "Union organizer and protest coordinator",
   "age": 24,
   "status": "active",
-  "location": "Mexicantown Libre — sleeps in the back of the Ferrogate Transit Workers' Local 9 hall",
+  "location": "Mexicantown Libre — sleeps in the back of the Ferrogate Transit Workers' Local 9 hall, near Western and Division",
   "description": "Rudo is compact and kinetic, rarely fully still, with medium-brown skin and a geneware tail — a long, expressive black cat tail they got at seventeen — that broadcasts their mood with embarrassing accuracy. Their hair is dyed in shifting bands of amber and copper, and they have the kind of face that looks younger than it is, which they've learned to use strategically: people underestimate them exactly once. There are calluses on their hands from six months working actual transit maintenance before they moved into organizing full-time, and they consider those calluses a credential.\n\nRudo has been with Transit Workers' Local 9 for three years and is, depending on who you ask, either the most effective junior organizer the local has seen in a decade or an absolute disaster waiting to happen. Both assessments are probably true. They have an instinct for crowd dynamics and an appetite for confrontation that their more experienced colleagues find alternately inspiring and terrifying. They believe completely in the workers they represent and are only beginning to understand the gap between belief and strategy.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,18 @@
   "registered_firearms": [
     "Nkomo-Lindqvist NL-9SD 'Lullaby'",
     "Hearthstone Firearms Defender-38 'Snubnose'"
-  ]
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Ferrogate Transit",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Big Rig",
+    "The Gradient Compact",
+    "Lacuna Genomics",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

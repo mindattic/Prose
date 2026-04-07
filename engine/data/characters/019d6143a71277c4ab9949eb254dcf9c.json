@@ -12,7 +12,7 @@
   "role": "Prototype theft and corporate tech acquisition — tech retriever",
   "age": 28,
   "status": "active",
-  "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure",
+  "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure, near Wacker and State",
   "description": "Vesna Bergstrom-Konate is lean and angular, all sharp edges and visible tension. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Whitecap, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nVesna Bergstrom-Konate has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,15 @@
   "registered_firearms": [
     "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
     "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ]
+  ],
+  "related_entities": [
+    "Pale Harbor Anchorage",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Clover",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "Old Harbor"
 }

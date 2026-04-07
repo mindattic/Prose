@@ -12,7 +12,7 @@
   "role": "Barber, owner-operator of a small shop",
   "age": 62,
   "status": "active",
-  "location": "Mexicantown Libre, Calle Ochenta storefront (between the pawn exchange and the tamale counter)",
+  "location": "Mexicantown Libre, Calle Ochenta storefront (between the pawn exchange and the tamale counter), near Western and Chicago Ave",
   "description": "Yusuf is a large man gone soft with age — broad shoulders that slope now, a round belly he makes no apology for, and hands that remain extraordinary: steady, certain, with the flat-filed nails of a man who has been putting blades near people's faces for four decades. His skin is very dark with a warm undertone, and he keeps a neat, close-trimmed grey beard that he touches up himself every morning using the second chair as a mirror. He has a single cosmetic geneware modification — a cat's tail, dark grey, that he got at fifty as a joke with his then-partner and kept after the relationship ended because, he says, it gives him something to do with his hands while he listens. It curls around his ankle or flicks slowly when he's thinking.\n\nThe shop has three chairs, two mirrors, and approximately forty years of layered history on its walls: photographs, old clipper brand stickers, a faded printed menu from a restaurant that closed before he moved in, a small ELF shrine to what he calls the Chair Spirit built from a first-generation clipper chassis with incense holders soldered to the housing. He charges what he always charged, adjusted only for inflation, and he has turned down three buyout offers from a Tessera real estate subsidiary. The shop smells like talc, synth-eucalyptus, and old paper. He knows everyone's name and their father's name and in some cases their grandfather's.",
   "psychology": {
     "facet_weights": {
@@ -253,5 +253,18 @@
   "registered_firearms": [
     "Crucible Industries Storm Carbine SC-4 'Downpour'",
     "Tessera TKR-10 'Executor'"
-  ]
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "The CEO",
+    "Lazarus EC-4 'Companion'",
+    "Ringo Corponation Mnemonic Excision Clip",
+    "Tessera Corponation",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Switchblade Alley",
+    "Stratum",
+    "The Pure Hand",
+    "The Coffin Nails"
+  ],
+  "district": "The Shelf"
 }

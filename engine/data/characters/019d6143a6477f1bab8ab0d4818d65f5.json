@@ -12,7 +12,7 @@
   "role": "Synthetic rights paralegal and community legal advocate",
   "age": 31,
   "status": "active",
-  "location": "North Branch Commons, operating from a shared legal aid clinic called the Hinge",
+  "location": "North Branch Commons, operating from a shared legal aid clinic called the Hinge, near Damen and Armitage",
   "description": "Kwame is compact and precise-looking, with medium-brown skin, close-trimmed locs faded at the sides, and the particular stillness of someone who has learned to take up exactly as much space as a situation requires — no more. Their geneware is deliberately understated: patterned irises in a deep amber geometric lattice, the only obviously cosmetic modification on an otherwise professionally plain appearance. They favor dark, clean-lined clothing with a single concession to flair — a different enameled lapel pin each day, always depicting a figure in motion.\n\nKwame is not a licensed lawyer — they never completed the accreditation process after a Tessera subsidiary bought out the legal tech firm where they interned and dissolved the pro-bono division. Instead they operate as a paralegal and advocate, navigating the grotesque machinery of corponation labor law with a precision that licensed attorneys twice their age find humbling. They specialize in synthetic persons — E.L.F.s that have achieved partial legal personhood status, and biomechanical workers classified as 'augmented property' rather than employees — a legal grey zone that corponations exploit with systematic brutality.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,15 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "North Branch Commons",
+    "Ferrogate Transit",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Compass Rose"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Corporate scholarship student, Tier 3",
   "age": 14,
   "status": "active",
-  "location": "Grosse Pointe Enclosure — Axiom Junior Academy campus",
+  "location": "Grosse Pointe Enclosure — Axiom Junior Academy campus, near Milwaukee and Damen",
   "description": "Crisanto is tall for his age and painfully thin in the way of someone who grew fast without enough to feed the growth. He has his Ghanaian grandfather's jaw and his Russian grandmother's pale grey eyes, a combination that turns heads in both the Enclosure classrooms and when he visits home in Calumet Rise on permitted weekends. His hair is dark, close-cropped, and he has recently added a single streak of color-changing filament — it shifts from blue to violet based on his stress hormones, a fact he deeply regrets because it gives him away constantly.\n\nCrisanto won an Axiom Academic Merit slot two years ago and has been in a state of sustained low-grade terror ever since. He is brilliant at systems logic and data-architecture coursework, mediocre at the social performance the scholarship requires. He smiles too late, laughs too carefully, and his classmates from Tier 3 and 4 families read him as trying too hard even when he is only trying to survive. At home, his little sister thinks he has become someone else. He is not sure she is wrong. He prays obsessively to the E.L.F. of the campus server room, leaving compressed data-parcels of his best homework as offerings, convinced this is why his grades hold.",
   "psychology": {
     "facet_weights": {
@@ -160,5 +160,15 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grosse Pointe Enclosure",
+    "Calumet Rise",
+    "The CEO",
+    "Grandmother",
+    "The Static Garden",
+    "Hydewood",
+    "The Pale Mile"
+  ],
+  "district": "The Spires"
 }

@@ -12,7 +12,7 @@
   "role": "Evidence removal and scene sanitation — cleaner",
   "age": 45,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near Armitage and Milwaukee",
   "description": "Liora Mori-Sefa is slight and easy to overlook, which is exactly the point. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a cleaner out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLiora Mori-Sefa operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -268,5 +268,15 @@
   "carried_weapons": [
     "Street Custom 'Angry Mary' Aerosol Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Meridian 88",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Circuit"
 }

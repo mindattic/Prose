@@ -12,7 +12,7 @@
   "role": "Personnel recovery and hostile extraction — extraction specialist",
   "age": 30,
   "status": "active",
-  "location": "The Overhang — residential shelves built onto megastructure exteriors",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
   "description": "Fatoumata Baranov-Fosu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,13 @@
   "carried_weapons": [
     "Street Custom 'Glass Garden' Caltrops"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ironveil Canopy",
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Neuromorphic Pressure Cestus",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

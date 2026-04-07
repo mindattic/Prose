@@ -12,7 +12,7 @@
   "role": "Food stall operator and informal neighborhood matriarch",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Pulaski and Chicago Ave",
   "description": "Soraya is a broad-shouldered woman with copper-dark skin mapped by deep laugh lines and a few deliberate burn scars on her forearms she calls her 'flavor tattoos' — each one marking a dish she learned from a different region. Her hair is dyed a permanent warm saffron-orange through a cheap geneware follicle treatment that never quite fades, and she wears it coiled high under a wax-print headwrap. She moves through her stall with unhurried authority, stirring six pots at once without looking, tasting with the practiced certainty of someone who has been cooking since before half her customers were born. Her eyes are warm but they read people the way a butcher reads a cut of meat — quickly, accurately, without sentiment.\n\nSoraya has operated her stall at the Oxidian Market for twenty-two years, through two corporate rezoning attempts, one gang war, and a flood. She is not rich. She is not connected. What she is, is immovable. She knows everyone, feeds everyone, and remembers everything. She doesn't charge the hungry if they look like they mean it, but she will absolutely overcharge someone who looks like they can afford it and won't count their change.",
   "psychology": {
     "facet_weights": {
@@ -176,5 +176,15 @@
   "registered_firearms": [
     "Crucible Industries Storm Carbine SC-4 'Downpour'",
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Ferrogate Transit",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Geartown",
+    "Carrion Defense Works Bone Saw BS-3 'Butcher'",
+    "Copper",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

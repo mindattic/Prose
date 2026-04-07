@@ -1,0 +1,37 @@
+{
+  "id": "ded4ba3e8f7e9285b01e074a8a5d6b26",
+  "name": "Silhouette Fashion Lace Interface Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Delicate, elbow-length gloves made from conductive lace that allows the wearer to interact with touch-sensitive surfaces and holographic interfaces through the fabric. The lace pattern conceals micro-capacitive threads that replicate the wearer's natural touch conductivity. Available in black, ivory, and deep crimson.\n\nA Spire fashion staple that solves the social problem of wanting to look elegant while still being able to use your comm unit, access door panels, and manipulate holographic displays without removing your gloves.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "conductive lace",
+    "micro-capacitive threads",
+    "silk-analog lining"
+  ],
+  "functionality": "Touch-through interface compatibility, full haptic conductivity",
+  "what_it_says": "You refuse to choose between elegance and functionality because you can afford not to.",
+  "worn_by": [
+    "Spire socialites",
+    "corponation executives",
+    "fashion-conscious professionals"
+  ],
+  "manufacturer": "Silhouette Fashion",
+  "price_range": "Φ2,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of Lace Interface Gloves left at a gala contain micro-capacitive recordings of every surface their wearer touched that evening — including a secure terminal that shouldn't have been accessible."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 4",
+    "fashion",
+    "conductive",
+    "lace",
+    "Spire",
+    "interface"
+  ]
+}

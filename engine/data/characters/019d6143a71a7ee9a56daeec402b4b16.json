@@ -11,7 +11,7 @@
   "role": "orphanage resident and apprentice glassworker, Tier 1-2 transitional",
   "age": 13,
   "status": "active",
-  "location": "Grainfort, Meridian Municipal Children's Residency Block 7 / Grainfort Artisan Foundry",
+  "location": "Grainfort, Meridian Municipal Children's Residency Block 7 / Grainfort Artisan Foundry, near Fullerton and Damen",
   "description": "Wren has the lean angular face of someone whose Senegalese and Samoan grandparents left them something architectural in the bone structure, wide-browed and sharp-chinned, with light brown skin that has taken on a faint iridescence from trace exposure to the foundry's vaporized mineral compounds — an unofficial and irreversible aesthetic byproduct that their supervisor Mister Achim calls 'an occupational gift.' Their hair is thick and natural, kept short on the sides, and they've woven in three copper wire coils that ring softly when they move. Their hands are already marked with the small pale scars of a working glassworker.\n\nWren was assigned to the Grainfort artisan apprenticeship lottery at eleven, which placed them at the Foundry three afternoons a week, and they took to it with a ferocity that surprised everyone. They are quiet in the way of someone who learned early that words carry cost; they observe everything and say only what needs saying. At the Residency Block they are known as the one who doesn't get involved in the house politics, which is both true and a deliberate strategy. They are saving every Φ of their apprentice stipend toward the day they can apply to leave the block system entirely.",
   "psychology": {
     "facet_weights": {
@@ -201,5 +201,18 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Gravemoss Biofoundry",
+    "Grainfort",
+    "Cinderblock Ai",
+    "Ionic Thermoclastic Rifle ITR-5 'Ashmaker'",
+    "Crucible Industries CR-9 'Foundry'",
+    "Copper",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile",
+    "Zheng-Dao Heavy Industries Dragon's Breath DB-8 'Kiln'"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Corporate school scholarship student, Tier 3 aspirant from Tier 1 origins",
   "age": 15,
   "status": "active",
-  "location": "Engelheim (school campus), commutes from Hough Reclamation",
+  "location": "Engelheim (school campus), commutes from Hough Reclamation, near Lincoln and Clark",
   "description": "Benedek is tall and angular, still growing into himself, with warm brown skin, close-cropped dark hair, and the slightly exhausted look of someone who sleeps four hours a night by choice. His Axiom-issued school uniform is always immaculate — he steams it every morning using a kettle and a board he made from plywood — but his shoes give him away, resoled twice and showing the ghost of a different color at the heel. His geneware is a scholarship-standard retinal overlay, school-issued, which flickers faintly blue when he's processing dense information. He has large hands that he doesn't know what to do with in social situations.\n\nBenedek is one of twelve scholarship students at Engelheim Axiom Preparatory, and he is acutely, exhaustingly aware of the difference between himself and his fee-paying classmates at every moment. He has responded to this by becoming the best student in his cohort by a margin wide enough to be undeniable — and by developing a precise, careful social manner that his classmates read as aloofness and his teachers read as maturity. In truth he is desperately lonely in both directions: too corporate for Hough, too Hough for corporate. He is furiously ambitious and privately terrified that ambition is the only thing holding him together.",
   "psychology": {
     "facet_weights": {
@@ -179,5 +179,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "Engelheim",
+    "Witness",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pure Hand"
+  ],
+  "district": "The Laceworks"
 }

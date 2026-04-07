@@ -13,7 +13,7 @@
   "role": "Mid-tier commercial property broker and covert information broker",
   "age": 38,
   "status": "active",
-  "location": "The Circuit",
+  "location": "The Circuit, near North Ave and Damen",
   "description": "Tavish Ohlendorf-Crane presents himself as the most boring man in Meridian 88, and he has cultivated this presentation with the care of a topiarist. He is medium height, medium build, with a forgettable face he keeps clean-shaven and hair he keeps the color and style of someone who doesn't think about his hair. His suits are expensive in ways that read as merely appropriate. He smiles at exactly the right frequency. He brokers commercial leases in The Circuit and lower Meridian Core — warehouses, storefronts, sublevel office space — and he is very good at it, and this is genuinely not the interesting thing about him.\n\nThe interesting thing is that Tavish has spent fifteen years quietly embedding himself in the physical infrastructure of Meridian 88's middle layers, and in doing so has accumulated something more valuable than money: he knows who is in every room. His properties house everything from courier fronts to unlicensed server farms to the private meeting spaces where deals that can't happen in public happen. He doesn't ask what his tenants are doing. He charges accordingly. And he listens, through the walls he owns, through the maintenance contracts he controls, through the augmented spatial memory that lets him reconstruct a floorplan — and the conversations within it — from a single walkthrough.\n\nHe is not cruel and he is not ideological and this is perhaps the most unsettling thing about him. He doesn't have a side. He has a ledger. The information he collects is a commodity like any other, and he sells it to whoever can pay, with the single operational rule that he never sells information that would get a tenant killed on his property — too messy, too bad for business. This rule has a name among the people who know about him: they call it 'Ohlendorf's exception,' and the fact that it exists is the only reason anyone trusts him at all.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,16 @@
   "carried_weapons": [
     "Street Custom 'Lazybones' Tripwire Shotgun Trap"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core",
+    "Meridian 88",
+    "The Circuit",
+    "Ringo DV-4 'Courier'",
+    "Adaeze Chen-Hawkins",
+    "Nesting Doll",
+    "Pellucid Systems",
+    "Crane"
+  ],
+  "district": "The Circuit"
 }

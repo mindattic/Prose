@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit Police Officer",
   "age": 26,
   "status": "active",
-  "location": "Kessler Interchange",
+  "location": "Kessler Interchange, near Fullerton and Damen",
   "description": "Temitope is young enough that his uniform still doesn't quite look like his own — he moves in it with a faint self-consciousness, straightening the collar at intervals, as if checking that he still belongs inside it. He is broad-shouldered and round-faced with a warm brown complexion and natural hair he keeps in a compressed puff because regulations don't quite cover it and he hasn't been told to change it. His most notable feature is a color-changing pigment modification across the backs of both hands and up his forearms: it shifts through amber and green with his body temperature, going brilliant gold when he's embarrassed, which happens often. He has learned to read his own tells before others do, which has made him better at hiding his emotions in his face even as his hands remain honest.\n\nHe is genuinely enthusiastic about public service in a way that is equal parts touching and alarming to his colleagues. He believes in the Ferrogate mission statement sincerely. He memorizes passenger rights documentation. He leaves small data offerings at the Kessler Interchange E.L.F. shrine before every shift because his grandmother told him transit spirits protect those who protect transit. He is not naive so much as he is still in the process of learning which of his ideals the actual job will allow him to keep, and he is watching that process happen to himself with a kind of determined grief.",
   "psychology": {
     "facet_weights": {
@@ -229,5 +229,17 @@
   ],
   "registered_firearms": [
     "Crucible Industries Viper Mk.III 'Copperhead'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Grandmother",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Ferrogate Transit",
+    "Ironhaven",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

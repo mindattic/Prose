@@ -1,0 +1,43 @@
+{
+  "id": "f5b8e2d7a1c43096e8b5f2d1a7c93e40",
+  "name": "Ironjaw Enforcer's Full Combat Street Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Matte-black segmented trauma armor worn over a tight gunmetal compression underlayer, paired with reinforced thigh-pocket cargo pants in charcoal ripstop and mag-lace combat boots with ankle-plate inserts. The shoulder and forearm armor panels are aug-compatible with full chrome-arm clearance channels, and the back panel has a reinforced spinal rig slot. It reads as private security from a distance — up close, the lack of any corporate logo says otherwise.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "segmented trauma-grade polycarb armor",
+    "gunmetal compression knit",
+    "charcoal ripstop",
+    "mag-lace synthetic leather",
+    "ankle-plate composite insert"
+  ],
+  "functionality": "Trauma-rated armor panels with aug-compatible chrome-arm channels and spinal rig slot; mag-lace boots allow single-pull emergency boot removal.",
+  "what_it_says": "This person is the last warning before things become irreversible.",
+  "worn_by": [
+    "gang enforcers",
+    "cartel muscle",
+    "unlicensed security contractors",
+    "debt collectors"
+  ],
+  "manufacturer": "Ironjaw Street Armory (unlicensed)",
+  "price_range": "Φ 900–Φ 1,600",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The armor bears a barely-sanded-off logo from a now-dissolved corporate security firm — someone knows exactly who this person used to work for.",
+    "The spinal rig slot contains a kill-switch override chip that the wearer's employer installed without telling them."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld_criminal_kit",
+    "enforcer",
+    "armored",
+    "aug_compatible",
+    "tier2",
+    "tier3",
+    "combat",
+    "street"
+  ]
+}

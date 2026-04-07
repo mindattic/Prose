@@ -12,7 +12,7 @@
   "role": "Community nurse and wound-care practitioner, operating out of a walk-in clinic",
   "age": 44,
   "status": "active",
-  "location": "Hough Reclamation — Bright Passage Community Clinic, a converted ground-floor retail unit with hand-lettered signs",
+  "location": "Hough Reclamation — Bright Passage Community Clinic, a converted ground-floor retail unit with hand-lettered signs, near Ashland and Chicago Ave",
   "description": "Zulfia is tall with a slightly stooped posture from decades of bending over patients — she's never fully corrected it and at this point she doesn't intend to. Her family line runs Uzbek-French on her father's side and Nigerien-Danish on her mother's, producing someone with sharp cheekbones, tawny-brown skin that holds color well under the clinic's poor lighting, and pale gray eyes that have struck patients as either comforting or unnerving depending on what she's about to tell them. She wears her dark hair in a practical high bun sealed with a clip she's had since nursing school. Her only geneware is patterned irises — tiny interlocking hexagons in the gray of her eyes, a detail she got as a young woman and now never discusses, as though she's forgotten it's unusual.\n\nZul operates in the register of professional calm that people either find deeply reassuring or read as coldness, and she has made her peace with the fact that both readings are partially correct. She rations warmth as carefully as she rations dressings and antibiotic stock — there's never quite enough, so it goes to whoever needs it most. She has treated gunshot wounds, overdoses, radiation rash, augmentation rejection, labor complications, and a corponation executive who appeared at her back door at 02:00 asking her to not document anything. She is not naive. She is tired. She continues anyway.",
   "psychology": {
     "facet_weights": {
@@ -180,5 +180,17 @@
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Hough Reclamation",
+    "The Flood Register",
+    "The Reclamation Assembly",
+    "Zheng-Dao Bioelectric Cortical Pressure Valve",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pale Mile",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

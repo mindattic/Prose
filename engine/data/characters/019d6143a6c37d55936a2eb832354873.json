@@ -12,7 +12,7 @@
   "role": "Food stall operator, Oxidian Market",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Ashland and Chicago Ave",
   "description": "Saodat is a broad-shouldered woman with deep umber skin mapped by decades of steam and spice smoke, her silver-streaked hair pinned under a faded yellow wrap she's worn so long it's become her trademark. Her left forearm is wrapped in a sleeve tattoo of a pepper vine that flowers whenever her skin temperature rises — a cheap bioink mod she got thirty years ago and has never seen reason to remove. She smells perpetually of fenugreek and charred chili, and her stall, a converted cargo container with a fold-out serving ledge, has been in the same spot in the Oxidian Market for twenty-two years. She speaks with the authority of a woman who has fed half of Geartown from infancy to old age.\n\nSaodat is warmly domineering — she will decide what you are eating today, and you will thank her for it. She has strong opinions about everything from Zheng-Dao's latest transit fare hikes to which of her regulars is making poor romantic choices. Her memory for names, faces, and dietary restrictions is near-perfect, and she uses it like a gift. Beneath the maternal bluster is a woman who survived the displacement of Ironvein's old residential blocks twenty years ago and rebuilt her life around a single wok and a secondhand gas line.",
   "psychology": {
     "facet_weights": {
@@ -177,5 +177,16 @@
   "registered_firearms": [
     "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Ferrogate Transit",
+    "The Reclamation Authority",
+    "Zheng-dao Bioelectric",
+    "Geartown",
+    "Ironvein",
+    "Silver",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

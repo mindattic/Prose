@@ -12,7 +12,7 @@
   "role": "loan shark and bookmaker operating out of Gravesend Basin",
   "age": 47,
   "status": "active",
-  "location": "Gravesend Basin — operates from the back booth of a noodle stall called Mama Nkosi's Overflow",
+  "location": "Gravesend Basin — operates from the back booth of a noodle stall called Mama Nkosi's Overflow, near Pulaski and Chicago Ave",
   "description": "Ossian is a broad-shouldered man going soft around the middle, with dark Ewe-complexioned skin, a close-cropped silver beard, and the patient, unhurried eyes of someone who has learned that time is always on his side. His left hand is a prosthetic — matte-black carbon composite, articulated fingers that tap against tabletops in slow, deliberate rhythms when he's calculating. He dresses in well-maintained but unglamorous clothes: thick-weave trousers, a collared shirt perpetually rolled to the elbows, a canvas jacket with too many interior pockets. He smells faintly of cardamom tea and printer toner.\n\nOssian does not threaten. He explains. There is a profound difference, he will tell you, between a man who says 'pay me or else' and a man who lays out, with genuine sorrow, exactly what the mathematics of your situation require. He has a gift for making debt feel like a mutual inconvenience rather than a trap, right up until the moment it becomes inescapable. He is genuinely fond of his regulars and genuinely ruthless about his margins. He keeps meticulous paper ledgers — actual paper — because he doesn't trust any network he doesn't control.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,15 @@
   "registered_firearms": [
     "Crucible Industries Garrison Rifle GR-5 'Rampart'",
     "Tessera TKR-10 'Executor'"
-  ]
+  ],
+  "related_entities": [
+    "Gravesend Basin",
+    "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'",
+    "Adaeze Chen-Hawkins",
+    "Ossian",
+    "Silver",
+    "Palette",
+    "VitaCore DermaTone Adaptive Skin Pigment System"
+  ],
+  "district": "The Shelf"
 }

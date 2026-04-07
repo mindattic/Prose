@@ -12,7 +12,7 @@
   "role": "Retired archive keeper and community memory-holder",
   "age": 78,
   "status": "active",
-  "location": "Avalon Quiet — the Threadbare Library, a community reading room she maintains in her ground-floor apartment",
+  "location": "Avalon Quiet — the Threadbare Library, a community reading room she maintains in her ground-floor apartment, near Lincoln and Belmont",
   "description": "Ragnheiður is a small, densely built woman whose spine has curved gently forward over decades of leaning over data terminals and physical books alike. Her skin is deep brown with a warm undertone, mapped with the fine silver lines of old dermal-display augments she no longer powers — they lie dormant beneath the surface like river tributaries seen from altitude. Her hair is cropped close and gone entirely white, and she keeps a pair of thick-framed optical magnifiers pushed up on her forehead even when she doesn't need them. Her hands are extraordinary: thick-fingered, steady, always moving — sorting, stacking, smoothing the spines of physical books she has accumulated over sixty years.\n\nShe is the kind of person who listens to you finish your sentence before she begins speaking, and when she speaks it is with the unhurried authority of someone who has outlasted several governments and two corponation collapses. She does not suffer careless people, but she will give a careful stranger every hour they need. Her apartment smells of binding glue, pressed fern, and the particular ozone of very old data stacks running warm.",
   "psychology": {
     "facet_weights": {
@@ -164,5 +164,15 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Avalon Quiet",
+    "Tessera Corponation",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Silver",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Laceworks"
 }

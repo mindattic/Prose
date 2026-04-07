@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and unlicensed entertainment vendor — The Burnished Market",
   "age": 22,
   "status": "active",
-  "location": "The Burnished Market, Bronzeline",
+  "location": "The Burnished Market, Bronzeline, near Milwaukee and North Ave",
   "description": "Pirjo is impossible to miss and that is entirely by design. She is small and sharp-featured with her father's Kazakh bone structure softened by her Ghanaian mother's warm dark complexion, and she dresses in deliberately clashing layers — day-glo printed synthetic fabrics over thermal underlayers, pockets everywhere, a rotating collection of hand-painted headwraps in neon colors she sources from a vendor three stalls over. Her geneware is budget-tier but vibrant: slow-pulse bioluminescent freckles across her cheeks and nose, faint constellations that shift from gold to cool blue over the course of about forty minutes. She got them done in a back-alley gene clinic and they came out slightly asymmetrical, which she loves.\n\nShe sells from a cart that is essentially a rolling shrine to pirated media: crammed data chips, bootleg neural-experience recordings, unlicensed music from artists who exist only in the underground market, and a carefully curated selection of what she calls 'liberated content' — corporate-owned art, films, and entertainment freed from their paywalls. She has opinions about all of it and will share them at volume whether invited or not. She is genuinely funny, politically furious in an undirected way, and far more strategically intelligent about her business than her chaotic presentation suggests.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,16 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "The Third Rail",
+    "Bronzeline",
+    "Arcturus Defense Solutions",
+    "ARCHIVE",
+    "Nesting Doll",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

@@ -1,0 +1,36 @@
+{
+  "id": "1b3f4fa9ce8e3e53ae18265ad0e70bed",
+  "name": "Redline Combat Knuckle-Plated Streetfighters",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Fingerless gloves with tungsten-carbide knuckle inserts and palm padding designed to absorb impact recoil. The gloves are built for bare-knuckle fighting in semi-organized circuits — legal enough to have sponsors, illegal enough that the sponsors don't use their real names.\n\nThe Streetfighters have become an identity marker in Shelf districts where pit-fighting culture intersects with everyday life. Wearing them outside a fighting context signals that you're either a fighter or want to be mistaken for one.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "tungsten-carbide knuckle inserts",
+    "impact-absorbing palm padding",
+    "reinforced leather"
+  ],
+  "functionality": "Enhanced striking force, impact absorption, fingerless dexterity",
+  "what_it_says": "You settle things with your hands and you've invested in making those hands harder.",
+  "worn_by": [
+    "pit fighters",
+    "Shelf enforcers",
+    "street-level muscle"
+  ],
+  "manufacturer": "Redline Combat",
+  "price_range": "Φ240",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of Streetfighter gloves turn up in evidence from a corponation executive's murder — the knuckle plate pattern matches the wounds exactly, but the gloves are three sizes too small for any known suspect."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 1",
+    "combat",
+    "fighting",
+    "Shelf",
+    "tungsten-carbide"
+  ]
+}

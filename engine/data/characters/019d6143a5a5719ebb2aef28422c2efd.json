@@ -12,7 +12,7 @@
   "role": "Urban historian and spatial data archaeologist, University Spine",
   "age": 61,
   "status": "active",
-  "location": "University Spine, Grand Corridor campus — specifically the Palimpsest Archive on the fourth sublevel",
+  "location": "University Spine, Grand Corridor campus — specifically the Palimpsest Archive on the fourth sublevel, near sub-level access near LaSalle and Congress",
   "description": "Adwoa Sulejmani-Pereira is a compact, deliberate woman whose age shows most in the deep lines around her eyes and the complete silver of her tight coils, which she pins back with a series of hand-carved wooden picks she has accumulated over decades of fieldwork. Her skin is a warm deep brown, and her left forearm bears a faded cartographic tattoo — a cross-section of what pre-Meridian Chicago looked like before the city ate itself and became something else. She wears reading lenses that project translucent overlays directly onto whatever surface she's looking at, turning any wall or tabletop into a working map. She smells, always, faintly of archival polymers and cold coffee.\n\nShe has a reputation for being the kind of scholar who will spend three years arguing about one data layer and emerge having rewritten the foundational assumptions of her field. She is not warm on first meeting — she assesses, measures silently, decides whether you're worth her attention. Those who earn that attention find her fiercely loyal, darkly funny, and capable of sudden, unexpected generosity. She has outlasted four department heads, two corponation buyout attempts of her institution, and one structural collapse of the archive she works in, and she takes quiet pride in all three.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,26 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Meridian Core",
+    "Hough Reclamation",
+    "University Spine",
+    "Grand Corridor",
+    "Meridian Core",
+    "Tessera Corponation Dermal Cipher Lattice — 'The Palimpsest'",
+    "The Reclamation Assembly",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Grainfort",
+    "Bathysphere Networks",
+    "The Gradient Compact",
+    "ARCHIVE",
+    "Silver",
+    "Slagworks Industrial",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Underworld"
 }

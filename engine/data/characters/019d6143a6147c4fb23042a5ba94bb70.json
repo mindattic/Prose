@@ -13,7 +13,7 @@
   "role": "Field operative and physical security — The Quiet Table",
   "age": 49,
   "status": "active",
-  "location": "The Circuit — maintains a modest apartment with no personal effects and exceptional sight lines",
+  "location": "The Circuit — maintains a modest apartment with no personal effects and exceptional sight lines, near Damen and Armitage",
   "description": "Felix Drum is the Quiet Table's hands in the physical world. When information needs to be collected in person, when dead drops need servicing, when a meeting requires the implicit suggestion that non-cooperation would be unwise — Felix handles it. He is not muscle in the traditional sense. He is presence. The kind of calm, attentive, well-dressed man who makes you want to cooperate because the alternative seems profoundly unappealing without him ever specifying why.\n\nBefore the Quiet Table, Felix spent twenty years in private security — first for corporate executives, then for politicians, then for people who existed in the space between those categories. He was very good at keeping people alive. He was less good at caring about whether they deserved to be alive. The moral vacancy started small and grew until he walked away from a client who was using his protection to facilitate human trafficking. He reported the client to the authorities. Nothing happened. He reported the client to someone else. Something happened. That was the last year of his legitimate career.\n\nFelix is average height, solidly built without being imposing, with the kind of face that belongs in a crowd — pleasant, forgettable, professional. He keeps his hair short, his clothes clean, and his posture perfect. The only augmentation anyone notices is a slight heaviness to his handshake — the reinforced bones in his hands and forearms are subtle but present. Everything else is hidden, maintained, and ready.",
   "psychology": {
     "facet_weights": {
@@ -194,5 +194,14 @@
   "registered_firearms": [
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
     "Tessera Networked SMG TNSM-3 'Chorus'"
-  ]
+  ],
+  "related_entities": [
+    "The Circuit",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Flicker",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pure Hand",
+    "Glass"
+  ],
+  "district": "The Circuit"
 }

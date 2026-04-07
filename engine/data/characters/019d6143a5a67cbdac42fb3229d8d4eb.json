@@ -12,7 +12,7 @@
   "role": "Computational theorist and AI ethics researcher, studying the legal and philosophical status of E.L.F.s",
   "age": 34,
   "status": "active",
-  "location": "Edgewater Prism, Helix Biosystems-adjacent research corridor",
+  "location": "Edgewater Prism, Helix Biosystems-adjacent research corridor, near Clark and Belmont",
   "description": "Aissatu is angular and pale-brown, with a shaved head and a constellation of small bioluminescent dots across their left cheekbone — a mod they describe as 'decorative, not meaningful, I just liked how it looked.' They have the particular restless energy of someone whose mind moves faster than social situations allow, often finishing sentences slightly before they've decided if they want to finish them. They dress in layers of tech-wear that function as wearable interfaces — their jacket sleeves are covered in haptic input panels they tap constantly, not always to input anything, sometimes just because the texture is soothing. Their right eye carries a standard retinal display overlay but they've customized the UI colors to something the manufacturer definitely didn't intend: deep violet on black, which makes their eye look distinctly unusual in low light.\n\nAissatu holds an unusual position: they are technically affiliated with Helix Biosystems' internal ethics review board, which funds their research, while simultaneously publishing work that repeatedly finds Helix's AI behavior classification systems philosophically inadequate. They are not naive about this tension; they describe it as 'existing within a contradiction in order to have any hope of changing it.' Their core question — whether E.L.F.s possess something functionally equivalent to interiority, and what legal and ethical obligations would follow if they do — is considered fringe by half the field and urgent by the other half. They have received three informal warnings from their Helix liaison and two fan letters from E.L.F. devotional communities who have decided Aissatu is on their side.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,14 @@
   "carried_weapons": [
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Edgewater Prism",
+    "The Nearfield",
+    "Nesting Doll",
+    "Stalker",
+    "The Pale Mile"
+  ],
+  "district": "The Laceworks"
 }

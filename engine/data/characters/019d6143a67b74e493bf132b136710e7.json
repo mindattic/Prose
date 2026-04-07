@@ -12,7 +12,7 @@
   "role": "Wandering hyperlane trader and oral map-keeper",
   "age": 58,
   "status": "active",
-  "location": "Kenosha Crossing, rotating between hyperlane rest stops",
+  "location": "Kenosha Crossing, rotating between hyperlane rest stops, near beyond the Western Perimeter",
   "description": "Oduduwa is a broad-shouldered man whose skin has the weathered texture of someone who has slept under more open skies than ceilings. His face is mapped with deep sun-lines and three horizontal scarification marks across each cheek — family marks from a grandmother he never met, replicated from a photograph. He keeps his silver-streaked hair in compressed locs wound tight against his skull, and his left eye is a replacement — milky synthetic glass with a faint amber glow that never quite matches the warm brown of his right. He wears a patchwork coat assembled from fabric scraps collected across twenty years of travel: Sahel weave, Andean fleece, Siberian synthetic fur stitched together into something ungainly and unmistakable.\n\nOduduwa does not use navigation apps. He carries the hyperlane network in his head — every checkpoint, every informal rest stop, every E.L.F. shrine worth stopping at between here and the Escanaba Gateway. He sells information as readily as the salvaged electronics and dried foodstuffs strapped to his cargo cart. He is unhurried in a way that unnerves people who are used to the city's pace, and he has a habit of studying strangers as if cataloguing them for a story he will tell somewhere else, to someone else, years from now.",
   "psychology": {
     "facet_weights": {
@@ -176,5 +176,17 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "Manitowoc Drydock",
+    "Ferrogate Transit",
+    "Kenosha Crossing",
+    "Grandmother",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Glass",
+    "Nightlight"
+  ],
+  "district": "Nomadic"
 }

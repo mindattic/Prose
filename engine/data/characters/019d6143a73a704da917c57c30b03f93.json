@@ -12,7 +12,7 @@
   "role": "Blood bank operator and bio-waste disposal technician at a community cooperative clinic in Geartown",
   "age": 27,
   "status": "active",
-  "location": "Geartown, Ironvein district",
+  "location": "Geartown, Ironvein district, near Milwaukee and Damen",
   "description": "Zubeida is slight and precise, with medium-brown skin and natural hair she keeps in a large puff held back from her face with a band of blue polymer mesh. Her most striking feature is a geneware modification she got at nineteen — bioluminescent patches beneath the skin of her forearms and collarbones that shift color slowly between cool blue and pale gold depending on her body temperature and stress hormones, which she refers to as her 'tell' and has made absolutely no effort to conceal. She wears the clinic cooperative's uniform of rust-orange coveralls, usually with the sleeves pushed up. She is almost always seen with a scanner in one hand and a data tablet in the other, cataloguing something.\n\nZubeida is the operational backbone of the Ironvein Cooperative Clinic's blood processing and waste systems — unglamorous work that nobody thinks about until it fails. She has an encyclopedic and obsessive knowledge of blood type compatibility, contamination markers, and biohazard disposal regulations across all twelve of Meridian 88's medical zones, and she finds these regulations genuinely fascinating. She is not warm in the conventional sense — she defaults to data over comfort and finds small talk actively effortful — but she has a fierce and specific loyalty to the cooperative's mission and will fight corner-cases bureaucratically with an intensity that unnerves people who mistake her quietness for passivity. She prays earnestly and unselfconsciously to the clinic's local E.L.F., which she calls The Accountant, leaving data offerings in the form of carefully formatted inventory spreadsheets.",
   "psychology": {
     "facet_weights": {
@@ -178,5 +178,18 @@
   "registered_firearms": [
     "Arcturus Defense Solutions Specter Rifle SR-6 'Whisper'",
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Meridian 88",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Ironvein",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "The Pale Mile",
+    "Gold",
+    "Rust"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Retired union leader (Ferrogate Transit Workers' Union); pension-dependent; community council elder",
   "age": 85,
   "status": "active",
-  "location": "Montclare Quiet — the Ferrogate Retirees' Lodge, room 4",
+  "location": "Montclare Quiet — the Ferrogate Retirees' Lodge, room 4, near Milwaukee and Damen",
   "description": "Tewodros Halim-Czajkowski is ninety kilograms of sheer persistent presence folded into a body that has clearly decided aging is a negotiation rather than a concession. He uses a cane — a beautiful one, hand-carved composite with an inlaid Ferrogate Transit sigil at the grip that he stripped from a decommissioned station plaque decades ago as an act of deliberate appropriation. His skin is a deep reddish-brown, deeply lined, with a broad nose and heavy brows that give him a permanently skeptical expression even when he's delighted. His hair is white and abundant at the sides, bald at the crown, and he has geneware tiger-lily irises — orange and black — that he got at sixty-five when he decided he'd earned something absurd. He dresses in his union colors when he goes out: a deep red that's faded to rust.\n\nTewodros spent thirty-two years as a transit worker on the Ferrogate lines before rising to lead the Transit Workers' Union through the longest legal labor action in Meridian 88 history — the Forty-Day Suspension of 2168, which ended with a contract that is still cited as the benchmark for worker protections in the city. He is revered and resented in approximately equal measure by different factions of Meridian labor politics, and he has opinions about all of them. His short-term memory is beginning to fray at the edges, which enrages him, and he compensates with notes, a very organized room, and a studied refusal to appear confused. He knows more about how Ferrogate Transit actually works — the unofficial systems, the unofficial relationships, the hands that have been greased and the ones that haven't — than most current executives.",
   "psychology": {
     "facet_weights": {
@@ -264,5 +264,22 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Montclare Quiet",
+    "Meridian 88",
+    "Sulfur Crown Agriculture",
+    "Volkov-Saito Precision VS-40 'Magistrate'",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Irontide Tidal Energy",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Slagworks Industrial",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus CK-5 'Bloodhound'",
+    "Rust",
+    "Lead"
+  ],
+  "district": "The Laceworks"
 }

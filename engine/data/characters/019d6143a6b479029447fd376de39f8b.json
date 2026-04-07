@@ -12,7 +12,7 @@
   "role": "Retired Ferrogate Transit union leader living on pension and community stipends",
   "age": 71,
   "status": "active",
-  "location": "The Shelf, Precinct 4 — Apartment stack above the old Ferrogate maintenance depot",
+  "location": "The Shelf, Precinct 4 — Apartment stack above the old Ferrogate maintenance depot, near Western and Division",
   "description": "Roksana Diedhiou-Pribilof is a compact, high-voltage woman who has never learned to fill a room quietly. Her hair is natural and shot through with the kind of silver that arrives at the temples first and then conquers everything, worn in a structured wrap she pins with a Ferrogate union badge from 2161 — the old design, before the merger downgraded the insignia. Her geneware is minimal and aging: faint bioluminescent tracery under her forearms that pulses softly in blue when her blood pressure rises, a cosmetic choice from her forties that now serves as an involuntary emotional barometer everyone around her has learned to read. She moves quickly for her age and has the handshake of someone who spent decades using physical presence to establish authority at negotiating tables.\n\nShe is furious about her pension. Not in the vague way of someone who expected more from life, but in the precise, documented way of someone who can tell you exactly which Ferrogate Transit clause was quietly amended in 2191 to reduce survivor benefit calculations, who approved it, and what it cost her annually. She runs an informal advisory service out of her apartment — residents bring her their benefit disputes, their severance irregularities, their corponation contract fine print — and she helps them fight back. She charges nothing but accepts food. Her relationship with the Ferrogate Transit E.L.F. known as the Line-Keeper is complicated: she respects it but disputes its memory of the 2178 strike.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,14 @@
     "Meridian Munitions Snapper-22 'Cricket'",
     "Street Custom 'Baptism' Electrified Water Cannon"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "The Shelf",
+    "The Fathom Line",
+    "The Gradient Compact",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

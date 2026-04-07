@@ -12,7 +12,7 @@
   "role": "Orphaned Q-zero ghost, teenage caravan runner",
   "age": 14,
   "status": "active",
-  "location": "Escanaba Gateway, subsection 4 informal settlement (tarp city under the freight elevation ramps)",
+  "location": "Escanaba Gateway, subsection 4 informal settlement (tarp city under the freight elevation ramps), near Lake Shore and Wacker",
   "description": "Tosi is small for fourteen, with the compact, quick-twitch build of someone who has spent years fitting into spaces adults cannot. His skin is deep brown with warm undertones, his hair a tight, untended cloud that he cuts himself with a found blade when it starts snagging on things. His eyes are dark and startlingly alert — the kind of eyes that have learned to read a room before the body commits to entering it. He has a small bioluminescent patch on his left collarbone, pale blue-green, that glows faintly when he's cold or frightened; he did not choose it, it came with a back-alley geneware injection someone gave him when he was nine 'for protection,' though he's never understood what it protects.\n\nTosi exists in no database. He was born to Q-zero parents and carries no digital identity — no UBC stipend, no medical record, no school enrollment, nothing. He is legally a ghost. He runs messages and small packages between the informal camps at Escanaba Gateway and the Waukegan Industrial Shelf for anyone who pays in food or warmth, and he has developed an almost supernatural talent for slipping past checkpoint scanners that would flag his absence of identity. He is funny, restless, and desperately trying to appear older and less scared than he is.",
   "psychology": {
     "facet_weights": {
@@ -219,5 +219,19 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Waukegan Industrial Shelf",
+    "Escanaba Gateway",
+    "Helix Biosystems",
+    "The Meridian Compact for Economic Justice",
+    "Unregistered",
+    "The Gradient Compact",
+    "Axonal Stretch Resonance Lance",
+    "Elegy",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Pale Mile",
+    "Elena Vasquez-9"
+  ],
+  "district": "Old Harbor"
 }

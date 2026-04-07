@@ -12,7 +12,7 @@
   "role": "Apprentice fabricator, Geartown machine shop",
   "age": 14,
   "status": "active",
-  "location": "Geartown",
+  "location": "Geartown, near Armitage and Milwaukee",
   "description": "Thandiswe has their nickname because they have, technically, twelve fingers — a Helix Biosystems geneware expression that manifested at birth, two extra fingers on each hand, fully articulated, that their master fabricator Nzinga insists is what makes them exceptional at fine mechanical work. They are compact and wiry, with warm amber-brown skin, very short natural hair kept close to the skull, and eyes that have a faint natural golden ring around the iris — another geneware expression, unremarked-upon in Geartown. Their hands are always nicked with small cuts and stained with cutting fluid that no solvent quite removes from the cuticles.\n\nThandi is self-possessed in a way that reads as older than fourteen — the product of spending most of their life around adult fabricators who treated them as a colleague-in-training rather than a child. They are deeply invested in the physical, tactile reality of objects: how things fit together, why they break, what a material feels like when it's stressed. They have limited patience for abstraction and social nuance, but they are intensely loyal to Nzinga's shop and to the handful of people they consider their own. They have started to develop opinions about labor and wages that make the older apprentices both proud and nervous.",
   "psychology": {
     "facet_weights": {
@@ -178,5 +178,16 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Copperhead",
+    "Ferrogate Transit",
+    "Geartown",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Gradient Compact",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

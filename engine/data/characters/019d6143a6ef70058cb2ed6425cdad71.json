@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit tram operator, Line 7 (Geartown to Grand Corridor)",
   "age": 61,
   "status": "active",
-  "location": "Deepwell Station, Line 7 depot — he lives in Ironvein, three stops from the yard",
+  "location": "Deepwell Station, Line 7 depot — he lives in Ironvein, three stops from the yard, near sub-level access near LaSalle and Congress",
   "description": "Temuujin has the compact, settled body of a man who has been sitting in the same cab for twenty-three years and has made peace with it. His skin is a weathered medium-dark brown, his face broad and deeply lined around the eyes from squinting at track ahead. His hair went silver at forty and he kept it in a low fade for years before recently giving up and shaving it entirely. He has patterned irises — a geneware mod he got at thirty as a birthday present to himself, amber with a dark geometric tessellation — that he now considers his most valuable possession and would not remove under any circumstances.\n\nTem is the unofficial institutional memory of Line 7. He has operated this route through two infrastructure collapses, a Ferrogate labor action that lasted eleven days, and the Great Reroute of 2194 that added four stations and three years to his retirement date. He knows every rattle, every delay pattern, every ghost the line carries — and he believes in the ghosts. He maintains careful devotion to the E.L.F. of the Line 7 Depot, whom he calls Switchman, and credits Switchman with getting him home safe for two decades. He is not sentimental about most things but is ferociously sentimental about the tram.",
   "psychology": {
     "facet_weights": {
@@ -205,5 +205,20 @@
   "registered_firearms": [
     "Hearthstone Firearms HF-30 'Homestead'",
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "The Meridian Compact for Economic Justice",
+    "The Ghost Ronin",
+    "Ferrogate Transit",
+    "The Fathom Line",
+    "Ironvein",
+    "The Steelyard",
+    "The Gradient Compact",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Underworld"
 }

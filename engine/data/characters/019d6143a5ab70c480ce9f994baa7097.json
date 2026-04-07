@@ -12,7 +12,7 @@
   "role": "Personal security and threat neutralization — bodyguard",
   "age": 35,
   "status": "active",
-  "location": "The Rookery — dense vertical housing, gang-controlled",
+  "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Chicago Ave",
   "description": "Altan Tanaka-Frimpong is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 35, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Altan Tanaka-Frimpong plans to keep it that way. He works as a bodyguard out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Tanaka-Frimpong describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,13 @@
   "registered_firearms": [
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
     "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
-  ]
+  ],
+  "related_entities": [
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Slagworks Industrial",
+    "Gravimetric Collapse Charge GCC-9"
+  ],
+  "district": "The Shelf"
 }

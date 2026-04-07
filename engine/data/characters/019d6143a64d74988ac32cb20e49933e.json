@@ -13,7 +13,7 @@
   "role": "Street-level faith healer and unlicensed biotech surgeon",
   "age": 61,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Halsted and Chicago Ave",
   "description": "Lourdes Batac-Nieminen is a small, unhurried woman with copper-brown skin deeply creased by decades of fluorescent light and chemical fumes. Her white hair is braided back with strips of electrical tape — practical, she says, not decorative — and her left eye is a milky cataract she refuses to replace with an augment, though she could afford one three times over in trade. She moves through the cramped alleys of The Shelf like she owns every centimeter of them, which in the ways that matter, she does. Her clinic is a converted shipping container strung with votive candles and surgical LEDs in roughly equal measure, and the line outside it on any given morning stretches past two intersections.\n\nShe came to The Shelf forty years ago as a field medic for a labor collective that no longer exists, and she simply never left. Over time she absorbed every technique available to her: black-market bioprinting, salvaged corporate surgical protocols, folk pharmacology passed down through a network of Shelf grandmothers, and something she calls 'listening to the meat' — an intuitive diagnostic sense that younger surgeons dismiss until they watch her work. She does not advertise. She does not charge in credits. Payment is rendered in labor, food, information, or loyalty, and her ledger of favors owed to her is one of the most valuable documents on The Shelf.\n\nHer reputation has begun to leak upward into The Circuit and even into certain desperate corners of the Meridian Core, which terrifies her in ways she will not fully articulate. She has spent a lifetime being invisible to power and considers that invisibility a survival strategy, a professional asset, and a form of grace. Attention from above has only ever meant one thing in her experience: that something she has built is about to be taken.",
   "psychology": {
     "facet_weights": {
@@ -246,5 +246,17 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPR-357 'Journeyman'",
     "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ]
+  ],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "The Circuit",
+    "Crucible TR-7 'Triage'",
+    "The Shelf",
+    "The Spire",
+    "The Fathom Line",
+    "Adaeze Chen-Hawkins",
+    "Copper"
+  ],
+  "district": "The Shelf"
 }

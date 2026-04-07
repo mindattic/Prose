@@ -11,7 +11,7 @@
   "role": "Underground press operator and anti-corporate journalist",
   "age": 31,
   "status": "active",
-  "location": "Highland Park Autonomous Zone",
+  "location": "Highland Park Autonomous Zone, near Lake Shore Drive and North",
   "description": "Nneka is compact and relentless, with deep brown skin mapped by a constellation of small data-port scars she refuses to have removed — each one a story she got burned getting. Her hair cycles through slow bioluminescent pulses of indigo and amber, a mod she got at nineteen and has never upgraded because she likes the old-fashioned glow. She wears ink-stained fingerless gloves almost constantly and has the slightly haunted look of someone who hasn't slept a full night in years.\n\nShe runs 'Fault Lines,' a zine-and-broadcast hybrid that drops every ten days via pirated Ferrogate Transit screens, cheap paper drops in laundromat stalls, and encrypted mesh nodes. Her reporting has cost two mid-tier Axiom managers their contracts, exposed a Tessera water-rationing fraud scheme, and made her a minor legend in the Autonomous Zone. She is funny in person — quicker to a laugh than her reputation suggests — but she does not forgive sources who lie to her twice, and she does not apologize for stories that are true.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,16 @@
   "registered_firearms": [
     "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "The Tangles",
+    "Ferrogate Transit",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nightlight"
+  ],
+  "district": "The Spires"
 }

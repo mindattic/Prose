@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit Security checkpoint operator, Deepwell Station",
   "age": 55,
   "status": "active",
-  "location": "Deepwell Station",
+  "location": "Deepwell Station, near sub-level access near LaSalle and Congress",
   "description": "Benedikt Oyelaran-Tsetsegmaa has worked the Deepwell Station transit checkpoint for eleven years and has achieved a kind of architectural permanence — people plan around him the way they plan around a pillar. He is a large man running toward stout, with dark mahogany skin and a white-streaked beard he keeps neatly shaped, and the Ferrogate Transit Security uniform has been let out at the seams twice and still fits like a compromise. His eyes are dark and deeply patient, with irises that have a cosmetic starburst pattern he got twenty years ago for a partner who liked them and has never removed.\n\nHe is not a man of action and has never wanted to be. His role is documentation, verification, and the particular human skill of reading a crowd for the one person who is about to do something that will require paperwork. He is extraordinarily good at this. He knows the names of at least three hundred regular commuters and the names of their children and pets. He knows which merchants are running slightly over load limit and which ones are struggling enough that flagging them would destroy them. He makes these calls dozens of times a day, which is a kind of power he thinks about more than he lets on.",
   "psychology": {
     "facet_weights": {
@@ -240,5 +240,12 @@
   "registered_firearms": [
     "Meridian Munitions Compact Rifle MCR-2 'Errand'",
     "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Ferrogate Transit",
+    "Mahogany",
+    "SynapTech IrisBloom Ocular Color Modulator"
+  ],
+  "district": "The Underworld"
 }

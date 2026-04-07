@@ -12,7 +12,7 @@
   "role": "The Disappeared — former surface archivist who erased herself from all records",
   "age": 51,
   "status": "active",
-  "location": "Irkalla, deep shrine level, in a repurposed transit control room she calls the Index",
+  "location": "Irkalla, deep shrine level, in a repurposed transit control room she calls the Index, near Halsted and Division",
   "description": "Maïmouna is a compact, precise woman who moves like she is conscious of leaving no unnecessary impression — small steps, still hands, a habit of placing herself where light doesn't quite reach. Her hair has gone to silver-grey and she wears it very short; her face is sharp-featured, with dark eyes that retain the particular focused quality of someone who spent decades professionally categorizing things. She is fifty-one but looks it honestly, without apology. She has no augmentations and has removed two she previously had, leaving faint scar traces at her temples where a standard cognition-assist had been wired in. The removal of those implants was the last step of erasing herself.\n\nShe was, in her surface life, a senior archivist for a Palladian data governance subsidiary — one of the people who decides what information exists and in what form. She knows how corporate memory works, how records are structured, how deletion operates, and what can and cannot truly be made to disappear. She used that knowledge to vanish twelve years ago, and she now runs the Index: a physical archive of documents, handwritten records, and memorized information that exists nowhere in any network. People come to her to find things that have been deleted from all accessible systems. She charges in labor, not currency.",
   "psychology": {
     "facet_weights": {
@@ -224,5 +224,20 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "VitaCore SteadyField Precision Motor Implant",
+    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
+    "Palladian Construction",
+    "The Gradient Compact",
+    "Irkalla",
+    "ARCHIVE",
+    "The Pure Hand",
+    "Silver",
+    "Slagworks Industrial",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Bashir Quansah-Mehrotra"
+  ],
+  "district": "The Shelf"
 }

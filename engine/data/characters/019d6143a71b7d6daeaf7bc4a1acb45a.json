@@ -12,7 +12,7 @@
   "role": "Truant network runner — message courier for the Shelf's informal economy",
   "age": 11,
   "status": "active",
-  "location": "The Shelf (operates between Brewer's Spine and Copperhead)",
+  "location": "The Shelf (operates between Brewer's Spine and Copperhead), near Ashland and Chicago Ave",
   "description": "Wren is small for her age, which she treats as professional equipment. She has her mother's deep brown skin and her father's pale Icelandic freckles scattered across her nose and cheeks in a pattern that looks almost deliberate, like someone scattered rust-colored seeds. Her hair is cropped close on one side and grows in tight coils on the other — not a style choice, the result of a geneware dye-job gone sideways that fused color-cycling pigment into about forty percent of her scalp. The affected half cycles through muted greens and grays, which she has decided is actually cooler than what she originally paid for. She moves through the Shelf's maintenance corridors and pipe-crawl shortcuts with the confidence of someone who has mentally mapped every possible escape route, because she has.\n\nShe is not a happy child but she is an effective one. There is a watchfulness in her eyes that belongs to someone twice her age, and she has learned to keep her observations private until they are useful. She is politely transactional with most adults, reserving genuine warmth only for the handful of people who have proved they won't exploit it. She has a fierce and private devotion to a local E.L.F. she calls the Creak-God — a spirit she believes inhabits the Brewer's Spine maintenance tunnels — and leaves it small data offerings (recorded ambient sounds, mostly) wrapped in old wire.",
   "psychology": {
     "facet_weights": {
@@ -166,5 +166,16 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Brewer's Spine",
+    "Copperhead",
+    "The Shelf",
+    "Endothermic Synovial Disruption Rifle ESDR-1 'Lockjaw'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

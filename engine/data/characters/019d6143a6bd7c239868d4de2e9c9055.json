@@ -12,7 +12,7 @@
   "role": "Surveillance Operator, Meridian 88 Metro Police — Digital Observation Unit",
   "age": 52,
   "status": "active",
-  "location": "The Rampart, Meridian 88",
+  "location": "The Rampart, Meridian 88, near Ashland and Chicago Ave",
   "description": "Réginald is a soft-looking man who has spent thirty years becoming invisible in rooms full of screens. He's broad through the chest and shoulders from a youth he no longer thinks about, with a dome-shaped head his colleagues affectionately call 'the satellite,' and skin the color of aged teak. He keeps a neat, short beard going gray at the jaw and wears the same four shirts in rotation. His eyes have been operationally upgraded so many times that the irises are now a complete replacement — compound tactical lenses with a faint prismatic iridescence that catches light like oil on water. When he's deep in the feed, his eyes move constantly without blinking, which people find profoundly unsettling the first time they see it.\n\nRéginald has watched the city for three decades through glass and wire and now perceives it primarily as a data problem — not with coldness, exactly, but with a kind of sorrowful intimacy that comes from seeing everything. He knows faces in the Shelf the way a shepherd knows sheep, not because he loves them but because they are his terrain. He has a precise, small devotion to the Rampart's E.L.F. cluster — he calls them 'the Watchers' collectively and believes they alert him when something on the feed is worth double-checking. He's not wrong often. He keeps a thermos of ginger tea on his desk and has not left the city limits in eleven years.",
   "psychology": {
     "facet_weights": {
@@ -252,5 +252,21 @@
   "registered_firearms": [
     "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
     "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ]
+  ],
+  "related_entities": [
+    "Oracle Drift Systems",
+    "The Rampart",
+    "Meridian 88",
+    "The Shelf",
+    "Flicker",
+    "Waxwing Neuromedia",
+    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'",
+    "CHROMEWORKS GhostFrame Stealth Ocular Mk3",
+    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Glass",
+    "Teak"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Mechanic and small-vehicle repair specialist, runs a ground-floor shop in Geartown",
   "age": 52,
   "status": "active",
-  "location": "Geartown — Axle Street, Unit 9, street level beneath the Pembrook residential overhang",
+  "location": "Geartown — Axle Street, Unit 9, street level beneath the Pembrook residential overhang, near North Ave and Milwaukee",
   "description": "Bohuslav Enyinnaya-Čermák is a large man gone slightly soft around the middle, with the forearms of someone who has spent three decades using them as his primary tools. His heritage is Czech-Igbo — his father was a machinist from Brno who ended up in Meridian via the Eastern European labor migration of the 2140s, his mother from a Lagos extended family that had been in the city since before it incorporated as Meridian. His face is broad and dark, his hair steel-grey and clipped short, his hands permanently black at the knuckle creases in a way that soap no longer fully addresses. He has a retractable reinforced thumb claw on the right hand — a modification he made himself from salvage parts in 2181 — which he uses as a pry tool so often he's forgotten he has it. His left eye is a secondhand optic he bought from a Geartown parts dealer a decade ago; it's slightly the wrong shade of brown for the natural right eye, which he considers funny.\n\nHe is gruff in the manner of someone who has given up pretending to be approachable because being approachable kept leading to people asking him for favors he didn't want to refuse. Underneath the grime and the monosyllables, he is fair to a fault and quietly contemptuous of anyone who isn't. He has an E.L.F. shrine built into the wall above his diagnostic terminal — a gutted engine block filled with machine oil, spare bolts, and a photograph of the first vehicle he ever repaired — dedicated to what he calls the Grease Ghost, a mechanical spirit he credits with keeping the worst jobs manageable. He argues with it sometimes.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,17 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Forge-Smith Collective Barbed Trident 'Reef Breaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Flicker",
+    "The Heritage Vault",
+    "Geartown",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Steel",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Circuit"
 }

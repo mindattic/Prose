@@ -12,7 +12,7 @@
   "role": "Network intrusion and digital warfare specialist — netrunner",
   "age": 33,
   "status": "active",
-  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Ashland and Chicago Ave",
   "description": "Hadiya Forsberg-Ofosu is lean and angular, all sharp edges and visible tension. At 33, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a netrunner out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHadiya Forsberg-Ofosu is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,15 @@
   "carried_weapons": [
     "Street-Custom Razorwire Wraps 'Glass Hands'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

@@ -1,0 +1,42 @@
+{
+  "id": "2c7d5e9f1b3a80640e4c2d8b7f1a5e94",
+  "name": "TESSERA Genomics GeneClinic Worker Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Teal bioseal scrubs with gene-compatible hip and tail-channel vents sewn into the back panel, worn under a transparent sterile overgown with color-coded hemline indicators for contamination zones. A close-fitting respirator hood with a clear face panel seals at the collar and filters aerosol and genetic particulate. Double-layered geneware-safe gloves — inner bioskin, outer polymer — allow tactile sensitivity during cell-handling. Sealed slip-on boots in antimicrobial white rubber complete the ensemble, and a hip-slung specimen tray holds labeled culture plates and a gene-reader wand.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "bioseal scrub fabric",
+    "transparent sterile overgown polymer",
+    "respirator hood filter mesh",
+    "bioskin inner gloves",
+    "polymer outer gloves",
+    "antimicrobial rubber boots"
+  ],
+  "functionality": "Respirator hood filters genetic particulate to 0.1 micron; gene-compatible hip and tail vents allow unobstructed movement for workers with geneware modifications.",
+  "what_it_says": "This person handles the raw material of identity every shift, and the protocol is the only thing standing between a therapeutic and a catastrophe.",
+  "worn_by": [
+    "gene clinic technicians",
+    "TESSERA Genomics lab staff",
+    "geneware modification prep workers"
+  ],
+  "manufacturer": "TESSERA Genomics Labwear",
+  "price_range": "Φ 2,200–Φ 3,800",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The specimen tray holds a culture plate with no patient ID — just a handwritten symbol that matches a Shelf-based gene-cult's sigil.",
+    "The respirator hood's filter log shows it processed an unregistered aerosol compound during last Tuesday's shift, and no incident report was filed."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical_scientific_kit",
+    "tier4",
+    "gene_clinic",
+    "geneware",
+    "gene_compatible",
+    "bioseal",
+    "TESSERA"
+  ]
+}

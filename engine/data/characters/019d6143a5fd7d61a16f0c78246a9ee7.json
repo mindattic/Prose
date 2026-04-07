@@ -12,7 +12,7 @@
   "role": "Field trauma surgeon and combat support — combat medic",
   "age": 33,
   "status": "active",
-  "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology",
+  "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Halsted and Chicago Ave",
   "description": "Ebele Smirnov-Ankrah are athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 33, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a combat medic out of The Lattice, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEbele Smirnov-Ankrah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -277,5 +277,10 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem"
+  ],
+  "district": "The Shelf"
 }

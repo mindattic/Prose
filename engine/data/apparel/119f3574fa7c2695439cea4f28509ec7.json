@@ -1,0 +1,37 @@
+{
+  "id": "119f3574fa7c2695439cea4f28509ec7",
+  "name": "Veridian Optics TrueSight Monocle",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A single-lens optical device worn over one eye, held in place by a magnetic temple clamp. The TrueSight processes visual data through three layers — magnification, spectral analysis, and material composition overlay. It looks like an antique monocle reimagined with matte-black housing and a faintly glowing lens rim.\n\nFavored by appraisers, forensic investigators, and the kind of collectors who need to verify authenticity before committing to a purchase. The TrueSight has become an unexpected fashion accessory in Spire social circles, where wearing one implies discerning taste and the wealth to afford precision optics.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "precision optical lens",
+    "magnetic temple clamp",
+    "micro-processing unit"
+  ],
+  "functionality": "Magnification, spectral analysis, material composition overlay",
+  "what_it_says": "You see what things are actually made of, not what they're presented as.",
+  "worn_by": [
+    "appraisers",
+    "forensic investigators",
+    "Spire collectors"
+  ],
+  "manufacturer": "Veridian Optics",
+  "price_range": "Φ3,600",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A TrueSight monocle used to appraise a painting reveals a hidden message encoded in the paint's chemical composition — placed there decades ago by someone who knew this technology would eventually exist."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 4",
+    "monocle",
+    "optics",
+    "analysis",
+    "Spire",
+    "fashion"
+  ]
+}

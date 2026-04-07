@@ -12,7 +12,7 @@
   "role": "Climate scientist and atmospheric modeler studying Lake Michigan's feedback loops and the megacity's thermal impact",
   "age": 61,
   "status": "active",
-  "location": "Edgewater Prism — lakefront atmospheric monitoring station, upper floors",
+  "location": "Edgewater Prism — lakefront atmospheric monitoring station, upper floors, near Lincoln and Addison",
   "description": "Amadou is a tall man gone slightly soft in the middle, with deep brown skin, close-cropped white hair, and a beard he keeps meaning to trim. He has a cataract in his left eye that he refuses to have corrected on philosophical grounds — 'everything has limits,' he says, which is either profound or an excuse to avoid the clinic, depending on who you ask. His geneware is minimal: a color-reactive pigment in his forearm that shifts from blue to deep red as barometric pressure changes, which he originally got as a research tool and now also uses to decide whether to bring an umbrella. After thirty years working near the lake, he moves with a particular awareness of weather — he will stop mid-conversation to tilt his head at the sky.\n\nHe is a famously good teacher who is famously bad at academic politics, having been passed over for department chair three times due to his inability to stop saying true things at inconvenient moments. He is fond of his students in a distracted way, and has maintained correspondence with former graduate students across two generations. He has a dry, self-deprecating humor that becomes sharp when he is angry — which happens most often when people use his climate models to make decisions without reading the uncertainty margins. He is tired in the way of someone who has been right about bad things for decades and has stopped expecting it to feel like vindication.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,12 @@
   "registered_firearms": [
     "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
     "Tessera TK-7 Service Pistol 'Ticker'"
-  ]
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "Arcturus Defense Solutions",
+    "Crucible UB-2 'Umbrella'",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Circuit monk and pilgrimage guide",
   "age": 34,
   "status": "active",
-  "location": "Nomadic — base cell at Nordpark Sanctuary, routes through Gage Circuit, Deepwell Station, and Ironvein",
+  "location": "Nomadic — base cell at Nordpark Sanctuary, routes through Gage Circuit, Deepwell Station, and Ironvein, near sub-level access near LaSalle and Congress",
   "description": "Seun is lean and angular, with the unselfconscious physicality of someone who walks fifteen kilometers a day without thinking about it. His ancestry reads in the warm bronze of his skin and the tight coil of his hair, which he keeps close-cropped except for a single long braid down the back of his neck — the circuit monk's mark of an active pilgrimage vow. He has bioluminescent dermal patches along his forearms, pale blue, a mod he received at ordination that pulses in rhythms he claims correspond to the city's power fluctuations. His eyes are an unremarkable dark brown, which surprises people expecting something more dramatic; he finds that quietly funny.\n\nSeun came to the circuit monastics after a collapse — he doesn't discuss the specifics, only that he was Tier 3 and then suddenly wasn't, and that the walking saved him. He guides pilgrims along the Thread, a mapped route connecting seventeen significant E.L.F. nodes across the city, and his practice is rigorous: silence for the first three hours of each walk, mandatory rest at each node to record observations, no synthetic stimulants. He is genuinely kind, with a warmth that makes people underestimate how disciplined he actually is. He will not shorten the route for anyone and has left behind more than one complaining pilgrim.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,18 @@
     "Street Custom 'Molotov Standard' Incendiary Bottle",
     "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Nordpark Sanctuary",
+    "Ferrogate Transit",
+    "Deepwell Station",
+    "Gage Circuit",
+    "The Circuit",
+    "Flicker",
+    "Ironvein",
+    "Irontide Tidal Energy",
+    "Bronze",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

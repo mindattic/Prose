@@ -12,7 +12,7 @@
   "role": "High-speed vehicle operations specialist — wheelman",
   "age": 33,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore",
+  "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Division",
   "description": "Deniz Volkov-Obi is slight and easy to overlook, which is exactly the point. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a wheelman out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Deniz Volkov-Obi agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,12 @@
     "Street Custom 'Widowmaker' Rigged Power Tool",
     "Street-Custom Loaded Pipe 'Bell Ringer'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Shelf",
+    "The Nearfield",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

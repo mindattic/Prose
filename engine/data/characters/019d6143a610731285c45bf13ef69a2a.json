@@ -11,7 +11,7 @@
   "role": "Kindling merchant - Threshold operator",
   "age": 41,
   "status": "active",
-  "location": "The Underworld - B1 Threshold",
+  "location": "The Underworld - B1 Threshold, near sub-level access near Dearborn and Jackson",
   "description": "Farida runs the largest trading post at the Threshold. Her bioluminescent geneware makes her skin glow faint amber in the dark.",
   "psychology": {
     "facet_weights": {
@@ -101,5 +101,13 @@
   "registered_firearms": [
     "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "The Threshold",
+    "Threshold",
+    "Aslan Vasquez-Chatterjee",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nightlight"
+  ],
+  "district": "The Underworld"
 }

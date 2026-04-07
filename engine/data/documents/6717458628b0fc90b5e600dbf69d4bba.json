@@ -6,7 +6,10 @@
   "date": "unknown",
   "classification": "unclassified",
   "description": "Day 147. I've been mapping the pattern. It's not random. The anomalies follow a [PAGE TORN] ...if you overlay the locations on a map and connect them, they form [PAGE TORN] ...I showed Dr. [NAME TORN] and she went pale. She said I needed to stop. She said [PAGE TORN] ...I'm not stopping. Tomorrow I'm going to [REMAINDER MISSING]",
-  "related_entities": [],
+  "related_entities": [
+    "Stalker",
+    "The Pale Mile"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What pattern do the anomalies form on a map?",

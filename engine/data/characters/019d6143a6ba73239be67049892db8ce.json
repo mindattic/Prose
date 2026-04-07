@@ -12,7 +12,7 @@
   "role": "Urban planner and sociologist studying informal settlement patterns on the Shelf",
   "age": 41,
   "status": "active",
-  "location": "University Spine, with frequent fieldwork in Chatham Flats and Hough Reclamation",
+  "location": "University Spine, with frequent fieldwork in Chatham Flats and Hough Reclamation, near Lincoln and Clark",
   "description": "Rukayat is a broad-shouldered woman with deep brown skin and close-cropped silver-streaked hair she's had since her late twenties—a stress response she refuses to reverse, wearing it like a badge. Her eyes carry geneware patterned irises that shift between amber and rust-red, a gift to herself after her tenure review. She maps space the way other people breathe: constantly, involuntarily, rotating the geometry of every room she enters. She dresses in field-practical layers, always with at least one pocket stuffed with data wafers and a collapsible survey drone no bigger than her fist.\n\nShe is warm in person but relentlessly precise in argument, the kind of academic who will sit with a Shelf resident for three hours learning how they navigate a flooded block and then spend three more weeks turning that knowledge into policy language that nobody in power will read. She is not cynical about this—or she has trained herself not to be. She believes in documentation as a form of justice, that to name a place accurately is to insist on its existence.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,21 @@
   "carried_weapons": [
     "Forge-Smith Collective Thundermouth Double 'Old Testament'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "University Spine",
+    "Chatham Flats",
+    "The Reclamation Assembly",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Rust"
+  ],
+  "district": "The Laceworks"
 }

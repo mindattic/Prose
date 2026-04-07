@@ -1,0 +1,40 @@
+{
+  "id": "3c8a1d5f7e024b69a3f2c7d1e09b4a82",
+  "name": "Ironveil Disgraced CorpSec Bouncer's Door Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A stripped Brightline corporate security jacket with all insignia cut off — the ghost outlines of rank patches still visible as darker rectangles on the sleeve. Underneath, a plain black compression mock-neck that hides a spinal augmentation rig up to C4. Tactical trousers with the knee-armor pockets emptied out and re-stuffed with a flask and a burner comm. One boot is standard-issue military; the other is a mismatched Shelf replacement.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "stripped ballistic-weave jacket",
+    "compression synthfabric",
+    "tactical trouser canvas",
+    "mismatched boot composite"
+  ],
+  "functionality": "Residual ballistic-weave in jacket provides light protection; spinal rig channel remains fully functional under the mock-neck.",
+  "what_it_says": "Someone who used to have authority and now enforces someone else's door for Φ12 an hour.",
+  "worn_by": [
+    "disgraced CorpSec officers",
+    "ex-military bouncers",
+    "demoted security personnel"
+  ],
+  "manufacturer": "Brightline (original, defaced); mismatched Shelf replacements",
+  "price_range": "Φ20–60 assembled from remnants",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The rank patch outlines are from a Brightline division that was publicly dissolved after a massacre — anyone who knows CorpSec history will recognize it.",
+    "The emptied knee-armor pockets once held classified hardware that this person quietly kept and hid elsewhere."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "unique_character_look",
+    "tier2",
+    "disgraced",
+    "security",
+    "bouncer",
+    "ex-military",
+    "stripped_uniform"
+  ]
+}

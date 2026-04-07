@@ -1,0 +1,40 @@
+{
+  "id": "51e8d0a7f3c2b94610f7e3d2a5c1b087",
+  "name": "Coldbreak HydroSeal Rain Trouser — Vented Cut",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Slim-cut waterproof rain trousers in slate charcoal with taped seams and ankle cinches to seal over boots during Lake Michigan downpours. Side-zip vents run from thigh to knee for heat management in humid summer storms. A reinforced channel runs along the outer left leg to accommodate basic prosthetic or exoskeletal hardware.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "bonded ripstop waterproof nylon",
+    "taped interior seams",
+    "YKK-analog side zips",
+    "elastic ankle cinch"
+  ],
+  "functionality": "Waterproof leg coverage with prosthetic-channel seam and ankle-seal over boots; vented for humid conditions.",
+  "what_it_says": "Practical and presentable — this person navigates outdoor commutes without looking like they surrendered to the weather.",
+  "worn_by": [
+    "mid-level commuters",
+    "small business owners",
+    "outdoor market workers",
+    "Tier-3 office workers with outdoor routes"
+  ],
+  "manufacturer": "Coldbreak Weatherwear",
+  "price_range": "Φ130–Φ190",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The prosthetic channel is factory-standard but someone has modified it with aftermarket padding — whoever wore these before had a non-standard limb.",
+    "Found in a locker at a Tier-3 transit hub with a name scratched out on the waistband tag."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "rain_gear",
+    "rain_pants",
+    "tier_3",
+    "aug_compatible",
+    "waterproof",
+    "commuter"
+  ]
+}

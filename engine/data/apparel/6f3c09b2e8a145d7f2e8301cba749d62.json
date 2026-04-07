@@ -1,0 +1,39 @@
+{
+  "id": "6f3c09b2e8a145d7f2e8301cba749d62",
+  "name": "Nullweave HornSpace UV Wrap Hood",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Lightweight UPF-55 drape hood in translucent cream-white synth-silk, cut with wide horn-passage apertures reinforced in soft silicone edging that won't snag on keratin or synthetic horn bases. Drapes loosely over the head and neck, blocking UV while venting heat through the open crown structure. Minimal construction — almost no weight — designed specifically for geneware-modified individuals who overheat at the skull.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "UPF-55 synth-silk",
+    "silicone-edged horn apertures",
+    "open-crown drape construction"
+  ],
+  "functionality": "UPF-55 UV protection, silicone-lined horn clearance, open-crown ventilation for heat release.",
+  "what_it_says": "You have horns, you're out in the summer sun, and you found the one thing that actually fits.",
+  "worn_by": [
+    "geneware-modified individuals with horns or cranial modifications",
+    "market workers",
+    "outdoor professionals"
+  ],
+  "manufacturer": "Nullweave",
+  "price_range": "Φ 44–60",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The silicone edging on the left horn passage is slightly wider — someone had it modified for an unusual horn curve.",
+    "In certain UV light, a faint pattern emerges in the synth-silk weave: a repeating glyph with no clear origin."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "summer_light",
+    "gene_compatible",
+    "tier3",
+    "hood",
+    "UV_protection",
+    "horn_compatible",
+    "headwear"
+  ]
+}

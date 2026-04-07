@@ -11,7 +11,7 @@
   "role": "Chop shop operator and vehicle parts broker",
   "age": 19,
   "status": "active",
-  "location": "The Stockyard, operates from a leased bay in the Geartown industrial fringe",
+  "location": "The Stockyard, operates from a leased bay in the Geartown industrial fringe, near Western and Chicago Ave",
   "description": "Doru is nineteen years old and already has the hands of someone twice his age — scarred across the knuckles, always traced with grease that soap only partially removes, with a slight tremor in the left index finger from a pneumatic press accident last year that he never had properly treated. He is tall and lanky, still growing into himself, with warm brown skin, close-cropped natural hair, and a permanent squint from years of working under inadequate lighting. He has cat ear geneware — gray-tipped, slightly mobile — that he got at sixteen because all his friends were getting mods and it seemed like the thing to do; they're more expressive than he intends them to be, flattening when he's stressed in ways he can't control. He wears coveralls in various states of destruction and is almost always holding a tool.\n\nHe did not plan to be running a chop shop at nineteen. He planned to be doing legitimate Ferrogate maintenance, for which he has genuine talent, but the apprenticeship application was rejected twice — once for a juvie citation he got at fourteen, once for reasons that were given as 'candidate pool volume' and which he suspects have more to do with his address. The shop fell into his hands when its previous operator left Meridian 88 in a hurry and owed Doru's uncle a favor. He's good at the work. He's learning the business side faster than is comfortable. He is not yet sure if he's the kind of person who ends up staying in this life.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,16 @@
   "registered_firearms": [
     "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Stockyard",
+    "Meridian 88",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+    "The Pure Hand",
+    "Bashir Quansah-Mehrotra"
+  ],
+  "district": "The Shelf"
 }

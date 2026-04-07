@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller",
   "age": 34,
   "status": "active",
-  "location": "Geartown, near the Ferrogate Transit depot access road",
+  "location": "Geartown, near the Ferrogate Transit depot access road, near Milwaukee and North Ave",
   "description": "Seydou is a lanky man, all elbows and long neck, with warm brown skin dusted gray-white at the temples from years of breathing particulate in Geartown's recycling corridors. He has retractable keratin-reinforced claws — a geneware mod from his teens he got cheap and kept because they're useful for sorting scrap — and his irises are a vivid coral-pink that he insists is natural but is almost certainly a low-grade mod he can't remember getting. His cart is legendary: a three-tier wheeled behemoth welded together from mismatched Ferrogate Transit chassis parts, stacked with stripped augmentation casings, salvaged circuit boards, cracked lenses, defunct E.L.F. housing units, and the occasional inexplicable object he cannot identify but refuses to discard because 'it feels expensive.'\n\nSeydou operates on a philosophy of radical optimism about the utility of broken things. He is gregarious to a fault, remembers every customer's name and approximate circumstances, and maintains a running mental inventory of about six hundred distinct items across his cart and three rented storage lockers he visits in rotation. He laughs easily and loudly, which draws people from two stalls away, and he has an almost supernatural ability to produce exactly the component someone needs from somewhere in the middle tier of the cart, apparently without looking.",
   "psychology": {
     "facet_weights": {
@@ -221,5 +221,15 @@
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Street Custom 'Backfire' Weaponized Exhaust System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Geartown",
+    "Iowan Behemoth Agricultural Platform",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Tin Man"
+  ],
+  "district": "The Circuit"
 }

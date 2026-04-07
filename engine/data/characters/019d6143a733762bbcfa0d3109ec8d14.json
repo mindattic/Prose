@@ -12,7 +12,7 @@
   "role": "Black market data broker and bootleg media seller",
   "age": 44,
   "status": "active",
-  "location": "The Burnished Market, stall cluster near the Alban Souk border, Calumet Rise",
+  "location": "The Burnished Market, stall cluster near the Alban Souk border, Calumet Rise, near Halsted and Division",
   "description": "Zbigniew is a compact man with a permanent five-day beard the colour of iron filings and a complexion that sits somewhere between olive and warm brown depending on the light — an inheritance from a Polish grandfather and a Ghanaian grandmother that he describes as 'maximum average.' His eyes are augmented with data-overlay lenses that give his irises a faint amber grid pattern; the left one has a slow drift that he's never gotten fixed because the repair estimate was 'an absolute scandal.' He dresses in the studied nondescriptness of someone who doesn't want to be remembered: mid-grey layers, nothing with a logo, shoes that could belong to six different professions. His stall front is officially a media archive service — data recovery, legacy file transfer, antique format conversion — which is completely true and also a cover for everything else.\n\nHe's been in the Burnished Market for eleven years and has a quality that experienced market-walkers learn to recognise: the stillness of someone who is always listening more than they appear to be. He is affable in a careful, calibrated way, and his sense of humour is so dry it can take a full beat for people to realise a joke has been made. He has never been arrested. He considers this his primary professional achievement.",
   "psychology": {
     "facet_weights": {
@@ -189,5 +189,24 @@
     "Meridian Munitions Dispatch-45 'Last Word'",
     "Street Custom 'Backfire' Weaponized Exhaust System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "The Alban Souk",
+    "Calumet Rise",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "The CEO",
+    "Grandmother",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "The Gradient Compact",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "ARCHIVE",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Iron"
+  ],
+  "district": "The Shelf"
 }

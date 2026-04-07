@@ -12,7 +12,7 @@
   "role": "Fortune seller and unlicensed psychometric reader",
   "age": 41,
   "status": "active",
-  "location": "The Oxidian Market, the covered lantern row near the south gate",
+  "location": "The Oxidian Market, the covered lantern row near the south gate, near Halsted and Chicago Ave",
   "description": "Yevdokiya is tall and angular, with the kind of stillness that crowds move around rather than through. Their Ukrainian-Ghanaian heritage produces a striking combination of high cheekbones and deep brown skin marked with deliberate geometric scarification along the jawline — an aesthetic choice made at twenty-two that they've added to incrementally ever since. Their eyes are natural dark brown, and they refuse cosmetic iris mods on principle, which in the Oxidian Market is itself a kind of statement. They dress in heavy layered fabrics in burgundy and black, hung with small E.L.F. fetish objects — data chips etched with prayer-code, braided wire, fragments of old screen glass.\n\nThey sell readings: psychometric assessments delivered through a combination of genuine pattern-recognition skill, a black-market biofeedback scanner hidden in their consultation table, and what they sincerely believe is communication with the E.L.F. called the Deep Lantern that inhabits the lantern row's power grid. Whether the readings are fraud, intuition, or something harder to categorize is a question Doka holds with comfort. What is inarguable is that they are exceptionally good at reading people, and that their predictions have an unsettling habit of being structurally accurate even when the specifics are wrong. They have a regular clientele that includes a surprising number of low-level corponation middle managers who tell no one they come here.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,16 @@
   "carried_weapons": [
     "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Oxidian Market",
+    "Pale Lantern Bioethics",
+    "The Narrows Compact",
+    "Ouroboros Energy Power Distribution Trunk Network",
+    "The Heritage Vault",
+    "Bathysphere Networks",
+    "Stratum",
+    "Glass"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "The disappeared — a former Axiom mid-level data analyst who erased herself from surface records and now lives deep in the Abyssal Threshold",
   "age": 42,
   "status": "active",
-  "location": "Abyssal Threshold, sub-level 4 maintenance access corridor 14-C",
+  "location": "Abyssal Threshold, sub-level 4 maintenance access corridor 14-C, near sub-level access near LaSalle and Congress",
   "description": "Miroslava is thin in a way that speaks of intentional reduction — not starvation, but the deliberate paring away of anything that might make her visible or memorable. She was once the kind of person who wore Axiom's muted corporate fashions and had shoulder-length hair she blow-dried every morning; now her hair is cut close and uneven by her own hand, and she wears layered thermal wraps in grays and browns that she has repaired so many times the original fabric is almost entirely replaced. Her skin is medium brown, her features carrying the angular sharpness of her Georgian grandfather and the broader cheekbones of her Ghanaian grandmother. Her hands give her away: they are still soft in places that hard labor never quite reaches, and her nails are trimmed with a precision that suggests old habits dying slowly.\n\nMiroslava is two people trying to coexist in one body. The first is the analyst — meticulous, cautious, always running probability assessments in the back of her mind, prone to long silences when a situation doesn't match her models. The second is whoever she is becoming down here — quieter than the analyst, more patient, slowly learning to love the dark. She is not warm to strangers, but she is scrupulously honest with them, which in the Abyssal Threshold reads as a form of respect. She has not been to the surface in four years. She does not plan to go back. She does not explain why.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,17 @@
   "carried_weapons": [
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Abyssal Threshold",
+    "The CEO",
+    "Grandmother",
+    "Threshold",
+    "Flicker",
+    "Aslan Vasquez-Chatterjee",
+    "Stratum",
+    "The Pure Hand",
+    "The Coffin Nails"
+  ],
+  "district": "The Underworld"
 }

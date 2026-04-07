@@ -1,0 +1,36 @@
+{
+  "id": "96081be63ea9d124fb71ab8c22c95e2f",
+  "name": "Phantom Line Stealth Manipulation Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Ultra-thin gloves that leave no fingerprints, no DNA traces, and no fiber evidence. The outer surface is treated with a molecular coating that prevents any biological material from adhering. The inner surface molds to the wearer's hand geometry and leaves no impression on whatever is touched.\n\nSold legally as 'cleanroom handling equipment' and used illegally by anyone who wants to touch things without being connected to them afterward. Law enforcement refers to them as 'ghost gloves' and considers their presence at a crime scene a significant indicator of premeditation.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "molecular non-transfer coating",
+    "trace-free polymer",
+    "adaptive inner mold"
+  ],
+  "functionality": "Zero forensic trace, no fingerprints, no DNA transfer",
+  "what_it_says": "You were never here, you never touched anything, and these gloves will confirm that story.",
+  "worn_by": [
+    "professional criminals",
+    "cleanroom operators",
+    "intelligence operatives"
+  ],
+  "manufacturer": "Phantom Line",
+  "price_range": "Φ1,600",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A murder weapon is found with absolutely zero trace evidence — but the victim was killed by hand, meaning the killer wore Stealth Manipulation Gloves and still chose to kill with their bare hands through them."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 3",
+    "stealth",
+    "forensic-proof",
+    "criminal",
+    "covert"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Compute broker — buys, sells, and launders stolen processing cycles and black-market data payloads in The Undertow",
   "age": 41,
   "status": "active",
-  "location": "The Undertow — operates from a tea house called the Deep Current that they also own legitimately",
+  "location": "The Undertow — operates from a tea house called the Deep Current that they also own legitimately, near Fullerton and Damen",
   "description": "Nnọmá is striking in a way that takes a moment to parse: medium height, deliberately ambiguous in presentation, with dark sienna skin and bioluminescent sub-epidermal patterning along their collarbones and temples that pulses in slow blue-green cycles — a geneware mod they describe as 'the best investment I ever made.' Their hair is grown long and worn in elaborate stacked forms held with copper wire, and they dress in layered, draped garments that suggest both ceremony and practicality. Their voice is a low, unhurried instrument they use with evident pleasure.\n\nNnọmá built the Deep Current into Meridian 88's most reliable neutral ground for compute transactions over twelve years of patient relationship management. They know the value of reputation — not just for quality, but for discretion. Stolen processing cycles from corporate mainframes, black-market AI training data, ghost server allocations on dormant Axiom nodes — Nnọmá doesn't produce any of it, they simply know everyone who does and everyone who needs it. They take ten percent and remember everything. They have a genuine passion for the tea house itself, keep an excellent selection, and make the rounds of every table during service hours like a host who actually enjoys their guests.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,17 @@
   ],
   "registered_firearms": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "The Undertow",
+    "DEEP CURRENT",
+    "Meridian 88",
+    "Bathysphere Networks",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Irontide Tidal Energy",
+    "Stratum",
+    "Chimera-Null",
+    "Copper"
+  ],
+  "district": "The Underworld"
 }

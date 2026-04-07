@@ -12,7 +12,7 @@
   "role": "Climate scientist and atmospheric modeler studying Lake Michigan's cascading environmental systems",
   "age": 66,
   "status": "active",
-  "location": "Edgewater Prism, Meridian Atmospheric Research Station (MARS)",
+  "location": "Edgewater Prism, Meridian Atmospheric Research Station (MARS), near Clark and Addison",
   "description": "Radovan is a broad, heavyset man who has spent forty years outdoors in conditions that most of his colleagues study remotely, and it shows. His face is deeply weathered, his Slavic-Mongolian features carved by wind and UV exposure into something that looks architecturally deliberate. He keeps a short grey beard and wears his hair close-cropped; his most distinctive feature is a set of retractable sensory whiskers — filament-thin, extending from his temples — which he had installed as a meteorological sensing array in his forties and has since come to regard as indispensable. He is almost always wearing field layers even in his office, with a softshell that has seen better decades.\n\nRadovan's professional reputation is immense and his public one is contentious: he's been warning for twenty-five years that the Lake's thermal buffering is deteriorating in ways that Meridian 88's entire climate management infrastructure has been designed to ignore. He has been right about each specific prediction he has made. He is now predicting something large enough that people have started calling him an alarmist, which is, he notes, exactly what they called him the last four times. He is not angry about this. He is tired in a specific way that long-term correct people get tired.",
   "psychology": {
     "facet_weights": {
@@ -253,5 +253,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "Meridian 88",
+    "Arcturus Defense Solutions",
+    "Nesting Doll",
+    "Weathervane"
+  ],
+  "district": "The Laceworks"
 }

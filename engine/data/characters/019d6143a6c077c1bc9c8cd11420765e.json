@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and small-time data broker operating from a converted cargo container",
   "age": 29,
   "status": "active",
-  "location": "The Laceworks, container unit 7-Teal near the old weaving district underpass",
+  "location": "The Laceworks, container unit 7-Teal near the old weaving district underpass, near Clark and Belmont",
   "description": "Sable is slight, angular, and in constant motion — fingers tapping, eyes scanning, one heel bouncing even when they're sitting. Their geneware is modest but carefully chosen: iridescent patterned irises that cycle through colors based on ambient light, and hair that shifts between deep indigo and copper depending on their mood, kept in a lopsided topknot they redo approximately six times a day. They dress in layered secondhand Tessera-branded workwear that they've cut apart and reassembled into something that doesn't look corporate anymore, patched with scraps of reflective fabric and hand-stitched data-glyph embroidery that means nothing except that they like the way it looks.\n\nInside their container unit, every surface is covered: chip racks floor to ceiling, a cracked secondary monitor running a data-feed collage they never close, small hand-painted icons of various E.L.F.s arranged on a shelf above the transaction counter. They are fast-talking and genuinely funny in a way that catches people off-guard, deploying humor as both charm and deflection. They like people in the abstract more than in practice — they are excellent at the performance of friendliness and genuinely uncertain what to do when someone tries to be a real friend back. Their pitch is smooth, their prices are negotiable if you know to ask, and their memory for what media a customer has already bought is perfect.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,16 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
-  ]
+  ],
+  "related_entities": [
+    "The Laceworks",
+    "Warm Wire, Small Hand",
+    "Zheng-dao Bioelectric",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Copper"
+  ],
+  "district": "The Laceworks"
 }

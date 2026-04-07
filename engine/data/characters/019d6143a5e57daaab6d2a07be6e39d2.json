@@ -12,7 +12,7 @@
   "role": "Licensed pharmacist at a Helix Biosystems community dispensary in Deepwell Station, quietly supplementing his income and his conscience with off-ledger dispensing",
   "age": 29,
   "status": "active",
-  "location": "Deepwell Station — Helix Community Dispensary #44, ground floor of a transit junction building",
+  "location": "Deepwell Station — Helix Community Dispensary #44, ground floor of a transit junction building, near sub-level access near Dearborn and Jackson",
   "description": "Dariusz is young for how tired he looks — fine-featured with pale tan skin, heavy dark brows, and eyes that have a slightly unfocused quality not from inattention but from perpetual mild sleep deprivation. He is lean and tends toward oversized clothes that make him look smaller than he is. His hair is dark and cut practically, except for a single copper-dyed streak above his right ear that he's maintained since his university days. He has a small decorative mod — cat ears in deep charcoal grey that he got at twenty-two and is slightly embarrassed by now but can't afford to have reversed; they flatten against his head when he's stressed, which is often, and perk up involuntarily when something surprises him.\n\nDariusz is a genuinely excellent pharmacist who is trapped in a dispensary that is technically well-equipped and practically unfit for purpose: the Helix pricing algorithms mean that roughly a third of his patients cannot afford the medications he's dispensing, even the ones they critically need. He began quietly sourcing generic equivalents and giving them out at cost about fourteen months ago. He is terrified every day that he will be caught, and also cannot figure out how to stop. He has elaborate rituals around a Helix dispensary terminal that he believes is inhabited by an E.L.F. he has named Formulary, and he consults Formulary before any decision that scares him, reading meaning into system latency and autocomplete suggestions.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,15 @@
   ],
   "registered_firearms": [
     "Crucible Industries Talon-5 'Jackknife'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Riverbottom",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Adaeze Chen-Hawkins",
+    "Copper",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

@@ -12,7 +12,7 @@
   "role": "Client — hired Kyle to avenge her husband's beating",
   "age": 38,
   "status": "active",
-  "location": "The Shelf — Tier Four, three corridors south of Chen's",
+  "location": "The Shelf — Tier Four, three corridors south of Chen's, near Western and Division",
   "description": "Anya is built like someone who has carried heavy things her entire life — broad shoulders, thick forearms, hands that look like they could crush walnuts or cradle a child with equal confidence. She came to Meridian 88 from the Volgograd displacement zone when she was nineteen, pregnant, speaking four words of English: 'please,' 'help,' 'work,' and 'no.' She now speaks roughly forty words of English, all of them practical. She communicates primarily through a translation app on a cracked tablet that she holds like a shield. Her face is weathered beyond her years — deep lines around her mouth, sun damage from agricultural work in the displacement camps, a scar across her left eyebrow from a piece of industrial debris. She is not soft. She is not hard. She is a woman who has been carrying impossible weight for so long that her skeleton has restructured itself around the burden. She scraped together Kyle's fee by selling her blood to a Helix BioSystems collection point three times a week for two months. Kyle took the job at half rate. She does not know this and he will never tell her.",
   "psychology": {
     "facet_weights": {
@@ -229,5 +229,17 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Meridian 88",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+    "TESSERA TN-1 'Cradle'",
+    "The Pure Hand",
+    "Burden of Longitude",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

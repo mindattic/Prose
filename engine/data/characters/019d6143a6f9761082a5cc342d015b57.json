@@ -12,7 +12,7 @@
   "role": "Underground press operator and anti-corporate agitator",
   "age": 27,
   "status": "active",
-  "location": "The Shelf, operating a mobile print node out of a converted food-stall chassis",
+  "location": "The Shelf, operating a mobile print node out of a converted food-stall chassis, near Ashland and Division",
   "description": "Théodore is wiry and perpetually in motion, with warm terracotta skin, loose natural curls he dyes in rotating colors — currently a deep arterial red — and bioluminescent tattoos along his collarbones that pulse faintly blue when his heart rate rises (an unlicensed geneware side effect he never had properly stabilized). He is almost always seen wearing multiple layers of breathable mesh, pockets stuffed with data chips, print cartridges, and folded broadsheets still warm from the press. His eyes are quick and rarely meet anyone's gaze for long — not from shyness, but from constant peripheral threat assessment.\n\nThéo runs Ghostprint, a one-person underground broadsheet that covers what no licensed outlet will: corporate safety violations, enclave demolition orders, disappeared activists, synthetic-person abuse by Axiom security contractors. He writes fast and loose and brilliant, trading some accuracy for urgency, a habit that has landed him in trouble more than once. He believes — genuinely, almost religiously — that information is the only weapon that cannot be confiscated if you distribute it fast enough.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,13 @@
   "registered_firearms": [
     "Crucible Industries Ember Rifle ER-7 'Ashfall'",
     "Crucible Industries Talon-5 'Jackknife'"
-  ]
+  ],
+  "related_entities": [
+    "Graviton Compression Emitter GCE-3 'Flatline'",
+    "The Shelf",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Nesting Doll",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Junior hacker, Tier 2 household, self-taught",
   "age": 16,
   "status": "active",
-  "location": "Hamtramck Enclave",
+  "location": "Hamtramck Enclave, near Ashland and Chicago Ave",
   "description": "Elowen is tall with her mother's angular Vestergaard frame and her father's deep brown Galadima complexion, with thick natural hair she keeps in two buns that are usually listing sideways by midday. She has bioluminescent freckles across her nose and cheeks — a cosmetic geneware mod she saved for and chose herself, pale blue-white, they glow faintly in low light — and an intense, forward-leaning way of occupying space that makes her seem like she's always about to say something. Her bedroom wall is covered in printed diagrams and color-coded network maps she drew by hand because she says she thinks better when the data is physical.\n\nElowen is a self-taught junior hacker — not a runner, not employed by anyone, just a sixteen-year-old who figured out that the building management system for her Hamtramck block had a publicly accessible API that was never properly secured, and then kept pulling that thread. She has never done anything she considers harmful: she reroutes heating credits to elderly residents on her floor, flags maintenance requests that get ignored, and has developed a working model of the Enclave's data traffic patterns. She knows she is very good at this. She does not know how good, or what that means, or what happens to people in Meridian 88 who are this good and don't have protection.",
   "psychology": {
     "facet_weights": {
@@ -186,5 +186,16 @@
   "registered_firearms": [
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Meridian 88",
+    "Zheng-dao Bioelectric",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

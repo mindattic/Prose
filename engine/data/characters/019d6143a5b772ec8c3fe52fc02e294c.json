@@ -12,7 +12,7 @@
   "role": "Network intrusion and digital warfare specialist — netrunner",
   "age": 25,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore",
+  "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
   "description": "Aslan Ekman-Danso is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAslan Ekman-Danso operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,12 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Street Custom 'Glass Garden' Caltrops"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Shelf",
+    "Neuromorphic Pressure Cestus",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

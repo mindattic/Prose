@@ -12,7 +12,7 @@
   "role": "Mutual aid organizer and neighborhood council member",
   "age": 58,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Halsted and Chicago Ave",
   "description": "Yibna is a large man going soft at the middle, with the build of someone who used to do heavy work and now does a different kind of heavy work. His skin is very dark with warm undertones, and he keeps a close beard going grey in patches. His right eye is a prosthetic — the iris cycles slowly through amber and gold, an older geneware-adjacent bioluminescent model he has never upgraded because, he says, 'it still works and there are people who need the Quanta more than I need a new eye.' He dresses in layered practical clothes that somehow always look intentional, and he carries a battered data tablet in a hand-stitched case his daughter made him.\n\nYibna has run the Shelf Mutual Aid Compact for eleven years, coordinating food distribution, medical triage referrals, emergency housing, and legal support for the roughly four thousand tier-1 residents packed into the Shelf's stacked industrial housing modules. He is patient in the manner of someone who has learned that patience is a tool and not a virtue, and he carries a deep, undisguised grief for what the city has done to his neighbors that he converts, daily, into logistics.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,19 @@
   "carried_weapons": [
     "Street Custom 'Scorpion Tail' Chain Whip"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Compact for Economic Justice",
+    "The Shelf",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Stratum",
+    "Crucible TR-7 'Triage'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

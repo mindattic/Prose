@@ -12,7 +12,7 @@
   "role": "Laundry operator and alterations service owner",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, Wash-Block 7 (a row of steam-vented stalls near the Enclave's main pedestrian artery)",
+  "location": "Hamtramck Enclave, Wash-Block 7 (a row of steam-vented stalls near the Enclave's main pedestrian artery), near Western and Chicago Ave",
   "description": "Orinola is a broad-shouldered woman whose arms are ropey with muscle from decades of wringing, hauling, and pressing. Her skin is deep brown and perpetually damp at the temples, and she wears her silver-streaked hair pinned back under a waxed canvas cap. She has no dramatic augmentations — just a single subdermal temp-sensor strip along her left forearm so she always knows the water temperature without testing it by hand, a practical choice made thirty years ago and never regretted. Her face is a map of practical expressions: skeptical squint, satisfied nod, the slow blink she uses when someone is wasting her time.\n\nShe runs Szczepańska's Wash & Mend out of a narrow storefront that smells of lye, eucalyptus pressing compound, and the faint burnt-sugar scent of the seam-welder she uses for alterations. She knows every household in a four-block radius by the state of their laundry. She can tell you who is sick (strange smell, unwashed for two weeks), who just got lucky (dress shirts pressed three days in a row), and who is grieving (everything black, brought in without a word). She is not a gossip — she is a reader. There is a difference, and she will explain it to you firmly if you confuse the two.",
   "psychology": {
     "facet_weights": {
@@ -209,5 +209,15 @@
   "registered_firearms": [
     "Hearthstone Firearms HF-30 'Homestead'",
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Tessera Corponation",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Silver",
+    "Palette",
+    "Clover"
+  ],
+  "district": "The Shelf"
 }

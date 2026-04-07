@@ -12,7 +12,7 @@
   "role": "Street pharmacist and herbal remedy dealer",
   "age": 34,
   "status": "active",
-  "location": "The Alban Souk, Copperhead",
+  "location": "The Alban Souk, Copperhead, near Halsted and Chicago Ave",
   "description": "Razvan is tall and languid with warm brown skin, a generous nose, and long fingers that are perpetually stained faint green-brown from their work with plant matter and synthesis compounds. Their hair is grown long and kept in thick, loose coils dyed deep forest green — a permanent gene-dye job they refresh every two years. They wear a worn canvas apron covered in small pockets over layered thrift-store clothing, and their stall is a magnificent, chaotic installation of hanging dried plants, labeled glass jars, handwritten signs in four scripts, and a small humming cold-storage unit for the compounds that need it. At the stall's center hangs an intricate woven E.L.F. net — a traditional Copperhead offering structure — for the spirit Razvan calls Vessel, whom they believe governs transformation and the passing of one state into another.\n\nRazvan operates in the grey legal space between licensed pharmacy (which they are not) and herbalism (which they technically are). They can read your symptoms by watching you walk up, and their stock ranges from grandmother-tested plant tinctures to synthesized compounds that would cost six times as much at a Zheng-Dao medkiosk. They are unhurried, gently sardonic, and possess a nearly preternatural calm that people find either deeply comforting or faintly unnerving. They see a great deal of human suffering in small doses every day and have developed a philosophy about it that they will share with you if you seem like you can handle it.",
   "psychology": {
     "facet_weights": {
@@ -166,5 +166,18 @@
   ],
   "registered_firearms": [
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ]
+  ],
+  "related_entities": [
+    "The Alban Souk",
+    "Copperhead",
+    "Grandmother",
+    "Zheng-dao Bioelectric",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Stratum",
+    "Palette",
+    "Glass",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

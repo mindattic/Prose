@@ -12,7 +12,7 @@
   "role": "Barber and hair sculptor, operates a one-chair shop in the Burnished Market",
   "age": 26,
   "status": "active",
-  "location": "Burnished Market — Stall Row 14, unit B, between a spice merchant and a used-optics dealer",
+  "location": "Burnished Market — Stall Row 14, unit B, between a spice merchant and a used-optics dealer, near North Ave and Damen",
   "description": "Kefilwe is twenty-six years old and has the complete, unshakeable confidence of someone who decided very early exactly who they were going to be. They are short and compact with deep brown skin, a shaved left side, and the right side of their head grown out into thick coils they sculpt into a new configuration every week as an ongoing public art project. Their irises are modded to shift between amber and violet depending on ambient light — they call this their 'mood ring for people who are actually paying attention.' Their arms from elbow to wrist are covered in tessellating geometric tattoos that they designed themselves, each pattern corresponding to a client whose cut they consider their finest work.\n\nThe shop is barely three meters by four, dominated by the chair, a mirrored wall covered in pinned photographs of hairstyles both historical and invented, and a speaker system that plays music at a volume Kefilwe considers conversation-appropriate and everyone else considers aggressive. They are gifted in ways that go beyond technical skill — they read what a client needs from the way they hold their shoulders when they sit down, and they have an instinct for when someone wants silence and when they need to be talked through something. They work in color-changing extensions, blade geometry, bioluminescent thread woven into natural hair, and traditional methods they learned from their Motswana grandmother via long-distance data calls. Their waiting list is three weeks long.",
   "psychology": {
     "facet_weights": {
@@ -220,5 +220,16 @@
     "Street Custom 'Ghostwriter' Grafitti Flamethrower",
     "Street-Custom Rebar Shiv 'Tetanus Kiss'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grandmother",
+    "Lazarus EC-4 'Companion'",
+    "The Gradient Compact",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Circuit"
 }

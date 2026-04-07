@@ -1,0 +1,36 @@
+{
+  "id": "032f951925195066511a97b46c0220e5",
+  "name": "Ironhand Workshop Anti-Chafe Augmentation Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A base layer designed specifically for augmented individuals, with friction-reducing panels at every common augmentation junction point — shoulders, elbows, wrists, hips, knees. The panels use a slick, medical-grade polymer surface that prevents cybernetic components from abrading natural skin during movement.\n\nA quality-of-life garment for anyone with augmentation hardware that interfaces with remaining organic tissue. Without an anti-chafe layer, daily movement can cause irritation, inflammation, and eventually skin breakdown at augmentation boundaries.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "friction-reducing polymer panels",
+    "medical-grade interface surface",
+    "stretch-fit fabric"
+  ],
+  "functionality": "Augmentation junction protection, friction elimination, skin integrity preservation",
+  "what_it_says": "Your body is part machine and the parts where those two things meet need protection.",
+  "worn_by": [
+    "augmented individuals",
+    "prosthetic users",
+    "cybernetic patients"
+  ],
+  "manufacturer": "Ironhand Workshop",
+  "price_range": "Φ350",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An Anti-Chafe Layer is found with wear patterns for augmentations that don't match any commercially available cybernetics — the wearer had custom hardware that isn't in any registry."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 2",
+    "augmentation",
+    "anti-chafe",
+    "medical",
+    "cybernetic"
+  ]
+}

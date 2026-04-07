@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller — salvaged tech, stripped cyberware parts, mystery lots",
   "age": 34,
   "status": "active",
-  "location": "The Shelf, Ironvein",
+  "location": "The Shelf, Ironvein, near Western and Chicago Ave",
   "description": "Oblomov is a lean, restless man who moves like something is always about to fall off the shelf behind him — which, in his stall, it usually is. His stall is a architectural marvel of instability: towers of stripped chassis parts, bins of mismatched connectors, entire walls of hanging wire bundles color-coded by a system only he understands. His skin is warm brown with a natural undertone that makes him look perpetually sun-touched, and he keeps his head shaved close except for a short ridge of tight curls at the crown he dyes electric blue. His left eye is a salvaged optical implant, noticeably mismatched — pale silver against his natural dark brown — and occasionally focuses a half-second behind the right one when he's tired.\n\nHe is frenetic and funny and exhausting to be around for more than an hour, and he knows it, and he uses it. His patter is legendary on The Shelf: he can turn a busted cooling unit into a story about a drowned Ferrogate engineer and a haunted data-center, and by the time the customer realizes they paid twice what the part was worth, they're also smiling. He has a genuine gift for identifying what a piece of tech used to be from its corpse alone, and a worse gift for convincing himself that whatever he just acquired will definitely be worth something later.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,16 @@
     "Street Custom 'Confession' Modified Industrial Nail Gun",
     "Street-Custom Gutter Katana 'Flatline'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Sulfur Crown Agriculture",
+    "Ferrogate Transit",
+    "Zheng-dao Bioelectric",
+    "Ironvein",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

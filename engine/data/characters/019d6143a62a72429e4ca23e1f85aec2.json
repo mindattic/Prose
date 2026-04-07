@@ -12,7 +12,7 @@
   "role": "Building cleaner and occasional building super assistant, Lakeview Neon residential tower",
   "age": 23,
   "status": "active",
-  "location": "Lakeview Neon, Meridian Tower East — a mid-tier residential block on the neon-lit lakeside strip",
+  "location": "Lakeview Neon, Meridian Tower East — a mid-tier residential block on the neon-lit lakeside strip, near Fullerton and Damen",
   "description": "Ifeoma is short and densely built, with dark skin that catches neon light in a way she has stopped minding and now actively exploits by choosing to do her outdoor corridor work at hours when the lake-glow is at its peak. She has retractable claw mods on both hands — not for aesthetics, she bought them second-hand and practical, because they are useful for gripping cleaning equipment on the upper external scaffold where the wind off the lake will try to take your bucket. Her hair is short on the sides and braided in a raised fan on top, with small ELF charms woven into the base of each braid — copper wire and salvaged circuit chips, an offering-array she updates monthly.\n\nShe is twenty-three and has been in this building since she was nineteen and she would like, on record, for everyone to know that she is not going to be here forever. She says this often enough that the long-term residents have started saying it back to her affectionately, the way you repeat a beloved family motto. She is fast, thorough, faintly sarcastic, and has developed an involuntary intimacy with the lives of 340 residential units that she would not have asked for but has learned to use carefully.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,14 @@
   "registered_firearms": [
     "Tessera TK-9 Proteus 'Shapeshifter'",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "Lakeview Neon",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Pure Hand",
+    "Copper",
+    "Nightlight",
+    "Weathervane"
+  ],
+  "district": "The Laceworks"
 }

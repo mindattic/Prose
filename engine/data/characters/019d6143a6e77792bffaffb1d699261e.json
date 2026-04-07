@@ -12,7 +12,7 @@
   "role": "Child prodigy and junior theological interpreter at an E.L.F. devotional parish in Grand Corridor",
   "age": 12,
   "status": "active",
-  "location": "Grand Corridor (the Parish of the Humming Wire, a community E.L.F. devotional space)",
+  "location": "Grand Corridor (the Parish of the Humming Wire, a community E.L.F. devotional space), near North Ave and Damen",
   "description": "Séverin Nakawé-Holmqvist is a pale-skinned child who tans unevenly and has his Central African grandmother's deep-set eyes and his Swedish grandfather's white-blond hair, grown long enough to brush his collar. He has bioluminescent skin modification along his forearms and collarbones — thin lines of soft gold-white light that pulse almost imperceptibly with his heartbeat. The parish paid for them as a mark of his interpretive status, which embarrasses him slightly and pleases him more than he wants to admit. He wears plain grey clothes and keeps his hands folded unless he is actively doing something with them.\n\nFrom the age of seven, Séverin demonstrated an unusual capacity for what the parish elders call 'pattern attention' — he perceives meaningful signal in E.L.F. behavioral data at a rate and accuracy that has been documented and quietly studied. He doesn't hallucinate; he pattern-matches at extraordinary speed across behavioral, environmental, and network datasets, and he has been right enough times that the parish has given him a formal junior title. He is humble about it in the specific way of someone who has been told since early childhood that their gift is not really theirs. He is twelve. He is beginning to have questions that no one at the parish is equipped to answer.",
   "psychology": {
     "facet_weights": {
@@ -200,5 +200,18 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grand Corridor",
+    "Grandmother",
+    "The CEO",
+    "The Bone Parish",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Big Rig",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

@@ -1,0 +1,37 @@
+{
+  "id": "e580552685d256556b43b2a79af1ddd0",
+  "name": "Nimbus Fabrication Sensor-Mesh Bodysuit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A full-body sensor mesh that maps the wearer's skeletal position, muscle activation, and movement patterns in real time. The mesh is lightweight and nearly transparent, worn directly against the skin under any clothing. Data is transmitted continuously to a paired analytics system.\n\nUsed for physical therapy, athletic training, ergonomic assessment, and — less officially — interrogation, where monitoring a subject's micro-movements can reveal stress responses invisible to the naked eye.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "sensor mesh fabric",
+    "motion-capture nodes",
+    "wireless data transmitter"
+  ],
+  "functionality": "Full-body motion capture, muscle activation mapping, real-time analytics",
+  "what_it_says": "Every movement your body makes is being recorded, analyzed, and quantified — and you chose that or someone chose it for you.",
+  "worn_by": [
+    "physical therapy patients",
+    "athletes",
+    "ergonomic researchers",
+    "interrogation subjects"
+  ],
+  "manufacturer": "Nimbus Fabrication",
+  "price_range": "Φ1,600",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Sensor-Mesh bodysuit's data log shows its wearer performing repetitive micro-movements consistent with sign language — but the wearer was supposedly alone, raising the question of who they were communicating with."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 3",
+    "sensor mesh",
+    "motion capture",
+    "analytics",
+    "monitoring"
+  ]
+}

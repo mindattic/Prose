@@ -13,7 +13,7 @@
   "role": "Lower Dock Crew muscle — Prologue survivor. Right arm removed.",
   "age": 27,
   "status": "active",
-  "location": "The Shelf — lower loading docks",
+  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
   "description": "Devante Marshall is the crew's pretty boy and he knows it. Before the Prologue he had matching Arcturus Defense Solutions Type-4 combat prosthetics — the nicest hardware anyone in the lower docks had ever seen. He stole them from a corporate shipment. Kyle removed the right one by driving the katana through the shoulder actuator and twisting. Devante now has a Tier 1 replacement that is three shades lighter than his skin and makes a grinding noise. He paints it to match. It keeps chipping.\n\nDevante grew up in the Spire. His family had money — his mother was a Tessera marketing executive, his father a corporate attorney. Devante was supposed to be Tier 4. He was expelled from Meridian Academy at sixteen for stealing augment components from the school's biotech lab. His family cut him off. He fell five tiers in two years. He joined Marcus's crew because it was the only place where his stolen hardware made him somebody.\n\nHe has a younger brother, Kofi, who is still in the Spire, still in the family, still on track. They don't speak. Devante watches Kofi's social feeds obsessively. Kofi just got engaged to a Helix BioSystems junior executive. Devante was not invited.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,16 @@
   "registered_firearms": [
     "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Helix Biosystems",
+    "The Open Syllabus",
+    "The Iron Lotus",
+    "The Spire",
+    "The Shelf",
+    "Tessera Corponation",
+    "Marcus Okafor-7"
+  ],
+  "district": "The Shelf"
 }

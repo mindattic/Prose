@@ -12,7 +12,7 @@
   "role": "Pawn shop owner, small-time data broker",
   "age": 41,
   "status": "active",
-  "location": "The Burnished Market, Ironvein",
+  "location": "The Burnished Market, Ironvein, near North Ave and Damen",
   "description": "Chibundo is a lean, precise man of medium height with dark brown skin and close-cropped silver hair that went grey early and which he has never dyed because he thinks it gives him authority. His eyes have patterned irises — a cosmetic mod from his twenties, pale amber with a geometric ring detail — and he wears thin-framed magnifier lenses clipped over them when appraising merchandise, which is most of the time. He dresses in clean, practical layers: collared shirts buttoned to the throat, a long vest with a dozen interior pockets, and boots with magnetic clasps. His pawn shop, MERIDIAN RECLAMATION SERVICES, occupies a narrow storefront in the Burnished Market with every centimeter of wall space covered in shelving. He has a system for everything and will tell you, unprompted, why the system is correct.\n\nChibundo is smart in a way that costs him socially — he is always the most prepared person in the room and he knows it and he cannot fully hide that he knows it. He is not cruel, but he is exact: he will tell you the precise market value of your grandmother's jewelry and he will not soften it. His secondary business, data brokering, operates through a handshake network of regular clients who pay him for access to local information — property transfer records, employment movement, minor corporate scheduling leaks. He is not political. He does not care who buys the data as long as they pay and do not bring violence to his door.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,23 @@
   "carried_weapons": [
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "The Reclamation Assembly",
+    "The Narrows Compact",
+    "Grandmother",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Zheng-dao Bioelectric",
+    "The Quiet Room",
+    "Ironvein",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Circuit"
 }

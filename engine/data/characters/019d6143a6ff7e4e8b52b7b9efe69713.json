@@ -12,7 +12,7 @@
   "role": "Q-zero ghost, scrapper, and itinerant data-thief",
   "age": 17,
   "status": "active",
-  "location": "Waukegan Industrial Shelf, pipe warren sector nine",
+  "location": "Waukegan Industrial Shelf, pipe warren sector nine, near Wacker and State",
   "description": "Tokoua is a lean teenager who moves like water finding its way downhill — always the path of least resistance, always finding the gap. They are mixed-dark, their skin a deep warm brown with a faint bioluminescent shimmer along their collarbones that they did not pay for and cannot explain, a geneware expression that surfaced at puberty from some deep ancestral combination no one has mapped. Their hair is cut close on the sides and left wild on top, dyed a persistent rust-orange that clashes magnificently with everything. Their eyes are dark with irises that shift to a green-gold in bright light. They wear clothes assembled with an engineer's practicality — lots of pockets, nothing that snags, shoes that fit.\n\nTokoua has no legal identity whatsoever. They were born in a transit shelter to a mother who died of an untreated infection three years later, before any papers were filed. They grew up in the pipe warrens of the Waukegan Industrial Shelf among other Q-zeros, learning to exist in the margins of a city that has never officially acknowledged them. They are not bitter about this — or rather, they have metabolized the bitterness into something more useful: a comprehensive and functional understanding of how to extract resources from a system that believes you don't exist. They are quick, funny, and deeply lonely in a way they would violently deny.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,22 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Waukegan Industrial Shelf",
+    "Axiom Systems Neural Dead Drop NDD-2",
+    "WELLSPRING",
+    "The Shelf",
+    "Aminata Strand-Otieno",
+    "Stonepath Logistics",
+    "Blackpipe Corridor",
+    "Lacuna Genomics",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Rust",
+    "Gold",
+    "Elena Vasquez-9"
+  ],
+  "district": "Old Harbor"
 }

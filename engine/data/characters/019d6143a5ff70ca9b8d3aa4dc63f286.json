@@ -12,7 +12,7 @@
   "role": "compute broker and data smuggler",
   "age": 28,
   "status": "active",
-  "location": "The Undertow, operates from a mobile setup cycling between three rented server closets",
+  "location": "The Undertow, operates from a mobile setup cycling between three rented server closets, near Fullerton and Damen",
   "description": "Ekaterina is slight and precise, with light brown skin and eyes that have been modded with patterned irises — hexagonal tessellations in gold and copper, visual markers of their compute affiliation that double as status symbols in The Undertow's informal tech hierarchy. Their hair is worn short on the sides and long on top, typically tucked under a cap. They dress in tech-functional layers — pockets where pockets make sense, nothing that catches on equipment racks — and carry three devices on their person at all times that they will not fully explain.\n\nThey broker illegal compute access: surplus processing cycles stripped from compromised Axiom and Zheng-Dao infrastructure, sold to people who need to run processes they cannot run through licensed channels — drug synthesis modeling, genomic fabrication, untraceable communications rendering. They are deeply embedded in the E.L.F. devotional culture of the tech underground, and their relationship with the digital spirits that inhabit their equipment is not performative. They leave regular data offerings — curated packets of interesting network traffic, annotated — and consult their primary device's E.L.F. before major transactions. They call her Vera, and they have genuine theological opinions about her nature that they will share at length if given any opening.",
   "psychology": {
     "facet_weights": {
@@ -246,5 +246,16 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "related_entities": [
+    "The Undertow",
+    "Zheng-dao Bioelectric",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "Nesting Doll",
+    "Déjà Vu",
+    "Gold",
+    "Vera Castellan"
+  ],
+  "district": "The Underworld"
 }

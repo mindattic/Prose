@@ -1,0 +1,43 @@
+{
+  "id": "7d1e4a93c2f06b8d5e3a7c10f4b2d986",
+  "name": "Veldtmark Ashglass Fixer's Full Presentation Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A razor-cut double-breasted coat in smoked aubergine synth-wool over a collarless ivory thermal shirt, paired with structured charcoal trousers and low-heel ankle boots in matte black calfskin analog. The coat's deep internal panels are lined with Faraday-weave silk that blocks passive BCI reads and conceals a flat-profile holdout holster. Every seam is custom-finished — this is someone who handles introductions between people who cannot be seen together.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "smoked synth-wool",
+    "Faraday-weave silk lining",
+    "calfskin analog leather",
+    "thermal stretch knit",
+    "carbon-fiber internal boning"
+  ],
+  "functionality": "Faraday-weave lining blocks passive BCI scanning and RFID reads; internal flat-profile holster and document concealment panels built into the coat's structured chest.",
+  "what_it_says": "This person is expensive, discreet, and has already run your background before you sat down.",
+  "worn_by": [
+    "high-end fixers",
+    "criminal intermediaries",
+    "underground brokers",
+    "black market negotiators"
+  ],
+  "manufacturer": "Veldtmark Atelier (private commission, no label)",
+  "price_range": "Φ 2,800–Φ 5,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The Faraday lining is blocking an emergency distress ping the wearer doesn't know is being broadcast from inside their own coat.",
+    "A rival fixer is wearing an identical set — same tailor, which means someone is feeding intel to both sides."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld_criminal_kit",
+    "fixer",
+    "scanner_resistant",
+    "faraday_lined",
+    "tier3",
+    "tier4",
+    "high_end",
+    "concealment"
+  ]
+}

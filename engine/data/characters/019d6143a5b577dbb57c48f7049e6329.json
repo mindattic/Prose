@@ -12,7 +12,7 @@
   "role": "Data diviner and dream interpreter",
   "age": 24,
   "status": "active",
-  "location": "Edgewater Prism, operating from a converted water tank on the 9th floor of the Prism Collective building",
+  "location": "Edgewater Prism, operating from a converted water tank on the 9th floor of the Prism Collective building, near Clark and Belmont",
   "description": "Apolinar is tall and angular with the kind of restless energy that makes them look like they are always about to say something important. Their skin is medium brown with a slight undertone of copper, and they have invested in full-spectrum color-shifting hair — currently cycling between deep violet and a warm orange-red on a slow twelve-hour gradient, a pattern they reprogrammed themselves. Their eyes have been modified with luminescent irises that flicker subtly when they are processing dream data, which gives casual observers the impression that Apolinar is slightly haunted, which they would consider an accurate impression. They dress in layers they shed throughout the day, leaving a trail of jackets and scarves and borrowed sweaters in every space they occupy.\n\nThey fell into data divination through a combination of genuine neural sensitivity to signal pattern variance and a childhood spent being told that the static they heard in their head was a medical problem rather than a gift. At fifteen they encountered a data diviner in the Canopy who told them the same thing their neurologist had said about their condition, only reversed: that they were not broken, just tuned differently. They have been practicing since sixteen, charging on a sliding scale, and have more clients than they can manage at twenty-four. They are irreverent about almost everything, but become intensely serious when someone sits across from them with an actual question. The transition is jarring and compelling.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,18 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "Ringo Corponation Haptic Signature Recorder",
+    "Canopy Station Nine",
+    "Prism Security Group",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "Nesting Doll",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Static",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Laceworks"
 }

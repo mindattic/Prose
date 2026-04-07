@@ -12,7 +12,7 @@
   "role": "Climate refugee and de facto matriarch of a tent-city family cluster",
   "age": 67,
   "status": "active",
-  "location": "The Waukegan Industrial Shelf, Tent Cluster 9 (informally: 'Haf's Row')",
+  "location": "The Waukegan Industrial Shelf, Tent Cluster 9 (informally: 'Haf's Row'), near Michigan Ave and Roosevelt",
   "description": "Hafsatu came to Meridian 88's edges seventeen years ago with twelve people and lost four of them to the journey. She arrived with nothing except a ferocious organizational intelligence and the absolute conviction that the remaining eight would survive. They did. The cluster at Haf's Row has grown to forty-one people now — not all related by blood, but all held in place by a complex web of obligation, affection, and the specific terror of disappointing this woman.\n\nShe is small and tends toward stillness, which makes people underestimate her until they have been in a room with her for five minutes. Her face is a remarkable architecture of age and expression — she has the kind of features that are precise and deliberate even at rest. She wears her natural white hair unprocessed, cut close on the sides and fuller on top. Her hands are her most augmented feature: she accepted a nerve-enhancement package years ago to treat arthritic damage, and the faint silver threads of the implants are visible under the skin of her knuckles when the light is right. She does not consider this augmentation — she considers it a medical necessity, and she resents the question. She is generous to the point of self-destruction with resources and merciless with nonsense, and she has no patience for the distinction between the two.",
   "psychology": {
     "facet_weights": {
@@ -182,5 +182,20 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Waukegan Industrial Shelf",
+    "Ferrogate Transit",
+    "Riddle",
+    "Meridian 88",
+    "The Shelf",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "The Pure Hand",
+    "Silver"
+  ],
+  "district": "Old Harbor"
 }

@@ -12,7 +12,7 @@
   "role": "Chop shop operator—vehicle parts, cyberware stripping, industrial equipment",
   "age": 48,
   "status": "active",
-  "location": "The Stockyard, Bay 9 of the decommissioned Ferrogate Transit maintenance shed on Axle Row",
+  "location": "The Stockyard, Bay 9 of the decommissioned Ferrogate Transit maintenance shed on Axle Row, near Western and Division",
   "description": "Benedikt is a big man run slightly soft, with heavy forearms corded from decades of physical work, dark reddish-brown skin cross-hatched with old chemical burns on the backs of both hands, and a white-streaked beard he keeps trimmed close. He has geneware cat ears—tabby-patterned in brown and gray, a mod he got at thirty-five on a dare and kept because his grandchildren think they're wonderful. He wears the same style of heavy canvas coverall every day in rotating colors, always with the sleeves pushed up, always with at least one pocket tool he's forgotten to put away.\n\nBenedikt projects the easy authority of a man who has been competent at his work for a long time and knows it. He is not cruel, not dramatic, not particularly greedy—he runs his operation like a small business, because it is one. He is known in the Stockyard as fair: he pays what he says he'll pay, his cuts are clean, and he doesn't ask questions he doesn't want answered. What people underestimate is the quality of his memory and his willingness to call in patience as a debt. He has been waiting on one particular piece of unfinished business for six years.",
   "psychology": {
     "facet_weights": {
@@ -245,5 +245,15 @@
   "registered_firearms": [
     "Arcturus Defense Solutions AR-7 'Mandate'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Stockyard",
+    "The Unfinished Theorem",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "The Pure Hand",
+    "Palette"
+  ],
+  "district": "The Shelf"
 }

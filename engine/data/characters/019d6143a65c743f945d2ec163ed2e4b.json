@@ -11,7 +11,7 @@
   "role": "Corporate school student, Tier 3 family, aspiring corporate track",
   "age": 16,
   "status": "active",
-  "location": "Lakewood Ledge (family apartment), Sterling-Nakamura Secondary Academy, Edgewater Prism campus",
+  "location": "Lakewood Ledge (family apartment), Sterling-Nakamura Secondary Academy, Edgewater Prism campus, near Lincoln and Clark",
   "description": "Mirka is effortlessly put-together in the way of children who've grown up watching adults perform success — her hair is a natural dark brown that she keeps in a precise, high bun for school and lets down on weekends, her uniform always pressed even when everything else is fraying. She has warm sepia skin, cheekbones she's privately proud of, and geneware cat ears (small, dark-tipped, folded close) that she got at fourteen as a birthday gift and has since quietly decided are embarrassing, though she'd never say so. She is five centimeters taller than she was at the start of last year and hasn't quite adjusted to her own body yet.\n\nMirka is at the precise center of the corporate education pipeline — not a scholarship student (her family pays, barely), not elite (she is acutely aware of who in her cohort has Tessera or Axiom parents and what that means for their futures). She is hardworking in the anxious, exhaustive way of someone who understands that her position is not guaranteed, and socially adept enough to have friends she'd burn if she had to. She has a private dream she's told no one: she wants to work for Helix Biosystems in bioethics. Not for the money — because she thinks someone should be asking those questions from inside.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,12 @@
   "carried_weapons": [
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Edgewater Prism",
+    "Lakewood Ledge",
+    "Tessera Corponation"
+  ],
+  "district": "The Laceworks"
 }

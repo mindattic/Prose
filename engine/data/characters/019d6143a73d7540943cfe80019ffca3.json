@@ -12,7 +12,7 @@
   "role": "Long-range precision fire specialist — sniper",
   "age": 28,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore",
+  "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Chicago Ave",
   "description": "Zurab Watanabe-Amponsah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 28, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a sniper out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nZurab Watanabe-Amponsah is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,13 @@
   "carried_weapons": [
     "Street Custom 'Ghostwriter' Grafitti Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Shelf",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

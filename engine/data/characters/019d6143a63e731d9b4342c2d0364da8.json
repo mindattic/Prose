@@ -12,7 +12,7 @@
   "role": "Long-range precision fire specialist — sniper",
   "age": 28,
   "status": "active",
-  "location": "The Canopy — elevated walkway district above Geartown",
+  "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
   "description": "Kamala Fedorov-Ampofo are lean and angular, all sharp edges and visible tension. At 28, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a sniper out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Kamala Fedorov-Ampofo describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,13 @@
   "carried_weapons": [
     "Street Custom 'Lazarus Wire' Garrote System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Unfinished Theorem",
+    "Canopy Station Nine",
+    "Geartown",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Corporate school scholarship student, Tier 3 aspirant from Tier 1 origins",
   "age": 14,
   "status": "active",
-  "location": "Grosse Pointe Enclosure (attends Axiom Meridian Youth Academy; family lives in Chatham Flats)",
+  "location": "Grosse Pointe Enclosure (attends Axiom Meridian Youth Academy; family lives in Chatham Flats), near Western and Chicago Ave",
   "description": "Prosper exists in a permanent state of between. At Axiom Meridian Youth Academy he is the scholarship kid — too brown, wrong address on his enrollment form, lunch that smells like Chatham Flats rather than the Enclosure's algae bistros. In Chatham Flats he is the one who goes to school across the checkpoint, who uses words his cousins have to look up, who is slowly becoming something they recognize less. He is tall for fourteen, with his Malian grandfather's long limbs and his Māori grandmother's broad jaw, his skin a warm middle-brown that the Enclosure kids describe as 'exotic' in a way that makes him feel like a zoo exhibit. He keeps his expression carefully neutral at school — he has practiced it in reflective surfaces until it holds. He has a single geneware mod, a gift from an aunt: irises that show a faint geometric pattern, teal on dark brown, like circuit traces. At school he keeps his eyes down. At home he forgets to.\n\nHe is genuinely, almost painfully intelligent — the scholarship was not charity, it was an accurate assessment. He is also furious about almost everything, a fury he has learned to compress into extremely precise academic performance. His teachers see a diligent, exceptional student. His mother sees a boy who sometimes cries at the kitchen table at 2 AM while reviewing coursework and refuses to say why.",
   "psychology": {
     "facet_weights": {
@@ -164,5 +164,15 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grosse Pointe Enclosure",
+    "Chatham Flats",
+    "Arcturus GE-1 'Garrison'",
+    "The Patchwork Kitchen",
+    "The CEO",
+    "Grandmother",
+    "SynapTech IrisBloom Ocular Color Modulator"
+  ],
+  "district": "The Spires"
 }

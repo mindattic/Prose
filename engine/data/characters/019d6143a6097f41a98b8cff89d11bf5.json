@@ -12,7 +12,7 @@
   "role": "Retired Tessera archive keeper, now community memory-keeper and oral historian",
   "age": 79,
   "status": "active",
-  "location": "Washburn Commons, Sublevel 3 — a converted water-reclamation office she calls 'the stacks'",
+  "location": "Washburn Commons, Sublevel 3 — a converted water-reclamation office she calls 'the stacks', near sub-level access near LaSalle and Congress",
   "description": "Euphemia is a small, dense woman whose spine has curved slightly forward from decades hunched over data terminals, giving her a permanent posture of concentration, as though she is always about to read something important. Her skin is a deep warm brown crossed with the faint silver tracery of old dermal-display ports that were never fully removed — Tessera's ghost still written on her body. Her hair is cropped close and entirely white, and she wears oversized yellow-tinted spectacle frames that magnify her eyes to an owlish size. On her left wrist she keeps a manual ink stamp shaped like a tree, which she presses onto anything she considers worth remembering.\n\nPhemie speaks slowly, with the deliberateness of someone who has spent seventy years deciding which words are worth keeping. She does not suffer careless language or sloppy thinking, but she is genuinely warm to anyone who shows curiosity. She has memorized the names, birth-years, and approximate fates of over four thousand Washburn Commons residents across six decades, and can recite lineages like folk songs. Her secret terror is that the neighborhood will forget itself — that without her, the community's history will dissolve into corporate data-ghosts and corporate-approved revisions.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,18 @@
   "carried_weapons": [
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Washburn Commons",
+    "The Reclamation Assembly",
+    "The Amber Stacks",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Tessera Corponation",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "ARCHIVE",
+    "Gravimetric Collapse Charge GCC-9",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Silver"
+  ],
+  "district": "The Underworld"
 }

@@ -12,7 +12,7 @@
   "role": "Chemical and biological agent specialist — poisoner",
   "age": 37,
   "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Kedzie and Division",
   "description": "Alper Lebedev-Tutu are slight and easy to overlook, which is exactly the point. At 37, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a poisoner out of Kessler Row, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Alper Lebedev-Tutu lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,13 @@
   "registered_firearms": [
     "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
     "Crucible Industries Titan-500 'Earthquake'"
-  ]
+  ],
+  "related_entities": [
+    "Masquerade",
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Shelf"
 }

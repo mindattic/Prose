@@ -12,7 +12,7 @@
   "role": "Transit operator, Ferrogate magline tram, Deepwell Station loop",
   "age": 47,
   "status": "active",
-  "location": "Deepwell Station, The Narrows",
+  "location": "Deepwell Station, The Narrows, near sub-level access near LaSalle and Congress",
   "description": "Chiamaka is a broad-shouldered woman with deep brown skin mapped by twenty-two years of shift work — early mornings have carved permanent shadows beneath her eyes, and her knuckles are calloused from gripping the manual override bar during power fluctuations. She wears her Ferrogate Transit uniform with a particular pride that borders on defiance, the collar pins perfectly level, the cuffs always turned exactly once. Her geneware is modest: irises that shift from amber to pale green depending on her blood pressure, which she got cheap from a stall in the Burnished Market and has never replaced. Her silver-streaked locs are pinned under her operator's cap except on rest days, when she lets them down to her shoulders.\n\nShe is the kind of woman who knows every regular on the 6:14 eastbound by name and by their bad habits. She has opinions about everything — the state of the magline infrastructure, the price of cassava flour, the particular incompetence of Ferrogate middle management — and she will share them freely if you give her the slightest opening. Beneath the bluster is someone who has taken quiet pride in the fact that in twenty-two years she has never been more than ninety seconds off schedule, and she considers this a form of art.",
   "psychology": {
     "facet_weights": {
@@ -193,5 +193,21 @@
   "registered_firearms": [
     "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
     "Volkov-Saito Precision VS-R8 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Deepwell Station",
+    "The Narrows Compact",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "CHROMEWORKS GhostFrame Stealth Ocular Mk3",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile",
+    "Déjà Vu"
+  ],
+  "district": "The Underworld"
 }

@@ -12,7 +12,7 @@
   "role": "Tailor and seamstress, runs a small alterations shop",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave, unit 4 of the Briar Arcade — a narrow shopfront wedged between a dumpling counter and a prosthetic repair stall",
+  "location": "Hamtramck Enclave, unit 4 of the Briar Arcade — a narrow shopfront wedged between a dumpling counter and a prosthetic repair stall, near Ashland and Division",
   "description": "Orsolya is a compact, heavyset woman whose hands are the most expressive thing about her — calloused at the fingertips from decades of needle work, stained faintly indigo from fabric dye she never quite gets out. Her hair is bone-white, worn in tight loops pinned close to her skull, and her skin is deep brown with an undertone of reddish amber. A cosmetic mod gives her irises a slow geometric shimmer, silver hexagons rotating lazily — a gift from her daughter she's never removed even though she found it frivolous at the time. She dresses simply but always immaculately; her clothes fit her like testimony.\n\nShe has a particular stillness to her that people mistake for coldness until she starts talking, at which point they realize it's actually patience. She will hold a pin in her teeth and listen to a customer describe a wedding, a funeral, a job interview, a first date, while her hands move without her eyes watching them. She's witnessed thirty years of human milestone dressed in fabric, and she has quiet opinions about all of it. She doesn't share them unless asked. When she does, they tend to land.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,24 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Hamtramck Enclave",
+    "Meridian Core",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Gradient Compact",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "The Pure Hand",
+    "Needle",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Lazarus IDP-1 'Teeth'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

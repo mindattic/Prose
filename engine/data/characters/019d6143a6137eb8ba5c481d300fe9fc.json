@@ -11,7 +11,7 @@
   "role": "Fixer - Community fixer",
   "age": 52,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Kedzie and Division",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -100,5 +100,9 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf"
+  ],
+  "district": "The Shelf"
 }

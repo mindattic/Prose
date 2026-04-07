@@ -12,7 +12,7 @@
   "role": "Underground DJ and sound sculptor, curates illegal rave events in the flood-level tunnels beneath Deepwell Station",
   "age": 24,
   "status": "active",
-  "location": "Deepwell Station (surface apartment) / sub-level tunnel network below Deepwell (performance venues)",
+  "location": "Deepwell Station (surface apartment) / sub-level tunnel network below Deepwell (performance venues), near sub-level access near State and Van Buren",
   "description": "Sovann is compact and perpetually in motion, with quick dark eyes and a grin that appears suddenly and fully, like a door flung open. Their heritage traces a line from the Cambodian plateau through the Andean highlands to the Sahel coast, and their features carry that long migration in the planes of their face — high cheekbones, a broad nose, skin the color of weathered teak. They've had color-shift hair installed, currently running through a slow amber-to-blue cycle that completes every six hours, and they wear the same battered canvas jacket every day regardless of weather, its back covered in hand-stitched patches from every illegal venue they've played.\n\nSovann's art is tactile — they design sound that you feel in your sternum before you hear it with your ears, building frequencies that interact with the biological resonance of a crowd. In the tunnel spaces below Deepwell, where the old transit infrastructure creates natural acoustic chambers, their sets have reportedly made people hallucinate colors or weep without knowing why. They are not a philosophical person about this; they find discussions of art theory excruciating and will physically walk away from them mid-sentence. What drives them is pure, inarticulate appetite — for the moment when a crowd stops being separate people and becomes a single breathing thing. They collect sounds obsessively, carrying a modified audio recorder everywhere and harvesting the acoustic signatures of spaces, machines, and weather systems.",
   "psychology": {
     "facet_weights": {
@@ -164,5 +164,20 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Deepwell Station",
+    "The Resonance Communion",
+    "The Heritage Vault",
+    "The Gradient Compact",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Palette",
+    "Tibor Osei-Svanstrom",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Arcturus CK-5 'Bloodhound'",
+    "Teak"
+  ],
+  "district": "The Underworld"
 }

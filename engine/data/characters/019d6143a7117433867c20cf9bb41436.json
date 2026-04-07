@@ -12,7 +12,7 @@
   "role": "Neural calibrator at a mid-tier augmentation clinic in Geartown, specializing in post-installation cognitive alignment and rejection management",
   "age": 34,
   "status": "active",
-  "location": "Geartown — Ironvein Augmentation Clinic, Level 2 Bay",
+  "location": "Geartown — Ironvein Augmentation Clinic, Level 2 Bay, near North Ave and Milwaukee",
   "description": "Vesimir is slight and precise, with warm amber skin, shaved temples, and a crown of loose dark curls that they dye in shifting gradients — currently deep violet fading to copper. Their irises are calibration-patterned, concentric rings of grey and gold that pulse faintly when they're running a neural diagnostic, a mod they had installed as both a professional tool and an aesthetic statement. They wear clean white clinical uniforms with a single personal touch: a small embroidered patch of their home district stitched to the shoulder. Their hands are rarely still — they tap rhythms on surfaces when thinking, flex their fingers between sessions.\n\nVesimir is the person who sees patients after the glamorous augmentation surgery is done and the reality sets in — the migraines, the dissociation, the body-horror of a new sense that the brain doesn't yet recognize as self. They are enormously patient in a way that reads almost inhuman until you catch the flash of genuine distress behind their eyes when a patient is struggling. They have opinions about augmentation culture that they mostly keep to themselves, believing that the industry sells transformation without adequately preparing people for the grief that sometimes accompanies it.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,17 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "related_entities": [
+    "Tessera Phased Array Disruptor PAD-3 'Sunspot'",
+    "Geartown",
+    "Ironvein",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

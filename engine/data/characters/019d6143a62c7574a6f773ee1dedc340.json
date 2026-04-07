@@ -12,7 +12,7 @@
   "role": "Forced entry and close-quarters combat specialist — breacher",
   "age": 63,
   "status": "active",
-  "location": "The Underbelly — sub-street tunnels and maintenance corridors",
+  "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near LaSalle and Congress",
   "description": "Ihaia Nystrom-Keita is average height but with a presence that fills more space than the body accounts for. At 63, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a breacher out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIhaia Nystrom-Keita has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,12 @@
   "registered_firearms": [
     "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
     "Tessera TK-11 Specter 'Whisper'"
-  ]
+  ],
+  "related_entities": [
+    "The Narrows Compact",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Clover"
+  ],
+  "district": "The Underworld"
 }

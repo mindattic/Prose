@@ -1,0 +1,37 @@
+{
+  "id": "847a740eebebaa7fd0d6fe2b414c9bcc",
+  "name": "Cascade Biotech Life-Sign Earring",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A small, stud-style earring with an embedded vital-sign monitor that tracks heart rate, blood pressure, and cortisol levels. The earring communicates via short-range encrypted signal to a paired device. A tiny LED on the earring's surface pulses with the wearer's heartbeat — invisible in daylight, faintly visible in darkness.\n\nOriginally designed for patients in post-operative monitoring, the Life-Sign Earring has been adopted by couples, close-knit teams, and protective parents who want real-time confirmation that someone they care about is still alive.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "surgical-grade titanium",
+    "vital-sign sensor",
+    "micro-LED",
+    "encrypted transmitter"
+  ],
+  "functionality": "Real-time vital monitoring, heartbeat LED, encrypted data transmission",
+  "what_it_says": "Someone is watching your heartbeat right now, and you chose to let them.",
+  "worn_by": [
+    "post-operative patients",
+    "bonded partners",
+    "protective families"
+  ],
+  "manufacturer": "Cascade Biotech",
+  "price_range": "Φ780",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Life-Sign Earring begins transmitting flatline data from someone who was confirmed alive thirty seconds ago — either the earring malfunctioned or something stopped a heart in half a minute."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 3",
+    "earring",
+    "vital signs",
+    "monitoring",
+    "personal"
+  ]
+}

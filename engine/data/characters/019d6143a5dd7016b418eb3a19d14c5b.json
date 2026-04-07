@@ -12,7 +12,7 @@
   "role": "Nurse at a Tier-1 community clinic, night shift",
   "age": 29,
   "status": "active",
-  "location": "Hough Reclamation, the Lowgate Community Clinic (unlicensed, Helix Biosystems-adjacent but not officially affiliated)",
+  "location": "Hough Reclamation, the Lowgate Community Clinic (unlicensed, Helix Biosystems-adjacent but not officially affiliated), near Ashland and Chicago Ave",
   "description": "Colette is small and moves quickly, the way people do when they've spent years navigating narrow corridors between occupied beds. She has warm dark skin, natural hair worn in a high puff that she wraps in a green cloth when on shift, and eyes that are an unsettling pale grey — a side effect of a retinal enhancement she got from a discount clinic at twenty-three that was slightly misaligned and gives her a perpetual look of seeing through whoever she's talking to. She wears color-changing nail polish that she updates with her mood, a small indulgence in an otherwise spartan wardrobe of scrubs and waterproof boots. On her left shoulder, barely visible above her collar, is a small tattoo of the Helix Biosystems caduceus crossed out with a red line — a private protest she keeps covered at work.\n\nColette has the specific exhaustion of someone who has been running on competence and controlled fury for years. She is technically excellent and emotionally present in a way that astonishes patients who expected institutional indifference, but beneath this is a bone-deep tiredness at the structural conditions she's fighting every shift with inadequate supplies and no institutional backing. She has a dark humor that surfaces as small sharp jokes in the worst moments, which her colleagues either love or find disturbing. She maintains a fierce and slightly desperate optimism about specific patients while holding no illusions about the system itself.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,13 @@
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Street Custom 'Widowmaker' Rigged Power Tool"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

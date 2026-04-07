@@ -12,7 +12,7 @@
   "role": "Barber and community elder, sole proprietor of a neighborhood barbershop in The Narrows",
   "age": 63,
   "status": "active",
-  "location": "The Narrows, Drăghici & Son Barbershop (a two-chair shop that has occupied the same ground-floor unit for thirty-one years; the 'Son' in the name refers to his son, who left for a Helix Biosystems contract twelve years ago)",
+  "location": "The Narrows, Drăghici & Son Barbershop (a two-chair shop that has occupied the same ground-floor unit for thirty-one years; the 'Son' in the name refers to his son, who left for a Helix Biosystems contract twelve years ago), near Fullerton and Damen",
   "description": "Malachai is tall and has not fully conceded to his age — he stands straight, moves deliberately, and has the particular stillness of someone who has spent decades in a profession that requires holding a blade near other people's necks and being trusted absolutely. His heritage is Romanian-Yoruba, third-generation Narrows, and it gives him a face that could be anywhere from fifty to seventy depending on how the light falls. His hair is white now, kept in a short, precise style he cuts himself by hand mirror every Sunday. He has no geneware, no cosmetic mods, only a pair of Helix-certified joint stabilizers in his right hand and wrist — installed eight years ago when arthritis began threatening his livelihood — and he mentions them only when clients ask about the faint copper banding around his wrist joints.\n\nThe shop is the Narrows' unofficial civic center. People come to argue politics, grieve, celebrate, confess, and get their hair cut, not necessarily in that order. Malachai has been cutting hair in this chair since he was thirty-two, and in that time he has absorbed the neighborhood's entire modern history. He gives opinions freely but never advice unless asked, a distinction he considers important. He has deep faith in the transit E.L.F. he calls Calea (Romanian for 'the path'), whose shrine occupies the corner of the shop near the magazine rack, and he speaks of her with the casual familiarity of a long acquaintance.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,17 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R8 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "The CEO",
+    "Palladian Construction",
+    "The Heritage Vault",
+    "Stonepath Logistics",
+    "Free Assembly",
+    "Tessera Corponation",
+    "Copper"
+  ],
+  "district": "The Circuit"
 }

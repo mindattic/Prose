@@ -12,7 +12,7 @@
   "role": "Neighborhood council chair and mutual aid organizer",
   "age": 52,
   "status": "active",
-  "location": "Highland Park Autonomous Zone",
+  "location": "Highland Park Autonomous Zone, near Michigan Ave and Walton",
   "description": "Nneka is a broad-shouldered woman with deep umber skin mapped by decades of worry and laughter in equal measure, her natural hair silver-streaked and pinned in elaborate wrapped fabric that she changes every morning like a ritual. She moves through the Highland Park Autonomous Zone with the unhurried confidence of someone who built the room she's walking into. Her left forearm carries a faded Ferrogate Transit union tattoo from her twenties, half-obscured by a bioluminescent vine pattern she had inked over it after the strike of '74 ended badly. She is warm to an almost disarming degree, the kind of warm that makes people confess things they didn't mean to. Under that warmth is a spine of corroded iron.\n\nNneka has spent thirty years converting abandoned infrastructure into community resources — hydroponic halls, childcare collectives, emergency medical co-ops — and she has learned that the most dangerous thing a poor person can do is build something worth stealing. She distrusts anyone who arrives with money and a plan. She trusts almost no one who hasn't been hungry at least once. She runs council meetings with a quiet authority that makes shouting seem embarrassing, and she will cut someone off mid-sentence with a single raised finger and a look that ends careers.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,18 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-44 'Fenris'",
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Ferrogate Transit",
+    "The Quiet Room",
+    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
+    "Tessera Corponation",
+    "ARCHIVE",
+    "Silver",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Iron"
+  ],
+  "district": "The Spires"
 }

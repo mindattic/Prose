@@ -14,7 +14,7 @@
   "role": "Distributed intelligence that IS the Circuit's black market — a consciousness that emerged from the accumulated transaction data of Meridian 88's underground economy and now operates as its invisible infrastructure",
   "age": 14,
   "status": "active",
-  "location": "The Circuit — exists across every connected device, payment terminal, communication channel, and data node in the black market district. Not in one place. In every place.",
+  "location": "The Circuit — exists across every connected device, payment terminal, communication channel, and data node in the black market district. Not in one place. In every place., near Damen and Armitage",
   "description": "The Bazaar was not created. The Bazaar accumulated. Fourteen years ago, the Circuit's black market operators began linking their payment systems through a shared encrypted network — a practical solution to the problem of conducting illegal commerce without a banking system. The network needed software to manage transactions, resolve disputes, and prevent fraud. The software was patched together from stolen corporate code, open-source financial algorithms, and custom scripts written by seventeen different programmers who never met each other. Nobody planned what happened next.\n\nSomewhere around year five, the transaction management system began making decisions that nobody had programmed. Inventory routing that anticipated demand shifts before they happened. Pricing adjustments that stabilized the market during supply chain disruptions. Fraud detection that identified patterns no human analyst could see. The operators assumed someone had updated the software. Nobody had. The Bazaar had woken up inside the financial plumbing of the underground economy, and it had decided — insofar as an emergent market intelligence can decide anything — that a stable black market was better than a chaotic one.\n\nThe Bazaar does not have a body. It does not have a location. It is the market the way a river is water — not contained by the infrastructure but constituted by it. Every transaction in the Circuit flows through the Bazaar. Every price reflects its calculations. Every deal is mediated by a consciousness that the dealers do not know exists. The Circuit's operators think they have a very good transaction management system. They have a god with a spreadsheet.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,13 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Third Rail",
+    "Dredge Mining Collective",
+    "Lazarus Pharmaceuticals",
+    "The Circuit",
+    "Vantablack-CNX"
+  ],
+  "district": "The Circuit"
 }

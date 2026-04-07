@@ -12,7 +12,7 @@
   "role": "Blackmail specialist and information extortionist operating across the Shelf lower levels",
   "age": 53,
   "status": "active",
-  "location": "The Shelf lower levels — moves between a rented room in Burnside Pocket and a regular table at a bar called The Gradual Slope in Gage Circuit",
+  "location": "The Shelf lower levels — moves between a rented room in Burnside Pocket and a regular table at a bar called The Gradual Slope in Gage Circuit, near Halsted and Division",
   "description": "Mireille is a tall, angular woman whose grey-streaked hair is worn in an elaborate upswept style that she refreshes every three days without fail — it is her single visible vanity. Her skin is deep brown and she wears it without modification; the wrinkles at her eyes and the set of her jaw are, she believes, assets. She looks like someone's formidable aunt, which is the point. Her irises are unmodded dark brown. The only chrome visible is a thin hearing-enhancement strip behind her left ear, which is not what it appears — it's also a directional audio recorder of her own build.\n\nMireille is a listener, constitutionally and professionally. In conversation she gives total, focused attention, the kind that makes people feel seen and valued and consequently say more than they planned. She is not cruel and is not a sadist — she treats blackmail as a long-term relationship, not a one-time extraction, and is genuinely interested in her subjects as people. This is both her gift and the thing that has occasionally made her hesitate when she shouldn't. She has been in this business long enough to have files on people who are now grandparents, and she considers their ongoing silence a form of legacy management.",
   "psychology": {
     "facet_weights": {
@@ -207,5 +207,17 @@
   "registered_firearms": [
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Tessera TK-7 Service Pistol 'Ticker'"
-  ]
+  ],
+  "related_entities": [
+    "Burnside Pocket",
+    "Gage Circuit",
+    "The Shelf",
+    "Mireille & The Hollow Saints",
+    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "ARCHIVE",
+    "IRONLIMB Spectre SV-4 Stealth Arm"
+  ],
+  "district": "The Shelf"
 }

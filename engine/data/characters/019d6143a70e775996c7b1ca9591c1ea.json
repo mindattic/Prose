@@ -11,7 +11,7 @@
   "role": "Organ harvester and black-market tissue broker",
   "age": 41,
   "status": "active",
-  "location": "Gravesend Basin, operating out of a decommissioned Ferrogate Transit maintenance shed",
+  "location": "Gravesend Basin, operating out of a decommissioned Ferrogate Transit maintenance shed, near Ashland and Chicago Ave",
   "description": "Vashti is a broad-shouldered woman with the particular kind of calm that comes from having done terrible things enough times that they no longer register as remarkable. Her skin is deep brown and unmarked except for a long scar along her left jaw that she refuses to have cosmetically repaired — a reminder, she says, to stay humble. Her hair is cut close on the sides and left natural on top, shot through with gray she doesn't bother hiding. She wears surgical-grade contact lenses that tint her irises pale gold, useful for the magnification assists built into the lens substrate. She moves with the unhurried efficiency of a woman who has learned that urgency creates mistakes.\n\nShe was a licensed surgical technician for Aurochs Medical Complex for eleven years before a licensing dispute — she maintains it was fabricated by a superior who wanted her caseload — ended her legitimate career. She drifted sideways into the gray market, then further. Now she runs a small but reliable operation: procurement, preservation, brokerage. She tells herself she mostly sources from consenting donors and the already-dead, and this is true often enough that she can sleep. She is professional, fair by the standards of Gravesend Basin, and genuinely good at her work. The horror of her trade does not read on her face.",
   "psychology": {
     "facet_weights": {
@@ -249,5 +249,16 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-25EM 'Tempest'",
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Ferrogate Transit",
+    "Gravesend Basin",
+    "The Iron Lotus",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

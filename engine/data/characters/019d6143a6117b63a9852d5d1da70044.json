@@ -12,7 +12,7 @@
   "role": "Structural breach and explosive ordnance specialist — demolitions expert",
   "age": 42,
   "status": "active",
-  "location": "Glassway — corporate-adjacent retail district, heavy surveillance",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near North Ave and Milwaukee",
   "description": "Fatoumata Delgado-Opoku is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 42, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a demolitions expert out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nFatoumata Delgado-Opoku operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,14 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street Custom 'Baptism' Electrified Water Cannon"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

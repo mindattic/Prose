@@ -13,7 +13,7 @@
   "role": "Street preacher, unlicensed trauma surgeon, information broker",
   "age": 61,
   "status": "active",
-  "location": "Old Harbor",
+  "location": "Old Harbor, near Lake Shore and Navy Pier",
   "description": "Reuben Otieno-Szymański is a weathered monument of a man, broad-shouldered and slow-moving in the way of someone who has learned that urgency costs more than it earns. His skin is deep brown and mapped with burn scars along his left jaw and neck — souvenirs from a chemical fire he refuses to fully explain. He wears a salvaged thermal coat repaired so many times the original fabric is almost entirely replaced with mismatched patches, and he keeps a portable surgical kit in a lockbox chained to his wrist like a briefcase. His augmented left eye glows faint amber at all times, the iris replaced with a diagnostic scanner he bought off a dead medic twenty years ago.\n\nHe occupies a semi-permanent encampment beneath the Old Harbor transit overpass, where he has rigged a canvas awning, a folding operating table, and a jury-rigged heating coil that runs off a tapped city line. People come to him with wounds they can't afford to have documented — stab wounds, botched augmentation infections, overdoses, pregnancies. He treats them all without asking questions and without keeping records. In exchange he accepts food, components, favors, and occasionally, information. He has developed a reputation as someone who knows things: who is sick, who is afraid, who is hiding, and what they're hiding from.\n\nReuben was once a licensed trauma surgeon working the Meridian Core public hospital system before a malpractice accusation — widely believed to be fabricated by a pharmaceutical contractor whose kickback scheme he refused to participate in — stripped him of his credentials and his apartment in the same year. He did not fight it. He packed his tools and walked downhill. He has been walking downhill ever since, and has come to believe that this was the most honest direction available to him.",
   "psychology": {
     "facet_weights": {
@@ -243,5 +243,15 @@
     "Kang-Petrov Arms KPR-357 'Journeyman'",
     "Meridian Munitions Twin PDW MTP-2 'Gemini'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "The Spire",
+    "Vantablack BC-1 'Briefcase'",
+    "Aminata Strand-Otieno",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Palette"
+  ],
+  "district": "Old Harbor"
 }

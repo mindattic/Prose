@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and small-time data broker",
   "age": 63,
   "status": "active",
-  "location": "The Alban Souk, Hamtramck Enclave",
+  "location": "The Alban Souk, Hamtramck Enclave, near Halsted and Chicago Ave",
   "description": "Faustin is a tall man gone slightly stooped with age, with a long, deeply lined face the color of dark walnut and close-cropped silver hair. He wears reading glasses with one cracked lens that he has refused to replace for reasons he won't fully explain, and his fingers are permanently ink-stained from a printer he still operates by hand. His stall in the Alban Souk is an organized labyrinth — physical media stacked in towers that somehow have internal logic only he can navigate, data-chips in labeled trays, printed zines in weathered portfolios, bootleg entertainment feeds on a slow-scroll display board behind him. He smells of old plastics, hot electronics, and a tobacco substitute he has smoked for forty years.\n\nFaustin does not move quickly and he does not need to. He has been in this spot, or a spot within fifty meters of this spot, for twenty-six years. He speaks with the careful economy of someone who has decided that most conversations don't require more than a hundred words, but when he talks about something he loves — old cinema, pre-Corponation literature, the acoustic properties of physical music formats — he becomes a completely different person, voluble and precise and slightly alarming in his enthusiasm. He knows what data passes through the Souk before almost anyone else does. He sells most of it. He keeps some of it. Nobody is quite sure which is which.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,13 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "The Alban Souk",
+    "ARCHIVE",
+    "Walnut",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

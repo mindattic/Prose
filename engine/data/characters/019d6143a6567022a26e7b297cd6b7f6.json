@@ -12,7 +12,7 @@
   "role": "Auto and drone mechanic, Geartown independent bay",
   "age": 28,
   "status": "active",
-  "location": "Geartown, Bay 14 of the Rusted Meridian self-service garage complex on Spindle Row",
+  "location": "Geartown, Bay 14 of the Rusted Meridian self-service garage complex on Spindle Row, near Milwaukee and Damen",
   "description": "Matteo is lean and angular, with the kind of wiry upper-body strength that comes from torquing bolts rather than lifting weights. His skin is a warm medium brown and his hair is a close-cropped natural that he bleeds into bioluminescent blue at the tips — a cheap geneware dye job he redoes every two months, currently fading to a greenish teal at the ends. He has a Palladian corporate tattoo on his left forearm that he has partially covered with an amateur geometric overlay — the original mark of a three-year apprenticeship contract he bought out early at significant personal cost. His hands are perpetually stained and he has stopped being embarrassed about it.\n\nHe is intensely focused when working and almost incoherent when not, as if the part of his brain that manages conversation runs on whatever processing power the mechanical problem in front of him does not require. He is not unkind — genuinely not — but he will trail off mid-sentence if a sound from an engine catches his attention. He has strong opinions about Ferrogate Transit's maintenance culture that he will share with anyone who stands still long enough.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,17 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Rust Prophets",
+    "FENRIS INDUSTRIAL HaulMaster HX-7 Arm",
+    "Palladian Construction",
+    "Zheng-dao Bioelectric",
+    "Geartown",
+    "SPINDLE",
+    "The Pure Hand",
+    "Hearthstone Firearms Trail-357 'Pathfinder'"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Checkpoint Operator, Ferrogate Transit Security",
   "age": 29,
   "status": "active",
-  "location": "Kessler Interchange, Ferrogate Transit Gate Four Checkpoint",
+  "location": "Kessler Interchange, Ferrogate Transit Gate Four Checkpoint, near Fullerton and Damen",
   "description": "Tibault is tall and lanky with a Burkinabe-Serbian face that defaults to a pleasantly vacant expression he has cultivated deliberately — people underestimate him, which at a checkpoint is occasionally useful. His hair is grown out in loose curls he keeps pulled back during shifts, and he has cosmetic bioluminescent freckles across his cheekbones that pulse very faintly blue when his heart rate elevates, a mod he got at nineteen and now somewhat regrets for professional reasons. He wears the clay-gray Ferrogate uniform with the resigned precision of someone who has stopped fighting the dress code but has also stopped caring if the collar sits quite right.\n\nTibault is fundamentally a curious person trapped in a job that rewards incuriosity. He has developed the checkpoint operator's paradoxical skill: appearing bored while processing enormous amounts of information simultaneously. He catalogues the thousands of faces that pass his station daily in a private mental taxonomy — regulars, anomalies, the ones who are lying about something innocuous, the rarer ones who are lying about something that matters. He has not decided what to do with this skill. He talks to his ELF shrine — a small figure he keeps under his console — before each shift, asking the transit spirits for patience, which he receives in uneven quantities.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,15 @@
   "registered_firearms": [
     "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
     "Tessera TKR-10 'Executor'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Arcturus GE-1 'Garrison'",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Clay"
+  ],
+  "district": "The Circuit"
 }

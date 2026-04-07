@@ -12,7 +12,7 @@
   "role": "Cross-district contraband specialist — smuggler",
   "age": 32,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Michigan Ave and Roosevelt",
   "description": "Sinan Vasquez-Chatterjee is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 32, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSinan Vasquez-Chatterjee has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,17 @@
   "registered_firearms": [
     "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Bioelectric Muscle Fiber",
+    "Meridian 88",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Clover"
+  ],
+  "district": "Old Harbor"
 }

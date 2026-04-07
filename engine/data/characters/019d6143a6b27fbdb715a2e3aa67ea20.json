@@ -12,7 +12,7 @@
   "role": "protection racket enforcer and occasional numbers runner for the Shelf lower levels",
   "age": 22,
   "status": "active",
-  "location": "The Shelf lower levels, Tier 2 commercial rows between Blackpipe Corridor and Iron Bend",
+  "location": "The Shelf lower levels, Tier 2 commercial rows between Blackpipe Corridor and Iron Bend, near Halsted and Division",
   "description": "Reyvaldo is young enough that his face still hasn't fully settled into what it's going to be — there's something unfinished about his jaw, a softness around the eyes that the hardened set of his mouth hasn't caught up to yet. He's broad across the chest in the way of someone who started lifting weights in a small room at fifteen and has never stopped. His Ghanaian-Osei heritage gives him deep brown skin and a wide nose; his Kazakh-Russian grandfather passed down high cheekbones and light eyes that are an unsettling grey-green. He has retractable claws — a practical geneware mod he paid for himself at twenty, black-tipped, filed to functional sharpness — and wears them half-extended at rest as a casual signal. His clothes are cheap but kept neat. He is extremely aware of his clothes.\n\nReyvaldo is in the phase of his criminal life where he is still deciding whether to become the person he is pretending to be. He does this job with professional dedication, collects the Φ from the Shelf vendors on behalf of his crew boss with no unnecessary roughness, and brings the numbers in on time. He is respected on the row, which he confuses with being liked. At home — a cube rental above a noodle counter — he reads Zheng-Dao corporate management theory, not because he wants to work for Zheng-Dao but because he is trying to reverse-engineer how power organizes itself. He has a plan. The plan changes every three months. He's not sure any version of it ends well.",
   "psychology": {
     "facet_weights": {
@@ -227,5 +227,18 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPR-357 'Journeyman'",
     "Crucible Industries Suppressed Compact SC-2 'Murmur'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Dredge Mining Collective",
+    "The Unfinished Theorem",
+    "The CEO",
+    "The Shelf",
+    "Zheng-dao Bioelectric",
+    "Iron Bend",
+    "The Heritage Vault",
+    "Arcturus CK-5 'Bloodhound'",
+    "Iron"
+  ],
+  "district": "The Shelf"
 }

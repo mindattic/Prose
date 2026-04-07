@@ -12,7 +12,7 @@
   "role": "Death midwife and pilgrimage guide",
   "age": 52,
   "status": "active",
-  "location": "Irkalla district, operates out of a narrow apartment above a prosthetic repair shop",
+  "location": "Irkalla district, operates out of a narrow apartment above a prosthetic repair shop, near Ashland and Chicago Ave",
   "description": "Samineh has the kind of face that people describe afterward as calm, though in the moment of meeting her they're not sure why — she has sharp Malian cheekbones and Iranian eyes that are a pale amber, and her expression in repose is something between watchful and patient. Her hair is natural and grown large, threaded through with small copper discs that catch light and make a very soft sound when she moves quickly. She has no visible augmentations save for a faint color-shifting quality to her skin under direct light — a cosmetic geneware inheritance from her grandmother's generation, a barely-perceptible rainbow sheen that she has never tried to suppress.\n\nShe is one of the few certified death midwives in Irkalla, a district with a high mortality rate and historically poor access to formal end-of-life care. Her work involves sitting with the dying, helping families understand what is happening physiologically and spiritually, guiding the final upload or data-will processes for those who want them, and performing the closing rites of whatever tradition the dying person holds. She is also one of three guides who regularly leads pilgrimage walks through the city's memorial infrastructure — the ghost-bridges, the data shrines, the submerged neighborhood markers. She does not advertise. People find her when they need her.",
   "psychology": {
     "facet_weights": {
@@ -224,5 +224,18 @@
   ],
   "registered_firearms": [
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
-  ]
+  ],
+  "related_entities": [
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Grandmother",
+    "The Iron Lotus",
+    "Sterling-Nakamura Photonic Disruptor SN-15 'Prism'",
+    "Irkalla",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Tessera Industries Data Spike DS-1 'Upload'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

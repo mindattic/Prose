@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor, works the pre-dawn shift outside Deepwell Station",
   "age": 26,
   "status": "active",
-  "location": "Deepwell Station plaza, cart pitch #14 — also moves to Ironvein on Tuesdays and Grainfort market on weekends",
+  "location": "Deepwell Station plaza, cart pitch #14 — also moves to Ironvein on Tuesdays and Grainfort market on weekends, near sub-level access near State and Van Buren",
   "description": "Chaltu is short and round-shouldered with a persistent air of someone who is running calculations nobody else can see. Their heritage is Oromo-Yoruba-Finnish and their coloring reflects it in interesting ways — medium brown skin with faint golden undertones, dark eyes, and thick natural hair they keep pulled back under a food-safe wrap during service hours, though on off days it erupts into a cloud they seem delighted by. They have color-changing hair geneware that shifts the outer layers through amber, copper, and deep red over the course of several hours — slow enough that you don't notice it happening, startling when you look up and realize the color has moved. They've also got cat ears, velvet-dark and expressive, which they got at nineteen and regard as the best decision of their life.\n\nChaltu runs their cart with the focused intensity of a surgeon. They make three broths — a sour tamarind pork, a clear Dashi-adjacent stock they keep secret, and a rotating seasonal — and they do not offer substitutions. They are funny in short bursts and opinionated about food in a way that's charming rather than exhausting. They have a loud laugh they seem surprised by every time it comes out. They are also deeply ambitious in a way they haven't fully admitted to themselves yet, keeping a private ledger of savings and a folder of business license applications they keep almost submitting.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,19 @@
   "registered_firearms": [
     "Hearthstone Firearms Model 9 'Payday'",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Ferrogate Transit",
+    "Grainfort",
+    "The Heritage Vault",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Adaeze Chen-Hawkins",
+    "Nesting Doll",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Pellucid Systems"
+  ],
+  "district": "The Underworld"
 }

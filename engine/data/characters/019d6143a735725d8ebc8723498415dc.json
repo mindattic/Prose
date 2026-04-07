@@ -12,7 +12,7 @@
   "role": "Loan shark and debt enforcer operating out of Gravesend Basin",
   "age": 44,
   "status": "active",
-  "location": "Gravesend Basin — runs collections from a tea house called The Silt Cup on Mucker's Row",
+  "location": "Gravesend Basin — runs collections from a tea house called The Silt Cup on Mucker's Row, near Ashland and Chicago Ave",
   "description": "Zibusiso is a heavyset woman with deep brown skin mapped by old keloid scars she's never had removed — she calls them her receipts. Her hair is grown long and locked, threaded with copper wire and small data chips she claims hold the records of every debt ever owed to her. Her eyes have been modded with a golden spiral iris pattern, and she wears reading lenses over them when working numbers, which is always. She dresses in layered kente-stripe synthfabric and keeps her hands conspicuously unaugmented — soft, manicured, rings on every finger — because she wants people to notice she doesn't need chrome to hurt them.\n\nZibusiso is meticulous, patient, and genuinely warm in the way that predators sometimes are. She remembers birthdays, asks after sick relatives, and will extend grace periods with apparent generosity before the mood shifts into something cold and absolute. She doesn't threaten — she simply describes consequences in precise, accountant-level detail. People leave her table feeling both comforted and terrified, which is exactly how she likes it.",
   "psychology": {
     "facet_weights": {
@@ -194,5 +194,14 @@
   ],
   "registered_firearms": [
     "Crucible Industries Fang-9 'Switchblade'"
-  ]
+  ],
+  "related_entities": [
+    "Gravesend Basin",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Stratum",
+    "Copper",
+    "The Pure Hand",
+    "Carrion Defense Works Neural Lash NL-3 'Agony'"
+  ],
+  "district": "The Shelf"
 }

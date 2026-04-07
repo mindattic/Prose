@@ -12,7 +12,7 @@
   "role": "Climate refugee child — unaccompanied minor in transit",
   "age": 12,
   "status": "active",
-  "location": "Waukegan Industrial Shelf — sleeps in the migrant processing annex, spends days in the surrounding industrial lots",
+  "location": "Waukegan Industrial Shelf — sleeps in the migrant processing annex, spends days in the surrounding industrial lots, near Lake Shore and Navy Pier",
   "description": "Blessed is small for twelve, with the particular watchfulness of a child who has learned to read rooms before entering them. She has her mother's wide-set eyes — very dark, with a double ring of amber at the iris edge that might be a natural mutation or might be the residue of a cheap geneware treatment she does not remember receiving. Her skin is a warm medium brown, her hair grown out unevenly from what was once a close cut, and she has a scar along the jawline from broken transit container glass that she accepts as simply part of her face. She carries a bag that is larger than seems reasonable for her size, and its contents are carefully organized: water purification tabs, a change of clothes, a notebook filled with tiny writing, and a collection of small objects she has found and kept for reasons she does not always explain.\n\nBlessed is not a sad child. She is a serious one. She has been in the Waukegan processing annex for four months, technically awaiting placement, practically forgotten by a system that has more cases than it can hold. She has mapped the entire industrial shelf by foot, knows which warehouses leave food waste accessible, which security patrols are on which rotation, and which of the adult migrants in the annex are safe to sleep near. She is not looking for someone to save her. She is looking for someone to go to Meridian Core with.",
   "psychology": {
     "facet_weights": {
@@ -211,5 +211,16 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Meridian Core",
+    "The Waukegan Industrial Shelf",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Irontide Tidal Energy",
+    "Residue (I Still Have Your Feed)",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Glass"
+  ],
+  "district": "Old Harbor"
 }

@@ -1,0 +1,37 @@
+{
+  "id": "2feb2f23a9864c4e557aed83f51afdc8",
+  "name": "Meridian Tactical Solutions Chemical Agent Poncho",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A lightweight, quick-deploy poncho that provides emergency protection against tear gas, pepper spray, and industrial chemical aerosols. The poncho seals at the wrists and neck with elastic gaskets and includes an integrated hood with a filtered face panel. It packs to the size of a fist and deploys in under five seconds.\n\nCarried by protest medics, journalists covering civil unrest, and residents of districts where chemical crowd-control agents are deployed regularly enough to plan for. The poncho provides 30 minutes of protection — enough to escape the affected zone.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "chemical-resistant film",
+    "elastic gaskets",
+    "filtered face panel"
+  ],
+  "functionality": "Emergency chemical protection, 30-minute duration, 5-second deployment",
+  "what_it_says": "You expect to be gassed and you've packed a way to survive it.",
+  "worn_by": [
+    "protest medics",
+    "journalists",
+    "Shelf residents"
+  ],
+  "manufacturer": "Meridian Tactical Solutions",
+  "price_range": "Φ55",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A bulk purchase of 200 Chemical Agent Ponchos is traced to a civic organization that has never been associated with protests — someone is preparing for a chemical event that hasn't been announced."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 1",
+    "chemical",
+    "emergency",
+    "poncho",
+    "protest",
+    "quick-deploy"
+  ]
+}

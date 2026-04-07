@@ -12,7 +12,7 @@
   "role": "Childcare worker and after-school program coordinator at a community center in The Shelf",
   "age": 28,
   "status": "active",
-  "location": "The Shelf — Clearpath Community Node, a converted transit shed that serves as a childcare center, food pantry, and meeting space",
+  "location": "The Shelf — Clearpath Community Node, a converted transit shed that serves as a childcare center, food pantry, and meeting space, near Ashland and Division",
   "description": "Devaki is compact and energetic, built like someone who has spent years crouching to a child's eye level and then standing up quickly to manage chaos. Their skin is warm brown, their hair a natural cloud of deep black shot through with self-maintaining bioluminescent streaks of soft green — a geneware mod they got as a teenager and have never changed because the children love it and they love the children. They have their Ghanaian father's broad cheekbones and their Iranian mother's sharp nose, and they wear expressions that shift fast: delight to concern to focused calm, all in the span of a breath. Their hands are always slightly stained with paint or chalk or both.\n\nDevaki runs on conviction and substandard coffee. They believe — with a firmness that sometimes looks like stubbornness and sometimes looks like the only sane response to Meridian 88 — that children are the one non-negotiable. Whatever the Corponations decide, whatever the district politics do, whatever the power cuts and the overcrowding and the data poverty do, the kids at Clearpath are going to have three meals today and a clean place to learn and an adult who will not disappear on them. They are funny in a dry, quick way that children respond to immediately. Adults who underestimate them because of their warmth make a reliable and often entertaining mistake.",
   "psychology": {
     "facet_weights": {
@@ -227,5 +227,21 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Iron Lotus",
+    "Clearpath",
+    "The Shelf",
+    "Flicker",
+    "The Pellucid Span",
+    "The Gradient Compact",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

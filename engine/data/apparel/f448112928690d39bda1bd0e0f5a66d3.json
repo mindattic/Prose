@@ -1,0 +1,37 @@
+{
+  "id": "f448112928690d39bda1bd0e0f5a66d3",
+  "name": "Prometheus Medical Emergency Medkit Belt Pouch",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A belt-mounted medical pouch containing a standardized emergency kit — coagulant patches, a single-use auto-injector loaded with broad-spectrum antitoxin, a flexible splint, and a biometric reader card. The pouch is sealed against environmental contamination and opens with a single pull-tab.\n\nRequired equipment for most licensed security firms and voluntarily carried by anyone who has seen what happens when a medical emergency occurs in a lower-tier district where the nearest clinic is forty minutes away.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "contamination-sealed pouch",
+    "standardized medical kit",
+    "pull-tab opening"
+  ],
+  "functionality": "Emergency medical response, antitoxin, wound treatment, basic diagnostics",
+  "what_it_says": "You've accepted that someone near you is going to get hurt and you've decided to be useful when it happens.",
+  "worn_by": [
+    "security personnel",
+    "runners",
+    "field medics",
+    "responsible citizens"
+  ],
+  "manufacturer": "Prometheus Medical",
+  "price_range": "Φ260",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A medkit pouch found at a scene has its auto-injector used but its coagulant patches untouched — someone needed the antitoxin but wasn't bleeding, suggesting poisoning rather than violence."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 2",
+    "medkit",
+    "medical",
+    "emergency",
+    "belt pouch"
+  ]
+}

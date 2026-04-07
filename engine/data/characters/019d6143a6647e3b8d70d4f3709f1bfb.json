@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor, specialist in hybrid adaptive garments",
   "age": 27,
   "status": "active",
-  "location": "The Burnished Market, Bronzeline",
+  "location": "The Burnished Market, Bronzeline, near Armitage and Milwaukee",
   "description": "Nkechi is a short, energetic young woman with the rich dark complexion of her Igbo-Nigerian heritage and the unusual pale blue eyes that surface occasionally in her Polish grandmother's line, which she has leaned into with matching blue cat ears — a geneware mod she saved for over eight months and treats as a signature. Her natural hair is grown long and worn in elaborate sculptural styles that she changes weekly, using her own products as advertisement. Her clothes are always technically impressive: today's jacket has reactive panels that shift between hand-stamped Ankara patterns and geometric weave depending on the wearer's biometric stress levels — a piece she made herself.\n\nNkechi is relentlessly enthusiastic in a way that can seem naïve until you realize she has a precise memory for every customer's measurements, preferences, and budget, and she has never once given someone a piece that didn't flatter them. She has strong opinions and shares them freely, argues fashion like it's philosophy, and somewhere underneath the bright chatter is a young woman who genuinely believes that how you dress is a form of sovereignty that the corps cannot take from you — yet.",
   "psychology": {
     "facet_weights": {
@@ -238,5 +238,15 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Grandmother",
+    "Bronzeline",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "Tessera Corponation",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

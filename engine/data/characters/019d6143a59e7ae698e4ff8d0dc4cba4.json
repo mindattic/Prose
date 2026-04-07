@@ -12,7 +12,7 @@
   "role": "Seamstress and clothing alteration specialist, runs a small repair shop",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, stall 14 of the Crossthread Arcade",
+  "location": "Hamtramck Enclave, stall 14 of the Crossthread Arcade, near Halsted and Division",
   "description": "Abeke is a broad-shouldered woman whose posture speaks of decades bent over a sewing frame, though she straightens with a dignity that makes customers feel they've walked into a proper establishment, not a six-by-eight closet crammed with bolt ends and hanging half-finished coats. Her skin is very dark, her hair close-cropped and silver at the temples, and she wears a pair of magnification implants over her eyes that give her a slightly owlish look — two rings of amber-tinted glass that whir faintly when she focuses. She has cosmetic scale-patterning on the backs of her hands, a faint iridescent green that she claims she got 'back when I had more optimism and fewer bills.' Her fingers move constantly whether she's working or not, small pinching and pulling gestures that drive her regulars affectionately mad.\n\nShe treats every garment as a confidence. She will not rush. She will not cut corners. She speaks her mind about fabric choices with the unflinching authority of someone who has seen ten thousand hems fail, and her critiques are offered without cruelty but also without softening — 'That synthetic stretch will pill in three washes, I don't care what the vendor told you.' She keeps a small shrine to the E.L.F. she calls Grandmother Needle in the back of her stall, a tangle of old thread wound around a salvaged sewing-machine motor, and she mutters brief prayers to it before beginning any complicated job.",
   "psychology": {
     "facet_weights": {
@@ -230,5 +230,17 @@
   "carried_weapons": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Grandmother",
+    "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
+    "Tessera Corponation",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Needle",
+    "Glass"
+  ],
+  "district": "The Shelf"
 }

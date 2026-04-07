@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor",
   "age": 29,
   "status": "active",
-  "location": "Operates his cart at the intersection of two elevated walkways in the Bronzeline district, near the Ferrogate transit relay junction",
+  "location": "Operates his cart at the intersection of two elevated walkways in the Bronzeline district, near the Ferrogate transit relay junction, near North Ave and Damen",
   "description": "Kweku is lean and quick, with deep brown skin and a constellation of bioluminescent freckles across his cheeks and forearms — a cosmetic genemod he got at nineteen and has never regretted, though they pulse faster when he's agitated, which he finds embarrassing. His hair is kept short on the sides, grown out into a soft cloud on top, often dusted with dried chili residue he doesn't notice. He has a long nose and an expressive mouth that defaults to a grin that's one part genuine warmth and two parts salesmanship. A small Ferrogate Transit logo is tattooed behind his left ear from a brief period he'd rather not discuss.\n\nKweku is relentlessly social and genuinely curious about people in a way that can be hard to distinguish from nosiness. He remembers orders perfectly — not just what people eat, but what they ordered the first time, what they ordered the day something bad happened to them, what changes in someone's order say about the state of their life. He has no filter on his opinions and will share them freely unless he senses real pain, at which point he becomes unexpectedly gentle. He has enormous ambitions for his cart and absolutely no plan for them. He talks about opening a real restaurant with the same frequency and specificity as people talk about dreams they don't actually intend to pursue.",
   "psychology": {
     "facet_weights": {
@@ -224,5 +224,15 @@
   "carried_weapons": [
     "Street Custom 'Angry Mary' Aerosol Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Bronzeline",
+    "Flicker",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Residue (I Still Have Your Feed)",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Circuit"
 }

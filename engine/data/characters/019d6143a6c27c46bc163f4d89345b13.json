@@ -12,7 +12,7 @@
   "role": "Contract broker and resource coordinator — fixer",
   "age": 37,
   "status": "active",
-  "location": "The Canopy — elevated walkway district above Geartown",
+  "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Addison",
   "description": "Sagyn Padilla-Nti are average height but with a presence that fills more space than the body accounts for. At 37, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a fixer out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nSagyn Padilla-Nti are the kind of runner other runners tell stories about, though the stories vary depending on who they burned last.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,15 @@
   "registered_firearms": [
     "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
     "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Canopy Station Nine",
+    "The Heritage Vault",
+    "Geartown",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'"
+  ],
+  "district": "The Laceworks"
 }

@@ -13,7 +13,7 @@
   "role": "Mid-tier intelligence broker and urban cartographer specialising in infrastructure secrets — hidden tunnels, decommissioned data conduits, forgotten corporate sub-levels",
   "age": 34,
   "status": "active",
-  "location": "The Circuit, mobile — maintains three rotating safe-house nodes",
+  "location": "The Circuit, mobile — maintains three rotating safe-house nodes, near North Ave and Damen",
   "description": "Vesna is lean and angular, with the kind of economy of movement that suggests someone who has spent years navigating spaces not built for human occupation. Her hair is shaved close on the sides and kept longer on top, currently dyed a flat, non-reflective black that she maintains with the same pragmatism she applies to everything. Her eyes are a pale grey-green that people sometimes mistake for augmented; they are not. She is Croatian-Swedish by heritage, raised in a migrant enclave on the Shelf that no longer exists, having been demolished to make way for a data-routing hub in 2178. She considers this formative.\n\nVesna's trade is spatial knowledge — specifically, the gap between the official map of Meridian 88 and the actual city, which she has spent twelve years documenting. She sells access routes to runners needing to avoid surveillance corridors, sells structural data to architects with clients who need rooms that don't appear on building permits, and occasionally sells nothing at all to people she finds interesting, just to see what they do with it. She works from a custom-built rig she calls the Palimpsest — a layered mapping system that overlays historical city data, real-time sensor feeds, and her own hand-annotated surveys into a single navigable model. It is, by any reasonable assessment, the most comprehensive private map of Meridian 88 in existence.\n\nShe is not warm, exactly, but she is fair, and in The Circuit those two things are often confused. She has a reputation for absolute accuracy — if Vesna says a tunnel is passable, it is passable; if she says a route is burned, it is burned — and she guards that reputation with a ferocity that has ended at least two professional relationships and one that was something more. She experiences the city as a text to be read rather than a place to be inhabited, which gives her a clarity about Meridian 88's power structures that people with more emotional investment sometimes cannot achieve, and which occasionally makes her feel like a ghost walking through a city she refuses to belong to.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,23 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "The Meridian Core",
+    "Tessera Corponation Dermal Cipher Lattice — 'The Palimpsest'",
+    "Meridian Core",
+    "PulsePoint ScentSig Personal Biochemical Scent Node",
+    "Meridian 88",
+    "The Circuit",
+    "The Shelf",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Lacuna Genomics",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Stratum",
+    "Slagworks Industrial",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

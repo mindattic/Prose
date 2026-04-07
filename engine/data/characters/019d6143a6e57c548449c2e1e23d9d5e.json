@@ -12,7 +12,7 @@
   "role": "Junior hacker; self-taught, operating from the Narrows' informal network",
   "age": 13,
   "status": "active",
-  "location": "Iron Bend (The Narrows adjacent)",
+  "location": "Iron Bend (The Narrows adjacent), near Milwaukee and North Ave",
   "description": "Søren is the kind of kid that adults look at and see either a prodigy or a problem, and the truth is that neither word is wrong. They have their Kenyan father's dark eyes and their Māori mother's broad, expressive face, with a scattering of geneware mods accumulated in pieces — irises that have been tuned to a soft gold, a hair-pigment mod that keeps their short locs a constant deep violet regardless of lighting, and retractable claws they got at a gray-market modder as a twelfth birthday present to themselves, which they use primarily to tap on surfaces when thinking. They are skinny in the way of someone who sometimes forgets to eat because they are inside something interesting, with ink-stain calluses on their left hand from a tablet stylus they use for annotating data flows.\n\nSøren is not a criminal — at least not in their own taxonomy. They have a rigorous internal ethics around what they will and will not touch: no personal medical data, no family communications, no financial accounts. What they will touch is infrastructure they consider ought to be public — transit schedules that Ferrogate hoards, air quality data that Axiom doesn't release, building maintenance logs that explain why their block's heat went out again. They distribute what they find through anonymous drop points in Iron Bend's informal network, and they have approximately four hundred forty-two followers on an anonymous data-sharing feed they call Seams. They are thirteen and extremely proud of this and have told precisely no one.",
   "psychology": {
     "facet_weights": {
@@ -164,5 +164,17 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Ferrogate Transit",
+    "Iron Bend",
+    "Tessera Corponation",
+    "Chimera-Null",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Déjà Vu",
+    "Gold",
+    "Iron"
+  ],
+  "district": "The Circuit"
 }

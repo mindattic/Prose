@@ -12,7 +12,7 @@
   "role": "Numbers runner and bookmaker",
   "age": 19,
   "status": "active",
-  "location": "Shallowgrave, working the Copperhead market blocks and the Burnside Pocket transit stops",
+  "location": "Shallowgrave, working the Copperhead market blocks and the Burnside Pocket transit stops, near Kedzie and Division",
   "description": "Yannick is all edges and nervous energy — lean and fast-moving, skin a warm medium brown with scattered vitiligo patches across his jaw and neck that he has chosen to emphasize rather than treat, coloring the edges of the patches with a faint bioluminescent ink that glows a soft blue-white in low light. He has his mother's Aleut cheekbones and his father's Ghanaian forehead and the specific wiry build of someone who has been running since childhood — literally running, routes and errands and collections, since he was eleven. His hair is grown out and unstyled, which is unusual enough in Shallowgrave's carefully cultivated aesthetic economy to read as either carelessness or confidence.\n\nHe is irrepressibly, exhaustingly verbal — he takes numbers, places bets, explains odds, and manages four different customer disputes simultaneously while eating a fried plantain from a street stall and telling a joke whose punchline he delivers to a different person than the one he started it with. He has a gift for mental arithmetic that would have made him a strong candidate for a Tessera data processing apprenticeship if his school records weren't spotty and his neighborhood weren't Shallowgrave. He knows this. He thinks about it more than he admits. He is nineteen and has not yet decided whether ambition is something that applies to him.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,17 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Burnside Pocket",
+    "Shallowgrave",
+    "The Render",
+    "Copperhead",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Tessera Corponation",
+    "Irontide Tidal Energy",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Aleut Corporation"
+  ],
+  "district": "The Shelf"
 }

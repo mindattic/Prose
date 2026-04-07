@@ -12,7 +12,7 @@
   "role": "Tunnel guide and mapper of Irkalla's lower strata",
   "age": 34,
   "status": "active",
-  "location": "Irkalla, sub-level 7 junction known locally as the Molar Cross",
+  "location": "Irkalla, sub-level 7 junction known locally as the Molar Cross, near sub-level access near LaSalle and Congress",
   "description": "Sewuese is a lean woman whose body has adapted to confined spaces in ways that are faintly unsettling — she moves through narrow passages without seeming to rotate her shoulders, ducking under pipes with the automatic grace of someone who has never known a ceiling higher than two meters. Her skin is a deep warm brown mapped with self-applied phosphorescent tattoos that glow faint teal in darkness, a functional adaptation that doubles as artistry, marking her position for those who follow. Her hair is gone entirely, shaved to the scalp and re-grown as thin bioluminescent filaments she keeps braided tight. She wears a rig of salvaged equipment: repurposed Ferrogate Transit surveying tools, lengths of knotted rope that double as her personal mapping notation, and a coat stitched from old transit uniform panels.\n\nShe speaks in the economical cadence of someone who has learned that sound travels strangely underground and that echoes lie. She is not unfriendly but she is precise — she will tell you exactly what a route costs, exactly what the risks are, and exactly what she will do if you violate her rules in the tunnels. She has a superstitious relationship with the E.L.F.s she believes inhabit the deep drainage networks, leaving coiled wire and old transit tokens at specific junctions before guiding anyone through. She calls these spirits the Drip-Mouths and speaks of them with something between fear and professional respect.",
   "psychology": {
     "facet_weights": {
@@ -219,5 +219,16 @@
     "Meridian Munitions Snapper-22 'Cricket'",
     "Street Custom 'Rebar Rose' Improvised Spike Mace"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Chorus of David Park",
+    "The Filament",
+    "Bathysphere Networks",
+    "Lymphatic Resonance Injector LRI-5 'Floodgate'",
+    "Irkalla",
+    "Stalker",
+    "Nightlight"
+  ],
+  "district": "The Underworld"
 }

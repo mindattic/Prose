@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor and informal neighborhood cook",
   "age": 38,
   "status": "active",
-  "location": "The Narrows — operates a cart at the Kessler Interchange underpass, dawn to afternoon",
+  "location": "The Narrows — operates a cart at the Kessler Interchange underpass, dawn to afternoon, near Milwaukee and Damen",
   "description": "Arsenio is a compact man who takes up more space than his size suggests, carried in the loud warmth of his voice and the theatrical sweep of his gestures when he describes a dish. His father was Beninese-Chinese and his mother Finnish-Togolese, and his face holds that genealogy in an arrangement that doesn't resolve easily into anything his customers can pin down — wide-set eyes, a snub nose, and a smile with one gold-capped molar. He wears his hair in dense, close locs dyed a permanent deep-sea teal via geneware treatment. Both forearms are tattooed with ingredient lists from dishes he's invented over the years, written in a cramped personal shorthand. He has a cat tail — russet-furred, thick at the base — which emerged from a cheap geneware kit he bought at nineteen and has become as much a part of him as his hands; it curls up when he's focused and lashes when he's irritated.\n\nSeny treats every transaction as an audition and every satisfied customer as a standing ovation. He is genuinely, almost exhaustingly enthusiastic about food — will describe a broth's development across four hours with the intensity of someone recounting a battle. This enthusiasm is real and it is also armor: underneath it he is calculating, ambitious in ways he doesn't advertise, and running several small ventures on the side of the cart that he'd prefer the Narrows' various interested parties didn't examine too closely.",
   "psychology": {
     "facet_weights": {
@@ -185,5 +185,17 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Arcturus Defense Solutions ARC-P1 'Centurion'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "The Interchange",
+    "The Narrows Compact",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pure Hand",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

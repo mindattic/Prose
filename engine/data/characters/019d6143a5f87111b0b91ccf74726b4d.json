@@ -12,7 +12,7 @@
   "role": "Identity fabricator — produces forged citizenship chips, employment histories, and biosignature masks",
   "age": 34,
   "status": "active",
-  "location": "The Narrows — a cramped workshop above a noodle stall on Fistula Passage, near the Blackpipe Corridor junction",
+  "location": "The Narrows — a cramped workshop above a noodle stall on Fistula Passage, near the Blackpipe Corridor junction, near Damen and Armitage",
   "description": "Dzemal is slight and precise in the way of someone who has learned that carelessness is fatal. He stands just under average height, with warm brown skin, a narrow jaw perpetually shadowed with stubble he never quite shaves, and long fingers that move with the focused economy of a surgeon. His hair is cropped to an undifferentiated fuzz. The only cosmetic mod he's invested in is a bioluminescent pigment woven into the skin of his forearms — pale blue-white lines that trace the paths of his veins, which he uses as his own light source when working in the dark. He smells faintly of solder and the particular chemical tang of biosynthetic epidermal overlay.\n\nHe has an almost pathological need to be underestimated. He cultivates a nervous, apologetic manner — averted eyes, self-deprecating half-laughs, reflexive deference — that causes people to discount him immediately. In reality he is one of the finest identity fabricators working below Tier 3, capable of producing documents and biometric overlays that pass Axiom checkpoint scanners. He finds deep, quiet satisfaction in the craft of making someone new — he thinks of it as giving people second chances, even when the people paying are not looking for redemption.",
   "psychology": {
     "facet_weights": {
@@ -204,5 +204,16 @@
   "carried_weapons": [
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "The Narrows Compact",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Aslan Vasquez-Chatterjee",
+    "Tibor Osei-Svanstrom",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

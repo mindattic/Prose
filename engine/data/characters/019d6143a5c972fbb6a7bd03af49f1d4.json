@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor, runs 'Brax's Tangle' off the corner of Copperhead and 9th Lateral",
   "age": 26,
   "status": "active",
-  "location": "Copperhead, street level — corner pitch near the Copperhead Transit Hub mouth",
+  "location": "Copperhead, street level — corner pitch near the Copperhead Transit Hub mouth, near Milwaukee and North Ave",
   "description": "Braxo is a lean young man, all elbows and restless energy, with close-cropped black hair and a jaw that always looks like it needs another day of growth. He has his Guinean grandfather's deep brown skin and his Bosnian grandmother's sharp cheekbones, and he has cat ears — small, tawny, semi-expressive — mounted via a Helix genemod he saved three months of UBC stipend for at seventeen because he thought they'd make him look 'elevated.' They do not make him look elevated. They do make him look like exactly who he is: a cheerful young man who is trying very hard and mostly succeeding. His cart is a battered silver rig he inherited from a previous vendor, pasted over with good-luck ELF shrine stickers and a hand-painted sign in four languages.\n\nHe operates his cart with the manic efficiency of someone who cannot afford to miss a service window. His noodle broth is genuinely excellent — a recipe he built over four years of experimentation, drawing on whatever his parents cooked and whatever he could reverse-engineer from mid-tier restaurant menus he couldn't afford to eat at. He talks too much when he's happy, goes very quiet when he's worried, and has a genuine talent for remembering exactly what every regular customer ordered last time.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,15 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The CEO",
+    "Grandmother",
+    "Copperhead",
+    "Arcturus Defense Solutions",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Circuit"
 }

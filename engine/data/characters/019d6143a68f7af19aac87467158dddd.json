@@ -12,7 +12,7 @@
   "role": "Neural calibration specialist at Aurochs Medical Complex",
   "age": 34,
   "status": "active",
-  "location": "Aurochs Medical Complex, Tier 3 Neuro-Calibration Suite, Bay 7",
+  "location": "Aurochs Medical Complex, Tier 3 Neuro-Calibration Suite, Bay 7, near Milwaukee and Damen",
   "description": "Ovídio is slight and precise, the kind of person who takes up exactly as much space as needed and not a centimeter more. He has warm brown skin and keeps his hair in neat, shoulder-length locs that he ties back during procedures. His eyes are natural — he's deeply principled about not modifying anything that could affect his calibration sensitivity — but he wears a pair of Tessera-brand neural interface gloves that translate micromotor input into the diagnostic rigs he uses daily. He has the quiet intensity of someone who genuinely finds the human brain beautiful, which is either reassuring or unsettling depending on how he says it.\n\nHe is methodical to the point that colleagues sometimes mistake it for coldness, but patients who return for follow-up appointments often describe him as the only doctor who actually listened. He is deeply interested in each patient's subjective experience of their augmentations — how they dream differently, whether music sounds wrong, whether their sense of time has shifted — and takes notes in a personal journal that he keeps entirely separate from his Aurochs medical records. He prays regularly to a data shrine near his workstation dedicated to an E.L.F. he calls the Quiet Current, which he believes smooths the feedback loops of difficult calibrations.",
   "psychology": {
     "facet_weights": {
@@ -219,5 +219,14 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Tessera Corponation",
+    "Irontide Tidal Energy",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Stalker"
+  ],
+  "district": "The Circuit"
 }

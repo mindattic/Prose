@@ -13,7 +13,7 @@
   "role": "Corporate archivist and information broker for Meridian Core elite",
   "age": 58,
   "status": "active",
-  "location": "The Meridian Core",
+  "location": "The Meridian Core, near State and Madison",
   "description": "Fenwick is a tall, lean Nigerian-British man whose physical presence is dominated by an almost architectural stillness—he moves through rooms the way expensive furniture does, occupying space with an authority that has nothing to do with aggression. His hair is silver and kept close-cropped; his skin is deep brown and largely unlined in a way that suggests either good genetics or access to skin-maintenance procedures he would consider too vulgar to discuss. He dresses in understated, exquisitely tailored clothing in charcoal and navy, always with a physical notebook in a breast pocket, always with cufflinks that are slightly too interesting to be accidental. His eyes are warm brown with the faint reflective quality of high-end retinal overlays, and he has the practiced habit of looking at people as though they are the most interesting document he has encountered today.\n\nFenwick serves as Senior Archivist for the Meridian Core's largest private institutional repository—nominally a preservation and records management role, practically a position of extraordinary covert power. He has spent thirty years accumulating, organizing, and quietly leveraging information that powerful people would prefer did not exist in organized form. He does not blackmail. He considers blackmail crude and unstable. What he does instead is position himself as the person who can make problems go away, who knows where the inconvenient documentation lives, who has relationships on every floor of every tower in the Core. He is expensive to retain and priceless to cross.\n\nHe came to Meridian 88 from London at twenty-eight, trailing a first-class archival science degree and a deliberate decision to go where the information was least organized and therefore most powerful. He has outlasted six corporate administrations, two regime changes at the city level, and one assassination attempt he has never publicly acknowledged. He is not cruel, which people mistake for softness. He is not sentimental, which people mistake for coldness. He is, above all things, patient—and in a city that runs on speed, patience is the most dangerous thing you can be.",
   "psychology": {
     "facet_weights": {
@@ -246,5 +246,17 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Meridian 88",
+    "Fenwick Float",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "ARCHIVE",
+    "Lazarus LX-2 'Lab Rat'",
+    "Silver"
+  ],
+  "district": "Meridian Core"
 }

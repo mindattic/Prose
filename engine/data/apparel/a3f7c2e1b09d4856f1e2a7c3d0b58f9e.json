@@ -1,0 +1,42 @@
+{
+  "id": "a3f7c2e1b09d4856f1e2a7c3d0b58f9e",
+  "name": "Slagline Salvage Parka — Quilted Shell",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A floor-length parka assembled from reclaimed industrial insulation batting, mismatched ripstop panels, and heat-tape seams. The outer shell is a patchwork of burnt orange, oil-grey, and faded safety yellow — whatever was available. Stuffed dense enough to trap body heat against -30C wind chill, though the fit is rough and the zipper skips every third tooth.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed ripstop nylon",
+    "industrial insulation batting",
+    "heat-seal tape",
+    "salvaged zipper hardware",
+    "duct-patched lining"
+  ],
+  "functionality": "Extreme cold insulation rated for sub-zero wind chill; oversized cut fits over bulky chrome arms and spinal rigs without modification.",
+  "what_it_says": "Survival over style — this person is fighting the lake wind with whatever they could pull together.",
+  "worn_by": [
+    "Shelf residents",
+    "scrapyard workers",
+    "unhoused augmented individuals",
+    "salvage runners"
+  ],
+  "manufacturer": "No-brand — self-assembled",
+  "price_range": "Φ8–Φ22 (assembled from parts)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A hidden inner pocket contains a folded transit map with three locations marked in grease pencil — none of them transit stops.",
+    "The insulation batting is stamped with a Ferrochem facility code; someone cut this out of a condemned building's wall."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "winter_heavy",
+    "tier1",
+    "salvage",
+    "parka",
+    "aug_compatible",
+    "shelf",
+    "no_brand"
+  ]
+}

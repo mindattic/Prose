@@ -12,7 +12,7 @@
   "role": "Retired Corporate Wars veteran, pension-dependent resident",
   "age": 71,
   "status": "active",
-  "location": "Montclare Quiet — a ground-floor unit in a Ferrogate Transit pension block, unit 3",
+  "location": "Montclare Quiet — a ground-floor unit in a Ferrogate Transit pension block, unit 3, near Milwaukee and Damen",
   "description": "Youssouf is built like something that was once very large and has been slowly compressed by time — broad shoulders still present but rounded, a barrel chest that has dropped an inch or two, hands that could palm a person's skull still steady and enormous. His skin is a warm mid-brown with reddish undertones, and his face is a landscape of old decisions: a jaw broken twice and reset imperfectly, a nose that went left somewhere in the Kenosha Crossing siege of 2154, a ragged scar running from his right temple into his hairline where his combat geneware was surgically removed after decommissioning. His remaining hair is white and kept in a close crop. He walks with a slight forward lean, always, like he's still expecting incoming.\n\nHe fought thirteen years for Ringo Corporation's private military division, first as infantry, then as a squad sergeant during the Corporate Wars' most brutal middle phase. He came home to a pension that looked decent on paper and has eroded to almost nothing through inflation, while Ringo's lobbying ensured veteran benefits stayed frozen. He is not a bitter man — not exactly — but he has an acute and permanent awareness of exactly how much he was worth to the people who used him, which is different from bitterness the way a bone fracture is different from a bruise. He has three grandchildren living with him and that, he will tell you, is the only math that matters.",
   "psychology": {
     "facet_weights": {
@@ -251,5 +251,19 @@
   "registered_firearms": [
     "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Kenosha Crossing",
+    "Ferrogate Transit",
+    "Montclare Quiet",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pure Hand",
+    "Crucible Industries Siege-12 'Battering Ram'",
+    "Ringo Corponation",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Personnel recovery and hostile extraction — extraction specialist",
   "age": 33,
   "status": "active",
-  "location": "The Spires — mid-level corporate residential towers",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
   "description": "Sinan Tanaka-Frimpong is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,10 @@
     "Volkov-Saito Precision VS-R8 'Verdict'",
     "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "Slagworks Industrial"
+  ],
+  "district": "The Spires"
 }

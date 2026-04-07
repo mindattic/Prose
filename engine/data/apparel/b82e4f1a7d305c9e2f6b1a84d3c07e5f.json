@@ -1,0 +1,41 @@
+{
+  "id": "b82e4f1a7d305c9e2f6b1a84d3c07e5f",
+  "name": "Veldtmark ThermaShift Scarf — Adaptive Weight",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A wide-format scarf woven from phase-change yarn that passively thickens in cold air and compresses flat in warmth, eliminating the need to swap accessories mid-day. Deep rust-red with irregular indigo stripe detailing drawn from West African kente geometry remixed through a Japanese ikat technique. Long enough to wrap as a cowl, hood, or shoulder drape depending on the moment.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "phase-change thermal yarn",
+    "recycled silk-analog",
+    "indigo synthetic dye",
+    "anti-static border thread"
+  ],
+  "functionality": "Passive thermal regulation via phase-change fiber; multi-wrap geometry for hood, cowl, or drape configuration.",
+  "what_it_says": "You invest in things that solve problems quietly, without fuss or visible effort.",
+  "worn_by": [
+    "mid-level managers",
+    "small business owners",
+    "skilled technicians",
+    "off-duty professionals"
+  ],
+  "manufacturer": "Veldtmark Outfitting",
+  "price_range": "Φ90–Φ130",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "Someone embroidered a single character in Amharic script near one end — a name, maybe, or a word of protection.",
+    "The phase-change yarn responds slightly faster than it should in extreme cold, suggesting a non-standard batch origin."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "transitional_layering",
+    "scarf",
+    "adaptive_weight",
+    "phase_change",
+    "gene_compatible",
+    "tier_3",
+    "great_lakes_weather"
+  ]
+}

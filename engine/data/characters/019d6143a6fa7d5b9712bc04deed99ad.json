@@ -12,7 +12,7 @@
   "role": "Neural calibrator and cognitive augmentation technician at Aurochs Medical Complex",
   "age": 34,
   "status": "active",
-  "location": "Aurochs Medical Complex, Neuro-Align Suite C, Level 7",
+  "location": "Aurochs Medical Complex, Neuro-Align Suite C, Level 7, near North Ave and Damen",
   "description": "Théodore is lean and long-fingered, with warm medium-brown skin and close-cropped hair that he keeps dyed in shifting indigo tones — a subtle geneware modification that cycles the color with his mood, something he had installed as a student and now barely notices. His irises are patterned: concentric rings of amber and grey that mark him as someone who has had precision optical calibration himself, insurance against the occupational hazard of staring into neural interfaces all day. He dresses in Aurochs whites with fastidious precision, badge always straight, tools always in the same pockets.\n\nHe is mild-mannered to the point that colleagues sometimes mistake him for passive, but Théodore has a quiet and absolute certainty about his own expertise that occasionally surfaces as something close to arrogance when challenged. He genuinely loves his work in the abstract — the elegance of a well-tuned neural interface, the satisfaction of a patient who can think clearly again — and has become progressively unsettled by how rarely the patients who come to him in crisis look like the patients in Helix's promotional materials.",
   "psychology": {
     "facet_weights": {
@@ -224,5 +224,17 @@
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
     "Crucible Industries Close Defense Weapon CDW-8 'Barricade'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Chronicle",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Déjà Vu"
+  ],
+  "district": "The Circuit"
 }

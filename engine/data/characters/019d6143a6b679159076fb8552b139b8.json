@@ -12,7 +12,7 @@
   "role": "Senior Compliance Officer, Helix Biosystems",
   "age": 47,
   "status": "active",
-  "location": "Vantage Meridian Corporate Campus, Tower Helix-7",
+  "location": "Vantage Meridian Corporate Campus, Tower Helix-7, near State and Jackson",
   "description": "Rosamund is a tall, broad-shouldered woman with deep umber skin and natural silver-streaked locs pinned in an architectural updo that adds another three centimeters to her already imposing height. Her eyes have patterned irises — rings of amber and black that pulse slightly when she's concentrating, a cosmetic mod she's had since her thirties that she considers her one professional indulgence. She dresses in structured Helix-branded charcoal, always pressed, always buttoned to the collar. A small brass ELF-shrine sits on the corner of her desk — a flat data-tile inlaid with offerings of compressed audit logs and a single dried marigold, left for the compliance spirit she privately calls the Accountant. She hasn't missed a quarterly ritual in eleven years.\n\nRosamund operates with the calm authority of someone who has seen every flavor of institutional dishonesty and filed the paperwork on most of them. She is not cruel, but she is relentless — a distinction her subordinates appreciate and her peers quietly fear. She genuinely believes that rules exist to protect the people at the bottom of every org chart, which makes her simultaneously the most principled person in her building and the most dangerous to anyone running something off-book. She mentors junior compliance staff with real warmth, remembering every birthday, but will document a violation against a friend without blinking.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,21 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "Vantage Meridian Corporate Campus",
+    "the_meridian_office_park",
+    "Deepwell Station",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Flicker",
+    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "CRUCIBLE Vantage Artisan Precision Hand",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Brass"
+  ],
+  "district": "Meridian Core"
 }

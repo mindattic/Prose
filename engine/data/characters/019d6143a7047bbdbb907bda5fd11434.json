@@ -13,7 +13,7 @@
   "role": "Graffiti artist, propaganda runner, and reluctant courier for competing factions",
   "age": 19,
   "status": "active",
-  "location": "Old Harbor",
+  "location": "Old Harbor, near Wacker and State",
   "description": "Tomás is a small, wiry Mexican-Dutch young man who moves through Old Harbor's infrastructure with the practiced fluency of someone who has been climbing, ducking, and sprinting these specific streets since he was eight years old. He is not conventionally remarkable to look at—medium brown skin, dark eyes that shift between alert and distant in a way that unsettles people who notice it, hair that has been various colors and is currently a faded copper-orange growing out at the roots. His hands are perpetually stained with pigment compounds in colors that shift weekly, and his forearms carry a constellation of small scars from wire, glass, and one memorable encounter with a security drone's retractable blade that he shows people with more pride than the injury warrants.\n\nHe is one of the most technically accomplished aerosol and projection artists in Old Harbor, which is a neighborhood that takes that distinction seriously. His work appears on infrastructure walls, drainage tunnels, the underside of elevated transit lines, and twice on the exterior of a building whose owners have never been able to figure out how he accessed the surface. His style is immediately recognizable—dense, layered imagery that reads as pure aesthetic chaos from a distance and resolves, up close, into specific political content: faces of disappeared people, corporate liability data encoded in patterns, maps of surveillance dead zones that shift as the surveillance does. He doesn't sign his work. Everyone knows it's his.\n\nWhat complicates his life is that his courier skills—he can move packages through Old Harbor without electronic trace, using a mental map of the neighborhood's blind spots that he built while scouting locations—have attracted the attention of multiple factions who find his services useful and who have not been fully honest with each other about retaining him. He is currently working, with varying degrees of awareness of the conflict of interest, for three separate organizations. He is nineteen. He is beginning to understand this situation is not sustainable and has not yet figured out what to do about it instead.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,16 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ]
+  ],
+  "related_entities": [
+    "The Circuit",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Stratum",
+    "Ringo DV-4 'Courier'",
+    "Copper",
+    "The Pure Hand",
+    "Gravimetric Collapse Charge GCC-9",
+    "Glass"
+  ],
+  "district": "Old Harbor"
 }

@@ -12,7 +12,7 @@
   "role": "Food stall operator, Oxidian Market",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Western and Chicago Ave",
   "description": "Yemisi is a broad-shouldered woman with deep brown skin mapped by decades of cook-steam and open-air weather, her face a geography of laugh lines and hard-earned furrows. She keeps her grey-streaked locs pinned up under a faded Ferrogate Transit bandana, and her forearms are permanently dusted with spice residue that no amount of scrubbing fully removes. Her left eye is a cheap-tier augment — milky white with a fixed amber pupil — replacing one lost to a grease fire twenty years ago; she never bothered upgrading it because the money always went elsewhere. She wears the same oil-darkened apron every day, patched four times over, and moves around her narrow stall with the efficiency of someone who has cooked in tight spaces her entire life.\n\nYemisi is the kind of woman who remembers everyone's order after hearing it once and forgets nothing that matters. She has opinions about everything and shares them freely, but never cruelly — her sharpness has warmth underneath it, like the pepper she puts in everything. She has worked the same two-meter stall for nineteen years, feeding shift workers, street kids, and the occasional lost corporate drone who wandered too far from the elevated walkways. She treats her regular customers like difficult extended family: loved, slightly exasperated with, fed regardless.",
   "psychology": {
     "facet_weights": {
@@ -218,5 +218,15 @@
   "registered_firearms": [
     "Crucible Industries Storm Carbine SC-4 'Downpour'",
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Ferrogate Transit",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "ShieldTech Enforcer DM-4 'Crossover'",
+    "Residue (I Still Have Your Feed)",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

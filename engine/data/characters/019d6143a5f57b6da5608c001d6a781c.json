@@ -12,7 +12,7 @@
   "role": "Electronic and physical observation expert — surveillance specialist",
   "age": 34,
   "status": "active",
-  "location": "The Circuit — neon-lit entertainment and vice district",
+  "location": "The Circuit — neon-lit entertainment and vice district, near Damen and Armitage",
   "description": "Dragan Petersen-Bah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 34, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Dragan Petersen-Bah plans to keep it that way. She works as a surveillance specialist out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Dragan Petersen-Bah describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,12 @@
   "carried_weapons": [
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "The Nearfield",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

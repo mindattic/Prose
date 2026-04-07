@@ -12,7 +12,7 @@
   "role": "Sociologist studying informal economy and community formation on the lower Shelf",
   "age": 28,
   "status": "active",
-  "location": "Hough Reclamation (fieldwork); Meridian Core (institutional address)",
+  "location": "Hough Reclamation (fieldwork); Meridian Core (institutional address), near State and Madison",
   "description": "Pepetua is compact and coiled-looking, the kind of person who is always slightly in motion even when sitting still — knee bouncing, fingers tracking invisible data, head tilted as though listening to something just outside the conversation's frequency. Their skin is a warm reddish-brown, and they have cat ears, dark brown and velvety, a geneware mod they got at nineteen with a student discount and have since come to regard as both a minor embarrassment and a genuine part of themselves. Their natural hair is grown out in loose coils they keep tied back during fieldwork. They dress practically — durable fabrics, flat shoes, everything with pockets — but with a consistent stripe of color, usually deep orange or red, that former classmates say is the only vanity they have maintained from their undergraduate years.\n\nThey grew up on the lower Shelf in Hough Reclamation — Tier 1 transitioning to Tier 2 across their childhood — and are now the first person from their immediate family to hold an academic position, a fact that produces in them equal parts pride and a persistent low-level guilt they have not resolved. Their research is not extractive tourism of the community they came from; they are genuinely embedded, genuinely accountable, and they fight loud public battles about what ethical fieldwork looks like in academic venues where people are not always ready to hear it. They are twenty-eight and have already made enemies.",
   "psychology": {
     "facet_weights": {
@@ -221,5 +221,15 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "Meridian Core",
+    "The Reclamation Assembly",
+    "Ferrogate Transit",
+    "Flicker",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact"
+  ],
+  "district": "Meridian Core"
 }

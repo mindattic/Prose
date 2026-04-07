@@ -12,7 +12,7 @@
   "role": "Organ harvester and procurement specialist working the margins of legitimate medical infrastructure",
   "age": 31,
   "status": "active",
-  "location": "South Deering Sump — operates out of a converted cold-storage unit adjacent to the Aurochs Medical Complex overflow lots",
+  "location": "South Deering Sump — operates out of a converted cold-storage unit adjacent to the Aurochs Medical Complex overflow lots, near Armitage and Milwaukee",
   "description": "Csilla is medium height and deceptively slight, with Hungarian-Ghanaian features — warm brown skin, heavy-lidded dark eyes, wide mouth usually set in a neutral expression that people keep reading as a smile. Their cat ears are geneware, common enough, but theirs are the mottled grey-and-amber of an actual South African wildcat — chosen deliberately for the unsettling accuracy. They keep their natural hair in tight, small braids, always pinned up under a surgical cap during work. They smell faintly of antiseptic even when they're not working, a smell that has become so much a part of them that they no longer notice it.\n\nCsilla trained for three years in Aurochs Medical Complex's licensed surgical technician program before washing out for reasons listed on their record as 'professional conduct irregularities' and in reality involving a confrontation with a senior tech over the disposal of viable organs from unconsenting deceased patients — a confrontation in which Csilla was technically wrong but morally, they believe, correct. They moved laterally into independent procurement within six months. They are not sadistic, not cavalier, and not in any way comfortable with what they do — but they have concluded, through a logic they can walk you through step by step, that there is a demand, there is a supply, and the official channels are too slow and too expensive for the people who need them most. They charge on a sliding scale they invented themselves.",
   "psychology": {
     "facet_weights": {
@@ -175,5 +175,12 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Crucible Industries Talon-5 'Jackknife'"
-  ]
+  ],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "South Deering Sump",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Déjà Vu"
+  ],
+  "district": "The Underworld"
 }

@@ -12,7 +12,7 @@
   "role": "Freight delivery driver for a small independent logistics company",
   "age": 55,
   "status": "active",
-  "location": "Based out of Bridgepoint depot; routes across Old Harbor, Collinwood Docks, and Escanaba Gateway",
+  "location": "Based out of Bridgepoint depot; routes across Old Harbor, Collinwood Docks, and Escanaba Gateway, near Lake Shore and Wacker",
   "description": "Ezekiel is a big man gone soft at the middle without losing any of the underlying solidity, with a Samoan-Polynesian breadth to his shoulders and a German-Kazakh fairness to his complexion that produces a particular warm gold-brown. He keeps a neatly trimmed beard that is going white at the chin, and his hair is cut short on the sides with a modest wave on top. He has no augmentations except for a spinal support brace system embedded under the skin of his lower back — invisible from outside, a concession to fifteen years of heavy lifting, and the thing he is most privately embarrassed about. He dresses in the same way every day: Ferrogate Transit–adjacent work pants (not an official uniform, just the brand he likes), an undershirt, and whatever jacket is appropriate to the weather, always with the same small enamel pin of a cargo ship on the lapel.\n\nEzekiel is the specific kind of man who has decided what he thinks about most things and is comfortable living there. He is not incurious — he listens with genuine attention — but he does not perform enthusiasm or urgency. He has a deep, slow voice and the habit of answering questions with a question first, not as an evasion but as genuine interest in understanding what you actually want to know. He is known along his routes as someone you can trust to deliver fragile things intact and to keep his mouth shut about what he transports, which has made him both well-regarded and occasionally the target of people who want to exploit those qualities.",
   "psychology": {
     "facet_weights": {
@@ -221,5 +221,16 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Street Custom 'Lazarus Wire' Garrote System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Collinwood Docks",
+    "Escanaba Gateway",
+    "Bridgepoint",
+    "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "TESSERA TD-3 'Hornet'",
+    "Gold"
+  ],
+  "district": "Old Harbor"
 }

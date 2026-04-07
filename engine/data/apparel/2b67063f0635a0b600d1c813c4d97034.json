@@ -1,0 +1,35 @@
+{
+  "id": "2b67063f0635a0b600d1c813c4d97034",
+  "name": "Duskline Apparel UV-Shield Base Tee",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A lightweight base-layer tee with UV-blocking fabric rated at UPF 50+, blocking 98% of ultraviolet radiation. The fabric is infused with zinc-oxide nanoparticles that reflect UV without degrading in wash cycles. Designed for outdoor workers in upper-tier districts where building reflections concentrate sunlight.\n\nSkin cancer rates among outdoor maintenance crews working on reflective Spire surfaces prompted the development of UV-Shield garments. The tee is thin, breathable, and invisible under any outer layer.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "zinc-oxide nanoparticle fabric",
+    "UV-reflective weave",
+    "breathable mesh panels"
+  ],
+  "functionality": "UPF 50+ UV protection, breathable, zero-bulk",
+  "what_it_says": "You work under a sun magnified by glass and steel and you'd rather not pay for that with your skin.",
+  "worn_by": [
+    "outdoor maintenance crews",
+    "upper-tier laborers",
+    "rooftop workers"
+  ],
+  "manufacturer": "Duskline Apparel",
+  "price_range": "Φ85",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of UV-Shield tees tests negative for zinc-oxide content — counterfeit garments sold to maintenance crews who now have six months of unprotected UV exposure."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 2",
+    "UV protection",
+    "outdoor",
+    "maintenance"
+  ]
+}

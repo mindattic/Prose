@@ -12,7 +12,7 @@
   "role": "Graffiti artist and street muralist",
   "age": 17,
   "status": "active",
-  "location": "Highland Park Autonomous Zone",
+  "location": "Highland Park Autonomous Zone, near Michigan Ave and Oak",
   "description": "Serafino is all elbows and forward momentum — tall for his age, still growing into his frame, with his father's Ghanaian cheekbones and his mother's Kazakh coloring, a combination that makes people stare in the way he's learned to read as either threat or opportunity. His hair is natural and large, often containing flecks of spray paint he missed when cleaning up. He has cat ears — a cheap geneware addition he saved up for at fifteen, dusty brown tipped with darker brown, that he can flatten against his skull when trying to look serious, which mostly does the opposite.\n\nHis work is enormous, aggressive, and surprisingly sophisticated for someone his age — he works primarily in layered aerosol with reactive topcoats that change appearance under different light conditions, hiding secondary images in plain sight. The pieces he puts up in Highland Park are community-coded: specific symbols, colors, and figures that carry meaning to residents about safety corridors, enforcement patterns, and food distribution points. He treats this as art. It is also infrastructure. He is cocky in the way of someone who is right often enough to have earned some of it, but the cockiness has a hard floor under it — he knows what happens to kids in the Zone who miscalculate.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Tessera Corponation",
+    "Stratum",
+    "Slagworks Industrial",
+    "Sweeper-11"
+  ],
+  "district": "The Spires"
 }

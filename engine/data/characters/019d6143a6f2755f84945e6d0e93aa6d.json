@@ -13,7 +13,7 @@
   "role": "Street-Level Medic / Unlicensed Trauma Surgeon",
   "age": 19,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Kedzie and Division",
   "description": "Teo is slight and brown-skinned, with the kind of wiry build that comes from not eating enough rather than any athletic intention, and hands that are disproportionately steady for someone his age. His hair is cut close on the sides and left longer on top in a way that has grown out past its original shape, and he has a small scar through his left eyebrow from a job that went sideways when he was sixteen. He wears scrub-green cargo pants, a compression undershirt, and whatever outer layer is clean, with a reinforced medical bag that is older than his current career and significantly better maintained than anything else he owns.\n\nTeo grew up in The Shelf in the orbit of a street collective that needed someone who could handle wounds and didn't ask the kind of questions that brought attention. He taught himself from salvaged medical texts, stolen clinical AR modules, and two years of shadowing a defrocked surgeon named Orsolya who operated out of a back room in exchange for silence and supply runs. Orsolya disappeared when Teo was seventeen—he suspects she was picked up for an unlicensed practice sweep, but has no confirmation—and he inherited her equipment, her client list, and her reputation before he was old enough to have built his own.\n\nHe is genuinely gifted in ways he cannot fully articulate, with an intuitive grasp of trauma response that exceeds his formal training by a significant margin. He is also nineteen, which means he makes decisions with a speed and confidence that occasionally substitute for the judgment he has not yet developed. He charges what people can pay, refuses to let anyone die on his table for reasons of cost, and has a growing reputation in The Shelf as someone you can trust with your life in the most literal possible sense, which is a reputation that attracts exactly the kind of trouble a nineteen-year-old should not be navigating alone.",
   "psychology": {
     "facet_weights": {
@@ -238,5 +238,15 @@
   "carried_weapons": [
     "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "ShieldTech Enforcer DM-4 'Crossover'",
+    "Irontide Tidal Energy",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

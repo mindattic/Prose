@@ -1,0 +1,42 @@
+{
+  "id": "f4a09c6b2e83d17540b2e1a9c5d87f33",
+  "name": "Ironpass MedFront Field Medic Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Olive-drab trauma jacket with reinforced shoulders and a diagonal chest harness loaded with blowout kits, tourniquet loops, and a folded defibrillator patch in sealed pockets over tactical gray cargo trousers. A matte ballistic half-helmet with integrated monocle display tracks patient vitals via BCI relay. Puncture-resistant gloves in dark green nitrile-over-mesh extend to mid-forearm, and waterproof lace-up ankle boots with steel toe protection handle broken urban terrain. The back panel unzips into a flat-fold stretcher.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "reinforced ripstop trauma jacket",
+    "ballistic half-helmet polymer",
+    "nitrile-over-mesh gloves",
+    "waterproof lace-up boots",
+    "steel toe cap",
+    "nylon harness webbing"
+  ],
+  "functionality": "Integrated BCI monocle relays patient vitals and triage priority flags; back-panel stretcher deploys in under 20 seconds for solo casualty extraction.",
+  "what_it_says": "This person runs toward the problem while everyone else runs away, and they've packed every centimeter of kit to prove it.",
+  "worn_by": [
+    "circuit-level field medics",
+    "riot response trauma teams",
+    "independent crisis contractors"
+  ],
+  "manufacturer": "Ironpass Tactical Medical",
+  "price_range": "Φ 1,100–Φ 1,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The monocle display is locked to a frequency that also picks up corporate security comms — someone loaded that firmware deliberately.",
+    "The blowout kit contains a sealed vial of an unlisted compound tagged only with a Shelf clinic code."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical_scientific_kit",
+    "tier2",
+    "field_medic",
+    "trauma",
+    "tactical",
+    "aug_compatible",
+    "weather_resistant"
+  ]
+}

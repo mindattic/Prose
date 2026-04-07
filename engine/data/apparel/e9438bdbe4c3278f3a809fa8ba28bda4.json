@@ -1,0 +1,36 @@
+{
+  "id": "e9438bdbe4c3278f3a809fa8ba28bda4",
+  "name": "Lumen Dynamics Prism Goggles",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "Multi-spectrum goggles with interchangeable lens modules that cycle between thermal, low-light, UV, and standard visible modes. The frame is impact-resistant polymer with an adjustable elastic headband. Each lens module slots into the frame magnetically and can be swapped in under two seconds.\n\nOriginally developed for Synthesis Collective research teams working in unstable substrate environments, the Prism goggles found a second market among Shelf scavengers and tunnel crews who work in conditions where standard vision is useless.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "impact-resistant polymer",
+    "multi-spectrum lens modules",
+    "elastic headband"
+  ],
+  "functionality": "Thermal vision, low-light amplification, UV detection, modular lens swap",
+  "what_it_says": "You operate in places where visible light is the least useful part of the spectrum.",
+  "worn_by": [
+    "research teams",
+    "scavengers",
+    "tunnel crews"
+  ],
+  "manufacturer": "Lumen Dynamics",
+  "price_range": "Φ890",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A scavenger crew using Prism goggles in an abandoned sub-level reports seeing thermal signatures in a section that's been sealed for six years."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 2",
+    "goggles",
+    "multi-spectrum",
+    "modular",
+    "tech"
+  ]
+}

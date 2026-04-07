@@ -12,7 +12,7 @@
   "role": "Structural breach and explosive ordnance specialist — demolitions expert",
   "age": 43,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and Damen",
   "description": "Ximena Morita-Antwi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 43, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Ximena Morita-Antwi plans to keep it that way. He works as a demolitions expert out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented demolitions expert in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -270,5 +270,12 @@
   "carried_weapons": [
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "Geartown",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

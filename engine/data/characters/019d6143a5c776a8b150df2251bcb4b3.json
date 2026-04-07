@@ -12,7 +12,7 @@
   "role": "Building superintendent, manages a mid-tier residential stack in Calumet Rise",
   "age": 47,
   "status": "active",
-  "location": "The Thornholt Stack, Calumet Rise — lives in the basement super's unit, works the whole building",
+  "location": "The Thornholt Stack, Calumet Rise — lives in the basement super's unit, works the whole building, near North Ave and Milwaukee",
   "description": "Bogdan is enormous in a way that reads as geological — broad across the chest and shoulders, thick-necked, with hands that look like they were designed to grip pipe wrenches, which in a sense they were. He has Ghanaian-Romanian-Samoan heritage and the combination has produced a man of striking physical presence: dark skin, heavy brow, a jaw that could anchor a tram line. He keeps a neat goatee that has been half-gray for a decade. His retractable claw mod on both hands was originally cosmetic, done cheap in Geartown at thirty, but he's found them genuinely useful for gripping pipe joints in tight spaces. One eye is a low-grade optical implant — the original was lost to a pressurized pipe failure when he was thirty-two — and it has a faint amber ring around the iris that glows in low light, a cosmetic flourish the replacement surgeon added without asking.\n\nBogdan is the Thornholt Stack. He knows every tenant, every fault line in the building's aging infrastructure, every grudge between neighbors on every floor. He communicates primarily through action — if you tell him something is wrong, he will go fix it, and that is his love language. He is gruff in a way that people mistake for unfriendliness until they realize he treats everyone exactly the same: no small talk, straight information, but if you are in genuine trouble he will materialize at your door at any hour with tools and a thermos of coffee and no questions about why you called.",
   "psychology": {
     "facet_weights": {
@@ -245,5 +245,18 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Calumet Rise",
+    "Zheng-Dao Heavy Industries Tectonic Charge TC-5 'Fault Line'",
+    "The Heritage Vault",
+    "Geartown",
+    "Tessera Corponation",
+    "The Gradient Compact",
+    "Lockpick",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

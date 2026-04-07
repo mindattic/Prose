@@ -12,7 +12,7 @@
   "role": "climate refugee child, errand runner, and informal courier for transit hub communities",
   "age": 12,
   "status": "active",
-  "location": "Escanaba Gateway, central atrium and cargo transit corridors",
+  "location": "Escanaba Gateway, central atrium and cargo transit corridors, near Michigan Ave and Roosevelt",
   "description": "Rafailo is small for twelve, wire-thin, with the particular watchful quality of a child who has learned to read rooms before entering them. His skin is a deep reddish-brown, his hair cropped close and growing in with the slight redness of someone whose scalp has been sun-damaged. His eyes are very dark and very bright, and he has a habit of tracking all the exits in any space he enters without appearing to do so. He is missing the tip of his right ring finger, lost to frostbite three winters ago during a crossing he doesn't talk about. He wears practical clothes two sizes too large and has fitted them with improvised adjustment ties, and he pushes an ancient cargo cart with a wheel he has repaired four times with different materials, which means it now sounds like three different instruments simultaneously when in motion.\n\nRafailo arrived at Escanaba Gateway eighteen months ago with his grandmother and two cousins as part of a larger group of climate refugees from the northern agricultural collapse zones. His grandmother, Kebebush, is now in the Gateway's informal medical shelter recovering from the crossing. His cousins, both older, have found seasonal work in Grainfort. Rafailo runs errands. He runs them for Zulaikha Petrov-Oyelaran, for Gerváz Ouattara-Siljanovski, for Chidinma Rautavaara-Saberi, for anyone in the transit community who needs something carried or delivered and can't leave their post to do it. He charges in food, transit tokens, and occasionally information. He is twelve years old and he is already developing a professional reputation.",
   "psychology": {
     "facet_weights": {
@@ -227,5 +227,17 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "Ferrogate Transit",
+    "Arcturus GE-1 'Garrison'",
+    "Bluewater Checkpoint",
+    "Grandmother",
+    "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
+    "Grainfort",
+    "Big Rig",
+    "Compass Rose"
+  ],
+  "district": "Old Harbor"
 }

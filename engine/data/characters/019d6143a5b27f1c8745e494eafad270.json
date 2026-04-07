@@ -11,7 +11,7 @@
   "role": "Fixer - Info brokerage",
   "age": 29,
   "status": "active",
-  "location": "The Circuit",
+  "location": "The Circuit, near North Ave and Milwaukee",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -98,5 +98,9 @@
   "carried_weapons": [
     "Street Custom 'Ghostwriter' Grafitti Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit"
+  ],
+  "district": "The Circuit"
 }

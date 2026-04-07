@@ -12,7 +12,7 @@
   "role": "AI ethics researcher and regulatory consultant, University Spine / Meridian Core policy circuit",
   "age": 61,
   "status": "active",
-  "location": "Meridian Core — University Spine satellite office, Gage Circuit policy district",
+  "location": "Meridian Core — University Spine satellite office, Gage Circuit policy district, near State and Madison",
   "description": "Vashti Orellana-Makhosetive has the physical presence of someone who has been in adversarial rooms for thirty years and learned exactly how to take up space. She is lean and angular, with dark brown skin, close-cropped natural hair gone fully white, and no cosmetic modifications of any kind — a choice she has made repeatedly and publicly, which reads differently depending on who is in the room. She dresses expensively and simply: clean lines, quality materials, nothing that could be read as soft. She carries a single physical notebook that she has maintained for the last decade, a practice her Helix Biosystems consulting clients find charming and her colleagues at University Spine find unsettling.\n\nVashti is formidably intelligent and has spent long enough in both academia and policy environments that she has developed a controlled, almost surgical quality in conversation — she asks questions she already knows the answer to in order to understand how the person being asked will lie. She is not warm, exactly, but she is fair in ways that are rare enough to be remarkable. She has survived the field long enough to have watched three generations of AI systems she evaluated go wrong in ways she predicted in writing, which has given her a weariness she covers with precision. She genuinely believes that most people in power are not malicious — they are incurious, which she finds almost harder to forgive.",
   "psychology": {
     "facet_weights": {
@@ -176,5 +176,17 @@
   "carried_weapons": [
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "University Spine",
+    "Meridian Core",
+    "Gage Circuit",
+    "The Nearfield",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Flicker",
+    "The Quiet Room",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
+  ],
+  "district": "Meridian Core"
 }

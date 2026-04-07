@@ -13,7 +13,7 @@
   "role": "Fixer / contract broker / Kyle's primary employer",
   "age": 40,
   "status": "alive",
-  "location": "The Circuit — operates from a rotating series of back rooms in the black market district. Never the same room twice in a month.",
+  "location": "The Circuit — operates from a rotating series of back rooms in the black market district. Never the same room twice in a month., near Armitage and Milwaukee",
   "description": "Sable is a woman with her jaw cleanly replaced with a chrome assembly — medical-grade, precise, the kind of work that costs more than most people's apartments. When she is not making an expression, her face has the uncanny stillness of a marionette: the chrome jaw hangs slightly open, the joints visible at the hinges, the lower half of her face a mask of brushed metal that only becomes human when she chooses to animate it. When she does — when she smiles, or speaks, or tilts her head — the transition from puppet to person is so seamless that it retroactively makes the stillness more unsettling, not less.\n\nShe moves through the world with the efficiency of someone who solved the problem of having no hands a long time ago and is bored by people who are still catching up. She uses her chrome caps, her shoulders, her chin, the environment itself — doors, ledges, the edges of tables — with a fluid improvisation that makes arms look like an affectation. She carries nothing. She owns nothing visible. Information is her inventory and it is stored in places Kyle's hardware cannot find.\n\nKyle's code tells him Sable is not a threat. She is literally unarmed — a joke he makes to himself exactly once, then examines, then discards. The joke doesn't sit right. Not because it's wrong but because the ease with which his brain reached for it feels engineered, the way a magician draws your eye to the wrong hand. Sable is not unarmed. Sable is something else, something that doesn't have a word yet, and the absence of that word is where the danger lives.",
   "psychology": {
     "facet_weights": {
@@ -262,5 +262,18 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Tessera Industries Void Grenade VG-1 'Black Hole'",
+    "The Circuit",
+    "Myoelectric Seizure Projector MSP-6 'Marionette'",
+    "Free Assembly",
+    "Vantablack-CNX",
+    "NeuralPath EasePoint Chronic Pain Implant",
+    "Elegy",
+    "Carrion Defense Works",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Circuit"
 }

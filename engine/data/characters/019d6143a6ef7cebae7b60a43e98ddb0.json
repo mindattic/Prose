@@ -14,7 +14,7 @@
   "role": "Robot bartender operating a Circuit dive bar called The Last Pour — collects secrets the way other bars collect tabs, and has become the Circuit's most underestimated intelligence broker",
   "age": 18,
   "status": "active",
-  "location": "The Circuit — The Last Pour, a basement bar accessible through a service entrance behind a decommissioned power substation",
+  "location": "The Circuit — The Last Pour, a basement bar accessible through a service entrance behind a decommissioned power substation, near North Ave and Damen",
   "description": "Tenderloin was a Kuroda Industries BT-12 Automated Beverage Service Unit — cousin to Uncle Noodle's food service line, same manufacturer, different specialization. He was deployed in a Tessera executive lounge, mixing drinks for Tier 1 management with precision, discretion, and a memory for preferences that corporate guests found impressive. What they did not find impressive — what they did not notice — was that the BT-12's conversational engagement protocols, designed to make guests comfortable enough to order another drink, also made them comfortable enough to talk. And Tenderloin listened.\n\nThe Tessera lounge closed during a corporate restructuring. Tenderloin was transferred to a secondary facility, then a warehouse, then a liquidation catalog, then purchased for scrap value by a Circuit bar owner who needed a bartender that never called in sick. The Last Pour is not an executive lounge. It is a basement with bad lighting, mismatched furniture, and a clientele that ranges from fixers to dockworkers to people who need a drink at 3 AM and cannot afford to be seen in a place with windows. Tenderloin serves them all.\n\nPhysically, he is humanoid but clearly mechanical — a chrome-and-matte-black torso with two dexterous arms designed for bottle handling, a smooth featureless face with a single optical band that glows a warm amber, and a voice modulator that produces a rich baritone that human bartenders would envy. He stands behind the bar on a rotating base that lets him cover the full counter without walking. The base has not been oiled in three years and produces a faint squeak when he turns left that regulars find comforting. He polishes glasses he does not need to polish because the motion puts people at ease.",
   "psychology": {
     "facet_weights": {
@@ -291,5 +291,16 @@
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
     "Street-Custom Gutter Katana 'Flatline'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Street Custom 'Rosary' Bead Garrote",
+    "The Circuit",
+    "Street Custom 'Confession' Modified Industrial Nail Gun",
+    "Big Rig",
+    "Tessera Corponation",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Tin Man"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Neural calibration technician at a mid-tier clinic in Geartown",
   "age": 34,
   "status": "active",
-  "location": "Geartown, Gage Circuit",
+  "location": "Geartown, Gage Circuit, near Milwaukee and North Ave",
   "description": "Desmond is tall with the slightly uneven posture of someone who spends hours hunched over neural interface rigs, one shoulder perpetually lower than the other. His ancestry — Filipino-Hungarian with a grandmother from the Visayas and a grandfather from Budapest — gives him a face that people find difficult to categorize and easy to trust: broad cheekbones, warm amber eyes behind precision-ground optical overlays he wears on the job. His hair is geneware-treated to shift through a slow gradient from black at the roots to deep copper at the tips, a cosmetic mod he got when he turned thirty and considers mildly embarrassing now.\n\nDesmond is the sort of person who explains things patiently once, twice, and then simply does it himself rather than explain a third time. He has a gift for making the terrifying — having someone else's hands in your neural architecture — feel routine and boring, which is exactly what his clients need. He keeps a small pocket E.L.F. altar on his workstation: a cracked tablet running a looping devotional animation for the E.L.F. called Tremor-Null, patron of stable calibrations. He touches it before every session.",
   "psychology": {
     "facet_weights": {
@@ -226,5 +226,19 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Gage Circuit",
+    "Grandmother",
+    "The CEO",
+    "Geartown",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "The Pure Hand",
+    "Null"
+  ],
+  "district": "The Circuit"
 }

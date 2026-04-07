@@ -1,0 +1,35 @@
+{
+  "id": "8d3a2208bbc90d9315d521162ac625de",
+  "name": "Cascade Biotech ThermoSync Base Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A full-body base layer made from thermoregulating smart-fabric that maintains a stable 37°C skin-surface temperature across a -20°C to 50°C external range. The fabric uses a network of micro-channel fluid pathways to redistribute heat from warm zones to cold zones across the body. No external power required.\n\nThe standard thermal underlayer for anyone working in extreme temperature environments. The ThermoSync is thin enough to wear under any clothing or armor system without adding bulk.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "thermoregulating smart-fabric",
+    "micro-channel fluid pathways",
+    "moisture-wicking lining"
+  ],
+  "functionality": "Passive thermoregulation (-20°C to 50°C range), zero-bulk profile",
+  "what_it_says": "Your environment tries to cook or freeze you and you've quietly solved that problem underneath everything else.",
+  "worn_by": [
+    "extreme-environment workers",
+    "field operatives",
+    "maintenance crews"
+  ],
+  "manufacturer": "Cascade Biotech",
+  "price_range": "Φ480",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A ThermoSync base layer recovered from a body shows the thermal pathways were running in reverse — the fabric was cooling the wearer's core instead of warming it, as though it was reprogrammed to induce hypothermia."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 2",
+    "thermoregulation",
+    "smart-fabric",
+    "underlayer"
+  ]
+}

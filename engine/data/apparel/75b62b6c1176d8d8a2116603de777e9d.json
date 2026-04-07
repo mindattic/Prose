@@ -1,0 +1,36 @@
+{
+  "id": "75b62b6c1176d8d8a2116603de777e9d",
+  "name": "Redline Combat Ankle Sheath",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A neoprene ankle wrap with an integrated sheath for a fixed-blade knife up to 12cm. The sheath holds the blade handle-down for a cross-draw from a kneeling or crouching position. The neoprene wrap is breathable, moisture-wicking, and sits comfortably under boots or pant legs without printing.\n\nThe last-resort carry option for people who assume their primary weapon will eventually be taken from them. The ankle sheath is uncomfortable on long walks and obvious to anyone who knows what to look for, but it has saved lives in situations where everything else was already gone.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "neoprene wrap",
+    "rigid sheath insert",
+    "moisture-wicking lining"
+  ],
+  "functionality": "Concealed blade carry, cross-draw positioning, last-resort weapon access",
+  "what_it_says": "You plan for the moment when everything else has been taken and you're down to what's on your ankle.",
+  "worn_by": [
+    "security operatives",
+    "runners",
+    "survival-minded individuals"
+  ],
+  "manufacturer": "Redline Combat",
+  "price_range": "Φ120",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An ankle sheath is found with the knife missing but the sheath's interior coated in a substance that isn't blood — whatever was sheathed here wasn't a standard blade."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 1",
+    "ankle sheath",
+    "concealed",
+    "blade",
+    "last resort"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Precision elimination specialist — ghost",
   "age": 44,
   "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Ashland and Chicago Ave",
   "description": "Kenji Granlund-Tawiah is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a ghost out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nKenji Granlund-Tawiah has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,13 @@
   "registered_firearms": [
     "Arcturus Defense Solutions ARC-P1 'Centurion'",
     "Kang-Petrov Arms KPS-7V 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "The Gradient Compact",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Clover"
+  ],
+  "district": "The Shelf"
 }

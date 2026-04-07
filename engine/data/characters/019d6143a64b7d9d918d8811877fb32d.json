@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor, operates a stall in the Burnished Market",
   "age": 27,
   "status": "active",
-  "location": "Burnished Market, stall 44-C near the east heat vents",
+  "location": "Burnished Market, stall 44-C near the east heat vents, near Armitage and Milwaukee",
   "description": "Lilavati is short and round-faced with deep bronze skin and natural hair she wears in two large puffs that she dyes a different color each week — this week a vivid chartreuse that catches the heat-vent steam and glows slightly from the bioluminescent dye she mixes into the product herself, a modification of a cosmetic gene-process she read about in a pirated beauty forum. It doesn't quite work correctly and so her hair glows patchily, unevenly, which she insists gives it character. She has a gap between her front teeth and a laugh that is physically impossible to ignore — it starts as a snort and opens into something that fills the market corridor.\n\nHer noodles are the real thing. She learned from her grandmother, who combined Rajasthani spice logic with Nigerien base broths and a technique for pulled noodles she claims came through a great-uncle who worked a fusion kitchen in São Paulo. The menu is handwritten on a laminated card and changes slightly every day. She charges on a sliding scale that she never officially advertises but everyone knows about — you tell her what you can pay and she charges you what she thinks is fair, which is usually less. She prays to the market ELF — who she believes lives in the ancient shared electrical panel near her stall — before she fires the burner each morning.",
   "psychology": {
     "facet_weights": {
@@ -220,5 +220,13 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grandmother",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "TESSERA TK-4 'Hellhound'",
+    "Bronze",
+    "Lazarus IDP-1 'Teeth'"
+  ],
+  "district": "The Circuit"
 }

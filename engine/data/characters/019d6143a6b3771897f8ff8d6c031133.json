@@ -11,7 +11,7 @@
   "role": "Street musician and sound sculptor",
   "age": 17,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, plays at the interchange market and wherever she can find foot traffic",
+  "location": "Highland Park Autonomous Zone, plays at the interchange market and wherever she can find foot traffic, near Michigan Ave and Oak",
   "description": "Rokhaya is seventeen and already magnetic in the way that hasn't learned to hide itself yet — all unmediated attention and physical expressiveness, tall for her age with a loose-limbed quality that makes her seem to occupy more space than she does. Her skin is deep brown, her natural hair enormous and unshaped in a way she's started to think of as deliberate. She has no mods, which is unusual enough in her peer group to be its own statement, though she hasn't entirely decided if the statement is ideological or financial. Her instrument — she won't call it a build, she calls it Grief — is a custom piezoelectric body harp she assembled herself from salvaged industrial sensors, resonance chambers stripped from defunct comm towers, and a frame welded out of scrap titanium.\n\nRokhaya busks in Highland Park Autonomous Zone and the surrounding interchange markets, playing soundscapes that don't resolve into melody so much as environment — textures of sound that make people stop walking and not entirely know why. She's been doing this for two years and has cultivated a following she's largely unaware of, because she doesn't have a mesh presence and all her listeners spread word of mouth. She is brilliant and doesn't have the critical vocabulary to know it, which makes her both vulnerable to people who will use that gap and oddly protected by having no idea what she's worth.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,16 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Ferrogate Transit",
+    "The Interchange",
+    "Thought Primitive",
+    "Pennywhistle",
+    "The Resonance Communion",
+    "Titanium",
+    "Tin Man"
+  ],
+  "district": "The Spires"
 }

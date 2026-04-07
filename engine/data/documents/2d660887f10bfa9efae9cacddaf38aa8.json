@@ -6,7 +6,10 @@
   "date": "unknown",
   "classification": "unclassified",
   "description": "...three of them on the road, just standing there, and I said to Mike that they looked like [STATIC] ...no, not people, I said they looked like people but they weren't moving right, and then the one in the middle turned its— [SIGNAL LOST]",
-  "related_entities": [],
+  "related_entities": [
+    "ShieldTech SB-3 'Groundstrike'",
+    "Static"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What were the three figures on the Ohio Corridor road?",

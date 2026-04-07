@@ -12,7 +12,7 @@
   "role": "Senior Project Manager, Tessera Infrastructure Division",
   "age": 38,
   "status": "active",
-  "location": "Grand Corridor, Tessera Infrastructure Hub — open-plan office, desk seven",
+  "location": "Grand Corridor, Tessera Infrastructure Hub — open-plan office, desk seven, near Armitage and Milwaukee",
   "description": "Thessaly has the kind of face that reads as permanently slightly amused, which is either accurate or a very effective mask depending on the day. They are medium height, compact, with light brown skin and the kind of effortlessly symmetrical features that suggest either genetics or a very good cosmetic package — in fact it's genetics, a fact they find privately funny. Their hair is color-shifting, cycling slowly through dark blues and greens during work hours and switching to a deep amber setting they call 'off-duty mode.' They dress practically: clean lines, nothing that catches on equipment, a jacket with actual pockets. A small silver ring through their left nostril is their only visible jewelry.\n\nThessaly is someone who keeps everything moving — projects, people, conversations, agendas. They have an almost physical intolerance for stagnation and an ability to hold seventeen interdependent variables in their head without apparent effort. They're not charismatic in the conventional sense: they don't perform warmth. But they're fair, they remember everything, and they're reliably the calmest person in any crisis, which generates a particular kind of loyalty in the people who work under them. They grew up in a Tier 3 household in Shorewood Terrace with two working parents who modeled relentless competence, and they absorbed it completely.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,16 @@
     "Crucible Industries Fang-9 'Switchblade'",
     "Tessera Micro-PDW TMP-2 'Synapse'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Shorewood Terrace",
+    "Ferrogate Transit",
+    "Grand Corridor",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver"
+  ],
+  "district": "The Circuit"
 }

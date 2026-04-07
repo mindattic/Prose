@@ -11,7 +11,7 @@
   "role": "Ferrogate Transit bus operator, Deepwell Station to Calumet Rise route",
   "age": 29,
   "status": "active",
-  "location": "Deepwell Station (home depot), route runs through Blackpipe Corridor, Ironvein, Calumet Rise",
+  "location": "Deepwell Station (home depot), route runs through Blackpipe Corridor, Ironvein, Calumet Rise, near sub-level access near Dearborn and Jackson",
   "description": "Saodat has the compact, settled quality of someone who has learned to be comfortable in a small moving space for ten hours at a time. They are medium-height, broad through the shoulders, with skin a warm dark brown and close-cropped natural hair shot through with bioluminescent dye — pale blue at the roots, fading to white at the tips — that they refresh every three weeks from a kit they keep in their locker at Deepwell. They have a cat tail (geneware, black with a white tip) that has its own opinions about traffic: it lashes when the route is running behind and curls quietly when it's smooth.\n\nThey are patient in the way that bus drivers become patient — not serene, but weathered into a steady kind of equanimity. They have seen everything in the seats behind them and learned to distinguish trouble from noise. Off the bus they are louder, funnier, more restless; the job asks for a particular affect and they shed it like a coat at shift end. They are deeply loyal to their regular riders in an anonymous way — they know faces, rhythms, and whether someone looks like they're having the wrong kind of day.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,17 @@
   "registered_firearms": [
     "Crucible Industries Ember Rifle ER-7 'Ashfall'",
     "Arcturus Defense Solutions ARC-P1 'Centurion'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Deepwell Station",
+    "Calumet Rise",
+    "The Meridian Compact for Economic Justice",
+    "Hamtramck Enclave",
+    "Ironvein",
+    "The Gradient Compact",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

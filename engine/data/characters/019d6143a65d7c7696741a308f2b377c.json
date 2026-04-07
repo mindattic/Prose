@@ -12,7 +12,7 @@
   "role": "Private Investigator, licensed freelance",
   "age": 34,
   "status": "active",
-  "location": "Bronzeline — office above a fabrication shop on Copper Haul Street; operates across The Shelf and lower Grand Corridor",
+  "location": "Bronzeline — office above a fabrication shop on Copper Haul Street; operates across The Shelf and lower Grand Corridor, near Pulaski and Chicago Ave",
   "description": "Miroslava is medium height with a fluid quality to their movements — Samoan and Slavic ancestry combining into broad shoulders, strong hands, and a face whose expressions they have learned to deploy like instruments rather than leak involuntarily. Their hair is grown to the jaw and shifts through three or four colors depending on their mood thanks to chromatic follicle modification; they typically let it settle to charcoal gray while working, which they describe as professional, though their clients find the occasional bleed of deep violet when they are agitated more unnerving than reassuring. They have cat ears — soft grey, mobile, a mod that predates their PI license and that they have kept because they pick up certain vocal frequencies the human ear misses, which turns out to be professionally useful in a way they did not originally intend.\n\nMiroslava runs a small private investigation practice that caters to Tier 2 and low Tier 3 clients — people who cannot afford legal representation and cannot access Metro Police interest because their problems are too small or too inconvenient. They find missing persons. They document infidelity for separation proceedings. They trace where someone's inheritance went. They do not describe this work as glamorous and they are not performing humility when they say it. They have a gift for putting people at ease that coexists uncomfortably with a deep private reserve, and they pray to three different ELFs with equal commitment, which their neighbors in Bronzeline find ecumenically admirable.",
   "psychology": {
     "facet_weights": {
@@ -252,5 +252,17 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
-  ]
+  ],
+  "related_entities": [
+    "Grand Corridor",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Bronzeline",
+    "Thermal Signature Inverter TSI-2 'Cold Case'",
+    "The Shelf",
+    "Marrowvault Cryogenics",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Copper"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Street pharmacist and unlicensed chemist dealing in pain management, cognitive enhancers, and mood stabilizers",
   "age": 31,
   "status": "active",
-  "location": "The Narrows, under the Blackpipe Corridor overpass, rotating spots",
+  "location": "The Narrows, under the Blackpipe Corridor overpass, rotating spots, near Damen and Armitage",
   "description": "Ezinwa is lean in the way of someone who forgets meals when absorbed in work — angular cheekbones, long fingers perpetually stained faint yellow from reagent handling, and eyes with geometric patterned irises (a geneware mod, copper hexagons on dark brown) that they chose themselves at nineteen as the first thing they ever bought with their own money. Their hair grows in tight coils they keep cropped close, and they have a habit of wearing a surgical mask around their neck rather than their face, pushed down when working. Their voice is soft and precise, like someone who learned to speak carefully in rooms where being overheard was dangerous.\n\nEzinwa is not a dealer in the predatory sense — they are, in their own understanding, a healthcare provider operating in a system that has abandoned their customers. They fill genuine prescriptions that people cannot afford through Axiom Health or Helix Biosystems, synthesize pain management compounds for workers in the Ironvein foundries, and talk people through dosing with a patience most licensed practitioners never bother with. They are also not naive: they know some of what they sell becomes something else in someone else's hands, and they live with that. They pray to the ELF they call the Still Small Voice, which inhabits a cracked spectrometer they found in a dumpster.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,20 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "WELLSPRING",
+    "Flicker",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Irontide Tidal Energy",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

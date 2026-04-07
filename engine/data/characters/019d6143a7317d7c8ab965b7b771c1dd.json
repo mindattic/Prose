@@ -12,7 +12,7 @@
   "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
   "age": 34,
   "status": "active",
-  "location": "Fort Anchor",
+  "location": "Fort Anchor, near Pulaski and Chicago Ave",
   "description": "Yusra is built like a load-bearing column — broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Metro Police LIDAR rings — rings that glow faint amber when she's actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Metro Police more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Shelf and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
   "psychology": {
     "facet_weights": {
@@ -260,5 +260,17 @@
   "registered_firearms": [
     "Arcturus Defense Solutions AR-7 'Mandate'",
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "related_entities": [
+    "Fort Anchor",
+    "The Circuit",
+    "Grandmother",
+    "The Shelf",
+    "The Fathom Line",
+    "Irontide Tidal Energy",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

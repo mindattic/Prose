@@ -11,7 +11,7 @@
   "role": "Pallid Court elder",
   "age": 44,
   "status": "active",
-  "location": "The Underworld - B18-B25",
+  "location": "The Underworld - B18-B25, near sub-level access near Dearborn and Jackson",
   "description": "Eira has not seen sunlight in nineteen years. Her skin glows faint blue-white. She speaks for the deep-adapted communities who were born underground.",
   "psychology": {
     "facet_weights": {
@@ -90,5 +90,10 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Bathysphere Networks",
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "district": "The Underworld"
 }

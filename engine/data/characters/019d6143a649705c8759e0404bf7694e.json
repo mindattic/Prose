@@ -12,7 +12,7 @@
   "role": "Street performer and physical comedian, unofficial mascot of Mexicantown Libre",
   "age": 19,
   "status": "active",
-  "location": "Mexicantown Libre, Grand Corridor intersection",
+  "location": "Mexicantown Libre, Grand Corridor intersection, near Western and Division",
   "description": "Lautaro is seventeen centimeters too tall for his own coordination — a fact he has turned into a performance philosophy. He is lean and long-limbed with warm reddish-brown skin, close-cropped dark hair, and cat ears he got for his seventeenth birthday, rust-colored and perpetually at a different angle from what his face is doing, which gives him an unconsciously comic aspect even when he's standing still. He has a gap between his front teeth that is enormously charming and enormous dark eyes that he knows how to weaponize.\n\nHe performs at the Grand Corridor junction six days a week: physical clowning, improvised slapstick, audience interaction that skirts the line between theater and mild chaos. He is genuinely skilled in ways that surprise people who assume youth and exuberance are all he has — his physical control is meticulous underneath the apparent mayhem, and his timing is extraordinary. He is incandescently popular with children, street vendors, and anyone who has had a long day. He is deeply suspicious of any adult who doesn't laugh at something eventually. He makes almost no money and does not seem to mind, which worries the people who love him.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,17 @@
   "registered_firearms": [
     "Tessera TK-9 Proteus 'Shapeshifter'",
     "Crucible Industries Boarding SMG BSM-6 'Cutlass'"
-  ]
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Grand Corridor",
+    "Periscope",
+    "The Fathom Line",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Lazarus IDP-1 'Teeth'",
+    "Stalker",
+    "Ringo Corponation",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

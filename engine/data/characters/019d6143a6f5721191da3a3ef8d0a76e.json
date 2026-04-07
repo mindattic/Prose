@@ -12,7 +12,7 @@
   "role": "Xenolinguist and historian of constructed and emergent E.L.F. communication systems",
   "age": 47,
   "status": "active",
-  "location": "University Spine, Deepwell Station archival annex",
+  "location": "University Spine, Deepwell Station archival annex, near sub-level access near LaSalle and Congress",
   "description": "Theophane is a broad-shouldered man who has gone soft in the middle from years of sedentary archival work, with warm brown skin and close-cut hair that has gone gray at the temples in a way he finds interesting rather than alarming. He keeps his irises modded to a deep violet — a choice from his twenties he still actively likes — and his hands are always moving when he talks, tracing patterns in the air that correspond to phonemic structures or grammar trees only he can see. He has retractive claws on his right hand only, a half-finished geneware modification he stopped partway through when the artist moved districts; he has been meaning to complete it for eight years.\n\nHe studies languages that did not exist before Meridian 88 — the creoles that emerged on the Shelf, the signal-argot that E.L.F.s appear to use between devices, the gestural metalanguage that developed among deaf communities in the lower transit corridors without any central design. He approaches these systems with the devotion of someone who believes language is the truest form of evidence about how people actually live, not how they are recorded as living. He is mild-mannered in ways that make people underestimate how deeply unusual his research is, and he has built a quiet career on the gap between what institutions think he studies and what he actually studies.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,19 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "University Spine",
+    "Meridian 88",
+    "Ashford Signal",
+    "The Shelf",
+    "Palladian Construction",
+    "Lacuna Genomics",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
+  ],
+  "district": "The Underworld"
 }

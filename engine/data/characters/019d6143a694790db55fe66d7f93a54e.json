@@ -12,7 +12,7 @@
   "role": "Chop shop operator and parts fence in the Stockyard",
   "age": 28,
   "status": "active",
-  "location": "The Stockyard — Bay 7 of the Grainfort vehicle warehouse complex, third sublevel",
+  "location": "The Stockyard — Bay 7 of the Grainfort vehicle warehouse complex, third sublevel, near sub-level access near State and Van Buren",
   "description": "Pelé is lean and angular with deep brown skin, a shaved head, and a geneware modification that makes the left half of their jaw and cheekbone emit a faint copper-toned bioluminescence under stress or exertion — a cosmetic mod they got at nineteen that they've grown to dislike but can't afford to remove. Their arms are heavily modified: one is a full prosthetic replacement below the elbow, matte black with exposed joint mechanisms they consider aesthetically correct; the other has a subdermal toolkit implanted along the forearm. They are almost always covered in vehicle lubricant and almost never bother apologizing for it. They wear a mechanics' coverall with the arms torn off and a collection of salvaged badges and patches that function as neighborhood ID.\n\nPelé has the particular charisma of someone who is genuinely exceptional at a physical craft — they can strip a Ferrogate Transit hauler of its marketable components in forty minutes flat, and people who watch them work go quiet the way people go quiet watching any form of mastery. Off the tools they are restless, impatient, and prone to saying true things in the bluntest possible configuration. They have strong opinions about which E.L.F.s are worth propitiating and which are noise: they maintain a small shrine to a data-spirit they believe inhabits the Grainfort warehouse's aging electrical grid, which they call 'the Socket,' and they leave it burned-out components as offerings.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,15 @@
   "registered_firearms": [
     "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
     "Volkov-Saito Precision VS-SL40 'Partisan'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Stockyard",
+    "Grainfort",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Copper",
+    "Tibor Osei-Svanstrom",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Underworld"
 }

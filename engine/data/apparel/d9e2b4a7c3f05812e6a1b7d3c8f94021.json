@@ -1,0 +1,43 @@
+{
+  "id": "d9e2b4a7c3f05812e6a1b7d3c8f94021",
+  "name": "Pellucid BioSeal Spire Surgical Theater Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Immaculate pearl-white surgical ensemble with biosynthetic scrubs that self-sterilize via embedded UV-pulse fibers, paired with a floor-length sterile overcoat that seals at every seam. The integrated HUD visor is a slim titanium band across the eyes displaying live biometrics, aug-interface overlays, and sub-millimeter AR guidance reticles. Haptic-feedback gloves in translucent bioskin register tissue resistance in real time. Mag-lock clogs in antimicrobial ceramic white complete the look, and a slim sternum harness holds micro-tool cassettes no larger than a credit chip.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "UV-pulse biosynthetic scrub fiber",
+    "sealed sterile overcoat polymer",
+    "titanium HUD visor band",
+    "translucent bioskin haptic gloves",
+    "antimicrobial ceramic clogs",
+    "carbon-fiber micro-tool harness"
+  ],
+  "functionality": "Self-sterilizing fibers maintain Class-1 sterile field; haptic gloves transmit live tissue-feedback data directly to surgeon's BCI during augmentation or gene-mod procedures.",
+  "what_it_says": "This surgeon operates at the intersection of art and engineering, and the corponation paying their contract expects nothing short of perfection.",
+  "worn_by": [
+    "Tier 5 augmentation surgeons",
+    "elite geneware specialists",
+    "Spire private clinic leads"
+  ],
+  "manufacturer": "Pellucid BioSeal Division",
+  "price_range": "Φ 18,000–Φ 34,000",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The HUD visor still has a ghost overlay from the last patient's neural map — someone whose file has since been classified.",
+    "The self-sterilize cycle failed mid-procedure once; the surgeon hasn't reported it and the harness carries a hidden backup scalpel."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical_scientific_kit",
+    "tier5",
+    "spire",
+    "surgical",
+    "aug_compatible",
+    "gene_compatible",
+    "high_end",
+    "bioseal"
+  ]
+}

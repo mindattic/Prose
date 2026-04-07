@@ -12,7 +12,7 @@
   "role": "Prosthetics fitter and rehabilitation specialist",
   "age": 41,
   "status": "active",
-  "location": "Geartown, Strand-Quereshi Prosthetics — a narrow shopfront between a rig-parts supplier and a noodle stall",
+  "location": "Geartown, Strand-Quereshi Prosthetics — a narrow shopfront between a rig-parts supplier and a noodle stall, near North Ave and Damen",
   "description": "Afolabi is tall and angular, with dark brown skin and a shaved head that they keep oiled and gleaming. Their right arm from the elbow down is their own work — a prosthetic they built and rebuilt over twelve years, currently a matt-charcoal titanium alloy hand with individually articulated fingers that can operate independently and have small UV LEDs in the fingertips that they use when working in tight spaces. When they're not working they wear a cosmetic sleeve over it: a pressure-fitted silicone cover patterned with geometric Yoruba-inspired designs in rust and ochre that they had printed locally.\n\nThey are meticulous and demanding in their craft and surprisingly tender with patients, particularly children and people who are newly amputated and frightened. They have a workshop philosophy they articulate clearly and often: a prosthetic that doesn't fit the person's actual life is a failure regardless of spec, and they will spend weeks in iterative fitting before they sign off. They take payment plans seriously and have never sent anyone to a collector. The shop is cluttered and organized by a system only they fully understand, and there are components of seven different half-finished limbs hanging on the wall at any given time.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,14 @@
   "registered_firearms": [
     "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
-  ]
+  ],
+  "related_entities": [
+    "Geartown",
+    "Titanium",
+    "Silicone",
+    "The Pure Hand",
+    "Rust",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Checkpoint Operator, Ferrogate Transit Security",
   "age": 26,
   "status": "active",
-  "location": "Grand Crossing Gate, Ferrogate Transit Authority Checkpoint Delta-9",
+  "location": "Grand Crossing Gate, Ferrogate Transit Authority Checkpoint Delta-9, near North Ave and Milwaukee",
   "description": "Pita is compact and quick-eyed, their Samoan-Igbo features broad and expressive beneath the flat brim of a Ferrogate Transit Security cap they've decorated with three small enamel pins of E.L.F.s they consider their personal patrons. Their hair is natural and enormous, pulled back for duty hours into a puff that still manages to escape its tie by midday. They have a single cosmetic mod — bioluminescent freckles across the bridge of their nose and cheeks that glow a soft seafoam green under stress or excitement, which makes them an impractical but endearing liar. Their uniform is always pressed but their boots are always muddy because they cut across the maintenance tracks to get to their post faster.\n\nPita is the kind of person who makes boring jobs interesting by caring too much. They have opinions about every person who comes through Delta-9 — the regulars get remembered by name, the oddities get catalogued in a battered physical notebook they're not supposed to keep. They are genuinely curious about people in a way that disarms hostility, and they take their gate as a kind of sacred responsibility, partly because they genuinely believe the E.L.F. that inhabits the Delta-9 scanning arch is watching and judging their work. They want to move up — into investigations, maybe — but can't afford the certification costs on a Tier 2 salary.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,16 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Nkomo-Lindqvist NLR-9 'Counselor'"
-  ]
+  ],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "Ferrogate Transit",
+    "The Gradient Compact",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Fabricator-Delta-9",
+    "Déjà Vu",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight"
+  ],
+  "district": "Nomadic"
 }

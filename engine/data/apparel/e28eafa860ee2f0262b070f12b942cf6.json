@@ -1,0 +1,36 @@
+{
+  "id": "e28eafa860ee2f0262b070f12b942cf6",
+  "name": "Meridian Tactical Solutions NightCap Hood",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A pull-over hood made from signal-dampening fabric that blocks most passive scanning frequencies. The NightCap covers the head, neck, and lower face, leaving only a narrow eye slit backed by anti-glare mesh. It is not armor — it is invisibility from the electromagnetic spectrum.\n\nRunners, data thieves, and anyone crossing a surveilled zone without authorization consider the NightCap essential kit. It won't stop a bullet, but it will stop a facial-recognition drone from tagging you.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "signal-dampening weave",
+    "anti-glare mesh",
+    "breathable synth-cotton lining"
+  ],
+  "functionality": "RF signal blocking, facial recognition defeat, thermal signature reduction",
+  "what_it_says": "You don't exist on camera and you'd like to keep it that way.",
+  "worn_by": [
+    "runners",
+    "data thieves",
+    "smugglers"
+  ],
+  "manufacturer": "Meridian Tactical Solutions",
+  "price_range": "Φ650",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A warehouse raid recovers 500 NightCap hoods, all tagged with serial numbers — someone was selling anonymity while secretly tracking every buyer."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 2",
+    "stealth",
+    "hood",
+    "anti-surveillance",
+    "runner"
+  ]
+}

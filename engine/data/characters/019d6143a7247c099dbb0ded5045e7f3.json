@@ -12,7 +12,7 @@
   "role": "Fungus farmer and underground food supplier",
   "age": 58,
   "status": "active",
-  "location": "Irkalla, Sub-Level 7 — the 'Bloom Halls', a repurposed water reclamation chamber",
+  "location": "Irkalla, Sub-Level 7 — the 'Bloom Halls', a repurposed water reclamation chamber, near sub-level access near State and Van Buren",
   "description": "Yetunde Abashidze-Tarawa is a broad-shouldered woman who moves through her fungal gardens with the deliberate grace of someone who has learned to never knock anything over in the dark. She is tall, with deep brown skin that has taken on an extraordinary quality in her years underground: faint bioluminescent patches on her forearms and the sides of her neck — not implants, but a genuine dermal symbiosis with a engineered photobacterial culture she cultivated herself and chose to inoculate into her own skin thirty years ago. In the dim blue-green glow of the Bloom Halls, she is hauntingly beautiful. On the rare occasions she surfaces, people stare.\n\nShe grows over forty varieties of engineered and wild-caught fungus in a network of cultivation racks that fill three former water reclamation chambers. She trades in food, medicine (several of her cultures have antibiotic and analgesic properties), and a mild psychoactive she calls Quietcap that she dispenses only to people she has personally assessed as not in crisis. She is the closest thing Irkalla's sub-level community has to a matriarch, doctor, and pharmacist — a role she accepted reluctantly and now occupies with the resigned authority of someone who knows no one else will do it.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,15 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Reclamation Assembly",
+    "Ferrofluid Induction Cannon FIC-6 'Ironbloom'",
+    "Aslan Vasquez-Chatterjee",
+    "Irkalla",
+    "Tessera Corponation",
+    "Nightlight"
+  ],
+  "district": "The Underworld"
 }

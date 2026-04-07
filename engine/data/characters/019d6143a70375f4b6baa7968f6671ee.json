@@ -12,7 +12,7 @@
   "role": "Counterfeiter specializing in Quanta currency forgeries and corporate scrip duplication",
   "age": 22,
   "status": "active",
-  "location": "The Shelf, Lower Level 9 — rents a two-room unit in the Blackpipe Corridor that doubles as his print shop",
+  "location": "The Shelf, Lower Level 9 — rents a two-room unit in the Blackpipe Corridor that doubles as his print shop, near Pulaski and Chicago Ave",
   "description": "Tomislav is whip-thin with a restless, bird-quick way of moving — he is always slightly in motion, tapping, shifting, scanning the room. He has his father's Croatian bone structure and his Malian grandmother's complexion, a warm dark brown, and he grows a patchy beard he refuses to admit is patchy. His geneware is expressive: color-shifting hair he keeps cycling through ambers and deep reds, and patterned irises that he updates seasonally through a subscription service — currently sporting a fine hexagonal grid in pale gold. He looks younger than 22 and has learned to use this strategically.\n\nHe came to counterfeiting through graphic design — he was genuinely talented, got a Tessera scholarship to an applied arts program, washed out in the second year when he couldn't keep up with the social and academic debt load, and discovered that the skills transferred perfectly to a more immediately lucrative application. He is not violent, not particularly brave, and deeply aware that he is one forensic audit away from a serious corporate jurisdiction charge. He manages this anxiety through manic productivity and a carefully cultivated reputation for quality. His work is, genuinely, exceptional. He talks about it the way a craftsman talks about joinery.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,18 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Meridian 88",
+    "Grandmother",
+    "The Shelf",
+    "The Quiet Room",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

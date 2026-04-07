@@ -12,7 +12,7 @@
   "role": "Truant message runner, The Shelf streets",
   "age": 11,
   "status": "active",
-  "location": "The Shelf, Blackpipe Corridor",
+  "location": "The Shelf, Blackpipe Corridor, near Pulaski and Chicago Ave",
   "description": "Ozioma is small even for eleven, with deep umber skin, a gap-toothed grin she's not shy about, and natural hair sectioned into uneven puffs held together by whatever elastic she could find that morning. Her eyes are quick and dark, always cataloguing exits. She wears a patchwork jacket she stitched herself from three dead jackets — hence the alias — with pockets sewn into places no tailor would think of: the lining of the hood, behind the collar, inside the cuffs. She smells faintly of the solvent she uses to peel address-tags off packages.\n\nOzioma is relentlessly cheerful in a way that unsettles adults who look closely enough to see how deliberate it is. She learned early that a smiling kid gets waved through checkpoints a sullen one does not. She collects information the way other children collect toys — who owes whom, which corridor the Ferrogate patrol skips at shift change, whose E.L.F. shrine is still active in the Blackpipe utility alcove — and she stores it all behind that gap-toothed smile. She is fiercely protective of the two younger kids she runs messages with, and will not admit this even to herself.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,15 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Ferrogate Transit",
+    "The Shelf",
+    "The Peninsula",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
+  ],
+  "district": "The Shelf"
 }

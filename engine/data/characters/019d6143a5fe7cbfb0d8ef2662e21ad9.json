@@ -12,7 +12,7 @@
   "role": "Street orphan, junior prospect for the Copperhead Reclaimers gang",
   "age": 9,
   "status": "active",
-  "location": "Copperhead",
+  "location": "Copperhead, near Fullerton and Damen",
   "description": "Efua is small even for nine, with close-cropped natural hair and enormous dark eyes that seem to be processing information on a continuous loop. Her Barański great-grandmother's pallor didn't quite make it through four generations but left her with an unusual warm-olive undertone beneath her brown skin that makes her look perpetually lit from within. She wears whatever fits and has developed an uncanny eye for what is sturdy versus what merely looks sturdy. She has no geneware and no augs — she is very physically ordinary, which she has learned to use.\n\nThe Copperhead Reclaimers use her as a look-out and occasional distraction because she looks like a lost child, which she also is, though she would be furious at anyone who said so. She has an intense, almost reverent relationship with a cracked data-terminal in the Reclaimers' squat that she has named 'Mbe' and leaves small offerings for — bits of copper wire, interesting pebbles, once a dead battery that she insists the E.L.F. inside appreciated. She is a child who has organized her world into a system of loyalties and debts she tracks with absolute precision.",
   "psychology": {
     "facet_weights": {
@@ -164,5 +164,15 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grandmother",
+    "Copperhead",
+    "The Reclaimed",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Copper",
+    "Elena Vasquez-9",
+    "Déjà Vu"
+  ],
+  "district": "The Circuit"
 }

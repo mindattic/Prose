@@ -12,7 +12,7 @@
   "role": "Building super and amateur mechanic, The Narrows residential block",
   "age": 34,
   "status": "active",
-  "location": "The Narrows; lives in the basement unit of the building they manage at Benton Divide 14-C",
+  "location": "The Narrows; lives in the basement unit of the building they manage at Benton Divide 14-C, near Milwaukee and Damen",
   "description": "Zuzanna Osei-Reinholt is compact and relentlessly practical — they move through the world like someone who has calculated exactly how much space they need and taken only that. Their Ghanaian father's warm brown complexion and their Polish-Danish mother's angular features produce a face that people describe as striking without being able to say exactly why. Their hair is kept short and color-changing — a mod they got at eighteen and still use, though these days they mostly leave it set to a flat, unassuming dark. On bad days it shifts citrus-orange without conscious input. They've stopped fighting it.\n\nZuzu manages a forty-unit residential block in the Narrows that should not still be standing, technically, and keeps it standing through a combination of improvised engineering, favors owed by every tradesperson in a six-block radius, and the iron conviction that their sixty-three residents deserve heat, water pressure, and working lifts even if the absentee landlord has no intention of providing any of these things. They are the person people knock on at 02:00 when a pipe fails and the person people find already awake at 02:00 because they heard the pipe before it failed. Their tool roll is their most prized possession. They would be offended to hear it called sentimental.",
   "psychology": {
     "facet_weights": {
@@ -182,5 +182,18 @@
   "carried_weapons": [
     "Street-Custom Gutter Katana 'Flatline'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Benton Divide",
+    "Meridian 88",
+    "The Narrows Compact",
+    "Warm Wire, Small Hand",
+    "Palladian Construction",
+    "Blackpipe Corridor",
+    "Big Rig",
+    "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
+    "The Gradient Compact",
+    "Iron"
+  ],
+  "district": "The Circuit"
 }

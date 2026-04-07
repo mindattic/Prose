@@ -11,7 +11,7 @@
   "role": "Fixer - Desperate jobs only",
   "age": 59,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Pulaski and Chicago Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -102,5 +102,9 @@
     "Street Custom 'Ghostwriter' Grafitti Flamethrower",
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf"
+  ],
+  "district": "The Shelf"
 }

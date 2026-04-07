@@ -12,7 +12,7 @@
   "role": "Underground filmmaker and VR experience designer",
   "age": 24,
   "status": "active",
-  "location": "Pilsen Veil",
+  "location": "Pilsen Veil, near Ashland and Division",
   "description": "Wren is compact and restless, with warm brown skin, a mess of thick natural hair dyed an oxidized copper that they refuse to maintain so the roots always show, and a pair of geneware cat ears — black, slightly larger than natural — that they got at sixteen and now consider embarrassingly juvenile but can't bring themselves to remove because their late grandmother loved them. They have an omnidirectional recording implant behind their left ear that means they are always, technically, filming, and people who know this have complicated feelings about being around them.\n\nThey make films that are not films exactly — hour-long VR experiences that place the viewer inside the nervous system of someone surviving something: a three-day eviction, a corporate audit, a birth, a first heartbreak at age sixty-two. Wren sources their subjects entirely from their neighborhood in Pilsen Veil, refusing to aestheticize poverty they don't live in, and they have a reputation for brutal honesty and an equally brutal ability to make you cry in under four minutes. They are vibrating with ideas at all times, finish other people's sentences constantly, and have never once in their life been on time to anything.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,12 @@
   "registered_firearms": [
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Crucible Industries Havoc-44 'Mauler'"
-  ]
+  ],
+  "related_entities": [
+    "Pilsen Veil",
+    "Grandmother",
+    "The Gradient Compact",
+    "Copper"
+  ],
+  "district": "The Shelf"
 }

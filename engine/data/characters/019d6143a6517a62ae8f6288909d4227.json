@@ -12,7 +12,7 @@
   "role": "Former union leader (Ferrogate Transit Workers Union), now raising two grandchildren on a reduced pension",
   "age": 68,
   "status": "active",
-  "location": "The Shelf, Block 14 — a three-room unit he shares with his grandchildren",
+  "location": "The Shelf, Block 14 — a three-room unit he shares with his grandchildren, near Western and Division",
   "description": "Ọlọruntóbi is a man who was built for louder rooms than the one he currently occupies. He is tall and loose-limbed, with the kind of face that was clearly handsome and has aged into something more interesting — deep sienna complexion, heavy brow, a jaw that still juts when he is angry. He has cosmetic tiger-stripe bioluminescence on his arms and collarbone, a geneware mod he got in his forties to celebrate the Union's successful Ferrogate walkout of 2172, and which now glows a gentle amber when the building's lights go down. His natural hair has gone grey-silver and he wears it in short locs. A subvocal transceiver is implanted at his throat — old union infrastructure, technically still active.\n\nFor sixteen years Tobi was the loudest, most tenacious shop steward and eventually regional director the Ferrogate Transit Workers Union ever produced. He won three collective agreements, survived two corporate union-busting campaigns, and was personally blacklisted by two Ferrogate senior executives. Then his daughter Comfort died of an untreated pulmonary infection in 2194 — a death he attributes directly to Helix Biosystems' pharmaceutical pricing, which the union had been fighting for years — and left behind two children aged four and seven. Tobi took them without a moment's hesitation and quietly stopped being the man who changed things, because he was suddenly the man who made breakfast.",
   "psychology": {
     "facet_weights": {
@@ -261,5 +261,15 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Helix Biosystems",
+    "The Shelf",
+    "Aminata Strand-Otieno",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

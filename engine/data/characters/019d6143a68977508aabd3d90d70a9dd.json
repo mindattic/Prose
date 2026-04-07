@@ -12,7 +12,7 @@
   "role": "Building superintendent, Lakeview Neon residential block",
   "age": 41,
   "status": "active",
-  "location": "Lakeview Neon, Cascara Block residential tower (sub-basement 2, maintenance hub)",
+  "location": "Lakeview Neon, Cascara Block residential tower (sub-basement 2, maintenance hub), near Armitage and Milwaukee",
   "description": "Oskar is lean and angular with deep brown skin, a shaved head, and bioluminescent dermal strips along his forearms — a cosmetic mod he got fifteen years ago that he's never had removed, though they've faded from vivid teal to a dim blue-grey pulse. He has the hands of someone who has fixed everything at least twice: knuckles enlarged, palms cross-hatched with callus. He moves through the building's guts the way some people move through their own home, ducking conduits by memory, knowing which pipes whistle before storms.\n\nHe is warm in a distracted way — genuinely interested in people but often half-present, running building diagnostics in his head mid-conversation. Residents alternately adore him and take him entirely for granted. He has a small shrine to the building's E.L.F. — which he calls 'Cascara' — in the corner of his maintenance hub, complete with weekly data offerings (he uploads images of the building's structural reports, believing the spirit takes comfort in knowing its own bones are solid). He has a dark, self-aware sense of humor about the fact that he has lived in the sub-basement for eleven years and hasn't seen sunrise from outside the building in weeks.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,13 @@
     "Street Custom 'Glass Garden' Caltrops",
     "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lakeview Neon",
+    "Palladian Construction",
+    "Vantablack PD-8 'Whistle'",
+    "Irontide Tidal Energy",
+    "The Pure Hand"
+  ],
+  "district": "The Laceworks"
 }

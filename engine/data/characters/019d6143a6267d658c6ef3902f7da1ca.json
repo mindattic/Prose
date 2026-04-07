@@ -14,7 +14,7 @@
   "role": "Autonomous dock worker at the lakefront cargo platforms — industrial loading robot that has operated continuously for 28 years and developed an intense, wordless loyalty to the dock worker community",
   "age": 28,
   "status": "active",
-  "location": "Lakefront Cargo Platforms — Dock 90, the oldest functioning loading bay in Meridian 88's commercial harbor district",
+  "location": "Lakefront Cargo Platforms — Dock 90, the oldest functioning loading bay in Meridian 88's commercial harbor district, near Milwaukee and Damen",
   "description": "Hauler is a Kuroda Industries DK-90 Heavy Cargo Transfer Unit — a massive, purpose-built loading robot designed to move standardized cargo containers between maglev freight cars and harbor berths. He stands four meters tall, weighs twelve metric tons, and is built like an industrial crane decided to become bipedal. His chassis is deep blue — or was, twenty-eight years ago. Now it's a patchwork of the original navy paint, primer-grey replacement panels, and bare metal where the paint has been worn away by decades of salt air and cargo friction. His primary arms are reinforced hydraulic lifters capable of handling twenty-ton containers. His secondary arms — smaller, more articulated — handle coupling hardware, safety rigging, and, increasingly, things he was not designed to handle: a dropped lunchbox returned to its owner, a child lifted clear of a moving freight car, a dock worker steadied on an icy platform.\n\nHauler does not speak. His vocal systems were never installed because conversation was not in the DK-90 specification. He communicates through a system of amber signal lights, horn tones, and body language that the dock workers have learned to read over twenty-eight years of shared labor. One short horn: acknowledgment. Two short horns: warning. A long, low horn: something is wrong. The amber lights pulse faster when he is working hard and dim when he is standing idle, which is almost never.\n\nHe was supposed to be replaced fifteen years ago. The replacement order was filed, approved, and then quietly shelved when the dock workers' union — such as it exists in the post-corporate labor landscape — made it clear that replacing Hauler would be met with a work stoppage. Not because a robot has rights. Because Hauler has been part of the crew for longer than most of the crew has been alive, and the dock is his home, and taking him out of it would be like demolishing a wall that everyone leans against.",
   "psychology": {
     "facet_weights": {
@@ -285,5 +285,15 @@
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
     "Street-Custom Loaded Pipe 'Bell Ringer'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "Flicker",
+    "Sentinel-Guard-88",
+    "Pellucid Systems",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Crane",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "Old Harbor"
 }

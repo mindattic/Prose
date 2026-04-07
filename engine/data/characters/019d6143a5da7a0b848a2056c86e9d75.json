@@ -12,7 +12,7 @@
   "role": "climate refugee, expelled citizen, caravan support worker",
   "age": 34,
   "status": "active",
-  "location": "Escanaba Gateway, temporary processing overflow — a repurposed cargo hangar on the eastern dock",
+  "location": "Escanaba Gateway, temporary processing overflow — a repurposed cargo hangar on the eastern dock, near Michigan Ave and Roosevelt",
   "description": "Chiamaka has the kind of face that is beautiful in a way that takes a moment to resolve — wide-set dark eyes, a long jaw, a nose that has been broken and healed slightly crooked, which they consider an improvement. Their hair is grown long on top and cut close at the sides, currently dyed a deep amber that is growing out at the roots into black. Bioluminescent freckles run across both cheekbones and the bridge of their nose, a genemod that was fashionable a decade ago and that they have kept because they find it useful in the dark. They dress in layers of practical clothing with a great number of pockets, all of which serve a purpose.\n\nChiamaka came to Meridian 88 with the Seventh Coastal Movement — a caravan of climate refugees from the drowned lowlands east of what used to be Lagos, where their Igbo family had mixed with Samoan shipwright families over three generations of coastal labor. They have been in the Gateway processing overflow for seven months, which is four months longer than they were told. They work as an informal translator and advocate for other caravan members, navigating the Meridian 88 resettlement bureaucracy with a simmering precision that occasionally flares into something that frightens officials. They are not angry in a way that is hot. They are angry in a way that is patient.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,14 @@
   "carried_weapons": [
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "Meridian 88",
+    "Aslan Vasquez-Chatterjee",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "Old Harbor"
 }

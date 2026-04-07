@@ -12,7 +12,7 @@
   "role": "Street performer, acrobat, and puppet maker",
   "age": 19,
   "status": "active",
-  "location": "Grand Corridor, performs near the Calumet Rise transit junction; sleeps in a shared squat in Brightmoor Reclamation",
+  "location": "Grand Corridor, performs near the Calumet Rise transit junction; sleeps in a shared squat in Brightmoor Reclamation, near Kedzie and Division",
   "description": "Sefunatu is nineteen and looks younger, with a wiry, elastic build and warm brown skin with Polynesian-Romanian features that settle somewhere between striking and unconventional. She has a geneware tail — long, articulated, covered in fine iridescent fur that she grew in when she was fifteen and has since integrated so completely into her movement vocabulary that watching her without it now seems like watching a sentence with a word missing. Her hair is kept short and practical. She has a scar across her chin from a fall and a look of slightly aggressive cheerfulness that is partly performance and partly genuine.\n\nShe performs on the Grand Corridor's lower transit levels with an act that blends acrobatics, puppetry, and a kind of ritualistic street theater she has developed without formal training — her puppets are elaborate constructions of salvaged wire, synthetic fabric, and small projector nodes that make them partially holographic, giving them a ghostly translucence. She has been approached twice by Ringo entertainment scouts and twice refused, for reasons she articulates differently each time but that fundamentally come down to fear that being owned is less frightening than being seen clearly and found ordinary. She makes just enough to eat on good weeks and depends on the Brightmoor squat community the rest of the time.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,16 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Ferrogate Transit",
+    "Grand Corridor",
+    "Calumet Rise",
+    "The Reclamation Assembly",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Ringo Corponation",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Shelf"
 }

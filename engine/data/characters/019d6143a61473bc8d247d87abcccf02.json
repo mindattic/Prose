@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor, Edison Grid district",
   "age": 34,
   "status": "active",
-  "location": "Edison Grid, corner of Copper Row and the 14th underpass",
+  "location": "Edison Grid, corner of Copper Row and the 14th underpass, near Armitage and Milwaukee",
   "description": "Fenwick is a lean, unhurried man of medium height with deep umber skin and close-cropped hair that he keeps dyed a matte rust-red. He has a bioluminescent mod along his forearms — thin lines of blue-white light under the skin that pulse gently with his heartbeat, which he originally got because it helped him keep time when cooking stock. He wears the same canvas apron every day, bleached and re-stained so many times it has developed a geological stratigraphy of meals past. His cart, 'The Long Burn,' is a retrofitted maintenance vehicle he rebuilt himself over eighteen months, and he knows its every rattle and squeak as personally as a language.\n\nFenwick moves through the world with a quality of stillness that some people mistake for slowness and others, correctly, read as patience. He is not a talker — his cart is not a place for conversation so much as a place for eating — but he notices everything: who looks hungry versus broke, who's been crying, who's scanning the crowd too carefully. He keeps a small E.L.F. shrine rigged into the cart's boiler panel, a data-spirit he calls 'the Pilot Light' to whom he murmurs thanks each morning before ignition.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,17 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edison Grid",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Big Rig",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Palette",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Copper",
+    "Rust"
+  ],
+  "district": "The Circuit"
 }

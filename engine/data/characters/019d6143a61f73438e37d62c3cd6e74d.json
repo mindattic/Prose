@@ -12,7 +12,7 @@
   "role": "Fake ID vendor and forged document specialist — produces transit passes, corporate employment records, citizenship grades, and identity packages",
   "age": 41,
   "status": "active",
-  "location": "The Alban Souk, Bronzeline district — operates from a narrow print-shop front that sells legitimate business cards and event placards as a surface trade",
+  "location": "The Alban Souk, Bronzeline district — operates from a narrow print-shop front that sells legitimate business cards and event placards as a surface trade, near Western and Division",
   "description": "Gwenaëlle Osei-Diallo is the kind of person who has made themselves deliberately difficult to remember, which is a specific and cultivated skill. They are of medium height and medium build, with light-brown skin that sits at an unplaceable intersection of their Breton, Ghanaian, and Fulani inheritance, and they dress in muted colors and unremarkable cuts. The one exception is their hands, which they have had tattooed from wrist to fingertip in precise, circuit-board-fine geometric linework — not geneware, not chrome, just ink, chosen because it reminded them of the first forgery they were proud of. They keep their natural hair in a low wrap and wear plain-lensed glasses they don't need because it gives them something to do with their hands when thinking.\n\nThey are methodical, dry-humored, and possessed of a craftsperson's ego that they work hard to conceal. Every document they produce is technically flawless and they cannot resist occasionally making them beautiful — a font choice, a watermark pattern, a texture that no one asked for but that makes the thing feel real in the hand. They believe that identity should be available to everyone who needs one, and they have a deep and principled contempt for systems that make it otherwise. They have never met a citizenship algorithm they couldn't eventually beat.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,16 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Alban Souk",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Bronzeline",
+    "Flicker",
+    "PulsePoint HydraLine Fluid Balance Monitor",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

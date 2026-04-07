@@ -12,7 +12,7 @@
   "role": "Laundry operator and alterations mender",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, Unit 7 of the Pressed & Clean cooperative on Bogdanow Street",
+  "location": "Hamtramck Enclave, Unit 7 of the Pressed & Clean cooperative on Bogdanow Street, near Ashland and Division",
   "description": "Adaeze is a broad-shouldered woman with deep umber skin that has gone leathery at the knuckles from decades of hot water and chemical detergents. Her natural hair is gathered into a high wrap of faded indigo cloth, shot through with actual silver thread she stitched in herself for her fiftieth birthday. Her eyes are a watery hazel that turns almost gold under fluorescent light — a cosmetic iris mod she saved for six months to afford — and she wears no other augmentation. She moves with the unhurried authority of someone who has already decided she will not be rushed today or any other day.\n\nShe is known in the Enclave for two things: the sharpest crease in Meridian 88 and a bluntness that borders on prophecy. She will tell you exactly what is wrong with your relationship, your posture, and your collar stay in the same breath, and she will be correct on all three counts. She keeps a small shrine to the ELF she calls Grandma Rinse above her industrial press — offerings of fabric swatches and tiny bottles of softener — and she genuinely believes the old machine runs quieter when the shrine is tended.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,14 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-15R 'Reclaim'",
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Meridian 88",
+    "Tessera Corponation",
+    "Silver",
+    "Hazel Brink",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

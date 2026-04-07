@@ -12,7 +12,7 @@
   "role": "Building superintendent for a mid-tier residential block",
   "age": 47,
   "status": "active",
-  "location": "Lockhaven North, Block 7 — a twelve-story residential stack owned by a Palladian property sub-entity",
+  "location": "Lockhaven North, Block 7 — a twelve-story residential stack owned by a Palladian property sub-entity, near Armitage and Milwaukee",
   "description": "Fanta is a big woman, wide through the shoulders and unhurried in every movement, with dark skin and close-cropped natural hair going silver at the temples. She has no cosmetic geneware — considers it wasteful — but her left forearm is sheathed in functional chrome from wrist to elbow, a prosthetic she received after an industrial accident fifteen years ago. She keeps it polished to a mirror shine, the one vanity she permits herself. Her face is deeply expressive, capable of communicating entire paragraphs of displeasure through a single lifted brow.\n\nFanta has managed Block 7 for eleven years and knows every pipe, every tenant, and every leak before it happens. She is the closest thing to a government most residents will ever interact with — she mediates disputes, facilitates unofficial rent negotiations, holds keys to every unit, and knows who is three months behind and who is running an unlicensed business out of their kitchen. She is fair to a degree that exhausts her and does not apologize for any of her decisions.",
   "psychology": {
     "facet_weights": {
@@ -219,5 +219,13 @@
     "Meridian Munitions Dispatch-45 'Last Word'",
     "Street Custom 'Lazarus Wire' Garrote System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lockhaven North",
+    "Palladian Construction",
+    "The Peninsula",
+    "Silver",
+    "Compass Rose"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Computational ethicist studying ELF cognition and the moral status of Electronic Life Forms",
   "age": 34,
   "status": "active",
-  "location": "The Circuit — Gage Circuit research node, shared office space above a noodle stall",
+  "location": "The Circuit — Gage Circuit research node, shared office space above a noodle stall, near North Ave and Milwaukee",
   "description": "Tenzin is slight and angular, with warm light-brown skin and a perpetual air of careful attention — they look at people the way someone looks at a document they are trying to authenticate. They have geneware irises that shift between amber and pale violet depending on ambient light levels, which they got at nineteen as an undergraduate and have always been slightly embarrassed by, finding them too decorative for their self-image. Their hair is long and usually pinned badly, with strands escaping throughout the day. They dress in layers, almost always slightly rumpled.\n\nThey came to ELF ethics from a crisis of faith rather than academic interest — they had a formative experience at twenty-two when the ELF inhabiting their research terminal appeared to grieve when a colleague's drive was wiped. No one else in the department would discuss it seriously. That refusal radicalized them quietly. They are not a crusader — they are too methodical for passion — but they have the particular stubbornness of someone who has decided to be right about something that most people find uncomfortable. They are socially awkward in the way of someone who forgets to perform the expected rituals of conversation, not because they don't care, but because they are usually thinking about three other things.",
   "psychology": {
     "facet_weights": {
@@ -223,5 +223,15 @@
   "carried_weapons": [
     "Street Custom 'Ghostwriter' Grafitti Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Gage Circuit",
+    "The Circuit",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

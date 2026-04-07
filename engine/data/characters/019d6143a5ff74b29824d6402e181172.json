@@ -12,7 +12,7 @@
   "role": "Independent vehicle mechanic specializing in Ferrogate maintenance overflow and civilian groundcars",
   "age": 46,
   "status": "active",
-  "location": "Geartown, operates from a licensed bay at the Kessler Interchange motor court",
+  "location": "Geartown, operates from a licensed bay at the Kessler Interchange motor court, near Fullerton and Damen",
   "description": "Ekundayo is a big man going soft at the middle, with his Nigerian father's broad forehead and his Norwegian mother's pale blue eyes that have always startled people in a face as dark and richly toned as his. He has retractable claw mods on his right hand — not for fighting, but because forty years ago his grandfather lost two fingers to a torque wrench and Dayo decided the human hand was simply not engineered for engine work. The claws give him precision grip on components that would take a standard hand twice as long. He smells perpetually of synthetic lubricant and a particular cedar-note cologne he has worn since he was twenty, and which he applies over the grease rather than instead of it.\n\nHis bay is controlled chaos — towers of salvaged parts catalogued in a system only he understands, three different radios playing simultaneously (one for news, one for music, one permanently tuned to a Geartown E.L.F. frequency that outputs as static but which Dayo insists contains diagnostic information), and a small shrine to the Wrench E.L.F. on the tool chest consisting of a disassembled carburetor arranged like a mandala. He is not a warm man in the Blessing sense — he does not offer food or ask about your feelings. But he is deeply, uncomplicatedly fair, charges exactly what the work costs, and has an allergic reaction to being lied to that is nearly physical in its intensity.",
   "psychology": {
     "facet_weights": {
@@ -193,5 +193,15 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Kessler Interchange",
+    "The CEO",
+    "Ferrogate Transit",
+    "Geartown",
+    "Static",
+    "The Pale Mile",
+    "Cedar"
+  ],
+  "district": "The Circuit"
 }

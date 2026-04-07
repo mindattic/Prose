@@ -12,7 +12,7 @@
   "role": "Evidence removal and scene sanitation — cleaner",
   "age": 32,
   "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near North Ave and Milwaukee",
   "description": "Hadiya Arai-Ofori-Atta are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 32, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and they make no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a cleaner out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHadiya Arai-Ofori-Atta operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

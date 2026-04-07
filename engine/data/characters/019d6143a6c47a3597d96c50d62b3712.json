@@ -11,7 +11,7 @@
   "role": "Gene-mod body artist and tattooist",
   "age": 36,
   "status": "active",
-  "location": "Pilsen Veil, runs a studio called Dermis & Ghost out of a converted freight container",
+  "location": "Pilsen Veil, runs a studio called Dermis & Ghost out of a converted freight container, near Halsted and Division",
   "description": "Saoirse is compact and deliberate in movement, with dark olive skin covered from throat to ankle in her own accumulated work — a living portfolio in bioluminescent pigment, dermal sculpture, and chromatic scale-pattern geneware that shifts between copper and deep teal depending on her body temperature. Her canines are cosmetically elongated and slightly iridescent, a piece she did on herself at twenty-two that she now considers slightly embarrassing but has kept because removal would leave scars. Her hair is a complex architectural shape, natural black at the root and heat-reactive at the tips, changing from rust to amber when she's working close to the pigment-heating instruments.\n\nSaoirse's reputation in Pilsen Veil is built on what regulars call 'the consultation' — a two-hour process before any work begins, in which she asks questions about the client's life that seem invasive until the finished piece makes them make sense. She treats body modification as a form of autobiography, and she will refuse work she finds dishonest or purely decorative. This makes her difficult and expensive and perpetually booked three months out. She is also a quiet authority on geneware interactions and has more practical knowledge of mod-compatibility than most licensed Helix Biosystems techs.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,16 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Pilsen Veil",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "The Gradient Compact",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

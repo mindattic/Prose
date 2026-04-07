@@ -12,7 +12,7 @@
   "role": "Street pharmacist and herbal remedy vendor",
   "age": 52,
   "status": "active",
-  "location": "The Alban Souk, permanent pitch near the eastern water cisterns",
+  "location": "The Alban Souk, permanent pitch near the eastern water cisterns, near Pulaski and Chicago Ave",
   "description": "Adaora is a broad-shouldered woman with dark amber skin weathered by decades of outdoor market life, her natural hair tucked under a wide-brimmed plastene hat strung with dried medicinal herbs and small glass vials. Her eyes are warm brown with cosmetic irises that shift between a deep violet and copper-gold depending on the light — a cheap mod she got thirty years ago that she's never bothered to remove. Her hands are her most striking feature: enormous, steady, and perpetually stained with pigment from the botanical pastes she grinds fresh every morning.\n\nShe occupies a peculiar moral middle ground in the Souk — selling everything from genuine herbal supplements and unlicensed over-the-counter analogs to mild synth-narcotics she insists are 'medicinal.' She's not cruel, but she's not naive either. She mothers the young addicts who come to her while simultaneously keeping them coming back, a contradiction she rarely examines. Her stall is famous for a handwritten sign that reads: 'No judgment. No refunds. Ancestors watching.' She burns incense for the local E.L.F. that she calls Mama Cistern every morning before opening.",
   "psychology": {
     "facet_weights": {
@@ -227,5 +227,19 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "The Alban Souk",
+    "The Portico",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "The Pure Hand",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Glass",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

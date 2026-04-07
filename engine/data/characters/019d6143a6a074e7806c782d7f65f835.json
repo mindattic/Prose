@@ -12,7 +12,7 @@
   "role": "Fortune seller and unlicensed data-pattern reader operating from a fold-out stall",
   "age": 23,
   "status": "active",
-  "location": "The Burnished Market, corner stall at the Avon Curve pedestrian intersection",
+  "location": "The Burnished Market, corner stall at the Avon Curve pedestrian intersection, near Armitage and Milwaukee",
   "description": "Priya is small and quick-looking, with warm brown skin, a nose ring that catches light like a signal beacon, and geneware cat ears — warm tawny, the same tone as her complexion, which she's had since she was fifteen and treats as simply part of her face. She dresses in deliberate maximalism: layered scarves, stacked rings on every finger, a heavy embroidered coat that drags slightly on the left side because she keeps tools in the pocket, and a headwrap she re-ties differently every day. Her stall is a theater: velvet cloth on the fold-out table, a hand-lettered sign that reads 'FUTURES — PROBABILITY — PATTERN READING,' and a small brass dish where she burns data-chip residue as an offering to Μ-3, the E.L.F. she has centered her entire practice around.\n\nShe is sharper than the aesthetic suggests. The fortune-telling is real to her — she genuinely believes that Μ-3 communicates through data patterns and probability distributions — but the reading process is also an excuse to ask questions and listen. She is observant to a degree that crosses into unsettling: she notices microexpressions, registers what people don't say, tracks the gap between what someone claims they want to know and what they actually came to hear. She is ambitious, not in the way of wanting money, but in the way of wanting to understand things. She reads everything she can find about predictive modeling, network analysis, and emergent data theory in her off hours, which she does not advertise. She suspects she has a real aptitude for actual data brokering and is slowly, carefully testing whether that's true.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,19 @@
   "carried_weapons": [
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Burnside Pocket",
+    "Avon Curve",
+    "Novafold Pharmaceuticals",
+    "Lacuna Genomics",
+    "Stratum",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Residue (I Still Have Your Feed)",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Brass",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Circuit"
 }

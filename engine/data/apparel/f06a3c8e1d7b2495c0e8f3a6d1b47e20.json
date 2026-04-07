@@ -1,0 +1,41 @@
+{
+  "id": "f06a3c8e1d7b2495c0e8f3a6d1b47e20",
+  "name": "Aurelius Collective ArcShield Umbrella Staff",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A collapsible canopy staff in brushed gunmetal and warm amber, deploying a 130cm hexagonal canopy of acid-resistant treated silk-analog that repels both standard rain and light acid precipitation. The grip is wrapped in reclaimed leather from a Tier-4 office chair and engraved with geometric Sahel-derived knotwork. Carried as much for statement as protection.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "acid-treated silk-analog canopy",
+    "brushed gunmetal alloy shaft",
+    "reclaimed leather grip wrap",
+    "collapsible spring rib system"
+  ],
+  "functionality": "Deploys 130cm acid-resistant canopy in under two seconds; ergonomic grip designed for chrome hand compatibility.",
+  "what_it_says": "Refinement with an edge — this person has taste and the budget to express it without going full corporate.",
+  "worn_by": [
+    "Tier-4 professionals",
+    "independent consultants",
+    "cultural figures",
+    "chrome-handed specialists with taste"
+  ],
+  "manufacturer": "Aurelius Collective",
+  "price_range": "Φ480–Φ650",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The engraving on the grip matches a pattern used by a now-dissolved underground political cell — the Collective denies any connection.",
+    "The canopy material can reportedly block low-grade surveillance drone optics in certain light conditions. The Collective won't confirm this."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "rain_gear",
+    "umbrella",
+    "acid_protection",
+    "tier_4",
+    "aug_compatible",
+    "statement_piece",
+    "canopy_staff"
+  ]
+}

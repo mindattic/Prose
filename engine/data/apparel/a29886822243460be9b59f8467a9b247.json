@@ -1,0 +1,36 @@
+{
+  "id": "a29886822243460be9b59f8467a9b247",
+  "name": "Kessler Optics ARC-7 AR Glasses",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "Lightweight augmented-reality glasses with a titanium-alloy frame and photochromic lenses that shift from clear to smoke depending on ambient light. The ARC-7 overlays spatial data, comm feeds, and navigation waypoints directly onto the wearer's field of vision through micro-projected holographic layers.\n\nPopular with couriers, fixers, and mid-tier corponation analysts who need persistent data access without the commitment of ocular augmentation. The frames accept standard neural-port adapters for enhanced bandwidth.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "titanium alloy",
+    "photochromic polymer",
+    "micro-holo projectors"
+  ],
+  "functionality": "AR overlay, comm integration, navigation HUD",
+  "what_it_says": "You need data faster than your eyes can find it, but you're not ready to let someone cut into your skull for it.",
+  "worn_by": [
+    "couriers",
+    "fixers",
+    "corponation analysts"
+  ],
+  "manufacturer": "Kessler Optics",
+  "price_range": "Φ1,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of ARC-7s found at a crime scene contains cached AR overlays showing the victim's last navigation route — leading somewhere that doesn't appear on any public map."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 3",
+    "AR",
+    "glasses",
+    "Kessler Optics",
+    "tech"
+  ]
+}

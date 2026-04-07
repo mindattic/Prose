@@ -12,7 +12,7 @@
   "role": "Bartender, The Ferment Quarter dive bar called 'The Specific Gravity'",
   "age": 23,
   "status": "active",
-  "location": "The Ferment Quarter, The Specific Gravity bar on Menomonee Gulch",
+  "location": "The Ferment Quarter, The Specific Gravity bar on Menomonee Gulch, near Fullerton and Damen",
   "description": "Zara is a tall young woman with very dark skin, high cheekbones, and hair that she has modded to shift color with her mood — when she's calm it's a deep forest green, when she's amused it goes warm amber, and when she's angry it bleeds to a red-orange that the regulars have learned to read as a weather warning. She has patterned irises, a starburst of copper and black, and retractable claws she got partly for safety and partly because she thinks they look devastating. She tends to lean on the bar when she talks to people, getting close — not aggressive, but engaged, like she's genuinely interested in what you have to say and will stop being interested the moment you bore her.\n\nZara has worked at The Specific Gravity for three years, which she considers a fact of her present life rather than a permanent state. She is saving for something she hasn't told anyone about and has a habit of reading people with an accuracy that is unsettling in someone who seems, on the surface, to be primarily concerned with looking effortlessly cool. She has a complicated relationship with the bar's E.L.F. — a data-spirit she's decided is called 'the Tab,' which she believes is actively judging the customers and occasionally agrees with it out loud.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,14 @@
   ],
   "registered_firearms": [
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
-  ]
+  ],
+  "related_entities": [
+    "The Ferment Quarter",
+    "Menomonee Gulch",
+    "The Flood Register",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper"
+  ],
+  "district": "The Circuit"
 }

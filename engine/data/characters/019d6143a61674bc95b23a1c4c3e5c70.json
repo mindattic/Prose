@@ -12,7 +12,7 @@
   "role": "Junior hacker and digital scavenger, Highland Park Autonomous Zone",
   "age": 13,
   "status": "active",
-  "location": "Highland Park Autonomous Zone",
+  "location": "Highland Park Autonomous Zone, near Michigan Ave and Oak",
   "description": "Filomena is a small thirteen-year-old with a wide face, dark brown skin, and a gap between her two front teeth that she's been told she'll want to fix when she's older and has zero intention of fixing. Her hair is in dozens of tight braids with holographic thread woven through them — cheap cosmetic tech that cycles through colors depending on ambient signal density, which means in Highland Park it pulses violet-to-gold almost constantly. Her left eye has been fitted with a secondhand optical implant — a cracked-lens Ringo model that she bought off a parts trader for three weeks' earnings and installed herself with help from a tutorial E.L.F. she found in the Zone's mesh network. It doesn't sit quite right and she gets headaches from it, but it lets her see layered data overlays and she considers this entirely worth the pain.\n\nFilomena is curious to the point of recklessness and has the specific confidence of someone who has never been told 'no' by a system they couldn't eventually get around. She is warm and performatively fearless, quick to laugh, and treats digital intrusion as exploration rather than transgression — she genuinely believes information should be free and has not yet been in a situation bad enough to test whether she believes it when it costs her personally. She is not a criminal in her own mind. She is an archaeologist of things people are trying to hide. The Highland Park Zone mesh hosts an E.L.F. collective she calls the Chorus that she has built a complex trading relationship with — she gives them structured data about the outside world, they give her access privileges she has no business having.",
   "psychology": {
     "facet_weights": {
@@ -177,5 +177,17 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "The Consensus",
+    "Zheng-dao Bioelectric",
+    "Stratum",
+    "Tessera Networked SMG TNSM-3 'Chorus'",
+    "Lazarus IDP-1 'Teeth'",
+    "Ringo Corponation",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Gold"
+  ],
+  "district": "The Spires"
 }

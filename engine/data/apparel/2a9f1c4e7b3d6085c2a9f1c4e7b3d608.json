@@ -1,0 +1,39 @@
+{
+  "id": "2a9f1c4e7b3d6085c2a9f1c4e7b3d608",
+  "name": "Ironpass Transit Operator's High-Back Cargo Pant",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Straight-leg cargo trousers in charcoal ripstop with an elevated back rise and a reinforced seat panel — designed for workers who spend shifts sitting in transit cabs. Four side cargo pockets with press-stud closures sit flat when empty. The waistband is wide and stiffened to hold a comms rig without sagging.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ripstop polyester",
+    "reinforced cotton seat panel",
+    "nylon webbing waistband",
+    "brass press studs"
+  ],
+  "functionality": "High back rise prevents gap exposure during seated operation; reinforced knees and seat extend wear life under constant friction.",
+  "what_it_says": "You sit in a cab for ten hours and these pants were built for exactly that — no pretense, pure function.",
+  "worn_by": [
+    "transit operators",
+    "rail engineers",
+    "bus drivers",
+    "tram crew"
+  ],
+  "manufacturer": "Ironpass Workwear Division",
+  "price_range": "Φ50–Φ75",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An operator's cargo pocket contains a hand-drawn map of a section of tunnel that doesn't appear on any official transit schematic.",
+    "The reinforced seat panel is a known quality marker — counterfeit versions skip it, and workers who sit on bare ripstop for ten hours know the difference immediately."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "circuit_workwear",
+    "cargo-pants",
+    "transit",
+    "tier2",
+    "seated-work"
+  ]
+}

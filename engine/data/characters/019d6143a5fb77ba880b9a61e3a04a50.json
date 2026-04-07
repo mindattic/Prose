@@ -12,7 +12,7 @@
   "role": "Building super, manages the physical infrastructure of the Grainfort Cistern Towers residential complex",
   "age": 47,
   "status": "active",
-  "location": "Grainfort, sub-level maintenance office, Cistern Tower B",
+  "location": "Grainfort, sub-level maintenance office, Cistern Tower B, near sub-level access near Dearborn and Jackson",
   "description": "Dzmitry is a heavyset man with a short grey-flecked beard and the permanently slightly-squinting expression of someone who has spent a lot of time in bad lighting. His Belarusian father gave him pale grey eyes; his Burkinabè mother gave him dark skin and a wide, expressive mouth that he almost never uses for smiling on the job but uses quite a lot off it. He has a patterned iris mod — concentric rings of copper and black that glow faintly in darkness, which he got twenty years ago because the original model came with a built-in low-light enhancement he still uses every single day in the maintenance tunnels. He is perpetually in some form of work clothing: coveralls, a utility harness, boots that have been re-soled four times.\n\nHe has been the super for the Cistern Towers for eleven years, and he knows every pipe, every junction, every failing junction-that-he-has-personally-been-preventing-from-failing-for-three-years in the building's guts. He has a deeply territorial relationship with the towers' infrastructure, the way a surgeon might feel about a long-term patient. He doesn't love the residents particularly — he loves the building, and the residents are the people who live inside the thing he loves. This distinction occasionally causes interpersonal friction.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,14 @@
   "registered_firearms": [
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
-  ]
+  ],
+  "related_entities": [
+    "Lazarus Pharmaceuticals Mnemonic Tide Reservoir",
+    "Grainfort",
+    "Copper",
+    "The Pale Mile",
+    "Compass Rose",
+    "Nightlight"
+  ],
+  "district": "The Underworld"
 }

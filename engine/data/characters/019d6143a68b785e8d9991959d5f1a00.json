@@ -11,7 +11,7 @@
   "role": "Fixer - Smuggling specialist",
   "age": 51,
   "status": "active",
-  "location": "Old Harbor",
+  "location": "Old Harbor, near Lake Shore and Wacker",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -99,5 +99,6 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "district": "Old Harbor"
 }

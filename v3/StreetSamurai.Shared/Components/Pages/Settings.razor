@@ -444,15 +444,28 @@
 <div class="row g-3 mb-3">
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted"><span>HERE Maps <a href="https://platform.here.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span></div>
+            <div class="card-header text-muted"><span><i class="bi bi-map"></i> Maps</span></div>
             <div class="card-body">
                 <div class="row g-3">
+                    <div class="col-md-3">
+                        <label class="form-label text-muted">Default Provider</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.MapService">
+                            <option value="google">Google Maps</option>
+                            <option value="here">HERE Maps</option>
+                        </select>
+                    </div>
+                    <div class="col-md-9">
+                        <label class="form-label text-muted">Google Maps API Key</label>
+                        <div class="input-group"><input type="@KeyType("google-maps")" class="form-control bg-dark text-light border-secondary" placeholder="AIza..." @bind="SettingsSvc.GoogleMapsApiKey" @bind:event="onchange" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("google-maps")'><i class="bi @(visibleKeys.Contains("google-maps") ? "bi-eye-slash" : "bi-eye")"></i></button></div>
+                    </div>
+                </div>
+                <div class="row g-3 mt-1">
                     <div class="col-md-4">
-                        <label class="form-label text-muted">App ID</label>
+                        <label class="form-label text-muted">HERE App ID</label>
                         <div class="input-group"><input type="@KeyType("here-app")" class="form-control bg-dark text-light border-secondary" placeholder="App ID" @bind="SettingsSvc.MapAppId" @bind:event="onchange" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("here-app")'><i class="bi @(visibleKeys.Contains("here-app") ? "bi-eye-slash" : "bi-eye")"></i></button></div>
                     </div>
                     <div class="col-md-8">
-                        <label class="form-label text-muted">API Key</label>
+                        <label class="form-label text-muted">HERE API Key</label>
                         <div class="input-group"><input type="@KeyType("here-api")" class="form-control bg-dark text-light border-secondary" placeholder="HERE Maps API key" @bind="SettingsSvc.MapApiKey" @bind:event="onchange" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("here-api")'><i class="bi @(visibleKeys.Contains("here-api") ? "bi-eye-slash" : "bi-eye")"></i></button></div>
                     </div>
                 </div>

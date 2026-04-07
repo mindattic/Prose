@@ -13,7 +13,7 @@
   "role": "Senior urban design director at a Spire-tier architectural firm; covert historical preservationist",
   "age": 58,
   "status": "active",
-  "location": "The Spire",
+  "location": "The Spire, near Lake Shore Drive and Division",
   "description": "Yseult is a tall, angular woman of Italian-Lao descent whose posture suggests someone who has spent decades deciding which rooms to fill and which to empty. Her silver-streaked black hair is worn in a severe architectural roll, and her clothing is always monochrome — charcoals and off-whites — chosen, she once said, so that nothing she wears competes with what she is looking at. The fine lines around her eyes and the deliberate economy of her expressions give her the quality of a building that has been renovated so many times only the original load-bearing structure remains.",
   "psychology": {
     "facet_weights": {
@@ -238,5 +238,14 @@
   "carried_weapons": [
     "Tessera TKR-SL 'Inquisitor'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Drowned Commission",
+    "The Shelf",
+    "The Spire",
+    "ARCHITECT",
+    "ARCHIVE",
+    "Silver"
+  ],
+  "district": "The Spires"
 }

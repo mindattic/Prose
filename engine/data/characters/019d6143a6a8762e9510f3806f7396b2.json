@@ -12,7 +12,7 @@
   "role": "Private investigator, licensed bounty compliance and debt recovery, operates out of Edgewater Prism",
   "age": 51,
   "status": "active",
-  "location": "Edgewater Prism — office above a bioluminescent algae bar called Photikar",
+  "location": "Edgewater Prism — office above a bioluminescent algae bar called Photikar, near Lincoln and Addison",
   "description": "Rafaelo is a big man going soft in the middle, with dark olive-bronze skin, heavy grey-salted hair he keeps pulled back with a rubber band, and the kind of face that has been patient for so long it has settled permanently into patience. He dresses in the same rotation of rumpled linen jackets in muted terracotta and grey, never quite formal and never quite casual, and he has a geneware tail — a long, unhurried thing in rust-brown fur — that he got in his thirties when tails were newly fashionable and has kept because he grew fond of it. It curls around chair legs when he's thinking and goes very still when he's alarmed.\n\nHe has been a licensed PI for nineteen years. He started as Metro Police, left without drama, and built his solo practice from debt-recovery cases so dull that most investigators wouldn't touch them. He is extraordinarily good at finding people who do not want to be found, not because he is relentless but because he is patient and because he understands that almost everyone leaves one thread they don't notice. He charges fairly, keeps meticulous case notes, and has a long-standing rule against working cases that involve children. His office has a dedicated E.L.F. shrine — a small mahogany cabinet, always open — that he calls Ledger and which he believes keeps running tallies of debts, moral and financial, across the city. He consults it before taking unusual cases.",
   "psychology": {
     "facet_weights": {
@@ -205,5 +205,16 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-SL40 'Partisan'",
     "Crucible Industries Viper Mk.III 'Copperhead'"
-  ]
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Mahogany",
+    "Adaeze Chen-Hawkins",
+    "Bronze",
+    "Handed",
+    "Rust"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Sociologist specializing in informal economies and social structures of the Shelf communities",
   "age": 39,
   "status": "active",
-  "location": "Hough Reclamation — maintains a small field office in a converted community center, travels frequently",
+  "location": "Hough Reclamation — maintains a small field office in a converted community center, travels frequently, near Ashland and Chicago Ave",
   "description": "Nkiruka grew up in the Shelf and got out through scholarships, then spent the next decade and a half choosing to go back — a decision her university colleagues find alternately admirable and baffling. She is a medium-height woman with deep brown skin, natural hair that she usually keeps wrapped, and geneware cat ears she got as a teenager that she has never removed, treating them as simply part of her face. The ears are dark brown and mobile, which means her emotional state is often broadcast before her expression catches up — they flatten when she is frustrated, perk forward when she is genuinely interested. She carries herself with the particular ease of someone who is comfortable in rooms that make other academics nervous.\n\nShe has a reputation in the university system as difficult — meaning she publishes findings that are politically inconvenient, refuses to anonymize her data in ways that would make it easier to misuse, and has twice written public responses to policy papers that cited her work incorrectly. On the Shelf, her reputation is more complicated: some communities trust her completely, others view her with the appropriate suspicion reserved for someone with institutional credentials who wants to study you. She navigates this with unusual self-awareness, asking permission, attributing community knowledge, and taking twice as long on studies as her department thinks necessary. She is warm and quick-laughing in person, and implacably persistent in writing.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,15 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "WELLSPRING",
+    "The Shelf",
+    "The Wire Taps",
+    "Tessera Corponation",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

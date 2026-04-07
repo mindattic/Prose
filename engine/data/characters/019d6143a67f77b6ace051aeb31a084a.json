@@ -12,7 +12,7 @@
   "role": "Retired Corporate Wars soldier (former Palladian contract infantry), pension-dependent resident",
   "age": 91,
   "status": "active",
-  "location": "Montclare Quiet, Room 7, the Aldgate Assisted Living Node",
+  "location": "Montclare Quiet, Room 7, the Aldgate Assisted Living Node, near North Ave and Damen",
   "description": "Olekan Mbeki-Sigurðsson is ninety-one years old and looks eighty and moves like sixty-five, which he attributes to the military-grade bone lacing he received at twenty-two and the stubbornness he received at birth. He is lean and upright, dark-skinned, with a head shaved smooth that he keeps polished, and a face that has resolved from handsome into something more interesting — all strong lines and earned geography. His left hand trembles slightly, a nerve issue from a combat incident in 2153 that was never fully repaired. The rest of him does not tremble. He wears his old Palladian insignia on a chain around his neck, not out of loyalty to the corporation — he will explain in detail why that would be idiotic — but because he cannot separate it from the men and women who wore it beside him.\n\nHe is the oldest resident at Aldgate and has outlived three care coordinators and four attempts to move him to a higher-dependency facility. He plays tessera chess with anyone who will sit across from him and loses on purpose to interesting opponents to get a longer game. He is not warm exactly, but he is fair, and in a place that has often not been fair to him, this has made him a figure of quiet authority among the other residents. He will not discuss his actual combat experiences unless he trusts you completely. He will talk about his fellow soldiers constantly.",
   "psychology": {
     "facet_weights": {
@@ -252,5 +252,14 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Montclare Quiet",
+    "Avon Curve",
+    "Palladian Construction",
+    "Tessera Corponation",
+    "Witness",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Laceworks"
 }

@@ -11,7 +11,7 @@
   "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
   "age": 34,
   "status": "active",
-  "location": "Fort Anchor",
+  "location": "Fort Anchor, near Western and Chicago Ave",
   "description": "Adaeze is built like a structural column — wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn't discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined Metro PD because her uncle did, and stayed because she's genuinely good at de-escalation — ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
   "psychology": {
     "facet_weights": {
@@ -243,5 +243,11 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "Fort Anchor",
+    "Neuromorphic Pressure Cestus",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

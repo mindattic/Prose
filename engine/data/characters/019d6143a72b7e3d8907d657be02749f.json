@@ -12,7 +12,7 @@
   "role": "Rehabilitation specialist running a community physiotherapy cooperative in Brightmoor Reclamation",
   "age": 62,
   "status": "active",
-  "location": "Brightmoor Reclamation — the cooperative is in a converted two-story auto-shop called The Mending Ground",
+  "location": "Brightmoor Reclamation — the cooperative is in a converted two-story auto-shop called The Mending Ground, near Ashland and Chicago Ave",
   "description": "Yohannes is tall and angular in the way of men who were once broader and have shed weight across decades of physical work. His Ethiopian-Samoan heritage gives him a face that reads as ageless to people who do not look carefully — the lines around his eyes are deep but his posture is impeccable, a side effect of forty years of correcting other people's. His hair is white and he keeps it in tight locks, usually pinned back. His left arm from the elbow down is a prosthetic — a practical, unglamorous Ferrogate Transit worker's model he has refused to upgrade because, he says, it does exactly what he needs and he is not performing affluence.\n\nHe founded The Mending Ground cooperative twenty years ago after a Ferrogate Transit industrial accident took his forearm and the company's rehabilitation program discharged him after six weeks with paperwork he did not have the corporate literacy to challenge. He taught himself physiotherapy from archived textbooks and eventually brought in two trained practitioners. He is gruff in the way of people who have been in pain and do not find sentiment useful, but he remembers every patient's name and the specific injury that brought them to him, and he asks after their families.",
   "psychology": {
     "facet_weights": {
@@ -215,5 +215,13 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Ferrogate Transit",
+    "The Reclamation Assembly",
+    "The Heritage Vault",
+    "Helix Biosystems DermRenew Cellular Renewal Lattice"
+  ],
+  "district": "The Shelf"
 }

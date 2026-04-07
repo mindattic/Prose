@@ -12,7 +12,7 @@
   "role": "Xenolinguist and computational linguist studying E.L.F. communication patterns",
   "age": 33,
   "status": "active",
-  "location": "Meridian Core, Gage Circuit research cluster",
+  "location": "Meridian Core, Gage Circuit research cluster, near State and Monroe",
   "description": "Thessaly has a face that people describe as 'always mid-thought' — slightly parted lips, eyes that track something no one else can see, a faint frown of concentration that strangers sometimes misread as disapproval. They are medium height, with warm brown skin, natural hair worn in a large puff that they absentmindedly touch when thinking, and bioluminescent patches along their jaw and temples that shift between soft green and pale gold depending on their mood — geneware they got at twenty-two as a kind of bold declaration and now simply live with. They dress practically: cargo layers, good shoes, always a secondary input device clipped somewhere on their person.\n\nThessaly is intellectually volcanic. They generate hypotheses the way some people generate small talk — constantly, involuntarily, often before they've said hello. Their field is formally classified as xenolinguistics, but what they actually do is build interpretive frameworks for E.L.F. communication, a pursuit that most of their colleagues consider either brilliant or unhinged. They believe E.L.F.s have a form of language that predates human digital infrastructure by conceptual millennia. They have partial evidence for this. The partial-ness keeps them awake.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,16 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core",
+    "Gage Circuit",
+    "Pullman Works",
+    "the_meridian_office_park",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Nesting Doll",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "Meridian Core"
 }

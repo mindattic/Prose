@@ -12,7 +12,7 @@
   "role": "Laundry operator and seamstress, runs a combination wash-and-mend shop",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave, corner of Brewer's Spine",
+  "location": "Hamtramck Enclave, corner of Brewer's Spine, near Halsted and Chicago Ave",
   "description": "Adaeze is a wide-shouldered woman with deep brown skin mapped by a lifetime of steam and chemical exposure — her forearms are permanently flushed pink at the wrists from the industrial solvents she's used for decades. Her hair is silver-white and she keeps it pinned under a cloth wrap she changes daily, each one a different pattern that regulars have learned to read like a mood ring. She has no geneware, considers it wasteful, but she did spring for a pressure-sensitive haptic overlay on her right fingertips years ago so she could feel thread tension without squinting. She wears bifocal AR lenses clipped to a beaded chain around her neck.\n\nAdaeze is the kind of woman who says very little but means everything she says. Her shop, called Semedo's Clean, has been in the same narrow slot between a noodle stand and a defunct print kiosk for twenty-two years. She does not advertise. She does not need to. She is the institutional memory of the Enclave — she has washed the funeral clothes of people whose grandchildren now bring her their work uniforms. Her silences are not unkind, but they are evaluative, and people who sit in her waiting chairs often find themselves confessing things they had not planned to.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,15 @@
   "registered_firearms": [
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Brewer's Spine",
+    "Cinderblock Ai",
+    "Tessera Corponation",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Silver",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
+  ],
+  "district": "The Shelf"
 }

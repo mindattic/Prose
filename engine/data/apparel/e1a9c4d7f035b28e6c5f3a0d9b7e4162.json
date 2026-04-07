@@ -1,0 +1,42 @@
+{
+  "id": "e1a9c4d7f035b28e6c5f3a0d9b7e4162",
+  "name": "Ironveil PMC Freecontract Assault Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Stripped-back matte-black and raw-iron grey mixed-source armor — ceramic plates from three different manufacturers, ballistic-weave fatigues patched and re-patched, marked only by a stenciled iron-veil mask logo in flat white on the left pauldron and helmet side. The helmet is a salvaged-military full-face shell with aftermarket thermal optics and a cracked but functional blast visor, held together with bonding resin and pride. Load rig is heavy-duty third-party webbing carrying whatever the current contract requires — the pouches are worn, re-sewn, and unlabeled. Boots are mismatched composite-toe tactical, both functional, neither matching, both resoled at least twice.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "mixed-source ceramic armor plates",
+    "patched ballistic-weave fatigues",
+    "salvaged military helmet shell",
+    "aftermarket thermal optic housing",
+    "resoled composite-toe tactical boots"
+  ],
+  "functionality": "Modular load configuration adaptable to any contract type, aftermarket thermal overlay, and durable enough to survive being field-repaired indefinitely.",
+  "what_it_says": "No corp owns them, no corp protects them — they get the job done and they've survived long enough to prove it.",
+  "worn_by": [
+    "Ironveil PMC contractors",
+    "independent mercenaries",
+    "former corpsec who burned their contracts",
+    "freecontract operators"
+  ],
+  "manufacturer": "Ironveil PMC (independent, no fixed manufacturer — sourced per operative)",
+  "price_range": "Φ 1,200–Φ 3,500 (self-sourced, varies wildly)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The ceramic plate over one operative's heart is stamped with a Stahl-Koenig IronGuard serial number — someone took it off a body, and the original owner's name is still written inside in marker.",
+    "Ironveil just took a contract that puts them directly opposite a Halcyon Dynamics detail — and two of the Ironveil operators used to wear gold-and-navy."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "military_corpsec_kit",
+    "independent_pmc",
+    "ironveil",
+    "mercenary",
+    "tactical",
+    "freecontract",
+    "salvage_kit"
+  ]
+}

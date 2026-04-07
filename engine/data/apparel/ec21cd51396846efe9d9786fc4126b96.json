@@ -1,0 +1,36 @@
+{
+  "id": "ec21cd51396846efe9d9786fc4126b96",
+  "name": "Helion Manufacturing Conductive Thread Undersuit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A base layer woven with conductive thread pathways that carry low-voltage electrical signals across the body, serving as a wearable circuit board. Augmentation hardware installed in different body locations can communicate through the suit's conductive network instead of requiring internal wiring.\n\nDesigned for heavily augmented individuals whose implants need a unified communication bus. The undersuit eliminates the need for subdermal wiring between augmentation sites — a cheaper, less invasive, and reversible alternative to permanent internal networking.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "conductive thread network",
+    "signal-insulated base fabric",
+    "augmentation interface contacts"
+  ],
+  "functionality": "External augmentation networking, low-voltage signal routing, implant communication bus",
+  "what_it_says": "Your body is a network and this suit is the wiring you can take off at the end of the day.",
+  "worn_by": [
+    "heavily augmented individuals",
+    "augmentation patients",
+    "cybernetic integration candidates"
+  ],
+  "manufacturer": "Helion Manufacturing",
+  "price_range": "Φ2,100",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Conductive Thread Undersuit begins routing signals between augmentation sites that weren't programmed to communicate — the suit's network has connected systems that were intentionally isolated."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 3",
+    "conductive",
+    "augmentation",
+    "networking",
+    "cybernetic"
+  ]
+}

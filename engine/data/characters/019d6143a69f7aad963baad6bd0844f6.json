@@ -12,7 +12,7 @@
   "role": "Corporate Security Guard, Axiom Security Division — Executive Campus Protection",
   "age": 27,
   "status": "active",
-  "location": "Grosse Pointe Enclosure, Meridian 88",
+  "location": "Grosse Pointe Enclosure, Meridian 88, near Milwaukee and North Ave",
   "description": "Priscila is lean and angular with the kind of posture that suggests it's a weapon. She has her father's Ghanaian cheekbones and her mother's Siberian coloring — a pale complexion with warm undertones, dark hair she wears in a severe center-parted braid. Her eyes are factory-standard brown but her irises have been upgraded to tactical amber, which gives her peripheral dark-vision in the Enclosure's manicured shadow gardens and makes her look, in the right light, faintly predatory. A small cat tail — rust-colored, kinetic geneware she got on a dare at twenty-two and has come to love — flicks at her hip when she's irritated, which is often, and it has ruined more than one effort to seem professionally impassive.\n\nShe works the Grosse Pointe Enclosure's inner residential ring, which means she guards the homes of Axiom executives who regard her as furniture that breathes. She is very good at her job and she resents it in a specific, contained way — the way you resent a language you're fluent in that doesn't belong to you. She has a blistering private contempt for the people she protects and an equally fierce professionalism that won't let her do the job badly regardless. She's been offered an investigator track twice and declined both times, though she couldn't explain why to anyone's satisfaction, including her own.",
   "psychology": {
     "facet_weights": {
@@ -256,5 +256,17 @@
   ],
   "registered_firearms": [
     "Crucible Industries Havoc-44 'Mauler'"
-  ]
+  ],
+  "related_entities": [
+    "Grosse Pointe Enclosure",
+    "Meridian 88",
+    "Palladian Construction",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "TESSERA PA-5 'Attendant'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial",
+    "The Pale Mile",
+    "Rust"
+  ],
+  "district": "The Spires"
 }

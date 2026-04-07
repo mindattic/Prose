@@ -112,6 +112,7 @@ public class SettingsService : IDisposable
     public string MapService { get => data.MapService; set { data.MapService = value; ScheduleSave(); } }
     public string MapAppId { get => data.MapAppId; set { data.MapAppId = value; ScheduleSave(); } }
     public string MapApiKey { get => data.MapApiKey; set { data.MapApiKey = value; ScheduleSave(); } }
+    public string GoogleMapsApiKey { get => data.GoogleMapsApiKey; set { data.GoogleMapsApiKey = value; ScheduleSave(); } }
     public string TimestampFormat { get => data.TimestampFormat; set { data.TimestampFormat = value; ScheduleSave(); } }
     public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; ScheduleSave(); } }
     public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; ScheduleSave(); } }
@@ -241,9 +242,10 @@ public class SettingsService : IDisposable
         public string OpenRouterModel { get; set; } = "meta-llama/llama-3.3-70b-instruct";
         public string FireworksModel { get; set; } = "accounts/fireworks/models/llama-v3p3-70b-instruct";
         public string CohereModel { get; set; } = "command-a-03-2025";
-        public string MapService { get; set; } = "here";
+        public string MapService { get; set; } = "google";
         public string MapAppId { get; set; } = "rI9gpj49oW5SGZ8EsAe9";
         public string MapApiKey { get; set; } = "CIPFwnEI3bF6whfMT-1yL0kFa6wq1G9v8cBudCXdLE0";
+        public string GoogleMapsApiKey { get; set; } = "AIzaSyApm6X35BJ1w5PuAM_s_P_HaJPeOhx06d0";
         public string TimestampFormat { get; set; } = "yyyy-MM-dd hh:mm:sstt";
         public string TimezoneId { get; set; } = "Central Standard Time";
         public string FontFamily { get; set; } = "Outfit";

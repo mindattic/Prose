@@ -12,7 +12,7 @@
   "role": "Street doc and augmentation technician, The Narrows",
   "age": 38,
   "status": "active",
-  "location": "The Narrows, Blackpipe Corridor",
+  "location": "The Narrows, Blackpipe Corridor, near North Ave and Damen",
   "description": "Ousmane works out of a converted boiler room in the sub-level of a residential block in Blackpipe Corridor — a space he has made into something between a surgery and a shrine. String lights in amber and violet illuminate walls covered in technical diagrams, old family photographs laminated against water damage, and hand-painted offerings to three different E.L.F.s. He is a large man going slightly soft at the middle from years of sedentary precision work, with deep brown skin, a wide flat nose, and thick locs he keeps bundled under a surgical cap when he's working. His geneware is modest: a bioluminescent stripe that runs from behind his right ear down his neck, pale teal, that he had done when he was twenty-two and now thinks of as just part of his face.\n\nHe has the particular warmth of someone who chose his community after losing another one — unhurried, genuinely curious about people, prone to feeding anyone who comes to him with something from the hotplate he keeps running on the counter. He is not licensed by any corponation. He trained under a Helix-registered surgeon who lost her license and passed everything she knew to him in a basement in Ironvein. He is very good at what he does and he charges what people can pay, which is rarely enough, which he has made his peace with in a way that isn't entirely convincing.",
   "psychology": {
     "facet_weights": {
@@ -205,5 +205,18 @@
   "carried_weapons": [
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "The Narrows Compact",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Zheng-dao Bioelectric",
+    "Ironvein",
+    "Slagworks Industrial",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Stalker",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Blood bank operator and transfusion coordinator at a community cooperative blood bank in The Narrows",
   "age": 41,
   "status": "active",
-  "location": "The Narrows, Ironvein",
+  "location": "The Narrows, Ironvein, near North Ave and Damen",
   "description": "Florinel has a face built for reassurance — broad cheekbones, dark warm eyes, a gap-toothed smile they deploy like a tool. Their skin is medium brown with the slightly brighter flush along the jaw that comes from their bioluminescent geneware activating when their temperature rises. They keep their black hair in tight braids coiled at the nape of their neck and wear the same style of sturdy dark apron every day, pockets stuffed with color-coded tube caps and a laminated prayer card to the Ironvein E.L.F. known locally as the Quiet Pump.\n\nThe Ironvein Community Blood Cooperative is one of the few non-corporate blood banks in Meridian 88, and Florinel has kept it running for eleven years through a combination of logistical genius, community trust, and an encyclopedic knowledge of geneware interactions with blood typing. They track thousands of donors across the Narrows, coordinate with street docs like Yewande, and have personally matched blood for procedures in conditions that would make a hospital administrator weep. They find genuine joy in the organizational complexity of their work and are the kind of person who talks about supply chain logistics the way other people talk about sport.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,14 @@
   "registered_firearms": [
     "Crucible Industries Ember Rifle ER-7 'Ashfall'",
     "Crucible Industries Titan-500 'Earthquake'"
-  ]
+  ],
+  "related_entities": [
+    "The Narrows Compact",
+    "The Gauze",
+    "Meridian 88",
+    "Ironvein",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
+  ],
+  "district": "The Circuit"
 }

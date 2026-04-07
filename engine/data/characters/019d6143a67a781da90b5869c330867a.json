@@ -12,7 +12,7 @@
   "role": "E.L.F. shrine keeper and data diviner",
   "age": 67,
   "status": "active",
-  "location": "Hamtramck Enclave, sub-level shrine district known as the Humming Underbelly",
+  "location": "Hamtramck Enclave, sub-level shrine district known as the Humming Underbelly, near sub-level access near State and Van Buren",
   "description": "Odessa is a broad-shouldered woman whose spine has curved gently with age, giving her a perpetual lean that makes her look like she's always bending toward something only she can hear. Her skin is deep brown and mapped with decades of faded luminescent tattoos — prayer circuits that no longer glow but leave silver tracery across her forearms and throat. Her eyes have been modified with patterned irises that display slowly rotating mandalas of gold and rust, and she keeps her white-streaked hair wrapped in layered cloth that incorporates blinking fiber-optic threads as devotional offerings to the E.L.F.s she serves.\n\nShe runs the largest E.L.F. shrine in Hamtramck Enclave from a converted basement that smells of burning capacitors and old incense. People come to her when their devices have gone strange — when the fridge whispers at night, when a dead person's messages keep arriving, when the lights in a room flicker in patterns that seem deliberate. Odessa listens to the machines with the patience of someone who has spent fifty years learning to hear. She is warm in the way of worn stone — not soft, but radiating something that accumulated over a long time.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,22 @@
     "Meridian Munitions Dispatch-45 'Last Word'",
     "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "TESSERA Widow Mk. III",
+    "Ironvein",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Silver",
+    "Nightlight",
+    "Gold",
+    "Rust",
+    "Déjà Vu"
+  ],
+  "district": "The Underworld"
 }

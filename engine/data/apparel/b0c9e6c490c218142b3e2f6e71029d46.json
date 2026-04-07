@@ -1,0 +1,36 @@
+{
+  "id": "b0c9e6c490c218142b3e2f6e71029d46",
+  "name": "Chronotek Signal-Blocking Watch Case",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A wrist-worn case that holds a standard smartwatch or comm device inside a Faraday-shielded enclosure. When closed, the device inside is completely invisible to all wireless scanning. When opened, the device functions normally. The case adds about 8mm of bulk to the wrist profile.\n\nCarried by individuals who want their connected devices accessible but not broadcasting their location at all times. Closing the case is a conscious act of disappearing from the network — opening it is a conscious act of returning. The ritual of choosing when to be visible gives the wearer a sense of control in a city where surveillance is ambient.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "Faraday-shielded enclosure",
+    "mechanical hinge",
+    "wrist-mounting bracket"
+  ],
+  "functionality": "Selective device signal blocking, Faraday enclosure, manual visibility toggle",
+  "what_it_says": "You decide when the network knows where you are, and you carry that decision on your wrist.",
+  "worn_by": [
+    "privacy-conscious professionals",
+    "runners",
+    "off-grid sympathizers"
+  ],
+  "manufacturer": "Chronotek",
+  "price_range": "Φ340",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Signal-Blocking Watch Case is found open on a desk — the device inside was broadcasting location data for exactly seven minutes before the case was closed again, a window that matches the duration of an encrypted data transfer from the same building."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 2",
+    "watch case",
+    "Faraday",
+    "privacy",
+    "signal blocking"
+  ]
+}

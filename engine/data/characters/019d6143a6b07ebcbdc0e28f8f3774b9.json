@@ -11,7 +11,7 @@
   "role": "Fixer - Forced entry broker",
   "age": 37,
   "status": "active",
-  "location": "Geartown",
+  "location": "Geartown, near Milwaukee and Damen",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -98,5 +98,9 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Geartown"
+  ],
+  "district": "The Circuit"
 }

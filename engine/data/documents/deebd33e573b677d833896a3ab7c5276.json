@@ -6,7 +6,11 @@
   "date": "2219",
   "classification": "restricted",
   "description": "Someone's BCI recorded 14 seconds of what appears to be a news broadcast from a network that doesn't exist, reporting on events that haven't happened, in a city that isn't Meridian 88. The anchor's face is partially corrupted. The chyron reads: \"[CITY NAME CORRUPTED] — YEAR 2— [CORRUPTED]\"",
-  "related_entities": [],
+  "related_entities": [
+    "Meridian 88",
+    "Crisanto Dela Torre-Ångström",
+    "Tui Bautista-Nwosu"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What network broadcast this?",

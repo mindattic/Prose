@@ -12,7 +12,7 @@
   "role": "Teenage hyperlane migrant and small-time goods runner",
   "age": 16,
   "status": "active",
-  "location": "Waukegan Industrial Shelf, rotating between three squat locations",
+  "location": "Waukegan Industrial Shelf, rotating between three squat locations, near Lake Shore and Wacker",
   "description": "Ezili is all angles and energy — sharp elbows, quick eyes, a mouth that moves faster than her thoughts can catch up with. She is dark-skinned and underweight in a way that suggests irregular eating rather than any particular biology, and she has a crop of cat ears she got from a budget geneware parlor in exchange for three weeks of courier work — they're a bright, impractical copper that she is extremely proud of and that she knows compromise her ability to be inconspicuous, a trade-off she has decided is worth it. Her natural hair is shaved close underneath the ears, emphasizing them. She dresses in whatever she can find, layered for weather and fast movement.\n\nShe arrived in Meridian 88 four months ago on a hyperlane freight ride, having left a situation she won't describe in detail. She is trying very hard to project competence and confidence and is somewhat successful at this, which has gotten her a network of informal contacts and a reputation as reliable among the Waukegan freight community — she delivers things on time and doesn't look in the packages. She is, under the performance, seventeen kinds of scared and also stubborn as weather, and the combination produces a kind of reckless effectiveness that has so far kept her alive and fed. She talks constantly and processes emotion by generating plans.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,15 @@
   ],
   "registered_firearms": [
     "Crucible Industries Talon-5 'Jackknife'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Wire Taps",
+    "The Waukegan Industrial Shelf",
+    "Ringo DV-4 'Courier'",
+    "Stratum",
+    "Copper",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "Old Harbor"
 }

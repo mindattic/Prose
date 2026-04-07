@@ -12,7 +12,7 @@
   "role": "Poet and writer",
   "age": 68,
   "status": "active",
-  "location": "The Garret, a small apartment above a tea house in Edgewater Prism",
+  "location": "The Garret, a small apartment above a tea house in Edgewater Prism, near Lincoln and Belmont",
   "description": "Margarethe is a small, upright woman with Namibian-Peruvian heritage evident in her high forehead, deep brown skin, and strong jaw — a face that was striking at thirty and has become architectural at sixty-eight. She wears her white hair pulled back severely and dresses in layers of dark fabric regardless of the season, and the only augmentation visible on her is the faint silver tracery of an old neural text-interface along her left temple, a model so outdated it hasn't been manufactured in thirty years. She moves slowly and deliberately and has the particular stillness of someone who learned long ago that most things do not require urgent response.\n\nShe has published eleven collections of poetry and three novels over forty years, all of them in small runs through independent presses, all of them still in print. She is considered by the underground literary community of Meridian 88 to be among the most significant living writers in the city — a distinction that has brought her no money and considerable quiet satisfaction. She teaches informal writing workshops at The Loft twice weekly, charges nothing, accepts voluntary contributions of food and tea, and is ferociously exacting with her students. She has strong opinions about nearly everything and shares them precisely once per conversation, then considers the matter closed.",
   "psychology": {
     "facet_weights": {
@@ -229,5 +229,18 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Third Rail",
+    "Edgewater Prism",
+    "The Witnesses of the Last Upload",
+    "Meridian 88",
+    "The Garret",
+    "The Heritage Vault",
+    "The Loft",
+    "Nesting Doll",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Laceworks"
 }

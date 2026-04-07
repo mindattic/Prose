@@ -12,7 +12,7 @@
   "role": "Laundromat operator and informal neighborhood matriarch",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave, Brewer's Spine block 7 — her laundromat is called Sudsbright",
+  "location": "Hamtramck Enclave, Brewer's Spine block 7 — her laundromat is called Sudsbright, near Western and Chicago Ave",
   "description": "Ruvimbo is a broad-shouldered woman whose hands are perpetually pink and slightly swollen from decades of hot water and detergent. Her natural hair is pulled into a high puff shot through with silver, and she wears reading glasses on a beaded chain her youngest grandchild made. Her skin is a deep warm brown mapped with old burn scars along her left forearm — a story she tells differently depending on who's asking. She moves through her laundromat with the deliberate ownership of someone who has earned every square centimeter, adjusting machines by touch, greeting regulars by name before they've even pushed through the glass door.\n\nRuvimbo is the kind of woman who knows everything about her block not because she snoops but because people tell her things while they wait for their cycles to finish. She is warm but not soft — she will cut off a customer who disrespects her workers without blinking, and she keeps a locked panel behind the folding counter where she holds unclaimed laundry for neighbors she knows are in crisis. Her relationship with the local E.L.F. she calls Mama Sudsbright — said to inhabit the oldest washing drum on the premises — is sincere and daily. She leaves small data offerings: weather reports, old recipes in digitized formats, neighborhood gossip logs.",
   "psychology": {
     "facet_weights": {
@@ -181,5 +181,18 @@
   "registered_firearms": [
     "Crucible Industries Ember Rifle ER-7 'Ashfall'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Brewer's Spine",
+    "Gravimetric Collapse Charge GCC-9",
+    "Palladian Construction",
+    "The Pure Hand",
+    "Silver",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Glass"
+  ],
+  "district": "The Shelf"
 }

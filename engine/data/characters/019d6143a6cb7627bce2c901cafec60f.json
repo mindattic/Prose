@@ -12,7 +12,7 @@
   "role": "Sound sculptor and underground venue performer",
   "age": 31,
   "status": "active",
-  "location": "Hamtramck Enclave, repurposed boiler hall called The Kettle",
+  "location": "Hamtramck Enclave, repurposed boiler hall called The Kettle, near Kedzie and Division",
   "description": "Sevastiané is tall and angular with the kind of stillness that makes people nervous until the music starts. Their skin has a faint bioluminescent quality — an old geneware mod that pulses amber-gold when their heart rate elevates, which means performances turn them into something like a living lantern. They keep their head shaved except for a single thick braid down the back, dyed the deep blue-green of the lake at night. Three subdermal resonance implants run along their jaw and collarbone, visible as faint ridges under the skin that hum at frequencies others feel in their molars.\n\nThey work by finding sounds that shouldn't exist — the groan of a Ferrogate Transit support beam in wind, the electrical whine of a failing ELF shrine, the subsonic thrum of the lake's wave patterns — and building compositions around them. Their shows are not concerts so much as environments. Audiences stand in the dark and are changed. Sevastiané is almost aggressively soft-spoken offstage, apologetic in the way of someone who knows they take up enormous space when they choose to.",
   "psychology": {
     "facet_weights": {
@@ -193,5 +193,18 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Kettlemore Yards",
+    "The Resonance Communion",
+    "Bathysphere Networks",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Aslan Vasquez-Chatterjee",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Gold",
+    "Weathervane"
+  ],
+  "district": "The Shelf"
 }

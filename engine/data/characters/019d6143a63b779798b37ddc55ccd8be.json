@@ -12,7 +12,7 @@
   "role": "Infrastructure disruption and industrial sabotage — saboteur",
   "age": 27,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
   "description": "Kadiatou Bergstrom-Konate is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 27, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Kadiatou Bergstrom-Konate plans to keep it that way. She works as a saboteur out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKadiatou Bergstrom-Konate operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -270,5 +270,14 @@
   "carried_weapons": [
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Narrows Compact",
+    "Meridian 88",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

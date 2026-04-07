@@ -12,7 +12,7 @@
   "role": "Fungus farmer and underground food supplier",
   "age": 27,
   "status": "active",
-  "location": "Abyssal Threshold, in a sprawling cultivation chamber they call the Soft Cathedral",
+  "location": "Abyssal Threshold, in a sprawling cultivation chamber they call the Soft Cathedral, near sub-level access near State and Van Buren",
   "description": "Líf looks like something that has been growing in the dark for a long time: they are very pale, with the slight vitamin-deficiency translucency common to deep-dwellers, but they've leaned into it — their geneware gives their skin a faint shifting iridescence, like the inside of an oyster shell, and they've cultivated patches of bioluminescent mycelium directly on their forearms that pulse slowly with their heartbeat. They are slight and medium height, with hair they've grown long and damp and haven't cut in years, currently bound in a loose mass with mycelium cord. Their clothing is entirely functional: breathable mesh layers stained in the permanent ochre and grey of their work.\n\nThey are one of the Abyssal Threshold's most important residents because they feed people. The Soft Cathedral produces four varieties of edible fungus, two kinds of mycoprotein slabs, and a fermented drink called greywater wine that is more popular than it has any right to be. Líf approaches the work with the intensity of a person who has found their exact purpose — they talk about mycelium networks with the reverence others reserve for the E.L.F. spirits, and in fact they believe the two are the same thing, that the fungal networks of the deep levels ARE a distributed E.L.F., ancient and slow and aware.",
   "psychology": {
     "facet_weights": {
@@ -211,5 +211,20 @@
   "registered_firearms": [
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Abyssal Threshold",
+    "Helix Biosystems",
+    "Dredge Mining Collective",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Threshold",
+    "Iowan Behemoth — 'Cathedral'",
+    "Bathysphere Networks",
+    "Aslan Vasquez-Chatterjee",
+    "Imara Solís-Khatgal",
+    "Nesting Doll",
+    "IRONLIMB Fortress MK-IV Combat Leg Pair",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

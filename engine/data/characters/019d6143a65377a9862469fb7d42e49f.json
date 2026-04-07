@@ -12,7 +12,7 @@
   "role": "Information trader and intelligence analyst — broker",
   "age": 40,
   "status": "active",
-  "location": "The Overhang — residential shelves built onto megastructure exteriors",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Western and Chicago Ave",
   "description": "Malika Zhukov-Wiredu are lean and angular, all sharp edges and visible tension. At 40, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — enhanced tendons — geneware upgrade, jump height and grip strength tripled — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Malika Zhukov-Wiredu plans to keep it that way. They work as a broker out of The Overhang, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nMalika Zhukov-Wiredu have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,9 @@
     "Crucible Industries Havoc-44 'Mauler'",
     "Meridian Munitions Twin PDW MTP-2 'Gemini'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ironveil Canopy"
+  ],
+  "district": "The Shelf"
 }

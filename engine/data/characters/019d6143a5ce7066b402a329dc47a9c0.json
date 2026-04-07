@@ -12,7 +12,7 @@
   "role": "VR experience designer and corporate-tier immersive art producer, creates high-end psychological experience installations for Tier 3-4 clients",
   "age": 37,
   "status": "active",
-  "location": "The Garret, in a well-appointed studio apartment that doubles as a test environment",
+  "location": "The Garret, in a well-appointed studio apartment that doubles as a test environment, near Armitage and Milwaukee",
   "description": "Briseis is the kind of person who is precisely as beautiful as they need to be for the room they are in — they adjust presentation with the unconscious fluency of a skilled actor. In their studio, meeting with clients, they are polished: patterned irises (shifting mandala designs in amber and grey, a subtle demonstration of the geneware they can recommend), hair that changes color with their neural state through a sophisticated mod linked to their limbic system, clothes that cost what a Tier 1 resident earns in six months. In private, they are undone — hair colorless and still, in soft worn clothes, sitting on the floor with their legs folded, talking to their terminal.\n\nThey design VR experiences that are technically classified as entertainment but function closer to therapy, propaganda, or philosophical confrontation depending on the client. Their best-known commercial work is a series called 'Meridian Beneath Meridian' — premium immersive experiences that take wealthy clients into accurate, detailed reconstructions of the city's lower tiers, designed to produce empathy. They are privately scornful of almost all their clients and genuinely uncertain whether 'empathy tourism' does any good or merely inoculates people against discomfort by letting them feel it in a controlled environment. They are contracted to Helix Biosystems for two projects per year, which funds everything else. They are good at their work in a way that makes them faintly miserable.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,14 @@
   "carried_weapons": [
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Garret",
+    "The Quiet Room",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Chimera-Null",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Circuit"
 }

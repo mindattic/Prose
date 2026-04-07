@@ -12,7 +12,7 @@
   "role": "identity fabricator and document forger",
   "age": 22,
   "status": "active",
-  "location": "The Narrows, sublevel 4 print den beneath a Ferrogate Transit ventilation shaft",
+  "location": "The Narrows, sublevel 4 print den beneath a Ferrogate Transit ventilation shaft, near sub-level access near Dearborn and Jackson",
   "description": "Dáithí looks younger than twenty-two, which has been both a professional liability and an asset. He's tall and lanky with warm brown skin, freckles scattered densely across his nose and cheeks from his Irish-Malian heritage, and hair that shifts color on a slow cycle — deep brown to auburn to near-black over the course of four hours. It's cheap geneware, the kind you get at a market stall, but he's adjusted the cycle timing himself and is unreasonably proud of this. He has ink under his fingernails permanently and smells faintly of solvent and the ozone of active print-heads.\n\nHe fell into forgery through genuine talent — he could copy letterforms by hand at age fourteen in a way that made teachers uncomfortable — and through necessity, since a Tier 1 upbringing in the Narrows offers limited other uses for that talent. He is extraordinarily good at what he does and knows it with a confidence that occasionally crosses into recklessness. He treats every document like a puzzle: the deep-substrate security threads of a Zheng-Dao transit pass, the layered biometric encoding on a Sterling-Nakamura contractor credential. He keeps a gallery of his best work photographed and stored on a dead-drop server like a portfolio. He would show it to people if he could. He is desperate to be recognized as an artist.",
   "psychology": {
     "facet_weights": {
@@ -245,5 +245,18 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R8 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Narrows Compact",
+    "Zheng-dao Bioelectric",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "Bathysphere Networks",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Stratum",
+    "Ringo Corponation",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Underworld"
 }

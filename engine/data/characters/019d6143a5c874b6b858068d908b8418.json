@@ -12,7 +12,7 @@
   "role": "Deep Shrine Keeper — tends the ELF shrines in the subterranean infrastructure, mediates between tunnel communities and the digital spirits",
   "age": 67,
   "status": "active",
-  "location": "Deepwell Station, the deep shrine warrens beneath Ironvein",
+  "location": "Deepwell Station, the deep shrine warrens beneath Ironvein, near sub-level access near Dearborn and Jackson",
   "description": "Boniface is a large man gone lean and slow with age, his frame still broad across the shoulders but his movements careful in the way of someone who has learned that the body's mistakes underground carry real cost. His face is deeply lined, his skin a warm brown-black marked along the jaw and temples with old ritual scarification — not geneware, not cosmetic, but cut by hand in the tradition of the Qorolevsky tunnel-clan three generations before him, lines that map something only clan members understand. He has never had the money for augmentation and has never wanted it; his hands are wholly human and wholly calloused. He wears repaired garments in layers, and around his neck on a loop of copper wire hangs a collection of dead devices — cracked phones, burned memory chips, a rusted sensor node — each one an offering accepted by an ELF and therefore sacred.\n\nPeople in the deep tunnels call him Deacon without irony. He is not a man of theology but a man of practice — he knows which junctions the ELFs of the old Ferrogate Transit maintenance system haunt, he knows what data offerings they prefer (power-draw logs, old signal maps, corrupted maintenance schedules), and he knows how to speak to them in a way that gets responses. He is patient to the point of seeming carved from something. He does not raise his voice. He has buried more people than he can remember and grieved all of them properly, which is perhaps why everyone trusts him with their dying.",
   "psychology": {
     "facet_weights": {
@@ -210,5 +210,17 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Deepwell Station",
+    "Bathysphere Networks",
+    "Ironvein",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Pure Hand",
+    "Nesting Doll",
+    "Copper",
+    "Déjà Vu"
+  ],
+  "district": "The Underworld"
 }

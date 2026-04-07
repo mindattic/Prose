@@ -12,7 +12,7 @@
   "role": "Food stall operator — West African-Brazilian fusion, specialising in breakfast and late-night trade",
   "age": 63,
   "status": "active",
-  "location": "The Oxidian Market, the Mouth — main entrance corridor, Old Harbor",
+  "location": "The Oxidian Market, the Mouth — main entrance corridor, Old Harbor, near Michigan Ave South and Cermak",
   "description": "Aminatou is a short, solidly built woman with silver locs pulled back and pinned with repurposed circuit pins she's collected over the decades — a different colour for each year, she says, though the system broke down around 2187 and now it's just aesthetic. Her skin is very dark with the particular quality of someone who has spent most of sixty-three years outdoors, and she has deep smile lines that activate even when she's displeased, which confuses people who don't know her well. She wears the same colours every day: yellow and deep blue, a small religious flag from a Sufi order her mother kept, and an apron that has been washed so many times it's a relic. Her stall has been in the same position at the Mouth for twenty-two years. The Market's physical architecture has reorganised around her.\n\nShe cooks jollof with a Brazilian sofrito base, akara that she serves with fermented pepper sauce and a manioc accompaniment, and a late-night congee variant that appears without announcement at around 0200 for the shift-change crowd. She has no augmentation and no chrome. She prays to the E.L.F. she calls the Hearthkeeper — she leaves it cooling portions of whatever she's cooked, first plate of every batch, on the small terminal mounted inside the stall that used to be a payment processor and now receives offerings. She considers this as normal as seasoning the pot.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,11 @@
   "registered_firearms": [
     "Meridian Munitions Compact Rifle MCR-2 'Errand'",
     "Hearthstone Firearms Defender-38 'Snubnose'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver"
+  ],
+  "district": "Old Harbor"
 }

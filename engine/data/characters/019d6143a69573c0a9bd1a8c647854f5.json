@@ -11,7 +11,7 @@
   "role": "Fixer - Pale Hand middleman",
   "age": 40,
   "status": "active",
-  "location": "The Narrows",
+  "location": "The Narrows, near Milwaukee and North Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -100,5 +100,9 @@
     "Street Custom 'Widowmaker' Rigged Power Tool",
     "Street-Custom Gutter Katana 'Flatline'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact"
+  ],
+  "district": "The Circuit"
 }

@@ -11,7 +11,7 @@
   "role": "Building superintendent and informal repair technician",
   "age": 34,
   "status": "active",
-  "location": "The Narrows, Pillar Block 7 — residential stack managed by an Arcturus-subsidiary property company",
+  "location": "The Narrows, Pillar Block 7 — residential stack managed by an Arcturus-subsidiary property company, near North Ave and Damen",
   "description": "Vestin is wiry and medium height, with warm light-brown skin, close-cut dark hair with a single streak of color-changing dye that they toggle between indigo and copper depending on mood, and clever dark eyes set under expressive brows that do most of their communicating for them. They have a tool harness they wear as a second skin — a custom-fitted rig of loops, mag-clips, and repurposed Ferrogate equipment pouches that they have spent years personalizing, and their hands carry the calluses and minor scars of someone who takes things apart constantly and puts them back together mostly correctly. They have a neural interface stud behind their right ear for reading building management systems directly — standard for a super but theirs is modified past factory spec in ways that technically violate their work contract.\n\nVestin is pragmatic to a fault, profoundly competent, and operates on the principle that anything broken can be fixed and anything fixed can be made to work better than it originally did. They have an uneasy relationship with the Arcturus-subsidiary management company that technically employs them, because they've learned that management's definition of 'fixed' means 'back to minimum acceptable function' and their definition means 'actually good.' They are not warm in the conventional sense — they don't small-talk and they're uncomfortable with gratitude — but they will be at your door within twenty minutes of a maintenance request if they're in the building, which they almost always are.",
   "psychology": {
     "facet_weights": {
@@ -229,5 +229,17 @@
   ],
   "registered_firearms": [
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "The Undertow",
+    "The Narrows Compact",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "Ferrogate Transit",
+    "Arcturus Defense Solutions",
+    "Independent Micro-Grid Power Cooperative",
+    "Irontide Tidal Energy",
+    "Copper",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

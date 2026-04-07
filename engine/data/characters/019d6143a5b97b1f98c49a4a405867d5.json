@@ -12,7 +12,7 @@
   "role": "Airship drifter and seasonal cargo handler",
   "age": 27,
   "status": "active",
-  "location": "Escanaba Gateway, upper docking platforms",
+  "location": "Escanaba Gateway, upper docking platforms, near Michigan Ave South and Cermak",
   "description": "Awinita is lean and restless in the way of people who have never had a fixed address — she holds her weight on the balls of her feet as though ready to step onto a gangway at any moment, and her eyes track movement at the edges of rooms before settling on the person in front of her. Her hair is natural and enormous, kept controlled with a series of bright synthetic wraps she's collected from every port city she's touched, so her head is a kind of geography of her travels. Her skin is deep brown, her hands calloused from line-work, and she has geneware bioluminescent tattoo lines running from her wrists to her elbows — cargo certification marks issued by three different airship consortia, each glowing a different color, the whole thing an improvised credential system that means something to dock workers and nothing to anyone else.\n\nShe is loud in the way of people who've spent years competing with engine noise, laughing easily and arguing with the same volume. She has strong opinions about load distribution, ELF propitiation rituals for airship spirits, and which Escanaba Gateway food stalls are worth the queue. She is deeply uncomfortable indoors for extended periods and sleeps best when she can feel air movement. Beneath the easy loudness she carries a careful loneliness — she has friends in every port and close friends in none, and she has started to notice.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,13 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Street Custom 'Lazarus Wire' Garrote System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "Bay View Docks",
+    "ShieldTech Enforcer DM-4 'Crossover'",
+    "The Gradient Compact",
+    "The Pure Hand"
+  ],
+  "district": "Old Harbor"
 }

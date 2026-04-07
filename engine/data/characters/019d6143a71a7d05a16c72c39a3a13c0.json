@@ -12,7 +12,7 @@
   "role": "Building superintendent, Ironvein residential stack",
   "age": 61,
   "status": "active",
-  "location": "Ironvein, The Mossback — a seventeen-story residential building of ambiguous structural classification",
+  "location": "Ironvein, The Mossback — a seventeen-story residential building of ambiguous structural classification, near Fullerton and Damen",
   "description": "Wenceslao is a large, deliberate man who moves through the building's corridors with the authority of someone who has personally repaired every system in every wall. He is dark-skinned and silver-haired, wearing the same brand of gray utility coverall every day in rotating copies — he owns six identical pairs. His left hand is entirely prosthetic from the wrist down, functional-grade chrome with a scarred attachment point, replaced after a compressor accident in 2198. He keeps it unsheathed and uncosmeticized because coating it would be, in his words, 'a waste of money on something that already works.'\n\nHe runs The Mossback with the energy of a man holding something together through force of will. He knows the building's 214 residents by unit number, not name, but knows their patterns: who works nights, who has water pressure complaints, whose kid has started marking territory in the stairwell. He is gruff to new tenants, ceremonially gruff to long-term ones, and secretly terrified that the building's ownership consortium will sell to a developer and he'll spend his last working years managing a building that no longer exists in any way he recognizes.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,16 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-40 'Magistrate'",
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "The Reclamation Authority",
+    "Ouroboros Energy Thermal Regulation Core",
+    "Ironvein",
+    "Blackmarket",
+    "Tessera Corponation",
+    "Silver",
+    "Slagworks Industrial",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Circuit"
 }

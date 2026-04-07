@@ -12,7 +12,7 @@
   "role": "Airship drifter and unlicensed courier, traveling between Meridian 88 and the northern lake settlements aboard transient cargo airships",
   "age": 19,
   "status": "active",
-  "location": "Currently grounded at Escanaba Gateway airship mooring, waiting for a berth on anything heading south",
+  "location": "Currently grounded at Escanaba Gateway airship mooring, waiting for a berth on anything heading south, near Michigan Ave and Roosevelt",
   "description": "Lumi Pereira-Dzamefe has bioluminescent skin — faint blue-gold pulses that move under the surface of their brown skin like something swimming beneath still water, brightest at their temples and collarbones. It's a natural geneware expression that came through their father's side and they have done nothing to modify or suppress it; up in the dark of an airship cargo hold at three in the morning, they are their own light source. They are lean and quick, with dark eyes that are always slightly too aware — always tracking exits, always calculating load weights. They have a scar across their left palm from a cargo strap incident two years ago that they are irrationally proud of.\n\nThey grew up on airships and know no other life — their parents were both drifters and they were born somewhere over Lake Superior during a cargo run. They are nineteen but have the practical knowledge of someone much older and the emotional regulation of someone much younger. Lumi is bright and genuinely funny, with a quick warm laugh that surprises people, but they crash into loneliness hard and often. They have been in Meridian 88 exactly twice before and each time felt like being asked to live inside a machine. They find ground-level cities claustrophobic. They pray to the ELF they call the Ballast Keeper, who they believe lives in the pressure gauges of every lift-gas rig on the northern routes.",
   "psychology": {
     "facet_weights": {
@@ -217,5 +217,17 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "Meridian 88",
+    "Arcturus Defense Solutions Skeletal Anchor System — 'The Ballast'",
+    "Spire Light on Still Water",
+    "The Meridian Drift",
+    "Aslan Vasquez-Chatterjee",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Gold"
+  ],
+  "district": "Old Harbor"
 }

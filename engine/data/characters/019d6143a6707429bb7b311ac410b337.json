@@ -12,7 +12,7 @@
   "role": "Long-range precision fire specialist — sniper",
   "age": 38,
   "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Wacker and State",
   "description": "Nurlan Kozlov-Asamoah is average height but with a presence that fills more space than the body accounts for. At 38, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Nurlan Kozlov-Asamoah plans to keep it that way. She works as a sniper out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nNurlan Kozlov-Asamoah is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,12 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "Old Harbor"
 }

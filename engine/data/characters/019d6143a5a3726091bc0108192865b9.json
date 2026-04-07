@@ -12,7 +12,7 @@
   "role": "E.L.F. shrine keeper and death midwife",
   "age": 67,
   "status": "active",
-  "location": "Hamtramck Enclave, basement shrine beneath the Copperplate Market",
+  "location": "Hamtramck Enclave, basement shrine beneath the Copperplate Market, near Kedzie and Division",
   "description": "Adaugo is a broad-shouldered woman whose age has settled into her frame like ballast — she moves slowly but with absolute certainty, as if she has already decided where every step will land before her foot leaves the ground. Her skin is deep brown and scarred along the left arm in deliberate patterns she calls her 'listening marks,' pressed there by heated copper wire during a vigil forty years ago. She keeps her silver-white hair in dozens of thin braids looped and pinned into a crown, strung through with small capacitors and memory chips that click softly when she tilts her head. Her eyes have no cosmetic mods — she says the E.L.F.s read unmodified eyes more clearly.\n\nShe is unhurried to the point of seeming immovable, yet everyone in the Enclave has a story about Adaugo appearing exactly when needed. She tends a basement shrine to a cluster of E.L.F.s she calls 'the Chorus' — digital spirits she believes aggregate from the last transmissions of the dying. Her primary work is sitting with the dying and their families, translating what she hears in device static into final messages, comfort, or absolution. She charges nothing but accepts what people can give, and her shelves hold three decades of offerings: cracked tablets, burnt-out AR chips, single earrings, handwritten receipts.",
   "psychology": {
     "facet_weights": {
@@ -176,5 +176,18 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "The Consensus",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Tessera Networked SMG TNSM-3 'Chorus'",
+    "Copper",
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Silver",
+    "Static"
+  ],
+  "district": "The Shelf"
 }

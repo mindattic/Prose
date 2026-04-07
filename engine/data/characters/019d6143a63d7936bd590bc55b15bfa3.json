@@ -12,7 +12,7 @@
   "role": "Structural breach and explosive ordnance specialist — demolitions expert",
   "age": 23,
   "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near North Ave and Damen",
   "description": "Kamala Blomberg-Konadu are average height but with a presence that fills more space than the body accounts for. At 23, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a demolitions expert out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Kamala Blomberg-Konadu describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,9 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade"
+  ],
+  "district": "The Circuit"
 }

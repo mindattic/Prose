@@ -12,7 +12,7 @@
   "role": "Unlicensed organ harvester and body-parts middleman working the Undertow",
   "age": 29,
   "status": "active",
-  "location": "The Undertow — operates out of a repurposed cold-storage unit under the Escanaba Gateway transit platform",
+  "location": "The Undertow — operates out of a repurposed cold-storage unit under the Escanaba Gateway transit platform, near Wacker and State",
   "description": "Orlan is a lean, angular young man with medium-brown skin and cheekbones that cast hard shadows. His geneware manifests as a faint bioluminescent blue-green pattern along his jaw and collarbone — originally cosmetic, chosen when he was sixteen and thought he'd go into performance. He has a retractable claw mod on his right hand that he insists is also just cosmetic, though the precision of it is not. He keeps his head shaved and wears a standard-issue Ferrogate Transit worker vest that he's never actually worked for — the corponation ID is forged but it gets him past a lot of checkpoints without questions.\n\nOrlan has the particular nervous energy of someone who knows their work is illegal but has convinced himself it's also a public service — he talks about 'redistribution of biological resources' and 'closing the gap between who can afford Helix Biosystems and who can't.' He's not entirely wrong, and he's not entirely sincere. He's genuinely squeamish about pain, which creates an odd dissonance in his line of work, and he over-explains his anaesthetic protocols to anyone who will listen as proof of his ethics. He is terrified of becoming someone he wouldn't recognize.",
   "psychology": {
     "facet_weights": {
@@ -203,5 +203,13 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Helix Biosystems",
+    "Escanaba Gateway",
+    "The Undertow",
+    "Lacuna Genomics"
+  ],
+  "district": "The Underworld"
 }

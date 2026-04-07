@@ -12,7 +12,7 @@
   "role": "High-speed vehicle operations specialist — wheelman",
   "age": 43,
   "status": "active",
-  "location": "The Circuit — neon-lit entertainment and vice district",
+  "location": "The Circuit — neon-lit entertainment and vice district, near Damen and Armitage",
   "description": "Kenji Dahl-Conteh is lean and angular, all sharp edges and visible tension. At 43, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a wheelman out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKenji Dahl-Conteh is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -269,5 +269,14 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Circuit",
+    "The Nearfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "child prodigy; Sterling-Nakamura corporate school student on accelerated academic track, age 9 but enrolled in Level 14 coursework",
   "age": 9,
   "status": "active",
-  "location": "Grosse Pointe Enclosure (Sterling-Nakamura Meridian Primary Excellence Campus)",
+  "location": "Grosse Pointe Enclosure (Sterling-Nakamura Meridian Primary Excellence Campus), near Fullerton and Damen",
   "description": "Celestine is small even for nine, with a slight, birdlike build and her mother's warm brown-gold skin and her father's sharply angular face. Her black hair is always in two symmetrical buns — she insists on symmetry. She has no cosmetic mods; her parents considered them, but Celestine said she 'didn't want to change the baseline data' and that was the end of that discussion. She carries a data tablet that is three times the standard student issue size because the standard one 'doesn't have enough screen' and she simply presented this as a fact until the school accommodated it.\n\nCelestine is not a normal child in any way she is aware of or particularly concerned about. She thinks in systems and is working on what she privately calls 'a taxonomy of how adults make decisions that are actually about feelings but they say are about logic.' She has observed that this happens frequently. She is polite in the specific way that very intelligent children who have been taught manners are polite — not warmth, but precision. She has a deep and sincere relationship with a data-archive E.L.F. she has named 'Footnote' because 'it answers questions nobody asked,' which she considers a high compliment. She finds most other children boring but would not say so. She finds most adults interesting but slightly sad.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,17 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grosse Pointe Enclosure",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "The Open Syllabus",
+    "The Human Baseline Alliance",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "ARCHIVE",
+    "Elena Vasquez-9",
+    "Gold"
+  ],
+  "district": "The Spires"
 }

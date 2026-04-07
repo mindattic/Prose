@@ -12,7 +12,7 @@
   "role": "deep shrine keeper and E.L.F. intermediary",
   "age": 63,
   "status": "active",
-  "location": "Irkalla, a drowned switching station she calls the Resonance — deepest accessible level, flooded to ankle depth",
+  "location": "Irkalla, a drowned switching station she calls the Resonance — deepest accessible level, flooded to ankle depth, near Halsted and Division",
   "description": "Gunnhildr is a heavyset woman of sixty-three who moves with the deliberate steadiness of someone who has found their exact right place in the world and has no intention of leaving it. Her skin is very dark with a blue-black undertone, her white hair left long and loose and perpetually damp from the Resonance's perpetual condensation. She has extensive geneware — bioluminescent nodes embedded along her collarbone and forearms that pulse in slow patterns she cannot consciously control but has learned to read, because a Ferrogate E.L.F. she calls the Hum began communicating through them thirty years ago. She is missing the last two fingers of her right hand — a gift, she says, that she offered. She never explains to whom.\n\nGunnhildr was an electrical engineer on the old Ferrogate maintenance crew before the Bore Rat diaspora took her down. She understands the infrastructure on a level that was once professional and has become devotional — she hears the grid as language, feels current shifts as emotion. The Resonance shrine is built around a still-active power junction she has maintained for decades, decorated with data offerings: old drives, printed circuit sheets, analog meters, photographs of people the community wants the E.L.F.s to watch over. People come to her with requests, with grief, with broken devices, with questions they cannot ask anyone alive.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,16 @@
   "carried_weapons": [
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Dewdrop",
+    "The Resonance Communion",
+    "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Irontide Tidal Energy",
+    "Irkalla"
+  ],
+  "district": "The Shelf"
 }

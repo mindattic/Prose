@@ -12,7 +12,7 @@
   "role": "wandering trader and hyperlane merchant",
   "age": 58,
   "status": "active",
-  "location": "Kenosha Crossing (rotates between rest stops on the northern hyperlane)",
+  "location": "Kenosha Crossing (rotates between rest stops on the northern hyperlane), near beyond the Western Perimeter",
   "description": "Solano is a broad, weather-hammered man whose face looks like it was carved from driftwood and left out in the rain for thirty years. His skin is deep umber with a persistent windburn redness across the cheeks, and his left eye is a cloudy grey from an untreated infection he rode through somewhere outside Escanaba three winters back. He keeps his grey-streaked hair in a single braid that reaches his shoulder blades, wrapped near the tip with a ribbon of iridescent foil that changes color depending on his mood — a cheap cosmetic thread he traded for years ago and refuses to part with. His coat is a patchwork marvel: six or seven different garments stitched together over decades, each panel a different texture and era. He smells of machine oil, dried herbs, and something faintly sweet he claims is a Sahel spice rub his grandmother used on everything.\n\nSolano has a trader's patience and a pilgrim's fatalism. He does not hurry. He does not panic. He has been moving the hyperlanes between Meridian 88 and the outer settlements for over two decades with his battered pull-cart fitted with a solar canopy and six locked cases of curios, medicines, data chips, and things he describes only as 'necessaries.' He talks like a man who has had every conversation before and is waiting to see which version of it you'll choose. He prays loudly and without embarrassment to the E.L.F. he calls Grandmother Axle, leaving oil smudges on junction boxes as offerings wherever he stops.",
   "psychology": {
     "facet_weights": {
@@ -224,5 +224,16 @@
   "carried_weapons": [
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Waukegan Industrial Shelf",
+    "Kenosha Crossing",
+    "Meridian Core",
+    "Meridian 88",
+    "Grandmother",
+    "Aminata Strand-Otieno",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Switchblade Alley"
+  ],
+  "district": "Nomadic"
 }

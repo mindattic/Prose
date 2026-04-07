@@ -12,7 +12,7 @@
   "role": "Identity fabricator and document forger serving The Narrows",
   "age": 38,
   "status": "active",
-  "location": "The Narrows — back room of a legitimate print and copy shop called Clearscript, on the corner of Ironvein Passage",
+  "location": "The Narrows — back room of a legitimate print and copy shop called Clearscript, on the corner of Ironvein Passage, near Milwaukee and North Ave",
   "description": "Séverine has the kind of face that is difficult to hold in memory — medium everything, carefully so. Their skin is a warm olive-brown, their hair is kept at an aggressively unremarkable length, and their eyes have been modded to shift between a plain grey and a plain brown depending on ambient light, which makes identification in surveillance footage nearly impossible. The only thing that stands out is their hands: long-fingered, ink-stained in colors that never quite wash out, and in near-constant motion — folding, pressing, testing paper weight and texture the way some people crack knuckles.\n\nSéverine is sardonic, professionally paranoid, and possessed of an almost religious conviction that identity is the only thing in Meridian 88 that actually matters. They approach forgery as an art form and a philosophy simultaneously — arguing that all identity is constructed, that they are merely the honest version of what corponations do to people every day. They are patient with clients in distress and merciless with clients who waste their time. They have a particular soft spot for people fleeing bad situations, though they'd deny having soft spots at all.",
   "psychology": {
     "facet_weights": {
@@ -201,5 +201,12 @@
   "carried_weapons": [
     "Street Custom 'Widowmaker' Rigged Power Tool"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Meridian 88",
+    "Ironvein",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

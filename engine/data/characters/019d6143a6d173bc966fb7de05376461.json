@@ -12,7 +12,7 @@
   "role": "Climate refugee and expelled citizen, now a tent-city elder-without-title",
   "age": 68,
   "status": "active",
-  "location": "Grand Crossing Gate tent encampment, southern perimeter",
+  "location": "Grand Crossing Gate tent encampment, southern perimeter, near North Ave and Damen",
   "description": "Ósk is small and deliberate, with the economy of movement that belongs to people who have learned to do everything with minimum waste. Their hair is silver-white and kept in tight braids close to their skull, and their skin — a warm brown-grey that the encampment children call 'river clay' — is mapped with sun damage and the faint patterning of old dermal inflammation, a souvenir of the chemical flooding that took their home city. They have a single geneware modification: their irises are a soft bioluminescent amber, given to them by a camp medic years ago when their natural eyes were damaged. They never asked for it but have made peace with the warm glow their face gives off in darkness.\n\nÓsk doesn't hold any formal position in the Grand Crossing Gate encampment, but they are the person people come to when the camp council fractures, when a child goes missing, when someone needs to negotiate with the checkpoint guards. They have an absolute, undemonstrative competence that operates below the level of authority — they simply handle things, without announcing they're doing it. They lost their citizenship in the upheaval of a climate-related territorial dispute that isn't over yet, and they have been stateless for eleven years. They have stopped expecting resolution and started building something livable inside the wait.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,21 @@
   "registered_firearms": [
     "Crucible Industries Cerberus-357 'Hellhound'",
     "Meridian Munitions Twin PDW MTP-2 'Gemini'"
-  ]
+  ],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "Ferrogate Transit",
+    "Arcturus GE-1 'Garrison'",
+    "Grand Corridor",
+    "TESSERA ES-4 'Perimeter'",
+    "Souvenir",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Tibor Osei-Svanstrom",
+    "Clay",
+    "Nightlight"
+  ],
+  "district": "Nomadic"
 }

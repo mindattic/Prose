@@ -12,7 +12,7 @@
   "role": "Tailor and seamstress, Old Harbor",
   "age": 34,
   "status": "active",
-  "location": "Old Harbor, Stitch Row — a narrow commercial street off the Grindstone Shore waterfront",
+  "location": "Old Harbor, Stitch Row — a narrow commercial street off the Grindstone Shore waterfront, near Lake Shore and Navy Pier",
   "description": "Yolanda is tall and narrow-shouldered with very dark skin, close-shaved temples, and a cloud of natural hair she wears differently every day — sometimes pinned, sometimes free, occasionally containing small objects she's tucked in absentmindedly (a seam ripper, a rolled-up measurement tape, once a small wrench she was holding for someone). Her forearms have retractable micro-filament guides — a geneware mod she had installed specifically for this work, allowing her to feel tension in fabric the way a surgeon feels tissue. Her irises are a vivid violet that is very obviously engineered and that she picked because, as she says, if you're going to do it you might as well commit.\n\nShe runs a small shop — Stitch Row No. 4 — that does everything from emergency repairs to full commission builds, with a specialty in structural garments: clothes with hidden pockets, sealed linings, insulated layers, things that need to function as well as look good. She is quick and funny and gives blunt assessments of what will and won't work on a person's body with the cheerful directness of someone who has long since stopped worrying about whether people find her charming. She has a loyal client base that includes everyone from dock workers needing reinforced work gear to people who have heard about her discreet interior construction and want to know what she can do with a coat lining.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,14 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grindstone Shore",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Nesting Doll",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "Old Harbor"
 }

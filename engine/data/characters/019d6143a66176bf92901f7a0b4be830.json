@@ -12,7 +12,7 @@
   "role": "Long-range precision fire specialist — sniper",
   "age": 31,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and North Ave",
   "description": "Ngaire Arai-Ofori-Atta are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 31, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a sniper out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nNgaire Arai-Ofori-Atta have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
   "psychology": {
     "facet_weights": {
@@ -277,5 +277,11 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-20E 'Thunderclap'",
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Geartown"
+  ],
+  "district": "The Circuit"
 }

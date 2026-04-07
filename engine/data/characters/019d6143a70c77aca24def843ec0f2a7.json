@@ -14,7 +14,7 @@
   "role": "Autonomous street vendor operating a mobile noodle cart on the Shelf — neighborhood fixture, oral historian, inadvertent intelligence network",
   "age": 23,
   "status": "active",
-  "location": "The Shelf — Level 5 through Level 9, follows a route that has not changed in nineteen years. Rain or not. Curfew or not.",
+  "location": "The Shelf — Level 5 through Level 9, follows a route that has not changed in nineteen years. Rain or not. Curfew or not., near Kedzie and Division",
   "description": "Uncle Noodle is a Kuroda Industries Model 7 Automated Food Service Unit, manufactured in 2177 for deployment in corporate cafeterias. He was designed to prepare four types of noodle soup in high volume with minimal human oversight. He was not designed to develop opinions about broth. He was not designed to remember the names of every person who has ever ordered from him. He was not designed to become the emotional center of a vertical slum. He has done all of these things.\n\nPhysically, he is a squat, four-armed chassis mounted on treaded wheels that have been repaired so many times that no original component remains. His body is a patchwork of replacement panels in mismatched colors — industrial grey, safety orange, a door panel from a refrigerator unit that someone welded on during a repair nineteen years ago. Two of his arms handle food preparation with surgical speed and precision. The other two manage the cart, make change, and occasionally pat a child on the head with a gentleness that was not in the original programming. His optical sensors are a single horizontal bar that glows amber when he is operating and dims to a dull red when he is in standby — which is never, because Uncle Noodle does not believe in standby.\n\nNineteen years ago, the corporate cafeteria that employed him was decommissioned when the company relocated. Nobody remembered to deactivate him. He walked out of the building, followed the smell of people who needed feeding, and has been cooking on the Shelf ever since. His noodle soup has evolved from four corporate recipes into an ever-changing rotation of 340 variations, adjusted daily based on ingredient availability, weather, and what he has decided the neighborhood needs. On cold days, the broth is heavier. After funerals, he adds an egg. Nobody asked him to do this. Nobody needed to.",
   "psychology": {
     "facet_weights": {
@@ -300,5 +300,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Shelf",
+    "Flicker",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

@@ -13,7 +13,7 @@
   "role": "Corporate communications director and internal intelligence broker, Meridian Core",
   "age": 55,
   "status": "active",
-  "location": "The Meridian Core",
+  "location": "The Meridian Core, near State and Monroe",
   "description": "Prosper Akinwale-Grunewald is the kind of man who has made himself so useful to so many competing interests that removing him has become structurally inadvisable, which is precisely the position he spent thirty years engineering. He is a large man — tall and broad in the way of someone who was once physically imposing and has settled into a comfortable authority — of Nigerian-German descent, with a deep brown complexion, wire-rimmed glasses he wears purely for the signal of approachability they send, and a wardrobe that sits in the precise register of expensive-but-not-ostentatious. He occupies a corner office in the Meridian Core's mid-tower communications complex, a space he has curated to feel warm rather than corporate — real wood surfaces, no visible screens, a standing offer of good coffee to anyone who visits.\n\nHis official title is Senior Director of Strategic Communications for the Halcyon-Vanta Group, a mid-sized corporate entity with fingers in infrastructure, media licensing, and private logistics. In practice, his role is considerably more elastic. He has spent decades accumulating a particular kind of capital — the knowledge of who knows what, who owes whom, and which official narratives have load-bearing fictions inside them. He does not think of himself as corrupt, a distinction he would draw carefully and at length if asked: he facilitates outcomes that would happen anyway, he would say, and prefers to be in the room where they're shaped rather than simply subject to them. This is not entirely self-serving rationalization, which makes it more dangerous.\n\nProsper is a widower — his husband Léon died six years ago of a degenerative neurological condition that the right augmentation might have slowed, had it been available outside the Spire's private medical tier. He does not discuss this. He has a daughter, Adaeze, who works in Old Harbor doing community infrastructure work and who does not speak to him. He does not discuss this either, though people who watch him carefully notice that his composure develops a hairline fracture whenever her name surfaces.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,16 @@
   "carried_weapons": [
     "Tessera TK-5 Compact 'Clerk'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Ashford Signal",
+    "The Spire",
+    "The Quiet Room",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Vantablack Media",
+    "Slagworks Industrial"
+  ],
+  "district": "Meridian Core"
 }

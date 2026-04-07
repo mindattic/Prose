@@ -12,7 +12,7 @@
   "role": "Precision elimination specialist — ghost",
   "age": 29,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore",
+  "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
   "description": "Hadiya Chen-Adeyemi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Hadiya Chen-Adeyemi plans to keep it that way. He works as a ghost out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHadiya Chen-Adeyemi has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Kel Adeyemi-Strand",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

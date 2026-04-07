@@ -12,7 +12,7 @@
   "role": "Protection racket enforcer and neighborhood tax collector, The Shelf lower levels",
   "age": 44,
   "status": "active",
-  "location": "The Shelf, lower levels — operates a rotating circuit of Burnside Pocket and Blackpipe Corridor businesses",
+  "location": "The Shelf, lower levels — operates a rotating circuit of Burnside Pocket and Blackpipe Corridor businesses, near Pulaski and Chicago Ave",
   "description": "Malaika is a big woman and she has never apologized for it — Tanzanian-Polish heritage, nearly six feet, broad through the shoulders, with a body that carries its strength like furniture: solidly, without trying. Her hair is worn in thick locs shot through with copper wire that glints when she moves, and her skin is very dark and very smooth except for a patch of scarring on her left jaw where she took something ceramic in a fight eleven years ago and kept it as a conversation piece. She dresses practically and well — not flashy, but never cheap — and has a habit of touching the scarring when she's working something out.\n\nShe is the neighborhood's collector for the Shelf Compact, an informal protection network that has run the lower levels since before she was born, and she does this job with a thoroughness that people mistake for menace until they know her better. She is not cruel. She is extremely serious. The businesses in her circuit pay on time and have done so for seven years, not because they fear her specifically but because they have seen what she does when accounts fall behind, which is to sit down with the owner and explain — in considerable detail, with full eye contact — exactly how much worse their situation could become and exactly how much it will cost her personally to allow it not to. She has a talent for making the math of compliance feel like mercy.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,17 @@
   "registered_firearms": [
     "Crucible Industries Viper Mk.III 'Copperhead'",
     "Kang-Petrov Arms KPS-3M 'Mongrel'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Burnside Pocket",
+    "The Meridian Compact for Economic Justice",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Shelf",
+    "The Heritage Vault",
+    "The Gradient Compact",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Copper"
+  ],
+  "district": "The Shelf"
 }

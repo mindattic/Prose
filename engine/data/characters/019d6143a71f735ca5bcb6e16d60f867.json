@@ -12,7 +12,7 @@
   "role": "Freelance combat specialist — street samurai",
   "age": 35,
   "status": "active",
-  "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology",
+  "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Ashland and Division",
   "description": "Ximena Smirnov-Ankrah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 35, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a street samurai out of The Lattice, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nXimena Smirnov-Ankrah has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,11 @@
   "registered_firearms": [
     "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "Burden of Longitude",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

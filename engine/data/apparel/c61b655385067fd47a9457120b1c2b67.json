@@ -1,0 +1,36 @@
+{
+  "id": "c61b655385067fd47a9457120b1c2b67",
+  "name": "Iron Wolves Chapter Jacket",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A leather-analog jacket with the Iron Wolves gang insignia heat-pressed onto the back — a stylized wolf skull over crossed wrenches. Chapter affiliation is indicated by colored thread stitched into the left collar. Rank patches are sewn onto the right sleeve. Every mark on the jacket is earned; wearing unearned insignia is a killing offense.\n\nThe jacket is armor in the social sense — it marks the wearer as claimed territory, someone who belongs to a group that will respond to threats against them. In Shelf districts where the Iron Wolves operate, the jacket grants passage through territories that would otherwise be hostile.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "leather-analog",
+    "heat-pressed insignia",
+    "rank patches",
+    "chapter thread"
+  ],
+  "functionality": "Gang identification, territorial passage, social armor",
+  "what_it_says": "You belong to something that will kill for you, and this jacket is the proof.",
+  "worn_by": [
+    "Iron Wolves members",
+    "affiliated associates"
+  ],
+  "manufacturer": "Handmade (Iron Wolves chapter house)",
+  "price_range": "Φ0 (earned)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An Iron Wolves Chapter Jacket is found on a body with the rank patches removed — either the wearer was dishonorably discharged before death, or someone took the patches as a trophy."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 1",
+    "gang",
+    "Iron Wolves",
+    "insignia",
+    "territorial"
+  ]
+}

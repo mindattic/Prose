@@ -1,0 +1,37 @@
+{
+  "id": "c3f6d10f610a9977f0b9626caabd55b2",
+  "name": "Pinnacle Security Riot Helm MkIV",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "Full-coverage riot helmet with integrated comm systems, a retractable face shield rated for blunt impact, and mounting rails for auxiliary equipment — cameras, flashlights, gas filters. The shell is ceramic-composite over a shock-absorbing foam core. The interior features adjustable padding and a three-point chin strap.\n\nStandard issue for Pinnacle Security crowd-control units and licensed to several corponation internal security divisions. The MkIV's modular rail system means no two helmets in the field look identical — each operator customizes their loadout.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "ceramic-composite shell",
+    "shock-absorbing foam core",
+    "modular rail system"
+  ],
+  "functionality": "Full head protection, integrated comms, modular accessory mounting, retractable face shield",
+  "what_it_says": "You're the one they send when the crowd stops listening to words.",
+  "worn_by": [
+    "riot control",
+    "corponation security",
+    "crowd management"
+  ],
+  "manufacturer": "Pinnacle Security",
+  "price_range": "Φ2,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Pinnacle Riot Helm's onboard camera footage leaks, showing security forces using unauthorized force during a Shelf protest — but someone edited out the faces of the officers."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 3",
+    "helmet",
+    "riot",
+    "Pinnacle",
+    "modular",
+    "security"
+  ]
+}

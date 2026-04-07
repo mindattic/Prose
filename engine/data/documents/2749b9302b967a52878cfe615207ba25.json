@@ -6,7 +6,11 @@
   "date": "unknown",
   "classification": "unclassified",
   "description": "...I'm telling you, I saw it. Under the street. Through the grate. Something moving down there that was too big to be in a pipe and too quiet to be a machine. It looked like it was made of [STATIC] ...no, I'm not drunk. I know what I— [CHANNEL CHANGES]",
-  "related_entities": [],
+  "related_entities": [
+    "The Shelf",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Static"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What is living beneath the Shelf's streets?",

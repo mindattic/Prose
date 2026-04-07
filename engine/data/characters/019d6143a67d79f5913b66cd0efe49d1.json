@@ -12,7 +12,7 @@
   "role": "Gene-mod body artist and tattoo artist",
   "age": 35,
   "status": "active",
-  "location": "The Garret, studio called Secondskin above a noodle bar on the Edgewater Prism level",
+  "location": "The Garret, studio called Secondskin above a noodle bar on the Edgewater Prism level, near Clark and Addison",
   "description": "Oksana is compact and precise-looking, with light ochre skin, narrow-set dark eyes, and a body that is itself their most elaborate portfolio piece: bioluminescent freckle-constellations across their shoulders and throat, color-shifting scale-pattern geneware covering both forearms from wrist to elbow in teal and copper, and cat ears — small, dark-furred, fully expressive — perched on their head as their most remarked-upon feature, though they consider it their most boring one. Their hands are almost uncannily steady. They speak softly and move with the deliberate economy of someone who works in millimeters.\n\nTheir specialty is integrating traditional tattoo and scarification methods with geneware modification — they design pieces that are part pigment, part living tissue, partly responsive to the wearer's own biochemistry so that the work changes with the body over years. They are particularly sought out for memorial work, pieces made to commemorate lost people or mark major transitions, and they have developed a reputation for drawing out a client's full story before ever picking up a tool. They are not cheap, they have a two-month waiting list, and they do not take clients whose reasons they distrust. They are also, quietly, one of the most technically skilled unlicensed geneware applicators in The Garret.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,16 @@
   "registered_firearms": [
     "Crucible Industries Fang-9 'Switchblade'",
     "Crucible Industries Boarding SMG BSM-6 'Cutlass'"
-  ]
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "The Garret",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+    "The Gradient Compact",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Copper",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Laceworks"
 }

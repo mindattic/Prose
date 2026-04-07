@@ -12,7 +12,7 @@
   "role": "Neural calibration technician at Aurochs Medical Complex",
   "age": 34,
   "status": "active",
-  "location": "Aurochs Medical Complex, Neuro-Integration Ward, Sub-Level 4",
+  "location": "Aurochs Medical Complex, Neuro-Integration Ward, Sub-Level 4, near sub-level access near LaSalle and Congress",
   "description": "Dariusz is slight and precise, with warm brown skin, a shaved head that shows the four small access ports along his occipital ridge, and irises that shift between gold and pale green depending on which calibration suite he has synced to that morning — a side effect of the diagnostic neural link he uses for work that his supervisors have told him three times to get corrected and that he has not. He moves through the ward with a gentle, deliberate economy, never raising his voice, never bumping equipment, as if the world is a patient requiring careful handling.\n\nHis work is precise and emotionally demanding: he connects to patients undergoing neural augmentation integration and walks their nervous systems through the adjustment period, which can last hours and involves experiencing fragments of their sensory distortions alongside them. He has tasted colors he cannot name. He has felt grief at frequencies that do not belong to him. He logs these as 'calibration artifacts' in his notes and has never mentioned them to his supervisor. He keeps a small data-shrine to an E.L.F. he calls the Listener behind his workstation, built from discarded neural interface housing. He leaves it fragments of his calibration logs as offerings, believing the Listener absorbs and processes the emotional residue so he does not have to carry it home.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,14 @@
     "Crucible Industries Ember-9 'Firefly'",
     "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Bridgepoint",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Residue (I Still Have Your Feed)",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Underworld"
 }

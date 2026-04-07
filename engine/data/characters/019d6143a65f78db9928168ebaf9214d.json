@@ -13,7 +13,7 @@
   "role": "Street-level medic and black-market augmentation surgeon",
   "age": 41,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Kedzie and Division",
   "description": "Nadira is a broad-shouldered Ghanaian-British woman whose hands are her most remarkable feature — the left is entirely her own, calloused and ink-stained at the fingertips; the right is a matte-black prosthetic she built herself from salvaged components, its fingers capable of sub-millimeter precision that no organic hand could match. She keeps her locs pinned back tight when she works and loose when she doesn't want to be found, and the distinction matters more than people realize. Her clinic is a converted shipping container stacked midway up the Shelf's residential tiers, marked only by a strip of orange adhesive tape across the door frame — a color that locals have learned means someone inside might still be alive.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,15 @@
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "The Shelf",
+    "The Peninsula",
+    "Big Rig",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

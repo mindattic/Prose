@@ -12,7 +12,7 @@
   "role": "Apprentice at a Ferrogate Transit maintenance depot, Tier 2",
   "age": 16,
   "status": "active",
-  "location": "Jefferson Switch — Ferrogate Transit Sub-Depot 7",
+  "location": "Jefferson Switch — Ferrogate Transit Sub-Depot 7, near Armitage and Milwaukee",
   "description": "Nkeiru is broad-shouldered and permanently grimy in the crease-lines of her knuckles, the kind of grime that scrubbing never entirely removes. Her mother is Igbo-Irish, her father's family came out of Rajasthan three generations back, and she got the combination of her paternal great-grandmother's strong cheekbones and her maternal grandmother's freckles scattered across deep brown skin in a pattern that looks intentional, like a design. She wears her locs pulled back with a strip of heat-resistant tape and has retractable fingernails she saved eight months to install — not for aesthetics, they extend to a precise point useful for getting into tight bolted casings without a flathead.\n\nNkeiru has been at Sub-Depot 7 for fourteen months, officially as a junior apprentice under a Ferrogate maintenance charter. She is already better at harmonic resonance diagnostics than most of the adult workers, a fact she has learned not to demonstrate too openly after the first time cost her a week of sump-drain duty. She has decided that skill is a private thing you deploy at the right moment, not a flag you wave. She is funny in a dry, lateral way — her jokes arrive three beats after the setup and are usually about infrastructure.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,14 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "Jefferson Switch",
+    "Ferrogate Transit",
+    "Grandmother",
+    "The Resonance Communion",
+    "Flicker",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod"
+  ],
+  "district": "The Circuit"
 }

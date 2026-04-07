@@ -12,7 +12,7 @@
   "role": "Network intrusion and digital warfare specialist — netrunner",
   "age": 25,
   "status": "active",
-  "location": "The Canopy — elevated walkway district above Geartown",
+  "location": "The Canopy — elevated walkway district above Geartown, near Clark and Addison",
   "description": "Ilhan Strom-Duah are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and they make no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a netrunner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Ilhan Strom-Duah agrees on two things: they are worth the fee, and they are terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -270,5 +270,11 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "Canopy Station Nine",
+    "Geartown"
+  ],
+  "district": "The Laceworks"
 }

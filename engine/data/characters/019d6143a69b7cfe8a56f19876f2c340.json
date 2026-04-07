@@ -13,7 +13,7 @@
   "role": "Scout diver and route mapper — Boneyard Saints",
   "age": 24,
   "status": "active",
-  "location": "Old Harbor — bunks in a hammock in Wren's warehouse when he's not sleeping on Toll's barge",
+  "location": "Old Harbor — bunks in a hammock in Wren's warehouse when he's not sleeping on Toll's barge, near Wacker and State",
   "description": "Pike Odera is the fastest swimmer the Boneyard Saints have ever had and the most frustrated. He can navigate the flooded ruins of Old Harbor with an intuitive grace that borders on the uncanny — reading currents by feel, sensing structural integrity through water pressure changes, finding passages in the submerged infrastructure that older divers would miss or ignore. Corva trained him, Toll protects him, and neither will let him go deep. He is twenty-four years old and the leash is getting unbearable.\n\nHe came to Old Harbor from the Shelf, following rumors of salvage work that paid better than courier runs. He'd never been underwater before his first day with the Saints. Within a week, Corva said he moved in the water like he'd been born to it. Within a month, he was scouting routes that seasoned divers wouldn't attempt. The affinity is genuine and slightly inexplicable — Pike processes underwater environments with a fluency that his minimal augmentations don't fully account for.\n\nPike is wiry, quick, with close-cropped hair and an expression that alternates between eager and impatient. He has the lean build of a natural swimmer, long-limbed and efficient. His skin is perpetually salt-dried and he smells like the harbor — brine, rust, and something organic. He moves constantly, even on land, with the restless energy of someone who has found the thing they were meant to do and is being prevented from doing it fully.",
   "psychology": {
     "facet_weights": {
@@ -190,5 +190,17 @@
     "Street Custom 'Tombstone' Concrete Block Launcher",
     "Street Custom 'Scorpion Tail' Chain Whip"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Dust & Meridian Saints",
+    "Street Custom 'Lazarus Wire' Garrote System",
+    "The Shelf",
+    "The Voltage Saints",
+    "Chimera-Null",
+    "Ringo DV-4 'Courier'",
+    "Axiom Systems Cortical Bomb CB-1 'Leash'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Rust"
+  ],
+  "district": "Old Harbor"
 }

@@ -11,7 +11,7 @@
   "role": "Fixer - Medical contracts",
   "age": 45,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Ashland and Chicago Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -101,5 +101,9 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Neon artist and sign-maker, Tier 2",
   "age": 17,
   "status": "active",
-  "location": "Mexicantown Libre, works from a rented corner of his uncle's repair shop",
+  "location": "Mexicantown Libre, works from a rented corner of his uncle's repair shop, near Ashland and Chicago Ave",
   "description": "Ikenna is seventeen and built like someone who hasn't quite finished deciding how big he's going to be — tall but not yet settled into it, hands that are already large and burn-scarred from glass work, a face that is still soft in the cheeks and absolutely concentrated in the eyes. His skin is a rich dark brown and he keeps his hair in short twists that he occasionally decorates with small glass beads he has blown himself, misshapen and imperfect in ways he considers acceptable. He has a single cosmetic mod — a bioluminescent patch on the back of his right hand in the shape of a solar flare, applied by a friend in exchange for a custom sign, and which he is privately very proud of. He dresses for practicality: heat-resistant gloves hanging from his belt, a work apron scorched in patterns that look almost intentional.\n\nIkenna learned neon from his uncle, who learned it from a woman who came from somewhere else, and so the craft arrived at him with the character of something that has traveled. He makes signs — functional ones, for the businesses of Mexicantown Libre who can't afford the digital-display minimalism of corporate storefronts — but he also makes pieces he cannot sell and does not try to: suspended glass sculptures that hum at frequencies he calculates by hand, geometric arrangements that change apparent shape as you move around them, portraits of neighborhood figures rendered in colored light. He has a gift he doesn't have language for yet and an ambition he hasn't admitted to anyone.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,13 @@
   "carried_weapons": [
     "Street Custom 'Confession' Modified Industrial Nail Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Palladian Construction",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Glass"
+  ],
+  "district": "The Shelf"
 }

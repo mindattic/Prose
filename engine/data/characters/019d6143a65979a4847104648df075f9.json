@@ -12,7 +12,7 @@
   "role": "fence operator and chop shop manager, Stockyard district",
   "age": 54,
   "status": "active",
-  "location": "The Stockyard — runs a licensed salvage and recycling operation called Osei Reclamation Partners as a front",
+  "location": "The Stockyard — runs a licensed salvage and recycling operation called Osei Reclamation Partners as a front, near Western and Division",
   "description": "Mirabel is a large woman in the way that suggests she was powerful when young and has redistributed rather than diminished — broad-shouldered, dark Ghanaian-Peruvian complexioned, with silver-streaked locs pinned up under a work cap and hands that have been repairing things so long they are covered in small, deliberate scars. Her most visible augmentation is a color-changing dermal layer on her forearms, purchased cheaply years ago and now cycling slowly and randomly through muted terracottas and greens regardless of her mood — the emotional-feedback calibration broke years ago and she never had it fixed. She finds it calming, she says.\n\nMirabel is fifty-four years old and has been running the same operation for twenty-two of them. She survived her husband's death, a protection shakedown that left her with a broken orbital socket, three attempted hostile takeovers from larger criminal enterprises, and a Ferrogate Transit zoning audit that came terrifyingly close to her back warehouse. She has the patience and situational awareness of someone who has been out-waited by every threat she has ever faced. She is not warm, exactly — she extends professional courtesy and charges fair rates, which in the Stockyard passes for warmth. She is intensely loyal to the small circle of people who have been loyal to her, and has long since made peace with the fact that the list is short.",
   "psychology": {
     "facet_weights": {
@@ -251,5 +251,17 @@
   "registered_firearms": [
     "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Stockyard",
+    "TESSERA Widow Mk. III",
+    "The Reclamation Assembly",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Gradient Compact",
+    "Silver",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

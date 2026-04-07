@@ -13,7 +13,7 @@
   "role": "Anya's husband — beaten by the gang, jaw wired shut",
   "age": 41,
   "status": "active",
-  "location": "The Shelf — Tier Four, bedridden",
+  "location": "The Shelf — Tier Four, bedridden, near Kedzie and Division",
   "description": "Demyan was a large man before the beating — a cargo handler at the Shelf's loading platforms, the kind of work that builds slabs of muscle across the back and shoulders. He is still large, but the architecture has shifted. His jaw is wired shut with medical-grade titanium pins visible through the skin of his cheeks like rivets in a hull. He communicates through a vocoder pad strapped to his wrist that converts typed text to flat, mechanical speech. His eyes are the part that didn't break — dark, warm, patient. He looks at his wife like she invented sunlight. He looks at his daughter like she is the reason sunlight matters. When Kyle's teeth arrive, delivered by a trembling Yuliya, Demyan will hold them in his palm for a long time. Then he will laugh. The vocoder will translate it as a series of monotone ha-ha-ha sounds. It will be the funniest and saddest thing in the Shelf that night.",
   "psychology": {
     "facet_weights": {
@@ -224,5 +224,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Titanium",
+    "IRONLIMB Fortress MK-IV Combat Leg Pair",
+    "Lazarus IDP-1 'Teeth'"
+  ],
+  "district": "The Shelf"
 }

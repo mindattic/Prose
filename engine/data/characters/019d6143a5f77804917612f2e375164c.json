@@ -12,7 +12,7 @@
   "role": "Axiom Security Division internal affairs investigator",
   "age": 47,
   "status": "active",
-  "location": "Axiom Corporate Campus, Meridian Core",
+  "location": "Axiom Corporate Campus, Meridian Core, near State and Jackson",
   "description": "Drăgan Asomugha-Kuusisto is the kind of man who makes other security personnel straighten their posture without knowing why. He is thin in the way of someone who was once broader and let it go — not from laziness but from a deliberate asceticism, as if he decided one day that taking up less space would make him harder to read. His complexion is a warm medium brown, his eyes an unusual pale hazel behind wire-framed optical enhancers he wears out of preference over the neural overlay most at his level use. He keeps his greying temples close-cropped and his jawline perpetually two days unshaved, which is its own kind of uniform.\n\nHe investigates Axiom's own security personnel — corruption, use-of-force violations, theft from evidence lockups, payroll fraud, inappropriate E.L.F. data-shrine interactions on company property. He is not liked and has never needed to be. What he has instead is a reputation for being utterly methodical and deeply unimpressed by rank. His colleagues believe he is loyal to Axiom above all else. This is almost true. The truth is more complicated and he has never volunteered it.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,12 @@
   "registered_firearms": [
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian Core",
+    "Irontide Tidal Energy",
+    "The Pale Mile",
+    "Hazel Brink"
+  ],
+  "district": "Meridian Core"
 }

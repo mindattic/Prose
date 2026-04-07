@@ -12,7 +12,7 @@
   "role": "Independent mechanic specializing in legacy vehicle systems, Geartown",
   "age": 61,
   "status": "active",
-  "location": "Geartown — owns and operates Arriola's Bay, a three-bay garage on Ironvein Spur Street",
+  "location": "Geartown — owns and operates Arriola's Bay, a three-bay garage on Ironvein Spur Street, near Milwaukee and Damen",
   "description": "Kgomo is built like something that was designed to take a load and did. He's massive across the shoulders in the way of a man who has been lifting engines since before most people reading this were born, with a belly that has arrived in the last decade and which he regards with philosophical detachment. His Batswana-Norwegian heritage has given him dark brown skin sun-cured to near-black at the forearms, close-cropped white hair, and a beard he maintains with the same precision he applies to torque specifications. His right arm from the elbow down is industrial-grade chrome — a work accident at forty-three that he replaced with the best mechanical limb he could afford (not very, at the time) and has since upgraded three times. It is visibly mismatched: different grades of metal, a panel that's clearly from a different model year. He considers it charming.\n\nKgomo is not warm in the way of someone who performs warmth. He is warm in the way of a specific tool that has been exactly right for the job so many times that you trust it completely. He has opinions about everything, delivers them once, and does not repeat himself. He has been repairing vehicles in Geartown for thirty years and knows which machines can be saved and which are already gone — a judgment he applies, somewhat unsubtly, to people as well.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,11 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Street Custom 'Widowmaker' Rigged Power Tool"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Heritage Vault",
+    "Geartown",
+    "Ironvein"
+  ],
+  "district": "The Circuit"
 }

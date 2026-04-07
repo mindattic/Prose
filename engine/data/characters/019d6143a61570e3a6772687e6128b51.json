@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and fortune seller",
   "age": 22,
   "status": "active",
-  "location": "The Oxidian Market, Ironhaven",
+  "location": "The Oxidian Market, Ironhaven, near Western and Division",
   "description": "Fidelis is a willowy twenty-two-year-old with the warm clay-brown complexion that comes from their Congolese-Peruvian lineage, and an extraordinary face — wide-set eyes fitted with irises that shift from amber to deep jade depending on the light, long features that read as still and ageless even when they are laughing. Their hair is grown out into a soft cloud that they have threaded with fiber-optic strands, so it glows at the tips in a slow amber pulse when they're inside. They dress like a traveling scholar from some other century: layered robes in muted earth tones, rings on every finger, a tablet crammed with media archives always in hand.\n\nFidelis sells bootleg film, music, literature, and recordings in the morning, and 'readings' in the afternoon — a practice that is one part ELF-communing, one part cold reading, and one part genuine perceptiveness that they do not fully understand themselves. They have developed a minor reputation in the Oxidian Market for readings that are accurate in strange, specific ways. They are not sure if they are receiving something or constructing something from micro-observations. They have decided it doesn't matter: the comfort is real either way, and they charge fairly.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,17 @@
   "carried_weapons": [
     "Street-Custom Razorwire Wraps 'Glass Hands'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Oxidian Market",
+    "Ferrogate Transit",
+    "Ironhaven",
+    "Helix Biosystems DermRenew Cellular Renewal Lattice",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Clay"
+  ],
+  "district": "The Shelf"
 }

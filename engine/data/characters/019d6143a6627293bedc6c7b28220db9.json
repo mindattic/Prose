@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller",
   "age": 67,
   "status": "active",
-  "location": "Geartown, beneath the Kessler Interchange overpass",
+  "location": "Geartown, beneath the Kessler Interchange overpass, near Damen and Armitage",
   "description": "Ngozi is small, dense, and permanent-looking, like a boulder that has decided to become a person. Her dark skin is mapped with the small scars of a lifetime handling sharp metal, and her left arm from the elbow down is a functional prosthetic she salvaged and assembled herself over the course of a decade — mismatched parts from at least four different manufacturers, currently painted a deep burgundy with yellow geometric lines her grandchildren helped design. She wears magnification goggles pushed up on her forehead at all times, leaving permanent red rings around her eyes. Her natural hair is cropped close and gone entirely silver.\n\nShe knows the value of everything. Not the price — the value. She can hold a stripped circuit board for ten seconds and tell you where it came from, what it's worth in raw materials versus function, and who in a three-block radius might want it. Her operation under the Interchange overpass is technically three stalls collapsed into one vast organized heap that only she can navigate. She has regular buyers from Ferrogate Transit's maintenance crews, independent augmentation techs, and two separate Tier 3 corponation contractors who pretend they don't buy from unlicensed salvage. She is sixty-seven years old and has never once been successfully cheated.",
   "psychology": {
     "facet_weights": {
@@ -256,5 +256,15 @@
   "registered_firearms": [
     "Arcturus Defense Solutions SAR-3 'Warden'",
     "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "The Interchange",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Geartown",
+    "Gravimetric Collapse Charge GCC-9",
+    "Silver"
+  ],
+  "district": "The Circuit"
 }

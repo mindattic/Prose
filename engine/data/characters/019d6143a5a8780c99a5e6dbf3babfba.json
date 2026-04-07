@@ -12,7 +12,7 @@
   "role": "Electronic and physical observation expert — surveillance specialist",
   "age": 40,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
   "description": "Alper Holmberg-Dembele is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Alper Holmberg-Dembele plans to keep it that way. He works as a surveillance specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Alper Holmberg-Dembele describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,12 @@
     "Street Custom 'Confession' Modified Industrial Nail Gun",
     "Street Custom 'Scorpion Tail' Chain Whip"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ashfield",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

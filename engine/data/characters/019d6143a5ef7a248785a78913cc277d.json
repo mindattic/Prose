@@ -12,7 +12,7 @@
   "role": "Night-shift transit operator, Ferrogate Line 7 (Geartown to Grand Corridor)",
   "age": 31,
   "status": "active",
-  "location": "Geartown, Ferrogate Line 7 depot; lives in a studio in Bronzeline",
+  "location": "Geartown, Ferrogate Line 7 depot; lives in a studio in Bronzeline, near North Ave and Damen",
   "description": "Deshi is lean and hollow-eyed in the way of someone who has worked nights for so long that daylight feels personally hostile. His skin is a cool amber-brown, his hair grown long enough to tie back but short enough to stuff under a Ferrogate cap, and he has a geneware modification — pale silver irises that glow faintly in low light, bought secondhand from a clinic in the Narrows when he was twenty-two because he thought it would make him look interesting. It does. He has a fine-boned face that people often assume is younger than it is, and a habit of blinking very slowly, like a bird deciding whether to trust you.\n\nHe loves the empty train. From 02:00 to 05:00 on Line 7, when the cars are nearly hollow and the city slides past the glass like a fever dream, Deshi is genuinely content in a way he can't replicate anywhere else. He is kind to passengers in distress and has developed an informal taxonomy of the people who ride at night: the workers, the lost, the running-from-something crowd, and what he privately calls the 'just-needed-to-move' folk. He does not intervene in people's business unless they're bleeding. He does, however, remember faces.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,23 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "The Narrows Compact",
+    "Bronzeline",
+    "Ferrogate Transit",
+    "The Fathom Line",
+    "Geartown",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Witness",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "The Pale Mile",
+    "Glass",
+    "Symbiont",
+    "Nightlight"
+  ],
+  "district": "The Circuit"
 }

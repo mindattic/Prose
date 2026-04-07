@@ -12,7 +12,7 @@
   "role": "Numbers runner and low-level bookmaker's courier for an illegal betting syndicate",
   "age": 19,
   "status": "active",
-  "location": "The Shelf lower levels, primarily between Blackpipe Corridor and Burnside Pocket",
+  "location": "The Shelf lower levels, primarily between Blackpipe Corridor and Burnside Pocket, near Ashland and Chicago Ave",
   "description": "Pikoi is slight and quick, built like someone who learned early that the best defense is to be somewhere else before trouble registers he's present. He has his father's Polynesian bone structure — broad jaw, wide-set eyes — and his Ghanaian grandmother's coily black hair, grown out into a chaotic halo he never bothers to maintain. His irises have been modded with a tide-pattern: rings of blue-green that ripple outward slowly, a mod he saved eight months of UBC stipend to afford because he thought it would make him look memorable. He has since realized this was a professional error. A thin scar crosses his left eyebrow from a run-in he doesn't discuss.\n\nPik is bright in the animal way of someone who has never had the luxury of being stupid — fast to read a room, faster to find an exit, with a memory for numbers that his handlers find more useful than he realizes. He moves through the Shelf's lower corridors with the particular ease of someone raised in them, knows which maintenance corridors flood at high tide, which E.L.F. shrines get the most foot traffic and therefore the most witnesses. He's not cruel. He's not ambitious in the way that gets people hurt. He's nineteen and mostly trying to afford better tier food and keep his younger sister in school, and he's chosen the tools available to him.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,17 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Burnside Pocket",
+    "Grandmother",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "NeuralPath Cascade Standard Feed BCI",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Organ harvester and black-market tissue broker operating out of South Deering Sump",
   "age": 34,
   "status": "active",
-  "location": "South Deering Sump, Sublevel 4 — a former water treatment annex converted into an unlicensed surgical suite she calls 'the pantry'",
+  "location": "South Deering Sump, Sublevel 4 — a former water treatment annex converted into an unlicensed surgical suite she calls 'the pantry', near sub-level access near State and Van Buren",
   "description": "Precious is small, lean, and precise — a former Helix Biosystems surgical technician who was quietly terminated after falsifying organ provenance records for a side arrangement she ran for two years before anyone noticed. She has warm umber skin and close-cropped natural hair she keeps covered under surgical caps out of habit even when she's not working. Her most striking feature is her eyes: she paid for patterned irises that look like cracked amber, threaded with faint gold lines she chose because they match the color of preserved tissue in nutrient solution. She finds this funny. Nobody else does.\n\nShe is brisk, technically focused, and runs her operation with clinical precision — she insists on basic sanitation, proper cold-chain storage, and documented tissue typing even in this context, because sloppy work kills customers and dead customers tell no one but also buy nothing. She maintains a complicated ideology about her work: she believes the official organ allocation system is a mechanism for tier sorting the deserving dead, and that she is simply an alternative distribution network. She has said this enough times that she half believes it. The other half of her knows she harvests from people who cannot say no.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,15 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "South Deering Sump",
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "Breadbox",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Gold"
+  ],
+  "district": "The Underworld"
 }

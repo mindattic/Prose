@@ -12,7 +12,7 @@
   "role": "Numbers runner and bookmaker's courier for the Stockyard gambling networks",
   "age": 19,
   "status": "active",
-  "location": "The Stockyard — runs routes between the Geartown transit hub and the southern Stockyard processing yards",
+  "location": "The Stockyard — runs routes between the Geartown transit hub and the southern Stockyard processing yards, near Ashland and Chicago Ave",
   "description": "Kojo Umezurike-Vásárhelyi is nineteen years old and built like someone whose body is still negotiating its final dimensions — tall, a little loose in the joints, with the nervous energy of a person who has never in his life sat still for more than ten minutes voluntarily. His skin is a warm medium brown and he has geneware cat ears in a tawny orange that he got at sixteen with three months of saved courier income — they swivel when he's startled or excited, which is often. His hair is close-cropped on the sides and grows in a short natural taper on top. He moves through the Stockyard with the casual speed of someone who grew up learning which streets flow and which ones snag.\n\nKojo is sharp, quick, and has not yet fully processed that the work he does is dangerous. He has the operational competence of someone who's been running numbers since he was fourteen and the emotional development of someone who has never left a ten-block radius of the Stockyard in his life. He is loyal to his bookmaker — a woman named Dzintars Mbaya-Ferenczi who he calls 'the Operator' — with the uncomplicated devotion of a kid who needed a job and got one. He is also, quietly, very good at math, and has begun to understand the numbers he carries in ways that make Dzintars both pleased and slightly watchful.",
   "psychology": {
     "facet_weights": {
@@ -196,5 +196,13 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-44 'Fenris'",
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ]
+  ],
+  "related_entities": [
+    "The Stockyard",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Ringo DV-4 'Courier'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

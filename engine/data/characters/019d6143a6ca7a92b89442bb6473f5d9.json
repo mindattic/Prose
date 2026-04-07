@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor, Old Harbor waterfront",
   "age": 22,
   "status": "active",
-  "location": "Old Harbor, mobile cart — regular pitch near the Bay View Docks morning market and Gravesend Basin evening crowd",
+  "location": "Old Harbor, mobile cart — regular pitch near the Bay View Docks morning market and Gravesend Basin evening crowd, near Lake Shore and Wacker",
   "description": "Seun is twenty-two going on forty-five, with a lean face that looks like it got serious too fast, sharp cheekbones, and eyes that are a little too watchful for someone handing out soup. He has deep brown skin and keeps his hair twisted into small knots he wraps in a length of indigo fabric. He has one cosmetic mod — a faint cat tail, short-furred and charcoal grey, which he got on a dare at eighteen and has made peace with — it curls around his leg when he's nervous, which he considers embarrassing and can't control. He wears a padded work jacket covered in small embroidered patches from places he's never been, bought from a vendor in the Burnished Market.\n\nHe runs his grandmother's cart, ostensibly temporarily, going on two years now. The original plan was six months while she recovered from a surgery; then her recovery stalled, then the medical debt compounded, and now the cart is effectively his. He makes decent money on good days at the docks — his grandmother's broth recipe, which involves a fermented base that takes four days to prepare, has a small and devoted following — and barely enough on bad ones. He is not unhappy, exactly. He is twenty-two and he was supposed to be somewhere else by now and he has not quite grieved that yet.",
   "psychology": {
     "facet_weights": {
@@ -223,5 +223,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Gravesend Basin",
+    "Bay View Docks",
+    "Grandmother",
+    "Big Rig"
+  ],
+  "district": "Old Harbor"
 }

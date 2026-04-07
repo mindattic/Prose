@@ -12,7 +12,7 @@
   "role": "Sociologist specializing in Shelf community formation and informal economy networks",
   "age": 41,
   "status": "active",
-  "location": "University Spine, with frequent fieldwork in Hough Reclamation and Brightmoor Reclamation",
+  "location": "University Spine, with frequent fieldwork in Hough Reclamation and Brightmoor Reclamation, near Lincoln and Belmont",
   "description": "Elohor is a compact woman with deep umber skin and close-cropped natural hair shot through with threads of bioluminescent copper — a geneware mod she got in grad school and never removed. She wears the same style of worn canvas field jacket over institutional-issued thermals, her pockets always bristling with analogue notecards she doesn't fully trust to cloud backup. Her eyes are her most striking feature: one natural dark brown, one fitted with a patterned iris mod in amber tessellation — a gift from a Shelf elder she interviewed fifteen years ago that she accepted out of politeness and then fell in love with. She moves with the deliberate, unhurried energy of someone who has spent years learning to make people comfortable, to seem unthreatening, to wait.\n\nElohor is beloved by her graduate students and quietly despised by certain senior faculty who find her fieldwork methods 'insufficiently rigorous.' She publishes in peer-reviewed journals but she also posts plain-language summaries to community meshboards and shows up to Shelf neighborhood councils without an agenda. She genuinely likes people in a way that her academic peers find vaguely embarrassing. Her research on informal mutual aid networks in Hough Reclamation is considered foundational, but she worries constantly that her work has been used by parties she didn't intend — that somewhere, a Tessera urban planner used her data to identify which Shelf communities were 'stable enough to absorb' and which could be cleared.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,19 @@
   ],
   "registered_firearms": [
     "Crucible Industries Titan-500 'Earthquake'"
-  ]
+  ],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Hough Reclamation",
+    "University Spine",
+    "The Reclamation Assembly",
+    "The Gradient Compact",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Tessera Corponation",
+    "Copper",
+    "Palette",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
+  ],
+  "district": "The Laceworks"
 }

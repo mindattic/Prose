@@ -12,7 +12,7 @@
   "role": "Contract broker and resource coordinator — fixer",
   "age": 34,
   "status": "active",
-  "location": "Glassway — corporate-adjacent retail district, heavy surveillance",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near North Ave and Milwaukee",
   "description": "Aminata Vargas-Baffour is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 34, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Aminata Vargas-Baffour plans to keep it that way. He works as a fixer out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Aminata Vargas-Baffour agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -270,5 +270,11 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Forge-Smith Collective Carbon Machete 'Cane Cutter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Circuit"
 }

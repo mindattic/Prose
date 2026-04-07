@@ -13,7 +13,7 @@
   "role": "Infiltration specialist and psychological operations — The Margin Call",
   "age": 39,
   "status": "active",
-  "location": "Meridian Core — rents a high-floor apartment with excellent sight lines and a second exit she installed herself",
+  "location": "Meridian Core — rents a high-floor apartment with excellent sight lines and a second exit she installed herself, near State and Madison",
   "description": "Lise Arnault spent fifteen years in corporate human resources for Cascade Dynamics — and if you think human resources is a soft job, you have never watched Lise Arnault conduct a termination interview. She was Cascade's internal investigator, the person they sent when an executive was suspected of disloyalty, embezzlement, or espionage. She could sit across from a person over coffee and extract their secrets through conversation alone. No drugs, no augmented interrogation, no coercion. Just an understanding of human psychology so precise that people told her things they hadn't admitted to themselves.\n\nShe left Cascade when the company asked her to build psychological profiles of employees for a predictive-loyalty program — an algorithm that would flag people likely to quit, to whistle-blow, to unionize. She built the prototype. Then she looked at what she'd built and quit before it went operational. Sterling recruited her three months later. He was the first person she'd met who understood what she could do and wasn't afraid of it.\n\nLise is polished in the way corporate women learn to be — professional appearance, controlled expression, warmth deployed as a precision instrument. She is conventionally attractive and uses this as a tool without apology or enjoyment. Her eyes are the tell — sharp, evaluative, constantly processing micro-expressions and vocal patterns. She dresses impeccably because in the corporate world, appearance is the first layer of the argument.",
   "psychology": {
     "facet_weights": {
@@ -181,5 +181,14 @@
   "carried_weapons": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core",
+    "Arcturus HW-1 'Goliath'",
+    "Flicker",
+    "PulsePoint MoodGlyph Affective Display Implant",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Vantablack PD-8 'Whistle'"
+  ],
+  "district": "Meridian Core"
 }

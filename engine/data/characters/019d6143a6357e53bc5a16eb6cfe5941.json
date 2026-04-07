@@ -13,7 +13,7 @@
   "role": "Lower Dock Crew lookout — Prologue survivor. Jaw destroyed, refuses replacement.",
   "age": 25,
   "status": "active",
-  "location": "The Shelf — lower loading docks",
+  "location": "The Shelf — lower loading docks, near Kedzie and Division",
   "description": "Isaak Ren was the crew's lookout. He didn't see Kyle coming. Nobody did. Kyle shattered his jaw with the flat of the blade and Isaak has refused to get it replaced. He wears a wrap around the lower half of his face and communicates through hand signals and a battered datapad.\n\nThe crew thinks this is trauma. It's not. Isaak has discovered that silence gives him power he never had when he talked. People project meaning onto his stillness. They assume depth. Isaak is using Kyle's violence as a personal rebrand.\n\nBefore the crew, Isaak was a library aide at the Shelf Community Archive — one of the last physical book collections in the lower tiers. He read constantly. Philosophy, psychology, military history. He joined Marcus's crew because the library closed and reading doesn't pay. He is the most educated person in the crew by a significant margin and the only one who has read about what Kyle is. He found references to experimental neural enhancement programs in declassified corporate documents. He does not share this with the crew.\n\nIsaak has no family in Meridian 88. His parents are in the Busan Resettlement Zone. He sends them nothing because they don't know he's alive. He let them believe he died in transit. It was easier.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,16 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "The Shelf",
+    "The Ghost Ronin",
+    "Aslan Vasquez-Chatterjee",
+    "ARCHIVE",
+    "Marcus Okafor-7",
+    "Jerome Atlas"
+  ],
+  "district": "The Shelf"
 }

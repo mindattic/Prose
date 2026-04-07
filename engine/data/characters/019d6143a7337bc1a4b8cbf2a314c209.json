@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor, bespoke modifications and wearable tech integration",
   "age": 32,
   "status": "active",
-  "location": "The Laceworks, Lakeview Neon",
+  "location": "The Laceworks, Lakeview Neon, near Clark and Belmont",
   "description": "Zara is conspicuously beautiful and entirely aware of it, in the way of someone who has learned to use aesthetics as both shield and spear. They are tall and slender with rich dark brown skin and a shaved head except for a dramatic crest of natural coils dyed rotating gradient colors — currently deep violet fading to copper — achieved through cosmetic geneware that responds to their mood chemistry and can be overridden manually. Their eyes have iris mods: six-pointed geometric patterns in pale gold. They dress in their own designs, always, which are architectural and theatrical — structured silhouettes, integrated LED piping, reactive fabrics that shift pattern based on environment or wearer biometrics. Their stall at The Laceworks is less a stall and more an installation: draped fabric, soft indirect lighting, a rack of finished pieces and a consultation corner where they sketch.\n\nZara makes clothes that do things. Not just look extraordinary — though they do — but interface: garments with embedded health monitoring, reactive armor weaving for Tier 1 clients who can't afford body modification, emotive pattern-shift fabrics, wearable communication arrays. Their clientele spans Tier 1 to Tier 3, which is unusual. They do charity commissions for people in genuine hardship and charge Tier 3 clients appropriately to balance it, which their accountant — if they had one — would find alarming. They are deeply, almost dangerously idealistic about fashion as democratic technology: the idea that a piece of clothing could give a street-poor person capabilities that a corporate executive buys as augmentation. They are also twenty-two thousand quanta in informal debt to a materials supplier and trying not to think about it.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,15 @@
   ],
   "registered_firearms": [
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
-  ]
+  ],
+  "related_entities": [
+    "The Laceworks",
+    "Lakeview Neon",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "Palladian Construction",
+    "Copper",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Laceworks"
 }

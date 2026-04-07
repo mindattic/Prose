@@ -12,7 +12,7 @@
   "role": "Anti-corporate agitator and underground press distribution coordinator",
   "age": 19,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Western and Division",
   "description": "Lilavati is small and quick, with brown skin, large dark eyes, and hair she keeps dyed in aggressively shifting colors — currently a deep violet that fades to white at the tips. She has cat ears, soft and dark-furred, that she was born with after her mother's geneware expressed during pregnancy in ways the clinic didn't predict — they're fully functional and she's learned to keep them flat when she doesn't want to broadcast her emotions, which she is still practicing. She dresses for mobility and invisibility: nothing that snatches on a fence, nothing that can't be replaced.\n\nLilavati is nineteen and has been distributing underground printed materials since she was fifteen. She found the Shelf's pirate printing collective through a friend of a friend and has never left. She is fierce, impulsive, sometimes reckless, and possessed of a political analysis far beyond her years that she picked up from obsessive reading and the kind of education you get when everyone around you is fighting for something. She is also, underneath the front, genuinely scared most of the time, which is why she keeps moving.",
   "psychology": {
     "facet_weights": {
@@ -211,5 +211,13 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Shelf",
+    "The United Workers Front",
+    "Zheng-dao Bioelectric",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

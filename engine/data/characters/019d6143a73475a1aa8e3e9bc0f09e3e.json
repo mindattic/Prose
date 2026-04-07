@@ -12,7 +12,7 @@
   "role": "Junior hacker, unofficial IT support for Hough Reclamation community network",
   "age": 17,
   "status": "active",
-  "location": "Hough Reclamation",
+  "location": "Hough Reclamation, near Ashland and Chicago Ave",
   "description": "Zephyros is built like someone who forgets to eat when he's working — which is often — with a lanky frame, warm medium-brown skin, and his Kovalenko grandmother's sharp nose and high cheekbones. He has cat ears, the affordable kind, a dusty silver-grey that he chose because they were on discount and he has never once admitted this; his hair grows in loose natural coils that he keeps at a medium length and approximately never combs. His eyes are standard-issue brown except for a ring of self-installed retinal AR overlay that occasionally renders visible UI elements at the corner of his vision, which gives him the habit of twitching his gaze sideways to dismiss notifications mid-conversation.\n\nHe is the person in Hough Reclamation that people come to when the community mesh goes down, when their devices are compromised, when someone needs a data trail cleaned or a locked terminal reopened. He does not charge money — he charges favors and information, which he considers more valuable. He is genuinely ideological about this: he believes the mesh belongs to the community and his skills are a form of maintenance, like fixing a pipe. He is also seventeen and sometimes insufferably certain he is the smartest person present, which he often is and which helps no one.",
   "psychology": {
     "facet_weights": {
@@ -176,5 +176,16 @@
   "carried_weapons": [
     "Street Custom 'Sunday School' Weaponized Religious Artifact"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "Grandmother",
+    "Vespid Dynamics Reconnaissance Beetle RB-2",
+    "Silver",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Sweeper-11",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

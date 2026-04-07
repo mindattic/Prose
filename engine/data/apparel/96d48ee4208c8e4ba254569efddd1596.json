@@ -1,0 +1,36 @@
+{
+  "id": "96d48ee4208c8e4ba254569efddd1596",
+  "name": "Helion Manufacturing Radiation Exposure Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A lead-composite layered suit designed for work in environments with elevated ionizing radiation. The suit incorporates dosimetry sensors at twelve body points that provide real-time exposure tracking. When cumulative dose approaches safe limits, the suit's collar-mounted indicator changes from green to amber to red.\n\nUsed in reactor maintenance, medical imaging equipment servicing, and the cleanup of sites where radioactive materials have been improperly stored or dumped — which in Meridian 88's lower tiers happens more often than any authority acknowledges.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "lead-composite layers",
+    "dosimetry sensor array",
+    "sealed joint gaskets"
+  ],
+  "functionality": "Ionizing radiation shielding, real-time dose tracking, exposure limit warnings",
+  "what_it_says": "You work near things that damage your DNA and this suit is the only reason your cells are still copying correctly.",
+  "worn_by": [
+    "reactor maintenance",
+    "radiation cleanup crews",
+    "medical equipment technicians"
+  ],
+  "manufacturer": "Helion Manufacturing",
+  "price_range": "Φ3,200",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Radiation Exposure Suit's dosimetry logs show a worker was exposed to a radiation source that doesn't match anything at their assigned work site — something radioactive was there that wasn't supposed to be."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 2",
+    "radiation",
+    "dosimetry",
+    "shielding",
+    "industrial"
+  ]
+}

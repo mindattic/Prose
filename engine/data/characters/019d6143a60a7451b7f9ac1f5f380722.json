@@ -12,7 +12,7 @@
   "role": "Street comedian and oral storyteller",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave, performs regularly at the Corrugated Stage open-air market",
+  "location": "Hamtramck Enclave, performs regularly at the Corrugated Stage open-air market, near Halsted and Division",
   "description": "Ezekiel is a big man gone soft at the edges — broad shoulders still present under a frame that's added roundness over the decades, hands that look built for work but move with theatrical precision. His face is deeply lined, dark complexioned, with a grey-shot beard he trims every third day with aggressive inconsistency. His left eye is a cheap chrome replacement, matte silver with a fixed aperture that doesn't track quite right, which he uses deliberately in performance — holding the chrome eye on someone while the natural eye looks away creates an uncanny effect he calls 'the split.' He dresses in layers of mismatched secondhand, always some piece of vivid color — a patterned scarf, a lacquered button.\n\nEzekiel has been performing in Hamtramck Enclave for twenty-two years. He knows every family, every feud, every absurdity, and his comedy is the neighborhood talking to itself — sharp, intimate, tender with grief, and never punching at those who can't afford to lose. He's turned down three offers to perform in Meridian Core venues and one offer to consult on a Tessera-sponsored cultural feed. He is locally beloved and regionally unknown, which is precisely how he wants it. He is also, quietly, one of the best oral historians of the Enclave's last three decades.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,17 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Meridian Core",
+    "Irkalla",
+    "Tessera Corponation",
+    "ARCHIVE",
+    "The Pure Hand",
+    "Silver",
+    "Nesting Doll",
+    "Ringo Corponation"
+  ],
+  "district": "The Shelf"
 }

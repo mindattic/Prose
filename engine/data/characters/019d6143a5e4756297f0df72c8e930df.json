@@ -12,7 +12,7 @@
   "role": "Underground press operator and anti-corporate agitator",
   "age": 27,
   "status": "active",
-  "location": "Hamtramck Enclave",
+  "location": "Hamtramck Enclave, near Western and Chicago Ave",
   "description": "Dariusz is lean and slightly too tall for the cramped print spaces he works in, with the kind of posture that suggests he's spent years ducking under doorframes and corporate surveillance arches both. His skin is a warm medium brown, his eyes have aftermarket fractal irises — amber and black geometric spirals he bought secondhand — and he keeps his hair in short twists that he dyes different colors based on which burner identity he's running that week. He has ink-stained fingers that no amount of solvent fully clears and a laugh that arrives without warning and disappears just as fast. He is charming in the way a distraction is charming — you enjoy it until you realize your attention was supposed to be somewhere else.\n\nDariusz runs a print-and-signal operation called Salvo out of a basement in the Hamtramck Enclave that produces physical broadsheets, mesh broadcasts, and occasional data-spike packages that end up in corporate employee feeds. He considers himself a journalist in the classical sense and will argue this at length. People who have to clean up after his more ambitious operations might use other words. He is genuinely brave and genuinely reckless and has so far survived the combination through luck, speed, and an extraordinary talent for not being where he said he'd be.",
   "psychology": {
     "facet_weights": {
@@ -177,5 +177,15 @@
   "registered_firearms": [
     "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
     "Tessera TK-11 Specter 'Whisper'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Zheng-dao Bioelectric",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "TESSERA TK-4 'Hellhound'",
+    "Slagworks Industrial",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Hearthstone Firearms Trail-357 'Pathfinder'"
+  ],
+  "district": "The Shelf"
 }

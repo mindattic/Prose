@@ -12,7 +12,7 @@
   "role": "airship drifter, seasonal worker, minor smuggler's runner",
   "age": 16,
   "status": "active",
-  "location": "Waukegan Industrial Shelf — sleeps in the cargo bays of docked airships when they can, otherwise the shelf's lower maintenance tunnels",
+  "location": "Waukegan Industrial Shelf — sleeps in the cargo bays of docked airships when they can, otherwise the shelf's lower maintenance tunnels, near Wacker and State",
   "description": "Aïssé is small for their age, wiry, with the kind of stillness that comes from learning early that drawing attention is expensive. Their skin is warm brown, their hair a short natural cloud they dye the tips bioluminescent green when they can afford the pigment drops — which is not often. They have no mods beyond the green tips and a single geneware cat ear on the left side, the right ear perfectly human, because the second ear was a package deal they could only afford half of. They find this funny. They carry a cracked data-tablet in a waterproof sleeve and a folding tool roll with maintenance implements inside.\n\nAïssé was born on an airship — literally, between ports, to parents who were themselves drifters. Their mother is somewhere on the southern hyperlane circuit; they parted ways two years ago in circumstances they don't fully explain. They have been working the Waukegan Shelf since, picking up day labor in cargo loading, airship maintenance, and occasionally running small packages for traders who don't ask them to know what's inside. They are not naive — they know what some of those packages probably are — but they have developed a careful moral accounting system: nothing that hurts people who didn't choose it. They are teaching themselves to read Ferrogate maintenance schematics from a salvaged manual, with the ambition of becoming a licensed airship tech before they turn twenty.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,13 @@
     "Street Custom 'Molotov Standard' Incendiary Bottle",
     "Forge-Smith Collective Trench Knuckles 'Anvil'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Canopy Station Nine",
+    "Ferrogate Transit",
+    "The Shelf",
+    "The Meridian Drift",
+    "The Waukegan Industrial Shelf"
+  ],
+  "district": "Old Harbor"
 }

@@ -1,0 +1,37 @@
+{
+  "id": "92c36c1780185944d3d04cf036a0cb71",
+  "name": "Drake Industrial Deep-Mine Survival Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A ruggedized suit designed for mining operations in deep subsurface environments where tunnel collapse, gas pockets, and water intrusion are constant risks. The suit incorporates an emergency rebreather, a personal locator beacon, impact-resistant plating on the torso and head, and chemical glow strips that activate if power is lost.\n\nThe Deep-Mine Suit doesn't prevent mine disasters — it keeps the wearer alive long enough for rescue. The 72-hour rebreather and locator beacon have pulled survivors from collapses that would otherwise have been body recoveries.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "impact-resistant plating",
+    "emergency rebreather",
+    "personal locator beacon",
+    "chemical glow strips"
+  ],
+  "functionality": "72-hour survival support, impact protection, beacon location, emergency illumination",
+  "what_it_says": "You work underground where the ceiling might fall, the air might poison you, and this suit is your chance of being found alive.",
+  "worn_by": [
+    "deep miners",
+    "subsurface workers",
+    "tunnel crews"
+  ],
+  "manufacturer": "Drake Industrial",
+  "price_range": "Φ1,800",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Deep-Mine Survival Suit's locator beacon activates from a location that isn't a mine — it's under a Spire building, from a subsurface level that doesn't appear on any structural plan."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 1",
+    "mining",
+    "survival",
+    "underground",
+    "emergency"
+  ]
+}

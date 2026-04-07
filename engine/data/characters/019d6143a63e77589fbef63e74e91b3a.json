@@ -12,7 +12,7 @@
   "role": "Covert entry and social penetration specialist — infiltrator",
   "age": 32,
   "status": "active",
-  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Ashland and Chicago Ave",
   "description": "Kamala Larsen-Mensah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a infiltrator out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Kamala Larsen-Mensah lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,11 @@
   "registered_firearms": [
     "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ]
+  ],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

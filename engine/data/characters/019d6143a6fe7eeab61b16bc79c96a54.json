@@ -12,7 +12,7 @@
   "role": "Mechanic and repair technician at a Geartown independent shop",
   "age": 28,
   "status": "active",
-  "location": "Geartown, 'Mudflap Repairs' off Dearborn Forge's south service corridor",
+  "location": "Geartown, 'Mudflap Repairs' off Dearborn Forge's south service corridor, near Milwaukee and Damen",
   "description": "Toivo is wiry and restless, with warm brown skin dusted perpetually with machine grit no amount of scrubbing fully removes. He keeps his hair shaved close on the sides with a tight coil of dark curls on top, and his left forearm has a subdermal glow-line mod — a single bioluminescent stripe running elbow to wrist in industrial orange — which he got at nineteen because he thought it looked sharp and has since found genuinely useful when working in dark engine bays. He's got a gap between his front teeth and laugh lines already forming at the corners of his eyes from a face that defaults to grinning.\n\nHe took over Mudflap Repairs three years ago when its previous owner, an old Ferrogate Transit retiree who mentored him, died without a will and no family stepped forward. Toivo has been paying off the informal debt to the man's extended neighbors ever since, cutting rates, doing favors. He's brilliant with mechanical systems — older combustion-hybrid rigs, mag-rail sub-components, jury-rigged cargo loaders — and has a gift for diagnosing faults by sound alone. He's also deeply impractical about money, undercharging chronically and occasionally fixing things for free when someone looks desperate, which means he operates at a margin that would give an accountant a breakdown.",
   "psychology": {
     "facet_weights": {
@@ -229,5 +229,14 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Dearborn Forge",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Lazarus IDP-1 'Teeth'",
+    "Nightlight"
+  ],
+  "district": "The Circuit"
 }

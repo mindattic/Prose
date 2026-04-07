@@ -12,7 +12,7 @@
   "role": "Fake ID vendor and small-time data broker",
   "age": 31,
   "status": "active",
-  "location": "The Narrows, Blackpipe Corridor",
+  "location": "The Narrows, Blackpipe Corridor, near Milwaukee and Damen",
   "description": "Revaz is a lean, angular man of Georgian and South Indian-Kenyan descent, with warm olive-brown skin, a sharp jaw perpetually shadowed with stubble, and dark eyes fitted with patterned irises — a helix of deep violet spiraling toward the pupil, which he claims help him read documents faster but which are mostly just something to look at when people are looking at him. He dresses in deliberately forgettable layers: grey over grey, muted enough to vanish in a crowd, with the one vanity of a handmade brass collar pin in the shape of a cartographer's compass. He keeps his data tools in a modified food vendor's tray he wheels through the Narrows, looking at a glance like a snack cart.\n\nRevaz is clever in the specific, anxious way of people who got out of a bad situation through intelligence alone and haven't yet decided whether they're safe. He is charming in short bursts, funny in a dry, deflecting way, and quietly reads every room for threat vectors before he's finished his first sentence. He takes professional pride in the quality of his forgeries — considers bad ID work a moral failing — and holds himself to a standard most of his customers couldn't distinguish from a real document.",
   "psychology": {
     "facet_weights": {
@@ -240,5 +240,15 @@
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
     "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Cartographer",
+    "The Narrows Compact",
+    "Zheng-dao Bioelectric",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Nesting Doll",
+    "Brass"
+  ],
+  "district": "The Circuit"
 }

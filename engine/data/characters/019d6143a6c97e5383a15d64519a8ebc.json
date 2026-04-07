@@ -12,7 +12,7 @@
   "role": "Midwife and reproductive health practitioner serving The Shelf and surrounding low-tier neighborhoods",
   "age": 41,
   "status": "active",
-  "location": "The Shelf — operates out of a mobile clinic (a repurposed Ferrogate Transit cargo van) and a rented room in the back of a Mexicantown Libre pharmacy",
+  "location": "The Shelf — operates out of a mobile clinic (a repurposed Ferrogate Transit cargo van) and a rented room in the back of a Mexicantown Libre pharmacy, near Western and Division",
   "description": "Seraphina is a full-figured woman with dark South African and Guatemalan mestiza features, warm amber skin and deep-set eyes that people find immediately trustworthy — a quality she has cultivated and also genuinely possesses. Her hair is long and usually braided, wound up when she is working and down when she is not, which patients use as a shorthand for whether they are dealing with the professional or the person (both are kind; one has better boundaries). She has bioluminescent fingertip mods in soft blue-white that she acquired specifically for her work — a calming visual during labor, she says, and also practical for low-light examinations.\n\nSeraphina has delivered over four hundred children in The Shelf alone. She knows bloodlines, complications, genetic predispositions, and family secrets that would constitute a detailed sociological survey of the neighborhood. She is deeply embedded in the community's trust and absolutely ruthless about protecting it: she has destroyed records, misled corporate health inspectors, and once spent three days strategically 'losing' a newborn's file to prevent a Helix Biosystems gene-sampling audit from accessing the family's data. She prays to an E.L.F. she calls Apgar — named for the assessment scale — before every delivery.",
   "psychology": {
     "facet_weights": {
@@ -229,5 +229,16 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Ferrogate Transit",
+    "Mexicantown Libre",
+    "Meridian 88",
+    "The Iron Lotus",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Shelf",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

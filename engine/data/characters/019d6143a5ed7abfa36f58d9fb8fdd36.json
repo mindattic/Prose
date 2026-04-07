@@ -12,7 +12,7 @@
   "role": "Personal security and threat neutralization — bodyguard",
   "age": 37,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near North Ave and Milwaukee",
   "description": "Deniz Nyberg-Sarpong is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 37, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a bodyguard out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Deniz Nyberg-Sarpong lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -280,5 +280,13 @@
   "registered_firearms": [
     "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
     "Crucible Industries Fang-9 'Switchblade'"
-  ]
+  ],
+  "related_entities": [
+    "The Narrows Compact",
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

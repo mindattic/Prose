@@ -12,7 +12,7 @@
   "role": "Wandering cartographer and hyperlane migrant",
   "age": 52,
   "status": "active",
-  "location": "Kenosha Crossing transit hub, sleeping berth corridor B-7",
+  "location": "Kenosha Crossing transit hub, sleeping berth corridor B-7, near beyond the Western Perimeter",
   "description": "Soraya is a tall, drought-weathered woman with the broad cheekbones of her Botswanan grandmother and the pale grey eyes she inherited from somewhere in the Bulgarian line. Her skin is the color of cracked clay, deeply lined around the eyes and mouth from decades of squinting at horizon lines. She wears a patchwork duster covered in hand-sewn pockets, each holding a rolled paper map — actual paper, a near-mythological material in Meridian 88 — annotated in four different scripts. No cosmetic mods; her only concession to technology is a battered retinal overlay that flickers at the edges because she can't afford calibration.\n\nSoraya spent thirty years mapping the hyperlane rest stops between the Great Lakes and the Gulf Shelf, and there is no one who knows the informal infrastructure of drifter life better. She speaks with the deliberate economy of someone who has learned to make every sentence count because silence is the only privacy a transient gets. She is neither sentimental nor cruel — she has simply seen too much to be surprised by either kindness or brutality, and treats both as weather.",
   "psychology": {
     "facet_weights": {
@@ -213,5 +213,16 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Street Custom 'Angry Mary' Aerosol Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Kenosha Crossing",
+    "Meridian 88",
+    "Grandmother",
+    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
+    "Synaptic Drift Emitter SDE-4 'Lullaby'",
+    "Chimera-Null",
+    "The Pale Mile",
+    "Clay"
+  ],
+  "district": "Nomadic"
 }

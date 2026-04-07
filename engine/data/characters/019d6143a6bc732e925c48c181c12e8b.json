@@ -12,7 +12,7 @@
   "role": "Street pharmacist — sells stabilized street compounds, harm-reduction supplies, and carefully dosed neurochemical assists",
   "age": 34,
   "status": "active",
-  "location": "The Narrows, Irkalla district — operates from a converted laundry kiosk two blocks from the Deepwell Station entrance",
+  "location": "The Narrows, Irkalla district — operates from a converted laundry kiosk two blocks from the Deepwell Station entrance, near sub-level access near Dearborn and Jackson",
   "description": "Rúairí Bello-Nazarov has the kind of face that makes people feel immediately like he already knows what they need, which is either a gift or a vulnerability depending on the day. He is lean and medium-height, olive-skinned with his Uzbek grandmother's dark eyes and his Nigerian grandfather's wide mouth, with natural color-changing hair he keeps in tight curls that shift from blue-black to deep copper depending on his mood — an older geneware modification that he got cheap and has grown fond of. He wears clean clothes, which is notable in the Narrows, and keeps his hands conspicuously steady at all times, which is also notable.\n\nHe is the thing people need him to be when they come to him, which is not the same as being dishonest — he is genuinely trying to help. He believes harm reduction is a moral act and that the people who have criminalized it are the ones who should be ashamed. He has a rigorous self-taught pharmacological education that would probably have qualified him for a Helix Biosystems lab position if he had the citizenship grade. He prays to the Deepwell E.L.F. — a transit spirit he's come to think of as his silent partner — and leaves small offerings of stabilized compound residue in its shrine nook every time he passes.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,20 @@
   "registered_firearms": [
     "Crucible Industries Cerberus-357 'Hellhound'",
     "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Deepwell Station",
+    "The Narrows Compact",
+    "Grandmother",
+    "The CEO",
+    "Palladian Construction",
+    "Irkalla",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Residue (I Still Have Your Feed)",
+    "ARCHIVE",
+    "Copper",
+    "The Pure Hand"
+  ],
+  "district": "The Underworld"
 }

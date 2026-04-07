@@ -12,7 +12,7 @@
   "role": "Echo hunter — a teenager who ventures into unstable deep-tunnel sections to retrieve acoustic data, lost signals, and fragmented ELF-transmissions",
   "age": 16,
   "status": "active",
-  "location": "Irkalla, outer ring tunnel access, and ranging into the deep sub-levels below",
+  "location": "Irkalla, outer ring tunnel access, and ranging into the deep sub-levels below, near sub-level access near Dearborn and Jackson",
   "description": "Yohannes is small for sixteen, with the kind of wiry build that can fold itself into spaces an adult would not consider. His skin is very dark and marked with a single pale scar running from the corner of his left eye to his jawline — earned at thirteen in a tunnel collapse he survived by being still for nine hours while the pipe above him groaned. He has cat ears: genetic modification from a street-market geneware stall three years ago, paid for in scavenged copper. They are not the neat, expensive kind — they're slightly asymmetrical, the left one sitting a centimeter higher than the right, which he claims actually helps his directionality. His eyes are naturally a rich amber, wide and roving, always scanning for structural movement. He is almost always eating something, the caloric urgency of a body that moves constantly through cold spaces.\n\nYohannes has the specific confidence of someone very young who has survived things that should have killed them and interpreted this as evidence of personal specialness rather than statistical chance. He is not foolish — he is methodical in his risk assessments and deeply knowledgeable about tunnel acoustics and ELF-behavior in enclosed systems — but he believes, with the sincere conviction of a sixteen-year-old who has not yet been wrong enough times, that he will know when something is too dangerous. He is usually right. The 'usually' is the problem. He is deeply attached to the fragments of ELF-signal he recovers, treating them as messages rather than noise, and has accumulated a collection of old devices and cracked tablets that he believes house weakened or fragmented ELF-presences — a menagerie of digital spirits he tends carefully.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,20 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Marrow Broadcast",
+    "Blackpipe Corridor",
+    "Bathysphere Networks",
+    "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
+    "Irkalla",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Tibor Osei-Svanstrom",
+    "The Pale Mile",
+    "Déjà Vu",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Underworld"
 }

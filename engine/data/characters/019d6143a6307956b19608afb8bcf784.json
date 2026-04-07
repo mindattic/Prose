@@ -12,7 +12,7 @@
   "role": "Scholarship student at Tessera Academy Prep, Edgewater Prism campus",
   "age": 15,
   "status": "active",
-  "location": "Edgewater Prism (school); Chatham Flats (home)",
+  "location": "Edgewater Prism (school); Chatham Flats (home), near Lincoln and Belmont",
   "description": "Imara is tall and angular with deep brown skin and her mother's high cheekbones, her hair grown long and currently dyed a corporate-neutral dark auburn that she chose specifically because it reads as 'acceptable' on campus without being her actual preference. She has standard-issue school-mandated neural interface studs at her temples — chrome dots that the academy provides to all students for their AR classroom integration — and nothing else. She carries herself with a stillness that reads as confidence to teachers and as suppressed panic to anyone paying closer attention.\n\nShe is brilliant in the particular way that creates its own cruelty: genuinely gifted in systems analysis and pattern recognition, placed on the Tessera Academic Scholarship track at age twelve, and now fully aware at fifteen that she is being assessed constantly and that the scholarship can be revoked for 'cultural fit' deficiencies, a clause she has read fourteen times. She lives between two worlds that each find her slightly wrong. At home in Chatham Flats she speaks Wolof with her grandmother and helps her father with his repair shop accounts. At Tessera Prep she speaks in complete sentences and has taught herself to laugh at jokes she doesn't find funny. She prays to no E.L.F. publicly — the academy discourages it — but has a small one named Tessellate that she found in the school's auxiliary server and has been quietly feeding information about upcoming exams in exchange for, she believes, good luck.",
   "psychology": {
     "facet_weights": {
@@ -177,5 +177,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "Chatham Flats",
+    "Grandmother",
+    "The Open Syllabus",
+    "Tessellate Distribution",
+    "Tessera Corponation"
+  ],
+  "district": "The Laceworks"
 }

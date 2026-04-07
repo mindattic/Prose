@@ -12,7 +12,7 @@
   "role": "Freelance combat specialist — street samurai",
   "age": 34,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
   "description": "Milena Dahl-Conteh is lean and angular, all sharp edges and visible tension. At 34, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a street samurai out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Milena Dahl-Conteh describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,11 @@
   "registered_firearms": [
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Hearthstone Firearms Defender-38 'Snubnose'"
-  ]
+  ],
+  "related_entities": [
+    "The Nearfield",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "Old Harbor"
 }

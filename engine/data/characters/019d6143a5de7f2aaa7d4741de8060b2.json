@@ -12,7 +12,7 @@
   "role": "Retired community elder, former neighborhood council chair, living entirely on UBC stipend",
   "age": 91,
   "status": "active",
-  "location": "The Shelf, Precinct 1 — Corner unit, Calle Baja Residency Block",
+  "location": "The Shelf, Precinct 1 — Corner unit, Calle Baja Residency Block, near Western and Division",
   "description": "Consuela Otieno-Papadreou is ninety-one years old and she will tell you so before you've finished introducing yourself, usually followed by: 'and I have outlived three landlords, two corponation district managers, and everyone who ever told me to be quieter.' She is small and enormously present, using a walker she has decorated with woven wire charms and a small battery-powered light shaped like a fish that she received from a grandchild and refuses to remove. Her skin is very dark and very lined and she leans into every line with the comfort of someone who earned them. She wears her natural hair close-cropped and white and favors bright colors that she says 'make you easy to find in a crowd, which is exactly where an old woman should be.'\n\nShe has no augmentations and hasn't wanted any. She has no pension beyond UBC, having spent her working years in informal caregiving and community organizing that the formal economy never counted. She is the social infrastructure of Precinct 1: she knows who is fighting with their partner, who has gone three days without eating, who is hiding an injury they can't afford to report, who the new family in Block C actually is and whether they need help or are the kind of trouble the block doesn't need. She dispenses this information with the authority of someone who has been paying attention for nine decades, and she does so from her corner unit's open window, which functions as an informal exchange point for most of the block's social life. She prays daily to the E.L.F. she calls La Luzita — a small grid presence that flickers the hallway lights in what she interprets as responses.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,13 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Reclamation Authority",
+    "Cinderblock Ai",
+    "The Shelf",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Shelf"
 }

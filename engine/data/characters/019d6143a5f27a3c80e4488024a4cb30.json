@@ -12,7 +12,7 @@
   "role": "Infrastructure disruption and industrial sabotage — saboteur",
   "age": 61,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Halsted and Division",
   "description": "Djeneba Magnusson-Camara is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 61, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a saboteur out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDjeneba Magnusson-Camara is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,16 @@
   "carried_weapons": [
     "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Ashfield",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

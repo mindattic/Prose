@@ -1,0 +1,37 @@
+{
+  "id": "44c4bbccf004af47b611011a4f4ea936",
+  "name": "Korvain Dynamics Ballistic Assault Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A full-body armored suit rated for Level IIIA ballistic protection with ceramic plate inserts at vital zones that upgrade protection to Level IV. The suit covers torso, arms, and legs with articulated armor panels that allow combat mobility. An integrated communications suite and helmet mounting system complete the platform.\n\nIssued to high-threat response teams — corponation asset recovery, facility breach response, and the kind of private military operations that exist in legal grey zones. The Assault Suit costs more than a year's wages for most Meridian 88 residents and is worth every quanta to the organizations that field it.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "Level IIIA ballistic fabric",
+    "Level IV ceramic plate inserts",
+    "articulated armor panels"
+  ],
+  "functionality": "Full-body ballistic protection, modular plate system, integrated comms, combat mobility",
+  "what_it_says": "You go where people are shooting and you're equipped to survive the experience and continue operating.",
+  "worn_by": [
+    "high-threat response teams",
+    "private military",
+    "asset recovery operators"
+  ],
+  "manufacturer": "Korvain Dynamics",
+  "price_range": "Φ28,000",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Ballistic Assault Suit found in a warehouse has its ceramic plates replaced with identical-looking counterfeits made from standard ceramic — whoever wore this into a gunfight was betrayed by their own equipment supplier."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 4",
+    "ballistic",
+    "assault",
+    "Korvain",
+    "military",
+    "armor"
+  ]
+}

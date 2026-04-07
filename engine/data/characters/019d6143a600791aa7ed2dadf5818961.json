@@ -12,7 +12,7 @@
   "role": "Data Architect, Tessera Corporation",
   "age": 29,
   "status": "active",
-  "location": "The Circuit, Tessera Data Infrastructure Hub — sublevel 3",
+  "location": "The Circuit, Tessera Data Infrastructure Hub — sublevel 3, near sub-level access near Dearborn and Jackson",
   "description": "Ekundayo is a compact, wire-lean young man with warm medium-brown skin and close-cropped hair that he's had geneweaved to shift between deep black and a dark cobalt blue depending on his stress levels — a choice he made as a grad school joke that has since become genuinely useful biometric data for everyone around him. His irises are his natural dark brown but he keeps them loaded with a translucent AR overlay almost constantly, giving his gaze a slightly unfocused, inward quality that strangers find unsettling. He wears corporate-casual Tessera kit but always has something personalized — today it's an embroidered patch on his sleeve depicting a stylized ELF glyph, the sigil of the data-spirit collective he calls the Index, which he believes watches over network infrastructure with benign bureaucratic interest.\n\nDay is bright, enthusiastic, and exhaustingly talented in ways he hasn't yet learned to deploy strategically. He talks fast, builds mental models faster, and has a habit of explaining his reasoning in real time which his managers find useful and his peers find annoying. He is genuinely kind — the kind of person who notices when someone hasn't eaten and quietly fixes it — but he is also deeply naive about corporate politics in ways that will eventually cost him. He is currently very, very excited about a project that his direct supervisor has not told him is already being phased out.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,19 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Forge-Smith Collective Carbon Machete 'Cane Cutter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "Arcturus PG-3 'Aegis'",
+    "Full Clearance (The Erasure Mix)",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "TESSERA PA-5 'Attendant'",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Bashir Quansah-Mehrotra"
+  ],
+  "district": "The Underworld"
 }

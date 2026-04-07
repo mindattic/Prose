@@ -12,7 +12,7 @@
   "role": "Contract broker and resource coordinator — fixer",
   "age": 45,
   "status": "active",
-  "location": "Meridian Station — central transit nexus, neutral ground",
+  "location": "Meridian Station — central transit nexus, neutral ground, near State and Monroe",
   "description": "Ximena Engstrom-Fofana is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a fixer out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nXimena Engstrom-Fofana is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,14 @@
   "carried_weapons": [
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Bioelectric Muscle Fiber",
+    "Masquerade",
+    "Meridian 88",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "Meridian Core"
 }

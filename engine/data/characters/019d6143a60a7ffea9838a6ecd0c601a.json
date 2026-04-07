@@ -12,7 +12,7 @@
   "role": "Retired Ferrogate Transit line worker and former union shop steward",
   "age": 71,
   "status": "active",
-  "location": "The Shelf — Apartment 4-Foxtrot, above the Deepline Transit node on Kamm's Landing spur",
+  "location": "The Shelf — Apartment 4-Foxtrot, above the Deepline Transit node on Kamm's Landing spur, near Ashland and Division",
   "description": "Ezekias is a tall man who has lost some of his height to the years, still broad through the chest, with a jaw like a shelf bracket and deep-set eyes the color of old teak. His left arm from the elbow down is a working-class prosthetic, dull grey titanium alloy with knuckles worn smooth — a replacement for the arm he lost to a coupling accident on the Ferrogate Menomonee extension in 2171. He never upgraded it because, as he puts it, a fancy arm would mean they'd won something. A Ferrogate ID badge from 2168 hangs from his keychain by habit though it expired decades ago. His face carries the kind of weathering that comes from thirty years on elevated rail platforms in Lake Michigan wind.\n\nHe is gregarious and loud and immediately likable, the sort of man who fills a room by breathing in it, who remembers the names of everyone's children and the coffee order of every regular at his building's shared kitchen. But beneath the bonhomie is a man who spent twenty years fighting a company that considered him a maintenance expense, and he has never quite stopped being angry about it. He channels the anger into Tenants' Council meetings and into mentoring younger workers, but it is always there, warm and patient.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,15 @@
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Street Custom 'Baptism' Electrified Water Cannon"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Kamm's Landing",
+    "The Shelf",
+    "Titanium",
+    "TESSERA WL-6 'Stacker'",
+    "Teak",
+    "Weathervane"
+  ],
+  "district": "The Shelf"
 }

@@ -1,0 +1,37 @@
+{
+  "id": "4224468a858d3be26b4aec4cc5ed83e0",
+  "name": "Crucible Loyalty Tattoo Overlay",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A semi-permanent dermal overlay — not ink, but a thin biocompatible film applied to the skin — displaying Crucible Genomics' loyalty insignia. The overlay changes in complexity with employee tenure: simple geometric patterns at five years, intricate circuit-like designs at ten, and a full sleeve of interlocking forge symbols at twenty. The overlay fades if not renewed annually at a Crucible facility.\n\nThe overlay is technically optional. In practice, employees who don't display loyalty markings find their advancement opportunities quietly limited. The annual renewal requirement ensures that former employees lose their markings — Crucible's way of saying you belong to them, or you don't.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "biocompatible dermal film",
+    "programmable pigment substrate",
+    "annual renewal compound"
+  ],
+  "functionality": "Tenure display, loyalty signaling, corporate identity",
+  "what_it_says": "You belong to Crucible and your skin says how long they've owned you.",
+  "worn_by": [
+    "Crucible employees",
+    "long-tenure workers",
+    "corporate loyalists"
+  ],
+  "manufacturer": "Crucible Genomics",
+  "price_range": "Φ0 (employer-applied)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A person with a twenty-year Crucible loyalty overlay is found dead in a Shelf district — but Crucible's records show they were terminated fifteen years ago, meaning someone has been renewing their overlay outside official channels."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 3",
+    "Crucible",
+    "loyalty",
+    "dermal",
+    "corporate",
+    "identity"
+  ]
+}

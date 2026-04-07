@@ -12,7 +12,7 @@
   "role": "Bounty Compliance Officer, Tessera Compliance Bureau",
   "age": 36,
   "status": "active",
-  "location": "Bridgepoint, Meridian 88",
+  "location": "Bridgepoint, Meridian 88, near Damen and Armitage",
   "description": "Ife is the kind of person a room notices before they understand why. They're medium height with a runner's build that belies the considerable strength in their frame, skin a deep blue-black with a faint natural luminescence that comes from a bioluminescent gene sequence that runs in their Congolese maternal line — not a modification, just ancestry, which they find both amusing and a little irritating when people ask. Their hair is natural, enormous, worn in a compressed crown of twist-outs that they maintain with obsessive care. Their eyes are custom: vertical pupils in bright gold, a modification they got at twenty-five after their first successful high-value compliance and haven't regretted.\n\nIfe works for Tessera's Compliance Bureau tracking down debt defaulters, contract violators, and the occasional individual who has genuinely done something Tessera considers criminal — a distinction that gets blurry in ways they've learned not to look at too closely. They are not violent by preference but are extremely capable of it and have strong opinions about doing it correctly. They carry a practiced informality that puts subjects at ease right up until it doesn't need to anymore. Off-hours they are genuinely warm and sociable, a regular at a Bridgepoint bar called the Gradual, where they know the bartender's children's names and argue about transit football with strangers. The split between these two selves is not a wound — they've made their peace with it — but it is wide.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,18 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-40 'Magistrate'"
-  ]
+  ],
+  "related_entities": [
+    "Bridgepoint",
+    "Meridian 88",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Irkalla",
+    "Volkov-Saito Precision VS-10 Match 'Deadlock'",
+    "Tessera Corponation",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

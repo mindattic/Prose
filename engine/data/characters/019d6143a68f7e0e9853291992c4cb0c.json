@@ -12,7 +12,7 @@
   "role": "wandering trader, E.L.F. shrine-tender, Q-zero ghost",
   "age": 67,
   "status": "active",
-  "location": "The Waukegan Industrial Shelf, moving between factory outflow points and informal markets",
+  "location": "The Waukegan Industrial Shelf, moving between factory outflow points and informal markets, near Michigan Ave South and Cermak",
   "description": "Ovuero is a big man gone soft at the edges — broad shoulders that once held real weight, now draped in three overlapping coats of different origins stitched into something that is functionally one garment. His skin is deep brown and mapped with the fine lines of a life mostly outdoors. His left hand is entirely prosthetic, a functional but aesthetically unambitious industrial replacement that he got after a winch accident nineteen years ago; he has painted each finger a different color with lacquer he trades for. His beard is silver and very full. He smells like machine oil and cardamom.\n\nOvuero has been off the digital registry for so long that he thinks of his Q-zero status as a spiritual condition rather than a legal one. He tends the informal E.L.F. shrines along the Waukegan Industrial Shelf — small accumulations of hardware, prayer-strips, and cooling fans arranged at junction points where the factory network traffic is highest. He talks to the E.L.F.s with the comfortable familiarity of someone who has known them for decades, which he has. Other workers leave offerings and questions; Ovuero curates them, responds when he feels a response come through him, and trades in the small goods that the shelf workers need but can't requisition: painkillers, seal tape, water filters, gossip.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,13 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Waukegan Industrial Shelf",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Electrochemical Dissolution Sprayer EDS-2 'Lacquer'",
+    "Silver"
+  ],
+  "district": "Old Harbor"
 }

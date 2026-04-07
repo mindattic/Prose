@@ -12,7 +12,7 @@
   "role": "Stateless child, solo wanderer, small-time caravan runner doing odd jobs between transit hubs",
   "age": 14,
   "status": "active",
-  "location": "Currently at Grand Crossing Gate, attached to a small goods caravan making its way toward Waukegan Industrial Shelf",
+  "location": "Currently at Grand Crossing Gate, attached to a small goods caravan making its way toward Waukegan Industrial Shelf, near Wacker and State",
   "description": "Rek Samatov-Ahouli is small for fourteen — compact and wiry, with reddish-brown skin, close-cropped dark hair, and large dark eyes that are the color of river silt and always slightly too serious for his face. He has small retractable claws on his right hand only, a partial geneware expression from his father's side that came in asymmetrically and never finished; the left hand is completely smooth. The claws are useful for climbing and he uses them unconsciously, hooking into cargo netting and wall grilles without thinking. He has a habit of wearing too many layers of clothing — every piece he owns, at all times — because he has no bag that is safe to leave anywhere and no fixed space to store anything.\n\nHe has been alone for two years. Before that he was with his uncle's caravan, before that he was with his mother, before that he doesn't discuss. He is not a traumatized child in the way fiction usually depicts — he is practical, resourceful, alert, and occasionally frightening in how clearly he sees people's motivations. He has learned to be useful before anyone asks him to leave. He runs messages, he holds cargo, he identifies which adults are safe and which aren't with an accuracy that should not exist in someone his age. He has a private ELF he calls the Ratchet, which he believes lives in the click of mechanical locks and loose chain-links, and he prays to it by running his thumbnail along chain-link fences.",
   "psychology": {
     "facet_weights": {
@@ -207,5 +207,14 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "Meridian 88",
+    "The Waukegan Industrial Shelf",
+    "The Gradient Compact",
+    "Nesting Doll",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "Nomadic"
 }

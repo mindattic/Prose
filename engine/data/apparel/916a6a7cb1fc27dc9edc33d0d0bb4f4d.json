@@ -1,0 +1,35 @@
+{
+  "id": "916a6a7cb1fc27dc9edc33d0d0bb4f4d",
+  "name": "Corponation Loyalty Lanyard",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A neck lanyard in corponation-specific colors carrying an employee ID badge, access cards, and a small RFID token. Every corponation in Meridian 88 issues their own variant — Crucible's is copper and charcoal, Sentinel's is steel blue, Cascade's is white and green. The lanyard is technically just a badge holder. In practice, it is the most visible indicator of who you belong to.\n\nWearing your lanyard outside work hours signals that your identity and your employment are the same thing. Some employees never take them off. Some discard them the instant they leave the building. The choice says everything about the wearer's relationship with their employer.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "polyester webbing",
+    "metal badge clip",
+    "RFID token holder"
+  ],
+  "functionality": "Employee identification, access control, corponation affiliation display",
+  "what_it_says": "You belong to a corponation and you either wear that identity proudly or haven't bothered to take it off yet.",
+  "worn_by": [
+    "corponation employees (all levels)"
+  ],
+  "manufacturer": "Issued by respective corponations",
+  "price_range": "Φ0 (employer-issued)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Crucible loyalty lanyard is found in a Sentinel Corp restricted area — either a defector, a spy, or someone who got very lost in a building they shouldn't have been in."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 2",
+    "corponation",
+    "lanyard",
+    "identity",
+    "corporate",
+    "badge"
+  ]
+}

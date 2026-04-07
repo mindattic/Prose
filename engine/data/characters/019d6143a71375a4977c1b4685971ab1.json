@@ -12,7 +12,7 @@
   "role": "Structural breach and explosive ordnance specialist — demolitions expert",
   "age": 25,
   "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Kedzie and Division",
   "description": "Vesna Ito-Takyi is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 25, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Vesna Ito-Takyi is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,11 @@
     "Meridian Munitions Snapper-22 'Cricket'",
     "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Nearfield",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

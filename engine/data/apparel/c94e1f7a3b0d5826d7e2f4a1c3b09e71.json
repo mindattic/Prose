@@ -1,0 +1,41 @@
+{
+  "id": "c94e1f7a3b0d5826d7e2f4a1c3b09e71",
+  "name": "Driftmend Hooded Rain Cloak — Patchwork Cut",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A floor-length hooded cloak assembled from irregular panels of secondhand waterproof synthetics — dusty olive, faded burgundy, and industrial grey — each panel seam-sealed with thermal bonding tape. The oversized hood fits over basic horn and ear geneware without modification. Worn loose and layered, it signals resourceful self-sufficiency rather than poverty.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "reclaimed waterproof synthetic panels",
+    "thermal bonding seam tape",
+    "recycled toggle cord",
+    "salvaged snap closures"
+  ],
+  "functionality": "Full-length rain and wind protection with generous hood clearance for minor geneware; tail-slit option available at street tailors.",
+  "what_it_says": "Someone who builds their own solutions and doesn't apologize for the seams showing.",
+  "worn_by": [
+    "street vendors",
+    "geneware-modified workers",
+    "underground artists",
+    "Circuit and low Tier-3 mixed"
+  ],
+  "manufacturer": "Patchwork Collective (street tailored)",
+  "price_range": "Φ40–Φ110",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "One panel is cut from a Stratum Logistics uniform — the wearer might have worked there once, or might have taken it off someone who did.",
+    "The cloak is three sizes too large for the person wearing it and still fits perfectly — made for someone else, passed down or taken."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "rain_gear",
+    "cloak",
+    "hood",
+    "gene_compatible",
+    "tier_2",
+    "patchwork",
+    "full_length"
+  ]
+}

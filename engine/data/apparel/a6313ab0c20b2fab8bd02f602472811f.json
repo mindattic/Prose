@@ -1,0 +1,34 @@
+{
+  "id": "a6313ab0c20b2fab8bd02f602472811f",
+  "name": "Meridian Underground Runner's Mark Bandana",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A simple bandana worn in specific configurations that communicate the wearer's role and reliability within Meridian 88's runner network. Color indicates specialization — black for data, red for physical cargo, blue for personnel extraction. The way it's tied indicates current availability. Specific folds signal danger or compromised status.\n\nThe bandana system is not written down anywhere. It's transmitted person to person within trusted networks. Wearing a runner's bandana without understanding the code marks you as an outsider immediately — and in runner culture, outsiders who pretend to belong are treated as threats.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "standard cotton bandana"
+  ],
+  "functionality": "Role signaling, availability status, danger communication, network identification",
+  "what_it_says": "You run, and everyone who matters can read exactly what you run and whether you're available right now.",
+  "worn_by": [
+    "runners",
+    "courier network members",
+    "underground operatives"
+  ],
+  "manufacturer": "Various (the code matters, not the source)",
+  "price_range": "Φ5-15",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A runner's bandana is found tied in a configuration that no one in the local network recognizes — either it's from a different city's runner culture, or someone has invented a new signal."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 2",
+    "runner",
+    "bandana",
+    "signaling",
+    "underground"
+  ]
+}

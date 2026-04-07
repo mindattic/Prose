@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor, scrap textile reseller, The Alban Souk",
   "age": 23,
   "status": "active",
-  "location": "The Alban Souk, Calumet Rise",
+  "location": "The Alban Souk, Calumet Rise, near Western and Chicago Ave",
   "description": "Ioana is short and quick-moving, with warm medium-brown skin, close-cropped natural hair, and enormous deep-set eyes she has had fitted with color-shifting irises that cycle through a slow gradient of forest greens and clay reds depending on her mood — a mod she saved for over eighteen months and considers the best investment she has ever made. Her clothes are a rotating showcase of her own work: deconstructed corporate uniforms, patched Tessera contractor jumpsuits, pieces reconstructed from scavenged fabric bolts and repurposed industrial mesh. Every seam is visible and intentional. She is always wearing something that looks impossible to have found and easy to want.\n\nHer stall in the Alban Souk is less a table and more a curated installation: garments hung on rebar frames, fabric samples pinned to a board, a small battered sewing station behind the counter where she alters pieces on the spot. She designs, scavenges, reconstructs, and sells. Her prices are low for what the work is and she knows it — she hasn't figured out how to charge what she's worth yet without feeling like she's lying. She has strong opinions about everything aesthetic and zero patience for people who treat fashion as shallow. To her, clothing in Meridian 88 is the most honest statement a person can make about who they intend to be.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,21 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "The Alban Souk",
+    "Calumet Rise",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Meridian 88",
+    "Zheng-dao Bioelectric",
+    "PulsePoint HydraLine Fluid Balance Monitor",
+    "Big Rig",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Clay"
+  ],
+  "district": "The Shelf"
 }

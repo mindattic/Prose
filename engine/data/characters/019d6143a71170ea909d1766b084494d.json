@@ -12,7 +12,7 @@
   "role": "Street kid and gang prospect for the Copperhead Strays; informal lookout",
   "age": 14,
   "status": "active",
-  "location": "Copperhead",
+  "location": "Copperhead, near North Ave and Milwaukee",
   "description": "Verónica Temirkhan-Adjei is wiry and quick with a bruise that's always in some stage of yellowing somewhere on her face, arms, or shins — not from violence, mostly, but from moving through the city like it owes her something and hasn't paid up. She has medium-brown skin, natural hair she's grown into a large puff that she wraps in a strip of copper-colored fabric to match the Copperhead Strays' aesthetic, and geneware cat ears in a dark red-brown she saved up three months of small jobs to buy from a back-alley mod shop. The ears were supposed to mark her as cool. They do. She wears them with specific, deliberate pride.\n\nShe is not yet a full Stray — she's in what the older members call the 'prospect' phase, which mostly means she runs lookout shifts, carries non-incriminating packages, and tries very hard not to look like she's trying very hard. She's funny and quick-tongued and operates at a social speed that leaves adults slightly breathless. Underneath the performance is a thirteen-year-old's terror wearing a fourteen-year-old's face, because she knows exactly what full Stray membership involves and she is not sure she wants it, but she doesn't know what else there is.",
   "psychology": {
     "facet_weights": {
@@ -201,5 +201,14 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Copperhead",
+    "The Wire Taps",
+    "Arcturus Defense Solutions",
+    "Copper",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Ringo RK-2 'Stray'"
+  ],
+  "district": "The Circuit"
 }

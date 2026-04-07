@@ -1,0 +1,39 @@
+{
+  "id": "f5d2a8c3e1b70946d5f2a8c3e1b70946",
+  "name": "Crucible ForgeFloor Insulated Glove — Pair",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Elbow-length insulated work gloves in flame-orange split-leather with a quilted thermal lining and a reinforced palm grip pad. The cuff is wide and unlined for fast removal in emergencies. Crucible Industrial stamped in black on the back of each hand, worn to near-illegibility on most pairs.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "split-leather outer",
+    "Thinsulate-analog thermal lining",
+    "silicone grip palm pad",
+    "nylon cuff binding"
+  ],
+  "functionality": "Rated to 300°C radiant heat for short-duration exposure; reinforced palm pad provides grip on hot metal stock and slag tools.",
+  "what_it_says": "You work near fire and you've made your peace with it.",
+  "worn_by": [
+    "foundry workers",
+    "forge operators",
+    "welders",
+    "furnace maintenance crew"
+  ],
+  "manufacturer": "Crucible Industrial Supply",
+  "price_range": "Φ30–Φ55 per pair",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of gloves with chrome-arm cut-outs has been custom-modified — Crucible doesn't make an aug-compatible version, which means someone did this by hand.",
+    "The forge floor requires these gloves at all times, but a veteran worker never wears them — and somehow never gets burned."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "circuit_workwear",
+    "gloves",
+    "heat-protection",
+    "foundry",
+    "tier2"
+  ]
+}

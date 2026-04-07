@@ -13,7 +13,7 @@
   "role": "Mid-tier corporate compliance auditor and covert information broker",
   "age": 51,
   "status": "active",
-  "location": "The Meridian Core",
+  "location": "The Meridian Core, near State and Jackson",
   "description": "Crisanto is a broad-shouldered Filipino-Swedish man of fifty-one who has spent so long performing the aesthetics of institutional trust that they have half-become real. He dresses in muted, expensive neutrals — nothing that would be remembered — and carries himself with the particular stillness of someone who learned long ago that a calm body reads as an authoritative one. His hair has gone fully silver and he wears it short and immaculate. The only thing that slightly undermines the effect is his habit of rolling a small obsidian bead between his fingers when he thinks no one is watching.\n\nOfficially, Crisanto is a Senior Compliance Auditor for Veltris Solutions, one of the Meridian Core's mid-weight corporate entities specializing in infrastructure licensing. He is very good at his job. He is also, quietly, one of the most reliable information brokers operating at the corporate tier — not a dealer in secrets so much as a dealer in context. He does not sell raw data; he sells the correct reading of data, the understanding of what something means and who it benefits. His clients are executives, rivals, occasionally investigators who can afford him.\n\nCrisanto came to the Core from Old Harbor, a trajectory he has spent twenty years making illegible by careful accumulation of the right credentials, the right accent, the right address. He is not ashamed of Old Harbor. He is terrified of going back. The distinction matters to him and he is honest about it with himself at two in the morning when the distinction feels very thin. He has one adult daughter he supports financially and sees three times a year, and the relationship is exactly as complicated as that arrangement suggests.",
   "psychology": {
     "facet_weights": {
@@ -240,5 +240,14 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Forge-Smith Collective Thundermouth Double 'Old Testament'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Shelf",
+    "Flicker",
+    "Silver"
+  ],
+  "district": "Meridian Core"
 }

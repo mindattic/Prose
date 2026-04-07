@@ -12,7 +12,7 @@
   "role": "Neural calibrator specializing in augmentation synchronization and post-install psychological adjustment",
   "age": 34,
   "status": "active",
-  "location": "Geartown, Gage Circuit",
+  "location": "Geartown, Gage Circuit, near Damen and Armitage",
   "description": "Caspian is lean in the way of someone who forgets to eat, with warm brown skin, close-cropped dark hair, and irises that cycle through amber-to-green gradient depending on his mod's mood-reading settings — a gift from a client who couldn't pay in quanta. He dresses in soft, unthreatening fabrics (the neural calibration chair is already stressful enough) and keeps his workspace warm-lit and quiet, with small potted moss installations along the walls that patients are encouraged to touch. He has an almost preternatural ability to make people feel safe within minutes of meeting him.\n\nHe trained under Helix Biosystems' neural integration division but went independent when he realized corporate calibration protocols optimized for hardware performance rather than patient wellbeing — they wanted efficient augments, not healthy people. Now he runs a small private practice in Geartown, catering to working-class clients who've had cheap installs go wrong: phantom limb feedback, dream-layer bleed from neural laces, identity drift after major cognitive augmentation. He's part technician, part therapist, part grief counselor for people who don't recognize themselves anymore.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,17 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Gage Circuit",
+    "Void Ring VR-0 'Phantom Limb'",
+    "Geartown",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Witness",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Circuit"
 }

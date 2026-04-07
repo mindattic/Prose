@@ -12,7 +12,7 @@
   "role": "Lab Technician, Axiom Biochemical R&D Division",
   "age": 27,
   "status": "active",
-  "location": "The Spire, Axiom R&D Sublevel 4 ('The Pit')",
+  "location": "The Spire, Axiom R&D Sublevel 4 ('The Pit'), near sub-level access near LaSalle and Congress",
   "description": "Dariusz is slight and angular, with warm brown skin, high cheekbones inherited from a Tibetan great-grandmother, and eyes that are naturally a startling pale grey — no augmentation, just genetics. He keeps his dark hair grown out just past his ears and perpetually tangled, secured with whatever clip or rubber band is nearest. There's always something on his lab coat: a smear of bioluminescent culture medium, a printed reminder he forgot to read, a small sticker of a cartoon E.L.F. figure his sister sent him. He moves with the slightly distracted energy of someone whose internal monologue is always two sentences ahead of the room.\n\nDariusz is genuinely passionate about biochem in a way that Axiom has been carefully trying to redirect toward profitable applications. He processes the world through curiosity first, emotion second, and social obligation a distant third. He's not unkind — he's simply elsewhere. He grew up in a small Tier 2 family in Hamtramck Enclave, the first in his family to get a corporate lab placement, and he carries that fact with a mix of pride and low-level guilt that he handles by working too many extra hours and forgetting to eat lunch.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,16 @@
     "Tessera Personal Defense System TPDS-1 'Reflex'",
     "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Grandmother",
+    "The Spire",
+    "Flicker",
+    "The Quiet Room",
+    "Autonomous Adhesive Denial Drone AADD-2 'Barnacle'",
+    "Red Granite Pit",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

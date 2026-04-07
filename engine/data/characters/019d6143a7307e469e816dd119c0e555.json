@@ -11,7 +11,7 @@
   "role": "Fixer - Synthetic rights jobs",
   "age": 28,
   "status": "active",
-  "location": "The Circuit",
+  "location": "The Circuit, near North Ave and Milwaukee",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -100,5 +100,9 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Food stall operator — West African-Anatolian fusion street food, Oxidian Market",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Western and Chicago Ave",
   "description": "Yewande is a broad-shouldered woman with deep umber skin cross-hatched with old burn scars on her forearms — legacies of thirty years over open burners. Her hair is grown out in thick silver locs she pins back with repurposed copper data-clips, and her irises have been modded to a slowly shifting amber-to-saffron gradient that she claims helps her read the color of spices in low light. She wears an industrial apron over layered cotton wraps in earthy burgundy and ochre, always faintly dusted with ground fenugreek and smoked chili.\n\nShe runs her stall — two deep cauldrons, a flatgrill, and a hanging rack of dried aromatics — with the authority of someone who has never once questioned whether she belongs anywhere. She calls regulars by the names of their grandparents if she knows them, corrects strangers' orders without apology, and offers the first meal free to anyone who looks like they haven't eaten in two days. She prays loudly to the E.L.F. she calls Ember-Who-Remembers, leaving charred spice bundles at the corner of her stall each morning, believing it keeps her flames even and her customers loyal.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,21 @@
   "registered_firearms": [
     "Arcturus Defense Solutions AR-7 'Mandate'",
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "The Reclamation Authority",
+    "The Cutters Guild",
+    "Flicker",
+    "Geartown",
+    "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
+    "Arcturus Defense Solutions Particle Lance PL-4 'Scalpel'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Silver",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Cotton"
+  ],
+  "district": "The Shelf"
 }

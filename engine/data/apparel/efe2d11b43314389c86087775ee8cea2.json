@@ -1,0 +1,38 @@
+{
+  "id": "efe2d11b43314389c86087775ee8cea2",
+  "name": "Cascade Biotech Pathogen-Containment Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A Level-4 biological containment suit designed for handling the most dangerous known pathogens. The suit is completely self-contained with a 6-hour air supply, maintains positive internal pressure, and features an integrated chemical shower port for decontamination before removal. The exterior surface is impregnated with broad-spectrum antimicrobial compounds.\n\nUsed in Cascade Biotech's highest-classification research facilities and deployed during biological contamination events. The suit's transparent face panel is reinforced — not against impact, but against the psychological pressure of working face-to-face with organisms that would use your body as food.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "Level-4 barrier fabric",
+    "6-hour SCBA",
+    "chemical shower port",
+    "antimicrobial surface"
+  ],
+  "functionality": "BSL-4 pathogen containment, 6-hour air, integrated decontamination, positive pressure",
+  "what_it_says": "What you're working with would consume humanity if it escaped, and this suit is the containment protocol.",
+  "worn_by": [
+    "pathogen researchers",
+    "biological containment teams",
+    "epidemic response"
+  ],
+  "manufacturer": "Cascade Biotech",
+  "price_range": "Φ12,000",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Pathogen-Containment Suit's air supply logs show it was used for 14 hours — well beyond its rated 6 — in a facility that should have been empty, suggesting someone was trapped inside for far longer than any operation should have lasted."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 4",
+    "pathogen",
+    "biological",
+    "containment",
+    "BSL-4",
+    "Cascade"
+  ]
+}

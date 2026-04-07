@@ -12,7 +12,7 @@
   "role": "hyperlane migrant and seasonal dock worker",
   "age": 52,
   "status": "active",
-  "location": "Kenosha Crossing transit shelters, platform underbelly row C",
+  "location": "Kenosha Crossing transit shelters, platform underbelly row C, near sub-level access near LaSalle and Congress",
   "description": "Zulaikha is a broad woman built like a shipping container — square shoulders, thick forearms braided with old scar tissue from crab-processing work on the Great Lakes harvest runs. Her skin is a warm amber-brown, deeply weathered at the temples and around her eyes, which are a startling pale grey with irises patterned like ripple rings on still water. Her hair is iron-grey, kept in a single heavy braid wound with copper wire salvaged from relay stations. She dresses in four layers regardless of season, each garment representing a different city she has passed through, the outermost a battered canvas duster with Ferrogate Transit patches sewn over the original corponation branding. A small shrine to the E.L.F. she calls Mama Drift is tucked into her breast pocket — a cracked mobile chip wrapped in red thread and anointed with machine oil every morning. She prays to it before every crossing.\n\nZulaikha has been working the seasonal circuit for nineteen years, following the harvest lines and construction booms between Escanaba Gateway and Kenosha Crossing with the mechanical regularity of someone who has given up expecting anything to change and found a strange peace in that surrender. She is warm in the way that only people who have nothing left to protect can be — freely generous with food, opinion, and profanity. She will tell you exactly what she thinks of your life choices without being asked, and she is usually right.",
   "psychology": {
     "facet_weights": {
@@ -226,5 +226,27 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Escanaba Gateway",
+    "Kenosha Crossing",
+    "Lambeau Terminus",
+    "Ironclad Agrisystems Hemostatic Grain Pack",
+    "Spire Light on Still Water",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "NeuralPath Cascade Standard Feed BCI",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Adaeze Chen-Hawkins",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Nesting Doll",
+    "Palette",
+    "The Pale Mile",
+    "Iron"
+  ],
+  "district": "The Underworld"
 }

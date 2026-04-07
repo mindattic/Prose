@@ -12,7 +12,7 @@
   "role": "Supply Chain Manager, Ferrogate Transit (Senior, near retirement)",
   "age": 58,
   "status": "active",
-  "location": "Kessler Interchange, Ferrogate Transit Regional Logistics Hub",
+  "location": "Kessler Interchange, Ferrogate Transit Regional Logistics Hub, near Armitage and Milwaukee",
   "description": "Benedikt is a heavyset man who moves with the economy of someone who decided long ago that unnecessary motion was a form of lying about urgency. His Ghanaian-Serbian heritage settled into broad cheekbones, deep-set eyes the color of old teak, and a graying beard he trims every Sunday with the same three-setting razor he's owned for eleven years. His hands are augmented — heavy-duty haptic logistics gauntlets that he wears during shift and sets beside his locker at end of day like a craftsman's tools, which is precisely how he thinks of them. He has a slight drag in his left leg from a loading-dock accident in his forties that he refused to have fully corrected because the partial fix was covered by insurance and the full correction wasn't and he had children to feed and has carried the asymmetry ever since, unremarked upon by him and noticed immediately by anyone who watches him walk.\n\nHe is a man who has seen enough of Ferrogate to no longer be surprised by it, which is different from no longer caring. He cares meticulously — about his coordinators, about the timing windows that keep six thousand transit routes running, about the small rituals that make a brutal logistics hub survivable. He remembers the names of every technician who has worked under him for more than three months. He keeps a logbook — paper, the old kind — with handwritten notes about problems he's solved, framed as advice for whoever inherits his position, even though he knows the company will discard the book immediately. He prays to the Kessler E.L.F., a transit-management spirit of considerable local reputation, with the specific reverence of a man who has seen too many near-misses to dismiss the possibility of intercession.",
   "psychology": {
     "facet_weights": {
@@ -254,5 +254,17 @@
     "Meridian Munitions Viper PDW MVP-3 'Sidewinder'",
     "Sterling-Nakamura Diplomatic Protection Cane DPC-1 'Ambassador'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Kessler Interchange",
+    "Hamtramck Enclave",
+    "Ferrogate Transit",
+    "Grand Corridor",
+    "The Heritage Vault",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Teak"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Underground press operator and anti-corporate agitator",
   "age": 27,
   "status": "active",
-  "location": "The Shelf — specifically a rented storage unit in Brewer's Spine converted into a print shop",
+  "location": "The Shelf — specifically a rented storage unit in Brewer's Spine converted into a print shop, near Pulaski and Chicago Ave",
   "description": "Tomáš is lean and restless, with the kind of energy that makes people in small rooms want to lean away. He's mixed-heritage Māori-Czech-Igbo, with warm brown skin, deep-set dark eyes, and hair he keeps in short locs dyed a static-white that he touches up himself with cheap geneware pigment paste. His fingers are perpetually ink-stained despite the fact that most of what he produces is digital — he runs a physical broadsheet as a deliberate political statement, because 'data can be deleted and paper can be held.' He has a bioluminescent strip along his left forearm he got at nineteen, which pulses blue-white when his heart rate elevates, which is constantly.\n\nHe is brilliant and exhausting in roughly equal measure. His publication, Null Signal, has broken three genuine scandals in the past two years — a Ferrogate Transit rate manipulation scheme, an Axiom water quality suppression in Burnside Pocket, a Palladian pharmaceutical kickback network operating through a Highland Park clinic. He is also paranoid, inconsistent about source protection, prone to publishing things before they're fully verified, and genuinely unable to tell the difference between being brave and being reckless. He loves the cause with a purity that people with more experience find either inspiring or alarming depending on the day.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,22 @@
   "registered_firearms": [
     "Crucible Industries Siege DMR SDMR-3 'Bastion'",
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Burnside Pocket",
+    "Brewer's Spine",
+    "Highland Park Autonomous Zone",
+    "WELLSPRING",
+    "Palladian Construction",
+    "Zheng-dao Bioelectric",
+    "The Shelf",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Static",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Null"
+  ],
+  "district": "The Shelf"
 }

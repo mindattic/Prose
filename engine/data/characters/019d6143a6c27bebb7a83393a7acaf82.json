@@ -12,7 +12,7 @@
   "role": "Cross-district contraband specialist — smuggler",
   "age": 64,
   "status": "active",
-  "location": "The Spires — mid-level corporate residential towers",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
   "description": "Sagyn Ogawa-Twumasi is average height but with a presence that fills more space than the body accounts for. At 64, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a smuggler out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Sagyn Ogawa-Twumasi is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,12 @@
   "registered_firearms": [
     "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
     "Arcturus Defense Solutions ARC-SLP 'Diplomat'"
-  ]
+  ],
+  "related_entities": [
+    "Masquerade",
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Spires"
 }

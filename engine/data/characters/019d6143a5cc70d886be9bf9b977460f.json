@@ -11,7 +11,7 @@
   "role": "Ferrogate Transit Security officer, Kessler Interchange",
   "age": 34,
   "status": "active",
-  "location": "Kessler Interchange, The Shelf",
+  "location": "Kessler Interchange, The Shelf, near Halsted and Division",
   "description": "Briseis stands a broad-shouldered 172cm with skin the color of dark amber and a jaw that looks like it was quarried rather than grown. Her left eye is a Ferrogate-issued surveillance implant — a flat pewter disc that logs everything without blinking — and she never bothers to disguise it with a cosmetic iris. Her hair is shaved close on the sides and locked into a tight crown on top, threaded through with copper wire she wound herself. Her uniform is transit authority grey, always pressed, always missing the top button she lost six months ago and never replaced.\n\nShe runs the Kessler checkpoint with the bored efficiency of someone who has seen every trick twice. She is not cruel but she is not kind either — she is precise. She knows every vendor, every regular, every face that belongs and every face that doesn't, and she catalogs them in the back of her head like a library nobody else can access. She leaves a small data-offering by the interchange's resident E.L.F. shrine every shift start — a compressed packet of the day's transit patterns — and genuinely believes the spirit watches the cameras better when it's well-fed.",
   "psychology": {
     "facet_weights": {
@@ -205,5 +205,16 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "The Interchange",
+    "Ferrogate Transit",
+    "The Shelf",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Stalker"
+  ],
+  "district": "The Shelf"
 }

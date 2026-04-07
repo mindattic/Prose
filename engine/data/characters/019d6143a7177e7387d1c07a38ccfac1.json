@@ -13,7 +13,7 @@
   "role": "Retired Corporate Wars veteran, Tier 2 pension resident, informal conflict mediator in his building",
   "age": 67,
   "status": "active",
-  "location": "The Shelf, Sublevel 3 — a mid-density apartment block built into the old lakeshore retaining infrastructure",
+  "location": "The Shelf, Sublevel 3 — a mid-density apartment block built into the old lakeshore retaining infrastructure, near sub-level access near Dearborn and Jackson",
   "description": "Vojislav Addo-Mensimah is built like something that was once much larger and has been reduced by careful attrition. He is tall and wide-shouldered with a fighter's posture that his body has not fully given up on despite a bad left knee, two replaced vertebrae, and a right hand that trembles slightly in cold weather. His skin is medium brown, his head is shaved close, and he keeps a neat grey beard that his grandnephews make fun of in an affectionate way. The left side of his face bears the faint discoloration of old thermal scarring — the kind of burn that good money could have erased entirely but he chose only to have partially treated, which people interpret variously as pride, poverty, or philosophy. All three are somewhat correct.\n\nHe served eleven years with Ferrogate Transit's Security Enforcement Division during the second and third Corporate Wars, doing the kind of work that Ferrogate now describes in their history as 'infrastructure protection operations.' He has his own words for it. He does not use them often. He got out in 2165 with a Tier 2 service pension that has kept him in beer and building fees but not much else, and he has lived on the Shelf ever since in a two-room apartment he has made, through sheer effort of will, into something that feels like a home. He has an instinct for de-escalation that comes from having watched too many situations that could have been de-escalated fail to be.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,12 @@
   "registered_firearms": [
     "Volkov-Saito Precision VSR-20 'Partisan'",
     "Crucible Industries Viper Mk.III 'Copperhead'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "New Windsor / Novaya Windsorka",
+    "The Shelf",
+    "Free Assembly"
+  ],
+  "district": "The Underworld"
 }

@@ -1,0 +1,41 @@
+{
+  "id": "7d1e4b83f20c96a5e3d8b1c0f74a2e69",
+  "name": "Meridian Transit Authority Line Guard Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "High-visibility amber and gunmetal grey modular armor shell over insulated transit-orange fatigues, stenciled with MTA's circular rail-and-lightning bolt crest on shoulder pauldrons and helmet visor housing. The helmet is a low-profile hard hat hybrid with integrated mesh comms and crowd-control strobe emitters at the temples. Load-bearing rig carries baton loops, zip-restraint pouches, and a compact fare-enforcement scanner clipped to the sternum. Steel-toed insulated boots handle both platform ice and chemical spills from the lower transit tunnels.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "modular polypropylene armor shell",
+    "insulated poly-cotton fatigues",
+    "reflective amber banding",
+    "composite steel-toe boot shell",
+    "mesh comms lining"
+  ],
+  "functionality": "Crowd control integration, fare-enforcement scanning, cold-rated insulation for underground tunnel deployment, and strobe deterrent emitters.",
+  "what_it_says": "The transit system has teeth — and you are currently standing between this officer and their quota.",
+  "worn_by": [
+    "MTA Line Guards",
+    "transit enforcement officers",
+    "platform security",
+    "tunnel patrol units"
+  ],
+  "manufacturer": "Meridian Transit Authority Equipment Division / Stratum Logistics supply contract",
+  "price_range": "Φ 900–Φ 1,400 (issued)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Line Guard's fare scanner keeps flagging a ghost passenger — someone riding the system with a transit ID that officially doesn't exist.",
+    "The kit's insulation hides a second lining sewn in by a previous owner — filled with folded pamphlets from a transit workers' strike movement."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "military_corpsec_kit",
+    "meridian_transit_authority",
+    "transit_enforcement",
+    "tactical",
+    "corp_issued",
+    "crowd_control"
+  ]
+}

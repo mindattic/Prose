@@ -12,7 +12,7 @@
   "role": "Laundry operator and alterations seamstress",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, Spindle Row — a narrow shopfront wedged between a noodle parlor and a Ferrogate substation",
+  "location": "Hamtramck Enclave, Spindle Row — a narrow shopfront wedged between a noodle parlor and a Ferrogate substation, near Ashland and Chicago Ave",
   "description": "Dayo is a broad-shouldered woman with deep umber skin mapped with geometric scarification across her forearms — old Yoruba patterns her grandmother pressed into her at sixteen, now faded and stretched by decades of work. Her hair is natural silver-white, cropped close to her skull, and she wears copper-wire reading glasses that she made herself from salvage. Her hands are perpetually waterlogged-looking, skin puckered at the knuckles from years of industrial cleaning solvents, and she keeps a bone-handled seam-ripper tucked behind her ear like a pen.\n\nShe runs 'Mbeki Steam & Stitch' with the quiet authority of someone who has outlasted three recessions, two corporate rezoning drives, and one actual flood. She is not warm exactly, but she is reliable — a quality the Enclave treats like gold. She has strong opinions about synthetic fiber and stronger ones about people who don't sort their colors, but if you're three months behind on your account and you need your work uniform pressed for a job interview, she will do it and say nothing.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,20 @@
   "registered_firearms": [
     "Arcturus Defense Solutions AR-7 'Mandate'",
     "Tessera TK-11 Specter 'Whisper'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Grandmother",
+    "Zheng-dao Bioelectric",
+    "Ferrogate Transit",
+    "Tessera Corponation",
+    "Lazarus LX-2 'Lab Rat'",
+    "SPINDLE",
+    "Silver",
+    "Copper",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

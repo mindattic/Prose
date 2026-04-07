@@ -1,0 +1,35 @@
+{
+  "id": "4f5bb18e149661fe619c9a1e14828884",
+  "name": "Substrate Communion Robe",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A flowing, semi-organic robe worn by adherents of the Substrate Communion — a quasi-religious movement that views living substrate technology as evidence of a higher biological intelligence. The robe is grown from a benign substrate culture and maintained through periodic nutrient soaking. It is technically alive, responding to the wearer's body temperature with subtle shifts in texture and color.\n\nWearing a Communion Robe is a declaration of faith in biological technology as sacred. The robes are uncomfortable — the living fabric occasionally moves against the skin in ways that require acclimatization. True believers consider the discomfort part of the communion experience.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "living substrate fabric",
+    "nutrient-dependent maintenance",
+    "bio-responsive surface"
+  ],
+  "functionality": "Religious identity, community membership, living-technology demonstration",
+  "what_it_says": "You believe living technology is divine, and you've wrapped yourself in your faith.",
+  "worn_by": [
+    "Substrate Communion adherents",
+    "biotech spiritualists"
+  ],
+  "manufacturer": "Substrate Communion (community-grown)",
+  "price_range": "Φ0 (grown within community, nutrient cost ~Φ30/month)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Substrate Communion Robe begins exhibiting behavior its wearers have never seen — the living fabric is growing new structures, and the Communion's leadership can't decide if it's evolution or revelation."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 3",
+    "Substrate Communion",
+    "religious",
+    "living fabric",
+    "biotech"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Food stall operator specializing in synth-spice blends and ancestral cuisine reconstructions",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, Stall Row 7, Copperhead",
+  "location": "The Oxidian Market, Stall Row 7, Copperhead, near Pulaski and Chicago Ave",
   "description": "Zoraida is a broad-shouldered woman with deep brown skin mapped in fine wrinkles that bunch around her eyes when she laughs, which is often. Her silver-streaked hair is cropped close on one side and falls in a thick, loose braid on the other, threaded with tiny glass beads that click when she moves. She has no augmentations save for a thermal patch embedded in her left palm — an industrial mod repurposed for gauging the exact temperature of her woks without touching them. Her stall smells of fermented shrimp paste, ghost chili, and something sweet and unidentifiable that she claims is her grandmother's secret.\n\nShe is a woman of fierce opinions and genuine warmth, the kind of person who will berate you for putting too much salt on her food and then slip an extra dumpling into your bag when she thinks you look hungry. She has operated this same stall for twenty-two years and knows every vendor, enforcer, and regular by name, ailment, and preference. She carries grief quietly, tucked behind her humor, and speaks of her late husband only in the context of recipes he loved. The ELF she calls Mama Simmer lives in the ancient gas regulator under her wok — she leaves it a teaspoon of rendered fat every morning.",
   "psychology": {
     "facet_weights": {
@@ -220,5 +220,16 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Ferrogate Transit",
+    "Helix Biosystems",
+    "Grandmother",
+    "Copperhead",
+    "ShieldTech Enforcer DM-4 'Crossover'",
+    "Silver",
+    "Glass"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Xenolinguist and Computational Theorist, Helix Biosystems R&D — studies emergent language systems in E.L.F. clusters and gene-sequence symbolic notation",
   "age": 29,
   "status": "active",
-  "location": "The Circuit — Helix Biosystems Research Campus, Lab Cluster 7, with a small apartment in Bronzeline she rarely sleeps in",
+  "location": "The Circuit — Helix Biosystems Research Campus, Lab Cluster 7, with a small apartment in Bronzeline she rarely sleeps in, near Armitage and Milwaukee",
   "description": "Nkiruka is small and quick, with deep brown skin and natural hair she keeps in a huge, untethered cloud because she never has time to do anything else with it. She has color-shifting skin panels along both forearms — a Helix Biosystems perk-package mod, bioluminescent cells that cycle through warm golds and blues depending on ambient temperature and her own body heat, which she mostly ignores but which make her extremely visible in dark corridors. Her eyes have been modded with an overlay display she uses as a secondary screen while working, so it is sometimes unclear whether she is looking at you or at something layered on top of you.\n\nShe was admitted to University Spine's computational linguistics program at twenty-two as a prodigy who could parse grammar structures in systems that everyone else had written off as noise, and was poached by Helix Biosystems at twenty-six before completing her doctorate with a recruitment package she still feels ambivalent about. Her current work is theoretically studying whether Helix's gene-sequence notation system constitutes a semiotic language in any meaningful sense. Her actual work, which she has not been told explicitly is her work, is determining whether the E.L.F. clusters in Helix's distributed lab network have developed a shared private protocol — and if so, what they are saying.",
   "psychology": {
     "facet_weights": {
@@ -203,5 +203,18 @@
   "carried_weapons": [
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "University Spine",
+    "Meridian 88",
+    "The Circuit",
+    "Bronzeline",
+    "Irontide Tidal Energy",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Stratum",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

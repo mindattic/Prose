@@ -12,7 +12,7 @@
   "role": "Information trader and intelligence analyst — broker",
   "age": 65,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore",
+  "location": "The Shelf — lower district tenements near the old lakeshore, near Kedzie and Division",
   "description": "Sinan Haugen-Coulibaly is lean and angular, all sharp edges and visible tension. At 65, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSinan Haugen-Coulibaly has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,12 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ]
+  ],
+  "related_entities": [
+    "The Shelf",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Clover"
+  ],
+  "district": "The Shelf"
 }

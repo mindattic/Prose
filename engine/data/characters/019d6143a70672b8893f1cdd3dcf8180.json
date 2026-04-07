@@ -12,7 +12,7 @@
   "role": "Barber and amateur tattoo artist",
   "age": 26,
   "status": "active",
-  "location": "Bronzeline, operates Phantom Chair barbershop out of a converted shipping container unit",
+  "location": "Bronzeline, operates Phantom Chair barbershop out of a converted shipping container unit, near Damen and Armitage",
   "description": "Tsetseg is slight and quick-moving, with Mongolian features softened by their Ghanaian grandmother's bone structure — high cheekbones, wide-set dark eyes, a mouth that defaults to a half-suppressed grin. Their hair cycles through colors using a geneware dye-follicle mod, currently a deep ox-blood red fading to copper at the tips. They have bioluminescent subcutaneous tracery along both forearms — thin branching lines in pale blue that pulse faintly when they are excited or anxious, which they find embarrassing and try to cover with long sleeves in professional settings. Their hands are their real instrument: extraordinarily steady, with the unconscious precision of someone who has been practicing since age fourteen.\n\nPhantom Chair operates out of a three-chair container unit that Tsetseg has customized over four years into something genuinely beautiful — cracked leather chairs reupholstered with fabric from the Burnished Market, mirrors ringed with hand-soldered E.L.F. offerings (USB stubs, old SIM cards, a broken haptic stylus for the Barber E.L.F. they call Bladewind), and a hand-painted ceiling mural depicting the Bronzeline skyline in exaggerated neon. They are fast, technically excellent, and socially combustible — they ask too many questions, form too-strong opinions too quickly, and have started at least four ongoing feuds with neighboring businesses over noise, parking, and once, a vigorously disputed question of who invented a particular fade technique.",
   "psychology": {
     "facet_weights": {
@@ -184,5 +184,18 @@
   ],
   "registered_firearms": [
     "Crucible Industries Titan-500 'Earthquake'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Grandmother",
+    "Bronzeline",
+    "TESSERA PG-2 'Signature'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Leather",
+    "Copper",
+    "The Pure Hand",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

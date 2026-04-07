@@ -1,0 +1,43 @@
+{
+  "id": "e1d7a4c2f8b3056e9d1a7c4f2b8e3065",
+  "name": "Helios-Nomad StormCore Down Parka — Splitback",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A mid-thigh parka filled with synthetic down rated for -40C, featuring a full split-back panel with adjustable tension straps to accommodate geneware wings or large spinal rig hardware. The shell is a matte charcoal ripstop with bonded seams and a storm-flap zip system. Hood is removable and fur-trim optional.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "synthetic down fill (800-fill equivalent)",
+    "bonded ripstop outer shell",
+    "magnetic storm-flap closure",
+    "adjustable split-back tension straps",
+    "removable hood with faux-fur trim"
+  ],
+  "functionality": "Split-back panel opens to full wingspan clearance for geneware wings or accommodates external spinal rigs; rated -40C static, -30C in sustained lake wind.",
+  "what_it_says": "Expensive enough to signal comfort, practical enough to mean business — and the splitback says they've modified their body significantly.",
+  "worn_by": [
+    "geneware-modified professionals",
+    "junior executives with spinal augments",
+    "Tier 4 commuters",
+    "corporate specialists with wing geneware"
+  ],
+  "manufacturer": "Helios-Nomad Outerwear",
+  "price_range": "Φ480–Φ720",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Spire-level corponation logo has been carefully removed from the left chest — the ghost of the patch is still visible in the stitching.",
+    "The split-back tension system was custom-calibrated for a wingspan wider than any licensed geneware clinic would approve."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "winter_heavy",
+    "tier4",
+    "aug_compatible",
+    "gene_compatible",
+    "parka",
+    "splitback",
+    "wing_compatible",
+    "helios_nomad"
+  ]
+}

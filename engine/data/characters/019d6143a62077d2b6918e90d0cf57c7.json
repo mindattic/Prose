@@ -12,7 +12,7 @@
   "role": "High-speed vehicle operations specialist — wheelman",
   "age": 45,
   "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
   "description": "Hadiya Akerlund-Mensah-Bonsu is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a wheelman out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Hadiya Akerlund-Mensah-Bonsu describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,12 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Street Custom 'Scorpion Tail' Chain Whip"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "Meridian 88",
+    "The Nearfield",
+    "Slagworks Industrial"
+  ],
+  "district": "Old Harbor"
 }

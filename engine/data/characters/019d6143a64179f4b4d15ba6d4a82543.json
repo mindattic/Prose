@@ -12,7 +12,7 @@
   "role": "Evidence removal and scene sanitation — cleaner",
   "age": 41,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near Damen and Armitage",
   "description": "Kenji Alvarez-Okonkwo is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 41, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Kenji Alvarez-Okonkwo plans to keep it that way. He works as a cleaner out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nKenji Alvarez-Okonkwo has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,16 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Geartown",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Circuit"
 }

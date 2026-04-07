@@ -12,7 +12,7 @@
   "role": "Senior Compliance Officer, Ferrogate Transit",
   "age": 47,
   "status": "active",
-  "location": "The Circuit, Ferrogate Transit Regional Compliance Tower",
+  "location": "The Circuit, Ferrogate Transit Regional Compliance Tower, near Milwaukee and Damen",
   "description": "Solveig is a tall woman with the careful posture of someone who has spent decades making herself hard to read — shoulders squared, hands always visible, face arranged into a polite neutrality that reveals nothing. Her skin is deep brown, her hair silver-white and cropped close, and she has a single cosmetic mod: irises that shift between amber and pale grey depending on her stress load, a biometric vanity piece she bought in her thirties that she now regrets because it gives too much away. She dresses in Ferrogate's regulation charcoal, always pressed, always correct, always the most put-together person in any room she enters.\n\nShe is meticulous, dry-humored, and quietly ruthless in the way only people who have survived three corporate restructurings can be. She doesn't raise her voice. She doesn't need to. Solveig has outlasted four division heads and two full executive purges by being the person who knows where every buried regulation lives and exactly how to weaponize it. She is not beloved. She is respected, which she has decided is better.",
   "psychology": {
     "facet_weights": {
@@ -226,5 +226,17 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Tessera TK-7 Service Pistol 'Ticker'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Circuit",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

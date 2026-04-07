@@ -12,7 +12,7 @@
   "role": "Laundry operator and alterations seamstress",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, Kuura Street Laundry — a narrow shopfront sandwiched between a dumpling counter and a prayer-kiosk to the local E.L.F.",
+  "location": "Hamtramck Enclave, Kuura Street Laundry — a narrow shopfront sandwiched between a dumpling counter and a prayer-kiosk to the local E.L.F., near Halsted and Chicago Ave",
   "description": "Ofeibea is a broad-shouldered woman whose hair has gone almost entirely silver, worn in a practical coiled wrap she replaces every three days with fabric remnants from her alterations pile. Her skin is deep umber with a faint bioluminescent shimmer along her jaw and collarbone — a cosmetic mod she got in her thirties that she now barely thinks about, though it pulses warmer when she laughs. Her hands are the most telling thing about her: knuckled, chemical-scarred at the knuckle creases from decades of industrial detergent, but precise when they hold a needle. She moves through her shop with the unhurried authority of someone who has owned every square inch of her twelve-by-twenty space for twenty-two years and intends to own it twenty-two more.\n\nShe is the kind of woman who asks about your mother before she asks about the stain. Her emotional intelligence is formidable — she reads distress the way others read text, and her shop has become an unofficial de-escalation room for the Enclave's domestic disputes, grief, and gossip. She has opinions she will share once, firmly, and then let drop. She does not argue. She also does not forget.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,18 @@
   "registered_firearms": [
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Meridian 88",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Tessera Corponation",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Silver",
+    "The Pure Hand",
+    "Needle",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Shelf"
 }

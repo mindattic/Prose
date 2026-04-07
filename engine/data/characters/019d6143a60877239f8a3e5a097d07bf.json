@@ -12,7 +12,7 @@
   "role": "Comedian and spoken word performer",
   "age": 58,
   "status": "active",
-  "location": "The Garret, permanent residency at a club called The Lowering Bar",
+  "location": "The Garret, permanent residency at a club called The Lowering Bar, near North Ave and Damen",
   "description": "Eudoxia is a broad, comfortable-looking woman who weaponizes the appearance of comfort. She has silver-threaded locs piled architecturally on her head, a wardrobe of brightly patterned structural jackets, and reading glasses she doesn't actually need that she takes on and off during performances for punctuation. Her eyes have patterned irises — a gift to herself for her fiftieth birthday, concentric rings of amber and dark blue that make her gaze feel like a diagnostic tool. She laughs loudly and often and the laugh is the first thing anyone mentions when describing her.\n\nEudoxia has been performing in Meridian 88 for thirty-one years. She has watched the city transform from positions closer and closer to the ground, and her comedy is a decades-long document of that transformation — who got squeezed out, who moved up, what the corponations promised and what they delivered. She is ferociously funny. She is also the sharpest political satirist working in The Garret, possibly in the city, and she does it standing in front of a microphone with a drink in her hand so everyone can pretend it's just jokes. Three Axiom corporate communications officers have individually tried to have her 'scheduled away' from prominent venues. She considers this her Φ120 UBC bonus.",
   "psychology": {
     "facet_weights": {
@@ -199,5 +199,15 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Crucible Industries Cerberus-357 'Hellhound'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Garret",
+    "Flicker",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Circuit"
 }

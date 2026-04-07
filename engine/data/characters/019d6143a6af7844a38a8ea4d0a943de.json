@@ -12,7 +12,7 @@
   "role": "Veterinarian specializing in gene-modded companion animals, Geartown",
   "age": 47,
   "status": "active",
-  "location": "Geartown, clinic called the Patchwork Menagerie — ground floor of a converted machine shed",
+  "location": "Geartown, clinic called the Patchwork Menagerie — ground floor of a converted machine shed, near Milwaukee and Damen",
   "description": "Reinhild is angular and deliberate, with pale skin weathered by years in Geartown's industrial air, dark red hair grown to her collar and always pinned back with the same three steel clips, and eyes that are naturally pale hazel but surrounded by faint stress lines that give her the look of someone who has been concentrating intensely for twenty years and has not stopped. She has a cat tail — dark auburn, prehensile, acquired in her thirties for sensory reasons she is somewhat private about — that moves independently and tends to express what her face does not. When she is genuinely pleased it curves upward. When she is thinking hard it wraps around her leg.\n\nHer practice sees gene-modded companion animals of extraordinary variety: bioluminescent cats with stability issues, canines with enhanced intelligence mods that have developed behavioral complications, fish engineered for apartment living that have outgrown their tanks in ways their designers did not anticipate. She treats each case with the same complete seriousness. Her waiting room has drawings by children whose pets she has saved covering two full walls. She has a flat rule against declining to treat an animal because its owner cannot pay — she works out arrangements, always, and is frequently owed labor and food by half the block. She has a secondary suspicion, which she keeps private, that some of the E.L.F. activity in Geartown has begun affecting gene-modded animals in ways that are not pathological and that she does not know how to document.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,17 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Counter-Personnel Loiter Munition CPLM-7 'Patience'",
+    "Riverbottom",
+    "Cinderblock Ai",
+    "Lazarus EC-4 'Companion'",
+    "Geartown",
+    "Slagworks Industrial",
+    "The Pale Mile",
+    "Steel",
+    "Hazel Brink"
+  ],
+  "district": "The Circuit"
 }

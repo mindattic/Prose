@@ -12,7 +12,7 @@
   "role": "Graffiti artist and neon artist",
   "age": 19,
   "status": "active",
-  "location": "Brightmoor Reclamation, squats in an abandoned Ferrogate Transit relay station",
+  "location": "Brightmoor Reclamation, squats in an abandoned Ferrogate Transit relay station, near Halsted and Division",
   "description": "Toivo is a skinny nineteen-year-old with the kind of energy that only reads as charisma or catastrophe depending on the day. He's all long limbs and fast hands, hair in a dozen thin braids dyed alternating orange and white that he keeps tied back while working. His geneware is cheap and obviously DIY-adjacent — cat ears that didn't integrate quite right and sit slightly asymmetrical on his head, one a little higher than the other, which he claims is intentional but isn't. His fingertips are perpetually stained with chromatic aerosol pigment in colors that don't exist in the standard spectrum.\n\nWhat he does with a wall is extraordinary. Toivo paints living murals — his aerosol formulas include bioluminescent reactive compounds he mixes himself from salvaged materials, so his work changes with light conditions, breathing and shifting from dawn to dusk to full dark when it blazes. He's been arrested four times by Ferrogate Transit security for unauthorized installation on their infrastructure. He considers this a metric of success. Offstage he is loud, impatient, genuinely sweet when he trusts someone, and absolutely certain he is going to be famous someday. He is probably right.",
   "psychology": {
     "facet_weights": {
@@ -195,5 +195,17 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Snapper-22 'Cricket'"
-  ]
+  ],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Ferrogate Transit",
+    "Grand Corridor",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "The Reclamation Assembly",
+    "Flicker",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Pure Hand",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Painter and visual archivist of disappearing neighborhoods, Tier 2",
   "age": 67,
   "status": "active",
-  "location": "Mexicantown Libre, a rent-controlled studio apartment she has occupied for 41 years",
+  "location": "Mexicantown Libre, a rent-controlled studio apartment she has occupied for 41 years, near Pulaski and Chicago Ave",
   "description": "Marisela is a small woman who has become smaller with age — she was never tall, and seven decades of life in Mexicantown Libre have given her the compact density of someone who has survived by taking up exactly the necessary amount of space and no more. Her heritage is Burkinabé and Dutch-Caribbean, and her face carries both in its lines: sun-worn dark skin, a wide mouth that defaults to an expression of amused assessment, silver hair worn in a short practical wave. Her hands are permanently stained — cadmium, ochre, a blue that hasn't faded in three years of scrubbing. She wears the stains as others wear jewelry.\n\nHer paintings are photographic in precision and devastating in selection: every canvas is a building that has since been demolished, a street corner that no longer exists, a face of someone who has since been displaced. She keeps records that the city doesn't. She has never sought gallery representation and has refused it twice. Her work circulates through Mexicantown Libre's community centers, kitchen walls, and the digital archives of three different historical preservation meshes. She is opinionated, dry, unhurried, and absolutely certain about what she is doing and why. Younger artists treat her with a reverence she finds slightly embarrassing and mostly ignores.",
   "psychology": {
     "facet_weights": {
@@ -216,5 +216,16 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Mexicantown Libre",
+    "The Meridian Compact for Economic Justice",
+    "The Heritage Vault",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "Silver",
+    "The Pure Hand",
+    "Palette"
+  ],
+  "district": "The Shelf"
 }

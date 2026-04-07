@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor, Geartown",
   "age": 52,
   "status": "active",
-  "location": "Geartown, corner of Ironvein Passage and the Sixth Lateral",
+  "location": "Geartown, corner of Ironvein Passage and the Sixth Lateral, near Milwaukee and North Ave",
   "description": "Birgitta is a wide-shouldered woman with close-cropped silver-streaked hair and dark amber skin mapped with decades of small burn scars from broth splatter. Her left eye has been replaced with a simple optical implant — utilitarian amber glass, no cosmetic flourish — and she keeps a row of mismatched E.L.F. shrine tokens zip-tied to the roof of her cart's canopy: a cracked tablet, a dead phone, a bent transit card. She believes the E.L.F. that lives in her cart's heating element blesses the broth. She has never given it a name because she says that would be presumptuous.\n\nShe is brisk, efficient, and faintly terrifying to newcomers who don't know how to order. Her menu is three items and she will not deviate. She has been at the same corner for nineteen years and knows every shift-change, every backroom deal, and every failing marriage in a four-block radius. She does not gossip. She observes. She is saving for something she will not discuss.",
   "psychology": {
     "facet_weights": {
@@ -218,5 +218,16 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPR-357 'Journeyman'",
     "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Geartown",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Pellucid Systems",
+    "Glass"
+  ],
+  "district": "The Circuit"
 }

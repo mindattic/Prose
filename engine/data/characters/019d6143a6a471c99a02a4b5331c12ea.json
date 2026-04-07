@@ -12,7 +12,7 @@
   "role": "Underground filmmaker and VR experience designer",
   "age": 44,
   "status": "active",
-  "location": "The Loft, Lockhaven North — operates a pirate screening venue called the Sediment",
+  "location": "The Loft, Lockhaven North — operates a pirate screening venue called the Sediment, near Fullerton and Damen",
   "description": "Ptolemy is a heavyset man in his mid-forties with dark brown skin, a close-cropped beard going silver at the jaw, and the slightly unfocused look of someone who is always composing shots in their peripheral vision. He has a prosthetic left eye — not an elegant chrome implant but a visually obvious thing, matte black with a ring of amber light around the iris, which he has never had cosmetically upgraded because he likes that it makes people aware they may be recorded. He wears the same rotating set of worn high-collared coats regardless of season. He carries a battered intake recorder everywhere and the habit of pulling it out in the middle of conversations has ended several relationships.\n\nHis films are long, structurally experimental, and deeply uncomfortable — documentary and fiction entangled in ways the viewer cannot always disentangle. He is most famous for a six-hour VR experience called 'Debt Architecture' that maps a single Meridian 88 family's financial obligations across four generations as a navigable spatial environment, placing the viewer inside the abstract structure of inherited poverty. It has been downloaded illegally over 400,000 times and banned by three corponations. He funds himself through occasional commercial VR work he takes under a pseudonym and despises himself for.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,17 @@
   "carried_weapons": [
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lockhaven North",
+    "Meridian 88",
+    "The Iron Lotus",
+    "The Loft",
+    "Sediment Sound Group",
+    "ARCHIVE",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Compass Rose"
+  ],
+  "district": "The Shelf"
 }

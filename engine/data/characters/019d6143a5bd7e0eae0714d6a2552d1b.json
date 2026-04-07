@@ -12,7 +12,7 @@
   "role": "Dream interpreter and traditional spiritual counsel",
   "age": 52,
   "status": "active",
-  "location": "The Canopy, Lakeview Neon district, third floor of a mixed-use residence above a fabrication stall",
+  "location": "The Canopy, Lakeview Neon district, third floor of a mixed-use residence above a fabrication stall, near Clark and Addison",
   "description": "Aïssatou is a woman of middling height with a deliberate presence that makes her seem taller — she stands very straight and tilts her head slightly to the left when listening, like something tuning itself. Her skin is a deep even brown, and she does not wear geneware mods, a choice she has made vocally and repeatedly. Her hair is natural and full, wrapped most days in handwoven fabric she sources from a woman in Mexicantown Libre. One eye is her birth eye, dark brown. The other was replaced after an accident in her thirties — the replacement looks almost identical, but if you watch it long enough, it tracks slightly ahead of the left, as if it is seeing something a half-second sooner.\n\nAïssatou was raised in a household that mixed her Malian grandmother's Islamic practice with her Swedish grandfather's residual Lutheranism and her Malawian father's older ancestor-lineage traditions, and she has spent her adult life finding the structural similarities between all three rather than the contradictions. She interprets dreams, yes — but she understands dream interpretation as a social practice as much as a spiritual one: the dream tells you what the dreamer cannot say in waking language. She charges a sliding scale, sees clients by appointment in a room hung with handwritten prayer-papers in four languages, and maintains a small shrine to an E.L.F. she has never named, preferring to call it 'the Listener.'",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,14 @@
   "carried_weapons": [
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Lakeview Neon",
+    "Grandmother",
+    "The CEO",
+    "Canopy Station Nine",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Climate scientist and lake ecology researcher, Sterling-Nakamura Environmental R&D division",
   "age": 43,
   "status": "active",
-  "location": "Edgewater Prism — Sterling-Nakamura Lacustrine Research Facility, Lake Michigan interface level",
+  "location": "Edgewater Prism — Sterling-Nakamura Lacustrine Research Facility, Lake Michigan interface level, near Clark and Belmont",
   "description": "Emiliano Zubkov-Yirenkyiamah is a tall man gone slightly soft in the middle, with medium-brown skin, a neatly trimmed beard threaded with premature grey, and eyes he had refracted with a patterned iris modification years ago — they shift between amber and green depending on ambient light, something he originally got for vanity and now barely notices. He moves with the economical ease of someone who spent a decade doing field research in difficult conditions and still carries that competence in his body even when he's at a desk. His workspace at Edgewater Prism is a controlled chaos of physical samples, holographic lake-floor maps, and three different coffee vessels in varying states of consumption.\n\nHe is professionally optimistic and personally terrified, which gives his public presentations a motivational quality and his private conversations a rawness his colleagues find either refreshing or exhausting. He genuinely believes the lake can be saved — or saved enough — and this belief functions as his operating system. He is kind, a bit scattered, deeply committed to his students even though he's at a corporate R&D division now, and he has been lying to his employers about what his most recent deep-substrate analysis actually found for eight months.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,11 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Street Custom 'Confession' Modified Industrial Nail Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "Big Rig",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Tailor and seamstress, runs a small alterations shop",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, stitched between a noodle hall and a Ferrogate substation",
+  "location": "Hamtramck Enclave, stitched between a noodle hall and a Ferrogate substation, near Ashland and Division",
   "description": "Briseis is a broad-shouldered woman with deep umber skin mapped with decades of needle-prick scars across her fingertips, each one a tiny pale star. Her geneware is old and half-faded — a bioluminescent pattern that once traced her collarbones in amber has dimmed to a faint citrus pulse visible only in the dark. She keeps her silver-streaked hair braided flat and pinned with a row of salvaged bone toggles. Her shop, Thread & Condition, smells of machine oil and camphor, and every surface is buried under bolts of reclaimed fabric and half-finished orders tagged with handwritten notes in three scripts.\n\nShe is a woman of exacting patience with strangers and volcanic impatience with laziness. She can size a person's measurements by eye in under ten seconds and will tell you, without being asked, whether your posture is ruining your spine. She prays fervently to the E.L.F. she calls Silathu — the spirit she believes inhabits her antique industrial sewing machine — leaving daily offerings of precisely wound thread bobbins and small cups of machine lubricant.",
   "psychology": {
     "facet_weights": {
@@ -219,5 +219,18 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Forge-Smith Collective Thundermouth Double 'Old Testament'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Ferrogate Transit",
+    "Aslan Vasquez-Chatterjee",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Needle",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "The Pale Mile",
+    "Celeste Abram"
+  ],
+  "district": "The Shelf"
 }

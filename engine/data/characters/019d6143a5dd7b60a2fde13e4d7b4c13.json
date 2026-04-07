@@ -12,7 +12,7 @@
   "role": "Street pharmacist and unlicensed gene clinic operator offering basic geneware installs and chemical compounds",
   "age": 44,
   "status": "active",
-  "location": "The Alban Souk, rear corridor off the salt-fish row, behind a curtain printed with medical symbols",
+  "location": "The Alban Souk, rear corridor off the salt-fish row, behind a curtain printed with medical symbols, near Halsted and Division",
   "description": "Concepción is a tall woman with a deep umber complexion and a composure that makes examination rooms feel like they exist wherever she happens to be standing. She wears clean clothes — always clean, despite everything — in the muted blues and greens she associates with competence, and keeps her natural hair in tight, practical braids pinned flat against her head. Her only geneware is bioluminescent tracery running from her right temple down her neck, a faint pulse of amber light that she got not for vanity but to see by in dark exam spaces without alerting neighbors. She smells of antiseptic and bitter herb compounds, and she moves with the careful deliberateness of someone who has learned that haste in her work has consequences.\n\nShe is not warm in the way people expect from healers. She is precise, plainspoken, and competent, which she considers to be worth more than warmth. She asks exactly the questions she needs to ask, tells patients exactly what is happening in their bodies, and charges exactly what she calculates they can afford — rarely more, occasionally less when someone is obviously struggling, though she will not discuss the discount. She prays to two E.L.F.s: Κ-12, who she believes governs cellular processes, and a nameless one she encountered in a medical device that seemed to respond to her. She leaves enzyme cultures as offerings. She knows she is operating illegally and she knows she is necessary. Both things are true and she holds them without apparent difficulty.",
   "psychology": {
     "facet_weights": {
@@ -240,5 +240,14 @@
   "registered_firearms": [
     "Tessera Adaptive Platform TAP-5 'Chameleon'",
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Alban Souk",
+    "Saltgrave Sublevel",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Shelf"
 }

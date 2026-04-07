@@ -1,0 +1,40 @@
+{
+  "id": "7b2d9e4c1f0a3e87d5c6b4a2f1e8d903",
+  "name": "Halversen Ironweave Coverall — Standard Cut",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "One-piece charcoal coverall in heavy ironweave canvas, double-stitched at every stress point and pre-worn to a soft matte finish. Chest pocket with a name-badge slot and a faded union patch on the left sleeve. Cut straight through the hips with no taper — functional, not flattering.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ironweave canvas",
+    "recycled nylon thread",
+    "brass snap closures",
+    "polyester batting at knees"
+  ],
+  "functionality": "Oil-resistant finish, knee padding inserts, and full-length front zip with snap storm placket for cold-weather sealing.",
+  "what_it_says": "You work with your body, you've worn this a hundred times, and you'll wear it a hundred more.",
+  "worn_by": [
+    "factory floor workers",
+    "HVAC maintenance crew",
+    "engine bay technicians",
+    "assembly line operators"
+  ],
+  "manufacturer": "Halversen Workwear Co.",
+  "price_range": "Φ65–Φ90",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The union patch on the sleeve belongs to a local that was officially dissolved two years ago — some workers still wear them as quiet defiance.",
+    "A technician finds a folded note tucked inside the chest pocket lining of a secondhand coverall — coordinates and a time, nothing else."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "circuit_workwear",
+    "coverall",
+    "factory",
+    "maintenance",
+    "tier2",
+    "union"
+  ]
+}

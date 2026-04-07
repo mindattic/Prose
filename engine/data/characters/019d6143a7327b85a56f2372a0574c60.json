@@ -12,7 +12,7 @@
   "role": "Loan shark and bookmaker operating out of Gravesend Basin",
   "age": 52,
   "status": "active",
-  "location": "Gravesend Basin, The Float — a converted barge-shop called Tamboli's Provisions",
+  "location": "Gravesend Basin, The Float — a converted barge-shop called Tamboli's Provisions, near Pulaski and Chicago Ave",
   "description": "Yusuf is a broad, slow-moving man who has cultivated the appearance of a tired grandfather — thick silver streaks in his close-cropped black hair, reading glasses perpetually perched on a nose broken twice and set once, a cardigan with one pocket always stuffed with hard candies he offers freely. His skin is a warm brown, deeply lined around the eyes, and his left hand carries a subdermal ledger implant that projects a faint green glow through the skin of his palm when he activates it — the only augmentation he's ever bothered with. He dresses in laundered but mended clothing, never anything that suggests wealth, because wealth makes people count what they owe you and start thinking about not paying.\n\nHe is meticulous, patient, and genuinely warm in the way that only the most dangerous people can afford to be. He has run numbers and books in Gravesend Basin for twenty-three years and has outlasted four gang transitions, two corporate annexation attempts, and one actual flood. He does not threaten people. He employs a man named Calin for that. What Yusuf does is remember — every debt, every late payment, every excuse — and he waits with the equanimity of someone who has priced your failure into the original agreement.",
   "psychology": {
     "facet_weights": {
@@ -221,5 +221,20 @@
   "carried_weapons": [
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Gravesend Basin",
+    "The CEO",
+    "The Iron Lotus",
+    "Fenwick Float",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

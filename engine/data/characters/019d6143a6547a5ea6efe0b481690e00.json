@@ -13,7 +13,7 @@
   "role": "Local artist, cautionary tale, unlikely ally",
   "age": 34,
   "status": "alive",
-  "location": "The Shelf — three floors below Kyle",
+  "location": "The Shelf — three floors below Kyle, near Ashland and Division",
   "description": "Maren Voss used to paint murals. Enormous ones — entire sides of buildings\non the Shelf transformed into color and fury and grief. She painted the\ndrowned temples of Old Harbor from memory. She painted the Spire as a\nneedle injecting poison into the sky. She painted faces of people who\ndisappeared during the Consolidation Wars. Axiom Industries noticed.\n\nThey didn't arrest her. That would've made her a martyr. Instead, a crew\ncaught her in an alley after a commissioned piece for the Collective.\nThey held her down and took her hands. Not her arms — her hands. Surgical.\nCorporate-clean. Left the stumps cauterized and a note: \"Axiom appreciates\nyour talent. We hope you'll redirect it.\"\n\nShe redirected it.\n\nShe went to a back-alley augment shop in the Circuit and had both arms\nreplaced from the elbow down with military-surplus combat prosthetics —\nnot hands, not delicate artist's fingers. Claws. Three curved titanium\ndigits per arm, each one as long as a chef's knife, with hydraulic grip\nstrength that can crush rebar. They are ugly, oversized, and terrifying.\nThey were designed for breaching armored doors, not holding brushes.\n\nShe paints with them anyway.\n\nShe scores the claws across surfaces — walls, metal, skin — and uses\nblood (her own, donated, sometimes not donated) mixed with industrial\npigment as paint. The murals are rougher now. Savage. Claw-marks instead\nof brushstrokes. But somehow more honest. The Shelf loves them more than\nthe old work. Axiom pretends not to notice, which means they're afraid.\n\nShe is thin, sharp-featured, with cropped dark hair that she cuts herself\n(badly, with the claws). Her eyes are the flat calm of someone who has\nalready lost the worst thing they could lose and discovered they're still\nalive. She wears sleeveless shirts so the augments are always visible —\nnot out of pride but out of refusal to hide what was done to her.",
   "psychology": {
     "facet_weights": {
@@ -256,5 +256,19 @@
   "registered_firearms": [
     "Arcturus Defense Solutions SAR-3 'Warden'",
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Axiom Industries",
+    "Dredge Mining Collective",
+    "The Circuit",
+    "The Shelf",
+    "The Spire",
+    "Titanium",
+    "Needle",
+    "The Pure Hand",
+    "Tibor Osei-Svanstrom",
+    "VOSS",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Neighborhood council member and mutual aid organizer",
   "age": 47,
   "status": "active",
-  "location": "Highland Park Autonomous Zone",
+  "location": "Highland Park Autonomous Zone, near Lake Shore Drive and Division",
   "description": "Zuwena is a broad-shouldered woman with deep umber skin and silver-streaked locs she keeps pinned under a battered orange headwrap when she's working. Her left forearm has a subdermal map of Highland Park tattooed in bioluminescent ink — a gift from the community after her third term — and she traces it absently with her fingernail when she's thinking. Her face is a landscape of laugh lines and hard-won patience, and she has the particular stillness of someone who has learned that the room will eventually come to her.\n\nShe runs the HPAZ Resource Exchange from a converted auto-garage that smells of pine cleaner and instant noodles, coordinating food distribution, housing mediation, and emergency flood response across eleven blocks. People call her The Cartographer not because she makes maps but because she seems to know where everyone is and what they need before they know it themselves. She is warm to the point of being disarming, which has caused more than one corporate liaison to underestimate her until she produces the seventeen-page legal brief she's been sitting on.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,15 @@
   "carried_weapons": [
     "Street Custom 'Ghostwriter' Grafitti Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Palladian Construction MagRail Spur MRS-17 Elevated Micro-Transit Chassis",
+    "Cartographer",
+    "The Quiet Room",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Tessera Corponation",
+    "Silver"
+  ],
+  "district": "The Spires"
 }

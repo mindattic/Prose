@@ -12,7 +12,7 @@
   "role": "Subterranean merchant specializing in fungus cultivation, bioluminescent compounds, and underground pharmacopoeia",
   "age": 51,
   "status": "active",
-  "location": "Deepwell Station, lower market tier (stall designation DW-7 through DW-9)",
+  "location": "Deepwell Station, lower market tier (stall designation DW-7 through DW-9), near sub-level access near LaSalle and Congress",
   "description": "Pachacuti is broad and slow-moving in the way of people who have never needed to flee quickly because they have never given anyone a reason to chase them. Their skin is dark and mottled with deliberate bioluminescent geneware patches — clusters of soft amber and violet light that bloom slowly across their neck and hands when they're pleased or thinking hard, a modification they received at thirty in exchange for a particularly good season of cultivated medicinal spores. They are bald by choice, their scalp tattooed with a map of the Deepwell Station fungal garden network — a living ledger that requires fresh ink additions every time a new cultivation shaft opens. Their hands are enormous and stained permanently umber-brown at the fingertips from decades of spore-work.\n\nPachacuti speaks rarely but with great precision, and they have a gift for making people feel they've received something valuable even in small transactions. They know the medicinal, nutritional, and psychoactive properties of forty-seven distinct fungal strains grown in the tunnels, and they keep this knowledge close, sharing it calibrated to trust. They maintain a small shrine to the Drip-ELF at the back of their stall — a cracked tablet running a looping prayer-sequence, surrounded by offerings of protein paste and carefully harvested spore clusters. People who know Deepwell Station know that Pachacuti's blessing before a difficult journey down-tunnel is worth more than any map.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,14 @@
   ],
   "registered_firearms": [
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Lymphatic Resonance Injector LRI-5 'Floodgate'",
+    "Bathysphere Networks",
+    "Adaeze Chen-Hawkins",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand"
+  ],
+  "district": "The Underworld"
 }

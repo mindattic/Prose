@@ -12,7 +12,7 @@
   "role": "Corporate scholarship student at a Tessera-sponsored prep academy; secret junior hacker",
   "age": 15,
   "status": "active",
-  "location": "Edgewater Prism (Tessera Meridian Preparatory Academy campus)",
+  "location": "Edgewater Prism (Tessera Meridian Preparatory Academy campus), near Clark and Addison",
   "description": "Othniel is tall for fifteen, lanky in the way of someone who grew fast and hasn't filled out yet, with close-cropped hair and the kind of face that looks younger when he smiles and older when he doesn't. His skin is deep brown, his eyes have cosmetic patterned irises — concentric gold rings on dark brown, a birthday gift from his aunt that he told his academy supervisors was a medical device — and he wears the Tessera prep uniform with the collar perpetually half-popped because it chafes. He carries a Tessera-issued study tablet everywhere and a personally modified secondary deck stuffed inside his uniform jacket that he calls 'the Argument.'\n\nOn paper, Othniel Babić-Asantewaa is a model scholarship student: strong grades in systems architecture and applied logic, quiet in class, respectful to faculty. Off paper, he's been quietly mapping the academy's internal network for six months for reasons he tells himself are purely intellectual curiosity. He grew up in Benton Divide, tier one, and the scholarship changed everything — new clothes, new address, new vocabulary — but the kids at Edgewater Prism can smell where he came from, and the faculty treat him like a project. He hacks because it is the one place he is genuinely better than the people around him and they will never know it.",
   "psychology": {
     "facet_weights": {
@@ -209,5 +209,18 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "Benton Divide",
+    "Arcturus HW-1 'Goliath'",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Gold"
+  ],
+  "district": "The Laceworks"
 }

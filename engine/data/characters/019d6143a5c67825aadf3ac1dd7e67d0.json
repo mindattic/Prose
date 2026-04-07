@@ -12,7 +12,7 @@
   "role": "Bounty compliance officer, freelance licensed",
   "age": 44,
   "status": "active",
-  "location": "Fort Anchor, Brewer's Spine district, operates city-wide",
+  "location": "Fort Anchor, Brewer's Spine district, operates city-wide, near Halsted and Division",
   "description": "Bogdan is a big man — not tall exactly, but densely constructed, with broad shoulders and a solidity of posture that suggests he has been hit by things and remained. His skin is a deep brown-black, his head shaved close on the sides with a thick braid of salt-and-pepper hair down the back. He has bioluminescent skin patterning along his collarbone and upper arms — soft blue-white that pulses faintly when his heart rate is elevated, which happens more than he'd prefer. His right hand is partially chrome: three fingers replaced with precision manipulation hardware after an incident he describes simply as 'an argument with a door.' He dresses in Tier 2 practical — nothing corporate, nothing cheap.\n\nBogdan has been doing compliance recovery for eleven years under a Metro-issued bounty license that he has had suspended twice and restored once. He is not violent by preference — he is expensive, which is more useful. He has a reputation for bringing in difficult skips without additional incident, which he maintains through a combination of genuine negotiating skill, an exhaustive pre-approach research process, and a willingness to wait in a vehicle for a very long time. He is tired in a way that feels structural rather than temporary. He prays to three different E.L.F.s before any recovery — superstition or genuine devotion, he won't say.",
   "psychology": {
     "facet_weights": {
@@ -267,5 +267,13 @@
   "registered_firearms": [
     "Tessera TKR-10 'Executor'",
     "Crucible Industries Viper Mk.III 'Copperhead'"
-  ]
+  ],
+  "related_entities": [
+    "Brewer's Spine",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "Fort Anchor",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
+  ],
+  "district": "The Shelf"
 }

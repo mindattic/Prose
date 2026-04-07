@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator, Deepwell Station line",
   "age": 29,
   "status": "active",
-  "location": "Deepwell Station, eastern Ironvein corridor; lives in a rack-apartment in Blackpipe Corridor",
+  "location": "Deepwell Station, eastern Ironvein corridor; lives in a rack-apartment in Blackpipe Corridor, near sub-level access near LaSalle and Congress",
   "description": "Tobi Czerwiński-Faleolo is the kind of man who seems physically incapable of standing still — he shifts weight between his feet, drums fingers, adjusts his Ferrogate transit cap with two fingers like a nervous tic every few minutes. He's got his Polynesian grandmother's wide, mobile face and his Nigerian father's height, and he's capped his natural hair into a bioluminescent fade that pulses a soft copper-amber when he's calm and a rapid, anxious gold when he's stressed. He is almost always some shade of gold. His right arm carries a Ferrogate-standard neural transit interface — mandatory for his role — grafted in at hire. He refers to it as his 'leash' without bitterness, mostly.\n\nTobi drives the Deepwell line, which means twelve-hour shifts in a transit pod navigating the flooded sub-corridor between Ironvein and Blackpipe, a stretch so poorly maintained that operators call it the Drain. He is brilliant at his job and deeply resentful of everyone who benefits from it. He has political opinions the way some people have allergies — constantly, involuntarily, and at inconvenient moments. He believes the Ferrogate Transit E.L.F. network called the Manifold is sentient and suffering and has organized two failed petitions to Ferrogate's lower management about this, which is why he is still on the Drain after four years.",
   "psychology": {
     "facet_weights": {
@@ -185,5 +185,20 @@
   "registered_firearms": [
     "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Ferrogate Transit",
+    "Deepwell Station",
+    "Grandmother",
+    "The Third Rail",
+    "The Calumet Sink",
+    "Ironvein",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Axiom Systems Cortical Bomb CB-1 'Leash'",
+    "Déjà Vu",
+    "Gold"
+  ],
+  "district": "The Underworld"
 }

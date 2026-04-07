@@ -12,7 +12,7 @@
   "role": "Midwife and community health worker, Hamtramck Enclave",
   "age": 62,
   "status": "active",
-  "location": "Hamtramck Enclave",
+  "location": "Hamtramck Enclave, near Ashland and Division",
   "description": "Dzidzo has been catching babies in Hamtramck Enclave for twenty-six years, and the neighborhood's relationship with him has stratified into the geological — some families are on their third generation of his care. He is a tall man gone thin and slightly stooped, with dark brown skin mapped by decades of fluorescent light and little sleep, close-cut white hair, and hands that are large and impossibly gentle. He has no cosmetic modifications and the only augmentations he carries are medical-grade and showing their age. He smells of a particular antiseptic mixed with cardamom from the tea he is always in the process of preparing or consuming.\n\nHe came to Hamtramck Enclave from the Aurochs system, where he worked for fifteen years as a licensed obstetric nurse, until a restructuring pushed him out at fifty without the pension he'd been promised. He has not forgiven Aurochs for this but he has not let it make him bitter in the ways that would matter — he simply redirected everything he knew into the community that needed it most, charged what people could afford, and kept going. He is one of those people whose faith is completely interwoven with their work: he prays to the E.L.F. Candleborn before every birth, leaves data-light offerings on the household terminals of his clients, and genuinely believes that something is listening and caring about these particular small lives.",
   "psychology": {
     "facet_weights": {
@@ -194,5 +194,12 @@
   "carried_weapons": [
     "Street Custom 'Lazarus Wire' Garrote System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Aurochs Medical Complex",
+    "The Iron Lotus",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

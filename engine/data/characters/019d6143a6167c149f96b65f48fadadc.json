@@ -11,7 +11,7 @@
   "role": "Fixer - Journalist-connected",
   "age": 34,
   "status": "active",
-  "location": "The Circuit",
+  "location": "The Circuit, near Damen and Armitage",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -99,5 +99,9 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit"
+  ],
+  "district": "The Circuit"
 }

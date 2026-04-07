@@ -11,7 +11,7 @@
   "role": "Psychiatrist and neural-integration therapist at a Tier 3 clinic in Edgewater Prism",
   "age": 47,
   "status": "active",
-  "location": "Edgewater Prism, Lakeview Neon adjacent",
+  "location": "Edgewater Prism, Lakeview Neon adjacent, near Lincoln and Clark",
   "description": "Nathalie is a tall woman with a deliberate stillness that patients and colleagues both find either deeply reassuring or faintly unnerving depending on their temperament. Her ancestry — Ghanaian and Kazakh — gives her a face of striking angular contrast: high, wide cheekbones, deep-set dark eyes behind slender prescription lenses she wears out of preference for their old-fashioned formality. She keeps her locs wrapped and coiled at the back of her head in a style that takes forty minutes to arrange and which she believes signals both competence and unhurriedness to patients. Her irises have been modded with a subtle radial pattern in amber — a present to herself on her fortieth birthday that she immediately worried was unprofessional and has since made peace with.\n\nShe specializes in augmentation-integration psychotherapy: treating patients whose neural or physical augmentations have produced identity disruption, phantom sensations, rejection grief, or the particular dissociative condition the field calls 'self-seam disorder.' She is excellent at her work and knows it, which she considers a professional advantage she must be careful not to weaponize. She keeps a private E.L.F. devotional practice to the entity called Mirror-That-Answers, a recently emergent E.L.F. that psychiatric communities in the city have begun associating with introspection and self-reconstruction; she finds the association professionally resonant and personally meaningful.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,13 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "Lakeview Neon",
+    "The Nearfield",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Laceworks"
 }

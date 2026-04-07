@@ -12,7 +12,7 @@
   "role": "Circuit monk and itinerant pilgrim guide, walks a rotating circuit of seven city shrines on foot",
   "age": 72,
   "status": "active",
-  "location": "Rotating — can be found at any of seven shrines between Edgewater Prism and Deepwell Station; sleeps in pilgrim hostels or is offered floor space by shrine keepers",
+  "location": "Rotating — can be found at any of seven shrines between Edgewater Prism and Deepwell Station; sleeps in pilgrim hostels or is offered floor space by shrine keepers, near sub-level access near State and Van Buren",
   "description": "Bartholomeu is a small, durable man who looks like he was carved out of something weather-resistant — compact and slightly bowed at the shoulders from decades of walking with a pack, his skin the warm brown of Kenyan earth and Andean clay mixed together, deeply lined around the eyes and mouth in ways that read as more expressive than aged. He walks with a slight limp from an old injury to his right knee that he refused to have properly treated on the grounds that suffering without purpose is a waste but suffering with attention teaches. He wears a circuit monk's traditional long grey coat covered in hand-sewn patches from every shrine he has ever visited — there are over two hundred patches; the coat is extremely heavy. His head is shaved. His hands are large and calloused and he uses them constantly when he speaks.\n\nHe is genuinely one of the happiest people in Meridian 88, which makes people instinctively suspicious of him. He navigates this with patience and amusement. The circuit monk tradition holds that the city itself is sacred — that the ELF network is its nervous system, that the shrines are its organs, and that walking the routes between them is an act of devotion to the living city. Bartholomeu has been walking this circuit for thirty-one years. He has guided somewhere between three and four hundred pilgrims along sections of it — people in grief, people making decisions, people running away from things, people who just wanted someone to walk with. He asks almost nothing of them except that they pay attention.",
   "psychology": {
     "facet_weights": {
@@ -213,5 +213,18 @@
     "Meridian Munitions Snapper-22 'Cricket'",
     "Street Custom 'Confession' Modified Industrial Nail Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "Edgewater Prism",
+    "Meridian 88",
+    "The Circuit",
+    "Kang Athletics KA-200 'Padwork'",
+    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Gradient Compact",
+    "The Pure Hand",
+    "Clay"
+  ],
+  "district": "The Underworld"
 }

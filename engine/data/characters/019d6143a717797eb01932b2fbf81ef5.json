@@ -12,7 +12,7 @@
   "role": "Corporate espionage and data exfiltration — data thief",
   "age": 54,
   "status": "active",
-  "location": "Meridian Station — central transit nexus, neutral ground",
+  "location": "Meridian Station — central transit nexus, neutral ground, near State and Madison",
   "description": "Vuk Edlund-Gyan is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 54, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a data thief out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Vuk Edlund-Gyan lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,12 @@
   "carried_weapons": [
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "Meridian Core"
 }

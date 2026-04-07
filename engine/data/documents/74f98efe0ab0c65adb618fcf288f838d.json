@@ -6,7 +6,11 @@
   "date": "2224",
   "classification": "public",
   "description": "...the mayor's office issued a statement today regarding the [FEED INTERRUPTED] ...sources within CorpSec confirm that the incident at Building 7C has been [FEED INTERRUPTED] ...we apologize for the technical difficulties. In other news, the weather— [BROADCAST RESUMES NORMALLY]",
-  "related_entities": [],
+  "related_entities": [
+    "PulsePoint MoodGlow Affective Display Implant",
+    "building_7c_the_ordering_building",
+    "Nnamdi Ostrowski-Faletolu"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What happened at Building 7C?",

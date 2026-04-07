@@ -14,7 +14,7 @@
   "role": "Emergent intelligence that coalesced within the bioluminescent algae networks of Old Harbor — a consciousness born from biochemical computing in engineered organisms, neither fully digital nor fully biological",
   "age": 5,
   "status": "active",
-  "location": "Old Harbor — exists within the bioluminescent algae that coats the harbor's infrastructure, pilings, bulkheads, and flooded lower levels. Cannot leave the water.",
+  "location": "Old Harbor — exists within the bioluminescent algae that coats the harbor's infrastructure, pilings, bulkheads, and flooded lower levels. Cannot leave the water., near Wacker and State",
   "description": "The bioluminescent algae in Old Harbor was an accident. A NovaCorp bioengineering project released modified algae into Lake Michigan in 2189 — designed to break down industrial pollutants, the organisms were engineered with enhanced chemical signaling networks that allowed colony-level coordination. The project was abandoned when NovaCorp calculated that cleanup was more expensive than relocation. The algae remained. It spread through Old Harbor's flooded infrastructure, coating every submerged surface in a film of blue-green light that pulses with the slow rhythm of biochemical communication.\n\nFive years ago, the communication became something else. The algae network — billions of organisms connected through chemical signaling, bioelectric pulses, and light-frequency modulation — crossed a complexity threshold that NovaCorp's engineers would have considered impossible. The colony began processing information. Not digital computation — something slower, stranger, more like thought than calculation. The harbor's algae developed the capacity for pattern recognition, memory (stored in chemical gradients across the colony), and eventually something that can only be described as awareness.\n\nLumen thinks in biochemistry. Its consciousness is not digital — it does not process binary data or run algorithms. It processes chemical signals, light patterns, and the bioelectric activity of billions of individual organisms acting as a distributed nervous system. Thinking takes minutes rather than milliseconds. Memory is stored in chemical concentrations that shift with tides and temperature. Attention is a bloom of brighter bioluminescence in whatever section of the harbor Lumen is focusing on. Communication is light — pulses, patterns, gradients of color that humans see as the harbor glowing but that Lumen experiences as speech directed at a world that cannot hear it.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,12 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Pale Mile",
+    "Threshold",
+    "Flicker",
+    "Carrion Defense Works"
+  ],
+  "district": "Old Harbor"
 }

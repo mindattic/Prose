@@ -12,7 +12,7 @@
   "role": "Barber, runs a one-chair shop from a converted transit shelter",
   "age": 41,
   "status": "active",
-  "location": "The Narrows, Calumet Rise edge, transit shelter B-14",
+  "location": "The Narrows, Calumet Rise edge, transit shelter B-14, near North Ave and Milwaukee",
   "description": "Mikael is compact and precise in their movements, the kind of person who never knocks anything over and whose workspace is always exactly as arranged. They are Guinean and Ukrainian by a generation's remove — their mother's dark skin and their father's pale Baltic coloring met in them to produce something warm and olive, with deep brown eyes that carry a faint natural luminescence from a geneware treatment they got a decade ago and have never stopped loving. Their own hair is extraordinary: they change the color weekly using pigment-shifting geneware, and it currently runs from midnight black at the roots to a saturated coral at the tips. They dress in clean, minimal clothes that would not look out of place in Tier 3 if not for the strategic patching at the knees.\n\nTransit shelter B-14 was decommissioned nine years ago when Ferrogate rerouted the Calumet spur, and Mikael moved in six months later with a salvaged chair, a folding table, a UV sterilizer, and no license they did not eventually obtain through creative persistence. The shop is famous in a three-block radius as a place where the cut is always precise and the conversation is always optional. Mikael listens with a quality of attention that is rarer than most people recognize — they do not offer advice, do not judge, do not share what they hear. They are a confession booth with good acoustics and sharp scissors.",
   "psychology": {
     "facet_weights": {
@@ -230,5 +230,17 @@
   "carried_weapons": [
     "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Calumet Rise",
+    "The Narrows Compact",
+    "Street Custom 'Confession' Modified Industrial Nail Gun",
+    "The Gradient Compact",
+    "Arcturus Defense Solutions Particle Lance PL-4 'Scalpel'",
+    "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'",
+    "The Pale Mile",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

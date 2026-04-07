@@ -1,0 +1,36 @@
+{
+  "id": "74764128911d653e072658fc1611bac3",
+  "name": "Verdant Labs Level-A Hazmat Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A fully encapsulated hazardous-materials suit with self-contained breathing apparatus and triple-sealed joints. The suit provides vapor-tight protection against chemical, biological, and radiological agents. External surfaces are coated with a decontamination-reactive compound that neutralizes common threat agents on contact.\n\nDeployed for spills, contamination events, and the kind of industrial accidents where the ambient environment can kill through skin contact, inhalation, or both. The suit's 4-hour air supply is the timer on every hazmat operation.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "encapsulated barrier fabric",
+    "self-contained breathing apparatus",
+    "triple-sealed joints"
+  ],
+  "functionality": "Vapor-tight CBR protection, 4-hour air supply, surface decontamination coating",
+  "what_it_says": "The environment you're entering would kill an unprotected person, and you're going in anyway.",
+  "worn_by": [
+    "hazmat response teams",
+    "industrial accident responders",
+    "contamination crews"
+  ],
+  "manufacturer": "Verdant Labs",
+  "price_range": "Φ4,800",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Level-A Hazmat Suit is found with its air supply empty and its wearer alive — they survived six hours in a contaminated zone that should have killed them in four, and they can't explain how."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 3",
+    "hazmat",
+    "CBR",
+    "sealed",
+    "emergency"
+  ]
+}

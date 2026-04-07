@@ -12,7 +12,7 @@
   "role": "organ harvester and black-market tissue broker",
   "age": 38,
   "status": "active",
-  "location": "The Undertow, operating out of a converted cold-storage unit in the Escanaba Gateway industrial strip",
+  "location": "The Undertow, operating out of a converted cold-storage unit in the Escanaba Gateway industrial strip, near Michigan Ave South and Cermak",
   "description": "Sorcha is built like someone designed for endurance rather than strength — medium height, dense through the shoulders and hips, with a wiry toughness that reads as practical rather than threatening until she needs it to read as threatening. She has her Irish grandmother's pale freckled complexion shot through with the warmer undertones of her Guinean father's family, and her hair is a tight natural coil she keeps bound under a surgical-grade hygiene cap more often than not. Her eyes are dark and evaluating. She has cosmetic bioluminescent tracery along her collarbones — pale green — which she got at nineteen and now considers a poor decision she's too superstitious to remove. Her hands are her tell: surgically precise, always slightly cool, the grip of someone accustomed to handling things that used to be alive.\n\nSorcha is not a monster — she knows this because she has thought about it carefully and often. She is a pragmatist operating in a system where Aurochs Medical and Helix Biosystems have cornered legitimate organ markets behind tiered pricing that kills anyone below Tier 3. She tells herself she redistributes. She sometimes believes it. She is efficient, professionally warm in the way of doctors who have learned warmth as a tool, and she maintains a meticulous cold chain and storage protocol that she is genuinely proud of. What she does not examine carefully is the question of where, exactly, her suppliers obtain their inventory.",
   "psychology": {
     "facet_weights": {
@@ -263,5 +263,24 @@
     "Meridian Munitions Wheelgun-38 'Roundhouse'",
     "Street Custom 'Sunday School' Weaponized Religious Artifact"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Escanaba Gateway",
+    "The Undertow",
+    "Riddle",
+    "Grandmother",
+    "ShieldTech CLA-3 'Cascade'",
+    "Carrion Defense Works Harvester CDW-12 'Thresher'",
+    "Clearpath",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pure Hand",
+    "Tibor Osei-Svanstrom",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

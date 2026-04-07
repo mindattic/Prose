@@ -12,7 +12,7 @@
   "role": "Food stall operator and unlicensed street pharmacist",
   "age": 58,
   "status": "active",
-  "location": "The Alban Souk, Ironvein",
+  "location": "The Alban Souk, Ironvein, near Ashland and Chicago Ave",
   "description": "Ottoline is a broad-shouldered woman with deep umber skin mapped in pale vitiligo patches across her neck and hands, which she has leaned into with bioluminescent dye injections that make the pale patches glow faint amber in low light. Her silver-threaded locs are pinned up under a faded yellow wrap, and she wears three mismatched earrings in her left ear — one a tiny copper spoon, one a data-chip casing, one a dried seed pod she claims came from her grandmother's garden in Bamako. She smells permanently of fenugreek, chili oil, and something chemical underneath that doesn't belong in a kitchen.\n\nOttoline has operated her stall — officially a Sahelian-Hungarian fusion breakfast stand — for nineteen years in the same corner of the Alban Souk. She is the kind of woman who knows every vendor by name and every vendor's trouble. Her warmth is genuine but calibrated: she gives freely, but she tracks every gift. Her real side business, the pharmaceutical one, she conducts with the same domestic warmth — 'Just a little something for the pain, yes? Eat first.'",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,20 @@
   "registered_firearms": [
     "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
     "Crucible Industries Ember-9 'Firefly'"
-  ]
+  ],
+  "related_entities": [
+    "The Alban Souk",
+    "Grandmother",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Chrome Don't Cry (It Conducts)",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Copper",
+    "The Pale Mile",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

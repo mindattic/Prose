@@ -13,7 +13,7 @@
   "role": "Black-market biosurgeon and underground body-modification artist",
   "age": 41,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Halsted and Division",
   "description": "Isadora Vukić-Nambiar operates out of a converted laundry unit in the lower warrens of The Shelf, where the smell of industrial solvent and antiseptic has long since soaked into the walls. She is a compact woman of Croatian-South Indian descent, with close-cropped silver hair that came in early and which she has never bothered to correct, and hands that move with the practiced economy of someone who has spent twenty years doing delicate work in poor light. Her face carries the particular stillness of a person who has learned to read rooms faster than rooms read her — broad cheekbones, dark eyes that tend to linger a beat too long, a scar along her left jaw she describes as a 'client disagreement' without elaboration.\n\nShe was once a licensed reconstructive surgeon working out of a mid-tier clinic in The Circuit, specializing in trauma repair for workers injured in the manufacturing corridors. Her license was revoked twelve years ago following an investigation she maintains was fabricated by a corporate medical supplier whose overpriced components she had publicly refused to use. Whether or not that account is entirely accurate, she has since built a second career below the licensing threshold — patching up people the official system has no interest in treating, installing augmentations that haven't cleared regulatory review, and occasionally doing work that blurs into the aesthetic and the transgressive. Her client list runs from Shelf scrappers who need a cracked bone set to mid-tier fixers wanting off-the-books neural work.\n\nIsadora does not advertise sentiment about her work, but the regulars know that her rates scale sharply with the client's apparent wealth, and that she has been known to work for nothing when she judges the need sufficient. She keeps a small dog of indeterminate breed named Suture, drinks instant coffee with the resignation of someone who remembers better, and sleeps four hours a night by choice rather than necessity.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,18 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "The Shelf",
+    "Threshold",
+    "The Scrap Barons",
+    "The Spire",
+    "The Gradient Compact",
+    "The Suture Collective",
+    "Silver",
+    "The Pure Hand",
+    "Tibor Osei-Svanstrom"
+  ],
+  "district": "The Shelf"
 }

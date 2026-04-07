@@ -12,7 +12,7 @@
   "role": "Tailor and seamstress, alteration shop owner",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave, shop called 'Second Skin' on Brewer's Spine",
+  "location": "Hamtramck Enclave, shop called 'Second Skin' on Brewer's Spine, near Western and Chicago Ave",
   "description": "Mirela is a broad-shouldered woman whose hands tell the story of forty years of needlework — knuckles thick as bolts, fingertips calloused to near-insensitivity, but still capable of threading a two-micron filament in dim light without blinking. Her silver-streaked hair is always pinned up with what appear to be decorative sticks but are actually precision seam rippers. Her skin is deep brown with reddish undertones, and she wears a pair of magnifying lenses on a chain around her neck that she raises to her eyes with theatrical gravity when inspecting a fabric flaw. She has a single cosmetic mod — color-shifting irises that she bought thirty years ago and which now cycle slowly through amber and green, a fashion relic she's never seen reason to update.\n\nMirela runs Second Skin with the authority of someone who has outlasted three landlords, two corporate rezoning attempts, and a flooding incident she still blames on Ferrogate Transit's drainage rerouting. She is blunt, even harsh, with new customers — she will tell you your measurements, your problem areas, and her honest opinion of your fashion choices without invitation — but the neighborhood considers this honesty a form of affection. She prays to the local E.L.F. she calls 'the Loom,' leaving offerings of thread spools and pattern fragments on the small shrine bolted above her cutting table.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,22 @@
   "carried_weapons": [
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Brewer's Spine",
+    "The Reclamation Authority",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Lacework Confessional",
+    "The Skinners",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Loom"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Sound sculptor and underground venue musician",
   "age": 29,
   "status": "active",
-  "location": "Hamtramck Enclave",
+  "location": "Hamtramck Enclave, near Western and Division",
   "description": "Tariku is whip-thin and restless, with deep brown skin and a shaved head except for a single long braid down the back, tipped with a small copper weight that clicks against his collar when he moves. His irises have been modded to shift color with his emotional state — not at his conscious control, which he finds embarrassing and everyone else finds fascinating. He wears the same kind of clothes every day: dark, layered, functional, pockets everywhere, usually with at least one grease stain from working on his equipment.\n\nHis art is built around infrasound — frequencies below human hearing that he mixes into otherwise ordinary music to produce physical and emotional responses in his audience: unease, euphoria, the sensation of being watched. He's passionate about this to a degree that makes him exhausting at parties, because he cannot stop talking about psychoacoustics once the subject comes up. Off that topic he's warm and self-deprecating, quick to laugh at himself, genuinely curious about other people's work. He plays three nights a week in a basement venue under a pierogi shop and spends the other nights building custom transducer rigs from salvage.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,16 @@
   ],
   "registered_firearms": [
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "TESSERA PG-2 'Signature'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Copper",
+    "Tibor Osei-Svanstrom",
+    "Ringo Corponation",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

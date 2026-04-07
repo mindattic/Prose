@@ -1,0 +1,42 @@
+{
+  "id": "e7f2a4c9d5b1083746e7f2c4a9d5b108",
+  "name": "Solenne Atelier Mirrorline Scarf",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A long drape scarf in deep obsidian with a woven Mirrorline thread that creates a faint reflective sheen — shifting from matte to luminous as the wearer moves. The fabric is woven with passive signal-dampening threads that block ambient BCI broadcast bleed, offering a narrow privacy buffer in crowded boardrooms. Width is generous enough to function as a shoulder wrap, and one end is weighted with a single cast-iron bead in a brushed bronze casing.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "Mirrorline reflective weave",
+    "signal-dampening thread",
+    "silk-analog base",
+    "cast-iron weighted bead"
+  ],
+  "functionality": "Passive BCI broadcast dampening within 30cm, Mirrorline optical shift weave, weighted drape bead.",
+  "what_it_says": "You have thought carefully about what you broadcast in a room full of people who are always listening.",
+  "worn_by": [
+    "Spire executives",
+    "corporate intelligence officers",
+    "high-tier lawyers",
+    "power brokers"
+  ],
+  "manufacturer": "Solenne Atelier",
+  "price_range": "Φ 1,800–2,400",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The signal-dampening effect is narrow but real — someone has been using these scarves to conduct conversations in open boardrooms that don't appear in the building's ambient audio logs.",
+    "The weighted bead on a particular scarf has been hollowed out and used as a dead drop container; the scarf itself has changed hands four times in six months."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "office_corporate",
+    "tier_5",
+    "scarf",
+    "accessories",
+    "privacy_fabric",
+    "BCI_dampening",
+    "spire",
+    "signal_dampening"
+  ]
+}

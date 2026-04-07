@@ -1,0 +1,43 @@
+{
+  "id": "f14d8b3a2c7e905f6d1b4a82e3c09f7d",
+  "name": "Ashmark Patchlayer Thermal Liner Vest",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A salvage-constructed quilted liner vest stitched from mismatched fabric scraps — old military surplus, transit upholstery, reclaimed insulated panels — all in muted earth tones that somehow cohere. Worn under a coat or over a shirt, it adds a full thermal zone without bulk. No brand markings; the stitching itself is the signature.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed military surplus nylon",
+    "salvaged transit seat insulation",
+    "mixed scrap cotton-analog",
+    "hand-stitched patchwork shell"
+  ],
+  "functionality": "Layered salvage insulation for core warmth; no-bulk profile for under-coat or standalone wear.",
+  "what_it_says": "You make do, and you've made do well enough that it almost looks deliberate.",
+  "worn_by": [
+    "Shelf residents",
+    "scrapyard workers",
+    "underground artists",
+    "street preachers",
+    "tunnel runners"
+  ],
+  "manufacturer": "Ashmark Street Construct — no fixed maker",
+  "price_range": "Φ8–Φ22 (trade value varies)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "One of the fabric panels is cut from a corporate uniform — the logo has been removed but the weave pattern is unmistakably Stratum Logistics.",
+    "The vest has been repaired so many times the original stitching is impossible to identify — it's effectively a different garment than it started as."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "transitional_layering",
+    "vest",
+    "thermal_liner",
+    "salvage",
+    "patchwork",
+    "tier_1",
+    "great_lakes_weather",
+    "street_made"
+  ]
+}

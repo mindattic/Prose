@@ -1,0 +1,43 @@
+{
+  "id": "b7e3c5f0d2a1864b9c7e5f3d0a2b1c68",
+  "name": "Greynode Data Fence's Full Operational Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A slim-cut technical jacket in brushed slate gray with BCI-port access panels at the collar and temples, worn over a signal-isolating turtleneck that creates a localized dead zone for passive wireless reads, slim charcoal trousers with flat-profile data-chip concealment seams, and clean white low-profile sneakers that read as office-casual. The jacket's interior is paneled with Faraday compartments sized for data storage arrays and cold-storage drives. This person could be anyone's IT contractor.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "brushed technical ripstop",
+    "signal-isolating knit turtleneck",
+    "Faraday-lined interior panels",
+    "flat-profile chip-concealment seam fabric",
+    "clean synthetic leather sneaker"
+  ],
+  "functionality": "Signal-isolating turtleneck creates a passive BCI dead zone around the wearer's neck and neural port; Faraday interior panels hold up to 12 data arrays or cold-storage drives undetectable to standard checkpoint sensors.",
+  "what_it_says": "This person knows things that are not theirs to know, and they'll sell them to whoever pays cleanest.",
+  "worn_by": [
+    "data fences",
+    "stolen IP brokers",
+    "underground information traders",
+    "corporate espionage support operatives"
+  ],
+  "manufacturer": "Greynode Technical Wear (dark market, no storefront)",
+  "price_range": "Φ 1,100–Φ 2,400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "One of the Faraday compartments contains a drive the fence agreed to hold for forty-eight hours — it's been seventy-two and the client hasn't returned.",
+    "The signal-isolating turtleneck is also blocking an emergency medical alert the wearer's implanted cardiac monitor is trying to broadcast."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld_criminal_kit",
+    "data_fence",
+    "scanner_resistant",
+    "faraday_lined",
+    "hidden_compartments",
+    "tier3",
+    "bci_compatible",
+    "information_broker"
+  ]
+}

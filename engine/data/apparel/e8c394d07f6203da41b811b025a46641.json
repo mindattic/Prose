@@ -1,0 +1,36 @@
+{
+  "id": "e8c394d07f6203da41b811b025a46641",
+  "name": "Helion Manufacturing High-Voltage Insulation Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A full-body suit made from layered dielectric rubber over an inner comfort shell, rated for live-line work on electrical systems up to 500kV. The suit creates a complete insulation envelope — the wearer can touch energized conductors without current passing through their body. Mandatory testing before every use.\n\nLive-line electrical work is among the most dangerous occupations in Meridian 88. The insulation suit makes it possible; it does not make it safe. Every suit carries a testing log, and workers who discover a failed test during pre-work checks owe their lives to the three minutes they spent verifying their equipment.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "layered dielectric rubber",
+    "inner comfort shell",
+    "sealed joint boots"
+  ],
+  "functionality": "500kV electrical insulation, full-body dielectric barrier, mandatory test ports",
+  "what_it_says": "You touch things that carry enough electricity to vaporize metal, and this rubber is why you're still solid.",
+  "worn_by": [
+    "live-line electrical workers",
+    "high-voltage technicians",
+    "power grid maintenance"
+  ],
+  "manufacturer": "Helion Manufacturing",
+  "price_range": "Φ2,800",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A High-Voltage Insulation Suit passes its pre-work test but fails catastrophically in the field — forensic analysis reveals the dielectric layer was degraded by a solvent that evaporates without trace after application."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 2",
+    "electrical",
+    "insulation",
+    "high-voltage",
+    "industrial"
+  ]
+}

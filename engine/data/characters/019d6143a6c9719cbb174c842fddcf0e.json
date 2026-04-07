@@ -13,7 +13,7 @@
   "role": "Corporate Compliance Archivist (former) / Whistleblower-in-Exile",
   "age": 58,
   "status": "active",
-  "location": "The Meridian Core (surface-level administrative district, outer ring)",
+  "location": "The Meridian Core (surface-level administrative district, outer ring), near State and Monroe",
   "description": "Seraphine is a tall, angular Haitian-French woman with silver locs pulled back with administrative precision and reading glasses she refuses to augment away because, as she puts it, she earned the need for them. Her face holds the particular expression of someone who has spent decades being the most competent person in rooms that refused to acknowledge it—a kind of burnished patience that occasionally cracks into something sharper and much less forgiving. She wears corporate-adjacent clothing, clean and structured, in the greys and navies that make people in The Meridian Core assume she belongs there.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,15 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "The Shelf",
+    "SERAPHINE//NULL",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "ARCHIVE",
+    "Silver"
+  ],
+  "district": "Meridian Core"
 }

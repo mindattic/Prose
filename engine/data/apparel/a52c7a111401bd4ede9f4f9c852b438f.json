@@ -1,0 +1,36 @@
+{
+  "id": "a52c7a111401bd4ede9f4f9c852b438f",
+  "name": "Solace Medical Compression Therapy Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Graduated-compression gloves that apply precise, varying pressure across the hand and fingers to manage swelling, improve circulation, and reduce pain in arthritic or post-surgical joints. Smart-fabric elements adjust compression in real time based on embedded swelling sensors.\n\nWorn by aging workers whose hands have been destroyed by decades of manual labor, by augmentation patients managing rejection symptoms, and by anyone whose hands hurt and who can't afford to stop using them.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "graduated-compression fabric",
+    "swelling sensors",
+    "smart-fabric adjustment zones"
+  ],
+  "functionality": "Dynamic compression therapy, swelling management, pain reduction",
+  "what_it_says": "Your hands are broken in ways that won't heal, but you still need them to work tomorrow.",
+  "worn_by": [
+    "aging workers",
+    "augmentation rejection patients",
+    "chronic pain sufferers"
+  ],
+  "manufacturer": "Solace Medical",
+  "price_range": "Φ280",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A factory worker's Compression Therapy Gloves reveal abnormal swelling data patterns that don't match arthritis — something in the factory is causing a new kind of hand damage that no one has identified yet."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 2",
+    "medical",
+    "compression",
+    "therapy",
+    "chronic pain"
+  ]
+}

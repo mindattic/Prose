@@ -12,7 +12,7 @@
   "role": "Target acquisition and fugitive recovery — bounty hunter",
   "age": 36,
   "status": "active",
-  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Pulaski and Chicago Ave",
   "description": "Davor Hedberg-Owusu-Ansah is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 36, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a bounty hunter out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,11 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "Meridian 88",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

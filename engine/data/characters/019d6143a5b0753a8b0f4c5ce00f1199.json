@@ -12,7 +12,7 @@
   "role": "Barber and braider, runs a one-chair shop in Hamtramck Enclave",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave — her shop, Scalp Meridian, is wedged between a dumpling stall and a prayer-data kiosk on Volt Street",
+  "location": "Hamtramck Enclave — her shop, Scalp Meridian, is wedged between a dumpling stall and a prayer-data kiosk on Volt Street, near Western and Division",
   "description": "Ambrosia is a broad-shouldered woman with hands that move like water — fast, precise, never wasted. Her skin is deep brown with a warm undertone, and she keeps her own hair in an elaborate crown of interlocked locs threaded with copper wire and small LED beads that pulse amber when she's working. She has a tattoo of a scissors-and-comb motif along her left forearm that she got at nineteen from a street artist in what used to be called Nairobi before the Corponation Accords. Her eyes are the grey-green of old lake glass, an inheritance from her Hungarian grandmother whose name she barely remembers.\n\nShe is patient in the way that only people who have survived a lot of nonsense can be patient — a deep, deliberate stillness that makes customers feel held. She will not rush a cut, will not shortchange a scalp massage, will not tolerate disrespect in her chair. She talks constantly while she works, a warm river of local gossip, neighborhood history, and unsolicited wisdom that customers either love or eventually learn to love. She has cut the hair of three generations of some Hamtramck families and considers this her real legacy.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,23 @@
   ],
   "registered_firearms": [
     "Tessera TK-9 Proteus 'Shapeshifter'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Grandmother",
+    "Petra Glass",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Tessera Corponation",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "The Pure Hand",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial",
+    "Static",
+    "Glass",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

@@ -1,0 +1,41 @@
+{
+  "id": "7d1e4a8c3b2f09567e3c1d4a8b0f2e56",
+  "name": "Crucible ThermoSleeve Chrome Liner — Pair",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Neoprene-analog sleeves lined with graphene heating filaments, designed to wrap chrome arm augmentations and prevent dangerous thermal transfer in sub-zero conditions. Sold in pairs, they cinch with magnetic closures directly over exposed chrome without requiring skin contact. Available in matte black or safety orange.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "neoprene-analog composite",
+    "graphene heating filament",
+    "magnetic cinch hardware",
+    "thermal reflective lining"
+  ],
+  "functionality": "Maintains chrome augmentation temperature above dangerous cold thresholds; USB-C charge port on left sleeve powers heating element for up to 10 hours.",
+  "what_it_says": "This person has chrome and knows how to keep it from killing them — practical, no-nonsense aug maintenance.",
+  "worn_by": [
+    "factory workers with arm augments",
+    "transit operators",
+    "chrome-armed laborers",
+    "augmented street vendors"
+  ],
+  "manufacturer": "Crucible ForgeFloor Accessories",
+  "price_range": "Φ55–Φ80 per pair",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The heating element on one sleeve runs hot — dangerously hot — and someone has scratched a warning glyph into the cinch in Yoruba script.",
+    "A Circuit worker's chrome sleeve liner is the only thing keeping frostbite from setting into the nerve interface points at the wrist."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "winter_heavy",
+    "tier2",
+    "aug_compatible",
+    "chrome_protection",
+    "sleeve",
+    "thermal",
+    "crucible"
+  ]
+}

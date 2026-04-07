@@ -1,0 +1,40 @@
+{
+  "id": "a3f7c2e1b509d4a86c0e3f1d7b2a9c54",
+  "name": "Crucible Genomics BioSec Full Tactical Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Deep viridian and bone-white hard-shell armor over adaptive bioweave fatigues, marked with Crucible's double-helix sigil in bioluminescent jade across the chest plate and helmet. The full-face respirator helmet integrates gene-scan optics and airborne pathogen filters rated for Level-4 containment breaches. Load-bearing vest carries specimen containment pouches, breach charges, and a corded med-injector rail. Boots are sealed biosafe rubber over composite toe, chemical-resistant to Crucible's own experimental compounds.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "hard-shell polycarbonate armor",
+    "adaptive bioweave fatigues",
+    "biosafe vulcanized rubber",
+    "ceramic composite plating",
+    "bioluminescent ink markers"
+  ],
+  "functionality": "Provides Level-4 pathogen containment, gene-scan HUD integration, and chemical resistance rated for Crucible laboratory breach scenarios.",
+  "what_it_says": "You are Crucible's property first, a soldier second — deployed to protect assets that bleed profit.",
+  "worn_by": [
+    "Crucible Genomics BioSec operatives",
+    "gene-lab breach response teams",
+    "facility containment squads"
+  ],
+  "manufacturer": "Crucible Genomics Internal Procurement Division",
+  "price_range": "Φ 4,200–Φ 6,800 (issued, not sold)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A BioSec operative's helmet gene-scanner flags a civilian as an escaped proprietary geneline — someone is walking around with Crucible IP written into their DNA.",
+    "The kit's containment pouches hold something that isn't a specimen — it's a keycard and a handwritten note."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "military_corpsec_kit",
+    "crucible_genomics",
+    "biosec",
+    "tactical",
+    "containment",
+    "corp_issued"
+  ]
+}

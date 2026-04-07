@@ -11,7 +11,7 @@
   "role": "Ferrogate Transit operator (tram line, elevated routes)",
   "age": 41,
   "status": "active",
-  "location": "Based out of the Kessler Interchange operator depot; runs the elevated Kessler-to-Ironvein route daily",
+  "location": "Based out of the Kessler Interchange operator depot; runs the elevated Kessler-to-Ironvein route daily, near Milwaukee and North Ave",
   "description": "Dagny is solidly built, the kind of person who takes up space with complete comfort and no aggression. Their skin is a warm medium brown, kept clear with the obsessive skincare routine of someone who spends twelve hours a day under artificial light. They have a shaved head except for a wide stripe of deep blue hair — color-changing geneware that shifts to violet under emotional stress, which is inconvenient in an argument. Their eyes are light amber, patterned with concentric rings — another mod, older, cheaper, and slightly irregular in a way that gives people pause before they realize what they're looking at. They wear their Ferrogate operator uniform with the precise fit of someone who has strong opinions about how a uniform should sit.\n\nDagny has the specific psychological profile of someone who chose a job requiring total situational control and excellent in the role. They are calm during crises in a way that frightens some people — not cold, but genuinely stilled, operating on a different clock. Off the tram, they are warmer and more sardonic than their professional face suggests, with a dry wit that takes a moment to register and then lands fully. They have worked the Kessler-Ironvein route for nine years and know it the way you know a body — its rhythms, its problems, the spots where it gets strange after midnight.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,14 @@
   "registered_firearms": [
     "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Ironvein",
+    "Pellucid Systems",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

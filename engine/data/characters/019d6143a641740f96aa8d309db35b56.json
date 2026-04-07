@@ -12,7 +12,7 @@
   "role": "Personal security and threat neutralization — bodyguard",
   "age": 24,
   "status": "active",
-  "location": "The Canopy — elevated walkway district above Geartown",
+  "location": "The Canopy — elevated walkway district above Geartown, near Clark and Belmont",
   "description": "Kenji Chen-Adeyemi are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 24, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a bodyguard out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Kenji Chen-Adeyemi are one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
@@ -277,5 +277,15 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Canopy Station Nine",
+    "Geartown",
+    "Kel Adeyemi-Strand",
+    "Pellucid Systems",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Laceworks"
 }

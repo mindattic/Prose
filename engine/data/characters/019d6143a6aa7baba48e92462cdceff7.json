@@ -12,7 +12,7 @@
   "role": "Bio-waste disposal technician, independent contractor",
   "age": 41,
   "status": "active",
-  "location": "Deepwell Station — lives in McKinley Flats in a modest building with structural damp he has stopped reporting",
+  "location": "Deepwell Station — lives in McKinley Flats in a modest building with structural damp he has stopped reporting, near sub-level access near Dearborn and Jackson",
   "description": "Rafał is thickset and weathered, with the specific bodily competence of someone who lifts heavy things in bad conditions for a living. His skin is mid-brown and perpetually flushed, his hair a faded reddish-brown that he keeps pulled back under a work cap. He smells, faintly and always, of the disinfectant compounds used in medical waste processing — a smell that precedes him and that he no longer notices at all, though those around him do. He has a single geneware modification: a gene-tweaked set of enhanced scent glands that he had installed for purely practical reasons (early detection of dangerous biological contamination), which has the side effect of making him an uncommonly attentive reader of a room's emotional atmosphere in ways he cannot fully articulate but acts on instinctively.\n\nRafał has been collecting the city's biological refuse for sixteen years. He moves through Meridian 88's medical ecosystem like a shadow — present at every clinic, every hospital loading bay, every back-alley surgical setup, invisible and indispensable. He has seen things disposed of that should have been reported. He has seen labels that don't match contents. He has seen waste streams from addresses that don't appear in any city directory. He is not, by temperament, an activist or an investigator. He is a man who goes to work, comes home, watches old footage of Polish basketball leagues that no longer exist, and tries not to think too hard about what he has seen. He is not entirely successful at this.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,14 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "McKinley Flats",
+    "Unregistered",
+    "The Narrows Compact",
+    "Meridian 88",
+    "TESSERA PA-5 'Attendant'"
+  ],
+  "district": "The Underworld"
 }

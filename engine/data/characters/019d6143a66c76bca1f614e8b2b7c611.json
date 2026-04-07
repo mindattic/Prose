@@ -12,7 +12,7 @@
   "role": "Drug manufacturer and street pharmacist, The Undertow",
   "age": 28,
   "status": "active",
-  "location": "The Undertow — a converted water treatment sub-chamber they call the Flask",
+  "location": "The Undertow — a converted water treatment sub-chamber they call the Flask, near Damen and Armitage",
   "description": "Nneka is slight and angular, with the permanently shadowed eyes of someone who keeps laboratory hours — which is to say, no hours, sleep when the synthesis is stable. Their heritage is Igbo-Armenian, and their face has an intensity to it that isn't hostility but gets mistaken for it: large dark eyes behind a pair of magnifying lenses they wear on a headband, a wide expressive mouth usually pressed thin in concentration, skin a deep warm brown that they've given a bioluminescent modification — faint golden foxfire patterns across their collarbones and upper arms, only visible in dim light, which The Undertow provides abundantly. Their fingers are stained at the knuckles with reagents in colors that shift week to week.\n\nThey are not a dealer. They are very clear about this distinction. They make things; other people move things. What Nneka makes ranges from the genuinely helpful — analgesic compounds that cost a fraction of the Axiom pharmacy prices, fertility medications, neurological stabilizers for people who can't afford Helix Biosystems prescriptions — to the profitable and gray, to a small and carefully managed line of perceptual enhancers they consider art. They have a code that they apply inconsistently and argue about with themselves constantly: they won't make anything they'd be ashamed to explain to their grandmother. Their grandmother, as far as anyone who knows Nneka can tell, would be ashamed of some things and approving of others, in no obvious pattern.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,16 @@
   "carried_weapons": [
     "Street Custom 'Tombstone' Concrete Block Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Undertow",
+    "Grandmother",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "The Heritage Vault",
+    "Foxfire",
+    "Carrion Defense Works",
+    "Pellucid Systems"
+  ],
+  "district": "The Underworld"
 }
