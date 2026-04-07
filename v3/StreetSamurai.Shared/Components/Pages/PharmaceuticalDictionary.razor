@@ -13,7 +13,6 @@
                 <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
             </div>
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Pharmaceuticals" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
@@ -30,35 +29,34 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(isNew ? "New Pharmaceutical" : editing.Name)</h5>
-                <div class="d-flex gap-2">
+            <EditViewToggle RepoName="pharmaceuticals" Title="@(isNew ? "New Pharmaceutical" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Pharmaceuticals" EntryName="@editing.Name" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
                     @if (confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmDelete = false">No</button> }
-                </div>
-            </div>
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 2; min-width: 200px;"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
-                <div style="flex: 1; min-width: 120px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
-                <div style="flex: 1; min-width: 120px;"><div class="field-label">Subcategory</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Subcategory" /></div>
-            </div>
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 1; min-width: 150px;"><div class="field-label">Manufacturer</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Manufacturer" /></div>
-                <div style="flex: 1; min-width: 120px;"><div class="field-label">Method of Use</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.MethodOfUse" /></div>
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">Duration</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Duration" /></div>
-            </div>
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">Addiction Risk</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.AddictionRisk" /></div>
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">Legality</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Legality" /></div>
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">Tier</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TierAvailability" /></div>
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">Street Price</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.StreetPrice" /></div>
-            </div>
-            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="3" @bind="editing.Description"></textarea></div>
-            <div class="mb-3"><div class="field-label">Cultural Context</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.CulturalContext"></textarea></div>
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 2; min-width: 200px;"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Subcategory</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Subcategory" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 150px;"><div class="field-label">Manufacturer</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Manufacturer" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Method of Use</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.MethodOfUse" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Duration</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Duration" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Addiction Risk</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.AddictionRisk" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Legality</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Legality" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Tier</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TierAvailability" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Street Price</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.StreetPrice" /></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="3" @bind="editing.Description"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Cultural Context</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.CulturalContext"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
         }
-            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
         else
         {
             <div class="text-center text-muted py-5"><i class="bi bi-capsule" style="font-size:3rem;"></i><p class="mt-2">Select a substance or create a new one.</p></div>
@@ -91,7 +89,6 @@
     private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing != null) { Repo.Delete(editing.Name); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
-    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
 }

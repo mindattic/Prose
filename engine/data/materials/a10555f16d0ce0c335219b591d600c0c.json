@@ -1,0 +1,35 @@
+{
+  "id": "a10555f16d0ce0c335219b591d600c0c",
+  "name": "Slate",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "roofing slate"
+  ],
+  "category": "natural",
+  "description": "A fine-grained metamorphic rock that cleaves into thin, flat sheets. Slate roofing can last centuries and remains popular in Tier 3-4 heritage districts. Its non-porous surface and chemical resistance also make it useful for laboratory benchtops and electrical switchboard panels.",
+  "properties": [
+    "cleaves_into_sheets",
+    "non_porous",
+    "chemical_resistant",
+    "fireproof"
+  ],
+  "developers": [],
+  "applications": [
+    "roofing",
+    "laboratory benchtops",
+    "pool table surfaces",
+    "switchboard panels"
+  ],
+  "tier_availability": "Tier 2-4",
+  "cost": "Φ 8 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "natural",
+    "stone",
+    "natural"
+  ]
+}

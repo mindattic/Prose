@@ -1,0 +1,40 @@
+{
+  "id": "132b2e1bc3e6a71020f94dee63d86bf6",
+  "name": "Thermoelectric Material",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "Peltier material",
+    "bismuth telluride",
+    "TE material"
+  ],
+  "category": "advanced",
+  "description": "Materials that convert temperature differences directly into electricity (and vice versa). Thermoelectric generators recover waste heat from engines, industrial processes, and even body heat. Thermoelectric coolers provide silent, vibration-free refrigeration for sensitive electronics and medical samples.",
+  "properties": [
+    "heat_to_electricity",
+    "solid_state",
+    "no_moving_parts",
+    "reversible",
+    "quiet"
+  ],
+  "developers": [],
+  "applications": [
+    "waste heat recovery",
+    "solid-state cooling",
+    "body heat harvesting",
+    "sensor power",
+    "space power"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 40 per module",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "energy",
+    "thermal"
+  ]
+}

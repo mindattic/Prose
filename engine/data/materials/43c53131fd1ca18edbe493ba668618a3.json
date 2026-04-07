@@ -1,0 +1,43 @@
+{
+  "id": "43c53131fd1ca18edbe493ba668618a3",
+  "name": "Room-Temperature Superconductor",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "RTS",
+    "ambient superconductor",
+    "LK-99 successor"
+  ],
+  "category": "future",
+  "description": "A ceramic compound that conducts electricity with zero resistance at room temperature and atmospheric pressure. The holy grail of materials science, finally achieved in 2147 after a century of false starts. RTS wire carries power without loss, enables compact fusion magnets, and powers the maglev networks that connect major cities.",
+  "properties": [
+    "zero_electrical_resistance",
+    "magnetic_levitation",
+    "room_temperature",
+    "ceramic_based",
+    "brittle"
+  ],
+  "developers": [
+    "Zurich Federal Materials Institute"
+  ],
+  "applications": [
+    "lossless power transmission",
+    "maglev systems",
+    "fusion magnets",
+    "MRI machines",
+    "quantum computers"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 5,000 per meter of wire",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "superconductor",
+    "energy",
+    "restricted"
+  ]
+}

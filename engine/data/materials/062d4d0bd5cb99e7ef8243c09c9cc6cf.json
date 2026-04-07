@@ -1,0 +1,38 @@
+{
+  "id": "062d4d0bd5cb99e7ef8243c09c9cc6cf",
+  "name": "Natural Rubber",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "latex",
+    "caoutchouc",
+    "gum rubber"
+  ],
+  "category": "natural",
+  "description": "Harvested from plantation-grown Hevea trees, natural rubber still outperforms synthetics in certain applications requiring high elasticity and tear resistance. Tires, seals, and vibration mounts for sensitive equipment use natural rubber compounds. Synthetic alternatives dominate volume, but natural rubber commands a premium for performance applications.",
+  "properties": [
+    "highly_elastic",
+    "tear_resistant",
+    "vibration_damping",
+    "waterproof"
+  ],
+  "developers": [],
+  "applications": [
+    "high-performance tires",
+    "vibration mounts",
+    "surgical gloves",
+    "elastic seals"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 4 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "natural",
+    "natural",
+    "elastic",
+    "organic"
+  ]
+}

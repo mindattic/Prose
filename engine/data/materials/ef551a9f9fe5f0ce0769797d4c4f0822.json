@@ -1,0 +1,40 @@
+{
+  "id": "ef551a9f9fe5f0ce0769797d4c4f0822",
+  "name": "Glass",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "soda-lime glass",
+    "silicate glass",
+    "float glass"
+  ],
+  "category": "natural",
+  "description": "Molten sand cooled into transparency. Glass technology has advanced enormously — self-cleaning coatings, electrochromic tinting, embedded photovoltaics — but the base material remains fundamentally the same silicate composition used for millennia. Every tier uses glass; only the coatings and treatments change with budget.",
+  "properties": [
+    "transparent",
+    "hard",
+    "brittle",
+    "recyclable",
+    "chemically_inert"
+  ],
+  "developers": [],
+  "applications": [
+    "windows",
+    "display screens",
+    "laboratory equipment",
+    "fiber optics",
+    "containers"
+  ],
+  "tier_availability": "Tier 1-5",
+  "cost": "Φ 1 per sq meter (basic)",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "natural",
+    "natural",
+    "common",
+    "transparent"
+  ]
+}

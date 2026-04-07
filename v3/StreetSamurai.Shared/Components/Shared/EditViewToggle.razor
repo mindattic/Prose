@@ -1,0 +1,43 @@
+@* Wraps editor content with a read-only/edit toggle.
+   In read-only mode (default), shows EntryViewer with beautifully formatted content.
+   In edit mode, shows the child content (form fields).
+   State persists per-repo across navigation. *@
+
+<div class="d-flex align-items-center gap-2 mb-3 border-bottom border-secondary pb-2">
+    <h5 class="text-danger mb-0 flex-grow-1">@Title</h5>
+    <div class="d-flex align-items-center gap-2">
+        @HeaderButtons
+        <div class="form-check form-switch mb-0 ms-2">
+            <input class="form-check-input" type="checkbox" id="editToggle_@RepoName" checked="@editMode" @onchange="Toggle" />
+            <label class="form-check-label text-muted" style="font-size:0.75rem;" for="editToggle_@RepoName">Edit</label>
+        </div>
+    </div>
+</div>
+
+@if (editMode)
+{
+    @ChildContent
+}
+else
+{
+    <EntryViewer Json="@Json" />
+}
+
+@code {
+    [Parameter] public string RepoName { get; set; } = "";
+    [Parameter] public string Title { get; set; } = "";
+    [Parameter] public string? Json { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public RenderFragment? HeaderButtons { get; set; }
+    [Inject] private ViewModeService ViewMode { get; set; } = default!;
+
+    private bool editMode;
+
+    protected override void OnInitialized() => editMode = ViewMode.IsEditMode(RepoName);
+
+    private void Toggle()
+    {
+        editMode = !editMode;
+        ViewMode.SetEditMode(RepoName, editMode);
+    }
+}

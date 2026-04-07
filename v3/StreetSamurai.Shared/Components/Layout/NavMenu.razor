@@ -11,7 +11,7 @@
 @inject QuoteRepository QuoteRepo
 @inject ConsumerGoodRepository GoodsRepo
 @inject PharmaceuticalRepository PharmaRepo
-@inject SubstrateRepository SubstrateRepo
+@inject MaterialRepository MaterialRepo
 @inject ContractRepository ContractRepo
 @inject NewsRepository NewsRepo
 @inject ArchetypeRepository ArchetypeRepo
@@ -22,6 +22,7 @@
 @inject AutomatonRepository AutomatonRepo
 @inject ApparelRepository ApparelRepo
 @inject EntertainmentRepository EntertainmentRepo
+@inject SubsidiaryRepository SubsidiaryRepo
 @inject WorldGraphService GraphSvc
 @inject NavigationManager Nav
 
@@ -81,7 +82,8 @@
         @NavItem("bi-capsule", "pharmaceuticals", "Pharmaceuticals", _pharmaCount)
         @NavItem("bi-geo-alt", "places", "Places", _districtCount)
         @NavItem("bi-quote", "quotes", "Quotes", _quoteCount)
-        @NavItem("bi-gem", "substrates", "Substrates", _substrateCount)
+        @NavItem("bi-gem", "materials", "Materials", _materialCount)
+        @NavItem("bi-diagram-3", "subsidiaries", "Subsidiaries", _subsidiaryCount)
         @NavItem("bi-cpu", "synthetics", "Synthetics", _synthCount)
         @NavItem("bi-cpu", "technology", "Technology", _techCount)
         @NavItem("bi-truck", "transportation", "Transportation", _transportCount)
@@ -109,7 +111,7 @@
 </nav>
 
 @code {
-    private int corpCount, _factionCount, _charCount, _districtCount, _techCount, _weaponCount, _ammoCount, _equipCount, _cyberwareCount, _docCount, _vocabCount, _quoteCount, _goodsCount, _pharmaCount, _substrateCount, _contractCount, _newsCount, _archetypeCount, _synthCount, _genewareCount, _transportCount, _automataCount, _apparelCount, _entertainmentCount, _graphNodeCount;
+    private int corpCount, _factionCount, _charCount, _districtCount, _techCount, _weaponCount, _ammoCount, _equipCount, _cyberwareCount, _docCount, _vocabCount, _quoteCount, _goodsCount, _pharmaCount, _materialCount, _contractCount, _newsCount, _archetypeCount, _synthCount, _genewareCount, _transportCount, _automataCount, _apparelCount, _entertainmentCount, _subsidiaryCount, _graphNodeCount;
 
     protected override void OnInitialized()
     {
@@ -127,7 +129,7 @@
         _quoteCount = QuoteRepo.GetAll().Count;
         _goodsCount = GoodsRepo.GetAll().Count;
         _pharmaCount = PharmaRepo.GetAll().Count;
-        _substrateCount = SubstrateRepo.GetAll().Count;
+        _materialCount = MaterialRepo.GetAll().Count;
         _contractCount = ContractRepo.GetAll().Count;
         _newsCount = NewsRepo.GetAll().Count;
         _archetypeCount = ArchetypeRepo.GetAll().Count;
@@ -137,6 +139,7 @@
         _automataCount = AutomatonRepo.GetAll().Count;
         _apparelCount = ApparelRepo.GetAll().Count;
         _entertainmentCount = EntertainmentRepo.GetAll().Count;
+        _subsidiaryCount = SubsidiaryRepo.GetAll().Count;
         GraphSvc.EnsureLoaded();
         _graphNodeCount = GraphSvc.NodeCount;
     }

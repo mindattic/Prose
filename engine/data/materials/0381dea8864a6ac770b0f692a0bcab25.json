@@ -1,0 +1,41 @@
+{
+  "id": "0381dea8864a6ac770b0f692a0bcab25",
+  "name": "Sound-Dampening Alloy",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "silence metal",
+    "vibration-dead alloy",
+    "hush steel"
+  ],
+  "category": "luxury",
+  "description": "A manganese-copper alloy with internal damping capacity orders of magnitude greater than steel. Objects made from this alloy absorb vibration instantly — tap a sound-dampening alloy bell and hear nothing. Used in luxury buildings for structural silence, in submarine components, and in precision instruments where vibration is the enemy.",
+  "properties": [
+    "extreme_vibration_damping",
+    "acoustic_dead",
+    "structural_strength",
+    "expensive"
+  ],
+  "developers": [
+    "Kuroda Materials Science"
+  ],
+  "applications": [
+    "luxury building structures",
+    "submarine components",
+    "precision instruments",
+    "recording studios"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 180 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "luxury",
+    "luxury",
+    "metal",
+    "acoustic",
+    "stealth"
+  ]
+}

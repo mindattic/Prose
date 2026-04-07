@@ -1,0 +1,47 @@
+{
+  "id": "d931e2c0b69fd97edbcdbc2a8111c244",
+  "name": "Metamaterial Fabric",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "cloaking cloth",
+    "invisibility fabric",
+    "EM-bending textile"
+  ],
+  "category": "luxury",
+  "description": "A flexible textile woven with metamaterial fibers that bend electromagnetic radiation around the wearer. Military versions operate across radar and thermal bands. Civilian luxury versions create shimmering visual distortion effects for fashion. True optical-band invisibility remains imperfect — the wearer appears as a subtle heat-shimmer distortion rather than truly invisible.",
+  "properties": [
+    "EM_bending",
+    "flexible",
+    "fashion_forward",
+    "imperfect_invisibility",
+    "expensive"
+  ],
+  "developers": [
+    "OmniShield Defense",
+    "Kuroda Materials Science"
+  ],
+  "applications": [
+    "military concealment",
+    "fashion statements",
+    "privacy garments",
+    "stage performance",
+    "art"
+  ],
+  "tier_availability": "Tier 5",
+  "cost": "Φ 8,000 per sq meter",
+  "story_hooks": [
+    "A stolen bolt of metamaterial fabric has appeared on the black market. The military wants it back; a fashion house wants to buy it; a Tier 1 resistance group plans to use it for an infiltration."
+  ],
+  "tags": [
+    "substrate",
+    "material",
+    "luxury",
+    "luxury",
+    "textile",
+    "stealth",
+    "fashion",
+    "restricted"
+  ]
+}

@@ -13,7 +13,6 @@
                 <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
             </div>
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Synthetics" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
@@ -31,64 +30,62 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(isNew ? "New Synthetic Life" : editing.Name)</h5>
-                <div class="d-flex gap-2">
+            <EditViewToggle RepoName="synthetics" Title="@(isNew ? "New Synthetic Life" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Synthetics" EntryName="@editing.Name" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
                     @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
                     @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
-                </div>
-            </div>
-
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 2; min-width: 200px;"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
-                <div style="flex: 1; min-width: 120px;"><div class="field-label">Classification</div>
-                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Classification">
-                        <option value="E.L.F. (Electronic Life Form)">E.L.F.</option>
-                        <option value="Rogue AI — Fragment">Fragment</option>
-                        <option value="Rogue AI — Stray">Stray</option>
-                        <option value="Rogue AI — Prowler">Prowler</option>
-                        <option value="Rogue AI — Leviathan">Leviathan</option>
-                        <option value="Supermind">Supermind</option>
-                    </select>
-                </div>
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">Status</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Status" /></div>
-            </div>
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 1; min-width: 120px;"><div class="field-label">Disposition</div>
-                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Disposition">
-                        <option value="brownie">Brownie</option>
-                        <option value="gremlin">Gremlin</option>
-                        <option value="trickster">Trickster</option>
-                        <option value="echo">Echo</option>
-                        <option value="wisp">Wisp</option>
-                        <option value="predator">Predator</option>
-                        <option value="neutral">Neutral</option>
-                    </select>
-                </div>
-                <div style="flex: 1; min-width: 120px;"><div class="field-label">Habitat</div>
-                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Habitat">
-                        <option value="chrome_dweller">Chrome Dweller</option>
-                        <option value="network_sprite">Network Sprite</option>
-                        <option value="wallet_whisper">Wallet Whisper</option>
-                        <option value="threshold_keeper">Threshold Keeper</option>
-                        <option value="void_swimmer">Void Swimmer</option>
-                        <option value="distributed">Distributed</option>
-                    </select>
-                </div>
-                <div style="flex: 1; min-width: 120px;"><div class="field-label">Origin</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Origin" /></div>
-            </div>
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">DTI Rating</div><input type="number" step="0.1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.DtiRating" /></div>
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">Encounter Frequency</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.EncounterFrequency" /></div>
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">Confirmed Sightings</div><input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ConfirmedSightings" /></div>
-            </div>
-            <div class="mb-3"><div class="field-label">Location</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Location" /></div>
-            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="4" @bind="editing.Description"></textarea></div>
-            <div class="mb-3"><div class="field-label">Observed Behavior</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="3" @bind="editing.ObservedBehavior"></textarea></div>
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 2; min-width: 200px;"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Classification</div>
+                            <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Classification">
+                                <option value="E.L.F. (Electronic Life Form)">E.L.F.</option>
+                                <option value="Rogue AI — Fragment">Fragment</option>
+                                <option value="Rogue AI — Stray">Stray</option>
+                                <option value="Rogue AI — Prowler">Prowler</option>
+                                <option value="Rogue AI — Leviathan">Leviathan</option>
+                                <option value="Supermind">Supermind</option>
+                            </select>
+                        </div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Status</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Status" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Disposition</div>
+                            <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Disposition">
+                                <option value="brownie">Brownie</option>
+                                <option value="gremlin">Gremlin</option>
+                                <option value="trickster">Trickster</option>
+                                <option value="echo">Echo</option>
+                                <option value="wisp">Wisp</option>
+                                <option value="predator">Predator</option>
+                                <option value="neutral">Neutral</option>
+                            </select>
+                        </div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Habitat</div>
+                            <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Habitat">
+                                <option value="chrome_dweller">Chrome Dweller</option>
+                                <option value="network_sprite">Network Sprite</option>
+                                <option value="wallet_whisper">Wallet Whisper</option>
+                                <option value="threshold_keeper">Threshold Keeper</option>
+                                <option value="void_swimmer">Void Swimmer</option>
+                                <option value="distributed">Distributed</option>
+                            </select>
+                        </div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Origin</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Origin" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">DTI Rating</div><input type="number" step="0.1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.DtiRating" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Encounter Frequency</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.EncounterFrequency" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Confirmed Sightings</div><input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ConfirmedSightings" /></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Location</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Location" /></div>
+                    <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="4" @bind="editing.Description"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Observed Behavior</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="3" @bind="editing.ObservedBehavior"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
         }
-            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
         else
         {
             <div class="text-center text-muted py-5"><i class="bi bi-cpu" style="font-size:3rem;"></i><p class="mt-2">Select a synthetic life form or create a new one.</p></div>
@@ -126,5 +123,4 @@
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
-    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

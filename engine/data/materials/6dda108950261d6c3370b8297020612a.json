@@ -1,0 +1,43 @@
+{
+  "id": "6dda108950261d6c3370b8297020612a",
+  "name": "Nanofiber Wound Dressing",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "smart bandage",
+    "nano-gauze",
+    "healing mesh"
+  ],
+  "category": "future",
+  "description": "An electrospun nanofiber mesh that accelerates wound healing by delivering growth factors, maintaining optimal moisture, and electrically stimulating tissue regeneration. The dressing monitors healing progress through embedded sensors and changes color to indicate infection. Standard in Tier 2+ medical kits.",
+  "properties": [
+    "accelerates_healing",
+    "sensor_equipped",
+    "drug_delivering",
+    "infection_indicating",
+    "biodegradable"
+  ],
+  "developers": [
+    "NeuroVault BioSystems"
+  ],
+  "applications": [
+    "wound care",
+    "surgical recovery",
+    "burn treatment",
+    "chronic wound management",
+    "field medicine"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 15 per dressing",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "medical",
+    "nano",
+    "bio"
+  ]
+}

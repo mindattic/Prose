@@ -49,7 +49,8 @@ function applyFilters() {
     var entries = document.querySelectorAll('.entry');
     var visible = 0;
     entries.forEach(function(e) {
-        var textMatch = q.length === 0 || e.textContent.toLowerCase().indexOf(q) !== -1;
+        var entryName = (e.getAttribute('data-name') || '').toLowerCase();
+        var textMatch = q.length === 0 || entryName.indexOf(q) !== -1;
         var tagMatch = true;
         if (activeTags.size > 0) {
             var entryTags = (e.getAttribute('data-tags') || '').split(',').filter(Boolean);

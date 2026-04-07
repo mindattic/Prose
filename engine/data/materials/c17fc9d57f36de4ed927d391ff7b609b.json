@@ -1,0 +1,42 @@
+{
+  "id": "c17fc9d57f36de4ed927d391ff7b609b",
+  "name": "Quantum-Locked Crystal",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "QLC",
+    "flux-pinned crystal",
+    "quantum anchor"
+  ],
+  "category": "future",
+  "description": "Superconducting crystals that lock into position relative to a magnetic field through quantum flux pinning. Once placed, a QLC object remains fixed in space regardless of external forces up to its critical threshold. Used in frictionless bearings, vibration-free platforms, and the dramatic floating architecture of Tier 5 districts.",
+  "properties": [
+    "flux_pinned",
+    "frictionless",
+    "position_locked",
+    "superconducting",
+    "requires_magnetic_field"
+  ],
+  "developers": [
+    "Proteus Quantum Materials"
+  ],
+  "applications": [
+    "frictionless bearings",
+    "floating architecture",
+    "vibration isolation",
+    "inertial reference systems"
+  ],
+  "tier_availability": "Tier 5",
+  "cost": "Φ 8,000 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "quantum",
+    "superconductor",
+    "exotic"
+  ]
+}

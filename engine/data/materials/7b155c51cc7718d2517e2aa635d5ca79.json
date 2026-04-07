@@ -1,0 +1,42 @@
+{
+  "id": "7b155c51cc7718d2517e2aa635d5ca79",
+  "name": "Inertial Damping Gel",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "impact gel",
+    "G-absorber",
+    "crash gel"
+  ],
+  "category": "future",
+  "description": "A non-Newtonian fluid engineered to absorb extreme deceleration forces by distributing impact energy across its entire volume through pressure wave propagation. Used in vehicle crash structures, drop-pod landing systems, and protective cases for fragile equipment. The gel reforms after impact and can absorb multiple hits.",
+  "properties": [
+    "impact_absorbing",
+    "non_Newtonian",
+    "reusable",
+    "distributes_force",
+    "heavy"
+  ],
+  "developers": [
+    "Tessera Building Systems"
+  ],
+  "applications": [
+    "vehicle crash structures",
+    "drop pods",
+    "equipment cases",
+    "helmet liners",
+    "fall protection"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 45 per liter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "protective",
+    "impact"
+  ]
+}

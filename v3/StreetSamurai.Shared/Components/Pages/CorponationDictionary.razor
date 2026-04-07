@@ -14,7 +14,6 @@
                 <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
             </div>
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Corponations" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
@@ -32,37 +31,34 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(isNew ? "New Corponation" : editing.Name)</h5>
-                <div class="d-flex gap-2">
+            <EditViewToggle RepoName="corps" Title="@(isNew ? "New Corponation" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Corponations" EntryName="@editing.Name" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
                     @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
                     @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
-                </div>
-            </div>
-
-            <div class="row g-3 mb-3">
-                <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
-                <div class="col-4"><div class="field-label">Sector</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Sector" /></div>
-                <div class="col-4"><div class="field-label">Valuation</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Valuation" /></div>
-            </div>
-            <div class="row g-3 mb-3">
-                <div class="col-4"><div class="field-label">Full Legal Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.FullLegalName" /></div>
-                <div class="col-4"><div class="field-label">Sovereign Territory</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.SovereignTerritory" /></div>
-                <div class="col-4"><div class="field-label">Security Force</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.SecurityForce" /></div>
-            </div>
-            <div class="row g-3 mb-3">
-                <div class="col-4"><div class="field-label">Stock Designation</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.StockDesignation" /></div>
-                <div class="col-4"><div class="field-label">Revenue</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Revenue" /></div>
-                <div class="col-4"><div class="field-label">Employees</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Employees" /></div>
-            </div>
-
-            <div class="mb-3"><div class="field-label">Key Detail</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.KeyDetail"></textarea></div>
-            <div class="mb-3"><div class="field-label">Founding Story</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.FoundingStory"></textarea></div>
-            <div class="mb-3"><div class="field-label">Relationship to Big 20</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.RelationshipToBig20"></textarea></div>
-            <div class="mb-3"><div class="field-label">Full Text</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.FullText"></textarea></div>
-            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="row g-3 mb-3">
+                        <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div class="col-4"><div class="field-label">Sector</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Sector" /></div>
+                        <div class="col-4"><div class="field-label">Valuation</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Valuation" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-4"><div class="field-label">Full Legal Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.FullLegalName" /></div>
+                        <div class="col-4"><div class="field-label">Sovereign Territory</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.SovereignTerritory" /></div>
+                        <div class="col-4"><div class="field-label">Security Force</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.SecurityForce" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-4"><div class="field-label">Stock Designation</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.StockDesignation" /></div>
+                        <div class="col-4"><div class="field-label">Revenue</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Revenue" /></div>
+                        <div class="col-4"><div class="field-label">Employees</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Employees" /></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Key Detail</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.KeyDetail"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Founding Story</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.FoundingStory"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Relationship to Big 20</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.RelationshipToBig20"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Full Text</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.FullText"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
         }
         else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a corponation or create a new one</div> }
     </div>
@@ -99,5 +95,4 @@
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
-    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

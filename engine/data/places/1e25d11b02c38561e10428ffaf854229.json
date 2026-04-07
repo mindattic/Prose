@@ -1,0 +1,76 @@
+{
+  "id": "1e25d11b02c38561e10428ffaf854229",
+  "type": "place",
+  "name": "The Caulfield Pocket",
+  "aliases": [
+    "AZ-2",
+    "Caulfield",
+    "The Pocket",
+    "The Fountain Block"
+  ],
+  "description": "The smallest of Meridian 88's Lost Blocks, the Caulfield Pocket consists of only three buildings arranged around a central courtyard, occupying less than half a city block in the Circuit District. It is named for Caulfield Lane, the street that once provided access — a narrow pedestrian passage between two commercial buildings that opened onto the courtyard. The passage is now a wall. The courtyard is visible from the rooftop of the adjacent Halsted Parking Structure, which rises three stories above the pocket's buildings, providing a direct overhead view that supplements satellite imagery.\n\nOne researcher, Dr. Yuki Anand-Petrov, lowered a camera on a rope from the parking structure roof during her cartographic survey. The camera descended approximately eight meters before the rope went slack — not cut, not tangled, slack, as if the distance between the roof and the courtyard had shortened while the camera was in transit. The footage recovered shows an empty, clean courtyard with decorative paving stones arranged in a geometric pattern. At the center of the courtyard is a fountain — a simple basin-and-column design, perhaps two meters tall. The fountain is running. Clean water flows from the column into the basin and recirculates. The courtyard is maintained. The paving stones are swept. The fountain works. Nobody maintains it. Nobody sweeps it. Nobody repairs the pump.\n\nThermal imaging shows approximately 15 heat signatures within the three buildings. The Caulfield Pocket shows the least activity of any Lost Block — the signatures move infrequently, spending long periods stationary in what appear to be seated or reclined positions. The Shadow Census's power consumption analysis shows minimal electrical usage, well below what would be expected for 15 occupants. Either the residents use very little power, or the residents are not doing the things that require power. The Caulfield Pocket is the only Lost Block that has shown no measurable growth over the ten-year observation period. It is stable. It is small. It is the only Lost Block where you can stand on a rooftop and look directly down into the space you cannot enter, watching a fountain run in a courtyard you'll never reach.",
+  "atmosphere": {
+    "sights": [
+      "From parking structure roof: three low buildings surrounding a clean courtyard with a running fountain",
+      "Camera footage: geometric paving stones, basin-and-column fountain, clean water flowing",
+      "From street level: a solid wall where Caulfield Lane used to be — featureless, old, unbroken",
+      "Thermal imaging: 15 mostly-stationary heat signatures in the buildings"
+    ],
+    "sounds": [
+      "On very quiet nights, from the parking structure roof, some observers report hearing the fountain — a faint sound of running water from below",
+      "Silence from street level — the wall and buildings block all interior sound"
+    ],
+    "smells": [
+      "Faint mineral smell from the parking structure roof on humid days — possibly from the fountain's water",
+      "Nothing from street level"
+    ],
+    "feel": "The Caulfield Pocket produces a different sensation than the other Lost Blocks. Standing on the parking structure roof, looking down at the courtyard, visitors report calm — not the unsettling 'forgotten memory' of Linden Block, but a stillness that feels intentional. Several visitors have described it as 'a place that wants to be left alone.' The fountain runs. The courtyard is clean. The pocket asks nothing of the outside world.",
+    "tags": []
+  },
+  "demographics": "Approximately 15 individuals based on thermal imaging. The lowest population density of any Lost Block. The Shadow Census notes anomalously low power consumption.",
+  "economy": "Minimal. Almost no measurable economic activity. No known postal deliveries. Power consumption is the lowest of any Lost Block, barely above what empty buildings would draw.",
+  "power_structure": "Unknown.",
+  "dangers": [
+    "Camera rope anomaly — physical objects lowered into the pocket experience spatial distortion",
+    "The pocket's stability may be deceptive — its growth rate is zero, but its nature is no less anomalous"
+  ],
+  "opportunities": [
+    "Direct overhead visual access from the Halsted Parking Structure",
+    "The camera rope incident suggests that the boundary is permeable to objects if not to people",
+    "The fountain's water supply must come from somewhere — tracing the water infrastructure could reveal connection points"
+  ],
+  "story_hooks": [
+    "Lower another camera — a live-feed camera with audio. What does the courtyard sound like? What happens at night?",
+    "The 15 signatures barely move. Are they people? Are they alive in the way we understand alive?",
+    "The fountain is running. Someone built it. Someone plumbed it. Someone turned it on. That person might still be down there."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Halsted Parking Structure (Circuit District — direct rooftop view into the pocket)",
+      "Caulfield Lane (former access — now a wall)",
+      "Circuit District commercial buildings"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Approximately 15 mostly-stationary thermal signatures",
+    "Researchers on the Halsted Parking Structure roof",
+    "Nobody else — the pocket is small, quiet, and easy to overlook"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 46.81,
+    "lng": -87.88,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "lost_block",
+    "spatial_anomaly",
+    "new_weird",
+    "inexplicable",
+    "meridian_88",
+    "circuit_district"
+  ]
+}

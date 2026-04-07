@@ -1,0 +1,40 @@
+{
+  "id": "e66fca483c73d632232262fb7b5a0d8e",
+  "name": "Magnetic Shape Memory Alloy",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "MSMA",
+    "Heusler alloy",
+    "NiMnGa"
+  ],
+  "category": "advanced",
+  "description": "Alloys that change shape in response to magnetic fields rather than temperature, enabling much faster actuation than thermal shape-memory alloys. MSMAs drive precision actuators in robotic joints, optical systems, and medical devices. Response times measured in milliseconds make them suitable for dynamic load compensation.",
+  "properties": [
+    "magnetically_actuated",
+    "fast_response",
+    "precise",
+    "repeatable",
+    "limited_strain"
+  ],
+  "developers": [],
+  "applications": [
+    "robotic actuators",
+    "precision positioning",
+    "vibration control",
+    "medical devices",
+    "adaptive optics"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 200 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "smart_material",
+    "magnetic"
+  ]
+}

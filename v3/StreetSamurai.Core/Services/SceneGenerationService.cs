@@ -14,6 +14,10 @@ public class SceneGenerationService
     private readonly IPathProvider paths;
     private readonly SemanticIndexService semanticIndex;
     private readonly InferenceService inference;
+    private readonly SceneContextBuilder contextBuilder;
+    private readonly ConsequenceService consequences;
+    private readonly AmbientAnomalyService anomalies;
+    private readonly NarrativeSummaryService summaries;
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
     public event Action<GeneratedBeat>? OnBeatCompleted;
@@ -21,7 +25,9 @@ public class SceneGenerationService
     public SceneGenerationService(
         FacetService facets, ContextAnalyzerService analyzer, BeatGeneratorService beatGen,
         WorldGraphService graph, DatabaseService canonDb, ValidationService validator,
-        IPathProvider paths, SemanticIndexService semanticIndex, InferenceService inference)
+        IPathProvider paths, SemanticIndexService semanticIndex, InferenceService inference,
+        SceneContextBuilder contextBuilder, ConsequenceService consequences,
+        AmbientAnomalyService anomalies, NarrativeSummaryService summaries)
     {
         this.facets = facets;
         this.analyzer = analyzer;
@@ -32,6 +38,10 @@ public class SceneGenerationService
         this.paths = paths;
         this.semanticIndex = semanticIndex;
         this.inference = inference;
+        this.contextBuilder = contextBuilder;
+        this.consequences = consequences;
+        this.anomalies = anomalies;
+        this.summaries = summaries;
     }
 
     public async Task<GeneratedScene> GenerateSceneAsync(SceneRequest request, FacetState characterWeights, CancellationToken ct = default)
@@ -44,6 +54,15 @@ public class SceneGenerationService
         session.TouchAll(request.Characters);
         if (request.Location != null) session.Touch(request.Location);
 
+        // Build ambient context (sensory profiles, weather, wildlife)
+        var ambientContext = contextBuilder.BuildAmbientContext(request.Location);
+
+        // Build character state constraints (injuries, status, possessions)
+        var characterConstraints = consequences.BuildConstraints(request.Characters);
+
+        // Get narrative summary chain from previous scenes
+        var summaryContext = summaries.GetSummaryChain();
+
         var scene = new GeneratedScene { Request = request };
         var beats = new List<GeneratedBeat>();
         var recentLeads = new List<string>();
@@ -54,6 +73,15 @@ public class SceneGenerationService
             ct.ThrowIfCancellationRequested();
 
             var worldContext = session.BuildContext();
+
+            // Get ambient anomaly hints for this scene
+            var anomalyHints = anomalies.FormatHints(request.Location);
+
+            // Get pacing instruction for this beat's position in the arc
+            var beatGoal = request.Themes.Count > i
+                ? request.Themes[i]
+                : $"Continue the scene toward: {request.Goal}";
+            var pacing = PacingService.GetPacing(i, request.NumBeats, beatGoal);
 
             var analysis = await analyzer.AnalyzeAsync(
                 $"{request.Goal}\n\nScene so far:\n{sceneSoFar}",
@@ -75,10 +103,9 @@ public class SceneGenerationService
             {
                 StoryBibleContext = storyBible,
                 RelationshipContext = worldContext,
+                LocationContext = $"{ambientContext}\n{anomalyHints}\n{characterConstraints}\n{summaryContext}\n{pacing.ProseGuidance}",
                 SceneSoFar = sceneSoFar,
-                BeatGoal = request.Themes.Count > i
-                    ? request.Themes[i]
-                    : $"Continue the scene toward: {request.Goal}",
+                BeatGoal = beatGoal,
             };
 
             var text = await beatGen.GenerateBeatAsync(beatContext, lead, supporting, ct);
@@ -107,6 +134,10 @@ public class SceneGenerationService
 
             OnBeatCompleted?.Invoke(beat);
         }
+
+        // Compress completed scene into summary for the narrative chain
+        if (sceneSoFar.Length > 0)
+            await summaries.SummarizeSceneAsync(sceneSoFar, ct);
 
         return scene with { Beats = beats };
     }

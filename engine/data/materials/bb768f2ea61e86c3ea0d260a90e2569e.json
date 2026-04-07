@@ -1,0 +1,42 @@
+{
+  "id": "bb768f2ea61e86c3ea0d260a90e2569e",
+  "name": "Molecular Sieve Membrane",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "MSM",
+    "precision filter",
+    "molecular gate"
+  ],
+  "category": "future",
+  "description": "A membrane with pores sized to allow passage of specific molecules while blocking everything else, down to single-angstrom precision. Used in water desalination, pharmaceutical purification, and isotope separation. The membranes are grown by molecular manufacturing and are atomically precise.",
+  "properties": [
+    "angstrom_precision",
+    "molecular_selectivity",
+    "high_throughput",
+    "self_cleaning"
+  ],
+  "developers": [
+    "Huxley-Liang Nanosystems"
+  ],
+  "applications": [
+    "water desalination",
+    "pharmaceutical purification",
+    "isotope separation",
+    "gas processing",
+    "blood filtration"
+  ],
+  "tier_availability": "Tier 3-5",
+  "cost": "Φ 800 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "membrane",
+    "nano",
+    "filtration"
+  ]
+}

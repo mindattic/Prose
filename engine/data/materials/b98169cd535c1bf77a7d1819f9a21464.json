@@ -1,0 +1,41 @@
+{
+  "id": "b98169cd535c1bf77a7d1819f9a21464",
+  "name": "Stainless Steel",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "304 stainless",
+    "316 stainless",
+    "surgical steel"
+  ],
+  "category": "metal",
+  "description": "Steel alloyed with chromium and nickel to resist corrosion. Available in hundreds of grades for every application from kitchen sinks to chemical plant piping. Medical-grade stainless (316L) remains the standard for non-implant surgical instruments. Cheap, durable, and everywhere.",
+  "properties": [
+    "corrosion_resistant",
+    "hygienic",
+    "strong",
+    "recyclable",
+    "non_magnetic_austenitic"
+  ],
+  "developers": [],
+  "applications": [
+    "medical instruments",
+    "food processing",
+    "chemical plants",
+    "architecture",
+    "cutlery"
+  ],
+  "tier_availability": "Tier 1-5",
+  "cost": "Φ 3.50 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "alloy",
+    "common",
+    "medical"
+  ]
+}

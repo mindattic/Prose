@@ -1,0 +1,31 @@
+{
+  "id": "7def00524d49a7ed41fd1b6d0e95bb73",
+  "name": "The Postal Service Anomaly",
+  "type": "document",
+  "document_type": "incident_report",
+  "author": "Meridian 88 Automated Logistics Division",
+  "date": "2225-06-28",
+  "classification": "restricted",
+  "description": "The automated postal system serving Meridian 88's Circuit District successfully delivers mail and packages to eleven addresses located within confirmed Lost Blocks. This is not a legacy routing error. These are active deliveries — packages sent by external parties to addresses that, according to every ground-level survey, do not exist and cannot be reached. The packages arrive. The tracking data confirms delivery. The system works. It should not work.\n\nDelivery tracking for these eleven addresses follows the same pattern: the postal drone departs from the Circuit District distribution hub, follows a route that passes over the Lost Block perimeter, descends to street level within the anomaly zone, and completes delivery at the destination address. GPS tracking shows the drone navigating streets, approaching buildings, and landing at delivery points that correspond to structures visible in satellite imagery. The drone's onboard cameras record video of the entire delivery — streets, buildings, doors, and in some cases, recipients who open the door and accept the package. The footage shows a normal urban neighborhood. Clean. Maintained. Occupied.\n\nWhen human investigators attempt to follow the same route, on foot or by vehicle, they encounter the same walls that define every Lost Block. There are no streets. There are no doors. There are no buildings accessible from ground level. The drone navigates a city that the humans cannot enter. The drone's cameras see a neighborhood that the humans cannot see. The drones are not confused. The humans are not confused. They are experiencing different cities.\n\nThe Automated Logistics Division has attempted to modify the drone routing to gather additional intelligence. Drones instructed to hover and perform extended surveillance within the Lost Blocks return footage of empty streets — the same streets that show occupied buildings in delivery footage. Drones instructed to deviate from the delivery route and explore adjacent streets within the anomaly zone experience navigation errors and return to base. The Lost Blocks permit delivery. They do not permit exploration. Whatever mechanism allows the drones in, it operates on terms that the Division does not control and does not understand.\n\nThe eleven active delivery addresses have been receiving mail for between two and seven years. The recipients have names. The packages contain mundane items — clothing, electronics, food supplements, books. Someone in the Lost Blocks orders things online. Someone in the Lost Blocks has accounts, payment methods, and shipping addresses. Someone in the Lost Blocks is living a normal consumer life in a place that doesn't exist. The Division has not attempted to discontinue service to these addresses. The Division is not sure it could.",
+  "related_entities": [
+    "Circuit District",
+    "Meridian 88",
+    "Lost Blocks"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "The eleven recipients have names and accounts — can they be contacted through digital channels?",
+    "Drones see occupied buildings during delivery but empty streets during surveillance — the blocks know the difference"
+  ],
+  "tags": [
+    "document",
+    "lost_block",
+    "spatial_anomaly",
+    "new_weird",
+    "inexplicable",
+    "meridian_88",
+    "postal",
+    "drones",
+    "logistics"
+  ]
+}

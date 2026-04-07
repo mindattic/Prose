@@ -1,0 +1,39 @@
+{
+  "id": "02f4478c488d3004ff2d3ddf7f196b10",
+  "name": "Electrochromic Glass",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "smart glass",
+    "switchable glass",
+    "dynamic glass"
+  ],
+  "category": "advanced",
+  "description": "Glass that changes its tint in response to electrical signals, controlling light and heat transmission. Electrochromic windows have replaced blinds and curtains in Tier 3+ buildings, adjusting transparency throughout the day. Privacy glass in vehicles and conference rooms switches from clear to opaque in milliseconds.",
+  "properties": [
+    "variable_transparency",
+    "energy_saving",
+    "electronically_controlled",
+    "UV_blocking"
+  ],
+  "developers": [],
+  "applications": [
+    "smart windows",
+    "privacy glass",
+    "vehicle sunroofs",
+    "display technology",
+    "spacecraft visors"
+  ],
+  "tier_availability": "Tier 3-5",
+  "cost": "Φ 120 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "smart_material",
+    "glass"
+  ]
+}

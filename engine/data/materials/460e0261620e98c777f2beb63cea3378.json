@@ -1,0 +1,37 @@
+{
+  "id": "460e0261620e98c777f2beb63cea3378",
+  "name": "Maple",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "hard maple",
+    "sugar maple",
+    "rock maple"
+  ],
+  "category": "natural",
+  "description": "A tough, shock-resistant hardwood with a light color that takes stain well. Maple is the standard material for bowling lanes, butcher blocks, and gym floors in Tier 3+ facilities. Its figured variants — bird's eye and quilted — command premium prices for instrument tops and decorative panels.",
+  "properties": [
+    "shock_resistant",
+    "hard",
+    "light_color",
+    "takes_stain_well"
+  ],
+  "developers": [],
+  "applications": [
+    "sports flooring",
+    "butcher blocks",
+    "instrument tops",
+    "turned objects"
+  ],
+  "tier_availability": "Tier 2-4",
+  "cost": "Φ 10 per board-foot",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "natural",
+    "wood",
+    "natural"
+  ]
+}

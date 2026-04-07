@@ -1,0 +1,38 @@
+{
+  "id": "3efd14b417fef227523e1f5c2f93f73e",
+  "name": "Stanene",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "2D tin",
+    "tin monolayer"
+  ],
+  "category": "advanced",
+  "description": "A single-atom layer of tin predicted to be a topological insulator — conducting electricity with zero resistance along its edges at room temperature. In 2200, stanene interconnects in advanced processors eliminate resistive heating, enabling denser chip designs. Manufacturing remains challenging and yield-limited.",
+  "properties": [
+    "topological_insulator",
+    "zero_edge_resistance",
+    "2D_material",
+    "fragile"
+  ],
+  "developers": [],
+  "applications": [
+    "processor interconnects",
+    "low-power electronics",
+    "quantum computing substrates",
+    "sensor arrays"
+  ],
+  "tier_availability": "Tier 5",
+  "cost": "Φ 1,200 per sq cm",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "nano",
+    "2D_material",
+    "electronic"
+  ]
+}

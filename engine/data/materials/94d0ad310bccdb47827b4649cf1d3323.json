@@ -1,0 +1,40 @@
+{
+  "id": "94d0ad310bccdb47827b4649cf1d3323",
+  "name": "Compressed Trash Block",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "garbage brick",
+    "refuse block",
+    "compression cube"
+  ],
+  "category": "improvised",
+  "description": "Mixed municipal waste hydraulically compressed into dense blocks and bound with wire or polymer straps. Used as fill material, temporary barriers, and even structural walls in the most desperate Tier 1 construction. The blocks are surprisingly dense and provide decent thermal insulation. They smell terrible until sealed.",
+  "properties": [
+    "dense",
+    "thermal_insulating",
+    "cheap",
+    "foul_smelling",
+    "pest_attracting"
+  ],
+  "developers": [],
+  "applications": [
+    "fill material",
+    "temporary barriers",
+    "emergency construction",
+    "sound walls"
+  ],
+  "tier_availability": "Tier 1",
+  "cost": "Φ 0.02 per block",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "improvised",
+    "improvised",
+    "waste",
+    "construction",
+    "desperate"
+  ]
+}

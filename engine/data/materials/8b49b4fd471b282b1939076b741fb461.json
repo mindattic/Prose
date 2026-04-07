@@ -1,0 +1,39 @@
+{
+  "id": "8b49b4fd471b282b1939076b741fb461",
+  "name": "Wire-Wrapped Rebar Bundle",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "rebar club stock",
+    "improvised structural member"
+  ],
+  "category": "improvised",
+  "description": "Salvaged rebar lengths bundled together with wire into improvised structural members. Where a single piece of rebar bends, a wired bundle of six resists. Used as columns, beams, and reinforcement in Tier 1 construction. Also the raw material for the brutal melee weapons common in street-level conflict.",
+  "properties": [
+    "strong_in_bundle",
+    "cheap",
+    "available",
+    "heavy",
+    "rust_prone"
+  ],
+  "developers": [],
+  "applications": [
+    "improvised structural members",
+    "melee weapons",
+    "reinforcement",
+    "fencing"
+  ],
+  "tier_availability": "Tier 1",
+  "cost": "Φ 0.30 per meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "improvised",
+    "improvised",
+    "metal",
+    "structural",
+    "weapon"
+  ]
+}

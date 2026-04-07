@@ -40,7 +40,7 @@ public class ModelTagTests
     public void PharmaceuticalData_HasTags() => AssertHasTags(new PharmaceuticalData());
 
     [Test]
-    public void SubstrateData_HasTags() => AssertHasTags(new SubstrateData());
+    public void MaterialData_HasTags() => AssertHasTags(new MaterialData());
 
     [Test]
     public void SyntheticLifeData_HasTags() => AssertHasTags(new SyntheticLifeData());

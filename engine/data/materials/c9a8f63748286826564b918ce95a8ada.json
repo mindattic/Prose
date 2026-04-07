@@ -1,0 +1,40 @@
+{
+  "id": "c9a8f63748286826564b918ce95a8ada",
+  "name": "Polycarbonate",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "PC",
+    "Lexan",
+    "Makrolon"
+  ],
+  "category": "polymer",
+  "description": "A transparent thermoplastic with exceptional impact resistance. Polycarbonate is the default material for riot shields, safety glasses, and transparent barriers in all tiers. It scratches easily but resists shattering under extreme force. Bulletproof glazing stacks multiple polycarbonate layers with polymer interlayers.",
+  "properties": [
+    "transparent",
+    "impact_resistant",
+    "lightweight",
+    "scratch_prone",
+    "thermoformable"
+  ],
+  "developers": [],
+  "applications": [
+    "riot shields",
+    "safety glasses",
+    "bulletproof glazing",
+    "electronic housings",
+    "greenhouse panels"
+  ],
+  "tier_availability": "Tier 1-5",
+  "cost": "Φ 5 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "polymer",
+    "polymer",
+    "transparent",
+    "armor"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "cd96e98b2c4095b82ef096a79929abf8",
+  "name": "How Many Clones Are There?",
+  "type": "document",
+  "document_type": "investigation",
+  "author": "Dr. Kael Okonkwo, Meridian 88 Census Analytics (Unofficial)",
+  "date": "2288-06-09",
+  "classification": "restricted",
+  "description": "The question sounds simple. The answer is anything but. No official body in Meridian 88 tracks the clone population because no official body in Meridian 88 acknowledges that there is a clone population. Cloned bodies — whether Lazarus's Biological Reserve Units, private companion bodies, or products of unauthorized operations — do not appear on any census, any registry, any demographic survey. They consume resources. They occupy space. They breathe air and metabolize nutrients and generate medical waste. They are, by every logistical measure, residents of the Greater Lazarus Manufacturing Zone. They are counted as none of them.\n\nThis analysis uses three independent methodologies to estimate the total number of clone bodies currently being maintained in Meridian 88. The first is energy analysis: clone maintenance facilities consume distinctive power signatures — continuous life support, climate control, accelerated gestation tanks — that can be identified in municipal power grid data. Cross-referencing consumption patterns with known facility locations and extrapolating to anomalous high-draw sites produces an estimate of 87 probable clone maintenance facilities in the GLMZ, of which only 23 are registered with Lazarus. The remaining 64 are either subsidiary operations under shell companies or unauthorized facilities. Combined capacity estimate: 6,200 to 9,400 bodies.\n\nThe second methodology is supply chain analysis. Clone bodies require specific pharmaceutical inputs — neural suppressants, accelerated growth hormones, anti-rejection compounds — in quantities that far exceed the legitimate medical demand of Meridian 88's registered population. Pharmaceutical distribution records, obtained through a source inside Lazarus's logistics division, show that the GLMZ receives approximately 340% more neural suppressant compound than its hospitals and clinics could account for. Working backward from dosage requirements per body, the supply chain data suggests a population of 5,500 to 8,800 maintained clone bodies. The third methodology is the simplest and most disturbing: a Lazarus whistleblower, a former facility technician, provided a direct count from a single mid-sized campus — 412 active units in a facility designed for 500. If that occupancy rate holds across known and estimated facilities, the total reaches 7,100 to 10,600.\n\nThe convergence of all three methods produces a combined estimate of 4,000 to 11,000 brain-dead clone bodies currently being maintained in the Greater Lazarus Manufacturing Zone. The wide range reflects the inherent uncertainty of counting a population that powerful interests have every reason to hide. The midpoint — roughly 7,500 — exceeds the population of at least fourteen individual Shelf blocks. These bodies have heartbeats. They have blood types. They have fingerprints that match real people walking the streets of Meridian 88. If they were counted as residents, they would constitute the single largest demographic cohort in the GLMZ that cannot vote, speak, or object to its own existence.\n\nThe political implications are staggering and studiously ignored. Meridian 88's corporate charter allocates infrastructure resources — water, power, waste processing — based on registered population. Thousands of unregistered biological entities consuming resources means the official population is subsidizing clone maintenance without knowing it. Every resident of the GLMZ is paying, fractionally, to keep these bodies alive. The philosophical implications are worse. Somewhere in this city, there are more clone bodies than there are teachers, or firefighters, or children under the age of five. They are the largest invisible community in Meridian 88. They have never opened their eyes. Some of them have been breathing longer than most Shelf residents have been alive.",
+  "related_entities": [
+    "Lazarus Pharmaceuticals",
+    "Meridian 88",
+    "Greater Lazarus Manufacturing Zone"
+  ],
+  "credibility": "disputed",
+  "story_hooks": [
+    "64 unregistered clone facilities operating under shell companies — who runs the ones Lazarus doesn't?",
+    "The whistleblower facility technician who provided direct counts — what happened to them after this analysis was published?"
+  ],
+  "tags": [
+    "document",
+    "clone",
+    "lazarus",
+    "census",
+    "population",
+    "investigation",
+    "GLMZ",
+    "meridian_88",
+    "data_analysis",
+    "ethics"
+  ]
+}

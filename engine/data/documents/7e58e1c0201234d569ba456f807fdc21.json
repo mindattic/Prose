@@ -1,0 +1,30 @@
+{
+  "id": "7e58e1c0201234d569ba456f807fdc21",
+  "name": "The Vessel Program",
+  "type": "document",
+  "document_type": "leaked_memo",
+  "author": "Lazarus Pharmaceuticals — Internal Operations Division",
+  "date": "2287-03-14",
+  "classification": "leaked",
+  "description": "What follows is an internal Lazarus Pharmaceuticals operations manual, classification level ONYX, originally distributed to facility directors overseeing Biological Reserve Unit cultivation floors. The document was exfiltrated by a former bioethics compliance officer who resigned in 2286 and subsequently disappeared. It describes, in the sterile language of corporate logistics, the full lifecycle of what Lazarus officially designates \"Biological Reserve Units\" — cloned human bodies grown to physiological maturity in accelerated gestation tanks, maintained in a persistent vegetative state, and harvested for organs as client needs arise. The program's internal codename is VESSEL. The document refers to the clones exclusively as \"units.\"\n\nEach unit is genetically sequenced from a paying client's tissue sample, grown over an eleven-month accelerated cycle in amniotic suspension tanks, and decanted into long-term maintenance cradles upon reaching target biomass. Neural development is chemically suppressed during gestation — the cerebral cortex forms but is never activated. The result is a body that breathes, metabolizes, heals, and grows, but has never experienced a single moment of consciousness. Lazarus's legal team classifies them as \"cultivated biological material.\" The facility staff calls them sleepers. There are entire floors of them in the Meridian 88 campus — rows of bodies on ventilators, hair growing, fingernails lengthening, skin warm to the touch. Alive by every metric except the one that matters.\n\nThe harvesting process is described with the same procedural detachment as equipment maintenance. When a client requires an organ — a kidney, a liver, a heart — the matched unit is prepped for extraction. Single-organ harvests leave the unit viable for future use; the body regenerates with pharmaceutical assistance. Multi-organ harvests are terminal. The document notes that a single unit can provide an average of 3.7 \"material events\" before total systemic failure. The manual includes a troubleshooting section for when units develop spontaneous neural activity — the recommended response is increased chemical suppression, not investigation. The section is four pages long. It has been revised six times.\n\nFacility headcount as of the document's date: 1,847 active units across three Meridian 88 campuses. Monthly operating cost per unit: 14,200 Φ. Client tier requirement: Tier 4 minimum, with Tier 5 clients receiving dedicated units and priority scheduling. The waiting list for new unit cultivation is fourteen months. The document ends with a quarterly performance summary noting a 2.3% improvement in organ viability rates and a recommendation to expand cultivation capacity by 40% to meet projected demand. There is no ethical review section. There is no mention of ethics at all. The word does not appear in the document.\n\nThe final appendix — labeled \"Contingency Protocol STILLWATER\" — describes procedures for facility compromise, including rapid unit termination via chemical injection and incineration of biological material. The protocol can be executed in under ninety minutes for a full facility. It has been tested twice. The appendix does not say why.",
+  "related_entities": [
+    "Lazarus Pharmaceuticals",
+    "Meridian 88"
+  ],
+  "credibility": "leaked",
+  "story_hooks": [
+    "The missing bioethics compliance officer who leaked this document — where are they now, and who is hunting them?",
+    "Contingency Protocol STILLWATER has been tested twice — what triggered those tests?"
+  ],
+  "tags": [
+    "document",
+    "clone",
+    "lazarus",
+    "vessel_program",
+    "organ_harvesting",
+    "leaked",
+    "biological_reserve_unit",
+    "ethics",
+    "meridian_88"
+  ]
+}

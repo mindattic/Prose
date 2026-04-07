@@ -1,0 +1,40 @@
+{
+  "id": "2c7ca2382f513f124e44d6366743cf88",
+  "name": "Carbon Fiber",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "CF",
+    "CFRP",
+    "carbon fiber reinforced polymer"
+  ],
+  "category": "composite",
+  "description": "Thin filaments of carbon woven into fabric and set in epoxy resin. Carbon fiber composites offer strength rivaling steel at a fraction of the weight. In 2200, carbon fiber is a mature commodity material used in everything from bicycle frames to orbital elevator cables. Automated layup has slashed costs dramatically.",
+  "properties": [
+    "high_strength_to_weight",
+    "stiff",
+    "corrosion_immune",
+    "electrically_conductive",
+    "brittle_failure"
+  ],
+  "developers": [],
+  "applications": [
+    "aerospace structures",
+    "vehicle bodies",
+    "prosthetics",
+    "sports equipment",
+    "orbital tethers"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 20 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "composite",
+    "composite",
+    "fiber",
+    "lightweight"
+  ]
+}

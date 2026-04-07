@@ -1,0 +1,39 @@
+{
+  "id": "7bb2e6c3a7098fa026bed301ff36505b",
+  "name": "Ash Cement",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "fly ash concrete",
+    "volcanic ash cement",
+    "pozzolanic cement"
+  ],
+  "category": "improvised",
+  "description": "Cement made from coal fly ash or volcanic ash mixed with lime — a recipe the Romans used two thousand years ago. The resulting concrete is cheaper than Portland cement, more resistant to saltwater, and actually gets stronger over centuries. Tier 1 communities near power plants or volcanoes use ash cement extensively.",
+  "properties": [
+    "cheap",
+    "saltwater_resistant",
+    "strengthens_over_time",
+    "uses_waste_products"
+  ],
+  "developers": [],
+  "applications": [
+    "marine construction",
+    "Tier 1 housing",
+    "sea walls",
+    "foundation work"
+  ],
+  "tier_availability": "Tier 1-3",
+  "cost": "Φ 0.03 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "improvised",
+    "improvised",
+    "construction",
+    "recycled",
+    "ancient"
+  ]
+}

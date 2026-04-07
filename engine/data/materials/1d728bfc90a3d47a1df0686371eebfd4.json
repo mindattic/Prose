@@ -1,0 +1,37 @@
+{
+  "id": "1d728bfc90a3d47a1df0686371eebfd4",
+  "name": "Bronze",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "phosphor bronze",
+    "aluminum bronze"
+  ],
+  "category": "metal",
+  "description": "Copper-tin alloy valued for its low friction, corrosion resistance, and non-sparking properties. Bronze bushings and bearings remain standard in marine and explosive-atmosphere applications. Artistic bronze casting continues as a prestige craft, with corponation headquarters often commissioning monumental bronze sculptures.",
+  "properties": [
+    "low_friction",
+    "non_sparking",
+    "corrosion_resistant",
+    "castable"
+  ],
+  "developers": [],
+  "applications": [
+    "bearings",
+    "marine hardware",
+    "sculptures",
+    "bells",
+    "explosive-atmosphere tools"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 10 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "alloy"
+  ]
+}

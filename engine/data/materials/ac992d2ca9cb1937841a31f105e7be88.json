@@ -1,0 +1,41 @@
+{
+  "id": "ac992d2ca9cb1937841a31f105e7be88",
+  "name": "Spall Liner Composite",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "anti-spall mat",
+    "fragment catcher",
+    "behind-armor liner"
+  ],
+  "category": "future",
+  "description": "A flexible composite designed to catch fragments generated when armor is penetrated. Installed on the interior face of armored vehicles and structures, the spall liner prevents secondary casualties from metal fragments even after the primary armor fails. Woven from aramid and UHMWPE fibers in a tough elastomer matrix.",
+  "properties": [
+    "fragment_catching",
+    "flexible",
+    "lightweight",
+    "secondary_protection"
+  ],
+  "developers": [
+    "OmniShield Defense"
+  ],
+  "applications": [
+    "vehicle interior armor",
+    "bunker linings",
+    "safe room walls",
+    "body armor backing"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 60 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "armor",
+    "composite",
+    "military"
+  ]
+}

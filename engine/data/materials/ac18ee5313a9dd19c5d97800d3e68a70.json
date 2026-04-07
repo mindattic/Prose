@@ -1,0 +1,40 @@
+{
+  "id": "ac18ee5313a9dd19c5d97800d3e68a70",
+  "name": "Hydroxyapatite",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "HAp",
+    "bone mineral",
+    "calcium phosphate"
+  ],
+  "category": "ceramic",
+  "description": "The mineral component of human bone, synthesized for use in medical implants and tissue engineering. Hydroxyapatite coatings on titanium implants promote bone integration. Porous HAp scaffolds serve as templates for bone regrowth, dissolving as natural bone replaces them. Essential to the cyberware integration industry.",
+  "properties": [
+    "biocompatible",
+    "osteoconductive",
+    "resorbable",
+    "bone_bonding"
+  ],
+  "developers": [],
+  "applications": [
+    "implant coatings",
+    "bone scaffolds",
+    "dental repairs",
+    "cyberware anchors",
+    "drug delivery"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 35 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "ceramic",
+    "ceramic",
+    "medical",
+    "bio",
+    "cyberware"
+  ]
+}

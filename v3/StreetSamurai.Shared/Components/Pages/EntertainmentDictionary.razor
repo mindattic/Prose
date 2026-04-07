@@ -14,7 +14,6 @@
                 <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
             </div>
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Entertainment" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
@@ -32,32 +31,29 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(isNew ? "New Entry" : editing.Name)</h5>
-                <div class="d-flex gap-2">
+            <EditViewToggle RepoName="entertainment" Title="@(isNew ? "New Entry" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Entertainment" EntryName="@editing.Name" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
                     @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
                     @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
-                </div>
-            </div>
-
-            <div class="row g-3 mb-3">
-                <div class="col-3"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
-                <div class="col-3"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
-                <div class="col-3"><div class="field-label">Genre</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Genre" /></div>
-                <div class="col-3"><div class="field-label">Medium</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Medium" /></div>
-            </div>
-            <div class="row g-3 mb-3">
-                <div class="col-3"><div class="field-label">Creator</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Creator" /></div>
-                <div class="col-3"><div class="field-label">Distributor</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Distributor" /></div>
-                <div class="col-3"><div class="field-label">Tier</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TierAvailability" /></div>
-                <div class="col-3"><div class="field-label">Legality</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Legality" /></div>
-            </div>
-
-            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
-            <div class="mb-3"><div class="field-label">Cultural Impact</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.CulturalImpact"></textarea></div>
-            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="row g-3 mb-3">
+                        <div class="col-3"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div class="col-3"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
+                        <div class="col-3"><div class="field-label">Genre</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Genre" /></div>
+                        <div class="col-3"><div class="field-label">Medium</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Medium" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-3"><div class="field-label">Creator</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Creator" /></div>
+                        <div class="col-3"><div class="field-label">Distributor</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Distributor" /></div>
+                        <div class="col-3"><div class="field-label">Tier</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TierAvailability" /></div>
+                        <div class="col-3"><div class="field-label">Legality</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Legality" /></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Cultural Impact</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.CulturalImpact"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
         }
         else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select an entry or create a new one</div> }
     </div>
@@ -99,5 +95,4 @@
     private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Name); Repo.Delete(editing.Name); editing = null; _confirmDelete = false; items = Repo.GetAll(); RebuildTags(); }
     protected override async Task OnAfterRenderAsync(bool firstRender) { await JS.InvokeVoidAsync("writeInterop.autoResizeAll"); }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
-    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

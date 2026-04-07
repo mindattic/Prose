@@ -1,0 +1,40 @@
+{
+  "id": "58803b71745d150366d43ebb86bd49e9",
+  "name": "Palladium Membrane",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "Pd membrane",
+    "hydrogen separator",
+    "palladium filter"
+  ],
+  "category": "advanced",
+  "description": "Ultra-thin palladium films that selectively pass hydrogen atoms while blocking all other gases. Used in hydrogen purification for fuel cells, isotope separation for fusion reactors, and sensor elements for hydrogen leak detection. The membrane surface catalyzes hydrogen dissociation, making it both a filter and a chemical processor.",
+  "properties": [
+    "hydrogen_selective",
+    "catalytic",
+    "ultra_thin",
+    "expensive",
+    "temperature_dependent"
+  ],
+  "developers": [],
+  "applications": [
+    "hydrogen purification",
+    "fuel cell systems",
+    "isotope separation",
+    "leak detection sensors"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 3,000 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "membrane",
+    "hydrogen",
+    "catalyst"
+  ]
+}

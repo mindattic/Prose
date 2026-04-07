@@ -789,7 +789,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "quotes" => "bi-quote",
             "consumer goods" => "bi-basket",
             "pharmaceuticals" => "bi-capsule",
-            "substrates" => "bi-gem",
+            "substrates" or "materials" => "bi-gem",
             "news" or "news archive" => "bi-newspaper",
             "archetypes" => "bi-person-bounding-box",
             "synthetics" => "bi-cpu",
@@ -798,6 +798,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "apparel" => "bi-handbag",
             "contracts" => "bi-clipboard-check",
             "entertainment" => "bi-film",
+            "subsidiaries" => "bi-diagram-3",
             _ => "bi-folder",
         };
         return $"<i class=\"bi {icon}\" style=\"margin-right:6px;\"></i>";

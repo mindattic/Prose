@@ -1,0 +1,40 @@
+{
+  "id": "74601458261c272800f5659bbece5b45",
+  "name": "Fiberglass",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "GRP",
+    "GFRP",
+    "glass fiber reinforced polymer"
+  ],
+  "category": "composite",
+  "description": "Glass fibers in a polymer matrix, offering good strength at low cost. Fiberglass is the budget composite — used for boat hulls, storage tanks, roofing panels, and electrical insulators. In lower tiers, fiberglass panels are the default wall and roof material for prefabricated housing.",
+  "properties": [
+    "lightweight",
+    "corrosion_resistant",
+    "electrically_insulating",
+    "cheap",
+    "moderate_strength"
+  ],
+  "developers": [],
+  "applications": [
+    "boat hulls",
+    "storage tanks",
+    "roofing",
+    "prefab housing panels",
+    "electrical enclosures"
+  ],
+  "tier_availability": "Tier 1-4",
+  "cost": "Φ 5 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "composite",
+    "composite",
+    "fiber",
+    "cheap"
+  ]
+}

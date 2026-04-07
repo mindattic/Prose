@@ -1,0 +1,37 @@
+{
+  "id": "7a6f87061d8824bbe0c53b3a39cdf71a",
+  "name": "Zinc",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "Zn",
+    "spelter"
+  ],
+  "category": "metal",
+  "description": "Primarily used as a protective coating for steel (galvanization), zinc prevents corrosion in everything from highway guardrails to offshore platforms. Zinc-air batteries provide cheap energy storage in Tier 1-2 communities. The metal is also essential in brass production and as a dietary supplement.",
+  "properties": [
+    "corrosion_protective",
+    "low_melting_point",
+    "galvanizing_agent",
+    "bioessential"
+  ],
+  "developers": [],
+  "applications": [
+    "galvanized coatings",
+    "zinc-air batteries",
+    "brass production",
+    "dietary supplements"
+  ],
+  "tier_availability": "Tier 1-4",
+  "cost": "Φ 2.80 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "common",
+    "protective"
+  ]
+}

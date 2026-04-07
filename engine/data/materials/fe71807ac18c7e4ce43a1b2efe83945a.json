@@ -1,0 +1,39 @@
+{
+  "id": "fe71807ac18c7e4ce43a1b2efe83945a",
+  "name": "Lead",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "Pb",
+    "plumbum"
+  ],
+  "category": "metal",
+  "description": "Dense, soft, and cheap, lead persists in radiation shielding, ballast, and ammunition despite centuries of health warnings. Lower-tier communities still encounter lead contamination in old infrastructure. Ironically, lead's very toxicity makes it useful in certain chemical processes where biological contamination must be prevented.",
+  "properties": [
+    "very_dense",
+    "soft",
+    "radiation_shielding",
+    "toxic",
+    "low_melting_point"
+  ],
+  "developers": [],
+  "applications": [
+    "radiation shielding",
+    "ammunition",
+    "ballast",
+    "acid batteries",
+    "soundproofing"
+  ],
+  "tier_availability": "Tier 1-4",
+  "cost": "Φ 1.20 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "dense",
+    "toxic"
+  ]
+}
