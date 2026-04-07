@@ -1,0 +1,40 @@
+{
+  "id": "d3fa2167dd4e79f60f6cf54024bef35d",
+  "name": "Vanadium Redox Electrolyte",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "VRB fluid",
+    "flow battery electrolyte",
+    "vanadium solution"
+  ],
+  "category": "advanced",
+  "description": "A vanadium sulfate solution used in redox flow batteries that store grid-scale energy. The electrolyte never degrades — it can be charged and discharged indefinitely without capacity loss. Flow batteries using this electrolyte provide backup power for entire districts, their capacity limited only by tank size.",
+  "properties": [
+    "infinite_cycle_life",
+    "scalable_capacity",
+    "liquid",
+    "non_flammable",
+    "heavy"
+  ],
+  "developers": [],
+  "applications": [
+    "grid energy storage",
+    "district backup power",
+    "renewable energy buffering",
+    "data center UPS"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 25 per liter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "energy_storage",
+    "liquid",
+    "grid"
+  ]
+}

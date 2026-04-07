@@ -1,0 +1,42 @@
+{
+  "id": "860426e14ae6184072fa49ed1914edd6",
+  "name": "Hydrogen-Absorbing Alloy",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "metal hydride",
+    "H2 sponge alloy",
+    "hydrogen storage metal"
+  ],
+  "category": "future",
+  "description": "An alloy that absorbs hydrogen gas like a sponge absorbs water, storing it safely at low pressure in the metal's crystal lattice. Heating the alloy releases hydrogen on demand. These alloys make hydrogen fuel storage safe and compact, enabling hydrogen-powered vehicles and portable power systems without high-pressure tanks.",
+  "properties": [
+    "hydrogen_storage",
+    "low_pressure",
+    "safe",
+    "reversible",
+    "heavy"
+  ],
+  "developers": [
+    "Kuroda Materials Science"
+  ],
+  "applications": [
+    "vehicle fuel tanks",
+    "portable power",
+    "grid energy storage",
+    "emergency generators"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 50 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "energy_storage",
+    "hydrogen",
+    "metal"
+  ]
+}

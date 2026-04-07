@@ -1,0 +1,39 @@
+{
+  "id": "529968a1e2f86b3486d71cd9a43ebe2b",
+  "name": "Bottle Brick",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "glass bottle block",
+    "bottle wall",
+    "eco-wall"
+  ],
+  "category": "improvised",
+  "description": "Glass or plastic bottles filled with sand or earth and mortared together to form walls. The technique dates to the 20th century and persists in Tier 1 communities because the materials are literally free. Glass bottle walls admit light while providing thermal mass. The aesthetic ranges from charming to bleak depending on the builder's skill.",
+  "properties": [
+    "free_materials",
+    "light_transmitting",
+    "thermal_mass",
+    "fragile",
+    "labor_intensive"
+  ],
+  "developers": [],
+  "applications": [
+    "Tier 1 wall construction",
+    "garden walls",
+    "decorative partitions"
+  ],
+  "tier_availability": "Tier 1",
+  "cost": "Φ 0 (labor only)",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "improvised",
+    "improvised",
+    "construction",
+    "free",
+    "recycled"
+  ]
+}

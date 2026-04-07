@@ -1,0 +1,40 @@
+{
+  "id": "a1b0d04c94b6875b9af6198c033e6bcb",
+  "name": "Scrap Composite Plate",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "junk plate",
+    "welded scrap",
+    "gutter shield"
+  ],
+  "category": "improvised",
+  "description": "Layered sheets of salvaged metal welded, riveted, or bolted together into makeshift armor or structural panels. Quality depends entirely on what scrap is available — a good scrap composite might layer steel, aluminum, and copper in a ballistic sandwich. A bad one is just tin cans hammered flat. Ubiquitous in Tier 1 fortifications.",
+  "properties": [
+    "variable_quality",
+    "cheap",
+    "heavy",
+    "available",
+    "ugly"
+  ],
+  "developers": [],
+  "applications": [
+    "improvised armor",
+    "shanty construction",
+    "vehicle up-armoring",
+    "barricades"
+  ],
+  "tier_availability": "Tier 1-2",
+  "cost": "Φ 0.50 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "improvised",
+    "improvised",
+    "armor",
+    "scrap",
+    "common"
+  ]
+}

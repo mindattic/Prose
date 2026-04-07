@@ -1,0 +1,39 @@
+{
+  "id": "f51382f861ed37479154533b89d6ec18",
+  "name": "Concrete",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "Portland cement concrete",
+    "reinforced concrete"
+  ],
+  "category": "natural",
+  "description": "The most consumed material on Earth after water. Concrete in 2200 incorporates self-healing bacteria, carbon-capture additives, and graphene reinforcement fibers depending on specification level. Standard concrete pours use automated mixer drones and sets to full strength in hours rather than weeks thanks to accelerant chemistry.",
+  "properties": [
+    "compressive_strength",
+    "moldable",
+    "fire_resistant",
+    "heavy",
+    "ubiquitous"
+  ],
+  "developers": [],
+  "applications": [
+    "foundations",
+    "infrastructure",
+    "barriers",
+    "radiation shielding",
+    "road surfaces"
+  ],
+  "tier_availability": "Tier 1-5",
+  "cost": "Φ 0.08 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "natural",
+    "natural",
+    "common",
+    "construction"
+  ]
+}

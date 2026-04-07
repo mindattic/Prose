@@ -1,0 +1,40 @@
+{
+  "id": "5f7d2cb9003f9a63cc28bc393a32ca51",
+  "name": "Tungsten Carbide",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "WC",
+    "cemented carbide",
+    "widia"
+  ],
+  "category": "ceramic",
+  "description": "A compound of tungsten and carbon that rivals diamond in hardness. Cemented with cobalt binder, tungsten carbide forms the tips of drill bits, mining picks, and armor-piercing projectile cores. The material is so hard that only diamond or c-BN tools can grind it. Worn tooling is recycled through chemical dissolution.",
+  "properties": [
+    "extreme_hardness",
+    "dense",
+    "wear_resistant",
+    "heat_resistant",
+    "expensive"
+  ],
+  "developers": [],
+  "applications": [
+    "drill bit tips",
+    "mining picks",
+    "armor-piercing cores",
+    "wear parts",
+    "wedding rings"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 55 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "ceramic",
+    "ceramic",
+    "tooling",
+    "military"
+  ]
+}

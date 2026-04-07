@@ -1,0 +1,30 @@
+{
+  "id": "ca0b7f4d9f88fa7edbd3b25e93fff74c",
+  "name": "The Quanta Protocol: Cryptographic Foundations",
+  "type": "document",
+  "document_type": "technical_paper",
+  "author": "Dr. Yuki Tanaka-Okonkwo, QFIC Research Fellow",
+  "date": "2194-11-02",
+  "classification": "restricted",
+  "description": "This whitepaper establishes the formal cryptographic specification for the Quanta Protocol version 4.7, superseding all previous protocol definitions. The Quanta Protocol is built upon three interlocking cryptographic primitives: Quantum Key Distribution (QKD-4096), Entanglement Verification Consensus (EVC), and Temporal State Hashing (TSH). Together, these primitives create a transaction verification system that is provably secure against all known and theoretically possible classical and quantum computational attacks. The security guarantee is not conditional on key length, computational cost, or algorithmic complexity. It is conditional on the laws of physics remaining consistent — which is to say, it is unconditional.\n\nQKD-4096 establishes secure communication channels between transaction participants and EDN verification nodes using 4096-qubit entangled key pairs. Each key pair is generated at a licensed Quantum Key Generation Facility (QKGF) — there are currently 347 worldwide, all operated by QFIC-certified entities — and distributed to requesting wallets through the EDN's secure key distribution layer. The No-Cloning Theorem guarantees that each key exists in exactly one location. Interception attempts cause measurable decoherence that triggers automatic transaction suspension and forensic flagging. The protocol specifies a maximum acceptable decoherence threshold of 0.0001% — any disturbance above this level voids the transaction and generates a security incident report routed to the relevant corponation's financial security division.\n\nEntanglement Verification Consensus replaces the proof-of-work and proof-of-stake mechanisms used by legacy cryptocurrency systems. Where Bitcoin required miners to solve computationally expensive puzzles, and Ethereum required validators to stake capital, EVC requires verification nodes to demonstrate quantum coherence with the transaction's entangled state. This is not a competition or a lottery. It is a physical measurement. A node either shares the entangled state or it does not. Consensus is achieved when a majority of entangled nodes (minimum 4 of 7 in standard configuration, 7 of 11 in high-value transactions exceeding Φ100,000) confirm state coherence. The process is deterministic, instantaneous at quantum scales, and immune to the 51% attacks that plagued classical blockchain systems. You cannot forge consensus because you cannot forge entanglement.\n\nTemporal State Hashing provides the historical integrity layer. Each completed transaction generates a TSH value — a quantum hash of the transaction state at the moment of completion, entangled with the hash of the previous transaction in the same wallet's history. This creates a quantum-secured chain of transaction history that cannot be retroactively modified without disrupting every subsequent hash in the chain. TSH differs from classical hash chains in one critical respect: the quantum entanglement between consecutive hashes means that modifying any historical transaction would produce a measurable disturbance in the current quantum state of the wallet. Your wallet's current balance is physically entangled with every transaction you have ever made. Your financial history is not stored in a database. It is woven into the quantum fabric of your money.",
+  "related_entities": [
+    "sterling_nakamura",
+    "qfic"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "A leaked early draft of the protocol reveals a deliberately introduced backdoor that was supposedly removed before deployment",
+    "Someone is generating valid QKD keys outside of licensed facilities"
+  ],
+  "tags": [
+    "document",
+    "quanta",
+    "currency",
+    "technical",
+    "cryptography",
+    "protocol",
+    "whitepaper",
+    "qfic",
+    "quantum"
+  ]
+}

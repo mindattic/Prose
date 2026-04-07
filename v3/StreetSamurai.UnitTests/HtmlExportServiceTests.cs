@@ -127,7 +127,6 @@ public class HtmlExportServiceTests
         var path = svc.ExportRepo("Weaponry", entries);
         var html = File.ReadAllText(path);
         Assert.That(html, Does.Contain("index.htm"));
-        Assert.That(html, Does.Contain("Master Index"));
     }
 
     [Test]
@@ -159,7 +158,7 @@ public class HtmlExportServiceTests
         var indexHtml = File.ReadAllText(indexPath);
         Assert.That(indexHtml, Does.Contain("Weaponry"));
         Assert.That(indexHtml, Does.Contain("Automata"));
-        Assert.That(indexHtml, Does.Contain("Complete Export"));
+        Assert.That(indexHtml, Does.Contain("Encyclopedia"));
     }
 
     [Test]

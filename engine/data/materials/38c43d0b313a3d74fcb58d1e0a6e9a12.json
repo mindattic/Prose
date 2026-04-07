@@ -1,0 +1,39 @@
+{
+  "id": "38c43d0b313a3d74fcb58d1e0a6e9a12",
+  "name": "Tungsten Heavy Alloy",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "WHA",
+    "tungsten-nickel-iron",
+    "densimet"
+  ],
+  "category": "metal",
+  "description": "Sintered composites of tungsten with nickel and iron binders, combining extreme density with better machinability than pure tungsten. WHAs serve as radiation shielding, kinetic energy penetrators, and counterweights in aerospace and medical applications. The density approaches that of gold at a fraction of the cost.",
+  "properties": [
+    "extremely_dense",
+    "machinable",
+    "radiation_shielding",
+    "vibration_damping"
+  ],
+  "developers": [],
+  "applications": [
+    "kinetic penetrators",
+    "radiation shielding",
+    "aircraft counterweights",
+    "medical collimators"
+  ],
+  "tier_availability": "Tier 3-5",
+  "cost": "Φ 60 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "dense",
+    "military",
+    "medical"
+  ]
+}

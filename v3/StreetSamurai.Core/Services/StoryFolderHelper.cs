@@ -5,8 +5,9 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Shared logic for finding and creating story folders.
-/// Convention: stories/{title_slug}.{guid}/
+/// Convention: stories/{guid}/
 /// Files inside: story.json, checkpoint.json, outline.json, events.json, knowledge.json
+/// Title lives inside story.json — folder name is just the project ID.
 /// </summary>
 public static partial class StoryFolderHelper
 {
@@ -14,18 +15,21 @@ public static partial class StoryFolderHelper
     public static string? FindFolder(string storiesDir, string projectId)
     {
         if (string.IsNullOrEmpty(projectId) || !Directory.Exists(storiesDir)) return null;
+        // Direct match: folder named exactly the project ID
+        var direct = Path.Combine(storiesDir, projectId);
+        if (Directory.Exists(direct)) return direct;
+        // Legacy: folder ending with .{projectId}
         return Directory.GetDirectories(storiesDir, $"*.{projectId}").FirstOrDefault()
             ?? Directory.GetDirectories(storiesDir).FirstOrDefault(d => Path.GetFileName(d).Contains(projectId));
     }
 
-    /// <summary>Get or create a story folder, with an optional title for naming.</summary>
+    /// <summary>Get or create a story folder.</summary>
     public static string GetOrCreateFolder(string storiesDir, string projectId, string? title = null)
     {
         var existing = FindFolder(storiesDir, projectId);
         if (existing != null) return existing;
 
-        var folderName = BuildFolderName(projectId, title);
-        var folderPath = Path.Combine(storiesDir, folderName);
+        var folderPath = Path.Combine(storiesDir, projectId);
         Directory.CreateDirectory(folderPath);
         return folderPath;
     }
@@ -46,17 +50,9 @@ public static partial class StoryFolderHelper
         return File.Exists(path) ? path : null;
     }
 
-    /// <summary>Build folder name: title_slug.guid</summary>
+    /// <summary>Build folder name — just the project ID. Title lives inside story.json.</summary>
     public static string BuildFolderName(string projectId, string? title = null)
     {
-        if (string.IsNullOrWhiteSpace(title) || title == Constants.Defaults.UntitledStory)
-            return $"untitled.{projectId}";
-
-        var slug = FolderSlug().Replace(title.ToLowerInvariant().Trim(), "_").Trim('_');
-        if (slug.Length > 80) slug = slug[..80].TrimEnd('_');
-        return $"{slug}.{projectId}";
+        return projectId;
     }
-
-    [GeneratedRegex(@"[^a-z0-9]+")]
-    private static partial Regex FolderSlug();
 }

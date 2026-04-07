@@ -1,0 +1,31 @@
+{
+  "id": "fcab12aa00025dd6a768432ebb2acbd4",
+  "name": "The Lake Michigan Authentication Event",
+  "type": "document",
+  "document_type": "incident_report",
+  "author": "Independent Scrapper Collective, Signal Division",
+  "date": "2199-11-03",
+  "classification": "leaked",
+  "description": "On October 9th, 2199, a scrapper operating an illegal wideband antenna array on the Lake Michigan shoreline intercepted a 72-second transmission on a frequency allocated to Palladian Aerospace's decommissioned orbital platform network. The transmission was a complete authentication handshake — the kind used to establish encrypted communication between ground stations and satellites. It was textbook perfect: challenge, response, session key exchange, confirmation.\n\nThe satellite it addressed — PAS-7, a communications relay placed in low Earth orbit in 2143 — was deorbited and burned up in the atmosphere in 2186. Palladian Aerospace confirmed the destruction. Insurance was collected. The orbital slot was reassigned. PAS-7 does not exist. The authentication handshake used encryption keys that were rotated out of service thirteen years ago and should exist in no active system.\n\nThe scrapper, who has declined identification for obvious legal reasons, recorded the full 72 seconds on analog backup before his digital systems could be wiped. He has played it for three independent signals analysts. All three confirmed the handshake is genuine, uses correct protocol, and addresses hardware that is currently particulate matter in the upper atmosphere. The transmission has not repeated. The scrapper has monitored the frequency continuously for twenty-six days.\n\nHe is selling the recording. Three buyers have made offers. Two of them are corponation intelligence divisions. The third used a name that appears in no registry. The scrapper has started sleeping in a different location each night.",
+  "related_entities": [
+    "Palladian Aerospace",
+    "Lake Michigan",
+    "Independent Scrapper Collective"
+  ],
+  "credibility": "disputed",
+  "story_hooks": [
+    "Is PAS-7 actually destroyed, or was its deorbiting faked?",
+    "Who is the third buyer with no registry entry?",
+    "What was the satellite being authenticated to communicate with?"
+  ],
+  "tags": [
+    "document",
+    "anomaly",
+    "inexplicable",
+    "new_weird",
+    "signal",
+    "satellite",
+    "lake_michigan",
+    "scrapper"
+  ]
+}

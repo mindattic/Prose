@@ -1,0 +1,33 @@
+{
+  "id": "674c5c0165617687518c72253a3bfa6f",
+  "name": "The Thirteenth Floor",
+  "type": "document",
+  "document_type": "incident_report",
+  "author": "GLMZ Anomaly Documentation Project",
+  "date": "2218-11-07",
+  "classification": "restricted",
+  "description": "Every Tier 3 and above corponation headquartered in the Great Lakes Maritime Zone shares an architectural secret that no one will discuss on record. Floor 13 exists in every major tower. The elevators skip it. The stairwell fire doors on levels 12 and 14 are sealed with hardware that predates the buildings themselves — mechanical locks, no digital interface, no badge reader. Building schematics filed with the GLMZ Municipal Authority show floors 12 and 14 as adjacent. The floor between them is not absent from the blueprints. It is present, annotated in a font no architectural software produces, and labeled with a single word that changes depending on who is reading the document.\n\nA facilities engineer named Tomasz Breki, employed by Palladian's infrastructure division, conducted an unauthorized energy audit of the Palladian Spire in 2217. His methodology was straightforward: floor-by-floor power consumption analysis using the building's own metering infrastructure. Floors 1 through 12 showed expected patterns — office equipment, climate control, data processing. Floor 14 and above, the same. Floor 13, which officially does not exist, consumed more electricity than any other floor in the building. More than the server farm on sublevel 4. More than the executive suite's environmental systems. Breki's report was filed, acknowledged, and immediately reclassified. Breki was transferred to a facility in the Arizona Reclamation Zone. He sends postcards to former colleagues. The handwriting changes slightly with each one.\n\nInternal communications recovered from three separate corponation data breaches reveal a consistent pattern. Memos are CC'd to recipients whose employee IDs return no name, no department, no access record when queried through HR systems. Meeting invitations are sent to rooms that do not appear on any floor plan. Budget allocations reference cost centers that exist in the financial system but are linked to nothing — no project, no team, no line of business. Middle managers across multiple corporations exhibit identical physiological responses when asked about Floor 13: elevated heart rate, micro-expressions consistent with fear, and a conversational pivot so smooth it appears rehearsed. It is not rehearsed. They are not coordinating. They are simply all afraid of the same thing.\n\nJanatorial staff across four Tier 4 corponation towers have independently reported finding doors in stairwells between floors 12 and 14. The doors are always closed. The handles are warm. When pressed for detail, cleaning staff describe a sound from behind the doors — not mechanical, not vocal, but rhythmic. Like breathing, if breathing were an industrial process. One custodian, who asked to remain anonymous, said she pressed her ear to the door once. She heard someone on the other side doing the same thing. She heard her own breathing played back to her, one second delayed.\n\nThe GLMZ Anomaly Documentation Project has requested access to Floor 13 of six corponation headquarters. All six requests were denied, not by the corporations, but by the GLMZ Municipal Authority, which stated that no such floors exist. The Authority's denial was filed from an office whose address, when checked against city records, is located on the thirteenth floor of the Municipal Authority building itself.",
+  "related_entities": [
+    "Palladian",
+    "GLMZ Municipal Authority",
+    "Meridian 88"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "Tomasz Breki's postcards from Arizona contain subtle changes that suggest he may no longer be writing them",
+    "The cost centers on Floor 13 are drawing budget — someone or something is spending the money"
+  ],
+  "tags": [
+    "document",
+    "anomaly",
+    "inexplicable",
+    "new_weird",
+    "glmz",
+    "literary",
+    "kafka",
+    "corponation",
+    "architecture",
+    "bureaucracy",
+    "hidden_infrastructure"
+  ]
+}

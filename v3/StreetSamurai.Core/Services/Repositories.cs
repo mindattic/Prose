@@ -132,6 +132,12 @@ public class AutomatonRepository : JsonDirectoryRepository<AutomatonData>
         : base(Path.Combine(paths.EngineDataDir, "automata"), a => a.Name) { }
 }
 
+public class SubsidiaryRepository : JsonDirectoryRepository<SubsidiaryData>
+{
+    public SubsidiaryRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "subsidiaries"), s => s.Name) { }
+}
+
 public class EntertainmentRepository : JsonDirectoryRepository<EntertainmentData>
 {
     public EntertainmentRepository(IPathProvider paths)
@@ -156,10 +162,10 @@ public class ArchetypeRepository : JsonDirectoryRepository<ArchetypeData>
         : base(Path.Combine(paths.EngineDataDir, "archetypes"), a => a.Name) { }
 }
 
-public class SubstrateRepository : JsonDirectoryRepository<SubstrateData>
+public class MaterialRepository : JsonDirectoryRepository<MaterialData>
 {
-    public SubstrateRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "substrates"), s => s.ProductName.Length > 0 ? s.ProductName : s.Name) { }
+    public MaterialRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "materials"), s => s.ProductName.Length > 0 ? s.ProductName : s.Name) { }
 }
 
 public class PharmaceuticalRepository : JsonDirectoryRepository<PharmaceuticalData>

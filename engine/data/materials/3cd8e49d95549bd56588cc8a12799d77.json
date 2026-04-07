@@ -1,0 +1,43 @@
+{
+  "id": "3cd8e49d95549bd56588cc8a12799d77",
+  "name": "Depleted Uranium Alloy",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "DU",
+    "staballoy",
+    "penetrator alloy"
+  ],
+  "category": "metal",
+  "description": "Uranium with most of its fissile U-235 removed, leaving a metal denser than lead with self-sharpening properties under impact. DU penetrator rods punch through armor by shedding material in a way that keeps the tip sharp. Controversial due to radioactive dust contamination, DU remains in military arsenals where maximum penetration is non-negotiable.",
+  "properties": [
+    "extremely_dense",
+    "self_sharpening",
+    "pyrophoric",
+    "radioactive_dust",
+    "toxic"
+  ],
+  "developers": [],
+  "applications": [
+    "armor-piercing penetrators",
+    "tank armor",
+    "radiation shielding",
+    "counterweights"
+  ],
+  "tier_availability": "Tier 4-5 (military restricted)",
+  "cost": "Φ 30 per kg",
+  "story_hooks": [
+    "A cache of DU penetrator rounds has gone missing from a military depot — the radioactive signature makes them trackable but also makes the search urgent."
+  ],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "military",
+    "restricted",
+    "toxic",
+    "dense"
+  ]
+}

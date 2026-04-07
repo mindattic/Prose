@@ -1,0 +1,31 @@
+{
+  "id": "29f9b233a025548eaf54f94df4e51eb7",
+  "name": "Micro-Transactions: The Economy of Fractions",
+  "type": "document",
+  "document_type": "technical_paper",
+  "author": "QFIC Economic Infrastructure Report",
+  "date": "2196-06-20",
+  "classification": "public",
+  "description": "The Quanta micro-transaction system enables financial transfers as small as Φ0.001 — one milliQuanta — with the same verification security as transfers of any size. This capability has fundamentally restructured how value is exchanged in daily life, enabling a granularity of commerce that was architecturally impossible under previous monetary systems. When everything can be priced, everything is. The average Meridian 88 resident completes 847 micro-transactions per day, most of them automated through their BCI and invisible to conscious awareness. You are paying for things you do not know you are paying for.\n\nThe technical infrastructure supporting micro-transactions uses a batched verification system called Quantum Micropayment Channels (QMC). Rather than verifying each Φ0.001 transaction individually — which would overwhelm even the EDN's capacity — QMCs aggregate micro-transactions between frequent transaction partners into periodic settlement batches. Your BCI accumulates micro-charges throughout the day: Φ0.003 for each neural-feed content item consumed, Φ0.012 per minute for Tier 3 atmospheric processing surcharges, Φ0.001 per biometric scan processed at security checkpoints, Φ0.008 for each real-time translation processed through your BCI's language module. These accumulate in a local QMC buffer and settle against the relevant service providers every 15 minutes. You never see the individual charges. You see your balance declining like a slow leak you cannot find.\n\nThe micro-transaction economy has created entirely new categories of commerce. Neural-feed content creators earn fractions of a Quanta each time someone's BCI processes their content — a news snippet, an entertainment clip, a data visualization. The most successful content creators earn thousands of Quanta monthly from billions of Φ0.001 impressions. Air quality surcharges vary by tier and district: Tier 1 Shelf residents pay Φ0.012 per minute for atmospheric processing (the machines that keep their air breathable), while Tier 5 corporate residents breathe purified air included in their residential package. Walking through a commercial district triggers proximity advertising charges — your BCI processes targeted ads, and the advertiser pays your attention fee of Φ0.002 per impression directly to the district's infrastructure fund. Some districts have experimented with \"breathing surcharges\" — per-breath atmospheric processing fees calculated by your BCI's respiratory monitoring — but these were prohibited by QFIC Resolution 2194-47 after public backlash. The resolution's language is notable: it prohibits per-breath billing specifically, but not per-minute atmospheric charges, which accomplish the same thing with less psychological impact.\n\nThe dark side of micro-transactions is death by a thousand cuts. A Tier 1 resident earning the UBC minimum of Φ120 per month loses an estimated Φ31-48 to automated micro-charges they never consciously authorized. Neural-feed consumption, atmospheric processing, transit proximity fees, biometric processing charges, data storage fees for BCI-recorded memories, and dozens of other micro-levies erode the UBC before any deliberate spending occurs. Advocacy groups have termed this \"the invisible tax\" — a continuous extraction of value that disproportionately affects those with the least. The QFIC's position is that all charges are disclosed in the terms of service that BCI users agreed to during installation. The fact that those terms of service are 2.3 million words long and would take 847 hours to read at average speed is, they maintain, not their problem.",
+  "related_entities": [
+    "qfic",
+    "sterling_nakamura",
+    "meridian_88"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "A character discovers their BCI has been routing micro-payments to an entity that does not officially exist",
+    "A Shelf activist develops a BCI mod that makes every micro-transaction audibly ping, driving users mad but making the invisible visible"
+  ],
+  "tags": [
+    "document",
+    "quanta",
+    "currency",
+    "technical",
+    "micro-transactions",
+    "bci",
+    "ubc",
+    "shelf",
+    "atmospheric_processing"
+  ]
+}

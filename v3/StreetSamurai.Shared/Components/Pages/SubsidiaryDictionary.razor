@@ -1,0 +1,98 @@
+@page "/subsidiaries"
+@inject SubsidiaryRepository Repo
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+@inject WorldGraphService Graph
+
+<h4 class="text-danger mb-3">Subsidiaries</h4>
+<div class="dict-layout">
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
+                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+            <div class="mb-2">
+                <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+            </div>
+            <div class="d-flex gap-2">
+            <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
+            </div>
+        </div>
+        <div class="dict-items">
+            @foreach (var s in FilteredItems)
+            {
+                <div class="list-item text-light @(editing?.Name == s.Name ? "active" : "")" @onclick="() => Edit(s)">
+                    <div class="fw-bold small">@s.Name</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@s.ParentCorponation</div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="dict-editor">
+        @if (editing != null)
+        {
+            <EditViewToggle RepoName="subsidiaries" Title="@(isNew ? "New Subsidiary" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                    @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
+                    @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="row g-3 mb-3">
+                        <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div class="col-4"><div class="field-label">Parent Corponation</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ParentCorponation" /></div>
+                        <div class="col-4"><div class="field-label">Line of Business</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.LineOfBusiness" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-8"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
+                        <div class="col-4">
+                            <div class="form-check form-switch mt-4">
+                                <input class="form-check-input" type="checkbox" @bind="editing.PublicFacing" />
+                                <label class="form-check-label text-muted">Public Facing</label>
+                            </div>
+                        </div>
+                    </div>
+                </ChildContent>
+            </EditViewToggle>
+        }
+        else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a subsidiary or create a new one</div> }
+    </div>
+</div>
+
+@code {
+    private List<SubsidiaryData> items = [];
+    private SubsidiaryData? editing;
+    private bool isNew, _confirmDelete;
+    private string originalName = "";
+    private string filter = "";
+    private List<(string name, int count)> allTags = [];
+    private HashSet<string> selectedTags = [];
+
+    private IEnumerable<SubsidiaryData> FilteredItems
+    {
+        get
+        {
+            IEnumerable<SubsidiaryData> result = items;
+            if (!string.IsNullOrWhiteSpace(filter))
+                result = result.Where(s => s.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
+            if (selectedTags.Count > 0)
+                result = result.Where(s => selectedTags.All(t => s.Tags.Contains(t)));
+            return result;
+        }
+    }
+
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    private void RebuildTags() { allTags = items.SelectMany(s => s.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
+    private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
+    private void AddNew() { editing = new SubsidiaryData(); isNew = true; _confirmDelete = false; }
+    private void Edit(SubsidiaryData s) { editing = s; originalName = s.Name; isNew = false; _confirmDelete = false; }
+    private void SaveEdit()
+    {
+        if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return;
+        if (!isNew && originalName != editing.Name) Repo.Delete(originalName);
+        Repo.Save(editing); editing = null; items = Repo.GetAll(); RebuildTags();
+    }
+    private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Name); Repo.Delete(editing.Name); editing = null; _confirmDelete = false; items = Repo.GetAll(); RebuildTags(); }
+    protected override async Task OnAfterRenderAsync(bool firstRender) { await JS.InvokeVoidAsync("writeInterop.autoResizeAll"); }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+}

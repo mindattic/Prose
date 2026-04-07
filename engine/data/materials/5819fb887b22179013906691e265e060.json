@@ -1,0 +1,40 @@
+{
+  "id": "5819fb887b22179013906691e265e060",
+  "name": "Self-Repairing Wall Panel",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "bio-wall",
+    "living wall substrate"
+  ],
+  "category": "future",
+  "description": "Composite wall panels incorporating a vascular network of healing agents that flow to damage sites and polymerize. A bullet hole or impact crack triggers local repair within hours, with the panel returning to 90% of original strength. Standard in military installations and Tier 3+ residential construction.",
+  "properties": [
+    "self_repairing",
+    "impact_resistant",
+    "vascular_network",
+    "semi_biological"
+  ],
+  "developers": [
+    "Tessera Building Systems"
+  ],
+  "applications": [
+    "military installations",
+    "residential walls",
+    "vehicle panels",
+    "security barriers"
+  ],
+  "tier_availability": "Tier 3-5",
+  "cost": "Φ 85 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "self_healing",
+    "construction",
+    "armor"
+  ]
+}

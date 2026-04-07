@@ -1,0 +1,38 @@
+{
+  "id": "4e659bf40c1cdb1f2281d0e2979dd9f8",
+  "name": "Quantum Dots",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "QDs",
+    "semiconductor nanocrystals"
+  ],
+  "category": "advanced",
+  "description": "Nanometer-scale semiconductor crystals whose optical properties depend on their size. Quantum dots emit precisely tunable colors of light, making them essential in displays, medical imaging, and solar cells. In 2200, QD-enhanced displays deliver perfect color reproduction, and QD-tagged nanoprobes map cellular processes in real time.",
+  "properties": [
+    "size_tunable_emission",
+    "bright_fluorescence",
+    "narrow_emission_bandwidth",
+    "photostable"
+  ],
+  "developers": [],
+  "applications": [
+    "display technology",
+    "medical imaging",
+    "solar cells",
+    "biological tagging",
+    "quantum computing"
+  ],
+  "tier_availability": "Tier 3-5",
+  "cost": "Φ 500 per gram",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "nano",
+    "optical"
+  ]
+}

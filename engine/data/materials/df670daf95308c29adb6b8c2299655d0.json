@@ -1,0 +1,37 @@
+{
+  "id": "df670daf95308c29adb6b8c2299655d0",
+  "name": "Chromium",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "Cr",
+    "chrome"
+  ],
+  "category": "metal",
+  "description": "The element that makes stainless steel stainless. Chromium's oxide layer provides unmatched corrosion protection, and decorative chrome plating remains popular on vehicles and fixtures. Hard chrome coatings protect hydraulic cylinders and gun barrels from wear. Nearly all chromium is mined in southern Africa.",
+  "properties": [
+    "corrosion_protective",
+    "very_hard",
+    "reflective",
+    "heat_resistant"
+  ],
+  "developers": [],
+  "applications": [
+    "stainless steel production",
+    "decorative plating",
+    "hard chrome coatings",
+    "refractory bricks"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 9 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "alloying",
+    "protective"
+  ]
+}

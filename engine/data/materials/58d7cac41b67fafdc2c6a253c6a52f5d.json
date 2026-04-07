@@ -1,0 +1,41 @@
+{
+  "id": "58d7cac41b67fafdc2c6a253c6a52f5d",
+  "name": "Nanoscale Thermal Barrier Coating",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "NTBC",
+    "thermal shield coat",
+    "heat mirror paint"
+  ],
+  "category": "future",
+  "description": "A spray-applied nanocoating that reflects infrared radiation and blocks heat transfer through a combination of aerogel nanoparticles and metamaterial structures. A 2mm coating provides thermal insulation equivalent to 50mm of fiberglass. Applied to building exteriors, vehicle surfaces, and personal protective equipment.",
+  "properties": [
+    "extreme_thermal_insulation",
+    "thin_profile",
+    "sprayable",
+    "IR_reflective"
+  ],
+  "developers": [
+    "Meridian Infrastructure Labs"
+  ],
+  "applications": [
+    "building insulation",
+    "vehicle thermal protection",
+    "firefighter suits",
+    "industrial pipe insulation"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 35 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "coating",
+    "thermal",
+    "insulation"
+  ]
+}

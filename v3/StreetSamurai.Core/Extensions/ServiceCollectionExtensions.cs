@@ -36,11 +36,12 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ContractRepository>();
         services.AddSingleton<NewsRepository>();
         services.AddSingleton<ArchetypeRepository>();
-        services.AddSingleton<SubstrateRepository>();
+        services.AddSingleton<MaterialRepository>();
         services.AddSingleton<PharmaceuticalRepository>();
         services.AddSingleton<ConsumerGoodRepository>();
         services.AddSingleton<AutomatonRepository>();
         services.AddSingleton<ApparelRepository>();
+        services.AddSingleton<SubsidiaryRepository>();
         services.AddSingleton<EntertainmentRepository>();
         services.AddSingleton<MotifRepository>();
         services.AddSingleton<ToneBibleRepository>();
@@ -67,11 +68,12 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ContractRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<NewsRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ArchetypeRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SubstrateRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<MaterialRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PharmaceuticalRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ConsumerGoodRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<AutomatonRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ApparelRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SubsidiaryRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<EntertainmentRepository>());
 
         // Export discovery — auto-finds all IExportableRepository instances
@@ -84,6 +86,11 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IDatabaseService>(sp => sp.GetRequiredService<DatabaseService>());
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
+        services.AddSingleton<ViewModeService>();
+        services.AddSingleton<SceneContextBuilder>();
+        services.AddSingleton<ConsequenceService>();
+        services.AddSingleton<AmbientAnomalyService>();
+        services.AddSingleton<NarrativeSummaryService>();
         services.AddSingleton<ExportService>();
         services.AddSingleton<FtpPublishService>();
         services.AddSingleton<HtmlExportService>();
@@ -191,7 +198,7 @@ public static class ServiceCollectionExtensions
                 sp.GetRequiredService<QuoteRepository>(),
                 sp.GetRequiredService<ConsumerGoodRepository>(),
                 sp.GetRequiredService<PharmaceuticalRepository>(),
-                sp.GetRequiredService<SubstrateRepository>(),
+                sp.GetRequiredService<MaterialRepository>(),
                 sp.GetRequiredService<AmmunitionRepository>());
             idx.RebuildIndex();
             return idx;

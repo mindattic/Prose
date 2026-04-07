@@ -13,7 +13,6 @@
                 <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
             </div>
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Quotes" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
@@ -31,46 +30,43 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(isNew ? "New Quote" : "Edit Quote")</h5>
-                <div class="d-flex gap-2">
+            <EditViewToggle RepoName="quotes" Title="@(isNew ? "New Quote" : "Quote")" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Quotes" EntryName="@(editing.Quote.Length > 30 ? editing.Quote[..30] : editing.Quote)" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
                     @if (confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmDelete = false">No</button> }
-                </div>
-            </div>
-
-            <div class="mb-3"><div class="field-label">Quote</div><textarea class="form-control bg-dark text-light border-secondary" rows="3" @bind="editing.Quote"></textarea></div>
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 1; min-width: 200px;"><div class="field-label">Attribution</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Who said it (blank for anonymous)" @bind="editing.Attribution" /></div>
-                <div style="flex: 1; min-width: 200px;"><div class="field-label">Source</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Book, film, in-world origin..." @bind="editing.Source" /></div>
-            </div>
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 1; min-width: 150px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="wisdom, warning, insult, proverb..." @bind="editing.Category" /></div>
-                <div style="flex: 0 0 auto;" class="d-flex align-items-end gap-2">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" @bind="editing.InWorld" id="inWorldCheck" />
-                        <label class="form-check-label text-muted small" for="inWorldCheck">In-world (said by M88 character)</label>
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="mb-3"><div class="field-label">Quote</div><textarea class="form-control bg-dark text-light border-secondary" rows="3" @bind="editing.Quote"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Attribution</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Who said it (blank for anonymous)" @bind="editing.Attribution" /></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Source</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Book, film, in-world origin..." @bind="editing.Source" /></div>
                     </div>
-                </div>
-            </div>
-            <div class="mb-3"><div class="field-label">Context</div><textarea class="form-control bg-dark text-light border-secondary" rows="2" placeholder="When/why this was said..." @bind="editing.Context"></textarea></div>
-
-            @if (!string.IsNullOrWhiteSpace(editing.Quote))
-            {
-                <div class="card bg-black border-secondary mt-3">
-                    <div class="card-body">
-                        <blockquote class="mb-1 fst-italic" style="font-size: 1.1rem; color: var(--bs-light);">@editing.Quote</blockquote>
-                        @if (!string.IsNullOrWhiteSpace(editing.Attribution))
-                        {
-                            <small class="text-muted">— @editing.Attribution</small>
-                        }
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 150px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="wisdom, warning, insult, proverb..." @bind="editing.Category" /></div>
+                        <div style="flex: 0 0 auto;" class="d-flex align-items-end gap-2">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" @bind="editing.InWorld" id="inWorldCheck" />
+                                <label class="form-check-label text-muted small" for="inWorldCheck">In-world (said by M88 character)</label>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            }
+                    <div class="mb-3"><div class="field-label">Context</div><textarea class="form-control bg-dark text-light border-secondary" rows="2" placeholder="When/why this was said..." @bind="editing.Context"></textarea></div>
+                    @if (!string.IsNullOrWhiteSpace(editing.Quote))
+                    {
+                        <div class="card bg-black border-secondary mt-3">
+                            <div class="card-body">
+                                <blockquote class="mb-1 fst-italic" style="font-size: 1.1rem; color: var(--bs-light);">@editing.Quote</blockquote>
+                                @if (!string.IsNullOrWhiteSpace(editing.Attribution))
+                                {
+                                    <small class="text-muted">— @editing.Attribution</small>
+                                }
+                            </div>
+                        </div>
+                    }
+                </ChildContent>
+            </EditViewToggle>
         }
-            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
         else
         {
             <div class="text-center text-muted py-5"><i class="bi bi-quote" style="font-size:3rem;"></i><p class="mt-2">Select a quote or add a new one.</p></div>
@@ -115,5 +111,4 @@
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Quote.Length > 40 ? e.Quote[..40] : e.Quote, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
-    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

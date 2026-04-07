@@ -1,0 +1,30 @@
+{
+  "id": "aff04dd31ed2c8a181f3d3adcff0b5db",
+  "name": "Field Report: Compass Anomaly at Yates-Calumet Intersection",
+  "type": "document",
+  "document_type": "field_report",
+  "author": "Meridian 88 Navigation Services Division",
+  "date": "2199-05-08",
+  "classification": "public",
+  "description": "The intersection of Yates Avenue and Calumet Way in the mid-Circuit contains a localized magnetic anomaly that causes all compass instruments — analog, digital, and BCI-integrated — to point downward at an angle of approximately 73 degrees from horizontal, converging on a point 6.2 meters below street level. The anomaly has been measured by four independent teams using equipment ranging from consumer-grade digital compasses to research-grade magnetometers. The results are consistent. Something beneath the intersection is producing a magnetic field strong enough to override the Earth's geomagnetic field within a radius of approximately 15 meters.\n\nThere is nothing 6.2 meters below the intersection. This has been confirmed by ground-penetrating radar, seismic reflection survey, and a physical excavation conducted in 2198 under the pretext of utility maintenance. The excavation reached 8 meters depth and found undisturbed soil and rock consistent with the geological profile of the area. No metallic objects, no ore deposits, no buried infrastructure, no voids, no anomalous materials of any kind. The excavation was backfilled. The magnetic anomaly remained unchanged, which means that either the source of the field moved to avoid the excavation, or the source of the field does not exist in a way that ground-penetrating radar, seismic surveys, and physical digging can detect.\n\nThe anomaly was first reported in 2194 by a courier whose BCI navigation overlay began spinning at the intersection. Since then, it has become a local landmark. Residents call it Compass Point. Street vendors sell souvenir compasses that \"remember\" the direction — a marketing gimmick, since the compasses behave normally once removed from the affected area. Children play a game where they stand at the intersection's center and spin until their BCI compass stabilizes on the impossible bearing.\n\nNavigation Services has rerouted automated delivery drones around the intersection after three units entered tight descending spirals attempting to follow their compass readings to the convergence point. We have posted an advisory notice. We have no explanation. The anomaly is stable, consistent, and points to something that isn't there. Or something that is there in a way we cannot detect. I am not comfortable with either possibility.",
+  "related_entities": [
+    "The Circuit",
+    "Meridian 88"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "What is producing the magnetic field beneath the intersection?",
+    "Did the source move during the excavation, and if so, what does that imply?",
+    "What would happen if someone actually reached the convergence point?"
+  ],
+  "tags": [
+    "inexplicable",
+    "anomaly",
+    "new_weird",
+    "circuit",
+    "magnetic",
+    "compass",
+    "underground",
+    "field_report"
+  ]
+}

@@ -1,0 +1,132 @@
+@using System.Text.Json
+
+@if (!string.IsNullOrEmpty(Json))
+{
+    <div class="entry-viewer">
+        @((MarkupString)RenderEntry(Json))
+    </div>
+}
+
+<style>
+    .entry-viewer { padding: 4px 0; }
+    .ev-desc { line-height: 1.7; color: #e6edf3; margin-bottom: 12px; }
+    .ev-chain { padding: 6px 10px; background: #1c2128; border-radius: 4px; font-size: 0.8rem; color: #8b949e; display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
+    .ev-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; }
+    .ev-tag { background: #0d1117; border: 1px solid #30363d; border-radius: 10px; padding: 1px 8px; font-size: 0.7rem; color: #8b949e; }
+    .ev-fields { width: 100%; border-collapse: collapse; }
+    .ev-fields td { padding: 4px 10px; vertical-align: top; border-bottom: 1px solid #30363d; font-size: 0.85rem; word-break: break-word; }
+    .ev-key { color: #8b949e; white-space: nowrap; width: 160px; background: #1c2128; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .ev-val { color: #e6edf3; }
+    .ev-list { list-style: disc; margin-left: 16px; }
+    .ev-list li { font-size: 0.85rem; padding: 1px 0; }
+    .ev-sub { border-left: 3px solid #30363d; padding-left: 12px; margin: 4px 0; }
+</style>
+
+@code {
+    [Parameter] public string? Json { get; set; }
+
+    private static readonly HashSet<string> SkipFields = new() { "id", "description", "body", "tags", "parent_corponation", "type" };
+
+    private static string RenderEntry(string json)
+    {
+        var sb = new System.Text.StringBuilder();
+        try
+        {
+            var doc = JsonDocument.Parse(json);
+            var root = doc.RootElement;
+
+            // Description
+            var desc = GetString(root, "description") ?? GetString(root, "body") ?? "";
+            if (!string.IsNullOrWhiteSpace(desc))
+                sb.Append($"<div class=\"ev-desc\">{Esc(desc).Replace("\\n", "<br>").Replace("\n", "<br>")}</div>");
+
+            // Corporate chain
+            var parent = GetString(root, "parent_corponation") ?? "";
+            if (!string.IsNullOrWhiteSpace(parent))
+            {
+                var mfr = GetString(root, "manufacturer") ?? "";
+                if (!string.IsNullOrWhiteSpace(mfr) && !mfr.Equals(parent, StringComparison.OrdinalIgnoreCase))
+                    sb.Append($"<div class=\"ev-chain\"><i class=\"bi bi-diagram-3\"></i> {Esc(mfr)} <span class=\"text-danger mx-1\">&rarr;</span> {Esc(parent)}</div>");
+                else
+                    sb.Append($"<div class=\"ev-chain\"><i class=\"bi bi-building\"></i> {Esc(parent)}</div>");
+            }
+
+            // Tags
+            if (root.TryGetProperty("tags", out var tagsEl) && tagsEl.ValueKind == JsonValueKind.Array)
+            {
+                var tags = tagsEl.EnumerateArray().Where(t => t.ValueKind == JsonValueKind.String).Select(t => t.GetString()!).ToList();
+                if (tags.Count > 0)
+                {
+                    sb.Append("<div class=\"ev-tags\">");
+                    foreach (var tag in tags) sb.Append($"<span class=\"ev-tag\">{Esc(tag)}</span>");
+                    sb.Append("</div>");
+                }
+            }
+
+            // Fields table
+            var fields = new System.Text.StringBuilder();
+            foreach (var prop in root.EnumerateObject())
+            {
+                if (SkipFields.Contains(prop.Name)) continue;
+                if (prop.Value.ValueKind == JsonValueKind.String && string.IsNullOrWhiteSpace(prop.Value.GetString())) continue;
+                if (prop.Value.ValueKind == JsonValueKind.Array && prop.Value.GetArrayLength() == 0) continue;
+                if (prop.Value.ValueKind == JsonValueKind.Null) continue;
+
+                fields.Append($"<tr><td class=\"ev-key\">{Esc(prop.Name.Replace("_", " "))}</td><td class=\"ev-val\">{FormatVal(prop.Value)}</td></tr>");
+            }
+            if (fields.Length > 0)
+                sb.Append($"<table class=\"ev-fields\">{fields}</table>");
+        }
+        catch { sb.Append($"<pre>{Esc(json)}</pre>"); }
+        return sb.ToString();
+    }
+
+    private static string? GetString(JsonElement root, string prop)
+    {
+        if (root.TryGetProperty(prop, out var el) && el.ValueKind == JsonValueKind.String)
+            return el.GetString();
+        return null;
+    }
+
+    private static string FormatVal(JsonElement val) => val.ValueKind switch
+    {
+        JsonValueKind.String => FormatStr(val.GetString() ?? ""),
+        JsonValueKind.Number => $"<span style=\"color:#79c0ff\">{val}</span>",
+        JsonValueKind.True => "<span style=\"color:#7ee787\">true</span>",
+        JsonValueKind.False => "<span style=\"color:#7ee787\">false</span>",
+        JsonValueKind.Array => FormatArr(val),
+        JsonValueKind.Object => FormatObj(val),
+        _ => Esc(val.ToString()),
+    };
+
+    private static string FormatStr(string s)
+    {
+        if (string.IsNullOrWhiteSpace(s)) return "<span style=\"color:#8b949e;font-style:italic\">\u2014</span>";
+        return Esc(s).Replace("\\n", "<br>").Replace("\n", "<br>");
+    }
+
+    private static string FormatArr(JsonElement arr)
+    {
+        var items = arr.EnumerateArray().ToList();
+        if (items.Count == 0) return "\u2014";
+        if (items.All(i => i.ValueKind == JsonValueKind.String))
+        {
+            var sb = new System.Text.StringBuilder("<ul class=\"ev-list\">");
+            foreach (var i in items) sb.Append($"<li>{Esc(i.GetString() ?? "")}</li>");
+            return sb.Append("</ul>").ToString();
+        }
+        var csb = new System.Text.StringBuilder();
+        foreach (var i in items) csb.Append($"<div class=\"ev-sub\">{FormatVal(i)}</div>");
+        return csb.ToString();
+    }
+
+    private static string FormatObj(JsonElement obj)
+    {
+        var sb = new System.Text.StringBuilder("<table class=\"ev-fields\" style=\"margin:0\">");
+        foreach (var p in obj.EnumerateObject())
+            sb.Append($"<tr><td class=\"ev-key\" style=\"width:120px;font-size:0.7rem\">{Esc(p.Name.Replace("_", " "))}</td><td class=\"ev-val\">{FormatVal(p.Value)}</td></tr>");
+        return sb.Append("</table>").ToString();
+    }
+
+    private static string Esc(string s) => System.Net.WebUtility.HtmlEncode(s);
+}

@@ -1,0 +1,34 @@
+{
+  "id": "a4d801dfab426f225cbc6cce03d2bd7c",
+  "name": "The Library That Loops",
+  "type": "document",
+  "document_type": "incident_report",
+  "author": "GLMZ Anomaly Documentation Project",
+  "date": "2221-06-23",
+  "classification": "restricted",
+  "description": "A decommissioned server farm in Meridian 88's Lower Shelf district was supposed to be cold storage — powered down, sealed, and forgotten. The facility, originally operated by Cascadia Cloud Solutions before their absorption into the Palladian data services subsidiary, housed approximately four exabytes of archived corporate data. Routine environmental checks confirmed the building was drawing baseline power only: climate control for hardware preservation, nothing more. Then a network cartographer named Seo-Yun Park ran a topology scan as part of an unrelated infrastructure audit and discovered that the servers were not cold. They were running. All of them. Processing queries that no one had submitted, serving responses to clients that no longer existed, and maintaining a dataset that had grown by approximately 900% since the facility was officially decommissioned.\n\nThe dataset contains everything. Every document ever deleted from every corporation, government office, educational institution, and private individual that used Cascadia's cloud infrastructure between 2188 and 2214. Deletion logs confirm the files were destroyed. Hash verification confirms the copies in the server farm are identical to the originals. The files exist in a state that should be impossible: confirmed destroyed and confirmed present, simultaneously. Queries to the system return results, but not in any order that corresponds to relevance, date, or alphabetical sorting. The ordering principle, if there is one, appears to be narrative. Results are arranged as if telling a story. Different queries produce different stories, but they all seem to be about the same thing — a thing the system will not name directly.\n\nSeo-Yun Park queried the system for her own name. She expected personnel records, maybe old emails. What she received was a resignation letter — her own, addressed to her current employer, dated three months in the future. The letter was detailed, specific, and referenced events that had not yet occurred, including a performance review score she would not receive for another six weeks. The score, when it arrived, was accurate to two decimal places. Park did not resign on the date specified in the letter. She resigned two weeks earlier, unable to tolerate the feeling of performing a script someone else had written. The server farm's copy of her resignation letter updated to reflect the new date within minutes.\n\nData forensics teams from two independent security firms have examined the server farm's hardware. The equipment is standard — twelve years old, running firmware that was obsolete when it was installed. There is no mechanism by which it could generate predictive content. There is no external data feed. There is no AI model running on the hardware; the processing architecture is pure storage. The queries are answered by a system that should only be capable of retrieval, not generation. One forensic analyst described the situation as \"a filing cabinet that writes.\" She asked to be removed from the project the same day.\n\nThe facility remains operational. The GLMZ Anomaly Documentation Project has placed it under passive observation, which means no one goes in and everyone pretends the readings are normal. Power consumption has increased 12% in the last quarter. The dataset continues to grow. New deletions from companies that have no relationship with Cascadia are appearing in the archive. The library is not waiting for queries. It is collecting. And whatever story it is trying to tell, it is getting longer.",
+  "related_entities": [
+    "Cascadia Cloud Solutions",
+    "Palladian",
+    "Meridian 88",
+    "Lower Shelf"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "The server farm predicted Seo-Yun Park's resignation — what else has it predicted that hasn't been queried yet?",
+    "The growing dataset includes files from companies that never used Cascadia's services — it is acquiring data through unknown means"
+  ],
+  "tags": [
+    "document",
+    "anomaly",
+    "inexplicable",
+    "new_weird",
+    "glmz",
+    "literary",
+    "borges",
+    "data",
+    "prediction",
+    "server_farm",
+    "temporal"
+  ]
+}

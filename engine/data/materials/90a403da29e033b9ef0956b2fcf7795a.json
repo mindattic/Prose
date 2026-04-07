@@ -1,0 +1,37 @@
+{
+  "id": "90a403da29e033b9ef0956b2fcf7795a",
+  "name": "Wool",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "merino wool",
+    "sheep wool"
+  ],
+  "category": "natural",
+  "description": "Merino sheep thrive in managed highland pastures, producing fine wool prized for its warmth, moisture-wicking properties, and natural fire resistance. Wool garments remain standard issue in cold-climate military units and are favored by Tier 3-4 consumers who prefer natural fibers. Wool insulation also fills a niche in sustainable construction.",
+  "properties": [
+    "insulating",
+    "moisture_wicking",
+    "fire_resistant",
+    "odor_resistant",
+    "elastic"
+  ],
+  "developers": [],
+  "applications": [
+    "cold-weather garments",
+    "military uniforms",
+    "insulation",
+    "upholstery"
+  ],
+  "tier_availability": "Tier 2-4",
+  "cost": "Φ 20 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "natural",
+    "natural",
+    "textile"
+  ]
+}

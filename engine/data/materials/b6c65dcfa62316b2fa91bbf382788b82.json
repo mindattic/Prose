@@ -1,0 +1,39 @@
+{
+  "id": "b6c65dcfa62316b2fa91bbf382788b82",
+  "name": "E-Waste Solder Alloy",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "reclaimed solder",
+    "junk solder",
+    "street solder"
+  ],
+  "category": "improvised",
+  "description": "Solder recovered from electronic waste by melting and straining circuit boards. The resulting alloy is an unpredictable mix of tin, lead, silver, and copper with variable melting points and joint quality. Street electronics repair shops use it because it costs nearly nothing. Joints may be brittle or conductive enough — you roll the dice.",
+  "properties": [
+    "variable_composition",
+    "cheap",
+    "toxic_lead_content",
+    "unpredictable_quality"
+  ],
+  "developers": [],
+  "applications": [
+    "street electronics repair",
+    "improvised wiring",
+    "jewelry making",
+    "plumbing patches"
+  ],
+  "tier_availability": "Tier 1-2",
+  "cost": "Φ 2 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "improvised",
+    "improvised",
+    "recycled",
+    "electronics",
+    "toxic"
+  ]
+}

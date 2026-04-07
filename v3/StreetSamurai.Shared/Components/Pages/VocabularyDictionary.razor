@@ -14,7 +14,6 @@
                 <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
             </div>
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Vocabulary" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
@@ -32,28 +31,26 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(isNew ? "New Term" : editing.Term)</h5>
-                <div class="d-flex gap-2">
+            <EditViewToggle RepoName="vocabulary" Title="@(isNew ? "New Term" : editing.Term)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Vocabulary" EntryName="@editing.Term" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
                     @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
                     @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
-                </div>
-            </div>
-
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 2; min-width: 200px;"><div class="field-label">Term</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Term" /></div>
-                <div style="flex: 1; min-width: 120px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
-                <div style="flex: 1; min-width: 100px;"><div class="field-label">Tier</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Tier" /></div>
-            </div>
-            <div class="mb-3"><div class="field-label">Definition</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Definition"></textarea></div>
-            <div class="d-flex flex-wrap gap-2 mb-3">
-                <div style="flex: 1; min-width: 200px;"><div class="field-label">Origin</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Origin"></textarea></div>
-                <div style="flex: 1; min-width: 200px;"><div class="field-label">Usage</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Usage"></textarea></div>
-            </div>
-            <div class="mb-3"><div class="field-label">Example</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Example"></textarea></div>
-            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 2; min-width: 200px;"><div class="field-label">Term</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Term" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
+                        <div style="flex: 1; min-width: 100px;"><div class="field-label">Tier</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Tier" /></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Definition</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Definition"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Origin</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Origin"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Usage</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Usage"></textarea></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Example</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Example"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
         }
         else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a term or create new</div> }
     </div>
@@ -90,5 +87,4 @@
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Term, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
-    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

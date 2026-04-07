@@ -1,0 +1,37 @@
+{
+  "id": "b7406cbd387fac397cf3fcb88fd83c51",
+  "name": "Negative Thermal Expansion Material",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "NTE material",
+    "zirconium tungstate"
+  ],
+  "category": "advanced",
+  "description": "Materials that shrink when heated instead of expanding. Blended with conventional materials, NTE compounds create composites with near-zero thermal expansion for precision instruments, optical benches, and space structures where thermal distortion is unacceptable.",
+  "properties": [
+    "shrinks_when_heated",
+    "zero_expansion_blends",
+    "temperature_stable_dimensions"
+  ],
+  "developers": [],
+  "applications": [
+    "precision instruments",
+    "optical benches",
+    "space structures",
+    "dental fillings",
+    "fiber optic connectors"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 250 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "precision",
+    "thermal"
+  ]
+}

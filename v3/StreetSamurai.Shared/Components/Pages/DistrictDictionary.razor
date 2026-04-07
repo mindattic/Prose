@@ -17,7 +17,6 @@
                 <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
             </div>
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Places" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
@@ -35,9 +34,8 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(isNew ? "New Place" : editing.Name)</h5>
-                <div class="d-flex gap-2">
+            <EditViewToggle RepoName="places" Title="@(isNew ? "New Place" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
                     @if (editing.Coordinates.Lat != 0)
                     {
                         <a href="@MapUrl(editing.Coordinates.Lat, editing.Coordinates.Lng, editing.Name)" target="_blank"
@@ -46,55 +44,50 @@
                         </a>
                     }
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Places" EntryName="@editing.Name" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
                     @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
                     @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
-                </div>
-            </div>
-
-            @* ── Map Embed ───────────────────────────────── *@
-            @if (editing.Coordinates.Lat != 0 && !string.IsNullOrWhiteSpace(Settings.MapApiKey))
-            {
-                <div class="mb-3 rounded overflow-hidden border border-secondary" style="height: 250px;">
-                    <div id="here-map" style="width: 100%; height: 100%;"></div>
-                </div>
-            }
-            else if (editing.Coordinates.Lat != 0)
-            {
-                <div class="mb-3 rounded overflow-hidden border border-secondary bg-black d-flex align-items-center justify-content-center" style="height: 200px;">
-                    <div class="text-center">
-                        <i class="bi bi-geo-alt text-danger" style="font-size: 2rem;"></i>
-                        <div class="text-muted small mt-1">@editing.Coordinates.Lat.ToString("F4"), @editing.Coordinates.Lng.ToString("F4")</div>
-                        <a href="@MapUrl(editing.Coordinates.Lat, editing.Coordinates.Lng, editing.Name)" target="_blank" class="btn btn-sm btn-outline-info mt-2">
-                            <i class="bi bi-box-arrow-up-right"></i> Open in HERE
-                        </a>
+                </HeaderButtons>
+                <ChildContent>
+                    @* ── Map Embed ───────────────────────────────── *@
+                    @if (editing.Coordinates.Lat != 0 && !string.IsNullOrWhiteSpace(Settings.MapApiKey))
+                    {
+                        <div class="mb-3 rounded overflow-hidden border border-secondary" style="height: 250px;">
+                            <div id="here-map" style="width: 100%; height: 100%;"></div>
+                        </div>
+                    }
+                    else if (editing.Coordinates.Lat != 0)
+                    {
+                        <div class="mb-3 rounded overflow-hidden border border-secondary bg-black d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <div class="text-center">
+                                <i class="bi bi-geo-alt text-danger" style="font-size: 2rem;"></i>
+                                <div class="text-muted small mt-1">@editing.Coordinates.Lat.ToString("F4"), @editing.Coordinates.Lng.ToString("F4")</div>
+                                <a href="@MapUrl(editing.Coordinates.Lat, editing.Coordinates.Lng, editing.Name)" target="_blank" class="btn btn-sm btn-outline-info mt-2">
+                                    <i class="bi bi-box-arrow-up-right"></i> Open in HERE
+                                </a>
+                            </div>
+                        </div>
+                    }
+                    <div class="row g-3 mb-3">
+                        <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div class="col-4"><div class="field-label">Demographics</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Demographics" /></div>
+                        <div class="col-4"><div class="field-label">Economy</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Economy" /></div>
                     </div>
-                </div>
-            }
-
-            <div class="row g-3 mb-3">
-                <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
-                <div class="col-4"><div class="field-label">Demographics</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Demographics" /></div>
-                <div class="col-4"><div class="field-label">Economy</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Economy" /></div>
-            </div>
-
-            <div class="row g-3 mb-3">
-                <div class="col-6">
-                    <div class="field-label">Latitude</div>
-                    <input type="number" step="0.0001" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Coordinates.Lat" />
-                </div>
-                <div class="col-6">
-                    <div class="field-label">Longitude</div>
-                    <input type="number" step="0.0001" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Coordinates.Lng" />
-                </div>
-            </div>
-
-            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
-            <div class="mb-3"><div class="field-label">Power Structure</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.PowerStructure"></textarea></div>
-
-            <div class="field-label mb-1">Atmosphere</div>
-            <div class="mb-3"><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Atmosphere.Feel"></textarea></div>
-            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
+                    <div class="row g-3 mb-3">
+                        <div class="col-6">
+                            <div class="field-label">Latitude</div>
+                            <input type="number" step="0.0001" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Coordinates.Lat" />
+                        </div>
+                        <div class="col-6">
+                            <div class="field-label">Longitude</div>
+                            <input type="number" step="0.0001" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Coordinates.Lng" />
+                        </div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Power Structure</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.PowerStructure"></textarea></div>
+                    <div class="field-label mb-1">Atmosphere</div>
+                    <div class="mb-3"><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Atmosphere.Feel"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
         }
         else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a place or create a new one</div> }
     </div>
@@ -144,5 +137,4 @@
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
-    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

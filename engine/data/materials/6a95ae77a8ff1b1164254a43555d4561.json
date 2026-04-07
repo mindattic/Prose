@@ -1,0 +1,38 @@
+{
+  "id": "6a95ae77a8ff1b1164254a43555d4561",
+  "name": "Basalt",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "basalt fiber",
+    "volcanic rock"
+  ],
+  "category": "natural",
+  "description": "The most common rock on Earth's surface, basalt is increasingly used in fiber form as a cheaper alternative to carbon fiber. Basalt fiber reinforced polymers offer good strength at a fraction of the cost. Crushed basalt is the standard aggregate for road construction and concrete in lower tiers.",
+  "properties": [
+    "abundant",
+    "fiberable",
+    "heat_resistant",
+    "chemical_resistant"
+  ],
+  "developers": [],
+  "applications": [
+    "road aggregate",
+    "basalt fiber reinforcement",
+    "concrete aggregate",
+    "thermal insulation"
+  ],
+  "tier_availability": "Tier 1-4",
+  "cost": "Φ 0.10 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "natural",
+    "stone",
+    "natural",
+    "common",
+    "fiber"
+  ]
+}

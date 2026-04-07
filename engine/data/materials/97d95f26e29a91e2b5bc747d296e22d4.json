@@ -1,0 +1,39 @@
+{
+  "id": "97d95f26e29a91e2b5bc747d296e22d4",
+  "name": "Metal-Organic Framework",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "MOF",
+    "porous coordination polymer"
+  ],
+  "category": "advanced",
+  "description": "Crystalline materials made of metal ions linked by organic molecules, creating structures with enormous internal surface area. A gram of MOF can have the surface area of a football field. In 2200, MOFs power atmospheric water harvesters in arid zones, capture carbon dioxide from industrial exhaust, and store hydrogen fuel at low pressures.",
+  "properties": [
+    "extreme_surface_area",
+    "tunable_porosity",
+    "gas_adsorption",
+    "lightweight",
+    "customizable"
+  ],
+  "developers": [],
+  "applications": [
+    "atmospheric water harvesting",
+    "carbon capture",
+    "hydrogen storage",
+    "drug delivery",
+    "gas separation"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 45 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "nano",
+    "porous"
+  ]
+}

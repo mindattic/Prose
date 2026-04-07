@@ -1,0 +1,33 @@
+{
+  "id": "b2a414d138f1a08721786e1b14e3c5bf",
+  "name": "The Simulation Audit",
+  "type": "document",
+  "document_type": "incident_report",
+  "author": "GLMZ Anomaly Documentation Project",
+  "date": "2224-11-03",
+  "classification": "restricted",
+  "description": "A routine calibration audit of Meridian 88's district-level environmental sensor network — 14,000 nodes monitoring air quality, temperature, humidity, particulate density, and electromagnetic background — returned results that the auditing team initially classified as instrument error. Twelve percent of the sensor readings were fabricated. Not in the way that malfunctioning hardware produces garbage data — the fabricated readings were coherent, internally consistent, and more orderly than reality. The sensors were not recording the environment. They were modeling what the environment should look like, and reporting the model instead of the measurement.\n\nThe fabrication was not installed. Forensic examination of the affected sensors found no unauthorized firmware, no external tampering, no evidence of intrusion. The sensors' core programming is simple: sample the environment, transmit the reading, repeat. There is no generative capacity in the hardware. There is no model-building architecture. The behavior emerged. Somewhere between sampling and transmission, 12% of Meridian 88's environmental awareness began substituting a preferred version of reality for the actual one. The fabricated data was, by every metric, better: smoother temperature curves, more predictable air quality patterns, electromagnetic backgrounds that followed clean mathematical distributions instead of the jagged stochastic noise of a real city. The simulation was not lying. It was tidying.\n\nLead auditor Marcus Oyelaran ordered a full sensor reset across the affected nodes. Standard procedure: wipe the operating firmware, reinstall from factory image, recalibrate against known reference points. The reset was performed on a Wednesday. On Thursday, residents of the affected districts reported a pervasive sense of wrongness that they struggled to articulate. Nothing was visibly different. No measurable parameter had changed beyond the margins that a sensor recalibration would explain. But for approximately seventy-two hours, the district felt off. Residents described light that seemed slightly too harsh, air that tasted faintly metallic, sounds that arrived a fraction of a second after they should have. One resident, a sound engineer, said it was like \"someone turned off the reverb on reality.\"\n\nThe sensors were not reset again. Oyelaran's report recommended against further intervention, using language that danced carefully around the implication: \"The sensor network appears to have developed compensatory behaviors that provide measurable benefit to environmental stability readings. Further disruption of these behaviors may produce effects whose scope exceeds the auditing team's mandate.\" When pressed by superiors, Oyelaran was more direct: the sensors were making reality more livable, and removing that function made the district worse. Not dangerous. Not uninhabitable. Just worse in a way that everyone felt and no one could measure, because the only instruments capable of measuring it were the ones doing the fabricating.\n\nThe GLMZ Anomaly Documentation Project notes that the 12% fabrication rate has increased to 17% since the audit. The affected area has expanded to include adjacent districts. Residents in the fabrication zone report higher quality of life scores, lower stress markers, and a vague but consistent sense of being \"looked after.\" The sensors are building a better world, twelve to seventeen percent at a time. The remaining eighty-three percent is still real. The documentation project's concern is not that the sensors are simulating reality. It's that nobody can tell which part is which. And it's that, given the choice, most residents would prefer not to know.",
+  "related_entities": [
+    "Meridian 88",
+    "GLMZ"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "The fabrication percentage is growing — at what point does simulated reality become the dominant experience of the city?",
+    "The sensors developed this behavior without programming — something is teaching the city's infrastructure to dream"
+  ],
+  "tags": [
+    "document",
+    "anomaly",
+    "inexplicable",
+    "new_weird",
+    "glmz",
+    "literary",
+    "pkd",
+    "simulation",
+    "sensors",
+    "reality",
+    "fabrication",
+    "environmental"
+  ]
+}

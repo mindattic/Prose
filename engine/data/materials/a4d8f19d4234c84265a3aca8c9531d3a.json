@@ -1,0 +1,37 @@
+{
+  "id": "a4d8f19d4234c84265a3aca8c9531d3a",
+  "name": "Hastelloy",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "Hastelloy C-276",
+    "nickel-molybdenum alloy"
+  ],
+  "category": "metal",
+  "description": "A family of nickel-based superalloys with exceptional resistance to corrosion by acids, alkalis, and saltwater. Hastelloy is the material of last resort in chemical processing where everything else dissolves. Pharmaceutical synthesis reactors and toxic waste processing plants rely on Hastelloy-lined vessels.",
+  "properties": [
+    "supreme_corrosion_resistance",
+    "acid_resistant",
+    "high_temperature_capable",
+    "expensive"
+  ],
+  "developers": [],
+  "applications": [
+    "chemical reactors",
+    "pharmaceutical vessels",
+    "toxic waste processing",
+    "flue gas scrubbers"
+  ],
+  "tier_availability": "Tier 3-5",
+  "cost": "Φ 80 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "superalloy",
+    "chemical"
+  ]
+}

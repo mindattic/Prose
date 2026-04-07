@@ -1,0 +1,42 @@
+{
+  "id": "89c1bbb38ff8f6ae020d231d612ed46e",
+  "name": "Bio-Integrated Circuit Board",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "bio-PCB",
+    "living circuit",
+    "organic motherboard"
+  ],
+  "category": "future",
+  "description": "A substrate grown from engineered biological tissue interlaced with conductive pathways, combining the self-repair capabilities of living systems with electronic functionality. Bio-PCBs heal from minor damage, adapt their routing to work around faults, and can interface directly with biological systems for cyberware applications.",
+  "properties": [
+    "self_repairing",
+    "adaptive_routing",
+    "biocompatible",
+    "biodegradable",
+    "requires_nutrients"
+  ],
+  "developers": [
+    "NeuroVault BioSystems"
+  ],
+  "applications": [
+    "cyberware processors",
+    "implantable electronics",
+    "adaptive computing",
+    "biodegradable electronics"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 3,000 per unit",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "bio",
+    "electronic",
+    "cyberware"
+  ]
+}

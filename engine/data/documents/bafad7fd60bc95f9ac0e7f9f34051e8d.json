@@ -1,0 +1,32 @@
+{
+  "id": "bafad7fd60bc95f9ac0e7f9f34051e8d",
+  "name": "Navigation Ghosts",
+  "type": "document",
+  "document_type": "incident_compilation",
+  "author": "Circuit District Resident Advisory Board",
+  "date": "2225-09-12",
+  "classification": "public",
+  "description": "BCI navigation systems in the Circuit District of Meridian 88 occasionally route pedestrians and vehicle operators through Lost Blocks as if they are normal, traversable streets. The routes appear without error flags, without detour warnings, without any indication that the suggested path passes through space that cannot be physically entered. The turn-by-turn directions reference street names that exist on maps — Linden Street, Caulfield Lane, Fold Avenue — and provide distance estimates, travel times, and arrival predictions consistent with the streets being real, open, and navigable. People following these routes hit walls.\n\nThe Resident Advisory Board has compiled 847 reports of navigation ghost events over the past three years. The pattern is consistent: a BCI navigation query returns a route that includes one or more segments through a Lost Block. The user follows the route. The user arrives at a wall where the navigation indicates a turn or a passage. The navigation recalculates, providing an alternate route that avoids the anomaly zone. The user continues to their destination. The event is logged, reported, and forgotten.\n\nBut 23 of the 847 reports describe something different. In these cases — always late at night, always when the user is alone, always in low-traffic areas adjacent to Lost Block perimeters — the user reports that the turn was there. The alley existed. The street opened. For a moment — seconds, maybe less — the path the navigation suggested was physically present. Then it wasn't. The wall was back. The alley was gone. In eleven of the 23 cases, the user reports having taken a step or two into the opening before it closed. In three cases, users report seeing the interior of a Lost Block street — buildings, lights, pavement — for the duration of the opening. None of the 23 users entered fully. All of them describe the same sensation: that they were being invited, and that the invitation was withdrawn.\n\nThe Advisory Board has forwarded these reports to the BCI navigation service providers. The providers attribute the routing errors to 'legacy map data persistence' and have not addressed the 23 anomalous cases. The Advisory Board notes that the 23 cases are not evenly distributed — 17 of them occurred near the Meridian Fold, the largest and most active Lost Block. The Board has recommended that BCI providers implement geofencing around confirmed anomaly zones. The recommendation has not been adopted. The navigation ghosts continue. The invitations continue.",
+  "related_entities": [
+    "Circuit District",
+    "Meridian 88",
+    "Lost Blocks",
+    "Meridian Fold"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "The 23 anomalous cases — are the Lost Blocks selectively opening, and if so, for whom?",
+    "Eleven people took steps inside before it closed — what did their BCIs record during those seconds?"
+  ],
+  "tags": [
+    "document",
+    "lost_block",
+    "spatial_anomaly",
+    "new_weird",
+    "inexplicable",
+    "meridian_88",
+    "bci",
+    "navigation",
+    "circuit_district"
+  ]
+}

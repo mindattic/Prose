@@ -17,7 +17,7 @@ public class ThematicIndexService
     private readonly QuoteRepository quoteRepo;
     private readonly ConsumerGoodRepository goodsRepo;
     private readonly PharmaceuticalRepository pharmaRepo;
-    private readonly SubstrateRepository substrateRepo;
+    private readonly MaterialRepository substrateRepo;
     private readonly AmmunitionRepository ammoRepo;
 
     // tag -> list of hits with snippets
@@ -29,7 +29,7 @@ public class ThematicIndexService
         GenewareRepository genewareRepo, TransportationRepository transportRepo,
         VocabularyRepository vocabRepo, QuoteRepository quoteRepo,
         ConsumerGoodRepository goodsRepo, PharmaceuticalRepository pharmaRepo,
-        SubstrateRepository substrateRepo, AmmunitionRepository ammoRepo)
+        MaterialRepository substrateRepo, AmmunitionRepository ammoRepo)
     {
         this.db = db;
         this.synthRepo = synthRepo;

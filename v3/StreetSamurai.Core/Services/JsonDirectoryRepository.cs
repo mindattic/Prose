@@ -53,16 +53,7 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
 
     public T? GetByName(string name)
     {
-        // Try direct file lookup first (fast path)
-        var slug = Slugify(name);
-        var path = Path.Combine(directory, $"{slug}.json");
-        if (File.Exists(path))
-        {
-            var item = LoadFromFile(path);
-            if (item != null) return item;
-        }
-
-        // Fallback to scanning all (for case-insensitive or alias matching)
+        // Scan cached entities for case-insensitive name match
         return GetAll().FirstOrDefault(item =>
             _nameSelector(item).Equals(name, StringComparison.OrdinalIgnoreCase));
     }
@@ -78,8 +69,12 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
     public void Save(T item)
     {
         var name = _nameSelector(item);
-        var slug = Slugify(name);
-        var filePath = Path.Combine(directory, $"{slug}.json");
+        // Use entity ID for filename (GUIDv7 = chronological sort)
+        var id = (item as ICanonEntity)?.Id ?? Slugify(name);
+        var filePath = Path.Combine(directory, $"{id}.json");
+
+        // With GUID-based filenames, the file path is stable (ID doesn't change on rename).
+        // No cleanup needed — saving overwrites the same file.
 
         var json = JsonSerializer.Serialize(item, jsonOptions);
 
@@ -102,27 +97,24 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
     }
 
     /// <summary>Archive: moves the file to archives/{repo_name}/ mirroring the source structure.</summary>
+    /// <summary>Find the file path for an entity by name (scans content).</summary>
+    private string? FindFileForEntity(string name)
+    {
+        foreach (var file in Directory.GetFiles(directory, "*.json"))
+        {
+            var item = LoadFromFile(file);
+            if (item != null && _nameSelector(item).Equals(name, StringComparison.OrdinalIgnoreCase))
+                return file;
+        }
+        return null;
+    }
+
     public void Delete(string name)
     {
-        var slug = Slugify(name);
-        var filePath = Path.Combine(directory, $"{slug}.json");
-
-        // Find the file (may not match slug exactly)
-        if (!File.Exists(filePath))
-        {
-            foreach (var file in Directory.GetFiles(directory, "*.json"))
-            {
-                var item = LoadFromFile(file);
-                if (item != null && _nameSelector(item).Equals(name, StringComparison.OrdinalIgnoreCase))
-                {
-                    filePath = file;
-                    break;
-                }
-            }
-        }
+        var filePath = FindFileForEntity(name);
 
         // Move to sibling archives/ folder (e.g. engine/canon/tech → engine/archives/tech)
-        if (File.Exists(filePath))
+        if (filePath != null && File.Exists(filePath))
         {
             var repoName = Path.GetFileName(directory);
             var parentDir = Path.GetDirectoryName(directory) ?? directory;

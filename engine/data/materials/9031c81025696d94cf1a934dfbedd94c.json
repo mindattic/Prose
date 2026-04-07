@@ -1,0 +1,43 @@
+{
+  "id": "9031c81025696d94cf1a934dfbedd94c",
+  "name": "Gravity-Resistant Composite",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "GRC",
+    "anti-grav substrate",
+    "gravitationally decoupled material"
+  ],
+  "category": "future",
+  "description": "A metamaterial composite whose internal structure partially decouples it from gravitational fields through quantum geometric effects. Objects made from GRC feel significantly lighter than their mass suggests, though they retain full inertia. Used in heavy-lift platforms and construction equipment to reduce energy costs of vertical movement.",
+  "properties": [
+    "reduced_effective_weight",
+    "full_inertia_retained",
+    "quantum_structured",
+    "extremely_expensive"
+  ],
+  "developers": [
+    "Proteus Quantum Materials"
+  ],
+  "applications": [
+    "heavy-lift platforms",
+    "construction cranes",
+    "personal flight systems",
+    "orbital launch assist"
+  ],
+  "tier_availability": "Tier 5",
+  "cost": "Φ 100,000 per kg",
+  "story_hooks": [
+    "The formula for GRC production is one of the most closely guarded trade secrets in the world — three researchers have disappeared after attempting to publish open-source synthesis routes."
+  ],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "quantum",
+    "exotic",
+    "restricted"
+  ]
+}

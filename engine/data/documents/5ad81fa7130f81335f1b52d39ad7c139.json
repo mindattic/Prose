@@ -1,0 +1,29 @@
+{
+  "id": "5ad81fa7130f81335f1b52d39ad7c139",
+  "name": "Field Report: Recurring Photograph in Municipal BCI Feeds",
+  "type": "document",
+  "document_type": "field_report",
+  "author": "Digital Content Moderation Office, Meridian 88",
+  "date": "2199-11-30",
+  "classification": "restricted",
+  "description": "The photograph first appeared in a public BCI news feed on March 3rd, 2199. It shows a room. The room is empty except for a single chair positioned in the center, facing a window. Through the window, a cityscape is visible — towers, sky, and what appears to be water in the distance. The architecture is not consistent with Meridian 88 or any other known Great Lakes city. The light suggests late afternoon. The chair is wooden. The floor is bare concrete. The walls are white. There is nothing remarkable about the photograph except that it should not exist.\n\nIt has appeared 1,247 times in nine months across 340 distinct BCI feeds, including news aggregators, social platforms, commercial advertising spaces, private message threads, and in one case, a CorpSec internal communication channel that is air-gapped from the public network. No user uploaded the photograph. No content distribution system queued it. No advertising algorithm placed it. It appears in feeds the way a memory surfaces — unbidden, without context, and impossible to trace to a point of origin. Content moderation flags it automatically and removes it. It returns within hours, in different feeds, through different channels.\n\nThe photograph changes. Not dramatically — the differences require careful comparison. The angle of light through the window shifts by fractions of degrees between appearances. The shadows in the room move accordingly. The cityscape outside the window changes subtly: a tower that was present in March is absent in July. A body of water that was visible on the left edge of the frame has moved to the right. The chair has not moved. The chair is always in the same position, facing the same direction. Forensic image analysis confirms that these are not different photographs of the same room — the metadata, compression artifacts, and pixel structure indicate a single original image that is somehow changing over time.\n\nEight hundred and twelve users have reported the photograph to our office. Two hundred and nine of them used the same phrase without prompting: \"I think that room is waiting for someone.\" I do not know what this means. I do not know why over two hundred people independently arrived at the same interpretation of an empty room. I do not know where the room is. I do not know who took the photograph. I am including the image in this report, though I should note that the version attached may not match the version that appears in your feed when you inevitably see it yourself.",
+  "related_entities": [
+    "Meridian 88"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "Where is the room in the photograph?",
+    "Who or what is the chair waiting for?",
+    "Why do hundreds of people independently describe the room as 'waiting'?"
+  ],
+  "tags": [
+    "inexplicable",
+    "anomaly",
+    "new_weird",
+    "bci",
+    "photograph",
+    "digital",
+    "recurring",
+    "field_report"
+  ]
+}

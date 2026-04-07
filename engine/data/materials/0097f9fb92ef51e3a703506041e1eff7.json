@@ -1,0 +1,39 @@
+{
+  "id": "0097f9fb92ef51e3a703506041e1eff7",
+  "name": "Clay",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "potter's clay",
+    "kaolin",
+    "bentonite"
+  ],
+  "category": "natural",
+  "description": "An ancient material still vital in 2200. Kaolin feeds the ceramics industry, bentonite seals landfills and drilling operations, and potter's clay sustains a thriving artisan community. Advanced clay formulations serve as binders in pharmaceutical tablets and as substrates for catalytic converters.",
+  "properties": [
+    "moldable",
+    "heat_resistant_when_fired",
+    "abundant",
+    "absorbent"
+  ],
+  "developers": [],
+  "applications": [
+    "ceramics",
+    "drilling mud",
+    "pharmaceutical binders",
+    "catalytic substrates",
+    "art"
+  ],
+  "tier_availability": "Tier 1-4",
+  "cost": "Φ 0.15 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "natural",
+    "natural",
+    "common",
+    "ceramic_base"
+  ]
+}

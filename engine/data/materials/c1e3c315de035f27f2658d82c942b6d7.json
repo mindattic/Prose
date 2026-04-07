@@ -1,0 +1,40 @@
+{
+  "id": "c1e3c315de035f27f2658d82c942b6d7",
+  "name": "Rammed Earth",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "pise",
+    "tamped earth",
+    "compressed earth"
+  ],
+  "category": "improvised",
+  "description": "Raw earth compressed between forms into solid walls. One of humanity's oldest building techniques, still used in 2200 because it costs almost nothing and produces walls with excellent thermal mass. Modern rammed earth incorporates small amounts of cement for moisture resistance. Entire Tier 1 neighborhoods are built this way in arid regions.",
+  "properties": [
+    "free_materials",
+    "excellent_thermal_mass",
+    "fireproof",
+    "labor_intensive",
+    "moisture_sensitive"
+  ],
+  "developers": [],
+  "applications": [
+    "wall construction",
+    "thermal storage walls",
+    "sound barriers",
+    "garden walls"
+  ],
+  "tier_availability": "Tier 1-2",
+  "cost": "Φ 0 (labor only)",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "improvised",
+    "improvised",
+    "construction",
+    "ancient",
+    "sustainable"
+  ]
+}

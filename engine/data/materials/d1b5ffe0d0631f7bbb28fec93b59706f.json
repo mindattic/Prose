@@ -1,0 +1,37 @@
+{
+  "id": "d1b5ffe0d0631f7bbb28fec93b59706f",
+  "name": "Aramid Composite Panel",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "Kevlar panel",
+    "aramid laminate"
+  ],
+  "category": "composite",
+  "description": "Woven aramid fibers laminated with toughened epoxy into rigid panels. These offer excellent ballistic and fragment protection at low weight. Standard issue for vehicle door inserts, checkpoint barriers, and portable ballistic shields. The layered structure traps and decelerates projectiles through progressive fiber failure.",
+  "properties": [
+    "ballistic_resistant",
+    "lightweight",
+    "fragment_catching",
+    "non_conductive"
+  ],
+  "developers": [],
+  "applications": [
+    "vehicle armor inserts",
+    "ballistic shields",
+    "checkpoint barriers",
+    "helicopter floor panels"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 45 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "composite",
+    "composite",
+    "armor",
+    "ballistic"
+  ]
+}

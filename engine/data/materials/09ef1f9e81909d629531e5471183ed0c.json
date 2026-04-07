@@ -1,0 +1,41 @@
+{
+  "id": "09ef1f9e81909d629531e5471183ed0c",
+  "name": "Carbon Nanotubes",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "CNT",
+    "SWCNT",
+    "MWCNT",
+    "buckytubes"
+  ],
+  "category": "advanced",
+  "description": "Cylindrical carbon molecules with extraordinary tensile strength and electrical conductivity. CNT-reinforced composites form the structural members of orbital infrastructure and ultra-light vehicle frames. CNT yarns conduct electricity with near-zero resistance at room temperature in properly aligned configurations.",
+  "properties": [
+    "extreme_tensile_strength",
+    "electrically_conductive",
+    "thermally_conductive",
+    "lightweight",
+    "nanoscale"
+  ],
+  "developers": [],
+  "applications": [
+    "orbital tether cables",
+    "ultra-light composites",
+    "conductive fibers",
+    "field-emission displays",
+    "drug delivery"
+  ],
+  "tier_availability": "Tier 3-5",
+  "cost": "Φ 200 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "advanced",
+    "advanced",
+    "nano",
+    "carbon"
+  ]
+}

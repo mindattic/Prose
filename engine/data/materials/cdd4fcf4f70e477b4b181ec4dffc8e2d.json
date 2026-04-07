@@ -1,0 +1,38 @@
+{
+  "id": "cdd4fcf4f70e477b4b181ec4dffc8e2d",
+  "name": "Iron",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "pig iron",
+    "cast iron",
+    "wrought iron"
+  ],
+  "category": "metal",
+  "description": "Raw iron is rarely used in its pure form in 2200, but cast iron still finds applications in engine blocks, cookware, and counterweights where its density and damping properties matter. Wrought iron fencing is a Tier 3-4 status symbol, hand-forged by artisan blacksmiths who charge a premium for the anachronism.",
+  "properties": [
+    "dense",
+    "castable",
+    "vibration_damping",
+    "magnetic",
+    "brittle_when_cast"
+  ],
+  "developers": [],
+  "applications": [
+    "engine blocks",
+    "cookware",
+    "counterweights",
+    "decorative fencing"
+  ],
+  "tier_availability": "Tier 1-4",
+  "cost": "Φ 0.40 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "common"
+  ]
+}

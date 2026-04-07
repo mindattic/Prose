@@ -1,0 +1,42 @@
+{
+  "id": "84a7315df23aa68a9538ef6e08b5f9b7",
+  "name": "Photosynthetic Building Panel",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "bio-solar panel",
+    "living facade",
+    "green energy wall"
+  ],
+  "category": "future",
+  "description": "Building panels incorporating engineered photosynthetic organisms that convert sunlight into electricity and oxygen simultaneously. The living layer is sandwiched between transparent protective membranes and fed by a nutrient circulation system. Output is lower than silicon PV but the panels also produce breathable air and absorb CO2.",
+  "properties": [
+    "electricity_generating",
+    "oxygen_producing",
+    "carbon_absorbing",
+    "living",
+    "moderate_efficiency"
+  ],
+  "developers": [
+    "BioHaven Collective"
+  ],
+  "applications": [
+    "building facades",
+    "space habitat life support",
+    "carbon offset structures",
+    "Tier 1-2 air quality"
+  ],
+  "tier_availability": "Tier 2-4",
+  "cost": "Φ 100 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "bio",
+    "solar",
+    "living"
+  ]
+}

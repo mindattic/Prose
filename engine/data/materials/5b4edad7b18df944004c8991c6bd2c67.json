@@ -1,0 +1,43 @@
+{
+  "id": "5b4edad7b18df944004c8991c6bd2c67",
+  "name": "Reactive Ablative Coating",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "RAC",
+    "ablative paint",
+    "sacrifice coat"
+  ],
+  "category": "future",
+  "description": "A sprayable coating that absorbs incoming energy (kinetic, thermal, or directed energy) by undergoing endothermic decomposition. Each hit consumes a layer of coating, converting destructive energy into harmless gas and dust. Can be reapplied in the field from aerosol cans. Standard on military vehicles and high-value assets.",
+  "properties": [
+    "energy_absorbing",
+    "sprayable",
+    "field_repairable",
+    "sacrificial",
+    "multi_threat"
+  ],
+  "developers": [
+    "OmniShield Defense"
+  ],
+  "applications": [
+    "military vehicle coating",
+    "asset protection",
+    "directed-energy defense",
+    "spacecraft reentry",
+    "firefighter gear"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 180 per liter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "armor",
+    "coating",
+    "military"
+  ]
+}

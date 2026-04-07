@@ -14,7 +14,6 @@
                 <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
             </div>
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Automata" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
@@ -32,38 +31,35 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(isNew ? "New Automaton" : editing.Name)</h5>
-                <div class="d-flex gap-2">
+            <EditViewToggle RepoName="automata" Title="@(isNew ? "New Automaton" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Automata" EntryName="@editing.Name" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
                     @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
                     @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
-                </div>
-            </div>
-
-            <div class="row g-3 mb-3">
-                <div class="col-3"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
-                <div class="col-3"><div class="field-label">Classification</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Classification" /></div>
-                <div class="col-3"><div class="field-label">Manufacturer</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Manufacturer" /></div>
-                <div class="col-3"><div class="field-label">Tier Availability</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TierAvailability" /></div>
-            </div>
-            <div class="row g-3 mb-3">
-                <div class="col-3"><div class="field-label">Legality</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Legality" /></div>
-                <div class="col-3"><div class="field-label">Autonomy Level</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.AutonomyLevel" /></div>
-                <div class="col-3"><div class="field-label">Dimensions</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Dimensions" /></div>
-                <div class="col-3"><div class="field-label">Weight</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Weight" /></div>
-            </div>
-            <div class="row g-3 mb-3">
-                <div class="col-4"><div class="field-label">Power Source</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.PowerSource" /></div>
-                <div class="col-4"><div class="field-label">Locomotion</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Locomotion" /></div>
-                <div class="col-4"><div class="field-label">Aliases (comma-sep)</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_aliasInput" /></div>
-            </div>
-
-            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
-            <div class="mb-3"><div class="field-label">Countermeasures</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Countermeasures"></textarea></div>
-            <div class="mb-3"><div class="field-label">Cultural Context</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.CulturalContext"></textarea></div>
-            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="row g-3 mb-3">
+                        <div class="col-3"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div class="col-3"><div class="field-label">Classification</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Classification" /></div>
+                        <div class="col-3"><div class="field-label">Manufacturer</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Manufacturer" /></div>
+                        <div class="col-3"><div class="field-label">Tier Availability</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TierAvailability" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-3"><div class="field-label">Legality</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Legality" /></div>
+                        <div class="col-3"><div class="field-label">Autonomy Level</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.AutonomyLevel" /></div>
+                        <div class="col-3"><div class="field-label">Dimensions</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Dimensions" /></div>
+                        <div class="col-3"><div class="field-label">Weight</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Weight" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-4"><div class="field-label">Power Source</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.PowerSource" /></div>
+                        <div class="col-4"><div class="field-label">Locomotion</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Locomotion" /></div>
+                        <div class="col-4"><div class="field-label">Aliases (comma-sep)</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_aliasInput" /></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Countermeasures</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Countermeasures"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Cultural Context</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.CulturalContext"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
         }
         else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select an automaton or create a new one</div> }
     </div>
@@ -106,5 +102,4 @@
     private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Name); Repo.Delete(editing.Name); editing = null; _confirmDelete = false; items = Repo.GetAll(); }
     protected override async Task OnAfterRenderAsync(bool firstRender) { await JS.InvokeVoidAsync("writeInterop.autoResizeAll"); }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
-    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

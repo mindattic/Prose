@@ -1,0 +1,31 @@
+{
+  "id": "024f903950a1709e7d3820f5273b232b",
+  "name": "Messages Routed Through Silent Nodes",
+  "type": "document",
+  "document_type": "investigation",
+  "author": "Meridian 88 Municipal Communications Authority",
+  "date": "2199-08-22",
+  "classification": "restricted",
+  "description": "Between March and August 2199, the Municipal Communications Authority received 194 reports of voice messages received from contacts confirmed deceased. The messages are not recordings or replays of archived audio. They contain information specific to the recipient's current circumstances — references to recent events, ongoing problems, things that happened after the sender died.\n\nRouting analysis reveals that every message traversed at least one communications node that logged zero traffic during the delivery window. Not low traffic. Zero. The nodes were active, powered, and connected to the network. They simply recorded no packets passing through them during the exact seconds the messages were in transit. The messages exist at their origin point and at their destination. The path between contains a gap that the network insists is empty.\n\nThe content of the messages varies. Some are banal — reminders about appointments, comments about the weather. Others are intimate. A woman in the Shelf received a message from her dead wife telling her where to find a document she had been searching for. The document was there. A man in the Gulch received a message from his dead brother warning him about a structural failure in his building. The failure occurred two days later.\n\nWe have attempted to reproduce the routing anomaly in controlled conditions. We cannot. The phenomenon appears to require an actual deceased sender and an actual grieving recipient. We are not equipped to manufacture either. The investigation remains open. The messages continue.",
+  "related_entities": [
+    "Meridian 88",
+    "Shelf District",
+    "The Gulch"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "Are the dead actually communicating, or is something impersonating them?",
+    "What are the silent nodes, and why do they leave no trace?",
+    "Could the messages be weaponized by someone who understands the mechanism?"
+  ],
+  "tags": [
+    "document",
+    "anomaly",
+    "inexplicable",
+    "new_weird",
+    "signal",
+    "death",
+    "communications",
+    "meridian_88"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "508066f5e6f9a2986d508b125d253509",
+  "name": "Spending Data Stratification: Lives Measured in Quanta",
+  "type": "document",
+  "document_type": "anthropological_study",
+  "author": "Dr. Chen Wei-Okafor, Meridian 88 Institute for Economic Inequality",
+  "date": "2197-08-14",
+  "classification": "public",
+  "description": "Transaction data tells you everything about a person's tier without ever asking. A Tier 1 Shelf resident's monthly spending signature — the pattern of transaction amounts, frequencies, and categories — is as distinctive as a fingerprint and as legible as a billboard. This study analyzed anonymized transaction data from 2.4 million Meridian 88 residents across all five tiers to map the economic topology of the city through spending patterns. What emerged is a portrait of five parallel civilizations sharing the same geographic coordinates but inhabiting entirely different economic realities.\n\nA Tier 1 resident — UBC minimum, no formal employment, Shelf housing — generates an average of 312 transactions per day, almost all micro-transactions below Φ0.05. Their spending signature is characterized by desperate optimization: purchases clustered at the lowest-price intervals of dynamic pricing algorithms, bulk atmospheric processing payments timed to off-peak rates, food purchases concentrated at end-of-day market discounts when vendors dump unsold inventory. The average Tier 1 daily food expenditure is Φ1.40. The average Tier 1 monthly income is Φ120. After atmospheric processing fees (Φ31-48), transit (Φ12-18), BCI maintenance charges (Φ8), and infrastructure levies (Φ5-7), a Tier 1 resident has approximately Φ43-64 remaining for food, clothing, medical care, and everything else that constitutes a life. The data shows that 34% of Tier 1 residents experience at least one day per month with zero available Quanta — a state locals call \"the flat,\" when the number reads Φ0.00 and you simply stop existing economically until the next UBC deposit.\n\nA Tier 5 resident — senior corponation executive, corporate housing in the Spire — generates an average of 47 transactions per day, most of them automated and invisible: personal AI assistant subscriptions, premium atmospheric processing, curated neural-feed packages, transportation in private vehicles through reserved corridors. Their average daily food expenditure is Φ28 — twenty times the Tier 1 average, not because they eat twenty times as much but because they eat food that was grown rather than printed, prepared by humans rather than machines, and served in spaces where the air tastes like nothing because it has been processed to perfection. A Tier 5 monthly income averages Φ34,000. After expenses — which include things that Tier 1 residents would classify as science fiction, like \"personal gene therapy maintenance\" and \"quarterly consciousness backup\" — a Tier 5 resident saves an average of Φ12,000 per month. A Tier 1 resident's annual income is less than a Tier 5 resident's monthly savings.\n\nThe most revealing data point is not income or spending but transaction failure rate. Tier 1 residents experience an average of 4.7 transaction failures per day — moments when they attempt to purchase something and their balance is insufficient. The BCI registers the failed transaction as a brief spike of cortisol and shame. Tier 5 residents experience an average of 0.01 transaction failures per month. They have functionally never been told \"no\" by their wallet. The psychological distance between a person who is refused multiple times per day and a person who is never refused is not a difference of degree. It is a difference of species. They do not inhabit the same economy. They do not inhabit the same reality. They share a currency the way a puddle and an ocean share water.\n\nThe data also reveals a phenomenon researchers call \"tier bleed\" — spending patterns that cross tier boundaries and reveal the porousness of the class system. A Tier 2 resident who suddenly begins making Tier 4-level purchases is either ascending economically (rare) or engaged in criminal activity (common). A Tier 4 resident whose spending signature begins resembling Tier 2 is either falling (restructured, downsized, disgraced) or deliberately obscuring their economic status for reasons that interest corponation security divisions. Sterling-Nakamura's behavioral prediction models flag tier bleed automatically. The algorithm does not care why you are spending differently. It cares that you are spending differently. Deviation is data. Data is control.",
+  "related_entities": [
+    "sterling_nakamura",
+    "meridian_88",
+    "axiom"
+  ],
+  "credibility": "verified",
+  "story_hooks": [
+    "A character attempts to fake a Tier 4 spending signature to infiltrate a corporate social circle, but the behavioral models detect the forgery",
+    "A data analyst discovers that certain Tier 1 residents have spending patterns that should be impossible given their income — suggesting hidden revenue streams"
+  ],
+  "tags": [
+    "document",
+    "quanta",
+    "currency",
+    "anthropological",
+    "inequality",
+    "stratification",
+    "spending",
+    "tier_system",
+    "data",
+    "surveillance"
+  ]
+}

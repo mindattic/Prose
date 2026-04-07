@@ -1,0 +1,43 @@
+{
+  "id": "b0b65a451ece87cbfe3d2da07dc3cdf9",
+  "name": "Phase-Change Armor",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "PCA",
+    "state-shift plate",
+    "reactive phase armor"
+  ],
+  "category": "future",
+  "description": "An armor material that exists in a flexible, fabric-like state during normal use but instantly transitions to rigid ceramic hardness upon impact. The phase change is triggered by strain rate — slow deformation keeps it flexible, but a bullet or blade impact causes crystallization within microseconds. Returns to flexible state after the threat passes.",
+  "properties": [
+    "impact_triggered_hardening",
+    "flexible_at_rest",
+    "ceramic_hardness_under_impact",
+    "reusable",
+    "lightweight"
+  ],
+  "developers": [
+    "Tessera Building Systems",
+    "OmniShield Defense"
+  ],
+  "applications": [
+    "body armor",
+    "vehicle protection",
+    "blast curtains",
+    "protective clothing"
+  ],
+  "tier_availability": "Tier 3-5",
+  "cost": "Φ 1,200 per sq meter",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "armor",
+    "smart_material",
+    "military"
+  ]
+}

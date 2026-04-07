@@ -1,0 +1,44 @@
+{
+  "id": "332f661711185c456a80f06ded5fa01c",
+  "name": "Zero-Point Energy Storage Substrate",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "ZPE substrate",
+    "vacuum energy cell",
+    "Casimir battery"
+  ],
+  "category": "future",
+  "description": "A nanostructured material that harvests trace amounts of energy from quantum vacuum fluctuations via the Casimir effect. The energy output is minuscule but perpetual, making ZPE substrates useful for powering ultra-low-power sensors, pacemakers, and long-duration space probes. Claims of high-power ZPE extraction remain fraudulent.",
+  "properties": [
+    "perpetual_energy_output",
+    "ultra_low_power",
+    "no_fuel_required",
+    "nanostructured",
+    "low_output"
+  ],
+  "developers": [
+    "Proteus Quantum Materials"
+  ],
+  "applications": [
+    "sensor power",
+    "medical implant power",
+    "space probe power",
+    "remote monitors"
+  ],
+  "tier_availability": "Tier 5",
+  "cost": "Φ 15,000 per unit",
+  "story_hooks": [
+    "A con artist is selling 'high-output ZPE generators' to desperate Tier 1 communities. The devices are just batteries that drain in a month."
+  ],
+  "tags": [
+    "substrate",
+    "material",
+    "future",
+    "future",
+    "quantum",
+    "energy",
+    "restricted"
+  ]
+}

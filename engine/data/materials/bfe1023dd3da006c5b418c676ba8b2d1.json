@@ -1,0 +1,38 @@
+{
+  "id": "bfe1023dd3da006c5b418c676ba8b2d1",
+  "name": "Tool Steel",
+  "brand_name": "",
+  "product_name": "",
+  "type": "substrate",
+  "aliases": [
+    "high-speed steel",
+    "HSS",
+    "die steel"
+  ],
+  "category": "metal",
+  "description": "Carbon steel alloyed with tungsten, molybdenum, and vanadium for extreme hardness and heat resistance. Tool steel forms the cutting edges of drill bits, milling cutters, and industrial dies. Even in an era of ceramic and diamond tooling, tool steel remains the cost-effective choice for most machining operations.",
+  "properties": [
+    "extremely_hard",
+    "heat_resistant",
+    "wear_resistant",
+    "tough"
+  ],
+  "developers": [],
+  "applications": [
+    "cutting tools",
+    "industrial dies",
+    "punches",
+    "injection molds"
+  ],
+  "tier_availability": "Tier 2-5",
+  "cost": "Φ 12 per kg",
+  "story_hooks": [],
+  "tags": [
+    "substrate",
+    "material",
+    "metal",
+    "metal",
+    "alloy",
+    "tooling"
+  ]
+}
