@@ -12,7 +12,7 @@
   "role": "Social engineering and negotiation specialist — face",
   "age": 33,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
   "description": "Georgi Jorgensen-Toure is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a face out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Georgi Jorgensen-Toure lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -280,5 +280,11 @@
   "registered_firearms": [
     "Nkomo-Lindqvist NLR-9 'Counselor'",
     "Crucible Industries Suppressed Compact SC-2 'Murmur'"
-  ]
+  ],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "Old Harbor"
 }

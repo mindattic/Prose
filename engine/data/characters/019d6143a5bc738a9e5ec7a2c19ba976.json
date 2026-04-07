@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller",
   "age": 22,
   "status": "active",
-  "location": "The Shelf, Brightmoor Reclamation",
+  "location": "The Shelf, Brightmoor Reclamation, near Ashland and Chicago Ave",
   "description": "Aïcha is small and fast-moving, with the wiry physicality of someone who has spent years climbing through reclamation sites. Her skin is warm brown with a reddish undertone, her eyes a vivid amber with a starburst pattern that's natural — she's been offered money to sell them twice and refused both times. She has cat ears, small and dark brown, the geneware obviously budget-tier — one of them doesn't track sound as naturally as the other and occasionally flicks at random — but she wears them without apology. Her clothes are layered, practical, and assembled from different sources: a Ferrogate Transit worker vest over a Palladian-logo shirt with the logo melted off, cargo pants with pockets she has modified herself.\n\nAïcha pushes a heavily loaded magnetic-suspension cart through Brightmoor Reclamation's scrap corridors with the territorial confidence of someone who knows every crack in every wall. She's young enough that some people underestimate her and old enough that she's used to it. She has a fast and somewhat overwhelming personality — she talks in compressed bursts, bounces between topics, and has an almost savant-level ability to identify the value and origin of electronic components by sight. She will argue prices with a ferocity completely disproportionate to the amounts involved. She has never been robbed twice by the same person.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,19 @@
   "carried_weapons": [
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Ferrogate Transit",
+    "Dredge Mining Collective",
+    "The Reclamation Assembly",
+    "Palladian Construction",
+    "The Shelf",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Stratum",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Tin Man",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

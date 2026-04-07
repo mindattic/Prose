@@ -1,0 +1,36 @@
+{
+  "id": "74f1e097e2cb35cf4ab3b53110d82aaf",
+  "name": "Crucible Foundry Heat-Handler Gauntlets",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Heavy-duty gauntlets rated for direct contact with surfaces up to 800°C. The outer shell is woven ceramic fiber over a reflective mylar layer, with an inner lining of phase-change gel that absorbs heat before it reaches the skin. The gauntlets extend to mid-forearm and seal against standard Crucible work coveralls.\n\nDesigned for foundry workers who handle freshly cast components and manage molten material channels. The gauntlets are thick and reduce fine motor control significantly — you can grip a casting, but you can't pick a lock.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "woven ceramic fiber",
+    "reflective mylar",
+    "phase-change gel lining"
+  ],
+  "functionality": "Extreme heat resistance (800°C contact), sealed forearm coverage",
+  "what_it_says": "You grab things that would burn through anyone else's hands.",
+  "worn_by": [
+    "foundry workers",
+    "metallurgists",
+    "industrial handlers"
+  ],
+  "manufacturer": "Crucible Genomics (industrial division)",
+  "price_range": "Φ220",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of Heat-Handler Gauntlets are found inside a Spire apartment — far from any foundry, suggesting someone was handling something extremely hot in a place where nothing should be that temperature."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 1",
+    "industrial",
+    "heat-resistant",
+    "Crucible",
+    "gauntlets"
+  ]
+}

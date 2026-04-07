@@ -1,0 +1,36 @@
+{
+  "id": "1a2941e9b2d6650efff4d6cbd038f82c",
+  "name": "Frostline Gear Arctic Thermal Underlayer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A heavyweight thermal base layer designed for sub-zero outdoor operations. The fabric is triple-layered — moisture-wicking inner, insulating middle, wind-blocking outer. The suit covers everything from ankles to wrists to neck, with thumb loops to prevent sleeve ride-up under gloves.\n\nDesigned for external infrastructure maintenance crews who work on exposed upper-tier structures during winter. The Arctic Underlayer is the difference between a four-hour shift and hypothermia, and the crews who wear it treat it with the respect given to equipment that keeps them alive.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "triple-layer thermal fabric",
+    "moisture-wicking inner",
+    "wind-blocking outer"
+  ],
+  "functionality": "Extreme cold insulation, moisture management, wind resistance",
+  "what_it_says": "The cold would kill you without this and you wear it like a second skin because it nearly is one.",
+  "worn_by": [
+    "infrastructure crews",
+    "winter maintenance workers",
+    "upper-tier exterior teams"
+  ],
+  "manufacturer": "Frostline Gear",
+  "price_range": "Φ220",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A winter maintenance crew's thermal underlayers are found to have been contaminated with a contact irritant — someone wanted the crew to strip their cold protection during a sub-zero shift."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 1",
+    "thermal",
+    "cold weather",
+    "insulation",
+    "winter"
+  ]
+}

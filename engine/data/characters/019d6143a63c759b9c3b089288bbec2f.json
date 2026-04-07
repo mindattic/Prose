@@ -12,7 +12,7 @@
   "role": "Electronic and physical observation expert — surveillance specialist",
   "age": 65,
   "status": "active",
-  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Halsted and Chicago Ave",
   "description": "Kadiatou Hallberg-Acheampong is lean and angular, all sharp edges and visible tension. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a surveillance specialist out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented surveillance specialist in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -270,5 +270,13 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Shelf",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

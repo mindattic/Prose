@@ -1,0 +1,41 @@
+{
+  "id": "c6f2a8e0d4b395710c3f7a1e2d859b44",
+  "name": "Pragma BioSynth Pharmaceutical Researcher Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Crisp white long-line lab coat with an integrated climate layer and sealed wrist cuffs over charcoal slim-fit trousers, both bearing a Pragma BioSynth embossed security strip at the collar. A slim wraparound safety visor with UV-filter coating sits over a close-fit white cap that covers BCI port access. Thin-film chemically resistant gloves in translucent pale blue seal over the cuff and allow full dexterity for pipette work. White closed-toe composite shoes with slip-resistant soles complete the look, and a hip-mounted compact satchel holds compound logs, a portable spectrometer, and sealed sample vials.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "climate-layer lab coat polymer-cotton blend",
+    "UV-filter visor polycarbonate",
+    "thin-film chemical-resistant gloves",
+    "composite slip-resistant shoes",
+    "injection-molded compact satchel"
+  ],
+  "functionality": "Integrated climate layer maintains stable body temperature in cold research environments; thin-film gloves resist broad-spectrum chemical exposure while preserving pipette-level dexterity.",
+  "what_it_says": "This person is building the next compound that will either save ten thousand lives or be sold exclusively to the top two tiers — and they already know which is more likely.",
+  "worn_by": [
+    "pharmaceutical researchers",
+    "Pragma BioSynth R&D staff",
+    "Tier 4 compound development scientists"
+  ],
+  "manufacturer": "Pragma BioSynth Labwear",
+  "price_range": "Φ 3,400–Φ 5,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The portable spectrometer in the satchel has an off-book analysis mode that cross-references street drug compounds — someone has been running Shelf samples through a Pragma machine.",
+    "The compound log contains a formula with no trial number and no patient cohort — just the notation 'self-administered, day 14.'"
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical_scientific_kit",
+    "tier4",
+    "pharmaceutical",
+    "researcher",
+    "aug_compatible",
+    "Pragma",
+    "laboratory"
+  ]
+}

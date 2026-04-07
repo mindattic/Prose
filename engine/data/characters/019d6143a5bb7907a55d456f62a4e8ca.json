@@ -12,7 +12,7 @@
   "role": "Forced entry and close-quarters combat specialist — breacher",
   "age": 37,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and Damen",
   "description": "Aybek Guerrero-Osei-Mensah are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a breacher out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Aybek Guerrero-Osei-Mensah describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -277,5 +277,12 @@
   "registered_firearms": [
     "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
     "Tessera TK-7 Service Pistol 'Ticker'"
-  ]
+  ],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Geartown",
+    "Pellucid Systems"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Graffiti artist and unlicensed holographic muralist, works across Pilsen Veil and the Blackpipe Corridor",
   "age": 19,
   "status": "active",
-  "location": "Pilsen Veil, sleeping arrangement rotates between three friends' apartments",
+  "location": "Pilsen Veil, sleeping arrangement rotates between three friends' apartments, near Ashland and Division",
   "description": "Nneka is all angles and velocity — sharp elbows, fast movements, a face that shifts rapidly between expressions as though her internal state is always a half-second ahead of social acceptability. She is dark brown with a shaved head except for a topknot she dyes rotating colors; currently it is a deep arterial red. She's had retractable claws installed on her right hand — not for combat but because she finds them useful for scoring surfaces before applying materials, and because she likes the way they look. There is a scar above her left eyebrow from a fence she didn't clear fast enough six months ago. She dresses in whatever is functional for climbing: close-fitting, layered, with many pockets.\n\nHer art is illegal, large, and impossible to ignore. She works in a hybrid medium she developed herself — a base layer of actual pigment covered by a thin holographic projector film that she fabricates from salvaged materials, which means her pieces exist in two states: the physical painting that is there whether power is running or not, and the animated layer that breathes and moves when it has charge. Her subjects are Pilsen Veil's residents — she paints the faces she sees every day at enormous scale on the walls that corporate infrastructure has turned into blank grey surfaces. She has not yet been caught, partly because she is very fast and partly because she is very good at reading which Ferrogate Transit staff are looking the other way. She is not politically articulate about what she does — she finds manifestos embarrassing — but she is absolutely certain of it.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,14 @@
   "registered_firearms": [
     "Hearthstone Firearms HF-30 'Homestead'",
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Pilsen Veil",
+    "Clearpath",
+    "Stratum",
+    "Pellucid Systems",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

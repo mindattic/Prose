@@ -12,7 +12,7 @@
   "role": "Logistics Coordinator, Zheng-Dao Mid-Lake Supply Chain",
   "age": 34,
   "status": "active",
-  "location": "Kenwood Gate, Zheng-Dao Regional Distribution Hub 7",
+  "location": "Kenwood Gate, Zheng-Dao Regional Distribution Hub 7, near Damen and Armitage",
   "description": "Anzhela is medium height with the slightly overdeveloped forearm muscles of someone who has spent years physically wrangling cargo manifests and dock equipment when the automated systems — which break down constantly — fail. Her skin is warm brown, her hair a natural dark coil she keeps pinned back with three mismatched clips she has never bothered to replace because she is always doing six other things. She has color-changing hair tips — dyed in the geneware sense, shifting between deep teal and burnt orange depending on temperature — that she got on a whim at twenty-seven and has never quite gotten around to removing because they are genuinely useful for gauging how cold the dock warehouse is.\n\nShe is competent in a way that has outpaced her job title for roughly four years and her pay grade for six. She coordinates the mid-lake freight routing for Zheng-Dao's third-largest regional hub, a job that officially requires one person and actually requires the sustained output of three, and she does it with a combination of exhausted creativity, genuine systems intelligence, and a working relationship with the Hub 7 E.L.F. that she has spent two years cultivating through meticulous daily offerings. She is not unhappy — she likes the puzzle of logistics, genuinely — but she is aware, in the specific way of people who have been passed over for promotion twice, that the puzzle is not making her rich.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,10 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Kenwood Gate",
+    "Zheng-dao Bioelectric"
+  ],
+  "district": "The Circuit"
 }

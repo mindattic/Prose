@@ -12,7 +12,7 @@
   "role": "Childcare worker, runs a licensed home-crèche for 0-5 year olds in the Hamtramck Enclave",
   "age": 41,
   "status": "active",
-  "location": "Hamtramck Enclave, 4th floor of the Raczkowski Stack residential tower",
+  "location": "Hamtramck Enclave, 4th floor of the Raczkowski Stack residential tower, near Pulaski and Chicago Ave",
   "description": "Patience is a person of medium height and soft presence — not soft meaning weak, but soft meaning that children immediately stop crying when they enter the room. They have their Basque father's broad, expressive face and their Congolese mother's deep brown skin, with natural hair worn in flat twists that are perpetually coming slightly undone, usually because a toddler has grabbed them. They have bioluminescent skin mods — a gentle wash of golden-green that pulses faintly when they're calm and brightens slightly when they're delighted — which they got specifically because they discovered it helped soothe infants in dim rooms. It was a practical decision, which is very on-brand.\n\nThey hold a Tier 2 childcare certification from the Meridian Municipal Education Authority and a side certificate in pediatric first response that they keep quietly current. The crèche, which they call 'The Patch,' holds eight children on a good day and feels like controlled chaos that is actually very controlled. Patience has a finely tuned threat-assessment sense developed over fifteen years of toddler supervision and will notice danger in a room approximately as fast as any trained security operative, but they notice it in the form of 'that outlet cover is loose' and 'that child hasn't eaten and is about to escalate.'",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,14 @@
   "registered_firearms": [
     "Tessera TK-9 Proteus 'Shapeshifter'",
     "Crucible Industries Suppressed Compact SC-2 'Murmur'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Crucible ER-5 'First Response'",
+    "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch",
+    "The Quiet Room",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Irontide Tidal Energy"
+  ],
+  "district": "The Shelf"
 }

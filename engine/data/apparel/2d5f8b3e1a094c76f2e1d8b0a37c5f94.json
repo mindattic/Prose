@@ -1,0 +1,41 @@
+{
+  "id": "2d5f8b3e1a094c76f2e1d8b0a37c5f94",
+  "name": "Ironpass Former Combat Medic Bartender's Shift Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Dark utility trousers with medical-kit loop webbing still sewn into the left thigh, now holding a bottle opener and a rag instead of trauma shears. A plain olive henley with the sleeves always rolled precisely to the elbow — a habit from sterile procedure — revealing a forearm with two mismatched chrome fingers on the left hand. A low-profile apron in black canvas, front-pocketed, worn with the same economy of movement as body armor.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "dark utility canvas",
+    "medical webbing",
+    "olive synthcotton henley",
+    "black canvas apron",
+    "chrome finger prosthetics"
+  ],
+  "functionality": "Medical loop webbing repurposed for bar tools; chrome fingers provide non-slip grip on glassware in any weather.",
+  "what_it_says": "Someone who has seen worse than anything this bar will throw at them, and is quietly fine with that.",
+  "worn_by": [
+    "former combat medics",
+    "ex-field surgeons turned service workers",
+    "veterans in civilian transition"
+  ],
+  "manufacturer": "Ironpass (trousers base); apron sourced locally; chrome from Vansen AugMount",
+  "price_range": "Φ55–90 assembled",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The medical webbing loops are from a specific theater of conflict — a regular at the bar served in the same unit and hasn't said anything yet.",
+    "Someone comes in tonight with a wound that needs immediate attention, and the bartender's hands remember exactly what to do."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "unique_character_look",
+    "tier2",
+    "medic",
+    "bartender",
+    "veteran",
+    "working_class",
+    "practical"
+  ]
+}

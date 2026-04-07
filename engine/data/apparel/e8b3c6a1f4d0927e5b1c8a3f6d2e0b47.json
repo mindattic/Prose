@@ -1,0 +1,37 @@
+{
+  "id": "e8b3c6a1f4d0927e5b1c8a3f6d2e0b47",
+  "name": "Vansen Utility Work Shirt — Long Sleeve",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Long-sleeve work shirt in washed slate-blue polycotton with a chest name-badge panel and two button-flap breast pockets. Vansen Augmented Labor Solutions logo embroidered on the right shoulder in white thread. The fabric is thick enough to resist minor sparks but soft enough to wear for a twelve-hour shift.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "polycotton blend",
+    "polyester reinforcement at elbows",
+    "nylon buttons"
+  ],
+  "functionality": "Elbow reinforcement panels, a ventilated back yoke for heat management, and a cable-routing channel along the left sleeve for aug power feeds.",
+  "what_it_says": "You show up, you do the job, and the company name on your shoulder tells everyone whose time you belong to.",
+  "worn_by": [
+    "augmentation installation technicians",
+    "factory floor supervisors",
+    "electrical maintenance workers"
+  ],
+  "manufacturer": "Vansen Augmented Labor Solutions (corporate issue)",
+  "price_range": "Φ20–Φ45 (replacement; issued on hire)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The cable channel on the sleeve is a non-standard feature — someone inside Vansen's supply chain added it without official approval.",
+    "Workers at two competing facilities wear nearly identical shirts from the same manufacturer — a quiet reminder that both corponations source from the same place."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "circuit_workwear",
+    "work-shirt",
+    "corporate-issue",
+    "aug-compatible",
+    "tier2"
+  ]
+}

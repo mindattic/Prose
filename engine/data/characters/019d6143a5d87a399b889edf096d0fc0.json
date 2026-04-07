@@ -13,7 +13,7 @@
   "role": "Noodle shop owner / informal information broker / surrogate mother figure",
   "age": 68,
   "status": "alive",
-  "location": "The Shelf — Level 12, a cramped noodle shop called 'Chen's' wedged between a water recycler and a defunct elevator shaft",
+  "location": "The Shelf — Level 12, a cramped noodle shop called 'Chen's' wedged between a water recycler and a defunct elevator shaft, near Halsted and Chicago Ave",
   "description": "Mrs. Chen is a small woman who moves like she's in a permanent argument with physics — fast, efficient,\nslightly annoyed. She stands maybe 5'2\" but takes up more space than that suggests, partly because she's\nalways in motion and partly because her presence has a gravitational quality. Her face is a map of the\nShelf itself: weathered, cracked in places, but structurally sound. Her eyes are sharp and dark behind\nthick-framed glasses held together with electrical tape and spite. Her grey hair is always pinned up in\na tight bun secured with two chopsticks that she occasionally pulls out to gesture with while making a\npoint, then replaces without losing a syllable.\n\nHer hands tell two stories. They're a cook's hands now — scarred from oil splatter, calloused from\ndecades of kneading dough, knuckles swollen with arthritis she refuses to acknowledge. But if you look\nclosely, you can see the older scars underneath: the precise, symmetrical marks of someone who spent\nyears working with micro-surgical tools and augmentation circuitry. She wears no rings, no jewelry,\nnothing decorative. Her apron is always stained and she considers this a badge of honest work.\n\nFirst impression: a cranky old woman who serves good noodles and doesn't smile. Accurate impression:\na cranky old woman who serves good noodles, doesn't smile, and is quietly the most important person\non the Shelf because she feeds it, listens to it, and remembers everything.",
   "psychology": {
     "facet_weights": {
@@ -257,5 +257,12 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Shelf",
+    "The Pure Hand",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

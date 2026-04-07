@@ -1,0 +1,40 @@
+{
+  "id": "5b1e8c3d7a2f490611d5b9e4c0a37f62",
+  "name": "Ferrochem VeriLab Technician's Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Slate-blue lab coat in anti-static synth-cotton over matching trousers, both tagged with a corponation-issued QR strip at the collar and cuff. Safety goggles with anti-fog coating sit over a fitted cap that covers neural port access points. Powder-free nitrile gloves in sterile violet seal at the wrist with a snap-ring, and low-profile closed-toe lab shoes in white rubber-composite complete the look. A lightweight chest panel holds labeled reagent vials, calibration tools, and a compact sample scanner.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "anti-static synth-cotton",
+    "anti-fog polycarbonate goggles",
+    "powder-free nitrile gloves",
+    "rubber-composite lab shoes",
+    "injection-molded chest panel"
+  ],
+  "functionality": "Anti-static fabric prevents sample contamination near sensitive equipment; chest panel organizes consumables for rapid bench-to-bench workflow.",
+  "what_it_says": "This person follows the protocol exactly, every time, because the protocol is what keeps the results clean and the job secure.",
+  "worn_by": [
+    "lab technicians",
+    "quality control workers",
+    "Tier 3 research support staff"
+  ],
+  "manufacturer": "Ferrochem Labwear Division",
+  "price_range": "Φ 280–Φ 520",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A sample vial in the chest panel is labeled in handwriting that doesn't match the tech's — and the compound inside isn't in any catalog.",
+    "The QR tag at the collar has been subtly altered; it still scans correctly, but the access level it grants is two tiers above this worker's clearance."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical_scientific_kit",
+    "tier3",
+    "laboratory",
+    "technician",
+    "anti_static",
+    "aug_compatible"
+  ]
+}

@@ -11,7 +11,7 @@
   "role": "Fixer - Geneware jobs",
   "age": 31,
   "status": "active",
-  "location": "The Narrows",
+  "location": "The Narrows, near North Ave and Milwaukee",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -99,5 +99,9 @@
   "carried_weapons": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact"
+  ],
+  "district": "The Circuit"
 }

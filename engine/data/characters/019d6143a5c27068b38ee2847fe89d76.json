@@ -11,7 +11,7 @@
   "role": "Fixer - Nightlife circuit",
   "age": 26,
   "status": "active",
-  "location": "The Circuit",
+  "location": "The Circuit, near Fullerton and Damen",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -100,5 +100,9 @@
   "carried_weapons": [
     "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit"
+  ],
+  "district": "The Circuit"
 }

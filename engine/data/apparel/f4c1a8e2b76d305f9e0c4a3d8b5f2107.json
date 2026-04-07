@@ -1,0 +1,40 @@
+{
+  "id": "f4c1a8e2b76d305f9e0c4a3d8b5f2107",
+  "name": "NovaChem HazGuard Enforcement Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Acid-yellow and charcoal-grey sealed hazmat-tactical hybrid armor, with NovaChem's diamond-and-droplet logo printed in reflective silver across the chest plate and full-face respirator mask housing. The helmet is a positive-pressure sealed unit with integrated chemical sensor array and four-hour internal air supply, dual-purpose for enforcement and spill response. Load rig carries chemical dispersal grenades, a pressurized neutralizing agent sprayer, and restraint gear, all sealed in chemically inert pouches. Boots are fully sealed knee-high chemical-resistant composite, heat-bonded to the suit trousers with watertight gaskets.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "sealed hazmat-grade armor shell",
+    "chemically inert load pouches",
+    "positive-pressure respirator helmet",
+    "chemical-resistant composite boots",
+    "reflective silver insignia film"
+  ],
+  "functionality": "Full chemical and biological hazard protection, integrated sensor array for compound identification, and enforcement-grade load capacity for riot and spill response.",
+  "what_it_says": "NovaChem enforces its own cleanup standards — and decides what counts as a spill versus a suppression action.",
+  "worn_by": [
+    "NovaChem HazGuard units",
+    "chemical facility enforcement teams",
+    "spill-response enforcement squads"
+  ],
+  "manufacturer": "NovaChem Security & Compliance Division",
+  "price_range": "Φ 3,800–Φ 5,200 (issued)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A HazGuard unit's chemical sensor keeps reading an unknown compound at a site NovaChem officially declared clean six months ago.",
+    "Someone has been stealing the neutralizing agent canisters from HazGuard kits and replacing them with something that accelerates burns."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "military_corpsec_kit",
+    "novachem",
+    "hazmat_enforcement",
+    "tactical",
+    "chemical_response",
+    "corp_issued"
+  ]
+}

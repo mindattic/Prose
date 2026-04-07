@@ -12,7 +12,7 @@
   "role": "Climate scientist and atmospheric modeler studying Lake Michigan's destabilized weather systems",
   "age": 45,
   "status": "active",
-  "location": "Edgewater Prism — operates out of a rooftop monitoring station leased from a Helix Biosystems subsidiary",
+  "location": "Edgewater Prism — operates out of a rooftop monitoring station leased from a Helix Biosystems subsidiary, near Clark and Belmont",
   "description": "Hovhannes is stocky and perpetually wind-chapped, with the particular squint of someone who spends significant time looking at horizons. His Armenian-Malian-Andean heritage shows in his broad build and the dark copper of his skin, and he grows a beard every winter that he shaves every spring in a ritual he connects to his modeling calendar. He has a prosthetic left hand he chose not to skin-match — it's matte grey and articulated, and he uses it to gesture when he talks, which is frequently. He has a bioluminescent patch on his right shoulder from a lab accident twelve years ago: a pale green glow, faint, that he has simply incorporated into his aesthetic.\n\nHe is the most accurate storm forecaster in Meridian 88, a title he holds unofficially because the official title belongs to a Ferrogate Transit atmospheric AI he assisted in training and is not particularly bitter about. He is gregarious and funny and committed to translating his work into language that non-scientists can use to make decisions — he runs a free community forecast channel that Shelf residents and dockworkers depend on. Underneath the gregariousness is a man who has spent fifteen years watching models he hoped were wrong be proven exactly right.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,20 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Helix Biosystems",
+    "Edgewater Prism",
+    "Meridian Core",
+    "Meridian 88",
+    "The Heritage Vault",
+    "Aslan Vasquez-Chatterjee",
+    "Ash Calendar",
+    "Copper",
+    "The Pale Mile",
+    "Weathervane",
+    "Nightlight"
+  ],
+  "district": "The Laceworks"
 }

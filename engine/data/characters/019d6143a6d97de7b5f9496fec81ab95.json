@@ -12,7 +12,7 @@
   "role": "Loan shark and informal banker for the Gravesend Basin community",
   "age": 52,
   "status": "active",
-  "location": "Gravesend Basin, operates out of a converted shipping container turned tea house called The Counting Jar",
+  "location": "Gravesend Basin, operates out of a converted shipping container turned tea house called The Counting Jar, near Halsted and Division",
   "description": "Soraya is a broad-shouldered woman whose face carries the particular weathered softness of someone who has spent decades making difficult decisions and sleeping soundly afterward. Her skin is a deep warm brown, her hair gone fully silver and kept in tight finger-coils close to her scalp, and her eyes are a pale amber that people often mistake for lens mods — they're entirely natural, a gift from some Kasparian ancestor she'll never meet. She favors heavy linen wraps in ochre and rust, always a calculating pad visible in the folds of her clothing, always a cup of something hot in her hand. She has bioluminescent tracery along her left forearm from an old mod she got in her forties — faint blue-green lines that pulse when her pulse elevates, which is almost never.\n\nSoraya runs her loan operation with the patient confidence of someone who has never once needed to raise her voice to collect a debt. She's genuinely warm to the people of Gravesend Basin, knows three generations of most families, attends naming ceremonies and memorial feeds, and charges 40% interest on loans that legitimate institutions would never extend to begin with. She does not consider herself a predator. She considers herself infrastructure. Her books are immaculate, her memory for numbers is legendary, and she has a gift for knowing exactly how much rope to give someone before pulling.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Gravesend Basin",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

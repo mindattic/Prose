@@ -12,7 +12,7 @@
   "role": "Social engineering and negotiation specialist — face",
   "age": 56,
   "status": "active",
-  "location": "The Underbelly — sub-street tunnels and maintenance corridors",
+  "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near State and Van Buren",
   "description": "Ilhan Park-Traore is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 56, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a face out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented face in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,12 @@
   "carried_weapons": [
     "Tessera TKR-10 'Executor'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "The Shelf",
+    "Slagworks Industrial"
+  ],
+  "district": "The Underworld"
 }

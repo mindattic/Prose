@@ -12,7 +12,7 @@
   "role": "Field trauma surgeon and combat support — combat medic",
   "age": 42,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
   "description": "Erkin Santos-Owusu are lean and angular, all sharp edges and visible tension. At 42, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Erkin Santos-Owusu plans to keep it that way. They work as a combat medic out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Erkin Santos-Owusu are one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,6 @@
   "registered_firearms": [
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Crucible Industries Talon-5 'Jackknife'"
-  ]
+  ],
+  "district": "Old Harbor"
 }

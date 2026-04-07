@@ -14,7 +14,7 @@
   "role": "Full-prosthetic cyborg hacker — a human brain in a military-grade synthetic body, operating as the Circuit's most capable netrunner and the only person who can physically jack into hardline systems",
   "age": 33,
   "status": "active",
-  "location": "The Circuit — maintains a workshop in the sub-levels beneath the black market, accessible through a maintenance tunnel that only four people know about",
+  "location": "The Circuit — maintains a workshop in the sub-levels beneath the black market, accessible through a maintenance tunnel that only four people know about, near sub-level access near State and Van Buren",
   "description": "Kira Nomura was a corporate cybersecurity analyst for NovaCorp — a brilliant, impatient woman who spent her twenties mapping the vulnerabilities in corporate network architecture and her nights exploiting them for fun. She was caught. NovaCorp's response was not prosecution but recruitment: the military cybersecurity division offered her a deal. Full-body prosthesis — a synthetic body optimized for direct neural interface with network infrastructure — in exchange for five years of service cracking adversarial networks. She accepted because the alternative was a labor camp and because the idea of a body designed for hacking was irresistible.\n\nThe prosthetic body is military specification — matte black, utilitarian, with none of the cosmetic refinement of companion-class or diplomatic-class synthetics. It is built for function: reinforced joints for crawling through maintenance tunnels, hardline interface ports in the fingertips and at the base of the skull, internal power cells that can sustain a twelve-hour hack session, and a cranial housing that protects the one piece of biological hardware that matters — Kira's brain. The brain is all that remains of the original person. Everything else is steel, polymer, and the accumulated modifications of eight years of freelance operation after she broke her NovaCorp contract and disappeared.\n\nSwitchboard operates in the space between physical and digital — the only person in the Circuit who can physically enter a facility, jack into a hardline system, and navigate the internal network in real-time while her body guards the connection point. She is the Circuit's most valuable asset and its most vulnerable — when she's jacked in, her body is defenseless, and the twelve-hour sessions leave her brain exhausted in ways that the prosthetic body cannot compensate for. She is thirty-three years old. Her brain has been working at combat-hacking intensity for eleven years. The human brain was not designed for this. She knows it. She cannot stop.",
   "psychology": {
     "facet_weights": {
@@ -304,5 +304,19 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-44 'Fenris'",
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Riddle",
+    "The Circuit",
+    "Hearthstone Firearms Homestead-12 'Door Slam'",
+    "Threshold",
+    "Lazarus EC-4 'Companion'",
+    "Vantablack-CNX",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Steel",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Underworld"
 }

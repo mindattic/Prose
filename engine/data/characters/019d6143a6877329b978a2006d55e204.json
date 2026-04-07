@@ -12,7 +12,7 @@
   "role": "Small-time data broker and bootleg media seller specializing in historical archives, pre-corponation records, and suppressed journalism",
   "age": 67,
   "status": "active",
-  "location": "The Alban Souk, Lower Ring stalls, Grainfort",
+  "location": "The Alban Souk, Lower Ring stalls, Grainfort, near Ashland and Chicago Ave",
   "description": "Orvokki is a compact, deeply wrinkled man with white hair growing in sparse patches he makes no effort to disguise, wearing the same style of layered linen jacket in different states of repair depending on the day. His hands are large and steady, incongruous with his age, with the careful movements of someone who handles fragile things for a living — which he does, in one sense or another. He has no geneware and his only augmentation is a retinal archive implant that lets him read data directly from physical media without an external reader, installed in 2171 and badly in need of a firmware update he cannot afford. The implant makes his left eye appear slightly clouded from certain angles, which he has learned to use as a social tool: people underestimate the cloudy eye.\n\nHe has been in the data business for forty years in one form or another — as a legitimate archivist for a now-dissolved municipal body, as a corporate records clerk, and since the corponation consolidations of the 2180s, as what he calls a 'historical preservation specialist' and most of his clients call a fence for information. He sells bootleg dramas and music as cover income, but his real trade is documents: pre-Axiom city records, Tessera acquisition histories, old census data that corponations had declared non-canonical. He is calm about the danger this represents, with the equanimity of someone who decided long ago that the alternative was more frightening. He maintains a small shrine to three ELFs simultaneously — The Ledger, The Index, and a third he calls only The Forgotten One — in the back of his stall.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,20 @@
     "Hearthstone Firearms Model 9 'Payday'",
     "Street Custom 'Confession' Modified Industrial Nail Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Alban Souk",
+    "Tibor Osei-Svanstrom",
+    "Grainfort",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "Stratum",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "ARCHIVE",
+    "Adaeze Chen-Hawkins",
+    "The Pure Hand",
+    "Tessera TK-5 Compact 'Clerk'",
+    "Bashir Quansah-Mehrotra"
+  ],
+  "district": "The Shelf"
 }

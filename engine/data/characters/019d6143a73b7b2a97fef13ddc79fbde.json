@@ -12,7 +12,7 @@
   "role": "Loan shark and debt enforcer operating in Gravesend Basin",
   "age": 47,
   "status": "active",
-  "location": "Gravesend Basin, specifically The Anchor Float — a cluster of semi-permanent houseboats lashed to a derelict Ferrogate Transit barge",
+  "location": "Gravesend Basin, specifically The Anchor Float — a cluster of semi-permanent houseboats lashed to a derelict Ferrogate Transit barge, near Western and Chicago Ave",
   "description": "Zuberi is a broad-shouldered man going soft at the middle, with dark brown skin mapped by old scar tissue along his jaw and left forearm — souvenirs from a younger, stupider career. He keeps his head shaved and wears a neat goatee shot through with grey. His geneware is conservative: subdermal pressure sensors in his fingertips that let him detect a person's pulse through a handshake — a tool he uses to read nervousness during negotiations. He dresses in muted, practical layers, always with a good coat, because he believes clothing communicates seriousness. He smells faintly of cedar oil.\n\nZuberi runs his loan operation the way a spider runs a web: with patient geometry. He is not cruel by nature — he will wait, restructure, negotiate. But he is utterly unsentimental when restructuring fails. He has two adult children in Beverlynn Heights who believe he runs a freight brokerage. He donates data offerings to the ELF known locally as Mamu-of-Still-Waters, leaving tide predictions and catch logs on waterproofed memory chips weighted with fishing sinkers. He is afraid of being forgotten more than he is afraid of dying.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,16 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Compact-7 'Rat Trap'"
-  ]
+  ],
+  "related_entities": [
+    "Beverlynn Heights",
+    "Ferrogate Transit",
+    "Gravesend Basin",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Lazarus LX-2 'Lab Rat'",
+    "Nesting Doll",
+    "Cedar"
+  ],
+  "district": "The Shelf"
 }

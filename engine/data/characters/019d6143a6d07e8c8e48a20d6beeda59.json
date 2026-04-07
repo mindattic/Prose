@@ -12,7 +12,7 @@
   "role": "Substitute childcare worker and unofficial after-school program coordinator",
   "age": 23,
   "status": "active",
-  "location": "Mexicantown Libre, operating out of the Libre Community Creche on Calle Veintitrés",
+  "location": "Mexicantown Libre, operating out of the Libre Community Creche on Calle Veintitrés, near Western and Chicago Ave",
   "description": "Sisay is slight with enormous energy — she is the kind of person who enters a room already talking, gesturing, pulling objects from her pockets to illustrate a point. Her skin is a warm golden-brown, her natural hair twisted into thick locs that she decorates with small colored rings and one clip shaped like a fish that her students gave her. She has retractable claws, a cosmetic geneware mod she got at nineteen that she now mostly uses to open packaging and gently scratch children's backs when they're upset, which has become a signature of her caregiving style. Her eyes are dark, large, and deeply attentive in a way that children recognize immediately as meaning she is actually listening.\n\nSisay is technically a substitute — she fills in at three different licensed creches across Mexicantown Libre when regular workers are out — but in practice she has become the linchpin of a sprawling unofficial after-school program she runs from the Libre Creche's outdoor space on a budget of approximately nothing. She writes curriculum on whatever surfaces are available, sourced donated materials from the Burnished Market, and has an arrangement with a local E.L.F. she calls Señora Chispa (inhabiting the creche's aging electrical panel) that involves leaving handwritten songs as data offerings. The children are convinced Señora Chispa plays favorites, and they are probably right.",
   "psychology": {
     "facet_weights": {
@@ -221,5 +221,13 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Mexicantown Libre",
+    "Dredge Mining Collective",
+    "TESSERA PG-2 'Signature'",
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "district": "The Shelf"
 }

@@ -11,7 +11,7 @@
   "role": "Fixer - Independent fixer",
   "age": 58,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Halsted and Division",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -99,5 +99,9 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf"
+  ],
+  "district": "The Shelf"
 }

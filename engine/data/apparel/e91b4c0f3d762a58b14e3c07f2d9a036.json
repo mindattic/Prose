@@ -1,0 +1,41 @@
+{
+  "id": "e91b4c0f3d762a58b14e3c07f2d9a036",
+  "name": "Vanthorpe Tier-3 Accountant Moonlighter's Split Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A sensible Tier 3 office blazer in charcoal synth-wool, worn over a thin armored underlayer that doesn't quite sit right at the shoulders — the tell of someone expecting trouble. The slacks are clean and pressed but have a deep thigh pocket sewn in by hand, just wide enough for a compact sidearm. The shoes are corporate-standard loafers with non-marking rubber soles that are very good for running.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "charcoal synth-wool blazer",
+    "thin armored underlayer",
+    "pressed poly-cotton slacks",
+    "hand-sewn concealment pocket",
+    "rubber-soled loafer composite"
+  ],
+  "functionality": "Concealment pocket holds compact weapon; armored underlayer provides light torso protection without breaking office dress code.",
+  "what_it_says": "Someone living two lives and not quite succeeding at keeping them separate.",
+  "worn_by": [
+    "Tier 3 office workers moonlighting as runners",
+    "amateur fixers with day jobs",
+    "corporate informants"
+  ],
+  "manufacturer": "Vanthorpe (blazer and slacks); modifications self-applied",
+  "price_range": "Φ190–240 assembled",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The armored underlayer has a serial number from a CorpSec evidence locker — it wasn't purchased legally.",
+    "Tonight's job is at a building this person audited last quarter, and they already know where the cameras are."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "unique_character_look",
+    "tier3",
+    "accountant",
+    "runner",
+    "double_life",
+    "concealment",
+    "office_wear"
+  ]
+}

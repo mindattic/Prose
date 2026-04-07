@@ -12,7 +12,7 @@
   "role": "Elder pipe-folk patriarch and keeper of oral tunnel history",
   "age": 68,
   "status": "active",
-  "location": "Deepwell Station, the sprawling pipe-folk encampment called Bellows Town",
+  "location": "Deepwell Station, the sprawling pipe-folk encampment called Bellows Town, near sub-level access near LaSalle and Congress",
   "description": "Ọgụ is a man who looks like he was carved from the same material as the tunnels — his skin is the brown-grey of old concrete, deeply lined, and perpetually damp at the temples from the humidity of Bellows Town. He is larger than you'd expect someone who has spent decades in low-clearance tunnels to be: broad across the shoulders, thick-necked, with hands so calloused they look armored. One leg was crushed in a pressure-seal failure forty years ago and never properly repaired; he walks with a rocking gait and a carved ferroceramic cane he calls his Third Opinion. His eyes are undmodified and dark brown, and his gaze carries the particular weight of someone who has outlived many people he loved and is not surprised by anything anymore.\n\nHe is the closest thing Bellows Town has to a leader, though he would reject the title. He mediates disputes between pipe-folk clans, arbitrates resource-sharing on food and water taps, and is the living archive of Deepwell Station's last sixty years — collapses, floods, disappearances, treaties between tunnel communities. He is warm in the way of someone who has no energy left for performance; he will feed a stranger without asking questions and he will also tell that stranger an uncomfortable truth without softening it.",
   "psychology": {
     "facet_weights": {
@@ -206,5 +206,16 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "Full Clearance (The Erasure Mix)",
+    "The Heritage Vault",
+    "Concrete",
+    "Electrothermal Compression Lance ETCL-9 'Ironlung'",
+    "ARCHIVE",
+    "The Pure Hand",
+    "The Wire Taps"
+  ],
+  "district": "The Underworld"
 }

@@ -12,7 +12,7 @@
   "role": "Sound sculptor and underground noise artist",
   "age": 29,
   "status": "active",
-  "location": "Hamtramck Enclave, subsection called The Rust Nave",
+  "location": "Hamtramck Enclave, subsection called The Rust Nave, near Kedzie and Division",
   "description": "Zinash is tall and angular with deep umber skin mapped in slow-pulsing bioluminescent tracery she designed herself — pale greenish lines that follow her veins like a circuit diagram gone feral. Her hair is kept in tight locks threaded with micro-speakers that emit subsonic hum when she walks, a habit she claims is involuntary but suspects is not. She has one natural eye, dark brown and unreadable, and one eye replaced with a matte ceramic disc she deliberately left unconnected — a fashion choice that unsettles everyone who meets her, which is the point.\n\nShe builds sound sculptures from salvaged corponation hardware — dead Ferrogate transit beacons, cracked Axiom data-hubs — and makes them scream. Her performances are felt as much as heard, bass frequencies vibrating teeth and sternum. Offstage she is quiet to the point of being mistaken for mute, communicating in short declarative sentences or pointed silences. She is genuinely curious about people but expresses it by staring at them for long unbroken intervals, which most find alarming and a few find magnetic.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,18 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Tessera Corponation",
+    "Vespid Dynamics Neural Feedback Dart NFD-2 'Scream'",
+    "Stalker",
+    "Lazarus IDP-1 'Teeth'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

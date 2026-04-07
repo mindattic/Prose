@@ -11,7 +11,7 @@
   "role": "Fixer - Extraction specialist",
   "age": 47,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Kedzie and Division",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -98,5 +98,9 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf"
+  ],
+  "district": "The Shelf"
 }

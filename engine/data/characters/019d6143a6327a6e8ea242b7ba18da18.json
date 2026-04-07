@@ -12,7 +12,7 @@
   "role": "Gene-mod body artist and tattoo artist",
   "age": 31,
   "status": "active",
-  "location": "Mexicantown Libre, shop called Dermis Atlas",
+  "location": "Mexicantown Libre, shop called Dermis Atlas, near Western and Division",
   "description": "Inessa is compact and restless, with the kind of energy that makes a small room feel occupied. She has Polynesian-Hungarian heritage written clearly across her features — broad cheekbones, dark eyes with a slight upward tilt, medium-brown skin covered from collarbones to wrists in her own work, a living portfolio that shifts slowly across the seasons because half her ink is bioluminescent and the other half is geneware-reactive, changing saturation with her mood. Her hair is close-cropped on the sides and grown long on top, currently dyed a deep oxidized copper that she changes every three months. A single cosmetic cat ear — just one, the left — sits atop her head, rose-gold and slightly translucent, a signature affectation she has maintained since she was nineteen.\n\nShe runs Dermis Atlas out of a converted ground-floor space in Mexicantown Libre, its walls covered in design sketches and photographs of completed work. Her specialty is narrative tattooing — pieces that tell a client's specific story using symbols drawn from their actual heritage, their personal mythology, their body's own geneware reactions. She refuses flash designs entirely and has a six-month waitlist she refuses to shorten for money. She is warm to clients in a professional way, genuinely curious about their lives, and fiercely opinionated about the difference between body art and body modification as commodity — a distinction she will explain at length to anyone who triggers it.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,17 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Snapper-22 'Cricket'"
-  ]
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Copper",
+    "Jerome Atlas",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

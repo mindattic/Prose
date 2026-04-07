@@ -12,7 +12,7 @@
   "role": "Freelance combat specialist — street samurai",
   "age": 45,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
   "description": "Daulet Reyes-Abubakar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 45, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a street samurai out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Reyes-Abubakar is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,16 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-44 'Fenris'",
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Geartown",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Freelance combat specialist — street samurai",
   "age": 40,
   "status": "active",
-  "location": "Meridian Station — central transit nexus, neutral ground",
+  "location": "Meridian Station — central transit nexus, neutral ground, near State and Monroe",
   "description": "Vuk Borg-Agyeman is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 40, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a street samurai out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nVuk Borg-Agyeman is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,11 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-25EM 'Tempest'",
     "Tessera TK-9 Proteus 'Shapeshifter'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "Meridian Core"
 }

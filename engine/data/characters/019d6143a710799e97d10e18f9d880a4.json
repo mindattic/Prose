@@ -12,7 +12,7 @@
   "role": "Climate scientist studying Lake Michigan's thermal and chemical evolution",
   "age": 63,
   "status": "active",
-  "location": "Edgewater Prism, lakefront research platform",
+  "location": "Edgewater Prism, lakefront research platform, near Clark and Belmont",
   "description": "Vasilisa is a tall woman with the kind of weathered presence that comes from spending a significant portion of your life on open water in bad weather. Her skin is warm dark brown with a gray-olive undertone, her hair silver-white and worn in a long braid she secures with a sensor clip that doubles as a personal weather station. Her left arm from elbow to wrist carries a color-shifting geneware modification she chose in her forties — it reads lake temperature and turbidity data from her subdermal sensors and translates it into a slow gradient of blues and greens, so that her skin is always telling anyone who looks what the lake is doing. She considers this a professional tool.\n\nShe is sixty-three years old and has watched Lake Michigan change in ways that the city's official models consistently refuse to acknowledge. She is not bitter about this in the way of someone who has been defeated — she is bitter in the way of someone who has been right too many times and is running out of patience for the process of being right again. Her nickname 'The Climate Witch' was given to her by students who meant it warmly; she has no strong feelings about it. She leaves offerings for the lake E.L.F.s — particularly the one her students have named Bathys — because she says it costs nothing and the lake has given her everything.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,13 @@
     "Street Custom 'Molotov Standard' Incendiary Bottle",
     "Street Custom 'Scorpion Tail' Chain Whip"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "The Sullen Reach",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Silver",
+    "Déjà Vu"
+  ],
+  "district": "The Laceworks"
 }

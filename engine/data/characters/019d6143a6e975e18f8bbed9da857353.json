@@ -12,7 +12,7 @@
   "role": "Apprentice at a licensed repair-and-salvage shop; junior technician and parts runner",
   "age": 16,
   "status": "active",
-  "location": "Geartown",
+  "location": "Geartown, near North Ave and Milwaukee",
   "description": "Talitha has her Ghanaian father's hands — wide palmed, strong fingered — and her Armenian mother's persistent stubbornness, and she has inherited both as though they were made for her profession. She works at Manda's Salvage & Fine Repair on Geartown's third industrial terrace, where she has been an apprentice since she was twelve and where she can now diagnose a failing servo actuator by sound alone. She is medium height and solidly built, with close-cropped natural hair and grease that occupies the permanent geography under her fingernails regardless of how hard she scrubs. She has one voluntary augmentation — a subdermal haptic feedback implant in her right hand that lets her feel electromagnetic field variations, technically a diagnostic tool, practically the best thing she has ever purchased with eight months of saved stipend. She also has bioluminescent skin mods along her forearms: soft amber pulses that track her heart rate, which she got at fourteen because she thought they looked good and still does.\n\nShe is cheerful in the easy, unself-conscious way of someone who genuinely likes their work and genuinely likes most people, with a bedrock practicality underneath the warmth that keeps her from being naive about either. She has strong opinions about proper tool storage, the ethics of selling salvage that still has someone's personal data on it, and which E.L.F.s are worth propitiating before a complex repair job. She argues with Manda constantly and would be devastated if Manda retired.",
   "psychology": {
     "facet_weights": {
@@ -181,5 +181,15 @@
     "Crucible Industries Emergency SMG ESM-1 'Breakglass'",
     "Crucible Industries Arc Mace AM-2 'Thunderhead'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Tessera Suppression Lattice SL-3 'Quilt'",
+    "Geartown",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Circuit"
 }

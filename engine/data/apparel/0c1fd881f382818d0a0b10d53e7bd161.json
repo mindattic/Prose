@@ -1,0 +1,36 @@
+{
+  "id": "0c1fd881f382818d0a0b10d53e7bd161",
+  "name": "Ashcroft Industries Heavy Welding Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A full-body welding suit made from aluminized fire-resistant fabric that reflects radiant heat and blocks UV exposure from arc welding. The suit includes integrated gauntlets, a reinforced collar for helmet seating, and spark-catch cuffs at the ankles. Every seam is fire-sealed.\n\nBuilt for heavy-industry welding operations where the work environment regularly exceeds 200°C ambient from adjacent processes. The suit is stiff, heavy, and hot to wear — but the alternative is third-degree burns and UV-damaged corneas.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "aluminized fire-resistant fabric",
+    "fire-sealed seams",
+    "spark-catch cuffs"
+  ],
+  "functionality": "Radiant heat reflection, UV arc protection, full-body spark coverage",
+  "what_it_says": "You stand next to things that are on fire and your suit is the reason you don't join them.",
+  "worn_by": [
+    "heavy-industry welders",
+    "shipyard workers",
+    "infrastructure fabricators"
+  ],
+  "manufacturer": "Ashcroft Industries",
+  "price_range": "Φ450",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A heavy welding suit is found with burn patterns on the exterior that don't match any industrial welding profile — the heat source was biological, not mechanical."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 1",
+    "welding",
+    "fire-resistant",
+    "industrial",
+    "heavy-duty"
+  ]
+}

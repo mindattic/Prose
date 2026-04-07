@@ -1,0 +1,36 @@
+{
+  "id": "b463baae45e2e2c8f82dceacfcad3112",
+  "name": "Voltage District Club Collar",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A wide, rigid collar made from electroluminescent panels and chrome hardware, worn tight around the neck as a fashion statement in Meridian 88's Voltage District club scene. The collar pulses with programmed light patterns and can display text messages or simple animations across its surface. Some feature integrated shock modules that deliver a mild jolt at the wearer's command — a club-scene dare that functions as social currency.\n\nThe Voltage Collar walks the line between fashion and self-imposed restraint. In a scene that values extremity, wearing a collar signals willingness to push boundaries — the tighter and more visible, the more committed the wearer.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "electroluminescent panels",
+    "chrome hardware",
+    "optional shock module"
+  ],
+  "functionality": "Light display, text messaging, optional electrical stimulation",
+  "what_it_says": "You wear your willingness to go further than everyone else around your throat.",
+  "worn_by": [
+    "club scene members",
+    "Voltage District regulars",
+    "boundary-pushing fashionistas"
+  ],
+  "manufacturer": "Various (Voltage District artisans)",
+  "price_range": "Φ400-800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Voltage Collar's shock module is found modified to deliver lethal voltage — what looked like a fashion accessory at the club was a weapon waiting to be activated."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 2",
+    "club",
+    "collar",
+    "electroluminescent",
+    "Voltage District"
+  ]
+}

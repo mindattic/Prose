@@ -12,7 +12,7 @@
   "role": "Puppet maker and street performer, builds intricate autonomous marionettes that he performs with in Hamtramck Enclave's open markets",
   "age": 68,
   "status": "active",
-  "location": "Hamtramck Enclave, in a narrow shopfront on the market row near the Enclave's eastern water distribution point",
+  "location": "Hamtramck Enclave, in a narrow shopfront on the market row near the Enclave's eastern water distribution point, near Ashland and Division",
   "description": "Amadou is a small man who has become smaller with age, slightly stooped at the shoulders from sixty years of bending over workbenches, but his hands remain extraordinary — large, dexterous, with the kind of still precision that seems to defy his years. He is dark-skinned with deep-set eyes that are permanently amused, and his beard has gone fully white, which he maintains with careful grooming as though it is itself a costume element. He dresses simply — worn linen in greys and browns — but he always wears one item of intense color: a scarf, a hat, a single embroidered sleeve. He has no geneware or cosmetic augmentation; he considers his face and body sufficient material.\n\nHis puppets are not toys. They are articulated figures between thirty centimeters and human-sized, built from salvaged materials — circuit board lace, reclaimed myomer muscle fiber, repurposed drone casings — and each one contains a simple autonomous loop that gives it a persistent behavioral signature even when Amadou is not operating it. Children adore them. Adults find them quietly unsettling. He has been making them for forty years and has lost count of how many exist; many have been sold or given away and now drift through the city in owners' homes, continuing their small repetitive behaviors. He performs in the market three days a week, and his shows are ostensibly for children but are genuinely allegories of Hamtramck's political situation, delivered with such gentleness that the sharpness takes a moment to land.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,12 @@
   "carried_weapons": [
     "Street Custom 'Sunday School' Weaponized Religious Artifact"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "TESSERA PG-2 'Signature'",
+    "The Pure Hand",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

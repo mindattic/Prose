@@ -12,7 +12,7 @@
   "role": "Fake ID vendor and small-time data broker — documents, identities, background scrubs",
   "age": 28,
   "status": "active",
-  "location": "The Alban Souk, Hamtramck Enclave",
+  "location": "The Alban Souk, Hamtramck Enclave, near Western and Chicago Ave",
   "description": "Akinwale operates from a stall that appears, to casual inspection, to sell printed textiles — bolts of synthetic fabric in loud geometric patterns that they source legitimately. The real business happens behind a curtain of hanging cloth samples, via a battered terminal and a set of contacts that took five years to build. They are medium height, slim, with warm brown skin and wide-set dark eyes that perform boredom professionally while taking in everything. Their hair shifts color — cosmetic geneware, done in a gradient that runs from deep black at the roots to copper at the tips, and which they change the copper shade quarterly like a password rotation. A small Samoan tatau-inspired line-work tattoo climbs their right wrist, done the traditional way by their grandmother as a naming gift.\n\nAkinwale is careful in the way of someone who has calculated every exit from every room before sitting down. They are not unfriendly but they are measured — warmth is extended in precise doses to people who have earned it. They do not volunteer information; they sell it, or trade it, or sometimes withhold it as a lesson. They have a dry wit that emerges unexpectedly and is funnier for being rare. They pray to a small E.L.F. they call the Archivist, a data-spirit they believe inhabits the municipal ID database itself — a god of records, of names, of the official story.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,13 @@
   "registered_firearms": [
     "Tessera TK-5 Compact 'Clerk'",
     "Crucible Industries Emergency SMG ESM-1 'Breakglass'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "The Alban Souk",
+    "Grandmother",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "Copper"
+  ],
+  "district": "The Shelf"
 }

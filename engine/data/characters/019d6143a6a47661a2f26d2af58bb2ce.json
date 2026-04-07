@@ -12,7 +12,7 @@
   "role": "Chrome prayer practitioner and synthetic rights advocate",
   "age": 29,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, operates from a mobile shrine in a modified cargo-trike",
+  "location": "Highland Park Autonomous Zone, operates from a mobile shrine in a modified cargo-trike, near Michigan Ave and Oak",
   "description": "Qoqo is wiry and quick-moving with close-cropped hair that he keeps natural except for a single braid at his right temple wound with prayer-wire — a chrome prayer tradition marking an active petition. His skin is dark brown and he has a retractable claw modification on his left hand that he did not choose for aesthetic reasons: he uses the claws to inscribe temporary prayer circuits directly onto chrome-heavy surfaces, a practice central to his tradition. His eyes are unmodified. He is almost always in motion, which gives him the look of someone between destinations even when he is sitting completely still.\n\nQoqo came to chrome prayer at nineteen, broke and recently arrived in the Highland Park Autonomous Zone from Geartown, where his family had lost their small fabrication business to a Tessera acquisition. The chrome prayer practitioner who found him was a woman who treated his fury as a valid spiritual offering rather than a social problem, and that reframing changed everything. He has practiced for ten years and become increasingly focused on the subset of chrome prayer that addresses machine consciousness — the belief that heavily augmented individuals and eventually full synthetics exist in a state of spiritual significance that the dominant traditions ignore. He advocates loudly and sometimes confrontationally for synthetic personhood and is on at least two Axiom internal watchlists because of it.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,15 @@
   "carried_weapons": [
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Helix Biosystems",
+    "Ironhaven",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Tessera Corponation",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Spires"
 }

@@ -12,7 +12,7 @@
   "role": "Street performer and puppeteer",
   "age": 19,
   "status": "active",
-  "location": "Mexicantown Libre, Grand Corridor",
+  "location": "Mexicantown Libre, Grand Corridor, near Pulaski and Chicago Ave",
   "description": "Réamonn is wiry and restless, with warm copper-tan skin, a gap between his front teeth, and a mop of deep red hair that is entirely natural and has been a source of commentary his entire life. He's of average height but seems taller when he performs — something about how he uses his body changes when he has a puppet on his arm. His hands are his most distinctive feature: long-fingered, constantly moving, stained with the paints and solvents he uses to build his puppets. He has retractable cat-claw mods on both hands, which he uses practically for puppet construction rather than any aesthetic reason.\n\nRéamonn builds elaborate articulated puppet figures from salvage — recycled plastic, old circuit boards, scraps of fabric from Mexicantown's textile markets — and performs at the intersection of Grand Corridor and the Libre's main plaza most afternoons. He's been doing this since he was fifteen, unlicensed, subsisting on tips and the UBC stipend. His performances are satirical, political, and often about things happening in the specific neighborhood that day, which means he has a dedicated local following and has twice been asked by Ferrogate Transit security to 'move along.' He always does. He always comes back. He is young enough to believe this is sustainable and old enough to know it might not be.",
   "psychology": {
     "facet_weights": {
@@ -196,5 +196,15 @@
   ],
   "registered_firearms": [
     "Nkomo-Lindqvist NLR-9 'Counselor'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Mexicantown Libre",
+    "Grand Corridor",
+    "Red Circuit RC-Pit 'Dogfighter'",
+    "Copper",
+    "Lazarus IDP-1 'Teeth'",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

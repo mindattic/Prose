@@ -12,7 +12,7 @@
   "role": "Climate refugee, former lakeshore farmer, now seasonal Ferrogate Transit groundskeeper",
   "age": 68,
   "status": "active",
-  "location": "Grindstone Shore, Ferrogate Transit maintenance dormitory block C",
+  "location": "Grindstone Shore, Ferrogate Transit maintenance dormitory block C, near Fullerton and Damen",
   "description": "Galdino is a large, slow-moving man who has been worn smooth by decades of hard weather, like driftwood. His face is broad and deeply seamed, brown skin weathered to near-leather, with the pale eyes his Cook Islands grandfather gave him sitting incongruously pale in that dark face — what his wife used to call 'sky holes.' He moves deliberately, with the careful economy of someone whose joints have logged decades of outdoor labor and who has learned to budget pain. He keeps his grey hair cropped close and wears a Ferrogate Transit maintenance vest over everything regardless of temperature because it has many pockets and he has filled them with things he considers essential: a folding tool, seeds he can no longer plant, a small lacquered image of a lake E.L.F. from a shrine that no longer exists because the land it stood on is now thirty meters underwater.\n\nGaldino's family farmed the eastern Lake Michigan shoreline for four generations until the coastal surge protocols permanently inundated their land in 2189. He has been a climate refugee for eleven years, rotating through seasonal work along Meridian 88's industrial edges — dock maintenance, freight sorting, currently groundskeeping for Ferrogate Transit's maintenance infrastructure at Grindstone Shore. He does not complain about this, exactly, but he talks about soil and planting cycles the way other people talk about deceased relatives. He is patient with almost everyone and genuinely interested in young people in the way of someone who has run out of other things to invest in.",
   "psychology": {
     "facet_weights": {
@@ -223,5 +223,17 @@
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
     "Street Custom 'Scorpion Tail' Chain Whip"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Grindstone Shore",
+    "Helix Biosystems",
+    "Meridian 88",
+    "The CEO",
+    "The Shore Dogs",
+    "Leather",
+    "The Pure Hand",
+    "The Pale Mile"
+  ],
+  "district": "Old Harbor"
 }

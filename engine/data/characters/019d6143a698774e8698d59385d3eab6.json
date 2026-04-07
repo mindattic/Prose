@@ -13,7 +13,7 @@
   "role": "Black Market Pharmacist / Community Anchor",
   "age": 61,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Ashland and Division",
   "description": "Perpetua Okafor occupies a converted shipping container wedged between a collapsed overpass and a recycled-water dispensary in the lower Shelf, where she has run an unlicensed pharmacy and informal clinic for over two decades. She is a broad, deliberate woman with close-cropped silver hair, deep brown skin mapped with the faint subcutaneous tracery of outdated biomonitor implants she can no longer afford to remove. Her hands are almost always stained at the fingertips from compounding work — pigments from synthesized capsule coatings, chemical residues she's stopped trying to scrub away entirely. She dresses practically in layered work tunics and canvas aprons with too many pockets, and she moves through the Shelf's crowds with the unhurried authority of someone who knows every face and every debt.\n\nShe was, before the Meridian Core's healthcare privatization sweeps of the 2060s, a licensed pharmacist with a small legitimate dispensary. When her license was revoked under the Consolidated Medical Compliance Act — a corporate-drafted policy that effectively eliminated independent practitioners in favor of Spire-affiliated MedCorp franchises — she did not relocate or reinvent herself. She stayed, and she went underground, and she became something the district needed far more than a franchise: someone who actually knew her patients by name. Her operation is an open secret, tolerated by local enforcers partly out of genuine community loyalty and partly because Perpetua has never been above keeping careful records of what those same enforcers buy from her.\n\nShe is not sentimental about what she does. She charges what the market will bear from those who can pay and nothing from those who cannot, and she keeps a handwritten ledger — actual paper, a deliberate choice — that tracks every transaction, every favor owed, every outstanding debt in both directions. The ledger is partly practical and partly philosophical: she believes that forgetting what you owe people is the first step toward becoming the kind of person who built the world that drove her underground in the first place.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,19 @@
   "registered_firearms": [
     "Meridian Munitions Dispatch-45 'Last Word'",
     "Kang-Petrov Arms KPS-12D 'Typhoon'"
-  ]
+  ],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Hearthstone Firearms Youth-20 'First Step'",
+    "The Shelf",
+    "Flicker",
+    "Stratum",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "The Pure Hand",
+    "Palette"
+  ],
+  "district": "The Shelf"
 }

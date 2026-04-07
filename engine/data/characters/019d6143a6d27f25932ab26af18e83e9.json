@@ -12,7 +12,7 @@
   "role": "Neighborhood council chair and policy advocate for the Highland Park Autonomous Zone",
   "age": 58,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, Council Hall (a reclaimed gymnasium above a hydroponic market)",
+  "location": "Highland Park Autonomous Zone, Council Hall (a reclaimed gymnasium above a hydroponic market), near Michigan Ave and Walton",
   "description": "Solange is a tall, stately woman with warm brown skin, deep-set eyes framed by pronounced crow's feet she treats as credentials, and silver-white locs piled into an architectural structure secured with copper wire and small enamel political pins from campaigns spanning forty years. She moves through Highland Park with the unhurried authority of someone who owns nothing but is trusted with everything. Her geneware is subtle: a faint cat-ear modification — velvet-tipped, tawny — that she got as a young woman and has never seen reason to remove; they swivel slightly when she's listening hard, which unsettles people who don't know to expect it.\n\nSolange has outlasted six Axiom zone managers, three rounds of 'redevelopment consultations,' two assassination attempts she refuses to characterize as such on the record, and one recall election she won by thirty-one votes. She does not call herself a radical. She calls herself a constitutionalist — meaning she holds the HPAZ's founding community charter as sacred and will use every procedural mechanism available to defend it. This makes her less exciting than firebrands and more dangerous than anyone gives her credit for.",
   "psychology": {
     "facet_weights": {
@@ -259,5 +259,15 @@
   "registered_firearms": [
     "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "The Burden Clause",
+    "Chronicle",
+    "Palladian Construction",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "Silver",
+    "Copper"
+  ],
+  "district": "The Spires"
 }

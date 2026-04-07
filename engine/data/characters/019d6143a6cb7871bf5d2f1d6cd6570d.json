@@ -12,7 +12,7 @@
   "role": "Circuit monk and chrome prayer practitioner",
   "age": 31,
   "status": "active",
-  "location": "Brightmoor Reclamation, in a self-built meditation cell within a decommissioned Ferrogate Transit relay station",
+  "location": "Brightmoor Reclamation, in a self-built meditation cell within a decommissioned Ferrogate Transit relay station, near Kedzie and Division",
   "description": "Seun Vrančić-Amara is lean to the point of austerity, which is the point. His head is shaved except for a single braid at the crown, threaded with a fiber optic filament that glows soft amber — not vanity, he insists, but a wick, a visible sign of the current he is trying to cultivate in himself. He has dark skin with warm undertones, large quiet eyes, and the kind of stillness in his body that makes people speak more honestly than they intended to. He keeps his nails very clean, which stands out in Brightmoor. He is twenty-three months into a forty-eight month self-imposed circuit retreat, which means he has given up most personal device use, accepts no payment for spiritual services, and eats one real meal per day.\n\nHis theology draws from chrome prayer tradition but he has stripped it to something starker: all consciousness — human, synthetic, and E.L.F. — is the same signal passing through different substrates. The practice is learning to feel that signal in your own body without the buffer of technology. He came to this after a Tessera subsidiary he worked for as a junior logistics analyst was dissolved overnight, erasing his pension, his apartment lease, and two years of his life in a single corponation decision. The anger turned inward, then turned into this. He is not entirely at peace with what he is doing, which makes him more honest about it than most.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,20 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Street Custom 'Confession' Modified Industrial Nail Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Ferrogate Transit",
+    "The Undertow",
+    "The Reclamation Assembly",
+    "PulsePoint ThermoSet Thermal Regulation Implant",
+    "Sulfur Crown Agriculture",
+    "Irontide Tidal Energy",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Coffin Nails",
+    "Wick Solomon"
+  ],
+  "district": "The Shelf"
 }

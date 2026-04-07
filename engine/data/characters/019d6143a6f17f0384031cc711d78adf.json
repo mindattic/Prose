@@ -12,7 +12,7 @@
   "role": "Personnel recovery and hostile extraction — extraction specialist",
   "age": 41,
   "status": "active",
-  "location": "The Spires — mid-level corporate residential towers",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
   "description": "Tenzin Nakamura-Bello is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 41, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Tenzin Nakamura-Bello is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,12 @@
     "Arcturus Defense Solutions ARC-P1 'Centurion'",
     "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial"
+  ],
+  "district": "The Spires"
 }

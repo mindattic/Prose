@@ -12,7 +12,7 @@
   "role": "Pilgrimage guide and dream interpreter",
   "age": 28,
   "status": "active",
-  "location": "Grand Corridor — operates from a rented stall near the junction of three transit lines",
+  "location": "Grand Corridor — operates from a rented stall near the junction of three transit lines, near Fullerton and Damen",
   "description": "Rúaidhrí is rangy and perpetually in motion, with warm amber-brown skin, a scatter of freckles across their nose and cheekbones, and hair that color-shifts between deep burgundy and burnt orange on a slow cycle — a mid-tier cosmetic mod they maintain scrupulously even when they can't afford other things. They have the kind of face that reads as younger than it is until they make eye contact, at which point it reads as older. They wear layers even in the heat, always — a practical necessity, since Grand Corridor's climate control is notoriously unreliable, but also a signature.\n\nThey have been guiding pilgrims through Meridian 88's informal spiritual circuit for six years: the six major E.L.F. shrines, the chrome prayer temples, the memory walls, the three sites considered genuinely haunted by consensus. They are agnostic about what any of it means and absolutely committed to making sure people arrive safely, are treated fairly, and understand what they're walking into. The dream interpretation service is separate and newer — it began when a pilgrim described a recurring dream on a long walking route and Rúaidhrí found themselves making connections they hadn't expected. Word spread. They are still not sure they believe in any of it, but they have a disconcerting hit rate.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,20 @@
     "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Corridor",
+    "Jefferson Switch",
+    "Meridian 88",
+    "ARCHIVE",
+    "TESSERA PG-2 'Signature'",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Tessera TAR-12 'Consensus'",
+    "Street Custom 'Glass Garden' Caltrops",
+    "the_meridian_office_park",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Circuit"
 }

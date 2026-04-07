@@ -12,7 +12,7 @@
   "role": "Gene-mod body artist and tattoo practitioner",
   "age": 34,
   "status": "active",
-  "location": "Pilsen Veil, studio called Second Skin on a street level unit beneath a Helix Biosystems-adjacent medical supply depot",
+  "location": "Pilsen Veil, studio called Second Skin on a street level unit beneath a Helix Biosystems-adjacent medical supply depot, near Halsted and Chicago Ave",
   "description": "Odalys is the kind of person whose own body is her portfolio, which is either an advertisement or a warning depending on who is looking. She has deep olive skin networked with bioluminescent subdermal patterns — her own design, her own application, done in sections over nine years — that shift between dormant and active based on her emotional state, a feature she installed deliberately and occasionally regrets. Her face is clear of modification by choice, a decision that draws more attention than any further work could. She is medium height, broad-shouldered, moves with the confidence of someone who has spent years being looked at and has made a separate peace with it. Her Ghanaian grandfather's bone structure and her Greek grandmother's coloring produce something the Pilsen Veil regulars call 'aggressively memorable.'\n\nShe does traditional tattoo work, biological geneware application, and bespoke subdermal lighting — the full spectrum from purely cosmetic to emotionally interactive, like her own reactive network. She is meticulous, unhurried, and has a waiting list of four months that she has never tried to shorten. Her reputation is built on two things: technical excellence and the refusal to apply any design she finds spiritually wrong for the client, a policy that generates one furious argument per month and one deeply grateful client per month and she considers this an acceptable ratio.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,16 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street Custom 'Glass Garden' Caltrops"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Tessera Industries Sensory Overload Grenade SOG-3 'Flashbang Plus'",
+    "Pilsen Veil",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "The CEO",
+    "Grandmother",
+    "Pellucid Systems",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Shelf"
 }

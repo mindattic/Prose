@@ -12,7 +12,7 @@
   "role": "Investigative journalist and whistleblower handler operating out of Mexicantown Libre",
   "age": 38,
   "status": "active",
-  "location": "Mexicantown Libre, Meridian 88",
+  "location": "Mexicantown Libre, Meridian 88, near Pulaski and Chicago Ave",
   "description": "Isadora has the kind of face that is easy to remember individually and hard to place in a crowd — broad nose, angular cheekbones, warm coppery-brown skin, and dark eyes that are always, always taking notes. She keeps her thick dark hair pulled back tightly and wears it down only when she is trying to go unnoticed, which is an inversion most people would not anticipate. She has a faint artificial shimmer to the skin of her forearms — a residual effect of a cheap bioluminescence mod she had installed and removed years ago, leaving this iridescent ghost behind.\n\nIsadora spent seven years at a mid-tier Zheng-Dao affiliated media outlet before she published a piece they hadn't approved and found herself without a desk, a salary, or a press credential. Now she freelances for a network of independent outlets under three different bylines and runs an encrypted communication service that connects corporate whistleblowers with journalists, lawyers, and occasionally mutual aid networks depending on what is needed. She is funny and genuinely charming at parties, which is a professional tool she is not always comfortable with. She keeps a running list of every piece that has been killed, delayed, or changed without her consent — it is very long, and she re-reads it when she needs to remember why she is doing this.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,15 @@
   "registered_firearms": [
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ]
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Meridian 88",
+    "Zheng-dao Bioelectric",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller — salvage, broken augmentations, mystery components",
   "age": 44,
   "status": "active",
-  "location": "The Shelf, Harrowgate Industrial Plateau",
+  "location": "The Shelf, Harrowgate Industrial Plateau, near Halsted and Division",
   "description": "Branko is a stocky, perpetually grease-smudged man whose Indonesian-Ethiopian features have been weathered by twenty years of Harrowgate's industrial air into something that looks carved rather than grown. He has a magnificent mustache he tends with more care than anything else in his life, and his left eye is a salvaged optical implant three generations out of date that gives everything a faint amber tint and occasionally displays error codes in his peripheral vision that he's learned to ignore. His hands are enormous and scarred, and he can identify a component by touch alone in the dark. His stall is a magnificent catastrophe: towers of sorted scrap in a system only he understands, with handwritten price tags that rarely match what he actually charges.\n\nBranko is irrepressibly cheerful in the way that only someone who has completely stopped expecting things to go well can be. He finds everything slightly funny, including disasters, including his own. He narrates his life as if it's a story he's telling to someone who will appreciate it later. He genuinely loves salvage — not for profit, which is good because he's terrible at profit, but because every broken thing is a puzzle and he likes puzzles. He has an encyclopedic knowledge of augmentation components from five different decades and will talk about them at length to anyone who doesn't flee quickly enough. He is not stupid. He is simply constitutionally incapable of prioritizing money over curiosity.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,16 @@
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Harrowgate Industrial Plateau",
+    "The Shelf",
+    "Aslan Vasquez-Chatterjee",
+    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
+    "Chimera-Null",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Tin Man"
+  ],
+  "district": "The Shelf"
 }

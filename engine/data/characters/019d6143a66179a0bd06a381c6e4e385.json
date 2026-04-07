@@ -12,7 +12,7 @@
   "role": "Forced entry and close-quarters combat specialist — breacher",
   "age": 36,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore",
+  "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Division",
   "description": "Nenad Vargas-Baffour are compact and densely muscled, built low to the ground like something designed to survive impacts. At 36, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a breacher out of The Shelf, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Nenad Vargas-Baffour describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,15 @@
   "registered_firearms": [
     "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ]
+  ],
+  "related_entities": [
+    "The Shelf",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "The Gradient Compact",
+    "Stratum",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

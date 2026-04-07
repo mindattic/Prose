@@ -6,7 +6,11 @@
   "date": "unknown",
   "classification": "restricted",
   "description": "...the Foundry has stopped. Repeat, the Foundry has stopped for the first time in recorded observation. It is standing at coordinates [REDACTED] and appears to be— I don't have a word for this. It appears to be waiting. For something. [23 seconds silence] ...it's looking at me. I don't know how I know that. It doesn't have— it's looking at me. [TRANSMISSION ENDS]",
-  "related_entities": [],
+  "related_entities": [
+    "Gravemoss Biofoundry",
+    "Flicker",
+    "Crucible Industries CR-9 'Foundry'"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "Why did the Foundry stop?",

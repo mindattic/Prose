@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit Security Officer, Kenosha Crossing hub",
   "age": 27,
   "status": "active",
-  "location": "Kenosha Crossing transit hub, Ferrogate Transit Security post C-7",
+  "location": "Kenosha Crossing transit hub, Ferrogate Transit Security post C-7, near outside the Pulaski Gate",
   "description": "Tavishi is broad-shouldered and soft-faced, with warm dark brown skin, a close beard that he keeps meticulously trimmed, and geneware cat ears — tawny, tipped with white — that he got at nineteen with three months of saved wages and has never regretted. The ears move expressively and he is bad at hiding it: they fold back when he is nervous, swivel toward sounds he is trying to catch. He is in good shape but carries himself with a slight forward hunch, as if bracing against weather, which is his default posture when he is uncertain about something — which is often.\n\nHe is three years into the Ferrogate Transit Security job and he still hasn't decided if it suits him or if he suits it. He is genuinely kind, which creates problems at Kenosha Crossing — a major hub where the desperate, the unhoused, the fare-evaders, and the genuinely dangerous all move through the same turnstiles. His supervisor tells him to be consistent. His instincts tell him to be human. Most days he finds a middle ground that satisfies neither. He prays to the Kenosha E.L.F. — a transit spirit locals call Corrigan — leaving small data packets of safe-passage wishes before his shift. He was raised with E.L.F. devotion and wears it without embarrassment.",
   "psychology": {
     "facet_weights": {
@@ -198,5 +198,15 @@
   "registered_firearms": [
     "Tessera TK-11 Specter 'Whisper'",
     "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Kenosha Crossing",
+    "The Portico",
+    "The Wire Taps",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Chimera-Null",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "Nomadic"
 }

@@ -12,7 +12,7 @@
   "role": "Food stall operator — broth and fermented grain specialist",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Pulaski and Chicago Ave",
   "description": "Zawadi is a broad-shouldered woman whose hands are perpetually stained with turmeric and char, calloused from thirty years of ladling broth in all weather. Her hair is silver-streaked and coiled under a waxed cloth wrap she re-ties about a dozen times a day out of habit, and her face is a map of laugh lines deepened by steam. She has no cosmetic mods except a set of heat-sensing fingertip implants she got cheap in her forties so she'd stop burning herself — they glow faintly amber when something is too hot, which she finds beautiful. Her stall is a converted ferrogate maintenance cart draped in mismatched fabric swatches, strung with small data-tokens she's collected from regulars over the years as ELF offerings — she believes her stove-spirit blesses every batch if fed properly.\n\nZawadi is the kind of person who knows everyone's name and their mother's name too, if they've come around long enough. She is warm without being soft, generous without being foolish, and has a razor instinct for when someone is about to cause trouble at her stall or nearby. She has watched her corner of Geartown change three times over and intends to outlast a fourth. She gives credit to people she trusts and cuts off people she doesn't with the same cheerful finality.",
   "psychology": {
     "facet_weights": {
@@ -217,5 +217,17 @@
   "registered_firearms": [
     "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
     "Crucible Industries Havoc-44 'Mauler'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Ferrogate Transit",
+    "Zheng-dao Bioelectric",
+    "Geartown",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

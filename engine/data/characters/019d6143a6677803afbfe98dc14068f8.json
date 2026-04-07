@@ -12,7 +12,7 @@
   "role": "Retired Ferrogate Transit union leader, now community council elder",
   "age": 78,
   "status": "active",
-  "location": "Washburn Commons, Block 7 Community Hall",
+  "location": "Washburn Commons, Block 7 Community Hall, near Halsted and Division",
   "description": "Nnamdi is a broad-shouldered man whose body still carries the architecture of someone who once commanded rooms — the squared posture, the deliberate occupation of space — though age has softened his silhouette into something more like a weathered monument than a weapon. His skin is deep brown and mapped with the creases of seven decades of expression, and he keeps his white hair cropped close to the scalp except for a single braid at the temple, a tradition from his Polynesian grandmother he has never explained to anyone who asked. His left arm from the elbow down is functional chrome — a Ferrogate industrial replacement from a coupling accident in '61 — and he polishes it every morning with the same cloth he uses on his shoes.\n\nHe speaks slowly and with enormous precision, as a man who learned early that imprecise words cost people their livelihoods. He has strong opinions about nearly everything and shares them freely but listens — genuinely listens — in a way that has become increasingly rare. Younger residents come to him with problems he cannot solve and leave feeling they have been given something anyway. He does not romanticize the past. He is one of the few people in Washburn Commons who will tell you, to your face, that the Corporate Wars were atrocities on all sides.",
   "psychology": {
     "facet_weights": {
@@ -250,5 +250,11 @@
   "registered_firearms": [
     "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
     "Nkomo-Lindqvist NLR-9 'Counselor'"
-  ]
+  ],
+  "related_entities": [
+    "Washburn Commons",
+    "Grandmother",
+    "Ferrogate Transit"
+  ],
+  "district": "The Shelf"
 }

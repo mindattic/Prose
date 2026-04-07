@@ -12,7 +12,7 @@
   "role": "Network intrusion and digital warfare specialist — netrunner",
   "age": 40,
   "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Chicago Ave",
   "description": "Djeneba Park-Traore is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a netrunner out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nDjeneba Park-Traore operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,11 @@
     "Street Custom 'Confession' Modified Industrial Nail Gun",
     "Forge-Smith Collective Thundermouth Double 'Old Testament'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

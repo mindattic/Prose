@@ -1,0 +1,37 @@
+{
+  "id": "e147f71817ea5e00238acf567f46c696",
+  "name": "Frostline Gear Heated Work Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Insulated work gloves with resistive heating elements threaded through the fingers and palm. A micro-battery in the wrist cuff provides eight hours of continuous heat at moderate settings. The outer layer is abrasion-resistant synth-leather; the inner layer is thermal-wicking fleece.\n\nUsed by anyone working in cold environments who still needs manual dexterity — maintenance crews, delivery runners, outdoor market vendors in winter months. The heating elements are replaceable, and the gloves accept standard micro-battery swaps.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "synth-leather outer",
+    "thermal fleece lining",
+    "resistive heating elements",
+    "micro-battery"
+  ],
+  "functionality": "8-hour continuous heating, abrasion resistance, battery-swappable",
+  "what_it_says": "You work in the cold and you've spent just enough to keep your fingers functional.",
+  "worn_by": [
+    "maintenance crews",
+    "delivery runners",
+    "outdoor vendors"
+  ],
+  "manufacturer": "Frostline Gear",
+  "price_range": "Φ110",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A delivery runner's heated gloves are found with the battery drained in a building that should have been warm — suggesting they were used for something other than staying warm."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 1",
+    "heated",
+    "work",
+    "cold weather",
+    "practical"
+  ]
+}

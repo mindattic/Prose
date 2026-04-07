@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator, Lake Loop elevated rail",
   "age": 34,
   "status": "active",
-  "location": "Deepwell Station, operates the L-7 Lake Loop elevated line",
+  "location": "Deepwell Station, operates the L-7 Lake Loop elevated line, near sub-level access near State and Van Buren",
   "description": "Orhan is a lean, angular man of middling height with a Sahel-boned face, his mother's warm brown complexion, and his father's flat Polish nose that he has always been vaguely self-conscious about. He keeps his head shaved to faint stubble and has a single cosmetic mod — a patterned iris modification that renders his pupils as slowly rotating geometric rings, a gift from a former partner he never got around to reversing. He wears his Ferrogate Transit uniform with the collar folded exactly one centimeter down, a minor unauthorized alteration he has maintained for six years without a single supervisor catching it. His cab smells of synthetic cardamom from the little flavor-diffuser clipped to his instrument panel, beside which sits a paper E.L.F. shrine — a folded transit map on which he has drawn the face of the Rail Spirit and which he taps three times at the start of every shift.\n\nOrhan runs the same eighty-kilometer elevated loop eleven hours a day, five days a week, and has developed the unsettling ability to recognize regular passengers by the sound of their footsteps on the boarding platform. He is not unhappy — he finds the repetition genuinely meditative — but he is quietly, persistently lonely in a way he cannot quite name. He reads on his secondary screen during station dwells, always history or urban geography, and has an encyclopedic knowledge of Meridian 88's infrastructure that he has never found occasion to use. He is patient with passengers to a near-inhuman degree, only revealing irritation through a single slow blink.",
   "psychology": {
     "facet_weights": {
@@ -188,5 +188,18 @@
   "registered_firearms": [
     "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
     "Volkov-Saito Precision VS-40 'Magistrate'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Deepwell Station",
+    "Meridian 88",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Glenville Sound",
+    "Ringo Heavy Transit MagRail Levitation Transport Network",
+    "Arcturus Defense Solutions ETF-3 'Mantis'",
+    "The Wire Taps",
+    "Arcturus CK-5 'Bloodhound'",
+    "Déjà Vu"
+  ],
+  "district": "The Underworld"
 }

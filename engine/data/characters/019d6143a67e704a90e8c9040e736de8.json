@@ -12,7 +12,7 @@
   "role": "corporate school student and junior hacker, Tier 3",
   "age": 14,
   "status": "active",
-  "location": "Engelheim, Axiom Meridian Youth Preparatory Campus",
+  "location": "Engelheim, Axiom Meridian Youth Preparatory Campus, near Lincoln and Belmont",
   "description": "Oleander is a tall, soft-faced fourteen-year-old with his father's Ukrainian pallor cut through with his grandfather's Ghanaian bone structure, resulting in something that looks like a sculptor started with two different models and found the intersection interesting. His geneware is modest — his parents approved a bioluminescent vein treatment in pale gold that shows at his temples and wrists when he's excited or stressed, something he deeply regrets as it is essentially a visible anxiety indicator. He keeps his school uniform impeccably pressed to compensate.\n\nHe is enrolled at Axiom Meridian Youth Prep on a partial academic scholarship, meaning his family stretches Tier 3 income to cover the gap. He is genuinely brilliant at systems architecture and has parlayed that into a small private operation: for a fee, he fixes other students' academic scores, not by hacking the official records (too dangerous) but by finding the legitimate alternate-submission loopholes buried in the campus governance code that no one else reads. He calls this 'procedural advocacy.' He is aware this is thin moral ice and he keeps skating.",
   "psychology": {
     "facet_weights": {
@@ -203,5 +203,15 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The CEO",
+    "Hydewood",
+    "Engelheim",
+    "Lacuna Genomics",
+    "Ironvein",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Laceworks"
 }

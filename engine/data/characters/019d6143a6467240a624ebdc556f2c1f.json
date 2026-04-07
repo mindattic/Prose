@@ -12,7 +12,7 @@
   "role": "Retired Zheng-Dao maintenance engineer, community elder, grandparent raising grandchildren",
   "age": 78,
   "status": "active",
-  "location": "Avalon Quiet — a three-room unit on the eighth floor of the Chrysalis Building, a co-operative housing block",
+  "location": "Avalon Quiet — a three-room unit on the eighth floor of the Chrysalis Building, a co-operative housing block, near Lincoln and Clark",
   "description": "Kwabena is a tall man who has given up very little of his height to age — he still stands straight at six-two, lean in the way of someone who has spent a lifetime climbing through maintenance shafts and has never been able to afford to stop moving. His skin is deep umber-black with a slight ashen quality at the joints, and his hands are the most expressive thing about him: massive, deliberate, permanently stained with the particular bluish tint of Zheng-Dao lubricant that no amount of washing has ever fully removed. He has cat ears — a geneware mod he got at thirty-two on a bet, brown-furred and articulate, which now seem as natural a part of his face as his broad nose and his slow, assessing eyes. He keeps his beard in a neat grey circle and wears the same type of quilted work jacket in varying states of cleanliness, each one bearing accumulated patches from thirty years of Zheng-Dao facility IDs.\n\nHe worked Zheng-Dao maintenance for forty years, becoming one of the senior engineers for the Avalon Quiet district power grid before mandatory retirement. He is the kind of man who understands systems — mechanical, social, familial — with the same patient diagnostic attention, and who believes almost everything can be fixed if you correctly identify the fault. He is raising two grandchildren, ages nine and twelve, after his son's death, and he applies to this work the same methodical care he gave to keeping three hundred thousand residents' power running. He is not warm in an obvious way. He is reliable, which he has concluded is better.",
   "psychology": {
     "facet_weights": {
@@ -259,5 +259,16 @@
     "Kang-Petrov Arms KP-10C 'Bullpup'",
     "Forge-Smith Collective Carbon Machete 'Cane Cutter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Avalon Quiet",
+    "Ouroboros Energy Power Distribution Trunk Network",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Zheng-dao Bioelectric",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus CK-5 'Bloodhound'",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Laceworks"
 }

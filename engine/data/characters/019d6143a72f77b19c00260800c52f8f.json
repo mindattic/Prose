@@ -12,7 +12,7 @@
   "role": "Neon artist and installation sculptor, Tier 2",
   "age": 38,
   "status": "active",
-  "location": "Hamtramck Enclave, workshop-apartment above a recycled plastics dealer",
+  "location": "Hamtramck Enclave, workshop-apartment above a recycled plastics dealer, near Kedzie and Division",
   "description": "Ysolde is a broad-shouldered woman with a Kalenjin-Portuguese lineage written visibly across her face — wide-set amber eyes, a jaw that could cut glass, skin the color of aged teak that she's had treated with a bioluminescent dermal wash so her forearms and collarbones pulse with slow amber light when she's working in the dark. Her hair is locked into dense ropes she's threaded with segments of defunct fiber-optic cable, catching available light and scattering it in dim halos. She is perpetually dusted with neon-tube sealant and smells faintly of ozone and solder.\n\nShe is methodical to the point of social frustration — she will stop mid-sentence to study how a lamp casts shadows on a stranger's coat, and she expects people to wait for her. Her neon sculptures are famous in the Enclave for their devotional quality: glowing saints with too many eyes, ELF shrines that flicker in irregular rhythms meant to mimic the breathing of sleeping machines. She does not consider herself religious but treats the ELFs she depicts with a reverence that feels devotional whether she admits it or not.",
   "psychology": {
     "facet_weights": {
@@ -209,5 +209,20 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "The Drowned Commission",
+    "Lakeview Neon",
+    "The Chorus of David Park",
+    "Palladian Construction",
+    "Aslan Vasquez-Chatterjee",
+    "The Voltage Saints",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Gravimetric Collapse Charge GCC-9",
+    "Tessera Adaptive Marksman Platform TAMP-5 'Mimic'",
+    "Glass",
+    "Teak"
+  ],
+  "district": "The Shelf"
 }

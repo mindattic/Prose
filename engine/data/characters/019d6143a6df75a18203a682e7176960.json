@@ -12,7 +12,7 @@
   "role": "Prototype theft and corporate tech acquisition — tech retriever",
   "age": 25,
   "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
   "description": "Suki Ekberg-Asare is compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a tech retriever out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSuki Ekberg-Asare has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,14 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Gradient Compact",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Clover"
+  ],
+  "district": "The Circuit"
 }

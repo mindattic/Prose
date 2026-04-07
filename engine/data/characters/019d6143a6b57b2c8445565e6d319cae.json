@@ -12,7 +12,7 @@
   "role": "High-risk package and data transport — courier",
   "age": 28,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near North Ave and Damen",
   "description": "Rongo Delgado-Opoku is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 28, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Rongo Delgado-Opoku plans to keep it that way. She works as a courier out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Rongo Delgado-Opoku is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,17 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Ringo DV-4 'Courier'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Circuit"
 }

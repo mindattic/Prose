@@ -12,7 +12,7 @@
   "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
   "age": 34,
   "status": "active",
-  "location": "Fort Anchor, The Rampart deployment zone",
+  "location": "Fort Anchor, The Rampart deployment zone, near Western and Chicago Ave",
   "description": "Onyeka is built like a structural support column — six feet of dense muscle, mahogany skin cross-hatched with old scorch scarring along her left jaw and collarbone from a crowd dispersal incident she doesn't discuss. Her geneware irises cycle through amber and deep violet depending on her stress levels, a mod she got cheap and has never bothered upgrading despite the involuntary emotional readout it provides. Her hair is shorn close on the sides and kept natural on top, threaded with thin copper filaments that catch the light. Off-duty she moves slowly, almost gently, like something very large trying not to break things. On the line she becomes geometry — economical, angular, purposeful.\n\nShe is not cruel but she has made her peace with force. She genuinely believes in the maintenance of order as a social good, in the same way a levee believes in holding back water. What she doesn't examine closely is the question of who decides what 'order' means and whose chaos gets suppressed. She treats rookies with patient seriousness, older cynics with wary respect, and her commanding officers with a politeness that has no warmth in it at all.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,20 @@
   ],
   "registered_firearms": [
     "Tessera TKR-10 'Executor'"
-  ]
+  ],
+  "related_entities": [
+    "Riddle",
+    "Fort Anchor",
+    "The Rampart",
+    "The Filament",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "The Fathom Line",
+    "Mahogany",
+    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Gravimetric Collapse Charge GCC-9",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper"
+  ],
+  "district": "The Shelf"
 }

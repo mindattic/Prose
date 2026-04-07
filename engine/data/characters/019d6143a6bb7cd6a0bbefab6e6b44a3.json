@@ -13,7 +13,7 @@
   "role": "Crew lead and community defense coordinator — Last Light",
   "age": 52,
   "status": "active",
-  "location": "The Shelf — operates from a community center three blocks from Mrs. Chen's shop",
+  "location": "The Shelf — operates from a community center three blocks from Mrs. Chen's shop, near Ashland and Chicago Ave",
   "description": "Ruth Agada is the lowest-paid runner in Meridian 88 and the most respected person below Tier 3. Last Light takes contracts that nobody else will touch: protecting excluded families from eviction squads, escorting debt-marked citizens through corporate checkpoints, standing between Shelf communities and the security forces that treat them as jurisdictional noise. The pay is whatever the clients can afford, which is usually nothing. Ruth doesn't care. The work is the work.\n\nShe was a public defender in Meridian 88's municipal court system for eighteen years — one of the last attorneys who represented excluded citizens in jurisdictional disputes. When the court system was privatized and representation became a billable service priced beyond the excluded's reach, Ruth kept working. Pro bono. For free. The bar association suspended her license for 'unprofessional conduct.' She appealed. The appeal court was also privatized. She stopped appealing and started operating outside the legal system that had abandoned the people she served.\n\nRuth is tall, broad, with the bearing of a woman who has stood in courtrooms and stared down corporate attorneys and felt nothing but the certainty of purpose. Her hair is silver, worn natural, and her face carries the particular beauty of someone who has been angry for thirty years and hasn't let the anger eat her. She wears practical clothes and carries herself like a person who has decided what she is for and will not be moved.",
   "psychology": {
     "facet_weights": {
@@ -198,5 +198,17 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Shelf",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Big Rig",
+    "Lazarus LX-2 'Lab Rat'",
+    "Tibor Osei-Svanstrom",
+    "Silver",
+    "Glass"
+  ],
+  "district": "The Shelf"
 }

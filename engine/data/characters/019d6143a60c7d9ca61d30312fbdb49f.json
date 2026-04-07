@@ -12,7 +12,7 @@
   "role": "Whistleblower and community council member",
   "age": 61,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Ashland and Division",
   "description": "Ezra is a retired Sterling-Nakamura logistics compliance officer who spent thirty-one years watching things get falsified and decided on year thirty-two that he was done. He is a heavyset man with the careful, deliberate physicality of someone who has learned not to take up space in ways that draw attention, a habit from corporate years that he has mostly unlearned. His skin is dark and dry at the elbows and knuckles, his hair cut close and almost entirely white. He has a single augmentation — a neural notation implant he uses compulsively to record everything, which he got for work and kept afterward. He has a cat's tail, ruddy amber, that he got on a whim at sixty and which his grandchildren love and which surprises everyone who meets him.\n\nEzra now serves on the Shelf Community Resource Council, a position he ran for mostly because he couldn't stop seeing the ways services were being misallocated and nobody with a ledger background was doing anything about it. He is methodical, patient, and genuinely humble in the way that people who have been wrong in consequential ways sometimes become. He spent three decades enabling a system he now spends his retirement opposing, and he carries that with a gravity that never quite lifts. He is not a firebrand. He is a man who has kept copies of everything.",
   "psychology": {
     "facet_weights": {
@@ -175,5 +175,13 @@
   ],
   "registered_firearms": [
     "Nkomo-Lindqvist NLR-9 'Counselor'"
-  ]
+  ],
+  "related_entities": [
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Shelf",
+    "Tessera Corponation",
+    "Adaeze Chen-Hawkins",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

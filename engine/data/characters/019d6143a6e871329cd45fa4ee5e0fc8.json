@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor, operates a modified push cart outside the Edgewater Prism transit hub",
   "age": 22,
   "status": "active",
-  "location": "Edgewater Prism, outer plaza, east entrance",
+  "location": "Edgewater Prism, outer plaza, east entrance, near Lincoln and Clark",
   "description": "Tafara is tall and slightly too thin in the way of people who feed others better than themselves, with the elongated Zimbabwean features of his father's side softened by his Finnish-Mexican mother's coloring — he tans an unusual amber and burns only at the very tips of his ears, which he is vaguely proud of. He has cat ears, the small tufted dark-gray variety, which he has had since he was twelve and that his mother paid for on installment. He keeps them pressed flat when he is concentrating and swiveling independently when he is excited, which is frequently. His hands are scarred from early apprenticeship burns and always faintly fragrant with the lemongrass and dried chile that form the base of his broth.\n\nThe cart, which he calls The Debt (a joke only he fully appreciates, since he is still paying off the equipment loan), has been on the Edgewater Prism east plaza for two years and has developed a following out of proportion to its apparent simplicity. Tafara makes one rotating bowl per day — a different combination of noodles, broth, protein, and toppings, chalked on the small board he props against the cart's front — and when it is gone, it is gone. He does not adapt the recipe to complaints. He does, however, adapt it to weather, to available ingredients, and to a private read of the day's mood that he could not articulate but which consistently produces something people want.",
   "psychology": {
     "facet_weights": {
@@ -219,5 +219,14 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "Palladian Construction",
+    "Irkalla",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Hearthstone Firearms Trail-357 'Pathfinder'"
+  ],
+  "district": "The Laceworks"
 }

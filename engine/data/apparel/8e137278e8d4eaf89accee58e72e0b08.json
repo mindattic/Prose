@@ -1,0 +1,38 @@
+{
+  "id": "8e137278e8d4eaf89accee58e72e0b08",
+  "name": "Free Signal Pirate Radio Vest",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A tactical-style vest modified to carry a portable FM transmitter, antenna, battery pack, and microphone. The vest turns its wearer into a walking radio station, capable of broadcasting on hijacked frequencies within a 500-meter radius. The exterior is covered in hand-painted frequency numbers and anti-corponation slogans.\n\nFree Signal pirate radio operators broadcast unlicensed news, music, and commentary in Shelf districts where official media coverage is nonexistent. The vest is both toolkit and uniform — everyone recognizes the painted frequencies, and most people know to tune in.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "modified tactical vest",
+    "portable FM transmitter",
+    "battery pack",
+    "hand-painted exterior"
+  ],
+  "functionality": "Mobile pirate radio broadcasting, 500m range, frequency-hopping capable",
+  "what_it_says": "You carry the truth on your chest and broadcast it to anyone with a radio, and no license is going to stop you.",
+  "worn_by": [
+    "pirate radio operators",
+    "independent journalists",
+    "Shelf information activists"
+  ],
+  "manufacturer": "Handmade (Free Signal collective)",
+  "price_range": "Φ200 (equipment cost)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Free Signal vest is found still broadcasting on loop — the same message repeated for 72 hours — but the wearer is nowhere to be found and the message contains coordinates that change with each repetition."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 1",
+    "pirate radio",
+    "Free Signal",
+    "Shelf",
+    "broadcast",
+    "activist"
+  ]
+}

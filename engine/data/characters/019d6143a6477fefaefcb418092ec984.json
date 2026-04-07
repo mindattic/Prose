@@ -12,7 +12,7 @@
   "role": "numbers runner and low-level gang prospect, The Narrows",
   "age": 17,
   "status": "active",
-  "location": "The Narrows — works the stretch between the Blackpipe Corridor transit stop and the Gage Circuit market row",
+  "location": "The Narrows — works the stretch between the Blackpipe Corridor transit stop and the Gage Circuit market row, near Fullerton and Damen",
   "description": "Kweku is seventeen and looks it — still growing into his frame, with Ghanaian-Croatian features and close-cropped natural hair with a dyed orange streak. He moves fast and light, the way kids who grew up in tight corridors move, always slightly angled like he's prepared to redirect. He has geneware cat ears — soft black-and-orange, a birthday mod from his older sister — that perk and flatten with his mood in ways he hasn't learned to control yet. His clothes are Tier 1 practical: durable synthetics, good shoes chosen for speed.\n\nKweku is smart in ways the Narrows rewards and in ways it doesn't. He can memorize a route, a face, a number, and a cover story simultaneously; he reads social dynamics in a room within seconds; he is genuinely funny and likable and uses both as tools before he even realizes he's doing it. What he cannot do yet is see far enough ahead. He thinks about the next run, the next Φ, the next step up — not about what the gang will ask of him when stepping up means something worse than carrying slips. He is not innocent, exactly. He is not yet not-innocent. The window is closing.",
   "psychology": {
     "facet_weights": {
@@ -219,5 +219,13 @@
   "carried_weapons": [
     "Forge-Smith Collective Carbon Machete 'Cane Cutter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Gage Circuit",
+    "The Narrows Compact",
+    "Grandmother",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

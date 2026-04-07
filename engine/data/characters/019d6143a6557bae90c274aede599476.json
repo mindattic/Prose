@@ -12,7 +12,7 @@
   "role": "Protection racket enforcer for a Shallowgrave neighborhood crew",
   "age": 24,
   "status": "active",
-  "location": "Shallowgrave — primarily the Copperhead commercial strip and its surrounding residential blocks",
+  "location": "Shallowgrave — primarily the Copperhead commercial strip and its surrounding residential blocks, near Western and Division",
   "description": "Marisol is not physically imposing in the way people expect an enforcer to be, which is the first thing she uses against them. She's medium height, wiry, with warm tan-brown skin and long dark hair she usually keeps in a practical braid. Her geneware is a tail — a prehensile, dark-furred tail she had put in at seventeen, not for any practical reason but because she'd always wanted one, and she uses it now to curl around chair legs or flick dismissively while she's talking. She has a vertical scar through her left eyebrow from a collection that went wrong at twenty-two, which she has declined to have repaired. She dresses in layers, practical and dark, and she is almost always in motion — bouncing a heel, turning a coin between her fingers, curling and uncurling the tail.\n\nMarisol is young and aware of it, which means she works harder to project certainty than someone with more experience would need to. She has a mouth that runs faster than her judgment and a genuine talent for reading fear — she knows when someone is about to do something stupid and has developed an instinct for the preemptive move. She is not cruel for its own sake, which she considers a professional virtue, but she is thorough, and the Copperhead merchants who pay the crew's fee understand the distinction. She has a complicated loyalty to her crew boss, Adjoa Temnykh-Vieira, an older woman she admires to the point of distortion.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,16 @@
   "registered_firearms": [
     "Crucible Industries Cerberus-357 'Hellhound'",
     "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Shallowgrave",
+    "Copperhead",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Flicker",
+    "ShieldTech Enforcer DM-4 'Crossover'",
+    "Nesting Doll",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

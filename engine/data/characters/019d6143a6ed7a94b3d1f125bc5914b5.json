@@ -11,7 +11,7 @@
   "role": "Subterranean scavenger and salvage dealer",
   "age": 19,
   "status": "active",
-  "location": "Blackpipe Corridor, operating from a stash den in an abandoned Ferrogate Transit maintenance node",
+  "location": "Blackpipe Corridor, operating from a stash den in an abandoned Ferrogate Transit maintenance node, near Fullerton and Damen",
   "description": "Tchamba is nineteen and looks both younger and older than that, in different ways — his frame is still growing into itself, rangy and not quite finished, but his face has the particular alertness of someone who has been making survival decisions since early childhood. His skin is a warm medium brown, his natural hair grown out in a loose cloud he rarely has time to tend, and he has the nervous energy of a person whose resting state is motion. His most notable feature is his hands: they are extraordinary — long-fingered, precise, covered in small new and old scars, and able to disassemble a piece of salvaged tech faster than most people can identify it. He's added retractable carbon-fiber fingertip reinforcements to protect them, his only meaningful augmentation, funded over eight months of careful saving.\n\nHe deals in salvage from the dead infrastructure of Blackpipe Corridor — cracked conduit wiring, pressure regulators, old transit sensor housings, anything that can be stripped and sold up through the guide networks to surface-level buyers or repurposed for deep-level use. He knows which tunnels have been opened by recent seismic shifts and gets there before anyone else. He is not yet cynical but he is becoming strategic, and there's a version of him three years from now that would be harder to like. Right now he still gets genuinely excited about an interesting find and will talk about it at length to anyone who will listen.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,13 @@
   "registered_firearms": [
     "Tessera Adaptive Platform TAP-5 'Chameleon'",
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Ferrogate Transit",
+    "Isadora Mwangi-Thorvaldsen",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

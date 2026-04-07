@@ -12,7 +12,7 @@
   "role": "Seamstress and textile repair vendor, Burnished Market stall",
   "age": 58,
   "status": "active",
-  "location": "Burnished Market, stall row 14-C near the Copperhead overpass",
+  "location": "Burnished Market, stall row 14-C near the Copperhead overpass, near Fullerton and Damen",
   "description": "Odalys is a broad-shouldered woman with deep umber skin mapped with faint depigmentation patches along her jaw and forearms — she stopped covering them decades ago. Her silver-shot hair is coiled under a rust-orange headwrap that she reties at least four times a day, a habitual gesture visitors learn to read as a mood barometer. Her fingers are thick, calloused, and perpetually threaded with something: a needle, a sensor wire, a strip of thermoplastic weave. She wears bifocal optical inserts that she refuses to upgrade, claiming the slight blur in her left lens helps her see fabric texture better. She smells faintly of machine oil and dried marigold.\n\nAt 58, Odalys runs the most respected mending stall in the Burnished Market — not the flashiest, not the cheapest, but the one people trust with the jacket their grandmother wore or the uniform they can't afford to replace. She has a gift for silence that puts anxious customers at ease and a bluntness that cuts right past flattery. She prays every morning to the E.L.F. she calls Needle-and-Thread, a spirit she believes lives in her antique Zheng-Dao industrial sewing frame, leaving it single-thread offerings in patterns she designs herself. She is deeply content with her life in a way that quietly unsettles people who are not.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,17 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Street Custom 'Lazybones' Tripwire Shotgun Trap"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Grandmother",
+    "Copperhead",
+    "Zheng-dao Bioelectric",
+    "The Lacework Confessional",
+    "Tessera Corponation",
+    "Silver",
+    "Needle",
+    "Rust"
+  ],
+  "district": "The Circuit"
 }

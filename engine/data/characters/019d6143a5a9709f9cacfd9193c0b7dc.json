@@ -12,7 +12,7 @@
   "role": "Long-range precision fire specialist — sniper",
   "age": 58,
   "status": "active",
-  "location": "The Overhang — residential shelves built onto megastructure exteriors",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
   "description": "Alper Vega-Acheampong is lean and angular, all sharp edges and visible tension. At 58, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a sniper out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Alper Vega-Acheampong describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,11 @@
   "carried_weapons": [
     "Street Custom 'Baptism' Electrified Water Cannon"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ironveil Canopy",
+    "The Shelf",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

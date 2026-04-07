@@ -12,7 +12,7 @@
   "role": "Protest coordinator and mutual aid organizer serving the Shelf and Hough Reclamation districts",
   "age": 24,
   "status": "active",
-  "location": "Hough Reclamation, Meridian 88",
+  "location": "Hough Reclamation, Meridian 88, near Western and Division",
   "description": "Tsetseg is lean and angular with a long neck and the kind of stillness that belongs to people who grew up in crowded spaces and learned to take up exactly the amount of room they needed and no more. Their skin is deep brown with a warm undertone, and they have patterned irises — a cosmetic mod done with pigment injections, producing a geometric ring of burnt orange around the pupil that makes their gaze unsettling in photographs. Their hair is kept very short, almost shaved. They dress functionally, with a persistent preference for dark colors that won't show damage from protest conditions.\n\nTsetseg has lived in Hough Reclamation their entire life and has watched three different waves of supposed 'revitalization' turn into displacement. They are twenty-four years old and already tired of promises. What they are not tired of is logistics — they have a genuine gift for coordination, for understanding how bodies move through space, how information needs to flow in chaotic conditions, how to build a supply chain out of mutual obligation and goodwill. They coordinate Shelf Mutual Aid, a network that distributes food, medical supplies, and emergency housing connections across two districts. They have a complicated relationship with attention — they need people to show up and to trust the network, but they find visibility personally uncomfortable.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,14 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "Dredge Mining Collective",
+    "Meridian 88",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Ringo Corponation"
+  ],
+  "district": "The Shelf"
 }

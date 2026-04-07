@@ -12,7 +12,7 @@
   "role": "Metro Police surveillance operator, Archer's Line monitoring station",
   "age": 27,
   "status": "active",
-  "location": "Archer's Line Metro Police Monitoring Station 7, subterranean level",
+  "location": "Archer's Line Metro Police Monitoring Station 7, subterranean level, near Milwaukee and Damen",
   "description": "Makena is twenty-seven and spends ten hours a day in a room that has no windows, watching 847 feeds from Archer's Line and the surrounding districts. She is slight and quick, with dark brown skin and natural hair she keeps pinned up for the headset, and she has cat ears — a cosmetic mod she got at nineteen because she wanted them, small and tawny and mobile, which is to say they move with her actual attention and have become professionally useful in ways she didn't anticipate. Her eyes are her own. She is very careful about her eyes. Her workstation has six physical monitors and one neural feed she plugs directly into via a port at her left temple.\n\nMakena is frighteningly good at her job. She has a spatial memory for camera angles that her supervisors call uncanny and she calls simply how she sees, and she notices things in footage that automated flagging misses entirely — a particular way a person is carrying their weight, a crowd behaving three seconds before it does something. She finds this ability isolating in a way she cannot quite explain. She has watched every corner of Archer's Line for four years and she has never stood in most of it.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,13 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-20E 'Thunderclap'",
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "Archer's Line",
+    "Independent Micro-Grid Power Cooperative",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "ARCHIVE",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

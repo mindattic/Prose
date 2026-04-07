@@ -12,7 +12,7 @@
   "role": "Street performer and puppet maker",
   "age": 68,
   "status": "active",
-  "location": "Grand Corridor, performs at the Menomonee Gulch market days and the Grand Corridor pedestrian arcade",
+  "location": "Grand Corridor, performs at the Menomonee Gulch market days and the Grand Corridor pedestrian arcade, near Milwaukee and Damen",
   "description": "Florentiu is a wiry sixty-eight-year-old with the permanent squint of someone who has spent decades working in whatever light is available, a Moldovan-Senegalese face that has weathered into something sculptural, and hands that are almost never empty — if he is not performing, he is carving, stitching, or adjusting one of the dozen puppets he carries in the battered rolling case that is his constant companion. He stands about 170 centimeters but seems taller when he works, because when he works he is not exactly there in the same way. The puppets take the space and Florentiu becomes their apparatus.\n\nHe has performed in Grand Corridor for nineteen years. He is not famous in any sense the city would recognize, but he is known — a reliable fixture of the market days, a man who will perform for three people or three hundred with identical seriousness. His puppets are handmade constructions of reclaimed wire, synthetic leather, salvaged optics, and in one case an actual functional LED array liberated from a decommissioned Ferrogate Transit sign. They speak, move, fight, grieve, and occasionally function as commentary on whoever is watching. Children are his primary audience but adults stay. He does not adjust his material for age. He has a small following of regulars who believe his oldest puppet, a deteriorating marionette called The Advocate, is inhabited by an E.L.F. Florentiu neither confirms nor denies this.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,20 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Menomonee Gulch",
+    "Grand Corridor",
+    "Myoelectric Seizure Projector MSP-6 'Marionette'",
+    "Pennywhistle",
+    "Lazarus EC-4 'Companion'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Big Rig",
+    "Leather",
+    "Chimera-Null",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

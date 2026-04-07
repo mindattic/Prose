@@ -11,7 +11,7 @@
   "role": "Fixer - Academic theft",
   "age": 61,
   "status": "active",
-  "location": "The Core",
+  "location": "The Core, near State and Monroe",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -101,5 +101,9 @@
     "Street Custom 'Ghostwriter' Grafitti Flamethrower",
     "Forge-Smith Collective Composite Tonfa 'Riot Answer'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core"
+  ],
+  "district": "Meridian Core"
 }

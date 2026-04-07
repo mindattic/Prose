@@ -12,7 +12,7 @@
   "role": "Retired Corporate Wars veteran, pension-dependent resident and informal neighborhood watchman",
   "age": 72,
   "status": "active",
-  "location": "The Shelf — Block 14, Unit 7, near the Ferrogate Transit overpass",
+  "location": "The Shelf — Block 14, Unit 7, near the Ferrogate Transit overpass, near Ashland and Division",
   "description": "Rodrigo Seun-Vasarhelyi is a big man who used to be bigger. He carries the memory of his former mass in the way he takes up space — a wide-legged stance, arms that hang a little away from his sides, a way of turning his whole torso instead of just his head that comes from decades of wearing combat plating. His dark brown skin is mapped with synthetic-graft patches along his neck and left arm where the original was burned away in the Menomonee Gulch campaign; the grafts are slightly lighter and have a different texture, which he doesn't bother to hide. His right eye is military-grade steel-grey augmetic, a stark contrast to his warm brown left. He keeps his head shaved and his grey-streaked beard precisely trimmed — two things he can still control.\n\nRodrigo served fourteen years in Arcturus Corporation's private military arm before being discharged when a nerve-suppression injury to his left leg made him operationally unviable. His pension is a Tier 1.5 embarrassment — enough to keep the unit heated, barely. He spends most of his days on the block: watching who comes and goes, intervening in disputes with the particular authority of a man who has seen what disputes can become, and maintaining an informal truce between three rival youth crews that he negotiates with the patience of a man who has nothing left to prove. He doesn't miss combat. He misses the clarity of knowing exactly who he was supposed to protect.",
   "psychology": {
     "facet_weights": {
@@ -257,5 +257,19 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Menomonee Gulch",
+    "TESSERA Widow Mk. III",
+    "SynapTech Clarity Pro Neural Interface",
+    "ARCHIVE",
+    "Cinderblock Ai",
+    "The Shelf",
+    "Arcturus Defense Solutions",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Steel"
+  ],
+  "district": "The Shelf"
 }

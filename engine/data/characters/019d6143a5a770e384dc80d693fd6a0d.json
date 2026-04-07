@@ -12,7 +12,7 @@
   "role": "Trauma surgeon, Aurochs Medical Complex emergency rotation and private contract",
   "age": 41,
   "status": "active",
-  "location": "Aurochs Medical Complex Trauma Bay 7; off-hours in Copperhead district",
+  "location": "Aurochs Medical Complex Trauma Bay 7; off-hours in Copperhead district, near Milwaukee and Damen",
   "description": "Akosua is tall and rangy with warm ochre-brown skin, natural hair grown high and loose, and the kind of face that is perpetually unreadable to people who have not spent time with them — not unfriendly, simply internal. Their most immediately notable feature is their left arm, which from the elbow down is full chrome: high-grade Helix surgical-grade manipulators, articulated to tolerances no biological hand can match, finished in brushed gunmetal with amber indicator lights at the wrist joints that track grip pressure. They got it after a bus accident seven years ago and accepted the premium model because anything less would compromise their work. They do not discuss the accident.\n\nIn the trauma bay, they are an entirely different creature from the quiet person who buys coffee from the same cart in Copperhead every morning. They become fast, flat, almost frightening in their economy. They do not narrate. They do not comfort. They fix. Outside of work they are thoughtful, prone to long silences that are not uncomfortable, and fond of extremely loud, chaotic music that they listen to on bone-conduction speakers while cooking. They have strong opinions about soup.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,12 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Copperhead",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Circuit"
 }

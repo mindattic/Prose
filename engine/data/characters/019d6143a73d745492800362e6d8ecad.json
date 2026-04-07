@@ -12,7 +12,7 @@
   "role": "Tattoo artist and gene-mod body artist",
   "age": 38,
   "status": "active",
-  "location": "Hamtramck Enclave, back parlor of a converted auto-parts shop called Skin & Signal",
+  "location": "Hamtramck Enclave, back parlor of a converted auto-parts shop called Skin & Signal, near Pulaski and Chicago Ave",
   "description": "Zuwena is a tall woman with a swimmer's build gone slightly soft at the edges, her dark brown skin mapped with her own work — geometric Swahili coastline patterns interlocked with Icelandic knotwork, running up her arms and across her collarbones in bioluminescent ink that shifts from amber to violet depending on her mood. Her left eye is natural; her right has a patterned iris she designed herself, a spiraling nautilus in burnt orange and cream. She keeps her hair short on the sides and piled high in natural coils threaded with fiber-optic wire she swaps out by season. There is a precision to her hands that borders on the ceremonial — she cleans her needle rigs the way other people pray.\n\nShe is unhurried in a city that never stops moving, which either calms people or unsettles them. Her reputation is built on gene-mod integration work — she doesn't just tattoo skin, she counsels clients on how their cosmetic geneware will interact with pigment, how bioluminescent patches will behave under different lights, what subdermal LED placements will survive ten years versus two. She charges accordingly. She has opinions she will share exactly once, then never again, which gives conversations with her the quality of a single clean bell strike.",
   "psychology": {
     "facet_weights": {
@@ -210,5 +210,15 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Gravesend Basin",
+    "Dredge Mining Collective",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Needle",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

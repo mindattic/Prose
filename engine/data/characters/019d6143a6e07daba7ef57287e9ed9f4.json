@@ -12,7 +12,7 @@
   "role": "Neural calibrator at Aurochs Medical Complex",
   "age": 34,
   "status": "active",
-  "location": "Aurochs Medical Complex, Meridian Core — lives in a company-subsidized flat in Edgewater Prism",
+  "location": "Aurochs Medical Complex, Meridian Core — lives in a company-subsidized flat in Edgewater Prism, near LaSalle and Madison",
   "description": "Suljo is a lean man with the slightly disconnected quality of someone who spends most of his working hours interfaced with other people's nervous systems. His skin is warm brown, his eyes a natural amber that he has had patterned with fine concentric rings — a diagnostic choice as much as aesthetic, since the rings shift and blur when he is running a deep calibration sync and patients find it useful to watch. His hair is close-cropped and he keeps himself meticulously groomed in the way of someone who distrusts entropy in small things. There is a port array at his left temple, matte black ceramic, and the faint iridescent tracery of calibration leads running beneath the skin of his jaw and neck.\n\nNeurally, Suljo is exceptional — his scores on empathic interfacing are in the ninety-fourth percentile for his cohort, which Aurochs considers an asset and which Suljo considers a curse he is still learning to manage. He absorbs fragments of his patients' mental architecture during calibrations: half-memories, emotional textures, phobias that don't belong to him. He has developed a meticulous post-session decompression ritual and a careful professional detachment that acquaintances mistake for coldness. The truth is closer to the opposite — he feels too much, too accurately, and has built distance as infrastructure. He works hard, is promoted regularly, and drinks more than he should in the evenings.",
   "psychology": {
     "facet_weights": {
@@ -245,5 +245,16 @@
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
     "Street-Custom Loaded Pipe 'Bell Ringer'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Edgewater Prism",
+    "Meridian Core",
+    "Stelceram-7",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial"
+  ],
+  "district": "Meridian Core"
 }

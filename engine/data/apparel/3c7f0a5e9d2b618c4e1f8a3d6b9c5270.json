@@ -1,0 +1,40 @@
+{
+  "id": "3c7f0a5e9d2b618c4e1f8a3d6b9c5270",
+  "name": "Halcyon Dynamics Aegis Response Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Warm-gold and deep-navy modular hard armor over breathable climate-adaptive fatigues, bearing Halcyon's sunrise-arc logo in gilded relief on the chest plate and helmet crest — projecting authority over menace. The helmet is a mid-profile shell with integrated crowd-analytics HUD, non-lethal deterrent emitter array, and a PR-facing body camera mounted prominently at the forehead. Load rig balances lethal and non-lethal options in equal measure, with Halcyon-branded restraint kits, medkit pouches, and a community-liaison tablet holster. Boots are climate-sealed composite with cushioned insoles rated for twelve-hour standing deployment.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "modular hard armor panels",
+    "climate-adaptive fatigues",
+    "gilded insignia relief",
+    "composite climate-sealed boots",
+    "non-lethal emitter array housing"
+  ],
+  "functionality": "Crowd analytics HUD, integrated non-lethal deterrence, mandatory body-camera recording, and climate regulation for extended public-facing deployment.",
+  "what_it_says": "Halcyon sells security as a wellness product — the kit is designed to be photographed as much as deployed.",
+  "worn_by": [
+    "Halcyon Dynamics public security teams",
+    "corporate district patrol units",
+    "PR-facing enforcement details"
+  ],
+  "manufacturer": "Halcyon Dynamics Security Solutions Division",
+  "price_range": "Φ 4,800–Φ 7,200 (issued)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Halcyon operative's body camera has been remotely wiped every shift for two weeks — someone at Halcyon doesn't want certain footage preserved.",
+    "The community-liaison tablet in the load rig contains a list of names flagged for 'preemptive contact' — none of them have committed any crime yet."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "military_corpsec_kit",
+    "halcyon_dynamics",
+    "public_security",
+    "tactical",
+    "non_lethal",
+    "corp_issued"
+  ]
+}

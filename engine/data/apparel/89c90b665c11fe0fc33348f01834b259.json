@@ -1,0 +1,38 @@
+{
+  "id": "89c90b665c11fe0fc33348f01834b259",
+  "name": "Ironhand Workshop Augmentation Interface Gauntlets",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Open-palm gauntlets designed to interface directly with cybernetic hand augmentations. The gauntlets' interior is lined with contact points that seat against standard augmentation port locations, providing power regulation, diagnostic feedback, and signal amplification for augmented hands. The exterior is utilitarian matte-gray polymer.\n\nEssential for augmented individuals whose cybernetic hands require periodic calibration or whose augmentation models draw more power than their internal batteries can sustain during heavy use.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "interface contact points",
+    "power regulation circuits",
+    "diagnostic sensors",
+    "polymer housing"
+  ],
+  "functionality": "Augmentation power regulation, diagnostic interface, signal amplification",
+  "what_it_says": "Your hands aren't original equipment and they need external support to run at full capacity.",
+  "worn_by": [
+    "augmented laborers",
+    "cybernetic maintenance patients",
+    "heavy augmentation users"
+  ],
+  "manufacturer": "Ironhand Workshop",
+  "price_range": "Φ1,400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An Augmentation Interface Gauntlet is found running at maximum power output with no hand inside it — something is drawing power through the contact points from the other side."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 3",
+    "augmentation",
+    "interface",
+    "cybernetic",
+    "power",
+    "diagnostic"
+  ]
+}

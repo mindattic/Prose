@@ -12,7 +12,7 @@
   "role": "High-risk package and data transport — courier",
   "age": 35,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near Milwaukee and North Ave",
   "description": "Hadiya Karlsen-Sow are slight and easy to overlook, which is exactly the point. At 35, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and they make no effort to hide it.\n\nThey arrived in Meridian 88 six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a courier out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHadiya Karlsen-Sow operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,12 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Meridian 88",
+    "The Nearfield",
+    "Ringo DV-4 'Courier'"
+  ],
+  "district": "The Circuit"
 }

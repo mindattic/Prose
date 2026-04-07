@@ -1,0 +1,42 @@
+{
+  "id": "c41b7e8f302d5a97e6b04c1f8a273d50",
+  "name": "Gridline SolarBlock Courier Visor",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Wraparound visor in matte black recycled polycarbonate with UPF-80 tinted shield, sized to clear standard BCI temple arrays without pressure. Adjustable neoprene strap sits over the head without touching neural port rows at the crown. Sweat-drain grooves channel moisture away from eyes during long outdoor runs.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "recycled polycarbonate",
+    "UPF-80 tinted shield",
+    "neoprene strap",
+    "sweat-drain channels"
+  ],
+  "functionality": "UPF-80 UV eye and face shield, BCI-port-clearance fit, sweat-drain strap design.",
+  "what_it_says": "You're outside all day and you've engineered every discomfort out of it.",
+  "worn_by": [
+    "couriers",
+    "transit operators",
+    "street vendors",
+    "outdoor laborers",
+    "cyclists"
+  ],
+  "manufacturer": "Gridline",
+  "price_range": "Φ 27–40",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The tint on one lens is slightly darker — replaced after something cracked the original.",
+    "A small scratch on the inner shield, right at eye level, creates a ghost line across your vision at certain sun angles."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "summer_light",
+    "UV_protection",
+    "tier2",
+    "visor",
+    "BCI_compatible",
+    "courier",
+    "eyewear"
+  ]
+}

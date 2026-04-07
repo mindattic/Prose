@@ -13,7 +13,7 @@
   "role": "Unlicensed Broadcaster / Street-Level Journalist / Rumor Broker",
   "age": 24,
   "status": "active",
-  "location": "Old Harbor",
+  "location": "Old Harbor, near Michigan Ave South and Cermak",
   "description": "Blessed Nkemdirim runs a pirate broadcast out of a rotating series of signal-masked locations across Old Harbor, producing a daily audio-visual feed called 'Harbor Frequency' that has become, for a substantial portion of the district's population, the closest thing to actual news they have access to. She is compact and restless, with deep brown skin, natural hair she keeps wrapped in a rotating collection of printed fabrics, and the particular kind of energy that reads as enthusiasm until you're on the wrong side of it and recognize it as something more relentless. Her eyes are quick and evaluative in a way she has stopped trying to soften; she watches people the way a cartographer watches terrain. She is almost always in motion, or appears to be — even seated, her hands are working, her attention is cycling.\n\nShe grew up in Old Harbor, the second of four children of a harbor logistics worker and a schoolteacher who lost her position when the district's public education contract was absorbed by a Spire EdTech subsidiary. The family did not leave because they could not, and then because they chose not to, and Blessed absorbed both the helplessness and the stubbornness of that distinction. She started broadcasting at nineteen, initially as a way to circulate information about enforcement sweeps and eviction notices — practical, immediate, unglamorous. Harbor Frequency evolved into something more: investigative segments, community commentary, intercepted corporate communications she's never explained how she obtained, and a call-in segment where Old Harbor residents speak on-air about things that would not otherwise be recorded anywhere. She has been arrested twice for unlicensed broadcasting. Both times she was back on air within seventy-two hours from a different location.\n\nShe is not naive about what she is or what she's doing. She understands that she is a small signal in a very large noise floor, and she has made her peace with scale — or tells herself she has. What she hasn't made peace with is the gap between what she knows and what she can prove, between what she broadcasts and what it actually changes. She fills that gap with work, with speed, with the belief that bearing witness is not nothing even when it is not enough. She is twenty-four and has already developed the particular exhaustion of someone who has been urgently awake for too long.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,21 @@
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Street Custom 'Confession' Modified Industrial Nail Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Cartographer",
+    "The Iron Lotus",
+    "WELLSPRING",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Big Rig",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Gradient Compact",
+    "Lacuna Genomics",
+    "Witness",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Déjà Vu"
+  ],
+  "district": "Old Harbor"
 }

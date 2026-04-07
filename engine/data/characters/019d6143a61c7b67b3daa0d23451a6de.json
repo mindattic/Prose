@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller",
   "age": 64,
   "status": "active",
-  "location": "The Shelf, Geartown",
+  "location": "The Shelf, Geartown, near Halsted and Division",
   "description": "Goran is a big man gone soft at the edges, with the kind of weathered dark-brown face that has accumulated sixty-four years of Geartown grime into its creases. His Burkinabé father's cheekbones sit high and prominent beneath small, watchful eyes, and the Swedish side of the family gave him an improbable red-grey beard that he refuses to trim, which is now impressively large. His left arm from the elbow down is a heavy-duty industrial prosthetic in bare gunmetal — he has never decorated it, never chromed it, and finds the idea faintly obscene. He moves slowly, deliberately, like a man who has learned that things don't need to be rushed when you know what you have.\n\nGoran's stall on The Shelf is less a stall than an archaeology site — forty years of accumulated junk organized according to a system that exists only in his head, which he navigates with the certainty of a man walking through his own house in the dark. He is terse with strangers, generous to a fault with regulars, and holds strong opinions about the difference between junk worth keeping and junk that has given up. He prays loudly to the ELF he believes inhabits a broken micro-fabricator at the back of his stall, which he calls 'the Sleeper,' and leaves it oiling rags as offerings.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,16 @@
   "carried_weapons": [
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Iron Lotus",
+    "Vespid Dynamics Paralytic Aerosol Grenade PAG-2 'Sleepy Time'",
+    "The Shelf",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Zheng-dao Bioelectric",
+    "Geartown",
+    "Aslan Vasquez-Chatterjee",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
+  ],
+  "district": "The Shelf"
 }

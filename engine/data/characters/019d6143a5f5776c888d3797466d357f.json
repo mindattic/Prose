@@ -12,7 +12,7 @@
   "role": "Beat Cop, Meridian 88 Metro Police",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave",
+  "location": "Hamtramck Enclave, near Western and Chicago Ave",
   "description": "Dragan Asiedu-Kovalchuk has been walking the same eight-block stretch of Hamtramck Enclave for eleven years and knows it the way other people know their own bodies — by feel, by the small wrongnesses that signal something is off. He is a large man gone slightly soft in the middle, with a lined face, grey threading through his dark hair and the short beard he keeps carefully trimmed. His skin is a medium olive-brown. He has the deliberate gait of someone whose knees have opinions. He wears his Metro Police uniform with the slightly rumpled dignity of a man who stopped trying to look sharp and started trying to look consistent.\n\nDragan is a beat cop of the old morphology — not particularly interested in arrest statistics, deeply interested in the neighborhood as a living system. He knows who runs the community market on Piast Street, which building's water recycler is failing, where the teenage congregation spots are and which of them are benign. He has opinions about everything and shares most of them freely, which has kept him at the same pay grade for the last decade. He drinks too much coffee, worries about his daughter's corporate debt, and has never once in thirty years of service drawn his weapon outside of a qualification range.",
   "psychology": {
     "facet_weights": {
@@ -254,5 +254,12 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Trail-357 'Pathfinder'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "CONGREGATION",
+    "Ringo CP-2 'Constable'",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Shelf"
 }

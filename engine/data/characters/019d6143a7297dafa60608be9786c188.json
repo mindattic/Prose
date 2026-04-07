@@ -12,7 +12,7 @@
   "role": "Synthetic rights lawyer and policy advocate",
   "age": 38,
   "status": "active",
-  "location": "North Branch Commons",
+  "location": "North Branch Commons, near Milwaukee and Damen",
   "description": "Yewande is meticulous in the way that people who have learned that sloppiness costs other people's freedom tend to be. They dress in muted, well-maintained layers — never corporate enough to be mistaken for one, never shabby enough to be dismissed — and carry themselves with a stillness that fills a room more effectively than volume would. Their skin is deep brown with a faint bioluminescent undertone along the cheekbones, a mod they got to honor a client who died during a botched corporate deactivation order before Yewande could file the injunction. They haven't decided whether it was the right choice. The light pulses very slightly when they are angry.\n\nYewande practices out of a cramped two-room office in North Branch Commons that doubles as an intake center for synthetic persons seeking legal personhood recognition. They charge what clients can pay, which is usually very little. They have taken cases to the Meridian Civil Arbitration Board seventeen times; they have won eleven of them, lost four, and had two disappear from the docket in ways that still make them lie awake. They are not warm in the way Nneka is warm — they are precise and attentive, which is a different and sometimes more useful thing. They believe in law as a tool with complete clarity about the fact that it is also a weapon, and they intend to be better at wielding it than the people who built it.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "North Branch Commons",
+    "Helix Biosystems",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Irontide Tidal Energy",
+    "Nesting Doll",
+    "Compass Rose"
+  ],
+  "district": "The Circuit"
 }

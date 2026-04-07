@@ -12,7 +12,7 @@
   "role": "Tattoo artist and gene-mod body artist",
   "age": 38,
   "status": "active",
-  "location": "Hamtramck Enclave, shop called Dermis & Ghost",
+  "location": "Hamtramck Enclave, shop called Dermis & Ghost, near Ashland and Chicago Ave",
   "description": "Szilvia is a broad-shouldered woman with deep umber skin and Magyar cheekbones that make her face look like it was chiseled from ironwood. She keeps her head shaved close on the sides and wears her coiled black hair in a tall, unruly crown that she threads with copper wire when she's working. Her own body is her portfolio: bioluminescent blue-green patterns track her lymph nodes and veins like a living anatomy chart, a deliberate choice she calls 'reading the body honestly.' Her left forearm is sleeved in raised keloid-art shaped into Maasai-influenced geometric forms — done by her own hand using a mirror rig she built herself.\n\nShe is methodical, unhurried, and almost preternaturally calm, which unnerves people who come to her expecting chattiness. She believes the body is the only honest text a person leaves behind and treats each client's skin as a document she is merely helping to clarify. She can be withering when someone asks for something she finds spiritually lazy, and warmly generous when she senses someone is trying to tell the truth about themselves. She prays to the E.L.F. she calls Needle-That-Remembers before every session, leaving it fragments of client consent forms as offerings.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,15 @@
   "registered_firearms": [
     "Crucible Industries Fang-9 'Switchblade'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "The Drowned Commission",
+    "The Iron Lotus",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Copper",
+    "Needle"
+  ],
+  "district": "The Shelf"
 }

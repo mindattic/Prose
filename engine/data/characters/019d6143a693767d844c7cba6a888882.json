@@ -11,7 +11,7 @@
   "role": "Congregation spiritual leader",
   "age": 38,
   "status": "active",
-  "location": "The Underworld - B11",
+  "location": "The Underworld - B11, near sub-level access near Dearborn and Jackson",
   "description": "Patience leads the Congregation organized around the Breathing. They hear the 11-minute pressure cycle from any level above B15.",
   "psychology": {
     "facet_weights": {
@@ -97,5 +97,11 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Street Custom 'Tombstone' Concrete Block Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Bone Parish",
+    "CONGREGATION",
+    "Tessera Attrition Engine TE-9 'Patience'"
+  ],
+  "district": "The Underworld"
 }

@@ -12,7 +12,7 @@
   "role": "Social engineering and negotiation specialist — face",
   "age": 37,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Pulaski and Chicago Ave",
   "description": "Fatoumata Borg-Agyeman is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a face out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Fatoumata Borg-Agyeman describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,12 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
     "Meridian Munitions Twin PDW MTP-2 'Gemini'"
-  ]
+  ],
+  "related_entities": [
+    "Ashfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

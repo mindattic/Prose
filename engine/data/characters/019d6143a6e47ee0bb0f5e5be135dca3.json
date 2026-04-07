@@ -12,7 +12,7 @@
   "role": "Gang prospect (junior), street kid, age-of-prospect stage",
   "age": 14,
   "status": "active",
-  "location": "The Narrows, Copperhead",
+  "location": "The Narrows, Copperhead, near Armitage and Milwaukee",
   "description": "Séraphin is built square and solid for fourteen, with deep umber skin, a wide nose, and the kind of stillness that comes from having learned early that movement attracts attention. He has a jagged scar through his left eyebrow from a fall at nine that he tells different stories about depending on who's asking. His hair is cut very close, sometimes faded with a borrowed trimmer into patterns he changes every few weeks. He has no augmentations — the prospect stage of the Copperhead Rakers doesn't pay enough for mods — but wears a red-and-copper braided wristband that marks him as a junior affiliate.\n\nSéraphin is not stupid, which is the thing that makes his situation complicated. He knows exactly what being a gang prospect means — he has watched older boys from his building take the same path and where most of them ended up. He's not naive about it. He is there because his mother is ill, his UBC stipend is Φ120, and the Rakers pay him Φ80-100 a month to do things that are mostly standing around looking available and occasionally moving small packages. He has no plan B he believes in. He prays aggressively to every ELF shrine on his block — he lights more offerings than anyone in his building — because he has decided that if anything supernatural is going to help him, he needs to be owed.",
   "psychology": {
     "facet_weights": {
@@ -208,5 +208,17 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "The Skinners",
+    "The Reclamation Assembly",
+    "The Narrows Compact",
+    "Copperhead",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Copper",
+    "Arcturus CK-5 'Bloodhound'",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Counter-surveillance and mole detection — counterintelligence specialist",
   "age": 27,
   "status": "active",
-  "location": "The Spires — mid-level corporate residential towers",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
   "description": "Tiare Nishi-Anim are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 27, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and they make no effort to hide it.\n\nThey arrived in Meridian 88 six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a counterintelligence specialist out of The Spires, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented counterintelligence specialist in Meridian 88, but they might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum"
+  ],
+  "district": "The Spires"
 }

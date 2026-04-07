@@ -12,7 +12,7 @@
   "role": "Orphan and apprentice to a garment repairer in the Stockyard",
   "age": 9,
   "status": "active",
-  "location": "The Stockyard (specifically the repair stall row near Grainfort)",
+  "location": "The Stockyard (specifically the repair stall row near Grainfort), near Ashland and Division",
   "description": "Fanta Dzhuraev-Mboyo is small even for nine, with a round face, dark skin dusted lighter along the cheekbones from a nutritional deficiency that went untreated too long, and enormous amber eyes that their apprentice-master suspects are natural but can never quite confirm. They keep their hair in two puffs held with mismatched elastics. Their fingers are already remarkable — long, precise, slightly calloused at the tips from needle and thread work — and they move them constantly, picking at hems, testing fabric tension, tying knots and undoing them while they talk.\n\nFanta came to Grantha Soto-Edelweiss's repair stall after spending eight months in a Brightmoor Reclamation group shelter following a building collapse that killed their parents. The shelter social worker placed them as a household-and-shop apprentice, which in practice means Fanta sweeps, fetches, and mends in exchange for a sleeping mat behind the stall divider, two meals, and fifteen minutes of formal reading instruction each day from Grantha's tablet. They are not unhappy. They are careful about happiness — they learned early it tends to leave. But they love the work with a devotion that is almost physical, and they have a gift that their apprentice-master has started to notice is more than ordinary.",
   "psychology": {
     "facet_weights": {
@@ -192,5 +192,16 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Helix Biosystems",
+    "The Stockyard",
+    "The Reclamation Assembly",
+    "Grainfort",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Needle",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Shelf"
 }

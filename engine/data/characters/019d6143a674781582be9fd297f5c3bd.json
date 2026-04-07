@@ -12,7 +12,7 @@
   "role": "Sound sculptor and underground venue musician",
   "age": 58,
   "status": "active",
-  "location": "Pilsen Veil, basement workshop beneath a decommissioned Ferrogate Transit relay station",
+  "location": "Pilsen Veil, basement workshop beneath a decommissioned Ferrogate Transit relay station, near Western and Chicago Ave",
   "description": "Obasi is a large, slow-moving man with the quiet authority of someone who has simply outlasted most arguments. His skin is very dark, his grey-streaked locs gathered at the back of his neck, and his hands are enormous — scarred across the knuckles from decades of working with salvaged metal and resonant polymers. He has no cosmetic mods but wears a cochlear amplifier behind his left ear that lets him hear frequencies beyond normal human range; he chose that over anything decorative. He moves through spaces as if listening to them.\n\nObasi builds instruments that are also sculptures and then performs with them in spaces most people would call acoustically hostile: drainage tunnels, abandoned transit shafts, the concrete bellies of flood-control cisterns. His work is ambient, slow, and enormous in scale — single notes held for minutes, harmonics that make walls breathe. He is not famous outside of a small devoted community, and he prefers it exactly that way. He is a father figure to younger artists in the Pilsen Veil, blunt about craft and surprisingly gentle about everything else.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,15 @@
   "carried_weapons": [
     "Forge-Smith Collective Diaspora Blade 'Mongrel'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Reclamation Assembly",
+    "Pilsen Veil",
+    "Omro Relay",
+    "Concrete",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

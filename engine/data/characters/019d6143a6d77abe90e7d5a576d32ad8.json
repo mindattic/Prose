@@ -12,7 +12,7 @@
   "role": "Personnel recovery and hostile extraction — extraction specialist",
   "age": 38,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
   "description": "Somadina Forsberg-Ofosu is lean and angular, all sharp edges and visible tension. At 38, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a extraction specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSomadina Forsberg-Ofosu is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,14 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Narrows Compact",
+    "Ashfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

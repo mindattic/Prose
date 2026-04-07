@@ -12,7 +12,7 @@
   "role": "street-level organ harvester and black-market tissue broker",
   "age": 28,
   "status": "active",
-  "location": "The Undertow, operating out of a submerged-level cold storage unit beneath the Menomonee Gulch flood barriers",
+  "location": "The Undertow, operating out of a submerged-level cold storage unit beneath the Menomonee Gulch flood barriers, near Armitage and Milwaukee",
   "description": "Tshiamo is lean in the way people get when they've been hungry enough times that the body learns to run efficient. His Tswana-Botswanan heritage shows in his cheekbones and dark complexion; his Croatian-Mexican grandmother gave him an incongruous surname and a slight curl to his black hair, worn short and without product. He has bioluminescent striping across his collarbones — a cheap modification he got at sixteen from a back-alley geneware parlor, blue-white lines that glow faintly through the neckline of his shirts. He keeps his hands very clean. This is the thing people notice: immaculate nails, no blood under them, even when he's come directly from work.\n\nTshiamo did not choose this profession romantically or willingly. He slid into it at nineteen when a hospital orderly job at the Aurochs Medical Complex auxiliary was his only income and a mid-level harvesting crew offered him Φ200 to look the other way on a body that came through post-mortem. Now he is the one sourcing, and he maintains a tight internal logic about it: he doesn't harvest from the living, he doesn't touch people who haven't already been declared dead by someone else first, and he tells himself that line is the only one that matters. He is wrong about how solid that line is, and some part of him knows it.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,20 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Street Custom 'Lazybones' Tripwire Shotgun Trap"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Menomonee Gulch",
+    "The Undertow",
+    "Grandmother",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
+    "The Marrow Exchange",
+    "The Pure Hand",
+    "The Coffin Nails",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Nightlight"
+  ],
+  "district": "The Underworld"
 }

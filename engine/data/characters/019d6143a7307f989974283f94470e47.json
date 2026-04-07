@@ -12,7 +12,7 @@
   "role": "Anya and Demyan's daughter — witness to the Prologue violence",
   "age": 12,
   "status": "active",
-  "location": "The Shelf — Tier Four",
+  "location": "The Shelf — Tier Four, near Western and Division",
   "description": "Yuliya is twelve going on forty. She has her mother's build compressed into a child's frame — square shoulders, strong hands, a jaw that sets when she is angry in a way that makes adults take a step back. She speaks perfect unaccented English because the Shelf's children learn from feeds, not parents. She translates for her mother with the weary competence of a UN interpreter. She has seen things a twelve-year-old should not see. She has cataloged them. She does not cry about them. She has a notebook where she writes down everything that happens in the Shelf — who did what to whom, who owes what, who is afraid of whom. She calls it 'homework.' It is an intelligence network maintained by a child. She followed Kyle to the loading dock because she needed to see. Not wanted — needed. She is her father's daughter: she has to understand how things work, even the terrible things. Especially the terrible things. The teeth in her hands are the heaviest thing she has ever carried.",
   "psychology": {
     "facet_weights": {
@@ -219,5 +219,13 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Shelf",
+    "TESSERA PA-5 'Attendant'",
+    "The Pure Hand",
+    "Lazarus IDP-1 'Teeth'",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Shelf"
 }

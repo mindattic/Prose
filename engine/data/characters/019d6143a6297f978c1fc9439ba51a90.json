@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller with a specialty in pre-Consolidation artifacts",
   "age": 64,
   "status": "active",
-  "location": "The Shelf, Ironvein",
+  "location": "The Shelf, Ironvein, near Pulaski and Chicago Ave",
   "description": "Huxley is a compact, unhurried man with deep brown skin going papery at the temples and a magnificent white moustache he waxes every morning without exception. His left arm from the elbow down is a thirty-year-old mechanical prosthetic he has never upgraded — brushed steel with visible articulation joints, which he keeps immaculate. He dresses in layers regardless of temperature: a canvas vest with dozens of pockets, a collared work shirt, fingerless gloves on the real hand. His stall on The Shelf sprawls across three connected spaces in a converted warehouse loading bay, stacked floor-to-ceiling with pre-Consolidation electronics, salvaged machine parts, cracked data-cores, antique physical media, pre-fab furniture missing crucial components, and objects whose original function has been entirely lost to time. He catalogues everything in a physical ledger written in a cramped three-language shorthand.\n\nHuxley is a man in love with the material fact of things — their weight, their age, the way they were made. He genuinely does not think of himself as a dealer so much as a temporary custodian. He will tell you the history of an object for twenty minutes before he tells you the price, and the price will be either absurdly low because he likes you or absurdly high because he doesn't want to sell it. He is a poor businessman by most metrics and comfortable with this. He has strong opinions about everything and shares them with magnificent economy.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,17 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ]
+  ],
+  "related_entities": [
+    "The Shelf",
+    "Ironvein",
+    "The Gradient Compact",
+    "Adaeze Chen-Hawkins",
+    "ARCHIVE",
+    "Nesting Doll",
+    "Palette",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Steel"
+  ],
+  "district": "The Shelf"
 }

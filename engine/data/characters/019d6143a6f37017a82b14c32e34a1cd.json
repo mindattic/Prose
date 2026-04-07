@@ -11,7 +11,7 @@
   "role": "Gene therapist at Helix Biosystems' Aurochs Medical Complex outpatient clinic, specializing in hereditary conditions and geneware integration complications",
   "age": 29,
   "status": "active",
-  "location": "Aurochs Medical Complex, Calumet Rise",
+  "location": "Aurochs Medical Complex, Calumet Rise, near North Ave and Milwaukee",
   "description": "Tessaly is small and precise in her movements, with light brown skin, natural hair worn in a large puff held back by a polished Helix Biosystems ID clip, and eyes modified with patterned irises — a double helix in dark gold on amber that she got as a graduation gift to herself. She is young for her position and knows it, which makes her simultaneously more careful and more aggressive in equal measure. She works within the Helix system because she believes — genuinely, not cynically — that gene therapy at scale requires institutional infrastructure, and she is trying to change the institution from inside while not yet having enough power to change much.\n\nShe is technically brilliant and interpersonally awkward in ways she's actively working on. She has a tendency to present information in dense technical bursts before remembering she's talking to a person. She finds pediatric gene therapy cases the hardest and doesn't understand why it took her two years to figure out that it's because she was a gene therapy patient herself as a child — a realization her therapist gently surfaced during a session she thought was about something else entirely. She's been different with parents and children ever since.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,16 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Calumet Rise",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial",
+    "Gravimetric Collapse Charge GCC-9",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

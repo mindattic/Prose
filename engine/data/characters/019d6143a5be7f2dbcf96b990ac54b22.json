@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller — specializes in salvaged augmentation components and tech scrap",
   "age": 63,
   "status": "active",
-  "location": "Geartown, permanent pitch under the Kessler Interchange overpass",
+  "location": "Geartown, permanent pitch under the Kessler Interchange overpass, near North Ave and Milwaukee",
   "description": "Bako is the kind of man who looks like he was assembled from spare parts — which, in a meaningful sense, he was. His left arm from the elbow down is a mismatched stack of salvaged cyberware components that he has maintained, replaced, and modified over forty years: the hand is Axiom manufacture circa 2160, the wrist joint is something he stripped from a Ferrogate maintenance bot, and the forearm housing is a custom shell he hammered out himself from transit-grade aluminum. His face is weathered to the texture of old boot leather, his right eye is natural and sharp, his left eye is a salvage-market optical he bought from Zibby Ousséni-Palakiko three years ago and only mostly trusts.\n\nHis pitch under the Kessler Interchange overpass is a cathedral of beautiful junk: sorted bins of neural connectors, towers of chassis plating, a refrigerated unit full of organic-synthetic interface components that need to stay cold, hand-lettered signs advertising prices in chalk on a board he updates daily. He has a dog — a large, scruffy animal with bioluminescent patches along its spine from some backyard genemod experiment — named Inventory. Bako has a scholar's knowledge of two generations of augmentation hardware, can identify a component by touch in the dark, and has opinions about manufacturing tolerances that can fill an evening if you let him. He is also missing significant chunks of his past that he doesn't discuss.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,18 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Iowan Behemoth — 'Cathedral'",
+    "Geartown",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Aslan Vasquez-Chatterjee",
+    "Aluminum",
+    "Leather",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
+  ],
+  "district": "The Circuit"
 }

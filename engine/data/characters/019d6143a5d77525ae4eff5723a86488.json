@@ -12,7 +12,7 @@
   "role": "Personal security and threat neutralization — bodyguard",
   "age": 45,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
   "description": "Cem Osei-Petrov is compact and densely muscled, built low to the ground like something designed to survive impacts. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a bodyguard out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Cem Osei-Petrov agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,14 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R8 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "Bioelectric Muscle Fiber",
+    "Masquerade",
+    "The Narrows Compact",
+    "Ashfield",
+    "The Gradient Compact",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

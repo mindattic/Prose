@@ -12,7 +12,7 @@
   "role": "Retired secondary school teacher, former union leader",
   "age": 67,
   "status": "active",
-  "location": "Norwood Quiet — the second floor of a converted pre-Meridian row house they have lived in for thirty-one years",
+  "location": "Norwood Quiet — the second floor of a converted pre-Meridian row house they have lived in for thirty-one years, near North Ave and Damen",
   "description": "Florinel is precisely the kind of person who looks exactly like what they are: a teacher. They are medium height and softly built, with warm brown skin, a crown of silver locs wound up in a complicated knot, and reading glasses that are always either on their face or lost somewhere on their body. Their geneware is minimal but characteristic — color-shifting irises that cycle through blues and greens as a cosmetic choice they made at forty and never bothered to reverse, and a small bioluminescent tattoo across their left collarbone in a geometric Ghanaian kente pattern that pulses faintly when they're excited about an idea. They dress in comfortable, slightly chaotic layers, always with at least one pocket overflowing with something — a physical book, printed lecture notes from years ago, data chips, sweets for the neighborhood children.\n\nFor thirty-two years Florinel taught history and civic literacy at a community school in Norwood Quiet, the last twelve as a union chapter leader fighting against Tessera Corporation's creeping acquisition of the public school data infrastructure. They lost most of those fights. They won a few. They retired with a modest Tessera-adjacent pension and a comprehensive knowledge of exactly how institutional power erodes communities from the inside, which they now use freely and without corporate constraint. They have strong opinions delivered with a professor's patience — they will give you time to be wrong before correcting you, but they will correct you.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,17 @@
   "carried_weapons": [
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Norwood Quiet",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Silver",
+    "Nesting Doll",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Ringo Corponation"
+  ],
+  "district": "The Laceworks"
 }

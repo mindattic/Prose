@@ -12,7 +12,7 @@
   "role": "Freelance mechanic specializing in electric cargo rigs and older tram systems, operates out of a rented bay in Geartown",
   "age": 44,
   "status": "active",
-  "location": "Geartown — Bay 7 of the Harrowgate Subsidiary Works, a semi-legal repair complex near the old overpass",
+  "location": "Geartown — Bay 7 of the Harrowgate Subsidiary Works, a semi-legal repair complex near the old overpass, near Armitage and Milwaukee",
   "description": "Yannick is enormous in the way of men who have spent two decades moving heavy things — not sculpted, just densely, quietly large. His skin is very dark, the blue-black of deep water, with a scattering of old burn scars along his right forearm from a rig fire in his twenties that he describes without drama as 'educational.' He keeps a heavy beard, shot through with grey now, and wears his hair close-cropped since his mechanic's pony got caught in a gear housing years ago. His hands are the hands of someone who has made them instruments: scarred, enormous, and with a delicacy of movement that surprises people who assume hands that size can only do large things. He has retractable tool-interface ports along his forearms, both functional and personal — he chose ones with decorative geometric patterning in the housing, a nod to his Senegambian grandmother's textile work.\n\nYannick is slow to speak and fast to act, which has served him well in his work and occasionally disastrously in his personal life. He is not unfriendly — he simply doesn't consider speech the primary mode of exchange. He communicates through doing: handing someone a caf without asking if they want one, moving a car part out of someone's way before they have to ask, fixing a thing he wasn't asked to fix because he could see it needed it. He is known in Geartown as the mechanic who will be honest about what's wrong even when honesty costs him the job. This has made him moderately poor and extremely trusted.",
   "psychology": {
     "facet_weights": {
@@ -254,5 +254,15 @@
     "Meridian Munitions Snapper-22 'Cricket'",
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Grandmother",
+    "Harrowgate Industrial Plateau",
+    "Dredge Mining Collective Underwater Resource Extraction Platform",
+    "Geartown",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

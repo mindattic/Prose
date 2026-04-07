@@ -12,7 +12,7 @@
   "role": "Field trauma surgeon and combat support — combat medic",
   "age": 52,
   "status": "active",
-  "location": "The Spires — mid-level corporate residential towers",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Walton",
   "description": "Kadiatou Lund-Bangura is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 52, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a combat medic out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Kadiatou Lund-Bangura lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,14 @@
   "registered_firearms": [
     "Crucible Industries Storm Carbine SC-4 'Downpour'",
     "Crucible Industries Barrage-9 'Hornet'"
-  ]
+  ],
+  "related_entities": [
+    "Masquerade",
+    "The Narrows Compact",
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Burden of Longitude",
+    "Slagworks Industrial"
+  ],
+  "district": "The Spires"
 }

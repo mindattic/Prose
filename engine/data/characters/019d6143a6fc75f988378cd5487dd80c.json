@@ -12,7 +12,7 @@
   "role": "Aerial extraction and rapid transit pilot — getaway pilot",
   "age": 26,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Kedzie and Division",
   "description": "Tiare Svensson-Kone is lean and angular, all sharp edges and visible tension. At 26, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a getaway pilot out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nTiare Svensson-Kone operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,13 @@
   "carried_weapons": [
     "Street Custom 'Tombstone' Concrete Block Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Ashfield",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

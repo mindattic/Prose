@@ -11,7 +11,7 @@
   "role": "Childcare worker, Hamtramck Enclave community crèche",
   "age": 28,
   "status": "active",
-  "location": "Hamtramck Enclave, Sunspot Crèche (Level 3, Residency Block 7)",
+  "location": "Hamtramck Enclave, Sunspot Crèche (Level 3, Residency Block 7), near Pulaski and Chicago Ave",
   "description": "Céleste is compact and soft-featured with warm medium-brown skin, natural hair kept in large twisted sections pinned up during work hours, and cat ears — a geneware mod chosen at seventeen that they have never regretted for a single day. The ears are dark at the base, fading to a sandy cream at the tips, and they rotate independently, which the children find endlessly entertaining. They have color-shifting irises that cycle slowly through green and amber depending on light and mood, and small, precise hands that are somehow always in motion — braiding a child's hair, mending a torn fabric toy, writing incident reports.\n\nCéleste is genuinely good at this job in a way that is hard to fake: they hold attention without demanding it, de-escalate without humiliating, and remember every child's particular fear and comfort. Off the clock, they are wry and easily overwhelmed by adult socializing after a day of managing thirty small humans. They have strong opinions about UBC stipend policy, childcare worker wages, and the specific way that Palladian's creche management software misclassifies emotional labor as 'supplementary service.' They write long complaint threads on local community meshes that get more engagement than they expect.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,20 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Palladian Construction",
+    "Timekeeper",
+    "The Wire Taps",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Gradient Compact",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Tessera Phased Array Disruptor PAD-3 'Sunspot'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Shelf"
 }

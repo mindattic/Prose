@@ -12,7 +12,7 @@
   "role": "scholarship student and mathematics prodigy, Tier 2 rising",
   "age": 17,
   "status": "active",
-  "location": "Edgewater Prism, Palladian Foundation Secondary Institute",
+  "location": "Edgewater Prism, Palladian Foundation Secondary Institute, near Lincoln and Clark",
   "description": "Adaora is seventeen and already exhausted with being called gifted. She has her Nigerian mother's face — broad and expressive and deep brown — and her Danish-Polish father's height, and she moves through the corridors of Palladian's scholarship wing like she is calculating the structural load of every floor she walks on. Her geneware is minimal and chosen with clear deliberate aesthetic logic: color-shifting irises that she's set to cycle through cool blues and greens on a slow daily rhythm, which she chose specifically because it gave her something visually interesting to do during lectures where the material moves too slowly.\n\nShe holds a full Palladian Foundation scholarship, which is rare and comes with teeth — quarterly review, mandatory participation in Palladian's youth development pipeline, and an unspoken assumption that she will join the Palladian corporate track upon graduation. She has not yet decided whether she wants this, which is itself unusual; most scholarship students at her level have been coached into certainty. She is brilliant at applied mathematics and systems modeling and is currently running unsanctioned predictive models of Meridian 88's district resource allocation, trying to prove something she suspects about how Tier 1 zones are being deliberately undernourished. She hasn't told anyone what she's found.",
   "psychology": {
     "facet_weights": {
@@ -213,5 +213,18 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Edgewater Prism",
+    "Meridian 88",
+    "FOUNDATION",
+    "Palladian Construction",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Pellucid Systems",
+    "Lazarus IDP-1 'Teeth'"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Pharmacist and black-market pharmaceutical broker, The Shelf district",
   "age": 29,
   "status": "active",
-  "location": "The Shelf, operating from a legitimate licensed pharmacy called Goldthread Dispensary",
+  "location": "The Shelf, operating from a legitimate licensed pharmacy called Goldthread Dispensary, near Ashland and Division",
   "description": "Fenwick is short, stocky, and perpetually cheerful in a way that takes people a moment to calibrate — not false exactly, but layered over something more complicated, like a coral reef over deep water. His skin is a warm medium brown, his hair grown out in a loose high puff with copper-dyed ends, and he has a set of patterned irises — interlocking geometric circles in charcoal and cream — that he keeps well-maintained and that give him the slightly uncanny look of someone whose eyes are always aesthetically composed. He wears a pharmacist's white coat that he has clearly owned for years and refuses to replace despite its soft edges.\n\nHe is genuinely good at pharmacy. He remembers dosage interactions, flags contraindications before patients can finish asking their questions, and has a gift for making the most boring parts of medication management feel like he is doing you a personal favor. He is also, two nights a week, coordinating distribution of unlicensed gene-therapy compounds through a network that runs from The Shelf down to the Narrows and up to certain Tier 3 residential blocks where people want treatments Helix Biosystems has priced out of their reach. He finds this deeply morally straightforward and would be genuinely surprised if someone told him it was brave.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,17 @@
   "registered_firearms": [
     "Crucible Industries Ember-9 'Firefly'",
     "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Ferrogate Transit",
+    "The Narrows Compact",
+    "Dredge Mining Collective Underwater Resource Extraction Platform",
+    "The Shelf",
+    "Stratum",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+    "Copper"
+  ],
+  "district": "The Shelf"
 }

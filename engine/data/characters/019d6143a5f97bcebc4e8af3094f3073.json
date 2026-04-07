@@ -12,7 +12,7 @@
   "role": "Data archaeologist specializing in pre-Collapse urban memory systems",
   "age": 52,
   "status": "active",
-  "location": "University Spine, Edgewater Prism",
+  "location": "University Spine, Edgewater Prism, near Lincoln and Clark",
   "description": "Dzerassæ is a heavyset woman with deep amber skin and close-cropped silver hair she has never bothered to dye or modify, wearing it like a credential. Her eyes have patterned irises — concentric rings of copper and black, a cheap cosmetic mod she got at thirty-two and has never removed, though she insists she bought them for a reason she can no longer remember. She dresses in layered archival fabrics that always smell faintly of ozone from the scanning rigs she operates, and her hands bear the yellowish calluses of someone who handles physical storage media the way other people handle broken glass — with reverence and terror in equal measure.\n\nShe is the kind of academic who makes grad students feel simultaneously inspired and vaguely ashamed of themselves. She does not raise her voice, does not perform authority, but carries an absolute certainty in the importance of her work that functions as its own gravity. She excavates the digital ruins beneath Meridian 88's foundations — the dead servers, the corrupted municipal archives, the ghost-logs of neighborhoods that were demolished to build the Shelf — and she speaks of the data the way a forensic pathologist speaks of bodies: with precise, unsentimental tenderness.",
   "psychology": {
     "facet_weights": {
@@ -226,5 +226,24 @@
   "registered_firearms": [
     "Hearthstone Firearms Sentinel-9 'Block Watch'",
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "University Spine",
+    "Edgewater Prism",
+    "Meridian 88",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Shelf",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Copper",
+    "The Pure Hand",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Glass"
+  ],
+  "district": "The Laceworks"
 }

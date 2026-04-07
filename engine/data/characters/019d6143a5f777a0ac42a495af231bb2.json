@@ -12,7 +12,7 @@
   "role": "Q-zero ghost — a person with no digital identity",
   "age": 52,
   "status": "active",
-  "location": "Rotating — Blackpipe Corridor, Grand Crossing Gate, and the Grindstone Shore encampment",
+  "location": "Rotating — Blackpipe Corridor, Grand Crossing Gate, and the Grindstone Shore encampment, near Armitage and Milwaukee",
   "description": "Dukuray is a tall man gone thin in the way of long deprivation, but there is nothing fragile about him — he carries himself with the measured deliberateness of someone who has learned that drawing attention costs more than it's worth. His skin is very dark, deep blue-black in low light, and he has grown his locs long enough to wrap and tuck under a weathered hood. His eyes are baseline human but striking — very pale grey-green against his complexion, an inheritance from a great-grandmother he never met. He has no augmentations of any kind: no chrome, no geneware, no embedded chips. This is not poverty; it is survival. Every augmentation is a signal, a trackable node. He is deliberately blank.\n\nHe was a mid-tier Axiom logistics analyst until twelve years ago, when he witnessed something in a data batch that was not meant to be witnessed, and the most effective response available to him was to stop existing. His original identity — Kofi-Samuel Nansen-Mbiti, employee number 7-Alpha-3391 — was formally declared deceased by Axiom internal records eighteen months after his disappearance. He knows things about Axiom's supply chain architecture that would be worth significant Quanta to competitors, but he has never sold them. Not from loyalty. From the calculation that the moment he proves he exists, he is already dead.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,19 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Grand Crossing Gate",
+    "Grindstone Shore",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Grandmother",
+    "TESSERA PG-2 'Signature'",
+    "The Human Baseline Alliance",
+    "Big Rig",
+    "Fenris Ballistics Packmaster FB-12 'Alpha'",
+    "The Pale Mile",
+    "Déjà Vu"
+  ],
+  "district": "Nomadic"
 }

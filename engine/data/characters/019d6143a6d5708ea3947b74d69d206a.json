@@ -11,7 +11,7 @@
   "role": "truant message runner, street kid",
   "age": 9,
   "status": "active",
-  "location": "The Narrows, Blackpipe Corridor",
+  "location": "The Narrows, Blackpipe Corridor, near Milwaukee and North Ave",
   "description": "Solène is small even for nine, with deep brown skin mapped by old scrapes and one faded chemical burn along her left forearm she got from a leaking pipe in the Blackpipe tunnels. Her hair is coiled tight and usually stuffed under a too-large knit cap she refuses to remove. Her eyes are large and very dark, permanently watchful, the way only children who sleep lightly develop. She has geneware cat-whisker sensory implants — not her choice, inherited from her mother — and they twitch involuntarily when she's nervous, which other kids tease her about.\n\nSolène runs messages between the Blackpipe fences and the Narrows stall-vendors, earning a few Φ per run. She's illiterate in formal script but has memorized dozens of symbols by shape and can navigate the Corridor's maze of maintenance corridors better than most adults. She laughs easily and loudly but goes very quiet the instant something feels wrong — other runners have learned to watch her like a weather vane. She has a fierce attachment to a cracked ELF shrine wedged in a drainage alcove that she tends with water-drop offerings every morning.",
   "psychology": {
     "facet_weights": {
@@ -163,5 +163,15 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Meridian 88",
+    "The Narrows Compact",
+    "The Calumet Sink",
+    "Axonal Stretch Resonance Lance",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

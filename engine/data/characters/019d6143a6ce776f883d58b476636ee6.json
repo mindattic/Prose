@@ -12,7 +12,7 @@
   "role": "Contract broker and resource coordinator — fixer",
   "age": 26,
   "status": "active",
-  "location": "The Overhang — residential shelves built onto megastructure exteriors",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Western and Division",
   "description": "Sinan Navarro-Afriyie is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 26, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a fixer out of The Overhang, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Sinan Navarro-Afriyie describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -277,5 +277,16 @@
   "registered_firearms": [
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
     "Kang-Petrov Arms KPS-7V 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "Masquerade",
+    "Ironveil Canopy",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

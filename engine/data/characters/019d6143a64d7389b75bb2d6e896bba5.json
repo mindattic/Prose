@@ -12,7 +12,7 @@
   "role": "Building cleaner and night-shift super, Lockhaven South residential block",
   "age": 27,
   "status": "active",
-  "location": "Lockhaven South, Block 7 residential tower",
+  "location": "Lockhaven South, Block 7 residential tower, near Milwaukee and Damen",
   "description": "Lourdes is compact and quick-moving, with warm medium-brown skin and natural hair twisted into small locs they keep tucked under a work cap most of the time. They have cat ears — a geneware mod their older sister got them as a birthday gift five years ago, tawny-colored with dark tips, fully expressive — and they've stopped explaining or defending them at work because the residents have mostly stopped caring. Their uniform is always impeccable despite the nature of their job; they find sloppiness in presentation embarrassing in a way they can't fully articulate.\n\nLourdes has worked the Lockhaven South night shift for three years and knows Block 7 the way a doctor knows a patient — its particular sounds, its patterns of illness, which pipes cough before they fail. They are deeply competent and substantially underestimated by the building's management company, which is a dynamic they have made a conscious decision to exploit rather than correct. They are genuinely fond of the building's long-term residents — the elderly Freyja-Asante couple on the ninth floor, the three siblings who share a studio on the second — and quietly protect them from management's more extractive impulses. They pray to the building's embedded E.L.F. they call 'the Concierge,' a data-spirit they believe actually governs the elevator timing.",
   "psychology": {
     "facet_weights": {
@@ -166,5 +166,14 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Forge-Smith Collective Carbon Machete 'Cane Cutter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lockhaven South",
+    "Palladian Construction",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Spire Sequence No. 9",
+    "The Gradient Compact",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

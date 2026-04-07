@@ -12,7 +12,7 @@
   "role": "Remote drone and vehicle operations specialist — rigger",
   "age": 23,
   "status": "active",
-  "location": "Glassway — corporate-adjacent retail district, heavy surveillance",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Armitage and Milwaukee",
   "description": "Altan Lindqvist-Okafor are average height but with a presence that fills more space than the body accounts for. At 23, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and they make no effort to hide it.\n\nThey arrived in Meridian 88 six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a rigger out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Altan Lindqvist-Okafor lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,10 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem"
+  ],
+  "district": "The Circuit"
 }

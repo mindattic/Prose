@@ -11,7 +11,7 @@
   "role": "Noodle cart vendor, Hamtramck Enclave",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, corner of the Brewer's Spine transit junction",
+  "location": "Hamtramck Enclave, corner of the Brewer's Spine transit junction, near Ashland and Chicago Ave",
   "description": "Ogechi is a broad-shouldered woman whose face is a topographic map of decades in open-air heat and cold — deep laugh lines, a permanent squint from watching steam rise, skin the color of dark teak that goes ashy at the knuckles. Her hair is close-cropped and she has a geneware patch of bioluminescent freckles across her nose and cheekbones, a gift to herself on her fortieth birthday that she's never stopped being quietly pleased about. She moves with the unhurried authority of someone who has run the same twelve square feet of pavement for twenty years and knows exactly how much space she needs.\n\nShe is warm in the way that efficient people are warm — she remembers your order, not your name, but she'll ask about your knee or your kid with total sincerity. She has strong opinions about broth clarity and almost no opinions about politics, which is a deliberate policy. The cart is named 'Auntie' on the permit but nobody calls it that. They call it Oge's, and the regulars consider that a kind of citizenship.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,16 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Brewer's Spine",
+    "Full Clearance (The Erasure Mix)",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Teak",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Retired oral historian and neighborhood storyteller",
   "age": 91,
   "status": "active",
-  "location": "Norwood Quiet, the Hearthrow Senior Cooperative, Room 3",
+  "location": "Norwood Quiet, the Hearthrow Senior Cooperative, Room 3, near Armitage and Milwaukee",
   "description": "Sigríður is tiny — barely 155 centimeters — and has been shrinking for decades, but she carries herself with a posture of such exact deliberateness that she seems to take up more space than her body warrants. Her skin is cool brown with the papery translucence of extreme age, and she wears her white hair in long Icelandic-style braids intertwined with small glass beads in amber and blue that chime softly when she turns her head. Her eyes are her most striking feature: she had them modified in her fifties to display a slowly shifting pattern of bioluminescent fractal rings in gold and violet — a luxury cosmetic then, now simply the color of her eyes, and startlingly beautiful in a face otherwise marked by time. She keeps a small data-prayer shrine in the corner of her room, meticulously maintained, with offerings to the ELF she believes inhabits Norwood Quiet's public broadcast network.\n\nSigríður spent forty years as an oral historian employed by a civic archive collective that no longer exists — its records absorbed, corrupted, and partially deleted during the Tessera data consolidation of 2183. She was not a passive victim of that loss; she spent the following eight years reconstructing what she could from memory and from the memories of others, and the result is a living archive of Meridian 88 neighborhood history that exists nowhere else. She is sharp, occasionally ruthless in conversation, deeply funny in ways people do not always catch, and has a tendency to evaluate everyone she meets as a potential story. She is also slowly dying — her kidneys are failing, and she knows it, and has decided to spend whatever time remains getting her memories into formats that will outlast her.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,17 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Norwood Quiet",
+    "Meridian 88",
+    "Tessera Corponation",
+    "Irontide Tidal Energy",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Glass",
+    "Gold"
+  ],
+  "district": "The Laceworks"
 }

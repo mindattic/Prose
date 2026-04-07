@@ -13,7 +13,7 @@
   "role": "Mentor (deceased)",
   "age": 65,
   "status": "deceased",
-  "location": "Old Harbor — buried in the flooded cemetery on Pier 9, marked by a single rusted katana driven into the mud",
+  "location": "Old Harbor — buried in the flooded cemetery on Pier 9, marked by a single rusted katana driven into the mud, near Lake Shore and Wacker",
   "description": "Seo was built like a stripped cable — no excess, no softness, every tendon visible beneath weathered skin\nthe color of teak left in salt air. His hands were the most telling feature: heavy knuckles, precise fingers,\nthe left hand missing its ring finger from a field amputation during the Busan Corridor campaign. He kept his\ngrey hair cropped to stubble, and his face held two expressions — calm and calmer. A scar ran from his right\ntemple to his jaw, a memento from a monofilament trap in the Jakarta Consolidation, and it pulled his mouth\ninto what looked like a permanent half-smile that was not a smile at all.\n\nHe moved like water finding a drain — unhurried, inevitable. Even in his last years, when the old military\naugments were misfiring and his left knee locked without warning, he could cross a room and have a blade at\nyour throat before you processed that he'd stood up. He wore the same faded military jacket every day, patches\nremoved, insignia cut away, as if he could amputate his history with a seam ripper.\n\nFirst impression: a quiet old man who cooked rice and stared at the drowned skyline. Second impression,\nif you were unlucky enough to earn one: the most dangerous person you had ever met, and the saddest.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,11 @@
   "registered_firearms": [
     "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
-  ]
+  ],
+  "related_entities": [
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Teak"
+  ],
+  "district": "Old Harbor"
 }

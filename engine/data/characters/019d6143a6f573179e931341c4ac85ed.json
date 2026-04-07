@@ -13,7 +13,7 @@
   "role": "Corporate Debt Arbitrator / Enforcer",
   "age": 41,
   "status": "active",
-  "location": "The Meridian Core (office), The Shelf (field operations)",
+  "location": "The Meridian Core (office), The Shelf (field operations), near State and Madison",
   "description": "Thessaly Mourne occupies the precise, bloodless space between corporate law and corporate violence. Employed by Synclaire Financial Holdings as a Tier-1 Debt Resolution Specialist, she operates from a glass-walled office forty floors above the street, surrounded by cascading ledgers of names, outstanding balances, and algorithmic threat assessments. She is tall, angular, with close-cropped silver hair she began dyeing at thirty-two—not to look older, but because she said gray suited the work. Her skin is a deep warm brown, her face carefully composed into something that reads as neither cruel nor kind, just precise.\n\nIn the field, Thessaly moves through The Shelf like a tax collector moving through a famine. She dresses in muted corporate silvers and blacks, carries no visible weapon, and speaks in the measured cadence of someone reading aloud from a contract. She has never personally broken anyone's hands—she simply arrives, states the terms, and leaves the consequences to mathematics and to the two silent augmented associates who accompany her like footnotes. The residents of The Shelf call her Pale Mouth because of the white-tinted lip pigment she wears, and because of what comes out of it.\n\nThessaly was not born into the Meridian Core. She grew up in Old Harbor in a household that owed money to four separate creditors simultaneously, and she watched her mother perform an exhausting, humiliating arithmetic of survival every single week. She told herself she would learn the language of debt so fluently that it could never be used against her again. She did. She now speaks it against others with a fluency that frightens even her superiors, though none of them would say so aloud.",
   "psychology": {
     "facet_weights": {
@@ -243,5 +243,21 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ]
+  ],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Forty Floors and Falling (No One Catches)",
+    "The Circuit",
+    "The Nearfield",
+    "The Shelf",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Chimera-Null",
+    "Silver",
+    "The Pure Hand",
+    "Glass",
+    "The Pale Mile",
+    "Déjà Vu"
+  ],
+  "district": "Meridian Core"
 }

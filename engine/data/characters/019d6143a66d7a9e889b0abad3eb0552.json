@@ -12,7 +12,7 @@
   "role": "Bootleg media seller, fake ID vendor",
   "age": 27,
   "status": "active",
-  "location": "The Shelf, Chatham Flats",
+  "location": "The Shelf, Chatham Flats, near Halsted and Chicago Ave",
   "description": "Nnenna is small and angular, with warm dark brown skin, natural hair pulled into a complicated upknot threaded with glowing fiber-optic strands — she changes the color every few days, and people use it as a mood indicator without telling her. She has bioluminescent freckle patterns across her cheekbones and nose, a geneware job she did herself from a kit at nineteen, pale blue-green that pulses very faintly in low light. She dresses for speed and pockets: wide-legged trousers, a tech vest with modular attachment points, and soft-soled boots. Her stall at The Shelf is technically a 'media restoration and archiving service' — she has a sign and everything. In practice, she sells bootleg entertainment feeds, blacklisted music archives, pre-corporate-censorship film libraries, pirated educational content, and, from a very different drawer, high-quality fabricated identity documents.\n\nNnenna is relentlessly cheerful in a way that is partially genuine and partially armor. She talks fast, jokes constantly, and treats every transaction like it's the beginning of a friendship — which sometimes it is. She is genuinely passionate about media piracy as a political act: she believes corporate content control is a form of cultural imprisonment and sells banned Zheng-Dao territory films with the enthusiasm of a revolutionary. The ID work is more mercenary — she's good at it, it pays well, and she does not moralize about who needs a new identity or why. She is twenty-seven and has not yet fully understood the risk she is carrying.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,17 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Chatham Flats",
+    "The Shelf",
+    "Zheng-dao Bioelectric",
+    "Palladian Construction",
+    "Arcturus Defense Solutions",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "ARCHIVE",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

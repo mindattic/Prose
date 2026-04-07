@@ -12,7 +12,7 @@
   "role": "Target acquisition and fugitive recovery — bounty hunter",
   "age": 28,
   "status": "active",
-  "location": "The Circuit — neon-lit entertainment and vice district",
+  "location": "The Circuit — neon-lit entertainment and vice district, near Fullerton and Damen",
   "description": "Ximena Sjostrom-Kwarteng are average height but with a presence that fills more space than the body accounts for. At 28, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a bounty hunter out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Ximena Sjostrom-Kwarteng lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,11 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "Meridian 88",
+    "The Unfinished Theorem"
+  ],
+  "district": "The Circuit"
 }

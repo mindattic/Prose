@@ -12,7 +12,7 @@
   "role": "Bounty Compliance Officer, Clearpath Recovery Associates",
   "age": 31,
   "status": "active",
-  "location": "Bronzeline, Meridian 88",
+  "location": "Bronzeline, Meridian 88, near North Ave and Milwaukee",
   "description": "Temitán Asabere-Zubkov is a Yoruba-Russian study in deliberate inconspicuousness that fails at close range. At a distance they are simply a medium-height person in well-maintained practical clothing, moving through Bronzeline's market corridors with the unhurried confidence of someone who knows exactly where they are going. Up close: alert dark eyes, natural hair twisted and pinned up in a way that adds two centimeters of height, a slight iridescence at the temples where their cosmetic geneware — subdermal bioluminescent flecks, amber, barely visible in daylight — marks a past self they haven't fully left behind. They carry a retractable ceramic baton on their left hip and a legal skip-trace rig in a shoulder bag that looks like a courier's kit.\n\nClearpath Recovery Associates is a licensed bounty compliance firm — they don't call it bounty hunting, because the licensing board doesn't call it that, and Temitán doesn't call it that either, though they're not particularly bothered by the word in private. They find people. They bring them to the compliance checkpoint. They try very hard not to find people who shouldn't be found, which is harder than it sounds in a city where the warrant database has four different incompatible update cycles and two of them lag by forty-eight hours. They have a rule: verify the warrant, verify the person, verify that the person and the warrant match. It has saved them from three significant mistakes. They don't know about the fourth.",
   "psychology": {
     "facet_weights": {
@@ -177,5 +177,14 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Bronzeline",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Clearpath",
+    "Ringo DV-4 'Courier'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Circuit"
 }

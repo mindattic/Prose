@@ -1,0 +1,36 @@
+{
+  "id": "4784755417b7fa68b03b752262b7bedd",
+  "name": "Nomura Streetwear Signal Beanie",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A knitted beanie with conductive thread woven into the fabric that acts as a passive antenna for short-range mesh network communication. From the outside, it looks like an ordinary beanie in dark colors. The conductive threading is invisible to casual inspection but extends the wearer's personal comm range by approximately 40%.\n\nPopular in Shelf districts where official comm infrastructure is unreliable or surveilled. The Signal Beanie lets users connect to local mesh networks without carrying visible tech that might attract attention from security patrols.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "synthetic knit",
+    "conductive thread",
+    "shielded inner lining"
+  ],
+  "functionality": "Passive mesh network antenna, +40% comm range extension",
+  "what_it_says": "You look like everyone else on the street, but you're hearing conversations they can't reach.",
+  "worn_by": [
+    "Shelf residents",
+    "mesh network users",
+    "street-level operatives"
+  ],
+  "manufacturer": "Nomura Streetwear",
+  "price_range": "Φ140",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of Signal Beanies sold at a Shelf market are found to be relaying all mesh traffic to an unknown third party — someone turned anonymity tools into surveillance devices."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 1",
+    "beanie",
+    "mesh network",
+    "covert",
+    "comm"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Information trader and intelligence analyst — broker",
   "age": 30,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
   "description": "Halima Lindgren-Ofori are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 30, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a broker out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHalima Lindgren-Ofori are the kind of runner other runners tell stories about, though the stories vary depending on who they burned last.",
   "psychology": {
     "facet_weights": {
@@ -269,5 +269,11 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "Old Harbor"
 }

@@ -13,7 +13,7 @@
   "role": "Heavy salvage and crew security — Boneyard Saints",
   "age": 42,
   "status": "active",
-  "location": "Old Harbor — lives in a converted barge moored to the dry dock",
+  "location": "Old Harbor — lives in a converted barge moored to the dry dock, near Lake Shore and Navy Pier",
   "description": "Toll Brecker moves things that weren't designed to be moved — sealed vault doors, collapsed structural beams, server racks that have been underwater for two decades and now weigh twice what they should. He is the Boneyard Saints' heavy operator, the one who makes physically impossible salvage operations merely improbable. Before the Saints, he worked harbor construction — the last generation of workers who built things in Old Harbor before the water rose and made building irrelevant.\n\nHe is enormous. Six-four, two-sixty, with the dense, functional musculature of someone who has lifted heavy things underwater for most of his adult life. His augmentations are industrial rather than military — strength amplification, pressure tolerance, respiratory capacity. They were installed for construction work and repurposed for salvage. He moves slowly on land because he has learned that large men who move quickly frighten people, and Toll does not want to frighten anyone who doesn't deserve it.\n\nHe is the kindest member of the Boneyard Saints, which is a strange thing to say about a man who can tear a steel door off its hinges. He cooks for the crew on the barge, sings while he works underwater (the respiratory system allows it), and names the marine creatures that have colonized the ruins. He is also the only Saint who will openly discuss the sounds in the deep sections, because pretending they don't exist seems dishonest and Toll is constitutionally incapable of dishonesty.",
   "psychology": {
     "facet_weights": {
@@ -193,5 +193,17 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Tessera TK-11 Specter 'Whisper'"
-  ]
+  ],
+  "related_entities": [
+    "Dust & Meridian Saints",
+    "Shelf Life",
+    "Dermal Induction Flayer DIF-2 'Saltwater'",
+    "The Meridian Barge",
+    "Bathysphere Networks",
+    "The Voltage Saints",
+    "Gravimetric Collapse Charge GCC-9",
+    "Slagworks Industrial",
+    "Steel"
+  ],
+  "district": "Old Harbor"
 }

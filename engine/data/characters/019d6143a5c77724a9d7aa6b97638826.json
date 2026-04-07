@@ -12,7 +12,7 @@
   "role": "Small-time data broker and bootleg media seller",
   "age": 44,
   "status": "active",
-  "location": "The Shelf, Deepwell Station",
+  "location": "The Shelf, Deepwell Station, near sub-level access near State and Van Buren",
   "description": "Bogumił is a heavyset man with pale Polish-Armenian complexion gone ruddy at the cheeks from years of Deepwell Station's recycled air, a close-cropped head of dark hair shot through with early gray, and a mustache he maintains with a precision that is otherwise entirely absent from his personal presentation. He wears the same rotation of three utilitarian jackets and always has a data-chip case on his belt that holds sixty to eighty chips in organized categories only he understands. His stall at The Shelf is a folding table with a locked case on top and a handwritten placard reading 'MEDIA / INFORMATION / REASONABLE RATES.' Behind it he keeps a battered terminal and a cup of something hot that he refills compulsively from a thermos.\n\nBogumił has the careful, watchful energy of a man who has heard a lot of things he wasn't meant to and survived by being boring about it. He is dry-humored and unhurried, speaks with precise economy, and will sell you bootleg Axiom entertainment packages and Tessera corporate gossip compilations with the same mild demeanor. He does not volunteer what he knows, but ask him the right question and pay the right amount and the depth of his archive is quietly staggering. His specialty is organizational intelligence — who works for whom, who owes what, which corponation is about to restructure which subsidiary — sourced from document leaks, intercepted internal newsletters, and a network of low-level administrative workers who trade gossip for data access.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,16 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "The Shelf",
+    "Zheng-dao Bioelectric",
+    "BLACKWATER",
+    "Tessera Corponation",
+    "ARCHIVE",
+    "Slagworks Industrial",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

@@ -1,0 +1,36 @@
+{
+  "id": "c029bcb01f36cfc4e88eb85e9b4aa9dd",
+  "name": "Pinnacle Security Stab-Resistant Undershirt",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A tight-fitting undershirt woven with para-aramid fibers that provide certified stab and slash resistance. The fabric is layered in a crosshatch pattern that catches and distributes the force of edged weapons across a wider area. The shirt covers torso and upper arms.\n\nStandard issue for patrol officers and private security working in Shelf districts where bladed weapons are more common than firearms. The Stab-Resistant Undershirt doesn't stop bullets and doesn't pretend to — it stops the knife you didn't see coming.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "para-aramid fiber",
+    "crosshatch weave pattern",
+    "moisture-wicking inner surface"
+  ],
+  "functionality": "Stab and slash resistance, torso and upper arm coverage",
+  "what_it_says": "You work where people carry blades and you've accepted that one of those blades is eventually aimed at you.",
+  "worn_by": [
+    "patrol officers",
+    "Shelf-district security",
+    "close-protection details"
+  ],
+  "manufacturer": "Pinnacle Security",
+  "price_range": "Φ580",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A stab-resistant undershirt shows a cut pattern that partially penetrated the para-aramid — whatever blade was used is sharper than anything the fabric was rated to stop."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 2",
+    "stab-resistant",
+    "security",
+    "armor",
+    "patrol"
+  ]
+}

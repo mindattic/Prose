@@ -12,7 +12,7 @@
   "role": "Compute broker and data fence operating from the Stockyard's tech bazaar",
   "age": 38,
   "status": "active",
-  "location": "The Stockyard — stall 114 in the Harrowgate Industrial Plateau overflow market, known locally as the Cracker Barrel",
+  "location": "The Stockyard — stall 114 in the Harrowgate Industrial Plateau overflow market, known locally as the Cracker Barrel, near Kedzie and Division",
   "description": "Ndubuisi is a rangy, precise man with Nigerian-Greek-Iranian features — angular face, heavy brows, skin a warm teak-brown, and round eyes whose irises he's modded with slowly rotating mandala patterns in blue and copper that give him an air of perpetual thoughtfulness. He keeps his head shaved close and his clothes exactly one tier above what the Stockyard expects: pressed shirt, clean trousers, quality coat, the whole ensemble waterproofed and subtly armored. He wears a battered Axiom university lanyard — he was a student there for two semesters, a decade ago — that he has never returned.\n\nThe nickname 'Professor' started as mockery and calcified into respect. Ndubuisi has a genuine gift for making complex technical explanations feel like revelations, and he uses this constantly — explaining to buyers exactly what they're getting, exactly why it's valuable, and exactly what it would cost them to try to get it cheaper elsewhere. He's not wrong. He moves stolen datasets, pirated processing time, cracked software licenses, and occasionally darker algorithmic goods with the cheerful confidence of a man who has decided that information wants to be free and has also decided he should be compensated for its liberation.",
   "psychology": {
     "facet_weights": {
@@ -177,5 +177,15 @@
   "registered_firearms": [
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
     "Crucible Industries Viper Mk.III 'Copperhead'"
-  ]
+  ],
+  "related_entities": [
+    "Harrowgate Industrial Plateau",
+    "The Stockyard",
+    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
+    "ShieldTech CLA-3 'Cascade'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "Teak"
+  ],
+  "district": "The Shelf"
 }

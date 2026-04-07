@@ -12,7 +12,7 @@
   "role": "Loan shark and debt collector operating out of Gravesend Basin",
   "age": 44,
   "status": "active",
-  "location": "Gravesend Basin — she operates from a converted barge-office called the Saltbox, moored at Pier 7-C",
+  "location": "Gravesend Basin — she operates from a converted barge-office called the Saltbox, moored at Pier 7-C, near Wacker and State",
   "description": "Yetunde Přibyl-Gasimova is a broad-shouldered woman whose posture conveys the absolute certainty that she will outlast everyone in any given room. Her skin is deep umber and her hair has been geneware-treated to hold a permanent silver-white that she wears pulled tight to her skull — no styling, no vanity, just function. A thin horizontal scar runs beneath her left eye, faded but deliberate. She dresses in water-resistant industrial layers even indoors, always smelling faintly of lake brine and the cedar-smoke incense she burns for the E.L.F. she calls 'the Creditor' — a digital spirit she believes inhabits her accounting tablet and blesses debts that will be repaid.\n\nShe is not a violent woman by preference, but she employs two enforcers precisely so she can remain calm when others are not. Yetunde speaks in measured, affectless sentences and has a habit of writing numbers in a physical ledger with a real ink stylus while people talk to her, which most find deeply unsettling. She genuinely believes she provides a community service — institutional credit is inaccessible to Tier 1 and 2 residents, and she fills that gap. The fact that her interest rates are predatory and her consequences severe is, to her, simply the cost of doing business in a city that offers no alternatives.",
   "psychology": {
     "facet_weights": {
@@ -194,5 +194,16 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "Gravesend Basin",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Clearpath",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "Nesting Doll",
+    "Cedar"
+  ],
+  "district": "Old Harbor"
 }

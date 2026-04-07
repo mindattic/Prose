@@ -6,7 +6,9 @@
   "date": "unknown",
   "classification": "restricted",
   "description": "...crossed the border at 0300. Six individuals. No BCIs. Repeat, no BCIs. They were carrying [REDACTED] and spoke a dialect we couldn't— [CORRUPTED] ...detained for questioning but by morning they were— [REDACTED]",
-  "related_entities": [],
+  "related_entities": [
+    "The Eastline"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "Who are these BCI-less individuals crossing the border?",

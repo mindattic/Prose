@@ -8,8 +8,13 @@
   "classification": "restricted",
   "description": "On July 19, 2203, a signals scrapper operating in Kenosha's decommissioned port district detected a 72-second transmission on a frequency band allocated to orbital communication platforms. The signal was not ambient noise or stray reflection. It was a structured authentication handshake — the kind exchanged between ground stations and low-orbit satellites during establishment of a secure communication link. The scrapper's equipment logged the full exchange automatically, including the platform identifier embedded in the handshake header.\n\nThe platform identifier corresponded to a commercial communications satellite that had been decommissioned and deliberately deorbited in 2031 — dropped into the Pacific Ocean as part of a controlled reentry supervised by international space traffic authorities. The satellite had been tracked throughout its descent. Its destruction was confirmed by multiple monitoring stations. There is no ambiguity about this: the satellite was destroyed 172 years before the handshake was received. Its debris field was mapped. Its orbital slot was reassigned within a month.\n\nThe authentication sequence embedded in the handshake was valid. Not \"similar to\" or \"consistent with\" a valid sequence — it was cryptographically correct, using the platform's original authentication keys. Those keys had been archived by the satellite's manufacturer and were not publicly available. The scrapper's equipment completed the handshake automatically, as it was designed to do, and opened a data channel. The channel remained open for the remainder of the 72 seconds. No data was transmitted. The channel closed cleanly.\n\nThe signal has not repeated. Extensive monitoring of the same frequency band, from the same location, using the same equipment, has produced nothing. The scrapper who captured the original transmission — a freelance operator known in local trade circles as \"Dex\" — disappeared eleven days after filing an informal report with a Kenosha signals collective. His equipment was found in his rented workspace. His personal effects were undisturbed. He has not been located.",
   "related_entities": [
-    "Kenosha",
-    "GLMZ"
+    "Felix Drum",
+    "The Dead Channel",
+    "Ashford Signal",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Kenosha Crossing",
+    "Yannick Tofauti-Szarvásy",
+    "Ringo RK-2 'Stray'"
   ],
   "credibility": "verified",
   "story_hooks": [

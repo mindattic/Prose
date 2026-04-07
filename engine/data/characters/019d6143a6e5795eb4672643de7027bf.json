@@ -12,7 +12,7 @@
   "role": "Excluded / Off-Grid Medic",
   "age": 29,
   "status": "active",
-  "location": "The Shelf (transient, moves between zones)",
+  "location": "The Shelf (transient, moves between zones), near Halsted and Division",
   "description": "Søren Mikkelsen-Achebe does not exist in any database that matters. Danish and Igbo, compact and angular, with the particular alertness of someone who has learned to assess exits before they assess people. They keep their hair shaved close, wear clothing chosen for pockets and durability rather than warmth, and move through The Shelf and surrounding zones in a pattern deliberately irregular enough to prevent easy tracking. Their face carries old scarring along the jaw from an incident they describe as 'an administrative disagreement' and do not elaborate on. They have no legal identity — not purged like some, but never properly established, a bureaucratic ghost who aged out of a temporary shelter system at eighteen into a city that had no record they'd ever existed.\n\nSøren learned medicine the way people learn most things on The Shelf: by necessity, from whoever would teach them, and through trial and error that sometimes had irreversible consequences. They are not a doctor. They are something more useful in their ecosystem — a person who can stitch, set, administer, and diagnose without requiring identification, insurance, or the kind of paperwork that flags someone's location to an enforcement database. They operate out of a rotating series of semi-permanent locations: a converted storage unit, a sympathetic shopkeeper's back room, the gutted lower level of a building that should have been demolished two years ago. Word of mouth only. No signs. No fixed schedule.\n\nSøren is not ideologically committed to any particular vision of revolution or reform. They are committed to the person in front of them not dying. This makes them invaluable to almost everyone and trusted completely by almost no one, because a medic who treats everyone is a medic who might treat your enemy. They have learned to live with this. They have learned to live with most things.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Undertow",
+    "The Shelf",
+    "Big Rig",
+    "The Gradient Compact",
+    "Irontide Tidal Energy"
+  ],
+  "district": "The Shelf"
 }

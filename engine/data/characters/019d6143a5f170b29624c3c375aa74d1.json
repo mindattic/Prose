@@ -12,7 +12,7 @@
   "role": "Mobile mechanic — operates a converted cargo trike, does roadside and residential vehicle repair",
   "age": 29,
   "status": "active",
-  "location": "Geartown, working routes through Kessler Interchange and Dearborn Forge",
+  "location": "Geartown, working routes through Kessler Interchange and Dearborn Forge, near North Ave and Milwaukee",
   "description": "Dev is lean and wire-strung, with warm brown skin perpetually stained at the knuckles with synthetic lubricant that no solvent fully removes. He has geneware cat ears — mottled amber and black, twitching with genuine involuntary response to sound — that he got at nineteen on a payment plan he took three years to finish. His dark eyes have patterned irises in a sunburst of gold and deep green, a cosmetic mod he received free from a friend who owed him labor. He keeps his hair close-cropped except for a single braid at the back held with a copper fitting.\n\nDev is relentlessly cheerful in a way that reads as either genuine warmth or a very good performance, and the truth is somewhere in between. He talks to every vehicle he works on, whispering diagnoses and apologies and thanks, and he half-believes the E.L.F.s that inhabit older engines can hear him. He runs on stimulant tea and spite, fiercely proud of his independence, and quietly terrified of what happens if the trike breaks down and he can't afford the parts.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,18 @@
   "registered_firearms": [
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Dearborn Forge",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Slagworks Industrial",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

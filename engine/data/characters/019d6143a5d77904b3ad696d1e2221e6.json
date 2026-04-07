@@ -12,7 +12,7 @@
   "role": "Long-range precision fire specialist — sniper",
   "age": 54,
   "status": "active",
-  "location": "The Spires — mid-level corporate residential towers",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Walton",
   "description": "Cem Watanabe-Amponsah are athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 54, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a sniper out of The Spires, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nCem Watanabe-Amponsah have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,10 @@
   "carried_weapons": [
     "Kang-Petrov Arms KP-10C 'Bullpup'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Meridian 88"
+  ],
+  "district": "The Spires"
 }

@@ -12,7 +12,7 @@
   "role": "Retired Corporate Wars naval veteran, pension-dependent community fixture",
   "age": 79,
   "status": "active",
-  "location": "Washburn Commons, Building 7, Unit 412 — near the canal-facing benches",
+  "location": "Washburn Commons, Building 7, Unit 412 — near the canal-facing benches, near Halsted and Chicago Ave",
   "description": "Abayomi is a barrel-chested man slowly collapsing inward on himself, the way old warships list before they go under. His skin is deep umber with a web of pale scarring across his left jaw and neck — plasma burns from the Siege of Kenosha Crossing, 2161. He keeps his white hair cropped close and his posture militarily straight even when the arthritis in his spine screams otherwise. He has geneware eyes — replacement optical implants that glow a faint amber in low light, given to him by Sterling-Nakamura after the originals were destroyed in combat. He wears the same three shirts in rotation and everyone in the building knows which day it is by the color.\n\nBayo is the kind of man who speaks slowly because he means every word, and who listens in a way that makes people feel heard down to their bones. He was a petty officer aboard a Ferrogate Transit escort frigate during the Corporate Wars and saw things he has never described to anyone still living. He spends his afternoons on the canal bench feeding data-pigeons and watching the water, and his evenings hosting an informal gathering he calls 'The Muster' — eight to twenty neighbors sitting in his unit sharing food and grievances. He is not a wise man in any mystical sense. He is simply someone who has outlived enough catastrophes to have excellent perspective.",
   "psychology": {
     "facet_weights": {
@@ -256,5 +256,18 @@
   "registered_firearms": [
     "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Kenosha Crossing",
+    "Ferrogate Transit",
+    "Washburn Commons",
+    "Tessera Corponation",
+    "Lacuna Genomics",
+    "Crucible Industries Siege-12 'Battering Ram'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

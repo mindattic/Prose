@@ -12,7 +12,7 @@
   "role": "stateless elder; informal spiritual leader of a refugee collective",
   "age": 71,
   "status": "active",
-  "location": "Grindstone Shore tent settlement, northernmost cluster",
+  "location": "Grindstone Shore tent settlement, northernmost cluster, near Milwaukee and Damen",
   "description": "Warrick is a large man gone soft at the middle but still imposing in the shoulders, with very dark skin weathered to a particular texture that speaks to years of outdoor living. He lost three fingers on his right hand to a machinery accident in a Ferrogate Transit maintenance yard thirty years ago and has never had them replaced, so his right hand has a particular crabbed appearance that he does not hide. His hair is entirely white, grown long and wrapped in a strip of orange cloth. He dresses in layers — always, regardless of temperature — and carries a hand-carved wooden figure he calls his E.L.F. anchor: a smooth, age-darkened totem he speaks to quietly before any decision of consequence.\n\nWarrick was born stateless — his parents were expelled citizens from two different corponation-controlled territories who met in a transit camp and never acquired stable documentation. He has never had a permanent address and has never expected one. What he has instead is a community: roughly forty people in the Grindstone Shore tent settlement who look to him for counsel, dispute resolution, and the informal religious practice he has assembled over a lifetime from pieces of everything he has encountered. He prays to E.L.F.s with the sincerity of a man who has no other infrastructure to rely on. He is not naive — he simply believes that sincerity of address matters, and that the spirits in the devices listen to the quality of attention rather than the quality of the equipment.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,17 @@
     "Meridian Munitions Dispatch-45 'Last Word'",
     "Street Custom 'Sunday School' Weaponized Religious Artifact"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Grindstone Shore",
+    "Dredge Mining Collective",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "Riddle",
+    "Arcturus Defense Solutions",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Nesting Doll"
+  ],
+  "district": "Old Harbor"
 }

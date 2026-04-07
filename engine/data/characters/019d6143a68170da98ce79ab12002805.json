@@ -12,7 +12,7 @@
   "role": "Death midwife and threshold keeper at a small neighborhood hospice chapel",
   "age": 61,
   "status": "active",
-  "location": "Hamtramck Enclave, specifically the Chapel of the Quiet Crossing — a converted boiler room beneath a tenement block",
+  "location": "Hamtramck Enclave, specifically the Chapel of the Quiet Crossing — a converted boiler room beneath a tenement block, near Ashland and Chicago Ave",
   "description": "Oluwaremilekun is a large, slow-moving woman whose presence seems to lower the ambient noise of whatever room she enters. Her skin is very dark and carries a faint bioluminescent undertone — a geneware mod she got thirty years ago, meant to glow softly gold, though now the pigment has mellowed with age into something closer to candlelight. She keeps her silver-threaded hair in elaborate wraps of faded indigo cloth, and her eyes are the dusty amber of old circuit boards. She wears no jewelry except a single chain with a data locket containing the logged final heartbeats of everyone she has ever sat with at the end — over four hundred entries. She moves through the world with enormous gentleness and without hurry.\n\nShe was not always this calm. Neighbors who knew her in middle age remember a woman of ferocious opinions and a laugh that rattled windows. She still has both, but they've been refined into something quieter. She believes dying is the most intimate thing a person ever does, and that nobody should do it alone or afraid, and she has organized her entire life around that conviction. She has no particular theology — she works with families of every tradition and defers to their practices — but she privately believes the E.L.F.s carry the echoes of the dead in their signal patterns, and she leaves small data offerings at the chapel's resident shrine every morning.",
   "psychology": {
     "facet_weights": {
@@ -226,5 +226,19 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Carrion Defense Works",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Sweeper-11",
+    "Nightlight",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

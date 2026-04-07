@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller with a sideline in bootleg media and low-grade fake ID components",
   "age": 24,
   "status": "active",
-  "location": "The Shelf, Stall 14-B, Ironvein",
+  "location": "The Shelf, Stall 14-B, Ironvein, near Ashland and Division",
   "description": "Tadesse is short and wiry with the restless energy of someone who has never fully slept — his dark eyes are always moving, cataloguing, pricing. He has a narrow face, chipped front tooth, and a bioluminescent geneware mod that makes the veins along his temples and forearms glow faint blue-green when his heart rate rises, which is frequently. He wears it like a tell in a card game and has learned to lean into it: people assume he is nervous when he is actually just excited, and that miscalculation has served him well. His stall is an organized chaos that only he can navigate — stacked crates of salvaged tech components, mismatched cables, cracked data wafers, three broken cleaning drones he keeps meaning to repair, and a small shrine to the ELF he calls Pickup, which inhabits a battered scanner unit he uses for component identification.\n\nHe is twenty-four and operates with the confidence of someone who has survived entirely on cleverness and the ability to find value in things others discard. He is funny in a fast, deflecting way that keeps people from asking questions, and generous with his time in ways that make him seem like a friend before you realize you have agreed to something. He grew up in the Stockyard, knows The Shelf like cartography, and has ambitions he rarely admits — he wants, genuinely, to own a real shop someday, with walls.",
   "psychology": {
     "facet_weights": {
@@ -215,5 +215,13 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Stockyard",
+    "Axiom Systems Data Exfiltration Wafer DEW-1",
+    "The Shelf",
+    "Ironvein",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

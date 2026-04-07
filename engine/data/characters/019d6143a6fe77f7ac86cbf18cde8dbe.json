@@ -12,7 +12,7 @@
   "role": "bookmaker and numbers runner",
   "age": 22,
   "status": "active",
-  "location": "The Narrows, running between Chatham Flats and Grand Crossing Gate",
+  "location": "The Narrows, running between Chatham Flats and Grand Crossing Gate, near Ashland and Division",
   "description": "Tobi is young in a way that still surprises people when they see the operation he runs — twenty-two with the face of someone seventeen if he's relaxed and thirty if he's working, a long-limbed Igbo-Greek-Hungarian mix with deep brown skin, an expressive mouth that defaults to a salesperson's easy grin, and eyes that are doing financial calculations behind whatever expression he's performing. He keeps his hair grown out into a soft cloud that he touches when thinking, and he has purely cosmetic cat ears in deep amber — a mod he got at sixteen and still maintains because they genuinely help him gauge crowd mood at events (they swivel toward sound, a secondary function the modder threw in for free). He dresses up — always, even when it's unnecessary, because he understood early that clothes are information.\n\nTobi runs numbers for the Chatham Flats syndicate and manages his own secondary book on the side, a fact the syndicate suspects but hasn't confirmed. He is fast — fast with numbers, fast with people, fast with exits — and he has the particular gift of making everyone feel like his most valued client while simultaneously extracting the maximum from them. He is not cynical about this; he genuinely likes people, the way a card player likes cards. He is also genuinely frightened, most of the time, because he is twenty-two and running credit for people who will break his hands if the math goes wrong, and the math going wrong is always one bad fight result away.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,15 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "Chatham Flats",
+    "The Blackout Syndicate",
+    "The Narrows Compact",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand"
+  ],
+  "district": "Nomadic"
 }

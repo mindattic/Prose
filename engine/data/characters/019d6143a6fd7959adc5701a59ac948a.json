@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator, runs the 7-Copperhead elevated rail line",
   "age": 34,
   "status": "active",
-  "location": "Based out of Copperhead Station depot; lives in a capsule apartment in McKinley Flats",
+  "location": "Based out of Copperhead Station depot; lives in a capsule apartment in McKinley Flats, near Ashland and Division",
   "description": "Tjeerd is lean in the way of someone who forgets to eat — not hungry, just elsewhere. He's got his father's Congolese height and his mother's Dutch pallor tipped toward olive in the fluorescent light of the transit cab, with a patchy beard he trims but never quite conquers and geneware cat ears — cream-colored, slightly moth-eaten at the tips — that he got at eighteen and has since half-regretted, because they go flat when he's tired and everyone can tell. His hands are calloused from the manual override controls he insists on using when the AI would do fine. His Ferrogate Transit uniform is worn to a specific softness at the collar.\n\nHe is the kind of person who is most himself when alone but does not enjoy being lonely — a contradiction he has not resolved. He loves the 7-Copperhead line with the quiet intensity some people reserve for religion: the rhythm of the stops, the specific quality of dawn light over McKinley Flats at 0512 when nothing else is moving. He treats passengers with mechanical courtesy that occasionally cracks open into genuine warmth for regulars. He has opinions about rail maintenance he will share at length if given the slightest opening.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,16 @@
   "registered_firearms": [
     "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Ferrogate Transit",
+    "McKinley Flats",
+    "Copperhead",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Big Rig",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Shelf"
 }

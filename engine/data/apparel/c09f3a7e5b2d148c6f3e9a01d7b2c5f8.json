@@ -1,0 +1,43 @@
+{
+  "id": "c09f3a7e5b2d148c6f3e9a01d7b2c5f8",
+  "name": "Nullweave SnapLayer Thermal Hood — Port-Open",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A standalone insulated hood with snap-attach points designed to connect to any standard collar ring or worn independently as a pull-on. Charcoal exterior with a brushed cream thermal lining inside; the crown sits low and the brim is cut to frame the face without obstructing peripheral vision. Neural port and BCI access slot runs along the rear seam with a magnetic flap cover.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ripstop nylon outer shell",
+    "brushed thermal fleece lining",
+    "snap-attach collar hardware",
+    "magnetic BCI-port flap"
+  ],
+  "functionality": "Snap-on collar attachment or standalone pull-on; rear BCI/neural port access slot with magnetic flap.",
+  "what_it_says": "You're augmented, you're practical, and you're tired of hoods that don't account for your hardware.",
+  "worn_by": [
+    "BCI-augmented workers",
+    "couriers",
+    "transit operators",
+    "data runners",
+    "warehouse staff"
+  ],
+  "manufacturer": "Nullweave Utility Basics",
+  "price_range": "Φ32–Φ50",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The snap hardware is stamped with a batch code that traces back to a Stratum Logistics uniform supplier — these snaps were never meant for retail.",
+    "Someone has written a six-digit number in permanent marker inside the crown — a locker combination, a frequency, or something else entirely."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "transitional_layering",
+    "hood",
+    "snap_attach",
+    "thermal_liner",
+    "aug_compatible",
+    "tier_2",
+    "great_lakes_weather",
+    "bci_compatible"
+  ]
+}

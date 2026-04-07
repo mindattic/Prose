@@ -12,7 +12,7 @@
   "role": "Prosthetics fitter and rehabilitation specialist serving the working poor of Archer's Line and the surrounding industrial districts",
   "age": 62,
   "status": "active",
-  "location": "Archer's Line — Wambua Prosthetics, a narrow shopfront wedged between a noodle stall and a wire-pull depot",
+  "location": "Archer's Line — Wambua Prosthetics, a narrow shopfront wedged between a noodle stall and a wire-pull depot, near Damen and Armitage",
   "description": "Tomásin is a tall, heavyset man whose age has settled into him rather than diminished him — broad-shouldered, slightly stooped, with enormous hands that have been reshaping and fitting prosthetic limbs for nearly four decades. His skin is dark and weathered at the knuckles, and he has a close-cropped white beard he trims every three days by feel. His own left arm below the elbow is a prosthetic — a mid-range Ferrogate industrial model he modified himself until it became something unique, its housing scratched with small geometric patterns his daughter etched into it when she was seven. He wears reading glasses on a beaded cord even though his vision correction implant is perfectly functional; he says the glasses help him think.\n\nTomásin has fitted thousands of limbs over his career — dock workers who lost arms to machinery, children born without full limb formation, veterans of corporate security contracts who came home partial. He knows the psychological landscape of limb loss and re-embodiment with a clinical intimacy that no textbook provides. He's warm but unsentimental, the kind of person who will hand you a tissue and then immediately ask you a practical question to get you moving forward. He prays at a small home altar to an E.L.F. called Joinwork, who he says inhabits the articulation servo in his left wrist and has guided his hands for twenty years.",
   "psychology": {
     "facet_weights": {
@@ -240,5 +240,12 @@
   "registered_firearms": [
     "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "Archer's Line",
+    "Ferrogate Transit",
+    "The Pure Hand",
+    "Tibor Osei-Svanstrom"
+  ],
+  "district": "The Circuit"
 }

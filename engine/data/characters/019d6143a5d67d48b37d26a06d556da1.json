@@ -12,7 +12,7 @@
   "role": "Prototype theft and corporate tech acquisition — tech retriever",
   "age": 38,
   "status": "active",
-  "location": "Burnside Corridor — transit hub connecting Shelf to Circuit",
+  "location": "Burnside Corridor — transit hub connecting Shelf to Circuit, near North Ave and Damen",
   "description": "Cem Ivanov-Appiah is slight and easy to overlook, which is exactly the point. At 38, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nCem Ivanov-Appiah has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,12 @@
   "registered_firearms": [
     "Crucible Industries Siege DMR SDMR-3 'Bastion'",
     "Meridian Munitions Wheelgun-38 'Roundhouse'"
-  ]
+  ],
+  "related_entities": [
+    "Masquerade",
+    "Meridian 88",
+    "Burnside Pocket",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

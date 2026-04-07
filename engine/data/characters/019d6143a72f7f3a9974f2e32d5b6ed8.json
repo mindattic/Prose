@@ -11,7 +11,7 @@
   "role": "Neon artist and light sculptor",
   "age": 29,
   "status": "active",
-  "location": "Lakeview Neon, workshop above a defunct surge-relay station",
+  "location": "Lakeview Neon, workshop above a defunct surge-relay station, near North Ave and Damen",
   "description": "Ysolde is lean and angular, with bioluminescent ink tattooed in asymmetric moth-wing patterns across their collarbones and outer arms — an advertisement and a love letter to their own work. Their hair is cropped close on one side and falls in thick, silver-dyed locks on the other, often pinned back with a scavenged neon tube stub they carry for luck. Their eyes have patterned irises in concentric rings of amber and pale green, cheap mods bought secondhand when they were nineteen. There's a restless precision about them: they'll measure a space by eye without thinking, tilt their head at a light source the way a bird clocks distance.\n\nYsolde talks too fast when excited and barely at all when hurt, which most people misread as aloofness. They came up through street installation work — unlicensed, unsigned, frequently scrubbed by Ferrogate Transit enforcement — and still view any commission from a corponation as a moral compromise even as they quietly covet the stability. Their art obsesses over threshold spaces: the edges of things, where neon bleeds into dark, where the city's light hits water and becomes something that doesn't belong to either.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,18 @@
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Street Custom 'Angry Mary' Aerosol Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Lakeview Neon",
+    "Threshold",
+    "Omro Relay",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
+  ],
+  "district": "The Laceworks"
 }

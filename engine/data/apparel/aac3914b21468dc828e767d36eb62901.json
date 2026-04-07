@@ -1,0 +1,37 @@
+{
+  "id": "aac3914b21468dc828e767d36eb62901",
+  "name": "Ashcroft Industries Welding Crown",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A heavy-duty auto-darkening welding helmet with a crown-mounted ventilation system that draws filtered air across the wearer's face. The viewing window transitions from transparent to near-opaque in 0.3 milliseconds when it detects arc light. The shell is heat-resistant ceramic over an impact-rated polymer frame.\n\nThe Welding Crown is standard equipment in Crucible fabrication yards and lower-tier repair shops. Its distinctive silhouette — bulky, angular, industrial — has made it an unlikely icon in Shelf district street art, where it represents honest labor in a world dominated by corponation abstraction.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "heat-resistant ceramic",
+    "auto-darkening lens",
+    "ventilation system",
+    "polymer frame"
+  ],
+  "functionality": "Auto-darkening arc protection, ventilated breathing, impact resistance",
+  "what_it_says": "You make things with fire and metal and your hands, and this is the face you show while doing it.",
+  "worn_by": [
+    "welders",
+    "fabricators",
+    "repair technicians"
+  ],
+  "manufacturer": "Ashcroft Industries",
+  "price_range": "Φ290",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A welder's helmet left behind at a sabotaged construction site contains DNA traces from someone listed as dead in corponation records for three years."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 1",
+    "welding",
+    "industrial",
+    "Crucible",
+    "protective"
+  ]
+}

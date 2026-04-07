@@ -12,7 +12,7 @@
   "role": "Street pharmacist — legal supplements, gray-market stims, pain management, and occasional compassionate dispensing of controlled substances",
   "age": 23,
   "status": "active",
-  "location": "The Narrows, Irkalla",
+  "location": "The Narrows, Irkalla, near Halsted and Chicago Ave",
   "description": "Ekwueme is tall and painfully thin in the way of someone who grew up on UBC stipend food and spent their teens in a growth spurt the nutrition couldn't fully support. His skin is a blue-black that catches the Narrows' neon in purples and greens, and he has a habit of standing slightly too still, which people find either reassuring or unsettling depending on their business with him. His hair is kept very short; he has a small bioluminescent strip tattooed along his left jawline that glows a steady, dim teal — a medic's mark used by unlicensed practitioners in Irkalla to signal availability. His eyes are clear and attentive in a way that makes people feel examined, which is accurate. He carries his stock in a decommissioned Helix Biosystems medical case, battered and re-stickered many times over, that he keeps chained to his wrist.\n\nEkwueme is twenty-three years old and already exhausted by things that would exhaust a person twice his age. He trained through a community apprenticeship program under a retired Aurochs Medical Complex nurse who has since died. He knows more clinical pharmacology than most people with actual licenses and has never been able to afford to sit the exams. He is not idealistic in the way of someone who has never done the work; he is idealistic in the way of someone who has done the work and keeps doing it anyway, which is a different and more serious condition. He doesn't enjoy the gray-market side of his trade. He does it because the alternative is that the people who need the gray-market side of his trade go to people who will hurt them.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,17 @@
   "carried_weapons": [
     "Street Custom 'Sunday School' Weaponized Religious Artifact"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "PulsePoint ScentSig Personal Biochemical Scent Node",
+    "The Narrows Compact",
+    "WELLSPRING",
+    "TESSERA PG-2 'Signature'",
+    "Irkalla",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

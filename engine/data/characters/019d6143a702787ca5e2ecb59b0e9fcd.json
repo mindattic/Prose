@@ -12,7 +12,7 @@
   "role": "DJ and VR experience designer",
   "age": 37,
   "status": "active",
-  "location": "Pilsen Veil, works out of a club called The Anechoic",
+  "location": "Pilsen Veil, works out of a club called The Anechoic, near Western and Division",
   "description": "Tomek is medium height and built like someone who was once athletic and has become merely solid — broad shoulders, a slight softening at the jaw, hands that are too large for the delicate controls he uses with uncanny precision. He is Central African-Scandinavian with light brown skin, dark eyes, and a beard he keeps trimmed to an architectural exactness that belies every other slightly chaotic element of his appearance. His geneware includes bioluminescent pigmentation under his forearms — deep violet, visible only in low light, which means it's almost always visible in the clubs he works. He dresses expensively for someone at his income level, carefully chosen secondhand finds that he maintains as though they're new.\n\nBy day he designs VR experience packages sold through independent distributors — emotional immersives, mostly, that let users borrow feelings they can't otherwise access: grief for someone they never lost, euphoria without the chemical cost, the specific texture of being in a place they've never been. By night he DJs at The Anechoic, a mid-tier club that has become known as a venue where the music actually does something — Tomek has a gift for reading a crowd's collective emotional state and shifting it, subtly and then dramatically, across the course of a set. He is generous with newer DJs, protective of The Anechoic's staff, and quietly running out of the particular kind of energy his work requires.",
   "psychology": {
     "facet_weights": {
@@ -259,5 +259,13 @@
     "Hearthstone Firearms Model 9 'Payday'",
     "Street Custom 'Glass Garden' Caltrops"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Pilsen Veil",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Ringo Corponation",
+    "Lazarus IDP-1 'Teeth'"
+  ],
+  "district": "The Shelf"
 }

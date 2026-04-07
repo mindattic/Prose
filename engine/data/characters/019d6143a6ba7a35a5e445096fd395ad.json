@@ -12,7 +12,7 @@
   "role": "Independent mechanic specializing in Ferrogate Transit pod maintenance and illegal vehicle modifications",
   "age": 38,
   "status": "active",
-  "location": "Geartown, Ironvein Sub-Basin, Bay 7 of the Lowside Garage Collective",
+  "location": "Geartown, Ironvein Sub-Basin, Bay 7 of the Lowside Garage Collective, near North Ave and Milwaukee",
   "description": "Rustam is a tall man made of angles — sharp jaw, sharp elbows, sharp opinions — with warm brown skin that is perpetually stained at the knuckles with a blue-grey synthetic lubricant that no solvent has fully removed in eleven years. He keeps his hair in tight black locs that he pins back with a magnetic clip when he works, and his left forearm has been replaced from the elbow down with a prosthetic he built himself from salvaged Ferrogate actuator components and a medical-grade haptic sleeve — it's visually mismatched and makes a faint mechanical click when he flexes the fingers, which he is enormously proud of. A bioluminescent strip runs under the skin of his right collarbone, pale amber, which pulses slightly faster when his heart rate elevates; it was a cheap cosmetic piece he got at twenty-two and has since become an inadvertent emotional tell.\n\nRustam is constitutionally incapable of doing a bad job. This is both his greatest professional virtue and the source of most of his financial problems, because he will spend four hours on a two-hour job and charge for two hours because he cannot release something until it meets his own standard. He is argumentative in the way of someone who genuinely loves argument as a sport, not as aggression — he will fight vigorously for a position and then concede graciously the moment he sees better evidence, which confuses people who mistake his combativeness for ego. He maintains a running negotiation with the E.L.F. he believes inhabits the bay's main diagnostic terminal, which he calls Torque, and leaves small machine-oil offerings on its housing every morning.",
   "psychology": {
     "facet_weights": {
@@ -246,5 +246,19 @@
   "registered_firearms": [
     "Hearthstone Firearms HF-30 'Homestead'",
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Dredge Mining Collective",
+    "WELLSPRING",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Geartown",
+    "Ironvein",
+    "Tessera Corponation",
+    "Slagworks Industrial",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

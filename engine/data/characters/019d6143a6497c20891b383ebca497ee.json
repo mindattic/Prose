@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator, deep-line overnight driver on the Blackpipe Corridor route",
   "age": 27,
   "status": "active",
-  "location": "Deepwell Station, Blackpipe Corridor terminal",
+  "location": "Deepwell Station, Blackpipe Corridor terminal, near sub-level access near Dearborn and Jackson",
   "description": "Leilani has the particular quality of alertness that comes from years of watching dark tunnel walls for anomalies at speed — she tracks movement in her peripheral vision before she has consciously registered it, and her eyes, which are a modified shifting amber-to-silver gradient (a cheap iris job she got at twenty-two), are always slightly wider than the situation seems to require. She is of medium height with a broad-shouldered Polynesian build softened by her mother's Ghanaian and her father's Polish lines — she inherited cheekbones that catch light and hands that are disproportionately large and capable. She wears her black hair in two long braids that she tucks into her uniform jacket while on duty.\n\nShe drives the Blackpipe Corridor overnight run, which means she sees Meridian 88 in its most honest hours — the 02:00 cargo shifts, the exhausted nurses heading home, the people who ride the deep lines because they have nowhere to sleep that isn't moving. She has a quiet protectiveness toward her passengers that she would not call protectiveness if asked. She would say she is just doing the job. She has a small secondhand speaker mounted against her operator partition that plays low, humming instrumentals during quiet stretches, and she has never been cited for it because none of her supervisors take the overnight inspection tour.",
   "psychology": {
     "facet_weights": {
@@ -216,5 +216,17 @@
   "registered_firearms": [
     "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
     "Crucible Industries Cerberus-357 'Hellhound'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Deepwell Station",
+    "Meridian 88",
+    "Bathysphere Networks",
+    "Witness",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Underworld"
 }

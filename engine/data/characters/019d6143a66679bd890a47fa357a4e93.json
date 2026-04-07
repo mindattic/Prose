@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor; bootleg geneware accessory reseller",
   "age": 29,
   "status": "active",
-  "location": "The Burnished Market, Bronzeline",
+  "location": "The Burnished Market, Bronzeline, near Armitage and Milwaukee",
   "description": "Nkosi is striking in the way that seems effortless and is actually the product of deliberate daily work. Their skin is deep blue-black with a natural gloss that they enhance with a light bioluminescent topcoat — a Dresdan-style application they refresh monthly. Their hair changes color every week: not because they can't commit but because they enjoy documenting the range. Currently it's a deep copper that catches the Burnished Market's overhead lighting like something combustible. They are average height and lean with expressive hands that are usually in motion — demonstrating a garment's fall, illustrating a point, arranging display rails.\n\nNkosi's stall is the most visually intense corner of the Burnished Market — fabrics from three continents of origin pinned and layered on a frame structure they built themselves, geneware accessories in glass cases, color-changing hair treatments in a cooled rack. They have what their regulars call 'the eye' — the ability to look at a person and know within seconds what they should be wearing and why. It is genuinely uncanny. They are also charming in the fast, inclusive way of someone who makes every customer feel like they've been personally selected for good taste. Underneath this, Nkosi is angrier than they look and more strategic than their warmth implies.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,20 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Riddle",
+    "Ashford Signal",
+    "Bronzeline",
+    "Palladian Construction",
+    "Kang-Petrov Arms KPS-12 'Workbench'",
+    "Hepatic Glycogen Depletion Projector",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "Stratum",
+    "Copper",
+    "The Pure Hand",
+    "Glass"
+  ],
+  "district": "The Circuit"
 }

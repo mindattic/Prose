@@ -1,0 +1,37 @@
+{
+  "id": "0d36b35d6f4e674b2d60d5170ba551e3",
+  "name": "Sable Luxe Atmospheric Veil",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A sheer, face-covering veil made from smart-fabric that can shift opacity, color, and pattern in response to the wearer's biometric state or manual input from a wrist controller. At full transparency, it is barely visible; at full opacity, it renders the wearer's face completely obscured behind flowing, organic patterns.\n\nExclusive to Tier 5 social events where anonymity is a luxury rather than a necessity. The Atmospheric Veil is as much performance art as fashion — each veil is programmed with a unique pattern library that its owner commissions from textile artists.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "smart-fabric weave",
+    "biometric sensors",
+    "micro-LED threading"
+  ],
+  "functionality": "Variable opacity, pattern generation, biometric-responsive display",
+  "what_it_says": "You can afford to make your face a canvas, and you choose who sees the real thing underneath.",
+  "worn_by": [
+    "Spire socialites",
+    "art patrons",
+    "privacy-conscious elites"
+  ],
+  "manufacturer": "Sable Luxe",
+  "price_range": "Φ12,000",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "An Atmospheric Veil at a Spire gala malfunctions, briefly displaying its wearer's true face — which belongs to someone who is supposed to be attending a different event on the other side of the city."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 5",
+    "veil",
+    "smart-fabric",
+    "luxury",
+    "Spire",
+    "fashion"
+  ]
+}

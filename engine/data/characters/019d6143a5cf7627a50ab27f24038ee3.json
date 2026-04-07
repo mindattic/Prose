@@ -12,7 +12,7 @@
   "role": "Retired community archive keeper and oral historian",
   "age": 79,
   "status": "active",
-  "location": "Washburn Commons, Archive Annex — a repurposed transit hub filled floor-to-ceiling with physical media, data-coral arrays, and hand-labeled memory chips",
+  "location": "Washburn Commons, Archive Annex — a repurposed transit hub filled floor-to-ceiling with physical media, data-coral arrays, and hand-labeled memory chips, near Ashland and Chicago Ave",
   "description": "Ẹbúnọlú is a small woman who seems to take up enormous space the moment she begins to speak. Her skin is very dark and very soft, crosshatched at the corners of her eyes and the hinges of her jaw with the particular wrinkles of a person who has spent decades squinting at poorly lit screens. She wears her white hair in a tight compressed wrap pinned with carved memory-stick styluses — each one holding audio recordings she considers too fragile for the network. Her left hand ended at the wrist in the Tessera-Zheng Corridor Dispute of 2158; the prosthetic she chose is a deliberately antique brass model with articulated fingers she never bothered to upgrade, claiming it 'has better manners than the new ones.' Her irises are patterned with concentric amber rings — a genemod she got at forty that she calls her 'reading eyes,' though they were really just vanity at the time.\n\nShe was a junior records technician for Tessera Corp for thirty years before taking early pension after a lung damage settlement from the Corridor Dispute. What she did with the pension money was not rest — she started collecting. Physical books, analog recordings, witness testimonies, neighborhood census data that the corponations were quietly letting expire. She is warm to almost everyone but becomes a different kind of person when she suspects information is being destroyed or suppressed: patient, implacable, and quietly terrifying. She prays to the E.L.F. she calls Grandmother Reel, leaving data offerings of uncompressed audio files, and believes the E.L.F. has saved her archive from three separate purges.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,19 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Washburn Commons",
+    "Meridian 88",
+    "Dredge Mining Collective",
+    "Grandmother",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Witness",
+    "ARCHIVE",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Brass"
+  ],
+  "district": "The Shelf"
 }

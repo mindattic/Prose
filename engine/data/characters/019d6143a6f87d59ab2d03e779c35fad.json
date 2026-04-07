@@ -12,7 +12,7 @@
   "role": "Corporate Intern (Biotech Research Track), Helix Biosystems",
   "age": 23,
   "status": "active",
-  "location": "Aurochs Medical Complex, Helix Biosystems Research Annex — sublevel lab B",
+  "location": "Aurochs Medical Complex, Helix Biosystems Research Annex — sublevel lab B, near sub-level access near State and Van Buren",
   "description": "Thibault is slight and angular, with warm golden-brown skin that they've had partially threaded with bioluminescent capillaries along the collarbone and the backs of their hands — a soft blue-white glow that shows through their skin when they're excited or after prolonged interface work, which their supervisor has twice asked them to cover with a sleeve. They keep their dark hair very short on the sides and longer on top, often held back with a clip that has a small ELF-glyph stamped into it. They dress in Helix-issue lab kit that they've personalized just enough to suggest they know what personality is but are still figuring out how much of it is allowed.\n\nTibault is acutely observant and moderately terrified, which is a combination that produces, paradoxically, a very useful researcher. They notice things — small things, procedural inconsistencies, who looks at whom when a certain topic comes up — and they write everything down in a personal log encrypted with a key only they have. They are not sure yet whether they are writing it because they are a natural documentarian or because they think they might need it someday. They have been at Helix for seven months. They have already seen two things they are not sure they were supposed to see, and they are getting very good at looking like they saw nothing.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,12 @@
     "Street Custom 'Tombstone' Concrete Block Launcher",
     "Forge-Smith Collective Carbon Machete 'Cane Cutter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "The Pure Hand",
+    "Nightlight"
+  ],
+  "district": "The Underworld"
 }

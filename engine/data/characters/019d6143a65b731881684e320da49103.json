@@ -12,7 +12,7 @@
   "role": "Laundromat operator and alterations seamstress",
   "age": 54,
   "status": "active",
-  "location": "Hamtramck Enclave, unit-front laundromat called Suds & Silk",
+  "location": "Hamtramck Enclave, unit-front laundromat called Suds & Silk, near Halsted and Chicago Ave",
   "description": "Mirela is a broad-shouldered woman with deep umber skin mapped by old chemical burns along her forearms — souvenirs from an industrial accident two decades prior. Her hair is a close-cropped silver cloud she refuses to dye, and she wears reading glasses perpetually perched on her nose even when she isn't reading. The laundromat she runs smells of synthetic jasmine and hot circuits; the walls are plastered with handwritten notes from satisfied customers and a small shrine to the E.L.F. she calls Baba Rinse, to whom she leaves data packets of folding tutorials and gentle soap formulas. She speaks with the unhurried authority of someone who has already outlasted three landlords and two corponation buy-out attempts.\n\nShe is the neighborhood's institutional memory: she knows whose mother left for the Arcturus arcology and never came back, whose kid got recruited by the wrong people, who owes whom and by how much. She is not warm in the cuddly sense — she is warm the way a well-maintained boiler is warm, reliably and forcefully. She does not gossip. She simply observes, and occasionally dispenses what she knows when she judges it will do the most good.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,14 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Tessera TKR-10 'Executor'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Arcturus Defense Solutions",
+    "Tessera Corponation",
+    "Silver",
+    "Arcturus CK-5 'Bloodhound'",
+    "Silk"
+  ],
+  "district": "The Shelf"
 }

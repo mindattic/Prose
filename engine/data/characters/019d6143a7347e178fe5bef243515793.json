@@ -12,7 +12,7 @@
   "role": "Transit operator, Ferrogate Line 7 maglev",
   "age": 41,
   "status": "active",
-  "location": "Kessler Interchange, operates between Kessler and Deepwell Station",
+  "location": "Kessler Interchange, operates between Kessler and Deepwell Station, near sub-level access near State and Van Buren",
   "description": "Zephyrine is a broad-shouldered woman with deep umber skin and close-cropped silver-threaded locs she keeps pinned under her Ferrogate operator's cap during shifts. Her left eye is a corporate-issue Ferrogate transit mod — pale grey iris with a subtle amber ring that pulses when she's interfacing with the train's systems — but the right eye is her mother's: dark brown and very still, the kind of eye that misses nothing. She moves through the crowded interchange with the particular grace of someone who has learned to navigate bodies in motion, always finding the gap, always half a step ahead of the surge. A small shrine to the Transit Mind E.L.F. hangs from her cab dashboard — a looped wire figure she wound herself, hung with data chips from old passes.\n\nShe is patient in the way that long experience makes you patient, not the soft kind but the kind with iron underneath. Passengers who give her grief get exactly one warning, delivered in a voice so level it takes a moment to realize it was a threat. On slow runs through the Blackpipe Corridor at 0300, she sometimes hums old Ghanaian highlife her grandmother used to play — her Danish side never gave her music, only punctuality, which she also kept.",
   "psychology": {
     "facet_weights": {
@@ -194,5 +194,22 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-15R 'Reclaim'",
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Deepwell Station",
+    "Grandmother",
+    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
+    "Meridian Core",
+    "Lacuna Genomics",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Iron",
+    "Déjà Vu"
+  ],
+  "district": "The Underworld"
 }

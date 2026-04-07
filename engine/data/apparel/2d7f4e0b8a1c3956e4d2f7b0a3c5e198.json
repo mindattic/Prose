@@ -1,0 +1,42 @@
+{
+  "id": "2d7f4e0b8a1c3956e4d2f7b0a3c5e198",
+  "name": "Veldtmark StormDrift Packable Rain Shell",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A packable hooded rain jacket in deep teal with matte black port-aligned seams, aimed at the Tier-3 to 4 daily commuter market. Stuffs into its own chest pocket to fist-size. Rear panel has a clean spinal-rig channel sewn in as standard, and the hood has a magnetic front seal for one-hand closure in a downpour.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "20D bonded nylon shell",
+    "micro-mesh lining",
+    "magnetic hood closure hardware",
+    "packable self-pocket"
+  ],
+  "functionality": "Packable waterproof shell with neural port alignment, spinal rig channel, and magnetic one-hand hood seal.",
+  "what_it_says": "Competent, low-profile, and prepared — someone who doesn't make a production of being ready for anything.",
+  "worn_by": [
+    "junior corporate workers",
+    "mid-level specialists",
+    "augmented commuters",
+    "field technicians"
+  ],
+  "manufacturer": "Veldtmark Outerwear",
+  "price_range": "Φ210–Φ320",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The jacket's RFID tag has been clipped — it was sold outside official channels, possibly from a Veldtmark warehouse job.",
+    "Two of these jackets in identical color have shown up at different crime scenes in Circuit. Different owners, no connection found yet."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "rain_gear",
+    "jacket",
+    "packable",
+    "aug_compatible",
+    "tier_3",
+    "tier_4",
+    "commuter",
+    "shell"
+  ]
+}

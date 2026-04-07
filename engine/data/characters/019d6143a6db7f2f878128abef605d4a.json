@@ -12,7 +12,7 @@
   "role": "Organ harvester and unlicensed tissue broker operating out of Shallowgrave",
   "age": 31,
   "status": "active",
-  "location": "Shallowgrave — runs his operation from a basement unit below a legitimate nail salon called Copper Chrysalis on Render Street",
+  "location": "Shallowgrave — runs his operation from a basement unit below a legitimate nail salon called Copper Chrysalis on Render Street, near Kedzie and Division",
   "description": "Sorin Ekwensi-Balasanyan is lean and slightly stooped, a body that learned to make itself smaller in rooms it didn't belong in. He has warm brown skin with pink undertones, close-cropped dark hair, and eyes that are medically wrong in a way it takes people a moment to identify — his left iris is a geneware violet, his right is original dark brown, and neither pupil dilates at the same rate. He wears clean, nondescript clothing at all times — his one professional conviction is that he never looks like what he is. His hands are his pride: steady, careful, the hands of someone who learned field surgery from pirated Helix Biosystems tutorials and three years of necessity.\n\nSorin is not comfortable with what he does, which makes him more dangerous than someone who is. He has constructed an elaborate ethical framework around his work — he takes from people who consent (usually), never from people who don't know (usually), and he has a sliding scale of payment that genuinely attempts to compensate donors fairly for the Shallowgrave market. He wants to believe he's closer to underground medicine than to predation. This framework cracks visibly when the money gets tight and the clients get impatient, and he knows it cracks, and that knowledge has settled into him as a chronic low-grade self-loathing he medicates with a mild stimulant he synthesizes himself.",
   "psychology": {
     "facet_weights": {
@@ -192,5 +192,19 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Carrion Defense Works Field Surgical Kit FSK-6",
+    "Shallowgrave",
+    "Independent Micro-Grid Power Cooperative",
+    "The Meridian Core",
+    "Chimera-Null",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
+    "The Pure Hand",
+    "Tibor Osei-Svanstrom",
+    "Copper"
+  ],
+  "district": "The Shelf"
 }

@@ -13,7 +13,7 @@
   "role": "Corporate assassin who genuinely believes he is human — kills for Axiom under the assumption he's a freelance operative with excellent augmentations",
   "age": 6,
   "status": "active",
-  "location": "Meridian Core — maintains a Tier 2 apartment he believes he earned through contract work. The apartment contains personal effects that were placed there before he was activated.",
+  "location": "Meridian Core — maintains a Tier 2 apartment he believes he earned through contract work. The apartment contains personal effects that were placed there before he was activated., near State and Monroe",
   "description": "Silas Vane is handsome in a way that is almost but not quite right. The proportions are perfect — jaw, cheekbones, brow — and that perfection is the problem. Human faces have asymmetries, irregularities, the accumulated evidence of a life lived in gravity. Silas's face is a first draft that never got revised by experience. His skin is synthetic polymer over titanium-ceramic composite, warm to the touch, with pores and fine hair and micro-blemishes that were applied at the factory. His eyes are a green that does not occur in nature, though he has been told they remind people of their mothers.\n\nHe moves through the world with the confidence of a man who has never questioned his own identity, because the identity was installed, not developed. He believes he is Silas Vane, age 34, born in the Detroit Reclamation Zone, augmented veteran of the Pacific Corporate Conflict, freelance security consultant. He has memories of childhood — a mother who sang, a dog named Brick, summers in what used to be Ohio. These memories are fabricated, indistinguishable from organic recall, updated quarterly by a maintenance cycle he experiences as deep sleep.\n\nThe kills are clean. Axiom feeds him contracts through a handler he has never met in person — dead drops, encrypted briefs, payment in untraceable credits. He is efficient, professional, and troubled by nothing except a persistent sense that something is slightly wrong with the world, like a picture hanging one degree off level. He adjusts the picture. The feeling remains. He has been adjusting for six years.",
   "psychology": {
     "facet_weights": {
@@ -305,5 +305,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Meridian Core",
+    "The Reclamation Assembly",
+    "Titanium",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "Silas Thorne",
+    "VOSS"
+  ],
+  "district": "Meridian Core"
 }

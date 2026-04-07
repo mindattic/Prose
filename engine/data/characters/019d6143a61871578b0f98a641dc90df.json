@@ -12,7 +12,7 @@
   "role": "airship drifter; seasonal cargo deckhand and petty courier",
   "age": 19,
   "status": "active",
-  "location": "Escanaba Gateway, airship mooring platform C",
+  "location": "Escanaba Gateway, airship mooring platform C, near Michigan Ave South and Cermak",
   "description": "Félix is slight and short, with warm medium-brown skin and a mass of dark curly hair they keep shoved under a battered synthetic-fiber cap from a Ferrogate Transit promotional campaign three years ago. They have a geneware cat tail — warm brown, slightly darker at the tip — that they got at age fifteen from a Tier 1 parlor using credit they spent six months saving, and which they maintain with the kind of care that signals it is very important to them. Their face is young in a way that gets them underestimated constantly, which they have learned to treat as a professional asset. They have three earrings in the left ear, each from a different city they have passed through.\n\nFélix has been riding cargo airships since they were sixteen, starting as an unauthorized stowaway, then graduating to informal deckhand labor when a captain named Ambrosia decided their small hands were useful for engine housing maintenance. They have no fixed address, no registered domicile, and no particular destination at any given time. They are relentlessly cheerful in a way that is not performative — they genuinely find the itinerant life exhilarating — and have a gift for making friends in every transit hub within four hundred kilometers. They are also an extremely reliable courier for small packages that cannot go through official channels, not because they are ideologically committed to any cause but because the pay is good and the work suits someone who is going everywhere anyway.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,14 @@
   "carried_weapons": [
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Escanaba Gateway",
+    "Ironvein",
+    "Kenosha Crossing",
+    "Ringo DV-4 'Courier'",
+    "The Pure Hand"
+  ],
+  "district": "Old Harbor"
 }

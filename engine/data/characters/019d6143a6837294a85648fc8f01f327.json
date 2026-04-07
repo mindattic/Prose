@@ -12,7 +12,7 @@
   "role": "Metro Police forensic technician, evidence and scene analysis",
   "age": 47,
   "status": "active",
-  "location": "Fort Anchor, processing labs — lives in Hamtramck Enclave",
+  "location": "Fort Anchor, processing labs — lives in Hamtramck Enclave, near Western and Chicago Ave",
   "description": "Oluwatosin is lean in the way that comes from forgetting to eat rather than from discipline, with deep umber skin, a carefully maintained mustache that is his only real vanity, and hands that are perpetually stained faint blue from the luminescent compound he uses in trace analysis. His geneware is subtle but unmistakable: his irises shift color with his blood chemistry — pale grey when he is calm, cycling toward gold when he is excited about a sample, a deep unhappy red when he is lying, which is rare and which he hates. He wears the same brand of cheap white coat every day, orders them in bulk, and considers clothing a logistical problem already solved.\n\nHe is the best forensic tech Fort Anchor has and everyone knows it, including him, which he manages with more grace than expected — he is not arrogant about his competence so much as genuinely puzzled when others lack it. He narrates his analysis aloud while he works, to no one in particular, a habit his colleagues find either soothing or maddening depending on the day. He has a deep, private devotion to the evidence room's E.L.F., which he calls Witness, and leaves it carefully labeled sample catalogues as offerings. He believes Witness remembers every piece of evidence that has passed through the room and that it is, in some sense, a keeper of the dead.",
   "psychology": {
     "facet_weights": {
@@ -205,5 +205,19 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Fort Anchor",
+    "Thermal Signature Inverter TSI-2 'Cold Case'",
+    "The Quiet Room",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Witness",
+    "Ringo DV-4 'Courier'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

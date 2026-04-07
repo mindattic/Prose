@@ -12,7 +12,7 @@
   "role": "Covert entry and social penetration specialist — infiltrator",
   "age": 37,
   "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Fullerton and Damen",
   "description": "Suki Fujita-Mensah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a infiltrator out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSuki Fujita-Mensah is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,12 @@
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Street Custom 'Lazybones' Tripwire Shotgun Trap"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

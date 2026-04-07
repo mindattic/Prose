@@ -13,7 +13,7 @@
   "role": "Lower Dock Crew member — Prologue survivor. Lost fingers, most teeth.",
   "age": 33,
   "status": "active",
-  "location": "The Shelf — lower loading docks",
+  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
   "description": "Rodney Sisk is the angriest person in the Lower Dock Crew and possibly in the Shelf. He lost three fingers on his right hand to the katana and most of his upper teeth to the flat of the blade. His replacement fingers are industrial salvage — thick, clumsy, meant for cargo work. His dental work is Tier 1 ceramic that doesn't match, giving him a checkerboard smile he refuses to show.\n\nRodney grew up in the Exclusion Zone between Gary and Hammond — the same ungoverned corridors Kyle survived as a child, though they never crossed paths. He has a daughter, Keisha (age 9), from a relationship that ended when the mother, Trina, relocated to the Milwaukee Zone. Rodney has not seen Keisha in two years. He sends messages. Keisha responds with single-word answers. He reads each one forty times.\n\nOf all the crew, Rodney is the most likely to do something stupid and solo. He has the least to lose and the most anger. He went back to the loading dock the day after the Prologue and collected Kyle's spent shell casings. He keeps them in a jar on his shelf. He does not know why. He looks at them every night. They are the closest thing he has to a relationship with the man who broke him.",
   "psychology": {
     "facet_weights": {
@@ -224,5 +224,13 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "The Shelf",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
+    "Lazarus IDP-1 'Teeth'"
+  ],
+  "district": "The Shelf"
 }

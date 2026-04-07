@@ -11,7 +11,7 @@
   "role": "tunnel guide, age 14, Bore Rat born-under",
   "age": 14,
   "status": "active",
-  "location": "Abyssal Threshold transit tunnels, ranging to Deepwell Station",
+  "location": "Abyssal Threshold transit tunnels, ranging to Deepwell Station, near sub-level access near Dearborn and Jackson",
   "description": "Pip is small even for fourteen — wiry and quick, with a narrow face, enormous dark eyes adapted from birth to low-light environments, and a mop of hair they dye with bioluminescent mushroom paste in a stripe of vivid green that serves as both personal style and emergency light source. Their skin is medium brown with a faint warmth to it, and they have a long scar across their left palm from a ferrogate grate incident at age nine. No purchased augmentations — they were born underground and their body has simply adapted: exceptional night vision within human range, an instinctive spatial memory for tunnel architecture, and a sensitivity to air-pressure changes that surface people simply don't develop.\n\nPip has never been to the surface. They have seen photographs and once watched a thirty-second video of rain, which they found both beautiful and deeply suspicious. They guide people — Bore Rats moving between settlements, occasional surface-dwellers who need to travel without Ferrogate Transit records, journalists, the desperate — through a network of tunnels they have memorized the way other children memorize games. They are cheerful in a way that seems impossible given their circumstances, and the cheer is entirely genuine, which makes some adults profoundly uncomfortable.",
   "psychology": {
     "facet_weights": {
@@ -162,5 +162,15 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Abyssal Threshold",
+    "Deepwell Station",
+    "Threshold",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Packet Rats",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Underworld"
 }

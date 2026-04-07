@@ -12,7 +12,7 @@
   "role": "Union organizer and protest coordinator",
   "age": 24,
   "status": "active",
-  "location": "Mexicantown Libre",
+  "location": "Mexicantown Libre, near Pulaski and Chicago Ave",
   "description": "Saoirse is twenty-four and looks like she has been awake for most of it. She is compact and fast-moving, with mixed Senegambian and Scandinavian features that catch people off guard — high cheekbones, cool-toned brown skin, pale green eyes she claims are natural and that nobody quite believes. Her hair is currently a defiant copper-orange, achieved through a cheap pigment mod that needs retreating every three weeks and which she ritually neglects until it starts going pink at the roots. She dresses for movement and disappearance. She has a voice that carries in a crowd without apparent effort and she knows exactly how to use it.\n\nSaoirse is an organizer with the Ferrogate Transit Workers' Solidarity Action Front — a name she argues with regularly — coordinating wildcat actions, slowdowns, and what she calls 'presence demonstrations' among transit maintenance workers across three depot lines. She is extraordinarily good at reading a crowd's emotional temperature and knows exactly when to push and when to hold. She is less good at the long game, at paperwork, at not making promises that exceed what the Front can deliver. She is young enough to still be surprised when the system fails people who trusted it, and old enough in organizing years to be afraid of what happens when she stops being surprised.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,17 @@
   ],
   "registered_firearms": [
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Mexicantown Libre",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "The United Workers Front",
+    "The Gradient Compact",
+    "Copper",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

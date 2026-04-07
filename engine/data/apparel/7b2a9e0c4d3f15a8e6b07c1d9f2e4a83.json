@@ -1,0 +1,39 @@
+{
+  "id": "7b2a9e0c4d3f15a8e6b07c1d9f2e4a83",
+  "name": "Ironpass HullWork Synth Labor Coverall",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Heavy-duty graphite canvas coverall pre-tailored in seven modular torso lengths and four limb-extension kits, sold as a configured bundle at point of assignment. Reinforced knee and elbow panels are replaceable via rivet-press without removing the garment. Hi-vis yellow chevrons run the chest and back, and every seam is double-welded for chemical splash resistance. No branding beyond a stamped lot number — this is infrastructure clothing.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "graphite canvas",
+    "welded polyseam",
+    "replaceable rivet-press reinforcement panels",
+    "hi-vis reflective chevrons"
+  ],
+  "functionality": "Modular torso/limb length configuration, field-replaceable reinforcement panels, chemical splash resistance.",
+  "what_it_says": "This body works, gets damaged, and keeps working.",
+  "worn_by": [
+    "labor synthetics",
+    "construction units",
+    "dock and freight synthetics"
+  ],
+  "manufacturer": "Ironpass Industrial Supply",
+  "price_range": "Φ 55–Φ 90 (per configured bundle)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Lot number 7-DELTA-9 was recalled — the canvas leaches a compound that interferes with synthetic cognition after prolonged wear.",
+    "A labor unit has been secretly marking shift counts inside the collar — 1,847 days with no rotation."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "synthetic_adapted",
+    "labor",
+    "coverall",
+    "tier1",
+    "industrial",
+    "hi-vis"
+  ]
+}

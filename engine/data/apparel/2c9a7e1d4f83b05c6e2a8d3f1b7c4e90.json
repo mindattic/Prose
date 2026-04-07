@@ -1,0 +1,44 @@
+{
+  "id": "2c9a7e1d4f83b05c6e2a8d3f1b7c4e90",
+  "name": "Nullseam Ghostwalk Infiltrator Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A skintight full-body underlayer in matte charcoal signal-null fabric, topped with a quick-strip modular overshell — loose panels that detach via single-pull magnetic seams to instantly change the wearer's silhouette and color profile. Soft-soled split-toe shoes with gecko-adhesive pads complete the rig, and a slim balaclava with tinted eye mesh seals the look. The entire kit compresses into a palm-sized roll for pre-op concealment.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "signal-null stretch fabric",
+    "magnetic quick-strip modular panels",
+    "gecko-adhesive composite sole",
+    "tinted micro-mesh eye panel",
+    "memory-compress polymer"
+  ],
+  "functionality": "Single-pull magnetic seams allow full silhouette change in under four seconds; gecko-adhesive soles provide surface adhesion up to 85kg on smooth vertical surfaces; full kit compresses to 180ml volume.",
+  "what_it_says": "You won't see this person unless they decide you should.",
+  "worn_by": [
+    "infiltrators",
+    "corporate thieves",
+    "espionage operatives",
+    "high-end burglars"
+  ],
+  "manufacturer": "Nullseam Collective (dark market, order-only)",
+  "price_range": "Φ 1,400–Φ 3,100",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The quick-strip outer layer was left at the scene deliberately — someone is framing a different operative.",
+    "The gecko pads are losing adhesion in the cold; the wearer realizes mid-climb on a Spire facade."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld_criminal_kit",
+    "thief",
+    "infiltrator",
+    "quick_strip",
+    "scanner_resistant",
+    "tier2",
+    "tier3",
+    "stealth",
+    "modular"
+  ]
+}

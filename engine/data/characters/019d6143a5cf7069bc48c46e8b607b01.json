@@ -12,7 +12,7 @@
   "role": "Holographic muralist and street artist",
   "age": 27,
   "status": "active",
-  "location": "Pilsen Veil, operates across Mexicantown Libre and Bronzeline",
+  "location": "Pilsen Veil, operates across Mexicantown Libre and Bronzeline, near Halsted and Chicago Ave",
   "description": "Caio is lean and tall with warm brown skin, prominent cheekbones inherited from his Samoan grandmother, and irises modified to project a faint geometric grid pattern over whatever he is looking at — a functional geneware mod he uses to pre-visualize compositions on surfaces before he paints them. He wears his hair in loose, shoulder-length locs dyed in shifting thermal-reactive pigments that bleed between rust red and pale gold depending on the ambient temperature. A faint scarring pattern across his left cheek from a Ferrogate Transit security incident two years ago has become, in the Pilsen Veil community, something close to a badge. He tends to dress in utilitarian layers, always with a projector harness across his chest that strangers occasionally mistake for a weapon rig.\n\nHis murals are enormous, illegal, and technically staggering — layered holographic installations projected onto building surfaces that interact with natural light and viewer movement, showing different images at different times of day or from different angles. His most celebrated piece, a three-block-long work on the Bronzeline overpass called 'What the Lake Remembers,' depicts the drowned geography of pre-megacity Chicago in a way that causes viewers to involuntarily slow down and look back. He has a hot, impatient creative energy and a chip on his shoulder about corponation-sponsored public art that can make him combative in conversation.",
   "psychology": {
     "facet_weights": {
@@ -223,5 +223,20 @@
   "registered_firearms": [
     "Crucible Industries Siege DMR SDMR-3 'Bastion'",
     "Crucible Industries Havoc-44 'Mauler'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Mexicantown Libre",
+    "Pilsen Veil",
+    "Grandmother",
+    "Bronzeline",
+    "Parliament",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Nesting Doll",
+    "The Pale Mile",
+    "Rust",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

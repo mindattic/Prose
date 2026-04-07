@@ -12,7 +12,7 @@
   "role": "Prosthetics fitter working out of a small shop in Geartown, serving primarily industrial workers and dock laborers",
   "age": 61,
   "status": "active",
-  "location": "Geartown, Little Furnace",
+  "location": "Geartown, Little Furnace, near Milwaukee and North Ave",
   "description": "Bertilak is a big man gone soft at the middle, with dark brown skin, a white-streaked beard he keeps neatly shaped, and deep-set amber eyes behind magnification lenses permanently clipped to his face like a second pair. His right arm from the elbow down is his own oldest prototype — a functional prosthetic he built thirty years ago and has upgraded piece by piece ever since, currently somewhere around its fourteenth major revision. He finds this funny. He calls it his 'living resume.' His workshop smells of industrial lubricant and warm solder and the dried herbs he burns as offerings to the shelf-mounted E.L.F. shrine in the corner.\n\nHe is patient, unhurried, and has a gift for understanding what a client actually needs from a prosthetic as opposed to what they say they want. He asks about their job, their hobbies, whether they have a partner who touches their hands, what they're afraid they won't be able to do anymore. He fits accordingly. He doesn't stock the highest-end components and doesn't pretend to — his clients are Tier 1 and 2 workers who need something durable and honest, not something that impresses people at a corporate mixer. He is deeply proud of this.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,15 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Little Furnace",
+    "The Shelf",
+    "Geartown",
+    "Crucible Industries Furnace CF-15 'Meltdown'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

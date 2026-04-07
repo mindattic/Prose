@@ -12,7 +12,7 @@
   "role": "Protection racket enforcer and mid-level collections muscle for the Shallowgrave Corridor gang, the Rust Toll",
   "age": 19,
   "status": "active",
-  "location": "Shallowgrave, specifically the Ironvein residential stack — bunks with three other Rust Toll members on the 7th floor",
+  "location": "Shallowgrave, specifically the Ironvein residential stack — bunks with three other Rust Toll members on the 7th floor, near Kedzie and Division",
   "description": "Kwadwo is big for nineteen — wide through the shoulders, thick-necked, with the kind of frame that reads as older until you see his face, which is still young in ways he actively tries to suppress. He has his Kazakh father's broad cheekbones and his Ghanaian mother's dark complexion, and he keeps his head shaved close on the sides with a tight coil of natural hair on top that he does not admit he spends time on. His geneware is peer-group standard: retractable fingernail reinforcements installed last year — not quite claws, more like blunted hardened keratin — and a bioluminescent stripe along his left jaw, pale orange, that marks him as Rust Toll initiated. He has two cracked ribs healing from a collection that went wrong last month.\n\nHe is not by nature a violent person, which is the central crisis of his daily life. He fell into the Rust Toll the way most people fall into things at sixteen — geography, necessity, three older cousins who were already in, and no competing options that felt real. He is genuinely well-liked by the people he collects from, which his crew finds somewhere between endearing and suspicious. He has a habit of fixing things — loose door panels, broken light strips — in the shops he visits for collections, without being asked, without charging it against the protection fee. He thinks about leaving the Toll approximately every two days. He has been thinking about it for three years.",
   "psychology": {
     "facet_weights": {
@@ -175,5 +175,15 @@
   "registered_firearms": [
     "Nkomo-Lindqvist NLR-9 'Counselor'",
     "Tessera Personal Defense System TPDS-1 'Reflex'"
-  ]
+  ],
+  "related_entities": [
+    "Shallowgrave",
+    "The Iron Lotus",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Street-Custom Loaded Pipe 'Bell Ringer'",
+    "The Pale Mile",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

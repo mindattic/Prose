@@ -12,7 +12,7 @@
   "role": "Personnel recovery and hostile extraction — extraction specialist",
   "age": 45,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
   "description": "Deniz Dahlberg-Boakye is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a extraction specialist out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Deniz Dahlberg-Boakye is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,15 @@
   ],
   "registered_firearms": [
     "Crucible Industries Havoc-44 'Mauler'"
-  ]
+  ],
+  "related_entities": [
+    "Bioelectric Muscle Fiber",
+    "The Narrows Compact",
+    "Meridian 88",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

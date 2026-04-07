@@ -11,7 +11,7 @@
   "role": "Barber, owner of Diallo's Cuts, Hamtramck Enclave",
   "age": 44,
   "status": "active",
-  "location": "Diallo's Cuts, Hamtramck Enclave, Nasr Street block",
+  "location": "Diallo's Cuts, Hamtramck Enclave, Nasr Street block, near Ashland and Chicago Ave",
   "description": "Wulfric is a compact man, not short but organized — every centimeter of him purposeful. His Fulani father's features sit under his Swedish grandfather's pale gold complexion in a way that reads as purely its own thing, specific to him: wide flat cheekbones, green eyes that are the one detail that always surprises people, locs he keeps in a precise low bun at work. His hands are his pride, always clean to the point of ceremony, and he keeps the nails short and the knuckles moisturized because in his words, hands that look uncared-for don't have any business in someone else's hair. The shop is three chairs, two mirrors, one complicated E.L.F. shrine behind the counter that takes up more space than any of the chairs — it's built around an old pair of silver shears his father used, which he says the shop's resident spirit has inhabited since 2189.\n\nDiallo's Cuts is a neighborhood institution. People come for the fade and stay for whatever Wulfric says to them, which is delivered with the particular intimacy of someone who has their hands on your head. He manages the shop like a stage — everyone who comes in is welcomed, positioned, heard, shaped. He doesn't do gossip; he does something more precise, which is careful listening followed by occasional precise questions that tend to make people say things they hadn't planned to say. He is genuinely interested in nearly everyone. He is genuinely interested in nearly everyone's problems. This is sometimes an asset and sometimes an exhaustion he doesn't fully acknowledge.",
   "psychology": {
     "facet_weights": {
@@ -188,5 +188,20 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "The CEO",
+    "Flicker",
+    "West Pulldown",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "The Coffin Nails",
+    "Silver",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

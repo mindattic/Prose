@@ -12,7 +12,7 @@
   "role": "Small-time data broker — neighborhood gossip, surveillance logs, identity fragments",
   "age": 36,
   "status": "active",
-  "location": "The Alban Souk, Chatham Flats",
+  "location": "The Alban Souk, Chatham Flats, near Pulaski and Chicago Ave",
   "description": "Oluwadarasimi — Dara to everyone who values their time — is a compact, watchful woman who runs what appears to be a phone repair and device maintenance kiosk in the middle of the Alban Souk's electronics corridor. The repair work is real; so is everything else. Her skin is a deep warm brown, her natural hair twisted into locks threaded with silver wire that serve a dual purpose as aesthetic and antenna extension. Her irises are stock human dark brown, which she considers a professional advantage. She has cat ears — a geneware mod she got in her twenties and has kept ever since, velvety black and mobile, swiveling toward sounds before she's consciously registered them. She is acutely, perpetually embarrassed by how readable her ears make her emotional state and has developed elaborate conversational techniques for preventing anyone from noticing what direction they've turned.\n\nDara operates on the fundamental principle that information depreciates in value like produce: sell it while it's fresh or it's worthless. She deals strictly in neighborhood-scale data — who owes whom, who's sleeping where they shouldn't be, what the Chatham Flats block captain actually filed versus what they told residents, which E.L.F. shrine has gone cold and why. She does not touch corponation intel, does not touch political data, and has turned down three increasingly good offers to work for Tessera's intelligence division. She is precise, reliable, and slightly sad in a way she would vigorously deny.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,16 @@
   "carried_weapons": [
     "Street Custom 'Baptism' Electrified Water Cannon"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Mexicantown Libre",
+    "The Alban Souk",
+    "Chatham Flats",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

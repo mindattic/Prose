@@ -12,7 +12,7 @@
   "role": "Gym trainer and boxing instructor, community fitness cooperative",
   "age": 38,
   "status": "active",
-  "location": "Highland Park Autonomous Zone — the Ironbody Cooperative, second floor of a reclaimed factory building",
+  "location": "Highland Park Autonomous Zone — the Ironbody Cooperative, second floor of a reclaimed factory building, near Michigan Ave and Oak",
   "description": "Nneka is built like someone who decided what she was going to be and then spent twenty years becoming it — wide through the shoulders, with forearms that look carved, and a jaw that suggests she has never backed down from anything that didn't have a very good reason to ask. Her skin is very dark and very smooth except for the scar tissue along her left cheekbone from a fight she doesn't discuss and the chevron pattern of elective scarification across both shoulders that echoes her grandmother's ceremonial markings, done at a body modification studio in Geartown with deliberate care. Her hair is kept in tight plaits close to her skull. She has retractable reinforced knuckle implants — the only chrome on her body, practical not cosmetic, and she got them after the third time she broke her hand hitting something harder than she should have.\n\nThe Ironbody Cooperative runs on a sliding scale: you pay what you can, you work what you owe in facility maintenance if you can't, and you don't cause problems for other members or you leave. Nneka runs it with two other trainers and a rotating volunteer roster. She teaches children's boxing on Tuesday and Thursday mornings, adult conditioning circuits five days a week, and one private session per week with whoever needs it most — she charges more for the private sessions with people who can afford it and uses that margin to subsidize the cooperative's equipment costs. She believes, with the ferocity of someone who was saved by it, that physical discipline is the most democratic thing a person can practice.",
   "psychology": {
     "facet_weights": {
@@ -181,5 +181,17 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Dredge Mining Collective",
+    "The Reclamation Assembly",
+    "Grandmother",
+    "Ferrogate Transit",
+    "Palladian Construction",
+    "The Heidelberg Scar",
+    "Geartown",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'"
+  ],
+  "district": "The Spires"
 }

@@ -12,7 +12,7 @@
   "role": "Personnel recovery and hostile extraction — extraction specialist",
   "age": 33,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
   "description": "Nika Svensson-Kone is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 33, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a extraction specialist out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,15 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-6 'Equalizer'",
     "Crucible Industries Fang-9 'Switchblade'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Heritage Vault",
+    "Ashfield",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Neuromorphic Pressure Cestus",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

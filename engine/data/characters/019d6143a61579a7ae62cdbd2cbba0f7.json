@@ -12,7 +12,7 @@
   "role": "Seasonal worker and airship drifter, semi-permanent transit resident",
   "age": 19,
   "status": "active",
-  "location": "Escanaba Gateway, Bay 7 worker dormitories (when employed); otherwise Kenosha Crossing transit hall",
+  "location": "Escanaba Gateway, Bay 7 worker dormitories (when employed); otherwise Kenosha Crossing transit hall, near outside the Pulaski Gate",
   "description": "Festus is tall in the way that suggests he is not finished growing yet, with the loose-limbed coordination of someone who learned to navigate moving surfaces — airship decks, cargo holds, swaying rail bridges — before flat ground. He has his Andean grandmother's broad cheekbones and his Dalmatian grandfather's tendency toward sunburn, which means his face is a patchwork of tan and pink that he tries to hide under a pulled-down work cap he has not washed in six months. His hair is overgrown and dark, curling at his ears. He has a cat tail — a geneware mod his older sister got him for his sixteenth birthday, rust-orange, which he cannot stop using expressively and which he is embarrassed about when he notices people noticing.\n\nHe has been working the airship circuit between Escanaba Gateway and the Great Lakes transfer hubs for two years, doing cargo sorting and hull maintenance — work that pays enough to eat if he does not stop moving. He is fundamentally optimistic in a way that is either admirable or delusional depending on how the month has gone. He has a plan. The plan changes every three weeks. The core of it — get stable, get a real room, maybe a Guild contract — has not changed. He is nineteen and he is trying.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,18 @@
   "carried_weapons": [
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "Kenosha Crossing",
+    "Ringo RB-1 'Judas Goat'",
+    "Meridian 88",
+    "Grandmother",
+    "The CEO",
+    "Meridian Core",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Arcturus Defense Solutions Microwave Area Denial MAD-3 'Sunburn'",
+    "Rust"
+  ],
+  "district": "Nomadic"
 }

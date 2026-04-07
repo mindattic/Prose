@@ -12,7 +12,7 @@
   "role": "Bounty Compliance Officer, freelance licensed",
   "age": 45,
   "status": "active",
-  "location": "Bridgepoint",
+  "location": "Bridgepoint, near Armitage and Milwaukee",
   "description": "Bintou Skarsgård-Nakweti has the kind of face that has made a professional peace with itself — laugh lines earned, not resented, a slight asymmetry to her jaw from an old fracture improperly set in a clinic that has since been demolished. Her skin is a warm medium brown, her natural hair locs wrapped daily in a practiced spiral that she pins with a series of small copper rings, each one a different diameter. Her left forearm bears a pattern of raised scarification from a traditional ceremony on her mother's side — she is the only person in her family who continued the practice. She moves with the unhurried deliberateness of someone who long ago stopped needing to prove anything.\n\nShe has worked bounty compliance for seventeen years and describes the job with the matter-of-fact affect of a plumber describing pipe fittings. She brings people in. She does it legally, with documentation, on licensed warrants. She is not sentimental about it but she has rules: no minors, no medical emergencies untreated, no warrants that smell like private vendettas wearing legal paperwork. She has turned down more contracts than most operators accept. Her reputation for selectivity is itself a business asset.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,11 @@
   "registered_firearms": [
     "Crucible Industries Ember Rifle ER-7 'Ashfall'",
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Bridgepoint",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Copper"
+  ],
+  "district": "The Circuit"
 }

@@ -13,7 +13,7 @@
   "role": "Corporate Compliance Investigator / Internal Fixer",
   "age": 41,
   "status": "active",
-  "location": "The Meridian Core (works), The Spire (residence, mid-tier floor)",
+  "location": "The Meridian Core (works), The Spire (residence, mid-tier floor), near Michigan Ave and Chicago Ave",
   "description": "Priya Subramaniam-Vogt is a woman of precisely calibrated appearances — Tamil and German heritage rendered in sharp cheekbones, close-cropped silver-threaded black hair, and eyes that carry the particular exhaustion of someone who has seen too many spreadsheets hiding atrocities. She dresses in muted corporate palettes, charcoal and slate, never anything that might be remembered at a crime scene or a board meeting. Her augmentations are invisible by design: subdermal haptic interfaces along her fingertips, a retinal overlay for data parsing, and a cochlear implant that filters ambient sound into prioritized signal streams. She moves through rooms like a calculation being solved.\n\nPriya has spent sixteen years as an internal investigator for Solenne-Hardt Consolidated, one of the Meridian Core's mid-tier financial conglomerates — not powerful enough to write law, powerful enough to bury people. Her job is nominally compliance: finding fraud, plugging leaks, flagging irregularities. In practice she is the person the company calls when something needs to disappear without leaving fingerprints on the company itself. She has shut down whistleblowers, engineered quiet terminations, and authored reports that exonerated executives whose guilt she documented with her own hands. She is very good at her job and has not slept well in four years.\n\nWhat distinguishes Priya from the purely corrupt is a ledger she keeps — encrypted, air-gapped, stored on a physical drive she wears against her sternum. Every suppressed case, every buried name, every victim whose file she closed. She does not know yet what she intends to do with it. She tells herself it is insurance. She suspects it is penance she hasn't figured out how to pay.",
   "psychology": {
     "facet_weights": {
@@ -249,5 +249,22 @@
     "Crucible Industries Suppressed Compact SC-2 'Murmur'",
     "Crucible Industries Electrostatic Whip EW-3 'Live Wire'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Vantablack BC-1 'Briefcase'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Shelf",
+    "The Spire",
+    "Flicker",
+    "The Heritage Vault",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial"
+  ],
+  "district": "The Spires"
 }

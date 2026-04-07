@@ -12,7 +12,7 @@
   "role": "Meridian 88 Metro Police surveillance drone operator, Brightmoor Reclamation Zone coverage",
   "age": 38,
   "status": "active",
-  "location": "Fort Anchor, Drone Operations Center — assigned coverage zone: Brightmoor Reclamation and adjacent districts",
+  "location": "Fort Anchor, Drone Operations Center — assigned coverage zone: Brightmoor Reclamation and adjacent districts, near Pulaski and Chicago Ave",
   "description": "Yewande runs drones from a chair. They have been doing this for eleven years and their body knows it — they are slim in the specific way of someone who is still and focused for eight hours at a stretch, with deep brown skin and a shaved head they have decorated with a scatter of bioluminescent scalp-dots in cyan and violet that pulse slowly in patterns that change with their mood. Their eyes are heavily augmented: twin rig-link implants that glow a faint amber at the corners when active, giving them a permanently lit quality that unsettles people at close range. They are not especially tall and they move through the Fort Anchor corridors with the slightly glassy ease of someone perpetually accustomed to seeing through other eyes.\n\nYewande is the best drone jockey in the Brightmoor operation and has a proprietary flight algorithm they developed themselves, unofficially, that runs seventeen percent more efficient coverage patterns than the Metro standard. They have never submitted it formally because they have learned that submitting things formally means other people get credit for them. They have complicated feelings about surveillance work — they do it with genuine skill and believe in some of its applications and mistrust others — and they manage this by maintaining a very precise internal taxonomy of which flights feel like protection and which feel like something else. They pray to the drone fleet's resident E.L.F., which they call Sweep, before every shift, asking it to help them see clearly and miss nothing important.",
   "psychology": {
     "facet_weights": {
@@ -205,5 +205,17 @@
   "registered_firearms": [
     "Crucible Industries Anti-Materiel DMR AMDMR-5 'Verdict'",
     "Meridian Munitions Snapper-22 'Cricket'"
-  ]
+  ],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Fort Anchor",
+    "The Reclamation Assembly",
+    "Chronicle",
+    "Grainfort",
+    "Street Custom 'Glass Garden' Caltrops",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

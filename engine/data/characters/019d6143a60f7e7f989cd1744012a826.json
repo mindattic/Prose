@@ -12,7 +12,7 @@
   "role": "Structural breach and explosive ordnance specialist — demolitions expert",
   "age": 33,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore",
+  "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
   "description": "Fanta Pena-Baah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Fanta Pena-Baah describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,11 @@
   "carried_weapons": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Shelf",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

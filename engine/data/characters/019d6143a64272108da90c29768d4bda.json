@@ -12,7 +12,7 @@
   "role": "Counter-surveillance and mole detection — counterintelligence specialist",
   "age": 35,
   "status": "active",
-  "location": "The Canopy — elevated walkway district above Geartown",
+  "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Addison",
   "description": "Kenji Guerrero-Osei-Mensah is lean and angular, all sharp edges and visible tension. At 35, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a counterintelligence specialist out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKenji Guerrero-Osei-Mensah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,15 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Canopy Station Nine",
+    "Geartown",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Clover"
+  ],
+  "district": "The Laceworks"
 }

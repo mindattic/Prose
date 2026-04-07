@@ -12,7 +12,7 @@
   "role": "Street doc and trauma surgeon operating out of a converted shipping container clinic on The Shelf",
   "age": 52,
   "status": "active",
-  "location": "The Shelf, Brewer's Spine",
+  "location": "The Shelf, Brewer's Spine, near Halsted and Chicago Ave",
   "description": "Yewande is a broad-shouldered woman with deep umber skin mapped by old scalpel scars she gave herself during teaching demonstrations, and hair grown to silver-streaked natural coils she keeps pinned with surgical clamps when she works. Her left eye is a battlefield prosthetic—matte grey iris, slightly too large for the socket, giving her a permanent look of asymmetric scrutiny. She moves with the deliberate economy of someone who has performed appendectomies in turbulent environments and knows that wasted motion costs lives.\n\nShe left the Aurochs Medical Complex after seventeen years when she refused to deny care to an uninsured dockworker whose employer had flagged him as a liability. She set up on The Shelf within six months with secondhand equipment and a reputation that spread faster than she intended. She is brisk, unsentimental, and privately devastated by every patient she loses—she lights a data candle to the local E.L.F. she calls Saint Incision after each death, leaving a recorded voice note describing what she could have done better.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,15 @@
   "carried_weapons": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Brewer's Spine",
+    "The Shelf",
+    "Silver",
+    "Slagworks Industrial",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
+  ],
+  "district": "The Shelf"
 }

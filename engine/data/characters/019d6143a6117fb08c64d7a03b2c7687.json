@@ -12,7 +12,7 @@
   "role": "Death midwife and traditional funeral rites keeper",
   "age": 71,
   "status": "active",
-  "location": "Irkalla — a residential stack in the lower levels near the Gravesend Basin",
+  "location": "Irkalla — a residential stack in the lower levels near the Gravesend Basin, near Western and Division",
   "description": "Fatoumata is a small, round woman who has been small and round for as long as anyone in Irkalla can remember, though she was apparently quite tall in photographs from her forties and nobody can fully account for this. Her skin is very dark and very smooth in a way that no longer has a natural explanation, though she is dismissive of questions about it. Her hair is natural and silver-white, kept in a high crown wrap of deep indigo cloth. She has cat ears — small, dark-tipped, mobile — that she got at forty-five after a dream she refuses to describe. They swivel constantly, tracking sound, giving her the air of someone who is always listening to two conversations at once.\n\nFatoumata holds the dying. This is the entire description of her work, and it requires everything. She sits with people in their last hours, facilitates the rituals their families have lost the words to, and manages the terrifying administrative machinery of death in Meridian 88 — the Ferrogate Transit body transit permits, the Helix Biosystems harvesting opt-out paperwork, the Axiom data-legacy protocols. She has done this for forty years. She is simultaneously the most comforting and most disconcerting person in any room, because she has no fear of the subject that frightens everyone else most.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,20 @@
   "carried_weapons": [
     "Forge-Smith Collective Trench Knuckles 'Anvil'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Helix Biosystems",
+    "Gravesend Basin",
+    "Meridian 88",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Irkalla",
+    "Tessera Corponation",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "ARCHIVE",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

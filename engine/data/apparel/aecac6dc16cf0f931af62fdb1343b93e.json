@@ -1,0 +1,36 @@
+{
+  "id": "aecac6dc16cf0f931af62fdb1343b93e",
+  "name": "Kaida Fabrication Neural-Port Shield",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A slim, form-fitting cover that seats over cranial neural-port installations to protect exposed hardware from dust, moisture, and electromagnetic interference. Made from medical-grade silicone with an embedded Faraday mesh, it looks like a fitted skullcap that covers only the port region.\n\nNeural-port users in dusty industrial zones or humid lower-tier environments wear these out of necessity — an unshielded port corroding from condensation can cause seizures or worse. The Shield comes in clinical white or matte black.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "medical-grade silicone",
+    "Faraday mesh",
+    "anti-corrosion coating"
+  ],
+  "functionality": "Neural-port protection, EMI shielding, moisture barrier",
+  "what_it_says": "You've got hardware in your skull and you're smart enough to protect the investment.",
+  "worn_by": [
+    "augmented workers",
+    "neural-port users",
+    "Shelf-tier augmented individuals"
+  ],
+  "manufacturer": "Kaida Fabrication",
+  "price_range": "Φ320",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A clinic reports a spike in neural-port infections traced to counterfeit Kaida Shields made from non-medical silicone — someone is cutting costs and causing brain damage."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 2",
+    "neural-port",
+    "medical",
+    "protective",
+    "augmentation"
+  ]
+}

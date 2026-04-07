@@ -12,7 +12,7 @@
   "role": "Bounty compliance officer, independent — contracted to Tessera Compliance Bureau",
   "age": 27,
   "status": "active",
-  "location": "Chatham Flats",
+  "location": "Chatham Flats, near Kedzie and Division",
   "description": "Zlatko is young in a way he is painfully aware of — broad-shouldered and physically impressive, with medium brown skin, a slightly too-eager manner, and retractable claw geneware on both hands that he got at nineteen because he thought it would make him look serious and has since decided he was right for the wrong reasons. He keeps the claws sheathed almost always; extending them feels like admitting he's nervous. His hair is grown out past his shoulders, dyed in shifting red-orange bioluminescence that he tells people is a professional investment because people remember you, which is true and also not really why he did it.\n\nHe works skip tracing and debt-compliance pickups for Tessera — locating people who have defaulted on Tessera contracts, service agreements, or residential obligations and facilitating their 'voluntary return to compliance,' which in practice means finding them and making very clear what Tessera's options are. He is not violent by preference and not comfortable when situations require it. He is, however, genuinely good at the finding — spatial memory, social intuition, and a disarming quality that makes people underestimate him until he's already confirmed what he came to know. He keeps a small E.L.F. prayer card tucked in his jacket — Our Finder, patron of lost things — and touches it before starting a new case.",
   "psychology": {
     "facet_weights": {
@@ -203,5 +203,17 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Crucible Industries Havoc-44 'Mauler'"
-  ]
+  ],
+  "related_entities": [
+    "Chatham Flats",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

@@ -11,7 +11,7 @@
   "role": "Fixer - Long-term payoff jobs",
   "age": 54,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Ashland and Chicago Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -101,5 +101,9 @@
     "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
     "Street Custom 'Rebar Rose' Improvised Spike Mace"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf"
+  ],
+  "district": "The Shelf"
 }

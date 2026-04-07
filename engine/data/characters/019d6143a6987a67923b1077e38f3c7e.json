@@ -12,7 +12,7 @@
   "role": "Identity fabricator and forger operating from a legitimate-front alterations shop",
   "age": 52,
   "status": "active",
-  "location": "The Narrows — storefront called Volkov's Fine Alterations, wedged between a noodle stall and a collapsed wellness clinic",
+  "location": "The Narrows — storefront called Volkov's Fine Alterations, wedged between a noodle stall and a collapsed wellness clinic, near Milwaukee and North Ave",
   "description": "Perpetua is a heavyset woman with Ethiopian-Slavic features — strong jaw, prominent cheekbones, skin a warm medium brown gone fine-lined at the eyes and mouth. Her natural hair is white at the temples and she refuses to change it, though she dyes the rest a rotating series of deep jewel tones depending on her mood; currently it's dark burgundy. Her hands are extraordinary — surgeon-steady, ink-stained at the cuticles, and decorated with color-shifting nail geneware that she uses as a mood-board when designing documents. She dresses in the unassuming uniform of her cover: reading glasses she doesn't need, a tape measure worn like a scarf, sensible shoes.\n\nPerpetua radiates the particular calm of someone who has made peace with the fact that their work is illegal and has decided to be excellent at it anyway. She is meticulous, sardonic, and prone to long explanations about the philosophical nature of identity that clients find disquieting but cannot interrupt. She has been in the Narrows for twenty-two years and considers herself a kind of civic institution. She prays to the E.L.F. of the laminator — a small shrine of laminated prayer-cards and USB offerings on her workbench — with genuine devotion.",
   "psychology": {
     "facet_weights": {
@@ -175,5 +175,12 @@
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
     "Forge-Smith Collective Diaspora Blade 'Mongrel'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Kang-Petrov Arms KPS-12 'Workbench'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

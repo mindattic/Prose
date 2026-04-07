@@ -13,7 +13,7 @@
   "role": "Street-level medic and black-market augmentation installer",
   "age": 34,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Western and Chicago Ave",
   "description": "Nkechi is a compact, dark-skinned woman of Nigerian-Dutch descent with close-cropped hair shaved to geometric patterns on one side — a style she touches up herself with a straight razor. Her hands are her most notable feature: surgeon-precise, perpetually slightly stained with biosynthetic sealant, adorned with a lattice of fine silver conductive thread she stitched into her own skin to improve haptic feedback during procedures. She works out of a converted shipping container wedged beneath the Shelf's elevated roadways, a space she calls the Parlour, decorated with hand-drawn anatomical diagrams and the occasional wilting plant.\n\nShe trained as a licensed biomedical technician in the Meridian Core before her credentials were revoked following an incident she describes only as 'a disagreement about who deserves to live.' Since sliding down to the Shelf, she has built a reputation as the most reliable unlicensed augmentation installer in the district — someone who will not butcher you, will not sell your biometric data, and will remember your name next time. Her waiting list is three weeks long and she accepts payment in currency, favors, or occasionally food.\n\nNkechi is not idealistic about the people she helps, but she is consistent. She patches up runners, gang members, runaways, and anyone who cannot access or afford licensed care. She has a dry, unhurried manner that people frequently mistake for coldness until the moment she says exactly the right thing. She keeps a battered handwritten ledger of every patient she has treated, not for blackmail but because she believes someone should know these people existed and were cared for.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,19 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "The Shelf",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Gradient Compact",
+    "Carrion Defense Works Bone Saw BS-3 'Butcher'",
+    "Adaeze Chen-Hawkins",
+    "The Pure Hand",
+    "Silver",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

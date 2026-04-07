@@ -12,7 +12,7 @@
   "role": "Anti-corporate agitator and protest coordinator",
   "age": 19,
   "status": "active",
-  "location": "North Branch Commons",
+  "location": "North Branch Commons, near North Ave and Damen",
   "description": "Rashid is tall and still growing, with a loose-limbed energy that makes him seem like he might trip over himself until suddenly he doesn't — he moves fast when he needs to and knows every rooftop, alley, and maintenance corridor in the North Branch Commons with the intimacy of someone who has been running since he was twelve. His skin is a rich brown, and he has retractable claw mods on his right hand that he got on a dare at sixteen and has kept because they're useful for scaling drainage pipes. His left cheekbone has a hairline fracture that healed imperfectly — a reminder from a Palladian security response at a demonstration last year.\n\nHe coordinates direct actions — marches, blockades, projection vandalism, the occasional coordinated work disruption in Palladian-adjacent supply lines — with a tactical instinct that belies his age and an absolute inability to sit through a long meeting without his knee bouncing audibly. He is not strategic in the way older activists mean it. He is strategic in the way a game player is: fast pattern recognition, good in chaos, bad at long timelines. The elders in the movement find him alternately inspiring and exhausting. He finds them slow.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,14 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "North Branch Commons",
+    "Palladian Construction",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Compass Rose"
+  ],
+  "district": "The Circuit"
 }

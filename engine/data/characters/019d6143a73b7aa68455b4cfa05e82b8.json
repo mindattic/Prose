@@ -12,7 +12,7 @@
   "role": "Street kid and message runner for the Copperhead informal economy",
   "age": 11,
   "status": "active",
-  "location": "Copperhead",
+  "location": "Copperhead, near North Ave and Milwaukee",
   "description": "Zuberi is small for his age, wiry in the way that children are when they grow up hungry but always moving — all elbows and quick eyes. His skin is a warm dark brown, and his hair grows in tight coils that he keeps cut close on the sides by whoever has scissors that week. He has a cosmetic geneware patch on his left forearm — a bioluminescent tattoo of a cresting wave someone gave him as payment once — that glows faint blue when he's cold or scared, which he finds embarrassing and cannot control. He wears a jacket three sizes too large with pockets sewn inside the lining.\n\nZuberi does not stay still. He talks fast, thinks faster, and has memorized every rat-run, maintenance shaft, and loose fence panel between Copperhead and the Grindstone Shore. He is relentlessly cheerful in a way that sometimes cracks at the edges — too bright, too quick to laugh — but he genuinely loves the people in his network and would do almost anything for the older woman he calls Nana Priya who lets him sleep in her noodle stall. He prays to a small E.L.F. he calls Blink that lives in a cracked signal repeater bolted to the wall above her stall.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,13 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grindstone Shore",
+    "Copperhead",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Nana Regional Corporation",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Circuit"
 }

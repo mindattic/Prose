@@ -12,7 +12,7 @@
   "role": "Trauma surgeon and prosthetics integration specialist, Aurochs Medical Complex",
   "age": 52,
   "status": "active",
-  "location": "Aurochs Medical Complex, Level 6 Trauma Wing; lives in Edgewater Prism",
+  "location": "Aurochs Medical Complex, Level 6 Trauma Wing; lives in Edgewater Prism, near Lincoln and Clark",
   "description": "Věra is tall and angular, with a long face and the kind of silver-threaded dark hair they wear in a severe plait that their residents know means do not ask unnecessary questions today. Their skin is medium brown, fine-lined around the eyes and mouth in ways they have never had corrected and will not. Their left arm from the elbow is a Sterling-Nakamura prosthetic — their own work, integrated at the point of the original trauma, fitted and calibrated to their exacting standards, and significantly more capable than their standard clinical colleagues understand. The arm's surface is a brushed dark alloy that they have kept deliberately unmarked, which in Meridian 88's ornamented medical culture is its own kind of statement.\n\nVěra is renowned within Aurochs for outcomes and feared for feedback. They are exacting in the way that people become when they have decided that nearly-good-enough has a body count. They have no interest in personal relationships with their team beyond professional excellence, which does not stop residents from becoming deeply attached to them anyway. They have a single personal ritual: before any surgery, they spend two minutes at their workstation speaking quietly to the E.L.F. they call the Seam, which they believe inhabits the gap between biological tissue and synthetic integration — the threshold where their work actually happens. They do not describe this as prayer. They describe it as professional consultation.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,18 @@
     "Meridian Munitions Twin PDW MTP-2 'Gemini'",
     "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Edgewater Prism",
+    "The Threshold",
+    "Meridian 88",
+    "WELLSPRING",
+    "Threshold",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Lacuna Genomics",
+    "TESSERA WL-6 'Stacker'",
+    "Silver"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "High-risk package and data transport — courier",
   "age": 38,
   "status": "active",
-  "location": "Glassway — corporate-adjacent retail district, heavy surveillance",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and North Ave",
   "description": "Aslan Blomberg-Konadu is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 38, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a courier out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Aslan Blomberg-Konadu agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,14 @@
   "registered_firearms": [
     "Volkov-Saito Precision VSR-20 'Partisan'",
     "Crucible Industries Fang-9 'Switchblade'"
-  ]
+  ],
+  "related_entities": [
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Ringo DV-4 'Courier'",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

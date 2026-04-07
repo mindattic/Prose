@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator — surface tram line 14, Geartown to Meridian Core loop",
   "age": 29,
   "status": "active",
-  "location": "Geartown; lives in a transit-worker dormitory block off the Gage Circuit maintenance yard",
+  "location": "Geartown; lives in a transit-worker dormitory block off the Gage Circuit maintenance yard, near Milwaukee and North Ave",
   "description": "Deku is lean and angular, with the coiled alertness of someone whose profession requires constant low-grade vigilance. Their heritage shows in the broad flatness of their cheekbones and the dark honey of their complexion — Andean and Ghanaian grandparents converging in a face that strangers consistently find difficult to age or place, which suits them fine. Their hair is kept close-cropped on the sides with a single stripe of color-shifting geneware on top — it cycles through slate blue and deep amber depending on their mood, an involuntary tell they've accepted with resignation. They have a faint tracery of subdermal circuit tattoos along their left forearm — not functional, purely aesthetic, done by a Geartown artist when they were twenty-two.\n\nBehind the tram controls, Deku is a different creature than they are in conversation: fluid, confident, reading the track and the city the way a musician reads a score. Off-duty they become clipped, watchful, someone who holds a great deal behind flat politeness. They are not unfriendly — they are private, which is different. Their passengers know them as reliable and fair; their coworkers know them as someone who will cover a shift without complaint but won't come to the bar after.",
   "psychology": {
     "facet_weights": {
@@ -186,5 +186,14 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Volkov-Saito Precision VS-R8 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "Gage Circuit",
+    "Ferrogate Transit",
+    "The Heritage Vault",
+    "Geartown",
+    "Aslan Vasquez-Chatterjee",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Circuit"
 }

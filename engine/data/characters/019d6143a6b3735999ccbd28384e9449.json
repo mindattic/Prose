@@ -12,7 +12,7 @@
   "role": "Chop shop operator and parts runner, Shallowgrave",
   "age": 19,
   "status": "active",
-  "location": "Shallowgrave, Geartown adjacent — a rented bay in a semi-collapsed parking structure called the Stack",
+  "location": "Shallowgrave, Geartown adjacent — a rented bay in a semi-collapsed parking structure called the Stack, near Western and Division",
   "description": "Roko is nineteen and looks younger, which he has stopped minding because it means people underestimate what he can do to a Ferrogate Transit pod in forty minutes flat. He's wiry and long-limbed, Algerian-Māori heritage that gives him a face of striking angles — high forehead, strong jaw, a nose that's been broken once (proud of it), skin a warm tawny brown that's perpetually smudged with grease no matter how thoroughly he washes. His hair is dark and tight-curled, usually stuffed into a mechanical bandana that can project a heads-up schematic overlay. He has cat ears from a geneware package he bought secondhand at sixteen — mottled grey and black, fully functional for enhanced hearing, constantly swiveling toward sounds before he's consciously registered them.\n\nHe is relentlessly cheerful in a way that reads as naive until you notice he is also relentlessly competent. He can strip a Ferrogate pod, a Sterling-Nakamura delivery drone, or an Axiom security crawler down to useful components faster than anyone else in Shallowgrave, and he knows the resale value of every part to three decimal places. He has no interest in violence, considerable interest in engines, and a complicated relationship with the two older crew members who 'own' the bay he works out of and take sixty percent of what he earns.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,17 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Volkov-Saito Precision VS-SL40 'Partisan'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Shallowgrave",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Heritage Vault",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Vespid Dynamics Reconnaissance Beetle RB-2",
+    "Slagworks Industrial",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

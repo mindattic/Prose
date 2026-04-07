@@ -12,7 +12,7 @@
   "role": "Building cleaner and maintenance aide, residential tower",
   "age": 23,
   "status": "active",
-  "location": "Calumet Rise — employed in the Tidewatch Residential Stack, a mid-tier housing block of 340 units",
+  "location": "Calumet Rise — employed in the Tidewatch Residential Stack, a mid-tier housing block of 340 units, near Armitage and Milwaukee",
   "description": "Jemba is young enough that people still call him 'the boy' without meaning anything cruel by it, and old enough that it has started to wear on him. He's got a Congolese-Samoan background through his father and a Kazakh-Swedish line through his mother, an inheritance that gave him a broad build he hasn't grown into yet and a face that oscillates between very young and very old depending on what shift he just came off. His hair is natural and high, kept carefully shaped on his days off; on shift he pins it under a grey cap. His bioluminescent skin modification is subtle — a faint bluish-silver glow along his temples and the backs of his hands that's visible mainly in low light, and that he's extremely proud of even though he got it done at a discount parlor in the Narrows and the fade will probably be uneven in a few years.\n\nJemba is sociable in the way that people are when they've grown up in small shared spaces — he knows how to read a room quickly, how to be unobtrusive or present as the situation requires, and how to carry gossip without it looking like he's carrying it. He's not ambitious in ways he's articulated to himself, but he is paying close attention to everything. He has a quality of watchfulness that most adults don't register in someone his age because they assume his job makes him invisible, and he lets them assume that.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,17 @@
     "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
     "Street-Custom Rebar Shiv 'Tetanus Kiss'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Calumet Rise",
+    "The Narrows Compact",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "West Pulldown",
+    "Tessera Corponation",
+    "Silver",
+    "The Pure Hand",
+    "Nightlight"
+  ],
+  "district": "The Circuit"
 }

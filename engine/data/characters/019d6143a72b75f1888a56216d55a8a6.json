@@ -12,7 +12,7 @@
   "role": "Street doc and unlicensed trauma surgeon",
   "age": 47,
   "status": "active",
-  "location": "The Narrows, operating out of a converted laundry unit behind Grainfort Market",
+  "location": "The Narrows, operating out of a converted laundry unit behind Grainfort Market, near Armitage and Milwaukee",
   "description": "Yolanda is a broad-shouldered woman with deep brown skin mapped by decades of chemical burns and old suture scars on her forearms — souvenirs of other people's emergencies. Her hair is grown out in thick silver-streaked locs that she ties back with surgical tubing when she works. Her left eye is a cheap medical-grade optical implant that glows faint amber in low light, the iris never quite tracking in sync with her natural right eye. She moves with the deliberate economy of someone who has spent years working in cramped spaces, never wasting motion.\n\nShe is blunt to the point of rudeness but has a laugh that fills a room when something genuinely amuses her. She charges what people can pay, keeps a sliding scale scratched on a laminated card in her coat pocket, and has been known to operate on kitchen tables, in transit cars, and once in the cargo hold of a Ferrogate freight hauler. She prays to the E.L.F. of her autoclave — a small copper idol bolted to its side — before every difficult procedure, muttering calibration codes she treats as liturgy.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,19 @@
   ],
   "registered_firearms": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Ferrogate Transit",
+    "Grainfort",
+    "The Suture Collective",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Silver",
+    "Slagworks Industrial",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper"
+  ],
+  "district": "The Circuit"
 }

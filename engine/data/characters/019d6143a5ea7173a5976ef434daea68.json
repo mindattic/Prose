@@ -13,7 +13,7 @@
   "role": "Lower Dock Crew runner — Prologue survivor. Jaw shattered, rebuilt with chrome.",
   "age": 22,
   "status": "active",
-  "location": "The Shelf — lower loading docks",
+  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
   "description": "Dayo Adeyemi came to the Shelf from the Lagos Resettlement Corridor when he was fourteen, one of four hundred thousand climate migrants processed through Meridian 88's intake system in a single year. He speaks four languages, none of them quietly. He is the youngest of the crew and the only one who tried to run from Kyle. Kyle caught him in three steps.\n\nThe chrome jaw replacement doesn't quite fit — it gives him a permanent underbite and makes a clicking sound when he talks. He compensates by talking constantly, as if the noise proves the jaw still works. Before the Prologue he was fast and cocky. Now he is fast and nervous. The cockiness is trying to grow back but keeps running into the memory of Kyle walking through the front door like death filling out a timesheet.\n\nDayo has a mother, Folake, who runs a food stall on Tier Four selling jollof rice that is genuinely the best thing in the lower Shelf. She knows Dayo is in the crew. She does not approve. Every Sunday she feeds him and tells him his father would be ashamed. His father died in the Lagos floods. Dayo was six. He does not remember his father well enough to know if she's right, and that is the thing that actually hurts.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,18 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "ARCHIVE",
+    "The Shelf",
+    "Ashford Signal",
+    "The United Workers Front",
+    "TESSERA PG-2 'Signature'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Kel Adeyemi-Strand",
+    "Slagworks Industrial",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Shelf"
 }

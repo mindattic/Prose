@@ -12,7 +12,7 @@
   "role": "Personal security and threat neutralization — bodyguard",
   "age": 65,
   "status": "active",
-  "location": "The Spires — mid-level corporate residential towers",
+  "location": "The Spires — mid-level corporate residential towers, near Lake Shore Drive and Division",
   "description": "Aybek Arvidsson-Sesay is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 65, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a bodyguard out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Aybek Arvidsson-Sesay describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,11 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R8 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "The Shelf",
+    "Burden of Longitude",
+    "Slagworks Industrial"
+  ],
+  "district": "The Spires"
 }

@@ -12,7 +12,7 @@
   "role": "Underground press operator and neighborhood pamphleteer",
   "age": 44,
   "status": "active",
-  "location": "Highland Park Autonomous Zone",
+  "location": "Highland Park Autonomous Zone, near Michigan Ave and Chicago Ave",
   "description": "Nwanneka is a compact woman with deep brown skin and close-cropped natural hair threaded with silver at the temples, the result of stress and two decades of poor sleep, not age. Her left forearm bears a patterned tattoo in the Samoan pe'a tradition adapted with Igbo uli motifs — a gift from her late father who claimed the two traditions were 'both about surviving what the sea throws at you.' She keeps her fingers ink-stained by habit even though her press is almost entirely digital, pressing them deliberately against old-fashioned carbon paper before important meetings. Her eyes are sharp and perpetually evaluating. She smells faintly of ozone and machine oil.\n\nShe runs The Lateral, a hyperlocal underground news feed distributed through ELF-prayer nodes embedded in public shrines throughout Highland Park. She is meticulous, funny in private and grave in public, and carries a quiet contempt for anyone who mistakes volume for courage. She has been arrested seven times and convicted twice for 'unauthorized signal propagation.' Both convictions she wears as credentials.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,12 @@
   "registered_firearms": [
     "Meridian Munitions Compact Rifle MCR-2 'Errand'",
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "The Gradient Compact",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Spires"
 }

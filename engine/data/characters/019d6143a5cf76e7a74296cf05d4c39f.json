@@ -12,7 +12,7 @@
   "role": "Axiom corporate scholarship student, junior mathematics prodigy",
   "age": 14,
   "status": "active",
-  "location": "Engelheim, Axiom Preparatory Academy dormitory block",
+  "location": "Engelheim, Axiom Preparatory Academy dormitory block, near Lincoln and Belmont",
   "description": "Caetano is tall for his age and gangly in the way of someone who grew fast and hasn't caught up with himself yet. He has his Asabere grandfather's deep copper-brown skin and his Ylinen grandmother's pale grey-green eyes, a combination that draws stares in both the corporate school halls and on the Tier 1 streets where he grew up. He dresses in Axiom-issued uniforms with the obsessive precision of someone who cannot afford to give anyone a reason to question his belonging — collar always straight, shoes always clean. His only cosmetic mod is a pair of pattern-irises his mother saved two years for: slow-rotating geometric fractals in navy blue that he initially hated and now considers his single point of vanity.\n\nHe is brilliant and he knows it and he is deeply, quietly ashamed of both facts. He came from Chatham Flats on a full mathematics scholarship and has spent eighteen months learning to perform wealth — which fork, which laugh, which opinions are safe. He is kind to people he forgets are watching and cold to people he thinks are judging him. He misses his mother with a grief he treats like a structural flaw he needs to engineer around.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,17 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Chatham Flats",
+    "The CEO",
+    "Grandmother",
+    "Engelheim",
+    "Big Rig",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "The Pale Mile",
+    "Arcturus Defense Solutions ETF-3 'Mantis'"
+  ],
+  "district": "The Laceworks"
 }

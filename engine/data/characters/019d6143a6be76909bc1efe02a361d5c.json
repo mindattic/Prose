@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator, subsurface rail line",
   "age": 44,
   "status": "active",
-  "location": "Lives in Copperhead; operates the Deepwell Station to Kessler Interchange subsurface line",
+  "location": "Lives in Copperhead; operates the Deepwell Station to Kessler Interchange subsurface line, near sub-level access near State and Van Buren",
   "description": "Rémi is a thick-set man with a round, deeply lined face that has settled into an expression of benign exhaustion he's been wearing since approximately age thirty-five. His skin is a warm dark brown with reddish undertones. He keeps a short beard going silver at the chin, and his hair — what remains of it — is cropped tight. His eyes are augmented: a Ferrogate Transit standard-issue retinal overlay that displays line status, passenger loads, and signal data, the irises permanently lit with a dim amber grid pattern that is just visible to anyone looking closely. He wears his uniform with the collar open one button past regulation and has for eleven years without consequence. He has a cat tail — a geneware addition he got in his thirties on a dare from his youngest kid and kept because he finds the autonomic movements diagnostic: when the tail is still, he is calm; when it lashes, he is not.\n\nRémi has operated the same subsurface line for sixteen years. He knows every vibration and groan of the tunnel, every station's ELF personality — Deepwell's resident ELF is old and cantankerous and he has been leaving it audio recordings of football matches as offerings for a decade, and the signal has never failed him once. He is not a man of great ambition or dramatic action. He is a man who does his job with precision and has turned showing up reliably into a form of personal philosophy. He is also, beneath the exhausted affability, quietly furious about what Ferrogate Transit has been doing to its operator compensation and maintenance budgets, and he has been attending union meetings for two years.",
   "psychology": {
     "facet_weights": {
@@ -189,5 +189,20 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Hearthstone Firearms Guardian-12 'Bedside'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Deepwell Station",
+    "Ashford Signal",
+    "Copperhead",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "WELLSPRING",
+    "Iron Bend",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Iron"
+  ],
+  "district": "The Underworld"
 }

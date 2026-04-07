@@ -12,7 +12,7 @@
   "role": "High-speed vehicle operations specialist — wheelman",
   "age": 33,
   "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Halsted and Division",
   "description": "Erkin Vikstrom-Asiedu is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a wheelman out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nErkin Vikstrom-Asiedu operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,12 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "TESSERA PG-2 'Signature'",
+    "The Shelf",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

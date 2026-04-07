@@ -12,7 +12,7 @@
   "role": "airship drifter, seasonal worker, scavenger-trader",
   "age": 14,
   "status": "active",
-  "location": "Manitowoc Drydock, living in and around the maintenance scaffolding of grounded airship hulls",
+  "location": "Manitowoc Drydock, living in and around the maintenance scaffolding of grounded airship hulls, near North Ave and Milwaukee",
   "description": "Phúc is small for fourteen, and he has made his smallness into a professional skill — he can fit into the access shafts of a grounded airship hull that no adult can reach, which is why the drydock workers let him stay on the scaffolding rather than running him off. His hair is black and cut by himself with whatever he can find; currently one side is shorter than the other and he seems unbothered. His skin is a warm medium brown, and he has cat ears — real geneware ones, tawny-furred and independently mobile, which he got from a traveling mod-clinic two years ago using money he still won't explain. He keeps them flat when he wants to seem smaller and unthreatening, which is most of the time.\n\nPhúc has been drifting the airship lanes since his mother's cargo vessel was impounded by Ferrogate Transit for unpaid port fees when he was eleven. He doesn't know where she is now. He cooks this knowledge in a place behind his sternum and does not take it out often. He is extremely competent in all matters relating to airship maintenance, scavenging, and the informal economy of drydock communities, and he has the bright, slightly exhausting energy of a teenager who has learned that being useful is safer than being visible.",
   "psychology": {
     "facet_weights": {
@@ -166,5 +166,12 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Manitowoc Drydock",
+    "Flicker",
+    "Synaptic Drift Emitter SDE-4 'Lullaby'"
+  ],
+  "district": "Nomadic"
 }

@@ -12,7 +12,7 @@
   "role": "Cross-district contraband specialist — smuggler",
   "age": 37,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
   "description": "Daulet Novak-Tetteh is average height but with a presence that fills more space than the body accounts for. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Daulet Novak-Tetteh describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,11 @@
   "carried_weapons": [
     "Street-Custom Loaded Pipe 'Bell Ringer'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "Meridian 88",
+    "Slagworks Industrial"
+  ],
+  "district": "Old Harbor"
 }

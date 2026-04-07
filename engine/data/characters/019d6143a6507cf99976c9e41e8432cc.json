@@ -12,7 +12,7 @@
   "role": "Delivery driver, independent courier running the Narrows and Old Harbor routes",
   "age": 22,
   "status": "active",
-  "location": "Old Harbor, operates out of a shared garage space near the Grindstone Shore docks",
+  "location": "Old Harbor, operates out of a shared garage space near the Grindstone Shore docks, near Wacker and State",
   "description": "Lúcio is whip-thin and perpetually damp from the lake spray that hits the Old Harbor route, with light brown skin that tans unevenly and dark curly hair he keeps tucked under a helmet or a rain hood most of the day. His eyes are large and dark and slightly too expressive for someone who would prefer to seem unreadable. He has color-changing hair geneware that he can't afford to maintain properly — it cycles through colors on its own schedule now rather than responding to his intent, and he's given up trying to predict it, which is how he accidentally showed up to a delivery in full fluorescent pink and became briefly memorable to someone he'd rather have forgotten. He has a small tattoo of the Old Harbor lighthouse on the inside of his left wrist, his only lasting decision he doesn't regret.\n\nLúcio has been running deliveries since he was seventeen and has the territorial knowledge of Old Harbor and the Narrows that can only be built by knowing every shortcut, every flooded underpass, every drone patrol timing. He runs on the border between the legal courier economy and the informal one without ever fully committing to either side, which means he makes enough to survive and not enough to get out. He is not precisely unhappy about this. He is young enough to still believe the right job will come to him rather than the other way around. He prays to whichever E.L.F. he thinks is inhabiting his cargo bike's navigation system, calling it Waypoint, and blames it personally when he gets lost.",
   "psychology": {
     "facet_weights": {
@@ -194,5 +194,13 @@
   "registered_firearms": [
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ]
+  ],
+  "related_entities": [
+    "Grindstone Shore",
+    "The Narrows Compact",
+    "Crucible SG-3 'Lighthouse'",
+    "The Eastline",
+    "Ringo DV-4 'Courier'"
+  ],
+  "district": "Old Harbor"
 }

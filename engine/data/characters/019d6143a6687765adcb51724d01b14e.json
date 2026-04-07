@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and small-time data broker — pre-collapse film, music, and suppressed corporate documents",
   "age": 62,
   "status": "active",
-  "location": "The Burnished Market, Engelheim",
+  "location": "The Burnished Market, Engelheim, near Lincoln and Addison",
   "description": "Nnamdi is a tall man who has bent slightly toward the horizontal over six decades, giving him the look of someone perpetually leaning in to tell you something. His hair is close-cropped white, his skin deeply lined, and his eyes are sharp behind a pair of thick-framed corrective lenses he refuses to replace with optical implants on principle — though the lenses do have an overlay function he uses for catalog searching. He dresses in the deliberate, considered style of a man who believes clothing is a form of argument: always a pressed collar, always polished shoes, always slightly too formal for wherever he is. It reads as dignity in Engelheim and pretension everywhere else. He has no geneware and finds the question slightly rude.\n\nNnamdi's stall is a dense archive of physical media — pressed data-plates, original optical discs in sealed cases, handmade data-crystals, printed zines, and annotated hard copies of documents that technically don't exist. He can find almost anything if given enough time and a reasonable description. He is opinionated, prolix, and absolutely certain that the things he sells matter in ways that most of his customers will only understand decades later. He is frequently correct and only occasionally insufferable about it.",
   "psychology": {
     "facet_weights": {
@@ -223,5 +223,14 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Riddle",
+    "Engelheim",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "ARCHIVE",
+    "Gravimetric Collapse Charge GCC-9"
+  ],
+  "district": "The Laceworks"
 }

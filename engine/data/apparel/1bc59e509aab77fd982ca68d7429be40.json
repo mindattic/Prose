@@ -1,0 +1,36 @@
+{
+  "id": "1bc59e509aab77fd982ca68d7429be40",
+  "name": "Nomura Streetwear Heated Core Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "An affordable heated base layer with resistive elements focused on the torso core — chest, kidneys, and lower back. A small rechargeable battery in the waistband provides six hours of heat on a single charge. The fabric is basic polyester-blend; the technology is simple and reliable.\n\nThe cheapest heated underlayer on the market, sold at Shelf district vendors during winter months. The Heated Core Layer doesn't regulate temperature intelligently — it just adds heat where your body needs it most. Simple, warm, and accessible to people who can't afford smart-fabric solutions.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "polyester blend",
+    "resistive heating elements",
+    "rechargeable waistband battery"
+  ],
+  "functionality": "Core-area heating, 6-hour battery life, basic thermal support",
+  "what_it_says": "You're cold and you spent what you could to stay warm where it matters most.",
+  "worn_by": [
+    "Shelf residents",
+    "outdoor workers",
+    "anyone who's cold"
+  ],
+  "manufacturer": "Nomura Streetwear",
+  "price_range": "Φ75",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Heated Core Layer's battery is found drained in an environment that wasn't cold — someone used the resistive heating elements for something other than warmth."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 1",
+    "heated",
+    "affordable",
+    "Shelf",
+    "winter"
+  ]
+}

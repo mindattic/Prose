@@ -12,7 +12,7 @@
   "role": "stateless person, itinerant document-writer, community letter-scribe",
   "age": 67,
   "status": "active",
-  "location": "Grand Crossing Gate — maintains a small folding table near the transit registry office, moves inside Kenosha Crossing when weather turns",
+  "location": "Grand Crossing Gate — maintains a small folding table near the transit registry office, moves inside Kenosha Crossing when weather turns, near beyond the Western Perimeter",
   "description": "Bogumił is a tall man running to stoop, with the scholar's habit of hunching over whatever he is reading. He is entirely bald, his scalp tattooed with dense blocks of tiny script in four languages — a practice he began decades ago to preserve documents he had no other way to store. His skin is a warm medium brown, deeply lined, his hands enormous and precise with long, ink-stained fingers that have never had augmentations because he insists it would affect his sense of pressure when writing. He wears a many-pocketed coat he has modified over thirty years and carries a hard-sided case containing twelve different inks, eight nib types, and two manual printing stamps.\n\nBogumił was a mid-level bureaucratic administrator for a municipal authority that no longer exists — dissolved into a Tessera subsidiary sixteen years ago, its records wiped in the transition. He was among the thousands of employees whose legal identity existed only in that municipal database. He has spent sixteen years as a stateless person, surviving by doing what he has always done: writing. He drafts petitions, translates documents, writes letters for refugees who cannot write in the official Meridian script, and produces the kind of careful, formatted paperwork that makes authorities treat stateless people as less invisible. He is bitterly funny about his situation, philosophically resigned, and practically indispensable to the people around him.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,13 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "Kenosha Crossing",
+    "Tessera Corponation",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pure Hand"
+  ],
+  "district": "Nomadic"
 }

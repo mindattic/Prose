@@ -12,7 +12,7 @@
   "role": "Night-shift cook, 24-hour canteen in the Hamtramck Enclave",
   "age": 26,
   "status": "active",
-  "location": "Hamtramck Enclave, 'Marta's Canteen' — technically named after the original owner, Zipporah runs the 2200-0600 shift",
+  "location": "Hamtramck Enclave, 'Marta's Canteen' — technically named after the original owner, Zipporah runs the 2200-0600 shift, near Pulaski and Chicago Ave",
   "description": "Zipporah is wiry and restless in the way of someone whose body has never learned to be still — they bounce a knee, tap a rhythm on the counter, flip a spatula even when nothing is cooking. Their skin is a warm medium brown and their geneware includes bioluminescent freckles across their cheeks and collarbones that pulse faintly blue when their heart rate elevates, which is often. They keep their hair buzzed on the sides and natural on top, currently dyed a deep copper that doesn't quite match their natural dark brown at the roots. They have one retractable claw mod on their right hand's index finger that they got at seventeen and use almost exclusively to open packaging.\n\nZipporah is the night canteen's entire personality. The Enclave's late-shift workers — third-shift Ferrogate operators, clinic nurses, waste handlers — come as much for the conversation as the food. Zip has a gift for making people feel found rather than seen, which is different. They are also running on a permanent low-grade sleep deficit that they treat as a point of pride, are catastrophically bad with money, and have recently become slightly obsessed with the E.L.F. they believe inhabits the canteen's ancient griddle — they call it Sizzle and have begun leaving it tiny sculptures made of food scraps shaped into abstract geometric forms.",
   "psychology": {
     "facet_weights": {
@@ -208,5 +208,14 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-44 'Fenris'",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Ferrogate Transit",
+    "Palladian Construction",
+    "Copper",
+    "Bashir Quansah-Mehrotra"
+  ],
+  "district": "The Shelf"
 }

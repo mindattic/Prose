@@ -12,7 +12,7 @@
   "role": "Barber and wig fabricator",
   "age": 27,
   "status": "active",
-  "location": "The Burnished Market, Stall 44 — a converted cargo container with a fold-down awning and two hydraulic chairs",
+  "location": "The Burnished Market, Stall 44 — a converted cargo container with a fold-down awning and two hydraulic chairs, near North Ave and Damen",
   "description": "Blessing is compact and precise in the way of someone who trained their body to be a tool — every movement economical, nothing wasted. They have warm beige skin with faint Polynesian wave tattoos climbing their neck and right arm, inherited from a great-grandmother they never met but whose designs they researched obsessively and reproduced as faithfully as they could. Their hair changes color by choice — geneware follicle pigmentation that they recalibrate every few weeks, currently a deep teal shading to copper at the tips. They wear a barber's apron with twelve pockets and know exactly what is in each one.\n\nAt twenty-seven they already have a three-month waiting list for their sculpted wig work — elaborate constructions of synthetic fiber, reclaimed human hair, and occasionally live-root geneware strands that shift color in response to mood. They treat haircutting as sculpture and gossip as a natural byproduct of intimacy, which means they know things about the Burnished Market's social dynamics that most people would be surprised to learn they know. They are sweet-tempered and ferocious in equal measure and the ratio can shift without visible warning.",
   "psychology": {
     "facet_weights": {
@@ -245,5 +245,14 @@
   "registered_firearms": [
     "Crucible Industries Cerberus-357 'Hellhound'",
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Helix Biosystems",
+    "The Drowned Commission",
+    "Grandmother",
+    "The Gradient Compact",
+    "Copper"
+  ],
+  "district": "The Circuit"
 }

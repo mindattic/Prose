@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator — drives a night-shift surface tram on the Geartown-Bronzeline circuit",
   "age": 34,
   "status": "active",
-  "location": "Lives in a capsule flat in Bronzeline; works the tram route between Geartown depot and the Bronzeline terminus",
+  "location": "Lives in a capsule flat in Bronzeline; works the tram route between Geartown depot and the Bronzeline terminus, near Milwaukee and Damen",
   "description": "Crisanto is lean and long-limbed, with the particular posture of someone who has spent years in a driver's seat — slightly forward, shoulders loose, hands always finding something to rest near. He has his mother's Yoruba complexion, deep and warm, and his father's Scandinavian bone structure, which gives his face an angular elegance he is utterly unaware of. His hair is cut close on the sides and left natural on top, and he has geneware-modified irises that cycle slowly through amber, gold, and pale yellow — a cosmetic mod he saved up for at twenty-two and has never regretted. A faded scar bisects his left eyebrow from a childhood fall.\n\nHe is a fundamentally decent man who chose a fundamentally anonymous job and has found, to his mild surprise, that this suits him. He talks to his passengers — not intrusively, but gently, in the way of a good host — notices who boards tired, who boards scared, who needs the fare scanner to 'malfunction' because they're clearly two days from eating. His tram is clean. He plays low-frequency ambient music through the cabin speakers after midnight and thinks of it as a public service. He carries a notebook — actual paper — in which he sketches the faces of interesting passengers, never with names, never to share.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,21 @@
   "registered_firearms": [
     "Crucible Industries Anti-Materiel DMR AMDMR-5 'Verdict'",
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Lambeau Terminus",
+    "Bronzeline",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Geartown",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

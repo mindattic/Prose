@@ -1,0 +1,36 @@
+{
+  "id": "677db55ebe4f4d6f3db8ffef12530354",
+  "name": "Apex Dynamics Electrostatic Dissipation Bodysuit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A full-body base layer woven with carbon-nanotube threads that continuously dissipate static charge across the entire skin surface, preventing localized buildup. The suit grounds through conductive foot pads and maintains a neutral electrical state regardless of the environment — critical for workers in low-humidity manufacturing environments where a single spark can destroy product worth millions.\n\nThe ESD Bodysuit is the invisible foundation under every cleanroom smock and assembly-floor uniform in Meridian 88 electronics manufacturing. Workers forget they are wearing it until the day they forget to put it on, and a static discharge ruins a wafer batch worth more than their annual salary.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "carbon-nanotube threads",
+    "conductive foot pads",
+    "anti-static weave"
+  ],
+  "functionality": "Continuous static dissipation, full-body grounding, spark prevention",
+  "what_it_says": "You handle components so sensitive that the static charge from your own body could destroy them, and this suit keeps you electrically invisible.",
+  "worn_by": [
+    "electronics manufacturers",
+    "cleanroom workers",
+    "precision assembly technicians"
+  ],
+  "manufacturer": "Apex Dynamics",
+  "price_range": "Φ390",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An ESD Bodysuit is found modified with a charge-accumulation switch — instead of dissipating static, it can store it and release it on command, turning the wearer into a walking capacitor capable of delivering a disabling shock."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 2",
+    "ESD",
+    "anti-static",
+    "electronics",
+    "manufacturing"
+  ]
+}

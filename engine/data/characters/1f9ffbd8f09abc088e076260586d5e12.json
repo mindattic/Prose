@@ -10,7 +10,7 @@
   "description": "Ravi Eriksson-Mensah is one of perhaps thirty certified BCI forensic examiners in Meridian 88, and one of the best. His work sits at the intersection of neuroscience, data analysis, and detective work — he reads the data that brain-computer interfaces record, voluntarily or involuntarily, and uses it to reconstruct events, prove identity, establish timelines, and occasionally recover memories the subject themselves has forgotten.\n\nBorn to a Swedish-Indian father and Ghanaian mother, Ravi was a neuroscience researcher at the Axiom Institute before the ethical constraints of corporate research drove him into private practice. He discovered that academic rigor applied to investigative work produced results that neither pure scientists nor pure investigators could match. His testimony has been accepted in corporate arbitration courts across Tiers 2-4, and his findings have both convicted and exonerated subjects in cases ranging from theft to murder.\n\nThe darkness of his work is cumulative. Every deep scan means spending hours inside someone else's most intimate neural experiences — their fears, their pleasures, their traumas. Ravi has experienced more of other people's lives than most people experience of their own, and it has made him simultaneously more empathetic and more withdrawn. He knows what people are really thinking because he has literally been inside thousands of heads, and that knowledge has made genuine human connection almost impossible for him.",
   "affiliation": "Independent — certified BCI forensic examiner, court-recognized expert",
   "tier": "Tier 3",
-  "location": "A sterile clinic-office hybrid on Kessler Row, equipped with neural scanning equipment that costs more than most apartments",
+  "location": "A sterile clinic-office hybrid on Kessler Row, equipped with neural scanning equipment that costs more than most apartments, near Halsted and Chicago Ave",
   "specialization": "BCI forensics — reading neural data trails, memory fragment recovery, cognitive timeline reconstruction",
   "methods": [
     "Deep BCI data extraction — recovering deleted memories and experiences from neural storage",
@@ -62,5 +62,13 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Tessera Industries Deep Scan Penetrating Radar DSR-1",
+    "Chimera-Null",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

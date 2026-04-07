@@ -12,7 +12,7 @@
   "role": "Street food stall operator specializing in fermented protein pastes and synthetic grain bowls",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, stall row near the Bronzeline tram stop",
+  "location": "The Oxidian Market, stall row near the Bronzeline tram stop, near Western and Chicago Ave",
   "description": "Oumar is a broad-shouldered man whose face has been carved into a topographic map of a hard life — deep creases around the eyes, a nose that was broken twice and never properly reset, earlobes stretched by old gauge piercings long since abandoned. His skin is a warm dark brown, and he moves with the unhurried gravity of someone who has learned that rushing accomplishes nothing in a market that opens before dawn and closes after midnight. His left forearm bears a faded Oxidian Market vendors guild tattoo, and above his cooking station he has mounted a small copper shrine to Ε-7, an E.L.F. he swears protects the fermentation cultures he started eighteen years ago. He talks to it every morning before lighting his burners.\n\nHe is not a warm man exactly, but he is a fair one. Regular customers get a finger-width more paste. New customers get the same measured scoop and a look that assesses whether they're the kind of person who tips or the kind who complains. He remembers faces better than names, has strong opinions about spice ratios, and will argue with you for ten minutes about fermentation temperature as genuine joy. What looks like stubbornness is mostly just accumulated certainty — he has been doing this exact thing since he was forty and knows it better than most people know anything.",
   "psychology": {
     "facet_weights": {
@@ -219,5 +219,17 @@
   "registered_firearms": [
     "Arcturus Defense Solutions AR-7 'Mandate'",
     "Volkov-Saito Precision VS-40 'Magistrate'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Bronzeline",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Big Rig",
+    "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
+    "Tessera Corponation",
+    "Copper",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

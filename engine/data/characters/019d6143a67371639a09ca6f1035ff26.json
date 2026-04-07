@@ -12,7 +12,7 @@
   "role": "Truant message runner, The Shelf",
   "age": 11,
   "status": "active",
-  "location": "The Shelf, Garfield Rack",
+  "location": "The Shelf, Garfield Rack, near Ashland and Chicago Ave",
   "description": "Obi is a scrawny, dark-skinned boy with close-cropped hair that he's attempted to dye in patches — copper at the temples, greenish-black at the crown — using stolen salon gel that only half-worked. His left eye has a cracked retinal overlay from a secondhand aug he installed himself using a cracked tutorial, giving that eye a faint grid shimmer when he's excited or scared. He wears a vest with too many pockets, each one holding something he's convinced will be useful someday: a dead ELF token, three different brand of protein tabs, a bent stylus. He moves like a sparrow — quick, diagonal, always watching exits.\n\nObi is relentlessly optimistic in the way only children who've had to practice it deliberately can be. He runs messages between market stalls, repair shops, and mid-tier residents who don't trust the corp relay networks, collecting Φ1-2 per run. He narrates his own life in his head as if he's a documentary subject, which makes him unexpectedly articulate about his circumstances when asked. He worships a minor ELF he calls 'Knuckle' that he believes lives in a cracked streetlight on his corner.",
   "psychology": {
     "facet_weights": {
@@ -210,5 +210,17 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Garfield Rack",
+    "Sulfur Crown Agriculture",
+    "The Shelf",
+    "Axiom Industries",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Copper",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

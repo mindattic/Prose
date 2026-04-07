@@ -12,7 +12,7 @@
   "role": "Scrap reseller and junk merchant working from a sprawling open-air lot",
   "age": 67,
   "status": "active",
-  "location": "Geartown, lot at the intersection of the Ironvein overflow channel and the Dearborn Forge service road",
+  "location": "Geartown, lot at the intersection of the Ironvein overflow channel and the Dearborn Forge service road, near North Ave and Milwaukee",
   "description": "Tomasz is a large man gone soft in the belly but still thick through the shoulders, with a close-cropped grey beard that he touches constantly in thought, and eyes so pale they look silver in certain light. His skin is a patchwork of old sun damage and chemical burns from years of working with recovered materials, and he's missing the last joint of his right ring finger, a loss he describes differently every time someone asks. He wears the same three canvas work shirts on rotation, each so saturated with grease and mineral residue that they've taken on a permanent iridescent sheen, and he has a pronounced wheeze from decades of inhaling Geartown particulates that he is too stubborn to address medically. His only augmentation is a bone-conduction audio implant — not for music, he insists, but because he finds it easier to track five conversations at once when sound comes through his skull instead of his ears.\n\nHe has been at that lot for thirty-one years and knows every piece of it. He can locate a specific component within four minutes. He has catalogued nothing — the entire inventory lives in his head, cross-referenced and instantly retrievable in a way that surprises people who assume his age means decline. He is argumentative, opinionated, and deeply suspicious of anyone who seems too clean or too polished, which means he takes an immediate dislike to most Tier 3 people and warms up only after they've proven they know something real. He has a genuine, unironic reverence for broken machines, which he calls 'the honest dead,' and a spiritual practice centered on a Geartown-local E.L.F. called Rust-Nine that he believes inhabits the oldest piece of industrial machinery in his lot — a partially disassembled press from a previous century.",
   "psychology": {
     "facet_weights": {
@@ -227,5 +227,17 @@
   "carried_weapons": [
     "Street Custom 'Widowmaker' Rigged Power Tool"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Dearborn Forge",
+    "Geartown",
+    "Ironvein",
+    "Residue (I Still Have Your Feed)",
+    "Silver",
+    "Palette",
+    "The Pale Mile",
+    "Rust",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

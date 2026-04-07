@@ -12,7 +12,7 @@
   "role": "Forensic Technician, Meridian 88 Metro Police",
   "age": 29,
   "status": "active",
-  "location": "Deepwell Station",
+  "location": "Deepwell Station, near sub-level access near LaSalle and Congress",
   "description": "Praxiteles is angular and precise — sharp cheekbones, long fingers perpetually stained faint violet from reactant solution, hair grown out in loose curls they keep loosely pinned and often forget about. Their skin is a warm amber-brown, and they have a single cosmetic mod — a patterned iris treatment that makes their eyes look like cracked obsidian with gold underneath, chosen because they liked the aesthetic at twenty-two and have never bothered to change it. They dress with the particular carelessness of someone who knows they'll be in a lab coat within twenty minutes of leaving home anyway.\n\nDeepwell Station's forensic lab is their kingdom, and they are a benevolent but absolute ruler of it. They speak to evidence the way other people speak to colleagues — with expectation, with argument, with occasional grudging respect. They are extraordinarily good at their job and have the low-grade social difficulty of someone who spent their developmental years more interested in trace analysis than people. They are not unkind — they are simply operating on a slightly different frequency, one that detects molecular traces and misses tone of voice. They have a fierce, private ethical core and a growing horror at the gap between what their lab reports show and what the official case conclusions say.",
   "psychology": {
     "facet_weights": {
@@ -259,5 +259,16 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
     "Hearthstone Firearms Guardian-12 'Bedside'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Ringo RB-1 'Judas Goat'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Lacuna Genomics",
+    "Irontide Tidal Energy",
+    "TESSERA PA-5 'Attendant'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Gold"
+  ],
+  "district": "The Underworld"
 }

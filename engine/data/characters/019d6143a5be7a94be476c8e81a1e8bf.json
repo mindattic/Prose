@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor, The Burnished Market",
   "age": 58,
   "status": "active",
-  "location": "The Burnished Market, permanent pitch at the corner of Grainfort and Ironvein",
+  "location": "The Burnished Market, permanent pitch at the corner of Grainfort and Ironvein, near North Ave and Damen",
   "description": "Babatunde is a large, slow-moving man with the kind of bulk that was once muscle and has settled into something more geological. His skin is dark walnut brown, his beard full and peppered grey-white, worn in four loose plaits he ties back during service hours. His Turkish grandmother gave him the Öztürk and a nose like a falcon's beak; his Samoan great-grandfather gave him the Savea and shoulders like a doorframe. He wears the same thing every day: a heat-resistant apron over a sleeveless thermal, arms bare to show the geometric Samoan-style tattoo that wraps from his left wrist to his shoulder, and under it on the inside of his wrist, half-hidden, a small Yoruba adinkra symbol his mother pressed there with a needle when he was seven. Behind the cart he moves with surprising economy, three things happening in each hand simultaneously.\n\nHe doesn't talk much while working, but when the lunch rush ebbs he will lean on the cart and hold a conversation that feels unhurried in a way that is almost physically restful. He has opinions about everything — city politics, the flavor profile of various E.L.F.s' preferred data offerings, whether the Ferrogate expansion is actually gentrification in a steel tube — but he delivers them the way he delivers broth: slow, hot, with depth that surprises you. He has been at this corner for twenty-two years. He knows every face.",
   "psychology": {
     "facet_weights": {
@@ -191,5 +191,19 @@
     "Meridian Munitions Dispatch-45 'Last Word'",
     "Street Custom 'Glass Garden' Caltrops"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Grandmother",
+    "The CEO",
+    "Ferrogate Transit",
+    "Grainfort",
+    "Ironvein",
+    "Tessera Corponation",
+    "Walnut",
+    "Needle",
+    "Steel",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Circuit"
 }

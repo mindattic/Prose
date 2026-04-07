@@ -12,7 +12,7 @@
   "role": "Barber and tattoo-adjacent skin artist at a combined barbershop in The Ferment Quarter",
   "age": 27,
   "status": "active",
-  "location": "The Ferment Quarter — a four-chair shop called The Guillotine, above a fermentation bar on Brewer's Spine",
+  "location": "The Ferment Quarter — a four-chair shop called The Guillotine, above a fermentation bar on Brewer's Spine, near Milwaukee and North Ave",
   "description": "Chiamaka is short and compactly built, with the precise hands of someone who has trained the tremor out of their nervous system through ten thousand repetitions. Their skin is deep brown-black with bioluminescent patches they had inked along their collarbones and forearms — the bioluminescence pulses slowly when they are calm and quickens when they are excited, which makes them a very poor liar in dim lighting. They have color-changing hair currently set to a slow cycle through amber-to-rust tones; they change the cycle depending on season and mood, and their regulars track it as a barometric instrument for the shop's atmosphere.\n\nChi is the youngest full-time operator at The Guillotine and the busiest by appointment count. They have a gift for reading what a client wants even when the client cannot articulate it — they ask three questions and then go quiet, and the quiet is not uncomfortable. They are also quietly accumulating power in the Ferment Quarter social ecosystem, because the barbershop chair is where people say things they would not say anywhere else, and Chi has a memory like archival storage and a policy of never speaking ill — only listening. Off the clock they are louder, funnier, and significantly more likely to start a dance in a hallway.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,21 @@
   "registered_firearms": [
     "Crucible Industries Siege DMR SDMR-3 'Bastion'",
     "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
-  ]
+  ],
+  "related_entities": [
+    "The Ferment Quarter",
+    "Brewer's Spine",
+    "Crucible Industries Harmonic Zweihander HZ-1 'Earthquake'",
+    "Timekeeper",
+    "Lazarus EC-4 'Companion'",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Rust"
+  ],
+  "district": "The Circuit"
 }

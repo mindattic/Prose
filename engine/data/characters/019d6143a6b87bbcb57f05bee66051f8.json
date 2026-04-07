@@ -11,7 +11,7 @@
   "role": "Private Investigator, freelance",
   "age": 38,
   "status": "active",
-  "location": "Copperhead",
+  "location": "Copperhead, near Damen and Armitage",
   "description": "Roshan operates out of a two-room office above a synthetic-meat processing plant in Copperhead, which means the whole building smells faintly of rendered protein and their clothes always carry it. They are medium-height and built lean, with dark brown skin, a shaved head kept glossy, and cat ears — matte black, constantly swiveling — that they got in their late twenties and which have proved professionally useful in surveillance contexts. Their eyes are standard human but surrounded by fine scleral tattooing in deep indigo that gives them a slightly uncanny quality in certain lighting. They dress for invisibility: nothing remarkable, nothing memorable, colors that belong to whatever district they're working.\n\nThey have the particular emotional intelligence of someone who survived a chaotic childhood by reading rooms faster than anyone else. They are charming in exactly calibrated doses — enough to open doors, not enough to invite attachment — and they have a gift for making people feel seen and understood that they deploy like a tool. They are not cynical, exactly. They still take cases for people who can't pay full rate, still get angry when they find what they find, still leave data offerings at the Copperhead neighborhood E.L.F. shrine. But they have built a careful architecture of professional distance that they defend with wit and deflection.",
   "psychology": {
     "facet_weights": {
@@ -257,5 +257,11 @@
   "registered_firearms": [
     "Arcturus Defense Solutions ARC-P1 'Centurion'",
     "Nkomo-Lindqvist NLR-9 'Counselor'"
-  ]
+  ],
+  "related_entities": [
+    "Copperhead",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Irontide Tidal Energy"
+  ],
+  "district": "The Circuit"
 }

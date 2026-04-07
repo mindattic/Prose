@@ -12,7 +12,7 @@
   "role": "Neighborhood council member and mutual aid organizer",
   "age": 62,
   "status": "active",
-  "location": "Hough Reclamation",
+  "location": "Hough Reclamation, near Kedzie and Division",
   "description": "Gavril is a heavyset man with a dark complexion going ashy at the edges, a silver beard kept short and neat, and the particular kind of stillness that comes from having survived more than one round of everything. He has a prosthetic left hand — a basic civic-grade model that he's had for twenty-two years and painted to match nothing, leaving it the utilitarian grey it came in. He wears reading glasses he doesn't need augmented, just prefers, and he is almost always carrying something — a bag of supplies, someone's paperwork, a covered dish.\n\nGavril has been a Hough Reclamation neighborhood council member for fourteen years, which is long enough that he has seen four different corponation community liaison programs cycle through, promise the world, and quietly exit. He runs the Hough mutual aid grid — a distributed network of food stores, medical supply lockers, and emergency shelter contacts that has kept the neighborhood fed and housed during two infrastructure blackouts and a Ferrogate transit strike. He is not charismatic in the convention sense. He is simply reliable, which in Hough Reclamation is rarer and more valued.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,13 @@
     "Street Custom 'Baptism' Electrified Water Cannon",
     "Forge-Smith Collective Trench Knuckles 'Anvil'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "Ferrogate Transit",
+    "The Reclamation Assembly",
+    "Highland Park Autonomous Zone",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

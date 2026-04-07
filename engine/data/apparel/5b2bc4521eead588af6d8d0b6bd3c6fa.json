@@ -1,0 +1,36 @@
+{
+  "id": "5b2bc4521eead588af6d8d0b6bd3c6fa",
+  "name": "Korvain Dynamics Tactical Utility Belt",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A modular belt system with quick-detach pouches, magazine holders, and equipment loops. The belt's core is reinforced nylon webbing rated to support up to 15kg of distributed weight without sagging. Each pouch is individually accessible without disturbing adjacent equipment.\n\nThe standard load-bearing platform for private security, runners, and anyone who needs to carry more than their pockets allow. The belt comes unloaded — how it's configured says everything about what its wearer expects to encounter.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "reinforced nylon webbing",
+    "quick-detach hardware",
+    "molded polymer pouches"
+  ],
+  "functionality": "Modular equipment carrying, 15kg load rating, quick-access pouches",
+  "what_it_says": "You carry your tools where you can reach them because reaching too slow has consequences.",
+  "worn_by": [
+    "security personnel",
+    "runners",
+    "field operatives"
+  ],
+  "manufacturer": "Korvain Dynamics",
+  "price_range": "Φ340",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A tactical belt found abandoned in an alley is configured for a very specific loadout — breaching charges, medical kit, and a pouch sized for a data core that was clearly the target of whatever operation the wearer was running."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 2",
+    "belt",
+    "tactical",
+    "modular",
+    "Korvain"
+  ]
+}

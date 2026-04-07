@@ -12,7 +12,7 @@
   "role": "Orphan, gang prospect (junior affiliate); Stockyard territory, does odd jobs for the Copperheads",
   "age": 9,
   "status": "active",
-  "location": "The Stockyard",
+  "location": "The Stockyard, near Western and Chicago Ave",
   "description": "Mbeki is a small, round-faced nine-year-old with his South African grandfather's dark complexion and his Russian grandmother's light gray eyes, a combination that makes people look at him twice in a way he has not yet decided whether to be proud of. He has been at the Stockyard's communal housing block since he was six, when his mother didn't come back from a job and no one came to explain why. He has the characteristic roughness of a Stockyard kid — scuffed knees, hair grown out past caring, a jacket two sizes too large that he found and claimed as territory. He has no augmentations of any kind. The Copperheads, a junior street crew that operates in the Stockyard's eastern blocks, have noticed him the way they notice all the unattached kids — as resource or recruitment opportunity. So far he has run two lookout shifts for them, for which he was paid in food rather than Quanta, which tells you something about both the crew's resources and his bargaining position.\n\nHe is, underneath the hard-knock exterior, a nine-year-old who still sleeps with his knees pulled to his chest and who has attached himself to a specific E.L.F. he calls Glow that he believes lives in the light-strip above his communal bunk. He leaves it small paper offerings — drawings, mostly — folded under the fixture every night. He is fiercely protective of two things: a palm-sized carved wooden animal his mother left in the housing block storage, and a seven-year-old girl named Polu in the adjacent bunk who cannot defend herself the way he has learned to.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Stockyard",
+    "The CEO",
+    "Grandmother",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Elena Vasquez-9",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

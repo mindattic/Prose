@@ -13,7 +13,7 @@
   "role": "Street-level information broker / Unofficial district archivist",
   "age": 19,
   "status": "active",
-  "location": "Old Harbor (primary), The Circuit (work)",
+  "location": "Old Harbor (primary), The Circuit (work), near Michigan Ave and Roosevelt",
   "description": "Orvyn Specht is nineteen years old and looks sixteen and has survived this discrepancy by being faster than people expect and more useful than people intend. He is slight, pale-skinned with a spray of freckles across dark circles, with hair that grows in three directions regardless of what he does to it. He moves through Old Harbor like a person who has memorized every exit, which he has—not as a paranoid exercise but as an intellectual one. He maps things. Streets, social networks, grudge lines, debt relationships, who owes what to whom and who is lying about it. He sells this information in small, carefully portioned pieces to people who don't know how much of the whole picture he's already holding.\n\nOrvyn grew up in the informal settlement layers of Old Harbor, raised by an older sister who left when he was twelve and a rotating cast of neighbors who fed him when they remembered to. He is not bitter about this. He is, in a way that sometimes unnerves people who probe it, genuinely cheerful—a relentless, low-grade delight in the texture of information itself, in the way a rumor travels and changes, in the gap between what people say and what the map of their behavior reveals. He keeps physical notebooks filled with hand-drawn cartography: not just geography but social topology, annotated in a cramped personal shorthand no one else can read.\n\nHe operates out of a specific corner booth in a noodle shop called Haecht's in Old Harbor, where he has an informal arrangement with the owner, and from a secondary position near the transit interchange in The Circuit where he sells low-grade data to mid-tier runners and fixers. He has no bodyguard, no crew, no weapon beyond a short blade he has used exactly once. His protection is that he knows too much about too many people for any single actor to find his disappearance profitable, and he has made sure that enough of them know this.",
   "psychology": {
     "facet_weights": {
@@ -246,5 +246,15 @@
   "registered_firearms": [
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
-  ]
+  ],
+  "related_entities": [
+    "The Circuit",
+    "The Spire",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Lacuna Genomics",
+    "Nesting Doll",
+    "The Pale Mile"
+  ],
+  "district": "Old Harbor"
 }

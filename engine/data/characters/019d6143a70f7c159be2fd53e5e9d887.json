@@ -12,7 +12,7 @@
   "role": "Junk merchant and scrap reseller",
   "age": 27,
   "status": "active",
-  "location": "The Stockyard, Pier 4 overflow lot, Grainfort",
+  "location": "The Stockyard, Pier 4 overflow lot, Grainfort, near Lake Shore and Navy Pier",
   "description": "Vashti is lean and angular with the kind of wiry strength that comes from hauling scrap rather than any intentional exercise. Their skin is a deep warm brown, and they have geneware cat ears — dusty grey tabby-patterned, which they've never bothered to remove since getting them at nineteen on a dare — that flatten expressively when they're annoyed and perk forward when something catches their interest, which is often. A bioluminescent stripe runs down the back of each forearm, dim pale blue, activated by stress hormones; they've learned to read it as an early warning system for their own anxiety. Their work clothes are pragmatic catastrophes: safety-orange strapping over layered thermals, magnetic tool clips everywhere, boots with steel inserts they sourced from a Ferrogate Transit maintenance surplus sale.\n\nThey have the paradoxical quality of seeming both completely at ease in the chaos of the Stockyard lots and perpetually slightly amused by it, as though the entire enterprise of human commerce is a joke they're in on. Their actual eye for value is extraordinary — they can assess a pile of mixed scrap and name a fair price in under thirty seconds, and they're almost never wrong. They're known for being the only merchant in Grainfort who won't claim something works if it doesn't.",
   "psychology": {
     "facet_weights": {
@@ -178,5 +178,19 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street Custom 'Backfire' Weaponized Exhaust System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Stockyard",
+    "Grainfort",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "West Engelheim",
+    "Stratum",
+    "Slagworks Industrial",
+    "Tin Man",
+    "Sweeper-11",
+    "The Pale Mile",
+    "Steel"
+  ],
+  "district": "Old Harbor"
 }

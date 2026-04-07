@@ -12,7 +12,7 @@
   "role": "Axiom Security Division corporate campus guard, Grand Corridor Axiom tower",
   "age": 22,
   "status": "active",
-  "location": "Grand Corridor, Axiom Regional Security Post 7",
+  "location": "Grand Corridor, Axiom Regional Security Post 7, near Milwaukee and North Ave",
   "description": "Søndra is twenty-two and looks it — wide-eyed in a way she is actively trying to train out of herself, with warm brown skin, a small spray of geneware freckles across her nose and cheeks that pulse faintly orange under stress (she did not know they would do that when she bought the mod and finds it professionally embarrassing), and her dark hair pulled back in the mandatory Axiom security bun. She is 168cm in boots she is still breaking in. Her uniform fits well because she had it tailored with three months of saved UBC supplement — she wanted at least one thing to look like she belonged.\n\nShe is nine months into her first real job and has not yet decided who she wants to be inside it. She follows the rulebook with the anxious precision of someone who has read it twice and is afraid of what happens if she gets something wrong. She is genuinely friendly to the researchers and admin staff who pass her post, has learned most of their names, and does small considerate things like remembering who takes the late elevator and propping the side door for the cleaning crew. She has not yet been asked to do anything she found troubling. She is waiting, in the back of her head, for that to change.",
   "psychology": {
     "facet_weights": {
@@ -195,5 +195,14 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Grand Corridor",
+    "The Spire",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Arcturus CK-5 'Bloodhound'",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

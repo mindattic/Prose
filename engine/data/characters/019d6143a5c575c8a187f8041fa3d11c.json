@@ -11,7 +11,7 @@
   "role": "Community midwife serving Hamtramck Enclave and surrounding districts",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave",
+  "location": "Hamtramck Enclave, near Kedzie and Division",
   "description": "Blessing is a heavyset woman whose physical presence seems to fill rooms without effort — not loudly, but thoroughly, the way warm air fills a cold space. Her skin is very dark, deeply creased at the eyes and mouth from decades of expressions she never suppressed, and her white hair grows in a wide natural halo that she refuses to modify or dye on principle. One ear carries a cluster of small silver and copper rings, each one given to her by a family whose child she delivered. There are thirty-one of them. Her hands are strong and practiced, and people who have been through labor under her care describe the specific quality of her grip — firm and unfrightened — as the thing they remember most.\n\nShe is a woman of organized faith in two directions simultaneously: she attends a Reconstructionist Yoruba ceremony circle on Tuesdays and maintains a detailed data-shrine to the E.L.F. called Firstcry, patron of births and neonatal systems, on a water-damaged tablet she has repaired seven times. She speaks to Firstcry aloud and does not care who hears. In conversation she is patient past the point that other people are comfortable with, willing to sit in silence while someone finds the words. She is also capable of a firmness that people who mistake her warmth for softness find startling.",
   "psychology": {
     "facet_weights": {
@@ -226,5 +226,15 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Tessera Corponation",
+    "Silver",
+    "Copper",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

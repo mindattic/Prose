@@ -12,7 +12,7 @@
   "role": "Prototype theft and corporate tech acquisition — tech retriever",
   "age": 31,
   "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
   "description": "Vuk Herrera-Kyei is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 31, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a tech retriever out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nVuk Herrera-Kyei operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,13 @@
     "Street Custom 'Molotov Standard' Incendiary Bottle",
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "Old Harbor"
 }

@@ -12,7 +12,7 @@
   "role": "the disappeared — a man who erased himself from surface records, now keeper of unofficial underworld census and histories",
   "age": 41,
   "status": "active",
-  "location": "Deepwell Station, a converted signal relay room he calls the Stack",
+  "location": "Deepwell Station, a converted signal relay room he calls the Stack, near sub-level access near LaSalle and Congress",
   "description": "Tarquin is tall and angular, with the slightly sunken quality of someone who has spent years in recycled air, his complexion a warm brown-olive that has gone ashen from lack of sunlight. He has a shaved head marked by a faint grid of old neural-interface scars along his left temple — the ports are sealed, the hardware removed, the removal itself a statement. He wears clean, plain clothes maintained with obsessive care, which makes him look more out of place underground than rags would. His eyes are pale grey with fracture-line patterning from old cosmetic geneware that he chose not to reverse — the only decoration he kept.\n\nTarquin was a mid-level data analyst at Tessera's logistics division. In 2189 he discovered and documented an internal record of Tessera deliberately rerouting medical supply chains to accelerate attrition in Tier 1 settlements — not malice, just quarterly optimization. He tried the proper channels. Then the improper ones. Then he went underground before Tessera's compliance team finished closing around him. He deleted himself: no biometric records, no credit trace, no registration. He reinvented his purpose — if surface systems record only what serves power, he will record what power ignores. The Stack is filled with handwritten ledgers, carved data-beads, and oral recordings of the people who have no file anywhere.",
   "psychology": {
     "facet_weights": {
@@ -166,5 +166,15 @@
   "carried_weapons": [
     "Crucible Industries Viper Mk.III 'Copperhead'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "Meridian Core",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tessera Corponation",
+    "Irontide Tidal Energy",
+    "ARCHIVE",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

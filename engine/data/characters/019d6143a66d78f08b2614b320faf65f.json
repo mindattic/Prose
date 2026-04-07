@@ -12,7 +12,7 @@
   "role": "Underground press operator and pirate broadcaster",
   "age": 34,
   "status": "active",
-  "location": "Highland Park Autonomous Zone",
+  "location": "Highland Park Autonomous Zone, near Michigan Ave and Chicago Ave",
   "description": "Nnenna is a compact woman with deep brown skin and close-cropped natural hair shot through with copper-dyed locs she clips back when she's working. Her left eye is a salvaged optic implant she bought secondhand — it glows a faint amber in low light and sometimes stutters, giving her an unsettling blink lag. She wears the same canvas jacket most days, patched at the elbows and covered in hand-stitched slogans in four languages. There's a quality to her stillness that makes people think she's always listening, because she is.\n\nNnenna runs 'Groundwave,' an unlicensed audio-visual broadcast that goes out three nights a week through a rotating network of transmitter nodes hidden across the HPAZ. She's brilliant, paranoid in ways that have saved her life twice, and has a gift for making complex political theory sound like something you'd argue about over bad synthetic coffee. She has little patience for performative activism and a sharp tongue for anyone she suspects is building a personal brand on other people's suffering.",
   "psychology": {
     "facet_weights": {
@@ -238,5 +238,15 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-15R 'Reclaim'",
     "Crucible Industries Viper Mk.III 'Copperhead'"
-  ]
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Gradient Compact",
+    "Babel",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Palette"
+  ],
+  "district": "The Spires"
 }

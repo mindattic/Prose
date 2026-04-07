@@ -12,7 +12,7 @@
   "role": "Airship drifter and seasonal cargo hand",
   "age": 34,
   "status": "active",
-  "location": "Escanaba Gateway — berth 14-C, a semi-permanent squat in an abandoned cargo inspection booth",
+  "location": "Escanaba Gateway — berth 14-C, a semi-permanent squat in an abandoned cargo inspection booth, near Michigan Ave South and Cermak",
   "description": "Sorrel is lean and windburned in the way that only comes from years above the clouds, her face a patchwork of sun-damage and old freeze-scars along her left cheekbone where a hull breach caught her at altitude three winters ago. She keeps her hair in tight, practical knots wound with salvaged copper wire, and her eyes are the color of old engine oil — a deep amber-brown that catches light strangely. Her geneware is minimal and functional: slightly thickened fingernail beds that grip rigging better than baseline human fingers, and a subtle secondary eyelid, barely visible, that cuts glare on the lake surface. She is always in motion, even sitting still — fingers working knots, foot tapping hull rhythms, eyes cataloguing exits.\n\nShe is not unfriendly but she is economical. Every word she offers is either useful or a test. She grew up on the mid-lake freight routes between Escanaba and the Meridian docks, daughter of a cargo master who died when a Ferrogate Transit subcontractor cut safety corners on a lift-strut. She has never filed a formal complaint. She has never stopped being angry about it. She ferries messages, small packages, the occasional undocumented passenger — always for Quanta, always in cash, never logged.",
   "psychology": {
     "facet_weights": {
@@ -214,5 +214,14 @@
   ],
   "registered_firearms": [
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Escanaba Gateway",
+    "The Human Baseline Alliance",
+    "Tessera Corponation",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "Old Harbor"
 }

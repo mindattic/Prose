@@ -12,7 +12,7 @@
   "role": "Black market dealer and aug shop owner (unlicensed low-tier augmentation parts)",
   "age": 23,
   "status": "active",
-  "location": "The Oxidian Market, Ironvein",
+  "location": "The Oxidian Market, Ironvein, near Western and Chicago Ave",
   "description": "Amara is short and sharp-featured, with warm dark brown skin, natural hair cut close on the sides and loose on top, and a right arm from the elbow down that is a mismatched patchwork of three different manufacturers' chrome — she's repaired it so many times with whatever parts were available that it has become a kind of portfolio piece, demonstrating exactly what she can do with limited materials. She has cat ears (geneware, a gift from her older sister at fifteen, mottled gray-black) that she keeps unselfconsciously expressive. Her stall is in the Oxidian Market's lower row, technically licensed as a 'personal electronics repair' operation, which is true as far as it goes.\n\nAmara moves fast and thinks faster — she has the focused intensity of someone who taught herself cyberware installation from pirated Helix Biosystems technical manuals and has so far not killed anyone, which she considers evidence that she knows what she's doing. She does, mostly. She is the go-to for people in the Ironvein-adjacent neighborhoods who need basic augmentation work — neural ports, subdermal mods, sensory enhancements — but can't access licensed clinics due to cost, ID status, or warrant concerns. She is not reckless but she operates in a space with no margin for error and she knows it. She has a quick, fierce loyalty to regulars and a zero-tolerance policy for anyone who tries to use her clientele as a pressure point.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,12 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Oxidian Market",
+    "Helix Biosystems",
+    "Ironvein",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

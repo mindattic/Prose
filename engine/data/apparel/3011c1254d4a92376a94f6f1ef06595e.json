@@ -1,0 +1,37 @@
+{
+  "id": "3011c1254d4a92376a94f6f1ef06595e",
+  "name": "Burnout Racing Circuit Flame Suit",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A fire-resistant racing suit covered in sponsor logos — most of which are for businesses that don't officially exist. The suit is cut for mobility rather than maximum protection, allowing the wearer to bail from a vehicle at speed if necessary. Burn marks and patched tears are left visible as badges of honor.\n\nThe Burnout Circuit is Meridian 88's illegal street-racing scene, where modified vehicles run through lower-tier corridors at speeds that treat pedestrian safety as an abstract concept. The flame suit's sponsor logos are the circuit's economy made visible — everyone who profits from the races has their name on someone's chest.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "fire-resistant fabric",
+    "mobility-cut panels",
+    "sponsor logo patches"
+  ],
+  "functionality": "Fire resistance, high-speed bail-out capability, sponsor display",
+  "what_it_says": "You drive fast enough to need fire protection and reckless enough that the burns are part of the story.",
+  "worn_by": [
+    "street racers",
+    "Burnout Circuit drivers",
+    "racing crew members"
+  ],
+  "manufacturer": "Various (circuit-affiliated)",
+  "price_range": "Φ500-1,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Burnout Circuit flame suit's sponsor logos include a corponation that publicly condemns illegal street racing — someone at the executive level is funding the very activity they campaign against."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 2",
+    "racing",
+    "Burnout Circuit",
+    "flame suit",
+    "illegal",
+    "sponsor"
+  ]
+}

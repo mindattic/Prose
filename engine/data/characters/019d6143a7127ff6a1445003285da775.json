@@ -12,7 +12,7 @@
   "role": "Neon artist and light installation sculptor",
   "age": 52,
   "status": "active",
-  "location": "Lakeview Neon",
+  "location": "Lakeview Neon, near Damen and Armitage",
   "description": "Veslemøy is a broad-shouldered woman with hands permanently stained violet from decades of working with reactive phosphor compounds. Her skin has been lightly treated with bioluminescent dermal patches — subtle, cream-colored glows along her collarbone and forearms that she uses as a living proof-of-concept for clients. Her hair is cropped close on the sides, left long and white on top, the natural silver of age she refuses to alter. Her face is deeply lined around the eyes from squinting at hot glass tubes, and she wears thick-framed optical enhancers on a beaded cord around her neck.\n\nShe is unhurried and slightly theatrical in conversation, with a habit of holding her hands up near her face to demonstrate scale when describing her work. She's not warm exactly — more like a fire that's comfortable to sit near once you learn the distance. She has opinions about everything and shares them without apology, but listens with genuine interest when someone surprises her. Her installations are known for depicting the ELFs of Lakeview in enormous luminous murals — branching signal-forms and recursive spirals that locals believe please the local grid-spirits.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,14 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lakeview Neon",
+    "The Unfinished Theorem",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Silver",
+    "Glass"
+  ],
+  "district": "The Laceworks"
 }

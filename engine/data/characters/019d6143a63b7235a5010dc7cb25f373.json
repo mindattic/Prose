@@ -12,7 +12,7 @@
   "role": "apprentice to a Ferrogate Transit maintenance crew in Kessler Interchange",
   "age": 14,
   "status": "active",
-  "location": "Kessler Interchange",
+  "location": "Kessler Interchange, near Fullerton and Damen",
   "description": "Jónas is stocky and square-shouldered for his age, with warm brown skin perpetually streaked with grease that never fully washes out of the creases of his knuckles. His hair is dark and kept short — he learned early that loose hair and moving machinery are a bad combination. He has ordinary, honest eyes and a wide mouth that defaults to a slight frown of concentration. His uniform is an adult-sized Ferrogate apprentice coverall, cut down and re-hemmed by his grandmother with surgical precision.\n\nHe was placed into the Ferrogate apprentice program through a Tier 2 vocational track at thirteen, the year after his father was injured on the same rail line he now maintains. He has complicated feelings about this that he has organized into a box he does not open. He is genuinely gifted with mechanical systems — his crew chief says he has 'the ears,' meaning he can hear when something is about to go wrong before the diagnostics catch it. He is not a talker. He communicates mainly through the quality of his work.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,13 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Kessler Interchange",
+    "Jefferson Switch",
+    "Grandmother",
+    "Ferrogate Transit",
+    "The Wire Taps"
+  ],
+  "district": "The Circuit"
 }

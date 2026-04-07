@@ -13,7 +13,7 @@
   "role": "expelled citizen, wandering cartographer, and oral historian of lost places",
   "age": 71,
   "status": "active",
-  "location": "Escanaba Gateway, the Slow Benches outside Arrivals Terminal 7",
+  "location": "Escanaba Gateway, the Slow Benches outside Arrivals Terminal 7, near Lake Shore and Navy Pier",
   "description": "Gerváz is an old man who carries himself as though he once occupied considerably more space in the world and is still adjusting to the reduction. He is tall and lightly stooped, with a face mapped by seventy years of weather and worry, deep brown skin faded to ash at the temples, a white beard trimmed with unexpected fastidiousness. His most striking feature is a pair of retractable cat ears in heathered grey that he had installed in his fifties — a mid-life extravagance he refuses to explain and which sit somewhat incongruously on a man of his gravitas. He dresses carefully in old clothes: a decent coat, shoes that have been resoled twice, a wide-brimmed hat of the kind no one under fifty wears anymore. He carries a physical notebook, which in 2200 is eccentric enough to be alarming.\n\nGerváz was a senior urban planning official in Highland Park Autonomous Zone for thirty-one years before being expelled following a rezoning dispute that escalated into a political purge. His crime, ultimately, was insisting on documenting what was being demolished. He was stripped of his residency, his pension, and his archive access in a single administrative action. He has been stateless for six years now, drifting between transit hubs and writing everything down. He has accepted this with a philosopher's outward composure and a grief he will only show you if you accidentally give him an opening, at which point it will pour out of him like a dam failing slowly.",
   "psychology": {
     "facet_weights": {
@@ -250,5 +250,12 @@
   "carried_weapons": [
     "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Escanaba Gateway",
+    "ARCHIVE",
+    "Lazarus Pharmaceutical Emetix-9 'Purge'"
+  ],
+  "district": "Old Harbor"
 }

@@ -1,0 +1,41 @@
+{
+  "id": "2c9e5a1d7f3b084c6e2a9d5c1f7b03e8",
+  "name": "Rolen Thermopatch Insulated Cargo Pant — Augmented Cut",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Heavy-duty quilted cargo pants with articulated knee panels and thigh-level zip channels for prosthetic leg access and socket ventilation. The insulation is a closed-cell foam-analog batting rated for extended outdoor exposure in sub-zero temps. Available in slate, black, and work khaki.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "closed-cell foam-analog batting",
+    "ripstop outer shell",
+    "articulated nylon knee panels",
+    "YKK-equivalent zip hardware"
+  ],
+  "functionality": "Leg prosthetic access zips run hip-to-ankle on both legs; insulated panels protect organic tissue around prosthetic interfaces from cold injury.",
+  "what_it_says": "A worker with leg augments who's done the math on frostbite and made the right call.",
+  "worn_by": [
+    "factory floor workers",
+    "transit laborers",
+    "augmented outdoor workers",
+    "Shelf residents with leg prosthetics"
+  ],
+  "manufacturer": "Rolen Depot Workwear",
+  "price_range": "Φ70–Φ110",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "One thigh cargo pocket is reinforced with a hidden anti-RFID liner — someone was smuggling data chips and had the pants modified.",
+    "The left knee panel is a replacement — a different color batch — stitched in with a precision that suggests a skilled hand, not a machine."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "winter_heavy",
+    "tier2",
+    "aug_compatible",
+    "prosthetic_compatible",
+    "cargo_pant",
+    "insulated",
+    "rolen"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Fake ID vendor and street pharmacist, The Narrows",
   "age": 29,
   "status": "active",
-  "location": "The Narrows, Ironvein",
+  "location": "The Narrows, Ironvein, near Damen and Armitage",
   "description": "Dzemal is lean in the way of people who forget to eat when they're busy, which is always. Their skin is a warm amber-brown, and they have pattern-shift irises — a geneware mod that cycles through geometric designs on a slow eight-second loop, currently set to a mandala of ochre and slate. Their hair is kept close-cropped on the sides and piled into a messy updo held with whatever happened to be on the workbench — today it is a circuit-pen and a bent stylus. They work from a fold-out stall wedged between a pipe sweating condensation and a defunct vending machine in The Narrows, with a handwritten sign that reads DOCUMENTATION SERVICES in four languages and two scripts.\n\nWhat Dzemal actually sells depends on what you need: a clean biometric overlay that will pass a Ferrogate scanner, a tailored nootropic stack assembled on the spot from a battered pharmacy kit, or a falsified residential registration that will hold up for three months before degrading. They are brilliant and scattered, capable of holding twelve variables in their head while conducting two separate negotiations, and visibly impatient with people who waste their time. They have a deep ethical commitment to helping undocumented migrants navigate the city's registration systems — they do not view this as crime but as infrastructure. They give the migrants sliding-scale rates. Everyone else pays full.",
   "psychology": {
     "facet_weights": {
@@ -195,5 +195,18 @@
   "carried_weapons": [
     "Street Custom 'Confession' Modified Industrial Nail Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Dewdrop",
+    "The Narrows Compact",
+    "The Iron Lotus",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Kang-Petrov Arms KPS-12 'Workbench'",
+    "Ferrogate Transit",
+    "Ironvein",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Déjà Vu"
+  ],
+  "district": "The Circuit"
 }

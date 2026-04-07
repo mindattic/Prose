@@ -12,7 +12,7 @@
   "role": "Riot Suppression Specialist, Axiom Security Division",
   "age": 37,
   "status": "active",
-  "location": "Axiom Corporate Campus, Gage Circuit — deployed to Grand Corridor and surrounding districts",
+  "location": "Axiom Corporate Campus, Gage Circuit — deployed to Grand Corridor and surrounding districts, near Damen and Armitage",
   "description": "Perpetua is built like someone who decided early that their body was a professional tool and has maintained it with that framework ever since. She stands 178cm and carries a density of muscle that her Axiom tactical gear accommodates rather than conceals. Her heritage writes itself in a face that is simultaneously angular and broad — sharp Slavic cheekbones, deep Ghanaian skin, a wide nose her grandmother called distinguished. She has retractable subdermal armor plating along her forearms, a Helix Biosystems military-grade installation that she had done at 28 after taking a fragmentation hit that left scars she considers ugly, and a tail — a long, scaled, dark green cosmetic mod she added at 34 after her divorce, which she describes as the first thing she's ever done purely for herself.\n\nPerpetua is experienced enough to know that riot suppression is political work wearing tactical gear, and she has made her peace with this in the particular way of someone who has not actually made peace with it. She is professionally excellent — controlled, precise, decisive under pressure — and she drinks more than she should on days off and visits the ELF shrine at the Axiom campus entrance with a sincerity that her colleagues find slightly embarrassing. She is good at violence in a way that has never made her proud.",
   "psychology": {
     "facet_weights": {
@@ -255,5 +255,17 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Grand Corridor",
+    "Highland Park Autonomous Zone",
+    "Gage Circuit",
+    "Grandmother",
+    "Flicker",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "The Heritage Vault",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Circuit"
 }

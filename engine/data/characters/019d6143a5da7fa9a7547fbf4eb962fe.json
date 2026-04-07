@@ -12,7 +12,7 @@
   "role": "Gene-mod body artist and tattoo practitioner",
   "age": 37,
   "status": "active",
-  "location": "Pilsen Veil",
+  "location": "Pilsen Veil, near Western and Division",
   "description": "Chiamaka is a living portfolio. Every visible inch of their skin below the neck is a demonstration of their craft: shifting bioluminescent patterns that bloom and fade with body temperature, embedded chromatic scales along their shoulders that catch light like a starling's wing, and a full sleeve of reactive biosymbolism on their left arm that darkens in cold and brightens in warmth. They keep their face deliberately unmodified — a professional choice to let clients focus on the work, not compete with it. They are stocky and deliberate in movement, with close-cropped natural hair and dark eyes that have the quality of paying careful attention.\n\nTheir shop, Skin Liturgy, is a converted ground-floor space in a reclaimed building in Pilsen Veil, hung with examples of their work on cured synthetic skin panels. Chiamaka approaches body modification as spiritual practice, not fashion — each piece is preceded by a long consultation they call 'reading,' in which they try to understand what a client is trying to become rather than what they think they want. This makes them slow, selective, and expensive relative to their tier, and clients come from across the city. They are professionally gentle and personally guarded, with a dry wit that emerges only when they're comfortable.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,11 @@
   ],
   "registered_firearms": [
     "Tessera TK-11 Specter 'Whisper'"
-  ]
+  ],
+  "related_entities": [
+    "Pilsen Veil",
+    "Biometric Denial Charge BDC-1",
+    "Tibor Osei-Svanstrom"
+  ],
+  "district": "The Shelf"
 }

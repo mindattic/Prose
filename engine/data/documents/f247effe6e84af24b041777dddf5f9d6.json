@@ -6,7 +6,9 @@
   "date": "unknown",
   "classification": "restricted",
   "description": "A study on temporal anomalies in the GLMZ, pages 14-23 torn out. The surviving text references a \"Temporal Displacement Index\" measured at various locations. The conclusion page survives: \"...therefore we can no longer maintain that these anomalies are isolated. The data suggests a [PAGES MISSING] ...which, if correct, implies that the GLMZ is not experiencing temporal anomalies. It IS a temporal anomaly.\"",
-  "related_entities": [],
+  "related_entities": [
+    "Bashir Quansah-Mehrotra"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What data was on the missing pages?",

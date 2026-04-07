@@ -1,0 +1,37 @@
+{
+  "id": "a297708d7002264b961a84ca95123202",
+  "name": "Spire Atelier Seasonal Couture Shell",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A structured outer garment from one of the Spire's exclusive fashion ateliers, designed to be worn for exactly one social season before being replaced. The Shell is constructed from materials that intentionally degrade after 90 days — the fabric loses its sheen, the structure collapses, the color fades. It is designed to be beautiful, temporary, and disposable.\n\nThe Seasonal Shell embodies the Spire's relationship with consumption — wealth expressed through the ability to discard. Wearing last season's Shell is a social disaster; wearing a Shell that hasn't begun to degrade proves you just bought it. The garment is a countdown timer worn as fashion.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "programmed-degradation fabric",
+    "structural smart-fiber",
+    "single-season dye"
+  ],
+  "functionality": "Seasonal fashion display, social currency, planned obsolescence",
+  "what_it_says": "You can afford to wear something designed to destroy itself, and you'll buy another when it does.",
+  "worn_by": [
+    "Spire socialites",
+    "corponation elites",
+    "fashion-industry insiders"
+  ],
+  "manufacturer": "Spire Atelier (various houses)",
+  "price_range": "Φ8,000-25,000",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Seasonal Shell that should have degraded months ago is still pristine — its owner either found a way to preserve it or it was manufactured outside the atelier system by someone who understood the materials but rejected the philosophy."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 5",
+    "Spire",
+    "couture",
+    "disposable",
+    "fashion",
+    "luxury"
+  ]
+}

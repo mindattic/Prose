@@ -11,7 +11,7 @@
   "role": "Comedian and underground cabaret performer",
   "age": 47,
   "status": "active",
-  "location": "The Ferment Quarter, resident performer at the Lye & Lampblack club on Sutter Mews",
+  "location": "The Ferment Quarter, resident performer at the Lye & Lampblack club on Sutter Mews, near Armitage and Milwaukee",
   "description": "Hripsimé is medium height, broad-shouldered, and has the physical presence of someone who learned early that a room either belongs to you or it doesn't. Her hair is deep red — natural color, she will tell you, with a straight face, for about four seconds — and she wears it long and somewhat chaotic. Her skin is warm tawny-olive and she has laugh lines that could double as topographic maps. Her only mod is a tail, cat-model, rust-colored, which she uses as a prop during performances with expert comic timing; she has had it since she was twenty-three and considers it a co-author.\n\nHer comedy is vicious, structural, and deeply personal — she excavates class rage, corponation absurdity, and the specific indignities of Tier 2 civilian life with the precision of someone who has lived every joke. She has been banned from two Axiom-affiliated venues and has a standing invitation to return to both that she declines publicly and enthusiastically. At the Lye & Lampblack she is an institution: four nights a week, two sets, and an after-set period where she sits at the bar and is notoriously unapproachable unless you buy her a specific brand of fermented grain drink and ask her about something she actually cares about.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,13 @@
   "registered_firearms": [
     "Crucible Industries Havoc-44 'Mauler'",
     "Arcturus Defense Solutions CSW-4 'Cicada'"
-  ]
+  ],
+  "related_entities": [
+    "The Ferment Quarter",
+    "Dawnlight Industries LuxDefend LD-1 'Clutch'",
+    "Ringo Corponation",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Rust"
+  ],
+  "district": "The Circuit"
 }

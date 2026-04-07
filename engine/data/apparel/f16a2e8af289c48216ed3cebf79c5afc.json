@@ -1,0 +1,36 @@
+{
+  "id": "f16a2e8af289c48216ed3cebf79c5afc",
+  "name": "Cascade Biotech Biometric Scan Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Medical-grade gloves with embedded biometric sensors across all ten fingertips. Touching a patient provides instant readings — pulse, blood oxygen, skin conductivity, temperature, and basic toxicology screening through dermal micro-sampling. Data streams to a connected display or AR overlay in real time.\n\nUsed by field medics, triage teams, and the kind of back-alley clinicians who can't afford dedicated scanning equipment. A single touch tells you if someone is dying and roughly what's killing them.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "biometric sensor array",
+    "dermal micro-sampling tips",
+    "medical polymer"
+  ],
+  "functionality": "Contact biometric scanning, toxicology screening, real-time data streaming",
+  "what_it_says": "You diagnose people by touching them, which is either reassuring or terrifying depending on the context.",
+  "worn_by": [
+    "field medics",
+    "triage teams",
+    "unlicensed clinicians"
+  ],
+  "manufacturer": "Cascade Biotech",
+  "price_range": "Φ1,800",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A field medic's Biometric Scan Gloves record a patient's vitals showing a heartbeat pattern that matches no known human cardiac rhythm — but the patient appears perfectly healthy."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 3",
+    "biometric",
+    "medical",
+    "scanning",
+    "diagnostic"
+  ]
+}

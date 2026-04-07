@@ -12,7 +12,7 @@
   "role": "Comedic performer and underground theater actress",
   "age": 64,
   "status": "active",
-  "location": "The Garret, with regular performances in Mexicantown Libre",
+  "location": "The Garret, with regular performances in Mexicantown Libre, near Western and Division",
   "description": "Perpetuata is small, round, immaculately presented in clothes that are always slightly too formal for wherever she is, and possessed of a face that has made a career of rearranging itself. She is an exceptional physical comedian — her body tells jokes her mouth hasn't arrived at yet. Her hair is silver and elaborately maintained; she wears it in interlocking coiled arrangements that take two hours and the help of her building's ELF-connected vanity system each morning. Her skin is very dark and very soft, with deep smile lines and a habitual expression of delighted disbelief at whatever is currently happening.\n\nShe has performed in underground cabaret, satirical revue, street theater, and Mexicantown Libre's legendary open-air puppet festivals for forty years. Her specialty is political comedy with the teeth left in — she parodies corponation executives, enforcement apparatuses, and the absurdity of Meridian 88's social stratification with a precision that keeps her permanently unwelcome in corporate venues and permanently beloved on the street. She lives in a small apartment in the Garret that is entirely covered in playbills, props, and memorabilia, and she rents her largest room to a rotating series of young performers she mentors, charges very little, and refuses to call students.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,16 @@
   "registered_firearms": [
     "Crucible Industries Ember Rifle ER-7 'Ashfall'",
     "Volkov-Saito Precision VS-40 'Magistrate'"
-  ]
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Meridian 88",
+    "The Garret",
+    "Tessera Corponation",
+    "Irontide Tidal Energy",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Silver",
+    "Lazarus IDP-1 'Teeth'"
+  ],
+  "district": "The Shelf"
 }

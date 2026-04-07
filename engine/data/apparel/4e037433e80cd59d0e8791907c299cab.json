@@ -1,0 +1,36 @@
+{
+  "id": "4e037433e80cd59d0e8791907c299cab",
+  "name": "Ashcroft Industries Arc-Flash Coveralls",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Flame-resistant coveralls rated for electrical arc-flash events up to 40 calories per square centimeter. The fabric self-extinguishes within two seconds of flame contact and provides a thermal barrier that prevents second-degree burns during high-energy electrical faults. No metal components — every fastener, zipper, and buckle is non-conductive.\n\nRequired wear for electrical workers servicing high-voltage infrastructure. Arc-flash events are violent, brief, and catastrophic — temperatures can exceed 20,000°C at the arc point. These coveralls won't save you from a direct arc, but they'll save you from the radiant heat that catches everyone nearby.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "flame-resistant fabric",
+    "non-conductive fasteners",
+    "arc-rated thermal barrier"
+  ],
+  "functionality": "40 cal/cm² arc-flash rating, self-extinguishing, non-conductive hardware",
+  "what_it_says": "You work with electricity that can turn air into plasma, and your clothes are the last line between you and that.",
+  "worn_by": [
+    "electrical workers",
+    "high-voltage technicians",
+    "power infrastructure crews"
+  ],
+  "manufacturer": "Ashcroft Industries",
+  "price_range": "Φ380",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Arc-Flash Coveralls show damage patterns from an electrical event that didn't match any equipment at the work site — the arc source was something that shouldn't have been carrying that much current."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 1",
+    "arc-flash",
+    "electrical",
+    "flame-resistant",
+    "industrial"
+  ]
+}

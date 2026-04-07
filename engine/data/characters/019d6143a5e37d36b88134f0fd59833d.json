@@ -12,7 +12,7 @@
   "role": "Community nurse at a low-cost clinic in The Narrows",
   "age": 45,
   "status": "active",
-  "location": "The Narrows, Ironvein Corridor — Ironvein Free Clinic, also makes rounds to Brightmoor Reclamation and Hough Reclamation",
+  "location": "The Narrows, Ironvein Corridor — Ironvein Free Clinic, also makes rounds to Brightmoor Reclamation and Hough Reclamation, near Halsted and Chicago Ave",
   "description": "Dara is a compact, densely energetic woman with dark olive skin, heavy black eyebrows she has never once thought to alter, and grey threading through tight black curls she keeps pulled back. She has a subdermal health-monitoring implant on her inner wrist — standard for clinic workers — but her most distinctive feature is purely biological: she has the kind of face that defaults to concerned even when she isn't, an expression her patients mistake for worry and which is actually just her thinking. She wears her clinic jacket everywhere, even off shift, which she considers a kind of liability and hasn't stopped doing.\n\nShe has worked the Ironvein Free Clinic for fourteen years, funded by a patchwork of neighborhood donations, a small Axiom charitable grant she has to re-apply for annually and hates, and what she politely calls community contributions. The clinic is not licensed by any corponation medical authority, which means it operates in a legal grey zone that gets darker some years than others. She has delivered children, set fractures, managed chronic conditions on medication dosages she calculates by hand because the patients can't afford proper automated dispensers, and once kept a man alive for six hours with equipment held together by improvisation while waiting for a transfer that almost didn't come. She does not discuss this. She is not a martyr. She is exhausted and committed and clear-eyed about both.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,17 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "The Narrows Compact",
+    "WELLSPRING",
+    "Ironvein",
+    "The Gradient Compact",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

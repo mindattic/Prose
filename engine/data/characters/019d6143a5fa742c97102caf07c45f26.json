@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and second-hand data broker",
   "age": 23,
   "status": "active",
-  "location": "The Shelf, Bronzeline",
+  "location": "The Shelf, Bronzeline, near Western and Division",
   "description": "Dzintars is a skinny young man with pale golden-brown skin, freckles scattered across his nose and cheeks, and color-changing hair he keeps cropped short — it cycles through blues and greens on a slow gradient based on ambient light temperature, a gene-mod he got in a group deal with five friends and considers the best decision of his life. He runs his operation from a battered rolling cart covered in a cascading display of data chips, obsolete media formats, bootleg entertainment feeds, and hand-assembled 'mood packs' — curated collections of music, film, news fragments, and ambient noise he assembles himself and sells for Φ3 each. The cart has a speaker that plays a rotating sample reel and an E.L.F. shrine built into the cart's undercarriage — a small cavity lined with foil and dead pixels where he feeds the spirit he calls the Curator with fragments of uncompressed audio and old broadcast signals.\n\nDzintars is fast-talking, enthusiastic, and operates entirely on the frequency of someone who has consumed too much media and developed strong opinions about all of it. He is more intelligent than he presents, which he uses strategically — people underestimate him and say things in front of him they otherwise would not. He is genuinely, obsessively passionate about media and culture in a way that occasionally crosses into exhausting, and he has an extraordinary memory for anything he has seen or heard, which is essentially everything.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,13 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Bronzeline",
+    "The Shelf",
+    "Arcturus Defense Solutions",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

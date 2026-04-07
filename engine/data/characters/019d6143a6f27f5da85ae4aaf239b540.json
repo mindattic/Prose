@@ -12,7 +12,7 @@
   "role": "Chemical and biological agent specialist — poisoner",
   "age": 60,
   "status": "active",
-  "location": "Glassway — corporate-adjacent retail district, heavy surveillance",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
   "description": "Tenzin Takahashi-Boateng is average height but with a presence that fills more space than the body accounts for. At 60, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nTenzin Takahashi-Boateng is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,12 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Street Custom 'Sunday School' Weaponized Religious Artifact"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

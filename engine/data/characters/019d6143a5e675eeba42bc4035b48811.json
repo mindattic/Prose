@@ -13,7 +13,7 @@
   "role": "Junior courier and high-risk specialist — Switchback",
   "age": 19,
   "status": "active",
-  "location": "The Shelf — crashes in Jinx's rooftop squat or on couches throughout the co-op network",
+  "location": "The Shelf — crashes in Jinx's rooftop squat or on couches throughout the co-op network, near Western and Division",
   "description": "Dash Okonkwo is nineteen years old and has not yet learned that he can die. This is simultaneously his greatest asset and the thing that will most likely kill him. He is the newest member of Switchback, recruited eight months ago when Jinx caught him free-climbing a surveillance tower on a dare and realized the kid had natural talent that was going to get him killed without direction.\n\nHe grew up in the deepest part of the Shelf — the blocks where even the co-op infrastructure breaks down and the only governance is mutual aid and mutual threat. His parents are gone — father to debt labor, mother to a pharmaceutical dependency that functions as slow erasure. He has been functionally on his own since sixteen and has survived by being faster, bolder, and luckier than his circumstances should allow. Switchback gave him the first structure he's had since childhood, and he resents and craves it in equal measure.\n\nDash is lean, dark-skinned, with the coiled energy of someone who converts anxiety into motion. He has a gap-toothed grin that makes him look younger than nineteen and a scar across his left eyebrow from a fall he insists was intentional. His augmentations are minimal — he can't afford better — and he compensates with raw athleticism and a complete absence of self-preservation instinct.",
   "psychology": {
     "facet_weights": {
@@ -188,5 +188,14 @@
   "carried_weapons": [
     "Street Custom 'Glass Garden' Caltrops"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "The Shelf",
+    "Flicker",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Elegy",
+    "Hearthstone Firearms Trail-357 'Pathfinder'"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Graffiti artist and neon artist",
   "age": 19,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, stays in a rotating series of shared squats",
+  "location": "Highland Park Autonomous Zone, stays in a rotating series of shared squats, near Michigan Ave and Chicago Ave",
   "description": "Quillan is all angles and velocity — long-limbed, dark-skinned, with Ghanaian-Czech features that look perpetually younger than their nineteen years, which frustrates them endlessly. They keep their hair in tight coils pinned back with a self-made clip constructed from a bent network card, and they have bioluminescent freckles across their cheekbones and nose that glow faint orange under stress or excitement — a geneware mod they saved for over two years to afford. Their clothes are always paint-stained. Always. Even fresh ones develop stains within hours by some law of Quillan's personal physics.\n\nThey work at the intersection of illegal graffiti and legal neon art commissions — the commissions fund the graffiti, which funds the bigger commissions, in a cycle they describe as 'washing money through beauty.' Their graffiti is large-scale, technically complex, and unmistakably political: maps of corporate land grabs rendered in photo-realistic detail, portraits of people displaced by development, data visualizations of pollution levels turned into murals that can be read at a glance. They have been detained by Ferrogate Transit security twice and by Axiom's private enforcement arm once, and wear all three incidents as credentials. They are funny, quick, slightly too reckless, and working very hard to hide that they have absolutely no idea what they're doing with their life beyond the next piece.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,14 @@
   "registered_firearms": [
     "Crucible Industries Ember-9 'Firefly'",
     "Meridian Munitions Twin PDW MTP-2 'Gemini'"
-  ]
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Ferrogate Transit",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight"
+  ],
+  "district": "The Spires"
 }

@@ -12,7 +12,7 @@
   "role": "Street doc and midwife operating out of a converted shipping container in The Narrows",
   "age": 58,
   "status": "active",
-  "location": "The Narrows, beneath the Kessler Interchange overpass",
+  "location": "The Narrows, beneath the Kessler Interchange overpass, near Fullerton and Damen",
   "description": "Oluwatoyin is a broad-shouldered woman with deep umber skin mapped by a lifetime of work — knuckles scarred from decades of suturing in bad light, forearms ropy with muscle. Her hair is kept in tight silver locs pinned up with surgical clamps she forgets to remove. She has no cosmetic mods; the only thing artificial on her body is a secondhand haptic glove on her left hand that gives her fine motor feedback when her arthritis flares. She smells of antiseptic, clove oil, and something warm and starchy — she keeps a rice cooker running in the back of the container at all times, because she refuses to let a patient leave hungry.\n\nShe is the definition of steady. In thirty years of practicing medicine without a Helix Biosystems license, she has delivered over four hundred babies, set more bones than she can count, and talked down at least a dozen people who came to her with something other than a physical wound. She does not panic. She does not moralize. She charges what people can pay and writes off the rest in a ledger she keeps in her head, not on paper. Her authority in the community is absolute and quietly terrifying — she is the person even the gang lieutenants send their mothers to.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,16 @@
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Forge-Smith Collective Fighting Chain 'Serpent'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Kessler Interchange",
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Adaeze Chen-Hawkins",
+    "Silver"
+  ],
+  "district": "The Circuit"
 }

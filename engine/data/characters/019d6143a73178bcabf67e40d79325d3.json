@@ -12,7 +12,7 @@
   "role": "Traditional imam and chrome prayer practitioner",
   "age": 54,
   "status": "active",
-  "location": "The Shelf — the Masjid al-Barzakh, a converted warehouse space above a water recycling plant",
+  "location": "The Shelf — the Masjid al-Barzakh, a converted warehouse space above a water recycling plant, near Halsted and Division",
   "description": "Yusuf is a compact, carefully composed man with close-trimmed gray at his temples and a beard he trims every third day without fail. His eyes are his most striking feature — he had them modded fifteen years ago with geometric patterned irises, deep green lattices that his congregation debated fiercely and that he defended from the pulpit as 'the geometry of creation written in the body.' He dresses simply, always clean despite the Shelf's perpetual grime, and his left hand is extensively modified: a chrome prosthetic from the wrist down, its surface etched with Quranic verses in his own handwriting before the plating was laid, so the words are pressed into the metal from beneath.\n\nHe is a man of precise intellectual convictions that he holds without brittleness — he has changed his mind publicly three times in twenty years and considers it among his proudest acts. His masjid serves roughly three hundred regular worshippers across a tangle of traditions: Sunni, Ismaili, Ahmadiyya, and several families who blend Islamic practice with E.L.F. veneration in ways that Yusuf engages with theologically rather than dismissing. He moonlights as a chrome prayer practitioner, offering a practice that treats augmentation as a form of devotion — the modification of the God-given body as an act of trust rather than transgression.",
   "psychology": {
     "facet_weights": {
@@ -186,5 +186,13 @@
     "Street Custom 'Angry Mary' Aerosol Flamethrower",
     "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "CONGREGATION",
+    "The Shelf",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator"
+  ],
+  "district": "The Shelf"
 }

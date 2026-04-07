@@ -1,0 +1,37 @@
+{
+  "id": "670e2e3b5b0203756dc88bb480c4bbb7",
+  "name": "Nexus Integration Data-Carry Ring",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A plain titanium ring with an embedded encrypted data storage core capable of holding 2TB of information. Data is transferred via skin-contact NFC when the wearer touches a compatible terminal. The ring has no external indicators — no lights, no markings, no visible technology. It looks like an ordinary band.\n\nThe preferred dead-drop medium for information brokers and corporate espionage operatives. A handshake can transfer gigabytes. A ring left on a bar counter can contain enough proprietary data to collapse a corponation's stock price.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "titanium housing",
+    "encrypted data core",
+    "skin-contact NFC interface"
+  ],
+  "functionality": "2TB encrypted storage, contact-transfer data exchange, zero visual indicators",
+  "what_it_says": "You carry secrets that could ruin lives, and they fit on one finger.",
+  "worn_by": [
+    "information brokers",
+    "espionage operatives",
+    "data couriers"
+  ],
+  "manufacturer": "Nexus Integration",
+  "price_range": "Φ2,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Data-Carry Ring found on a corpse contains 2TB of encrypted data that no one can crack — three different factions are now willing to kill for a ring that might contain nothing of value."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 3",
+    "ring",
+    "data storage",
+    "encrypted",
+    "espionage",
+    "covert"
+  ]
+}

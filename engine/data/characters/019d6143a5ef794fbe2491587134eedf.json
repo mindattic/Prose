@@ -11,7 +11,7 @@
   "role": "Fixer - Military contracts",
   "age": 55,
   "status": "active",
-  "location": "Geartown",
+  "location": "Geartown, near Damen and Armitage",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -102,5 +102,9 @@
   "registered_firearms": [
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "Geartown"
+  ],
+  "district": "The Circuit"
 }

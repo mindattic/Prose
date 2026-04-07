@@ -1,0 +1,43 @@
+{
+  "id": "71d4e9a2c5b0f38627a8c1d3f6e20b59",
+  "name": "Ironpass MedCore Emergency Paramedic Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "High-visibility signal-orange trauma jacket with retro-reflective chest panels and sealed interior pockets over reinforced black cargo trousers with quick-release tabs at both knees. A hard-shell response helmet in orange with a flip-down polycarbonate visor integrates a BCI vitals relay and radio receiver. Heavy-duty exam gloves in orange nitrile extend past the wrist, and waterproof steel-toe lace-up boots handle flood-slick and debris-strewn terrain. A dual-shoulder harness and rear pack combination carries defibrillator cassettes, trauma foam, airway tools, and a collapsible splint set.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "retro-reflective ripstop trauma jacket",
+    "hard-shell polymer helmet",
+    "polycarbonate flip visor",
+    "heavy nitrile exam gloves",
+    "waterproof steel-toe boots",
+    "dual-shoulder nylon harness",
+    "rear-pack frame"
+  ],
+  "functionality": "BCI vitals relay in helmet transmits patient data to hospital intake before arrival; rear pack deploys full trauma kit in a flat layout for roadside or corridor triage.",
+  "what_it_says": "This person arrives in the worst moment of someone's life and is the single most competent thing in the room.",
+  "worn_by": [
+    "Meridian 88 emergency paramedics",
+    "Tier 2 municipal trauma responders",
+    "disaster response contractors"
+  ],
+  "manufacturer": "Ironpass Tactical Medical",
+  "price_range": "Φ 1,400–Φ 2,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The BCI relay has been quietly logging GPS coordinates of every call in a district that's been seeing a suspicious uptick in chrome-related injuries.",
+    "The trauma foam canister in the rear pack is a replacement unit — the original was used on a patient who was never logged into the system."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical_scientific_kit",
+    "tier2",
+    "paramedic",
+    "emergency_response",
+    "aug_compatible",
+    "high_visibility",
+    "Ironpass"
+  ]
+}

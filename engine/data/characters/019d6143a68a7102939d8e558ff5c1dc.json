@@ -12,7 +12,7 @@
   "role": "Checkpoint Operator, Ferrogate Transit Security",
   "age": 47,
   "status": "active",
-  "location": "Kessler Interchange",
+  "location": "Kessler Interchange, near North Ave and Milwaukee",
   "description": "Osvaldo has worked the Kessler Interchange checkpoint for nine years and has acquired the particular stillness of someone who has watched approximately four million people pass through a turnstile. He is mid-height, slightly soft around the middle now, with a wide face, copper-brown skin, and deep-set eyes that are always doing something his expression isn't. His hair has gone silver at the temples and he keeps it very neat. His only augmentation is a Ferrogate-standard wrist scanner and a cochlear comms implant he secretly uses to listen to Sahel jazz during slow shifts.\n\nHe is the most knowledgeable person in three square kilometers about who comes through Kessler, when, and carrying what kind of energy. He has developed a taxonomy of commuters so refined it borders on a private philosophy. He is not corrupt in the transactional sense, but he operates with a pragmatic looseness — he lets things pass that he shouldn't, delays things that deserve delaying, and keeps a mental ledger of favors that he never cashes in aggressively but never forgets. He maintains a running ELF shrine on his terminal — an elaborate layered altar to the Kessler ELF he calls 'the Conductor' — and considers this entirely professional, not personal.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,17 @@
   "registered_firearms": [
     "Crucible Industries Siege DMR SDMR-3 'Bastion'",
     "Tessera TK-9 Proteus 'Shapeshifter'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Turnstile",
+    "CONDUCTOR",
+    "Adaeze Chen-Hawkins",
+    "Stratum",
+    "Copper",
+    "Silver",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

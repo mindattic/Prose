@@ -12,7 +12,7 @@
   "role": "Bookmaker and numbers runner — operates an illegal betting house out of a tea and meal shop",
   "age": 56,
   "status": "active",
-  "location": "Shallowgrave, Ondaatje's Tea and Provisions, Mercy Lane off the Sump Road transit stop",
+  "location": "Shallowgrave, Ondaatje's Tea and Provisions, Mercy Lane off the Sump Road transit stop, near Ashland and Chicago Ave",
   "description": "Laleh is short, broad-shouldered, and carries herself with the composed authority of someone who has run a complicated household for decades—which, in a sense, she has. Her hair is silver-white, cut practically short, and her hands are large and permanently warm-looking from years behind a steam counter. Her skin is a deep warm brown marked by two old vertical scars along her left jaw from an incident she has never explained to anyone's satisfaction. She wears reading glasses on a chain and uses them as a prop—taking them on and off, gesturing with them—when she's negotiating. Her shop is genuinely beloved: the tea is actually good, the rice-and-lentil specials actually excellent, and the back room is where the real business happens.\n\nLaleh is the kind of person who has been essential to a community for so long that even people who morally disapprove of gambling come to her when they're in trouble—not to place a bet, but because she knows everything and her counsel is free if you're eating. She has a gift for making people feel they are the most important problem in the room, which is a talent both for hospitality and for extracting information. She is genuinely warm and genuinely hard, and the line between those two things moves at her discretion. She has been fined four times and arrested once (charges dropped). She tithes ten percent of her operation's income to the Shallowgrave block mutual aid fund, which is not tax-deductible and not public but is the reason three hundred families have eaten during lean months.",
   "psychology": {
     "facet_weights": {
@@ -220,5 +220,14 @@
     "Hearthstone Firearms Model 9 'Payday'",
     "Street Custom 'Ghostwriter' Grafitti Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Shallowgrave",
+    "The Quiet Room",
+    "The Fathom Line",
+    "South Deering Sump",
+    "Silver",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

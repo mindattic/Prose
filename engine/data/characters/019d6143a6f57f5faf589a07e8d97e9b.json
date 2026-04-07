@@ -12,7 +12,7 @@
   "role": "Tailor and garment repair specialist",
   "age": 27,
   "status": "active",
-  "location": "The Burnished Market, Hamtramck Enclave, Meridian 88",
+  "location": "The Burnished Market, Hamtramck Enclave, Meridian 88, near Pulaski and Chicago Ave",
   "description": "Thessaly is slight and precise, with the kind of posture that makes them look taller than they are — the result of years hunched over a machine trained back into discipline by necessity. They have cool brown skin marked with self-applied geometric ink along both forearms (needlework maps, they say, of every garment type they've mastered), cat ears in matte black that they had installed at nineteen and have since come to regard as a mistake they're too broke to undo, and a color-shifting streak in their close-cropped hair that they cycle through neighborhood palette trends with a cheap home kit. Their workspace is a converted stall in the Burnished Market — half the size of their competitors, immaculately organized, with a curtained fitting area that doubles as a break room and occasional sleeping space on bad weeks.\n\nThessaly has built a reputation for making cheap fabric look like it wasn't, for structural repair on garments that other tailors would refuse, and for a consultation style that is simultaneously disconcerting and effective — they ask a client what they want to be perceived as, not what they want to look like. They believe clothing is communication and they approach their work with the seriousness of a translator. They are also perpetually underpaid for this and know it and cannot stop doing it anyway.",
   "psychology": {
     "facet_weights": {
@@ -165,5 +165,14 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Hamtramck Enclave",
+    "Meridian 88",
+    "Zheng-dao Bioelectric",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Palette"
+  ],
+  "district": "The Shelf"
 }

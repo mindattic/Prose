@@ -12,7 +12,7 @@
   "role": "Covert entry and social penetration specialist — infiltrator",
   "age": 26,
   "status": "active",
-  "location": "The Spires — mid-level corporate residential towers",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
   "description": "Sagyn Ibarra-Prempeh is average height but with a presence that fills more space than the body accounts for. At 26, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a infiltrator out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Sagyn Ibarra-Prempeh is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,13 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Compact-7 'Rat Trap'"
-  ]
+  ],
+  "related_entities": [
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Spires"
 }

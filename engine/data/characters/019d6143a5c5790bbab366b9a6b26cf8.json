@@ -11,7 +11,7 @@
   "role": "Union organizer and mutual aid coordinator for Ferrogate Transit workers",
   "age": 44,
   "status": "active",
-  "location": "Hamtramck Enclave, operating out of a converted transit depot called the Carriage House",
+  "location": "Hamtramck Enclave, operating out of a converted transit depot called the Carriage House, near Halsted and Division",
   "description": "Blessing is a broad-shouldered woman with deep umber skin, close-cropped natural hair shot through with threads of silver she refuses to dye, and hands that show thirty years of physical work before she moved into organizing full-time. Her left eye is a basic-model optical aug — the iris replaced with a fixed amber ring, a reminder of the Ferrogate line collapse of 2184 that took her depth perception and gave her a cause. She dresses in layers of salvaged workwear, always with a Ferrogate transit badge pinned upside-down on her chest — the traditional gesture of solidarity among workers who refuse to 'clock in to a system that clocks out on you.'\n\nBlessing is methodical to the point of stubbornness. She keeps physical ledgers — actual paper notebooks — of every grievance filed, every promise broken, every quanta owed to injured workers and their families. She is not charismatic in the traditional sense; she does not rouse crowds with fire. She wins people over by knowing their names, their children's names, their shift rotations, and every clause of their employment contract. The nickname 'The Ledger' is both tribute and warning: she remembers everything.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,17 @@
   "registered_firearms": [
     "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll"
+  ],
+  "district": "The Shelf"
 }

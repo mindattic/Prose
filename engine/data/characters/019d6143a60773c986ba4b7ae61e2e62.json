@@ -11,7 +11,7 @@
   "role": "Delivery driver, independent courier",
   "age": 22,
   "status": "active",
-  "location": "Operates across Geartown, The Narrows, and Old Harbor; lives in a single room in Ironvein",
+  "location": "Operates across Geartown, The Narrows, and Old Harbor; lives in a single room in Ironvein, near Lake Shore and Navy Pier",
   "description": "Eshe is young enough that she still surprises herself with her own capabilities, and old enough to be irritated by that. She's wiry and quick, with the kind of fitness that comes from necessity — she's been riding cargo bikes and mag-runners for four years and her body shows it: lean legs, strong forearms, a particular alertness in how she holds herself when stationary, like a thing coiled. Her Ethiopian-Tongan heritage has given her dark brown skin with warm undertones and a compact build, and her Ukrainian great-grandmother contributed cheekbones she was teased about as a child and now gets compliments on and distrusts. She has cat ears — a cosmetic geneware mod she saved three months' earnings for, small and black-tipped, mobile when she's focused or startled, which she thought would be cute and turns out to also be extremely practical for navigating noisy traffic.\n\nShe runs packages, parcels, and things that don't get listed on manifests for whoever's paying, and she doesn't ask what's in things because she's figured out that asking doesn't actually protect her and just makes clients paranoid. She is not naive about this. She is making a calculated choice with the information available to her, which is the main thing she does. Her whole life is calculated choices made fast on incomplete data, which she's gotten good enough at that she sometimes worries what she'll do when she can't do it anymore.",
   "psychology": {
     "facet_weights": {
@@ -202,5 +202,17 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Grandmother",
+    "The Heritage Vault",
+    "Geartown",
+    "Ironvein",
+    "The Gradient Compact",
+    "Irontide Tidal Energy",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "Old Harbor"
 }

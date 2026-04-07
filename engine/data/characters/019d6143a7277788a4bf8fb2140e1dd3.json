@@ -12,7 +12,7 @@
   "role": "identity fabricator and document forger operating in Shallowgrave",
   "age": 31,
   "status": "active",
-  "location": "Shallowgrave — a basement workspace beneath a legitimate print-repair shop called Inkblood Restorations",
+  "location": "Shallowgrave — a basement workspace beneath a legitimate print-repair shop called Inkblood Restorations, near Ashland and Chicago Ave",
   "description": "Yetunde is small and wiry, with deep brown Yoruba-complexioned skin and natural hair she keeps tucked under an ever-rotating collection of patterned wraps. Her most striking feature is her eyes — she paid a significant portion of her early earnings for iris patterning, and her irises now display slow-rotating mandalas in burnt amber and deep violet, which she claims help her spot microscopic forgery errors others miss. Her fingers are perpetually ink-stained despite her best efforts, and she has a habit of wearing magnification lenses pushed up on her forehead like a second set of eyes.\n\nYetunde is meticulous to the point of compulsion, deeply proud of her craft in a way she has no legitimate outlet for, and socially awkward in a manner that reads as cold until you realize she is simply more comfortable with documents than with people. She thinks of identity fabrication as a form of art — every forged life is a story she writes, and she has genuine contempt for sloppy work, including her own past output which she sometimes obsessively revisits and critiques. She has strong opinions about which corponation residency stamps are aesthetically superior and will share them unprompted.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,11 @@
   ],
   "registered_firearms": [
     "Tessera TKR-10 'Executor'"
-  ]
+  ],
+  "related_entities": [
+    "Shallowgrave",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

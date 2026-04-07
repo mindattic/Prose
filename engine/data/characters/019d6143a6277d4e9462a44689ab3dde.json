@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor specializing in modified and counterfeit corp-branded apparel, The Burnished Market",
   "age": 42,
   "status": "active",
-  "location": "The Burnished Market, outer ring, stall block near the transit umbilical, Edgewater Prism",
+  "location": "The Burnished Market, outer ring, stall block near the transit umbilical, Edgewater Prism, near Clark and Belmont",
   "description": "Hezekiah is tall and broadly built with a deliberate elegance that he maintains as a form of advertising — everything he wears is something he's made, modified, or sourced, and it's always impeccable. His skin is deep brown with a reddish undertone, his head cleanly shaved, and his beard trimmed with geometric precision. He has color-changing hair along his temples — a narrow strip of geneware follicles he grows out to a short fade, currently cycling through slow burgundy-to-black transitions that he coordinates with his outfit. His hands bear old needle-prick scars across the fingertips from years before he could afford proper equipment.\n\nHis stall is the most curated space in the Burnished Market: no clutter, no piles, everything on display at eye level and shoulder height, garments hung with the spacing of a gallery. He sells counterfeit Sterling-Nakamura executive wear, modified Tessera corporate-casual that reads higher tier than it is, and his own original fabrication — structural pieces he designs and produces himself in a back workshop that would sell for triple the price in Lakeview Neon if he could get distribution. He is charming and slightly formal in the way of someone who grew up performing dignity as a survival strategy, and he wraps every sale in a kind of ceremony, as if clothes are genuinely sacred, which, for him, they are.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,14 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Edgewater Prism",
+    "Lakeview Neon",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Needle"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Grandmother raising two grandchildren; former Axiom administrative coordinator, now pension-dependent",
   "age": 63,
   "status": "active",
-  "location": "Montclare Quiet, third-floor walkup apartment above a synthetic food cooperative",
+  "location": "Montclare Quiet, third-floor walkup apartment above a synthetic food cooperative, near Milwaukee and North Ave",
   "description": "Ysabel is a compact, kinetic woman who moves like someone with a permanent to-do list she is racing against. Her heritage is Kazakh and Congolese on one side, Basque and Filipina on the other, and she has inherited a particular combination of high cheekbones, deep-set dark eyes, and a complexion the color of strong tea that she has never once thought about because there has always been something more pressing to think about. Her hair is natural black with silver threading through it, worn in a practical knot held by whatever is nearby — today a stylus, yesterday a fork. She has a small blue bioluminescent patch on her left collarbone, a cosmetic genemod she got when her daughter was still alive and the two of them went together; she has never removed it.\n\nShe worked for Axiom Corp for twenty-one years as an administrative coordinator, which is a title that means she was the person who actually made things function while people with better titles collected the credit. She retired at 58 when her daughter and son-in-law were killed in a transit accident — the same Ferrogate collapse that took Dragomir Achebe-Qalashani's leg, though they have never met — and she became the primary caregiver for her grandchildren Kojo, now 11, and Amara, now 8. Her pension from Axiom is tier-2 and she is meticulous about budgeting it, but every time she gets a small surplus she spends it on the children's education supplements rather than herself. She is holding together so completely on the outside that almost no one has noticed she has not fully processed her daughter's death.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,16 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Montclare Quiet",
+    "Ferrogate Transit",
+    "Flicker",
+    "The Heritage Vault",
+    "The Gradient Compact",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus Defense Solutions ETF-3 'Mantis'"
+  ],
+  "district": "The Laceworks"
 }

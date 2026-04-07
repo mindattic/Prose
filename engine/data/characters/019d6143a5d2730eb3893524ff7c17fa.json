@@ -12,7 +12,7 @@
   "role": "Data archaeologist specializing in pre-Collapse digital infrastructure and lost network topologies",
   "age": 58,
   "status": "active",
-  "location": "The Circuit, sublevel archive stacks, Meridian Core adjacent",
+  "location": "The Circuit, sublevel archive stacks, Meridian Core adjacent, near sub-level access near State and Van Buren",
   "description": "Cassivellaunus is a tall, angular man whose long frame always seems slightly folded, as if rooms were designed for shorter people and he has been compensating his whole life. His skin is a warm medium brown layered with the faint subcutaneous glow of outdated bioluminescent geneware — a fashion from the 2160s he never bothered to have removed, so he pulses very faintly blue-green when emotional or cold, which his students find either endearing or unsettling. His hair is white and kept in a short natural that he rubs when thinking. His left arm from the elbow down is a prosthetic of obvious vintage — gunmetal grey with joints that click faintly, a model discontinued forty years ago. He refuses to upgrade it. 'I know exactly how it fails,' he says, which is also more or less his philosophy of research.\n\nCassivellaunus has spent thirty years excavating the digital sediment of pre-Collapse networks — the dead social platforms, the governmental databases that went offline in the 2090s, the proprietary corporate archives that became inaccessible when their parent companies dissolved. He is brilliant, deeply eccentric, and entirely disinterested in academic politics. He holds a joint appointment between Meridian Civic University and an independent archive collective called the Palimpsest, which has no official status but possesses arguably the most complete cache of pre-Collapse digital materials in the city. He is the only person who fully understands its indexing system because he built it and has never properly documented it.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,15 @@
   "carried_weapons": [
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Tessera Corponation Dermal Cipher Lattice — 'The Palimpsest'",
+    "Meridian Core",
+    "The Circuit",
+    "Sediment Sound Group",
+    "Stratum",
+    "ARCHIVE",
+    "Nightlight"
+  ],
+  "district": "The Underworld"
 }

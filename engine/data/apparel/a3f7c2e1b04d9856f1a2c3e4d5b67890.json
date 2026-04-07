@@ -1,0 +1,39 @@
+{
+  "id": "a3f7c2e1b04d9856f1a2c3e4d5b67890",
+  "name": "Rolen Depot Work Shirt (Patched)",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A faded grey-green button-up work shirt, originally issued by Rolen Depot to warehouse staff, now three owners and a hundred washes removed from new. The left elbow has been patched twice with mismatched brown synth-canvas; two buttons are replacements in a slightly wrong shade. Collar is frayed but structurally intact.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "recycled polyblend",
+    "synth-canvas patch",
+    "mismatched replacement buttons"
+  ],
+  "functionality": "Durable long-sleeve coverage with chest pocket; holds up to daily labor and acid-light drizzle.",
+  "what_it_says": "You work, you survive, you don't waste anything that still has life in it.",
+  "worn_by": [
+    "shelf laborers",
+    "scrap haulers",
+    "market stall workers",
+    "unemployed Tier 2 washouts"
+  ],
+  "manufacturer": "Rolen Depot (original issue, now unbranded)",
+  "price_range": "Φ2–Φ6",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The previous owner's name — 'SULLY' — is still written in permanent marker inside the collar.",
+    "A folded scrap of paper tucked in the chest pocket contains half a map to somewhere."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "cheap_shelf_basics",
+    "shirt",
+    "patched",
+    "work_wear",
+    "tier_1",
+    "salvaged"
+  ]
+}

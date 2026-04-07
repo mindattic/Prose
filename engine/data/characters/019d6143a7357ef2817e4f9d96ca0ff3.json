@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and small-time data broker",
   "age": 27,
   "status": "active",
-  "location": "The Laceworks, mobile — regular circuit through three intersections near the Lace Bridge underpass",
+  "location": "The Laceworks, mobile — regular circuit through three intersections near the Lace Bridge underpass, near Lincoln and Belmont",
   "description": "Zibby moves through the Laceworks like a current — always in motion, always aware of every exit. They're lean and compact with close-cropped hair that shifts color throughout the day via a follicular genemod cycling through rust, copper, and near-black in slow waves. Their irises are patterned in concentric hexagons, gold on brown, which they claim was a 'random outcome' from a budget gene clinic but is actually a deliberate aesthetic choice they're embarrassed to admit cost them six months of savings. They dress in layers they can shed fast: patchwork thermals, a jacket with thirty pockets, boots that are two sizes too large because they bought them for the hidden cavity under the left insole.\n\nTheir cart is a salvaged medical trolley rigged with a privacy shroud — a local-field scrambler that makes recordings of their transactions come out as static. The stock changes daily: today it's archived pre-corporate streaming libraries, tomorrow it's unlicensed sensory recordings from restricted-access Axiom research facilities, the day after it's soft intelligence packages compiled from public scraping and a handful of human sources they pay in trade. They're smart, funny, genuinely good at reading people, and trying very hard to project the kind of confidence that only comes from not worrying about rent. They do worry about rent.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,19 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "The Laceworks",
+    "Emberlace Systems",
+    "Irontide Tidal Energy",
+    "The Gradient Compact",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "Nesting Doll",
+    "SHROUD",
+    "Static",
+    "Rust",
+    "Gold"
+  ],
+  "district": "The Laceworks"
 }

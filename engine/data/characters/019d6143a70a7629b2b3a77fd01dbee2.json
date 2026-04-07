@@ -12,7 +12,7 @@
   "role": "Loan shark and neighborhood bookmaker",
   "age": 54,
   "status": "active",
-  "location": "The Shelf lower levels, operates from a tea shop called Ndovu & Sons in Ironvein",
+  "location": "The Shelf lower levels, operates from a tea shop called Ndovu & Sons in Ironvein, near Halsted and Chicago Ave",
   "description": "Télesphore is a lean, bespectacled man of fifty-four who looks like someone's favorite uncle and has ruined more lives than he can accurately count. He is medium height with warm brown skin, a close-trimmed white beard, and the kind of eyes that seem genuinely interested in whatever you're saying. He favors clean but worn shirts in earth tones and keeps a small potted succulent on the counter of his tea shop, which he waters with ritual attention every morning. He has no visible augmentations and makes a mild point of this — old-fashioned, he says, I trust my own hands. His geneware is limited to a patterned iris modification he got when he was young, concentric rings of amber and brown that make people feel they're being watched even when he's looking elsewhere.\n\nHe has operated in Ironvein for twenty-six years. He knows exactly which families are behind on their Ferrogate bills, who has a gambling habit they're hiding from their partner, which teenagers are moving small product for which crews. He does not advertise his lending services — they advertise themselves, because when you need Φ300 before the end of the week and the Tier 2 credit system has already declined you twice, someone will tell you about Tel. His rates are usurious and his enforcement is never personal — he outsources that to a pair of young men who are efficient if not imaginative. He himself never raises his voice.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,15 @@
     "Hearthstone Firearms Model 9 'Payday'",
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Ferrogate Transit",
+    "The Shelf",
+    "Ironvein",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

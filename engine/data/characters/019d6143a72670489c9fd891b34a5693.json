@@ -12,7 +12,7 @@
   "role": "Death midwife and grief ritualist",
   "age": 67,
   "status": "active",
-  "location": "Irkalla, lower residential warrens near the Deepwell Station junction",
+  "location": "Irkalla, lower residential warrens near the Deepwell Station junction, near sub-level access near LaSalle and Congress",
   "description": "Yetunde is a broad-shouldered woman with dark amber skin mapped in pale scarification lines that run from her collarbone to her wrists — a living record of every death she has attended, one mark per soul. Her hair is a tight silver-white crown, unpigmented by choice, and her eyes have been modded with concentric ring irises in deep violet and gold that she says let her see the moment someone stops being present. She moves slowly on purpose, filling rooms with a gravitational calm that makes agitated people want to sit down. She smells faintly of clove oil and something older, mineral.\n\nYetunde trained as a nurse under Helix Biosystems before she was pushed out during a cost-restructuring in her forties. She converted her grief about that displacement into a vocation — traveling to the bedsides of the dying across Irkalla and adjacent zones, offering what medicine couldn't: a witnessed departure. She does not affiliate with any single religion but borrows fluidly from Yoruba ancestor traditions, Lithuanian mourning songs her grandfather taught her, and the newer E.L.F. rites that hold data-death as its own sacred transition. She charges what people can pay, often nothing.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,19 @@
   "carried_weapons": [
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Deepwell Station",
+    "Sovereign Noise",
+    "The CEO",
+    "Irkalla",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Underworld"
 }

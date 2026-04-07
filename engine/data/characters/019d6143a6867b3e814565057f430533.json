@@ -12,7 +12,7 @@
   "role": "Compute broker — resells black-market processing cycles, dark-net access, and stolen corporate server time",
   "age": 29,
   "status": "active",
-  "location": "The Shelf lower levels — operates from a rented stall in the Undertow's informal tech market, Solder Lane",
+  "location": "The Shelf lower levels — operates from a rented stall in the Undertow's informal tech market, Solder Lane, near Kedzie and Division",
   "description": "Orsolya is the kind of person who becomes the room's center of gravity without quite meaning to. They're of middling height, with a light brown complexion and sharp Melanesian-inflected features, hair grown out into a large natural cloud that they've seeded with bioluminescent filaments — gold and pale green — so it glows softly in the dark markets where they spend most of their time. Their eyes have iris mods: slow-shifting geometric patterns in amber and black that rotate when they're concentrating. They dress in tech-market layering — vest over vest over vest, every pocket occupied — and speak with their hands in constant motion.\n\nOrsolya runs stolen processing time the way a commodity trader runs futures: buying access to compromised corporate servers in bulk, slicing the cycles into sellable portions, and brokering them to anyone who needs computational power without a Tessera or Axiom account to buy it clean. Their client base ranges from small-time criminals running encryption to artists rendering immersive works that would be flagged on legitimate servers to political groups the corponations prefer didn't process anything. Orsolya is ethically eclectic about all of this and considerably sharper than most people who underestimate them expect. They have strong opinions about E.L.F.s specifically and will hold forth on data-spirit theology at any provocation.",
   "psychology": {
     "facet_weights": {
@@ -204,5 +204,20 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Undertow",
+    "The Filament",
+    "The Shelf",
+    "The Quiet Room",
+    "Aslan Vasquez-Chatterjee",
+    "Tessera Corponation",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Underworld"
 }

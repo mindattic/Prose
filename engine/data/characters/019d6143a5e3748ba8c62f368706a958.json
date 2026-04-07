@@ -12,7 +12,7 @@
   "role": "Union organizer for Ferrogate Transit maintenance workers",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave",
+  "location": "Hamtramck Enclave, near Halsted and Division",
   "description": "Daouda is a large man going soft at the middle after thirty years of physical work, with calloused hands that don't quite match his current desk-and-meeting life. His skin is a dark, warm brown, and he keeps his silver-streaked hair cropped close. He has a prosthetic left forearm — industrial accident, Ferrogate's fault, settled out of court for a number he will not say — in matte gray that he has deliberately kept undecorated while everyone around him customizes their chrome. The plainness is a statement about what it cost him.\n\nHe has organized three successful contract actions in the past decade and is personally responsible for the Hamtramck Enclave maintenance workers' current health and hazard provisions. He is patient to a degree that unnerves younger activists — he can sit in a bad meeting for four hours and still be the last person to speak, and still be the one who changes the outcome. He lights a candle at the Enclave's E.L.F. shrine every morning and asks the transit spirits to keep his people safe underground.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,13 @@
   "registered_firearms": [
     "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
     "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Ferrogate Transit",
+    "Irontide Tidal Energy",
+    "The Pure Hand",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

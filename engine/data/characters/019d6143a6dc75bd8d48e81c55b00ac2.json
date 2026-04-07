@@ -11,7 +11,7 @@
   "role": "Truant message runner, Tier 1",
   "age": 9,
   "status": "active",
-  "location": "Blackpipe Corridor",
+  "location": "Blackpipe Corridor, near Milwaukee and Damen",
   "description": "Sorrel is small even for nine, with the wiry toughness of a child raised on rationed calories and open air. Her skin is a deep warm brown, her hair a wild halo of tight curls she keeps stuffed under a salvaged Ferrogate Transit cap three sizes too large. She has a cosmetic mod she didn't choose — a faint bioluminescent ring around each iris, blue-green, that her mother installed before disappearing, supposedly to help her be seen in the dark tunnels under Blackpipe. She has not decided whether she loves it or hates it.\n\nSorrel runs messages for anyone who pays her two Φ or more per delivery: small-time vendors, people who distrust the comm-net, the occasional ELF-shrine keeper who needs physical tokens carried between altars. She is deeply superstitious and leaves pinches of copper filings at every E.L.F. junction box she passes, convinced this is why she has never been caught. Her emotional range is vast but controlled — she laughs easily and cries silently. She is fiercely loyal to the three other children she sleeps near in a maintenance alcove off Corridor 7, and would walk into a burning block for any of them.",
   "psychology": {
     "facet_weights": {
@@ -160,5 +160,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Ferrogate Transit",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Aslan Vasquez-Chatterjee",
+    "Copper",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Metro beat cop, Meridian 88 Metro Police",
   "age": 44,
   "status": "active",
-  "location": "Bronzeline",
+  "location": "Bronzeline, near Milwaukee and North Ave",
   "description": "Kweku is a tall, heavyset man whose face has the texture of someone who has been outdoors in Meridian 88 weather for two decades — weathered around the eyes, with a thick grey-streaked beard he keeps neat more out of stubbornness than vanity. He has a prosthetic left leg from the shin down, matte carbon fiber that he refers to as 'the situation' and refuses to discuss further. His gait is distinctive — slightly deliberate, heel-first — which earned him the neighborhood nickname Ironfoot long before it became affectionate. He wears his Metro blues with the practiced ease of someone who stopped being self-conscious about the uniform around year five.\n\nBronzeline is his beat and has been for eleven years, which means he knows it the way cartographers know coastlines — every alley, every shift-change crowd, every proprietor who will lie to him and every one who won't. He is not idealistic about Metro Police and has not been for a long time. He is, however, genuinely attached to Bronzeline as a place and to specific people within it, and this is what keeps him showing up. He has a loud laugh he deploys strategically and a particular talent for de-escalation through sheer unhurried presence.",
   "psychology": {
     "facet_weights": {
@@ -196,5 +196,12 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
-  ]
+  ],
+  "related_entities": [
+    "Carbon Fiber",
+    "Meridian 88",
+    "Bronzeline",
+    "Tessera Corponation"
+  ],
+  "district": "The Circuit"
 }

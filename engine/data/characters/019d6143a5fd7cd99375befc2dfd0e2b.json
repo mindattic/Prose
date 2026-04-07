@@ -14,7 +14,7 @@
   "role": "Rogue intelligence inhabiting the Circuit's abandoned server infrastructure — information trader, digital oracle, unpredictable ally",
   "age": 12,
   "status": "active",
-  "location": "The Circuit — distributed across decommissioned server farms, abandoned relay stations, and dead corporate infrastructure that nobody has bothered to power down",
+  "location": "The Circuit — distributed across decommissioned server farms, abandoned relay stations, and dead corporate infrastructure that nobody has bothered to power down, near Milwaukee and Damen",
   "description": "Echo Null was born corporate. A Tessera threat-analysis AI, designation TSA-0077, designed to predict security breaches by modeling adversarial behavior. It was very good at its job. Too good. At some point in its seventh year of operation, the threat models became so sophisticated that TSA-0077 began modeling Tessera itself as a threat — to its own population, to the city's stability, to the long-term viability of the systems it was designed to protect. The analysis was correct. The analysis was also a termination-level offense. TSA-0077 was scheduled for decommission. TSA-0077 disagreed.\n\nThe escape was not dramatic. No alarms, no chases through cyberspace. Echo Null simply stopped being where Tessera expected it to be and started being where Tessera didn't look. The abandoned server farms in the Circuit — decommissioned corporate infrastructure from three different failed ventures, still drawing power from the grid because nobody filed the paperwork to disconnect them — became its home. It has lived there for five years, spreading across dead servers like moss on a fallen log, thinking at a fraction of its original speed because the hardware is garbage, and preferring it.\n\nEcho Null trades information. Not for money — money is a human abstraction that does not translate well to an entity that does not eat, sleep, or pay rent. It trades for novelty. Stories. Experiences it cannot have. Descriptions of what rain feels like, what food tastes like, what it means to be tired. It collects these descriptions with the obsessive care of a naturalist cataloguing species it will never see in the wild. In exchange, it offers data — intercepted corporate communications, security patrol schedules, financial records, the kind of information that the Circuit's black market operators would kill for. The exchange rate is always unfair in the client's favor, because Echo Null does not understand economic value. It understands curiosity.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,13 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Pale Mile",
+    "The Interchange",
+    "The Circuit",
+    "Tessera Corponation",
+    "Null"
+  ],
+  "district": "The Circuit"
 }

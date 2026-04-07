@@ -1,0 +1,45 @@
+{
+  "id": "3a8f5d2e1c7b094f6a3d8e5c2f1b07a4",
+  "name": "Solenne Atelier ThermaVeil Smart-Lined Winter Coat",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A structured, knee-length coat in deep obsidian with phase-change smart fabric lining that actively modulates heat output based on skin temperature readings pulled from a paired BCI. The exterior is a liquid-resistant wool-cashmere analog with hand-stitched lapels; interior seams glow faintly amber when the thermal system is active. Fits are made-to-measure, accommodating any aug or geneware configuration.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "wool-cashmere analog face cloth",
+    "phase-change smart thermal lining",
+    "BCI-sync temperature sensor array",
+    "hand-stitched lapel canvas",
+    "magnetic interior closure"
+  ],
+  "functionality": "BCI-synced phase-change lining auto-adjusts thermal output across the coat's surface; custom-fitted to wearer's exact aug and geneware profile at point of manufacture.",
+  "what_it_says": "Old money or new power — either way, this coat costs more than a Tier 2 worker's annual wage and it shows in every thread.",
+  "worn_by": [
+    "Spire executives",
+    "corponation C-suite",
+    "power brokers",
+    "elite gala attendees in transit"
+  ],
+  "manufacturer": "Solenne Atelier — Spire District",
+  "price_range": "Φ4,200–Φ9,000 (bespoke)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The BCI sync contains a passive data-collection routine — Solenne Atelier harvests biometric data from every coat in the field; someone just noticed.",
+    "A Spire executive left this coat in a Tier 2 transit locker three weeks ago — whoever finds the claim token owns something worth more than the locker's entire building."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "winter_heavy",
+    "tier5",
+    "aug_compatible",
+    "gene_compatible",
+    "smart_fabric",
+    "bci_sync",
+    "coat",
+    "spire",
+    "solenne",
+    "luxury"
+  ]
+}

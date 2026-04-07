@@ -1,0 +1,37 @@
+{
+  "id": "312ab08657508520c6cdff81a64f015d",
+  "name": "Sentinel Corp Trigger-Discipline Training Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Smart-fabric gloves that monitor grip pressure, finger positioning, and hand tension in real time, providing haptic feedback when the wearer's grip pattern deviates from trained protocols. Originally designed for firearms training — the gloves vibrate when trigger discipline breaks down under stress.\n\nAdopted by security firms for ongoing proficiency monitoring and by physical therapists rehabilitating patients with hand-trauma or augmentation integration issues. The data logs are admissible in some jurisdictions as evidence of proper weapons handling.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "smart-fabric",
+    "haptic feedback motors",
+    "pressure sensors",
+    "data logging module"
+  ],
+  "functionality": "Grip monitoring, haptic correction feedback, training data logging",
+  "what_it_says": "You take weapons handling seriously enough to let your gloves correct you when you slip.",
+  "worn_by": [
+    "security trainees",
+    "firearms instructors",
+    "rehabilitation patients"
+  ],
+  "manufacturer": "Sentinel Corp",
+  "price_range": "Φ920",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A security officer's Trigger-Discipline logs show perfect form during a shooting incident — except for one 0.3-second window where the gloves recorded no hand at all, as though the trigger was pulled by something else."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 3",
+    "training",
+    "firearms",
+    "smart-fabric",
+    "security"
+  ]
+}

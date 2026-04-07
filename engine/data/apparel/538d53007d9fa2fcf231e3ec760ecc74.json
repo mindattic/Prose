@@ -1,0 +1,37 @@
+{
+  "id": "538d53007d9fa2fcf231e3ec760ecc74",
+  "name": "Korvain Dynamics Explosive Ordnance Disposal Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A blast-rated suit weighing approximately 27 kilograms, designed to protect the wearer from fragmentation, overpressure, and thermal effects of explosive detonation at close range. The suit uses layered ballistic fabric over rigid plate inserts, with a reinforced helmet and face shield rated for direct fragmentation impact.\n\nEOD operators refer to putting on this suit as 'suiting up for a conversation' — the conversation being between them and a device that might or might not respond to their disarming attempt. The suit can save their life if the conversation goes badly. It cannot guarantee it.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "layered ballistic fabric",
+    "rigid plate inserts",
+    "blast-rated helmet",
+    "thermal barrier lining"
+  ],
+  "functionality": "Blast fragmentation protection, overpressure mitigation, thermal barrier",
+  "what_it_says": "You walk toward things that are designed to kill everyone nearby, and you do it slowly and deliberately.",
+  "worn_by": [
+    "EOD operators",
+    "bomb disposal teams",
+    "explosive investigation units"
+  ],
+  "manufacturer": "Korvain Dynamics",
+  "price_range": "Φ18,000",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An EOD suit is found with blast damage consistent with an explosion — but the operator wearing it is missing, and the detonation site shows no biological evidence that anyone was inside when it went off."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 4",
+    "EOD",
+    "blast-rated",
+    "bomb disposal",
+    "Korvain"
+  ]
+}

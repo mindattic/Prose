@@ -12,7 +12,7 @@
   "role": "Freelance mechanic specializing in Ferrogate Transit rolling stock and personal e-vehicles",
   "age": 29,
   "status": "active",
-  "location": "Geartown, Pit Row Annex (a licensed repair bay squeezed between two Ferrogate-contracted shops)",
+  "location": "Geartown, Pit Row Annex (a licensed repair bay squeezed between two Ferrogate-contracted shops), near Fullerton and Damen",
   "description": "Kwabena is lean in the way of someone who forgets to eat when he is interested in something, with long fingers permanently stained in the particular blue-grey of ferrogate hydraulic fluid. His heritage is Ghanaian-Finnish-Bolivian and it shows in the warm amber of his skin and the pale green of his eyes, which are his most striking feature — not augmented, just genuinely that color, something he enjoys confirming when people ask. He has bioluminescent stripe mods down the outsides of both forearms in amber, purely aesthetic, which happen to be useful when working in dark undercarriages. His hair is kept very short except for a small braid at the nape of his neck that his younger sister did for him three years ago and that he has never cut.\n\nHe talks to machines the way other people talk to pets — low, encouraging, occasionally frustrated but never cruel. His shop is chaotic by any outside metric but internally logical: he knows where every part is and will become briefly offended if anyone moves something. He is generous with his time for people who cannot afford repairs and quietly inflexible with corporate contractors who try to lowball him. He has a running, entirely one-sided argument with the Ferrogate Transit Authority about their maintenance schedules that he prosecutes through strongly worded data-messages and occasional passive-aggressive comments when he fixes something their own crews certified as fine.",
   "psychology": {
     "facet_weights": {
@@ -220,5 +220,13 @@
   "carried_weapons": [
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Heritage Vault",
+    "Geartown",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

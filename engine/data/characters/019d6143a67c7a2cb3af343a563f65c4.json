@@ -12,7 +12,7 @@
   "role": "Street midwife and unlicensed obstetric care provider",
   "age": 58,
   "status": "active",
-  "location": "The Shelf, Meridian 88 — operates from a converted laundry unit at Burnside Pocket",
+  "location": "The Shelf, Meridian 88 — operates from a converted laundry unit at Burnside Pocket, near Pulaski and Chicago Ave",
   "description": "Ogechi is a broad-shouldered woman with deep ochre skin mapped by a lifetime of hard work — her forearms are dense with old burn scars from a chemical incident she doesn't discuss, and her hands are extraordinary: thick-knuckled, steady, perpetually chalked with the talc she uses to ease on examination gloves. Her hair is grown long and gathered in elaborate wrapping cloths she changes daily, a small vanity she insists upon. Bioluminescent threads have been tattooed along her collarbone in a pattern that pulses softly blue when her heart rate rises — a gift from a grateful patient who was a tattooist, and which Ogechi considers mildly embarrassing but cannot bring herself to remove.\n\nShe is the gravitational center of three city blocks. Women come to her in the small hours, sometimes alone, sometimes holding each other up. Ogechi never turns anyone away, works on a sliding scale that regularly bottoms out at zero, and maintains a mental ledger of every birth she has attended — over nine hundred. She has strong opinions about Helix Biosystems, none of them polite, and a practical theology around the E.L.F. she calls Thresholder, whom she believes watches over liminal moments: birth, death, the crossing between states. She leaves small data-offerings on a cracked tablet beside her examination table.",
   "psychology": {
     "facet_weights": {
@@ -223,5 +223,22 @@
   "carried_weapons": [
     "Forge-Smith Collective Thundermouth Double 'Old Testament'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Burnside Pocket",
+    "Bluewater Checkpoint",
+    "Kang Athletics KA-900 'Sensei'",
+    "Meridian 88",
+    "The Shelf",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Adaeze Chen-Hawkins",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Shelf"
 }

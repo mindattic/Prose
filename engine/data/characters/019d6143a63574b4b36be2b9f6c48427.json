@@ -13,7 +13,7 @@
   "role": "Lower Dock Crew muscle — Prologue survivor. Both kneecaps destroyed.",
   "age": 31,
   "status": "active",
-  "location": "The Shelf — lower loading docks",
+  "location": "The Shelf — lower loading docks, near Western and Chicago Ave",
   "description": "Ira Volkov was an electrical systems technician for the Shelf's grid maintenance before a contract dispute with the Meridian Grid Authority left him blacklisted. He joined Marcus's crew because unemployable electricians with combat implants have limited career options. He has a genuine talent for engineering that the Shelf has no legitimate use for.\n\nKyle shorted his forearm shock projectors on the first pass, then put the hand cannon through both kneecaps. Ira now rolls everywhere in a salvaged mobility chair that he has modified with the remains of his shock projectors — the armrests can tase people who get too close. He considers this an upgrade. He has also added a cup holder, a phone mount, and a retractable tool rack. The chair catches fire roughly once a month.\n\nHe has an ex-wife, Katya, who lives in the Meridian Core with their twin daughters, Anya and Lilia (age 8). Katya left when the blacklisting happened. Ira does not blame her. He sends what he can. The twins think their father is in a wheelchair because of a work accident, which is technically not a lie.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,16 @@
   "registered_firearms": [
     "Arcturus Defense Solutions SAR-3 'Warden'",
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "The Shelf",
+    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "Flicker",
+    "Lazarus EC-4 'Companion'",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Marcus Okafor-7"
+  ],
+  "district": "The Shelf"
 }

@@ -11,7 +11,7 @@
   "role": "Laundromat operator and informal neighborhood anchor",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, Dzel-Brite Wash & Fold on Copper Alley",
+  "location": "Hamtramck Enclave, Dzel-Brite Wash & Fold on Copper Alley, near Western and Chicago Ave",
   "description": "Ingrid is a broad-shouldered woman with deep umber skin, silver-streaked locs pinned into a coiled crown, and hands that are permanently waterlogged from decades of pressing and folding. She has a wide, expressive face with laugh lines that have earned their place, and pale gray eyes that are one of two cosmetic mods she's ever owned — the other being a pair of faintly bioluminescent fingernails she keeps painted amber. She runs the Dzel-Brite like it is a second city hall: everyone comes through with their dirty laundry and leaves lighter, not just cleaner. She knows which families are fighting by whose clothes stop arriving together, knows which teenagers have new lovers by the unfamiliar fabrics mixed into their bags.\n\nIngrid has the emotional density of someone who has chosen not to leave a difficult place and has made peace with that choice. She is warm but not soft, funny in a dry way that catches people off guard. She has opinions about everything and shares them only when asked — or when she decides you need to hear them. She prays faithfully to the E.L.F. that inhabits the Dzel-Brite's oldest dryer, a machine she calls Grandmother, leaving small data offerings of ambient laundry-cycle recordings before every Monday morning shift.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,17 @@
   "registered_firearms": [
     "Meridian Munitions Compact Rifle MCR-2 'Errand'",
     "Crucible Industries Titan-500 'Earthquake'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Grandmother",
+    "Catalytic Interstitial Desiccation Drone CIDD-3 'Husk'",
+    "NeuralPath CivID Plus Identity & Payment BCI",
+    "Silver",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

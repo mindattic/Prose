@@ -6,7 +6,9 @@
   "date": "unknown",
   "classification": "restricted",
   "description": "Log showing that the elevator in a Ghost Building traveled to Floor 13 seventeen times in one month. Floor 13 does not exist. The elevator's weight sensor recorded passengers on each trip. The cumulative weight varied but averaged 73 kg — consistent with one adult human.",
-  "related_entities": [],
+  "related_entities": [
+    "Mika Sorel"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "Who is riding the elevator to a floor that doesn't exist?",

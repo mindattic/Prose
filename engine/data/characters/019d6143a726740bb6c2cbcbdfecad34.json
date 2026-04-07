@@ -12,7 +12,7 @@
   "role": "Street midwife and unlicensed obstetric surgeon",
   "age": 58,
   "status": "active",
-  "location": "The Narrows, operating out of a converted water-treatment sub-level called the Hollow",
+  "location": "The Narrows, operating out of a converted water-treatment sub-level called the Hollow, near sub-level access near LaSalle and Congress",
   "description": "Yetunde is a broad-shouldered woman whose presence seems to compress a room — not through aggression but through sheer settled weight, as if she has been in every difficult place and come back. Her skin is very dark and very lined, and she wears her silver hair close-cropped. A bioluminescent stripe runs from her left collarbone to her wrist, deep amber, pulsing faintly when she is calm, quickening when she is alarmed — a medical mod she had fitted thirty years ago to help patients read her state during labor. Her hands are her most remarkable feature: large, scarred, absolutely steady. She smells faintly of antiseptic cedar and something older, herbal.\n\nShe does not waste words, but she is not cold. She asks exactly the right questions and listens to the answers in a way that makes people feel surveyed and also seen. She has delivered roughly four thousand infants in the Narrows and the neighboring warrens, has performed illegal gene-therapy corrections on fetuses whose parents could not afford Helix Biosystems, and has buried children she could not save. She prays to the E.L.F. that inhabits her autoclave every morning, leaving a data-offering of patient vitals from the previous week. She does not explain this to anyone who has not asked.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,17 @@
   "registered_firearms": [
     "Arcturus Defense Solutions Counter-BCI Rifle ACBR-2 'Migraine'",
     "Hearthstone Firearms Defender-38 'Snubnose'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "Forest Hollow",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Cedar"
+  ],
+  "district": "The Underworld"
 }

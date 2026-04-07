@@ -12,7 +12,7 @@
   "role": "Street pharmacist and unlicensed herbalist, Oxidian Market",
   "age": 61,
   "status": "active",
-  "location": "The Oxidian Market, stall row near the eastern drainage grate, Ironvein",
+  "location": "The Oxidian Market, stall row near the eastern drainage grate, Ironvein, near Western and Division",
   "description": "Solveig is a wide woman built like a river delta — slow-moving, broad, and capable of flooding without warning. Her skin is deep brown and mapped with pale vitiligo patches across her forearms and the left side of her jaw, which she has decorated with tiny bioluminescent dot tattoos that pulse gold when she's relaxed and dim to amber when she's displeased. Her hair is natural and enormous, threaded with dried flowers and small glass vials of colored tinctures she uses as hair accessories and sometimes as inventory. She wears multiple layers of padded cloth, always slightly damp-smelling from her herbal solvents, and keeps a carved wooden E.L.F. shrine nailed to the corner post of her stall where she burns data-chip offerings every morning before trading opens.\n\nShe is the market's unofficial grandmother and its most reliable source of pain management, mood stabilizers, sleep aids, and — for the right customer — things that don't have clean names. She speaks slowly and weighs every word like she's pricing it. She has strong opinions about which pharmaceutical corps are poisoning the tiers and will share them whether you asked or not. She's been in this exact stall for nineteen years and considers herself more permanent than the city grid.",
   "psychology": {
     "facet_weights": {
@@ -229,5 +229,19 @@
   "carried_weapons": [
     "Meridian Munitions Holdout-380 'Ankle Biter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Oxidian Market",
+    "Grandmother",
+    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Fabricator-Delta-9",
+    "The Pale Mile",
+    "Glass",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

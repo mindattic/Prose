@@ -12,7 +12,7 @@
   "role": "Junk merchant, scrap reseller, informal augmentation parts dealer",
   "age": 64,
   "status": "active",
-  "location": "The Alban Souk, Old Harbor",
+  "location": "The Alban Souk, Old Harbor, near Michigan Ave South and Cermak",
   "description": "Timur is a large man gone slightly to ruin in the graceful way of old machinery — still clearly capable, still clearly heavy, but weathered in ways that suggest many renegotiated repairs. He has a prominent jaw and broad cheekbones, medium-brown skin crosshatched with fine white scars from decades of handling sharp-edged salvage without sufficient gloves, and a right arm that is entirely cybernetic from the shoulder — a heavy industrial prosthetic, matte gunmetal, visibly older than current models and repaired in multiple places with mismatched components. He wears it with the casual comfort of a man who has had it longer than he hasn't. His stall at the Alban Souk is technically three stalls — he has occupied the space long enough that the boundaries have blurred into a small empire of organized rubble: crates of stripped components, racks of salvage-grade augmentation parts, shelves of pre-owned tools, bins of miscellaneous tech detritus that he can identify by feel.\n\nTimur is a man of comfortable silences. He does not make conversation; he makes transactions, and occasionally, for people he has decided are worth it, he makes exceptions to his general indifference. He has a sharp technical mind and can assess the quality of a piece of salvage hardware faster than most licensed appraisers, and he quietly sells aug components — stripped limbs, neural interface boards, secondhand sensory units — to people who cannot afford licensed installation. He does not perform the installations himself anymore. He used to. He stopped after something went wrong that he does not discuss.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,16 @@
   "carried_weapons": [
     "Hearthstone Firearms Guardian-12 'Bedside'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Manitowoc Drydock",
+    "Ferrogate Transit",
+    "The Alban Souk",
+    "The Reclamation Assembly",
+    "The Cutters Guild",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Irontide Tidal Energy",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "Old Harbor"
 }

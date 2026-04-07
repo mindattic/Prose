@@ -12,7 +12,7 @@
   "role": "Street pharmacist and unlicensed augmentation installer",
   "age": 34,
   "status": "active",
-  "location": "The Narrows, Ironvein",
+  "location": "The Narrows, Ironvein, near Fullerton and Damen",
   "description": "Osvaldo is lean and precise in the way of someone who learned early that stillness is a survival trait. He has his mother's Ghanaian cheekbones and his grandfather's Siberian jaw — a face that looks carved rather than grown, with close-cropped black hair going grey at his left temple from a nerve-burn incident he doesn't discuss. His eyes are both augmented: one a deep gold that tracks micro-expressions with unsettling accuracy, the other a surgical optic with a faint reticle visible when you catch him in certain light. His hands are his most notable feature — steady, long-fingered, kept meticulously clean in a way that clashes with the general atmosphere of his workspace, a narrow converted utility closet in the back of a Narrows electronics reseller. He dresses in neutral layers, nothing with obvious pockets, nothing that makes noise.\n\nOsvaldo operates in the gap between what people need and what licensed clinics will provide or what they can afford. He is not warm, exactly — he doesn't perform warmth — but he is genuinely careful with people in a clinical sense: he asks about allergies, he explains what he's doing, he refuses jobs that exceed his competency. He reads obsessively, mostly stolen Helix Biosystems technical manuals and bootleg surgical journals. He has a dry humor that surfaces only when he's comfortable, and he is rarely comfortable. The Narrows community regards him with a specific kind of respect usually reserved for dentists in pre-aug centuries — necessary, slightly dreaded, glad you have him.",
   "psychology": {
     "facet_weights": {
@@ -245,5 +245,19 @@
     "Meridian Munitions Wheelgun-38 'Roundhouse'",
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "The CEO",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA PG-2 'Signature'",
+    "Ironvein",
+    "Lacuna Genomics",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pure Hand",
+    "Nesting Doll",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

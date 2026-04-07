@@ -1,0 +1,36 @@
+{
+  "id": "66cb98c2474f51f54ba181f04faebbcf",
+  "name": "Pinnacle Security Full-Body Riot Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A modular riot-control suit with overlapping hard-shell plates covering the torso, arms, legs, and groin. Each plate is rated for blunt impact, low-velocity projectiles, and incendiary splash. The suit's interior is flame-retardant and incorporates cooling channels to manage heat buildup during extended deployments.\n\nThe visual presence of the Full-Body Riot Suit is itself a tool of crowd control — a line of officers in full riot kit communicates a level of force commitment that frequently de-escalates situations before physical contact occurs. When it doesn't, the suit earns its cost.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "hard-shell armor plates",
+    "flame-retardant interior",
+    "cooling channels"
+  ],
+  "functionality": "Full-body impact protection, incendiary resistance, extended-deployment cooling",
+  "what_it_says": "You're the line, and everything behind you depends on you not moving.",
+  "worn_by": [
+    "riot control units",
+    "crowd management",
+    "civil response teams"
+  ],
+  "manufacturer": "Pinnacle Security",
+  "price_range": "Φ3,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Full-Body Riot Suit is found abandoned in a residential district with all its plates removed — someone stripped the armor components for a purpose unrelated to crowd control."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 3",
+    "riot",
+    "armor",
+    "Pinnacle",
+    "crowd control"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Gym trainer and former competitive athlete",
   "age": 42,
   "status": "active",
-  "location": "Geartown, Ironvein district — works at a gym called Foundry Fitness, a no-frills facility above a machine shop",
+  "location": "Geartown, Ironvein district — works at a gym called Foundry Fitness, a no-frills facility above a machine shop, near Damen and Armitage",
   "description": "Emiljan is built like a question mark — once a very large man, now a large man who has aged into something more deliberate. He carries the muscle of his competitive years but it's softened at the edges, and his shoulders have the slight forward curve of someone who has spent too much time bent over injured people and broken equipment. He keeps a short beard, keeps his head shaved, and has a retractable-claw geneware mod on his right hand that he got as a young man when it seemed cool and now views with mild embarrassment — he keeps the claws trimmed short and rarely mentions them. His face is deeply expressive, heavy eyebrows doing most of the work.\n\nEmiljan ran as a competitive strength athlete in his twenties under a Ringo corponation sports sponsorship, which ended badly when he refused to take a Helix-manufactured performance modifier ahead of a sanctioned event and got quietly dropped from the roster. He's been training civilians and amateur athletes at Foundry for eleven years and genuinely loves the work — the slow process of watching someone find out what their body can do. He is patient to a fault in professional contexts and has almost no patience for bullshit in personal ones. He carries a specific, articulated bitterness toward corporate sports sponsorship that he will tell you about if you give him even a half-opening.",
   "psychology": {
     "facet_weights": {
@@ -186,5 +186,15 @@
   "carried_weapons": [
     "Street Custom 'Sunday School' Weaponized Religious Artifact"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ringo Corponation",
+    "Geartown",
+    "Ironvein",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Crucible Industries CR-9 'Foundry'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

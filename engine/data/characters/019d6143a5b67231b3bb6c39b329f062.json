@@ -12,7 +12,7 @@
   "role": "Primary school teacher at a community-funded school",
   "age": 38,
   "status": "active",
-  "location": "Brightmoor Reclamation — Soil & Signal Community School, a converted warehouse building",
+  "location": "Brightmoor Reclamation — Soil & Signal Community School, a converted warehouse building, near Ashland and Division",
   "description": "Arjun is a middle-height man with warm bronze-brown skin, an unruly beard he loses the war against on a weekly basis, and deep-set eyes that are perpetually slightly too interested in whatever is happening. His only geneware is a bioluminescent patch behind his left ear — pale blue-green, about the size of a thumb — that he got as a young man and has since forgotten to maintain, so it flickers unpredictably in low light like a lamp with a loose connection. He dresses in layers of mismatched professional clothing that suggests someone who used to care about presentation and has reached an accommodation with reality.\n\nSoil & Signal serves eighty-odd children from Brightmoor Reclamation's patchwork communities and operates on donated equipment, community Quanta subscriptions, and the collective will of eight staff members who could all earn more elsewhere. Arjun teaches the seven-to-ten cohort: mathematics, civic systems, and what the curriculum calls Environmental Literacy, which in practice means explaining to children why some parts of the city are poisoned and who made that decision. He is a genuinely gifted teacher — patient, inventive, unafraid to say 'I don't know' — who has let the demands of the school hollow out most of the rest of his life without quite noticing.",
   "psychology": {
     "facet_weights": {
@@ -226,5 +226,16 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Dredge Mining Collective",
+    "The Reclamation Assembly",
+    "The Open Syllabus",
+    "Palladian Construction",
+    "Bronze",
+    "Nesting Doll",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

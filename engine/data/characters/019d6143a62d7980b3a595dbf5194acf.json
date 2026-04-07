@@ -12,7 +12,7 @@
   "role": "Evidence removal and scene sanitation — cleaner",
   "age": 29,
   "status": "active",
-  "location": "Meridian Station — central transit nexus, neutral ground",
+  "location": "Meridian Station — central transit nexus, neutral ground, near LaSalle and Madison",
   "description": "Ilhan Nakamura-Bello are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 29, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Ilhan Nakamura-Bello plans to keep it that way. They work as a cleaner out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Ilhan Nakamura-Bello agrees on two things: they are worth the fee, and they are terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -269,5 +269,11 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Nearfield",
+    "Burden of Longitude"
+  ],
+  "district": "Meridian Core"
 }

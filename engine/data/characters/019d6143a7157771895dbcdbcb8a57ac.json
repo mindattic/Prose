@@ -11,7 +11,7 @@
   "role": "Fixer - Network of sub-fixers",
   "age": 56,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Western and Chicago Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -101,5 +101,9 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street-Custom Rebar Shiv 'Tetanus Kiss'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf"
+  ],
+  "district": "The Shelf"
 }

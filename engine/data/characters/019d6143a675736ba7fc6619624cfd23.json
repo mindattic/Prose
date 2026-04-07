@@ -12,7 +12,7 @@
   "role": "Contract broker and resource coordinator — fixer",
   "age": 38,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near Milwaukee and Damen",
   "description": "Obed Eriksson-Diallo are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 38, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a fixer out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nObed Eriksson-Diallo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -274,5 +274,12 @@
     "Street Custom 'Ghostwriter' Grafitti Flamethrower",
     "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Burden of Longitude"
+  ],
+  "district": "The Circuit"
 }

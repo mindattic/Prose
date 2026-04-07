@@ -13,7 +13,7 @@
   "role": "Technical operations and physical extraction specialist — The Margin Call",
   "age": 43,
   "status": "active",
-  "location": "Meridian Core — rents a workshop apartment in a light-industrial building. Half living space, half equipment cache.",
+  "location": "Meridian Core — rents a workshop apartment in a light-industrial building. Half living space, half equipment cache., near State and Jackson",
   "description": "Kev Ostrowski is the person who turns Sterling's plans into physical reality. When a server needs to be accessed, a facility breached, a person extracted, or an operation cleaned up — Kev does the work that happens between the strategy and the result. He spent sixteen years in corporate security for three different firms, working his way up from physical site security to executive protection to the classified tier where corporate security and corporate espionage share a hallway. He left when the fourth firm tried to recruit him — not because of ethics, but because he was tired of being a tool that changed hands.\n\nSterling found Kev working solo freelance jobs — competent work, badly priced, with no client management skills. Sterling provided the business architecture; Kev provided the operational capability. The partnership works because it's complementary and because neither man pretends to be something he isn't. Sterling is the mind; Kev is the hands. Kev accepts this because he's not interested in strategic thinking, and Sterling accepts Kev because he's not interested in getting his own hands dirty.\n\nKev is stocky, broad, with the thick hands of someone who has spent decades handling security equipment and the careful movement of someone who knows exactly how much damage he can do and chooses not to. He keeps his hair short, his clothes practical, and his equipment immaculate. He is the least corporate-looking member of the Margin Call, which makes him the crew member who operates outside the corporate ecosystem — the service entrance, the server room, the parking garage.",
   "psychology": {
     "facet_weights": {
@@ -192,5 +192,14 @@
   ],
   "registered_firearms": [
     "Crucible Industries Havoc-44 'Mauler'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian Core",
+    "WELLSPRING",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Chimera-Null",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "Meridian Core"
 }

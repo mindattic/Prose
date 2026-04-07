@@ -12,7 +12,7 @@
   "role": "Food stall operator — spiced protein wraps and fermented grain drinks",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Halsted and Chicago Ave",
   "description": "Thembi is a broad-shouldered woman with deep umber skin mapped by laugh lines and old burn scars across her left forearm she never bothered to have reskinned. Her hair is a natural silver-white cloud she pins back with copper rods engraved with Yoruba blessing glyphs. Her eyes have patterned irises — concentric rings of amber and forest green she got in her forties as a birthday gift to herself — and they miss nothing. She smells permanently of turmeric, fermented sorghum, and the faint electric tang of her portable heat coils. She moves behind her stall with the unhurried authority of someone who has occupied this exact twelve square meters for twenty-three years and intends to occupy it for twenty-three more.\n\nThembi is the unofficial den mother of the Oxidian Market's food row. She gives short credit to vendors she trusts, keeps a mental ledger of everyone's debts and feuds, and dispenses advice with the bluntness of someone who ran out of softening words a decade ago. Her wraps are legendary — she sources cultured insect protein from three different brokers and blends her spice paste from a recipe her grandmother brought from Lagos via Helsinki. She is warm to a fault with regular customers, glacially cold to anyone she suspects of disrespecting her stall or her neighbors, and completely incapable of pretending to like someone she doesn't.",
   "psychology": {
     "facet_weights": {
@@ -179,5 +179,21 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-25EM 'Tempest'",
     "Tessera TK-9 Proteus 'Shapeshifter'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Grandmother",
+    "The Cutters Guild",
+    "Geartown",
+    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Ringo Corponation"
+  ],
+  "district": "The Shelf"
 }

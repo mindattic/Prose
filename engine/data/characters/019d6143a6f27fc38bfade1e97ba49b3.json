@@ -12,7 +12,7 @@
   "role": "Remote drone and vehicle operations specialist — rigger",
   "age": 30,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near Fullerton and Damen",
   "description": "Tenzin Vargas-Baffour is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a rigger out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Tenzin Vargas-Baffour describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -279,5 +279,15 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "Geartown",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Surveillance operator, Ferrogate Transit Security",
   "age": 31,
   "status": "active",
-  "location": "Kessler Interchange",
+  "location": "Kessler Interchange, near North Ave and Damen",
   "description": "Soraya is a compact woman with deep brown skin and close-cropped natural hair she keeps pinned flat under a headset she almost never removes. Her eyes are her most striking feature — cosmetic irises patterned like circuit diagrams in amber and black, a Ferrogate employee perk she accepted mostly because it made her colleagues uncomfortable and she finds that useful. She has the particular stillness of someone who watches things for a living, and a habit of tracking movement in a room that makes first-time acquaintances feel vaguely prosecuted.\n\nShe runs the mid-shift monitoring suite at Kessler Interchange, a warren of overlapping transit corridors where four Ferrogate lines converge and approximately forty thousand people pass through daily. She is methodical, unhurried, and privately contemptuous of colleagues who confuse volume of incidents flagged with quality of work. She has learned to read a crowd the way some people read weather — pressure, density, the small tells of collective mood. She drinks too much stimulant tea and keeps a small clay figurine of an E.L.F. she calls Clicker on her console, leaving it fragments of raw surveillance data as offerings.",
   "psychology": {
     "facet_weights": {
@@ -203,5 +203,16 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-20E 'Thunderclap'",
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "The Gradient Compact",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "ARCHIVE",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Clay"
+  ],
+  "district": "The Circuit"
 }

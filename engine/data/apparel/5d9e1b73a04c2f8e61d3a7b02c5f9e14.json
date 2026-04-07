@@ -1,0 +1,42 @@
+{
+  "id": "5d9e1b73a04c2f8e61d3a7b02c5f9e14",
+  "name": "Gridline ZipPanel Modular Vest",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A lightweight puffer vest built from zip-off front panels — each quilted section detaches independently so you can shed bulk without removing the whole garment. Dusty olive shell with copper-tone zippers that run diagonally across the chest. Spinal-rig channel runs the full back seam with velcro-close covers.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "recycled ripstop nylon",
+    "reclaimed down-analog fill",
+    "copper alloy zipper tape",
+    "velcro spinal channel lining"
+  ],
+  "functionality": "Independent zip-off front panels; rear spinal-rig channel with velcro covers; packable into front pocket.",
+  "what_it_says": "Practical, no-nonsense layering from someone who's been caught underdressed by a lake-effect front more than once.",
+  "worn_by": [
+    "couriers",
+    "warehouse workers",
+    "street vendors",
+    "transit operators",
+    "off-duty CorpSec"
+  ],
+  "manufacturer": "Gridline Transit Apparel",
+  "price_range": "Φ55–Φ80",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The inner panel lining has a hidden pocket stitched shut — something was sewn inside and someone didn't want it found easily.",
+    "Gridline stopped making this colorway two seasons ago; the copper zippers are now a quiet identifier among a specific courier network."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "transitional_layering",
+    "vest",
+    "modular",
+    "zip_off",
+    "aug_compatible",
+    "tier_2",
+    "great_lakes_weather"
+  ]
+}

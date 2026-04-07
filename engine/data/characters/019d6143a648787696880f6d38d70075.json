@@ -14,7 +14,7 @@
   "role": "Protagonist — freelance enforcer, facility survivor, the Street Samurai",
   "age": 27,
   "status": "active",
-  "location": "The Shelf — moves between ungoverned zones and corpo territory",
+  "location": "The Shelf — moves between ungoverned zones and corpo territory, near Western and Chicago Ave",
   "description": "Kyle carries hardware that was never meant to leave the facility. NeoCortex Program Atlas, Subprogram A-7: a high-density electrode array with 32,768 electrodes and 256 threads — roughly 8x the density of standard Tier 3 corpo implants. The implant gives him cognitive processing speed comparable to Tier 3-4 augmented, reaction time in the top 0.1% of recorded human performance, and fragmentary access to sensory data streams. The catch: the hardware was never calibrated for long-term stability. He experiences periodic neural static, memory bleed from other test subjects, and micro-seizures that are getting more frequent. No corpo surgeon will touch it. He maintains it himself with salvaged tools and stolen pharmaceutical stabilizers, the way you would maintain a weapon that is also a time bomb. He carries a katana — carbon-nanotube composite blade with a piezoelectric disruption layer that shorts neural implants on contact. The katana is not nostalgia. It is the only weapon that works everywhere Kyle needs to go.",
   "psychology": {
     "facet_weights": {
@@ -327,5 +327,13 @@
   ],
   "registered_firearms": [
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
-  ]
+  ],
+  "related_entities": [
+    "The Shelf",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Static",
+    "Slagworks Industrial",
+    "Jerome Atlas"
+  ],
+  "district": "The Shelf"
 }

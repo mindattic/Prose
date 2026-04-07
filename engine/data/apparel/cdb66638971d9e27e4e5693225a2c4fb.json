@@ -1,0 +1,36 @@
+{
+  "id": "cdb66638971d9e27e4e5693225a2c4fb",
+  "name": "Duskline Apparel Messenger Sling Bag",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A compact, cross-body sling bag with a signal-shielded interior compartment and quick-access exterior pockets. The main compartment is lined with Faraday mesh that blocks all wireless signals to and from whatever is stored inside — useful for carrying devices you don't want tracked or data cores you don't want remotely wiped.\n\nThe bag's exterior is unremarkable urban grey. The shoulder strap is reinforced with a steel cable core that resists cutting. A common sight in courier and runner circles where the contents of the bag are more valuable than the person carrying it.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "Faraday mesh lining",
+    "steel-cable reinforced strap",
+    "water-resistant exterior"
+  ],
+  "functionality": "Signal-shielded storage, cut-resistant strap, quick-access pockets",
+  "what_it_says": "Whatever you're carrying is invisible to every scanner on the street until you decide to take it out.",
+  "worn_by": [
+    "couriers",
+    "runners",
+    "data transporters"
+  ],
+  "manufacturer": "Duskline Apparel",
+  "price_range": "Φ420",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A courier's sling bag is recovered with the Faraday compartment intact — but the data core inside was remotely wiped anyway, meaning someone breached the shielding without opening the bag."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 2",
+    "bag",
+    "Faraday",
+    "courier",
+    "signal-shielded"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Gene-mod body artist and tattoo practitioner",
   "age": 37,
   "status": "active",
-  "location": "The Garret, a converted water-treatment building in Edgewater Prism",
+  "location": "The Garret, a converted water-treatment building in Edgewater Prism, near Lincoln and Addison",
   "description": "Pavlína is compact and precise in their movements, with warm golden-brown skin currently hosting a living portfolio: bioluminescent geometric forms along both arms that shift color with their body temperature, a mossy texture patch on their left shoulder that is genuinely soft to touch (a client gift they kept), and irises engineered to display a slow nautilus spiral in deep amber and black. Their hair is cropped close on one side and grown into a dramatic sweep on the other, currently a matte black that absorbs light strangely.\n\nThey are one of the most sought-after gene-mod body artists in Meridian 88's middle tiers — not cheap enough for Tier 1 walk-ins and not expensive enough for Tier 4 corporate vanity, which suits them perfectly. Their studio occupies two floors of The Garret and smells of antiseptic and the particular warm mineral scent of living tissue culture. They are precise, unhurried, and deeply opinionated about their art form, which they will share with you whether or not you asked. They have no patience for clients who want mods for status signaling and extraordinary patience for clients who want mods to feel like themselves.",
   "psychology": {
     "facet_weights": {
@@ -245,5 +245,15 @@
   "registered_firearms": [
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
     "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'"
-  ]
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "Meridian 88",
+    "The Garret",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Gradient Compact",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Laceworks"
 }

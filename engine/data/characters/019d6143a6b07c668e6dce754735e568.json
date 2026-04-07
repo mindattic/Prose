@@ -12,7 +12,7 @@
   "role": "Synthetic rights lawyer and policy advocate operating out of Hamtramck Enclave",
   "age": 41,
   "status": "active",
-  "location": "Hamtramck Enclave, Meridian 88",
+  "location": "Hamtramck Enclave, Meridian 88, near Ashland and Division",
   "description": "Reuben is tall and slightly gaunt in the way of people who forget to eat when they're absorbed in work, with sharp cheekbones, dark skin, and close-cropped natural hair that is beginning to show early grey at the temples. He wears prescription lenses rather than optical implants, a deliberate choice that marks him as either old-fashioned or principled depending on who is judging. His suits are always exactly one tier above what he can actually afford — he buys them secondhand and has them altered by a tailor in the Enclave who owes him a favor. There is ink on his fingers on most days and, when he is working late, a manic brightness in his eyes that makes him look younger than he is.\n\nReuben practices law in the gap between what is technically legal and what is actually enforced, and he has made himself expert in a body of precedent so obscure and so specific that he may be one of three people in Meridian 88 who can cite it from memory. He represents synthetic workers, E.L.F. collectives seeking legal personhood status, and humans whose rights have been violated by corporate classification schemes. He is deeply idealistic about the law as an institution, which is a form of stubbornness that has kept him poor and relatively effective. He does not drink but keeps a bottle of very good bourbon on his desk for clients who need it.",
   "psychology": {
     "facet_weights": {
@@ -166,5 +166,13 @@
     "Crucible Industries Forge-454 'Hammerfall'",
     "Crucible Industries Cryogenic Axe CA-1 'Frostbite Edge'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Meridian 88",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Lacuna Genomics",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

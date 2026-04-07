@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator, drives the Blackpipe Corridor night loop",
   "age": 34,
   "status": "active",
-  "location": "Blackpipe Corridor, operates out of the Deepwell Station depot",
+  "location": "Blackpipe Corridor, operates out of the Deepwell Station depot, near sub-level access near Dearborn and Jackson",
   "description": "Obinna is a lean, tall man with very dark skin and the kind of stillness that comes from spending eight hours a night in a sealed cab watching the city scroll past. He keeps his head shaved close and has a single line of geometric scarification across his left cheekbone — his father's tradition, Igbo-inflected, though Obinna grew up in a Polish-Samoan household and learned the meaning of the marks only from photographs. His eyes have patterned irises, a personal mod he saved up for at twenty-five: they display a slow-rotating amber geometric that passengers sometimes find unsettling when he turns to look at them.\n\nHe has the particular calm of someone who has accepted his job as a kind of meditation. The night loop runs from 23:00 to 07:00, serving the Blackpipe Corridor's factory shift workers, waste handlers, and late-night wanderers. He knows his regulars by which stop they board and whether they sit. He keeps a small shrine to the transit ELF — whom he calls Deepwell — zip-tied to the corner of his console: a circuit board wrapped in copper wire with a single LED heart that pulses when the network is healthy. He leaves his passenger counts as offerings and, on rough nights, a single stick of incense jammed into the vent.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,16 @@
   "registered_firearms": [
     "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Deepwell Station",
+    "Dredge Mining Collective",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Déjà Vu"
+  ],
+  "district": "The Underworld"
 }

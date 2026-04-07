@@ -12,7 +12,7 @@
   "role": "Counter-surveillance and mole detection — counterintelligence specialist",
   "age": 35,
   "status": "active",
-  "location": "Meridian Station — central transit nexus, neutral ground",
+  "location": "Meridian Station — central transit nexus, neutral ground, near State and Monroe",
   "description": "Pare Forsberg-Ofosu is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 35, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a counterintelligence specialist out of Meridian Station, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nPare Forsberg-Ofosu has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -270,5 +270,17 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Clover"
+  ],
+  "district": "Meridian Core"
 }

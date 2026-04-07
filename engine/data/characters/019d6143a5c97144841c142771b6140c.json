@@ -12,7 +12,7 @@
   "role": "Corporate Wars veteran, retired Axiom security contractor, pension-dependent resident",
   "age": 68,
   "status": "active",
-  "location": "The Shelf, Block 7, stall 7-F (lives in a converted shipping container unit)",
+  "location": "The Shelf, Block 7, stall 7-F (lives in a converted shipping container unit), near Halsted and Division",
   "description": "Boubacar is a lean, angular man with close-cropped grey hair and the particular economy of movement that marks people trained to conserve energy over long distances. His skin is dark brown with pronounced keloid scarring across his right shoulder and clavicle — he does not cover it and does not explain it to strangers. He has cosmetic geneware: a cat's tail, russet-orange with a dark tip, that he got as a joke in 2168 when his unit was celebrating surviving the Kessler Corridor engagement. He has kept it because it amuses him that it annoys people who expect a veteran to be more serious. His left hand has a visible subdermal port on the back where a tactical datalink was removed — the flesh around it never quite healed smooth.\n\nBoubacar served twelve years as an Axiom ground contractor during the Corporate Wars, and he came back from them with a pension that covers his container unit on The Shelf, two meals a day if he is careful, and nothing else. He is not bitter about this in the operatic way — he is bitter in the quiet, functional way of someone who made his peace with it and is now simply watching to see what happens next. He runs a small informal counseling operation for other veterans on The Shelf, not because anyone asked him to or pays him to, but because he watched two friends die from nothing that could have been prevented if anyone had been paying attention. He has no license, no credentials, and a long waiting list.",
   "psychology": {
     "facet_weights": {
@@ -257,5 +257,10 @@
   "registered_firearms": [
     "Arcturus Defense Solutions SAR-3 'Warden'",
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ]
+  ],
+  "related_entities": [
+    "The Shelf",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Midwife and community reproductive health practitioner serving the Hamtramck Enclave and surrounding neighborhoods",
   "age": 38,
   "status": "active",
-  "location": "Hamtramck Enclave — operates from a second-floor flat that doubles as a small clinic; also makes home visits throughout the district",
+  "location": "Hamtramck Enclave — operates from a second-floor flat that doubles as a small clinic; also makes home visits throughout the district, near Western and Division",
   "description": "Isioma is a compact, energetic woman with rich dark skin, sharp cheekbones, and a wide gap-toothed smile that she deploys like a tool. Her hair is kept in small, intricate braids pinned up beneath a patterned cloth wrap when she's working, down and loose when she's not — a distinction she makes firmly as a psychological boundary. She has a bioluminescent mod she got in her twenties: a soft gold shimmer under the skin at her collarbones that she originally disliked and now considers a professional asset, because anxious patients find it soothing in dim rooms during labor. She moves fast and talks faster, and her hands are never not doing something.\n\nIsioma has delivered over four hundred children in ten years of practice, and she carries that number the way other people carry credentials — it is her proof and her weight. She is an outspoken advocate for reproductive care as infrastructure, not luxury, and she frequently clashes with Helix Biosystems representatives who attempt to regulate or audit community practitioners like herself. She has a complicated relationship with the gene therapy industry, believing that geneware for infants should be a family's choice but that the cost structures make it coercion dressed as option. She keeps a large, handpainted mural of an E.L.F. she calls the Threshold on her clinic wall — a figure made of doorways — and every family she works with is invited to leave a small offering at it after a successful birth.",
   "psychology": {
     "facet_weights": {
@@ -227,5 +227,21 @@
   "carried_weapons": [
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Hamtramck Enclave",
+    "The Threshold",
+    "The Iron Lotus",
+    "Threshold",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "The Gradient Compact",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Midwife",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Gold",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

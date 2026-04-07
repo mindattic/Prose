@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit tram operator, Line 7 through Geartown and the Narrows",
   "age": 34,
   "status": "active",
-  "location": "Based at Deepwell Station maintenance depot; lives in a Ferrogate-subsidized housing block in McKinley Flats",
+  "location": "Based at Deepwell Station maintenance depot; lives in a Ferrogate-subsidized housing block in McKinley Flats, near sub-level access near State and Van Buren",
   "description": "Pekka is tall and angular, with the kind of face that reads as younger than it is — wide jaw, large dark eyes, deep brown skin with a cool undertone. His Finnish-Senegalese-Indian heritage gives him a build that's all long limb and narrow shoulder. He keeps his hair cut very short on the sides with a small puff on top that he sometimes lets grow out for months before cutting again, depending on how much he's paying attention to himself. A bioluminescent stripe runs from his left temple down to his jaw — pale aquamarine, very subtle in daylight, visible at night — which he got at 22 when he was trying to impress someone who was not ultimately impressible.\n\nHe is a profoundly calm person, almost to a fault. Twelve-hour shifts in a sealed cab watching the city slide past a window have given him a relationship with solitude that most people find hard to understand. He is kind, observant, and genuinely interested in the passengers who choose to stand near the front cab window and look out — he's learned to gauge a person's state from their reflection in the glass. He has strong opinions about tram etiquette, the correct way to eat on transit, and the ELF he believes watches Line 7, whom he has named Sevenglass and addresses quietly before each shift.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,17 @@
   "registered_firearms": [
     "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "McKinley Flats",
+    "The United Workers Front",
+    "Ferrogate Transit",
+    "The Heritage Vault",
+    "The Gradient Compact",
+    "Déjà Vu",
+    "The Pale Mile",
+    "Glass"
+  ],
+  "district": "The Underworld"
 }

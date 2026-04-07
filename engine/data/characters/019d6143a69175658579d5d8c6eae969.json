@@ -11,7 +11,7 @@
   "role": "Ferrogate Transit operator, mag-rail Line 7 (Deepwell Station to Kilimanjaro Mass Driver corridor)",
   "age": 38,
   "status": "active",
-  "location": "Deepwell Station, Line 7 operations hub; lives in a transit housing block near Calumet Rise",
+  "location": "Deepwell Station, Line 7 operations hub; lives in a transit housing block near Calumet Rise, near sub-level access near LaSalle and Congress",
   "description": "Paloma is solidly built with a calm, unhurried presence that reads immediately as someone who has spent years managing enclosed metal tubes full of stressed strangers. Their skin is a deep warm brown, and they wear their hair in a close-cropped natural with a strip of white at the left temple — not dye, an actual depigmentation patch they've had since their twenties and which they consider their best feature. They have a geneware modification: their fingers have faintly iridescent nail beds, a purchase from a Deepwell Station parlor that they thought would be subtle and aren't, which they find quietly funny.\n\nPaloma has been on Line 7 for eleven years. They know every mechanical quirk of the mag-rail cars they operate, the exact spots where signal drops for two seconds, the unofficial stops where operators slow but don't technically halt for elderly riders who can't make the official platforms. They are a union steward — Ferrogate Transit Workers Local 44 — and approach labor organizing with the same methodical calm they bring to operating a multi-ton vehicle at speed. They don't hate their work. They do hate Ferrogate's management, specifically, with a detailed and evidence-based hatred developed over a decade of contract negotiations.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,12 @@
   "registered_firearms": [
     "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
     "Crucible Industries Talon-5 'Jackknife'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Ferrogate Transit",
+    "Calumet Rise",
+    "Tessera TAR-12 'Consensus'"
+  ],
+  "district": "The Underworld"
 }

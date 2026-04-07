@@ -12,7 +12,7 @@
   "role": "seasonal worker and airship drifter",
   "age": 17,
   "status": "active",
-  "location": "Waukegan Industrial Shelf (bunkhouse adjacent to Dock Seven)",
+  "location": "Waukegan Industrial Shelf (bunkhouse adjacent to Dock Seven), near Wacker and State",
   "description": "Pako is seventeen and looks it — all unfinished angles and restless energy, a rangy kid with warm brown skin, loose black curls that he's never bothered to cut properly so they spiral out in all directions, and eyes that are a natural dark green with a ring of amber around the pupil that makes them look permanently lit from within. He's got geneware cat ears — small, dark-furred, perpetually swiveling — that he bought with his first real paycheck because he wanted them badly and thought they'd make him look older. They don't. He's wearing a Ferrogate Transit work vest four sizes too big for him, which he received as part of the seasonal dock labor package and which he has rolled up at the sleeves and drawn on with a marker pen along all the pocket seams.\n\nPako is a Georgian-Samoan kid from nowhere in particular — born on an airship cargo hauler, raised on a circuit of industrial ports, currently on his third season of dock work at the Waukegan Industrial Shelf. He is fizzing with the particular energy of someone who has not yet decided what kind of person to be and is trying on options rapidly. He is funny, reckless, occasionally deeply kind, frequently thoughtless, and genuinely talented at three-dimensional spatial reasoning in ways he doesn't have the vocabulary to describe — he just knows where things are and where they'll be. He prays to an E.L.F. he calls Ironbird, the spirit of the cargo hauler he was born on, by tapping specific sequences on metal surfaces.",
   "psychology": {
     "facet_weights": {
@@ -213,5 +213,17 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Waukegan Industrial Shelf",
+    "Ferrogate Transit",
+    "The Unfinished Theorem",
+    "Burnside Pocket",
+    "FENRIS INDUSTRIAL HaulMaster HX-7 Arm",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "Old Harbor"
 }

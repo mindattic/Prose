@@ -1,0 +1,39 @@
+{
+  "id": "7d1e93bc540a2f86e4c017d2a3b58e91",
+  "name": "Coldbreak Ventflow Cargo Short",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Knee-length cargo shorts in recycled synth-canvas, dusty olive with heat-sealed mesh side panels that vent thigh heat during humid stretches. Four zippered pockets, one with a hidden conductive sleeve for cooling leg-prosthetic contact points. Adjustable waistband fits over hip chrome without pinching.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "recycled synth-canvas",
+    "heat-sealed ventilation mesh",
+    "conductive cooling sleeve liner"
+  ],
+  "functionality": "Mesh side vents for air circulation, conductive prosthetic-cooling sleeve, aug-compatible waistband.",
+  "what_it_says": "Function over everything — you've sweated through enough bad shorts to stop caring how they look.",
+  "worn_by": [
+    "factory workers",
+    "transit operators",
+    "prosthetic-limb users",
+    "Shelf laborers on hot shifts"
+  ],
+  "manufacturer": "Coldbreak",
+  "price_range": "Φ 22–34",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The conductive sleeve was retrofitted by a street augtech — it runs cooler than the factory spec, but why?",
+    "A cargo pocket is stitched shut from the inside, something lumpy and uncuttable sealed within."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "summer_light",
+    "aug_compatible",
+    "tier2",
+    "shorts",
+    "ventilated",
+    "prosthetic_cooling"
+  ]
+}

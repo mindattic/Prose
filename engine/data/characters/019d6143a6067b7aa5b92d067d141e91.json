@@ -12,7 +12,7 @@
   "role": "Field trauma surgeon and combat support — combat medic",
   "age": 35,
   "status": "active",
-  "location": "The Underbelly — sub-street tunnels and maintenance corridors",
+  "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near LaSalle and Congress",
   "description": "Eshe Pena-Baah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 35, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a combat medic out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEshe Pena-Baah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,11 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-15R 'Reclaim'",
     "Nkomo-Lindqvist NLR-9 'Counselor'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Burden of Longitude",
+    "Slagworks Industrial"
+  ],
+  "district": "The Underworld"
 }

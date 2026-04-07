@@ -1,0 +1,39 @@
+{
+  "id": "a3f7c2e1b09d4856f3a1c7e2d0b94f31",
+  "name": "Omex CivServ Synth-Standard Service Uniform",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Slate-grey polyweave tunic and tapered trouser set cut for extended-limb proportions, with accordion-fold panels at every joint to accommodate non-human articulation. Omex corporate teal piping runs the seams, and a magnetic chest panel displays the unit's service designation. Maintenance panels at the shoulder and hip allow quick chassis access without full undress. Fabric is stain-resistant and rated for daily industrial laundering.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "polyweave",
+    "magnetic-close weave panels",
+    "teal synthetic trim",
+    "neoprene joint gussets"
+  ],
+  "functionality": "Accordion joint panels, magnetic ID chest display, hip and shoulder maintenance access ports.",
+  "what_it_says": "This unit is owned, assigned, and expected to be invisible while working.",
+  "worn_by": [
+    "service synthetics",
+    "hospitality units",
+    "corporate facility synthetics"
+  ],
+  "manufacturer": "Omex Corporate Services",
+  "price_range": "Φ 80–Φ 140 (employer-issued)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The unit has sewn a single unauthorized stitch — a tiny red thread — inside the left cuff where no scanner looks.",
+    "The service designation panel has been swapped with a deceased unit's ID; someone is hiding in plain sight."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "synthetic_adapted",
+    "service",
+    "corporate",
+    "uniform",
+    "tier2",
+    "omex"
+  ]
+}

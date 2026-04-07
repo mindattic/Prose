@@ -12,7 +12,7 @@
   "role": "Freelance mechanic specializing in personal mobility rigs and modified transit vehicles, operates from a rented bay in Geartown",
   "age": 23,
   "status": "active",
-  "location": "Geartown — rents Bay 7 in the Corrigan's Collective workshop block",
+  "location": "Geartown — rents Bay 7 in the Corrigan's Collective workshop block, near Milwaukee and North Ave",
   "description": "Lautaro is a young man who looks like he was built for a different era — wide shoulders, large hands, a face that defaults to an expression of calm concentration that people sometimes mistake for slowness until they watch him work. His skin is a medium brown with warm undertones, his black hair cut close on the sides and longer on top, usually pushed back with a stripe of grease he hasn't noticed. His most striking feature is a patterned iris geneware mod: his eyes display a geometric repeating motif in amber and dark brown that he chose at twenty-one to mirror a pattern from his Fula grandmother's weaving. He has retractable claw fingertip implants — not geneware, hard chrome — that he uses as impromptu tools when he doesn't have the right implement to hand, which is more often than he'd like.\n\nHe is good at his job in the instinctive way that some people are, the kind of mechanic who listens to an engine before he looks at it. He is also twenty-three and running a one-person operation on a borrowed reputation and a rented bay, which means he is perpetually overextended, slightly too eager to please, and deeply anxious about money in the specific way of someone who grew up without it and is terrified of returning to that. He is honest to the point of commercial self-sabotage — he will tell you if the repair you want isn't the repair you need, even if the repair you need costs less.",
   "psychology": {
     "facet_weights": {
@@ -200,5 +200,14 @@
     "Meridian Munitions Snapper-22 'Cricket'",
     "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grandmother",
+    "Ouroboros Energy Power Distribution Trunk Network",
+    "Ferrogate Transit",
+    "Geartown",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Circuit"
 }

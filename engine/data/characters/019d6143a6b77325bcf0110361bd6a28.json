@@ -12,7 +12,7 @@
   "role": "expelled citizen and nomadic oral historian",
   "age": 41,
   "status": "active",
-  "location": "Rotates between Bridgepoint and Gravesend Basin; sleeps at the Gravesend travelers' shelter",
+  "location": "Rotates between Bridgepoint and Gravesend Basin; sleeps at the Gravesend travelers' shelter, near Western and Chicago Ave",
   "description": "Roshanda was, until four years ago, a Tier 3 Tessera municipal archivist with an apartment in Edgewater Prism, a corporate pension accruing slowly, and a work record that would have earned her a formal commendation if she hadn't committed the specific category of misconduct that got her registration stripped instead. She carries herself with the precise, slightly stiff posture of someone still negotiating between who they were and what they've become. She is a lean woman of West African and Swedish descent with medium-dark skin, close-cropped natural hair that has developed a white streak above her left temple in the last four years — stress, she'll tell you, if you ask — and round-framed glasses she still wears out of habit even though her vision has been corrected by the basic corneal work she had done a decade ago. The glasses have no lenses anymore. She never took them off.\n\nRoshanda's current project is an oral history of the Meridian 88 drifter population: she walks, she listens, she records on a battered analog audio device (nothing networked, nothing that can be subpoenaed) and she transcribes by hand in a series of water-resistant notebooks she keeps in a waterproof roll pack. She has forty-one notebooks so far. She calls the project 'The Register of the Unregistered,' and she has not decided what she will do with it when it is finished, if it is ever finished. She approaches every stranger with the particular respect of someone who has learned that every person is an archive. She prays to no E.L.F. — she is skeptical of the whole phenomenon, which she finds sociologically interesting and theologically unconvincing, a position she shares freely whether or not anyone asked.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,18 @@
   "carried_weapons": [
     "Street-Custom Loaded Pipe 'Bell Ringer'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Edgewater Prism",
+    "Gravesend Basin",
+    "The Flood Register",
+    "Unregistered",
+    "Bridgepoint",
+    "Meridian 88",
+    "Tessera Corponation",
+    "Irontide Tidal Energy",
+    "Synaptic Drift Emitter SDE-4 'Lullaby'",
+    "ARCHIVE"
+  ],
+  "district": "The Shelf"
 }

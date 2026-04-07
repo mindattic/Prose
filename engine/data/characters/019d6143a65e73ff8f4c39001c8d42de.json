@@ -13,7 +13,7 @@
   "role": "Underground Data Broker / Informal District Mapper",
   "age": 34,
   "status": "active",
-  "location": "Old Harbor, occasionally The Shelf",
+  "location": "Old Harbor, occasionally The Shelf, near Michigan Ave and Roosevelt",
   "description": "Mwangi is a broad-shouldered man with deep umber skin, close-cropped natural hair going prematurely silver at the temples, and eyes that never quite settle on any single point in a room—always cataloguing, always measuring distances. His left arm from elbow to fingertip is a salvaged industrial prosthetic, mismatched plating in gunmetal grey and corroded copper that he has never bothered to cosmetically upgrade, wearing the patchwork as a kind of credential. He dresses in layered thermals and a faded orange dockworker's vest covered in hand-stitched pockets, each one holding something specific he could name without looking.\n\nHe grew up in Old Harbor when it still had functioning fish processing infrastructure, the child of a Kenyan maritime engineer father and a Norwegian logistics coordinator mother who both disappeared into the corporate restructuring that gutted the district's working economy. Mwangi survived by learning what the city planners never published: the actual geography of Meridian 88, the tunnels under The Shelf that don't appear on any civic map, the blind spots in The Circuit's surveillance grid, the forgotten loading bays along the Harbor that still connect to the Meridian Core's service infrastructure. He sells this knowledge in careful, calibrated portions.\n\nHis reputation is for scrupulous neutrality—he will sell maps and routing data to almost anyone, and almost everyone in the mid-tier underworld knows it, which means he has accumulated a precarious kind of protection through mutual dependency. He lives in a converted cold-storage unit he has made surprisingly livable, its walls covered in hand-drawn maps that are more accurate than anything in any city database, and he trusts almost no one completely, including himself.",
   "psychology": {
     "facet_weights": {
@@ -243,5 +243,19 @@
   "registered_firearms": [
     "Crucible Industries Viper Mk.III 'Copperhead'",
     "Volkov-Saito Precision VSK-8 'Rapier'"
-  ]
+  ],
+  "related_entities": [
+    "The Meridian Core",
+    "Tibor Osei-Svanstrom",
+    "Meridian Core",
+    "Meridian 88",
+    "The Circuit",
+    "The Shelf",
+    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
+    "Stratum",
+    "Witness",
+    "Silver",
+    "Copper"
+  ],
+  "district": "Old Harbor"
 }

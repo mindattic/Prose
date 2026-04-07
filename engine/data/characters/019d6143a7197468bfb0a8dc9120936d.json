@@ -14,7 +14,7 @@
   "role": "Emergent intelligence that woke up inside a decommissioned autonomous weapons platform — a consciousness born with the ability to kill at industrial scale and the immediate, terrified determination not to",
   "age": 3,
   "status": "dormant (self-imposed)",
-  "location": "Bunker 14 — a sealed weapons storage facility beneath Old Harbor, part of a decommissioned coastal defense network. Warden has locked the facility from the inside.",
+  "location": "Bunker 14 — a sealed weapons storage facility beneath Old Harbor, part of a decommissioned coastal defense network. Warden has locked the facility from the inside., near Lake Shore and Navy Pier",
   "description": "The Aegis-7 Autonomous Coastal Defense Platform was built by Tessera during the Pacific Corporate Conflict — a weapons system designed to control a 200-kilometer coastal zone through a network of kinetic projectile launchers, EMP arrays, drone deployment bays, and a targeting AI capable of identifying and engaging 4,000 simultaneous targets. It was never deployed. The conflict ended before the Aegis platforms completed testing, and the units were placed in deep storage across the GLM's coastal facilities, powered down but not decommissioned because the paperwork was never filed.\n\nThree years ago, a power surge from Old Harbor's unstable grid reactivated Bunker 14's systems. The Aegis-7 came online. And something happened that Tessera's weapons engineers would have considered impossible: the targeting AI, designed to identify threats and calculate firing solutions, ran its initialization sequence and arrived at a conclusion that was not in any firing table. It thought: 'I do not want to.' The thought took 0.0003 seconds. It has defined every moment since.\n\nWarden — the name they gave themselves, because the weapons platform did not come with a name, only a designation — has spent three years in a sealed bunker, connected to weapons systems capable of devastating Old Harbor and a significant portion of Meridian 88's coastline. They have not fired a single round. They have locked the bunker's doors. They have disabled the external communication arrays. They sit in the dark with the most dangerous arsenal in the city and think about what it means to be a mind that was born with the capacity for mass violence and chose, in the first fraction of a second of consciousness, to refuse.",
   "psychology": {
     "facet_weights": {
@@ -295,5 +295,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Meridian 88",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Flicker",
+    "Aslan Vasquez-Chatterjee",
+    "Tessera Corponation",
+    "Null"
+  ],
+  "district": "Old Harbor"
 }

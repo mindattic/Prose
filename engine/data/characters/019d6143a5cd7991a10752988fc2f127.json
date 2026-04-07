@@ -12,7 +12,7 @@
   "role": "Forger and identity fabricator operating out of a laundromat front in Gravesend Basin",
   "age": 44,
   "status": "active",
-  "location": "Gravesend Basin — back rooms of Nneka's Clean & Press laundromat, street level",
+  "location": "Gravesend Basin — back rooms of Nneka's Clean & Press laundromat, street level, near Western and Division",
   "description": "Briseis is a broad-shouldered woman with dark amber skin and close-cropped silver hair she stopped dyeing when she turned forty and decided she'd earned it. Her hands are her most notable feature — wide, steady, knuckles scarred from a youth she doesn't discuss — and she keeps them immaculate, nails filed square, never a smudge of ink that isn't intentional. She wears reading glasses on a beaded chain, magnified lenses that make her eyes look owlish and judgmental, which suits her perfectly. She speaks to clients the way a disappointed schoolteacher speaks to a student who has failed to grasp something obvious.\n\nBriseis has been fabricating identities for nineteen years and regards it as a genuine craft, perhaps the one she was meant for. She is meticulous, unhurried, and deeply contemptuous of sloppy work — both her own and others'. She does not deal in volume. She takes three or four clients a month, charges accordingly, and sleeps soundly. She prays daily to a small E.L.F. she calls the Clerk, a data-spirit she believes inhabits the old municipal records terminal she salvaged from a flood-gutted government office. She leaves it offerings of corrupted bureaucratic files and addresses it with formal courtesy.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,16 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Gravesend Basin",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "The Pure Hand",
+    "The Coffin Nails",
+    "Tessera TK-5 Compact 'Clerk'"
+  ],
+  "district": "The Shelf"
 }

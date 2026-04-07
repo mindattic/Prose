@@ -12,7 +12,7 @@
   "role": "Orphanage resident, self-appointed chronicler of street history",
   "age": 13,
   "status": "active",
-  "location": "Hough Reclamation, Blessed Continuance Residential Home (independent charitable orphanage)",
+  "location": "Hough Reclamation, Blessed Continuance Residential Home (independent charitable orphanage), near Western and Chicago Ave",
   "description": "Tendai is compact and deliberate, with warm rust-brown skin, close-set eyes behind thick-lensed secondhand glasses — actual physical lenses, not overlays, which they treasure and refuse to replace with anything 'smart' — and hair that grows in a crown they've never cut, dense and elaborate, tucked under scarves of different colors depending on their mood. They move slowly on purpose, with a quality of observation that adults find either comforting or unnerving. They have no augmentations and are specifically, vocally opposed to them, on grounds that are partly philosophical and partly practical: they don't trust anything injected or installed.\n\nTendai has appointed themselves the historian of Hough Reclamation. They carry a physical notebook — increasingly rare — and fill it with observations, overheard conversations, sketches of building facades before they're demolished, names of people who've died or moved on. They believe, with the gravity of someone much older, that if no one writes it down then it didn't happen, and that megacity memory belongs to whoever has the recording infrastructure — which means the corporations. They are quiet, serious, and occasionally devastatingly perceptive about the adults around them. They also cry at sunsets, which they'd deny.",
   "psychology": {
     "facet_weights": {
@@ -212,5 +212,17 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "Palladian Construction",
+    "The Gradient Compact",
+    "ARCHIVE",
+    "Gravimetric Collapse Charge GCC-9",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Rust"
+  ],
+  "district": "The Shelf"
 }

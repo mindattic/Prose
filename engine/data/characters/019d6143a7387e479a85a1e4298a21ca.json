@@ -11,7 +11,7 @@
   "role": "Noodle cart vendor, Brewer's Spine night market",
   "age": 23,
   "status": "active",
-  "location": "Brewer's Spine — operates their cart at the intersection of Copperline Alley and the Spine's main drag from 2000 to 0400",
+  "location": "Brewer's Spine — operates their cart at the intersection of Copperline Alley and the Spine's main drag from 2000 to 0400, near Fullerton and Damen",
   "description": "Zola is sharp-featured and built narrow, with Finnish-Hausa coloring that lands them somewhere between copper and cream depending on the light, and geneware they saved for two years — a tail, pale grey and black-tipped, that wraps around their ankles when they're focused on the wok. They keep their hair short and bleached at the tips, and they have a single line of bioluminescent text tattooed along their left forearm in Hausa script that reads, roughly, 'do not forget the sauce.' (This is a joke. It is also not a joke.) They work in a kind of controlled explosion: the cart is immaculate and the output is rapid and the motion between station and bowl is practiced to the point of choreography.\n\nZola is twenty-three and running a noodle cart at two in the morning and they have not decided yet if this is a detour or a destination. They are smart in the restless, underutilized way — too much processing power applied to too small a problem — and they cope with this by making the small problem perfect. Their broth is not famous yet. It will be. They know it the way you know something you can't say out loud because it sounds like arrogance before it becomes fact.",
   "psychology": {
     "facet_weights": {
@@ -225,5 +225,12 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-R357 Noir 'Phantom'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "Brewer's Spine",
+    "Copper",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Community nurse / unlicensed medical care provider",
   "age": 35,
   "status": "active",
-  "location": "The Narrows, operates out of a two-room storefront clinic she rents under a cousin's name, between a protein shop and a water reclamation terminal",
+  "location": "The Narrows, operates out of a two-room storefront clinic she rents under a cousin's name, between a protein shop and a water reclamation terminal, near Damen and Armitage",
   "description": "Nuru is tall and angular with long-fingered hands she keeps scrupulously clean. Her skin is very dark, blue-black in good light, and she keeps her hair in small tight locs that she threads with copper wire — partly aesthetic, partly because she can unwind a length in a medical pinch, which has happened twice. She has retractable medical-grade scanning nails on her right hand — a geneware mod that lets her read surface biometrics with a touch — and a small blue triangle tattooed at the corner of her left eye, the mark of a mutual aid collective she was part of before it dissolved. Her expression at rest is one of focused neutrality that people mistake for coldness until she speaks.\n\nNuru is precise, principled, and permanently tired in a way she has accepted as her baseline. She completed two years of formal nursing training through a Helix Biosystems scholarship program before the program was quietly discontinued; she has spent the decade since filling in the gaps with unlicensed practice, informal mentorship from a retired trauma surgeon, and necessity. She operates in a legal gray zone she is entirely clear-eyed about. She charges what people can afford, which means she frequently charges nothing. She has complicated feelings about this that she doesn't share with patients. She has a code of triage ethics she holds more seriously than most licensed practitioners hold their credentials.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,19 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "The Reclamation Assembly",
+    "The Human Baseline Alliance",
+    "ShieldTech UVTrace UT-1 Identification Spray",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Crucible TR-7 'Triage'",
+    "The Pure Hand",
+    "Copper",
+    "The Coffin Nails",
+    "Pellucid Systems"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor and neighborhood fixture",
   "age": 61,
   "status": "active",
-  "location": "Corner of Grainfort and Copperhead, operates the cart called 'Kem's Last Stop' under a permanent awning he put up without permission in 2187 and nobody has ever moved",
+  "location": "Corner of Grainfort and Copperhead, operates the cart called 'Kem's Last Stop' under a permanent awning he put up without permission in 2187 and nobody has ever moved, near Milwaukee and Damen",
   "description": "Nkemdirim Vasiljević-Tuiasosopo is a vast, gentle man — not fat exactly but large in the way of someone who has been cooking and eating well for forty years and considers this an achievement. His skin is deep brown with warm undertones, his hair gone fully silver and kept in loose shoulder-length locs he ties back with a strip of Polynesian-patterned cloth, his only vanity. He has no cosmetic augmentations. He has a subdermal temperature regulator in his left hand — a practical mod, pre-owned, bought used in 2178 to protect the hand from flash-burn when working open fire. He shows it off like a scar, not a status symbol.\n\nKem has occupied his corner for twenty-two years. His cart serves one broth — a long-simmered pork-and-tamarind base he calls his grandmother's recipe and which has evolved so far from any original source that it is entirely his own — in three sizes, with rotating toppings. He charges what people can pay and has never once written this policy down or discussed it openly. It simply occurs. He is sixty-one years old and has watched Grainfort go from a working industrial block to a half-empty corponation spillover zone, and he has a calm fury about this that surfaces unpredictably, usually when someone from outside the neighborhood tries to compliment the 'vibe.'",
   "psychology": {
     "facet_weights": {
@@ -183,5 +183,16 @@
     "Hearthstone Firearms Model 9 'Payday'",
     "Street Custom 'Rebar Rose' Improvised Spike Mace"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grandmother",
+    "Copperhead",
+    "Grainfort",
+    "Zheng-dao Bioelectric",
+    "The Sluiceway",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Silver"
+  ],
+  "district": "The Circuit"
 }

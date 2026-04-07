@@ -1,0 +1,36 @@
+{
+  "id": "b6ea9541aa2a116da6fa0bcbae7d1986",
+  "name": "Verdant Labs Contamination Handler Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Elbow-length gloves made from multi-layered barrier material that resists chemical, biological, and radiological contamination. The outer layer is self-sealing — small punctures close within seconds. A color-change indicator strip along each finger shifts from green to red when the barrier integrity is compromised.\n\nUsed in hazmat operations, substrate containment, and illegal pharmaceutical manufacturing. The self-sealing feature means a single pair can survive conditions that would destroy standard protective equipment.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "multi-layer barrier material",
+    "self-sealing outer layer",
+    "color-change indicator strips"
+  ],
+  "functionality": "Chemical/biological/radiological barrier, self-sealing punctures, integrity monitoring",
+  "what_it_says": "Whatever you're touching would kill you through your skin if these gloves weren't between you and it.",
+  "worn_by": [
+    "hazmat teams",
+    "substrate handlers",
+    "pharmaceutical manufacturers"
+  ],
+  "manufacturer": "Verdant Labs",
+  "price_range": "Φ340",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A discarded pair of Contamination Handler gloves tests positive for a substance that doesn't match any known chemical compound — whatever was handled in these gloves hasn't been catalogued yet."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 2",
+    "hazmat",
+    "contamination",
+    "self-sealing",
+    "barrier"
+  ]
+}

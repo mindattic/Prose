@@ -12,7 +12,7 @@
   "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
   "age": 38,
   "status": "active",
-  "location": "Fort Anchor",
+  "location": "Fort Anchor, near Halsted and Chicago Ave",
   "description": "Yetunde is built like a cargo container — broad-shouldered, thick-necked, standing just under two meters with a physicality that makes precinct hallways feel narrower. Her skin is deep umber, her hair a close-cropped natural coil threaded through with copper-toned bioluminescent filaments that pulse faintly when her heart rate elevates — a side effect of a medical implant she never bothered to have aesthetically corrected. A long diagonal scar runs from her left jaw to her collarbone, courtesy of a monofilament accident during the Calumet Rise food riots eight years ago. She keeps it unrepaired on purpose.\n\nOn the job she projects a professional blankness — not coldness exactly, but the studied calm of someone who has seen a crowd turn to a mob and back again more times than she can count. Off-duty she is unexpectedly gentle, the kind of person who stops to help strangers find their way and remembers the names of the Ferrogate transit workers at Fort Anchor's break room. She is deeply suspicious of anyone who seems too eager to hurt people, including some of her own squad.",
   "psychology": {
     "facet_weights": {
@@ -240,5 +240,14 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Trail-357 'Pathfinder'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Calumet Rise",
+    "Fort Anchor",
+    "The Filament",
+    "Copper",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

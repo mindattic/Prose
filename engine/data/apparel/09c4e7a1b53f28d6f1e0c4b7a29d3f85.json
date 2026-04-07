@@ -1,0 +1,42 @@
+{
+  "id": "09c4e7a1b53f28d6f1e0c4b7a29d3f85",
+  "name": "Gridline Never-Stop Courier's Perpetual Transit Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A fully weather-seamed reflective shell in faded hi-vis yellow over a compression base layer, both so worn-in they move as one piece — this person has not been fully out of this kit in days. Cargo pants with every pocket occupied and a custom tail-loop at the rear for a geneware fox tail that acts as a counterbalance at speed. The shoes are Lancer Sprints with the left heel rebuilt twice with epoxy and hope.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "faded hi-vis reflective shell",
+    "compression base layer",
+    "multi-pocket cargo canvas",
+    "tail-loop elastic band",
+    "epoxy-repaired sprint shoe composite"
+  ],
+  "functionality": "Full weather seal for Lake Michigan conditions; tail-loop accommodates geneware balance aid; every pocket is load-optimized for courier payload.",
+  "what_it_says": "Someone who is always mid-transit, for whom stopping is a concept that belongs to other people.",
+  "worn_by": [
+    "independent couriers",
+    "geneware-modded delivery runners",
+    "Tier 2 transit workers on perpetual shift"
+  ],
+  "manufacturer": "Gridline (shell); Lancer (shoes, heavily repaired); tail-loop self-modified",
+  "price_range": "Φ95–140 assembled over time",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "One of the cargo pockets has been sealed shut with epoxy from the outside — the courier doesn't know what's in it or when it got there.",
+    "The fox tail's geneware install is six months overdue for maintenance and has started to cause phantom pain during cold weather."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "unique_character_look",
+    "tier2",
+    "courier",
+    "geneware",
+    "always_moving",
+    "hi_vis",
+    "working_class",
+    "fox_tail"
+  ]
+}

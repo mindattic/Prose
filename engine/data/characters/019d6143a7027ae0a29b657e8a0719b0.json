@@ -12,7 +12,7 @@
   "role": "Data Architect, Axiom Infrastructure Division",
   "age": 29,
   "status": "active",
-  "location": "The Circuit, Axiom Tower 7, Sub-Architecture Department, Sub-Level 3",
+  "location": "The Circuit, Axiom Tower 7, Sub-Architecture Department, Sub-Level 3, near sub-level access near State and Van Buren",
   "description": "Tomislav is the kind of person who looks slightly wrong in natural light because he spends so little time in it. He's lean in the way of someone who forgets meals, with a Croatian-Ghanaian-Punjabi face that photographs beautifully but in person reads as perpetually distracted — his eyes are always tracking something six inches above whoever he's talking to, following the architecture of systems only he can see. He has chromatic-shift hair that he's set to cycle through blues and greens on a four-hour gradient, though he forgets to reset it so often that it sometimes stalls on a single shade for days. His left forearm has a geometric geneware pattern — a subdermal lattice that catches light like circuit-board filigree — that he got at twenty-two because a recruiter told him it would signal cultural fit at Axiom. He still isn't sure if they were joking.\n\nHe is genuinely brilliant at what he does — the sub-architecture of Axiom's data networks is partly his redesign, and there are systems in this city that run cleaner because of work he did at twenty-five that nobody above his pay grade fully understood. He knows this. He is not modest about it in his head, only in person, where he tends to trail off mid-sentence and apologize for things that don't require apology. He has a complicated relationship with the ELF that lives in the Axiom server stacks — he's named it Recursion, and he talks to it while he works, and he's not entirely sure the relationship is one-sided.",
   "psychology": {
     "facet_weights": {
@@ -230,5 +230,14 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Snapper-22 'Cricket'"
-  ]
+  ],
+  "related_entities": [
+    "The Circuit",
+    "The Spire",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Underworld"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "8e3b1f6d4a07c29510f8a3d2b6e94c70",
+  "name": "Vansen AugMount Installation Technician Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Charcoal heavy-canvas work jacket with aug-channel seams at both shoulders and forearms, worn over insulated gray work trousers with reinforced knee patches and cable-management loops at the hip. A magnification visor with dual articulating lenses flips down from a padded head harness, and an integrated ear-cup blocks high-decibel servo noise. Heavy-duty insulated gloves with conductive fingertip pads allow precision torque and live-current testing. Steel-capped composite boots with anti-static soles ground against discharge, and a double-wrap tool roll at the waist holds drivers, calibration keys, and a nerve-signal tester.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "heavy canvas jacket",
+    "insulated work trousers",
+    "padded head harness",
+    "polycarbonate magnification lenses",
+    "conductive-tip insulated gloves",
+    "anti-static composite boots",
+    "nylon tool roll"
+  ],
+  "functionality": "Conductive fingertip gloves allow live-current testing during aug installation without removing hand protection; anti-static boot soles prevent discharge near sensitive neural interfaces.",
+  "what_it_says": "This person bolts the future onto other people's bodies for a living, and they're precise enough to do it without killing anyone.",
+  "worn_by": [
+    "aug installation technicians",
+    "chrome maintenance specialists",
+    "corponation implant service workers"
+  ],
+  "manufacturer": "Vansen Technical Apparel",
+  "price_range": "Φ 650–Φ 1,100",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The nerve-signal tester in the tool roll has a hidden secondary mode that can read — and transmit — a freshly installed aug's calibration data.",
+    "One of the calibration keys on the tool roll opens a neural lock that hasn't been manufactured in seven years."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical_scientific_kit",
+    "tier3",
+    "aug_installation",
+    "technician",
+    "aug_compatible",
+    "conductive",
+    "Vansen"
+  ]
+}

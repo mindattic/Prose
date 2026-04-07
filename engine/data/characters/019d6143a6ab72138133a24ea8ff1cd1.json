@@ -12,7 +12,7 @@
   "role": "hyperlane migrant; climate refugee from drowned coastal settlement, currently in transit",
   "age": 41,
   "status": "active",
-  "location": "Grand Crossing Gate, temporary migrant processing zone, third holding section",
+  "location": "Grand Crossing Gate, temporary migrant processing zone, third holding section, near North Ave and Damen",
   "description": "Ragnheiður is tall and angular, with pale skin that has burned and recovered enough times to have a permanent rosy-raw quality at her cheekbones and nose. Her hair is a natural deep auburn, grown out in a manner suggesting she has not had access to a proper cutting implement in months, pulled back in a knot held by what appears to be a sharpened stylus. Her eyes are grey-green and extremely direct — she has the look of someone who stopped performing social softness some time ago because it cost too much energy. She carries everything she owns in a single large waterproof pack with a broken clasp, fixed shut with cable ties. On her left wrist is a tattoo of a coastline — the actual coastline of the settlement she grew up in, measured and mapped by her own hand before the water took it — and she will show it to anyone who asks, with the precision of a cartographer or a mourner.\n\nShe is not the kind of refugee who presents with visible despair, which sometimes means aid workers overlook her in favor of more legible suffering. What she has instead is a particular flat-affect efficiency: she needs a specific set of things, she is working to acquire them through the specific channels available to her, and she would prefer not to waste either her time or anyone else's on anything peripheral to that. She was a coastal agricultural cooperative manager before her settlement was inundated — a competent, practical person with professional expertise that is almost entirely inapplicable to an urban megacity. She is learning this in real time and finds it enraging.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,17 @@
   "carried_weapons": [
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "Cartographer",
+    "Hearthstone Firearms Homestead-12 'Door Slam'",
+    "Zheng-dao Bioelectric",
+    "The Waukegan Industrial Shelf",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Tessera TX-13 'Mourner'",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "Nomadic"
 }

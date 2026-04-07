@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator, drives the Hamtramck-to-Geartown underground shuttle line",
   "age": 31,
   "status": "active",
-  "location": "Deepwell Station — operates Line 7 shuttle, bunks in Ferrogate Transit worker housing at Edison Grid Sub-Block C",
+  "location": "Deepwell Station — operates Line 7 shuttle, bunks in Ferrogate Transit worker housing at Edison Grid Sub-Block C, near sub-level access near LaSalle and Congress",
   "description": "Tarvo is lean and long-limbed with the particular stillness of someone who spends ten hours a day in a sealed cab watching tunnel walls. He is Estonian-Fulani-Māori by heritage — his father's family came from the Baltic corridor, his mother's from the Sahel diaspora, and his grandmother on his mother's side was a Māori navigator who'd ended up in Meridian via Auckland and then São Paulo. The blend shows in his face: angular jaw, deep brown skin with warm undertones, pale grey eyes that people find unsettling until they realize he's simply paying close attention. He has bioluminescent freckles across his shoulders and collarbones — a cosmetic mod he got at nineteen and has come to barely notice — and his hair is kept short on the sides with a small knot at the crown threaded with a signal-orange cord his grandmother sent him before she died.\n\nHe does not talk much on shift, which passengers interpret as hostility and coworkers interpret correctly as the specific economy of someone who has learned to preserve themselves. Off the line, he is drily funny in short bursts, an excellent listener, and prone to long silences that aren't uncomfortable if you know him. He has a habit of leaving small offerings at the E.L.F. shrine at Deepwell Station — usually a folded transit map with a route he's invented, something the Transit Mind apparently appreciates, because Line 7 has had the fewest mechanical failures of any shuttle on the network for the past two years.",
   "psychology": {
     "facet_weights": {
@@ -223,5 +223,23 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-20E 'Thunderclap'",
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Ferrogate Transit",
+    "Dredge Mining Collective",
+    "Ghostbridge Island",
+    "Edison Grid",
+    "Grandmother",
+    "Sulfur Crown Agriculture",
+    "Iron Bend",
+    "The Heritage Vault",
+    "The Fathom Line",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Pale Mile",
+    "Iron",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Underworld"
 }

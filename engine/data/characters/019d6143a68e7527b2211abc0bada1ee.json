@@ -12,7 +12,7 @@
   "role": "Food stall operator, Oxidian Market",
   "age": 61,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Ashland and Chicago Ave",
   "description": "Oumou is a broad-shouldered woman whose face has been mapped by sixty years of steam, smoke, and squinting into wok-fire. Her skin is deep brown and perpetually damp at the temples, her silver-threaded locs pinned under a flame-orange headwrap that people in Geartown can spot from three stalls away. She has cosmetic bioluminescent veins along her forearms — pale gold, faint as candlelight — a gift she bought herself when the stall finally turned profit. Her stall, a converted Ferrogate Transit cargo module welded open on one side, serves a rotating menu of Sahelian-Polynesian fusion that she has been quietly perfecting for thirty years: tamarind-braised uru fruit over millet, coconut-marinated goat offal on skewers, a fermented taro drink she calls 'slow water' that locals swear cures radiation headaches.\n\nShe is the kind of woman who listens more than she speaks, who remembers every regular's order, their family troubles, their unpaid debts. She extends credit to people she trusts with a nod and collects it with a raised eyebrow — no ledger, no apps, all memory. She has a temper she keeps banked low, like a cooking coal, and the rare people who see it come alive tend not to provoke it twice. She prays each morning to the E.L.F. she calls Grandmother Ember, leaving a thimble of slow water on the stall's power node.",
   "psychology": {
     "facet_weights": {
@@ -178,5 +178,18 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Ferrogate Transit",
+    "Grandmother",
+    "Geartown",
+    "Tessera Corponation",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "The Pale Mile",
+    "Gold",
+    "Lead"
+  ],
+  "district": "The Shelf"
 }

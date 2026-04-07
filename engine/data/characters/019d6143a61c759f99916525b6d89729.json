@@ -12,7 +12,7 @@
   "role": "Small-scale drug manufacturer specializing in synthetic mood regulators in the Undertow",
   "age": 38,
   "status": "active",
-  "location": "The Undertow — a converted flood-control maintenance suite beneath the Blackpipe Corridor infrastructure level",
+  "location": "The Undertow — a converted flood-control maintenance suite beneath the Blackpipe Corridor infrastructure level, near Fullerton and Damen",
   "description": "Godfrey is a tall, thin man with very dark skin, close-cropped natural hair going gray at the temples earlier than he'd like, and the particular posture of someone who spends most of his time in low-ceilinged spaces — a slight forward hunch, head naturally inclined downward. He has round eyeglasses with an amber tint — not augmented, just glass, just preference — and long-fingered hands that he keeps very still when he's thinking, which is always. He has one geneware modification: his fingertips emit a faint violet bioluminescence when he's working in the dark, something he had done for practical reasons and has found he cannot imagine working without. He dresses neatly for someone who lives underground; he irons things.\n\nGodfrey was a legitimate pharmaceutical technician for Helix Biosystems for eleven years, and it shows. His lab is cleaner than it has any right to be. His product — a synthetic serotonin modulator he calls 'Vesper,' along with two variants he's developed iteratively over seven years — is consistent, dosed accurately, and free of the adulterants that make cheap compounds dangerous. He has customers who have been with him since the beginning, people from the Undertow and Blackpipe Corridor who cannot afford Helix's licensed version of essentially the same compound, and he regards this as his primary moral justification. He carries this justification the way a man carries something heavy — not lightly, but he carries it.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,17 @@
   "carried_weapons": [
     "Street Custom 'Glass Garden' Caltrops"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Helix Biosystems",
+    "The Undertow",
+    "Aslan Vasquez-Chatterjee",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Vesper",
+    "Glass"
+  ],
+  "district": "The Underworld"
 }

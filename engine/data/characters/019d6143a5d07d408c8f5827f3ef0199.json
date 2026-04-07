@@ -12,7 +12,7 @@
   "role": "Underground sound sculptor and noise musician",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, sub-basement venue called The Marrow",
+  "location": "Hamtramck Enclave, sub-basement venue called The Marrow, near Western and Division",
   "description": "Caoimhe is short and powerfully built, with skin the color of walnut bark and a close-cropped natural that's gone completely silver. Her face is mapped with deep laugh lines and a scar that cuts through her left eyebrow where someone threw a bottle at a performance in 2178. She wears industrial hearing-protection as a necklace when not performing, and her forearms are covered in dense geometric tattoos she did herself — each one a sonic diagram of a piece she's composed. Her irises have been modded to display waveform patterns when she's listening hard, which is almost always.\n\nCaoimhe has been making noise music in Meridian's underground for twenty-three years and has the absolute authority of someone who has outlasted every trend. She builds her instruments from urban salvage — pipe resonators, scavenged transit-system speakers, dead ELF hardware repurposed as audio processors — and performs in venues that hold forty people at most. She is famously unwilling to record her work commercially, famously generous to young artists who can't pay rent, and famously capable of drinking anyone in Hamtramck under the table. She is exactly as difficult as she needs to be and not a nanometer more.",
   "psychology": {
     "facet_weights": {
@@ -210,5 +210,17 @@
   "registered_firearms": [
     "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
     "Hearthstone Firearms Guardian-12 'Bedside'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "The Marrow Ledger",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Marrow Exchange",
+    "Walnut",
+    "Silver",
+    "Gravimetric Collapse Charge GCC-9"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Personal security and threat neutralization — bodyguard",
   "age": 34,
   "status": "active",
-  "location": "The Rookery — dense vertical housing, gang-controlled",
+  "location": "The Rookery — dense vertical housing, gang-controlled, near Kedzie and Division",
   "description": "Fanta Hedlund-Diarra are compact and densely muscled, built low to the ground like something designed to survive impacts. At 34, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and they make no effort to hide it.\n\nBefore the runner life, they worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. They work as a bodyguard out of The Rookery, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Fanta Hedlund-Diarra are known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,11 @@
   "registered_firearms": [
     "Crucible Industries Fang-9 'Switchblade'",
     "Crucible Industries Suppressed Compact SC-2 'Murmur'"
-  ]
+  ],
+  "related_entities": [
+    "The Gradient Compact",
+    "Lazarus LX-2 'Lab Rat'",
+    "Gravimetric Collapse Charge GCC-9"
+  ],
+  "district": "The Shelf"
 }

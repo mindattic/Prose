@@ -1,0 +1,41 @@
+{
+  "id": "f4b2d8e7a1c3059e6d4f2b8a7c1e30d5",
+  "name": "Halverson Ironweave Insulated Balaclava — Port-Cut",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A dense merino-analog and graphene-thread balaclava with pre-cut ports along the occipital and temporal lines for standard BCI hardware. The face panel is windproof and fleece-lined, rated for -35C. Comes in charcoal, deep navy, and a Tier 2 favorite — transit grey.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "merino-analog synthetic wool",
+    "graphene thread weave",
+    "windproof membrane face panel",
+    "bonded fleece inner lining"
+  ],
+  "functionality": "Full-face cold protection with pre-formed BCI port openings; face panel resists lake-effect precipitation and blocks wind chill to -35C.",
+  "what_it_says": "Someone who works outside, knows the lake weather intimately, and didn't cheap out on their head.",
+  "worn_by": [
+    "transit operators",
+    "outdoor laborers",
+    "augmented workers",
+    "cold-climate couriers"
+  ],
+  "manufacturer": "Halverson & Mäki Workwear",
+  "price_range": "Φ40–Φ65",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The port cutouts are slightly off-spec — fits third-party BCI hardware that CorpSec scanners won't flag as licensed.",
+    "A courier who never removes it on-shift has worn the face panel thin enough that you can almost read their expression."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "winter_heavy",
+    "tier2",
+    "balaclava",
+    "aug_compatible",
+    "bci_compatible",
+    "halverson",
+    "face_protection"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Protection racket enforcer and neighborhood crew captain",
   "age": 46,
   "status": "active",
-  "location": "The Narrows, operates from the third floor of a residential block in Archer's Line",
+  "location": "The Narrows, operates from the third floor of a residential block in Archer's Line, near Armitage and Milwaukee",
   "description": "Nneka Polat-Sabadell is the kind of woman who walks into a room and the room notices without being able to say exactly why. She is heavyset and deliberate in her movements, with deep black skin, natural hair worn up and held with a carved wooden pick that has been with her for twenty years, and eyes that are dark brown and absolutely still. She has retractable claw augmentations — a practical modification she got at thirty, not cosmetic — and a lattice of subdermal reinforcement along her forearms that makes the skin there look subtly different under harsh light. She dresses practically: good boots, layered clothing, never anything that would impede movement. She smells faintly of the palm oil soap she makes herself as a hobby.\n\nShe has run protection in the Narrows for thirteen years. Before that she enforced for other people. Before that she was seventeen and making decisions she tries not to think about with too much clarity. The neighborhood where she operates is genuinely safer because of her — she takes tribute from the businesses on six blocks, and those six blocks have significantly lower rates of random street violence than the surrounding areas, because she is not interested in chaos and has the means to discourage it. She sees no contradiction between this and what she is. She is providing a service. The fact that the alternative to purchasing the service is something unpleasant is, in her view, no different from any other contract in Meridian 88.",
   "psychology": {
     "facet_weights": {
@@ -249,5 +249,15 @@
   ],
   "registered_firearms": [
     "Crucible Industries Viper Mk.III 'Copperhead'"
-  ]
+  ],
+  "related_entities": [
+    "Archer's Line",
+    "The Narrows Compact",
+    "Meridian 88",
+    "The Quiet Room",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Stratum"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Precision elimination specialist — ghost",
   "age": 30,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Chicago Ave",
   "description": "Fanta Dahlberg-Boakye is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a ghost out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Fanta Dahlberg-Boakye is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,14 @@
   "carried_weapons": [
     "Hearthstone Firearms Defender-38 'Snubnose'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Adaptive Camouflage Skin",
+    "The Unfinished Theorem",
+    "Ashfield",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

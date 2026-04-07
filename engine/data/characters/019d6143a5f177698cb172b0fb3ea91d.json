@@ -12,7 +12,7 @@
   "role": "Trauma surgeon, Aurochs Medical Complex, Level 4 Critical Bay",
   "age": 46,
   "status": "active",
-  "location": "Aurochs Medical Complex — lives in Bronzeline, thirty-minute transit from the hospital",
+  "location": "Aurochs Medical Complex — lives in Bronzeline, thirty-minute transit from the hospital, near North Ave and Damen",
   "description": "Dieynaba is the kind of person who becomes invisible until she is suddenly the most important person in the room. Tall, narrow, with close-cropped silver hair she started growing out at thirty-five after a particularly bad run of nights, she moves through the hospital corridors with a quality of compression — everything pulled inward and efficient. Her face is angular and striking, her skin deep brown, and she has no cosmetic augmentations whatsoever, a quiet statement in an environment where most of her colleagues wear at least a tailored iris or a dermal accent. Her only concession is a thin prosthetic ring finger on her right hand — a replacement she had done after a surgical injury, fitted in matte medical ceramic, which she has never bothered to have skinned over.\n\nShe has operated on more gunshot wounds, industrial trauma cases, and augmentation rejection cascades than she can count, and she has developed the particular flat affect of a surgeon who has learned that feeling during surgery means slowing down. Off the table she is dry, acerbically funny in small doses, and possessed of a privacy so total that colleagues who have worked alongside her for years know almost nothing about her life outside the hospital. She is not cruel. She is simply rigorous in the application of her attention, and most things do not meet her threshold.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,17 @@
   "carried_weapons": [
     "Arcturus Defense Solutions ARC-P1 'Centurion'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "The Narrows Compact",
+    "Bronzeline",
+    "WELLSPRING",
+    "Threshold",
+    "TESSERA PG-2 'Signature'",
+    "The Quiet Room",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Circuit"
 }

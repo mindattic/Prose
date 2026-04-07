@@ -1,0 +1,39 @@
+{
+  "id": "3c9a05f2e7b16d8041c5a3f7d2e08b51",
+  "name": "Coldbreak Oversized Hoodie — Port-Split Hood",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Thick, boxy hoodie in charcoal with a kangaroo pocket and a hood split along one side seam to accommodate standard neural port clusters without bunching. Brushed interior, double-stitched cuffs. The kind of thing you wear to a bar in February and refuse to check at the door.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heavy brushed synth-fleece",
+    "polythread double-stitch",
+    "ribbed cuff band"
+  ],
+  "functionality": "Port-split hood prevents neural port irritation; kangaroo pocket fits a full hand warmer and a flask.",
+  "what_it_says": "You've got BCI and you're not hiding it, but you're not showing it off either.",
+  "worn_by": [
+    "BCI-augmented workers",
+    "off-duty Circuit regulars",
+    "Tier 3 weekend bar-hoppers"
+  ],
+  "manufacturer": "Coldbreak Basics — Circuit market label",
+  "price_range": "Φ32–Φ45",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The port-split design was originally filed by a Shelf tailor who never got credit — the Circuit label just reverse-engineered it.",
+    "Someone's contact info is written inside the collar in permanent marker — still legible."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "weekend_casual",
+    "hoodie",
+    "aug_compatible",
+    "tier2",
+    "winter",
+    "circuit",
+    "bci"
+  ]
+}

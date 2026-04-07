@@ -11,7 +11,7 @@
   "role": "Bootleg fashion vendor and textile reseller",
   "age": 34,
   "status": "active",
-  "location": "The Laceworks, Stall Row 7, Ironvein",
+  "location": "The Laceworks, Stall Row 7, Ironvein, near Lincoln and Belmont",
   "description": "Sorcha is a broad-shouldered woman with deep ochre skin and close-cropped natural hair dyed in chevrons of burnt orange and cream — a technique she does herself using surplus textile dye. Her left arm from the elbow down is covered in a patchwork of fabric swatches she's stitched directly to her jacket sleeve, each one a sample from her current inventory. Her eyes have iris mods — concentric rings of copper and jade — that she claims she won in a card game but actually saved six months of UBC stipend for. She laughs with her whole chest and haggles with theatrical offence, clutching her heart and muttering in a mix of Igbo and Greek when customers lowball her.\n\nHer stall is a riot of stolen aesthetics: Tessera corporate surplus, knockoff Zheng-Dao runway pieces, hand-altered casualwear with new stitching that makes them genuinely better than the originals. She has an eye for what will sell in two weeks before anyone else sees it coming, and a deep contempt for trend-followers who come to her after the fact. She's prouder of her craft than her income suggests she should be, and it shows in every seam.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,15 @@
   "registered_firearms": [
     "Hearthstone Firearms Sentinel-9 'Block Watch'",
     "Crucible Industries Ember-9 'Firefly'"
-  ]
+  ],
+  "related_entities": [
+    "The Laceworks",
+    "Zheng-dao Bioelectric",
+    "Ironvein",
+    "Irontide Tidal Energy",
+    "Tessera Corponation",
+    "Clearpath",
+    "Copper"
+  ],
+  "district": "The Laceworks"
 }

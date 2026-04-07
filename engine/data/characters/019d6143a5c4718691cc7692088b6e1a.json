@@ -12,7 +12,7 @@
   "role": "Laundry operator and informal neighborhood matriarch",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave, runs Suds & Sanctity laundromat on Corvin Passage",
+  "location": "Hamtramck Enclave, runs Suds & Sanctity laundromat on Corvin Passage, near Pulaski and Chicago Ave",
   "description": "Blessing is a broad-shouldered woman with deep umber skin and silver-streaked hair she keeps in elaborate Ghanaian-style wraps that she sews herself from scraps brought in by customers. Her hands are permanently reddened and slightly swollen from decades of hot water and industrial detergent, but they move with practiced grace — folding a shirt, blessing a stranger's head, passing a bowl of pepper soup, all with the same unhurried authority. She has no cosmetic mods, but her eyes are warm amber with natural flecks of gold that catch the laundromat's overhead strips and make people feel seen. A small printed icon of the Soap E.L.F. — locally called Mama Lye — is mounted above every machine, garlanded with dryer-warm fabric strips and small tokens of phosphorescent soap left as offerings.\n\nBlessing has run Suds & Sanctity for twenty-three years, outlasting three Tessera rezoning attempts and one attempted arson. She knows everyone's laundry secrets — the bloodstained shirts, the infant onesies that appear before any pregnancy announcement, the uniforms of three competing corponation contractors she washes without comment. She speaks Twi, Portuguese, and a rough pidgin Akan-Slavic that she invented to communicate with the neighborhood's Hamtramck old-timers. Her warmth is genuine but her memory is long, and the occasional word she drops in the right ear has redirected more neighborhood trouble than any security node.",
   "psychology": {
     "facet_weights": {
@@ -177,5 +177,15 @@
   "registered_firearms": [
     "Tessera Adaptive Platform TAP-5 'Chameleon'",
     "Hearthstone Firearms Trail-357 'Pathfinder'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "Tessera Corponation",
+    "Silver",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

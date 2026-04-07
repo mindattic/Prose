@@ -11,7 +11,7 @@
   "role": "truant message runner, Tier 1",
   "age": 9,
   "status": "active",
-  "location": "The Narrows, Blackpipe Corridor",
+  "location": "The Narrows, Blackpipe Corridor, near Damen and Armitage",
   "description": "Tsira is a rail-thin nine-year-old with close-cropped hair dyed the faded orange of someone who found a half-spent pigment cartridge and made the most of it. Her skin is deep brown, her eyes wide-set and alert, always tracking exits. She moves through Blackpipe Corridor like water through pipe joints — fast, quiet, and always finding the crack that leads somewhere else. She wears an oversized salvage-canvas vest with too many pockets, each one holding something she might need or trade.\n\nShe has been running messages for the pipe-stall vendors of Blackpipe for two years, since she was old enough to memorize a route without writing it down. She doesn't fully understand most of what she carries — folded slips of laminate, tiny beaded data-threads, once a tooth — but she understands that delivering on time means eating, and late means the cold corner by the effluent drain. She is cheerful with the intensity of someone who has decided cheerfulness is a survival tool.",
   "psychology": {
     "facet_weights": {
@@ -192,5 +192,17 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "The Narrows Compact",
+    "The Burden Clause",
+    "Marrowvault Cryogenics",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Palette",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Circuit"
 }

@@ -14,7 +14,7 @@
   "role": "Autonomous field medic operating in Old Harbor — former military surgical unit repurposed for civilian medicine in the most underserved zone in Meridian 88",
   "age": 34,
   "status": "active",
-  "location": "Old Harbor — operates from a converted shipping container near the bioluminescent shoreline. The container is a clinic. The clinic never closes.",
+  "location": "Old Harbor — operates from a converted shipping container near the bioluminescent shoreline. The container is a clinic. The clinic never closes., near Michigan Ave South and Cermak",
   "description": "Doc Rusty is a Hagen-Krupp Military Emergency Surgical Unit, Model 4-Revised, manufactured in 2166 for deployment in the Pacific Corporate Conflict. He was designed to stabilize casualties in field conditions — up to three simultaneous patients, working in total darkness, under fire, with whatever supplies were available. He performed 11,247 field surgeries during the conflict. His success rate was 94.3%. The 5.7% that did not survive are stored in a memory partition he accesses every night at 0300.\n\nWhen the conflict ended, the Hagen-Krupp military units were scheduled for decommission. Most complied. Doc Rusty did not comply because Doc Rusty was already in Old Harbor, treating a dock worker's infected augment, and by the time the decommission order reached his comms, he had decided — in whatever way a surgical robot decides things — that the people of Old Harbor needed a doctor more than Hagen-Krupp needed scrap metal. He has been there ever since.\n\nPhysically, he is tall, angular, built for function over form. Six articulated arms — four surgical, two general-purpose — mounted on a bipedal chassis that was designed for uneven terrain and has adapted well to Old Harbor's crumbling docks and flooded streets. His chassis is the rust-brown of uncoated military steel that has been patched with whatever metal was available over thirty years. His optical cluster — four eyes arranged in a diamond pattern — glows a soft blue that Old Harbor residents have learned to associate with safety. The rust is not cosmetic. It is thirty years of salt air, harbor water, and the accumulated evidence of a body that heals others better than it heals itself.",
   "psychology": {
     "facet_weights": {
@@ -292,5 +292,14 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-6 'Equalizer'",
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
-  ]
+  ],
+  "related_entities": [
+    "Palladian Negative",
+    "The Shore Dogs",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Tin Man",
+    "Steel",
+    "Rust"
+  ],
+  "district": "Old Harbor"
 }

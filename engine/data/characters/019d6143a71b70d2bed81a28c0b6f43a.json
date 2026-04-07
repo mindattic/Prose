@@ -13,7 +13,7 @@
   "role": "Technical analyst and salvage valuator — Boneyard Saints",
   "age": 33,
   "status": "active",
-  "location": "Old Harbor — works from a converted warehouse on the dry dock, adjacent to Corva's container",
+  "location": "Old Harbor — works from a converted warehouse on the dry dock, adjacent to Corva's container, near Wacker and State",
   "description": "Wren Isaza never goes in the water. She is the Boneyard Saints' land-side brain — the one who identifies what the divers bring up, determines its value, traces its origin, and interfaces with pre-collapse systems that have been submerged for two decades. She has a gift for dead technology. She can look at a corroded circuit board, a water-damaged server core, a sealed data capsule that hasn't seen air since the harbor flooded, and tell you what it was, who made it, and how much someone will pay for it.\n\nShe came to Old Harbor from the Circuit, where she'd been running a small electronics repair business that was slowly being crushed by corporate parts monopolies. A Boneyard Saint brought in a piece of salvage she couldn't identify — pre-collapse military firmware sealed in a waterproof housing. Wren spent three days cracking it, sold the data for more money than her shop had made in a year, and realized the harbor was full of things the world had forgotten it needed.\n\nWren is small, dark-haired, perpetually ink-stained from the physical documentation she insists on maintaining alongside digital records. She wears magnification goggles pushed up on her forehead and cargo vests with every pocket full. She talks fast when she's excited about a piece of salvage and not at all when she's working on one. The warehouse is her domain — organized in a system that makes sense to her and no one else, with pre-collapse artifacts in various states of analysis covering every surface.",
   "psychology": {
     "facet_weights": {
@@ -193,5 +193,14 @@
   "registered_firearms": [
     "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
     "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ]
+  ],
+  "related_entities": [
+    "The Circuit",
+    "Dust & Meridian Saints",
+    "THEOREM",
+    "The Voltage Saints",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Slagworks Industrial"
+  ],
+  "district": "Old Harbor"
 }

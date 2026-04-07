@@ -11,7 +11,7 @@
   "role": "Childcare worker and after-school supervisor, Mexicantown Libre community creche",
   "age": 24,
   "status": "active",
-  "location": "Mexicantown Libre, the Arroyo Block community childcare center (a converted ground-floor retail unit in a residential stack)",
+  "location": "Mexicantown Libre, the Arroyo Block community childcare center (a converted ground-floor retail unit in a residential stack), near Ashland and Division",
   "description": "Imke is slight and quick, with a long face, deep-set dark eyes, and tawny-brown skin that freckles across the nose in summer. She has color-changing hair (geneware) that she keeps short and lets cycle between whatever she feels like — currently a slow rotation from copper to emerald that takes about eight hours per cycle. She moves through the childcare space with a distinctive economy of motion, always oriented toward the highest-need point in the room, a habit so ingrained she does it at parties.\n\nShe is twenty-four and has been doing this work since she was eighteen and too old for the same creche herself. She is not sentimental about children — she finds them genuinely interesting and often funnier than adults — but she has no illusions about the structural underfunding that defines every day of her work. She earns near-UBC wages for a job that requires genuine skill and drains her emotionally in ways she is still learning to manage. She has an analytical streak that people tend to underestimate because of her age and the nature of her work.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,18 @@
   "registered_firearms": [
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Tessera TK-7 Service Pistol 'Ticker'"
-  ]
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Dredge Mining Collective",
+    "The Reclamation Assembly",
+    "The Quiet Room",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Free Assembly",
+    "Big Rig",
+    "Copper",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

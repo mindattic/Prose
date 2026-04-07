@@ -12,7 +12,7 @@
   "role": "Electronic and physical observation expert — surveillance specialist",
   "age": 25,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near Milwaukee and Damen",
   "description": "Aybek Yamamoto-Darko are average height but with a presence that fills more space than the body accounts for. At 25, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Aybek Yamamoto-Darko plans to keep it that way. They work as a surveillance specialist out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nAybek Yamamoto-Darko operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -277,5 +277,13 @@
   "registered_firearms": [
     "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ]
+  ],
+  "related_entities": [
+    "The Narrows Compact",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum"
+  ],
+  "district": "The Circuit"
 }

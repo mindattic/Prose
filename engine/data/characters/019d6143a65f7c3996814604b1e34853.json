@@ -12,7 +12,7 @@
   "role": "Night-shift building cleaner, Meridian Core corporate towers",
   "age": 22,
   "status": "active",
-  "location": "Works in Meridian Core; lives in a shared flat in Archer's Line",
+  "location": "Works in Meridian Core; lives in a shared flat in Archer's Line, near State and Jackson",
   "description": "Nadia is a young woman with her Gujarati father's compact build and her Quechua mother's dark, straight-cut hair — which she keeps in a single practical braid that she tucks into her collar during shift. She has no cosmetic mods, though she's been quietly saving toward a bioluminescence mod she has already designed in her head: constellations mapped on her collarbone, named after the mountains her mother described to her. She has the slightly hyperaware eyes of someone who has learned to notice everything in rooms she is supposed to be invisible in. Her hands are chapped and she keeps a small pot of petroleum-analogous salve in her apron pocket.\n\nNadia works the 23:00–07:00 rotation across three Axiom tower floors, which means she mops boardrooms where decisions affecting millions were made that afternoon, empties the bins of executives who do not register her existence, and reads, from what they leave behind, a vivid and disturbing picture of how the city is run. She is not naive — she grew up in Archer's Line, she knows what tier three looks like from below — but the gap between what she knew intellectually and what she witnesses nightly has been doing something complicated to her politics. She is curious, careful, and genuinely funny in a dry understated way that emerges fully only with people she trusts.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,18 @@
   "carried_weapons": [
     "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Archer's Line",
+    "Meridian Core",
+    "The Spire",
+    "The Gradient Compact",
+    "Lacuna Genomics",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Tibor Osei-Svanstrom",
+    "Salve"
+  ],
+  "district": "Meridian Core"
 }

@@ -12,7 +12,7 @@
   "role": "Holographic street artist and illegal installation designer",
   "age": 22,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, sleeping in rotating crash spots",
+  "location": "Highland Park Autonomous Zone, sleeping in rotating crash spots, near Michigan Ave and Walton",
   "description": "Tãmzin is wiry and perpetually in motion, the kind of person who sits cross-legged on surfaces not designed for sitting and who always seems to be angled slightly toward an exit. Their skin is a warm medium brown, decorated with hand-applied luminescent tattoos — not geneware, but UV-reactive ink applied in sessions they traded for or self-administered — that map constellations native to parts of the sky no longer visible through Meridian 88's light pollution. Cat ears in matte grey sit atop their head, a cosmetic mod they got at sixteen and have never regretted; they tend to press flat when Tãmzin is anxious. Their eyes are patterned with a radial fracture iris mod, deep amber cracked through with lines of pale gold, and they cycle through four colors of hair via a basic follicle-mod — currently a washed-out rust that fades to near-white at the tips.\n\nTãmzin's installations appear overnight on surfaces they have no permission to use: the underside of Ferrogate overpasses, the water-stained ceilings of underpasses in Highland Park, the blank flanks of corporate logistics buildings along the Blackpipe Corridor. The projectors are small, disguised, solar-trickle powered, and booby-trapped with data-noise payloads that corrupt the first attempt at a clean scan. The content is always the same thematic territory — the lake before the city, the people who lived where the towers now stand, animals that no longer exist — rendered in holographic depth that catches passersby off-guard at night. Tãmzin has been detained three times and released twice; the third detention record is sealed, which Tãmzin will not explain.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,20 @@
   "registered_firearms": [
     "Kang-Petrov Arms KP-10C 'Bullpup'",
     "Tessera Personal Defense System TPDS-1 'Reflex'"
-  ]
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Blackpipe Corridor",
+    "Meridian 88",
+    "Ferrogate Transit",
+    "Neurochemical Dispersal Grenade",
+    "Palladian Construction",
+    "Flicker",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Gold",
+    "Rust",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Spires"
 }

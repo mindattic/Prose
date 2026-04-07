@@ -12,7 +12,7 @@
   "role": "Death midwife and grief ritualist",
   "age": 38,
   "status": "active",
-  "location": "Irkalla, the Passage House on Undertow Row",
+  "location": "Irkalla, the Passage House on Undertow Row, near Western and Division",
   "description": "Ẹniọlá is a small woman who dresses exclusively in undyed natural fabrics, a deliberate choice that makes her look slightly out of place in every room she enters — soft and pale against the city's chrome and neon. Her hair is kept short and natural, and she wears no cosmetic geneware, though she could afford minimal modifications. Her one concession to body alteration is a set of patterned irises �� concentric rings of amber and dark brown — that she had done in honor of her Yoruba grandmother's description of the eye of god. Her hands are her most expressive feature: large, warm, always slightly in motion, and the first thing the dying reach for.\n\nShe came to death midwifery after her brother died alone in a Tessera medical pod, his passing logged and timestamped and unremarked. She was twenty-two. She spent three years studying under an older practitioner in the Canopy before establishing the Passage House in Irkalla, which is considered by most city planners to be an unfavorable address for anyone seeking comfort. Ẹniọlá disagrees. She thinks the dying deserve to be somewhere honest about what it is. The Passage House sees four to eight clients a week — some terminal, some simply old, some not yet dying but preparing — and she has never turned anyone away for inability to pay.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,19 @@
   "carried_weapons": [
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grandmother",
+    "Canopy Station Nine",
+    "The Iron Lotus",
+    "Tessera Overwatch Platform OWP-3 'Panopticon'",
+    "Flicker",
+    "Tessera Corponation",
+    "Irkalla",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

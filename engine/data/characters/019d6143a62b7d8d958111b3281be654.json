@@ -12,7 +12,7 @@
   "role": "Corporate espionage and data exfiltration — data thief",
   "age": 52,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Halsted and Chicago Ave",
   "description": "Ihaia Mori-Sefa is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 52, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a data thief out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Ihaia Mori-Sefa is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
@@ -270,5 +270,16 @@
     "Street Custom 'Ghostwriter' Grafitti Flamethrower",
     "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Shelf",
+    "The Nearfield",
+    "Ashfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "Burden of Longitude",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Identity fabricator and document forger",
   "age": 27,
   "status": "active",
-  "location": "The Shelf lower levels, sub-level 4 of the Benton Divide stack, workshop behind a legitimate print repair kiosk",
+  "location": "The Shelf lower levels, sub-level 4 of the Benton Divide stack, workshop behind a legitimate print repair kiosk, near sub-level access near Dearborn and Jackson",
   "description": "Vashti is lean and angular with very dark skin and locs dyed in a gradient from deep black at the roots to a vivid bioluminescent green at the tips—a subtle geneware modification that makes their hair glow softly under UV or in low light. They have an elongated neck they tend to hold with unconscious elegance, and hands that are startlingly precise: watching Vashti work is like watching someone perform surgery on a miniature scale. They dress in the kind of clothes that photograph poorly—muted mid-tones, no reflective surfaces, nothing that catches the eye of automated recognition systems.\n\nVashti is young for their reputation and knows it, which produces a studied performance of cool competence that mostly succeeds. They are genuinely brilliant at their craft—particularly the psychographic layering of false identities, building people who have plausible digital histories and ELF-approved shadow records. They have a fanatic reverence for documentation quality that tips into art-critical condescension when they see bad work. Underneath the performance is someone who came from nothing and is building something, and has not yet decided what kind of person they are going to be when the building is done.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,14 @@
     "Street Custom 'Ghostwriter' Grafitti Flamethrower",
     "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Benton Divide",
+    "Palladian Construction",
+    "The Shelf",
+    "TESSERA PA-5 'Attendant'",
+    "The Pure Hand",
+    "Nightlight"
+  ],
+  "district": "The Underworld"
 }

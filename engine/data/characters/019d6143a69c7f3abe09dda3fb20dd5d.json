@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor and unlicensed childcare provider",
   "age": 31,
   "status": "active",
-  "location": "The Narrows, Morgan's Ridge pedestrian strip — cart position at the corner of Gage Circuit and the lower Morgan overpass",
+  "location": "The Narrows, Morgan's Ridge pedestrian strip — cart position at the corner of Gage Circuit and the lower Morgan overpass, near Milwaukee and Damen",
   "description": "Pilar is of middling height and seemingly made of angles — sharp elbows, pointed chin, quick gesturing hands that are in constant motion whether they're cooking or talking or just existing. Their hair is kept in two braids that they tuck into a wide-brimmed thermal hat while working, the hat so old and worn it has achieved a kind of structural sentience. Their skin is a warm medium brown and they have color-changing hair — shifts between dark auburn and a deep teal depending on temperature — which they got years ago and now mainly use as a weather forecaster. Cold mornings read deep teal; the regulars check it before deciding whether to add broth.\n\nPilar has operated their cart on Morgan's Ridge for six years. The noodle setup is compact and professional — a heated two-burner system, four base broths rotating by season, and a laminated menu written in three languages including Tamazight which nobody has ordered in but they keep it because it was their grandmother's language and this is non-negotiable. The unlicensed childcare element evolved organically: shift workers in the Narrows needed somewhere for children between school let-out and evening shifts, and Pilar's cart became the default station. Now they run an informal afternoon program, four to seven children most days, doing homework near the cart while they cook. It violates three municipal codes. The local code inspector is a regular.",
   "psychology": {
     "facet_weights": {
@@ -178,5 +178,16 @@
   "carried_weapons": [
     "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Morgan's Ridge",
+    "Gage Circuit",
+    "The Narrows Compact",
+    "Grandmother",
+    "The Gradient Compact",
+    "TESSERA TK-4 'Hellhound'",
+    "The Pure Hand",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "Nomadic"
 }

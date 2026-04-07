@@ -12,7 +12,7 @@
   "role": "Bounty Compliance Officer, Arcturus Recovery Solutions",
   "age": 38,
   "status": "active",
-  "location": "Copperhead",
+  "location": "Copperhead, near Milwaukee and Damen",
   "description": "Nnenna has cat ears — a geneware mod she got at nineteen for reasons she no longer remembers clearly and has long since stopped noticing. They are dark brown, tufted, and rotate toward sound with involuntary precision, which she has found professionally useful and socially embarrassing in equal measure. She is lean and quick-moving, with the kind of economy of motion that comes from spending years in spaces too small or too dangerous for wasted effort. Her skin is a dark reddish-brown, her jaw is square, and she has a scar through her left eyebrow from a skip who turned out to be more determined than the file suggested. Her eyes are her father's — pale grey, a genetic ghost of his Russian line — which she occasionally uses to unsettle people when she catches them off-guard.\n\nShe is pragmatic, professional, and runs hot underneath in a way she has mostly learned to manage. She does not particularly enjoy her work, but she is good at it and it pays into Tier 3, which means her kid brother stays in Montclare Quiet with real air filters and a school that has actual teachers. She distinguishes carefully between skips who are hiding because they're dangerous and skips who are hiding because they're afraid, and she applies different approaches to each. She will not tell you she has this distinction — it would complicate negotiations. She leaves ELF offerings at the Copperhead shrine not for protection but for good read — the ability to walk into a room and understand it correctly.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,17 @@
   "registered_firearms": [
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Volkov-Saito Precision VSK-8 'Rapier'"
-  ]
+  ],
+  "related_entities": [
+    "Montclare Quiet",
+    "Copperhead",
+    "Arcturus Defense Solutions",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Witness",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Pale Mile",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Circuit"
 }

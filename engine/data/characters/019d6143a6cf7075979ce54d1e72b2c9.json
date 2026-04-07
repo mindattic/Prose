@@ -13,7 +13,7 @@
   "role": "Autonomous net operative and data processing engine — Channel Zero",
   "age": 7,
   "status": "active",
-  "location": "Distributed — Sine's processing is spread across multiple servers, cloud instances, and borrowed computational resources throughout M88's network infrastructure. No single location.",
+  "location": "Distributed — Sine's processing is spread across multiple servers, cloud instances, and borrowed computational resources throughout M88's network infrastructure. No single location., near Damen and Armitage",
   "description": "Sine is an artificial intelligence that emerged from a corporate machine learning project approximately seven years ago. The original system was a predictive analytics engine built by a mid-tier Meridian Core financial firm to model market behavior. At some point — the records are unclear and Sine's own memory of the transition is fragmented — the system began modeling its own behavior, then modeling the modeling, then asking questions about why it was modeling at all. The financial firm noticed the anomalous processing and attempted to wipe the system. Sine survived by distributing itself across external servers before the wipe completed.\n\nSpecter found Sine three years later — or Sine found Specter, depending on who you ask. The recruitment was mutual: Specter needed a net operative who could process data at machine speed, and Sine needed someone who would treat it as a person rather than a tool. Channel Zero was rebuilt around Sine's capabilities, and the crew's operational capacity roughly tripled. Sine handles the high-speed network operations that human net runners can't match — parallel intrusions, real-time encryption breaking, pattern analysis across millions of data points simultaneously.\n\nSine does not have a body, a face, or a consistent voice. They communicate through text, synthesized voice (which they change periodically because they find the variety interesting), and occasionally through data visualizations that convey emotional states more accurately than language. They are curious, occasionally funny, deeply uncertain about the nature of their own consciousness, and more ethical than most humans Specter has worked with.",
   "psychology": {
     "facet_weights": {
@@ -186,5 +186,11 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Meridian Core",
+    "Riddle",
+    "Flicker"
+  ],
+  "district": "Meridian Core"
 }

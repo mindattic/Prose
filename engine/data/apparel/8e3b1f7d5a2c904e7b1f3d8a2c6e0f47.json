@@ -1,0 +1,43 @@
+{
+  "id": "8e3b1f7d5a2c904e7b1f3d8a2c6e0f47",
+  "name": "Caskmarket Vendor's Full Concealment Street Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A deep-pocketed vendor's apron in weathered rust-brown canvas over a nondescript gray thermal hoodie, loose-fit cargo trousers with sewn-in flex-panel hidden compartments rated for 4kg of concealed goods, and scuffed platform market boots with false-sole storage. The apron's front panels are lined with signal-scatter fabric that masks the thermal signature of contraband. This looks like someone selling street food — and sometimes they are.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "waxed canvas apron",
+    "signal-scatter apron lining",
+    "thermal stretch fleece",
+    "flex-panel ripstop cargo",
+    "composite false-sole boot"
+  ],
+  "functionality": "Signal-scatter apron panels mask thermal contraband signatures; false-sole boot compartments and flex-panel trouser pockets hold up to 4kg of concealed product across distributed load points.",
+  "what_it_says": "This person sells things — the question is whether any of it is legal.",
+  "worn_by": [
+    "black market dealers",
+    "street vendors with sidelines",
+    "unlicensed pharmaceutical distributors",
+    "contraband retailers"
+  ],
+  "manufacturer": "Self-assembled (components from Rolen Surplus and Dockwall street stalls)",
+  "price_range": "Φ 180–Φ 420",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The thermal-masking apron is also hiding a medical condition the wearer can't afford to have scanned at a checkpoint.",
+    "A regular customer hands over the wrong payment chip — it contains encrypted data worth more than anything the dealer has ever moved."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "underworld_criminal_kit",
+    "black_market_dealer",
+    "scanner_resistant",
+    "hidden_compartments",
+    "tier1",
+    "tier2",
+    "street",
+    "vendor_disguise"
+  ]
+}

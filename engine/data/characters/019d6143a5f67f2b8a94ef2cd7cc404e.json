@@ -12,7 +12,7 @@
   "role": "Retired Ferrogate Transit union leader, now pension-dependent resident and neighborhood watchman",
   "age": 68,
   "status": "active",
-  "location": "The Shelf, Block 7 — a dense residential stack above a Ferrogate maintenance yard he used to oversee",
+  "location": "The Shelf, Block 7 — a dense residential stack above a Ferrogate maintenance yard he used to oversee, near Kedzie and Division",
   "description": "Dragomir is built like a man who was once very strong and has remained sturdy through sheer refusal to accommodate gravity. He is broad-shouldered and thick-necked, with a complexion that sits between his Serbian grandfather's olive and his Igbo grandmother's deep brown, landing somewhere warm and weathered. His head is shaved smooth — he lost the hair to radiation exposure during a Ferrogate tunnel collapse in 2183 and never bothered with regrowth therapy, calling it 'a reminder to be careful.' He has a full grey beard he keeps trimmed with the same precision he once brought to union contract language. His right leg from the knee down is a no-frills industrial-grade prosthetic he chose because it was rated for heavy labor and he has never stopped thinking of himself as a laborer.\n\nHe was a transit worker for twenty-two years and a union shop steward for twelve, eventually rising to chief negotiator for the Ferrogate Workers' Brotherhood before the Brotherhood was dissolved in the company restructuring of 2191. He will tell anyone who asks — and many who don't — that the dissolution was illegal, that the arbitration was fixed, and that two of his colleagues who pushed back too hard died in 'accidents' that were never properly investigated. He lives in the same building he has lived in for thirty years, on a pension that has been quietly eroded by inflation to barely tier-2 comfort, and he supplements it by running informal neighborhood watch patrols and charging a small fee for dispute mediation between residents who don't want to involve corporate security.",
   "psychology": {
     "facet_weights": {
@@ -262,5 +262,14 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "The CEO",
+    "Grandmother",
+    "Ferrogate Transit",
+    "Threshold",
+    "The Shelf",
+    "Gravimetric Collapse Charge GCC-9"
+  ],
+  "district": "The Shelf"
 }

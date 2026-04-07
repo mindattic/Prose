@@ -11,7 +11,7 @@
   "role": "Graycloak commander - Guts militia",
   "age": 52,
   "status": "active",
-  "location": "The Underworld - B4-B8",
+  "location": "The Underworld - B4-B8, near sub-level access near Dearborn and Jackson",
   "description": "Vasili commands the Graycloaks. Enormous, unaugmented by choice, carries a salvaged riot shield he has never had to use.",
   "psychology": {
     "facet_weights": {
@@ -90,5 +90,6 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "district": "The Underworld"
 }

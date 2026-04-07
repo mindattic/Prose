@@ -12,7 +12,7 @@
   "role": "protection racket enforcer and neighborhood tax collector",
   "age": 51,
   "status": "active",
-  "location": "Shallowgrave, operates across a six-block collection territory centered on the Blackpipe Corridor market strip",
+  "location": "Shallowgrave, operates across a six-block collection territory centered on the Blackpipe Corridor market strip, near Pulaski and Chicago Ave",
   "description": "Mireille is a broad, unhurried woman who moves through the Blackpipe Corridor market strip with the proprietary ease of someone who owns the street without holding title to a centimeter of it. She has her Malian grandmother's high cheekbones and her Mongolian grandfather's wide, watchful eyes, a combination that gives her face a stillness that reads as patience or menace depending on context. Her hair is natural and silver-threaded, kept close. She has no cosmetic mods and exactly one piece of visible augmentation: a reinforced subdermal strike plate across both forearms, the seams visible as pale ridged lines. She dresses in practical layers — she's almost always carrying something — and smells faintly of the cardamom tea she drinks constantly from a battered thermos.\n\nPeople in Shallowgrave call her Mama Miri, and the term is not entirely ironic. She has run protection on this strip for nineteen years and she has clear and stated rules: you pay on time, you get quiet streets, fair mediation of disputes, and someone who answers when the Ferrogate inspectors come sniffing. You don't pay, you get one conversation, then one demonstration, then you don't have a stall anymore. She considers herself a service provider with a monopoly, which is accurate, and she extends genuine credit and genuine leniency to vendors she respects, which is also accurate. The violence she deploys is proportional and infrequent — she prefers it that way, both because she is pragmatic and because she is, underneath the landlady performance, genuinely tired.",
   "psychology": {
     "facet_weights": {
@@ -254,5 +254,22 @@
   "registered_firearms": [
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'"
-  ]
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Dredge Mining Collective",
+    "Shallowgrave",
+    "Grandmother",
+    "The CEO",
+    "Ferrogate Transit",
+    "Mireille & The Hollow Saints",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Silver",
+    "Nesting Doll",
+    "Pellucid Systems",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

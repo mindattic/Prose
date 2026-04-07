@@ -12,7 +12,7 @@
   "role": "Childcare worker and unofficial neighborhood children's coordinator, Mexicantown Libre",
   "age": 27,
   "status": "active",
-  "location": "Mexicantown Libre — the Libre Community Creche, a converted ground-floor unit on Avenida Ferro",
+  "location": "Mexicantown Libre — the Libre Community Creche, a converted ground-floor unit on Avenida Ferro, near Pulaski and Chicago Ave",
   "description": "Satu is small and perpetually in motion, with deep brown skin and natural hair she grows out in a puff that she clips bioluminescent beads into — low-grade geneware, hand-me-downs from a cousin, that pulse softly blue when she's warm or excited and dim to almost nothing when she's exhausted. She has a gap between her front teeth that makes her smile look like a door left open, and she smiles a lot, though never vaguely — there is always something specific she is smiling at. Her clothing is practical and loud: she wears colors like she is trying to argue with the grey of Mexicantown Libre's perpetual lake-fog.\n\nSatu runs the Creche on a combination of municipal micro-stipend, community contribution, and sheer force of organizational will. She is the person who knows which child has been skipping meals and which parent is working three Ferrogate shifts in a row and hasn't slept. Her care is not soft — it is structured and fierce and occasionally exhausting to be on the receiving end of, because she remembers everything she has offered and follows up. She is twenty-seven and already worn at the edges in ways she doesn't acknowledge.",
   "psychology": {
     "facet_weights": {
@@ -210,5 +210,13 @@
     "Hearthstone Firearms Model 9 'Payday'",
     "Street Custom 'Confession' Modified Industrial Nail Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Ferrogate Transit",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "Tessera Corponation",
+    "Lazarus IDP-1 'Teeth'"
+  ],
+  "district": "The Shelf"
 }

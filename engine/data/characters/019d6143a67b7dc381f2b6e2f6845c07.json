@@ -12,7 +12,7 @@
   "role": "Truant message runner and amateur graffiti mapper",
   "age": 11,
   "status": "active",
-  "location": "The Narrows, Blackpipe Corridor",
+  "location": "The Narrows, Blackpipe Corridor, near Fullerton and Damen",
   "description": "Odu is a small, wiry girl with deep brown skin dusted in a faint bioluminescent sheen inherited from her Faleolo grandmother's cosmetic geneware — it glows a soft sea-green under stress or excitement, which she hates because it gives her away at the worst moments. She keeps her hair in tight twists pinned with salvaged circuit-board clips, and her fingers are perpetually stained with marker ink from the hand-drawn maps she sells to other runners. Her eyes are large and watchful, taking in every detail of a corridor before her feet follow.\n\nShe is relentlessly cheerful in a way that is clearly armor — she laughs at danger and talks too fast when she's scared. She has memorized the pipe-routes and maintenance shafts of Blackpipe Corridor better than any adult who works there, and she treats this knowledge like a personal treasury. She is fiercely protective of two younger kids she considers her responsibility and deeply suspicious of anyone who is too kind too quickly.",
   "psychology": {
     "facet_weights": {
@@ -162,5 +162,16 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "The Narrows Compact",
+    "Grandmother",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Tessera Corponation",
+    "Ringo DV-4 'Courier'",
+    "Stalker",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

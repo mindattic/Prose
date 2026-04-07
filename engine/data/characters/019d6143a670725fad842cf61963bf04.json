@@ -12,7 +12,7 @@
   "role": "Forced entry and close-quarters combat specialist — breacher",
   "age": 45,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
   "description": "Nurlan Holmberg-Dembele is average height but with a presence that fills more space than the body accounts for. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a breacher out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Nurlan Holmberg-Dembele describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -272,5 +272,13 @@
   "registered_firearms": [
     "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "The Narrows Compact",
+    "Meridian 88",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+  ],
+  "district": "The Circuit"
 }

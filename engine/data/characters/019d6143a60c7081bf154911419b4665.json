@@ -12,7 +12,7 @@
   "role": "Pharmacist and unlicensed psychiatric medication manager serving the Shelf community",
   "age": 29,
   "status": "active",
-  "location": "The Shelf, a cramped pharmacy wedged between a noodle shop and a data-shrine kiosk called Careful Chemistry",
+  "location": "The Shelf, a cramped pharmacy wedged between a noodle shop and a data-shrine kiosk called Careful Chemistry, near Ashland and Division",
   "description": "Ezio is young for the weight he carries — not literally, he is slight and fine-featured, with warm brown skin and close-cropped natural hair he sometimes dyes in patterns he forgets to maintain, so he often walks around with half a geometric design fading out above his ear. He has cat ears (genetic mod, a muted tawny color) that he got at seventeen because everyone was getting them and which have since become simply part of his face. They are expressive in ways he can't always control and which betray him in negotiations. He moves quickly and quietly, the particular efficiency of someone working in a very small space.\n\nHe is the most educated person most of his clients have ever interacted with and he wears that knowledge carefully, always aware of how easily expertise becomes condescension. He studied pharmacology on a Tessera corporate scholarship, finished in the top ten percent, and then declined his Tessera placement offer — an act of financial self-immolation that his family still hasn't fully forgiven. He came back to the Shelf because this is where he grew up and this is where people couldn't afford what they needed, and those two facts seemed sufficient. He is earnest about this in a way that occasionally makes people uncomfortable, because genuine selflessness is disorienting in Meridian 88. He is also, privately, somewhat overwhelmed.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,13 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Burden Clause",
+    "WELLSPRING",
+    "The Shelf",
+    "Tessera Corponation"
+  ],
+  "district": "The Shelf"
 }

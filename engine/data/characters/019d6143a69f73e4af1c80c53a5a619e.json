@@ -12,7 +12,7 @@
   "role": "Laundry operator and alterations seamstress",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave, runs a small laundry-and-mend shop called Sudswarm off a condensation-wet alley near the Enclave's eastern transit stop",
+  "location": "Hamtramck Enclave, runs a small laundry-and-mend shop called Sudswarm off a condensation-wet alley near the Enclave's eastern transit stop, near Halsted and Chicago Ave",
   "description": "Priscila is a broad-shouldered woman whose posture is permanently curved forward from decades of hunching over washing drums and hand-stitching by bad light. Her skin is deep amber-brown, mapped with the kind of fine lines that come from steam and cold water alternating across a lifetime. Her hair is silver-white, pulled into a tall wrapped style she refreshes each morning with practiced ritual — the one vanity she allows herself. Her eyes are dark and deeply set, and she has the habit of assessing every person she meets the way a seamstress assesses fabric: checking for weak seams, worn patches, where the structure is likely to give. She has no cosmetic mods and wears her lack of augmentation with quiet dignity, though her fingers bear a set of micro-needle thimbles permanently bonded to her right hand — not quite augmentation, not quite tool, but something in between.\n\nPrisca is slow to warm and quick to notice. She has been in the Enclave for thirty-one years and has watched three generations of families pass through her door. She calls regulars by their mother's name, not their own — a habit from her grandmother she's never examined. She speaks very little about herself, deflecting personal questions with practical ones: is your coat holding up? Did the dye run again? She is not unkind, but she draws a clean line between involvement and sentiment, and she patrols that line with vigilance. Underneath this, she carries a deep and specific loneliness that she has almost entirely metabolized into work.",
   "psychology": {
     "facet_weights": {
@@ -228,5 +228,18 @@
   "registered_firearms": [
     "Crucible Industries Garrison Rifle GR-5 'Rampart'",
     "Kang-Petrov Arms KPR-357 'Journeyman'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Dredge Mining Collective",
+    "Dewdrop",
+    "Grandmother",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Needle",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

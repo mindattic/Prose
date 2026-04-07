@@ -12,7 +12,7 @@
   "role": "Organ harvester — acquires and brokers biological material for the black-market transplant network",
   "age": 44,
   "status": "active",
-  "location": "South Deering Sump — operates from a converted cold-storage unit beneath the Escanaba Gateway transit hub",
+  "location": "South Deering Sump — operates from a converted cold-storage unit beneath the Escanaba Gateway transit hub, near Lake Shore and Navy Pier",
   "description": "Philibert is a heavyset man with a surgeon's hands and a longshoreman's build, which is the tension that defines him. He has a round, heavily lined face, deep brown skin weathered by years in unventilated sub-level spaces, and a neat beard going gray at the jaw. His eyes are modified — pale gray medical optics that can detect cellular health and blood type on visual contact, which he bought legally with credentials he acquired less legally. He dresses in practical layers, always with a long thermal coat that conceals the cold-packs he frequently carries. He smells, faintly but permanently, of the preservative gel used in organ transport.\n\nHe was a field medic for Ferrogate Transit's security division for eleven years before a falsified incident report — his, covering a colleague's mistake — was discovered and he was expelled without severance. He tells himself this transition was inevitable, that the system was always going to push him here. He is perhaps half right. He does not enjoy what he does to living subjects, and he has developed elaborate internal rules about consent and circumstance that let him sleep — rules with many exceptions that he adds to quietly and never reviews. He is professional, competent, and cordial in the specific way of a man who has silenced something loud inside himself.",
   "psychology": {
     "facet_weights": {
@@ -196,5 +196,19 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-SL40 'Partisan'"
-  ]
+  ],
+  "related_entities": [
+    "South Deering Sump",
+    "Ferrogate Transit",
+    "Escanaba Gateway",
+    "Hearthstone DL-5 'Longshoreman'",
+    "Crucible TR-7 'Triage'",
+    "Marrowvault Cryogenics",
+    "Red Circuit RC-Pit 'Dogfighter'",
+    "The Pure Hand",
+    "Nesting Doll",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

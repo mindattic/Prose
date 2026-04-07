@@ -1,0 +1,41 @@
+{
+  "id": "17d3b0e9c4a825f1d7b3e09c4a2f8d56",
+  "name": "Helios-Nomad SynthShell All-Weather Modular Coat",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A full-length weathershell coat in gunmetal grey with modular limb extensions — sleeve and hem panels clip on via industrial-grade fasteners to accommodate varying limb lengths across different chassis models. Thermal lining inserts are removable for summer use, and the collar seals magnetically against lake-effect wind. Inner lining pockets are positioned for non-human reach geometry. Underneath: a thermally bonded base layer tunic and legging in matte slate, sold as a bundle.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "laminated weathershell fabric",
+    "removable thermal lining",
+    "industrial clip-fastener modular panels",
+    "magnetic collar seal",
+    "thermally bonded base layer"
+  ],
+  "functionality": "Modular clip-extension limb panels, removable thermal lining, magnetic collar seal for sub-zero lake-effect conditions.",
+  "what_it_says": "I am built to survive this city's weather, whatever this city thinks of what I am.",
+  "worn_by": [
+    "outdoor labor synthetics",
+    "free synthetics in Shelf and Circuit zones",
+    "transit and delivery synthetics"
+  ],
+  "manufacturer": "Helios-Nomad Gear",
+  "price_range": "Φ 280–Φ 420",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The coat's inner lining has been used to smuggle synthetic ID documents across checkpoints for three seasons.",
+    "A synthetic wearing this was caught in the lake-effect blizzard of '98 and survived forty hours exposed — the coat became a symbol."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "synthetic_adapted",
+    "weather_gear",
+    "tier2",
+    "helios-nomad",
+    "modular",
+    "winter",
+    "great_lakes"
+  ]
+}

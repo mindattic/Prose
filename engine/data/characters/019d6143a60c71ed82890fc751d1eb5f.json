@@ -12,7 +12,7 @@
   "role": "Auto and drone mechanic, salvage rebuilder",
   "age": 44,
   "status": "active",
-  "location": "Geartown, the workshop district — specifically a half-indoor bay called 'Tamboli's' on the corner of Flue Street and Anvil Row",
+  "location": "Geartown, the workshop district — specifically a half-indoor bay called 'Tamboli's' on the corner of Flue Street and Anvil Row, near Milwaukee and North Ave",
   "description": "Ezra is a tall, slope-shouldered man running to comfortable thickness in the middle, with dark copper skin, a full black beard going silver at the chin, and close-cropped hair that is always slightly more singed at the edges than it was last week. His right hand is cybernetic from the wrist — not a prestige replacement but a working salvage prosthetic he rebuilt himself from three incompatible donor parts, and it shows: it is mismatched chrome and matte black polymer, three fingers slightly longer than the original scale, with a multitool socket in the palm he added himself. He finds it better than the original.\n\nHe has the specific personality of a man who loves his work with an intensity he cannot quite transfer to human beings. Not that he dislikes people — he likes them fine, he just relates to machines better, and machines know it. He has a reputation across Geartown for resurrecting drones and ground vehicles that any two other mechanics would have written off, and he charges less than he should and more than clients want to pay, which puts him in a permanent state of negotiation with his own finances. He is at his most relaxed covered in lubricant and at his most uncomfortable receiving compliments.",
   "psychology": {
     "facet_weights": {
@@ -251,5 +251,14 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
-  ]
+  ],
+  "related_entities": [
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "Ferrogate Transit",
+    "Zheng-dao Bioelectric",
+    "Geartown",
+    "Copper",
+    "Silver"
+  ],
+  "district": "The Circuit"
 }

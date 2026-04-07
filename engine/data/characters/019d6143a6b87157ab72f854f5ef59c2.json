@@ -12,7 +12,7 @@
   "role": "Protection racket enforcer for the Grainfort Tithe",
   "age": 22,
   "status": "active",
-  "location": "Grainfort, operates the southwest market corridor and adjacent residential blocks",
+  "location": "Grainfort, operates the southwest market corridor and adjacent residential blocks, near North Ave and Damen",
   "description": "Roshan is physically extraordinary—193 centimeters and built like a structural beam, with warm medium-brown skin, a shaved head he keeps obsessively smooth, and a jaw that looks like it was designed by committee to be intimidating. His geneware gives him a very slight bioluminescent flush along his cheekbones and temples in blue-white—barely visible in daylight, unmistakable at night, which was exactly the aesthetic point. He has the slightly careful way of moving that very large people develop when they've broken something by accident more than once.\n\nWhat catches people off guard is that Roshan is polite almost to a fault, speaks in a quiet voice he never raises, and seems genuinely distressed when he has to hurt someone. He is not performing gentleness—he really does not enjoy violence, which makes him more unsettling than someone who obviously does. He has been with the Tithe since he was seventeen and has never questioned whether this is where he should be, mostly because thinking about alternatives feels like standing at the edge of something with no floor. He goes home after his rounds to a small flat he shares with his younger sister, feeds an illegal cat, and watches old sports footage before sleeping.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,13 @@
   "registered_firearms": [
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Photovoltaic Cascade Rifle PCR-3 'Tithe'",
+    "Grainfort",
+    "The Sluiceway",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Circuit"
 }

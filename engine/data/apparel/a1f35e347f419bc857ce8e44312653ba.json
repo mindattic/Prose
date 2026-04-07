@@ -1,0 +1,36 @@
+{
+  "id": "a1f35e347f419bc857ce8e44312653ba",
+  "name": "Veridian Optics Micro-Surgery Exo-Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Precision exoskeletal gloves that stabilize hand tremor and amplify fine motor control by a factor of twenty. Micro-actuators along each finger cancel involuntary movement while translating the wearer's intended motions into ultra-precise mechanical action. The gloves are bulkier than standard surgical equipment but enable a level of dexterity that even augmented hands cannot match.\n\nUsed for microsurgery, nano-scale assembly, and the kind of augmentation installation work where a slip of 0.1mm means the difference between success and permanent nerve damage.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "micro-actuator exoskeleton",
+    "tremor-cancellation sensors",
+    "precision servo motors"
+  ],
+  "functionality": "20x fine motor amplification, tremor cancellation, sub-millimeter precision",
+  "what_it_says": "Your hands perform at a scale where human imprecision is unacceptable, so you've removed it.",
+  "worn_by": [
+    "microsurgeons",
+    "nano-assembly technicians",
+    "precision augmentation installers"
+  ],
+  "manufacturer": "Veridian Optics",
+  "price_range": "Φ8,500",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A micro-surgery exo-glove is found in a pawnshop with its precision log still intact — the last operation recorded was performed on something with a cellular structure that doesn't match any known organism."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 4",
+    "exoskeleton",
+    "microsurgery",
+    "precision",
+    "medical"
+  ]
+}

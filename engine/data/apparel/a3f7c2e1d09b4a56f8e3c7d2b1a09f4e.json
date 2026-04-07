@@ -1,0 +1,39 @@
+{
+  "id": "a3f7c2e1d09b4a56f8e3c7d2b1a09f4e",
+  "name": "Stratum Logistics Hi-Vis Safety Vest",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Blaze-orange mesh vest with retro-reflective silver tape running diagonally across the chest and back. Stratum Logistics logo stenciled in black on the left breast, faded from repeated washes. Front zip closure with two deep cargo pockets sized for handheld scanners.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "polyester mesh",
+    "retro-reflective PVC tape",
+    "reinforced nylon zipper"
+  ],
+  "functionality": "High-visibility panels and reflective tape meet M88 transit authority safety standards for active freight yards and road-adjacent work zones.",
+  "what_it_says": "You're on the clock, you're in the way, and the machinery will stop for you — barely.",
+  "worn_by": [
+    "warehouse workers",
+    "freight yard crew",
+    "dock loaders",
+    "transit flag operators"
+  ],
+  "manufacturer": "Stratum Logistics (corporate issue)",
+  "price_range": "Φ18–Φ35 (replacement; issued free on hire)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A worker's vest has someone else's name patch still sewn on — the previous owner disappeared three weeks ago.",
+    "Stratum's new batch uses slightly different orange than the safety standard, making workers technically non-compliant — a detail a foreman is using selectively."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "circuit_workwear",
+    "hi-vis",
+    "safety",
+    "logistics",
+    "vest",
+    "tier2"
+  ]
+}

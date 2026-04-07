@@ -11,7 +11,7 @@
   "role": "Fixer - Social engineering",
   "age": 33,
   "status": "active",
-  "location": "The Narrows",
+  "location": "The Narrows, near Milwaukee and North Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -102,5 +102,9 @@
     "Meridian Munitions Dispatch-45 'Last Word'",
     "Bioelectric Induction Lance BIL-3 'Lamprey'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact"
+  ],
+  "district": "The Circuit"
 }

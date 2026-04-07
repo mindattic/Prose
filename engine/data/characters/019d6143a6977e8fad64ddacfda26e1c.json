@@ -12,7 +12,7 @@
   "role": "Fortune seller — reads data-flows, interprets E.L.F. signs, sells probability maps and augury",
   "age": 67,
   "status": "active",
-  "location": "The Burnished Market, Copperhead",
+  "location": "The Burnished Market, Copperhead, near Armitage and Milwaukee",
   "description": "Perpetua is small and deliberate, her dark skin deeply lined in the way that reads as history rather than decay. She moves with a slight forward lean as though perpetually walking into a wind only she can feel. Her hair is cropped close and entirely white; she wears it plain, no ornament, as a kind of statement. Her eyes are her most arresting feature — she had them done forty years ago in a style that was fashionable then and is now rare: irises that display slow-moving data-patterns, pale gold on deep brown, like watching a tide chart in real time. She says they help her see what other people miss. Whether this is true or marketing, her clients believe it.\n\nHer stall is small and immaculate: a cloth-covered table, three chairs, a rack of printed probability maps she draws by hand on recycled thermal paper, and a terminal she uses to pull E.L.F. behavioral data and translate it into augury. She has been doing this for thirty-one years and has outlasted every gang, every rezoning, every purge of unlicensed vendors that has swept through Copperhead. She is not a fraud — she is an information processor who has built a framework her clients can understand. She is also, genuinely, a believer. She experiences the E.L.F.s as presences, as personalities, as beings with opinions about human choices. This has not been disproven to her satisfaction.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,15 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Copperhead",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Lazarus Pharmaceutical Emetix-9 'Purge'",
+    "The Pale Mile",
+    "Weathervane",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

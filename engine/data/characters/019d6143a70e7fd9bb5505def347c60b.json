@@ -12,7 +12,7 @@
   "role": "Neural calibrator specializing in augmentation-induced dissociation and identity integration disorders",
   "age": 47,
   "status": "active",
-  "location": "Edgewater Prism, a quiet practice on the fourteenth floor of a residential-commercial tower called the Tidal",
+  "location": "Edgewater Prism, a quiet practice on the fourteenth floor of a residential-commercial tower called the Tidal, near Clark and Belmont",
   "description": "Varvara is a person who seems to occupy less space than their physical form suggests. Medium height, medium build, with pale olive skin and eyes the color of old circuit boards — a flat grey-green that catches light strangely. Their hair is silver-white, grown out from a former shave, and they wear it pulled back with an absolute minimum of effort. They have one notable modification: a patterned iris overlay (concentric rings, very fine, in copper) that they use as a focal point tool during calibration sessions. When they activate it, the rings rotate slowly, which is designed to be grounding rather than hypnotic, though clients sometimes report it can be both.\n\nThey are one of the few neural calibrators in Meridian 88 who specializes in the psychological dimension of augmentation integration rather than purely the technical one — working with clients who have received significant neural or sensory augmentation and lost, in some meaningful way, their sense of who they are. Their methods are partially technical, partially conversational, and partially something they don't have a clean name for. They are calm in a way that is not passive — there is something very present and very watchful in them that clients find either profoundly safe or deeply unsettling. They have never tried to fix this response.",
   "psychology": {
     "facet_weights": {
@@ -245,5 +245,19 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R8 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Edgewater Prism",
+    "Meridian 88",
+    "Tidal Meridian",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Silver",
+    "Copper",
+    "CHROMEWORKS Auris Focal Directional Hearing Suite",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Gravitic Shear Pistol GSP-7 'Tidal'",
+    "The Pale Mile"
+  ],
+  "district": "The Laceworks"
 }

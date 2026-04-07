@@ -12,7 +12,7 @@
   "role": "Veteran of the Second Corporate War, retired Axiom military contractor, now a storyteller and difficult-to-avoid presence",
   "age": 88,
   "status": "active",
-  "location": "Fort Anchor — the veterans' residential block called the Barracks, Room 12, ground floor for mobility reasons",
+  "location": "Fort Anchor — the veterans' residential block called the Barracks, Room 12, ground floor for mobility reasons, near Western and Chicago Ave",
   "description": "Iosefa Drăghici-Oduya is ninety years old if you ask him, eighty-eight if you read his records, and older than all of it if you sit with him for an hour. He is enormous in the way very old men who were once genuinely large sometimes remain: not strong now, but big-boned, wide, with hands that look like they were made for a larger task than holding a cane. His skin is mid-brown and deeply grooved, and the left side of his face is reconstructed — Axiom field surgery, circa 2155, visible as a slight smoothness on the cheekbone where the graft never quite matched. His eyes are a startling pale green, a Yoruba-Romanian inheritance he is vain about. He walks with a cane he has named, though he doesn't tell people the name.\n\nHe is a storyteller in the full and serious sense: he cannot stop and has no desire to. He will tell you what the Dearborn Forge smelled like in 2149, what his commanding officer said before an action that turned out to be wrong, what the first E.L.F. he ever saw looked like materializing in a battlefield comms array in the middle of a firefight. Some of his stories contradict earlier versions of themselves. He is aware of this and considers it the nature of memory rather than a flaw. He has strong opinions about everything and shares them freely, but he is not unkind — he is genuinely curious about the present and treats young people as interesting rather than bewildering.",
   "psychology": {
     "facet_weights": {
@@ -164,5 +164,17 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Dearborn Forge",
+    "Carrion Defense Works Field Surgical Kit FSK-6",
+    "Riverbottom",
+    "Sentinel-Guard-88",
+    "Fort Anchor",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Flicker",
+    "The Pure Hand",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

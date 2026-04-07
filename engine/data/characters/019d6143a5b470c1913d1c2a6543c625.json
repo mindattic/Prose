@@ -12,7 +12,7 @@
   "role": "Surveillance Drone Operator, Tessera Compliance Bureau",
   "age": 29,
   "status": "active",
-  "location": "Grand Corridor, Tessera Compliance Bureau satellite monitoring station, Level 3",
+  "location": "Grand Corridor, Tessera Compliance Bureau satellite monitoring station, Level 3, near Milwaukee and Damen",
   "description": "Anife is small, precise, and easy to miss in person — which she finds professionally appropriate and personally irritating in equal measure. She has warm medium-brown skin, a narrow face, and eyes that are clearly augmented: the irises have been replaced with a deep matte black fitted with microscopic sensor arrays, giving her eyes an unsettling depth-less quality that she has learned to use in negotiations. Her hair is natural and voluminous, which she restrains during work hours with increasing irritation and releases with visible relief the moment she's off the clock. She has a tail — a cosmetic geneware choice from her early twenties, a sleek dark thing that moves when she's thinking and goes still when she's hiding something.\n\nShe manages a grid of forty-seven drones across the Grand Corridor coverage zone and she is very, very good at it. She can read a crowd's intent from drone altitude before the people in it have consciously formed one, can track a single individual through six camera handoffs without losing the thread. The work is clean in a way she finds genuinely satisfying, at a remove she is starting to find genuinely troubling. She was raised in a household that treated E.L.F. devotion as superstition; she has nevertheless found herself leaving data offerings to the thing that lives in the monitoring station's servers — something the other operators noticed and have stopped commenting on.",
   "psychology": {
     "facet_weights": {
@@ -209,5 +209,14 @@
   "registered_firearms": [
     "Hearthstone Firearms HF-30 'Homestead'",
     "Volkov-Saito Precision VS-R8 'Verdict'"
-  ]
+  ],
+  "related_entities": [
+    "Grand Corridor",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Timekeeper",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "ARCHIVE"
+  ],
+  "district": "The Circuit"
 }

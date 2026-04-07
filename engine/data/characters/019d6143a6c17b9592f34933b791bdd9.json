@@ -12,7 +12,7 @@
   "role": "Social engineering and negotiation specialist — face",
   "age": 45,
   "status": "active",
-  "location": "Glassway — corporate-adjacent retail district, heavy surveillance",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
   "description": "Sagyn Brandt-Ouedraogo is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a face out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSagyn Brandt-Ouedraogo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -268,5 +268,15 @@
     "Meridian Munitions Peacekeeper-45 'Old Faithful'",
     "Arcturus Defense Solutions Pneumatic Gauntlet PG-1 'Pile Driver'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Shelf",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Circuit"
 }

@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and fortune seller, The Alban Souk",
   "age": 23,
   "status": "active",
-  "location": "The Alban Souk, Mexicantown Libre",
+  "location": "The Alban Souk, Mexicantown Libre, near Ashland and Division",
   "description": "Erlan Tetteh-Yıldırım is wiry and restless, with sandy-brown skin, a scatter of darker freckles across his nose, and color-changing hair he keeps medium-length — today it's cycling slowly between deep indigo and a burnt copper, a gradient that shifts with his mood in a way he has customized to be slightly out of sync with his actual emotional state, because he thinks it's funny to make people misread him. His stall is a folding table, a battered data-terminal with a cracked screen, and a rack of physical media chips he sells alongside what he calls 'experience cartridges' — bootleg sensory recordings, contraband dreamscapes, illegally ripped Ringo entertainment contracts.\n\nThe fortune-telling is a sideline and a passion both: he reads data-patterns using a divination system he invented himself, combining traditional nazar iconography from one branch of his heritage with Akan adinkra symbols from the other, mapped onto a set of thirty-two hand-etched chips he calls his 'throw.' He has a gift for it — or at least a gift for reading people well enough that what he says resonates — and a small devoted clientele who come specifically for the throw and don't buy media at all. He is young enough to find everything amusing and old enough to be annoyed by how often that gets mistaken for shallowness. He is sharper than he presents, and he knows exactly how useful that gap is.",
   "psychology": {
     "facet_weights": {
@@ -197,5 +197,19 @@
   ],
   "registered_firearms": [
     "Crucible Industries Fang-9 'Switchblade'"
-  ]
+  ],
+  "related_entities": [
+    "Mexicantown Libre",
+    "The Alban Souk",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Palladian Construction",
+    "Omro Relay",
+    "The Heritage Vault",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Irontide Tidal Energy",
+    "Copper",
+    "Ringo Corponation",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

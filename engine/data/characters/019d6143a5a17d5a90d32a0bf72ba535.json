@@ -12,7 +12,7 @@
   "role": "Anti-corporate agitator and underground press operator based in Highland Park Autonomous Zone",
   "age": 27,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, Meridian 88",
+  "location": "Highland Park Autonomous Zone, Meridian 88, near Michigan Ave and Walton",
   "description": "Adaeze is compact and kinetic, the kind of person who seems to be in motion even when she's standing still — weight shifting, fingers moving, eyes cataloguing everything in the room. Her natural hair is grown out in a voluminous cloud shot through with bioluminescent threads she had woven in at a Shelf parlor, the glow cycling slowly through amber and deep red, which she chose because they are the colors of burning. Her skin is warm brown, and she has a thin scar through her left eyebrow from a Tessera security baton three years ago that she displays without shame.\n\nShe runs a print shop front called Frequency that produces neighborhood circulars by day and incendiary agitprop by night. She is funny in a way that disarms people before she makes them angry, which is her preferred order of operations. She believes fiercely in the zone's autonomy and is deeply suspicious of anyone who frames activism as a stepping stone to conventional politics. She eats too little, sleeps too little, and spends money she doesn't have on ink, paper, and anonymous server time. She has a small shrine to the local E.L.F. she calls The Compositor in the back of the shop, surrounded by botched print runs.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,17 @@
   "registered_firearms": [
     "Crucible Industries Garrison Rifle GR-5 'Rampart'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Meridian 88",
+    "The Quiet Room",
+    "The Gradient Compact",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Tessera Corponation",
+    "Witness",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nightlight"
+  ],
+  "district": "The Spires"
 }

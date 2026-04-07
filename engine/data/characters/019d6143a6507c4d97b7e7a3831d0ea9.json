@@ -12,7 +12,7 @@
   "role": "Apprentice electrician, junior member of Ironvein maintenance guild",
   "age": 16,
   "status": "active",
-  "location": "Ironvein",
+  "location": "Ironvein, near Fullerton and Damen",
   "description": "Lùcía is compact and strong-shouldered from two years of hauling conduit and cable through the industrial guts of Ironvein. Their skin is a warm medium-brown with undertones their Dembélé grandmother called 'sunset-red,' and they keep their hair cropped close on the sides and voluminous on top, dyed in shifting copper tones that complement the burn marks on their forearms — small constellations of arc-flash scars they show off with particular pride. A tail modification — copper-tipped, prehensile, and genuinely useful for steadying themselves on narrow catwalks — is their one major geneware investment, bought with eight months of saved stipend.\n\nLùcía is practical and funny in equal measure, with the bone-deep competence of someone who learned early that doing the work correctly is the only currency that doesn't get devalued. They are apprenticed to a master electrician named Goran who is exacting and often unkind, and Lùcía has decided that enduring Goran is simply a cost of the certification they need. They are more ambitious than they let on and less certain than they seem.",
   "psychology": {
     "facet_weights": {
@@ -168,5 +168,15 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Grandmother",
+    "Ferrogate Transit",
+    "Ironvein",
+    "The Burnline",
+    "The Gradient Compact",
+    "Witness",
+    "Copper"
+  ],
+  "district": "The Circuit"
 }

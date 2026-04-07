@@ -1,0 +1,36 @@
+{
+  "id": "82017118f9f73a73ae39725474e0e672",
+  "name": "Pinnacle Security Riot Shield Sling",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A reinforced shoulder sling designed to carry a collapsed riot shield on the back when not deployed. The sling uses a quick-release buckle that drops the shield into the wearer's hands in under one second. The back plate distributes the shield's weight across the upper back and shoulders.\n\nStandard equipment for crowd-control units who need their hands free for other tasks while maintaining the ability to deploy riot-level protection instantly. The sling's visible presence on an officer's back is itself a form of crowd management — it announces what comes next if the situation escalates.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "reinforced shoulder webbing",
+    "quick-release buckle",
+    "weight-distribution back plate"
+  ],
+  "functionality": "Shield carry, one-second deployment, weight distribution",
+  "what_it_says": "You're carrying the promise of a wall between you and the crowd, deployable in a heartbeat.",
+  "worn_by": [
+    "riot control",
+    "crowd management",
+    "tactical security"
+  ],
+  "manufacturer": "Pinnacle Security",
+  "price_range": "Φ190",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A riot shield sling is found with the quick-release mechanism deliberately disabled — someone wanted to make sure the shield couldn't be deployed, meaning the officer was sent into a crowd situation intentionally unprotected."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 3",
+    "sling",
+    "riot shield",
+    "Pinnacle",
+    "tactical"
+  ]
+}

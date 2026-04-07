@@ -12,7 +12,7 @@
   "role": "Laundry operator, owner of a basement wash-and-fold in Hamtramck Enclave",
   "age": 54,
   "status": "active",
-  "location": "Hamtramck Enclave, sub-basement level of the Kossuth Residency block",
+  "location": "Hamtramck Enclave, sub-basement level of the Kossuth Residency block, near Kedzie and Division",
   "description": "Orsolya is a broad-shouldered woman with hands that look like they were carved from hardwood — knuckled, stained faintly blue-grey from decades of industrial detergent and dye-stripping fluid. Her hair is silver-streaked black, usually pinned up with whatever is closest, often a stylus or a bent fork. She has deep-set eyes the color of dark amber and a jaw that suggests she once had a habit of grinding her teeth, which she replaced with the habit of grinding other people's patience instead. Her skin carries the warm undertone of her Senegalese grandmother and the pale freckling of her Hungarian grandfather, a combination that her regulars say makes her look like she was assembled from contradictions — which, she would tell you, is exactly right.\n\nShe runs the laundry with the precision of a military operation and the warmth of a woman who has watched three generations of the same families bring her their clothes. She knows everyone's laundry tells a story — whose kid had a bloody nose, whose corp interview is tomorrow, who's dressing up for someone they shouldn't be. She keeps all of it. She gossips about none of it. She is the confessor of the Kossuth block, and she charges Φ4 per kilo.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,25 @@
   "registered_firearms": [
     "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
     "Meridian Munitions Snapper-22 'Cricket'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Ringo Corponation Adrenal Sequencing Patch",
+    "Grandmother",
+    "The CEO",
+    "Tessera Suppression Lattice SL-3 'Quilt'",
+    "The Shelf",
+    "Vantablack Media Confessor Tap — 'The Booth'",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Lazarus IDP-1 'Teeth'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Pale Mile",
+    "Arcturus Defense Solutions ETF-3 'Mantis'",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Shelf"
 }

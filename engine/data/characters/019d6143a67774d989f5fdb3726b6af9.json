@@ -12,7 +12,7 @@
   "role": "Protection racket enforcer",
   "age": 27,
   "status": "active",
-  "location": "The Stockyard, rotating between the Grainfort market corridor and the Escanaba Gateway transit hub",
+  "location": "The Stockyard, rotating between the Grainfort market corridor and the Escanaba Gateway transit hub, near Michigan Ave South and Cermak",
   "description": "Obinna is built like something industrial — broad through the chest and shoulders, standing nearly two meters, with close-cropped hair and a face that might be called handsome if it weren't so carefully arranged into blankness. His skin is deep brown and his eyes are standard issue except for a faint bioluminescent ring around each iris that pulses a dim coral color when his heart rate elevates, a geneware modification he had installed at eighteen that he now slightly regrets because it is a readable tell. He has a ritual scar pattern across his left forearm in three parallel lines that he added himself with a heated wire at twenty — he has told different people it means different things, and none of the stories are true.\n\nObinna is not a sadist. This surprises people who meet him in a professional context. He is methodical and proportional: he delivers exactly the level of violence the situation requires and stops, which is both more disturbing and more effective than enthusiasm. Off the clock he is a devoted older brother to three younger siblings he quietly funds through the Stockyard community school, and he attends the local ELF shrine at the Grainfort gate every week without fail. He wants out of this work and has wanted out for three years, but he has never figured out what out looks like, and so he keeps showing up.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,13 @@
   "registered_firearms": [
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Crucible Industries Close Defense Weapon CDW-8 'Barricade'"
-  ]
+  ],
+  "related_entities": [
+    "Escanaba Gateway",
+    "The Stockyard",
+    "Grainfort",
+    "Timekeeper",
+    "Big Rig"
+  ],
+  "district": "Old Harbor"
 }

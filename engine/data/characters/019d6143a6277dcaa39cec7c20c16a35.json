@@ -13,7 +13,7 @@
   "role": "Corporate elite — Chief Cultural Architect at Axiom Meridian Entertainment, the Spire-based conglomerate that controls the majority of Meridian 88's licensed art, music, and narrative media",
   "age": 47,
   "status": "active",
-  "location": "The Spire, residential level 34; maintains a formal office on level 61 and a private studio on level 12 that she tells no one about",
+  "location": "The Spire, residential level 34; maintains a formal office on level 61 and a private studio on level 12 that she tells no one about, near Lake Shore Drive and Division",
   "description": "Honorine Delacroix-Abubakar is the kind of beautiful that reads as deliberate — not because it is artificial, though some of it is, but because she has spent decades learning how to present herself as an argument. She is a tall Haitian-Senegalese woman with deep brown skin, natural hair worn in elaborate architectural styles that she changes weekly as a kind of public performance, and a physical presence that people in conference rooms describe, afterwards, as gravitational. She speaks four languages without accent and a fifth with one she keeps on purpose. She dresses in ways that cost more than most Shelf residents earn in a year, and she is aware of this, and she has made a precise decision about what it means.\n\nShe has been at Axiom Meridian for nineteen years, having joined as a junior acquisitions analyst from a mid-tier arts consultancy and ascending through a combination of genuine aesthetic intelligence, political ruthlessness, and an understanding of how culture functions as control that she developed, with some bitterness, from watching it deployed against communities she loved. She now oversees the selection, development, and strategic deployment of all cultural product that Axiom licenses for distribution across Meridian 88 — which is to say, she decides what stories the city is permitted to tell about itself. She does not find this power comfortable. She finds it necessary, which she recognises is more dangerous.\n\nWhat her colleagues do not know, and what she protects with the full resources of her position, is that Honorine has been running a covert patronage network for fifteen years — channelling Axiom development funds through a labyrinth of shell accounts to unlicensed artists, underground publishers, and community archivists in The Shelf, The Circuit, and Old Harbor. She tells herself she is counterbalancing the machine she operates. She knows, on some level, that she is also buying absolution, and that absolution purchased is not absolution earned. The network has recently grown large enough that it has begun to attract attention she cannot fully deflect.",
   "psychology": {
     "facet_weights": {
@@ -246,5 +246,15 @@
   "carried_weapons": [
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Dredge Mining Collective",
+    "Meridian 88",
+    "The Circuit",
+    "The Shelf",
+    "The Spire",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Spires"
 }

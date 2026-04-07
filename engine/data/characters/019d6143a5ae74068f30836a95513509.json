@@ -12,7 +12,7 @@
   "role": "Fortune seller and data-reading practitioner, The Narrows",
   "age": 34,
   "status": "active",
-  "location": "The Narrows, Chatham Flats",
+  "location": "The Narrows, Chatham Flats, near Kedzie and Division",
   "description": "Amara occupies a permanent corner in The Narrows' most trafficked pedestrian corridor, her setup distinguished by a curtain of fiber-optic strands in blue and white that she draws around a small folding table when a client sits down. She is a slight woman with warm tawny skin, thick dark brows, and an intensely focused quality that makes people feel she is reading them the moment they appear in her field of vision. Her irises are geneware — they have been modified to shift through a slow wheel of silver, amber, and pale violet, which she did deliberately for atmospheric effect but now genuinely loves. She wears layered clothing in deep reds and indigos, and her hair is long and braided with data-thread woven into the plaits that she claims helps her interface with the local E.L.F. population. She carries a physical reader deck that she uses for the theatrical component of the reading, alongside legitimate Mesh-query access she has trained herself to interpret into human-readable pattern narrative.\n\nAmara is a genuinely skilled practitioner of a craft that sits on the uncomfortable border between fraud and service. She would say — and she has said, at length — that the accuracy of prediction matters less than the quality of attention. Her clients are heard. They are given language for things they couldn't articulate. Sometimes the data patterns she reads are genuinely predictive; the Narrows' E.L.F. population has a fondness for her and occasionally pushes legible information her way in exchange for her data-offerings. She is thoughtful, slightly melancholy, and very funny when she is comfortable with you.",
   "psychology": {
     "facet_weights": {
@@ -236,5 +236,16 @@
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
     "Forge-Smith Collective Diaspora Blade 'Mongrel'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Chatham Flats",
+    "The Narrows Compact",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

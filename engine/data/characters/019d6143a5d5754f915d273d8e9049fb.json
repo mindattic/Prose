@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor and informal tutor",
   "age": 61,
   "status": "active",
-  "location": "The Burnished Market, corner of Vellum Arcade and the third underpass, Brewer's Spine district",
+  "location": "The Burnished Market, corner of Vellum Arcade and the third underpass, Brewer's Spine district, near Damen and Armitage",
   "description": "Celestino is a tall man gone stoop-shouldered with age and decades of cart work, with silver-streaked dark hair pulled into a knot at the base of his neck and a neatly maintained beard that has gone entirely white at the chin. His skin is deep brown, his hands are large and steady despite arthritis he manages with two kinds of pain patches and the stubborn refusal to slow down. He wears a single piece of geneware — bioluminescent skin patterning across his forearms, a gentle wave pattern in amber and gold that he had done in his forties and would do again. He calls it his 'tide-marks.'\n\nHe has been at the corner of Vellum Arcade for twenty-two years. The cart itself is an architectural decision at this point — other vendors orient around it. He makes three broths daily from scratch, refuses to use concentrate, and will make you wait if you arrive before a batch is ready. Between customers he reads — always physical books, always from a rotating stack — and between readings he corrects the homework of whichever neighborhood children have been deposited with him while their parents work double shifts. He charges for this informally, in kind: a portion of rice, a bag of tea, whatever is available. He has never turned a child away for inability to pay.",
   "psychology": {
     "facet_weights": {
@@ -173,5 +173,17 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street Custom 'Baptism' Electrified Water Cannon"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Brewer's Spine",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Silver",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Déjà Vu",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

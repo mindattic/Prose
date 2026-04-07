@@ -1,0 +1,36 @@
+{
+  "id": "d0a3d38b394da2ec05807abe7a1752f1",
+  "name": "Kaida Fabrication Multi-Tool Wristband",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A heavy wristband with integrated fold-out tools — wire cutters, a flat-head driver, a bottle opener, a glass breaker, and a 5cm serrated blade. The tools nest flush into the band's surface and are invisible when stowed. The band itself is brushed titanium over a comfort liner.\n\nCarried by mechanics, maintenance workers, and anyone who finds themselves regularly needing tools they don't have. The wristband's low profile means it passes most security checkpoints as jewelry — the serrated blade is the reason some checkpoints have upgraded their scanners.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "brushed titanium",
+    "stainless steel tools",
+    "comfort liner"
+  ],
+  "functionality": "Integrated multi-tool, covert blade, daily-carry utility",
+  "what_it_says": "You solve small problems with your wrist and you've occasionally solved bigger problems with that blade.",
+  "worn_by": [
+    "mechanics",
+    "maintenance workers",
+    "resourceful civilians"
+  ],
+  "manufacturer": "Kaida Fabrication",
+  "price_range": "Φ175",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A security checkpoint confiscates a Multi-Tool Wristband and discovers the serrated blade has been replaced with something that looks identical but is made from a material hard enough to cut through reinforced glass."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 1",
+    "wristband",
+    "multi-tool",
+    "utility",
+    "covert"
+  ]
+}

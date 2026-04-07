@@ -11,7 +11,7 @@
   "role": "Climate Scientist, independent researcher formerly of Arcturus R&D",
   "age": 63,
   "status": "active",
-  "location": "Edgewater Prism — a converted monitoring station that serves as both apartment and field lab, directly on the lake-facing edge",
+  "location": "Edgewater Prism — a converted monitoring station that serves as both apartment and field lab, directly on the lake-facing edge, near Clark and Addison",
   "description": "Levan is a tall man gone broad in the shoulders and soft around the middle, with dark brown skin weathered by decades of outdoor fieldwork and close-cropped white hair that he keeps because it makes him look distinguished and he is not above vanity. His eyes are natural — a warm, medium brown — which is unusual enough in his social circles that people sometimes comment on it, which he finds mildly funny. He has a prosthetic left hand from a fieldwork accident in 2181 that he has declined to upgrade past basic functionality because he likes the old model and refuses to explain this to anyone.\n\nHe spent twenty-two years as Arcturus's senior climate modeler before his models started showing lake-system instabilities that Arcturus's infrastructure division did not want modeled, at which point his funding was quietly restructured and his team was dissolved. He now works alone out of Edgewater Prism, maintaining a network of self-built sensor buoys across the lake, and publishes through whatever venue will take him. He is not bitter in an active way — bitterness requires energy he'd rather spend — but he has a very clear view of exactly what happened and exactly who made which decision and why, and this clarity gives him a quality that people find alternately comforting and unsettling, like someone who has already done the math on the worst outcome.",
   "psychology": {
     "facet_weights": {
@@ -204,5 +204,14 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Model 9 'Payday'"
-  ]
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
+    "Arcturus Defense Solutions",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Laceworks"
 }

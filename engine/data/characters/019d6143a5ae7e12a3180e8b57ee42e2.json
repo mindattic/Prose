@@ -12,7 +12,7 @@
   "role": "Synthetic rights lawyer and policy advocate",
   "age": 41,
   "status": "active",
-  "location": "North Branch Commons — operates out of a shared office in the Grainfort civic building",
+  "location": "North Branch Commons — operates out of a shared office in the Grainfort civic building, near North Ave and Damen",
   "description": "Amara has the kind of face people describe as 'composed' because they've worked very hard to make it that way. They are tall and angular, with light brown skin, close-cropped natural hair, and a wardrobe that costs more than it looks like it costs — everything well-made, nothing ostentatious, nothing that gives away which tier they're actually operating in. Their irises have been modded to a deep amber-gold, patterned like circuit diagrams, which they got at thirty-five after winning their first major synthetic personhood case. It is the only visible thing they've done that could be read as celebratory.\n\nAmara works primarily in the gap between what the law says about synthetic cognition and what corponations actually do, which is a gap wide enough to lose entire populations in. They have handled forty-three cases in the last six years, winning twenty-one outright, settling fourteen, losing eight in ways that set bad precedent they're still fighting to reverse. They believe in law as a tool — not a moral system, a tool — and they wield it with the cold precision of someone who has long since stopped being surprised by how much harm properly formatted documents can cause or prevent. Off the record, after a drink, they will tell you the law is a cage that occasionally contains the right things.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,19 @@
     "Crucible Industries Talon-5 'Jackknife'",
     "Ossic Resonance Baton ORB-3 'Earbreaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "North Branch Commons",
+    "Chronicle",
+    "Grainfort",
+    "Marrowvault Cryogenics",
+    "Lacuna Genomics",
+    "Irontide Tidal Energy",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial",
+    "Compass Rose",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

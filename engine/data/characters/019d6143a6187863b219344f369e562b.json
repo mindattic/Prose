@@ -12,7 +12,7 @@
   "role": "Expelled citizen turned hyperlane nomad and informal pastor",
   "age": 67,
   "status": "active",
-  "location": "Hyperlane rest stop at the Waukegan-Kenosha junction — a permanent-ish fixture at a rest station called the Mercy Flat",
+  "location": "Hyperlane rest stop at the Waukegan-Kenosha junction — a permanent-ish fixture at a rest station called the Mercy Flat, near Damen and Armitage",
   "description": "Galdur is an old man in the way of someone who has been old since about forty-five — there is no particular brittleness to him, just a deep weathering. He is heavyset in the torso, his face a broad, lined map of Central Asian and Central African inheritance, with wide cheekbones, deep-set eyes that are nearly black, and a close-cropped white beard that he trims with impractical fastidiousness for someone who sleeps in a modified freight container. His geneware is old and partly degraded: he paid for subdermal bioluminescence in his forearms thirty years ago, when it was fashionable, and now it flickers irregularly — a slow pulse of blue-white light that stutters and catches depending on temperature and his emotional state. He treats this as a feature. He calls it his truth-light.\n\nGaldur was a Sterling-Nakamura corporate ombudsman for twenty-two years — a man who formally heard worker complaints and formally ensured they went nowhere. He knows precisely what he was. He was expelled from his corponation citizenship seven years ago during a restructure, stripped of housing allocation and identity tier classification, and assigned UBC stipend status in a decision that took eleven minutes. He has been on the road since, moving between hyperlane rest stops and migrant encampments, conducting informal services for any spiritual tradition that wants him — E.L.F. prayer ceremonies, grief rituals, marriages that won't be recognized anywhere official. He is not ordained by anything. He is here, which turns out to be most of what people need.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,12 @@
   "carried_weapons": [
     "Street Custom 'Backfire' Weaponized Exhaust System"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "NeuralPath CalmLine Chronic Pain Suppressor",
+    "The Waukegan Industrial Shelf",
+    "Kenosha Crossing"
+  ],
+  "district": "Nomadic"
 }

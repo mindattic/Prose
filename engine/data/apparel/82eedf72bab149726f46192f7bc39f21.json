@@ -1,0 +1,36 @@
+{
+  "id": "82eedf72bab149726f46192f7bc39f21",
+  "name": "Nimbus Fabrication Pulse Bracelet",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A slim wrist-worn band that monitors pulse, blood oxygen, stress hormones, and neural activity baseline in real time. The band's exterior is featureless matte black; all data is transmitted to a paired device or AR display. A panic-button feature sends the wearer's location and vitals to pre-designated contacts when double-tapped.\n\nUsed by corponation employees whose employers monitor their biometrics as a condition of employment, and independently by individuals who want a dead-man's switch — if the heart stops, the bracelet talks.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "biometric sensor suite",
+    "matte polymer band",
+    "wireless transmitter"
+  ],
+  "functionality": "Real-time biometric monitoring, panic alert, dead-man's switch capability",
+  "what_it_says": "Your body's vital signs are being watched, either by your employer or by someone who cares whether you're still alive.",
+  "worn_by": [
+    "corponation employees",
+    "high-risk operatives",
+    "monitored workers"
+  ],
+  "manufacturer": "Nimbus Fabrication",
+  "price_range": "Φ520",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Pulse Bracelet's dead-man's switch activates, transmitting a final location — but the wearer is found alive and well at that location, with no memory of the last four hours and vitals that show they technically died and restarted."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 2",
+    "bracelet",
+    "biometric",
+    "monitoring",
+    "dead-man switch"
+  ]
+}

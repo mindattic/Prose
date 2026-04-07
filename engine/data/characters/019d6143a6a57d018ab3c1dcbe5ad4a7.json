@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor specializing in custom retrofits, geneware-compatible garments, and augmentation-integrated streetwear",
   "age": 42,
   "status": "active",
-  "location": "The Burnished Market, The Laceworks district",
+  "location": "The Burnished Market, The Laceworks district, near Lincoln and Belmont",
   "description": "Radmila is a tall woman with the posture of someone who was once told to slouch and decided never to again. Her skin is warm brown, her hair a natural silver she has streaked with bioluminescent thread-fibers so it catches and pulses faintly in low light — not a geneware mod but textile craft, and she is meticulous about the distinction. She wears her own creations exclusively: today a structured coat with induction-panel lining that shifts color along the hem, tomorrow a deconstructed layering piece that incorporates a client's old Ferrogate Transit jacket. She has retractable claw geneware on her dominant hand, which she uses with equal facility for detail sewing and emphasis in arguments.\n\nRadmila came from the Balkans diaspora through Lagos and arrived in Meridian 88 with a sewing kit, a secondhand cutting laser, and opinions she has never once kept to herself. She is opinionated about aesthetics to the point of manifesto, believes that how people dress in a corponation city is a political act whether or not they mean it to be, and will refuse a commission she finds artistically dishonest even at cost to herself. She is the kind of person who makes enemies easily and keeps them; her regulars are fiercely loyal because she makes things that fit them like she understood what they needed before they said it.",
   "psychology": {
     "facet_weights": {
@@ -227,5 +227,16 @@
     "Meridian Munitions Compact-7 'Rat Trap'",
     "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Ferrogate Transit",
+    "The Laceworks",
+    "Meridian 88",
+    "Palladian Construction",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Silver",
+    "Déjà Vu"
+  ],
+  "district": "The Laceworks"
 }

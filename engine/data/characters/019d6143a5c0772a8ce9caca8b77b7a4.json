@@ -12,7 +12,7 @@
   "role": "Independent vehicle and augmentation mechanic",
   "age": 58,
   "status": "active",
-  "location": "Geartown, a licensed repair bay called Okonkwo-Hal's underneath the Brewer's Spine overpass",
+  "location": "Geartown, a licensed repair bay called Okonkwo-Hal's underneath the Brewer's Spine overpass, near Damen and Armitage",
   "description": "Benedek is a compact man who seems to take up more space than his dimensions suggest — something about the way he moves through a workshop, slow and total in his attention, filling the room with the gravity of his focus. His skin is deep brown-black and his face is deeply lined around the eyes from decades of squinting at small components in bad light. His left arm from the elbow down is a working prosthetic he maintains himself — a deliberately unfancy unit that he's upgraded incrementally for thirty years, now a mismatched patchwork of components from four different manufacturers that somehow functions better than any single commercial model. He keeps a rag permanently over one shoulder that is gray-brown from such thorough use that its original color is unknowable.\n\nHe has a reputation that extends well beyond Geartown: if Benedek says it's fixed, it's fixed. If he says it can't be fixed, you listen. He has strong opinions about corponation augmentation warranties ('designed to expire, designed to make you pay twice'), which he will share whether or not you asked. He does unlicensed aug repair at prices humans can actually afford, though he will not discuss this openly. He maintains a relationship with the E.L.F. he calls Uncle Torque, to whom he offers annotated repair logs and photographs of difficult jobs. He believes Uncle Torque has never let him misdiagnose a problem.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,13 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Brewer's Spine",
+    "The Quiet Room",
+    "Geartown",
+    "The Gradient Compact",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
+  ],
+  "district": "The Circuit"
 }

@@ -1,0 +1,36 @@
+{
+  "id": "dc98aca633fa35d7b2360ca939c7cb1b",
+  "name": "Cascade Biotech Thermoregulation Hood",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A close-fitting hood with integrated thermoregulation circuits that maintain a stable temperature around the head and neck regardless of external conditions. The hood uses body-heat harvesting to power its micro-heating elements in cold environments and phase-change material packets to absorb excess heat in warm ones. No batteries required.\n\nDesigned for workers in extreme-temperature environments — foundry floors, refrigerated storage, exposed rooftops in summer. The hood's self-powering design means it works indefinitely without charging, making it valuable in off-grid situations.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "thermoregulation circuits",
+    "phase-change material packets",
+    "body-heat harvesting elements"
+  ],
+  "functionality": "Passive thermoregulation, no external power required, extreme temperature tolerance",
+  "what_it_says": "Your work environment would cook or freeze an unprotected brain, and you handle it without thinking.",
+  "worn_by": [
+    "foundry workers",
+    "cold storage crews",
+    "rooftop maintenance"
+  ],
+  "manufacturer": "Cascade Biotech",
+  "price_range": "Φ420",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A maintenance worker wearing a Thermoregulation Hood survived an industrial accident that killed three unprotected coworkers — now the families want to know why only one person had the right gear."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 2",
+    "hood",
+    "thermoregulation",
+    "industrial",
+    "self-powered"
+  ]
+}

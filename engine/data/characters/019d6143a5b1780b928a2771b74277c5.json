@@ -12,7 +12,7 @@
   "role": "Wandering trader and caravan member",
   "age": 41,
   "status": "active",
-  "location": "Kenosha Crossing — semi-permanent pitch in the trader's row outside the main terminal",
+  "location": "Kenosha Crossing — semi-permanent pitch in the trader's row outside the main terminal, near beyond the Western Perimeter",
   "description": "Ametsuchi is compact and broad-shouldered, with the particular kind of physical confidence that comes from lifting, hauling, and setting up a market stall in hostile weather for twenty years. Their hair grows in a natural halo that they tint in slow-shifting colors — currently a deep green at the roots bleeding to copper at the tips — using a cheap geneware pigment mod that they refresh every three months at whichever clinic takes cash. Their skin is a warm medium brown covered in a patchwork of small tattoos that are actually a functional mnemonic system: inventory records, supplier codes, route notes, all written in a personal cipher directly on their forearms and the backs of their hands. They wear a coat with an absurd number of pockets, all of which are organized with a precision that would embarrass most archivists.\n\nAmetsuchi is sociable in the pure commercial sense — they can talk to anyone, find the common thread, make the sale — but there is a layer of genuine curiosity beneath the salesmanship that surprises people who expect only performance. They have been moving with the Kenosha-Escanaba-Waukegan caravan circuit for fifteen years, specializing in hard-to-source physical goods: specific medicines, particular machine components, seeds, analog media. They know supply and demand in the outer edges of Meridian 88 with an intimacy that no corporate logistics system can replicate, because they have walked it personally.",
   "psychology": {
     "facet_weights": {
@@ -217,5 +217,17 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Dispatch-45 'Last Word'"
-  ]
+  ],
+  "related_entities": [
+    "Kenosha Crossing",
+    "Meridian 88",
+    "The Circuit",
+    "NeuralPath Horizon Standard Neural Mesh",
+    "The Waukegan Industrial Shelf",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "Copper",
+    "The Pure Hand"
+  ],
+  "district": "Nomadic"
 }

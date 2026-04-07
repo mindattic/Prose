@@ -12,7 +12,7 @@
   "role": "Climate scientist and atmospheric historian, tracking long-term environmental transformation of the Great Lakes basin",
   "age": 67,
   "status": "active",
-  "location": "The Conservatory, Meridian Core",
+  "location": "The Conservatory, Meridian Core, near State and Monroe",
   "description": "Demba is a heavyset man of late middle age who looks as though he was carved from something patient and enduring. His skin is very dark and deeply weathered from decades of fieldwork on decommissioned weather platforms and lake monitoring buoys — he has the look of a man who has spent a great deal of time outside in bad conditions. His hair is fully white and worn long, pulled back loosely, and he has a full beard he keeps trimmed to a point. He has no geneware modifications and minimal augmentation, which he is somewhat self-conscious about — 'I grew up before it was expected,' he says, with just enough humor to deflect the admission that he also slightly distrusts it. His clothes are always slightly out of fashion, always completely functional, often waterproof for no apparent reason.\n\nDemba has been at The Conservatory for twenty-two years and has outlasted four department heads, three rounds of corponation funding restructuring, and one very public battle with Arcturus over the suppression of lake toxicity data. He won that battle technically, in that his paper was eventually published, though the version that ran had twelve figures redacted. He keeps the uncensored original framed on his office wall facing inward. He is beloved by students who find his lectures dense but transformative, and is one of the few people in Meridian 88 who can speak with genuine authority about what the lake looked like before, during, and after the Lakeshore Crisis — which makes him either important or dangerous depending on who is asking.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,15 @@
   "carried_weapons": [
     "Hearthstone Firearms Model 9 'Payday'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Conservatory",
+    "Meridian Core",
+    "Meridian 88",
+    "TESSERA PG-2 'Signature'",
+    "Arcturus Defense Solutions",
+    "Gravimetric Collapse Charge GCC-9",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "Meridian Core"
 }

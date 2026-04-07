@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and small-time data broker",
   "age": 34,
   "status": "active",
-  "location": "The Shelf, stall cluster near the Deepwell Station transit entrance",
+  "location": "The Shelf, stall cluster near the Deepwell Station transit entrance, near sub-level access near Dearborn and Jackson",
   "description": "Bashir has the look of someone who sleeps too little and reads too much — slight build, perpetually ink-stained fingers from his analog printing hobby, eyes with cosmetic irises designed to look like camera apertures (a mod he got as a joke at nineteen and has grown genuinely fond of). His Ghanaian-Indian heritage gives him warm brown skin and dense, curly hair he keeps at medium length and usually tucked under a wide soft cap from which he's hung three or four data chips like earrings. He is almost always seated, almost always behind a screen, and almost always eating something wrapped in paper.\n\nHe sells everything you're not supposed to have: archived broadcasts from before the Corponation Consolidation, cracked Axiom media libraries, full recording histories of public figures who paid to have them scrubbed, bootleg copies of academic research locked behind Palladian's paywall, and — for the right price and the right trust level — assembled intelligence packages on individuals or organizations. He insists loudly that he's just a media vendor. This is technically true in the way that a locksmith who teaches classes is technically just an educator. He has an E.L.F. he calls the Archivist-Below living in his primary storage node, to whom he dedicates every new acquisition.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,18 @@
   ],
   "registered_firearms": [
     "Meridian Munitions Snapper-22 'Cricket'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Palladian Construction",
+    "Zheng-dao Bioelectric",
+    "The Shelf",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Gravimetric Collapse Charge GCC-9",
+    "Tibor Osei-Svanstrom"
+  ],
+  "district": "The Underworld"
 }

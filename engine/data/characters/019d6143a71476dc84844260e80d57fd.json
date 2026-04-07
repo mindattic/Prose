@@ -12,7 +12,7 @@
   "role": "Remote drone and vehicle operations specialist — rigger",
   "age": 20,
   "status": "active",
-  "location": "The Canopy — elevated walkway district above Geartown",
+  "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
   "description": "Vesna Strand-Otieno is average height but with a presence that fills more space than the body accounts for. At 20, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nVesna Strand-Otieno is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,18 @@
   "registered_firearms": [
     "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "Masquerade",
+    "Canopy Station Nine",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Geartown",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+  ],
+  "district": "The Laceworks"
 }

@@ -12,7 +12,7 @@
   "role": "Identity fabricator and forger operating in The Narrows",
   "age": 34,
   "status": "active",
-  "location": "The Narrows, Ironvein sub-district — a basement apartment beneath a legitimate alterations shop",
+  "location": "The Narrows, Ironvein sub-district — a basement apartment beneath a legitimate alterations shop, near Damen and Armitage",
   "description": "Solène is compact and precise, the kind of person whose stillness in a crowded room makes you notice her eventually, like a stone in moving water. Her heritage is Aleutian-Ghanaian, and her face carries both — broad cheekbones, deep brown skin, eyes the color of sea ice that shift to something almost golden in certain lights, a geneware mod she got at nineteen and never bothered reversing. Her hair is natural and enormous, usually pinned up under a faded headscarf when she works. Her hands are her most remarkable feature: surgeon-steady, ink-stained at the cuticles, and capable of replicating any biometric signature with enough reference material and time.\n\nShe does not think of herself as a criminal. She thinks of herself as a documentarian of alternate lives — she makes real what should already be real, papers for people whose papers were stolen, burned, or never issued. She charges a sliding scale that she determines unilaterally and that no one argues with because her work is simply that good. She is funny in a dry, sideways way, and she will feed you while you wait because she believes hungry clients make bad decisions and bad decisions make her work harder.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,18 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Slagworks Industrial",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

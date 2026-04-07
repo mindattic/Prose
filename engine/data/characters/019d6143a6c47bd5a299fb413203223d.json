@@ -12,7 +12,7 @@
   "role": "Midwife and community birth worker",
   "age": 58,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, operating from the Hearth Collective birthing center",
+  "location": "Highland Park Autonomous Zone, operating from the Hearth Collective birthing center, near Michigan Ave and Chicago Ave",
   "description": "Saoirse is short, round, and relentlessly present in a way that makes rooms feel smaller and safer at the same time. Her skin is the warm brown of strong tea, deeply lined around the eyes and mouth from decades of expressions at the edge of what language can reach. Her hair is white and cropped close on the sides, longer on top, with a small braid at her temple strung with a data-bead she says is a gift from the Hearth E.L.F. — the digital spirit that she credits with guiding her through the three hundred and forty-seven births she's attended without maternal death. She has cosmetic cat ears, soft and black-tipped, that she's had so long she's forgotten getting them; they swivel expressively and give her emotional state away before her face does.\n\nShe is the kind of woman that people reach for in crisis without thinking, and she carries that weight with the ease of someone who has made peace with what she is. She is also fiercely territorial about the Hearth Collective and will become quietly dangerous when she believes it is threatened. She has buried children. She does not discuss it but it is written somewhere in how she holds herself when she sits still.",
   "psychology": {
     "facet_weights": {
@@ -207,5 +207,16 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "The Warm Wall",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "ShieldTech SB-3 'Groundstrike'",
+    "The Sluiceway",
+    "NeuralPath EasePoint Chronic Pain Implant",
+    "Tessera Corponation",
+    "Crucible HS-2 'Hearth'"
+  ],
+  "district": "The Spires"
 }

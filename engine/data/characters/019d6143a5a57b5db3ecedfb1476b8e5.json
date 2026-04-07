@@ -12,7 +12,7 @@
   "role": "Retired battlefield medic (Corporate Wars), now raises two grandchildren on UBC stipend",
   "age": 69,
   "status": "active",
-  "location": "The Shelf, Unit 14-F, Sublevel 3",
+  "location": "The Shelf, Unit 14-F, Sublevel 3, near sub-level access near Dearborn and Jackson",
   "description": "Agathe is compact and precise in the way of someone who learned to work in confined spaces under pressure — her movements economical, her hands still surgeon-steady despite the arthritis she manages with black-market anti-inflammatories. She has warm amber-brown skin and close-cropped natural hair going salt-and-pepper, and her right eye is a replacement — a cheap ocular from a Shelf vendor with an iris that shifts between honey and pale gold depending on the light, giving her a slightly uncanny asymmetry she has stopped noticing. A faded Arcturus Medical Corps tattoo runs the inside of her left wrist, partially obscured by a beaded bracelet her granddaughter made.\n\nShe is not soft. She is kind, which is different. She has the manner of someone who has triaged too many bodies to waste energy on performed warmth, and she offers directness as a form of respect. She laughs loudly and without warning. She will tell you exactly what she thinks is wrong with you — medically or otherwise — and follow it immediately with an offer of food. The Shelf neighbors bring her their injuries, their medication questions, their expired prescriptions they're hoping she can identify. She helps when she can and turns no one away empty-handed.",
   "psychology": {
     "facet_weights": {
@@ -249,5 +249,19 @@
   "registered_firearms": [
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Volkov-Saito Precision VS-40 'Magistrate'"
-  ]
+  ],
+  "related_entities": [
+    "The Shelf",
+    "Arcturus Defense Solutions",
+    "The Gradient Compact",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Stalker",
+    "Handed",
+    "The Pale Mile",
+    "Gold",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Underworld"
 }

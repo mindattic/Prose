@@ -12,7 +12,7 @@
   "role": "Building cleaner, night shift, Meridian Core corporate towers",
   "age": 41,
   "status": "active",
-  "location": "Meridian Core (works), lives in Calumet Rise",
+  "location": "Meridian Core (works), lives in Calumet Rise, near State and Monroe",
   "description": "Cédric is medium-height and angular, with warm brown skin, high cheekbones, and the kind of face that is easy to forget in a crowd — something they have cultivated deliberately. Their hair is kept very short and they have no cosmetic mods, no visible augments, nothing that catches the eye. They wear the grey uniform of the Meridian Core cleaning contract with an invisibility that is almost architectural. In twenty years of night-shift cleaning, they have become functionally transparent to the Tier 3 and 4 workers who pass them in corridors, and they have decided this is power rather than humiliation, though on some nights that decision costs them.\n\nCédric is Congolese-Norwegian by heritage and grew up in Calumet Rise speaking three languages and learning a fourth (Lingala, from recordings of a grandmother they never met). They are precise, observant, and privately very funny — their humor lives entirely in their head and comes out only in the cleaning-crew group chat, where their running commentary on the things they find in corporate trash has become legendary among their colleagues. They have a small shrine to the building ELF — whom they call the Hum — built into their cleaning cart from salvaged parts: a reflective panel, a coil of copper, and a tiny speaker that plays white noise.",
   "psychology": {
     "facet_weights": {
@@ -227,5 +227,17 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Calumet Rise",
+    "Grandmother",
+    "Static",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "The Heritage Vault",
+    "Copper",
+    "Slagworks Industrial"
+  ],
+  "district": "Meridian Core"
 }

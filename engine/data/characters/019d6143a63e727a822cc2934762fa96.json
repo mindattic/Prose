@@ -12,7 +12,7 @@
   "role": "Forced entry and close-quarters combat specialist — breacher",
   "age": 33,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and North Ave",
   "description": "Kamala Medina-Quaye is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,12 @@
   "registered_firearms": [
     "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "Bioelectric Muscle Fiber",
+    "Meridian 88",
+    "Geartown",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

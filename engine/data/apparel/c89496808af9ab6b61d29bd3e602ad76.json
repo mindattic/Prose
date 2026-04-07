@@ -1,0 +1,36 @@
+{
+  "id": "c89496808af9ab6b61d29bd3e602ad76",
+  "name": "Lumen Dynamics Photovoltaic Base Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A base layer woven with flexible photovoltaic fibers that harvest ambient light — sunlight, artificial light, even dim indoor lighting — and convert it to electrical charge stored in a thin waistband battery. The harvested energy can power small personal electronics, charge comm devices, or supplement augmentation power systems.\n\nDesigned for off-grid operatives and field personnel who can't guarantee access to charging infrastructure. The Photovoltaic Layer generates modest power — enough to keep a comm unit alive indefinitely, not enough to power heavy augmentation hardware.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "flexible photovoltaic fibers",
+    "energy-storage waistband",
+    "light-harvesting weave"
+  ],
+  "functionality": "Ambient light energy harvesting, personal device charging, augmentation power supplement",
+  "what_it_says": "You operate in places where power outlets don't exist, so you became your own power source.",
+  "worn_by": [
+    "off-grid operatives",
+    "field personnel",
+    "long-range scouts"
+  ],
+  "manufacturer": "Lumen Dynamics",
+  "price_range": "Φ1,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Photovoltaic Base Layer found in an underground bunker with no light source has a full battery — something in that bunker is emitting energy in a frequency the human eye can't see but the photovoltaic fibers can harvest."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 3",
+    "photovoltaic",
+    "energy harvesting",
+    "off-grid",
+    "self-powered"
+  ]
+}

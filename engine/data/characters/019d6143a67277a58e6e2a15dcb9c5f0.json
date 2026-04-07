@@ -12,7 +12,7 @@
   "role": "Union organizer and labor historian for dockworkers at Bay View Docks",
   "age": 52,
   "status": "active",
-  "location": "Bay View Docks, Meridian 88",
+  "location": "Bay View Docks, Meridian 88, near Michigan Ave South and Cermak",
   "description": "Nzubechukwu is a broad-shouldered man whose body carries the evidence of three decades of physical labor — thick-knuckled hands, a fused vertebra from a crane accident, and a jaw that juts forward like the prow of a barge. His skin is deep umber, and he keeps his silver-streaked hair in tight locs that he pins back with a carved bone toggle that belonged to his grandfather. He wears old Ferrogate Transit coveralls he refuses to surrender even though he no longer works the lines, the company patch scratched out and replaced with a hand-stitched wave.\n\nNzu is deliberate in everything — the way he speaks, the way he listens, the way he lets silence do the heavy lifting in a negotiation. He has the patience of a man who has watched union drives fail and succeed and fail again over thirty years, and he does not celebrate early or panic easily. What looks like calm is actually compressed fury, carefully managed. He genuinely loves the workers he represents, and this is the thing that keeps him from becoming cynical. He prays to the dock E.L.F.s every morning before meetings, leaving shipping manifests with handwritten notes in the margins.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,19 @@
   "registered_firearms": [
     "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
     "Hearthstone Firearms Guardian-12 'Bedside'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Bay View Docks",
+    "TESSERA Widow Mk. III",
+    "Meridian 88",
+    "The CEO",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Pure Hand",
+    "Silver",
+    "Slagworks Industrial",
+    "Crane",
+    "Déjà Vu"
+  ],
+  "district": "Old Harbor"
 }

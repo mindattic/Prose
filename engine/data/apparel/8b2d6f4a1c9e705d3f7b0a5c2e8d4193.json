@@ -1,0 +1,41 @@
+{
+  "id": "8b2d6f4a1c9e705d3f7b0a5c2e8d4193",
+  "name": "Yūrei Systems Ghost Operative Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Near-invisible adaptive chromatic armor in deep slate-grey with active light-diffusion panels, marked only by Yūrei's ghost-kanji sigil in ultraviolet-reactive ink visible solely under specific scanner frequencies. The helmet is a full-face zero-profile unit with multi-spectrum optical suite, signal-suppression shielding, and a BCI-direct feed interface port at the base of the skull. Load rig is body-contoured phantom-weave, carrying breaching micro-tools, signal-intercept hardware, and a collapsible close-range weapon system. Boots are sound-dampened nano-fiber composite with grip-adaptive soles for vertical surface traction.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "active chromatic light-diffusion armor panels",
+    "phantom-weave load rig",
+    "signal-suppression composite helmet shell",
+    "sound-dampened nano-fiber boots",
+    "UV-reactive insignia ink"
+  ],
+  "functionality": "Active optical camouflage, BCI-direct tactical feed, signal suppression, and multi-spectrum visual suite for covert insertion and intelligence operations.",
+  "what_it_says": "You don't see Yūrei operatives — you only see the aftermath, if they want you to.",
+  "worn_by": [
+    "Yūrei Systems Ghost operatives",
+    "corporate espionage field agents",
+    "deep-cover intelligence extraction teams"
+  ],
+  "manufacturer": "Yūrei Systems Black-Budget R&D Division",
+  "price_range": "Φ 18,000–Φ 35,000 (classified, never sold)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Ghost operative's chromatic panels have started malfunctioning in a specific twelve-block radius — something in the area is jamming the diffusion frequency.",
+    "The UV sigil on a recovered kit doesn't match any active Yūrei unit designation — someone is running unauthorized ghosts."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "military_corpsec_kit",
+    "yurei_systems",
+    "ghost_operative",
+    "stealth",
+    "covert",
+    "tactical",
+    "corp_issued"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "organ harvester and back-alley medical fence",
   "age": 34,
   "status": "active",
-  "location": "Shallowgrave, operates from a converted cold-storage unit beneath the Midden Market",
+  "location": "Shallowgrave, operates from a converted cold-storage unit beneath the Midden Market, near Ashland and Division",
   "description": "Sévérine is built compact and efficient, dark-skinned with close-cropped hair she dyes a deep arterial red — not geneware, just dye, because she likes having a choice about it. She has bioluminescent capillary lines mapped faintly across both forearms, a cosmetic mod she got at nineteen that she now finds embarrassing but can't afford to remove, which she will tell you about if you ask and sometimes if you don't. Her surgical augments are serious: stabilizer rigs in both hands, haptic-magnification implants behind her eyes, a subdermal sterile field generator she refers to as 'the bubble.'\n\nShe was two years into a Helix Biosystems surgical residency when she was caught diverting a cadaver organ to a patient who couldn't pay the licensing fees. She does not think she did anything wrong. She thinks Helix Biosystems is wrong, the organ licensing system is wrong, and the entire apparatus that let that patient die six weeks after her termination is wrong. She has constructed an entire ethical framework around her current work — she harvests from the willing (paid donors, usually desperate Tier 1s), she maintains sterile conditions that would shame most licensed clinics, and she charges sliding scale. She genuinely saves lives. She also genuinely sells kidneys to Axiom black-market med-brokers for Φ4,000 a unit. Both things are true.",
   "psychology": {
     "facet_weights": {
@@ -253,5 +253,17 @@
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "Shallowgrave",
+    "Meridian Audio Concepts SirenSphere S-7 'Dome'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KPM-15R 'Reclaim'",
+    "Axiom Systems White Noise Bubble Generator WNB-1",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

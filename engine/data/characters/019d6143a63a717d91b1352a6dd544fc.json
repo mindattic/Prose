@@ -13,7 +13,7 @@
   "role": "Lower Dock Crew tech specialist — Prologue survivor. Lost both wrists.",
   "age": 28,
   "status": "active",
-  "location": "The Shelf — lower loading docks",
+  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
   "description": "Jin-seo Park was a biomedical engineering student at Meridian Technical before the tuition hikes priced him out. He was eighteen months from a degree that would have put him in a Helix BioSystems lab. Instead he ended up maintaining chrome for dock workers who couldn't afford licensed technicians. The crew found him. Or he found the crew. The distinction blurred the way it always does in the Shelf.\n\nKyle severed both his wrists at the chrome joints with two precise cuts. He now has mismatched replacement hands: the left is a delicate surgical model (too small, meant for a woman's frame), the right is a heavy industrial gripper (too large, meant for cargo work). Together they make him look like a crab having an identity crisis. He calls them Lefty and The Situation.\n\nJin-seo is the most intelligent member of the crew and the only one who understood immediately what Kyle was: not a man fighting seven, but a system processing seven inputs simultaneously. He has been diagramming Kyle's fighting patterns from memory. He does not want revenge. He wants to understand Kyle's hardware. He has a younger sister, Minji, who is sixteen and still at Meridian Technical on a partial scholarship. He sends her half his cut. She thinks he works in legitimate tech repair.",
   "psychology": {
     "facet_weights": {
@@ -231,5 +231,14 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Shelf",
+    "Big Rig",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

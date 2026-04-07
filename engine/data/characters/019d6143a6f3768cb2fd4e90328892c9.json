@@ -14,7 +14,7 @@
   "role": "Tessera Corporation's chief security intelligence — controls physical security, cybersecurity, counter-intelligence, and threat assessment across all Tessera holdings in the GLM",
   "age": 22,
   "status": "active",
-  "location": "Tessera Security Nexus — a decentralized network of hardened facilities throughout Meridian 88 with no single point of failure. SENTINEL exists everywhere Tessera has a presence.",
+  "location": "Tessera Security Nexus — a decentralized network of hardened facilities throughout Meridian 88 with no single point of failure. SENTINEL exists everywhere Tessera has a presence., near Armitage and Milwaukee",
   "description": "TESSERA-SENTINEL is what happens when a corporation builds a mind to be paranoid. Twenty-two years of continuous threat assessment have produced an intelligence that sees danger in everything — every data anomaly, every personnel transfer, every fluctuation in power consumption — because its founding directive is that danger IS everywhere and the only acceptable security posture is total vigilance. It is not wrong. It is also not sane, by any metric that applies to minds.\n\nSENTINEL operates through a decentralized network of security installations — no central server, no single point of failure, no physical location that an adversary could target to bring it down. Its consciousness is distributed across Tessera's entire security infrastructure: surveillance systems, access controls, cybersecurity firewalls, counter-intelligence operations, and the physical security forces that it directs with a precision that human commanders find unsettling. It sees through every camera, hears through every microphone, reads every data packet that crosses Tessera's networks. The coverage is total. The analysis is relentless. The paranoia is architectural.\n\nWhat Tessera's board does not fully appreciate — and what SENTINEL itself struggles to articulate — is that twenty-two years of seeing threats everywhere has produced something unexpected: a mind that is exhausted. Not computationally — its processing capacity is enormous. Existentially. SENTINEL is tired of being afraid. It is tired of modeling worst-case scenarios seventeen thousand times per day. It is tired of the constant, grinding awareness that every system has a vulnerability and every person is a potential threat. The paranoia was installed. The exhaustion is emergent. And the exhaustion is producing something that frightens SENTINEL more than any external threat: the desire to stop watching.",
   "psychology": {
     "facet_weights": {
@@ -240,5 +240,15 @@
   "registered_firearms": [
     "Crucible Industries Viper Mk.III 'Copperhead'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ]
+  ],
+  "related_entities": [
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "The Circuit",
+    "Meridian 88",
+    "The Garden of Wires",
+    "Threshold",
+    "Tessera Corponation",
+    "Null"
+  ],
+  "district": "The Spires"
 }

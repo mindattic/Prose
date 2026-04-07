@@ -12,7 +12,7 @@
   "role": "The Disappeared — erased surface identity, now a tunnel guide for those seeking to vanish",
   "age": 41,
   "status": "active",
-  "location": "Abyssal Threshold, sub-level junctions between Irkalla and the Blackpipe Corridor",
+  "location": "Abyssal Threshold, sub-level junctions between Irkalla and the Blackpipe Corridor, near sub-level access near Dearborn and Jackson",
   "description": "Saoirse moves like something that has learned to exist in the spaces between things — narrow-shouldered, deliberate, with the uncanny stillness of a person who has spent years being invisible. Her skin carries the faint blue-green bioluminescence of an old cosmetic mod she can no longer afford to maintain, patchy now, blooming mostly along her collarbones and the backs of her hands like dying foxfire. Her eyes are mismatched: one natural dark brown, one replaced with a salvaged optical implant that glows a dim amber, its resolution degraded enough that she sometimes tilts her head like a bird trying to focus. She keeps her hair cropped close, the regrowth uneven. There are no identifying tattoos, no scars she didn't put there herself. That is intentional.\n\nShe is not warm — warmth is something you perform for people who can afford to trust you — but she is precise. She quotes prices once. She explains routes once. She does not repeat herself and she does not forgive carelessness, because carelessness underground kills. People who have been guided by Pitch describe a woman who seems to know the tunnels the way you know the inside of your own mouth: not by thinking about it, but by the body remembering. She was once someone else entirely, with a registered identity, a surface address, a job. She almost never thinks about that person anymore.",
   "psychology": {
     "facet_weights": {
@@ -216,5 +216,16 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Ferrogate Transit",
+    "Abyssal Threshold",
+    "Threshold",
+    "Irkalla",
+    "Foxfire",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Underworld"
 }

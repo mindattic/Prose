@@ -1,0 +1,36 @@
+{
+  "id": "ebc6f2eae93c05675692f1f8ab585bd0",
+  "name": "Harrow & Finch Duty Suspenders",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Heavy-duty Y-back suspenders with reinforced clips and adjustable elastic straps rated for load-bearing use. Each strap has three MOLLE-compatible attachment points for securing small pouches, lights, or communication devices. The suspenders distribute weight across the shoulders rather than the hips.\n\nCommon among workers who carry tool belts heavy enough to pull pants down and security personnel who need their belt line for weapon systems. The suspenders' utilitarian appearance has crossed into fashion in mid-tier districts where looking like you work hard carries social currency.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reinforced elastic straps",
+    "heavy-duty clips",
+    "MOLLE webbing"
+  ],
+  "functionality": "Load distribution, MOLLE attachment points, belt weight support",
+  "what_it_says": "You carry enough weight on your belt that your shoulders had to get involved.",
+  "worn_by": [
+    "tool-belt workers",
+    "security personnel",
+    "industrial laborers"
+  ],
+  "manufacturer": "Harrow & Finch",
+  "price_range": "Φ95",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of duty suspenders found at a break-in are configured with attachment points for specialized equipment — the loadout suggests the wearer was prepared for a very specific job that matches no known criminal MO."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "tier 1",
+    "suspenders",
+    "load-bearing",
+    "MOLLE",
+    "utility"
+  ]
+}

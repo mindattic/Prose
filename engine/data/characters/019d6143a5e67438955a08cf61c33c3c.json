@@ -12,7 +12,7 @@
   "role": "nomad caravan leader, wandering trader, stateless person",
   "age": 52,
   "status": "active",
-  "location": "Grand Crossing Gate, running a semi-permanent caravan market in the loading apron outside the main checkpoint",
+  "location": "Grand Crossing Gate, running a semi-permanent caravan market in the loading apron outside the main checkpoint, near Milwaukee and North Ave",
   "description": "Darqawi is a commanding presence without performing it — she is tall, angular, with silver-threaded locs wrapped under a bright indigo cloth that she reties differently each day but always precisely. Her skin is dark with a reddish undertone and her eyes are light brown, which she has enhanced with irises patterned to shift between amber and pale gold depending on the light — a functional modification, she says, for reading conditions at dawn and dusk, which is when most caravan decisions are made. The back of both her hands carry geometric tattoos that are Tuareg in origin and Norse in their second layer, inked over each other across generations. She moves like someone who has learned to conserve effort over distance.\n\nDarqawi runs the Meridian Outer Loop caravan, a loose coalition of nomadic traders that has been making the circuit of Meridian 88's transit hubs for eleven years. The caravan carries seasonal goods — preserved food, hand-maintained tools, pirated entertainment chips, specific medications that are easier to find on the road than in the city, news — and trades in whatever is undervalued at one hub and needed at the next. She is not sentimental about commerce and she is not romantic about the road, which is what makes her good at both. The caravan is her responsibility. She feels this at all times.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,21 @@
     "Street Custom 'Baptism' Electrified Water Cannon",
     "Street-Custom Gutter Katana 'Flatline'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "The Circuit",
+    "Meridian 88",
+    "The Iron Lotus",
+    "Meridian Core",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "The Pale Mile",
+    "Déjà Vu",
+    "Gold"
+  ],
+  "district": "Nomadic"
 }

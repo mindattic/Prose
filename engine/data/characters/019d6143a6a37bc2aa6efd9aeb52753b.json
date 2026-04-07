@@ -12,7 +12,7 @@
   "role": "Bootleg media seller and small-time data broker — pirated sensorium feeds, black-market memory cores, and hot information",
   "age": 27,
   "status": "active",
-  "location": "The Shelf, Ironvein district — operates from a converted maintenance alcove beneath the mag-rail support struts",
+  "location": "The Shelf, Ironvein district — operates from a converted maintenance alcove beneath the mag-rail support struts, near Kedzie and Division",
   "description": "Przemek is a sharp-faced young man with the kind of restless eyes that track every entrance and exit in a room simultaneously. He is wiry and pale-complexioned with his Hausa grandfather's high cheekbones and his Mexican grandmother's jaw, and he has cat ears — matte black, expensive enough to be the nicest thing he owns — that swivel independent of his attention, which unnerves people who don't know him. He keeps his dark hair in a short braid tucked under a hood most of the time and dresses in layered secondhand tech-worker castoffs that make him look like he belongs in a server room rather than a market alcove.\n\nHe is aggressively, exhaustingly clever — the kind of person who has already run seventeen versions of this conversation in his head before you finish your first sentence. He deals in media and data with the same practiced casualness that a much older person would deal in rumors, and he has a genuine passion for pre-Consolidation cinema that he disguises as ironic interest. He is afraid of exactly two things: boredom and being cornered, and he confuses both with death.",
   "psychology": {
     "facet_weights": {
@@ -237,5 +237,16 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Street Custom 'Angry Mary' Aerosol Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The CEO",
+    "Grandmother",
+    "The Shelf",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Ironvein",
+    "Stratum",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

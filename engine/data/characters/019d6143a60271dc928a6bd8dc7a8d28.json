@@ -12,7 +12,7 @@
   "role": "Compute broker — sells black-market processing time, stolen AI cycles, and illegally acquired data storage capacity",
   "age": 44,
   "status": "active",
-  "location": "The Undertow, based at a food stall called Overflow that serves as his public face",
+  "location": "The Undertow, based at a food stall called Overflow that serves as his public face, near Milwaukee and Damen",
   "description": "Emeka is a tall, loud man with the kind of physical presence that makes rooms recalibrate. He has Nigerian-Swedish coloring that surprises people — warm brown skin, hazel eyes, red-tinged hair he keeps cut tight to his skull — and a Mexican grandmother's round face that he inherited completely. He has cat ears in amber-gold, a geneware mod from a decade ago that he got on a dare and has never bothered to reverse because they've become part of his brand. They fold back when he's irritated, which is useful shorthand. He wears bright colors, talks constantly, sells the best grilled cassava flatbreads in the Undertow district as a genuine secondary passion.\n\nThe food stall is real. The food is good. It is also where Emeka sells access to computing resources that don't belong to him — processing cycles skimmed from corporate server farms via distributed exploit packages, storage space in dead zones of Axiom's infrastructure, raw bandwidth siphoned from Ferrogate Transit's reserve systems. He doesn't understand the technical work at a deep level — he has a partner for that, a woman he will never name — but he understands value, he understands clients, and he can talk anyone into a package deal that somehow always benefits him more than it should. He is genuinely funny. This is his most dangerous quality.",
   "psychology": {
     "facet_weights": {
@@ -230,5 +230,15 @@
   "carried_weapons": [
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Undertow",
+    "Grandmother",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Hazel Brink",
+    "Gold"
+  ],
+  "district": "The Underworld"
 }

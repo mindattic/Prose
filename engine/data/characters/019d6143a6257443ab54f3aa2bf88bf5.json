@@ -12,7 +12,7 @@
   "role": "Contract broker and resource coordinator — fixer",
   "age": 28,
   "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
   "description": "Halima Zakharov-Boateng is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 28, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a fixer out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHalima Zakharov-Boateng operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -277,5 +277,11 @@
   "registered_firearms": [
     "Hearthstone Firearms HF-30 'Homestead'",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Slagworks Industrial"
+  ],
+  "district": "Old Harbor"
 }

@@ -11,7 +11,7 @@
   "role": "echo hunter — scavenger who locates and extracts valuable materials from collapsed or flooded tunnel sections",
   "age": 29,
   "status": "active",
-  "location": "Abyssal Threshold, ranging into Black Corridor spurs and pre-collapse Undertow sectors",
+  "location": "Abyssal Threshold, ranging into Black Corridor spurs and pre-collapse Undertow sectors, near sub-level access near State and Van Buren",
   "description": "Knock is a compact, densely muscled man with deep brown skin and a face that would be handsome if it weren't always bruised somewhere. He has a retractable claw modification on both hands — not the delicate cosmetic kind, but a heavy-gauge industrial variant originally designed for pipe work, the chrome yellowed and scratched, the mechanism loud. His right eye is a replacement after a cave-in in 2196: matte black sclera, amber iris, depth-perception assist — he got it from a tunnel-market vendor and it's slightly misaligned, which gives him a permanent squint on that side. His hair is cut very close and he has a habit of pressing his palms flat against walls, feeling for vibration, that people find either impressive or unsettling depending on whether they understand what he's doing.\n\nEcho hunting is exactly what it sounds like: you go into places that have broken and you listen for what's still there. Structural resonance, water movement, the ping of metal under pressure — Knock reads these sounds the way others read text. He extracts ferrogate rail segments, copper bundling, intact conduit, old hardware sealed in collapsed rooms — anything the surface market will buy or the underground can use. It is extremely dangerous work with an average career length of about four years. Knock has been doing it for nine. He attributes this to skill. Everyone who knows him also attributes it to a specific kind of recklessness that looks like skill from the outside.",
   "psychology": {
     "facet_weights": {
@@ -170,5 +170,21 @@
   "registered_firearms": [
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "Abyssal Threshold",
+    "The Third Rail",
+    "The Resonance Communion",
+    "Ferrogate Transit",
+    "Threshold",
+    "ARCTURUS DEFENSE Echolocator MK-IV Sonar Array",
+    "The Gradient Compact",
+    "Witness",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Palladian Construction MagRail Spur MRS-17 Elevated Micro-Transit Chassis",
+    "Elena Vasquez-9"
+  ],
+  "district": "The Underworld"
 }

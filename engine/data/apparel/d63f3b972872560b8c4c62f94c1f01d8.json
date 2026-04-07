@@ -1,0 +1,36 @@
+{
+  "id": "d63f3b972872560b8c4c62f94c1f01d8",
+  "name": "MedTech Solutions Surgical Precision Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Ultra-thin surgical gloves with embedded haptic feedback sensors that amplify the wearer's sense of touch by a factor of twelve. Every texture, every pulse, every micro-variation in tissue is transmitted to the wearer's fingertips with crystalline clarity. The gloves are single-use, sterile-packaged, and decompose within 72 hours of opening.\n\nUsed by surgeons, augmentation installers, and forensic examiners who need to feel what they cannot see. The amplified sensitivity makes wearing them in casual environments overwhelming — every surface becomes a flood of tactile information.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "ultra-thin polymer",
+    "haptic amplification sensors",
+    "biodegradable substrate"
+  ],
+  "functionality": "12x tactile amplification, sterile barrier, 72-hour decomposition",
+  "what_it_says": "Your hands need to feel things at a resolution that would overwhelm a normal nervous system.",
+  "worn_by": [
+    "surgeons",
+    "augmentation installers",
+    "forensic examiners"
+  ],
+  "manufacturer": "MedTech Solutions",
+  "price_range": "Φ180 per pair",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A forensic examiner wearing Precision Gloves discovers a texture pattern on a victim's skin that shouldn't be there — micro-branding invisible to the naked eye, spelling out a serial number."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 3",
+    "surgical",
+    "haptic",
+    "medical",
+    "single-use"
+  ]
+}

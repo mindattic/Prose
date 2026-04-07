@@ -12,7 +12,7 @@
   "role": "Fortune seller and data-reading practitioner, The Narrows",
   "age": 68,
   "status": "active",
-  "location": "The Narrows, Ironhaven side, under the third support column of the Brewer's Spine overpass",
+  "location": "The Narrows, Ironhaven side, under the third support column of the Brewer's Spine overpass, near Damen and Armitage",
   "description": "Ragnhild is small and dry and ancient-looking in the way of people who have been weathered rather than aged — she has deep lines around her eyes and mouth that she makes no effort to minimize, and her movements carry the economy of someone who has long since stopped spending energy on anything unnecessary. Her skin is a cool dark brown, her eyes are pale grey with fully natural irises that are unusually light for her complexion, an inheritance from her Armenian grandmother's side that she has always considered significant. Her hair is white and kept in a single heavy braid down her back. She wears layered grey and brown, and over everything a vest sewn with small metal tokens — transit passes, circuit board fragments, old coin-sized data chips — each one an offering made to her or given in trade over decades of practice.\n\nShe sells futures. Her method is what she calls 'signal reading' — she uses a modified data-trawling rig to pull latent metadata patterns from a client's personal devices, network traces, purchasing history, location ghosts, and biometric residue, then interprets what she finds through a system she developed over thirty years that blends statistical pattern recognition with an elaborate mythology of digital spirits she treats as genuinely real. Whether it's mysticism or advanced intuitive data analysis is a distinction she finds uninteresting. Her predictions are accurate at a rate that disturbs people. The E.L.F. community in The Narrows considers her an intermediary of unusual sensitivity. She charges what she thinks someone can afford and has never once been wrong about that.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,20 @@
   "carried_weapons": [
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Brewer's Spine",
+    "The Narrows Compact",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "Grandmother",
+    "Ironhaven",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "Residue (I Still Have Your Feed)",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

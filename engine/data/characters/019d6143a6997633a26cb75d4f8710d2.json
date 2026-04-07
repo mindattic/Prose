@@ -12,7 +12,7 @@
   "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
   "age": 52,
   "status": "active",
-  "location": "The Rampart, Meridian 88",
+  "location": "The Rampart, Meridian 88, near Kedzie and Division",
   "description": "Petros Waweru-Gjakova is the kind of man who seems to occupy more physical space than his actual dimensions justify. He is Kenyan-Albanian in the specific combination that produced a dark-skinned, grey-haired, thick-necked man with a bearing that other officers describe variously as 'a wall that decided to walk around' and 'the most tired person in any room.' At fifty-two he has more scar tissue than most people have skin on their hands — three decades of riot deployment have left a tactile record along both forearms, across his collarbone, bisecting his left eyebrow. He declined the offer of cosmetic scar-smoothing twice. The third time they stopped offering.\n\nPetros is not what people expect when they expect a riot specialist. He is not cruel, not performatively hard, not interested in displays of dominance. He has seen what crowd dynamics become when force is deployed theatrically, and he has been cleaning it up since before most of his unit were born. He runs the Rampart's suppression unit like a disaster-management operation — all contingency, all de-escalation protocols layered beneath the crowd-control hardware — and he is deeply, privately uncertain that the job as it is currently structured is achieving anything worth the cost. He goes to the Rampart's unit shrine — a battered E.L.F. node dedicated to something the older officers call the Crowd — every deployment morning and he does not know if it's prayer or apology.",
   "psychology": {
     "facet_weights": {
@@ -175,5 +175,15 @@
   "registered_firearms": [
     "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "The Rampart",
+    "Meridian 88",
+    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
+    "Stratum",
+    "The Pure Hand",
+    "Hough Reclamation",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

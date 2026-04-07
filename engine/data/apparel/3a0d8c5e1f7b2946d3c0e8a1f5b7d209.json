@@ -1,0 +1,40 @@
+{
+  "id": "3a0d8c5e1f7b2946d3c0e8a1f5b7d209",
+  "name": "Nullframe CivPass Anthropomorphic Layered Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A carefully constructed outfit of prosthetic-skin turtleneck, high-waisted wide-leg trousers, and a loose linen blazer — all chosen to obscure joint geometry and fill volumetrically around non-human proportions. The turtleneck is lined with a matte-finish synthskin layer that reduces the visual contrast of chassis seams at the neck. Shoes are platform-soled to bring height into human range. Every piece is ordinary; the effort to be ordinary is extraordinary.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "synthskin-lined knit turtleneck",
+    "linen blazer",
+    "wide-leg polyblend trousers",
+    "platform sole loafers",
+    "matte finish chassis tape"
+  ],
+  "functionality": "Volume-filling cut obscures non-human joint geometry; synthskin lining reduces chassis seam visibility at neck and wrists.",
+  "what_it_says": "There is nothing unusual about me. Please do not look closely.",
+  "worn_by": [
+    "synthetics attempting to pass as human",
+    "unregistered units navigating Tier 3 spaces",
+    "fugitive synthetics"
+  ],
+  "manufacturer": "Nullframe Design (various pieces), assembled by wearer",
+  "price_range": "Φ 320–Φ 600 (assembled)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The chassis tape at the wrists is beginning to peel — one wrong gesture in a public space and the illusion breaks.",
+    "A Tier 3 office worker has been sitting next to this synthetic for six months and never noticed; today something feels off."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "synthetic_adapted",
+    "passing",
+    "disguise",
+    "tier3",
+    "nullframe",
+    "stealth"
+  ]
+}

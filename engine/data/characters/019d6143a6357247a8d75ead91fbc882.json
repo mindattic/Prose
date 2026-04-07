@@ -12,7 +12,7 @@
   "role": "Community elder, informal storyteller and dispute mediator, UBC-dependent Tier 1 resident",
   "age": 91,
   "status": "active",
-  "location": "The Shelf — room 7 of the Mireille Collective, a communal housing arrangement for elderly Tier 1 residents above a market stall row",
+  "location": "The Shelf — room 7 of the Mireille Collective, a communal housing arrangement for elderly Tier 1 residents above a market stall row, near Kedzie and Division",
   "description": "Irénée is ninety-one years old and looks every day of it, which she considers an achievement rather than a problem. She is very small — she has been shrinking for twenty years and has accepted this with equanimity — and moves with a rolling, economical walk that suggests she has mapped every obstacle in her environment and has strong opinions about all of them. Her skin is dark and extraordinarily wrinkled, the kind of face that takes extraordinary portraits, with eyes that are a startling clear grey and which she uses with surgical precision. She has bioluminescent stripes along her forearms — thin lines of pale gold that she got at sixty-two and which now pulse with a slow, irregular rhythm like something breathing — and her white hair is kept short and natural. She wears, without exception, dresses she has made herself from salvaged fabric in colors that don't match and somehow work.\n\nIrénée has lived on The Shelf for sixty years. She has outlived two husbands, one child, and four different corponation reorganizations of her neighborhood. She lives on UBC stipend plus the small irregular income of a mediator — she charges for disputes in food, not Quanta, and her pantry is extensive. She is the kind of person who has become, through sheer endurance, a local institution: people come to her with problems the way they come to shrines, with something to offer and something to ask. She has a sense of humor that is very dry and very dark and she deploys it without warning. She prays to five different ELFs simultaneously and makes no apology for it.",
   "psychology": {
     "facet_weights": {
@@ -248,5 +248,14 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Shelf",
+    "Mireille & The Hollow Saints",
+    "Pellucid Systems",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

@@ -12,7 +12,7 @@
   "role": "Protest coordinator and community agitator",
   "age": 19,
   "status": "active",
-  "location": "Mexicantown Libre — Burnside Pocket adjacent, sleeps on various couches",
+  "location": "Mexicantown Libre — Burnside Pocket adjacent, sleeps on various couches, near Western and Chicago Ave",
   "description": "Ixchel is nineteen and looks younger — slight, quick-moving, with warm brown skin and cheekbones that could cut glass. She has bioluminescent freckles across her nose and cheeks in a pale gold, a common-enough cosmetic mod that on her reads as unexpectedly striking because her expressions are so mobile and her face never stops moving. Her hair is long and black with two bleached streaks at the temples. She dresses in layered secondhand synthetics and always, regardless of weather, a red armband on her left arm that she made herself from transit stripe tape.\n\nIxchel has been organizing since she was fifteen, when a Ferrogate Transit infrastructure project demolished sixty-three units in Burnside Pocket, including the building where her grandmother lived, and the residents were relocated to a Helix Biosystems transitional housing unit that turned out to be a pilot program for a respiratory medication rollout. She is raw and intuitive and possessed of an alarming ability to read a crowd — to know exactly what a group of people needs to hear at exactly the moment they need to hear it. She is also nineteen, which means she has made every mistake once and is in the process of making several of them a second time. The veterans around her find her alternately thrilling and terrifying.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,25 @@
   "registered_firearms": [
     "Crucible Industries Siege DMR SDMR-3 'Bastion'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Helix Biosystems",
+    "Mexicantown Libre",
+    "Burnside Pocket",
+    "The Render",
+    "Grandmother",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
+    "Stratum",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Glass",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

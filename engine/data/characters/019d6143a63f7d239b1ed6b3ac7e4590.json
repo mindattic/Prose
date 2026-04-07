@@ -12,7 +12,7 @@
   "role": "Social engineering and negotiation specialist — face",
   "age": 25,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
   "description": "Kamala Mori-Sefa is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 25, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a face out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKamala Mori-Sefa has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -278,5 +278,15 @@
   "registered_firearms": [
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Meridian Munitions Street PDW MSP-7 'Alleycat'"
-  ]
+  ],
+  "related_entities": [
+    "Adaptive Camouflage Skin",
+    "Masquerade",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Clover"
+  ],
+  "district": "Old Harbor"
 }

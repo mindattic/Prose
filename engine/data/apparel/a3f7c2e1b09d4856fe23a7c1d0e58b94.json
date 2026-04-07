@@ -1,0 +1,40 @@
+{
+  "id": "a3f7c2e1b09d4856fe23a7c1d0e58b94",
+  "name": "Coldseam Retired Spire Slummer's Shelf Day Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A bespoke Coldseam overcoat — once Φ4,000 worth of pressed wool-analog and chrome-thread piping — now patched at both elbows with Shelf-grade duct tape and re-hemmed with mismatched thread. Worn over a stained Tier 3 dress shirt with the collar button missing and synth-leather trousers gone gray at the knees. The shoes are still Caelum IX pressure-forms, which is the tell.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed wool-analog",
+    "chrome-thread piping",
+    "duct tape patches",
+    "synth-leather",
+    "pressure-form composite"
+  ],
+  "functionality": "Still structurally weatherproof despite damage; deep interior pockets retain their hidden lining compartments.",
+  "what_it_says": "Someone who fell very far, very fast — and still hasn't let go of who they were.",
+  "worn_by": [
+    "disgraced Spire executives",
+    "exiled corp loyalists",
+    "burned fixers with old money habits"
+  ],
+  "manufacturer": "Coldseam (original); Shelf repairs by unknown hands",
+  "price_range": "Φ40–80 secondhand (was Φ4,200 new)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The coat's interior lining still has an encrypted Spire access chip sewn into the hem — its owner doesn't know it still works.",
+    "Someone on the Shelf recognizes the chrome-thread piping pattern and knows exactly which corponation this person used to run."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "unique_character_look",
+    "tier1",
+    "fallen_elite",
+    "shelf",
+    "storytelling_piece",
+    "weathered_luxury"
+  ]
+}

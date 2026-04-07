@@ -12,7 +12,7 @@
   "role": "Union organizer and strike coordinator",
   "age": 27,
   "status": "active",
-  "location": "Dearborn Forge",
+  "location": "Dearborn Forge, near Damen and Armitage",
   "description": "Ysolde is wiry and kinetic, never quite still — they bounce a knee, tap a pattern on surfaces, turn a stylus through their fingers in endless loops. Their skin is medium brown, their eyes modified to shift through a slow amber-to-green cycle they bought on installment from a bodmod stall and haven't finished paying off. They keep their hair long and loose on days off and braided tight when they're working, and they have a small constellation of bioluminescent freckles across their nose and cheekbones that pulse faintly when they're excited or angry — which is most of the time.\n\nYsolde organizes Ferrogate Transit maintenance workers across three Dearborn Forge yards, in direct defiance of both Ferrogate's union-busting contractors and a faction within the official union that has grown comfortable with management. They're charismatic in the way of someone who has figured out exactly how to make you feel heard and then redirect that energy into collective action — they're not manipulative, exactly, but they are deliberate. They take risks that frighten older organizers. They also show up at 05:30 when someone's shift starts and stay until the last worker goes home.",
   "psychology": {
     "facet_weights": {
@@ -254,5 +254,14 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Dearborn Forge",
+    "Dredge Mining Collective",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus CK-5 'Bloodhound'"
+  ],
+  "district": "The Circuit"
 }

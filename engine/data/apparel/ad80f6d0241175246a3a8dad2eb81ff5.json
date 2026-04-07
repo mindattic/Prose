@@ -1,0 +1,36 @@
+{
+  "id": "ad80f6d0241175246a3a8dad2eb81ff5",
+  "name": "Prometheus Medical Post-Op Recovery Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A medical-grade base layer designed for post-surgical patients, with embedded drug-delivery patches at key recovery zones that release medication through the skin on a programmed schedule. The fabric is antimicrobial and the garment opens entirely along its left side for easy dressing without requiring the patient to raise their arms.\n\nIssued by clinics and hospitals as part of post-operative care packages. The drug-delivery system typically runs for 7-14 days before the patches are exhausted. Patients are expected to return the garment — most don't, and clinics budget for the loss.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "antimicrobial fabric",
+    "transdermal drug-delivery patches",
+    "side-opening design"
+  ],
+  "functionality": "Scheduled drug delivery, antimicrobial barrier, assisted dressing design",
+  "what_it_says": "You're healing from something significant and this garment is part of the prescription.",
+  "worn_by": [
+    "post-surgical patients",
+    "augmentation recovery",
+    "long-term medical care"
+  ],
+  "manufacturer": "Prometheus Medical",
+  "price_range": "Φ900 (usually included in surgical package)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Post-Op Recovery Layer's drug-delivery patches are found to contain a medication different from what was prescribed — someone switched the patches between the clinic and the patient."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 3",
+    "medical",
+    "post-operative",
+    "drug delivery",
+    "recovery"
+  ]
+}

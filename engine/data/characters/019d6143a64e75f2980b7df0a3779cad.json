@@ -13,7 +13,7 @@
   "role": "Unlicensed field medic and black-market organ broker",
   "age": 41,
   "status": "active",
-  "location": "The Shelf",
+  "location": "The Shelf, near Kedzie and Division",
   "description": "Luminița is a compact Romanian-Nigerian woman with deep umber skin, close-cropped silver-streaked hair she keeps pinned under a faded surgical cap, and the kind of posture that belongs to someone who has spent decades bent over improvised operating tables. Her face carries a particular asymmetry—her left eye is a pale gray-green inherited from her Romanian mother, while her right is a burnished amber prosthetic she fitted herself, ringed by a faint keloid scar she never bothered to smooth. She dresses in layered, practical clothing: a long waterproof duster over scrub-green thermals, the pockets of both bulging with tourniquets, folded sterile packaging, and small vials she organizes by color-coded tape. Her hands are her most striking feature—steady, deliberate, and crosshatched with old chemical burns from improvised sterilization methods she used before she could afford better.\n\nShe operates out of a converted shipping container deep in The Shelf's drainage sub-level she calls 'the Tub,' a space that somehow manages to be simultaneously filthy and surgically clean in all the ways that matter. The Tub is known to every street surgeon, fixer, and mid-tier runner in the district as the place you go when the wound is too complicated for a stim-patch and too illegal for a licensed clinic. Luminița charges on a sliding scale she calculates in her head with unsettling precision—wealthy clients subsidize the destitute, and she keeps mental ledgers of both debts owed and favors banked. She has been offered corporate contracts twice. She declined both without explanation.\n\nWhat most of her clients don't know is that the organ brokerage is not primarily about money. Luminița runs a quiet network she calls 'the Circuit of Parts'—sourcing, storing, and routing biological material to people who need transplants and can't access the licensed medical system, which in The Shelf means almost everyone. She navigates the razor's edge between predatory harvesting operations she despises and the genuine need that drives desperate people toward them. She has been known to destroy entire harvesting operations and then quietly reroute their inventory to her own waiting list. This makes her enemies in the black-market organ trade who are significantly better armed than she is.",
   "psychology": {
     "facet_weights": {
@@ -257,5 +257,22 @@
     "Street Custom 'Glass Garden' Caltrops",
     "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Unregistered",
+    "The Circuit",
+    "WELLSPRING",
+    "The Shelf",
+    "Vantablack-CNX",
+    "The Gradient Compact",
+    "Stratum",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Lazarus LX-2 'Lab Rat'",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

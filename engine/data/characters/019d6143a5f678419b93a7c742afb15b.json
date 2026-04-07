@@ -12,7 +12,7 @@
   "role": "Street pharmacist and unlicensed gene-cosmetic clinic operator",
   "age": 34,
   "status": "active",
-  "location": "The Laceworks, Ironvein",
+  "location": "The Laceworks, Ironvein, near Lincoln and Belmont",
   "description": "Dresdan is lean and precise-looking in the way that suggests either discipline or hunger — in his case it's mostly discipline, with hunger underneath. His skin is deep brown and he has voluntarily undergone a bioluminescent dermal treatment that makes his forearms and the sides of his neck glow a faint pulsing teal in low light — not Helix-certified work, his own. He keeps his hair short and wears a pair of magnifying optics on a headband that he pushes up when not in use, giving him a permanently slightly academic look. His hands are always impeccably clean. His fingernails are trimmed to the millimeter. He smells faintly of antiseptic and something floral he hasn't identified the source of.\n\nDresdan is not a doctor. He has never claimed to be. He is very careful about this. What he is, is someone who has read everything available about gene-cosmetic application, has practiced on himself for eight years, and has a 94% satisfaction rate among his returning clients. He operates out of a converted textile workshop in the Laceworks, curtained into sections, scrupulously clean. He sells regulated cosmetic mods at street prices and a curated selection of pharmaceutical compounds — mood stabilizers, pain management, focus enhancers — sourced from a supply chain he describes only as 'reliable.' He is proud of his work in the specific, anxious way of someone who knows that one bad batch could end everything.",
   "psychology": {
     "facet_weights": {
@@ -178,5 +178,13 @@
   "registered_firearms": [
     "Meridian Munitions Compact Rifle MCR-2 'Errand'",
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ]
+  ],
+  "related_entities": [
+    "The Laceworks",
+    "WELLSPRING",
+    "Ironvein",
+    "The Pure Hand",
+    "Nightlight"
+  ],
+  "district": "The Laceworks"
 }

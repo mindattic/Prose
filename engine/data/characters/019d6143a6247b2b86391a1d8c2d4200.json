@@ -12,7 +12,7 @@
   "role": "Infrastructure disruption and industrial sabotage — saboteur",
   "age": 23,
   "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
   "description": "Halima Gutierrez-Asante is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 23, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a saboteur out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nHalima Gutierrez-Asante operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,11 @@
   "carried_weapons": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

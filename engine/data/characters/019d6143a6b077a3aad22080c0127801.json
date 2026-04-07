@@ -12,7 +12,7 @@
   "role": "Bootleg fashion vendor and fake ID operator",
   "age": 29,
   "status": "active",
-  "location": "The Burnished Market, stall row 7, north face",
+  "location": "The Burnished Market, stall row 7, north face, near Armitage and Milwaukee",
   "description": "Renzo is long-limbed and restless, always in motion — adjusting a display, flipping a collar, draping a jacket on a passing stranger's shoulders to show them how it falls. His Polynesian-Polish heritage gives him a broad face and prominent cheekbones, and he's invested in geneware that makes his skin display faint bioluminescent patterns across his arms and neck: slow-shifting geometric shapes in blue-white that he programs seasonally. His hair is a towering installation in itself, grown long and restructured with color-shifting gel into something between a wave crest and a crown, currently cycling through sunset oranges.\n\nHe sells three things: replica high-fashion pieces indistinguishable from the real thing to anyone without a scanner, genuinely creative original clothing he designs himself at night, and — quietly, to the right people — fabricated identity documents that can fool mid-tier corponation scanners. He speaks about fashion with an almost religious reverence that's entirely sincere, and speaks about the IDs as if they don't exist. He's charming in the exhausting way of someone who has never been allowed to stop performing.",
   "psychology": {
     "facet_weights": {
@@ -246,5 +246,12 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Meridian Core",
+    "The Heritage Vault",
+    "Compass Rose"
+  ],
+  "district": "The Circuit"
 }

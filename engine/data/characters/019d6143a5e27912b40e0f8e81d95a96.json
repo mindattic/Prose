@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit rail operator, Deepwell Station line",
   "age": 34,
   "status": "active",
-  "location": "Deepwell Station, lower Blackpipe Corridor — lives in transit housing on Avon Curve",
+  "location": "Deepwell Station, lower Blackpipe Corridor — lives in transit housing on Avon Curve, near sub-level access near LaSalle and Congress",
   "description": "Danladi is lean and angular, with a long face, close-cropped hair, and the particular posture of someone who spends ten hours a day in a seated position in a tight cab: slightly hunched forward, neck perpetually stiff. His skin is a warm dark brown and he has a geneware mod — iridescent peacock-pattern irises — that he got done at nineteen when he had money for exactly one vanity thing and he chose to make it count. He keeps his fingernails very clean because the cab makes them filthy and cleanliness feels like the one thing he controls.\n\nDanladi is not an unhappy man, but he is a careful one. He has seen too many things go wrong in the tunnels — mechanical failures, platform incidents, the odd person who steps onto the rail on purpose — to be loose with his attention. Off the clock he is surprisingly funny in a dry, deadpan way, a collector of absurd overheard conversations which he logs in a personal audio journal he has kept for eleven years. He has mild, undiagnosed tunnel fatigue — a known occupational condition among long-haul transit operators — which manifests as a need for open-sky time and a deep, inarticulate dread of any room without a visible exit.",
   "psychology": {
     "facet_weights": {
@@ -184,5 +184,17 @@
   "registered_firearms": [
     "Arcturus Defense Solutions AR-7 'Mandate'",
     "Crucible Industries Viper Mk.III 'Copperhead'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Blackpipe Corridor",
+    "Deepwell Station",
+    "Avon Curve",
+    "Timekeeper",
+    "Ringo Heavy Transit MagRail Levitation Transport Network",
+    "Bathysphere Networks",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech IrisBloom Ocular Color Modulator"
+  ],
+  "district": "The Underworld"
 }

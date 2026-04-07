@@ -12,7 +12,7 @@
   "role": "Childcare worker and informal neighborhood guardian, unlicensed daycare",
   "age": 61,
   "status": "active",
-  "location": "The Shelf, specifically a three-room apartment on the fourth floor of the Grainfort residential block, converted into a childcare space",
+  "location": "The Shelf, specifically a three-room apartment on the fourth floor of the Grainfort residential block, converted into a childcare space, near Ashland and Chicago Ave",
   "description": "Amara is a small, stout woman with ash-brown skin deep-lined around the eyes from decades of squinting at children doing inadvisable things and deciding whether to intervene. Her hair is natural white and worn long, usually braided and pinned with whatever was nearest — a pen, a plastic building toy, once a small drone component that a child left in the common area. She has no geneware or significant augmentation, which at sixty-one in Meridian 88 marks her as either principled or broke, and the answer is both.\n\nShe has been running what the city officially classifies as an unlicensed informal childcare collective for twenty-two years. She calls it 'the flat.' At any given hour between 0600 and 1900 there are between four and fourteen children in it of varying ages, whose parents range from Tier 1 families paying her in food and labor to a handful of Tier 2 parents who pay in Quanta and to whom she is visibly warmer because she can be honest with them about money. She is the kind of person around whom children arrange themselves naturally, like iron filings around a magnet, and who has had exactly enough of everyone's nonsense for twenty-two years and continues anyway.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,14 @@
   ],
   "registered_firearms": [
     "Crucible Industries Titan-500 'Earthquake'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "NeuralPath Horizon Standard Neural Mesh",
+    "Grainfort",
+    "The Shelf",
+    "Tessera Corponation",
+    "Iron"
+  ],
+  "district": "The Shelf"
 }

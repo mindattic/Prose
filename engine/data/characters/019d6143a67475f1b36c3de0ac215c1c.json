@@ -12,7 +12,7 @@
   "role": "Street orphan and gang prospect (junior errand runner for the Copperhead Cuts), Tier 1",
   "age": 12,
   "status": "active",
-  "location": "Copperhead",
+  "location": "Copperhead, near Fullerton and Damen",
   "description": "Obasi is twelve going on thirty-five, with the calculating eyes of someone who has been studying people for survival since he was old enough to read danger in a posture. He is slight and quick, with close-cropped hair he keeps tight because loose hair catches in the machinery of the Copperhead alleys. His skin is very dark with a reddish undertone, his nose his Malawian grandmother's, his mouth his Portuguese grandfather's — a wide, expressive mouth he has learned to keep still. He has one cosmetic modification: cat ears, pale gold, that a Cuts lieutenant gave him eight months ago as a mark of favor. He knows they are a leash as much as an ornament. He wears them anyway.\n\nObasi runs errands for the Copperhead Cuts — nothing criminal yet, carefully not yet, because the Cuts' local lieutenant Somebody-Somebody has a rule about under-fourteens and what they carry. Obasi fetches food, delivers verbal messages, watches corners and whistles a particular pattern if Ferrogate Transit enforcers appear. He is saving every coin he does not spend on food, for a reason he has not told anyone. He is smarter than almost everyone around him gives him credit for, and he knows this, and has decided that being underestimated is a resource.",
   "psychology": {
     "facet_weights": {
@@ -161,5 +161,17 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Copperhead",
+    "Grandmother",
+    "The CEO",
+    "Axiom Systems Cortical Bomb CB-1 'Leash'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

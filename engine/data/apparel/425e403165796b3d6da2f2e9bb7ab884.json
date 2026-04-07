@@ -1,0 +1,36 @@
+{
+  "id": "425e403165796b3d6da2f2e9bb7ab884",
+  "name": "Helion Manufacturing ESD-Safe Assembly Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Thin, form-fitting gloves designed for handling sensitive electronic components without risking electrostatic discharge damage. The fabric is a carbon-fiber weave that continuously bleeds static charge to a grounding strip at the wrist. Fingertips are coated in anti-slip micro-texture for component handling.\n\nStandard equipment in electronics manufacturing, augmentation repair, and any environment where a static spark could destroy components worth more than the worker's monthly pay.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "carbon-fiber weave",
+    "grounding strip",
+    "anti-slip fingertip coating"
+  ],
+  "functionality": "Continuous static dissipation, component-safe handling, anti-slip grip",
+  "what_it_says": "The things you handle are worth more than you are, and everyone involved knows it.",
+  "worn_by": [
+    "electronics assemblers",
+    "augmentation technicians",
+    "component handlers"
+  ],
+  "manufacturer": "Helion Manufacturing",
+  "price_range": "Φ65",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An entire production line's ESD gloves test positive for a conductive contaminant — someone sabotaged the gloves to cause static damage to every component the workers touched."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 2",
+    "ESD-safe",
+    "electronics",
+    "assembly",
+    "technical"
+  ]
+}

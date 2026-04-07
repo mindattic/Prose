@@ -12,7 +12,7 @@
   "role": "Black market pharmaceutical dealer and street pharmacist — meds, supplements, unscheduled compounds",
   "age": 24,
   "status": "active",
-  "location": "The Narrows, Blackpipe Corridor",
+  "location": "The Narrows, Blackpipe Corridor, near Fullerton and Damen",
   "description": "Zuberi is young enough that it still shows — there's a looseness to him, an unresolved quality, like something that hasn't quite hardened into its final shape. He is tall, lean, with the dark skin and angular jaw of his Tanzanian grandfather and his Filipino grandmother's round cheeks, a combination that makes him look younger than he is and which he has mostly given up being frustrated about. His ears are tipped with small black cat-ear points — geneware done in a parlor on a dare when he was nineteen, which he now can't imagine removing. He keeps his hair mid-length and loose, usually damp, because he is always running slightly late.\n\nHe operates from three locations in rotation — a corner in the Narrows, a back table in a noodle shop in Blackpipe Corridor, and a patch near the old water reclamation junction on the Corridor's south end — and keeps no fixed stall because fixed stalls have fixed addresses. He knows more about pharmacology than most licensed clinicians, taught himself from pirated Helix Biosystems training modules and a mentor who has since retired. He is genuinely trying to help people who cannot afford clinical pricing — and he is also genuinely dealing recreational compounds for profit — and he holds both of these truths without significant cognitive dissonance, which either speaks to moral flexibility or a realistic understanding of how survival works.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,18 @@
     "Meridian Munitions Snapper-22 'Cricket'",
     "Street Custom 'Rebar Rose' Improvised Spike Mace"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Helix Biosystems",
+    "Meridian 88",
+    "The Narrows Compact",
+    "The Reclamation Assembly",
+    "The CEO",
+    "Grandmother",
+    "Aslan Vasquez-Chatterjee",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

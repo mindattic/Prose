@@ -12,7 +12,7 @@
   "role": "identity fabricator and document forger",
   "age": 44,
   "status": "active",
-  "location": "Gravesend Basin, sublevel print shop behind a legitimate copy-and-bind front",
+  "location": "Gravesend Basin, sublevel print shop behind a legitimate copy-and-bind front, near sub-level access near State and Van Buren",
   "description": "Dzintars is a lean, deliberate man with Baltic-pale skin running to amber at the hands and forearms from decades of chemical exposure, and the deep-set eyes of someone who has spent a lifetime examining tiny details under magnification. His hair is a close-cropped salt-and-pepper, and he keeps a neat mustache that his Ghanaian grandmother's photographs suggest he borrowed from a great-uncle. His fingers are his most distinctive feature — long, ink-stained, extraordinarily precise, the nails trimmed to the millimeter. He wears an optical monocle implant in his left eye with three selectable magnification tiers, and his right forearm has a subdermal haptic printer interface that lets him test embossing patterns against his own skin before committing to substrate.\n\nDzintars is professorial and unhurried in a way that unnerves people who come to him in desperation. He will make tea. He will ask about your grandmother. He will explain, in exhausting and genuine detail, why the Tessera holographic threading changed in 2197 and why that matters to you. He is not cruel but he is expensive, and he holds himself to a craftsman's code that he treats with religious seriousness — a bad document is a sin, a sloppy document is an insult, and a client who tries to skip payment will discover that the backup copies he quietly retains of every fabricated identity can become extremely inconvenient.",
   "psychology": {
     "facet_weights": {
@@ -254,5 +254,17 @@
   "registered_firearms": [
     "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
     "Meridian Munitions Peacekeeper-45 'Old Faithful'"
-  ]
+  ],
+  "related_entities": [
+    "Gravesend Basin",
+    "Grandmother",
+    "Umbraline PhoneShell PS-X 'Last Call'",
+    "Bathysphere Networks",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "The Coffin Nails",
+    "The Pale Mile"
+  ],
+  "district": "The Underworld"
 }

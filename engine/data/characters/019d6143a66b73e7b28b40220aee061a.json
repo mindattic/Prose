@@ -12,7 +12,7 @@
   "role": "Covert entry and social penetration specialist — infiltrator",
   "age": 32,
   "status": "active",
-  "location": "The Circuit — neon-lit entertainment and vice district",
+  "location": "The Circuit — neon-lit entertainment and vice district, near Milwaukee and Damen",
   "description": "Nneka Sjostrom-Kwarteng is compact and densely muscled, built low to the ground like something designed to survive impacts. At 32, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a infiltrator out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Nneka Sjostrom-Kwarteng agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,12 @@
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Circuit",
+    "The Gradient Compact",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

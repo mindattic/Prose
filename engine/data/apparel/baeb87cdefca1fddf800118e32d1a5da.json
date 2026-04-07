@@ -1,0 +1,36 @@
+{
+  "id": "baeb87cdefca1fddf800118e32d1a5da",
+  "name": "Neon Drift Rave Harness",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A body harness made from electroluminescent strips that pulse in sync with ambient music through an integrated beat-detection module. The harness wraps the torso, shoulders, and arms in geometric patterns that glow in programmable colors. A small controller on the hip lets the wearer switch between reactive modes — beat-sync, color cycle, breathing pulse, and static.\n\nThe uniform of Meridian 88's underground rave culture, where abandoned industrial spaces become temporary temples of sound and light. The harness identifies the wearer as part of the scene — someone who knows where the events are and how to get in.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "electroluminescent strips",
+    "beat-detection module",
+    "flexible harness webbing"
+  ],
+  "functionality": "Music-reactive lighting, programmable color display, beat synchronization",
+  "what_it_says": "You dance in places that don't officially exist, and your body is part of the light show.",
+  "worn_by": [
+    "ravers",
+    "underground music scene",
+    "club culture"
+  ],
+  "manufacturer": "Neon Drift",
+  "price_range": "Φ320",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Rave Harness found at an abandoned event site is still pulsing to a beat — but there's no music playing, and the beat-detection module is responding to a frequency below human hearing."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "tier 2",
+    "rave",
+    "electroluminescent",
+    "underground",
+    "music"
+  ]
+}

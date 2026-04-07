@@ -1,0 +1,36 @@
+{
+  "id": "151398c46c7a9c322d8591d70028b87c",
+  "name": "Apex Dynamics Grip-Lock Climbing Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Climbing gloves with micro-suction pads on the palm and fingertips that activate on pressure, providing gecko-like adhesion to smooth surfaces. The grip engages only during a firm press and releases cleanly during normal hand movement. The back of the hand is flexible mesh for ventilation.\n\nOriginally developed for maintenance crews working on Spire exterior surfaces, the Grip-Locks have become essential equipment for runners who move vertically through Meridian 88's layered architecture.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "micro-suction pads",
+    "flexible mesh backing",
+    "pressure-activated adhesion surface"
+  ],
+  "functionality": "Gecko-adhesion climbing, pressure-activated grip, clean release",
+  "what_it_says": "Walls are just floors that haven't been turned sideways yet.",
+  "worn_by": [
+    "runners",
+    "maintenance crews",
+    "infiltrators"
+  ],
+  "manufacturer": "Apex Dynamics",
+  "price_range": "Φ560",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A set of Grip-Lock gloves found on a rooftop show adhesion residue patterns suggesting their wearer climbed a surface that doesn't exist on any building plan — a wall that was added and then removed."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 2",
+    "climbing",
+    "gecko-grip",
+    "runner",
+    "infiltration"
+  ]
+}

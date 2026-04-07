@@ -12,7 +12,7 @@
   "role": "Sound sculptor and DJ",
   "age": 62,
   "status": "active",
-  "location": "The Ferment Quarter, permanent residency above a venue called The Sump",
+  "location": "The Ferment Quarter, permanent residency above a venue called The Sump, near North Ave and Milwaukee",
   "description": "Gbemi is sixty-two and looks it without apology — her face is deeply lined from years of working in smoky underground spaces, her natural hair gone fully silver and kept in long locs that brush her shoulder blades and are threaded with small ceramic beads she's collected from forty years of touring. She is a large woman with a large physical presence and the extraordinary stillness of someone who has learned that stillness is its own kind of power. Her only augmentation is a set of cochlear audio enhancers she got at thirty-five when early hearing loss threatened to end her career; she treats them with the same maintenance religiosity a surgeon gives their instruments.\n\nShe was a significant figure in the Meridian 88 underground sound scene in the 2170s and is now something the scene has very complicated feelings about: a legend who is still alive, still working, and not particularly interested in being a legend. Her sound sculptures are physical installations — transducer arrays that make space itself vibrate, music that you feel in your sternum before your ears register it. Her DJ sets are rarer now, maybe four or five a year, but the room fills six hours before doors for each one. She has seen the scene reinvent itself four times and has opinions about all of it.",
   "psychology": {
     "facet_weights": {
@@ -216,5 +216,16 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "The Ferment Quarter",
+    "Meridian 88",
+    "Periscope",
+    "The Quiet Room",
+    "South Deering Sump",
+    "Switchblade Alley",
+    "Silver",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Circuit"
 }

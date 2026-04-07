@@ -12,7 +12,7 @@
   "role": "Information trader and intelligence analyst — broker",
   "age": 29,
   "status": "active",
-  "location": "The Overhang — residential shelves built onto megastructure exteriors",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
   "description": "Somadina Baranov-Fosu is compact and densely muscled, built low to the ground like something designed to survive impacts. At 29, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a broker out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Somadina Baranov-Fosu is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,17 @@
   "carried_weapons": [
     "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Adaptive Camouflage Skin",
+    "Masquerade",
+    "Ironveil Canopy",
+    "Meridian 88",
+    "The Shelf",
+    "The Gradient Compact",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

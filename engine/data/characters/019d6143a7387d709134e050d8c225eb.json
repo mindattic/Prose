@@ -12,7 +12,7 @@
   "role": "Death midwife and threshold ritualist",
   "age": 38,
   "status": "active",
-  "location": "Irkalla, in a small rented room above a medical recycling depot on the district's outer ring",
+  "location": "Irkalla, in a small rented room above a medical recycling depot on the district's outer ring, near Pulaski and Chicago Ave",
   "description": "Zola Nkemezi-Faalogo chose her neighborhood because of what its name means, which is everything you need to know about how she approaches her work. She is a medium-height woman with natural hair that she keeps wrapped in white cloth during active work — white for threshold, she says, not for any religion specifically, though she moves through many of them with easy fluency. Her skin is blue-black and very clear. She has a retractable claw mod on her left hand only, three claws, which she got not for any practical reason but because a dying man she sat with once said he could see something animal in her and she decided to honor the observation. They are silver and she keeps them very sharp.\n\nDeath midwifery in Meridian 88 exists in a complicated legal gray space — it is not medical practice, not counseling, not clergy work, though it borrows from all three. Zola's practice is to be present. She sits with the dying, prepares the room according to whatever tradition the dying person follows or once followed, helps families understand what they are watching so it is not only terror, and afterward conducts whatever threshold ritual the family needs to feel that something has been marked. She has sat with Tier 1 deaths in Irkalla where the family had no money and she accepted nothing, and she has been called into Grosse Pointe Enclosure twice for clients who paid her very well and whom she found no more or less deserving of a good death.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,19 @@
   "carried_weapons": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grosse Pointe Enclosure",
+    "Aurochs Medical Complex",
+    "The Threshold",
+    "Meridian 88",
+    "The Iron Lotus",
+    "Threshold",
+    "The Quiet Room",
+    "Chrome Don't Cry (It Conducts)",
+    "Irkalla",
+    "Pellucid Systems",
+    "Silver"
+  ],
+  "district": "The Shelf"
 }

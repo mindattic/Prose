@@ -12,7 +12,7 @@
   "role": "Noodle cart vendor, Geartown morning market strip",
   "age": 38,
   "status": "active",
-  "location": "Geartown — operates her cart at the corner of Smelter's Passage and the main Geartown transit underpass, 05:30 to 14:00",
+  "location": "Geartown — operates her cart at the corner of Smelter's Passage and the main Geartown transit underpass, 05:30 to 14:00, near North Ave and Milwaukee",
   "description": "Benedita is a solid, energetic woman who smells permanently of star anise and chili oil, a fact she considers an asset. Her skin is warm dark brown, her hair dyed a shifting copper-red that she touches up every three weeks with geneware dye she dilutes to stretch the bottle. She has a cat tail — rust-orange, thick, and expressive — that she got at nineteen during what she describes as 'a phase that became a personality.' It is genuinely expressive: anyone who knows her can read her mood from it before she's opened her mouth. She runs her cart with the systematic ferocity of someone who has learned that every Quanta counts, and she has optimized her workflow to a degree that would impress an industrial engineer.\n\nShe is loud, warm, and mercilessly funny, the kind of person who remembers your order and your name and your mother's name and will ask after all three. She extends credit to regulars who are short at the end of the month and maintains a running mental ledger that she rarely actually collects on. Her noodles are genuinely excellent — a recipe that is a fusion of her grandmother's Turkish-inflected broth technique and a Ghanaian pepper base she learned from the previous cart owner — and this is not incidental to her identity. She is aware that she is feeding people who cannot afford to eat otherwise and takes this seriously without making anyone feel it.",
   "psychology": {
     "facet_weights": {
@@ -200,5 +200,17 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ]
+  ],
+  "related_entities": [
+    "Grandmother",
+    "Geartown",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Thermite Cavity Disbursement Shell TCDS-3",
+    "Adaeze Chen-Hawkins",
+    "Copper",
+    "Celeste Abram",
+    "Rust"
+  ],
+  "district": "The Circuit"
 }

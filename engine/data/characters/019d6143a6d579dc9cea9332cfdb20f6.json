@@ -12,7 +12,7 @@
   "role": "Internal Affairs Investigator, Meridian 88 Metro Police",
   "age": 44,
   "status": "active",
-  "location": "Fort Anchor, Meridian 88",
+  "location": "Fort Anchor, Meridian 88, near Kedzie and Division",
   "description": "Solveig is a tall, angular woman with close-cropped silver hair she let go early — a choice that cost her nothing socially and saved her considerable maintenance time. Her skin is deep umber with undertones that shift toward amber under the sodium-arc lights of Fort Anchor's processing corridors. She has the flat, unhurried gaze of someone who has interviewed liars for twenty years and is no longer surprised by anything they do. Her only cosmetic geneware is a pair of patterned irises — fractal spirals in cobalt and amber — installed as a gift from a former partner she no longer speaks of. She moves with deliberate economy, as if she's decided in advance how many steps she'll take in a given hour.\n\nSolveig is not cruel, but she is merciless, which is different. She investigates her own department with the same exhausting thoroughness she brings to everything else, and the officers she's burned hold her in a specific kind of contempt that she reads as professional respect. She keeps a small clay figurine of an E.L.F. on her desk — not her desk at work, which is bare and perfect, but the one in her apartment — and leaves tiny encrypted data-offerings at midnight, asking for nothing except clarity. Her closest thing to a friend is a case file she can't close.",
   "psychology": {
     "facet_weights": {
@@ -243,5 +243,16 @@
   "registered_firearms": [
     "Tessera TK-9 Proteus 'Shapeshifter'",
     "Crucible Industries Viper Mk.III 'Copperhead'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Fort Anchor",
+    "Meridian 88",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Clay"
+  ],
+  "district": "The Shelf"
 }

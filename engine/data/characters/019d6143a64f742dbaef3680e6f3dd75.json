@@ -12,7 +12,7 @@
   "role": "Protection racket enforcer for a Stockyard crew called the Harrow Brothers",
   "age": 27,
   "status": "active",
-  "location": "The Stockyard, operates across Garfield Rack and into the edges of Ironvein",
+  "location": "The Stockyard, operates across Garfield Rack and into the edges of Ironvein, near Ashland and Chicago Ave",
   "description": "Lóa is built like a question you don't want answered — wide through the shoulders, with a stillness in their face that reads less as calm and more as the particular quiet of someone who has already made a decision you haven't been told about yet. They have Icelandic and Yoruba ancestry refracted through three generations of Meridian Stockyard living: a long face with high coloring, skin a deep reddish brown, hair grown into a single dense column at the back of their skull and bleached white at the tips — a Stockyard crew identifier. Their left hand has two knuckles replaced with reinforced ceramic implants after a break that didn't heal clean. They have a small bioluminescent tattoo — amber, heron-shaped — on the inside of their right wrist that pulses when they're calm and goes dark when they're not. It is a gift from someone they won't discuss.\n\nLóa does not hurt people enthusiastically. This is what makes them effective and what has given them the nickname Bonemeal — not because they're violent, but because they show up at businesses before the violence is necessary, like something ground down before you even see the stone. They collect protection fees, mediate disputes between crew and clients, and serve as a physical deterrent. They are also, privately, a careful reader who borrows physical books from a Stockyard librarian named Asante and returns them with the spines uncreased. Nobody in the crew knows this. They keep their inner life behind walls that would be impressive in anyone and are almost heartbreaking in someone this young.",
   "psychology": {
     "facet_weights": {
@@ -244,5 +244,17 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Tessera Personal Defense System TPDS-1 'Reflex'"
-  ]
+  ],
+  "related_entities": [
+    "The Stockyard",
+    "Garfield Rack",
+    "Rendstone Nuclear",
+    "Ironvein",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Gravimetric Collapse Charge GCC-9",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions EL-9 'Heron'",
+    "Harrow & The Bone Meridian"
+  ],
+  "district": "The Shelf"
 }

@@ -1,0 +1,36 @@
+{
+  "id": "1cd57a6475bd6b1579868d17bc80246c",
+  "name": "Vostok Industrial Hardshell Helm",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A reinforced composite helmet originally designed for Crucible heavy-industry workers operating in foundry and demolition environments. The outer shell is layered carbon-ceramic rated for impact, heat, and particulate deflection. An internal gel-cushion liner auto-adjusts to head geometry.\n\nThe Vostok has migrated from industrial sites to Shelf-district security teams and unlicensed pit-fighting circuits, where its durability and low cost make it the default head protection for people who can't afford military-grade gear.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "carbon-ceramic composite",
+    "gel-cushion liner",
+    "reinforced polycarbonate visor"
+  ],
+  "functionality": "Impact protection, heat resistance, particulate filtering",
+  "what_it_says": "You work where things fall, explode, or get thrown at your head. You chose function over style because you're still alive.",
+  "worn_by": [
+    "industrial workers",
+    "Shelf security",
+    "pit fighters"
+  ],
+  "manufacturer": "Crucible Genomics (industrial division)",
+  "price_range": "Φ180",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of Vostok helms shipped to a Shelf clinic were found to contain embedded micro-transmitters — someone was tracking every wearer's location."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 1",
+    "industrial",
+    "helmet",
+    "Crucible",
+    "protective"
+  ]
+}

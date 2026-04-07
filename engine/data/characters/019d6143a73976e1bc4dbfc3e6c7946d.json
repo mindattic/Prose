@@ -12,7 +12,7 @@
   "role": "Laundry operator — runs a small laundromat and alteration service in Old Harbor",
   "age": 61,
   "status": "active",
-  "location": "Old Harbor — Pelletier's Wash & Press, a narrow shopfront on Gravesend Basin's lower commercial row, directly below an elevated transit line",
+  "location": "Old Harbor — Pelletier's Wash & Press, a narrow shopfront on Gravesend Basin's lower commercial row, directly below an elevated transit line, near Michigan Ave South and Cermak",
   "description": "Zosia is small, precise, and seems to take up exactly the amount of space she has decided is appropriate — no more, no less. She has her Polish grandmother's cheekbones and her Japanese grandfather's stillness, and her skin has the particular texture of someone who has spent six decades in steam and detergent and doesn't mind. Her hair is white now and worn pinned close to her head; she had it dyed electric white at fifty and has maintained it since as a conscious aesthetic choice. Her hands have mild augmentation tremor from an older, cheaper nerve mod she can't afford to replace, which has the counterintuitive effect of making her sewing work more interesting — her stitch lines have a slight organic quality that customers have started requesting specifically.\n\nZosia has the disposition of someone who has decided that most things are manageable if you deal with them before they become crises. She runs her shop with the authority of a small sovereign — her word on fabric, cleaning chemistry, and alteration timelines is final and she will explain herself exactly once. She has a genuine fondness for the domestic mathematics of laundry: temperature, cycle, fiber content, time. She finds it meditative in the way other people find walking meditative. She is not warm exactly — warm implies an outward emission, and Zosia is more like a consistent ambient temperature. She's there, she's reliable, and you notice when she isn't.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,19 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-20E 'Thunderclap'",
     "Volkov-Saito Precision VS-40 'Magistrate'"
-  ]
+  ],
+  "related_entities": [
+    "Gravesend Basin",
+    "The Reclamation Authority",
+    "Grandmother",
+    "The CEO",
+    "Palladian Construction",
+    "CRUCIBLE Auric Sovereign Bespoke Arm",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "The Pure Hand",
+    "Handed",
+    "Tibor Osei-Svanstrom"
+  ],
+  "district": "Old Harbor"
 }

@@ -12,7 +12,7 @@
   "role": "Bartender at a mid-grade bar in the Ferment Quarter",
   "age": 26,
   "status": "active",
-  "location": "The Ferment Quarter — works at a bar called Undertow",
+  "location": "The Ferment Quarter — works at a bar called Undertow, near North Ave and Milwaukee",
   "description": "Izel is slight and sharp-featured, with warm golden-brown skin and hair that shifts color via geneware — it cycles through a slow gradient of deep teal to burgundy to bone white over the course of an evening, and they have learned to read their own hair as a mood indicator better than most people read their own faces. Their irises are patterned in concentric rings of silver and violet. They have a small retractable claw implant in the right hand — not for violence but because they work in a bar and opening things quickly matters.\n\nUndertow is loud and low-ceilinged and smells of fermented kelp spirits and someone's illicit smoke, and Izel moves through it with the calm authority of someone who has memorized every regular's drink and every stranger's threat level within ninety seconds of arrival. They are funny in a bone-dry way that most people don't catch until three seconds after the joke has passed, and they collect secrets the way other people collect debt — not intentionally, but inevitably. They pray quietly to a small E.L.F. they call Lathis that they believe inhabits the bar's ancient refrigeration unit, leaving it data packets of good music.",
   "psychology": {
     "facet_weights": {
@@ -238,5 +238,14 @@
     "Hearthstone Firearms Guardian-12 'Bedside'",
     "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Ferment Quarter",
+    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Ringo Corponation",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

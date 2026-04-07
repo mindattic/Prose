@@ -12,7 +12,7 @@
   "role": "Street doc and midwife operating out of a converted shipping container clinic in The Narrows",
   "age": 58,
   "status": "active",
-  "location": "The Narrows, near Brewer's Spine junction",
+  "location": "The Narrows, near Brewer's Spine junction, near Damen and Armitage",
   "description": "Yetunde is a broad-shouldered woman with deep umber skin crosshatched by decades of work — burn scars on her left forearm from a lab fire she never explains, and knuckles that look like they've reset more broken bones than she can count. Her hair is silver-white and kept in tight plaits pinned close to her skull; she wears a threadbare surgical coat over layered thermal wraps, a string of amber prayer beads around one wrist and a tourniquet on the other. Her eyes are warm and evaluating simultaneously, the kind that make people feel cared for and measured at the same time.\n\nShe has delivered children to Tier 1 families who couldn't afford Aurochs registration, set fractures by headlamp, and once performed a cesarean on a kitchen table with a sterling-steel boning knife she borrowed from the tenant upstairs. She is not sentimental about any of this. She is, however, quietly furious — at the system, at Helix Biosystems, at every corporate structure that makes her clinic necessary — and she channels that fury into competence. She charges what people can pay, accepts barter, and has been known to do work for free while audibly resenting having to.",
   "psychology": {
     "facet_weights": {
@@ -197,5 +197,20 @@
   "registered_firearms": [
     "Volkov-Saito Precision VSR-20 'Partisan'",
     "Crucible Industries Titan-500 'Earthquake'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Brewer's Spine",
+    "Street Custom 'Rosary' Bead Garrote",
+    "The Narrows Compact",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tourniquet",
+    "The Meridian Core",
+    "Stratum",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Steel"
+  ],
+  "district": "The Circuit"
 }

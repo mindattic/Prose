@@ -12,7 +12,7 @@
   "role": "Electronic and physical observation expert — surveillance specialist",
   "age": 45,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
   "description": "Pare Hayashi-Amankwah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 45, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Pare Hayashi-Amankwah plans to keep it that way. She works as a surveillance specialist out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nPare Hayashi-Amankwah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,13 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Street-Custom Loaded Pipe 'Bell Ringer'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Nearfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Clover"
+  ],
+  "district": "Old Harbor"
 }

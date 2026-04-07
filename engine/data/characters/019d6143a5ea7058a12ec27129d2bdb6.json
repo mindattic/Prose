@@ -12,7 +12,7 @@
   "role": "Loan shark and bookmaker operating a numbers game in the Narrows",
   "age": 52,
   "status": "active",
-  "location": "The Narrows — runs his business from a rotating set of tea houses and noodle stalls in the Burnside Pocket neighborhood",
+  "location": "The Narrows — runs his business from a rotating set of tea houses and noodle stalls in the Burnside Pocket neighborhood, near Damen and Armitage",
   "description": "Dayo is a large man running toward fat but not there yet, with a warm brown complexion, a magnificent graying mustache he waxes into points, and the kind of patient, heavy-lidded expression that could mean he's bored or that he's calculating what you're worth in pieces. He has a geneware modification he got in his thirties — his irises shift between deep amber and a vivid green-gold depending on his mood, which he claims is useful for business ('People watch my eyes. They miss my hands.'). He favors well-made but not flashy clothing: real fabric, subtle patterns, shoes that are always clean. He smells of cardamom and whatever tea he's most recently finished.\n\nDayo came up through the numbers game as a runner himself, at sixteen, and has never romanticized it. He is pleasant in the specific way of people who have learned that pleasant is more effective than threatening for roughly eighty percent of interactions, and who have made peace with the other twenty percent. He is genuinely fond of his regulars — he knows their families, their ailments, their lucky numbers — and this fondness does not prevent him from collecting. He has two enforcers he treats well and pays generously, and he refers to them as 'my associates' with the mild pride of a man who considers proper staffing a virtue.",
   "psychology": {
     "facet_weights": {
@@ -233,5 +233,19 @@
   ],
   "registered_firearms": [
     "Tessera TK-11 Specter 'Whisper'"
-  ]
+  ],
+  "related_entities": [
+    "Burnside Pocket",
+    "The Render",
+    "The Narrows Compact",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Lazarus LX-2 'Lab Rat'",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Clover",
+    "Gold"
+  ],
+  "district": "The Circuit"
 }

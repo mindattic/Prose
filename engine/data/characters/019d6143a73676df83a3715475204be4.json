@@ -13,7 +13,7 @@
   "role": "Corporate elite — Senior Behavioral Architect, Spire-level social engineering and mass psychology division",
   "age": 44,
   "status": "active",
-  "location": "The Spire",
+  "location": "The Spire, near Michigan Ave and Chicago Ave",
   "description": "Zinnia Achterberg-Nwosu is the kind of beautiful that reads immediately as weaponized, which is both accurate and a cover for the more interesting weapon underneath. She is tall, dark-skinned, with natural hair she wears in elaborate architectural arrangements that change with each public appearance — a performance of self-invention she finds genuinely amusing. Her apartment in The Spire is on a floor most Spire residents don't know exists. Her official title is 'Senior Behavioral Architect' at Helion-Vantage Group's Social Coherence Division, which is a corporate euphemism for the team that designs the psychological infrastructure of Meridian 88 — the ambient media, the incentive structures, the carefully modeled emotional landscapes that keep the lower districts productive, the upper districts compliant, and everyone sufficiently distracted from the seams.\n\nShe is, by any honest accounting, extraordinarily good at her job, and she came to it through a path that her current colleagues would find disqualifying if they knew it: she spent her twenties as an activist and propagandist for a lower-district mutual aid network, designing counter-messaging against exactly the kind of systems she now builds. She was recruited not despite this history but because of it — someone at Helion-Vantage recognized that the best architect of a cage is someone who has studied how to pick the lock. She accepted the offer during a period of personal collapse that she has since reframed as a pragmatic pivot and has not fully reframed as anything.\n\nThe dissonance has not resolved. It has instead become the engine of a private project she runs in the margins of her official work: small, precise, nearly undetectable perturbations in the systems she designs — micro-adjustments to incentive models, subtle framings in ambient media that open rather than close cognitive space, changes so minor that no single one could be identified as sabotage. She thinks of this as harm reduction. She thinks of it as paying a debt. She has not decided whether it makes her a traitor, a hypocrite, or the most effective resistance operative in the city.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,18 @@
   ],
   "registered_firearms": [
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Spire",
+    "ARCHITECT",
+    "ShieldTech CLA-3 'Cascade'",
+    "The Meridian Lock",
+    "CRUCIBLE Vantage Artisan Precision Hand",
+    "Irontide Tidal Energy",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Ouroboros Energy Helion Compact Reactor"
+  ],
+  "district": "The Spires"
 }

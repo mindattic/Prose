@@ -1,0 +1,42 @@
+{
+  "id": "b6e2a0d4f8317c59e04b2a1f7d3c8e07",
+  "name": "Patchwork Collective Prodigy's Oversized Hand-Me-Down Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "An enormous adult-sized Halversen synth-wool sweater, three sizes too big, with the sleeves rolled up eight times and a crude BCI port cutout hacked into the neckline with scissors — the kid did it themselves. Beneath it, children's leggings in mismatched patterns and scuffed canvas shoes with the toes written on in permanent marker. A battered satchel worn crossbody is filled, visibly, with salvaged data chips and a cracked tablet.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "oversized synth-wool sweater",
+    "mismatched stretch leggings",
+    "canvas shoes",
+    "permanent marker",
+    "salvaged satchel canvas"
+  ],
+  "functionality": "Self-modified BCI port cutout allows direct neural interface access; oversized sweater provides warmth well beyond its intended use.",
+  "what_it_says": "A child who is smarter than everyone around them and has no one making sure they eat.",
+  "worn_by": [
+    "Shelf child prodigies",
+    "unsupervised minor hackers",
+    "orphaned tech-gifted children"
+  ],
+  "manufacturer": "Halversen (sweater, adult size); everything else scavenged",
+  "price_range": "Φ2–8 total (found or donated)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The data chips in the satchel contain something that multiple factions are currently looking for — the kid has no idea what they found.",
+    "The sweater belonged to a parent who hasn't come home in six weeks."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "unique_character_look",
+    "tier1",
+    "child",
+    "prodigy",
+    "hand_me_down",
+    "shelf",
+    "vulnerable",
+    "hacker"
+  ]
+}

@@ -12,7 +12,7 @@
   "role": "Field trauma surgeon and combat support — combat medic",
   "age": 33,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators",
+  "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
   "description": "Somadina Karlsen-Sow are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a combat medic out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Somadina Karlsen-Sow are known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
@@ -280,5 +280,11 @@
   "registered_firearms": [
     "Volkov-Saito Precision VSX-7 'Strelok'",
     "Arcturus Defense Solutions ARC-SL9 'Ghost Protocol'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "Geartown",
+    "Lazarus LX-2 'Lab Rat'"
+  ],
+  "district": "The Circuit"
 }

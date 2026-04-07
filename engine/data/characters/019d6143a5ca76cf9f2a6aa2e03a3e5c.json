@@ -13,7 +13,7 @@
   "role": "Street-level courier, informal intelligence carrier, and accidental archivist",
   "age": 19,
   "status": "active",
-  "location": "Old Harbor / The Shelf (transient between both)",
+  "location": "Old Harbor / The Shelf (transient between both), near Wacker and State",
   "description": "Brecken Yılmaz-Osei is nineteen years old and moves through Meridian 88 the way water moves through a cracked foundation — finding every gap, never in the same route twice, noticed by almost no one. They are slight and quick, of Turkish-Ghanaian descent, with a shaved head that grows in uneven patches due to a childhood illness, warm brown skin, and the specific kind of watchfulness that develops in people who spent their formative years needing to read adults accurately. Their face defaults to a pleasantly blank expression that people consistently misread as vacancy; it is in fact the opposite.\n\nThey run packages, messages, and occasionally people between the lower districts — primarily between Old Harbor's dockworker communities and The Shelf's warren economy — using a battered cargo-assist rig (a motorized platform cart they call 'the sled') that they maintain themselves with parts sourced from three different scrap markets. They have no fixed address, sleeping in a rotation of arrangement-rooms and borrowed floors. They are not part of any organization, which several organizations have found inconvenient, as Brecken has a gift for being present at moments that matter — for picking up the dropped data chip, for being the only person in the corridor when the conversation happened, for remembering everything with a clarity that has no augmentation behind it. Their memory is entirely biological and entirely extraordinary.\n\nBrecken did not choose to become an archivist. It happened because they never throw anything away — physically or mentally — and because the world kept handing them things that seemed important and had nowhere else to go. They have, stored in the sled's concealed compartment, a physical collection of objects, notes, and copied documents that constitute an accidental record of things various powerful people would prefer unrecorded. They do not fully understand what they have. They understand enough to know that not understanding it is currently keeping them alive.",
   "psychology": {
     "facet_weights": {
@@ -241,5 +241,16 @@
   ],
   "registered_firearms": [
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "FOUNDATION",
+    "The Shelf",
+    "Kelpline Logistics HarbourSkate MX-40 Magnetic Levitation Cargo Sled",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Tin Man"
+  ],
+  "district": "Old Harbor"
 }

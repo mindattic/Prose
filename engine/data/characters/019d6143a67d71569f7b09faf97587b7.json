@@ -12,7 +12,7 @@
   "role": "Unlicensed augmentation shop owner and street pharmacist, Geartown",
   "age": 38,
   "status": "active",
-  "location": "Geartown, Harrowgate Industrial Plateau",
+  "location": "Geartown, Harrowgate Industrial Plateau, near Fullerton and Damen",
   "description": "Okonkwo is a heavyset man with dark brown skin, a shaved head tattooed with a fine-line circuit diagram that was his journeyman qualification piece when he trained as a licensed aug technician — before the license was suspended. His hands are his most augmented feature: titanium-reinforced fingers with retractable micro-tools in the right hand and haptic sensitivity amplifiers in the left, built over seven years of incremental self-installation. He wears a mechanic's apron over a clean undershirt and moves through his workshop with the unhurried competence of someone who has done every motion a thousand times.\n\nHis shop is a converted machine bay off a side alley in Geartown, marked only by a small blue LED fixture above the door that locals know means open. He does aug maintenance, black-market installations, and sells a curated line of pharmaceutical compounds — mostly pain management, anti-rejection meds, and neural stabilizers — that people need to keep their augmentations functional without going through Helix Biosystems' official pricing. He is careful, technically meticulous, and genuinely skilled. He is also operating entirely outside corporate medical licensing, which means everything he does is illegal and every satisfied customer is a liability.",
   "psychology": {
     "facet_weights": {
@@ -175,5 +175,17 @@
   "registered_firearms": [
     "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
     "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ]
+  ],
+  "related_entities": [
+    "Harrowgate Industrial Plateau",
+    "Helix Biosystems",
+    "The Weft Arrangement",
+    "Copperhead",
+    "Kang-Petrov Arms KPR-357 'Journeyman'",
+    "Geartown",
+    "The Peninsula",
+    "Titanium",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit"
 }

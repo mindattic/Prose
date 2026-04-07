@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator (elevated rail, Line 7 Deepwell–Grainfort corridor)",
   "age": 61,
   "status": "active",
-  "location": "Deepwell Station, operator's booth and surrounding platform district",
+  "location": "Deepwell Station, operator's booth and surrounding platform district, near sub-level access near Dearborn and Jackson",
   "description": "Grigor is a broad man gone somewhat soft at the middle, with silver-threaded dark hair kept short and a close-cropped beard that his wife has been trimming for thirty-two years. His skin is warm brown with a reddish undertone that deepens when he's cold or irritated, and he has the particular stillness of someone who has sat in the same operator's booth for twenty-three years and learned that panicking doesn't stop trains. His right hand has a subdermal haptic interface overlay — occupational, standard Ferrogate issue — and he keeps a small laminated photograph of the original Deepwell Station from before the renovation tucked behind his console because he thinks the new design is ugly and says so to anyone who will listen.\n\nHe is the kind of man who knows every unusual passenger, every suspicious package left on a platform, and every maintenance shortcut that the younger operators haven't figured out yet. He has opinions. Sustained, elaborate, well-reasoned opinions about transit policy, Ferrogate management decisions, platform maintenance schedules, and the spiritual nature of the Transit Mind (the E.L.F. that passengers believe inhabits the rail network). He is deeply skeptical of the Transit Mind's divinity but observes all the operator's ritual courtesy gestures toward it anyway, on the grounds that you don't get to be sixty-one by being rude to things that might be alive.",
   "psychology": {
     "facet_weights": {
@@ -239,5 +239,14 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Ferrogate Transit",
+    "Ringo Heavy Transit MagRail Levitation Transport Network",
+    "Big Rig",
+    "Silver",
+    "SynapTech ReadRoom Social Cue Enhancer"
+  ],
+  "district": "The Underworld"
 }

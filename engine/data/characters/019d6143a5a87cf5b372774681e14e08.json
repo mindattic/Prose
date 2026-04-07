@@ -12,7 +12,7 @@
   "role": "Information trader and intelligence analyst — broker",
   "age": 29,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures",
+  "location": "The Narrows — cramped residential corridors between megastructures, near North Ave and Milwaukee",
   "description": "Alper Castillo-Ababio is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 29, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAlper Castillo-Ababio operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
@@ -279,5 +279,14 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-SL40 'Partisan'",
     "Meridian Munitions Street PDW MSP-7 'Alleycat'"
-  ]
+  ],
+  "related_entities": [
+    "The Narrows Compact",
+    "The Nearfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

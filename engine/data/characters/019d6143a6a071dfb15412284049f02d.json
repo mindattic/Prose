@@ -12,7 +12,7 @@
   "role": "Truant message runner and unofficial debt-keeper for Ashfeld's alley market",
   "age": 11,
   "status": "active",
-  "location": "Ashfeld",
+  "location": "Ashfeld, near Pulaski and Chicago Ave",
   "description": "Priya is a compact, serious-faced girl with warm brown skin, a gap between her front teeth, and hair she keeps tucked under a faded orange knit cap regardless of the weather. Her eyes are dark and cataloguing — she watches a room the way a camera sweeps, missing almost nothing. She wears a patched canvas messenger bag that's nearly as big as her torso, stuffed with folded paper notes, sealed data-chips, and a battered paper ledger she keeps in cramped, meticulous handwriting because she doesn't trust anything digital to stay secret.\n\nDespite her age, Priya carries herself with the weary patience of someone twice as old. She took over her mother's informal debt-tracking role after her mother was detained by Ferrogate Transit security eight months ago on a disputed fare-evasion warrant that has not been resolved. She doesn't talk about this. She runs messages between stall vendors, collects small commission fees, and maintains the social credit ledger of the Ashfeld alley market with a devotion that borders on religious. She lights a data-stick offering at the E.L.F. shrine in the market's back corner every morning before she starts her rounds.",
   "psychology": {
     "facet_weights": {
@@ -189,5 +189,17 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Gradient Compact",
+    "Ashfeld",
+    "Adaeze Chen-Hawkins",
+    "Lazarus IDP-1 'Teeth'",
+    "Palette",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Tessera TK-5 Compact 'Clerk'"
+  ],
+  "district": "The Shelf"
 }

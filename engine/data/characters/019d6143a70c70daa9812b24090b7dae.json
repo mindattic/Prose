@@ -13,7 +13,7 @@
   "role": "Neighbor / tech scavenger / reluctant sidekick / Kyle's closest friend",
   "age": 19,
   "status": "alive",
-  "location": "The Shelf — Level 12, Unit 1207, directly adjacent to Kyle's unit. The wall between them is thin enough that Kyle can hear Pixel's music, soldering iron, and running commentary on whatever they're disassembling.",
+  "location": "The Shelf — Level 12, Unit 1207, directly adjacent to Kyle's unit. The wall between them is thin enough that Kyle can hear Pixel's music, soldering iron, and running commentary on whatever they're disassembling., near Ashland and Chicago Ave",
   "description": "Pixel is a controlled explosion of salvaged technology and nervous energy. They're slight — 5'6\", wiry,\nthe kind of build that comes from skipping meals when a project gets interesting. Their skin is a light\nbrown, perpetually smudged with solder flux and thermal paste, and their natural hair (what's left of\nit) is buzzed short on the right side, grown out in uneven dark curls on the left, and streaked with\na color that changes monthly depending on what dye they've scavenged. Currently: a violent, glitchy\nmagenta that's already fading to pink at the roots.\n\nThe augments are the first thing you notice. Pixel's left eye is a salvaged Axiom Industries corporate\nscanner — matte black, slightly too large for the socket, with a faint amber ring that pulses when it's\nprocessing. It was designed to scan inventory in a warehouse. Pixel repurposed it to read security\nsystems, identify augmentation models, and spot structural weaknesses in hardware. It also gives them\nsplitting headaches when it overclocks, which it does constantly because they pushed it past its specs.\nTheir right hand and forearm are aftermarket — a patchwork prosthetic cobbled from three different\nmanufacturer lines, matte grey with visible seams where the components don't quite match. It works\nbeautifully. It looks like a junk drawer. Their ears are studded with micro-receivers that pick up\nlocal comm frequencies, and there's a thin data-port scar behind their right ear where they hard-jack\ninto systems.\n\nFirst impression: an annoying kid who won't shut up and has too many blinking lights on their body.\nDeeper impression: a desperately clever person who has turned themselves into a Swiss Army knife because\nbeing useful is the only survival strategy they trust.",
   "psychology": {
     "facet_weights": {
@@ -255,5 +255,19 @@
   "registered_firearms": [
     "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ]
+  ],
+  "related_entities": [
+    "Axiom Industries",
+    "The Shelf",
+    "Flicker",
+    "The Ghost Ronin",
+    "TESSERA WL-6 'Stacker'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Slagworks Industrial",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "Iron"
+  ],
+  "district": "The Shelf"
 }

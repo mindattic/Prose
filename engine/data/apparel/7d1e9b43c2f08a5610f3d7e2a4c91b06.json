@@ -1,0 +1,39 @@
+{
+  "id": "7d1e9b43c2f08a5610f3d7e2a4c91b06",
+  "name": "Nullweave Cubicle Blouse — Standard Drape",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "A collarless pull-on blouse in pale sand or muted teal, made from Nullweave's budget synth-silk that photographs well under fluorescent light. The back panel has a wide pleat to accommodate basic spinal rig frames up to Class 2. Mass-produced in runs of ten thousand; the wearer's floor likely has six identical blouses in rotation.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "budget synth-silk",
+    "polyester backing",
+    "stretch-pleat panel"
+  ],
+  "functionality": "Spinal rig back-pleat accommodation, wrinkle-resistant fabric, machine washable.",
+  "what_it_says": "You bought this because it was on the approved vendor list and it was the cheapest option that still looked presentable.",
+  "worn_by": [
+    "office clerks",
+    "call center staff",
+    "scheduling coordinators",
+    "low-tier admin staff"
+  ],
+  "manufacturer": "Nullweave Basics",
+  "price_range": "Φ 22–34",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Nullweave batches from lot 7-C have a dye flaw that makes them glow faintly under UV — wearers have been flagged by building security sensors.",
+    "A clerk wore this blouse every day for three years; the pleat is permanently stretched to the exact shape of a rig she no longer has."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "office_corporate",
+    "tier_3",
+    "blouse",
+    "aug_compatible",
+    "mass_produced",
+    "synth_fabric"
+  ]
+}

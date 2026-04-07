@@ -11,7 +11,7 @@
   "role": "Fixer - Gambling connected",
   "age": 50,
   "status": "active",
-  "location": "The Narrows",
+  "location": "The Narrows, near Fullerton and Damen",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -98,5 +98,9 @@
   "carried_weapons": [
     "Hearthstone Firearms Plinker-22 'Tin Can'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact"
+  ],
+  "district": "The Circuit"
 }

@@ -13,7 +13,7 @@
   "role": "Street-level medic and unlicensed pharmacist, Old Harbor",
   "age": 54,
   "status": "active",
-  "location": "Old Harbor, Slip 9 Tenements",
+  "location": "Old Harbor, Slip 9 Tenements, near Lake Shore and Wacker",
   "description": "Odessa Falk-Nwofor is a broad-shouldered woman whose face carries the topography of a hard life: a jaw that juts slightly from a badly reset fracture, deep-set eyes the color of weathered teak, and a scar that traces from her left temple to her earlobe like a river on an old map. Her hair is cut close on the sides and left natural on top, shot through with white that she refuses to dye. She dresses in layered secondhand scrubs over thermal underlayers, her coat pockets sagging with vials, patches, and a battered tablet she uses to track patient histories. A single augmented right hand—matte carbon and copper-banded—contrasts with her otherwise un-augmented body, which she considers a point of quiet pride.\n\nShe runs a basement clinic out of Slip 9 that operates on a sliding scale payment system she invented herself: food, labor, information, or whatever someone can spare. The neighborhood knows her as the person you go to when the corporate med-kiosks have locked your insurance tier and you're bleeding. She has delivered children, amputated gangrenous limbs by headlamp, and talked down three overdoses in a single night. The Meridian Core's Health Compliance Division has cited her practice seventeen times. She has paid none of the fines.\n\nWhat the neighborhood does not know is that Odessa's medical knowledge came partly from a decade working as a trauma specialist for a mid-tier logistics corp that dumped toxic waste in Old Harbor—the same contamination that killed her younger brother, Emeka, twelve years ago. She left the corp, got herself deliberately delisted from licensed practitioner registries to avoid their reach, and turned her skills entirely toward the community that corp helped destroy. The guilt is structural, load-bearing. She will not let herself rest.",
   "psychology": {
     "facet_weights": {
@@ -249,5 +249,16 @@
   ],
   "registered_firearms": [
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ]
+  ],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Axiom Industries",
+    "Stratum",
+    "Copper",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Teak"
+  ],
+  "district": "Old Harbor"
 }

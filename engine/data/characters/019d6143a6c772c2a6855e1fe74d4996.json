@@ -11,7 +11,7 @@
   "role": "Fixer - Transport logistics",
   "age": 39,
   "status": "active",
-  "location": "The Core",
+  "location": "The Core, near LaSalle and Madison",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -101,5 +101,9 @@
     "Street Custom 'Angry Mary' Aerosol Flamethrower",
     "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core"
+  ],
+  "district": "Meridian Core"
 }

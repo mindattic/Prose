@@ -12,7 +12,7 @@
   "role": "Pharmacist and bio-compound specialist, Geartown",
   "age": 28,
   "status": "active",
-  "location": "Geartown, Grindstone Shore",
+  "location": "Geartown, Grindstone Shore, near Milwaukee and Damen",
   "description": "Ruthanne runs a licensed pharmacy out of a narrow shopfront wedged between a hydraulics supplier and a noodle counter in the worst-smelling block of Geartown, and she has made it into something that people travel across two districts to use. She is short and broad-shouldered, with warm russet-brown skin, a mouth that moves faster than most people's thoughts, and a shock of white hair she grows long and wears in complicated braids studded with small metallic charms that clink softly when she moves. Her geneware is both functional and ostentatious: her fingertips have been modified to contain chemical assay sensors — she can touch a pill and tell you if it's cut — and her tongue has a sensory modification she uses for compound tasting that has made her one of the most accurate pharmacists in the district. She wears a lab coat covered in pockets over whatever she put on that morning, which is usually something with a print that shouldn't work but does.\n\nShe is an expert in the specific pharmaceutical ecology of a cyberpunk megacity: what people are actually taking, why they're taking it, what it's doing to them in combination with their augmentations, what the street versions are cut with, and how to get the effect someone needs through a combination of legal compounds when the thing they actually want isn't legal or isn't available. She is also the first person in Geartown to notice disease trends — she sees the prescriptions, she sees what people are buying over the counter, she talks to people, and she has a mind that aggregates data the way other people collect worries. She files reports with the community health co-op rather than Aurochs because Aurochs would turn the data into a pricing algorithm.",
   "psychology": {
     "facet_weights": {
@@ -203,5 +203,14 @@
     "Hearthstone Firearms Plinker-22 'Tin Can'",
     "Street-Custom Gutter Katana 'Flatline'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grindstone Shore",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Flicker",
+    "Geartown",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Babel"
+  ],
+  "district": "Old Harbor"
 }

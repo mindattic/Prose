@@ -1,0 +1,37 @@
+{
+  "id": "e8d95f34b93c1a763ddd95fbf5281efa",
+  "name": "Umbra Collective Sensor-Blind Cap",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A baseball-style cap with an IR LED array embedded in the brim that floods facial-recognition cameras with invisible light, rendering the wearer's face unreadable to automated systems. To human eyes, the cap looks completely normal. To cameras, the wearer's face is a white-out blur.\n\nSold openly in Shelf markets as a 'privacy accessory' and quietly tolerated by most security forces who consider it a nuisance rather than a threat. Higher-tier zones with military-grade surveillance systems can compensate for the IR flooding, limiting the cap's effectiveness to mid- and lower-tier districts.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "standard textile",
+    "embedded IR LED array",
+    "micro-battery brim insert"
+  ],
+  "functionality": "IR camera blinding, facial recognition defeat (effective against civilian-grade systems)",
+  "what_it_says": "You paid Φ90 to become invisible to every cheap camera on the street. Best investment you ever made.",
+  "worn_by": [
+    "Shelf residents",
+    "privacy advocates",
+    "petty criminals"
+  ],
+  "manufacturer": "Umbra Collective",
+  "price_range": "Φ90",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A politician is photographed buying Sensor-Blind Caps in bulk — raising questions about who they're distributing them to and why they want those people invisible."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "tier 1",
+    "cap",
+    "anti-surveillance",
+    "IR",
+    "privacy",
+    "Shelf"
+  ]
+}

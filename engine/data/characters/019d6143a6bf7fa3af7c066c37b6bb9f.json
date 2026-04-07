@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit tram operator, Ironvein line",
   "age": 34,
   "status": "active",
-  "location": "Ironvein Station, with a rented bunk in the Ferrogate Transit crew dormitory at Jefferson Switch",
+  "location": "Ironvein Station, with a rented bunk in the Ferrogate Transit crew dormitory at Jefferson Switch, near Fullerton and Damen",
   "description": "Rónán is lean and angular with East Slavic cheekbones and deep brown skin, his hair grown into loose, shaggy locs that he pins back with a battered Ferrogate Transit cap that has seen better years. He has geneware irises — rings of luminous amber that shift slightly in low light, a cheap mod he got at nineteen that he now considers a mistake but can't afford to reverse. A long procedural scar runs from his left jaw to his collarbone, the souvenir of a platform incident three years ago that Ferrogate classified as 'operator error' and he knows was not.\n\nHe is naturally funny in the wry, sideways way of someone who has processed a lot of institutional disappointment. He knows every regular on the 0430 Ironvein run by face if not by name, and he has opinions about all of them. He is the kind of person who is beloved by strangers and slightly maddening to people close to him, because he extends his easy warmth to everyone equally and it can feel, to the people who want more of him, like he is giving nothing specific at all.",
   "psychology": {
     "facet_weights": {
@@ -245,5 +245,16 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-6 'Equalizer'",
     "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Jefferson Switch",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Souvenir",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Circuit"
 }

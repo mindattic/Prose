@@ -12,7 +12,7 @@
   "role": "Laundry operator and alterations tailor",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, operates out of a converted ground-floor unit called Leclair's Clean & Press",
+  "location": "Hamtramck Enclave, operates out of a converted ground-floor unit called Leclair's Clean & Press, near Kedzie and Division",
   "description": "Abiodun is a broad-shouldered man whose body has softened into comfortable middle age, his dark brown skin lined around the eyes and mouth in ways that make him look like he is perpetually on the verge of a knowing smile. His hair is cropped close and silver at the temples; he wears it simply, without augmentation, which marks him as either principled or broke depending on who is asking. His hands are always slightly chapped from the solvents, and he keeps a small tin of shea balm in his breast pocket that he reapplies with absent-minded regularity. He has one augmentation: a subdermal pressure sensor array in his fingertips that helps him feel thread tension and fabric stress without instruments — technically a legacy medical implant from a reconstructive surgery after a crush injury thirty years ago, repurposed into professional utility.\n\nAbi runs Leclair's Clean & Press the way a priest runs a parish — with patience, with routine, and with the faint conviction that cleanliness is a moral act. He is warm with regulars, methodical with strangers, and briefly terrible with anyone who brings him synthweave and claims it is linen. He remembers what every customer wore to their daughter's naming ceremony, their court date, their first corporate interview. He has seen the whole neighborhood change twice over and has quietly outlasted two corponation rezoning attempts by simply continuing to open at six in the morning.",
   "psychology": {
     "facet_weights": {
@@ -229,5 +229,14 @@
   "registered_firearms": [
     "Volkov-Saito Precision VSR-20 'Partisan'",
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Silver",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

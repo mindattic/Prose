@@ -12,7 +12,7 @@
   "role": "Sound sculptor and underground venue performer",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave, sub-level workshop called The Resonance Pit",
+  "location": "Hamtramck Enclave, sub-level workshop called The Resonance Pit, near sub-level access near State and Van Buren",
   "description": "Vashko is a wide-shouldered man gone soft at the edges, with deep brown skin mapped by decades of industrial pigment stains he never fully washed out. His face is all heavy brow and patient eyes the color of tarnished copper, and he keeps his grey-streaked locs pinned back with salvaged circuit wire. His left hand is natural; his right has subdermal resonance nodes implanted across the knuckles that let him feel frequencies ordinary ears can't register, a gift he gave himself thirty years ago when his hearing began to go. He speaks slowly, as though each word costs him something, and smiles rarely — but when he does it rearranges his whole face into something unexpectedly gentle.\n\nVashko builds instruments from the corpse-materials of the city: burst coolant pipes, decommissioned server racks, cracked transit rail segments. He coaxes sounds from them that shouldn't be possible — subsonic groans that make audiences feel grief they can't name, high harmonics that trigger involuntary memories. He is not famous. He has refused every corponation arts-sponsorship offer for twenty years and considers this his greatest achievement. His underground shows happen in flooded basement corridors, in decommissioned lift shafts, in places where the city's own skeleton becomes the concert hall.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,15 @@
   ],
   "registered_firearms": [
     "Tessera TK-9 Proteus 'Shapeshifter'"
-  ]
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "The Resonance Communion",
+    "Flicker",
+    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+    "Copper"
+  ],
+  "district": "The Underworld"
 }

@@ -12,7 +12,7 @@
   "role": "Unlicensed community nurse and wound care provider working out of a converted apartment in the Narrows",
   "age": 38,
   "status": "active",
-  "location": "The Narrows — fourth floor walk-up at Ironvein Cross Block 7, apartment 4F",
+  "location": "The Narrows — fourth floor walk-up at Ironvein Cross Block 7, apartment 4F, near Armitage and Milwaukee",
   "description": "Miroslava Toure-Ahtiainen occupies the strange position of being simultaneously the most essential and the most legally precarious person on her block. She is a compact woman with Finnish-Malian heritage — pale olive skin, dark eyes with the particular steadiness of someone trained to look at things that are unpleasant without flinching, close-cropped dark hair she bleaches copper at the tips. She lost her Axiom-affiliated nursing license six years ago in a dispute over billing fraud she reported rather than participated in, and has been operating without it ever since, a fact every person in the Narrows knows and nobody discusses with outsiders. Her apartment's second room has been converted: examination table, sterilization cabinet, a pharmaceutical cold-locker that she restocks through supply chains she has spent years building from salvage dealers, sympathetic Helix Biosystems mid-tier employees, and the occasional Axiom clinic discard.\n\nShe is tired in the structural sense — not temporarily but chronically, the kind of tired that has become load-bearing in her personality. She does not complain about it. She has a way of sitting across from a patient that makes them feel she has all the time in the world, which is technically a lie but functionally true because she has arranged her life so that the work is always the priority. She has a cat — a real one, no mods, orange — named Thiamine, after a vitamin deficiency she sees more than she should in the Narrows. The cat sits on the examination table and judges everyone equally.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,17 @@
   "registered_firearms": [
     "Meridian Munitions Snapper-22 'Cricket'",
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "WELLSPRING",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "The Heritage Vault",
+    "Ironvein",
+    "The Gradient Compact",
+    "Copper",
+    "The Pale Mile"
+  ],
+  "district": "The Circuit"
 }

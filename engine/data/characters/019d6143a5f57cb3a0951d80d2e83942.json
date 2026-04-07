@@ -12,7 +12,7 @@
   "role": "Pawn shop owner and small-time data broker, The Shelf",
   "age": 44,
   "status": "active",
-  "location": "The Shelf, Lockhaven South",
+  "location": "The Shelf, Lockhaven South, near Pulaski and Chicago Ave",
   "description": "Dragan is lean and angular, with pale Finnish features gone weathered and a close-cropped beard that grows in two distinct textures — fine near the jaw, tightly coiled at the chin — which he finds philosophically appropriate. His eyes are his most augmented feature: full iris replacements in deep amber with a second ring of pale gold that pulses faintly when he's running an active scan, which is often. He dresses in layers of neutral secondhand corporate wear — the kind of mid-tier Tessera office clothes that people pawn when they fall down a tier — and he always looks like someone who has somewhere slightly more important to be.\n\nDragan runs 'Ouédraogo Reclaimed' out of a ground-floor shopfront on The Shelf, a narrow commercial strip of Lockhaven South where the building facades are stacked with second-story additions that block most of the sky. He buys, appraises, and resells everything from broken augmentations to family heirlooms to encrypted data cores he's willing to crack for a fee. He is precisely as trustworthy as the deal requires and not one degree more. He speaks in short declarative sentences and has a gift for making people feel he is giving them a fair deal even when he isn't — not through deception exactly, but through a kind of confident, unhurried correctness that makes haggling feel like arguing with a scale.",
   "psychology": {
     "facet_weights": {
@@ -171,5 +171,17 @@
   "carried_weapons": [
     "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lockhaven South",
+    "The Shelf",
+    "Blackmarket",
+    "Tessera Corponation",
+    "Kang-Petrov Arms KPM-15R 'Reclaim'",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "The Pale Mile",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

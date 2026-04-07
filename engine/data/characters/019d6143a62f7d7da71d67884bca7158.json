@@ -12,7 +12,7 @@
   "role": "Barber and body artist, Mexicantown Libre",
   "age": 24,
   "status": "active",
-  "location": "Mexicantown Libre; works at a shop called Corte Libre on the main pedestrian corridor of Avon Curve",
+  "location": "Mexicantown Libre; works at a shop called Corte Libre on the main pedestrian corridor of Avon Curve, near Halsted and Division",
   "description": "Imara Sollenberger-Diakité is twenty-four years old and already one of the most sought-after cutters in Mexicantown Libre, a fact she treats with pointed nonchalance because she knows the moment she seems to want it is the moment someone will try to take it. Her father is Malian-German and her mother is from a Guatemalan-Somali diaspora family — she got the best of several worlds: height, cheekbones, and what her clients call 'the hands.' She has geneware cat ears — small, grey-tipped, always moving independently of her mood in ways that reveal what her face carefully hides. She styled her own locs into a structural crown she redesigns every three months and uses as a portfolio piece. Her arms carry a cascade of bioluminescent tattoo-work down to the wrists, blues and greens that pulse faintly under the shop's work lights.\n\nShe does cuts, yes, but she is better known for what the neighborhood calls reading the chair — the way she listens while she works. Clients come for the hair and stay because something about the position, the mirror, the rhythm of scissors, makes them speak. She does not offer advice. She does not judge. She reflects back the shape of what she heard with uncanny precision, which people find either healing or unnerving depending on who they are. She is trying to save enough to take over the shop when its current owner retires. She is also, quietly, furiously ambitious in ways she doesn't fully have language for yet.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,20 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Avon Curve",
+    "Petra Glass",
+    "Axiom Systems Data Exfiltration Wafer DEW-1",
+    "Lazarus EC-4 'Companion'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "The Cutters Guild",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Irontide Tidal Energy",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'"
+  ],
+  "district": "The Shelf"
 }

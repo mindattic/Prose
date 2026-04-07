@@ -1,0 +1,36 @@
+{
+  "id": "bab823718a9abfa441dbf7b25b9978ed",
+  "name": "Drake Industrial Rivet-Grip Work Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Heavy-duty work gloves with rubberized palm coating and reinforced thumb saddles, built to survive daily use in construction, demolition, and salvage operations. The gloves feature a quick-release wrist strap that lets the wearer shed them in under a second — important when gloves get caught in machinery.\n\nThe most common work glove in Meridian 88's lower tiers. They cost almost nothing, they last about three months of hard use, and they're available at every supply depot and street market in the city.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "rubberized palm coating",
+    "reinforced thumb saddle",
+    "quick-release wrist strap"
+  ],
+  "functionality": "Grip enhancement, basic hand protection, emergency quick-release",
+  "what_it_says": "You work with your hands every day and these gloves are as disposable as the work treats you.",
+  "worn_by": [
+    "construction workers",
+    "demolition crews",
+    "salvage operators"
+  ],
+  "manufacturer": "Drake Industrial",
+  "price_range": "Φ35",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Hundreds of discarded Rivet-Grip gloves are found piled outside an abandoned building — enough to account for a large workforce, but no construction permits were ever filed for the site."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 1",
+    "work",
+    "industrial",
+    "construction",
+    "disposable"
+  ]
+}

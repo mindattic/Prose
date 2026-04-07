@@ -12,7 +12,7 @@
   "role": "Numbers runner and low-level protection racket enforcer for a Shallowgrave street gang",
   "age": 19,
   "status": "active",
-  "location": "Shallowgrave — sleeps in a shared squat off Burnside Pocket, runs routes through the market corridors",
+  "location": "Shallowgrave — sleeps in a shared squat off Burnside Pocket, runs routes through the market corridors, near Ashland and Division",
   "description": "Tafadzwa is all limbs and nervous energy — tall for his age, still growing into his frame, with deep umber skin, a patchy attempt at a beard, and hair grown out in an uneven natural that he picks at when anxious. He has bioluminescent freckles across his cheekbones and nose, a common cosmetic mod he had done at sixteen that glows faint gold when his blood pressure rises, which means they're almost always lit up. His clothes are layered function-over-form: compression underlayer, two hooded shells, pockets everywhere. He moves fast and low and always knows where the exits are.\n\nTaf is fundamentally a kid who fell into the wrong orbit and hasn't yet figured out it's a closed loop. He's quick, funny in a self-deprecating way, and genuinely well-liked by the market vendors whose routes he runs — he remembers names, brings small gifts, actually listens when old women complain about their knees. The violence of his work sits uneasily on him. He's good at the intimidation part only because he's terrified of what happens if he isn't. He's saving money for something he won't name out loud.",
   "psychology": {
     "facet_weights": {
@@ -178,5 +178,17 @@
   "registered_firearms": [
     "Crucible Industries Forge-454 'Hammerfall'",
     "Crucible Industries Close Defense Weapon CDW-8 'Barricade'"
-  ]
+  ],
+  "related_entities": [
+    "Burnside Pocket",
+    "Shallowgrave",
+    "The Underlayer Collective",
+    "Stratum",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold",
+    "Déjà Vu"
+  ],
+  "district": "The Shelf"
 }

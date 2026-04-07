@@ -1,0 +1,37 @@
+{
+  "id": "bd81560cd0a29b9f7be480de2627c31b",
+  "name": "Pinnacle Security Crowd-Suppression Exoframe",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A powered exoskeletal frame worn over standard riot gear that amplifies the wearer's strength by a factor of three and provides full-body hardpoint armor coverage. The exoframe runs on a 4-hour fuel cell and features integrated crowd-control deployables — sonic emitters, chemical dispensers, and a riot shield mount.\n\nThe most aggressive crowd-control equipment legally deployable in Meridian 88. A single officer in a Crowd-Suppression Exoframe can hold a corridor against a hundred people. The psychological effect of seeing one deployed frequently ends confrontations before they begin. When it doesn't, the results are documented in injury reports that run to hundreds of pages.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "powered exoskeletal frame",
+    "hardpoint armor plates",
+    "4-hour fuel cell"
+  ],
+  "functionality": "3x strength amplification, integrated crowd-control systems, full armor coverage",
+  "what_it_says": "You are the singular expression of overwhelming force, and the crowd will either disperse or discover what that means.",
+  "worn_by": [
+    "elite riot control",
+    "corponation crisis response",
+    "high-value asset protection"
+  ],
+  "manufacturer": "Pinnacle Security",
+  "price_range": "Φ85,000",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Crowd-Suppression Exoframe is reported missing from Pinnacle's armory — 85,000 quanta of crowd-control weaponry in unknown hands, and the inventory was last verified three weeks ago."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 5",
+    "exoframe",
+    "riot",
+    "Pinnacle",
+    "powered armor",
+    "crowd control"
+  ]
+}

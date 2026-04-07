@@ -12,7 +12,7 @@
   "role": "Pawn shop owner and junk merchant",
   "age": 67,
   "status": "active",
-  "location": "The Shelf, Copperhead",
+  "location": "The Shelf, Copperhead, near Western and Chicago Ave",
   "description": "Constant is a large man gone thick through the middle, with the dark complexion and broad frame of his Zimbabwean lineage and his Bosnian grandfather's deep-set, heavy-lidded eyes that make him look perpetually half-asleep and perpetually unimpressed. His hair went white at forty and he has kept it cropped close ever since. He moves slowly on purpose — he has a fused vertebra from a freight accident in his fifties that he refuses to have properly treated because the surgery quote was insultingly high — and uses a custom cane he made himself from a Ferrogate Transit handrail he salvaged years ago. His shop on The Shelf is three connected units brimming with fifty years of accumulated objects: broken augmentations, pre-city antiques, industrial salvage, personal effects pawned in crisis moments, and a back room of things he has decided are not for sale regardless of price.\n\nConstant is one of those rare people who have become part of the architecture of a place. The Shelf without Constant's shop is not fully The Shelf. He has seen everything come and go — corporations, gangs, floods, market booms, building collapses — and he has the calm of someone who has been surprised by nothing for a very long time. He is not sentimental in any visible way, but he keeps things — objects that belonged to people who are gone — with a quiet fidelity that functions as memorial. He is honest about prices, blunt about valuations, and legendarily difficult to scam because he has already been scammed by everyone.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,18 @@
   "carried_weapons": [
     "Street-Custom Rebar Shiv 'Tetanus Kiss'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Reclamation Assembly",
+    "The CEO",
+    "Copperhead",
+    "The Shelf",
+    "The Meridian Lock",
+    "Aslan Vasquez-Chatterjee",
+    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
+    "Tessera Corponation",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+  ],
+  "district": "The Shelf"
 }

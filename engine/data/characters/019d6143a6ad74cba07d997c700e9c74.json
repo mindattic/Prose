@@ -12,7 +12,7 @@
   "role": "Independent vehicle and drone mechanic, Old Harbor",
   "age": 44,
   "status": "active",
-  "location": "Old Harbor — a basement garage workshop called Tuiasosopo's, accessible via a grease-slicked ramp off Grindstone Shore",
+  "location": "Old Harbor — a basement garage workshop called Tuiasosopo's, accessible via a grease-slicked ramp off Grindstone Shore, near Lake Shore and Navy Pier",
   "description": "Rashid is a large man — broad through the chest and shoulders, with the particular solidity of someone who has spent decades moving heavy things without complaint. His Samoan-Dutch heritage gives him a height and frame that makes the workshop look scaled down around him; he moves through it with a careful, habituated economy that suggests he has misjudged his own size in doorways enough times to have learned. His skin is dark tan and perpetually marked with engine grease that the solvent spray never quite removes from the creases of his knuckles. His right arm from the elbow down is a working prosthetic — industrial grade, matte gray, with the manufacturer branding sanded off — that he maintains himself and has modified extensively over fifteen years until it no longer resembles the original product in any way that matters. He does not discuss how he lost the original arm.\n\nRashid is reserved in a way that reads as either hostile or comfortable depending on how quickly you need him to perform warmth. He is not hostile. He is simply someone who learned early that words are expensive and he spends them accordingly. He is extraordinarily competent, with a diagnostic instinct for machines that borders on the empathic — he listens to engines the way some people listen to music, tracking harmonics and absences. He has a seven-year waitlist for vehicle work and a two-week turnaround for drone repair, which in Old Harbor is considered miraculous. He prays to the E.L.F. he believes inhabits his diagnostic rig with the seriousness of a genuine practitioner.",
   "psychology": {
     "facet_weights": {
@@ -235,5 +235,11 @@
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Street Custom 'Sunday School' Weaponized Religious Artifact"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Grindstone Shore",
+    "The Heritage Vault",
+    "TESSERA WL-6 'Stacker'"
+  ],
+  "district": "Old Harbor"
 }

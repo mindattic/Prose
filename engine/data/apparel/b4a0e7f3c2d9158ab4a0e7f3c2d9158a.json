@@ -1,0 +1,40 @@
+{
+  "id": "b4a0e7f3c2d9158ab4a0e7f3c2d9158a",
+  "name": "Halversen Thermal-Lined Work Vest",
+  "type": "apparel",
+  "category": "clothing",
+  "description": "Sleeveless insulated vest in dark olive quilted nylon, worn as a mid-layer over a work shirt during the brutal Great Lakes winters. The chest is plain except for a small Halversen patch on the collar; the back has a single large internal pocket for a heat pack or comms tablet. Well-used versions are pilled and compressed at the shoulders from heavy jacket wear on top.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ripstop nylon outer",
+    "recycled poly-fill insulation",
+    "nylon lining",
+    "metal snap closures"
+  ],
+  "functionality": "Core insulation layer for outdoor and unheated facility work; snap-front allows fast removal when moving between cold exterior and heated indoor zones.",
+  "what_it_says": "You've learned the hard way that the lake wind doesn't care what shift you're on.",
+  "worn_by": [
+    "outdoor maintenance workers",
+    "freight yard staff",
+    "transit platform crew",
+    "loading dock operators"
+  ],
+  "manufacturer": "Halversen Workwear Co.",
+  "price_range": "Φ45–Φ70",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The internal back pocket is large enough to hold a folded-up document — a worker's vest contains a printed contract amendment their supervisor claimed was never distributed.",
+    "A vest left in a break room locker for six months still has a heat pack inside — activated, still faintly warm, with no explanation."
+  ],
+  "tags": [
+    "apparel",
+    "clothing",
+    "circuit_workwear",
+    "vest",
+    "insulated",
+    "winter",
+    "mid-layer",
+    "tier2"
+  ]
+}

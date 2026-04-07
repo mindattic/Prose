@@ -12,7 +12,7 @@
   "role": "Precision elimination specialist — ghost",
   "age": 40,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Michigan Ave South and Cermak",
   "description": "Erkin Wendt-Frempong are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nThey arrived in Meridian 88 six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a ghost out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented ghost in Meridian 88, but they might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
@@ -270,5 +270,11 @@
   "carried_weapons": [
     "Street Custom 'Ghostwriter' Grafitti Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Bioelectric Muscle Fiber",
+    "Meridian 88",
+    "The Unfinished Theorem"
+  ],
+  "district": "Old Harbor"
 }

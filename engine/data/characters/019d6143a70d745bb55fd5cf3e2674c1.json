@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor, specializing in bespoke identity garments and faction-adjacent style",
   "age": 28,
   "status": "active",
-  "location": "The Burnished Market, Copperhead",
+  "location": "The Burnished Market, Copperhead, near Damen and Armitage",
   "description": "Valentina is slight, with deep golden-brown skin, sharp cheekbones, and hair that shifts color through the full visible spectrum across a thirty-minute cycle — a geneware expression mod they saved for two years to afford and consider the single best decision of their life. They dress in deliberate contradiction: they could wear anything in their inventory but typically choose a single elegant piece against something plainly utilitarian, the combination always pointing at something the observer can't quite name. Their stall is a canvas archway strung with hanging garments that act as walls — inside, bolts of smart-fabric, hand-stenciled jackets, deconstructed corporate uniforms resewn into something feral, faction colors assembled into outfits that signal affiliation without commitment.\n\nVala is an expert in the semiotics of dress in Meridian 88 — they can read who someone is, what they want to be, and what they're afraid of from what they're wearing and how they hold themselves in it. This makes them an extraordinary vendor and an occasionally unsettling conversationalist. They are warm but precise, never cruel, but they will tell you what your clothes say about you if you ask, and sometimes if you don't. They have a genuine investment in helping people look the way they feel inside, and they extend credit to people in the Burnished Market who are clearly trying to climb out of something.",
   "psychology": {
     "facet_weights": {
@@ -221,5 +221,13 @@
   "carried_weapons": [
     "Street Custom 'Molotov Standard' Incendiary Bottle"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Meridian 88",
+    "Copperhead",
+    "Tessera Corponation",
+    "Palette"
+  ],
+  "district": "The Circuit"
 }

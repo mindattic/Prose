@@ -12,7 +12,7 @@
   "role": "Fungus Farmer — cultivates bioluminescent and edible fungi in the deep tunnels, primary food supplier for two Bore Rat settlements",
   "age": 28,
   "status": "active",
-  "location": "The fungus warrens beneath Hough Reclamation, accessed through the Undertow's eastern branches",
+  "location": "The fungus warrens beneath Hough Reclamation, accessed through the Undertow's eastern branches, near Western and Chicago Ave",
   "description": "Imara is compact and perpetually damp — there is no dry season in the fungus warrens, and after eight years of working them they carry that moisture like a second skin. Their hair is grown long and twisted back with strips of mycelium netting, threaded through with small glowing fungal clusters they've cultivated specifically for the caps: blue-white pinpricks of light that bob gently when they move. The effect is lovely and entirely practical — their hands are often full and they need the light somewhere that isn't their hands. Their skin has taken on the faint phosphorescent undertone of someone who has been in bioluminescent spaces long enough for trace compounds to accumulate in the epidermis — doctors would call it benign; Imara calls it home.\n\nThey are fiercely competent and aware of it, which comes across as confidence to people who like them and arrogance to people who don't. They know more about fungal biology than most surface mycologists and have never been to school. Every strain of fungus in their warren was either cultivated from existing specimens or cross-developed through patient experimentation over years. They talk about their fungi with the affection and matter-of-fact practicality of a parent, and they are not warm with people the way they are warm with their work — humans are loud and destructive, and they need to be managed. Fungi, at least, respond predictably to care.",
   "psychology": {
     "facet_weights": {
@@ -222,5 +222,15 @@
   "registered_firearms": [
     "Crucible Industries Ember-9 'Firefly'",
     "Crucible Industries Suppressed Compact SC-2 'Murmur'"
-  ]
+  ],
+  "related_entities": [
+    "Hough Reclamation",
+    "The Undertow",
+    "The Reclamation Assembly",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "Imara Solís-Khatgal",
+    "The Gradient Compact",
+    "The Pure Hand"
+  ],
+  "district": "The Underworld"
 }

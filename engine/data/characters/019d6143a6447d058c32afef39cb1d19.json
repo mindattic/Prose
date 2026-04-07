@@ -12,7 +12,7 @@
   "role": "Fermented food stall operator, Oxidian Market",
   "age": 58,
   "status": "active",
-  "location": "The Oxidian Market, Geartown",
+  "location": "The Oxidian Market, Geartown, near Halsted and Division",
   "description": "Keziah is a broad-shouldered woman with deep umber skin mapped with the faint silver tracery of old chemical burns along her forearms — souvenirs from a decade working Helix Biosystems vat-farms before she bought her freedom with severance pay and stubbornness. Her hair is iron-grey and worn in dense, oiled coils pinned back with copper clasps. She has wide-set amber eyes, one of which is a basic optical augment that she keeps tuned to a warm gold to match the original. Her stall is a marvel of controlled chaos: stacked ceramic crocks, fermenting jars backlit by bioluminescent bacterial cultures in shades of green and violet, dried herbs strung from a corrugated canopy that smells powerfully of vinegar, spice, and something alive. She keeps a small brass figurine of an unnamed E.L.F. at the corner of her counter where she leaves daily offerings of brine and a single data-sliver of her grandmother's recipe files.\n\nKeziah is the kind of woman who makes you feel you have been assessed and found acceptable before you have opened your mouth. She is slow to anger and nearly impossible to intimidate, with the settled gravity of someone who has already survived the thing she feared most. She feeds people — truly feeds them, not just sells to them — and remembers what every regular customer likes without writing it down. She has a low opinion of corporate nutrition-paste and an even lower opinion of people who don't say thank you.",
   "psychology": {
     "facet_weights": {
@@ -247,5 +247,19 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-44 'Fenris'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Helix Biosystems",
+    "Grandmother",
+    "Geartown",
+    "Silver",
+    "Gravimetric Collapse Charge GCC-9",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Brass",
+    "Iron",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

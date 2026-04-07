@@ -12,7 +12,7 @@
   "role": "Augmentation reseller and back-alley aug installer, The Burnished Market",
   "age": 34,
   "status": "active",
-  "location": "The Burnished Market, Copperhead",
+  "location": "The Burnished Market, Copperhead, near North Ave and Milwaukee",
   "description": "Celestine Rawlings-Ouédraogo runs a stall so clean it seems out of place in The Burnished Market — white privacy screen on three sides, blue UV lamp, surfaces wiped twice between every customer. She is a tall woman with close-cropped natural hair shot through with bioluminescent silver strands she does herself, medium-brown skin, and the kind of face that defaults to amusement rather than skepticism. Her own augmentations are a working advertisement: both forearms have exposed chrome chassis panels over the muscle — not for function, for show, a fashion aug popular in 2195 that she still thinks is beautiful — and her right hand has a fine-motor surgical assist exo-glove built into it that she never removes. She can install a basic aug in twenty-two minutes. She has done it in eleven.\n\nShe is quick, professional, and genuinely good at her job, which she will remind you she learned the hard way without a Helix Biosystems vocational cert because she couldn't afford the program. She resells grey-market augs sourced from a network she's cultivated for eight years — returned corporate units, discontinued models, overstock from clinics that take Axiom insurance. What she charges is well below clinic prices. What she provides is not clinic-grade sterility, but it is closer than anyone else in Copperhead offers. She is easy to like and slightly difficult to read — the warmth is genuine but the smile is a layer she has learned to maintain regardless of what's underneath.",
   "psychology": {
     "facet_weights": {
@@ -209,5 +209,16 @@
   "registered_firearms": [
     "Nkomo-Lindqvist NL-9SD 'Lullaby'",
     "Hearthstone Firearms Defender-38 'Snubnose'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Helix Biosystems",
+    "Copperhead",
+    "Tessera Suppression Lattice SL-3 'Quilt'",
+    "Crucible RE-2 'Receptionist'",
+    "Silver",
+    "Tibor Osei-Svanstrom",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Circuit"
 }

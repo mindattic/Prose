@@ -12,7 +12,7 @@
   "role": "corporate school scholarship student, junior hacker",
   "age": 15,
   "status": "active",
-  "location": "Grosse Pointe Enclosure — Tessera Academy Secondary Campus",
+  "location": "Grosse Pointe Enclosure — Tessera Academy Secondary Campus, near North Ave and Damen",
   "description": "Ekundayo is lanky and angular, all sharp elbows and collarbones, with golden-brown skin and close-cropped hair he keeps meticulously lined because the rest of his life feels ragged. His eyes are standard brown except for patterned irises he saved three months of tutoring stipends for — concentric hexagons in amber, a deliberate Tessera aesthetic he thought would help him fit in and which he now privately finds embarrassing. He's always slightly overdressed in the Enclosure, wearing his scholarship uniform with an anxious precision that marks him as someone for whom the uniform is not casual.\n\nDayo grew up in Ironvein on a UBC stipend household and won a Tessera Academic Foundation scholarship at twelve. He's brilliantly capable with code architecture — legitimately gifted — but the social architecture of Grosse Pointe defeats him daily. He has two lives: the obedient scholarship student who files every assignment on time, and the kid who goes home on weekends to Ironvein and jacks into sub-level networks he has no business being in. He doesn't think of what he does as hacking. He thinks of it as listening.",
   "psychology": {
     "facet_weights": {
@@ -163,5 +163,15 @@
     "range": "local"
   },
   "timeline": [],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grosse Pointe Enclosure",
+    "FOUNDATION",
+    "Zheng-dao Bioelectric",
+    "Ironvein",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Spires"
 }

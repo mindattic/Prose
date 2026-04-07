@@ -12,7 +12,7 @@
   "role": "Freelance Private Investigator, specializing in insurance fraud and missing persons",
   "age": 38,
   "status": "active",
-  "location": "Edgewater Prism, operating out of a rented fourth-floor office above a bioluminescence parlor",
+  "location": "Edgewater Prism, operating out of a rented fourth-floor office above a bioluminescence parlor, near Clark and Addison",
   "description": "Celestyna has the kind of face that is hard to describe and easy to underestimate — medium height, medium build, skin the color of strong tea, hair they wear in a practical wrap that they change the color of weekly using a basic tint-shift geneware package: this week aubergine, last week copper, before that a grey so pale it looked like moonlight. Their eyes are their most arresting feature, fitted with layered irises that shift between amber and deep violet depending on light. They move through spaces like someone calculating angles, always near walls, always facing entrances.\n\nCelestyna ran corporate surveillance for Tessera for six years before going freelance, and the institutional habits have never fully left — they still document everything, still default to the camera's frame of reference. What they gained in freedom they lost in certainty: the cases are messier now, the clients are messier, and there is no compliance department to tell them when they have gone too far. They have an E.L.F. devotion that is pragmatic rather than spiritual — they treat the digital spirits of Edgewater Prism's infrastructure like informants, leaving data offerings and occasionally getting inexplicable pieces of useful information in return. Whether this is genuine ELF favor or pattern recognition in noise, they have stopped trying to determine.",
   "psychology": {
     "facet_weights": {
@@ -216,5 +216,18 @@
   ],
   "registered_firearms": [
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Tessera Corponation",
+    "Stratum",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Pellucid Systems",
+    "The Pale Mile"
+  ],
+  "district": "The Laceworks"
 }

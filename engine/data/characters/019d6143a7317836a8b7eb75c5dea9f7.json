@@ -12,7 +12,7 @@
   "role": "Numbers runner and bookmaker's courier for an illegal betting operation in Shallowgrave",
   "age": 19,
   "status": "active",
-  "location": "Shallowgrave — lives in a bunk hostel on Carrion Alley, works the market corridors between the Sump and Ironvein",
+  "location": "Shallowgrave — lives in a bunk hostel on Carrion Alley, works the market corridors between the Sump and Ironvein, near Western and Division",
   "description": "Yusra is nineteen years old and moves like she expects the ground to give way. She's thin in the way of someone whose calories are unreliable, with close-cropped natural hair dyed in two bands — natural black at the roots, then a vivid synthetic orange at the tips — and a set of geneware cat ears she bought secondhand with three months of saved wages; they're tawny gold and slightly too large for her head, which she is sensitive about. Her skin is a warm dark brown, her eyes quick and dark, her grin infectious and slightly desperate. She has a long scar across her left shin from a close call with a Ferrogate transit barrier she vaulted at full speed.\n\nShe is fast — genuinely, almost recklessly fast — and has built her entire professional identity around it. She runs bets and payouts for a bookmaker named Sołtys Kowalczyk-Fanuanuu who she calls 'the Old Man,' carrying chips, physical slips, and occasionally small packages she's been told not to think about through the market crowds. She is saving money for something she hasn't named yet but pictures vaguely as 'away.' She is not cynical about this. She still believes in the vagueness of away.",
   "psychology": {
     "facet_weights": {
@@ -193,5 +193,17 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Shallowgrave",
+    "Ironvein",
+    "South Deering Sump",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Carrion Defense Works",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Gold"
+  ],
+  "district": "The Shelf"
 }

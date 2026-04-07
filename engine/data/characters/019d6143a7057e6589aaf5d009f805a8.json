@@ -12,7 +12,7 @@
   "role": "Barber and part-time hair artist, operates 'The Cut Below' in the Burnished Market",
   "age": 33,
   "status": "active",
-  "location": "The Burnished Market, stall row 14, ground level",
+  "location": "The Burnished Market, stall row 14, ground level, near Damen and Armitage",
   "description": "Tselane is a tall woman with exceptional posture — the kind that comes from years of standing behind a chair — and hands that move with the constant precise economy of someone who has made roughly forty-thousand cuts in her lifetime and stopped counting. She has her Sotho grandmother's high forehead and her Serbian grandfather's grey-green eyes, and her own hair is an ever-changing showcase for her skills: currently a deep violet with shaved geometric patterns at the temples that she re-cuts every twelve days with mechanical precision. She has color-changing hair geneware — the violet is her default but she can shift it across a spectrum when she's in a creative mood, which she will tell you is a professional statement and not vanity, and she is partially right.\n\nThe shop is a two-chair stall wedged between a spice vendor and a counterfeit-data reseller, draped with mirror panels and lit with warm amber strips that make everyone look better than they do outside, which Tselane will tell you is the first thing a barber owes their client. She is direct, opinionated, and runs an informal social-credit system where she remembers every regulars' preferences, history, and most recent life developments. She doesn't offer advice unless asked, but when she offers it, it is specific and often irritatingly accurate.",
   "psychology": {
     "facet_weights": {
@@ -167,5 +167,18 @@
   ],
   "registered_firearms": [
     "Arcturus Defense Solutions ARC-P1 'Centurion'"
-  ]
+  ],
+  "related_entities": [
+    "The Burnished Market",
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "Grandmother",
+    "The CEO",
+    "Flicker",
+    "Lazarus EC-4 'Companion'",
+    "Tessera Corponation",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Circuit"
 }

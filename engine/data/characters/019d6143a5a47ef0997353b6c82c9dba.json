@@ -12,7 +12,7 @@
   "role": "Street pharmacist — legal supplements, gray-market nootropics, and careful amounts of the other stuff",
   "age": 31,
   "status": "active",
-  "location": "The Shelf, mobile between the lower walkways of the Blackpipe Corridor residential stack",
+  "location": "The Shelf, mobile between the lower walkways of the Blackpipe Corridor residential stack, near Pulaski and Chicago Ave",
   "description": "Adisa operates from a modified infant carrier worn across her chest — not an infant but a temperature-controlled case packed with labeled vials, blister packs, and small sealed pouches organized with the precision of someone who takes mistakes personally. She is small and quick-moving with deep brown skin and natural hair pulled back under a technical-grade headband that monitors ambient particulate levels — practical, not cosmetic. Her geneware is a set of retractable claws, kept short and clean, which she uses for seal-breaking and sorting and occasionally for emphasis in an argument. Her irises are solid silver — a cheaply done cosmetic mod from a no-brand gene clinic that she's kept because she's used to it now.\n\nShe describes herself as a 'community pharmaceutical consultant' with the deadpan of someone who has said it so often it has lost all irony. She has a genuine background in pharmacology — two years of a Zheng-Dao sponsored certification program before the sponsorship was restructured out of existence — and she takes her work seriously in a way that would surprise people who assume the opposite. She knows drug interactions, contraindications, and proper dosing. She will not sell to someone who is visibly in crisis without first talking to them for ten minutes. She has a waiting list for her nootropic compounds among the Shelf's night-shift factory workers. She has a different list, kept in her head only, for the harder work.",
   "psychology": {
     "facet_weights": {
@@ -172,5 +172,20 @@
     "Meridian Munitions Holdout-380 'Ankle Biter'",
     "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Ferrogate Transit",
+    "Meridian 88",
+    "Zheng-dao Bioelectric",
+    "The Shelf",
+    "Flicker",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Dielectric Hemorrhage Emitter DHE-4 'Blister'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
+  ],
+  "district": "The Shelf"
 }

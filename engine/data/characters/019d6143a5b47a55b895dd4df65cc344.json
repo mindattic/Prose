@@ -13,7 +13,7 @@
   "role": "Logistics, safe house management, and community network — Last Light",
   "age": 27,
   "status": "active",
-  "location": "The Shelf — maintains a small apartment above the community center that doubles as Last Light's operational hub",
+  "location": "The Shelf — maintains a small apartment above the community center that doubles as Last Light's operational hub, near Western and Division",
   "description": "Anya Kozel is the reason Last Light functions at all. She manages the logistics of a pro-bono protection operation in a community with no resources — safe house rotations, transport arrangements, community contact networks, supply chains for medical kits and food, client scheduling, and the thousand administrative details that separate a functioning crew from three idealists shouting into the void. She does this with a budget that wouldn't cover a week's coffee for a corporate crew, and she does it well.\n\nShe came to the Shelf from the Milwaukee Core working class — her parents ran a small printing business that went under when the corporate district's digital infrastructure made physical printing economically impossible. The family relocated to the Shelf when Anya was seventeen. She watched her parents lose everything they'd built — not to malice, but to the indifferent machinery of corporate progress that treats small businesses as statistical noise. She finished her education through Shelf community programs, developed organizational skills through necessity, and joined Last Light because Ruth Agada was the first person she'd met who responded to systemic injustice with organized resistance rather than resignation.\n\nAnya is compact, precise, with dark hair pulled back and the permanently alert expression of someone managing too many moving pieces. She carries a tablet everywhere — the device is her operational hub, containing contact networks, resource inventories, safe house statuses, and the scheduling system that keeps Last Light's operations from collapsing. She dresses practically, sleeps insufficiently, and eats whatever's closest. She is burning out. She knows this. She hasn't stopped because stopping would be worse.",
   "psychology": {
     "facet_weights": {
@@ -191,5 +191,18 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ]
+  ],
+  "related_entities": [
+    "The Milwaukee Core",
+    "Dredge Mining Collective",
+    "The Iron Lotus",
+    "Ashford Signal",
+    "The Shelf",
+    "Flicker",
+    "Vantablack Media",
+    "The Gradient Compact",
+    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
+    "Lead"
+  ],
+  "district": "The Shelf"
 }

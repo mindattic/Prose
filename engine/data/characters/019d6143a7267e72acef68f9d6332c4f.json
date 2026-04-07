@@ -12,7 +12,7 @@
   "role": "Barber and unlicensed tattoo artist",
   "age": 26,
   "status": "active",
-  "location": "Mexicantown Libre, operates from a converted shipping container called Cutline on Gage Circuit",
+  "location": "Mexicantown Libre, operates from a converted shipping container called Cutline on Gage Circuit, near Pulaski and Chicago Ave",
   "description": "Yetunde is compact and kinetic, her movements fast and precise in the way of someone who has trained herself to work in a small space. She keeps one half of her head shaved and the other half in elaborate Bantu knots dyed electric amber — she re-does them herself every two weeks, a meditative ritual. Her skin is dark brown and her forearms are covered from wrist to elbow in her own tattoo work, done in mirrors and by feel, a practice she's perfected over four years. She has bioluminescent patches on her collarbones, soft aquamarine that pulse faintly when she's excited — a geneware mod she saved three months for and has never once regretted.\n\nYetunde runs Cutline with the fierce territorial pride of someone who built everything in it herself. The container is small but immaculate — three chairs, two mirrors salvaged from a closed salon in Chatham Flats, and a digital art wall that rotates through her personal portfolio. She is talkative and sharp, able to read what a client wants from how they sit down, and skilled enough that she routinely has a six-week wait list. Her tattoo work is unlicensed — Helix Biosystems holds the local ink licensing monopoly and she refuses to pay their rates — which means she operates in a quiet legal gray zone she prefers not to discuss with new faces.",
   "psychology": {
     "facet_weights": {
@@ -183,5 +183,17 @@
   "registered_firearms": [
     "Volkov-Saito Precision VS-44 'Fenris'",
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Mexicantown Libre",
+    "Chatham Flats",
+    "Gage Circuit",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Gradient Compact",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

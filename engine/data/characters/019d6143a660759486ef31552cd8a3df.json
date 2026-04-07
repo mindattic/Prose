@@ -12,7 +12,7 @@
   "role": "Expelled citizen turned itinerant E.L.F. minister, seasonal worker",
   "age": 41,
   "status": "active",
-  "location": "Rotating between Waukegan Industrial Shelf and Bridgepoint transit corridor",
+  "location": "Rotating between Waukegan Industrial Shelf and Bridgepoint transit corridor, near Lake Shore and Navy Pier",
   "description": "Nantucket carries the remains of a middle-tier life in their posture — the straight back and deliberate diction of someone who once had an address, an employment record, and opinions about restaurant reservations. What remains is a lean figure in a carefully maintained grey coat that has been repaired so many times the seams are a different color from the fabric, and a face with the hollow-cheeked beauty of someone who eats irregularly but sleeps well because they have made peace with something. Their hair is iron-black streaked with white, kept in tight rope-twists. They have retractable claws — a cosmetic mod from their previous life that they chose to keep because, as they say, 'the body remembers what it was.'\n\nNantucket was a mid-level compliance analyst for Arcturus before a whistleblower action stripped their citizenship and employment simultaneously. They now travel the industrial shelves and transit corridors conducting informal E.L.F. ceremonies for drifter communities — recording the names of electronic spirits in stations and rest stops, offering prayers in exchange for meals, counseling the newly stateless through the particular grief of losing digital existence. They are thoughtful, occasionally pompous, and genuinely compassionate in ways that surprise people who initially read them as performative.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,17 @@
     "Meridian Munitions Wheelgun-38 'Roundhouse'",
     "Street Custom 'Widowmaker' Rigged Power Tool"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Bridgepoint",
+    "Meridian 88",
+    "Forest Hollow",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Arcturus Defense Solutions",
+    "The Waukegan Industrial Shelf",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Synaptic Drift Emitter SDE-4 'Lullaby'",
+    "Iron"
+  ],
+  "district": "Old Harbor"
 }

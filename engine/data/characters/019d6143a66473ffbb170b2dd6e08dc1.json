@@ -12,7 +12,7 @@
   "role": "Neighborhood council chair and mutual aid organizer",
   "age": 52,
   "status": "active",
-  "location": "Highland Park Autonomous Zone",
+  "location": "Highland Park Autonomous Zone, near Michigan Ave and Walton",
   "description": "Nkechi is a broad-shouldered woman with deep brown skin mapped by two decades of outdoor organizing — laugh lines deep enough to hold water, a scar bisecting her left eyebrow from a Ferrogate Transit riot she never talks about publicly. Her hair is close-cropped and shot through with silver she refuses to dye, and she wears her council armband like other people wear jewelry: always present, never decorative. She moves through the Highland Park Autonomous Zone like she owns it, which in the most meaningful sense she does — she helped draft the mutual ownership charter fifteen years ago.\n\nNkechi projects a maternal authority that disarms people before they realize she's already assessed them. She is genuinely warm, relentlessly practical, and quietly furious at almost everything. She believes the revolution will be won not in dramatic confrontations with corponation enforcers but in the accumulated weight of a thousand unglamorous decisions: who gets the medicine vouchers, which family gets the vacant unit, how to keep the food collective solvent when Axiom quietly buys up the distribution network. She is not naive enough to think goodness wins. She is stubborn enough to do it anyway.",
   "psychology": {
     "facet_weights": {
@@ -174,5 +174,13 @@
   "registered_firearms": [
     "Meridian Munitions MM-4 'Breadwinner'",
     "Crucible Industries Ember-9 'Firefly'"
-  ]
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Ferrogate Transit",
+    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
+    "Tessera Corponation",
+    "Silver"
+  ],
+  "district": "The Spires"
 }

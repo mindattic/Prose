@@ -11,7 +11,7 @@
   "role": "Bore Rat elder",
   "age": 67,
   "status": "active",
-  "location": "The Underworld - B3",
+  "location": "The Underworld - B3, near sub-level access near LaSalle and Congress",
   "description": "Mazhar has navigated the tunnels beneath Meridian 88 for forty years. His augmented sonar implant maps passages in real-time. He lost his left leg to a cave-in and uses a hand-carved crutch from a pre-collapse beam.",
   "psychology": {
     "facet_weights": {
@@ -95,5 +95,9 @@
   "carried_weapons": [
     "Kang-Petrov Arms KP-10C 'Bullpup'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88"
+  ],
+  "district": "The Underworld"
 }

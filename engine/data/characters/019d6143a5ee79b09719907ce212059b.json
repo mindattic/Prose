@@ -12,7 +12,7 @@
   "role": "Freelance combat specialist — street samurai",
   "age": 34,
   "status": "active",
-  "location": "The Circuit — neon-lit entertainment and vice district",
+  "location": "The Circuit — neon-lit entertainment and vice district, near Milwaukee and North Ave",
   "description": "Deniz Salazar-Quansah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 34, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a street samurai out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Deniz Salazar-Quansah agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,12 @@
   "registered_firearms": [
     "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Hearthstone Firearms Guardian-12 'Bedside'"
-  ]
+  ],
+  "related_entities": [
+    "The Circuit",
+    "Meridian 88",
+    "The Shelf",
+    "Slagworks Industrial"
+  ],
+  "district": "The Circuit"
 }

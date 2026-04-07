@@ -12,7 +12,7 @@
   "role": "Barber and hair sculptor, runs a one-chair shop in Hamtramck Enclave",
   "age": 52,
   "status": "active",
-  "location": "Hamtramck Enclave — her shop, Vásárhelyi's Cut, is wedged between a noodle stand and a bootleg geneware parlor on Tessera Row",
+  "location": "Hamtramck Enclave — her shop, Vásárhelyi's Cut, is wedged between a noodle stand and a bootleg geneware parlor on Tessera Row, near Western and Division",
   "description": "Remi is a broad-shouldered woman with close-cropped silver hair she keeps so geometric it looks machined. Her hands are her livelihood and her pride — steady, scarred at the knuckles, with two fingers on her left hand replaced by matte-black prosthetic digits that give her razor work an inhuman precision. She has warm brown skin mapped with pale keloid lines along her forearms from a factory accident twenty years ago, and her eyes are naturally deep amber, though she's added cosmetic irises that bloom like sunflowers when she's in good humor. She wears the same style every day: clean work apron, sleeves rolled, a small copper pendant of Ogun that she touches before every haircut.\n\nRemi has the gravitational pull of a person who has simply been somewhere long enough that the neighborhood bends around her. She remembers who your grandmother was, who owes who, and which corponation rep came through last month asking questions they shouldn't ask. She is unhurried, deliberate, and precise — in speech as in blade work — and she has a talent for making people say things in the chair they didn't mean to say out loud. She is not unkind. She is practical in the way of someone who has survived enough to stop being romantic about it.",
   "psychology": {
     "facet_weights": {
@@ -211,5 +211,20 @@
   ],
   "registered_firearms": [
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Grandmother",
+    "Lazarus EC-4 'Companion'",
+    "Tessera Corponation",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Cavitation Pulse Carbine CPC-2 'Bends'",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

@@ -1,0 +1,37 @@
+{
+  "id": "1f4a70169ad7f92e1567c82a75138f00",
+  "name": "Verdant Labs Emergency Spill Response Apron",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A chemical-resistant apron that covers chest to knees, with integral sleeve guards and a splash-proof neck seal. The apron is designed for rapid donning — under three seconds from hanging position to fully sealed. Made from multi-layer chemical barrier film backed by a rigid but flexible substrate.\n\nKept on hooks throughout pharmaceutical production lines and chemical handling areas. When a spill alarm sounds, every worker grabs the nearest apron and seals up. The three-second donning time is the design's most important feature — most chemical injuries occur in the first five seconds after exposure.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "multi-layer chemical barrier film",
+    "rigid flexible substrate",
+    "splash-proof seals"
+  ],
+  "functionality": "Rapid-don chemical protection, 3-second deployment, splash coverage",
+  "what_it_says": "When something spills, you have three seconds to decide whether you're protected. These make sure the answer is yes.",
+  "worn_by": [
+    "pharmaceutical workers",
+    "chemical handlers",
+    "laboratory personnel"
+  ],
+  "manufacturer": "Verdant Labs",
+  "price_range": "Φ120",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Every Emergency Spill Apron on a production floor is found slashed at the neck seal — sabotage designed to ensure the next spill catches everyone unprotected."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "tier 1",
+    "chemical",
+    "spill",
+    "rapid-don",
+    "emergency",
+    "apron"
+  ]
+}

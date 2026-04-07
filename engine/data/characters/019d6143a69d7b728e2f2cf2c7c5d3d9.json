@@ -12,7 +12,7 @@
   "role": "Internal Affairs Investigator, Meridian 88 Metro Police",
   "age": 44,
   "status": "active",
-  "location": "Fort Anchor, administrative wing, Precinct Seven sub-office",
+  "location": "Fort Anchor, administrative wing, Precinct Seven sub-office, near Halsted and Chicago Ave",
   "description": "Praxedes is a lean woman with deep ochre skin, close-cropped natural hair going silver at the temples, and eyes fitted with patterned irises — concentric hexagons in grey and amber, a cosmetic mod she got after her divorce and has never explained to anyone. She dresses in plain charcoal suits that hang precisely, never wrinkled, and moves through rooms the way water moves through pipe: economical, purposeful, without waste. Her face is a professional neutral that colleagues have learned to read like weather — when her jaw tightens slightly on the left side, someone in the room is about to have a very bad week.\n\nShe has been investigating police corruption for eleven years and it has made her a figure of genuine dread inside Fort Anchor. She is not cruel, not performatively righteous — she is simply relentless. She keeps a small data shrine to the E.L.F. called the Unblinking Witness in her desk drawer, leaving it precise timestamps of cases opened and closed. She genuinely believes the institution can be cleaned, and that belief — which many consider delusional — is the only thing that has kept her from going private.",
   "psychology": {
     "facet_weights": {
@@ -205,5 +205,14 @@
   ],
   "registered_firearms": [
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ]
+  ],
+  "related_entities": [
+    "Fort Anchor",
+    "The Quiet Room",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Witness",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Shelf"
 }

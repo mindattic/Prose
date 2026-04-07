@@ -1,0 +1,37 @@
+{
+  "id": "a4d73e9b5d1ec8e7103befbf9d665a6a",
+  "name": "Nexus Integration Haptic Feedback Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Full-hand gloves with a dense array of haptic actuators that simulate physical sensation when interacting with virtual or holographic objects. The wearer can feel the weight, texture, and resistance of digital objects as though they were real. Calibration takes approximately thirty seconds per user.\n\nUsed in holographic design studios, remote surgery training, and high-end gaming environments. The Haptic Feedback Gloves bridge the gap between the digital and physical in a way that makes virtual interaction feel substantive rather than performative.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "haptic actuator array",
+    "gesture-tracking sensors",
+    "adaptive fit membrane"
+  ],
+  "functionality": "Virtual object tactile simulation, gesture tracking, adaptive calibration",
+  "what_it_says": "You work with things that don't physically exist and your hands need to believe they do.",
+  "worn_by": [
+    "holographic designers",
+    "remote surgery trainees",
+    "high-end gamers"
+  ],
+  "manufacturer": "Nexus Integration",
+  "price_range": "Φ3,200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A designer's Haptic Feedback Gloves begin registering touch sensations from objects that aren't in their holographic workspace — something is pushing back from the other side of the display."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 4",
+    "haptic",
+    "virtual",
+    "holographic",
+    "design",
+    "tech"
+  ]
+}

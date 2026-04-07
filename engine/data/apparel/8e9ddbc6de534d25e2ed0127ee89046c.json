@@ -1,0 +1,36 @@
+{
+  "id": "8e9ddbc6de534d25e2ed0127ee89046c",
+  "name": "Verdant Labs Toxin-Barrier Bodysuit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A sealed-skin base layer that prevents dermal absorption of airborne and contact toxins. The fabric's molecular structure is engineered to block molecules above a specific size threshold while allowing water vapor and heat to pass through, maintaining breathability without compromising the chemical barrier.\n\nUsed in pharmaceutical manufacturing, waste processing, and anywhere workers are exposed to substances that can kill through skin contact. The bodysuit is replaced after every shift — the barrier degrades with use and cannot be reliably restored.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "molecular-barrier fabric",
+    "selective-permeability membrane",
+    "sealed seam tape"
+  ],
+  "functionality": "Dermal toxin barrier, breathable chemical protection, single-shift lifespan",
+  "what_it_says": "The air where you work would poison you through your skin, and this suit is the only thing between you and that.",
+  "worn_by": [
+    "pharmaceutical workers",
+    "waste processors",
+    "chemical handlers"
+  ],
+  "manufacturer": "Verdant Labs",
+  "price_range": "Φ140 per shift",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A waste processing crew discovers their Toxin-Barrier bodysuits have already been used — the barrier integrity is degraded, and someone re-sealed the packaging to make them look new."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "tier 2",
+    "toxin barrier",
+    "chemical",
+    "disposable",
+    "hazmat"
+  ]
+}

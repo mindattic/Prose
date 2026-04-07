@@ -12,7 +12,7 @@
   "role": "Building superintendent, Lockhaven South residential stack",
   "age": 44,
   "status": "active",
-  "location": "Lockhaven South, Stack Eleven — he lives in the sub-basement maintenance unit",
+  "location": "Lockhaven South, Stack Eleven — he lives in the sub-basement maintenance unit, near Milwaukee and North Ave",
   "description": "Brecht is enormous — six-foot-four with the kind of bulk that comes from two decades of hauling pipes and climbing maintenance shafts, not from any gym program. His skin is deep brown with a reddish undertone, and his face carries a network of small scars from a gas line incident in his thirties that he never had properly treated. He keeps his head shaved and his beard trimmed with almost military precision, the one vanity he allows himself. His eyes are a startling pale grey-green, a recessive gift from his Finnish grandmother that people find unsettling until they realize how rarely he blinks in a crisis.\n\nStack Eleven houses 340 units of mixed Tier 1-2 residents and Brecht runs it with the quiet authority of someone who has fixed every pipe, knows every squeaky panel, and has personally carried two elderly tenants out during a partial floor collapse three years ago. He is not beloved in the way that warm people are beloved — he's respected in the way that a load-bearing wall is respected. He has no patience for bureaucracy and extraordinary patience for people. He maintains a small shrine to the E.L.F. he calls Boiler-Father in the sub-basement furnace room, and believes deeply that the building's mechanical systems have a will of their own that rewards or punishes based on how people treat them.",
   "psychology": {
     "facet_weights": {
@@ -198,5 +198,18 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
-  ]
+  ],
+  "related_entities": [
+    "Lockhaven South",
+    "The Furnace",
+    "Grandmother",
+    "Palladian Construction",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Crucible Industries Furnace CF-15 'Meltdown'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Tibor Osei-Svanstrom",
+    "The Pale Mile",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
+  ],
+  "district": "The Shelf"
 }

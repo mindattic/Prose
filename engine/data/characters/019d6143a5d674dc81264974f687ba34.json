@@ -12,7 +12,7 @@
   "role": "Evidence removal and scene sanitation — cleaner",
   "age": 43,
   "status": "active",
-  "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure",
+  "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure, near Lake Shore and Wacker",
   "description": "Cem Lund-Bangura is slight and easy to overlook, which is exactly the point. At 43, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a cleaner out of Whitecap, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Cem Lund-Bangura lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
@@ -269,5 +269,15 @@
     "Street Custom 'Glass Garden' Caltrops",
     "Street Custom 'Rebar Rose' Improvised Spike Mace"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "TESSERA PG-2 'Signature'",
+    "The Nearfield",
+    "Pale Harbor Anchorage",
+    "Slagworks Industrial"
+  ],
+  "district": "Old Harbor"
 }

@@ -1,0 +1,36 @@
+{
+  "id": "e21883df8af3225cea49849045492542",
+  "name": "Korvain Dynamics TactilEdge Combat Gloves",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Reinforced tactical gloves with hardened knuckle plates, palm-grip texturing, and articulated finger joints that allow full dexterity while providing impact protection. The back of each hand features a mounting point for accessory modules — flashlights, data jacks, biometric readers.\n\nStandard issue for Korvain's private military contracts and widely adopted by independent security operators who need their hands to do more than just hold a weapon.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "reinforced polymer knuckles",
+    "grip-textured palm",
+    "articulated finger joints"
+  ],
+  "functionality": "Impact protection, accessory mounting, full dexterity retention",
+  "what_it_says": "Your hands are tools of controlled violence and you've equipped them accordingly.",
+  "worn_by": [
+    "private military",
+    "security operators",
+    "tactical teams"
+  ],
+  "manufacturer": "Korvain Dynamics",
+  "price_range": "Φ680",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of TactilEdge gloves found at a crime scene have the biometric reader module still active — and it contains the fingerprints of its last three 'clients.'"
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "tier 3",
+    "tactical",
+    "combat",
+    "Korvain",
+    "modular"
+  ]
+}

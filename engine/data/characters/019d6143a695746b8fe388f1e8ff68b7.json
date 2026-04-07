@@ -12,7 +12,7 @@
   "role": "Synthetic rights lawyer and legal aid advocate",
   "age": 31,
   "status": "active",
-  "location": "Mexicantown Libre",
+  "location": "Mexicantown Libre, near Western and Chicago Ave",
   "description": "Pemba is slight and angular with Tibetan-Greek features that sit together in an arrangement people find either striking or unsettling depending on their capacity for complexity. Their hair is geneware-modified to shift between deep indigo and black depending on ambient temperature — it reads as almost purely black in the warm press of the city and flares deep blue in the rare cold outside. They keep it cropped on the left side and long on the right, which they braid with a ritual obsessiveness before court appearances. Their eyes are their natural dark brown; they have refused cosmetic iris work on the grounds that they don't want anything distracting when they're arguing.\n\nPemba runs a one-person legal aid operation out of a rented room above a taqueria in Mexicantown Libre, taking cases that established firms won't touch: wrongful deactivation suits on behalf of ELF-adjacent synthetic constructs, labor violations affecting tier-1 workers who can't afford filing fees, and the occasional housing case. They are brilliant, mercurial, fueled by a righteous fury they wear openly, and they win cases they should not win through a combination of research depth and a willingness to embarrass corporations in procedural hearings until they settle. They are also behind on rent and surviving on the UBC stipend plus whatever modest fees their rare paying clients provide.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,9 @@
     "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'",
     "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Mexicantown Libre"
+  ],
+  "district": "The Shelf"
 }

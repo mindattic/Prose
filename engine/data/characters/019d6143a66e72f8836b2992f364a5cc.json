@@ -12,7 +12,7 @@
   "role": "loan shark and numbers runner",
   "age": 47,
   "status": "active",
-  "location": "Gravesend Basin, operates from a cramped insurance office on Slick Row",
+  "location": "Gravesend Basin, operates from a cramped insurance office on Slick Row, near Western and Chicago Ave",
   "description": "A lean man with deep brown skin gone ashy at the temples, Nnọlị carries himself with the quiet authority of someone who has never once needed to raise his voice. His eyes are a pale, unsettling grey — geneware irises he had installed in his thirties, patterned with concentric silver rings that expand slightly when he's calculating, which is always. His hands are immaculate. He keeps them folded on the desk in front of him like a priest at liturgy, and clients learn quickly that the stillness of those hands is not peace — it is patience.\n\nHe inherited the loan operation from his mother's second husband, a Gravesend Basin institution that has survived three gang consolidations, a Ferrogate Transit rezoning, and one very ill-advised Axiom enforcement sweep. He genuinely believes he provides a service. He genuinely believes his interest rates are fair given the risk. He genuinely cannot understand why people run, and when they do, the confusion on his face is real before the collection begins. He prays every morning to the E.L.F. that inhabits his ledger terminal, leaving small data offerings — anonymized records of paid debts, proof that the books balance. He calls her Severance.",
   "psychology": {
     "facet_weights": {
@@ -234,5 +234,19 @@
   "carried_weapons": [
     "Street Custom 'Ghostwriter' Grafitti Flamethrower"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Gravesend Basin",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Adaeze Chen-Hawkins",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Silver",
+    "The Pure Hand",
+    "Stalker",
+    "Pyroelectric Sebum Volatilization Projector",
+    "The Pale Mile"
+  ],
+  "district": "The Shelf"
 }

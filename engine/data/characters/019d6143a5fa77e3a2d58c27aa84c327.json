@@ -12,7 +12,7 @@
   "role": "Data diviner and dream interpreter operating out of a cramped stall in a night market",
   "age": 34,
   "status": "active",
-  "location": "Gage Circuit night market, Meridian 88 — stall number 77, between a noodle cart and a geneware piercing parlor",
+  "location": "Gage Circuit night market, Meridian 88 — stall number 77, between a noodle cart and a geneware piercing parlor, near Milwaukee and North Ave",
   "description": "Dzintars is narrow and angular everywhere — sharp collarbones, sharp wrists, a face that is mostly cheekbones and the dark crescents of perpetually under-slept eyes. Their heritage is a long tangle of Latvian amber traders and Ghanaian textile merchants and Kazakh steppe wanderers, and something of all three shows in their coloring — warm brown skin, light-catching hazel eyes, and when they move in certain light their geneware irises shift through copper to pale green like something geological. They keep their black hair cropped close on the sides with a single dramatic shock of white at the front, a natural hyperpigmentation quirk they have never modified. Their fingernails are always painted with tiny circuit-trace patterns in silver.\n\nThey operate with the brisk efficiency of someone running a slightly disreputable but very legitimate business, which is exactly what they are doing. They don't perform mystery — they find it exhausting when clients expect robes and candles. They have a folding table, a neural interface that connects to three second-hand data arrays, and a methodology they have refined over eight years of practice. Dream interpretation is the service; data divination is the engine. They cross-reference the linguistic content of client dream reports against ELF signal patterns, local data weather, and a proprietary dataset of symbolic correlations they have been building since they were twenty-two. Their accuracy rate is genuinely unsettling and they are not entirely sure why it works.",
   "psychology": {
     "facet_weights": {
@@ -232,5 +232,22 @@
   "registered_firearms": [
     "Arcturus Defense Solutions AR-7 'Mandate'",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
-  ]
+  ],
+  "related_entities": [
+    "Gage Circuit",
+    "Meridian 88",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The United Workers Front",
+    "The Heritage Vault",
+    "Aslan Vasquez-Chatterjee",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Silver",
+    "Slagworks Industrial",
+    "Hazel Brink",
+    "The Pale Mile",
+    "Bashir Quansah-Mehrotra"
+  ],
+  "district": "The Circuit"
 }

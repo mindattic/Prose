@@ -10,7 +10,7 @@
   "description": "Obed Takahashi-Fofana is the only private investigator in Meridian 88 who specializes in the Underbelly — the vast, unmapped network of tunnels, maintenance corridors, abandoned infrastructure, and forgotten spaces that exists beneath the city's surface. When someone disappears below ground, he is the person you call, because no one else will go down there.\n\nJapanese-Malian heritage, fifty-two years old, compact and wiry with the build of someone who spends his life crawling through spaces that weren't designed for human habitation. His skin is dark and his eyes have been surgically modified for low-light conditions, giving them a faintly reflective quality like an animal caught in headlights. He has lived partially underground for over twenty years and knows the tunnel system better than any living person — a knowledge he maintains exclusively in his own memory because digitizing it would endanger the communities that depend on the tunnels' obscurity.\n\nThe surface world considers him eccentric at best and disturbing at worst. His clients are typically people who have exhausted every other option — families whose members have fled underground, corporate entities looking for employees who went to ground (literally), and occasionally CorpSec units who need someone retrieved from a place their agents are afraid to go. He charges high fees because the work is dangerous and unique, but he has been known to waive his fee entirely for cases involving children or people fleeing genuine danger.",
   "affiliation": "Independent — the tunnels don't recognize organizational affiliations",
   "tier": "Tier 1",
-  "location": "A chamber in the Underbelly accessed through a maintenance hatch behind a condemned building in Ashfield — decorated with salvaged objects arranged with surprising artistry",
+  "location": "A chamber in the Underbelly accessed through a maintenance hatch behind a condemned building in Ashfield — decorated with salvaged objects arranged with surprising artistry, near sub-level access near Dearborn and Jackson",
   "specialization": "Locating people who have disappeared into Meridian 88's sub-surface infrastructure",
   "methods": [
     "Personally navigating the Underbelly tunnel network, which he has memorized over twenty years",
@@ -60,5 +60,14 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "The Heritage Vault",
+    "Ashfield",
+    "The Unmapped Hours",
+    "The Gradient Compact",
+    "Tibor Osei-Svanstrom"
+  ],
+  "district": "The Underworld"
 }

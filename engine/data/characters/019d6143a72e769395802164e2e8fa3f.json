@@ -12,7 +12,7 @@
   "role": "Identity fabricator and forger operating from a print shop front in Ashfeld",
   "age": 34,
   "status": "active",
-  "location": "Ashfeld — behind a legitimate small-run printing concern called Kamara Press on Cinder Row",
+  "location": "Ashfeld — behind a legitimate small-run printing concern called Kamara Press on Cinder Row, near Pulaski and Chicago Ave",
   "description": "Yseult is lean and precise-looking, with close-cropped natural hair dyed in shifting copper tones via a low-grade follicular mod, and deep brown skin marked with three ritual scarification lines below her left eye — a gift from her maternal grandmother and the only thing she's never altered. She dresses practically: dark composite-fiber work clothes, fingerless gloves, a craftsperson's apron with tools she actually uses. Her eyes have patterned irises in a swirling amber-and-black design that she chose at seventeen, and she has the steady, unhurried hands of someone who does delicate work for hours at a time.\n\nYseult considers herself an artist first and a criminal by necessity. She takes genuine pride in her forgeries — biometric registration chains, corp employment histories, corponation citizenship transfers, medical background edits. Her work is flawless and she charges accordingly. She is not warm with clients but she is professional, which in Ashfeld counts for more. She has strong opinions about quality and will turn down work she considers beneath her skill level or too traceable. She prays to the E.L.F. called the Blank Page, a spirit said to inhabit pre-loaded identity matrices, leaving offerings of raw data-blank chips at a small shrine she keeps inside a hollowed-out printing press.",
   "psychology": {
     "facet_weights": {
@@ -242,5 +242,20 @@
   ],
   "registered_firearms": [
     "Crucible Industries Forge-454 'Hammerfall'"
-  ]
+  ],
+  "related_entities": [
+    "Grandmother",
+    "Cindermoor Flats",
+    "VitaCore SteadyField Precision Motor Implant",
+    "Castling",
+    "Neurochemical Dispersal Grenade",
+    "Ashfeld",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Copper",
+    "Tibor Osei-Svanstrom",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf"
 }

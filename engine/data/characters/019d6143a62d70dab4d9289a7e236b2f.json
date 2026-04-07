@@ -12,7 +12,7 @@
   "role": "Electronic and physical observation expert — surveillance specialist",
   "age": 64,
   "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave and Roosevelt",
   "description": "Ilhan Kozlov-Asamoah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 64, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a surveillance specialist out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIlhan Kozlov-Asamoah has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -269,5 +269,13 @@
   "carried_weapons": [
     "Street Custom 'Glass Garden' Caltrops"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian 88",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Clover"
+  ],
+  "district": "Old Harbor"
 }

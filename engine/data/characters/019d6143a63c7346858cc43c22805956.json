@@ -12,7 +12,7 @@
   "role": "Cross-district contraband specialist — smuggler",
   "age": 39,
   "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Chicago Ave",
   "description": "Kadiatou Kobayashi-Appiah-Kubi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 39, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a smuggler out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Kadiatou Kobayashi-Appiah-Kubi agrees on two things: she is worth the fee, and she is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
@@ -273,5 +273,11 @@
   ],
   "registered_firearms": [
     "Tessera TK-9 Proteus 'Shapeshifter'"
-  ]
+  ],
+  "related_entities": [
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

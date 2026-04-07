@@ -12,7 +12,7 @@
   "role": "Subterranean Scavenger — tunnel-born teenager who scouts and salvages decommissioned Ferrogate Transit infrastructure for parts and materials",
   "age": 14,
   "status": "active",
-  "location": "The sub-level junctions beneath Garfield Rack and Grand Crossing Gate, Undertow eastern reaches",
+  "location": "The sub-level junctions beneath Garfield Rack and Grand Crossing Gate, Undertow eastern reaches, near sub-level access near LaSalle and Congress",
   "description": "Obi is small for fourteen and has the particular wiry quality of a child raised on irregular calories and constant movement — he is not malnourished exactly, but he is built close to the bone. His skin is a deep warm brown with a slight grey cast from tunnel particulate that no amount of washing fully removes. He has no geneware modifications, no augmentations — he has a kid's face, still round at the cheeks, with large dark eyes that have a near-photoreceptive quality honed by years of navigating low-light environments without tech. His hair grows in dense spirals, usually crammed under a salvaged transit worker's hard hat three sizes too large for his head.\n\nHe is the thing that tunnels make of children when they're loved but not wealthy: resourceful past the point of impressiveness, with a child's emotional rawness operating inside an adult's practical competence. He knows which Ferrogate Transit maintenance schedules to memorize, which decommissioned sections still carry live current, and which ELF-haunted junction boxes might shock you if you reach in without speaking first. He has never been to the surface. This is not a wound yet — at fourteen it still feels more like a fact — but it is becoming a question. He is beginning to want to see it, and beginning to be afraid of what that wanting will cost him.",
   "psychology": {
     "facet_weights": {
@@ -194,5 +194,16 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "Ferrogate Transit",
+    "Garfield Rack",
+    "Arcturus Defense Solutions Ballistic Helmet BH-9 'Ironhead'",
+    "Irontide Tidal Energy",
+    "Lacuna Genomics",
+    "Gravimetric Collapse Charge GCC-9",
+    "Tibor Osei-Svanstrom"
+  ],
+  "district": "The Underworld"
 }

@@ -12,7 +12,7 @@
   "role": "Tailor and seamstress, Lakeview Neon district",
   "age": 38,
   "status": "active",
-  "location": "Lakeview Neon, a narrow second-floor shop above a synth-sake bar called The Peristaltic",
+  "location": "Lakeview Neon, a narrow second-floor shop above a synth-sake bar called The Peristaltic, near North Ave and Milwaukee",
   "description": "Brenno is lanky and precise, the kind of man who looks slightly annoyed at rest but is actually just concentrating. He has warm-amber skin, dark eyes with geneware irises that shift between deep violet and burnt gold depending on his mood — installed partly for aesthetics, mostly because he wanted to test how clients reacted to them before doing a full commission. His hands are his most important feature: long-fingered, callus-mapped, perpetually holding something — chalk, thread, a measuring tape coiled around two knuckles. He keeps his head shaved and wears a single garnet stud in his left ear that has been there since he was nineteen.\n\nHe works at the seam between tiers: his clients are Tier 2 people who want to look Tier 3, and occasional Tier 3 people who want something that doesn't look corporate-issued. He is perceptive about bodies and what people want their bodies to say, which makes him an accidental confessor — clients will tell him things in the fitting room they'd tell nobody else. He is not a gossip, but he is an archivist. He remembers everything.",
   "psychology": {
     "facet_weights": {
@@ -169,5 +169,20 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Lakeview Neon",
+    "Zheng-Dao Bioelectric Peristaltic Breach Driver",
+    "Vantablack Media Confessor Tap — 'The Booth'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Tessera Corponation",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Slagworks Industrial",
+    "Gold"
+  ],
+  "district": "The Laceworks"
 }

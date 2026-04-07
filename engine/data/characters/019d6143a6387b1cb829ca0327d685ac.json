@@ -12,7 +12,7 @@
   "role": "Trauma surgeon at Aurochs Medical Complex, Tier 3 salaried position with Helix Biosystems oversight",
   "age": 41,
   "status": "active",
-  "location": "Aurochs Medical Complex, Trauma Bay Seven",
+  "location": "Aurochs Medical Complex, Trauma Bay Seven, near Fullerton and Damen",
   "description": "Isolde is tall and angular, with light brown skin and the kind of posture that comes from years of standing over operating tables — slightly forward in the shoulders, weight balanced, always ready. She has gene-modded bioluminescent tracery along her collarbones and upper arms: a delicate pattern of cool blue that pulses faintly when her heart rate elevates. She got it years ago as an aesthetic choice and now she regrets it, because it functions as an involuntary stress indicator in high-stakes situations. She compensates by wearing high collars when she can. Her dark hair is cut in a precise bob that she maintains herself with surgical shears.\n\nShe is formidable in the OR and genuinely difficult outside of it. Her intelligence is not subtle — she does not soften assessments, she does not cushion bad news, and she has very limited patience for institutional inefficiency, which means she is in a state of near-constant low-grade conflict with Helix Biosystems administration. She is not cruel; she is exact. She saves lives with focused ferocity and then goes home to an apartment she has never bothered to furnish properly and eats takeout alone, which she insists she prefers. The gap between those two versions of herself is something she doesn't look at directly.",
   "psychology": {
     "facet_weights": {
@@ -246,5 +246,12 @@
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
     "Arcturus Defense Solutions Pneumatic Gauntlet PG-1 'Pile Driver'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Lacuna Genomics"
+  ],
+  "district": "The Circuit"
 }

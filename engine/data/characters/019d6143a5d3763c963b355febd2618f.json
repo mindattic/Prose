@@ -12,7 +12,7 @@
   "role": "climate refugee and caravan matriarch",
   "age": 67,
   "status": "active",
-  "location": "Escanaba Gateway (tent city on the eastern approach; caravan camps in the transit yard)",
+  "location": "Escanaba Gateway (tent city on the eastern approach; caravan camps in the transit yard), near Michigan Ave South and Cermak",
   "description": "Celestine is the kind of woman who makes a tent city feel like a neighborhood. She is large and deliberate in her movements, with the deep black skin and broad hands of a woman who has been doing physical work since she could walk. Her hair is cut close to her skull, entirely white, and she wears a faded headwrap printed with a pattern that was once vivid green and orange but has softened into something quieter over many years of washing in whatever water was available. Her left arm carries a long burn scar from shoulder to elbow, keloided and smooth, which she does not hide and does not discuss. She has no geneware, no augmentations visible, and wears her unmodified body like a deliberate statement — though she'd say she simply never had the money or the reason.\n\nCelestime came to the Meridian 88 periphery fourteen years ago with forty-two people from a drowned coastal collective in what was once the Gulf of Guinea. She has buried eleven of them and watched the rest scatter into various fates. The dozen who remain with her are her caravan — mostly elderly, a few children, two young adults who were born on the road. She is not sentimental about this. She is organized, practical, and possessed of a moral authority that comes not from rank but from the fact that she has made the right call in more crises than anyone else in the camp has faced. She prays to the E.L.F. called Tidecaller, which she believes is the spirit of the ocean that swallowed her home.",
   "psychology": {
     "facet_weights": {
@@ -207,5 +207,15 @@
       "status_change": ""
     }
   ],
-  "changelog": []
+  "changelog": [],
+  "related_entities": [
+    "Escanaba Gateway",
+    "Meridian 88",
+    "Flicker",
+    "Full Clearance (The Erasure Mix)",
+    "Bathysphere Networks",
+    "Street Custom 'Glass Garden' Caltrops",
+    "The Pure Hand"
+  ],
+  "district": "Old Harbor"
 }

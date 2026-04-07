@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit bus operator, Route 14 Grainfort-Deepwell loop",
   "age": 51,
   "status": "active",
-  "location": "Deepwell Station depot, Route 14 loop",
+  "location": "Deepwell Station depot, Route 14 loop, near sub-level access near LaSalle and Congress",
   "description": "Petros is a heavy, deliberate man with a broad forehead, close-trimmed gray beard, and the particular kind of stillness that comes from spending twenty-two years driving the same route through the same city. His skin is dark brown and weathered from the years before he got the depot job, when he worked outdoor shifts in all weather. He has no cosmetic mods and refuses them on principle, though he doesn't lecture anyone about it. His Ferrogate uniform fits him like a second skin — he irons it himself, every morning — and his driver's cabin is decorated with a string of hand-painted prayer beads from his Ghanaian grandmother's tradition, a small paper icon from the Orthodox Easter tradition of his Russian grandfather's family, and a data tablet loaded with offerings for the route's E.L.F., which he calls 'the Conductor.'\n\nPetros has driven Route 14 long enough that he's watched the neighborhoods it passes through be demolished, rebuilt, flooded, rezoned, and gentrified. He carries this history with a kind of weathered grief that is not bitterness — he has made his peace with impermanence in the abstract while remaining entirely resistant to it in the specific. He knows his regulars by name and schedule, and when they stop appearing, he notices. He is not a man who talks much, but when he does, people listen — there is a gravity to him that age and consistency have built.",
   "psychology": {
     "facet_weights": {
@@ -182,5 +182,16 @@
   "registered_firearms": [
     "Crucible Industries Storm Carbine SC-4 'Downpour'",
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ]
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Street Custom 'Rosary' Bead Garrote",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "Grandmother",
+    "The CEO",
+    "Ferrogate Transit",
+    "CONDUCTOR",
+    "Déjà Vu"
+  ],
+  "district": "The Underworld"
 }

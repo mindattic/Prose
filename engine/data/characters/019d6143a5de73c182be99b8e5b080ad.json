@@ -13,7 +13,7 @@
   "role": "Crew lead and master diver — Boneyard Saints",
   "age": 36,
   "status": "active",
-  "location": "Old Harbor — operates from a converted shipping container on the remaining dry dock",
+  "location": "Old Harbor — operates from a converted shipping container on the remaining dry dock, near Michigan Ave South and Cermak",
   "description": "Corva Lam dives into the drowned ruins of Old Harbor and brings back things that should have stayed buried. Pre-collapse infrastructure, sealed server farms, military hardware that was never officially there — the flooded districts are an archaeological site for technology the corps want recovered and the city wants forgotten. Corva knows these waters better than anyone alive because she grew up on them. Her family ran fishing operations in the harbor before the collapse raised the water level and swallowed everything below the second floor.\n\nShe built the Boneyard Saints from salvage divers and ruin-runners who shared two qualities: the skill to survive Old Harbor's flooded labyrinth and the nerve to go deep when the sonar returns something that shouldn't be there. The ruins are not empty. Pre-collapse automated security systems still operate on backup power in some sections. Marine life has adapted to the submerged infrastructure in ways that marine biologists would find fascinating and divers find terrifying. And then there are the sounds — low-frequency resonance from deep structures that shouldn't be producing sound at all.\n\nCorva is broad-shouldered, weathered by salt water and UV exposure, with short dark hair and the permanently squinting eyes of someone who's spent too many hours in glare. Her hands are scarred from coral cuts and salvage work. She moves with the deliberate economy of a diver — every gesture conserves energy, every step is placed. On land she seems slightly wrong, like a marine creature forced to perform on dry ground.",
   "psychology": {
     "facet_weights": {
@@ -194,5 +194,16 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPA-20E 'Thunderclap'",
     "Hearthstone Firearms Defender-38 'Snubnose'"
-  ]
+  ],
+  "related_entities": [
+    "Tender Collapse",
+    "Dust & Meridian Saints",
+    "The Resonance Communion",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
+    "Bathysphere Networks",
+    "The Voltage Saints",
+    "Tibor Osei-Svanstrom",
+    "The Pure Hand"
+  ],
+  "district": "Old Harbor"
 }

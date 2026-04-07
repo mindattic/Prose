@@ -12,7 +12,7 @@
   "role": "Clothing and fashion vendor, specializing in geneware-compatible garments and custom aug-fit tailoring",
   "age": 31,
   "status": "active",
-  "location": "The Alban Souk, Bronzeline",
+  "location": "The Alban Souk, Bronzeline, near Halsted and Division",
   "description": "Sabine is medium height with her Ghanaian mother's rich dark skin and her Armenian father's long, expressive hands that she uses constantly when she talks — sketching shapes in the air, measuring invisible distances, framing imaginary necklines. Her geneware includes a set of bioluminescent tracery lines running from her temples down her jaw and throat, a deep blue-violet that she originally got for professional display purposes (showing clients how light interacts with their own potential geneware) and has now had so long she forgets other people can see them. Her hair is geneware-modified to grow in precise architectural shapes she redesigns quarterly; currently a structured asymmetric sweep with the texture of woven textile rather than hair. She dresses to demonstrate, always — in things she has made or modified, things that show what she can do.\n\nSabine's stall in the Alban Souk has expanded twice since she set it up seven years ago and now occupies a corner unit with a small fitting alcove curtained off from the main market floor. She makes most of what she sells — adaptive fabrics that accommodate tail geneware, spine-following cuts for aug users with dorsal hardware, clothes that move with retractable claws rather than tearing on them. She is opinionated about aesthetics in the specific way of someone who thinks about it constantly and seriously, and will talk about garment theory for as long as you'll allow, which most of her regulars have stopped allowing because they have places to be. She is cheerfully pushy about what will suit a person and usually right, which is what keeps people coming back.",
   "psychology": {
     "facet_weights": {
@@ -223,5 +223,15 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'",
     "Street Custom 'Baptism' Electrified Water Cannon"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Alban Souk",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Bronzeline",
+    "The Shelf",
+    "The Pure Hand",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
+  ],
+  "district": "The Shelf"
 }

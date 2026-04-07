@@ -12,7 +12,7 @@
   "role": "Chemical and biological agent specialist — poisoner",
   "age": 38,
   "status": "active",
-  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Western and Chicago Ave",
   "description": "Suki Sorokin-Gyasi is compact and densely muscled, built low to the ground like something designed to survive impacts. At 38, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a poisoner out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Suki Sorokin-Gyasi is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
@@ -275,5 +275,12 @@
   "registered_firearms": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
     "Crucible Industries Suppressed Compact SC-2 'Murmur'"
-  ]
+  ],
+  "related_entities": [
+    "Meridian 88",
+    "The Gradient Compact",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
+  ],
+  "district": "The Shelf"
 }

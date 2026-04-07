@@ -12,7 +12,7 @@
   "role": "Information trader and intelligence analyst — broker",
   "age": 36,
   "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Chicago Ave",
   "description": "Erkin Nordin-Asante-Mensah is average height but with a presence that fills more space than the body accounts for. At 36, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Erkin Nordin-Asante-Mensah describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
@@ -276,5 +276,14 @@
   "registered_firearms": [
     "Crucible Industries Viper Mk.III 'Copperhead'",
     "Tessera Networked SMG TNSM-3 'Chorus'"
-  ]
+  ],
+  "related_entities": [
+    "Adaptive Camouflage Skin",
+    "Masquerade",
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems"
+  ],
+  "district": "The Shelf"
 }

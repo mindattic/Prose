@@ -12,7 +12,7 @@
   "role": "loan shark and bookmaker operating out of Gravesend Basin",
   "age": 44,
   "status": "active",
-  "location": "Gravesend Basin, specifically a converted shipping office above the Tideline Brokerage pawn front",
+  "location": "Gravesend Basin, specifically a converted shipping office above the Tideline Brokerage pawn front, near Ashland and Division",
   "description": "Solveig is a broad-shouldered woman with deep brown skin and the pale silver hair that runs in her Norwegian grandmother's line, kept in a severe bun pinned with a data-spike she uses as a stylus. Her face is heavy-featured and composed, the kind of face that has absorbed a great deal of information without letting any of it back out. She wears reading lenses with ledger overlays almost always active, giving her irises a faint amber glow when she's calculating — which is nearly always. A small tattoo on her left wrist reads 'Φ+Φ=Φ' in the old symbolic script, her personal joke about compound interest.\n\nSolveig runs her loan operation with the temperament of an extremely patient accountant who happens to employ two large men with ceramic-reinforced knuckles. She is not cruel; she is precise. Late payments are met first with reminders, then with restructured terms, then with consequences calibrated to the debtor's ability to absorb them. She considers gratuitous violence wasteful and unprofessional. She genuinely believes she provides a service to people the corponation banks won't touch, and this belief is not entirely wrong, which is what makes her dangerous. She prays to the E.L.F. Φ-Mater every Thursday, leaving small interest-accruing data packages as offerings.",
   "psychology": {
     "facet_weights": {
@@ -223,5 +223,17 @@
   "carried_weapons": [
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Gravesend Basin",
+    "Grandmother",
+    "Tessera Corponation",
+    "Adaeze Chen-Hawkins",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Nightlight"
+  ],
+  "district": "The Shelf"
 }

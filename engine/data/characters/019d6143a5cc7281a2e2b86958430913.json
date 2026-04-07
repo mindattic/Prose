@@ -12,7 +12,7 @@
   "role": "Transit Police Officer, Ferrogate Transit Security",
   "age": 28,
   "status": "active",
-  "location": "Kessler Interchange, Meridian 88",
+  "location": "Kessler Interchange, Meridian 88, near North Ave and Damen",
   "description": "Brennus is a broad-shouldered young man, Ghanaian-Croatian in the specific way that produced his particular amber skin tone, tight dark curls, and a jaw that looks like it was designed to take a punch and was then tested extensively. He wears the Ferrogate Transit Security uniform with the particular posture of someone who chose this job over something better and has spent two years finding peace with that choice. His cosmetic geneware is subtle: bioluminescent freckles across his cheekbones that pulse a faint amber when he's calm and edge toward orange-red when his heart rate climbs — a mod he got at eighteen that he now considers a professional liability and is saving to have adjusted. His colleagues call him Two-Stop because he has never, in two years of duty at Kessler Interchange, needed more than two stops on the escalating force protocol before a situation resolved.\n\nKessler is a brutal posting — five rail lines converging in a subterranean cavern full of vending shrines, checkpoint queues, and the particular desperation of people who missed the last platform-credit subsidy. Brennus has developed a talent for the moment just before things escalate, which he deploys through an almost theatrical calm and a habit of learning names. He knows the regulars by face, knows which unhoused people shelter in which alcoves, knows which Ferrogate checkpoint operators skim scanning fees. He has not reported the last thing. He is thinking about reporting it.",
   "psychology": {
     "facet_weights": {
@@ -175,5 +175,14 @@
   "registered_firearms": [
     "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
     "Tessera TK-5 Compact 'Clerk'"
-  ]
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Arcturus GE-1 'Garrison'",
+    "Meridian 88",
+    "Big Rig",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
+  ],
+  "district": "The Circuit"
 }

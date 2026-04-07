@@ -10,7 +10,7 @@
   "description": "Aroha Zhukov-Wiredu was a military tracker for Sterling-Nakamura's urban warfare division before going freelance. In the military she tracked deserters, infiltrators, and enemy combatants through the most hostile urban environments on the planet. In civilian life she tracks fugitives, missing persons, and anyone who doesn't want to be found — and she finds them, because in twenty years of tracking she has never lost a quarry.\n\nHer method is relentlessly physical. She operates below the digital layer entirely, reading the city the way a forest tracker reads the woods — broken stems become scuff marks, animal tracks become footprints, disturbed earth becomes moved debris. She can determine how long ago someone passed through a corridor by the rate at which dust has resettled. She can estimate a target's physical condition by the depth and spacing of their footprints. She can predict where someone will go based on the urban terrain the way a hunter predicts where an animal will drink.\n\nShe is a blunt instrument in a world that increasingly values digital sophistication, and she doesn't care. Her clients hire her when the target has gone analog — when they've ditched their BCI, abandoned their digital identity, and disappeared into the physical city. Other investigators stop at that point. Aroha starts. She will follow a target until one of them collapses, and it's never her.",
   "affiliation": "Independent — operates on retainer for three Tier 2-3 firms who need fieldwork done",
   "tier": "Tier 2",
-  "location": "A spartan apartment above a gym in Steamvent Alley — nothing on the walls, nothing personal, packed bag always by the door",
+  "location": "A spartan apartment above a gym in Steamvent Alley — nothing on the walls, nothing personal, packed bag always by the door, near North Ave and Milwaukee",
   "specialization": "Physical tracking and fugitive recovery in urban environments",
   "methods": [
     "Urban tracking — reading footprints, disturbances, and physical evidence of passage through city environments",
@@ -65,5 +65,13 @@
   "registered_firearms": [
     "Arcturus Defense Solutions ADM-10 'Overseer'",
     "Kang-Petrov Arms KP-19 'Workhorse'"
-  ]
+  ],
+  "related_entities": [
+    "BLACKWATER",
+    "Flicker",
+    "The Peninsula",
+    "Tibor Osei-Svanstrom",
+    "Stalker"
+  ],
+  "district": "The Circuit"
 }

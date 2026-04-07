@@ -8,9 +8,17 @@
   "classification": "public",
   "description": "The Quanta monetary system operates on a blockchain-adjacent distributed ledger known as the Entanglement Distribution Network (EDN). Unlike classical blockchain architectures that rely on mathematical consensus between untrusted nodes, the EDN leverages quantum entanglement to create a physically verified transaction record. Each transaction generates a unique quantum state signature that is simultaneously recorded across a minimum of seven geographically distributed EDN nodes. The entangled verification states make retroactive tampering not merely computationally difficult but physically impossible — altering one record would require violating the No-Cloning Theorem and breaking quantum entanglement across multiple nodes simultaneously. No computational power in existence, or theoretically possible, can achieve this.\n\nThe network comprises 8.4 million EDN nodes distributed across every inhabited region on Earth. Approximately 62% are operated by the twelve QFIC member corponations, 23% by licensed independent operators, and the remaining 15% by sovereign entities that retained enough infrastructure to participate. Each node maintains a local quantum state register that entangles with its verification partners during transaction processing. A standard transaction — purchasing food at a Shelf vendor, paying a transit fare, receiving a UBC stipend — completes in 0.003 seconds. The payer's wallet generates a transaction request, the nearest EDN node creates a verification entanglement, the entangled state propagates to confirmation nodes, and the transfer finalizes when three of seven nodes confirm state coherence. The entire process is invisible to the user. You think the word \"pay.\" Your BCI sends the signal. The noodle costs Φ0.8. You eat.\n\nThe cryptographic foundation rests on quantum key distribution (QKD) protocols that make eavesdropping detectable at the physical level. Any attempt to intercept a transaction in progress disturbs the quantum states involved, collapsing the verification entanglement and flagging the transaction for review. This is not a software security measure that can be patched around or a mathematical encryption that can be brute-forced with sufficient compute. It is a property of quantum mechanics. The universe itself enforces transaction security. Sterling-Nakamura's marketing division has described this as \"physics-grade encryption,\" which is technically accurate and strategically terrifying.\n\nThe system's resilience extends to node failure and network disruption. If an EDN node goes offline — hardware failure, power loss, deliberate sabotage — its verification responsibilities automatically redistribute to surviving nodes within its entanglement cluster. The network has sustained simultaneous failure of up to 12% of global nodes (during the 2187 Pacific Rim infrastructure attack) without a single transaction failing to verify. The redundancy is not just engineered. It is emergent — a property of the entanglement topology that Sterling-Nakamura's own architects admit they did not fully design. The network routes around damage the way water routes around stone. It was built to be unkillable, and it has proven to be exactly that.",
   "related_entities": [
-    "sterling_nakamura",
-    "qfic",
-    "edn"
+    "Dredge Mining Collective",
+    "Ashford Signal",
+    "Hearthstone Firearms Homestead-12 'Door Slam'",
+    "FOUNDATION",
+    "TESSERA PG-2 'Signature'",
+    "Tessera TAR-12 'Consensus'",
+    "CRUCIBLE Auric Sovereign Bespoke Arm",
+    "Idris Forsberg-Quaye",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Adaeze Chen-Hawkins",
+    "THEOREM"
   ],
   "credibility": "verified",
   "story_hooks": [

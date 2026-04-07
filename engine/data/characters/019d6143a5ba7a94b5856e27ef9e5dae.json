@@ -12,7 +12,7 @@
   "role": "High-speed vehicle operations specialist — wheelman",
   "age": 26,
   "status": "active",
-  "location": "The Overhang — residential shelves built onto megastructure exteriors",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Kedzie and Division",
   "description": "Aybek Alvarez-Okonkwo is average height but with a presence that fills more space than the body accounts for. At 26, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a wheelman out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAybek Alvarez-Okonkwo has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
@@ -271,5 +271,15 @@
   "carried_weapons": [
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
-  "registered_firearms": []
+  "registered_firearms": [],
+  "related_entities": [
+    "Adaptive Camouflage Skin",
+    "Ironveil Canopy",
+    "Meridian 88",
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Clover"
+  ],
+  "district": "The Shelf"
 }
