@@ -1,0 +1,43 @@
+{
+  "id": "f1a6c3e9d7b24058f1a6c3e9d7b24058",
+  "name": "Solstice Gear Packable Rain Shell",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A lightweight packable rain shell from Solstice Gear, a mid-market outdoor and urban-utility brand that does not pretend to be anything it is not. The jacket stuffs into its own chest pocket to form a palm-sized pouch, weighs almost nothing, and keeps rain out effectively for several hours before the seams begin to breathe. The fabric is a three-layer bonded nylon-polyester laminate with taped seams and a DWR-equivalent coating. Pit-zip vents. Adjustable hood with a single-hand cord lock. Available in high-vis yellow, slate, and a dark red that fades gracefully.\n\nThis is the jacket that lives in a bag until it is needed. Tier 2 workers who commute on foot, cyclists, delivery operators, and anyone who has been caught in a lake-effect storm without adequate gear owns or covets one. It is not stylish in any considered way. It is waterproof and it weighs nothing, which is its own kind of style.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "three-layer bonded nylon-polyester laminate",
+    "DWR coating",
+    "taped seams",
+    "nylon ripstop"
+  ],
+  "functionality": "",
+  "what_it_says": "You are practical and you have been wet before. You keep this in your bag because the Great Lakes do not care about your plans.",
+  "worn_by": [
+    "commuters",
+    "cyclists",
+    "delivery operators",
+    "outdoor workers",
+    "anyone who walks to work"
+  ],
+  "manufacturer": "Solstice Gear",
+  "price_range": "Φ55",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character finds a Solstice shell stuffed into a storm drain during a downpour — the pouch contains a data chip wrapped in polymer film instead of the jacket",
+    "A Tier 4 exec is spotted wearing a Solstice rain shell over their Halversen overcoat during an unexpected storm; the image circulates as either humanizing or humiliating depending on who is sharing it",
+    "A Shelf community co-op bulk-orders Solstice shells after a brutal wet season; the shipment is intercepted and the investigation leads somewhere complicated"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 2",
+    "rain shell",
+    "packable",
+    "waterproof",
+    "utility",
+    "non-tech"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,41 @@
+{
+  "id": "8e4c017b3a92f6d51be08c3d7f2a4e69",
+  "name": "Orbital Systems Gravlock Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A chunky, utilitarian boot in brushed gunmetal with visible magnetic coil housing built into the sole platform. The sole is thick and flat — nearly 4cm of integrated tech — with coil vents along the edges. Straps replace laces, securing the boot tightly for use in zero or low gravity. Originally designed for orbital construction crews; civilian and transport versions are now available.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "brushed aluminum housing",
+    "high-density polymer boot body",
+    "electromagnetic coil array",
+    "padded neoprene liner"
+  ],
+  "functionality": "Magnetic sole locks to ferrous surfaces with adjustable hold strength (0–200kg). Coil control via BCI or manual dial on the ankle strap. Works in vacuum with sealed liner.",
+  "what_it_says": "You spend time off-planet, on a station, or aboard a ship. This is working gear for people who leave the ground.",
+  "worn_by": [
+    "orbital construction workers",
+    "station crew",
+    "cargo haulers",
+    "zero-G sports athletes"
+  ],
+  "manufacturer": "Orbital Systems Co.",
+  "price_range": "Φ250 - Φ310",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The boots malfunction and lock to the hull mid-EVA — and someone is cutting the tether.",
+    "A pair surfaces groundside, scorch-marked, with traces of vacuum-rated sealant that's only used on one specific station."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "mag-lock",
+    "zero-G",
+    "orbital",
+    "tactical",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

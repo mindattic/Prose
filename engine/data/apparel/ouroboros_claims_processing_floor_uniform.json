@@ -1,0 +1,34 @@
+{
+  "name": "Ouroboros Claims Processing Floor Uniform",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_office_wear",
+  "manufacturer": "Ouroboros Internal Procurement",
+  "description": "Mandated attire for Ouroboros claims processing staff in Tier 2 and 3 branch offices, this uniform communicates institutional reliability through deliberate blandness. A pressed charcoal-grey poplin shirt with a small Ouroboros ouroboros-snake sigil embroidered at the breast pocket pairs with slate trousers in a durable poly-wool blend. The fabric is treated with a light stain-repellent finish — practical for long desk shifts — and the collar is designed to sit flat over standard subdermal neck implants. BCI port access is provided at the right temple via a recessed fabric notch. The uniform is issued to employees, not purchased, and must be returned upon termination of contract. Many employees quietly note that it fits no one perfectly.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ85",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The Ouroboros claims uniform is a symbol of grinding institutional employment in M88 — stable but airless. Workers often personalize with pins, patches, or accessories within strict guidelines. The uniform is widely recognized and sometimes earns sympathy from clients who've spent hours navigating Ouroboros bureaucracy.",
+  "story_hooks": [
+    "A claims processor discovers that a uniform issued to them bears the registry of an employee who died three years ago — and their employment file is still active.",
+    "Someone wearing a stolen Ouroboros uniform is systematically denying legitimate claims in a Tier 1 branch, and no one can tell they don't work there.",
+    "The uniforms from a specific batch have a microfabric sensor woven in, tracking biometric stress responses during client interactions — data Ouroboros sells to insurers."
+  ],
+  "tags": [
+    "ouroboros",
+    "corporate",
+    "office",
+    "claims",
+    "uniform",
+    "augment_compatible",
+    "tier2",
+    "tier3",
+    "institutional",
+    "finance"
+  ],
+  "id": "8f8f02a608214383a87d69a8464e5a42",
+  "parent_corponation": "Ouroboros Energy"
+}

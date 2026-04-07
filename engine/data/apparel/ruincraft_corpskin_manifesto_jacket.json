@@ -1,0 +1,45 @@
+{
+  "id": "f02d7b8e1a3c546d9e0f2a4b7c8d1e3f",
+  "name": "Ruincraft Corpskin Manifesto Jacket",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A Shelf-made oversized jacket assembled from weather-membrane scraps, transit seat vinyl, and deconstructed Ouroboros-brand workwear. Every panel is covered in hand-stenciled text — excerpts from the Meridian Labor Accord (crossed out), pirate-broadcast transcripts, and the phrase ΦUANTA IS A LIE repeated across the left shoulder in drip-paint red. Corporate logos appear inverted, stitched upside-down as deliberate mockery.\n\nNo two jackets are identical. The construction itself is the statement — visible seams, mismatched thread, patches over patches.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "weather-membrane scraps",
+    "transit seat vinyl",
+    "salvaged Ouroboros workwear panels",
+    "mismatched industrial thread",
+    "spray paint",
+    "acrylic stencil ink"
+  ],
+  "functionality": "Weather-membrane panels provide moderate acid-rain resistance. Deep interior pockets are large enough for a compressed rebreather. Deliberately unfinished edges allow quick field modification.",
+  "what_it_says": "This person rejects the system loudly, on purpose, and has the craft to make it beautiful.",
+  "worn_by": [
+    "Shelf artists",
+    "anti-corponation activists",
+    "pirate broadcasters",
+    "DIY fashion makers"
+  ],
+  "manufacturer": "Self-made — Shelf collective craft",
+  "price_range": "Φ0 (materials only) or Φ80–Φ200 traded",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A specific jacket contains a complete transcript of an internal Ouroboros memo about Shelf water contamination, hidden in the layered text.",
+    "CorpSec has begun cataloguing these jackets as gang-adjacent material — wearing one is now grounds for a stop-and-scan.",
+    "A Tier 5 fashion house has begun producing luxury replicas at Φ4,000 each, and the Shelf makers are furious."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "protest",
+    "diy",
+    "anti-corporate",
+    "shelf",
+    "salvage",
+    "tier-1",
+    "subcultural"
+  ],
+  "parent_corponation": ""
+}

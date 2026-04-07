@@ -1,0 +1,49 @@
+{
+  "id": "2f62257e9173ace5676684a980e7f29c",
+  "name": "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+  "type": "weapon",
+  "aliases": [
+    "Scalpel",
+    "MPC-9",
+    "Surgeon's Rifle"
+  ],
+  "category": "dmr",
+  "description": "The MPC-9 Scalpel is a compact designated marksman rifle designed for urban precision work where a full-length DMR is too cumbersome. The weapon chambers 6.5mm caseless through a 400mm barrel — short for a precision platform — but compensates with a BCI-integrated ballistic computer that wrings maximum accuracy from the abbreviated barrel length. The result is a weapon that delivers 1-MOA accuracy at 600 meters in a package not much larger than a carbine.\n\nMeridian's open-architecture philosophy extends to the Scalpel's optics rail, which accepts any manufacturer's scope or smart-sight. The weapon ships with a basic 1-8x variable optic, but most operators replace it with their preferred precision optic within days. The rifle's compact dimensions allow it to be deployed from vehicle windows, building interiors, and rooftop positions where full-length DMRs are unwieldy.\n\nAt Φ6,800, the Scalpel occupies the mid-range of the DMR market. It sacrifices the extreme-range capability of longer-barreled platforms for the versatility of a weapon that functions as both a precision rifle and a fighting carbine. For urban operators who need precision capability without dedicating a team member to a full-size DMR, the MPC-9 provides a compelling compromise.",
+  "manufacturer": "MERIDIAN MUNITIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Compact precision barrel",
+    "BCI ballistic compensation",
+    "Open-architecture optics interface",
+    "Short-barrel accuracy optimization"
+  ],
+  "specifications": "caliber: 6.5mm caseless\neffective_range: 600m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 20 rounds\nweight: 3.6 kg",
+  "tactical_use": "The Scalpel provides urban-optimized precision fire. Its compact dimensions allow deployment in confined spaces where full-length DMRs cannot maneuver, while the BCI ballistic computer maintains accuracy despite the short barrel. The weapon's dual role as precision rifle and fighting carbine allows the designated marksman to participate in close-quarters actions without transitioning to a secondary weapon. In urban operations where engagement distances rarely exceed 400 meters, the Scalpel provides all the precision capability needed in a more versatile package.",
+  "cultural_context": "The Scalpel represents the urbanization of precision marksmanship. Traditional marksmen view it as a compromise that sacrifices range for convenience. Urban operators view it as the evolution of the DMR for the environments where most people actually fight. The debate mirrors the broader tension between frontier and urban combat doctrine that runs through Meridian 88's military culture.",
+  "known_users": [
+    "Urban designated marksmen",
+    "Vehicle-based security teams",
+    "Freelance precision operators",
+    "Close-quarters overwatch"
+  ],
+  "story_hooks": [
+    "A Scalpel operator made a critical shot through two panes of vehicle glass at 400 meters using the BCI ballistic computer's glass-penetration calculation. The shot was technically impossible with a conventional rifle of the same barrel length.",
+    "Meridian's compact precision technology has been stolen by a competitor. The knock-off 'Scalpel-type' rifles flooding the market use inferior barrel steel that fails after 2,000 rounds."
+  ],
+  "ammunition_type": [
+    "6.5mm caseless match",
+    "6.5mm caseless standard"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "compact",
+    "urban",
+    "precision",
+    "Meridian",
+    "tier 2",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

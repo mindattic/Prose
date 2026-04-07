@@ -1,0 +1,50 @@
+{
+  "name": "Arcturus DM-1 'Pallbearer'",
+  "type": "automaton",
+  "classification": "Disposal — Autonomous Corpse Retrieval",
+  "aliases": [
+    "Pallbearer",
+    "Body Bag",
+    "The Collector"
+  ],
+  "manufacturer": "Raptor Aerospace Division",
+  "description": "The DM-1 is designed for a function nobody wants to think about: autonomous corpse retrieval from active combat zones. The six-wheeled platform navigates battlefields, identifies deceased individuals through vital sign absence confirmation, loads them into its refrigerated cargo bay using articulated manipulator arms, and transports them to designated collection points. The DM-1 operates during and after combat operations, moving through areas that may still be under fire to recover bodies before decomposition or battlefield scavenging compromises identification.\n\nThe DM-1 is not a weapon. It is the thing that comes after the weapons are done. Its presence on a battlefield is a statement that the killing is expected to be sufficient to require industrial-scale body recovery. Arcturus deploys them in advance of major operations, pre-positioning them at staging areas as a logistical preparation step. When soldiers see Pallbearers being unloaded, they know the command structure has calculated the expected body count and prepared accordingly.\n\nThe DM-1's most disturbing operational edge case involves its vital sign confirmation system. The unit is designed to confirm death before loading — but the sensors have a margin of error. There are documented incidents of the DM-1 loading individuals who were unconscious, in shock, or in low-vital-sign states caused by augmentation malfunction. Arcturus's official documentation addresses this with the phrase 'retrieval protocol includes triage assessment with a statistical confidence interval of 99.2%,' which means that roughly one in 125 pickups might not actually be dead.",
+  "tier_availability": "Tier 4+",
+  "legality": "Military logistics — licensed",
+  "autonomy_level": "Fully autonomous",
+  "dimensions": "3.0m length, 1.5m width, 1.2m height",
+  "weight": "800 kg empty",
+  "power_source": "Diesel-electric, 36-hour endurance",
+  "locomotion": "Six-wheeled all-terrain",
+  "armament": [
+    "None — logistical platform"
+  ],
+  "sensors": [
+    "Vital sign detection (cardiac, respiratory, neural)",
+    "Identification systems (facial, BCI, dental)",
+    "Battlefield hazard detection"
+  ],
+  "countermeasures": "N/A — non-combat platform. Can be destroyed with conventional weapons but serves no tactical purpose to do so.",
+  "known_deployments": [
+    "Post-combat recovery operations",
+    "Disaster response",
+    "Mass casualty events"
+  ],
+  "story_hooks": [
+    "A Pallbearer has returned to a collection point with a cargo bay full of bodies. One of them is still alive — they were in augmentation-induced low-vital-sign stasis. They were picked up from a battlefield and have no idea where they are, who won, or how long they've been in a refrigerated box with corpses.",
+    "Pallbearers are being deployed to the Shelf in advance of an operation that hasn't been announced. The machines are arriving. Everyone knows what follows."
+  ],
+  "cultural_context": "The Pallbearer forces confrontation with the industrialization of death. It is the machine that says: we have calculated how many of you will die, and we have prepared accordingly. Its pre-deployment is the most honest communication a corponation makes.",
+  "tags": [
+    "automaton",
+    "logistics",
+    "corpse retrieval",
+    "battlefield",
+    "arcturus",
+    "corporate",
+    "war",
+    "tier 4"
+  ],
+  "id": "bf6a054f709e8f74a05beb64ca9419b9",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

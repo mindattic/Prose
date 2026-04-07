@@ -1,0 +1,34 @@
+{
+  "id": "e9e414bdebe9904d69e3968b752abebf",
+  "name": "Relationship Anarchist",
+  "type": "archetype",
+  "category": "relationship",
+  "description": "Refuses all conventional relationship structures and labels",
+  "behavioral_signature": "Won't define what they are to anyone, resists every box",
+  "under_stress": "Freedom becomes avoidance and they can't commit to anything",
+  "at_rest": "Connected to many, owned by none",
+  "will_always": [
+    "resist labels and definitions"
+  ],
+  "will_never": [
+    "accept traditional relationship hierarchies"
+  ],
+  "unless": [
+    "someone makes structure feel like freedom instead of a cage"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Rule Breaker",
+      "threshold": 0.65,
+      "context": "rejecting norms"
+    }
+  ],
+  "opposite_of": [
+    "Possessive"
+  ],
+  "tags": [
+    "freedom",
+    "structure",
+    "labels"
+  ]
+}

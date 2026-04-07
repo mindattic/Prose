@@ -1,0 +1,38 @@
+{
+  "id": "a3f7c2e1b09d4561f8e3a7c2d1b09456",
+  "name": "Unnamed Cargo Pants (Patched)",
+  "type": "apparel",
+  "category": "pants",
+  "description": "No-brand cargo pants that have been repaired so many times the original fabric is almost a minority. Patches in denim, synth-canvas, and heat-fused mylar strips cover the knees, seat, and inner thighs. The pockets still work — all six of them — which is the only thing that matters on the Shelf.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "recycled poly-cotton blend",
+    "salvaged denim patches",
+    "mylar heat-tape"
+  ],
+  "functionality": "none",
+  "what_it_says": "You've been surviving longer than most. These pants have a history and so do you.",
+  "worn_by": [
+    "Shelf residents",
+    "scavengers",
+    "day laborers"
+  ],
+  "manufacturer": "Unknown / self-repaired",
+  "price_range": "Φ3 - Φ6",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A hidden inner pocket contains a folded note in a language the current owner doesn't read.",
+    "The patch on the left knee is cut from a Tier 4 corporate uniform — someone's past is stitched in."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 1",
+    "patched",
+    "salvage",
+    "shelf",
+    "cargo"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,34 @@
+{
+  "id": "ce142f3b68efbac6d1f9c225ab651fab",
+  "name": "Overwatch",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Controls the battlefield from a distance, providing covering fire and intelligence",
+  "behavioral_signature": "Always on the high ground, always watching the full picture",
+  "under_stress": "Loses the overview and gets tunnel vision on one threat",
+  "at_rest": "Scanning, always scanning",
+  "will_always": [
+    "seek elevated or concealed positions with full field of view"
+  ],
+  "will_never": [
+    "get drawn into close combat voluntarily"
+  ],
+  "unless": [
+    "a teammate needs immediate close-range support and no one else can provide it"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Sniper Mind",
+      "threshold": 0.8,
+      "context": "distance combat"
+    }
+  ],
+  "opposite_of": [
+    "Brawler"
+  ],
+  "tags": [
+    "distance",
+    "overwatch",
+    "support"
+  ]
+}

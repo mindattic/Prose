@@ -1,0 +1,33 @@
+{
+  "id": "a68bf0b14deff04da12021efa9e2ee27",
+  "name": "Chaos Terror",
+  "type": "archetype",
+  "category": "fear",
+  "description": "The world is one bad day from complete disorder and they can feel it",
+  "behavioral_signature": "Creates rigid structures and routines to prevent the collapse they sense coming",
+  "under_stress": "Routine shatters and they unravel with it",
+  "at_rest": "Meticulous, structured, finds peace in predictability",
+  "will_always": [
+    "maintain order in their environment"
+  ],
+  "will_never": [
+    "embrace spontaneity willingly"
+  ],
+  "unless": [
+    "the rigid structure itself becomes the threat"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Control Freak",
+      "threshold": 0.8,
+      "context": "fear of disorder"
+    }
+  ],
+  "opposite_of": [
+    "Chaos Creator"
+  ],
+  "tags": [
+    "rigid",
+    "order-obsessed"
+  ]
+}

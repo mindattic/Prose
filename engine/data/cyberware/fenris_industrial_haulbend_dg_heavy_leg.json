@@ -1,0 +1,58 @@
+{
+  "id": "2b8f1d6e4a09c37550fd82e1b3a6c904",
+  "name": "FENRIS INDUSTRIAL HaulBend DG-Heavy Leg",
+  "brand_name": "FENRIS INDUSTRIAL",
+  "product_name": "Fenris Industrial HaulBend DG-Heavy Digitigrade Work Leg",
+  "type": "cyberware",
+  "aliases": [
+    "Mule Legs",
+    "Haul Bends",
+    "Fenris Dogs"
+  ],
+  "category": "digitigrade_leg",
+  "body_location": "legs",
+  "description": "The HaulBend DG-Heavy is the only digitigrade leg in Fenris Industrial's catalog, and it exists because biomechanical engineers discovered that the reversed joint geometry distributes axial load fundamentally differently than a standard prosthetic leg — offloading stress from the lumbar spine and redirecting it through the tarsus and metatarsal structure during heavy vertical lifts. The result is a work leg rated for sustained carries of 280 kg and short-duration lifts exceeding 400 kg, with a reinforced titanium-alloy skeleton and hydraulic damper nodes at the knee and ankle equivalents. It is not fast, agile, or elegant.\n\nFenris markets the HaulBend exclusively to heavy labor sectors: deep-construction, freight handling, and industrial salvage. The digitigrade profile was a source of significant internal debate — Fenris knew the stigma would limit adoption. In practice, the legs are common in the Shelf tier's industrial zones where the ergonomic benefits outweigh the social cost, and where workers are already accustomed to being treated as less than fully human by the tiers above them.",
+  "manufacturer": "FENRIS INDUSTRIAL",
+  "tier_availability": "Tier 1-3",
+  "legality": "Licensed",
+  "installation_requirements": "Bilateral hip disarticulation, reinforced spinal anchor bolts at L2-S1, heavy-duty surgical facility rated for load-bearing implants",
+  "rejection_risk": "Moderate — heavy mechanical stress at hip socket; Fenris' cost-reduction measures result in lower biocompatibility coatings than premium brands, 18% socket irritation rate",
+  "maintenance": "Hydraulic damper fluid replacement every 60 days under heavy use, full structural inspection every 6 months, joint seal replacement annually",
+  "specifications": "{\"sustained_carry_kg\": 280, \"peak_lift_kg\": 420, \"joint_type\": \"Reversed digitigrade, hydraulic damper nodes\", \"skeleton_material\": \"Reinforced titanium alloy\", \"weight_kg\": 16.8, \"top_speed_kmh\": 22, \"power_source\": \"External battery pack, hip-mounted, 10hr heavy use\", \"lumbar_load_reduction_percent\": 38, \"surface_grip\": \"Ribbed steel toe platform\", \"rated_environment\": [\"Industrial\", \"Construction\", \"Salvage\", \"Waterfront\"]}",
+  "side_effects": [
+    "Severe fatigue in the hip anchor region after extended heavy-load sessions",
+    "Low top speed makes wearers vulnerable in emergency egress situations",
+    "Digitigrade profile causes denial of entry to most Tier 2+ non-industrial establishments, effectively limiting social mobility",
+    "Hydraulic fluid leak risk in extreme cold creates slipping hazard and potential fire risk near open flames"
+  ],
+  "cultural_context": "HaulBend legs are a marker of the industrial underclass in Meridian 88 — visible proof that a worker's body has been optimized for labor at the expense of social legibility. Workers in the Shelf tier's freight and construction zones wear them without ceremony, because the alternative is chronic spinal injury. The stigma that follows them home from work is a secondary injury that Fenris Industrial's warranty explicitly does not cover. Tier 3 and above residents often cite HaulBend wearers as evidence of 'Shelf creep' when arguing for digitigrade exclusion ordinances.",
+  "known_users": [
+    "Shelf-tier heavy freight and logistics workers",
+    "Deep-construction labor crews",
+    "Industrial salvage operators",
+    "Workers with pre-existing spinal injuries seeking load-capable replacement",
+    "Underworld enforcers who need strength over speed"
+  ],
+  "story_hooks": [
+    "A HaulBend wearer has been quietly documenting workplace injuries caused by defective hydraulic nodes — Fenris Industrial's legal team wants the documentation buried",
+    "A freight worker wearing HaulBend legs was the only witness to a high-profile cargo theft; their testimony is being dismissed because of anti-digitigrade bias in the adjudicator's office",
+    "A black-market modification shop is offering HaulBend hydraulic nodes converted into concealed weapon systems — the source of the modified components points somewhere unexpected"
+  ],
+  "street_price": "Φ25,000",
+  "licensed_price": "Φ44,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "digitigrade",
+    "legs",
+    "heavy_load",
+    "industrial",
+    "fenris_industrial",
+    "working_class",
+    "stigmatized",
+    "licensed",
+    "labor",
+    "digitigrade_leg"
+  ],
+  "parent_corponation": ""
+}

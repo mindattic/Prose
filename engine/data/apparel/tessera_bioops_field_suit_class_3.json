@@ -1,0 +1,34 @@
+{
+  "name": "TESSERA BioOps Field Suit — Class 3",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_tactical",
+  "manufacturer": "TESSERA Biotech",
+  "description": "TESSERA's security personnel don't look like traditional corpsec. The BioOps Field Suit is constructed from a living mycoweave — a textile threaded with engineered fungal filaments that respond to environmental biohazard markers. When the suit detects airborne pathogens, engineered retrovirals, or unauthorized geneware trigger compounds, the mycoweave tightens its pore structure to near-impermeability and signals through a soft bioluminescent pulse along the collar seam. The exterior is a pale, clinical white with TESSERA's double-helix emblem rendered in raised stitching at the left breast. The suit is designed to be visually non-threatening — TESSERA's field presence is as much about information gathering and specimen recovery as enforcement.\n\nThe BioOps suit includes sealed specimen-pouch integration along the thigh and forearm, and the hood assembly can be raised and sealed to the collar with a single gesture command through BCI integration. Because TESSERA operatives frequently interact with geneware subjects — willing and otherwise — the suit is engineered with wide geneware accommodation: tail clearance, dorsal slitting for early-stage wing configurations, and horn-clearance headgear options. The living mycoweave requires quarterly maintenance at a TESSERA service node to remain fully functional, creating ongoing dependency on TESSERA infrastructure.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ740",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "TESSERA security makes people uncomfortable in a different way than Arcturus does. Where Arcturus operatives project threat, BioOps personnel project clinical interest — the sense that you are a subject rather than a person. In geneware communities, being approached by a BioOps officer is called 'being swabbed,' regardless of what actually happens.",
+  "story_hooks": [
+    "A BioOps suit is recovered from a canal with its mycoweave still active and its TESSERA operator ID scrubbed — the suit's living filaments have begun growing beyond their designed parameters.",
+    "A Tier 2 activist group has obtained a decommissioned BioOps suit and is studying the mycoweave's pathogen-detection thresholds, believing TESSERA is using it to identify and flag specific engineered genomes.",
+    "An operative's suit begins signaling a biohazard alert in a district where TESSERA has publicly stated no active compounds are present — either the suit is malfunctioning, or TESSERA is lying."
+  ],
+  "tags": [
+    "corpsec",
+    "tactical",
+    "tessera",
+    "biohazard",
+    "mycoweave",
+    "aug_compatible",
+    "geneware_compatible",
+    "restricted",
+    "bci_integrated",
+    "specimen_recovery"
+  ],
+  "id": "69744f7a79a84007a0396c42a5951b7c",
+  "parent_corponation": "Tessera Corponation"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "b6a48b4816c90a1600855bde6c76660d",
+  "name": "Vantablack PA-1 'Pacifier'",
+  "type": "weapon",
+  "aliases": [
+    "Pacifier",
+    "Quiet Down",
+    "The Muzzle"
+  ],
+  "category": "stun weapon",
+  "description": "A rifle-format directed-energy weapon that fires a focused microwave beam at ranges up to 50 meters, heating the target's skin surface to create an intense burning sensation without causing visible injury. The Active Denial System technology was developed decades ago but miniaturized by Vantablack into a shoulder-fired platform that a single operator can carry and deploy. The Pacifier causes immediate reflexive retreat — the pain is so intense that targets abandon their position, drop held objects, and flee the beam path involuntarily.\n\nVantablack sells the PA-1 exclusively to corporate clients for crowd dispersal and perimeter defense. The weapon's appeal is its deniability — it causes extreme pain but leaves no marks, no wounds, and no forensic evidence. A crowd hit by Pacifier beams will disperse screaming, but medical examination will find nothing wrong with them. This makes the PA-1 the preferred tool for suppressing protests, demonstrations, and labor actions where visible casualties would create negative publicity.\n\nThe PA-1's limitations are well-documented but rarely discussed in marketing materials. The beam penetrates clothing to approximately 1/64th of an inch of skin depth, which means that metallic fabrics, wet clothing, or improvised reflective barriers significantly reduce effectiveness. The weapon also cannot distinguish between targets — the beam affects everyone in its path, including bystanders, children, and individuals with medical conditions that make heat exposure dangerous.",
+  "manufacturer": "Aperture Talent Agency",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — corporate security with crowd control authorization",
+  "street_price": "Φ35,000",
+  "base_technologies": [
+    "Miniaturized active denial system",
+    "Focused millimeter-wave emission",
+    "Thermal pain induction"
+  ],
+  "specifications": "range: 50 meters effective\nbeam width: 2 meters at 30 meters\neffect: Intense skin heating (54°C surface temperature)\npower source: Heavy-duty battery pack, 30 minutes continuous operation\nweight: 8.5 kg with battery\nlength: 900mm",
+  "tactical_use": "Crowd dispersal, perimeter defense, and area denial. Operators sweep the beam across groups to force retreat. Effective against unarmed civilians and lightly equipped targets. Ineffective against prepared opponents with reflective or wet barrier materials.",
+  "cultural_context": "The Pacifier is the weapon that labor organizers fear most — not because it is the most dangerous, but because it leaves no evidence. Workers hit by Pacifier beams during strike actions cannot prove they were attacked. Medical records show no injuries. Security footage shows people running away from nothing. The weapon's name is a cruel joke: it pacifies by causing invisible agony.",
+  "known_users": [
+    "Vantablack corporate security",
+    "Multiple corponation crowd control units",
+    "Meridian 88 riot suppression teams (denied)"
+  ],
+  "story_hooks": [
+    "A Pacifier has been modified to operate at higher power, causing second-degree burns instead of surface heating. The modification makes the weapon's effects visible and documentable — someone is deliberately creating evidence of corporate violence that the original weapon was designed to conceal.",
+    "Medical researchers have identified a cluster of cancer cases in a district where Pacifier deployments were frequent during a prolonged labor dispute. Vantablack insists the technology is safe. The epidemiological data suggests otherwise."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "stun",
+    "weapon",
+    "directed-energy",
+    "microwave",
+    "crowd-control",
+    "vantablack",
+    "corporate",
+    "pain",
+    "tier 4",
+    "less_lethal"
+  ],
+  "parent_corponation": "Vantablack Media"
+}

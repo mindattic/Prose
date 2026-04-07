@@ -1,0 +1,42 @@
+{
+  "id": "2e8f4a7b3c1d9052e8f4a7b3c1d90523",
+  "name": "Solberg-Maru Thermal Work Layer",
+  "type": "apparel",
+  "category": "top",
+  "description": "Solberg-Maru makes workwear for people who spend time in cold industrial environments — the kind of cold that comes from unheated warehouses, exposed infrastructure catwalks, or the Lake Erie waterfront from November through April. Their thermal work layer is a fitted crew-neck shirt in brushed synthetic fleece-back jersey, designed to be worn under a jacket or hi-vis vest without bunching. The exterior is smooth enough to slide under outerwear; the interior is deeply brushed and traps heat efficiently. Reinforced panels run along the forearms and across the upper back — these areas get the most friction from tools, harnesses, and machinery.\n\nAvailable in safety orange, slate, and a dark olive. No branding on the front — just a small woven label at the inside collar. The stitching at the cuffs is doubled and uses a stretch-resistant thread that doesn't fail when you're gripping something cold. This is a shirt that has never once been worn to a party and doesn't need to be.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "brushed synthetic fleece-back jersey",
+    "reinforced polyweave panels (forearm/upper back)",
+    "stretch-resistant cuff stitching"
+  ],
+  "functionality": "",
+  "what_it_says": "You work outside or in unheated industrial spaces and you've learned to dress for it. Practical without being showy. The kind of competence that doesn't announce itself.",
+  "worn_by": [
+    "dock workers",
+    "construction crews",
+    "infrastructure maintenance staff",
+    "warehouse operators",
+    "cold-climate outdoor workers"
+  ],
+  "manufacturer": "Solberg-Maru Industrial Apparel",
+  "price_range": "Φ42",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Solberg-Maru thermal was found at the bottom of a Lake Erie maintenance shaft — still on a body that officially drowned in a district three kilometers away.",
+    "The dark olive colorway was discontinued after a specific incident involving a work crew that hasn't been publicly explained; the remaining stock commands a strange premium among people who know.",
+    "A Tier 3 organizer uses the Solberg-Maru as a way to move through Tier 2 industrial zones without drawing attention — but someone has started noticing the pattern."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 2",
+    "thermal",
+    "workwear",
+    "functional",
+    "industrial",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

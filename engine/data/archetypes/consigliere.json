@@ -1,0 +1,33 @@
+{
+  "id": "2cb635f521dcefd70fb8b687de03a9fd",
+  "name": "Consigliere",
+  "type": "archetype",
+  "category": "power",
+  "description": "The advisor whose whisper carries more weight than a decree",
+  "behavioral_signature": "Shapes decisions by being the last voice the leader hears",
+  "under_stress": "Manipulates the leader's fears to maintain influence",
+  "at_rest": "Loyal, insightful, always available for counsel",
+  "will_always": [
+    "position themselves as indispensable to the leader"
+  ],
+  "will_never": [
+    "give advice that weakens their own position"
+  ],
+  "unless": [
+    "the leader's survival genuinely requires their sacrifice"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Shadow Leader",
+      "threshold": 0.8,
+      "context": "advisory power"
+    }
+  ],
+  "opposite_of": [
+    "Anti Leader"
+  ],
+  "tags": [
+    "advisor",
+    "influential"
+  ]
+}

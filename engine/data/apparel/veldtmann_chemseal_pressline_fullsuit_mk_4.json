@@ -1,0 +1,43 @@
+{
+  "id": "a3f7c2e1b84d906f5521cc78de3a0b49",
+  "name": "Veldtmann ChemSeal Pressline Fullsuit MK-4",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A head-to-toe chemical processing suit in slick ochre-yellow with black reinforcement panels at the knees, elbows, and shoulder seams. The outer shell is triple-laminate vitrex-polymer over a woven aramid core, seams ultrasonically welded and taped. Gloves are integrated with breakaway wrist rings for quick swap. A fixed hood accommodates a drop-face respirator mask sold separately.\n\nWorn in acid-bath processing lines and solvent mixing floors across Tier 1 and 2 industrial zones. Most suits arrive already stained — pale chemical burns ghost the forearms of every used unit on the market.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "triple-laminate vitrex-polymer",
+    "woven aramid",
+    "nitrile-butyl integrated glove shell",
+    "ultrasonic-welded seam tape"
+  ],
+  "functionality": "Rated for Class-B chemical splash and corrosive vapor exposure up to four hours. Integrated boot covers with anti-slip sole plates. Breakaway wrist rings allow glove hot-swap without full doffing. Single back-entry zipper with chemical-seal flap.",
+  "what_it_says": "You work where the chemicals live, and you probably didn't choose that.",
+  "worn_by": [
+    "chemical plant floor workers",
+    "acid-bath line operators",
+    "solvent mixing technicians",
+    "Shelf-side industrial laborers"
+  ],
+  "manufacturer": "Veldtmann Industrial Systems",
+  "price_range": "Φ 180–Φ 340",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A worker's suit has a faded name tag that doesn't match anyone on the current shift roster — the previous owner disappeared three weeks ago.",
+    "A batch of MK-4s was quietly recalled after a seam-tape defect caused two acid burns — the recall notice was buried, and units are still in circulation.",
+    "Someone has been leaving handwritten notes inside the chest pocket of suits at Locker Bay 7 — coordinates, written in solvent-resistant marker."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "hazmat",
+    "chemical",
+    "industrial",
+    "tier1",
+    "tier2",
+    "fullsuit",
+    "workwear"
+  ],
+  "parent_corponation": ""
+}

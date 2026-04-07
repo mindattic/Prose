@@ -1,0 +1,57 @@
+{
+  "id": "10e919b0fd8613fd5cdb544d8ee3cbc7",
+  "type": "faction",
+  "name": "The Phantom Exchange",
+  "aliases": [
+    "Phantom",
+    "The Exchange",
+    "PE"
+  ],
+  "motto": "If it exists, we can move it. If it doesn't exist yet, give us an hour.",
+  "description": "The Phantom Exchange is a black market logistics operation of about 70 members that specializes in the movement and storage of goods that no legitimate logistics company will touch. Not smuggling in the traditional sense — the Harbor Rats handle that — but the complex, multi-step logistics of moving contraband through Meridian 88's internal systems: from point of entry to storage, from storage to processing, from processing to distribution, all while evading the surveillance systems, corporate inspections, and law enforcement operations that make moving illegal goods inside the city as difficult as getting them through the port.\n\nThe Exchange operates a network of hidden warehouses, disguised transport vehicles, and corrupted logistics systems that can move anything from a vial of experimental pharmaceuticals to a stolen military vehicle across the city without triggering a single sensor. Their expertise is in the systems themselves — they know how corporate tracking works, where the blind spots are, and how to exploit the gaps between jurisdictions that exist even in a corporate-sovereign city.",
+  "ideology": "Logistics is power. The corponations control the flow of goods the same way they control everything else — through systems that can be understood and subverted. The Exchange subverts them for profit.",
+  "territory": "Hidden warehouses scattered throughout the city. Primary hub in Old Harbor's industrial district.",
+  "leadership": "A logistics savant known as 'the Dispatcher' who previously managed supply chains for Ringo Corponation before being fired for discovering theft in the executive ranks and refusing to stay quiet about it.",
+  "methods": [
+    "Hidden warehouse management for contraband storage",
+    "Disguised transport operations through city systems",
+    "Exploitation of blind spots in corporate tracking infrastructure",
+    "Multi-step logistics planning for complex contraband movement",
+    "Corruption of automated logistics and inspection systems",
+    "Cold-chain and specialty storage for perishable or sensitive goods"
+  ],
+  "resources": [
+    "70 logistics specialists",
+    "A network of hidden warehouses across Meridian 88",
+    "Disguised transport vehicles integrated into legitimate traffic",
+    "Deep knowledge of corporate tracking system vulnerabilities",
+    "The Dispatcher's supply chain management expertise",
+    "Relationships with every criminal organization that needs logistics"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "The Harbor Rats",
+      "type": "partner",
+      "description": "The Exchange handles internal logistics for goods the Rats bring through the port. The arrangement is seamless and mutually profitable.",
+      "tags": [
+        "criminal",
+        "logistics"
+      ]
+    }
+  ],
+  "narrative_function": "The Exchange represents the invisible infrastructure of the illegal economy — the supply chain that nobody sees but everybody depends on.",
+  "story_hooks": [
+    "A shipment in Exchange custody has started emitting a signal that wasn't there when it was stored. The Dispatcher doesn't know what's in the container (they never ask), but whatever it is, it's broadcasting their warehouse location to someone.",
+    "The Exchange has been hired to move something through the city in exactly 47 minutes — not earlier, not later. The timing precision suggests the cargo is keyed to an event that will happen at the delivery point. The Dispatcher wants to know what event."
+  ],
+  "tags": [
+    "faction",
+    "criminal",
+    "logistics",
+    "smuggling",
+    "old harbor",
+    "warehouses",
+    "organized crime"
+  ]
+}

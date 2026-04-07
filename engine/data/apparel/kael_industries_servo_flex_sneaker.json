@@ -1,0 +1,40 @@
+{
+  "id": "4c9e2b6f8a1d350c7e9b2d6f8a0c3514",
+  "name": "Kael Industries Servo-Flex Sneaker",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A mid-top sneaker with a BCI-linked sole that actively reconfigures tread stiffness and arch support in response to the wearer's augmented gait data. Small piezoelectric cells in the outsole read stride pressure 200 times per second and adjust a grid of micro-columns in the midsole accordingly. The upper is clean white mesh with navy paneling — it looks like a premium athletic sneaker.\n\nTargeted at Tier 3-4 augmented users who move between environments — office floors, wet streets, transit stairs — and want their footwear to keep up. The BCI pairing is optional; it also runs a solid passive-adaptive mode.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "engineered mesh upper",
+    "piezoelectric outsole",
+    "micro-column midsole",
+    "recycled polymer shell"
+  ],
+  "functionality": "BCI-linked active sole reconfigures tread stiffness and arch support to augmented gait in real time. Passive adaptive mode available without BCI. Piezoelectric cells require no external charging.",
+  "what_it_says": "You invest in things that work with your body, not against it. Understated tech, quietly expensive.",
+  "worn_by": [
+    "Tier 3 augmented professionals",
+    "BCI-integrated daily commuters",
+    "tech workers with active prosthetic limbs"
+  ],
+  "manufacturer": "Kael Industries",
+  "price_range": "Φ155 - Φ185",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The gait data logged by the BCI sync is stored locally — but a recent firmware vulnerability means it can be pulled remotely by anyone with the right tool.",
+    "Kael Industries is rumored to use aggregate gait data from their sneakers in motion-analysis contracts with corponation security divisions."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "aug-compatible",
+    "BCI-linked",
+    "active-sole",
+    "sneaker",
+    "athletic"
+  ],
+  "parent_corponation": ""
+}

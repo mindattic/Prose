@@ -1,0 +1,47 @@
+{
+  "id": "6d1e8b3f0a2c7d9e4f5b8a1c3e6d0f72",
+  "name": "Vex Nullsound Reactive Club Shell",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A cropped bomber-cut shell in matte black synthleather threaded throughout with micro-filament LED channels that pulse in direct response to ambient bass frequencies — sub-80Hz triggers deep violet blooms, mid-range produces fractured cyan arcs across the chest and shoulders. Collar and cuffs are trimmed in sound-dampening foam wrapped in mirrored mylar. The back panel features a woven pattern that, under UV, resolves into a stylized frequency map of Meridian 88's underground club district, known only to those who've been there. Sized for both human and lightly-geneware'd frames.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "matte synthleather",
+    "micro-filament LED thread",
+    "sound-reactive piezo mesh",
+    "mirrored mylar trim",
+    "UV-reactive woven backing"
+  ],
+  "functionality": "Sound-reactive LED system runs on a micro-battery charged by body movement. Collar foam provides mild hearing protection at high decibels. Seam channels at the upper back accommodate spinal port rigs without snagging.",
+  "what_it_says": "This person knows where the real parties are and has been there more than once.",
+  "worn_by": [
+    "underground rave regulars",
+    "Circuit-tier nightlife workers",
+    "club DJs and promoters",
+    "geneware enthusiasts with bioluminescent skin pairings"
+  ],
+  "manufacturer": "Vex & Ruin (street label, unlicensed)",
+  "price_range": "Φ310–Φ580",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The frequency map on the back panel leads to a club that officially closed two years ago — someone's still running events there.",
+    "A Tier 4 corporate spy is using a counterfeit version of this jacket to infiltrate the underground music scene looking for a missing biotech engineer.",
+    "The LED filaments in a batch of these jackets have been laced with a passive signal harvester — someone is mapping BCI signatures at clubs."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "rave",
+    "club",
+    "nightlife",
+    "sound-reactive",
+    "LED",
+    "tier-2",
+    "tier-3",
+    "subcultural",
+    "aug-compatible",
+    "gene-compatible"
+  ],
+  "parent_corponation": ""
+}

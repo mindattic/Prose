@@ -1,0 +1,48 @@
+{
+  "id": "c8d04f5b31a7e29610bc83f74e6a1d02",
+  "name": "Brineworks Ghost-Side Street Operative Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A runner's set designed to pass as Tier 2 dockside labor during the day and disappear into Circuit nightlife after dark — the same clothes doing two completely different jobs. The outer layer is a heavy waxed-canvas work shirt in faded teal, its back reinforced with vertical cargo strips that read as tool loops to civilians but function as a modular attachment system for swappable panel inserts: swap in scanner-dampening inserts for a job, swap back to plain canvas for the walk home. The shirt's left interior seam hides a full-length holster channel that accommodates a sidearm or collapsed baton; the right sleeve has a comm-wire conduit running from wrist to collar. Beneath is a dark amber long-sleeve compression base layer with embedded thermal regulation and a port-access panel at the upper back for BCI hardware maintenance. Trousers are a faded indigo heavy denim with reinforced inner thighs, two flat concealed pockets behind the front panels, and a gusset-cut seat that allows full leg extension without pulling. Footwear is a steel-reinforced dock boot in weathered brown with a hidden ankle holster channel in the right boot shaft. The look is completed with a beaten leather-analog work belt with a false-bottom center pouch and a brimmed work cap in matching teal that houses a signal-dampening liner.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "waxed ripstop canvas",
+    "modular panel-insert system fabric",
+    "thermal-regulating compression knit",
+    "heavy selvedge denim analog",
+    "leather-analog belting",
+    "signal-dampening cap liner",
+    "steel-reinforced boot composite"
+  ],
+  "functionality": "Modular back-panel insert system for swappable scanner-dampening or plain inserts, interior holster channel in shirt seam, comm-wire conduit in right sleeve, BCI port-access panel at upper back, concealed flat trouser pockets, ankle holster channel in right boot shaft, false-bottom belt pouch, signal-dampening cap liner",
+  "what_it_says": "At first glance, this is a dockworker or freight handler — the teal, the beat-up boots, the work cap. Look closer and the fabric sits too precisely, the belt is too deliberately plain, the cap brim is too stiff. This is someone who studied what labor looks like and built a costume out of function. The runner wearing this respects the work it's imitating — and uses that respect as armor.",
+  "worn_by": [
+    "runners operating in harbor and freight districts",
+    "operatives running long-term cover identities as dock or warehouse workers",
+    "fixers who broker jobs through Tier 2 labor contacts",
+    "runners with BCI implants requiring field maintenance access"
+  ],
+  "manufacturer": "Brineworks Fabrication — street label affiliated with Meridian Harbor independent labor networks",
+  "price_range": "Φ 510–Φ 790",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A runner has been running a dock-worker cover for six weeks when a real dockworker notices the teal shirt's fabric doesn't absorb sweat the way canvas should — it beads and runs. The worker doesn't say anything, but starts watching.",
+    "The modular panel inserts are stored in a locker at a Circuit-district gym. Someone has been in the locker — the inserts are still there, but they've been scanned and logged. The runner now has to decide whether the job is blown or whether whoever scanned them wants something.",
+    "The BCI port-access panel has been used recently by someone other than the runner. The connection logs show an unauthorized sync — brief, surgical, and three days ago. Something was read. Possibly something was written."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier_2",
+    "tier_3",
+    "aug_compatible",
+    "bci_compatible",
+    "dock_cover",
+    "modular",
+    "holster_integrated",
+    "long_cover_identity"
+  ],
+  "parent_corponation": ""
+}

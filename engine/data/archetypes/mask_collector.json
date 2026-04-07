@@ -1,0 +1,33 @@
+{
+  "id": "58b07ccbb4e219be2ffb1066091df976",
+  "name": "Mask Collector",
+  "type": "archetype",
+  "category": "identity",
+  "description": "Has a face for every occasion and none of them are real",
+  "behavioral_signature": "Maintains multiple fully developed personas for different contexts",
+  "under_stress": "Masks start bleeding into each other",
+  "at_rest": "Switches between identities with practiced ease",
+  "will_always": [
+    "have the right persona ready"
+  ],
+  "will_never": [
+    "show their bare face"
+  ],
+  "unless": [
+    "every mask has been stripped away and they have nothing left"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Method Actor",
+      "threshold": 0.85,
+      "context": "multiple identities"
+    }
+  ],
+  "opposite_of": [
+    "Authentic Core"
+  ],
+  "tags": [
+    "multiple-personas",
+    "secretive"
+  ]
+}

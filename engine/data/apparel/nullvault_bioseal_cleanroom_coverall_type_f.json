@@ -1,0 +1,47 @@
+{
+  "id": "c5d2f1a8b3e4096d7f1c2a3b4e5d6f07",
+  "name": "Nullvault BioSeal Cleanroom Coverall Type-F",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Glacial white with soft grey piping, the Type-F is the standard-issue cleanroom coverall for Tier 3–4 chip fabrication floors, geneware clinics, and biotech synthesis labs. Cut from antistatic microfilament spunbond fabric with a conductive grid woven at 5mm intervals. The fit is trim without being tailored — designed to minimize particle shedding, not to flatter.\n\nHood is integrated with a soft face-frame that accepts a clip-on face shield or respirator. BCI port access panel sits at the left temple seam, secured by a dust-sealed magnetic flap. All closures are continuous-zip with over-flap seam tape. Available in Augmented Cut with forearm channel seams for chrome.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "antistatic microfilament spunbond fabric",
+    "conductive grid weave",
+    "continuous-zip closures",
+    "dust-sealed magnetic flap",
+    "ESD-rated sole material"
+  ],
+  "functionality": "ISO Class 5 particle containment; integrated ESD grounding via conductive grid and sole contact strip; BCI port access panel at left temple; Augmented Cut variant includes forearm channel seams for chrome limb compatibility; continuous-zip over-flap construction eliminates exposed seam gaps.",
+  "what_it_says": "You work somewhere clean enough to matter, and you follow the protocols.",
+  "worn_by": [
+    "chip fab floor technicians",
+    "geneware clinic assistants",
+    "biotech synthesis lab workers",
+    "junior pharma researchers",
+    "Tier 4 lab specialists"
+  ],
+  "manufacturer": "Nullvault Containment Systems",
+  "price_range": "Φ95–Φ210 per unit; bulk lab contracts Φ60/unit",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A geneware clinic technician notices a colleague's coverall has a non-standard BCI port flap — someone has been accessing the lab's biodata network without authorization.",
+    "A batch of Type-F suits was contaminated during manufacture with a trace compound that sets off bioscan alarms — and the workers wearing them have no idea.",
+    "A chip fab worker has been hiding a secondary BCI implant under the temple flap for months, running unauthorized data pulls from inside a Tier 4 secure fabrication floor."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "cleanroom",
+    "biotech",
+    "lab",
+    "antistatic",
+    "aug-compatible",
+    "BCI-compatible",
+    "tier-3",
+    "tier-4",
+    "industrial"
+  ],
+  "parent_corponation": ""
+}

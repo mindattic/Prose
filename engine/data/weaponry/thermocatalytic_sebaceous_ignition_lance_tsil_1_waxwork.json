@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "The TSIL-1 projects a narrow infrared beam tuned to the absorption frequency of sebaceous lipids — the fatty compounds produced by skin glands and present in a thin layer across virtually all exposed biological skin. At sufficient power density, the beam flash-heats this lipid layer to ignition temperature within approximately 0.8 seconds of contact, causing the skin's own oils to combust in a thin, intensely hot surface fire. The burn is shallow but severe, covering whatever area of skin was exposed to the beam. The weapon does not penetrate clothing effectively, making exposed skin — face, hands, neck — the primary vulnerable surface.\n\nThe TSIL-1's operational signature is distinctive and deeply unsettling: targets ignite seemingly from the inside out, the fire appearing to originate from the skin itself rather than from any visible external source. The psychological effect on witnesses and adjacent targets is pronounced. Ringo Corponation developed the weapon under a cosmetic-technology research umbrella — the original project involved precision lipid-layer treatments for dermatological applications — before the directed-energy weapons division acquired the underlying emitter technology and repurposed it. The cosmetic origin of the technology is something Ringo's PR division works continuously to suppress.\n\nThe weapon's range limitation — effective only to about 20 meters before beam dispersion reduces power density below ignition threshold — and its complete ineffectiveness against covered skin have defined its tactical niche as a close-to-mid-range terror and compliance weapon. The nickname 'Waxwork' refers both to the waxy appearance of healed sebaceous burns and to the way targets move in the moments after ignition — arms extended, stumbling, in a manner observers have described as resembling animated wax figures.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "RingoFuel",
   "tier_availability": "Tier 3+",
   "legality": "Licensed",
   "base_technologies": [
@@ -54,6 +54,8 @@
     "clothing",
     "energy",
     "fire",
-    "tier 3"
-  ]
+    "tier 3",
+    "less_lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

@@ -10,7 +10,7 @@
   ],
   "category": "rifle",
   "description": "A compact carbine that fires rounds containing Tessera's proprietary PhotoNull compound — a substance that absorbs and suppresses photonic activity within a 3-meter radius of the impact point for approximately 60 seconds. Within the affected zone, all light is absorbed: lamps go dark, screens black out, laser sights disappear, and human vision becomes useless. The compound works by releasing a dense aerosol of photon-absorbing nanoparticles that remain suspended in air, creating a sphere of absolute darkness. Thermal imaging is also degraded within the zone as the nanoparticles absorb infrared radiation. The weapon was designed for tactical entry operations where controlling the visual environment is paramount.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Tessera University",
   "tier_availability": "Tier 4+",
   "legality": "Restricted — tactical operations authorization",
   "base_technologies": [
@@ -35,6 +35,8 @@
     "control",
     "dark",
     "fire",
-    "tier 4"
-  ]
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

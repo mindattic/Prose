@@ -1,0 +1,57 @@
+{
+  "id": "a3f7c2e1b094d856f21a7c3e90b4d512",
+  "name": "MindBridge SafeGrow Pediatric Neural Companion",
+  "brand_name": "MindBridge",
+  "product_name": "SafeGrow Pediatric Neural Companion",
+  "type": "cyberware",
+  "aliases": [
+    "SafeGrow",
+    "the Kidlink",
+    "PedNeuro"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The SafeGrow Pediatric Neural Companion is a limited-function BCI engineered specifically for users aged 6–14, employing a dynamically throttled neural mesh that adapts its signal density as the juvenile cortex develops. Built on MindBridge's proprietary PlastiSync architecture, the implant monitors synaptic growth gradients in real time and restricts higher-bandwidth functions—such as direct data feeds and deep memory indexing—until neurological maturity benchmarks are met, typically flagged at ages 12 and 16. Hardware is fabricated from bioabsorbable polymer scaffolding with a titanium-ceramic core, minimizing long-term material conflict with developing cranial bone. Parental oversight firmware, MindBridge GuardianOS v4.2, enforces content filtering, usage-hour caps, and remote suspension via a licensed guardian terminal. The device supports basic educational overlays, supervised social mesh connectivity, and emergency distress signaling to registered emergency contacts.\n\nThe SafeGrow sits at the epicenter of one of Meridian 88's most heated ethical debates. Advocacy groups such as the Children's Neural Rights Collective argue that implanting BCIs in minors constitutes irreversible informed-consent violation, pointing to studies suggesting early implantation subtly biases cognitive development toward corporate-compatible processing patterns. Proponents counter that children implanted with SafeGrow show measurably improved academic outcomes and social integration scores. In the Outer Rings, where public education infrastructure has collapsed, SafeGrow has become the de facto schoolroom for millions of children—a fact MindBridge's marketing division does not shy away from. The device is colloquially called the 'Kidlink' by parents who view it as essential infrastructure and the 'leash' by youth subcultures who resent its surveillance architecture.",
+  "manufacturer": "MINDBRIDGE",
+  "tier_availability": "Tier 2–3",
+  "legality": "Licensed — requires guardian consent documentation, pediatric neurologist sign-off, and registration with the Bureau of Neural Welfare; sale to unregistered parties is a Class 2 felony",
+  "installation_requirements": "Pediatric-certified neurosurgical facility; pre-operative cortical mapping; guardian legal authorization; minimum patient age 6 years; annual neurological review mandatory",
+  "rejection_risk": "Low (4.1%) — bioabsorbable scaffolding significantly reduces inflammatory response; elevated in patients with autoimmune histories",
+  "maintenance": "Mandatory quarterly firmware updates via licensed MindBridge clinic; annual hardware inspection; GuardianOS subscription Φ80/year",
+  "specifications": "{\"neural_mesh_density\": \"adaptive 0.4–2.1 nodes/cm²\", \"bandwidth_cap_juvenile\": \"12 Mbps (hard-locked)\", \"bandwidth_cap_adolescent\": \"40 Mbps (unlocked at neurological milestone)\", \"architecture\": \"PlastiSync v3 bioabsorbable polymer/titanium-ceramic hybrid\", \"os\": \"MindBridge GuardianOS v4.2\", \"functions\": [\"educational overlays\", \"supervised social mesh\", \"emergency distress beacon\", \"parental monitoring\", \"content filtering\"], \"power_source\": \"piezoelectric kinetic harvest + inductive top-up\", \"battery_reserve\": \"72 hours passive\", \"update_cycle\": \"quarterly mandatory\", \"lifespan\": \"8–10 years before scheduled upgrade\"}",
+  "side_effects": [
+    "Documented mild cognitive pathway biasing toward structured information processing; long-term implications debated",
+    "Occasional sleep disruption during firmware update cycles (reported in 18% of users)",
+    "Rare cases of 'mesh dependency syndrome' upon removal — anxiety and processing difficulty without implant stimulus",
+    "GuardianOS surveillance architecture creates persistent psychological awareness of monitoring in approximately 30% of adolescent users"
+  ],
+  "cultural_context": "In the Central Districts, SafeGrow has become a class signifier — families who can afford the licensed version signal upward mobility, while Outer Ring children often run cracked GuardianOS builds with the parental locks stripped, a modification called 'jailkidding' in local slang. The Children's Neural Rights Collective stages annual protests outside MindBridge headquarters on Implant Awareness Day, while MindBridge counters with heavily sponsored 'Future Minds' scholarship programs for SafeGrow users who score in the top percentile on neural-assisted academic assessments.",
+  "known_users": [
+    "Middle-class families in Central and Mid-Ring districts",
+    "Outer Ring community education collectives (often running unlicensed firmware)",
+    "Corporate creche programs for employee dependents"
+  ],
+  "story_hooks": [
+    "A parent discovers their child's SafeGrow has been transmitting developmental data to a third-party corporate research firm — data MindBridge sold without explicit consent buried in the 340-page EULA",
+    "A teenager whose SafeGrow is due for removal at age 16 refuses the procedure, having developed a profound psychological dependency on the mesh's processing support — her parents hire the party to find a back-channel neurologist willing to do an unauthorized adult conversion",
+    "A black-market 'jailkidding' operation in the Outer Rings is discovered to have accidentally removed not just parental locks but critical developmental safeguards, and a cohort of children are showing accelerated but dangerously unstructured synaptic growth"
+  ],
+  "street_price": "Φ1,800",
+  "licensed_price": "Φ3,200",
+  "tags": [
+    "cyberware",
+    "bci",
+    "pediatric",
+    "juvenile",
+    "educational",
+    "controversial",
+    "mindbridge",
+    "tier2",
+    "tier3",
+    "licensed",
+    "guardian-monitored",
+    "developmental",
+    "specialized"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "3ed50ece3d2f9e257be89899873770e3",
+  "name": "Tessera Phased Array Disruptor PAD-3 'Sunspot'",
+  "type": "weapon",
+  "aliases": [
+    "Sunspot",
+    "PAD-3",
+    "Phase Disruptor",
+    "The Flash"
+  ],
+  "category": "exotic",
+  "description": "A directed energy weapon that fires a concentrated burst of microwave radiation capable of inducing instantaneous thermal damage in organic tissue and electronic components. The Sunspot's phased array antenna focuses microwave energy into a beam 30cm in diameter that can heat tissue to 65°C in under one second of exposure — the point at which cellular proteins denature and tissue dies.\n\nTessera designed the PAD-3 for dual anti-personnel and anti-electronics deployment. The same microwave burst that burns skin also overloads circuit boards, fries capacitors, and melts solder joints. A single Sunspot pulse can disable a vehicle's electronic systems and incapacitate its occupants simultaneously.\n\nThe weapon is fed by a compact fusion cell that powers the phased array antenna, and the beam can be adjusted from a tight 30cm diameter for precision engagement to a 3-meter cone for area denial. At maximum spread, the beam's energy density decreases but remains sufficient to cause second-degree burns and electronic malfunction.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted — directed energy weapons authorization",
+  "base_technologies": [
+    "Focused microwave phased array generation",
+    "Variable-diameter beam control",
+    "Dual anti-personnel/anti-electronics targeting"
+  ],
+  "specifications": "caliber: N/A — focused microwave beam\neffective_range: 10-150 meters\nrate_of_fire: 1 pulse per 4 seconds, or continuous beam (reduced range)\ncapacity: 15 pulses or 30 seconds continuous per power cell\nweight: 7.8 kg\npower_source: Compact fusion cell, field-replaceable",
+  "tactical_use": "The Sunspot is deployed for combined anti-personnel and anti-electronics engagement where both threats need to be neutralized simultaneously. The weapon's variable beam diameter allows operators to switch between precision targeting and area denial without changing equipment. In vehicle interdiction, the PAD-3 can disable the vehicle and its passengers in a single pulse, eliminating the need for separate weapon systems for each target type.",
+  "cultural_context": "Microwave weapons have a particularly disturbing reputation in Meridian 88 because their effects are invisible — the beam cannot be seen, and targets experience the sensation of being cooked alive from the inside without any visible threat. Survivors describe the experience as 'being in a microwave oven,' and the psychological trauma often exceeds the physical damage. Tessera's marketing avoids acknowledging the weapon's anti-personnel capability, focusing exclusively on its electronics-defeat applications.",
+  "known_users": [
+    "Tessera electronic warfare division",
+    "Corporate vehicle interdiction teams"
+  ],
+  "story_hooks": [
+    "A Sunspot was fired into a residential building through an exterior wall, cooking the occupants inside without visible external damage. The building looked untouched from outside. Emergency responders did not understand what they found inside.",
+    "A PAD-3's phased array antenna was modified to operate at a frequency that resonates with water molecules, dramatically increasing its anti-personnel effectiveness while reducing its anti-electronics capability. The modification turns the Sunspot from a dual-use weapon into a pure antipersonnel horror."
+  ],
+  "ammunition_type": [
+    "Focused microwave pulse"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "directed-energy",
+    "microwave",
+    "anti-electronics",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

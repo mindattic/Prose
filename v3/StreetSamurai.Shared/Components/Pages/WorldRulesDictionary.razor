@@ -124,8 +124,7 @@
 
     private IEnumerable<MotifData> FilteredMotifs => string.IsNullOrWhiteSpace(filter)
         ? motifs
-        : motifs.Where(m => m.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
-            || m.Description.Contains(filter, StringComparison.OrdinalIgnoreCase));
+        : motifs.Where(m => m.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
     private MotifData? editingMotif;
     private string motifOriginalName = "";
 

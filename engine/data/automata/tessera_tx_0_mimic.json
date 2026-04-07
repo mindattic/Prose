@@ -1,0 +1,51 @@
+{
+  "name": "TESSERA TX-0 'Mimic'",
+  "type": "automaton",
+  "classification": "Experimental — Shape-Memory Chassis",
+  "aliases": [
+    "Mimic",
+    "Changeling",
+    "That Wasn't There"
+  ],
+  "manufacturer": "TESSERA",
+  "description": "The TX-0 uses a shape-memory alloy chassis that can reconfigure its external geometry to approximate different objects — a garbage bin, a fire hydrant, a piece of furniture, a crouching human figure. The transformation takes approximately ninety seconds and is limited by the mass and volume of the unit's chassis, but within those constraints, the TX-0 can become part of the urban landscape, indistinguishable from its surroundings to casual observation.\n\nIn its attack configuration, the TX-0 unfolds into a low, multi-limbed platform with four articulated arms ending in cutting tools and a central mass containing a fragmentation charge. The operational concept is ambush: the unit assumes a form appropriate to its environment, waits for a target to enter proximity, reconfigures to attack mode, engages, and either detonates its fragmentation charge or withdraws to reconfigure and wait again.\n\nThe TX-0 program has produced eight units, and TESSERA considers half of them failures — the shape-memory alloy develops 'preferences' over repeated reconfigurations, settling into forms that the control system didn't request. Three units have begun defaulting to a crouching humanoid form between missions, regardless of their programmed disguise. TESSERA's engineers cannot explain why the alloy structure consistently converges on this shape. The units function normally otherwise. They just prefer to look like a person when they're not being told to look like something else.",
+  "tier_availability": "Tier 5 — experimental",
+  "legality": "Does not officially exist",
+  "autonomy_level": "Fully autonomous ambush platform",
+  "dimensions": "Variable — base volume approximately 0.4 cubic meters",
+  "weight": "65 kg (constant regardless of configuration)",
+  "power_source": "High-density lithium cell, 48-hour dormant endurance",
+  "locomotion": "Multi-limbed in attack configuration, stationary in disguise mode",
+  "armament": [
+    "4x articulated cutting arms",
+    "Central fragmentation charge (single use)"
+  ],
+  "sensors": [
+    "Acoustic proximity detection",
+    "Weight/vibration sensors",
+    "Passive thermal"
+  ],
+  "countermeasures": "Weight inconsistency — a garbage bin that weighs 65 kg is suspicious. Thermal imaging shows uniform heat distribution inconsistent with normal objects. Magnetic sensors detect alloy signature. The 90-second reconfiguration window is a vulnerability.",
+  "known_deployments": [
+    "TESSERA laboratory testing",
+    "Unconfirmed field trials"
+  ],
+  "story_hooks": [
+    "A TX-0 has been placed in a public space and nobody knows which object it is. TESSERA won't say where because admitting the program exists would be worse than the casualties. The players have to identify which piece of urban furniture in a crowded market is a killing machine.",
+    "The three TX-0 units that default to humanoid form have been observed through laboratory cameras apparently looking at each other. TESSERA's lead engineer wants out. Whatever is happening with the shape-memory convergence, it's not in the design specifications."
+  ],
+  "cultural_context": "The TX-0 weaponizes the most mundane aspects of urban life. If a garbage bin might be a killer robot, nothing in the environment can be trusted. Paranoia about everyday objects has always been a symptom of living in Meridian 88. The TX-0 makes it rational.",
+  "tags": [
+    "automaton",
+    "shapeshifter",
+    "ambush",
+    "experimental",
+    "weapon",
+    "tessera",
+    "corporate",
+    "horror",
+    "tier 5"
+  ],
+  "id": "4f05ace2d1728a3125eb4981c5b751b4",
+  "parent_corponation": "Tessera Corponation"
+}

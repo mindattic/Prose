@@ -1,0 +1,63 @@
+{
+  "id": "c5d8a1f3e6b0249c7f4a2d8e1b5c9370",
+  "name": "CortexDynamics VectorLink Pilot-Rated Neural Interface",
+  "brand_name": "CORTEXDYNAMICS",
+  "product_name": "VectorLink Pilot-Rated Neural Interface",
+  "type": "cyberware",
+  "aliases": [
+    "The Stick",
+    "VecLink",
+    "Pilot Wire",
+    "Cortex Wings",
+    "Hard Link"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The CortexDynamics VectorLink is a full-spectrum pilot-rated neural vehicle interface certified for ground, air, and watercraft neural link operation within Meridian 88's Federal Airspace and Harbor Authority jurisdictions. At its core, the VectorLink establishes a direct bidirectional neural channel between the user's motor cortex and a compatible vehicle's control architecture, translating intention into vehicular input with a signal latency of under 12 milliseconds — effectively eliminating the mechanical delay between thought and vehicle response that physical controls introduce. The system supports simultaneous multi-vehicle awareness for convoy and fleet operations, with up to four vehicle feeds manageable via trained cognitive partitioning. A proprietary Spatial Cognition Expansion Module (SCEM) temporarily up-regulates the user's three-dimensional spatial processing capacity during active link sessions, enabling the intuitive management of pitch, yaw, roll, and velocity vectors that would overwhelm unaugmented spatial cognition at high speeds. The VectorLink is rated to FAA-M Class III standards for aerial vehicles and holds dual certification for aquatic navigation in the Great Lakes corridor.\n\nThe VectorLink is the professional standard for licensed pilots, courier operators, racing circuit competitors, and CorpSec rapid-response vehicle crews throughout Meridian 88. Courier guilds running high-speed cargo through the Shelf's underground transit corridors treat the VectorLink as basic professional equipment, and licensed air taxi operators are legally required to carry a pilot-rated BCI of equivalent or higher certification. The racing community — particularly the illegal circuit races held in the flooded sub-basement districts — has built an entire culture around VectorLink modification, with tuners competing to shave fractions of milliseconds off link latency through unauthorized firmware overclocking. CortexDynamics' legal team pursues these modifications aggressively, though enforcement in the lower tiers is inconsistent at best.",
+  "manufacturer": "CORTEXDYNAMICS",
+  "tier_availability": "Tier 3-4",
+  "legality": "Licensed",
+  "installation_requirements": "Installation by certified neurotechnician; Meridian Federal Pilot Licensing Authority registration and vehicle-class certification exam required; 40-hour minimum supervised neural-link flight/drive hours before solo certification",
+  "rejection_risk": "Moderate — SCEM spatial expansion module places atypical metabolic demands on parietal lobe tissue; elevated risk in individuals with prior traumatic brain injury or existing spatial processing implants; pre-installation neurological screening mandatory",
+  "maintenance": "Annual FAA-M recertification inspection; vehicle-class firmware updates pushed quarterly; SCEM metabolic load monitoring via companion diagnostic app; link-channel integrity test recommended every 6 months",
+  "specifications": "{\"link_latency\": \"<12ms motor-cortex to vehicle control architecture\", \"vehicle_classes\": \"Ground (wheeled, tracked), Air (rotary, fixed-wing, VTOL), Water (surface, submersible)\", \"simultaneous_vehicle_feeds\": \"Up to 4 with trained cognitive partitioning\", \"spatial_cognition_expansion\": \"SCEM module, active during link sessions, 3D vector processing upregulation\", \"certification_standard\": \"FAA-M Class III aerial, Great Lakes Harbor Authority aquatic\", \"signal_encryption\": \"Vehicle-link channel AES-256, anti-hijack spoofing detection\", \"emergency_disconnect\": \"Automatic neural-link severance on vehicle catastrophic failure, <5ms\", \"battery\": \"Bioelectric harvesting with capacitor burst for high-demand link initiation\", \"form_factor\": \"Bilateral parietal nodes, 20mm x 10mm each, external vehicle jack port at mastoid\"}",
+  "side_effects": [
+    "Velocity dissociation — after extended high-speed link sessions, users frequently experience the world as moving too slowly for several hours post-disconnection, impairing normal pedestrian navigation",
+    "Spatial overclock fatigue: the SCEM module's upregulation creates measurable parietal lobe metabolic depletion after sessions exceeding 4 hours, manifesting as headaches, mild spatial disorientation, and difficulty with 2D tasks like reading",
+    "Ghost vehicle syndrome — approximately 27% of long-term users report persistent low-level proprioceptive awareness of their most frequently linked vehicle even when physically disconnected, as though it is an extension of their body",
+    "Link-addiction potential: the heightened spatial cognition and sensory integration during active vehicle link is reported as intensely pleasurable by a minority of users, creating compulsive extended-session behavior"
+  ],
+  "cultural_context": "In Meridian 88, the mastoid jack port of a VectorLink is a recognizable social marker — pilots often leave it visible as a professional credential, the way earlier generations might have worn a uniform. Courier guilds have developed elaborate jack-port jewelry traditions, adorning the external port with guild insignia or decorative covers that double as tamper seals. The illegal racing circuit in the flooded sub-basements treats VectorLink overclocking as a competitive art form, and the best underground tuners command enormous fees. CortexDynamics has an uncomfortable relationship with this culture: the racing community provides free stress-testing of their hardware at extremes no certified lab would permit, and leaked performance data from underground circuits has quietly informed several firmware revisions.",
+  "known_users": [
+    "Licensed commercial pilots and air taxi operators",
+    "Courier guild members operating high-speed ground and air delivery routes",
+    "CorpSec rapid-response vehicle crews and aerial pursuit units",
+    "Competitive racing circuit pilots, both licensed and underground",
+    "Great Lakes Harbor Authority maritime patrol officers"
+  ],
+  "story_hooks": [
+    "A VectorLink pilot has gone missing mid-route; their vehicle was found crashed in a Shelf sub-basement with the neural link still hot and the pilot gone — someone remotely hijacked the link channel and used it to puppeteer both the vehicle and the pilot's motor function",
+    "An underground racing crew needs a player character to courier a chip containing an illegal VectorLink firmware overclock to a tuner across three contested Shelf districts — CorpSec and CortexDynamics' IP enforcement team are both watching the routes",
+    "The FAA-M is revoking VectorLink certifications en masse following a series of 'ghost vehicle syndrome' incidents where pilots involuntarily acted out vehicle maneuvers while on foot; someone needs to determine if this is a firmware flaw, deliberate sabotage, or something worse"
+  ],
+  "street_price": "Φ11,500",
+  "licensed_price": "Φ22,000 (pilot licensing exam fees additional; employer vehicle-fleet subsidies common)",
+  "tags": [
+    "cyberware",
+    "bci",
+    "pilot",
+    "vehicle-link",
+    "navigation",
+    "spatial-processing",
+    "cortexdynamics",
+    "professional",
+    "tier3",
+    "tier4",
+    "licensed",
+    "aerial",
+    "ground",
+    "aquatic",
+    "racing"
+  ],
+  "parent_corponation": ""
+}

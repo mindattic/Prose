@@ -1,0 +1,58 @@
+{
+  "id": "a3f7c2e91b4d6082f5a1c3e7b9204d68",
+  "name": "TESSERA CORPONATION Ironclad Executive BCI Suite",
+  "brand_name": "TESSERA CORPONATION",
+  "product_name": "Ironclad Executive BCI Suite",
+  "type": "cyberware",
+  "aliases": [
+    "The Cage",
+    "Corp Shell",
+    "Ironclad",
+    "Tessera Suit"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The Ironclad Executive BCI Suite is TESSERA CORPONATION's flagship corporate-issue neural interface, designed for mid-to-senior executives operating within high-sensitivity data environments. The implant features a 512-bit rolling cryptographic partition system that segments memory and cognitive data into isolated vaults, preventing unauthorized neural extraction via standard skimming hardware. An integrated Loyalty Verification Substrate (LVS) passively monitors autonomic stress markers, micro-linguistic deviations, and decision-pathway hesitation to flag potential insider threats in real time — data streamed directly to corporate HR oversight nodes. The unit also includes a hardened anti-intrusion firewall rated to deflect Tier 3 neural hacking attempts, with automatic cognitive lockdown protocols that can be remotely triggered by authorized Tessera security personnel. Installation requires a licensed Tessera-certified neurosurgeon and a mandatory 72-hour corporate onboarding calibration session.\n\nThe Ironclad is the unmistakable mark of the mid-Spire corporate class in Meridian 88 — the implant that separates an employee from an asset. Executives wear it as both a status symbol and a leash, understanding that the same system protecting their proprietary memories also reports their emotional states to HR. Street culture refers to the LVS function as 'the tattletale' or 'the snitch wire,' and Shelf workers often mock Ironclad users as 'caged suits.' Despite this, the implant is fiercely coveted in middle-management circles as proof of corporate trust and advancement. A grey market exists for 'detuned' Ironclad units with the LVS function surgically bypassed — a modification that voids the warranty and violates most corporate employment contracts.",
+  "manufacturer": "Mosaic Surgical Centers",
+  "tier_availability": "Tier 3-4",
+  "legality": "Licensed",
+  "installation_requirements": "Tessera-certified neurosurgeon required; 72-hour corporate calibration session; employer authorization code mandatory for activation",
+  "rejection_risk": "Low — biocompatible ceramic-polymer housing with adaptive neural lace; elevated risk in individuals with prior unauthorized implant modifications",
+  "maintenance": "Quarterly firmware security patches via Tessera corporate network; annual hardware inspection by certified technician; LVS recalibration every 6 months",
+  "specifications": "{\"neural_interface_type\": \"Full-spectrum cortical mesh with limbic monitoring nodes\", \"encryption\": \"512-bit rolling partition, AES-Quantum hybrid\", \"memory_vaults\": \"Up to 16 isolated cognitive compartments\", \"anti_intrusion_rating\": \"Tier 3 neural hacking resistance\", \"loyalty_verification\": \"Passive autonomic and linguistic monitoring, real-time HR uplink\", \"data_uplink\": \"Encrypted corporate mesh, 40Gbps burst\", \"battery_life\": \"Self-charging via neural bioelectric harvesting\", \"remote_lockdown\": \"Authorized Tessera admin trigger, <200ms response\", \"form_factor\": \"Dual-lobe cranial mount, 18mm x 9mm per node\"}",
+  "side_effects": [
+    "Persistent low-grade awareness of being monitored, contributing to chronic low-level anxiety in approximately 34% of users",
+    "Cognitive compartmentalization bleed — occasional difficulty distinguishing personal memories from work-vault memories after prolonged use",
+    "Mild decision-latency (50-80ms) during LVS stress-flag events as the system briefly throttles executive function",
+    "Reported 'corporate voice' phenomenon: internal monologue begins adopting formal register after 18+ months of use"
+  ],
+  "cultural_context": "In Meridian 88's corporate tier culture, receiving an Ironclad from your employer is a rite of passage analogous to receiving a corner office in an earlier era — except this one files reports on you. The implant has spawned an entire underground cottage industry of loyalty-bypass surgeons operating out of Tier 2 clinics, and Tessera's legal department is perpetually engaged in prosecuting employees who attempt to have the LVS disabled. The phrase 'running clean' has entered corporate slang to mean passing an LVS audit without flags, and 'going caged' means accepting corporate employment with full monitoring.",
+  "known_users": [
+    "Mid-to-senior corporate executives at Tessera-aligned firms",
+    "CorpSec supervisors and internal affairs operatives",
+    "High-clearance legal and finance professionals handling proprietary data",
+    "Corporate espionage targets who have been 'voluntarily' upgraded by their employers"
+  ],
+  "story_hooks": [
+    "A player character is offered a high-paying corporate job contingent on accepting an Ironclad installation — the LVS will flag their ongoing work for a rival faction if they accept",
+    "An executive approaches the party for help finding a surgeon who can disable the LVS on their Ironclad; they claim to be a whistleblower, but the implant's loyalty monitoring is already sending alerts",
+    "A recently terminated executive's Ironclad was remotely locked down with them still inside it — they're conscious but cognitively frozen, and someone wants the data in their memory vaults before Tessera's recovery team arrives"
+  ],
+  "street_price": "Φ14,000",
+  "licensed_price": "Φ28,000 (typically employer-subsidized or fully covered)",
+  "tags": [
+    "cyberware",
+    "bci",
+    "corporate",
+    "security",
+    "encryption",
+    "loyalty-monitoring",
+    "tessera",
+    "professional",
+    "tier3",
+    "tier4",
+    "anti-intrusion",
+    "memory-vault"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

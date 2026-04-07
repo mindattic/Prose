@@ -1,0 +1,42 @@
+{
+  "id": "7c3e5a9b2d1f408c6e3a7b5d2f9c1e60",
+  "name": "Ascent Variform Climbing Shoe",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A technical climbing shoe with a close-fitting wrap upper and a sole coated in programmable friction polymer — the grip coefficient increases under lateral pressure, providing exceptional purchase on smooth surfaces. The heel and toe zones can be stiffened or softened via a simple BCI command or manual dial on the ankle strap. Designed for urban climbers, infrastructure workers, and serious sport climbers.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "stretch-knit upper",
+    "programmable friction polymer sole",
+    "reinforced toe cap",
+    "adjustable ankle strap"
+  ],
+  "functionality": "Variable-grip sole increases friction coefficient under lateral pressure. Sole stiffness adjustable via BCI or manual dial.",
+  "what_it_says": "You go places most people can't reach, by choice or by trade. These shoes are too specialized to be casual.",
+  "worn_by": [
+    "urban climbers",
+    "infrastructure technicians",
+    "tower riggers",
+    "sport climbers"
+  ],
+  "manufacturer": "Ascent Technical",
+  "price_range": "Φ160 - Φ210",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A maintenance worker's Ascent shoes accessed a building's upper structure that should have been sealed — someone let them in, or they found another way.",
+    "The programmable sole polymer can be reprogrammed to repel certain surface coatings, which has interesting implications for locked doors."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "tier 4",
+    "smart",
+    "climbing",
+    "grip-enhanced",
+    "technical",
+    "BCI-compatible"
+  ],
+  "parent_corponation": ""
+}

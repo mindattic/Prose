@@ -1,0 +1,60 @@
+{
+  "id": "2e8f1a4c7b930d56e3f7c2a1b40e8d71",
+  "name": "Tessera Corponation Prometheus Tier-5 Multi-Stream Tactical",
+  "brand_name": "Tessera Corponation",
+  "product_name": "Prometheus Tier-5 Multi-Stream Tactical BCI",
+  "type": "cyberware",
+  "aliases": [
+    "The Fire Bringer",
+    "Prometheus Crown",
+    "Tessera Warlord",
+    "Pro-Five"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The Prometheus Tier-5 is Tessera Corponation's answer to the demand for a multi-stream tactical BCI that matches Arcturus's battlefield performance while incorporating Tessera's signature corporate intelligence integration architecture. The unit runs seven simultaneous data streams — four dedicated to conventional military tactical functions (terrain analysis, squad telemetry, threat grid, fire coordination) and three uniquely Tessera-designed streams handling corporate intelligence overlays: a live counter-intelligence feed cross-referencing combatants against Tessera's proprietary global identity database, a resource-value assessment layer that tags battlefield assets with real-time economic valuation, and a post-conflict legal exposure monitor that continuously models the operator's actions against applicable military law and corporate liability frameworks. The Prometheus's Faraday mesh uses Tessera's patented SelecShield composite, providing Class-8 EMP hardening while integrating a secondary function as a low-power passive SIGINT antenna. Quantum-encrypted comms operate on a 2560-qubit key architecture with automatic key rotation every 600 milliseconds, hardened against both conventional and quantum-decryption attacks.\n\nThe Prometheus Tier-5 reflects Tessera's fundamental philosophy that warfare in 2200 is as much a legal and economic contest as a kinetic one, and that the most effective combatant is one who wins the battle without incurring the downstream corporate and legal consequences that can destroy a military career or a contracting entity. Among Arcturus loyalists, this philosophy is derided as 'accountant warfare,' but Tessera's growing market share in the elite military BCI space suggests that an increasing number of operators and their employers find the Prometheus's integrated risk management capabilities genuinely valuable. The implant has become particularly popular among corporate military contractors and private security executives who operate in the legally ambiguous spaces between warfare and policing that define so much of Meridian 88's contested periphery.",
+  "manufacturer": "CogAd Platforms",
+  "tier_availability": "Tier 4-5",
+  "legality": "Restricted — Licensed military and credentialed corporate security operators only; corporate intelligence integration functions require separate Tessera data-sharing agreement; several jurisdictions additionally restrict the counter-intelligence feed as an unlicensed surveillance tool",
+  "installation_requirements": "Tessera-certified medical facility; neural compatibility assessment with particular attention to executive function architecture; requires Tier 2+ neural mesh substrate; post-installation 30-day cognitive integration monitoring contract mandatory",
+  "rejection_risk": "Low-Moderate (14%) — Tessera's more conservative implant profile reduces acute rejection risk, though delayed integration failures at the corporate intelligence stream interface reported in 8% of cases",
+  "maintenance": "Weekly Tessera intelligence database synchronization; monthly legal framework updates to post-conflict exposure monitor; quarterly SelecShield mesh integrity testing; annual full hardware diagnostic",
+  "specifications": "{\"processing_streams\": 7, \"stream_allocation\": {\"tactical_military\": 4, \"counter_intelligence_feed\": 1, \"resource_value_assessment\": 1, \"legal_exposure_monitor\": 1}, \"emp_hardening\": \"Class-8, SelecShield composite\", \"passive_sigint\": true, \"comms_encryption\": \"2560-qubit quantum key, 600ms rotation\", \"identity_database_coverage\": \"Tessera Global Registry, 4.2 billion indexed identities\", \"stream_latency_ms\": 1.8, \"neural_bandwidth_Gbps\": 14.7, \"power_source\": \"Dual bioreactor cells, 200hr operational life\", \"weight_g\": 79, \"certification\": \"Tessera Military-Grade Sigma\"}",
+  "side_effects": [
+    "Pervasive economic valuation reflex — operators involuntarily assess the monetary value of people, objects, and situations in their environment, a cognitive tic that becomes increasingly difficult to suppress in civilian social contexts",
+    "Legal exposure anxiety disorder — the post-conflict monitor's continuous risk modeling can generalize into civilian life, causing operators to compulsively assess legal liability in non-combat situations",
+    "Counter-intelligence feed habituation — operators develop an intrusive inability to interact with strangers without simultaneously receiving and processing their identity database profile, fundamentally altering social cognition",
+    "Reported 'corporate voice' phenomenon — operators describe occasionally experiencing their own decision-making as if narrated by a detached risk-assessment subroutine, creating a dissociative quality to moral reasoning"
+  ],
+  "cultural_context": "The Prometheus Tier-5 has carved out a distinctive cultural identity in Meridian 88's military contractor community precisely because of what it represents: the fusion of martial capability with corporate risk management. Operators who choose the Prometheus over Arcturus alternatives are making an implicit statement about their professional identity — they are not soldiers, they are military professionals operating within a complex legal-economic ecosystem, and they intend to survive that ecosystem as effectively as they survive the battlefield. This philosophy generates genuine ideological friction with conventional military culture, where the Prometheus is often dismissed as a tool for operators who are more concerned with their post-action legal brief than with winning the fight.",
+  "known_users": [
+    "Tessera Corponation Corporate Security Executive Division",
+    "Multiple licensed private military contractors operating in the Meridian 88 Outer Sprawl",
+    "Several national-level intelligence agencies operating under corporate cover structures"
+  ],
+  "story_hooks": [
+    "A Prometheus operator's legal exposure monitor has flagged a classified operation as generating catastrophic corporate liability — and rather than report through channels, they have begun independently gathering evidence of war crimes that powerful interests desperately want buried",
+    "The counter-intelligence feed's identity database has produced a match that should be impossible — a combatant whose identity resolves to a person officially recorded as dead for fifteen years, with a history that contradicts everything about their current situation",
+    "A Prometheus unit's resource-value assessment layer has begun flagging a specific civilian location with an astronomical valuation that no one can account for — suggesting Tessera's database contains information about something buried there that the company has not disclosed to the operator or anyone else"
+  ],
+  "street_price": "Φ120,000",
+  "licensed_price": "Φ195,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "tier4",
+    "tier5",
+    "tactical",
+    "multi-stream",
+    "corporate-intelligence",
+    "emp-hardened",
+    "quantum-encrypted",
+    "tessera",
+    "prometheus",
+    "restricted",
+    "contractor",
+    "military_elite"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "2d8f1a4e7c0b93650f2d9e5a1c4b8730",
+  "name": "Arcturus Defense Solutions VVR-5 'Dial'",
+  "type": "weapon",
+  "aliases": [
+    "the dial",
+    "voltmeter",
+    "judge",
+    "full send"
+  ],
+  "category": "melee",
+  "description": "The Arcturus VVR-5 is a variable-voltage shock rod built to military specification, occupying a deliberate space between non-lethal compliance tools and genuinely dangerous weapons. It is a 65-centimeter hardened-polymer baton with a recessed rotary selector on the grip that moves through five discrete output settings: 10,000V (deterrent), 30,000V (compliance), 60,000V (incapacitation), 120,000V (severe incapacitation), and a fifth position marked with a red band and no printed label that delivers 250,000 volts at an amperage approaching the cardiac-disruption threshold. The selector requires a deliberate two-finger press-and-turn action to move between positions, intended to prevent accidental escalation. The VVR-5's power cell is a military-grade capacitor block, field-replaceable in approximately fifteen seconds, with each block providing 30 discharges at maximum setting or 200 at the lowest.\n\nArcturus developed the VVR-5 in response to contractor feedback from Tier 1 enforcement operations, where the threat environment ranges from unarmed and frightened civilians to heavily augmented territorial enforcers within the same operational area. A single fixed-output weapon requires operators to choose between undertooling for the latter or overtooling for the former. The VVR-5 resolves this by putting that decision at the operator's thumb. Arcturus documentation consistently refers to all five settings as 'less-lethal' while acknowledging in technical footnotes that Setting 5 'may induce cardiac events in subjects with pre-existing cardiovascular conditions or implanted cardiac devices.'\n\nThe VVR-5 is issued to Arcturus-contracted enforcement units operating in hostile-environment designations and is not commercially available through standard channels. Several units have entered the secondary market through theft, black-market diversion, and the personal retention of departing contractors, which Arcturus tracks with visible displeasure.",
+  "manufacturer": "Iron Point Ammunition",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — Arcturus contractor and military issue only; civilian possession without authorization is a Class 2 weapons violation",
+  "base_technologies": [
+    "variable-output capacitor discharge",
+    "military-grade capacitor block",
+    "field-replaceable power cell",
+    "hardened polymer construction"
+  ],
+  "specifications": "Length: 650mm\nWeight: 940g\nOutput Settings: 10,000V / 30,000V / 60,000V / 120,000V / 250,000V\nSetting 5 Amperage: 0.009A (cardiac threshold range)\nPower Cell: Arcturus MilSpec Cap-Block CB-7 (field replaceable)\nDischarges per Cell: 200 (S1) / 30 (S5)\nCell Replacement Time: ~15 seconds\nSelector: Press-and-turn rotary, two-finger actuation required\nBody: MilSpec hardened polymer composite\nPrice: Φ3,200 (contractor procurement) / Φ5,500–8,000 (secondary market)",
+  "tactical_use": "VVR-5 operators are trained to begin at Setting 2 for initial contact with unaugmented subjects and escalate only with specific justification. Setting 3 is considered the standard for augmented resistance; Setting 4 for subjects demonstrating active combat augmentation under power. Setting 5 exists in doctrine as an extreme measure for situations where lethal force would otherwise be authorized and a less-lethal outcome is still preferred. In practice, contractor units in Tier 1 operations have been documented using Setting 4 and 5 routinely against minimally augmented subjects, a pattern that has generated ongoing internal and external review.",
+  "cultural_context": "The VVR-5 is known on the street as 'the dial' or 'the judge,' and its reputation is built almost entirely around Setting 5. In Tier 1 communities with Arcturus enforcement presence, 'getting full-sent' is the phrase for being hit at maximum output — it has the weight of a serious threat in local vernacular, somewhere between 'beaten badly' and 'nearly killed.' The weapon's presence in civilian hands is always treated as a serious indicator of either stolen military hardware or very well-funded criminal organization.",
+  "known_users": [
+    "Arcturus Defense Solutions enforcement contractors",
+    "Arcturus Tier 1 hostile-environment operation units",
+    "high-end private security with Arcturus sourcing",
+    "organized criminal groups with military hardware access"
+  ],
+  "story_hooks": [
+    "An Arcturus VVR-5 recovered from a crime scene has a serial number that traces to a unit reported destroyed in a Tier 1 operation two years ago — but the power cell inside it is a manufacturing batch dated three months ago. Someone inside Arcturus logistics is running a diversion pipeline, and the weapons are being sold to someone who knows how to use them."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "baton",
+    "electric",
+    "variable_voltage",
+    "military",
+    "restricted",
+    "high_voltage",
+    "arcturus"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

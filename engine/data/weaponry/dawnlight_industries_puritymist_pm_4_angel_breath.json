@@ -1,0 +1,43 @@
+{
+  "id": "f5564a1fe053a6ac07a1b8ffd4bca97d",
+  "name": "Dawnlight Industries PurityMist PM-4 'Angel Breath'",
+  "type": "weapon",
+  "aliases": [
+    "Angel Breath",
+    "PM-4",
+    "Holy Spray",
+    "The Purifier"
+  ],
+  "category": "self_defense",
+  "description": "A premium chemical defense spray marketed to upper-tier residents who want personal protection without the stigma of carrying a weapon. The PM-4 dispenses a precisely metered dose of synthetic capsaicinoid in a fine mist from an elegant brushed-titanium canister designed to resemble a luxury perfume atomizer. The formulation includes a proprietary calming pheromone blend that Dawnlight claims reduces the user's own stress response during deployment.\n\nThe PM-4's active compound is a synthetic analog of capsaicin that Dawnlight developed to avoid the inconsistent potency of natural pepper extracts. The result is a spray with extremely predictable effects: exactly six minutes of incapacitating pain and blindness, followed by complete symptom resolution within twenty minutes. This predictability is the product's key selling point — it incapacitates reliably without causing the prolonged suffering or potential complications associated with cheaper formulations.\n\nDawnlight prices the PM-4 at Φ280 per canister — expensive enough to be aspirational, cheap enough for Tier 3 and above. The canister is refillable at Dawnlight boutiques located in Tier 3-5 commercial districts, where the refill service includes a complimentary deployment technique refresher. The entire experience is designed to feel like a spa visit rather than a weapons purchase.",
+  "manufacturer": "DAWNLIGHT INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Synthetic capsaicinoid formulation",
+    "Precision metered dosing",
+    "Calming pheromone integration"
+  ],
+  "specifications": "capacity: 6 precision bursts\nrange: 2 meters fine mist cone\nincapacitation duration: exactly 6 minutes\nfull recovery: 20 minutes\nweight: 85 g\ncanister material: brushed titanium\nrefill cost: Φ45 at Dawnlight boutiques",
+  "tactical_use": "The PM-4 is designed for close-range encounters — its fine mist disperses quickly beyond two meters. Dawnlight recommends a single burst aimed at the upper face, followed by immediate withdrawal. The spray's predictable six-minute incapacitation window gives the user a known timeframe to reach safety. Not recommended for multiple-attacker scenarios due to limited capacity.",
+  "cultural_context": "The PM-4 is a status symbol disguised as a self-defense tool. Carrying one signals that you can afford to live in a tier where personal defense is a lifestyle accessory rather than a survival necessity. Dawnlight's boutique refill service has become a social ritual in Tier 3-4 communities — a place to be seen, to demonstrate that you take personal safety seriously without being gauche about it. Lower-tier residents mock the PM-4 as 'rich people's pepper spray,' but its formulation is genuinely superior to budget alternatives.",
+  "known_users": [],
+  "story_hooks": [
+    "Dawnlight's calming pheromone blend has been found to contain a mild euphoric compound that creates subtle brand loyalty — users feel slightly better every time they handle their PM-4, associating the product with positive emotions.",
+    "A Tier 4 socialite deployed her PM-4 against an augmented mugger and it had no effect — the synthetic capsaicinoid doesn't trigger the same receptors as natural capsaicin in individuals with certain genetic modifications."
+  ],
+  "ammunition_type": [
+    "Synthetic capsaicinoid precision mist"
+  ],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "chemical",
+    "pepper_spray",
+    "luxury",
+    "tier_3",
+    "status_symbol"
+  ],
+  "parent_corponation": ""
+}

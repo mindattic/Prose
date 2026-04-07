@@ -21,14 +21,262 @@
   "full_text": "Crucible Genomics & Applied Heredity Corponation — stock designation CRG, commonly called The Forge or Gene-Smiths — is a Φ489 billion applied genomics corponation headquartered on a 22-square-kilometer walled campus along the Calumet River in Chicago's South Sprawl. Founded in 2138 as a crop science spinoff from the University of Chicago, Crucible pivoted dramatically in 2143 under CEO Dr. Imogen Vaas toward what the company terms 'applied heredity' — the commercial design and production of organisms optimized for labor and agriculture. A public scandal over that pivot nearly destroyed the company; instead, Vaas secured sovereign corponation status in 2144, placing Crucible's research beyond the reach of external bioethics bodies. Today Crucible's 134,000 direct employees produce everything from the Staple-8 grain variant that feeds 40% of the corridor's population to the Rho-series labor organisms whose legal status as persons versus property remains contested in seventeen jurisdictions. An estimated 12,000 Rho-series individuals live in the campus's Phenotype District; the underground network known as the Seam has been working to extract them for six years. Security is handled by Crucible Internal Containment — 8,000 Handlers with biological control expertise and rumored kill-switch pathogen systems. Crucible holds a Big 20 seat it has retained despite nine censure motions from Pale Lantern Bioethics, and maintains an active cold war of espionage and litigation with rival Lacuna Genomics. Annual revenue stands at Φ71.3 billion.",
   "tags": [
     "weapon",
-    "war",
-    "ai",
     "corporate",
     "control",
-    "rain",
     "cold",
     "ethics",
-    "train",
     "escape"
+  ],
+  "subsidiaries": [
+    {
+      "name": "Crucible Internal Containment",
+      "line_of_business": "8,000 Handlers managing biological security and escaped organism recovery",
+      "public_facing": false
+    },
+    {
+      "name": "Staple-8 Grain Division",
+      "line_of_business": "Production of the ubiquitous grain variant feeding 40% of the corridor population",
+      "public_facing": false
+    },
+    {
+      "name": "Rho-Series Production Facility",
+      "line_of_business": "Design and manufacture of engineered humanoid labor organisms",
+      "public_facing": false
+    },
+    {
+      "name": "Phenotype District Management",
+      "line_of_business": "Housing and lifecycle administration for 12,000 Rho-series individuals",
+      "public_facing": false
+    },
+    {
+      "name": "Vaas Applied Heredity Lab",
+      "line_of_business": "Lead research facility for CEO Dr. Imogen Vaas genomic optimization programs",
+      "public_facing": false
+    },
+    {
+      "name": "Gene-Forge Manufacturing",
+      "line_of_business": "Industrial-scale genomic editing and organism production systems",
+      "public_facing": false
+    },
+    {
+      "name": "Calumet Greenhouse Biomes",
+      "line_of_business": "Sealed testing environments for engineered crop and organism variants",
+      "public_facing": false
+    },
+    {
+      "name": "Crucible Crop Sciences",
+      "line_of_business": "Drought-resistant, pest-resistant, and high-yield agricultural organism development",
+      "public_facing": false
+    },
+    {
+      "name": "Crucible Patent Holdings",
+      "line_of_business": "Aggressive IP portfolio covering engineered organism designs and gene sequences",
+      "public_facing": false
+    },
+    {
+      "name": "Biological Product Classification Office",
+      "line_of_business": "Legal team maintaining Rho-series non-personhood status across jurisdictions",
+      "public_facing": false
+    },
+    {
+      "name": "Seam Interdiction Unit",
+      "line_of_business": "Dedicated team tracking and disrupting the underground Rho-series extraction network",
+      "public_facing": false
+    },
+    {
+      "name": "Kill-Switch Pathogen Lab",
+      "line_of_business": "Species-specific biological control agents keyed to Crucible-designed organisms",
+      "public_facing": false
+    },
+    {
+      "name": "Crucible Aquaculture Division",
+      "line_of_business": "Engineered fish and aquatic organism farming for corridor food supply",
+      "public_facing": false
+    },
+    {
+      "name": "Livestock Optimization Program",
+      "line_of_business": "Genomically enhanced cattle, poultry, and swine for industrial agriculture",
+      "public_facing": false
+    },
+    {
+      "name": "Crucible Forestry Division",
+      "line_of_business": "Fast-growth engineered timber species for construction material production",
+      "public_facing": false
+    },
+    {
+      "name": "Applied Heredity Ethics Board LLC",
+      "line_of_business": "Self-certifying ethics review to deflect Pale Lantern Bioethics censure motions",
+      "public_facing": false
+    },
+    {
+      "name": "Rho Classification Legal Trust",
+      "line_of_business": "Defending the biological product designation in seventeen jurisdictions",
+      "public_facing": false
+    },
+    {
+      "name": "Phenotype Welfare Services Inc",
+      "line_of_business": "Minimal care provisions for Rho-series subjects to counter exploitation claims",
+      "public_facing": false
+    },
+    {
+      "name": "Crucible Environmental Compliance",
+      "line_of_business": "Managing containment breach liability and ecological contamination claims",
+      "public_facing": false
+    },
+    {
+      "name": "Chicago South Reclamation Corp",
+      "line_of_business": "Holds sovereign charter rights for the Calumet River campus territory",
+      "public_facing": false
+    },
+    {
+      "name": "Harvest Table Foods",
+      "line_of_business": "Premium organic-branded food products made from Crucible-engineered crops",
+      "public_facing": true
+    },
+    {
+      "name": "GoldenGrain Bakeries",
+      "line_of_business": "Bakery chain using Staple-8 flour marketed as artisanal quality",
+      "public_facing": true
+    },
+    {
+      "name": "Verdure Garden Supply",
+      "line_of_business": "Consumer gardening products with Crucible-engineered seed varieties",
+      "public_facing": true
+    },
+    {
+      "name": "Bloomfield Floral",
+      "line_of_business": "Engineered ornamental flowers that last 10x longer than natural varieties",
+      "public_facing": true
+    },
+    {
+      "name": "NovaPet Companions",
+      "line_of_business": "Hypoallergenic designer pet animals with enhanced temperament traits",
+      "public_facing": true
+    },
+    {
+      "name": "BioSilk Textiles",
+      "line_of_business": "Fabric produced from engineered spider silk organisms for luxury clothing",
+      "public_facing": true
+    },
+    {
+      "name": "Emerald Lawn Care",
+      "line_of_business": "Engineered grass seed and lawn maintenance products that never need mowing",
+      "public_facing": true
+    },
+    {
+      "name": "Crucible Biofuel",
+      "line_of_business": "Algae-based fuel production from engineered photosynthetic organisms",
+      "public_facing": false
+    },
+    {
+      "name": "Rootstock Brewing",
+      "line_of_business": "Beer brand using Crucible-engineered barley and hops for unique flavor profiles",
+      "public_facing": true
+    },
+    {
+      "name": "PureFiber Nutrition",
+      "line_of_business": "Dietary fiber supplements derived from engineered plant material",
+      "public_facing": true
+    },
+    {
+      "name": "Corridor Composting Services",
+      "line_of_business": "Engineered decomposer organisms for rapid organic waste processing",
+      "public_facing": true
+    },
+    {
+      "name": "BioLume Lighting",
+      "line_of_business": "Bioluminescent engineered organisms marketed as decorative living light sources",
+      "public_facing": true
+    },
+    {
+      "name": "AquaPure Biofilter",
+      "line_of_business": "Water purification using engineered bacterial colonies for residential systems",
+      "public_facing": true
+    },
+    {
+      "name": "Canopy Reforestation",
+      "line_of_business": "Environmental restoration projects using fast-growth engineered trees",
+      "public_facing": true
+    },
+    {
+      "name": "Heritage Seed Vault",
+      "line_of_business": "Natural seed preservation project (also mapping wild genomes for commercial use)",
+      "public_facing": true
+    },
+    {
+      "name": "Fauna Pest Control",
+      "line_of_business": "Engineered predator insects for agricultural pest management",
+      "public_facing": true
+    },
+    {
+      "name": "GeneFit Health Testing",
+      "line_of_business": "Consumer genetic analysis and health optimization recommendations",
+      "public_facing": true
+    },
+    {
+      "name": "Crucible Agricultural Consulting",
+      "line_of_business": "Advisory services for corponation and sovereign zone farming operations",
+      "public_facing": false
+    },
+    {
+      "name": "Lacuna Countermeasures Division",
+      "line_of_business": "Industrial espionage and patent litigation operations against rival Lacuna Genomics",
+      "public_facing": false
+    },
+    {
+      "name": "Mycelium Construction Materials",
+      "line_of_business": "Building materials grown from engineered fungal networks",
+      "public_facing": true
+    },
+    {
+      "name": "BioInk 3D Printing",
+      "line_of_business": "Living-tissue printing technology for medical and industrial applications",
+      "public_facing": true
+    },
+    {
+      "name": "Crucible Educational Foundation",
+      "line_of_business": "Genomics scholarships and university programs (talent pipeline)",
+      "public_facing": true
+    },
+    {
+      "name": "SynthLeather Goods",
+      "line_of_business": "Lab-grown leather products marketed as cruelty-free luxury",
+      "public_facing": true
+    },
+    {
+      "name": "Corridor Pollinator Program",
+      "line_of_business": "Engineered bee colonies for agricultural pollination services",
+      "public_facing": true
+    },
+    {
+      "name": "Chimera Biodefense",
+      "line_of_business": "Engineered organisms for military and security biological applications",
+      "public_facing": false
+    },
+    {
+      "name": "Crucible Veterinary Genomics",
+      "line_of_business": "Genetic enhancement services for livestock and working animals",
+      "public_facing": true
+    },
+    {
+      "name": "Spore Network Biocomputing",
+      "line_of_business": "Experimental fungal-network computational substrates for data processing",
+      "public_facing": false
+    },
+    {
+      "name": "Terroir Wine Estates",
+      "line_of_business": "Engineered grape varieties producing wines with impossible flavor profiles",
+      "public_facing": true
+    },
+    {
+      "name": "Crucible Protein Works",
+      "line_of_business": "Lab-grown meat and protein products for corridor food supply",
+      "public_facing": true
+    },
+    {
+      "name": "Kelp Forest Restoration",
+      "line_of_business": "Engineered aquatic plants for Great Lakes ecological recovery and carbon capture",
+      "public_facing": true
+    }
   ]
 }

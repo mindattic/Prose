@@ -13,7 +13,7 @@
   "category": "stealth",
   "body_location": "",
   "description": "The Lazarus Shade is a subcutaneous thermal management system produced by Lazarus Pharmaceuticals in conjunction with a hardware subsidiary, combining a short-duration pharmaceutical agent with a network of implanted micro-radiator filaments to give the user precise, real-time control over their surface thermal emission profile. The pharmaceutical component — administered via autoinjector pen, with effects lasting 90 to 120 minutes — suppresses the body's normal thermoregulatory responses and hands control to the hardware layer. The implanted filament network, a one-time installation procedure taking roughly two hours, can then redistribute, suppress, or selectively emit heat across different body regions under software direction.\n\nThe system's most operationally significant capability is thermal impersonation: by studying a target environment's expected thermal signatures — a maintenance worker, a security guard, ambient machinery — the Shade's control software can configure the wearer's emission profile to approximate that signature. On standard thermal imaging, the operator reads not as a concealed intruder but as an expected, boring heat source. The pharmaceutical suppression component also drops the wearer's core temperature output by approximately 2.1°C for the duration, providing baseline thermal reduction even when active impersonation is not engaged.\n\nThe Shade carries genuine medical risk. The pharmaceutical component stresses cardiac and thermoregulatory systems, and use more than twice within a 48-hour window without medical supervision has caused fatalities in field conditions. Lazarus Pharmaceuticals sells the pharmaceutical element separately through a prescription pathway nominally intended for 'hyperthermia management therapy,' a fiction that has generated significant regulatory friction and at least two ongoing administrative investigations in Meridian 88's health oversight bodies.",
-  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "manufacturer": "Little Sprout Pediatrics",
   "tier_availability": "Tier 3+",
   "legality": "Licensed",
   "installation_requirements": "",
@@ -50,5 +50,6 @@
     "dark",
     "drone",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
 }

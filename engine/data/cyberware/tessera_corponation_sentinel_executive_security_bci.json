@@ -1,0 +1,60 @@
+{
+  "id": "7e2d9b4f1a6c3085e7d2b9f4a1c63082",
+  "name": "TESSERA CORPONATION Sentinel Executive Security BCI",
+  "brand_name": "TESSERA CORPONATION",
+  "product_name": "Sentinel Executive Security BCI",
+  "type": "cyberware",
+  "aliases": [
+    "The Warden",
+    "Tessera Lock",
+    "Corp Cage",
+    "Loyalty Box",
+    "The Sentinel"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The Sentinel Executive Security BCI is Tessera Corponation's flagship corporate-issue neural security platform, designed for CorpSec operatives, executive protection details, and personnel handling classified information above clearance threshold AMBER. The implant operates as a multi-layered cognitive firewall: its passive intrusion detection layer monitors for unauthorized neural-frequency interrogation attempts—including wetware skimming rigs, empathic extraction devices, and hostile BCI handshakes—and responds with immediate counter-signal jamming and incident logging. A proprietary data compartmentalization engine, Tessera's VAULT architecture, partitions the user's working memory into isolated cognitive cells, preventing information bleed across security domains even under pharmacological or psychological duress. The Sentinel also runs continuous biometric loyalty verification, cross-referencing stress hormones, micro-expression neural correlates, and vocal subharmonics against a behavioral baseline to flag potential compromise in real time. All telemetry feeds to Tessera's corporate monitoring infrastructure on an always-on encrypted channel.\n\nThe Sentinel is issued to Tessera Corponation employees at Senior Analyst grade and above, and licensed to partner corporations for their own security apparatus. Among CorpSec operatives, the implant carries a complex dual reputation: it is genuinely excellent protective hardware, and it is genuinely a leash. The always-on monitoring channel means Tessera knows where you are, what you're feeling, and whether your stress response spiked during a meeting. Operatives refer to this candidly as 'being on the wire,' and most accept it as the cost of employment at this tier. A small underground exists around Sentinel modification — technicians who claim to be able to install a 'shadow partition' that keeps a sliver of cognitive space off the monitoring feed. Tessera's internal security teams hunt these technicians aggressively.",
+  "manufacturer": "CogAd Platforms",
+  "tier_availability": "Tier 3-4",
+  "legality": "Restricted",
+  "installation_requirements": "Tessera-certified installation facility only; requires corporate employment contract or licensed partner agreement; background clearance screening; biometric baseline registration with Tessera Central Security",
+  "rejection_risk": "Moderate — the VAULT architecture requires deep hippocampal anchoring; patients with prior memory-adjacent implants face elevated compatibility risk; Tessera mandates a 30-day pre-installation implant audit",
+  "maintenance": "Mandatory weekly remote firmware push via Tessera secure channel; monthly in-person diagnostic at Tessera facility; behavioral baseline recalibration quarterly or after major life events",
+  "specifications": "{\"intrusion_detection_frequencies\": \"0.1Hz-120kHz neural scan spectrum\", \"counter_signal_response_time\": \"<8ms\", \"vault_memory_partitions\": \"up to 12 isolated cognitive cells\", \"loyalty_verification_sampling\": \"continuous, 500Hz biometric cross-reference\", \"monitoring_uplink\": \"always-on AES-2048 encrypted Tessera channel\", \"incident_log_retention\": \"7 years tamper-evident\", \"gps_precision\": \"1.2m indoor, 0.4m outdoor\", \"duress_response\": \"automated lockdown + security alert + memory partition sealing\", \"battery\": \"galvanic neural harvest + 72hr emergency lithium backup\"}",
+  "side_effects": [
+    "Persistent low-grade awareness of being monitored — clinically documented as 'Panopticon Affect,' presenting as mild hypervigilance and difficulty fully relaxing off-duty",
+    "VAULT partitioning can cause momentary cognitive 'compartment switching lag' — a 0.5-2 second mental stutter when context-shifting between classified and unclassified thought domains",
+    "Some users report dreaming in fragmented, non-sequential episodes consistent with memory partition bleed during REM sleep",
+    "Extended use correlates with reduced spontaneous disclosure in personal relationships — users become habitually guarded even with family, a pattern Tessera's own psychologists acknowledge in internal documentation"
+  ],
+  "cultural_context": "Within Tessera Corponation's internal culture, the Sentinel is simultaneously a badge of rank and a mark of institutional trust — you don't get issued one until the company has decided you're worth protecting and watching. Among rival corporations, spotting a Sentinel ridge on an executive means knowing they're on the wire, which changes negotiation dynamics considerably. In the broader Meridian 88 professional world, the implant is a known symbol of corporate capture — the kind of thing Tier 3 workers aspire to for the salary it implies, and then quietly resent for the freedom it costs.",
+  "known_users": [
+    "Tessera Corponation Senior Analysts and above",
+    "CorpSec field operatives and executive protection detail",
+    "Partner corporation security officers operating under Tessera licensing",
+    "Financial division personnel with AMBER+ clearance handling proprietary market data",
+    "Corporate intelligence analysts and counterintelligence staff"
+  ],
+  "story_hooks": [
+    "A Tessera CorpSec operative approaches the players off the books — she believes her Sentinel's loyalty verification flagged her incorrectly after she witnessed something she wasn't supposed to see, and Tessera's internal review board has scheduled a 'recalibration appointment' she's certain she won't return from.",
+    "Someone is selling Sentinel shadow partition modifications in the Shelf — the technician doing the work is a former Tessera installation engineer who disappeared from corporate records three years ago. Tessera wants the operation shut down. So does someone else, for different reasons.",
+    "A deceased Tessera executive's Sentinel is still transmitting on the monitoring channel. Its VAULT partitions are sealed, but the incident log from the night of his death is accessible — and it records a 47-minute memory wipe that shouldn't be possible with standard Tessera architecture."
+  ],
+  "street_price": "Φ22,000",
+  "licensed_price": "Φ45,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "corporate",
+    "security",
+    "professional",
+    "intrusion-detection",
+    "memory-compartmentalization",
+    "loyalty-verification",
+    "tessera-corponation",
+    "tier3",
+    "tier4",
+    "restricted"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

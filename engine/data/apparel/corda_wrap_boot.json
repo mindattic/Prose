@@ -1,0 +1,41 @@
+{
+  "id": "36e9f2a5b8c1714390d1e2f3a4b5c678",
+  "name": "Corda Wrap Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "Not really a boot so much as a structured foot-wrap — thick cord and reclaimed canvas wound in overlapping layers around the foot and lower ankle, then sealed with a coat of flex-resin to hold the shape. A flat rubber pad is bonded to the bottom. They take about an hour to make and last two to three months of hard wear. Some people add a buckle or a lace for structure. Every pair is unique.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed cord",
+    "canvas strips",
+    "flex-resin",
+    "rubber sheet"
+  ],
+  "functionality": "Customizable fit. Fully gene-compatible — can be wrapped around digitigrade or modified feet.",
+  "what_it_says": "You're at the edge of what money can do for you. Or you're a purist who thinks all footwear is just engineering.",
+  "worn_by": [
+    "the very poorest Shelf residents",
+    "gene-modded individuals with unusual feet",
+    "survivalists"
+  ],
+  "manufacturer": "Handmade (no manufacturer)",
+  "price_range": "Φ2 - Φ5",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The resin used in a pair matches a specific black-market supplier — a lead in a supply chain investigation.",
+    "Someone has been making these boots for the same family for three generations. They know every foot by shape."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "handmade",
+    "wrap",
+    "gene-compatible",
+    "aug-compatible",
+    "shelf",
+    "improvised"
+  ],
+  "parent_corponation": ""
+}

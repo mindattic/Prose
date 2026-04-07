@@ -12,7 +12,7 @@
   ],
   "category": "medical",
   "description": "A handheld scanning device that performs a comprehensive biological assessment when waved over a patient's body — detecting broken bones, internal bleeding, organ damage, foreign objects, toxins in the bloodstream, and neural interface status. The CBW-3 uses a combination of ultrasound, bioimpedance, and chemical sensing to build a holographic body map showing the location and severity of all detected conditions. The scan takes 15 seconds for a full body assessment and requires no physical contact — the wand operates at a distance of up to 30 cm.",
-  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "manufacturer": "Lazarus Medical Devices",
   "tier_availability": "Tier 2+",
   "legality": "Licensed — medical professionals",
   "base_technologies": [],
@@ -40,5 +40,6 @@
     "neural",
     "explosive",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
 }

@@ -1,0 +1,33 @@
+{
+  "id": "bce9c1073f85e13a93d6a80bd7decb1c",
+  "name": "Palimpsest",
+  "type": "archetype",
+  "category": "identity",
+  "description": "Old selves show through like writing scraped off a page",
+  "behavioral_signature": "Carries visible traces of every identity they've worn and shed",
+  "under_stress": "Past selves resurface and compete for control",
+  "at_rest": "A layered person whose history is readable in their contradictions",
+  "will_always": [
+    "carry echoes of who they used to be"
+  ],
+  "will_never": [
+    "fully erase any previous version of themselves"
+  ],
+  "unless": [
+    "a past self is dangerous enough to require surgical removal"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Reinvented Self",
+      "threshold": 0.7,
+      "context": "layered past"
+    }
+  ],
+  "opposite_of": [
+    "Anonymous"
+  ],
+  "tags": [
+    "layered",
+    "historical"
+  ]
+}

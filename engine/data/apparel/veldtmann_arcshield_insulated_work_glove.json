@@ -1,0 +1,47 @@
+{
+  "id": "2f8b5e0a4c7d1f3e9b6a2d5c8f1e4b07",
+  "name": "Veldtmann ArcShield Insulated Work Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Thick mid-forearm gloves in matte gunmetal dielectric shell over a compressed aerogel thermal core, stitched with high-visibility orange thread along the knuckle ridges and cuff. The back of the hand carries an embossed Veldtmann voltage-rating badge: 40kV Class E. Palms are anti-vibration gel-padded. Fingers are pre-curved for tool grip.\n\nWidely issued on electrical infrastructure crews and MagRail maintenance teams across Tier 2-3. Durable enough to last three years of daily use; most pairs show tool-score marks and carbon smudging by month two.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "dielectric polymer shell",
+    "compressed aerogel thermal core",
+    "anti-vibration gel palm padding",
+    "high-vis aramid stitching",
+    "textured nitrile grip fingertips"
+  ],
+  "functionality": "Rated 40kV electrical insulation, Class E arc flash resistance. Anti-vibration gel reduces tool fatigue on sustained power tool operation. Thermal core protects to -30°C ambient. Not aug-compatible by design — insulation integrity requires sealed construction; chrome-hand workers use a separate aug-rated variant (not in current stock).",
+  "what_it_says": "You work on systems that kill the careless, and you are not careless.",
+  "worn_by": [
+    "MagRail electrical maintenance crews",
+    "GridPatch infrastructure workers",
+    "Tier 2-3 power plant technicians",
+    "independent electricians",
+    "Shelf salvagers working live infrastructure"
+  ],
+  "manufacturer": "Veldtmann (corponation)",
+  "price_range": "Φ65–Φ120 per pair",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair is recovered near a sabotaged MagRail relay — the voltage rating badge has been scraped off, suggesting someone wanted the gloves untraceable.",
+    "Counterfeit Veldtmann ArcShields have been circulating on the Shelf; they look identical but fail at 8kV — workers have died wearing them.",
+    "A Tier 3 electrical inspector keeps a pair in their desk drawer despite working a desk job — they haven't explained why to anyone."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "work-gloves",
+    "electrical",
+    "insulated",
+    "shock-resistant",
+    "tier2",
+    "tier3",
+    "industrial",
+    "veldtmann",
+    "magrail"
+  ],
+  "parent_corponation": ""
+}

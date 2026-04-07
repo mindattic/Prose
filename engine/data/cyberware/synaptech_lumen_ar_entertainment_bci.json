@@ -1,0 +1,60 @@
+{
+  "id": "51e6a09c3d78bf142c90e847d2f3a160",
+  "name": "SynapTech Lumen AR Entertainment BCI",
+  "brand_name": "SynapTech",
+  "product_name": "Lumen",
+  "type": "cyberware",
+  "aliases": [
+    "the Lumen",
+    "glow chip",
+    "SynLux",
+    "the dreamer",
+    "feed candy"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The SynapTech Lumen is a premium consumer BCI built around an entertainment-first architecture, embedding a high-fidelity sensory processing node in the primary visual and auditory cortices alongside a standard prefrontal mesh for feed access, messaging, and payment, delivering immersive AR and neural-streamed media experiences at a quality level that consumer competitors cannot match at any comparable price point. The Lumen supports twenty-four AR overlay channels with full spatial depth rendering, lossless neural audio at frequencies up to 40kHz, haptic resonance simulation that generates tactile sensations without physical contact, and a proprietary SynapTech ContentKey DRM system that locks premium neural media to verified implant signatures. Its 7.4 Gbps sustained throughput is allocated primarily toward sensory rendering, with the device's SensoryCore processing chip handling real-time environment blending so convincingly that users routinely describe AR overlays as 'more real than real.' Battery life runs from a hybrid bioelectric-thermoelectric dual cell rated for twelve years.\n\nThe Lumen is SynapTech's flagship mass-market product, priced at the top of the consumer range and positioned as a luxury accessible to aspirational Tier 3 buyers — the company's advertising famously shows the chip as a gift exchanged between beautiful, ambiguously-heritaged professionals in warm-lit apartments, a lifestyle signifier as much as a neural device. It is extraordinarily popular with creative-sector workers, media consumers, social influencers, and anyone for whom the quality of their sensory feed is a meaningful part of daily life. SynapTech's ContentKey ecosystem also means that the highest-quality neural entertainment — immersive concerts, full-sensory narrative experiences, tactile social spaces — is only accessible to Lumen users, creating a tiered media landscape that has made the chip feel almost mandatory for cultural participation in Tier 3.",
+  "manufacturer": "SYNAPTECH NEURAL DESIGN CORPORATION",
+  "tier_availability": "Tier 2-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "SynapTech Experience Center or licensed neurology clinic; 3-hour procedure under sedation; cortical mapping session required 48 hours before installation for SensoryCore calibration",
+  "rejection_risk": "Low — SynapTech's proprietary biocompatible silk substrate has a 98.1% acceptance rate; sensory cortex nodes occasionally require secondary calibration if initial placement is sub-optimal",
+  "maintenance": "Weekly content and firmware updates via SynapTech CloudSync; semi-annual sensory calibration at SynapTech Experience Centers (Φ120 standard fee); ContentKey license renewal annually (Φ200 subscription)",
+  "specifications": "{\"bandwidth_sustained\": \"7.4 Gbps\", \"ar_channels\": 24, \"sensory_rendering\": \"full spatial depth\", \"neural_audio\": \"lossless up to 40kHz\", \"haptic_simulation\": true, \"encryption\": \"256-bit AES + ContentKey DRM\", \"payment_integration\": true, \"identity_verification\": true, \"smart_link\": false, \"messaging\": true, \"feed_access\": true, \"cell_type\": \"hybrid bioelectric-thermoelectric\", \"cell_life\": \"12 years\", \"latency\": \"3ms average\", \"wireless_protocol\": \"NeuralMesh 8.3\"}",
+  "side_effects": [
+    "Sensory displacement — extended high-fidelity AR sessions can cause the unaugmented world to feel muted, flat, or unsatisfying by comparison; a well-documented phenomenon SynapTech internally calls 'lumen drop'",
+    "ContentKey DRM occasionally generates a sharp cortical interrupt ('the lock') when attempting to access non-licensed media, described by users as a brief stabbing sensation behind the left eye",
+    "Haptic simulation nodes in the auditory cortex can cause synesthetic cross-stimulation in roughly 11% of users — music perceived as color, texture, or taste",
+    "Dependency risk: clinical studies have flagged elevated dopaminergic response to Lumen media experiences, with some users showing behavioral patterns consistent with mild hedonic recalibration after 18+ months of heavy use"
+  ],
+  "cultural_context": "The SynapTech Lumen is the aspirational chip of Meridian 88's creative and media-consuming classes — owning one is a quiet marker of cultural seriousness and disposable income. SynapTech's ContentKey ecosystem has been both celebrated and condemned: it guarantees that Lumen users experience the richest version of the city's cultural life, while critics argue it has effectively paywalled authentic cultural experience behind a neural hardware purchase. In Tier 3 social circles, 'are you on Lumen?' is a genuine social sorting question. The annual ContentKey subscription has also drawn legal challenges from consumer advocates who argue that SynapTech is leasing rather than selling neural real estate.",
+  "known_users": [
+    "media professionals and content creators",
+    "social influencers and feed personalities",
+    "architects and spatial designers",
+    "musicians and immersive experience artists",
+    "upper Tier 3 professionals seeking lifestyle signifiers",
+    "neural gaming enthusiasts focused on immersion over reaction time",
+    "cultural critics and journalists"
+  ],
+  "story_hooks": [
+    "SynapTech's ContentKey DRM server has been compromised, and someone is distributing a patch that unlocks full Lumen sensory capabilities without the subscription — but the patch also contains something else, something that activates only during specific emotional states and records what it finds.",
+    "A wave of 'lumen drop' cases has been reported in a Tier 3 district — users whose real-world perception has degraded so severely they can no longer function without the chip active, raising questions about whether SynapTech deliberately tuned the dependency curve.",
+    "A neural media experience distributed through the ContentKey platform contains an embedded subliminal sequence — not illegal, technically, since SynapTech's terms of service permit 'affective enhancement' — but this one seems to be changing users' political opinions in a very specific direction."
+  ],
+  "street_price": "Φ3,100",
+  "licensed_price": "Φ5,500",
+  "tags": [
+    "cyberware",
+    "bci",
+    "consumer",
+    "tier-3",
+    "entertainment",
+    "synaptech",
+    "ar-overlay",
+    "sensory-rendering",
+    "premium",
+    "mid_range_consumer"
+  ],
+  "parent_corponation": ""
+}

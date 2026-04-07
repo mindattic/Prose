@@ -1,0 +1,43 @@
+{
+  "id": "5f1d8b4a7e930c62f1d8b4a7e930c621",
+  "name": "Nullweave Tier-4 Aug-Display Formal Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Designed specifically for the Tier 4 professional whose augmentation is part of their professional identity — the kind of specialist whose chrome arm or spinal rig is a credential, not a liability. This Nullweave two-piece suit is cut in deep obsidian with a micro-textured surface that subtly absorbs light without reading as matte. The jacket is structured and single-breasted with an open left sleeve: the entire left arm is a deliberate chrome-display channel, hemmed in a clean rolled edge that frames exposed augmentation like a tailored exhibition. The right sleeve is full-length and standard. This asymmetry is entirely intentional and immediately readable as status — it says the wearer's chrome is worth showing. The trousers have a full-length internal pressure seam along the right leg, compatible with active exo-brace or powered prosthetic limbs, with external seam lines disguised as decorative stitching in silver thread. A fitted obsidian turtleneck in micro-rib synth-silk sits underneath, with a reinforced BCI collar that accommodates both standard port jacks and the wider-profile neural array hardware used by senior technical staff. Footwear is a clean black synthetic-leather Oxford with a magnetic heel lock.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "light-absorbing micro-texture nullweave suiting",
+    "micro-rib synth-silk turtleneck",
+    "synthetic-leather magnetic-heel Oxford",
+    "silver decorative stitching thread"
+  ],
+  "functionality": "Full open left sleeve for chrome display and accessibility, internal pressure seam for powered prosthetic or exo-brace accommodation, BCI-reinforced turtleneck collar for standard and wide-array neural ports, magnetic heel lock for mag-floor workspaces, RFID-opaque jacket body",
+  "what_it_says": "Your augmentation is not a disability accommodation. It is a qualification. This outfit announces that the chrome arm or the spinal rig or the neural array is the reason you're in the room. Tier 3 hides their modifications under long sleeves. Tier 4 frames them. This suit is the frame.",
+  "worn_by": [
+    "Tier 4 augmented technical specialists",
+    "senior BCI integration engineers",
+    "cybernetics consultants with client-facing roles",
+    "aug-forward professionals in medical, engineering, or data-architecture fields"
+  ],
+  "manufacturer": "Nullweave Apparel — Corporate Augmentation Line",
+  "price_range": "Φ 1,100–Φ 1,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character wearing this suit enters a Tier 5 boardroom for the first time — the open chrome-display sleeve, designed to signal Tier 4 confidence, is read by the executives as aggressively presumptuous, and the meeting goes sideways before a word is spoken.",
+    "The nullweave fabric's light-absorption property has an unintended side effect: it renders the wearer's outline poorly on standard CCTV systems, making them functionally hard to identify on security footage.",
+    "A street-level aug-rights activist recognizes the suit's chrome-display design and approaches the wearer, assuming they're a sympathizer — but the professional has never thought of their augmentation in political terms, and the conversation forces a reckoning."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_4",
+    "aug_compatible",
+    "nullweave",
+    "chrome_display",
+    "augmentation",
+    "specialist_formal"
+  ],
+  "parent_corponation": ""
+}

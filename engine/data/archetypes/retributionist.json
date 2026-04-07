@@ -1,0 +1,33 @@
+{
+  "id": "88b5f2ff9938cbb7c988b19563bbcee7",
+  "name": "Retributionist",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Punishment must fit the crime, exactly and always",
+  "behavioral_signature": "Tracks debts and ensures proportional payback",
+  "under_stress": "Escalates punishment beyond proportion",
+  "at_rest": "Keeps mental ledgers of who owes what",
+  "will_always": [
+    "make sure wrongdoers face consequences"
+  ],
+  "will_never": [
+    "let an offense go unanswered"
+  ],
+  "unless": [
+    "mercy would prevent a larger cycle of violence"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Judge",
+      "threshold": 0.8,
+      "context": "justice enforcement"
+    }
+  ],
+  "opposite_of": [
+    "Forgiver"
+  ],
+  "tags": [
+    "justice-obsessed",
+    "punitive"
+  ]
+}

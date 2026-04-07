@@ -1,0 +1,46 @@
+{
+  "id": "c9a52fd6e3017b84d2f6c1390e74b8a0",
+  "name": "Ossian Conceal Shoulder Harness Mk-4",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A cross-draw shoulder harness in dark espresso bridle leather over a matte black nylon frame, designed to sit beneath a jacket at Tier 4 professional dress standard. The holster body is precision-molded synthetic leather with passive retention — no snaps, no audible draw. Secondary strap carries a slim mag or tool pouch opposite the draw side.\n\nHardware is brushed black steel throughout. Adjustment points are silent velcro-backed, avoiding the telltale click of traditional buckles. The harness spreads load across both shoulders and is tailored to clear spinal aug rigs and standard chrome shoulder joints.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "bridle leather",
+    "matte nylon structural frame",
+    "molded synthetic leather holster body",
+    "brushed black steel hardware",
+    "silent velcro adjustment",
+    "micro-suede retention lining"
+  ],
+  "functionality": "Passive retention holster for standard sidearm profiles. Silent adjustment and draw. Secondary pouch for mags, medpen, or slim tools. Cleared for standard spinal aug rigs and chrome shoulder joints. Sits flat under structured jackets.",
+  "what_it_says": "You operate in rooms where weapons aren't supposed to exist — and you've planned for that.",
+  "worn_by": [
+    "corporate security specialists",
+    "junior fixers",
+    "private investigators",
+    "Tier 4 executives in contested districts",
+    "licensed personal protection detail"
+  ],
+  "manufacturer": "Ossian Leatherworks (independent premium label)",
+  "price_range": "Φ620–Φ950",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The harness is stamped with a defunct corponation's internal serial — the original owner was someone whose death was ruled accidental.",
+    "A Tier 5 client requests the wearer disarm before entry; the harness's passive retention makes a silent, compliant draw possible if things go wrong.",
+    "Ossian has received a cease-and-desist from Redline Armory claiming design patent overlap — every unit sold now carries legal ambiguity."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "holster",
+    "harness",
+    "concealed-carry",
+    "tier-4",
+    "independent-label",
+    "aug-compatible",
+    "tactical"
+  ],
+  "parent_corponation": ""
+}

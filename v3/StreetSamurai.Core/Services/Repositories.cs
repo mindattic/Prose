@@ -126,6 +126,18 @@ public class ContractRepository : JsonDirectoryRepository<ContractData>
         : base(Path.Combine(paths.EngineDataDir, "contracts"), c => c.Codename) { }
 }
 
+public class AutomatonRepository : JsonDirectoryRepository<AutomatonData>
+{
+    public AutomatonRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "automata"), a => a.Name) { }
+}
+
+public class EntertainmentRepository : JsonDirectoryRepository<EntertainmentData>
+{
+    public EntertainmentRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "entertainment"), e => e.Name) { }
+}
+
 public class ApparelRepository : JsonDirectoryRepository<ApparelData>
 {
     public ApparelRepository(IPathProvider paths)

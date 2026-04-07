@@ -1,0 +1,43 @@
+{
+  "id": "d8e3a1f047c295b6e0d4f8a3c1729b5e",
+  "name": "Vansen ChemGuard Nitrile Gauntlet Pro",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Elbow-length chemical-resistant gauntlets in matte industrial yellow, molded from layered nitrile-analog compound over a knitted fiber substrate. The exterior is smooth and seamless from fingertip to mid-forearm, then transitions to a textured grip band before the flared cuff. A Vansen compliance stamp is embossed at the wrist — required for certified chemical handling in M88 regulatory zones.\n\nThe inner lining is moisture-wicking and replaceable via a rolled-cuff inversion system. Finger articulation is stiff but adequate. Standard issue across Tier 2 chemical processing plants, often found in Tier 1 black-market lots missing the compliance stamp.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "nitrile-analog compound",
+    "knitted aramid substrate",
+    "moisture-wicking liner",
+    "compliance polymer emboss"
+  ],
+  "functionality": "Resists acids, alkalis, solvents, and biological reagents at standard industrial concentrations. Rolled-cuff design prevents liquid ingress. Replaceable liner extends gauntlet service life. Not rated for electrical hazard.",
+  "what_it_says": "You follow safety protocols — or at least you're supposed to.",
+  "worn_by": [
+    "chemical plant workers",
+    "waste processing crews",
+    "pharmaceutical line workers",
+    "Tier 2 lab assistants",
+    "Shelf scavengers handling unknown substances"
+  ],
+  "manufacturer": "Vansen Industrial (corponation subsidiary)",
+  "price_range": "Φ22–Φ48",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A shipment of Vansen gauntlets arrives at a Shelf clinic — inside one pair, rolled tight in the liner, is a data chip wrapped in oilcloth.",
+    "A Tier 2 worker is found unconscious; their Vansen gauntlets show signs of chemical exposure from a compound not used in their assigned facility."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "work gloves",
+    "chemical-resistant",
+    "industrial",
+    "tier-2",
+    "safety",
+    "corponation",
+    "protective"
+  ],
+  "parent_corponation": ""
+}

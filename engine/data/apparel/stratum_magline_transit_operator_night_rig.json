@@ -1,0 +1,48 @@
+{
+  "id": "a3f7c2d1e8b045609f2a71c3d4e5f601",
+  "name": "Stratum MagLine Transit Operator Night Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A complete night-shift transit operator's uniform built for the underground MagLine corridors of M88. The foundation is a charcoal-grey moisture-wicking synth-wool pullover with a reinforced collar and a Stratum Logistics embroidered patch at the left breast, worn under a navy insulated vest with hi-vis orange paneling across the shoulders and a reflective Stratum logo strip running vertically down the back. The vest features a rear channel seam for basic spinal rig accommodation and two deep cargo pockets with magnetic closures. Matching straight-leg transit trousers in the same charcoal synth-wool have reinforced knee panels, a wide tool loop at the right thigh, and an elasticated waistband that accommodates tail geneware through a rear adjustable vent. A navy knit beanie with a woven hi-vis stripe across the brow sits low over the ears. On the feet, matte black steel-toe platform boots with oil-resistant outsoles and side-zip closures for fast donning complete the kit, with reflective piping along the heel. The whole rig reads clean, institutional, slightly tired.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-wool blend",
+    "recycled polycarb insulation",
+    "hi-vis retroreflective tape",
+    "reinforced nylon knee panels",
+    "magnetic-closure synth-canvas",
+    "oil-resistant rubber outsole"
+  ],
+  "functionality": "Spinal rig rear channel seam, tail-vent adjustable waistband, reflective safety paneling for low-light tunnel environments, magnetic cargo pocket closures, steel-toe footwear, tool loop, moisture-wicking base layer for temperature regulation in climate-variable underground corridors.",
+  "what_it_says": "You clock in and you clock out. You know the tunnels by feel. You've worn this uniform long enough that the patches have patches, and you still iron the collar because it costs you nothing and it's the only thing you control on shift. Loyal, institutional, quietly dignified.",
+  "worn_by": [
+    "MagLine transit operators",
+    "underground rail maintenance workers",
+    "tunnel inspection crews",
+    "shift supervisors on the night run"
+  ],
+  "manufacturer": "Stratum Logistics (corponation-issued uniform program)",
+  "price_range": "Φ180–Φ240 (company-subsidized; retail replacement Φ390)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A transit operator wearing this uniform witnesses something in the tunnel that Stratum Logistics officially says never happened — and the embroidered name patch on the chest makes them very easy to identify.",
+    "The reflective strips on the vest are not just safety equipment — a runner tells the party they can be used to signal contacts in specific MagLine stations using a code the operators developed themselves.",
+    "An NPC in this uniform approaches the players during a night shift changeover, speaking quietly: they've been running contraband in the cargo vest pockets for six months and someone finally noticed."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "transit",
+    "corponation_issued",
+    "night_shift",
+    "hi_vis",
+    "aug_compatible",
+    "gene_compatible",
+    "stratum_logistics",
+    "uniform"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "8b3d1f7e2a5c904d6b0e8f3a1c7d5b2e",
+  "name": "Aurelux Phantom Stealth Cloak",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "The Aurelux Phantom is one of perhaps four commercially available garments in Meridian 88 that offers genuine active optical camouflage at the civilian market level, and the price reflects that exclusivity absolutely. It is a full-length cloak — structured at the shoulders, falling to the ankle, with a deep hood — woven from a meta-material textile that carries an embedded photonic lattice capable of bending ambient light around the wearer. Activation is BCI-triggered and reduces visual signature by approximately 85% in standard lighting conditions; in low light, the effect approaches invisibility. The cloak requires a small power cell housed in a flat panel at the small of the back, rated for six hours of active use. When inactive, the material has a subtle iridescent quality in deep charcoal, like oil on dark water. Aurelux markets this to Tier 5 clients only, and purchase requires identity verification. Who actually has one is another matter.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "photonic meta-material textile",
+    "conductive thread lattice",
+    "micro-power cell housing",
+    "structured shoulder boning",
+    "silk lining"
+  ],
+  "functionality": "Active optical camouflage via BCI trigger. 85% visual signature reduction in standard light. Near-full invisibility in low light. 6-hour active use per charge. Requires BCI interface.",
+  "what_it_says": "You have resources that remove you from the normal social contract entirely. You can be present without being seen, which means accountability does not apply to you in the same way it applies to others.",
+  "worn_by": [
+    "Tier 5 operatives",
+    "corporate intelligence assets",
+    "extremely high-end fixers",
+    "the paranoid ultra-wealthy",
+    "people who should not be where they are"
+  ],
+  "manufacturer": "Aurelux Technologies (Tier 4-5 specialty manufacturer)",
+  "price_range": "Φ14500",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "Aurelux's identity verification system was reportedly compromised fourteen months ago — a small number of Phantom cloaks may have been purchased under false credentials, and someone in the Shelf black market is claiming to have one for sale",
+    "A Tier 5 executive was found dead in a space that security footage shows as unoccupied — the investigating team found a discharged Aurelux power cell near the body and no other explanation for how the killer entered or left",
+    "A street engineer on the Shelf claims to have reverse-engineered a partial version of the photonic lattice using salvaged materials — it works for about forty seconds before the heat buildup makes the wearer visible as a thermal bloom"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "Tier 5",
+    "stealth cloak",
+    "active camo",
+    "BCI",
+    "tech-enhanced",
+    "rare",
+    "luxury"
+  ],
+  "parent_corponation": ""
+}

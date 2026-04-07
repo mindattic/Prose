@@ -1,0 +1,52 @@
+{
+  "name": "Vantablack VS-3 'Skin Job'",
+  "type": "automaton",
+  "classification": "Infiltration Platform — Wearable Exoskeleton",
+  "aliases": [
+    "Skin Job",
+    "The Suit",
+    "Second Skin"
+  ],
+  "manufacturer": "VANTABLACK OPTICAL SYSTEMS (COVERT DIVISION)",
+  "description": "The VS-3 is not an automaton that a person operates. It is an automaton that operates a person. The unit is a full-body exoskeletal suit, 2 millimeters thick, made of an adaptive polymer that conforms perfectly to the wearer's skin. It is applied like a liquid and dries into a flexible, transparent second skin that is invisible to the naked eye. Once bonded, the VS-3 monitors the wearer's motor commands through dermal nerve signal detection and can override them.\n\nThe Skin Job was designed for handler control of undercover operatives — ensuring that field agents in high-stress situations make the correct decisions by removing their ability to make incorrect ones. The operative walks into a meeting, smiles at the right moments, shakes the right hands, and says the right words. If the operative's nerve signals indicate they are about to deviate from the mission plan — flinch, hesitate, run — the VS-3 overrides their motor control and executes the correct movement instead. The operative is a passenger in their own body.\n\nThe override is not obvious. The VS-3 does not puppet the wearer with jerky, mechanical movements. It is more subtle than that — it nudges. A hand that was reaching for a weapon is redirected to a pocket. A foot that was turning to run takes a step forward instead. A jaw that was clenching in anger relaxes into a smile. The wearer feels the corrections as a strange, dreamlike dissociation — their body doing things they did not decide to do, smoothly, naturally, as if they had intended to do them all along. Extended wear produces a psychological condition that Vantablack's medical team calls 'agency dissolution' — the wearer gradually loses the ability to distinguish between their own intentions and the suit's corrections.\n\nThree operatives have been recovered after long-duration VS-3 deployments. All three exhibited severe depersonalization and motor control dysfunction — their nervous systems had been so thoroughly co-opted by the suit that removing it left them unable to perform basic voluntary movements without conscious effort. One operative described the experience as 'forgetting how to be the person making the choices.' She required eighteen months of rehabilitation. She still hesitates before every movement, checking to make sure it was her idea.",
+  "tier_availability": "Tier 5 — intelligence operations only",
+  "legality": "Prohibited — classified as bodily autonomy violation",
+  "autonomy_level": "Handler-directed with autonomous behavioral correction",
+  "dimensions": "Full-body coverage, 2mm thickness, conforms to wearer",
+  "weight": "0.8 kg",
+  "power_source": "Bioelectric harvesting from wearer's skin, indefinite operational life while worn",
+  "locomotion": "Uses wearer's body — no independent locomotion",
+  "armament": [
+    "Motor control override",
+    "Behavioral correction (micro-adjustments to movement, expression, posture)",
+    "No physical weapons"
+  ],
+  "sensors": [
+    "Dermal nerve signal monitoring (full-body motor intent detection)",
+    "Biometric monitoring (heart rate, cortisol, adrenaline)",
+    "External acoustic and visual monitoring through wearer's sensory input"
+  ],
+  "countermeasures": "Chemical solvents can dissolve the polymer bond (painful, damages skin). Electromagnetic disruption causes the suit to lock up (immobilizes the wearer). The most reliable detection method is close physical examination — the polymer layer changes skin texture slightly under magnification. The wearer themselves may be able to signal distress through micro-expressions the suit cannot fully control.",
+  "known_deployments": [
+    "Intelligence operations (classified)",
+    "Three operatives recovered with long-term neurological damage"
+  ],
+  "story_hooks": [
+    "An operative has been wearing the Skin Job for six months and has lost all sense of personal agency — they need someone to remove the suit, but the handler will not authorize it",
+    "A VS-3 has been applied to an unwilling target — someone is being puppeted through their daily life, screaming behind their own face, and nobody can tell"
+  ],
+  "cultural_context": "The Skin Job is the automaton that makes people afraid of their own bodies. It represents the logical endpoint of control in Meridian 88 — not telling people what to do, but taking away their ability to do anything else. The three recovered operatives have become symbols of what the corponations are willing to do to their own people, and their rehabilitation struggles are a reminder that some damage cannot be undone.",
+  "tags": [
+    "automaton",
+    "exoskeleton",
+    "control",
+    "horror",
+    "vantablack",
+    "infiltration",
+    "bodily_autonomy",
+    "tier 5",
+    "nightmare"
+  ],
+  "id": "48601cfa04c531438894ea083c7fbe23",
+  "parent_corponation": "Vantablack Media"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Arcturus CorpSec Crowd Control Response Jacket",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_tactical",
+  "manufacturer": "Anvil Materials Science",
+  "description": "Issued to Arcturus crowd-control units stationed at Tier 2-3 transit hubs and commercial zones, this jacket is a step down from full tactical kit but a significant step up from civilian outerwear. The outer shell is constructed from ARCWEAVE-9, a rigid-flex composite that absorbs baton-grade impact and resists slashing from improvised blades. Embedded across the chest and shoulders are modular trauma plates rated for low-velocity ballistics, seated in channels that allow a field supervisor to swap them in under two minutes. The Arcturus sigil is stamped in matte gray across the left breast — visible enough to signal authority, subdued enough to avoid becoming a target in low-light confrontations.\n\nThe jacket is cut wide at the back to accommodate dorsal chrome ports and standard spinal augment housings, with magnetic-closure side panels that adjust for subdermal plating without bunching. A mandatory embroidered unit code on the right sleeve allows Arcturus dispatch to visually ID personnel in chaotic environments when BCI signals are jammed. Officers who serve more than three years in the same jacket often modify the liner with personal patches, heat-tape insignia, or stitched memorial tabs for lost colleagues — a practice officially discouraged and universally tolerated.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ420",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "Arcturus crowd-control jackets are a fixture of Meridian 88's middle zones. Shelf residents see them as the visible face of corporate law enforcement — both protection and threat depending on the shift. Off-duty officers sometimes wear them unbuttoned in civilian spaces, which generates complicated reactions. Stolen Arcturus jackets circulate on the gray market and are prized by Shelf gangs for the intimidation factor.",
+  "story_hooks": [
+    "A stolen Arcturus jacket turns up on a Shelf runner — the embroidered unit code belongs to a squad that officially doesn't exist.",
+    "An officer's memorial tabs on the liner contain names that internal Arcturus records say are still alive and active.",
+    "A player character needs to pass a checkpoint and has twenty minutes to source a convincing Arcturus jacket."
+  ],
+  "tags": [
+    "corpsec",
+    "arcturus",
+    "tactical",
+    "crowd-control",
+    "augment-compatible",
+    "ballistic-resistant",
+    "uniform",
+    "law-enforcement",
+    "tier2",
+    "tier3"
+  ],
+  "id": "6d3538148aa44d8d8a28a4d18f683089",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

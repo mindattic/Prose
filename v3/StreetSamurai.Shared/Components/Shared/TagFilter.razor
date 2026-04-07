@@ -1,0 +1,113 @@
+@* Reusable multi-select tag filter dropdown.
+   Usage: <TagFilter AllTags="tagList" SelectedTags="selectedSet" SelectedTagsChanged="callback" /> *@
+
+<div class="tag-filter-wrapper position-relative" @onfocusout="HandleFocusOut" tabindex="-1">
+    <button class="btn btn-sm btn-outline-secondary w-100 text-start d-flex align-items-center"
+            @onclick="ToggleOpen" @onclick:stopPropagation="true">
+        <i class="bi bi-tags me-1"></i>
+        @if (SelectedTags.Count == 0)
+        {
+            <span class="text-muted">Filter by tags...</span>
+        }
+        else
+        {
+            <span>@SelectedTags.Count tag@(SelectedTags.Count != 1 ? "s" : "") selected</span>
+        }
+        <i class="bi bi-chevron-down ms-auto" style="font-size:0.7rem;"></i>
+    </button>
+
+    @if (isOpen)
+    {
+        <div class="tag-dropdown bg-dark border border-secondary rounded shadow-lg position-absolute w-100 mt-1"
+             style="z-index:200; max-height:300px; overflow-y:auto;" @onclick:stopPropagation="true">
+            <div class="p-2 border-bottom border-secondary">
+                <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                       placeholder="Search tags..." @bind="tagSearch" @bind:event="oninput" />
+            </div>
+            @if (SelectedTags.Count > 0)
+            {
+                <div class="px-2 py-1 border-bottom border-secondary">
+                    <button class="btn btn-sm btn-link text-danger p-0" @onclick="ClearAll">Clear all</button>
+                </div>
+            }
+            <div class="p-1">
+                @foreach (var tag in FilteredTags)
+                {
+                    var isChecked = SelectedTags.Contains(tag.name);
+                    <label class="d-flex align-items-center px-2 py-1 rounded tag-item @(isChecked ? "tag-active" : "")"
+                           style="cursor:pointer; font-size:0.8rem;">
+                        <input type="checkbox" class="form-check-input me-2 mt-0" style="min-width:14px;"
+                               checked="@isChecked" @onchange="() => Toggle(tag.name)" />
+                        <span class="flex-grow-1 text-light">@tag.name</span>
+                        <span class="badge bg-secondary ms-1" style="font-size:0.65rem;">@tag.count</span>
+                    </label>
+                }
+            </div>
+        </div>
+    }
+
+    @if (SelectedTags.Count > 0)
+    {
+        <div class="d-flex flex-wrap gap-1 mt-1">
+            @foreach (var tag in SelectedTags.OrderBy(t => t))
+            {
+                var t = tag;
+                <span class="active-tag-pill" @onclick="() => Toggle(t)" @onclick:stopPropagation="true">
+                    @t <i class="bi bi-x"></i>
+                </span>
+            }
+            <span class="active-tag-clear" @onclick="ClearAll" @onclick:stopPropagation="true">Clear all</span>
+        </div>
+    }
+</div>
+
+<style>
+    .tag-filter-wrapper:focus-within .tag-dropdown { display: block; }
+    .tag-item:hover { background: #1c2128; }
+    .tag-active { background: #1a2233; }
+    .active-tag-pill { background: #dc3545; color: #fff; border-radius: 10px; padding: 1px 8px; font-size: 0.7rem; cursor: pointer; display: inline-flex; align-items: center; gap: 3px; }
+    .active-tag-pill:hover { opacity: 0.8; }
+    .active-tag-pill i { font-size: 0.6rem; }
+    .active-tag-clear { background: #30363d; color: #8b949e; border-radius: 10px; padding: 1px 8px; font-size: 0.7rem; cursor: pointer; }
+    .active-tag-clear:hover { color: #e6edf3; }
+</style>
+
+@code {
+    [Parameter] public List<(string name, int count)> AllTags { get; set; } = [];
+    [Parameter] public HashSet<string> SelectedTags { get; set; } = [];
+    [Parameter] public EventCallback<HashSet<string>> SelectedTagsChanged { get; set; }
+
+    private bool isOpen;
+    private string tagSearch = "";
+
+    private IEnumerable<(string name, int count)> FilteredTags =>
+        (string.IsNullOrWhiteSpace(tagSearch)
+            ? AllTags
+            : AllTags.Where(t => t.name.Contains(tagSearch, StringComparison.OrdinalIgnoreCase)))
+        .Where(t => t.count >= 2);
+
+    private void ToggleOpen() => isOpen = !isOpen;
+
+    private async Task Toggle(string tag)
+    {
+        if (SelectedTags.Contains(tag))
+            SelectedTags.Remove(tag);
+        else
+            SelectedTags.Add(tag);
+        await SelectedTagsChanged.InvokeAsync(SelectedTags);
+    }
+
+    private async Task ClearAll()
+    {
+        SelectedTags.Clear();
+        await SelectedTagsChanged.InvokeAsync(SelectedTags);
+    }
+
+    private async Task HandleFocusOut()
+    {
+        // Small delay to allow click events on dropdown items to fire first
+        await Task.Delay(200);
+        isOpen = false;
+        await InvokeAsync(StateHasChanged);
+    }
+}

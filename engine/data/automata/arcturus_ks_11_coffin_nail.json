@@ -1,0 +1,50 @@
+{
+  "name": "Arcturus KS-11 'Coffin Nail'",
+  "type": "automaton",
+  "classification": "Spider Platform — Precision Kill",
+  "aliases": [
+    "Coffin Nail",
+    "One Shot",
+    "The Carpenter"
+  ],
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "description": "The KS-11 is a small, four-legged spider platform the size of a large tarantula, carrying a single hyper-velocity penetrator round in a dorsal-mounted miniaturized railgun. The unit positions itself at range — typically on a wall or ceiling with line of sight to a doorway, corridor junction, or anticipated target position — and fires a single shot with sufficient velocity to penetrate standard body armor at ranges up to 50 meters. After firing, the unit has no remaining offensive capability and either self-destructs or withdraws for reloading.\n\nThe KS-11 is a mechanical sniper the size of a hand. It can be placed in locations no human sniper could access — inside ventilation grates, on the underside of furniture, behind wall panels — and wait indefinitely for a target. The railgun produces a sharp crack and a brief electromagnetic pulse on firing, but the unit's size and position make locating the source extremely difficult. By the time the shot is traced, the KS-11 has either destroyed itself or scuttled to a new position.\n\nArcturus produces them in bulk and sells them as 'perimeter denial micro-platforms.' A facility protected by fifty KS-11 units has fifty invisible snipers covering every corridor and doorway. The cost per unit is low enough that they can be treated as disposable — fired once and abandoned.",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed for facility defense",
+  "autonomy_level": "Fully autonomous — fire on target identification",
+  "dimensions": "0.15m body, 0.25m leg span",
+  "weight": "0.8 kg",
+  "power_source": "Micro capacitor (single shot), micro lithium cell (locomotion)",
+  "locomotion": "Quadruped micro-spider",
+  "armament": [
+    "Dorsal miniaturized railgun (single hyper-velocity penetrator)"
+  ],
+  "sensors": [
+    "Micro optical with target identification",
+    "Vibration detection"
+  ],
+  "countermeasures": "Thorough physical search of an area can locate units. Electromagnetic scanning detects the charged capacitor. The single-shot limitation means surviving the first shot neutralizes the threat. Metallic dust or spray disrupts the railgun's magnetic field.",
+  "known_deployments": [
+    "Corporate facility defense",
+    "VIP residence protection",
+    "Assassination operations (unconfirmed)"
+  ],
+  "story_hooks": [
+    "The players enter a room where someone has placed thirty KS-11 units. Thirty invisible snipers, one shot each, covering every angle. Moving through the room is a puzzle with lethal consequences.",
+    "A KS-11 killed a politician at a public event. The unit was found on a light fixture 40 meters away. It was purchased legally. The investigation is about who placed it, not who sold it."
+  ],
+  "cultural_context": "The KS-11 has made interior spaces feel as dangerous as open ground. The knowledge that any surface might conceal a mechanical sniper has contributed to the pervasive paranoia of life in Meridian 88.",
+  "tags": [
+    "automaton",
+    "spider",
+    "sniper",
+    "precision",
+    "weapon",
+    "arcturus",
+    "corporate",
+    "stealth",
+    "tier 4"
+  ],
+  "id": "1a3f0f833b9fb59e80b0c3ceda569f8b",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

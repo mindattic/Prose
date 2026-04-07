@@ -1,0 +1,34 @@
+{
+  "name": "TESSERA Geneware Consultation Blazer",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_office_wear",
+  "manufacturer": "CogAd Platforms",
+  "description": "Worn by TESSERA's client-facing geneware consultation staff, this blazer is itself a subtle advertisement for the company's capabilities. The fabric is a structured bioluminescent silk-synthetic blend — a TESSERA proprietary material called Lumivex — that shifts through a slow, barely perceptible spectrum of pale blues and greens when the wearer is under warm light, mimicking the aesthetic of bioluminescent geneware modifications. Cut in a fitted, gender-neutral silhouette with a standing collar, it accommodates horn clearance via a recessed crown seam and has reinforced shoulder fabric that lies flat over subdermal implants. The TESSERA double-helix sigil is embroidered at the left cuff in thread that fluoresces under near-UV light.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ390",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "TESSERA consultation staff are aspirational figures in Tier 3 neighborhoods — they represent access to transformation, to bodies that are chosen rather than inherited. The blazer is recognized on sight and usually earns deference, though in some communities it signals corporate body-commodity culture and gets a colder reception.",
+  "story_hooks": [
+    "A counterfeit version of the blazer is circulating, worn by someone running an unlicensed geneware consultation scam out of a Tier 2 back room.",
+    "A consultation staff member in the blazer is found dead in a Tier 1 district with no explanation for what brought them there.",
+    "The Lumivex fabric has an undisclosed secondary function — it passively logs biometric data from nearby individuals and transmits it to TESSERA servers."
+  ],
+  "tags": [
+    "tessera",
+    "biotech",
+    "corporate",
+    "blazer",
+    "bioluminescent",
+    "geneware_compatible",
+    "augment_compatible",
+    "consultation",
+    "tier3",
+    "tier4"
+  ],
+  "id": "429d7430557f4e0fa741312378500c85",
+  "parent_corponation": "Tessera Corponation"
+}

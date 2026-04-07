@@ -1,0 +1,33 @@
+{
+  "id": "8767f7d6a685ea882211afcec1b729d2",
+  "name": "Abdicated King",
+  "type": "archetype",
+  "category": "power",
+  "description": "Had power, gave it away, can't stop looking back",
+  "behavioral_signature": "Advises from the sidelines with the weight of someone who once ruled",
+  "under_stress": "Reaches for authority they no longer have",
+  "at_rest": "Tells stories about when things were their responsibility",
+  "will_always": [
+    "offer unsolicited strategic advice"
+  ],
+  "will_never": [
+    "fully let go of their former authority"
+  ],
+  "unless": [
+    "the new leader earns their genuine respect"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Mentor",
+      "threshold": 0.7,
+      "context": "former authority"
+    }
+  ],
+  "opposite_of": [
+    "Power Addict"
+  ],
+  "tags": [
+    "nostalgic",
+    "advisory"
+  ]
+}

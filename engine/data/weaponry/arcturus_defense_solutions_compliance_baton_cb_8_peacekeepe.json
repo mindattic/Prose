@@ -1,0 +1,46 @@
+{
+  "id": "38cc3f7c7e7b36070610979e4c5d196f",
+  "name": "Arcturus Defense Solutions Compliance Baton CB-8 'Peacekeeper'",
+  "type": "weapon",
+  "aliases": [
+    "Peacekeeper",
+    "CB-8",
+    "Compliance Stick",
+    "The Negotiator"
+  ],
+  "category": "melee",
+  "description": "A collapsible baton that delivers calibrated electrical discharges on impact, with five selectable intensity levels ranging from 'compliance' (painful but non-injurious) to 'incapacitation' (immediate motor-function disruption lasting 30-90 seconds). The CB-8 is the standard-issue less-lethal weapon for Meridian 88's corporate security forces, and its ubiquity has made its distinctive crackling discharge one of the city's most recognized sounds.\n\nThe Peacekeeper extends from a 22-centimeter collapsed length to 55 centimeters with a flick of the wrist, and its telescoping sections lock with enough rigidity to be used as a conventional impact weapon when the electrical system is depleted or disabled. The discharge capacitor recharges from a compact cell in the handle, providing approximately 200 discharges per charge cycle.\n\nArcturus's 'compliance' marketing language has been widely criticized by civil rights groups who note that the highest intensity setting has caused cardiac arrest in individuals with undiagnosed heart conditions and has been documented to cause permanent nerve damage in augmented individuals whose cyberware channels the discharge in unexpected ways. Arcturus's response has been to add a disclaimer to the user manual rather than limit the weapon's output.",
+  "manufacturer": "Blackwood Commercial Group",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — standard security equipment",
+  "base_technologies": [
+    "Calibrated electrical discharge",
+    "Collapsible telescoping construction",
+    "Five-level intensity control"
+  ],
+  "specifications": "length_collapsed: 22 cm\nlength_extended: 55 cm\nweight: 380 g\ndischarge_levels: 5 (compliance through incapacitation)\ndischarges_per_charge: ~200\npower_source: Handle-integrated charge cell\nrecharge_time: 2 hours from depleted",
+  "tactical_use": "The CB-8 is the workhorse of corporate security's less-lethal arsenal. At lower settings, it enforces compliance through pain without causing injuries that generate legal liability. At higher settings, it incapacitates targets for extraction or restraint. Security operators are trained to assess augmentation level before selecting discharge intensity — heavily augmented targets may require higher settings due to electrical shunting through cybernetic pathways, while unaugmented targets may be more vulnerable than expected. The collapsible design allows the weapon to be carried holstered and deployed in under a second.",
+  "cultural_context": "The Peacekeeper is simultaneously the most hated and most common weapon in Meridian 88. Lower-tier residents who interact with corporate security encounter it frequently, and the crackling sound of a CB-8 charging is associated with authority, coercion, and the implicit threat of escalation. The weapon's 'compliance' branding has become ironic shorthand — 'seeking compliance' means using force, and 'a compliance conversation' means an interrogation. The gap between the weapon's marketing language and its lived reality is a recurring subject of political protest.",
+  "known_users": [
+    "Corporate security forces (standard issue)",
+    "Municipal security",
+    "Private security contractors"
+  ],
+  "story_hooks": [
+    "A modified CB-8 has been recovered with its intensity limiter removed — the weapon now delivers discharge levels well above the rated maximum, turning a compliance tool into a lethal weapon. The modification is simple enough that instructions have been circulating on underground networks.",
+    "A class-action lawsuit against Arcturus alleges that the CB-8's highest setting was deliberately calibrated to cause permanent nerve damage in augmented individuals — turning 'less-lethal' into 'selectively lethal' against the aug-dependent population."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "baton",
+    "electrical",
+    "less-lethal",
+    "tier 2",
+    "compliance",
+    "standard-issue",
+    "less_lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

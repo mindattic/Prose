@@ -1,0 +1,39 @@
+{
+  "id": "c17a4e8d3b5f09261d7e0c4a9b2f63d5",
+  "name": "Fenmark ToughSeam Electrician Pant",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Slim-straight work trousers designed for electrical and systems technicians who work in tight conduit spaces and equipment bays. The fabric is a matte black anti-static weave that dissipates minor static charge. Flat-front, no metal hardware anywhere on the garment. Two slim thigh pockets sized for a diagnostic tablet and tool set. A narrow but recognizable category of workwear.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "anti-static poly-cotton weave",
+    "non-conductive nylon hardware",
+    "carbon-fiber thread stitching"
+  ],
+  "functionality": "Anti-static fabric construction, non-conductive hardware throughout",
+  "what_it_says": "You're a systems tech or electrician — a skilled trade that pays better than raw labor, and you have the specific gear to prove it.",
+  "worn_by": [
+    "electricians",
+    "systems technicians",
+    "infrastructure maintenance workers",
+    "BCI installation techs"
+  ],
+  "manufacturer": "Fenmark Technical Apparel",
+  "price_range": "Φ38 - Φ50",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Anti-static work trousers are required PPE in several high-voltage districts — someone wearing Fenmarks has legitimate reason to be near sensitive electrical infrastructure.",
+    "The non-conductive construction makes these useful in contexts beyond their intended purpose; a few street-level operators buy them specifically for that reason."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 2",
+    "workwear",
+    "electrical",
+    "anti-static",
+    "technical"
+  ],
+  "parent_corponation": ""
+}

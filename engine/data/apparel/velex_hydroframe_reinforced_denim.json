@@ -1,0 +1,39 @@
+{
+  "id": "f1d6a8e3049c7b25f1d6a8e3049c7b25",
+  "name": "Velex HydroFrame Reinforced Denim",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Heavy dark-indigo denim jeans with triple-stitched inner seams and a flexible aramid-weave lining along the inner thigh and calf — built to handle the micro-vibration and joint pressure of hydraulic leg augments without shredding at the seams after a month of use. The cut is a standard relaxed straight leg with a slightly higher rise. They look like good jeans. They last.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heavy denim",
+    "aramid-weave inner lining",
+    "triple-stitched nylon thread"
+  ],
+  "functionality": "Inner seam reinforcement rated for sustained hydraulic joint pressure and vibration. Resists seam failure at pressure points common to hydraulic aug limbs.",
+  "what_it_says": "You've burned through regular jeans with your chrome and learned from it.",
+  "worn_by": [
+    "hydraulic-aug laborers",
+    "Tier 2 workers",
+    "couriers",
+    "anyone who's ruined too many pairs of normal denim"
+  ],
+  "manufacturer": "Velex",
+  "price_range": "Φ75",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The aramid lining is the same material used in budget ballistic gear — someone's wearing these for a reason beyond chrome compatibility.",
+    "A Tier 2 mechanic's been patching and re-patching a pair of these for three years; the patches tell a story of where she's been."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 2",
+    "aug-compatible",
+    "denim",
+    "hydraulic",
+    "reinforced seam"
+  ],
+  "parent_corponation": ""
+}

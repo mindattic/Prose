@@ -1,0 +1,51 @@
+{
+  "id": "2e9f5a7c3b1d804e6f2a0c5e8b3d1f64",
+  "name": "Drift Market Vendor's Layered Stand",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The drift markets of the Shelf run in all weather — acid drizzle, heat inversions, the particular cold that comes off the lake when the wind pushes through the corridor. This outfit is engineered for standing still in all of it, which is a different survival problem than moving through it. The base is a wide-collared tunic in deep rust, the fabric a dense cotton-synthetic weave that has faded unevenly from washing in reclaimed water, leaving a mottled pattern that looks almost intentional — warmer rust at the center, washed-out ochre at the hems and cuffs. Over it, a vest in dark gray felted material, the felt dense enough to be nearly rigid, carries twelve external pockets of varying sizes across its front and interior: this is a vendor's vest, and each pocket holds something specific. The left breast pocket has a slit for a tablet-thin transaction reader, the edges of the slit worn smooth from a thousand insertions. Layered over the vest is a wide-bodied over-shirt in faded olive waxed canvas, left unbuttoned and worn as a light jacket, its wrists rolled and secured with loops of self-repair tape. Trousers are wide-cut in dark charcoal, the fabric thick and slightly stiff, with two deep front pockets and a broad waistband that sits high — practical for standing. At the hem, the trousers are folded once and secured with small clips, a Shelf tailoring solution for fabric bought long and not cut. Shoes are flat and broad, slip-on style in cracked dark rubber, the soles thick and slightly worn to the outer edge from standing on uneven market-ground. A long scarf in faded burgundy and gray plaid — synthetic wool, clearly machine-woven but worn soft — is wrapped twice around the neck and tucked into the vest, one end left to fall loose. Around the waist, a broad apron in heavy stained canvas covers the lower front of the outfit; its pockets are full and its surface is stained with the evidence of a dozen different trades.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "mottled rust cotton-synthetic tunic",
+    "dark gray dense felted vest",
+    "faded olive waxed canvas over-shirt",
+    "self-repair tape wrist loops",
+    "dark charcoal wide-cut thick trouser fabric",
+    "hem clips",
+    "cracked dark rubber slip-on soles",
+    "synthetic wool plaid scarf in faded burgundy and gray",
+    "heavy stained canvas apron"
+  ],
+  "functionality": "Twelve-pocket vendor's vest allows categorized storage of transaction equipment, small goods, currency, tools, and personal items — all accessible without removing outer layers. Transaction reader slit in left breast allows rapid payment processing. Waxed canvas over-shirt provides weather protection without restricting arm movement during transactions. High-waist trouser cut reduces fatigue during long standing periods. Hem-clip trouser adjustment is a no-cut tailoring solution. Broad apron protects lower layers from chemical splash and handling stains while adding four more functional pockets. Flat rubber shoes distribute weight for all-day standing on uneven surfaces.",
+  "what_it_says": "This person has a spot at the drift market and they hold it every day. The twelve-pocket vest is a professional tool — they've thought hard about what goes where. The stained apron is not a failure of hygiene; it's a record of commerce. The scarf and the mottled tunic are the only softness in an otherwise completely utilitarian outfit, and they matter — drift market vendors need people to approach them, to feel some warmth, to stop.",
+  "worn_by": [
+    "Shelf drift market vendors and traders",
+    "unlicensed exchange operators",
+    "information brokers who operate from fixed market positions",
+    "herbalists and food vendors in Shelf outdoor markets"
+  ],
+  "manufacturer": "Self-assembled; vest is a modified Ironclad-adjacent knockoff from a street tailor; tunic is unmarked; waxed canvas over-shirt is surplus",
+  "price_range": "Φ20–Φ50 for full assembled outfit",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The transaction reader in the breast pocket pocket has been logging every sale for two years — not by the vendor's choice, and someone is now attempting to access that data to reconstruct a supply chain that the corponations want mapped.",
+    "One of the apron pockets contains a small wrapped object that the vendor has been holding for a customer who hasn't come to collect it in six weeks — the vendor knows it's time to open it, and is afraid to.",
+    "The drift market vendor knows every face that passes through this corridor, every change in traffic pattern, every new presence — making them the most valuable intelligence source in a four-block radius, if someone can gain their trust."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier 1",
+    "vendor",
+    "market",
+    "layered",
+    "gene-compatible",
+    "standing work",
+    "drift market",
+    "functional pockets",
+    "community"
+  ],
+  "parent_corponation": ""
+}

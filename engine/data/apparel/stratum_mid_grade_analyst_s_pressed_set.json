@@ -1,0 +1,43 @@
+{
+  "id": "7d4b9e3a1c62f085d4b9e3a1c62f0851",
+  "name": "Stratum Mid-Grade Analyst's Pressed Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A step above the standard-issue grey, this Tier 3-adjacent outfit represents the upper ceiling of what a cubicle worker can wear without triggering HR review. The centerpiece is a Stratum-branded slim-fit dress shirt in pale slate blue, woven from a 60/40 synth-cotton coolweave blend that resists both sweat and wrinkle for a full nine-hour shift. It's paired with Stratum's mid-grade pressed trousers in charcoal with a faint pinstripe — not bold enough to read as Tier 4, but enough to signal ambition. A single-button charcoal blazer in budget synth-wool sits over the top, cut straight across the back with no tail vent — a standard cut that quietly excludes anyone with a tail modification. Shoes are clean black derby oxfords with a synthetic welt. The only personal touch allowed is a small pin or badge on the lapel — most wearers choose their department insignia. The left sleeve has a discreet chrome-channel seam for a forearm-mounted data cuff, the one concession to augmentation that Stratum's corporate dress code explicitly permits.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "synth-cotton coolweave blend",
+    "budget synth-wool blazer fabric",
+    "synthetic welt leather",
+    "poly-blend pinstripe trouser weave"
+  ],
+  "functionality": "Coolweave moisture management for desk-to-floor transitions, chrome-channel seam in left sleeve for forearm data cuffs, wrinkle-resistant trouser finish, RFID-transparent lapel zone for badge pinning",
+  "what_it_says": "This person is trying. They've bought slightly better than the company minimum, they iron their shirt, and they keep the blazer on even when it's warm. They want to be seen as Tier 4. They are not yet Tier 4. The pinstripe is a quiet declaration of intent that everyone above them finds slightly endearing and slightly irritating.",
+  "worn_by": [
+    "Stratum Corp analysts angling for promotion",
+    "Tier 3 senior administrators",
+    "cubicle workers who spent their clothing budget on this one outfit",
+    "mid-floor supervisors without official supervisor titles"
+  ],
+  "manufacturer": "Stratum Corporate Apparel Line",
+  "price_range": "Φ 220–Φ 380",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character in this outfit is approached in the elevator by a Tier 4 exec who mistakes them for a junior specialist — the conversation that follows opens a door that was never meant for them.",
+    "The chrome-channel sleeve seam has been quietly modified by a street tailor to also carry a concealed micro-filament data tap; the wearer may or may not know it's there.",
+    "HR flags this outfit during a dress-code review — the pinstripe is technically within regulation but has been worn by three employees recently promoted out of the department, and someone senior is paying attention."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_3",
+    "aug_compatible",
+    "stratum",
+    "analyst",
+    "ambition",
+    "pressed_formal"
+  ],
+  "parent_corponation": ""
+}

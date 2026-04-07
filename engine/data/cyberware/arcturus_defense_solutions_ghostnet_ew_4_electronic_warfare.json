@@ -1,0 +1,59 @@
+{
+  "id": "7d14e85c3a02f9b16c48d7e0a53f2190",
+  "name": "Arcturus Defense Solutions GhostNet EW-4 Electronic Warfare",
+  "brand_name": "Arcturus Defense Solutions",
+  "product_name": "GhostNet EW-4 Electronic Warfare BCI",
+  "type": "cyberware",
+  "aliases": [
+    "The Jammer",
+    "Ghost Crown",
+    "Static King",
+    "EW-Four"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The GhostNet EW-4 is Arcturus Defense Solutions' premier electronic warfare platform, purpose-built for operators tasked with signals denial, enemy BCI disruption, autonomous system hijacking, and communications blackout operations. The implant integrates a six-stream processing architecture dedicated entirely to the electromagnetic spectrum: two streams monitor passive SIGINT across military and civilian frequency bands simultaneously, two streams manage active jamming waveform generation and modulation, one stream handles friendly-force signal protection and IFF (Identify Friend or Foe) discrimination, and the sixth stream runs the proprietary GhostNet intrusion suite — capable of penetrating non-hardened enemy BCI units, autonomous machine control signals, and tactical network nodes within a 400-meter operational radius. The unit's Faraday mesh is asymmetric by design, shielding the operator's own neural signals while allowing selective transmission of tailored interference patterns. A dedicated co-processor handles real-time waveform sculpting, allowing the operator to shape jamming fields with surgical precision — disrupting enemy drone swarms while leaving allied Behemoth control signals intact.\n\nIn the shadowed information wars of Meridian 88, the GhostNet EW-4 operator is the most feared presence on any contested network. Street militias and corporate security forces alike have developed a grim superstition around encounters with EW-4 users: electronics fail, comms go silent, and automated defenses suddenly turn on their owners — all without a single visible attacker. The implant's ability to ghost-walk through electromagnetic environments has made its operators both invaluable and deeply unsettling to their own allies, who are acutely aware that the same capabilities turned against friendly forces would be catastrophic. Arcturus maintains strict behavioral monitoring contracts with all licensed EW-4 installations, and rumors persist of a remote-kill failsafe buried in the firmware that the company has never officially confirmed or denied.",
+  "manufacturer": "Prevail Medical Systems",
+  "tier_availability": "Tier 5",
+  "legality": "Military-Only — Active jamming deployment without Theater Command authorization is a war crime under the Meridian 88 Compact; civilian possession illegal in all signatory territories",
+  "installation_requirements": "Specialized electromagnetic shielded surgical suite; neural substrate compatibility scan mandatory; requires absence of any non-hardened existing implants (will degrade unshielded cyberware); Arcturus EW Division-certified installation team only",
+  "rejection_risk": "High (31%) — Electromagnetic sensitivity syndrome reported in 1-in-3 non-conditioned candidates; pre-installation desensitization therapy required",
+  "maintenance": "Monthly waveform library updates via Arcturus secure uplink; bi-annual hardware diagnostics for jamming antenna array integrity; Faraday mesh asymmetry calibration every 6 months",
+  "specifications": "{\"processing_streams\": 6, \"stream_allocation\": {\"passive_SIGINT\": 2, \"active_jamming\": 2, \"IFF_protection\": 1, \"intrusion_suite\": 1}, \"operational_radius_m\": 400, \"frequency_coverage\": \"0.1 MHz - 300 GHz\", \"jamming_power_output_W\": 12.4, \"intrusion_targets\": [\"non-hardened BCI units\", \"autonomous machine control signals\", \"tactical network nodes\"], \"faraday_mesh\": \"Asymmetric selective-transmission weave\", \"emp_hardening\": \"Class-8 Military Grade\", \"comms_encryption\": \"3072-qubit quantum key\", \"power_draw_W\": 8.7, \"weight_g\": 94, \"certification\": \"Arcturus EW-Division Omega\"}",
+  "side_effects": [
+    "Persistent electromagnetic hypersensitivity — operators experience phantom signal perception, hearing electromagnetic fields as a low subsonic hum that intensifies near dense electronics",
+    "Involuntary jamming bleed during high-stress emotional states, causing unintended disruption of nearby civilian electronics including medical devices — a documented public safety hazard",
+    "Progressive difficulty distinguishing between intentional intrusion actions and reflexive passive scanning, leading to compulsive monitoring of every electromagnetic source in the environment",
+    "Reported cases of 'signal empathy' — operators developing an unsettling intuitive sense of other BCI users' emotional states through their neural transmission signatures"
+  ],
+  "cultural_context": "The GhostNet EW-4 has spawned a distinct subculture among Meridian 88's electronic warfare community — operators call themselves 'Staticers' and maintain a deliberately cultivated mystique of invisibility and information omniscience. In the contested Outer Sprawl, the appearance of a Staticer on a battlefield is enough to send opposing forces into communications blackout protocols and manual fallback procedures, often causing as much disruption through the fear of jamming as through actual deployment. The implant has also created a dark cottage industry of EW-4 detection specialists — signal analysts hired specifically to identify the characteristic spectral footprint of an active GhostNet unit before it achieves operational advantage.",
+  "known_users": [
+    "Arcturus Defense Solutions Electronic Warfare Division",
+    "Meridian 88 Federal Signals Intelligence Corps",
+    "At least three undisclosed corporate intelligence units operating under cover identities"
+  ],
+  "story_hooks": [
+    "A Staticer has gone rogue, using their EW-4 to systematically shut down medical infrastructure across a city district — the motive is unclear, but the death toll is rising and conventional forces cannot locate the operator in the electromagnetic chaos they generate",
+    "The players are hired to escort a captured EW-4 unit — still installed in its deceased operator's skull — to an Arcturus research facility, but multiple factions are willing to kill for the chance to reverse-engineer the intrusion suite",
+    "A friendly EW-4 operator on the team begins experiencing involuntary intrusion events, hijacking systems they have no conscious intent to access — including, disturbingly, the neural interfaces of allied team members"
+  ],
+  "street_price": "Φ160,000",
+  "licensed_price": "Φ260,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "tier5",
+    "electronic-warfare",
+    "jamming",
+    "sigint",
+    "emp-hardened",
+    "intrusion",
+    "arcturus",
+    "ghostnet",
+    "restricted",
+    "signals",
+    "military_elite"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

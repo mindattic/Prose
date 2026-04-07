@@ -1,0 +1,33 @@
+{
+  "id": "fb76d905a97f7c59ab36d91b7c9421b9",
+  "name": "Equalizer",
+  "type": "archetype",
+  "category": "power",
+  "description": "Nobody should have more than anyone else, period",
+  "behavioral_signature": "Tears down anyone who rises above the group",
+  "under_stress": "Becomes the very tyrant they claim to oppose",
+  "at_rest": "Redistributes resources and challenges privilege",
+  "will_always": [
+    "level the playing field"
+  ],
+  "will_never": [
+    "allow concentrated power to go unchecked"
+  ],
+  "unless": [
+    "temporary inequality serves long-term equity"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Reformer",
+      "threshold": 0.7,
+      "context": "power redistribution"
+    }
+  ],
+  "opposite_of": [
+    "Warlord"
+  ],
+  "tags": [
+    "egalitarian",
+    "redistributive"
+  ]
+}

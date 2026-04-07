@@ -1,0 +1,65 @@
+{
+  "id": "b3b87bcb062b323c40ecaaca5425a78c",
+  "name": "Kofi Nakamura-Singh",
+  "type": "character",
+  "aliases": [
+    "Old Smoke",
+    "The Relic"
+  ],
+  "role": "Private Investigator",
+  "description": "Kofi Nakamura-Singh is a throwback to an era that probably never existed the way he imagines it. Sixty-three years old, lean and weathered, with deep brown skin, close-cropped gray hair, and eyes that have seen enough human misery to fill a library. He wears the same long coat every day regardless of weather and conducts his investigations with methods so archaic that younger PIs openly mock him — until they need someone who can find a person who has deliberately erased their digital existence, at which point Kofi becomes the only game in town.\n\nHis office is a monument to pre-digital methodology: corkboards with physical photographs connected by colored string, filing cabinets stuffed with handwritten case notes, a desk scarred by decades of coffee rings and cigarette burns. He has no BCI. He refuses augmentation of any kind. His clients are almost exclusively Shelf residents who can't afford the flashier investigators and who come to him because someone's grandmother told them about the old man on Burnside who found her son when nobody else would look.\n\nDespite his reputation as a fossil, Kofi's solve rate on missing persons cases is quietly extraordinary — north of 80% over a thirty-year career. The secret is patience. He will watch a building for seventy-two hours. He will interview the same witness nine times. He will walk a route until his feet bleed. He understands something that technology-dependent investigators don't: that most people hide in habits, not data, and habits are visible to anyone willing to watch long enough.",
+  "affiliation": "Independent — solo practice, Shelf Level 2",
+  "tier": "Tier 2",
+  "location": "A one-room office above a noodle shop on Burnside Corridor, frosted glass door with his name stenciled in gold leaf that's been peeling since 2187",
+  "specialization": "Missing persons, infidelity cases, old-fashioned footwork investigations",
+  "methods": [
+    "Physical surveillance and tailing",
+    "Interviewing witnesses face-to-face",
+    "Maintaining a network of street-level informants",
+    "Reading body language and micro-expressions without BCI assistance",
+    "Paper-trail analysis — actual paper, when it exists"
+  ],
+  "notable_cases": [
+    "Found the missing daughter of a Shelf-level mechanic by walking the Narrows for six straight days asking questions nobody else thought to ask",
+    "Exposed a Tier 3 marriage counselor who was selling client session recordings to blackmailers",
+    "Tracked a con artist across four districts using nothing but witness descriptions and shoe leather"
+  ],
+  "equipment": [
+    "A battered trench coat with sixteen interior pockets, each assigned a specific purpose",
+    "Analog camera with chemical film — images can't be hacked or remotely wiped",
+    "Flask of synthetic bourbon that's never empty and never full",
+    "Voice recorder with physical tape — no digital footprint",
+    "Revolver, .38 caliber, kept in a shoulder holster he's worn so long the leather has molded to his body"
+  ],
+  "personality": "Kofi is an anachronism and he knows it. He moves through Meridian 88 like a man displaced in time — slow where everyone else is fast, analog where everyone else is digital, patient where everyone else is frantic. He believes technology makes investigators lazy, that a BCI scan tells you what someone did but never why, and that the why is the only thing that matters. He drinks too much, sleeps too little, and has a moral code so rigid it has cost him every relationship he's ever had. He is unfailingly polite to women and children and unfailingly rude to anyone wearing corporate insignia.",
+  "relationships": [
+    {
+      "name": "Marta Osei-Volkov",
+      "type": "informant",
+      "description": "Runs a laundromat on Burnside that's really a gossip clearinghouse — knows everything happening in a six-block radius"
+    },
+    {
+      "name": "Detective Yuki Fernandez-Obi",
+      "type": "rival",
+      "description": "CorpSec investigator for Tessera who considers Kofi a charming relic and occasionally feeds him scraps"
+    }
+  ],
+  "story_hooks": [
+    "A client hires Kofi to find their missing spouse, but the spouse doesn't want to be found because they're hiding from something Kofi's methods can't protect against — a digital threat that requires him to finally engage with technology",
+    "A young PI approaches Kofi wanting to apprentice under him, but turns out to be gathering intelligence on his methods for a corporate competitor",
+    "Someone is killing Kofi's informants one by one, working inward toward his most valuable sources"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "noir",
+    "analog",
+    "shelf",
+    "missing_persons"
+  ],
+  "carried_weapons": [
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
+  ],
+  "registered_firearms": []
+}

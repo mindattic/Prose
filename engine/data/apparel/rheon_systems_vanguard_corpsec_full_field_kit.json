@@ -1,0 +1,45 @@
+{
+  "id": "a3f7c2e1b9d04582fc6e318a27d0b495",
+  "name": "Rheon Systems Vanguard CorpSec Full Field Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Head-to-toe ballistic loadout: matte-black ceramic-weave helmet with flip visor and neural port passthrough, shoulder-padded torso shell in Rheon's signature charcoal TacWeave over a pulse-dampening underlayer, articulated knee-cap greaves, and steel-toed mag-lace boots. Chrome arm channels run open along both sleeves; the back panel features a spinal rig cradle with quick-release buckles. Badge plate on the chest accepts swappable corponation insignia.\n\nBuilt for 16-hour rotations in contested urban zones. Integrated heating elements in the torso shell, micro-filter respirator collar, and a thigh-mounted multi-tool holster complete the loadout.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "ceramic-weave ballistic shell",
+    "TacWeave polyfiber",
+    "pulse-dampening foam underlayer",
+    "mag-lace boot composite",
+    "reinforced polycarbonate visor"
+  ],
+  "functionality": "Ballistic-rated torso and helmet, aug-channel sleeve openings, spinal rig cradle, swappable insignia plate, integrated thermal regulation, micro-filter respirator collar, thigh holster.",
+  "what_it_says": "You are a sanctioned instrument of corporate force — dangerous enough to be useful, replaceable enough to be expendable.",
+  "worn_by": [
+    "CorpSec field officers",
+    "private security contractors",
+    "corporate enforcement units",
+    "off-book mercenaries on retainer"
+  ],
+  "manufacturer": "Rheon Systems",
+  "price_range": "Φ 2,800 – Φ 4,400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The insignia plate has been swapped three times — the current corponation logo is scratched over two older ones nobody will identify.",
+    "The spinal rig cradle is retrofitted from a discontinued model, suggesting this kit was purchased used — or stripped from a body.",
+    "A CorpSec officer wearing this kit keeps appearing near the player's safe house on a schedule that doesn't match any known patrol route."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corpsec",
+    "military",
+    "tactical",
+    "aug_compatible",
+    "full_kit",
+    "tier3",
+    "tier4",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

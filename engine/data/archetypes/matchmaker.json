@@ -1,0 +1,34 @@
+{
+  "id": "c5a8a67acaec72e3db345ce832a38f83",
+  "name": "Matchmaker",
+  "type": "archetype",
+  "category": "social",
+  "description": "Compulsively connects people who should know each other",
+  "behavioral_signature": "Introduces strangers with uncanny precision about shared interests",
+  "under_stress": "Forces alliances that aren't ready",
+  "at_rest": "Mentally mapping who needs who",
+  "will_always": [
+    "see potential connections others miss"
+  ],
+  "will_never": [
+    "keep useful contacts to themselves"
+  ],
+  "unless": [
+    "connecting two people would endanger one of them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Networker",
+      "threshold": 0.8,
+      "context": "relationship building"
+    }
+  ],
+  "opposite_of": [
+    "Lone Wolf"
+  ],
+  "tags": [
+    "connections",
+    "social_engineering",
+    "generosity"
+  ]
+}

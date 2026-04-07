@@ -1,0 +1,45 @@
+{
+  "id": "c8d1e4f2a07b3956e2d1c4f8b3a70e92",
+  "name": "Vansen ChemShell Acid-Rated Coverall Pro",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Vansen's ChemShell is a Circuit-tier staple — a single-piece coverall in flat industrial yellow with black chemical-resistance rating stripes across the chest and thighs. The outer shell is thermoplastic-bonded polyaramid, stiff at the shoulders but articulated at the elbows and knees with accordion gussets. Seams are triple-welded and color-coded by rating class. A chest pocket holds a folded decon wipe sleeve. The hood is detachable via quarter-turn collar locks. Finish is matte and scuffs to a worn sheen after a few shifts.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "thermoplastic-bonded polyaramid",
+    "accordion-gusset stretch panels",
+    "triple-welded chemical-resistant seams",
+    "quarter-turn collar locking ring",
+    "nitrile inner wrist seals"
+  ],
+  "functionality": "Rated for concentrated sulfuric, hydrochloric, and nitric acid splash exposure. Integrated nitrile wrist seals mate with compatible gauntlets. Decon-ready surface — low chemical absorption, wipe-clean exterior. Hood locks provide airtight collar seal when paired with a full-face respirator.",
+  "what_it_says": "You follow the safety protocols because you've seen what happens when someone doesn't.",
+  "worn_by": [
+    "chemical plant floor workers",
+    "acid-rain infrastructure maintenance crews",
+    "hazmat response auxiliaries",
+    "transit tunnel decon teams"
+  ],
+  "manufacturer": "Vansen Industrial (Corponation subsidiary line)",
+  "price_range": "Φ420–Φ680",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Vansen ChemShell with a forged rating stripe — upgraded from Class B to Class A on paper — has been circulating in Circuit markets; the forgery is nearly undetectable.",
+    "The quarter-turn collar lock is also used as an improvised restraint mechanism by at least one known Shelf enforcer.",
+    "A worker survived a full chemical bath in this suit when a pipe burst — the suit was rated for splash, not immersion. It held anyway. Barely."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "chemical",
+    "acid-rated",
+    "coverall",
+    "tier-2",
+    "circuit",
+    "industrial",
+    "full-body",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

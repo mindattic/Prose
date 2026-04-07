@@ -10,7 +10,7 @@
   ],
   "category": "drone",
   "description": "The AADD-2 is a small-chassis autonomous drone designed for non-lethal physical incapacitation through the deployment of a rapid-cure polyurethane-silicate adhesive compound. The drone, approximately the size of a grapefruit, homes on personnel targets using thermal and motion tracking, closes to within 1.5 meters, and discharges a 400ml pressurized canister of compound that expands on contact to cover a 0.6-square-meter area. The compound achieves 80% cure strength within 4 seconds, effectively binding limbs, sealing joints, and adhering targets to surfaces. A single hit to the lower extremities is sufficient to prevent locomotion; a hit to the torso can immobilize the arms and compromise breathing if coverage is sufficient. RINGO CORPONATION markets the AADD-2 as the flagship product of their 'humane enforcement' line.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Ringo Fleet Management",
   "tier_availability": "Tier 2+",
   "legality": "Restricted — licensed for use by registered security contractors; solvent supply chain regulated under Meridian Chemical Control Act",
   "base_technologies": [
@@ -56,6 +56,8 @@
     "bar",
     "dark",
     "cold",
-    "tier 2"
-  ]
+    "tier 2",
+    "less_lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

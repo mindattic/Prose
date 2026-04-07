@@ -1,0 +1,54 @@
+{
+  "id": "c9e4a71f0d3b852e1c6f9a2d7b0e3c48",
+  "name": "LAZARUS PHARMACEUTICALS ClaritySurge Surgical Ocular",
+  "brand_name": "LAZARUS PHARMACEUTICALS",
+  "product_name": "ClaritySurge Precision Surgical Ocular System",
+  "type": "cyberware",
+  "aliases": [
+    "Surgeyes",
+    "Lazarus Lens",
+    "Scalpel Eyes"
+  ],
+  "category": "ocular",
+  "body_location": "eyes",
+  "description": "The ClaritySurge is a medical-grade precision ocular implant engineered specifically for surgical and diagnostic professionals, replacing the natural eye with a multi-focal synthetic lens capable of continuous zoom from macro to 200x optical magnification. A tissue-analysis overlay reads spectral reflectance data in real time, flagging necrotic tissue, vascular anomalies, and foreign material through a color-coded HUD layer transparent enough to not obstruct fine motor work. Vein-mapping mode projects a live subsurface vasculature render up to 12mm deep, eliminating the need for external imaging during delicate procedures.\n\nClaritySurge units are standard equipment for Tier 3–5 surgical staff at Meridian's licensed medical institutions, and Lazarus offers subsidized installation packages through hospital procurement contracts. Among surgeons they carry a quiet professional prestige—a pair of ClaritySurge eyes signals serious clinical commitment, not aesthetic vanity—and the waiting list for full biocompatibility-optimized units at premium clinics runs six months.",
+  "manufacturer": "Lazarus Franchise Licensing",
+  "tier_availability": "Tier 2-5",
+  "legality": "Licensed",
+  "installation_requirements": "Board-certified ocular surgeon, full OR suite, Lazarus-certified installation technician required for warranty validation",
+  "rejection_risk": "Minimal — Lazarus biocompatible polymer housing with pharmaceutical-grade anti-rejection surface treatment; lowest rejection rate in class",
+  "maintenance": "Annual Lazarus clinic calibration mandatory for medical licensing compliance; lens array self-cleaning via integrated microfluidic flush",
+  "specifications": "{\"zoom_range\": \"1x–200x continuous optical\", \"tissue_analysis\": \"spectral reflectance overlay, 12-material classification\", \"vein_mapping_depth\": \"12mm subsurface\", \"HUD_opacity\": \"0–60% adjustable\", \"resolution\": \"320MP equivalent\", \"color_accuracy\": \"delta-E < 0.5 clinical grade\", \"recording\": \"8K surgical log, 2TB onboard\", \"sterilization_rating\": \"IP68 plus surgical-grade autoclave compatible housing\", \"battery\": \"continuous corded OR mode plus 48hr autonomous\"}",
+  "side_effects": [
+    "Persistent involuntary tissue-analysis overlay activation in non-clinical settings, making casual social interaction visually cluttered",
+    "Zoom-lock incidents where magnification fails to return to baseline without manual reset",
+    "Mild depth perception recalibration period of 2–4 weeks post-installation",
+    "Documented cases of vein-mapping mode activating during intimate contact, which users consistently describe as psychologically distressing"
+  ],
+  "cultural_context": "In Meridian's medical community, ClaritySurge eyes are a professional marker as legible as a white coat—surgeons wearing them are taken seriously, and those without them in high-tier institutions are quietly considered behind the curve. A secondary market exists among non-medical users who value the recording and zoom capabilities, though Lazarus' licensing verification makes gray-market units difficult to maintain.",
+  "known_users": [
+    "Licensed surgeons and medical specialists at Tier 3–5 institutions",
+    "Forensic investigators and medical examiners",
+    "High-end tattoo and body modification artists",
+    "Pharmaceutical researchers and lab technicians",
+    "Wealthy private collectors of rare biological specimens"
+  ],
+  "story_hooks": [
+    "A surgeon's ClaritySurge recorded something during an operation they weren't supposed to witness—now the recording is missing and so is the surgeon",
+    "Black-market ClaritySurge units are appearing in the Shelf without Lazarus licensing, meaning someone is manufacturing unlicensed copies with degraded tissue-analysis calibration—dangerous in the wrong hands",
+    "A medical examiner's vein-mapping logs from a series of autopsies show an impossible pattern in the victims' vasculature that Lazarus' own technicians say shouldn't be reproducible"
+  ],
+  "street_price": "Φ22,000",
+  "licensed_price": "Φ48,000",
+  "tags": [
+    "cyberware",
+    "ocular",
+    "medical",
+    "surgical",
+    "precision",
+    "diagnostic",
+    "licensed",
+    "bilateral"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "a3f7c2e1d9b04582f6a1c3e7d2b09541",
+  "name": "Carrow & Sons Waxed Drover Coat",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A full-length waxed cotton drover coat in dark tobacco or midnight green, cut long enough to cover the knee and wide enough to layer over a sweater or light armor. The silhouette is unapologetically traditional — storm collar, deep side-entry pockets, a back vent for riding or climbing. The wax finish sheds rain without membrane technology, just good old-fashioned textile chemistry applied to a tight-woven cotton canvas. It smells faintly of beeswax and machine oil.\n\nCarrow & Sons has been operating out of a warehouse-district workshop in the Tier 2 belt since 2161. The coat is heavy, stiff when new, and breaks in over years of wear. Dock workers, outer-district beat cops, and stubborn middle-class types who distrust smart-fabric all wear it. It gets better with age in a way synthetic jackets never do.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "waxed cotton canvas",
+    "wool blanket lining",
+    "brass hardware"
+  ],
+  "functionality": "",
+  "what_it_says": "You value durability over novelty. You've probably owned this coat for a decade and plan to own it for two more.",
+  "worn_by": [
+    "dock workers",
+    "outer-district beat cops",
+    "tradespeople",
+    "stubborn traditionalists"
+  ],
+  "manufacturer": "Carrow & Sons",
+  "price_range": "Φ89",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A dockworker's coat has a bloodstain on the inner lining that its current owner didn't put there — and the previous owner has been missing for three months.",
+    "Carrow & Sons is being bought out by a Tier 4 corponation that wants to move manufacturing offsite; the founding family is quietly sabotaging the deal.",
+    "The coat's wax formula is apparently based on a proprietary compound that a street chemist claims is being used in a very different product."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 2",
+    "outerwear",
+    "workwear",
+    "traditional",
+    "rain-resistant"
+  ],
+  "parent_corponation": ""
+}

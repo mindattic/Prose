@@ -1,0 +1,51 @@
+{
+  "name": "Arcturus HX-1 'Headsman'",
+  "type": "automaton",
+  "classification": "Execution Platform — Autonomous Lethal Enforcement",
+  "aliases": [
+    "Headsman",
+    "Final Notice",
+    "The Signature"
+  ],
+  "manufacturer": "Murmuration Systems",
+  "description": "The HX-1 is a bipedal automaton standing exactly human height — 1.8 meters — dressed in a matte-black chassis designed to evoke formal authority. It carries a single weapon: a wrist-mounted high-powered laser cutter capable of severing limbs, penetrating body armor, and — in its designed application — executing individuals designated for termination by corporate authority. The HX-1 walks to its target, identifies them through biometric confirmation, announces the authorization for lethal force, and carries out the sentence.\n\nThe HX-1 exists because certain corporate contracts include lethal enforcement clauses — debt obligations, NDA violations, and security breaches that carry capital penalties under corporate law. Previously, these executions required human operators, which introduced complications: hesitation, conscience, witness testimony, PTSD-related liability. The HX-1 eliminates all of these. It does not hesitate. It has no conscience. It generates its own execution record. It cannot develop post-traumatic stress.\n\nArcturus produces the HX-1 in limited quantities for clients who operate under legal frameworks that permit autonomous lethal enforcement — which, in Meridian 88, means most Tier 4 and Tier 5 corponations. The unit's formal appearance and announcement protocol are deliberate: they create a veneer of due process around what is, functionally, a walking death sentence that cannot be appealed, negotiated with, or bribed.",
+  "tier_availability": "Tier 5",
+  "legality": "Licensed under corporate lethal enforcement statutes",
+  "autonomy_level": "Fully autonomous with biometric confirmation requirement",
+  "dimensions": "1.8m height, humanoid proportions",
+  "weight": "220 kg",
+  "power_source": "High-density hydrogen cell, 48-hour endurance",
+  "locomotion": "Bipedal — deliberate, measured pace",
+  "armament": [
+    "Wrist-mounted high-powered laser cutter",
+    "Biometric confirmation system"
+  ],
+  "sensors": [
+    "Multi-factor biometric identification (facial, gait, BCI, genetic)",
+    "Vital sign monitoring (confirms completion)"
+  ],
+  "countermeasures": "Biometric spoofing can delay but not permanently prevent identification. The unit is armored against small arms. Destroying the biometric system prevents target confirmation, halting the execution protocol. The HX-1 will not engage unconfirmed targets. Fleeing works temporarily — the unit will pursue until its endurance expires or the target is confirmed dead.",
+  "known_deployments": [
+    "Corporate lethal enforcement operations (Tier 4-5 corponations)",
+    "Classified — specific deployments not publicly documented"
+  ],
+  "story_hooks": [
+    "An HX-1 is walking through the Shelf, announcing a name. The name belongs to someone who defaulted on a corporate medical debt. The execution authorization is technically legal. The neighborhood is deciding whether to let the machine pass.",
+    "An HX-1 has announced the wrong name — a biometric false match has sent it after an innocent person. The real target is watching from a distance. The innocent person has hours to prove their identity before the machine catches up."
+  ],
+  "cultural_context": "The HX-1 is the most overtly dystopian automaton in Meridian 88 — a machine that walks up to you and kills you because a corporation decided you should die. Its existence is cited as the defining artifact of the corporate sovereignty era: the moment machines replaced executioners.",
+  "tags": [
+    "automaton",
+    "execution",
+    "bipedal",
+    "laser",
+    "weapon",
+    "arcturus",
+    "corporate",
+    "justice",
+    "horror",
+    "tier 5"
+  ],
+  "id": "7c5ebf996cbb64ceab8246fe10a57e99",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Ouroboros Tier-Ascension Witness Formal Robe",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "ceremonial_robe",
+  "manufacturer": "Daybreak Appliances",
+  "description": "Ouroboros tier-ascension ceremonies are bureaucratic events with the texture of ritual, and the garments issued to official witnesses reflect that duality precisely. The Witness Robe is a structured, collarless overrobe in Ouroboros signature deep amber-gold, worn over the witness's own formal attire. The fabric is a mid-weight wool-analog with a subtle brocade pattern — the Ouroboros corporate symbol rendered in tone-on-tone, visible only in direct light. The robe closes with a series of flat-front clasp hooks and falls to mid-calf. A small embroidered tier-level indicator on the left breast pocket identifies the ceremony's ascension level: Tier 2-to-3, 3-to-4, or 4-to-5.\n\nWitnesses at these ceremonies are typically colleagues, supervisors, or contractual guarantors. Being invited to witness is itself a social signal — it means the ascending party considers you important enough to have present, and Ouroboros considers you vetted enough to be in the room. The robe is returned after the ceremony. You are not permitted to keep it.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ0",
+  "augment_compatible": false,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "The robe is issued, worn, and returned — ownership is not the point. Being seen in it, being photographed in it at the ceremony, is the social currency. In Ouroboros-adjacent circles, having witnessed a Tier 4-to-5 ascension is a distinction people mention for years.",
+  "story_hooks": [
+    "A character is invited to witness a colleague's tier ascension and realizes, partway through the ceremony, that they genuinely do not know how this person rose so fast or what they traded for it.",
+    "Someone is listed as a witness on an ascension ceremony record for an event they have no memory of attending. The robe has their biometric signature logged in the return system.",
+    "A robe is not returned after a ceremony. Ouroboros sends three separate notices before escalating. Whatever happened at that ceremony, no one who was there is talking."
+  ],
+  "tags": [
+    "robe",
+    "ceremonial",
+    "formal",
+    "ouroboros",
+    "tier-ascension",
+    "witness",
+    "issued",
+    "finance",
+    "tier-2",
+    "tier-3"
+  ],
+  "id": "8e3fa33068f649859d030890c73f9026",
+  "parent_corponation": "Ouroboros Energy"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "5d8e1a3c7f2b094e6a51d3c8e7f20b94",
+  "name": "Kelvex TransitID Wrist Tracker (Mandatory)",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Matte black polycarbonate cuff, 38mm wide, tamper-sealed with a flush corporate Kelvex logo embossed on the outer face. Issued to transit workers flagged for compliance monitoring or probationary status — the cuff pings supervisor terminals every four minutes with location and biometric data. Skin contact is mandatory; removal triggers an immediate HR incident flag.\n\nA faint amber status LED pulses at the wrist edge. Workers in Circuit know exactly what it means. There's no ornamentation. The design communicates institutional ownership, not personal identity.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "tamper-sealed polycarbonate shell",
+    "biometric sensor array",
+    "passive RFID mesh",
+    "silicone inner lining",
+    "hardened titanium anti-removal collar"
+  ],
+  "functionality": "Continuous GPS and biometric monitoring (heart rate, cortisol proxy, location). Pings supervisor terminals on 4-minute intervals. Triggers silent alert if removed or tampered with. Doubles as a transit access pass — the wearer's gate clearance is embedded in the device, making removal practically impossible without losing site access.",
+  "what_it_says": "This person is being watched by their employer and they have no say in it.",
+  "worn_by": [
+    "probationary Kelvex transit workers",
+    "workers flagged for attendance violations",
+    "employees under behavioral compliance orders",
+    "anyone fighting an HR incident in the Kelvex system"
+  ],
+  "manufacturer": "Kelvex Corporate Systems",
+  "price_range": "Not for sale — employer-issued",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A transit worker has discovered a 90-second window every night when the ping interval glitches — just enough time to be somewhere they shouldn't.",
+    "Someone is selling modified inner linings on the black market that spoof biometrics, letting a substitute wearer cover for someone who's gone underground.",
+    "A labor organizer wearing one of these has to coordinate a work action without ever appearing to be in the same place as their co-conspirators."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "wrist device",
+    "ankle monitor",
+    "id marker",
+    "corporate",
+    "surveillance",
+    "tier-2",
+    "circuit",
+    "kelvex",
+    "mandatory"
+  ],
+  "parent_corponation": ""
+}

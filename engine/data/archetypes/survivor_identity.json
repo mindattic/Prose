@@ -1,0 +1,33 @@
+{
+  "id": "0ba2bc6ba637b959dad82393e6e7c70b",
+  "name": "Survivor Identity",
+  "type": "archetype",
+  "category": "identity",
+  "description": "What happened to them IS them, and they won't let you forget it",
+  "behavioral_signature": "Defines themselves entirely by the trauma they endured",
+  "under_stress": "Retreats into victimhood as a shield and weapon",
+  "at_rest": "Tells their story to anyone who will listen",
+  "will_always": [
+    "reference their survival as their core credential"
+  ],
+  "will_never": [
+    "let anyone minimize what they went through"
+  ],
+  "unless": [
+    "they finally decide to become more than what happened to them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Wound Carrier",
+      "threshold": 0.85,
+      "context": "trauma identity"
+    }
+  ],
+  "opposite_of": [
+    "Reinvented Self"
+  ],
+  "tags": [
+    "trauma-defined",
+    "resilient"
+  ]
+}

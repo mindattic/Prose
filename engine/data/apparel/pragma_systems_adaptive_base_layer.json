@@ -1,0 +1,44 @@
+{
+  "id": "6f7081920212223242526272829303132",
+  "name": "Pragma Systems Adaptive Base Layer",
+  "type": "apparel",
+  "category": "top",
+  "description": "A long-sleeve fitted base layer from Pragma Systems, the augmentation-adjacent apparel division of a larger biotech corponation. The shirt itself looks unremarkable — a matte charcoal or off-white compression top with flat seams and a crew neck — but the fabric is woven with a distributed thermal-regulation mesh that responds to body temperature, venting when core temperature rises and tightening insulation when it drops. The response is passive and requires no power source; it's a material property, not an electronic system.\n\nThe real selling point for the augmented community is the construction: the shoulder and upper arm panels are reinforced with micro-articulated seams that flex and recover around subdermal chrome, and the fabric at the wrist can be cut and heat-sealed without fraying, allowing custom openings for hardwired ports or sensor arrays. It's marketed to 'active professionals' but the aug-community forums have made it their own.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "passive thermal-regulation weave",
+    "compression spandex-composite",
+    "micro-articulated reinforcement panels",
+    "heat-sealable wrist panels"
+  ],
+  "functionality": "Passive thermal regulation via material properties (no power required). Aug-compatible construction with micro-articulated shoulder seams and heat-sealable wrist openings for hardwired port access.",
+  "what_it_says": "You're augmented, you're practical, and you've done your research — or you have a job that demands both performance and comfort.",
+  "worn_by": [
+    "augmented workers",
+    "field operatives",
+    "physical therapists with chrome",
+    "Tier 3 aug enthusiasts",
+    "anyone who runs hot"
+  ],
+  "manufacturer": "Pragma Systems (Biotek Meridian division)",
+  "price_range": "Φ130",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of Pragma base layers was distributed to a corporate security team before a major operation. One of those layers has ended up in a Tier 2 second-hand store, and the serial number traces back to someone who's officially listed as alive.",
+    "The thermal-regulation weave in recent batches has an undocumented secondary property: it holds a faint thermal impression of the wearer's body heat pattern for several hours after removal, visible to the right sensors.",
+    "Pragma is beta-testing a version with embedded biometric monitoring. The beta batch looks identical to the retail version. Some units have already shipped without the testers knowing."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 3",
+    "base layer",
+    "smart-fabric",
+    "aug-compatible",
+    "Pragma Systems",
+    "thermal regulation",
+    "compression"
+  ],
+  "parent_corponation": ""
+}

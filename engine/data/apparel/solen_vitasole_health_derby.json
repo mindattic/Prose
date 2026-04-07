@@ -1,0 +1,42 @@
+{
+  "id": "d8b1f4a6e2c9307d5b8f1a4e6c2d9b70",
+  "name": "Solen Vitasole Health Derby",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A conventional lace-up derby in dark brown or black synthetic leather. The insole contains a biometric monitoring array — tracking gait, step count, temperature, micro-vibrations in the foot, and early indicators of circulatory irregularity. Data syncs passively to the wearer's health stack via BCI. Looks completely standard; the tech is invisible.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "synthetic leather upper",
+    "biometric insole array",
+    "memory foam base",
+    "leather-look synthetic lining"
+  ],
+  "functionality": "Embedded insole monitors gait, circulation, temperature, and step data; syncs to personal health BCI stack. Flags anomalies passively.",
+  "what_it_says": "You're health-conscious and probably have a standing appointment with a doctor or a habit of checking your biometrics. Responsible, perhaps a little anxious.",
+  "worn_by": [
+    "health-conscious professionals",
+    "people managing chronic conditions",
+    "corporate wellness program participants",
+    "older Tier 3 workers"
+  ],
+  "manufacturer": "Solen Wellness",
+  "price_range": "Φ130 - Φ175",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The health data logged by the insole reveals a stress spike at an exact time and location — placing the wearer at a scene they claimed not to be at.",
+    "A pharmaceutical corponation has been quietly purchasing anonymized insole health data from Solen for clinical trial targeting."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "tier 4",
+    "smart",
+    "health-monitoring",
+    "biometric",
+    "dress",
+    "BCI-compatible"
+  ],
+  "parent_corponation": ""
+}

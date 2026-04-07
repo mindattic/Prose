@@ -1,0 +1,51 @@
+{
+  "id": "5d9e4b2f0c7a31e8b56d2f4a9c1e7803",
+  "name": "Ironpass Dock & Freight Handler's Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A battered but solid head-to-toe kit assembled around the realities of moving heavy cargo on M88's lakefront docks in all weather. The outer layer is a burnt-orange high-visibility vest, the heavy-duty kind with wide reflective silver X-straps across the chest and back, worn over a thick charcoal flannel-lined synth-canvas work shirt with rolled cuffs and a worn Meridian Harbor Authority patch on the left shoulder — the kind of patch that's been heat-pressed, peeled, and re-pressed three times. The shirt has a split back seam with hook-and-eye closure that accommodates a low spinal rig or exo-harness attachment point. Beneath is a plain white thermal undershirt, visible at the neck, collar open. Trousers are heavy-duty navy cargo work pants with reinforced knees, a gusseted crotch for full movement, and exterior thigh pockets with zip and velcro closures — one holding a folded work order tablet sleeve, the other a wedge of reflective tape strips used for on-the-fly equipment marking.\n\nThe worker wears a yellow hard hat with a cracked brim repaired with silver adhesive tape, a name written in permanent marker on the back: VADUVA-OSEI. Safety glasses hang from the vest's front pocket D-ring. Hands are covered by thick orange leather grip gloves with reinforced palm pads, knuckles worn pale. Boots are heavy lace-up black rubber-over-leather dock boots with a pronounced ankle guard, rated for chemical splash and equipped with a magnetic-latch safety toe. The whole kit smells faintly of hydraulic fluid and lake water. It's functional, unglamorous, and completely honest.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-canvas work shirt fabric",
+    "flannel lining",
+    "heavy-duty polycotton cargo trouser fabric",
+    "reflective silver X-strap tape",
+    "high-vis polyester vest shell",
+    "orange leather palm gloves",
+    "rubber-over-leather boot construction",
+    "thermal polyblend undershirt"
+  ],
+  "functionality": "Split back seam with hook-and-eye for spinal rig or exo-harness attachment; high-vis vest for crane and heavy equipment zones; reinforced knee and crotch for physical labor range of motion; chemical-splash rated boots with safety toe; D-ring vest attachment for tools and glasses; thigh pockets for work order storage",
+  "what_it_says": "This is dock labor — essential, physical, and underpaid relative to the cargo value they move. The layered, well-worn state of the kit says this worker has been at it for years, not months. The name marker on the hard hat is a Circuit tradition: you own your gear even when the corponation owns your hours. There's dignity here, but it's self-made.",
+  "worn_by": [
+    "Meridian Harbor bulk cargo handlers",
+    "freight dock workers",
+    "container crane ground crew",
+    "warehouse receiving staff",
+    "breakwater maintenance teams"
+  ],
+  "manufacturer": "Meridian Harbor Authority (vest and hard hat issued); work shirt and trousers self-purchased from Ironpass Workwear (street-distributed Circuit brand)",
+  "price_range": "Φ140–Φ210 (assembled kit; issued pieces replace at Φ40–Φ60 each)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A dock worker's kit is found floating in the harbor, work order tablet still in the thigh pocket — the last logged entry is a cargo manifest that doesn't match any ship in the harbor authority database.",
+    "Someone is selling counterfeit Meridian Harbor Authority patches at Circuit market stalls, giving Shelf residents access to restricted dock zones — and someone with this kit is the unwitting face of the operation.",
+    "A character wearing this uniform realizes mid-shift that the exo-harness attachment point on their shirt has been tampered with — the hook-and-eye release has been weakened, and they're about to operate heavy machinery twenty meters above the water."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "dock_work",
+    "freight",
+    "high_visibility",
+    "aug_compatible",
+    "corponation_issued",
+    "meridian_harbor",
+    "ironpass",
+    "labor"
+  ],
+  "parent_corponation": ""
+}

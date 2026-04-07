@@ -1,0 +1,45 @@
+{
+  "id": "7b3e0d5c9a1f4827c6d2e0b3a7f1c948",
+  "name": "Pragma BioSync Smart Base Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A seamless, skin-close underlayer in deep slate blue with subtle hexagonal texture — the visible signature of its embedded sensor mesh. Covers torso and upper arms. Pragma's logo is heat-pressed at the left hip in silver-gray, small and tasteful. The fabric has a slightly cool, almost slick hand feel from the conductive polymer threading.\n\nDesigned for Tier 3-4 professionals who want passive health monitoring without visible wearables. Integrates with standard BCI health dashboards and M88 corporate wellness platforms. Reads as understated — you'd never know it was smart unless you knew to look.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "conductive polymer-threaded nylon",
+    "seamless knit biometric sensor mesh",
+    "moisture-responsive thermoregulation fiber",
+    "heat-pressed silicone logo patch",
+    "flat elastic waistband with data-loop thread"
+  ],
+  "functionality": "Continuous passive biometric monitoring — heart rate, core temp, cortisol proxy via skin conductance, hydration index. Temperature-regulating fiber actively adjusts breathability. Data syncs wirelessly to BCI or paired device. Low-power draw; charges passively from body heat via thermoelectric strip at waistband.",
+  "what_it_says": "You invest in your body's performance data — health is an asset you manage.",
+  "worn_by": [
+    "mid-level corporate professionals",
+    "junior executives",
+    "medical professionals monitoring recovery",
+    "performance-focused athletes",
+    "biohackers"
+  ],
+  "manufacturer": "Pragma Systems",
+  "price_range": "Φ180–Φ340",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Pragma's wellness platform sells anonymized biometric aggregates to corponation HR departments — the wearer's stress spikes during certain meetings are already in someone's file.",
+    "A specific firmware version has a documented exploit that lets anyone with the right BCI credentials read the wearer's real-time cortisol levels — useful if you're negotiating against them.",
+    "A medic running off-grid is using a hacked Pragma layer to monitor a patient who can't afford a hospital visit, piping the data through a cracked wellness account."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "smart-fabric",
+    "biometric",
+    "temperature-regulation",
+    "aug-compatible",
+    "tier-3",
+    "tier-4",
+    "corporate"
+  ],
+  "parent_corponation": ""
+}

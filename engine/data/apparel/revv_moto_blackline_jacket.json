@@ -1,0 +1,43 @@
+{
+  "id": "3c6e8a1d4f7b290c5e8a3d6f1b4c7e9a",
+  "name": "Revv Moto Blackline Jacket",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "Revv Moto is a street-level motorcycle gear brand that operates out of the Tier 2 transport district, building jackets for people who actually ride in the city rather than for people who want to look like they do. The Blackline is their flagship — a full-grain synthetic leather jacket in flat black with minimal stitching detail, a slightly asymmetric zip closure, and removable CE-rated armor inserts at the shoulders, elbows, and a spine channel at the back. The collar is medium height and zips fully closed against wind. The lining is a quilted black nylon that can be removed in warmer months. It fits close without being restrictive, and the shoulder seams are positioned forward to allow for riding posture without binding.\n\nRiders across Tier 2 and Tier 3 buy these. The Blackline has also developed a following among people who don't ride but want the silhouette and the armor without the price of the premium brands. On the street it reads as competence — this is the jacket of someone who knows something about moving through the city fast and coming out the other side. The chrome-free hardware is a deliberate choice; Revv Moto's founder has a well-known position on unnecessary flash.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "full-grain synthetic leather",
+    "removable CE-rated impact armor inserts",
+    "quilted nylon removable lining",
+    "matte hardware"
+  ],
+  "functionality": "Removable CE-rated armor at shoulders, elbows, and spine channel. Not electronics — purely mechanical protection.",
+  "what_it_says": "You move through this city fast and you've thought about what happens when something goes wrong.",
+  "worn_by": [
+    "urban motorcycle riders",
+    "courier riders",
+    "Tier 2 transit workers",
+    "people who want the silhouette without the bike",
+    "former riders who kept the gear"
+  ],
+  "manufacturer": "Revv Moto",
+  "price_range": "Φ134",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A courier who disappeared three weeks ago left their Blackline — armor inserts removed and replaced with something else — in a locker at the transit hub.",
+    "The armor channels have been used to conceal thin data-printed flexfilm documents; the jacket's previous owner clearly knew what they were doing.",
+    "Revv Moto's founder is being pressured by a corponation that wants to acquire the brand; she's looking for someone to help her find something on them before negotiations finalize."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 2",
+    "motorcycle",
+    "armor",
+    "leather",
+    "revv moto",
+    "street brand"
+  ],
+  "parent_corponation": ""
+}

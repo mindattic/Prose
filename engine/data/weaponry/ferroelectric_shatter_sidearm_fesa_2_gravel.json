@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "The Ferroelectric Shatter Sidearm generates a localized ferroelectric inversion pulse within a magnetically confined payload of ceramic-metallic composite microbeads — roughly 400 per charge — held in suspension inside the barrel chamber. When fired, the inversion pulse causes each microbead to undergo rapid piezoelectric expansion at an individually offset frequency, creating a cascade of asymmetric fractures across the entire payload simultaneously. The result is not a spray of intact pellets but a cloud of irregularly fractured shards, each tumbling along a slightly different vector, expanding outward in a pattern more akin to a shattering dinner plate than a conventional shotgun spread.\n\nThe FESA-2's lethality is deceptive at a glance — it looks like a stubby, unremarkable sidearm, slightly bulbous at the muzzle. At close range, the fracture-cascade cloud creates wound profiles that confound standard trauma treatment, as fragments arrive at skin at varying angles and velocities, defeating layered soft armor by exploiting gaps between impact zones. At medium range the cloud disperses enough to be largely non-lethal, making it a weapon with an unusually sharp lethality curve. ARCTURUS DEFENSE SOLUTIONS markets it as a 'dynamic area denial sidearm,' which is corporate language for a weapon that is devastating in corridors and useless in open fields.\n\nThe FESA-2 earned its street name 'Gravel' not from its payload but from the sound it makes on discharge — a dry, grinding crack rather than a conventional report, as if someone snapped a handful of stones. It is a compact weapon favored by operators who work in enclosed environments: ship interiors, server vaults, transit tunnels. The fracture pattern leaves a distinctive wound signature that forensic teams in Meridian 88 refer to informally as a 'gravel stamp.'",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Blackwood Commercial Group",
   "tier_availability": "Tier 3+",
   "legality": "Prohibited in civilian contexts; licensed for contracted security and military units",
   "base_technologies": [
@@ -52,6 +52,8 @@
     "bar",
     "armor",
     "fire",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

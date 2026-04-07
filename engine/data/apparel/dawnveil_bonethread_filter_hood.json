@@ -1,0 +1,47 @@
+{
+  "id": "e91b7d5c384f20a1d67c0b2f8e4a1359",
+  "name": "Dawnveil Bonethread Filter Hood",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A full pull-over filter hood in undyed bone-white synth-linen, woven with embedded particulate-filter mesh at the mouth and nose panels. The fabric has a loose, draped structure that skims wide across the shoulders and falls below the chin — drawing on West African and Central Asian layered head-wrap traditions filtered through 23rd-century street pragmatism. Stitching is deliberately exposed in contrasting black thread along the crown seam.\n\nA discreet drawstring at the nape tightens the filter zone against the face. Horn cutouts are available as a standard size option at no extra cost, reinforced with grommet rings in brushed steel.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "undyed synth-linen",
+    "particulate-filter mesh",
+    "brushed steel grommet rings",
+    "black polythread",
+    "silicone-coated drawstring"
+  ],
+  "functionality": "PM2.5 and acid-particulate filtration at mouth and nose panels; drawstring seal for tighter fit in heavy-pollution conditions; machine-washable filter panels rated for 90 wash cycles; horn-cutout option reinforced for structural integrity.",
+  "what_it_says": "You breathe clean air on your own terms, and you made it look intentional.",
+  "worn_by": [
+    "geneware-modded individuals with horns",
+    "street vendors",
+    "outer-district commuters",
+    "artists",
+    "low-tier office workers on their days off"
+  ],
+  "manufacturer": "Dawnveil Textiles (street label, Circuit district)",
+  "price_range": "Φ55–Φ120",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A specific run of Dawnveil hoods was distributed through a Shelf mutual-aid network — they contain a hidden pocket sewn into the crown used to pass messages between cells.",
+    "The filter mesh in recent batches has been substituted with a cheaper material that fails under heavy acid-rain; someone in the supply chain is cutting corners and people are getting sick.",
+    "A Dawnveil hood found at a crime scene carries a unique hand-stitching pattern that traces back to a specific underground tailor the authorities have been hunting."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "hood",
+    "filter-mask",
+    "gene-compatible",
+    "tier-2",
+    "tier-3",
+    "pollution",
+    "street",
+    "wrap",
+    "horn-cutout"
+  ],
+  "parent_corponation": ""
+}

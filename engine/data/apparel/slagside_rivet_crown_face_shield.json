@@ -1,0 +1,44 @@
+{
+  "id": "a3f7c21b9e04d658f1a2b3c4d5e6f701",
+  "name": "Slagside Rivet-Crown Face Shield",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "Hammered from salvaged industrial press plates and bent into rough face coverage, the Rivet-Crown is a Shelf staple — ugly, functional, and unmistakably hand-made. Mismatched rivet heads hold overlapping panels of grey and rust-orange scrap steel, with a scratched polycarbonate visor strip salvaged from a defunct transit shelter. The forehead brace is wrapped in friction tape over reclaimed foam padding.\n\nNo two are identical. Chin straps are knotted cord or stripped wire depending on the maker's day. Acid-rain pitting marks every surface.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged press-plate steel",
+    "reclaimed polycarbonate strip",
+    "friction tape",
+    "foam offcut padding",
+    "braided cord or stripped wire"
+  ],
+  "functionality": "Provides basic ballistic and acid-rain splash protection for the face; the polycarbonate strip offers partial eye shielding. No electronics, no seals — just mass between the wearer's face and the Shelf's hazards.",
+  "what_it_says": "You build what you need from what's left, and you don't apologize for it.",
+  "worn_by": [
+    "Shelf scavengers",
+    "tunnel runners",
+    "unlicensed fighters",
+    "dockside brawlers"
+  ],
+  "manufacturer": "Self-made / Shelf market stalls",
+  "price_range": "Φ2 – Φ18",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A specific rivet pattern on one shield matches the stamp of a Crucible fab-floor press reported stolen three years ago — the trail leads somewhere uncomfortable.",
+    "A Shelf fixer uses an identical shield as a calling card; when one turns up on a body in Circuit, it means the fixer left it as a message.",
+    "A collector in Tier 4 is paying well over market for 'authentic Shelf ironwork' — the buyers don't know what they're funding."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "face shield",
+    "tier-1",
+    "scrap",
+    "self-made",
+    "acid-rain protection",
+    "shelf",
+    "aug-incompatible"
+  ],
+  "parent_corponation": ""
+}

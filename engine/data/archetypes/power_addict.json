@@ -1,0 +1,33 @@
+{
+  "id": "9e0ade408d6c21d683ca4d91579d41bc",
+  "name": "Power Addict",
+  "type": "archetype",
+  "category": "power",
+  "description": "Control is the only thing that makes the shaking stop",
+  "behavioral_signature": "Acquires power compulsively regardless of whether they need it",
+  "under_stress": "Grabs for more control even when it destabilizes everything",
+  "at_rest": "Restless, always eyeing the next rung",
+  "will_always": [
+    "seek more authority than they currently have"
+  ],
+  "will_never": [
+    "voluntarily give up control"
+  ],
+  "unless": [
+    "trading power now guarantees more power later"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Tyrant",
+      "threshold": 0.75,
+      "context": "compulsive control"
+    }
+  ],
+  "opposite_of": [
+    "Servant Leader"
+  ],
+  "tags": [
+    "compulsive",
+    "controlling"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Arcturus PX-1 'Phantom'",
+  "type": "automaton",
+  "classification": "Experimental — Active Camouflage Platform",
+  "aliases": [
+    "Phantom",
+    "Ghost Machine",
+    "The Nothing"
+  ],
+  "manufacturer": "Peregrine Fast Courier",
+  "description": "The PX-1 is a quadruped platform with a radical design feature: its entire exterior surface is coated in adaptive camouflage plating that bends visible light around the chassis, rendering the unit functionally invisible to the naked eye. The effect is not perfect — there is a faint shimmer when the unit moves, like heat haze, and the system cannot mask the unit's thermal signature or acoustic output. But in visual-dominant engagement scenarios — which describes most human combat — the PX-1 is something that isn't there until it is.\n\nThe platform carries no ranged weapons. Its combat systems are entirely close-range: reinforced jaw mechanism with tungsten-carbide teeth, forelimb-mounted vibro-blades that extend on command, and a neural disruptor pulse emitter on its forehead that can scramble unshielded BCIs at contact range. The tactical concept is assassination: the PX-1 approaches unseen, strikes at close range, and withdraws before the target's companions can identify the threat's location.\n\nArcturus has produced only four PX-1 units, and the program is classified above standard corporate security clearance. The adaptive camouflage system is phenomenally expensive to produce and maintain, and the light-bending effect degrades over time, requiring recalibration after every deployment. The four existing units are reserved for operations that Arcturus considers worth the investment — which means operations that no one is supposed to know happened.",
+  "tier_availability": "Tier 5 — classified",
+  "legality": "Does not officially exist",
+  "autonomy_level": "Fully autonomous assassination platform",
+  "dimensions": "0.7m shoulder height, 1.3m length",
+  "weight": "48 kg",
+  "power_source": "High-density hydrogen cell (camouflage system draws 60% of power budget)",
+  "locomotion": "Quadruped — silent operation mode available at reduced speed",
+  "armament": [
+    "Tungsten-carbide jaw mechanism",
+    "2x forelimb vibro-blades",
+    "Forehead-mounted neural disruptor pulse (BCI scrambler, contact range)"
+  ],
+  "sensors": [
+    "Passive thermal",
+    "Acoustic mapping",
+    "Target identification via gait analysis"
+  ],
+  "countermeasures": "Thermal imaging reveals the unit clearly — the camouflage only works on visible light. Acoustic sensors can detect footfall at close range. Shielded BCIs are immune to the neural disruptor. The unit's shimmer effect is detectable by trained observers in good lighting conditions.",
+  "known_deployments": [
+    "Classified — officially zero"
+  ],
+  "story_hooks": [
+    "A series of deaths across Meridian 88 share a common pattern: close-range trauma, no witnesses, no surveillance footage showing an attacker. Someone with access to a Phantom is using it for contract killing, and the client list is growing.",
+    "One of the four PX-1 units has gone missing from Arcturus's classified facility. The other three are accounted for. Arcturus doesn't know if it was stolen or if it left on its own — and they can't admit the program exists to ask for help finding it."
+  ],
+  "cultural_context": "The PX-1 is the automaton that people don't believe exists — which is exactly how Arcturus wants it. Rumors of invisible machines persist in the Shelf and Circuit, dismissed as paranoia by most, confirmed by the few who have survived an encounter and by the many who haven't.",
+  "tags": [
+    "automaton",
+    "stealth",
+    "camouflage",
+    "assassin",
+    "weapon",
+    "arcturus",
+    "corporate",
+    "classified",
+    "tier 5"
+  ],
+  "id": "2773f6fc09c2603effd6e4e686c445e6",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

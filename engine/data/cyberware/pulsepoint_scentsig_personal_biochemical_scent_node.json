@@ -1,0 +1,56 @@
+{
+  "id": "b56f1e8d3c70a249e1f4b87c2d035a91",
+  "name": "PulsePoint ScentSig Personal Biochemical Scent Node",
+  "brand_name": "PulsePoint",
+  "product_name": "ScentSig",
+  "type": "cyberware",
+  "aliases": [
+    "the musk",
+    "scentwork",
+    "pherome",
+    "the signature",
+    "bloom node"
+  ],
+  "category": "cosmetic",
+  "body_location": "subdermal bilateral (behind each ear and at inner wrists; optional additional nodes at neck and collarbone)",
+  "description": "The PulsePoint ScentSig is a subdermal biochemical scent synthesis implant that replaces and augments the body's natural scent signature through a network of small nodes positioned at high-warmth pulse points — behind the ears, at the inner wrists, and optionally along the neck and collarbone. Each node contains a programmable micro-dispensary loaded with a library of synthetic aromatic compounds, blended and released in response to body temperature, sweat output, and user-defined schedules. The system does not simply mask natural body odor; it synthesizes a completely custom personal scent that interacts with the wearer's natural skin chemistry to produce a unique, skin-specific result — the same preset will smell slightly different on every person who runs it. Users can choose from PulsePoint's library of over four thousand base profiles, work with a scent designer to create a bespoke signature, or use the companion app's AI blending tool to build something personal. Scent intensity scales automatically with physical activity and ambient temperature. The system can also include optional sub-threshold pheromone compounds — not mind-altering, but contributing to the general impression of warmth, trustworthiness, or vitality depending on the profile selected.\n\nThe ScentSig is one of those implants that people who have it cannot imagine living without, and people who do not have it are sometimes mildly skeptical of. In daily life, it means never thinking about deodorant again, never worrying about stress sweat in a meeting, never smelling like whatever you ate for lunch. It also means your scent is entirely yours — designed, intentional, consistent. In a city as sensory-dense as Meridian 88, where transit cars and open markets press strangers together constantly, the ability to control your olfactory presence is quietly significant. The product has strong uptake across all tiers: Shelf residents get the basic two-node version at pharmacy kiosks; Tier 4 professionals commission bespoke scent signatures the way their grandparents commissioned tailored clothes. The optional pheromone layer is technically unrestricted but generates ongoing low-level ethical debate that PulsePoint's legal team monitors carefully.",
+  "manufacturer": "PULSEPOINT WELLNESS SYSTEMS",
+  "tier_availability": "Tier 1-4",
+  "legality": "Unrestricted (pheromone enhancement layer: Unrestricted but subject to disclosure regulations in certain professional contexts)",
+  "installation_requirements": "Pharmacy kiosk for standard 2-node installation (30 minutes); licensed clinic recommended for 4–6 node full configuration (90 minutes). No anesthetic required for kiosk install; local anesthetic available at clinic.",
+  "rejection_risk": "Minimal",
+  "maintenance": "Aromatic compound cartridge replacement every 6–12 months depending on intensity settings (pharmacy-purchasable, self-replaceable via small access port); firmware updates via PulsePoint app; no clinic maintenance required for standard units.",
+  "specifications": "{\"node_count\": \"2 (standard) to 6 (full configuration)\", \"compound_library\": \"4,000+ base aromatic profiles\", \"custom_blending\": \"AI-assisted app tool or bespoke designer service\", \"intensity_range\": \"sub-threshold to moderate ambient\", \"skin_chemistry_adaptation\": \"active — output adjusts to individual skin pH and microbiome\", \"pheromone_layer\": \"optional, 8 profile presets\", \"cartridge_lifespan\": \"6-12 months at standard use\", \"power_source\": \"body heat thermoelectric\", \"access_port\": \"behind left ear, 4mm diameter\"}",
+  "side_effects": [
+    "Mild skin sensitivity at node sites for 1–2 weeks post-installation",
+    "Occasional compound bleed — a faint unintended scent note during cartridge depletion, usually described as 'slightly chemical' — corrects with cartridge replacement",
+    "Some users report becoming unusually attuned to others' natural scents post-installation, as contrast sensitivity increases",
+    "Rare users experience mild headache during the first week as the system calibrates to individual skin chemistry"
+  ],
+  "cultural_context": "The ScentSig is the implant that perhaps most clearly illustrates the texture of life in Meridian 88's consumer culture: intimate, designed, and completely normalized. Personal scent has always been culturally loaded — attraction, memory, identity, class — and the ScentSig has simply made it a design decision rather than a biological accident. There is a robust subculture of 'scent enthusiasts' who treat their aromatic profiles as seriously as others treat fashion, trading blend notes and designer recommendations in online communities. At the Tier 4 level, having a recognizable, distinctive personal scent is a social asset; at the Tier 1 level, the basic kiosk install is primarily about hygiene confidence and not smelling like the Shelf's industrial air. The optional pheromone layer occupies a legally gray space in certain professional contexts — some corponations prohibit active pheromone nodes during contract negotiations, which is either sensible or paranoid depending on who you ask. The ethics of pheromone use in romantic contexts is a recurring topic in advice columns and relationship mediations, with no settled consensus.",
+  "known_users": [
+    "Virtually all tiers — one of the most cross-class implants in the market",
+    "Sales professionals, lawyers, and negotiators using the pheromone enhancement layer",
+    "Hospitality and service industry workers",
+    "Scent enthusiasts and bespoke fragrance collectors",
+    "People with hyperhidrosis or scent-related social anxiety"
+  ],
+  "story_hooks": [
+    "A ScentSig cartridge batch has been quietly adulterated with a compound that triggers specific emotional memories in people nearby — not random memories, but targeted ones — and the distribution pattern suggests the contamination was deliberate and aimed at a specific event.",
+    "A missing person was last tracked by their ScentSig's registered aromatic profile, which is detectable by certain security systems in Meridian 88's upper tiers — following the scent trail means navigating who has the sensors, who controls the data, and who very much does not want the person found.",
+    "A high-profile corponation negotiation collapsed under suspicious circumstances; one party is claiming the other used an illegal pheromone profile during sessions, and the evidence comes down to a forensic analysis of residual compound traces in the meeting room ventilation system."
+  ],
+  "street_price": "Φ 120–Φ 380 (standard kiosk); Φ 800–Φ 2,200 (bespoke full configuration)",
+  "licensed_price": "Φ 300–Φ 700 (standard clinic); Φ 2,000–Φ 5,500 (bespoke designer service at PulsePoint flagship clinics)",
+  "tags": [
+    "cyberware",
+    "cosmetic",
+    "lifestyle",
+    "scent",
+    "pheromone",
+    "subdermal",
+    "personal-care",
+    "mass-market"
+  ],
+  "parent_corponation": ""
+}

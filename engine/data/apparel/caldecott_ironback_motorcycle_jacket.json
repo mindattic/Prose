@@ -1,0 +1,42 @@
+{
+  "id": "a3f7c2e1b09d4856f3a1c7e2d0b59483",
+  "name": "Caldecott Ironback Motorcycle Jacket",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A hard-worn motorcycle jacket cut from full-grain bovine leather — real leather, not synth, which is immediately apparent to anyone who handles it. The hide is thick and stiff at first, developing a personal crease pattern over months of wear that makes each jacket unique to its owner. The Ironback earns its name from a wide panel of perforated leather across the shoulders and upper back, originally designed for airflow during long rides but now just recognized as the Caldecott signature. Asymmetric zip closure, two chest patch pockets, and a single interior pocket with a snap closure. Hardware is brushed gunmetal throughout — no chrome, no polish.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "full-grain bovine leather",
+    "cotton twill lining",
+    "gunmetal zinc alloy hardware"
+  ],
+  "functionality": "",
+  "what_it_says": "You work with your hands, you own things outright, and you don't need branding to tell people who you are. The Ironback is a working-class statement of quiet permanence — the kind of jacket you pass down.",
+  "worn_by": [
+    "transit riders",
+    "freight haulers",
+    "Shelf-adjacent Tier 2 workers",
+    "mechanics",
+    "people who commute by motorcycle through the corridor"
+  ],
+  "manufacturer": "Caldecott Leatherworks",
+  "price_range": "Φ95",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A jacket left behind at a crime scene — the crease pattern is distinctive enough that someone who knew the owner would recognize it immediately.",
+    "Caldecott Leatherworks is a family operation out of the old Milwaukee annex, and the current owner is being pressured to sell the name to a corponation that wants to manufacture synthetic versions at scale.",
+    "The interior snap pocket is just large enough for a folded document, a vial, or a weapon too small for most security scanners to bother flagging."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 2",
+    "leather",
+    "motorcycle jacket",
+    "working class",
+    "real leather",
+    "no-tech"
+  ],
+  "parent_corponation": ""
+}

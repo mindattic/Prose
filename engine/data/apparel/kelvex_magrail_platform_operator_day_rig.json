@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b8d94f6a0e5c3b2d7a1f8e4c",
+  "name": "Kelvex MagRail Platform Operator Day Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A sharp, functional uniform built for long platform shifts and passenger-facing visibility. The core is a structured navy poly-cotton jacket with reinforced elbows, a mandarin collar, and a Kelvex transit authority patch stitched in gold thread over the left breast — the corponation logo embroidered in the same gold running along the right sleeve cuff. Beneath it sits a moisture-wicking charcoal base layer with a half-zip neck, comfortable for sixteen-hour rotation. The trousers are deep navy with a pressed center crease — Kelvex issues them pre-creased via thermal shaping — with two cargo pockets on the thighs secured by snap flaps and subtle safety-orange reflective tape running the outer seams. A rigid belt with a stamped utility clip holds a fare-scanner holster and a folded emergency protocol card pouch. The boots are the Veldtmann Steelcap 7, standard-issue, in black with a slip-resistant tread rated for wet platform surfaces.\n\nA Kelvex-branded navy cap with a stiff brim and ventilated crown completes the look. Neural port covers are provided as an optional accessory — small navy discs that snap over standard BCI ports to maintain the uniform's clean appearance during passenger interaction. The entire rig is aug-compatible at the collar and sleeve, with magnetic seam detachment along the left shoulder for wearers with chrome arm rigs. Everything reads crisp from fifteen meters: this is someone who represents a company, who keeps the trains moving, and who has exactly zero patience for fare evasion.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "poly-cotton blend",
+    "moisture-wicking synthweave",
+    "reinforced canvas elbows",
+    "reflective safety-orange tape",
+    "stamped alloy belt hardware",
+    "embroidered gold thread patches"
+  ],
+  "functionality": "Platform-rated slip-resistant soles, fare-scanner holster, emergency protocol card pouch, BCI port covers for uniform compliance, aug-compatible shoulder magnetic seam, thermal-creased trousers for shift-long presentation, moisture-wicking base layer for extended wear",
+  "what_it_says": "You work for a corponation. You're not proud of it exactly, but you're not ashamed either — it's a paycheck with dental, and you show up on time. There's a particular dignity in the pressed crease and the polished cap that says: I maintain standards even when no one's watching. Transit operators who've been at it a decade have theirs perfectly broken in; new hires wear theirs too stiff.",
+  "worn_by": [
+    "Kelvex MagRail platform operators",
+    "transit ticketing agents",
+    "station supervisors",
+    "fare enforcement officers"
+  ],
+  "manufacturer": "Kelvex Transit Authority (corponation-issued uniform)",
+  "price_range": "Φ180–Φ240 (typically issued, replacement parts purchased individually)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A platform operator notices a passenger boarding with a stolen transit chip — the same chip registered to someone who disappeared from the system three weeks ago.",
+    "The uniform's embroidered patch is a point of pride for some and a target for others — anti-Kelvex protesters have started marking operators they consider collaborators.",
+    "An operator discovers that the neural port covers issued this quarter contain a passive data-collection chip — someone is harvesting BCI metadata from every worker who snaps one on."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "transit",
+    "uniform",
+    "corponation_issued",
+    "aug_compatible",
+    "kelvex",
+    "platform_worker"
+  ],
+  "parent_corponation": ""
+}

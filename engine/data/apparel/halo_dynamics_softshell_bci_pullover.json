@@ -1,0 +1,42 @@
+{
+  "id": "7e3b9d1f4a6c208e3b7d9f1c4a6e0b27",
+  "name": "Halo Dynamics Softshell BCI Pullover",
+  "type": "apparel",
+  "category": "top",
+  "description": "Halo Dynamics makes hardware and, increasingly, the clothing designed to interface with it. The Softshell BCI Pullover is a crew-neck pullover in a matte charcoal softshell fabric that looks, at a glance, like a normal athletic top. Look closer and you'll see the subtle port-access panels at the base of the skull — two small magnetic flap covers, flush with the fabric, that allow BCI maintenance and hardware access without removing the garment. The fabric itself has a low-conductivity inner lining that reduces interference with surface-mounted BCI hardware. It's not glamorous tech, but it's practical.\n\nThe cut is clean and slightly athletic. It works as a standalone top or an underlayer. Halo Dynamics includes it in the standard 'adaptation kit' sold alongside their mid-range BCI implants, which means a significant percentage of Tier 3 BCI users own one. It reads as tech-adjacent without screaming it — someone wearing this is probably augmented, but not necessarily heavily.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "matte softshell composite",
+    "low-conductivity inner lining",
+    "magnetic flap hardware (titanium-analog)"
+  ],
+  "functionality": "BCI port-access panels at skull base with magnetic closures. Low-conductivity inner lining reduces electromagnetic interference with surface-mounted neural hardware.",
+  "what_it_says": "You're augmented. You've thought about what you wear around your hardware. You're practical about it.",
+  "worn_by": [
+    "BCI users",
+    "Tier 3 tech workers",
+    "anyone with Halo Dynamics hardware",
+    "people who want aug-compatible clothing without looking like they're trying"
+  ],
+  "manufacturer": "Halo Dynamics",
+  "price_range": "Φ130",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of Halo Dynamics Softshell Pullovers was recalled quietly after reports that the low-conductivity lining was interfering with third-party BCI hardware in unexpected ways — not just dampening interference but blocking certain signal types entirely. Some users found this feature, not a flaw.",
+    "Someone has been modifying the BCI access panels on secondhand Softshells to include a passive signal skimmer. The modifications are invisible to the naked eye.",
+    "A Tier 5 intelligence analyst was found dead wearing this pullover, which is unusual — people at his level wear bespoke. The Halo Dynamics serial number traces back to a purchase made under a false name three days before his death."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 3",
+    "pullover",
+    "BCI",
+    "tech-enhanced",
+    "aug-compatible",
+    "halo dynamics",
+    "smart-fabric"
+  ],
+  "parent_corponation": ""
+}

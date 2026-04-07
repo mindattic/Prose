@@ -1,0 +1,43 @@
+{
+  "id": "d1e2f3a4b5c6078901234567890abcde",
+  "name": "Vossmark Filtercap Daily Commuter",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A structured six-panel cap in charcoal ripstop polyblend with a matte-black stiffened brim. The fabric has a faint grid-weave texture that repels light rain and smog particulate passively. Embroidered on the left panel: a small orange Vossmark transit-line logo, worn soft from washing. Inside the crown, a thin activated-carbon filter layer sits removable and washable.\n\nThe rear strap is a standard plastic snap closure with a small notched channel cut to clear a standard neural port bump—low-profile, nothing fancy. Available in charcoal, slate, and rust-orange.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ripstop polyblend",
+    "activated-carbon filter insert",
+    "stiffened composite brim",
+    "cotton-analog sweatband"
+  ],
+  "functionality": "Passive particulate filtration via carbon-layer crown. Water-resistant outer shell. Neural-port notch at rear closure accommodates standard single-port hardware. Sweatband wicks moisture during active commutes.",
+  "what_it_says": "You're practical, employed, and not interested in making a statement.",
+  "worn_by": [
+    "MagRail operators",
+    "factory floor workers",
+    "street vendors",
+    "Circuit-tier daily commuters"
+  ],
+  "manufacturer": "Vossmark Transit Goods",
+  "price_range": "Φ18–Φ35",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Vossmark only sells these at company commissaries — owning one outside the transit system raises quiet questions about how you got it.",
+    "A specific batch from late 2199 has a filter layer that doubles as a passive signal interceptor — someone added it on the factory floor.",
+    "Two witnesses at a Circuit-level labor dispute were wearing identical Vossmark caps — someone is coordinating, and the cap is the signal."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "cap",
+    "filter",
+    "tier-2",
+    "circuit",
+    "commuter",
+    "aug-compatible",
+    "corponation"
+  ],
+  "parent_corponation": ""
+}

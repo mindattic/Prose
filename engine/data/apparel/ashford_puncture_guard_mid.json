@@ -1,0 +1,42 @@
+{
+  "id": "2d7f1b4a9c6e30f8a2d5c9b1f4e7a3d6",
+  "name": "Ashford Puncture-Guard Mid",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A mid-cut work boot with a steel midsole plate designed to protect against nail punctures and sharp debris on demolition and salvage sites. The upper is tough brown synthetic leather with a reinforced heel counter. Lacing is standard but the eyelets are oversized — easy to thread with work gloves on. The toe is composite rather than steel, keeping the overall weight reasonable. A common sight on demolition crews and in the informal salvage economy that runs through Tier 1.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synthetic leather",
+    "steel midsole puncture plate",
+    "composite toe cap",
+    "rubber lug sole",
+    "padded collar"
+  ],
+  "functionality": "Steel midsole puncture protection, composite toe, oversized eyelets for gloved use",
+  "what_it_says": "You work demolition, salvage, or somewhere the ground can't be trusted. You know what's under your feet matters.",
+  "worn_by": [
+    "demolition workers",
+    "salvagers",
+    "site clearance crews",
+    "Tier 1 scrappers"
+  ],
+  "manufacturer": "Ashford Work Boots",
+  "price_range": "Φ32 - Φ45",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The steel midsole plate makes these detectable by floor scanners — a problem for someone trying to enter a secured area unnoticed.",
+    "Salvage crews on the Shelf treat these as a rite of passage — showing up in cheap boots marks you as new and inexperienced."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "puncture-resistant",
+    "demolition",
+    "salvage",
+    "work boot",
+    "construction"
+  ],
+  "parent_corponation": ""
+}

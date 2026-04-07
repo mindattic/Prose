@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b08d4591fe63a27d0c9b5e84",
+  "name": "Patchline Rivet-Stud Utility Belt",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Assembled from salvaged conveyor-belt rubber and reclaimed nylon webbing, this wide utility belt is studded with mismatched brass and steel rivets — each one a different origin. Pouches are heat-sealed scrap vinyl, secured with scavenged buckles. Acid-bleach patterns streak the main strap in pale yellow-grey against the original black.\n\nWorn low on the hips, it sags satisfyingly under the weight of carried tools and personal effects. No two are identical. The stitching is rough but load-tested — Shelf residents trust function over finish.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed rubber webbing",
+    "salvaged nylon",
+    "scrap vinyl",
+    "mismatched brass rivets",
+    "reclaimed steel buckles"
+  ],
+  "functionality": "Six heat-sealed pouches of varying size accommodate tools, medpacks, and personal items. Wide strap distributes carried weight across the hips. Rivets double as grip points for climbing or hauling.",
+  "what_it_says": "You make do with what the city discards, and you make it work better than anything store-bought.",
+  "worn_by": [
+    "Shelf scavengers",
+    "tunnel runners",
+    "unlicensed repair techs",
+    "street vendors",
+    "Tier 1 laborers"
+  ],
+  "manufacturer": "Patchline (street label)",
+  "price_range": "Φ8–Φ22",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "One of the pouches contains a sealed data chip that isn't the wearer's — soldered shut with unfamiliar technique.",
+    "A rivet stamped with a Ferrochem lot number connects the belt to a catastrophic factory incident three years prior.",
+    "A Shelf kid wearing this belt is stopped at a Tier 2 checkpoint — the belt's salvage origin triggers a corponation ownership flag."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "belt",
+    "utility",
+    "tier-1",
+    "shelf",
+    "salvage",
+    "street-label",
+    "aug-compatible",
+    "gene-compatible"
+  ],
+  "parent_corponation": ""
+}

@@ -8,7 +8,7 @@
     "Big Dog"
   ],
   "category": "military_security",
-  "manufacturer": "Arcturus Defense",
+  "manufacturer": "Iron Point Ammunition",
   "description": "A six-legged autonomous carrier platform that moves through terrain no wheeled vehicle can navigate — rubble fields, collapsed infrastructure, vertical surfaces. The Warden is deployed for deep Underworld operations, disaster response, and situations where conventional vehicles cannot reach. Standing four meters tall, it moves with an unsettling insectoid grace that never stops being disturbing no matter how many times you see it. The cargo bay can carry supplies, casualties, or a tactical team. It is equally comfortable with all three.",
   "propulsion": "Six-legged hydraulic locomotion, electric power",
   "speed": "30 km/h flat ground, 15 km/h rough terrain, 5 km/h vertical climb",
@@ -34,5 +34,6 @@
     "underworld",
     "rain",
     "vehicle"
-  ]
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

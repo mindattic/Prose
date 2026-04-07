@@ -1,0 +1,48 @@
+{
+  "id": "04b7c9e2f5a138670b4c5d6e7f8a9016",
+  "name": "Arcturus Defense Solutions Neurostatic NS-10",
+  "type": "weapon",
+  "aliases": [
+    "NS-10",
+    "drop spray",
+    "instant floor",
+    "the shutdown",
+    "palsy gas"
+  ],
+  "category": "spray",
+  "description": "The Arcturus Defense Solutions NS-10 Neurostatic is a restricted-grade incapacitating aerosol agent classified by the Meridian 88 Security Regulation Board as a Category III compliance chemical — the highest category available to non-governmental security actors. The NS-10 delivers a synthetic carbamate nerve agent designated ADS-7c, which acts as a rapid acetylcholinesterase inhibitor targeting the peripheral nervous system's motor control pathways. Unlike organophosphate nerve agents, ADS-7c is engineered to operate at a dosage threshold that produces profound motor paralysis within 15–30 seconds of effective exposure while preserving consciousness and autonomic functions — the subject drops, cannot move voluntarily, but continues to breathe and remains aware. The incapacitation window is 18–35 minutes depending on body mass, augmentation level, and respiratory exposure depth.\n\nThe NS-10 is a pressurized canister weapon intended for deployment by trained Arcturus security operators in high-risk apprehension scenarios — specifically, situations where conventional compliance tools have failed or where the subject is augmented to a degree that renders impact weapons or conducted energy devices ineffective. The ADS-7c compound is effective against most augmented subjects, as peripheral motor neurons remain biological in virtually all cyberware configurations. The canister uses a directed-stream delivery system with a range of up to 4 meters, and the operator is required to wear a sealed respiratory mask during deployment, as secondary exposure through ambient air is possible in enclosed spaces.\n\nThe NS-10 carries a substantial lethality caveat: subjects with compromised respiratory function, certain cardiac augmentations, or pre-existing autonomic nervous system conditions may experience severe adverse reactions including respiratory depression and cardiac arrhythmia. Arcturus's own field deployment guidelines require pre-deployment medical screening of subjects where possible — a requirement widely acknowledged as operationally impractical in real security scenarios. Multiple deaths attributed to NS-10 exposure have been documented in Meridian 88 civil rights filings, though Arcturus has successfully contested liability in each case.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — Category III compliance chemical; authorized for use only by licensed Arcturus-contracted security divisions and registered corporate security principals; individual civilian possession prohibited; government security forces operate under separate authorization framework",
+  "base_technologies": [
+    "ADS-7c synthetic carbamate compound",
+    "acetylcholinesterase inhibition",
+    "directed-stream pressurized delivery",
+    "peripheral motor pathway targeting"
+  ],
+  "specifications": "Active agent: ADS-7c synthetic carbamate (peripheral AChE inhibitor)\nPrimary effect: profound voluntary motor paralysis\nPreserved functions: consciousness, respiration, autonomic cardiac function\nOnset time: 15–30 seconds post-effective exposure\nIncapacitation duration: 18–35 minutes (mass/augmentation dependent)\nDelivery: directed stream\nEffective range: 1–4m\nOperator PPE required: sealed respiratory mask (Class 2 minimum)\nAntidote: atropine sulfate injection (standard Arcturus deployment kit)\nLethality risk: elevated for subjects with respiratory compromise, cardiac augmentations, autonomic disorders\nNet volume: 80ml\nPrice: Φ2,500",
+  "tactical_use": "Deployed in high-risk apprehension operations against augmented or heavily armed subjects where conventional compliance tools are assessed as insufficient. A single effective burst to the face produces onset within 15–30 seconds; the subject collapses and cannot resist physical restraint. Arcturus-trained operators carry atropine autoinjectors as part of standard deployment kit for emergency reversal if a subject shows signs of respiratory depression. The NS-10 is never deployed in crowd contexts — it is a precision, single-subject tool.",
+  "cultural_context": "The NS-10 is known on the street as 'drop spray' or 'the shutdown' — its effects are so rapid and complete that witnesses describe it as watching a person simply switch off. In corporate security circles, it is spoken of with a kind of professional sobriety; operators who have used it describe the experience as unsettling regardless of the justification. Civil rights advocates call it 'chemical surrender' and have campaigned unsuccessfully for its reclassification as a prohibited weapon. Arcturus argues that it is safer than lethal alternatives for augmented subjects who cannot be stopped otherwise.",
+  "known_users": [
+    "Arcturus Defense Solutions contracted security divisions",
+    "Tier 4–5 corporate principal protection units",
+    "licensed corporate apprehension specialists"
+  ],
+  "story_hooks": [
+    "An NS-10 canister is recovered from a Tier 1 crime scene — someone used it on a Shelf resident who had no augmentations and no criminal record. The atropine kit is missing, and the victim spent six days in a public clinic. The canister's batch number traces to an Arcturus internal training facility that was supposedly decommissioned."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "less_lethal",
+    "nerve_agent",
+    "tier4",
+    "restricted",
+    "motor_paralysis",
+    "arcturus",
+    "aerosol",
+    "high_risk"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

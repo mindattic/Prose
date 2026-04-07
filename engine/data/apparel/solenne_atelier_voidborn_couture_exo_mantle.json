@@ -1,0 +1,43 @@
+{
+  "id": "1f4a7e0d9c3b285746a8f1d2e3c0b597",
+  "name": "Solenne Atelier Voidborn Couture Exo-Mantle",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "Designer Ifeoma Solenne's singular statement piece for the 2200 Spire Ascension collection: a structural shoulder mantle constructed from lab-grown black coral polymer over a frame of articulated titanium filament, draped with 11 meters of hand-pleated bioluminescent silk-analog that shifts between deep indigo and cold white in response to the wearer's body heat. The chest panel is set with 34 polished synthetic opals sourced from off-site orbital fabrication. Gene-compatible openings accommodate horn placement up to 40cm and allow full tail articulation through a hidden rear cascade panel.\n\nOne garment exists. It was commissioned by a Spire power broker whose name is not publicly attached to the piece.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "lab-grown black coral polymer",
+    "articulated titanium filament frame",
+    "hand-pleated bioluminescent silk-analog",
+    "synthetic orbital opals",
+    "gene-compatible cascade rear panel"
+  ],
+  "functionality": "Thermal-responsive bioluminescent silk shifts color without power draw. Titanium frame is load-bearing enough to support the full mantle weight without resting on the wearer's shoulders. Concealed rear cascade opens on magnetic release for full tail and geneware clearance.",
+  "what_it_says": "Whoever wears this spent more on a single garment than most Shelf residents see in a lifetime, and they want every room to know it.",
+  "worn_by": [
+    "Spire power brokers",
+    "corponation C-suite executives",
+    "haute couture collectors",
+    "anyone making a dynasty-level statement"
+  ],
+  "manufacturer": "Solenne Atelier (Tier 5 corponation designer house)",
+  "price_range": "Φ 2,200,000 (commissioned, one-of-a-kind)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The mantle was stolen the night of its first public wearing — the buyer refuses to involve CorpSec and is handling recovery privately.",
+    "Ifeoma Solenne built a tracker into the coral polymer frame without the commissioner's knowledge, and she's been watching where it goes.",
+    "A Shelf artist releases a hand-painted replica that's going viral — the Solenne legal team's response is disproportionate enough to suggest the original holds something more than fabric."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "haute-couture",
+    "spire",
+    "luxury",
+    "geneware",
+    "designer",
+    "statement"
+  ],
+  "parent_corponation": ""
+}

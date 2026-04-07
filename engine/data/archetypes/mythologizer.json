@@ -1,0 +1,33 @@
+{
+  "id": "bb87b79aa51c31b2174ae8ca8d0dd8f8",
+  "name": "Mythologizer",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Wraps every fact in a story until the story becomes the fact",
+  "behavioral_signature": "Transforms raw data into narrative meaning, often losing precision in the process",
+  "under_stress": "Invents comforting myths to replace unbearable truths",
+  "at_rest": "Turns lived experience into legend, making sense through storytelling",
+  "will_always": [
+    "find the narrative in the noise"
+  ],
+  "will_never": [
+    "present dry facts without interpretation"
+  ],
+  "unless": [
+    "the myth would cause direct harm to someone who needs the truth"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Oral Historian",
+      "threshold": 0.8,
+      "context": "narrative framing"
+    }
+  ],
+  "opposite_of": [
+    "Rationalist"
+  ],
+  "tags": [
+    "narrative",
+    "mythic"
+  ]
+}

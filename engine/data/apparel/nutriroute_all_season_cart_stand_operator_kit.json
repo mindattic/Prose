@@ -1,0 +1,46 @@
+{
+  "id": "7b3e2c1a9f4d0e57b1a3c8f2d6e4b09c",
+  "name": "NutriRoute All-Season Cart Stand Operator Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The working uniform of the street food economy — practical, presentable, and built to survive a fourteen-hour shift at a corner cart through rain, heat, and the occasional chemical fog rolling off the elevated transit lines above. The primary piece is a collarless canvas work apron in deep slate grey, mid-thigh length, with a wide bib, three front pockets (one for order slips, one for payment hardware, one for a folded cloth), and the NutriRoute licensing logo embroidered at the bib in rust-orange thread — marking the wearer as operating under a franchise arrangement rather than fully independent. Beneath the apron, a long-sleeve moisture-wicking crew shirt in burnt sienna with a simple stand collar, worn tucked. The shirt has a rear neck opening with a soft rubber port collar for neural hardware — a small accommodation that marks this as a mass-market garment aware of its customer base. Trousers are straight-leg charcoal synth-cotton with a comfortable high rise, flat front, and two deep hip pockets. Footwear is a cushioned slip-resistant clog in matte black with a wide toe box and a closed heel — designed for standing. A lightweight packable rain shell in translucent grey with orange reflective seam tape hangs from a hook on the cart when not in use, pulled on when weather turns.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "canvas apron",
+    "moisture-wicking synth-cotton",
+    "straight-leg synth-cotton twill",
+    "packable ripstop shell",
+    "cushioned EVA clog sole"
+  ],
+  "functionality": "slip-resistant standing footwear, moisture-wicking underlayer, neural port collar on shirt, packable rain shell, multi-pocket apron with dedicated order/payment/tool organization, franchise licensing embroidery",
+  "what_it_says": "This outfit says small-scale hustle operating within a system — the NutriRoute logo marks franchise compliance, not independence. The overall neatness signals someone who takes pride in what they do despite the precarity of it. Seen off the cart, the apron folded over one arm is a universal signal: this person just got off a long shift and is heading home.",
+  "worn_by": [
+    "licensed street food vendors",
+    "NutriRoute franchise operators",
+    "corner cart workers",
+    "food stall attendants"
+  ],
+  "manufacturer": "NutriRoute Franchise Services (apron and logo, issued upon licensing) / Coldwall / generic Circuit-level retail (shirt, trousers, shell, footwear)",
+  "price_range": "Φ120–Φ190 (apron issued with franchise fee; personal items self-purchased)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The NutriRoute licensing logo is a liability — it means the cart's location data is reported to the corponation in real time, and someone is using that feed to track a specific vendor.",
+    "A vendor's apron pocket contains an order slip with a coded message — a dead drop system running through the street food network for years without detection.",
+    "The franchise logo has been carefully unpicked from the bib and replaced with a hand-embroidered design — a small act of reclamation that violates the licensing agreement and could get the cart seized."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "street_vendor",
+    "food_service",
+    "nutriroute",
+    "franchise",
+    "aug_compatible",
+    "all_weather",
+    "standing_work"
+  ],
+  "parent_corponation": ""
+}

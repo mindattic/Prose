@@ -1,0 +1,41 @@
+{
+  "id": "a3f7c2e8b1d94056f2a7c3e8b1d94056",
+  "name": "Carrow & Fenn Waxed Dispatch Jacket",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A heavy waxed-cotton jacket in the tradition of working outerwear, built by a mid-tier label that has been making durable goods in the Milwaukee basin for three generations. The cut is boxy and honest — two chest pockets, two hand-pockets with storm flaps, a corduroy collar that softens with age. The wax finish darkens at the elbows and cuffs over time, developing a patina that makes each jacket unique to its owner. Available in dark olive, tobacco brown, and a deep navy that almost reads black under artificial light.\n\nThis is a jacket people buy once and wear for a decade. It smells faintly of beeswax and lanolin. It does not have any embedded systems, no climate layer, no signal shielding — it is simply very well made. Courier workers, warehouse supervisors, and off-duty mechanics reach for it on cold mornings. It is the kind of jacket that accumulates patches and pins without looking cluttered.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "waxed cotton",
+    "corduroy collar",
+    "brass hardware",
+    "cotton twill lining"
+  ],
+  "functionality": "",
+  "what_it_says": "You value durability over novelty. You probably fix things rather than replacing them. You have worn this jacket through rain and did not care.",
+  "worn_by": [
+    "couriers",
+    "warehouse workers",
+    "tradespeople",
+    "Tier 2 regulars who distrust fast fashion"
+  ],
+  "manufacturer": "Carrow & Fenn",
+  "price_range": "Φ68",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A courier's Carrow & Fenn jacket contains a hidden interior pocket sewn shut — something was sealed inside it before the original owner disappeared",
+    "A Tier 3 character is embarrassed to admit they bought one after their expensive corp jacket failed them in a rainstorm",
+    "The wax finish on a particular batch from three years ago was accidentally contaminated with a mild bioluminescent compound — those jackets glow faintly green in total darkness"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 2",
+    "waxed cotton",
+    "workwear",
+    "durable",
+    "non-tech"
+  ],
+  "parent_corponation": ""
+}

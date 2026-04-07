@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "A spool-deployed monofilament wire system designed for perimeter defense and anti-personnel applications. The wire is a single-molecule-thick carbon filament that is effectively invisible to the naked eye and most optical sensors. Once deployed between anchor points, the wire will sever anything that contacts it with sufficient force — limbs, cables, vehicle tires, drone rotors. Tessera packages it with a compact spool housing and magnetic anchor stakes, marketing it as a 'passive security perimeter system' despite its obvious offensive applications.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "NeoCortex Industries",
   "tier_availability": "Tier 3+",
   "legality": "Prohibited — indiscriminate hazard weapon",
   "base_technologies": [
@@ -34,6 +34,8 @@
     "market",
     "vehicle",
     "drone",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

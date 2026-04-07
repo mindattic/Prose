@@ -1,0 +1,35 @@
+{
+  "name": "Coldseam Patched Dress Shirt & Slacks Set",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "shelf_formal_set",
+  "manufacturer": "No label / hand-altered",
+  "description": "A two-piece set assembled from separate thrift-market finds — a collared dress shirt in faded ivory synth-cotton with a replaced third button that doesn't quite match, and a pair of dark charcoal slacks with a careful hand-seam along the left knee where the fabric split and was repaired. Neither piece was made to go together, but on the Shelf, formal wear is what you make it. The shirt collar has been starched with a DIY solution of cornstarch and water; the slacks were pressed under a heavy textbook overnight.\n\nThis is what a Shelf resident wears to a funeral, a custody hearing, a job interview at a Tier 2 food processing plant, or their child's school performance. It signals effort more than wealth — and on the Shelf, effort is its own kind of dignity. No augment ports, no geneware cuts. If you've got chrome, it shows.",
+  "tier_availability": "Tier 1-2",
+  "price": "Φ8",
+  "augment_compatible": false,
+  "geneware_compatible": false,
+  "durability": "low",
+  "legal_status": "legal",
+  "cultural_context": "On the Shelf, owning a clean set like this means you have somewhere worth going. Neighbors notice when someone leaves in their formal set — it means something changed, or is about to. The set is often shared within families or building clusters, adjusted with pins and belts to fit whoever needs it most that week.",
+  "story_hooks": [
+    "A Shelf resident borrows this set from a neighbor for a Lazarus benefits appeal hearing — if they don't present well, the appeal fails and their augment suppression medication gets cut.",
+    "The shirt's missing button was replaced with one salvaged from a deceased parent's coat — a quiet piece of grief worn in public.",
+    "A Tier 3 social worker recognizes the mismatched button and the careful repair seam and has to decide how that changes the way she reads the person in front of her."
+  ],
+  "tags": [
+    "shelf",
+    "formal",
+    "thrift",
+    "hand-repaired",
+    "budget",
+    "interview",
+    "funeral",
+    "no-aug",
+    "Tier 1",
+    "Tier 2",
+    "pragmatic"
+  ],
+  "id": "4ead21bd5c924327869dce0ae9e25dd8",
+  "parent_corponation": ""
+}

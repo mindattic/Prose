@@ -1,0 +1,47 @@
+{
+  "id": "c58a0e3f71d2b49608fc1a5e27b930d4",
+  "name": "Nullform AR Visor MK-3 Ghost",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A wraparound AR visor in matte charcoal polymer with a single-piece curved lens that shifts between full transparency and deep-tint privacy mode in under 200ms. The temple arms are thickened to house dual micro-processors and a short-range mesh antenna. A slim copper contact rail along the inner brow interfaces directly with compatible BCI hardware for hands-free overlay control.\n\nThe lens surface carries a faint iridescent treatment visible only at oblique angles — a signature Nullform aesthetic detail. Popular with field operatives and off-books analysts who need AR overlay without broadcasting that they're running it.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "matte charcoal polymer frame",
+    "multi-layer curved polycarbonate lens",
+    "copper BCI contact rail",
+    "micro-processor housing",
+    "iridescent anti-glare coating"
+  ],
+  "functionality": "Full AR overlay display; BCI-direct interface for hands-free control; 200ms transparency-to-tint switching; short-range mesh antenna for local data pulls; auto-brightness adjustment; 14-hour charge cycle via inductive temple pad.",
+  "what_it_says": "You're always reading more information than anyone in the room realizes.",
+  "worn_by": [
+    "field analysts",
+    "corporate investigators",
+    "mid-tier fixers",
+    "security consultants",
+    "journalists"
+  ],
+  "manufacturer": "Nullform Systems (independent tech label)",
+  "price_range": "Φ480–Φ1,100",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of MK-3 units contains a firmware backdoor that streams overlay data to an unknown third-party server.",
+    "A fixer is selling a MK-3 with archived AR recordings of a closed Spire board meeting embedded in corrupted cache memory.",
+    "Nullform's lead engineer has gone missing; the last known location pings from a MK-3 unit that was supposed to be decommissioned."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "visor",
+    "AR",
+    "smart-eyewear",
+    "tier-3",
+    "tier-4",
+    "aug-compatible",
+    "BCI",
+    "tech",
+    "operative"
+  ],
+  "parent_corponation": ""
+}

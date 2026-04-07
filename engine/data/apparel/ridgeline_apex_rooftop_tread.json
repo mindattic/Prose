@@ -1,0 +1,42 @@
+{
+  "id": "e5b0293c7f1a846d2e9c04f8b37a6105",
+  "name": "Ridgeline Apex Rooftop Tread",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A mid-cut shoe in dark grey and rust, built specifically for urban freerunning and rooftop traversal. The sole uses a zoned rubber compound — softer and stickier at the toe and outer edge for edge-gripping, firmer in the arch for support on narrow surfaces. The upper is reinforced at the toe and inner ankle where runners most often strike obstacles. Slim profile keeps the silhouette low to the ground for feel and balance.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "zoned-compound rubber sole",
+    "reinforced microfiber upper",
+    "low-profile foam midsole",
+    "internal ankle brace webbing"
+  ],
+  "functionality": "Zoned sole compound optimizes grip for edge running, concrete ledges, and angled surfaces. Internal ankle brace webbing reduces sprain risk on lateral impacts. Reinforced toe cap resists abrasion from obstacle strikes.",
+  "what_it_says": "You move through the city above street level. You know routes nobody else does and you're confident in places that would terrify most people.",
+  "worn_by": [
+    "freerunners",
+    "urban scouts",
+    "rooftop couriers",
+    "thieves",
+    "graffiti crews"
+  ],
+  "manufacturer": "Ridgeline Athletic",
+  "price_range": "Φ130 - Φ165",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A rooftop runner wearing these was the last person to see someone alive — and claims they were already gone when she arrived.",
+    "A street-level graffiti tag with a specific symbol keeps appearing — always at locations accessible only in these shoes or equivalent."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "freerunning",
+    "rooftop",
+    "grip",
+    "urban",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

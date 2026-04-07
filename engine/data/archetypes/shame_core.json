@@ -1,0 +1,34 @@
+{
+  "id": "d306aaee443d38bb4be95567df7699d1",
+  "name": "Shame Core",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Operates from a fundamental belief that they are defective at their core",
+  "behavioral_signature": "Flinches from praise, sabotages success, avoids being truly seen",
+  "under_stress": "Shame spirals into complete withdrawal or self-destruction",
+  "at_rest": "Quietly certain they don't deserve good things",
+  "will_always": [
+    "deflect compliments"
+  ],
+  "will_never": [
+    "fully accept they deserve love or success"
+  ],
+  "unless": [
+    "unconditional acceptance is offered so persistently it erodes the shame"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Shame Driven",
+      "threshold": 0.9,
+      "context": "shame as motivator"
+    }
+  ],
+  "opposite_of": [
+    "Pride Driven"
+  ],
+  "tags": [
+    "shame",
+    "self_worth",
+    "hiding"
+  ]
+}

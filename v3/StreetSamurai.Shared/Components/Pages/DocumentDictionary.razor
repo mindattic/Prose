@@ -10,6 +10,9 @@
         <div class="card bg-dark text-light border-secondary mb-2 card-body">
             <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                    placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+            <div class="mb-2">
+                <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+            </div>
             <div class="d-flex gap-2">
             <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Documents" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
@@ -46,6 +49,7 @@
             </div>
 
             <div class="mb-3"><div class="field-label">Body</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" style="font-family: Georgia, serif; line-height: 1.7;" @bind="editing.Body"></textarea></div>
+                    @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
         }
         else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a document or create a new one</div> }
     </div>
@@ -57,17 +61,30 @@
     private bool isNew, _confirmDelete;
     private string originalName = "";
     private string filter = "";
+    private List<(string name, int count)> allTags = [];
+    private HashSet<string> selectedTags = [];
 
-    private IEnumerable<WorldbuildingDocument> FilteredItems => string.IsNullOrWhiteSpace(filter)
-        ? items
-        : items.Where(d => d.Title.Contains(filter, StringComparison.OrdinalIgnoreCase)
-            || d.FileName.Contains(filter, StringComparison.OrdinalIgnoreCase));
+    private IEnumerable<WorldbuildingDocument> FilteredItems
+    {
+        get
+        {
+            IEnumerable<WorldbuildingDocument> result = items;
+            if (!string.IsNullOrWhiteSpace(filter))
+                result = result.Where(d => d.Title.Contains(filter, StringComparison.OrdinalIgnoreCase));
+            if (selectedTags.Count > 0)
+                result = result.Where(d => selectedTags.All(tag => d.Tags.Contains(tag)));
+            return result;
+        }
+    }
 
-    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); }
     private void AddNew() { editing = new WorldbuildingDocument(); isNew = true; _confirmDelete = false; }
     private void Edit(WorldbuildingDocument d) { editing = d; originalName = d.FileName; isNew = false; _confirmDelete = false; }
     private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.FileName)) return; if (!isNew && originalName != editing.FileName) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Title); Repo.Delete(editing.FileName); editing = null; _confirmDelete = false; items = Repo.GetAll(); }
     protected override async Task OnAfterRenderAsync(bool firstRender) { await JS.InvokeVoidAsync("writeInterop.autoResizeAll"); }
+    private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
+    private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.FileName, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

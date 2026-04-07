@@ -1,0 +1,34 @@
+{
+  "name": "Ringo On-Air Talent Studio Jacket",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_media_wear",
+  "manufacturer": "Ringo Data Services",
+  "description": "Ringo's on-air talent don't choose their own wardrobes — the Studio Jacket is issued per season by Ringo's style division and represents the corporate aesthetic of the current broadcast cycle. The current iteration is a structured single-button blazer in Ringo's signature gradient-dye fabric that shifts from deep red to near-black depending on viewing angle and lighting temperature, an effect engineered to read well across both physical and AR broadcast environments. The lapels contain micro-LED filaments tuned to enhance the wearer's facial definition under studio lighting. The back is camera-friendly smooth; the front lining is packed with BCI interface hardware that connects to Ringo's studio telemetry system, feeding biometric data — stress levels, attention markers, vocal resonance — to production staff in real time. Fit is made-to-measure for each issued recipient.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ560",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "restricted",
+  "cultural_context": "The Ringo Studio Jacket is a status object with a specific kind of weight — it means you're on Ringo's air, which means millions of people see your face. Former talent sometimes keep old-season jackets as memorabilia; current talent are contractually required to return them. A jacket appearing outside Ringo channels is always a story.",
+  "story_hooks": [
+    "A decommissioned jacket from a talent who left Ringo under acrimonious circumstances still has active biometric telemetry — someone at Ringo is still listening.",
+    "The micro-LED lapel filaments in a specific run were tuned to a frequency that subtly affects viewer mood via AR display systems, a fact Ringo's legal team is quietly managing.",
+    "A counterfeit version of the jacket — visually identical but without the internal hardware — is circulating in Tier 3 fashion markets, worn by people who want to look like they're somebody."
+  ],
+  "tags": [
+    "ringo",
+    "media",
+    "broadcast",
+    "on-air",
+    "studio",
+    "blazer",
+    "bci-integrated",
+    "corporate",
+    "talent",
+    "smart-fabric"
+  ],
+  "id": "b373f966ab644e2a8088af95f0443c58",
+  "parent_corponation": "Ringo Corponation"
+}

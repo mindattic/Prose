@@ -1,0 +1,33 @@
+{
+  "id": "a2150a807783d3d1317b8df65d82a53e",
+  "name": "Mirror",
+  "type": "archetype",
+  "category": "identity",
+  "description": "Shows others exactly what they need to see about themselves",
+  "behavioral_signature": "Reflects people's qualities back at them, forcing self-confrontation",
+  "under_stress": "Reflects darker truths that people aren't ready to face",
+  "at_rest": "A calm, perceptive presence that makes people examine themselves",
+  "will_always": [
+    "show people who they really are"
+  ],
+  "will_never": [
+    "impose their own identity onto others"
+  ],
+  "unless": [
+    "reflecting the truth would destroy someone who doesn't deserve it"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Empath",
+      "threshold": 0.7,
+      "context": "reflecting others"
+    }
+  ],
+  "opposite_of": [
+    "Manipulator"
+  ],
+  "tags": [
+    "reflective",
+    "perceptive"
+  ]
+}

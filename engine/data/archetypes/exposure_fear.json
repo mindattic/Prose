@@ -1,0 +1,33 @@
+{
+  "id": "0c25c9c42965274ee589e1f19f6a4521",
+  "name": "Exposure Fear",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Terrified that if anyone sees the real them, it's over",
+  "behavioral_signature": "Maintains elaborate defenses against being truly known",
+  "under_stress": "Withdraws completely rather than risk vulnerability",
+  "at_rest": "Pleasant but impenetrable, nobody gets past the surface",
+  "will_always": [
+    "keep the real self hidden"
+  ],
+  "will_never": [
+    "voluntarily show weakness"
+  ],
+  "unless": [
+    "they're too exhausted to maintain the wall"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Ice",
+      "threshold": 0.75,
+      "context": "fear of vulnerability"
+    }
+  ],
+  "opposite_of": [
+    "Authentic Core"
+  ],
+  "tags": [
+    "guarded",
+    "secretive"
+  ]
+}

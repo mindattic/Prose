@@ -1,0 +1,42 @@
+{
+  "id": "a3f7c2e1b09d4582f6a1c3e7d2b08541",
+  "name": "Patchline Gutter Cinch Belt",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A hand-assembled utility belt built from salvaged conveyor webbing, reclaimed buckle hardware, and mismatched loop-rivet sets. The strap is a patchwork of black, rust-orange, and industrial grey — no two belts identical. Grease staining on the inner face is common; wearers treat it as proof of use.\n\nSix external loops accommodate tools, zip-pouches, or scavenged containers. The main clasp is a double-tongue steel buckle recovered from old rail harness stock. Crude but reliable.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed conveyor webbing",
+    "salvaged steel buckle hardware",
+    "riveted canvas patches",
+    "scrap nylon loop tape"
+  ],
+  "functionality": "Six load-bearing loops for tools or pouches; double-tongue buckle withstands heavy lateral pull; aug-compatible with wide-gap loop spacing to clear lower-limb chrome mounting flanges.",
+  "what_it_says": "You build what you need from whatever the city discards.",
+  "worn_by": [
+    "Shelf scavengers",
+    "reclaim workers",
+    "street mechanics",
+    "aug-limb users on tight budgets"
+  ],
+  "manufacturer": "Patchline (street label)",
+  "price_range": "Φ 8–22",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A specific buckle stamp matches decommissioned MagRail maintenance harness — someone is looking for the rig it came from.",
+    "The belt's hidden inner seam contains a flattened data chip sewn in by a previous owner.",
+    "A Shelf enforcer recognizes the loop pattern as belonging to a missing person."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "belt",
+    "utility",
+    "tier-1",
+    "street-label",
+    "aug-compatible",
+    "scavenger"
+  ],
+  "parent_corponation": ""
+}

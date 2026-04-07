@@ -1,0 +1,44 @@
+{
+  "id": "a3f7c2e1b0d94f8a6c5e3b1d7a9f2c04",
+  "name": "Helix Corp Standard Cubicle Day Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A mass-produced Tier 3 office uniform that announces its wearer's station with quiet, merciless precision. The core is a Helix Corp-issued slim-fit trouser in mid-grey polyblend with a faint institutional sheen — pressed but never quite crisp, the fabric holding a ghost crease from the last hundred wearers before it was laundered and reissued. Paired with a Stratum-branded poplin button-down in pale corporate blue, the collar slightly too stiff, the cuffs slightly too short, the whole garment a fraction off in every dimension as though tailored for a statistical average person who doesn't exist. A thin synthetic-leather belt in charcoal, a clip-on ID badge lanyard in Helix Corp teal, and Huxley Quietstep loafers in scuffed black round out the look. The ensemble carries the particular exhaustion of clothes worn five days a week, dry-cleaned on the company's schedule, returned to the locker on Friday and retrieved Monday morning. No ornamentation, no personalization — any attempt at individuality, a pin, a colored lace, a visible tattoo, has been quietly flagged by HR.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "polyblend twill",
+    "poplin synthetic-cotton",
+    "synthetic leather",
+    "nylon lanyard webbing"
+  ],
+  "functionality": "ID badge integration, standard BCI port access collar notch, anti-static lining for proximity to server equipment, stain-resistant coating on trouser front panels",
+  "what_it_says": "You are a cog and you know it. You have internalized the dress code. You have stopped fighting. The badge around your neck tells security where you're allowed to go, and the outfit tells everyone else you're allowed nowhere interesting.",
+  "worn_by": [
+    "Helix Corp data entry clerks",
+    "junior administrative processors",
+    "cubicle-tier analysts",
+    "compliance form handlers",
+    "anyone on a provisional contract hoping to go permanent"
+  ],
+  "manufacturer": "Helix Corp Internal Procurement Division — issued, not purchased",
+  "price_range": "Φ 0 (issued) / Φ 180–Φ 240 retail equivalent",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character wearing this uniform discovers that their badge lanyard has been quietly downgraded — they can no longer access the floor they've worked on for three years. No explanation. No email. Just a red light on the reader.",
+    "Someone has been wearing this exact uniform for eleven years. Today they notice a small handstitched mark inside the collar — not theirs. They recognize the stitch pattern as belonging to someone who died in the building six years ago.",
+    "A player character needs to move through a Helix Corp office without being flagged. Acquiring this uniform is step one — but the biometric weave embedded in the badge lanyard is step two, and that's where things get complicated."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_3",
+    "issued_uniform",
+    "helix_corp",
+    "conformist",
+    "mass_produced",
+    "aug_compatible"
+  ],
+  "parent_corponation": ""
+}

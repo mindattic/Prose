@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b09d4e6f8a1c3d5e7b2f4a09",
+  "name": "Scrapweld Buckle-Visor MK-1 Shelf Shield",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A face shield cobbled from salvaged welding visor glass, stripped conveyor belt straps, and flattened tin from industrial drums. The lens is amber-tinted, cracked at one corner, patched with resin that has yellowed with acid rain exposure. Riveted buckles replace the original adjustment mechanism. The frame shows multiple weld beads where it has been broken and re-joined. Smells faintly of solder flux and rust inhibitor.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged polycarbonate visor glass",
+    "repurposed conveyor rubber strapping",
+    "reclaimed tin sheeting",
+    "cold-weld resin patches",
+    "scavenged steel rivets"
+  ],
+  "functionality": "Blocks particulate and acid-rain splash across the full face. The amber lens filters harsh UV from industrial arc flares. Chin strap buckles allow rapid removal. No electronics — zero power draw.",
+  "what_it_says": "You built your own protection because no one was going to sell it to you.",
+  "worn_by": [
+    "Shelf scrappers",
+    "acid-zone salvagers",
+    "unlicensed welders",
+    "tunnel runners",
+    "Tier 1 street workers"
+  ],
+  "manufacturer": "Self-made / Scrapweld (informal Shelf fabricator collective)",
+  "price_range": "Φ8–Φ30 (barter common)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The resin patch over the cracked lens was applied the night after someone threw an acid flask at the wearer — the crack is a record of a near-miss.",
+    "A specific rivet pattern on the chin strap is a Shelf gang identifier — wearing it in the wrong zone is a provocation.",
+    "A Tier 4 industrial designer photographed one of these for a 'raw aesthetic' fashion editorial, and the original maker is furious."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "visor",
+    "face-shield",
+    "tier-1",
+    "shelf",
+    "self-made",
+    "salvage",
+    "acid-protection",
+    "no-electronics"
+  ],
+  "parent_corponation": ""
+}

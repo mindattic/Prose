@@ -1,0 +1,59 @@
+{
+  "id": "a3f7c2e1b9d4085f6a2c3e7d1b9f4082",
+  "name": "LAZARUS PHARMACEUTICALS NeuroPrecision Surgical Command Arra",
+  "brand_name": "LAZARUS PHARMACEUTICALS",
+  "product_name": "NeuroPrecision Surgical Command Array",
+  "type": "cyberware",
+  "aliases": [
+    "The Scalpel",
+    "SteadyHands",
+    "Lazarus Locks",
+    "God Fingers"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The NeuroPrecision Surgical Command Array is a medical-grade BCI engineered by Lazarus Pharmaceuticals for high-stakes surgical and interventional environments. At its core, the implant runs a closed-loop tremor elimination protocol that samples motor cortex output at 12,000 Hz, identifies and filters involuntary oscillation signatures down to 0.003mm amplitude, and reissues corrected efferent signals to the peripheral nervous system before conscious movement completes. A secondary subsystem provides haptic magnification—amplifying tactile feedback from instrumented surgical tools by up to 40x—allowing surgeons to feel tissue density variation, suture tension, and vessel wall integrity with extraordinary resolution. The Array integrates with certified OR systems via encrypted LAZMED-7 protocol, projecting a neural overlay of patient vitals, imaging data, and procedural checklists directly into the surgeon's working awareness without occupying visual bandwidth. Onboard memory logs every procedure in a tamper-evident biochain format, admissible as medical-legal record.\n\nThe NeuroPrecision is the de facto standard implant for licensed surgeons operating above Tier 2 hospital credentials in Meridian 88. Most major hospital networks—Lakefront General, Axiom Health, and the Lazarus-affiliated MedSpire clinics—require or strongly incentivize the Array for any practitioner performing neurovascular, reconstructive, or robotic-assisted procedures. Outside the OR, users describe a persistent heightened manual dexterity that bleeds into daily life: surgeons report near-effortless microsolder work, instrument playing, and fine craft. A secondary market exists among tattoo artists, watchmakers, and high-end jewelers who obtain the implant through medical licensing workarounds. Resident physicians saving for their own Array sometimes joke that the implant costs more than their first year of wages—and then buy one anyway.",
+  "manufacturer": "Lazarus Franchise Licensing",
+  "tier_availability": "Tier 3-4",
+  "legality": "Licensed",
+  "installation_requirements": "Neurosurgical clinic installation only; requires active medical practitioner license or employer sponsorship; 72-hour calibration hospitalization; LAZMED system pairing",
+  "rejection_risk": "Low — biocompatible polymer chassis with Lazarus proprietary neuro-adhesive coating; rejection risk elevated in patients with prior cortical implants from non-Lazarus manufacturers",
+  "maintenance": "Quarterly firmware update via certified Lazarus clinic terminal; annual haptic sensor recalibration; electrode impedance check every 18 months",
+  "specifications": "{\"tremor_elimination_resolution\": \"0.003mm amplitude floor\", \"motor_cortex_sampling_rate\": \"12,000 Hz\", \"haptic_amplification_range\": \"1x-40x adjustable\", \"neural_overlay_latency\": \"<2ms\", \"procedure_log_storage\": \"10,000 hours tamper-evident biochain\", \"wireless_protocol\": \"LAZMED-7 encrypted\", \"battery_life\": \"self-powered via neural galvanic harvest\", \"compatible_systems\": \"Lazarus OR Suite 9+, Axiom Surgical Platform, Lakefront Robotic Assist\", \"form_factor\": \"dual-lobe cranial array, sub-occipital primary node\"}",
+  "side_effects": [
+    "Heightened tactile sensitivity persists off-duty — some users find ordinary textures distractingly intense for the first 6 months post-installation",
+    "Rare: phantom precision feedback — users report feeling non-existent instruments in hand during high-stress non-surgical situations",
+    "Mild proprioceptive recalibration period of 2-4 weeks during which fine motor timing feels 'laggy' before the system fully integrates",
+    "Long-term users occasionally develop difficulty tolerating imprecision in others — documented as 'Array Perfectionism Syndrome' in Lazarus internal literature"
+  ],
+  "cultural_context": "In Meridian 88's medical culture, a NeuroPrecision Array is a visible marker of serious surgical commitment — the implant's faint suboccipital ridge is recognizable to any OR nurse, and its presence confers immediate professional credibility. Among the Tier 3 professional class, the Array occupies the same cultural space as a master craftsperson's best tool: expensive, personal, and slightly sacred. Some surgeons have their Arrays engraved or customized with procedural specialty icons. Lazarus Pharmaceuticals quietly encourages this personalization culture, as it deepens brand loyalty and makes competitors' products feel sterile by comparison.",
+  "known_users": [
+    "Licensed surgeons at Tier 3-4 hospital networks",
+    "Robotic surgery specialists",
+    "Interventional radiologists and cardiologists",
+    "High-end tattoo artists and body modification specialists operating on medical license gray-market",
+    "Precision instrument makers and horologists",
+    "Neurovascular fellows in residency programs sponsored by Lazarus-affiliated hospitals"
+  ],
+  "story_hooks": [
+    "A surgeon's Array begins logging procedures she has no memory of performing — the biochain records are legitimate and legally admissible, but the OR logs show she was off-shift. Someone is using a cloned Array signature to frame her, or something far stranger is happening to her memory.",
+    "A black-market NeuroPrecision is circulating in the Shelf — stripped of its LAZMED authentication, it's been modified to amplify fine motor control for safecracking and sleight-of-hand. Lazarus Pharmaceuticals wants it recovered quietly before the liability exposure becomes public.",
+    "A retired surgeon offers the player characters an Array pulled from a deceased colleague — still calibrated, still warm — in exchange for a dangerous favor. The Array's procedure logs contain evidence of something that got its previous owner killed."
+  ],
+  "street_price": "Φ18,500",
+  "licensed_price": "Φ34,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "medical",
+    "professional",
+    "surgical",
+    "tremor-elimination",
+    "haptic",
+    "lazarus-pharmaceuticals",
+    "tier3",
+    "tier4",
+    "licensed"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

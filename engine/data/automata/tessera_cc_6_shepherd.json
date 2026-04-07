@@ -1,0 +1,53 @@
+{
+  "name": "TESSERA CC-6 'Shepherd'",
+  "type": "automaton",
+  "classification": "Crowd Control — Mobile Barrier",
+  "aliases": [
+    "Shepherd",
+    "Cattle Grid",
+    "The Push"
+  ],
+  "manufacturer": "Thoughtline Messaging",
+  "description": "The CC-6 is a broad, flat-topped quadruped platform standing 1.5 meters tall with a forward-facing shield wall 3 meters wide. It walks slowly and deliberately into crowds, physically pushing people backward with a combination of its bulk and a chest-mounted electrified contact strip that delivers painful (non-lethal, supposedly) shocks to anyone who doesn't move. Behind the shield wall, a tear gas dispersal system ensures that the space the Shepherd clears stays clear.\n\nThe CC-6 is designed to compress crowds — to push people from one area to another without the optics of security personnel beating civilians. TESSERA deploys them in lines of four to six units, walking abreast, creating a moving wall that herds populations into designated containment areas. The units communicate to maintain formation and adjust speed based on crowd density, slowing when compression risks crush injuries and speeding up when the crowd thins.\n\nThe Shepherd's electrified contact strip has been documented as lethal to individuals with cardiac augmentations, pacemakers, and certain neural implant configurations. TESSERA's response to each documented death has been identical: the individual failed to disclose a medical condition that made them vulnerable to standard crowd management technology. The onus, per TESSERA's legal framework, is on the person being electrocuted to have told someone beforehand.",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — crowd management",
+  "autonomy_level": "Formation autonomous with remote direction",
+  "dimensions": "1.5m height, 3.0m shield width, 2.0m depth",
+  "weight": "1,200 kg",
+  "power_source": "Hydrogen fuel cell, 18-hour endurance",
+  "locomotion": "Quadruped heavy walker, slow pace (walking speed)",
+  "armament": [
+    "Electrified contact strip (chest-mounted)",
+    "Rear-mounted tear gas dispersal",
+    "Loudspeaker array for compliance instructions"
+  ],
+  "sensors": [
+    "Crowd density analysis",
+    "Formation coordination",
+    "Crush-risk monitoring"
+  ],
+  "countermeasures": "The Shepherd is slow — it can be outrun easily. Insulated clothing negates the contact strip. The unit is top-heavy and can be tipped by coordinated lateral force. Climbing over the shield wall is physically possible but the contact strip makes it painful.",
+  "known_deployments": [
+    "Regular deployment at protests, labor actions, and public gatherings across Meridian 88",
+    "Shelf district compression operations",
+    "Event crowd management"
+  ],
+  "story_hooks": [
+    "A line of Shepherds is pushing a crowd toward a district boundary. The crowd has nowhere left to go — the boundary is a wall. The crush-risk monitors are screaming. The operator hasn't adjusted speed. Whether it's malice or incompetence, people will die in minutes unless the Shepherds are stopped.",
+    "Someone has reprogrammed a Shepherd's formation coordination — instead of walking in line with other units, it's walking a spiral pattern through a market, herding people toward the center. Something is waiting at the center."
+  ],
+  "cultural_context": "The Shepherd embodies the corponation approach to civil rights: you have the right to be somewhere else. Its slow, deliberate advance through neighborhoods during operations is described by residents as the most dehumanizing experience available — being pushed like livestock by a machine that doesn't know you're a person.",
+  "tags": [
+    "automaton",
+    "crowd control",
+    "barrier",
+    "suppression",
+    "weapon",
+    "tessera",
+    "corporate",
+    "control",
+    "tier 3"
+  ],
+  "id": "dcc2de23fdc931307a7936821be8e614",
+  "parent_corponation": "Tessera Corponation"
+}

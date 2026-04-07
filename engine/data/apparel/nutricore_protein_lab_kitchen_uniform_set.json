@@ -1,0 +1,35 @@
+{
+  "name": "NutriCore Protein Lab Kitchen Uniform Set",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "food_service_industrial",
+  "manufacturer": "NutriCore Systems / Holloway & Drax Licensed",
+  "description": "NutriCore operates the protein synthesis kitchens that supply the majority of Tier 1-2 meal services in Meridian 88 — large industrial facilities that are part laboratory, part production floor, and nothing like a restaurant. The kitchen uniform set issued to production workers reflects this: a white coverall-apron hybrid in a heavy antimicrobial poly-weave that resists the enzymatic cleaners used between production runs, paired with a structured head cover that accommodates horns up to 28cm, pointed ears, bioluminescent crests, and standard hair without separate fittings. The head cover uses a flexible silicone frame rather than fabric elastic, which NutriCore's safety documentation credits with reducing contamination incidents. The apron-front is removable for autoclave cleaning without removing the full coverall. Wrist seals accommodate chrome forearm augmentations and standard limbs identically via a ratchet-adjust band.",
+  "tier_availability": "Tier 1-2",
+  "price": "Φ45",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "NutriCore production work is considered unglamorous but stable — the facilities run twenty-two hours a day and the Collective has negotiated minimum shift guarantees. The uniform is recognizable city-wide; workers often commute in it because changing facilities are inadequate. In Tier 1, a NutriCore uniform means steady work and is treated with a certain respect. The white fabric stains in characteristic ways that experienced workers can read like a history of the facility's output.",
+  "story_hooks": [
+    "A NutriCore production worker notices that one of the enzymatic cleaner runs leaves a residue the standard uniform test strips don't flag — but the residue is accumulating in the wrist seal bands of everyone on their line.",
+    "The antimicrobial weave in a specific NutriCore uniform lot has begun to fail at the molecular level after six weeks of use rather than the rated sixteen, and someone in NutriCore's supply chain made a very specific substitution to save money.",
+    "A union organizer who disappeared three months ago was last seen in their NutriCore uniform, clocking out of a facility that has no record of them clocking in that day."
+  ],
+  "tags": [
+    "nutricore",
+    "food-service",
+    "industrial-kitchen",
+    "protein-lab",
+    "coverall",
+    "geneware-compatible",
+    "augment-compatible",
+    "antimicrobial",
+    "tier-1",
+    "tier-2",
+    "production-worker"
+  ],
+  "id": "5f694456f5f745a5b8b6bb3e346fbf87",
+  "parent_corponation": ""
+}

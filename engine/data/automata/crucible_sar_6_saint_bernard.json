@@ -1,0 +1,50 @@
+{
+  "name": "Crucible SAR-6 'Saint Bernard'",
+  "type": "automaton",
+  "classification": "Search and Rescue — Heavy Platform",
+  "aliases": [
+    "Saint Bernard",
+    "Big Dog",
+    "The Retriever"
+  ],
+  "manufacturer": "Applied Heredity Ethics Board LLC",
+  "description": "The SAR-6 is a quadruped rescue platform standing 1.4 meters at the shoulder and weighing 310 kg, designed to operate in collapsed structures, toxic environments, and disaster zones where human rescuers cannot safely enter. Its reinforced chassis can support an additional 200 kg of recovered casualties, and its manipulator arms — two heavy-duty limbs mounted at the shoulder assembly — can lift structural debris weighing up to 500 kg. The platform's sealed environmental system allows operation in atmospheres containing toxic gases, biological contaminants, or radiation levels that would incapacitate an unprotected human within minutes.\n\nCrucible built the SAR-6 because Meridian 88 needs it. The city's lower tiers experience structural collapses with disturbing regularity — aging infrastructure, unlicensed construction, industrial accidents, and occasional corporate ordnance create a steady supply of disaster zones that require search and rescue response. The corponations that control the upper tiers fund rescue operations for their own facilities and personnel. Everyone else gets whatever municipal resources are available, which increasingly means SAR-6 units operating without human backup because there aren't enough trained rescuers to go around.\n\nThe Saint Bernard's most remarkable feature is its casualty assessment system. The platform can perform triage on recovered individuals, stabilize life-threatening injuries using onboard medical supplies, and transmit patient data to receiving hospitals while still navigating debris fields. It is, in many cases, the only medical professional that lower-tier disaster victims will see for hours — a machine that performs the work of compassion because the system that created the need for compassion can't be bothered to provide it through people.",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted — emergency services equipment",
+  "autonomy_level": "Semi-autonomous with remote operator guidance",
+  "dimensions": "2.1m length, 1.4m shoulder height, 1.0m width",
+  "weight": "310 kg",
+  "power_source": "Hydrogen fuel cell with emergency battery backup, 48-hour endurance",
+  "locomotion": "Quadruped articulated legs, rubberized foot pads, stair and rubble capable",
+  "armament": [],
+  "sensors": [
+    "Life-sign detection (thermal, acoustic, CO2 analysis)",
+    "Structural integrity sonar",
+    "Toxic atmosphere composition analysis",
+    "Ground-penetrating radar for buried casualties"
+  ],
+  "countermeasures": "Non-combat platform. Heavy chassis provides incidental ballistic resistance. Operating in disaster zones provides natural concealment.",
+  "known_deployments": [
+    "Meridian 88 Emergency Services (continuous deployment)",
+    "Tier 2 structural collapse response (averaging 12 incidents monthly)",
+    "Crucible Industrial facility disaster response"
+  ],
+  "story_hooks": [
+    "A SAR-6 has returned from a collapsed building in the Shelf carrying a survivor who shouldn't exist — someone with no BCI, no identity records, no biometric match in any database. The platform's medical logs show the individual has injuries consistent with being buried for weeks, but the building collapsed three hours ago.",
+    "Crucible has been quietly upgrading SAR-6 units with concealed surveillance equipment. Every disaster zone the Saint Bernards enter becomes a data collection opportunity — mapping underground spaces, cataloging residents, identifying infrastructure that doesn't appear on official records."
+  ],
+  "cultural_context": "The SAR-6 is one of the few machines that people in the Shelf trust. When the walls come down, the Saint Bernard comes. It doesn't ask what tier you live on or whether you have insurance. It just digs. For many lower-tier residents, a Crucible rescue robot is the closest thing to institutional care they will ever experience.",
+  "tags": [
+    "automaton",
+    "rescue",
+    "search",
+    "quadruped",
+    "medical",
+    "crucible",
+    "disaster",
+    "shelf",
+    "tier 2"
+  ],
+  "id": "4040190a4d84d60b251631b826a80560",
+  "parent_corponation": "Crucible Genomics"
+}

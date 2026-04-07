@@ -1,0 +1,38 @@
+{
+  "id": "7d3c5a9e2b1f48067e4c8a3d91b50f2e",
+  "name": "Strakka Flexline Cargo Short",
+  "type": "apparel",
+  "category": "legwear",
+  "description": "Knee-length cargo shorts in a durable stretch-twill, popular in the warmer interior zones of Meridian where warehouse climate control is unreliable. Four cargo pockets with velcro-close flaps and a reinforced back panel. Usually olive, khaki, or faded black. Worn with compression sleeves by workers whose chrome starts below the knee.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "stretch poly-cotton twill",
+    "nylon pocket facing",
+    "velcro closure"
+  ],
+  "functionality": "Reinforced back panel, velcro-close cargo pockets",
+  "what_it_says": "Practical and unbothered — you prioritize function over appearance and you're probably working somewhere warm.",
+  "worn_by": [
+    "warehouse workers",
+    "loading dock crew",
+    "augmented workers with lower-leg chrome"
+  ],
+  "manufacturer": "Strakka Workwear",
+  "price_range": "Φ16 - Φ22",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The wide cargo pockets are a known concealment point; port security at several Meridian freight hubs has standing orders to check the velcro flaps.",
+    "A worker who pairs these with expensive chrome legs is sending a message: they spent their money on what matters to them."
+  ],
+  "tags": [
+    "apparel",
+    "legwear",
+    "tier 2",
+    "workwear",
+    "cargo",
+    "shorts",
+    "aug-friendly"
+  ],
+  "parent_corponation": ""
+}

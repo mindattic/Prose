@@ -1,0 +1,33 @@
+{
+  "name": "Coldseam Patched Formal Trousers & Shirt Set",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "formal separates",
+  "manufacturer": "Coldseam Collective (informal Shelf label)",
+  "description": "Coldseam is less a manufacturer than a network of Shelf tailors and menders operating out of converted storage units near the lower Meridian drainage corridors. Their formal separates are assembled from bolt-end fabric lots, surplus corporate uniform material (Ouroboros gray appears often), and whatever structured textile can be sourced at the district swap markets. The shirt is banded-collar, pressed stiff with a starch substitute made from processed grain byproduct. The trousers have a clean line through the thigh that collapses into a patch at the left knee, covered with a fabric square that almost matches.\n\nFor Φ14, this is a complete formal outfit. It fits because a Coldseam tailor measured you or someone close to your size. The tailors who run these networks have memorized body types the way doctors memorize symptoms — practically, without ceremony. Some of their customers are augmented with basic chrome, and the shirt cuffs are cut slightly wider on request to clear a forearm data-port without snagging.",
+  "tier_availability": "Tier 1-2",
+  "price": "Φ14",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "low",
+  "legal_status": "legal",
+  "cultural_context": "Coldseam Collective pieces carry quiet social weight on the Shelf. Wearing one signals that you bought local, supported a community tailor, and didn't spend money you didn't have on corporate-branded disposables. The patching is not hidden — it's a mark of practical honesty. Mid-tier observers often find the aesthetic striking without understanding what it actually represents.",
+  "story_hooks": [
+    "The Ouroboros surplus fabric in the trousers still carries a faint embedded RFID signature from a decommissioned uniform batch — which flags a checkpoint scanner in a Tier 3 district.",
+    "A Coldseam tailor recognizes the cut of their own work on a body recovered from the lower drains and knows the victim by name.",
+    "A Tier 4 fashion label quietly sources Coldseam aesthetics for a 'raw authenticity' collection priced at Φ400 per piece."
+  ],
+  "tags": [
+    "Shelf",
+    "formal separates",
+    "community made",
+    "patched",
+    "Tier 1",
+    "Tier 2",
+    "banded collar",
+    "augment compatible",
+    "local label"
+  ],
+  "id": "dc81853038bb43d586f3dbec353a09a2",
+  "parent_corponation": ""
+}

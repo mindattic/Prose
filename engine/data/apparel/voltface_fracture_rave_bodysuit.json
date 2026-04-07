@@ -1,0 +1,46 @@
+{
+  "id": "7d1e4b2c9a0f3e58a7b6c5d4e3f21090",
+  "name": "Voltface // Fracture Rave Bodysuit",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A seamless compression bodysuit by underground label Voltface, constructed from sound-reactive chromolux mesh layered over matte-black tensile base fabric. The chromolux layer pulses visible color — violet to acid green — in direct response to bass frequencies, creating moving bloom patterns across the torso and thighs. At rest, it reads as flat charcoal. Under a club sound system, the wearer becomes a living light source.\n\nCut high at the hip with a structured chest panel and open-back architecture. Neural port access collar allows BCI passthrough for sync'd light-pattern override — wearers with the right software can manually trigger color sequences. A Circuit-scene staple at underground raves in the old industrial tunnels beneath the MagLine grid.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "sound-reactive chromolux mesh",
+    "tensile matte-black base fabric",
+    "micro-LED weft thread",
+    "BCI-passthrough collar strip"
+  ],
+  "functionality": "Passive sound-reactive light display requires no power source — piezoelectric mesh converts sound pressure to light. BCI collar allows manual override for wearers with compatible implants. Compression fit provides mild thermal regulation.",
+  "what_it_says": "I live for the underground, and my body is the show.",
+  "worn_by": [
+    "rave regulars",
+    "club circuit performers",
+    "underground DJs",
+    "Circuit-scene youth",
+    "BCI artists"
+  ],
+  "manufacturer": "Voltface (street label, Circuit-district origin)",
+  "price_range": "Φ 180–Φ 340",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Voltface suit starts responding to frequencies outside the audible range — something is broadcasting in the tunnel system.",
+    "Corporate IP enforcement is hunting the Voltface manufacturer for unlicensed chromolux use; the designer has gone dark.",
+    "A wearer's BCI override gets hijacked mid-rave, turning them into an unwilling signal beacon for someone watching the crowd."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "rave",
+    "club",
+    "subcultural",
+    "sound-reactive",
+    "LED",
+    "tier-2",
+    "tier-3",
+    "BCI-compatible",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

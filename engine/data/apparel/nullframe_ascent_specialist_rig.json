@@ -1,0 +1,48 @@
+{
+  "id": "71e2a9f0c6b34d17839f50d12c7e8a44",
+  "name": "Nullframe Ascent Specialist Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The Nullframe Ascent is built for runners whose reputation has grown enough that they no longer need to be invisible — but who still need every technical edge the clothes can provide. This is a high-visibility operative set that announces capability while hiding specifics. The primary piece is a structured moto-style jacket in deep forest green with matte-black segmented shoulder panels — the panels are reinforced synth-ceramic composite, providing genuine blunt-force and slash resistance without adding bulk. The jacket's interior is a custom holster ecosystem: two chest-mounted flat holster sleeves, a collapsed-tool rail along the left lining, and a shoulder-exit aug-power conduit that routes cleanly to a forearm chrome mount. The back panel has a wide spinal channel with an open-spine cut covered by a snap-over flap — accommodating full spinal rigs or pronounced dorsal augmentation. Beneath is a slate grey mock-neck compression shirt with integrated chrome-arm port openings at both wrists, sealed with magnetic cuffs that peel back for arm-aug access. Bottoms are tailored straight-leg trousers in matte black with micro-texture — they look corporate-adjacent from ten meters but the fabric is reinforced ripstop with a concealed thigh drop pocket on each leg. Footwear is a pointed-toe moto boot in forest green leather-analog with a steel toe cap, magnetic ankle closure, and heel-recessed blade channel. A slim fingerless glove on the right hand covers chrome knuckle augmentation.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "synth-ceramic composite shoulder panels",
+    "structured ripstop moto fabric",
+    "compression mock-neck knit",
+    "matte micro-texture ripstop trouser fabric",
+    "leather-analog moto boot composite",
+    "magnetic closure hardware",
+    "aug-power conduit routing"
+  ],
+  "functionality": "Synth-ceramic blunt and slash resistance in shoulder panels, dual chest holster sleeves, tool rail in jacket lining, aug-power conduit from shoulder to forearm chrome, spinal rig accommodation with snap-flap cover, chrome-arm port openings at wrists, concealed thigh drop pockets, heel-recessed blade channel in boot",
+  "what_it_says": "This runner has stopped pretending to be someone else. The forest green and structured silhouette reads as expensive, technical, and deliberate — closer to a Tier 4 specialist than a street operative, which is exactly the gap this outfit exploits. It says: I am paid well, I am very good at this, and I am not hiding the fact that I am armed. The reputation does the rest.",
+  "worn_by": [
+    "established mid-career runners with named reputations",
+    "specialists hired for their specific skillset rather than anonymity",
+    "runners with significant visible augmentation who lean into presence over concealment",
+    "operatives working Tier 3-4 environments where looking too poor is as suspicious as looking too armed"
+  ],
+  "manufacturer": "Nullframe — boutique street label, Tier 3 workshop, takes clients by referral only",
+  "price_range": "Φ 1,100–Φ 1,800",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Tier 4 corporate security team clocks the synth-ceramic shoulder panels and immediately escalates — they've seen this jacket before, in a breach report. The runner is stopped in a lobby with four guards and a very polite request to wait.",
+    "The heel-recessed blade channel is empty. The runner lost the blade on the last job and hasn't replaced it. When a job goes sideways and they reach for it out of muscle memory, the absence is a half-second that matters.",
+    "A junior runner approaches in a bar and asks where the jacket came from — too eager, too specific about the interior holster layout. Someone sent them to find out who the runner's fabricator is, and whether the design can be replicated."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier_3",
+    "tier_4",
+    "aug_compatible",
+    "gene_compatible",
+    "reputation_visible",
+    "holster_integrated",
+    "blunt_resistant",
+    "spinal_rig_accommodation"
+  ],
+  "parent_corponation": ""
+}

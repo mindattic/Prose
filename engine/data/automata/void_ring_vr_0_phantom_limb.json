@@ -1,0 +1,51 @@
+{
+  "id": "f132a36d99f4bbdf7a887dddbdba4651",
+  "name": "Void Ring VR-0 'Phantom Limb'",
+  "type": "automaton",
+  "classification": "Training",
+  "aliases": [
+    "Phantom Limb",
+    "Ghost",
+    "The Zero"
+  ],
+  "manufacturer": "VOID RING COLLECTIVE",
+  "description": "The VR-0 is an underground fighting automaton built by the Void Ring Collective — a loose network of automaton engineers, fight promoters, and combat sport fanatics who operate entirely outside legal channels. Unlike the mass-produced Dogfighter, each Phantom Limb is hand-built and unique, assembled from salvaged military and industrial components into a fighting machine that reflects its builder's philosophy about combat. Some are fast and evasive, some are heavy grapplers, some are pure strikers. No two fight alike.\n\nPhantom Limb units are status symbols in the underground fighting world. Owning one means having connections to the Void Ring Collective, which means having access to the deepest layer of the illegal automaton scene. The machines are entered into tournaments against each other and against human fighters in events that move between cities, never using the same venue twice. Human-vs-Phantom Limb fights are the headline events — five-round bouts where the human fighter's purse increases each round they survive, with a massive bonus for a knockout or technical stoppage of the machine.\n\nThe Collective maintains a ranking system for both Phantom Limb units and human fighters, tracked on an encrypted network accessible only through invitation. The top-ranked human fighters — people who have consistently survived or defeated Phantom Limb opponents — are celebrities in the underground world and utterly unknown to the public. They walk through normal life with broken hands and scar tissue and reputations that exist only in whispers.",
+  "tier_availability": "Tier 3",
+  "legality": "Illegal — custom-built, no regulation compliance",
+  "autonomy_level": "Fully autonomous — unique AI per unit, developed through combat experience",
+  "dimensions": "Varies (1.5m–2.1m height depending on build)",
+  "weight": "Varies (80–250 kg depending on build)",
+  "power_source": "Varies — most use salvaged military fuel cells",
+  "locomotion": "Bipedal, performance varies by build",
+  "armament": [
+    "Varies by build — some hardened striking, some grappling-focused, some use improvised weapons"
+  ],
+  "sensors": [
+    "Combat AI (unique per unit, learns from fights)",
+    "Opponent pattern recognition",
+    "Damage self-assessment"
+  ],
+  "countermeasures": "No standardized safety systems. Some builders include remote shutoffs; others consider it unsporting. Ring referees (human) can call fights, but enforcement depends on the venue operator's willingness to intervene.",
+  "known_deployments": [
+    "Underground fighting circuits worldwide",
+    "Void Ring Collective tournaments",
+    "Private challenge matches",
+    "Rumored corporate-sponsored events for executive entertainment"
+  ],
+  "story_hooks": [
+    "A character is invited to a Void Ring tournament — not as a fighter, but as a buyer. The Collective is auctioning a Phantom Limb unit built from components salvaged from a military prototype. The bidding will be intense, and not everyone plans to pay with money.",
+    "A top-ranked Phantom Limb unit has killed a fighter in the ring — not a malfunction, but a deliberate escalation by its combat AI. The Collective is trying to handle it internally before it draws corporate security attention. They need someone to track down the unit's builder."
+  ],
+  "cultural_context": "The Phantom Limb scene represents the purest expression of the underground automaton fighting subculture — artisanal combat machines built by obsessives for obsessives. The Collective's ranking list is the most exclusive fight card in the world, and an invitation to fight on it is worth more than the purse.",
+  "tags": [
+    "automaton",
+    "training",
+    "underground",
+    "fighting",
+    "custom",
+    "illegal",
+    "void ring",
+    "artisanal"
+  ],
+  "parent_corponation": ""
+}

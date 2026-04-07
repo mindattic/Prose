@@ -1,0 +1,56 @@
+{
+  "id": "a3f7c2e1b8d94056f1a2c3e4d5b67890",
+  "name": "ARCTURUS DEFENSE SOLUTIONS Predator HX-9 Combat Eye",
+  "brand_name": "ARCTURUS DEFENSE SOLUTIONS",
+  "product_name": "Predator HX-9 Combat Ocular System",
+  "type": "cyberware",
+  "aliases": [
+    "Warhawks",
+    "Killframes",
+    "Nine-Eyes"
+  ],
+  "category": "ocular",
+  "body_location": "eyes",
+  "description": "The Predator HX-9 is a full ocular replacement engineered for frontline combat operators, housing a multi-spectrum sensor array behind ballistic-grade synthetic cornea. The unit integrates real-time IFF tagging, trajectory prediction overlays, and threat-priority ranking via a dedicated co-processor wired directly to the optic nerve. Micro-gyroscopic stabilization compensates for motion blur during high-speed engagements, and a hardened EMP-resistant shell protects core functions in electronic warfare environments.\n\nDistribution is restricted to licensed military contractors, CorpSec units, and credentialed mercenary outfits — civilian acquisition requires black-market sourcing at significant legal risk. On the streets of Meridian's lower tiers, a salvaged pair of HX-9s is considered a trophy, and runners who sport them are either genuinely dangerous or desperately want to seem so.",
+  "manufacturer": "Resolve Behavioral Health",
+  "tier_availability": "Tier 3-5",
+  "legality": "Military-Only",
+  "installation_requirements": "Certified combat-cybernetics surgeon; neural interface compatibility assessment; optic nerve sheathing recommended",
+  "rejection_risk": "Moderate — synthetic cornea and co-processor integration stresses optic nerve; elevated risk without pre-installation nerve sheathing",
+  "maintenance": "Quarterly firmware sync with ARCTURUS servers; lens recalibration every 6 months; co-processor coolant flush annually",
+  "specifications": "{\"sensor_modes\": [\"visible_light\", \"thermal\", \"UV\", \"low_light_amplification\"], \"IFF_range_meters\": 800, \"trajectory_prediction_latency_ms\": 12, \"co_processor\": \"ARCTURUS TacCore v4.1\", \"ballistic_rating\": \"9mm fragmentation resistant\", \"EMP_hardening\": true, \"zoom_magnification\": \"0.5x–24x optical\", \"battery_life_hours\": 72, \"wireless\": \"encrypted mil-spec only\"}",
+  "side_effects": [
+    "Persistent threat-tagging of civilians in crowded environments causes anxiety and hypervigilance",
+    "Co-processor heat buildup during sustained engagement causes mild periorbital discomfort",
+    "IFF overlays can bleed into REM sleep, producing vivid combat-scenario dreams",
+    "Incompatibility with consumer AR platforms — civilian HUD software causes system conflicts"
+  ],
+  "cultural_context": "HX-9s are the eye of choice for Meridian's private military ecosystem, and their distinctive matte-black sclera and faint reticle glow are immediately recognizable to anyone who operates in that world. Possessing a pair without military credentials is a serious offense under the Great Lakes Augmentation Control Act, but enforcement is inconsistent in Shelf and Rack districts. CorpSec operators who go freelance often keep their HX-9s, making them walking legal violations — and everyone knows it.",
+  "known_users": [
+    "ARCTURUS-contracted mercenary units",
+    "Rogue ex-CorpSec operatives",
+    "Tier 4-5 private security details",
+    "Black-market combat runners",
+    "Organized crime enforcers with deep pockets"
+  ],
+  "story_hooks": [
+    "A murdered CorpSec lieutenant is found with both HX-9s surgically removed post-mortem — someone needed the IFF database still loaded in the co-processor",
+    "A runner's salvaged HX-9 pair keeps tagging a specific civilian in the crowd as a high-priority hostile — and the system won't say why",
+    "ARCTURUS sends a retrieval team to recover a pair of HX-9s from a Shelf-district fixer, claiming the units contain classified target data from an ongoing operation"
+  ],
+  "street_price": "Φ62,000",
+  "licensed_price": "Φ145,000",
+  "tags": [
+    "cyberware",
+    "ocular_implant",
+    "tactical",
+    "combat",
+    "military",
+    "IFF",
+    "threat_tracking",
+    "restricted",
+    "arcturus",
+    "ocular"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4",
+  "name": "Nordvik Flex-Shaft Hoof Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A structured ankle boot designed specifically for partial-hoof geneware — the forefoot is a rigid polymer shell shaped to a hoof profile, while the rear section is padded leather with a flexible shaft. It bridges the gap between the hoof and the ankle cleanly, with a small heel block for balance. Comes in matte black and a dark mahogany. It's a niche product that does exactly one thing well: making partial-hoof geneware wearable in urban environments without wrapping the hoof in improvised foam. Tier 2-3 range.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "rigid polymer hoof shell",
+    "synthetic leather shaft",
+    "rubber heel block",
+    "foam padding"
+  ],
+  "functionality": "Rigid hoof-profile forefoot shell protects and supports partial hoof geneware. Flexible rear shaft for ankle mobility.",
+  "what_it_says": "You went hoof and you're not embarrassed — you just want to walk on pavement without cracking the geneware.",
+  "worn_by": [
+    "partial-hoof geneware users",
+    "Tier 2-3 geneware adopters",
+    "people who got unusual mods for personal reasons"
+  ],
+  "manufacturer": "Nordvik Adaptive Footwear",
+  "price_range": "Φ70 - Φ95",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "Nordvik's hoof shell molds are black-market copied constantly — the fakes use brittle resin that shatters under impact.",
+    "A Nordvik employee has been quietly modifying the hoof shells for paying customers to include hidden compartments."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "geneware-compatible",
+    "hoof",
+    "ankle boot",
+    "adaptive",
+    "niche"
+  ],
+  "parent_corponation": ""
+}

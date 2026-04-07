@@ -1,0 +1,46 @@
+{
+  "id": "449ad66ebee222fa0b2294618a4f288e",
+  "name": "Crucible Industries Electrostatic Whip EW-3 'Live Wire'",
+  "type": "weapon",
+  "aliases": [
+    "Live Wire",
+    "EW-3",
+    "Shock Lash",
+    "The Current"
+  ],
+  "category": "melee",
+  "description": "A three-meter segmented whip constructed from conductive carbon-lattice links that carries a progressive electrical charge — each segment adds voltage as the whip extends, so the tip delivers a charge proportional to the length of whip that contacts the target. A full-extension strike with the complete three-meter length delivers approximately 80,000 volts at the contact point, sufficient for immediate incapacitation of an unarmored target.\n\nThe EW-3's segmented construction allows the operator to control the effective length by gripping the whip at different points along its length — shorter grips for close-range work, full extension for crowd control and area denial. Each segment is individually insulated from the handle, so the operator receives no feedback charge regardless of contact. The whip's carbon-lattice segments are rigid enough to maintain momentum during a swing but flexible enough to wrap around limbs and barriers, delivering sustained electrical contact.\n\nCrucible originally developed the Live Wire as a perimeter security tool — a ranged electrical weapon that could deny access to corridors and doorways without permanent infrastructure. The weapon's adoption by combat operatives was driven by its unique capability: no other man-portable weapon can control a three-meter radius, wrap around obstacles, and deliver incapacitating electrical force simultaneously. The drawback is the extensive training required — a whip in untrained hands is as dangerous to the user as to the target.",
+  "manufacturer": "BioInk 3D Printing",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — electrical area-denial weapon",
+  "base_technologies": [
+    "Progressive voltage segmented construction",
+    "Conductive carbon-lattice links",
+    "Variable-length grip control"
+  ],
+  "specifications": "total_length: 3 meters (full extension)\nweight: 800 g\nsegments: 24 conductive links\nmax_voltage: ~80,000 V at full extension\npower_source: Handle capacitor bank, 60 full-extension strikes\ninsulation: Handle-side complete operator isolation\nmaterial: Conductive carbon-lattice composite links",
+  "tactical_use": "The Live Wire controls space. An operator with a three-meter electrified whip dominates any corridor or room, denying approach from all angles. The weapon wraps around obstacles, reaches behind cover, and delivers incapacitating charges through incidental contact. Against multiple opponents, the whip's area coverage forces attackers to approach from a single direction rather than surrounding the operator. Against single targets, the whip can be used to entangle limbs and deliver sustained electrical contact that overcomes resistance. The training investment is substantial — whip fighting is an entirely separate martial discipline from blade or impact weapons.",
+  "cultural_context": "The Live Wire has revived whip-fighting as a martial discipline in Meridian 88, attracting practitioners who value the weapon's unique combination of range, flexibility, and electrical capability. Training schools have developed a formalized curriculum that takes two years to reach combat proficiency, creating an exclusivity that whip fighters wear as a badge of dedication. The weapon's dramatic visual display — the arc of electrical sparks trailing a three-meter whip — has made it popular in performance contexts as well as combat, and whip-fighting demonstrations draw crowds at lower-tier market events.",
+  "known_users": [
+    "Corporate perimeter security",
+    "Whip-fighting practitioners",
+    "Area-denial specialists"
+  ],
+  "story_hooks": [
+    "A Live Wire operator has modified their whip's segments to carry different voltages — the first contact is sub-lethal, but if the whip wraps the target, each successive contact escalates. Victims describe a 'conversation' of increasing pain.",
+    "A whip-fighting school has been producing exceptionally skilled graduates who are all being recruited by the same employer. The school's curriculum may include more than martial arts — it may be a front for operative training."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "whip",
+    "electrical",
+    "area-denial",
+    "tier 3",
+    "carbon-lattice",
+    "flexible",
+    "less_lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

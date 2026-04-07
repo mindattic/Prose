@@ -1,0 +1,46 @@
+{
+  "id": "d6d97ecbe6591edc57d57d683ef47b70",
+  "name": "Nkomo-Lindqvist NLR-9 'Counselor'",
+  "type": "weapon",
+  "aliases": [
+    "Counselor",
+    "NLR-9",
+    "The Adviser"
+  ],
+  "category": "revolver",
+  "description": "The Nkomo-Lindqvist NLR-9 is a seven-shot double-action revolver chambered in 9x19mm using moon clips, designed for shooters who want revolver reliability with the ammunition availability and cost savings of the world's most common pistol cartridge. The frame is compact stainless steel, the barrel is three inches, and the overall size is comparable to a medium-frame .38 Special revolver despite holding an additional round.\n\nThe Counselor appeals to a practical-minded demographic: people who recognize that 9x19mm ammunition is available everywhere, costs less than revolver-specific cartridges, and performs adequately for personal defense. The moon-clip loading system allows reasonably fast reloads, and the seven-round capacity provides one more round than most .38 Special revolvers. Nkomo-Lindqvist markets the NLR-9 as 'the sensible revolver' — boring marketing for a sensible product.\n\nThe weapon has found particular success among medical professionals, social workers, and other non-combat personnel who work in dangerous districts and want reliable personal protection without the learning curve of a semi-automatic pistol. The revolver's simple operation — load, point, pull — combined with universally available ammunition creates a package that prioritizes accessibility over performance.",
+  "manufacturer": "NKOMO-LINDQVIST",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "Moon-clip 9mm system",
+    "Seven-shot cylinder",
+    "Compact stainless frame"
+  ],
+  "specifications": "caliber: 9x19mm\neffective_range: 25 meters\nrate_of_fire: Double-action revolver\nmagazine_capacity: 7 rounds (cylinder, moon clip)\nweight: 0.72 kg",
+  "tactical_use": "A practical defensive revolver using universally available 9x19mm ammunition. The moon-clip system provides faster reloads than traditional revolver loading. Seven-round capacity exceeds standard .38 Special revolvers. The compact size suits concealed or open carry. Performance is adequate for personal defense against unarmored targets.",
+  "cultural_context": "The Counselor is the weapon of people who approached the firearms purchase decision with a spreadsheet. It optimizes for availability, cost, and simplicity in a way that firearms enthusiasts find uninspiring and practical people find sensible. In a world of exotic technologies and smart-linked weapons, the NLR-9 is defiantly mundane.",
+  "known_users": [
+    "Medical professionals in dangerous districts",
+    "Social workers",
+    "Non-combat personnel requiring protection",
+    "Practical-minded self-defense buyers"
+  ],
+  "story_hooks": [
+    "A social worker's Counselor saves three lives during a Shelf district crisis — and the media coverage makes them a reluctant symbol for civilian self-defense rights that neither side of the debate actually wants.",
+    "Nkomo-Lindqvist receives a bulk order for five hundred Counselors from an organization that doesn't exist. The payment clears. The shipping address is in a district that has been officially abandoned."
+  ],
+  "ammunition_type": [
+    "9x19mm"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "practical",
+    "9mm",
+    "civilian",
+    "accessible",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

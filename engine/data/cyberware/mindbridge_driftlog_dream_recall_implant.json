@@ -1,0 +1,58 @@
+{
+  "id": "a3f82c1d0e4b7a9f5c2e6d8b1a3f82c1",
+  "name": "MindBridge DriftLog Dream Recall Implant",
+  "brand_name": "MindBridge",
+  "product_name": "DriftLog",
+  "type": "cyberware",
+  "aliases": [
+    "the fishnet",
+    "dreamcatcher",
+    "drift chip",
+    "pillow log",
+    "night writer"
+  ],
+  "category": "cognitive",
+  "body_location": "cranial — temporal lobe adjacent, subdermal behind left ear",
+  "description": "The MindBridge DriftLog is a passive neural capture implant designed to intercept and encode the fragmentary hypnagogic and REM-stage neural signals that constitute dreaming. Rather than recording the visual cortex directly — a technically invasive and legally restricted process — the DriftLog operates at the limbic-temporal interface, sampling emotional valence, associative memory chains, and sensory echo patterns as they arise during sleep. These signals are compressed into proprietary DriftLog Sequence Files (.dsf), which are then rendered on waking into playback-ready experiential summaries using MindBridge's Resonance Reconstruction Engine. The result is not a perfect video replay of a dream but rather a vivid, emotionally accurate reconstruction — like a lucid memory of the dream rather than footage of it. Files are stored onboard in 14 days of rolling local cache and can be exported wirelessly to a paired personal device. The implant is entirely passive during waking hours and draws power from ambient bioelectric activity, requiring no external charging.\n\nThe DriftLog has become one of the most culturally embedded consumer implants in Meridian 88, particularly among Tier 2 and Tier 3 residents who treat their dream libraries the way earlier generations treated photo albums or social media feeds. Morning routines for millions of people now include a brief DriftLog review — skimming the night's reconstructions over coffee, tagging favorites, deleting the anxious ones. A robust secondary culture has emerged around dream sharing, with dedicated platforms where users upload anonymized .dsf files for others to experience. Artists use the DriftLog as a creative tool, mining their own subconscious for imagery and narrative. For people in emotionally demanding or cognitively intensive work — shift laborers, caregivers, students — it also serves a therapeutic function: being able to revisit and process emotionally charged dreams gives many users a sense of agency over their inner lives that was previously unavailable to anyone without expensive clinical neurofeedback. The DriftLog is not a medical device and carries no diagnostic claims, but its cultural footprint has quietly reshaped how people in Meridian 88 relate to sleep itself.",
+  "manufacturer": "MINDBRIDGE CONSUMER NEURAL SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or licensed pharmacy kiosk; 45-minute procedure under local anesthetic; no specialist required",
+  "rejection_risk": "Minimal",
+  "maintenance": "Annual firmware update via wireless sync; no battery replacement required; optional 3-year hardware recalibration recommended for signal fidelity",
+  "specifications": "{\"storage_capacity\": \"14-day rolling local cache (~420 sequence files)\", \"export_format\": \"MindBridge .dsf (DriftLog Sequence File)\", \"reconstruction_engine\": \"Resonance Reconstruction Engine v4.2\", \"capture_fidelity\": \"Emotional valence, associative chains, sensory echo — not direct visual cortex capture\", \"power_source\": \"Passive bioelectric harvest — no charging required\", \"wireless_export\": \"BLE 9.1 short-range to paired device\", \"active_hours\": \"Sleep-state only (automatic activation below 4Hz brainwave threshold)\", \"onboard_processor\": \"MindBridge Drift ASIC Mk3, 2.1mm x 1.4mm\", \"implant_dimensions\": \"6mm x 4mm x 1.8mm\", \"warranty\": \"5 years hardware, lifetime firmware support\"}",
+  "side_effects": [
+    "Vivid and unusually coherent dreams during the first two weeks of calibration — most users report this positively",
+    "Occasional mild pressure sensation behind the left ear during initial osseointegration, typically resolving within 10 days",
+    "Some users experience a brief 'echo' sensation upon waking — a fleeting overlap between dream state and waking perception lasting under 30 seconds",
+    "Rare cases of sleep-onset latency increase in the first month as the limbic system adjusts to passive monitoring"
+  ],
+  "cultural_context": "In Meridian 88, the DriftLog occupies a cultural space somewhere between a journal and a social media profile — deeply personal, occasionally public, and widely considered as unremarkable as owning a phone. On the Shelf, where privacy is scarce and interior life is one of the few things that belongs entirely to a person, the DriftLog carries particular emotional weight; many Tier 1 residents describe their dream library as the most private thing they own, and theft or unauthorized access to someone's .dsf files is treated as a serious violation — legally ambiguous but socially unforgivable. In Tier 3 and above, dream sharing has become a normalized social activity, with curated dream compilations exchanged between friends or posted to dedicated feed platforms. There is a modest stigma in some professional circles around sharing emotionally raw dream content, and corporate HR culture in Tier 4 has quietly discouraged employees from uploading dreams to public platforms — less out of any formal policy and more from a vague anxiety about what unguarded subconscious imagery might reveal about a person. Among artists, students, and the creatively inclined across all tiers, the DriftLog is practically a prerequisite — the idea of losing a dream before you can capture it is, to many, genuinely distressing.",
+  "known_users": [
+    "Students and young professionals using dream content for creative and academic projects",
+    "Shift workers and caregivers using nightly review as informal emotional processing",
+    "Amateur and professional artists mining subconscious imagery for work",
+    "Tier 1 residents who value the dream library as personal, private space",
+    "Dream-sharing community enthusiasts and hobbyist archivists",
+    "Parents who gift the implant to teenagers as a coming-of-age purchase"
+  ],
+  "story_hooks": [
+    "A character's DriftLog begins capturing not their own dreams but fragmented, emotionally charged sequences that don't match any memory they can identify — the content is eerily consistent night after night, and it appears to originate from someone else's limbic signature. Whether it's a hardware defect, a bleed-through from a nearby implant, or something deliberate, the answer is going to be uncomfortable.",
+    "A .dsf file uploaded anonymously to a public dream-sharing platform has gone quietly viral in certain underground communities — not because it's beautiful, but because it appears to contain reconstructed emotional impressions of an event that was officially declared not to have happened. Someone with a DriftLog was present, and their subconscious remembers.",
+    "A grief counselor in Tier 2 has built an unsanctioned practice around DriftLog files — helping clients process the dreams of deceased loved ones whose implant archives were preserved. The practice is legal in a narrow technical sense but ethically contested, and someone powerful wants it shut down before a particular dead person's dream library becomes evidence."
+  ],
+  "street_price": "Φ320–Φ480 depending on vendor and included storage tier",
+  "licensed_price": "Φ699 standard clinic rate; Φ849 with first-year premium firmware subscription",
+  "tags": [
+    "cyberware",
+    "cognitive",
+    "lifestyle",
+    "dream-capture",
+    "consumer",
+    "entertainment",
+    "sleep",
+    "memory-adjacent",
+    "mass-market"
+  ],
+  "parent_corponation": ""
+}

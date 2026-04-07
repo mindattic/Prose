@@ -1,0 +1,35 @@
+{
+  "name": "Crucible HeavyWorks Maintenance Jumpsuit",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "industrial_maintenance",
+  "manufacturer": "Crucible Industrial Apparel Division",
+  "description": "The HeavyWorks jumpsuit is what Crucible issues to the workers who keep the city's physical infrastructure running — furnace operators, crane riggers, pipeline maintenance crews, and the Tier 2 workforce that moves through Meridian 88's foundry districts and fabrication zones. The shell is a flame-retardant polyaramid composite reinforced at the knee, elbow, and shoulder with ceramic-fiber impact padding. The deep orange color is a Crucible standard, chosen for high-visibility in industrial environments, with retroreflective silver striping along the arms and legs. Integrated tool loops, magnetic clip points, and a sealed chest pocket rated for data-chip storage run along the torso and thighs. A self-cleaning nano-coating handles most surface contamination; the jumpsuit can be reset with a 30-second heat cycle using any standard industrial drying unit.\n\nThe HeavyWorks is built for bodies that have been modified in any direction. Reinforced rear seam allows for tail accommodation without structural compromise, and the hood is designed to sit clear of horn configurations up to 18 centimeters. Chrome arm augments fit cleanly through the articulated sleeve design, and the collar is cut low enough to avoid interference with common neck-port hardware. Crucible workers often personalize their jumpsuits heavily — patches, stitched names, local union insignia — and the company has an official policy of tolerating this as long as retroreflective markings remain unobscured. The jumpsuit is durable enough that some workers pass them down through families, three generations wearing the same shell with accumulated patches.",
+  "tier_availability": "Tier 1-2",
+  "price": "Φ95",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "extreme",
+  "legal_status": "legal",
+  "cultural_context": "The orange HeavyWorks is as much a working-class signifier as it is a safety garment. In Tier 1 and 2 districts, a worn and well-patched HeavyWorks is a mark of someone who has stayed employed long enough to earn that wear — a quiet status in communities where steady work is uncertain. The jumpsuit's durability means it outlasts the jobs that issued it, and ex-Crucible workers often continue wearing them long after leaving the company.",
+  "story_hooks": [
+    "A Crucible worker's jumpsuit data-chip pocket is found to contain encrypted files that weren't put there by the worker — someone is using maintenance staff as unwitting couriers through secure fabrication zones.",
+    "A union organizer is using the tradition of jumpsuit patches as a covert communication system, with specific patch combinations carrying coded messages across Crucible facilities.",
+    "An old HeavyWorks jumpsuit, three decades worn, is brought to a Shelf repair shop — the nano-coating has degraded to reveal a hidden layer of material beneath the shell that doesn't match any Crucible spec sheet."
+  ],
+  "tags": [
+    "industrial",
+    "crucible",
+    "maintenance",
+    "flame_retardant",
+    "high_visibility",
+    "geneware_compatible",
+    "aug_compatible",
+    "tier1",
+    "tier2",
+    "self_cleaning",
+    "union"
+  ],
+  "id": "135c171e573749fc94312fa18bf822bd",
+  "parent_corponation": "Crucible Genomics"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "5d1e8a3c7f042b96e3d7a1c508f2b3e9",
+  "name": "CHROMEWORKS FlexSheath Graphene Spine",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "CHROMEWORKS FlexSheath Graphene Spinal Sheath System",
+  "type": "cyberware",
+  "aliases": [
+    "Graphene Ghost",
+    "Silkspine",
+    "The Wrap"
+  ],
+  "category": "spine",
+  "body_location": "spine",
+  "description": "The FlexSheath is a continuous graphene-lattice sheath that encases the entire spinal column without replacing vertebrae, bonding to the periosteum via biocompatible nano-adhesive anchors. The lattice is engineered to absorb and redistribute impact energy across its full surface area, dramatically reducing force transmission to the cord during falls, collisions, and blunt trauma. A secondary piezoelectric layer harvests mechanical energy from movement and powers an embedded posture-correction AI that delivers micro-stimulation to paraspinal muscles to maintain optimal spinal alignment. The sheath flexes naturally with the spine, preserving full range of motion while adding measurable structural protection.\n\nThe FlexSheath is Chromeworks' answer to a market gap between clunky industrial replacements and doing nothing at all. It dominates the mid-to-upper professional market — architects, surgeons, athletes, and white-collar workers who spend long hours at screens and want both injury protection and the posture of someone who costs more per hour than you make in a week. The posture-correction feature has become a status signal in Spire boardrooms, where the quiet confidence of a FlexSheath user is recognizable to those in the know.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 3-5",
+  "legality": "Licensed",
+  "installation_requirements": "Minimally invasive laparoscopic procedure, 3-4 hours, orthopedic specialist, 1-week recovery",
+  "rejection_risk": "Low — nano-adhesive anchors are biocompatible and the sheath does not penetrate bone marrow; rejection events are rare but possible in patients with graphene hypersensitivity",
+  "maintenance": "Bi-annual posture AI recalibration, sheath integrity scan annually, piezoelectric node replacement every 5 years",
+  "specifications": "{\"material\": \"8-layer graphene lattice with polyurethane damping matrix\", \"coverage\": \"C1-S1 full column\", \"impact_absorption\": \"Up to 40kJ distributed\", \"posture_ai\": \"CHROMEWORKS PoseCore v4.2\", \"stimulation_nodes\": \"120 paraspinal contact points\", \"energy_harvest\": \"Piezoelectric, 0.8W average output\", \"flex_tolerance\": \"Full anatomical ROM preserved\", \"sheath_thickness\": \"2.1mm\", \"warranty\": \"10 years\"}",
+  "side_effects": [
+    "Initial 2-3 week adjustment period where posture correction feels uncomfortably 'forced'",
+    "Mild tingling in paraspinal muscles during AI correction cycles",
+    "Graphene lattice occasionally visible as faint geometric shadow under MRI — can confuse imaging technicians",
+    "Some users report feeling 'held' or claustrophobic during high-flex activities like yoga or martial arts"
+  ],
+  "cultural_context": "In Spire and upper-Canal tier social circles, the FlexSheath has quietly become a marker of serious professional investment in one's physical longevity. Wearing one signals you can afford both the implant and the surgeon, and that you expect to be productive for decades to come.",
+  "known_users": [
+    "Upper-tier professionals and executives, Canal and Spire",
+    "Professional athletes and performance competitors",
+    "Surgeons and precision-trade specialists protecting career-critical mobility",
+    "High-end security contractors wanting discreet protection",
+    "Wellness-obsessed Tier 4 social climbers"
+  ],
+  "story_hooks": [
+    "A Spire executive's FlexSheath posture AI has been remotely reprogrammed to induce chronic pain during specific stress responses — corporate sabotage disguised as a firmware glitch",
+    "The FlexSheath's piezoelectric harvest is generating slightly more power than it should, and a researcher suspects the graphene lattice is resonating with an external signal source of unknown origin",
+    "A knockoff FlexSheath is circulating on the Slab using substandard graphene that is slowly delaminating inside users' bodies"
+  ],
+  "street_price": "Φ22,000",
+  "licensed_price": "Φ48,000",
+  "tags": [
+    "cyberware",
+    "spine",
+    "graphene",
+    "impact-absorption",
+    "posture-correction",
+    "chromeworks",
+    "medical",
+    "tier3-5"
+  ],
+  "parent_corponation": ""
+}

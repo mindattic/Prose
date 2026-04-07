@@ -1,0 +1,34 @@
+{
+  "name": "Crucible Weld & Fab Supervisory Jacket",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "industrial_supervisory",
+  "manufacturer": "Verdure Garden Supply",
+  "description": "Crucible's floor supervisors wear this jacket as a mark of rank that separates them from the standard-issue maintenance jumpsuits of the line workers below them. Constructed from a flame-resistant aramid-cotton blend with a reflective Crucible anvil logo across the back in heat-resistant silver ink, the jacket is rated for incidental weld splash and short-duration heat exposure up to 400°C. The sleeves roll and secure at the elbow for close-quarters work, and the chest carries a row of magnetic tool clips that hold diagnostic tablets, torque drivers, and site-communication hardware. Color is Crucible's signature industrial orange over a graphite underlayer.\n\nThe jacket is built wide at the shoulders to fit the range of body types that come up through Crucible's apprenticeship tracks, including workers with significant upper-body chrome — reinforced seams at the shoulder accommodate most cybernetic arm attachment points, and the back panel is cut to allow tail-loop access for geneware-modified supervisors. It's not glamorous work wear, but it's built to last: most supervisors wear the same jacket for 5–8 years before it needs replacement, and the culture around Crucible sites means a battered jacket is a sign of experience, not neglect.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ185",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "extreme",
+  "legal_status": "legal",
+  "cultural_context": "On a Crucible site, the orange jacket is authority. Line workers know it, and Crucible site managers know that the jacket does half their management work for them. Workers who get promoted to supervisor sometimes feel the weight of putting it on for the first time — it changes how people look at you, and not always in ways you expected.",
+  "story_hooks": [
+    "A supervisor's jacket is found at a site where an industrial 'accident' killed three line workers. The jacket's tool clips still hold a diagnostic tablet with data someone wanted buried.",
+    "A longtime supervisor is quietly demoted and stripped of his orange jacket — the official reason is performance, but he knows it's because he filed a safety complaint.",
+    "Someone is counterfeiting Crucible supervisor jackets and using them to walk unchallenged through restricted manufacturing zones."
+  ],
+  "tags": [
+    "crucible",
+    "industrial",
+    "supervisor",
+    "flame-resistant",
+    "factory",
+    "augment-compatible",
+    "geneware-compatible",
+    "heavy-industry",
+    "tier2",
+    "manufacturing"
+  ],
+  "id": "9346708b81ee46e68fcf624a842a9ea0",
+  "parent_corponation": "Crucible Genomics"
+}

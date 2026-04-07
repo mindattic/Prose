@@ -1,0 +1,46 @@
+{
+  "id": "f4a0c8e2b6d3f1a9e7c5b2d0f8a4e6c3",
+  "name": "Nullweave Tier-4 Augment-Display Formal Suit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Where Tier 3 hides augmentation behind standard seams and Tier 5 renders it irrelevant through sheer tailoring, Tier 4 does something more interesting: it puts the chrome on display. The Nullweave aug-display formal suit is cut for the specialist who has earned their chrome and wants the boardroom to know it. The jacket is a slim double-breasted cut in Nullweave's signature light-absorbing matte black fabric — not true vantablack, but a deep structural dark that reads as a void against the office's fluorescent ambience. The left sleeve is constructed with a full open-channel system: a structured chrome-display cut that runs from shoulder to wrist, framing a mechanical arm or chrome forearm prosthetic with a border of matte black piping that makes the augmentation look intentional rather than accommodated. The right sleeve is standard. Trousers are the same matte black Nullweave fabric, slim through the thigh with a moderate break, and a single aug-channel seam along the outer right leg for a prosthetic limb or exo-brace. The shirt beneath is a Nullweave house poplin in deep charcoal — not white, a deliberate departure. A slim matte-black tie with a single diagonal line of micro-reflective thread. Footwear is Meridian Standard Chrome-Last boots in black, the chrome toe-cap polished to mirror finish — the only reflective surface in the ensemble, and clearly intentional. The BCI port at the temple is left uncovered, the port itself brushed steel.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "Nullweave matte structural fabric",
+    "chrome-display channel piping",
+    "charcoal poplin synthetic-cotton",
+    "micro-reflective tie thread",
+    "brushed steel BCI port surround"
+  ],
+  "functionality": "Full open-channel left sleeve display system for chrome arm augmentation, right leg aug-channel seam for prosthetic or exo-brace, uncovered BCI port with brushed steel cosmetic surround, anti-glare matte fabric reduces visual tracking by standard security systems, aug-channel magnetic closure for clean silhouette when chrome is absent",
+  "what_it_says": "You worked for the chrome and you're not going to put it in a sleeve. You are a specialist — your augmentation is proof of investment, expertise, and a history that the Tier 3 pool doesn't have. You wear the open channel as a credential. The matte black says you understand aesthetics. The chrome toe-cap says you understand contrast.",
+  "worn_by": [
+    "Tier 4 augmented specialists",
+    "senior tech integration consultants",
+    "chrome-arm surgeons attending administrative briefings",
+    "BCI architects in client-facing roles",
+    "anyone whose augmentation was paid for by their corponation and who considers that a point of pride"
+  ],
+  "manufacturer": "Nullweave Atelier — ready-to-wear with aug-channel customization fitting, 2-week lead time",
+  "price_range": "Φ 3,200–Φ 5,800 depending on aug-channel configuration",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The open-channel display system in the left sleeve is designed to frame chrome augmentation as an aesthetic choice — but it also means the augmentation is fully visible and scannable. A character wearing this suit walks into a meeting and realizes too late that someone in the room has a scanner that can read the serial number on their chrome arm, which traces back to a manufacturer that shouldn't exist.",
+    "The matte Nullweave fabric has a secondary property its marketing material doesn't mention: it absorbs and re-emits ambient BCI broadcast signals at a slight delay, creating a ghost presence in building sensor logs — the suit appears in the record two seconds after the wearer actually passed a checkpoint.",
+    "A Tier 3 character acquires this suit and wears it into a Tier 4 access zone. The aug-channel sleeve is empty — they have no chrome. A specialist in the elevator notices the empty channel, the uncovered BCI port, and the chrome-last boots, does a slow calculation, and says nothing. Whether that silence is mercy or something else becomes relevant in the next scene."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_4",
+    "aug_compatible",
+    "aug_display",
+    "nullweave",
+    "specialist",
+    "chrome_display",
+    "formal"
+  ],
+  "parent_corponation": ""
+}

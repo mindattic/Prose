@@ -1,0 +1,43 @@
+{
+  "id": "a3f7c2e1b09d4856f1a2c3d4e5f60718",
+  "name": "Ashwall Ironblood Claimant's Colors Jacket",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A heavy-canvas moto-cut jacket in oxidized burgundy, worn by members of the Ironblood Shelf gang network. Back panel features hand-embroidered territorial sigils in copper wire thread — specific stitch patterns denote block, rank, and kill-count by those who know how to read them. Front lapels bear heat-pressed patch clusters: faction crest, allied crew marks, and a narrow black stripe for each year of standing.\n\nCuffs are raw-cut and re-stitched with salvaged industrial webbing. Most jackets show deliberate acid-bleach scoring along the left shoulder — a ritual mark applied upon initiation. No two are identical; forgeries are spotted immediately by the asymmetry of authentic hand-work.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed heavy canvas",
+    "copper wire thread",
+    "salvaged industrial webbing",
+    "heat-press vinyl patch material",
+    "scrap leather collar trim"
+  ],
+  "functionality": "Reinforced canvas provides mild blunt-force protection. Interior pocket sewn for blade or compact tool. Aug-compatible left sleeve has snap-out panel for chrome arm clearance.",
+  "what_it_says": "I am claimed, I am known, and the Shelf knows exactly where I stand.",
+  "worn_by": [
+    "Ironblood gang members",
+    "Shelf territory enforcers",
+    "long-standing crew veterans"
+  ],
+  "manufacturer": "Self-made / collective crew craft",
+  "price_range": "Φ 0 (earned, not bought)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A runner finds a jacket with seven kill-stripes abandoned in a neutral zone — someone wants it found.",
+    "A Tier 3 fashion designer is caught selling 'authentic Ironblood aesthetic' knock-offs upstack; the crew wants a conversation.",
+    "A new arrival on the Shelf is offered a jacket with no patches yet — a blank slate invitation with strings attached."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "gang",
+    "shelf",
+    "tier-1",
+    "territorial",
+    "handmade",
+    "aug-compatible",
+    "subcultural"
+  ],
+  "parent_corponation": ""
+}

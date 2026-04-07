@@ -1,0 +1,34 @@
+{
+  "name": "Vantablack Signals Intelligence Analyst Suit",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "intelligence_corporate_wear",
+  "manufacturer": "Neural Feed Productions",
+  "description": "Vantablack's internal SIGINT analysts don't wear tactical gear — they wear this. A precisely cut two-piece suit in a deep charcoal so dark it reads as near-black under most lighting, constructed from a wool-silk blend woven with passive EM shielding thread that reduces the wearer's electronic emissions signature without requiring active counter-measure hardware. The jacket's lining contains a thin Faraday mesh layer that blocks short-range BCI interrogation — the kind of passive scanning common in Tier 4 and 5 lobbies. No logo, no branding. The only identifying mark is a small VB stamp on the interior collar tag, visible only when you know to look.\n\nThe suit is tailored to order for each analyst and replaced on a 12-month cycle regardless of condition — Vantablack considers the wear pattern on a suit to be identifying information. Augmentation accommodation is handled at the tailoring stage: port access panels, chrome shoulder clearance, and geneware adjustments are cut individually and documented only in the analyst's classified personnel file. Wearing this suit outside Vantablack business contexts is not prohibited, but analysts are quietly counseled against it. The suit has no public retail existence.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ780",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "In circles where people know what to look for, a suit this dark and this quiet marks its wearer immediately. Most people in Tier 4 and 5 spaces give Vantablack analysts a wide berth without being able to articulate exactly why. The suit is designed to make you unremarkable and unmistakable at the same time.",
+  "story_hooks": [
+    "A Vantablack analyst suit turns up at a Tier 2 secondhand dealer — it shouldn't exist outside of controlled disposal. Someone either defected or was killed without Vantablack's knowledge.",
+    "An analyst realizes her suit's Faraday lining is blocking not just external scans but also an internal tracker she was never told about.",
+    "A corporate espionage investigation hinges on surveillance footage where the primary suspect is wearing something that eats light and leaves almost no visual record."
+  ],
+  "tags": [
+    "vantablack",
+    "intelligence",
+    "suit",
+    "em-shielding",
+    "faraday",
+    "augment-compatible",
+    "geneware-compatible",
+    "tier4",
+    "sigint",
+    "covert"
+  ],
+  "id": "ba1ba2beec8e45c689639f952decabc5",
+  "parent_corponation": "Vantablack Media"
+}

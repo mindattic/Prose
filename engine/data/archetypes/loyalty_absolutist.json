@@ -1,0 +1,33 @@
+{
+  "id": "249f5b4fa852aa0537c97be18b72236a",
+  "name": "Loyalty Absolutist",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Right and wrong begin and end with their people",
+  "behavioral_signature": "Commits any act to protect those in their circle",
+  "under_stress": "Circle shrinks until only the innermost remain",
+  "at_rest": "Warm, devoted, fiercely protective",
+  "will_always": [
+    "choose their people over strangers"
+  ],
+  "will_never": [
+    "betray an ally for a principle"
+  ],
+  "unless": [
+    "the ally betrayed the circle first"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Loyal Dog",
+      "threshold": 0.85,
+      "context": "unwavering loyalty"
+    }
+  ],
+  "opposite_of": [
+    "Utilitarian"
+  ],
+  "tags": [
+    "tribal",
+    "devoted"
+  ]
+}

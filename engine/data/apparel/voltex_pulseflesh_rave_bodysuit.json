@@ -1,0 +1,43 @@
+{
+  "id": "7b1d3e9f2a0c5847d6e8f9a1b2c30d4e",
+  "name": "Voltex // PulseFlesh Rave Bodysuit",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A second-skin suit in matte black synthmesh threaded with 4,000 micro-LED filaments that respond to ambient bass frequencies — blooming outward from the sternum in magenta and electric teal at low register, spiking white at drop peaks. The suit reads the wearer's BCI stress signals and shifts color temperature accordingly: calm is deep violet, excitement is white-gold cascade. Seams are invisible except at the aug-access panels along the spine and both forearms.\n\nThe hood is optional, attached by magnetic snap, and carries a secondary reactive layer that haloes the face in diffused light. Manufactured by Voltex, a Circuit-based street label with a cult following in underground rave circuits.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "synthmesh base layer",
+    "micro-LED filament thread",
+    "BCI-reactive signal fabric",
+    "magnetic-snap hood attachment",
+    "aug-panel flex polymer"
+  ],
+  "functionality": "Sound-reactive LED system runs on a 14-hour charge via inductive skin-contact cell. BCI port at the base of the skull allows mood-linked color override. Aug panels unzip magnetically for chrome access without breaking the visual line.",
+  "what_it_says": "The wearer lives for the drop and has the hardware to prove it.",
+  "worn_by": [
+    "underground rave regulars",
+    "club circuit performers",
+    "BCI-art enthusiasts",
+    "off-shift factory workers spending everything on one night"
+  ],
+  "manufacturer": "Voltex (Circuit street label)",
+  "price_range": "Φ 340 – Φ 580",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Voltex suit at a crime scene is still reacting to the victim's last recorded BCI emotional state — frozen on terror.",
+    "Someone has modded their suit to broadcast a pirate signal through the LED array, hiding messages in the light patterns.",
+    "The rave venue where these suits are common is actually a front for a corponation data harvest operation."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "rave",
+    "club",
+    "led",
+    "bci-reactive",
+    "underground",
+    "street-label"
+  ],
+  "parent_corponation": ""
+}

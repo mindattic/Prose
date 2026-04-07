@@ -1,0 +1,50 @@
+{
+  "id": "0082378bf1c3906cecaecc7fc1812dcd",
+  "name": "Street Custom 'Cigarette' Pen Gun",
+  "type": "weapon",
+  "aliases": [
+    "Cigarette",
+    "Smoke Break",
+    "Last Drag",
+    "Filter Tip"
+  ],
+  "category": "improvised firearm",
+  "description": "A single-shot .22 short firearm built into a metal cigarette case, with the barrel disguised as a cigarette extending from the case's opening and the firing mechanism hidden beneath a false bottom. The operator opens the case, removes the 'cigarette,' holds it to their lips as if preparing to smoke, and presses a concealed button that fires the round. The entire sequence mimics the universal gesture of lighting a cigarette — reaching into a pocket, opening a case, raising something to your mouth — making the weapon deployment invisible in any environment where smoking is common.\n\nThe Cigarette is a Shelf masterpiece of social camouflage. It exploits the fact that a person holding something to their face while fumbling with a small case looks like every other smoker in Meridian 88. The weapon's effective range is measured in inches — the .22 short round from a 30mm barrel has barely enough energy to penetrate skin at 2 meters — but the weapon isn't designed for range. It is designed for the moment when you're standing next to someone, pretending to smoke, and you press the barrel against their body under the guise of a casual gesture.\n\nProduction quality ranges from elegant to crude. The best Cigarettes are machined from actual cigarette cases with precision barrel inserts and reliable spring-loaded firing pins. The worst are hammered together from tin and hope. All of them share the same terrifying characteristic: they look like nothing, carried by millions of people, performing a gesture that no one questions.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Illegal — disguised firearm",
+  "street_price": "Φ50-200",
+  "base_technologies": [
+    "Cigarette case concealment",
+    "Social camouflage deployment",
+    "Miniaturized .22 firing mechanism"
+  ],
+  "specifications": "caliber: .22 Short\ncapacity: 1 round\neffective range: Contact to 1 meter\nbarrel length: 30mm\nweight: 80-120g\nform factor: Metal cigarette case with protruding 'cigarette' barrel",
+  "tactical_use": "Contact-range assassination disguised as a common social gesture. The Cigarette exploits smoking behavior as cover for weapon deployment. Effective only at extreme close range against unaware targets.",
+  "cultural_context": "The Cigarette is the most intimate weapon in the Shelf's arsenal — it requires you to stand next to your target, mimic a casual gesture, and fire from inches away. Building one is an act of premeditation. Carrying one means you've identified someone specific, in a specific place, at a specific time. It is not a weapon of opportunity. It is a weapon of intent.",
+  "known_users": [
+    "Shelf assassination specialists",
+    "Individuals with specific, premeditated targets",
+    "Anyone who smokes and harbors grudges"
+  ],
+  "story_hooks": [
+    "A security camera captured the exact moment a Cigarette was fired — the operator leaning toward the target as if asking for a light, the small flash, the target staggering. The footage shows the killer's face clearly. Nobody recognizes them. They were never seen before the killing and have never been seen since.",
+    "A Shelf craftsman has been producing Cigarettes with a secondary function — the case contains a genuine cigarette lighter, and the weapon can actually light a cigarette using the barrel flash. The dual-use design makes the weapon pass any functional test: it looks like a lighter, it works like a lighter, and it also kills people."
+  ],
+  "ammunition_type": [
+    "22_short"
+  ],
+  "tags": [
+    "improvised",
+    "weapon",
+    "concealed",
+    "disguised",
+    "cigarette",
+    "shelf",
+    "street",
+    "assassination",
+    "tier 1",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

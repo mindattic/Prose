@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "The Acoustic Marrow Shear Rifle operates on a principle of targeted endoskeletal resonance: it generates a highly focused ultrasonic beam tuned to the specific resonant frequency of cortical bone, which — when sustained for more than 0.4 seconds on a single point — induces shear fractures propagating outward from the beam's entry point through the target's skeletal structure. The AMSR-6 does not break bones by impact; it teaches bones to break themselves. The beam passes through soft tissue with minimal interaction, causing no surface wound, no visible entry point, no blood. The damage is entirely internal, distributed along stress lines that the resonance calculates in real time through a return-echo analysis system built into the barrel.\n\nRINGO CORPONATION developed the AMSR-6 under a research grant nominally aimed at non-invasive orthopedic correction technology. The weaponization of the platform was, according to public records, an unforeseen application. Internal documents that surfaced during a RINGO lawsuit tell a different story. The AMSR-6's return-echo analysis — which maps a target's skeletal structure before inducing shear — gives the weapon an unusual precision: operators can select which bones to fracture, at what severity, and in what sequence. Field manuals for licensed users include targeting protocols with names like 'immobilize,' 'incapacitate,' and 'structural cascade,' the last of which involves inducing simultaneous fractures across load-bearing skeletal points.\n\nThe weapon's street name 'Tutor' comes from the way victims describe surviving a partial engagement: 'It taught me something about my own body I didn't want to know.' The AMSR-6 is long-barreled, requiring a bipod for stable operation, and its discharge is below the threshold of human hearing — operators sometimes describe it as 'the loudest silent thing they've ever used,' because the moment of discharge is marked only by the target's reaction. At distance, victims appear to simply crumple. There is no muzzle flash. There is no sound.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Ringo Data Services",
   "tier_availability": "Tier 4+; black market availability is growing",
   "legality": "Restricted — classified as a precision incapacitation system; 'structural cascade' targeting protocol prohibited under Meridian 88 Humane Engagement Code",
   "base_technologies": [
@@ -50,6 +50,8 @@
     "doctor",
     "market",
     "bar",
-    "tier 4"
-  ]
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

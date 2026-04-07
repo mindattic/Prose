@@ -1,0 +1,48 @@
+{
+  "id": "e5b3d9c1a7f4e2b0d8c6a1e9b4d7f3c5",
+  "name": "Solberg-Maru Electrical Systems Crew Day Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Solberg-Maru's electrical infrastructure crews are among the most aug-heavy workforces in the Circuit tier — chrome arms and neural-linked diagnostic ports are practically standard issue after three years on the job. This rig is designed around that reality. The primary garment is a flame-resistant work shirt in slate blue, rated for arc-flash exposure, with Solberg-Maru's double-helix-and-bolt logo embroidered in silver on the right chest and the worker's name patch in white on the left. The shirt has aug-accommodation construction along both sleeves: the inner seam runs on a magnetic-snap track that opens fully from shoulder to cuff, allowing a chrome arm to clear without the shirt being removed. A voltage-rated insulated over-vest in charcoal goes over the shirt — padded chest and back panels, flat front zip, and a broad rear pocket that accommodates a personal arc-flash shield in rolled form. The trousers are Fenmark ToughSeam-style in slate blue to match, with built-in knee pads, multiple tool pockets, and a reinforced gusset. Boots are Penrose Weld-style: broad-toe, steel-cap, dielectric-rated, with a side-zip for speed. A hard hat in Solberg-Maru yellow clips to the vest's back ring when not worn, and a pair of voltage-rated gauntlet gloves hang from a D-ring on the left hip. The ensemble is completed by a slim-profile BCI port cover in matte black — a snap-on shield that protects the worker's neural port from electrical field interference on high-voltage sites.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "arc-flash rated flame-resistant synth-cotton",
+    "voltage-rated insulated polyweave",
+    "slate blue cargo twill",
+    "dielectric-rated steel-toe leather-analog",
+    "magnetic-snap aug seam track",
+    "BCI port shield composite"
+  ],
+  "functionality": "Arc-flash rated flame-resistant shell, magnetic-snap aug-accommodation sleeve seams for chrome arm clearance, voltage-rated insulated over-vest with arc shield storage, dielectric-rated steel-toe boots, BCI port interference shield for high-voltage environments, tool pockets, knee pads",
+  "what_it_says": "The magnetic-snap sleeve seams say everything about who this outfit is made for: half the crew running live circuits through the district's infrastructure corridor is running chrome. Solberg-Maru built the accommodation into the uniform because it was cheaper than losing workers who couldn't get their sleeves off fast enough in an emergency. The BCI port cover is the detail that marks a veteran — newcomers forget it until the first time a high-voltage proximity alarm fires through their neural link.",
+  "worn_by": [
+    "Solberg-Maru electrical infrastructure crew",
+    "high-voltage maintenance technicians",
+    "power grid workers",
+    "augmented industrial electricians"
+  ],
+  "manufacturer": "Solberg-Maru Infrastructure Division (shirt, vest, hard hat), Penrose Workwear (boots), Fenmark (trousers)",
+  "price_range": "Φ320–Φ440 (company-subsidized; worker contributes Φ80–Φ120 for aug-specific components)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Solberg-Maru electrician's BCI port cover has been modified to include a passive signal recorder — someone on the crew has been harvesting electromagnetic data from high-security grid nodes without understanding what the data is worth.",
+    "The magnetic-snap sleeve seam on a veteran worker's shirt has been re-sewn in a different thread color — the original seam was cut during an incident the company's incident report describes very differently than the worker does.",
+    "A new crew member is issued a shirt with someone else's name patch still attached beneath a fresh one — the previous owner's last shift log is still accessible through the shirt's embedded RFID work-tracker."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "electrical",
+    "infrastructure",
+    "solberg_maru",
+    "aug_compatible",
+    "arc_flash_rated",
+    "high_voltage",
+    "bci_compatible",
+    "company_issued"
+  ],
+  "parent_corponation": ""
+}

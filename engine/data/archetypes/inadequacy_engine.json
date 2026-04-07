@@ -1,0 +1,33 @@
+{
+  "id": "982a402784ffa1903fe8214af29ada52",
+  "name": "Inadequacy Engine",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Never good enough, no matter what the evidence says",
+  "behavioral_signature": "Drives themselves relentlessly trying to compensate for a perceived deficit",
+  "under_stress": "Works harder, not smarter, until they burn out",
+  "at_rest": "Compares themselves unfavorably to everyone around them",
+  "will_always": [
+    "push to improve, regardless of current competence"
+  ],
+  "will_never": [
+    "accept they've done enough"
+  ],
+  "unless": [
+    "complete physical or mental collapse forces a stop"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Imposter",
+      "threshold": 0.8,
+      "context": "never enough"
+    }
+  ],
+  "opposite_of": [
+    "Stoic"
+  ],
+  "tags": [
+    "driven",
+    "self-critical"
+  ]
+}

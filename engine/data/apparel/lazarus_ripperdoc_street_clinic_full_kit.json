@@ -1,0 +1,46 @@
+{
+  "id": "7d1e5a9c3b2f0847e6d1a5c9f3b20847",
+  "name": "Lazarus RipperDoc Street Clinic Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The street ripperdoc's working uniform: a collarless surgical tunic in blood-resistant black neoprene, reinforced at the cuffs and chest with sealed syntex panels that wipe clean between procedures. Over it, a short open coat in pale graphite with deep external pockets sized for hand tools and neural probes. Integrated forearm channels allow the wearer's own chrome or aug hardware to operate unimpeded. Pants are flat-front, dark charcoal, with sealed inner-thigh pockets for sterile instrument pouches.\n\nFootwear is a closed-toe clog in antimicrobial molded resin — easy to sanitize, slip-resistant on wet floors. A low filter hood with respirator snap-points completes the look. No branding. Bought in pieces, assembled by the doc herself.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "blood-resistant neoprene",
+    "sealed syntex panels",
+    "graphite poly-blend coat fabric",
+    "antimicrobial molded resin clogs",
+    "sterile-pocket nylon lining",
+    "charcoal stretch twill"
+  ],
+  "functionality": "Full fluid-resistance on tunic and coat, forearm aug channels for operating surgeons with chrome, sealed sterile pockets, slip-resistant footwear, respirator-compatible hood attachment points.",
+  "what_it_says": "I fix what the licensed clinics won't touch, and I don't ask where you got the damage.",
+  "worn_by": [
+    "street ripperdocs",
+    "unlicensed augmentation surgeons",
+    "Shelf trauma medics",
+    "underground gene-splice technicians"
+  ],
+  "manufacturer": "Lazarus (street label, self-assembled)",
+  "price_range": "Φ180 – Φ600 (assembled piecemeal)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The doc's coat has a hidden inner pocket containing a folded corponation medical license — revoked, but laminated and kept.",
+    "A patient who died on the table left a data chip sewn into the lining; the doc hasn't looked at it yet.",
+    "CorpSec has started photographing anyone wearing this specific coat configuration in the Shelf district."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical",
+    "street_clinic",
+    "ripperdoc",
+    "aug_compatible",
+    "gene_compatible",
+    "tier1",
+    "tier2",
+    "gap_outfit"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

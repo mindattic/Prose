@@ -1,0 +1,34 @@
+{
+  "id": "6d5ea34c314b6060b4b5b72fc3a8102f",
+  "name": "Manic",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Cycles through intense highs of energy, creativity, and recklessness",
+  "behavioral_signature": "Talks fast, sleeps never, starts twelve projects at once",
+  "under_stress": "Mania intensifies until judgment evaporates completely",
+  "at_rest": "Buzzing with ideas, restless, electric",
+  "will_always": [
+    "have more energy than sense"
+  ],
+  "will_never": [
+    "sit still when an idea hits"
+  ],
+  "unless": [
+    "the crash comes and they can't move at all"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Creative Dreamer",
+      "threshold": 0.65,
+      "context": "creative energy"
+    }
+  ],
+  "opposite_of": [
+    "Numb"
+  ],
+  "tags": [
+    "energy",
+    "mania",
+    "recklessness"
+  ]
+}

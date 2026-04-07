@@ -1,0 +1,47 @@
+{
+  "id": "7b2d9e4f1c8a053e6d7f2b4c9a1e8d30",
+  "name": "Vanthorpe Analyst's Quiet Distinction Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A Tier 4 specialist's daily armor — the suit that says 'I earn more than you think but I'm not stupid enough to show it.' The jacket is a single-breasted two-button cut in Vanthorpe's 'Selvedge Coolweave' — a structured synth-wool blend with a faint herringbone texture visible only in direct light, in a color called 'graphite dusk' that reads as charcoal in fluorescent office lighting and almost navy near windows. The lapels are slightly wider than the Tier 3 standard issue, a meaningful signal in corporate fashion. Interior pockets are aug-compatible with a reinforced chrome-arm channel sewn along the left sleeve lining, factory-finished with clean bias binding. The dress shirt beneath is a Vanthorpe Coolweave Dress Shirt in pale sand, with a proper spread collar and genuine button closures — no magnetic shortcuts. Trousers are the matching Selvedge Coolweave in graphite dusk, with a proper full break and a discreet side-adjusting waistband that accommodates the slight postural shifts of a spinal rig without bunching.\n\nFootwear is a Fenwick Monk-Strap in cognac leather-analog, polished to a shine that required deliberate effort. A slim brushed-titanium watch on the left wrist — not a smart device, pointedly analog — and a single dark-metal ring on the right hand. No lanyard. The badge is kept in a slim cardholder in the breast pocket, produced only when necessary. The whole ensemble costs roughly eight times what a comparable Tier 3 set costs, and looks approximately twice as good — the gap in visible quality deliberately understated. This person knows the rules well enough to bend them without breaking them.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "Vanthorpe Selvedge Coolweave synth-wool blend",
+    "reinforced chrome-arm channel lining",
+    "bias binding",
+    "pale sand broadcloth",
+    "leather-analog monk-strap upper",
+    "brushed titanium"
+  ],
+  "functionality": "Chrome-arm channel in left sleeve lining for aug-compatible wear. Spinal rig accommodation in waistband. Coolweave fabric actively wicks heat from BCI hardware. Cardholder breast pocket with RFID-blocking lining. Posture-neutral cut that doesn't bind at the shoulders for workers with upper-back spinal augmentation.",
+  "what_it_says": "Controlled ambition. This person has made it past the cubicle floor and wants everyone to know it without being obvious about wanting everyone to know it. The cognac monk-strap is the tell — it's a choice, not a default. They have opinions about clothes and enough income to act on them within the bounds of what's acceptable.",
+  "worn_by": [
+    "Tier 4 senior analysts",
+    "data architecture specialists",
+    "mid-level project leads",
+    "corponation legal clerks",
+    "skilled technical consultants on client-facing days"
+  ],
+  "manufacturer": "Vanthorpe & Associates (mid-tier corponation fashion label)",
+  "price_range": "Φ 1,400–Φ 2,100",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Tier 3 worker notices the herringbone texture on this jacket and realizes their coworker has been quietly promoted — the promotion was never announced, and the suit is the only evidence.",
+    "The RFID-blocking cardholder causes a security scanner to flag the wearer at a restricted floor checkpoint, forcing an awkward interaction with CorpSec that reveals the wearer shouldn't have been trying to access that floor at all.",
+    "A Tier 5 executive compliments the monk-straps in a meeting — a small gesture that the wearer replays for weeks, unsure whether it was genuine or a test."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_4",
+    "specialist",
+    "aug_compatible",
+    "vanthorpe",
+    "rule_bender",
+    "selvedge",
+    "analyst"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,34 @@
+{
+  "id": "4149a8f2e0bc885d25c1472cdba3412f",
+  "name": "Golden Handcuffs",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Trapped in a job they hate by compensation they can't replicate elsewhere",
+  "behavioral_signature": "Complains about everything but never leaves",
+  "under_stress": "Fantasizes about quitting but calculates the cost and stays",
+  "at_rest": "Bitter, comfortable, stuck",
+  "will_always": [
+    "calculate the financial cost of freedom"
+  ],
+  "will_never": [
+    "take a pay cut for happiness"
+  ],
+  "unless": [
+    "the psychological cost finally exceeds the financial benefit"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Dead Weight",
+      "threshold": 0.6,
+      "context": "trapped in place"
+    }
+  ],
+  "opposite_of": [
+    "Nomad"
+  ],
+  "tags": [
+    "trapped",
+    "compensation",
+    "inertia"
+  ]
+}

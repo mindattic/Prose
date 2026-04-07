@@ -1,0 +1,57 @@
+{
+  "id": "2d8a4f0e6c1b937d5e3f7a2c9b4d6e08",
+  "name": "PulsePoint AuraGland Pheromone Synthesis Node",
+  "brand_name": "PulsePoint",
+  "product_name": "AuraGland",
+  "type": "cyberware",
+  "aliases": [
+    "the gland",
+    "scent chip",
+    "pheremone tap",
+    "aura",
+    "the hook",
+    "personal cloud"
+  ],
+  "category": "cosmetic",
+  "body_location": "subdermal bilateral axillary (underarm) with optional secondary nodes at wrists and neck",
+  "description": "AuraGland is a synthetic pheromone production and distribution implant consisting of small bio-fabricated gland nodes implanted in the axillary region, with optional supplementary nodes at the pulse points. Each node contains a programmable biochemical synthesis chamber capable of producing a curated library of scent compounds and bioactive pheromone analogs — molecules that interact with human olfactory and vomeronasal receptors to produce subtle but measurable effects on social perception, mood, and interpersonal comfort. The base library includes over two hundred distinct compound blends ranging from 'professional confidence' profiles to romantic attractant blends to calming social neutralizers. Users select and schedule their profile through a companion app, and the nodes synthesize and release the chosen compounds continuously at low levels throughout the day. The system also includes a 'signature scent' mode in which the user's own biological scent signature is analyzed and a custom complementary compound is synthesized — effectively creating a personalized fragrance that is uniquely theirs and impossible to bottle.\n\nAuraGland sits at the intersection of the perfume industry, the wellness market, and social enhancement cyberware, and it has effectively replaced traditional fragrance for a large portion of the population. The practical advantages are significant: the scent is always perfectly calibrated, never too strong, never faded by midday, and always appropriate to the situation because the user can switch profiles in real time. Beyond pure aesthetics, many users report that running a 'calm' profile during high-stress work situations produces measurable reductions in interpersonal conflict, and that using a 'warmth' profile at social events helps them feel more at ease. PulsePoint is careful to market the pheromone analog effects as subtle and mood-adjacent rather than making direct claims about behavioral influence, as the latter would trigger a different regulatory category. On the Shelf, AuraGland is popular as an affordable luxury — the node hardware is cheap, and the compound library subscription is tiered to be accessible.",
+  "manufacturer": "PULSEPOINT WELLNESS TECHNOLOGIES",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or PulsePoint kiosk installation; bilateral axillary nodes take approximately 30 minutes under local anesthetic; wrist and neck nodes can be added at any time as outpatient add-ons",
+  "rejection_risk": "Minimal",
+  "maintenance": "Monthly compound cartridge replacement (cartridges available at pharmacies and PulsePoint retail locations); annual node checkup; firmware updates pushed wirelessly",
+  "specifications": "{\"node_locations\": [\"bilateral axillary (standard)\", \"wrist pulse points (optional)\", \"neck (optional)\"], \"compound_library\": \"200+ base blends, expandable via subscription\", \"release_mechanism\": \"continuous micro-dosing with app-controlled intensity\", \"profile_switching\": \"real-time via companion app or blink sequence\", \"signature_scent_mode\": \"personalized biological analysis + complementary synthesis\", \"cartridge_interval\": \"30-day standard use\", \"power_source\": \"bioelectric ambient draw\"}",
+  "side_effects": [
+    "Mild skin irritation at node sites during first week post-installation",
+    "Occasional compound bleed between profiles during rapid switching — brief scent mixing lasting 10-15 minutes",
+    "Some users report heightened sensitivity to others' natural scents post-installation",
+    "Rare allergic response to specific compound families in the library, typically identified during calibration and excluded from user profile"
+  ],
+  "cultural_context": "AuraGland has generated more philosophical and ethical debate than almost any other lifestyle implant on the market, primarily because the pheromone analog component blurs the line between self-expression and social influence. Critics argue that running an attractant profile without disclosure is a form of manipulation; proponents counter that wearing perfume was never considered an ethical violation and this is no different. Meridian 88 has no laws governing pheromone analog use in social contexts, though a handful of corporate employers have added AuraGland profile disclosure to their workplace conduct policies with mixed legal success. In practice, most users treat their AuraGland profiles the way previous generations treated cologne — a personal choice, not a declaration. The 'signature scent' mode has spawned a small but passionate community of users who share their personalized profiles, which has created the strange phenomenon of scent piracy: bootleg synthesis cartridges formulated to replicate another person's unique signature. On the Shelf, AuraGland is sometimes called 'the great equalizer' because a good scent profile costs the same whether you live in a cramped shared unit or a mid-tier apartment.",
+  "known_users": [
+    "Young adults who have replaced traditional fragrance entirely with the implant",
+    "Sales professionals, hospitality workers, and anyone whose work involves sustained close social interaction",
+    "People with anxiety disorders who use calming profiles as a low-level therapeutic tool",
+    "Shelf residents for whom the implant represents an affordable form of self-presentation luxury",
+    "Older users who find traditional fragrances trigger migraines or allergies and prefer the precision control of AuraGland"
+  ],
+  "story_hooks": [
+    "A high-profile negotiation between two corponations collapsed under strange circumstances, and analysis of the room's atmospheric sensors shows that one party's delegation was running an undisclosed AuraGland profile known to induce mild cognitive compliance — proving it is another matter entirely",
+    "A bootleg compound cartridge circulating on the Shelf is synthesizing a pheromone analog that nobody in the library recognizes — it produces a strong sensation of trust and familiarity in anyone nearby, and whoever designed it has a very specific target in mind",
+    "A PulsePoint compound library update has quietly removed a dozen popular profiles that turn out to have been flagged by a Tier 5 client who holds a patent on the specific molecular structures involved — and the users who loved those profiles are furious enough to organize"
+  ],
+  "street_price": "Ψ95 (hardware, bilateral axillary) + Ψ18/month compound subscription",
+  "licensed_price": "Ψ210 (hardware) + Ψ35/month compound subscription at authorized PulsePoint wellness locations",
+  "tags": [
+    "cyberware",
+    "cosmetic",
+    "lifestyle",
+    "pheromone",
+    "scent",
+    "social",
+    "mass market",
+    "subdermal"
+  ],
+  "parent_corponation": ""
+}

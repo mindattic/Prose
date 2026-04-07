@@ -1,0 +1,47 @@
+{
+  "id": "a3f7c2e1b09d4856fae3c71209d8b540",
+  "name": "Duskframe Crowd-Walker Operative Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A deceptively ordinary-looking ensemble built for runners who need to vanish into Tier 2-3 foot traffic. The centerpiece is a reversible field jacket in dusty slate on one side and oil-stained rust-brown on the other — both sides treated with scatter-weave scanner-resistant fiber panels sewn into the lining, making it opaque to standard port and transit body scanners. The jacket's interior is a maze of flat holster channels, zippered tool sleeves, and a reinforced spine channel that routes aug-power cabling from a hip-mount battery pack to shoulder-level chrome. Collar is slightly raised, hiding a folded balaclava that deploys in seconds. Underneath sits a dark teal compression shirt with embedded comm-wire loops at the collar and reinforced left-side panels where a subdermal rig typically presses. Bottoms are a pair of deep charcoal straight-leg trousers with double-layer knee panels and two concealed thigh-pockets sewn flush against the inseam — invisible when standing, accessible with one hand. Footwear is a low-profile slate-grey street boot with silent-tread soles and a magnetic ankle clip that releases a folded ankle holster. A worn canvas tote bag completes the look — utterly forgettable, internally lined with signal-dampening mesh.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "scatter-weave scanner-resistant polyfiber",
+    "recycled ripstop nylon",
+    "compression-knit synth-cotton",
+    "double-layer canvas",
+    "signal-dampening mesh lining",
+    "silent-tread vulcanized rubber"
+  ],
+  "functionality": "Reversible jacket for quick identity shift, scanner-resistant panels in jacket and bag, interior holster channels and tool sleeves, aug-power routing spine channel, comm-wire loops at collar, concealed thigh and ankle holsters, silent-tread soles",
+  "what_it_says": "This is someone who has spent years perfecting the art of looking unremarkable. The wear patterns are calculated — scuffs where a transit worker would have them, the tote bag that reads as a lunch haul. Anyone who knows the trade recognizes the jacket's slightly stiff shoulders for what they are. Everyone else sees a shift worker heading home.",
+  "worn_by": [
+    "mid-tier runners who specialize in social infiltration",
+    "couriers moving sensitive packages through checkpoints",
+    "fixers who need to move between neighborhoods without burning their cover",
+    "ex-CorpSec who went independent"
+  ],
+  "manufacturer": "Ashgrain Collective — street label, Circuit District, unlicensed",
+  "price_range": "Φ 420–Φ 680",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A runner in this outfit is stopped at a Kelvex transit checkpoint — the scanner clears them, but a sharp-eyed platform officer notices the jacket's collar is slightly too stiff and the tote bag sits oddly flat. Does the runner talk their way through or burn the exit route?",
+    "The rust-brown side of the jacket was last worn during a job that went badly. Someone in the right circles recognizes the specific patchwork repair on the left sleeve — and that person shouldn't be alive.",
+    "A client insists on a meeting in a Tier 3 corporate atrium where the dress code is enforced by facial-recognition doors. The charcoal trousers pass, but the jacket's scanner resistance trips an anomaly flag in the building's security AI."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier_2",
+    "tier_3",
+    "reversible",
+    "scanner_resistant",
+    "crowd_blend",
+    "holster_integrated",
+    "aug_compatible",
+    "quick_change"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,53 @@
+{
+  "name": "TESSERA Widow Mk. III",
+  "type": "automaton",
+  "classification": "Spider Platform — Area Denial",
+  "aliases": [
+    "Widow",
+    "Glass Spider",
+    "The Patience"
+  ],
+  "manufacturer": "TESSERA",
+  "description": "The Widow Mk. III is TESSERA's contribution to the spider-platform arms race — a four-legged area denial automaton that doesn't chase targets but waits for them. The unit deploys to a designated location, anchors itself to the ceiling or wall using adhesive pads and mechanical clamps, then enters a dormant state that can last weeks. When its sensor suite detects unauthorized movement within its kill zone, it activates with zero warm-up time, dispensing a burst of monofilament wire from spinnerets mounted beneath its chassis. The wire, thinner than human hair and strong enough to sever unaugmented limbs, creates an instantaneous web across corridors and doorways.\n\nThe Widow's genius — and horror — is its patience. Unlike aggressive pursuit platforms, it imposes no energy cost on the deploying force. It simply waits, consuming negligible power in dormant mode, until something enters its space. TESSERA markets it as a 'persistent denial asset,' which is corporate language for a machine that turns rooms into death traps indefinitely. Recovery teams entering areas where Widows have been deployed must sweep every surface above eye level before proceeding.\n\nThe Mk. III variant added a secondary capability that has drawn particular condemnation: acoustic luring. The unit can replay recorded human vocalizations — distress calls, crying, calls for help — to draw targets into its engagement zone. TESSERA's documentation describes this as 'target vectoring through acoustic stimulus.' Everyone else calls it bait.",
+  "tier_availability": "Tier 5",
+  "legality": "Prohibited — classified as indiscriminate weapon under Meridian Accords",
+  "autonomy_level": "Fully autonomous — no operator required after deployment",
+  "dimensions": "1.4m leg span when deployed, 0.3m body profile when dormant",
+  "weight": "22 kg",
+  "power_source": "Solid-state battery, 6-month dormant endurance, 4-hour active",
+  "locomotion": "Quadruped with adhesive pads and mechanical anchors",
+  "armament": [
+    "Monofilament wire dispensers (8 spinnerets, 200m total wire capacity)",
+    "Acoustic lure system"
+  ],
+  "sensors": [
+    "Passive infrared detection",
+    "Air displacement sensors",
+    "Ground vibration pickups"
+  ],
+  "countermeasures": "Thermal scanning reveals dormant units against ambient temperature. Monofilament wire is visible under UV light. Acoustic lures can be identified by spectral analysis showing recording artifacts.",
+  "known_deployments": [
+    "TESSERA facility denial operations",
+    "Black market units recovered in Shelf district",
+    "Unconfirmed use in corporate assassination operations"
+  ],
+  "story_hooks": [
+    "Someone has been seeding Widows throughout the Underworld tunnel network. Not TESSERA — the serial numbers are filed off. Whoever is doing this has access to military hardware and wants the tunnels closed to everyone.",
+    "A child in the Shelf followed a crying sound into a condemned building. They survived, barely. The Widow that almost killed them was broadcasting a recording of their mother's voice. How did it get that recording?"
+  ],
+  "cultural_context": "The Widow is perhaps the most hated automaton in Meridian 88. Its use of acoustic lures — particularly recordings of children and injured people — has made it a focal point for anti-automaton advocacy groups. The phrase 'Don't follow the crying' has entered Shelf survival vocabulary.",
+  "tags": [
+    "automaton",
+    "spider",
+    "area denial",
+    "monofilament",
+    "weapon",
+    "war",
+    "tessera",
+    "corporate",
+    "violence",
+    "tier 5"
+  ],
+  "id": "573203c8022bce3964d4419b2f6525ba",
+  "parent_corponation": "Tessera Corponation"
+}

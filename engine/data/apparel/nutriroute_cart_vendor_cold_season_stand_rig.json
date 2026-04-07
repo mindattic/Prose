@@ -1,0 +1,48 @@
+{
+  "id": "d2a0f8b5c3e7d1a9f4b6c0e8d5a3f1b7",
+  "name": "NutriRoute Cart Vendor Cold-Season Stand Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Street food vending in M88's Circuit districts means standing in one place for ten to fourteen hours while acid-tinged lake wind comes off the corridor gaps. This rig is built around endurance. The outermost layer is a NutriRoute-branded quilted vest in deep teal with the company's stylized fork-and-circuit-board logo embroidered in white on the left chest — the vest is filled with recycled synth-fiber batting and has a high stand collar that buttons up to the chin. Under the vest goes a long-sleeve henley in heathered charcoal, worn under a NutriRoute-issue apron in waxed canvas the color of dark mustard: bib-style, with a wide front pocket divided into three sections for order slips, a payment scanner, and a cleaning cloth, plus a long side tie that doubles as a hand towel loop. The trousers are straight-leg cargo pants in olive synth-canvas, reinforced at the knees where vendors habitually brace against the cart frame. Footwear is a cushioned steel-toe slip-resistant clog in matte black — chosen for hours of standing on a metal cart platform. A NutriRoute-issue food handler's cap in teal sits flat on the head, and a neck gaiter in heather grey can be pulled up over the lower face during heavy smog advisories. Gloves are thin nitrile over a thin liner glove, swapped constantly through the shift.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "quilted synth-fiber batting shell",
+    "heathered cotton-analog knit",
+    "waxed canvas apron",
+    "olive synth-canvas cargo twill",
+    "slip-resistant cushioned clog",
+    "nitrile glove",
+    "knit gaiter"
+  ],
+  "functionality": "Insulated quilted vest for cold-corridor standing, high wind-blocking collar, waxed canvas apron with divided order-slip pockets, scanner pocket, slip-resistant steel-toe clog for cart platform, smog-rated neck gaiter, nitrile food-handler gloves",
+  "what_it_says": "The NutriRoute branding makes this person legible to every customer in a three-cart radius — they are the cart, functionally. The mustard apron and teal vest are a color combination chosen by a corporate designer who has never worked a street stand in winter. The vendor has added their own small modifications: a hand-stitched pocket inside the apron bib, a lucky charm pinned to the vest's inner lining.",
+  "worn_by": [
+    "NutriRoute franchise cart vendors",
+    "street food operators",
+    "licensed commissary workers",
+    "outdoor food service staff"
+  ],
+  "manufacturer": "NutriRoute Franchise Supply Division (vest, apron, cap), Kellow Workwear (trousers), Hollowtread (clogs)",
+  "price_range": "Φ140–Φ190 (partial company supply, partial personal purchase)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A NutriRoute vendor's divided apron pocket has a false bottom sewn in — they've been passing encrypted data chips to a contact who orders the same item every third day.",
+    "During a smog advisory, a vendor pulls up their neck gaiter and is not recognized by a Tier 4 client who had previously arranged to have them fired from a higher-paying position — the client orders food from someone they ruined and never knows.",
+    "The hand-stitched inner pocket in the apron bib holds the only copy of a lease agreement for a cart pitch that three different parties are now claiming."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "street_vendor",
+    "food_service",
+    "nutriroute",
+    "cold_weather",
+    "standing_work",
+    "gene_compatible",
+    "apron"
+  ],
+  "parent_corponation": ""
+}

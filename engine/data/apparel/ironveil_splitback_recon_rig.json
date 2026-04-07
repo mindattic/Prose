@@ -1,0 +1,47 @@
+{
+  "id": "5e9b1d3a72f04c8ea6107fd2c345b891",
+  "name": "Ironveil Splitback Recon Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Built for runners whose work takes them across rooftops, through maintenance shafts, and back onto the street without a wardrobe change. The core garment is a deep burgundy-to-black ombre tactical hoodie with a full back panel split from collar to hem — a geneware accommodation for wing or spinal rig users, closed with quick-release mag-clips that hold flush and silent. The front is structured with four concealed cargo pockets behind a smooth face fabric that reads as a plain athletic pullover; the interior houses a flat holster sleeve on the left chest and a tool loop array across the right. The hood is reinforced with a wire frame that shapes it into a face-shadowing cowl without looking tactical. Below, the bottoms are a pair of deep plum ripstop cargo trousers with articulated knee panels, a concealed prosthetic channel along the outer left leg, and two ankle-level dump pockets accessible by touch. The waistband integrates a thin battery routing strip for chrome lower-body augmentation. Footwear is a matte graphite split-sole rooftop boot with a textured grip tread and magnetic toe-cap. A slim chest harness worn over the hoodie carries the only visible gear — a pair of utility pouches that read as a courier rig.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "ombre-dyed ripstop polyfiber",
+    "structured face-fabric fleece",
+    "articulated stretch canvas",
+    "magnetic quick-release hardware",
+    "battery-routing waistband composite",
+    "split-sole grip rubber"
+  ],
+  "functionality": "Full back panel split with mag-clips for wing or spinal rig accommodation, concealed chest holster and tool loops, prosthetic channel in left trouser leg, ankle dump pockets, battery routing waistband strip, face-shadowing reinforced hood, rooftop grip split-sole boot",
+  "what_it_says": "The burgundy-to-black fade is a runner's signature color — not flashy enough to mark you as Spire, not drab enough to read as pure Shelf. The visible courier harness is deliberate misdirection. Anyone clocking the boot sole and the way the hood sits knows this person does vertical work. The split back is the tell for those who know geneware — it says this runner doesn't hide what they are.",
+  "worn_by": [
+    "rooftop recon specialists",
+    "geneware-modified runners with wing or spinal rigs",
+    "courier-cover operatives doing multi-floor infiltration",
+    "runners with significant lower-body chrome who need routing accommodation"
+  ],
+  "manufacturer": "Scaleback Workshop — independent fabricator, no fixed address, takes commissions through dead drops",
+  "price_range": "Φ 610–Φ 950",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The mag-clips on the back panel are rated for a standard wing span — but a runner's geneware has been modified beyond spec, and mid-jump across a transit shaft the clips fail, the panel flares open, and suddenly they're very visible against a lit window.",
+    "A fence recognizes the Scaleback Workshop stitching on the interior collar and knows the fabricator only takes jobs for a specific network. This runner is either connected — or wearing a dead runner's rig.",
+    "The courier harness pouches are searched at a Tier 3 building entrance. They're clean. But the guard runs a secondary scan and the battery routing strip in the waistband registers as a restricted augmentation power draw — above civilian legal limits."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier_2",
+    "tier_3",
+    "gene_compatible",
+    "aug_compatible",
+    "rooftop_work",
+    "geneware_accommodation",
+    "holster_integrated",
+    "vertical_mobility"
+  ],
+  "parent_corponation": ""
+}

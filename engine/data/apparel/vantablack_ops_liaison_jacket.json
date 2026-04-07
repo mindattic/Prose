@@ -1,0 +1,35 @@
+{
+  "name": "Vantablack Ops Liaison Jacket",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_tactical",
+  "manufacturer": "Neural Feed Productions",
+  "description": "Vantablack doesn't issue tactical uniforms in the traditional sense. The Ops Liaison Jacket is designed to look like civilian outerwear — a trim, mid-length coat in flat matte black that reads as expensive street fashion until it doesn't. The exterior fabric is woven with Vantablack's signature light-absorption compound, not to the extreme of true VantaMat applications, but enough to make the wearer visually recede in low-light environments, reducing silhouette definition and making optical tracking systems struggle for clean acquisition. The jacket carries no visible corporate branding; the only identifying marker is a microscopic spectral tag in the left cuff, readable only by Vantablack-issued scanners.\n\nInternally, the jacket is a different garment entirely. A network of sensor-filament threads maps the wearer's immediate environment and feeds data through a BCI port concealed within the collar seam. Pockets are shielded against RF scanning, and the lining includes a signal-dampening mesh that limits the wearer's electronic signature in monitored spaces. The jacket is cut to read as civilian across Tier 3 through 5 environments — it is not designed for the Shelf, where anyone wearing something that expensive without obvious corp affiliation becomes a target. Vantablack personnel who operate in lower tiers are typically issued cover garments to wear over the jacket. Possession without authorization is deeply inadvisable.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ800",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "Vantablack has a reputation for existing in spaces it officially doesn't occupy. The Ops Liaison Jacket is part of that reputation — a garment that signals intelligence presence without confirming it. In M88's corporate circles, being approached by someone in a coat that eats light is understood as a meeting you don't discuss afterward.",
+  "story_hooks": [
+    "A counterfeit version of the Ops Liaison Jacket is circulating in Tier 3 markets — it has the visual profile but none of the electronics, and someone wearing one is about to walk into a situation where Vantablack will assume they're an operative.",
+    "The spectral tag in a recovered jacket's cuff doesn't match any active Vantablack operative ID — it belongs to someone who was officially declared dead two years ago.",
+    "A journalist investigating corporate surveillance purchases what they believe is a replica jacket for a story on Vantablack's visual-stealth tech, and discovers the 'replica' is feeding data to an unknown receiver."
+  ],
+  "tags": [
+    "corpsec",
+    "vantablack",
+    "stealth",
+    "light_absorption",
+    "intelligence",
+    "bci_integrated",
+    "signal_dampening",
+    "restricted",
+    "tier4",
+    "tier5",
+    "covert"
+  ],
+  "id": "055951d8578443978eaf6a90c7fa56f8",
+  "parent_corponation": "Vantablack Media"
+}

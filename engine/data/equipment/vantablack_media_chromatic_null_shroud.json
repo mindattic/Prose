@@ -11,7 +11,7 @@
   ],
   "category": "stealth",
   "description": "The Chromatic Null Shroud is a full-body garment woven from Vantablack Media's proprietary photon-harvesting microfiber, capable of absorbing up to 99.96% of incident visible light across a 180-degree arc. Embedded within the weave are micro-actuated chromophore cells that sample ambient light from the environment and dynamically redistribute it across the garment's surface, rendering the wearer as a near-perfect visual void that blends into low-light backgrounds rather than standing out as a silhouette.\n\nWhat distinguishes the Chromatic Null Shroud from simpler blackout garments is its passive operation mode — it requires no power cell during static concealment, drawing only trace current from body heat via integrated thermoelectric strips. Active dynamic blending, used during slow movement, consumes roughly 0.4W and can be sustained for six hours on a standard micro-cell. The garment's outer layer is also treated with a radar-diffusing aerogel coating that scatters millimeter-wave sensor returns, making it effective against automated perimeter systems.\n\nOriginally developed for Vantablack Media's deep-cover documentary crews operating in contested corporate zones, the Shroud quickly found a secondary market among infiltrators, black-bag operatives, and high-end couriers. Its civilian framing as 'broadcast equipment' has kept it in a regulatory gray zone for years, and Vantablack Media has made no apparent effort to close that loophole.",
-  "manufacturer": "VANTABLACK MEDIA",
+  "manufacturer": "The Anchor Broadcasting Platform",
   "tier_availability": "Tier 2+",
   "legality": "Restricted",
   "base_technologies": [
@@ -62,5 +62,6 @@
     "clothing",
     "shelf",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Vantablack Media"
 }

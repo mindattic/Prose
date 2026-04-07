@@ -1,0 +1,35 @@
+{
+  "name": "Lazarus Synthetic Personhood Hearing Formal Robe",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "formal robe",
+  "manufacturer": "Evergreen Wellness",
+  "description": "Lazarus developed this robe specifically for use by synthetic beings appearing before the Meridian 88 Personhood Recognition Tribunal — a garment created to satisfy the tribunal's requirement for 'appropriate formal presentation' while accommodating synthetic physiognomy, which varies widely. The robe is constructed in a clean ivory-white with Lazarus's caduceus motif rendered in pale gray at the breast — visible enough to signal institutional backing, restrained enough not to read as corporate branding in a legal context. Internal magnetic closures adjust automatically to non-standard torso configurations, and the fabric has no thermal, biometric, or BCI-reactive properties that might interfere with the tribunal's own scanning environment.\n\nThe robe is provided free of charge by Lazarus to synthetic clients entering personhood proceedings — a gesture that reads as advocacy to some and as calculated PR to others. Lazarus's interest in synthetic personhood is not purely altruistic: recognized synthetic persons become potential customers for Lazarus's cognitive maintenance and neural-substrate pharmaceutical lines. The robe is, in this light, both a gift and an investment. Synthetics in advocacy communities are aware of this tension and wear the robe anyway, because the alternative is appearing in tribunal in whatever they were wearing when they filed.",
+  "tier_availability": "All tiers",
+  "price": "Φ0 (provided by Lazarus Legal Affairs)",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The Lazarus hearing robe has become a contested symbol in synthetic rights communities. Some see it as dignified institutional support; others see it as Lazarus branding synthetics before they've even been recognized as persons. Advocacy groups have produced alternative robes in neutral colors for synthetics who refuse the Lazarus version, though these alternatives lack the tribunal's informal 'appropriate presentation' precedent behind them.",
+  "story_hooks": [
+    "A synthetic being refuses the Lazarus robe on principle and arrives in a Coldseam patched formal set — the tribunal panel's reaction to this choice reveals more about them than any testimony.",
+    "A Lazarus PR operative is quietly photographing synthetic clients in the white robes for an internal campaign about the corponation's 'commitment to personhood' — without consent.",
+    "A synthetic who won their personhood case still has the robe; they've kept it, and the choice to keep or destroy it has become a private ritual question."
+  ],
+  "tags": [
+    "robe",
+    "synthetic personhood",
+    "Lazarus",
+    "tribunal",
+    "formal",
+    "all tiers",
+    "legal proceedings",
+    "synthetic rights",
+    "augment compatible",
+    "geneware compatible",
+    "advocacy"
+  ],
+  "id": "c1512044ee4c4c9288fc6fb899d5d1ee",
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

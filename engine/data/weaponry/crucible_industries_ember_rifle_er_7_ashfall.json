@@ -1,0 +1,47 @@
+{
+  "id": "7824b09dcae619ec0415cc0af12fef2e",
+  "name": "Crucible Industries Ember Rifle ER-7 'Ashfall'",
+  "type": "weapon",
+  "aliases": [
+    "Ashfall",
+    "ER-7",
+    "The Burner"
+  ],
+  "category": "assault_rifle",
+  "description": "The ER-7 Ashfall fires thermite-tipped 6.5mm rounds that ignite on impact, combining ballistic trauma with incendiary effect. Crucible Industries developed the platform for anti-materiel operations where targets include equipment caches, vehicle fuel systems, and fortified positions with combustible components. Each round carries a 0.3-gram thermite payload in the projectile tip that activates on deformation.\n\nThe rifle itself is a conventional gas-operated platform built on the proven FR-9 receiver with modifications to the barrel lining and chamber to resist the thermal signature of the incendiary ammunition. A BCI-linked thermal scope provides targeting data overlaid with flammability analysis of the target environment — the system identifies combustible materials and predicts fire spread patterns to maximize incendiary effect.\n\nThe Ashfall is devastating against unarmored targets and soft vehicles but less effective against modern armor, which is designed to resist thermal penetration. Its real value is psychological — a single thermite round igniting inside a defensive position creates panic disproportionate to the actual damage. Fire is a primal fear that no amount of training fully eliminates.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — incendiary weapons regulations apply",
+  "base_technologies": [
+    "Thermite-tipped projectiles",
+    "Thermal-resistant barrel lining",
+    "BCI flammability analysis scope"
+  ],
+  "specifications": "caliber: 6.5mm thermite-tipped\neffective_range: 450m\nrate_of_fire: 600 rpm (cyclic)\nmagazine_capacity: 25 rounds\nweight: 4.0 kg",
+  "tactical_use": "The ER-7 excels in area denial and anti-materiel roles. Operators use the flammability analysis scope to identify high-value combustible targets — fuel storage, ammunition caches, communication equipment with flammable insulation — and deliver thermite rounds that create secondary fires. Against personnel, the psychological impact of incendiary ammunition frequently breaks defensive positions more effectively than superior volume of fire.",
+  "cultural_context": "Incendiary weapons carry a stigma that other weapons do not. The Ashfall's operators are viewed with unease even by their own allies, and using thermite rounds against personnel in civilian areas is considered a war crime by most governance frameworks. Crucible markets the ER-7 exclusively as an anti-materiel platform, but everyone knows what thermite does to people.",
+  "known_users": [
+    "Anti-materiel specialists",
+    "Sabotage teams",
+    "Crucible demolition contractors"
+  ],
+  "story_hooks": [
+    "An Ashfall operator accidentally ignited a chemical storage facility in a Tier 2 settlement, causing a fire that destroyed three city blocks. Crucible is trying to suppress the incident report.",
+    "Someone is using stolen ER-7 ammunition in a conventional rifle to commit arsons that look like industrial accidents — the thermite residue is being missed by standard forensics."
+  ],
+  "ammunition_type": [
+    "6.5mm thermite-tipped",
+    "6.5mm standard (compatible)"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "incendiary",
+    "thermite",
+    "anti_materiel",
+    "Crucible",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

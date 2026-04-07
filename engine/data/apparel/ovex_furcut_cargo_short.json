@@ -1,0 +1,39 @@
+{
+  "id": "3b1e7f5a2d04896c1f3a2b4d6e8c0f51",
+  "name": "Ovex FurCut Cargo Short",
+  "type": "apparel",
+  "category": "legwear",
+  "description": "A wide-leg cargo short hemmed high with an unfinished raw cut — intentionally so. The leg openings are generously sized and the interior seams are flat-felled to avoid matting fur geneware. The waistband is a wide elastic-and-button hybrid that sits comfortably over a thick fur coat at the hip. Available in khaki, dark olive, and washed navy.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ripstop synth-cotton",
+    "flat-felled seaming",
+    "elastic-button waistband"
+  ],
+  "functionality": "Wide leg openings and interior flat seams prevent fur compression and matting; elastic waistband accommodates hip fur density variation",
+  "what_it_says": "You've got fur and you're not going to sweat through tailored trousers on a long shift.",
+  "worn_by": [
+    "fur geneware users",
+    "Tier 2 workers in warm environments",
+    "people prioritizing comfort over appearance"
+  ],
+  "manufacturer": "Ovex",
+  "price_range": "Φ38",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The cargo pockets are deeper than standard — someone has been using them to move small packages through checkpoints that don't look closely at a furry person's shorts.",
+    "A character finds a note tucked in the flat seam, sewn in deliberately, from someone who wore these before them."
+  ],
+  "tags": [
+    "apparel",
+    "legwear",
+    "tier 2",
+    "gene-compatible",
+    "fur geneware",
+    "shorts",
+    "cargo",
+    "practical"
+  ],
+  "parent_corponation": ""
+}

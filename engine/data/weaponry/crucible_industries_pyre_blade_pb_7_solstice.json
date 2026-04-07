@@ -1,0 +1,48 @@
+{
+  "id": "d7e8f9a0b1c2345678d9e0f1a2b34567",
+  "name": "Crucible Industries Pyre Blade PB-7 'Solstice'",
+  "type": "weapon",
+  "aliases": [
+    "Solstice",
+    "the Pyre",
+    "heat-edge"
+  ],
+  "category": "melee",
+  "description": "The Pyre Blade PB-7 'Solstice' is Crucible Industries' flagship melee weapon — a 90-centimeter single-edged sword that integrates a superheated plasma containment edge with a high-voltage discharge system along the flat of the blade. The plasma edge, sustained by a micro-fusion cell in the hilt, operates at approximately 8,000 degrees Celsius along the cutting surface, sufficient to shear through light vehicle armor plating, heavy cyberware chassis, and combat-grade body armor with minimal resistance. Simultaneously, the blade's flat surface carries a 500,000-volt discharge system that activates on contact with conductive material, delivering a secondary electrical shock that disrupts neuromuscular function and cyberware operation in any target not already destroyed by the plasma edge.\n\nCrucible Industries positions the Solstice at the extreme high end of the civilian melee market — at Φ25,000, it costs more than most Tier 2 residents earn in a year, and its performance justifies the price point. The micro-fusion cell sustains plasma edge operation for up to four hours of continuous use before requiring a 20-minute recharge cycle. The discharge system draws from a secondary capacitor bank with a 200-strike capacity. The blade itself is a ceramic-tungsten composite that can withstand its own plasma temperatures without degradation; the edge containment field prevents plasma bleedover to the hilt, though the weapon still generates significant radiant heat in close quarters.\n\nThe Solstice is technically legal for licensed ownership in Meridian, classified under the same 'directed energy melee' statutes that govern plasma cutters, with the somewhat strained argument that it is a 'multi-function industrial cutting tool.' In practice, the weapon is overwhelmingly purchased for combat applications, and its appearance in any altercation tends to prompt immediate escalation — law enforcement response, civilian evacuation, and in documented cases, Arcturus rapid deployment teams who treat plasma-edge weapons as a Category 3 threat.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — classified as directed energy melee tool; requires Crucible Certified Operator registration; prohibited in all public spaces, transit, and Tier 1-2 zones; Spire carry permits available at significant cost",
+  "base_technologies": [
+    "plasma edge containment field",
+    "micro-fusion cell",
+    "high-voltage discharge flat",
+    "ceramic-tungsten composite blade",
+    "thermal isolation hilt"
+  ],
+  "specifications": "Blade Length: 90 cm\nTotal Length: 115 cm\nWeight: 2.1 kg\nPlasma Edge Temperature: ~8,000°C\nDischarge Voltage: 500,000 V (flat contact)\nMicro-Fusion Cell Life: 4 hours continuous / 20-minute recharge\nDischarge Capacity: 200 strikes per capacitor charge\nArmor Penetration: Light vehicle plate, combat-grade personal armor\nBlade Material: Ceramic-tungsten composite\nHilt: Thermal isolation polymer, contoured single-hand grip\nPrice: Φ25,000",
+  "tactical_use": "The Solstice is an offensive weapon with minimal defensive application — its weight distribution and plasma edge make it unsuitable for parrying without dedicated training, and the radiant heat creates a zone of discomfort for the operator in close quarters. Trained users approach it as a closing weapon: close distance rapidly, deliver a single decisive plasma-edge cut, and use the discharge system as a follow-up deterrent or to address secondary threats. In anti-materiel applications, the plasma edge can breach most civilian door locks, vehicle chassis, and hardened equipment housings in seconds. Military-grade shielding and Faraday-composite armor significantly reduce both the plasma and electrical effectiveness.",
+  "cultural_context": "The Solstice exists in the cultural imagination as the weapon of a certain type of Tier 4-5 individual: the person who has enough money to own something genuinely dangerous and enough ego to carry it. In Spire circles, Solstice ownership is a discreet status signal — the weapon is almost never worn openly but the knowledge that someone carries one shapes interactions. Among combat sports enthusiasts and high-end dueling circles (a niche but persistent Meridian subculture), the Solstice is regarded with reverence and some competitive jealousy. On the street, it is simply called 'the Pyre,' and the phrase 'they brought a Pyre' in any conflict context means: disengage immediately.",
+  "known_users": [
+    "high-net-worth private security",
+    "Tier 5 personal protection operatives",
+    "Crucible Industries competitive demonstration team",
+    "black market — occasionally surfaces in Tier 1-2 through theft"
+  ],
+  "story_hooks": [
+    "A Solstice reported stolen from a Tier 5 Spire residence turns up used in three separate Tier 1 killings over six days — but the plasma-edge cut patterns are surgically precise, suggesting someone with elite combat training, not the opportunistic Shelf violence the killings are being reported as. The Spire resident whose weapon was stolen has filed no police report."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "lethal",
+    "plasma",
+    "electric",
+    "sword",
+    "high-end",
+    "anti-armor",
+    "luxury",
+    "combat"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

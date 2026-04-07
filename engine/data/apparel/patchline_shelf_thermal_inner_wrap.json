@@ -1,0 +1,44 @@
+{
+  "id": "a3f7c2e1b09d4581fe6a2c3d7e8b0f94",
+  "name": "Patchline Shelf Thermal Inner Wrap",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Hand-cut from salvaged insulation batting and reclaimed synthetic fleece, this layered wrap is stitched in irregular panels of grey, rust-brown, and faded olive. Seams are doubled or tripled where original material was thin. Common patches include transit seat foam, medical blanket mylar, and shredded cargo netting sandwiched between outer layers.\n\nNo two are identical. Worn directly against skin, the inner surface is brushed smooth by repeated washing in gutter-filtered water. The smell of chemical damp never fully leaves.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed synthetic fleece",
+    "salvaged insulation batting",
+    "mylar emergency blanket strips",
+    "recycled cargo netting",
+    "hand-spun polymer thread"
+  ],
+  "functionality": "Provides basic thermal retention against Shelf cold and acid-rain damp. Mylar layers reflect body heat. No electronic function. Loose seam channels can accidentally accommodate small chrome arm cables if routed carefully.",
+  "what_it_says": "You make do with what the city throws away, and you're still alive.",
+  "worn_by": [
+    "Shelf laborers",
+    "unhoused residents",
+    "scrapyard workers",
+    "tunnel runners",
+    "young Shelf kids whose parents can't afford better"
+  ],
+  "manufacturer": "Self-made / Shelf community craft",
+  "price_range": "Φ2–Φ12 (barter common)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A specific patch pattern — three overlapping red transit squares — marks members of a Shelf mutual-aid network that smuggles meds past Tier 2 checkpoints.",
+    "A character finds a wrap with a hidden sewn-in data chip tucked inside a mylar layer — someone's dead drop.",
+    "A Tier 4 'poverty tourism' fashion designer is selling machine-made replicas of Shelf wraps for Φ800 upspire, and someone on the Shelf just found out."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "thermal",
+    "shelf",
+    "handmade",
+    "salvage",
+    "tier-1",
+    "cold-weather"
+  ],
+  "parent_corponation": ""
+}

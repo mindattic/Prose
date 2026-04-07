@@ -1,0 +1,52 @@
+{
+  "name": "Ouroboros AQ-3 'Undertow'",
+  "type": "automaton",
+  "classification": "Aquatic Platform — Harbor Patrol/Denial",
+  "aliases": [
+    "Undertow",
+    "River Ghost",
+    "Hull Hugger"
+  ],
+  "manufacturer": "Wattson Smart Home",
+  "description": "The AQ-3 is a torpedo-shaped aquatic drone 2 meters in length, designed for underwater patrol operations in Meridian 88's harbor and waterway infrastructure. Its primary function is infrastructure protection — monitoring bridge foundations, dam structures, and underwater utility conduits for unauthorized access or sabotage. Its secondary function is killing anyone it finds doing those things.\n\nThe Undertow carries a directed-charge warhead designed for underwater detonation against hull structures and a secondary acoustic stunning system that produces a focused pressure wave capable of rupturing eardrums and causing disorientation at ranges up to 30 meters. The unit operates in near-total silence, propelled by a magnetic drive that produces no cavitation noise, and can hover motionless at any depth within its range. Divers in the harbor describe the experience of encountering an Undertow as seeing a shadow that shouldn't be there — a shape in the murky water that moves with purpose.\n\nOuroboros deploys the AQ-3 in packs of six, creating overlapping patrol zones across harbor infrastructure. The units communicate through low-frequency sonar pulses inaudible to human ears, coordinating patrol routes and target engagement. The harbor is, effectively, mined — not with static explosive devices, but with mobile, intelligent weapons that decide what constitutes a threat.",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed for infrastructure protection",
+  "autonomy_level": "Fully autonomous pack patrol",
+  "dimensions": "2.0m length, 0.3m diameter",
+  "weight": "65 kg",
+  "power_source": "Seawater fuel cell, 120-hour endurance",
+  "locomotion": "Magnetic drive — silent propulsion",
+  "armament": [
+    "Directed-charge warhead (anti-hull)",
+    "Acoustic stunning system (30m range)"
+  ],
+  "sensors": [
+    "Passive sonar",
+    "Magnetic anomaly detection",
+    "Water pressure displacement sensing"
+  ],
+  "countermeasures": "Acoustic decoys can draw attention. The magnetic drive is detectable by sensitive magnetometers. The units surface for communication relay every 4 hours — this is a predictable vulnerability window. Harbor water turbidity provides concealment for human divers as well as for the drones.",
+  "known_deployments": [
+    "Meridian 88 harbor infrastructure",
+    "Dam and waterway protection",
+    "Old Harbor industrial waterfront"
+  ],
+  "story_hooks": [
+    "A body washed up in Old Harbor with injuries consistent with an Undertow acoustic stun followed by drowning. The victim was a journalist investigating Ouroboros's underwater monitoring network. Ouroboros claims the death was accidental — the journalist entered a restricted waterway.",
+    "Someone needs to access a submerged utility conduit in the harbor. The conduit is protected by an Undertow pack. The players need to either disable the pack, fool it, or survive it — while underwater, in the dark, in water the drones know better than anyone."
+  ],
+  "cultural_context": "The Undertow has made the harbor — once a lifeline for Shelf communities that fished and scavenged from the waterfront — effectively off-limits. Fishermen who once operated freely now risk encounter with autonomous weapons. The water belongs to Ouroboros.",
+  "tags": [
+    "automaton",
+    "aquatic",
+    "underwater",
+    "patrol",
+    "weapon",
+    "ouroboros",
+    "corporate",
+    "harbor",
+    "tier 4"
+  ],
+  "id": "0bd5866646cfdf8f370c9d43c0adc9e4",
+  "parent_corponation": "Ouroboros Energy"
+}

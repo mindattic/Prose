@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2e1b849d056f3a1c78e2d904b51",
+  "name": "LifeWire WakeTrue Circadian Alarm Implant",
+  "brand_name": "LifeWire",
+  "product_name": "WakeTrue",
+  "type": "cyberware",
+  "aliases": [
+    "the nudge",
+    "softbell",
+    "inner alarm",
+    "the tap"
+  ],
+  "category": "convenience",
+  "body_location": "cranial — hypothalamic adjacency, subdermal temporal node",
+  "description": "The WakeTrue is a dual-node circadian management implant consisting of a micro-processor anchor seated subdermally at the temporal ridge and a passive hypothalamic proximity emitter that communicates via low-frequency bioelectric pulse — no direct neural penetration required. The user sets wake targets through any paired device or via LifeWire's companion subvocal interface, and the implant modulates the body's own adenosine and cortisol rhythms in the final minutes before the target time, easing the sleeper out of deep sleep into light sleep and then to wakefulness without external sound or haptic shock. No buzzing. No alarm tone. You simply open your eyes at the right moment, feeling as though you woke naturally.\n\nThe WakeTrue is one of the most common implants in Meridian 88 across all tiers. On the Shelf, where noise pollution, shift work, and overcrowded housing make reliable sleep nearly impossible, it's frequently the first implant a working adult purchases — often secondhand or through a pharmacy kiosk payment plan. Tier 2 and 3 workers prize it for shift precision: missing a clock-in by even minutes can mean docked pay or job loss. Among Tier 4 professionals, the WakeTrue is so normalized it's rarely mentioned, the same way nobody announces they wear contacts. Children as young as twelve are commonly fitted with junior-grade versions for school schedules. Life without one, for most Meridian residents, feels like life without a phone.",
+  "manufacturer": "LIFEWIRE CONSUMER BIOSYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient pharmacy kiosk or walk-in clinic; 25-minute procedure under local anesthetic; no specialist required",
+  "rejection_risk": "Minimal",
+  "maintenance": "Firmware update annually via wireless sync; no battery replacement required (passive bioelectric harvesting); optional recalibration if sleep schedule shifts significantly",
+  "specifications": "{\"wake_precision\": \"±90 seconds of target time\", \"sleep_stage_monitoring\": \"passive EEG-adjacent via bioelectric field\", \"cortisol_modulation\": \"gradual ramp over 18-minute window\", \"user_interface\": \"paired app, subvocal command, or tap-sequence on temporal node\", \"power_source\": \"bioelectric passive harvest\", \"battery_backup\": \"72-hour capacitor reserve\", \"connectivity\": \"BLE 9.2 encrypted\"}",
+  "side_effects": [
+    "Vivid, sometimes disorienting dreams during the first two weeks of calibration as sleep staging normalizes",
+    "Occasional mild pressure sensation at the temporal node when the implant activates during deep sleep",
+    "Rare early-wake events (5–10 minutes ahead of target) during periods of high physiological stress",
+    "Some users report difficulty sleeping past a set time even when they want to, requiring a manual override"
+  ],
+  "cultural_context": "The WakeTrue — and its competitors — occupy a cultural space roughly equivalent to the wristwatch of the previous century: so ordinary as to be invisible, yet quietly marking who has access to reliability and who doesn't. On the Shelf, owning a functioning alarm implant is a small but real marker of stability. Secondhand units with degraded calibration — called 'drift taps' in Shelf slang — are common, and waking up twenty minutes late because your used WakeTrue glitched is a recognized social experience. Among Tier 3 and 4 residents, the WakeTrue is simply assumed; showing up to work and explaining you overslept because you don't have one reads as either poverty or eccentricity. There is a small counter-cultural movement — mostly Tier 3 artists and off-grid types — who reject alarm implants entirely as a form of corporate chronological control, insisting on waking 'on the body's own terms.' They are regarded with a mixture of admiration and mild pity.",
+  "known_users": [
+    "Shift workers across all tiers who need precise wake times",
+    "Parents of school-age children fitted with junior variants",
+    "Delivery and logistics workers on tight scheduling contracts",
+    "Students navigating early-morning academic schedules",
+    "Tier 1 residents purchasing secondhand units as a stability investment"
+  ],
+  "story_hooks": [
+    "A batch of WakeTrue units sold through a Shelf-district pharmacy kiosk has a firmware fault causing users to wake at 3:47 AM every night without fail — investigation reveals the timestamp matches a corponation data-sync window, and someone has been using the implants' bioelectric signals as passive network nodes without user consent.",
+    "A character's WakeTrue begins waking them precisely 11 minutes before dangerous events — a mugging, a building fire, a raid — leading them to wonder if the implant has somehow developed predictive calibration, or if someone with access to their schedule is trying to warn them.",
+    "A labor arbitration case hinges on whether a dockworker's documented late arrivals were caused by a defective WakeTrue unit — the worker claims the implant malfunctioned, LifeWire claims user error, and the characters are hired to pull the implant's firmware logs before the hearing."
+  ],
+  "street_price": "Ψ180–Ψ320 (secondhand units from Ψ40)",
+  "licensed_price": "Ψ490–Ψ650 at certified LifeWire kiosks",
+  "tags": [
+    "cyberware",
+    "convenience",
+    "lifestyle",
+    "sleep",
+    "circadian",
+    "mass-market",
+    "tier1-accessible"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,42 @@
+{
+  "id": "c1a4f8e2d7b305691e3c7a0f4d2b8e16",
+  "name": "Ouroboros Executive Division Poplin",
+  "type": "apparel",
+  "category": "top",
+  "description": "The standard dress shirt issued to Ouroboros Corponation's mid-to-upper management tier, cut from a wrinkle-resistant poplin weave that maintains its crispness through a fourteen-hour shift without ironing. The collar is a semi-spread construction with collar stays sewn directly into the fabric — they cannot be removed. French placket, mitered cuffs, a subtle geometric pattern woven into the white-on-white fabric that's only visible at certain angles of light. The Ouroboros serpent logo appears in embossed thread on the left cuff, small and tasteful.\n\nThe shirt comes in three colorways — white, pale grey, and a blue-grey that Ouroboros internal documentation calls 'Meridian Blue.' There is no off-the-rack version of this shirt; it is issued, not purchased, and the issuance is tracked. Wearing one outside of Ouroboros facilities without authorization is technically a breach of employment contract. Most people don't know that. The shirt fits well because Ouroboros took body scans during onboarding.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "wrinkle-resistant poplin weave",
+    "sewn-in collar stays",
+    "embossed logo thread",
+    "fitted cut"
+  ],
+  "functionality": "",
+  "what_it_says": "You work for Ouroboros, and you are in a position where Ouroboros has decided you should look like it. Whether that's a point of pride or a collar depends entirely on how you feel about your employer.",
+  "worn_by": [
+    "Ouroboros mid-management",
+    "corporate liaisons",
+    "compliance officers",
+    "anyone trying to pass as Ouroboros personnel"
+  ],
+  "manufacturer": "Brightline Home Energy",
+  "price_range": "Φ0 (issued) / Φ180 (black market)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The collar stays in the shirt contain a passive RFID chip that logs the wearer's location whenever they pass an Ouroboros sensor node — the company maps its employees' movements more precisely than anyone realizes.",
+    "A character acquires one of these shirts and uses it to bluff their way into an Ouroboros facility, only to discover that the shirt itself broadcasts a low-level ID signal that the building's security reads on entry.",
+    "An Ouroboros mid-manager keeps wearing their issued shirt after being quietly let go — technically illegal, but they haven't been approached yet, and they're not sure if that's because nobody noticed or because someone is watching to see what they do next."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 4",
+    "corporate",
+    "dress shirt",
+    "Ouroboros",
+    "uniform",
+    "formal"
+  ],
+  "parent_corponation": "Ouroboros Energy"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "2fc6a8d04b175e39a0d82c7f1b6e9048",
+  "name": "Solenne Neuralcrest Lattice Crown",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "An architectural neural-port fascinator rebuilt as a full crown piece — Solenne's answer to criticism that their earlier port cover was too subtle for Spire event wear. The Lattice Crown is constructed from hand-bent gold-titanium wire in an open lattice structure that frames the skull without touching it, anchored by a slim internal headband of ivory synth-suede. Micro-filament bioluminescent threads are woven through the lattice, pulsing in slow waves synchronized to the wearer's BCI heartbeat data.\n\nDesigned to display — not conceal — cranial chrome and neural port hardware as deliberate aesthetic centerpieces. Custom-fitted per client.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "hand-bent gold-titanium wire",
+    "bioluminescent micro-filament",
+    "ivory synth-suede headband",
+    "hand-set micro-crystal accents",
+    "BCI sync module"
+  ],
+  "functionality": "BCI-synchronized bioluminescent pulse display; structural lattice keeps all elements elevated from scalp to prevent interference with port hardware; custom-fitted to client's specific cranial chrome layout; headband includes inductive charge pad for continuous filament power.",
+  "what_it_says": "Your augmentation is not something you hide — it is the most expensive thing in the room.",
+  "worn_by": [
+    "Spire executives",
+    "corponation board members",
+    "high-society geneware patrons",
+    "power brokers at formal events"
+  ],
+  "manufacturer": "Solenne Atelier (Tier 5 couture house)",
+  "price_range": "Φ28,000–Φ75,000 (bespoke commission)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Lattice Crown commissioned for a Helix Corp board director was intercepted in transit — the BCI sync module contains a passive data-skimming exploit.",
+    "One crown's bioluminescent pulse pattern has been quietly encoding the wearer's real-time emotional state, readable by anyone with the right decryption key.",
+    "A Solenne atelier artisan is selling unauthorized duplicate fittings — meaning someone has a precise map of a Spire client's cranial hardware layout."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "fascinator",
+    "crown",
+    "neural-port",
+    "aug-compatible",
+    "gene-compatible",
+    "tier-5",
+    "spire",
+    "luxury",
+    "bioluminescent",
+    "BCI",
+    "couture"
+  ],
+  "parent_corponation": ""
+}

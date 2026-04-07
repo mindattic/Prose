@@ -1,0 +1,57 @@
+{
+  "id": "7d4b91e0c3a25f8e1b6d04c7a9f23e50",
+  "name": "Ironlimb Bulwark HX-9 Combat Leg System",
+  "brand_name": "IRONLIMB",
+  "product_name": "Ironlimb Bulwark HX-9 Combat Leg System",
+  "type": "cyberware",
+  "aliases": [
+    "Stompers",
+    "Ironboots",
+    "HX-Nines"
+  ],
+  "category": "leg",
+  "body_location": "legs",
+  "description": "The Bulwark HX-9 is a military-influenced full leg replacement built around a reinforced titanium-alloy skeleton with hydraulic shock-absorber columns running the length of the tibia and femur, rated to absorb falls from up to four stories without joint damage. The knee and ankle joints are double-locked with emergency bracing actuators that engage automatically on impact detection, and the foot chassis integrates a magnetic boot interface compatible with most industrial and military deck-plating standards. Exterior armor plating adds 8mm of ballistic-grade polymer over the knee cap and shin face.\n\nThe HX-9 is the go-to leg for Shelf-level enforcers, private security contractors, and anyone who expects their legs to take punishment as often as they dish it out. The magnetic boot function makes them popular with dock workers and warehouse security who spend shifts on magnetized cargo platforms.",
+  "manufacturer": "IRONLIMB",
+  "tier_availability": "Tier 2-4",
+  "legality": "Restricted",
+  "installation_requirements": "Full limb amputation, reinforced pelvic socket anchor required, licensed combat-grade installation facility",
+  "rejection_risk": "Moderate — titanium frame requires osseointegration anchoring; pelvic stress fractures possible if anchor points are improperly placed",
+  "maintenance": "Bi-monthly hydraulic fluid check; shock-absorber column inspection after any major impact event; magnetic interface recalibration quarterly",
+  "specifications": "{\"weight_per_unit_kg\": 8.2, \"fall_absorption_rating_m\": 12, \"knee_brace_engagement_ms\": 15, \"magnetic_boot_pull_force_kg\": 180, \"shin_armor_thickness_mm\": 8, \"armor_material\": \"ballistic-grade polymer over titanium\", \"max_static_load_kg\": 600, \"waterproof_rating\": \"IPX6\"}",
+  "side_effects": [
+    "Significant weight increase causes fatigue in users without matching upper-body augmentation",
+    "Magnetic boot interface can activate unintentionally near strong EM fields",
+    "Reduced proprioceptive sensitivity due to heavy shielding around neural conduits",
+    "Joint-lock actuators have a known false-positive rate in high-vibration environments"
+  ],
+  "cultural_context": "HX-9s have a reputation as honest hardware — they don't do anything fancy, they just refuse to break. In Shelf gang culture, a pair of Stompers marks someone as a serious fighter rather than a poser in fashion chrome.",
+  "known_users": [
+    "Private security contractors",
+    "Shelf-level enforcers and gang heavies",
+    "Industrial dock and warehouse workers",
+    "Ex-military personnel maintaining service hardware",
+    "Underground pit-fighters"
+  ],
+  "story_hooks": [
+    "A shipment of HX-9s has been intercepted before reaching a licensed distributor — someone is arming a Shelf faction for something large",
+    "A former soldier's Bulwark legs contain encrypted data in the magnetic interface firmware that multiple factions want recovered or destroyed",
+    "The HX-9's joint-lock false-positive issue has caused a workplace fatality; the victim's family wants someone to prove Ironlimb knew about the defect"
+  ],
+  "street_price": "Φ18,500",
+  "licensed_price": "Φ42,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "leg",
+    "combat",
+    "military",
+    "reinforced",
+    "magnetic-boot",
+    "impact-absorption",
+    "ironlimb",
+    "restricted",
+    "tier2"
+  ],
+  "parent_corponation": ""
+}

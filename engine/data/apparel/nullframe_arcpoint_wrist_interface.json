@@ -1,0 +1,46 @@
+{
+  "id": "f1b2c3d4e5a6078901f2e3d4c5b6a709",
+  "name": "Nullframe Arcpoint Wrist Interface",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A slim, matte-titanium wrist device worn on the dominant forearm, roughly 4cm wide. The face is a curved electroluminescent display showing a persistent analog clock overlay above a scrolling data feed — both readable simultaneously. BCI-sync port sits flush on the inner wrist edge, sealed with a magnetic dust cap.\n\nThe band is segmented carbon-composite with micro-hinge joints, adapting to chrome prosthetic wrists or standard flesh. A faint amber glow pulses at the port when syncing. Favored by analysts and junior specialists who want tactile confirmation of their neural feed without full ocular overlay.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "matte titanium housing",
+    "electroluminescent display glass",
+    "carbon-composite segmented band",
+    "magnetic dust-seal hardware"
+  ],
+  "functionality": "BCI sync port for neural data confirmation, analog-digital dual display, notification haptics, encrypted short-burst comms, biometric lock keyed to wearer's pulse signature. Band adjusts for chrome wrist prosthetics via micro-hinge expansion.",
+  "what_it_says": "Technically capable and deliberately understated — this person trusts hardware they can see over software they can only feel.",
+  "worn_by": [
+    "mid-tier analysts",
+    "systems specialists",
+    "junior corponation staff",
+    "freelance data brokers",
+    "augmented professionals"
+  ],
+  "manufacturer": "Nullframe Systems",
+  "price_range": "Φ880 – Φ1,400",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A firmware update pushed corp-side last quarter added passive environmental logging — most users don't know they're being recorded.",
+    "The BCI sync port accepts third-party chips with a known exploit; street hackers sell pre-loaded chips that mirror the device's output to a remote address.",
+    "A Tier 4 specialist was found with their Arcpoint smashed at the sync port — whatever data it last received has been flagged classified."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "wrist device",
+    "watch",
+    "BCI",
+    "aug-compatible",
+    "tier-3",
+    "tier-4",
+    "tech",
+    "interface",
+    "comms"
+  ],
+  "parent_corponation": ""
+}

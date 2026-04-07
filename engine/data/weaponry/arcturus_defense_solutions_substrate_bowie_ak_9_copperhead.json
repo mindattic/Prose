@@ -1,0 +1,47 @@
+{
+  "id": "1141d081f20b2dbfa42fb018d7d84e40",
+  "name": "Arcturus Defense Solutions Substrate Bowie AK-9 'Copperhead'",
+  "type": "weapon",
+  "aliases": [
+    "Copperhead",
+    "AK-9",
+    "Substrate Bowie",
+    "Big Ugly"
+  ],
+  "category": "melee",
+  "description": "A large clip-point bowie knife with a blade forged from a classified Arcturus substrate composite that combines carbon-lattice structural material with embedded aerogel pockets. The result is a blade that is simultaneously extremely hard and shock-absorbent — it holds a razor edge through impacts that would chip conventional carbon blades while absorbing vibration that would numb the wielder's hand. The Copperhead is Arcturus's answer to the question of what a fighting knife looks like when cost is not a constraint.\n\nThe AK-9's 25-centimeter blade is thick enough to be used as a prying tool, a breaching lever, and an improvised screwdriver without damaging the edge geometry. The clip point allows precise thrusting while the broad belly provides aggressive cutting capability — a versatile profile that has made the knife popular among field operators who need a single blade tool for every situation from camp craft to combat.\n\nArcturus produces the Copperhead in limited runs of 200 units per year, each individually serial-numbered and accompanied by a metallurgical certificate confirming the blade's substrate composition. The knife has developed a collector's market where well-used examples with documented field history command prices triple the original Φ4,500 retail. Arcturus has resisted pressure to increase production, maintaining that the substrate's manufacturing complexity prevents scaling.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — registered melee weapon",
+  "base_technologies": [
+    "Carbon-lattice/aerogel composite substrate",
+    "Shock-absorbent blade structure",
+    "Multi-purpose clip-point geometry"
+  ],
+  "specifications": "blade_length: 25 cm\ntotal_length: 38 cm\nweight: 340 g\nblade_material: Classified Arcturus substrate composite\nedge_hardness: 76 HRC equivalent with shock absorption\nproduction: 200 units per year\nretail_price: Φ4,500",
+  "tactical_use": "The Copperhead serves as an all-purpose field knife for operators who demand a single blade that handles every situation. Its shock-absorbent substrate allows it to be driven through barriers, used as a breaching tool, and employed in hand-to-hand combat without the brittleness that limits other high-hardness blades. The clip-point geometry favors both slashing and thrusting techniques. Field operators report that the AK-9 is the only knife they carry — it replaces the multiple specialized blades that other operatives pack.",
+  "cultural_context": "The Copperhead has become a status symbol among Meridian 88's professional operator class — carrying one signals both the financial means to acquire it and the field experience to justify the purchase. The knife's limited production and individual serialization have created a culture of provenance tracking, where each AK-9's history is documented and discussed. Operators who carry well-worn Copperheads with documented combat use are afforded respect that newer knives, regardless of cost, do not command.",
+  "known_users": [
+    "Arcturus field operatives",
+    "Professional contractors",
+    "Weapons collectors"
+  ],
+  "story_hooks": [
+    "A Copperhead serial number traces to a unit that was reported destroyed in a field incident three years ago — but the blade has fresh edge wear consistent with recent use. The operator who supposedly lost it is either lying or someone recovered the knife from a very dangerous place.",
+    "Arcturus's 'classified substrate' has been independently analyzed — the composition matches a material that was supposed to be exclusive to a military spacecraft program. Someone is diverting aerospace materials to knife production."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "knife",
+    "bowie",
+    "substrate",
+    "carbon-lattice",
+    "aerogel",
+    "tier 3",
+    "limited-production",
+    "less_lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

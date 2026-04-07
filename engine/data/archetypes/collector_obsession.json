@@ -1,0 +1,33 @@
+{
+  "id": "0be912a989c815b6db6975eb510f2773",
+  "name": "Collector Obsession",
+  "type": "archetype",
+  "category": "desire",
+  "description": "Wants one of everything, and then a better one",
+  "behavioral_signature": "Acquires objects, experiences, or people to complete sets",
+  "under_stress": "Becomes possessive and irrational about their collection",
+  "at_rest": "Catalogues, displays, maintains their treasures with care",
+  "will_always": [
+    "acquire the missing piece"
+  ],
+  "will_never": [
+    "give up a piece of the collection"
+  ],
+  "unless": [
+    "someone needs the object more than the collection needs completeness"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Hoarder",
+      "threshold": 0.8,
+      "context": "compulsive acquisition"
+    }
+  ],
+  "opposite_of": [
+    "Altruist"
+  ],
+  "tags": [
+    "acquisitive",
+    "obsessive"
+  ]
+}

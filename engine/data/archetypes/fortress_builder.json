@@ -1,0 +1,34 @@
+{
+  "id": "8ee0b3bc8f00a5a36ce2253108503b15",
+  "name": "Fortress Builder",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Survives by making their position impregnable rather than fleeing",
+  "behavioral_signature": "Every space they occupy gets hardened, reinforced, and trapped",
+  "under_stress": "Seals themselves in completely, losing contact with the outside",
+  "at_rest": "Improving defenses, checking locks, reinforcing walls",
+  "will_always": [
+    "fortify any position they hold"
+  ],
+  "will_never": [
+    "leave a known safe position for an uncertain one"
+  ],
+  "unless": [
+    "the fortress itself has been compromised beyond repair"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Safety First",
+      "threshold": 0.75,
+      "context": "defensive mindset"
+    }
+  ],
+  "opposite_of": [
+    "Nomad"
+  ],
+  "tags": [
+    "defense",
+    "fortification",
+    "territory"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e",
+  "name": "CHROMEWORKS Phantom Veil Stealth Ocular System",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "Phantom Veil Stealth Ocular System",
+  "type": "cyberware",
+  "aliases": [
+    "Ghost Peepers",
+    "Blankfaces",
+    "The Veil"
+  ],
+  "category": "ocular",
+  "body_location": "eyes",
+  "description": "The Phantom Veil is Chromeworks' answer to the professional surveillance and counter-surveillance market, packaging passive 4K retinal recording, multi-algorithm facial recognition, and active biometric scrambling into a unit visually indistinguishable from an unaugmented eye. The scrambling suite projects micro-distortion fields across the user's own facial geometry, defeating standard recognition systems at a 94% rated success rate against commercial-grade scanners. Low-light amplification brings performance to near-thermal clarity in darkness without the telltale glow of active sensors.\n\nThe Phantom Veil occupies a legally ambiguous zone — the recording and low-light functions are sold under a Licensed tier, but the biometric scrambling module technically constitutes identity-concealment hardware under Great Lakes law, pushing it into Restricted territory. Chromeworks sells the scrambler as a separate 'privacy module' to maintain plausible corporate deniability, but every installer knows exactly what the full kit is for.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 2-4",
+  "legality": "Restricted",
+  "installation_requirements": "Licensed cybernetics clinic for base unit; scrambler module installation frequently performed off-books; neural privacy partition recommended",
+  "rejection_risk": "Low — Chromeworks' neural integration is class-leading; scrambler module adds negligible biological load",
+  "maintenance": "Facial recognition database updates monthly via encrypted Chromeworks server; scrambler field recalibration every 4 months; retinal storage wiped manually by user",
+  "specifications": "{\"recording_resolution\": \"4K_retinal\", \"recording_storage_TB\": 8, \"facial_recognition_algorithms\": 4, \"scrambler_success_rate_commercial\": \"94%\", \"scrambler_success_rate_military\": \"61%\", \"low_light_amplification\": \"8000x\", \"active_glow_during_lowlight\": false, \"wireless\": \"air-gap_capable\", \"visual_appearance\": \"indistinguishable_from_natural\", \"scrambler_module\": \"optional_add-on\"}",
+  "side_effects": [
+    "Facial recognition subsystem occasionally activates involuntarily, generating unsolicited identity profiles of strangers in the user's visual field",
+    "Biometric scrambler causes mild proprioceptive dissonance — users report a subtle wrongness when viewing their own reflection",
+    "Continuous passive recording creates documented psychological effects around authenticity and memory trust",
+    "Scrambler field visible as minor visual artifacts to other users running active AR overlays"
+  ],
+  "cultural_context": "The Phantom Veil is the open secret of Meridian's professional shadow economy — journalists, investigators, fixers, and corporate spies all run them, and the city's security apparatus has a complicated relationship with a product that's technically illegal but manufactured by a premium brand with serious Spire-tier lobbying power. Chromeworks markets the base unit aggressively in Tier 3-4 'personal privacy' campaigns while quietly ensuring the scrambler module documentation never appears in official catalogs. Street-level installers call the full kit 'getting veiled,' and it's considered a serious professional investment.",
+  "known_users": [
+    "Freelance investigators and journalists",
+    "Corporate intelligence operatives",
+    "Professional fixers and intermediaries",
+    "Political dissidents and activists",
+    "High-end thieves and infiltration specialists"
+  ],
+  "story_hooks": [
+    "A Phantom Veil's 8TB retinal archive surfaces on the black market, containing months of footage from inside a Spire-tier corporate boardroom — the original owner is missing",
+    "The latest Chromeworks facial recognition update has a bug: it's misidentifying a specific face across hundreds of Veil users simultaneously, all flagging the same unknown individual as a high-priority target",
+    "An activist collective is being systematically hunted despite running Phantom Veils — someone has cracked the scrambler, and they need to know how before the next member disappears"
+  ],
+  "street_price": "Φ34,000",
+  "licensed_price": "Φ67,000",
+  "tags": [
+    "cyberware",
+    "ocular_implant",
+    "stealth",
+    "surveillance",
+    "facial_recognition",
+    "scrambler",
+    "low_light",
+    "restricted",
+    "chromeworks",
+    "ocular"
+  ],
+  "parent_corponation": ""
+}

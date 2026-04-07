@@ -1,0 +1,34 @@
+{
+  "name": "Orvana Occasion Gown — Tail-Vent Standard",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "formal_gown",
+  "manufacturer": "Orvana Atelier",
+  "description": "Orvana's accessible line — distinct from their Spire couture — is designed for Tier 3 buyers who want genuine tailoring at a price that doesn't require financing. The Occasion Gown is floor-length, cut in a silk-analog that holds color well and resists static cling in the charged air of most Meridian indoor venues. The Tail-Vent Standard variant includes a structured rear panel that splits cleanly from mid-hip to hem, with internal tension bands that keep the split closed when standing and open naturally under movement. It accommodates most TESSERA standard-issue geneware tails without bunching or binding.\n\nOrvana offers the gown in twelve colorways and four standard geneware configurations: tail-vent, wing-slit back, horn-clearance hood attachment, and standard. Custom configurations are available for an additional Φ40–Φ80. The construction is clean and the fit is reliable. It is not a statement piece — it is a dress that works, that lasts, and that doesn't make the wearer think about it during the event.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ190",
+  "augment_compatible": false,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The Orvana Occasion line is the default formal purchase for Tier 3 geneware-modified individuals. It's common enough at mid-tier events that it reads as baseline rather than aspirational. Some people are proud of it; others find it slightly embarrassing to be wearing the same gown as three other people at the same function. Orvana has responded to this by expanding their colorway range annually.",
+  "story_hooks": [
+    "At a corporate reception, the character is wearing the same gown in the same colorway as a TESSERA genomics consultant. The consultant assumes this means they work for TESSERA. The character doesn't correct her immediately.",
+    "The character's tail is a non-standard TESSERA modification — slightly longer and heavier than the spec the Tail-Vent Standard is designed for. The tension bands give out midway through an important event.",
+    "A fashion journalist from a Ringo lifestyle feed is doing a piece on 'the democratization of geneware fashion.' They want to photograph the character in the gown. The character has complicated feelings about being used as evidence of progress."
+  ],
+  "tags": [
+    "formal",
+    "gown",
+    "geneware-compatible",
+    "tail-vent",
+    "silk-analog",
+    "Orvana",
+    "Tier 3",
+    "occasion",
+    "mid-tier",
+    "TESSERA-adjacent"
+  ],
+  "id": "82cb581f82104d2ca261ba8b070fae6d",
+  "parent_corponation": ""
+}

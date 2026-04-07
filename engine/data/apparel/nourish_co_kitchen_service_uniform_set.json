@@ -1,0 +1,34 @@
+{
+  "name": "Nourish & Co. Kitchen Service Uniform Set",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "food_service",
+  "manufacturer": "Nourish & Co. Foodservice Supply",
+  "description": "The standard uniform for kitchen workers at Nourish & Co. contracted canteens — the corporate cafeteria chains that feed the working population of Meridian 88's Tier 2 and 3 commercial zones. The set includes a double-breasted chef coat in heat-resistant spun polyaramid, a bib apron with a wipe-clean surface coating, and adjustable trouser pulls. The coat is rated for sustained heat up to 260°C and resists oil, acid, and most cleaning chemical splashes. Color is white with Nourish & Co.'s green-stripe trim. The apron has an embedded RFID tag that logs when it's collected and returned from the facility's laundry system — a measure ostensibly for inventory control.\n\nThe uniform is produced in configurations that address the full range of kitchen workers in 2200: the coat collar includes a snap-out panel for workers with neck-mounted chrome or BCI hardware, and alternative headgear options include structured caps with horn-clearance inserts and elasticized wraps that conform to ear modifications or unusual head shapes. The standard hairnet alternative for workers with bioluminescent or modified skin is a full-coverage food-safe skull cap. The uniform is the property of the facility, not the worker, and must be returned at end of employment — a fact enforced by the RFID logging system.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ55",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "Kitchen work in M88 is grueling, essential, and chronically undervalued. The Nourish & Co. uniform marks you as part of the invisible infrastructure that feeds the city. Workers develop strong bonds with their kitchen crews — the uniform is shared, the work is shared, and the complaints about the RFID tracking are universal.",
+  "story_hooks": [
+    "The RFID logging system in a Nourish & Co. canteen has been cross-referencing uniform collection times with worker political association data — someone is using the laundry system as a surveillance tool.",
+    "A kitchen worker discovers that her facility's food supply chain runs through a Crucible subsidiary that's been substituting synthetic protein sources without disclosure.",
+    "A Tier 4 corporate dining facility that uses Nourish & Co. contract staff has a contamination incident — and the kitchen workers are being pressured to sign NDAs before anyone investigates."
+  ],
+  "tags": [
+    "food-service",
+    "kitchen",
+    "heat-resistant",
+    "uniform",
+    "augment-compatible",
+    "geneware-compatible",
+    "nourish-co",
+    "tier2",
+    "canteen",
+    "chef"
+  ],
+  "id": "7afa1da10b7d4ee39739d973d3ce1267",
+  "parent_corponation": ""
+}

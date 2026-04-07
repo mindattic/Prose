@@ -1,0 +1,59 @@
+{
+  "id": "2e9a5d0c7f4b1836ea72c0f3d8b15a47",
+  "name": "SynapTech Muse Direct Neural-to-Medium Creative Interface",
+  "brand_name": "SynapTech",
+  "product_name": "Muse Direct Neural-to-Medium Creative Interface",
+  "type": "cyberware",
+  "aliases": [
+    "The Muse",
+    "Muse Direct",
+    "Dreambrush",
+    "NTM Rig"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The SynapTech Muse Direct is a professional-grade neural-to-medium creative interface engineered for artists, musicians, composers, sculptors, and mixed-media practitioners who require high-fidelity translation of pre-conscious creative intention into physical or digital output. The device maps activity across the default mode network, visual cortex, auditory processing centers, and motor planning regions simultaneously, constructing a real-time model of the user's creative intent that precedes conscious articulation by 200–800 milliseconds — the window in which artists most commonly report their 'purest' creative impulses. This pre-articulation signal is routed through SynapTech's proprietary IntentEngine v4 translation layer, which converts neural pattern streams into medium-specific output commands: brush stroke vectors for digital or physical painting rigs, MIDI and synthesis parameters for music production, spatial coordinates for sculptural fabrication systems, or raw data streams for custom artistic workflows. The Muse Direct supports up to 12 simultaneous output channels and is compatible with SynapTech's full suite of Muse-certified peripheral hardware as well as most third-party creative hardware via the open NTM-Bridge protocol.\n\nThe Muse Direct occupies a peculiar and celebrated position in Meridian 88's creative underground and its upscale gallery circuits simultaneously — a device that has been embraced by both the commercial art establishment and the anti-commercial avant-garde, albeit for completely different reasons and with completely different anxieties attached. For established artists, it represents the purest possible expression of their vision, eliminating the physical mediation of hand, voice, or instrument between thought and work. For the underground, it raises the unsettling question of authorship: when a piece is created by neural signal translated by a corporate algorithm, who made it — the artist, the algorithm, or SynapTech? Several high-profile legal cases in Meridian 88's creative IP courts have yet to resolve this question, and SynapTech's licensing agreements now contain a controversial clause asserting partial ownership of works created using the IntentEngine translation layer.",
+  "manufacturer": "SYNAPTECH",
+  "tier_availability": "Tier 3–4",
+  "legality": "Licensed — Creative Industry Augmentation License (CIAL) required; SynapTech certification program available for professional installation",
+  "installation_requirements": "SynapTech-certified neurotechnician or licensed neurosurgeon; creative baseline neural mapping (default mode network, visual, auditory, motor planning); 60-day IntentEngine calibration period; medium-specific peripheral calibration",
+  "rejection_risk": "Low-moderate (6.3%); elevated in individuals with atypical default mode network architecture",
+  "maintenance": "Monthly IntentEngine model refinement (OTA or clinic); annual electrode array maintenance; peripheral calibration updates as hardware changes; SynapTech Muse subscription required for IntentEngine updates (Φ200/year)",
+  "specifications": "{\"mapped_regions\": [\"default mode network\", \"visual cortex\", \"auditory processing\", \"motor planning\"], \"pre_articulation_window\": \"200–800 ms\", \"translation_layer\": \"SynapTech IntentEngine v4\", \"output_channels\": \"up to 12 simultaneous\", \"output_formats\": [\"brush stroke vectors\", \"MIDI/synthesis parameters\", \"spatial fabrication coordinates\", \"raw NTM data stream\"], \"peripheral_compatibility\": \"SynapTech Muse-certified + NTM-Bridge open protocol\", \"calibration_period\": \"60 days\", \"battery_life\": \"30 months (inductive recharge)\", \"connectivity\": \"SynapTech SecureMesh + NTM-Bridge\", \"ip_clause\": \"SynapTech EULA Section 14.3 — partial output ownership claim\"}",
+  "side_effects": [
+    "Creative block amplification — users who experience creative block report it as significantly more distressing and physically uncomfortable than pre-installation, as the device heightens awareness of the absence of the pre-articulation signal",
+    "Synesthetic cross-channel bleed in 8% of long-term users: auditory creative intent bleeds into visual output channels and vice versa, producing unintended synesthetic work that some users regard as a feature and others as a malfunction",
+    "Reported cases of creative identity dissolution — artists who use the Muse Direct for extended periods describe difficulty distinguishing between their 'natural' creative voice and the IntentEngine's translation, raising questions about whose aesthetic sensibility is ultimately shaping the work"
+  ],
+  "cultural_context": "The Muse Direct has generated a recognizable subculture within Meridian 88's art world — practitioners who work exclusively with the device call themselves 'neural purists' and hold that NTM-created work represents the only authentic art form, while a vocal counter-movement of 'hands-only' artists has emerged in deliberate opposition, treating unaugmented creation as a radical act. The SynapTech IP clause has become a cause célèbre in creative rights circles, with several prominent artists publicly destroying their Muse units in gallery performances to reclaim full ownership of their work.",
+  "known_users": [
+    "Professional visual artists and digital painters working in Meridian 88's commercial gallery circuit",
+    "Electronic and experimental musicians using the device for live neural performance",
+    "Architectural designers and industrial sculptors in high-end fabrication studios",
+    "Underground neural-art collectives producing work that deliberately exploits synesthetic cross-channel bleed"
+  ],
+  "story_hooks": [
+    "A celebrated neural artist is found dead with her Muse Direct surgically removed post-mortem. Her final work — completed in the hours before her death — contains embedded in its raw NTM data stream what appears to be a detailed account of a murder she witnessed. The IntentEngine translated it as abstract color fields. Someone clearly wanted the device before anyone could decode it.",
+    "SynapTech's Section 14.3 IP clause is being tested in court for the first time — a composer claims the IntentEngine's contribution to his award-winning neural symphony was statistically indistinguishable from autonomous composition, meaning SynapTech may legally own the work. He needs evidence that the clause was fraudulently inserted into contracts without adequate disclosure.",
+    "A black market version of the IntentEngine translation layer is circulating — one that lacks SynapTech's ownership clause but also lacks its safety governors, allowing pre-articulation capture to go deeper into non-conscious processing than the licensed version permits. The unlicensed works being produced are extraordinary and deeply disturbing, and two artists using the pirated firmware have been hospitalized with severe dissociative episodes."
+  ],
+  "street_price": "Φ12,000",
+  "licensed_price": "Φ22,500",
+  "tags": [
+    "cyberware",
+    "bci",
+    "creative",
+    "artist",
+    "musician",
+    "neural-to-medium",
+    "ntm",
+    "professional",
+    "licensed",
+    "tier3",
+    "tier4",
+    "synaptech",
+    "intellectual-property",
+    "specialized"
+  ],
+  "parent_corponation": ""
+}

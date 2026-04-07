@@ -13,7 +13,7 @@
   "category": "vehicle",
   "body_location": "",
   "description": "The Ironback APC is a mid-weight armored personnel carrier built on a modular chassis platform developed by Arcturus Defense Solutions for urban pacification and corporate security operations. Powered by a hybrid fuel-cell and kinetic recovery drivetrain, it delivers consistent torque across debris-laden terrain while maintaining a low thermal signature relative to its armor class. The vehicle seats eight in a sealed rear compartment with independent air filtration, capable of sustaining occupants through chemical dispersal zones or ash-fall events common in Meridian 88's industrial corridors.\n\nWhat distinguishes the Pallbearer from competitor APCs is its Reactive Composite Hull — RCH-7 plating that redistributes ballistic impact energy laterally through a mesh of micro-hydraulic buffers embedded in the outer skin. This gives the vehicle an almost eerie quality during firefights: rounds strike and the chassis shudders but never buckles, earning its reputation as a vehicle that absorbs punishment without visible distress. The interior is fitted with Arcturus's Suppression Array — six outward-facing acoustic and chemical dispensers capable of deploying crowd-control payloads in a 40-meter radius while the vehicle remains sealed.\n\nThe Pallbearer is the workhorse of corporate strike teams, municipal enforcement contractors, and mid-tier merc outfits with the capital to lease or steal one. It appears at labor riots, extraction operations, and the slower, grimmer end of corporate disputes where presence and intimidation matter as much as firepower. In Meridian 88's poorer districts, the sight of a Pallbearer rolling through a narrow street has become a cultural shorthand for the end of something — a negotiation, a neighborhood, a life.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Meridian Neural Defense",
   "tier_availability": "Tier 3+",
   "legality": "Licensed",
   "installation_requirements": "",
@@ -54,5 +54,6 @@
     "energy",
     "fire",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

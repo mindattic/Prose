@@ -1,0 +1,44 @@
+{
+  "id": "d1e4b7a092fc3580e6d2c1f4a8b37e05",
+  "name": "Ferrochem NovaClear Fab Cleanroom Suit Type-F",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A Tier 3–4 cleanroom enclosure suit for chip fabrication floors and geneware synthesis labs. Constructed from triple-layered antistatic polyfilm over a breathable HEPA-bonded inner lining, the NovaClear is sealed at every joint with ultrasonic-welded gaskets. Color is uniform pale blue-white with Ferrochem's teal stripe along the outer arms and legs.\n\nThe hood integrates a positive-pressure filtered air supply and a wide visor with anti-fog coating. Glove ports accept standard or aug-interface gauntlets. The suit is rated Class 10 particulate.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "antistatic triple-layer polyfilm",
+    "HEPA-bonded breathable inner lining",
+    "ultrasonic-welded polyurethane gaskets",
+    "polycarbonate visor",
+    "positive-pressure filtered air bladder"
+  ],
+  "functionality": "Class 10 particulate rating blocks contaminants down to 0.1 microns. Positive-pressure air supply prevents inward contamination. Antistatic outer shell protects sensitive fab components. Glove ports are aug-compatible for chrome-hand technicians. Integrated humidity sensor alerts to seal degradation.",
+  "what_it_says": "Someone who works in a controlled environment worth more per square meter than most people earn in a year.",
+  "worn_by": [
+    "chip fabrication floor technicians",
+    "geneware synthesis lab workers",
+    "biotech quality control staff",
+    "Tier 3 pharmaceutical line operators"
+  ],
+  "manufacturer": "Ferrochem Industrial Division (corponation)",
+  "price_range": "Φ600 – Φ1,100 (per unit, employer-issued)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A technician has been smuggling out single-use polyfilm panels to sell to Shelf medics who use them as sterile wound covers.",
+    "The suit's air supply logged an anomalous atmospheric compound during a recent shift — one that shouldn't exist in a sealed fab.",
+    "Someone has been leaving unmarked data chips inside the glove ports before shift changes."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "cleanroom",
+    "fab",
+    "biotech",
+    "geneware",
+    "full-body",
+    "industrial",
+    "antistatic"
+  ],
+  "parent_corponation": ""
+}

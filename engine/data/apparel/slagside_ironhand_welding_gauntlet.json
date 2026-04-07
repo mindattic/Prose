@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b9d04582f6a1c3e7d2b85f04",
+  "name": "Slagside Ironhand Welding Gauntlet",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Heavy split-leather gauntlets reinforced with ceramic fiber panels across the knuckles and dorsal hand, stitched in double-pass aramid thread. The wrist cuffs are wide and buckled with reclaimed steel hardware, scorched amber-brown from repeated heat exposure. Most pairs show carbon streaks and flux spatter that no cleaning removes — worn like a badge.\n\nLining is a single layer of reflective fiberglass batting, functional but unrefined. The thumb and index finger are reinforced with additional ceramic tile insets for arc-strike resistance. Sold in pairs, often resold individually on Shelf markets.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "split cowhide-analog leather",
+    "ceramic fiber panels",
+    "aramid thread",
+    "reclaimed steel buckles",
+    "fiberglass batting"
+  ],
+  "functionality": "Rated for arc welding and open-flame exposure up to 900°C brief contact. Wide cuff protects the forearm gap common in aug-compatible sleeves. No haptic or electronic components — fully passive thermal protection.",
+  "what_it_says": "This person works with fire and doesn't complain about it.",
+  "worn_by": [
+    "Shelf welders",
+    "scrapyard workers",
+    "salvage crews",
+    "DIY fabricators",
+    "circuit factory floor workers"
+  ],
+  "manufacturer": "Slagside (street label, Shelf-origin)",
+  "price_range": "Φ18–Φ35",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of these gloves is found at a crime scene — the wearer left behind no prints, but the ceramic dust matches a specific batch sold only to one Shelf fabricator.",
+    "A Tier 3 inspector arrives at a factory floor and notices a worker's Slagside gauntlets have been modified with a hidden wire channel — someone's routing signal through the cuff."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "work gloves",
+    "welding",
+    "industrial",
+    "tier-1",
+    "tier-2",
+    "shelf",
+    "heat-resistant",
+    "protective",
+    "street-label"
+  ],
+  "parent_corponation": ""
+}

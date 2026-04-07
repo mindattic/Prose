@@ -1,0 +1,43 @@
+{
+  "id": "2e8a1f4b7d0c3956e2a8f1b4d7c09536",
+  "name": "Shelf Standard Rain Poncho",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "A shapeless pull-over poncho in heavy-duty recycled polyurethane, available in grey, olive, and a faded rust-orange. It covers from the crown of the head to mid-thigh, has a single drawstring hood, and two slash pockets that are more or less watertight. The seams are heat-welded rather than sewn. It folds into its own small pouch. On the Shelf, where covered transit is patchy and the lakefront weather comes in fast, this is a survival item as much as a garment.\n\nThese are manufactured by several competing Shelf-adjacent micro-operations, all producing nearly identical product at the lowest possible price point. Some are stamped with brand names — Greycoast, Dura-Lo, Westpont Basics — that may or may not represent actual ongoing companies. Quality varies. The orange ones are slightly better-made than the others, according to a persistent Shelf rumor that may or may not have any basis in fact.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "recycled polyurethane",
+    "heat-welded seams",
+    "nylon drawstring"
+  ],
+  "functionality": "",
+  "what_it_says": "You are on the Shelf or close to it. You bought this because you had to. You might be embarrassed by it or you might not care at all.",
+  "worn_by": [
+    "Shelf residents",
+    "day laborers",
+    "the very poor",
+    "anyone caught without better options",
+    "Tier 2 workers in hazardous wet environments"
+  ],
+  "manufacturer": "Various Shelf-adjacent micro-manufacturers (Greycoast, Dura-Lo, Westpont Basics)",
+  "price_range": "Φ15",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A body was found wearing one of these — the manufacturing stamp on the inside identifies a specific Shelf block production run, which could pinpoint where the victim lived",
+    "Someone has been distributing these to Shelf residents for free, with a small symbol stamped inside each one — nobody knows who or why",
+    "A Tier 4 fashion house released a 'deconstructed homage' to this poncho for Φ2,400 and the feeds are furious"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "tier 1",
+    "poncho",
+    "rain gear",
+    "no-tech",
+    "survival wear",
+    "shelf",
+    "cheap"
+  ],
+  "parent_corponation": ""
+}

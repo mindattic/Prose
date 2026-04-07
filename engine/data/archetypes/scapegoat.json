@@ -1,0 +1,34 @@
+{
+  "id": "a3050d7f38c7ded881b492fd5fe48429",
+  "name": "Scapegoat",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Always the one who takes the blame whether they deserve it or not",
+  "behavioral_signature": "Somehow at the center of every failure despite doing their job correctly",
+  "under_stress": "Accepts blame they don't deserve because fighting it seems pointless",
+  "at_rest": "Waiting for the next thing to go wrong that'll be their fault",
+  "will_always": [
+    "end up holding the blame"
+  ],
+  "will_never": [
+    "successfully deflect responsibility onto the actual guilty party"
+  ],
+  "unless": [
+    "they finally snap and expose the real source of failure"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Fall Guy",
+      "threshold": 0.9,
+      "context": "taking blame"
+    }
+  ],
+  "opposite_of": [
+    "Teflon"
+  ],
+  "tags": [
+    "blame",
+    "sacrifice",
+    "invisible"
+  ]
+}

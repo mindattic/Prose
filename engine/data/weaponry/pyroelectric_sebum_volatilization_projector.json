@@ -9,7 +9,7 @@
   ],
   "category": "exotic",
   "description": "The PSVP-1 uses a focused pyroelectric excitation beam to rapidly heat the lipid-rich sebaceous secretions present on human skin to their volatilization threshold, producing a thin layer of ignitable vapor directly against the target's epidermis. A secondary piezoelectric ignition pulse, delivered 0.4 seconds after the primary beam, ignites this vapor layer. The result is a flash-burn effect that originates on the skin's surface rather than being applied externally — it cannot be blocked by standard fire-resistant outerwear because the fuel source is the body itself.\n\nThe weapon's tactical novelty is its ability to defeat fire-protective equipment that would otherwise render incendiary weapons ineffective. Flame-retardant suits, ceramic composite armor, and even experimental aerogel body armor provide no meaningful protection against an ignition event that begins at the skin layer. The burn produced is typically superficial to partial-thickness depending on exposure duration, but the psychological effect of fire appearing beneath armor is profound and immediately disabling in most subjects.\n\nThe PSVP-1 is a Ringo Corponation product, developed under a contract that has never been publicly disclosed and which Ringo's legal division actively suppresses inquiry into. The weapon saw limited deployment in a corporate territorial dispute in the outer sectors approximately three years ago, after which two municipal investigators who were building a war crimes case died in unrelated accidents. The weapon's existence is known primarily through survivor accounts and a single partially intact unit recovered by an independent forensic team.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Bright Block Childcare",
   "tier_availability": "Black market",
   "legality": "Prohibited",
   "base_technologies": [
@@ -54,6 +54,8 @@
     "shadow",
     "armor",
     "energy",
-    "fire"
-  ]
+    "fire",
+    "lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

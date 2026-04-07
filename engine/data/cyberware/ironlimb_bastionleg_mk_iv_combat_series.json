@@ -1,0 +1,59 @@
+{
+  "id": "5c9e3b2a1f7d84062e4b8c1a3d5f9720",
+  "name": "Ironlimb Bastionleg MK-IV Combat Series",
+  "brand_name": "IRONLIMB",
+  "product_name": "Ironlimb Bastionleg MK-IV Combat Leg System",
+  "type": "cyberware",
+  "aliases": [
+    "Bastions",
+    "Ironboots",
+    "MK-Fours"
+  ],
+  "category": "leg",
+  "body_location": "legs",
+  "description": "The Bastionleg MK-IV is a military-lineage full leg replacement built from hardened titanium-alloy with reinforced knee and hip interface joints rated to 900kg compressive load. The system integrates a magnetic boot interface in the heel and toe plate compatible with ferrous surfaces and standard combat vehicle flooring, and a layered hydraulic-pneumatic impact absorption stack in the knee that converts fall energy into stored pressure for assisted jump launches. Onboard gyroscopic stabilizers maintain balance during high-G maneuvers and surface recoil events. The MK-IV added civilian licensing provisions to the MK-III military frame, primarily by removing the integrated weapon hardpoints.\n\nThe Bastionleg is the limb of choice for private security contractors, licensed bounty hunters, and former military personnel who couldn't part with hardware that kept them alive. In the lower tiers it's grey-market common — the military surplus pipeline leaks MK-IIIs constantly, and chop-shop techs hack the restricted firmware to civilian-adjacent compliance. Street culture treats the Bastionleg as a mark of serious professional violence, and most civilians give wearers visible deference.",
+  "manufacturer": "IRONLIMB",
+  "tier_availability": "Tier 2-4",
+  "legality": "Restricted",
+  "installation_requirements": "Licensed combat-prosthetics surgeon, bilateral installation strongly recommended for balance calibration, 6-week load-bearing rehabilitation",
+  "rejection_risk": "Moderate — titanium alloy frame requires extended osseointegration; hydraulic fluid biocompatibility varies by patient",
+  "maintenance": "Hydraulic fluid flush every 6 months; joint armor inspection after combat use; magnetic interface recalibration annually",
+  "specifications": "{\"weight_per_limb_kg\": 4.2, \"compressive_load_rating_kg\": 900, \"impact_absorption\": \"hydraulic-pneumatic knee stack, rated 6m freefall\", \"magnetic_boot_interface\": \"ferrous surface rated, 340kg hold force\", \"gyroscopic_stabilizers\": true, \"jump_assist_stored_pressure\": \"up to 1.4x standard jump height\", \"armor_rating\": \"ballistic resistant plating, NIJ Level IIA equivalent\", \"material\": \"hardened titanium-alloy frame, composite outer shell\", \"power_source\": \"dual lithium-ceramic cells\", \"battery_life_hours\": 96}",
+  "side_effects": [
+    "Significant weight increase affects swimming ability and buoyancy — users require flotation assistance in water",
+    "Magnetic boot interface causes interference with sensitive electronics when active within 30cm",
+    "Hydraulic pressure buildup during prolonged inactivity causes stiffness and audible joint groaning on first movement",
+    "Gyroscopic stabilizers can overcorrect on moving platforms, causing lurching gait on boats or trains"
+  ],
+  "cultural_context": "The Bastionleg MK-IV carries the unmistakable visual grammar of institutional violence — thick plated shins, matte-black joint housings, and the distinctive magnetic heel click on hard floors. Security professionals wear them openly as deterrence signaling. In Tier 1-2 districts, encountering someone on Bastionlegs means calculating exit routes before saying hello.",
+  "known_users": [
+    "Private security contractors and corporate enforcement personnel",
+    "Licensed bounty hunters and fugitive recovery agents",
+    "Former military personnel maintaining combat-grade hardware",
+    "Grey-market enforcers and organized crime muscle",
+    "Extreme industrial workers in high-crush-risk environments"
+  ],
+  "story_hooks": [
+    "A shipment of MK-IV units has been intercepted by dock workers who discovered the 'civilian' firmware is a thin veneer over fully active MK-III combat systems — someone is arming a private force",
+    "A Bastionleg user is leaving magnetic interference traces at crime scenes, but the registered owner died six months ago",
+    "A Tier 1 community is pooling resources to buy a single MK-IV for their neighborhood watch captain — and someone powerful wants to stop the purchase"
+  ],
+  "street_price": "Φ45,000",
+  "licensed_price": "Φ98,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "leg",
+    "combat",
+    "military",
+    "reinforced",
+    "magnetic-boot",
+    "impact-absorption",
+    "ironlimb",
+    "tier2",
+    "tier3",
+    "tier4",
+    "restricted"
+  ],
+  "parent_corponation": ""
+}

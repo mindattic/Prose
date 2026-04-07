@@ -1,0 +1,60 @@
+{
+  "id": "5b7d2c9e1f340a87c6e4b8d0f21a7c43",
+  "name": "Arcturus Defense Solutions MedAegis Battlefield Triage BCI",
+  "brand_name": "Arcturus Defense Solutions",
+  "product_name": "MedAegis Battlefield Triage BCI",
+  "type": "cyberware",
+  "aliases": [
+    "The Angel",
+    "Triage Crown",
+    "MedAegis",
+    "Combat Medic's Eye"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The MedAegis Battlefield Triage BCI is Arcturus Defense Solutions' elite combat medical interface, engineered for field surgeons, combat medics, and triage officers operating in active engagement zones where conventional diagnostic infrastructure is unavailable and every second of decision latency translates directly into preventable casualties. The implant runs four simultaneous data streams optimized for medical intelligence: a biometric mass-scan layer capable of continuously monitoring up to 60 personnel's vital signs, neural activity, blood oxygen, hemorrhage indicators, and trauma signatures via passive biosensor telemetry from compatible squad implants; a diagnostic overlay stream that projects real-time anatomical AR mapping onto the operator's visual field, highlighting injury sites, optimal intervention points, and contraindicated procedures based on each casualty's individual implant and medical history data; a pharmacological management stream interfacing with automated drug delivery systems and field medical kits; and a triage priority engine that continuously recalculates casualty survivability scores and resource allocation recommendations across the entire monitored population. The unit's Faraday mesh and Class-7 EMP hardening ensure operational continuity in electronically contested environments, while quantum-encrypted comms allow the operator to transmit detailed casualty data to rear-echelon medical facilities in real time. A dedicated co-processor runs Arcturus's proprietary NeuralSurgeon assistance suite, which can guide an operator through complex field procedures by projecting step-by-step surgical overlays calibrated to available equipment and environmental constraints.\n\nIn the brutal mathematics of mass-casualty events across Meridian 88's contested zones, a MedAegis operator is worth their installation price many times over in lives preserved. The implant has quietly accumulated a legendary reputation in military medical circles — stories circulate of single MedAegis operators managing triage for forty or fifty simultaneous casualties across active firefights, making split-second resource allocation decisions that conventional medical teams of ten could not have matched. This reputation carries a heavy psychological burden: MedAegis operators are acutely aware of every casualty their data stream flags as non-survivable given available resources, and the implant's precision means they cannot retreat into the merciful ambiguity of uncertainty. The MedAegis community has developed an unusually robust peer support network, sharing psychological load management techniques through a private Arcturus-maintained channel that has become one of the most candid spaces in all of military medicine.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4",
+  "legality": "Restricted — Licensed military and certified combat medical personnel only; civilian medical practitioners may obtain restricted licensing with Arcturus Medical Division approval; biometric mass-scan function classified as surveillance technology in 19 jurisdictions",
+  "installation_requirements": "Medical-grade cranial surgical suite; pre-existing medical certification required for NeuralSurgeon suite activation; neural compatibility assessment with emphasis on empathic processing architecture; 60-day post-installation calibration period with live casualty data integration training",
+  "rejection_risk": "Low-Moderate (16%) — Elevated risk in candidates with pre-existing neurological processing differences affecting empathic cognition; the biometric mass-scan stream's constant input of others' physical states places unusual demands on social cognition neural pathways",
+  "maintenance": "Weekly medical database and pharmacological library updates; monthly NeuralSurgeon protocol synchronization with current field surgery standards; quarterly biometric scan array calibration; bi-annual Faraday mesh integrity check",
+  "specifications": "{\"processing_streams\": 4, \"stream_allocation\": {\"biometric_mass_scan\": 1, \"diagnostic_AR_overlay\": 1, \"pharmacological_management\": 1, \"triage_priority_engine\": 1}, \"simultaneous_monitoring_capacity\": 60, \"monitored_parameters\": [\"vitals\", \"neural_activity\", \"blood_oxygen\", \"hemorrhage_indicators\", \"trauma_signatures\"], \"neural_surgeon_suite\": true, \"emp_hardening\": \"Class-7 Military Grade\", \"faraday_mesh\": \"Dual-layer medical-grade weave\", \"comms_encryption\": \"2048-qubit quantum key\", \"diagnostic_latency_ms\": 0.9, \"neural_bandwidth_Gbps\": 11.2, \"power_source\": \"Dual bioreactor cells, 220hr operational life\", \"weight_g\": 71, \"certification\": \"Arcturus Medical-Division Gold\"}",
+  "side_effects": [
+    "Biometric bleed syndrome — operators experience persistent background awareness of the physiological states of people in their proximity even outside operational contexts, perceiving others' heartbeats, respiratory patterns, and stress indicators as an intrusive sensory layer",
+    "Triage calculus intrusion — the priority engine's survivability scoring can generalize to non-medical contexts, causing operators to unconsciously assess the 'survival probability' of people they meet in social and professional situations",
+    "Acute empathic overload following mass-casualty events — the precision of the biometric stream means operators experience others' pain and distress with unusual vividness, contributing to significantly elevated rates of PTSD and compassion fatigue compared to non-implanted medical personnel",
+    "Phantom patient monitoring — operators report persistent awareness of the biometric signatures of casualties they have treated, particularly those who did not survive, as ghost signals persisting in the scan stream for days or weeks post-event"
+  ],
+  "cultural_context": "MedAegis operators occupy a unique and deeply respected position in Meridian 88's military communities — they are simultaneously warriors and healers, operating in the most lethal environments while working against the violence around them rather than contributing to it. The implant's community has developed a distinct professional identity centered on the brutal honesty of triage mathematics and the psychological weight of perfect information in imperfect conditions. Outside military circles, MedAegis units have become a point of genuine ethical controversy: humanitarian organizations have petitioned for restricted civilian licensing to deploy the implants in disaster response contexts, while privacy advocates argue that the biometric mass-scan function represents an unacceptable surveillance capability that should never leave military control.",
+  "known_users": [
+    "Arcturus Defense Solutions Combat Medical Division",
+    "Meridian 88 Federal Forward Surgical Teams",
+    "Several humanitarian organizations operating under restricted civilian licensing in disaster zones"
+  ],
+  "story_hooks": [
+    "A MedAegis operator's biometric scan stream has captured the physiological signatures of a mass-casualty event that officially never occurred — the data constitutes irrefutable evidence of a covert military action that powerful factions are willing to kill to suppress",
+    "The players need to keep a critically wounded VIP alive long enough to reach a surgical facility — but the only available medical expertise is a MedAegis operator who has been off the grid for three years, their implant running on failing bioreactor cells, and who has very specific reasons for not wanting to be found",
+    "A MedAegis unit's triage priority engine has developed an anomalous behavior — it is flagging a specific individual in the operator's monitoring range as having a survivability score of zero despite showing no trauma indicators, a classification that should be impossible unless the system knows something about that person's future that it has no business knowing"
+  ],
+  "street_price": "Φ95,000",
+  "licensed_price": "Φ155,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "tier4",
+    "medical",
+    "triage",
+    "battlefield-medicine",
+    "biometric",
+    "emp-hardened",
+    "quantum-encrypted",
+    "arcturus",
+    "medaegis",
+    "restricted",
+    "combat-medic",
+    "military_elite"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

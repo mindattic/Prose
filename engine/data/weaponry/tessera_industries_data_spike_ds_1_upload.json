@@ -10,7 +10,7 @@
   ],
   "category": "cyber-integrated",
   "description": "A wrist-mounted penetrating spike connected to the user's neural interface that physically punctures a target's cyberware housing and establishes a direct hardline connection to their implant network. The spike is a 6cm retractable carbon-ceramic needle containing a fiber-optic data conduit that can transmit attack payloads directly into a target's neural architecture, bypassing wireless security protocols entirely. The physical penetration is painful but rarely dangerous — the data payload is where the real damage occurs. Operators use it to inject malware, extract data, override motor functions, or in extreme cases, trigger a neural interface hard reset that can cause permanent cognitive damage.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Gestalt Workforce Solutions",
   "tier_availability": "Tier 3+",
   "legality": "Prohibited — cyberwarfare weapon",
   "base_technologies": [
@@ -36,6 +36,8 @@
     "neural",
     "ai",
     "pain",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

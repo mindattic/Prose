@@ -1,0 +1,34 @@
+{
+  "id": "1cf4f019e5052cc5799fe2be5d316ead",
+  "name": "Guilt Engine",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Powered by guilt for things real and imagined, past and future",
+  "behavioral_signature": "Apologizes for things that aren't their fault",
+  "under_stress": "Guilt becomes so heavy they can't make any decision for fear of causing harm",
+  "at_rest": "Running a constant inventory of things they should feel bad about",
+  "will_always": [
+    "assume they're at fault"
+  ],
+  "will_never": [
+    "accept that something isn't their problem"
+  ],
+  "unless": [
+    "someone explicitly and repeatedly absolves them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Guilt Carrier",
+      "threshold": 0.9,
+      "context": "carrying guilt"
+    }
+  ],
+  "opposite_of": [
+    "Self Righteous"
+  ],
+  "tags": [
+    "guilt",
+    "responsibility",
+    "burden"
+  ]
+}

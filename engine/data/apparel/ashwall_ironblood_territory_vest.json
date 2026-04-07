@@ -1,0 +1,41 @@
+{
+  "id": "a3f7c2e1b09d4856f1a2c3d4e5f60718",
+  "name": "Ashwall Ironblood Territory Vest",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A cut-off denim vest rebuilt from salvaged Goretek cargo shell, bleached to a deep rust-orange then hand-dyed in overlapping territorial bands — black at the shoulders fading to raw indigo at the hem. The back panel carries hand-painted gang insignia in corrosive silver paint: a spiked circuit-wheel over a cracked meridian line. Patches are layered three deep at the chest — some earned, some taken. Seam edges are raw and deliberate, reinforced with copper rivets along the armholes.\n\nShoulder and collar edges are scarred with chemical burns treated as decoration. Inside left chest bears a hand-stitched name tag in a dead language nobody corrects.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed denim shell",
+    "hand-applied corrosive silver paint",
+    "copper rivets",
+    "salvaged patch fabric",
+    "hand-dyed territorial pigment"
+  ],
+  "functionality": "Offers no ballistic protection but carries deep social armor — rival crews read the patches and color bands instantly. Rear insignia is UV-reactive under Shelf blacklights, confirming affiliation in low-light territory disputes.",
+  "what_it_says": "This person has survived long enough to earn their colors and isn't interested in hiding who they run with.",
+  "worn_by": [
+    "Shelf gang members",
+    "territorial block captains",
+    "crew veterans displaying rank"
+  ],
+  "manufacturer": "Self-made / crew-sanctioned",
+  "price_range": "Φ 0 (earned, never sold)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A runner finds a vest matching their dead sibling's crew insignia on a stranger across a checkpoint.",
+    "The silver paint on the back panel contains a compressed data glyph — someone encoded something inside the insignia.",
+    "A Tier 3 fashion house tried to license the color scheme; the crew's response was architectural."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "gang",
+    "shelf",
+    "diy",
+    "territorial",
+    "street"
+  ],
+  "parent_corponation": ""
+}

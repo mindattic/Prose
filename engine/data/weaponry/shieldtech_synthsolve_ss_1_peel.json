@@ -1,0 +1,46 @@
+{
+  "id": "f4b9e2c7a0d3185642d8f5a1c3e7b0d9",
+  "name": "ShieldTech SynthSolve SS-1 'Peel'",
+  "type": "weapon",
+  "aliases": [
+    "Peel",
+    "Synth Stripper",
+    "The Dissolver",
+    "Chrome Wash"
+  ],
+  "category": "spray",
+  "description": "The SynthSolve SS-1 is ShieldTech's purpose-engineered response to a security problem that has grown significantly as synthetic human populations in Meridian 88 have expanded: the need for a compliance and deterrence tool specifically effective against artificial humans, whose sensory systems, dermal surfaces, and physiological responses differ fundamentally from baseline and augmented humans. Standard OC sprays, tear gas, and most pain-compliance tools have negligible effect on synthetics — their synthetic skin lacks the nerve endings that make such tools effective, their sensory arrays process chemical exposure differently, and their threat-response systems are designed to override pain signals. The SS-1 addresses this gap through a dual-action compound: a synthetic dermolytic agent (ST-Dermolyte-1) that degrades the polymeric compounds used in synthetic skin fabrication, and a secondary sensory array disruption compound (ST-SensorBlind-1) calibrated to the optical and chemical sensor frequencies common across the three major synthetic manufacturing platforms present in Meridian.\n\nThe dermolytic component produces visible surface degradation of synthetic skin — whitening, cracking, and in sustained exposures, partial delamination of the outer dermal layer. This is painful in the functional sense for synthetics whose dermal sensation arrays are active, and is also deeply distressing in a psychological sense for synthetics who have developed strong identity connections to their physical appearance. The sensory disruption component produces temporary blinding and chemical-sense interference lasting fifteen to thirty minutes. The SS-1 is not designed to destroy a synthetic — it is designed to incapacitate and mark one.\n\nThe SS-1 exists in a contested ethical and legal space that Meridian's regulatory framework handles poorly. Synthetics do not have full legal personhood, and weapons designed specifically to harm them occupy a category that current statute does not clearly address. ShieldTech markets the SS-1 as a 'synthetic compliance instrument' rather than a weapon, and this framing has so far survived legal challenge. Synthetic advocacy organizations have filed three unsuccessful injunctions against its sale.",
+  "manufacturer": "SHIELDTECH",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — classified as synthetic compliance instrument rather than weapon under current Meridian statute; synthetic advocacy legal challenges ongoing; some Tier 4+ corporate campuses prohibit possession on premises",
+  "base_technologies": [
+    "ST-Dermolyte-1 synthetic polymeric degradation agent",
+    "ST-SensorBlind-1 sensory array disruption compound",
+    "dual-compound sequential dispersal valve"
+  ],
+  "specifications": "Active compounds: ST-Dermolyte-1 (dermolytic, polymer degradation) + ST-SensorBlind-1 (sensory disruption, calibrated to common synthetic sensor frequencies)\nEffective platforms: calibrated for Meridian-common synthetic manufacturing platforms (coverage approximately 85% of synthetic population)\nDelivery: sequential dual-compound aerosol, stream 2.5m effective\nOnset (sensory disruption): 5–10 seconds\nOnset (dermal degradation): 15–30 seconds (visible), progressive with exposure\nDuration of sensory disruption: 15–30 minutes\nDermal damage: persistent; professional restoration required (cost: Φ200–Φ800 depending on severity)\nCanister capacity: 7 bursts\nWeight: 0.20 kg\nDimensions: 15cm × 4.5cm\nPrice: Φ160",
+  "tactical_use": "The SS-1 is deployed in security contexts where synthetic humans may be involved in access control violations, labor disputes, or public order situations. Security teams use it as a first-response compliance tool rather than physical restraint, as physically restraining a synthetic with full-strength augmented musculature is a significant challenge for unaugmented security staff. The sensory disruption mode provides a window for physical intervention, while the dermal marking — damage that requires professional repair — serves as a practical identification and deterrent function. Some users deploy it specifically for the marking function, as synthetic skin damage is visible and distinctive.",
+  "cultural_context": "Among Meridian's synthetic population, the SS-1 is a symbol of their second-class legal status made tangible — a product that exists specifically to hurt them, sold openly, because the law does not consider them fully human. 'Peel' and 'Chrome Wash' are used in synthetic communities with the specific bitterness reserved for things that are both common and wrong. The visible dermal damage caused by the SS-1 is sometimes worn without repair by synthetic activists as a deliberate statement, the way human activists have historically displayed injuries from state violence. Baseline and augmented human allies in labor and civil rights movements have made opposition to the SS-1's legal status a recurring organizing point.",
+  "known_users": [
+    "private security firms operating in mixed human/synthetic environments",
+    "Tier 2-3 venue and transit security",
+    "some municipal security contractors",
+    "individuals with documented anti-synthetic bias (possession legal, use context varies)"
+  ],
+  "story_hooks": [
+    "A synthetic rights organizer has been Peeled three times in six months by different security firms — the pattern suggests coordinated targeting, and someone is providing these firms with the organizer's schedule"
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "less_lethal",
+    "anti_synthetic",
+    "dermolytic",
+    "sensory_disruption",
+    "shieldtech",
+    "controversial",
+    "civil_rights"
+  ],
+  "parent_corponation": ""
+}

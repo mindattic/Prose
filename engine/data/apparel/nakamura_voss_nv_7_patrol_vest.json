@@ -1,0 +1,43 @@
+{
+  "id": "c7a3f0e5b1d8294a6c0f3e7b9d2a5c18",
+  "name": "Nakamura-Voss NV-7 Patrol Vest",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A tactical vest worn by private security contractors and building security throughout the mid-tiers. Constructed from a dense ballistic-weave nylon with soft armor panels integrated into the front and back — rated for low-velocity rounds and blade resistance, though Nakamura-Voss is careful never to make specific performance claims in their marketing materials. MOLLE webbing runs along the chest and sides for attachment of pouches and accessories. Available in black, slate grey, and a dark navy used by several corponation security divisions.\n\nThe NV-7 is the visual shorthand for 'armed private security' throughout Meridian 88. It reads as authority in the mid-tiers and as threat in the Shelf. The soft armor panels are removable for laundering, and the vest itself is reasonably comfortable for all-day wear — a small mercy for the people who spend twelve-hour shifts in them.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "ballistic-weave nylon",
+    "soft armor panels (removable)",
+    "MOLLE webbing",
+    "moisture-wicking mesh back panel"
+  ],
+  "functionality": "Integrated soft armor front and back panels rated for low-velocity ballistic and blade threats. Panels are removable and replaceable.",
+  "what_it_says": "You are armed, employed in a security capacity, and you want that to be immediately visible.",
+  "worn_by": [
+    "private security contractors",
+    "building security",
+    "corponation site guards",
+    "off-duty security who forgot to change",
+    "some Tier 2 residents in dangerous neighborhoods who've acquired them secondhand"
+  ],
+  "manufacturer": "Nakamura-Voss Defense Goods",
+  "price_range": "Φ175",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A shipment of NV-7 vests was diverted before reaching a corporate client — they've shown up in a Shelf neighborhood, which means someone is arming up for something.",
+    "The replacement armor panels sold officially are standard-rated; a black-market supplier is selling panels with significantly higher ratings using stolen corponation materials.",
+    "A security contractor was shot while wearing a properly certified NV-7 — the round went through. Someone has been quietly swapping real panels for dummy inserts in the supply chain."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "security vest",
+    "ballistic",
+    "tactical",
+    "armor",
+    "professional security"
+  ],
+  "parent_corponation": ""
+}

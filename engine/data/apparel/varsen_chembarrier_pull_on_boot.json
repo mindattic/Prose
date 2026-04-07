@@ -1,0 +1,40 @@
+{
+  "id": "c92f3e5a71b0d486ea1c0f8b3d724591",
+  "name": "Varsen ChemBarrier Pull-On Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A tall pull-on boot reaching mid-calf, molded from a single piece of seamless yellow-green chemical-resistant polymer. No seams means no weak points — the entire boot is one continuous shell with an interior foam liner. A compression collar at the top seals against hazmat suit legs. Ugly, functional, and instantly recognizable on anyone working the Shelf's industrial runoff zones or Tier 3 processing plants.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "seamless chemical-resistant polymer shell",
+    "closed-cell foam liner",
+    "compression seal collar",
+    "non-slip carbon-tread sole"
+  ],
+  "functionality": "Rated for continuous exposure to corrosives, solvents, and biohazard fluids up to Class 3. Integrates with standard hazmat suit compression seals. Non-slip tread rated for wet and chemical-slick surfaces.",
+  "what_it_says": "You work in the bad parts of the industrial sector. The color and shape are a uniform — everyone knows what you do.",
+  "worn_by": [
+    "waste processing workers",
+    "chemical plant laborers",
+    "Shelf cleanup crews",
+    "biohazard response contractors"
+  ],
+  "manufacturer": "Varsen Safety Products",
+  "price_range": "Φ55 - Φ75",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A body in the runoff canals is wearing a pair — but the chemical exposure pattern doesn't match any legal facility.",
+    "The boots are rated for Class 3, but someone's been walking through something that ate through the soles."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "hazmat",
+    "industrial",
+    "chemical-resistant",
+    "work boot"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,43 @@
+{
+  "id": "3af6b2c4d5e7f8901234567890abcdef",
+  "name": "Lumen Adaptive Base Layer",
+  "type": "apparel",
+  "category": "top",
+  "description": "A close-fitting long-sleeve base layer in a smooth four-way stretch fabric that looks at first like a high-end athletic shirt — matte charcoal or slate grey, minimal seaming, a low crew neck. It fits like a second skin without compressing, and the fabric manages temperature actively: a network of phase-change micro-capsules in the weave absorbs excess body heat when you're warm and releases it when you cool down, keeping the wearer in a narrow comfort band across a wide range of ambient temperatures. The effect is subtle — you notice it as an absence of discomfort rather than a positive sensation.\n\nLumen is a Tier 3 brand that found its market between athletic performance and everyday wear. This shirt is popular with couriers, cycle commuters, people with physically demanding jobs who also have to look presentable afterward, and anyone who moves between the climate-controlled interior zones and the unregulated temperature swings of the outer corridor. It layers smoothly under anything. The tech is quiet and functional — there's no display, no app, no connectivity. It just works.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "four-way stretch synthetic base",
+    "phase-change micro-capsule thermal layer",
+    "flatlock seaming"
+  ],
+  "functionality": "Passive thermal regulation via phase-change micro-capsule weave. No power source required. Maintains wearer comfort across a 25-degree ambient temperature range without active heating or cooling.",
+  "what_it_says": "You move a lot and you've thought about what you need. You're not interested in showing off the tech — you just want it to work.",
+  "worn_by": [
+    "couriers",
+    "cycle commuters",
+    "field technicians",
+    "physically active professionals",
+    "people who run cold or hot"
+  ],
+  "manufacturer": "Lumen",
+  "price_range": "Φ110",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Lumen base layer recovered from a Shelf casualty shows no signs of wear despite reportedly being in continuous use for two years — the phase-change material is somehow intact, which shouldn't be possible.",
+    "Lumen's thermal regulation technology was originally licensed from a TESSERA biophysics division patent — and TESSERA's lawyers have just sent a notice of license termination.",
+    "A character wearing a Lumen base layer is the only person in a group to survive prolonged exposure in a failing climate-control zone — and they're not sure whether to tell anyone why."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 3",
+    "base layer",
+    "thermal regulation",
+    "tech-enhanced",
+    "lumen",
+    "athletic",
+    "everyday wear"
+  ],
+  "parent_corponation": ""
+}

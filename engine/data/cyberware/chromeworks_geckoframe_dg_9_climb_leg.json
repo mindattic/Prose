@@ -1,0 +1,58 @@
+{
+  "id": "e509c3a17f2b4d8601ec74a2d9f3b5c1",
+  "name": "CHROMEWORKS GeckoFrame DG-9 Climb Leg",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "Chromeworks GeckoFrame DG-9 Digitigrade Climbing Leg",
+  "type": "cyberware",
+  "aliases": [
+    "Geckos",
+    "Wallcrawlers",
+    "Chrome Claws"
+  ],
+  "category": "digitigrade_leg",
+  "body_location": "legs",
+  "description": "The GeckoFrame DG-9 is Chromeworks' most reluctant product — engineered under pressure from a high-paying fringe clientele and kept deliberately off the company's main marketing channels. The reversed digitigrade joint allows the foot to plantarflex at a steep angle against vertical surfaces, while the four toe pads are lined with van der Waals adhesive micro-filament arrays that can support 340 kg of shear load per foot on smooth glass or treated concrete. A neural-linked tension mode allows wearers to activate and deactivate grip on demand, enabling fluid wall-running on surfaces up to 85 degrees from horizontal.\n\nChromeworks internally calls the DG-9 the 'liability product' and restricts its sale to licensed purchasers with verified occupational justification. In practice, a significant portion of units reach urban climbers, infiltrators, and the climbing subculture through gray-market resellers. The chrome aesthetic is understated by Chromeworks standards — the company clearly did not want these legs photographed at galas.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 3-5",
+  "legality": "Restricted",
+  "installation_requirements": "Bilateral hip disarticulation, neural handshake calibration for grip-activation response, minimum Tier 3 surgical facility",
+  "rejection_risk": "Low — Chromeworks' biocompatible socket coating reduces immune response; 6% complication rate linked to micro-filament array nerve mapping",
+  "maintenance": "Micro-filament pad cleaning after every climbing session, adhesive array inspection monthly, neural handshake recalibration every 6 months",
+  "specifications": "{\"wall_angle_max_degrees\": 85, \"shear_load_per_foot_kg\": 340, \"grip_activation\": \"Neural handshake, <0.3s response\", \"toe_pad_material\": \"Van der Waals micro-filament array\", \"joint_type\": \"Reversed digitigrade, steep plantarflexion capable\", \"weight_kg\": 10.2, \"surface_compatibility\": [\"Glass\", \"Treated concrete\", \"Painted steel\", \"Ceramic tile\"], \"power_source\": \"Integrated cell, 20hr standard, 8hr continuous grip-active\", \"aesthetic\": \"Matte chrome, minimal branding\"}",
+  "side_effects": [
+    "Micro-filament pad degradation on rough or abrasive surfaces, requiring expensive pad replacement",
+    "Neural grip-activation lag under extreme stress conditions causing unexpected release",
+    "Restricted legality draws police attention — digitigrade legs plus restricted classification is probable cause in most inner-tier districts",
+    "Difficulty wearing standard footwear; most wearers are visibly digitigrade in public at all times"
+  ],
+  "cultural_context": "The DG-9 sits at an uncomfortable intersection: it is a Chromeworks product, which implies a certain legitimacy and quality, but it is also digitigrade, which carries the full weight of social stigma regardless of manufacturer prestige. Wearers report that the Chromeworks logo on their legs sometimes generates confusion rather than respect — people expect Chromeworks customers to look a certain way, and GeckoFrame legs violate that expectation viscerally. Law enforcement in Tier 3+ districts treats digitigrade individuals as probable trespass risks, and DG-9 owners are disproportionately stopped and scanned.",
+  "known_users": [
+    "Urban infiltration and second-story specialists",
+    "Licensed industrial window-cleaning and high-rise maintenance workers",
+    "Climbing subculture enthusiasts with significant disposable income",
+    "Corporate espionage operatives",
+    "Gray-market buyers who obtained units through resellers"
+  ],
+  "story_hooks": [
+    "A DG-9 wearer's micro-filament grip failed mid-climb during what should have been a routine infiltration job — was it a defective unit, or was the pad deliberately compromised?",
+    "Chromeworks is running a quiet recall on a specific DG-9 production batch but hasn't gone public — someone inside wants to know why",
+    "A licensed high-rise maintenance worker is being framed for a series of rooftop thefts that occurred on their work sites; the only evidence is digitigrade footprints"
+  ],
+  "street_price": "Φ62,000",
+  "licensed_price": "Φ145,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "digitigrade",
+    "legs",
+    "climbing",
+    "gecko_grip",
+    "chromeworks",
+    "restricted",
+    "stigmatized",
+    "infiltration",
+    "body_modification",
+    "digitigrade_leg"
+  ],
+  "parent_corponation": ""
+}

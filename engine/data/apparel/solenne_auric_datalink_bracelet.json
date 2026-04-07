@@ -1,0 +1,46 @@
+{
+  "id": "f5a8d2c0b1e4937c6d0a2f8e3b7c1059",
+  "name": "Solenne Auric Datalink Bracelet",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Wide-cuff bracelet in 22-carat gold-analog plating over a titanium substrate, inlaid with a continuous band of lab-grown black opal that shifts between deep violet and copper-green depending on ambient light. Embedded along the inner face is a passive data-chip array — twelve chips, each holding encrypted social credentials, financial access keys, or personal records. The clasp is a Japanese-style fold-over in white gold-analog, stamped with Solenne's Spire atelier mark.\n\nWorn as jewelry. Functions as an entire secure wallet, identity suite, and social passport.",
+  "tier_association": "Tier 4-5",
+  "materials": [
+    "22-carat gold-analog plating",
+    "grade-5 titanium substrate",
+    "lab-grown black opal inlay",
+    "white gold-analog fold-over clasp",
+    "passive NFC data-chip array"
+  ],
+  "functionality": "Twelve passive NFC chips store financial credentials, encrypted identity data, and social access keys. BCI-synced release — only the wearer's neural signature unlocks the chip array for write access. Read-only pings are blocked by the titanium substrate except at designated contact points. No power source required.",
+  "what_it_says": "Everything you need to know about this person is in that bracelet, and you will never be authorized to read it.",
+  "worn_by": [
+    "Spire executives",
+    "power brokers",
+    "Tier-4 specialists signaling upward mobility",
+    "corponation social liaisons",
+    "old-money inheritors"
+  ],
+  "manufacturer": "Solenne Atelier",
+  "price_range": "Φ8,500 – Φ22,000",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A bracelet matching this description appeared in a Tier-1 pawn shop — the chip array was wiped, but the clasp stamp is genuine Solenne, and the atelier has no record of the sale.",
+    "The black opal shifts color in proximity to certain encrypted signals — a feature Solenne officially denies building in.",
+    "One chip on every Solenne Datalink bracelet is factory-reserved and cannot be written by the owner; what Solenne stores there is the subject of considerable Spire paranoia."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "jewelry",
+    "bracelet",
+    "functional-jewelry",
+    "data-chip",
+    "BCI-compatible",
+    "tier-4",
+    "tier-5",
+    "spire"
+  ],
+  "parent_corponation": ""
+}

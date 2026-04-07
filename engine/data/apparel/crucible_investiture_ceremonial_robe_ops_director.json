@@ -1,0 +1,34 @@
+{
+  "name": "Crucible Investiture Ceremonial Robe — Ops Director",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "corponation_investiture_robe",
+  "manufacturer": "GeneFit Health Testing",
+  "description": "Crucible's Investiture Robe for Operations Director appointments is produced internally by a small ceremonial fabrication team within the Crucible manufacturing complex. The robe is heavy — deliberately so — constructed from a layered heat-resistant formal weave in Crucible's signature deep iron-gray with copper and char-orange trim. The trim is real copper thread, not synthetic, sourced from Crucible's own smelting operations. The robe's weight is understood as symbolic: the new director is taking on something substantial. The front panel is embossed with Crucible's foundry mark in raised copper thread, and the lining is stamped with the appointee's name, date, and the names of the witnesses to the ceremony.\n\nThe robe is not worn again after the investiture. It is folded, sealed in a fabricated case, and presented to the new director as a permanent record of the appointment. Some directors display it; others store it. A very small number have sold theirs, which is not technically prohibited but is understood within Crucible culture as a significant statement about one's relationship to the company.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ1200",
+  "augment_compatible": false,
+  "geneware_compatible": false,
+  "durability": "extreme",
+  "legal_status": "legal",
+  "cultural_context": "Crucible investiture ceremonies are closed — employees below senior management level don't attend. The robe is one of the few things Crucible produces that has no industrial function. Its existence is the point. Workers on the furnace floor know the robes exist; some have opinions about what they cost versus what a furnace worker earns in a year.",
+  "story_hooks": [
+    "A Crucible Investiture Robe appears at a gray-market auction. Someone sold it — or it was stolen. Either way, Crucible wants it back, quietly, before the story of why it's on the market becomes public.",
+    "The character attends an investiture ceremony as a witness. The new director's name is stamped into the lining beside the character's own. That connection, formally recorded, will matter in six months.",
+    "A labor organizer on the Crucible furnace floor has obtained photographs of an investiture robe and its cost breakdown. They're preparing to publish them alongside the floor workers' annual wage data."
+  ],
+  "tags": [
+    "formal",
+    "ceremonial",
+    "Crucible",
+    "investiture",
+    "robe",
+    "corponation",
+    "copper-thread",
+    "Tier 4-5",
+    "director",
+    "closed-ceremony"
+  ],
+  "id": "20c3ca21099a49239892a00f600101b5",
+  "parent_corponation": "Crucible Genomics"
+}

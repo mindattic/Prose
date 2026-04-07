@@ -1,0 +1,51 @@
+{
+  "name": "Ringo RK-2 'Stray'",
+  "type": "automaton",
+  "classification": "Canine Platform — Chemical Dispersal",
+  "aliases": [
+    "Stray",
+    "Sick Dog",
+    "Patient Zero"
+  ],
+  "manufacturer": "Parkside Recreation",
+  "description": "The RK-2 doesn't explode and it doesn't burn. It walks through populated areas and disperses aerosolized chemical agents from vents along its spine — slowly, continuously, while moving at a pace indistinguishable from a real dog's walking gait. The RK-2 is designed not to be noticed. Its chassis is the most convincingly canine of any platform on the market, with synthetic fur covering, realistic ear and tail articulation, and a gait algorithm that perfectly mimics a mid-sized mixed-breed dog. It even pants.\n\nThe chemical payload varies by mission. Documented loads include incapacitating agents, tracking markers that adhere to skin and clothing, mood-altering pharmaceuticals, and agents that interfere with specific cyberware models. The dispersal rate is calibrated to be below visible threshold — no fog, no smell, no indication that anything is happening. Targets breathe the agent without knowing it. The RK-2 can cover an entire neighborhood in a single patrol loop.\n\nRingo markets the RK-2 for 'population management research' — a phrase that means whatever the buyer needs it to mean. The most chilling documented application involved RK-2 units dispersing a Lazarus-manufactured mood suppressant through a Shelf district in the weeks before a scheduled Ringo facility expansion that required resident displacement. By the time the eviction notices arrived, the population was too chemically docile to resist.",
+  "tier_availability": "Tier 4+",
+  "legality": "Does not officially exist",
+  "autonomy_level": "Fully autonomous — patrol route programming",
+  "dimensions": "0.55m shoulder height, 0.9m length",
+  "weight": "22 kg (4L chemical payload)",
+  "power_source": "Lithium cell, 12-hour patrol endurance",
+  "locomotion": "Quadruped canine-mimetic with synthetic fur covering, realistic gait",
+  "armament": [
+    "Spine-mounted aerosolized chemical dispersal vents",
+    "4L interchangeable chemical payload"
+  ],
+  "sensors": [
+    "Crowd density monitoring",
+    "Wind direction for dispersal optimization",
+    "Chemical concentration feedback"
+  ],
+  "countermeasures": "Identifying the RK-2 as non-biological is the primary challenge — close inspection reveals synthetic fur texture and mechanical gait artifacts. Gas masks protect against chemical agents. Air quality monitoring equipment can detect dispersal events after the fact.",
+  "known_deployments": [
+    "Officially none. Documented evidence of use in Shelf population management, mood suppression before corporate land seizures, and covert pharmaceutical trials on non-consenting populations"
+  ],
+  "story_hooks": [
+    "A neighborhood in the Shelf has noticed that everyone feels unusually calm and agreeable lately. A player character with chemical detection augments identifies trace mood suppressants in the air. The source is a 'stray dog' that's been wandering the block for two weeks. People have been petting it.",
+    "Someone has loaded an RK-2 with a contagious pathogen instead of a chemical agent. The unit has been walking through the market district for three days. The pathogen's incubation period is ending."
+  ],
+  "cultural_context": "The RK-2 represents the most insidious application of automata technology — a weapon that disguises itself as something people want to protect. In a city where real stray dogs are adopted and cared for by Shelf communities, the RK-2 exploits compassion as an attack vector.",
+  "tags": [
+    "automaton",
+    "canine",
+    "chemical",
+    "covert",
+    "weapon",
+    "ringo",
+    "corporate",
+    "control",
+    "pharmaceutical",
+    "tier 4"
+  ],
+  "id": "ba7e07e88f3fe6fdb278d76be9fd8cb2",
+  "parent_corponation": "Ringo Corponation"
+}

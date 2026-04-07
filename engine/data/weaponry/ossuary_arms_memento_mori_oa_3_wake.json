@@ -1,0 +1,47 @@
+{
+  "id": "7a36b1e111b122f2631547f00e29274c",
+  "name": "Ossuary Arms Memento Mori OA-3 'Wake'",
+  "type": "weapon",
+  "aliases": [
+    "Wake",
+    "OA-3",
+    "Memento Mori",
+    "Bone Caller"
+  ],
+  "category": "sniper",
+  "description": "A bolt-action precision rifle built with a deliberately antiquated aesthetic — walnut stock, blued steel, hand-checkered grip — that conceals a modern BCI-integrated firing computer in its stock. Ossuary Arms builds weapons for operators who believe that the act of precision shooting is a craft, not a procedure.\n\nThe Wake's BCI integration is minimal and respectful. It provides wind data, range estimation, and a recommended hold point, but it does not guide the round or correct for shooter error. The operator must still execute the shot. Ossuary's founder has been quoted saying 'The machine tells you where to aim. Your hands decide if you are worthy.'\n\nThe Memento Mori fires a heavy 10.3mm match round at subsonic velocities through a hand-fitted barrel that achieves sub-MOA accuracy at 1,000 meters. Each rifle is engraved with the name of its first owner and cannot be re-registered.",
+  "manufacturer": "OSSUARY ARMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — registered to named individual only",
+  "base_technologies": [
+    "Hand-fitted precision barrel manufacturing",
+    "Concealed BCI firing computer",
+    "Legacy craft weaponsmithing"
+  ],
+  "specifications": "caliber: 10.3mm match-grade subsonic\neffective_range: 100-1,200 meters\nrate_of_fire: Bolt-action, 1 round per 5 seconds\ncapacity: 3-round internal magazine\nweight: 5.6 kg\npower_source: BCI computer: micro-cell, 200 hours standby",
+  "tactical_use": "The Wake is not a battlefield weapon. It is deployed by operators who select their engagements carefully and value precision over volume. The heavy subsonic round delivers devastating terminal performance while maintaining a suppressed acoustic signature. Operators who carry the Memento Mori tend to work alone, take single engagements, and disappear. The weapon's registered nature means that every Wake kill can theoretically be traced — operators accept this as part of the weapon's philosophy of accountability.",
+  "cultural_context": "Ossuary Arms has become a cult brand among precision shooters who reject the automation trend in modern weaponry. Owning a Wake is a statement about craftsmanship, accountability, and the belief that killing should require skill rather than technology. The engraving tradition means that a Wake carries its owner's name into every engagement — a permanent record of who chose to pull the trigger.",
+  "known_users": [
+    "Named individual operators (registry sealed)",
+    "Ossuary Arms demonstration shooters"
+  ],
+  "story_hooks": [
+    "A Wake engraved with a dead operator's name has surfaced on the black market. Ossuary's policy prohibits re-registration, meaning whoever uses it carries a dead person's identity into every engagement.",
+    "Ossuary Arms' founder has been diagnosed with a terminal illness and is building one final rifle — a masterwork Wake that they intend to auction. The anticipated bidding war has attracted attention from people who want the weapon for more than its craftsmanship."
+  ],
+  "ammunition_type": [
+    "10.3mm match-grade subsonic"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "craft",
+    "precision",
+    "BCI",
+    "boutique",
+    "tier 4",
+    "legacy",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "2c9e5f1a7b0d3864e2c5a9f1b7d04e38",
+  "name": "Kelvex TransitBound Ankle Monitor MK-2",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A mandatory court-issued ankle cuff in matte industrial grey polymer with a tamper-evident red indicator stripe. The housing is bulky by design — a visual deterrent as much as a tracking device. A small amber LED pulses every four seconds during normal operation; red indicates geofence proximity warning.\n\nIssued by Meridian 88 Civil Compliance under Kelvex contract. The inner band is padded with cheap foam that degrades within months. Gene-compatible cutouts accommodate ankle-level geneware such as digitigrade leg modifications or scale ridges.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "matte polymer housing",
+    "tamper-evident resin stripe",
+    "degradable foam inner pad",
+    "hardened locking collar",
+    "embedded GPS and geofence transmitter"
+  ],
+  "functionality": "Continuous GPS tracking; geofence proximity alerts; tamper alarm triggers immediate compliance alert to Civil Enforcement; 90-day sealed battery; gene-compatible inner cutout geometry for non-standard ankle profiles.",
+  "what_it_says": "The city knows exactly where you are, and it wants everyone else to know too.",
+  "worn_by": [
+    "court-ordered offenders",
+    "persons under civil debt compliance",
+    "paroled aug-modification violators",
+    "individuals contesting corponation contract breaches"
+  ],
+  "manufacturer": "Kelvex (Meridian 88 Civil Compliance contract)",
+  "price_range": "Φ 0 (state-issued) / Φ 12/month compliance fee",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A black-market firmware patch circulates on the Shelf that spoofs the monitor's GPS ping to a fixed location — sellers are disappearing.",
+    "The MK-2 batch has a hardware flaw: a specific sub-sonic frequency causes the tamper alarm to trigger falsely, getting wearers arrested without cause.",
+    "A Tier-4 exec is spotted wearing one voluntarily — either a kink, a bet, or a very public act of corporate sabotage."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "ankle-monitor",
+    "court-ordered",
+    "tracking",
+    "tier-1",
+    "tier-2",
+    "compliance",
+    "gene-compatible",
+    "state-issued"
+  ],
+  "parent_corponation": ""
+}

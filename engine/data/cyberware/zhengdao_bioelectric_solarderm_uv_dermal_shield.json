@@ -1,0 +1,57 @@
+{
+  "id": "b2e6f4a1d8c03975e1b7a4d2f9c5e831",
+  "name": "ZhengDao Bioelectric SolarDerm UV Dermal Shield",
+  "brand_name": "ZhengDao Bioelectric",
+  "product_name": "SolarDerm UV Dermal Shield",
+  "type": "cyberware",
+  "aliases": [
+    "sun skin",
+    "UV coat",
+    "the glaze",
+    "dermblock",
+    "fieldwrap"
+  ],
+  "category": "professional",
+  "body_location": "dermal — full-body subdermal chromatic filter lattice, heaviest concentration at scalp, face, neck, and forearms",
+  "description": "The SolarDerm is a full-body subdermal chromatic filter lattice: a microscopically thin layer of UV-absorbing and UV-scattering nanoparticle mesh bonded to the dermal-subdermal junction across the entire body surface. The mesh passively intercepts UVA and UVB radiation before it can penetrate to the living skin layers below, converting absorbed UV energy into low-grade infrared heat that dissipates harmlessly through normal thermoregulation. The lattice is thickest at the scalp, face, neck, and dorsal forearms — the highest-exposure zones for outdoor workers — and thinner but still functional across the torso and lower limbs. Because the system is passive materials science with no electronic components, there is no power requirement, no firmware, and no wireless exposure. The nanoparticle mesh is biocompatible and chemically stable; it does not degrade under sun exposure and does not interact with sweat, sunscreen, or topical products. Installation involves a series of twelve to sixteen micro-injection sessions across the body surface over approximately three weeks, with no anesthesia required beyond topical numbing cream at each site.\n\nThe SolarDerm is the professional standard for any outdoor occupation in Meridian 88's four-season climate: roofing crews, agricultural workers in the surrounding corridor farmlands, construction laborers, traffic management workers, urban forestry and park maintenance staff, marina and waterfront workers, and outdoor educators all rely on it. Prior to widespread SolarDerm adoption, occupational UV damage — cumulative skin cancers, accelerated photoaging, chronic actinic damage — was a leading long-term health cost among outdoor labor populations. With the SolarDerm, those workers simply stop accumulating UV damage regardless of sun exposure duration. The implant has no effect on visible appearance — skin color, texture, and tanning behavior remain entirely normal, since the lattice operates below the visible light spectrum. Workers describe having it as simply 'not thinking about the sun anymore,' which, for people who spend eight to twelve hours a day outdoors, is profoundly liberating.",
+  "manufacturer": "ZHENGDAO BIOELECTRIC",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Series of 12–16 outpatient micro-injection sessions over approximately 3 weeks; topical anesthetic only; available at dermal clinics, pharmacy kiosks with licensed injectors, and mobile occupational health units",
+  "rejection_risk": "Minimal",
+  "maintenance": "No maintenance required; nanoparticle mesh is chemically stable and non-degrading; optional 5-year dermal scan to confirm lattice integrity, recommended but not required",
+  "specifications": "{\"UV_protection_rating\": \"SPF equivalent >200 sustained, UVA and UVB\", \"coverage\": \"full body, concentration-weighted to high-exposure zones\", \"power_requirement\": \"none — entirely passive\", \"wireless_components\": \"none\", \"installation_sessions\": \"12–16 over approximately 3 weeks\", \"visible_light_impact\": \"none — skin appearance fully unchanged\", \"tanning_response\": \"unchanged — melanin production unaffected\", \"rated_service_life\": \"permanent under normal conditions\", \"nanoparticle_material\": \"ZhengDao TitanMesh biocompatible UV-reactive composite\"}",
+  "side_effects": [
+    "Mild skin flushing or warmth at injection sites for 24–48 hours after each session during the installation series",
+    "Very rare: temporary patchy lattice distribution in the first weeks, causing uneven UV protection until the mesh fully settles — users are advised to use topical sunscreen as backup during this period",
+    "Negligible risk of mild localized granuloma formation at high-density injection zones, resolving without treatment in most cases",
+    "No long-term side effects documented across 15 years of mass-market deployment"
+  ],
+  "cultural_context": "The SolarDerm is perhaps the most socially invisible professional implant in common use — it does nothing visible, requires no behavior change, and is completely undetectable by any means short of a specialized dermal scanner. This invisibility has made it interesting in unexpected ways: because it leaves no trace, many people who have it simply don't mention it, leading to persistent underestimation of how widespread it actually is. Occupational health advocates point to the SolarDerm as the clearest example of cyberware as pure harm reduction — it has no performance enhancement, no social signal, no aesthetic dimension. It simply stops a category of preventable disease. In Tier 1 communities where outdoor labor is ubiquitous and long-term health costs are catastrophic, the SolarDerm is often described by community health workers as the first implant anyone should get. Some corponations operating outdoor work sites provide it as a standard onboarding inclusion alongside boots and high-visibility vests, a practice that has become a minor point of pride in their HR materials.",
+  "known_users": [
+    "Roofing, paving, and outdoor construction laborers",
+    "Agricultural and corridor farmland workers",
+    "Marina, waterfront, and Great Lakes maritime crew",
+    "Urban forestry, parks maintenance, and outdoor recreation staff",
+    "Traffic management, infrastructure inspection, and utility field workers"
+  ],
+  "story_hooks": [
+    "A ZhengDao field health rep discovers that a batch of SolarDerm nanoparticles distributed through a mobile occupational health unit serving Shelf-level construction workers was contaminated with a secondary compound — not harmful on its own, but acting as a passive biometric tag readable by a specific scanner. Someone has been tagging workers without their knowledge, and the tag data is being sold to parties unknown.",
+    "An agricultural cooperative outside Meridian 88 is reporting a cluster of UV-related skin cancers among workers who all have documented SolarDerm installations — the lattice should make this impossible. Investigation reveals the installation clinic was using diluted nanoparticle solution to stretch supply, providing a fraction of the rated coverage while billing for full installation.",
+    "A dermal forensics specialist realizes that the SolarDerm lattice — while invisible to the naked eye — leaves a distinctive spectral signature under a specific scanner frequency, making it possible to identify whether a body found in the Lake had ever worked an outdoor labor job. This becomes relevant when an unidentified body's SolarDerm signature points to a workforce that officially has no missing persons."
+  ],
+  "street_price": "Φ160–Φ310",
+  "licensed_price": "Φ420–Φ700",
+  "tags": [
+    "cyberware",
+    "professional",
+    "lifestyle",
+    "dermal",
+    "UV protection",
+    "outdoor labor",
+    "passive",
+    "mass-market",
+    "harm-reduction"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,54 @@
+{
+  "id": "7d1e4b2f93a0c85e6f3d2a7b4c9e0f11",
+  "name": "Floodline Scavenger's Patched Coat Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The centerpiece is a long duster coat — originally a PolyRoute-brand weathershell, now unrecognizable under decades of repairs. The coat falls to mid-calf in dirty charcoal, its surface a topographic map of patches: waxed cotton over the shoulders, a square of recycled rubberized tarp at the left hip, strips of silver self-repair tape running along every seam like stitched scars. The lining has been partially removed and replaced with salvaged mylar emergency blanket material, giving it a faint crinkle with every movement and serious thermal retention. Beneath the coat: a ribbed tank in stained off-white tucked into high-waisted cargo pants in faded black denim so worn the knees are almost white, with a functional knee pad sewn into the right leg from a salvaged sports brace. Feet are wrapped in double wool socks visible above low-cut boots that have been resoled with a thick rubber compound and laced with paracord in mismatched colors — one strand bright red, one gray, a detail that in certain Shelf neighborhoods signals a specific salvage crew affiliation. A wide-brimmed hat in stiffened waxed canvas, darkened by rain and oil, sits low over the brow. The hat's band is wrapped with a strip of copper wire from which small salvaged objects hang — a cracked data chip, a single augmentation port cap, a flattened bottle cap embossed with a long-defunct street vendor's mark. Gene-compatible: the coat's back panel has been manually cut and re-hemmed to accommodate a prehensile tail, the edges finished with a whip-stitch of heavy nylon thread.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "waxed cotton",
+    "rubberized tarp",
+    "mylar thermal lining",
+    "worn denim",
+    "ribbed cotton knit",
+    "paracord",
+    "wool",
+    "recycled rubber sole compound",
+    "stiffened waxed canvas",
+    "copper wire",
+    "nylon thread"
+  ],
+  "functionality": "Mylar lining provides significant thermal retention in flooded industrial zones. Waxed patches and rubberized hip panel deflect acid rain splash. Knee pad integrated into trousers for crawling through collapsed infrastructure. Paracord lacing doubles as emergency cordage. Hat provides face and neck protection from overhead drip zones. Tail accommodation allows gene-modified wearers full mobility without coat damage.",
+  "what_it_says": "A person who moves through flooded ruins and collapsed corridors regularly — not as a one-time emergency but as a daily routine. The hanging objects on the hat band are a personal archive, each one a relic of somewhere they've been or something they've survived. The paracord colors, if you know how to read them, tell you exactly who they run with.",
+  "worn_by": [
+    "flood-zone scavengers",
+    "tunnel runners",
+    "gene-modded Shelf residents with tails",
+    "relic traders",
+    "informal salvage crew members"
+  ],
+  "manufacturer": "Self-modified base coat (stripped PolyRoute), remaining components sourced from Shelf market stalls and personal salvage",
+  "price_range": "Φ8–Φ25 in current parts; coat itself is years of accumulated labor",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The cracked data chip hanging from the hat band isn't fully dead. A street tech with the right reader discovers it contains a partial map of a pre-flood sub-level that corponation surveyors have been quietly looking for.",
+    "The paracord color combination — red over gray — is the identifier of a salvage crew that was supposedly wiped out in a structural collapse eight months ago. Someone who knew that crew sees the boots and has questions.",
+    "The tail accommodation was added by someone else — the stitching is a different hand. The coat was inherited, and the original owner's last known location was somewhere the current wearer claims never to have been."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "survival_wear",
+    "gene_compatible",
+    "flood_zone",
+    "salvage",
+    "patched",
+    "duster",
+    "scavenger",
+    "tail_compatible"
+  ],
+  "parent_corponation": ""
+}

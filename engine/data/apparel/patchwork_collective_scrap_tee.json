@@ -1,0 +1,44 @@
+{
+  "id": "e2a4f8c0b6d3179e5f2a4c8b0d6e3197",
+  "name": "Patchwork Collective Scrap Tee",
+  "type": "apparel",
+  "category": "top",
+  "description": "There is no single Patchwork Collective Scrap Tee — each one is unique. They're assembled by the loose network of Shelf sewers and textile scavengers who trade under the Patchwork Collective name, stitching together salvaged fabric scraps, old band shirts, industrial textile remnants, and whatever else is available into something wearable. The base structure is usually a simple crew-neck tee shape, but the surface is a map of wherever the fabric came from — a stripe of Ghanaian kente-print synth cotton next to a panel of faded logistics-corp khaki next to a scrap of what might have been a child's blanket.\n\nThey're sold at Shelf markets, traded between residents, and occasionally show up in Tier 2 neighborhoods where people buy them as art objects. On the Shelf, they're just clothes — warm enough, structurally sound, repaired and re-repaired. The stitching is sometimes crude and sometimes extraordinarily fine, depending on who made it. No two are the same.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged mixed fabric",
+    "reclaimed synth cotton",
+    "industrial textile remnants",
+    "varied thread"
+  ],
+  "functionality": "",
+  "what_it_says": "You make do. You make it work. You might also be making a point.",
+  "worn_by": [
+    "Shelf residents",
+    "Tier 2 people who grew up on the Shelf",
+    "artists",
+    "people who buy things with histories",
+    "urban scavengers"
+  ],
+  "manufacturer": "Patchwork Collective (independent, distributed)",
+  "price_range": "Φ8",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A specific scrap tee contains a fragment of fabric from a garment worn during the 2171 Shelf uprising — and someone recognizes it.",
+    "The Patchwork Collective has started embedding small, coded messages in the stitching patterns — a communication network hiding in plain sight.",
+    "A Tier 5 fashion house has begun producing 'authentic' Patchwork Collective-inspired pieces for Φ1,200. The Collective has opinions about this."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 1",
+    "t-shirt",
+    "patchwork",
+    "scavenged",
+    "shelf",
+    "handmade",
+    "street"
+  ],
+  "parent_corponation": ""
+}

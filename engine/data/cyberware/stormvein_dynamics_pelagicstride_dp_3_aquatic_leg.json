@@ -1,0 +1,57 @@
+{
+  "id": "2c9e5a7f3d1048b6e4a0f7c2b8d61e39",
+  "name": "Stormvein Dynamics PelagicStride DP-3 Aquatic Leg",
+  "brand_name": "STORMVEIN DYNAMICS",
+  "product_name": "Stormvein Dynamics PelagicStride DP-3 Aquatic Leg",
+  "type": "cyberware",
+  "aliases": [
+    "Fins",
+    "Stormfeet",
+    "Deepwalkers"
+  ],
+  "category": "leg",
+  "body_location": "legs",
+  "description": "The PelagicStride DP-3 is a full bilateral leg replacement designed for sustained aquatic operation, featuring a hydrodynamic outer shell contoured to minimize drag in the water column and an articulated foot chassis that deploys integrated composite swim fins via a neural command or automatic water-pressure trigger below 0.5 meters depth. The internal pressure-compensation system equalizes mechanical joint tolerances to 200 meters depth, preventing the joint seizure that plagues standard cyberlimbs in deep-water environments. On land, the fins retract flush and the leg operates with a near-normal gait profile.\n\nThe DP-3 is the professional standard for Meridian 88's subaquatic infrastructure workers, who maintain the city's lake-bed cable runs, flood-gate systems, and deep-water intake tunnels. Sport divers and competitive open-water swimmers also run them, and a small but vocal community of off-grid lake-dwellers considers them essential survival hardware.",
+  "manufacturer": "STORMVEIN DYNAMICS",
+  "tier_availability": "Tier 2-4",
+  "legality": "Licensed",
+  "installation_requirements": "Full limb replacement, pressure-rated neural conduit housing required, Stormvein-certified installation recommended for warranty coverage",
+  "rejection_risk": "Low — biocompatible pressure-sealed conduit housing prevents interface degradation; standard rejection protocol sufficient",
+  "maintenance": "Post-dive joint flush recommended after saltwater or chemical exposure; fin deployment mechanism lubrication monthly; pressure-seal integrity check every 6 months",
+  "specifications": "{\"weight_per_unit_kg\": 4.1, \"max_depth_rating_m\": 200, \"fin_deploy_trigger_depth_m\": 0.5, \"fin_material\": \"carbon-composite articulated\", \"swim_speed_kph\": 9.2, \"land_gait_deviation_pct\": 8, \"waterproof_rating\": \"IPX8\", \"pressure_compensation\": true, \"thermal_insulation_rating\": \"ISO 3\"}",
+  "side_effects": [
+    "Fin deployment reflex can trigger in heavy rain or flooding above ankle depth, causing gait disruption",
+    "Thermal insulation reduces tactile sensation in foot and lower ankle in warm environments",
+    "Pressure-compensation system creates a faint audible click during rapid depth changes that some users find socially conspicuous",
+    "Neural adaptation to dual-mode locomotion (swim vs. land) takes 4-6 weeks and causes intermittent coordination errors during transition period"
+  ],
+  "cultural_context": "Stormvein legs carry a blue-collar prestige in the subaquatic maintenance trades — they mean you work the deep infrastructure that keeps the whole city alive. Topside residents rarely see them, which gives Deepwalkers an air of mystery in Shelf social spaces.",
+  "known_users": [
+    "Subaquatic infrastructure maintenance workers",
+    "Commercial and sport divers",
+    "Lake-bed salvage and recovery crews",
+    "Competitive open-water swimmers",
+    "Off-grid lake-community residents"
+  ],
+  "story_hooks": [
+    "A subaquatic maintenance worker has gone missing in the deep cable runs beneath the Shelf; her DP-3 legs are transmitting a location signal from a section of tunnel that officially doesn't exist",
+    "Stormvein's pressure-seal formula was stolen and is being used to manufacture counterfeit DP-3s that fail catastrophically at depth — someone is selling them to budget-strapped infrastructure workers",
+    "An off-grid lake community is being pressured to relocate; their DP-3-equipped members are the only people who know the true depth of whatever the city is trying to build down there"
+  ],
+  "street_price": "Φ34,000",
+  "licensed_price": "Φ61,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "leg",
+    "aquatic",
+    "hydrodynamic",
+    "swim-fins",
+    "pressure-rated",
+    "stormvein-dynamics",
+    "licensed",
+    "tier2",
+    "tier3"
+  ],
+  "parent_corponation": ""
+}

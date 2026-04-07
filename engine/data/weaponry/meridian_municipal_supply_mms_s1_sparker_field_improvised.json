@@ -1,0 +1,48 @@
+{
+  "id": "34c5d6e7f8a9b0123456c7d8e9f0a123",
+  "name": "Meridian Municipal Supply MMS-S1 'Sparker' [FIELD IMPROVISED",
+  "type": "weapon",
+  "aliases": [
+    "Sparker",
+    "hot pipe",
+    "juice club",
+    "the homemade"
+  ],
+  "category": "melee",
+  "description": "The 'Sparker' is not a product. There is no manufacturer's data sheet, no warranty card, no authorized dealer. It is a category — the improvised shock club assembled from components available in any Tier 1 hardware reclaim yard: a length of metal pipe (typically salvaged conduit, rebar, or structural tubing), a salvaged vehicle battery or industrial capacitor pulled from discarded equipment, and a length of insulated wire connecting the two with whatever conductive terminal can be fashioned at the striking end. Meridian Municipal Supply components appear in so many of these assemblies — their standard-gauge conduit, their battery connectors, their wire spooling — that 'MMS-S1' has become sardonic street shorthand for the category, a joke designation applied by Tier 1 residents to a weapon that official taxonomy doesn't bother to name.\n\nThe Sparker's performance is deeply variable and inherently dangerous to its operator. A well-constructed unit with a functional vehicle battery will deliver an erratic but potentially severe shock — discharge voltage is unmeasured and uncontrolled, ranging from 40,000 to well over 200,000 volts depending on the battery's condition and the quality of the contact terminal. An poorly constructed unit may fail to discharge, deliver a weak shock, or — in documented cases — arc back through the user's grip if the insulation is insufficient or wet. The metal pipe itself functions as a blunt weapon independent of the electrical system, which remains effective when the battery is depleted or the connections fail. Total construction cost in Tier 1 reclaim markets ranges from Φ20 to Φ60 depending on component availability.\n\nThe Sparker represents the floor of Meridian's weapons economy — the weapon built by people who cannot afford to purchase safety, manufactured from the infrastructure of a city that has not invested in their protection. Enforcement agencies treat possession as a criminal offense under unlicensed weapon statutes, which advocacy groups note creates a specific legal trap: Tier 1 residents face the most violence, have the least access to legal self-defense tools, and are then criminalized for improvising alternatives.",
+  "manufacturer": "STREET IMPROVISED",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — unlicensed improvised weapon; possession in any tier results in seizure and criminal charge; enforcement application is concentrated in Tier 1-2 despite widespread presence across all tiers",
+  "base_technologies": [
+    "salvaged vehicle battery or industrial capacitor",
+    "metal pipe (conduit, rebar, structural tubing)",
+    "improvised conductive terminal",
+    "salvaged insulated wire"
+  ],
+  "specifications": "Length: Variable (typically 40–90 cm depending on pipe segment)\nWeight: Variable (0.8–3 kg)\nDischarge Voltage: Uncontrolled (est. 40,000–200,000+ V)\nBattery: Salvaged vehicle battery (12–24V), industrial capacitor, or other salvaged power source\nInsulation: Variable quality — significant electrocution risk to operator\nConstruction Cost: Φ20–Φ60 (component-dependent)\nReliability: Low to moderate (construction-dependent)\nDanger to Operator: High (arc-back risk, insulation failure, battery acid exposure)\nEffective Lifespan: Single use to several weeks (construction-dependent)",
+  "tactical_use": "The Sparker is used as a last-resort defensive weapon and a street-crime tool in Tier 1. Its unpredictability is both a weakness and an asset — a target who knows what a Steadfast will do has calibrated threat responses; a target facing an improvised device with unknown discharge characteristics may hesitate or overcorrect. In practice, the threat of a Sparker is often more effective than its actual discharge, which may or may not function reliably. Users who have constructed well-insulated units with high-capacity batteries treat it primarily as a shock weapon; users with poorly constructed units often rely primarily on the pipe as an impact weapon and regard the electrical component as an unreliable bonus.",
+  "cultural_context": "The Sparker is a cultural object on the Shelf in ways that commercial weapons are not — it represents self-sufficiency, necessity, and the particular ingenuity of building safety from nothing. In Tier 1 visual culture, the hot pipe appears in murals and music as a symbol of community self-defense, specifically differentiated from the weapons of enforcement. There is no prestige in carrying one — it is a weapon of poverty, and everyone knows it — but there is a specific dignity attached to having made something rather than having bought compliance with the system. The sardonic MMS-S1 designation is itself a kind of political statement: naming your improvised weapon after the municipal supplier that profits from the infrastructure you scavenged.",
+  "known_users": [
+    "Tier 1 residents unable to access legal self-defense",
+    "street-level criminal activity",
+    "informal community defense groups",
+    "anyone in Tier 1 facing immediate threat with no other option"
+  ],
+  "story_hooks": [
+    "A forensic engineer at Arcturus has quietly documented that the specific conduit gauge appearing in most seized Sparkers is a production run that was marked as 'destroyed surplus' by a Meridian Municipal Supply warehouse — but the destruction records are falsified, and the conduit was sold to a Tier 1 reclaim operator at below-market rates by a MMS logistics manager. Someone is deliberately supplying Tier 1 with the materials to make improvised weapons. The question is whether the goal is to arm the community or to give enforcement a pretext."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "electric",
+    "improvised",
+    "dangerous-to-user",
+    "tier1",
+    "poverty",
+    "self-defense",
+    "contraband"
+  ],
+  "parent_corponation": ""
+}

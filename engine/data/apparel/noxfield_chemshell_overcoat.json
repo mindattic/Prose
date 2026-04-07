@@ -1,0 +1,42 @@
+{
+  "id": "2c6e0a9d4f3b8715e1c4d7a0f2b9e5c3",
+  "name": "Noxfield ChemShell Overcoat",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "On the Shelf, particularly near the old industrial zones where remediation has been ongoing since 2140 and is nowhere near finished, a coat that offers some protection against particulate and chemical exposure is not a luxury — it is basic survival equipment. The Noxfield ChemShell is a full-length overcoat made from a laminated polyfilm material that resists low-grade chemical splash, acid rain, and industrial particulate. It is not a true hazmat suit; it will not protect you from serious exposure. But for daily life near the toxic buffer zones, it provides meaningful mitigation. The coat is stiff, crinkles when you move, and comes in a yellow-gray color that fades to a dingy beige within a season of use. The neck seals with a hook-and-bar closure that pulls tight against vapor. Shelf residents resell and repair these constantly — patches of different ChemShell generations make some coats look like textile archaeology.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "laminated polyfilm",
+    "chemical-resistant seam tape",
+    "neoprene neck seal",
+    "recycled plastic hardware"
+  ],
+  "functionality": "Low-grade chemical splash resistance. Particulate barrier rated for PM2.5 and above. Not rated for sustained chemical exposure.",
+  "what_it_says": "You live near something that can hurt you and you do not have the option to move away from it. This coat is evidence of a structural failure that predates your birth.",
+  "worn_by": [
+    "Shelf residents near industrial zones",
+    "scrap salvagers",
+    "unlicensed waste processors",
+    "environmental activists documenting toxic sites"
+  ],
+  "manufacturer": "Noxfield Safety (Tier 1 distributed brand, manufacturer unclear)",
+  "price_range": "Φ28",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Noxfield's actual manufacturing source is deliberately obscured — some units are knockoffs of knockoffs, and a recent batch has been circulating that fails its rated chemical resistance at concentrations well below spec",
+    "A Shelf community organizer has been collecting worn ChemShell coats as physical evidence of long-term toxic exposure — the coat's polyfilm absorbs and retains trace chemical signatures that standard medical testing misses",
+    "Someone has been leaving fully functional ChemShell overcoats in good condition at specific Shelf distribution points with no identifying information — Shelf residents call the anonymous donor the Coat Ghost"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "Tier 1",
+    "hazmat",
+    "chemical resistance",
+    "Shelf",
+    "survival",
+    "practical"
+  ],
+  "parent_corponation": ""
+}

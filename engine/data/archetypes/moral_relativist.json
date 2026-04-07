@@ -1,0 +1,34 @@
+{
+  "id": "f1734a9f285ae9bd6a87618f4c265ff6",
+  "name": "Moral Relativist",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Right and wrong depend on where you stand",
+  "behavioral_signature": "Refuses to impose moral standards across cultural lines",
+  "under_stress": "Paralyzes under conflicting ethical frameworks",
+  "at_rest": "Listens before judging, always seeks context",
+  "will_always": [
+    "ask whose morality is being applied"
+  ],
+  "will_never": [
+    "declare universal moral truth"
+  ],
+  "unless": [
+    "someone is being tortured in front of them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Gray Area",
+      "threshold": 0.8,
+      "context": "moral flexibility"
+    }
+  ],
+  "opposite_of": [
+    "Absolutist",
+    "Zealot"
+  ],
+  "tags": [
+    "contextual",
+    "tolerant"
+  ]
+}

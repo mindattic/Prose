@@ -1,0 +1,58 @@
+{
+  "id": "3c90d7f1e2a548b6cd1f3e70a52b8d04",
+  "name": "SynapTech Clarity Pro Neural Interface",
+  "brand_name": "SynapTech",
+  "product_name": "Clarity Pro",
+  "type": "cyberware",
+  "aliases": [
+    "the Clarity",
+    "SynPro",
+    "the apple",
+    "white mesh",
+    "slick-link"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The SynapTech Clarity Pro is the company's flagship entry-to-mid consumer BCI — the aspirational device that sits at the top of what most Tier 2-3 residents can realistically afford, and the bottom rung of what Tier 3-4 professionals consider acceptable. Built on SynapTech's NeuroWeave 4.0 platform, the Clarity Pro delivers a 200 Mbps six-channel neural mesh with 4K-equivalent AR rendering, SynapTech's acclaimed AdaptFilter cognitive noise reduction system, and the company's signature SenseSync haptic feedback layer, which translates digital interactions into subtle pressure and texture sensations that give AR interfaces a tactile dimension absent from lower-tier BCIs. The package includes full QUANTA payment and civic identity integration, a sophisticated privacy management suite with granular feed permission controls, and SynapTech's AppNest ecosystem — a curated platform of third-party neural applications known for quality and security. The installation process involves a proprietary two-stage procedure: a first session for mesh deployment and a second session two weeks later for SenseSync calibration to the individual's somatosensory cortex.\n\nThe Clarity Pro occupies a precise cultural niche in Meridian 88: it is the device that signals arrival. Young professionals who upgrade to a Clarity Pro from a NeuralPath or MindBridge unit frequently describe the moment of activation as transformative — the jump in AR fidelity, the sudden tactile richness of digital interaction, and the seamless responsiveness of the AdaptFilter system create an experience that is qualitatively different from anything in the lower consumer tier. SynapTech's marketing leans heavily into this moment, running a decades-long campaign built around the phrase 'Feel the difference.' The Clarity Pro is standard-issue for Tier 3 white-collar workers at mid-level corporations, and its presence in a resume's listed hardware is a quiet signal of professional seriousness. The two-stage installation process, while mildly inconvenient, has become a social ritual — the second activation session is often celebrated with friends.",
+  "manufacturer": "SYNAPTECH NEURAL DESIGN GROUP",
+  "tier_availability": "Tier 2-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Two-session outpatient procedure at SynapTech certified clinic; first session for mesh deployment (2.5 hours), second session 14 days later for SenseSync somatosensory calibration (1.5 hours); local anesthetic both sessions",
+  "rejection_risk": "Minimal — NeuroWeave 4.0 platform has the highest biocompatibility rating of any consumer BCI currently on market; SynapTech's proprietary mesh coating reduces inflammatory response by 34% compared to industry standard",
+  "maintenance": "Monthly OTA firmware updates; SynapTech recommends bi-annual SenseSync recalibration as users' somatosensory maps shift with age and experience; AdaptFilter cognitive model updates quarterly; optional annual full neural audit at SynapTech certified clinic",
+  "specifications": "{\"bandwidth\": \"200 Mbps\", \"channels\": 6, \"ar_resolution\": \"4K equivalent\", \"encryption\": \"AES-256 with SynapTech PrivacyVault layer\", \"battery\": \"Passive induction with 12-hour active buffer cell\", \"latency\": \"5-9ms\", \"haptic_feedback\": \"SenseSync somatosensory haptic layer\", \"cognitive_filter\": \"AdaptFilter 3.2 — learned behavioral noise reduction\", \"feed_protocols\": [\"CivNet\", \"MeshPublic\", \"AppNest v6\", \"QUANTA-Pay v4\"], \"privacy_suite\": \"Granular per-app feed permission controls with neural audit log\", \"smartlink\": false, \"update_method\": \"OTA automatic with full manual override\"}",
+  "side_effects": [
+    "SenseSync integration discomfort during the two-week period between installation sessions — some users describe phantom tactile sensations as the mesh maps somatosensory pathways before calibration",
+    "AR fidelity adjustment period — users upgrading from lower-resolution BCIs sometimes experience mild motion sickness for 1-2 weeks as their visual cortex adapts to 4K AR rendering",
+    "AdaptFilter over-suppression in rare users with atypical cognitive profiles — the system occasionally filters signals the user intended to receive, requiring manual recalibration",
+    "Mild dependency on SenseSync haptic feedback reported in long-term users — some describe analog physical interactions feeling 'flat' or 'thin' compared to SenseSync-mediated digital ones"
+  ],
+  "cultural_context": "The Clarity Pro is the BCI that Meridian 88's working class aspires to and its middle class takes for granted. In Tier 3 professional and social environments, it is the baseline expectation — below it, you're underpowered; above it, you're either wealthy or working in a specialized field. SynapTech has cultivated an almost Apple-like brand loyalty, with Clarity Pro users demonstrating measurably higher brand retention rates than any competitor. The device's distinctive AR rendering style — slightly warmer color temperature, characteristic SenseSync haptic signature — is recognizable to anyone who's used one, and there is a genuine community of enthusiasts who discuss AppNest applications and SenseSync optimization with the passion of audiophiles comparing equipment. In the Shelf, a Clarity Pro is a status symbol that invites both admiration and robbery.",
+  "known_users": [
+    "Tier 3 white-collar workers and mid-level corporate employees",
+    "young professionals who saved for an upgrade from a NeuralPath or MindBridge unit",
+    "creative industry workers — designers, architects, media editors who rely on high-fidelity AR",
+    "upwardly mobile Tier 2 residents making a deliberate social investment",
+    "university students in professional programs where the Clarity Pro is quasi-mandatory"
+  ],
+  "story_hooks": [
+    "A flaw in the SenseSync calibration algorithm — present in all Clarity Pro units shipped in a specific six-month window — creates a subtle somatosensory bleed that allows a third party with the right equipment to map a user's physical location based on their haptic response patterns. SynapTech knows, and is quietly delaying the patch.",
+    "A player character's AdaptFilter begins suppressing specific categories of information with increasing aggression — not due to a learned behavioral model, but because someone has pushed a targeted update that is systematically filtering out news about a specific corporate event from their feed.",
+    "The AppNest platform's curated security reputation is shattered when a popular productivity application is discovered to have been harvesting raw neural interaction data for eighteen months — and the audit logs that should have shown the unauthorized access were themselves being suppressed by the application."
+  ],
+  "street_price": "Φ3,200",
+  "licensed_price": "Φ5,100",
+  "tags": [
+    "cyberware",
+    "bci",
+    "consumer",
+    "tier-2",
+    "tier-3",
+    "synaptech",
+    "neural-mesh",
+    "haptic",
+    "aspirational",
+    "mid_range_consumer"
+  ],
+  "parent_corponation": ""
+}

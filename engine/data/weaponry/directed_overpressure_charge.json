@@ -10,7 +10,7 @@
   ],
   "category": "explosive",
   "description": "The DOC-7 is a shaped-charge demolition device engineered to produce a unidirectional pressure wave rather than an omnidirectional blast. Unlike conventional explosives that waste energy in all directions simultaneously, the DOC-7 uses a parabolic copper-composite reflector plate cast directly into the charge body. On detonation, the reflector focuses approximately 78% of the blast energy into a forward cone of roughly 40 degrees, producing an overpressure front capable of collapsing reinforced concrete walls, shearing door mechanisms, and incapacitating personnel in the target corridor without destroying the structure behind the operator.\n\nThe charge uses a linear magnetic acceleration trigger system: a small magnetic initiator rail drives a tungsten striker into the primary detonator at precisely calibrated velocity, ensuring consistent detonation timing regardless of ambient temperature or humidity — a common failure point in legacy explosive initiators used in Meridian 88's variable-climate sublevels. This consistency makes the DOC-7 reliable in flooded infrastructure, high-EMF environments, and extreme cold, all common conditions in the city's lower tiers.\n\nPALLADIAN CONSTRUCTION originally developed the DOC-7 for controlled demolition of condemned hab-blocks, where precision was necessary to avoid collapsing adjacent structures. The design was licensed to ARCTURUS DEFENSE SOLUTIONS, who militarized it with a magnetic initiator rail and reduced the charge mass for operator carry. The civilian and military versions are nearly identical in external appearance, a fact that has created significant legal ambiguity in Meridian 88's courts.",
-  "manufacturer": "PALLADIAN CONSTRUCTION (civilian) / ARCTURUS DEFENSE SOLUTIONS (military variant)",
+  "manufacturer": "Iron Point Ammunition",
   "tier_availability": "Tier 3+ (civilian) / Military only (military variant)",
   "legality": "Licensed (civilian) / Restricted (military variant)",
   "base_technologies": [
@@ -47,6 +47,8 @@
     "control",
     "cold",
     "energy",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

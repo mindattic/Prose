@@ -1,0 +1,45 @@
+{
+  "id": "a3f7c2e1b09d4856f1e2a3c7d8b90e4f",
+  "name": "Deepcore RadSkin Tunnel Worker Suit MK-2",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Mottled grey-green with orange reflective banding, the RadSkin is a full-body soft-shell suit built for Shelf-level tunnel crews working contaminated substrata. The outer layer is bonded graphene-weave over a lead-flex membrane, visibly patched at the knees and elbows where previous owners added scrap ceramic tile reinforcement. Interior seams are sealed with pressure tape, yellowed from use. Wrist and ankle closures are ratchet-cinch rubber rings. The hood integrates a filtered face port with a cracked polycarbonate visor — often replaced with aftermarket lenses.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "lead-flex membrane",
+    "bonded graphene-weave",
+    "scrap ceramic tile patches",
+    "pressure-sealed rubber ratchet closures",
+    "polycarbonate visor"
+  ],
+  "functionality": "Provides moderate gamma and beta radiation shielding rated for contaminated zones up to 3.2 mSv/hr. Integrated boot cuffs seal against ground pooling. Not rated for alpha emitters without supplemental respirator. Patch-repair extends suit life but degrades shielding uniformity.",
+  "what_it_says": "You work the deep tunnels, you breathe the bad air, and you don't expect anyone to replace your gear when it fails.",
+  "worn_by": [
+    "Shelf tunnel crews",
+    "unauthorized salvage workers",
+    "contaminated-zone infrastructure laborers",
+    "desperate freelancers"
+  ],
+  "manufacturer": "Deepcore (street label, Shelf-manufactured)",
+  "price_range": "Φ80–Φ210 (used/patched), Φ340 new",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A cracked visor port has been repaired with layered bioadhesive — the previous owner's blood type is still printed on the collar tag.",
+    "Deepcore suits carry no serial numbers, making them untraceable — useful for crews working tunnels that officially don't exist.",
+    "A radiation exposure log stitched into the lining shows this suit has exceeded its safe lifetime by 400 hours."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "hazmat",
+    "radiation",
+    "tunneling",
+    "tier-1",
+    "shelf",
+    "industrial",
+    "full-body",
+    "aug-incompatible"
+  ],
+  "parent_corponation": ""
+}

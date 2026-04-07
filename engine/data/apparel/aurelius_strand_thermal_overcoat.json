@@ -1,0 +1,46 @@
+{
+  "id": "6f2a9e4c7b1d508e3f6a2c9b4e7d1f3a",
+  "name": "Aurelius & Strand Thermal Overcoat",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "Aurelius & Strand is a Tier 5 tailor operating from a single atelier on the upper floors of a Spire commercial tower, accepting clients by referral only. Their Thermal Overcoat is a floor-length piece in a double-faced cashmere-wool that falls with the kind of weight that makes movement feel deliberate. The exterior is available in three colors — deep charcoal, ivory, and a midnight blue that is almost but not quite black — and the interior face, which shows at the collar and lapel turn, is a contrasting cream or dove grey. The construction is fully bespoke: the fit is calculated to the individual wearer's measurements and adjusted twice before delivery. Seams are hand-finished. The buttons are milled horn.\n\nEmbedded in the chest lining is a passive thermal regulation mesh — not advertised, not explained in any documentation, simply present — that maintains a stable microclimate around the torso across a wide range of external temperatures. The wearer stays comfortable from a heated boardroom to an outdoor arrival platform without visible adjustment. This is a jacket for people who cannot afford to be seen to be cold. In the Spire, discomfort is a form of vulnerability, and Aurelius & Strand charges accordingly for its elimination.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "double-faced cashmere-wool",
+    "hand-finished seams",
+    "milled horn buttons",
+    "passive thermal regulation mesh lining"
+  ],
+  "functionality": "Passive thermal regulation mesh maintains stable torso temperature across a wide external temperature range without active power draw. No BCI interface. No visible tech.",
+  "what_it_says": "You have arrived at a level where your coat costs more than most people's annual housing, and nobody in your circle will find that remarkable.",
+  "worn_by": [
+    "Spire executives",
+    "corponation board members",
+    "senior Tier 5 diplomats",
+    "old-money inheritors",
+    "anyone for whom the price is not a consideration"
+  ],
+  "manufacturer": "Aurelius & Strand",
+  "price_range": "Φ4800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Two Spire board members wear Aurelius & Strand coats to the same meeting; the tailor has a strict one-client-per-sector policy, which means one of these coats is a forgery — and a very good one.",
+    "The passive thermal mesh in a specific coat is broadcasting a faint signal that its owner hasn't noticed; someone installed a secondary function during the atelier fitting, and Aurelius & Strand insists it wasn't them.",
+    "A Tier 3 investigator who spent a year building a financial fraud case against a Spire executive has managed to get inside the atelier as a cleaning contractor; the coat hanging in the workroom has a name tag that changes everything about the case."
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "jacket",
+    "tier 5",
+    "overcoat",
+    "cashmere",
+    "bespoke",
+    "aurelius and strand",
+    "spire",
+    "thermal regulation",
+    "luxury"
+  ],
+  "parent_corponation": ""
+}

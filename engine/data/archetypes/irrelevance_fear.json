@@ -1,0 +1,33 @@
+{
+  "id": "56ffbb1944397951506214372e24452d",
+  "name": "Irrelevance Fear",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Terrified of becoming invisible, forgettable, unnecessary",
+  "behavioral_signature": "Constantly proves their value to avoid being discarded",
+  "under_stress": "Becomes desperately performative and attention-seeking",
+  "at_rest": "Always contributing, always visible, never truly at rest",
+  "will_always": [
+    "remind people they're useful"
+  ],
+  "will_never": [
+    "sit quietly while others contribute"
+  ],
+  "unless": [
+    "they've found a place where their value isn't conditional"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Performer",
+      "threshold": 0.7,
+      "context": "fear of being forgotten"
+    }
+  ],
+  "opposite_of": [
+    "Hermit"
+  ],
+  "tags": [
+    "desperate",
+    "performative"
+  ]
+}

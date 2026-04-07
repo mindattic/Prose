@@ -11,7 +11,7 @@
   "category": "ballistic",
   "caliber": "12.7mm",
   "description": "The HSP-127 is a magnetically accelerated anti-materiel penetrator designed for the HVP-4 'Corkscrew' railgun platform, featuring a unique helical sleeve that imparts extreme rotational spin to the projectile during electromagnetic acceleration. The penetrator is a tungsten-ceramic composite rod housed in a discarding helical sleeve — as the weapon's 14-stage coil array accelerates the round to 4,200 m/s, the sleeve's helical grooves interact with the electromagnetic field to spin the penetrator at up to 220,000 RPM. The sleeve discards at the muzzle, and the penetrator continues to its target as a hyper-velocity spinning rod.\n\nThe extreme spin rate is the HSP-127's defining characteristic. At 220,000 RPM, the penetrator functions less like a bullet and more like a drill bit striking at four times the speed of sound. Against conventional armor, the rotational energy compounds the kinetic penetration — the round does not simply punch through, it bores through, with the spin dispersing material laterally as it advances. This makes the HSP-127 effective against reactive armor systems that are designed to deflect or shatter conventional kinetic penetrators, because the sustained rotational contact defeats the reactive element's ability to redirect the projectile.\n\nThe rounds are loaded in 12-round ceramic-sleeve cassettes that protect the delicate helical sleeves from handling damage. Each sleeve must be precisely aligned with the weapon's coil array for proper spin induction, which means the cassette loading mechanism is the weapon's most mechanically complex and failure-prone component. Field reports indicate a 2-3% feed failure rate under combat conditions, typically manifesting as a sleeve misalignment that produces a tumbling, unpredictable shot rather than a clean penetrator release. The weapon's coolant system must also be maintained — 8 rounds of rapid fire saturate the heat sink, requiring a mandatory coolant purge before continued operation.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Blackwood Commercial Group",
   "tier_availability": "Tier 4+",
   "legality": "Restricted — anti-materiel classification, requires ADS-issued operator license",
   "specifications": "weight_per_round: 42g (penetrator + sleeve)\nmuzzle_velocity: 4,200 m/s\npenetration_rating: Defeats all personal armor classifications, effective against light vehicle armor and reinforced structural elements\neffective_against: Armored vehicles, fortified positions, heavy synthetic combatants, hardened infrastructure\ncountermeasures: Heavy reactive armor (partially effective), active defense systems, extreme distance (energy dissipation)",
@@ -38,12 +38,12 @@
     "ai",
     "synthetic",
     "corporate",
-    "rain",
     "vehicle",
     "train",
     "armor",
     "energy",
     "fire",
     "tier 4"
-  ]
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

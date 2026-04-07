@@ -1,0 +1,35 @@
+{
+  "name": "Solenne Mirrorweave Tier-Ascension Gala Suit",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "spire_couture_suit",
+  "manufacturer": "Solenne Atelier",
+  "description": "Solenne's Mirrorweave line is produced in runs of forty garments per season, each registered to a named buyer. The Tier-Ascension Gala Suit is their statement piece for clients who have recently crossed into Tier 5 standing and need to dress for their first Spire-level social events without the accumulated cultural fluency that old-money Spire residents have from birth. Solenne's fitters understand this transition acutely and design the suit to carry the wearer: the Mirrorweave fabric is a photonic mesh that reads the ambient light of any environment and adjusts its surface reflectivity in real time, ensuring the suit always appears to belong in the room it's in. The cut includes a fully integrated BCI-responsive layer that monitors the wearer's biometric stress signals and subtly adjusts the jacket's shoulder structure to maintain posture under social pressure.\n\nThe silhouette is bespoke to the individual, fitted over three sessions. Augment-compatible openings are sewn with Solenne's proprietary self-sealing edge, which closes flush when not in use. Geneware accommodations are available at additional cost. The price does not include alterations after delivery.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ4800",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "extreme",
+  "legal_status": "legal",
+  "cultural_context": "In Spire social circles, a Solenne Mirrorweave suit on a new arrival is readable — not because it's wrong, but because the choice to wear it is itself a tell. Old-money Spire residents wear clothes that don't need to adapt. The suit's adaptability is its luxury and its confession simultaneously. Some buyers understand this and wear it anyway. A few return it.",
+  "story_hooks": [
+    "The character's BCI stress-monitoring is feeding data to Solenne's atelier as part of a 'service agreement' in the fine print. Someone at Solenne has been watching the biometric readouts from three Spire galas and building a profile.",
+    "A Tier 5 social rival recognizes the Mirrorweave adaptation in real time — the slight shimmer as the suit recalibrates when the character enters a room. She mentions it quietly. The character has to decide how to respond.",
+    "The suit was purchased for someone who died before the final fitting. Solenne's atelier has the unfinished garment and the buyer's estate has no instructions for it. The character is the estate executor."
+  ],
+  "tags": [
+    "formal",
+    "couture",
+    "Solenne",
+    "Mirrorweave",
+    "Spire",
+    "Tier 4-5",
+    "BCI-responsive",
+    "aug-compatible",
+    "geneware-compatible",
+    "tier-ascension",
+    "photonic-mesh"
+  ],
+  "id": "0ced63f6594f416b82a8270bfc0c08ca",
+  "parent_corponation": ""
+}

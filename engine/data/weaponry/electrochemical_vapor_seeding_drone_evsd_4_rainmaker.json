@@ -10,7 +10,7 @@
   ],
   "category": "drone",
   "description": "The EVSD-4 is a medium-frame area-preparation drone that disperses a proprietary electrochemical vapor compound across a target zone, seeding the atmosphere with ionized particulate that dramatically enhances the conductivity and lethality of subsequent electrical or galvanic weapon discharges. The vapor—a suspension of hygroscopic metallic salt particles developed by OUROBOROS ENERGY for industrial capacitor humidification—bonds to airborne moisture and settles on surfaces, clothing, and exposed skin, creating an invisible conductive network that bridges gaps between targets and dramatically lowers the energy threshold required for electrical disruption.\n\nThe Rainmaker operates at low altitude (3–15 meters) to ensure dense, even vapor distribution before ascending to observation altitude. Once a zone has been seeded, galvanic or electrical weapons discharged into it experience dramatically amplified arc propagation—discharges that would normally affect a single target can chain to adjacent persons, and energy weapons operating at sub-lethal settings become lethal within the seeded zone. The vapor disperses naturally within 4–8 minutes in open air or up to 20 minutes in enclosed spaces, giving operators a defined engagement window.\n\nOUROBOROS ENERGY developed the vapor compound for entirely non-military purposes, but RINGO CORPONATION's defense subsidiary recognized its weaponization potential and quietly funded EVSD-4 platform development through a series of subsidiary arrangements. The resulting weapon exists in a legal gray zone: the drone itself is classified as an 'atmospheric preparation system' with no offensive designation, while the vapor compound retains its industrial certification. This regulatory gap has made the EVSD-4 surprisingly accessible through legitimate industrial supply channels.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Hometown Laundry Systems",
   "tier_availability": "Tier 3+",
   "legality": "Restricted (regulatory gray zone — platform licensed as industrial equipment)",
   "base_technologies": [
@@ -50,7 +50,8 @@
     "storm",
     "clothing",
     "energy",
-    "fire",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

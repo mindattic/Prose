@@ -1,0 +1,49 @@
+{
+  "id": "c1e4a7f2b3d5089641a2b3c4d5e6f7a8",
+  "name": "GridPatch Night Maintenance Street-to-Site Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Infrastructure maintenance workers who pull night shifts on Circuit's open-air conduit grid — fixing cracked pipes, patching acid-rain erosion on overpass supports, splicing power lines at two in the morning — wear a rig that has to take them from the transit stop to the job site and back without standing out as a target. The outer shell is a hooded work jacket in slate grey synth-canvas, mid-thigh length with a drawstring hem, raglan sleeves cut wide enough to accommodate a full chrome arm prosthetic with room for a tool strap underneath. Subtle reflective piping runs along the hood edge and cuffs — visible to vehicles but not obvious from a distance. The jacket back carries a large embroidered patch: the GridPatch municipal maintenance logo, a stylized circuit-board hexagon in faded yellow-orange on grey. Underneath is a heavyweight navy henley in thermal synth-cotton, long-sleeved with reinforced elbow patches in darker navy canvas. The trousers are Fenmark ToughSeam-style in charcoal, with articulated knees, a waterproof coating on the lower legs and seat, and six pockets including two large cargo pockets on the thigh sealed with hook-and-bar closures. A tool belt in worn black leather-analog sits over the waistband — spanner loops, a multi-tool holster, and a small lamp clip. Boots are mid-cut waterproof work boots with a composite toe and deep lug sole for wet grating and scaffold work. A knit neck gaiter in charcoal doubles as a face cover in acid-drizzle conditions, and a battered hard-foam bump cap with a built-in LED strip completes the head.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-canvas",
+    "thermal synth-cotton",
+    "waterproof DWR-coated nylon",
+    "leather-analog",
+    "composite toe rubber",
+    "deep-lug rubber outsole",
+    "knit synth-wool analog"
+  ],
+  "functionality": "Acid-rain and moisture resistance on lower garments, wide raglan sleeves for chrome arm accommodation, tool belt integration, LED bump cap for hands-free worksite lighting, neck gaiter for chemical drizzle protection, subtle reflective trim for vehicle visibility, waterproof lower trouser panels for standing water and grating work",
+  "what_it_says": "Municipal worker. Not glamorous, not corporate — GridPatch is a city-contracted outfit that pays steadily but slowly. The faded patch says they've had this jacket a while. The tool belt is personal — not issued — and the wear on the leather shows which tools they reach for most. They move through the city at night like they own it, because they kind of do.",
+  "worn_by": [
+    "municipal infrastructure maintenance crew",
+    "night-shift conduit repair workers",
+    "power grid splice technicians",
+    "overpass erosion crews",
+    "independent contract maintenance workers"
+  ],
+  "manufacturer": "GridPatch Municipal Maintenance Division (jacket and trousers); tool belt self-assembled from market hardware",
+  "price_range": "Φ160–Φ240 full rig (jacket Φ90, trousers Φ70, boots Φ80 separate)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A GridPatch crew member discovers a sealed access panel on a routine conduit run that isn't on any city infrastructure map — behind it is a hardwired data tap that's been pulling live transit and surveillance feeds for an unknown duration.",
+    "Someone in this rig has been seen at three separate crime scenes in the last month — always as a background figure in footage, always appearing to work, never flagged because maintenance workers are invisible on Circuit streets at night.",
+    "The GridPatch embroidered patch on the jacket back has been quietly redesigned — the new version contains a microscopic RFID tag that logs worker location every fifteen minutes; the old-patch crew are the only ones who haven't been updated yet."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "maintenance",
+    "night_shift",
+    "municipal",
+    "aug_compatible",
+    "infrastructure",
+    "working_class",
+    "gridpatch"
+  ],
+  "parent_corponation": ""
+}

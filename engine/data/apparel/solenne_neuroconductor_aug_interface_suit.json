@@ -1,0 +1,46 @@
+{
+  "id": "c9d3f6a0e8b1247a5c9d3f6a0e8b1208",
+  "name": "Solenne NeuroConductor Aug-Interface Suit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Second-skin bodysuit in deep graphite with hair-fine silver trace lines mapping the body's full aug-interface topology — power routing, data bus channels, neural handshake nodes — all printed directly into the fabric via nano-deposition. At the Spire, chrome is architectural, not just functional, and this suit ensures every implant communicates at peak fidelity. The fabric itself is a nano-woven thermal regulator: cool when you're warm, warm when you're cold, imperceptibly thin. Worn alone, the silver traces catch light like circuit diagrams. Under anything else, it's invisible infrastructure.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "nano-deposited conductive trace fabric",
+    "graphene thermal regulation layer",
+    "quantum-silk outer shell",
+    "BCI-hardened shielding weave",
+    "adaptive pressure micro-lattice"
+  ],
+  "functionality": "Full-body power and data routing between chrome implants and BCI systems; thermal self-regulation across a 15-degree ambient range; electromagnetic shielding against passive signal intercept; nano-trace channels adapt to new implant configurations via BCI-paired recalibration.",
+  "what_it_says": "Your augmentations are not accommodated — they are orchestrated.",
+  "worn_by": [
+    "Spire-tier executives with extensive chrome",
+    "high-augmentation power brokers",
+    "Corponation C-suite with military-grade implants",
+    "elite operatives whose chrome requires coordinated management"
+  ],
+  "manufacturer": "Solenne Atelier — Tier 5 exclusive",
+  "price_range": "Φ18,000–Φ40,000 (custom-fitted, bespoke trace mapping)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Solenne suit recovered from a corporate assassination scene still holds cached signal data in its trace network — a ghost record of the wearer's final BCI transmissions.",
+    "A Tier 3 tech who works Solenne quality control has been quietly building a counterfeit version from stolen nano-deposition specs — it's almost right, and almost right is dangerous.",
+    "The suit's EM shielding is blocking something its wearer didn't authorize — someone installed a passive intercept layer during the last fitting appointment."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "aug-compatible",
+    "tier-5",
+    "spire",
+    "chrome-interface",
+    "biometric",
+    "luxury",
+    "nano-fabric",
+    "thermal-regulation",
+    "bci"
+  ],
+  "parent_corponation": ""
+}

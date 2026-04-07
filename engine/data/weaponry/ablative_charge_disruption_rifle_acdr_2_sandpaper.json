@@ -10,7 +10,7 @@
   ],
   "category": "cyber",
   "description": "The Ablative Charge Disruption Rifle ACDR-2 fires a coherent stream of triboelectrically charged microparticles — each grain roughly 40 microns in diameter — accelerated to moderate velocity through a segmented linear barrel. On contact with a target surface, the particles discharge accumulated static potential simultaneously, creating a combined ablative and electrostatic effect that strips insulating coatings, disrupts surface-mounted electronics, and causes intense localized irritation to exposed biological tissue. It is, in the bluntest terms, a gun that sandpapers things until they stop working.\n\nArctures Defense Solutions developed the ACDR-2 primarily as an anti-materiel platform for defeating hardened drone carapaces and armored cyberware without requiring explosive munitions in confined spaces. The triboelectric charge buildup during barrel transit is self-generating — the particles charge themselves against the barrel lining, meaning the weapon requires no external charge source beyond the kinetic energy of the propellant. This passive charging mechanism keeps the design mechanically simple and brutally reliable, with fewer failure points than comparable electromagnetic weapons.\n\nThe weapon's unpleasant reputation among its users comes from its secondary biological effect. While not designed as an anti-personnel weapon, the microparticle stream causes severe dermabrasion and mucosal irritation at close range, and the electrostatic discharge against cybernetic implants can trigger involuntary motor responses and sensory feedback spikes. Users have described the experience of being hit as feeling like being scrubbed with broken glass that also bites. Field operators have given it the nickname 'Sandpaper' with no affection.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Iron Point Ammunition",
   "tier_availability": "Tier 3+",
   "legality": "Licensed — registered operators and contracted security; Restricted — civilian",
   "base_technologies": [
@@ -61,6 +61,8 @@
     "explosive",
     "energy",
     "fire",
-    "tier 3"
-  ]
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

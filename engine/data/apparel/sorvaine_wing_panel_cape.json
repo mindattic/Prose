@@ -1,0 +1,42 @@
+{
+  "id": "1d5f8a3c6b0e2d9f4a7c1b8e5f3a0d6c",
+  "name": "Sorvaine Wing-Panel Cape",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "Sorvaine is a small Tier 3-4 label that exists almost entirely to serve geneware users with wing modifications — a population that most mainstream outerwear manufacturers still design around rather than for. The Wing-Panel Cape is the brand's core offering: a structured cape with a full back panel that opens via a magnetic closure system running the length of the spine, allowing the garment to accommodate folded wings of varying spans without forcing the wearer to choose between being warm and being able to extend their modifications. The front falls in a clean A-line to mid-thigh; the back panel is cut in a generous trapezoid that drapes well over folded wing structures. Material is a boiled wool in deep plum, forest green, or black, with a satin lining. The silhouette is dramatic and intentional — Sorvaine does not apologize for making something that reads as theatrical, because the people who need it have already accepted that their existence reads as theatrical to those who have not adapted.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "boiled wool",
+    "satin lining",
+    "neodymium magnetic closure system",
+    "structured shoulder construction"
+  ],
+  "functionality": "Magnetic spine closure accommodates folded wing geneware mods. Panel sizing available in three wing-span ranges.",
+  "what_it_says": "You have modified your body in a way that requires the world to adapt to you, and you have found a maker who was willing to do that. You are not hiding what you are.",
+  "worn_by": [
+    "geneware users with wing modifications",
+    "Tier 3 geneware-adjacent social circles",
+    "dramatic fashion adopters without mods who like the silhouette",
+    "performers"
+  ],
+  "manufacturer": "Sorvaine (independent label)",
+  "price_range": "Φ245",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "Sorvaine's founder has recently received a licensing demand from a corponation claiming prior design rights to the magnetic spine closure system — the demand appears to be in bad faith but defending against it could bankrupt the label",
+    "A Sorvaine Wing-Panel Cape in forest green was found at a crime scene with no body — the interior satin lining contained a hand-written message in a language that the investigating team's translation software does not recognize",
+    "The geneware wing modification community in Meridian 88 uses specific Sorvaine colorways as informal social signals — forest green indicates you are open to meeting new people, plum means you prefer to be left alone"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "Tier 3",
+    "cape",
+    "geneware-compatible",
+    "wing mods",
+    "independent label",
+    "structured"
+  ],
+  "parent_corponation": ""
+}

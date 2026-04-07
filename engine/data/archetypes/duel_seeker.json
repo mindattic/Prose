@@ -1,0 +1,34 @@
+{
+  "id": "7ac2f0795db6c04d38a9ab0f09513152",
+  "name": "Duel Seeker",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Obsessed with one-on-one confrontation as the purest form of truth",
+  "behavioral_signature": "Challenges opponents directly and refuses team tactics",
+  "under_stress": "Picks fights with opponents who outclass them just for the honor of it",
+  "at_rest": "Training, always training, for the next worthy opponent",
+  "will_always": [
+    "seek worthy single combat"
+  ],
+  "will_never": [
+    "accept help in a personal fight"
+  ],
+  "unless": [
+    "the stakes are bigger than personal honor"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Duelist",
+      "threshold": 0.9,
+      "context": "single combat"
+    }
+  ],
+  "opposite_of": [
+    "Crowd Fighter"
+  ],
+  "tags": [
+    "honor",
+    "single_combat",
+    "challenge"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "e2b7a5d3f69c8203b5c6d7e8f9a0b152",
+  "name": "Ashwall Tier-Hop Courier Full Transit Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Built for moving through every tier in a single shift. Core layer: a slim-cut reversible jacket — Circuit grey on one face, Tier 3 charcoal professional on the other, each side clean enough to pass. Underneath: a collarless base layer in neutral sand that reads as deliberate minimalism above Tier 2. Slim cargo trousers with hidden compartments at the thigh and calf, tailored enough for a Tier 4 lobby. Shoes split the difference — clean enough for an elevator, grippy enough for a fire escape.\n\nHood with integrated filter, collapsible into a collar. Neural port cap is a neutral brushed-metal — no corporate logo. Everything folds flat into the sling bag.",
+  "tier_association": "Tier 1-4",
+  "materials": [
+    "reversible poly-cotton blend jacket",
+    "neutral sand collarless base layer",
+    "slim cargo trouser ripstop",
+    "filter-integrated collapsible hood",
+    "brushed-metal neural port cap"
+  ],
+  "functionality": "Reversible jacket for rapid tier-presentation switching, hidden cargo compartments at thigh and calf, collapsible filter hood, neutral BCI port cap with no identifying markings, grippy-yet-clean sole profile, and full kit packs flat into a standard sling bag.",
+  "what_it_says": "You belong everywhere and nowhere, and you've made a living out of the fact that no one can quite place you.",
+  "worn_by": [
+    "tier-hopping couriers",
+    "info brokers doing their own runs",
+    "undercover fixers",
+    "journalists working protected sources across tier lines"
+  ],
+  "manufacturer": "Ashwall (street label)",
+  "price_range": "Φ 300 – Φ 700",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The hidden calf compartment contains a sealed package that's been there for three weeks — the client who sent it has stopped responding to messages.",
+    "A Tier 4 security AI has flagged this outfit's thermal signature twice in the same building; someone is pattern-matching the courier's routes.",
+    "The reversible jacket's Circuit-grey side has a small hand-drawn mark inside the collar — a Shelf gang sign indicating this person is under informal protection."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "courier",
+    "tier_hopping",
+    "underworld",
+    "aug_compatible",
+    "reversible",
+    "tier1",
+    "tier2",
+    "tier3",
+    "tier4",
+    "full_kit",
+    "character_defining",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

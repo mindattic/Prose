@@ -1,0 +1,46 @@
+{
+  "id": "2f6b8e0d4a1c7953e8f2b3d0a7c5e419",
+  "name": "Deepvein Mining Integrated Tunnel Suit Mk-6",
+  "type": "apparel",
+  "category": "protective",
+  "description": "Gunmetal grey full-coverage tunnel suit with articulated knee and elbow reinforcement plates in battered orange. The outer shell is abrasion-resistant ripstop carbide-weave with sealed seams throughout. Integrated lighting strips run along the shoulders and forearms — low-power bioluminescent fallback strips beneath the primary LEDs ensure visibility even if power fails underground. Dust filters are built into the collar as a pull-up face seal.\n\nThe suit's back panel has a structured channel running spine-to-hip that accommodates spinal rigs and exoskeleton attachment rails. Tail-compatible versions exist as a Mk-6G variant with a reinforced rear gusset. Most suits show heavy scarring from rock contact along the shoulders and knees — miners consider a clean suit a sign of inexperience.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "carbide-weave ripstop shell",
+    "polypropylene reinforcement plates",
+    "bioluminescent fallback strips",
+    "LED shoulder/forearm lighting",
+    "integrated particulate collar filter"
+  ],
+  "functionality": "Abrasion-rated for continuous rock-face contact. Dual lighting system — primary LED with 12-hour battery, secondary bioluminescent strips rated 6 hours passive. Integrated dust-filter collar seal rated P100 equivalent. Spinal rig channel and exoskeleton rail attachment points at rear. Sealed seams resist fine particulate infiltration. Emergency reflective patches on back and knees.",
+  "what_it_says": "You go into the ground and you come back out — and the suit proves how many times you've done it.",
+  "worn_by": [
+    "deep tunnel miners",
+    "Shelf infrastructure workers",
+    "underground salvagers",
+    "utility boring crews",
+    "black-site excavation teams"
+  ],
+  "manufacturer": "Deepvein Equipment Co. (Tier 1-2 industrial supplier, semi-licensed)",
+  "price_range": "Φ 220–Φ 480",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A mining crew's Mk-6 suits are all showing bioluminescent strip failure simultaneously — someone has been exposing them to a compound that degrades the bio-substrate, and the next deep shift has no backup lighting.",
+    "A veteran miner's suit has a carved tally on the left forearm plate — 847 marks — and she refuses to say what they count.",
+    "A sealed-off tunnel section beneath the Shelf contains a cache of Mk-6 suits still occupied, arranged deliberately, and someone has been keeping the area clear of salvagers for years."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "mining",
+    "tunneling",
+    "industrial",
+    "shelf",
+    "underground",
+    "aug-compatible",
+    "tier1",
+    "tier2"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Crucible Furnace Floor Safety Coverall",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "protective_work",
+  "manufacturer": "GeneFit Health Testing",
+  "description": "Standard-issue for Crucible smelting and foundry floor workers in non-supervisory roles, this coverall is built for sustained high-heat environments. The outer shell is a ceramic-fiber reinforced Nomex equivalent in Crucible's standard burnt-orange safety color, with reflective silver tape at the ankles, wrists, and shoulders. Interior lining is a moisture-wicking thermal buffer that manages heat stress for up to four hours of continuous furnace-proximity work. Tool loops run along both thighs, and a reinforced patch pocket at the chest accommodates standard Crucible-issued rad dosimeters. Tail accommodation is achieved through a rear zip panel from the waist down. Chrome arm and shoulder ports are accessible via hook-and-loop flap covers rated to 400°C surface contact.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ155",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "Every Crucible foundry worker knows this coverall. It's practical, uncomfortable in the upper chest, and smells of metal and sweat after the first week of use. Workers often write their names inside the collar in permanent marker because the laundering system loses them constantly. Wearing it outside work is rare but happens — it signals a kind of hard-labor dignity that some people wear with pride.",
+  "story_hooks": [
+    "A batch of coveralls is distributed with defective thermal buffers — the failure mode isn't obvious until someone is already in danger.",
+    "A worker is found wearing a coverall with a falsified Crucible employee ID sewn in, gaining access to restricted smelting floor areas for reasons unknown.",
+    "The rad dosimeters issued with this coverall have been quietly recalibrated to underreport exposure, and workers are getting sick."
+  ],
+  "tags": [
+    "crucible",
+    "industrial",
+    "foundry",
+    "heat_resistant",
+    "safety",
+    "augment_compatible",
+    "geneware_compatible",
+    "coverall",
+    "tier2",
+    "tier3",
+    "protective"
+  ],
+  "id": "c09dc38e6966418680617948c553a515",
+  "parent_corponation": "Crucible Genomics"
+}

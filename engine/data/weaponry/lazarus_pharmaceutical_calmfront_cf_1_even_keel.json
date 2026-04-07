@@ -1,0 +1,46 @@
+{
+  "id": "2b6f9d0e4c8a175329e7f1b6c4d2a8f3",
+  "name": "Lazarus Pharmaceutical CalmFront CF-1 'Even Keel'",
+  "type": "weapon",
+  "aliases": [
+    "Even Keel",
+    "The Chill",
+    "Peacemist",
+    "Lazarus Calm"
+  ],
+  "category": "spray",
+  "description": "CalmFront CF-1 represents Lazarus Pharmaceutical's formal entry into the crowd-pacification market — a mood-suppressing aerosol compound built around LP-Serenex, a synthetic anxiolytic and aggression-suppressing agent that inhibits amygdala-driven threat-response cascades through rapid-onset airborne delivery. Unlike benzodiazepine derivatives or earlier sedative aerosols, LP-Serenex does not produce drowsiness or motor impairment in standard doses — subjects remain fully conscious, mobile, and cognitively functional, but the physiological underpinnings of aggression, rage, and panic are chemically suppressed for a window of thirty to ninety minutes. Lazarus markets this as 'emotional de-escalation without incapacitation,' and the framing has proven effective with corporate clients concerned about the PR optics of visible crowd violence.\n\nThe CF-1 canister is designed for both handheld point-deployment and as a refill cartridge for fixed environmental dispensers installed in corporate lobbies, Tier 4 transit hubs, and executive-floor access corridors. The compound is odorless and invisible, and subjects do not typically realize they have been exposed — they simply notice, after a short delay, that they feel less urgency about whatever was agitating them. Lazarus documentation carefully avoids the word 'sedation,' preferring 'voluntary-affect modulation.' Critics, including several BCI-rights organizations, use less diplomatic language.\n\nThe CF-1 occupies a deeply contested legal and ethical space. Its use in fixed environmental dispensers — a documented practice in at least four Tier 4 corporate campuses — raises questions about consent that Meridian's current regulatory framework does not clearly address. The compound does not appear on standard tox screens unless specifically tested for, and LP-Serenex leaves no metabolic signature after six hours.",
+  "manufacturer": "Intellectual Property Enforcement Group",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — corporate security and licensed medical use; fixed environmental deployment requires facility permit; covert deployment technically legal in private spaces under Meridian Corporate Sovereignty provisions",
+  "base_technologies": [
+    "LP-Serenex anxiolytic aerosol",
+    "amygdala cascade inhibition compound",
+    "odorless microparticle suspension"
+  ],
+  "specifications": "Active compound: LP-Serenex (synthetic anxiolytic/aggression inhibitor)\nDelivery: handheld aerosol or environmental dispenser cartridge\nOnset: 15–45 seconds (airborne inhalation)\nDuration of effect: 30–90 minutes\nDetectability: undetectable on standard tox screens; specialized assay required\nHandheld canister capacity: 12 bursts\nEnvironmental cartridge duration: 8 hours continuous low-level dispersal\nWeight (handheld): 0.17 kg\nPrice: Φ340 (handheld), Φ890 (environmental cartridge)",
+  "tactical_use": "Security teams deploy CF-1 in anticipation of confrontations rather than in response to them — a burst into a processing queue before an expected difficult interaction, into a holding area before a tense interview, or into a corridor before a security escort. Corporate negotiators have been documented requesting CF-1 deployment in conference rooms before contentious contract discussions, a practice that exists in a legal gray zone. In physical security terms, it is used to reduce the likelihood that a subject will escalate to violence rather than to stop violence already in progress.",
+  "cultural_context": "CalmFront CF-1 is known in activist and labor-organizing circles as 'the invisible leash' — the idea that corporate environments are routinely dosed with it to keep workers compliant has become a persistent and not entirely unfounded conspiracy theory. 'You're on the Keel' is Tier 2 and 3 slang for someone who seems unnaturally calm or compliant in a situation that should provoke anger. The product's odorless, traceless nature makes it uniquely unsettling — unlike visible crowd-control tools, there is no moment of awareness, no chance to hold your breath. Several underground chemists have attempted to synthesize LP-Serenex antagonists, with mixed results.",
+  "known_users": [
+    "Tier 4 corporate security departments",
+    "Lazarus Pharmaceutical internal security",
+    "licensed private negotiation security teams",
+    "some Tier 3 venue security operators"
+  ],
+  "story_hooks": [
+    "A labor organizer suspects their union meetings have been compromised by CF-1 environmental deployment — every session ends with members voting down their own proposals"
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "non_lethal",
+    "mood_suppression",
+    "chemical",
+    "pharmaceutical",
+    "corporate",
+    "covert",
+    "controversial"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

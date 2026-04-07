@@ -1,0 +1,40 @@
+{
+  "id": "2e6b9d1f4a7c035e8b2d6f9c1a4e7038",
+  "name": "Voss Adaptive Runner",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A running shoe engineered from the ground up for augmented stride mechanics. The midsole contains a passive spring-lattice that reconfigures underfoot compression zones based on pressure distribution — useful for prosthetic feet that don't flex the same way biological ones do. Available in several colorways, all clean and sport-minimal. A small 'A+' mark on the heel tab is the only indicator of its aug-compatible spec.\n\nWorn by augmented athletes, physical rehab patients stepping back into activity, and Tier 3 gym-goers who take their chrome seriously. It's a real shoe that happens to work for people who need it to.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "engineered mesh upper",
+    "spring-lattice midsole",
+    "carbon-fiber shank",
+    "blown rubber outsole"
+  ],
+  "functionality": "Passive spring-lattice midsole self-adjusts compression zones to prosthetic or modified foot pressure distribution. No power required.",
+  "what_it_says": "You're active, augmented, and not making a big deal of either. Performance-minded.",
+  "worn_by": [
+    "augmented runners and athletes",
+    "physical rehabilitation patients",
+    "Tier 3 active commuters with prosthetic limbs"
+  ],
+  "manufacturer": "Voss Athletic",
+  "price_range": "Φ110 - Φ135",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The spring-lattice records cumulative pressure data — a worn pair is essentially a gait log that forensic analysts can read.",
+    "A counterfeit version of the Voss Adaptive Runner is circulating on the Shelf — identical appearance, but the midsole is standard foam that degrades rapidly under prosthetic load."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "aug-compatible",
+    "running",
+    "athletic",
+    "spring-lattice",
+    "sport"
+  ],
+  "parent_corponation": ""
+}

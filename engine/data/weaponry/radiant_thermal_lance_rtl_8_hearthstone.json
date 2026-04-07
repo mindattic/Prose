@@ -40,7 +40,6 @@
     "energy",
     "weapon",
     "war",
-    "secret",
     "identity",
     "ai",
     "corporate",
@@ -56,6 +55,8 @@
     "chase",
     "armor",
     "water",
-    "tier 4"
-  ]
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

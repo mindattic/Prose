@@ -1,0 +1,46 @@
+{
+  "id": "f9d3b5a2c8e1047b6f4d0a3e7c2b95f1",
+  "name": "Coldseam The Burned Spire Judge's Exit Look",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "What a Spire judge wears when they're no longer one: a formal robe stripped of its insignia, rank piping removed with a blade — the ghost-lines of where it sat still visible in the fabric's sheen. Beneath it, a plain high-collar shirt in ash-white, buttoned to the throat. Trousers are Tier 4 cut but worn at the knees. Footwear still immaculate — the last pride. A Vanthorpe ankle monitor on the left leg, court-issue, blinking amber. Hair or head covering severe and unstyled. The whole look reads as someone who was Tier 5 this morning and is deciding what they are tonight.",
+  "tier_association": "Tier 4-5",
+  "materials": [
+    "formal robe synthwool — insignia-stripped",
+    "ash-white high-collar press shirt",
+    "tailored synthetic-twill trouser — worn",
+    "immaculate Tier 4 welt-sewn dress shoe",
+    "Vanthorpe polyceramic ankle monitor housing"
+  ],
+  "functionality": "Ankle monitor transmits location to Meridian 88 judicial authority at 30-second intervals; robe retains thermal regulation from original Spire manufacture; high collar conceals BCI port hardware from neural link used in judicial functions.",
+  "what_it_says": "Power stripped to its skeleton — either a warning or a weapon, depending on what this person knows.",
+  "worn_by": [
+    "disgraced Spire judiciary",
+    "former corporate arbiters under sanction",
+    "whistleblowers from Tier 5",
+    "characters in narrative transition from power to danger"
+  ],
+  "manufacturer": "Coldseam (robe); Vanthorpe Judicial Systems (monitor)",
+  "price_range": "Φ 0 (assigned, not purchased)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The robe's insignia was removed by the judge themselves, before the tribunal finished — a statement that still hasn't been explained.",
+    "The ankle monitor has been broadcasting a second, encrypted signal no one at Vanthorpe authorized.",
+    "Three Tier 5 power brokers have made quiet contact since the sentencing — they want something only this person's judicial memory still holds."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "character_defining",
+    "disgraced",
+    "spire",
+    "judiciary",
+    "aug_compatible",
+    "tier4",
+    "tier5",
+    "narrative",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

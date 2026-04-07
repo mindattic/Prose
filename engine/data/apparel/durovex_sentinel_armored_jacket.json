@@ -1,0 +1,42 @@
+{
+  "id": "f27e8152c4d6a7930157e8253d4c6a79",
+  "name": "Durovex Sentinel Armored Jacket",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "From the outside, the Sentinel looks like a well-made moto jacket — slightly structured, medium-weight, available in black or dark olive with minimal hardware. Inside, it's a different story: flexible ballistic panels are bonded to the interior lining at the chest, back, and upper arms, offering civilian-rated protection against small-arms fragmentation and edged weapons. The panels are thin enough that the silhouette reads as normal. You'd have to know what you were looking for.\n\nDurovex is a Tier 3 to 4 personal protection brand that sells legally with appropriate licensing, though the Sentinel is popular enough that unlicensed versions circulate in the Tier 2 markets. Private security contractors, people who work in contested zones, and Tier 3 professionals who've made enemies all wear it. It's not cheap. It's not flashy. It does its job.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "ballistic-panel composite",
+    "leather-look synth exterior",
+    "kevlar-analog lining",
+    "reinforced stitching"
+  ],
+  "functionality": "Civilian-rated flexible ballistic protection — fragmentation and edged-weapon resistant at chest, back, and upper arms. No electronic components.",
+  "what_it_says": "You've thought carefully about what could go wrong and made a quiet decision about it.",
+  "worn_by": [
+    "private security contractors",
+    "contested-zone professionals",
+    "threat-aware Tier 3 residents",
+    "corporate couriers"
+  ],
+  "manufacturer": "Durovex",
+  "price_range": "Φ290",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Sentinel jacket stopped a round that should have killed its wearer — but the shooter used a weapon that shouldn't exist at civilian calibers, and someone is very interested in covering that up.",
+    "The unlicensed Shelf copies of the Sentinel use substandard panel material that fails unpredictably; someone is distributing them deliberately.",
+    "A Durovex sales rep is quietly logging the identity of every Sentinel purchaser and selling the list to an unnamed third party."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "armored",
+    "moto",
+    "protective",
+    "concealed ballistic",
+    "security"
+  ],
+  "parent_corponation": ""
+}

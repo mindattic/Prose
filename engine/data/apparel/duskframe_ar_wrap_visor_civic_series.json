@@ -1,0 +1,48 @@
+{
+  "id": "7e1f3a9c2d5b8e04f6a0c3d7b1e9f42c",
+  "name": "Duskframe AR Wrap Visor — Civic Series",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A wrap-around visor with a continuous curved lens spanning temple to temple, manufactured by Duskframe for the Tier 3 professional market. The frame is brushed bronze-tone recycled aluminum, thin enough to read as fashion but sturdy enough for daily transit wear. The lens shifts from clear to 80% tint via electrochromic film. Integrated AR overlays — transit data, personal notifications, navigation — project at the lens periphery. A discreet neural-port sync tab sits at the right temple, flush with the frame.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "recycled aluminum frame (bronze anodized)",
+    "electrochromic polycarbonate wrap lens",
+    "soft-touch silicone nose bridge",
+    "embedded micro-projection array",
+    "neural-port sync contact tab (copper-alloy)"
+  ],
+  "functionality": "AR overlay displays transit schedules, calendar prompts, and navigation. Electrochromic tint adjusts automatically to ambient light. Neural-port sync enables hands-free menu navigation. Bluetooth-equivalent mesh networking for device pairing.",
+  "what_it_says": "You're connected, organized, and you bought something that looks intentional rather than institutional.",
+  "worn_by": [
+    "mid-level analysts",
+    "small business owners",
+    "transit-savvy professionals",
+    "junior architects",
+    "freelance contractors"
+  ],
+  "manufacturer": "Duskframe (mid-market corponation, eyewear and AR optics)",
+  "price_range": "Φ380–Φ620",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The Civic Series AR overlay has a known firmware vulnerability — a skilled hacker can push false navigation data and reroute the wearer without them realizing it.",
+    "A batch sold through gray-market retailers has an undocumented passive data-harvesting mode that logs location and biometric stress markers back to an unknown endpoint.",
+    "A Tier 3 wearer discovered their visor's AR layer was overlaying corporate ad content over a protest gathering, replacing the crowd with an empty plaza."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "visor",
+    "AR-glasses",
+    "smart-eyewear",
+    "tier-3",
+    "tier-4",
+    "aug-compatible",
+    "neural-port",
+    "electrochromic",
+    "duskframe",
+    "ar-enabled"
+  ],
+  "parent_corponation": ""
+}

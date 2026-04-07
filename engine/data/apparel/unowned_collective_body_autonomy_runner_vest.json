@@ -1,0 +1,49 @@
+{
+  "id": "f0e9d8c7b6a514230f1e2d3c4b5a6789",
+  "name": "Unowned Collective // Body Autonomy Runner Vest",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A tactical mesh vest produced in rotating underground print runs by the Unowned Collective — a loose network of synthetic-rights activists and anti-corponation runners. Front panel displays a bold stencil print: 'NO SERIAL. NO OWNER. NO CORP.' in Hausa-Portuguese pidgin and Standard Meridian glyphs. Back panel varies by print run — current edition shows a cracked corporate ownership barcode over a synthetic's exposed chassis art.\n\nConstruction is deliberately utilitarian: MOLLE-compatible webbing, reflective piping on side seams, a chest channel for runner cable management. The vest is designed to be worn visibly, loudly, in contested spaces. Wearing one in Tier 4 or above is considered a provocation. Synthetics who wear it are making a specific legal and philosophical statement.",
+  "tier_association": "Tier 1-3",
+  "materials": [
+    "recycled ballistic mesh",
+    "stencil-print synthetic canvas panels",
+    "MOLLE nylon webbing",
+    "reflective piping tape",
+    "runner cable channel lining"
+  ],
+  "functionality": "MOLLE webbing accepts standard pouches and tool attachments. Reflective piping improves low-light visibility for runners. Cable management channel routes BCI or comm lines cleanly from collar to waist. Lightweight and breathable for active wear.",
+  "what_it_says": "I am not property, I am not compliant, and I want every camera to see me say it.",
+  "worn_by": [
+    "synthetic rights activists",
+    "anti-corponation runners",
+    "protest organizers",
+    "Circuit-district radicals",
+    "synthetic persons asserting legal identity"
+  ],
+  "manufacturer": "Unowned Collective (underground rotating print, no fixed address)",
+  "price_range": "Φ 20–Φ 55 (sliding scale, free to synthetics)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A new print run contains a hidden steganographic message in the barcode art — someone is using the vests as a dead-drop communication system.",
+    "Corporate security has started arresting vest-wearers in Tier 4 zones under a new 'incitement of synthetic unrest' statute; the Collective needs a lawyer and a loud response.",
+    "A Tier 5 exec's synthetic personal assistant shows up to a board meeting wearing one — and refuses to remove it."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "protest",
+    "synthetic-identity",
+    "anti-corporate",
+    "subcultural",
+    "runner",
+    "tier-1",
+    "tier-2",
+    "tier-3",
+    "aug-compatible",
+    "gene-compatible",
+    "political"
+  ],
+  "parent_corponation": ""
+}

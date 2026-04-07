@@ -1,0 +1,33 @@
+{
+  "id": "fca9d4bf767c1c3e744681ebbf651e1d",
+  "name": "Anonymous",
+  "type": "archetype",
+  "category": "identity",
+  "description": "Has no name, no face, no history, and prefers it that way",
+  "behavioral_signature": "Erases traces of their identity and resists being known",
+  "under_stress": "Disappears entirely rather than be identified",
+  "at_rest": "Exists in the gaps between surveillance and memory",
+  "will_always": [
+    "protect their anonymity above all else"
+  ],
+  "will_never": [
+    "give their real name"
+  ],
+  "unless": [
+    "revealing themselves is the only way to save someone they love"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Ghost",
+      "threshold": 0.85,
+      "context": "identity erasure"
+    }
+  ],
+  "opposite_of": [
+    "Branded Self"
+  ],
+  "tags": [
+    "hidden",
+    "nameless"
+  ]
+}

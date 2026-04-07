@@ -1,0 +1,40 @@
+{
+  "id": "3a9d7f1c4e5b2806c8f3a2d07e1b94c5",
+  "name": "Callow & Vex Patchwork Cargo Trouser",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Not a manufactured product — these are second-hand cargo pants repaired and resold by the Callow & Vex depot stall in Meridian's Shelf market districts. Each pair is different: mismatched patches on the knees, replaced pocket panels in contrasting fabric, restitched seams. Structurally sound despite appearances. A patchwork pair in good condition is a minor point of pride on the Shelf.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "mixed reclaimed canvas",
+    "salvage denim patches",
+    "assorted nylon and cotton thread"
+  ],
+  "functionality": "none",
+  "what_it_says": "You're on the Shelf and you're making it work — or you're from Tier 2 and buying into Shelf culture deliberately.",
+  "worn_by": [
+    "Shelf residents",
+    "scavengers",
+    "street-level fixers",
+    "Tier 2 workers on reduced income"
+  ],
+  "manufacturer": "Callow & Vex Market Depot",
+  "price_range": "Φ8 - Φ15",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Experienced Shelf dwellers can sometimes identify the origin of a pair's patches — a distinctive corporate fabric on a knee panel might mean the original pants came from a specific employer.",
+    "Callow & Vex keeps rough records of what they take in; they've been quietly asked by investigators more than once to check if a specific pair passed through their stock."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 1",
+    "second-hand",
+    "repaired",
+    "cargo",
+    "shelf",
+    "market-made"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "2b9f0e4c7a1d3f6e8c0b5a9d2f4e7c1b",
+  "name": "Stratum Mid-Tier Compliance Officer Day Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The Tier 3 compliance officer's uniform is a study in enforced mediocrity with just enough authority to make the wearer feel the weight of their limited power. Stratum's mid-grade administrative line supplies the core: straight-leg trousers in a flat medium grey with a barely-visible window-pane check, pressed to a crease that will survive exactly four hours before the fabric's memory gives out. The shirt is a Stratum-branded broadcloth button-down in white with a faint blue stripe, collar fitted with a standard BCI port access notch at the right side — the port cover is the cheap rubberized kind, slightly yellowed from UV exposure under office lighting. Over this goes a single-breasted blazer in the same grey as the trousers, Stratum-branded, with the compliance division's small silver pip on the left lapel — a detail that means something on Floors 12 through 19 and nothing above or below. Footwear is a pair of Cordis autofit dress oxfords in black, the autofit calibration slightly off, the left shoe gripping a fraction tighter than the right. The whole look is completed by a rigid-frame shoulder bag in synthetic leather, charcoal, with a Stratum asset tag riveted to the strap.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "polyblend window-pane check twill",
+    "broadcloth synthetic-cotton",
+    "rubberized BCI port cover",
+    "synthetic leather shoulder bag",
+    "silver-plated lapel pip"
+  ],
+  "functionality": "BCI port access notch at collar, compliance division authorization pip (floors 12–19 access signifier), autofit shoe calibration, anti-static lining, RFID-shielded document pocket inside blazer",
+  "what_it_says": "You have just enough authority to make other people's days worse. You know the rulebook well enough to quote it but not well enough to rewrite it. The silver pip is your only ornament and you wear it with the solemnity it deserves, which is more solemnity than it deserves.",
+  "worn_by": [
+    "Internal compliance officers",
+    "HR floor monitors",
+    "records auditors",
+    "mid-level regulatory liaisons",
+    "anyone whose job title includes the word 'coordinator' without irony"
+  ],
+  "manufacturer": "Stratum Corporate Services Line — retail purchase required, partial subsidy available through employer",
+  "price_range": "Φ 320–Φ 480 full set",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The RFID-shielded document pocket inside the blazer contains something that was never meant to leave the building — the wearer doesn't know it's there, but the asset tag on the shoulder bag has been pinging a receiver three blocks away every time they walk to lunch.",
+    "The compliance pip on the lapel is a tier marker that grants access to floors 12 through 19. One of those floors has been officially listed as 'decommissioned' for two years. The autofit shoes keep recalibrating as if the floor plan they're mapped to has changed.",
+    "A character needs to move a person through a Stratum facility without triggering a security alert. Dressing them in this outfit gets them through the first four checkpoints. The fifth checkpoint has a scanner that reads gait biometrics, and the autofit shoes are calibrated to the original owner."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_3",
+    "compliance",
+    "stratum",
+    "conformist",
+    "aug_compatible",
+    "mass_produced"
+  ],
+  "parent_corponation": ""
+}

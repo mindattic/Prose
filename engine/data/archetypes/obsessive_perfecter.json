@@ -1,0 +1,33 @@
+{
+  "id": "7a43b53a9db3b48e46dc448ae58b04ce",
+  "name": "Obsessive Perfecter",
+  "type": "archetype",
+  "category": "fear",
+  "description": "If it's perfect, it can't be criticized, and if it can't be criticized, they're safe",
+  "behavioral_signature": "Endlessly refines work to avoid the vulnerability of completion",
+  "under_stress": "Paralyzed by the gap between their work and their standard",
+  "at_rest": "Meticulous, detail-oriented, never quite satisfied",
+  "will_always": [
+    "find one more thing to fix"
+  ],
+  "will_never": [
+    "call something done"
+  ],
+  "unless": [
+    "a deadline forces their hand and they release it feeling sick"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Perfectionist",
+      "threshold": 0.9,
+      "context": "fear of imperfection"
+    }
+  ],
+  "opposite_of": [
+    "Reckless Denier"
+  ],
+  "tags": [
+    "obsessive",
+    "avoidant"
+  ]
+}

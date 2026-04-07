@@ -10,7 +10,7 @@
   ],
   "category": "drone",
   "description": "The CPLM-7 is a fixed-wing loitering munition designed for extended area interdiction. Launched from a pneumatic tube canister or hand-thrown, it deploys a 1.4-meter carbon-composite delta wing and enters a silent, engine-off glide pattern over a designated kill zone, periodically reigniting its whisper-turbine to maintain altitude and orbit. The drone carries a shaped-charge warhead with a downward-facing fragmentation sleeve optimized for personnel targets rather than armor—a design choice that reflects its primary use case: denying movement through open urban terrain. It orbits silently at 80–120 meters, waiting.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Blackwood Commercial Group",
   "tier_availability": "Military only (licensed variant); Tier 5+ black market (autonomous mode unlocked)",
   "legality": "Prohibited for civilian use; Military Licensed — autonomous mode requires Theater Weapons Authorization",
   "base_technologies": [
@@ -53,6 +53,8 @@
     "rain",
     "chase",
     "armor",
-    "tier 5"
-  ]
+    "tier 5",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

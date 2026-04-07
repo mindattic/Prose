@@ -1,0 +1,52 @@
+{
+  "id": "c94e1b6a2f7d3058a4c9e2b5d8f10673",
+  "name": "Ironmarrow Work Armor",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Heavy, deliberate, built to take punishment. The centerpiece is a long-sleeved work shirt in dense slate-grey canvas with a mandarin collar, the fabric doubled at the shoulders and elbows with fused patches of scrap ballistic weave — grey-black, slightly shinier than the base cloth, creating a subtle armored texture. Over it goes a full-bib dungaree in dark charcoal, the chest panel reinforced with a sewn-in plate of recovered polycarbonate sheeting — not enough to stop a round but enough to matter in a knife situation or industrial accident. The left bib strap has been replaced with a length of riveted leather, darker and stiffer than the original. Wide-leg construction allows movement and accommodates a right-leg chrome prosthetic: the outer seam of the right leg is left open and fitted with heavy-duty snaps so it can be peeled back for maintenance access without removing the garment. Boots are tall, steel-toed, lace-up in cracked black leather with a composite platform sole — resoled with industrial conveyor belt rubber, grippy and virtually indestructible. A cloth balaclava in faded rust-brown is shoved into a chest pocket. The hands are covered by thick work gloves with the fingertips cut away on three fingers of the right hand for manual dexterity. A wide leather tool belt hangs across the hips, hung with a multi-tool, two carabiners, and a looped length of safety cord.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "slate-grey canvas",
+    "scrap ballistic weave",
+    "recovered polycarbonate sheeting",
+    "riveted leather",
+    "charcoal dungaree twill",
+    "cracked black leather",
+    "conveyor belt rubber",
+    "cloth balaclava material",
+    "thick work glove leather",
+    "steel toe caps"
+  ],
+  "functionality": "Ballistic weave shoulder and elbow patches reduce abrasion and impact damage. Polycarbonate bib insert provides soft-body-armor-equivalent frontal protection against blades. Right-leg snap seam allows chrome prosthetic access and maintenance. Steel toe boots protect against industrial hazards. Tool belt carries essential equipment. Balaclava deployable for respiratory or identity protection.",
+  "what_it_says": "This person works — hard, dangerous, physical work. They've been hurt before and built their clothing to prevent it happening the same way twice. The chrome prosthetic accommodation isn't hidden; it's practical. There's a certain authority to this look, a Shelf-level toughness that says the wearer has survived things that would break most people, and they're still showing up.",
+  "worn_by": [
+    "shelf-side heavy laborers",
+    "infrastructure scrappers",
+    "salvage crew leads",
+    "people with chrome prosthetics who need functional aug-compatible gear",
+    "former industrial workers"
+  ],
+  "manufacturer": "Self-constructed; canvas sourced from industrial surplus markets",
+  "price_range": "Φ30–Φ60 (significant investment for Tier 1)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The polycarbonate bib plate has a partial corporate logo still visible under the paint — from a facility that was supposedly decommissioned years ago.",
+    "The chrome leg prosthetic the outfit was built around is getting a rejection signal from the wearer's body, and they need either new chrome or a black-market medtech before the seam they built their whole wardrobe around becomes irrelevant.",
+    "The tool belt's multi-tool was passed down from the wearer's parent — and it has a data chip embedded in the handle that neither of them ever knew about."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "work_wear",
+    "labor",
+    "aug_compatible",
+    "chrome_compatible",
+    "armor_adjacent",
+    "salvage_fashion",
+    "prosthetic_accommodation"
+  ],
+  "parent_corponation": ""
+}

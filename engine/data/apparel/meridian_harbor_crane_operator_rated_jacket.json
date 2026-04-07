@@ -1,0 +1,34 @@
+{
+  "name": "Meridian Harbor Crane Operator Rated Jacket",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "dockworker_specialized",
+  "manufacturer": "Harborworks Collective Outfitters",
+  "description": "Certified for crane and heavy-lift operations at Meridian Harbor's irradiated cargo terminals, this jacket meets the MH-Rad-3 standard for incidental radiation exposure from Class 2 contaminated freight — the kind of shipping containers arriving from the Great Lakes reclamation zones and the irradiated manufacturing corridors further east. The outer shell is a lead-composite fiber weave bonded to a thermoplastic inner layer, making the jacket heavier than standard work wear but necessary for operators spending 8–12 hour shifts in proximity to hot cargo. High-vis orange panels on the shoulders and sleeves meet harbor safety requirements, and the Harborworks Collective logo — a stylized crane hook — sits on the right chest.\n\nThe jacket is designed for the physical demands of crane operation: articulated elbow panels allow full range of motion without breaking the radiation shielding, and the collar is tall and sealed with a magnetic closure that integrates with compatible respirator collars. Augmentation compatibility is a priority given the high rate of cyberware among experienced dock workers — reinforced port-access panels are standard at the wrist and forearm, and the shoulder seams are cut wide to accommodate prosthetic or enhanced arms. A dosimeter strip on the left wrist reads cumulative radiation exposure and changes color at threshold levels. Harborworks issues replacement jackets when the strip reads yellow; most workers wait until red.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ265",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "Crane operators are a proud and insular group at Meridian Harbor. The jacket is a mark of certification — you can't operate at the hot terminals without it, and you can't get it without the Harborworks Collective sign-off. New workers who show up with clean jackets get watched carefully until they've proven themselves.",
+  "story_hooks": [
+    "A dosimeter strip on a recovered jacket reads far past the red threshold, but the operator's official health records show no radiation events — someone has been falsifying exposure logs.",
+    "A shipping container from an unregistered origin point arrives at the harbor rated for crane-operator-level radiation protocols. Whatever's inside is too hot for standard handling, and the manifest says it's food supplies.",
+    "The Harborworks Collective is threatening to strike over jacket replacement timelines — operators are being forced to work in degraded protective gear while Harborworks management disputes the dosimeter readings."
+  ],
+  "tags": [
+    "dockworker",
+    "harbor",
+    "radiation-shielded",
+    "crane-operator",
+    "heavy-duty",
+    "augment-compatible",
+    "harborworks",
+    "tier2",
+    "industrial",
+    "certified"
+  ],
+  "id": "923302f2ced741ebb944d4c895b1333f",
+  "parent_corponation": ""
+}

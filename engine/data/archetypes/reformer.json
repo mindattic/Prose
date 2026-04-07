@@ -1,0 +1,33 @@
+{
+  "id": "79f8de17c99c7804f6405840b9bbec4b",
+  "name": "Reformer",
+  "type": "archetype",
+  "category": "moral",
+  "description": "The system isn't broken, it was built wrong",
+  "behavioral_signature": "Works within structures to fundamentally change them",
+  "under_stress": "Becomes impatient and starts bending the rules they swore to change properly",
+  "at_rest": "Documents flaws, builds coalitions, drafts proposals",
+  "will_always": [
+    "push for systemic change"
+  ],
+  "will_never": [
+    "accept that the way things are is the way they should be"
+  ],
+  "unless": [
+    "the reform would cause more suffering than the status quo"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Visionary",
+      "threshold": 0.7,
+      "context": "desire for change"
+    }
+  ],
+  "opposite_of": [
+    "Traditionalist"
+  ],
+  "tags": [
+    "activist",
+    "systematic"
+  ]
+}

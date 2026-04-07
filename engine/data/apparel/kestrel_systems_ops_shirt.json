@@ -1,0 +1,42 @@
+{
+  "id": "c9b4e6f1a2d7038c5b4e6f1a2d703859",
+  "name": "Kestrel Systems Ops Shirt",
+  "type": "apparel",
+  "category": "top",
+  "description": "The Kestrel Systems field operations shirt is the kind of corporate uniform that tries to look like it isn't one. Cut in a slim athletic fit from moisture-wicking micro-polyester in slate gray or deep navy, it has a small embroidered Kestrel logo on the left chest — a stylized wing-and-circuit mark — and a hidden zip pocket at the back hem. The collar is a structured mandarin style. The fabric has a subtle sheen under direct light but reads as matte in shadow. Seams are bonded rather than stitched, giving the torso a clean, seamless look.\n\nKestrel Systems is a mid-tier security and logistics corponation, and their ops staff wear this shirt as a daily uniform. It's functional without being tactical, presentable without being formal. Off the clock, some employees keep wearing it because they've already paid into the company store and it fits well. On the street, a Kestrel shirt can open certain doors or close others depending on the neighborhood.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "micro-polyester moisture-wick",
+    "bonded seam construction",
+    "recycled synthetic fill collar"
+  ],
+  "functionality": "Integrated RFID badge loop in the left sleeve cuff for Kestrel facility access. Passive, not active — requires proximity to a reader.",
+  "what_it_says": "You work for Kestrel Systems, or you want people to think you do, or you bought it at a surplus outlet and don't care about the logo. Context determines which reading is dangerous.",
+  "worn_by": [
+    "Kestrel Systems employees",
+    "private security contractors",
+    "logistics staff",
+    "corp-adjacent Tier 3 workers",
+    "people using a surplus shirt for its access privileges"
+  ],
+  "manufacturer": "Kestrel Systems (internal supply chain, subcontracted to Meridian Apparel Group)",
+  "price_range": "Φ110",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Kestrel ops shirt with a specific badge loop ID keeps showing up on surveillance — its registered employee has been dead for three weeks.",
+    "Someone is selling surplus Kestrel shirts out of a van near the Tier 2 border; the RFID loops are still active and keyed to a facility that officially doesn't exist.",
+    "A Shelf kid wearing a scavenged Kestrel shirt was waved through a checkpoint by mistake — now they know something they shouldn't."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 4",
+    "corporate uniform",
+    "button-down",
+    "tech-enhanced",
+    "kestrel systems",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

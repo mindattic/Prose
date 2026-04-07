@@ -1,0 +1,40 @@
+{
+  "id": "b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8",
+  "name": "Solen Variform Derby",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A dress-adjacent derby shoe with a seamless stretch upper — the whole shoe expands and conforms, supported by a structured sole and heel counter. The stretch material is a high-tech knit that returns to shape after expansion, meaning it accommodates wide splayed toes, claw protrusions, or unusual width without looking deformed. From the outside it just looks like a clean, slightly round-toed derby in charcoal, navy, or deep burgundy. Tier 3-4 geneware users who need something that passes in professional or formal contexts.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "adaptive stretch knit upper",
+    "structured heel counter",
+    "leather-finish synthetic sole"
+  ],
+  "functionality": "Full-upper stretch knit self-adjusts to non-standard foot morphology while maintaining a clean exterior profile.",
+  "what_it_says": "You present well. Whatever is happening with your feet is nobody else's business.",
+  "worn_by": [
+    "geneware users in professional environments",
+    "Tier 3-4 office workers",
+    "people who need formal-adjacent footwear with mods"
+  ],
+  "manufacturer": "Solen",
+  "price_range": "Φ130 - Φ165",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Tier 4 corporate rep wears Solen Variforms — and the stretch knit has been retaining thermal signatures that a BCI-equipped observer could read.",
+    "Solen's adaptive knit formula was licensed from a medical corponation and the licensing deal expires next quarter — price spikes are expected."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "tier 4",
+    "geneware-compatible",
+    "derby",
+    "formal",
+    "adaptive-fit",
+    "stretch"
+  ],
+  "parent_corponation": ""
+}

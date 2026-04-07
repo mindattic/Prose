@@ -1,0 +1,42 @@
+{
+  "id": "1a5c8e2f4b7d903a6c1e5f8b2d4a7c90",
+  "name": "Meridian Kinetics Apex Runner",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A performance trainer with a structured midsole and a responsive top layer that stores and returns energy with each stride. The active cushioning adjusts to the runner's weight and cadence within the first few minutes of use, then maintains optimal response. The design is sporty but restrained — popular with people who want performance without screaming it. Available in white, gunmetal, and coral.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "engineered mesh upper",
+    "energy-return polymer midsole",
+    "adaptive cushion layer",
+    "high-traction rubber outsole"
+  ],
+  "functionality": "Cadence-adaptive energy return system calibrates within 200 strides. Active cushioning reduces fatigue on extended runs by maintaining consistent rebound.",
+  "what_it_says": "You run. Not for show — to actually run. These are chosen by people who've done research and want results.",
+  "worn_by": [
+    "regular runners",
+    "commuters",
+    "fitness professionals",
+    "Tier 3 workers who walk significant distances daily"
+  ],
+  "manufacturer": "Meridian Kinetics",
+  "price_range": "Φ100 - Φ140",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The cadence calibration data stored in the shoe's memory contains the running pattern of someone who shouldn't have been running at all that night.",
+    "A counterfeit version uses cheap reactive foam instead of the real adaptive layer — the difference only becomes apparent after significant joint damage."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "smart",
+    "athletic",
+    "trainer",
+    "active cushioning",
+    "running",
+    "energy-return"
+  ],
+  "parent_corponation": ""
+}

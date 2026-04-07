@@ -1,0 +1,46 @@
+{
+  "id": "96b57805f83e13c9e84f894510d697b0",
+  "name": "Crucible Industries Molecular Wire Knife MW-3 'Gossamer'",
+  "type": "weapon",
+  "aliases": [
+    "Gossamer",
+    "MW-3",
+    "Wire Knife",
+    "The Thread"
+  ],
+  "category": "melee",
+  "description": "A handle-only weapon that deploys a 15-centimeter blade of monofilament wire held rigid by an electromagnetic tension field. The Gossamer's 'blade' is a single strand of carbon monofilament 3 nanometers in diameter — effectively invisible to the naked eye and sharp enough to cut at the molecular level. The electromagnetic field generator in the handle keeps the wire rigid and provides a faint blue luminescence along the wire's length — the only visual indication that the weapon is active.\n\nThe MW-3 cuts through conventional materials with zero resistance. Steel, composite, ceramic, flesh — the monofilament passes through everything at the molecular level, leaving wounds so clean that they do not bleed immediately. Victims of a Gossamer cut often do not realize they have been injured until they move and the separated tissue shifts apart. The weapon's limitation is its fragility — the monofilament wire breaks if it contacts material harder than its own carbon structure (diamond, certain advanced ceramics), and replacement wires cost Φ2,000 each.\n\nCrucible developed the MW-3 for precision industrial cutting applications before the design was adapted for covert operations. The weapon's invisible blade and clean-cut capability make it the ultimate close-range assassination tool — a Gossamer cut across a throat produces no spray, no sound, and the target may walk several steps before collapsing. The psychological impact on witnesses who see a person simply come apart along invisible lines is considerable.",
+  "manufacturer": "Staple-8 Grain Division",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — monofilament weapon classification",
+  "base_technologies": [
+    "Carbon monofilament wire edge",
+    "Electromagnetic tension rigidity field",
+    "Molecular-level cutting"
+  ],
+  "specifications": "blade_length: 15 cm (monofilament wire)\ntotal_length: 25 cm with handle\nweight: 110 g\nwire_diameter: 3 nanometers\nvisibility: Near-invisible; faint blue EM field glow\npower_source: Handle capacitor, 8 hours field generation\nwire_cost: Φ2,000 per replacement\ncutting_resistance: Zero against conventional materials",
+  "tactical_use": "The Gossamer is used when absolute stealth is required. Its invisible blade and resistance-free cutting allow the operator to inflict lethal wounds without the physical feedback that alerts nearby observers — no spray, no impact sound, no visible blade. Operators learn to make single passes across critical anatomy and withdraw before the wound manifests. The weapon is useless in prolonged melee — the monofilament wire breaks on hard contact, and the handle provides no defensive capability. It is strictly a first-strike, single-engagement weapon.",
+  "cultural_context": "Monofilament weapons represent a particular horror in Meridian 88's cultural imagination — the idea of being cut by something you cannot see, feeling nothing until you fall apart. The Gossamer has spawned urban legends about phantom attackers who brush past people in crowds, leaving them to discover surgical wounds minutes later. While most of these stories are fiction, the confirmed incidents that do exist have created a low-level paranoia about physical contact in high-security environments.",
+  "known_users": [
+    "Corporate covert operations",
+    "Precision assassination specialists",
+    "Tessera intelligence (alleged)"
+  ],
+  "story_hooks": [
+    "A Gossamer wire has been strung across a corridor at neck height — not wielded, but placed as a trap. The first person to walk through it at pace will be decapitated. Someone is using assassination tools as area denial.",
+    "A black-market supplier claims to have developed an unbreakable monofilament wire using a classified substrate. If true, it would eliminate the Gossamer's primary limitation — and create a weapon with no effective counter."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "knife",
+    "monofilament",
+    "stealth",
+    "tier 4",
+    "assassination",
+    "molecular",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

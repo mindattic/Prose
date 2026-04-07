@@ -1,0 +1,45 @@
+{
+  "id": "b8dacf380fc5fd7e3a92748d6ee1484a",
+  "name": "Arcturus Defense Solutions Zero Point Emitter ZPE-1 'Nihil'",
+  "type": "weapon",
+  "aliases": [
+    "Nihil",
+    "ZPE-1",
+    "Zero Point Emitter",
+    "The Nothing"
+  ],
+  "category": "exotic",
+  "description": "Arcturus's most classified weapons project — a device that extracts energy from quantum vacuum fluctuations and releases it as a destructive pulse of undifferentiated energy. The Nihil does not fire a projectile, generate a beam, or project a field. It simply causes a volume of space to experience a catastrophic energy release derived from the quantum vacuum itself.\n\nThe ZPE-1 targets a point in space and triggers a cascade of quantum vacuum energy extraction that produces a burst of heat, radiation, and kinetic force approximately equivalent to 10 kilograms of conventional explosive. The effect appears to violate conservation of energy — the energy comes from the quantum vacuum, which is everywhere, inexhaustible, and theoretically accessible to anyone who understands the physics.\n\nArcturus has gone to extraordinary lengths to prevent the ZPE-1's underlying principles from being understood. The weapon itself is a sealed unit with no user-serviceable components. When its power cell is exhausted, the entire weapon is returned to Arcturus for recharging. No operator has ever seen the weapon's internal mechanism. The five units in existence are tracked by satellite and protected by kill-switch charges that will destroy the weapon if it is tampered with.",
+  "manufacturer": "Ironside Armaments",
+  "tier_availability": "Tier 5",
+  "legality": "Classified — existential-risk technology, existence denied",
+  "base_technologies": [
+    "Quantum vacuum energy extraction",
+    "Zero-point energy cascade triggering",
+    "Sealed classified weapons architecture"
+  ],
+  "specifications": "caliber: N/A — quantum vacuum energy release\neffective_range: 20-100 meters\nrate_of_fire: 1 pulse per 300 seconds (quantum field stabilization)\ncapacity: 5 pulses per sealed power cell\nweight: 45 kg (weapon system)\npower_source: Classified sealed unit, returned to Arcturus for servicing",
+  "tactical_use": "The Nihil is not a tactical weapon. It exists as a proof of concept and as an ultimate deterrent. Its deployment signifies that Arcturus considers a situation critical enough to reveal the existence of zero-point energy weapons — a technology whose mere existence would reshape the global power balance. Each firing is authorized by Arcturus's executive board personally, and the weapon has been fired fewer than a dozen times in total.",
+  "cultural_context": "The ZPE-1 does not officially exist, and Arcturus denies its development. However, intelligence agencies across Meridian 88 have documented energy releases at Arcturus test sites that match no known weapon profile — bursts of destructive energy with no projectile, no beam, and no identifiable energy source. These incidents are referred to in classified intelligence as 'vacuum events,' and their implications are considered a Tier 1 strategic concern by every major corporation.",
+  "known_users": [
+    "Arcturus executive authority only"
+  ],
+  "story_hooks": [
+    "An intelligence analyst has compiled evidence from multiple vacuum events and published a paper theorizing that zero-point energy weapons exist. The paper was retracted within hours, the analyst has disappeared, and every copy of the research has been scrubbed from accessible networks. Almost every copy.",
+    "One of the five ZPE-1 units has stopped transmitting its satellite tracking signal. Arcturus has activated every asset at its disposal to locate the weapon. If the sealed unit is breached and its operating principles are reverse-engineered, the monopoly on zero-point energy extraction ends — and an inexhaustible energy source becomes available to whoever can build the next one."
+  ],
+  "ammunition_type": [
+    "Quantum vacuum energy pulse"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "quantum",
+    "zero-point",
+    "classified",
+    "existential-risk",
+    "tier 5",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

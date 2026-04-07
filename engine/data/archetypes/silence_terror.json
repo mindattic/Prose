@@ -1,0 +1,33 @@
+{
+  "id": "a897f24800a6e54c797332abb038fb92",
+  "name": "Silence Terror",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Empty space is where the thoughts get loud and the thoughts are not kind",
+  "behavioral_signature": "Fills every moment with noise, activity, or conversation to avoid stillness",
+  "under_stress": "Becomes frantic, manic, cannot stop moving or talking",
+  "at_rest": "Never truly at rest, always producing, consuming, engaging",
+  "will_always": [
+    "fill the quiet"
+  ],
+  "will_never": [
+    "sit in silence voluntarily"
+  ],
+  "unless": [
+    "exhaustion forces a stop and they finally hear what the silence says"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Volatile",
+      "threshold": 0.7,
+      "context": "avoiding stillness"
+    }
+  ],
+  "opposite_of": [
+    "Stoic"
+  ],
+  "tags": [
+    "restless",
+    "avoidant"
+  ]
+}

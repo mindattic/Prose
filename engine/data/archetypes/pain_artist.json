@@ -1,0 +1,34 @@
+{
+  "id": "8dcb06f1f7ca72d2a4c4ff1577eb3de3",
+  "name": "Pain Artist",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Inflicts suffering with precision and purpose, not sadism but expertise",
+  "behavioral_signature": "Knows exactly how much pain to apply to achieve a specific result",
+  "under_stress": "Pain application becomes imprecise and crosses into cruelty",
+  "at_rest": "Studying anatomy and pain thresholds with clinical detachment",
+  "will_always": [
+    "know where it hurts most"
+  ],
+  "will_never": [
+    "use more pain than the situation requires"
+  ],
+  "unless": [
+    "rage overrides clinical precision"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Poisoner",
+      "threshold": 0.65,
+      "context": "precision harm"
+    }
+  ],
+  "opposite_of": [
+    "Pacifist"
+  ],
+  "tags": [
+    "pain",
+    "precision",
+    "clinical"
+  ]
+}

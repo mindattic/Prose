@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b09d4856fe23a1c7d5e890b4",
+  "name": "Slagside Rivet-Crown Scrap Helm",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "Assembled from salvaged pressed-steel panels, corrugated conduit strips, and cracked polycarbonate face shields bolted together with mismatched rivets. The surface is mottled rust-orange, soot-black, and bare aluminum where paint has been ground away. Padding inside is layered transit foam and cut bicycle tire. Horn cutouts are crudely torched open and filed smooth. Fit varies — most are adjusted with wire wrapping at the crown.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged pressed steel",
+    "corrugated conduit strip",
+    "cracked polycarbonate",
+    "transit foam padding",
+    "bicycle tire rubber",
+    "iron rivets"
+  ],
+  "functionality": "Partial acid-rain deflection, blunt impact resistance, and face-shield coverage. Horn cutouts accommodate most common geneware. No electronics. Some builds include a crude wire-mesh filter over the mouth opening.",
+  "what_it_says": "You built your own armor because no one was going to give it to you.",
+  "worn_by": [
+    "Shelf scrappers",
+    "salvage runners",
+    "Tier 1 gang enforcers",
+    "acid-zone day laborers"
+  ],
+  "manufacturer": "Slagside (self-made, Shelf fabrication collective)",
+  "price_range": "Φ8–Φ35 (materials cost; labor is sweat)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A recurring rivet stamp — a small triangle — appears on helmets across three different Shelf districts, suggesting a single traveling builder or a copied template with significance no one will explain.",
+    "A Tier 3 urban anthropologist is collecting these helmets for a gallery show; Shelf residents are now deliberately making them uglier to sabotage the exhibit.",
+    "One helmet has a sealed compartment welded into the crown. It's been passed between owners for eleven years. Nobody has opened it."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "helmet",
+    "scrap-built",
+    "acid-resistant",
+    "tier-1",
+    "gene-compatible",
+    "shelf",
+    "salvage",
+    "face-shield"
+  ],
+  "parent_corponation": ""
+}

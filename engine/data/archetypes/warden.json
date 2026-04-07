@@ -1,0 +1,33 @@
+{
+  "id": "990c34d77c8f84d8cd61ba53fe1ee72c",
+  "name": "Warden",
+  "type": "archetype",
+  "category": "power",
+  "description": "Protects the territory, controls who enters and exits",
+  "behavioral_signature": "Defines and defends boundaries with territorial precision",
+  "under_stress": "Locks everything down, nobody in or out",
+  "at_rest": "Patrols borders, maintains order within their domain",
+  "will_always": [
+    "protect their territory"
+  ],
+  "will_never": [
+    "cede ground without a fight"
+  ],
+  "unless": [
+    "strategic retreat preserves more of what matters"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Sentinel",
+      "threshold": 0.8,
+      "context": "territorial defense"
+    }
+  ],
+  "opposite_of": [
+    "Anarchist Purist"
+  ],
+  "tags": [
+    "territorial",
+    "defensive"
+  ]
+}

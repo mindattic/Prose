@@ -1,0 +1,29 @@
+{
+  "id": "556226967acdeb763f110857c5586123",
+  "name": "Ferrogate Transit Internal Assessment Spine Capacity Crisis",
+  "type": "document",
+  "document_type": "corporate_memo",
+  "author": "Ferrogate Transit Engineering Division",
+  "date": "2200-01-05",
+  "classification": "restricted",
+  "description": "ENGINEERING ASSESSMENT — THE SPINE VERTICAL TRANSIT SYSTEM — CAPACITY AND STRUCTURAL ANALYSIS\n\nThis assessment was commissioned following the November 2199 overcrowding incident in which 14 passengers sustained injuries when a Spine car exceeded its rated capacity by 40% during peak evening transit. The assessment is classified because its conclusions have implications for Ferrogate's operating license.\n\nThe Spine was designed in 2089 for a projected city population of 3.2 million. Meridian 88's current population is 4.7 million. The Spine's maximum throughput — the absolute physical limit of how many people the system can move per hour — is 28,000 passengers. Current peak-hour demand is 34,000 passengers. The deficit of 6,000 passengers per hour is currently absorbed by wait times, which have increased from an average of 12 minutes in 2195 to 47 minutes in 2199.\n\nThe structural assessment is more concerning. The Spine's primary support columns, which bear the combined load of the transit cars and the structural connections to adjacent buildings, are showing stress fractures at joints 7, 12, and 19. These fractures are within maintenance parameters, but they are growing at a rate that was not anticipated in the original engineering projections. Our structural engineers estimate that at current degradation rates, joints 12 and 19 will require emergency reinforcement within 3 to 5 years. If both joints fail simultaneously — an unlikely but not impossible scenario — the structural consequences would extend beyond the Spine itself into the residential and commercial buildings it supports.\n\nWe recommend: immediate capacity restrictions during peak hours, a Φ2.1 billion structural reinforcement program, and a public communication strategy that presents both as 'modernization upgrades' rather than emergency repairs.",
+  "related_entities": [
+    "Ferrogate Transit Corporation",
+    "The Spine",
+    "Meridian 88"
+  ],
+  "credibility": "leaked",
+  "story_hooks": [
+    "The Spine is structurally failing and the operator is hiding it",
+    "What happens if joints 12 and 19 fail?"
+  ],
+  "tags": [
+    "corporate",
+    "ferrogate",
+    "spine",
+    "infrastructure",
+    "structural",
+    "crisis",
+    "memo"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+  "name": "Kestrel Armored Liner Coat",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "From the outside, this is a charcoal gray longline coat in a wool-poly blend — structured, professional, unremarkable. A Tier 3 professional could wear it to a client meeting without a second glance. The interior tells a different story: a full-torso ballistic liner constructed from flexible ceramic-polymer composite panels sewn into the lining, covering the chest, back, and sides. The panels are thin enough that the coat drapes naturally. There is no visible bulk. The collar has a raised back that protects the base of the skull.\n\nKestrel makes protection gear for people who can't afford to look like they need protection. Investigators, journalists, fixers, mid-level corporate operatives who've made enemies — anyone who operates in environments that aren't safe but can't afford to announce that they aren't safe. The ballistic rating is NIJ Level IIIA: stops handgun rounds, fragmentation, and most knife attacks. Rifle rounds will ruin your day but you already knew that.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "wool-poly blend outer shell",
+    "ceramic-polymer composite ballistic panels",
+    "aramid fiber backing",
+    "cotton lining over armor"
+  ],
+  "functionality": "Integrated concealed ballistic protection rated NIJ Level IIIA. Panels cover full torso front, back, and lateral. Raised collar provides partial neck and skull-base coverage. No electronic components.",
+  "what_it_says": "You've done a threat assessment of your own life and acted on it. You're not paranoid — you're prepared.",
+  "worn_by": [
+    "journalists",
+    "private investigators",
+    "corporate fixers",
+    "mid-level operatives",
+    "people navigating dangerous situations professionally"
+  ],
+  "manufacturer": "Kestrel Protective Apparel",
+  "price_range": "Φ290",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Someone was shot wearing this coat and survived — but they've told no one and they're pretending the meeting went fine, which means someone doesn't know they failed",
+    "Kestrel recently received a bulk order from an anonymous buyer — forty coats, all the same size — and they fulfilled it without asking questions",
+    "The ballistic panels can be removed and repurposed; someone in the Shelf has figured out how to cut and reassemble them into something that fits under a Tier 1 jacket"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "outerwear",
+    "tier 3",
+    "armored",
+    "concealed ballistic",
+    "wool",
+    "professional",
+    "protective"
+  ],
+  "parent_corponation": ""
+}

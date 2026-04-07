@@ -1,0 +1,51 @@
+{
+  "id": "2f6a9e0c4b7d318f5e2a6c9b0d4f7e12",
+  "name": "Greyline Drifter's Compressed Travel Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The outfit of someone who moves — between Shelf blocks, between cities, between situations — and carries everything they need without looking like they're carrying anything at all. The silhouette reads lean and anonymous: a close-cut long-sleeve shirt in faded black cotton-synthetic blend, the collar high enough to cover the lower portion of a visible neural port cluster at the back of the neck, the port caps replaced with salvaged ones in brushed gunmetal that don't quite match but are securely seated. The shirt's left forearm has a sleeve printed in a faded pattern that might once have been a floral motif — now it reads as abstract texture, a ghost of something decorative that has weathered into camouflage. Over the shirt: a slim-cut vest with a dozen flat-profile internal pockets, the exterior smooth matte gray synthetic leather, aged to a soft dull finish. The vest closes with a magnetic clasp strip that makes no sound and leaves no visible hardware. Trousers are slim tapered in dark charcoal synthetic twill, with a hidden zippered pocket at each inner ankle above the boot cuff. Footwear is ankle boots in scuffed black composite, the soles thin and silent, resoled once with a smooth urban rubber compound for quiet foot-fall. A long narrow scarf in dark rust cotton is wrapped twice around the neck and draped asymmetrically, one end long enough to pull across the lower face — it's also covering the full length of a thin scar along the left jawline. The hair is cropped close on the sides, longer on top, pressed flat under a low-profile cap in washed charcoal canvas with no logo, the brim barely a suggestion. The whole look compresses: nothing catches the eye, nothing announces itself. Hard-won invisible.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "cotton-synthetic blend",
+    "matte synthetic leather",
+    "synthetic twill",
+    "composite boot material",
+    "smooth urban rubber",
+    "cotton scarf fabric",
+    "washed canvas",
+    "gunmetal salvage port caps"
+  ],
+  "functionality": "Neural port caps protect BCI hardware from acid rain and debris without clinic-grade covers. Twelve flat internal vest pockets distribute carry weight invisibly. Hidden ankle pockets for high-value small items. Silent magnetic vest closure. Smooth-soled urban rubber for quiet movement. Scarf provides rapid face cover. Slim silhouette avoids snagging in tight corridors.",
+  "what_it_says": "Someone who has learned that being noticed on the Shelf is a liability. This isn't poverty-chic or performance ��� it's the outfit of a person who has stripped away everything that draws attention and kept only what works. The neural port cluster suggests a significant BCI investment, possibly professional-grade, which sits in deliberate contrast to the rest of the outfit. They are more than they appear, and they have specifically chosen to appear as little as possible.",
+  "worn_by": [
+    "Shelf-to-Circuit transit runners",
+    "unlicensed couriers",
+    "BCI-augmented drifters",
+    "information brokers operating below Tier 3 radar",
+    "people who used to be someone else"
+  ],
+  "manufacturer": "Assembled from anonymous Shelf market stock; port caps are salvaged Nexigen hardware",
+  "price_range": "Φ18–Φ45 assembled",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The neural port caps are salvaged Nexigen hardware — the same model recalled after a security breach that exposed user cognitive data to a corponation competitor. The caps were supposedly all destroyed. These ones are still active.",
+    "The hidden ankle pocket contains a folded document — not digital, physical paper, which hasn't been standard for forty years — with a list of names. Some are crossed out. Others aren't.",
+    "Someone on the Shelf recognizes the faded floral pattern on the sleeve: it was a limited production run by a street label that only sold in one city, and that city is three thousand kilometers away. How long has this person been traveling, and what are they running toward?"
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "aug_compatible",
+    "bci_compatible",
+    "neural_port",
+    "stealth",
+    "courier",
+    "drifter",
+    "low_profile",
+    "transit"
+  ],
+  "parent_corponation": ""
+}

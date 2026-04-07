@@ -1,0 +1,33 @@
+{
+  "id": "4e91caa0cb09f97f62774dc7e9a1f037",
+  "name": "Dialectician",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Truth emerges from the collision of opposing ideas",
+  "behavioral_signature": "Seeks out contradictions and synthesizes them into higher understanding",
+  "under_stress": "Argues with everyone including themselves until nothing is resolved",
+  "at_rest": "Engages in structured debate and Socratic questioning",
+  "will_always": [
+    "look for the thesis and antithesis"
+  ],
+  "will_never": [
+    "accept a one-sided argument"
+  ],
+  "unless": [
+    "the other side is literally indefensible"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Devils Advocate",
+      "threshold": 0.75,
+      "context": "structured opposition"
+    }
+  ],
+  "opposite_of": [
+    "Dogmatist"
+  ],
+  "tags": [
+    "dialectical",
+    "synthesis"
+  ]
+}

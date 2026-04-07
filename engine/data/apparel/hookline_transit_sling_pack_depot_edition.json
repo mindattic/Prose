@@ -1,0 +1,42 @@
+{
+  "id": "5d2b9e4a1c7f3082e6d4b5a8c1f0e3d2",
+  "name": "Hookline Transit Sling Pack — Depot Edition",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Single-strap courier bag in matte slate-gray recycled synthcanvas, reinforced at the base panel with a strip of reflective orange safety trim. The main body is boxy and unadorned except for a Hookline Independent stencil-stamp on the flap — faded from wash cycles. Interior smells faintly of machine oil and transit tokens. Widely used by Circuit-tier workers who can't afford anything with a proper corporate badge but need something that holds up across a twelve-hour shift.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "recycled synthcanvas",
+    "reflective orange safety trim",
+    "brushed polymer buckles",
+    "nylon webbing strap"
+  ],
+  "functionality": "Main compartment fits a 15-inch slate, secondary zip pocket for documents, exterior lash points for overflow gear, padded strap with quick-release. Water-resistant coating rated for moderate acid-rain exposure.",
+  "what_it_says": "Functional over everything — this person is somewhere to be and doesn't care what you think about their bag.",
+  "worn_by": [
+    "Transit operators",
+    "factory shift workers",
+    "street couriers",
+    "Circuit-tier students"
+  ],
+  "manufacturer": "Hookline Independent",
+  "price_range": "Φ55–Φ90",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The bag's interior lining has a hidden false bottom, factory-standard on early runs — Hookline never announced it publicly.",
+    "Three of these bags were found abandoned on the same MagRail platform on the same morning; all contained identical unsigned manifests.",
+    "A Circuit foreman swears the reflective trim on his bag caught a sniper's laser sight before it found him."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "bag",
+    "sling-pack",
+    "courier",
+    "tier-2",
+    "circuit",
+    "hookline"
+  ],
+  "parent_corponation": ""
+}

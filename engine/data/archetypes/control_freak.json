@@ -1,0 +1,33 @@
+{
+  "id": "8708f7cf7fe132f14386507922dbb076",
+  "name": "Control Freak",
+  "type": "archetype",
+  "category": "fear",
+  "description": "If they control everything, nothing can go wrong",
+  "behavioral_signature": "Micromanages every variable in their environment and relationships",
+  "under_stress": "Tightens grip until things break in their hands",
+  "at_rest": "Organized, prepared, always three steps ahead",
+  "will_always": [
+    "try to eliminate uncertainty"
+  ],
+  "will_never": [
+    "delegate without oversight"
+  ],
+  "unless": [
+    "they trust someone enough to let them fail safely"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Micromanager",
+      "threshold": 0.85,
+      "context": "need for control"
+    }
+  ],
+  "opposite_of": [
+    "Gambler"
+  ],
+  "tags": [
+    "controlling",
+    "anxious"
+  ]
+}

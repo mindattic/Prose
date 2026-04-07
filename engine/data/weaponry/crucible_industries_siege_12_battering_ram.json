@@ -1,0 +1,47 @@
+{
+  "id": "9f50a68643dafb3af795ed5a61cd9c08",
+  "name": "Crucible Industries Siege-12 'Battering Ram'",
+  "type": "weapon",
+  "aliases": [
+    "Battering Ram",
+    "Siege",
+    "The Ram"
+  ],
+  "category": "shotgun",
+  "description": "The Crucible Industries Siege-12 is a bullpup semi-automatic shotgun chambered in 12 gauge with a ten-round detachable box magazine and an overall length of just 66 centimeters despite having an 18-inch barrel. The bullpup configuration places the action behind the trigger group, maintaining full barrel length while dramatically reducing the weapon's footprint. The result is a compact, high-capacity combat shotgun that handles like a submachine gun.\n\nThe Battering Ram was designed for vehicle crews, aircraft door gunners, and operators who work in spaces where a conventional shotgun's length is prohibitive. The ten-round magazine provides the highest capacity of any non-drum-fed shotgun in Crucible's lineup, and the bullpup balance — with the weight centered over the shooter's shoulder rather than extended forward — reduces fatigue during extended carry.\n\nThe weapon's compact profile has made it popular beyond its intended market. Close-protection details appreciate its concealability under long coats, urban operators value its maneuverability in stairwells and corridors, and building-clearing teams find its balanced handling superior to conventional shotguns when transitioning between rooms. The Battering Ram has become the default choice for operators who need a full-power shotgun in a minimal package.",
+  "manufacturer": "Crucible Environmental Compliance",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — tactical weapons license required",
+  "base_technologies": [
+    "Bullpup configuration",
+    "Semi-automatic gas action",
+    "Ten-round box magazine",
+    "Compact full-barrel design"
+  ],
+  "specifications": "caliber: 12 gauge\neffective_range: 35 meters (buckshot), 50 meters (slug)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 10 rounds (detachable box)\nweight: 3.4 kg\noverall_length: 66 cm",
+  "tactical_use": "A compact high-capacity combat shotgun for space-constrained operations. The bullpup design provides full 18-inch barrel performance in a package shorter than most pistol-grip shotguns. The ten-round magazine supports sustained engagement. The balanced weight distribution reduces fatigue during extended operations. Suitable for vehicle operations, building clearing, close protection, and any scenario where conventional shotgun length is prohibitive.",
+  "cultural_context": "The Battering Ram has changed how operators think about shotguns. Its compact profile proved that shotguns didn't have to be long, unwieldy weapons suited only for static defense. In tactical circles, the Siege-12 demonstrated that the shotgun could be a primary CQB weapon rather than a specialized breaching tool, and that realization has influenced doctrine across multiple security organizations.",
+  "known_users": [
+    "Vehicle-based security teams",
+    "Close-protection details",
+    "Building-clearing teams",
+    "Space-constrained tactical operators"
+  ],
+  "story_hooks": [
+    "A Battering Ram hidden under a long coat is used in an assassination at a public event — the weapon's compact size meant it passed through a security checkpoint designed to catch conventional long arms.",
+    "A modified Siege-12 with a drum magazine adapter is captured from a criminal organization. Crucible's engineering team confirms the adapter is more refined than anything they could have produced — someone with serious manufacturing capability is enhancing their weapons."
+  ],
+  "ammunition_type": [
+    "12 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "bullpup",
+    "compact",
+    "semi_auto",
+    "high_capacity",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

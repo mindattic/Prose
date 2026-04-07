@@ -1,0 +1,33 @@
+{
+  "id": "03b1758517555b7f5c1dca3c5e3eabe1",
+  "name": "Throne Sitter",
+  "type": "archetype",
+  "category": "power",
+  "description": "Has power but no idea what to do with it",
+  "behavioral_signature": "Holds authority through inertia rather than competence",
+  "under_stress": "Makes random decisions hoping one sticks",
+  "at_rest": "Enjoys the trappings of power without exercising it",
+  "will_always": [
+    "cling to their position"
+  ],
+  "will_never": [
+    "make a bold decision voluntarily"
+  ],
+  "unless": [
+    "someone makes it sound like the bold move preserves their seat"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Figurehead",
+      "threshold": 0.8,
+      "context": "empty authority"
+    }
+  ],
+  "opposite_of": [
+    "Crisis Commander"
+  ],
+  "tags": [
+    "inept",
+    "entitled"
+  ]
+}

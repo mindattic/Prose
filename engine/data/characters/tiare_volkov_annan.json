@@ -1,0 +1,65 @@
+{
+  "id": "fc6c27d448b69e55fd6bb47952c4cd98",
+  "name": "Tiare Volkov-Annan",
+  "type": "character",
+  "aliases": [
+    "Dockrat",
+    "The Longshoreman"
+  ],
+  "role": "Private Investigator",
+  "description": "Tiare Volkov-Annan is the Dockside PI — the investigator who handles everything that happens where Meridian 88 meets Lake Michigan. Cargo theft, smuggling operations, insurance fraud, waterfront murders, union disputes that turn violent, and the constant flow of people and goods that enters the city through its busiest port — all of it passes through Tiare's awareness.\n\nShe never planned to be an investigator. She was a dockworker herself until a cargo theft ring framed her for a shipment disappearance. She cleared her own name by investigating the actual thieves, discovered she was good at it, and realized that the docks needed someone who understood the waterfront from the inside. Formal PIs don't understand dock culture, don't know the rhythms and routines that create investigative opportunities, and don't have the trust of the workers who see everything. Tiare has all three.\n\nHer methods are half investigation and half physical labor. She climbs containers, dives into the lake, crawls through cargo holds, and gets her hands dirty in ways that most PIs wouldn't consider. Her geneware lung enhancement makes her uniquely capable of underwater investigation — she has recovered evidence from the lake bottom that surface-based investigators didn't know existed. She is known on the docks as someone who will help workers with problems that CorpSec ignores, and this reputation is her most valuable investigative asset.",
+  "affiliation": "Independent — deeply embedded in Dockside's shipping community",
+  "tier": "Tier 1",
+  "location": "A repurposed shipping container on the Dockside waterfront, insulated and wired for power, with a view of Lake Michigan",
+  "specialization": "Maritime and shipping investigations — smuggling, cargo theft, insurance fraud, and people who disappear at the docks",
+  "methods": [
+    "Reading shipping manifests and cargo logs for inconsistencies",
+    "Maintaining relationships with dockworkers, crane operators, and harbor pilots",
+    "Physical inspection of cargo containers — knows how smugglers modify standard containers",
+    "Understanding tidal patterns, shipping schedules, and dock procedures that create blind spots",
+    "Swimming — she can hold her breath for six minutes with geneware lung enhancements and has investigated submerged evidence personally"
+  ],
+  "notable_cases": [
+    "Discovered a smuggling operation that was bringing unregistered synthetics into Meridian 88 inside modified refrigeration containers",
+    "Solved a series of 'accidental' drownings at Dockside by proving the victims had been weighted and thrown from a specific pier during shift changes when no one was watching",
+    "Recovered Φ3 million in stolen pharmaceutical cargo by tracking the unique salt-water corrosion patterns on the stolen containers"
+  ],
+  "equipment": [
+    "Geneware lung enhancement — six-minute breath hold, pressure tolerance to 30 meters",
+    "Waterproof evidence kit — chemical-sealed containers for recovering submerged evidence",
+    "A small motorboat she maintains herself, docked at a private slip she won in a card game",
+    "Shipping database access — semi-legal, obtained through dockworker union connections",
+    "Dive gear with integrated thermal protection for Lake Michigan's cold waters"
+  ],
+  "personality": "Tiare is Polynesian-Russian-Ghanaian, thirty-three years old, brown-skinned and sun-weathered with a swimmer's build and calloused hands. She grew up on the docks — her father was a crane operator, her mother ran a supply shop — and she knows the waterfront the way other people know their own apartment. She is loud, profane, and physically fearless in a way that borders on reckless. She drinks with dockworkers, fights with smugglers, and investigates with a combination of genuine intelligence and relentless stubbornness. She is deeply loyal to the dock community and will not take cases that would harm ordinary workers — her targets are the operations that exploit the docks, not the people who work them.",
+  "relationships": [
+    {
+      "name": "Bosun Kenji Haugen-Sarpong",
+      "type": "dockworker contact",
+      "description": "Shift supervisor who alerts Tiare to anything unusual on the docks — she fixed a problem for his family once and he's been loyal ever since"
+    },
+    {
+      "name": "Captain Mere Arvidsson-Boateng",
+      "type": "harbor pilot",
+      "description": "Knows every ship that enters Meridian 88's harbor and what they're really carrying — trades information for Tiare's help keeping the docks safe for workers"
+    }
+  ],
+  "story_hooks": [
+    "A massive container ship arrives with a sealed hold that no one is authorized to open — but Tiare's dock contacts tell her something inside is alive",
+    "Dockworkers are disappearing during night shifts and the bodies are washing up days later on the far shore — CorpSec has classified it as accidental drownings but the pattern is obvious to anyone who knows the water",
+    "Tiare's geneware lungs begin failing during a critical underwater investigation — the enhancement was black-market and the warranty was a lie"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "dockside",
+    "maritime",
+    "smuggling",
+    "tier_1",
+    "waterfront"
+  ],
+  "carried_weapons": [
+    "Meridian Munitions Wheelgun-38 'Roundhouse'"
+  ],
+  "registered_firearms": []
+}

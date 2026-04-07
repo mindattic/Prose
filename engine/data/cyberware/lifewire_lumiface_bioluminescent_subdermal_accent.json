@@ -1,0 +1,55 @@
+{
+  "id": "5e2b8f3a1c094d7e6b3f52a0d9e17c44",
+  "name": "LifeWire LumiFace Bioluminescent Subdermal Accent",
+  "brand_name": "LifeWire",
+  "product_name": "LumiFace",
+  "type": "cyberware",
+  "aliases": [
+    "glowlines",
+    "the glow",
+    "lumiwork",
+    "ghost veins",
+    "shimmer"
+  ],
+  "category": "cosmetic",
+  "body_location": "subdermal facial and neck (optional extension to hands and forearms)",
+  "description": "The LifeWire LumiFace system implants a network of micro-scale bioluminescent filaments beneath the skin along the natural contour lines of the face — cheekbones, brow ridge, jaw, temples, and down the neck. These filaments are biological in origin, derived from engineered cnidarian proteins, and are fully integrated into the dermal layer rather than sitting against it. They emit soft, controllable light in the visible spectrum, adjustable in color, intensity, and pulse pattern through a LifeWire companion app or voice command to the system's embedded microprocessor. The effect at full intensity is a warm, diffuse underlighting that follows facial structure; at low settings, it produces a barely-perceptible luminescence only visible in dim environments. Patterns can be static, slowly shifting, or rhythmically pulsing. Optional extension packages cover the dorsal hands and forearms, following vein and tendon lines for a more architectural effect.\n\nThe LumiFace is the statement piece of the cosmetic cyberware market — aspirational enough to feel like a purchase, affordable enough that Tier 2 workers save up for it as a birthday present to themselves. It is, in the cultural language of Meridian 88, what jewelry was in prior centuries: decorative, expressive, and a signal of personal investment in one's own appearance. The system sees heaviest use in nightlife, performance, and social media contexts, but many wearers simply run it at a low ambient glow as a daily aesthetic choice. Clinic installations include a complimentary design consultation, and the filament layout is considered a form of body art in its own right — artists who specialize in LumiFace mapping charge a premium for their custom designs.",
+  "manufacturer": "LIFEWIRE CONSUMER IMPLANTS DIVISION",
+  "tier_availability": "Tier 2-4",
+  "legality": "Unrestricted",
+  "installation_requirements": "Licensed cosmetic clinic; installation takes 2–4 hours under local anesthetic depending on coverage area. Design mapping consultation recommended prior to installation.",
+  "rejection_risk": "Low",
+  "maintenance": "Bioluminescent proteins require a quarterly topical enzyme supplement applied to the skin above filament paths; firmware updates via LifeWire app; filament brightness may diminish 15–20% over 5 years without optional clinic refresh.",
+  "specifications": "{\"filament_material\": \"engineered cnidarian bioluminescent protein, biointegrated\", \"color_range\": \"full visible spectrum, 16.7 million colors\", \"intensity_range\": \"0–340 lumens distributed\", \"pattern_library\": \"200+ presets, custom programmable\", \"control_interface\": \"LifeWire companion app, voice command\", \"power_source\": \"biochemical ATP harvesting from surrounding tissue\", \"base_coverage\": \"face and neck\", \"optional_extension\": \"hands and forearms\"}",
+  "side_effects": [
+    "Mild facial warmth during high-intensity operation, especially in warm environments",
+    "Initial installation produces faint bruising along filament paths for 5–10 days",
+    "Some users report involuntary low-level glow during REM sleep for the first month",
+    "Rare sensitivity to enzyme supplement causing localized skin irritation"
+  ],
+  "cultural_context": "The LumiFace occupies an interesting class position in Meridian 88: it is too expensive for casual Shelf purchases but common enough among Tier 2 and 3 earners that it has lost any exclusive cachet it once had. In the early days of the product line, glowlines were associated with nightlife culture, performers, and the underground art scene. By 2200, they are simply part of the city's visual texture — you see them on transit workers heading home after a shift, on parents at school pickups, on elderly people who got them twenty years ago and never turned them off. The design subculture around LumiFace mapping is genuinely respected, with certain filament artists in Meridian 88 having waiting lists months long. There is a minor counter-aesthetic movement — sometimes called 'flatliners' — of people who deliberately avoid any bioluminescent work as a statement of naturalism, but this is a small and not particularly militant community.",
+  "known_users": [
+    "Nightlife workers, performers, and musicians",
+    "Young professionals in creative industries",
+    "Social media presence-builders and influencers",
+    "Middle-aged Tier 2-3 earners who got it as a personal milestone purchase",
+    "Older adults who have worn them for decades and treat them as simply part of their face"
+  ],
+  "story_hooks": [
+    "A body is found with the LumiFace still running on a looping pulse pattern — the specific pattern is a coded message that the victim programmed before their death, and decoding it requires finding someone who knows the old pre-update pattern language.",
+    "A popular filament artist who designs custom LumiFace maps has been quietly encoding identifying marks into their work — a signature only visible under a specific light frequency — and someone very powerful wants those marks removed from a very important person.",
+    "A Shelf community has started using synchronized LumiFace patterns as a gang identification system — not for violence, but for mutual aid and recognition — and the corponation that owns the patent is threatening legal action over 'unauthorized collective use protocols.'"
+  ],
+  "street_price": "Φ 600–Φ 1,100 base (extensions add Φ 200–400)",
+  "licensed_price": "Φ 1,400–Φ 2,800 at LifeWire certified cosmetic clinics",
+  "tags": [
+    "cyberware",
+    "cosmetic",
+    "lifestyle",
+    "bioluminescent",
+    "facial",
+    "fashion",
+    "body-art"
+  ],
+  "parent_corponation": ""
+}

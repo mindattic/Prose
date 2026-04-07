@@ -1,0 +1,44 @@
+{
+  "id": "d5b8e3a2f1c09674e5b8d3a2f1c09674",
+  "name": "Lazarus RipDoc Augmentation Surgical Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A complete street-clinic augmentation surgeon's kit: antimicrobial slate-teal scrub top and drawstring trousers in fluid-resistant BioWeave, a knee-length sterile apron with magnetic tool-strip across the chest, nitrile-grip gloves with haptic feedback pads at the fingertips, and low-profile closed-toe clogs with puncture-resistant soles. A lightweight magnifying visor flips up from a padded headband, and a rear neck pocket holds a sterile BCI tap tool.\n\nThe apron's chest strip holds scalpels, neural probes, and chrome calibration wands via magnet. Everything is bleach-rated and designed for fast decontam between patients.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "fluid-resistant BioWeave fabric",
+    "antimicrobial nitrile glove material",
+    "haptic feedback polymer pads",
+    "magnifying polycarbonate visor lens",
+    "puncture-resistant composite clog sole"
+  ],
+  "functionality": "Fluid-repellent BioWeave resists blood and coolant splash, magnetic tool-strip for surgical instrument retention, haptic fingertip pads for precision chrome calibration, flip-up magnifying visor for neural port work, BCI tap tool pocket.",
+  "what_it_says": "They fix what hospitals won't touch, for people hospitals won't see.",
+  "worn_by": [
+    "street ripperdocs",
+    "unlicensed augmentation surgeons",
+    "gene-clinic technicians in low-tier clinics"
+  ],
+  "manufacturer": "Evergreen Wellness",
+  "price_range": "Φ600–Φ1,200",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The apron's magnetic strip has a custom slot for a piece of military-grade chrome that isn't sold commercially — and the doc won't say where they got it.",
+    "The haptic gloves are logged to a stolen BCI calibration license, meaning every surgery technically belongs to a Tier 4 hospital upspire.",
+    "A patient's chrome arm left trace coolant on the apron that matches a rare military-grade fluid — someone powerful came through this clinic recently."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical",
+    "ripperdoc",
+    "street_clinic",
+    "aug_compatible",
+    "gene_compatible",
+    "tier1",
+    "tier2",
+    "gap_outfit"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

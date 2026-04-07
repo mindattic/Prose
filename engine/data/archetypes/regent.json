@@ -1,0 +1,33 @@
+{
+  "id": "87385a867e975f47df404b2db65f0f2a",
+  "name": "Regent",
+  "type": "archetype",
+  "category": "power",
+  "description": "Holds power in trust for someone who can't yet wield it",
+  "behavioral_signature": "Exercises authority while preparing their replacement",
+  "under_stress": "Starts believing they should keep the power permanently",
+  "at_rest": "Trains the heir while maintaining stability",
+  "will_always": [
+    "act in the interest of the one they serve"
+  ],
+  "will_never": [
+    "let the position become about themselves"
+  ],
+  "unless": [
+    "the heir proves unworthy and no alternative exists"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Mentor",
+      "threshold": 0.75,
+      "context": "temporary authority"
+    }
+  ],
+  "opposite_of": [
+    "Usurper"
+  ],
+  "tags": [
+    "steward",
+    "transitional"
+  ]
+}

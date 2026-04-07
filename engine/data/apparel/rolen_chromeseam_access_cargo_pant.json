@@ -1,0 +1,38 @@
+{
+  "id": "a3f7c2e1b09d4518e6a2f3c7d1b08e45",
+  "name": "Rolen ChromeSeam Access Cargo Pant",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Straight-leg cargo pants in dark charcoal ripstop with six zippered access panels running along the outer thigh and calf seams — sized and positioned for standard prosthetic service ports. The fabric is pre-stressed at the knee and hip joints to prevent binding during high-range movement. A familiar silhouette that reads as ordinary until someone notices the hardware.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ripstop polyblend",
+    "reinforced nylon paneling",
+    "brass-tooth zippers"
+  ],
+  "functionality": "Six service-access zip panels compatible with most standard prosthetic leg housings. Reinforced inner seams rated for hydraulic joint pressure.",
+  "what_it_says": "You work with your body and your chrome, and you don't apologize for either.",
+  "worn_by": [
+    "aug workers",
+    "couriers with prosthetic legs",
+    "Tier 2 tradespeople"
+  ],
+  "manufacturer": "Rolen",
+  "price_range": "Φ58",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A panel zip on a pair of these was forced open — someone accessed the wearer's leg port while they slept.",
+    "The access panels are standard-spec, but one brand of military chrome doesn't fit — a detail that matters when someone's trying to stay inconspicuous."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 2",
+    "aug-compatible",
+    "cargo",
+    "chrome access",
+    "prosthetic"
+  ],
+  "parent_corponation": ""
+}

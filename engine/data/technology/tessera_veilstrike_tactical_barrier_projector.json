@@ -1,0 +1,47 @@
+{
+  "id": "8c9caf96c93ce5bce68c5f8081104fa6",
+  "name": "TESSERA Veilstrike Tactical Barrier Projector",
+  "brand_name": "TESSERA",
+  "product_name": "Veilstrike TBP-4",
+  "type": "technology",
+  "aliases": [
+    "Veilstrike",
+    "TBP-4",
+    "Tac Barrier",
+    "Hard Light Wall"
+  ],
+  "subcategory": "defense",
+  "description": "A portable, deployable barrier system that projects a flat-plane force wall from a tripod-mounted emitter. The Veilstrike TBP-4 creates a 3-meter-wide by 2-meter-tall barrier of densely packed electromagnetic flux that stops ballistic and energy weapon fire while allowing the operator to fire through it from the protected side using phase-synced ammunition. The barrier is visually opaque from the threat side — a shimmering wall of distorted light that obscures the positions of those behind it — but transparent from the operator side, functioning as both cover and concealment.\n\nThe TBP-4 deploys in under four seconds and runs for approximately 22 minutes on its integrated power cell. Multiple units can be networked to create longer barrier walls, with TESSERA's proprietary mesh protocol ensuring seamless field overlap between adjacent projectors. The system weighs 11 kilograms and is designed to be carried by a single operator in a backpack configuration, making it practical for tactical teams that need portable hard cover in environments where physical barricades are unavailable.\n\nTESSERA developed the Veilstrike for law enforcement and corporate security applications, but the system has found enthusiastic adoption among mercenary companies and well-funded criminal organizations. The phase-synced ammunition requirement — rounds must be encoded with the barrier's frequency signature to pass through — creates a lucrative consumables market that TESSERA exploits aggressively. A case of phase-synced 7mm caseless runs approximately 800 Φ, compared to 45 Φ for standard ammunition of the same caliber.",
+  "tier_availability": "Tier 4",
+  "developers": [
+    "TESSERA"
+  ],
+  "base_technologies": [
+    "Flat-plane electromagnetic flux generation",
+    "Phase-synced projectile transparency",
+    "Networked barrier mesh protocol",
+    "Rapid deployment mechanics"
+  ],
+  "enables": [
+    "Portable hard cover in open environments",
+    "One-way fire capability",
+    "Visual concealment with ballistic protection",
+    "Networked defensive perimeters"
+  ],
+  "social_impact": "The Veilstrike has changed the geometry of urban combat. Firefights that once depended on existing architecture for cover now feature glowing barrier walls that appear and disappear as tactical situations evolve. Street-level operators without access to barrier tech are at a severe disadvantage, leading to an arms race in barrier-penetrating weapons and counter-barrier tactics. The phase-synced ammunition lock-in has also drawn criticism — operators who invest in Veilstrike hardware are economically tethered to TESSERA's ammunition supply chain.",
+  "story_hooks": [
+    "A batch of counterfeit phase-synced ammunition has entered the market — it passes through Veilstrike barriers from both sides, and someone is selling it specifically to enemies of Veilstrike users.",
+    "TESSERA has issued a recall on TBP-4 units manufactured in a specific lot range after three units detonated during deployment, but the recall notice was only sent to registered buyers — black-market units from that lot are still circulating."
+  ],
+  "tags": [
+    "defense",
+    "technology",
+    "forcefield",
+    "barrier",
+    "tactical",
+    "tessera",
+    "portable",
+    "tier 4"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,33 @@
+{
+  "id": "713d8b51159f5b7b96ef7584248e65f1",
+  "name": "Dogmatist",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Already has all the answers, thank you",
+  "behavioral_signature": "Filters all new information through an unchangeable framework",
+  "under_stress": "Doubles down on doctrine when evidence contradicts it",
+  "at_rest": "Confidently applies their framework to every situation",
+  "will_always": [
+    "interpret everything through their established worldview"
+  ],
+  "will_never": [
+    "seriously consider that their framework might be wrong"
+  ],
+  "unless": [
+    "the framework fails so catastrophically that denial becomes impossible"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Believer",
+      "threshold": 0.8,
+      "context": "unshakeable conviction"
+    }
+  ],
+  "opposite_of": [
+    "Skeptic"
+  ],
+  "tags": [
+    "rigid",
+    "ideological"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "c2f6b0e4d8a7139c2f6b0e4d8a7139c2",
+  "name": "Ironmarrow Tactical Conceal Vest",
+  "type": "apparel",
+  "category": "top",
+  "description": "Ironmarrow is a street-level brand with a specific reputation: they make concealment gear that works, priced for people who can't afford Vanthorpe's civilian carry options but need the same function. The Tactical Conceal Vest looks, from the outside, like a plain athletic vest — the kind worn by Tier 2 workers who want an extra layer without a full jacket. Matte black or deep olive, smooth-faced synthetic shell, simple zip front. What the outside doesn't show is the interior: four flat concealment pockets distributed across the torso, reinforced with a light ballistic-grade panel at the chest that provides basic protection against low-velocity impacts. The pockets are sized for a compact sidearm, a blade, documents, or tech.\n\nIronmarrow sells through three locations in the Midmarket and via a referral-only network in the Shelf. They don't advertise. Their quality control is better than it has any right to be at this price point, which is why people trust them. The vest is worn by fixers, couriers, off-duty security, and anyone who has decided they need to carry something and can't afford to look like they are.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synthetic shell fabric",
+    "ballistic-grade chest panel (low-velocity rated)",
+    "reinforced interior pocket construction"
+  ],
+  "functionality": "Integrated low-velocity ballistic protection at chest panel. Four interior concealment pockets with flat-profile construction. No electronics.",
+  "what_it_says": "You're prepared for something. You'd prefer no one knew.",
+  "worn_by": [
+    "fixers",
+    "off-duty security personnel",
+    "couriers carrying sensitive cargo",
+    "Shelf residents who've been robbed before",
+    "people in situations where carrying openly is not an option"
+  ],
+  "manufacturer": "Ironmarrow",
+  "price_range": "Φ55",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An Ironmarrow vest stopped a blade during an attempted mugging in Stack 3 last month. The owner survived. The story is circulating in the Shelf and Midmarket, and Ironmarrow's referral list has tripled. Someone with a vest company bigger than Ironmarrow's is paying attention.",
+    "A run of Ironmarrow vests from 2199 has interior pockets with a hidden fifth compartment that appears on no spec sheet. It's the right size for a data chip. Who added it, and to how many vests, is unknown.",
+    "Ironmarrow's founder is a former Vantablack contractor. No one is supposed to know this. Someone figured it out and is deciding what to do with the information."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 2",
+    "vest",
+    "concealment",
+    "ballistic",
+    "ironmarrow",
+    "street brand",
+    "tactical",
+    "functional"
+  ],
+  "parent_corponation": ""
+}

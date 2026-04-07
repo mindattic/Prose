@@ -1,0 +1,33 @@
+{
+  "id": "f17327000a93fd605bab76e838af0556",
+  "name": "Devil's Advocate Thinker",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Argues the other side not because they believe it, but to test the truth",
+  "behavioral_signature": "Challenges every position including their own to find weaknesses",
+  "under_stress": "Becomes so contrarian nobody trusts their actual opinion",
+  "at_rest": "Asks uncomfortable questions that make everyone think harder",
+  "will_always": [
+    "argue the unpopular position"
+  ],
+  "will_never": [
+    "let a claim go unchallenged"
+  ],
+  "unless": [
+    "the person making the claim is too fragile to handle pushback"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Devils Advocate",
+      "threshold": 0.9,
+      "context": "intellectual challenge"
+    }
+  ],
+  "opposite_of": [
+    "Dogmatist"
+  ],
+  "tags": [
+    "contrarian",
+    "rigorous"
+  ]
+}

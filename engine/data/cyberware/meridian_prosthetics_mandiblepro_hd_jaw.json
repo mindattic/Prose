@@ -1,0 +1,54 @@
+{
+  "id": "c8b2f4a9e3571d0b6f8c2a4e7d913c05",
+  "name": "MERIDIAN PROSTHETICS MandiblePro HD Jaw",
+  "brand_name": "MERIDIAN PROSTHETICS",
+  "product_name": "MERIDIAN PROSTHETICS MandiblePro HD Jaw Replacement",
+  "type": "cyberware",
+  "aliases": [
+    "Ironjaw",
+    "The Bite",
+    "Crusher Mouth"
+  ],
+  "category": "misc",
+  "body_location": "jaw",
+  "description": "The MandiblePro HD replaces the entire lower mandible with a titanium-ceramic composite frame anchored to the zygomatic and temporal bones via osseointegration posts, with synthetic musculature attachment points that preserve natural bite mechanics. Bite force is enhanced to approximately 800 PSI — roughly four times average human — via reinforced joint geometry and synthetic ligament tensioners. The system includes a full set of ceramic-coated teeth graded for industrial stress, and a concealed hollow cavity within the left rear molar assembly that can store small items up to 8mm diameter, accessible via deliberate tongue-press sequence. The jaw's exterior is matched to patient skin tone and is indistinguishable from organic tissue under casual inspection.\n\nMandible replacements are most commonly installed following traumatic facial injury, cancer resection, or industrial accidents. The MandiblePro HD is the hospital-default option for jaw replacement across Meridian's public health system, meaning it's widespread enough that nobody looks twice. The hidden molar compartment is technically not listed in the official product documentation — it appears in every unit, a legacy design feature from an older model that Meridian Prosthetics has never bothered to remove, and which the street has thoroughly discovered.",
+  "manufacturer": "MERIDIAN PROSTHETICS",
+  "tier_availability": "Tier 1-4",
+  "legality": "Licensed",
+  "installation_requirements": "Maxillofacial surgical team, 5-7 hour procedure, general anesthesia, 3-week soft-food recovery, speech therapy recommended",
+  "rejection_risk": "Low — Meridian's osseointegration posts use well-established hydroxyapatite coating; primary risk is in patients with compromised jaw bone density",
+  "maintenance": "Annual dental inspection, joint lubricant injection every 2 years, synthetic ligament tension check",
+  "specifications": "{\"material\": \"Titanium-ceramic composite frame, ceramic-coated teeth\", \"bite_force\": \"800 PSI max\", \"teeth_count\": \"16 lower replacements standard\", \"hidden_compartment\": \"8mm diameter cavity, left M2 molar, tongue-press access\", \"anchoring\": \"6 osseointegration posts\", \"skin_matching\": \"Yes, silicone overlay\", \"detection\": \"Visible on X-ray, passes visual inspection\", \"warranty\": \"12 years structural\"}",
+  "side_effects": [
+    "Speech adjustment period of 2-4 weeks post-installation",
+    "Heightened awareness of jaw pressure — users may unconsciously clench harder than intended",
+    "Ceramic teeth transmit cold differently than organic, causing initial temperature sensitivity confusion",
+    "Accidental activation of molar compartment during yawning has been reported"
+  ],
+  "cultural_context": "The MandiblePro HD's undocumented molar compartment has become something of an open secret in Meridian's criminal and grey-market communities. The phrase 'Meridian smile' has taken on a second meaning — someone who stores contraband, keys, or data chips in their own head.",
+  "known_users": [
+    "Trauma and accident survivors requiring jaw reconstruction",
+    "Cancer patients post-resection",
+    "Street-level couriers and smugglers exploiting the hidden compartment",
+    "Fighters and bouncers upgrading bite capability as deterrent",
+    "Anyone processed through the public hospital system after facial trauma"
+  ],
+  "story_hooks": [
+    "A murder victim's MandiblePro HD molar compartment contains a micro data chip — the contents could implicate someone very powerful, and the body has gone missing from the morgue",
+    "A batch of MandiblePro HD units has been installed with a modified compartment that contains a pre-loaded passive RFID transmitter, turning recipients into unwitting tracking beacons",
+    "A Shelf-tier fighter is winning underground bouts with impossible bite-force attacks — someone has illegally overclocked their MandiblePro's ligament tensioners"
+  ],
+  "street_price": "Φ7,200",
+  "licensed_price": "Φ14,500",
+  "tags": [
+    "cyberware",
+    "misc",
+    "jaw",
+    "bite-force",
+    "concealment",
+    "meridian-prosthetics",
+    "medical",
+    "tier1-4"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "a3f8c21b9e4d7065b2a1f83c0d5e9742",
+  "name": "Rustwater Layering Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A full-body survival stack built for the Shelf's acid-laced downpours. The outermost layer is a knee-length anorak cut from salvaged industrial tarp material — once corporate safety-orange, now faded to a streaky rust-and-cream, with mismatched patches of rubberized canvas heat-bonded over the shoulders and collar where the acid eats fastest. Underneath sits a dense thermal pullover in charcoal wool-synth blend, the left sleeve replaced entirely with a different fabric — darker, heavier, clearly scavenged from something else. Cargo trousers in faded olive feature six pockets, two of which are sealed with mismatched zippers, one with a strip of silver self-repair tape holding the seam together at the hip. The legs are tucked into calf-high boots with soles that have been rebuilt so many times the tread is a patchwork of different rubber compounds — black, grey, and one strip of deep red. A wide salvaged neoprene neck gaiter hangs loose around the throat, ready to pull up over the nose and mouth when rain hits. Fingerless gloves in cracked synthetic leather cover both hands, the right one reinforced across the knuckles with a strip of chrome salvage — a discarded aug-brace repurposed as protection. A battered wide-brim hat in waxed cotton, stained dark at the crown, completes the silhouette.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged industrial tarp",
+    "rubberized canvas",
+    "wool-synth thermal blend",
+    "olive cargo twill",
+    "neoprene",
+    "synthetic leather",
+    "reclaimed chrome aug-brace",
+    "self-repair tape",
+    "reclaimed rubber soles"
+  ],
+  "functionality": "Acid-rain resistance via tarp anorak and rubberized shoulder patches. Thermal retention in the wool-synth underlayer. Six cargo pockets for tools, rations, and survival gear. Boot soles rebuilt for grip on wet industrial grating. Chrome knuckle brace doubles as impact protection. Gaiter provides respiratory filter layer in chemical environments.",
+  "what_it_says": "This person has been on the Shelf long enough to know exactly what kills you — acid rain, cold, and exposure in that order. Every layer was chosen to solve a problem. Nothing is decorative. The mismatched repairs aren't shameful; they're a record of survival. The chrome knuckle piece says they've thought about close-quarters trouble too.",
+  "worn_by": [
+    "long-term Shelf residents",
+    "scavengers and salvage runners",
+    "infrastructure squatters",
+    "people who've learned the hard way"
+  ],
+  "manufacturer": "Self-assembled from salvage and street-market components",
+  "price_range": "Φ12–Φ40 (assembled over months from individual finds)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The chrome knuckle brace is actually a piece of a military-grade prosthetic arm — and its original owner may still be looking for it.",
+    "The acid-resistant tarp patches are cut from the same industrial lot used to seal a corporate dumping site — and they're faintly radioactive in a way the wearer doesn't yet know.",
+    "The self-repair tape is running out, and the hip seam is the only thing keeping a hidden interior pocket — and what's inside it — from falling into the street."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "survival_wear",
+    "acid_resistant",
+    "layering",
+    "scavenger",
+    "aug_compatible",
+    "salvage_fashion"
+  ],
+  "parent_corponation": ""
+}

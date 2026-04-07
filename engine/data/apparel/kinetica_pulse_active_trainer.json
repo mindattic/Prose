@@ -1,0 +1,41 @@
+{
+  "id": "e9c4a7f2d1b3608e5c9a4f2b7d1e3c80",
+  "name": "Kinetica Pulse Active Trainer",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A low-profile athletic trainer with a slightly chunky midsole housing the active cushioning system — visible as a faint hexagonal lattice through the translucent sidewall. The sole responds to impact force in real time, stiffening under heavy landings and softening for sustained running. Comes in white/grey, black/orange, and teal/white colorways.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "engineered mesh upper",
+    "reactive polymer midsole",
+    "carbon-weave heel counter",
+    "rubber outsole"
+  ],
+  "functionality": "Active cushioning lattice adjusts firmness in response to measured impact force, reducing joint stress by an estimated 30% over passive foam.",
+  "what_it_says": "You take your health seriously without going full performance-athlete. These are shoes for someone who runs to work and means it.",
+  "worn_by": [
+    "fitness-conscious professionals",
+    "couriers",
+    "personal trainers",
+    "physical therapists"
+  ],
+  "manufacturer": "Kinetica Athletics",
+  "price_range": "Φ110 - Φ150",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The impact-response data logged by the trainer captured the exact force profile of a fall — or a fight.",
+    "A courier wearing these has been making deliveries that don't appear on any manifest, the shoes' GPS quietly confirming every stop."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "smart",
+    "athletic",
+    "trainer",
+    "active cushioning",
+    "running"
+  ],
+  "parent_corponation": ""
+}

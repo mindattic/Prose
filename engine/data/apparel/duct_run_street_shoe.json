@@ -1,0 +1,39 @@
+{
+  "id": "f2a5b8c0d1e4379956f7a8b9c0d1e234",
+  "name": "Duct-Run Street Shoe",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A low athletic shoe reinforced and repaired with multiple wraps of silver duct tape — around the toe, across the heel, and in a thick band around the midsole where it started separating. Beneath the tape the shoe is a faded corporate-branded runner, the logo worn to illegibility. Worn openly, the tape is a badge of resourcefulness rather than a point of shame in most Shelf communities.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "duct tape",
+    "worn synth-mesh upper",
+    "compressed foam sole"
+  ],
+  "functionality": "none",
+  "what_it_says": "Fixing things is a skill. You're not embarrassed. This is just Tuesday.",
+  "worn_by": [
+    "young Shelf residents",
+    "couriers",
+    "people between jobs"
+  ],
+  "manufacturer": "Unknown base shoe",
+  "price_range": "Φ1 - Φ4",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Someone wrapped a folded note inside the tape before sealing it. They forgot it was there.",
+    "The tape color is specific to a crew — silver means neutral, red means someone's spoken for."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "repaired",
+    "athletic",
+    "improvised",
+    "shelf",
+    "runner"
+  ],
+  "parent_corponation": ""
+}

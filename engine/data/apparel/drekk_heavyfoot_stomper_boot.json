@@ -1,0 +1,42 @@
+{
+  "id": "3b70e9c1a4f82d6509e1c37b2f948a0d",
+  "name": "Drekk Heavyfoot Stomper Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A massive, square-toed boot in black vulcanized rubber over a high-density polymer chassis, running to just below the knee. The sole is 5cm thick with aggressive lug tread — designed to grip slick club floors and hurt when used as an impromptu weapon. Bouncers and door staff across Tiers 2 and 3 favor these for the psychological weight of them alone. Steel reinforcement runs through the toe box and heel strike zone.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "vulcanized rubber outer shell",
+    "high-density polymer chassis",
+    "steel toe box reinforcement",
+    "steel heel plate",
+    "foam-padded shaft liner"
+  ],
+  "functionality": "Steel toe cap rated 200J impact. Heel strike plate rated for repeated hard-surface impact. Lug sole provides grip on wet, oily, or polished floors. Knee-height shaft provides ankle and shin protection.",
+  "what_it_says": "You stand at doors for a living and you don't need to explain yourself. The boots do it for you.",
+  "worn_by": [
+    "club bouncers",
+    "venue security",
+    "underground fight promoters",
+    "Tier 2 debt collectors"
+  ],
+  "manufacturer": "Drekk Workwear",
+  "price_range": "Φ80 - Φ100",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A bouncer's boots are found at a scene — no bouncer. The club owner says he never showed up for his shift three nights ago.",
+    "The boots are sold in pairs, but someone's been buying single left boots in bulk. No one knows why."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "armored",
+    "work boot",
+    "security",
+    "bouncer",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

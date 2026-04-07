@@ -1,0 +1,57 @@
+{
+  "id": "a3f7c2e1b08d4591fe23a76c0d5e8b49",
+  "name": "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
+  "brand_name": "KESSLER KINETICS",
+  "product_name": "Kessler Kinetics VectorStrike Digitigrade Sprint Mk4",
+  "type": "cyberware",
+  "aliases": [
+    "Jacklegs",
+    "Coyotes",
+    "Burners"
+  ],
+  "category": "digitigrade_leg",
+  "body_location": "legs",
+  "description": "The VectorStrike Mk4 is a paired digitigrade sprint platform engineered around a triple-joint articulation stack: hip, reverse-knee, and elongated metatarsal drive column. Carbon-titanium composite bones channel explosive torque from twin servo-muscle bundles, and a predictive gait AI pre-loads joint tension 40ms before each footfall. Top tested speed is 74 km/h on flat hardcourt, with 0-30 km/h achievable in under 1.2 seconds.\n\nKessler markets these to competitive athletes and couriers, but legitimate sporting bodies have banned digitigrade legs from nearly all sanctioned events, citing unfair morphology. In practice, the VectorStrike's primary buyers are underground circuit racers, message runners in Shelf warrens, and fleeing people who need to be very, very hard to catch.",
+  "manufacturer": "KESSLER KINETICS",
+  "tier_availability": "Tier 2-4",
+  "legality": "Licensed",
+  "installation_requirements": "Full bilateral hip disarticulation, minimum 6-hour surgical suite, Kessler-certified neural socket installation, 3-week gait recalibration program",
+  "rejection_risk": "Moderate — proprioceptive dissonance common during first 8 weeks as the brain remaps spatial body schema for non-human joint geometry",
+  "maintenance": "Servo-muscle fluid replacement every 90 days; joint bearing inspection every 6 months; gait AI firmware updates recommended quarterly",
+  "specifications": "{\"top_speed_kmh\": 74, \"acceleration_0_30\": \"1.2 seconds\", \"joint_count_per_leg\": 3, \"primary_material\": \"carbon-titanium composite\", \"actuator_type\": \"dual servo-muscle bundle\", \"gait_ai\": \"Kessler PredictivePace v7\", \"weight_per_leg_kg\": 4.8, \"power_source\": \"integrated kinetic harvest + subcutaneous cell pack\", \"operating_temp_range\": \"-20C to 55C\"}",
+  "side_effects": [
+    "Chronic proprioceptive dissonance for 2-6 months post-installation; some users never fully adapt",
+    "Involuntary micro-sprints during REM sleep (documented injury risk to bed partners)",
+    "Atrophy of stabilizing hip musculature if organic tissue retained above hip socket",
+    "Heightened startle-response locomotion — users report bolting at sudden loud noises before conscious decision to run"
+  ],
+  "cultural_context": "Digitigrade legs mark the wearer as visibly, irreversibly non-standard — and most of Meridian 88 treats that as a threat. Businesses post pictogram bans, employers cite insurance clauses, and transit security profiles wearers at elevated suspicion. The underground racing scene that embraces VectorStrikes is tight-knit precisely because its members have been excluded from everywhere else.",
+  "known_users": [
+    "Underground circuit racers in Shelf and Mid-Ring districts",
+    "Tier 2 courier runners who prioritize speed over social access",
+    "Fugitives and people with reasons to outrun pursuit",
+    "Former competitive sprinters banned from sanctioned sport",
+    "Youth gang members as status display in speed-culture crews"
+  ],
+  "story_hooks": [
+    "A Kessler-sponsored underground race is being used to scout talent for something far more dangerous — and the players are invited to run or to watch",
+    "A VectorStrike wearer is the only witness to a corporate murder, and they're running — the players need to catch them or help them",
+    "Kessler's new Mk5 prototype has a firmware exploit that turns gait AI into a remote-activated restraint system; someone is selling the exploit"
+  ],
+  "street_price": "Φ38,000",
+  "licensed_price": "Φ72,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "digitigrade",
+    "legs",
+    "sprint",
+    "speed",
+    "kessler-kinetics",
+    "restricted-spaces",
+    "body-modification",
+    "underground",
+    "digitigrade_leg"
+  ],
+  "parent_corponation": ""
+}

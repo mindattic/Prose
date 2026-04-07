@@ -1,0 +1,44 @@
+{
+  "id": "f1a2b3c4d5e6f70819202122232425a6",
+  "name": "Ruinwear Shelf Tank (Patched)",
+  "type": "apparel",
+  "category": "top",
+  "description": "Not a product so much as an artifact. The Ruinwear tag — a crude stamped label reading 'RUINWEAR // SHELF MADE' — gets applied to whatever garment the maker has assembled from scavenged fabric. This particular configuration is a sleeveless tank cut from a decommissioned industrial work shirt, with the collar removed, the hem unevenly trimmed, and four or five patches of different fabric sewn over stress points and holes. The patches don't match — that's the point. One is a strip of reflective safety-yellow from a road worker's vest. One is a piece of printed synthetic from what was probably a corporate banner.\n\nThese are sold out of a rolling cart in the Shelf's Crater Market by a woman named Dex who has no last name on record. Prices vary by mood. The quality varies by what was available that week. But they hold together, and on the Shelf, a shirt that holds together is a good shirt.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "scavenged cotton-poly work shirt fabric",
+    "reflective safety material",
+    "repurposed synthetic print fabric",
+    "waxed thread repairs"
+  ],
+  "functionality": "",
+  "what_it_says": "You're from the Shelf and you're not pretending otherwise. Or you want people to think you are.",
+  "worn_by": [
+    "Shelf residents",
+    "scavengers",
+    "street performers",
+    "Tier 2 people performing Shelf identity",
+    "people with nothing to prove"
+  ],
+  "manufacturer": "Ruinwear (independent, Dex)",
+  "price_range": "Φ8",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A piece of fabric in one of Dex's recent tanks came from a corponation internal uniform — someone's trying to figure out how it ended up in the Crater Market scrap pile.",
+    "A Tier 4 fashion house has started selling 'distressed patchwork' tops for Φ400 that are clearly inspired by Ruinwear. Dex has received an offer to consult. She hasn't responded.",
+    "One specific patched tank has a panel that, under UV light, reveals a partial map — something was printed on that fabric before it became scrap."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 1",
+    "tank top",
+    "patched",
+    "scavenged",
+    "Shelf",
+    "street vendor",
+    "Ruinwear"
+  ],
+  "parent_corponation": ""
+}

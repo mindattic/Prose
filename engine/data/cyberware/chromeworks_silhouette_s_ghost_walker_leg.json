@@ -1,0 +1,58 @@
+{
+  "id": "2f8b5c1e9a3d74061b7e4c2a8d6f3059",
+  "name": "Chromeworks Silhouette-S Ghost Walker Leg",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "Chromeworks Silhouette-S Ghost Walker Leg System",
+  "type": "cyberware",
+  "aliases": [
+    "Ghosts",
+    "Whisperlegs",
+    "Silhouettes"
+  ],
+  "category": "leg",
+  "body_location": "legs",
+  "description": "The Silhouette-S is Chromeworks' stealth-optimized full leg replacement, built around magnetically suspended servo motors that eliminate metal-on-metal contact and reduce operational sound output to below 18 decibels at walking pace. The foot sole uses a layered viscoelastic dampening pad with variable-hardness zones that adjust to surface texture in real time, suppressing footfall vibration transmission to floors and walls. Thermal masking panels embedded in the outer shell dissipate heat laterally across the limb surface rather than radiating upward, reducing infrared signature to ambient-adjacent levels within 90 seconds of activation. The chrome finish is a Chromeworks aesthetic signature — polished enough to reflect surroundings, functioning as passive visual disruption in mixed-light environments.\n\nThe Silhouette-S is nominally a civilian product marketed to security professionals and corporate executives who want unobtrusive movement — Chromeworks is careful about who they sell to on paper. In practice, the hardware is well-known in intelligence-adjacent circles, and the waiting list for unlicensed units is longer than the licensed one. The chrome finish has made it a paradox: a stealth limb that is immediately recognizable to anyone who knows what it is, functioning as a status signal within a very specific professional community.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 3-5",
+  "legality": "Restricted",
+  "installation_requirements": "Chromeworks-certified installer only, bilateral neural synchronization required, acoustic calibration suite needed post-installation",
+  "rejection_risk": "Minimal — Chromeworks' proprietary neural interface coating is best-in-class; magnetic servo suspension reduces micro-trauma during integration",
+  "maintenance": "Magnetic servo recalibration every 6 months; viscoelastic sole pad replacement annually; thermal masking panel integrity check quarterly; chrome surface repolish as needed",
+  "specifications": "{\"weight_per_limb_kg\": 2.1, \"operational_noise_db\": 18, \"thermal_masking_activation_seconds\": 90, \"footfall_vibration_suppression\": \"viscoelastic variable-hardness sole, surface-adaptive\", \"servo_type\": \"magnetically suspended, no metal contact\", \"finish\": \"polished chrome with passive visual disruption properties\", \"ir_signature_reduction\": \"ambient-adjacent within 90s\", \"material\": \"aerospace aluminum subframe, chrome outer shell\", \"ip_rating\": \"IPX5\", \"power_source\": \"dual lithium-ceramic cells\", \"battery_life_hours\": 64}",
+  "side_effects": [
+    "Thermal masking causes localized surface cooling of the limb exterior — in cold environments, contact with the chrome shell can cause minor skin burns from cold",
+    "Magnetic servo suspension is disrupted by strong external magnetic fields, causing servo stutter and audible clicking that defeats the stealth function entirely",
+    "Viscoelastic sole pads accumulate debris in surface-texture adaptation gaps, requiring meticulous cleaning to maintain noise suppression performance",
+    "Chrome finish requires regular maintenance — scratched or oxidized surfaces develop acoustic resonance that partially defeats sound dampening"
+  ],
+  "cultural_context": "The Silhouette-S exists in the uncomfortable space between luxury product and professional tool. Chromeworks markets it as executive security hardware; the intelligence and covert operations community treats it as essential kit. The chrome finish is either a bold aesthetic statement or a deliberate identifier depending on who's reading it — within certain professional circles, the Silhouette-S is a calling card that says more than words.",
+  "known_users": [
+    "Corporate intelligence operatives and covert security contractors",
+    "Tier 4-5 executives who require unobtrusive personal security",
+    "Licensed investigators and surveillance professionals",
+    "High-end freelance operatives working restricted-access environments",
+    "Chromeworks brand loyalists in the Tier 3-4 professional class"
+  ],
+  "story_hooks": [
+    "A Silhouette-S with a wiped serial number was recovered at the scene of a Tier 5 boardroom infiltration — Chromeworks' installer records are supposedly tamper-proof, but someone with access sold a unit off the books",
+    "The latest firmware update pushed to all Silhouette-S units contains an undocumented subroutine that logs location data at 30-second intervals — Chromeworks is not responding to inquiries about who receives the feed",
+    "A ghost walker has been systematically entering restricted Tier 5 residences without triggering any alarms, leaving behind no evidence except a single chrome fingerprint on a mirror — apparently deliberate"
+  ],
+  "street_price": "Φ95,000",
+  "licensed_price": "Φ185,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "leg",
+    "stealth",
+    "vibration-dampened",
+    "thermal-masking",
+    "silent-servos",
+    "chromeworks",
+    "tier3",
+    "tier4",
+    "tier5",
+    "restricted"
+  ],
+  "parent_corponation": ""
+}

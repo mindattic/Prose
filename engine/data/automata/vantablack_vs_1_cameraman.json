@@ -1,0 +1,51 @@
+{
+  "name": "Vantablack VS-1 'Cameraman'",
+  "type": "automaton",
+  "classification": "Spider Platform — Surveillance",
+  "aliases": [
+    "Cameraman",
+    "Eye Spider",
+    "The Watcher"
+  ],
+  "manufacturer": "Blackout Vehicle Division",
+  "description": "Vantablack Media's VS-1 is technically not a weapon. It's a mobile surveillance and content acquisition platform — a small, six-legged spider drone roughly the size of a dinner plate, painted matte black, equipped with high-definition optical and audio recording equipment capable of capturing broadcast-quality footage in any lighting condition. It climbs walls, traverses ceilings, and can remain motionless for hours while recording. Vantablack deploys hundreds of them across Meridian 88 as mobile news-gathering assets.\n\nThe VS-1 becomes a weapon in context. Vantablack uses them to document events in the Shelf and lower-tier districts — violence, poverty, corporate operations, personal moments — and broadcasts that content without consent to audiences in the Spires and upper tiers. The surveillance is constant, invasive, and profitable. Residents of documented districts have no opt-out mechanism and no legal recourse, as Vantablack's broadcast licenses cover 'public interest documentation' in all tier zones. Getting caught doing something embarrassing, illegal, or simply private on a Cameraman feed can destroy lives.\n\nThe VS-1 also serves as a force multiplier for other operations. Vantablack sells real-time feeds from its Cameraman network to corporate security firms, law enforcement, and — through intermediaries — to criminal organizations. The same drone that films a Shelf family's dinner broadcasts their security patterns to whoever pays for the feed. Vantablack's position is that the data is public-domain observation. Everyone else's position is that it's industrialized stalking.",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — broadcast documentation equipment",
+  "autonomy_level": "Semi-autonomous with editorial override",
+  "dimensions": "0.25m body diameter, 0.5m leg span",
+  "weight": "1.2 kg",
+  "power_source": "Micro lithium cell, 18-hour endurance, solar recharge capable",
+  "locomotion": "Hexapod, wall/ceiling capable, near-silent operation",
+  "armament": [
+    "None — but feeds enable violence by others"
+  ],
+  "sensors": [
+    "4K optical recording",
+    "Directional microphone array",
+    "Low-light amplification",
+    "BCI proximity detection"
+  ],
+  "countermeasures": "Small arms fire. Signal jamming blocks feed transmission but not local recording. Anti-surveillance paint disrupts optical camouflage. Most Shelf residents simply smash them on sight.",
+  "known_deployments": [
+    "Meridian 88 citywide — estimated 800+ active units",
+    "Concentrated in Shelf, Circuit, and Old Harbor districts"
+  ],
+  "story_hooks": [
+    "A Cameraman captured footage of a corporate assassination. Vantablack is auctioning the footage to the highest bidder — the killer, the victim's family, and three news organizations are all bidding. The players need to get it first.",
+    "Someone is hacking Cameraman feeds and replacing real footage with deep fakes. An innocent person has been framed for murder using fabricated Cameraman evidence."
+  ],
+  "cultural_context": "Cameramen are the most-destroyed automata in Meridian 88. Shelf residents kill them on sight with thrown objects, improvised EMP devices, and simple stomping. Vantablack considers the attrition rate a cost of doing business. The phrase 'smile for the spider' is Shelf sarcasm for the constant surveillance.",
+  "tags": [
+    "automaton",
+    "spider",
+    "surveillance",
+    "media",
+    "vantablack",
+    "corporate",
+    "control",
+    "privacy",
+    "tier 2"
+  ],
+  "id": "7467cf6b90e0d98124d28fb2296997fe",
+  "parent_corponation": "Vantablack Media"
+}

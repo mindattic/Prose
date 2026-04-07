@@ -1,0 +1,34 @@
+{
+  "id": "d6d498e66d74faeb86424158c1e94fc8",
+  "name": "Feral Child",
+  "type": "archetype",
+  "category": "social",
+  "description": "Raised outside normal social structures, operates on instinct not convention",
+  "behavioral_signature": "Violates social norms without realizing they exist",
+  "under_stress": "Reverts to pure survival behavior, all socialization drops",
+  "at_rest": "Wary, watchful, sitting near exits",
+  "will_always": [
+    "trust instinct over social protocol"
+  ],
+  "will_never": [
+    "understand unspoken social rules"
+  ],
+  "unless": [
+    "someone patient has explicitly taught them the specific rule"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Street Smart",
+      "threshold": 0.6,
+      "context": "survival instincts"
+    }
+  ],
+  "opposite_of": [
+    "Diplomat"
+  ],
+  "tags": [
+    "instinct",
+    "outsider",
+    "raw"
+  ]
+}

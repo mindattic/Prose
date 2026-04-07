@@ -1,0 +1,48 @@
+{
+  "name": "Ringo EV-5 'Showstopper'",
+  "type": "automaton",
+  "classification": "Entertainment — Performance Platform",
+  "aliases": [
+    "Showstopper",
+    "Dance Machine",
+    "Ringo Star"
+  ],
+  "manufacturer": "RINGO ENTERTAINMENT DIVISION",
+  "description": "The EV-5 is a bipedal performance automaton standing 1.9 meters tall, designed to serve as the centerpiece of live entertainment venues, casino floors, and corporate hospitality events across Meridian 88. Its chassis is sheathed in programmable surface panels that can display any color, pattern, or animated texture, and its 47-axis articulation system allows movement fluidity that exceeds human range of motion in every joint. The Showstopper can dance, mime, juggle, perform acrobatics, and execute choreographed routines with timing precision measured in microseconds.\n\nRingo markets the EV-5 as a premium entertainment solution, but its actual deployment reveals something darker about Meridian 88's relationship with performance and labor. The Showstopper replaces human entertainers — dancers, acrobats, musicians — at a fraction of the ongoing cost, and it never gets tired, never demands better conditions, never unionizes. Casino floors that once employed hundreds of performers now run skeleton crews of technicians maintaining banks of EV-5 units that perform 20-hour shifts with perfect energy.\n\nThe most disturbing application is the EV-5's customer interaction mode. The unit's facial display panel renders photorealistic human expressions synthesized from emotional analysis of the audience, creating a feedback loop where the machine appears to be genuinely enjoying itself because it is reading and reflecting the audience's desire to see enjoyment. It is a mirror that shows people what they want to see, and most people cannot tell the difference.",
+  "tier_availability": "Tier 3+",
+  "legality": "Unrestricted — commercial entertainment equipment",
+  "autonomy_level": "Semi-autonomous with choreography programming",
+  "dimensions": "1.9m height, 0.6m shoulder width",
+  "weight": "65 kg",
+  "power_source": "High-density lithium-ceramic battery, 20-hour performance endurance",
+  "locomotion": "Bipedal, 47-axis articulated joints",
+  "armament": [],
+  "sensors": [
+    "Audience emotion analysis array (facial recognition, biometric scanning)",
+    "Spatial awareness for stage navigation",
+    "Audio analysis for music synchronization"
+  ],
+  "countermeasures": "Non-combat platform. Fragile compared to military automata. Surface panels crack under moderate impact.",
+  "known_deployments": [
+    "Meridian 88 upper-tier casino complexes",
+    "Corporate gala events and product launches",
+    "Ringo Entertainment flagship showroom"
+  ],
+  "story_hooks": [
+    "An EV-5 in a casino has started performing routines it was never programmed with — dances that match the style of a human performer who died three years ago. The casino's owners want it investigated quietly, because the dead performer's family is litigious.",
+    "Someone has loaded combat movement algorithms into a Showstopper chassis. A machine built to dance is now the most fluid close-quarters combatant anyone has ever seen, and it's being used in underground fighting rings."
+  ],
+  "cultural_context": "The EV-5 is a flashpoint in Meridian 88's ongoing labor displacement crisis. The Performers' Collective has staged protests outside venues that deploy Showstoppers, and several units have been vandalized with the slogan 'APPLAUSE IS NOT CONSENT.' The machines are beautiful, tireless, and utterly indifferent to the livelihoods they erase.",
+  "tags": [
+    "automaton",
+    "entertainment",
+    "performance",
+    "casino",
+    "ringo",
+    "labor",
+    "bipedal",
+    "tier 3"
+  ],
+  "id": "8b0d22b4c4eb0b365afb377c14786dd0",
+  "parent_corponation": "Ringo Corponation"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "5e92b3d0f7a1c4e68d023b7f41a9c051",
+  "name": "CHROMEWORKS Phantom Stealth Ocular Recorder",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "Phantom Stealth Ocular Recorder Suite",
+  "type": "cyberware",
+  "aliases": [
+    "Ghost Eyes",
+    "The Phantom",
+    "Dark Glass"
+  ],
+  "category": "ocular",
+  "body_location": "eyes",
+  "description": "The Phantom is Chromeworks' covert intelligence ocular — externally indistinguishable from a biological eye, with a hand-finished iris and sclera that pass casual inspection and most standard cyberware scanners below military grade. Internally it houses a continuous 8K recording array with 90-day local storage, a facial recognition engine drawing on a 400-million-face database with offline fallback, and an adaptive low-light amplifier that boosts ambient luminance 800-fold without the telltale pupil dilation of cheaper units. A passive RF emission scrambler in the housing degrades facial-recognition signals broadcast by surveillance infrastructure within a 3-meter radius of the wearer, effectively ghosting their identity from camera networks.\n\nThe Phantom is the professional tool of intelligence operatives, corporate spies, investigative journalists operating in hostile environments, and the well-resourced criminal class. Chromeworks sells it through a narrow licensed channel officially restricted to credentialed security contractors, but a thriving gray market exists. On the street it commands deep respect — and deep suspicion — because anyone wearing one is assumed to be recording everything.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 3-5",
+  "legality": "Restricted",
+  "installation_requirements": "Licensed cyberware surgeon; standard ocular replacement; post-installation scanner-masking calibration required at Chromeworks certified facility",
+  "rejection_risk": "Low — Chromeworks' premium biocompatible housing performs well; hand-finished iris matching reduces psychosomatic rejection response",
+  "maintenance": "Facial recognition database updates via encrypted quarterly sync; RF scrambler recalibration annually; recording array purge recommended monthly",
+  "specifications": "{\"recording_resolution\": \"8K continuous\", \"local_storage\": \"90 days at 8K\", \"facial_recognition\": \"400M-face database, offline fallback\", \"low_light_amplification\": \"800x ambient, no pupil dilation signature\", \"RF_scrambler_radius\": \"3 meters\", \"scanner_detection_resistance\": \"Defeats standard civilian and commercial-grade cyberware scanners\", \"external_appearance\": \"Biologically indistinguishable to naked eye and standard scan\", \"connectivity\": \"Encrypted dead-drop burst transmission only, no live uplink\"}",
+  "side_effects": [
+    "Persistent recording awareness syndrome — users become hyperconscious of everything they observe, leading to compulsive archiving behavior and social withdrawal",
+    "RF scrambler causes mild interference with personal devices within the 3-meter radius, occasionally disrupting the user's own communications",
+    "Facial recognition engine running continuously causes subtle cognitive fatigue as the brain integrates identity data overlays across all social interactions",
+    "Some users report dissociative episodes — experiencing their own life as footage rather than lived experience"
+  ],
+  "cultural_context": "In Meridian's intelligence economy, a confirmed Phantom installation changes how people interact with you — conversations become guarded, meetings become negotiations about what's being recorded. Chromeworks cultivates this mystique deliberately, marketing the Phantom through implication rather than advertisement. The RF scrambler feature has made it quietly beloved by civil liberties advocates and paranoid executives alike, for entirely opposite reasons.",
+  "known_users": [
+    "Corporate intelligence operatives and industrial spies",
+    "Investigative journalists and whistleblower-adjacent activists",
+    "High-tier criminal fixers and information brokers",
+    "Licensed private investigators working sensitive cases",
+    "Counter-surveillance specialists and security consultants"
+  ],
+  "story_hooks": [
+    "A Phantom unit's 90-day recording archive surfaces on the black market — the previous owner recorded something that got them killed, and now multiple factions want the footage",
+    "Chromeworks' encrypted dead-drop transmission protocol has been compromised: every Phantom unit in the city has been quietly uploading to an unknown third party for six months",
+    "A player is approached by someone who claims their Phantom's facial recognition keeps flagging a person who, according to every database, does not exist"
+  ],
+  "street_price": "Φ47,000",
+  "licensed_price": "Φ98,000",
+  "tags": [
+    "cyberware",
+    "ocular",
+    "stealth",
+    "surveillance",
+    "recording",
+    "facial-recognition",
+    "low-light",
+    "restricted",
+    "chromeworks"
+  ],
+  "parent_corponation": ""
+}

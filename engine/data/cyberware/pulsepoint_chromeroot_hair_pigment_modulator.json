@@ -1,0 +1,55 @@
+{
+  "id": "7d19e3a05c2bf847a630d1e8c4f92b01",
+  "name": "PulsePoint ChromeRoot Hair Pigment Modulator",
+  "brand_name": "PulsePoint",
+  "product_name": "ChromeRoot",
+  "type": "cyberware",
+  "aliases": [
+    "the root",
+    "rootwork",
+    "chromeroots",
+    "dye-never",
+    "the follicle"
+  ],
+  "category": "cosmetic",
+  "body_location": "subdermal scalp (primary array), optional secondary nodes at eyebrow and body hair sites",
+  "description": "The ChromeRoot system consists of a thin biocompatible mesh embedded just beneath the scalp's dermis, threaded with chemophotonic microsynthesizers that interface directly with active hair follicles. Each microsynthesizer deposits programmable melanin analogs — synthetic pigment compounds molecularly similar to eumelanin and pheomelanin — into the hair shaft as it grows, allowing the user to specify exact color, gradient, highlight pattern, and root behavior through a companion app or manual selector node implanted at the mastoid bone behind the ear. Color changes propagate from root to tip as hair grows, or can be applied to existing hair length via an accelerated shaft-permeation mode that saturates the full length within 72 hours. The system supports static colors, gradients across the scalp, pattern-based color mapping (geometric or organic shapes), and a 'reactive mode' that shifts pigment in response to temperature, ambient light, or user biometrics like heart rate.\n\nFor most of Meridian 88's working population, the ChromeRoot has made hair dye salons and box dye entirely obsolete. The appeal is straightforwardness: install once, change your color whenever you want, never touch a chemical again. Tier 1 and 2 households that previously spent significant recurring income on hair maintenance products now treat ChromeRoot as a one-time investment that pays for itself within a year. The system is particularly popular among people with natural hair textures that were previously difficult or damaging to chemically color. Older users appreciate the anti-gray function — a mode that simply maintains the user's last-set color indefinitely, masking natural depigmentation as it occurs. Teenagers and young adults cycle through dramatic colors weekly. The mastoid selector node has become a subtle social signal: a small flush-mounted button barely visible behind the ear that marks a ChromeRoot user to anyone who knows to look.",
+  "manufacturer": "PULSEPOINT WELLNESS SYSTEMS INC.",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or specialized hair-tech salon with licensed installation certification; approximately 90-minute procedure under local scalp anesthetic",
+  "rejection_risk": "Minimal",
+  "maintenance": "Pigment reservoir refill every 18-24 months at clinic or compatible salon; firmware update via companion app; mastoid node battery replacement every 4 years",
+  "specifications": "{\"follicle_coverage\": \"up to 120,000 active follicles (full scalp)\", \"color_gamut\": \"full visible spectrum including whites and metallics\", \"gradient_zones\": \"up to 8 independently programmable color zones\", \"shaft_permeation_mode\": \"full-length saturation in 48-72 hours\", \"reactive_mode_triggers\": \"temperature, UV exposure, heart rate, manual override\", \"control_interface\": \"mastoid selector node + PulsePoint ChromeRoot companion app\", \"pigment_reservoir_capacity\": \"18-24 months typical use\", \"optional_extensions\": \"eyebrow node, beard/body hair secondary arrays sold separately\"}",
+  "side_effects": [
+    "Mild scalp tingling during initial mesh integration, typically 1-2 weeks",
+    "First 'reactive mode' activation can produce a startling rapid color shift that some users find disorienting until habituated",
+    "Occasional pigment banding — faint striping visible in certain lighting — when color is changed frequently before full shaft permeation completes",
+    "Rare: follicle microsynthesizer drift in small patches, producing a 'missed spot' effect correctable by clinic recalibration"
+  ],
+  "cultural_context": "ChromeRoot and its competitors have completely restructured the hair care economy of Meridian 88. The closure of traditional dye salons over the 2170s and 2180s was mourned by some communities for whom salon visits were cultural rituals as much as cosmetic appointments — particularly in communities with deep traditions of communal hair care. A counter-cultural 'natural hair' movement has emerged in response, with some communities specifically rejecting ChromeRoot as a form of corporate intrusion into bodily tradition. Among the majority, however, the implant is simply mundane: something you get in your late teens, like a first phone or a transit pass. The mastoid node has become a low-key fashion accessory in its own right, with aftermarket decorative covers available in hundreds of styles. In corporate environments, ChromeRoot's 'professional palette' mode — which limits color output to natural-appearing tones — is sometimes listed in employee appearance guidelines, a practice that has generated ongoing labor disputes about employer control over employee bodies.",
+  "known_users": [
+    "Teenagers and young adults as a first major cosmetic implant",
+    "Middle-aged and older users for anti-gray maintenance",
+    "Performers and public-facing workers who change looks frequently",
+    "People with hair textures previously difficult to chemically color",
+    "Counter-culture communities who deliberately display extreme or unnatural colors as identity markers"
+  ],
+  "story_hooks": [
+    "A PulsePoint firmware update pushes a hidden 'employer compliance mode' that automatically shifts users' hair to natural tones during work hours — the update was authorized by a labor contract clause no one read, and a union organizer wants the players to help document and expose the practice",
+    "A witness to a corporate crime can be identified by a distinctive ChromeRoot reactive pattern visible in surveillance footage — but they've since changed their color, and the players need to find a clinic that retains pigment calibration logs",
+    "A beloved Shelf stylist who built community around traditional hair care rituals before ChromeRoot made her trade obsolete is now running an underground salon offering something ChromeRoot can't: human hands, conversation, and connection — but someone powerful wants the space she occupies"
+  ],
+  "street_price": "ΦΦΦ 180-350 (scalp array only); optional nodes 40-80 each",
+  "licensed_price": "ΦΦΦ 380-650 at certified clinics and licensed hair-tech salons",
+  "tags": [
+    "cyberware",
+    "cosmetic",
+    "lifestyle",
+    "hair",
+    "pigmentation",
+    "fashion",
+    "mass-market"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,37 @@
+{
+  "id": "a3f7c2e1b4d09856f1e2a3c4d5b6e7f8",
+  "name": "Hardsole No. 4 Work Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A blocky, ankle-high work boot with a sole recycled from conveyor belt rubber and an upper of stiff synth-leather that never quite softened. The toe cap is a salvaged steel plate held by rivets that don't quite match. Every pair looks slightly different because they're assembled from whatever was available that week.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "recycled conveyor-belt rubber",
+    "stiff synth-leather",
+    "salvaged steel"
+  ],
+  "functionality": "Basic steel toe protection. Waterproof for the first six months.",
+  "what_it_says": "You work a physical job and you can't afford to lose your feet. Practical to the point of gracelessness.",
+  "worn_by": [
+    "dock workers",
+    "salvage crew",
+    "Shelf laborers"
+  ],
+  "manufacturer": "Hardsole Collective",
+  "price_range": "Φ12 - Φ18",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair is found with a serial number scratched out — someone didn't want to be traced back to a work site.",
+    "The boot's sole contains embedded gravel from a specific district, useful for tracking a person's movements."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "work boot",
+    "salvage",
+    "steel toe"
+  ],
+  "parent_corponation": ""
+}

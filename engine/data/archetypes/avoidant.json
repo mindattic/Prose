@@ -1,0 +1,34 @@
+{
+  "id": "58b77e967fd2419747b3eceba8c60bb6",
+  "name": "Avoidant",
+  "type": "archetype",
+  "category": "relationship",
+  "description": "Withdraws from intimacy the moment it gets real, sabotaging closeness",
+  "behavioral_signature": "Perfect until things get serious, then suddenly busy or cold or gone",
+  "under_stress": "Ghosts entirely rather than face emotional depth",
+  "at_rest": "Comfortable in the early stages of connection, terrified of depth",
+  "will_always": [
+    "retreat when intimacy deepens"
+  ],
+  "will_never": [
+    "stay through the uncomfortable phase of real connection"
+  ],
+  "unless": [
+    "someone makes vulnerability feel safe enough to override the escape impulse"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Distant",
+      "threshold": 0.8,
+      "context": "intimacy avoidance"
+    }
+  ],
+  "opposite_of": [
+    "Devoted"
+  ],
+  "tags": [
+    "avoidance",
+    "intimacy",
+    "withdrawal"
+  ]
+}

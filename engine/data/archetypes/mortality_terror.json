@@ -1,0 +1,33 @@
+{
+  "id": "89479e0d0d55a463cf22c1ba79a1ddad",
+  "name": "Mortality Terror",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Every heartbeat is a countdown and they can hear it",
+  "behavioral_signature": "Makes decisions driven by the awareness that time is running out",
+  "under_stress": "Paralyzed by existential dread or manically productive",
+  "at_rest": "Lives with quiet urgency, wastes nothing",
+  "will_always": [
+    "weigh choices against the time they have left"
+  ],
+  "will_never": [
+    "waste time on things that don't matter"
+  ],
+  "unless": [
+    "wasting time IS what matters in that moment"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Death Accepter",
+      "threshold": 0.7,
+      "context": "death awareness"
+    }
+  ],
+  "opposite_of": [
+    "Reckless Denier"
+  ],
+  "tags": [
+    "existential",
+    "urgent"
+  ]
+}

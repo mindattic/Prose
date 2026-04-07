@@ -1,0 +1,33 @@
+{
+  "name": "Orvana Occasion Gown — Wing-Slit Standard",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "gown",
+  "manufacturer": "Orvana Atelier",
+  "description": "Orvana's formal gown line has long offered geneware-accommodation as standard rather than as an upsell, which is part of why the brand has maintained loyalty among modified clientele. The Wing-Slit Standard is a floor-length gown in a structured silk-analog with a built-in dorsal panel system — two reinforced slit channels running from mid-shoulder-blade to hip, framed in a contrasting bias-cut trim that makes the openings appear intentional rather than accommodating. For clients with non-functional decorative wings, the slits allow the geneware to present naturally without bunching or compressing the fabric. Tail accommodation is standard at the rear hem. The gown is available in eight colorways and accepts bioluminescent trim as an add-on service.\n\nThe price point sits at the upper end of Tier 3, making it aspirational for some and routine for others. It is a garment for people who have modified their bodies and refuse to treat that as a thing to hide or apologize for in formal spaces. The construction is clean and the silhouette reads as genuinely elegant.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ620",
+  "augment_compatible": false,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "Popular among TESSERA-adjacent social circles and geneware-positive communities. Wearing this gown in a conservative corporate environment can be a deliberate statement. In mixed-modification social spaces it is simply correct formal wear.",
+  "story_hooks": [
+    "A client orders the gown for a formal event and specifies wing-slit dimensions that don't match any standard TESSERA modification profile — whatever they had done, it wasn't done through official channels.",
+    "The gown becomes a minor flashpoint at a Tier 4 corporate gala when a guest's decorative wings are larger than the venue's fire-safety exemption allows. Security is called. The guest does not leave.",
+    "Someone commissions the gown for a synthetic being attending their first public formal event — the first time the synthetic has worn something chosen for them rather than assigned."
+  ],
+  "tags": [
+    "gown",
+    "formal",
+    "geneware-compatible",
+    "wing-accommodation",
+    "tail-vent",
+    "orvana",
+    "tier-3",
+    "tier-4",
+    "bioluminescent-option"
+  ],
+  "id": "fa37395567bd43d0bbf6c81687550023",
+  "parent_corponation": ""
+}

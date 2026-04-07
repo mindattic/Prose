@@ -1,0 +1,57 @@
+{
+  "id": "a3f7c2e1b809d456f1e2c3a4b5d6e7f8",
+  "name": "Arcturus Defense Solutions OmniStrike TAC-8 Overlay",
+  "brand_name": "Arcturus Defense Solutions",
+  "product_name": "OmniStrike TAC-8 Overlay",
+  "type": "cyberware",
+  "aliases": [
+    "TAC-8",
+    "OmniStrike",
+    "The Eight-Eye"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The OmniStrike TAC-8 is Arcturus Defense Solutions' flagship tactical overlay system, engineered for theater-level commanders and elite special operations units requiring simultaneous processing of up to eight distinct battlefield data streams. At its core lies a dual-lattice neurosynaptic co-processor bonded directly to the prefrontal and parietal cortices, enabling real-time fusion of drone telemetry, satellite imagery, squad biometrics, enemy electronic signatures, munitions tracking, comms intercepts, environmental sensor arrays, and allied unit positioning — all rendered as a coherent, layered AR battlefield gestalt without cognitive overload. The hardware is encased in a full cranial Faraday mesh rated to MIL-SPEC EMP-9 standards, surviving direct proximity detonation of Class-IV EMP grenades. Quantum-encrypted uplinks operating on the ADS-Q7 protocol provide tamper-proof communications with command infrastructure, Iowan Behemoth autonomous combat platforms, and theater AI coordination nodes.\n\nAmong the upper echelons of Meridian 88's military-industrial complex, the TAC-8 is spoken of in reverent, almost mythological terms — operators who carry it are called 'Eightfold' in field slang, a nod to the unit's eight-stream capacity and the near-prescient situational awareness it confers. The psychological weight of commanding Iowan Behemoths directly through neural impulse — feeling the thunderous feedback of a forty-ton war machine as an extension of one's own limbs — is described by veterans as both intoxicating and deeply alienating. Psychiatric discharge rates among long-term TAC-8 operators run at three times the baseline for augmented soldiers, a statistic Arcturus Defense Solutions disputes vigorously in its public filings.",
+  "manufacturer": "Meridian Neural Defense",
+  "tier_availability": "Tier 5",
+  "legality": "Military-Only",
+  "installation_requirements": "Level 5 neuro-surgical facility; minimum 72-hour calibration protocol; ADS-certified neurotechnician; full cranial Faraday mesh installation prior to unit bonding; psychological pre-screening mandatory per ADS MedOps Directive 7-C",
+  "rejection_risk": "Low (4%) with proper pre-surgical immunosuppression regimen; elevated to 18% if Faraday mesh is third-party non-ADS certified",
+  "maintenance": "Quarterly ADS-certified firmware patch via secure uplink; annual hardware inspection at licensed ADS depot; co-processor thermal paste replacement every 18 months",
+  "specifications": "{\"stream_capacity\": 8, \"co_processor\": \"Dual-Lattice Neurosynaptic ADS-NP2\", \"emp_rating\": \"MIL-SPEC EMP-9\", \"encryption\": \"ADS-Q7 Quantum Protocol\", \"automaton_control_slots\": 4, \"latency_ms\": 0.8, \"uplink_range_km\": 340, \"power_source\": \"Bio-thermic cell + redundant micro-capacitor\", \"weight_g\": 210, \"installation_time_hours\": 72, \"cortex_bond_sites\": [\"prefrontal\", \"parietal\"]}",
+  "side_effects": [
+    "Chronic multi-stream echo syndrome: residual phantom data overlays persist during off-duty periods, most commonly manifesting as translucent positional markers superimposed on civilian environments",
+    "Dissociative automaton bleed: extended Behemoth control sessions cause operators to briefly experience proprioceptive confusion between their biological body and the last controlled machine frame",
+    "Sleep architecture fragmentation: REM cycles interrupted by involuntary tactical processing loops, resulting in non-restorative sleep without pharmaceutical intervention",
+    "Emotional blunting in high-data environments: the co-processor's cognitive load-balancing suppresses limbic activity during eight-stream operation, with partial persistence post-session in long-term users"
+  ],
+  "cultural_context": "The OmniStrike TAC-8 has become a cultural signifier of absolute military authority within Meridian 88's armed forces and the private military contractor ecosystem. Soldiers who bear it are rarely seen in civilian spaces — the unit's bulk and the subtle cranial scarring of its installation are immediately recognizable, and in some districts inspire a mixture of awe and unease. Anti-augmentation activist groups have specifically named the TAC-8 in their literature as emblematic of the 'machine-soldier convergence,' arguing that direct neural control of autonomous killing platforms like Iowan Behemoths erases the last meaningful ethical boundary between human combatant and weapon system.",
+  "known_users": [
+    "Meridian 88 Strategic Command officers",
+    "ADS-contracted special operations units",
+    "Iowan Behemoth Theater Control specialists",
+    "Select Tessera Corponation black-site security directors"
+  ],
+  "story_hooks": [
+    "A decommissioned TAC-8 unit surfaces on the black market still carrying encrypted ghost-data from its previous operator's final mission — a mission officially classified as never having occurred. Someone very powerful wants it back.",
+    "An Eightfold operator begins experiencing tactical overlays that do not correspond to any known battlefield or data source — the imagery is of locations that will burn in three days, and she cannot determine if her implant is malfunctioning or receiving a signal from something that shouldn't exist.",
+    "A Tessera Corponation executive is found dead, their personal security TAC-8 operator standing motionless over the body in a dissociative state — the operator's implant logs show the Behemoth they were controlling remotely was given orders from a second, unregistered neural signature."
+  ],
+  "street_price": "Φ180,000",
+  "licensed_price": "Φ280,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "military",
+    "tier5",
+    "tactical-overlay",
+    "multi-stream",
+    "emp-hardened",
+    "quantum-encrypted",
+    "automaton-control",
+    "arcturus",
+    "elite",
+    "military_elite"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

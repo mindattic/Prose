@@ -1,0 +1,45 @@
+{
+  "id": "2d7a5f1c8e04b93d6f2a7c5e1b8d4092",
+  "name": "Nullform Adaptive Stealth Cloak",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "A floor-length cloak in matte black that does not stay matte black. The outer shell is composed of layered metamaterial panels — flexible photonic cells capable of sampling ambient light and replicating it across the garment's surface with a half-second latency. In motion, the effect is smearing and slightly wrong, a shimmer that the eye slides off rather than focuses on. Standing still in low light, it is genuinely difficult to see. The interior is raw charcoal jersey against the skin, surprisingly soft, with a deep hood lined in the same metamaterial. The weight is considerable — full active operation draws from a slim battery panel sewn into the back yoke, rated for six hours continuous.\n\nNullform is a Tier 5 label that operates more like a weapons contractor than a fashion house — no retail presence, acquisition by referral only, manufactured in a facility whose location is not public knowledge. Wearing one in open spaces is technically legal but draws immediate attention from corporate security and law enforcement. The people who own these are not wearing them to clubs. They are wearing them to places they are not supposed to be, and they have the resources to be there anyway.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "metamaterial photonic cell panels",
+    "flexible polymer substrate",
+    "charcoal jersey interior",
+    "integrated battery panel",
+    "optical-grade bonded seams"
+  ],
+  "functionality": "Active light-bending adaptive camouflage — samples ambient light and replicates it across surface panels. Effective in low light and shadow conditions. Six-hour battery life. Partial effectiveness in motion, near-full effectiveness when stationary.",
+  "what_it_says": "You exist in spaces where being seen is a choice, not a given.",
+  "worn_by": [
+    "corporate operatives",
+    "high-end fixers",
+    "Spire security contractors",
+    "intelligence assets",
+    "extremely wealthy collectors"
+  ],
+  "manufacturer": "Nullform",
+  "price_range": "Φ14500",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Nullform cloak surfaces in a Tier 2 pawnshop — the owner has no idea what it is, priced it at Φ200, and the person who brought it in hasn't been seen since",
+    "The metamaterial panels can be individually removed and repurposed — someone has been stripping them from stolen cloaks and selling the cells to a Shelf engineer building something much larger",
+    "Nullform has issued a recall notice for serial numbers in a specific range, citing a 'thermal cascade failure risk' — but the people who own those cloaks are not the kind of people who respond to recall notices"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "tier 5",
+    "stealth cloak",
+    "active camo",
+    "metamaterial",
+    "rare",
+    "tech-enhanced",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

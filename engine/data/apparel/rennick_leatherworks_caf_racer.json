@@ -1,0 +1,45 @@
+{
+  "id": "c9e1f5a3b7d40628c9e1f5a3b7d40628",
+  "name": "Rennick Leatherworks Café Racer",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "Rennick Leatherworks is a one-person operation — or close to it — running out of a workshop in the mid-Tier 2 district, making motorcycle and riding jackets from genuine and synthetic leather in the old tradition. The Café Racer is a fitted, hip-length moto jacket with a snap-off collar, asymmetric zip front, and two hand-slash pockets. The leather is full-grain bovine hide treated with a proprietary wax blend that makes it water-resistant and gives it a deep, dark sheen. The lining is quilted satin-analog in burgundy or black.\n\nThis is not a fashion leather jacket. It has reinforced shoulder and elbow panels for abrasion resistance and a CE-rated armor insert system in the shoulders and elbows (back armor sold separately). It is made to be ridden in and it shows — the cut is slightly forward-leaning, the collar high enough to protect the neck. People who actually ride motorcycles in Meridian 88's traffic corridors wear it. People who do not ride also wear it, which Rennick finds mildly annoying.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "full-grain bovine hide",
+    "wax treatment",
+    "CE-rated armor inserts (shoulders and elbows)",
+    "quilted satin-analog lining",
+    "brass hardware"
+  ],
+  "functionality": "CE-rated impact armor at shoulders and elbows; armor insert pockets accept back protector upgrade. No electronic components.",
+  "what_it_says": "You ride or you wish you did. Either way you understand that protection and style are not mutually exclusive and you found someone who agreed.",
+  "worn_by": [
+    "motorcycle riders",
+    "courier cyclists",
+    "Tier 2-3 crossover individuals",
+    "moto-culture adjacent people",
+    "anyone who can justify the price"
+  ],
+  "manufacturer": "Rennick Leatherworks",
+  "price_range": "Φ230",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Rennick Leatherworks keeps a record of every jacket made with a discreet serial number — a jacket found at a crime scene could be traced back to its original buyer",
+    "A Rennick jacket in near-perfect condition shows up in a pawn terminal; the previous owner was a courier who ran packages for someone very dangerous and then stopped running anything",
+    "The CE armor inserts in a specific jacket have been swapped for something non-standard — lighter, thinner, and rated for something other than abrasion"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "leather jacket",
+    "motorcycle",
+    "moto",
+    "armor",
+    "independent label",
+    "genuine leather"
+  ],
+  "parent_corponation": ""
+}

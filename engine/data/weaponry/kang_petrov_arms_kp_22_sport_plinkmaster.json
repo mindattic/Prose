@@ -1,0 +1,47 @@
+{
+  "id": "e50b23a719d16d693c043518fa163c26",
+  "name": "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+  "type": "weapon",
+  "aliases": [
+    "Plinkmaster",
+    "KP-22S",
+    "Sport"
+  ],
+  "category": "pistol",
+  "description": "The Kang-Petrov KP-22 Sport is a semi-automatic pistol chambered in .22 LR, designed for recreational target shooting with the ergonomics and controls of the full-size KP duty platform. The weapon is mechanically identical in layout to the KP-19 — same safety position, same magazine release, same slide lock — allowing owners to practice fundamentals on cheap .22 ammunition before transitioning to their carry weapon.\n\nThe KP-22 Sport features an extended five-inch barrel with a bull profile for maximum accuracy, adjustable target sights, and a match trigger tuned to break at 1.2kg. Kang-Petrov markets it as a 'training multiplier' — the idea that shooters who practice weekly with the Sport and shoot their duty weapon monthly will outperform shooters who practice monthly with their duty weapon exclusively.\n\nThe weapon has become standard equipment at security contractor training facilities, where recruits fire thousands of rounds through KP-22 Sports before ever touching their issued duty weapons. The cost savings are substantial — .22 LR ammunition costs a fraction of 9mm or .45 ACP — and the training transfer is measurable. Kang-Petrov's research division publishes annual data showing accuracy improvements in duty-weapon qualification scores for shooters who train primarily on the Sport.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "Training-analog ergonomics",
+    "Bull barrel",
+    "Match trigger",
+    "Adjustable target sights"
+  ],
+  "specifications": "caliber: .22 LR\neffective_range: 35 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 10 rounds\nweight: 0.58 kg",
+  "tactical_use": "No tactical application — this is a dedicated training and recreational weapon. Its value lies in providing a cost-effective platform for building and maintaining marksmanship fundamentals that transfer to duty-caliber weapons. The match trigger and accurate barrel reward proper technique and punish bad habits.",
+  "cultural_context": "The Plinkmaster is the unsung hero of Meridian 88's security industry. Thousands of security professionals maintain their edge by spending weekends at the range with a KP-22 Sport. In recreational shooting circles, it's the entry point for a lifetime hobby. Nobody brags about owning one, but almost everyone who shoots seriously has one.",
+  "known_users": [
+    "Security contractor training facilities",
+    "Recreational shooters",
+    "Shooting instructors",
+    "Marksmanship competition beginners"
+  ],
+  "story_hooks": [
+    "A shooting instructor notices that one of their students is placing every round through the same hole at twenty-five meters — with a training pistol. The student's background doesn't explain that level of skill.",
+    "Kang-Petrov's training data is hacked and leaked, revealing the shooting proficiency scores of thousands of security contractors — information that reveals who the best and worst shooters in every security firm in Meridian 88 are."
+  ],
+  "ammunition_type": [
+    ".22 LR"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "training",
+    "recreational",
+    "sport",
+    "accurate",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

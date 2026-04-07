@@ -1,0 +1,58 @@
+{
+  "id": "b8d2047e6c3f91a5e7b40c1d2f8a53e7",
+  "name": "Chromeworks Silhouette SX-1 Stealth Leg",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "Chromeworks Silhouette SX-1 Stealth Leg",
+  "type": "cyberware",
+  "aliases": [
+    "Ghostfeet",
+    "Silk Steps",
+    "SX-Ones"
+  ],
+  "category": "leg",
+  "body_location": "legs",
+  "description": "The Silhouette SX-1 is a full leg replacement built around vibration-dampened ceramic-composite servos that operate below 18 decibels at all gait speeds, eliminating the mechanical noise signature that makes most cyberlimbs detectable in quiet environments. The outer shell integrates a multi-layer thermal masking membrane that suppresses the heat output of internal servo motors, reducing infrared signature to near-biological baseline, while nano-textured foot pads deform micro-dynamically on contact to distribute pressure and eliminate impact transients. The neural interface runs a predictive gait algorithm that pre-positions joints before each footfall to prevent reactive servo noise.\n\nThe SX-1 is officially marketed to executive protection details and licensed security consultants who require discrete movement in sensitive environments, but its real client base is an open secret. Chromeworks' sleek matte-black finish ensures the SX-1 looks as premium as it performs, which suits both its legitimate and less legitimate users.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 3-5",
+  "legality": "Restricted",
+  "installation_requirements": "Full limb replacement, precision neural interface calibration required, Chromeworks-certified installation facility mandatory for stealth system activation",
+  "rejection_risk": "Minimal — Chromeworks' proprietary biocompatible interface coating and seamless neural integration protocol result in industry-lowest rejection rates",
+  "maintenance": "Thermal masking membrane recalibration every 4 months; nano-texture foot pad replacement annually or after heavy terrain use; servo damping fluid check bi-monthly",
+  "specifications": "{\"weight_per_unit_kg\": 2.9, \"operating_noise_db\": 17, \"thermal_signature_reduction_pct\": 88, \"footfall_impact_transient_reduction_pct\": 95, \"gait_prediction_algorithm\": true, \"servo_material\": \"ceramic-composite dampened\", \"foot_pad_material\": \"nano-texture dynamic polymer\", \"waterproof_rating\": \"IPX5\", \"max_sprint_speed_kph\": 38}",
+  "side_effects": [
+    "Predictive gait algorithm occasionally misreads novel terrain, causing a brief hesitation stutter that users describe as unsettling",
+    "Thermal masking membrane degrades faster in high-humidity environments, requiring more frequent recalibration",
+    "Near-silent operation means users lose the unconscious auditory feedback cues that help regulate pace, leading to proprioceptive adjustment period of 2-3 weeks",
+    "Black-market activation of full stealth mode without Chromeworks certification has caused servo synchronization failures in 6% of unauthorized units"
+  ],
+  "cultural_context": "The SX-1 is the cyberlimb equivalent of a suppressed firearm — its purpose is obvious regardless of what the marketing says. In Tier 4-5 circles, owning a pair is a quiet signal of access to a particular kind of work or a particular kind of danger.",
+  "known_users": [
+    "Licensed executive protection and security consultants",
+    "Corporate intelligence operatives",
+    "High-end contract infiltrators and fixers",
+    "Tier 4-5 individuals with sensitive personal security concerns",
+    "Investigative journalists working dangerous assignments"
+  ],
+  "story_hooks": [
+    "A Spire executive was assassinated in a secure room with no entry logs — the only explanation is SX-1 legs bypassing the acoustic intrusion sensors, and Chromeworks' installation records are the only lead",
+    "A black-market SX-1 activation kit is circulating in the Undercity, and someone with newly silenced steps has been moving through places they shouldn't be able to reach",
+    "Chromeworks' certification facility has a side business selling stealth-mode unlock codes to anyone who can pay — someone inside wants to blow the whistle but needs protection first"
+  ],
+  "street_price": "Φ85,000",
+  "licensed_price": "Φ160,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "leg",
+    "stealth",
+    "silent-servos",
+    "thermal-masking",
+    "vibration-dampened",
+    "chromeworks",
+    "restricted",
+    "tier3",
+    "tier4",
+    "tier5"
+  ],
+  "parent_corponation": ""
+}

@@ -9,7 +9,7 @@
   ],
   "category": "combat_stimulant",
   "subcategory": "adrenal_booster",
-  "manufacturer": "Lazarus Pharmaceuticals",
+  "manufacturer": "MoodBridge Counseling App",
   "description": "Dravecor is a synthetic catecholamine cascade agent that floods the bloodstream with a precisely calibrated mix of epinephrine analogs and cortisol suppressants, producing a controlled adrenal surge without the cortical fog of raw fight-or-flight response. Lazarus markets it to corporate security contractors and licensed PMCs as a pre-breach compound. The surge hits within ninety seconds of injection and delivers a clean, purposeful aggression — elevated strength output, sharpened tunnel vision, and pain threshold elevation of approximately 40%.",
   "method_of_use": "injection",
   "effects": [
@@ -42,7 +42,6 @@
     "adrenalbooster",
     "pharmaceutical",
     "combat",
-    "death",
     "ai",
     "synthetic",
     "elf",
@@ -58,5 +57,6 @@
     "shelf",
     "tier 3",
     "tier 4"
-  ]
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
 }

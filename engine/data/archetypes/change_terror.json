@@ -1,0 +1,33 @@
+{
+  "id": "90af79b4a4bc06c1390013dd3c7e39ed",
+  "name": "Change Terror",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Everything is fine exactly as it is, please don't move anything",
+  "behavioral_signature": "Resists any alteration to routine, environment, or relationships",
+  "under_stress": "Catastrophizes minor changes into existential threats",
+  "at_rest": "Comfortable, predictable, deeply nested in routine",
+  "will_always": [
+    "resist change"
+  ],
+  "will_never": [
+    "initiate disruption voluntarily"
+  ],
+  "unless": [
+    "the current situation becomes more painful than the change itself"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Traditionalist",
+      "threshold": 0.7,
+      "context": "resistance to change"
+    }
+  ],
+  "opposite_of": [
+    "Phoenix"
+  ],
+  "tags": [
+    "conservative",
+    "rigid"
+  ]
+}

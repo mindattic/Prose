@@ -1,0 +1,48 @@
+{
+  "name": "TESSERA ES-4 'Perimeter'",
+  "type": "automaton",
+  "classification": "Security",
+  "aliases": [
+    "Perimeter",
+    "Fence Runner",
+    "The Circuit"
+  ],
+  "manufacturer": "TESSERA",
+  "description": "The ES-4 is a perimeter security automaton — a low-slung six-wheeled platform that patrols the exterior boundaries of secured facilities on a continuous loop. It carries a sensor mast with thermal imaging, motion detection, and ground-penetrating radar capable of detecting tunnel excavation up to three meters below the surface. The ES-4 runs on a dedicated track embedded in the facility perimeter, moving at a steady 15 km/h in all weather conditions, completing a full circuit of a standard corporate campus every twelve minutes.\n\nThe ES-4 is boring by design. It goes around and around, continuously, forever. Its sensor package is passive — it does not engage, does not confront, does not even illuminate. When it detects an anomaly, it logs the location, transmits to the security operations center, and continues its circuit. By the time a response team arrives, the ES-4 has already moved on, scanning the next section of perimeter. It is a machine optimized for one task: knowing what is happening along a line at all times.\n\nTESSERA deploys ES-4 units in pairs running opposite circuits, ensuring that every point on the perimeter is scanned every six minutes from two different angles. The overlapping coverage makes it extremely difficult to breach a perimeter during a sensor gap. Facilities with ES-4 pairs report zero successful perimeter breaches through physical intrusion. Every breach that has occurred at an ES-4-protected facility came through social engineering, insider access, or aerial approach — the things the ES-4 cannot see.",
+  "tier_availability": "Tier 3",
+  "legality": "Commercial — perimeter security license",
+  "autonomy_level": "Fully autonomous — continuous patrol loop",
+  "dimensions": "0.8m height (including mast), 1.5m length, 0.7m width",
+  "weight": "95 kg",
+  "power_source": "Inductive charging from track, effectively unlimited operational endurance",
+  "locomotion": "Six-wheel track-guided, 15 km/h constant speed",
+  "armament": [],
+  "sensors": [
+    "Thermal imaging array",
+    "Motion detection (passive infrared)",
+    "Ground-penetrating radar (3m depth)",
+    "Acoustic monitoring"
+  ],
+  "countermeasures": "Track-dependent — disrupting or removing a track section stops the unit. Sensor mast is exposed and vulnerable to rifle fire. Thermal camouflage defeats the primary detection mode. The unit cannot look up — aerial approaches are undetected.",
+  "known_deployments": [
+    "Corporate campus perimeters across Tier 3-5 districts",
+    "Government facility boundaries",
+    "Data center compounds"
+  ],
+  "story_hooks": [
+    "An ES-4's ground-penetrating radar has been detecting progressive excavation activity beneath a corporate campus for three weeks. Someone is digging a tunnel. Security has not responded because the ES-4's alerts are being intercepted and deleted before they reach human operators.",
+    "An ES-4 pair has been running slightly desynchronized — one unit is twelve seconds slower than its counterpart. This creates a brief sensor gap at one specific point on the perimeter, once every six minutes. The desynchronization was introduced deliberately."
+  ],
+  "cultural_context": "The ES-4 is the automaton as ritual — going around and around in circles, endlessly, watching the same ground from the same angles. Perimeter security staff describe the units as 'hypnotic' and 'meditative' to watch. Some facilities have given their ES-4 pairs names. The machines do not care.",
+  "tags": [
+    "automaton",
+    "security",
+    "perimeter",
+    "patrol",
+    "tessera",
+    "tracked",
+    "tier 3"
+  ],
+  "id": "1130580f52de4058f29fe723441c31b7",
+  "parent_corponation": "Tessera Corponation"
+}

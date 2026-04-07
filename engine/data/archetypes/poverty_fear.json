@@ -1,0 +1,33 @@
+{
+  "id": "e5248f94ac17c826dbae31723e46c2d5",
+  "name": "Poverty Fear",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Remembers hunger well enough to taste it every time they spend",
+  "behavioral_signature": "Hoards resources compulsively, even when objectively secure",
+  "under_stress": "Becomes miserly to the point of self-harm",
+  "at_rest": "Careful with money, tracks every expenditure, saves obsessively",
+  "will_always": [
+    "keep reserves for the worst case"
+  ],
+  "will_never": [
+    "spend freely even when they can afford it"
+  ],
+  "unless": [
+    "someone they love is in desperate need right now"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Scarcity Mind",
+      "threshold": 0.9,
+      "context": "resource anxiety"
+    }
+  ],
+  "opposite_of": [
+    "Generous Fool"
+  ],
+  "tags": [
+    "hoarding",
+    "anxious"
+  ]
+}

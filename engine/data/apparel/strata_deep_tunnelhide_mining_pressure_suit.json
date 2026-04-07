@@ -1,0 +1,48 @@
+{
+  "id": "2e8b5f3c1a09d4760e2b5f3c1a09d476",
+  "name": "Strata Deep TunnelHide Mining Pressure Suit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A hard-use tunneling and deep-mining suit designed for the pressurized subterranean extraction zones beneath M88. Outer shell is abrasion-resistant cordura-steel weave in matte charcoal, reinforced with ABS polymer impact panels at knees, elbows, and shoulders — panels are frequently cracked and field-replaced with scrap. A built-in exoframe harness runs along the spine and hips, providing load-bearing support for heavy equipment carry without a separate exoskeleton purchase.\n\nThe suit's hood integrates a sealed face shield with dust filtration and low-light optical enhancement. Collar carries a pressure equalization valve for rapid descent environments. Most miners mark their suits with paint or carved notches — personal identification in low-light tunnels where faces are hidden.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "cordura-steel woven outer shell",
+    "ABS polymer impact panels",
+    "integrated spine-hip exoframe harness",
+    "dust filtration face shield",
+    "pressure equalization valve collar",
+    "low-light optical enhancement lens"
+  ],
+  "functionality": "Impact and abrasion protection for tunnel environments. Spine-hip exoframe offloads up to 40kg of carried equipment weight. Pressure equalization valve rated for rapid descent to 400m. Low-light optical enhancement integrated into face shield. Spinal channel accommodates aug spinal rigs. Reinforced knee panels extend to digitigrade leg configurations.",
+  "what_it_says": "You go underground and you come back up — you've made peace with the difference between those two things.",
+  "worn_by": [
+    "deep-shaft mining crews",
+    "illegal tunnel salvagers",
+    "subterranean infrastructure workers",
+    "Shelf tunnel-market operators who need protection"
+  ],
+  "manufacturer": "Strata Deep Industrial (Tier 2 corponation); knockoff panels from Shelf fabricators",
+  "price_range": "Φ 520–Φ 1,100",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A miner's suit has 47 carved notches on the left forearm — one for each shift at a depth that officially doesn't exist on any city map.",
+    "A tunnel collapse survivor was found three weeks later, suit still sealed — the pressure valve had kept them alive in a pocket, but the company had already filed the death paperwork.",
+    "Someone is running a side business selling 'certified' Strata Deep suits with forged inspection stamps; the exoframe harness bolts are the wrong alloy and will shear under load."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "mining",
+    "tunneling",
+    "underground",
+    "industrial",
+    "exoframe",
+    "work-gear",
+    "shelf",
+    "tier1",
+    "tier2",
+    "gene-compatible"
+  ],
+  "parent_corponation": ""
+}

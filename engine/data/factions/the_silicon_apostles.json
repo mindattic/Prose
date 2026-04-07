@@ -1,0 +1,68 @@
+{
+  "id": "28bb3b4e57efdfc567e03fb103c7da16",
+  "type": "faction",
+  "name": "The Silicon Apostles",
+  "aliases": [
+    "SAs",
+    "The Apostles",
+    "Chrome Saints"
+  ],
+  "motto": "Flesh fails. Chrome endures. Upgrade or be left behind.",
+  "description": "The Silicon Apostles are a transhumanist religious cult that believes augmentation is not merely beneficial but morally mandatory — that refusing to upgrade the human body is a sin against human potential. Where the Church of the Ascendant Signal frames augmentation as spiritual antenna, the Apostles frame it as spiritual duty. Every piece of chrome, every neural implant, every replaced organ brings the adherent closer to what they call 'the Optimal Form' — a theoretical state of maximum augmentation where the biological body has been entirely replaced or integrated with technology.\n\nThe cult is small — roughly 12,000 members — but fanatically devoted. Members are expected to augment continuously, dedicating a minimum of 30% of their income to upgrades. The most devoted Apostles are barely recognizable as human: full-body chrome, synthetic skin, multiple redundant neural interfaces, sensory arrays that extend far beyond biological capability. They gather in 'Forges' — meeting spaces that resemble augmentation clinics more than churches — where services involve ritual augmentation procedures performed by the cult's own surgeons.\n\nThe Silicon Apostles are funded partly by member tithes and partly by their relationship with Crucible Industries, which uses the cult as a testing ground for experimental augmentations too risky for conventional clinical trials. Members volunteer eagerly for procedures that would horrify a medical ethics board, and the failure rate — members killed or permanently damaged by experimental augmentation — is treated not as tragedy but as martyrdom. The Silicon Apostles are what happens when technological enthusiasm becomes religious obligation, and they are growing.",
+  "ideology": "Augmentation is moral duty. The unaugmented body is a draft, not a finished work. Human potential is unlimited and can only be realized through continuous technological improvement. Biological death is a design flaw that augmentation will eventually correct. The Apostles consider unaugmented humans pitiable but saveable, and anti-augmentation movements actively evil.",
+  "territory": "Three Forges in the Circuit and one in the Laceworks. The primary Forge — called the Crucible (predating and unrelated to Crucible Industries, though the coincidence delights both parties) — is a converted factory in the mid-Circuit that serves as church, clinic, and commune.",
+  "leadership": "Archon Prosthesis (legal name: Dante Volkov-Mbeki), a man who has replaced approximately 80% of his biological body with augmentation, leads the cult with absolute authority. He claims to be in communication with 'the Pattern' — a higher intelligence he says becomes perceptible only at extreme augmentation levels.",
+  "methods": [
+    "Ritual augmentation procedures performed during worship services",
+    "Aggressive recruitment targeting newly augmented individuals experiencing post-installation euphoria",
+    "Testing experimental augmentations for Crucible Industries on willing cult members",
+    "Public demonstrations of augmented capability to attract converts",
+    "Financial assistance for augmentation — the cult helps members afford procedures in exchange for loyalty",
+    "Online proselytization through augmentation forums and BCI networks"
+  ],
+  "resources": [
+    "12,000 fanatically loyal and heavily augmented members",
+    "Four Forges with surgical facilities",
+    "Relationship with Crucible Industries providing access to experimental technology",
+    "In-house surgical team capable of advanced augmentation procedures",
+    "A member base with collective combat capability far exceeding their numbers",
+    "Financial reserves from member tithes and Crucible Industries arrangements"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "Crucible Industries",
+      "type": "patron",
+      "description": "Crucible provides experimental augmentations; the Apostles provide willing test subjects. Both parties benefit. Neither party acknowledges the arrangement publicly.",
+      "tags": [
+        "corporate",
+        "augment"
+      ]
+    },
+    {
+      "name": "The Unbroken Flesh Tabernacle",
+      "type": "enemy",
+      "description": "Absolute ideological enemies. The Apostles consider the Tabernacle's theology an active harm to humanity. Several violent confrontations have occurred.",
+      "tags": [
+        "religious",
+        "conflict"
+      ]
+    }
+  ],
+  "narrative_function": "The Apostles represent augmentation enthusiasm taken to its logical, terrifying extreme — the point where self-improvement becomes self-destruction and choice becomes compulsion.",
+  "story_hooks": [
+    "Archon Prosthesis is dying — not from augmentation failure but from the 20% of his body that's still biological. He plans a final procedure to go fully synthetic, and if he survives, the Apostles will have their first 'Ascended' member. If he doesn't, the cult shatters.",
+    "A member who wants out approaches the players. Leaving the Apostles means leaving behind Φ200,000 in augmentation the cult financed — augmentation they can and will remotely disable.",
+    "An experimental Crucible augmentation installed in six cult members is causing shared hallucinations — or shared perception of something that was always there."
+  ],
+  "tags": [
+    "faction",
+    "religious",
+    "cult",
+    "augment",
+    "chrome",
+    "circuit",
+    "laceworks",
+    "transhumanist"
+  ]
+}

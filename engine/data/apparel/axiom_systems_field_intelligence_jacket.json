@@ -1,0 +1,41 @@
+{
+  "id": "25ab1485f7090a263480b1596007090a",
+  "name": "Axiom Systems Field Intelligence Jacket",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A slim-cut technical jacket in charcoal or dark slate that reads, at a glance, like an expensive casual blazer. The Axiom Field Intelligence is built for people whose work requires them to look presentable while carrying gear — it has eleven discrete interior pockets of varying sizes, a hidden pass-through slot in the right chest for tablet or document retrieval, and a concealed hood that tucks into the collar. The exterior has four standard pockets. The fabric is a matte technical weave that resists IR imaging, rendering the wearer's thermal signature slightly diffuse.\n\nAxiom Systems is a Tier 4 corporate intelligence and security consultancy that manufactures a small line of purpose-built garments for internal use and licensed external sale. The jacket is available to vetted buyers with appropriate clearance verification. It's worn by corporate investigators, high-end private security liaisons, and the kind of Tier 4 professional whose job description is deliberately vague.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "matte IR-diffuse technical weave",
+    "reinforced lining",
+    "carbon-fiber zipper pulls"
+  ],
+  "functionality": "Passive IR signature diffusion reduces thermal imaging clarity. Eleven concealed interior pockets. No active electronics.",
+  "what_it_says": "Your job requires preparation for contingencies you're not going to discuss.",
+  "worn_by": [
+    "corporate investigators",
+    "intelligence consultants",
+    "high-end private security liaisons",
+    "vetted Tier 4 operatives"
+  ],
+  "manufacturer": "Axiom Systems",
+  "price_range": "Φ650",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An Axiom Field Intelligence jacket has turned up on a body in the Shelf — the jacket's purchase records are classified, and three different parties want to know how it got there.",
+    "The IR-diffuse weave is based on technology that was stolen from a university research lab a decade ago; the original researchers have recently hired legal counsel.",
+    "A corporate intelligence analyst has been passing documents through the jacket's hidden slot at a regular lunch spot, and someone just started sitting at the next table every time."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 4",
+    "technical",
+    "intelligence",
+    "IR-diffuse",
+    "concealed pockets",
+    "corporate security"
+  ],
+  "parent_corponation": ""
+}

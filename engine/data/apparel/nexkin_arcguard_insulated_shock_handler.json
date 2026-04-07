@@ -1,0 +1,48 @@
+{
+  "id": "7c4e1a9f2d6b0853e7c4a1f9d2b6e305",
+  "name": "Nexkin ArcGuard Insulated Shock Handler",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Rubberized dielectric outer shell over a compressed aerogel mid-layer and a moisture-wicking interior mesh. Rated to 40kV dry contact — the standard for live-line electrical maintenance in M88's aging infrastructure grid. The knuckle and palm zones are double-layered; fingertips are single-layer for better feel on terminal contacts. Color is safety yellow with black palm panels, mandated by Tier 2 transit and utility standards.\n\nA wide gauntlet cuff seals over standard work sleeves with a velcro-and-snap system. Versions with an extended chrome-flange channel are available through Nexkin's augment-worker program at a modest surcharge.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "dielectric rubber outer shell",
+    "compressed aerogel mid-layer",
+    "moisture-wicking interior mesh",
+    "double-layer knuckle and palm reinforcement",
+    "velcro-and-snap gauntlet cuff"
+  ],
+  "functionality": "Rated 40kV dry contact insulation; aerogel mid-layer provides thermal buffer against arc flash; double-palm reinforcement for grip durability; gauntlet cuff seals over work sleeves; chrome-flange channel variant available for augmented workers.",
+  "what_it_says": "You touch the grid with your hands and you've made your peace with that.",
+  "worn_by": [
+    "transit electrical maintenance workers",
+    "infrastructure repair crews",
+    "utility line technicians",
+    "GridPatch contractors",
+    "augmented workers on live-line detail"
+  ],
+  "manufacturer": "Nexkin Industrial",
+  "price_range": "Φ55–Φ120",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A worker survives a 60kV surge that should have killed them — the gloves were rated 40kV, and someone needs to know why they held.",
+    "A pair is found in a transit tunnel where there's no scheduled maintenance work, with scorch marks on the palm that don't match any known grid fault location.",
+    "The chrome-flange channel variant is being quietly sold on the Shelf without the standard rating certification — someone is cutting costs on the dielectric layer."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "work gloves",
+    "shock-resistant",
+    "insulated",
+    "electrical",
+    "industrial",
+    "aug-compatible",
+    "tier-2",
+    "tier-3",
+    "nexkin",
+    "safety"
+  ],
+  "parent_corponation": ""
+}

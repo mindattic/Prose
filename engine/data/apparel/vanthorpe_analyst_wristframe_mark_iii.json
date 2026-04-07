@@ -1,0 +1,44 @@
+{
+  "id": "7b4e83c0f1265d9a3e78b0d4c52a1f36",
+  "name": "Vanthorpe Analyst Wristframe Mark III",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A slim wrist device worn by Tier 3 desk workers who want something smarter than the standard-issue Helix Corp band but can't justify Tier 4 hardware. Brushed titanium-analog casing in warm gunmetal, paired with a modular strap in dark oxblood synthetic leather. The face is a flush micro-OLED display that reads analog-style by default — switchable to full data overlay.\n\nPort access sits at the inner wrist edge, compatible with standard BCI handshake protocols. The device runs calendar, biometric, transit credentials, and ambient comms on a single charge lasting 72 hours. Understated enough to pass in Tier 3 without triggering status anxiety.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "titanium-analog alloy casing",
+    "micro-OLED display",
+    "synthetic oxblood leather strap",
+    "BCI-handshake port hardware",
+    "tempered scratch-resist glass"
+  ],
+  "functionality": "Runs calendar, biometric monitoring, transit credentials, ambient comms, and BCI handshake. 72-hour battery. Modular strap system allows quick swap. Analog display mode reduces social friction in mixed-tier environments.",
+  "what_it_says": "You've invested in capability without broadcasting ambition — you're smarter than your floor suggests.",
+  "worn_by": [
+    "mid-level office workers",
+    "small business owners",
+    "junior analysts",
+    "clinic administrators",
+    "Tier 3 professionals navigating upward"
+  ],
+  "manufacturer": "Vanthorpe Systems (corponation sub-brand)",
+  "price_range": "Φ310–Φ480",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The Mark III has an undocumented passive data-logging feature that Vanthorpe uses for behavioral profiling — a whistleblower just went public.",
+    "A wearer's biometric logs show they were somewhere they claimed not to be — someone is using that data as leverage.",
+    "A street tech offers to unlock the device's full hardware capability for Φ40 cash — the offer sounds too good to be legitimate."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "wrist-device",
+    "smart-watch",
+    "BCI-compatible",
+    "tier-3",
+    "corponation",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

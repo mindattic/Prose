@@ -1,0 +1,46 @@
+{
+  "id": "408d82b6ac553e44fc3902ef0600f4e1",
+  "name": "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+  "type": "weapon",
+  "aliases": [
+    "Absolute",
+    "CP-7",
+    "Cryo Projector",
+    "Flash Freeze"
+  ],
+  "category": "exotic",
+  "description": "A directed cryogenic weapon that projects a stream of supercooled gas at temperatures approaching -200°C. The Absolute flash-freezes targets on contact, causing instantaneous thermal shock that shatters materials rendered brittle by the extreme cold. Organic tissue becomes glass-like and fragments under its own weight.\n\nCrucible designed the CP-7 for industrial applications — rapid cooling of reactor components, cryogenic preservation of biological samples, emergency fire suppression. The weapon configuration emerged when field engineers realized that the same technology that safely cooled a reactor vessel could catastrophically cool a human body in under 2 seconds.\n\nThe Absolute carries a pressurized reservoir of liquid nitrogen compound enhanced with proprietary cryogenic agents that lower the effective temperature beyond what pure nitrogen achieves. The stream maintains coherence for approximately 15 meters before dispersing, limiting the weapon to close-quarters engagement.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Dual-use — industrial tool classification, military restrictions on weapon configuration",
+  "base_technologies": [
+    "Enhanced cryogenic gas projection",
+    "Supercooled stream coherence maintenance",
+    "Thermal shock fragmentation physics"
+  ],
+  "specifications": "caliber: N/A — cryogenic gas stream\neffective_range: 3-15 meters\nrate_of_fire: Continuous stream, 8-second burst capacity\ncapacity: 4 full bursts per reservoir\nweight: 12 kg loaded\npower_source: None — pressurized reservoir, mechanical trigger",
+  "tactical_use": "The Absolute is deployed in close-quarters breaching and denial operations. The cryogenic stream defeats locked doors, armored panels, and reinforced barriers by flash-freezing the material and making it brittle enough to shatter with a physical strike. Against personnel, the weapon produces instant incapacitation and death through thermal shock. The short range limits its utility in open environments, but in the corridors and enclosed spaces that define most urban combat in Meridian 88, 15 meters is sufficient.",
+  "cultural_context": "The CP-7's dual-use classification is a legal fiction that everyone acknowledges and no one challenges. A tool that flash-freezes reactor components and a weapon that flash-freezes people are the same device with different operator intent. This ambiguity has made the Absolute popular among operatives who need to carry weapons through checkpoints where military hardware would be confiscated — it is, after all, technically an industrial cooling tool.",
+  "known_users": [
+    "Crucible Industries breach teams",
+    "Industrial security with plausible deniability"
+  ],
+  "story_hooks": [
+    "A body was found in a Tier 3 alley, shattered into fragments consistent with CP-7 exposure. The victim was a whistleblower who was about to testify about corporate labor practices. The death was classified as an industrial accident — the victim allegedly stumbled into a cooling system malfunction.",
+    "Crucible's cryogenic agents have been found in a contaminated water supply — someone is using CP-7 reservoirs as crude chemical weapons, flooding enclosed spaces with supercooled gas and freezing everyone inside."
+  ],
+  "ammunition_type": [
+    "Enhanced cryogenic gas compound"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "cryogenic",
+    "close-quarters",
+    "breaching",
+    "dual-use",
+    "tier 4",
+    "less_lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

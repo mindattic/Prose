@@ -1,0 +1,47 @@
+{
+  "id": "dfde231e7ef14122dc625515810ffded",
+  "name": "Crucible Industries BioVault Genetic Archive Bunker",
+  "brand_name": "Crucible",
+  "product_name": "BioVault GAB-7",
+  "type": "technology",
+  "aliases": [
+    "BioVault",
+    "GAB-7",
+    "Gene Bunker",
+    "Seed Vault"
+  ],
+  "subcategory": "environmental",
+  "description": "The BioVault GAB-7 is a deep-underground genetic archive facility that stores DNA samples, seed stocks, and frozen embryos of Earth's biological heritage. Each BioVault is a hardened bunker constructed 500 meters below the surface in geologically stable formations, designed to survive any plausible surface-level catastrophe including nuclear exchange, asteroid impact, and ecological collapse. The facilities are climate-controlled to maintain -196 degrees Celsius in their cryogenic vaults and room temperature in their laboratory and administrative sections.\n\nCrucible operates 12 BioVault facilities worldwide, collectively storing genetic material from approximately 8 million species — roughly 95% of all cataloged life on Earth. The archives include full genome sequences stored digitally, physical DNA samples preserved in cryogenic suspension, viable seed stocks for 400,000 plant species, and frozen embryos for 50,000 animal species. The facilities also store microbial cultures, fungal samples, and genetic material from species that have gone extinct since the archives began collecting in the 2130s — material that may enable future de-extinction programs.\n\nAccess to BioVault archives is controlled by Crucible through a licensing system that charges researchers, governments, and other corponations for the right to use archived genetic material. A single species genome access license costs between 500 and 50,000 Φ depending on the species' commercial value, with agricultural crop genomes and pharmaceutical-relevant organisms commanding the highest prices. Crucible's effective monopoly on Earth's genetic heritage has drawn intense criticism from scientists, ethicists, and indigenous communities who argue that no corporation should own the blueprint of life itself.",
+  "tier_availability": "Tier 4",
+  "developers": [
+    "CRUCIBLE INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Deep underground cryogenic storage",
+    "Long-term DNA preservation",
+    "Viable embryo cryosuspension",
+    "Genetic database management"
+  ],
+  "enables": [
+    "Species de-extinction programs",
+    "Agricultural genetic diversity preservation",
+    "Catastrophe-resistant biological archives",
+    "Genetic research material access"
+  ],
+  "social_impact": "BioVault has privatized biological heritage. The genetic material of every species on Earth is stored in corporate vaults, accessible only through paid licenses. When a researcher needs the genome of an endangered plant for conservation work, they pay Crucible. When a farmer needs heritage seed stock after a crop failure, they pay Crucible. The archives are genuinely valuable — they represent humanity's insurance policy against biological catastrophe — but the insurance policy has a corporate gatekeeper who charges premiums. Several nations have attempted to establish public genetic archives, but Crucible's head start and infrastructure advantage make competition difficult.",
+  "story_hooks": [
+    "A BioVault facility has reported a breach — not a physical break-in, but a genetic data exfiltration. Someone has been slowly copying genome data from the archive over a period of months, and the accessed species follow a pattern that suggests the thief is building something specific.",
+    "The BioVault facility beneath Meridian 88 has begun receiving deliveries of genetic material from an unregistered source — samples of organisms that don't appear in any biological catalog. Someone is archiving life forms that officially don't exist."
+  ],
+  "tags": [
+    "environmental",
+    "technology",
+    "terraforming",
+    "genetic",
+    "archive",
+    "biodiversity",
+    "crucible",
+    "tier 4"
+  ],
+  "parent_corponation": ""
+}

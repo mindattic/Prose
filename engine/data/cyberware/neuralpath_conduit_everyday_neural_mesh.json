@@ -1,0 +1,56 @@
+{
+  "id": "a3f7c2e1b8d04591fe6a2c3d7e9b1042",
+  "name": "NeuralPath Conduit Everyday Neural Mesh",
+  "brand_name": "NeuralPath",
+  "product_name": "Conduit Everyday Neural Mesh",
+  "type": "cyberware",
+  "aliases": [
+    "the Conduit",
+    "Connie",
+    "the Pipe",
+    "blue-label mesh"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The NeuralPath Conduit is a full-spectrum consumer neural mesh designed for continuous feed access, AR overlay rendering, and seamless civic integration across Meridian 88's public and commercial networks. Installed via a minimally invasive outpatient procedure, the Conduit deploys a 128-node filament mesh across the prefrontal and parietal cortices, providing stable bidirectional data throughput sufficient for standard messaging, payment authorization, identity verification, and real-time AR navigation overlays. Its adaptive signal-shaping firmware automatically negotiates bandwidth with local relay towers, maintaining connectivity even in Tier 1 signal-shadow zones where infrastructure is degraded.\n\nThe Conduit is the most widely installed BCI in the Tier 2-3 population bracket, often described as the defining neural interface of the working and lower-middle class. Most users receive their first Conduit through employer subsidy programs, municipal welfare packages, or installment financing at licensed clinics — it is as unremarkable as owning a pair of shoes. Social life in Meridian 88 runs through the feed, and the Conduit is the minimum viable ticket to full participation: job boards, transit alerts, credit scoring, school enrollment, emergency broadcasts, and neighborhood social threads all assume feed-connected users. Going without one marks a person as either extremely poor, extremely paranoid, or both.",
+  "manufacturer": "NEURALPATH TECHNOLOGIES INCORPORATED",
+  "tier_availability": "Tier 2-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Licensed outpatient clinic; procedure takes 90 minutes under local anesthesia; same-day discharge",
+  "rejection_risk": "Low — biocompatible polymer filament coating reduces immune response; rejection rate under 3% in clinical trials",
+  "maintenance": "Firmware auto-updates over feed nightly; annual recalibration recommended at any NeuralPath certified clinic; mesh integrity scan every 18 months",
+  "specifications": "{\"bandwidth\": \"4.2 Gbps sustained\", \"node_count\": 128, \"ar_resolution\": \"1440p overlay at 60fps\", \"encryption\": \"AES-256 standard civic tier\", \"battery_life\": \"Passive inductive charging via body heat; no discrete battery\", \"feed_channels\": 8, \"latency\": \"12ms average\", \"storage\": \"2TB onboard neural cache\", \"signal_range\": \"Municipal relay dependent\", \"OS\": \"NeuralPath ConduitOS 11.4\"}",
+  "side_effects": [
+    "Mild spatial disorientation during the first 2-4 weeks post-installation as the brain adapts to constant AR overlay",
+    "Occasional feed-bleed during deep sleep — users report dreaming in AR interface elements",
+    "Low-grade tinnitus in approximately 8% of users, typically resolving within 6 months",
+    "Reduced tolerance for unaugmented environments; some long-term users report mild anxiety when feed connectivity drops"
+  ],
+  "cultural_context": "The Conduit is so common it has become effectively invisible as a status marker — having one signals nothing beyond basic civic participation, while not having one is a loud signal of poverty or marginalization. On the Shelf, refurbished second-hand Conduits with cracked firmware are common, often running pirated ConduitOS builds that bypass subscription fees. In Tier 3, the Conduit is seen as slightly dated and unglamorous compared to SynapTech offerings, but it is trusted precisely because it is boring and reliable. The phrase 'running a Connie' is working-class slang for living a simple, no-frills life.",
+  "known_users": [
+    "Transit workers and logistics staff",
+    "Public school students receiving subsidized units",
+    "Small business owners and market vendors",
+    "Recently arrived migrants seeking civic integration",
+    "Tier 2 households across the Milwaukee and Chicago corridors"
+  ],
+  "story_hooks": [
+    "A routine firmware update pushed to all Conduit units citywide contains a hidden data-harvesting module — someone is siphoning behavioral data from millions of working-class citizens, and the players trace the update back to a shell company with Spire connections.",
+    "A character's Conduit begins displaying ghost AR overlays of a location they've never visited — fragments of someone else's cached memory bleed through a mesh cross-contamination at a black-market recalibration clinic.",
+    "A Tier 1 fixer is offering pre-cracked Conduits at a fraction of street price, but the units carry a dormant surveillance trojan that activates when users enter certain restricted districts."
+  ],
+  "street_price": "Φ950",
+  "licensed_price": "Φ1,800",
+  "tags": [
+    "cyberware",
+    "bci",
+    "consumer",
+    "neural-mesh",
+    "feed-access",
+    "tier-2",
+    "tier-3",
+    "neuralpath",
+    "mid_range_consumer"
+  ],
+  "parent_corponation": ""
+}

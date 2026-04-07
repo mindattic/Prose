@@ -1,0 +1,33 @@
+{
+  "id": "aab9e4e7657118ecb9917aec2a258751",
+  "name": "Tribal Identity",
+  "type": "archetype",
+  "category": "identity",
+  "description": "I am my people, my people are me",
+  "behavioral_signature": "Derives all sense of self from group membership",
+  "under_stress": "Excommunication from the group equals psychological death",
+  "at_rest": "Finds deep comfort and meaning in collective belonging",
+  "will_always": [
+    "define themselves through their community"
+  ],
+  "will_never": [
+    "act against the interests of their tribe"
+  ],
+  "unless": [
+    "the tribe turns on someone innocent and they can't look away"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Loyal Dog",
+      "threshold": 0.7,
+      "context": "group devotion"
+    }
+  ],
+  "opposite_of": [
+    "Lone Wolf"
+  ],
+  "tags": [
+    "communal",
+    "group-defined"
+  ]
+}

@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "Self-guided ammunition compatible with standard 9mm pistol platforms that uses embedded micro-processing and control surfaces to adjust trajectory in flight. Each round contains a thumbnail-sized guidance package with a micro-camera, processing chip, and four piezoelectric fin actuators that can steer the round toward a designated target up to 15 degrees off the original firing axis. The rounds are 'trained' by designating a target through a linked optic — the round's guidance package memorizes the target's visual signature and homes on it after firing. The name comes from the round's ability to 'remember' its target. Accuracy degrades rapidly beyond 30 meters as the control surfaces lack the authority to compensate for ballistic drop at range.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Lucid Dreams Sleep Technology",
   "tier_availability": "Tier 4+",
   "legality": "Prohibited — guided munition",
   "base_technologies": [
@@ -36,6 +36,8 @@
     "control",
     "rain",
     "train",
-    "tier 4"
-  ]
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

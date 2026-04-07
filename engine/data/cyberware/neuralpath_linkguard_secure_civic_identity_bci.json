@@ -1,0 +1,60 @@
+{
+  "id": "e820f5b4763c1d9a05e4b2887cf01a3d",
+  "name": "NeuralPath LinkGuard Secure Civic Identity BCI",
+  "brand_name": "NeuralPath",
+  "product_name": "LinkGuard",
+  "type": "cyberware",
+  "aliases": [
+    "the Guard",
+    "civlock",
+    "paper chip",
+    "the leash",
+    "ID iron"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The NeuralPath LinkGuard is a civic-compliance-focused consumer BCI developed in partnership with the Meridian 88 Municipal Authority, providing hardened identity verification, benefits disbursement integration, healthcare record linkage, tax reporting, and a tamper-evident civic credential layer on top of a functional but deliberately modest general-purpose neural mesh. Its core mesh operates at 2.8 Gbps with eight AR overlay channels, standard messaging, and payment integration, but the device's distinguishing architecture is its Civic Anchor Module — a secondary node in the temporal lobe that maintains a continuous encrypted handshake with municipal infrastructure, flagging any tampering attempt to automated enforcement systems within 11 seconds. The handshake is legally required for all recipients of municipal housing assistance, healthcare subsidies, and social income supplements, making installation effectively mandatory for a large portion of the Tier 2 population.",
+  "manufacturer": "NEURALPATH SYSTEMS INCORPORATED",
+  "tier_availability": "Tier 1-2",
+  "legality": "Unrestricted (voluntary purchase); Mandatory for municipal benefit recipients under Civic Neural Compliance Ordinance 2194",
+  "installation_requirements": "Municipal health clinic or licensed outpatient facility; 90-minute procedure under local anesthetic; civic credential enrollment required at Municipal Authority office within 30 days of installation",
+  "rejection_risk": "Low — same biocompatible lattice as the Horizon Standard; Civic Anchor Module adds minor secondary rejection risk of approximately 2.1% for inflammatory response at temporal node site",
+  "maintenance": "Automatic firmware and compliance updates pushed by Municipal Authority (user cannot defer or decline); annual civic credential re-verification required in person at Municipal Authority kiosk; bioelectric cell replacement every 15 years",
+  "specifications": "{\"bandwidth\": \"2.8 Gbps sustained\", \"ar_channels\": 8, \"encryption\": \"128-bit AES (user data) + Municipal Civic Anchor hardened channel\", \"payment_integration\": true, \"identity_verification\": true, \"civic_anchor\": true, \"tamper_detection\": \"11-second alert to enforcement systems\", \"benefits_disbursement\": true, \"healthcare_record_link\": true, \"smart_link\": false, \"messaging\": true, \"feed_access\": true, \"bioelectric_cell_life\": \"15 years\", \"latency\": \"7ms average\", \"wireless_protocol\": \"NeuralMesh 7.2 + CivicNet 3.0\"}",
+  "side_effects": [
+    "Civic Anchor Module generates a faint background hum described by users as 'being watched from inside your own head' — a psychosomatic response to awareness of continuous municipal monitoring that affects roughly 30% of users",
+    "Mandatory firmware updates cannot be delayed and occasionally push during inconvenient active periods, causing 2-4 minutes of reduced AR functionality",
+    "Some users report intrusive awareness of the tamper-detection system as a persistent low-level anxiety state, particularly in situations involving law enforcement",
+    "Healthcare record integration has caused documented cases of insurance premium adjustments and benefit tier changes based on neural health data that users did not knowingly consent to share"
+  ],
+  "cultural_context": "The LinkGuard is the most politically charged chip in the consumer market. Its supporters — primarily municipal administrators and civic technocrats — describe it as an elegant solution to benefits fraud, identity theft, and civic disengagement. Its critics, which include most civil liberties organizations in Meridian 88, describe it as a surveillance collar for the poor, noting that the Civic Compliance Ordinance effectively forces the city's most vulnerable residents to accept continuous government monitoring as a condition of survival. The chip is deeply stigmatized in Tier 3 and above — being identified as a LinkGuard user marks someone as a benefits recipient, which carries significant social shame. On the Shelf, however, the stigma is more complicated: many residents view the chip as an unavoidable trade-off rather than a disgrace, and mutual-aid networks have grown up around helping users understand what data the Municipal Authority actually collects.",
+  "known_users": [
+    "municipal housing assistance recipients",
+    "social income supplement recipients",
+    "public healthcare subsidy recipients",
+    "recently released correctional facility residents on parole monitoring",
+    "undocumented residents seeking civic regularization",
+    "elderly residents dependent on care subsidies"
+  ],
+  "story_hooks": [
+    "A legal advocate has obtained internal Municipal Authority data showing that the LinkGuard's Civic Anchor Module is collecting far more than the ordinance authorizes — movement patterns, social graph data, emotional state markers — and selling aggregated profiles to three private data brokers. The advocate needs help getting the evidence out before it disappears.",
+    "Someone has developed a spoofing device that mimics a valid Civic Anchor handshake, allowing LinkGuard users to move through the city without their location being logged — it is selling fast in the Shelf, and both the Municipal Authority and a very different kind of organization want to find its source.",
+    "A routine firmware update pushed to all LinkGuard units citywide contained an anomalous secondary payload that activated once and then deleted itself — no one at NeuralPath or the Municipal Authority will admit to knowing what it did, but twelve hours later, seventeen people in a specific Shelf district quietly stopped appearing in any civic record."
+  ],
+  "street_price": "Φ820",
+  "licensed_price": "Φ1,400",
+  "tags": [
+    "cyberware",
+    "bci",
+    "consumer",
+    "tier-1",
+    "tier-2",
+    "civic-compliance",
+    "neuralpath",
+    "identity-verification",
+    "surveillance",
+    "mandatory",
+    "mid_range_consumer"
+  ],
+  "parent_corponation": ""
+}

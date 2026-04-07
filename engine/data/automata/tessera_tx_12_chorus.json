@@ -1,0 +1,49 @@
+{
+  "name": "TESSERA TX-12 'Chorus'",
+  "type": "automaton",
+  "classification": "Swarm — Acoustic Weapon Platform",
+  "aliases": [
+    "Chorus",
+    "Screamer Swarm",
+    "The Choir"
+  ],
+  "manufacturer": "TESSERA",
+  "description": "The TX-12 is a micro aerial drone — each unit barely larger than a hummingbird — that produces a single, precisely tuned acoustic frequency. One TX-12 is inaudible. Fifty produce a mild headache. Two hundred create an acoustic environment that induces severe nausea, disorientation, and panic. Five hundred can cause permanent hearing damage and, in documented cases, fatal cerebral hemorrhage.\n\nThe Chorus operates on the principle of constructive interference — each unit's output is individually harmless, but when hundreds synchronize their frequencies, the combined acoustic energy reaches weapon-grade intensity. The swarm distributes itself around a target area, ensuring uniform coverage and preventing acoustic shadows. The effect is inescapable within the engagement zone — there is no direction to run that reduces exposure.\n\nTESSERA markets the Chorus as a 'scalable non-lethal deterrent' — which it is, at low swarm counts. The problem is that scalability goes in both directions, and the difference between 'deterrent' and 'lethal' is a matter of how many units are deployed. A security contractor who starts with 200 and finds them insufficient can simply release another 200 from reserve, crossing the lethality threshold without any change in authorization or equipment. The escalation is frictionless.",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed as non-lethal — lethality threshold undisclosed",
+  "autonomy_level": "Swarm autonomous with operator-set intensity level",
+  "dimensions": "0.05m per unit",
+  "weight": "0.015 kg per unit",
+  "power_source": "Micro capacitor, 30-minute endurance per unit",
+  "locomotion": "Micro quadrotor",
+  "armament": [
+    "Precisely tuned acoustic emitter per unit — lethal in sufficient numbers"
+  ],
+  "sensors": [
+    "Swarm positioning coordination",
+    "Acoustic feedback for frequency tuning"
+  ],
+  "countermeasures": "Active noise cancellation is partially effective. Physical ear protection reduces damage threshold. The individual units are fragile — a broom or thrown object can destroy them. Wind disrupts swarm formation. 30-minute battery life limits engagement duration.",
+  "known_deployments": [
+    "Crowd dispersal operations",
+    "Area denial",
+    "Suspected use in targeted assassination via acoustic overexposure"
+  ],
+  "story_hooks": [
+    "A Chorus deployment at a Shelf protest exceeded the lethality threshold. Seventeen dead from cerebral hemorrhage. TESSERA claims the operator error was deploying reserve units without authorization. The operator claims they were told to use 'whatever it takes.'",
+    "Someone has acquired a Chorus swarm and is using it for targeted assassination — deploying 500 units around a single person's apartment while they sleep. The cause of death is listed as 'stroke.' The third 'stroke' this month."
+  ],
+  "cultural_context": "The Chorus represents the weaponization of sound itself — turning the air into a killing medium. The micro-drone size means the swarm is nearly invisible, making the weapon appear to be a natural phenomenon rather than a deliberate attack. People dying of 'unexplained' cerebral hemorrhage in areas where Chorus deployments were authorized raises questions nobody in authority wants to answer.",
+  "tags": [
+    "automaton",
+    "swarm",
+    "aerial",
+    "acoustic",
+    "weapon",
+    "tessera",
+    "corporate",
+    "tier 3"
+  ],
+  "id": "2637bdc0f7b8a6b1a27a63c6fbabf76a",
+  "parent_corponation": "Tessera Corponation"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "09d6cf2c60a28a943715a1b08e4cfd5b",
+  "name": "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+  "type": "weapon",
+  "aliases": [
+    "Glass Eye",
+    "SN-11",
+    "Clarity",
+    "The Lens"
+  ],
+  "category": "sniper",
+  "description": "A precision rifle built around its optics rather than its ballistics. The Clarity SN-11 integrates a multi-spectrum sensor suite that provides the operator with thermal, electromagnetic, and acoustic imaging overlaid onto a BCI-projected heads-up display. The weapon itself fires conventional 6.5mm rounds — it is the targeting system that justifies the price.\n\nSterling-Nakamura's approach inverts the traditional sniper weapons philosophy. Rather than building a better bullet, they built a better eye. The SN-11's sensor suite can detect targets through walls, identify cyberware signatures from 2km away, and predict target movement using pattern-recognition algorithms that learn from the operator's engagement history.\n\nThe Glass Eye has found a niche among intelligence-oriented operators who value the sensor data as much as the weapon's lethality. Some operators reportedly disable the weapon entirely and use the SN-11 purely as a surveillance platform.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — corporate and military intelligence operators",
+  "base_technologies": [
+    "Multi-spectrum targeting integration",
+    "BCI-projected combat heads-up display",
+    "Predictive target movement algorithms"
+  ],
+  "specifications": "caliber: 6.5mm conventional match-grade\neffective_range: 100-1,600 meters (weapon), 3,000 meters (sensor suite)\nrate_of_fire: Semi-automatic, 1 round per 2 seconds\ncapacity: 10-round detachable magazine\nweight: 6.8 kg\npower_source: Sensor suite: integrated power cell, 8 hours continuous",
+  "tactical_use": "The Glass Eye is deployed in intelligence-gathering operations where the operator's primary mission is observation and the weapon is a contingency. The multi-spectrum sensor suite provides real-time intelligence that can be shared across a team's BCI network, making the SN-11 operator a force multiplier even without firing a shot. When engagement is necessary, the predictive targeting system eliminates the guesswork from moving-target engagement.",
+  "cultural_context": "Sterling-Nakamura has positioned the Glass Eye as a tool for professionals who value information over destruction. Their marketing emphasizes restraint and precision — a sharp contrast to Crucible's brutalist philosophy. In the intelligence community, carrying an SN-11 signals that you are in the business of knowing things, and killing is a secondary function.",
+  "known_users": [
+    "Sterling-Nakamura corporate intelligence",
+    "Select espionage contractors"
+  ],
+  "story_hooks": [
+    "A Glass Eye operator has been selling the sensor data from their surveillance operations to competing factions — the weapon's recording capability was not supposed to be accessible to the user, but someone cracked the firmware.",
+    "Sterling-Nakamura's predictive targeting algorithm has begun flagging individuals as threats before they take any hostile action. The algorithm is either reading intentions or making mistakes — and the consequences of either are disturbing."
+  ],
+  "ammunition_type": [
+    "6.5mm match-grade"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "intelligence",
+    "sensor",
+    "BCI",
+    "surveillance",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

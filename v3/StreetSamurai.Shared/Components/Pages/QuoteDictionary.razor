@@ -9,6 +9,9 @@
         <div class="card bg-dark text-light border-secondary mb-2 card-body">
             <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                    placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+            <div class="mb-2">
+                <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+            </div>
             <div class="d-flex gap-2">
             <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Quotes" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
@@ -67,6 +70,7 @@
                 </div>
             }
         }
+            @if (editing != null) { <TagPills Tags="editing.Tags" ActiveTags="selectedTags" OnTagClick="OnTagPillClick" /> }
         else
         {
             <div class="text-center text-muted py-5"><i class="bi bi-quote" style="font-size:3rem;"></i><p class="mt-2">Select a quote or add a new one.</p></div>
@@ -79,14 +83,24 @@
     private QuoteData? editing;
     private string originalQuote = "";
     private string filter = "";
+    private List<(string name, int count)> allTags = [];
+    private HashSet<string> selectedTags = [];
     private bool isNew, confirmDelete;
 
-    private IEnumerable<QuoteData> FilteredItems => string.IsNullOrWhiteSpace(filter)
-        ? items : items.Where(q => q.Quote.Contains(filter, StringComparison.OrdinalIgnoreCase)
-            || q.Attribution.Contains(filter, StringComparison.OrdinalIgnoreCase)
-            || q.Category.Contains(filter, StringComparison.OrdinalIgnoreCase));
+    private IEnumerable<QuoteData> FilteredItems
+    {
+        get
+        {
+            IEnumerable<QuoteData> result = items;
+            if (!string.IsNullOrWhiteSpace(filter))
+                result = result.Where(q => q.Quote.Contains(filter, StringComparison.OrdinalIgnoreCase));
+            if (selectedTags.Count > 0)
+                result = result.Where(q => selectedTags.All(t => q.Tags.Contains(t)));
+            return result;
+        }
+    }
 
-    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); }
     private void AddNew() { editing = new QuoteData(); isNew = true; confirmDelete = false; }
     private void Edit(QuoteData q) { editing = q; originalQuote = q.Quote; isNew = false; confirmDelete = false; }
     private void SaveEdit()
@@ -98,5 +112,8 @@
         items = Repo.GetAll();
     }
     private void DoDelete() { if (editing != null) { Repo.Delete(editing.Quote); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
+    private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
+    private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Quote.Length > 40 ? e.Quote[..40] : e.Quote, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    private void OnTagPillClick(string tag) { if (selectedTags.Contains(tag)) selectedTags.Remove(tag); else selectedTags.Add(tag); StateHasChanged(); }
 }

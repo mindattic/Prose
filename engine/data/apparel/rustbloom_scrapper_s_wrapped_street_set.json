@@ -1,0 +1,53 @@
+{
+  "id": "7d1e4b83c2f09a5e3d7c1b4f8e2a0693",
+  "name": "Rustbloom Scrapper's Wrapped Street Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Built around a long wrap-style top derived from a West African agbada pattern — but executed in salvaged industrial linen dyed unintentionally rust-brown by repeated acid-rain exposure, the original white fiber still visible at protected inner seams. The wrap is fixed at the shoulder with a repurposed industrial cable clamp, its chrome surface dulled by grinding but still catching light. Beneath it, a tight ribbed turtleneck in faded black synth-cotton covers the neck and wrists. The lower half is a pair of wide-leg work trousers in stiff dark brown canvas, cuffed at the ankle and belted with a length of woven nylon strap threaded through a buckle salvaged from a harness rig. Along the outer seam of each leg runs a vertical strip of reflective tape — partly for visibility in unlit tunnels, partly just because the wearer found a roll of it and it stuck. Feet are wrapped first in thick wool socks, then pushed into ankle boots resoled with layered conveyor belt rubber, the upper leather cracked to a beautiful dark-map pattern and treated with rendered fat to keep the cracks from spreading. Around the neck hangs a cord of braided copper wire strung with three salvaged BCI interface pins — non-functional, worn as jewelry — and a flat disc of oxidized steel etched by hand with a geometric pattern. Hair is wrapped in a tight cloth band cut from the same rust-brown industrial linen as the top wrap.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "acid-weathered industrial linen",
+    "ribbed synth-cotton",
+    "dark brown canvas",
+    "woven nylon strap",
+    "reflective tape",
+    "thick wool socks",
+    "conveyor belt rubber",
+    "cracked leather",
+    "rendered fat sealant",
+    "braided copper wire",
+    "oxidized steel",
+    "salvaged BCI interface pins"
+  ],
+  "functionality": "Turtleneck provides acid-splash protection for neck and lower face when pulled up. Wrap outer layer adds wind and rain deflection. Reflective tape strips enable visibility in unlit industrial zones. Resoled boots handle broken grating and chemical puddles. Cargo capacity in trouser pockets. Copper wire neck cord doubles as basic conductive tool for scavenging electronics.",
+  "what_it_says": "There's aesthetic intent here — the wrap construction, the hand-etched steel disc, the BCI pins worn as ornament rather than function. This person is not just surviving; they're maintaining a sense of self within the survival. The Shelf has style, and this outfit insists on it quietly.",
+  "worn_by": [
+    "Shelf artists and makers",
+    "scrap traders",
+    "informal market vendors",
+    "younger Shelf residents with a sense of identity",
+    "people who grew up poor but grew up with taste"
+  ],
+  "manufacturer": "Self-constructed; linen sourced from Drift Market salvage stalls",
+  "price_range": "Φ8–Φ25 (plus found materials)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The three BCI interface pins worn as jewelry are recognized by a black-market tech runner as components from a prototype neural array — suddenly the wearer's scrap jewelry is worth more than everything else they own combined.",
+    "The hand-etched geometric pattern on the steel disc is a Shelf gang territorial mark — wearing it in the wrong tunnel section draws immediate, aggressive attention.",
+    "A TESSERA Genomics field researcher on a covert survey notices the acid-dye pattern on the linen wrap matches a specific industrial runoff signature from a facility that was supposed to be decommissioned — the wearer's clothes are environmental evidence."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "wrapped",
+    "global_fusion",
+    "salvage_jewelry",
+    "acid_weathered",
+    "gene_compatible",
+    "reflective"
+  ],
+  "parent_corponation": ""
+}

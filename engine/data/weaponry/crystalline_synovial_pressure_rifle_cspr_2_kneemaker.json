@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "The CSPR-2 delivers a tightly focused ultrasonic pulse tuned to induce rapid phase transition in synovial fluid — the viscous lubricating liquid present in all biological joints. Under the rifle's beam, synovial fluid undergoes a violent cavitation process, briefly forming microscopic crystalline structures that expand and collapse within milliseconds. The mechanical result is catastrophic joint failure: cartilage shear, capsule rupture, and acute inflammatory response, all without any visible external wound. Targets drop and cannot stand. The damage is real, structural, and in most cases permanent without surgical intervention.\n\nThe weapon's targeting system requires a 0.3-second dwell time on a specific anatomical zone — typically the knee, hip, or shoulder — before the pulse achieves sufficient depth to trigger the phase cascade. This dwell requirement means the CSPR-2 is not a snap-fire weapon; it rewards patience and positional advantage. Arcturus Defense Solutions engineered a secondary 'scatter mode' into the CSPR-2 that defocuses the beam to affect a broader joint region at reduced intensity, useful against moving targets at the cost of predictable effect severity.\n\nThe weapon earned its street name 'Kneemaker' almost immediately after early units leaked into Meridian 88's black market. Its use as a tool of deliberate permanent injury — rather than killing — gave it a particular cultural weight. To be 'kneemade' is a specific category of violence in the city's underworld lexicon, implying a calculated, professional decision to maim rather than kill. This specificity made it a favored instrument of organized crime enforcement and a symbol of a particular kind of cold, methodical cruelty.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Blackwood Commercial Group",
   "tier_availability": "Black market",
   "legality": "Prohibited",
   "base_technologies": [
@@ -56,13 +56,14 @@
     "injury",
     "underworld",
     "market",
-    "bar",
     "rain",
     "cold",
     "train",
     "escape",
     "clothing",
     "energy",
-    "fire"
-  ]
+    "fire",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

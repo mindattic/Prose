@@ -1,0 +1,50 @@
+{
+  "id": "4e7b2a9f1c0d835620e4b7a2f9c1d038",
+  "name": "Arcturus Defense Solutions EL-9 'Heron'",
+  "type": "weapon",
+  "aliases": [
+    "heron",
+    "the lance",
+    "long arm",
+    "stork"
+  ],
+  "category": "melee",
+  "description": "The Arcturus EL-9 is a shock lance — a two-meter polearm-configuration weapon with an electrified tip assembly, designed for perimeter defense, crowd control at range, and the management of augmented threats that require keeping distance between operator and subject. The shaft is carbon-fiber reinforced polymer in two field-separable sections, each one meter long, connected by a twist-lock coupling that assembles in approximately four seconds. The tip assembly is a 12-centimeter hardened steel point surrounded by a ceramic collar housing four arc-discharge electrodes; on activation, the electrodes generate a visible electrical arc around the tip that is both functionally effective and deliberately intimidating.\n\nThe EL-9 was developed for Arcturus's perimeter and facility defense contracts, specifically addressing scenarios where crowds or individuals with reach-extending augmentations — extended arms, exoskeletal limb attachments, prehensile tools — could compromise the safety buffer of standard baton-length weapons. Two meters of shaft plus the operator's arm reach gives an effective engagement range of nearly three meters, which exceeds most augmented reach extensions in common use. The visible arc at the tip, which Arcturus's product documentation describes as a 'deterrent indicator,' generates a consistent documented response of subject withdrawal before contact is made.\n\nThe EL-9 is heavy and requires two-handed operation, making it impractical for environments requiring weapon transitions or one-hand-occupied scenarios. Arcturus positions it as a specialist tool for fixed-perimeter and crowd-control roles rather than general patrol. It is among the most expensive items in Arcturus's less-lethal product line and is issued rather than purchased individually.",
+  "manufacturer": "Ironside Armaments",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — Arcturus facility defense and crowd control issue only; civilian possession is a Class 1 prohibited weapons violation",
+  "base_technologies": [
+    "carbon-fiber reinforced polymer shaft",
+    "field-separable twist-lock coupling",
+    "hardened steel tip assembly",
+    "ceramic collar arc-discharge electrode array",
+    "high-capacity military power cell"
+  ],
+  "specifications": "Total Length (assembled): 2,000mm\nSection Length: 1,000mm each\nWeight: 2,100g\nTip Assembly: 12cm hardened steel point + ceramic collar\nArc Electrodes: 4-point array around tip\nDischarge Voltage: 100,000V\nAmperage: 0.006A\nArc Visibility: Clearly visible in ambient light\nPower Cell: Arcturus MilSpec Cap-Block CB-9 (integrated)\nDischarges per Cell: 80 full activations\nField Assembly Time: ~4 seconds\nPrice: Φ8,000",
+  "tactical_use": "The EL-9 is used in two-operator teams for maximum effectiveness — one lance operator engaging at range while a second maintains close-quarters coverage. In single-operator use, it is a perimeter tool: holding a doorway, corridor, or gap in a barrier line against approaching subjects. The visible arc at the tip is used deliberately before contact — operators are trained to present the active tip toward a subject and hold position, allowing the visual deterrent to work before committing to a strike. When contact is made, the arc discharge delivers a shock that is significantly more powerful than standard baton weapons, with reliable incapacitation of most unaugmented subjects and substantial effect on lightly-to-moderately augmented ones.",
+  "cultural_context": "The EL-9 is rare enough in civilian awareness that most people who encounter it do so only in the context of serious corporate facility security or Arcturus-contracted crowd events. Its two-meter length and visible electrical arc make it visually arresting in a way that most shock weapons are not — people who have seen one describe it as looking 'like something from a different century, or maybe a different planet.' In Tier 1 communities with active Arcturus presence, the heron is understood as a signal of elevated threat designation — when the lances come out, the situation has been classified as something beyond routine.",
+  "known_users": [
+    "Arcturus Defense Solutions facility perimeter defense units",
+    "Arcturus-contracted crowd control specialists",
+    "Tier 4 and Tier 5 high-security facility defense teams",
+    "Arcturus event security for high-risk public gatherings"
+  ],
+  "story_hooks": [
+    "An EL-9 was found disassembled and hidden in a maintenance shaft beneath a Tier 3 civic assembly hall scheduled for a major municipal vote. It was placed there recently — the power cell is fresh. Someone was planning to use it in a building where it would be the most powerful weapon in the room, and they abandoned the plan at the last moment, or haven't executed it yet."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "electric",
+    "polearm",
+    "lance",
+    "military",
+    "restricted",
+    "crowd_control",
+    "arcturus",
+    "long_reach"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

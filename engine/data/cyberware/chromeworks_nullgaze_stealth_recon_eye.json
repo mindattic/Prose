@@ -1,0 +1,54 @@
+{
+  "id": "c9e3a17f4b2d8051e6c4a9f3b7d20e85",
+  "name": "CHROMEWORKS NullGaze Stealth Recon Eye",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "Chromeworks NullGaze SR-1 Stealth Recon Ocular",
+  "type": "cyberware",
+  "aliases": [
+    "Ghost Eyes",
+    "The Null",
+    "Chrome Veil"
+  ],
+  "category": "ocular",
+  "body_location": "eyes",
+  "description": "The NullGaze SR-1 is Chromeworks' entry into the restricted surveillance market — a sleek full ocular replacement with a passive-mode exterior indistinguishable from a high-quality cosmetic implant, concealing an 8K continuous-record array with 96-hour onboard encrypted storage. Its low-light amplification provides 6x passive gain in near-darkness with zero active emission, and its facial-recognition countermeasure suite projects a subtle metamaterial scatter field from the sclera surface to defeat third-party FR systems scanning the wearer's face. A secondary iris-pattern randomizer cycles the wearer's biometric signature every 4 hours.\n\nThe NullGaze occupies an uncomfortable legal grey zone — sold through Chromeworks' licensed security channels but widely understood to circulate among journalists, spies, corporate investigators, and runners who need eyes that see without being seen. On the Shelf, the SR-1's ability to defeat facial recognition makes it a survival tool for anyone who needs to move through CorpSec-monitored transit corridors without a logged identity trail.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 2-5",
+  "legality": "Restricted",
+  "installation_requirements": "Standard ocular socket surgery; Chromeworks-certified installer required; restricted purchase license needed for facial-recognition countermeasure activation",
+  "rejection_risk": "Low — Chromeworks premium biocompatible housing; neural integration smooth but record-mode activation can cause brief visual static during first month",
+  "maintenance": "Monthly encrypted storage offload recommended; quarterly scatter-field emitter cleaning; annual iris-randomizer recalibration",
+  "specifications": "{\"recording_resolution\": \"8K continuous\", \"onboard_storage\": \"96hr encrypted\", \"low_light_gain\": \"6x passive\", \"active_emission\": false, \"FR_countermeasure\": \"metamaterial sclera scatter field\", \"iris_randomizer\": \"4hr biometric cycle\", \"exterior_appearance\": \"cosmetic-grade undetectable\", \"wireless_offload\": \"encrypted burst-mode\", \"zoom\": \"0.8x–8x optical\"}",
+  "side_effects": [
+    "Iris randomizer can cause brief identity verification failures at Chromeworks' own biometric checkpoints — an irony not lost on users",
+    "Continuous record mode draws additional bioelectric load, causing mild fatigue over 12-hour active periods",
+    "Scatter field occasionally interferes with the wearer's own AR overlay systems from other manufacturers",
+    "Knowing you're always recording creates documented cases of behavioral self-consciousness and anxiety in long-term users"
+  ],
+  "cultural_context": "The NullGaze has become the implicit standard equipment of Meridian 88's investigative journalism underground and corporate espionage circuit alike — a tool that erases the face wearing it while capturing everything it sees. CorpSec divisions maintain a dedicated detection protocol specifically for the SR-1's scatter-field signature.",
+  "known_users": [
+    "Underground journalists and whistleblower networks",
+    "Corporate intelligence operatives and fixers",
+    "Shelf runners navigating CorpSec surveillance corridors",
+    "Private investigators working outside licensed channels",
+    "Civil liberties activists evading identity tracking"
+  ],
+  "story_hooks": [
+    "A NullGaze unit's 96-hour archive washed up in a storm drain — still encrypted, still intact, and its previous owner is missing",
+    "Chromeworks quietly pushed a firmware update that introduced a backdoor into the scatter field, logging every face the SR-1 defeats — someone inside Chromeworks is selling that data",
+    "A runner's NullGaze begins capturing footage from a location they've never visited — the record buffer is filling with someone else's memories"
+  ],
+  "street_price": "Φ31,000",
+  "licensed_price": "Φ67,000",
+  "tags": [
+    "cyberware",
+    "ocular",
+    "stealth",
+    "surveillance",
+    "facial-recognition-countermeasure",
+    "low-light",
+    "restricted",
+    "espionage"
+  ],
+  "parent_corponation": ""
+}

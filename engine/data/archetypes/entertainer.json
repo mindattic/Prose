@@ -1,0 +1,34 @@
+{
+  "id": "53be0a9764b2c18b1347893bf977d32b",
+  "name": "Entertainer",
+  "type": "archetype",
+  "category": "social",
+  "description": "Lives to hold attention and make people feel alive in their presence",
+  "behavioral_signature": "Every room they enter shifts energy toward them",
+  "under_stress": "Performs louder to mask inner collapse",
+  "at_rest": "Restless without an audience",
+  "will_always": [
+    "fill silence with something engaging"
+  ],
+  "will_never": [
+    "tolerate being ignored"
+  ],
+  "unless": [
+    "someone they respect needs the spotlight more"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Performer",
+      "threshold": 0.85,
+      "context": "attention-seeking"
+    }
+  ],
+  "opposite_of": [
+    "Hermit"
+  ],
+  "tags": [
+    "charisma",
+    "performance",
+    "energy"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "a3f7c2e1b094d658f21a3c7e90b54d82",
+  "name": "Cindershift Reversible Crowd-Runner Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A complete tactical ensemble built for disappearing into Tier 2-3 foot traffic. The centerpiece is a reversible mid-thigh jacket — one side a muted brick-burgundy with worn stress lines mimicking a delivery courier's daily rig, the other a deep slate-grey with subtle hexagonal texture that reads as generic maintenance wear at a glance. The jacket features mag-detach shoulder panels, a reinforced internal holster channel along the left ribcage, and a scanner-resistant lining woven from Nullthread-X that scatters passive RFID sweeps. Beneath it, a henley-style compression shirt in dusty teal stretches over the torso, with aug-power routing channels stitched along the left sleeve for chrome-arm compatibility — a discreet zip-port at the wrist allows external device tethering without exposing hardware. Cargo trousers in deep rust-brown feature reinforced knees, two deep thigh pockets with magnetic closures, and a hidden ankle zip-pocket sized for a folding blade or med-patch stack. Footwear is low-profile synthetic leather boots with a composite toe and soft-grip sole — scuffed deliberately at the toe cap to read as working-class wear.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "Nullthread-X scanner-resistant weave",
+    "compression elastomer",
+    "synthetic leather",
+    "mag-detach polymer panels",
+    "reinforced ballistic canvas",
+    "aug-routing conductive thread"
+  ],
+  "functionality": "Reversible jacket for rapid appearance change, scanner-resistant lining, integrated left-ribcage holster channel, aug-power routing sleeve, hidden ankle pocket, magnetic thigh-pocket closures, composite-toe boots",
+  "what_it_says": "This is someone who has done this long enough to stop looking like they're doing it. The outfit reads as courier or maintenance at three meters, which is exactly the point. Veterans of the runner circuit recognize the tell-tale wrist zip-port and the deliberate scuff pattern — a calling card worn with practiced indifference.",
+  "worn_by": [
+    "mid-career runners",
+    "courier-cover operatives",
+    "data couriers doubling as extraction assets",
+    "Tier 2 neighborhood fixers"
+  ],
+  "manufacturer": "Splitseam Workshop — a street-label operation out of the Circuit's garment district, known for reversible and quick-change tactical builds",
+  "price_range": "Φ 340–Φ 510",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A runner flips the jacket mid-pursuit through a crowded transit hub, but a sharp-eyed Helix Corp security drone has already logged both color profiles — the reversal buys thirty seconds, not escape.",
+    "The scanner-resistant lining starts degrading after exposure to an acid-rain squall in the Shelf, and the runner realizes mid-job that their concealed hardware is pinging every checkpoint between them and the extraction point.",
+    "A contact recognizes the Splitseam wrist zip-port and uses it as a dead-drop authentication — something was sewn into the port housing that the runner didn't know about."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier 2",
+    "tier 3",
+    "reversible",
+    "quick-change",
+    "scanner-resistant",
+    "aug-compatible",
+    "crowd-blend",
+    "holster-channel",
+    "splitseam"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,44 @@
+{
+  "id": "d1f5a8c3e6b2094d1f8a3c6e2b5d8f1a",
+  "name": "Protex Aegis-7 Armored Work Jacket",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A heavy-duty work jacket with concealed ballistic paneling, manufactured by Protex for the civilian and private-security markets. From the outside, it reads as a rugged field jacket — reinforced cotton-nylon blend shell in a flat olive drab or charcoal, multiple utility pockets, a full-zip front with storm flap, adjustable cuffs. The concealed element is a set of UHMWPE soft-armor panels sewn into the chest, back, and sides — rated for handgun rounds at standard civilian protection levels. The panels are removable for washing and add moderate weight without significantly restricting movement.\n\nProtex markets this to site foremen, logistics supervisors, and anyone working in contested urban zones who doesn't want to wear obvious body armor. It's not invisible — the jacket is slightly bulkier at the torso than its profile suggests — but it's discreet enough to pass at a glance. Tier 2 security contractors buy it as their own-kit solution when employers don't provide armor. Some Shelf residents who can stretch the price consider it a survival investment.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "reinforced cotton-nylon blend shell",
+    "UHMWPE soft-armor panels (removable)",
+    "polyester mesh lining",
+    "YKK-equivalent heavy-duty zippers"
+  ],
+  "functionality": "Removable UHMWPE soft-armor panels rated NIJ Level IIA equivalent. Protects against handgun rounds. No electronic features.",
+  "what_it_says": "You've thought seriously about where you work and what might happen there. This isn't paranoia — in Meridian 88, it's risk assessment.",
+  "worn_by": [
+    "site foremen",
+    "private security contractors",
+    "logistics supervisors",
+    "Tier 2 workers in contested zones",
+    "Shelf residents who can afford the stretch"
+  ],
+  "manufacturer": "Protex Systems",
+  "price_range": "Φ275",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Protex Aegis-7 panel stopped a round in a Tier 2 freight district three months ago. The wearer walked away. Word spread through the contractor community faster than any advertisement, and the jacket has been backordered since.",
+    "Protex's civilian ballistic rating requires regular panel replacement every 18 months — but the replacement panels are only sold through Protex's own distribution network at a price that's half the original jacket. A gray market in pulled panels from decommissioned units has started to fill the gap.",
+    "A labor organizer has been wearing an Aegis-7 to every confrontational negotiation meeting for six months. Management has noticed. The presence of the jacket at the table has changed the tone of discussions in ways nobody has directly acknowledged."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "armored",
+    "concealed ballistic",
+    "work jacket",
+    "security",
+    "field jacket",
+    "protection"
+  ],
+  "parent_corponation": ""
+}

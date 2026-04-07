@@ -1,0 +1,34 @@
+{
+  "name": "Stratum Executive Formal Dress Uniform",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "corporate_dress_uniform",
+  "manufacturer": "Stratum Corporate Apparel Division",
+  "description": "Stratum's formal dress uniform is issued to management-tier employees for client presentations, regulatory appearances, and internal advancement ceremonies. The jacket is structured worsted synth-wool in deep charcoal with a subtle herringbone weave visible only in direct light. Rank insignia is embedded in the left breast in Stratum's standard chromatic thread — color-shifting from silver to gold depending on seniority level, verified by a micro-NFC chip that can be scanned at security checkpoints. The trousers are cut with a full-break hem and include a hidden cable-management channel along the left inner seam for BCI tether routing.\n\nThe uniform is not sold — it is issued, registered to the employee's ID, and must be returned upon separation from the company. Employees who leave Stratum under good terms receive a certificate allowing them to purchase the uniform at cost (Φ140). Employees separated for cause have the uniform remotely flagged — the chromatic thread shifts to a flat gray that doesn't respond to light, which is not subtle.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ140",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "The Stratum dress uniform is recognized throughout Meridian's corporate corridors. Wearing one outside of Stratum employment is technically a terms-of-service violation but not illegal. Gray-market units with the NFC chips removed circulate among people who want the credibility signal without the affiliation. Stratum's security division runs periodic sweeps for flagged or unregistered units.",
+  "story_hooks": [
+    "The character has a Stratum dress uniform with the NFC chip removed — bought gray-market. It gets them past three checkpoints before someone runs a visual ID cross-check and the story gets complicated.",
+    "The chromatic thread on a character's legitimately-issued uniform starts shifting to gray before they've received any separation notice. Either the system made an error, or someone inside Stratum has already decided their employment is ending.",
+    "A Stratum executive at a formal event is wearing a uniform with gold-level insignia, but the character's BCI flagged an NFC anomaly on the scan. The insignia might be fabricated."
+  ],
+  "tags": [
+    "formal",
+    "corporate",
+    "uniform",
+    "Stratum",
+    "dress-uniform",
+    "BCI-compatible",
+    "aug-compatible",
+    "NFC-chip",
+    "rank-insignia",
+    "Tier 3-4"
+  ],
+  "id": "bfd3b4f3642944cbb753c9d52aa7bacf",
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "3c6a91d7e04f8b25a7120fd5c8e34a72",
+  "name": "Kelden DeepStrata TunnelRig Exo-Coverall MK-2",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A dense olive-drab tunneling coverall integrated with a lightweight exoskeletal frame — carbon-composite struts running along the spine, thighs, and forearms, terminating in reinforced knee and elbow caps. The fabric is a thick-weave ballistic nylon with rubberized dust-seal cuffs at wrists, ankles, and collar. The hood is detachable with a locking collar ring. Integrated kneeling pads are gel-filled with a hard composite outer cap.\n\nBuilt for deep-bore mining and infrastructure tunnel crews working M88's subsurface expansion zones. The exo-frame reduces fatigue load during sustained crouching and material hauling. Most units in the field are heavily patched and field-repaired — factory-fresh olive drab is a rare sight on an active crew.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "thick-weave ballistic nylon",
+    "carbon-composite exo-struts",
+    "rubberized dust-seal cuffs",
+    "gel-fill composite knee caps",
+    "reinforced elbow caps"
+  ],
+  "functionality": "Integrated exo-frame offloads up to 30% of sustained crouch and carry fatigue load. Dust-seal cuffs at all openings rated for fine particulate environments. Detachable hood with locking collar ring for respirator compatibility. Reinforced knee and elbow caps rated for repeated hard-surface impact. Compatible with standard BCI haptic safety alert systems via wrist port.",
+  "what_it_says": "You work underground, your body is a tool, and the frame is the only thing keeping you functional at shift's end.",
+  "worn_by": [
+    "deep-bore mining crew members",
+    "subsurface infrastructure construction workers",
+    "tunnel maintenance teams",
+    "salvage crews working collapsed Shelf infrastructure"
+  ],
+  "manufacturer": "Kelden Industrial Systems",
+  "price_range": "Φ 560–Φ 1,100",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A tunnel crew's MK-2 rigs all registered a simultaneous haptic safety alert in a section of bore that doesn't appear on any official M88 subsurface map.",
+    "A used MK-2 exo-frame has been stress-modified beyond factory spec — someone reinforced it for a load far heavier than any standard tunneling operation requires.",
+    "Kelden's MK-2 contract for a specific deep-bore project was quietly rerouted through three shell companies — the tunnel it's equipping doesn't appear in any city infrastructure registry."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "mining",
+    "tunneling",
+    "exoskeleton",
+    "industrial",
+    "tier2",
+    "tier3",
+    "coverall",
+    "workwear"
+  ],
+  "parent_corponation": ""
+}

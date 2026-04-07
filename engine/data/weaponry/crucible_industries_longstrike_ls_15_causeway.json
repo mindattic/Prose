@@ -1,0 +1,48 @@
+{
+  "id": "33425b620c47cc088051b0a4b8dd65dd",
+  "name": "Crucible Industries Longstrike LS-15 'Causeway'",
+  "type": "weapon",
+  "aliases": [
+    "Causeway",
+    "LS-15",
+    "Bridge Builder",
+    "The Long Road"
+  ],
+  "category": "sniper",
+  "description": "A modular precision rifle system that can be configured for ranges from 500 to 6,000 meters by swapping barrel assemblies, optics packages, and ammunition types. The Longstrike is Crucible's answer to operators who need a single platform capable of adapting to any engagement scenario.\n\nThe LS-15's core receiver accepts three barrel configurations: a conventional 7.62mm precision barrel for urban work, a heavy .408 barrel for extended range, and an electromagnetic accelerator barrel powered by an auxiliary capacitor pack. Each configuration changes the weapon's characteristics entirely, and experienced operators can swap barrels in under 90 seconds.\n\nCrucible sells the Longstrike as a complete system — rifle, three barrels, optics suite, and a hardened transit case. The full kit costs more than most operators earn in a year, but those who own one rarely carry anything else.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — military and corporate security contractors",
+  "base_technologies": [
+    "Modular receiver architecture",
+    "Multi-caliber barrel swapping",
+    "Hybrid conventional/electromagnetic firing"
+  ],
+  "specifications": "caliber: 7.62mm / .408 / 4mm electromagnetic (barrel-dependent)\neffective_range: 500-6,000 meters (configuration-dependent)\nrate_of_fire: Semi-automatic (7.62mm), bolt-action (.408), single-shot (EM)\ncapacity: 10 / 5 / 3 rounds (configuration-dependent)\nweight: 5.8-11.2 kg (configuration-dependent)\npower_source: None (conventional) / Auxiliary capacitor (EM barrel)",
+  "tactical_use": "The Causeway's modularity makes it the preferred platform for operators who deploy across multiple environments without logistical support. A contractor moving from a Tier 2 urban extraction to a Tier 5 border interdiction can reconfigure the same weapon for both missions. The electromagnetic barrel turns the platform into a lightweight railgun sniper capable of defeating armored targets, though the auxiliary power requirement limits its sustained use.",
+  "cultural_context": "Crucible's marketing for the Longstrike emphasizes self-reliance and adaptability — values that resonate with Meridian 88's independent contractor culture. Owning a complete LS-15 kit is a professional credential. Fixers who see a Causeway case know they are dealing with someone who takes precision work seriously and has the resources to prove it.",
+  "known_users": [
+    "Crucible Industries field demonstration teams",
+    "Independent military contractors"
+  ],
+  "story_hooks": [
+    "An LS-15 electromagnetic barrel was found at a crime scene with its serial numbers intact — it traces to a Crucible demonstration kit that was supposed to be destroyed after a failed field test. Someone inside Crucible is diverting prototype equipment.",
+    "A contractor has modified their Causeway to accept a fourth barrel type — a plasma-channeled accelerator that nobody has seen before. They are offering demonstrations to interested parties."
+  ],
+  "ammunition_type": [
+    "7.62mm match-grade",
+    ".408 heavy precision",
+    "4mm electromagnetic penetrator"
+  ],
+  "tags": [
+    "weapon",
+    "sniper",
+    "modular",
+    "multi-caliber",
+    "railgun",
+    "tier 4",
+    "versatile",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

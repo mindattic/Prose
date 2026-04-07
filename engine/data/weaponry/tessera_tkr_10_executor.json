@@ -1,0 +1,45 @@
+{
+  "id": "5aaa3e4ec279c68180a20b15d64629ca",
+  "name": "Tessera TKR-10 'Executor'",
+  "type": "weapon",
+  "aliases": [
+    "Executor",
+    "TKR-10",
+    "The Corp Revolver"
+  ],
+  "category": "revolver",
+  "description": "The Tessera TKR-10 is a six-shot double-action revolver chambered in 10mm Auto using moon clips, featuring the same biometric grip lock found on all Tessera sidearms. The moon-clip system allows the revolver to fire rimless 10mm Auto cartridges — the same ammunition used in Tessera's TK-20 semi-automatic — simplifying logistics for Tessera security teams that field both weapon types.\n\nThe Executor exists because a small but vocal contingent within Tessera's security division insisted on revolvers. Rather than fight the preference, Tessera built a revolver that integrates into their existing ecosystem — same ammunition, same biometric lock, same corponation registration system. The result is a corporate revolver that is as controlled and trackable as any Tessera semi-automatic.\n\nThe weapon's performance with 10mm Auto is impressive. The round was originally designed for semi-automatic pistols and produces slightly higher velocity from the revolver's sealed cylinder than from a semi-automatic's breech. Combined with the revolver's inherent accuracy advantages — no moving slide to disturb aim — the Executor shoots tighter groups than most duty semi-automatics at equivalent distances.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — corponation-registered",
+  "base_technologies": [
+    "Moon-clip loading system",
+    "Biometric grip lock",
+    "Rimless cartridge adaptation"
+  ],
+  "specifications": "caliber: 10mm Auto\neffective_range: 50 meters\nrate_of_fire: Double-action revolver\nmagazine_capacity: 6 rounds (cylinder, moon clip)\nweight: 0.98 kg",
+  "tactical_use": "A corponation-integrated revolver offering 10mm Auto performance with biometric security. The moon-clip system enables fast reloads approaching semi-automatic speeds. Ammunition compatibility with Tessera's semi-automatic platforms simplifies supply logistics. The biometric lock prevents unauthorized use. The revolver mechanism eliminates feed-related malfunctions.",
+  "cultural_context": "The Executor is a curiosity — a corporate revolver in an age when revolvers are considered either traditional or eccentric. Within Tessera, the security personnel who carry Executors are viewed with a mixture of respect for their marksmanship preferences and mild amusement at their stubbornness. Outside Tessera, the weapon is proof that the corponation will accommodate even its employees' weapon preferences, provided those preferences are properly registered and tracked.",
+  "known_users": [
+    "Tessera security personnel (revolver preference)",
+    "Tessera facility defense teams",
+    "Former military personnel in Tessera service"
+  ],
+  "story_hooks": [
+    "An Executor's biometric lock fails during a security incident, and the investigation reveals that Tessera has been collecting trigger-pull timing data from every biometric weapon they've ever produced — building behavioral profiles of their own security force.",
+    "A Tessera security officer uses moon clips loaded with experimental 10mm rounds that shouldn't exist outside Tessera's R&D division. The officer has no memory of receiving them."
+  ],
+  "ammunition_type": [
+    "10mm Auto"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "corporate",
+    "tessera",
+    "biometric",
+    "moon_clip",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

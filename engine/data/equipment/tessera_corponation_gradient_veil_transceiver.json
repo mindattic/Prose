@@ -11,7 +11,7 @@
   ],
   "category": "comms",
   "description": "The Gradient Veil Transceiver is a palm-sized communications device built around Tessera's Spectral Smear Engine — a hardware-level signal processor that distributes a single transmission across dozens of simultaneous frequency bands at varying power levels, creating what appears on any monitoring sweep as uniform low-level atmospheric noise rather than a coherent broadcast. The receiving unit uses the same Spectral Smear key to reassemble the dispersed signal in real time, producing clean audio output. Without the matching key, the transmission is acoustically and mathematically indistinguishable from interference.\n\nThe device is built into a matte-black chassis roughly the size of a cigarette case, with a recessed dial for manual key cycling and a single flush-mounted speaker grille. It pairs with a standard throat mic or a dedicated lapel pickup. The Gradient Veil operates entirely in hardware — there is no software stack to exploit, no firmware to patch, and no network handshake to intercept. Tessera designed it specifically for environments where digital encryption is considered a liability because it can be cracked, spoofed, or exploited through software vulnerabilities.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "Vasquez Biocompatible Materials",
   "tier_availability": "Tier 2+",
   "legality": "Restricted",
   "base_technologies": [
@@ -62,5 +62,6 @@
     "cold",
     "chase",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

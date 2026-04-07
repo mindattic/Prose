@@ -1,0 +1,48 @@
+{
+  "id": "a59c5771209ae89a3e00e5fc735bf7d9",
+  "name": "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
+  "type": "weapon",
+  "aliases": [
+    "Wanderer",
+    "HSR-10",
+    "Trail Gun"
+  ],
+  "category": "assault_rifle",
+  "description": "The HSR-10 Wanderer is a lightweight semi-automatic rifle designed for frontier scouts, surveyors, and travelers who need a weapon that handles both two-legged and four-legged threats without weighing them down. Chambered in 6.5mm brass-cased, the Wanderer offers better range and terminal performance than the company's 5.56mm Homestead while maintaining Hearthstone's signature no-electronics design philosophy.\n\nThe rifle weighs just 2.9 kilograms thanks to a skeletonized aluminum receiver and carbon-fiber-wrapped barrel. A fixed 4x optical scope provides magnification for medium-range engagements, and the smooth two-stage trigger delivers consistent pulls that reward patient marksmanship. The 15-round magazine keeps the profile slim for carry, and the weapon's overall length with folding stock collapsed fits comfortably in a backpack frame.\n\nHearthstone developed the Wanderer after surveying frontier operators who reported that existing rifles were either too heavy for extended foot travel, too dependent on electronics that failed in remote areas, or too expensive to risk in wilderness conditions. The HSR-10 answers all three complaints with a rifle that is light, analog, and priced at Φ900.",
+  "manufacturer": "HEARTHSTONE FIREARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — civilian grade",
+  "base_technologies": [
+    "Skeletonized aluminum receiver",
+    "Carbon-fiber barrel wrap",
+    "Analog optical scope"
+  ],
+  "specifications": "caliber: 6.5mm brass-cased\neffective_range: 500m\nrate_of_fire: Semi-automatic only\nmagazine_capacity: 15 rounds\nweight: 2.9 kg",
+  "tactical_use": "The Wanderer is a traveling weapon. Its light weight and compact folding profile make it ideal for operators covering long distances on foot. The 6.5mm caliber provides enough energy for medium game and personnel threats at distances where 5.56mm begins to falter. The fixed optical scope is simple but effective, and the lack of electronics means the weapon is always ready regardless of power availability or electromagnetic environment.",
+  "cultural_context": "The Wanderer is the companion weapon of Meridian 88's frontier — carried by the scouts, traders, and wanderers who move between settlements through territory that belongs to no one. Hearthstone's marketing features actual frontier travelers rather than models, and the weapon has developed a romantic association with independence and open wilderness that its utilitarian design does little to discourage.",
+  "known_users": [
+    "Frontier scouts",
+    "Wilderness surveyors",
+    "Long-distance traders",
+    "Settlement outriders"
+  ],
+  "story_hooks": [
+    "A frontier scout's Wanderer was found beside a trail with a full magazine and no sign of its owner. The scope is scratched as if something clawed at it.",
+    "Hearthstone is sponsoring a cross-frontier endurance race where participants carry only a Wanderer and basic supplies. The race route passes through territory claimed by three hostile factions."
+  ],
+  "ammunition_type": [
+    "6.5mm brass-cased"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "lightweight",
+    "frontier",
+    "scout",
+    "analog",
+    "Hearthstone",
+    "tier 1",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

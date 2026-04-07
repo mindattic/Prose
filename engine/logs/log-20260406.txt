@@ -422,3 +422,358 @@ System.Text.Json.JsonException: 'L' is an invalid start of a value. Path: $ | Li
 2026-04-06 02:07:18AM [DBG] LlmRouter dispatching to provider=claude
 2026-04-06 02:07:18AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1815, userLen=33223
 2026-04-06 02:13:30AM [INF] StreetSamurai MAUI host started
+2026-04-06 02:15:59AM [INF] StreetSamurai MAUI host started
+2026-04-06 02:16:29AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:16:31AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:16:36AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:16:46AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:16:55AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:17:12AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 02:17:12AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.8, systemLen=2313, userLen=94
+2026-04-06 02:17:20AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=866
+2026-04-06 02:19:29AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:19:47AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:19:54AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:19:58AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:01AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:03AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:15AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:18AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:27AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:32AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:37AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:45AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:49AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:54AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:20:56AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:21:15AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:21:27AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:21:33AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:21:33AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 02:21:33AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1815, userLen=33331
+2026-04-06 02:21:46AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 02:21:46AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.6, systemLen=18804, userLen=31
+2026-04-06 02:22:22AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=6129
+2026-04-06 02:22:22AM [INF] Generated 3 character agendas
+2026-04-06 02:22:22AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 02:22:22AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.7, systemLen=930, userLen=2696
+2026-04-06 02:22:42AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=15911
+2026-04-06 02:22:42AM [WRN] Entity extraction failed — LLM returned malformed JSON
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $.entities[27].description | LineNumber: 282 | BytePositionInLine: 160.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 282 | BytePositionInLine: 160.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeString()
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EntityExtractionService.ParseExtraction(String response) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EntityExtractionService.cs:line 229
+2026-04-06 02:23:09AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=8760
+2026-04-06 02:23:09AM [ERR] Conflict discovery failed
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[3].possible_outcomes[0] | LineNumber: 50 | BytePositionInLine: 222.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 50 | BytePositionInLine: 222.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeString()
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.AgendaEngine.FindConflictsAsync(List`1 agendas, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\AgendaEngine.cs:line 146
+2026-04-06 02:23:13AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 10:57:37AM [INF] StreetSamurai MAUI host started
+2026-04-06 11:07:00AM [INF] StreetSamurai MAUI host started
+2026-04-06 11:20:48AM [INF] StreetSamurai MAUI host started
+2026-04-06 11:23:05AM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 11:35:59AM [INF] StreetSamurai MAUI host started
+2026-04-06 11:36:13AM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 11:54:46AM [INF] StreetSamurai MAUI host started
+2026-04-06 11:56:47AM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 11:57:20AM [INF] StreetSamurai MAUI host started
+2026-04-06 06:14:40PM [INF] StreetSamurai MAUI host started
+2026-04-06 06:16:06PM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 06:24:24PM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 06:33:54PM [INF] StreetSamurai MAUI host started
+2026-04-06 06:34:14PM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 06:44:31PM [INF] StreetSamurai MAUI host started
+2026-04-06 06:44:53PM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 06:53:39PM [INF] StreetSamurai MAUI host started
+2026-04-06 06:54:02PM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 07:14:00PM [INF] StreetSamurai MAUI host started
+2026-04-06 07:14:17PM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 07:24:46PM [INF] StreetSamurai MAUI host started
+2026-04-06 07:27:45PM [WRN] FTP upload failed for archetypes.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:27:50PM [WRN] FTP upload failed for characters.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:27:53PM [WRN] FTP upload failed for contracts.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:27:57PM [WRN] FTP upload failed for cyberware.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:28:02PM [WRN] FTP upload failed for entertainment.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:28:09PM [WRN] FTP upload failed for factions.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:28:19PM [WRN] FTP upload failed for places.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:28:23PM [WRN] FTP upload failed for substrates.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:28:27PM [WRN] FTP upload failed for technology.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:28:31PM [WRN] FTP upload failed for vocabulary.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:28:35PM [WRN] FTP upload failed for xref.json
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 68
+2026-04-06 07:31:15PM [INF] StreetSamurai MAUI host started
+2026-04-06 07:31:47PM [WRN] FTP upload failed for apparel.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:31:51PM [WRN] FTP upload failed for automata.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:31:56PM [WRN] FTP upload failed for consumer_goods.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:31:59PM [WRN] FTP upload failed for corponations.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:32:04PM [WRN] FTP upload failed for documents.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:32:08PM [WRN] FTP upload failed for equipment.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:32:15PM [WRN] FTP upload failed for geneware.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:32:18PM [WRN] FTP upload failed for news.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:32:21PM [WRN] FTP upload failed for pharmaceuticals.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:32:25PM [WRN] FTP upload failed for quotes.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:32:29PM [WRN] FTP upload failed for synthetics.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:32:33PM [WRN] FTP upload failed for transportation.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:32:37PM [WRN] FTP upload failed for weaponry.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:33:42PM [INF] StreetSamurai MAUI host started
+2026-04-06 07:37:41PM [INF] StreetSamurai MAUI host started
+2026-04-06 07:39:29PM [INF] StreetSamurai MAUI host started
+2026-04-06 07:40:29PM [WRN] FTP upload failed for apparel.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:40:33PM [WRN] FTP upload failed for automata.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:40:37PM [WRN] FTP upload failed for consumer_goods.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:40:41PM [WRN] FTP upload failed for corponations.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:40:45PM [WRN] FTP upload failed for documents.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:40:49PM [WRN] FTP upload failed for equipment.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:40:56PM [WRN] FTP upload failed for geneware.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:40:59PM [WRN] FTP upload failed for news.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:41:03PM [WRN] FTP upload failed for pharmaceuticals.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:41:07PM [WRN] FTP upload failed for quotes.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:41:11PM [WRN] FTP upload failed for synthetics.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:41:14PM [WRN] FTP upload failed for transportation.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:41:19PM [WRN] FTP upload failed for weaponry.htm
+System.Net.WebException: The remote server returned an error: (451) Local error in processing.
+   at System.Net.FtpDataStream.System.Net.ICloseEx.CloseEx(CloseExState closeState)
+   at System.Net.FtpDataStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\FtpPublishService.cs:line 74
+   at StreetSamurai.Core.Services.FtpPublishService.PublishAsync(String exportDir, Action`3 onProgress, CancellationToken ct)
+2026-04-06 07:42:38PM [INF] StreetSamurai MAUI host started
+2026-04-06 07:47:26PM [INF] StreetSamurai MAUI host started
+2026-04-06 08:46:53PM [INF] StreetSamurai MAUI host started
+2026-04-06 09:01:24PM [INF] StreetSamurai MAUI host started
+2026-04-06 09:02:08PM [INF] StreetSamurai MAUI host started
+2026-04-06 09:04:11PM [INF] StreetSamurai MAUI host started

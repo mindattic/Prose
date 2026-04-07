@@ -1,0 +1,52 @@
+{
+  "name": "Tessera TS-9 'Locust Cloud'",
+  "type": "automaton",
+  "classification": "Swarm Platform — Biological Material Consumption",
+  "aliases": [
+    "Locust Cloud",
+    "The Hunger",
+    "Gray Plague"
+  ],
+  "manufacturer": "TESSERA (CLASSIFIED DIVISION)",
+  "description": "The TS-9 is not a single automaton. It is a swarm of approximately ten thousand fly-sized drones, each roughly 8 millimeters in length, that operate as a single coordinated entity. Each unit is equipped with mandibles constructed from synthetic diamond that can shear organic material at the cellular level, and a micro-furnace that converts consumed biomass into electrical energy to sustain the swarm. The TS-9 eats flesh. It eats bone. It eats plant matter, leather, cotton, wood, and anything else that was once alive. It does not eat metal, plastic, or stone. When it is finished with a room, the only things left are the inorganic ones.\n\nThe swarm moves like weather. From a distance, a TS-9 deployment resembles a dark cloud or a column of smoke. Up close, the sound is unbearable — ten thousand pairs of diamond mandibles shearing simultaneously produce a high-pitched drone that has been measured at 130 decibels at the swarm center. The swarm is guided by a distributed intelligence that has no central node — destroying individual units does not degrade swarm function until attrition exceeds approximately 40 percent. The remaining units compensate by increasing individual consumption rates.\n\nField testing data, leaked from a Tessera internal server in 2197, showed the TS-9 consuming a 75-kilogram organic test subject in four minutes and eleven seconds. The test subject was a pig carcass. The data file was labeled 'Phase 1 — Inorganic Target Protocol Pending,' which implies that Tessera is working on a version that eats everything. The current model leaves behind clean skeletons with a peculiar polished quality — every trace of organic material removed with surgical precision. Witnesses describe the aftermath as looking like museum specimens.",
+  "tier_availability": "Tier 5 — military black project",
+  "legality": "Prohibited — classified as weapon of mass destruction",
+  "autonomy_level": "Fully autonomous swarm intelligence, no central control required",
+  "dimensions": "Individual unit: 8mm length. Swarm cloud: variable, typically 10-30m diameter",
+  "weight": "Individual unit: 0.3g. Full swarm: approximately 3 kg",
+  "power_source": "Biomass consumption converted to electrical energy, self-sustaining while organic material available",
+  "locomotion": "Individual flight via piezoelectric wings, swarm coordination via chemical and RF signaling",
+  "armament": [
+    "Synthetic diamond mandibles (cellular-level shearing)",
+    "Acoustic disruption (130 dB at swarm center)",
+    "Biomass consumption and conversion"
+  ],
+  "sensors": [
+    "Chemical detection (organic material identification)",
+    "Thermal imaging",
+    "Distributed visual processing across swarm"
+  ],
+  "countermeasures": "Fire is effective — the individual units are flammable. Sealed environments with positive air pressure prevent entry. Electromagnetic pulse destroys units in range but requires coverage of entire swarm volume. The swarm avoids water — submersion kills individual units.",
+  "known_deployments": [
+    "Classified Tessera testing facility (leaked data)",
+    "One rumored deployment in a corporate rival's research wing (denied by all parties)"
+  ],
+  "story_hooks": [
+    "A TS-9 swarm container has gone missing from a Tessera transport — someone has ten thousand reasons for the city to be afraid",
+    "A building in the Gulch was found empty. Every person inside — gone. Every organic surface — polished clean. The furniture was untouched."
+  ],
+  "cultural_context": "The Locust Cloud is the nightmare that makes people afraid of insects. Every fly in Meridian 88 gets a second look. Every buzzing sound triggers a moment of primal terror. The leaked testing data spread through the underground like wildfire, and no amount of Tessera denial has been able to put the fear back in the box.",
+  "tags": [
+    "automaton",
+    "swarm",
+    "consumption",
+    "horror",
+    "tessera",
+    "bioweapon",
+    "tier 5",
+    "nightmare",
+    "drone"
+  ],
+  "id": "7fffab5ddaa7ff48f5e92c2b1ef2cbc2",
+  "parent_corponation": "Tessera Corponation"
+}

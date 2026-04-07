@@ -1,0 +1,31 @@
+{
+  "name": "Watershed — Augmented Reality Flood Memorial",
+  "type": "entertainment",
+  "category": "art",
+  "subcategory": "augmented reality mural",
+  "creator": "Priya Oduya-Magnusson, commissioned by the Meridian Municipal Arts Fund",
+  "description": "An AR overlay covering a twelve-block stretch of the Tier 2 lakefront that, when viewed through any BCI with standard visual augmentation, renders the entire area as it appeared under two meters of floodwater during the 2215 Calumet disaster — with ghostly figures of survivors and recovery workers moving through the drowned streetscape in real time, their paths reconstructed from emergency BCI location logs. The piece runs continuously, updating its lighting to match actual weather conditions so that rain over the memorial site makes the underwater rendering more vivid.",
+  "year": 2216,
+  "tier_association": "Tier 2",
+  "medium": "augmented reality overlay (BCI visual), outdoor / permanent",
+  "cultural_impact": "Transformed the lakefront into an active site of grief and political memory; became the rallying point for the ongoing campaign to hold the flood barrier corponation accountable for the disaster.",
+  "controversy": "Families of victims are divided — some find the memorial essential and sustaining, others find the rendered figures of their dead unbearable and have petitioned for opt-out functionality, which the artist has refused on artistic grounds.",
+  "status": "active",
+  "tags": [
+    "augmented reality",
+    "memorial",
+    "flood disaster",
+    "BCI",
+    "public art",
+    "grief",
+    "lakefront",
+    "municipal commission"
+  ],
+  "story_hooks": [
+    "A character navigating the memorial notices a rendered figure that does not match any of the official survivor or recovery logs — someone who was present during the flood but officially wasn't.",
+    "The artist is being pressured by the commissioning body to alter the piece to remove imagery that implicates a specific infrastructure corponation, and is looking for someone to help them resist.",
+    "A new analysis of the emergency BCI location logs used to build the memorial suggests the data was selectively provided — and a significant number of people who died were scrubbed from the record."
+  ],
+  "id": "83b33abf10654ead8275ca693b62f1a3",
+  "parent_corponation": ""
+}

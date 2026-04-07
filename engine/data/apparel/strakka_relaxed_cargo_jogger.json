@@ -1,0 +1,39 @@
+{
+  "id": "f07a4e2c9d1b38570c6e25b8d3f91a04",
+  "name": "Strakka Relaxed Cargo Jogger",
+  "type": "apparel",
+  "category": "pants",
+  "description": "A hybrid between a jogger and a cargo pant — relaxed through the hip, tapered at the ankle, with two side cargo pockets that lay flat when empty. Made from a medium-weight synth-canvas that softens with wash. Popular in Tier 2 because they look decent and carry a lot.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-canvas",
+    "elastic waistband with inner drawcord",
+    "nylon pocket lining"
+  ],
+  "functionality": "Four cargo pockets with magnetic snap closures; ankle drawcord adjustment",
+  "what_it_says": "You need your hands free and your pockets full. Practical in a way that's become its own aesthetic.",
+  "worn_by": [
+    "delivery workers off-shift",
+    "Shelf-adjacent Tier 2 residents",
+    "young adults who move around a lot"
+  ],
+  "manufacturer": "Strakka",
+  "price_range": "Φ28",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The flat cargo pockets are a known spot for small-time street traders to stash product — recognizable to anyone in that world.",
+    "A character finds a previous owner's handwritten list in a pocket: items, quantities, a name they shouldn't know."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 2",
+    "cargo",
+    "jogger",
+    "casual",
+    "everyday",
+    "gene-compatible"
+  ],
+  "parent_corponation": ""
+}

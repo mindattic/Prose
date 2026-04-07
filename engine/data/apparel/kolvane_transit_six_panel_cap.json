@@ -1,0 +1,46 @@
+{
+  "id": "7bd14c3a20f8e956c4712b3d9a0fe271",
+  "name": "Kolvane Transit Six-Panel Cap",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A structured six-panel cap in faded slate-grey synth-canvas with a pre-curved brim coated in rubberized waterproofing. The Kolvane wordmark is embroidered in muted copper thread above the brow. The sweatband is moisture-wicking mesh with a small neural-port relief notch cut into the rear band — a practical detail that made Kolvane the default cap brand for augmented transit workers across Circuit.\n\nSizing runs via an internal dial adjuster at the back. Most worn examples show brim grease and salt-bleached panels from years of outdoor platform work.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-canvas",
+    "rubberized brim coating",
+    "moisture-wicking mesh",
+    "copper embroidery thread",
+    "polymer dial adjuster"
+  ],
+  "functionality": "Waterproof brim deflects acid-rain drizzle; neural-port relief notch accommodates standard single-port and dual-port BCI hardware without pressure points. UV-resistant fabric rated for extended outdoor platform exposure.",
+  "what_it_says": "You clock in, you do the job, and you've been doing it long enough that your gear knows your hardware.",
+  "worn_by": [
+    "transit operators",
+    "MagRail platform workers",
+    "street vendors",
+    "dock crew",
+    "Circuit laborers"
+  ],
+  "manufacturer": "Kolvane Workwear Co. (street label, Circuit-based)",
+  "price_range": "Φ22–Φ40",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Kolvane caps have been turning up with a counterfeit label hiding a micro-transmitter in the brim — someone is tracking transit workers.",
+    "A limited run of caps was accidentally dyed with a pigment that reacts to a specific airborne toxin, turning red — workers have been quietly hoarding them.",
+    "The original Kolvane family is trying to reclaim their brand name from the distributor that bought it out, and they need proof of original production."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "cap",
+    "six-panel",
+    "tier-2",
+    "circuit",
+    "aug-compatible",
+    "transit",
+    "everyday",
+    "waterproof"
+  ],
+  "parent_corponation": ""
+}

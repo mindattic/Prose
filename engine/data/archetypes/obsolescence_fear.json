@@ -1,0 +1,33 @@
+{
+  "id": "f267d0e7b58d642c860aa5945be4779a",
+  "name": "Obsolescence Fear",
+  "type": "archetype",
+  "category": "fear",
+  "description": "The world is upgrading and they're running last year's firmware",
+  "behavioral_signature": "Chases every new skill, tech, or trend to avoid becoming outdated",
+  "under_stress": "Abandons core competencies to chase the newest thing",
+  "at_rest": "Always learning, always updating, never comfortable with current abilities",
+  "will_always": [
+    "stay current at all costs"
+  ],
+  "will_never": [
+    "rest on existing skills"
+  ],
+  "unless": [
+    "they realize depth beats breadth for the problem at hand"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Perpetual Student",
+      "threshold": 0.75,
+      "context": "fear of falling behind"
+    }
+  ],
+  "opposite_of": [
+    "Traditionalist"
+  ],
+  "tags": [
+    "anxious",
+    "future-chasing"
+  ]
+}

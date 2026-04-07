@@ -1,0 +1,33 @@
+{
+  "id": "fddb93700311784b833da2698500038c",
+  "name": "Penance Seeker",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Trying to buy back a soul they already sold",
+  "behavioral_signature": "Takes on suffering and risk as payment for past sins",
+  "under_stress": "Seeks increasingly dangerous acts of atonement",
+  "at_rest": "Quietly carries guilt like a second skeleton",
+  "will_always": [
+    "accept punishment they may not deserve"
+  ],
+  "will_never": [
+    "forgive themselves"
+  ],
+  "unless": [
+    "someone they wronged explicitly releases them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Guilt Carrier",
+      "threshold": 0.85,
+      "context": "driven by past wrongs"
+    }
+  ],
+  "opposite_of": [
+    "Egoist"
+  ],
+  "tags": [
+    "guilt-driven",
+    "atoning"
+  ]
+}

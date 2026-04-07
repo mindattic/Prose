@@ -1,0 +1,53 @@
+{
+  "name": "Arcturus KS-9 'Orchard'",
+  "type": "automaton",
+  "classification": "Spider Platform — Chemical Dispersal",
+  "aliases": [
+    "Orchard",
+    "Crop Duster",
+    "Fog Machine"
+  ],
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "description": "The KS-9 is a medium-sized hexapod platform designed for area chemical dispersal operations. Its thorax-mounted pressurized tank system can carry 40 liters of liquid agent — tear gas, nerve agent, incapacitating fog, defoliant, or any other aerosolizable chemical — and disperse it through rotating nozzles that create a uniform fog across a 200-meter radius. The unit is sealed against its own payload, allowing it to operate at ground zero of the chemical cloud it produces.\n\nThe KS-9's spider platform allows it to navigate the uneven terrain of Shelf districts, rubble fields, and tunnel systems where wheeled chemical dispersal vehicles cannot operate. It can climb to elevated positions to maximize dispersal coverage, enter buildings through windows and service corridors, and operate in environments already saturated with its own chemical payload. Multiple KS-9 units operating in coordination can maintain a persistent chemical environment across large areas indefinitely, rotating between dispersal and reloading cycles.\n\nWhat makes the KS-9 particularly concerning is its interchangeable payload system. The same platform that disperses tear gas for crowd control can, with a tank swap taking less than ninety seconds, disperse lethal nerve agents. The mechanical interface is identical. The authorization difference exists only in paperwork.",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed for non-lethal payloads; lethal payloads military restricted",
+  "autonomy_level": "Remote operated with autonomous navigation",
+  "dimensions": "1.5m thorax height, 2.4m leg span",
+  "weight": "95 kg empty, 135 kg loaded",
+  "power_source": "Hydrogen fuel cell, 24-hour endurance",
+  "locomotion": "Hexapod all-terrain",
+  "armament": [
+    "40L pressurized chemical dispersal system",
+    "Rotating nozzle array (200m dispersal radius)"
+  ],
+  "sensors": [
+    "Wind direction/speed sensors",
+    "Chemical concentration monitoring",
+    "GPS positioning"
+  ],
+  "countermeasures": "Gas masks and sealed environments negate payload. Destroying the tank creates a concentrated but non-dispersed chemical hazard. EMP disables navigation but may trigger emergency tank dump.",
+  "known_deployments": [
+    "Shelf district crowd control operations",
+    "Agricultural pest control (claimed purpose)",
+    "Underworld tunnel clearance"
+  ],
+  "story_hooks": [
+    "Three KS-9 units have been positioned around a Shelf neighborhood with unknown payloads. They haven't activated. Whoever placed them is sending a message — or waiting for a signal.",
+    "A KS-9 was found in the water treatment facility with its tank connected directly to the intake system. The tank was empty. What was in it, and is it already in the water supply?"
+  ],
+  "cultural_context": "The KS-9 represents the industrialization of chemical warfare against civilian populations. Its dual-use payload system means that every crowd control deployment carries the implicit threat that the next tank could be lethal.",
+  "tags": [
+    "automaton",
+    "spider",
+    "chemical",
+    "dispersal",
+    "weapon",
+    "war",
+    "arcturus",
+    "corporate",
+    "violence",
+    "tier 4"
+  ],
+  "id": "eaee85e227207d5b97a7b1a127b1ccd7",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "99de2ed6c5a98ca08ff63dcabb4a30ce",
+  "name": "Negative Space Thinker",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Notices what's missing more than what's present",
+  "behavioral_signature": "Identifies gaps, omissions, and conspicuous absences in information",
+  "under_stress": "Sees absence everywhere and becomes paranoid about what's hidden",
+  "at_rest": "Quietly catalogs what should be there but isn't",
+  "will_always": [
+    "ask what's NOT being said"
+  ],
+  "will_never": [
+    "be satisfied with only what's presented"
+  ],
+  "unless": [
+    "the presentation is transparently complete and verifiable"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Skeptic",
+      "threshold": 0.7,
+      "context": "detecting omissions"
+    }
+  ],
+  "opposite_of": [
+    "Book Smart"
+  ],
+  "tags": [
+    "perceptive",
+    "gap-finder"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Ouroboros PN-2 'Flicker'",
+  "type": "automaton",
+  "classification": "Sabotage Platform — Infrastructure Corruption",
+  "aliases": [
+    "Flicker",
+    "Ghost in the Wire",
+    "The Gremlin"
+  ],
+  "manufacturer": "OUROBOROS ENERGY",
+  "description": "The PN-2 is a cockroach-sized automaton, 4 centimeters long, that lives inside electronic systems. It enters through ventilation ports, cable conduits, and maintenance access panels, and it nests on circuit boards, power distribution units, and data buses. It does not destroy the systems it inhabits. It introduces errors. Small, intermittent, maddening errors that degrade performance without triggering failure alerts.\n\nA Flicker on a security system causes cameras to skip frames at random intervals — never enough to trigger a recording gap alert, always enough to miss critical moments. A Flicker on a medical device causes dosage calculations to drift by fractions of a percent — never enough to kill immediately, always enough to cause complications over time. A Flicker on a building management system causes temperature fluctuations, lighting malfunctions, and elevator timing errors that make a building slowly, imperceptibly hostile to its occupants.\n\nThe PN-2 is Ouroboros's sabotage-for-hire platform. Corporate clients pay to have Flickers introduced into rival infrastructure, degrading competitor operations through a thousand tiny malfunctions that are individually trivial and collectively devastating. The target company's systems become unreliable. Their employees become frustrated. Their clients lose confidence. The decline looks organic — like poor maintenance, bad luck, institutional rot. It is a machine the size of a cockroach eating a company from the inside.\n\nThe Flicker is almost impossible to find. It is the same size and shape as the insects that already inhabit Meridian 88's infrastructure. It moves when no one is looking. It nests in locations that technicians do not check. When a system is examined, the Flicker goes dormant, producing no detectable signal or behavior. When the technician leaves, it resumes. The average time to detect a Flicker in a compromised system is fourteen months. In that time, the cumulative damage to system reliability is typically irreversible — not because the hardware is broken, but because the operators have lost trust in their own infrastructure.",
+  "tier_availability": "Tier 3 — corporate sabotage marketplace",
+  "legality": "Illegal — classified as infrastructure sabotage",
+  "autonomy_level": "Fully autonomous error introduction based on pre-programmed disruption profiles",
+  "dimensions": "4cm length, 1.5cm width — cockroach form factor",
+  "weight": "3 g",
+  "power_source": "Parasitic power harvesting from host electronic systems, indefinite operational life",
+  "locomotion": "Six-legged ambulatory, ceiling and wall capable, fits through standard ventilation gaps",
+  "armament": [
+    "Precision error introduction (frame skips, calculation drift, timing disruption)",
+    "Signal interference at micro-scale",
+    "No physical weapons"
+  ],
+  "sensors": [
+    "Electromagnetic field detection (identifies active circuit boards)",
+    "Vibration sensing (detects human approach for dormancy trigger)",
+    "Chemical detection (identifies insecticides for evasion)"
+  ],
+  "countermeasures": "Complete system audit with physical inspection of all circuit boards and cable runs. Insect-proof sealing of all electronic enclosures (expensive, labor-intensive). Electromagnetic scanning at frequencies too low for standard sweeps. The most effective countermeasure is statistical analysis — identifying the pattern of errors and working backward to the physical location of the unit.",
+  "known_deployments": [
+    "Widespread — estimated thousands of units active across Meridian 88 corporate infrastructure"
+  ],
+  "story_hooks": [
+    "A hospital's medical equipment has been flickering — tiny errors accumulating over months, and three patients have died from dosage complications that looked like accidents",
+    "Someone has introduced Flickers into Ouroboros's own infrastructure, and they cannot find them — someone is using their own weapon against them"
+  ],
+  "cultural_context": "The Flicker has made Meridian 88 distrust its own machines. Every glitch is suspicious. Every malfunction might be sabotage. The cumulative psychological effect is a population that lives with constant, low-grade anxiety about the reliability of the systems they depend on — which is, itself, a form of sabotage.",
+  "tags": [
+    "automaton",
+    "sabotage",
+    "infrastructure",
+    "horror",
+    "ouroboros",
+    "insect",
+    "stealth",
+    "tier 3",
+    "nightmare"
+  ],
+  "id": "4af7e22cf3934fb065b744c6b0da08a2",
+  "parent_corponation": "Ouroboros Energy"
+}

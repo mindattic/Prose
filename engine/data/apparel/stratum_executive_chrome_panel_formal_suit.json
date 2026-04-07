@@ -1,0 +1,34 @@
+{
+  "name": "Stratum Executive Chrome-Panel Formal Suit",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "suit",
+  "manufacturer": "Stratum Corporate Apparel",
+  "description": "Stratum's formal line for executive-tier employees is distinct from their standard corporate uniform output — this is a suit designed for representation, not function. Cut in a deep navy or charcoal wool-analog with a tight weave that reads as almost matte in daylight and slightly richer under interior lighting, the jacket features chrome-display panels along the upper lapels: small, polished insets that can be set to display a corponation logo, a tier-certification emblem, or left as mirror chrome. The panels connect to a small BCI-responsive module at the collar that allows the wearer to toggle display states with a thought. Augment-compatible shoulder and side seaming is standard.\n\nThis suit is what Stratum issues — or more precisely, what Stratum allows executives to purchase at a significant employee discount — when they need to represent the company at external events. It signals affiliation clearly and intentionally. The chrome panels catch the eye. That is the point. In rooms full of corporate formal wear, the display panel is a flag.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ780",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "Seen at corponation partnership events, tier-ascension ceremonies, and inter-corporate diplomatic functions. The chrome panels make it immediately readable as Stratum-affiliated, which is either an asset or a liability depending on the room. Mid-level executives sometimes remove or cover the panels at personal events.",
+  "story_hooks": [
+    "A character attends a neutral diplomatic function in this suit. The chrome panels displaying the Stratum logo create visible tension with the Arcturus delegation across the room. Someone asks them to turn the display off. They decline.",
+    "The BCI display module malfunctions and begins cycling through all available logos randomly. The wearer is in the middle of a negotiation and cannot stop it without visibly reaching for the override.",
+    "A former Stratum employee still owns this suit. They have not updated the logo display since leaving the company. At this point it reads as either a statement or an oversight, and they are no longer sure which."
+  ],
+  "tags": [
+    "suit",
+    "formal",
+    "augment-compatible",
+    "BCI-responsive",
+    "chrome-display",
+    "corporate",
+    "stratum",
+    "tier-3",
+    "tier-4",
+    "affiliation-display"
+  ],
+  "id": "1a95082f71894aaebfc929a6a7313f57",
+  "parent_corponation": ""
+}

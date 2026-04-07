@@ -1,0 +1,44 @@
+{
+  "id": "1f6b4d9c7a2e058f3c1b9d6a4e7f2c8b",
+  "name": "Haelan ClimateCore Long-Sleeve Shirt",
+  "type": "apparel",
+  "category": "top",
+  "description": "A long-sleeve button-down that regulates its own thermal output through a distributed micro-filament network woven into the fabric. The shirt reads ambient temperature and the wearer's skin temperature simultaneously, adjusting the filament activation to maintain a preset comfort band. The result is that you can wear this in a cold transit tunnel and a heated office and feel roughly the same in both. The fabric looks and feels like a standard fine-weave synth-linen — matte, professional, available in eight colors including a sharp teal called 'Caspian' and a warm grey called 'Mineral.'\n\nHaelan markets this as their 'executive productivity' line — the idea being that you think better when you're not adjusting your thermostat every twenty minutes. The shirt pairs a legitimate tech feature with clean, conservative styling that reads as professional in any Tier 3 or 4 setting. The collar stays crisp. The cuffs have a single button.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "fine-weave synth-linen",
+    "micro-filament thermal mesh",
+    "poly-cotton blend lining",
+    "mother-of-pearl-analog buttons"
+  ],
+  "functionality": "Distributed micro-filament network provides active thermal regulation across a 12-degree comfort band. Battery-free — powered by body heat differential. No BCI required; operates passively.",
+  "what_it_says": "You've invested in quality where quality makes sense. You're practical about tech — you use it when it works, not to impress anyone.",
+  "worn_by": [
+    "middle managers",
+    "consultants",
+    "Tier 3 professionals",
+    "people who commute through multiple climate zones daily"
+  ],
+  "manufacturer": "Haelan Apparel Group",
+  "price_range": "Φ145",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of ClimateCore shirts distributed through a third-party retailer was discovered to have an additional sensor layer that reports location and biometric data — Haelan claims it was a manufacturing error.",
+    "The micro-filament network can be adapted, with the right tools, into a rudimentary signal-interference layer — someone on the Shelf figured this out and is selling the modification.",
+    "A character running in from the cold walks into a meeting wearing this and the shirt is still adjusting — the slight shimmer of the fabric activating catches the wrong person's attention."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "dress shirt",
+    "tier 3",
+    "haelan",
+    "climate control",
+    "smart fabric",
+    "tech",
+    "professional",
+    "office"
+  ],
+  "parent_corponation": ""
+}

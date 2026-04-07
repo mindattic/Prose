@@ -1,0 +1,39 @@
+{
+  "id": "d7e8f9a0b1c2345678d9e0f1a2b3c4d5",
+  "name": "Ovex DutyLine Security Trouser",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Straight-cut duty pants in charcoal or midnight navy, designed to look professional while carrying the weight of a full duty belt. Heavy-duty belt loops, two side cargo pockets, hidden shin pockets, and a structured waistband with internal stiffening. The fabric has a subtle sheen from its moisture-wicking finish.\n\nStandard purchase for private security firms across Tiers 2 and 3. Some guards have worn the same pair for five years. Others buy them because they look vaguely official without being a uniform — useful for people who want to project authority without being affiliated.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "moisture-wicking poly-twill",
+    "reinforced waistband with internal stiffener",
+    "nylon cargo pocket gussets"
+  ],
+  "functionality": "Reinforced belt loops rated for full duty belt, hidden shin pockets, moisture-wicking finish, structured waistband",
+  "what_it_says": "You work a post, you carry weight, and you've been doing it long enough to know what pants actually hold up.",
+  "worn_by": [
+    "private security guards",
+    "building security",
+    "club staff",
+    "people projecting informal authority"
+  ],
+  "manufacturer": "Ovex",
+  "price_range": "Φ42",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A security guard realizes their hidden shin pockets were searched during a shift — by someone who knew exactly where to look.",
+    "The pants are sold in bulk to a private security firm that just lost a major contract — the guards are keeping them and looking for new work."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 2",
+    "security",
+    "duty",
+    "tactical",
+    "professional"
+  ],
+  "parent_corponation": ""
+}

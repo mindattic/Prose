@@ -11,7 +11,7 @@
   ],
   "category": "comms",
   "description": "The Spectral Relay Shroud is a wearable signal architecture layered into a thin, flexible garment worn beneath street clothing — typically a vest or collar insert. It operates by fragmenting outgoing transmissions into thousands of microsecond-duration bursts, scattering them across seventeen discrete frequency bands simultaneously before reassembling them at the receiving end via a paired Vantablack decoder unit. The result is a signal profile that, to conventional intercept equipment, resembles nothing more coherent than ambient electromagnetic noise — radio ghost-chatter from old infrastructure, the static hiss of decaying city grid components.\n\nWhat distinguishes the Shroud from competing signal-scatter systems is Vantablack's proprietary Chromatic Masking Layer, a passive analog component woven into the garment's lining that mimics the EM signature of the wearer's immediate environment. Near a power relay, the Shroud bleeds into the relay's hum. Near a corporate tower, it replicates the tower's passive emissions. This environmental mimicry is not digital — it cannot be patched out or remotely disabled — making the Shroud uniquely resilient against software-based spectrum sweeps.\n\nThe Shroud is a tool of journalists, fixers, and mid-tier syndicate coordinators who need persistent, low-detectability communication over extended operational periods rather than brief tactical bursts. Vantablack markets it obliquely through front distributors, framing it as 'signal privacy apparel' for executives concerned about corporate espionage — a fiction that provides useful legal cover while the product finds its true market in Meridian 88's lower precincts.",
-  "manufacturer": "VANTABLACK MEDIA",
+  "manufacturer": "Voss Signal Intelligence",
   "tier_availability": "Tier 2+",
   "legality": "Restricted",
   "base_technologies": [
@@ -59,5 +59,6 @@
     "clothing",
     "fire",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Vantablack Media"
 }

@@ -12,7 +12,7 @@
   ],
   "category": "tools",
   "description": "A portable device that destroys physical evidence and electronic data with a combination of thermite incineration and electromagnetic pulse. The CED-2 has two compartments — a thermite chamber that incinerates physical items at 2,500°C, and an EMP generator that permanently destroys electronic data on any device placed within its field. The device is single-use and reduces its contents to unrecoverable ash and magnetically wiped circuits in under 5 seconds. Tessera markets it as a 'classified material destruction system' for authorized disposal of sensitive materials.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Vasquez Biocompatible Materials",
   "tier_availability": "Tier 3+",
   "legality": "Licensed — authorized evidence destruction",
   "base_technologies": [],
@@ -38,10 +38,10 @@
     "tools",
     "equipment",
     "crime",
-    "ai",
     "elf",
     "market",
     "circuit",
     "tier 3"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

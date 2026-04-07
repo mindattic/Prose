@@ -1,0 +1,49 @@
+{
+  "id": "7d1e4a9c3f820b56e2d7a1c4f9308be2",
+  "name": "Copperveil Chromeskin Club Strike Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A Tier 2 circuit-worker's Saturday night transformation — designed explicitly to put chrome augmentation on display in a way the factory floor never allows. The centerpiece is a structured synth-leather vest in deep copper-brown with chrome-plated shoulder rivets and open arm channels: both sleeves are absent entirely, replaced by fitted chrome-display bracers that run from wrist to mid-bicep, leaving the full augmented arm — or a natural arm — exposed and framed. The back panel of the vest is cut in a deep V to expose spinal rig ports and upper chrome plating for those with dorsal augmentation. The bottoms are slim-cut trousers in matte gunmetal synth-leather with narrow amber bioluminescent piping running down the outer seams, pulsing slowly at rest and quickening in response to bass frequencies via a sewn-in vibration sensor strip. A wide chrome-buckle belt with three adjustable positioning rings anchors the waist. Footwear is ankle-high boots in matching gunmetal synth-leather with copper-tipped toes and magnetic closures. A single long earring of linked copper wire and a micro-holoprojector pendant — cycling through slow amber geometric loops — complete the look. The overall silhouette is sharp and deliberate: this person clocked out two hours ago and is not the same person who clocked in.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-leather",
+    "chrome-plated steel rivets",
+    "chrome display bracers",
+    "bioluminescent piping",
+    "vibration sensor strip",
+    "magnetic closure hardware",
+    "micro-holoprojector pendant",
+    "copper wire"
+  ],
+  "functionality": "Open arm channels designed for full chrome arm display or standard arms. Deep V-back accommodates spinal rigs and dorsal chrome plating. Vibration sensor strip in trouser seam syncs bioluminescent piping to ambient bass. Belt positioning rings allow attachment of small carry pouches. Magnetic boot closures are fast-release for quick removal.",
+  "what_it_says": "You work the floor, you have the chrome to prove it, and on your nights off you wear that chrome like jewelry instead of hiding it under a uniform. You earned your augments and you're not ashamed of a single seam.",
+  "worn_by": [
+    "Tier 2 factory workers and transit operators with chrome augmentation",
+    "Circuit district club regulars",
+    "augment-proud working class",
+    "weekend nightlife crowd who dress up without dressing out of their tier"
+  ],
+  "manufacturer": "Copperveil — Circuit district street label, two-person operation out of a converted freight container",
+  "price_range": "Φ 140 – Φ 210",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The micro-holoprojector pendant was recently purchased secondhand and still contains someone else's personal holographic files — including what appears to be a recording of a private Tier 4 meeting the previous owner should not have attended.",
+    "A Copperveil vest is found at a crime scene, and the chrome-display bracers have biometric trace data embedded in their interior lining — standard for aug hardware, but this data points to someone who died six months ago.",
+    "A Tier 4 corponation fashion division has begun quietly buying up Copperveil pieces to reverse-engineer the vibration-sync bioluminescent piping, and the two-person label's founders have just noticed their designs appearing in Tier 4 club previews with no credit."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "nightlife_club",
+    "tier 2",
+    "circuit",
+    "chrome_display",
+    "aug_compatible",
+    "synth_leather",
+    "bioluminescent",
+    "working_class",
+    "street_label"
+  ],
+  "parent_corponation": ""
+}

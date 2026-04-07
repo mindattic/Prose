@@ -1,0 +1,41 @@
+{
+  "id": "b1e4d7f2a09c3e58b6d1f3a7c2e0b5d9",
+  "name": "Ferrogrip Maglock Treader",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A wide, flat-soled boot with an embedded magnetic locking plate in the forefoot and heel, designed for workers on elevated steel gantries and magnetized warehouse floors. The upper is stiff synthetic leather reinforced with a thin alloy toe cap. A rotary dial on the outer ankle adjusts magnetic pull between passive grip and active lock. Looks like a boot that was designed by someone who had never seen a boot — boxy, industrial, unmistakable.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synthetic leather",
+    "alloy toe cap",
+    "magnetized polymer sole plate",
+    "neoprene collar"
+  ],
+  "functionality": "Adjustable magnetic sole lock (passive grip to 80kg pull), steel-toe protection, anti-static lining",
+  "what_it_says": "You work at height on industrial rigs or in automated warehouses. Safety is mandated, not chosen.",
+  "worn_by": [
+    "gantry workers",
+    "warehouse floor staff",
+    "freight loaders",
+    "construction riggers"
+  ],
+  "manufacturer": "Axiom Safety Wear",
+  "price_range": "Φ35 - Φ50",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The maglock function can be remotely triggered — a saboteur who knows the frequency can lock a worker's feet to a gantry mid-shift.",
+    "Surplus units from a decommissioned Axiom contract show up on Shelf markets, dials stripped out and resold cheap."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "maglock",
+    "industrial",
+    "safety",
+    "work boot",
+    "warehouse"
+  ],
+  "parent_corponation": ""
+}

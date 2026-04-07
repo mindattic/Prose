@@ -9,7 +9,7 @@
   ],
   "category": "combat_stimulant",
   "subcategory": "adrenal_booster",
-  "manufacturer": "Lazarus Pharmaceuticals",
+  "manufacturer": "Pillar Orthopedics",
   "description": "Drexaline is a synthetic catecholamine cascade accelerant that floods the bloodstream with a precisely titrated mixture of epinephrine analogues and norepinephrine amplifiers. Developed for Lazarus's corporate security division, it produces a controlled adrenal surge lasting 18-22 minutes, dramatically increasing strength output, vascular response, and pain threshold. The comedown is severe but survivable — the drug was engineered with liability in mind.",
   "method_of_use": "injection",
   "effects": [
@@ -58,5 +58,6 @@
     "shelf",
     "tier 3",
     "tier 4"
-  ]
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
 }

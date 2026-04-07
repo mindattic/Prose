@@ -1,0 +1,47 @@
+{
+  "id": "7d2b9e4c1f8a3057e6c2b9d4f1a83057",
+  "name": "Ferroink Chromepulse Circuit Dancer Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A Tier 2 club outfit from Ferroink's underground-adjacent street line — the stuff they sell out the back of their licensed Circuit district shop, priced for factory workers who save for a month to afford one night of looking like they belong somewhere better. The centerpiece is a structured crop top in gunmetal reactive-weave fabric that shifts from dark steel to deep violet as the wearer's body heat and movement interact with the thermochromic coating. The fabric is thick enough to feel substantial but cut tight, with a high neckline in the back and a deep-V in the front, finished with chrome-plated magnetic clasps along the collar that double as BCI-port covers when snapped shut. The sleeves are detachable at the shoulder via the same magnetic system — exposing chrome arm augmentations or leaving skin bare. Below: high-waisted flared trousers in the same reactive gunmetal fabric, with thin strips of electroluminescent wire sewn into the outer seams from hip to floor, pulsing cold blue-white in a slow cascade pattern synced to an embedded micro-controller clipped inside the waistband. The flare at the ankle is wide enough to accommodate prosthetic leg rigs. Footwear is Ferroink's own block-heeled ankle boot in brushed chrome synth-leather, with a small EL wire stripe along the sole edge that matches the trouser pulse. Hair or headgear: often a chrome ear cuff trailing thin fiber-optic strands that brush the jaw.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "thermochromic reactive-weave fabric",
+    "chrome-plated magnetic clasps",
+    "electroluminescent wire",
+    "micro-controller unit",
+    "brushed chrome synth-leather",
+    "fiber-optic strands"
+  ],
+  "functionality": "Thermochromic fabric reacts to body heat and movement. EL wire trouser seams pulse via embedded micro-controller. Detachable magnetic sleeves accommodate chrome arm augmentations. Ankle boot flare accommodates prosthetic leg hardware. BCI port covers integrated into collar clasps.",
+  "what_it_says": "This is someone who worked for this night. The outfit is quality — not Spire quality, but real quality — and it's worn with the pride of someone who saved for it. There's aspiration here, but also genuine Circuit identity: functional details, nothing wasted, every component earns its place.",
+  "worn_by": [
+    "Circuit factory workers on weekend leave",
+    "transit operators celebrating a shift milestone",
+    "club-circuit regulars in the mid-tier dance scene",
+    "chrome-limb wearers who want their hardware integrated into the look rather than hidden"
+  ],
+  "manufacturer": "Ferroink Street Line (semi-licensed Circuit district retail)",
+  "price_range": "Φ380–Φ620",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The micro-controller in the waistband is a standard Ferroink unit — but this one has been modified to also broadcast a low-frequency signal that a character realizes is being used to map the crowd's augmentation signatures.",
+    "A Tier 4 talent scout at the club mistakes the wearer for someone from a higher tier based purely on how they carry the outfit — and the offer they extend could change everything, or be a setup.",
+    "The chrome clasps are a matching set with a limited-run production batch — and someone across the dancefloor is wearing the other half, which shouldn't be possible if the wearer bought them legitimately."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "nightlife_club",
+    "tier_2",
+    "circuit",
+    "aug_compatible",
+    "reactive_fabric",
+    "electroluminescent",
+    "ferroink",
+    "dance",
+    "aspirational"
+  ],
+  "parent_corponation": ""
+}

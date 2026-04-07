@@ -1,0 +1,32 @@
+{
+  "name": "Halverson Synth-Wool Occasion Tuxedo",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "tuxedo",
+  "manufacturer": "Halverson & Crane",
+  "description": "A single-button tuxedo in a deep charcoal synth-wool blend with a satin-analog lapel that catches light cleanly without looking cheap. Halverson's mid-market tuxedo line is built for the Tier 2-3 customer who attends corporate events, union ceremonies, or the occasional Tier 3 social function and needs to look correctly dressed without spending a month's rent. The jacket features augment-compatible seaming at the shoulders and a discreet port-access panel along the left side, closed with a magnetic seam that lies flush when not in use. The trousers have a single satin-analog stripe down each leg and are cut with enough room in the seat to accommodate minor geneware — standard tail modifications require aftermarket alteration.\n\nIt is not a remarkable garment. That is precisely its value. A person wearing this tuxedo registers as appropriately formal and nothing more — no tier signal strong enough to cause friction, no affiliation display to read. For Tier 2 workers attending Tier 3 functions, invisibility is the point.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ190",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The default tuxedo of Meridian's working professional class. Rental versions circulate widely through Tier 2 social networks. Owning one rather than renting signals a degree of social ambition. Seen at union investiture ceremonies, corporate welcome events, and Tier 3 weddings.",
+  "story_hooks": [
+    "A character buys this tuxedo specifically for a job interview at a Tier 4 corponation. They are told, gently, that the event is business casual. They wear it anyway.",
+    "The augment port panel is a standard feature, but someone has modified theirs to conceal a secondary compartment. Whatever was inside it is gone. The previous rental owner left no other trace.",
+    "Two colleagues show up to the same corporate gala in identical Halverson tuxedos. The evening becomes about something other than the event."
+  ],
+  "tags": [
+    "tuxedo",
+    "formal",
+    "augment-compatible",
+    "mid-market",
+    "tier-2",
+    "tier-3",
+    "synth-wool",
+    "halverson"
+  ],
+  "id": "841f84756e4949a397e0cf8b74c75fda",
+  "parent_corponation": ""
+}

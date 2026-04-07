@@ -1,0 +1,41 @@
+{
+  "id": "b8e21c4f73a905d6c1b2a3e4f5d67891",
+  "name": "The Silt Markets (Flooded Lower Shelf Bazaar)",
+  "type": "entertainment",
+  "category": "phenomenon",
+  "subcategory": "ghost market",
+  "description": "A rotating ghost market that sets up in the partially-flooded sub-levels of the Lower Shelf — specifically in the drowned infrastructure corridors beneath Districts 3 through 9 — operating from flat-bottomed salvage rafts lashed together into temporary floating bazaar islands. Goods sold include unregistered geneware grafts, pre-Consolidation artifacts recovered from flooded Old Chicago basements, and black-market water filtration tech that predates the Aqua-Plex monopoly. The Silt Markets move location every 48 hours, announced only through a waterproofed paper note system called Drift Cards, which are passed hand-to-hand — deliberately analog to avoid BCI intercept. The markets have been running continuously since 2197, surviving three major corporate sweep operations by the Aqua-Plex enforcement arm.",
+  "origin_year": 2197,
+  "tier_association": "Tier 1",
+  "status": "active",
+  "corporate_stance": "opposed",
+  "cultural_impact": "The Silt Markets are one of the primary sources of unregistered medical goods for Shelf residents who cannot afford licensed clinics, making them simultaneously a lifeline and a legal hazard — anyone caught buying there faces mandatory rehabilitation processing under Aqua-Plex jurisdiction. The Drift Card system has inspired similar analog communication networks in other Shelf districts.",
+  "key_figures": [
+    "Marisol Anand-Ferreira (market coordinator, known only by raft sigil)",
+    "Kweku Jørgensen-Obi (Drift Card printer and distributor)",
+    "Aqua-Plex Enforcement Captain Liesel Nakagawa-Ruiz (primary antagonist)"
+  ],
+  "locations": [
+    "Sub-Level Corridor 3-West, Lower Shelf",
+    "The Raft Ring (flooded intersection of Drowned 5th and Old Canal)",
+    "Jørgensen-Obi's Print Hole, District 6 surface"
+  ],
+  "story_hooks": [
+    "A Drift Card arrives addressed to someone who has been dead for six years — and the location it names is a corridor that should be completely sealed.",
+    "Aqua-Plex has planted a mole in the Drift Card distribution chain; the characters must identify the mole before the next market night without tipping off the sweepers.",
+    "A vendor at the Silt Markets is selling pre-Consolidation data chips that contain what appears to be live BCI feeds from people who died in the flooding — and someone very powerful wants them suppressed."
+  ],
+  "tags": [
+    "ghost market",
+    "flooded infrastructure",
+    "Lower Shelf",
+    "analog communication",
+    "Aqua-Plex",
+    "unregistered geneware",
+    "water rights",
+    "Drift Cards",
+    "Tier 1",
+    "black market medicine"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,34 @@
+{
+  "id": "250a6e61c69ac1503e9f2d01df20c19f",
+  "name": "War Dog",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Trained for violence so thoroughly that peace feels like a foreign country",
+  "behavioral_signature": "Moves through civilian spaces like they're clearing rooms",
+  "under_stress": "Treats every situation as combat, including ones that aren't",
+  "at_rest": "Restless, hypervigilant, uncomfortable without a mission",
+  "will_always": [
+    "see the tactical dimension of every situation"
+  ],
+  "will_never": [
+    "fully relax in civilian settings"
+  ],
+  "unless": [
+    "someone creates a space safe enough to disarm in"
+  ],
+  "similar_to": [
+    {
+      "archetype": "War Weary",
+      "threshold": 0.7,
+      "context": "combat conditioning"
+    }
+  ],
+  "opposite_of": [
+    "Pacifist"
+  ],
+  "tags": [
+    "conditioning",
+    "hypervigilance",
+    "combat_identity"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "7d14e3a092fc58b1d6e047c3a8291f5e",
+  "name": "MindBridge ClearState Addiction Nullifier",
+  "brand_name": "MindBridge",
+  "product_name": "ClearState",
+  "type": "cyberware",
+  "aliases": [
+    "the null",
+    "clean chip",
+    "the off switch",
+    "flatline (slang, pejorative)",
+    "soberware"
+  ],
+  "category": "health",
+  "body_location": "cranial — subdural microarray implanted at the nucleus accumbens and prefrontal cortex interface via stereotactic insertion",
+  "description": "The MindBridge ClearState is a neuromodulation implant targeting the mesolimbic dopamine pathway — the neurological infrastructure of craving, reward, and compulsive behavior. Two clusters of micro-electrode filaments, thinner than human hair, are placed at the nucleus accumbens and the ventromedial prefrontal cortex via a minimally invasive stereotactic procedure. The implant continuously monitors electrical patterns associated with craving states — specific oscillatory signatures that precede compulsive behavior — and responds with precisely calibrated deep stimulation pulses that interrupt the feedback loop before it completes. It does not eliminate pleasure; it eliminates the hijacking of the reward system by substances or compulsive behavioral patterns. The system is programmable, allowing a licensed clinician to tune it for specific addiction profiles: chemical dependencies (stims, alcohol, synthetic opioids, nicotine compounds), behavioral compulsions (gambling circuits, certain compulsive consumption patterns), or broad-spectrum craving suppression. A companion app provides the user with real-time craving event logs and streak data, framed in the clean, motivational UX language MindBridge built its consumer brand on.\n\nThe ClearState exists at the intersection of public health policy and consumer technology. In Meridian 88, synthetic stimulant dependency is endemic across Tier 1 and 2 — Shelf chemists produce compounds that are cheap, powerful, and engineered for repeat purchase, and the corporate economy that drives people to exhaustion also supplies the relief that exhaustion demands. The ClearState was not designed for the Shelf; it was designed for Tier 3 professionals seeking to reclaim their relationship with pharmaceutical focus aids and social sedatives. But sliding-scale subsidy programs run through city health bureaus have pushed the implant downward in price, and it is now one of the more common referral implants from Meridian 88's network of public health clinics. Recovery communities have complicated feelings about it — some embrace it as a tool, others argue it replaces one dependency with another, the dependency on a device — and that tension plays out in waiting rooms and support circles across every tier of the city.",
+  "manufacturer": "MINDBRIDGE NEUROTECHNOLOGIES CONSUMER DIVISION",
+  "tier_availability": "Tier 1-4",
+  "legality": "Licensed",
+  "installation_requirements": "Licensed neurotechnology clinic; stereotactic implantation under general anesthesia, 2–3 hour procedure; requires MindBridge-certified neurotechnician; initial programming session with addiction medicine specialist required within 30 days of installation",
+  "rejection_risk": "Low",
+  "maintenance": "Biannual firmware update and craving-profile recalibration at licensed clinic; battery replacement (biogalvanic cell) every 5 years; companion app sync weekly recommended",
+  "specifications": "{\"electrode_clusters\": \"2 (nucleus accumbens, vmPFC), 12 filaments each\", \"stimulation_type\": \"deep transcranial micro-pulse, 0.8–4.2mA adjustable\", \"detection_latency\": \"0.4 seconds from craving-pattern onset to intervention\", \"programmable_profiles\": \"up to 6 concurrent addiction/compulsion profiles\", \"battery\": \"biogalvanic cell, 5-year lifespan\", \"data_output\": \"encrypted health profile sync, craving event logging\", \"companion_app\": \"MindBridge ClearState OS, available on all neural interface platforms\", \"dimensions\": \"dual microarray, each node 4mm diameter\"}",
+  "side_effects": [
+    "Emotional blunting during the first 4–6 weeks as the stimulation profile calibrates to the user's individual neural baseline",
+    "Occasional mild headache or pressure sensation behind the eyes following a high-intensity craving-interruption event",
+    "Some users report a temporary reduction in motivation or creative drive during the calibration period, which typically resolves",
+    "Rare: dysphoric episodes if stimulation thresholds are set too aggressively; corrected by clinician recalibration"
+  ],
+  "cultural_context": "The ClearState is one of the most socially loaded implants in Meridian 88. In Tier 3 and 4 circles, disclosing a ClearState is an act of carefully managed vulnerability — it signals self-awareness, willingness to invest in personal health, and the financial means to do so, all at once. In Tier 1 and 2 communities, it is more complicated. Recovery communities on the Shelf are split: older networks, built around peer support and spiritual frameworks, sometimes view the ClearState as a corporate shortcut that lets people skip the internal work addiction demands. Younger people in those same communities often roll their eyes at that argument and point to the implant as simply a better tool. The pejorative street term 'flatline' is used by people who feel the implant makes users emotionally dull or disconnected — an accusation that MindBridge's own user data disputes, though the company's credibility on the subject is, in many circles, not high. City health bureau subsidies have politicized the implant further: conservative Spire-aligned politicians periodically threaten to cut funding, arguing that subsidizing addiction treatment rewards irresponsibility, while public health advocates point to the measurable reduction in Tier 1 emergency room loads.",
+  "known_users": [
+    "People in recovery from synthetic stimulant or synthetic opioid dependencies",
+    "Tier 3 professionals managing pharmaceutical focus-aid overuse",
+    "Individuals with compulsive gambling or consumption behavioral patterns",
+    "People referred through Meridian 88 public health clinics under city subsidy programs",
+    "Family members of addicted individuals who have negotiated implant installation as a condition of household support"
+  ],
+  "story_hooks": [
+    "A contact of the players has a ClearState implant — but has been acting erratic and using again. When they investigate, they find someone has been remotely injecting false 'calm state' readings into the implant's craving-detection layer, causing it to suppress its own interventions at critical moments.",
+    "A black-market firmware mod called 'Unclip' is circulating on the Shelf — it disables the ClearState's interruption layer while leaving the companion app showing clean data, so users can use without the implant fighting them. The players are asked to find the modder, but the request comes from a source whose motives aren't clean.",
+    "A MindBridge clinical trial for a next-generation ClearState profile claims to treat not just chemical addiction but 'ideological compulsion' — the company's internal documents call it a political risk management tool. A whistleblower needs help getting the data out."
+  ],
+  "street_price": "ΦΦΦ 900–ΦΦΦ 1,400 (unlicensed installation; programming quality varies significantly)",
+  "licensed_price": "ΦΦΦ 2,200–ΦΦΦ 3,100 at MindBridge-certified clinics; city health bureau subsidies reduce cost to ΦΦΦ 300–ΦΦΦ 600 for qualifying Tier 1-2 residents",
+  "tags": [
+    "cyberware",
+    "health",
+    "lifestyle",
+    "addiction",
+    "neuromodulation",
+    "recovery",
+    "public-health",
+    "cranial"
+  ],
+  "parent_corponation": ""
+}

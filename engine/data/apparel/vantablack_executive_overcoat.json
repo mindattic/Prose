@@ -1,0 +1,43 @@
+{
+  "id": "7b3a9c1d2e4f508172839a4b5c6d7e8f",
+  "name": "Vantablack Executive Overcoat",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "A full-length structured overcoat in charcoal-black wool-cashmere blend, double-breasted with six covered buttons and a notched lapel that lies perfectly flat regardless of movement. The silhouette is architectural — padded shoulders, a defined waist, a hem that falls just below the knee. The lining is silk-analog in deep burgundy. Internal pockets are cut to hold documents, a sidearm, or both without visible distortion of the exterior line.\n\nVantablack's executive line is built for Tier 4 corporate environments. This coat signals that you run the meeting, not just attend it. The wool comes from a proprietary geneware flock in Iceland — the fibers are slightly finer than natural merino, with a subtle luster. No tech. It doesn't need any.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "wool-cashmere blend",
+    "geneware merino fiber",
+    "silk-analog lining",
+    "covered horn buttons"
+  ],
+  "functionality": "",
+  "what_it_says": "Authority, and the money to dress like it. This person makes decisions that affect other people's lives and is comfortable with that.",
+  "worn_by": [
+    "corporate directors",
+    "senior analysts",
+    "lobbyists",
+    "corponation legal counsel"
+  ],
+  "manufacturer": "Vantablack Corporate Apparel Division",
+  "price_range": "Φ620",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The coat's internal pocket dimensions are non-standard — exactly sized for a particular data-slab format that only one corponation currently uses",
+    "A Tier 4 executive was found dead wearing this coat; the burgundy lining makes it impossible to tell how long she'd been bleeding",
+    "Someone in a Tier 1 market is selling a coat that matches this description exactly, and they claim they found it"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "outerwear",
+    "tier 4",
+    "corporate",
+    "wool",
+    "overcoat",
+    "formal",
+    "normal"
+  ],
+  "parent_corponation": "Vantablack Media"
+}

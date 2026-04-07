@@ -1,0 +1,49 @@
+{
+  "id": "a3f7c2e1b84d509f6a2c3e7d1b0f4a89",
+  "name": "Ashpile Crawler's Layered Survival Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A full-body survival stack built over years of necessity. Base layer is a long-sleeve thermal compression shirt in faded ash-gray, the fabric pilled and thin at the elbows but still holding heat — the brand tag is gone, replaced with a strip of self-repair tape bearing a handwritten size in permanent marker. Over that sits a heavily patched canvas work shirt in stained olive, every pocket reinforced with riveted nylon corners, the left sleeve rolled up to expose a chrome forearm prosthetic with a makeshift rubber gasket duct-taped at the elbow joint to keep acid rain from seeping into the socket. Cargo trousers in rust-brown ripstop hang low on the hips, cinched with a belt fashioned from a strip of industrial conveyor rubber punched with a hand-drill, fitted with a salvaged hex-bolt buckle. The right thigh has a drop-leg utility pouch in cracked black nylon, stuffed visibly full. Boots are resoled so many times the sole is a patchwork of three different rubber compounds, the uppers wrapped at the ankles in waterproof seam-seal tape over cracked leather. A balaclava in mottled gray sits tucked at the collar, ready to be pulled up. Finishing the look is a salvaged construction worker's hi-viz vest worn as an outer shell, the reflective strips long since peeled off and replaced with acid-resistant patch panels in dull orange — practical not decorative.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "ripstop canvas",
+    "compression thermal knit",
+    "cracked leather",
+    "conveyor rubber",
+    "nylon",
+    "self-repair tape",
+    "acid-resistant patch panels",
+    "chrome prosthetic gasket rubber"
+  ],
+  "functionality": "Full-body acid rain resistance via layered coverage and seam-sealed boots. Drop-leg pouch for survival gear. Chrome-arm gasket prevents socket corrosion. Balaclava for respiratory protection. Multiple reinforced cargo pockets. Construction vest adds visibility in low-light industrial zones.",
+  "what_it_says": "This person has been surviving the Shelf for a long time — not scraping by on luck but on accumulated practical knowledge. Every modification is deliberate. The chrome arm is older, maintained by hand, not serviced by a clinic. They are not looking for help and are not waiting to be noticed.",
+  "worn_by": [
+    "long-term Shelf residents",
+    "salvagers",
+    "chrome-arm workers priced out of prosthetic clinics",
+    "former factory workers displaced by automation"
+  ],
+  "manufacturer": "Self-assembled from salvage, construction surplus, and street market scraps",
+  "price_range": "Φ12–Φ40 total assembled over time",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The hex-bolt buckle on the belt is stamped with a corponation serial number — it came from a piece of equipment that was officially destroyed in an industrial accident that killed eleven people. The wearer knows what it is.",
+    "The acid-resistant panels on the vest are a slightly different orange than standard construction issue — they're cut from a hazmat suit used by a specific cleanup crew. A TESSERA BioOps investigator notices.",
+    "The self-repair tape on the chrome arm's gasket is starting to fail. One bad rain is going to corrode the elbow joint. The wearer has twelve hours to find a replacement seal or lose the arm's range of motion permanently."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "survival_wear",
+    "aug_compatible",
+    "layered",
+    "salvage",
+    "acid_resistant",
+    "cargo",
+    "chrome_compatible"
+  ],
+  "parent_corponation": ""
+}

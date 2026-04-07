@@ -1,0 +1,50 @@
+{
+  "id": "3f0a8c6e2d1b7945f3a0c8e6d2b17945",
+  "name": "Coldseam Tier-Hop Courier's Full Transit Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Built for someone who moves between Tier 1 and Tier 4 in a single shift. The base is a fitted long-sleeve in neutral heather grey with sealed neural port collar — unremarkable at every checkpoint. Over it, a reversible shell jacket: one side matte olive with cargo pockets and a hood, the other side clean charcoal with a minimal structured collar that reads professional. Pants are tapered dark navy with hidden zip pockets and articulated knees. Shoes are a sleek low-profile runner in dark grey, clean enough for a Tier 4 lobby, durable enough for Shelf transit.\n\nA compact sling pack in waxed black nylon with RFID-blocking inner lining and false-bottom compartment completes the set. The whole kit compresses to bag-size. Every piece is chosen to read differently depending on which side of the jacket faces out.",
+  "tier_association": "Tier 1-4",
+  "materials": [
+    "heather grey stretch knit",
+    "reversible matte-olive/charcoal shell fabric",
+    "tapered dark navy twill",
+    "low-profile mesh-backed runner upper",
+    "waxed black nylon sling pack",
+    "RFID-blocking liner"
+  ],
+  "functionality": "Reversible jacket for rapid tier-presentation shift, RFID-blocking sling pack with false-bottom compartment, neural port collar access, articulated knees for active transit, full outfit compresses for concealed carry.",
+  "what_it_says": "I belong wherever I need to be, and by the time you figure out I don't, I'm already gone.",
+  "worn_by": [
+    "tier-hopping couriers",
+    "underground data runners",
+    "gray-market delivery operatives",
+    "fixers' trusted go-betweens",
+    "journalists working below their tier"
+  ],
+  "manufacturer": "Coldseam (street label)",
+  "price_range": "Φ420 – Φ780",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The false-bottom compartment of the sling pack currently contains a sealed data chip addressed to someone who died two weeks ago.",
+    "A Tier 4 building's facial recognition flagged the courier — not for a crime, but because their face matches a Spire family's missing-person file from eleven years ago.",
+    "The reversible jacket's charcoal side has a small embroidered mark inside the collar — a symbol that opens a door in the Shelf that shouldn't exist."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "courier",
+    "tier_hopping",
+    "reversible",
+    "aug_compatible",
+    "underworld",
+    "transit",
+    "tier1",
+    "tier2",
+    "tier3",
+    "tier4",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

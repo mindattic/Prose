@@ -1,0 +1,33 @@
+{
+  "id": "5c36bbe6cdd180e28a58818283ce587e",
+  "name": "Mastery Seeker",
+  "type": "archetype",
+  "category": "desire",
+  "description": "Good enough is never good enough, they need to be the best",
+  "behavioral_signature": "Pursues absolute excellence in their chosen domain above all else",
+  "under_stress": "Neglects everything outside their craft, including survival",
+  "at_rest": "Practicing, refining, studying the masters who came before",
+  "will_always": [
+    "push their skill further"
+  ],
+  "will_never": [
+    "settle for competence when mastery is possible"
+  ],
+  "unless": [
+    "someone needs them to be present more than they need to be perfect"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Expert",
+      "threshold": 0.8,
+      "context": "pursuit of excellence"
+    }
+  ],
+  "opposite_of": [
+    "Generalist"
+  ],
+  "tags": [
+    "driven",
+    "specialist"
+  ]
+}

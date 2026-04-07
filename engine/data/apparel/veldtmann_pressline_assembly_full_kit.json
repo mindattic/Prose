@@ -1,0 +1,50 @@
+{
+  "id": "5c2e8a1d7f430b96e2d5c0f3a1b7e428",
+  "name": "Veldtmann Pressline Assembly Full Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A factory floor assembly kit designed for the pressline environment — heat, machine noise, and twelve-hour standing shifts. The core garment is a fitted navy coverall in heavy synth-denim with a Veldtmann WorkCo embroidered patch on the right chest and a name patch on the left, along with hi-vis orange contrast stitching at every seam and pocket edge. The coverall has a back zip running from collar to mid-spine with a secondary flap that conceals and protects a spinal rig channel — a standard feature on Veldtmann's aug-accommodating line. Sleeves can be rolled and secured with internal button tabs for lathe-adjacent work. Over the coverall, a short charcoal utility apron with two wide front pockets and a magnetic tool strip at the waist provides additional protection for the torso. The gloves are heat-resistant synth-leather in dark grey with reinforced palm panels, tucked into the left apron pocket when not in use. Footwear is a pair of broad-last steel-toe work shoes in matte black with anti-static outsoles and a quick-lace retention system. A navy hard-shell bump cap with a Veldtmann logo sits on the crown, its inner foam compressed by years of use.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heavy synth-denim",
+    "hi-vis orange contrast stitching",
+    "synth-leather heat-resistant gloves",
+    "charcoal synth-canvas utility apron",
+    "anti-static rubber outsole",
+    "hard-shell ABS bump cap with foam liner",
+    "magnetic tool strip"
+  ],
+  "functionality": "Spinal rig channel with protective back flap, rollable sleeves with internal button tabs, anti-static footwear for electronics-adjacent environments, magnetic tool strip for fast-access hardware, heat-resistant glove integration, corponation ID patching system for access zone verification.",
+  "what_it_says": "You know every sound your machine makes and what each deviation means. The bump cap is dented on the left side from an incident three years ago that you don't talk about. You take pride in a clean coverall at the start of a shift even if it's ruined by hour four. Reliable. Experienced. Not management and fine with that.",
+  "worn_by": [
+    "pressline assembly workers",
+    "factory floor technicians",
+    "machine operators",
+    "quality control floor staff",
+    "production shift leads who still work the line"
+  ],
+  "manufacturer": "Veldtmann WorkCo (corponation-issued, standard factory floor uniform program)",
+  "price_range": "Φ200–Φ280 (company-issued; out-of-pocket replacement Φ440)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Veldtmann pressline worker slips the players a data chip wrapped in a heat-resistant glove — it contains shift production logs showing the factory has been running a third shift that doesn't appear in any official schedule.",
+    "The magnetic tool strip on a specific worker's apron holds something that isn't a tool — a small, very dense object that someone will pay a great deal to recover or destroy.",
+    "The bump cap's interior foam has been hollowed out and used as a concealment space for years; the worker who wore it has just been transferred, and they left something inside."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "factory_worker",
+    "assembly_line",
+    "coverall",
+    "corponation_issued",
+    "aug_compatible",
+    "veldtmann",
+    "industrial",
+    "pressline"
+  ],
+  "parent_corponation": ""
+}

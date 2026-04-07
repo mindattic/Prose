@@ -1,0 +1,47 @@
+{
+  "id": "2c8a1f5e4b7d03e9c6f2a0b8d43e7c91",
+  "name": "Vansen ArcGuard Insulated Shock-Resist Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "High-voltage insulation gloves used by electrical systems crews, transit infrastructure maintenance, and unlicensed grid tappers alike. Outer shell is matte industrial yellow with black hazard banding at the cuff — sun-faded on most working pairs to a pale mustard. The triple-layer construction sandwiches a dielectric rubber core between abrasion-resistant syn-textile inner and outer layers.\n\nKnuckle and palm zones are thickened for mechanical protection. The extended gauntlet cuff seals with a rolled-bead edge that mates with standard insulated coverall sleeves. A small embossed voltage rating stamp on the wrist reads 40kV — though street-market versions often have the rating faked upward.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "dielectric rubber core",
+    "abrasion-resistant syn-textile",
+    "matte nitrile outer coating",
+    "rolled-bead cuff seal",
+    "embossed voltage rating stamp"
+  ],
+  "functionality": "Rated 40kV dielectric insulation (genuine units). Mechanical impact resistance at knuckle and palm. Rolled-bead cuff seals against insulated coverall sleeves. Resists tearing from cable handling and conduit work.",
+  "what_it_says": "You work inside the city's nervous system and you know exactly how badly it can hurt you.",
+  "worn_by": [
+    "electrical infrastructure crew",
+    "MagRail maintenance workers",
+    "BCI installation technicians",
+    "unlicensed grid tappers",
+    "Tier 2 utility subcontractors"
+  ],
+  "manufacturer": "Vansen ChemGuard (electrical division)",
+  "price_range": "Φ55–Φ130",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A maintenance worker is found unconscious near a junction box — their Vansen ArcGuards were genuine, but something punched through the dielectric layer deliberately.",
+    "A street vendor is moving counterfeit ArcGuards with faked 80kV stamps; three grid tappers have already been hospitalized and none of them reported it.",
+    "A pair of these gloves is the only item recovered from a flooded Tier 1 transformer vault — the worker's name is stenciled inside, but they were declared dead six months ago."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "shock-resistant",
+    "insulated",
+    "electrical",
+    "work gloves",
+    "tier-2",
+    "tier-3",
+    "high-voltage",
+    "industrial",
+    "safety"
+  ],
+  "parent_corponation": ""
+}

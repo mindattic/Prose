@@ -1,0 +1,47 @@
+{
+  "id": "5e2a9c4b1f7d30862b5e8c1a4f9d7e03",
+  "name": "Phalanx Systems GripShadow Infiltration Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Street-sourced from a Phalanx Systems secondary label — technically discontinued, practically everywhere in the right circles. Thin-profile neoprene-analog shell with a microsuction gecko-pad palm and finger surface for adhesion on glass, smooth ferrocrete, and lacquered metal. The outer surface is electrostatically neutral, defeating most friction-based print scanners. Interior is smooth enough to prevent secondary print transfer.\n\nFingers are full-length but the tips are slit with a pull-tab system — fold them back for unmediated touch, snap them forward for full coverage. No branding visible externally. The only identifier is a small embossed triangle inside the left cuff.",
+  "tier_association": "Tier 1-3",
+  "materials": [
+    "neoprene-analog shell",
+    "gecko-pad microsuction polymer",
+    "electrostatic-neutral outer coat",
+    "pull-tab finger slit system",
+    "smooth-bore interior lining"
+  ],
+  "functionality": "Microsuction palm and fingers provide adhesion on smooth vertical surfaces; electrostatic neutral coat defeats friction-print scanners; pull-tab fingertip system allows rapid switch between full coverage and bare-tip tactile access; no external branding.",
+  "what_it_says": "You go places you weren't invited and you don't leave evidence.",
+  "worn_by": [
+    "infiltrators",
+    "couriers moving sensitive cargo",
+    "Shelf thieves with ambition",
+    "corporate espionage contractors",
+    "unlicensed investigators"
+  ],
+  "manufacturer": "Phalanx Systems (street secondary label)",
+  "price_range": "Φ95–Φ190",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A security consultant finds GripShadow microsuction residue on a 40th-floor window — whoever made the climb didn't use a rig.",
+    "The embossed triangle inside the cuff turns out to be a batch code that traces back to a single production run sold to one buyer three years ago.",
+    "A Tier 3 accountant is found wearing a pair — which raises more questions than the missing files ever did."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "infiltration",
+    "grip-enhanced",
+    "print-masking",
+    "stealth",
+    "street-label",
+    "tier-1",
+    "tier-2",
+    "tier-3",
+    "phalanx"
+  ],
+  "parent_corponation": ""
+}

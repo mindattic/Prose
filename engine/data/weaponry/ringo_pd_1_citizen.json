@@ -1,0 +1,50 @@
+{
+  "id": "033c9f0e80d17a8eb1387ae1cc5a7cbc",
+  "name": "Ringo PD-1 'Citizen'",
+  "type": "weapon",
+  "aliases": [
+    "Citizen",
+    "Civvie",
+    "First Gun",
+    "Starter"
+  ],
+  "category": "pistol",
+  "description": "A compact polymer-framed semi-automatic pistol chambered in .380 ACP, designed specifically for the civilian self-defense market. The Citizen is deliberately simple — no accessory rail, no optic mount, no threaded barrel. It fires, it is reliable, and it fits in a pocket or purse. Ringo designed the PD-1 to be the first and possibly only firearm that a civilian would purchase, with ergonomics optimized for untrained users and a trigger pull weight heavy enough to prevent accidental discharge during the panic of a genuine self-defense encounter.\n\nRingo sells the Citizen through licensed retail outlets in Meridian 88's mid-tier districts, where it has become the default personal defense weapon for office workers, shop owners, and anyone else who has decided that the world is dangerous enough to require a gun but not dangerous enough to require a good gun. The weapon is adequate for its intended purpose — a close-range deterrent that a scared person can point and fire with reasonable confidence that the bullet will go approximately forward.\n\nThe PD-1's most significant contribution to Meridian 88's culture is normalization. Before the Citizen, firearms ownership was associated with security professionals, criminals, and enthusiasts. The PD-1 made gun ownership ordinary — a household purchase, like a fire extinguisher, made by people who hope they'll never use it. Ringo's marketing campaign — 'Every Citizen Has The Right' — has sold over 200,000 units in Meridian 88 alone, making the Citizen statistically the most common firearm in civilian hands in the city.",
+  "manufacturer": "RINGO ENTERTAINMENT DIVISION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — civilian self-defense permit",
+  "street_price": "Φ380",
+  "base_technologies": [
+    "Polymer frame construction",
+    "Heavy trigger pull safety system",
+    "Simplified operating mechanism"
+  ],
+  "specifications": "caliber: .380 ACP\naction: Semi-automatic, striker-fired\nmagazine: 7 rounds\neffective range: 10 meters\nweight: 0.4 kg\nlength: 155mm\ntrigger pull: 3.5 kg (intentionally heavy for safety)",
+  "tactical_use": "Civilian self-defense at close range. The Citizen is designed for a single scenario: a civilian facing a direct threat who needs to fire a weapon they may never have practiced with, in a situation they never expected to encounter. The heavy trigger and simple controls reduce the chance of unintended discharge during high-stress encounters.",
+  "cultural_context": "The Citizen has made Meridian 88 a more armed city without making it obviously so. The people carrying Citizens are teachers, accountants, baristas — ordinary people who live ordinary lives punctuated by the extraordinary awareness that they might need to kill someone to survive the commute home. The normalization of civilian armament is Ringo's most profitable and most dangerous achievement.",
+  "known_users": [
+    "Meridian 88 civilian population (200,000+ units in circulation)",
+    "Small business owners",
+    "Corporate employees in mid-tier districts",
+    "First-time firearm buyers"
+  ],
+  "story_hooks": [
+    "A statistical analysis of Citizen-involved shootings reveals that PD-1 owners are more likely to shoot family members, roommates, and neighbors than actual threats. Ringo has buried the data. A researcher who found it independently has started receiving threats.",
+    "A recall notice for a specific batch of Citizens has been quietly issued — the trigger mechanism in 5,000 units has a defect that allows discharge from being dropped. Ringo is handling the recall privately to avoid publicity. The defective weapons are still in circulation."
+  ],
+  "ammunition_type": [
+    "380_acp"
+  ],
+  "tags": [
+    "pistol",
+    "weapon",
+    "civilian",
+    "personal defense",
+    "ringo",
+    "compact",
+    "common",
+    "tier 2",
+    "lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "f4a1d8e3c7209b5f6a3d2e8c0b7f1a94",
+  "name": "VitaCore BloomFilter Olfactory Modulation Implant",
+  "brand_name": "VitaCore",
+  "product_name": "BloomFilter",
+  "type": "cyberware",
+  "aliases": [
+    "the filter",
+    "nose job",
+    "scentwall",
+    "bloom",
+    "air edit"
+  ],
+  "category": "sensory",
+  "body_location": "intranasal — olfactory epithelium surface coating with ethmoid micro-node",
+  "description": "The BloomFilter is a semi-permeable biocompatible coating applied directly to the olfactory epithelium — the scent-sensitive tissue at the roof of the nasal cavity — combined with a micro-processor node seated within the ethmoid bone above it. The coating contains a population of engineered receptor-modulating proteins that intercept olfactory signals before they fully activate the underlying sensory neurons, allowing the ethmoid node to process and selectively gate what reaches conscious perception. In practical terms, the BloomFilter can be set to suppress specific odor categories — biological waste, industrial solvents, mold, smoke, decomposition — while leaving pleasant or neutral odors unaffected, or even subtly enhancing them. The system is profile-driven: users can save named scent environments ('transit', 'work', 'home', 'market') that automatically adjust suppression and enhancement parameters based on context. Unlike older, cruder olfactory suppression implants, the BloomFilter does not simply mute smell entirely — it curates it, maintaining the user's connection to their sensory environment while removing the components that cause discomfort, nausea, or distress.\n\nMeridian 88 is a megacity of layered smells, and not all of them are pleasant. The Shelf in particular — densely packed, under-ventilated, with aging waste infrastructure and the constant exhaust of street cooking, industrial runoff, and tens of thousands of bodies in close proximity — is olfactorily brutal for people who haven't grown up acclimated to it. The BloomFilter was originally marketed to Tier 3 and 4 commuters who travel through lower-tier districts for work, but its adoption on the Shelf itself has been equally significant: people who live in difficult-smelling environments don't simply want to escape them, they want to be able to choose which parts of their world they take in. Street food vendors who work near waste processing facilities, transit workers who spend shifts in tunnels, medical workers in triage environments, and parents in crowded housing blocks have all made the BloomFilter a practical staple. There is also a thriving secondary use as a scent-enhancement tool — perfumers, tea specialists, and culinary professionals use it to isolate and amplify specific aromatic components that baseline olfaction would blend into noise.",
+  "manufacturer": "VITACORE WELLNESS SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or VitaCore pharmacy installation point; no anesthesia beyond nasal topical spray; 20-minute application procedure; ethmoid node placement adds 15 minutes and requires mild sedation",
+  "rejection_risk": "Minimal",
+  "maintenance": "Profile library updates available via VitaCore app; hardware review every 18 months; coating has a 10-year estimated lifespan before re-application recommended",
+  "specifications": "{\"suppression_categories\": \"up to 12 distinct odor-class profiles simultaneously\", \"enhancement_range\": \"up to 180% amplification on selected scent channels\", \"profile_slots\": \"unlimited saved via app; 6 quick-access slots on-implant\", \"context_switching\": \"manual or location-triggered automatic\", \"coating_coverage\": \"full olfactory epithelium bilateral\", \"ethmoid_node_size\": \"4mm x 2mm\", \"power\": \"passive bioelectric sustain\", \"baseline_override\": \"full mute mode available for extreme environments\"}",
+  "side_effects": [
+    "Temporary reduced smell sensitivity for 1–3 weeks post-installation as the epithelial coating fully integrates",
+    "Occasional 'scent breakthrough' — suppressed odors briefly surfacing at full intensity when the node processes a novel compound it hasn't been trained to categorize",
+    "Some users report difficulty sleeping in newly filtered environments during the adjustment period, as familiar background smells that previously served as comfort cues are now absent",
+    "Rare: mild sinus pressure or headache during the first week as the ethmoid node settles"
+  ],
+  "cultural_context": "The BloomFilter's cultural life in Meridian 88 is rich and occasionally contentious. For Shelf residents, it represents a form of environmental agency — the ability to choose your sensory relationship with a space you cannot choose to leave — and it is spoken of with straightforward pragmatism. For Tier 3 and above users, particularly those who commute downward through the city's tiers, it carries an uncomfortable connotation: critics point out that the ability to filter out the smell of poverty while passing through it is a particular kind of privilege, and the phrase 'running a filter' has become mild slang for willful ignorance of difficult realities. This critique hasn't dampened sales, but it has made the implant a touchstone in conversations about class and embodied experience in the city. Among perfumers, tea masters, and scent artists, the BloomFilter is an unambiguous professional tool, discussed with the same technical seriousness as any precision instrument.",
+  "known_users": [
+    "Shelf residents in high-density or industrially adjacent housing",
+    "Transit and logistics workers in underground or enclosed environments",
+    "Medical and emergency response workers",
+    "Tier 3-4 commuters who pass through lower-tier districts",
+    "Perfumers, tea specialists, and culinary scent professionals"
+  ],
+  "story_hooks": [
+    "A chemical agent has been released in a Tier 2 transit hub — it is odorless to baseline humans but falls within the enhancement range of certain BloomFilter profiles, meaning every user running a particular common scent profile experienced it as overwhelmingly pleasant rather than alarming, and several followed the smell toward the source",
+    "A VitaCore app update has silently added a new suppression category to all BloomFilter units in the city — and the odor it's now blocking is one that would otherwise alert users to a specific compound being introduced into the district's air recycling system",
+    "A Shelf community has begun sharing a hand-tuned BloomFilter profile that enhances the smell of a specific street food vendor's cooking to extraordinary intensity — the profile has become a form of neighborhood identity and gathering signal, and someone wants it taken down"
+  ],
+  "street_price": "Φ220–Φ380",
+  "licensed_price": "Φ620 at VitaCore pharmacy clinics",
+  "tags": [
+    "cyberware",
+    "sensory",
+    "lifestyle",
+    "olfactory",
+    "quality-of-life",
+    "tier1-accessible",
+    "environmental",
+    "filter"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,56 @@
+{
+  "id": "7d1e8b3a5f02c694ab7d30e1f8c24b56",
+  "name": "ARCTURUS DEFENSE Echolocator MK-IV Sonar Array",
+  "brand_name": "ARCTURUS DEFENSE SOLUTIONS",
+  "product_name": "Echolocator MK-IV Sonar Array",
+  "type": "cyberware",
+  "aliases": [
+    "Bat Ears",
+    "The Ping",
+    "Cavework"
+  ],
+  "category": "auditory",
+  "body_location": "ears",
+  "description": "The Echolocator MK-IV embeds ultrasonic pulse emitters in the mastoid bones behind each ear and pairs them with a hardened cochlear receiver array capable of processing reflected soundwaves into a real-time spatial map rendered directly to the user's neural HUD or tactile sense overlay. Operating at 40-120kHz, it can generate a detailed three-dimensional map of enclosed spaces up to 30 meters, penetrating thin walls, locating moving targets, and identifying material density with trained use. The system was developed for combat deployment in low-visibility and underground theater operations.\n\nDistribution is restricted to active or contracted military personnel, GRPD tactical units, and licensed Meridian 88 security firms with Class-C hardware clearance. On the black market it commands extraordinary prices and is a signature piece of kit for deep-tunnel runners, sewer-network operatives, and Shelf-tier gang enforcers who work the undercity's lightless infrastructure. Civilian possession without a Class-C license carries a mandatory five-year sentence.",
+  "manufacturer": "Prevail Medical Systems",
+  "tier_availability": "Tier 4-5 (licensed); black market Tier 1-3",
+  "legality": "Restricted",
+  "installation_requirements": "Military-grade surgical suite; bilateral mastoid bone anchoring with titanium screw matrix; cochlear nerve bundle splicing; minimum 72-hour supervised neural calibration",
+  "rejection_risk": "Moderate — mastoid bone anchors occasionally cause chronic low-grade infection; nerve bundle splicing requires precise surgical tolerance",
+  "maintenance": "Monthly sonar calibration pulse test; mastoid site inspection every 6 months; firmware classified and pushed via encrypted Arcturus channel only",
+  "specifications": "{\"ultrasonic_range\": \"40kHz-120kHz\", \"spatial_mapping_range\": \"30m enclosed / 12m open\", \"wall_penetration\": \"Up to 8cm standard drywall / 3cm concrete\", \"refresh_rate\": \"15Hz spatial map update\", \"target_discrimination\": \"Can distinguish human from animal by mass/movement signature\", \"power_draw\": \"1.1W bioelectric + emergency capacitor reserve\", \"output_mode\": \"Neural HUD overlay or haptic pulse pattern\", \"form_factor\": \"Bilateral mastoid nodes 8mm diameter + cochlear insert\"}",
+  "side_effects": [
+    "Chronic low-frequency headaches during extended active-ping sessions",
+    "Disorientation and nausea in environments with heavy ultrasonic interference (industrial zones, certain Shelf-tier machinery corridors)",
+    "Mastoid site tenderness and occasional audible clicking during jaw movement",
+    "Psychological adaptation period: users report feeling 'blind' when the system is powered down, even in well-lit environments"
+  ],
+  "cultural_context": "Among undercity runners and tunnel gangs, a confirmed Echolocator install marks someone as either ex-military or dangerously well-funded — either way, someone not to be cornered in the dark. Arcturus' military branding and the restricted status of the hardware have made it a trophy piece in certain criminal circles, displayed via the visible mastoid anchor ports as a deliberate intimidation signal.",
+  "known_users": [
+    "GRPD SWAT and tactical units (licensed)",
+    "Arcturus-contracted private military operators",
+    "Undercity tunnel runners and infrastructure infiltrators",
+    "High-tier black market enforcement crews",
+    "Ex-military veterans who kept their hardware after discharge"
+  ],
+  "story_hooks": [
+    "An MK-IV unit begins mapping a space that the user is not currently occupying — the sonar returns are coming from somewhere else entirely, and they match a building three blocks away",
+    "A decommissioned soldier's Echolocator still receives encrypted Arcturus firmware pushes years after discharge — someone at Arcturus is maintaining the uplink deliberately",
+    "A Shelf-tier gang has gotten hold of six MK-IV units and is systematically mapping Meridian 88's undercity infrastructure — someone hired them to do it"
+  ],
+  "street_price": "Φ85,000",
+  "licensed_price": "Φ140,000",
+  "tags": [
+    "cyberware",
+    "hearing_implant",
+    "sonar",
+    "echolocation",
+    "spatial_mapping",
+    "arcturus_defense",
+    "military",
+    "restricted",
+    "undercity",
+    "auditory"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

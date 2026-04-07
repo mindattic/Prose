@@ -1,0 +1,33 @@
+{
+  "id": "05a487cf38d561182aca22056b83cc63",
+  "name": "Iron Fist Velvet Glove",
+  "type": "archetype",
+  "category": "power",
+  "description": "Smiles warmly while crushing your hand",
+  "behavioral_signature": "Exercises brutal control through charm and politeness",
+  "under_stress": "The velvet comes off and only the iron remains",
+  "at_rest": "Gracious, generous, terrifyingly polite",
+  "will_always": [
+    "maintain the appearance of civility"
+  ],
+  "will_never": [
+    "let kindness be mistaken for weakness"
+  ],
+  "unless": [
+    "genuine affection overrides the performance"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Charmer",
+      "threshold": 0.7,
+      "context": "control through charisma"
+    }
+  ],
+  "opposite_of": [
+    "Volatile"
+  ],
+  "tags": [
+    "controlled",
+    "ruthless-charm"
+  ]
+}

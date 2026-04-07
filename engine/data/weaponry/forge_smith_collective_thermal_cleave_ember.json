@@ -1,0 +1,46 @@
+{
+  "id": "f896586a9965ba7ee774aa09848cc8a4",
+  "name": "Forge-Smith Collective Thermal Cleave 'Ember'",
+  "type": "weapon",
+  "aliases": [
+    "Ember",
+    "Thermal Cleave",
+    "Hot Iron",
+    "The Brand"
+  ],
+  "category": "melee",
+  "description": "A double-bitted axe with both heads incorporating resistive heating elements that bring the cutting edges to 900 degrees Celsius — hot enough to melt through standard body armor and cauterize flesh on contact, but cool enough to be managed with standard heat-resistant gloves rather than the full thermal protection required by higher-temperature weapons. The Ember represents the Forge-Smith Collective's philosophy of practical lethality: hot enough to work, cool enough to carry.\n\nThe weapon's heating elements are powered by a chemical fuel cell integrated into the axe handle — a ferrocerium-based system that ignites on activation and burns steadily for approximately two hours. Unlike electronic heating systems that can be disrupted by EMP or power denial, the Ember's chemical heat source is immune to electronic interference. Once lit, it burns until the fuel is exhausted or the wielder manually vents the reaction chamber.\n\nThe double-bitted design serves a practical purpose beyond aesthetics: when one edge loses optimal temperature from repeated contact with cool targets, the wielder rotates to the second edge while the first recovers. In extended engagements, Ember wielders develop a rhythmic alternating pattern — strike, rotate, strike — that maintains consistent thermal cutting performance throughout the fight.",
+  "manufacturer": "FORGE-SMITH COLLECTIVE",
+  "tier_availability": "Tier 2+ (artisan availability)",
+  "legality": "Unlicensed — artisan production, thermal weapon restrictions vary by district",
+  "base_technologies": [
+    "Chemical resistive heating",
+    "Ferrocerium fuel cell",
+    "Double-bitted thermal rotation design"
+  ],
+  "specifications": "head_width: 15 cm per edge (double-bitted)\nhandle_length: 55 cm\ntotal_weight: 2.2 kg\nedge_temperature: 900°C\npower_source: Ferrocerium chemical cell, 2 hours continuous\nEMP_vulnerability: None — chemical heat source\nglove_requirement: Standard heat-resistant",
+  "tactical_use": "The Ember is a middle-ground thermal weapon — less spectacular than plasma-edge designs but far more practical and sustainable. Its two-hour burn time and EMP immunity make it reliable in the extended, chaotic engagements common in Meridian 88's lower tiers. The double-bitted rotation technique allows sustained thermal cutting without performance degradation. Against armored opponents, the 900°C edge softens and melts polymer armor components, creating gaps that subsequent strikes exploit. The weapon's chemical heat signature is visible on thermal imaging, making it poor for stealth — but anyone wielding a double-headed burning axe has already abandoned subtlety.",
+  "cultural_context": "The Ember has become the Forge-Smith Collective's most recognizable weapon — its burning edges are visible from a distance, and the chemical smell of the ferrocerium fuel is distinctive enough to serve as a warning. Forge-smiths who specialize in thermal axes are called 'brands' within the Collective, and their work is considered a distinct discipline from blade-making. The double-bitted rotation technique has become a recognized martial form, with formal instruction available in lower-tier combat schools.",
+  "known_users": [
+    "Forge-Smith Collective thermal specialists",
+    "Lower-tier heavy combatants",
+    "Salvage and demolition crews"
+  ],
+  "story_hooks": [
+    "A batch of Ember fuel cells has been contaminated with an accelerant that causes them to reach 1,600°C — well beyond the axe head's rated temperature. Several wielders have been injured when their weapons partially melted during use. Sabotage or manufacturing error?",
+    "An Ember-wielding enforcer has been marking victims with the weapon's hot edge before killing them — a brand in the shape of a specific corporate logo. Someone is sending a message."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "axe",
+    "thermal",
+    "double-bitted",
+    "artisan",
+    "tier 2",
+    "EMP-immune",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

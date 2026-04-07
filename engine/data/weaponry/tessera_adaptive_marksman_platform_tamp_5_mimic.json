@@ -1,0 +1,48 @@
+{
+  "id": "6d8ef3e011818a2693f1f63d104b20da",
+  "name": "Tessera Adaptive Marksman Platform TAMP-5 'Mimic'",
+  "type": "weapon",
+  "aliases": [
+    "Mimic",
+    "TAMP-5",
+    "The Copycat"
+  ],
+  "category": "dmr",
+  "description": "The TAMP-5 Mimic is a DMR with onboard AI that studies enemy marksmen's firing patterns and develops countermeasures in real-time. When engaged against an opposing designated marksman, the Mimic's AI analyzes incoming fire to determine the enemy's weapon type, estimated position, firing rhythm, and engagement tendencies. This analysis is presented to the operator as a BCI overlay showing the predicted timing and direction of the enemy's next shot.\n\nThe rifle fires 6.5mm caseless through a precision barrel and features a multi-sensor suite that detects incoming projectile signatures — supersonic crack analysis, ballistic trajectory backtracking, and thermal flash detection combine to build a model of the opposing shooter. The system improves with each exchanged shot, becoming more accurate in its predictions as the engagement continues.\n\nTessera markets the Mimic at Φ19,000 as a counter-sniper platform for designated marksmen who expect to face skilled opposition. The AI's ability to predict an enemy marksman's behavior creates an asymmetric advantage — the Mimic operator knows when and where the next shot is coming, while their opponent operates blind. In marksman-vs-marksman engagements, this information advantage is often decisive.",
+  "manufacturer": "Cognitive Wellness Foundation",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — advanced counter-sniper licensing",
+  "base_technologies": [
+    "Enemy pattern analysis AI",
+    "Multi-sensor incoming fire detection",
+    "Predictive counter-marksman overlay",
+    "Real-time behavioral modeling"
+  ],
+  "specifications": "caliber: 6.5mm caseless\neffective_range: 800m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 20 rounds\nweight: 5.0 kg",
+  "tactical_use": "The Mimic transforms counter-sniper engagements by providing predictive intelligence about the opposing marksman. The AI's analysis of enemy firing patterns enables the operator to time their exposure between predicted enemy shots, move during the opponent's reload cycles, and identify the enemy's position through backtracked trajectories. In prolonged marksman duels, the Mimic's advantage compounds as the AI builds an increasingly accurate behavioral model.",
+  "cultural_context": "The Mimic introduces an element of meta-cognition to precision shooting. The weapon doesn't just help the operator shoot — it helps them understand how their opponent thinks. This has created a new discipline in precision marksmanship: counter-prediction, where skilled marksmen deliberately vary their patterns to defeat AI analysis. The cat-and-mouse game between Mimic operators and pattern-aware opponents has become one of the most intellectually demanding aspects of modern precision combat.",
+  "known_users": [
+    "Counter-sniper specialists",
+    "Marksman duel specialists",
+    "Tessera precision teams"
+  ],
+  "story_hooks": [
+    "Two Mimic operators were deployed against each other. Both AIs analyzed the other's patterns, creating an escalating prediction loop that resulted in both weapons recommending the exact same shot timing — the engagement ended in a simultaneous exchange that wounded both operators.",
+    "A marksman realized the Mimic's AI was being fed false data — the 'enemy marksman' was a decoy system broadcasting fake firing signatures to draw the operator into a position where the real threat was waiting."
+  ],
+  "ammunition_type": [
+    "6.5mm caseless match"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "counter_sniper",
+    "AI",
+    "predictive",
+    "pattern_analysis",
+    "Tessera",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

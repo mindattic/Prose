@@ -1,0 +1,49 @@
+{
+  "id": "0faa377fb1448577ab8108c6b8a353bf",
+  "name": "Crucible SG-3 'Lighthouse'",
+  "type": "weapon",
+  "aliases": [
+    "Lighthouse",
+    "Sky Writer",
+    "Beacon Gun"
+  ],
+  "category": "signal device",
+  "description": "A heavy-duty 26.5mm signal launcher designed for emergency and tactical use, firing parachute-suspended illumination flares that burn at 50,000 candela for 40 seconds, visible at distances exceeding 15 kilometers. The Lighthouse is standard equipment for Meridian 88 emergency services, corporate security patrols, and anyone operating in areas where electronic communications might be jammed or unavailable.\n\nThe SG-3's most common unauthorized use is as an improvised incendiary weapon. The illumination flare burns at 1,200 degrees Celsius and will ignite virtually any flammable material on contact. Shelf residents have discovered that firing a Lighthouse flare into a building's ventilation intake fills the structure with burning magnesium — a crude but effective method of rendering a space uninhabitable. Crucible's lawyers have spent considerable effort establishing that the SG-3 is a signaling device and not a weapon, a distinction that becomes increasingly difficult to maintain as the body count rises.",
+  "manufacturer": "Crucible Educational Foundation",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — emergency signaling equipment",
+  "street_price": "Φ180 (flares Φ15 each)",
+  "base_technologies": [
+    "Magnesium illumination compound",
+    "Parachute descent system",
+    "Break-action launcher"
+  ],
+  "specifications": "caliber: 26.5mm signal\ncapacity: 1 round\nillumination: 50,000 candela, 40-second burn\nvisibility: 15+ kilometers\nflare temperature: 1,200°C\nweight: 0.4 kg\nlength: 220mm",
+  "tactical_use": "Emergency signaling, area illumination during night operations, and — unofficially — incendiary attacks. Security teams use Lighthouse flares to illuminate pursuit areas and signal for backup. Less scrupulous users fire them into structures, vehicles, and occasionally people.",
+  "cultural_context": "The Lighthouse occupies a legal gray zone that everyone exploits. It is classified as emergency equipment, so purchasing one requires no permit. It fires a projectile that burns at 1,200 degrees, so using one offensively is attempted murder. The gap between these two facts contains an entire economy of plausible deniability.",
+  "known_users": [
+    "Emergency services",
+    "Corporate security patrols",
+    "Ship and aircraft crews",
+    "Shelf residents (for various purposes)"
+  ],
+  "story_hooks": [
+    "A series of arson attacks across the lower tiers have been carried out with Lighthouse flares — fired through windows at 3 AM, each targeting a specific apartment in a specific building. The targets are all witnesses in the same ongoing investigation.",
+    "Someone has modified SG-3 flares to carry chemical payloads instead of illumination compounds, turning an unrestricted signaling device into a chemical weapon delivery system that anyone can buy without a permit."
+  ],
+  "ammunition_type": [
+    "26.5mm_signal"
+  ],
+  "tags": [
+    "signal",
+    "weapon",
+    "flare",
+    "incendiary",
+    "emergency",
+    "crucible",
+    "fire",
+    "tier 1",
+    "non_lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "a3f7c2e1b9d04856f1a2c3d4e5f60718",
+  "name": "Ouroboros ClaimBand Compliance Anklet MK-3",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "A matte-black polycarbonate band, roughly 28mm wide, locked around the ankle with a tamper-evident ceramic pin seal. The outer face displays a faint amber pulse every four seconds — the Ouroboros risk-management logo barely visible under a scratch-resistant film worn smooth from months of daily contact. Issued in two flavors: court-mandated (orange pulse) and voluntary employer-bonding compliance (blue pulse), though both models are physically identical. Street-modified versions circulate on The Shelf with the pulse spoofed green to mimic parole clearance.",
+  "tier_association": "Tier 1-3",
+  "materials": [
+    "molded polycarbonate shell",
+    "ceramic pin-lock seal",
+    "micro-LED pulse strip",
+    "geo-sync antenna mesh",
+    "silicone inner liner"
+  ],
+  "functionality": "Continuous geo-tracking with 10-meter accuracy, biometric pulse monitoring, tamper-alert triggering silent corpsec notification. Voluntary bonding versions unlock transit subsidies and employer housing credits. Cannot be removed without a licensed Ouroboros compliance terminal.",
+  "what_it_says": "You owe someone something — whether that's the courts, your employer, or a debt broker depends entirely on the pulse color.",
+  "worn_by": [
+    "parolees and court-supervised individuals",
+    "indentured contract workers",
+    "Tier 1 residents on supervised resettlement programs",
+    "Tier 2 workers under employer bonding agreements",
+    "people with spoofed units passing checkpoints"
+  ],
+  "manufacturer": "LoopCell Battery Works",
+  "price_range": "Φ0 (court-issued) / Φ180–Φ340 (employer-bond voluntary) / Φ60–Φ90 (spoofed street unit)",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A character discovers their 'voluntary' employer-bond anklet has the same firmware as a court-ordered unit — meaning Ouroboros was tracking them before they ever signed anything.",
+    "A Shelf fixer sells spoofed green-pulse units; one bad batch has a delayed tamper flag that fires twelve hours after installation, right in the middle of a job.",
+    "A Tier 3 mid-manager finds an Ouroboros compliance terminal in a maintenance closet — and realizes it can remove anklets without logging the removal."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "ankle monitor",
+    "compliance",
+    "geo-tracking",
+    "court-ordered",
+    "employer-bond",
+    "Tier 1",
+    "Tier 2",
+    "Tier 3",
+    "Ouroboros",
+    "surveillance",
+    "street-modified"
+  ],
+  "parent_corponation": "Ouroboros Energy"
+}

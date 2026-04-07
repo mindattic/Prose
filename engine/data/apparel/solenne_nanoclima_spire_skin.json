@@ -1,0 +1,46 @@
+{
+  "id": "2c8d5f1a0e3b7694d1f8c2a5e0b9d347",
+  "name": "Solenne NanoClima Spire Skin",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "An almost weightless full-torso underlayer in Solenne's signature void-white, so fine it reads as a second skin under transparent or light-colored outwear. The nano-fiber weave is visibly iridescent at close range — faint blue-gold shift depending on light angle. Solenne's atelier mark is woven into the inner left hem in platinum thread, readable only by scanner or tactile inspection.\n\nDesigned for Spire-level clients whose environments move between climate-controlled towers, exposed skybridge transit, and pressurized event spaces. The layer maintains a 0.5-degree personal microclimate regardless of external conditions — imperceptible to others, absolute in effect.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "nano-fiber thermoregulation weave",
+    "iridescent blue-gold optical polymer threading",
+    "platinum atelier mark thread",
+    "self-sealing bio-adaptive hem",
+    "pressure-sensitive microclimate regulation layer"
+  ],
+  "functionality": "Active microclimate regulation maintains personal temperature within 0.5°C of set-point via nano-fiber contraction and expansion. Interfaces with Spire BCI climate profiles for automated preference management. Moisture response is instantaneous — no perceptible sweat. Self-sealing hems conform to body changes including minor geneware expression shifts. Hand-wash only; Solenne atelier service recommended.",
+  "what_it_says": "Comfort at this level is invisible and total — the effort is in never appearing to need anything.",
+  "worn_by": [
+    "Spire executives",
+    "corponation C-suite",
+    "power brokers at formal events",
+    "Tier 5 socialites",
+    "senior Solenne atelier clients"
+  ],
+  "manufacturer": "Solenne Atelier",
+  "price_range": "Φ4,200–Φ9,800",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The nano-fiber regulation system can be read as a passive environmental sensor — someone with the right equipment can reconstruct everywhere the wearer has been based on the layer's thermal memory log.",
+    "A Solenne insider is quietly selling irregular production units — cosmetically identical but missing the climate regulation core — to Tier 3 aspirants trying to fake Spire affiliation.",
+    "The atelier mark woven into the hem carries an encrypted ownership record; a recovered Solenne Skin found on a Shelf body suggests someone powerful lost something, or someone very dangerous took it."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "nano-fabric",
+    "climate-regulation",
+    "spire",
+    "luxury",
+    "aug-compatible",
+    "gene-compatible",
+    "tier-5",
+    "Solenne"
+  ],
+  "parent_corponation": ""
+}

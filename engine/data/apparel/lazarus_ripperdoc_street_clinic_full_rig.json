@@ -1,0 +1,47 @@
+{
+  "id": "d81e5a3c7f02b694e30a17fc85d29b40",
+  "name": "Lazarus RipperDoc Street Clinic Full Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Street ripperdoc's complete working set: a long-sleeved antimicrobial wrap-coat in deep teal with brown burn-stains that no amount of washing removes, over a sealed nitrile underlayer. Surgical cap is recycled poly-weave, ear loops reinforced with wire to accommodate horn or fin geneware. Face shield is scratched but intact. Apron front has tiered tool loops — scalpels, probe leads, cable management clips.\n\nFeet: sealed boot-covers over heavy rubber-soled work boots, non-slip tread. Gloves are double-layered — inner BCI-conductive, outer disposable nitrile. The whole rig smells faintly of isopropyl and ozone. Nothing matches. Everything functions.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "antimicrobial poly-weave wrap-coat",
+    "nitrile underlayer",
+    "recycled poly-weave surgical cap",
+    "scratched polycarbonate face shield",
+    "BCI-conductive inner glove",
+    "disposable nitrile outer glove",
+    "rubber-soled work boot"
+  ],
+  "functionality": "Antimicrobial outer layer, BCI-conductive inner gloves for interface during surgery, sealed nitrile underlayer for biohazard protection, tool-loop apron, non-slip boot covers, gene-compatible surgical cap with reinforced loops.",
+  "what_it_says": "This person fixes what the licensed clinics won't touch, for people who can't afford to ask questions.",
+  "worn_by": [
+    "street ripperdocs",
+    "unlicensed augmentation surgeons",
+    "Shelf clinic staff",
+    "underground gene-mod technicians"
+  ],
+  "manufacturer": "Evergreen Wellness",
+  "price_range": "Φ 180 – Φ 620",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The burn stains on the coat are not from surgery — the ripperdoc won't say what caused them.",
+    "The BCI-conductive gloves are a licensed Lazarus model, far too expensive for a Shelf clinic — someone is supplying this doc.",
+    "A patient recognizes the tool-loop apron's stitching pattern as belonging to a Tier-4 surgical suite that went dark six months ago."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical",
+    "ripperdoc",
+    "street_clinic",
+    "aug_compatible",
+    "gene_compatible",
+    "tier1",
+    "tier2",
+    "gap_outfit"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

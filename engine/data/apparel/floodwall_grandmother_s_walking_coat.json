@@ -1,0 +1,54 @@
+{
+  "id": "5d1e8b3a7f2c904d6e0a5b1c8f3d7e92",
+  "name": "Floodwall Grandmother's Walking Coat",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "At first glance this looks like nothing — a long, shapeless coat in faded black over dark gray trousers and flat boots. Then you get closer and realize you're looking at a masterwork of Shelf textile engineering, assembled over decades. The coat is floor-length, originally a double-breasted wool-blend overcoat that has been so comprehensively rebuilt it retains only its silhouette. The body is now a patchwork of at least eleven distinct fabric sources — sections of military rain shell, cut-up transit worker hi-vis (the orange faded to a pale gold), thermal underlayer fleece, waxed cotton scraps, and what looks like the back panel of a corporate uniform jacket with the logo still faintly visible beneath two seasons of grime. The patches are stitched with extraordinary precision, tight cross-hatching along every seam, and the overall effect is a coat that looks like a map. The collar is wide and can be turned up to cover the lower half of the face; the inside is lined with strips of reflective emergency blanket sewn in a herringbone pattern. Trousers are straight-cut dark charcoal, heavy cotton-synthetic blend, with a single deep side pocket on each leg and a drawstring at the ankle — Shelf standard for keeping vermin and water out. Underneath is a turtleneck in faded rust-brown, the neck worn smooth from years of contact. Boots are flat, wide-lasted, resoled in thick black rubber with a slight platform from the accumulated layers; the uppers are scuffed to a near-suede finish. The only accessories are a hand-knotted scarf in dark olive and gray — clearly hand-spun from salvaged fiber — worn loose enough to pull up, and a canvas bag on a thick shoulder strap, its exterior covered in small embroidered symbols in thread colors that don't match anything else in the outfit.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "multi-source patchwork wool-blend and synthetics",
+    "military rain shell sections",
+    "faded hi-vis transit fabric",
+    "thermal fleece scraps",
+    "waxed cotton",
+    "corporate uniform fabric remnants",
+    "reflective emergency blanket lining strips",
+    "heavy cotton-synthetic trouser blend",
+    "rust-brown turtleneck synthetic knit",
+    "salvage-resoled flat boots",
+    "hand-spun salvaged fiber scarf",
+    "embroidered canvas carry bag"
+  ],
+  "functionality": "Coat's eleven-panel patchwork construction provides layered insulation without bulk at any single point, allowing heat regulation by partially opening different sections. Reflective lining retains body heat in cold and distributes it evenly. Wide collar seals against acid mist and wind. Ankle-drawstring trousers prevent ingress of water and vermin. Deep trouser pockets carry essentials without the coat needing to be opened. The embroidered symbols on the carry bag are a Shelf-community shorthand — readable to those who know the dialect.",
+  "what_it_says": "This coat is a record. It says: I have been here longer than most people survive here. It says: I know how to fix things. The precision of the stitching communicates mastery, not desperation. The embroidered symbols say community — this person is known, has a web, is not alone. The wide boots say flat ground and long walks, not running. This is someone who has stopped running.",
+  "worn_by": [
+    "long-term Shelf residents, particularly older women and elders",
+    "community organizers and informal neighborhood leaders",
+    "herbalists, fixers, and knowledge-keepers of Shelf communities",
+    "anyone whose survival strategy is depth of relationship rather than speed"
+  ],
+  "manufacturer": "Entirely self-made and rebuilt over many years; no manufacturer traceable",
+  "price_range": "Not for sale — but the labor value is estimated at Φ200+ in skilled stitchwork hours; the components cost Φ10–Φ30 over years of accumulation",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The embroidered symbols on the canvas bag include one that hasn't been used in fifteen years — a mark from a Shelf neighborhood that was supposedly razed in the Acid Tide of 2187, which means either the wearer survived it or inherited something from someone who did.",
+    "A character needs access to a Shelf community that is deeply insular and suspicious of outsiders; being vouched for by the person in the Walking Coat is the only reliable way in.",
+    "The faint corporate logo visible under the grime on one coat panel belongs to a corponation that officially ceased operations in 2171 — but the fabric is newer than that, meaning someone has been producing it off the books."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier 1",
+    "elder",
+    "community",
+    "patchwork",
+    "long coat",
+    "gene-compatible",
+    "survival",
+    "knowledge keeper",
+    "hand-made"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,33 @@
+{
+  "id": "fdd0278ff523695f03302d3bc71a7a0c",
+  "name": "Tribune",
+  "type": "archetype",
+  "category": "power",
+  "description": "Speaks for the people who can't speak for themselves",
+  "behavioral_signature": "Channels collective grievances into political power",
+  "under_stress": "Starts believing they ARE the people rather than their representative",
+  "at_rest": "Listens to complaints, documents injustice, builds cases",
+  "will_always": [
+    "amplify the voice of the powerless"
+  ],
+  "will_never": [
+    "use their platform for personal gain"
+  ],
+  "unless": [
+    "personal gain is the only way to keep the platform"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Demagogue",
+      "threshold": 0.7,
+      "context": "populist voice"
+    }
+  ],
+  "opposite_of": [
+    "Tyrant"
+  ],
+  "tags": [
+    "populist",
+    "representative"
+  ]
+}

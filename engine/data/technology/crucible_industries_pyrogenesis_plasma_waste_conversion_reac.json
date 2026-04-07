@@ -1,0 +1,47 @@
+{
+  "id": "253b9e6ee76e52dd7ed8fe6966d14c8d",
+  "name": "Crucible Industries PyroGenesis Plasma Waste Conversion Reactor",
+  "brand_name": "Crucible",
+  "product_name": "PyroGenesis PWC-5",
+  "type": "technology",
+  "aliases": [
+    "PyroGenesis",
+    "PWC-5",
+    "Plasma Reactor",
+    "Trash Furnace"
+  ],
+  "subcategory": "energy",
+  "description": "The PyroGenesis PWC-5 is a plasma gasification reactor that converts virtually any waste material -- organic, synthetic, toxic, or radioactive -- into synthesis gas, vitrified slag, and electrical power. The system generates an argon plasma arc at temperatures exceeding 7,000 degrees Celsius, hot enough to break down any molecular structure into its constituent elements. Waste material fed into the reactor is reduced to elemental components in seconds: carbon, hydrogen, and oxygen combine into synthesis gas that can be burned for power or refined into chemical feedstocks; everything else melts into an inert glass-like slag that can be used as construction aggregate. The process is thermodynamically self-sustaining above a minimum feed rate -- the energy released by molecular breakdown exceeds the energy required to maintain the plasma arc, generating a net power output of approximately 15 megawatts per installation.\n\nCrucible operates fourteen PyroGenesis installations in Meridian 88, processing an estimated 60% of the city's total waste output and generating enough power to supply roughly 200,000 residences. The installations are positioned in the Shelf's industrial zones, where their considerable noise, heat, and atmospheric emissions are absorbed by communities that have no political leverage to object. Crucible pays licensing fees to the Meridian Quorum for waste processing contracts and sells the generated power back to the grid at rates that make the entire operation enormously profitable -- the company is paid to take garbage and paid again for the electricity it produces from that garbage.\n\nThe PyroGenesis's ability to process radioactive and toxic waste has made it the technology of last resort for materials too dangerous to store conventionally. Crucible accepts classified waste streams from multiple corponations -- materials whose composition is not disclosed under hazardous material exemptions that Crucible's lobbyists wrote into the Quorum's environmental code. Critics have long argued that processing unknown materials at plasma temperatures risks generating equally unknown byproducts, but the argument has gained little traction because the alternative -- stockpiling toxic waste in a city at sea level -- is worse.",
+  "tier_availability": "Tier 5 (corporate industrial)",
+  "developers": [
+    "CRUCIBLE INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Argon plasma arc generation",
+    "Molecular dissociation gasification",
+    "Synthesis gas recovery and power generation"
+  ],
+  "enables": [
+    "Conversion of any waste material into energy and construction aggregate",
+    "Processing of radioactive and toxic waste streams",
+    "Net-positive energy generation from waste",
+    "Elimination of conventional landfill requirements",
+    "Chemical feedstock production from synthesis gas"
+  ],
+  "social_impact": "The PyroGenesis has made waste disposal profitable, which has the perverse effect of creating corporate incentive to generate waste. Crucible's waste processing contracts are volume-based -- the more waste they process, the more they earn. This economic structure discourages waste reduction at the source and encourages the throwaway consumption patterns that generate the Reclamation Authority's raw materials. The installations' placement in the Shelf has created zones of elevated atmospheric particulate, thermal pollution, and noise that contribute to the lower tiers' disproportionate health burden.",
+  "story_hooks": [
+    "A PyroGenesis installation has processed a classified waste stream from Ouroboros that produced an anomalous synthesis gas -- a gas with molecular properties that should not be possible according to known chemistry. The gas has been vented into the Shelf atmosphere and is having effects on the local population that Crucible cannot explain and Ouroboros will not discuss.",
+    "A Crucible waste processing worker has discovered that one of the classified waste streams being fed into the PyroGenesis contains biological material -- specifically, human biological material in quantities consistent with industrial processing rather than medical waste. Someone is using the reactor to destroy evidence of operations that produce large amounts of human remains."
+  ],
+  "tags": [
+    "technology",
+    "energy",
+    "waste",
+    "plasma",
+    "crucible",
+    "industrial",
+    "power-generation",
+    "shelf"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "296534abd1846decb2b7e528f5adfab2",
+  "name": "Grave Protocol Arms Entropy Pistol EP-1 'Half Life'",
+  "type": "weapon",
+  "aliases": [
+    "Half Life",
+    "EP-1",
+    "Entropy Pistol",
+    "The Decay"
+  ],
+  "category": "exotic",
+  "description": "A compact directed energy weapon that fires a focused beam of accelerated beta particles — essentially a handheld radioactive emitter that delivers a lethal radiation dose to a targeted area. The Half Life produces no visible beam, no sound, and no immediate physical effect. Targets exposed to the beam develop acute radiation syndrome over the following hours to days, with lethality depending on exposure duration.\n\nGrave Protocol Arms — the same phantom manufacturer behind the Terminus railgun — produced the Entropy Pistol for a purpose that even veteran intelligence operators find disturbing: a weapon designed to kill slowly, painfully, and with no possibility of treatment. Acute radiation syndrome from EP-1 exposure follows a characteristic progression — nausea, then apparent recovery, then catastrophic organ failure as the irradiated tissue dies.\n\nThe weapon is the size of a large handgun and looks like nothing more than a matte-black tube with a trigger. There are no controls, no sights, and no indicators. The weapon either fires or it doesn't, and the target either dies in three days or survives with cancer they don't know about yet.",
+  "manufacturer": "GRAVE PROTOCOL ARMS",
+  "tier_availability": "Tier 5",
+  "legality": "Prohibited — radiological weapon, classified as weapon of mass destruction",
+  "base_technologies": [
+    "Compact beta particle acceleration",
+    "Directed radiological emission",
+    "Delayed-lethality weapon engineering"
+  ],
+  "specifications": "caliber: N/A — focused beta particle beam\neffective_range: 2-30 meters\nrate_of_fire: Continuous beam, 3-second exposure for lethal dose\ncapacity: 40 lethal-dose exposures per sealed source\nweight: 1.8 kg\npower_source: Sealed radioactive source, 10-year operational life",
+  "tactical_use": "The Entropy Pistol is deployed for deniable eliminations where the time between exposure and death provides operational cover. An operator can irradiate a target in a crowd, leave the area, and be on the other side of Meridian 88 before the target shows symptoms. The weapon's lack of visible or audible signature makes detection impossible without dedicated radiation monitoring equipment, which is not standard in most security configurations.",
+  "cultural_context": "The EP-1 represents the most ethically condemned weapon in Meridian 88's arsenal. Radiation weapons were prohibited by pre-collapse international treaty, and their use carries the only weapons charge that can result in universal jurisdiction prosecution — meaning that any entity, corporate or governmental, can claim authority to pursue the user. Despite this, Grave Protocol Arms continues to produce the weapon, and its occasional use is documented by the unexplained appearance of acute radiation syndrome in individuals who had no exposure to known radioactive materials.",
+  "known_users": [
+    "Unknown — possession alone carries capital charges"
+  ],
+  "story_hooks": [
+    "A hospital is treating three patients with identical acute radiation syndrome — all attended the same corporate gala five days ago. Someone walked through the party with an Entropy Pistol, irradiating targets at a social function. The guest list is 400 names long.",
+    "A Grave Protocol Arms Entropy Pistol was found in a dumpster, still containing its sealed radioactive source. The weapon has been fired recently — the source decay pattern indicates dozens of exposures. Someone has been using it regularly, and the victims may not know they are dying."
+  ],
+  "ammunition_type": [
+    "Directed beta particle beam"
+  ],
+  "tags": [
+    "weapon",
+    "exotic",
+    "radiological",
+    "assassination",
+    "delayed-lethality",
+    "tier 5",
+    "prohibited",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

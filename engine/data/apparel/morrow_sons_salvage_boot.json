@@ -1,0 +1,38 @@
+{
+  "id": "e6f9a1b3c4d7208845e6f7a8b9c0d123",
+  "name": "Morrow & Sons Salvage Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "One of the few actual brands operating out of the Shelf, Morrow & Sons assembles boots from decommissioned industrial footwear — pulling good uppers off damaged soles and vice versa, mixing and matching until something serviceable emerges. The result is a boot that's visibly composite: different textures on each side, a toe box from one model, a shaft from another. They're tagged with a small hand-stamped 'M&S' near the ankle.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed synth-leather",
+    "reclaimed rubber sole",
+    "re-stitched lining"
+  ],
+  "functionality": "Sturdy construction. No special features, but built to outlast most new budget boots.",
+  "what_it_says": "You buy local. You trust craft over corporate. There's a quiet pride in a Morrow pair.",
+  "worn_by": [
+    "Shelf tradespeople",
+    "community organizers",
+    "anyone who knows the name"
+  ],
+  "manufacturer": "Morrow & Sons (Shelf-based)",
+  "price_range": "Φ14 - Φ22",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Morrow & Sons keeps a ledger of every boot sold. If you can get to it, you can find out who was walking around when.",
+    "A pair of M&S boots on a Tier 3 body is a story — either they fell hard, or they never forgot where they came from."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "salvage",
+    "work boot",
+    "shelf brand",
+    "handmade"
+  ],
+  "parent_corponation": ""
+}

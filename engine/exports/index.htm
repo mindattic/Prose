@@ -3,95 +3,177 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StreetSamurai Canon — Master Index</title>
-<style>
-:root { --bg: #0d1117; --surface: #161b22; --border: #30363d; --text: #e6edf3; --muted: #8b949e; --accent: #dc3545; --link: #58a6ff; --key-bg: #1c2128; }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 14px; line-height: 1.6; padding: 20px clamp(12px, 4vw, 40px); max-width: 1400px; margin: 0 auto; }
-h1 { color: var(--accent); font-size: clamp(1.2rem, 4vw, 1.8rem); margin-bottom: 4px; }
-h2 { color: var(--accent); font-size: clamp(1rem, 3vw, 1.3rem); margin-bottom: 12px; }
-h3 { color: var(--accent); font-size: clamp(0.95rem, 2.5vw, 1.1rem); margin-bottom: 8px; padding-top: 16px; border-top: 1px solid var(--border); }
-a { color: var(--link); text-decoration: none; } a:hover { text-decoration: underline; }
-.header { margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--accent); }
-.header small { color: var(--muted); }
-.toc { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 16px 20px; margin-bottom: 24px; }
-.toc ul { columns: 3; column-gap: 24px; list-style: none; }
-.toc li { padding: 2px 0; font-size: 13px; break-inside: avoid; }
-.toc .badge { background: var(--border); color: var(--muted); border-radius: 10px; padding: 1px 8px; font-size: 11px; margin-left: 4px; }
-.entry { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: clamp(10px, 3vw, 20px); margin-bottom: 16px; overflow-x: auto; }
-.fields, .sub-fields { width: 100%; border-collapse: collapse; }
-.fields td, .sub-fields td { padding: 4px 10px; vertical-align: top; border-bottom: 1px solid var(--border); font-size: 13px; word-break: break-word; }
-.key { color: var(--muted); white-space: nowrap; width: 160px; background: var(--key-bg); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-.sub-fields .key { width: 120px; font-size: 11px; }
-.val { color: var(--text); }
-.num { color: #79c0ff; }
-.bool { color: #7ee787; }
-.null { color: var(--muted); font-style: italic; }
-ul.compact { list-style: disc; margin-left: 16px; }
-ul.compact li { font-size: 13px; padding: 1px 0; }
-.sub-entry { border-left: 3px solid var(--border); padding-left: 12px; margin: 6px 0; }
-.back-top { display: inline-block; margin-top: 8px; font-size: 12px; color: var(--muted); }
-h3 { display: flex; align-items: center; flex-wrap: nowrap; }
-.entry-links { margin-left: auto; display: flex; gap: 4px; flex-shrink: 0; }
-.permalink { color: var(--border); font-size: 1.1em; text-decoration: none; opacity: 0.25; transition: opacity 0.2s; padding: 0 4px; }
-.permalink:hover { opacity: 0.6; color: var(--muted); text-decoration: none; }
-.copy-link { cursor: pointer; font-size: 1.1em; opacity: 0.25; padding: 0 4px; transition: opacity 0.2s; }
-.copy-link:hover { opacity: 0.6; }
-.entry:target { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-.filter-bar { position: sticky; top: 0; z-index: 100; background: var(--bg); padding: 10px 0; margin-bottom: 16px; display: flex; align-items: center; }
-.filter-bar input { flex: 1; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 8px 12px; font-size: 16px; outline: none; -webkit-appearance: none; }
-.filter-bar input:focus { border-color: var(--accent); }
-.filter-clear { display: none; position: relative; right: 30px; cursor: pointer; color: var(--muted); font-size: 18px; width: 0; }
-.filter-clear:hover { color: var(--accent); }
-@media (max-width: 768px) {
-    .toc ul { columns: 1; }
-    .fields td, .sub-fields td { display: block; width: 100%; padding: 3px 8px; }
-    .key { white-space: normal; width: 100%; border-bottom: none; padding-bottom: 0; }
-    .val { padding-top: 0; }
-    .fields tr, .sub-fields tr { display: block; border-bottom: 1px solid var(--border); padding: 6px 0; }
-    .sub-fields .key { width: 100%; }
-}
-@media (max-width: 480px) {
-    body { padding: 10px 8px; font-size: 13px; }
-    .entry { padding: 10px; }
-    h3 { font-size: 0.95rem; }
-}
-@media print { .filter-bar, .back-top { display: none; } .entry { break-inside: avoid; } }
-</style>
+<title>Street Samurai Encyclopedia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="export.css">
 </head>
 <body id="top">
-<div class="header">
-<h1>StreetSamurai Canon — Master Index</h1>
-<small>Exported from StreetSamurai Canon Engine — 2026-04-06 01:27:59AM</small>
+<button class="sidebar-toggle" id="sidebarToggle" onclick="toggleSidebar()"><i class="bi bi-list"></i></button>
+<nav class="sidebar" id="sidebar">
+<div class="sidebar-header"><a href="index.htm" class="sidebar-brand">Street Samurai</a></div>
+<input type="text" class="sidebar-search" id="globalSearch" placeholder="Search all..." onkeydown="if(event.key==='Enter')globalSearchGo()" />
+<ul class="sidebar-nav">
+<li><a href="ammunition.htm"><i class="bi bi-bullseye" style="margin-right:6px;"></i><span>Ammunition</span><span class="nav-count">31</span></a></li>
+<li><a href="apparel.htm"><i class="bi bi-handbag" style="margin-right:6px;"></i><span>Apparel</span><span class="nav-count">785</span></a></li>
+<li><a href="archetypes.htm"><i class="bi bi-person-bounding-box" style="margin-right:6px;"></i><span>Archetypes</span><span class="nav-count">550</span></a></li>
+<li><a href="automata.htm"><i class="bi bi-robot" style="margin-right:6px;"></i><span>Automata</span><span class="nav-count">147</span></a></li>
+<li><a href="characters.htm"><i class="bi bi-people" style="margin-right:6px;"></i><span>Characters</span><span class="nav-count">1211</span></a></li>
+<li><a href="consumer_goods.htm"><i class="bi bi-basket" style="margin-right:6px;"></i><span>Consumer Goods</span><span class="nav-count">359</span></a></li>
+<li><a href="contracts.htm"><i class="bi bi-clipboard-check" style="margin-right:6px;"></i><span>Contracts</span><span class="nav-count">10</span></a></li>
+<li><a href="corponations.htm"><i class="bi bi-building" style="margin-right:6px;"></i><span>Corponations</span><span class="nav-count">64</span></a></li>
+<li><a href="cyberware.htm"><i class="bi bi-motherboard" style="margin-right:6px;"></i><span>Cyberware</span><span class="nav-count">328</span></a></li>
+<li><a href="documents.htm"><i class="bi bi-file-earmark-text" style="margin-right:6px;"></i><span>Documents</span><span class="nav-count">523</span></a></li>
+<li><a href="entertainment.htm"><i class="bi bi-film" style="margin-right:6px;"></i><span>Entertainment</span><span class="nav-count">997</span></a></li>
+<li><a href="equipment.htm"><i class="bi bi-shield-shaded" style="margin-right:6px;"></i><span>Equipment</span><span class="nav-count">201</span></a></li>
+<li><a href="factions.htm"><i class="bi bi-shield-exclamation" style="margin-right:6px;"></i><span>Factions</span><span class="nav-count">152</span></a></li>
+<li><a href="geneware.htm"><i class="bi bi-virus" style="margin-right:6px;"></i><span>Geneware</span><span class="nav-count">100</span></a></li>
+<li><a href="news.htm"><i class="bi bi-newspaper" style="margin-right:6px;"></i><span>News</span><span class="nav-count">100</span></a></li>
+<li><a href="pharmaceuticals.htm"><i class="bi bi-capsule" style="margin-right:6px;"></i><span>Pharmaceuticals</span><span class="nav-count">40</span></a></li>
+<li><a href="places.htm"><i class="bi bi-geo-alt" style="margin-right:6px;"></i><span>Places</span><span class="nav-count">249</span></a></li>
+<li><a href="quotes.htm"><i class="bi bi-quote" style="margin-right:6px;"></i><span>Quotes</span><span class="nav-count">513</span></a></li>
+<li><a href="substrates.htm"><i class="bi bi-gem" style="margin-right:6px;"></i><span>Substrates</span><span class="nav-count">76</span></a></li>
+<li><a href="synthetics.htm"><i class="bi bi-cpu" style="margin-right:6px;"></i><span>Synthetics</span><span class="nav-count">288</span></a></li>
+<li><a href="technology.htm"><i class="bi bi-cpu" style="margin-right:6px;"></i><span>Technology</span><span class="nav-count">218</span></a></li>
+<li><a href="transportation.htm"><i class="bi bi-truck" style="margin-right:6px;"></i><span>Transportation</span><span class="nav-count">100</span></a></li>
+<li><a href="vocabulary.htm"><i class="bi bi-chat-quote" style="margin-right:6px;"></i><span>Vocabulary</span><span class="nav-count">664</span></a></li>
+<li><a href="weaponry.htm"><i class="bi bi-crosshair" style="margin-right:6px;"></i><span>Weaponry</span><span class="nav-count">668</span></a></li>
+</ul>
+</nav>
+
+<main class="content" id="mainContent">
+<div class="page-header">
+<h1>Street Samurai Encyclopedia</h1>
 </div>
 
-<div class="toc">
-<h2>StreetSamurai Canon — Complete Export</h2>
-<p>21 repositories, 5238 total entries</p>
-<ul>
-<li><a href="ammunition.htm">Ammunition</a> <span class="badge">31</span></li>
-<li><a href="archetypes.htm">Archetypes</a> <span class="badge">250</span></li>
-<li><a href="characters.htm">Characters</a> <span class="badge">1191</span></li>
-<li><a href="consumer_goods.htm">Consumer Goods</a> <span class="badge">359</span></li>
-<li><a href="contracts.htm">Contracts</a> <span class="badge">10</span></li>
-<li><a href="corponations.htm">Corponations</a> <span class="badge">63</span></li>
-<li><a href="cyberware.htm">Cyberware</a> <span class="badge">79</span></li>
-<li><a href="documents.htm">Documents</a> <span class="badge">423</span></li>
-<li><a href="equipment.htm">Equipment</a> <span class="badge">201</span></li>
-<li><a href="factions.htm">Factions</a> <span class="badge">62</span></li>
-<li><a href="geneware.htm">Geneware</a> <span class="badge">100</span></li>
-<li><a href="news.htm">News</a> <span class="badge">100</span></li>
-<li><a href="pharmaceuticals.htm">Pharmaceuticals</a> <span class="badge">40</span></li>
-<li><a href="places.htm">Places</a> <span class="badge">249</span></li>
-<li><a href="quotes.htm">Quotes</a> <span class="badge">513</span></li>
-<li><a href="substrates.htm">Substrates</a> <span class="badge">76</span></li>
-<li><a href="synthetics.htm">Synthetics</a> <span class="badge">288</span></li>
-<li><a href="technology.htm">Technology</a> <span class="badge">154</span></li>
-<li><a href="transportation.htm">Transportation</a> <span class="badge">100</span></li>
-<li><a href="vocabulary.htm">Vocabulary</a> <span class="badge">664</span></li>
-<li><a href="weaponry.htm">Weaponry</a> <span class="badge">285</span></li>
-</ul></div>
+<div class="dashboard">
+<p class="dash-subtitle">24 repositories &middot; 8,374 entities</p>
+<div class="dash-grid">
+<a href="ammunition.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-bullseye" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Ammunition</div>
+  <div class="dash-count">31</div>
+</a>
+<a href="apparel.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-handbag" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Apparel</div>
+  <div class="dash-count">785</div>
+</a>
+<a href="archetypes.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-person-bounding-box" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Archetypes</div>
+  <div class="dash-count">550</div>
+</a>
+<a href="automata.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-robot" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Automata</div>
+  <div class="dash-count">147</div>
+</a>
+<a href="characters.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-people" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Characters</div>
+  <div class="dash-count">1,211</div>
+</a>
+<a href="consumer_goods.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-basket" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Consumer Goods</div>
+  <div class="dash-count">359</div>
+</a>
+<a href="contracts.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-clipboard-check" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Contracts</div>
+  <div class="dash-count">10</div>
+</a>
+<a href="corponations.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-building" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Corponations</div>
+  <div class="dash-count">64</div>
+</a>
+<a href="cyberware.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-motherboard" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Cyberware</div>
+  <div class="dash-count">328</div>
+</a>
+<a href="documents.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-file-earmark-text" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Documents</div>
+  <div class="dash-count">523</div>
+</a>
+<a href="entertainment.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-film" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Entertainment</div>
+  <div class="dash-count">997</div>
+</a>
+<a href="equipment.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-shield-shaded" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Equipment</div>
+  <div class="dash-count">201</div>
+</a>
+<a href="factions.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-shield-exclamation" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Factions</div>
+  <div class="dash-count">152</div>
+</a>
+<a href="geneware.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-virus" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Geneware</div>
+  <div class="dash-count">100</div>
+</a>
+<a href="news.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-newspaper" style="margin-right:6px;"></i></div>
+  <div class="dash-label">News</div>
+  <div class="dash-count">100</div>
+</a>
+<a href="pharmaceuticals.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-capsule" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Pharmaceuticals</div>
+  <div class="dash-count">40</div>
+</a>
+<a href="places.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-geo-alt" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Places</div>
+  <div class="dash-count">249</div>
+</a>
+<a href="quotes.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-quote" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Quotes</div>
+  <div class="dash-count">513</div>
+</a>
+<a href="substrates.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-gem" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Substrates</div>
+  <div class="dash-count">76</div>
+</a>
+<a href="synthetics.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-cpu" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Synthetics</div>
+  <div class="dash-count">288</div>
+</a>
+<a href="technology.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-cpu" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Technology</div>
+  <div class="dash-count">218</div>
+</a>
+<a href="transportation.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-truck" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Transportation</div>
+  <div class="dash-count">100</div>
+</a>
+<a href="vocabulary.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-chat-quote" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Vocabulary</div>
+  <div class="dash-count">664</div>
+</a>
+<a href="weaponry.htm" class="dash-card">
+  <div class="dash-icon"><i class="bi bi-crosshair" style="margin-right:6px;"></i></div>
+  <div class="dash-label">Weaponry</div>
+  <div class="dash-count">668</div>
+</a>
+</div></div>
 
-<script></script>
+<footer class="export-footer">Exported from StreetSamurai Canon Engine — 2026-04-06 08:47:14PM</footer>
+</main>
+<button class="scroll-top" id="scrollTop" onclick="document.getElementById('mainContent').scrollTo({top:0,behavior:'smooth'})" title="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+<script src="export.js"></script>
 </body>
 </html>

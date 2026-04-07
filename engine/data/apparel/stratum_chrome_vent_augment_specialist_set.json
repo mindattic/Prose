@@ -1,0 +1,48 @@
+{
+  "id": "3d1f7a9c2e540b8d6f4c1a3e9b7d2f05",
+  "name": "Stratum Chrome-Vent Augment Specialist Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A Tier 4 specialist suit designed explicitly for heavily augmented workers who have grown tired of pretending their chrome doesn't exist. The jacket is a structured single-breasted cut in Stratum's 'Ironweave Coolform' — a matte dark slate fabric with a subtle crosshatch texture — tailored with open chrome-channel sleeves: both sleeves terminate at mid-forearm in a clean folded cuff with a wide magnetic-closure opening, designed so that chrome arms or prosthetic forearms can extend naturally without the fabric bunching or tearing. The channels are finished in exposed brushed steel binding that runs along the interior seam from shoulder to cuff, visible at the opening — a deliberate design choice that treats the augmentation as part of the silhouette rather than something to be hidden. The back panel has a reinforced spinal-rig dorsal channel: a structured spine of the jacket that accommodates external rig hardware, with three adjustment points that can be loosened via a side-access pull. The dress shirt beneath is a Stratum Executive Poplin in pale graphite with a standard cutaway collar, its sleeves cut short intentionally to sit at the bicep — the chrome-channel jacket cuff is meant to do the work from there.\n\nTrousers are straight-cut Stratum Ironweave Coolform with a high rise and no break, worn with a slim brushed-steel-buckle belt. Footwear is the Crucible Chromestep Mid in matte black with steel cap, chosen for its visual echo of the chrome hardware at the wrists. The whole outfit leans into augmentation as aesthetic rather than hiding it — the chrome bindings, the open-channel cuffs, the spinal rig channel. This is someone who has stopped apologizing for their hardware and started treating it as a credential.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "Stratum Ironweave Coolform synth-fabric",
+    "brushed steel channel binding",
+    "magnetic-closure cuff strips",
+    "spinal rig dorsal channel reinforcement",
+    "pale graphite broadcloth poplin",
+    "matte steel belt buckle"
+  ],
+  "functionality": "Open chrome-channel sleeves with magnetic closures for bilateral arm augmentation. Spinal rig dorsal channel with three external adjustment points. Coolform fabric actively dissipates heat from aug hardware. Short-cut poplin sleeves designed to pair with channel jacket. High-rise trouser waistband compatible with lower-back rig harness straps. Steel-cap footwear for work-floor safety compliance on specialist site visits.",
+  "what_it_says": "This person is augmented, skilled, and done with the corporate aesthetic of pretending otherwise. The chrome bindings say: I am modified, I am competent, and I chose an outfit that accommodates both rather than apologizing for either. It sits at the exact edge of acceptable Tier 4 rule-bending — bold enough to be noticed, structured enough to be defensible.",
+  "worn_by": [
+    "Heavily augmented Tier 4 technical specialists",
+    "corporate engineering leads with bilateral chrome arms",
+    "spinal-rig-equipped operations managers",
+    "aug-integration consultants",
+    "senior fabrication supervisors on client presentation days"
+  ],
+  "manufacturer": "Stratum Corporate Apparel (Tier 4 augment-forward line)",
+  "price_range": "Φ 2,200–Φ 3,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Tier 3 HR officer tells the wearer the exposed chrome binding on the cuffs violates the dress code for a cross-tier meeting — the wearer produces the Stratum product documentation proving the outfit is rated 'presentation-compliant,' and the argument that follows reveals more about the company's attitude toward augmented workers than either party intended.",
+    "The spinal rig dorsal channel's adjustment points snag on a security scanner turnstile, locking the wearer briefly in place during a timed evacuation drill — not dangerous, but humiliating in front of Tier 5 observers.",
+    "Another heavily augmented specialist in an identical outfit shows up to the same client meeting — both are from different competing firms, and the accidental twinning becomes a strange icebreaker that shifts the negotiation's dynamics entirely."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_4",
+    "aug_compatible",
+    "chrome_display",
+    "specialist",
+    "stratum",
+    "augmentation_forward",
+    "engineering",
+    "rule_bender"
+  ],
+  "parent_corponation": ""
+}

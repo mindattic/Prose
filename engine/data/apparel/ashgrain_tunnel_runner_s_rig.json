@@ -1,0 +1,51 @@
+{
+  "id": "a3f7c2e1b09d4582f6a1c3e7d0b95841",
+  "name": "Ashgrain Tunnel Runner's Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A head-to-toe survival layering system built for the underground transit tunnels and acid-washed overpass corridors of the Shelf. The base is a long-sleeve compression shirt in faded charcoal, fabric pilled and stress-creased at the shoulders from years of pack-wearing, with a cracked rubber collar seal at the neck — originally designed to interface with a hazmat hood, now just a relic that keeps acid mist off the throat. Over it sits a zip-front work vest in rusted olive canvas, every pocket reinforced with mismatched industrial webbing; the chest pocket holds a melted-edge transit card and a wedge of self-repair tape. The outer shell is a hip-length anorak in stained ash-gray, the hood lined with salvaged thermal mylar that crinkles when it moves. Seams along the left shoulder have been restitched three times in different thread colors — black, then tan, now a bright industrial orange that cuts across the gray like a scar. Trousers are heavy-gauge charcoal cargo pants with knee panels cut from conveyor belt rubber, stitched flat for crawling through duct access. The right thigh pocket is stuffed; the left is patched with a strip of Tenex sealant tape over a tear that never fully healed. Boots are thick-soled black work boots resoled with layered salvage rubber, the uppers cracked and sealed with weatherstrip compound, laces replaced with braided comms wire. A salvaged neural port cap — chrome, scuffed, clearly pulled from a discarded cyberware kit — sits clipped to the vest collar as a clasp, non-functional but worn like a badge.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "pilled charcoal compression fabric",
+    "rusted olive canvas",
+    "industrial webbing",
+    "ash-gray synthetic anorak shell",
+    "salvaged thermal mylar lining",
+    "conveyor belt rubber knee panels",
+    "Tenex sealant tape",
+    "salvage-resoled boot rubber",
+    "braided comms wire lacing",
+    "scuffed salvaged chrome"
+  ],
+  "functionality": "Acid-mist collar seal protects throat and lower face. Thermal mylar hood lining retains heat in unheated tunnel sections. Rubber knee panels allow crawling through duct access without fabric destruction. Fourteen functional pockets across vest and trousers for survival gear distribution. Sealant-treated boot uppers resist standing water and mild acid pooling. Self-repair tape reserves kept in chest pocket for emergency seam failure.",
+  "what_it_says": "This person moves through the Shelf's infrastructure rather than around it — tunnels, ducts, maintenance corridors. They've had this rig a long time and they've repaired it themselves, repeatedly. The mismatched thread colors are a timeline. The salvaged neural port cap says they know what chrome is worth, even dead chrome. Nothing here was bought new. Everything here still works.",
+  "worn_by": [
+    "tunnel runners",
+    "Shelf scavengers who work the transit infrastructure",
+    "unlicensed couriers moving contraband through duct-runs",
+    "maintenance squatters who live in decommissioned tunnel sections"
+  ],
+  "manufacturer": "Self-assembled — anorak shell is a washed-out Solberg-Maru surplus piece; vest is unmarked factory seconds; boots are Morrow & Sons uppers on third-party salvage soles",
+  "price_range": "Φ18–Φ45 assembled from parts; individual components Φ2–Φ12 at Shelf salvage markets",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The salvaged neural port cap clipped to the collar was pulled from a body in Tunnel 9-C — someone has been looking for it, and looking for whoever took it.",
+    "A runner wearing this rig knows a maintenance corridor that bypasses a contested checkpoint; the orange restitching on the shoulder is a color signal recognizable to one specific underground network.",
+    "The thermal mylar lining has a partial serial number still legible — traced back to a Solberg-Maru disaster relief shipment that was officially logged as destroyed in a warehouse fire three years ago."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier 1",
+    "tunnel runner",
+    "layered",
+    "acid-resistant",
+    "aug-compatible",
+    "salvage",
+    "courier",
+    "survival gear"
+  ],
+  "parent_corponation": ""
+}

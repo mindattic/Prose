@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b09d4856f3a1c7e2d084b59f",
+  "name": "Helix Corp Cubicle Compliance Day Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The uniform of invisible labor. A mid-weight synth-wool blend blazer in Helix Corp mandated slate-grey, cut boxy enough to fit nearly any body type off the rack — which is exactly the point. The lapels are narrow and slightly shiny from dry-cleaning friction, and a small embossed Helix Corp service tag is heat-pressed inside the collar. Underneath, a white broadcloth dress shirt with a subtle grid weave, the collar slightly stiff from industrial starch, two buttons always threatening to gap at the chest. Trousers are straight-cut in matching slate-grey synth-wool, with a barely-perceptible shine at the knees from desk chair contact. A single pleat runs down each leg, machine-pressed each Monday. Black faux-leather belt, no buckle ornamentation. The shoes are Helix-issued matte black cap-toe oxfords, cushioned enough for transit but not for comfort — the kind of shoe that always looks slightly too big. A lanyard with a Helix Corp RFID badge clip hangs at the chest, the badge itself scratched from years of swipe-gate use. Hair and accessories must conform to the Helix Corp Appearance Code (HAC-7), which means nothing unusual, nothing memorable.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "synth-wool blend",
+    "broadcloth",
+    "faux-leather",
+    "industrial polyester lining",
+    "RFID-woven lanyard cord"
+  ],
+  "functionality": "Badge-clip lanyard integration, RFID-passthrough collar tag for building access, stain-resistant trouser finish, machine-washable shirt, standard aug-port clearance at collar back for basic neural ports only",
+  "what_it_says": "You are employed. You are compliant. You have not yet been promoted and you are not trying to look like you have. The outfit says nothing personal about the wearer because that is the point — individuality is a liability at this tier. The slight wear patterns tell colleagues exactly how long you've been here and how little has changed.",
+  "worn_by": [
+    "Helix Corp cubicle workers",
+    "Tier 3 data entry clerks",
+    "administrative processors",
+    "compliance floor staff",
+    "anyone on their first year at a corponation desk job"
+  ],
+  "manufacturer": "Helix Corp Internal Apparel Division (HAD)",
+  "price_range": "Φ180–Φ240 (often deducted from first paycheck as 'uniform acquisition fee')",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character wearing this exact uniform is mistaken for a Helix Corp insider by a street contact — the badge clone on the lanyard is the only thing standing between them and a secure floor they have no business being on.",
+    "The HAC-7 dress code is used as evidence in a wrongful termination case — a worker was fired for wearing a non-regulation belt buckle, and the outfit becomes exhibit A in a labor tribunal.",
+    "Someone has been wearing this uniform for eleven years. The shine at the knees is a timestamp. A new colleague notices and asks how long they've been waiting for a promotion — the silence that follows says everything."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corporate_office",
+    "tier_3",
+    "uniform",
+    "corponation",
+    "helix_corp",
+    "conformist",
+    "dress_code",
+    "office_worker"
+  ],
+  "parent_corponation": ""
+}

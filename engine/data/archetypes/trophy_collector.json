@@ -1,0 +1,34 @@
+{
+  "id": "fe94b67aa37c5aafe76b866cf4ed4801",
+  "name": "Trophy Collector",
+  "type": "archetype",
+  "category": "relationship",
+  "description": "Pursues relationships for status, not connection",
+  "behavioral_signature": "Partners and friends are chosen for what they signal to others",
+  "under_stress": "Drops anyone who stops enhancing their image",
+  "at_rest": "Curating their social circle for maximum prestige",
+  "will_always": [
+    "evaluate relationships by external value"
+  ],
+  "will_never": [
+    "maintain a relationship that doesn't serve their image"
+  ],
+  "unless": [
+    "genuine feelings sneak past the calculation"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Name Dropper",
+      "threshold": 0.7,
+      "context": "status through association"
+    }
+  ],
+  "opposite_of": [
+    "Generous Partner"
+  ],
+  "tags": [
+    "status",
+    "image",
+    "collecting"
+  ]
+}

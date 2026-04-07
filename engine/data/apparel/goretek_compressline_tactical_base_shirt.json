@@ -1,0 +1,45 @@
+{
+  "id": "d41e8c3a7f2b0965e3c1d7a4b8f02e53",
+  "name": "Goretek CompressLine Tactical Base Shirt",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A close-cut compression shirt in matte charcoal, constructed from four-way-stretch nylon-aramid blend with flat-lock seaming throughout. Reinforced shoulder panels are slightly thicker, designed to distribute pack straps and armor plate pressure. The collar sits high at the back of the neck with a discreet port-channel slit sized for standard neural port caps.\n\nA staple in Circuit factories and transit yards. Holds its shape through twelve-hour shifts and repeated industrial washing. Faint reflective thread runs along the spine seam — barely visible, just enough for low-light safety compliance.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "nylon-aramid four-way-stretch blend",
+    "flat-lock polyester thread",
+    "reinforced woven shoulder panel",
+    "reflective spine thread",
+    "ribbed cuff elastic"
+  ],
+  "functionality": "Compression supports muscle fatigue reduction across long shifts. Neural port channel slit accommodates standard-size BCI ports without collar pressure. Moisture-wicking inner face pulls sweat away from chrome-adjacent skin to prevent oxidation irritation. Machine washable to industrial cycle standards.",
+  "what_it_says": "Practical, unbranded competence — someone who works hard and maintains their gear.",
+  "worn_by": [
+    "factory floor workers",
+    "transit operators",
+    "warehouse loaders",
+    "low-grade security personnel",
+    "aug-users on Circuit budgets"
+  ],
+  "manufacturer": "Goretek",
+  "price_range": "Φ28–Φ45",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "This specific batch was recalled by Goretek after reports of the aramid weave causing skin reactivity in users with dermal chrome — the recall notice never reached Tier 2 distribution.",
+    "The reflective spine thread doubles as a passive RFID strip in some production runs — workers are tracked without knowing.",
+    "A Circuit organizer uses the port channel slit to pass folded message strips between shift workers without raising floor camera flags."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "compression",
+    "tactical",
+    "aug-compatible",
+    "circuit",
+    "tier-2",
+    "tier-3",
+    "work-wear"
+  ],
+  "parent_corponation": ""
+}

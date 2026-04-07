@@ -1,0 +1,49 @@
+{
+  "id": "5d8e1a47c3f092b6d74e2a1059fc8b3d",
+  "name": "Sableworks Independent Dock & Freight Hauler Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A self-assembled working kit favored by independent dock laborers and freight haulers who contract shift-to-shift at Meridian Harbor's lower berths rather than drawing a corponation wage. The core garment is a heavyweight charcoal synth-denim overall with brass-toned rivets at stress points, bib-front chest pockets with button flaps, and a full back panel cut wide to accommodate spinal rigs and dorsal augmentation harnesses — a long zipper runs the spine from tailbone to collar, allowing a rig to be donned or removed without stripping the whole garment. The bib straps are reinforced nylon webbing adjustable for different torso depths. Beneath the overall, a burnt-orange thermal long-sleeve with raglan seams provides wind resistance; its cuffs are tight-knit to seal against the bib hem. A wide-brimmed oilskin work hat in dark brown sheds acid-rain and harbor spray. Hands are covered by cut-resistant synth-leather work gloves with knuckle padding, left thumb and index finger tipped in conductive material for touchscreen interaction. Footwear is a pair of Dockmaster Deepwade Boots, calf-high with composite toe caps and anti-slip hull-grade soles.\n\nNothing on this outfit carries a corponation logo — a deliberate choice. Independent haulers often sew a single personal identifier: a small embroidered sigil or color-coded shoulder tab that marks their crew affiliation to other independents without advertising it to corporate port managers. The overall has been patched at the left knee with a slightly mismatched charcoal panel, a common repair that reads as lived-in competence rather than poverty.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "heavyweight synth-denim",
+    "brass rivets",
+    "nylon webbing",
+    "oilskin",
+    "thermal raglan knit",
+    "cut-resistant synth-leather",
+    "composite toe cap material",
+    "hull-grade anti-slip rubber"
+  ],
+  "functionality": "Full spinal rig access via back zipper, bib-front tool storage, acid-rain and harbor spray resistance, cut-resistant gloves with touchscreen finger tips, anti-slip composite-toe footwear, thermal underlayer for waterfront wind chill",
+  "what_it_says": "No corponation owns this person's back — they work the docks on their terms, shift to shift. The absence of branding is itself a statement. The personal crew sigil says they're not alone, just not corporate.",
+  "worn_by": [
+    "independent dock laborers",
+    "freelance freight haulers",
+    "harbor day-contract workers",
+    "cargo sorting crews"
+  ],
+  "manufacturer": "Self-assembled; components from Sableworks Supply Co. (street supplier), Dockmaster Footwear",
+  "price_range": "Φ 290–Φ 420 (assembled piecemeal over time)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The crew sigil on a hauler's shoulder tab is the same color and pattern as one found on contraband packaging recovered from a sealed container — someone in that crew signed the load.",
+    "An independent hauler's back-zipper spinal channel has been modified to conceal a narrow document sleeve — and they've just been stopped at a corponation checkpoint.",
+    "A character needs to move through the lower berths undetected; borrowing this kit gets them past the gate, but the absence of a corponation badge draws a different kind of scrutiny from the independents."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "dock_labor",
+    "freight",
+    "independent",
+    "no_branding",
+    "aug_compatible",
+    "harbor",
+    "waterproof"
+  ],
+  "parent_corponation": ""
+}

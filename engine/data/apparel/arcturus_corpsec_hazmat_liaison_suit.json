@@ -1,0 +1,34 @@
+{
+  "name": "Arcturus CorpSec Hazmat Liaison Suit",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_tactical",
+  "manufacturer": "Anvil Materials Science",
+  "description": "Issued to Arcturus personnel assigned to cordon and containment operations in chemically or biologically compromised zones, the Hazmat Liaison Suit bridges the gap between tactical response and environmental protection. The outer shell is a matte-grey aramid-polysilicate weave rated for low-level chemical splash, with a sealed inner membrane that can be pressurized for thirty minutes of clean air via the integrated rebreather collar. Shoulder panels carry Arcturus branding in subdued phosphor-reactive grey, visible only under UV. Chrome ports at the wrists, upper spine, and left forearm allow arm-mounted tactical augments to interface through the sealed material without compromising the suit's integrity.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ620",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "Wearing an Arcturus Hazmat Liaison Suit in the Shelf marks you as either corporate muscle or someone who looted one from a dead operative. Either way, people give you space. In Tier 2 and 3 districts, seeing these suits means something bad is being quietly contained nearby.",
+  "story_hooks": [
+    "A decommissioned suit turns up at a Shelf market with the internal telemetry logs still intact — the last six hours of an operative's life are recorded inside.",
+    "A player needs to pass a Tier 3 corporate checkpoint and manages to acquire one of these suits, but the biometric collar won't seal without a valid Arcturus employee ID.",
+    "The suits are being recalled without explanation. Workers who wore them for extended periods are reporting neurological symptoms Lazarus clinics can't identify."
+  ],
+  "tags": [
+    "arcturus",
+    "corpsec",
+    "hazmat",
+    "tactical",
+    "chemical_resistant",
+    "augment_compatible",
+    "containment",
+    "uniform",
+    "tier2",
+    "tier3"
+  ],
+  "id": "55c6bc51f53545b0bb9d56592d3e8b28",
+  "parent_corponation": "Arcturus Defense Solutions"
+}

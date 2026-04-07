@@ -1,0 +1,57 @@
+{
+  "id": "b8d43e0f1c7a9256fd2e85b1a40c73e9",
+  "name": "UNKNOWN ORIGIN Vael Frequence ELF Auditory Bridge",
+  "brand_name": "UNKNOWN ORIGIN",
+  "product_name": "Vael Frequence ELF Auditory Bridge",
+  "type": "cyberware",
+  "aliases": [
+    "The Listener",
+    "Elf Tongue",
+    "Worm Ear"
+  ],
+  "category": "auditory",
+  "body_location": "ears",
+  "description": "The Vael Frequence is an experimental cochlear and neural bridge implant engineered to transcode the infrasonic and bioelectric emission patterns associated with Emergent Lifeform communication into a range and format perceptible to the human auditory cortex. It combines a deep-frequency cochlear insert capable of resolving signals below 1Hz with a temporal lobe surface electrode mesh that performs real-time pattern translation through an undocumented AI model whose training data origin is classified or unknown. The implant was not manufactured by any registered entity — units have appeared in Meridian 88 through channels that trace back to Workshop Null-adjacent networks and at least one confirmed ELF proximate zone breach.\n\nPossession of the Vael Frequence is a felony under Meridian 88's Emergent Lifeform Interaction Prohibition Act — unauthorized ELF contact is classified as a Tier-1 biosecurity offense carrying mandatory neural wipe and ten years minimum detention. Despite this, a small and deeply secretive community of researchers, fringe activists, and obsessive individuals seek out installs, driven by reports that the bridge actually works. Users describe hearing structured, recursive patterns of profound complexity — whether this constitutes genuine ELF communication or catastrophic auditory hallucination remains the city's most dangerous open question.",
+  "manufacturer": "UNKNOWN ORIGIN",
+  "tier_availability": "Black market only (any tier, extreme scarcity)",
+  "legality": "Prohibited",
+  "installation_requirements": "Clandestine surgical suite only; no certified clinic will perform this procedure; temporal lobe electrode mesh requires neurosurgical precision; significant undocumented post-op neurological monitoring required",
+  "rejection_risk": "High — temporal lobe electrode mesh causes documented inflammatory response in 60% of known cases; AI translation layer has produced irreversible auditory cortex restructuring in at least three confirmed cases",
+  "maintenance": "No official maintenance pathway exists; field repairs only; AI model updates have appeared spontaneously on installed units with no identified source",
+  "specifications": "{\"frequency_floor\": \"Sub-1Hz infrasonic resolution\", \"ELF_signal_range\": \"Classified / undocumented\", \"translation_AI\": \"Unknown model, unknown training data, self-updating\", \"temporal_mesh\": \"64-node surface electrode array, temporal lobe\", \"cochlear_insert\": \"Deep-frequency bilateral, 0.1Hz-22kHz\", \"power_draw\": \"0.9W bioelectric + anomalous spikes reported\", \"known_units_in_circulation\": \"Estimated <40 in Meridian 88\", \"manufacturer\": \"Unregistered / unknown fabrication origin\"}",
+  "side_effects": [
+    "Persistent intrusive audio patterns described as 'recursive architecture' or 'structured breathing' — reported by 100% of known users",
+    "Progressive restructuring of auditory cortex processing in long-term users, potentially irreversible",
+    "Documented cases of users becoming incapable of processing ordinary human speech as meaningful — the translation layer begins overwriting baseline auditory function",
+    "Severe psychological destabilization: users report loss of consensus reality anchoring, with some becoming convinced they can communicate back"
+  ],
+  "cultural_context": "The Vael Frequence occupies a unique position in Meridian 88's underground — it is simultaneously the most illegal consumer implant in the city and the most mythologized. ELF-contact communities treat confirmed users as either prophets or cautionary corpses, and Meridian 88 Security Bureau maintains a dedicated task force solely for locating and detaining anyone known to possess one. The implant's unknown origin has generated intense speculation, with theories ranging from rogue Workshop Null fabricators to the ELFs themselves having seeded the design.",
+  "known_users": [
+    "Fringe ELF-contact researchers and activist groups",
+    "Rogue xenobiologists operating outside sanctioned research",
+    "Deep obsessives willing to risk neural wipe for the experience",
+    "Certain Workshop Null-adjacent experimental communities",
+    "At least one confirmed GRPD informant who was subsequently disappeared"
+  ],
+  "story_hooks": [
+    "A user approaches the party claiming the patterns they're hearing are not ELF communication — they're a warning, structured specifically for human cognition, and it's getting louder",
+    "The Security Bureau has obtained a list of all 40 estimated Vael Frequence users in the city and is moving to detain all of them simultaneously — someone needs to be warned, or stopped",
+    "A Vael Frequence unit has appeared on the market with its AI translation layer replaced by something entirely different — and the seller has no memory of how they acquired it"
+  ],
+  "street_price": "Φ110,000",
+  "licensed_price": "N/A — no licensed pathway exists",
+  "tags": [
+    "cyberware",
+    "hearing_implant",
+    "ELF",
+    "emergent_lifeform",
+    "prohibited",
+    "experimental",
+    "unknown_origin",
+    "black_market",
+    "neurological_hazard",
+    "felony",
+    "auditory"
+  ],
+  "parent_corponation": ""
+}

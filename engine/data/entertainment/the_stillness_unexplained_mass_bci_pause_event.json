@@ -1,0 +1,41 @@
+{
+  "id": "e6a12d9c4b508e37c3d4e5f6a7b90124",
+  "name": "The Stillness (Unexplained Mass BCI Pause Event)",
+  "type": "entertainment",
+  "category": "phenomenon",
+  "subcategory": "unexplained recurring phenomenon",
+  "description": "Seventeen times since 2211, groups of BCI-equipped people in close proximity have simultaneously experienced a complete cessation of all BCI input — no feed, no overlay, no ambient data — for exactly 4.7 seconds, followed by a shared visual impression of an empty street corner that none of them recognize, rendered in perfect photographic detail. The impression is identical across all affected individuals each time it occurs, but the corner itself changes between events — a different location, a different time of day, always empty, always with a single yellow coat hanging from a fire escape or signpost. No technical explanation has been confirmed. The events cluster geographically around the boundary between Tier 2 and Tier 3 in the Midlake district, and always occur between 2:00 and 4:00 AM. A community of investigators calling themselves the Yellow Coat Archive has catalogued every reported incident.",
+  "origin_year": 2211,
+  "tier_association": "Tier 2-3",
+  "status": "active",
+  "corporate_stance": "monitored",
+  "cultural_impact": "The Stillness has generated significant anxiety among BCI-dependent residents who experience it as a fundamental violation of their augmented sense of reality, while simultaneously inspiring a devoted investigative subculture. Several corponations have quietly issued internal memos about the events without publicly acknowledging them, which the Yellow Coat Archive has taken as confirmation of something worth hiding.",
+  "key_figures": [
+    "Fatima Delacroix-Yamamoto (Yellow Coat Archive founder)",
+    "Dr. Soren Mbeki-Larsson (BCI neurologist, publicly skeptical, privately obsessed)",
+    "An unnamed E.L.F. who claims to have been inside the BCI pause during three separate events"
+  ],
+  "locations": [
+    "Midlake District, Tier 2-3 boundary (primary cluster zone)",
+    "The Archive Room (Fatima's apartment, converted into incident map)",
+    "Blackout Corner (informal name for the most frequently recurring corner in the shared vision, real location unknown)"
+  ],
+  "story_hooks": [
+    "The Yellow Coat Archive has triangulated what they believe is the real-world location of Blackout Corner — and when the characters go to investigate, the coat is already there, still warm.",
+    "A character experiences the Stillness for the first time and sees something in the corner that no one else in their group reports — a figure in the coat, looking directly at them.",
+    "Dr. Mbeki-Larsson has found a pattern in the 4.7-second interval that matches a decommissioned BCI synchronization protocol from 2189 — and the company that developed it was dissolved under unusual circumstances."
+  ],
+  "tags": [
+    "unexplained phenomenon",
+    "BCI",
+    "mass hallucination",
+    "Midlake",
+    "Tier 2-3",
+    "Yellow Coat Archive",
+    "E.L.F.",
+    "investigation",
+    "recurring event",
+    "shared vision"
+  ],
+  "parent_corponation": ""
+}

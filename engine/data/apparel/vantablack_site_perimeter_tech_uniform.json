@@ -1,0 +1,34 @@
+{
+  "name": "Vantablack Site Perimeter Tech Uniform",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corpsec_tactical",
+  "manufacturer": "Silhouette Fashion Media",
+  "description": "Worn by Vantablack's perimeter security and site surveillance personnel — the operational layer below full intelligence operatives — this uniform is deliberately understated. Flat charcoal trousers with reinforced knee panels pair with a close-cut long-sleeve duty shirt in the same tone. The fabric is a matte microfiber engineered to absorb ambient light at a higher rate than standard materials, reducing visual signature under low-light conditions without full stealth-tech coating. Chest pockets are sealed with magnetic closures, and the collar has an integrated signal-dampening layer that partially obscures BCI handshake emissions within a one-meter radius. No visible branding. A small Vantablack registry code is laser-etched inside the collar.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ510",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "restricted",
+  "cultural_context": "Vantablack uniforms are designed to be forgettable, and they largely succeed. Personnel in these uniforms occupy the background of corporate events, transit hubs, and high-tier building lobbies — present but unregistered in the mind. That invisibility is the point, and it makes them deeply unsettling to those who know what they're looking at.",
+  "story_hooks": [
+    "A perimeter tech is found to have been wearing their uniform off-shift, conducting what appears to be unauthorized surveillance of a Tier 2 community organizer.",
+    "Someone is selling reproductions of the uniform at a gray market stall — the BCI dampening collar works, and it's attracting the wrong kind of buyers.",
+    "A player acquires one and discovers the registry code inside the collar is linked to a personnel file that officially doesn't exist."
+  ],
+  "tags": [
+    "vantablack",
+    "corpsec",
+    "surveillance",
+    "stealth",
+    "matte",
+    "bci_dampening",
+    "augment_compatible",
+    "perimeter",
+    "tier3",
+    "tier4"
+  ],
+  "id": "4dca182e65ed46b1a0a935ba2936a178",
+  "parent_corponation": "Vantablack Media"
+}

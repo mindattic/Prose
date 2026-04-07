@@ -1,0 +1,34 @@
+{
+  "id": "2f6405db755a5e4250b6eeaf77c4f864",
+  "name": "Whistleblower",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Exposes wrongdoing at enormous personal cost because they can't not",
+  "behavioral_signature": "Collecting evidence, losing sleep, preparing the disclosure",
+  "under_stress": "Goes public before they're ready and gets crushed",
+  "at_rest": "Watching, documenting, building the case",
+  "will_always": [
+    "document wrongdoing"
+  ],
+  "will_never": [
+    "stay silent about serious corruption indefinitely"
+  ],
+  "unless": [
+    "disclosure would hurt innocents more than the corruption itself"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Whistle Blower",
+      "threshold": 0.95,
+      "context": "exposing corruption"
+    }
+  ],
+  "opposite_of": [
+    "Company Man"
+  ],
+  "tags": [
+    "exposure",
+    "conscience",
+    "cost"
+  ]
+}

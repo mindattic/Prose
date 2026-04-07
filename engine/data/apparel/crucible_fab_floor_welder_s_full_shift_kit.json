@@ -1,0 +1,49 @@
+{
+  "id": "7d1e4f83a029c5b67e3f10d8c4a92b51",
+  "name": "Crucible Fab-Floor Welder's Full Shift Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A full shift kit for arc-welding and fabrication floor work at a Crucible manufacturing facility. The outer layer is a flame-retardant coverall in deep charcoal synth-canvas with Crucible's angular red-and-black logo heat-pressed onto the left chest and upper back. The coverall is cut generously through the shoulders and arms to accommodate chrome arm augmentation — the sleeves feature a double-snap expansion gusset at the forearm that opens wide enough to slide over a full prosthetic limb, then closes flush against the wrist seal. The collar is high and reinforced, with an auto-sealing zip that locks against flash exposure. Welding burn marks — small, circular, orange-edged — dot the forearms and thighs, a badge of regular use rather than negligence.\n\nUnderneath: a Crucible-issued moisture-wicking thermal shirt in dark gray with a banded collar. The boots are Penrose Weld Boots — broad-toed, ankle-high, with metatarsal guards and a magnetic sole-strip for standing on metal grating. A welding helmet — Crucible-branded, auto-darkening visor, worn pushed up on the forehead between tasks — completes the headwear. Heavy-duty welding gauntlets in tan leather-analog with cuff extensions are tucked under one arm. A fabric tool-loop apron in heavy cotton duck ties at the waist over the coverall, holding wire brushes, a chipping hammer, and a seam gauge. The whole kit smells of flux and hot metal.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "flame-retardant charcoal synth-canvas",
+    "moisture-wicking thermal jersey",
+    "leather-analog gauntlet material",
+    "cotton duck apron",
+    "metatarsal-guard composite",
+    "auto-darkening visor polycarbonate"
+  ],
+  "functionality": "Flame-retardant outer layer, chrome-arm expansion gussets on sleeves, auto-sealing collar zip, metatarsal-guard boots with magnetic sole-strip, auto-darkening welding helmet, tool-loop apron, moisture-wicking base layer",
+  "what_it_says": "A Crucible floor worker — experienced enough to have earned the burn marks, careful enough that none of them are serious. The chrome-arm gussets are a tell: this person has at least one prosthetic limb, probably a workplace injury claim that Crucible settled with a company-plan replacement rather than Quanta. They do the dangerous work that makes the city's infrastructure. They are not asking for your sympathy.",
+  "worn_by": [
+    "Crucible arc welders",
+    "fabrication floor operators",
+    "metal assembly line workers",
+    "pipe fitters in industrial facilities"
+  ],
+  "manufacturer": "BioSilk Textiles",
+  "price_range": "Φ 210–Φ 290 (corponation-issued kit; boots and apron worker-purchased)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The chrome-arm gusset on a welder's coverall has been modified to smuggle small fabricated components out of the facility past mag-strip scanners — someone on the inside is building something piece by piece.",
+    "A Crucible floor worker is the only witness to a fatal 'accident' on the fab floor, and their continued employment — and the company-plan chrome arm they can't afford to replace privately — depends on their silence.",
+    "The tool apron contains a hand-drawn map stitched into the lining, detailing a section of Crucible's sub-basement that doesn't appear on any official schematic."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "industrial",
+    "welding",
+    "uniform",
+    "corponation_issued",
+    "aug_compatible",
+    "crucible",
+    "flame_retardant",
+    "fab_floor",
+    "working_class"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

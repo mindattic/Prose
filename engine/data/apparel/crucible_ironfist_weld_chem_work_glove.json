@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1b849d056f3a2c7e4b1d09f82",
+  "name": "Crucible IronFist Weld-Chem Work Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Matte charcoal split-cowhide palm reinforced with para-aramid fiber panels across the knuckles and thumb web. The cuff extends four inches past the wrist with a quick-release buckle, accommodating standard chrome forearm flanges. Stitching is double-locked orange thread — visible wear on older pairs shows gray-white fraying at the finger bases. The back panel is perforated nitrile mesh for heat venting.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "split-cowhide leather",
+    "para-aramid fiber",
+    "nitrile mesh",
+    "reinforced orange stitching",
+    "nylon buckle hardware"
+  ],
+  "functionality": "Chemical-splash resistant palm, heat-rated to 400°C at brief contact. Quick-release cuff fits over most standard chrome forearm flanges. Knuckle panels absorb moderate impact. Grip-textured palm performs wet or dry.",
+  "what_it_says": "You work with your hands and you don't expect the job to be safe.",
+  "worn_by": [
+    "foundry workers",
+    "dock laborers",
+    "chemical plant floor crew",
+    "scrap recyclers",
+    "Shelf mechanics"
+  ],
+  "manufacturer": "GeneFit Health Testing",
+  "price_range": "Φ18–Φ35",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair found at a crime scene still has the corrosive chemical residue — the wrong kind for any legal job site in the district.",
+    "The worker wearing these has a chrome right hand she's hiding; the glove's flange slot fits perfectly, but she's been telling her supervisor she's fully organic.",
+    "Counterfeit versions are flooding the Shelf market — they look identical but the para-aramid is replaced with cheap polyester, and workers are getting burned."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "work-gloves",
+    "industrial",
+    "chemical-resistant",
+    "heat-resistant",
+    "aug-compatible",
+    "tier-1",
+    "tier-2",
+    "crucible"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

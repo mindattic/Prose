@@ -1,0 +1,46 @@
+{
+  "id": "c9a2b5f8e1047d3920c3e4f5a6b78902",
+  "name": "ShieldTech OC-Precision Pro SPP-3",
+  "type": "weapon",
+  "aliases": [
+    "SPP-3",
+    "precision pepper",
+    "clean spray",
+    "no-drift"
+  ],
+  "category": "spray",
+  "description": "The ShieldTech SPP-3 is a premium oleoresin capsicum delivery system engineered specifically to address the primary failure mode of conventional aerosol sprays: blowback contamination onto the operator. ShieldTech's proprietary DirectStream propellant system generates a coherent, low-turbulence laminar jet of 3% major capsaicinoids — a concentration significantly higher than most civilian-grade products — that reaches effective range with minimal aerosol scatter. The canister is anodized aircraft-grade aluminum, and the nozzle assembly incorporates a micro-valve that allows precise dosing: a half-press delivers a targeted stream, a full press activates a short-range burst pattern for close contact situations. The grip integrates a polymer thumb rest and a friction surface optimized for use with augmented or gloved hands.\n\nThe 3% major capsaicinoid concentration is sufficient to affect partially augmented targets with residual biological respiratory or ocular tissue, and the laminar delivery ensures that the agent reaches the target rather than dispersing into ambient air around the operator. ShieldTech's internal testing data, published in their licensed distributor materials, claims less than 4% operator contamination rate in controlled crosswind conditions — compared to an industry average of 22% for cone-spray designs. The SPP-3 is a licensed product, marketed to executive protection professionals, plainclothes investigators, and high-end private security firms.\n\nThe SPP-3 is sometimes described by security professionals as 'the spray that actually works,' distinguishing it from the crowd of adequate-but-imprecise products in the market. Its price point places it firmly in the professional tools category, and it is rarely seen in civilian hands outside of corporate Tier 3 and 4 environments.",
+  "manufacturer": "SHIELDTECH",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — requires personal protection professional certification or corporate security credential for individual purchase",
+  "base_technologies": [
+    "major capsaicinoid concentrate",
+    "DirectStream laminar propellant system",
+    "micro-valve dual-mode nozzle",
+    "anodized aluminum casing"
+  ],
+  "specifications": "Active agent: 3% major capsaicinoids (MC)\nDelivery system: DirectStream laminar jet\nNozzle modes: precision stream (half-press) / close-contact burst (full-press)\nEffective range: stream 0.5–4m / burst 0.3–1m\nOperator contamination rate: <4% (controlled crosswind)\nNet volume: 90ml\nCanister material: anodized 6061 aluminum\nSpray duration: approx. 9 seconds full continuous\nPrice: Φ340",
+  "tactical_use": "Favored by executive protection details and plainclothes operatives who require a spray option that will not incapacitate the operator through blowback in a confined vehicle, elevator, or corridor. The precision stream mode allows deployment against a specific individual in a crowd without affecting bystanders. Close-contact burst is used as a last resort in a grapple or clinch. Professionals using the SPP-3 are trained to follow up immediately with a control hold or exit, as the incapacitation window is approximately 15–25 seconds before the subject may begin recovering.",
+  "cultural_context": "In private security circles, carrying an SPP-3 is a quiet status marker — it signals that you work for a principal who invested in proper equipment rather than bulk-bought security supplies. It is sometimes called 'no-drift' by professionals who have experienced blowback from inferior products. On the street, the anodized aluminum canister is recognizable and occasionally stolen for resale, as the concentrations inside are far beyond what civilians can legally purchase.",
+  "known_users": [
+    "executive protection specialists",
+    "plainclothes corporate investigators",
+    "Tier 3–4 high-end private security firms",
+    "licensed personal protection operatives"
+  ],
+  "story_hooks": [
+    "An SPP-3 with a wiped serial number is found at a crime scene in a Tier 1 building — the concentration of agent used is enough to hospitalize an unaugmented person in a sealed room, which is exactly what happened."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "non_lethal",
+    "premium",
+    "tier3",
+    "precision",
+    "aerosol",
+    "professional"
+  ],
+  "parent_corponation": ""
+}

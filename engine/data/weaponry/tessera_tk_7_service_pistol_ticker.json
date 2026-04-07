@@ -1,0 +1,46 @@
+{
+  "id": "88155bdf9f2142a49dc2625688b9b8c5",
+  "name": "Tessera TK-7 Service Pistol 'Ticker'",
+  "type": "weapon",
+  "aliases": [
+    "Ticker",
+    "TK-Seven",
+    "Corp Standard"
+  ],
+  "category": "pistol",
+  "description": "The Tessera TK-7 is a striker-fired semi-automatic pistol chambered in 9x19mm, issued as the standard sidearm to Tessera Corponation's security and administrative enforcement divisions. The weapon features a proprietary biometric grip that locks the firing mechanism unless the registered user's palm print is detected — a feature Tessera markets as 'personnel security' but which critics note also prevents anyone from testifying about the weapon's performance by firing it themselves.\n\nThe TK-7 is a competent but unremarkable pistol elevated by its Tessera branding and biometric lock system. Build quality is good, accuracy is acceptable, and the trigger has the slightly mushy character common to striker-fired designs. The biometric system adds 0.2 seconds to the first shot — a delay that has been the subject of multiple internal review boards after field incidents.\n\nEvery Tessera facility in Meridian 88 has racks of TK-7s in its security office. The weapon is so associated with the corponation that carrying one outside Tessera employment is considered a social signal — either you're a former Tessera employee, or you want people to think you are.",
+  "manufacturer": "Tessera Media Group",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — corponation-registered",
+  "base_technologies": [
+    "Biometric grip lock",
+    "Striker-fired mechanism",
+    "Polymer frame"
+  ],
+  "specifications": "caliber: 9x19mm\neffective_range: 50 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 15 rounds\nweight: 0.71 kg",
+  "tactical_use": "Standard duty sidearm with biometric user authentication. Reliable in normal conditions but the biometric lock introduces a slight first-shot delay. Ineffective if the registered user is incapacitated, as the weapon cannot be picked up and used by allies. Tessera security teams train extensively to mitigate the delay through pre-engagement grip protocols.",
+  "cultural_context": "The TK-7 is Tessera's corporate identity rendered in polymer and steel. Carrying one announces corponation affiliation more loudly than a badge. Former Tessera employees sometimes keep their issued TK-7s as severance souvenirs — technically illegal, universally tolerated.",
+  "known_users": [
+    "Tessera Corponation security division",
+    "Tessera administrative enforcement",
+    "Former Tessera employees (unofficially)",
+    "Black market buyers seeking biometric bypass models"
+  ],
+  "story_hooks": [
+    "A TK-7 with its biometric lock disabled fires in a crowd — and the ballistics match a weapon that was supposed to be locked in a Tessera evidence vault.",
+    "Someone is selling a biometric bypass chip for TK-7s on the Shelf black market, and Tessera wants it suppressed before the media finds out."
+  ],
+  "ammunition_type": [
+    "9x19mm"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "corporate",
+    "biometric",
+    "tessera",
+    "standard_issue",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

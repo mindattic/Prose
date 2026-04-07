@@ -1,0 +1,55 @@
+{
+  "id": "a3f7c2e1b8d049561f2a3c7e9b0d4f82",
+  "name": "TESSERA CORPONATION Bastion CorpSec Neural Fortress",
+  "brand_name": "TESSERA CORPONATION",
+  "product_name": "Bastion CorpSec Neural Fortress",
+  "type": "cyberware",
+  "aliases": [
+    "The Bastion",
+    "Fortress Chip",
+    "TC-Bastion"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The Bastion CorpSec Neural Fortress is a Tier 4 security-hardened BCI engineered by TESSERA CORPONATION for deployment in elite corporate security divisions and executive protection units. Built around a triple-redundant AES-512 encryption core with quantum-resistant key rotation every 3.7 seconds, the Bastion integrates a dedicated threat-cognition co-processor that overlays real-time biometric threat assessment onto the wearer's visual field. Its neural architecture includes a hardware-level kill switch that renders all stored operational data irretrievable upon unauthorized access attempts, and a passive signal-dampening mesh that prevents remote interrogation of neural traffic. The installation footprint spans three cortical anchor points and requires a Class IV surgical suite with full neural mapping pre-operative workup.\n\nWithin TESSERA CORPONATION's internal security hierarchy, wearing a Bastion is a visible mark of rank—CorpSec personnel who have been issued one are informally referred to as 'Walled' by their peers, a term carrying equal parts respect and wariness. The unit's distinctive low-frequency carrier hum, barely perceptible to augmented hearing, has become something of a calling card in corporate espionage circles: rival operatives know that a 'Walled' target is nearly impossible to compromise neurologically. On the streets, decommissioned Bastions stripped from fallen CorpSec operatives command enormous black-market premiums, though most self-destruct before extraction is complete.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 4 — Corporate Issue / Restricted",
+  "legality": "Legal with TESSERA CORPONATION employment contract and active CorpSec clearance Level 5; civilian ownership prohibited under Meridian 88 Neural Security Ordinance 7.4",
+  "installation_requirements": "Class IV surgical suite; full pre-operative cortical mapping; minimum 72-hour post-implant neural stabilization period; TESSERA CORPONATION certified neuro-surgeon required",
+  "rejection_risk": "Low (6%) with standard immunosuppressant protocol; elevated to 18% in subjects with prior BCI implantation history",
+  "maintenance": "Mandatory quarterly firmware updates via TESSERA secure uplink; annual hardware diagnostic at certified facility; neural anchor integrity check every 6 months",
+  "specifications": "{\"encryption_standard\":\"AES-512 with quantum-resistant key rotation (3.7s intervals)\",\"co_processor\":\"Threat-Cognition Unit TC-7 @ 4.2 THz\",\"cortical_anchors\":3,\"signal_dampening\":\"Passive EM mesh, 0.1–12 GHz attenuation\",\"kill_switch\":\"Hardware-level neural data wipe, sub-200ms activation\",\"threat_overlay_latency\":\"<8ms\",\"operational_uptime\":\"99.97% (redundant power cell)\",\"data_storage\":\"2 PB encrypted local cache\",\"biometric_lock\":\"7-factor neural signature authentication\",\"dimensions\":\"28mm x 19mm x 6mm\",\"weight\":\"4.1g\",\"power_source\":\"Bio-kinetic harvest + micro-cell backup\"}",
+  "side_effects": [
+    "Persistent low-frequency auditory hum (40–60 Hz) during active threat-scan cycles reported by 34% of users",
+    "Mild hypervigilance and elevated cortisol baseline due to continuous threat-cognition processing",
+    "Occasional 'ghost overlay' visual artifacts when threat co-processor encounters ambiguous biometric data",
+    "Emotional blunting in social contexts as a secondary effect of constant environmental threat-weighting"
+  ],
+  "cultural_context": "Within Meridian 88's corporate security ecosystem, the Bastion has transcended its functional role to become a cultural symbol of institutional loyalty and controlled lethality. TESSERA CORPONATION leverages this symbolism deliberately in internal recruiting materials, framing Bastion implantation as an initiation rite rather than a standard equipment issue. Critics within civil liberties organizations argue that the device's kill-switch and data-wipe capabilities represent a dangerous precedent for corporate control over employee cognition, a debate that has reached the Meridian 88 legislative floor twice without resolution.",
+  "known_users": [
+    "TESSERA CORPONATION CorpSec Division, Clearance Level 5 and above",
+    "TESSERA Executive Protection Unit (EPU)",
+    "Select contracted personnel from allied corporate security firms operating under TESSERA umbrella agreements"
+  ],
+  "story_hooks": [
+    "A decommissioned Bastion surfaces on the black market still holding encrypted operational memory fragments—someone in TESSERA's upper hierarchy wants it back before its kill-switch timer expires, and they're not asking politely.",
+    "A CorpSec operative with a Bastion implant begins experiencing 'ghost overlay' artifacts that don't match any real biometric profiles—the images are of people who don't exist yet, or perhaps people who were erased.",
+    "A civil liberties attorney approaches the party after her client—a former TESSERA CorpSec agent—had their Bastion remotely wiped mid-trial, destroying the only neural evidence that could have proven a corporate war crime."
+  ],
+  "street_price": "Φ28,000",
+  "licensed_price": "Φ44,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "corpsec",
+    "security-hardened",
+    "encryption",
+    "tier4",
+    "tessera-corponation",
+    "professional-grade",
+    "threat-assessment",
+    "restricted",
+    "professional"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

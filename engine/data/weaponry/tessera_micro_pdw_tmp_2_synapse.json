@@ -1,0 +1,48 @@
+{
+  "id": "ea17ae8b4317e479d17afb09fd0ffe61",
+  "name": "Tessera Micro-PDW TMP-2 'Synapse'",
+  "type": "weapon",
+  "aliases": [
+    "Synapse",
+    "TMP-2",
+    "Brain Gun"
+  ],
+  "category": "smg",
+  "description": "The TMP-2 Synapse is a micro-PDW that weighs 900 grams and measures 200mm with its stock folded. Tessera designed it as the smallest possible weapon that maintains meaningful combat capability, intended for deep-cover operatives and intelligence personnel who cannot carry anything larger. The weapon fires 4.6mm caseless from a 15-round flush magazine at 1,000 rpm — emptying its magazine in under a second on full auto.\n\nThe Synapse's BCI integration is its defining feature. The weapon's targeting computer tracks the operator's eye movements through the neural link and adjusts point of aim to compensate for the micro-PDW's minimal sight radius. In effect, the Synapse hits where the operator looks, not where the weapon points. This eye-tracking fire control transforms what would otherwise be an inaccurate last-resort weapon into a precise close-quarters tool.\n\nAt Φ9,000, the Synapse is extraordinarily expensive for its size. The cost reflects the miniaturized BCI targeting system rather than the mechanical components, which are simple. Tessera sells the TMP-2 to intelligence agencies and executive protection firms who need the smallest possible weapon with the highest possible hit probability.",
+  "manufacturer": "Perfect Recall Storage",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — intelligence and executive protection only",
+  "base_technologies": [
+    "BCI eye-tracking fire control",
+    "Micro-PDW miniaturization",
+    "Neural aim compensation"
+  ],
+  "specifications": "caliber: 4.6mm caseless\neffective_range: 50m\nrate_of_fire: 1,000 rpm (cyclic)\nmagazine_capacity: 15 rounds\nweight: 0.9 kg",
+  "tactical_use": "The Synapse is a reaction weapon for environments where any visible weapon is unacceptable. Its 15-round magazine and extreme rate of fire provide approximately one second of automatic fire — enough for a single engagement at conversational distance. The BCI eye-tracking system ensures those rounds hit their target despite the weapon's minimal dimensions. After the magazine is empty, the Synapse is spent. It is designed for one engagement, not sustained combat.",
+  "cultural_context": "The Synapse is the weapon of last resort for people who inhabit spaces where weapons do not exist. Diplomats, intelligence operatives, and undercover agents carry TMP-2s because the alternative is being unarmed in situations where an exposed weapon means death. The weapon's existence is semi-classified — Tessera does not advertise it publicly, and finding one on someone is grounds for immediate detention in most corporate jurisdictions.",
+  "known_users": [
+    "Intelligence operatives",
+    "Deep-cover agents",
+    "Diplomatic protection details"
+  ],
+  "story_hooks": [
+    "A Synapse was found during a routine security scan of a diplomatic envoy. The weapon's BCI logs reveal its last target was a head of state — and the engagement was logged as successful.",
+    "An intelligence operative's Synapse malfunctioned, and the eye-tracking system locked onto their own reflection in a mirror. The weapon discharged into the reflective surface, revealing the operative's position."
+  ],
+  "ammunition_type": [
+    "4.6mm caseless"
+  ],
+  "tags": [
+    "weapon",
+    "smg",
+    "micro",
+    "concealed",
+    "intelligence",
+    "BCI",
+    "eye_tracking",
+    "Tessera",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

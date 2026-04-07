@@ -62,6 +62,7 @@ public class CharacterData : ICanonEntity
     /// Empty until stories produce permanent consequences.
     /// </summary>
     [JsonPropertyName("changelog")] public List<CharacterChangelog> Changelog { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
 /// <summary>
@@ -165,7 +166,7 @@ public class CharacterStats
     [JsonPropertyName("thresholds")] public Dictionary<string, JsonElement> Thresholds { get; set; } = new();
     [JsonPropertyName("strengths")] public List<string> Strengths { get; set; } = [];
     [JsonPropertyName("weaknesses")] public List<string> Weaknesses { get; set; } = [];
-    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> StatTags { get; set; } = [];
 }
 
 /// <summary>

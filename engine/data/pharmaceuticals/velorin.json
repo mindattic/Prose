@@ -31,7 +31,7 @@
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
   "street_price": "Φ240 per sublingual strip",
-  "cultural_context": "Velorin is the great equalizer — unaugmented fighters who can afford it can close the gap against lightly-chromed opponents. This creates a strange economic dynamic: chrome costs thousands of phi upfront, while Velorin costs hundreds per engagement. For runners who can't afford augmentation, Velorin is a subscription fee for staying competitive. There's a subculture of 'clean fighters' on the competitive circuit who use Velorin specifically because it doesn't qualify as augmentation under most underground fighting rules.",
+  "cultural_context": "Velorin is the great equalizer — unaugmented fighters who can afford it can close the gap against lightly-chromed opponents. This creates a strange economic dynamic: chrome costs thousands of quanta upfront, while Velorin costs hundreds per engagement. For runners who can't afford augmentation, Velorin is a subscription fee for staying competitive. There's a subculture of 'clean fighters' on the competitive circuit who use Velorin specifically because it doesn't qualify as augmentation under most underground fighting rules.",
   "story_hooks": [
     "A Helix researcher approaches a runner with an offer: beta-test the next-generation Velorin formulation, which promises 80ms reduction, in exchange for combat field data — but the waiver they're asked to sign has unusual indemnity clauses.",
     "Someone is manufacturing a street version of Velorin that has an 80% chance of working and a 20% chance of triggering a grand mal seizure — and the counterfeit packaging is indistinguishable from the real thing.",
@@ -53,5 +53,6 @@
     "circuit",
     "tier 3",
     "tier 4"
-  ]
+  ],
+  "parent_corponation": ""
 }

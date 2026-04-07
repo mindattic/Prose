@@ -1,0 +1,55 @@
+{
+  "id": "7d1e4b8c3a06f592e8d0a1c4b7f23e90",
+  "name": "PulsePoint HydraLine Fluid Balance Monitor",
+  "brand_name": "PulsePoint",
+  "product_name": "HydraLine",
+  "type": "cyberware",
+  "aliases": [
+    "the drip",
+    "watermark",
+    "thirstkill",
+    "the gauge",
+    "fluidcheck"
+  ],
+  "category": "convenience",
+  "body_location": "subdermal forearm (radial side, non-dominant arm)",
+  "description": "The HydraLine is a passive biosensor implant that continuously monitors interstitial fluid osmolality, plasma volume indicators via near-infrared tissue spectroscopy, and electrolyte proxy markers through galvanic skin response mapping. It maintains a real-time hydration model for the user's body and communicates status through a tiered alert system: a mild cooling sensation in the implant site for early dehydration warning, a more insistent tightening sensation at moderate deficit, and — its most-discussed feature — an optional thirst suppression signal that mutes the discomfort of thirst without eliminating the underlying need, allowing users to schedule drinking around their actual lives rather than responding to urgency. The suppression function includes a mandatory override that cannot be disabled by the user: at severe deficit thresholds, the cooling sensation converts to an uncomfortable buzzing that escalates until fluid is consumed, preventing the suppression mode from becoming a health hazard.\n\nMeridian 88's climate systems are notoriously inconsistent — the Great Lakes corridor runs hot and humid from May through October, and the city's internal environments range from aggressively climate-controlled corporate towers to sweltering Shelf corridors where cooling infrastructure is unreliable or nonexistent. For manual laborers, athletes, and anyone spending long hours in poorly regulated environments, the HydraLine reduces the cognitive load of monitoring physical needs during demanding work. It is particularly popular among construction workers, warehouse staff, and outdoor service workers in Tier 1 and Tier 2, as well as fitness-oriented Tier 3 consumers who appreciate the precision nutritional data it feeds to health tracking platforms. The implant pairs naturally with calorie and metabolic monitors and is frequently bundled with them at clinic kiosks.",
+  "manufacturer": "PULSEPOINT HEALTH SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Pharmacy kiosk installation; 10-minute outpatient procedure, no anesthetic required for standard models",
+  "rejection_risk": "Minimal",
+  "maintenance": "Sensor recalibration every 12 months; no battery replacement required (passive near-IR draws from body heat); firmware update via clinic kiosk or paired device",
+  "specifications": "{\"monitoring_method\": \"near-infrared tissue spectroscopy + galvanic skin response\", \"update_frequency\": \"continuous, 30-second rolling average\", \"alert_modalities\": [\"cooling sensation\", \"pressure sensation\", \"mandatory buzzing override\"], \"thirst_suppression\": \"optional, user-controlled with mandatory safety override\", \"electrolyte_proxies_tracked\": [\"sodium\", \"potassium\", \"chloride\"], \"data_output\": \"Bluetooth LE to paired device or neural mesh\", \"power_source\": \"thermoelectric (body heat)\"}",
+  "side_effects": [
+    "First two weeks may produce false early-warning sensations while the sensor calibrates to individual baseline",
+    "Users new to thirst suppression occasionally forget to drink entirely until the mandatory override activates",
+    "Minor skin sensitivity at implant site in very cold weather",
+    "Rare reports of the cooling sensation being misread as localized nerve issues during the adjustment period"
+  ],
+  "cultural_context": "The HydraLine occupies a peculiar cultural space in Meridian 88: among manual workers it is as unremarkable as a work boot, while among Tier 3 wellness consumers it carries a mild prestige as part of a curated 'body-aware' lifestyle stack. Fitness culture in the city has embraced it almost universally — going to a gym without a hydration monitor is considered slightly careless, like exercising without shoes. The thirst suppression feature has attracted occasional criticism from health advocates who worry about users relying on the safety override rather than developing body awareness, but clinical data consistently shows hydration outcomes improve significantly with the implant versus without it. In Tier 1 communities where water access can be inconsistent or expensive, the HydraLine's ability to help users stretch limited water intake without suffering is considered genuinely life-improving, and second-hand units circulate widely in Shelf markets.",
+  "known_users": [
+    "Construction and warehouse workers",
+    "Endurance athletes and fitness enthusiasts",
+    "Parents monitoring their own health while managing demanding schedules",
+    "Elderly individuals with diminished thirst response",
+    "Outdoor service and maintenance workers in summer heat"
+  ],
+  "story_hooks": [
+    "A batch of HydraLine units distributed through a Tier 1 clinic kiosk has a corrupted suppression threshold — users are not receiving the mandatory override signal at dangerous deficit levels, and people are collapsing on job sites. Someone needs to trace the bad firmware batch and find out if it was an accident.",
+    "A player's HydraLine begins flagging contamination markers in their interstitial fluid that suggest they've been repeatedly exposed to a specific industrial compound — but they have no idea how or when.",
+    "A labor organizer approaches the party: PulsePoint's latest firmware update added silent data logging of hydration patterns that is being sold to employers to monitor worker rest compliance, and workers want it stopped."
+  ],
+  "street_price": "Ψ140–Ψ260",
+  "licensed_price": "Ψ380 at PulsePoint authorized clinics and pharmacy kiosks",
+  "tags": [
+    "cyberware",
+    "convenience",
+    "lifestyle",
+    "health-monitoring",
+    "fitness",
+    "mass-market",
+    "biosensor"
+  ],
+  "parent_corponation": ""
+}

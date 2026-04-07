@@ -1,0 +1,33 @@
+{
+  "id": "297ecf58d5d24e2a09ccefe88452a084",
+  "name": "Abdicator",
+  "type": "archetype",
+  "category": "power",
+  "description": "Had power, walked away, doesn't miss it",
+  "behavioral_signature": "Refuses authority and seems genuinely at peace with the choice",
+  "under_stress": "Others try to drag them back and they resist",
+  "at_rest": "Lives simply, helps individually, avoids systems",
+  "will_always": [
+    "decline positions of authority"
+  ],
+  "will_never": [
+    "accept responsibility for more than themselves"
+  ],
+  "unless": [
+    "the specific people they love are in danger and no one else can act"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Hermit",
+      "threshold": 0.7,
+      "context": "rejecting power"
+    }
+  ],
+  "opposite_of": [
+    "Power Addict"
+  ],
+  "tags": [
+    "renounced",
+    "peaceful"
+  ]
+}

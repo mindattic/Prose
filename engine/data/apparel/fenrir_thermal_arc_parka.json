@@ -1,0 +1,46 @@
+{
+  "id": "3b6d9f2a5c8e1047b3d6f9a2c5e8b1d4",
+  "name": "Fenrir Thermal-Arc Parka",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "A mid-length parka designed for Meridian 88's brutal lake winters, manufactured by Fenrir — a Scandinavian-heritage brand that opened a Great Lakes production facility in 2171. The outer shell is a tightly woven ripstop nylon in matte black, navy, or a deep forest green. The interior uses a graphene-filament heating mesh powered by a thin flexible battery pack sewn into the left side panel — a USB-C style connector at the hem lets you charge from any standard port. Three heat settings, controlled by a simple push-button tab at the cuff. No app, no BCI sync, no cloud. Just warm.\n\nThe parka is sold in Tier 2 and Tier 3 retail channels and is considered one of the more honest pieces of heated apparel on the market — the tech is minimal, the construction is sound, and the battery lasts a full work shift at medium setting. Hood is furred with synthetic pile and detaches. Deep hand-warmer pockets. This is the parka you see on transit platforms and construction sites in January.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "ripstop nylon shell",
+    "graphene-filament heating mesh",
+    "flexible battery pack",
+    "synthetic pile detachable hood trim",
+    "recycled polyester fill"
+  ],
+  "functionality": "Integrated graphene heating mesh with three heat settings. Battery powers 8 hours on low, 4 hours on high. Charges via standard port at hem. No wireless connectivity.",
+  "what_it_says": "You live in a cold city and you've made a sensible decision about it. The heated lining is a practical luxury, not a status one.",
+  "worn_by": [
+    "construction workers",
+    "transit platform staff",
+    "outdoor laborers",
+    "Tier 2 commuters",
+    "Tier 3 practical buyers"
+  ],
+  "manufacturer": "Fenrir",
+  "price_range": "Φ165",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of Fenrir parkas from a 2198 production run had a battery cell defect that causes intermittent overheating at the left side panel — not enough to catch fire, but enough to leave a burn mark on skin. Fenrir issued a quiet recall that many buyers never heard about.",
+    "The graphene mesh in the parka operates on a frequency that interferes with a specific older-model BCI handshake protocol — wearers with that implant generation sometimes experience brief signal dropout in high-cold situations. Nobody has formally connected these two facts yet.",
+    "A Shelf community organizer has been buying Fenrir parkas wholesale through a Tier 3 intermediary and distributing them to unhoused residents. Someone at Fenrir's distribution division has noticed the unusual bulk orders and flagged them."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "outerwear",
+    "tier 2",
+    "parka",
+    "heated",
+    "winter",
+    "tech-enhanced",
+    "practical",
+    "workwear"
+  ],
+  "parent_corponation": ""
+}

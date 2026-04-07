@@ -1,0 +1,38 @@
+{
+  "id": "03b6c9d2e5f8481067a8b9c0d1e2f345",
+  "name": "Greywalk Flatboot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A flat-soled ankle boot in grey synth-leather so cheap it creases white at every flex point. The seams are factory-done but barely — threads already pulling at the toe box on a new pair. Popular because they're one of the cheapest new-manufactured boots available, sold in bulk at Shelf market stalls. Most people buy two pairs at once knowing one will fail within months.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "budget synth-leather",
+    "thin rubber sole",
+    "synthetic lining"
+  ],
+  "functionality": "none",
+  "what_it_says": "You're not pretending. These are what you could afford, and you're not making excuses.",
+  "worn_by": [
+    "Shelf workers",
+    "people just arriving in the city",
+    "those between better options"
+  ],
+  "manufacturer": "Greywalk Consumer Goods",
+  "price_range": "Φ7 - Φ10",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Greywalk is a front company. Someone's tracking purchase data from every stall that sells them.",
+    "A pair still has the original sales tag — purchased the same day a person disappeared."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "ankle boot",
+    "budget",
+    "synth-leather",
+    "shelf"
+  ],
+  "parent_corponation": ""
+}

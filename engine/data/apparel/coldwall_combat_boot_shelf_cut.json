@@ -1,0 +1,39 @@
+{
+  "id": "c9d2e5f3a1b4078823c4d5e6f7a8b901",
+  "name": "Coldwall Combat Boot (Shelf Cut)",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A mid-calf boot built from scrap leather panels stitched together with visible, uneven seams — some waxed thread, some monofilament pulled from cable housings. The lacing is mismatched: two different eyelet systems, one side using a knotted cord in place of a missing hook. The soles are thick and aggressive, cut from truck tire tread and bonded with contact cement.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "scrap leather",
+    "monofilament thread",
+    "truck-tire tread",
+    "contact cement"
+  ],
+  "functionality": "Exceptional grip on wet metal and concrete. Ankle support is moderate.",
+  "what_it_says": "You made these yourself, or you know someone who did. The Shelf takes care of its own.",
+  "worn_by": [
+    "gang members",
+    "Shelf craftspeople",
+    "anyone who can't get to a market"
+  ],
+  "manufacturer": "Street-made (no brand)",
+  "price_range": "Φ8 - Φ15",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The leather panels came from at least three different sources — one strip is stamped with a corporate access badge logo.",
+    "Someone in the Shelf is known for their distinctive stitching pattern. These boots can be traced back to them."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "combat boot",
+    "handmade",
+    "scrap",
+    "shelf"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,34 @@
+{
+  "id": "e5d930aa7eac10b7b91948dfaf391a74",
+  "name": "Joy Hoarder",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Collects moments of happiness like precious objects, terrified of losing them",
+  "behavioral_signature": "Photographs everything, saves every memento, replays good memories obsessively",
+  "under_stress": "Retreats into past happiness because the present is unbearable",
+  "at_rest": "Savoring the current good moment with bittersweet awareness it will end",
+  "will_always": [
+    "try to preserve happy moments"
+  ],
+  "will_never": [
+    "let a good moment pass unacknowledged"
+  ],
+  "unless": [
+    "they're so deep in survival mode that joy is a luxury they can't afford"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Nostalgic",
+      "threshold": 0.75,
+      "context": "clinging to the past"
+    }
+  ],
+  "opposite_of": [
+    "Nihilist"
+  ],
+  "tags": [
+    "joy",
+    "preservation",
+    "nostalgia"
+  ]
+}

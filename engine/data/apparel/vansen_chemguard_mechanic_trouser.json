@@ -1,0 +1,37 @@
+{
+  "id": "d91b5f3c7a2e084610c3f7b2a58e9d46",
+  "name": "Vansen ChemGuard Mechanic Trouser",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Flat-front work trousers treated with a grease-resistant silicone-polymer finish that causes most oils and solvents to bead and wipe clean. The fabric is a stiff, dark graphite weave that softens slightly with wear. Popular in vehicle bays, fabrication shops, and any Tier 2 workspace where you're kneeling on concrete by noon.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "silicone-treated poly-cotton twill",
+    "nylon reinforcement panels"
+  ],
+  "functionality": "Grease-resistant and light solvent-repellent surface treatment, reinforced knees",
+  "what_it_says": "You're a trades professional — competent, practical, not interested in looking anything other than what you are.",
+  "worn_by": [
+    "mechanics",
+    "fabricators",
+    "vehicle techs",
+    "machine operators"
+  ],
+  "manufacturer": "Vansen Industrial Apparel",
+  "price_range": "Φ30 - Φ38",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Vansen's ChemGuard treatment degrades after roughly two years of heavy use — workers on tight budgets sometimes re-treat old pairs with black-market spray-on sealant of questionable quality.",
+    "A mechanic wearing a pristine, barely-used pair in a rough district stands out; either they're new to the work or they're not actually a mechanic."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 2",
+    "workwear",
+    "mechanic",
+    "chemical-resistant"
+  ],
+  "parent_corponation": ""
+}

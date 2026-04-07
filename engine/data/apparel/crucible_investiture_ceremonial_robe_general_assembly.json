@@ -1,0 +1,35 @@
+{
+  "name": "Crucible Investiture Ceremonial Robe — General Assembly",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "investiture_robe",
+  "manufacturer": "BioSilk Textiles",
+  "description": "Crucible's investiture ceremonies are industrial in their scale and blunt in their symbolism, and the General Assembly robe reflects that without apology. The garment is a full-length overrobe in Crucible's signature iron-gray, constructed from a heavy wool-analog that has been bonded with a thin layer of fire-resistant substrate — a practical accommodation for ceremonies that often take place on or adjacent to active manufacturing floors. The chest bears a large embroidered Crucible emblem in copper-analog thread, and rank indicators along the left sleeve mark the wearer's division and seniority level within the corponation. The robe is unisex in cut and sized generously to fit over standard augmentation rigs and basic chrome.\n\nThese robes are worn by all assembly-level employees invited to investiture ceremonies — promotions to supervisory rank, new facility openings, production milestone commemorations. They are issued at the door, worn for the duration of the ceremony, and returned. The fact that thousands of identical robes exist, that you are one of thousands wearing one, is not a flaw in the design. In Crucible culture, collective identity is the point.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ0",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "extreme",
+  "legal_status": "legal",
+  "cultural_context": "Crucible workers who have attended multiple investiture ceremonies sometimes develop a strong attachment to the robe as an object, even though they never own one. The ceremony it represents — being present, being counted as part of the collective — carries real weight in Crucible's corporate culture.",
+  "story_hooks": [
+    "A character is handed a General Assembly robe at the door of what they were told was a production milestone ceremony. The rank indicators on the sleeves around them are far above anything they've seen at this tier of event. Something larger is being announced.",
+    "Someone has managed to keep a Crucible investiture robe rather than returning it. Crucible has not come looking. That either means the oversight system failed, or they want the robe to be kept for a reason.",
+    "A character attending their first Crucible ceremony puts on the robe and realizes, standing among thousands of identical gray figures, that they cannot find their coworkers. The ceremony begins before they do."
+  ],
+  "tags": [
+    "robe",
+    "ceremonial",
+    "investiture",
+    "formal",
+    "crucible",
+    "issued",
+    "augment-compatible",
+    "collective",
+    "tier-2",
+    "tier-3",
+    "industrial"
+  ],
+  "id": "2e44ed89586c47109c0129dbaaa8840e",
+  "parent_corponation": "Crucible Genomics"
+}

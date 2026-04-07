@@ -1,0 +1,59 @@
+{
+  "id": "a3f7c2e1b84d9056f2a1c3e7d09b4f82",
+  "name": "NeuralPath PresenceRead Social Cue Implant",
+  "brand_name": "NeuralPath",
+  "product_name": "PresenceRead",
+  "type": "cyberware",
+  "aliases": [
+    "the empathy chip",
+    "body reader",
+    "vibe scan",
+    "the read",
+    "feelware"
+  ],
+  "category": "social",
+  "body_location": "cranial temporal lobe adjacent, with micro-filament array extending to periorbital and auditory processing regions",
+  "description": "The NeuralPath PresenceRead is a passive social cognition enhancement implant designed to augment the user's real-time processing of nonverbal communication signals. A cluster of micro-filament sensors embedded near the temporal and occipital lobes interfaces with the brain's existing face-processing and auditory cortex regions, running a continuous low-power inference layer that tags incoming visual and auditory social data — micro-expressions lasting under 80 milliseconds, postural shifts, breath-rate changes, vocal tension harmonics, eye contact duration — and translates these into a gentle, intuitive 'social signal' that surfaces as a felt sense rather than an explicit overlay. The system does not display data visually; instead, it modulates the user's existing social intuition, making what was previously invisible feel instinctively legible. Firmware updates refine the model quarterly based on anonymized aggregate behavioral datasets drawn from consenting PresenceRead users across Meridian 88's population.\n\nThe PresenceRead was originally developed in partnership with neurodivergent advocacy groups in the Tier 2 working districts, and its primary user base remains people who experience difficulty with implicit social cues — those on the autism spectrum, those with social anxiety disorders, and individuals who grew up in isolated or non-neurotypical households. For these users, the implant is genuinely transformative: a job interview that once felt like navigating fog now carries legible emotional texture; a tense conversation at the community co-op becomes something they can actually read and respond to in real time. But the PresenceRead has quietly spread far beyond its original therapeutic context. Tier 3 professionals use it to stay sharp in negotiations. Parents use it to better understand their children. Bartenders, social workers, and teachers cite it as indispensable. In a city of millions speaking dozens of languages and carrying wildly varied cultural communication norms, being able to feel what a room is doing — not just hear it — has become a quiet form of social infrastructure.",
+  "manufacturer": "NEURALPATH",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient neuro-clinic; 90-minute procedure under local sedation; requires baseline cognitive mapping session prior to installation",
+  "rejection_risk": "Minimal",
+  "maintenance": "Annual firmware update recommended; optional behavioral recalibration session every 18 months; no battery replacement required — passive induction powered",
+  "specifications": "{\"signal_detection_range\": \"within 4 meters, optimal at 1.5 meters\", \"latency\": \"<12ms from stimulus to felt-sense surfacing\", \"micro_expression_threshold\": \"detects expressions as brief as 60ms\", \"vocal_analysis\": \"tension, pitch variance, respiratory rhythm\", \"output_modality\": \"intuitive felt-sense, no visual overlay\", \"power_source\": \"passive bioelectric induction\", \"update_cycle\": \"quarterly OTA firmware\", \"compatibility\": \"compatible with most NeuralPath mesh devices; partial compatibility with MindBridge OpenLane\"}",
+  "side_effects": [
+    "Mild emotional fatigue in high-density social environments during the first month of use",
+    "Occasional hypersensitivity to distress signals in others, described as 'feeling the room too hard' — typically resolves after calibration",
+    "Vivid, socially-themed dreams during the initial two-week integration period",
+    "Rare: transient difficulty distinguishing implant-mediated intuition from personal emotional response, especially under stress"
+  ],
+  "cultural_context": "The PresenceRead occupies a genuinely unusual social position in Meridian 88: it began as assistive technology and became aspirational without ever quite losing its therapeutic reputation. In Tier 1 and 2 communities, it is widely seen as a practical tool — no different from a hearing aid or corrective lenses — and carries almost no stigma among neurodivergent communities who fought hard to normalize it. The slang term 'the read' is used affectionately, and people will openly mention having it in conversation. In Tier 3 and 4 professional spaces, however, there is a more complicated undercurrent: some people feel vaguely unsettled by the idea of someone in the room running enhanced social perception, even if the PresenceRead cannot transmit or record data. A small but vocal cultural contingent — mostly in Tier 3 creative and political circles — argues that widespread PresenceRead use subtly erodes the social value of genuine empathy, replacing cultivated emotional intelligence with purchased inference. Most PresenceRead users find this argument exhausting and more than a little ableist. Among youth culture in the Shelf and working districts, the implant has no particular fashion cachet — it is simply something people have, like a transit pass or a payment node.",
+  "known_users": [
+    "Autistic adults navigating professional and civic life",
+    "Social workers and community mediators",
+    "People with social anxiety disorders seeking to reduce interaction uncertainty",
+    "Tier 3 sales professionals and negotiators",
+    "Parents of young children who want to better read emotional states",
+    "Teachers and educators in large mixed-population classrooms",
+    "Immigrants and first-generation citizens navigating unfamiliar cultural communication norms",
+    "Bartenders and hospitality workers in high-volume venues"
+  ],
+  "story_hooks": [
+    "A character with a PresenceRead begins detecting stress and deception signals from someone everyone else in the group trusts implicitly — but the implant's inference layer has also been behaving strangely since a recent firmware update, and they cannot tell if what they're feeling is real or artifact.",
+    "A Tier 1 social worker using a PresenceRead to help mediate a community dispute starts picking up signals that one of the 'neutral' facilitators in the room is performing calm while experiencing something closer to predatory focus — raising the question of who actually called this meeting and why.",
+    "NeuralPath's quarterly firmware update is rolled back without explanation three days after release; users who received it report their PresenceRead feels 'louder' than before, surfacing emotional data they describe as intrusive — and a small number say they're picking up signals from people who aren't in the room."
+  ],
+  "street_price": "Φ320–Φ480 depending on district and installer",
+  "licensed_price": "Φ750 at certified NeuralPath outpatient clinics; Φ890 with full calibration package",
+  "tags": [
+    "cyberware",
+    "social",
+    "lifestyle",
+    "neurodivergent-assistive",
+    "passive-enhancement",
+    "communication",
+    "empathy-tech",
+    "tier1-accessible"
+  ],
+  "parent_corponation": ""
+}

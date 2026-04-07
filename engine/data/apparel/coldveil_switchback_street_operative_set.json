@@ -1,0 +1,47 @@
+{
+  "id": "a3f7c2e1d509b84a6e230f91c7554b2d",
+  "name": "Coldveil Switchback Street Operative Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A reversible field jacket anchors this set — one side is a muted oxblood-brown textured ripstop with scanner-diffusing nano-weave panels across the shoulders and chest, the other a deep slate grey with subtle hex-pattern embossing. The jacket hits mid-hip with a structured collar that folds up into a partial face shield, magnetic snap closures running down the left chest, and concealed holster channels sewn into both interior breast panels. The left sleeve has a chrome-routed aug-power channel running from cuff to shoulder with an external snap-open seam for arm prosthetic access. Worn open, it reads as a beat-up logistics worker's coat. Closed and reversed, it becomes something quieter and harder to place. Underneath is a dark burgundy moisture-wicking compression turtleneck with embedded comm-relay threading along the collar seam. The trousers are a charcoal-toned articulated ripstop with four concealed zippered thigh pockets, reinforced knee panels, and a gusseted crotch for full-range movement. Footwear is a low-profile matte black ankle boot with a rubber-compound sole engineered for silence on metal grating and wet concrete, with a magnetic closure hidden under a false lace panel. The overall silhouette reads Tier 2-3 — just another person moving through Circuit with something to carry.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "scanner-diffusing nano-weave ripstop",
+    "synth-cotton compression knit",
+    "articulated charcoal ripstop",
+    "mag-closure rubber-compound sole leather analog",
+    "chrome-routed aug-power conduit strip"
+  ],
+  "functionality": "Reversible jacket for rapid visual identity change; concealed dual holster channels; aug-power routing channel in left sleeve with snap-open access seam; scanner-diffusing shoulder and chest panels; comm-relay threading in collar; four concealed zippered thigh pockets; reinforced knees; partial face-shield collar fold; silent-sole footwear",
+  "what_it_says": "This outfit says someone who has done this long enough to stop showing it. No excess, no posturing — just a person who knows exactly what they need and has sewn it into every seam. The reversible jacket is the tell for anyone who knows what to look for. Everyone else sees a slightly tired Tier 2 worker heading somewhere they don't need to explain.",
+  "worn_by": [
+    "mid-career runners",
+    "solo operatives working Circuit crowds",
+    "data couriers",
+    "fixers who move between tiers regularly",
+    "ex-corpsec gone freelance"
+  ],
+  "manufacturer": "Brineworks — street label, Circuit District",
+  "price_range": "Φ 680 – Φ 950",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A runner reverses the jacket mid-transit after a witness description goes out over the corpsec band — the jacket's scanner-diffusing panels have already scrambled the last checkpoint's biometric sweep, but they don't know yet if it worked.",
+    "The comm-relay threading in the collar collar has been broadcasting on a frequency the runner didn't authorize — someone has been listening to every job for the last three weeks.",
+    "A contact refuses to meet unless the runner shows up looking like Tier 2. The reversible jacket is the only thing standing between a successful handoff and a blown cover in a crowd of factory shift workers."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "runner_operative",
+    "tier_2",
+    "tier_3",
+    "reversible",
+    "scanner_resistant",
+    "aug_compatible",
+    "concealed_carry",
+    "quick_change",
+    "street_tactical"
+  ],
+  "parent_corponation": ""
+}

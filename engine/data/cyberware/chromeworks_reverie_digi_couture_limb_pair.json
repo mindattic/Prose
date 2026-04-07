@@ -1,0 +1,59 @@
+{
+  "id": "f4a1e83c609d27b5e38c0f2a71d4b956",
+  "name": "CHROMEWORKS Reverie Digi Couture Limb Pair",
+  "brand_name": "CHROMEWORKS",
+  "product_name": "Chromeworks Reverie Digitigrade Couture Limb Pair",
+  "type": "cyberware",
+  "aliases": [
+    "Hauntlegs",
+    "Reveries",
+    "Chrome Haunches"
+  ],
+  "category": "digitigrade_leg",
+  "body_location": "legs",
+  "description": "Chromeworks did not want to make digitigrade legs. The Reverie exists because their design team was approached repeatedly by body-modification subculture clients who wanted Chromeworks' neural integration quality in a non-human chassis, and eventually the revenue argument won. The result is Chromeworks' signature seamless chrome aesthetic applied to a reverse-knee digitigrade frame — mirror-polished surfaces, flush panel seams, and an optional bioluminescent vein option that traces the joint lines in selectable color. Functionally they are mid-tier: faster than stock human legs, capable of a 3-meter vertical, but the engineering priority was appearance and neural fidelity, not performance.\n\nThe Reverie is the body-mod subculture's aspirational object precisely because it is beautiful and wrong at the same time. Wearers are not trying to pass — they are trying to be seen, to make the alienness gorgeous, to force the discomfort into something that cannot look away. Chromeworks quietly markets them only through specialty boutiques and does not feature them in mainline advertising, but the waiting list is real. The stigma is the point. The mirror finish makes sure you notice.",
+  "manufacturer": "CHROMEWORKS",
+  "tier_availability": "Tier 3-5",
+  "legality": "Licensed",
+  "installation_requirements": "Full bilateral hip disarticulation, Chromeworks-certified neural socket installation required, optional bioluminescent vein channel installation adds 2 hours to procedure",
+  "rejection_risk": "Low — Chromeworks' neural integration technology is best-in-class; the digitigrade geometry is the primary adaptation challenge, not the interface hardware",
+  "maintenance": "Annual Chromeworks service appointment; chrome surface polishing and scratch treatment available; bioluminescent fluid replacement every 18 months",
+  "specifications": "{\"top_speed_kmh\": 38, \"vertical_leap_meters\": 3.1, \"surface_finish\": \"mirror-polished chrome, 99.2% reflectivity\", \"bioluminescent_option\": \"selectable color, 14-spectrum vein channels\", \"frame_material\": \"chromeworks titanium-alloy chassis\", \"neural_integration\": \"Chromeworks SilkLink v9\", \"weight_per_leg_kg\": 4.3, \"panel_seam_tolerance_mm\": 0.3, \"power_source\": \"subcutaneous cell pack\", \"aesthetic_customization\": \"surface etch, color vein, panel geometry\"}",
+  "side_effects": [
+    "Mirror surface creates light reflection disturbance in bright environments — wearers and nearby persons affected in direct sunlight or flash conditions",
+    "The Reverie's social visibility means wearers are identified, profiled, and remembered — anonymity in public spaces is effectively impossible",
+    "Standard digitigrade proprioceptive adaptation period 6-10 weeks; some Reverie buyers underestimate this after seeing only the aesthetic",
+    "Chromeworks' reluctance to support this product line means warranty service disputes are common; some certified technicians refuse to service digitigrade units"
+  ],
+  "cultural_context": "The body-mod subculture that embraces the Reverie has built an entire philosophy around chosen alienness — the idea that if mainstream Meridian 88 is going to treat you as other, you should make that otherness as undeniable and as beautiful as possible. Wearing the Reverie into a space that bans digitigrade legs is a political act as much as a fashion one. Chromeworks' discomfort with their own product has become part of the object's mythology.",
+  "known_users": [
+    "Body-modification subculture members for whom the stigma is a feature, not a bug",
+    "Tier 3-4 underground artists, musicians, and performers building identity around radical aesthetics",
+    "Wealthy provocateurs in Tier 4-5 circles who use social transgression as status performance",
+    "Activists using visible non-standard bodies as political statement against corporate body norms",
+    "Former Chromeworks standard-limb clients who escalated their modification journey deliberately"
+  ],
+  "story_hooks": [
+    "A Reverie wearer has been found dead in a Tier 5 venue that publicly bans digitigrade entry — someone let them in, and someone wanted them found there",
+    "Chromeworks' internal communications about the Reverie's development have been leaked, revealing executives describing the product as 'a mistake we can't undo' — the leak is being used to organize a body-mod rights movement",
+    "A crew of Reverie wearers is staging a coordinated entry into a corporate public space that bans them, and they want players as witnesses, backup, or press"
+  ],
+  "street_price": "Φ95,000",
+  "licensed_price": "Φ168,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "digitigrade",
+    "legs",
+    "fashion",
+    "body-modification",
+    "chromeworks",
+    "subculture",
+    "aesthetic",
+    "stigma",
+    "chrome",
+    "bioluminescent",
+    "digitigrade_leg"
+  ],
+  "parent_corponation": ""
+}

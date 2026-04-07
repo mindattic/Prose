@@ -1,0 +1,50 @@
+{
+  "id": "a3f7c2e1b84d6509f2a1c3e7d09b4f82",
+  "name": "Kelvex Transit Operator Standard Uniform",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A head-to-toe corponation-issued transit operator's uniform built for twelve-hour shifts on the M88 elevated rail network. The jacket is a structured navy synth-twill with reinforced elbows, a mandarin collar, and a left-breast embroidered patch reading KELVEX TRANSIT — MERIDIAN CORRIDOR in white and gold. Reflective orange piping runs along the shoulders and cuffs, bright enough to catch headlights in the station tunnels. Underneath sits a charcoal moisture-wicking base layer with a subtle grid texture, tucked into straight-cut navy trousers with reinforced inner thighs and cargo pockets sealed with magnetic closures. A wide black web belt with a matte alloy buckle carries a clipped multitool sheath and a scanner holster. The right forearm seam of the jacket runs with a zip-open aug channel wide enough to accommodate a standard chrome forearm without removing the garment.\n\nFootwear is the Kelvex-issued Veldtmann Steelcap 7 variant in navy-dyed leather with orange reflective heel tabs, steel toes, and oil-resistant soles rated for wet platform decking. The operator wears a low-profile navy transit cap with a short brim, Kelvex livery embroidered in gold thread, and a magnetic clip on the inner band for a BCI sync badge. Gloves are thin black nitrile-coated work gloves, often tucked through the belt. The whole ensemble projects institutional reliability — this person knows their route, their schedule, and exactly how much trouble they're willing to tolerate.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-twill",
+    "moisture-wicking polyblend base layer",
+    "reinforced canvas trouser fabric",
+    "web nylon belt",
+    "nitrile-coated glove fabric",
+    "reflective orange piping tape",
+    "dyed leather boot uppers",
+    "steel toe cap"
+  ],
+  "functionality": "Reflective piping for low-light platform visibility; aug-channel zip on right forearm; magnetic cargo pocket closures; scanner and multitool belt clips; BCI badge clip in cap band; oil-resistant steel-toe boots for wet platform decking; reinforced trouser inner thigh for ladder climbing",
+  "what_it_says": "This is someone who shows up on time, every time. The Kelvex livery marks them as employed, unionized, and institutional — a source of quiet pride in Circuit. The clean lines and maintained condition of the uniform signal self-respect and professional accountability. They're not management, but they run the machine that keeps M88 moving.",
+  "worn_by": [
+    "Kelvex Transit rail operators",
+    "elevated train conductors",
+    "platform supervisors",
+    "transit authority flaggers",
+    "station maintenance leads"
+  ],
+  "manufacturer": "Kelvex Transit Authority (corponation-issued uniform contract, manufactured by Stratum Logistics apparel division)",
+  "price_range": "Φ180–Φ240 (issued by employer; replacement cost out-of-pocket)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A transit operator's uniform goes missing from a locker room — someone is impersonating Kelvex staff to move freely through restricted station corridors during a blackout.",
+    "The operator's Kelvex name patch reads a name that isn't theirs; the real owner of that badge hasn't shown up to work in nine days.",
+    "A character in this uniform witnesses something they shouldn't have from the operator's cab — and now the uniform itself is a liability, too recognizable to ditch, too identifiable to keep wearing."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "transit",
+    "corponation_issued",
+    "uniform",
+    "reflective",
+    "aug_compatible",
+    "rail_operator",
+    "kelvex"
+  ],
+  "parent_corponation": ""
+}

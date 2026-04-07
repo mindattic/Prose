@@ -1,0 +1,40 @@
+{
+  "id": "2b3c4d5e6f708192021222324252627b",
+  "name": "Helix Corp Administrative Dress Shirt",
+  "type": "apparel",
+  "category": "top",
+  "description": "The standard-issue dress shirt for Helix Corporation's administrative and client-facing staff, distributed through internal requisition rather than purchased. A slim-fit, spread-collar design in pale steel blue — a color Helix has trademarked internally as 'Helix Meridian Blue' — with subtle vertical texture woven into the fabric. The Helix helix logo appears on the left chest in a tone-on-tone embroidery that's only visible at certain angles. Buttons are small and matte, matched exactly to the fabric color.\n\nThe shirt is well-constructed and comfortable enough for twelve-hour office shifts, which is intentional — Helix wants its staff presentable and not distracted by discomfort. Wearing this outside of work hours is technically permitted but subtly discouraged by HR guidance. Plenty of Helix employees wear it anyway, because it's the nicest shirt they own.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "high-thread-count cotton-modal blend",
+    "tone-on-tone embroidery thread",
+    "matte polymer buttons"
+  ],
+  "functionality": "",
+  "what_it_says": "You work for Helix, or you want people to think you do, or you're trying to get into a Helix facility.",
+  "worn_by": [
+    "Helix Corporation administrative staff",
+    "corporate liaisons",
+    "people impersonating corporate staff",
+    "corponation employees across various firms who received it as a gift"
+  ],
+  "manufacturer": "Helix Corporation (internal supply division)",
+  "price_range": "Φ0 (requisitioned) / Φ160 (secondary market)",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Helix shirt has appeared in a Tier 1 second-hand stall — still pressed, still tagged. How did it get there, and who was wearing it last?",
+    "Helix has quietly embedded a micro-woven identifier thread in its current batch of shirts — a passive RFID-analog that logs building entry. Most employees don't know.",
+    "A character is trying to bluff their way into a Helix facility and needs the shirt, the badge, and the right way to walk. They have two of the three."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 4",
+    "dress shirt",
+    "corporate uniform",
+    "Helix Corporation",
+    "professional"
+  ],
+  "parent_corponation": ""
+}

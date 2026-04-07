@@ -1,0 +1,65 @@
+{
+  "id": "aca6e7cc73aa52a265a3a00d7add0486",
+  "name": "Bao Hedlund-Conteh",
+  "type": "character",
+  "aliases": [
+    "Overwatch",
+    "The Swarm"
+  ],
+  "role": "Private Investigator",
+  "description": "Bao Hedlund-Conteh is the eye in the sky — or more accurately, the hundred eyes in the sky, the walls, the ventilation systems, and the cracks in the pavement. He is a drone specialist who has built the most sophisticated personal surveillance network in Meridian 88's lower tiers, and he uses it to conduct investigations without ever leaving his rooftop workshop.\n\nHis fleet numbers over three hundred drones of varying sizes, from bird-scale reconnaissance units to insect-scale infiltrators that can pass through a building's air filtration system without triggering sensors. He builds them himself, maintains them himself, and controls them through a neural interface that allows him to process multiple drone feeds simultaneously — a cognitive feat that would overwhelm most BCI users but which Bao has trained for since childhood.\n\nThe limitation is the one you'd expect: he's physically helpless. His investigative skills are extraordinary as long as a drone can go where he needs to look, but he cannot conduct interviews, chase suspects, or handle any situation that requires a human being in the room. He compensates by partnering with more physically capable investigators when cases require it, and by designing his drones to be so capable that physical presence is rarely necessary. His clients love the results and are occasionally disturbed by the process — there's something inherently unsettling about knowing that any insect in the room might be watching you.",
+  "affiliation": "Independent — operates a licensed surveillance firm as cover for investigative work",
+  "tier": "Tier 3",
+  "location": "A rooftop workshop in the Canopy, surrounded by charging stations, repair benches, and dozens of dormant drones",
+  "specialization": "Drone-based surveillance and remote investigation — he rarely leaves his workshop",
+  "methods": [
+    "Deploying swarms of miniaturized drones for comprehensive area surveillance",
+    "Using drones equipped with chemical sensors, microphones, and visual recording for remote evidence collection",
+    "Maintaining persistent surveillance over target areas using relay drone networks",
+    "Infiltrating buildings through ventilation systems with insect-sized surveillance drones",
+    "Real-time data integration from multiple drone feeds into a unified operational picture"
+  ],
+  "notable_cases": [
+    "Tracked a target across the entire Circuit district using a relay network of forty-seven drones that passed surveillance duties between them like a baton relay",
+    "Gathered evidence inside a sealed CorpSec evidence locker using a drone the size of a housefly that entered through the ventilation system",
+    "Mapped the complete interior of a suspected smuggling operation without any human ever entering the building"
+  ],
+  "equipment": [
+    "Custom-built drone fleet ranging from bird-sized to insect-sized, each designed for specific investigative functions",
+    "Neural drone interface — controls multiple drones simultaneously through BCI, seeing through all their sensors at once",
+    "Mobile repair and fabrication station for building mission-specific drone configurations",
+    "Signal-masking technology that makes his drone communications indistinguishable from background electromagnetic noise",
+    "Rooftop antenna array for drone command-and-control across a twelve-kilometer radius"
+  ],
+  "personality": "Bao is Vietnamese-Swedish-Sierra Leonean, twenty-nine years old, and has the pallid complexion and red-rimmed eyes of someone who spends too much time jacked into a neural interface and not enough time in sunlight. He is brilliant, scattered, and prone to talking about drone specifications when people ask about his emotional state. He relates to his drones the way some people relate to pets — he names them, worries about them when they're deployed, and mourns when they're destroyed. He is socially awkward in person but eerily personable through his drones, as if the layer of technological mediation makes him more comfortable. He has a genuine fear of physical confrontation and has designed his entire professional life around never having to be in the same room as the people he investigates.",
+  "relationships": [
+    {
+      "name": "Samira Hedlund-Ofosu",
+      "type": "sister",
+      "description": "His older sister, also a PI — she provides the physical component of investigations and worries constantly about his health"
+    },
+    {
+      "name": "Enver Svensson-Asante",
+      "type": "professional rivalry",
+      "description": "The augmented PI considers Bao's drone approach inferior to personal augmentation — the rivalry is one-sided, as Bao finds Enver's methods fascinating"
+    }
+  ],
+  "story_hooks": [
+    "One of Bao's insect-sized drones goes missing during a routine surveillance operation and begins transmitting footage of things it shouldn't be able to see — someone has hijacked it and is showing him something deliberately",
+    "A client demands that Bao conduct an investigation in person, in the Underbelly, where drones can't operate — he has to confront his physical limitations",
+    "Someone releases a counter-drone weapon that destroys his entire fleet in minutes — he has to rebuild from scratch while a critical investigation is ongoing"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "drones",
+    "surveillance",
+    "canopy",
+    "remote_operations"
+  ],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Meridian Munitions Twin PDW MTP-2 'Gemini'"
+  ],
+  "registered_firearms": []
+}

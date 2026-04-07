@@ -1,0 +1,46 @@
+{
+  "id": "d9b2a5e8c4f1706382d9b2a5e8c4f170",
+  "name": "Vanthorpe Conceal-Carry Vest (Civilian)",
+  "type": "apparel",
+  "category": "top",
+  "description": "A structured vest from Vanthorpe's civilian-grade protective line, cut to read as a clean technical layer — something you might wear over a shirt in a business-casual or field environment without drawing attention. The outer face is a matte-finish synthetic in charcoal, navy, or black, with four external utility pockets sized for transit cards, personal devices, and documentation. The interior is where the work is: two body armor panels in Vanthorpe's Gen-4 flexible ballistic composite, rated for low-velocity projectile and blade resistance at standard concealed wear gaps. The panels are removable for cleaning.\n\nThis is not military-grade. Vanthorpe is careful to call it 'protective,' not 'armored.' It's legal to own in Meridian 88 under civilian carry ordinances, and it's popular enough that it reads as ordinary technical fashion rather than a threat indicator — which is entirely the point. It's worn by private couriers, licensed investigators, mid-level fixers, and anyone who moves through mixed-tier environments professionally and wants a quiet edge.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "matte synthetic outer face",
+    "Gen-4 flexible ballistic composite panels",
+    "reinforced inner stitching",
+    "removable armor inserts"
+  ],
+  "functionality": "Removable body armor panels rated for low-velocity projectile resistance and blade-edge protection. Does not cover arms or shoulders. No electronics. Panels are Gen-4 flexible ballistic composite — protective but not military-grade.",
+  "what_it_says": "You go places where being careful is the right call, and you're experienced enough to be careful without looking like it. This isn't paranoia — it's professional preparation.",
+  "worn_by": [
+    "private couriers",
+    "licensed investigators",
+    "mid-tier fixers",
+    "journalists in contested areas",
+    "security consultants in civilian clothes"
+  ],
+  "manufacturer": "Vanthorpe Protective Systems",
+  "price_range": "Φ175",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A recent change in Meridian 88's civilian carry ordinance is being lobbied by Ouroboros Legal Division — the new language, if passed, would require registration of any garment with ballistic-rated materials, effectively creating a database of everyone who owns one.",
+    "A Vanthorpe Conceal-Carry Vest was left behind at a crime scene with the armor panels removed — someone took the protection out of it before the incident, which suggests they knew what was coming.",
+    "Vanthorpe has a known secondary market problem: counterfeit versions with non-rated panels that look identical but provide no actual protection, sold at a discount in Tier 2 markets."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 3",
+    "vest",
+    "armored",
+    "concealed carry",
+    "protective",
+    "Vanthorpe",
+    "aug-compatible",
+    "fixer",
+    "courier"
+  ],
+  "parent_corponation": ""
+}

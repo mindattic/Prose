@@ -1,0 +1,47 @@
+{
+  "id": "d0352e9f63d783efc548d38bb7045d15",
+  "name": "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
+  "type": "weapon",
+  "aliases": [
+    "Bailiff",
+    "KPR-410",
+    "The Judge"
+  ],
+  "category": "revolver",
+  "description": "The Kang-Petrov KPR-410 is a five-shot revolver with an oversized cylinder chambered to accept both .410 bore shotshells and .45 Colt cartridges. The weapon features a three-inch rifled barrel and a frame that is noticeably wider than conventional revolvers to accommodate the shotshell cylinder. It is, in practical terms, a pocket shotgun that can also fire pistol ammunition.\n\nThe Bailiff's versatility is its selling point. Loaded with .410 shotshells, it fires a spread pattern effective for close-range defensive scenarios where precise aiming under stress is unreliable — the same logic that makes shotguns popular for home defense, miniaturized into a revolver. Loaded with .45 Colt, it functions as a conventional heavy-caliber revolver with better accuracy at range. The ability to mix ammunition types in the cylinder — shotshells for the first two chambers, .45 Colt for the remaining three — gives the shooter both close-range spread and medium-range precision in a single weapon.\n\nKang-Petrov markets the Bailiff as 'the district court' — a weapon that renders judgment at any range. The weapon has become popular among bouncers, building security, and transit operators who face threats at variable distances in confined spaces. Its distinctive wide cylinder makes it instantly recognizable, which provides a deterrence factor that its modest ballistic performance might not otherwise warrant.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration; shotshell capability noted on license",
+  "base_technologies": [
+    "Dual-caliber cylinder",
+    "Shotshell-compatible chamber",
+    "Rifled barrel"
+  ],
+  "specifications": "caliber: .410 bore / .45 Colt\neffective_range: 8 meters (.410), 30 meters (.45 Colt)\nrate_of_fire: Double-action revolver\nmagazine_capacity: 5 rounds (cylinder)\nweight: 0.92 kg",
+  "tactical_use": "A versatile close-range defensive revolver offering shotshell spread or pistol-caliber precision from a single weapon. The .410 shotshell provides a forgiving hit pattern for stress-fire situations at room distance. The .45 Colt round provides adequate stopping power at extended range. Ammunition can be mixed in the cylinder to provide both capabilities simultaneously.",
+  "cultural_context": "The Bailiff is the bouncer's best friend — a weapon that doesn't require precision under the stress and chaos of a nightlife confrontation. Its wide cylinder and distinctive profile have made it an iconic weapon in the service industry security community. Carrying a Bailiff says 'I deal with problems up close and I don't always have time to aim.'",
+  "known_users": [
+    "Bouncers and door security",
+    "Building lobby security",
+    "Transit operators",
+    "Close-quarters defense specialists"
+  ],
+  "story_hooks": [
+    "A Bailiff loaded with exotic .410 shells containing micro-flechettes is used in an attack — the flechettes are coated with a fast-acting paralytic agent, turning each shotshell into a non-lethal area-effect weapon.",
+    "A transit operator fires a .410 shotshell from their Bailiff in a crowded transit car and hits three people — the legal fallout questions whether shotshell-capable revolvers should be legal in enclosed public spaces."
+  ],
+  "ammunition_type": [
+    ".410 bore",
+    ".45 Colt"
+  ],
+  "tags": [
+    "weapon",
+    "revolver",
+    "shotshell",
+    "versatile",
+    "dual_caliber",
+    "close_quarters",
+    "lethal"
+  ],
+  "parent_corponation": ""
+}

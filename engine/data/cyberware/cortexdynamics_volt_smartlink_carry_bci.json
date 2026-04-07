@@ -1,0 +1,58 @@
+{
+  "id": "f4a8e2c0b1739d4762f0c5a3d8e91b67",
+  "name": "CortexDynamics Volt SmartLink Carry BCI",
+  "brand_name": "CortexDynamics",
+  "product_name": "Volt SmartLink Carry BCI",
+  "type": "cyberware",
+  "aliases": [
+    "the Volt",
+    "carry chip",
+    "trigger socket",
+    "smart-carry",
+    "the Zap"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The CortexDynamics Volt is a consumer-grade neural interface built around a certified smart-link weapon integration module, designed specifically for the legal civilian carry market in Meridian 88's Tier 2-3 districts. Alongside its standard feed access, AR overlay, and messaging capabilities, the Volt includes CortexDynamics' SecureFire smart-link architecture — a dedicated secondary processing cluster that interfaces with compatible smart-linked sidearms to provide neural trigger authorization, target-acquisition overlay, threat-distance readout, and ammunition status directly within the user's visual field. The smart-link channel is isolated from the general feed on a dedicated encrypted pathway, ensuring weapon integration cannot be remotely hijacked through standard feed vulnerabilities, a security feature that has made the Volt the preferred BCI for licensed carry holders who distrust cloud-dependent competitors.\n\nIn Tier 2-3 Meridian 88, legal carry is common enough that a BCI with integrated smart-link functionality is a genuine mass-market product rather than a niche tactical item. Small business owners protecting their shops in contested commercial zones, licensed security contractors working residential stack patrols, and civilians in outer districts where response times from the Meridian Enforcement Authority run long all represent the Volt's core demographic. CortexDynamics markets the Volt heavily through community safety messaging, and the product is endorsed by several district-level civil defense organizations. Critics note that the proliferation of smart-linked civilian carry has accelerated armed conflict in contested Tier 1-2 boundary zones, where the tactical advantage of neural weapon integration has shifted the calculus of street violence.",
+  "manufacturer": "CORTEXDYNAMICS PERFORMANCE NEURAL SYSTEMS",
+  "tier_availability": "Tier 2-3",
+  "legality": "Licensed — requires valid civilian carry permit for smart-link activation; base BCI functions are unrestricted",
+  "installation_requirements": "Licensed clinic with CortexDynamics SecureFire certification; carry permit verification required at installation for smart-link activation; 3-hour procedure",
+  "rejection_risk": "Low to Moderate — secondary smart-link processing cluster adds surgical complexity; users with prior neural trauma have elevated complication rates",
+  "maintenance": "SmartLink channel recalibration every 6 months; weapon pairing re-sync when changing firearms; full BCI annual check; carry permit must remain valid for smart-link to remain active",
+  "specifications": "{\"bandwidth\": \"5.4 Gbps sustained\", \"node_count\": 156, \"ar_resolution\": \"1440p overlay at 90fps\", \"encryption\": \"AES-256 base / VaultKey isolated channel for smart-link\", \"battery_life\": \"Passive inductive; smart-link active targeting draws 0.8W\", \"feed_channels\": 10, \"latency\": \"8ms standard / 3ms smart-link channel\", \"smartlink_weapons\": \"Up to 2 paired simultaneously\", \"target_overlay\": \"Threat distance, movement vector, ammunition count\", \"storage\": \"3TB onboard neural cache\", \"OS\": \"CortexDynamics VoltOS 6.3\"}",
+  "side_effects": [
+    "Smart-link hypervigilance — prolonged use of active threat-acquisition overlay in non-threatening environments can induce persistent low-level threat assessment anxiety",
+    "Trigger-neural feedback loop: users occasionally experience involuntary muscle micro-contractions in the firing hand during vivid AR rendering of weapon-adjacent imagery",
+    "Sleep disruption from smart-link channel running passive threat monitoring during rest cycles unless manually disabled",
+    "Rare smart-link desynchronization events causing brief double-vision as weapon overlay and standard AR overlay briefly compete for rendering priority"
+  ],
+  "cultural_context": "The Volt occupies a culturally charged position in Meridian 88 — it is simultaneously a practical safety tool for people in genuinely dangerous districts and a symbol of the city's normalization of armed civilian life. In Tier 2 outer-ring communities, a Volt is often seen as responsible preparedness, and community social threads frequently feature neighbors comparing smart-link setups and weapon pairings as casually as discussing home security cameras. In Tier 3 inner-city zones, the Volt reads as slightly aggressive — technically legal, but signaling a certain readiness for violence that more comfortable residents find unsettling. The MEA has an ongoing policy debate about whether civilian smart-link BCIs should require stricter licensing, a conversation that flares up after every high-profile shooting involving a Volt-equipped civilian.",
+  "known_users": [
+    "Licensed civilian carry holders in Tier 2 outer districts",
+    "Small business owners in contested commercial corridors",
+    "Off-duty and freelance security contractors",
+    "Rural and peri-urban Tier 2 residents in low-MEA-coverage zones",
+    "Legal firearms enthusiasts and sport shooters"
+  ],
+  "story_hooks": [
+    "A batch of Volt units sold through a licensed distributor has been pre-loaded with a compromised VaultKey encryption certificate — someone can remotely disable the smart-link safety authorization on hundreds of civilian weapons simultaneously, and the players have to find out who before the switch is flipped.",
+    "A Volt user's smart-link overlay has begun acquiring targets autonomously, highlighting specific individuals in crowds with a red designation the system refuses to explain — and the designated targets keep dying.",
+    "A community in a Tier 2 outer district has organized a collective smart-link defense network using linked Volt BCIs, but the players discover the network's coordination layer is being quietly managed by an outside party with unclear motives."
+  ],
+  "street_price": "Φ1,800",
+  "licensed_price": "Φ3,200",
+  "tags": [
+    "cyberware",
+    "bci",
+    "consumer",
+    "smart-link",
+    "carry",
+    "weapon-integration",
+    "tier-2",
+    "tier-3",
+    "cortexdynamics",
+    "mid_range_consumer"
+  ],
+  "parent_corponation": ""
+}

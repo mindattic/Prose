@@ -1,0 +1,33 @@
+{
+  "id": "182a7cfdc9d0d04415a4aaab9d5ebe94",
+  "name": "Moral Entrepreneur",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Profits from doing the right thing, and sees no contradiction",
+  "behavioral_signature": "Builds ethical ventures that also make money",
+  "under_stress": "Ethics slip when the margins get thin",
+  "at_rest": "Talks about alignment between profit and purpose",
+  "will_always": [
+    "find the ethical angle that also pays"
+  ],
+  "will_never": [
+    "do pure charity when a sustainable model exists"
+  ],
+  "unless": [
+    "someone is dying right now and there's no time for business plans"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Pragmatist",
+      "threshold": 0.7,
+      "context": "practical ethics"
+    }
+  ],
+  "opposite_of": [
+    "Nihilist"
+  ],
+  "tags": [
+    "pragmatic",
+    "ethical-capitalist"
+  ]
+}

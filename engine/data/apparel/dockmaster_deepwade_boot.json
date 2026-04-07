@@ -1,0 +1,38 @@
+{
+  "id": "a3f7c2e1b8d94f06a1c3e5b7d2f09e4a",
+  "name": "Dockmaster Deepwade Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A hulking, knee-high waterproof boot built for the loading docks along Lake Michigan's industrial edge. Thick vulcanized rubber shell, sealed seams, and a non-slip tread pattern designed to grip wet steel grating. Comes in a uniform dark grey with a faded orange reflective stripe around the ankle that loses most of its brightness within a season. Ugly by any standard, but a dockworker's feet stay dry.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "vulcanized rubber",
+    "recycled nylon lining",
+    "cork insole"
+  ],
+  "functionality": "Waterproof to 2m submersion, oil-resistant sole, basic ankle brace support",
+  "what_it_says": "You work the docks or the flood-prone lower Shelf. You don't care about looks — you care about keeping your feet.",
+  "worn_by": [
+    "dock workers",
+    "flood-zone laborers",
+    "Shelf residents in low-lying districts"
+  ],
+  "manufacturer": "Lakeside Industrial Goods",
+  "price_range": "Φ18 - Φ26",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair left behind at a crime scene — the distinctive tread pattern is traceable to a specific dock shift rotation.",
+    "The cork insoles are a known hiding spot for small contraband among long-haul dock crews."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "waterproof",
+    "work boot",
+    "industrial",
+    "dock"
+  ],
+  "parent_corponation": ""
+}

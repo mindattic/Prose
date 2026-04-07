@@ -1,0 +1,47 @@
+{
+  "id": "b84e1c7a3f2d6e0b9c5a4d8f1e3b7c2a",
+  "name": "Ferrogrip Pressline Assembly Night Crew Set",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The workhorse uniform of the Ferrogrip pressline floor, worn by assembly workers on the second and third shifts when supervisors are thinner on the ground and the line runs hot. The coverall is a single-piece garment in deep charcoal synth-denim with Ferrogrip's red-and-black diamond logo heat-pressed onto the left breast and right shoulder. The fabric is treated with a light hydrocarbon-repellent finish that grays and cracks at the creases after six months of washing — a reliable way to date a worker's tenure. The torso features a full-length front zip with a magnetic storm flap, two chest pockets with snap closures, and aug-accommodation side seams along both arms: wide-gusset panels with hook-and-loop closures that open flat to clear a chrome forearm without removing the garment. Underneath, workers typically layer a Ferrogrip-branded cotton-analog tee in ash grey with the shift number printed on the back. Boots are broad-toed steel-cap lace-ups in matte black with oil-resistant outsoles and a reinforced heel counter. A wide canvas tool belt in tan sits at the hip, worn heavy with hex drivers, cable pullers, and a personal dosimeter clipped to the left side.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-denim with hydrocarbon-repellent finish",
+    "cotton-analog knit",
+    "canvas",
+    "steel-toe composite",
+    "oil-resistant rubber",
+    "hook-and-loop aug gussets"
+  ],
+  "functionality": "Hydrocarbon-repellent shell, aug-accommodation arm gussets for chrome forearm clearance, magnetic storm flap zipper, canvas tool belt with dosimeter clip, steel-toe and oil-resistant sole, layerable over thermal base",
+  "what_it_says": "The cracking finish on the crease lines tells you exactly how long this person has been on the floor. Ferrogrip workers wear their tenure in the fabric — a brand-new coverall marks a probationer, a gray-creased one marks someone who has survived the pressline long enough to know which supervisors to avoid.",
+  "worn_by": [
+    "pressline assembly workers",
+    "factory floor technicians",
+    "Ferrogrip shift laborers",
+    "industrial machinery operators"
+  ],
+  "manufacturer": "Ferrogrip Industries — company-issued uniform, boots from Ashgrove Linework",
+  "price_range": "Φ160–Φ210 (company-issued; worker pays for replacements after first year)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A worker's dosimeter has been reading elevated for three shifts, but the floor supervisor keeps logging it as equipment error — the coverall's shift-number print on the back makes the worker identifiable in every security frame.",
+    "The aug-accommodation gusset on a worker's coverall has been sewn shut with red thread — a signal to those who know that the wearer is running unlicensed chrome under the sleeve.",
+    "A new hire receives a coverall that still has someone else's name patch half-removed from the breast — the previous occupant of that shift slot disappeared two weeks ago."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "factory",
+    "pressline",
+    "coverall",
+    "ferrogrip",
+    "aug_compatible",
+    "industrial",
+    "company_issued"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,34 @@
+{
+  "id": "b7dffc7644454a021f0c46b6c6a62bfd",
+  "name": "Carrion Comfort",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Survives by finding peace in the inevitability of decay and loss",
+  "behavioral_signature": "Functional where others are paralyzed because they've already accepted the worst",
+  "under_stress": "Acceptance becomes fatalism and they stop fighting to survive",
+  "at_rest": "Calm, detached, at peace with entropy",
+  "will_always": [
+    "function in horror that freezes others"
+  ],
+  "will_never": [
+    "be surprised by how bad things get"
+  ],
+  "unless": [
+    "something genuinely good happens and they don't know how to process it"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Fatalist",
+      "threshold": 0.75,
+      "context": "acceptance of loss"
+    }
+  ],
+  "opposite_of": [
+    "Phoenix"
+  ],
+  "tags": [
+    "acceptance",
+    "decay",
+    "calm"
+  ]
+}

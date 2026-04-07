@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2d18b054e6a9c1d3e5f7a2b4c8d",
+  "name": "ARCTURUS DEFENSE Raptorclaw Mk4 Combat Arm",
+  "brand_name": "ARCTURUS",
+  "product_name": "Arcturus Defense Solutions Raptorclaw Mark 4 Combat Arm",
+  "type": "cyberware",
+  "aliases": [
+    "Claw",
+    "Raptor",
+    "The Mk4"
+  ],
+  "category": "arm",
+  "body_location": "arm",
+  "description": "The Raptorclaw Mk4 is a full-arm combat replacement built on a titanium-carbide endoskeleton with integrated forearm blade housing capable of deploying a 28cm monofilament-edged ceramic blade in under 0.2 seconds. Recoil-dampening hydraulic buffers run the length of the humerus analog, allowing the arm to absorb and redirect kinetic force from heavy firearms without destabilizing the shooter. Striking surfaces on the knuckle plating are reinforced with tungsten composite capable of punching through light vehicle panels.\n\nPrimarily issued to GLMC special operations and licensed to Tier 3-4 private security contractors operating in the Shelf's contested industrial zones. On the street, decommissioned units show up stripped of their restricted firmware governors, making them popular with gang enforcers who call them 'Raptors' and use them to settle territorial disputes with horrifying efficiency.",
+  "manufacturer": "Resolve Behavioral Health",
+  "tier_availability": "Tier 3-5",
+  "legality": "Military-Only",
+  "installation_requirements": "Full shoulder disarticulation, military-grade neural bridge socket, licensed surgical facility, background clearance",
+  "rejection_risk": "Moderate – titanium-carbide frame limits biocompatibility adaptation; neural bridge socket requires 6-week calibration",
+  "maintenance": "Bi-monthly hydraulic fluid replacement, blade edge servicing, firmware security patch uploads",
+  "specifications": "{\"weight\": \"4.2kg\", \"grip_strength\": \"1,800N\", \"blade_deploy_time\": \"0.18s\", \"blade_length\": \"28cm\", \"blade_material\": \"ceramic monofilament-edged\", \"recoil_absorption\": \"up to .50 cal equivalent\", \"striking_surface\": \"tungsten composite knuckle plate\", \"power_source\": \"kinetic harvest + inductive charge port\", \"operating_temp\": \"-20C to 80C\"}",
+  "side_effects": [
+    "Phantom pain in original limb during high-stress combat situations",
+    "Elevated cortisol response linked to blade-deploy reflex misfires during sleep",
+    "Nerve scarring at shoulder socket causing intermittent numbness in ipsilateral neck",
+    "Documented aggression amplification in users running ungoverned firmware"
+  ],
+  "cultural_context": "The Raptorclaw has become something of a grim status symbol in the Shelf's gang hierarchy — having a decommissioned Mk4 means you either killed someone who had one or you used to be something official. GLMC brass has launched three separate black-market crackdowns in the past decade, none of which have meaningfully reduced supply.",
+  "known_users": [
+    "GLMC special operations soldiers",
+    "Tier 3-4 licensed private security contractors",
+    "Shelf gang enforcers running stripped decommissioned units",
+    "Black-market combat augmentation dealers",
+    "Former military turned corporate muscle"
+  ],
+  "story_hooks": [
+    "A stolen shipment of ungoverned Raptorclaw Mk4s has flooded a Shelf district, and someone is paying very well to find out who pulled the heist",
+    "A player's contact turns up dead — killed by a blade pattern that matches Raptorclaw deployment, but the registered owner has a bulletproof alibi",
+    "A disgraced GLMC surgeon is offering black-market Mk4 installations in a flooded basement clinic — no questions asked"
+  ],
+  "street_price": "Φ42,000",
+  "licensed_price": "Φ98,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "combat",
+    "arm",
+    "blade",
+    "military",
+    "restricted",
+    "arcturus"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

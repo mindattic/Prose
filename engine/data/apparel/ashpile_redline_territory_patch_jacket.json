@@ -1,0 +1,44 @@
+{
+  "id": "a3f8c21d7e904b56f1a2d3e4c5b6a7f8",
+  "name": "Ashpile Redline Territory Patch Jacket",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A salvaged canvas work jacket — originally Crucible-issue, stripped of corporate markings and rebuilt as gang insignia wear. The back panel carries a hand-stitched territorial map in red and black thread, updated with spray-painted overlays marking current Shelf borders. Sleeve patches are heat-pressed and layered, each one a record of alliances, debts, and fallen members. Collar edges are reinforced with scavenged copper wire stitching.\n\nColors are deliberate: red for the Ashpile bloc, black borders indicating neutral transit corridors, yellow Xs marking contested ground. Every jacket is unique — a living document. Wearing one in wrong territory is a declaration.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed canvas",
+    "heat-press patch vinyl",
+    "copper wire reinforcement",
+    "spray enamel",
+    "salvaged thread"
+  ],
+  "functionality": "Deep interior pockets with mag-strip closures for concealment. Collar wire doubles as antenna booster for low-band comms. Removable sleeve patches allow rapid insignia swap in hostile territory.",
+  "what_it_says": "This person belongs to something, and that something has teeth.",
+  "worn_by": [
+    "Shelf gang members",
+    "territorial bloc enforcers",
+    "Shelf community organizers",
+    "survivors marking affiliation for protection"
+  ],
+  "manufacturer": "Self-made / Ashpile bloc collective",
+  "price_range": "Φ40–Φ120 (barter common)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A runner is caught in Ashpile territory wearing a jacket with an outdated border map — the corridor it marks as safe was ceded three weeks ago.",
+    "A fixer needs to identify which sub-bloc a dead contact belonged to by reading the patch layering sequence on their jacket.",
+    "Someone is selling 'authentic' Ashpile territory jackets on Circuit — either a forger or someone selling out bloc secrets."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "gang",
+    "tier-1",
+    "shelf",
+    "insignia",
+    "DIY",
+    "territorial",
+    "street"
+  ],
+  "parent_corponation": ""
+}

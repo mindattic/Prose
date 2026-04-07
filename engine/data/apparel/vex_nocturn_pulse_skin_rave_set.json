@@ -1,0 +1,44 @@
+{
+  "id": "b81e3a07d4c259f0e6a3781bcd94e012",
+  "name": "Vex Nocturn Pulse-Skin Rave Set",
+  "type": "apparel",
+  "category": "cultural",
+  "description": "A two-piece club set — high-neck crop top and low-slung wide-leg trousers — constructed from Vex's proprietary SoundThread fabric: a mesh of micro-piezoelectric filaments woven into matte-black elastane. Bass frequencies bloom into electric blue and violet across the fabric surface; high frequencies pulse white at the edges. In silence, the set reads as flat black.\n\nSeams glow with a persistent amber biolux trim that functions independently of sound input. Trousers feature a rear tail-vent and a wide-leg cut that accommodates digitigrade leg profiles.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "SoundThread piezoelectric mesh",
+    "matte elastane",
+    "biolux amber trim",
+    "micro-LED filament",
+    "adaptive spandex lining"
+  ],
+  "functionality": "Sound-reactive chromatic display responds to ambient frequency in real time. Biolux trim provides low-light visibility without power draw. Tail-vent and digitigrade-compatible cut for geneware wearers. BCI-linked optional mode allows manual color override.",
+  "what_it_says": "This person lives for the floor, knows the scene, and spent real money to do it right.",
+  "worn_by": [
+    "rave regulars",
+    "club circuit dancers",
+    "underground DJ crews",
+    "geneware-modded youth"
+  ],
+  "manufacturer": "Vex Nocturn — street label, Circuit-distributed",
+  "price_range": "Φ340–Φ580",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A specific SoundThread frequency pattern embedded in the fabric is actually a coded signal used by a smuggling network.",
+    "The manufacturer, Vex Nocturn, has been sending cease-and-desist notices from an unknown corponation — the label's founder has gone quiet.",
+    "Someone wearing this set at a rave is the only witness to a corporate assassination — and the fabric's piezo-data log recorded the whole thing."
+  ],
+  "tags": [
+    "apparel",
+    "cultural",
+    "rave",
+    "club",
+    "sound-reactive",
+    "biolux",
+    "subcultural",
+    "tier-2",
+    "tier-3"
+  ],
+  "parent_corponation": ""
+}

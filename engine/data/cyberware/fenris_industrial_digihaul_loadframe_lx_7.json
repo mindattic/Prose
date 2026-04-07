@@ -1,0 +1,58 @@
+{
+  "id": "2e90f5c4a17b386d5048c1f3e7a2d694",
+  "name": "FENRIS INDUSTRIAL DigiHaul Loadframe LX-7",
+  "brand_name": "FENRIS INDUSTRIAL",
+  "product_name": "Fenris Industrial DigiHaul Loadframe LX-7",
+  "type": "cyberware",
+  "aliases": [
+    "Mules",
+    "Haunches",
+    "Loadbacks"
+  ],
+  "category": "digitigrade_leg",
+  "body_location": "legs",
+  "description": "The DigiHaul LX-7 exploits a genuine biomechanical advantage of digitigrade geometry: the backward-angled knee joint creates a natural forward lean that distributes heavy dorsal loads along the spine-to-heel diagonal rather than compressing straight down through the lumbar. Fenris engineered the LX-7 specifically for sustained heavy carriage — the frame is rated to 280kg of additional load, the joint bearings are industrial mining-grade, and the foot platform is a wide splayed pad rather than a human-profile sole. These are ugly, functional, and built to work in environments that would destroy a standard limb.\n\nFenris sells the LX-7 into industrial labor markets: deep-site construction, Great Lakes port loading operations, and the less-regulated extraction sites in the Shelf's industrial fringe. Workers who install them often do so because their employer offers a partial subsidy — which also means their employer effectively owns a piece of their body. The digitigrade stigma hits hardest here because these workers can't afford to live in spaces that accept them, and can't afford to remove the legs that pay their bills.",
+  "manufacturer": "FENRIS INDUSTRIAL",
+  "tier_availability": "Tier 1-3",
+  "legality": "Licensed",
+  "installation_requirements": "Full bilateral hip disarticulation, standard neural socket, Fenris field-installation certified (can be performed in industrial medical stations, not just surgical suites)",
+  "rejection_risk": "Moderate — field installation conditions and lower-tier medical support increase interface complication rates; Fenris includes rejection-suppression pharmaceutical pack in purchase",
+  "maintenance": "Joint bearing replacement every 12 months under heavy load conditions; foot pad resurfacing every 6 months; employer-contracted maintenance plans available",
+  "specifications": "{\"rated_additional_load_kg\": 280, \"joint_bearing_grade\": \"industrial mining-class\", \"foot_platform\": \"wide splayed load pad, 22cm span\", \"frame_material\": \"structural steel with polymer impact lining\", \"weight_per_leg_kg\": 9.4, \"load_distribution_angle_degrees\": 34, \"operating_temp_range\": \"-30C to 70C\", \"waterproofing_rating\": \"IP67\", \"power_source\": \"external battery belt, 18-hour operational cycle\", \"field_repair_compatibility\": \"high — standard industrial fasteners throughout\"}",
+  "side_effects": [
+    "Chronic lower back strain if spinal augmentation is not co-installed to match the forward-lean load geometry",
+    "Foot pad width (22cm) causes navigation difficulty in standard-width doorframes and industrial corridors not designed for the profile",
+    "Workers report significant psychological distress from the social stigma, compounded by the employer-subsidy dynamic that makes removal financially prohibitive",
+    "Gait noise — the LX-7 produces a distinctive heavy clank at walking speed, making anonymity in public spaces difficult"
+  ],
+  "cultural_context": "The DigiHaul LX-7 sits at the intersection of digitigrade stigma and labor exploitation in a way that makes it uniquely bleak. Employers offer subsidies because the legs make workers more productive and more dependent simultaneously — a worker whose legs are employer-subsidized faces contract clauses about removal and reassignment. Meanwhile, the same workers face routine exclusion from transit, housing, and public services, trapped in a body modification they may not have freely chosen.",
+  "known_users": [
+    "Tier 1-2 heavy industrial laborers in port, construction, and extraction sectors",
+    "Workers under employer-subsidy contracts in Fenris-partnered industrial firms",
+    "Independent load haulers in Shelf market districts who self-funded for competitive advantage",
+    "Underground freight movers and smugglers who carry weight through routes too small for vehicles",
+    "Labor organizers within the digitigrade worker community, building mutual aid networks"
+  ],
+  "story_hooks": [
+    "A labor organizer with DigiHaul legs has discovered that the employer-subsidy contract contains a remote-disable clause — and they want players to help them prove it before the next strike action",
+    "A Fenris industrial site has had three workers disappear; all had LX-7s, all were on the same employer maintenance contract, and the maintenance logs have been wiped",
+    "A Shelf freight crew using DigiHaul legs has been moving something that isn't on any manifest — players need to find out what, and whether the crew is complicit or coerced"
+  ],
+  "street_price": "Φ25,000",
+  "licensed_price": "Φ41,000",
+  "tags": [
+    "cyberware",
+    "cyberlimb",
+    "digitigrade",
+    "legs",
+    "heavy-load",
+    "industrial",
+    "fenris-industrial",
+    "labor",
+    "exploitation",
+    "body-modification",
+    "shelf",
+    "digitigrade_leg"
+  ],
+  "parent_corponation": ""
+}

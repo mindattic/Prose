@@ -1,0 +1,41 @@
+{
+  "id": "5d1b8e3c7a2f094e6b5d3a1c9f7e2b40",
+  "name": "Velantis Thermcore Mid Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A sleek ankle boot with a smooth, slightly structured silhouette available in charcoal, navy, and sand. A thin thermoregulation layer embedded in the lining uses body heat exchange to keep foot temperature within a comfortable range regardless of ambient conditions — warm in cold corridors, cool in summer streets. The exterior looks entirely conventional.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "woven nylon upper",
+    "thermoregulation membrane",
+    "rubber outsole",
+    "cushioned footbed"
+  ],
+  "functionality": "Passive thermoregulation membrane maintains foot temperature between 18–24°C in ambient conditions from -10°C to 40°C.",
+  "what_it_says": "Quiet competence. You've spent money on something that works rather than something that looks like it works.",
+  "worn_by": [
+    "commuters",
+    "field technicians",
+    "mid-level managers",
+    "healthcare workers"
+  ],
+  "manufacturer": "Velantis Systems",
+  "price_range": "Φ120 - Φ160",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The thermoregulation layer can be reverse-engineered to mask body heat from thermal scanners — someone is doing exactly that.",
+    "A batch of Thermcore Mids shipped with a faulty membrane that traps heat instead of dissipating it — the recall hasn't gone public yet."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "tier 4",
+    "smart",
+    "boots",
+    "thermoregulation",
+    "commuter"
+  ],
+  "parent_corponation": ""
+}

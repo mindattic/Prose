@@ -1,0 +1,33 @@
+{
+  "id": "0cc09b23ef0419f684b9241adae934b6",
+  "name": "Chaos Desire",
+  "type": "archetype",
+  "category": "desire",
+  "description": "Finds the most beautiful thing in the world is a system falling apart",
+  "behavioral_signature": "Engineers disruption for the thrill of watching order dissolve",
+  "under_stress": "Creates chaos they can't control and gets caught in the fallout",
+  "at_rest": "Bored, scanning for structures to topple",
+  "will_always": [
+    "introduce entropy into stable systems"
+  ],
+  "will_never": [
+    "build anything meant to last"
+  ],
+  "unless": [
+    "something they actually care about depends on stability"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Chaos Creator",
+      "threshold": 0.9,
+      "context": "desire for disruption"
+    }
+  ],
+  "opposite_of": [
+    "Architect"
+  ],
+  "tags": [
+    "destructive",
+    "anarchic"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "9d3a6c0e7f2b4d8a1e5c3b9f6d0a2e71",
+  "name": "Rolen ChromeSync Interface Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Wrist-length haptic interface gloves in brushed slate polymer with copper-trace circuit lines running from fingertip to wrist port connector — visible through a semi-transparent dorsal panel. Designed for aug-to-digital handshake: the glove bridges the gap between a chrome forearm and a biological palm, providing haptic feedback to the wearer's residual nerve endings or BCI. Available in full-hand and half-finger cuts.\n\nThe fingertips carry conductive haptic pads layered over micro-actuator arrays. The wrist connector is standardized to Rolen's ChromeSeam port spec, compatible with most major aug brands. Clean industrial aesthetic, no visible branding except a small embossed port-mark at the cuff.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "brushed polymer shell",
+    "copper-trace circuit film",
+    "micro-actuator haptic array",
+    "conductive fingertip pads",
+    "semi-transparent polycarbonate dorsal panel",
+    "ChromeSeam wrist connector (Rolen spec)"
+  ],
+  "functionality": "Haptic feedback translation from chrome forearm to biological nerve endings or BCI. Full-hand and half-finger cuts available. Standardized ChromeSeam wrist port connects to Rolen and most third-party aug systems. Tactile resolution sufficient for surgical-grade manipulation tasks. Gene-compatible half-finger cut accommodates minor digit geneware modifications.",
+  "what_it_says": "Your augmentation is not a limitation — it is an interface, and you have learned to use it precisely.",
+  "worn_by": [
+    "chrome-arm aug users seeking haptic restoration",
+    "Tier 3-4 technicians and specialists",
+    "surgeons with partial aug hands",
+    "engineers running physical-digital interface work",
+    "BCI calibration technicians"
+  ],
+  "manufacturer": "Rolen (corponation)",
+  "price_range": "Φ380–Φ950 per pair depending on cut and haptic resolution tier",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A pair is found configured with a custom haptic profile that maps to a classified Arcturus military aug system — the profile shouldn't exist on a civilian glove.",
+    "A Tier 3 technician has been wearing the same pair for four years, refusing replacements — the haptic calibration has drifted to match their specific nerve damage in a way no new pair can replicate.",
+    "Someone has modified a pair to transmit haptic data outbound — every surface the wearer touches is being logged and transmitted to an unknown receiver."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "aug-compatible",
+    "haptic",
+    "chrome-interface",
+    "gene-compatible",
+    "tier3",
+    "tier4",
+    "tech",
+    "rolen",
+    "BCI",
+    "augmentation"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,56 @@
+{
+  "id": "a3f7c2e1b09d4582fc61e8a034d79b25",
+  "name": "LifeWire EchoForm Subvocal Communicator",
+  "brand_name": "LifeWire",
+  "product_name": "EchoForm",
+  "type": "cyberware",
+  "aliases": [
+    "hush-talk",
+    "the silent",
+    "mouthless",
+    "ghost voice",
+    "whisper chip"
+  ],
+  "category": "social",
+  "body_location": "laryngeal/submental — sensors along the larynx and jaw floor, transmitter node behind the ear",
+  "description": "The EchoForm picks up pre-speech neuromuscular signals — the micro-contractions of the larynx, tongue, and jaw that occur a fraction of a second before audible vocalization — and converts them into clear digital audio transmitted over any paired device or mesh-linked contact. The system uses a three-point sensor array implanted along the laryngeal cartilage and the floor of the mouth, with a processing node tucked behind the ear in the mastoid region. No sound is produced at all. The user simply thinks through speech with the faintest physical intention, and the EchoForm captures, reconstructs, and transmits it. Latency averages 40 milliseconds. A companion app handles pairing, channel selection, and voice profile customization — users can even transmit in a voice profile that sounds different from their natural voice.\n\nFor Tier 1 and Tier 2 workers, the EchoForm is as ordinary as a headset once was. Floor workers in noisy fabrication plants use it to coordinate without screaming over machinery. Parents use it to communicate with family while sitting in loud public transit. Young professionals use it in meetings to send quiet side-channel comments to colleagues without moving a muscle. It has a particular following in communities where discretion matters — social workers, medical staff, educators managing large groups. The EchoForm's closest cultural predecessor is the earpiece-and-lapel-mic combo of the early 2000s, but embedded, invisible, and always on. Most users say they forget it's there within two weeks.",
+  "manufacturer": "LIFEWIRE CONSUMER SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or licensed pharmacy kiosk; local anesthetic, 45-minute procedure, no overnight stay required",
+  "rejection_risk": "Minimal",
+  "maintenance": "Firmware update every 6 months via companion app; annual sensor calibration check recommended; battery cell is inductive-charged passively from body heat, no manual charging needed",
+  "specifications": "{\"sensor_points\": 3, \"latency_ms\": 40, \"transmission_range_m\": 30, \"mesh_compatible\": true, \"voice_profiles_supported\": 8, \"battery_type\": \"thermoelectric passive\", \"water_resistance\": \"IPX7\", \"pairing_protocol\": \"LifeWire CivMesh v4.1\"}",
+  "side_effects": [
+    "Mild throat tightness during first week of calibration",
+    "Occasional phantom transmission — brief moments where the system picks up involuntary sub-speech during vivid dreaming",
+    "Slight jaw soreness in the first 72 hours post-installation",
+    "Some users report a persistent low-level awareness of their own laryngeal movement that fades within a month"
+  ],
+  "cultural_context": "The EchoForm and its competitors have made subvocal communication completely normalized across all tiers of Meridian 88. On the Shelf, a secondhand EchoForm is often one of the first implants a young adult saves for — it signals employability, connectivity, and basic social participation. In Tier 3 and above, having a subvocal communicator is roughly equivalent to having a phone number in 2024: not having one marks you as either very old, very poor, or deliberately off-grid. There is a small counter-culture movement — called 'open mouths' or 'loudwalkers' — who reject subvocal tech as a form of social silencing, arguing that the technology has made public spaces eerily quiet and stripped something human from daily interaction. They are a minority. Most people just appreciate not having to shout.",
+  "known_users": [
+    "Factory and warehouse floor workers in noisy environments",
+    "Parents of young children who need constant quiet coordination",
+    "Healthcare workers and first responders",
+    "Young professionals in open-plan corporate environments",
+    "Deaf and hard-of-hearing individuals who use it as a primary communication channel",
+    "Teenagers who use it to maintain constant side-channel contact with friend groups"
+  ],
+  "story_hooks": [
+    "A player character's EchoForm begins picking up fragments of someone else's subvocal transmissions — someone who should be dead, whose voice profile is on record from a missing persons case two years old.",
+    "A labor organizer uses EchoForm networks to coordinate a silent, invisible strike inside a corporate facility — security can't detect the communication, and the players are hired either to expose it or protect it.",
+    "A witness to a crime can't speak — their EchoForm was remotely bricked before the attack, and the players must trace who had the access credentials to do it."
+  ],
+  "street_price": "Φ280–Φ420 for a gray-market unit with basic calibration",
+  "licensed_price": "Φ650–Φ900 at a LifeWire clinic or certified pharmacy kiosk",
+  "tags": [
+    "cyberware",
+    "social",
+    "lifestyle",
+    "communication",
+    "subvocal",
+    "mass-market",
+    "worker-tech"
+  ],
+  "parent_corponation": ""
+}

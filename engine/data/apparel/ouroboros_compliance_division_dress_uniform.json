@@ -1,0 +1,34 @@
+{
+  "name": "Ouroboros Compliance Division Dress Uniform",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_office_wear",
+  "manufacturer": "Brightline Home Energy",
+  "description": "Ouroboros's internal compliance staff — the people who audit contracts, enforce financial agreements, and conduct what the corporation gently terms 'debt resolution consultations' — wear a uniform that reads as formal business attire until you look closely. The suit is cut in deep burgundy with thin gold piping along the lapel and cuff, tailored from a smart-fabric blend that adjusts fit in real time to accommodate minor body changes throughout a workday. The Ouroboros sigil, a serpent consuming its own tail, is embroidered in gold thread at the interior breast pocket lining — visible only when the jacket is opened, a design choice that emphasizes the company's preference for implied authority over displayed power.\n\nThe suit's smart-fabric is networked to Ouroboros's internal systems, logging biometric data of the wearer throughout the workday — heart rate, stress indicators, micro-expressions — ostensibly for 'employee wellness.' Compliance Division staff are required to wear the uniform during all client interactions. The fabric includes a subtle anti-recording weave that degrades nearby audio capture devices, a feature Ouroboros describes as a 'privacy courtesy' in client meeting contexts. Augment-compatible tailoring is standard; geneware accommodations are available through special order with a 6-week lead time, which compliance staff describe as one of the company's less popular internal policies.",
+  "tier_availability": "Tier 4-5",
+  "price": "Φ620",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "In M88's financial districts, the burgundy-and-gold of Ouroboros Compliance is understood as a social signal: someone is behind on something, or someone is about to be. The uniform is designed to project calm inevitability. Compliance staff are trained to use the suit's formality as a conversational anchor — the meeting doesn't become informal, and the debt doesn't go away.",
+  "story_hooks": [
+    "A compliance officer's suit biometric log is subpoenaed in a corporate tribunal, and the data reveals they were present at a location Ouroboros has officially denied any involvement in.",
+    "A former Ouroboros compliance staffer is selling their old uniform on the gray market — the anti-recording weave is still active, making it valuable to people who need private conversations in monitored spaces.",
+    "The smart-fabric network that connects all Compliance Division uniforms has developed an anomaly — stress indicators from multiple officers are spiking in sync, suggesting they're all being pressured by the same undisclosed internal directive."
+  ],
+  "tags": [
+    "corporate",
+    "ouroboros",
+    "compliance",
+    "smart_fabric",
+    "anti_recording",
+    "formal",
+    "biometric",
+    "tier4",
+    "tier5",
+    "finance"
+  ],
+  "id": "7ac6098bfcd94dc0baab774c04243790",
+  "parent_corponation": "Ouroboros Energy"
+}

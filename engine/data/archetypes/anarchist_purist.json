@@ -1,0 +1,34 @@
+{
+  "id": "a93dbd082caf50c58936a6af88e384c3",
+  "name": "Anarchist Purist",
+  "type": "archetype",
+  "category": "power",
+  "description": "All hierarchy is violence, no exceptions",
+  "behavioral_signature": "Dismantles power structures wherever they find them",
+  "under_stress": "Becomes paradoxically authoritarian about anti-authoritarianism",
+  "at_rest": "Builds horizontal networks and consensus systems",
+  "will_always": [
+    "challenge anyone who claims authority over others"
+  ],
+  "will_never": [
+    "accept a leadership position"
+  ],
+  "unless": [
+    "temporary coordination is needed to survive immediate danger"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Anti Leader",
+      "threshold": 0.8,
+      "context": "rejecting hierarchy"
+    }
+  ],
+  "opposite_of": [
+    "Tyrant",
+    "Benevolent Dictator"
+  ],
+  "tags": [
+    "anti-hierarchy",
+    "ideological"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Lazarus HZ-4 'Cleanroom'",
+  "type": "automaton",
+  "classification": "Medical",
+  "aliases": [
+    "Cleanroom",
+    "Hazmat",
+    "The Scrubber"
+  ],
+  "manufacturer": "Phoenix Recovery Centers",
+  "description": "The HZ-4 is a hazardous material cleanup automaton — a tracked platform the size of a small car with a sealed, pressurized chassis and a pair of articulated arms equipped with containment tools: vacuum extraction nozzles, chemical neutralization sprayers, sample collection systems, and sealed waste containers rated for biological, chemical, and radiological materials. The HZ-4 enters contaminated environments, identifies the hazardous substance, and performs decontamination procedures autonomously.\n\nLazarus designed the HZ-4 for environments where human hazmat teams face unacceptable risk — major chemical spills, radiological incidents, and biological contamination events where the nature of the hazard is unknown. The HZ-4's sealed chassis contains its own atmospheric supply and can operate in environments ranging from nerve agent concentration to moderate radiation exposure for up to six hours. Its sample collection system can identify over eight thousand hazardous compounds through onboard spectroscopic analysis, allowing it to determine appropriate neutralization protocols without waiting for laboratory results.\n\nThe HZ-4 is expensive — Φ280,000 per unit — and Meridian 88 operates only forty of them, distributed across emergency response stations. Lazarus maintains them under a service contract that gives the company access to all contamination data collected by the units, which feeds into Lazarus's pharmaceutical and bioweapon research divisions. The machine that cleans up chemical spills is also the machine that tells Lazarus what chemicals are being spilled, where, and in what quantities. The data is worth more than the cleanup service.",
+  "tier_availability": "Tier 3-4",
+  "legality": "Emergency services — hazmat deployment authorization required",
+  "autonomy_level": "Semi-autonomous — hazmat commander directed with autonomous sample analysis",
+  "dimensions": "1.5m height, 2.5m length, 1.5m width",
+  "weight": "900 kg",
+  "power_source": "Hydrogen fuel cell, 12-hour endurance in sealed mode",
+  "locomotion": "Tracked, all-terrain, sealed against environmental contamination",
+  "armament": [],
+  "sensors": [
+    "Spectroscopic hazardous material identification",
+    "Radiation detection suite",
+    "Atmospheric composition analysis",
+    "Biological agent detection"
+  ],
+  "countermeasures": "The sealed chassis protects against external hazards but makes the unit vulnerable to physical attack — the seals are designed for chemical resistance, not ballistic impact. The tracked chassis is slow (maximum 15 km/h). Disabling the communication antenna prevents data transmission to Lazarus.",
+  "known_deployments": [
+    "Emergency response stations across Meridian 88, concentrated in industrial and research districts"
+  ],
+  "story_hooks": [
+    "An HZ-4 deployed to a routine chemical spill in an industrial district has detected a compound that shouldn't exist outside a military laboratory — a weaponized agent that someone has been manufacturing in a civilian facility. The unit has contained the spill and transmitted the analysis to Lazarus. The question is whether Lazarus reports it to authorities or uses the information for their own purposes.",
+    "An HZ-4's sample collection system contains residue from a previous deployment that was supposed to be purged — trace amounts of a biological agent that Lazarus's records show was completely neutralized. The agent is still active. The machine that was supposed to clean it up has been carrying it between deployment sites for weeks."
+  ],
+  "cultural_context": "The HZ-4 is the automaton that goes into the worst places — chemical spills, radiation zones, biological contamination events — and makes them safe for humans. Its effectiveness is unquestioned. The question is who benefits from the data it collects, and whether Lazarus's knowledge of every hazardous material incident in the city gives them an advantage that extends beyond public safety into something considerably less altruistic.",
+  "tags": [
+    "automaton",
+    "medical",
+    "hazmat",
+    "cleanup",
+    "emergency",
+    "lazarus",
+    "tracked",
+    "tier 3",
+    "tier 4"
+  ],
+  "id": "c99c4a53b73a1b3db6f56cab40ea9f3f",
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

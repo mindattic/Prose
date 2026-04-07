@@ -1,0 +1,41 @@
+{
+  "id": "f1e84bc3209a7d05e6b3a1c8d74f0e29",
+  "name": "The Foxhole Market (Rotating Shelf Bazaar)",
+  "type": "entertainment",
+  "category": "phenomenon",
+  "subcategory": "ghost market",
+  "description": "M88's most notorious ghost market, the Foxhole operates on a weekly rotation through seventeen confirmed Shelf locations — flooded parking structures, decommissioned water treatment annexes, the gutted interior of the collapsed Meridian Elevated Rail car depot on South Kedzie — announced exclusively through a physical pamphlet system called the Foxhole Flier, hand-distributed by a network of child couriers known as the Runners-Under. Unlike the Null Markets' digital anonymity, the Foxhole's paper-only system is deliberately archaic, making it nearly impossible for BCI-linked surveillance to anticipate locations. The market specializes in pre-corp-era artifacts, unlicensed geneware modifications, and synthetics operating without registered identity papers.",
+  "origin_year": 2196,
+  "tier_association": "Tier 1-2",
+  "status": "active",
+  "cultural_impact": "The Foxhole's paper flier system has inspired a broader Shelf revival of analog communication — hand-lettered notices, physical message boards, and courier networks — as communities recognize the surveillance-evasion value of going fully offline.",
+  "key_figures": [
+    "Perpetua Osei-Lindqvist (rumored market organizer)",
+    "The Runners-Under (courier network)",
+    "Gus Nwachukwu-Papadimitriou (legendary Foxhole fence)"
+  ],
+  "locations": [
+    "South Kedzie Rail Depot ruins (Shelf Sector 9)",
+    "Flooded Level B parking structure, former Lakeside Mall",
+    "Decommissioned Water Treatment Annex 4-F"
+  ],
+  "corporate_stance": "opposed",
+  "story_hooks": [
+    "A Foxhole Flier turns up somewhere it absolutely should not be — inside a sealed Tier 5 Spire residential unit — and the Runners-Under insist none of their couriers have ever been above Tier 2.",
+    "A synthetic without papers has been using the Foxhole's identity document trade for years but now wants something the market can't provide: legal recognition, and they'll pay anything to anyone who can help.",
+    "The Foxhole's next rotation lands in a location that a rival crew has already claimed for a completely different operation, and both sides want a neutral fixer to resolve the conflict before corp-sec notices the resulting chaos."
+  ],
+  "tags": [
+    "ghost market",
+    "Shelf",
+    "analog",
+    "synthetics",
+    "geneware",
+    "black market",
+    "paper flier",
+    "Tier 1",
+    "artifacts",
+    "identity"
+  ],
+  "parent_corponation": ""
+}

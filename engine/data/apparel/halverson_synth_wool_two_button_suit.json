@@ -1,0 +1,34 @@
+{
+  "name": "Halverson Synth-Wool Two-Button Suit",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "suit",
+  "manufacturer": "Halverson & Crane",
+  "description": "Halverson & Crane's entry-level formal suit occupies the precarious middle ground between aspiration and reality for Tier 2 workers stepping into Tier 3 spaces. The fabric is synth-wool — a polymer blend engineered to replicate the drape and texture of natural wool without the cost, produced in Crucible-adjacent mills in the outer manufacturing ring. It holds a press well, resists light moisture, and pills slightly at the inner thigh after about eighteen months of regular wear. The construction is machine-tailored with minimal hand-finishing, but the silhouette is clean: notch lapel, two-button single-breasted, a back vent that accommodates a standard spinal port brace or lower-lumbar chrome housing.\n\nThe suit comes in four colors — ash, deep navy, corporate slate, and a brown that photographs as black. It is sold primarily through Halverson's Tier 2 district storefronts and through licensed resellers in transit hub commercial corridors. Many buyers are purchasing for a specific event: a corporate onboarding, a Lazarus appeals tribunal, a family member's citizenship certification. The suit is designed to help you pass without drawing attention in either direction.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ110",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The Halverson two-button is sometimes called 'the hearing suit' in Tier 2 communities because of how often it appears at administrative proceedings, tribunal appearances, and corponation HR reviews. It's aspirational without being pretentious, functional without being remarkable. Wearing one signals that you are trying to be taken seriously by institutions that were not designed with you in mind.",
+  "story_hooks": [
+    "A synthetic being purchases this suit specifically for a personhood recognition hearing — the act of wearing it is deliberate, a performance of the social legibility they are fighting to be granted.",
+    "A Tier 3 Ouroboros mid-manager recognizes the suit's cut and quietly adjusts their tone in a negotiation, recalibrating who they think they're dealing with.",
+    "The suit's RFID tag contains a Halverson loyalty identifier; a gray-market data broker is harvesting these tags from transit nodes to build dossiers on people attending specific institutional proceedings."
+  ],
+  "tags": [
+    "suit",
+    "synth-wool",
+    "formal",
+    "Tier 2",
+    "Tier 3",
+    "augment compatible",
+    "machine tailored",
+    "hearing suit",
+    "aspirational",
+    "Halverson & Crane"
+  ],
+  "id": "fa3b84130f2244c4931105f0b42f268f",
+  "parent_corponation": ""
+}

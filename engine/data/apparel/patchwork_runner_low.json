@@ -1,0 +1,38 @@
+{
+  "id": "b1e4a7d2c3f8059612a3b4c5d6e7f901",
+  "name": "Patchwork Runner Low",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "What started as a mass-market athletic shoe has been repaired so many times it's barely the original product. The upper is a mosaic of synth-mesh panels in mismatched colors — grey, faded red, dirty white — each one covering a hole or a split seam. The sole is delaminating at the heel, fixed with a thick bead of structural adhesive that dried yellow.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "multi-source synth-mesh",
+    "structural adhesive",
+    "worn foam midsole"
+  ],
+  "functionality": "none",
+  "what_it_says": "You've had these shoes for years. You'll have them for a few more. Waste nothing.",
+  "worn_by": [
+    "teenagers",
+    "Shelf runners",
+    "anyone who grew out of their last pair and couldn't afford new ones"
+  ],
+  "manufacturer": "Various (originally Vance Athletic)",
+  "price_range": "Φ2 - Φ6",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The original shoe's embedded loyalty-chip is still active, pinging a defunct storefront's network — someone might still be listening.",
+    "A kid's been wearing the same pair for three years. The day they get new shoes means something changed."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 1",
+    "sneakers",
+    "repaired",
+    "salvage",
+    "athletic"
+  ],
+  "parent_corponation": ""
+}

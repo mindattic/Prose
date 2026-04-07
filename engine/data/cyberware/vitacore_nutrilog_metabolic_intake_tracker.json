@@ -1,0 +1,57 @@
+{
+  "id": "e8d0f3a5c1b74e92f6d2a0e5b8c31f07",
+  "name": "VitaCore NutriLog Metabolic Intake Tracker",
+  "brand_name": "VitaCore",
+  "product_name": "NutriLog",
+  "type": "cyberware",
+  "aliases": [
+    "the counter",
+    "calchip",
+    "gut reader",
+    "macrobone",
+    "the ledger",
+    "bite log"
+  ],
+  "category": "convenience",
+  "body_location": "subdermal upper abdomen (left hypochondriac region, beneath the ribcage margin)",
+  "description": "The NutriLog is a passive metabolic monitoring implant that uses a combination of continuous glucose monitoring via enzymatic electrochemical sensor, gastric motility detection through piezoelectric vibration analysis, and post-absorptive blood marker spectroscopy to construct a real-time nutritional intake model. As food is consumed and absorbed, the implant builds a running log of estimated caloric intake, macronutrient ratios, micronutrient proxies, and glycemic load — with accuracy rated at plus or minus eight percent for most common food matrices. It does not require any user input; the passive sensor suite generates intake data automatically, with the user receiving summary reports through a paired device, neural mesh, or a simple LED subcutaneous display available in premium models. The implant also tracks basal metabolic rate drift over time, adjusting its intake recommendations as the user's body composition changes. A companion database, updated monthly via network sync, covers the nutritional profiles of roughly 94% of commercially available food products in Meridian 88's market.",
+  "manufacturer": "VITACORE HEALTH CONSUMER DIVISION",
+  "tier_availability": "Tier 2-4",
+  "legality": "Unrestricted",
+  "installation_requirements": "Licensed outpatient clinic; 30-minute procedure under local anesthetic; initial calibration period of 10 days required for accurate baseline",
+  "rejection_risk": "Low",
+  "maintenance": "Enzymatic sensor element requires replacement every 18 months at a clinic; firmware and food database updates via network sync; annual calibration checkup recommended",
+  "specifications": "{\"monitoring_methods\": [\"continuous glucose electrochemical sensor\", \"piezoelectric gastric motility\", \"post-absorptive near-IR spectroscopy\"], \"caloric_accuracy\": \"+/- 8% for standard food matrices\", \"macronutrients_tracked\": [\"carbohydrates\", \"protein\", \"fat\", \"fiber\"], \"micronutrient_proxies\": [\"iron\", \"vitamin D\", \"B12\", \"calcium\", \"sodium\", \"potassium\"], \"database_coverage\": \"~94% of Meridian 88 commercial food products\", \"output\": \"paired device, neural mesh, or optional subdermal LED display\", \"sensor_replacement_cycle\": \"18 months\"}",
+  "side_effects": [
+    "Mild abdominal awareness or pressure sensation during the 10-day calibration period",
+    "Occasional inaccurate readings after consuming novel or heavily processed foods not in the database",
+    "Some users develop mild anxiety around eating when data is reviewed obsessively — clinicians recommend notification throttling",
+    "Rare skin sensitivity at the implant site in humid conditions during the first month"
+  ],
+  "cultural_context": "The NutriLog sits in an interesting cultural position: it is genuinely useful health infrastructure, but it has also become a class-coded lifestyle signal in Tier 3 and Tier 4 social spaces. Discussing your 'macros' or 'log numbers' in Tier 3 social settings is a common form of casual health-culture conversation, and the implant is a standard feature of the wellness-oriented identity that Tier 3 aspirational culture prizes. In Tier 2, it is more practically motivated — people use it to stretch food budgets intelligently, avoid nutritional deficiencies when eating cheap, and manage chronic conditions related to diet. It is markedly less common in Tier 1, where the cost of the sensor replacement cycle makes it a medium-term financial commitment that many cannot sustain; second-hand units with expired sensors still circulate in Shelf markets, used for their partial functionality. Medical providers increasingly view NutriLog data as a standard component of a patient health record, and some Lazarus-affiliated clinics now request implant data during intake as a matter of routine.",
+  "known_users": [
+    "Fitness and wellness enthusiasts in Tier 2-4",
+    "People managing diet-related chronic conditions such as diabetes or cardiovascular risk",
+    "Athletes optimizing performance nutrition",
+    "Budget-conscious workers trying to maximize nutritional value from low-cost food",
+    "Parents monitoring their own health and modeling wellness behavior"
+  ],
+  "story_hooks": [
+    "NutriLog units across a Tier 2 district are logging trace chemical markers consistent with a specific industrial additive that is not approved for food use — and the data points to a single commercial food brand distributed through Shelf-adjacent discount outlets.",
+    "A player's NutriLog has been quietly uploading their dietary data to a third party as part of an undisclosed data-sharing clause buried in the end-user agreement — and that data has just appeared in a corporate health risk assessment that cost someone their job.",
+    "A VitaCore researcher contacts the party: the NutriLog database has been tampered with, and the nutritional profiles of a category of cheap staple foods have been subtly altered to mask dangerously low values — someone has been hiding a supply chain failure."
+  ],
+  "street_price": "Ψ380–Ψ620 (unit only; sensor replacement Ψ90 per cycle)",
+  "licensed_price": "Ψ850 at VitaCore authorized clinics, including first sensor replacement",
+  "tags": [
+    "cyberware",
+    "convenience",
+    "lifestyle",
+    "health-monitoring",
+    "nutrition",
+    "metabolic",
+    "fitness",
+    "biosensor"
+  ],
+  "parent_corponation": ""
+}

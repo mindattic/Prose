@@ -10,7 +10,7 @@
   ],
   "category": "drone",
   "description": "The TODD-2 operates as a swarm-capable photonic denial platform — each individual unit is a flat hexagonal tile roughly 12 cm across, housing a phased array of micro-lensed emitters that produce precisely sculpted coherent light interference patterns. When a single unit detects a target via thermal or motion signature, it positions itself in the subject's visual cone and activates its pattern array, producing a persistent false-geometry overlay in the target's visual field — not blindness, but a convincing spatial hallucination that makes distances, edges, and surfaces unreliable. Targets frequently walk into walls, misjudge step heights, or freeze entirely trying to parse contradictory spatial data.\n\nThe TODD-2's genuine tactical edge emerges when multiple units coordinate. Three or more tiles triangulating a single target can produce a full 270-degree interference envelope, effectively trapping the target in a bubble of fabricated geometry. Operators describe the effect as 'putting someone inside a painting.' The swarm communicates via low-power mesh radio with negligible emissions signature, making electronic detection difficult. VANTABLACK MEDIA's involvement in its development is rarely advertised but evident in the emitter array's lineage — it borrows heavily from their immersive architectural projection systems.\n\nThe tiles are fragile by drone standards and were never designed for contested airspace. They perform poorly in rain and fail entirely in direct high-lumen environments. Their power cells last approximately 40 minutes at full interference output, after which they return to a designated recovery point or drop to the ground inert.",
-  "manufacturer": "VANTABLACK MEDIA",
+  "manufacturer": "The Drift Monitoring Division",
   "tier_availability": "Black market",
   "legality": "Prohibited",
   "base_technologies": [
@@ -53,6 +53,8 @@
     "pain",
     "market",
     "rain",
-    "hover"
-  ]
+    "hover",
+    "lethal"
+  ],
+  "parent_corponation": "Vantablack Media"
 }

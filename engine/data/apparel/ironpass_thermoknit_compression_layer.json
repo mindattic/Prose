@@ -1,0 +1,44 @@
+{
+  "id": "7b1d3a09fc8e2547d3c6a1e8b0f42d9c",
+  "name": "Ironpass ThermoKnit Compression Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A workhorse Circuit-tier compression underlayer in charcoal grey with yellow-ochre flatlock seams — Ironpass's signature industrial palette. Constructed from recycled synthetic stretch-knit with a moisture-wicking inner surface and a mild thermal lining that buffers against factory-floor temperature swings. Fits close without binding, designed to sit comfortably under coveralls or work jackets for twelve-hour shifts. The fabric pills at the elbows and collar after heavy use, which most wearers consider proof of honest work.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "recycled synthetic stretch-knit",
+    "polyspandex blend",
+    "moisture-wicking mesh inner layer",
+    "flatlock-stitched thermal lining",
+    "reinforced collar band"
+  ],
+  "functionality": "Compression support for back and core during heavy labor; moisture management prevents chafing on long shifts. Basic thermal buffering handles ±15°C variance. Seam channels around shoulder blades allow spinal rig hardware to seat without bunching.",
+  "what_it_says": "You work a real job and you don't make a fuss about it.",
+  "worn_by": [
+    "factory floor workers",
+    "transit operators",
+    "warehouse sorters",
+    "dock laborers",
+    "grid maintenance crews"
+  ],
+  "manufacturer": "Ironpass Workwear — Tier 2 corponation subsidiary label",
+  "price_range": "Φ18–Φ35",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Ironpass embeds a passive RFID tag in every unit — officially for inventory, but someone's been querying the network at odd hours.",
+    "A union organizer is using the sale of bootleg Ironpass compression layers as a funding mechanism for a strike action.",
+    "A worker's compression layer preserved a biometric anomaly log from three weeks ago that contradicts the official accident report."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "compression",
+    "thermal",
+    "labor",
+    "aug_compatible",
+    "tier2",
+    "workwear"
+  ],
+  "parent_corponation": ""
+}

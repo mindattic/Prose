@@ -1,0 +1,33 @@
+{
+  "name": "Driftclean Pressed Occasion Dress — Shelf Cut",
+  "type": "apparel",
+  "category": "formal_wear",
+  "subcategory": "dress",
+  "manufacturer": "Driftclean (market vendor label)",
+  "description": "A knee-length dress in a deep navy synth-polyester that photographs darker than it looks in person, which is a feature the vendor actively advertises. The fabric is thin enough to fold into a pocket-sized square, which matters when storage space is limited. The cut is universally generous — a single size-adjustable drawstring at the waist allows it to fit a wide range of bodies, including those with minor geneware modifications. A small tail accommodation slit has been roughly cut into the back seam on some units and left raw-edged, a field modification that has become so common the vendor now includes it as an option at point of sale.\n\nThis dress exists because people on the Shelf have occasions too. It is sold in market stalls alongside cleaning supplies and ration supplements, and it is priced to be reachable on a single shift's pay. The fabric pills after three washes but holds its color. It is not beautiful in any technical sense. It is appropriate, and on the Shelf, appropriate is enough.",
+  "tier_availability": "Tier 1-2",
+  "price": "Φ11",
+  "augment_compatible": false,
+  "geneware_compatible": true,
+  "durability": "low",
+  "legal_status": "legal",
+  "cultural_context": "Widely recognized as Shelf-formal by anyone who grew up below Tier 3. In Tier 2 spaces it passes without comment. In Tier 3 and above it reads immediately as out-of-place, which can be either a source of shame or defiant identity depending on the wearer.",
+  "story_hooks": [
+    "A synthetic personhood hearing requires formal attire. A synthetic being with no personal income is given this dress by a Shelf neighbor who wanted them to feel dignified walking in.",
+    "The dress is available in only three colors — navy, black, and a dark green. A character needs to attend two different events in the same week and can only afford one.",
+    "Someone has worn this dress to every important moment in their life for fifteen years. The drawstring has been replaced four times. The fabric is worn thin at the shoulders."
+  ],
+  "tags": [
+    "shelf",
+    "dress",
+    "formal",
+    "budget",
+    "geneware-compatible",
+    "tail-vent",
+    "occasion",
+    "tier-1",
+    "market-made"
+  ],
+  "id": "aa868dc2ac26458aa27354c92c23bacc",
+  "parent_corponation": ""
+}

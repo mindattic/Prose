@@ -1,0 +1,33 @@
+{
+  "name": "Ouroboros Actuarial Field Investigator Vest",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_field_wear",
+  "manufacturer": "Ouroboros Finance & Insurance",
+  "description": "Ouroboros field investigators assess claims in person across all tiers of Meridian 88, which means the uniform has to function in a Spire boardroom and on a Shelf flood plain within the same shift. The vest is a structured multi-pocket design in Ouroboros's signature deep charcoal with thin gold piping at the pocket edges. The outer fabric is a water-resistant ripstop that doesn't crease visibly, and the lining is a passive thermal layer rated for the harbor wind corridor. Every pocket is labeled with embossed Ouroboros iconography — the serpent-loop — and internal pockets are RFID-shielded for document security. The vest is designed to be worn over either a formal shirt or a base layer depending on context, with magnetic front closure that adjusts the silhouette significantly. A discreet emergency transmitter is sewn into the left-shoulder seam, company policy for any investigator working below Tier 3.",
+  "tier_availability": "Tier 2-3",
+  "price": "Φ240",
+  "augment_compatible": true,
+  "geneware_compatible": false,
+  "durability": "high",
+  "legal_status": "legal",
+  "cultural_context": "Ouroboros investigators are not universally welcomed — they show up when someone has made a claim or when Ouroboros suspects fraud. The vest is recognizable enough that its appearance in a neighborhood changes behavior. Some people are relieved; others disappear before the investigator reaches their door.",
+  "story_hooks": [
+    "An investigator goes missing mid-field assignment in Tier 1; their vest's emergency transmitter was surgically removed before they disappeared, suggesting the assailants knew exactly what to look for.",
+    "A fraudulent Ouroboros investigator has been operating in Tier 2 using a near-perfect replica vest, collecting 'documentation fees' from residents unfamiliar with official Ouroboros procedure.",
+    "The RFID shielding in a batch of investigator vests is faulty in a specific way that allows external readers to capture document data — Ouroboros's internal security team is unsure whether it's a manufacturing error or deliberate."
+  ],
+  "tags": [
+    "ouroboros",
+    "insurance",
+    "finance",
+    "field-investigator",
+    "vest",
+    "multi-tier",
+    "corporate",
+    "rfid-shielded",
+    "water-resistant"
+  ],
+  "id": "1e0238d9a7844cf781798b8fea6a714f",
+  "parent_corponation": "Ouroboros Energy"
+}

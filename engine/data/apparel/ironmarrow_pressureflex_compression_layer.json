@@ -1,0 +1,42 @@
+{
+  "id": "d4b8e3a17c2f056e9a1d3b7c4f2e8a05",
+  "name": "Ironmarrow PressureFlex Compression Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A full-torso compression shirt and matching three-quarter leggings in Circuit-standard charcoal with muted teal paneling along the ribcage and inner thigh. Constructed from dense 4-way stretch synth-nylon with flat-lock seams that won't chafe under heavy gear. The fabric is thick enough to feel substantial, thin enough to vanish under a work jacket. Port-channel notches at the shoulders and mid-spine allow basic chrome limb mounts to sit flush without bunching.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-nylon compression weave",
+    "flat-lock reinforced seaming",
+    "recycled elastane blend",
+    "port-notch reinforcement tape"
+  ],
+  "functionality": "Medical-grade compression for long-shift circulation support; aug-channel notches at shoulders and lumbar accommodate standard chrome mount hardware; moisture transfer to outer layers keeps skin dry through 12-hour shifts.",
+  "what_it_says": "You work a full shift on your feet and you've learned to take care of your body because no one else will.",
+  "worn_by": [
+    "factory floor workers",
+    "transit operators",
+    "dock haulers",
+    "workers with entry-level chrome limb prosthetics"
+  ],
+  "manufacturer": "Ironmarrow — Circuit-tier street label",
+  "price_range": "Φ35–Φ60",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An Ironmarrow lot number stamped inside the collar matches a batch recalled after a factory contamination incident — officially, those units were destroyed.",
+    "A transit operator's compression shirt shows compression data printed in faded ink from an old biometric wash-tag: their resting heart rate has been climbing for six months.",
+    "A new hire gets issued one by their floor supervisor — it's the first thing they've owned that fits a chrome arm properly."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "compression",
+    "aug-compatible",
+    "tier-2",
+    "circuit",
+    "work-wear",
+    "medical-adjacent"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,45 @@
+{
+  "id": "7d1e4a9c3f02b857c6d4e1a8f3b20c51",
+  "name": "Nexkin ThermaSync Biometric Base Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "A close-fit long-sleeve shirt and high-waist legging set in charcoal grey with hairline silver sensor traces running along the ribs, inner forearms, and outer thighs. Fabric is a smooth four-way stretch with a matte finish — unremarkable until the sensor nodes pulse faintly blue during active biometric reads.\n\nSeams are flatlock-bonded, nearly invisible. A small BCI sync node sits at the left collarbone. The waistband integrates a micro-display strip showing heart rate, core temp, and hydration flag.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "graphene-threaded polyamide",
+    "bio-conductive elastane",
+    "micro-encapsulated phase-change thermal fill",
+    "flexible printed circuit substrate",
+    "silver-ion antimicrobial weave"
+  ],
+  "functionality": "Continuous biometric monitoring (heart rate, core temperature, hydration, cortisol proxy). BCI-syncs health data to linked device or neural HUD. Phase-change fill adjusts insulation dynamically within a 12°C range. Flatlock seams prevent pressure points under armor or chrome harnesses.",
+  "what_it_says": "You track your body like an asset and you can afford to.",
+  "worn_by": [
+    "junior corporate executives",
+    "field medics",
+    "skilled factory floor supervisors",
+    "competitive amateur athletes",
+    "Tier 3 desk workers with health anxiety"
+  ],
+  "manufacturer": "Nexkin (mid-tier corponation wellness subsidiary)",
+  "price_range": "Φ280–Φ420",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A character's Nexkin layer has been logging stress and cortisol spikes — the data was quietly sold to their employer's HR division without consent.",
+    "Someone is wearing a Nexkin set with the BCI node physically gouged out — paranoid, or hiding something their body would give away.",
+    "A Tier 3 worker discovers their biometric data shows a pattern their company's actuarial AI has flagged as 'termination-risk profile.'"
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "biometric",
+    "smart-fabric",
+    "bci-compatible",
+    "thermal-regulation",
+    "tier-3",
+    "tier-4",
+    "corporate"
+  ],
+  "parent_corponation": ""
+}

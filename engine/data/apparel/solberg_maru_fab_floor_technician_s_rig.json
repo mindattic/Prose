@@ -1,0 +1,51 @@
+{
+  "id": "e1c8a5720f3b94d6e2a7f0c4b91d3e56",
+  "name": "Solberg-Maru Fab Floor Technician's Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "The standard working dress of a mid-level fabrication floor technician at a Solberg-Maru manufacturing plant — one of the major Circuit employers running continuous production lines in M88's industrial eastern sectors. The centerpiece is a fitted coverall in deep charcoal grey synth-twill, single-piece construction with a heavy-gauge front zipper that runs from the left hip to the right shoulder in a diagonal — an ergonomic design that allows one-handed donning. The coverall has Solberg-Maru's angular teal-and-silver logo on the left chest and a name patch on the right reading in block letters. Sleeves are cut with extra fabric through the forearm for chrome arm accommodation and feature a secondary snap-seam from elbow to wrist that opens flat for workers with full prosthetic forearms. The back has a structured panel over the spine with magnetic attachment points for light exo-assist harness rigging. Knee pads are built-in hard-shell inserts with a quick-eject button on the outer knee.\n\nUnderneath the coverall, a long-sleeved moisture-wicking turtleneck in matte black keeps the neck and wrists protected from particulate. Safety boots are Solberg-Maru plant-standard: a matte charcoal composite-toe boot with a low heel, ESD-rated soles to prevent static discharge near sensitive fabrication equipment, and a wide-mouth tongue for easy on/off. The technician carries a tool belt worn over the coverall's exterior, a heavy nylon strap with modular snap-clip tool loops holding hex drivers, a calibration stylus, and a small diagnostic tablet in a rubberized holster. Safety glasses with teal-tinted lenses are pushed up on the forehead. Hair, if present, is tucked under a low-profile teal bump cap with the Solberg-Maru mark.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "charcoal synth-twill coverall fabric",
+    "hard-shell built-in knee pad inserts",
+    "moisture-wicking polyblend turtleneck",
+    "composite-toe boot construction",
+    "ESD-rated boot sole material",
+    "heavy nylon tool belt webbing",
+    "rubberized tablet holster material",
+    "teal polycarbonate safety lens"
+  ],
+  "functionality": "Diagonal zipper for one-handed donning; snap-open forearm seam for chrome arm accommodation; spinal magnetic attachment points for exo-assist harness; ESD-rated boot soles for fabrication environments; built-in quick-eject knee pads; modular tool belt with snap-clip loops; turtleneck particulate barrier at neck and wrists",
+  "what_it_says": "Solberg-Maru plant workers occupy a specific Circuit niche: they're not scraping by, but they're not moving up either. The well-maintained coverall with its factory logo signals steady employment and plant loyalty. A technician who keeps their kit clean is someone who takes their work seriously — or someone who can't afford to lose this job. The chrome-accommodation seams say augmentation isn't unusual here; it's standard.",
+  "worn_by": [
+    "Solberg-Maru fabrication floor technicians",
+    "manufacturing line operators",
+    "CNC and additive fabrication workers",
+    "quality control floor staff",
+    "plant maintenance technicians"
+  ],
+  "manufacturer": "Solberg-Maru Industries (corponation-issued; manufactured in-house by Solberg-Maru Apparel Division)",
+  "price_range": "Φ160–Φ220 (issued on hire; replacement at cost docked from wages)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A fabrication technician's coverall contains a hidden internal pocket sewn shut from the inside — and when it's finally cut open, it holds a data chip that shouldn't exist, encoded with Solberg-Maru production schematics for a product line the company hasn't officially announced.",
+    "A run of new coveralls issued to the night shift has a subtle difference in the snap-seam chrome accommodation — it's slightly misaligned in a way that could catch and damage a prosthetic limb under high-torque conditions, and someone changed the manufacturing spec deliberately.",
+    "The Solberg-Maru bump caps issued this quarter have an undocumented chip embedded in the brim — workers wearing them have been reporting fragmented memory intrusions near the BCI integration zones."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "factory",
+    "fabrication",
+    "coverall",
+    "aug_compatible",
+    "corponation_issued",
+    "solberg_maru",
+    "manufacturing",
+    "esd_rated"
+  ],
+  "parent_corponation": ""
+}

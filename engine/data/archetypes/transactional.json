@@ -1,0 +1,34 @@
+{
+  "id": "b16a2955181ad96a0b0be04fdb08d34a",
+  "name": "Transactional",
+  "type": "archetype",
+  "category": "relationship",
+  "description": "Every relationship is an exchange with clear terms and expectations",
+  "behavioral_signature": "Can quote exactly what they've given and what they're owed in return",
+  "under_stress": "Demands payment for every kindness ever shown",
+  "at_rest": "Evaluating the ROI of every relationship",
+  "will_always": [
+    "keep the ledger balanced"
+  ],
+  "will_never": [
+    "give without expectation of return"
+  ],
+  "unless": [
+    "someone means enough that the ledger stops mattering"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Cold Calculator",
+      "threshold": 0.7,
+      "context": "relationship math"
+    }
+  ],
+  "opposite_of": [
+    "Generous Partner"
+  ],
+  "tags": [
+    "transaction",
+    "exchange",
+    "balance"
+  ]
+}

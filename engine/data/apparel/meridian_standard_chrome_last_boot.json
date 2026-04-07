@@ -1,0 +1,40 @@
+{
+  "id": "8d3f0b5e2a7c491d6f8b3e0d5a2c7418",
+  "name": "Meridian Standard Chrome-Last Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A no-nonsense, wide-last work boot manufactured to fit the most common prosthetic foot models on the market. The sizing system uses prosthetic model codes rather than conventional shoe sizes — you order by your chrome model number, not your old biological size. Leather upper, steel shank, thick rubber sole. It looks like a plain work boot and functions like one.\n\nMass-produced and stocked at every Tier 2 hardware and supply depot in Meridian 88. The boot of choice for augmented workers who just need something that fits and lasts. Zero fashion intent, complete functional reliability.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "full-grain synthetic leather",
+    "steel shank",
+    "chrome-tanned leather lining",
+    "vulcanized rubber outsole"
+  ],
+  "functionality": "Manufactured to fit standard prosthetic foot model codes. Wide last accommodates most common chrome foot profiles without modification.",
+  "what_it_says": "You don't have time for fashion. You have a job, you have chrome, you need boots that fit.",
+  "worn_by": [
+    "augmented blue-collar workers",
+    "prosthetic users on tight budgets",
+    "Tier 2 laborers with standard prosthetic feet"
+  ],
+  "manufacturer": "Meridian Standard Works",
+  "price_range": "Φ48 - Φ62",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Because they're ordered by prosthetic model code, a pair of Meridian Standards tells you exactly what chrome someone is running — useful or dangerous information depending on context.",
+    "An underground modification scene has sprung up around these boots — people customizing the plain shells into something personal."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 2",
+    "aug-compatible",
+    "work-boot",
+    "chrome-last",
+    "mass-produced",
+    "utilitarian"
+  ],
+  "parent_corponation": ""
+}

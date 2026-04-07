@@ -1,0 +1,47 @@
+{
+  "id": "c4e2a7f1903d5b8e16c4a2f7e0b93d51",
+  "name": "Meridian Municipal Supply AG-7 'Hotstock'",
+  "type": "weapon",
+  "aliases": [
+    "hotstock",
+    "the prod",
+    "zapper",
+    "farmers friend"
+  ],
+  "category": "melee",
+  "description": "The Meridian Municipal Supply AG-7 is an agricultural cattle prod, manufactured for livestock management in the urban farming cooperatives and vertical ranching operations that supply Meridian 88's food chain. It is a 90-centimeter fiberglass-and-ABS rod with a two-prong stainless steel contact at the tip, designed to deliver a sharp, brief shock to the flank of a large animal — sufficient to redirect behavior without causing lasting harm to the animal or its market value. It runs on two standard D-cell battery equivalents, has no charging port, no digital components, and no safety mechanism beyond a simple sliding power switch. It costs Φ15 at any agricultural supply outlet and is available without any documentation whatsoever.\n\nThe AG-7 was never designed as a weapon. It was designed to move cattle through chutes. That it has become one of the most common improvised defensive and offensive tools in Tier 1 and lower Tier 2 is a testament to the gap between what people can afford and what the formal weapons market provides. The shock output is lower than dedicated security batons — approximately 30,000 volts at very low amperage — and the contact range is shorter, but it is immediate, it is reliable, and it leaves no purchase record that flags a personal protection permit database.\n\nMeridian Municipal Supply has periodically faced pressure from municipal security contractors to add purchase restrictions or tracking to AG-7 units, given their prevalence at crime scenes. The company has consistently and successfully argued that the AG-7 is a farm tool and that restricting it would harm legitimate agricultural operations in the city's food-production districts. This argument is legally sound and practically convenient for everyone involved.",
+  "manufacturer": "MERIDIAN MUNICIPAL SUPPLY",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — classified as agricultural equipment; no permit, registration, or documentation required for purchase",
+  "base_technologies": [
+    "basic capacitive discharge",
+    "fiberglass composite rod",
+    "replaceable battery power"
+  ],
+  "specifications": "Length: 900mm\nWeight: 480g\nDischarge Voltage: ~30,000V\nAmperage: 0.001A (fixed)\nPower Source: 2x D-cell battery equivalent (replaceable)\nBattery Life: ~200 activations\nContact Type: Dual stainless steel prong\nBody: ABS/fiberglass composite\nSafety: Sliding power switch only\nPrice: Φ15",
+  "tactical_use": "In agricultural use, the AG-7 is pressed firmly against the flank of an animal and the trigger button depressed for a half-second burst. In improvised defensive use, the same technique applies to human targets — it requires solid contact to be effective, meaning the user must be within arm's reach. The weapon's length gives it modest reach advantage over a fist. Its effectiveness against augmented individuals varies widely; those with significant subdermal plating or insulating chrome may feel little effect. On unaugmented or lightly augmented targets, the shock causes a brief, sharp muscular response that is more startling than incapacitating.",
+  "cultural_context": "In Tier 1, the AG-7 is simply 'the prod' or 'farmer's friend,' and carrying one openly in certain districts is understood as a quiet statement about economic reality rather than agricultural occupation. There is no shame in it and no pretense — it is what it is, a Φ15 piece of hardware that might save your life or might not, and everyone knows the difference between it and a real security baton. Some Tier 1 community defense groups have begun spray-painting their prods in identifying colors to signal affiliation and mutual-aid membership.",
+  "known_users": [
+    "vertical ranch and urban farm workers",
+    "Tier 1 civilian self-defense",
+    "community defense patrols in unpoliced districts",
+    "street vendors in high-theft zones"
+  ],
+  "story_hooks": [
+    "A batch of AG-7 units from a specific manufacturing run have been quietly modified during distribution — a micro-component soldered into the discharge circuit that triples output voltage, enough to be genuinely dangerous. Someone is arming a specific neighborhood, and the question is whether they're protecting it or preparing it for something."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "baton",
+    "electric",
+    "agricultural",
+    "improvised",
+    "low-tech",
+    "civilian",
+    "tier1"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "4426369dd9e340a906c775ed40f607e6",
+  "name": "Crucible Industries Storm Carbine SC-4 'Downpour'",
+  "type": "weapon",
+  "aliases": [
+    "Downpour",
+    "SC-4",
+    "Storm Gun"
+  ],
+  "category": "assault_rifle",
+  "description": "The SC-4 Downpour is Crucible Industries' entry into the high-rate-of-fire carbine market, designed for shipboard security and close-quarters facility defense. Chambered in 4.6mm high-velocity caseless, the Storm Carbine fires at a blistering 1,100 rpm from a 50-round drum magazine. The small caliber and frangible ammunition are engineered to defeat soft body armor while fragmenting against bulkheads and hull plating, minimizing the risk of catastrophic breaches in pressurized environments.\n\nThe SC-4's recoil management system uses a counterweight bolt carrier that moves in opposition to the bolt, canceling felt recoil to a degree that allows controllable automatic fire from an unsupported standing position. BCI integration is optional — the weapon functions identically with or without a smart-link, though neural fire-control improves hit probability by approximately 15% at full auto.\n\nCrucible partnered with several orbital station operators and maritime security firms to develop the Downpour, and it shows in every design decision. Short overall length. Frangible-optimized barrel twist. Hull-safe ammunition. This is a weapon designed for fighting inside things you don't want to destroy.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — licensed security",
+  "base_technologies": [
+    "Counterweight recoil cancellation",
+    "Frangible ammunition optimization",
+    "Hull-safe terminal ballistics"
+  ],
+  "specifications": "caliber: 4.6mm HV caseless frangible\neffective_range: 200m\nrate_of_fire: 1,100 rpm (cyclic)\nmagazine_capacity: 50 rounds (drum)\nweight: 2.8 kg",
+  "tactical_use": "The SC-4 dominates close-quarters engagements in confined spaces. Its extreme rate of fire and manageable recoil allow operators to saturate tight corridors and compartments with frangible projectiles that shred soft targets while sparing structural elements. Boarding actions, facility clearing, and shipboard defense are its primary roles. Beyond 200 meters the small frangible rounds lose effectiveness rapidly.",
+  "cultural_context": "The Downpour is a specialist weapon that has found an unexpected civilian following among Tier 3+ sport shooters who appreciate its controllability and the visceral experience of dumping 50 rounds in under three seconds. Crucible has capitalized on this with a civilian semi-auto variant, though the full-auto version remains restricted. In orbital communities, the SC-4 is standard issue for emergency response teams.",
+  "known_users": [
+    "Orbital station security",
+    "Maritime boarding teams",
+    "Facility defense forces",
+    "Crucible corporate security"
+  ],
+  "story_hooks": [
+    "During a station emergency, the security team's SC-4 frangible rounds failed to fragment — someone loaded standard penetrator ammunition into the magazines, and every missed shot risks hull integrity.",
+    "A pirate crew has modified their Downpours to fire armor-piercing rounds, negating the weapon's hull-safe design for use in aggressive boarding actions."
+  ],
+  "ammunition_type": [
+    "4.6mm HV caseless frangible",
+    "4.6mm HV caseless standard"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "CQB",
+    "shipboard",
+    "frangible",
+    "high_rate",
+    "Crucible",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

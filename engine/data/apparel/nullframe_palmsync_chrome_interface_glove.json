@@ -1,0 +1,46 @@
+{
+  "id": "7b1d4e8a23c509f6e0b2d7a4c3f18e52",
+  "name": "Nullframe PalmSync Chrome-Interface Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Precision-engineered to bridge organic hand and chrome forearm augmentation. Constructed from gunmetal-grey adaptive syn-neoprene with embedded conductive threading that maps to standard aug-port contact arrays. The glove terminates in a structured cuff with a magnetic locking ring that aligns flush against most mid-grade chrome forearm housings, creating a seamless visual and tactile join.\n\nFinger segments are articulated with micro-flex panels allowing full dexterity. Available in full-finger and half-finger cuts. The dorsal surface features a subtle embossed circuit-trace pattern in matte black — functional, not decorative: it routes haptic return signals from the chrome to surviving nerve clusters.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "adaptive syn-neoprene",
+    "conductive silver-thread mesh",
+    "micro-flex polymer finger panels",
+    "magnetic locking cuff ring",
+    "haptic relay film"
+  ],
+  "functionality": "Interfaces with standard aug-port arrays on chrome forearms. Haptic relay film transmits tactile feedback from prosthetic fingertips to residual nerve clusters. Magnetic cuff locks to most mid-grade chrome housings. Half-finger variant allows direct digital contact for biometric access points.",
+  "what_it_says": "You've got chrome and you're not hiding it — you're making it work better than the factory default.",
+  "worn_by": [
+    "chrome arm users",
+    "junior corporate specialists",
+    "augmentation technicians",
+    "BCI-integrated office workers",
+    "prosthetic limb wearers seeking tactile feedback"
+  ],
+  "manufacturer": "Nullframe Systems (street-adjacent corp subsidiary)",
+  "price_range": "Φ210–Φ580",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A glove pulled from a drainage canal still has a partial handprint burned into its haptic film — and the chrome it was paired with is missing from its registered owner.",
+    "Nullframe quietly recalled batch 7-C after users reported phantom pain feedback loops; the recall was never publicized and thousands of affected pairs are still in circulation.",
+    "A Tier 3 accountant wearing one of these keeps receiving haptic signals that don't correspond to anything their chrome is touching — someone is spoofing the relay frequency."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "augmentation-interface",
+    "chrome-compatible",
+    "haptic feedback",
+    "tier-3",
+    "tier-4",
+    "aug-compatible",
+    "prosthetic",
+    "conductive"
+  ],
+  "parent_corponation": ""
+}

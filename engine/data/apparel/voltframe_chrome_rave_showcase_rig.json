@@ -1,0 +1,50 @@
+{
+  "id": "7d1e5f3a92c0b4876e2d1f8a3c5b9e07",
+  "name": "Voltframe Chrome-Rave Showcase Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A Tier 2 circuit-club staple built specifically to make augmented limbs the centerpiece of the look. The base is a sleeveless compression bodysuit in gunmetal grey with open-lattice panels at the shoulders, hips, and ribs — structural voids that frame chrome arm augmentations like sculpture. The fabric is reactive synthweave that picks up bass frequencies and ripples with slow amber and white pulses, the shimmer crawling up the torso toward the exposed chrome. Pants are wide-leg synth-leather in matte black with a single neon-orange stripe running from hip to ankle on the outer seam — the stripe is embedded with vibration-reactive thread that strobes during heavy beats. Footwear is chunky mag-sole boots with brushed steel toe caps, laces replaced with magnetic snap-clasps. A cropped open jacket in mesh-backed synth-leather sits over everything, left open to show the bodysuit beneath — the back panel carries a stenciled street tag in reflective ink. Neural port covers on the neck are swapped out for decorative chrome inserts shaped like radiating fins, catching club light with every head turn. Designed for someone whose chrome arms are the whole outfit.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "gunmetal reactive synthweave",
+    "open-lattice compression fabric",
+    "matte synth-leather",
+    "vibration-reactive neon thread",
+    "mesh-backed synth-leather",
+    "reflective stencil ink",
+    "decorative chrome port covers",
+    "mag-sole rubber compound"
+  ],
+  "functionality": "Open-lattice shoulder and hip panels provide full range of motion for chrome augmented limbs with no fabric restriction. Reactive synthweave responds to sound frequencies without any power source — purely mechanical vibration response. Mag-sole boots provide stability on wet or grease-slicked club floors common in Circuit-tier venues.",
+  "what_it_says": "Factory worker, transit op, or line tech who spent three months of discretionary income on one perfect night-out rig. The chrome arms aren't hidden — they're the whole presentation. This outfit says: I work with my body and my augments, and I'm not ashamed of either. The street tag on the back says which crew you run with after hours.",
+  "worn_by": [
+    "augmented factory workers on nights off",
+    "transit operators with chrome limb replacements",
+    "Circuit-tier club regulars",
+    "street-level augmentation enthusiasts",
+    "rave-adjacent crew members with visible cyberware"
+  ],
+  "manufacturer": "Voltkraft Street (independent Circuit-tier street label)",
+  "price_range": "Φ280–Φ520",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A wearer's decorative chrome port covers accidentally interface with an experimental sound system at a Circuit club — the bass frequencies begin feeding directly into their neural port, and the experience is either transcendent or dangerous depending on their augment's firmware version.",
+    "The reflective street tag on the jacket back is recognized by a Tier 4 corporate security operative as the mark of a union-organizing cell — suddenly a night out becomes a surveillance situation.",
+    "Two people show up to the same club wearing near-identical Voltframe rigs — except one is the genuine street label and one is a corponation knockoff, and the original wearer intends to make the distinction very clear."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "nightlife_club",
+    "tier 2",
+    "aug_compatible",
+    "chrome_display",
+    "circuit",
+    "reactive_fabric",
+    "street_label",
+    "gender_fluid",
+    "club_wear"
+  ],
+  "parent_corponation": ""
+}

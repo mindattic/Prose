@@ -1,0 +1,46 @@
+{
+  "id": "e0f1a2b3c4d5678901e2f3a4b5c67890",
+  "name": "Arcturus Defense Solutions RCB-5 'Steadfast'",
+  "type": "weapon",
+  "aliases": [
+    "Steadfast",
+    "blue rail",
+    "the Standard"
+  ],
+  "category": "melee",
+  "description": "The RCB-5 'Steadfast' is Arcturus Defense Solutions' workhorse riot control baton — the weapon that appears in more Meridian enforcement photographs, incident reports, and civil rights documentation than any other shock device in the city. First introduced in 2181 and now in its fifth hardware revision, the Steadfast has become the de facto standard for contracted security forces across Tiers 2 through 4, with Arcturus holding supply agreements with forty-seven distinct security contractors, transit authorities, and corporate facility operators. It is, in the most literal sense, the face of institutional enforcement in Meridian.\n\nThe Steadfast's design philosophy prioritizes durability and operator survivability over maximum discharge capacity. The baton's outer shell is a high-impact polymer rated to survive being run over by a standard transit vehicle, submerged in water for up to 30 minutes, and struck against concrete at full force without structural compromise. The discharge system delivers a consistent 150,000 volts — lower than many competitors — but Arcturus's engineering team has optimized the waveform for reliable neuromuscular disruption across a wide range of body masses, augmentation levels, and clothing thicknesses. The grip is contoured for extended one-hand carry and integrates a wrist retention lanyard mount as standard. Every unit logs discharge events with timestamp, duration, and charge level to a tamper-evident internal memory that Arcturus provides to contracted operators as part of their liability documentation package.\n\nCivil rights organizations have a deeply ambivalent relationship with the Steadfast's discharge logging. On one hand, the logs have been used to hold operators accountable in documented abuse cases; on the other, Arcturus retains access to all discharge logs as part of its service agreement, creating a data collection architecture that critics describe as 'a comprehensive map of every enforcement action in Meridian, owned by a private defense contractor.'",
+  "manufacturer": "Iron Point Ammunition",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — standard enforcement tool; available to contracted security operators and licensed private security; discharge log requirement mandatory under Meridian Security Contractor Code 12-F",
+  "base_technologies": [
+    "impact-rated polymer construction",
+    "discharge event logging (tamper-evident)",
+    "optimized neuromuscular disruption waveform",
+    "retention lanyard mount"
+  ],
+  "specifications": "Length: 60 cm\nWeight: 0.88 kg\nDischarge Voltage: 150,000 V\nDischarge Waveform: ADS NMD-5 (neuromuscular optimized)\nBattery Life: 100 strikes per power cell\nPower Cell: ADS ProCell-3 (standard, widely available)\nShell Rating: IP67, impact-rated to 2-ton vehicle crush\nDischarge Log: 2,000-event tamper-evident internal memory\nOperating Temperature: -40°C to +70°C\nGrip: Contoured polymer, lanyard mount integrated\nColor Options: Standard grey, hi-vis yellow (transit variant)",
+  "tactical_use": "The Steadfast is designed for sustained deployment in crowd-control and building-security contexts. Operators are trained in a four-position strike doctrine targeting the thighs, upper arms, torso, and — as a last resort — the head and neck. The baton's length and weight balance make it effective for both jabbing strikes and sweeping motions in tight corridor environments. In extended operations, operators appreciate the battery life and the robust construction, which eliminates the hesitation of using the weapon as a physical impact tool when the charge is depleted. The discharge log is a double-edged operational consideration: operators know their every deployment is recorded, which generally produces restraint but occasionally produces documentation that operators would prefer did not exist.",
+  "cultural_context": "The Steadfast is simply called 'the blue rail' on the Shelf — a reference to the blue indicator light that glows when the baton is charged and ready. It is so ubiquitous that in Tier 1-2 communities, 'rail' has become a generic verb meaning to be struck by any shock baton, regardless of brand. The weapon's universality has made it a symbol of systemic enforcement in activist art and political discourse — it appears on murals, in music, and in protest insignia precisely because everyone knows what it is. Among security professionals, carrying a Steadfast without any personal modification is read as a sign of institutional loyalty or lack of individual initiative; operators who take pride in their work tend to upgrade.",
+  "known_users": [
+    "virtually all Meridian contracted security forces",
+    "Meridian Transit Authority enforcement",
+    "corporate facility security (Tier 2-4)",
+    "Arcturus internal enforcement divisions"
+  ],
+  "story_hooks": [
+    "An analyst at an Arcturus data subsidiary has quietly noticed that the discharge log aggregation system — which maps every baton deployment across the city — shows a pattern: in the six weeks before every major Tier 1 protest or civil unrest event, deployment density in adjacent Tier 2 zones spikes dramatically, as if someone is using the logs to predict and preemptively suppress organizing activity. She has brought this to no one yet."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "melee",
+    "less_lethal",
+    "electric",
+    "riot-control",
+    "enforcement",
+    "standard-issue",
+    "durable",
+    "logged"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

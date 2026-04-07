@@ -1,0 +1,45 @@
+{
+  "id": "7b1c4fa8e35209d6bc7744a0f8e62c31",
+  "name": "Ashwall ForgeWarden Split-Apron & Sleeves Kit",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A heavy split-leg forge apron in charred split-grain synthetic leather — deep brown-black with a surface texture of small overlapping scales pressed into the hide during tanning. The bib reaches mid-chest, secured by adjustable neck and waist straps with quick-release buckles. Matched detachable sleeves run from wrist to upper arm, fastening to a shoulder yoke with industrial snap rings. All edges are double-stitched in heat-resistant aramid thread.\n\nThe apron's interior is lined with a thin ceramic-fiber batting that insulates against radiant heat from forge and plasma-arc work. Burn marks, weld spatter scars, and grease stains are universal on worn units — a clean kit reads as brand new or desk-bought.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "split-grain synthetic leather (scale-pressed)",
+    "ceramic-fiber batting liner",
+    "aramid double-stitch thread",
+    "quick-release polycarbonate buckles",
+    "industrial snap-ring shoulder yoke"
+  ],
+  "functionality": "Rated for radiant heat, weld spatter, and minor plasma arc flash. Split-leg design allows full leg mobility. Detachable sleeves can be added or removed without removing the apron. Quick-release buckles allow emergency doffing in under four seconds.",
+  "what_it_says": "You work hot, you work hands-on, and you've got the scars to prove you know what you're doing.",
+  "worn_by": [
+    "forge floor workers",
+    "plasma-arc welders",
+    "metal fabricators",
+    "blacksmiths and bladesmiths in Shelf craft shops"
+  ],
+  "manufacturer": "Ashwall Industrial Wear",
+  "price_range": "Φ 95–Φ 220",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "An old apron in a secondhand stall has a name stamped into the bib leather — it belongs to a forge worker who died in a plant fire six months ago, officially ruled an accident.",
+    "A batch of ForgeWarden kits was manufactured with ceramic liner batting that's 40% thinner than spec — someone at Ashwall signed off on the substitution.",
+    "A master welder refuses to break in a new apron, insisting her twenty-year-old unit carries luck — someone wants it badly enough to offer three times its value."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "forge",
+    "welding",
+    "heat-resistant",
+    "industrial",
+    "tier2",
+    "tier3",
+    "apron",
+    "workwear"
+  ],
+  "parent_corponation": ""
+}

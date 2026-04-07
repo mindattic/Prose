@@ -1,0 +1,44 @@
+{
+  "id": "e1a4d7f2b3c8905e6f2a1d3c4b7e8f09",
+  "name": "Vanthorpe Meridian Wristband Comm MK-1",
+  "type": "apparel",
+  "category": "accessory",
+  "description": "Slim brushed-titanium cuff, 22mm wide, with a recessed micro-display across the outer face that reads clean biometric data, message queues, and calendar blocks in cool white text. The inner band is soft medical-grade polymer, shaped to seat flush against augmented or unaugmented wrists alike. Available in satin titanium or matte carbon. Understated enough for a board meeting, readable enough for a factory floor supervisor who got promoted.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "brushed titanium shell",
+    "medical-grade polymer inner band",
+    "tempered micro-display glass",
+    "sealed lithium-flex battery cell"
+  ],
+  "functionality": "Biometric monitoring, encrypted message relay, calendar and transit sync, NFC payment chip, 72-hour battery life. BCI-readable with standard neural port handshake. Haptic alert pulse.",
+  "what_it_says": "Competent, connected, and careful about how much they show — this person lives and dies by their schedule.",
+  "worn_by": [
+    "Mid-level managers",
+    "corporate specialists",
+    "small business owners",
+    "junior executives on a budget"
+  ],
+  "manufacturer": "Vanthorpe Systems",
+  "price_range": "Φ320–Φ580",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The MK-1 firmware has a known exploit that lets a nearby device silently mirror its message queue — Vanthorpe issued a patch, but millions of units were never updated.",
+    "A dead Tier 3 auditor is found with her MK-1 wiped clean — but the wipe timestamp is three hours after her estimated time of death.",
+    "Someone is paying Φ2,000 cash for specific MK-1 serial number ranges, no questions asked."
+  ],
+  "tags": [
+    "apparel",
+    "accessory",
+    "wrist-device",
+    "smartwatch",
+    "comm",
+    "tier-3",
+    "tier-4",
+    "vanthorpe",
+    "aug-compatible",
+    "bci-compatible"
+  ],
+  "parent_corponation": ""
+}

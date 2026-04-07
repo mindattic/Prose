@@ -1,0 +1,44 @@
+{
+  "id": "a3f7c2e1b8d04596ae12f3c7d9e05b41",
+  "name": "Ashveil Patchskin Thermal Base Layer",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Hand-stitched from salvaged neoprene strips, scavenged mylar emergency blanket scraps, and repurposed transit-seat foam padding, this Shelf-born thermal underlayer is a monument to desperation engineering. Seams are doubled with whatever thread was available — often mismatched colors, visible and proud. Patchwork panels trap body heat unevenly, creating warm pockets and cold gaps, but it beats bare skin against acid-rain concrete. Smells faintly of industrial solvent no matter how many times it's washed.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "salvaged neoprene strips",
+    "mylar emergency blanket scraps",
+    "transit-seat foam padding",
+    "mismatched recycled thread",
+    "heat-transfer adhesive patches"
+  ],
+  "functionality": "Passive thermal retention through layered salvage materials; no active regulation. Acid-resistant outer surface on select panels from reclaimed chemical-suit fabric. Loose enough to layer over augmentation port housings without snagging.",
+  "what_it_says": "You survive by your own hands and you've stopped being ashamed of it.",
+  "worn_by": [
+    "Shelf residents",
+    "scrap runners",
+    "unhoused augmented individuals",
+    "Shelf children layered up by parents"
+  ],
+  "manufacturer": "Self-made / informal Shelf market stalls",
+  "price_range": "Φ2–Φ8 (barter common)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A specific patch on the left shoulder is cut from a Tier 4 corporate uniform — someone's going to recognize that logo.",
+    "The previous owner stitched a small map into the lining in heat-reactive thread, only visible when the wearer is warm.",
+    "A Shelf community elder is the only one who makes them this way — and she just disappeared."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "thermal",
+    "shelf",
+    "handmade",
+    "salvage",
+    "aug_compatible",
+    "gene_compatible",
+    "tier1"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,44 @@
+{
+  "id": "d2f8e5c07a194b3612345abcdef09876",
+  "name": "Ironpass Reinforced Thermal Work Shirt",
+  "type": "apparel",
+  "category": "top",
+  "description": "A heavy-duty Henley-collar thermal designed for workers in cold-storage logistics, outer-corridor construction, and lake-exposure infrastructure work. The body is a dense waffle-knit synthetic-wool blend that traps body heat aggressively; the shoulders and elbows are reinforced with double-layered ripstop panels bonded at the seam. The three-button Henley placket allows ventilation when lifting. Color options are limited: charcoal, rust, and a muddy olive that workers call 'corridor green.' The cuffs have a thumb loop integrated into the hem.\n\nIronpass is a workwear-only label distributed through supply depots and union hall commissaries across the Tier 2 corridor. It does not advertise. Its reputation is entirely word of mouth and the fact that a well-maintained Ironpass thermal has been known to last seven years in active field use. It does not look glamorous. It feels like being held.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synthetic-wool waffle-knit",
+    "ripstop double-layer shoulder panels",
+    "bonded elbow reinforcement",
+    "thumb-loop cuffs"
+  ],
+  "functionality": "",
+  "what_it_says": "You work for a living and you dress accordingly. No apologies.",
+  "worn_by": [
+    "cold-storage workers",
+    "outer-corridor construction crews",
+    "infrastructure maintenance workers",
+    "dock laborers",
+    "transit workers"
+  ],
+  "manufacturer": "Ironpass",
+  "price_range": "Φ38",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A body is recovered from a collapsed outer-corridor section; the Ironpass thermal survived intact when almost nothing else did, and the union wants to know why the section collapsed at all.",
+    "Ironpass has just lost its supply depot contract to a cheaper Stratum subsidiary — workers are quietly furious and some are talking about more than just switching brands.",
+    "A character finds an Ironpass thermal in a dead relative's belongings, washed and folded, with a union card sewn into the lining."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 2",
+    "workwear",
+    "thermal",
+    "henley",
+    "ironpass",
+    "labor",
+    "construction"
+  ],
+  "parent_corponation": ""
+}

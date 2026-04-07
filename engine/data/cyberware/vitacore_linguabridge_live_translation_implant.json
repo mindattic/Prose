@@ -1,0 +1,57 @@
+{
+  "id": "f4a2c8e6b0d7359148f3e0c2a7b1d965",
+  "name": "VitaCore LinguaBridge Live Translation Implant",
+  "brand_name": "VitaCore",
+  "product_name": "LinguaBridge",
+  "type": "cyberware",
+  "aliases": [
+    "the bridge",
+    "tongueware",
+    "polyglot patch",
+    "the ear",
+    "rosetta"
+  ],
+  "category": "social",
+  "body_location": "bilateral — cochlear-adjacent receiver nodes in both ears, with subvocal transmitter strip at the laryngeal region",
+  "description": "The LinguaBridge is a two-component implant system designed for real-time spoken language translation in both directions. Bilateral micro-receiver nodes seated against the cochlear bone in each ear intercept incoming audio before it reaches natural hearing processing and run it through an onboard translation engine, delivering the translated output as a layered audio signal that the user hears simultaneously with — or, in full-replacement mode, instead of — the original speech. The laryngeal transmitter component optionally routes the user's own speech through a translation layer before subvocal or audible output, allowing the user to speak in their native language and have their words delivered to a recipient's paired device or implant in the target language. The onboard model covers 340 active languages and 180 regional dialect variants, with updates delivered over mesh. Translation latency averages 180 milliseconds — fast enough that in casual conversation, the gap is imperceptible. In complex technical, legal, or idiomatic speech, the system flags uncertain passages with a subtle tonal cue, prompting the user to ask for clarification rather than proceeding on a potentially flawed translation.\n\nMeridian 88 is a city of remarkable linguistic density — the population draws heritage languages and immigrant communities from across the globe, and while Standard Meridian Creole is the dominant civic language, daily life involves a constant negotiation of Tagalog, Igbo, Portuguese, Mandarin, Arabic, Polish, Yoruba, Hindi, and dozens of others in markets, homes, and workplaces. The LinguaBridge does not replace learning a language — users consistently report that they still pick up vocabulary and phrases naturally over time — but it removes the wall of incomprehension that prevents connection in the first place. For first-generation immigrants, for community health workers, for teachers working with multilingual classrooms, and for the enormous population of Meridian 88 residents who simply want to talk to their neighbors, it is one of the most quietly transformative pieces of social technology in common use. The VitaCore version is specifically positioned as the affordable accessible option, with a street price that puts it within reach of Tier 1 users.",
+  "manufacturer": "VITACORE HEALTH AND WELLNESS SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic or pharmacy implant kiosk; local anesthetic; 50-minute procedure for both components; 7-day audio calibration period",
+  "rejection_risk": "Minimal",
+  "maintenance": "Language model updates delivered over mesh automatically; cochlear node check annually; laryngeal strip replacement every 6-7 years; no battery — passive bioelectric draw supplemented by jaw movement harvesting",
+  "specifications": "{\"active_languages\": 340, \"dialect_variants\": 180, \"translation_latency\": \"180ms average\", \"audio_modes\": [\"simultaneous overlay\", \"full replacement\", \"subtitles-only via peripheral AR\"], \"bidirectional\": true, \"uncertainty_flagging\": \"tonal cue on low-confidence passages\", \"onboard_model_update\": \"automatic over mesh\", \"cochlear_node_size\": \"4mm diameter bilateral\", \"laryngeal_strip\": \"flexible, 3cm x 0.5cm\", \"power_source\": \"bioelectric passive draw plus jaw piezoelectric harvest\"}",
+  "side_effects": [
+    "During the calibration week, incoming speech in the user's native language may sound slightly doubled or phased as the system establishes processing hierarchy",
+    "Some users report a mild dissociation from spoken language — voices in unfamiliar languages begin to feel familiar in tone before the words carry meaning, which a minority find unsettling",
+    "Occasional tonal cue fatigue — users in very high-idiom or technical conversation environments find the uncertainty flags frequent and learn to adjust confidence thresholds in settings",
+    "Rare: transient tinnitus-like sensation during large mesh-delivered language model updates, typically lasting under an hour"
+  ],
+  "cultural_context": "The LinguaBridge is, in the context of Meridian 88's linguistic landscape, almost a civic infrastructure product. VitaCore's deliberate pricing strategy — keeping the base model within Tier 1 reach — was not accidental; the company has publicly positioned the LinguaBridge as part of its social health mission, arguing that communication access is a health equity issue. In practice, the implant has become one of the primary ways that Meridian 88's extraordinary linguistic diversity navigates daily life without collapsing into parallel solitudes. There is a persistent debate in language preservation communities about whether ubiquitous translation technology reduces the social pressure to learn heritage languages — some argue it is a lifeline that lets communities maintain home languages without economic penalty, others argue it removes the incentive for heritage language transmission to the next generation. Both arguments appear in every community meeting that touches on the subject, and neither has won. Among users, the most commonly reported emotional response to the first week of use is not utility — it is something closer to grief at how much had been missed before.",
+  "known_users": [
+    "First- and second-generation immigrants navigating multilingual daily life",
+    "Community health workers, social workers, and clinic staff",
+    "Teachers in multilingual classrooms",
+    "Market workers, transit staff, and service industry employees in linguistically diverse zones",
+    "Journalists, diplomats, and civic workers",
+    "Anyone in Tier 1 or 2 living in a neighborhood where their native language is not dominant"
+  ],
+  "story_hooks": [
+    "A player character's LinguaBridge picks up a conversation in a language so obscure it isn't in the 340-language database — the system flags it as unrecognized, but the cadence and a handful of loan words suggest it may be a deliberately constructed cipher language used by a specific organization.",
+    "A community in Tier 1 is receiving LinguaBridge units through a charitable distribution program — but someone has seeded the mesh update for those units with a modified language model that subtly mistranslates specific legal and civic terms, making recipients less able to navigate administrative processes.",
+    "Two parties in a negotiation are both running LinguaBridges — and an enterprising third party has intercepted the translation relay channel, meaning every word spoken in the room is being heard, in translation, by someone who was never invited."
+  ],
+  "street_price": "Φ160–Φ310 for base model; Φ380–Φ520 for full bidirectional with dialect pack",
+  "licensed_price": "Φ620 at VitaCore clinics and pharmacy kiosks; Φ780 with premium dialect and technical vocabulary packages",
+  "tags": [
+    "cyberware",
+    "social",
+    "lifestyle",
+    "translation",
+    "language",
+    "accessibility",
+    "civic",
+    "tier1-3"
+  ],
+  "parent_corponation": ""
+}

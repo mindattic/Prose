@@ -1,0 +1,64 @@
+{
+  "id": "0a62cff8f5c9be3185bff10e6d6d7e7a",
+  "name": "Obed Takahashi-Fofana",
+  "type": "character",
+  "aliases": [
+    "The Mole",
+    "Deepwalker"
+  ],
+  "role": "Private Investigator",
+  "description": "Obed Takahashi-Fofana is the only private investigator in Meridian 88 who specializes in the Underbelly — the vast, unmapped network of tunnels, maintenance corridors, abandoned infrastructure, and forgotten spaces that exists beneath the city's surface. When someone disappears below ground, he is the person you call, because no one else will go down there.\n\nJapanese-Malian heritage, fifty-two years old, compact and wiry with the build of someone who spends his life crawling through spaces that weren't designed for human habitation. His skin is dark and his eyes have been surgically modified for low-light conditions, giving them a faintly reflective quality like an animal caught in headlights. He has lived partially underground for over twenty years and knows the tunnel system better than any living person — a knowledge he maintains exclusively in his own memory because digitizing it would endanger the communities that depend on the tunnels' obscurity.\n\nThe surface world considers him eccentric at best and disturbing at worst. His clients are typically people who have exhausted every other option — families whose members have fled underground, corporate entities looking for employees who went to ground (literally), and occasionally CorpSec units who need someone retrieved from a place their agents are afraid to go. He charges high fees because the work is dangerous and unique, but he has been known to waive his fee entirely for cases involving children or people fleeing genuine danger.",
+  "affiliation": "Independent — the tunnels don't recognize organizational affiliations",
+  "tier": "Tier 1",
+  "location": "A chamber in the Underbelly accessed through a maintenance hatch behind a condemned building in Ashfield — decorated with salvaged objects arranged with surprising artistry",
+  "specialization": "Locating people who have disappeared into Meridian 88's sub-surface infrastructure",
+  "methods": [
+    "Personally navigating the Underbelly tunnel network, which he has memorized over twenty years",
+    "Maintaining relationships with tunnel-dwelling communities most surface dwellers don't know exist",
+    "Reading physical signs of passage — scuff marks, discarded items, body heat residue on tunnel walls",
+    "Understanding the social hierarchies and territorial boundaries of the underground populations",
+    "Using echolocation implants to navigate in total darkness"
+  ],
+  "notable_cases": [
+    "Found a corporate researcher who had fled underground with proprietary data after being targeted for elimination — kept her alive in the tunnels for three months until extraction could be arranged",
+    "Located and mapped an entire community of 400 people living in a forgotten maintenance complex beneath Geartown — nobody on the surface knew they existed",
+    "Tracked a serial killer who was using the tunnel system to move between victims — the only investigator willing to pursue them underground"
+  ],
+  "equipment": [
+    "Echolocation implants behind each ear — allows navigation in total darkness with sonar-like perception",
+    "Luminescent tattoos that can be activated or suppressed — serves as a portable light source",
+    "Water purification implant in his digestive system — can drink from tunnel sources safely",
+    "Climbing gear integrated into forearm-mounted grapple system",
+    "A hand-drawn map of the Underbelly that is the most complete record in existence — he will never digitize it"
+  ],
+  "personality": "Obed is quiet in the way that deep water is quiet — not empty, just absorbing everything without reflecting it back. He is more comfortable underground than on the surface and has developed the mannerisms of someone who lives in a world without light: he touches things instead of looking at them, tilts his head to listen in ways that surface people find unsettling, and speaks in a near-whisper because volume carries dangerously in tunnels. He has a deep compassion for people living underground — the displaced, the hunted, the lost — and will refuse cases where the client's intent is to harm the subject. He smells like stone and recycled air and old water, and he doesn't apologize for it.",
+  "relationships": [
+    {
+      "name": "Mother Chen",
+      "type": "community leader",
+      "description": "Elder of the largest Underbelly settlement beneath the Narrows — Obed's most important relationship underground, based on mutual respect and a decade of trust"
+    },
+    {
+      "name": "Haruki Lindgren-Boadu",
+      "type": "surface contact",
+      "description": "A bar owner in Ashfield who takes messages for Obed and provides his only reliable link to surface-world clients"
+    }
+  ],
+  "story_hooks": [
+    "Mother Chen asks Obed to find someone who has been abducting tunnel-dwellers — the disappearances are happening in areas of the Underbelly that even Obed hasn't mapped",
+    "A corporate client hires Obed to find a fugitive, but underground he discovers the fugitive is protecting something that would change the power balance on the surface",
+    "Obed's hand-drawn map is stolen from his chamber — whoever has it now has the power to expose or destroy every underground community in Meridian 88"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "underbelly",
+    "tunnels",
+    "tier_1",
+    "underworld_navigator"
+  ],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": []
+}

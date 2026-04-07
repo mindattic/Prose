@@ -1,0 +1,39 @@
+{
+  "id": "7b2d9e4a1c6f038b5e7d2a4c9f1b3e80",
+  "name": "Halcyon Variform Lace Boot",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A clean, utilitarian ankle boot with a modular toe box that expands or contracts via a small dial recessed into the heel. Designed for augmented feet with variable geometry — servos, hydraulic toes, or swappable foot attachments — the Variform can accommodate foot widths from narrow standard to nearly twice that. The upper is a durable waxed canvas in olive or charcoal, with minimal branding.\n\nThe Tier 3 crowd appreciates that it doesn't scream 'prosthetic accommodation' — it just looks like a well-made boot. Worn by office workers, mid-level techs, and anyone who doesn't want their augmentation to define their wardrobe.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "waxed canvas",
+    "thermoplastic toe box",
+    "leather lining",
+    "crepe rubber outsole"
+  ],
+  "functionality": "Dial-adjust toe box expands/contracts to fit variable-geometry augmented feet. Accommodates most standard prosthetic foot attachments.",
+  "what_it_says": "Understated, practical, and quietly well-considered. You've done your research.",
+  "worn_by": [
+    "mid-level corporate technicians",
+    "augmented professionals who prefer discretion",
+    "Tier 3 daily commuters with prosthetic feet"
+  ],
+  "manufacturer": "Halcyon Works",
+  "price_range": "Φ95 - Φ115",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The dial mechanism is precise enough to detect micro-changes in a prosthetic's geometry — a worn pair could tell you someone has recently swapped or damaged their foot attachment.",
+    "A specific batch of Variform boots was recalled after the dial mechanism was found to interfere with certain military-grade prosthetic calibration systems."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "aug-compatible",
+    "boot",
+    "variable-geometry",
+    "professional"
+  ],
+  "parent_corponation": ""
+}

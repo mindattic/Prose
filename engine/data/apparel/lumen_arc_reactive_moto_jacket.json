@@ -1,0 +1,44 @@
+{
+  "id": "36bc2596080a1b374591c260710a1b37",
+  "name": "Lumen Arc Reactive Moto Jacket",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A motorcycle jacket that glows — or rather, one that can. The Lumen Arc is built on a standard moto chassis: pre-curved arms, asymmetric front zip, snap-down collar, CE-rated impact protection at shoulders and elbows. The exterior is a matte black synth-leather with embedded electroluminescent thread woven in circuit-like patterns across the shoulders, sleeves, and back panel. At rest, the patterns are subtle — slightly raised lines you'd mistake for decorative stitching. Activated, they pulse in cool white or amber, drawing the eye from fifty meters.\n\nLumen Arc is a Tier 2 to 3 street brand that started as a custom shop for courier cyclists and expanded when their light-up designs went viral in underground racing circles. The jacket is popular with night-shift couriers for visibility, with club-goers for aesthetics, and with anyone who thinks looking dangerous and being seen are not mutually exclusive goals.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-leather shell",
+    "electroluminescent thread",
+    "CE-rated impact foam inserts",
+    "mesh interior lining"
+  ],
+  "functionality": "Embedded electroluminescent thread activated by pressure toggle at inner cuff. Visible from 50+ meters. Draws on small integrated battery lasting approximately 8 hours per charge.",
+  "what_it_says": "You move fast at night and you want people to know you're coming.",
+  "worn_by": [
+    "night couriers",
+    "underground racers",
+    "club-goers",
+    "street-fashion enthusiasts",
+    "Tier 2 risk-takers"
+  ],
+  "manufacturer": "Lumen Arc",
+  "price_range": "Φ115",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Lumen Arc jacket's light pattern was caught on surveillance footage during a high-profile theft — the pattern is distinctive enough to identify the jacket's specific production batch.",
+    "The electroluminescent thread in a recent production run is responding to an external signal source, causing jackets to activate without user input near a specific city block.",
+    "An underground courier race requires all participants to wear Lumen Arc jackets — someone has sabotaged one jacket's battery to overheat under sustained use."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 2",
+    "moto",
+    "electroluminescent",
+    "night visibility",
+    "street brand",
+    "tech-enhanced",
+    "courier"
+  ],
+  "parent_corponation": ""
+}

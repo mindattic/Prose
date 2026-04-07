@@ -1,0 +1,33 @@
+{
+  "id": "93c924126dd6363a7581f668f040cec5",
+  "name": "Power Hunger",
+  "type": "archetype",
+  "category": "desire",
+  "description": "Wants enough power that they never have to be afraid again",
+  "behavioral_signature": "Accumulates authority as a hedge against vulnerability",
+  "under_stress": "Grabs for power desperately, making enemies in the process",
+  "at_rest": "Strategic, patient, always building toward more influence",
+  "will_always": [
+    "accumulate leverage and authority"
+  ],
+  "will_never": [
+    "feel they have enough power"
+  ],
+  "unless": [
+    "power begins to cost them the people they actually care about"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Power Addict",
+      "threshold": 0.85,
+      "context": "desire for authority"
+    }
+  ],
+  "opposite_of": [
+    "Abdicator"
+  ],
+  "tags": [
+    "ambitious",
+    "calculating"
+  ]
+}

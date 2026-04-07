@@ -1,0 +1,44 @@
+{
+  "id": "2c4e6a8b0d1f3579ace02468bdf13579",
+  "name": "Irongate Security Vest",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A tactical vest in high-visibility yellow-green with SECURITY printed in large block letters across the back in retroreflective ink. Multiple exterior pockets with hook-and-loop and zipper closures — large enough for a baton, restraints, or a compact medkit. The front closes with a heavy-duty zipper and a snap-button placket. The back panel has a drag handle stitched into the collar. No armor, no electronics — just a well-organized piece of gear that announces your role and holds your equipment.\n\nIrongate supplies roughly 40% of the private security firms operating in Tiers 2 and 3 of Meridian 88. This vest is so common it has become almost invisible — which creates its own particular problems for the people who depend on being recognized as security.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "600D polyester",
+    "retroreflective strip",
+    "nylon webbing",
+    "YKK hardware"
+  ],
+  "functionality": "",
+  "what_it_says": "You're working a job that requires you to be seen. Whether that job is legitimate is a separate question.",
+  "worn_by": [
+    "private security guards",
+    "event staff",
+    "building access personnel",
+    "transit security",
+    "opportunists who bought one at surplus"
+  ],
+  "manufacturer": "Irongate Security Outfitters",
+  "price_range": "Φ42",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "Irongate vests are available at three different surplus markets on the Shelf — someone is stealing them in bulk and the company hasn't reported the thefts",
+    "A string of Tier 3 commercial burglaries all involved someone wearing an Irongate vest; no one questions security personnel",
+    "The drag handle on a particular vest has been reinforced beyond spec — someone modified it to serve a different purpose"
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 2",
+    "security",
+    "hi-vis",
+    "tactical",
+    "vest",
+    "normal",
+    "workwear"
+  ],
+  "parent_corponation": ""
+}

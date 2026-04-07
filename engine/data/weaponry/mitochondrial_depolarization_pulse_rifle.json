@@ -9,7 +9,7 @@
   ],
   "category": "firearm",
   "description": "The Mitochondrial Depolarization Pulse Rifle operates by projecting a tightly focused beam of modulated electromagnetic radiation tuned to the resonant frequency of cytochrome c oxidase — the terminal enzyme in the mitochondrial electron transport chain. On contact, the beam disrupts proton gradient maintenance across the inner mitochondrial membrane, causing a cascading cellular energy failure in targeted tissue within seconds. The effect is not thermal; cells simply cease producing ATP at the required rate, and motor function collapses from the inside out.\n\nWhat distinguishes the MDPR-2 from comparable disabling weapons is its selectivity and depth of penetration. The beam attenuates predictably through soft tissue but loses minimal energy through non-biological materials, allowing it to affect targets through light cover such as clothing, padding, or standard-grade ballistic weave. Operators describe the effect on unprotected targets as a progressive 'shutdown' — first peripheral muscle groups, then respiratory muscles if exposure is sustained beyond two seconds. Death is possible but requires deliberate extended trigger hold, which gives the weapon plausible deniability as a compliance tool.\n\nArcturis Defense Solutions markets the MDPR-2 as a 'non-lethal escalation platform,' though this classification is widely contested by independent biomedical researchers and three separate municipal oversight bodies. The weapon is heavy, requires a dedicated power cell rated for thirty shots, and produces a faint violet corona at the emitter aperture that experienced operators call 'the bruise.' Field technicians note that partial cyberware integration — particularly subdermal power cells — can create unpredictable secondary ionization in the target's implants.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Iron Point Ammunition",
   "tier_availability": "Tier 4+",
   "legality": "Restricted — licensed to law enforcement and licensed private security contractors only",
   "base_technologies": [
@@ -53,6 +53,8 @@
     "clothing",
     "energy",
     "fire",
-    "tier 4"
-  ]
+    "tier 4",
+    "less_lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

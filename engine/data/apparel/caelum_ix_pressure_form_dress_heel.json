@@ -1,0 +1,44 @@
+{
+  "id": "e4b8f1c0a9d2376b5e4c8f1a0d9b237a",
+  "name": "Caelum IX Pressure-Form Dress Heel",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "Caelum's IX heel uses a micro-pneumatic system in the sole to redistribute pressure across the foot in real time, eliminating the discomfort traditionally associated with high heels. The heel itself is a 9cm stiletto in polished titanium; the upper is heat-molded cultured python skin in deep emerald or midnight blue. Looks like a fashion weapon. Feels like a sneaker.\n\nThe shoe of Spire galas, boardroom power moves, and anyone who needs to stand for six hours without showing it.",
+  "tier_association": "Tier 5",
+  "materials": [
+    "cultured python skin",
+    "titanium heel",
+    "micro-pneumatic sole",
+    "memory-form insole"
+  ],
+  "functionality": "Micro-pneumatic pressure redistribution for comfort during prolonged wear. Optional BCI-linked heel height adjustment (±2cm).",
+  "what_it_says": "You are dressed for power and you are comfortable in it. That combination is rarer than the shoe itself.",
+  "worn_by": [
+    "Spire executives",
+    "Tier 5 socialites",
+    "politicians",
+    "gala attendees",
+    "fashion-forward professionals"
+  ],
+  "manufacturer": "Caelum",
+  "price_range": "Φ1,100 - Φ1,800",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A pair of Caelum IXs was found at a crime scene — the pressure sensors logged a full weight profile and gait pattern of the person who last wore them.",
+    "Caelum's BCI height adjustment feature has a known exploit. Someone used it remotely at a Spire event. The results were embarrassing for a very powerful person."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 5",
+    "luxury",
+    "smart shoe",
+    "heel",
+    "fashion",
+    "Spire",
+    "gala",
+    "BCI-compatible"
+  ],
+  "parent_corponation": ""
+}

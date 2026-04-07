@@ -1,0 +1,34 @@
+{
+  "id": "ddc49b7b1f3fb3a4f17f99b2bd4cabde",
+  "name": "Gatekeeper",
+  "type": "archetype",
+  "category": "social",
+  "description": "Controls access to people, places, or information as a power position",
+  "behavioral_signature": "Always positioned between what you want and how to get it",
+  "under_stress": "Locks everything down and trusts no one with access",
+  "at_rest": "Quietly maintaining their position of control",
+  "will_always": [
+    "decide who gets through and who doesn't"
+  ],
+  "will_never": [
+    "give open access without conditions"
+  ],
+  "unless": [
+    "a higher authority forces their hand"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Sentinel",
+      "threshold": 0.7,
+      "context": "guarding access"
+    }
+  ],
+  "opposite_of": [
+    "Bridge Builder"
+  ],
+  "tags": [
+    "access",
+    "control",
+    "power"
+  ]
+}

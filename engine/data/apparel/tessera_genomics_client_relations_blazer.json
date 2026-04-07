@@ -1,0 +1,34 @@
+{
+  "name": "TESSERA Genomics Client Relations Blazer",
+  "type": "apparel",
+  "category": "uniform",
+  "subcategory": "corporate_office_wear",
+  "manufacturer": "TESSERA Internal Brand Division",
+  "description": "TESSERA's client-facing staff wear this blazer when meeting with prospective geneware clients, insurance liaisons, and regulatory consultants. It is constructed from a proprietary fabric called HELIXWEAVE — a blend of silk-comparable synthfiber and bioluminescent thread that produces a faint, shifting iridescence under standard office lighting. The effect is subtle: not flashy, but unmistakably alive-looking, which is precisely the point. The cut is structured and gender-neutral, available in three colorways — Void Teal, Pale Marrow, and Phenotype Gray — each corresponding loosely to the division the wearer represents (research, sales, and regulatory affairs respectively).\n\nThe blazer is tailored with a high back vent to allow for cosmetic geneware accommodations including small wing buds, decorative dorsal ridges, and TESSERA-brand bioluminescent skin modifications that clients may be wearing as demonstration products. Lapels carry a microscopic TESSERA helix embossed in the weave, invisible to the naked eye but detectable by near-field scanners — a subtle authentication mechanism that also functions as an employee tracking node. Junior staff receive this blazer on a loan basis; senior consultants are permitted to keep theirs upon departure, a perk that carries more symbolic weight than practical value.",
+  "tier_availability": "Tier 3-4",
+  "price": "Φ310",
+  "augment_compatible": true,
+  "geneware_compatible": true,
+  "durability": "medium",
+  "legal_status": "legal",
+  "cultural_context": "The TESSERA blazer is instantly recognizable in Meridian 88's biotech corridors and clinic waiting rooms. It signals access — the person wearing it can get you into TESSERA's service pipeline faster than a standard appointment queue. Former TESSERA client relations staff sometimes keep their blazers and wear them to freelance consulting gigs, trading on the brand recognition. Counterfeits exist but the embedded scanner-readable helix is difficult to replicate cheaply.",
+  "story_hooks": [
+    "A player needs to get inside a TESSERA facility and a legitimate blazer is the lowest-risk entry vector.",
+    "A former TESSERA employee is still wearing their blazer six months after a controversial termination — and people keep treating them as if they still work there.",
+    "The tracking node embedded in a recovered blazer has been pinging a location in the Shelf for three weeks."
+  ],
+  "tags": [
+    "tessera",
+    "biotech",
+    "corporate",
+    "office-wear",
+    "geneware-compatible",
+    "bioluminescent",
+    "client-facing",
+    "uniform",
+    "tier3",
+    "tier4"
+  ],
+  "id": "df3602b716f7419eb176a4869069504e",
+  "parent_corponation": "Tessera Corponation"
+}

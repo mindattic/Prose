@@ -1,0 +1,30 @@
+{
+  "name": "MERIDIAN EMERGENCY BROADCAST AUTHORITY",
+  "type": "entertainment",
+  "category": "broadcast",
+  "subcategory": "emergency information network",
+  "creator": "Meridian Municipal Governance Compact / HelixCorp Infrastructure Division (joint)",
+  "description": "The official emergency broadcast system for Meridian 88, MEBA transmits across all licensed neural feed channels, legacy video, audio, and public holographic displays during declared emergencies — chemical events, Behemoth incursion alerts from the Iowa border, major infrastructure failures, and corponation security lockdowns. Its broadcasts are characterized by a distinctive three-tone chime, a flat synthetic voice designated 'Caretaker,' and instruction sets that critics note are systematically more detailed for Tier 3-5 districts than for the Shelf. MEBA can override all licensed broadcast channels simultaneously.",
+  "year": 2188,
+  "tier_association": "All tiers",
+  "medium": "neural feed override, legacy audio/video, public holographic display, physical siren network",
+  "cultural_impact": "MEBA is the only broadcast system legally authorized to reach every citizen regardless of subscription tier, making it the closest thing Meridian has to a shared civic voice — a fact that makes its differential coverage of Shelf emergencies all the more politically charged.",
+  "controversy": "During the 2216 District 4 chemical fire, MEBA issued evacuation instructions that covered Tier 2-3 blocks but omitted the adjacent Shelf corridor for eleven minutes — a delay later attributed to 'mapping data latency.' Shelf Frequency filled the gap. The incident became a landmark case in ongoing litigation over MEBA's equal-access obligations.",
+  "status": "active",
+  "tags": [
+    "emergency broadcast",
+    "municipal",
+    "HelixCorp",
+    "infrastructure",
+    "all tiers",
+    "Caretaker",
+    "civil alert"
+  ],
+  "story_hooks": [
+    "MEBA issues an emergency alert for a threat that no one — not corporate security, not Shelf scouts, not independent monitors — can verify; either the system has been spoofed or something is happening that the corponations don't want publicly explained.",
+    "Someone has obtained the override credentials for MEBA's Caretaker voice synthesis and is planning to use them — the question is whether their message is a warning or a weapon.",
+    "An archival researcher discovers that MEBA's response logs from a 2201 Shelf disaster were retroactively altered; the original logs suggest a warning was issued, suppressed, and then erased."
+  ],
+  "id": "3d6181ca069f4cfc9e160eea58ac852c",
+  "parent_corponation": ""
+}

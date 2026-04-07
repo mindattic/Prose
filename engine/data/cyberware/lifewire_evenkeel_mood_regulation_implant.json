@@ -1,0 +1,59 @@
+{
+  "id": "3c08b74f9a1e4d57c290f6e8a43d1b92",
+  "name": "LifeWire EvenKeel Mood Regulation Implant",
+  "brand_name": "LifeWire",
+  "product_name": "EvenKeel",
+  "type": "cyberware",
+  "aliases": [
+    "the keel",
+    "flatline (affectionate)",
+    "steady chip",
+    "the even",
+    "mood anchor"
+  ],
+  "category": "cognitive",
+  "body_location": "cranial — limbic system interface, anterior cingulate and amygdala-adjacent mesh",
+  "description": "The EvenKeel is a limbic regulation implant designed to provide continuous, personalized neurochemical stabilization for individuals managing anxiety disorders, major depressive disorder, bipolar spectrum conditions, and related affective dysregulation. The system works through a dense monitoring mesh positioned adjacent to the amygdala and anterior cingulate cortex, tracking real-time limbic activity signatures — heart rate variability, cortisol-correlated neural oscillation patterns, and prefrontal-amygdala coupling ratios — and responding to dysregulation events by delivering micro-targeted neurostimulation and, in the Rx-tier model, controlled release of nanoscale pharmaceutical payloads from an onboard reservoir that refills via a monthly clinic appointment. Crucially, the EvenKeel is not a suppressor: it does not flatten emotional experience or prevent grief, anger, or fear. Its calibration targets a personalized homeostatic baseline established during a two-week learning period after installation, and it intervenes only when the user's neurochemical state departs significantly from that baseline in ways associated with clinical distress rather than proportionate emotional response. Users retain full affective range; the implant simply removes the floor from dropping out beneath them.\n\nThe EvenKeel has become the dominant treatment modality for mood and anxiety disorders in Meridian 88, prescribed at far higher rates than oral pharmaceuticals by 2190 largely because adherence is automatic — there is no pill to forget, no prescription to run out of, no stigma-laden pharmacy counter to stand at. For Tier 1 and Tier 2 residents whose lives carry genuine, structurally generated stress — unstable housing, dangerous work, inadequate nutrition, ambient violence — the EvenKeel does not pretend to solve those problems, but it provides a neurological floor that makes surviving them more possible. Peer support communities built around EvenKeel users are among the most active civic organizations in Shelf districts, and the implant has produced a generational shift in how Meridian 88's working class relates to mental health care: not as a shameful exception but as a normal part of bodily maintenance, like dental care or vision correction.",
+  "manufacturer": "LIFEWIRE CONSUMER SYSTEMS",
+  "tier_availability": "Tier 1-4",
+  "legality": "Licensed",
+  "installation_requirements": "Licensed neural clinician required; 2-hour outpatient procedure followed by a 2-week calibration monitoring period; monthly reservoir refill appointments for Rx-tier model",
+  "rejection_risk": "Low",
+  "maintenance": "Monthly reservoir refill (Rx-tier); annual mesh calibration; firmware updates over-the-air; companion app monitoring continuous",
+  "specifications": "{\"target_regions\": [\"amygdala-adjacent\", \"anterior cingulate cortex\"], \"monitoring_inputs\": [\"HRV\", \"cortisol-correlated oscillation\", \"prefrontal-amygdala coupling\"], \"intervention_types\": [\"neurostimulation\", \"nanoscale pharmaceutical payload (Rx-tier)\"], \"calibration_period\": \"14 days post-installation\", \"reservoir_refill_interval\": \"monthly (Rx-tier)\", \"standard_tier\": \"stimulation-only, no reservoir\", \"companion_app\": \"EvenKeel OS\", \"contraindications\": \"certain cardiac rhythm implant combinations, specific prior neural trauma histories\"}",
+  "side_effects": [
+    "Calibration period (first two weeks) frequently produces a mild sensation users describe as emotional lag — responses to stimuli feel slightly delayed as the system learns the user's baseline",
+    "Some users report that the implant intervenes during intense positive emotional experiences as well as negative ones if the neurochemical signature is sufficiently extreme — moments of euphoria or intense excitement may feel gently muted",
+    "Rare: baseline drift over months if the user's life circumstances change significantly; requires recalibration appointment to reset homeostatic target",
+    "A small number of users report difficulty identifying their own emotional state without the companion app's biofeedback display, having habituated to external verification of internal states"
+  ],
+  "cultural_context": "The EvenKeel has fundamentally normalized mental health care as a somatic rather than psychological intervention in Meridian 88, and opinions on this shift are genuinely divided. In most social contexts, having an EvenKeel is treated with the same matter-of-fact normalcy as having a blood pressure regulator — it is a medical device managing a medical condition, and disclosing it carries no more stigma than mentioning a corrected vision implant. In some Tier 1 communities with strong traditions of emotional stoicism or collective suffering as shared identity, there is residual ambivalence — not shame exactly, but a complicated sense that the implant privatizes a condition that was once communally held and communally survived. LifeWire's marketing leans heavily on language of authenticity and self-ownership ('Your feelings, steadied'), which has been both celebrated by advocates and criticized by philosophers and disability scholars who argue it medicalizes the reasonable emotional responses of people living in structurally unjust conditions.",
+  "known_users": [
+    "Adults managing anxiety, depression, and bipolar spectrum disorders across all tiers",
+    "Tier 1 residents navigating high-stress precarious living conditions",
+    "Emergency service workers, first responders, and trauma-adjacent professionals",
+    "Caregivers managing long-term caregiver burnout",
+    "Young adults in their twenties managing first-onset mood disorders",
+    "Older adults transitioning off long-term oral pharmaceutical regimens"
+  ],
+  "story_hooks": [
+    "A batch of EvenKeel reservoir refill compound has been adulterated at a Shelf-tier clinic — instead of stabilizing limbic activity, the modified payload subtly amplifies fear responses to specific stimuli, and someone is using it to keep a neighborhood too anxious to organize against a pending development project",
+    "A player character's EvenKeel companion app begins logging emotional baseline data that doesn't match their subjective experience — either the implant is malfunctioning, or something external is causing neurochemical shifts the device is compensating for without their awareness",
+    "A grief counselor discovers that several of their EvenKeel clients have stopped processing grief entirely — the implant is correctly managing their clinical distress, but the calibration is also preventing the necessary emotional work of mourning, and one client has been 'fine' for three years without ever actually grieving"
+  ],
+  "street_price": "Φ400–Φ620 (stimulation-only standard model); Rx-tier gray market reservoir refills Φ60–Φ90/month",
+  "licensed_price": "Φ950 installation at LifeWire licensed clinics; Rx-tier reservoir refill Φ110/month; subsidized under Meridian 88 Mental Health Access Program for qualifying Tier 1-2 recipients",
+  "tags": [
+    "cyberware",
+    "cognitive",
+    "lifestyle",
+    "mood",
+    "mental-health",
+    "medical",
+    "licensed",
+    "limbic",
+    "anxiety",
+    "depression"
+  ],
+  "parent_corponation": ""
+}

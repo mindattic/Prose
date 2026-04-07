@@ -10,7 +10,7 @@
   ],
   "category": "energy",
   "description": "A shoulder-mounted directed thermal weapon that projects a focused infrared beam capable of raising surface temperatures to 1,800°C within a two-second exposure window. The TL-9 was designed for breaching reinforced structures and disabling armored vehicles, but its effectiveness against personnel has made it a feared anti-infantry weapon in corporate conflict zones. The beam is invisible to the naked eye — targets only know they have been hit when their equipment begins to glow.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Iron Point Ammunition",
   "tier_availability": "Tier 4+",
   "legality": "Military restricted — active deployment authorization required",
   "base_technologies": [
@@ -34,10 +34,10 @@
     "ai",
     "corporate",
     "power",
-    "rain",
     "vehicle",
-    "train",
     "armor",
-    "tier 4"
-  ]
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

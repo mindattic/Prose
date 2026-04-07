@@ -1,0 +1,46 @@
+{
+  "id": "b8e4d1f2a37c5960e2b3c4d5f6a70829",
+  "name": "Lazarus Street RipDoc Full Surgical Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Ash-white poly-sealed surgical coat, hem cut asymmetrically to clear digitigrade legs or tail mods, over a moisture-wicking antimicrobial underlayer in pale green. Reinforced cuffs seal tight against chrome wrists; the back panel unzips into a sterile drape. Cargo trousers with instrument loops and an integrated knee pad — for crouching over a patient on a Shelf floor. Scuffed mag-closure boots with fluid-barrier soles.\n\nA battered AR visor mounted on a worn headband serves as surgical display. Nitrile-analog gloves are permanently clipped to the left breast pocket. Nothing matches. Everything works.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "poly-sealed antimicrobial coat fabric",
+    "moisture-wicking antimicrobial underlayer",
+    "fluid-barrier boot sole polymer",
+    "nitrile-analog surgical glove composite",
+    "recycled ripstop cargo trouser material"
+  ],
+  "functionality": "Fluid-barrier coat and boots, sterile drape back panel, chrome-wrist sealed cuffs, AR surgical visor mount, instrument cargo loops, tail/digitigrade hem clearance, and antimicrobial underlayer for infection control in non-sterile environments.",
+  "what_it_says": "You fix people that the licensed clinics turned away, and you haven't lost one yet — at least not to your mistakes.",
+  "worn_by": [
+    "street ripperdocs",
+    "unlicensed augmentation surgeons",
+    "Shelf clinic medics",
+    "black-market gene therapy practitioners"
+  ],
+  "manufacturer": "Evergreen Wellness",
+  "price_range": "Φ 180 – Φ 550",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "The coat's serial number traces back to a Pellucid BioSeal licensed surgical set — reported stolen from a Tier 4 gene clinic three years ago.",
+    "A ripperdoc in this kit is the only person in the Shelf who knows how to remove a specific brand of corporate tracker implant.",
+    "The AR visor still has the previous owner's patient files cached — including someone very powerful who needed very quiet surgery."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "medical",
+    "ripperdoc",
+    "street_clinic",
+    "aug_compatible",
+    "gene_compatible",
+    "tier1",
+    "tier2",
+    "full_kit",
+    "gap_outfit"
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
+}

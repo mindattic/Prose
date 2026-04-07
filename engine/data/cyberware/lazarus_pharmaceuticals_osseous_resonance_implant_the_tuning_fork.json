@@ -13,7 +13,7 @@
   "category": "augmentation",
   "body_location": "",
   "description": "The Tuning Fork is a dual-purpose skeletal augmentation system that embeds a network of piezoelectric resonance nodes within the major load-bearing bones of the body — femurs, tibias, humeri, and along the thoracic vertebrae — paired with a signal processing unit seated against the inner surface of the sternum. The system was developed by Lazarus Pharmaceuticals' augmentation division as an osteoporosis intervention, using low-frequency resonance stimulation to accelerate bone remodeling and increase structural density over time. In standard medical use, long-term Tuning Fork patients develop skeletal density approximately 60-80% above baseline, a structural reinforcement that significantly reduces fracture risk and increases impact tolerance. The bones of a long-term user feel, to external pressure and to scanning equipment, distinctly different — denser, slightly warmer, and with a faint structural resonance that gives the product its name.\n\nThe tactical implications of significantly denser bone structure are not subtle: users absorb impact forces that would shatter standard skeletal architecture, can deliver strikes with reduced personal injury risk, and are substantially more survivable in falls, vehicle impacts, and blast events. Lazarus markets this as a secondary benefit of an approved medical device, a framing that keeps the Tuning Fork in the 'Licensed' rather than 'Restricted' category despite its obvious combat applications. The more unexpected capability of the system is the secondary use that operators have developed: the resonance nodes, when driven at specific frequencies outside the bone-stimulation range, function as a short-range vibration sensing system, allowing the user to feel structural resonance in objects and surfaces they are in contact with — a crude but functional form of material analysis and structural sensing conducted through touch.\n\nThis secondary sensing application was not in Lazarus's design documentation. It emerged from field use when operators began noticing that Tuning Fork users could detect hollow spaces behind walls, identify locked mechanism types by feel, and sense approaching footsteps through floor contact before they were audible. Lazarus has since quietly incorporated this capability into updated models while continuing to market the product exclusively as a bone-density intervention. The sensing range is short — contact or near-contact only — but the precision is remarkable. Users describe it as 'hearing with your hands,' a comparison the implant's nickname encourages.",
-  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "manufacturer": "Lazarus Franchise Licensing",
   "tier_availability": "Tier 1+",
   "legality": "Licensed",
   "installation_requirements": "",
@@ -56,5 +56,6 @@
     "vehicle",
     "energy",
     "tier 1"
-  ]
+  ],
+  "parent_corponation": "Lazarus Pharmaceuticals"
 }

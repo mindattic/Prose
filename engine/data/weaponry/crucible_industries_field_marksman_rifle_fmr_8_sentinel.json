@@ -1,0 +1,49 @@
+{
+  "id": "847be5eed22e6a21e2ab21b02e814ffe",
+  "name": "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
+  "type": "weapon",
+  "aliases": [
+    "Sentinel",
+    "FMR-8",
+    "The Watch"
+  ],
+  "category": "dmr",
+  "description": "The FMR-8 Sentinel is Crucible Industries' answer to precision rifles that cost more than a house. At Φ4,500, the Sentinel provides 1-MOA accuracy at 800 meters using conventional optics and mechanical precision rather than BCI-dependent electronics. The rifle chambers 7.62mm caseless through a cold-hammer-forged barrel with a traditional free-floating handguard and adjustable bipod.\n\nThe Sentinel's design philosophy is deliberate simplicity. The scope is a high-quality conventional optic with illuminated reticle — no BCI link, no electronic rangefinding, no ballistic computer. The marksman estimates wind, calculates range, and dials their scope using skills rather than software. This makes the FMR-8 immune to electronic warfare, EMP, and BCI disruption while demanding a higher level of fundamental marksmanship from its operator.\n\nCrucible markets the Sentinel to frontier defense forces, independent militia marksmen, and operators who distrust electronic precision aids. The weapon rewards training and experience over technology budget, creating a level of mastery that cannot be purchased. In a market dominated by smart-scoped wonder weapons, the Sentinel is a reminder that the fundamentals of marksmanship haven't changed — technology has simply made them optional for those who can afford it.",
+  "manufacturer": "BioInk 3D Printing",
+  "tier_availability": "Tier 2+",
+  "legality": "Available — standard licensing",
+  "base_technologies": [
+    "Cold-hammer-forged barrel",
+    "Conventional precision optics",
+    "Zero-electronics design",
+    "Free-floating barrel system"
+  ],
+  "specifications": "caliber: 7.62mm caseless\neffective_range: 800m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 20 rounds\nweight: 4.7 kg",
+  "tactical_use": "The Sentinel provides reliable precision fire independent of electronic infrastructure. In EMP-contested environments, after BCI disruption, or in remote areas without network coverage, the FMR-8 continues to deliver accurate fire based solely on the marksman's skill. The weapon's 7.62mm round provides adequate terminal performance against personnel and light cover at all engagement distances. The lack of electronics means the only maintenance required is mechanical — no firmware updates, no calibration cycles, no charging.",
+  "cultural_context": "The Sentinel has become a symbol of traditional marksmanship in an age of electronic assistance. Marksmen who carry the FMR-8 take pride in skills that smart-scope operators never need to develop — range estimation, wind reading, hold-off calculation. This community views BCI-integrated precision rifles with something between disdain and pity, arguing that the operator's skill should be the limiting factor, not their equipment budget.",
+  "known_users": [
+    "Frontier designated marksmen",
+    "Independent militia precision shooters",
+    "Traditional marksmanship purists"
+  ],
+  "story_hooks": [
+    "A Sentinel marksman outperformed a Carthage operator in an engagement after an EMP disabled the Carthage's electronics. The Sentinel's analog optics were unaffected, and the skilled marksman dominated the field while their technologically superior opponent struggled with dead equipment.",
+    "A marksman training school uses Sentinels exclusively, arguing that learning on analog weapons builds fundamentals that transfer to any platform. Their graduates are recruited by every major security firm."
+  ],
+  "ammunition_type": [
+    "7.62mm caseless match",
+    "7.62mm caseless standard"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "analog",
+    "traditional",
+    "precision",
+    "frontier",
+    "Crucible",
+    "tier 2",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

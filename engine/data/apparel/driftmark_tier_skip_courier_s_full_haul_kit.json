@@ -1,0 +1,48 @@
+{
+  "id": "a3f7c2e891bd054e6a1f3d7b2c9e0485",
+  "name": "Driftmark Tier-Skip Courier's Full Haul Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A deliberately ambiguous head-to-toe kit designed for a courier who moves between all five tiers daily without triggering pattern recognition. The base is a fitted charcoal poly-merino long-sleeve with modular magnetic attachment points along the shoulders and forearms. Over it: a reversible mid-layer — one side matte Circuit-worker grey, the other muted Tier-4 slate with subtle sheen. Slim graphite cargo trousers with concealed ankle gussets for leg chrome or tail accommodation. Clean low-profile black cross-trainers, scuff-resistant. A collapsible satchel compresses to a courier pouch or expands to a full delivery frame. A nondescript ballcap with AR-transparent brim completes the look — forgettable in every tier.",
+  "tier_association": "Tier 2-4",
+  "materials": [
+    "poly-merino blend",
+    "reversible micro-sheen fabric",
+    "graphite stretch-canvas",
+    "scuff-coat synthetic leather",
+    "collapsible frame nylon"
+  ],
+  "functionality": "Reversible mid-layer allows rapid tier-presentation shift; magnetic shoulder mounts accept branded patch sets for delivery company IDs; gusseted ankle seams accommodate leg chrome or geneware; AR-transparent cap brim overlays route data via BCI; satchel frame collapses flat in under four seconds.",
+  "what_it_says": "I belong everywhere and nowhere — don't look too hard.",
+  "worn_by": [
+    "tier-hopping couriers",
+    "fixers running errands in plain sight",
+    "info brokers on low-profile drops",
+    "undercover operatives maintaining cover across multiple zones"
+  ],
+  "manufacturer": "Driftmark Independent Outfitters",
+  "price_range": "Φ 340–Φ 610",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A courier wearing this kit is the only witness to a Tier-5 assassination — and every tier's security system has a different description of what they looked like.",
+    "The reversible mid-layer's Tier-4 side bears a defunct corponation's color — one that was dissolved under suspicious circumstances three weeks ago.",
+    "A Driftmark patch sewn into the satchel lining turns out to be a dead-drop data chip that the courier has been unknowingly carrying for six months."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "courier",
+    "tier-hopping",
+    "reversible",
+    "aug_compatible",
+    "gene_compatible",
+    "neutral",
+    "utility",
+    "street",
+    "underworld",
+    "character_defining",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

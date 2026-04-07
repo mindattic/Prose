@@ -10,7 +10,7 @@
   ],
   "category": "explosive",
   "description": "The EPG-5 is a precision electromagnetic pulse device built around a flux compression generator — a one-shot coil system that converts the energy of a compact explosive charge into a directed electromagnetic burst. Unlike broad-spectrum EMP devices, the Deadstop uses a tunable frequency array to target specific electromagnetic signatures, allowing operators to selectively disable cybernetic implants, vehicle electronics, or communications infrastructure while leaving other systems functional. The tuning dial has five preset modes and one manual override requiring a RINGO CORPONATION technician key.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Halcyon Senior Living",
   "tier_availability": "Military only",
   "legality": "Prohibited",
   "base_technologies": [
@@ -40,16 +40,16 @@
     "weapon",
     "war",
     "secret",
-    "love",
     "augment",
     "neural",
-    "ai",
     "elf",
     "corporate",
     "market",
     "vehicle",
     "armor",
     "drone",
-    "energy"
-  ]
+    "energy",
+    "lethal"
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

@@ -89,6 +89,7 @@ public class WorldbuildingDocument : ICanonEntity
     [JsonPropertyName("body")] public string Body { get; set; } = "";
     [JsonPropertyName("line_count")] public int LineCount { get; set; }
     [JsonPropertyName("headings")] public List<string> Headings { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
 /// <summary>

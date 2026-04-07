@@ -1,0 +1,44 @@
+{
+  "id": "a3f7c2e1b09d4856f1e3a7c0d2b58f94",
+  "name": "Ashgrain DeepVault Tunnel Survival Suit MK-3",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A full-body tunneling and mining suit built for the collapsed infrastructure zones beneath Tier 1. Outer shell is abraded gray-brown vulcanized rubber composite over a rigid polycarb ribcage lattice, visibly patched at knees and shoulders with mismatched salvage panels. Interior is quilted thermal foam with embedded micro-vibration dampeners along the spine and hips.\n\nThe helmet integrates a cracked but functional heads-up overlay and a rebreather rated for methane and particulate. Knee and elbow joints use ratcheting lockouts for crawl-work. Scavenged corponation patches stitch over the original branding.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "vulcanized rubber composite",
+    "salvage polycarb ribbing",
+    "quilted thermal foam",
+    "micro-vibration dampening mesh",
+    "reclaimed neoprene sealing gaskets"
+  ],
+  "functionality": "Crush-resistant ribcage lattice absorbs lateral pressure. Rebreather filters methane, silica dust, and particulate. Knee lockouts stabilize crawl positions. Spine dampeners reduce repetitive impact injury during jackhammer operation. Helmet HUD displays structural stress readouts (when functional).",
+  "what_it_says": "This person works in places where the ceiling can kill you, and they've survived long enough to patch their gear more than once.",
+  "worn_by": [
+    "Shelf tunnel scavengers",
+    "unlicensed ore extractors",
+    "infrastructure salvagers",
+    "sewer network runners"
+  ],
+  "manufacturer": "Ashgrain (street label, Shelf-manufactured)",
+  "price_range": "Φ180 – Φ420 (used/patched)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The suit's original serial number traces to a Tier 3 mining contractor that went under six years ago — the wearer has no idea what that means.",
+    "A specific patch on the left shoulder covers a biohazard symbol; the wearer claims not to know what was underneath it.",
+    "The rebreather is one filter cycle from failure, and replacement cartridges are three days away by trade route."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "mining",
+    "tunneling",
+    "hazard",
+    "shelf",
+    "full-body",
+    "rebreather",
+    "industrial"
+  ],
+  "parent_corponation": ""
+}

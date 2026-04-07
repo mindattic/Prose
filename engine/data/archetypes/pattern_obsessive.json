@@ -1,0 +1,33 @@
+{
+  "id": "62058dd32060289cb0f0b78a164be14c",
+  "name": "Pattern Obsessive",
+  "type": "archetype",
+  "category": "knowledge",
+  "description": "Sees patterns everywhere, including where they don't exist",
+  "behavioral_signature": "Connects dots compulsively, building elaborate models from sparse data",
+  "under_stress": "Sees conspiracies and hidden meaning in random noise",
+  "at_rest": "Finds genuine insights by noticing what others miss",
+  "will_always": [
+    "look for the hidden pattern"
+  ],
+  "will_never": [
+    "accept that something is random"
+  ],
+  "unless": [
+    "they've exhausted every possible explanation"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Conspiracy Thinker",
+      "threshold": 0.8,
+      "context": "compulsive pattern finding"
+    }
+  ],
+  "opposite_of": [
+    "Skeptic"
+  ],
+  "tags": [
+    "obsessive",
+    "perceptive"
+  ]
+}

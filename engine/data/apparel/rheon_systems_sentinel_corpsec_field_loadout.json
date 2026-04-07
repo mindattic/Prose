@@ -1,0 +1,45 @@
+{
+  "id": "a3f7c2e1d09b4856f1a2c3d4e5f60718",
+  "name": "Rheon Systems Sentinel CorpSec Field Loadout",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Matte slate-grey ballistic shell jacket over a graphene-weave tac-vest, paired with articulated cargo trousers in charcoal ripstop. Helmet-ready collar, integrated spinal-rig channel running the full dorsal seam, and chrome-arm cutaway cuffs with magnetic closure. Knee reinforcement panels, mag-lock boot interface tabs at the ankle, and a detachable hood with embedded AR visor mount. Corporate insignia patches are Velcro-swappable — contractors change allegiance fast.\n\nBoots are Harkon Siege derivative: steel-composite toe, oil-resistant sole. A low-profile trauma plate carrier sits under the jacket, invisible at a glance.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "graphene-weave ballistic shell",
+    "ripstop poly-carbon composite",
+    "trauma-rated ceramic plate inserts",
+    "mag-lock boot interface polymer",
+    "reconfigurable Velcro insignia backing"
+  ],
+  "functionality": "Ballistic resistance (Level IIIA equivalent), spinal-rig and chrome-arm compatibility, AR visor mount, detachable hood, mag-lock boot tabs, trauma plate carrier, climate-wicking inner lining, and swappable corponation insignia.",
+  "what_it_says": "You are a paid instrument of force — professional, replaceable, and dangerous enough that most people step aside.",
+  "worn_by": [
+    "CorpSec patrol officers",
+    "private security contractors",
+    "corporate enforcement liaisons",
+    "off-duty military transitioning to private sector"
+  ],
+  "manufacturer": "Rheon Systems",
+  "price_range": "Φ 1,200 – Φ 2,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The insignia patch on this kit has been swapped six times — the last employer's logo is still faintly visible beneath the current one.",
+    "A CorpSec officer wearing this shows up dead in a Tier 2 transit tunnel — the trauma plates were removed before they were killed.",
+    "A player character finds this kit in a locker with a note: 'Don't ask who wore it last.'"
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "corpsec",
+    "military",
+    "tactical",
+    "aug_compatible",
+    "full_kit",
+    "tier3",
+    "tier4",
+    "gap_outfit"
+  ],
+  "parent_corponation": ""
+}

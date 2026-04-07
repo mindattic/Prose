@@ -1,0 +1,50 @@
+{
+  "id": "8187d83dad891228831c724763e890bf",
+  "name": "Tessera TAR-12 'Consensus'",
+  "type": "weapon",
+  "aliases": [
+    "Consensus",
+    "TAR-12",
+    "The Vote"
+  ],
+  "category": "assault_rifle",
+  "description": "Tessera's flagship assault rifle integrates their proprietary distributed targeting AI, which networks multiple TAR-12 units into a cooperative fire-control system. When a squad carries Consensus rifles, each weapon's BCI link shares targeting data, automatically deconflicting fire lanes and prioritizing threats based on collective sensor input. The result is a squad that shoots with the coordination of a single intelligence.\n\nThe TAR-12 fires 5.8mm polymer-tipped rounds from a 35-round box magazine, with a secondary electromagnetic acceleration rail that can be toggled for armor-piercing velocity at the cost of increased power cell drain. The rifle's modular chassis accepts Tessera's ecosystem of smart attachments, from thermal imaging foregrips to predictive recoil compensation stocks.\n\nThe Consensus is expensive — a full squad kit runs upward of Φ80,000 — but organizations that field it report 40% improvement in engagement efficiency. Critics call it a crutch that degrades individual marksmanship. Operators call it winning.",
+  "manufacturer": "Thoughtline Messaging",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — licensed military and premium security",
+  "base_technologies": [
+    "Distributed targeting AI",
+    "BCI squad-link networking",
+    "Electromagnetic acceleration rail",
+    "Modular smart-attachment interface"
+  ],
+  "specifications": "caliber: 5.8mm polymer-tipped\neffective_range: 500m (standard), 650m (EM-accelerated)\nrate_of_fire: 800 rpm (cyclic)\nmagazine_capacity: 35 rounds\nweight: 3.8 kg (base)",
+  "tactical_use": "The TAR-12 transforms squad tactics from individual marksmanship into networked lethality. The distributed AI automatically assigns targets, calls out flanking threats, and coordinates suppressive fire without verbal communication. In urban environments where communication is jammed, the weapon-to-weapon mesh network operates on encrypted short-range protocols that are extremely difficult to intercept.",
+  "cultural_context": "The Consensus represents Tessera's philosophy that technology should amplify collective human capability rather than replace it. Owning one without the squad network is like owning half a weapon — the rifle functions independently, but its true potential requires the full ecosystem. This has created a dependency model that critics liken to corporate lock-in disguised as tactical superiority.",
+  "known_users": [
+    "Tessera Rapid Response Teams",
+    "Elite PMC units",
+    "Tier 4+ corporate security details"
+  ],
+  "story_hooks": [
+    "A hacker has found a way to inject false targeting data into the TAR-12's mesh network, turning a squad's coordinated fire against friendly positions.",
+    "A black-market dealer is selling individual TAR-12s stripped of their networking capability — but the distributed AI still phones home to Tessera."
+  ],
+  "ammunition_type": [
+    "5.8mm polymer-tipped",
+    "5.8mm AP sabot"
+  ],
+  "tags": [
+    "weapon",
+    "assault_rifle",
+    "corporate",
+    "AI",
+    "networked",
+    "BCI",
+    "smart-link",
+    "Tessera",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

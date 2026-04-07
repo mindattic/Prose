@@ -1,0 +1,56 @@
+{
+  "id": "7d2e9b4f1a63c057e8b2d4f9a163c057",
+  "name": "VitaCore SteadyField Precision Motor Implant",
+  "brand_name": "VitaCore",
+  "product_name": "SteadyField",
+  "type": "cyberware",
+  "aliases": [
+    "still hands",
+    "the steady",
+    "glass hands",
+    "flatline fingers",
+    "zeroshake"
+  ],
+  "category": "professional",
+  "body_location": "bilateral forearm — subdermal, wrapping flexor and extensor muscle groups from elbow to wrist",
+  "description": "The SteadyField is a bilateral tremor-suppression and fine-motor stabilization implant consisting of a mesh of piezoelectric microfilaments woven through the forearm's flexor digitorum superficialis, extensor digitorum, and interosseous muscle groups. An onboard inertial measurement unit samples hand and finger position at 500Hz, detecting micro-tremors, fatigue-induced drift, and involuntary movement before they propagate to the fingertips. The system generates counter-phase piezoelectric contractions in opposing muscle groups at sub-perceptual amplitude — the net result is that the hand holds any given position with a stability that exceeds the physiological baseline of a rested, healthy human by a significant margin. The implant does not override voluntary movement; it only damps unintended deviation from the motor command the nervous system has already issued. A wrist-tap gesture sequence allows the user to toggle sensitivity profiles: light suppression for everyday use, full stabilization for precision work, and a learning mode that maps the user's specific task patterns over time to build a personalized motor profile.\n\nThe SteadyField occupies a different niche than its surgical-grade competitor from Lazarus — it is priced and marketed for the broad professional middle, not the operating theater. The primary users are tattoo artists, glassblowers, watchmakers, fine-circuit repair technicians, baristas at high-volume espresso bars where latte art is a performance metric, and ceramicists. Older tradespeople with early essential tremor use it to extend their working careers by a decade or more. Art students in Tier 2 and 3 programs increasingly get it implanted before their final year, treating it as a professional investment the way a previous generation would buy their first quality set of tools. People who have it often describe their work as feeling cleaner and less effortful — the constant micro-corrections that used to exhaust them over a long shift simply stop happening.",
+  "manufacturer": "VITACORE",
+  "tier_availability": "Tier 2-4",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic; local anesthesia; bilateral installation takes approximately 90 minutes; no osseointegration required, 1-week soft-tissue recovery",
+  "rejection_risk": "Minimal",
+  "maintenance": "Biannual motor-profile recalibration at any VitaCore kiosk or certified clinic; firmware updates over wireless; filament mesh rated for 8-year service life",
+  "specifications": "{\"sensor_rate\": \"500Hz IMU sampling\", \"suppression_latency\": \"<4ms\", \"tremor_reduction\": \"up to 94% of involuntary deviation\", \"profiles\": [\"ambient\", \"precision\", \"learning\"], \"activation\": \"wrist-tap gesture sequence\", \"power\": \"biogalvanic self-charging\", \"bilateral\": true, \"filament_material\": \"piezoelectric polymer composite\", \"weight\": \"11g per arm\"}",
+  "side_effects": [
+    "Mild forearm fatigue and warmth during the first week as musculature adapts to the filament mesh",
+    "Occasional sensation of the hands feeling 'too still' in the first month, described by some users as uncanny",
+    "Rare cases of mild paresthesia along the radial nerve during high-intensity precision sessions",
+    "Learning mode can produce subtle phantom correction sensations during sleep in the first calibration period"
+  ],
+  "cultural_context": "In craft and trade communities, the SteadyField has quietly become aspirational — not flashy, but a signal that someone takes their work seriously enough to invest in it. Tattoo artists who have it sometimes advertise the fact subtly; clients interpret it as a mark of professionalism. Among fine artists there is ongoing debate about whether it constitutes a form of augmentation that should be disclosed, particularly in competitive or gallery contexts, though no formal standards body has ruled on it. In Tier 1 communities, the implant is less common simply due to cost, but secondhand units and gray-market installations exist for trades where the return on investment is clear. The Lazarus surgical-grade equivalent carries a different social weight — clinical, medical, institutional — while the SteadyField reads as a craftsperson's tool.",
+  "known_users": [
+    "Tattoo artists and body modification practitioners",
+    "Fine-circuit and microelectronics repair technicians",
+    "Baristas and precision food service workers",
+    "Ceramicists, glassblowers, and studio craftspeople",
+    "Older tradespeople managing age-related tremor",
+    "Art and design students in competitive programs"
+  ],
+  "story_hooks": [
+    "A master glassblower is found dead in her studio, hands still — a piece she was working on completed to impossible perfection. Her SteadyField's motor-profile log contains the last 40 minutes of her movements, and someone very much wants that data deleted before investigators can pull it.",
+    "A tattoo artist notices their SteadyField has been logging their sessions to an unrecognized external address for months — every design, every client, every piece of original art they've produced, quietly exfiltrated by a firmware update they never consented to.",
+    "A Tier 2 watchmaker with a SteadyField is the only person in Meridian 88 with the motor precision to repair a specific antique mechanical device — a device that several very dangerous people want operational."
+  ],
+  "street_price": "Ф620–Ф850",
+  "licensed_price": "Ф1,400–Ф1,900",
+  "tags": [
+    "cyberware",
+    "professional",
+    "lifestyle",
+    "fine-motor",
+    "forearm",
+    "craft",
+    "tremor-suppression"
+  ],
+  "parent_corponation": ""
+}

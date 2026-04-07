@@ -1,0 +1,45 @@
+{
+  "id": "6d1e8b3a0f2c574d9e7a1b4c8d3f60e2",
+  "name": "Solenne Mireweft Spire Evening Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Opera-length gloves in bioluminescent silk-analog, woven with micro-filament threads that pulse faint gold or rose depending on the wearer's BCI mood-state broadcast. The exterior is matte at rest and shimmers to a liquid sheen under gallery lighting. Seams are hand-finished and invisible. Available in obsidian, bone, and deep lacquer crimson.\n\nDesigned for full organic hands but offered in a chrome-cover variant: an inner sleeve of soft chromatic poly-foam shapes to prosthetic hand geometry, masking augmentation entirely behind a flawless glove surface. Wrist closure is a single hidden magnetic clasp.",
+  "tier_association": "Tier 4-5",
+  "materials": [
+    "bioluminescent silk-analog",
+    "mood-reactive micro-filament weave",
+    "chromatic poly-foam inner sleeve",
+    "magnetic clasp hardware"
+  ],
+  "functionality": "BCI mood-state reactive luminescence shifts color passively. Chrome-cover variant conceals prosthetic hands cosmetically. Magnetic wrist clasp allows single-hand fastening. Electrostatic surface treatment resists smudging from handshakes.",
+  "what_it_says": "Wealth here is architectural — every detail chosen to make power look effortless.",
+  "worn_by": [
+    "Spire gala attendees",
+    "corponation executives",
+    "high-society augmented individuals wishing to conceal chrome",
+    "cultural patrons"
+  ],
+  "manufacturer": "Solenne Couture",
+  "price_range": "Φ1,200–Φ4,800",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A stolen pair of chrome-cover gloves contains a micro-transmitter in the poly-foam sleeve — someone has been recording Spire conversations for months.",
+    "The mood-reactive filaments can be hacked via BCI spoof to display false emotional states, useful for negotiators or spies.",
+    "A grieving heir wears her late mother's pair to the board vote — the gloves still pulse the mother's saved mood profile."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "fashion gloves",
+    "gala",
+    "spire",
+    "bioluminescent",
+    "chrome-cover",
+    "aug-compatible",
+    "tier-4",
+    "tier-5",
+    "Solenne"
+  ],
+  "parent_corponation": ""
+}

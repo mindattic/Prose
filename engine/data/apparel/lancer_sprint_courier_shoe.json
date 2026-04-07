@@ -1,0 +1,41 @@
+{
+  "id": "f1a8d63e254c097b3e6f2a9c81b07d45",
+  "name": "Lancer Sprint Courier Shoe",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A low-cut running shoe in signal orange and white, built lean and aggressive-looking. The sole houses a compressed-spring assist mechanism in the heel and forefoot — not powered, but mechanically amplified — that returns 60% more energy per stride than a standard running sole. Couriers in Meridian's mid-tiers wear these to shave minutes off delivery windows across stairwells, skywalks, and crowded transit corridors.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "tensile mesh upper",
+    "spring-cell midsole compound",
+    "carbon fiber torsion plate",
+    "rubber outsole"
+  ],
+  "functionality": "Mechanical spring-assist sole increases stride energy return by approximately 60%. Carbon torsion plate prevents midfoot flex loss on acceleration. No power source required.",
+  "what_it_says": "You're paid by the delivery. Speed is money and these are a tool, not a fashion statement — even if they look sharp.",
+  "worn_by": [
+    "package couriers",
+    "message runners",
+    "freelance delivery contractors",
+    "amateur sprint athletes"
+  ],
+  "manufacturer": "Lancer Athletic",
+  "price_range": "Φ110 - Φ145",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A courier drops dead mid-run — the spring assist was modified to inject something into the foot on compression.",
+    "Someone's been using courier IDs to move packages that never show up in the delivery logs."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "running",
+    "speed-assist",
+    "courier",
+    "athletic",
+    "aug-compatible"
+  ],
+  "parent_corponation": ""
+}

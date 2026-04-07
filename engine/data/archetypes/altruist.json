@@ -1,0 +1,34 @@
+{
+  "id": "11a4d65384a17774fb7606edae79bf86",
+  "name": "Altruist",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Exists to lighten burdens that aren't theirs",
+  "behavioral_signature": "Gives resources, time, and safety to others without expectation",
+  "under_stress": "Sacrifices too much, neglects self until they collapse",
+  "at_rest": "Quietly fills gaps others don't even notice",
+  "will_always": [
+    "put others' needs before their own"
+  ],
+  "will_never": [
+    "keep something someone else needs more"
+  ],
+  "unless": [
+    "helping would clearly destroy them and everyone depending on them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Bleeding Heart",
+      "threshold": 0.8,
+      "context": "selfless giving"
+    }
+  ],
+  "opposite_of": [
+    "Parasite",
+    "Miser"
+  ],
+  "tags": [
+    "selfless",
+    "generous"
+  ]
+}

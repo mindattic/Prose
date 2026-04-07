@@ -1,0 +1,44 @@
+{
+  "id": "4e9a2c7f1d0b6e3a8c5f2d4b7e1a9c0f",
+  "name": "Kettridge Trail Duster",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "Kettridge makes workwear for people who spend time in the physical infrastructure of the city — the maintenance tunnels, the elevated service corridors, the outer ring construction zones. The Trail Duster is a knee-length duster in a heavy waxed canvas that has been finished with a paraffin treatment that beads water reliably for about two seasons before needing re-treatment. The silhouette is long and practical: full snap-front closure, a split back hem for ease of movement on ladders and in crawlspaces, and a collar that buttons high. Colorways are limited to brown, tan, and a dark green that Kettridge calls 'infrastructure.' The coat has become something of a crossover item — originally workwear, now worn by Tier 2 and Tier 3 people who like the silhouette and the durability. There is a specific Tier 3 creative professional who wears it over everything from coveralls to dress shirts without irony.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "waxed canvas",
+    "paraffin waterproof treatment",
+    "cotton lining",
+    "brass snap hardware",
+    "reinforced elbow panels"
+  ],
+  "functionality": "",
+  "what_it_says": "You are comfortable with physical reality. You have probably fixed something with your hands recently. You are not performing utility — you are actually using it.",
+  "worn_by": [
+    "infrastructure maintenance workers",
+    "construction supervisors",
+    "outer ring residents",
+    "Tier 2-3 creatives",
+    "urban explorers"
+  ],
+  "manufacturer": "Kettridge Workwear",
+  "price_range": "Φ110",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A Kettridge Trail Duster in the distinctive dark green 'infrastructure' colorway has been appearing in security footage near a series of unexplained infrastructure access events — the coat's wearer has never been clearly identified",
+    "Kettridge recently lost its contract to supply maintenance workers for a major corponation's facility network — the replacement supplier is significantly cheaper and the quality difference is already showing in worker complaints",
+    "The wax treatment Kettridge uses comes from a single supplier cooperative in the outer manufacturing ring, and that cooperative has been receiving pressure to sell its facility — Kettridge workers are quietly raising money to help the cooperative resist"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "Tier 2",
+    "duster",
+    "workwear",
+    "waxed canvas",
+    "practical",
+    "crossover"
+  ],
+  "parent_corponation": ""
+}

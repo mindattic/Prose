@@ -11,7 +11,7 @@
   ],
   "category": "comms",
   "description": "The Deniable Address Shard is a single-use cryptographic identity chip, roughly the size and shape of a broken fingernail, designed to generate a fully authenticated but entirely fictitious network identity that persists for exactly one communication session before the chip's internal logic physically destroys itself through a controlled electrochemical burn. Each Shard is pre-loaded at manufacture with a unique, non-repeating address seed derived from Ringo Corponation's proprietary entropy architecture, guaranteeing that no two Shards ever produce the same identity. The result is a communication session that, to any network observer, appears to originate from a legitimate registered user — one who simply does not exist.",
-  "manufacturer": "RINGO CORPONATION",
+  "manufacturer": "Anand Financial Engineering",
   "tier_availability": "Tier 2+",
   "legality": "Prohibited",
   "base_technologies": [
@@ -57,5 +57,6 @@
     "market",
     "dark",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Ringo Corponation"
 }

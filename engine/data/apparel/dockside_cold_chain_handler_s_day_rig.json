@@ -1,0 +1,47 @@
+{
+  "id": "e1c4a7f2d09b3e56c8a2f4d1b7e3c09a",
+  "name": "Dockside Cold-Chain Handler's Day Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Built for the refrigerated cargo holds and cold-chain loading bays of Meridian Harbor's bulk freight terminals, this layered kit prioritizes thermal retention without sacrificing the freedom of movement needed to work a full shift. The outermost layer is a high-collar insulated vest in safety orange with black ripstop side panels, harbor authority reflective striping at the shoulders, and a large patch pocket on the chest marked with the worker's dock assignment number in hand-written marker. Beneath the vest sits a heavyweight fleece-lined work shirt in deep navy, quarter-zip with a reinforced collar that folds high against wind off the lake. The shirt has a left-sleeve BCI port pass-through — a simple rubberized grommet that lets wrist-mounted interface hardware route cleanly without bunching fabric. Trousers are insulated canvas in charcoal with wide-set cargo pockets, boot-cut leg opening to clear ankle-height footwear, and neoprene knee pads sewn in permanently. Boots are waterproof pull-on dock boots with a steel toe, non-slip tread rated for wet deck surfaces, and a calf-height shaft. A thermal balaclava in navy rolls down to a neck gaiter when the bay doors are open.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "insulated ripstop shell",
+    "fleece-lined synth-cotton",
+    "insulated canvas",
+    "neoprene",
+    "waterproof rubber boot construction",
+    "thermal knit"
+  ],
+  "functionality": "thermal insulation for cold-chain environments, BCI port pass-through at left sleeve, non-slip waterproof steel-toe boot, neoprene knee pads, roll-down balaclava/neck gaiter, dock assignment patch system, reflective shoulder striping",
+  "what_it_says": "Cold-chain work is specialist labor — not everyone can tolerate the hours in the freeze. This kit marks the wearer as someone who endures conditions most people avoid, and the handwritten dock assignment number on the chest pocket suggests a long tenure and a system that knows them by habit rather than name.",
+  "worn_by": [
+    "cold-chain cargo handlers",
+    "refrigerated hold loaders",
+    "harbor freight workers",
+    "food distribution dock crews"
+  ],
+  "manufacturer": "Meridian Harbor Authority (vest and balaclava, issued) / independent (shirt, trousers, boots, personal purchase from Circuit-level retailers)",
+  "price_range": "Φ200–Φ310 (full kit, mix of issued and personal)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The dock assignment number on the chest patch belongs to a worker who transferred out two months ago — and someone has been using their credentials to access restricted cold-storage sections.",
+    "A cold-chain handler discovers a container that isn't on any manifest, packed with something that isn't food, buried under three layers of legitimate cargo.",
+    "The BCI port pass-through in the sleeve makes it easy to interface with dock management systems — but it also means a skilled slicer can read the worker's interface traffic if they get close enough."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "dock",
+    "cold_chain",
+    "harbor",
+    "aug_compatible",
+    "thermal",
+    "freight",
+    "waterproof"
+  ],
+  "parent_corponation": ""
+}

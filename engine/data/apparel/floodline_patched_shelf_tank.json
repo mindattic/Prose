@@ -1,0 +1,42 @@
+{
+  "id": "e4c1f8b2a7d3059e1f4c8b2a7d3e09f1",
+  "name": "Floodline Patched Shelf Tank",
+  "type": "apparel",
+  "category": "top",
+  "description": "Not so much manufactured as assembled — a Shelf-origin tank top built from at least three different source garments, the seams reinforced with whatever thread was available (you can see the color differences if you look). The base is a faded green synthetic jersey, sleeveless, with a wide armhole cut that's been further modified with scissors. Patches cover a tear on the left shoulder (a rectangle of orange hi-vis material), a section of the lower hem (denim, darker blue), and a logo on the chest that's been partially covered by a hand-stitched Floodline crew mark in red thread — a stylized wave over a horizontal line.\n\nFloodline is one of the loose territorial associations in the lower Shelf districts near the old lakefront infrastructure. Wearing their mark isn't casual — you either run with them, owe them, or you're very confident you can handle the conversation that comes with it. The tank itself is worthless. What it represents is not.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "reclaimed synthetic jersey",
+    "denim patch",
+    "hi-vis nylon patch",
+    "mixed thread reinforcement"
+  ],
+  "functionality": "",
+  "what_it_says": "I am from here and I am not alone here.",
+  "worn_by": [
+    "Floodline crew members",
+    "Shelf residents under Floodline territory",
+    "anyone brave or foolish enough to wear the mark"
+  ],
+  "manufacturer": "Hand-assembled / no manufacturer",
+  "price_range": "Φ3",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A character finds this shirt on a body — the Floodline mark means someone will come looking, and they'll want to know where it was found.",
+    "The original garment underneath the patches has a partially visible logo — with effort, it can be read, and the company it belongs to hasn't existed for thirty years.",
+    "Someone outside Floodline territory is wearing this shirt and clearly doesn't know what it means — a ticking clock situation."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "tier 1",
+    "tank top",
+    "shelf",
+    "gang colors",
+    "patchwork",
+    "floodline",
+    "scavenged"
+  ],
+  "parent_corponation": ""
+}

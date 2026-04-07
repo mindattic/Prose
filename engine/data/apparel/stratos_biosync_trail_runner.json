@@ -1,0 +1,45 @@
+{
+  "id": "3c9b6f1e5a8d204c7f3b9e6a1d5c8f20",
+  "name": "Stratos Biosync Trail Runner",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A rugged-yet-refined trail runner with a lugged outsole and a reinforced toe guard. The embedded insole contains a biometric array that tracks gait efficiency, fatigue indicators, and foot strike patterns, feeding the data to a companion app or BCI health stack. The midsole uses a passive active cushioning system that stiffens on downhill sections and softens on flat ground based on detected incline. Comes in forest green, slate, and burnt orange.",
+  "tier_association": "Tier 3-4",
+  "materials": [
+    "ripstop mesh upper",
+    "biometric insole array",
+    "incline-reactive midsole",
+    "lugged rubber outsole",
+    "reinforced toe cap"
+  ],
+  "functionality": "Biometric insole tracks gait and fatigue; incline-reactive midsole adjusts cushioning firmness based on detected slope. Syncs to BCI health stack.",
+  "what_it_says": "You spend real time outdoors — or at least in environments where the ground isn't flat. You track your performance because you care about improving it.",
+  "worn_by": [
+    "outdoor enthusiasts",
+    "urban hikers",
+    "physical therapists",
+    "Tier 3-4 professionals with active hobbies"
+  ],
+  "manufacturer": "Stratos Outdoor",
+  "price_range": "Φ150 - Φ215",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The incline and gait data from a pair of Biosync runners maps an exact route through terrain that's officially inaccessible.",
+    "Fatigue indicators logged over several weeks show a pattern that doesn't match any known workout — someone was being pushed, not training."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "tier 4",
+    "smart",
+    "trail",
+    "runner",
+    "health-monitoring",
+    "active cushioning",
+    "BCI-compatible",
+    "outdoor"
+  ],
+  "parent_corponation": ""
+}

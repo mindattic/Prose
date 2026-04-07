@@ -1,0 +1,49 @@
+{
+  "id": "c84d2f7a310e4b69d05f1e83a7c92640",
+  "name": "Hookline Independent Dock & Haul Street Kit",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Not company-issued — this is the working kit of an independent dock laborer, day-hire cargo handler, or gig-economy freight mover who doesn't work for any single corponation long enough to get a uniform. It's assembled from a mix of quality street-label and surplus, and it holds together through deliberate choice rather than institutional supply. The outer layer is a surplus-style work jacket in faded navy waxed cotton, hood stuffed into the collar, with chest pockets reinforced by street-sewn bar tacks. Across the left sleeve, someone has stenciled a small orange triangle with a number — a dock lot designation, or a crew mark, or a union section ID. The jacket's back panel has been slit along the spine and re-laced with industrial paracord to create a crude but effective spinal-rig accommodation channel. Underneath is a heavyweight charcoal henley with three-button placket, thick enough to function as a mid-layer without a separate underlayer. Trousers are navy canvas work pants cut wide in the thigh for movement, with external knee pad channels (pads currently in), cargo pockets on both legs, and a reinforced seat. A wide webbing belt with a heavy D-ring carries a hook tool, a clip for a work lamp, and a battered multi-use utility holster. Boots are thick-soled dock walkers with steel toe and side-zip entry, scuffed to grey at the toe caps. A knit balaclava worn pulled back as a thick watch cap covers the head, grey with a single faded orange stripe.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "waxed cotton canvas",
+    "heavyweight cotton-synthetic henley knit",
+    "wide-gauge canvas work twill",
+    "webbing nylon belt",
+    "steel-toe synthetic leather boot",
+    "knit thermal acrylic balaclava",
+    "industrial paracord"
+  ],
+  "functionality": "Spinal-rig accommodation channel (laced back panel), knee pad channels for prolonged kneeling work, D-ring belt for tool and lamp carry, wide-thigh cut for heavy lifting mobility, side-zip boot entry for fast on/off at access checkpoints, hood storage in collar for quick deployment in acid rain.",
+  "what_it_says": "No company owns this person today. Maybe tomorrow, maybe not. The stenciled lot number means they know which crews to show up for and which to avoid. The paracord back splice means they have chrome they paid for themselves, not company-issue, and they've adapted their own gear around it. Independent. Capable. Underpaid and aware of it.",
+  "worn_by": [
+    "independent day-hire dock workers",
+    "gig-economy freight handlers",
+    "off-grid cargo movers",
+    "unaffiliated heavy laborers",
+    "former company workers running their own book"
+  ],
+  "manufacturer": "Assembled — jacket from Dockline Surplus (street label), henley from Coldwall, trousers from Ironpass (generic run), boots aftermarket composite, belt custom-rigged",
+  "price_range": "Φ290–Φ420 (assembled piecemeal over time; individual items range Φ40–Φ150)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The stenciled crew number on the sleeve matches a lot designation that was officially decommissioned after a dock collapse that killed eleven workers — someone is still using that designation, and someone is answering it.",
+    "An independent hauler in this kit shows up at a job site with cargo that doesn't match any manifest. They were hired through three layers of anonymous relay contracts and have no idea what they're carrying.",
+    "The paracord back lacing is a specific knot pattern used by a particular off-grid augmentation clinic as an informal identifier — a way for their clients to recognize each other without saying a word."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "dock_worker",
+    "independent",
+    "street_label",
+    "surplus",
+    "aug_compatible",
+    "gig_economy",
+    "cargo_handler"
+  ],
+  "parent_corponation": ""
+}

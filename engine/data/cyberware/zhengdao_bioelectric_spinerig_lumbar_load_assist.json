@@ -1,0 +1,55 @@
+{
+  "id": "a3f7c2e1b84d9f056e2a1c3d7b8e4f90",
+  "name": "ZhengDao Bioelectric SpineRig Lumbar Load Assist",
+  "brand_name": "ZhengDao Bioelectric",
+  "product_name": "SpineRig Lumbar Load Assist",
+  "type": "cyberware",
+  "aliases": [
+    "the brace",
+    "ironback",
+    "dockwire",
+    "load bar",
+    "spinetack"
+  ],
+  "category": "professional",
+  "body_location": "spinal — lumbar vertebrae L1 through L5, with lateral myofascial anchor points",
+  "description": "The SpineRig is a subdermal electromechanical support lattice bonded directly to the lumbar vertebrae and surrounding fascia. A series of piezoelectric tension rods run parallel to the spinal column, dynamically stiffening or relaxing in microsecond response to detected load and posture data from embedded pressure sensors. When a worker bends to lift, the system pre-activates stabilizing tension across the lower back before the motion completes, redistributing compressive force across a broader surface area and reducing shear stress on intervertebral discs. The rods are powered by a kinetic microgenerator that harvests energy from walking and movement, requiring no external charging in most active-worker use cases. Firmware updates are pushed quarterly by ZhengDao and can be applied via any clinic's update terminal or compatible personal device.\n\nThe SpineRig is the single most common professional implant among Tier 1 and Tier 2 manual laborers in Meridian 88. Dock workers, hospital orderlies, warehouse packers, construction laborers, and home care nurses all rely on it as a standard workplace accommodation — many corponation employers mandate it or offer installation subsidies as part of onboarding. Workers describe the experience as feeling like a firm, invisible hand steadying your back every time you reach or lift, with no loss of natural movement range. Chronic lower back injury, once the leading cause of early disability among manual workers, dropped dramatically in the decades following the SpineRig's mass-market release. For Shelf-level workers doing the hardest physical labor of the city, it is not a luxury — it is survival infrastructure.",
+  "manufacturer": "ZHENGDAO BIOELECTRIC",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient spinal clinic; requires local anesthetic and two-hour procedure by a licensed biotech installer; same-day discharge typical",
+  "rejection_risk": "Low",
+  "maintenance": "Annual calibration scan at any ZhengDao-certified clinic; firmware updates pushed remotely; piezoelectric rods rated for 8-year service life before elective replacement",
+  "specifications": "{\"load_assist_rating\": \"up to 180kg dynamic lift support\", \"activation_latency\": \"<12ms pre-load tension\", \"power_source\": \"kinetic microgenerator, supplemental inductive pad charging\", \"sensor_array\": \"14-point lumbar pressure mesh\", \"rod_material\": \"biocompatible titanium-polymer composite\", \"wireless_protocol\": \"ZhengDao BodyNet v4\", \"rated_service_life\": \"8 years\"}",
+  "side_effects": [
+    "Mild stiffness or 'locked' sensation in the lower back during the first two weeks of calibration",
+    "Occasional involuntary micro-tension when seated for long periods, perceived as a faint tightening",
+    "Sensitivity to cold weather at anchor point sites, particularly in winter above the Shelf",
+    "Rare: minor skin discoloration over lateral anchor points due to subdermal hardware proximity"
+  ],
+  "cultural_context": "In Tier 1 and Tier 2 communities, the SpineRig carries essentially no stigma — it is as unremarkable as a back brace once was, except permanent and invisible. Workers compare it to steel-toed boots: you'd be foolish not to have one if your job demands it. Among older laborers who remember working before widespread SpineRig adoption, there is sometimes a grim pride in the scar tissue and disc damage of pre-implant years, and a corresponding protectiveness toward younger workers who 'never had to earn it.' Corponation HR departments in Tier 2-3 companies increasingly list SpineRig installation as a standard onboarding benefit, and workers who refuse — usually for religious or philosophical reasons — sometimes face quiet pressure or are steered away from heavy-load roles. The implant has also quietly become a class-legible marker: Tier 4 and 5 professionals who would never perform manual labor conspicuously lack it, and its presence on a body read by a medical scanner signals a working life.",
+  "known_users": [
+    "Dock and freight workers along the Lake Michigan cargo terminals",
+    "Hospital orderlies and home care nurses doing patient transfers",
+    "Warehouse packers and distribution center employees",
+    "Construction laborers and roofers",
+    "Sanitation and infrastructure maintenance crews"
+  ],
+  "story_hooks": [
+    "A wave of counterfeit SpineRig units has been circulating on the Shelf — they look identical but lack the safety limiters, and workers who've received them are developing stress fractures from over-assisted lifts that exceed bone tolerance. Someone is manufacturing them cheaply and someone else is distributing them through employer 'subsidy' programs.",
+    "A labor organizer is building a case that certain corponations are using SpineRig firmware update mandates to monitor worker movement, break schedules, and off-site behavior — the update logs contain far more location and activity data than ZhengDao publicly discloses.",
+    "A veteran dock worker's SpineRig is approaching its 8-year replacement window, but her employer's insurance has lapsed and she can't afford the procedure. She's been quietly overloading the system trying to make it last, and the rods are beginning to fail mid-shift."
+  ],
+  "street_price": "Φ380–Φ620",
+  "licensed_price": "Φ950–Φ1,400",
+  "tags": [
+    "cyberware",
+    "professional",
+    "lifestyle",
+    "labor",
+    "spinal",
+    "ergonomic",
+    "mass-market"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,41 @@
+{
+  "id": "6f2d9a4b1e7c508f3d6a2b9e4c1f7d50",
+  "name": "Calloway Pressline Auto-Lace Sneaker",
+  "type": "apparel",
+  "category": "footwear",
+  "description": "A clean, minimal low-top sneaker with a slightly elevated sole and a streamlined lacing system that uses embedded micro-motors to tighten or release at a touch or BCI command. The upper is smooth woven synthetic in white, black, or stone. Positioned as everyday smart footwear — the kind of shoe that fits a work meeting and a post-work drink without looking wrong in either place.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "woven synthetic upper",
+    "micro-motor lacing system",
+    "EVA midsole",
+    "rubber outsole"
+  ],
+  "functionality": "BCI or touch-activated auto-lacing with three preset tension profiles. Battery lasts approximately 30 days on a charge.",
+  "what_it_says": "You're comfortable with everyday tech and spend money sensibly. Not trying to impress anyone — this is just what you wear.",
+  "worn_by": [
+    "Tier 3 professionals",
+    "students",
+    "retail and service workers with disposable income",
+    "casual everyday wearers"
+  ],
+  "manufacturer": "Calloway Industries",
+  "price_range": "Φ85 - Φ115",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A dead man's auto-lace sneaker is still paired to his BCI — and someone else's BCI just triggered it.",
+    "The micro-motor system can be hacked to lock the shoe tight enough to cause injury. A threat someone has already made good on."
+  ],
+  "tags": [
+    "apparel",
+    "footwear",
+    "tier 3",
+    "smart",
+    "sneaker",
+    "auto-lace",
+    "BCI-compatible",
+    "everyday"
+  ],
+  "parent_corponation": ""
+}

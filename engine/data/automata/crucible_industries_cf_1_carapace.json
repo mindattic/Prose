@@ -1,0 +1,52 @@
+{
+  "name": "Crucible Industries CF-1 'Carapace'",
+  "type": "automaton",
+  "classification": "Powered Exoskeleton — Industrial/Combat",
+  "aliases": [
+    "Carapace",
+    "Bug Suit",
+    "Hardhat"
+  ],
+  "manufacturer": "Applied Heredity Ethics Board LLC",
+  "description": "The CF-1 was designed as an industrial exoskeleton for hazardous material handling — allowing workers to operate in environments with extreme heat, chemical exposure, and structural collapse risk. The suit provides full environmental sealing, strength amplification for lifting 500 kilograms, and ablative armor that was originally intended to protect against industrial accidents. Crucible then sold the identical platform to security contractors with the industrial tools replaced by weapon mounts.\n\nThe combat variant of the CF-1 is less sophisticated than Arcturus's XF-3 — it uses manual controls rather than BCI interface, making it slower to respond but without the addiction risks. The operator controls the suit through a combination of joystick inputs and motion-capture sensors that translate body movements into suit movements with a barely perceptible lag. The armament is modular: arm mounts accept anything from heavy machine guns to cutting torches to chemical sprayers, depending on the mission profile.\n\nThe CF-1's real market advantage is price. At roughly one-fifth the cost of an XF-3, it has become the exoskeleton of the middle market — corporate security firms, well-funded mercenary units, and even some wealthy criminal organizations operate CF-1 units. The lower cost means lower capability, but it also means far more of them in circulation, which creates its own kind of threat.",
+  "tier_availability": "Tier 3+ (industrial); Tier 4+ (combat)",
+  "legality": "Industrial: Licensed. Combat: Licensed with security contractor registration",
+  "autonomy_level": "Operator controlled — manual interface",
+  "dimensions": "2.4m height, 1.3m shoulder width",
+  "weight": "420 kg",
+  "power_source": "Swappable lithium cell packs, 6-hour endurance",
+  "locomotion": "Bipedal powered exoskeleton, 30 km/h sprint",
+  "armament": [
+    "Modular arm mounts (weapon-specific)",
+    "No integrated armament — all mission-configurable"
+  ],
+  "sensors": [
+    "Environmental hazard detection",
+    "Basic thermal imaging",
+    "Structural integrity scanner"
+  ],
+  "countermeasures": "Manual controls create response lag exploitable by faster opponents. Battery packs are externally mounted and vulnerable to small arms. No BCI integration means no enhanced situational awareness.",
+  "known_deployments": [
+    "Industrial sites across Meridian 88",
+    "Corporate security operations",
+    "Black market criminal operations"
+  ],
+  "story_hooks": [
+    "A CF-1 industrial variant has been stolen from a construction site and crudely up-armored with welded scrap metal. Someone in the Shelf is building a poor man's war machine, and the welds won't hold forever.",
+    "Six CF-1 combat variants have been delivered to an address in the Circuit. The shipping documentation says 'industrial equipment.' Someone is assembling a private army."
+  ],
+  "cultural_context": "The CF-1 is the democratization of mechanized infantry — for better and worse. Its affordability means that the power gap between corponations and well-funded resistance groups has narrowed, but it also means that every turf war could involve walking armor.",
+  "tags": [
+    "automaton",
+    "exoskeleton",
+    "mech",
+    "industrial",
+    "combat",
+    "weapon",
+    "crucible",
+    "tier 3",
+    "tier 4"
+  ],
+  "id": "a8afadad57d76e3b1ebc82fb8e9a8cf5",
+  "parent_corponation": "Crucible Genomics"
+}

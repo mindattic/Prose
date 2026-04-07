@@ -1,0 +1,26 @@
+@* Displays tags as clickable pills. Click a tag to add it to the TagFilter. *@
+
+@if (Tags != null && Tags.Count > 0)
+{
+    <div class="d-flex flex-wrap gap-1 mt-2 mb-2">
+        @foreach (var tag in Tags)
+        {
+            var t = tag;
+            var isActive = ActiveTags != null && ActiveTags.Contains(t);
+            <span class="tag-display-pill @(isActive ? "tag-display-active" : "")"
+                  @onclick="() => OnTagClick.InvokeAsync(t)">@t</span>
+        }
+    </div>
+}
+
+<style>
+    .tag-display-pill { background: var(--bs-dark, #0d1117); border: 1px solid #30363d; border-radius: 10px; padding: 1px 8px; font-size: 0.7rem; color: #8b949e; cursor: pointer; transition: all 0.15s; }
+    .tag-display-pill:hover { border-color: #dc3545; color: #dc3545; }
+    .tag-display-active { border-color: #dc3545; color: #dc3545; }
+</style>
+
+@code {
+    [Parameter] public List<string> Tags { get; set; } = [];
+    [Parameter] public HashSet<string>? ActiveTags { get; set; }
+    [Parameter] public EventCallback<string> OnTagClick { get; set; }
+}

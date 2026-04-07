@@ -1,0 +1,45 @@
+{
+  "id": "d1e84c30f7a259b6031ec4a87d2f1b09",
+  "name": "Ferrocast NP-3 Neural Port Cap",
+  "type": "apparel",
+  "category": "headwear",
+  "description": "A snug-fitting skullcap in matte charcoal stretch-neoprene with a reinforced crown panel of injection-molded ABS. Three pre-positioned port-access grommets align with standard BCI hardware configurations — each ringed with a brushed-steel collar and a snap-shut silicone dust cover. The interior is lined with conductive mesh that grounds ambient static away from exposed jack contacts.\n\nFunctional over fashionable, it sits low on the brow and high on the nape. Common in factory floors and transit hubs where exposed neural ports risk snagging on equipment or collecting industrial particulate.",
+  "tier_association": "Tier 2-3",
+  "materials": [
+    "matte stretch-neoprene",
+    "injection-molded ABS",
+    "brushed steel",
+    "silicone dust covers",
+    "conductive grounding mesh"
+  ],
+  "functionality": "Protects exposed neural port hardware from dust, moisture, and snag hazards. Grounding mesh reduces static discharge risk near high-voltage equipment. Snap-shut silicone covers keep contacts clean between connections. Port alignment is compatible with Axiom, Helix, and Stratum standard BCI jack spacing.",
+  "what_it_says": "You're augmented, working, and smart enough to protect your hardware without spending on aesthetics.",
+  "worn_by": [
+    "factory floor workers with BCIs",
+    "MagRail operators",
+    "warehouse logistics staff",
+    "junior IT technicians"
+  ],
+  "manufacturer": "Ferrocast Protective Goods",
+  "price_range": "Φ 45–Φ 90",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A batch of NP-3s shipped to a Circuit factory were found to have conductive mesh wired to passively log neural port serial numbers — someone is tracking augmented workers.",
+    "A transit operator's NP-3 cap shows burn scoring around one port grommet consistent with a surge event that should have been lethal — the cap absorbed it somehow.",
+    "A Tier 2 union organizer uses the cap's grounding mesh to covertly suppress BCI signal broadcasting during illegal assembly meetings."
+  ],
+  "tags": [
+    "apparel",
+    "headwear",
+    "neural-port-cover",
+    "aug-compatible",
+    "tier-2",
+    "tier-3",
+    "circuit",
+    "bci",
+    "protective",
+    "ferrocast"
+  ],
+  "parent_corponation": ""
+}

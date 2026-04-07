@@ -1,0 +1,34 @@
+{
+  "id": "4470bfb0238a173d12f44c8eec8f8cb9",
+  "name": "Teflon",
+  "type": "archetype",
+  "category": "professional",
+  "description": "Nothing sticks to them — blame, responsibility, or consequences slide right off",
+  "behavioral_signature": "Present when things go wrong but never accountable for any of it",
+  "under_stress": "Deflects so hard they destroy the person they redirect blame onto",
+  "at_rest": "Clean, unblemished, untouchable",
+  "will_always": [
+    "avoid accountability"
+  ],
+  "will_never": [
+    "take the fall for something"
+  ],
+  "unless": [
+    "accepting blame is strategically advantageous"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Social Chameleon",
+      "threshold": 0.6,
+      "context": "self-protection"
+    }
+  ],
+  "opposite_of": [
+    "Scapegoat"
+  ],
+  "tags": [
+    "deflection",
+    "accountability",
+    "survival"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "c94b5e2d8f1a37460d5b2e9f8c1a3746",
+  "name": "Orvex Thermal Shell",
+  "type": "apparel",
+  "category": "jacket",
+  "description": "A hard-shell rain jacket designed for the Great Lakes corridor's legendary wet seasons — the weeks in March and October when the lake pushes cold horizontal rain through every gap in the city's windbreak towers. The Orvex Thermal Shell uses a three-layer laminate membrane that is genuinely waterproof, not water-resistant. Seams are taped. The hood is helmet-compatible and adjusts with one hand. It packs into its own chest pocket.\n\nOrvex is a Tier 3 outdoor gear brand that sells primarily to commuters and light outdoors enthusiasts. The Shell comes in muted earth tones and a few brighter safety-adjacent colors. It's unassuming and works exactly as advertised. People who spend a lot of time outside — courier cyclists, construction supervisors, field technicians — own at least one.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "three-layer waterproof laminate",
+    "taped seams",
+    "mesh interior lining"
+  ],
+  "functionality": "",
+  "what_it_says": "You've been rained on enough times to stop tolerating it.",
+  "worn_by": [
+    "courier cyclists",
+    "construction supervisors",
+    "field technicians",
+    "outdoor commuters"
+  ],
+  "manufacturer": "Orvex",
+  "price_range": "Φ175",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A courier found a data chip sewn into the seam tape of a new Orvex Shell — the chip contains encrypted financial records belonging to a Tier 4 corponation executive.",
+    "A field technician's Shell is the only piece of evidence placing them at a restricted site during a corporate espionage incident.",
+    "Orvex is quietly recalling a specific production run after reports that the membrane off-gasses a compound that interferes with certain BCI models."
+  ],
+  "tags": [
+    "apparel",
+    "jacket",
+    "tier 3",
+    "rain shell",
+    "waterproof",
+    "outdoor",
+    "commuter"
+  ],
+  "parent_corponation": ""
+}

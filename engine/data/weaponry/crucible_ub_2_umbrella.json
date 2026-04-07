@@ -1,0 +1,50 @@
+{
+  "id": "1809854373e11be01def3773ddf473d3",
+  "name": "Crucible UB-2 'Umbrella'",
+  "type": "weapon",
+  "aliases": [
+    "Umbrella",
+    "Rain Check",
+    "The Canopy"
+  ],
+  "category": "concealed weapon",
+  "description": "A spring-loaded pneumatic dart launcher concealed in the shaft of a full-sized umbrella. The weapon fires a single 5mm steel dart from the umbrella's tip using compressed CO2 stored in the shaft, delivering the projectile with enough velocity to penetrate light clothing and embed 30mm into flesh. The dart can be loaded with chemical payloads — the hollow tip holds 0.3ml of liquid agent — combining the delivery mechanism of the Mercy auto-injector with the range of a firearm.\n\nCrucible designed the UB-2 for intelligence operations during a period of heightened corporate espionage in the 2180s, and the weapon has remained in covert circulation ever since. The firing mechanism is activated by pressing a concealed button on the handle while pointing the umbrella's tip at the target — a gesture that looks like adjusting one's grip or preparing to open the umbrella. The CO2 discharge produces a quiet hiss that is masked by ambient urban noise.\n\nThe Umbrella is perhaps the most classically espionage-coded weapon in Meridian 88's arsenal — a direct descendant of Cold War assassination tools updated with modern materials and chemistry. Its continued existence is a reminder that some methods of killing are timeless, and that the most effective disguise for a weapon is still 'something everyone carries when it rains.'",
+  "manufacturer": "CRUCIBLE INDUSTRIAL (covert division)",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — disguised weapon",
+  "street_price": "Φ5,500",
+  "base_technologies": [
+    "Pneumatic dart propulsion",
+    "Concealed CO2 reservoir",
+    "Chemical payload dart design"
+  ],
+  "specifications": "projectile: 5mm hollow-tip steel dart\ncapacity: 1 dart\nrange: 5 meters\npropulsion: Compressed CO2\nchemical payload: 0.3ml\numbrella length: 85cm\nweight: 0.6 kg\nacoustic signature: Quiet hiss, masked by ambient noise",
+  "tactical_use": "Covert assassination and chemical agent delivery at short range. The operator approaches within 5 meters, fires while performing a natural umbrella-handling gesture, and walks away. The dart's small profile and the weapon's silent operation mean the target may not realize they've been hit until the chemical payload takes effect.",
+  "cultural_context": "The Umbrella weapon has achieved legendary status in Meridian 88's intelligence community, partly because of its historical pedigree and partly because it works. In a city where it rains 200 days a year, everyone carries an umbrella. The weapon's disguise is the weather itself.",
+  "known_users": [
+    "Corporate intelligence operatives",
+    "Crucible covert division assets",
+    "Historical connection to at least seven confirmed assassinations in Meridian 88"
+  ],
+  "story_hooks": [
+    "A political figure collapsed during a public appearance on a rainy day. Autopsy revealed a 5mm dart embedded in the thigh, loaded with a neurotoxin. Security footage shows 300 people with umbrellas. The investigation is effectively impossible.",
+    "A cache of UB-2 units has been discovered in a Crucible facility that was supposedly decommissioned — along with records of a covert assassination program that spans two decades and three continents."
+  ],
+  "ammunition_type": [
+    "dart"
+  ],
+  "tags": [
+    "concealed",
+    "weapon",
+    "disguised",
+    "umbrella",
+    "dart",
+    "pneumatic",
+    "chemical",
+    "crucible",
+    "espionage",
+    "tier 4",
+    "lethal"
+  ],
+  "parent_corponation": "Crucible Genomics"
+}

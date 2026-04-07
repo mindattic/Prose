@@ -1,0 +1,46 @@
+{
+  "id": "a3f7c2e1d09b4856ae21fc3d78b50e94",
+  "name": "Kelvex MagRail Operator's Day Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "A complete transit operator's uniform issued by Kelvex Transit Systems, built for twelve-hour shifts on the MagRail platforms. The jacket is a structured navy synth-canvas shell with a mandarin collar, Kelvex wordmark embroidered in silver thread above the left breast pocket, and a sewn name patch on the right. Reflective amber piping runs the shoulder seams and cuffs. Underneath sits a moisture-wicking thermal base layer in slate grey with a reinforced neckline. Trousers are matching navy synth-canvas with deep cargo pockets, reinforced knee panels, and a flared hem to accommodate standard leg prosthetics or ankle augmentation — magnetic snap closures replace zippers at the lower leg. A wide utility belt in matte black carries a compact tool roll and an ID fob holster. Footwear is the Veldtmann Steelcap 7, oil-resistant and mag-locked for platform adhesion, worn with boot-cut hems tucked over the shaft.\n\nThe ensemble reads clean and institutional — pressed enough to signal employed stability, worn enough to show real hours. The jacket's inner lining has a discrete neural port channel at the collar for BCI earpiece routing, standard on all Kelvex issue. Transit workers who've been on the line five years or more often have a small run of personal patches sewn over the left sleeve — union insignia, route numbers, incident stars — which supervisors technically discourage and practically ignore.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "synth-canvas",
+    "reflective amber piping",
+    "moisture-wicking thermal knit",
+    "matte polymer webbing",
+    "reinforced knee-panel composite",
+    "mag-snap polymer closures"
+  ],
+  "functionality": "Thermal regulation for platform exposure, reflective piping for rail-side visibility, tool belt with ID fob holster, leg-prosthetic-compatible flared hem with mag-snap closures, BCI earpiece port channel at collar, oil-resistant steel-toe footwear",
+  "what_it_says": "This person clocks in, does the work, and goes home. The Kelvex branding marks them as gainfully employed — a status worth protecting in Circuit. The personal patches on long-timers telegraph tenure and union solidarity without saying a word.",
+  "worn_by": [
+    "MagRail transit operators",
+    "platform attendants",
+    "Kelvex shift supervisors",
+    "transit union members"
+  ],
+  "manufacturer": "Kelvex Transit Systems (corponation issue)",
+  "price_range": "Φ 180–Φ 240 (issued; replacement cost if lost)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A transit operator's name patch identifies them to a witness of a platform incident they weren't supposed to be near — their route shouldn't have crossed that station.",
+    "The personal sleeve patches on a veteran operator's jacket include an incident star from a rail collapse seven years ago that the corponation officially classifies as a minor service disruption.",
+    "Someone is moving contraband through the MagRail system dressed in a stolen Kelvex uniform — but the name patch is blank, and veterans notice."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "circuit_working",
+    "tier_2",
+    "transit",
+    "kelvex",
+    "uniform",
+    "corponation_issue",
+    "aug_compatible",
+    "rail_operator"
+  ],
+  "parent_corponation": ""
+}

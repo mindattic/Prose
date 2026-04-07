@@ -1,0 +1,44 @@
+{
+  "id": "f4a8c3d6b1e092f7a4c8d3e6b1f2a9d5",
+  "name": "Omex Corporate Services Staff Polo",
+  "type": "apparel",
+  "category": "top",
+  "description": "The standard-issue polo shirt for Omex Corporate Services client-facing staff — the people who work the desks, check credentials, manage building access, and smile at you while deciding whether to let you through. The fabric is a smooth, moisture-wicking synth-blend that photographs well under office lighting and stays unwrinkled through a twelve-hour shift. The Omex wordmark is embroidered in silver thread on the left chest, and a discreet employee ID slot is sewn into the right cuff. The collar is stiff enough to look formal, soft enough not to chafe.\n\nThe polo comes in three colorways depending on department: slate blue for reception and client services, charcoal for facilities management, and white for executive floor support. Wearing the wrong color in the wrong department is a formal HR incident. Staff receive two per year; extras can be purchased at cost through the company store.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "moisture-wicking synth-blend",
+    "silver embroidery thread",
+    "poly-elastic collar",
+    "integrated cuff ID slot"
+  ],
+  "functionality": "Integrated RFID cuff slot for employee ID chip; fabric treated for stain resistance and press retention.",
+  "what_it_says": "You work for Omex. That tells people enough. You're professional, accessible, and replaceable — the polo makes sure everyone knows all three.",
+  "worn_by": [
+    "Omex reception staff",
+    "facilities personnel",
+    "corporate lobby security",
+    "building services workers"
+  ],
+  "manufacturer": "Omex Corporate Services (uniform division, contracted to Haelan Apparel Group)",
+  "price_range": "Φ55",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A stolen Omex polo in the right color grants access to floors that shouldn't be reachable — at least until shift change.",
+    "A character wearing one off-duty gets mistaken for on-duty staff and pulled into a situation they can't easily explain their way out of.",
+    "Someone selling Omex polos at a Shelf market is either very confused or running a deeper scam."
+  ],
+  "tags": [
+    "apparel",
+    "top",
+    "polo",
+    "tier 4",
+    "corporate",
+    "uniform",
+    "omex",
+    "rfid",
+    "staff",
+    "office"
+  ],
+  "parent_corponation": ""
+}

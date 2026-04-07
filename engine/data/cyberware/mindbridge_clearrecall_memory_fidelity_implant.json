@@ -1,0 +1,56 @@
+{
+  "id": "a3f82c1d7e4b9056f2c3a1d8e7b4f093",
+  "name": "MindBridge ClearRecall Memory Fidelity Implant",
+  "brand_name": "MindBridge",
+  "product_name": "ClearRecall",
+  "type": "cyberware",
+  "aliases": [
+    "the sticky",
+    "recall patch",
+    "sticky brain",
+    "photobrain",
+    "the anchor"
+  ],
+  "category": "cognitive",
+  "body_location": "cranial — bilateral hippocampal interface, temple-mounted subcutaneous processor",
+  "description": "The ClearRecall is a hippocampal augmentation system that works by strengthening synaptic encoding pathways during memory consolidation, primarily during sleep cycles. Rather than recording experiences like a data device, it biologically amplifies the brain's own retention mechanisms — enhancing the precision and durability of naturally formed memories. A mesh of nanoscale electrodes interfaces with the CA1 and CA3 regions of the hippocampus, providing low-current stimulation that reinforces long-term potentiation. The result is not eidetic recall, but a measurable and sustained improvement in the accuracy, depth, and retrievability of memories formed after installation. The system calibrates continuously to the user's existing neural architecture, with firmware updates pushed quarterly to refine stimulation patterns based on anonymized population data.\n\nThe ClearRecall is one of the most common cognitive implants in Meridian 88, found in everyone from Tier 1 students cramming for city-cert exams to Tier 3 professionals managing dense regulatory knowledge. Parents often get it for teenagers entering secondary schooling. For people living in high-information environments — which in 2200 means almost everyone — the implant functions less like an upgrade and more like corrective lenses: something you get because the baseline human brain simply wasn't built for the volume of data modern life demands. Users report that memories feel more 'solid,' that names, faces, and procedural knowledge stick where they previously slipped. The common wisdom on the Shelf is that you can't afford not to have one if you want to compete.",
+  "manufacturer": "MINDBRIDGE COGNITIVE SYSTEMS",
+  "tier_availability": "Tier 1-3",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic; 90-minute procedure under local anesthetic; same-day discharge",
+  "rejection_risk": "Minimal",
+  "maintenance": "Annual firmware update at any MindBridge kiosk; self-calibrating between updates; electrode mesh rated for 12-year service life",
+  "specifications": "{\"stimulation_frequency\": \"0.5–4 Hz delta-band entrainment during sleep\", \"electrode_count\": 214, \"processor_location\": \"subdermal temporal, 4mm depth\", \"battery\": \"inductive recharge via standard neural pad, full charge in 40 min\", \"memory_improvement_index\": \"38–61% increase in recall accuracy at 30-day retention benchmarks\", \"calibration_cycle\": \"passive, continuous\", \"compatibility\": \"MindBridge NovaMesh, OpenLane; most third-party neural meshes via standard API\"}",
+  "side_effects": [
+    "Vivid, highly structured dreams during the first two weeks of calibration",
+    "Occasional intrusive recall — memories surfacing unbidden during low-stimulation periods",
+    "Mild temporal pressure sensation at the temples during the initial 72 hours post-installation",
+    "Some users report that emotionally neutral memories become disproportionately crisp, which can feel disorienting"
+  ],
+  "cultural_context": "In most of Meridian 88, getting a ClearRecall is as unremarkable as getting corrective eye surgery was two centuries ago. On the Shelf, secondhand units and gray-market refurbs circulate widely, and the social stigma runs the other direction — not having one marks you as someone who couldn't scrape together the cost, which carries its own weight in a city where cognitive performance is currency. In Tier 3 and 4 households, children are routinely implanted in early adolescence, and the debate has long since shifted from 'should we' to 'which model.' A small countercultural movement — derisively called 'naturals' by most and proudly by themselves — refuses cognitive implants on philosophical grounds, but they are a vocal minority. Among Tier 4 corporate workers, brand loyalty runs deep; using a MindBridge product instead of a Tessera or NeuralPath equivalent can read as a class signal, the difference between a working professional and someone who bought generic.",
+  "known_users": [
+    "Secondary and post-secondary students across all tiers",
+    "Legal and compliance professionals managing dense regulatory codes",
+    "Shelf residents who pool resources for a single shared-cost implant plan",
+    "Medical workers who need precise procedural recall",
+    "Immigrants and first-generation city residents navigating unfamiliar systems"
+  ],
+  "story_hooks": [
+    "A Tier 1 student's ClearRecall begins surfacing memories that don't belong to them — fragments that feel real but predate their own life, possibly due to a refurbished unit that wasn't fully wiped.",
+    "A routine firmware update pushed to millions of ClearRecall units contains an undocumented behavioral nudge — subtle, hard to prove, but measurably affecting decision-making in ways that benefit a MindBridge subsidiary.",
+    "A character's ClearRecall is functioning perfectly, which is the problem: they remember, with perfect clarity, something they were supposed to forget — and someone very powerful needs them not to."
+  ],
+  "street_price": "Φ420–Φ680 (gray market refurb units as low as Φ190)",
+  "licensed_price": "Φ950–Φ1,200 at certified MindBridge clinics",
+  "tags": [
+    "cyberware",
+    "cognitive",
+    "lifestyle",
+    "memory",
+    "mass-market",
+    "student",
+    "hippocampal",
+    "neural-mesh-compatible"
+  ],
+  "parent_corponation": ""
+}

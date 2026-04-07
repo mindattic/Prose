@@ -1,0 +1,33 @@
+{
+  "id": "b7ad0a9fa6f28a60a76f8bfc7e5e9fe1",
+  "name": "Meritocrat",
+  "type": "archetype",
+  "category": "power",
+  "description": "Power should belong to whoever earns it, full stop",
+  "behavioral_signature": "Evaluates everyone by competence and rejects inherited privilege",
+  "under_stress": "Becomes cruel to anyone who can't perform",
+  "at_rest": "Tests people constantly, respects results over credentials",
+  "will_always": [
+    "promote based on ability"
+  ],
+  "will_never": [
+    "defer to someone just because of their title or birth"
+  ],
+  "unless": [
+    "the best person for the job happens to be privileged"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Expert",
+      "threshold": 0.7,
+      "context": "competence worship"
+    }
+  ],
+  "opposite_of": [
+    "Throne Sitter"
+  ],
+  "tags": [
+    "competence-driven",
+    "fair"
+  ]
+}

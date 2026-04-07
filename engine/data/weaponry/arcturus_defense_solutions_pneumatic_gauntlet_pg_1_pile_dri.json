@@ -1,0 +1,48 @@
+{
+  "id": "cf22a0fc32d6a2d7aa22de9599ede42d",
+  "name": "Arcturus Defense Solutions Pneumatic Gauntlet PG-1 'Pile Driver'",
+  "type": "weapon",
+  "aliases": [
+    "Pile Driver",
+    "PG-1",
+    "Pneumatic Fist",
+    "The Piston"
+  ],
+  "category": "melee",
+  "description": "An armored gauntlet that incorporates a pneumatic ram system in the knuckle assembly, firing a weighted piston forward at the moment of impact to deliver a concentrated force spike that exceeds what any human arm — augmented or otherwise — can generate through muscular power alone. The PG-1's piston fires with approximately 2,000 newtons of additional force, enough to crack reinforced concrete and buckle light vehicle panels.\n\nThe gauntlet covers the hand and forearm, providing both the weapon mechanism and armor protection for the operator's striking limb. The pneumatic system uses compressed gas cartridges stored in the forearm section, each cartridge providing 30 piston fires. Cartridge exchange takes approximately three seconds and can be performed one-handed. The piston automatically resets between strikes, requiring 0.8 seconds to recharge — slower than natural punching speed but fast enough for deliberate, powerful engagement.\n\nArcturus developed the Pneumatic Gauntlet for demolition and rescue operations where powered tools are unavailable or impractical. The weapon's ability to punch through walls, doors, and debris has made it standard equipment for corporate emergency response teams. Its combat applications were realized when response teams encountered armed resistance during rescue operations and discovered that a gauntlet designed to break through concrete is equally effective against body armor.",
+  "manufacturer": "Iron Point Ammunition",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — industrial/rescue tool with combat application",
+  "base_technologies": [
+    "Pneumatic ram impact system",
+    "Compressed gas piston mechanism",
+    "Armored gauntlet integration"
+  ],
+  "specifications": "coverage: Hand and forearm\nweight: 2.1 kg\npiston_force: ~2,000 N additional on impact\ngas_cartridge_capacity: 30 fires per cartridge\ncartridge_exchange: 3 seconds, one-handed\nrecharge_time: 0.8 seconds between fires\nmaterial: Hardened composite gauntlet shell",
+  "tactical_use": "The Pile Driver is deployed when obstacles must be physically broken through without tools or explosives. In rescue operations, the gauntlet punches through collapsed walls and jammed doors. In combat, the pneumatic piston delivers force that defeats any personal armor through sheer mechanical pressure. Operators learn to use the 0.8-second recharge window to reposition between strikes, developing a rhythmic engagement pattern — fire, shift, fire — that maximizes the weapon's concentrated impact while minimizing exposure to counterattack.",
+  "cultural_context": "The PG-1 has become associated with Meridian 88's emergency response culture — first responders who punch through rubble to reach survivors, breaching teams who open paths through collapsed infrastructure. The image of an armored fist breaking through a wall carries positive connotations of rescue and strength, which complicates the weapon's combat reputation. An operator wearing a Pile Driver might be there to save you or to kill you, and the equipment looks the same either way.",
+  "known_users": [
+    "Arcturus emergency response teams",
+    "Corporate rescue operators",
+    "Breaching and demolition specialists"
+  ],
+  "story_hooks": [
+    "A rescue team used PG-1 gauntlets to breach a collapsed building — but when they reached the survivors, they found evidence that the collapse was deliberately engineered to trap specific individuals. The rescue was actually an extraction.",
+    "A modified PG-1 has appeared with the piston force increased to 5,000 newtons — enough to punch through armored vehicle panels. The modification exceeds the gauntlet's structural rating, meaning the weapon may destroy itself (and the wearer's arm) on use."
+  ],
+  "ammunition_type": [
+    "Compressed gas cartridge"
+  ],
+  "tags": [
+    "weapon",
+    "melee",
+    "gauntlet",
+    "pneumatic",
+    "impact",
+    "rescue",
+    "tier 3",
+    "breaching",
+    "lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
+}

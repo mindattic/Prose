@@ -1,0 +1,45 @@
+{
+  "id": "2e6a0d9c4f817b3e5c2d0f8a1b6e4c97",
+  "name": "Ashwall Grip-Null Secondskin Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Matte charcoal-grey gloves in ultra-thin second-skin silicone-over-mesh construction, cut to mid-wrist. The outer surface is micro-textured for gecko-style dry adhesion on glass, polymer, and lacquered steel. The inner surface is lined with a print-suppression membrane that disrupts friction-ridge contact at the molecular level — no latent prints, no partial impressions.\n\nFour fingers are full-coverage; the thumb has a split-tip option for fine tool manipulation. Seams are internally bonded rather than stitched, leaving no exterior thread lines. The gloves compress to pocket-size. Street-label — no branding, no packaging.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "second-skin silicone-over-mesh",
+    "gecko-adhesion micro-texture layer",
+    "print-suppression friction membrane",
+    "internally bonded seams"
+  ],
+  "functionality": "Gecko-texture dorsal and palm grip enables adhesion on smooth vertical surfaces up to bodyweight load. Print-suppression membrane eliminates friction-ridge transfer. Split-tip thumb option allows fine manipulation without full removal. Compresses to 40mm roll for pocket carry.",
+  "what_it_says": "Someone who goes places they aren't invited and leaves no trace they were ever there.",
+  "worn_by": [
+    "thieves",
+    "infiltrators",
+    "Shelf runners",
+    "corporate spies operating off-budget",
+    "activists"
+  ],
+  "manufacturer": "Ashwall (unlicensed street label)",
+  "price_range": "Φ55–Φ130",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A print recovered at a high-profile Spire break-in matches no database — but the glove pattern left in the adhesive residue is unmistakably Ashwall.",
+    "The same street fabricator who makes Ashwall gloves is being pressured by a corponation security division to embed a tracker in the next run.",
+    "A pair is found on a Shelf kid who couldn't possibly afford them — who gave them the gloves, and what job are they being set up for?"
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "infiltration",
+    "thief",
+    "print-masking",
+    "grip-enhanced",
+    "stealth",
+    "tier-1",
+    "tier-2",
+    "street-label"
+  ],
+  "parent_corponation": ""
+}

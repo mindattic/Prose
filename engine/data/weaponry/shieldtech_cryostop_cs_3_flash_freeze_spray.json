@@ -1,0 +1,49 @@
+{
+  "id": "37c0f5b8e4a261900e7f8a9b0c1d2349",
+  "name": "ShieldTech CryoStop CS-3 Flash Freeze Spray",
+  "type": "weapon",
+  "aliases": [
+    "CS-3",
+    "freeze spray",
+    "cold stop",
+    "frostbite in a can",
+    "the icemaker"
+  ],
+  "category": "spray",
+  "description": "The ShieldTech CS-3 CryoStop is a contact cryogenic agent delivered in a high-pressure aerosol system. The active component is a rapid-expansion liquefied gas blend — a proprietary mixture of compressed dimethyl ether and supercooled tetrafluoroethane — that undergoes extreme adiabatic cooling upon release from the canister nozzle, reaching contact temperatures of -78°C to -95°C at the point of application. When directed at exposed biological tissue — skin, particularly the face, hands, and neck — the cryogenic contact produces immediate intense pain (cold allodynia response), involuntary muscular contraction, and rapid numbness as surface nerve endings are temporarily desensitized. Extended application to a single area causes superficial to moderate frostbite injury. The effect on an unprotected subject is immediate and profoundly disabling — the pain response alone is sufficient to interrupt most physical actions.\n\nThe CS-3 is positioned by ShieldTech as a situational compliance tool for scenarios where conventional aerosols are contraindicated — specifically, environments where chemical agent contamination is undesirable (medical facilities, server rooms, food handling areas) or where a subject's respiratory augmentation makes inhaled agents ineffective. The cryogenic agent disperses rapidly in open air, leaving no chemical residue and producing no lasting environmental contamination. It is also effective against some augmented subjects in a way that OC and CS sprays are not: while chrome limbs are unaffected by the cold, exposed biological tissue anywhere on the body — face, neck, the bio-mechanical interface zones — is as vulnerable to cryogenic pain as in an unaugmented person.\n\nShieldTech's safety documentation is extensive and explicit about the injury risk of the CS-3. Prolonged application — more than two seconds to a single area — risks frostbite injury. Application to eyes risks permanent corneal damage. Application to ears risks damage to the tympanic membrane. The product is sold with a clear warning that it occupies the boundary between less-lethal and injurious tools, and that operator training is mandatory for institutional purchasers.",
+  "manufacturer": "SHIELDTECH",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — requires personal protection professional certification or institutional security contractor registration; restricted from use in enclosed spaces below a specified volume due to oxygen displacement risk from propellant gases",
+  "base_technologies": [
+    "supercooled tetrafluoroethane propellant blend",
+    "dimethyl ether carrier gas",
+    "adiabatic expansion cryogenic cooling",
+    "high-pressure directed-stream aerosol"
+  ],
+  "specifications": "Active system: adiabatic expansion cryogenic aerosol\nPropellant blend: dimethyl ether / supercooled tetrafluoroethane\nContact temperature at nozzle: -78°C to -95°C\nPrimary biological effect: cold allodynia (intense pain), involuntary muscle contraction, surface numbness\nInjury threshold: superficial frostbite (>2 seconds sustained contact per area)\nEye/ear contact: risk of permanent injury — do not direct at face\nEnvironmental residue: none (rapid atmospheric dispersion)\nEffective range: 0.3–2m\nBurst duration: approx. 10 seconds full discharge\nNet volume: 150ml (high-pressure rated canister)\nPrice: Φ410",
+  "tactical_use": "Used for rapid incapacitation in environments where aerosol chemical contamination is unacceptable, or against subjects whose respiratory augmentations make inhaled agents ineffective. Preferred application targets are the back of the hand (immediate pain, grip release), the side of the neck (intense shock response), and the lower legs (pain and involuntary step-back). A one-second burst is typically sufficient to interrupt most physical actions; operators are trained to use the minimum effective duration. The CS-3 is also used in hostage scenarios to freeze restraints or bindings, exploiting its industrial application heritage.",
+  "cultural_context": "The CS-3 is called 'frostbite in a can' by the security professionals who use it, and the name has filtered into street vocabulary. Being 'cold-stopped' carries a specific reputation — it is considered a particularly brutal compliance experience, as the pain is immediate, total, and leaves marks. Some users in Tier 1 and 2 conflict zones have obtained CS-3 canisters through secondary markets and use them offensively, which ShieldTech has used as justification for tighter licensing rather than reformulation. Augmented users with chrome limbs have noted that the CS-3 makes their biological interface zones acutely painful, which they find psychologically disturbing in a way that other pain stimuli do not.",
+  "known_users": [
+    "ShieldTech institutional security clients",
+    "medical facility security personnel",
+    "data center and server room security operators",
+    "licensed executive protection specialists",
+    "secondary market users in Tier 1–2 conflict zones"
+  ],
+  "story_hooks": [
+    "A Tier 2 medical clinic reports that someone used a CS-3 on a patient in a recovery ward — the patient survived but has permanent frostbite scarring on one hand. The clinic's own security log shows no unauthorized entry. The CS-3 canister was found in a biohazard disposal bin, wiped clean, with the ShieldTech serial number intact — which means it can be traced, but the trace leads to a security contractor that the clinic insists they have never hired."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "spray",
+    "less_lethal",
+    "cryogenic",
+    "pain_compliance",
+    "tier3",
+    "aerosol",
+    "shieldtech",
+    "anti_personnel"
+  ],
+  "parent_corponation": ""
+}

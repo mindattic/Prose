@@ -1,0 +1,51 @@
+{
+  "name": "TESSERA TD-3 'Hornet'",
+  "type": "automaton",
+  "classification": "Aerial Drone — Swarm Attack",
+  "aliases": [
+    "Hornet",
+    "Buzzer",
+    "Bad Day"
+  ],
+  "manufacturer": "TESSERA",
+  "description": "The TD-3 is a palm-sized quadrotor drone carrying a single shaped charge the size of a cigarette lighter. One TD-3 is a nuisance. One hundred TD-3s is a catastrophe. TESSERA sells them in crates of 200, and their tactical value exists entirely in numbers — a swarm of Hornets can saturate an area with individually targeted explosive strikes faster than any defense system can engage them all.\n\nEach Hornet operates on a shared swarm intelligence protocol — units communicate position, target status, and threat data in real time, allowing the swarm to dynamically allocate attacks, avoid redundant targeting, and concentrate on high-value targets identified by the swarm consensus algorithm. A single operator can control an entire swarm through a tablet interface, designating zones and priority targets while the swarm handles individual engagement decisions.\n\nThe TD-3 is cheap enough to be disposable and effective enough to be terrifying. A single Hornet's shaped charge can penetrate light armor and kill an unprotected human. A swarm can overwhelm armored vehicles by targeting vision blocks, antenna arrays, and weapon systems simultaneously. The sound of 200 Hornets activating — a rising buzz that fills the air from every direction — has been described by survivors as the sound of the future coming to kill them.",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — security contractor use",
+  "autonomy_level": "Swarm autonomous with operator oversight",
+  "dimensions": "0.12m rotor span per unit",
+  "weight": "0.3 kg per unit",
+  "power_source": "Micro lithium cell, 15-minute flight time per unit",
+  "locomotion": "Quadrotor",
+  "armament": [
+    "Shaped micro-charge per unit"
+  ],
+  "sensors": [
+    "Shared swarm optical network",
+    "Acoustic target localization"
+  ],
+  "countermeasures": "Shotgun effective against individual units. EMP disables swarm communication, causing units to default to nearest-target behavior. Physical barriers (closing doors, entering vehicles) provide temporary protection. Rain significantly degrades flight performance. 15-minute battery life means surviving the swarm is theoretically possible.",
+  "known_deployments": [
+    "Corporate security rapid response",
+    "Black market distribution to criminal organizations and resistance groups",
+    "TESSERA facility defense"
+  ],
+  "story_hooks": [
+    "A crate of 200 Hornets has gone missing from a TESSERA shipment. The crate's GPS tracker was disabled. Somewhere in Meridian 88, someone has a swarm weapon and no accountability.",
+    "A TD-3 swarm attacked a Shelf market — forty people dead. TESSERA claims the units were black market knockoffs. Serial number analysis says otherwise."
+  ],
+  "cultural_context": "The Hornet has democratized aerial warfare in the worst way. A crate costs less than a used vehicle, putting military-grade swarm attack capability in the hands of anyone with enough quanta. The buzzing sound has become a cultural symbol of imminent, indiscriminate violence.",
+  "tags": [
+    "automaton",
+    "aerial",
+    "drone",
+    "swarm",
+    "explosive",
+    "weapon",
+    "war",
+    "tessera",
+    "corporate",
+    "tier 3"
+  ],
+  "id": "e328177319e0c73c2d9992528ae16787",
+  "parent_corponation": "Tessera Corponation"
+}

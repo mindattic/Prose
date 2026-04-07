@@ -1,0 +1,50 @@
+{
+  "id": "87ecb61c5667bad0d432bdcae41c13d0",
+  "name": "TESSERA PD-5 'Vapor'",
+  "type": "weapon",
+  "aliases": [
+    "Vapor",
+    "Spray Gun",
+    "Personal Cloud"
+  ],
+  "category": "spray weapon",
+  "description": "A compact chemical defense sprayer the size of a large lipstick tube, dispensing a pressurized stream of synthetic capsaicinoid compound at ranges up to 3 meters. The Vapor delivers an incapacitating chemical agent that causes immediate, severe eye pain, temporary blindness, respiratory distress, and skin irritation lasting 30-45 minutes. The synthetic formulation is 5 times more potent than natural capsaicin and includes a UV-fluorescent dye that marks the attacker's skin for 72 hours, allowing identification by law enforcement.\n\nTESSERA sells the Vapor as the lowest-escalation self-defense option — a chemical deterrent that incapacitates without injury, identifies the attacker for later apprehension, and fits in a pocket or keychain holster. The weapon has become ubiquitous among civilian populations who want protection but are uncomfortable with firearms. At Φ45, it is the cheapest branded defense product in Meridian 88.\n\nThe Vapor's most significant limitation is its vulnerability to augmentation. Targets with sealed eye protection, respiratory cyberware, or chemical-resistant dermal augmentations are minimally affected. This creates a self-defense gap: the people most likely to threaten civilians — augmented criminals — are the people least affected by the Vapor's payload. The weapon works well against unaugmented attackers, meaning it is most effective against the least dangerous threats.",
+  "manufacturer": "TESSERA",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — personal defense device",
+  "street_price": "Φ45",
+  "base_technologies": [
+    "Synthetic capsaicinoid formulation",
+    "Pressurized stream delivery",
+    "UV-fluorescent identification dye"
+  ],
+  "specifications": "range: 3 meters (pressurized stream)\neffect: Severe eye/respiratory irritation, temporary blindness\nduration: 30-45 minutes\ncharges: 10 sprays per canister\nUV dye persistence: 72 hours on skin\nweight: 30g\nlength: 80mm",
+  "tactical_use": "Personal defense against unaugmented threats at close range. The Vapor provides an immediately incapacitating effect that creates opportunity to escape. The UV dye assists law enforcement identification. Ineffective against augmented or prepared attackers.",
+  "cultural_context": "The Vapor is carried by more people in Meridian 88 than any other defense product — its low cost, small size, and non-lethal classification make it the default choice for anyone who wants some form of protection. 'Vaping someone' has entered slang as a general term for any minor, non-lethal retaliation.",
+  "known_users": [
+    "Civilian population (ubiquitous in mid-tier districts)",
+    "Students",
+    "Service industry workers",
+    "Anyone who doesn't want to carry a firearm"
+  ],
+  "story_hooks": [
+    "A batch of Vapor canisters has been found loaded with a compound far more potent than the standard formulation — causing permanent corneal damage instead of temporary irritation. The contaminated canisters are mixed into legitimate retail stock and cannot be identified without chemical analysis.",
+    "TESSERA's UV dye database — which logs every Vapor deployment through dye-pattern analysis — has been acquired by a stalking network. The database shows exactly where and when every Vapor was used, providing a map of vulnerable people and their locations."
+  ],
+  "ammunition_type": [
+    "chemical_canister"
+  ],
+  "tags": [
+    "spray",
+    "weapon",
+    "chemical",
+    "civilian",
+    "personal defense",
+    "tessera",
+    "non-lethal",
+    "common",
+    "tier 1",
+    "non_lethal"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

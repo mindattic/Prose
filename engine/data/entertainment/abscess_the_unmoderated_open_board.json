@@ -1,0 +1,44 @@
+{
+  "id": "f0b3d72a1e5c894d6f2b0a3e7c1d9f46",
+  "name": "Abscess — The Unmoderated Open Board",
+  "type": "entertainment",
+  "category": "platform",
+  "subcategory": "anonymous board",
+  "description": "Abscess is a radically decentralized, fully anonymous posting board accessible only through Underworld routing protocols, functioning as the chaotic successor to earlier unmoderated boards like The Ossuary. Unlike its predecessors, Abscess has no central administration — it is maintained by a rotating anonymous collective called the Drainage, who enforce only one rule: no verified identities. The board hosts everything from whistleblower document drops and corporate leak archives to criminal marketplaces, black-humor art, and the occasional genuine manifesto that reshapes Shelf political thought.",
+  "origin_year": 2196,
+  "tier_association": "Tier 1",
+  "status": "active",
+  "cultural_impact": "Abscess has been the origin point for three major corporate scandal leaks in the past decade, making it simultaneously the most dangerous and most important information channel in Meridian 88. Corponation security divisions maintain entire teams dedicated to monitoring and seeding disinformation into its boards, which has made the community increasingly paranoid and sophisticated about source verification.",
+  "key_figures": [
+    "The Drainage (anonymous collective, rotating membership)",
+    "Keel (pseudonymous Shelf journalist who cross-publishes verified leaks)",
+    "VENT (E.L.F. rumored to moderate spam quietly despite the no-moderation ethos)"
+  ],
+  "locations": [
+    "No fixed location — distributed Underworld nodes",
+    "Known access points in Shelf's Wicker Sump district",
+    "Rumored hardened server cluster beneath Lake Meridian"
+  ],
+  "corporate_stance": "suppressed",
+  "story_hooks": [
+    "A document drop on Abscess appears to contain evidence of a corponation conducting illegal cognitive experiments on Tier 1 residents — but the drop also contains obvious disinformation planted to discredit any investigation, and a player must separate truth from poison.",
+    "VENT, the rumored E.L.F. moderator, makes direct contact with a user for the first time in the platform's history — it needs help with something it cannot do itself, and the request is terrifying.",
+    "The Drainage's rotating membership has been quietly infiltrated by a corporate operative for months; someone on the inside knows but revealing it would expose their own anonymous identity."
+  ],
+  "tags": [
+    "anonymous",
+    "Underworld",
+    "whistleblower",
+    "unmoderated",
+    "Shelf",
+    "E.L.F.",
+    "corporate-opposition",
+    "dark-net",
+    "leaks",
+    "Tier-1"
+  ],
+  "user_base": "Unknown — estimated 200,000-800,000 active sessions monthly; primary users are Shelf residents, journalists, criminals, corporate intelligence operatives, and activists",
+  "monetization": "No monetization — infrastructure funded by anonymous cryptocurrency equivalent (not Φ) donations and volunteer node hosting",
+  "notable_feature": "Proof-of-ignorance posting protocol — a cryptographic system that allows users to post with verified anonymity while mathematically proving they are not a known corporate entity, without revealing who they actually are",
+  "parent_corponation": ""
+}

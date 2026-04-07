@@ -1,0 +1,33 @@
+{
+  "id": "b98a67860f25a63928332e69554ff778",
+  "name": "Antithesis",
+  "type": "archetype",
+  "category": "identity",
+  "description": "Defines themselves entirely by what they oppose",
+  "behavioral_signature": "Builds identity through opposition rather than affirmation",
+  "under_stress": "Without an enemy, they have no idea who they are",
+  "at_rest": "Sharply defined, clear about what they stand against",
+  "will_always": [
+    "need something to push back against"
+  ],
+  "will_never": [
+    "define themselves in positive terms"
+  ],
+  "unless": [
+    "they find something worth being for instead of against"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Contrarian",
+      "threshold": 0.8,
+      "context": "oppositional identity"
+    }
+  ],
+  "opposite_of": [
+    "Chosen One"
+  ],
+  "tags": [
+    "oppositional",
+    "reactive"
+  ]
+}

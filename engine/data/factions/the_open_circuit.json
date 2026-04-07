@@ -1,0 +1,57 @@
+{
+  "id": "83070f255b950b0d181c2137c01a5f1c",
+  "type": "faction",
+  "name": "The Open Circuit",
+  "aliases": [
+    "Open Circuit",
+    "OC",
+    "The Circuit Resistance"
+  ],
+  "motto": "They wired the cage. We cut the wires.",
+  "description": "The Open Circuit is an anti-corporate resistance cell of approximately 200 active members that conducts sabotage, propaganda, and direct action against corporate infrastructure in Meridian 88. They are not protesters. They are not activists. They are, by any honest definition, urban guerrillas — people who have decided that the corporate-sovereign system cannot be reformed from within and must be attacked until it breaks.\n\nThe Open Circuit's operations range from low-risk propaganda (graffiti, leafleting, broadcast hijacking in coordination with sympathetic factions like Null Sermons) to high-risk sabotage (destruction of corporate property, disruption of automated systems, physical attacks on security infrastructure) to occasional kinetic operations (armed confrontation with corporate security forces, typically during defensive actions when members are being arrested or facilities raided). They have killed people. They don't celebrate it, but they don't deny it either.\n\nThe cell operates in a classic resistance structure: small, autonomous units of four to eight members (called 'circuits') that plan and execute operations independently, connected to the broader organization through a communication network that insulates cells from each other. If one circuit is compromised, the others continue. This structure makes the Open Circuit resilient but also difficult to coordinate, and individual circuits occasionally conduct operations that the broader organization's leadership considers counterproductive.",
+  "ideology": "Corporate sovereignty is illegitimate. The system cannot be reformed because the system is designed to prevent reform. Direct action — including violence when necessary — is the only language corporate power understands. The Open Circuit's politics are anti-authoritarian, anti-corporate, and deliberately non-prescriptive about what should replace the current system.",
+  "territory": "No fixed territory. Circuits operate from safe houses throughout the city, with concentrations in the Shelf and Old Harbor where surveillance is thinnest.",
+  "leadership": "A figure known as 'the Conductor' provides strategic direction through encrypted communications. The Conductor's identity is unknown to most members. Below the Conductor, circuit leaders operate with significant autonomy.",
+  "methods": [
+    "Sabotage of corporate infrastructure — power systems, transportation, communications",
+    "Propaganda operations including graffiti, leafleting, and broadcast hijacking",
+    "Armed defensive actions during arrests and raids",
+    "Intelligence gathering on corporate security operations",
+    "Recruitment from disaffected corporate workers and unemployed tier-1 residents",
+    "Coordination with sympathetic factions for joint operations"
+  ],
+  "resources": [
+    "200 active members organized into autonomous circuits",
+    "Safe houses throughout the Shelf and Old Harbor",
+    "Small arms and improvised explosive capability",
+    "An encrypted communication network",
+    "The Conductor's strategic vision",
+    "Sympathizers within corporate workforces who provide intelligence"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "The Open Circuit and the United Workers Front have a complicated relationship. The UWF considers the Open Circuit reckless idealists whose violence undermines legitimate labor organizing. The Open Circuit considers the UWF reformists who legitimize the corporate system by negotiating within it. They occasionally find common cause against specific corporate actions.",
+      "tags": [
+        "political",
+        "tension"
+      ]
+    }
+  ],
+  "narrative_function": "The Open Circuit represents the point where political frustration becomes armed resistance — and the question of whether violence against an unjust system is justice or just more violence.",
+  "story_hooks": [
+    "A circuit has been compromised — an Axiom Security infiltrator has been inside for two years. The compromised circuit has information that could expose the entire network. The Conductor needs it contained before Axiom moves.",
+    "An Open Circuit operation accidentally killed a child. The cell responsible wants to take responsibility publicly. The Conductor wants it buried. The decision will define what the Open Circuit is."
+  ],
+  "tags": [
+    "faction",
+    "political",
+    "resistance",
+    "anti-corporate",
+    "sabotage",
+    "shelf",
+    "old harbor"
+  ]
+}

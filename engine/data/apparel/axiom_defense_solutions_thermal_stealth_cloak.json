@@ -1,0 +1,46 @@
+{
+  "id": "8c5f1a3e7b2d9046c8f51a3e7b2d9046",
+  "name": "Axiom Defense Solutions Thermal Stealth Cloak",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "This is not clothing. It is a wearable system. The Axiom ThermoCloak is a full-length hooded garment constructed from a phase-change metamaterial that actively disrupts thermal signature — wearing it, you appear on infrared as background noise. The outer surface can be set to passive environmental matching (not true invisibility, but significant visual disruption at range in low light). Battery life is eight hours active. The fabric is stiff at the edges and moves like a very heavy coat. It weighs four kilograms.\n\nAxiom Defense Solutions is a Corponation-tier manufacturer, and this item is technically export-controlled — civilian purchase requires a Tier 4 security clearance or a corporate sponsorship letter. In practice, maybe one in ten buyers has the paperwork. The rest acquired theirs through the grey market, which Axiom tolerates because it keeps prices high and demand mysterious. Operators, fixers, corp security, and occasionally very serious criminals wear these. You do not buy this coat because it looks good.",
+  "tier_association": "Tier 4",
+  "materials": [
+    "phase-change metamaterial",
+    "thermal disruption layer",
+    "integrated power cell",
+    "environmental-match outer surface",
+    "structural polymer edge reinforcement"
+  ],
+  "functionality": "Active thermal signature suppression; passive visual disruption in low light; 8-hour battery life; requires charging via standard power port",
+  "what_it_says": "You are a professional who needs to not be seen, and you have the resources to make that happen. Whatever you're doing, it is serious.",
+  "worn_by": [
+    "corporate operatives",
+    "high-end fixers",
+    "military contractors",
+    "black-site security",
+    "grey-market buyers with money and need"
+  ],
+  "manufacturer": "Axiom Defense Solutions",
+  "price_range": "Φ4200",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "One of these was found at a crime scene — the serial number has been physically removed, but Axiom embeds a secondary identifier in the power cell that most people don't know about",
+    "A batch of counterfeit ThermalCloaks has hit the grey market; they look identical but the thermal suppression fails randomly, which is worse than having nothing",
+    "Someone is selling these to Shelf-based resistance groups at a massive discount — Axiom wants to know who and why, and is willing to pay for that information"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "tier 4",
+    "stealth cloak",
+    "tech-enhanced",
+    "thermal suppression",
+    "military-grade",
+    "corponation",
+    "operative",
+    "restricted"
+  ],
+  "parent_corponation": ""
+}

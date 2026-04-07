@@ -1,0 +1,46 @@
+{
+  "id": "b5f2a8e4c1d7039b7e4f2a8c1d5b9e07",
+  "name": "Veltran MedSync Post-Op Compression Suit",
+  "type": "apparel",
+  "category": "base_layer",
+  "description": "Full-body compression garment in clinical off-white with color-coded gradient banding — blue at the extremities grading to warm amber at the core — indicating zone-specific compression levels. Issued post-augmentation surgery or major geneware integration. Micro-conductive threads embedded in the fabric monitor swelling, temperature differentials, and tissue resistance, transmitting passive data to a paired BCI or clinic receiver. Seams are laser-bonded rather than stitched to prevent irritation at surgical margins. Zipper channels allow access without full removal.",
+  "tier_association": "Tier 2-4",
+  "materials": [
+    "zone-graduated compression knit",
+    "micro-conductive biometric thread",
+    "laser-bonded seaming",
+    "anti-microbial synth-fiber",
+    "BCI-paired data emitter strips"
+  ],
+  "functionality": "Biometric monitoring of post-surgical sites via BCI or external receiver; graduated compression by body zone; zipper-access panels for wound care without removal; anti-microbial fabric for extended wear during recovery.",
+  "what_it_says": "You've been rebuilt recently — and whether the procedure was elective or emergency says everything about who paid for it.",
+  "worn_by": [
+    "post-augmentation surgery patients",
+    "geneware integration recovery patients",
+    "accident survivors with chrome replacement",
+    "anyone who just spent serious Φ on body modification"
+  ],
+  "manufacturer": "Veltran Medical Fabrics — Helix Corp subsidiary",
+  "price_range": "Φ120–Φ340 (sometimes covered by employer medical plans at Tier 3+)",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A Tier 2 factory worker is wearing a Veltran suit weeks after their employer's mandatory chrome-arm replacement — the biometric data it's been logging would be very interesting to a labor attorney.",
+    "The clinic that issued this suit closed suddenly; the data receiver it paired to is now broadcasting to an unknown address.",
+    "Someone is wearing this under street clothes, months past any normal recovery window — either they never healed right, or they don't want anyone to know what was done to them."
+  ],
+  "tags": [
+    "apparel",
+    "base_layer",
+    "medical",
+    "compression",
+    "biometric",
+    "aug-compatible",
+    "gene-compatible",
+    "tier-2",
+    "tier-3",
+    "tier-4",
+    "post-op"
+  ],
+  "parent_corponation": ""
+}

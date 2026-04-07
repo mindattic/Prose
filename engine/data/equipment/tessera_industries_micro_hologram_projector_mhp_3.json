@@ -12,7 +12,7 @@
   ],
   "category": "tools",
   "description": "A pocket-sized holographic projector that creates a 30 cm cube of volumetric imagery, sufficient for displaying 3D maps, schematics, faces, or small-scale tactical models. The MHP-3 is a personal information display device that replaces flat screens with true 3D visualization, interfacing with neural implants for direct data input. Users project building blueprints, rotate 3D models of equipment, display facial identification holos, and visualize tactical situations in miniature. The device has become standard professional equipment for engineers, investigators, and tactical planners.",
-  "manufacturer": "TESSERA INDUSTRIES",
+  "manufacturer": "Vasquez Biocompatible Materials",
   "tier_availability": "Tier 2+",
   "legality": "Unrestricted — display device",
   "base_technologies": [],
@@ -39,5 +39,6 @@
     "crime",
     "neural",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

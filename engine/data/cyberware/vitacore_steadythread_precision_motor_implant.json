@@ -1,0 +1,57 @@
+{
+  "id": "5d2b9e4f7a1c08e3b6d2f5a9c3e7b104",
+  "name": "VitaCore SteadyThread Precision Motor Implant",
+  "brand_name": "VitaCore",
+  "product_name": "SteadyThread Precision Motor Implant",
+  "type": "cyberware",
+  "aliases": [
+    "the thread",
+    "glass hands",
+    "silk fingers",
+    "steadies",
+    "the wire"
+  ],
+  "category": "professional",
+  "body_location": "bilateral forearm and hand — subdermal along flexor and extensor tendon pathways, wrist ganglia, and palmar fascia",
+  "description": "SteadyThread is a subdermal neuromusculoskeletal dampening system installed bilaterally along the forearms and hands, running micro-actuator threads alongside the major flexor and extensor tendons from mid-forearm through the palmar fascia and into the proximal finger joints. The system interfaces with the peripheral nervous system at the wrist ganglia to monitor and modulate involuntary motor tremor in real time. When the embedded sensor network detects unintentional micro-movement — tremor from fatigue, caffeine, cold, stress, or essential tremor conditions — the actuator threads provide counter-tension corrections at sub-millimeter precision, effectively canceling the unwanted motion before it propagates to the fingertips. The system is passive by default and requires no conscious activation; it operates continuously during fine motor tasks. A sensitivity dial accessible via the companion app allows users to tune the correction threshold, from light smoothing suitable for baristas and tattooist artists to maximum stabilization used by surgeons and microsystem technicians. The implant does not augment strength and does not interfere with normal grip or gross motor movement.\n\nSteadyThread is purchased by an extraordinarily wide range of professionals in Meridian 88. Surgeons and field medics use it to maintain precision during long procedures or in chaotic environments. Tattoo artists, jewelers, watchmakers, and instrument repair technicians rely on it to maintain the quality of fine work across an eight-hour session when hand fatigue would otherwise degrade their output. Baristas at competitive coffee establishments — where latte art and precise pour weights are a point of professional pride — get it as a career investment. Older workers with early-onset essential tremor use it to extend their professional lives by a decade or more. In creative communities, it has become something of a quiet status symbol among artisans who take their craft seriously, though many are careful not to advertise it, not wanting clients to wonder whether the work is the artist's or the implant's.",
+  "manufacturer": "VITACORE",
+  "tier_availability": "Tier 2-4",
+  "legality": "Unrestricted",
+  "installation_requirements": "Outpatient clinic with a certified biotech installer; bilateral installation takes approximately 2 hours; local anesthetic standard; same-day discharge",
+  "rejection_risk": "Minimal",
+  "maintenance": "Bi-annual firmware calibration sync; actuator thread integrity check every 3 years; no external battery — system harvests from forearm muscle myoelectric activity",
+  "specifications": "{\"coverage\": \"bilateral forearm to fingertip\", \"actuator_threads\": \"144 per arm, shape-memory polymer composite\", \"tremor_detection_threshold\": \"0.08mm unintentional displacement\", \"correction_latency\": \"<12ms\", \"sensitivity_modes\": \"5 preset profiles plus custom tuning via app\", \"power_source\": \"myoelectric harvesting from forearm musculature\", \"interface_points\": \"wrist radial and ulnar ganglia\", \"compatible_with\": \"VitaCore BioApp 4.x and above\"}",
+  "side_effects": [
+    "mild tingling in the fingers during the first week of integration, especially in cold environments",
+    "brief adaptation period of 10–14 days during which fine motor tasks may feel slightly unfamiliar as the nervous system adjusts to corrective feedback",
+    "rare reports of hypersensitivity to thread tension during high-stress situations if sensitivity is set too high",
+    "occasional phantom correction sensation — the feeling of the implant activating when no tremor is present ��� reported in approximately 8% of users during the first month"
+  ],
+  "cultural_context": "SteadyThread occupies an interesting social position in Meridian 88 because it crosses class and professional lines in a way few implants do. On the Shelf, it is sometimes acquired second-hand or through grey-market installers by workers who need it to maintain employability — an older dock hand whose hands shake from years of cold exposure, a freelance tailor who can't afford to lose clients to unsteady stitching. In Tier 3 and 4 professional contexts, it is discussed openly and sometimes listed as a credential, the way certifications once were. Among artists and craftspeople, there is a genuine ongoing debate about disclosure: purists argue that implant-assisted work should be labeled as such, while pragmatists point out that no one asks whether a surgeon used a robotic assist or whether a musician's instrument was digitally tuned. The debate has not resolved and probably won't.",
+  "known_users": [
+    "surgeons and field medics",
+    "tattoo artists and body modification specialists",
+    "jewelers and watchmakers",
+    "baristas and competitive food service professionals",
+    "microsystem and electronics repair technicians",
+    "older professionals managing essential tremor",
+    "instrument makers and luthiers"
+  ],
+  "story_hooks": [
+    "A celebrated tattoo artist in Tier 3 is being sued by a client who discovered mid-session that the artist uses SteadyThread — the client argues the work is not authentically human and demands a refund; the artist asks the players to help dig up evidence that the client's own attorney has a SteadyThread implant, making the lawsuit hypocritical and potentially embarrassing.",
+    "A black-market firmware patch for the SteadyThread is circulating in surgical communities that removes the correction ceiling and allows the implant to actively guide hand movements rather than just stabilize them — effectively turning it into a remote-controllable surgical assist, raising the question of who is really performing the operation.",
+    "A VitaCore quality control failure has caused a batch of SteadyThread units to develop erratic actuator behavior, causing involuntary hand spasms in affected users — and one of those users is a surgeon mid-way through a waiting list of critical procedures."
+  ],
+  "street_price": "Φ700–Φ1,200",
+  "licensed_price": "Φ1,800–Φ2,800",
+  "tags": [
+    "cyberware",
+    "professional",
+    "lifestyle",
+    "precision",
+    "motor-control",
+    "forearm",
+    "artisan"
+  ],
+  "parent_corponation": ""
+}

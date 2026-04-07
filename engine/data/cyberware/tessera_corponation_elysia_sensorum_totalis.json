@@ -1,0 +1,57 @@
+{
+  "id": "a3f7c2e1b849d065f3a1c7e2b04d9f83",
+  "name": "TESSERA CORPONATION Elysia Sensorum Totalis",
+  "brand_name": "TESSERA CORPONATION",
+  "product_name": "Elysia Sensorum Totalis",
+  "type": "cyberware",
+  "aliases": [
+    "The Total",
+    "Elysia Prime",
+    "Sensorum"
+  ],
+  "category": "bci",
+  "body_location": "cranial",
+  "description": "The Elysia Sensorum Totalis is TESSERA CORPONATION's most ambitious luxury BCI offering, produced in a strictly limited run of 47 units under the personal supervision of Chief Neurosculptor Dr. Aveline Morrow. The implant integrates a 96-channel full-spectrum sensory encoding array capable of recording and playing back experience at what TESSERA terms 'perceptual fidelity'—a proprietary resolution standard that captures not merely the five classical senses but also interoceptive states, proprioceptive orientation, emotional valence markers, and the subtle electrochemical texture of memory formation itself. The hardware substrate is grown from bespoke neuro-lattice crystal seeded with the client's own neural stem cells over a 14-week cultivation period, virtually eliminating rejection risk. Playback is delivered via a dedicated cortical projection matrix embedded at the junction of the parietal and occipital lobes, capable of rendering stored experience so completely that subjects in controlled trials reported inability to distinguish recorded memory from live perception for durations exceeding 40 minutes.\n\nThe Sensorum Totalis has become the defining status object of Meridian 88's upper stratum—not a tool, but a declaration. To own one is to announce that your experiences are worth archiving at a resolution most people will never perceive even in life. Collectors of 'experiential recordings' trade Elysia-captured moments the way previous centuries traded fine art: a 12-minute recording of a private concert performed for three people aboard a station in the Kuiper Belt sold at the Voss Meridian auction house for Φ800,000. Critics in the Undercroft call it 'memory imperialism,' the reduction of lived experience to luxury commodity. Owners, almost universally, do not care.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 5 — Luxury/Exotic. Limited run of 47 units. Waitlist closed; secondary market only.",
+  "legality": "Licensed — Class IV Sensory Recording Device. Recording of third parties without consent constitutes criminal breach under Meridian Cognitive Privacy Statute 7.3.",
+  "installation_requirements": "14-week pre-installation neural stem cell cultivation. Minimum 3 neurosurgical sessions across 6 weeks. Requires TESSERA-certified Platinum installation suite. Mandatory post-installation perceptual calibration program (30 days).",
+  "rejection_risk": "Negligible (<0.3%) — autologous neuro-lattice substrate eliminates primary immunological rejection vectors.",
+  "maintenance": "Biannual TESSERA clinic recalibration (Φ12,000 per session). Proprietary enzymatic flush every 90 days. Firmware updates delivered via encrypted TESSERA neural channel.",
+  "specifications": "{\"sensory_channels\": 96, \"recording_fidelity\": \"Perceptual-Grade (TESSERA proprietary standard)\", \"storage_capacity\": \"18 petaneurons encoded, approximately 6,000 hours at full fidelity\", \"playback_resolution\": \"Indistinguishable from live perception up to 40 minutes sustained\", \"substrate\": \"Autologous neuro-lattice crystal, bespoke cultivation\", \"emotional_encoding\": true, \"interoceptive_capture\": true, \"proprioceptive_capture\": true, \"memory_formation_texture_capture\": true, \"external_transfer\": \"TESSERA Closed-Loop Encrypted Protocol only\", \"power_source\": \"Bioelectric with inductive supplement\", \"production_run\": 47, \"weight_implanted\": \"3.1g\"}",
+  "side_effects": [
+    "Temporal dissociation during high-fidelity playback — subjects may lose track of elapsed real time for up to 2 hours post-session",
+    "Persistent sensory enhancement between recording sessions — heightened baseline perception reported as both gift and burden",
+    "Occasional spontaneous micro-playback events ('memory bleed') during periods of emotional stress, lasting 3–8 seconds",
+    "Long-term users (3+ years) report a growing aesthetic dissatisfaction with unrecorded experience, as if unarchived moments feel 'lesser'"
+  ],
+  "cultural_context": "Within Meridian 88's luxury tier, the Sensorum Totalis occupies a cultural position analogous to a Renaissance patron's commissioned portrait—an assertion that one's inner life is precious enough to preserve at enormous cost. The 'Elysia circuit,' an informal social network of owners, shares curated experiential recordings at private salons aboard the station's upper residential rings. These events have attracted both reverence and controversy, with ethicists questioning whether the commercialization of subjective experience represents the final frontier of late-capitalist commodification.",
+  "known_users": [
+    "Councilor Petra Vance-Oduya (rumored, unconfirmed)",
+    "Collector and gallerist Soren Halcourt",
+    "Anonymous — 'The Archivist,' known only through secondary market recordings"
+  ],
+  "story_hooks": [
+    "A Sensorum Totalis recording surfaces on the black market containing what appears to be the full subjective experience of a murder — but the recording's owner insists the memory is not their own, and the TESSERA cultivation records have been tampered with.",
+    "One of the 47 units was never officially assigned to a client. Its activation signature has just appeared on TESSERA's network from inside the Undercroft.",
+    "An 'experiential recording' sold at auction for Φ1.2 million contains embedded within its emotional-valence layer what cryptographers believe is an encrypted message — but decoding it requires experiencing the full 6-hour recording, and the last three people who tried have not been seen since."
+  ],
+  "street_price": "Φ1,800,000",
+  "licensed_price": "Φ2,200,000",
+  "tags": [
+    "cyberware",
+    "bci",
+    "luxury",
+    "exotic",
+    "tier5",
+    "sensory-recording",
+    "full-fidelity",
+    "limited-run",
+    "tessera",
+    "experiential",
+    "memory",
+    "collector",
+    "luxury_exotic"
+  ],
+  "parent_corponation": "Tessera Corponation"
+}

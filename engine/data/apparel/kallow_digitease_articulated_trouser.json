@@ -1,0 +1,38 @@
+{
+  "id": "5d2b8e0a1c3f47690e1b2d3a4c5f6e78",
+  "name": "Kallow DigitEase Articulated Trouser",
+  "type": "apparel",
+  "category": "pants",
+  "description": "Cut specifically for digitigrade legs, these trousers have an elongated lower leg with a sharply angled hem that sits flush against a raised heel stance. The knee joint is set high and the calf panel is dramatically tapered to follow the reverse-bend anatomy. Available in a warm oat canvas. They look strange on a standard body; on a digitigrade wearer, they look right.",
+  "tier_association": "Tier 3",
+  "materials": [
+    "stretch canvas",
+    "segmented knee panel",
+    "flat-lock seaming"
+  ],
+  "functionality": "Digitigrade-specific cut with articulated knee placement and angled hem; not functional on standard bipedal anatomy",
+  "what_it_says": "You invested in clothes that actually fit you, which takes either money or self-respect — probably both.",
+  "worn_by": [
+    "digitigrade geneware users",
+    "mid-tier professionals with leg mods",
+    "people tired of ill-fitting alterations"
+  ],
+  "manufacturer": "Kallow",
+  "price_range": "Φ78",
+  "aug_compatible": false,
+  "gene_compatible": true,
+  "story_hooks": [
+    "A tailor in Tier 2 makes near-identical knockoffs but slightly wrong — the knee joint is 2cm off and causes joint pain after a full shift.",
+    "The only person in a room wearing these correctly-fitted trousers stands out immediately as someone who can afford to care."
+  ],
+  "tags": [
+    "apparel",
+    "pants",
+    "tier 3",
+    "gene-compatible",
+    "digitigrade",
+    "geneware",
+    "specialty cut"
+  ],
+  "parent_corponation": ""
+}

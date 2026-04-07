@@ -1,0 +1,55 @@
+{
+  "id": "e9b3a7f2c04d1e8b5a9f3c6d2e0b7481",
+  "name": "Ironveil Chrome-Splice Street Rig",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "On the Shelf, salvaged augmentation hardware gets repurposed — not always for function, sometimes for identity. This outfit is built around that principle. The base is a sleeveless ribbed tank in dark gray thermal synth-cotton, its back cut open along the spine in a wide channel sealed with hook-and-loop closures — aug-compatible for spinal rig wearers, though this particular wearer uses the channel to route a non-functional decorative spine rail salvaged from a discarded medical-grade aug frame. The chrome piece runs from the mid-back to just below the neck, its surface scratched and dull, a few indicator lights that no longer illuminate. Over the tank, an open-front vest in black faux-leather hangs loose, its lapels weighted with salvaged circuit board fragments wired together as decorative trim — green PCB against black synthetic, soldered at the edges. The arms are bare from the shoulder, exposing a left arm with two chrome band prosthetic segments just below the elbow — functional, basic-grade, the housing scuffed and re-painted matte black with what appears to be spray paint. The right arm is fully biological, tattooed in dense black geometric patterns from wrist to shoulder that echo the circuit board trim on the vest. High-waist trousers in stiff dark indigo canvas are belted with a wide industrial webbing belt bearing five utility clips. Boots are heavy platform-soled lace-ups in black synthetic leather, the platform built up with layers of cut rubber sheeting and wrapped in black tape — DIY height, DIY intimidation. The face is half-obscured by a single-lens optical piece — not a full BCI visor, just a salvaged single ocular unit worn over the left eye, its housing cracked but the lens still tinted gold.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "thermal synth-cotton",
+    "hook-and-loop closure strip",
+    "salvaged medical aug chrome",
+    "black faux-leather",
+    "salvaged PCB circuit board fragments",
+    "solder wire",
+    "chrome prosthetic housing",
+    "spray paint",
+    "dark indigo canvas",
+    "industrial webbing",
+    "black synthetic leather",
+    "cut rubber sheeting",
+    "black tape",
+    "salvaged optical unit housing"
+  ],
+  "functionality": "Spinal channel accommodates aug rigs or decorative hardware. Open-front vest allows rapid layering removal. Aug-compatible arm construction accommodates prosthetic right up to elbow joint with full shoulder mobility. Utility belt clips carry tools and small gear. Platform soles add height and protect feet from chemical pooling on Shelf grating. Single ocular unit provides basic light filtering in bright industrial zones.",
+  "what_it_says": "Chrome is status on the Shelf — not because it means wealth, but because it means you've dealt with something serious enough to require replacement parts and survived it. The decorative use of salvaged aug hardware says this wearer understands the aesthetics of augmentation even without the budget for functional upgrades. The mix of biological tattoo patterns and chrome trim is a statement: flesh and machine, both marked, both deliberate.",
+  "worn_by": [
+    "Shelf-side augmentation enthusiasts",
+    "chrome scrappers",
+    "people with basic-grade functional prosthetics",
+    "Shelf gang periphery members",
+    "young Shelf residents building an identity around aug culture"
+  ],
+  "manufacturer": "Vest base: unknown street label; chrome hardware: salvaged aug surplus; remainder self-assembled",
+  "price_range": "Φ20–Φ55 (chrome hardware drives cost up)",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The decorative spine rail is recognized by a Lazarus MedCore technician as part of a spinal stabilization frame from a patient who was discharged three years ago and never returned for the hardware — the patient's file is flagged as a missing persons case.",
+    "The cracked gold-lens ocular unit, despite its broken housing, is still partially active and has been passively logging visual data for an unknown network — someone has been watching through this wearer's eye without their knowledge.",
+    "A Shelf chrome trader offers an unexpectedly large sum for the PCB circuit board trim on the vest lapels — not for the boards themselves, but for a single chip soldered among them that the wearer assumed was dead."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier_1",
+    "aug_compatible",
+    "chrome_aesthetic",
+    "salvaged_hardware",
+    "prosthetic",
+    "identity",
+    "street_fashion"
+  ],
+  "parent_corponation": ""
+}

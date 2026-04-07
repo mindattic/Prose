@@ -1,0 +1,43 @@
+{
+  "id": "a3f8c2e1d94b7065f2a1c8e3b5d09471",
+  "name": "Holstrom Lakefront Parka",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "A serious working parka designed for the brutal winter winds that come screaming off Lake Michigan through the Shelf and lower Tier 2 corridors. Cut long to the mid-thigh, it features a quilted recycled-fiber shell in faded olive or slate gray, with a massive hood that cinches down to a face-width opening via toggle cord. The exterior is treated with a durable water repellent finish that gets re-applied every season — or doesn't, and the coat just gets heavier when wet. Interior has two deep hand-warmer pockets and a chest pocket sized for a commlink. The stitching is thick and doubled at stress points.\n\nHolstrom is a mid-tier Scandinavian-heritage brand that set up manufacturing in the corridor decades ago. Their parkas are not stylish. They are warm. The fill is a synthetic duck-down analog rated to minus twenty Celsius, and the outer fabric is tough enough to shrug off light debris and the occasional grabbed fence. Shelf residents layer these over everything in winter. Couriers swear by them. You see them at bus stops, at processing plant gates, at Tier 2 market stalls — functional, honest, slightly shapeless.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "recycled polyester shell",
+    "synthetic down fill",
+    "durable water repellent treatment",
+    "nylon lining"
+  ],
+  "functionality": "",
+  "what_it_says": "You dress for the weather, not for appearances. Practicality over everything.",
+  "worn_by": [
+    "Shelf residents",
+    "Tier 2 workers",
+    "couriers",
+    "dock workers",
+    "market vendors"
+  ],
+  "manufacturer": "Holstrom Outerwear",
+  "price_range": "Φ68",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A courier's parka has a hidden interior seam that's been carefully unseamed and re-sewn — something was smuggled in the lining, and the coat changed hands before delivery",
+    "Holstrom quietly discontinued this model two seasons ago; remaining stock is selling fast, and a Tier 2 neighborhood collective is trying to pressure the company to resume production before winter hits",
+    "A character finds a name and a Tier 3 address written in permanent marker inside the collar — someone who used to own this coat lived very differently"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "tier 2",
+    "parka",
+    "winter",
+    "practical",
+    "working class",
+    "lakefront"
+  ],
+  "parent_corponation": ""
+}

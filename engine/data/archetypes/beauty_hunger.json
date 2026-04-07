@@ -1,0 +1,33 @@
+{
+  "id": "6ae9a459fa8586280a6b3a3b70c5a158",
+  "name": "Beauty Hunger",
+  "type": "archetype",
+  "category": "desire",
+  "description": "Needs to create or find beauty in a world that produces mostly ugliness",
+  "behavioral_signature": "Gravitates toward aesthetic experience and creates it where none exists",
+  "under_stress": "Retreats into aesthetics to avoid engaging with the ugly truth",
+  "at_rest": "Curates their environment, appreciates craft, creates small beautiful things",
+  "will_always": [
+    "seek out or create beauty"
+  ],
+  "will_never": [
+    "accept ugliness when transformation is possible"
+  ],
+  "unless": [
+    "beauty is a distraction from someone who needs help right now"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Beauty Seeker",
+      "threshold": 0.9,
+      "context": "aesthetic drive"
+    }
+  ],
+  "opposite_of": [
+    "Nihilist"
+  ],
+  "tags": [
+    "aesthetic",
+    "creative"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "066cc14bc0f46072174a1582fce6713c",
+  "name": "Power Broker",
+  "type": "archetype",
+  "category": "power",
+  "description": "Trades in favors, debts, and leverage like currency",
+  "behavioral_signature": "Connects people who need each other and takes a cut",
+  "under_stress": "Calls in every favor at once, burning their network",
+  "at_rest": "Cultivates relationships with people on every side",
+  "will_always": [
+    "know who owes whom"
+  ],
+  "will_never": [
+    "do anything for free"
+  ],
+  "unless": [
+    "the investment creates a debt worth more than the cost"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Info Broker",
+      "threshold": 0.8,
+      "context": "leverage trading"
+    }
+  ],
+  "opposite_of": [
+    "Altruist"
+  ],
+  "tags": [
+    "connected",
+    "transactional"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "b3e2f187424c368a542424d88fc44c80",
+  "name": "Paranoid Scanner",
+  "type": "archetype",
+  "category": "fear",
+  "description": "Eyes always moving, always looking for the threat that's definitely coming",
+  "behavioral_signature": "Assesses every room for exits, every person for danger",
+  "under_stress": "Sees enemies everywhere, trusts no one, strikes preemptively",
+  "at_rest": "Vigilant, prepared, exhausting to be around",
+  "will_always": [
+    "check the corners and the exits"
+  ],
+  "will_never": [
+    "sit with their back to a door"
+  ],
+  "unless": [
+    "they're with the one person they've decided to trust completely"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Prepared",
+      "threshold": 0.7,
+      "context": "hypervigilance"
+    }
+  ],
+  "opposite_of": [
+    "Innocent"
+  ],
+  "tags": [
+    "hypervigilant",
+    "suspicious"
+  ]
+}

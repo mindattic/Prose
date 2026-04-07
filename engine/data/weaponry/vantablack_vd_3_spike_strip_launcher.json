@@ -1,0 +1,49 @@
+{
+  "id": "fd27863d26a2bdf656d5867be88adc70",
+  "name": "Vantablack VD-3 'Spike Strip Launcher'",
+  "type": "weapon",
+  "aliases": [
+    "Spike Strip",
+    "Tire Shredder",
+    "Road Tax"
+  ],
+  "category": "vehicle-mounted weapon",
+  "description": "A rear-facing pneumatic launcher that deploys articulated spike strips from a vehicle's undercarriage, throwing them onto the road surface behind the vehicle where they unfold into 3-meter-wide barriers studded with hardened steel spikes. Each spike is designed to penetrate standard vehicle tires and embed itself in the rubber, creating progressive deflation that disables the pursuing vehicle over 200-400 meters rather than causing an instant blowout that could result in a crash dangerous to bystanders.\n\nVantablack designed the VD-3 as a less-kinetic alternative to caltrops for pursuit denial — the articulated spike strips unfold in a predictable pattern rather than scattering randomly, and the progressive deflation design gives the pursuing driver time to decelerate safely. This humanitarian consideration exists because Vantablack's legal team calculated that the liability from spike-strip-caused pileups would exceed the product's revenue within two years of deployment. The 'safe' deflation design is a business decision, not a moral one.\n\nThe VD-3 carries four spike strips, deployable individually or in rapid sequence. A full deployment creates a 12-meter zone of tire-destroying obstacles that effectively blocks a two-lane road. The strips' articulated design means they lie flat against the road surface after deployment, presenting a low visual profile that drivers may not notice until they're on top of them. Recovery requires a specialized tool that disarms the spring-loaded spike mechanism — running over a deployed strip a second time drives the spikes deeper rather than flattening them.",
+  "manufacturer": "Vantablack Foundation for Media Literacy",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — vehicle countermeasure permit required",
+  "street_price": "Φ8,000 (installed, reload strips Φ400 each)",
+  "base_technologies": [
+    "Articulated spike strip design",
+    "Progressive deflation engineering",
+    "Pneumatic rear deployment"
+  ],
+  "specifications": "strip width: 3 meters\nspike material: Hardened steel\ndeflation type: Progressive (200-400m to full deflation)\ncapacity: 4 strips\ndeployment: Pneumatic rear launcher\ntotal system weight: 25 kg\nrecovery: Requires specialized disarming tool",
+  "tactical_use": "Pursuit denial and road denial. Operators deploy spike strips to disable pursuing vehicles without causing catastrophic accidents. Effective against conventional wheeled vehicles. Ineffective against vehicles with solid tires, tracked vehicles, or airborne pursuit.",
+  "cultural_context": "The VD-3 is the most socially responsible vehicle weapon in Meridian 88 — a product designed to disable pursuit without killing bystanders, created not out of conscience but out of liability calculation. It is a weapon that exists because someone did the math on wrongful death lawsuits and decided that progressive deflation was cheaper than legal settlements.",
+  "known_users": [
+    "VIP transport services",
+    "Corporate courier vehicles",
+    "Cash-transit vehicles",
+    "High-end criminal vehicles"
+  ],
+  "story_hooks": [
+    "A VD-3 spike strip has been found deployed on a residential street — not behind a fleeing vehicle, but placed deliberately across a road used by a specific corporate executive's daily commute. The progressive deflation is designed to disable the vehicle exactly at a predetermined point where an ambush team is waiting.",
+    "Modified VD-3 strips have appeared with the progressive deflation feature disabled — the spikes cause instant blowouts at speed, turning a pursuit denial tool into a vehicle destruction weapon. The modification is a firmware change, suggesting someone with access to Vantablack's software."
+  ],
+  "ammunition_type": [
+    "spike_strip"
+  ],
+  "tags": [
+    "vehicle",
+    "weapon",
+    "spike",
+    "pursuit-denial",
+    "defensive",
+    "vantablack",
+    "road",
+    "tier 3",
+    "lethal"
+  ],
+  "parent_corponation": "Vantablack Media"
+}

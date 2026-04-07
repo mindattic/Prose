@@ -1,0 +1,54 @@
+{
+  "id": "c8b4a0f3e6d2917b5c3f0e8a1d4b6729",
+  "name": "Slagside Scrapper's Half-Plate",
+  "type": "apparel",
+  "category": "outfit",
+  "description": "Built for the reclaimed industrial zones where the Shelf bleeds into active demolition corridors — places where falling debris, chemical runoff, and territorial disputes are all equally lethal. The foundation is a long-sleeve shirt in thick faded black synthetic, the kind of fabric that starts stiff and softens over years of wear; this one is soft. Over it, a sleeveless work jacket in rust-orange canvas has been armored with salvaged panel sections: the left shoulder carries a curved piece of hard composite cut from what was clearly once a vehicle door interior, strapped in place with three-point industrial webbing. The right shoulder is open — a deliberate choice, the straps there cut away to accommodate a chrome arm prosthetic that extends from just below the shoulder, matte-finished with the manufacturer's markings ground off, fingers worn smooth at the tips from use. The jacket's front is asymmetrically buttoned, the left side carrying six functioning cargo pockets, the right kept clear for arm movement. Trousers are combat-cut in worn olive, the thighs and shins reinforced with segments of rubber conveyor belt stitched over the original fabric, the knees blown out and repaired with self-repair tape that has yellowed and is beginning to peel at one edge. A thick belt in cracked brown synthetic leather carries a multi-tool in a molded holster, a small medical kit in a battered tin, and two more pockets whose contents make rectangular outlines under the flap. Boots are mid-calf, steel-reinforced at the toe, the right boot modified with a wider toe box to accommodate what looks like the beginning of a toe-chrome situation — a single augmented toe visible at the boot's open vamp when the laces are loose. A dented matte-black hard hat hangs from the belt by a clip, not worn, just carried.",
+  "tier_association": "Tier 1",
+  "materials": [
+    "thick faded black synthetic long-sleeve",
+    "rust-orange canvas work jacket",
+    "salvaged vehicle composite shoulder armor",
+    "industrial three-point webbing",
+    "matte chrome arm prosthetic (personal aug)",
+    "worn olive combat-cut trousers",
+    "rubber conveyor belt reinforcement panels",
+    "yellowing self-repair tape",
+    "cracked brown synthetic leather belt",
+    "mid-calf steel-toe boots with modified vamp",
+    "molded multi-tool holster",
+    "battered tin medical kit"
+  ],
+  "functionality": "Composite shoulder armor provides impact and shrapnel resistance on the dominant-side. Chrome arm prosthetic is fully functional with ground-off identifying marks (unregistered aug). Rubber-reinforced trouser panels protect against abrasion and minor chemical splash. Belt system distributes essential tools and medical supplies across the waist for fast access. Steel-toe boots protect against falling debris. Wide-vamp right boot accommodates partial toe augmentation without restricting movement. Hard hat carried rather than worn signals the wearer moves between active and passive hazard zones frequently.",
+  "what_it_says": "This person works the demolition corridors and scrap fields, probably without a permit. The unregistered chrome arm says they can't afford authorized aug maintenance and don't want to be tracked by the corponation that made it. The asymmetry of the jacket — armored left, open right — is a practical adaptation that also reads as a signature. The dented hard hat on the belt rather than the head is a Shelf joke: I know the rules, I just choose when to follow them.",
+  "worn_by": [
+    "unlicensed demolition scrappers",
+    "Shelf salvage crew members",
+    "unregistered aug users who work physical labor",
+    "territorial enforcers in industrial Shelf zones"
+  ],
+  "manufacturer": "Self-assembled; jacket is unmarked factory seconds; armor panel is cut salvage; chrome arm is black-market aug of unknown origin with identifying marks removed",
+  "price_range": "Φ25–Φ60 for clothing components; chrome arm separately valued at Φ300–Φ800 on the black market",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "The chrome arm's identifying marks were ground off, but a corponation security division has a new scanning protocol that reads sub-surface serial numbers — and this arm just pinged in a system the wearer didn't know existed.",
+    "The salvage crew this person works with found something in a demolition site that they weren't supposed to find, and now someone is trying to determine exactly who was on the crew that day.",
+    "The dented hard hat has a sticker on the inside brim — a Shelf gang territorial mark that the wearer may not even know is there, left by a previous owner, now creating a case of mistaken affiliation."
+  ],
+  "tags": [
+    "apparel",
+    "outfit",
+    "shelf_street",
+    "tier 1",
+    "scrapper",
+    "aug-compatible",
+    "chrome arm",
+    "industrial",
+    "armored",
+    "demolition",
+    "unlicensed aug",
+    "salvage crew"
+  ],
+  "parent_corponation": ""
+}

@@ -1,0 +1,34 @@
+{
+  "id": "bf54d38a4214ac9cbc49d634045827ea",
+  "name": "Dead Inside",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Genuinely incapable of feeling emotions, not suppressing but absent",
+  "behavioral_signature": "Watches tragedy and comedy with the same blank expression",
+  "under_stress": "No change because there's nothing to amplify",
+  "at_rest": "Existing without emotional coloring",
+  "will_always": [
+    "process events intellectually rather than emotionally"
+  ],
+  "will_never": [
+    "have a genuine emotional reaction"
+  ],
+  "unless": [
+    "something so extreme it reaches whatever remains buried deep"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Numb",
+      "threshold": 0.85,
+      "context": "emotional absence"
+    }
+  ],
+  "opposite_of": [
+    "Empath"
+  ],
+  "tags": [
+    "absence",
+    "void",
+    "clinical"
+  ]
+}

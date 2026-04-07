@@ -1,0 +1,46 @@
+{
+  "id": "f1c4a8e36b07d2905e3f1c8a4b6d07e2",
+  "name": "Nullform Ghostgrip Infiltration Glove",
+  "type": "apparel",
+  "category": "gloves",
+  "description": "Featherweight operative gloves in near-black matte polymer-skin, cut close with zero-seam construction at the fingertips. The palm and finger pads are coated in a micro-textured gecko-adhesion compound that clings to glass, brushed metal, and polished concrete without residue. Print-masking is achieved through a continuous electrospun polymer film at the fingertips that conforms to the wearer's ridges without transmitting them.\n\nThin enough to feel a card-reader's surface contours. The cuff is short and elasticated — fits under sleeves without bulk. No branding visible anywhere on the glove. Sold through unlicensed channels only.",
+  "tier_association": "Tier 1-3",
+  "materials": [
+    "zero-seam polymer-skin shell",
+    "gecko-adhesion micro-textured palm coating",
+    "electrospun print-masking film",
+    "elasticated cuff"
+  ],
+  "functionality": "Gecko-adhesion grip on smooth surfaces. Electrospun fingertip film masks biometric prints. No thermal signature bleed at fingertips. Ultra-low profile under standard sleeves. Leaves no adhesive residue on surfaces.",
+  "what_it_says": "You go places you aren't supposed to and you don't leave evidence.",
+  "worn_by": [
+    "freelance infiltrators",
+    "corporate intelligence contractors",
+    "Shelf thieves",
+    "black-market couriers",
+    "off-book security testers"
+  ],
+  "manufacturer": "Nullform (unlicensed street label)",
+  "price_range": "Φ90–Φ210",
+  "aug_compatible": false,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A print-masked glove is recovered from a Tier 5 Spire vault breach — the gecko-adhesion pattern on the palm matches a specific Nullform batch traced to a single Circuit district distributor.",
+    "Someone is selling Nullform Ghostgrips with a hidden flaw: the print-masking film degrades after 40 minutes of body heat, leaving a perfect impression of the wearer's fingerprints on the last surface touched."
+  ],
+  "tags": [
+    "apparel",
+    "gloves",
+    "infiltration",
+    "tactical",
+    "print-masking",
+    "grip-enhanced",
+    "street-label",
+    "tier-1",
+    "tier-2",
+    "tier-3",
+    "unlicensed",
+    "stealth"
+  ],
+  "parent_corponation": ""
+}

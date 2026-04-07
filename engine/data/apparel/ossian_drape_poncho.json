@@ -1,0 +1,42 @@
+{
+  "id": "7d2e9b5f3a1c8d4e6f0b2a9c5d7e3f1b",
+  "name": "Ossian Drape Poncho",
+  "type": "apparel",
+  "category": "outerwear",
+  "description": "The Ossian Drape is a wide-cut woven poncho that sits somewhere between rain gear and fashion statement — which is exactly where its maker, a small Tier 2 street label out of the old Pilsen district, intended it. The textile is a dense cotton-synthetic blend in a pattern that borrows freely from Andean weaving traditions and West African kente geometry, rendered in a palette of deep ochre, black, and slate blue. It falls past the hips, has a generous neck opening reinforced with flat-felled seam work, and features two deep kangaroo-style front pockets that are actually functional rather than decorative. In light rain it sheds water reasonably well; in a downpour you will get wet, but you will look striking getting wet. Popular among artists, street vendors, and anyone who wants something that does not look like every other coat on the transit platform.",
+  "tier_association": "Tier 2",
+  "materials": [
+    "cotton-polyester blend",
+    "woven jacquard textile",
+    "flat-felled seam construction"
+  ],
+  "functionality": "",
+  "what_it_says": "You have taste that does not require a large budget. You are aware of textile traditions that predate Meridian 88 and you choose to carry them forward on your body.",
+  "worn_by": [
+    "artists",
+    "street vendors",
+    "cultural community members",
+    "students",
+    "Tier 2 creatives who spend time in Tier 3 spaces"
+  ],
+  "manufacturer": "Ossian Collective (street label, Pilsen district)",
+  "price_range": "Φ55",
+  "aug_compatible": true,
+  "gene_compatible": true,
+  "story_hooks": [
+    "Ossian Collective uses an unlicensed textile loom cooperative that has been operating in a converted warehouse for fifteen years — a corponation textile subsidiary has recently filed a noise complaint that legal observers believe is the opening move in a seizure action",
+    "A specific colorway released two seasons ago was quietly discontinued after the pattern was identified as containing a compressed data glyph — nobody has publicly claimed to know what the data encodes",
+    "The poncho's loose drape makes it popular among geneware users with minor wing or dorsal mods who find most structured outerwear unbearable — Ossian has never officially marketed to that community but is aware of it"
+  ],
+  "tags": [
+    "apparel",
+    "outerwear",
+    "Tier 2",
+    "poncho",
+    "cultural",
+    "artisan",
+    "street label",
+    "rain-resistant"
+  ],
+  "parent_corponation": ""
+}

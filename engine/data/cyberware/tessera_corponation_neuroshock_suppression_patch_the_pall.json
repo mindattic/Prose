@@ -13,7 +13,7 @@
   "category": "medical",
   "body_location": "",
   "description": "The Neuroshock Suppression Patch is a transdermal medical device developed by Tessera Corponation's medical subsidiary as a countermeasure to neurogenic shock — the systemic cardiovascular collapse that follows severe trauma to the central nervous system, particularly spinal injury, catastrophic head trauma, or neural implant cascade failure. The patch is a flexible 8cm x 6cm adhesive film containing a micro-printed neuroactive compound delivery lattice, a passive biosensor array, and a thin-film battery layer. When applied to the neck, inner forearm, or sternum, the biosensor array reads vascular resistance, skin galvanic response, and pulse pressure to detect neurogenic shock onset, at which point the patch begins staged transdermal delivery of a proprietary Tessera compound designated TC-Neuro-2: a vasopressor and autonomic stabilizer combination that counteracts the peripheral vasodilation characteristic of neurogenic shock.\n\nWhat distinguishes the Pall from generic shock treatments is its passive activation: the user does not need to trigger it. Once applied, it monitors and responds autonomously, adjusting delivery rate based on biosensor readings across a thirty-minute window. It is designed explicitly for the scenario in which a casualty is conscious but deteriorating, or unconscious with no one available to manage ongoing treatment. Tessera markets it as 'the medic that stays when the medic has to leave,' a line that field personnel find either reassuring or deeply unsettling depending on the context in which they first encountered it.\n\nThe patch is colloquially called 'The Pall' — a reference to the cloth draped over a coffin, which medics interpret in two directions: it covers you, and it marks you. Applied patches are visible on the skin, a clear signal to any medical personnel that arrives later that the casualty is in active neurogenic management. This visibility has made the Pall a grim cultural signifier in Meridian 88's combat and high-risk labor environments.",
-  "manufacturer": "TESSERA CORPONATION",
+  "manufacturer": "CogAd Platforms",
   "tier_availability": "Tier 2+",
   "legality": "Restricted",
   "installation_requirements": "",
@@ -52,9 +52,8 @@
     "clinic",
     "injury",
     "market",
-    "rain",
-    "train",
     "survival",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Tessera Corponation"
 }

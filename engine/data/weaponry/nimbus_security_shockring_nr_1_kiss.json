@@ -1,0 +1,43 @@
+{
+  "id": "a98206d972f15a01c748452744d14472",
+  "name": "Nimbus Security ShockRing NR-1 'Kiss'",
+  "type": "weapon",
+  "aliases": [
+    "Kiss",
+    "NR-1",
+    "Stun Ring",
+    "The Goodbye"
+  ],
+  "category": "self_defense",
+  "description": "A self-defense ring containing a miniaturized capacitor and twin needle electrodes concealed beneath a decorative bezel. When the wearer rotates the bezel 90 degrees with their opposite hand, the electrodes extend 3mm from the ring's surface, and a slap or grab delivers a 40,000-volt discharge directly into the attacker's skin. The discharge is sufficient to cause involuntary release of a grip, a sharp pain response, and a brief moment of muscle spasm — enough to break free from a grab and create space.\n\nNimbus Security designed the NR-1 specifically for scenarios where the victim has already been grabbed — a wrist seized, an arm held, a shoulder gripped. In these situations, the ring's electrodes are already in contact with the attacker, and activation is immediate. The ring is available in sizes 5 through 13 and in three metals: surgical steel (Φ95), titanium (Φ140), and a gold-plated variant (Φ260) that is functionally identical but aesthetically premium.\n\nThe NR-1 holds eight discharges per charge and recharges via a magnetic contact cradle included with purchase. Its limitation is power — at 40,000 volts with extremely low amperage, it causes pain and surprise but does not incapacitate. Nimbus is explicit in their marketing that the NR-1 buys you one second, and what you do with that second determines the outcome.",
+  "manufacturer": "NIMBUS SECURITY",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Micro-capacitor ring integration",
+    "Retractable needle electrodes",
+    "Magnetic contact charging"
+  ],
+  "specifications": "voltage: 40,000V\namperage: 2.1 milliamps\nelectrode extension: 3mm from bezel surface\ndischarges per charge: 8\ncharging: magnetic contact cradle\nweight: 18 g (steel), 14 g (titanium)\nsizes: 5-13\ncost: Φ95 (steel), Φ140 (titanium), Φ260 (gold-plated)\nactivation: 90-degree bezel rotation",
+  "tactical_use": "Pre-arm by rotating the bezel before entering high-risk areas. When grabbed, press the ring firmly against the attacker's skin — the palm, inner wrist, or any exposed area. The discharge causes involuntary grip release in most individuals. Immediately pull free and create distance. The NR-1 is a one-second tool — it does not incapacitate, it interrupts. Have a follow-up plan: run, deploy a secondary deterrent, or reach a secure location.",
+  "cultural_context": "The NR-1 has become particularly popular among women and smaller individuals who are disproportionately targeted for grab-and-hold assaults. Nimbus's marketing features real testimonials from people who credit the ring with helping them escape dangerous situations, and the product has developed a word-of-mouth reputation that outpaces its advertising budget. The gold-plated variant has become a popular gift in Tier 3-4 communities — a 'stay safe' present that doubles as real jewelry.",
+  "known_users": [],
+  "story_hooks": [
+    "A modified NR-1 with a data-siphon payload has been found — instead of just shocking the attacker, it injects a micro-charge that reads biometric data from skin contact, harvesting identity information during the defensive discharge.",
+    "Nimbus Security's founder was attacked despite wearing an NR-1 and is now funding development of a significantly more powerful successor — the question is whether the new device crosses the line from defense to weapon."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "weapon",
+    "self_defense",
+    "non_lethal",
+    "stun",
+    "electrical",
+    "ring",
+    "jewelry",
+    "wearable",
+    "tier_1",
+    "anti_grab"
+  ],
+  "parent_corponation": ""
+}

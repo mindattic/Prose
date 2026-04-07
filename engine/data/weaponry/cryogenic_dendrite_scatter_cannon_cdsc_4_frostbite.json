@@ -10,7 +10,7 @@
   ],
   "category": "exotic",
   "description": "The CDSC-4 operates by superchilling a proprietary suspension of metallic microfilaments to near-absolute-zero temperatures within a pressurized venting chamber, then expelling them in a radial scatter pattern via controlled cryogenic sublimation. Upon contact with biological tissue or conductive surfaces, the filaments undergo rapid thermal expansion as they absorb ambient heat, driving microscopic crystalline fractures into whatever they embed themselves in. Against unarmored targets, the result is a spreading lattice of internal micro-lacerations that are notoriously difficult to treat in field conditions.\n\nWhat distinguishes the CDSC-4 from conventional cryo-weapons is its dual-phase delivery: the initial cold scatter causes immediate tissue shock and vasoconstriction, while the rebound thermal expansion phase — occurring roughly 4-8 seconds post-impact — causes secondary internal tearing. Operators describe the effect as 'planting seeds that bloom wrong.' The weapon is also uniquely effective against electronic systems, as the filaments can bridge microcontact points inside exposed hardware before the expansion phase shorts them catastrophically.\n\nManufactured by Arcturus Defense Solutions under a classified contract that has since lapsed, the CDSC-4 entered gray-market circulation after a logistics depot breach in the Meridian 88 outer ring. It has a distinctive wide-bore hexagonal muzzle and a frosted-glass reservoir tank that glows faint blue when charged. The weapon sweats condensation in humid environments, leaving a trail of moisture that experienced operators learn to account for tactically.",
-  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "manufacturer": "Iron Point Ammunition",
   "tier_availability": "Black market",
   "legality": "Prohibited",
   "base_technologies": [
@@ -49,9 +49,10 @@
     "debt",
     "medical",
     "market",
-    "bar",
     "cold",
     "armor",
-    "drone"
-  ]
+    "drone",
+    "less_lethal"
+  ],
+  "parent_corponation": "Arcturus Defense Solutions"
 }

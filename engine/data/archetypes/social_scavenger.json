@@ -1,0 +1,34 @@
+{
+  "id": "4e871a9ecc0a4c53632f6a05a1ecab5f",
+  "name": "Social Scavenger",
+  "type": "archetype",
+  "category": "social",
+  "description": "Picks through the wreckage of failed relationships for useful contacts",
+  "behavioral_signature": "Shows up right after a breakup, firing, or fallout to befriend the leftovers",
+  "under_stress": "Becomes transparent in their opportunism and gets called out",
+  "at_rest": "Monitoring which relationships are about to end",
+  "will_always": [
+    "be there when a group fractures"
+  ],
+  "will_never": [
+    "try to prevent a useful collapse"
+  ],
+  "unless": [
+    "the group intact serves them better than the pieces"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Opportunist",
+      "threshold": 0.75,
+      "context": "social timing"
+    }
+  ],
+  "opposite_of": [
+    "Peacemaker"
+  ],
+  "tags": [
+    "opportunism",
+    "timing",
+    "wreckage"
+  ]
+}

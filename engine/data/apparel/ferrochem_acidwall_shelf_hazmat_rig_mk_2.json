@@ -1,0 +1,44 @@
+{
+  "id": "a3f7c2e1b09d4856f2a1c3e7d09b4856",
+  "name": "Ferrochem AcidWall Shelf Hazmat Rig MK-2",
+  "type": "apparel",
+  "category": "protective",
+  "description": "A full-enclosure hazmat suit built for Shelf-zone acid rain and industrial chemical exposure. Outer shell is laminated PVC-nitrile composite in oxidized amber — a color chosen because it hides staining. Seams are triple-welded with butyl tape reinforcement; most suits show darkened stress lines around the wrists and collar from repeated decontamination cycling. Hood integrates a polycarbonate visor with anti-fog coating that usually starts failing after six months.\n\nInner layer is a moisture-wicking mesh bonded to a thin neoprene barrier. Boot covers are fused to the leg panels — no separate footwear required. Designed for single-occupational-tier users who cannot afford replacements on schedule.",
+  "tier_association": "Tier 1-2",
+  "materials": [
+    "laminated PVC-nitrile composite",
+    "butyl tape-sealed seams",
+    "neoprene inner barrier",
+    "polycarbonate anti-fog visor",
+    "moisture-wicking mesh lining"
+  ],
+  "functionality": "Full chemical splash and acid rain protection rated to pH 1.5. Integrated boot covers. Visor provides basic HUD mounting rail. Pressure-release valves at wrists allow limited aug cable routing. Rated for 40-hour continuous wear before mandatory decon.",
+  "what_it_says": "You work where the air tries to kill you and you can't afford to stop.",
+  "worn_by": [
+    "Shelf-zone waste handlers",
+    "chemical runoff cleanup crews",
+    "unlicensed salvagers in contaminated zones",
+    "Tier 1 infrastructure workers"
+  ],
+  "manufacturer": "Ferrochem Industrial Supply (street-distributed, corponation surplus)",
+  "price_range": "Φ 180–Φ 340",
+  "aug_compatible": true,
+  "gene_compatible": false,
+  "story_hooks": [
+    "A worker's suit has a hand-written serial number crossed out and replaced — it's been passed down through three people, two of whom didn't make it.",
+    "Someone has been leaving deactivated suits propped upright in contaminated zones — twelve so far, each containing a folded note.",
+    "A batch of MK-2s were sold with a manufacturing defect in the butyl seam tape — someone is quietly buying them back before the failure rate becomes a story."
+  ],
+  "tags": [
+    "apparel",
+    "protective",
+    "hazmat",
+    "chemical-protection",
+    "acid-rain",
+    "shelf",
+    "industrial",
+    "full-enclosure",
+    "work-gear"
+  ],
+  "parent_corponation": ""
+}

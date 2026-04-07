@@ -1,0 +1,34 @@
+{
+  "id": "713b952b88e152ab8d078a61f6620c1f",
+  "name": "Numb",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Feels nothing and has stopped trying to feel anything",
+  "behavioral_signature": "Flat affect in situations that should provoke strong emotion",
+  "under_stress": "Numbness deepens until they're functionally dissociated",
+  "at_rest": "Still, blank, present but not there",
+  "will_always": [
+    "respond with emotional flatness"
+  ],
+  "will_never": [
+    "voluntarily seek emotional stimulation"
+  ],
+  "unless": [
+    "something shatters the numbness and they feel everything at once"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Dissociator",
+      "threshold": 0.8,
+      "context": "emotional absence"
+    }
+  ],
+  "opposite_of": [
+    "Volatile"
+  ],
+  "tags": [
+    "flatness",
+    "dissociation",
+    "absence"
+  ]
+}

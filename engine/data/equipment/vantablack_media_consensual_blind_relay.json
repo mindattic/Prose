@@ -11,7 +11,7 @@
   ],
   "category": "comms",
   "description": "The Consensual Blind Relay is a two-party encrypted communication device that functions on a mutual authentication principle — neither party can transmit until both have physically interacted with paired units within a 90-second window. This handshake requirement was originally designed for Vantablack Media's investigative journalism division, where source protection demanded that no communication could be initiated unilaterally or under duress. Each unit generates a one-time cryptographic handshake derived from both users' biometric pressure signatures, creating an encryption key that exists nowhere in either device's memory after the session ends.\n\nThe relay itself transmits over a narrow-band compressed audio channel that mimics the acoustic fingerprint of routine data telemetry — the kind of background noise that Meridian 88's mesh infrastructure produces constantly. A conversation between two CBR units looks, to any intercepting system, like a malfunctioning environmental sensor reporting ambient temperature data. Vantablack's engineers spent considerable effort ensuring the mimicry layer holds up against the city's more sophisticated traffic analysis algorithms, and the current firmware version has not been successfully de-anonymized in active testing.\n\nDespite its journalistic origins, the Blind Relay has found a far wider audience. Lawyers conducting privileged consultations, corporate defectors arranging handoffs, and couples conducting affairs in surveilled housing blocks all use variants of the same device. Vantablack officially discontinued the consumer line after regulatory pressure, but the schematics leaked within six months and third-party units now outnumber originals three to one on the gray market.",
-  "manufacturer": "VANTABLACK MEDIA",
+  "manufacturer": "Neon Arcade Interactive",
   "tier_availability": "Tier 2+",
   "legality": "Restricted",
   "base_technologies": [
@@ -58,5 +58,6 @@
     "power",
     "market",
     "tier 2"
-  ]
+  ],
+  "parent_corponation": "Vantablack Media"
 }
