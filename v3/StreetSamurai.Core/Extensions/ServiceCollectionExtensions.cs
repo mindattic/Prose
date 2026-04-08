@@ -87,6 +87,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<ViewModeService>();
+        services.AddSingleton<FactDiscoveryService>();
         services.AddSingleton<SceneContextBuilder>();
         services.AddSingleton<ConsequenceService>();
         services.AddSingleton<AmbientAnomalyService>();

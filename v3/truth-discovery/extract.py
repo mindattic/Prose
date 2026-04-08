@@ -21,7 +21,7 @@ console = Console()
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 DATA_DIR = os.getenv("DATA_DIR", "../../engine/data")
-DB_PATH = os.getenv("DB_PATH", "truth.db")
+DB_PATH = os.getenv("DB_PATH", "facts.db")
 BATCH_SIZE = int(os.getenv("BATCH_SIZE", "10"))
 
 EXTRACTION_PROMPT = """You are a fact extraction engine. Given a JSON entity from a worldbuilding database, extract every factual claim as a Subject-Predicate-Object triple.
@@ -36,7 +36,8 @@ Rules:
 - If a description contains multiple facts, extract each as a separate triple
 - Normalize numbers and units consistently
 
-Return ONLY valid JSON array of objects with keys: subject, predicate, object, sentence
+CRITICAL: Return ONLY a raw JSON array. No markdown, no explanation, no code fences.
+Each object has keys: subject, predicate, object, sentence
 The "sentence" is the natural language form: "Subject predicate object"
 
 Example input: {"name": "Hearthstone HM-7", "type": "weapon", "category": "pistol", "manufacturer": "HEARTHSTONE FIREARMS", "tier_availability": "Tier 2+", "description": "A reliable mid-range sidearm popular among Circuit workers."}
@@ -98,18 +99,38 @@ def extract_triples_via_api(entity_json, filepath):
 
             text = response.content[0].text.strip()
             # Strip markdown code fences if present
-            if text.startswith("```"):
-                text = text.split("\n", 1)[1]
-                if text.endswith("```"):
-                    text = text[:-3]
-                text = text.strip()
+            if "```" in text:
+                # Find JSON array between code fences or after them
+                import re
+                json_match = re.search(r'\[[\s\S]*\]', text)
+                if json_match:
+                    text = json_match.group(0)
+                else:
+                    text = text.replace("```json", "").replace("```", "").strip()
+
+            # Try to find a JSON array in the response
+            if not text.startswith("["):
+                import re
+                json_match = re.search(r'\[[\s\S]*\]', text)
+                if json_match:
+                    text = json_match.group(0)
 
             triples = json.loads(text)
             return triples if isinstance(triples, list) else []
 
         except json.JSONDecodeError:
-            console.print(f"  [yellow]JSON parse error on attempt {attempt + 1}[/yellow]")
-            continue
+            # Last resort: try to salvage partial JSON
+            try:
+                import re
+                json_match = re.search(r'\[[\s\S]*?\]', text)
+                if json_match:
+                    triples = json.loads(json_match.group(0))
+                    return triples if isinstance(triples, list) else []
+            except:
+                pass
+            if attempt < max_retries - 1:
+                continue
+            return []  # give up silently after all retries
         except Exception as e:
             if "overloaded" in str(e).lower() or "rate" in str(e).lower():
                 wait = (attempt + 1) * 10
@@ -171,10 +192,20 @@ def run_extraction(limit=None, repo=None, dry_run=False):
     conn = sqlite3.connect(DB_PATH)
     total_triples = 0
 
-    with Progress() as progress:
-        task = progress.add_task("Extracting triples...", total=len(files))
+    # Resume support: find already-processed files
+    c = conn.cursor()
+    c.execute("SELECT DISTINCT source_file FROM triples")
+    already_processed = {row[0] for row in c.fetchall()}
+    remaining = [f for f in files if f not in already_processed and os.path.abspath(f) not in already_processed]
 
-        for i, filepath in enumerate(files):
+    if len(remaining) < len(files):
+        skipped = len(files) - len(remaining)
+        console.print(f"  [green]Resuming: {skipped} files already processed, {len(remaining)} remaining[/green]")
+
+    with Progress() as progress:
+        task = progress.add_task("Extracting triples...", total=len(remaining))
+
+        for i, filepath in enumerate(remaining):
             try:
                 with open(filepath, "r", encoding="utf-8") as f:
                     entity = json.load(f)
@@ -194,6 +225,11 @@ def run_extraction(limit=None, repo=None, dry_run=False):
             # Rate limiting: pause between batches
             if (i + 1) % BATCH_SIZE == 0:
                 time.sleep(1)
+
+            # Checkpoint: commit every 50 files
+            if (i + 1) % 50 == 0:
+                conn.commit()
+                console.print(f"  [dim]Checkpoint: {i + 1}/{len(remaining)} files, {total_triples} triples[/dim]")
 
     # Log completion
     c = conn.cursor()
