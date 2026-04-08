@@ -15,7 +15,7 @@ from rich.table import Table
 
 load_dotenv()
 
-DB_PATH = os.getenv("DB_PATH", "truth.db")
+DB_PATH = os.getenv("DB_PATH", "facts.db")
 
 console = Console()
 
@@ -26,8 +26,8 @@ def query_subject(subject):
     c = conn.cursor()
 
     c.execute("""
-        SELECT subject, predicate, ground_truth_object, confidence, agreeing_sources, dissenting_sources, total_sources
-        FROM truth_scores
+        SELECT subject, predicate, consensus_object, confidence, agreeing_sources, dissenting_sources, total_sources
+        FROM fact_scores
         WHERE LOWER(subject) LIKE ?
         ORDER BY confidence DESC
     """, (f"%{subject.lower()}%",))
@@ -39,7 +39,7 @@ def query_subject(subject):
         conn.close()
         return
 
-    table = Table(title=f"Ground Truth: {subject}")
+    table = Table(title=f"Consensus: {subject}")
     table.add_column("Subject", style="bold")
     table.add_column("Predicate", style="cyan")
     table.add_column("Value", style="green")
@@ -65,7 +65,7 @@ def query_subject(subject):
         console.print(f"\n[red]Flagged inconsistencies ({len(flags)}):[/red]")
         for source, pred, wrong, right, conf in flags[:10]:
             source_name = os.path.basename(source)
-            console.print(f"  {source_name}: {pred} = [red]{wrong}[/red] → should be [green]{right}[/green] ({conf:.0%})")
+            console.print(f"  {source_name}: {pred} = [red]{wrong}[/red] -> should be [green]{right}[/green] ({conf:.0%})")
 
     conn.close()
 
@@ -118,8 +118,8 @@ def show_stats():
     c.execute("SELECT COUNT(*) FROM clusters")
     stats["Clusters"] = c.fetchone()[0]
 
-    c.execute("SELECT COUNT(*) FROM truth_scores")
-    stats["Ground truth claims"] = c.fetchone()[0]
+    c.execute("SELECT COUNT(*) FROM fact_scores")
+    stats["Consensus claims"] = c.fetchone()[0]
 
     c.execute("SELECT COUNT(*) FROM flagged_triples WHERE repaired = 0")
     stats["Flagged inconsistencies"] = c.fetchone()[0]
@@ -127,7 +127,7 @@ def show_stats():
     c.execute("SELECT COUNT(*) FROM flagged_triples WHERE repaired = 1")
     stats["Repaired"] = c.fetchone()[0]
 
-    c.execute("SELECT AVG(confidence) FROM truth_scores")
+    c.execute("SELECT AVG(confidence) FROM fact_scores")
     avg = c.fetchone()[0]
     stats["Average confidence"] = f"{avg:.2%}" if avg else "N/A"
 

@@ -26,8 +26,9 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    console.print("[bold red]Street Samurai — Truth Discovery Pipeline[/bold red]")
-    console.print(f"  9,600+ entity files → SPO extraction → embedding → clustering → truth scoring")
+    console.print("[bold red]Street Samurai -- Fact Discovery Pipeline[/bold red]")
+    console.print("  10,000+ entity files -> SPO extraction -> embedding -> clustering -> fact scoring")
+    console.print("  Resume-safe: restart at any time, progress is checkpointed")
     console.print()
 
     if args.phase:
@@ -59,7 +60,7 @@ def main():
         console.print("[yellow]Skipping clustering[/yellow]")
 
     # Phase 4+5: Score + Flag
-    console.rule("[bold]Phase 4: Truth Scoring[/bold]")
+    console.rule("[bold]Phase 4: Fact Scoring[/bold]")
     from score import run_scoring
     run_scoring(min_confidence=args.min_confidence)
 

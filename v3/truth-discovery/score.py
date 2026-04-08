@@ -16,20 +16,20 @@ from rich.table import Table
 
 load_dotenv()
 
-DB_PATH = os.getenv("DB_PATH", "truth.db")
+DB_PATH = os.getenv("DB_PATH", "facts.db")
 
 console = Console()
 
 
 def run_scoring(min_confidence=0.6):
     """Score truth by consensus within each cluster."""
-    console.print("[bold]Phase 4: Truth Scoring[/bold]")
+    console.print("[bold]Phase 4: Fact Scoring[/bold]")
 
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
 
     # Clear previous scores
-    c.execute("DELETE FROM truth_scores")
+    c.execute("DELETE FROM fact_scores")
     c.execute("DELETE FROM flagged_triples")
 
     # Get all clusters with 2+ triples
@@ -67,7 +67,7 @@ def run_scoring(min_confidence=0.6):
         for (subj_key, pred_key), group in subject_pred_groups.items():
             # Vote on object value
             object_votes = Counter(t[5] for t in group)
-            ground_truth_obj, agree_count = object_votes.most_common(1)[0]
+            consensus_obj, agree_count = object_votes.most_common(1)[0]
             total_sources = len(group)
             dissent_count = total_sources - agree_count
             confidence = agree_count / total_sources
@@ -78,22 +78,22 @@ def run_scoring(min_confidence=0.6):
 
             # Store truth score
             c.execute(
-                """INSERT INTO truth_scores
-                   (cluster_id, subject, predicate, ground_truth_object, confidence, agreeing_sources, dissenting_sources, total_sources)
+                """INSERT INTO fact_scores
+                   (cluster_id, subject, predicate, consensus_object, confidence, agreeing_sources, dissenting_sources, total_sources)
                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
-                (cluster_id, repr_subject, repr_predicate, ground_truth_obj, confidence, agree_count, dissent_count, total_sources),
+                (cluster_id, repr_subject, repr_predicate, consensus_obj, confidence, agree_count, dissent_count, total_sources),
             )
             total_scored += 1
 
             # Flag disagreements
             if dissent_count > 0:
                 for triple_id, source_file, entity_name, subject, predicate, obj in group:
-                    if obj != ground_truth_obj:
+                    if obj != consensus_obj:
                         c.execute(
                             """INSERT INTO flagged_triples
                                (triple_id, source_file, entity_name, subject, predicate, incorrect_object, correct_object, confidence)
                                VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
-                            (triple_id, source_file, entity_name, subject, predicate, obj, ground_truth_obj, confidence),
+                            (triple_id, source_file, entity_name, subject, predicate, obj, consensus_obj, confidence),
                         )
                         total_flagged += 1
 
@@ -120,8 +120,8 @@ def show_contested(min_confidence=0.6):
     c = conn.cursor()
 
     c.execute("""
-        SELECT subject, predicate, ground_truth_object, confidence, agreeing_sources, dissenting_sources
-        FROM truth_scores
+        SELECT subject, predicate, consensus_object, confidence, agreeing_sources, dissenting_sources
+        FROM fact_scores
         WHERE confidence < ?
         ORDER BY confidence ASC
         LIMIT 20
@@ -137,7 +137,7 @@ def show_contested(min_confidence=0.6):
     table = Table(title=f"Contested Claims (confidence < {min_confidence})")
     table.add_column("Subject", style="red")
     table.add_column("Predicate", style="cyan")
-    table.add_column("Ground Truth", style="green")
+    table.add_column("Consensus", style="green")
     table.add_column("Confidence", justify="right")
     table.add_column("Agree/Dissent", justify="right")
 

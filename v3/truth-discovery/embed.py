@@ -14,7 +14,7 @@ from rich.progress import Progress
 
 load_dotenv()
 
-DB_PATH = os.getenv("DB_PATH", "truth.db")
+DB_PATH = os.getenv("DB_PATH", "facts.db")
 
 console = Console()
 

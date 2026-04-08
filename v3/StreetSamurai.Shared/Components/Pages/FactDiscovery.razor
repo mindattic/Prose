@@ -1,0 +1,150 @@
+@page "/facts"
+@inject FactDiscoveryService Facts
+
+<h4 class="text-danger mb-3">Fact Discovery</h4>
+
+@if (!Facts.IsAvailable)
+{
+    <div class="card bg-dark text-light border-secondary">
+        <div class="card-body text-center py-5">
+            <i class="bi bi-database-slash" style="font-size: 3rem; color: var(--bs-secondary);"></i>
+            <p class="mt-3 text-muted">Fact database not found. Run the Python pipeline first:</p>
+            <code class="text-info">cd v3/truth-discovery && python run_pipeline.py</code>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row g-3 mb-3">
+        <div class="col-md-2">
+            <div class="card bg-dark text-light border-secondary text-center p-3">
+                <div class="text-muted small">Triples</div>
+                <div class="text-danger fs-4 fw-bold">@stats.TotalTriples.ToString("N0")</div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card bg-dark text-light border-secondary text-center p-3">
+                <div class="text-muted small">Sources</div>
+                <div class="text-info fs-4 fw-bold">@stats.SourceFiles.ToString("N0")</div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card bg-dark text-light border-secondary text-center p-3">
+                <div class="text-muted small">Clusters</div>
+                <div class="fs-4 fw-bold">@stats.Clusters.ToString("N0")</div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card bg-dark text-light border-secondary text-center p-3">
+                <div class="text-muted small">Consensus</div>
+                <div class="text-success fs-4 fw-bold">@stats.ConsensussClaims.ToString("N0")</div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card bg-dark text-light border-secondary text-center p-3">
+                <div class="text-muted small">Flagged</div>
+                <div class="text-warning fs-4 fw-bold">@stats.FlaggedInconsistencies.ToString("N0")</div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card bg-dark text-light border-secondary text-center p-3">
+                <div class="text-muted small">Confidence</div>
+                <div class="fs-4 fw-bold">@(stats.AverageConfidence > 0 ? stats.AverageConfidence.ToString("P0") : "—")</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div class="card bg-dark text-light border-secondary">
+                <div class="card-header text-muted">
+                    <i class="bi bi-search"></i> Query Facts
+                </div>
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-dark text-light border-secondary"
+                               placeholder="Search subject..." @bind="searchQuery" @bind:event="oninput"
+                               @onkeydown="@(e => { if (e.Key == "Enter") Search(); })" />
+                        <button class="btn btn-outline-danger" @onclick="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+
+                    @if (searchResults.Count > 0)
+                    {
+                        <table class="table table-dark table-sm">
+                            <thead><tr><th>Subject</th><th>Predicate</th><th>Value</th><th>Confidence</th><th>Sources</th></tr></thead>
+                            <tbody>
+                                @foreach (var r in searchResults)
+                                {
+                                    var confClass = r.Confidence >= 0.8 ? "text-success" : r.Confidence >= 0.6 ? "text-warning" : "text-danger";
+                                    <tr>
+                                        <td class="small">@r.Subject</td>
+                                        <td class="small text-info">@r.Predicate</td>
+                                        <td class="small">@r.Value</td>
+                                        <td class="small @confClass">@r.Confidence.ToString("P0")</td>
+                                        <td class="small text-muted">@r.AgreeSources/@r.TotalSources</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card bg-dark text-light border-secondary">
+                <div class="card-header text-muted d-flex justify-content-between">
+                    <span><i class="bi bi-exclamation-triangle"></i> Flagged Inconsistencies</span>
+                    <span class="badge bg-warning">@flagged.Count</span>
+                </div>
+                <div class="card-body" style="max-height: 500px; overflow-y: auto;">
+                    @if (flagged.Count == 0)
+                    {
+                        <div class="text-muted text-center py-3">No flagged inconsistencies</div>
+                    }
+                    else
+                    {
+                        @foreach (var f in flagged)
+                        {
+                            var confClass = f.Confidence >= 0.9 ? "text-success" : f.Confidence >= 0.7 ? "text-warning" : "text-danger";
+                            <div class="mb-2 p-2 rounded" style="background: #1c2128;">
+                                <div class="small fw-bold">@f.EntityName</div>
+                                <div class="small">
+                                    @f.Predicate:
+                                    <span class="text-danger">@f.IncorrectValue</span>
+                                    <i class="bi bi-arrow-right mx-1"></i>
+                                    <span class="text-success">@f.CorrectValue</span>
+                                </div>
+                                <div class="small text-muted">Confidence: <span class="@confClass">@f.Confidence.ToString("P0")</span></div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private FactStats stats = new();
+    private string searchQuery = "";
+    private List<ConsensusClaim> searchResults = [];
+    private List<FlaggedFact> flagged = [];
+
+    protected override void OnInitialized()
+    {
+        if (Facts.IsAvailable)
+        {
+            stats = Facts.GetStats();
+            flagged = Facts.GetFlagged(50);
+        }
+    }
+
+    private void Search()
+    {
+        if (string.IsNullOrWhiteSpace(searchQuery)) return;
+        searchResults = Facts.QuerySubject(searchQuery);
+    }
+}

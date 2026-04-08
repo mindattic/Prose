@@ -13,7 +13,7 @@ from rich.console import Console
 
 load_dotenv()
 
-DB_PATH = os.getenv("DB_PATH", "truth.db")
+DB_PATH = os.getenv("DB_PATH", "facts.db")
 SIMILARITY_THRESHOLD = float(os.getenv("SIMILARITY_THRESHOLD", "0.87"))
 
 console = Console()

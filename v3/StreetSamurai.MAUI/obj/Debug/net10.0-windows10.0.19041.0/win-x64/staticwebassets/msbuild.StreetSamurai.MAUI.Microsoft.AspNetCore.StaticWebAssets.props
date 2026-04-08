@@ -112,12 +112,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7oiy4klhfl</Fingerprint>
-      <Integrity>+Yjav1unrjqZo306DCLUZkSsfBID3IcSUAU4hZKdbwM=</Integrity>
+      <Fingerprint>9spes7o4ec</Fingerprint>
+      <Integrity>CRKDZ3AygiMbsLZn3azqPo4LAhwx1noqo771kiFiQQk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>18094</FileLength>
-      <LastWriteTime>Tue, 07 Apr 2026 23:14:31 GMT</LastWriteTime>
+      <FileLength>20427</FileLength>
+      <LastWriteTime>Wed, 08 Apr 2026 00:02:00 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))">

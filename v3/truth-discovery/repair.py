@@ -15,7 +15,7 @@ from rich.progress import Progress
 
 load_dotenv()
 
-DB_PATH = os.getenv("DB_PATH", "truth.db")
+DB_PATH = os.getenv("DB_PATH", "facts.db")
 
 console = Console()
 
@@ -73,7 +73,7 @@ def run_repair(dry_run=True, min_confidence=0.8, limit=None):
 
                 if modified:
                     if dry_run:
-                        console.print(f"  [yellow]WOULD REPAIR[/yellow] {entity_name}: {predicate} = {wrong} → {right}")
+                        console.print(f"  [yellow]WOULD REPAIR[/yellow] {entity_name}: {predicate} = {wrong} -> {right}")
                     else:
                         with open(source_file, "w", encoding="utf-8") as f:
                             json.dump(data, f, indent=2, ensure_ascii=False)

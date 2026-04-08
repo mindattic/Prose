@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_PATH = os.getenv("DB_PATH", "truth.db")
+DB_PATH = os.getenv("DB_PATH", "facts.db")
 
 
 def get_connection():
@@ -47,14 +47,14 @@ def init_db():
         )
     """)
 
-    # Ground truth determined by consensus
+    # Consensus determined by consensus
     c.execute("""
-        CREATE TABLE IF NOT EXISTS truth_scores (
+        CREATE TABLE IF NOT EXISTS fact_scores (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             cluster_id INTEGER NOT NULL,
             subject TEXT NOT NULL,
             predicate TEXT NOT NULL,
-            ground_truth_object TEXT NOT NULL,
+            consensus_object TEXT NOT NULL,
             confidence REAL NOT NULL,
             agreeing_sources INTEGER NOT NULL,
             dissenting_sources INTEGER NOT NULL,
@@ -97,7 +97,7 @@ def init_db():
     c.execute("CREATE INDEX IF NOT EXISTS idx_triples_subject ON triples(subject)")
     c.execute("CREATE INDEX IF NOT EXISTS idx_triples_cluster ON triples(cluster_id)")
     c.execute("CREATE INDEX IF NOT EXISTS idx_triples_source ON triples(source_file)")
-    c.execute("CREATE INDEX IF NOT EXISTS idx_truth_subject ON truth_scores(subject)")
+    c.execute("CREATE INDEX IF NOT EXISTS idx_truth_subject ON fact_scores(subject)")
     c.execute("CREATE INDEX IF NOT EXISTS idx_flagged_source ON flagged_triples(source_file)")
 
     conn.commit()
