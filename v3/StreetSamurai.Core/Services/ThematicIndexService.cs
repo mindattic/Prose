@@ -11,7 +11,7 @@ public class ThematicIndexService
 {
     private readonly DatabaseService db;
     private readonly SyntheticLifeRepository synthRepo;
-    private readonly GenewareRepository genewareRepo;
+    private readonly GenemodRepository genewareRepo;
     private readonly TransportationRepository transportRepo;
     private readonly VocabularyRepository vocabRepo;
     private readonly QuoteRepository quoteRepo;
@@ -26,7 +26,7 @@ public class ThematicIndexService
 
     public ThematicIndexService(
         DatabaseService db, SyntheticLifeRepository synthRepo,
-        GenewareRepository genewareRepo, TransportationRepository transportRepo,
+        GenemodRepository genewareRepo, TransportationRepository transportRepo,
         VocabularyRepository vocabRepo, QuoteRepository quoteRepo,
         ConsumerGoodRepository goodsRepo, PharmaceuticalRepository pharmaRepo,
         MaterialRepository substrateRepo, AmmunitionRepository ammoRepo)
@@ -65,7 +65,7 @@ public class ThematicIndexService
         foreach (var s in synthRepo.GetAll())
             IndexByTags(newIndex, s.Name, "synthetic", FirstSentence(s.Description), s.Tags);
         foreach (var g in genewareRepo.GetAll())
-            IndexByTags(newIndex, g.Name, "geneware", FirstSentence(g.Description), g.Tags);
+            IndexByTags(newIndex, g.Name, "genemods", FirstSentence(g.Description), g.Tags);
         foreach (var t in transportRepo.GetAll())
             IndexByTags(newIndex, t.Name, "transportation", FirstSentence(t.Description), t.Tags);
         foreach (var v in vocabRepo.GetAll())

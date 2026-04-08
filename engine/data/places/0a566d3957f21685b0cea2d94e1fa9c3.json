@@ -1,0 +1,83 @@
+{
+  "id": "0a566d3957f21685b0cea2d94e1fa9c3",
+  "type": "place",
+  "name": "Moth & Flame",
+  "aliases": [
+    "M&F",
+    "The Moth",
+    "Flame"
+  ],
+  "description": "Moth & Flame is a cocktail lounge hidden behind a functioning tailor shop in the Laceworks, accessible through a fitting room whose back wall opens when you give the tailor a specific phrase that changes daily. The phrase is distributed through the Laceworks' fiber-optic mesh to a list of approved recipients, and the process of being added to that list is a social achievement that some Tier 3 residents spend months pursuing. The tailor, Iben Makwena-Sorensen, is a real tailor who makes real clothes, and the fitting room is a real fitting room. The speakeasy behind it is reached through a mechanism so smooth that first-time visitors often suspect they've hallucinated the transition from retail to revelry.\n\nThe interior of Moth & Flame is designed around a central installation: a column of actual flame, two meters in diameter, burning continuously in a glass enclosure that runs from floor to ceiling. The flame is fed by biogas harvested from the Laceworks' waste processing systems — a fact that owner Yael Stenberg-Adeyemi includes on the menu as a philosophical statement about the relationship between refuse and beauty. The flame is mesmerizing. It provides the room's primary light and heat, and the tables are arranged in concentric circles around it, so that every seat faces the fire and every conversation happens in its glow. The effect is primal — humans around a fire, talking — dressed in Laceworks couture.\n\nMoth & Flame is where the Laceworks' creative class conducts its social life, which means it is where ideas become projects, projects become movements, and movements become the cultural products that eventually trickle up to the Spire and down to the Circuit. Fashion designers sketch on napkins here. Musicians arrange collaborations over the flame. Writers argue about things that only matter if you believe culture matters, which everyone in this room does, fiercely. For freelancers, Moth & Flame is where you find the people who shape what the corridor thinks is beautiful, which is a form of power that doesn't appear on any corporate org chart but influences every transaction that involves human desire.",
+  "atmosphere": {
+    "sights": [
+      "The central flame — two meters of continuous fire in glass, the room's heart and light source",
+      "The tailor shop transition — one moment you're being measured for a jacket, the next you're in another world",
+      "Creative types in Laceworks fashion, sketching and arguing around the fire's glow",
+      "Iben in the front shop, measuring fabric with one hand and checking the daily phrase list with the other"
+    ],
+    "sounds": [
+      "The flame — a low, continuous roar, the sound of controlled combustion, oddly soothing",
+      "Creative argument — passionate, specific, the sound of people who care about things that aren't money",
+      "The back wall mechanism — a sound so subtle you're not sure the wall moved until it has",
+      "Glassware and quiet laughter, everything softened by the flame's acoustic blanket"
+    ],
+    "smells": [
+      "Woodsmoke from the biogas flame — not quite wood, not quite chemical, something between",
+      "The tailor shop — fabric, thread, the clean scent of a workspace that takes its craft seriously",
+      "Cocktails designed to complement the fire's warmth — cinnamon, smoke, dark honey"
+    ],
+    "feel": "Conspiratorial and creative. Moth & Flame makes you feel like you're part of something — a secret, a movement, a conversation that matters. The fire in the center is hypnotic, and the people around it are making the culture that the rest of the corridor will consume without knowing where it started.",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [
+      "The Laceworks",
+      "Laceworks commercial district"
+    ],
+    "exits": [
+      {
+        "direction": "out",
+        "destination": "Iben's tailor shop — the only visible entrance",
+        "type": "hidden",
+        "description": "Through the fitting room's back wall, phrase-activated",
+        "restricted": true,
+        "danger_level": 0,
+        "tags": [
+          "hidden_entrance",
+          "phrase_locked"
+        ]
+      }
+    ],
+    "tags": []
+  },
+  "frequented_by": [
+    "Laceworks creative class — designers, musicians, writers, cultural architects",
+    "Tier 3-4 residents who've earned access to the daily phrase list",
+    "Freelancers connected enough to know the right people and the right words",
+    "Occasional Spire cultural scouts, observing what's coming next"
+  ],
+  "notable_locations": [
+    "The central flame column — biogas-fed, continuous, the room's soul and light source",
+    "Iben's tailor shop — the front, the mask, and a genuinely good place to buy a jacket"
+  ],
+  "coordinates": {
+    "lat": 41.8912,
+    "lng": -87.6345
+  },
+  "tags": [
+    "place",
+    "bar",
+    "nightlife",
+    "tier 3",
+    "laceworks",
+    "speakeasy",
+    "creative",
+    "chicago",
+    "hidden"
+  ],
+  "related_entities": [
+    "Yael Stenberg-Adeyemi",
+    "Iben Makwena-Sorensen",
+    "The Laceworks"
+  ]
+}

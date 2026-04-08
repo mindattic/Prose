@@ -1,0 +1,80 @@
+{
+  "id": "5d59094c6d1141a852031f123a7ce2ce",
+  "type": "place",
+  "name": "Sink or Swim",
+  "aliases": [
+    "The Sink",
+    "SoS",
+    "Swim"
+  ],
+  "description": "Sink or Swim is built into the second floor of a partially flooded building on the western edge of Old Harbor, directly above the waterline. The floor is perpetually damp. The walls sweat. The windows, where glass still exists, look out onto the bioluminescent canals that Old Harbor's drowned streets have become, and on good nights the blue-green glow from the algae below is the only light the bar needs. The owner, a man who introduces himself exclusively as Swim and whose legal name nobody has successfully determined, insists that the flooding is an aesthetic choice. The flooding is not an aesthetic choice. The building is sinking.\n\nThe drinks are served in mismatched containers — old jars, laboratory beakers, hollowed gourds — because Swim considers uniform glassware to be a symptom of corporate thinking. The menu, painted on the wall in characters that change weekly, features homebrew spirits distilled from whatever organic material Swim has acquired. Some of it is genuinely excellent. Some of it is genuinely dangerous. The distinction is not always clear before consumption. The food, when it exists, is whatever the fishing boats brought in that morning, prepared by Swim in a kitchen that health inspectors would condemn if health inspectors still existed at this tier.\n\nFreelancers come to Sink or Swim for three reasons. First, it's cheap — Swim prices his drinks in labor as often as in Φ, and an hour of repair work on the building earns an evening's tab. Second, the location is ideal for anyone who needs to arrive or depart by water, which in Old Harbor means anyone who needs to not be seen. Third, the regulars include a rotating cast of colony traders from the Lake Michigan flotillas who bring news, goods, and occasionally job offers from communities that don't appear on any corporate map. The bar is sinking. The information that flows through it is rising.",
+  "atmosphere": {
+    "sights": [
+      "Bioluminescent canal glow filtering through the windows, painting everything blue-green",
+      "Water stains climbing the walls like abstract art, never the same pattern twice",
+      "Swim behind the bar, grinning, pouring something unnamed into a laboratory beaker",
+      "Colony traders at corner tables, their weather-beaten gear marking them as off-grid"
+    ],
+    "sounds": [
+      "Water — lapping against the building's foundation, dripping from the ceiling, always present",
+      "The creak of a structure that is slowly losing its argument with gravity",
+      "Colony trader accents — the particular cadence of people who live on the water full-time",
+      "Swim humming while he works, always the same melody, origin unknown"
+    ],
+    "smells": [
+      "Lake water and bioluminescent algae — a mineral-organic scent unique to Old Harbor",
+      "Whatever Swim is distilling today — could be excellent, could be a warning",
+      "Fresh catch from the morning boats, grilling in the back"
+    ],
+    "feel": "Precarious and alive. Sink or Swim feels like it could go under at any moment and everyone inside has made peace with that. There's a liberation in drinking in a place that's sinking — it clarifies priorities.",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [
+      "Old Harbor",
+      "Lake Michigan waterfront"
+    ],
+    "exits": [
+      {
+        "direction": "down",
+        "destination": "Canal access via submerged ground floor",
+        "type": "water",
+        "description": "Flooded stairwell to canal level — bring a light",
+        "restricted": false,
+        "danger_level": 2,
+        "tags": [
+          "water_access"
+        ]
+      }
+    ],
+    "tags": []
+  },
+  "frequented_by": [
+    "Colony traders from the Lake Michigan flotillas",
+    "Old Harbor residents who prefer drinking above the waterline",
+    "Runners who need water-route access",
+    "Freelancers willing to trade labor for drinks"
+  ],
+  "notable_locations": [
+    "The Window Table — best view of the bioluminescent canal, reserved for colony traders by unspoken tradition",
+    "The submerged stairwell — water access to canal routes below"
+  ],
+  "coordinates": {
+    "lat": 41.8672,
+    "lng": -87.6175
+  },
+  "tags": [
+    "place",
+    "bar",
+    "nightlife",
+    "tier 1",
+    "shelf",
+    "old_harbor",
+    "waterfront",
+    "colony_trade"
+  ],
+  "related_entities": [
+    "Old Harbor",
+    "The Floating Colonies of Lake Michigan"
+  ]
+}

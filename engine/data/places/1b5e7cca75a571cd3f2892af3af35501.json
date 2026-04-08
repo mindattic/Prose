@@ -1,0 +1,41 @@
+{
+  "id": "1b5e7cca75a571cd3f2892af3af35501",
+  "type": "place",
+  "name": "Neural Palate",
+  "aliases": [
+    "NP",
+    "Neural"
+  ],
+  "description": "A molecular gastronomy restaurant in Streeterville that enhances dining with optional BCI-integrated neural flavor amplification. Diners with compatible neural interfaces can choose the 'enhanced' menu (Φ350), which pairs each course with a neural signal that amplifies specific taste receptors, making flavors more vivid, textures more pronounced, and the overall experience something that cannot be replicated by food alone. The 'analog' menu (Φ200) is excellent without the enhancement but feels, by comparison, like watching a film in black and white. Chef Nkechi Lindqvist-Osei is both a culinary artist and a neurotechnologist, and she considers the intersection of food and neural engineering the future of dining.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Spire diners with neural interfaces",
+    "Molecular gastronomy enthusiasts",
+    "BCI early adopters"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.894,
+    "lng": -87.619
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_5"
+  ],
+  "related_entities": [
+    "Nkechi Lindqvist-Osei"
+  ]
+}

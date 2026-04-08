@@ -3,7 +3,12 @@ window.meridianMap = {
     map: null,
     scriptLoaded: false,
     districtLayers: [],
+    districtLabels: [],
+    cityMarkers: [],
+    placeMarkers: [],
+    placesVisible: true,
     districtVisible: true,
+    currentTheme: 'dark',
 
     init: function (elementId, apiKey) {
         if (!this.scriptLoaded) {
@@ -30,6 +35,158 @@ window.meridianMap = {
         this.districtLayers.forEach(function (layer) {
             layer.setMap(window.meridianMap.districtVisible ? window.meridianMap.map : null);
         });
+    },
+
+    _markerStyles: {
+        colony:     { color: '#3fb950', scale: 8, shape: 'circle' },     // green circle — floating colonies
+        corporate:  { color: '#e6edf3', scale: 4, shape: 'diamond' },    // white diamond — corporate
+        medical:    { color: '#f778ba', scale: 4, shape: 'cross' },      // pink cross — medical
+        nightlife:  { color: '#d2a8ff', scale: 4, shape: 'star' },       // purple star — nightlife
+        food:       { color: '#f0883e', scale: 3, shape: 'circle' },      // orange dot — restaurants/food
+        market:     { color: '#f0883e', scale: 4, shape: 'square' },     // orange square — markets
+        anomaly:    { color: '#dc3545', scale: 5, shape: 'triangle' },   // red triangle — anomalies
+        behemoth:   { color: '#f0883e', scale: 7, shape: 'diamond' },    // orange diamond — Behemoth sightings
+        industrial: { color: '#8b949e', scale: 4, shape: 'square' },     // grey square — industrial
+        community:  { color: '#3fb950', scale: 4, shape: 'square' },     // green square — community
+        security:   { color: '#58a6ff', scale: 4, shape: 'diamond' },    // blue diamond — security
+        underworld: { color: '#6e40c9', scale: 4, shape: 'triangle' },   // deep purple triangle — underworld
+        'default':  { color: '#58a6ff', scale: 3, shape: 'circle' }      // blue dot — default
+    },
+
+    _getIconPath: function (shape) {
+        switch (shape) {
+            case 'diamond':   return 'M 0,-1 1,0 0,1 -1,0 Z';
+            case 'square':    return 'M -1,-1 1,-1 1,1 -1,1 Z';
+            case 'triangle':  return 'M 0,-1.2 1,0.8 -1,0.8 Z';
+            case 'cross':     return 'M -0.3,-1 0.3,-1 0.3,-0.3 1,-0.3 1,0.3 0.3,0.3 0.3,1 -0.3,1 -0.3,0.3 -1,0.3 -1,-0.3 -0.3,-0.3 Z';
+            case 'star':      return 'M 0,-1.2 0.36,-0.36 1.2,-0.36 0.6,0.18 0.78,1.02 0,0.54 -0.78,1.02 -0.6,0.18 -1.2,-0.36 -0.36,-0.36 Z';
+            default:          return google.maps.SymbolPath.CIRCLE;
+        }
+    },
+
+    _hoverInfoWindow: null,
+
+    loadPlaces: function (places) {
+        var map = this.map;
+        var self = this;
+        var isDark = this.currentTheme === 'dark';
+        if (!this._hoverInfoWindow) {
+            this._hoverInfoWindow = new google.maps.InfoWindow({ disableAutoPan: true });
+        }
+        var infoWindow = this._hoverInfoWindow;
+
+        places.forEach(function (p) {
+            var style = self._markerStyles[p.cat] || self._markerStyles['default'];
+            var iconPath = (style.shape === 'circle') ? google.maps.SymbolPath.CIRCLE : self._getIconPath(style.shape);
+            var marker = new google.maps.Marker({
+                position: { lat: p.lat, lng: p.lng },
+                map: map,
+                title: '',
+                label: {
+                    text: p.name,
+                    color: isDark ? '#8b949e' : '#666666',
+                    fontSize: '9px',
+                    fontFamily: 'Outfit, sans-serif'
+                },
+                icon: {
+                    path: iconPath,
+                    scale: style.scale,
+                    fillColor: style.color,
+                    fillOpacity: 0.8,
+                    strokeColor: style.color,
+                    strokeWeight: 1
+                }
+            });
+            marker._labelText = p.name;
+            marker._category = p.cat;
+
+            // Tooltip on hover
+            var tooltipContent = '<div style="font-family:Outfit,sans-serif;max-width:280px;padding:4px;">' +
+                '<div style="font-weight:600;color:#dc3545;font-size:13px;margin-bottom:4px;">' + p.name + '</div>' +
+                '<div style="font-size:10px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">' + (p.cat || 'place') + '</div>' +
+                (p.desc ? '<div style="font-size:12px;color:#333;line-height:1.4;">' + p.desc + '</div>' : '') +
+                '</div>';
+
+            marker.addListener('mouseover', function () {
+                infoWindow.setContent(tooltipContent);
+                infoWindow.open(map, marker);
+            });
+            marker.addListener('mouseout', function () {
+                infoWindow.close();
+            });
+
+            self.placeMarkers.push(marker);
+        });
+    },
+
+    togglePlaces: function () {
+        this.placesVisible = !this.placesVisible;
+        var map = this.placesVisible ? this.map : null;
+        this.placeMarkers.forEach(function (m) { m.setMap(map); });
+    },
+
+    _categoryVisible: {},
+
+    toggleCategory: function (category) {
+        var visible = this._categoryVisible[category];
+        if (visible === undefined) visible = true;
+        visible = !visible;
+        this._categoryVisible[category] = visible;
+        var map = this.map;
+        this.placeMarkers.forEach(function (m) {
+            if (m._category === category) {
+                m.setMap(visible ? map : null);
+            }
+        });
+    },
+
+    setTheme: function (theme) {
+        if (!this.map) return;
+        this.currentTheme = theme;
+        var cityLabelColor = theme === 'light' ? '#1a1a1a' : '#e6edf3';
+        // Update city marker labels
+        this.cityMarkers.forEach(function (m) {
+            m.setLabel({ text: m._labelText, color: cityLabelColor, fontSize: '11px', fontFamily: 'Outfit, sans-serif' });
+        });
+        // Update place marker labels
+        var placeLabelColor = theme === 'light' ? '#666666' : '#8b949e';
+        this.placeMarkers.forEach(function (m) {
+            m.setLabel({ text: m._labelText, color: placeLabelColor, fontSize: '9px', fontFamily: 'Outfit, sans-serif' });
+        });
+        // Update district label colors — keep their district color but darken for light mode
+        this.districtLabels.forEach(function (m) {
+            var color = theme === 'light' ? '#333333' : m._districtColor;
+            m.setLabel({ text: m._labelText, color: color, fontSize: '10px', fontFamily: 'Outfit, sans-serif', fontWeight: '600' });
+        });
+        if (theme === 'light') {
+            this.map.setOptions({ styles: [
+                { "featureType": "all", "elementType": "all", "stylers": [{ "visibility": "off" }] },
+                { "featureType": "administrative.country", "elementType": "all", "stylers": [{ "visibility": "on" }] },
+                { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#fdfdfc" }, { "visibility": "on" }] },
+                { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] },
+                { "featureType": "road", "elementType": "all", "stylers": [{ "visibility": "off" }] },
+                { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] },
+                { "featureType": "water", "elementType": "all", "stylers": [{ "visibility": "on" }, { "lightness": -100 }, { "color": "#393737" }] },
+                { "featureType": "administrative.province", "elementType": "geometry.stroke", "stylers": [{ "visibility": "on" }, { "color": "#cccccc" }, { "weight": 1 }] },
+                { "featureType": "administrative.country", "elementType": "geometry.stroke", "stylers": [{ "visibility": "on" }, { "color": "#dc3545" }, { "weight": 1.5 }] },
+                { "featureType": "administrative.country", "elementType": "labels.text.fill", "stylers": [{ "visibility": "on" }, { "color": "#666666" }] },
+                { "featureType": "administrative.province", "elementType": "labels.text.fill", "stylers": [{ "visibility": "on" }, { "color": "#cccccc" }] }
+            ]});
+        } else {
+            this.map.setOptions({ styles: [
+                { "featureType": "all", "elementType": "all", "stylers": [{ "visibility": "off" }] },
+                { "featureType": "administrative.country", "elementType": "all", "stylers": [{ "visibility": "on" }] },
+                { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#0d1117" }, { "visibility": "on" }] },
+                { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] },
+                { "featureType": "road", "elementType": "all", "stylers": [{ "visibility": "off" }] },
+                { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] },
+                { "featureType": "water", "elementType": "all", "stylers": [{ "visibility": "on" }, { "lightness": -100 }, { "color": "#161b22" }] },
+                { "featureType": "administrative.province", "elementType": "geometry.stroke", "stylers": [{ "visibility": "on" }, { "color": "#30363d" }, { "weight": 1 }] },
+                { "featureType": "administrative.country", "elementType": "geometry.stroke", "stylers": [{ "visibility": "on" }, { "color": "#dc3545" }, { "weight": 1.5 }] },
+                { "featureType": "administrative.country", "elementType": "labels.text.fill", "stylers": [{ "visibility": "on" }, { "color": "#8b949e" }] },
+                { "featureType": "administrative.province", "elementType": "labels.text.fill", "stylers": [{ "visibility": "on" }, { "color": "#30363d" }] }
+            ]});
+        }
     },
 
     _createMap: function (elementId) {
@@ -88,13 +245,23 @@ window.meridianMap = {
             { lat: 43.04, lng: -87.91, label: 'Milwaukee' },
             { lat: 41.88, lng: -87.63, label: 'Chicago' }
         ];
+        var self = window.meridianMap;
+        var infoWindow = new google.maps.InfoWindow({ disableAutoPan: true });
         cities.forEach(function (city) {
-            new google.maps.Marker({
+            var marker = new google.maps.Marker({
                 position: { lat: city.lat, lng: city.lng },
                 map: map,
+                title: '',
                 label: { text: city.label, color: '#e6edf3', fontSize: '11px', fontFamily: 'Outfit, sans-serif' },
                 icon: { path: google.maps.SymbolPath.CIRCLE, scale: 6, fillColor: '#dc3545', fillOpacity: 0.8, strokeColor: '#dc3545', strokeWeight: 1 }
             });
+            marker._labelText = city.label;
+            marker.addListener('mouseover', function () {
+                infoWindow.setContent('<div style="font-family:Outfit,sans-serif;padding:4px;"><strong style="color:#dc3545;">' + city.label + '</strong><br><span style="font-size:11px;color:#666;">Urban core — Meridian 88 corridor</span></div>');
+                infoWindow.open(map, marker);
+            });
+            marker.addListener('mouseout', function () { infoWindow.close(); });
+            self.cityMarkers.push(marker);
         });
     },
 
@@ -236,7 +403,7 @@ window.meridianMap = {
             d.paths.forEach(function (p) { bounds.extend(p); });
             var center = bounds.getCenter();
 
-            new google.maps.Marker({
+            var labelMarker = new google.maps.Marker({
                 position: center,
                 map: map,
                 label: {
@@ -246,8 +413,11 @@ window.meridianMap = {
                     fontFamily: 'Outfit, sans-serif',
                     fontWeight: '600'
                 },
-                icon: { path: 'M 0,0', scale: 0 } // invisible marker, label only
+                icon: { path: 'M 0,0', scale: 0 }
             });
+            labelMarker._districtColor = d.color;
+            labelMarker._labelText = d.name;
+            window.meridianMap.districtLabels.push(labelMarker);
         });
     }
 };

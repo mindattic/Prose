@@ -53,7 +53,15 @@
       "Adeyemi's Tea Shop"
     ],
     "exits": [
-      "Through the tea shop to Old Harbor Street"
+      {
+        "direction": "",
+        "destination": "Through the tea shop to Old Harbor Street",
+        "type": "road",
+        "description": "Through the tea shop to Old Harbor Street",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      }
     ],
     "tags": []
   },

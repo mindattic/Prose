@@ -1,0 +1,71 @@
+{
+  "id": "c5134e1495795dfe46568112c937ede7",
+  "type": "place",
+  "name": "Switchback",
+  "aliases": [
+    "The Switch",
+    "SB",
+    "The Track"
+  ],
+  "description": "Switchback occupies a decommissioned L-station platform in the Circuit, specifically the elevated section where the old Brown Line curved between Diversey and Wellington. The CTA hasn't run trains through this stretch since 2171, but the platform remains — open to the sky, thirty feet above street level, with the original station canopy providing partial shelter and the track bed converted into a long, narrow bar that runs the full length of the platform. Drinking at Switchback means sitting on the edge of what used to be public transit, your feet dangling over a neighborhood that has rebuilt itself without you.\n\nThe owner, Jun Kowalski-Ampofo, was a transit engineer before the CTA contracted its northern routes. She kept the station's emergency lighting, the departure boards (now displaying drink specials and the occasional cryptic personal message), and the turnstiles at the entrance, which still require a token. Jun mints her own tokens — brass discs stamped with the Switchback logo — and hands them out to customers she wants to see again. No token, no entry after 22:00. This creates a self-selecting crowd of regulars who are invested in the bar's survival and each other's company, which is Jun's way of building community through infrastructure, because that's the only way she knows how to build anything.\n\nThe view from Switchback is the real draw. On clear nights, you can see from the Loop's Spire towers to the dark line of the lake, with the Circuit sprawling below in a galaxy of street-level light. The elevated position also means excellent signal reception, which makes Switchback an unofficial communications hub — the place where the Circuit's population checks messages, takes calls, and conducts the low-level digital commerce that requires a clean signal. Jun doesn't advertise this. She doesn't need to. People figure it out, and they come back, and they buy another drink while they're uploading.",
+  "atmosphere": {
+    "sights": [
+      "The old L-station platform, open sky above, the city sprawling below in every direction",
+      "Departure boards displaying drink specials and cryptic personal messages in transit font",
+      "The track-bed bar — a narrow counter running the full platform length, seats along the edge",
+      "The view — Spire towers, Lake Michigan, and the Circuit's street-level galaxy"
+    ],
+    "sounds": [
+      "Wind at elevation — Switchback is exposed, and the canopy only covers half the platform",
+      "The ghost resonance of the track bed — subtle vibrations from the still-active lines nearby",
+      "Digital chatter — the sound of dozens of people getting clean signal simultaneously",
+      "Jun's token clink at the turnstile, the bar's brass heartbeat"
+    ],
+    "smells": [
+      "Open air — one of the few bars in the Circuit where you breathe actual wind",
+      "Metal and oil from the old track infrastructure, a transit memory",
+      "Jun's house cocktail — a bourbon and honey blend she calls the Departure, served warm"
+    ],
+    "feel": "Elevated in every sense. Switchback lifts you above the Circuit both physically and psychologically. The view reminds you that the city is larger than your problems, and the brass token in your pocket means someone wants you to come back.",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [
+      "The Circuit",
+      "Diversey corridor",
+      "Lakeview Neon"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Circuit regulars who've earned their token",
+    "Digital workers using the clean signal",
+    "Former CTA employees who remember when the trains ran",
+    "Freelancers who need the view and the perspective it provides"
+  ],
+  "notable_locations": [
+    "The departure boards — now displaying drink specials and messages",
+    "The edge seats — dangling over the city, the best view in the Circuit"
+  ],
+  "coordinates": {
+    "lat": 41.9328,
+    "lng": -87.6572
+  },
+  "tags": [
+    "place",
+    "bar",
+    "nightlife",
+    "tier 2",
+    "circuit",
+    "chicago",
+    "elevated",
+    "transit",
+    "signal_hub"
+  ],
+  "related_entities": [
+    "Jun Kowalski-Ampofo",
+    "The Circuit",
+    "Lakeview Neon"
+  ]
+}

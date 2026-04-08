@@ -17,7 +17,7 @@
 @inject ArchetypeRepository ArchetypeRepo
 @inject VocabularyRepository VocabRepo
 @inject SyntheticLifeRepository SynthRepo
-@inject GenewareRepository GenewareRepo
+@inject GenemodRepository GenemodRepo
 @inject TransportationRepository TransportRepo
 @inject AutomatonRepository AutomatonRepo
 @inject ApparelRepository ApparelRepo
@@ -82,7 +82,7 @@
         @NavItem("bi-film", "entertainment", "Entertainment", _entertainmentCount)
         @NavItem("bi-shield-shaded", "equipment", "Equipment", _equipCount)
         @NavItem("bi-shield-exclamation", "factions", "Factions", _factionCount)
-        @NavItem("bi-virus", "geneware", "Geneware", _genewareCount)
+        @NavItem("bi-virus", "genemods", "Genemods", _genemodCount)
         @NavItem("bi-newspaper", "news", "News Archive", _newsCount)
         @NavItem("bi-capsule", "pharmaceuticals", "Pharmaceuticals", _pharmaCount)
         @NavItem("bi-geo-alt", "places", "Places", _districtCount)
@@ -116,7 +116,7 @@
 </nav>
 
 @code {
-    private int corpCount, _factionCount, _charCount, _districtCount, _techCount, _weaponCount, _ammoCount, _equipCount, _cyberwareCount, _docCount, _vocabCount, _quoteCount, _goodsCount, _pharmaCount, _materialCount, _contractCount, _newsCount, _archetypeCount, _synthCount, _genewareCount, _transportCount, _automataCount, _apparelCount, _entertainmentCount, _subsidiaryCount, _graphNodeCount;
+    private int corpCount, _factionCount, _charCount, _districtCount, _techCount, _weaponCount, _ammoCount, _equipCount, _cyberwareCount, _docCount, _vocabCount, _quoteCount, _goodsCount, _pharmaCount, _materialCount, _contractCount, _newsCount, _archetypeCount, _synthCount, _genemodCount, _transportCount, _automataCount, _apparelCount, _entertainmentCount, _subsidiaryCount, _graphNodeCount;
 
     protected override void OnInitialized()
     {
@@ -139,7 +139,7 @@
         _newsCount = NewsRepo.GetAll().Count;
         _archetypeCount = ArchetypeRepo.GetAll().Count;
         _synthCount = SynthRepo.GetAll().Count;
-        _genewareCount = GenewareRepo.GetAll().Count;
+        _genemodCount = GenemodRepo.GetAll().Count;
         _transportCount = TransportRepo.GetAll().Count;
         _automataCount = AutomatonRepo.GetAll().Count;
         _apparelCount = ApparelRepo.GetAll().Count;

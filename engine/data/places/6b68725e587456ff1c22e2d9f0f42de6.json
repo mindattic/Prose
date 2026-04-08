@@ -1,0 +1,38 @@
+{
+  "id": "6b68725e587456ff1c22e2d9f0f42de6",
+  "type": "place",
+  "name": "Steam Table",
+  "aliases": [
+    "The Table"
+  ],
+  "description": "A cafeteria-style operation in a repurposed Elgin auto shop. Four steam trays, each containing a different synth-protein preparation, served over synth-rice or synth-bread. Φ4 for a plate. The food rotates daily and ranges from passable to surprisingly good, depending on what ingredients showed up that morning. Run by a cooperative of five former fast-food workers who pooled their savings, bought the trays secondhand, and decided they could do this better than the chains they used to work for. They were right, but only marginally.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Elgin workers",
+    "Families looking for a cheap hot meal",
+    "Former fast-food employees in solidarity"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.037,
+    "lng": -88.281
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": []
+}

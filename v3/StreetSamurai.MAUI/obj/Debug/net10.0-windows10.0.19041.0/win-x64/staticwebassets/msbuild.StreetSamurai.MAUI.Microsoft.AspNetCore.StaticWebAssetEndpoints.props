@@ -60,17 +60,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-v/U8uOi9qHxKSiKhAj8YFgQbKWP6Mgx1hWnTzI4jlsA="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1611"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022v/U8uOi9qHxKSiKhAj8YFgQbKWP6Mgx1hWnTzI4jlsA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Apr 2026 06:14:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="js/meridian-map.3l2mmup3am.js">
+    <StaticWebAssetEndpoint Include="js/meridian-map.7oiy4klhfl.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3l2mmup3am"},{"Name":"integrity","Value":"sha256-aet3vMkq0ujrCjKu2jKd\u002BhZpm5PnMdk9DssDbEz4ZXI="},{"Name":"label","Value":"js/meridian-map.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10326"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022aet3vMkq0ujrCjKu2jKd\u002BhZpm5PnMdk9DssDbEz4ZXI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Apr 2026 19:57:18 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7oiy4klhfl"},{"Name":"integrity","Value":"sha256-\u002BYjav1unrjqZo306DCLUZkSsfBID3IcSUAU4hZKdbwM="},{"Name":"label","Value":"js/meridian-map.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18094"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022\u002BYjav1unrjqZo306DCLUZkSsfBID3IcSUAU4hZKdbwM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Apr 2026 23:14:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="js/meridian-map.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aet3vMkq0ujrCjKu2jKd\u002BhZpm5PnMdk9DssDbEz4ZXI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10326"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022aet3vMkq0ujrCjKu2jKd\u002BhZpm5PnMdk9DssDbEz4ZXI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Apr 2026 19:57:18 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BYjav1unrjqZo306DCLUZkSsfBID3IcSUAU4hZKdbwM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"18094"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022\u002BYjav1unrjqZo306DCLUZkSsfBID3IcSUAU4hZKdbwM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Apr 2026 23:14:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="js/write-interop.8ogh0a67mk.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))</AssetFile>

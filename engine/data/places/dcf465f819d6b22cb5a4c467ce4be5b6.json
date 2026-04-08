@@ -1,0 +1,41 @@
+{
+  "id": "dcf465f819d6b22cb5a4c467ce4be5b6",
+  "type": "place",
+  "name": "Big Tomas Burger",
+  "aliases": [
+    "Big Tomas",
+    "BTB"
+  ],
+  "description": "A burger joint in Pilsen that serves vat-beef patties on real brioche buns — the bun is the luxury, not the meat. Tomas Eriksson-Ramirez bakes the buns himself every morning, and the difference between a Big Tomas burger and every other burger in the Circuit is that bun: soft, slightly sweet, golden. The patties are standard vat-grade, but Tomas seasons them with a house blend he won't disclose, and they come off the griddle with a crust that makes you forget the meat isn't real. A single with fries is Φ10. A double is Φ14. There is no triple because Tomas considers it 'architecturally irresponsible.'",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Pilsen Circuit workers",
+    "Burger enthusiasts",
+    "Bun connoisseurs"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.856,
+    "lng": -87.663
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_2"
+  ],
+  "related_entities": [
+    "Tomas Eriksson-Ramirez"
+  ]
+}

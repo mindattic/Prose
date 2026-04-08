@@ -52,8 +52,24 @@
       "Circuit district public transit station (200 meters north)"
     ],
     "exits": [
-      "Yates Avenue north and south",
-      "Calumet Way east and west"
+      {
+        "direction": "",
+        "destination": "Yates Avenue north and south",
+        "type": "road",
+        "description": "Yates Avenue north and south",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      },
+      {
+        "direction": "",
+        "destination": "Calumet Way east and west",
+        "type": "road",
+        "description": "Calumet Way east and west",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      }
     ],
     "tags": []
   },
