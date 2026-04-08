@@ -7,6 +7,29 @@ A Python-based machine learning pipeline that reads 10,000+ worldbuilding entity
 - **ML** (sentence-transformers + HDBSCAN) — embeds and clusters semantically similar claims
 - **Statistical consensus** — determines what's "true" by source agreement, flags disagreements
 
+## Quick Start
+
+```bash
+# Navigate to the pipeline
+cd D:\Projects\MindAttic\StreetSamurai\v3\truth-discovery
+
+# Run everything — extract, embed, cluster, score, and auto-repair
+python run_pipeline.py
+
+# When done, query the results
+python query.py --stats                          # Dashboard of numbers
+python query.py --flagged                        # All inconsistencies
+python query.py "Arcturus Defense Solutions"      # Query a specific subject
+
+# Refresh the app — Tools > Fact Discovery shows results
+```
+
+**One command does everything:** extraction, embedding, clustering, scoring, and auto-repair of 90%+ confidence fixes.
+
+**Resume-safe:** Stop it anytime (Ctrl+C). Run `python run_pipeline.py` again — it picks up where it left off.
+
+**Takes hours** for 10,000+ files (mostly API time for extraction). Prints progress every 100 files.
+
 ## Setup
 
 ```bash

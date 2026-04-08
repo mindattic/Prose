@@ -1,11 +1,28 @@
 """
-Master pipeline runner. Executes all phases in sequence.
+Fact Discovery Pipeline — Master Runner
 
-Usage:
-  python run_pipeline.py                    # full pipeline
-  python run_pipeline.py --limit 50         # test with 50 files
-  python run_pipeline.py --skip-extract     # re-run from embedding onward
-  python run_pipeline.py --phase score      # run a single phase
+ONE COMMAND — does everything, auto-repairs 90%+ confidence fixes:
+  python run_pipeline.py
+
+QUERY RESULTS when done:
+  python query.py --stats                        # numbers dashboard
+  python query.py --flagged                      # see all inconsistencies
+  python query.py "Arcturus Defense Solutions"    # search a subject
+
+OR RUN PHASES INDIVIDUALLY:
+  python extract.py                # Phase 1: Claude API extracts triples (SLOW — hours)
+  python embed.py                  # Phase 2: sentence-transformers embeds as vectors
+  python cluster.py                # Phase 3: HDBSCAN clusters equivalent claims
+  python score.py                  # Phase 4: consensus scoring + flagging
+  python repair.py --min-confidence 0.9   # Phase 5: auto-fix high-confidence issues
+
+SKIP PHASES YOU'VE ALREADY RUN:
+  python run_pipeline.py --skip-extract    # already extracted, re-run the rest
+  python run_pipeline.py --phase score     # just re-score
+  python run_pipeline.py --limit 50        # test with 50 files first
+
+RESUME ANYTIME — Ctrl+C and restart:
+  python run_pipeline.py    # picks up where it left off
 """
 import argparse
 from rich.console import Console
@@ -63,6 +80,11 @@ def main():
     console.rule("[bold]Phase 4: Fact Scoring[/bold]")
     from score import run_scoring
     run_scoring(min_confidence=args.min_confidence)
+
+    # Phase 5: Auto-repair high-confidence fixes
+    console.rule("[bold]Phase 5: Auto-Repair (90%+ confidence)[/bold]")
+    from repair import run_repair
+    run_repair(dry_run=False, min_confidence=0.9)
 
     # Summary
     console.rule("[bold]Pipeline Complete[/bold]")
