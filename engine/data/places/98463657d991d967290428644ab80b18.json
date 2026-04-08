@@ -51,7 +51,15 @@
       "The bench — an informal gathering point outside the chamber entrance"
     ],
     "exits": [
-      "Single access tunnel to the Depth 8 main corridor"
+      {
+        "direction": "",
+        "destination": "Single access tunnel to the Depth 8 main corridor",
+        "type": "road",
+        "description": "Single access tunnel to the Depth 8 main corridor",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      }
     ],
     "tags": []
   },

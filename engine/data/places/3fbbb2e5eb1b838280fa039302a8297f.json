@@ -1,0 +1,29 @@
+{
+  "id": "3fbbb2e5eb1b838280fa039302a8297f",
+  "type": "place",
+  "name": "Huntsville",
+  "aliases": [
+    "Alabama",
+    "Biomass Zone"
+  ],
+  "description": "The Huntsville area of former Alabama, now at the edge of the Biomass zone where engineered vegetation has consumed most human infrastructure.",
+  "coordinates": {
+    "lat": 34.7304,
+    "lng": -86.5861,
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "outside",
+    "biomass"
+  ],
+  "related_entities": [
+    "the_biomass_compiled_accounts_southern_corridor",
+    "The Fifty States — Last Known Status"
+  ]
+}

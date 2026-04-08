@@ -52,8 +52,24 @@
       "Underworld Depth 5 residential and commercial district"
     ],
     "exits": [
-      "West to Junction D5-17 and the broader Depth 5 tunnel network",
-      "East to Junction D5-22 and the descent passages to Depth 6"
+      {
+        "direction": "",
+        "destination": "West to Junction D5-17 and the broader Depth 5 tunnel network",
+        "type": "road",
+        "description": "West to Junction D5-17 and the broader Depth 5 tunnel network",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      },
+      {
+        "direction": "",
+        "destination": "East to Junction D5-22 and the descent passages to Depth 6",
+        "type": "road",
+        "description": "East to Junction D5-22 and the descent passages to Depth 6",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      }
     ],
     "tags": []
   },

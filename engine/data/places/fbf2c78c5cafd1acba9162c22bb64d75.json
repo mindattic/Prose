@@ -1,0 +1,40 @@
+{
+  "id": "fbf2c78c5cafd1acba9162c22bb64d75",
+  "type": "place",
+  "name": "CaloBlock",
+  "aliases": [
+    "The Block"
+  ],
+  "description": "A calorie bar dispensary in Kenosha shaped like a vending machine but operated by a person — Kwesi Lindqvist-Owusu sits inside a booth behind the machine's facade and hand-presses calorie bars from a mixture of oats, synth-protein powder, dried fruit paste, and binding agents. Each bar is Φ1 and provides roughly 600 calories. They taste like compressed ambition. Kwesi makes about 400 bars a day and sells every one. He could automate the process but says the hand-pressing is the only thing that keeps him from losing his mind.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Kenosha commuters",
+    "Corridor travelers",
+    "People who need portable calories"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.584,
+    "lng": -87.821
+  },
+  "tags": [
+    "place",
+    "street_vendor",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": [
+    "Kwesi Lindqvist-Owusu"
+  ]
+}

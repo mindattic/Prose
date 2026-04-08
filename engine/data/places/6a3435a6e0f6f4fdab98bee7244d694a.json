@@ -55,8 +55,24 @@
       "The building's interior — now partially invaded by downward-growing structures"
     ],
     "exits": [
-      "Service ladder from the rooftop to the building's ground floor",
-      "The building's main entrance on the Circuit street level"
+      {
+        "direction": "",
+        "destination": "Service ladder from the rooftop to the building's ground floor",
+        "type": "road",
+        "description": "Service ladder from the rooftop to the building's ground floor",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      },
+      {
+        "direction": "",
+        "destination": "The building's main entrance on the Circuit street level",
+        "type": "road",
+        "description": "The building's main entrance on the Circuit street level",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      }
     ],
     "tags": []
   },

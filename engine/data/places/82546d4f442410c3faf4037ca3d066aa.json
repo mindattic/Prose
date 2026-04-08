@@ -1,0 +1,41 @@
+{
+  "id": "82546d4f442410c3faf4037ca3d066aa",
+  "type": "place",
+  "name": "The Synth Ramen Trough",
+  "aliases": [
+    "The Trough",
+    "Ramen Trough"
+  ],
+  "description": "Calling it a restaurant is generous. It's a counter with eight stools bolted to the floor of what used to be a laundromat in Logan Square. Yuki Hassan-Petersen makes one thing: synth-ramen. One broth, one noodle type, Φ4. You can add a vat-egg for Φ1. The broth is cloudy, fatty, and simmers in a pot that hasn't been fully emptied in six years — each batch builds on the residue of the last, creating a flavor profile that is technically a health code violation and practically the best bowl of cheap ramen in the northern corridor. Yuki does not discuss the pot. The pot is the pot.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Logan Square Shelf regulars",
+    "Ramen chasers",
+    "People who don't ask questions about the pot"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.924,
+    "lng": -87.701
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": [
+    "Yuki Hassan-Petersen"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "26d109c1e1bf97067702663c61b6b271",
+  "type": "place",
+  "name": "Ridgepost",
+  "aliases": [],
+  "description": "Ridgepost, a settlement consumed by the Biomass advance, now referenced only in historical records and cautionary tales about the vegetation front's relentless expansion.",
+  "coordinates": {
+    "lat": 35.2,
+    "lng": -86.4,
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "outside",
+    "consumed",
+    "biomass"
+  ],
+  "related_entities": [
+    "the_biomass_compiled_accounts_southern_corridor",
+    "ridgepost_final_transmission"
+  ]
+}

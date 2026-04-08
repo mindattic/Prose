@@ -1,0 +1,41 @@
+{
+  "id": "69a57c7c6c7cefcbcc30a0311de2db5c",
+  "type": "place",
+  "name": "Midnight Gyros",
+  "aliases": [
+    "Midnight"
+  ],
+  "description": "A gyro shop in Greektown that operates from 8 PM to 5 AM, serving the drunk, the tired, the nocturnal, and anyone else who needs a vat-lamb gyro wrapped in warm pita at an hour when most restaurants are closed. A gyro is Φ8. A plate with fries and salad is Φ12. The tzatziki is made from real yogurt and cucumber. The lamb is vat-grown but seasoned and cooked on a vertical rotisserie that gives it the proper texture — crispy edges, tender interior. Owner Nikolaos Okafor-Papadopoulos sleeps during the day and considers the night shift the only honest shift.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Greektown night owls",
+    "Post-bar crowd",
+    "Night shift workers"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.878,
+    "lng": -87.647
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "nightlife",
+    "tier_2"
+  ],
+  "related_entities": [
+    "Nikolaos Okafor-Papadopoulos"
+  ]
+}

@@ -53,7 +53,15 @@
       "The deep geological formation beneath the Shelf district"
     ],
     "exits": [
-      "Natural fissures leading upward toward mapped Underworld Depth 12 (dangerous, narrow, partially flooded)"
+      {
+        "direction": "",
+        "destination": "Natural fissures leading upward toward mapped Underworld Depth 12 (dangerous, narrow, partially flooded)",
+        "type": "road",
+        "description": "Natural fissures leading upward toward mapped Underworld Depth 12 (dangerous, narrow, partially flooded)",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      }
     ],
     "tags": []
   },

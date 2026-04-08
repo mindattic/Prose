@@ -1,0 +1,40 @@
+{
+  "id": "9e8c6c9c58afbd0eb199496d674eaf85",
+  "type": "place",
+  "name": "The Ration Station",
+  "aliases": [
+    "RatStat"
+  ],
+  "description": "A government-subsidized nutrient dispensary in Gary that technically closed in 2195 when the subsidy ended but kept operating because the woman who ran it, Blessing Andersson-Kone, refused to stop. She converted it to a donation-based model, makes do with whatever comes in, and still serves 150 people a day. The rations are basic — paste, bars, occasionally a hot meal — but they come with a dignity that the government version never had. Blessing knows everyone's name, asks about their families, and remembers what they said last time. The food keeps you alive. Blessing keeps you human.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Gary's poorest residents",
+    "Families",
+    "Former government program recipients"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.601,
+    "lng": -87.337
+  },
+  "tags": [
+    "place",
+    "restaurant",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": [
+    "Blessing Andersson-Kone"
+  ]
+}

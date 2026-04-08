@@ -51,7 +51,15 @@
       "Maintenance corridor D6-M7"
     ],
     "exits": [
-      "Maintenance corridor to the D6 transit tunnel"
+      {
+        "direction": "",
+        "destination": "Maintenance corridor to the D6 transit tunnel",
+        "type": "road",
+        "description": "Maintenance corridor to the D6 transit tunnel",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      }
     ],
     "tags": []
   },

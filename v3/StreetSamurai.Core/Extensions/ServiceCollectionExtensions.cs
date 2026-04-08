@@ -30,7 +30,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CyberwareRepository>();
         services.AddSingleton<VocabularyRepository>();
         services.AddSingleton<SyntheticLifeRepository>();
-        services.AddSingleton<GenewareRepository>();
+        services.AddSingleton<GenemodRepository>();
         services.AddSingleton<TransportationRepository>();
         services.AddSingleton<QuoteRepository>();
         services.AddSingleton<ContractRepository>();
@@ -62,7 +62,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CyberwareRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<VocabularyRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SyntheticLifeRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<GenewareRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<GenemodRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<TransportationRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<QuoteRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ContractRepository>());
@@ -192,7 +192,7 @@ public static class ServiceCollectionExtensions
             var idx = new ThematicIndexService(
                 sp.GetRequiredService<DatabaseService>(),
                 sp.GetRequiredService<SyntheticLifeRepository>(),
-                sp.GetRequiredService<GenewareRepository>(),
+                sp.GetRequiredService<GenemodRepository>(),
                 sp.GetRequiredService<TransportationRepository>(),
                 sp.GetRequiredService<VocabularyRepository>(),
                 sp.GetRequiredService<QuoteRepository>(),

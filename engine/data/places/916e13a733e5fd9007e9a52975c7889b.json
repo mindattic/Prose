@@ -1,0 +1,40 @@
+{
+  "id": "916e13a733e5fd9007e9a52975c7889b",
+  "type": "place",
+  "name": "Shelf Sausage",
+  "aliases": [
+    "Sausage Stand"
+  ],
+  "description": "A bratwurst stand in Green Bay that serves vat-pork bratwursts on synth-bread with sauerkraut and mustard. Φ4 each. The operator, Erik Osei-Johansson, is adamant that Green Bay's bratwurst tradition survives regardless of whether the pork is real, and he treats every brat he serves with a seriousness that borders on ceremonial. The sauerkraut is genuine — fermented cabbage, the real thing — which he considers the non-negotiable element. The bread is whatever's cheapest. The brat is vat-grown. But the kraut is real, and on this hill Erik will die.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Green Bay residents",
+    "Bratwurst traditionalists",
+    "Sauerkraut purists"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 44.513,
+    "lng": -88.016
+  },
+  "tags": [
+    "place",
+    "street_vendor",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": [
+    "Erik Osei-Johansson"
+  ]
+}

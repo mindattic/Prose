@@ -793,7 +793,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "news" or "news archive" => "bi-newspaper",
             "archetypes" => "bi-person-bounding-box",
             "synthetics" => "bi-cpu",
-            "geneware" => "bi-virus",
+            "geneware" or "genemods" => "bi-virus",
             "transportation" => "bi-truck",
             "apparel" => "bi-handbag",
             "contracts" => "bi-clipboard-check",

@@ -53,7 +53,15 @@
       "Greater Laceworks district"
     ],
     "exits": [
-      "All four bounding streets connect to the broader Laceworks district"
+      {
+        "direction": "",
+        "destination": "All four bounding streets connect to the broader Laceworks district",
+        "type": "road",
+        "description": "All four bounding streets connect to the broader Laceworks district",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      }
     ],
     "tags": []
   },

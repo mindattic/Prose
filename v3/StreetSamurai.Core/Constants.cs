@@ -30,7 +30,7 @@ public static class Constants
         public const string Equipment = "equipment";
         public const string Technology = "technology";
         public const string Cyberware = "cyberware";
-        public const string Geneware = "geneware";
+        public const string Genemods = "genemods";
         public const string Ammunition = "ammunition";
         public const string Apparel = "apparel";
         public const string Pharmaceutical = "pharmaceutical";

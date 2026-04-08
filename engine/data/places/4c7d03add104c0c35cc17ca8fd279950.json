@@ -1,0 +1,42 @@
+{
+  "id": "4c7d03add104c0c35cc17ca8fd279950",
+  "type": "place",
+  "name": "Fried Everything",
+  "aliases": [
+    "FE",
+    "Fry Stand"
+  ],
+  "description": "A deep-fry cart in Austin Shelf, Chicago, that will fry anything you bring it. Literally anything. Bring a vat-protein slab, they'll fry it. Bring a synth-vegetable, they'll fry it. Bring something unidentifiable, they'll fry it and not ask. The base price is Φ2 for frying services; the cart also sells its own pre-battered synth-fish strips for Φ3. Operated by twin brothers Ade and Olu Gustafsson-Adeyemi, who argue constantly about oil temperature and agree on nothing except that everything is better fried.",
+  "atmosphere": {
+    "sights": [],
+    "sounds": [],
+    "smells": [],
+    "feel": "",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Austin Shelf residents",
+    "People with items that need frying",
+    "Oil enthusiasts"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.896,
+    "lng": -87.765
+  },
+  "tags": [
+    "place",
+    "street_vendor",
+    "food",
+    "tier_1"
+  ],
+  "related_entities": [
+    "Ade Gustafsson-Adeyemi",
+    "Olu Gustafsson-Adeyemi"
+  ]
+}

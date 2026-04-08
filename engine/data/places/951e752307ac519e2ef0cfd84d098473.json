@@ -50,7 +50,15 @@
       "Underworld Depth 9 residential settlement cluster"
     ],
     "exits": [
-      "Single narrow passage to Tunnel J-14"
+      {
+        "direction": "",
+        "destination": "Single narrow passage to Tunnel J-14",
+        "type": "road",
+        "description": "Single narrow passage to Tunnel J-14",
+        "restricted": false,
+        "danger_level": 0,
+        "tags": []
+      }
     ],
     "tags": []
   },

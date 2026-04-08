@@ -1,0 +1,82 @@
+{
+  "id": "d8acbad054d794959bd6959e79ce5983",
+  "type": "place",
+  "name": "Slipway",
+  "aliases": [
+    "The Slip",
+    "Slipway Tap",
+    "Down the Ramp"
+  ],
+  "description": "Slipway is built into the concrete boat ramp at Sheboygan's lakefront, half above water and half below, depending on the lake level. The bar occupies what was once a Coast Guard boat launch facility, and the original ramp — a wide concrete slope descending into Lake Michigan — now serves as both the bar's entrance and its most distinctive feature. At low water, you walk down the ramp to the door. At high water, you wade. The owner, Katje Ndiaye-Holmgren, has posted a permanent sign at the top of the ramp: \"IF YOU CAN REACH THE DOOR, THE DRINKS ARE HALF PRICE.\" The joke works because the lake level genuinely fluctuates, and on high-water days the entrance is knee-deep. Regulars keep spare boots at the bar.\n\nSheboygan sits between Milwaukee and Green Bay on the lakeshore, a Tier 1-2 waypoint that most corridor travelers pass through without stopping. The people who do stop — and the people who live here — tend to be connected to the lake in ways that residents of larger cities find bewildering. Fishermen, colony resupply crews, hull maintenance workers, weather trackers, and the occasional marine salvage operator who knows the locations of wrecks that haven't been mapped since the Great Lakes shipping lanes were abandoned. Slipway is where these people gather, and the conversations are dense with practical knowledge about the lake — currents, ice patterns, colony movements, and the things that have been seen in deep water that nobody can satisfactorily explain.\n\nFreelancers working the mid-corridor route between Milwaukee and Green Bay learn quickly that Slipway is the place to stop. Katje has a talent for introducing people — not as a fixer, not for a fee, but because she genuinely enjoys connecting someone who needs a boat with someone who has one, or someone who needs lake passage with someone who knows the route. Her introductions are low-pressure and usually accurate, because she's been watching the lakefront community for twenty years and she knows who is reliable and who is trouble. The ramp entrance also provides an unmatched early warning system: you can see anyone approaching for a hundred meters. In a profession where surprises tend to be fatal, that visibility is worth the wet boots.",
+  "atmosphere": {
+    "sights": [
+      "The concrete ramp descending to the door — dry, damp, or flooded depending on the lake's mood",
+      "Lake Michigan through the bar's lower windows, water level visible and constantly shifting",
+      "Katje's half-price sign at the top of the ramp, water-stained and permanent",
+      "Fishing gear, navigation charts, and spare boots hung along the walls"
+    ],
+    "sounds": [
+      "The lake — waves on concrete, the most constant sound in Sheboygan, the bar's ambient track",
+      "Marine weather radio, always on, always in the background, occasionally interrupting conversations with urgency",
+      "Wet boots on concrete — the entrance percussion of every high-water arrival",
+      "Katje laughing at someone's wet legs — she never gets tired of the joke"
+    ],
+    "smells": [
+      "Lake Michigan at close range — mineral, cold, immense, the smell of a body of water that doesn't care about you",
+      "Fresh catch being prepared in the back — Slipway serves whatever the boats brought in",
+      "Damp concrete and marine sealant — the permanent base note of a bar built into a boat ramp"
+    ],
+    "feel": "Practical and welcoming. Slipway is a lake bar for lake people, and it treats the water as a neighbor rather than an obstacle. The flooding is a feature, the fish is fresh, and Katje will introduce you to someone useful before you finish your first drink.",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [
+      "Sheboygan lakefront",
+      "Mid-corridor lakeshore"
+    ],
+    "exits": [
+      {
+        "direction": "down",
+        "destination": "Lake Michigan via the boat ramp",
+        "type": "water",
+        "description": "The original Coast Guard boat ramp, now the bar's entrance and lake access point",
+        "restricted": false,
+        "danger_level": 1,
+        "tags": [
+          "lake_access"
+        ]
+      }
+    ],
+    "tags": []
+  },
+  "frequented_by": [
+    "Fishermen and colony resupply crews from the Sheboygan lakefront",
+    "Marine salvage operators with knowledge of unmapped wrecks",
+    "Mid-corridor travelers stopping between Milwaukee and Green Bay",
+    "Freelancers seeking lake passage, contacts, or information about colony movements"
+  ],
+  "notable_locations": [
+    "The ramp entrance — the bar's hundred-meter sight line and early warning system",
+    "The boot wall — spare footwear left by regulars for high-water days"
+  ],
+  "coordinates": {
+    "lat": 43.7508,
+    "lng": -87.7145
+  },
+  "tags": [
+    "place",
+    "bar",
+    "nightlife",
+    "tier 1",
+    "old_harbor",
+    "waterfront",
+    "sheboygan",
+    "lake",
+    "colony_trade"
+  ],
+  "related_entities": [
+    "Katje Ndiaye-Holmgren",
+    "Sheboygan",
+    "The Floating Colonies of Lake Michigan"
+  ]
+}

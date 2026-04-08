@@ -1,0 +1,69 @@
+{
+  "id": "bb1e27a52cc8cb5a016eb727d5da3ed2",
+  "type": "place",
+  "name": "Rubble & Rye",
+  "aliases": [
+    "Rubble",
+    "R&R",
+    "The Collapse"
+  ],
+  "description": "Rubble & Rye exists in the wreckage of a building that partially collapsed during the Reconstruction and was never cleared. The owner, a woman named Constance Abiodun-Bakker, simply looked at the rubble, saw walls that still defined a space, saw a ceiling that still mostly existed, and saw a bar. She was right. The collapsed section forms a dramatic half-wall of broken concrete and rebar that serves as both architectural statement and structural necessity — remove it and the remaining ceiling comes down. Constance has turned this liability into a feature. The rubble wall is lit from within by embedded chemical lights, turning a construction disaster into something that looks almost intentional.\n\nThe location — a wrecked block in Chicago's Englewood district, now called Ironfield — means that Rubble & Rye serves the hardest tier of Meridian's population. These are not romantic outlaws or stylish freelancers. These are people for whom the Shelf is aspirational, who work salvage jobs and manual labor and whose relationship to the city's economy is defined by the word expendable. Constance charges prices that these customers can afford, which means her margins are imaginary, and she makes up the difference by renting the rubble wall's interior as dead-drop storage. For a small fee, you can tuck something into a gap in the wreckage where no scanner can reach it and no one will look. The rubble keeps secrets the way it keeps the ceiling up: stubbornly, improbably, against all structural logic.\n\nFriday nights, someone drags a generator to the corner and a woman named Tola plays an acoustic guitar that predates the Reconstruction. She plays old music — actual old music, songs from before the corporate era, lyrics about freedom and work and love that sound like dispatches from an alien civilization. The crowd goes quiet when Tola plays. In a room full of people who have nothing, the music is everything. Rubble & Rye is not a good bar. It is a necessary bar. It is the place where Ironfield remembers it is made of people.",
+  "atmosphere": {
+    "sights": [
+      "The rubble wall — broken concrete and rebar lit from within by chemical lights, glowing amber",
+      "Constance behind a bar made from a salvaged door, counting Φ with the precision of someone who has none to waste",
+      "Tola on Friday nights, cross-legged on a chunk of concrete, playing songs older than the building",
+      "Ironfield through the gaps in the walls — the district's hard skyline, salvage fires in the distance"
+    ],
+    "sounds": [
+      "The creak of a structure held up by stubbornness and physics' patience",
+      "Quiet conversation — people in Ironfield don't raise their voices unless they mean it",
+      "Tola's guitar on Fridays — acoustic, unamplifed, filling the space completely",
+      "Rubble settling — small shifts and pops from the wall, the building's ongoing negotiation with gravity"
+    ],
+    "smells": [
+      "Rye whiskey — Constance's house pour, the only spirit she stocks, the only one she respects",
+      "Concrete dust, permanent and fine, coating everything in gray",
+      "Chemical light compounds from the rubble wall — a faint, acrid sweetness"
+    ],
+    "feel": "Defiant. Rubble & Rye shouldn't exist, structurally or economically. It exists anyway, because Constance decided it would and because Ironfield needs a place where the expendable can sit down and be treated as people. The defiance is quiet. The rye is decent.",
+    "tags": []
+  },
+  "connections": {
+    "adjacent_to": [
+      "Ironfield",
+      "Englewood ruins"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Salvage workers and manual laborers from Ironfield",
+    "People using the dead-drop storage in the rubble wall",
+    "Anyone who needs to hear Tola play on a Friday night",
+    "Runners passing through the lowest tier who need a drink that doesn't ask questions"
+  ],
+  "notable_locations": [
+    "The rubble wall — dead-drop storage hidden in the wreckage gaps",
+    "Tola's corner — the chunk of concrete where she plays every Friday"
+  ],
+  "coordinates": {
+    "lat": 41.7748,
+    "lng": -87.644
+  },
+  "tags": [
+    "place",
+    "bar",
+    "nightlife",
+    "tier 1",
+    "shelf",
+    "ironfield",
+    "chicago",
+    "dead_drop",
+    "music"
+  ],
+  "related_entities": [
+    "Constance Abiodun-Bakker",
+    "Ironfield"
+  ]
+}

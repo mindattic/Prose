@@ -108,10 +108,10 @@ public class SyntheticLifeRepository : JsonDirectoryRepository<SyntheticLifeData
         : base(Path.Combine(paths.EngineDataDir, "synthetics"), s => s.Name) { }
 }
 
-public class GenewareRepository : JsonDirectoryRepository<GenewareData>
+public class GenemodRepository : JsonDirectoryRepository<GenemodData>
 {
-    public GenewareRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "geneware"), g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
+    public GenemodRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "genemods"), g => g.ProductName.Length > 0 ? g.ProductName : g.Name) { }
 }
 
 public class TransportationRepository : JsonDirectoryRepository<TransportationData>

@@ -19,7 +19,7 @@ public class TriviaService(
     TechnologyRepository techRepo,
     FactionRepository factionRepo,
     EquipmentRepository equipRepo,
-    GenewareRepository geneRepo,
+    GenemodRepository geneRepo,
     TransportationRepository transportRepo)
 {
     private const int TriviaSlots = 100;
@@ -143,7 +143,7 @@ public class TriviaService(
         foreach (var g in geneRepo.GetAll().OrderBy(_ => Random.Shared.Next()).Take(20))
         {
             var desc = FirstSentence(g.Description);
-            if (desc.Length > 20) pool.Add($"Geneware: {g.Name} — {desc}");
+            if (desc.Length > 20) pool.Add($"Genemods: {g.Name} — {desc}");
         }
 
         foreach (var t in transportRepo.GetAll().OrderBy(_ => Random.Shared.Next()).Take(15))

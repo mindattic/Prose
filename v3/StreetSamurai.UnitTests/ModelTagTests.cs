@@ -46,7 +46,7 @@ public class ModelTagTests
     public void SyntheticLifeData_HasTags() => AssertHasTags(new SyntheticLifeData());
 
     [Test]
-    public void GenewareData_HasTags() => AssertHasTags(new GenewareData());
+    public void GenemodData_HasTags() => AssertHasTags(new GenemodData());
 
     [Test]
     public void TransportationData_HasTags() => AssertHasTags(new TransportationData());

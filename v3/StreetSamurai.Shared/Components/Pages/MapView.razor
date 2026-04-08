@@ -1,23 +1,36 @@
 @page "/map"
 @inject SettingsService Settings
 @inject IJSRuntime JS
+@inject DistrictRepository PlaceRepo
 
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h4 class="text-danger mb-0">Map — Meridian 88</h4>
-    <div class="d-flex gap-2">
-        <button class="btn btn-sm btn-outline-secondary" @onclick="ToggleDistricts">
+    <div class="d-flex gap-2 flex-wrap">
+        <button class="btn btn-sm @(layerStates["districts"] ? "btn-secondary" : "btn-outline-secondary")" @onclick="@(() => ToggleLayer("districts"))">
             <i class="bi bi-layers"></i> Districts
+        </button>
+        @foreach (var cat in categories)
+        {
+            var key = cat.key;
+            <button class="btn btn-sm @(layerStates.GetValueOrDefault(key) ? "btn-secondary" : "btn-outline-secondary")"
+                    style="@(layerStates.GetValueOrDefault(key) ? $"border-color:{cat.color};color:{cat.color}" : "")"
+                    @onclick="() => ToggleLayer(key)">
+                @cat.label <span class="badge bg-dark" style="font-size:0.65rem;">@cat.count</span>
+            </button>
+        }
+        <button class="btn btn-sm btn-outline-secondary" @onclick="ToggleTheme">
+            <i class="bi @(darkMode ? "bi-sun" : "bi-moon")"></i>
         </button>
     </div>
 </div>
 
 @if (!string.IsNullOrWhiteSpace(Settings.GoogleMapsApiKey))
 {
-    <div id="meridian-map" style="width: 100%; height: calc(100vh - 120px); border-radius: 6px; border: 1px solid #30363d;"></div>
+    <div id="meridian-map" style="width: 100%; height: calc(100vh - 130px); border-radius: 6px; border: 1px solid #30363d;"></div>
 }
 else
 {
-    <div class="d-flex align-items-center justify-content-center text-muted" style="height: calc(100vh - 120px); border: 1px solid #30363d; border-radius: 6px;">
+    <div class="d-flex align-items-center justify-content-center text-muted" style="height: calc(100vh - 130px); border: 1px solid #30363d; border-radius: 6px;">
         <div class="text-center">
             <i class="bi bi-map" style="font-size: 3rem;"></i>
             <p class="mt-2">Add a Google Maps API key in Settings to enable the map.</p>
@@ -27,6 +40,26 @@ else
 
 @code {
     private bool mapLoaded;
+    private bool darkMode => Settings.MapMode == "dark";
+    private Dictionary<string, bool> layerStates = new()
+    {
+        ["districts"] = true,
+        ["colony"] = true,
+        ["corporate"] = true,
+        ["medical"] = true,
+        ["nightlife"] = true,
+        ["market"] = true,
+        ["anomaly"] = true,
+        ["industrial"] = true,
+        ["community"] = true,
+        ["security"] = true,
+        ["underworld"] = true,
+        ["behemoth"] = true,
+        ["food"] = true,
+        ["default"] = true
+    };
+
+    private List<(string key, string label, string color, int count)> categories = [];
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -34,11 +67,89 @@ else
         {
             mapLoaded = true;
             await JS.InvokeVoidAsync("meridianMap.init", "meridian-map", Settings.GoogleMapsApiKey);
+            if (Settings.MapMode == "light")
+                await JS.InvokeVoidAsync("meridianMap.setTheme", "light");
+            await Task.Delay(500);
+            await LoadPlaces();
         }
     }
 
-    private async Task ToggleDistricts()
+    private async Task LoadPlaces()
     {
-        await JS.InvokeVoidAsync("meridianMap.toggleDistricts");
+        var places = PlaceRepo.GetAll()
+            .Where(p => p.Coordinates.Lat != 0 && p.Coordinates.Lng != 0)
+            .Select(p => new {
+                name = p.Name,
+                lat = p.Coordinates.Lat,
+                lng = p.Coordinates.Lng,
+                cat = CategorizePlace(p.Tags),
+                desc = TruncateDesc(p.Description)
+            })
+            .ToList();
+
+        // Count per category for badges
+        var counts = places.GroupBy(p => p.cat).ToDictionary(g => g.Key, g => g.Count());
+        categories = new List<(string, string, string, int)>
+        {
+            ("colony", "Colonies", "#3fb950", counts.GetValueOrDefault("colony")),
+            ("behemoth", "Behemoths", "#f0883e", counts.GetValueOrDefault("behemoth")),
+            ("anomaly", "Anomalies", "#dc3545", counts.GetValueOrDefault("anomaly")),
+            ("corporate", "Corporate", "#e6edf3", counts.GetValueOrDefault("corporate")),
+            ("nightlife", "Nightlife", "#d2a8ff", counts.GetValueOrDefault("nightlife")),
+            ("food", "Food", "#f0883e", counts.GetValueOrDefault("food")),
+            ("market", "Markets", "#f0883e", counts.GetValueOrDefault("market")),
+            ("medical", "Medical", "#f778ba", counts.GetValueOrDefault("medical")),
+            ("industrial", "Industrial", "#8b949e", counts.GetValueOrDefault("industrial")),
+            ("community", "Community", "#3fb950", counts.GetValueOrDefault("community")),
+            ("security", "Security", "#58a6ff", counts.GetValueOrDefault("security")),
+            ("underworld", "Underworld", "#6e40c9", counts.GetValueOrDefault("underworld")),
+            ("default", "Other", "#58a6ff", counts.GetValueOrDefault("default"))
+        };
+        categories = categories.Where(c => c.Item4 > 0).ToList();
+
+        await JS.InvokeVoidAsync("meridianMap.loadPlaces", places);
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task ToggleLayer(string layer)
+    {
+        layerStates[layer] = !layerStates.GetValueOrDefault(layer, true);
+        if (layer == "districts")
+            await JS.InvokeVoidAsync("meridianMap.toggleDistricts");
+        else
+            await JS.InvokeVoidAsync("meridianMap.toggleCategory", layer);
+    }
+
+    private async Task ToggleTheme()
+    {
+        Settings.MapMode = darkMode ? "light" : "dark";
+        await JS.InvokeVoidAsync("meridianMap.setTheme", Settings.MapMode);
+    }
+
+    private static string CategorizePlace(List<string> tags)
+    {
+        if (tags == null) return "default";
+        var t = new HashSet<string>(tags.Select(x => x.ToLowerInvariant()));
+        if (t.Contains("floating_colony") || t.Contains("maritime") || t.Contains("freeport")) return "colony";
+        if (t.Contains("behemoth") || t.Contains("iowan_behemoth") || t.Contains("sighting")) return "behemoth";
+        if (t.Contains("anomaly") || t.Contains("inexplicable") || t.Contains("new_weird") || t.Contains("lost_block") || t.Contains("spatial_anomaly")) return "anomaly";
+        if (t.Contains("corporate") || t.Contains("corponation")) return "corporate";
+        if (t.Contains("medical") || t.Contains("clinic") || t.Contains("hospital")) return "medical";
+        if (t.Contains("bar") || t.Contains("nightlife") || t.Contains("club")) return "nightlife";
+        if (t.Contains("restaurant") || t.Contains("cafe") || t.Contains("pub") || t.Contains("street_vendor")) return "food";
+        if (t.Contains("market") || t.Contains("shop")) return "market";
+        if (t.Contains("industrial") || t.Contains("factory") || t.Contains("warehouse")) return "industrial";
+        if (t.Contains("shelter") || t.Contains("refugee") || t.Contains("community")) return "community";
+        if (t.Contains("surveillance") || t.Contains("security") || t.Contains("corpsec")) return "security";
+        if (t.Contains("underworld") || t.Contains("tunnel") || t.Contains("underground")) return "underworld";
+        return "default";
+    }
+
+    private static string TruncateDesc(string desc)
+    {
+        if (string.IsNullOrWhiteSpace(desc)) return "";
+        var dot = desc.IndexOf(". ");
+        if (dot > 0 && dot < 200) return desc[..(dot + 1)];
+        return desc.Length <= 200 ? desc : desc[..200] + "...";
     }
 }
