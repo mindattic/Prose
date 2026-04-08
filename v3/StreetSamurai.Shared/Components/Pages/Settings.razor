@@ -133,7 +133,7 @@
                             }
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <label class="form-label text-muted">Generate Encyclopedia and publish to web.</label>
                         <div class="input-group">
                             <button class="btn btn-sm btn-danger" @onclick="PublishAll" disabled="@publishing">
@@ -145,6 +145,20 @@
                         @if (publishStatus != null)
                         {
                             <small class="mt-1 d-block @(publishSuccess ? "text-success" : "text-muted")">@publishStatus</small>
+                        }
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted">Run ML pipeline to find and fix inconsistencies.</label>
+                        <div class="input-group">
+                            <button class="btn btn-sm btn-outline-info" @onclick="LaunchFactDiscovery" disabled="@factRunning">
+                                @if (factRunning) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                else { <i class="bi bi-check2-circle me-1"></i> }
+                                Run Fact Discovery
+                            </button>
+                        </div>
+                        @if (factStatus != null)
+                        {
+                            <small class="mt-1 d-block @(factSuccess ? "text-success" : "text-muted")">@factStatus</small>
                         }
                     </div>
                 </div>
@@ -664,6 +678,51 @@
             HtmlExportSvc.ExportDir,
             (cur, total, file) => { ftpStatus = $"Uploading {cur}/{total}: {file}"; InvokeAsync(StateHasChanged); }));
         ftpPublishResult = msg; ftpPublishSuccess = ok; ftpBusy = false; ftpStatus = null;
+        await InvokeAsync(StateHasChanged);
+    }
+
+    // Fact Discovery
+    private bool factRunning;
+    private string? factStatus;
+    private bool factSuccess;
+
+    private async Task LaunchFactDiscovery()
+    {
+        factRunning = true; factStatus = "Launching pipeline..."; factSuccess = false;
+        await InvokeAsync(StateHasChanged);
+
+        try
+        {
+            var pipelineDir = Path.Combine(Paths.DataRoot, "v3", "truth-discovery");
+            var scriptPath = Path.Combine(pipelineDir, "run_pipeline.py");
+
+            if (!File.Exists(scriptPath))
+            {
+                factStatus = "Pipeline not found at " + scriptPath;
+                factRunning = false;
+                return;
+            }
+
+            var psi = new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "python",
+                Arguments = $"\"{scriptPath}\"",
+                WorkingDirectory = pipelineDir,
+                UseShellExecute = true,
+                CreateNoWindow = false
+            };
+            psi.Environment["PYTHONIOENCODING"] = "utf-8";
+
+            System.Diagnostics.Process.Start(psi);
+            factStatus = "Pipeline launched in terminal. Check the window for progress.";
+            factSuccess = true;
+        }
+        catch (Exception ex)
+        {
+            factStatus = $"Failed to launch: {ex.Message}";
+        }
+
+        factRunning = false;
         await InvokeAsync(StateHasChanged);
     }
 
