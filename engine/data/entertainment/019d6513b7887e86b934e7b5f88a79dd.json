@@ -5,7 +5,7 @@
   "category": "tabletop",
   "subcategory": "AR-overlay board game",
   "aliases": [],
-  "description": "A hybrid physical-AR board game where a printed city map of GLMZ serves as the base layer, and BCI or goggle overlay renders dynamic faction territories, resource nodes, and event triggers invisible to non-augmented observers at the table. Physical tokens represent ground-level assets \u2014 safe houses, bribes, informants \u2014 while the AR layer handles information warfare, surveillance networks, and aerial drone routes that only some players can perceive depending on their character\u0027s augmentation load. The asymmetric information design means augmented and unaugmented players at the same table are playing fundamentally different games.",
+  "description": "A hybrid physical-AR board game where a printed city map of GLMZ serves as the base layer, and BCI or goggle overlay renders dynamic faction territories, resource nodes, and event triggers invisible to non-augmented observers at the table. Physical tokens represent ground-level assets — safe houses, bribes, informants — while the AR layer handles information warfare, surveillance networks, and aerial drone routes that only some players can perceive depending on their character's augmentation load. The asymmetric information design means augmented and unaugmented players at the same table are playing fundamentally different games.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 2-3",
@@ -16,9 +16,15 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "The cracked AR overlay contains additional map data not present in the licensed version \u2014 real surveillance node locations in GLMZ\u0027s Tier 1-2 districts, accurate to within 20 meters.",
+    "The cracked AR overlay contains additional map data not present in the licensed version — real surveillance node locations in GLMZ's Tier 1-2 districts, accurate to within 20 meters.",
     "A GHOSTMAP competitive team of unaugmented Shelf players has been winning every open tournament using a strategy guide written entirely in pre-BCI shorthand notation that no augmented player has bothered to learn.",
-    "The game\u0027s scenario pack \u0027Occupation Protocol\u0027 was pulled from sale six hours after release \u2014 players who downloaded it before the pull found it contained a fully playable simulation of a corponation district seizure with disturbingly accurate legal mechanics."
+    "The game's scenario pack 'Occupation Protocol' was pulled from sale six hours after release — players who downloaded it before the pull found it contained a fully playable simulation of a corponation district seizure with disturbingly accurate legal mechanics."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "GLMZ",
+    "Green Bay Community Table",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "Undertow"
+  ]
 }

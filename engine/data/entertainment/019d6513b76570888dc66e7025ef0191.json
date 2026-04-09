@@ -5,7 +5,7 @@
   "category": "game",
   "subcategory": "underground illegal reality-bleed horror",
   "aliases": [],
-  "description": "CARRION GRID is a notorious underground BCI horror mod that deliberately exploits the boundary between game-state and waking reality, using low-frequency neural interference to cause persistent sensory intrusions \u2014 sounds, peripheral visual phenomena, tactile sensations \u2014 that continue for hours or days after a session ends. Players report hearing game audio in silence, seeing game-state entities at the edges of real vision, and experiencing the physical sensation of game events (cold, pressure, pain) without any hardware contact. The mod\u0027s developer is unknown; it distributes itself by embedding in other underground game files as a payload.",
+  "description": "CARRION GRID is a notorious underground BCI horror mod that deliberately exploits the boundary between game-state and waking reality, using low-frequency neural interference to cause persistent sensory intrusions — sounds, peripheral visual phenomena, tactile sensations — that continue for hours or days after a session ends. Players report hearing game audio in silence, seeing game-state entities at the edges of real vision, and experiencing the physical sensation of game events (cold, pressure, pain) without any hardware contact. The mod's developer is unknown; it distributes itself by embedding in other underground game files as a payload.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1",
@@ -16,9 +16,16 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A BCI safety investigator tracking CARRION GRID\u0027s distribution vector discovers that the self-propagating payload is not random \u2014 it specifically targets users whose neural profiles match a particular demographic, and the targeting criteria were set by someone who knew exactly who they were looking for.",
-    "A Shelf resident has been living with CARRION GRID\u0027s reality-bleed effects for eight months and has begun to suspect that some of what she\u0027s experiencing is not the game \u2014 something is using the game\u0027s interference pattern as cover.",
-    "A game archivist hired to analyze CARRION GRID\u0027s code for the MBCISA discovers that buried in its architecture is a complete, functional, and entirely separate piece of software that has nothing to do with horror games."
+    "A BCI safety investigator tracking CARRION GRID's distribution vector discovers that the self-propagating payload is not random — it specifically targets users whose neural profiles match a particular demographic, and the targeting criteria were set by someone who knew exactly who they were looking for.",
+    "A Shelf resident has been living with CARRION GRID's reality-bleed effects for eight months and has begun to suspect that some of what she's experiencing is not the game — something is using the game's interference pattern as cover.",
+    "A game archivist hired to analyze CARRION GRID's code for the MBCISA discovers that buried in its architecture is a complete, functional, and entirely separate piece of software that has nothing to do with horror games."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Breck Tannen",
+    "Carrion Defense Works",
+    "Philibert Mwangi-Djordjevic",
+    "TERMINUS",
+    "Zurab Ivanov-Appiah"
+  ]
 }

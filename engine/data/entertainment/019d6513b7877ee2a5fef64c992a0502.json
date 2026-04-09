@@ -5,7 +5,7 @@
   "category": "game",
   "subcategory": "augmented reality citywide territory capture",
   "aliases": [],
-  "description": "Fracture Lines is a persistent AR overlay game covering all of M88, dividing the city into 12,000 capturable nodes that players claim by physically occupying locations and completing timed challenges \u2014 parkour routes, puzzle sequences, cryptographic locks \u2014 while rival factions attempt to dislodge them in real time. Nodes in Tier 1 districts yield the highest in-game rewards but carry real-world risk, creating a brutal geography where dedicated Shelf players dominate high-value zones that Tier 3-4 players fear to enter. The game has been running continuously since 2188 with no canonical ending.",
+  "description": "Fracture Lines is a persistent AR overlay game covering all of M88, dividing the city into 12,000 capturable nodes that players claim by physically occupying locations and completing timed challenges — parkour routes, puzzle sequences, cryptographic locks — while rival factions attempt to dislodge them in real time. Nodes in Tier 1 districts yield the highest in-game rewards but carry real-world risk, creating a brutal geography where dedicated Shelf players dominate high-value zones that Tier 3-4 players fear to enter. The game has been running continuously since 2188 with no canonical ending.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1-2",
@@ -16,9 +16,16 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A Fracture Lines faction leader realizes a rival is using node-capture data to map patrol gaps for an actual heist \u2014 and they\u0027ve been providing the intelligence without knowing it.",
-    "A Tier 4 player using a proxy-runner to capture Shelf nodes has accidentally made a Shelf kid a target \u2014 the player wants to fix it, but getting to the Shelf is its own problem.",
-    "The oldest continuously held node in M88 \u2014 held by a single player since 2191 \u2014 suddenly goes dark, and the player has vanished."
+    "A Fracture Lines faction leader realizes a rival is using node-capture data to map patrol gaps for an actual heist — and they've been providing the intelligence without knowing it.",
+    "A Tier 4 player using a proxy-runner to capture Shelf nodes has accidentally made a Shelf kid a target — the player wants to fix it, but getting to the Shelf is its own problem.",
+    "The oldest continuously held node in M88 — held by a single player since 2191 — suddenly goes dark, and the player has vanished."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Castling",
+    "Ihaia Nystrom-Keita",
+    "Kamala Nystrom-Keita",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Shelf"
+  ]
 }

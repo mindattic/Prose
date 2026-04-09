@@ -5,7 +5,7 @@
   "category": "gambling",
   "subcategory": "underground fight betting",
   "aliases": [],
-  "description": "The dominant odds-setting and bet-clearing operation for underground combat on the Shelf, run by a network of independent bookmakers loosely affiliated under the Ironwall name but fiercely competitive with each other on line differences. Bettors access current odds through dead-drop BCI pings or physical chalkboards in designated canteens and salvage shops. The exchange handles everything from BLOODWORK circuit bouts to informal alley matches, processing an estimated \u03A62.3 million in action weekly.",
+  "description": "The dominant odds-setting and bet-clearing operation for underground combat on the Shelf, run by a network of independent bookmakers loosely affiliated under the Ironwall name but fiercely competitive with each other on line differences. Bettors access current odds through dead-drop BCI pings or physical chalkboards in designated canteens and salvage shops. The exchange handles everything from BLOODWORK circuit bouts to informal alley matches, processing an estimated Φ2.3 million in action weekly.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1-2",
@@ -16,9 +16,15 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A fighter\u0027s manager realizes the odds on her client have been suspiciously accurate for six consecutive bouts, suggesting someone with BCI access to the fighter\u0027s neural health data is betting against him.",
-    "An Ironwall bookmaker is pressured by a Tier 4 corporate fixer to throw the line on an upcoming bout \u2014 accepting means corruption, refusing means violence.",
+    "A fighter's manager realizes the odds on her client have been suspiciously accurate for six consecutive bouts, suggesting someone with BCI access to the fighter's neural health data is betting against him.",
+    "An Ironwall bookmaker is pressured by a Tier 4 corporate fixer to throw the line on an upcoming bout — accepting means corruption, refusing means violence.",
     "Two competing Ironwall operations go to war over territory, and a neutral canteen owner caught in the middle must choose a side or find a third option before the debt collectors arrive."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Irontide Tidal Energy",
+    "The Fathom Line",
+    "The Interchange",
+    "The Shelf"
+  ]
 }

@@ -20,9 +20,50 @@ const SUBDIRS = [
   'synthetics', 'technology', 'transportation', 'vocabulary', 'weaponry'
 ];
 
-// Common words to skip even if they happen to be entity names
+// Directories whose entities should NOT be used as search terms
+// (but they still GET cross-referenced if other entities mention them)
+// Archetypes are role descriptors ("Analyst", "Fixer", "Enforcer") - not entity references
+const SKIP_AS_SEARCH_TERMS = new Set(['archetypes']);
+
+// Single-word names from these directories are too generic to match reliably.
+// Only multi-word names from these dirs will be used as search terms.
+const SINGLE_WORD_SKIP_DIRS = new Set([
+  'materials',      // "Steel", "Copper", "Leather" etc. are common in descriptions
+  'synthetics',     // "Mother", "Needle", "Compass", "Witness" etc.
+  'entertainment',  // "Stratum", "Consensus", etc.
+  'vocabulary',     // vocabulary words appear everywhere in text
+  'places',         // "Charcoal", "Gravel" etc. - single word place names
+  'quotes'          // quotes are text, not entity references
+]);
+
+// Specific single-word entity names that ARE distinctive enough to match
+// (override the SINGLE_WORD_SKIP_DIRS rule for these)
+const ALLOWED_SINGLE_WORDS = new Set([
+  // Well-known places with distinctive names
+  'glmz', 'meridian', 'irkalla',
+  // Key corponation short names
+  'tessera', 'arcturus', 'ringo',
+  // Distinctive character names
+  'vandal', 'razorback', 'tenderloin', 'switchboard', 'axiom-prime',
+  // Distinctive pharmaceutical names (not English words)
+  'adrenyx', 'aurocet', 'celerix', 'duravex', 'korrath', 'omnipex',
+  'oxytrel', 'praevex', 'serafin', 'somalex', 'tethrin', 'sustrel',
+  'velorin', 'tharcon', 'voraxin', 'kairos', 'narrowcast', 'nullform',
+  'blessura', 'calydrin', 'dravecor', 'focadrin', 'kethavar', 'nullthar',
+  'phaedrin', 'strathex', 'vantabloc', 'ferrocaine', 'nullocaine',
+  'strelazine', 'vorrathine', 'amygdacet', 'chromasin', 'drexaline',
+  'hexadrine', 'marathine', 'prismatol', 'synaptrel', 'vellichor',
+  'amytal-x',
+]);
+
+// Common English words to skip even if multi-word entities contain them individually
+// These would cause false positives if they happen to be registered as entity names
+// Comprehensive skip list: any single-word name (including aliases) that matches
+// a common English word will be skipped to avoid false positives.
+// Multi-word names containing these words are fine (e.g. "The Gradient Compact" is OK).
 const SKIP_WORDS = new Set([
-  'the', 'circuit', 'edge', 'ghost', 'signal', 'code', 'wire', 'zero',
+  // Basic English
+  'the', 'edge', 'signal', 'code', 'wire', 'zero',
   'void', 'pulse', 'echo', 'line', 'node', 'link', 'core', 'flux',
   'mark', 'null', 'grid', 'base', 'apex', 'root', 'data', 'black',
   'white', 'blue', 'grey', 'gray', 'gold', 'iron', 'bone', 'blood',
@@ -42,6 +83,9 @@ const SKIP_WORDS = new Set([
   'load', 'fuel', 'heat', 'cool', 'burn', 'glow', 'flow', 'wave',
   'beam', 'bolt', 'shot', 'drop', 'grip', 'hold', 'pull', 'push',
   'turn', 'move', 'jump', 'fall', 'rise', 'spin', 'flip', 'roll',
+  'silt', 'clay', 'zinc', 'wool', 'teak', 'lead', 'alon',
+  'hdpe', 'ptfe', 'voss', 'host', 'numb', 'muse', 'fury', 'liar',
+  'sine', 'loom', 'whim',
   'slide', 'drift', 'crash', 'break', 'crack', 'split', 'slash',
   'punch', 'kick', 'bite', 'claw', 'blade', 'point', 'sharp', 'blunt',
   'heavy', 'light', 'quick', 'slow', 'fast', 'still', 'quiet', 'clear',
@@ -69,23 +113,51 @@ const SKIP_WORDS = new Set([
   'eight', 'large', 'small', 'great', 'major', 'minor', 'upper',
   'lower', 'inner', 'outer', 'front', 'rear', 'cross', 'multi',
   'micro', 'macro', 'ultra', 'super', 'extra', 'proto', 'semi',
-  // Some more specific words that might be entity-ish but are too generic
   'filter', 'system', 'harbor', 'market', 'street', 'paper',
   'copper', 'chrome', 'silver', 'amber', 'coral', 'ivory',
   'carbon', 'plasma', 'neural', 'cyber', 'synth', 'nano',
-  'atlas', 'basic', 'cargo', 'delta', 'gamma', 'alpha', 'beta',
+  'basic', 'cargo', 'delta', 'gamma', 'alpha', 'beta',
   'omega', 'sigma', 'theta', 'proxy', 'depot', 'forge', 'haven',
   'oasis', 'vault', 'nexus', 'crest', 'crown', 'spire', 'shard',
   'prism', 'helix', 'venom', 'toxin', 'serum', 'vigor', 'boost',
-  'titan', 'atlas', 'hydra', 'omega', 'viper', 'cobra', 'raven',
-  'crane', 'eagle', 'tiger', 'frost', 'ember', 'solar', 'lunar',
-  'tidal', 'storm', 'saint', 'rebel', 'exile', 'omega', 'cabal',
+  'titan', 'atlas', 'hydra', 'viper', 'cobra', 'raven',
+  'crane', 'eagle', 'tiger', 'ember', 'solar', 'lunar',
+  'tidal', 'saint', 'rebel', 'exile', 'cabal',
   'coven', 'triad', 'mafia', 'cartel', 'posse', 'horde', 'swarm',
   'brood', 'flock', 'batch', 'model', 'build', 'setup', 'input',
-  'output', 'patch', 'debug', 'error', 'fault', 'glitch', 'crash',
-  'vapor', 'hazard', 'breach', 'panic', 'siege', 'brawl', 'clash',
+  'output', 'debug', 'error', 'fault', 'glitch',
+  'hazard', 'breach', 'panic', 'siege', 'brawl', 'clash',
   'feint', 'blitz', 'joust', 'duel', 'rally', 'march', 'quest',
-  'mimic', 'decoy', 'proxy', 'ghost', 'shade', 'wraith', 'nomad'
+  'mimic', 'decoy', 'shade', 'wraith', 'nomad',
+  // Common English that are entity names or aliases
+  'corponation', 'handmade', 'obsolete', 'darkroom',
+  'independent', 'witness', 'consensus', 'interval',
+  'circuit', 'origin', 'canopy', 'indigo', 'patience',
+  'scaffold', 'gossamer', 'solstice', 'threshold', 'parallax',
+  'elevation', 'provisions', 'stampede', 'undertow', 'switchback',
+  'petrichor', 'boneworks', 'frequency', 'precipitate',
+  'porcelain', 'phosphene', 'delivered', 'optionality',
+  // Common words found as aliases in the data
+  'personal', 'standard', 'classic', 'compact', 'direct',
+  'custom', 'prime', 'single', 'double', 'triple',
+  'warm', 'bright', 'wrong', 'empty', 'closed',
+  'badge', 'stamp', 'knock', 'catch', 'switch', 'pocket',
+  'fuse', 'wren', 'iris', 'lark', 'reed', 'penn', 'ruby',
+  'jade', 'pearl', 'onyx', 'opal', 'olive', 'sage',
+  'finn', 'mack', 'ward', 'vale', 'dale', 'glen', 'lane',
+  'ford', 'mill', 'dock', 'pier', 'port', 'shed', 'barn',
+  'farm', 'camp', 'lodge', 'manor', 'ranch', 'villa', 'suite',
+  'buzz', 'nose', 'mole', 'tick', 'worm', 'nana', 'bayo',
+  'beke', 'daze', 'addy', 'disa', 'satu', 'whet', 'mara',
+  // Common materials
+  'steel', 'brass', 'copper', 'bronze', 'nickel', 'cobalt',
+  'leather', 'cotton', 'nylon', 'marble', 'granite', 'concrete',
+  'aluminum', 'titanium', 'tungsten', 'platinum', 'chromium',
+  'silicone', 'graphene', 'obsidian', 'limestone', 'sandstone',
+  'mahogany', 'rosewood', 'fiberglass', 'epoxy', 'kevlar',
+  'bamboo', 'walnut', 'maple', 'birch', 'cedar', 'ebony',
+  'aerogel', 'basalt', 'slate', 'glass', 'gold', 'iron', 'silk',
+  'silver', 'lead', 'zinc', 'wool', 'teak',
 ]);
 
 const MIN_NAME_LENGTH = 4;
@@ -93,13 +165,32 @@ const MIN_NAME_LENGTH = 4;
 // ---- Step 1: Build the entity index ----
 console.log('Building entity index...');
 
-// Map: canonical name -> { dir, file, id }
-// Map: lowercase name -> canonical name
-const entityIndex = new Map(); // canonical -> metadata
-const nameLookup = new Map();  // lowercase -> canonical
+const entityIndex = new Map();
+const nameLookup = new Map();
+const allEntities = [];
 
-// Also track all entities for processing
-const allEntities = []; // { dir, file, filePath, data }
+function shouldRegisterName(name, subdir) {
+  if (!name || name.length < MIN_NAME_LENGTH) return false;
+
+  const lcName = name.toLowerCase();
+
+  // Always skip common words
+  if (SKIP_WORDS.has(lcName)) return false;
+
+  // Skip entire directories from being search terms
+  if (SKIP_AS_SEARCH_TERMS.has(subdir)) return false;
+
+  // Check if it's a single word (no spaces)
+  const isSingleWord = !name.includes(' ') && !name.includes('-');
+  const isSingleOrHyphenated = !name.includes(' ');
+
+  // For single-word names from certain directories, only allow if explicitly allowed
+  if (isSingleOrHyphenated && SINGLE_WORD_SKIP_DIRS.has(subdir)) {
+    if (!ALLOWED_SINGLE_WORDS.has(lcName)) return false;
+  }
+
+  return true;
+}
 
 let filesRead = 0;
 for (const subdir of SUBDIRS) {
@@ -118,31 +209,30 @@ for (const subdir of SUBDIRS) {
       allEntities.push({ dir: subdir, file, filePath, data, raw });
 
       // Register the main name
-      const lcName = entityName.toLowerCase();
-      if (entityName.length >= MIN_NAME_LENGTH && !SKIP_WORDS.has(lcName)) {
+      if (shouldRegisterName(entityName, subdir)) {
         entityIndex.set(entityName, { dir: subdir, file, id: data.id });
-        nameLookup.set(lcName, entityName);
+        nameLookup.set(entityName.toLowerCase(), entityName);
       }
 
-      // Also register aliases if present
+      // Also register aliases if present (but apply same filtering)
       if (Array.isArray(data.aliases)) {
         for (const alias of data.aliases) {
-          if (alias && alias.length >= MIN_NAME_LENGTH) {
+          if (shouldRegisterName(alias, subdir)) {
             const lcAlias = alias.toLowerCase();
-            if (!SKIP_WORDS.has(lcAlias) && !nameLookup.has(lcAlias)) {
-              nameLookup.set(lcAlias, entityName); // alias resolves to canonical name
+            if (!nameLookup.has(lcAlias)) {
+              nameLookup.set(lcAlias, entityName);
             }
           }
         }
       }
+
       // Register common_names for corponations
       if (Array.isArray(data.common_names)) {
         for (let cn of data.common_names) {
-          // Strip quotes
           cn = cn.replace(/^["']|["']$/g, '').replace(/\s*\(.*\)$/, '').trim();
-          if (cn && cn.length >= MIN_NAME_LENGTH) {
+          if (shouldRegisterName(cn, subdir)) {
             const lcCn = cn.toLowerCase();
-            if (!SKIP_WORDS.has(lcCn) && !nameLookup.has(lcCn)) {
+            if (!nameLookup.has(lcCn)) {
               nameLookup.set(lcCn, entityName);
             }
           }
@@ -160,22 +250,20 @@ console.log(`Read ${filesRead} entity files.`);
 console.log(`Entity index: ${entityIndex.size} primary names, ${nameLookup.size} total lookup entries.`);
 
 // ---- Step 2: Build optimized search structures ----
-// We need to find entity names in text. Names can be multi-word.
-// Strategy: build a sorted list of names by length (longest first) to prefer longer matches.
-
-// Get all unique lookup names sorted by length descending
 const allNames = [...nameLookup.entries()]
   .sort((a, b) => b[0].length - a[0].length);
 
 console.log(`Total searchable names: ${allNames.length}`);
 
-// For efficiency, precompile regex patterns for each name
-// We escape regex special chars and use word boundary matching
+// Log some stats about what we're searching for
+const multiWord = allNames.filter(([n]) => n.includes(' ')).length;
+const singleWord = allNames.length - multiWord;
+console.log(`  Multi-word names: ${multiWord}, Single-word names: ${singleWord}`);
+
 function escapeRegex(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Build a function that finds all entity mentions in a text
 function findMentions(text, selfName) {
   if (!text || typeof text !== 'string') return new Set();
 
@@ -184,18 +272,12 @@ function findMentions(text, selfName) {
   const selfNameLower = selfName ? selfName.toLowerCase() : '';
 
   for (const [lcName, canonical] of allNames) {
-    // Skip self
     if (canonical.toLowerCase() === selfNameLower) continue;
-
-    // Quick substring check first (fast filter)
     if (!textLower.includes(lcName)) continue;
 
-    // Use regex for word boundary check
-    // For names that start/end with word characters, use word boundaries
     const escaped = escapeRegex(lcName);
     let pattern;
     try {
-      // Use word boundaries when the name starts/ends with word chars
       const prefix = /^\w/.test(lcName) ? '\\b' : '';
       const suffix = /\w$/.test(lcName) ? '\\b' : '';
       pattern = new RegExp(prefix + escaped + suffix, 'i');
@@ -215,7 +297,6 @@ function findMentions(text, selfName) {
 function getTextFields(data) {
   const texts = [];
 
-  // Direct text fields
   const textKeys = [
     'description', 'body', 'full_text', 'narrative_function',
     'cultural_context', 'tactical_use', 'daily_life', 'affiliation',
@@ -234,7 +315,6 @@ function getTextFields(data) {
     }
   }
 
-  // Nested object text fields
   if (data.psychology && typeof data.psychology === 'object') {
     if (data.psychology.secret) texts.push(data.psychology.secret);
     for (const arr of ['core_fears', 'core_desires', 'coping_mechanisms', 'blind_spots']) {
@@ -265,7 +345,6 @@ function getTextFields(data) {
     }
   }
 
-  // Array text fields
   const arrayKeys = ['story_hooks', 'known_users', 'carried_weapons', 'registered_firearms',
     'key_products', 'notable_products', 'key_figures', 'subsidiaries_list',
     'base_technologies', 'components'];
@@ -275,7 +354,6 @@ function getTextFields(data) {
     }
   }
 
-  // Physical description
   if (data.physical_description && typeof data.physical_description === 'object') {
     for (const val of Object.values(data.physical_description)) {
       if (typeof val === 'string') texts.push(val);
@@ -283,7 +361,6 @@ function getTextFields(data) {
     }
   }
 
-  // Operating territory
   if (data.operating_territory && typeof data.operating_territory === 'object') {
     for (const val of Object.values(data.operating_territory)) {
       if (typeof val === 'string') texts.push(val);
@@ -291,7 +368,6 @@ function getTextFields(data) {
     }
   }
 
-  // Belongings
   if (data.belongings && typeof data.belongings === 'object') {
     for (const val of Object.values(data.belongings)) {
       if (typeof val === 'string' && val) texts.push(val);
@@ -309,15 +385,18 @@ let entitiesWithEmptyRelated = 0;
 let entitiesUpdated = 0;
 let totalRefsAdded = 0;
 let entitiesAlreadyPopulated = 0;
+let entitiesSkippedNoText = 0;
 
 const startTime = Date.now();
 let processed = 0;
+
+// Track the top referenced entities
+const refCounts = new Map();
 
 for (const entity of allEntities) {
   const { data, filePath, raw } = entity;
   const entityName = data.name || data.title;
 
-  // Check if related_entities needs work
   const existingRelated = Array.isArray(data.related_entities) ? data.related_entities : [];
   const hadEmpty = existingRelated.length === 0;
 
@@ -327,21 +406,23 @@ for (const entity of allEntities) {
     entitiesAlreadyPopulated++;
   }
 
-  // Extract all text and find mentions
   const fullText = getTextFields(data);
+  if (!fullText || fullText.trim().length === 0) {
+    entitiesSkippedNoText++;
+    processed++;
+    continue;
+  }
+
   const mentions = findMentions(fullText, entityName);
 
-  // Remove already-existing entries (case-insensitive comparison)
   const existingLower = new Set(existingRelated.map(e => e.toLowerCase()));
   const newRefs = [...mentions].filter(m => !existingLower.has(m.toLowerCase()));
 
   if (newRefs.length > 0) {
-    // Merge: keep existing + add new
     const merged = [...existingRelated, ...newRefs.sort()];
     data.related_entities = merged;
 
     if (!DRY_RUN) {
-      // Write back preserving formatting
       const output = JSON.stringify(data, null, 2);
       fs.writeFileSync(filePath, output, 'utf8');
     }
@@ -349,18 +430,27 @@ for (const entity of allEntities) {
     entitiesUpdated++;
     totalRefsAdded += newRefs.length;
 
-    if (entitiesUpdated <= 20 || entitiesUpdated % 100 === 0) {
-      console.log(`  [${entitiesUpdated}] ${entityName}: +${newRefs.length} refs (${newRefs.slice(0, 5).join(', ')}${newRefs.length > 5 ? '...' : ''})`);
+    // Track reference counts
+    for (const ref of newRefs) {
+      refCounts.set(ref, (refCounts.get(ref) || 0) + 1);
+    }
+
+    if (entitiesUpdated <= 10 || entitiesUpdated % 200 === 0) {
+      console.log(`  [${entitiesUpdated}] ${entityName}: +${newRefs.length} refs (${newRefs.slice(0, 4).join(', ')}${newRefs.length > 4 ? '...' : ''})`);
     }
   }
 
   processed++;
   if (processed % 1000 === 0) {
-    console.log(`  ... processed ${processed}/${allEntities.length} entities`);
+    const elapsed = ((Date.now() - startTime) / 1000).toFixed(0);
+    console.log(`  ... processed ${processed}/${allEntities.length} entities (${elapsed}s elapsed, ${entitiesUpdated} updated so far)`);
   }
 }
 
 const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+
+// Top referenced entities
+const topRefs = [...refCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 25);
 
 console.log('\n========================================');
 console.log('CROSS-REFERENCE COMPLETE');
@@ -369,7 +459,13 @@ console.log(`Mode: ${DRY_RUN ? 'DRY RUN (no files written)' : 'LIVE (files updat
 console.log(`Total entities scanned: ${allEntities.length}`);
 console.log(`Entities with empty related_entities (before): ${entitiesWithEmptyRelated}`);
 console.log(`Entities already populated: ${entitiesAlreadyPopulated}`);
+console.log(`Entities skipped (no text): ${entitiesSkippedNoText}`);
 console.log(`Entities updated: ${entitiesUpdated}`);
 console.log(`Total new references added: ${totalRefsAdded}`);
+console.log(`Average refs per updated entity: ${(totalRefsAdded / entitiesUpdated).toFixed(1)}`);
 console.log(`Time: ${elapsed}s`);
+console.log('\nTop 25 most referenced entities:');
+for (const [name, count] of topRefs) {
+  console.log(`  ${count.toString().padStart(4)} x ${name}`);
+}
 console.log('========================================');

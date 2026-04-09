@@ -5,7 +5,7 @@
   "category": "movie",
   "subcategory": "banned",
   "aliases": [],
-  "description": "Originally produced as a licensed psychological thriller by a mid-tier Vantablack subsidiary, the film was pulled from distribution six weeks after release when its narrative \u2014 about a Tier 3 worker discovering their BCI has been harvesting and selling their cognitive labor to a corponation without consent \u2014 was found to be based on a real and ongoing practice. The licensed cut was destroyed; the underground version, with twenty additional minutes of documentary appendix, circulates on encrypted mesh.",
+  "description": "Originally produced as a licensed psychological thriller by a mid-tier Vantablack subsidiary, the film was pulled from distribution six weeks after release when its narrative — about a Tier 3 worker discovering their BCI has been harvesting and selling their cognitive labor to a corponation without consent — was found to be based on a real and ongoing practice. The licensed cut was destroyed; the underground version, with twenty additional minutes of documentary appendix, circulates on encrypted mesh.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Underground only",
@@ -13,12 +13,16 @@
   "genre": "",
   "medium": "neural_feed",
   "audience": "",
-  "cultural_impact": "The joint suppression order was itself more radicalizing than the film \u2014 the spectacle of every corponation agreeing on something for the first time in recorded history told people exactly how real the threat was.",
+  "cultural_impact": "The joint suppression order was itself more radicalizing than the film — the spectacle of every corponation agreeing on something for the first time in recorded history told people exactly how real the threat was.",
   "known_fans": [],
   "story_hooks": [
-    "Damilola Achebe-Kova\u010D is alive and in hiding, and the documentary appendix in the underground cut names the specific algorithm still running in millions of BCIs across GLMZ",
+    "Damilola Achebe-Kovač is alive and in hiding, and the documentary appendix in the underground cut names the specific algorithm still running in millions of BCIs across GLMZ",
     "A player character running the underground cut on an unshielded BCI feed notices their own device behaving strangely during the documentary segment",
-    "Someone is offering significant Quanta for any copy of the film that includes the original licensed opening \u2014 before the studio edited it to remove a real corponation name from a background document"
+    "Someone is offering significant Quanta for any copy of the film that includes the original licensed opening — before the studio edited it to remove a real corponation name from a background document"
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "GLMZ",
+    "The Third Rail"
+  ]
 }

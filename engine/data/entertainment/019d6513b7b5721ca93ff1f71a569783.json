@@ -5,7 +5,7 @@
   "category": "show",
   "subcategory": "pirate_channel",
   "aliases": [],
-  "description": "A weekly underground mesh broadcast structured as an open-call documentary collective \u2014 any verified contributor can submit footage, testimony, or technical knowledge for inclusion. Episodes have covered everything from corponation security patrol schedules to field-repair guides for damaged aug hardware to first-person accounts of forced relocation. The show has no fixed host, no central production node, and no address. It is the closest thing the Shelf has to a public record.",
+  "description": "A weekly underground mesh broadcast structured as an open-call documentary collective — any verified contributor can submit footage, testimony, or technical knowledge for inclusion. Episodes have covered everything from corponation security patrol schedules to field-repair guides for damaged aug hardware to first-person accounts of forced relocation. The show has no fixed host, no central production node, and no address. It is the closest thing the Shelf has to a public record.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Underground only",
@@ -16,9 +16,15 @@
   "cultural_impact": "Open Frequency established the distributed verification model that all subsequent underground journalism collectives in M88 have adopted as standard.",
   "known_fans": [],
   "story_hooks": [
-    "A new contributor has submitted footage that the verification collective cannot authenticate \u2014 but its contents, if real, would implicate a Tier 5 actor in a systematic crime.",
+    "A new contributor has submitted footage that the verification collective cannot authenticate — but its contents, if real, would implicate a Tier 5 actor in a systematic crime.",
     "One of the three wrongfully arrested contributors is still in detention; the collective has identified the Vantablack subsidiary responsible and is planning something that requires outside help.",
-    "A corporate intelligence team has successfully mapped three nodes of Open Frequency\u0027s distribution network \u2014 the collective doesn\u0027t know yet, and the window to warn them is closing."
+    "A corporate intelligence team has successfully mapped three nodes of Open Frequency's distribution network — the collective doesn't know yet, and the window to warn them is closing."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "ShieldTech SB-3 'Groundstrike'",
+    "The Collective",
+    "The Shelf",
+    "Uncle Jun's Synth-Noodle Window"
+  ]
 }

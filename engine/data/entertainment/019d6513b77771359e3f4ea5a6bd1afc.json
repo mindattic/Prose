@@ -5,7 +5,7 @@
   "category": "game",
   "subcategory": "BCI open world survival",
   "aliases": [],
-  "description": "DEADZONE ATLAS is a full BCI-integrated open-world survival game set in a procedurally generated megacity that is an uncomfortably accurate simulation of GLMZ\u0027s Shelf districts \u2014 collapsed infrastructure, contested resource nodes, predatory NPC factions modeled on actual corponation security doctrine, and a hunger-fatigue-injury system that players frequently describe as \u0027too real to be fun.\u0027 The game was developed by a two-person team operating out of a Tier 2 apartment using leaked corporate world-building data, and its accuracy to actual Shelf conditions was so precise that HelixCorp\u0027s legal division spent eight months trying to determine how the developers obtained their environmental data.",
+  "description": "DEADZONE ATLAS is a full BCI-integrated open-world survival game set in a procedurally generated megacity that is an uncomfortably accurate simulation of GLMZ's Shelf districts — collapsed infrastructure, contested resource nodes, predatory NPC factions modeled on actual corponation security doctrine, and a hunger-fatigue-injury system that players frequently describe as 'too real to be fun.' The game was developed by a two-person team operating out of a Tier 2 apartment using leaked corporate world-building data, and its accuracy to actual Shelf conditions was so precise that HelixCorp's legal division spent eight months trying to determine how the developers obtained their environmental data.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1-2",
@@ -16,9 +16,14 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "The game\u0027s procedural generation engine has begun producing layouts that match real Shelf infrastructure changes before those changes are made public \u2014 as if someone with access to HelixCorp planning documents is feeding data to the algorithm.",
-    "A Tier 4 urban planning consultant has become obsessed with DEADZONE ATLAS, using it to model humanitarian intervention scenarios in real Shelf districts \u2014 but someone in her company wants those models destroyed.",
-    "The game\u0027s two developers have disappeared; their last known communication was a cryptic update note reading \u0027we found the source.\u0027"
+    "The game's procedural generation engine has begun producing layouts that match real Shelf infrastructure changes before those changes are made public — as if someone with access to HelixCorp planning documents is feeding data to the algorithm.",
+    "A Tier 4 urban planning consultant has become obsessed with DEADZONE ATLAS, using it to model humanitarian intervention scenarios in real Shelf districts — but someone in her company wants those models destroyed.",
+    "The game's two developers have disappeared; their last known communication was a cryptic update note reading 'we found the source.'"
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "GLMZ",
+    "WELLSPRING",
+    "Yelena Okafor-Chen"
+  ]
 }

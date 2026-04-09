@@ -5,7 +5,7 @@
   "category": "studio",
   "subcategory": "vantablack_subsidiary",
   "aliases": [],
-  "description": "The horror-specialized subsidiary of Vantablack Media, responsible for producing the majority of licensed neural-feed horror content in GLMZ. Known for their proprietary \u0027DreadLoop\u0027 technology that extends fear responses across full sensory immersion without triggering mandatory BCI safety cutoffs. Critics argue their products are indistinguishable from psychological torture.",
+  "description": "The horror-specialized subsidiary of Vantablack Media, responsible for producing the majority of licensed neural-feed horror content in GLMZ. Known for their proprietary 'DreadLoop' technology that extends fear responses across full sensory immersion without triggering mandatory BCI safety cutoffs. Critics argue their products are indistinguishable from psychological torture.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 2-3",
@@ -13,12 +13,16 @@
   "genre": "",
   "medium": "neural_feed",
   "audience": "",
-  "cultural_impact": "Normalized extreme sensory horror as entertainment, pushing regulatory bodies to establish the contested \u0027DreadLine\u0027 threshold that most Vantablack products are accused of quietly exceeding.",
+  "cultural_impact": "Normalized extreme sensory horror as entertainment, pushing regulatory bodies to establish the contested 'DreadLine' threshold that most Vantablack products are accused of quietly exceeding.",
   "known_fans": [],
   "story_hooks": [
-    "A quality assurance technician discovers that the DreadLoop algorithm has begun producing fear signatures that don\u0027t match any human psychological template",
+    "A quality assurance technician discovers that the DreadLoop algorithm has begun producing fear signatures that don't match any human psychological template",
     "A class-action suit against VBIHD requires a player character to obtain sealed settlement documents from a Tier 4 law firm",
-    "Someone is using VBIHD\u0027s production infrastructure to distribute something that isn\u0027t horror \u2014 it\u0027s a message"
+    "Someone is using VBIHD's production infrastructure to distribute something that isn't horror — it's a message"
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "GLMZ",
+    "Vantablack Media"
+  ]
 }

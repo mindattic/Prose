@@ -5,7 +5,7 @@
   "category": "game",
   "subcategory": "AR urban territory game",
   "aliases": [],
-  "description": "One of the earliest citywide AR territory games in GLMZ, GRIDBURN overlays a capture-the-node network across real city infrastructure \u2014 transit hubs, power relay stations, water reclamation points \u2014 that players physically travel to and \u0027burn\u0027 for their faction using BCI-synced gestures and proximity authentication. Factions are neighborhood-based, and a single node held for 48 hours generates real \u03A6 micropayments funded by the game\u0027s corporate backer, Strukturen AG. The Shelf districts turned GRIDBURN into a genuine economic hustle, with teams running 24-hour node rotations.",
+  "description": "One of the earliest citywide AR territory games in GLMZ, GRIDBURN overlays a capture-the-node network across real city infrastructure — transit hubs, power relay stations, water reclamation points — that players physically travel to and 'burn' for their faction using BCI-synced gestures and proximity authentication. Factions are neighborhood-based, and a single node held for 48 hours generates real Φ micropayments funded by the game's corporate backer, Strukturen AG. The Shelf districts turned GRIDBURN into a genuine economic hustle, with teams running 24-hour node rotations.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1-2",
@@ -17,8 +17,13 @@
   "known_fans": [],
   "story_hooks": [
     "A GRIDBURN faction discovers that one of their contested nodes sits atop an undocumented Strukturen AG data relay, and holding it gives them access to corporate logistics feeds.",
-    "Two rival Shelf factions agree to a temporary truce to dominate the city\u0027s entire northern grid \u2014 and attract the attention of someone who doesn\u0027t want that coordination happening.",
-    "A Tier 3 player infiltrates a Shelf faction to study the game\u0027s economic dynamics and falls in genuinely with the community they were sent to exploit."
+    "Two rival Shelf factions agree to a temporary truce to dominate the city's entire northern grid — and attract the attention of someone who doesn't want that coordination happening.",
+    "A Tier 3 player infiltrates a Shelf faction to study the game's economic dynamics and falls in genuinely with the community they were sent to exploit."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "GLMZ",
+    "The Reclamation Assembly",
+    "The Shelf"
+  ]
 }

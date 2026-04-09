@@ -5,7 +5,7 @@
   "category": "tabletop",
   "subcategory": "AR-overlay board game",
   "aliases": [],
-  "description": "One of the earliest mass-market AR-overlay board games released in GLMZ, Meridian Hazard uses a physical hex-tile city map that players physically construct each session, while BCI or goggle users see a layered augmented cityscape above it \u2014 flickering neon, gang tags, environmental hazard warnings, and rival faction movements invisible to the unaugmented. Players navigate district tiles collecting resources and avoiding Hazard tokens, but BCI users face additional AR-only threats: phantom tollbooths, invisible checkpoints, and a roving Creditor drone that only they can perceive. The asymmetry between augmented and unaugmented players was controversial from launch.",
+  "description": "One of the earliest mass-market AR-overlay board games released in GLMZ, Meridian Hazard uses a physical hex-tile city map that players physically construct each session, while BCI or goggle users see a layered augmented cityscape above it — flickering neon, gang tags, environmental hazard warnings, and rival faction movements invisible to the unaugmented. Players navigate district tiles collecting resources and avoiding Hazard tokens, but BCI users face additional AR-only threats: phantom tollbooths, invisible checkpoints, and a roving Creditor drone that only they can perceive. The asymmetry between augmented and unaugmented players was controversial from launch.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 2-3",
@@ -16,9 +16,15 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A first-edition Meridian Hazard set surfaces with AR layer data that was never officially published \u2014 when loaded, it displays a real map overlay of a Shelf district that matches a neighborhood as it existed in 2183, before a corponation demolition erased it.",
-    "A blind Tier 1 veteran who plays via haptic tiles only has won every regional Meridian Hazard tournament for six years \u2014 and the AR-using competitors are starting to suspect she perceives the AR layer through some unlicensed neural modification.",
-    "The 2199 Arch-Systems acquisition of Luminal Interactive included an unpublished expansion that modeled a real emergency response failure \u2014 someone inside the company wants it released before evidence of the original incident is scrubbed."
+    "A first-edition Meridian Hazard set surfaces with AR layer data that was never officially published — when loaded, it displays a real map overlay of a Shelf district that matches a neighborhood as it existed in 2183, before a corponation demolition erased it.",
+    "A blind Tier 1 veteran who plays via haptic tiles only has won every regional Meridian Hazard tournament for six years — and the AR-using competitors are starting to suspect she perceives the AR layer through some unlicensed neural modification.",
+    "The 2199 Arch-Systems acquisition of Luminal Interactive included an unpublished expansion that modeled a real emergency response failure — someone inside the company wants it released before evidence of the original incident is scrubbed."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Arcturus PX-1 'Phantom'",
+    "Bintou Halvorsen-Osei",
+    "GLMZ",
+    "MERIDIAN"
+  ]
 }

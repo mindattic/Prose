@@ -5,7 +5,7 @@
   "category": "tabletop",
   "subcategory": "abstract strategy (ancient game, living tradition)",
   "aliases": [],
-  "description": "The ancient game of Go, played on a 19\u00D719 grid with black and white stones, unchanged in its core rules for over 2,000 years and surviving every collapse, corponation charter, and technological revolution with complete structural integrity. The Meridian Standard Ruleset is a minor 2183 codification agreed upon by the Great Lakes Go Federation \u2014 a voluntary, dues-free association of players from every tier \u2014 to harmonize a handful of edge-case disputes without altering the game itself. Sets range from salvaged plastic on the Shelf to hand-ground slate and shell stones in the Spire.",
+  "description": "The ancient game of Go, played on a 19×19 grid with black and white stones, unchanged in its core rules for over 2,000 years and surviving every collapse, corponation charter, and technological revolution with complete structural integrity. The Meridian Standard Ruleset is a minor 2183 codification agreed upon by the Great Lakes Go Federation — a voluntary, dues-free association of players from every tier — to harmonize a handful of edge-case disputes without altering the game itself. Sets range from salvaged plastic on the Shelf to hand-ground slate and shell stones in the Spire.",
   "creator": "",
   "distributor": "",
   "tier_availability": "All tiers",
@@ -16,9 +16,17 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A Go game played in 2201 between two anonymous players in a Shelf community center was recorded by a bystander \u2014 analysis of the game record shows it encodes a complete map of a corponation\u0027s internal security rotation, move by move.",
-    "The Great Lakes Go Federation\u0027s open ladder database has been quietly harvested by a corponation intelligence division \u2014 the playing patterns of thousands of members have been used to build psychological profiles without consent.",
-    "A Spire executive and a Shelf elder have been playing correspondence Go via handwritten moves delivered by courier for eleven years \u2014 the game is almost over, and both players know that whoever loses has agreed to a consequence that neither has disclosed to anyone else."
+    "A Go game played in 2201 between two anonymous players in a Shelf community center was recorded by a bystander — analysis of the game record shows it encodes a complete map of a corponation's internal security rotation, move by move.",
+    "The Great Lakes Go Federation's open ladder database has been quietly harvested by a corponation intelligence division — the playing patterns of thousands of members have been used to build psychological profiles without consent.",
+    "A Spire executive and a Shelf elder have been playing correspondence Go via handwritten moves delivered by courier for eleven years — the game is almost over, and both players know that whoever loses has agreed to a consequence that neither has disclosed to anyone else."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "MERIDIAN",
+    "Ringo DV-4 'Courier'",
+    "The Shelf",
+    "The Spire",
+    "Yannick Tofauti-Szarvásy",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ]
 }

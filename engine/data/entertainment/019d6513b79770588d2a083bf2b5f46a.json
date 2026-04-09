@@ -1,11 +1,11 @@
 {
   "id": "019d6513b79770588d2a083bf2b5f46a",
-  "name": "IRONFRAME GYM: Aug-Compatible Combat \u0026 Fitness Network",
+  "name": "IRONFRAME GYM: Aug-Compatible Combat & Fitness Network",
   "type": "entertainment",
   "category": "recreation",
   "subcategory": "fitness and wellness",
   "aliases": [],
-  "description": "The dominant aug-compatible gym franchise in GLMZ\u0027s Tier 2-3 districts, with 60\u002B locations built around training infrastructure that interfaces directly with a wide range of cyberware configurations \u2014 resistance systems that calibrate against chrome-enhanced musculature, reflex training rigs that sync with BCI combat overlays, and sparring rings with haptic feedback floors that log biometric data in real time. IRONFRAME positions itself as the serious working-class alternative to Spire wellness facilities, with a culture that values function over aesthetics.",
+  "description": "The dominant aug-compatible gym franchise in GLMZ's Tier 2-3 districts, with 60+ locations built around training infrastructure that interfaces directly with a wide range of cyberware configurations — resistance systems that calibrate against chrome-enhanced musculature, reflex training rigs that sync with BCI combat overlays, and sparring rings with haptic feedback floors that log biometric data in real time. IRONFRAME positions itself as the serious working-class alternative to Spire wellness facilities, with a culture that values function over aesthetics.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 2-3",
@@ -16,9 +16,15 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A member notices that a specific IRONFRAME location is being visited by the same unfamiliar faces every third day on a rotating schedule \u2014 people who train hard, say nothing, and disappear before closing.",
-    "The biometric logging terminals at a Tier 2 location have been quietly modified to record something beyond standard fitness data \u2014 something that seems to correlate with BCI encryption signatures.",
-    "A longtime IRONFRAME trainer has been quietly coaching a small group after hours in techniques that go well beyond the facility\u0027s licensed curriculum, and the group is getting very good very fast."
+    "A member notices that a specific IRONFRAME location is being visited by the same unfamiliar faces every third day on a rotating schedule — people who train hard, say nothing, and disappear before closing.",
+    "The biometric logging terminals at a Tier 2 location have been quietly modified to record something beyond standard fitness data — something that seems to correlate with BCI encryption signatures.",
+    "A longtime IRONFRAME trainer has been quietly coaching a small group after hours in techniques that go well beyond the facility's licensed curriculum, and the group is getting very good very fast."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Bone Density Hypermineralization",
+    "GLMZ",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Neuromorphic Pressure Cestus"
+  ]
 }

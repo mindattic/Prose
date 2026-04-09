@@ -5,7 +5,7 @@
   "category": "team",
   "subcategory": "automaton combat workshop",
   "aliases": [],
-  "description": "Workshop No. 7 is GLMZ\u0027s most decorated automaton combat workshop, competing in the MACHINE WARS autonomous arena series from their fabrication floor in the industrial Tier 2 Eastwall District. Founded in 2188 by engineer Osei Tamboli-Vreeland, the workshop builds and fields autonomous combat machines \u2014 not synthetic life \u2014 designed entirely in-house, with their signature hexapod chassis the \u0027Ironlark\u0027 series winning three consecutive MACHINE WARS championships.",
+  "description": "Workshop No. 7 is GLMZ's most decorated automaton combat workshop, competing in the MACHINE WARS autonomous arena series from their fabrication floor in the industrial Tier 2 Eastwall District. Founded in 2188 by engineer Osei Tamboli-Vreeland, the workshop builds and fields autonomous combat machines — not synthetic life — designed entirely in-house, with their signature hexapod chassis the 'Ironlark' series winning three consecutive MACHINE WARS championships.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 2-3",
@@ -16,9 +16,18 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A rival workshop has stolen the Ironlark\u0027s proprietary movement algorithm and Tamboli-Vreeland\u0027s team must prove it before the championship without tipping off the thieves.",
-    "During a post-match diagnostic, a machine\u0027s behavioral logs reveal it has been receiving external signal inputs during fights \u2014 someone is remotely influencing the autonomous machines.",
+    "A rival workshop has stolen the Ironlark's proprietary movement algorithm and Tamboli-Vreeland's team must prove it before the championship without tipping off the thieves.",
+    "During a post-match diagnostic, a machine's behavioral logs reveal it has been receiving external signal inputs during fights — someone is remotely influencing the autonomous machines.",
     "A young engineer from the Shelf approaches the workshop with a radical chassis design that could dominate the league, but their background check reveals connections to an illegal Tier 1 combat ring."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Altan Tanaka-Frimpong",
+    "GLMZ",
+    "Osei Tamboli-Vreeland",
+    "Pipe Dream No. 7 (The Long Shift)",
+    "TESSERA PG-2 'Signature'",
+    "The Shelf",
+    "The Synthetic Personhood League"
+  ]
 }

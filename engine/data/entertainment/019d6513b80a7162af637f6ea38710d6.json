@@ -5,7 +5,7 @@
   "category": "recreation",
   "subcategory": "thrill-seeking / storm-chasing",
   "aliases": [],
-  "description": "A cluster of licensed and unlicensed operators running guided storm-chase excursions into the climate-volatile Wastes beyond GLMZ\u0027s atmospheric management perimeter, where mega-cell thunderstorms, dust walls, and electromagnetic surge events create landscapes of violent, unmediated natural spectacle. Clients are transported in hardened crawler vehicles with BCI-linked environmental feeds, pursuing storm fronts across the outer Great Lakes corridor for immersive proximity experiences. Licensed operators maintain safety margins and emergency extraction; unlicensed \u0027surge runners\u0027 sell proximity packages that bring clients inside the storm envelope.",
+  "description": "A cluster of licensed and unlicensed operators running guided storm-chase excursions into the climate-volatile Wastes beyond GLMZ's atmospheric management perimeter, where mega-cell thunderstorms, dust walls, and electromagnetic surge events create landscapes of violent, unmediated natural spectacle. Clients are transported in hardened crawler vehicles with BCI-linked environmental feeds, pursuing storm fronts across the outer Great Lakes corridor for immersive proximity experiences. Licensed operators maintain safety margins and emergency extraction; unlicensed 'surge runners' sell proximity packages that bring clients inside the storm envelope.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 3-4",
@@ -16,9 +16,16 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A character hired as a surge runner guide discovers their latest group of clients is not tourists \u2014 they\u0027re using the storm excursion as cover for a covert operation in the Wastes.",
-    "A massive electromagnetic surge event near the city perimeter produces anomalous BCI interference patterns that appear to encode a structured signal \u2014 and the only people who witnessed it are a storm-chase group with conflicting accounts.",
-    "A Tier 4 client survives a catastrophic surge event and returns changed \u2014 with sensory perceptions and knowledge they cannot account for, and a compulsion to go back into the storm."
+    "A character hired as a surge runner guide discovers their latest group of clients is not tourists — they're using the storm excursion as cover for a covert operation in the Wastes.",
+    "A massive electromagnetic surge event near the city perimeter produces anomalous BCI interference patterns that appear to encode a structured signal — and the only people who witnessed it are a storm-chase group with conflicting accounts.",
+    "A Tier 4 client survives a catastrophic surge event and returns changed — with sensory perceptions and knowledge they cannot account for, and a compulsion to go back into the storm."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "GLMZ",
+    "Lazarus LX-2 'Lab Rat'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA ES-4 'Perimeter'",
+    "Vespid Dynamics Reconnaissance Beetle RB-2"
+  ]
 }

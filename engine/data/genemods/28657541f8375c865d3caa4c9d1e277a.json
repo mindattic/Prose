@@ -42,5 +42,10 @@
     "cosmetic",
     "circuit_district"
   ],
-  "type": "geneware"
+  "type": "geneware",
+  "related_entities": [
+    "The Circuit",
+    "The Cruciform Depot",
+    "The Shelf"
+  ]
 }

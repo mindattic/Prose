@@ -5,7 +5,7 @@
   "category": "sport",
   "subcategory": "BCI-integrated hybrid sport",
   "aliases": [],
-  "description": "Athletes compete in a three-phase format: a physical obstacle course, a real-time neural strategy layer broadcast directly to spectator BCIs, and a final synchronization sprint where body and mind must operate in locked tandem at peak load. The Synapse Slam Governing Consortium \u2014 a joint venture between HelixCorp\u0027s entertainment division and three independent BCI hardware manufacturers \u2014 certifies arenas and athlete neural rigs, and the sport has become the fastest-growing league in GLMZ since its inaugural season. Spectators with BCIs can subscribe to an \u0027empathy-adjacent\u0027 feed that transmits a filtered version of a chosen athlete\u0027s neural load during the final phase.",
+  "description": "Athletes compete in a three-phase format: a physical obstacle course, a real-time neural strategy layer broadcast directly to spectator BCIs, and a final synchronization sprint where body and mind must operate in locked tandem at peak load. The Synapse Slam Governing Consortium — a joint venture between HelixCorp's entertainment division and three independent BCI hardware manufacturers — certifies arenas and athlete neural rigs, and the sport has become the fastest-growing league in GLMZ since its inaugural season. Spectators with BCIs can subscribe to an 'empathy-adjacent' feed that transmits a filtered version of a chosen athlete's neural load during the final phase.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 3-4",
@@ -16,9 +16,17 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A slam-rider discovers that a top athlete\u0027s neural feed contains what appears to be a second, hidden consciousness running parallel to her own \u2014 and the athlete has no idea.",
-    "A Tier 2 athlete with a black-market BCI rig manages to qualify for the Synapse Slam through a regional open and becomes a folk hero \u2014 until the Consortium\u0027s certification process threatens to disqualify her.",
+    "A slam-rider discovers that a top athlete's neural feed contains what appears to be a second, hidden consciousness running parallel to her own — and the athlete has no idea.",
+    "A Tier 2 athlete with a black-market BCI rig manages to qualify for the Synapse Slam through a regional open and becomes a folk hero — until the Consortium's certification process threatens to disqualify her.",
     "A neural-feed data broker is selling unredacted athlete consciousness profiles from the empathy-adjacent feed to undisclosed buyers, and a journalist needs an inside source to prove it."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Emeka Johansson-Orozco",
+    "GLMZ",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Talon Systems Grav-Pulse Emitter GPE-3 'Downdraft'",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
+    "Zheng-Dao Bioelectric Axonal Frequency Bridge"
+  ]
 }

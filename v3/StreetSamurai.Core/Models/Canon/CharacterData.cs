@@ -63,6 +63,10 @@ public class CharacterData : ICanonEntity
     /// </summary>
     [JsonPropertyName("changelog")] public List<CharacterChangelog> Changelog { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    /// <summary>FBI/NCIC-style physical description — height, build, hair, eyes, scars, augmentations.</summary>
+    [JsonPropertyName("physical_description")] public PhysicalDescription PhysicalDescription { get; set; } = new();
+    /// <summary>Midjourney-ready image generation prompt derived from the physical description.</summary>
+    [JsonPropertyName("image_prompt")] public string ImagePrompt { get; set; } = "";
 }
 
 /// <summary>
@@ -227,4 +231,25 @@ public class CharacterRelationship
     [JsonPropertyName("description")] public string Description { get; set; } = "";
     [JsonPropertyName("emotional_core")] public string EmotionalCore { get; set; } = "";
     [JsonPropertyName("story_tension")] public string StoryTension { get; set; } = "";
+}
+
+/// <summary>
+/// FBI/NCIC-inspired physical description standard adapted for cyberpunk characters.
+/// </summary>
+public class PhysicalDescription
+{
+    [JsonPropertyName("heritage")] public string Heritage { get; set; } = "";
+    [JsonPropertyName("height_cm")] public int HeightCm { get; set; }
+    [JsonPropertyName("weight_kg")] public int WeightKg { get; set; }
+    [JsonPropertyName("build")] public string Build { get; set; } = "";
+    [JsonPropertyName("hair_color")] public string HairColor { get; set; } = "";
+    [JsonPropertyName("hair_style")] public string HairStyle { get; set; } = "";
+    [JsonPropertyName("hair_length")] public string HairLength { get; set; } = "";
+    [JsonPropertyName("eye_color")] public string EyeColor { get; set; } = "";
+    [JsonPropertyName("skin_tone")] public string SkinTone { get; set; } = "";
+    [JsonPropertyName("complexion")] public string Complexion { get; set; } = "";
+    [JsonPropertyName("distinguishing_marks")] public List<string> DistinguishingMarks { get; set; } = [];
+    [JsonPropertyName("visible_augmentations")] public string VisibleAugmentations { get; set; } = "";
+    [JsonPropertyName("posture_movement")] public string PostureMovement { get; set; } = "";
+    [JsonPropertyName("clothing_style")] public string ClothingStyle { get; set; } = "";
 }

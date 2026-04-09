@@ -5,7 +5,7 @@
   "category": "game",
   "subcategory": "competitive esports / team-based combat sim",
   "aliases": [],
-  "description": "One of the earliest AAA neural-integrated team combat titles, FRACTURE CITY drops squads of five into procedurally generated corponation district maps where they fight for territorial control using augmented soldiers with customizable chrome loadouts. HelixCorp\u0027s esports division ran the inaugural season with prize pools exceeding \u03A6800,000, drawing massive Tier 3-4 viewership before the game\u0027s neural feedback systems were implicated in a cluster of seizure incidents. Patched repeatedly over its lifespan, it remains a foundational text for competitive neural esports despite its janky early-era BCI implementation.",
+  "description": "One of the earliest AAA neural-integrated team combat titles, FRACTURE CITY drops squads of five into procedurally generated corponation district maps where they fight for territorial control using augmented soldiers with customizable chrome loadouts. HelixCorp's esports division ran the inaugural season with prize pools exceeding Φ800,000, drawing massive Tier 3-4 viewership before the game's neural feedback systems were implicated in a cluster of seizure incidents. Patched repeatedly over its lifespan, it remains a foundational text for competitive neural esports despite its janky early-era BCI implementation.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 2-3",
@@ -16,9 +16,15 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A Tier 2 player discovers their character\u0027s proprietary chrome loadout is based on stolen augmentation schematics from a real underground surgeon.",
-    "The 2187 seizure cluster wasn\u0027t a bug \u2014 someone deliberately overloaded the neural feedback layer as a proof-of-concept attack on BCI infrastructure.",
+    "A Tier 2 player discovers their character's proprietary chrome loadout is based on stolen augmentation schematics from a real underground surgeon.",
+    "The 2187 seizure cluster wasn't a bug — someone deliberately overloaded the neural feedback layer as a proof-of-concept attack on BCI infrastructure.",
     "A retired pro player from Season 1 is hired to consult on a real corponation security breach that mirrors a famous in-game map perfectly."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Ihaia Nystrom-Keita",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'"
+  ]
 }
